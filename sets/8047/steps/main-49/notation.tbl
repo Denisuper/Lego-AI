@@ -1,0 +1,14 @@
+STEP 49
+# The placement picture is on page 50.
+ADD beam9-49 40490 yellow
+ADD hose-2 75c12 black
+ADD pin-49 2780 black
+ADD hoseconn-2 32013 darkgray
+CONNECT hose-2.end1 -> hoseconn-2.axlehole
+CONNECT pin-49.end1 -> hoseconn-2.pinhole
+CONNECT pin-49.end2 -> beam9-49.hole9
+CONNECT beam9-49.hole? -> bent11-A.hole?
+DOES hoseconn-2 HOLDS hose-2
+DOES pin-49 HOLDS hoseconn-2
+DOES bent11-A SUPPORTS beam9-49
+PATTERN mirror_side

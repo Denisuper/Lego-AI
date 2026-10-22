@@ -1,0 +1,49 @@
+{
+  "example_id": "8047-step-20",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 15,
+  "step": 20,
+  "input": {
+    "picture": "steps/main-20/picture.png",
+    "parts_box": [
+      {
+        "name": "bent11-A",
+        "part_number": "32009",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a long shaft under the seat with a pin end on one side and conn3-1 on the other; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bent11-A",
+        "part_number": "32009",
+        "catalog_name": "Technic Beam 1 x 11.5 Double Bent Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right side, along the frame, end hole on the blue pin (red arrow), bent end pointing up at the back",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bent11-A's end hole goes over the blue pin sticking out under the seat"
+    ],
+    "who_does_what_to_which": [
+      "the blue pin holds bent11-A"
+    ],
+    "where_everything_is_after": [
+      "bent11-A: one side of the upper frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the side frame of the upper body.",
+      "why_these_parts": "A double-bent beam goes round the turntable and rises at the back in one part.",
+      "sets_up_for_later": "Step 21 pins things into its bent end.",
+      "design_pattern": "bent beam side frame"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only."
+}

@@ -1,0 +1,8 @@
+STEP 17
+ATTACH seat
+CONNECT pinlong-1.end2 -> lbeam-s3.hole?
+CONNECT pinlong-2.end2 -> lbeam-s4.hole?
+DOES pinlong-1 HOLDS seat
+DOES pinlong-2 HOLDS seat
+DOES turntable-O SUPPORTS seat
+PATTERN upper_body_on_turntable

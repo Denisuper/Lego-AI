@@ -1,0 +1,15 @@
+# con180-a matched as 32034 by elimination (all 42003s used); what drives gear-8 is not confirmed.
+ADD axle3-a5 4519 lightgray
+ADD axle4-a1 3705 black
+ADD bevel12-a2 6589 tan
+ADD gear-8 4019 lightgray
+ADD con180-a 32034 black
+CONNECT gear-8.axlehole -> axle3-a5.mid
+CONNECT axle3-a5.end1 -> con180-a.axlehole1
+CONNECT bevel12-a2.axlehole -> axle3-a5.end2
+CONNECT axle4-a1.end1 -> con180-a.axlehole2
+MESH bevel12-a2.teeth bevel20-a.teeth
+DOES axle3-a5 CARRIES gear-8
+DOES axle3-a5 CARRIES bevel12-a2
+DOES bevel12-a2 DRIVES bevel20-a
+PATTERN input_shaft

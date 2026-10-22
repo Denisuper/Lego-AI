@@ -1,0 +1,50 @@
+{
+  "example_id": "8047-step-33",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 28,
+  "step": 33,
+  "input": {
+    "picture": "steps/main-33/picture.png",
+    "parts_box": [
+      {
+        "name": "axle9-33",
+        "part_number": "60485",
+        "count": 1
+      }
+    ],
+    "model_so_far": "two yellow connectors at the back with axle holes lined up; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle9-33",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "across the back, through ycon-1 and ycon-2 (dashed arrow)",
+        "rotation": "spins"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle9-33 slides through both yellow connectors and the body"
+    ],
+    "who_does_what_to_which": [
+      "ycon-1 and ycon-2 hold axle9-33",
+      "axle9-33 spins on ycon-1"
+    ],
+    "where_everything_is_after": [
+      "a long axle across the back, both ends sticking out",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the back control shaft.",
+      "why_these_parts": "A 9-long axle reaches across the whole body.",
+      "sets_up_for_later": "A knob goes on its end in step 34.",
+      "design_pattern": "long cross shaft"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Whether it engages gear-7 is not confirmed."
+}

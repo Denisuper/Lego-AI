@@ -1,0 +1,65 @@
+{
+  "example_id": "8047-seat-step-11",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 11,
+  "step": 11,
+  "input": {
+    "picture": "steps/seat-11/picture.png",
+    "parts_box": [
+      {
+        "name": "lbeam-s4",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "crown-1",
+        "part_number": "3650c",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat frame with two cross axles and the gear shaft."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lbeam-s4",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "right side of the seat frame, on the right ends of axle9-s1 and axle9-s2",
+        "rotation": "fixed"
+      },
+      {
+        "name": "crown-1",
+        "part_number": "3650c",
+        "catalog_name": "Technic Gear 24 Tooth Crown",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the right end of axle7-s, outside lbeam-s4 (red arrow)",
+        "rotation": "spins with axle7-s"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "lbeam-s4 goes over the right ends of axle9-s1 and axle9-s2",
+      "crown-1 pushes onto axle7-s's right end"
+    ],
+    "who_does_what_to_which": [
+      "axle9-s1 and axle9-s2 carry lbeam-s4",
+      "axle7-s carries crown-1"
+    ],
+    "where_everything_is_after": [
+      "seat build finished: seat on a frame of two L-beams, gear shaft with a gear at each end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Closes the seat frame and finishes the gear shaft.",
+      "why_these_parts": "A crown gear can mesh with a gear at right angles.",
+      "sets_up_for_later": "The whole seat build goes on the turntable in step 17.",
+      "design_pattern": "mirror the side"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Not confirmed what crown-1 meshes with; check in later steps."
+}

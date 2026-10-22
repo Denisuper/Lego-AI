@@ -1,0 +1,63 @@
+{
+  "example_id": "8047-step-48",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 48,
+  "step": 48,
+  "input": {
+    "picture": "steps/main-48/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-48",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam3-48",
+        "part_number": "32523",
+        "count": 1
+      }
+    ],
+    "model_so_far": "bucket linked: moving the link tips the bucket; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-48",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "through beam3-48 into the frame (red arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam3-48",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "upright at the front right of the body",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "beam3-48 sits on the frame, pin-48 pushes through"
+    ],
+    "who_does_what_to_which": [
+      "pin-48 holds beam3-48"
+    ],
+    "where_everything_is_after": [
+      "a short upright at the front right",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a post for the right side cover.",
+      "why_these_parts": "A 3-beam is just tall enough.",
+      "sets_up_for_later": "The right side beams go on in steps 49-50.",
+      "design_pattern": "short post"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

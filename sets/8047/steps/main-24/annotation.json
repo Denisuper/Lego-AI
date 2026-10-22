@@ -1,0 +1,49 @@
+{
+  "example_id": "8047-step-24",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 19,
+  "step": 24,
+  "input": {
+    "picture": "steps/main-24/picture.png",
+    "parts_box": [
+      {
+        "name": "bent11-B",
+        "part_number": "32009",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a lever sticks up in front of the seat; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bent11-B",
+        "part_number": "32009",
+        "catalog_name": "Technic Beam 1 x 11.5 Double Bent Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left side, mirror of bent11-A, end hole on the other blue pin (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "model turned around; bent11-B's end hole goes over the blue pin on this side"
+    ],
+    "who_does_what_to_which": [
+      "the blue pin holds bent11-B"
+    ],
+    "where_everything_is_after": [
+      "both side frames in place",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second side frame.",
+      "why_these_parts": "Same part as step 20, mirrored.",
+      "sets_up_for_later": "Step 25 pins into it.",
+      "design_pattern": "mirror the side"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which blue pin is used is read from the arrow only."
+}

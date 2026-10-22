@@ -1,0 +1,74 @@
+{
+  "example_id": "8047-seat-step-03",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 8,
+  "step": 3,
+  "input": {
+    "picture": "steps/seat-03/picture.png",
+    "parts_box": [
+      {
+        "name": "beam5-s",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "pin-s2, pin-s3",
+        "part_number": "6558",
+        "count": 2
+      }
+    ],
+    "model_so_far": "Hub block with lbeam-s1 standing up."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-s",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "standing up beside lbeam-s1's long arm",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-s2",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "through a hole of beam5-s, half sticking out the front",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-s3",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "through another hole of beam5-s, half sticking out the front",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: pin-s2 and pin-s3 push through beam5-s",
+      "beam5-s goes against lbeam-s1's long arm"
+    ],
+    "who_does_what_to_which": [
+      "beam5-s holds pin-s2 and pin-s3",
+      "lbeam-s1 supports beam5-s"
+    ],
+    "where_everything_is_after": [
+      "beam5-s: upright next to the seat back, two pins sticking forward",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Thickens the seat back and gives it two forward pins.",
+      "why_these_parts": "A straight 5-beam lines up with the L-beam's long arm.",
+      "sets_up_for_later": "The second blue L-beam goes on pin-s2 and pin-s3 in step 4.",
+      "design_pattern": "doubled upright"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which holes of beam5-s the pins use, and how beam5-s is held to lbeam-s1, is not clear."
+}

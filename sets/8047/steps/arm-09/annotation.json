@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-arm-step-09",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 35,
+  "step": 9,
+  "input": {
+    "picture": "steps/arm-09/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-a9",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "bevel12-a1",
+        "part_number": "6589",
+        "count": 1
+      }
+    ],
+    "model_so_far": "an axle end sticks up at the base"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-a9",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "in holder-a's top hole (red arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bevel12-a1",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "on the shaft end inside holder-a (red arrow)",
+        "rotation": "spins"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-a9 into holder-a",
+      "bevel12-a1 pushes onto the shaft end"
+    ],
+    "who_does_what_to_which": [
+      "holder-a holds pin-a9",
+      "axle3-a3 carries bevel12-a1"
+    ],
+    "where_everything_is_after": [
+      "a bevel gear at the arm's front"
+    ],
+    "why": {
+      "problem_solved": "Starts the right-angle drive at the arm's front.",
+      "why_these_parts": "Bevel gears turn motion through 90 degrees.",
+      "sets_up_for_later": "bevel20-a meshes with it in step 10.",
+      "design_pattern": "bevel right-angle drive"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "pin-a9 looks long; matched to 2780 because both 32054s are used in step 36."
+}

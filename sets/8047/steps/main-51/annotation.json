@@ -1,0 +1,59 @@
+{
+  "example_id": "8047-step-51",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 52,
+  "step": 51,
+  "input": {
+    "picture": "steps/main-51/picture.png",
+    "parts_box": [
+      {
+        "name": "post-L, post-R",
+        "part_number": "40490",
+        "count": 2
+      }
+    ],
+    "model_so_far": "right side cover two beams deep; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "post-L",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "standing up at the back left",
+        "rotation": "fixed"
+      },
+      {
+        "name": "post-R",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "standing up at the back right",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "each post's bottom hole goes over a pin at the back corners"
+    ],
+    "who_does_what_to_which": [
+      "pin-50a holds post-R",
+      "the back left pin holds post-L"
+    ],
+    "where_everything_is_after": [
+      "two black roof posts at the back",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the roof frame.",
+      "why_these_parts": "9-long beams give head room over the seat.",
+      "sets_up_for_later": "A cross beam joins them in step 52.",
+      "design_pattern": "upright posts"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "No arrows."
+}

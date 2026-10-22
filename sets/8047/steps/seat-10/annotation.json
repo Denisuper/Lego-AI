@@ -1,0 +1,65 @@
+{
+  "example_id": "8047-seat-step-10",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 11,
+  "step": 10,
+  "input": {
+    "picture": "steps/seat-10/picture.png",
+    "parts_box": [
+      {
+        "name": "axle9-s2",
+        "part_number": "60485",
+        "count": 1
+      },
+      {
+        "name": "bush-s3",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat frame with lbeam-s3 on the left."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle9-s2",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "under the seat, parallel to axle9-s1, through lbeam-s3",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bush-s3",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on axle9-s2, about a quarter of the way along (1:1 picture)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bush-s3 slides onto axle9-s2 first",
+      "axle9-s2 pushes in from the front through lbeam-s3 and the seat"
+    ],
+    "who_does_what_to_which": [
+      "lbeam-s3 holds axle9-s2",
+      "bush-s3 locks axle9-s2 in place"
+    ],
+    "where_everything_is_after": [
+      "two parallel axles under the seat",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second cross bar of the seat frame.",
+      "why_these_parts": "Two axles keep the side beams from twisting.",
+      "sets_up_for_later": "Both axle ends take lbeam-s4 in step 11.",
+      "design_pattern": "two-bar frame"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Exact holes for axle9-s2 not visible."
+}

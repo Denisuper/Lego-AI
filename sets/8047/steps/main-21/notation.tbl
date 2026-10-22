@@ -1,0 +1,12 @@
+STEP 21
+# Exact holes not visible.
+ADD pin-21a 2780 black
+ADD pin-21b 2780 black
+ADD axle3-21 4519 lightgray
+CONNECT pin-21a.end1 -> bent11-A.hole?
+CONNECT pin-21b.end1 -> bent11-A.hole?
+CONNECT axle3-21.end1 -> bent11-A.hole?
+DOES bent11-A HOLDS pin-21a
+DOES bent11-A HOLDS pin-21b
+DOES bent11-A HOLDS axle3-21
+PATTERN pins_as_mounting_posts

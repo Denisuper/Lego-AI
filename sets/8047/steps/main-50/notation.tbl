@@ -1,0 +1,15 @@
+STEP 50
+# Only one pin has an arrow.
+ADD beam11-50 32525 yellow
+ADD pin-50a 2780 black
+ADD pin-50b 2780 black
+ADD pin-50c 2780 black
+ADD pin-50d 2780 black
+CONNECT pin-50a.end1 -> ycon-1.hole?
+CONNECT pin-50b.end1 -> beam11-50.hole?
+CONNECT pin-50c.end1 -> beam11-50.hole?
+CONNECT pin-50d.end1 -> beam11-50.hole?
+DOES pin-50b HOLDS beam11-50
+DOES pin-50c HOLDS beam11-50
+DOES pin-50d HOLDS beam11-50
+PATTERN doubled_side_beam

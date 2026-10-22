@@ -1,0 +1,48 @@
+{
+  "example_id": "8047-seat-step-09",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 10,
+  "step": 9,
+  "input": {
+    "picture": "steps/seat-09/picture.png",
+    "parts_box": [
+      {
+        "name": "bush-s2",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat frame with lbeam-s3 on the left."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-s2",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the left end of axle9-s1, outside lbeam-s3",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bush-s2 pushes onto axle9-s1's left end"
+    ],
+    "who_does_what_to_which": [
+      "bush-s2 locks lbeam-s3 in place"
+    ],
+    "where_everything_is_after": [
+      "everything: no change"
+    ],
+    "why": {
+      "problem_solved": "Stops lbeam-s3 sliding off.",
+      "why_these_parts": "A bush grips the axle end.",
+      "sets_up_for_later": "Nothing else goes on this end.",
+      "design_pattern": "bush as end stop"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

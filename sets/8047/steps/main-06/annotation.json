@@ -1,0 +1,60 @@
+{
+  "example_id": "8047-step-06",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 4,
+  "step": 6,
+  "input": {
+    "picture": "steps/main-06/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-L / pin-M",
+        "part_number": "2780",
+        "count": 2
+      }
+    ],
+    "model_so_far": "U-shaped frame with a connector at each front corner."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-L",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "pointing up out of connector-H",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-M",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "pointing up out of connector-K",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-L goes into connector-H's pin hole (red arrow)",
+      "pin-M goes into connector-K's pin hole"
+    ],
+    "who_does_what_to_which": [
+      "connector-H holds pin-L",
+      "connector-K holds pin-M"
+    ],
+    "where_everything_is_after": [
+      "two pins stick up from the front corners",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the front corners pegs to hang a crossbar on.",
+      "why_these_parts": "Plain friction pins hold firmly without spinning loose.",
+      "sets_up_for_later": "beam7-N goes on these in step 7.",
+      "design_pattern": "pegs for a crossbar"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

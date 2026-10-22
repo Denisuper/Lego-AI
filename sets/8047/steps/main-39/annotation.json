@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-step-39",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 38,
+  "step": 39,
+  "input": {
+    "picture": "steps/main-39/picture.png",
+    "parts_box": [
+      {
+        "name": "conn3c-39",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "axle3-39",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "arm on the front of the upper body; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn3c-39",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "across two axle ends at the front right (red arrows)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-39",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "into the arm's top end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "conn3c-39 goes over two front axle ends",
+      "axle3-39 pushes into the arm"
+    ],
+    "who_does_what_to_which": [
+      "conn3c-39 holds the arm's input shaft"
+    ],
+    "where_everything_is_after": [
+      "arm locked on",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Holds the arm's input shaft in line.",
+      "why_these_parts": "Same connector trick as before.",
+      "sets_up_for_later": "The boom goes on the arm in step 40.",
+      "design_pattern": "two-point mount"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

@@ -1,0 +1,14 @@
+STEP 36
+# Which end each long pin goes on is a guess.
+ADD axle5-36 32073 lightgray
+ADD pin-36 2780 black
+ADD rod-C 32054 black
+ADD rod-D 32054 black
+ADD beam3-36 32523 darkgray
+CONNECT pin-36.end1 -> beam3-36.hole1
+CONNECT axle5-36.mid -> beam3-36.hole?
+CONNECT rod-C.axlehole -> axle5-36.end1
+CONNECT rod-D.axlehole -> axle5-36.end2
+DOES beam3-36 HOLDS axle5-36
+DOES beam3-36 HOLDS pin-36
+PATTERN pin_axle_pin_shaft

@@ -1,0 +1,6 @@
+STEP 28
+# Dashed arrow read as 'push the worm shaft home'.
+ADD bush-28 3713 lightgray
+CONNECT bush-28.axlehole -> axle7-s.end2
+DOES bush-28 LOCKS axle7-s
+PATTERN bush_as_end_stop

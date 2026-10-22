@@ -1,0 +1,94 @@
+{
+  "example_id": "8047-step-49",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 49,
+  "step": 49,
+  "input": {
+    "picture": "steps/main-49/picture.png",
+    "parts_box": [
+      {
+        "name": "beam9-49",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "hose-2",
+        "part_number": "75c12",
+        "count": 1
+      },
+      {
+        "name": "pin-49",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "hoseconn-2",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a short upright at the front right; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-49",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "right side, lower, along the tracks",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hose-2",
+        "part_number": "75c12",
+        "catalog_name": "Hose Rigid 3mm 12L",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "standing up from hoseconn-2",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-49",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in hoseconn-2, into beam9-49's end (side box 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hoseconn-2",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the end of hose-2 (side box 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: hose-2 into hoseconn-2, pinned to beam9-49's end",
+      "beam9-49 goes on the right side (line to page 50)"
+    ],
+    "who_does_what_to_which": [
+      "hoseconn-2 holds hose-2",
+      "pin-49 holds hoseconn-2",
+      "bent11-A supports beam9-49"
+    ],
+    "where_everything_is_after": [
+      "right side cover with the second hose",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Mirrors step 35 on the right.",
+      "why_these_parts": "Same parts, mirrored.",
+      "sets_up_for_later": "The hose top goes to the roof in step 55.",
+      "design_pattern": "mirror the side"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The placement picture is on page 50."
+}

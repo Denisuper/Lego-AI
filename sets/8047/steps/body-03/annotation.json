@@ -1,0 +1,48 @@
+{
+  "example_id": "8047-body-step-03",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 24,
+  "step": 3,
+  "input": {
+    "picture": "steps/body-03/picture.png",
+    "parts_box": [
+      {
+        "name": "fairing-1",
+        "part_number": "87080",
+        "count": 1
+      }
+    ],
+    "model_so_far": "beam3-b on top of beam9-b, two more pins sticking up"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fairing-1",
+        "part_number": "87080",
+        "catalog_name": "Technic Panel Fairing #1 Side A",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "standing up on the right end of beam9-b",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "fairing-1's two holes go over two pins in beam9-b (red arrows)"
+    ],
+    "who_does_what_to_which": [
+      "pin-b4 and pin-b5 hold fairing-1"
+    ],
+    "where_everything_is_after": [
+      "fairing-1 standing at one end"
+    ],
+    "why": {
+      "problem_solved": "Adds the first side panel.",
+      "why_these_parts": "Fairings give the smooth engine-cover look.",
+      "sets_up_for_later": "Its mirror goes on in step 5.",
+      "design_pattern": "panel on pins"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

@@ -1,0 +1,80 @@
+{
+  "example_id": "8047-step-10",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 5,
+  "step": 10,
+  "input": {
+    "picture": "steps/main-10/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-U",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "axle-S",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "connector-T",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Frame with turntable-O; beam-R on the back."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle-S",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through beam-R's top axle hole, running left to right",
+        "rotation": "fixed"
+      },
+      {
+        "name": "connector-T",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on axle-S's right end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-U",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in the outer end of connector-T, pin end pointing right",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: axle-S into connector-T, then pin-U into connector-T's other end",
+      "the mini build's axle goes through beam-R's top hole (cream arrow)"
+    ],
+    "who_does_what_to_which": [
+      "beam-R holds axle-S",
+      "axle-S carries connector-T",
+      "connector-T holds pin-U"
+    ],
+    "where_everything_is_after": [
+      "right half of the back cross bar done, blue pin pointing right",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts a back cross bar reaching out to the right side rail.",
+      "why_these_parts": "The axle connector extends the axle, and the blue axle pin turns its end into a pin for a beam to hang on.",
+      "sets_up_for_later": "pin-U holds the right side rail in step 12.",
+      "design_pattern": "axle extended to a pin end"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

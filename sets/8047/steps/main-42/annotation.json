@@ -1,0 +1,79 @@
+{
+  "example_id": "8047-step-42",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 42,
+  "step": 42,
+  "input": {
+    "picture": "steps/main-42/picture.png",
+    "parts_box": [
+      {
+        "name": "thin4-2",
+        "part_number": "2825",
+        "count": 1
+      },
+      {
+        "name": "angle1-42",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "axle3-42",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a black plate on the arm with an axle; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "thin4-2",
+        "part_number": "2825",
+        "catalog_name": "Technic Beam 1 x 4 Thin with Stud Connector",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on the other side of the arm, matching thin4-1",
+        "rotation": "fixed"
+      },
+      {
+        "name": "angle1-42",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on axle3-42 (side box)",
+        "rotation": "swings"
+      },
+      {
+        "name": "axle3-42",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "into angle1-42 (side box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: axle3-42 into angle1-42",
+      "the unit drops onto the axle end; thin4-2 closes it (red arrows)"
+    ],
+    "who_does_what_to_which": [
+      "thin4-1 and thin4-2 hold axle3-41",
+      "angle1-42 spins on axle3-41"
+    ],
+    "where_everything_is_after": [
+      "a hinge on top of the arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the hinge for the push rod.",
+      "why_these_parts": "An angle connector spins on an axle, a simple hinge.",
+      "sets_up_for_later": "The push rod goes on in step 43.",
+      "design_pattern": "axle hinge"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

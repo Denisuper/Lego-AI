@@ -1,0 +1,9 @@
+STEP 34
+# Only one arrow; the second knob's shaft is read from the picture. Which knob does what is a guess.
+ADD knob-1 32270 black
+ADD knob-2 32270 black
+CONNECT knob-1.axlehole -> axle9-33.end2
+CONNECT knob-2.axlehole -> axle8s-1.end2
+DOES axle9-33 CARRIES knob-1
+DOES axle8s-1 CARRIES knob-2
+PATTERN gear_as_knob

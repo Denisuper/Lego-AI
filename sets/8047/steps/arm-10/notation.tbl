@@ -1,0 +1,11 @@
+ADD conn3c-a2 32184 lightgray
+ADD bevel20-a 87407 lightgray
+ADD axle5-a 32073 lightgray
+CONNECT axle5-a.end1 -> conn3c-a2.axlehole1
+CONNECT bevel20-a.pinhole -> pin-a9.end2
+MESH bevel12-a1.teeth bevel20-a.teeth
+RATIO bevel12-a1 bevel20-a 12/20
+DOES bevel12-a1 DRIVES bevel20-a
+DOES bevel20-a SPINS_ON pin-a9
+DOES axle5-a CARRIES conn3c-a2
+PATTERN bevel_right_angle

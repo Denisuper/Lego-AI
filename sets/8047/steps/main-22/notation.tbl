@@ -1,0 +1,13 @@
+STEP 22
+# conn3c-1 has no arrow. That gear-5 meshes gear-6 is read from the picture.
+ADD conn3c-1 32184 lightgray
+ADD gear-6 4019 lightgray
+CONNECT conn3c-1.axlehole1 -> axle9-s1.end2
+CONNECT conn3c-1.axlehole2 -> axle9-s2.end2
+CONNECT gear-6.axlehole -> axle7-B.end2
+MESH gear-5.teeth gear-6.teeth
+RATIO gear-5 gear-6 16/16
+DOES axle7-B CARRIES gear-6
+DOES gear-5 DRIVES gear-6
+DOES conn3c-1 HOLDS axle9-s1
+PATTERN gear_pair_1to1

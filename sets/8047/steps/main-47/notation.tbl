@@ -1,0 +1,12 @@
+STEP 47
+ADD axle3-47 4519 lightgray
+ADD halfbush-1 32123b lightgray
+ADD halfbush-2 32123b lightgray
+CONNECT axle3-47.mid -> link9-b.hole3
+CONNECT axle3-47.mid -> bucket-1.hole?
+CONNECT halfbush-1.axlehole -> axle3-47.end1
+CONNECT halfbush-2.axlehole -> axle3-47.end2
+DOES axle3-47 HOLDS link9-b
+DOES halfbush-1 LOCKS axle3-47
+DOES halfbush-2 LOCKS axle3-47
+PATTERN two_bar_linkage

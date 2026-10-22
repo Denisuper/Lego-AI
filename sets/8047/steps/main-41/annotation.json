@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-step-41",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 41,
+  "step": 41,
+  "input": {
+    "picture": "steps/main-41/picture.png",
+    "parts_box": [
+      {
+        "name": "thin4-1",
+        "part_number": "2825",
+        "count": 1
+      },
+      {
+        "name": "axle3-41",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "boom on the arm's front; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "thin4-1",
+        "part_number": "2825",
+        "catalog_name": "Technic Beam 1 x 4 Thin with Stud Connector",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "standing on the arm's side",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-41",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through thin4-1 (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "thin4-1 goes on the arm side",
+      "axle3-41 pushes through it"
+    ],
+    "who_does_what_to_which": [
+      "thin4-1 holds axle3-41"
+    ],
+    "where_everything_is_after": [
+      "a black plate on the arm with an axle",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a mount for the push rod.",
+      "why_these_parts": "Thin beam keeps clear of the gears.",
+      "sets_up_for_later": "The push rod hinge goes here in step 42.",
+      "design_pattern": "rod mount"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

@@ -1,0 +1,13 @@
+STEP 19
+# Model is turned around (turn symbol); which holes the shaft passes through is not visible.
+ADD axle7-B 44294 lightgray
+ADD axcon-1 59443 black
+ADD axpin-1 43093 blue
+ADD conn3-1 42003 black
+CONNECT axle7-B.end1 -> axcon-1.axlehole
+CONNECT axpin-1.axle -> axcon-1.axlehole
+CONNECT axle7-B.mid -> seat.hole?
+CONNECT conn3-1.axlehole -> axle7-B.end2
+DOES axcon-1 HOLDS axpin-1
+DOES axle7-B CARRIES conn3-1
+PATTERN axle_to_pin_shaft

@@ -1,0 +1,33 @@
+{
+  "example_id": "8047-step-18",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 13,
+  "step": 18,
+  "input": {
+    "picture": "steps/main-18/picture.png",
+    "parts_box": [],
+    "model_so_far": "Seat build sitting on the turntable (step 17)."
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pinlong-1 and pinlong-2 are pushed further in (red arrows) so their free ends lock into the seat frame legs"
+    ],
+    "who_does_what_to_which": [
+      "pinlong-1 and pinlong-2 lock the seat build in place on turntable-O"
+    ],
+    "where_everything_is_after": [
+      "seat build locked to the turntable",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Locks the seat build down so it can't lift off.",
+      "why_these_parts": "No new parts: pushing the long pins home is enough.",
+      "sets_up_for_later": "The drive parts in steps 19-28 are built around the locked seat.",
+      "design_pattern": "push pins home to lock"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "No parts box; reading the arrows as 'push the blue pins in'."
+}

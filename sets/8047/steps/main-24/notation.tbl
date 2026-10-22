@@ -1,0 +1,6 @@
+STEP 24
+# Which blue pin is used is read from the arrow only.
+ADD bent11-B 32009 black
+CONNECT pinlong-1.end2 -> bent11-B.hole1
+DOES pinlong-1 HOLDS bent11-B
+PATTERN mirror_side

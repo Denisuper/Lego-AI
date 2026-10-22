@@ -1,0 +1,80 @@
+{
+  "example_id": "8047-seat-step-07",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 9,
+  "step": 7,
+  "input": {
+    "picture": "steps/seat-07/picture.png",
+    "parts_box": [
+      {
+        "name": "bush-s1",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "axle7-s",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "gear-5",
+        "part_number": "4019",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat with axle9-s1 under it."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear-5",
+        "part_number": "4019",
+        "catalog_name": "Technic Gear 16 Tooth",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on one end of axle7-s (side box), on the left side",
+        "rotation": "spins with axle7-s"
+      },
+      {
+        "name": "axle7-s",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through the axle hole in block-s, running left to right",
+        "rotation": "spins"
+      },
+      {
+        "name": "bush-s1",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on axle7-s's right end (red arrow)",
+        "rotation": "spins with axle7-s"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: gear-5 slides onto axle7-s",
+      "axle7-s goes through block-s",
+      "bush-s1 pushes onto axle7-s's right end"
+    ],
+    "who_does_what_to_which": [
+      "axle7-s carries gear-5",
+      "bush-s1 locks axle7-s in place"
+    ],
+    "where_everything_is_after": [
+      "a gear on the left, an axle running left to right under the seat",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a turning shaft with a gear.",
+      "why_these_parts": "A bush keeps an axle from sliding out without stopping it from turning.",
+      "sets_up_for_later": "A 24-tooth crown gear goes on this shaft in step 11.",
+      "design_pattern": "shaft with gear and stop bush"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Whether axle7-s turns freely in block-s depends on block-s's hole type; check in a 3D view."
+}

@@ -1,0 +1,8 @@
+# No arrows; places read from the picture.
+ADD pin34-a 32002 darkgray
+ADD conn3c-a1 32184 lightgray
+CONNECT pin34-a.end1 -> curve-a1.hole?
+CONNECT conn3c-a1.pinhole -> pin34-a.end2
+CONNECT conn3c-a1.axlehole1 -> axle3-a1.end2
+DOES pin34-a HOLDS conn3c-a1
+PATTERN two_point_mount

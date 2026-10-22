@@ -1,0 +1,11 @@
+# What gear-7 meshes is not confirmed.
+ADD bush-b 3713 lightgray
+ADD axle4s-b 87083 darkgray
+ADD gear-7 4019 lightgray
+CONNECT gear-7.axlehole -> axle4s-b.end1
+CONNECT axle4s-b.mid -> beam3-b.hole?
+CONNECT bush-b.axlehole -> axle4s-b.end2
+DOES axle4s-b CARRIES gear-7
+DOES bush-b LOCKS axle4s-b
+DOES axle4s-b SPINS_ON beam3-b
+PATTERN shaft_with_gear_and_stop

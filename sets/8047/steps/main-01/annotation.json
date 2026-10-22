@@ -1,0 +1,63 @@
+{
+  "example_id": "8047-step-01",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 3,
+  "step": 1,
+  "input": {
+    "picture": "steps/main-01/picture.png",
+    "parts_box": [
+      {
+        "name": "rod-A",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "axle-A",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Nothing yet."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rod-A",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Stop Bush",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "first part; long pin lying left to right, ring (stop bush) end on the right",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle-A",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "pushed into the axle hole in rod-A's ring end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle-A goes into the axle hole in rod-A's ring end"
+    ],
+    "who_does_what_to_which": [
+      "rod-A holds axle-A"
+    ],
+    "where_everything_is_after": [
+      "rod-A: start of the model",
+      "axle-A: sticking out of rod-A's ring end"
+    ],
+    "why": {
+      "problem_solved": "Starts a straight cross shaft for the middle of the undercarriage.",
+      "why_these_parts": "A long pin with a stop ring has a pin on one end (to hang beams on) and an axle hole on the other (to join an axle).",
+      "sets_up_for_later": "rod-A's pin end will hold a bent beam (step 5) and a side rail (step 12).",
+      "design_pattern": "pin-axle-pin shaft"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

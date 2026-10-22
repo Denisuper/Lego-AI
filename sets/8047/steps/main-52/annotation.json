@@ -1,0 +1,74 @@
+{
+  "example_id": "8047-step-52",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 53,
+  "step": 52,
+  "input": {
+    "picture": "steps/main-52/picture.png",
+    "parts_box": [
+      {
+        "name": "beam7-52",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "studaxle-1, studaxle-2",
+        "part_number": "6587",
+        "count": 2
+      }
+    ],
+    "model_so_far": "two black roof posts at the back; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam7-52",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "across the top of the two posts",
+        "rotation": "fixed"
+      },
+      {
+        "name": "studaxle-1",
+        "part_number": "6587",
+        "catalog_name": "Technic Axle 3 with Stud",
+        "color": "Dark Tan",
+        "part_match": "confirmed",
+        "position": "in post-L's top hole, pointing forward",
+        "rotation": "fixed"
+      },
+      {
+        "name": "studaxle-2",
+        "part_number": "6587",
+        "catalog_name": "Technic Axle 3 with Stud",
+        "color": "Dark Tan",
+        "part_match": "confirmed",
+        "position": "in post-R's top hole, pointing forward",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "studaxle-1 and studaxle-2 go into the posts' top holes",
+      "beam7-52 goes over both (red arrows)"
+    ],
+    "who_does_what_to_which": [
+      "studaxle-1 and studaxle-2 hold beam7-52",
+      "beam7-52 locks post-L and post-R in place"
+    ],
+    "where_everything_is_after": [
+      "the back roof frame is a closed square",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Ties the two posts together.",
+      "why_these_parts": "Axles with a stud end leave a stud for the lights.",
+      "sets_up_for_later": "Step 53 extends the roof forward.",
+      "design_pattern": "closed frame"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

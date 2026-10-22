@@ -1,0 +1,7 @@
+ADD lthin-2 32056 yellow
+ADD axle3-b 4519 lightgray
+CONNECT lthin-2.hole1 -> axle2-b1.end2
+CONNECT axle3-b.end1 -> lthin-2.hole?
+DOES axle2-b1 LOCKS lthin-2
+DOES lthin-2 HOLDS axle3-b
+PATTERN sandwich_joint

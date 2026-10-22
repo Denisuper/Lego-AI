@@ -1,0 +1,6 @@
+ADD fairing-1 87080 yellow
+CONNECT pin-b4.end2 -> fairing-1.hole?
+CONNECT pin-b5.end2 -> fairing-1.hole?
+DOES pin-b4 HOLDS fairing-1
+DOES pin-b5 HOLDS fairing-1
+PATTERN panel_on_pins

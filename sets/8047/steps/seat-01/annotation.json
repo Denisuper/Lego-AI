@@ -1,0 +1,78 @@
+{
+  "example_id": "8047-seat-step-01",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 8,
+  "step": 1,
+  "input": {
+    "picture": "steps/seat-01/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-s1",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "hub2-s",
+        "part_number": "87082",
+        "count": 1
+      },
+      {
+        "name": "hub4-s",
+        "part_number": "48989",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Nothing yet (new side build, numbering starts at 1)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hub4-s",
+        "part_number": "48989",
+        "catalog_name": "Technic Pin Connector Hub Perpendicular 3L with 4 Pins",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "first part of the seat build, four pins pointing out",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-s1",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in hub4-s's middle hole, sticking out the front",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hub2-s",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "pushed onto hub4-s's side pin (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-s1 goes into the middle hole of hub4-s",
+      "hub2-s's hole slides over one side pin of hub4-s"
+    ],
+    "who_does_what_to_which": [
+      "hub4-s holds pin-s1",
+      "hub4-s holds hub2-s"
+    ],
+    "where_everything_is_after": [
+      "hub4-s, pin-s1, hub2-s: a small block with pins pointing in several directions"
+    ],
+    "why": {
+      "problem_solved": "Starts the seat frame with a block that has pins pointing in many directions.",
+      "why_these_parts": "Hub connectors turn one spot into pins facing three ways, so beams can be added at right angles.",
+      "sets_up_for_later": "The blue L-beams go on these pins in steps 2 and 4.",
+      "design_pattern": "pin hub core"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "pin-s1 is already in hub4-s in the picture with no arrow; which hole it uses is a guess."
+}

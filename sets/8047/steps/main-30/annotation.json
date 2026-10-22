@@ -1,0 +1,33 @@
+{
+  "example_id": "8047-step-30",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 25,
+  "step": 30,
+  "input": {
+    "picture": "steps/main-30/picture.png",
+    "parts_box": [],
+    "model_so_far": "body build done: two fairings on a yellow beam with a gear shaft between"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "GROUP body drops onto the back of the upper frame (cream arrow): its pins go into the side frames' holes"
+    ],
+    "who_does_what_to_which": [
+      "bent11-A and bent11-B support the body build"
+    ],
+    "where_everything_is_after": [
+      "yellow body on the back of the upper frame, turns with the turntable",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the back of the excavator body.",
+      "why_these_parts": "Building it on the side keeps it easy to hold.",
+      "sets_up_for_later": "Steps 31-34 add the knobs at the back.",
+      "design_pattern": "side build attached"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Exact holes for the body pins not visible."
+}

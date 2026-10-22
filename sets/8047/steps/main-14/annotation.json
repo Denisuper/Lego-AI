@@ -1,0 +1,76 @@
+{
+  "example_id": "8047-step-14",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 6,
+  "step": 14,
+  "input": {
+    "picture": "steps/main-14/picture.png",
+    "parts_box": [
+      {
+        "name": "gear-1..gear-4",
+        "part_number": "4019",
+        "count": 4
+      }
+    ],
+    "model_so_far": "Four tan axle ends sticking out at the corners."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear-1",
+        "part_number": "4019",
+        "catalog_name": "Technic Gear 16 Tooth",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on tan-1's axle end, outside the rail",
+        "rotation": "spins with tan-1"
+      },
+      {
+        "name": "gear-2",
+        "part_number": "4019",
+        "catalog_name": "Technic Gear 16 Tooth",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on tan-2's axle end, outside the rail",
+        "rotation": "spins with tan-2"
+      },
+      {
+        "name": "gear-3",
+        "part_number": "4019",
+        "catalog_name": "Technic Gear 16 Tooth",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on tan-3's axle end, outside the rail",
+        "rotation": "spins with tan-3"
+      },
+      {
+        "name": "gear-4",
+        "part_number": "4019",
+        "catalog_name": "Technic Gear 16 Tooth",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on tan-4's axle end, outside the rail",
+        "rotation": "spins with tan-4"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "each gear's axle hole pushes onto one tan pin's axle end"
+    ],
+    "who_does_what_to_which": [
+      "tan-1, tan-2, tan-3 and tan-4 each carry one gear"
+    ],
+    "where_everything_is_after": [
+      "a 16-tooth gear at each corner",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the wheels the tracks run around.",
+      "why_these_parts": "The tread links have teeth that mesh with a 16-tooth gear, so a gear works as a track wheel.",
+      "sets_up_for_later": "Step 15 wraps 28 track links around each pair of gears; nothing drives them, they roll when the model is pushed.",
+      "design_pattern": "gears as track wheels (idlers)"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

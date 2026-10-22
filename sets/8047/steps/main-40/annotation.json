@@ -1,0 +1,33 @@
+{
+  "example_id": "8047-step-40",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 40,
+  "step": 40,
+  "input": {
+    "picture": "steps/main-40/picture.png",
+    "parts_box": [],
+    "model_so_far": "boom build done"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "GROUP boom drops onto the arm's front (cream arrow); an axle is pushed through the joint (red arrow)"
+    ],
+    "who_does_what_to_which": [
+      "the arm carries the boom"
+    ],
+    "where_everything_is_after": [
+      "boom on the arm's front",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the boom.",
+      "why_these_parts": "Side build again.",
+      "sets_up_for_later": "Steps 41-45 add the stick and links.",
+      "design_pattern": "side build attached"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Joins read from the arrows only."
+}

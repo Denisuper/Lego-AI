@@ -1,0 +1,93 @@
+{
+  "example_id": "8047-step-43",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 43,
+  "step": 43,
+  "input": {
+    "picture": "steps/main-43/picture.png",
+    "parts_box": [
+      {
+        "name": "axle9-43",
+        "part_number": "60485",
+        "count": 1
+      },
+      {
+        "name": "tanpin-1",
+        "part_number": "32556",
+        "count": 1
+      },
+      {
+        "name": "angle1-43",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "angle4-43",
+        "part_number": "32192",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a hinge on top of the arm; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle9-43",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "the push rod, from the hinge to the stick",
+        "rotation": "slides/swings"
+      },
+      {
+        "name": "tanpin-1",
+        "part_number": "32556",
+        "catalog_name": "Technic Pin Long without Friction",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "in angle4-43's hole at the rod's end",
+        "rotation": "spins"
+      },
+      {
+        "name": "angle1-43",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the rod's back end (side box 1)",
+        "rotation": "swings"
+      },
+      {
+        "name": "angle4-43",
+        "part_number": "32192",
+        "catalog_name": "Technic Axle and Pin Connector Angled #4 135deg",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the rod's front end (side box 2)",
+        "rotation": "swings"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: angle1-43 on one end of axle9-43, angle4-43 on the other, tanpin-1 in angle4-43",
+      "rod's back end hinges on axle3-42 (cream arrow)"
+    ],
+    "who_does_what_to_which": [
+      "axle9-43 carries angle1-43 and angle4-43",
+      "tanpin-1 spins on angle4-43"
+    ],
+    "where_everything_is_after": [
+      "a long push rod across the top of the boom",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the push rod that tips the stick.",
+      "why_these_parts": "A smooth tan pin lets the rod end swing freely.",
+      "sets_up_for_later": "The stick hangs on its front end (step 44).",
+      "design_pattern": "push rod linkage"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

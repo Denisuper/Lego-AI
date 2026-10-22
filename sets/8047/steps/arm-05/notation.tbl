@@ -1,0 +1,16 @@
+# Which arm holes take the unit is not visible.
+ADD axle2-a 32062 red
+ADD ycon-a 6536 yellow
+ADD worm-2 4716 lightgray
+ADD axcon-a 59443 black
+ADD axle4s-a 87083 darkgray
+ADD axle3-a3 4519 lightgray
+CONNECT ycon-a.axlehole -> axle4s-a.end1
+CONNECT axle2-a.mid -> ycon-a.pinhole
+CONNECT worm-2.axlehole -> axle4s-a.mid
+CONNECT axcon-a.axlehole -> axle4s-a.end2
+CONNECT axle3-a3.end1 -> axcon-a.axlehole
+DOES axle4s-a CARRIES worm-2
+DOES axcon-a HOLDS axle3-a3
+DOES ycon-a HOLDS axle4s-a
+PATTERN worm_drive

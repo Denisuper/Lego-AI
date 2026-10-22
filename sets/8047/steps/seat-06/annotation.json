@@ -1,0 +1,49 @@
+{
+  "example_id": "8047-seat-step-06",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 9,
+  "step": 6,
+  "input": {
+    "picture": "steps/seat-06/picture.png",
+    "parts_box": [
+      {
+        "name": "axle9-s1",
+        "part_number": "60485",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat with two axle holes under it."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle9-s1",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "under the seat, running front-left to back-right through conn-s1",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle9-s1 goes through conn-s1's axle hole"
+    ],
+    "who_does_what_to_which": [
+      "conn-s1 holds axle9-s1"
+    ],
+    "where_everything_is_after": [
+      "axle9-s1 sticks out both sides under the seat",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the first cross bar of the seat frame.",
+      "why_these_parts": "A long axle reaches both side beams of the frame.",
+      "sets_up_for_later": "Its ends take the dark gray L-beams in steps 8 and 11.",
+      "design_pattern": "axle as cross bar"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

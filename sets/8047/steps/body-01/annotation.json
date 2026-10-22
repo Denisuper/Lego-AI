@@ -1,0 +1,71 @@
+{
+  "example_id": "8047-body-step-01",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 24,
+  "step": 1,
+  "input": {
+    "picture": "steps/body-01/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-b1, pin-b2",
+        "part_number": "6558",
+        "count": 2
+      },
+      {
+        "name": "beam9-b",
+        "part_number": "40490",
+        "count": 1
+      }
+    ],
+    "model_so_far": "model turned to show the back; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-b1",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in one end hole of beam9-b, both ends sticking out",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-b2",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in the other end hole of beam9-b",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam9-b",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "first part of the body build, lying flat",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-b1 and pin-b2 push into beam9-b's end holes"
+    ],
+    "who_does_what_to_which": [
+      "beam9-b holds pin-b1 and pin-b2"
+    ],
+    "where_everything_is_after": [
+      "a yellow 9-beam with a long pin at each end"
+    ],
+    "why": {
+      "problem_solved": "Starts the yellow back body.",
+      "why_these_parts": "Long pins leave a free half to hang the body on the frame.",
+      "sets_up_for_later": "The fairings go on in steps 3 and 5.",
+      "design_pattern": "pins as mounting posts"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

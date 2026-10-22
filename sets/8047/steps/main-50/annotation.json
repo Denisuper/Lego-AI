@@ -1,0 +1,91 @@
+{
+  "example_id": "8047-step-50",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 51,
+  "step": 50,
+  "input": {
+    "picture": "steps/main-50/picture.png",
+    "parts_box": [
+      {
+        "name": "beam11-50",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "pin-50a, pin-50b, pin-50c, pin-50d",
+        "part_number": "2780",
+        "count": 4
+      }
+    ],
+    "model_so_far": "right side cover with the second hose; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-50",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "right side, over beam9-49",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-50a",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "into the back right corner (red arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-50b",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "side pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-50c",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "side pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-50d",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "side pin",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "four pins push into the right side",
+      "beam11-50 goes over them"
+    ],
+    "who_does_what_to_which": [
+      "pin-50b, pin-50c and pin-50d hold beam11-50"
+    ],
+    "where_everything_is_after": [
+      "right side cover two beams deep",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Finishes the right side cover.",
+      "why_these_parts": "Mirror of step 37.",
+      "sets_up_for_later": "The roof posts go on in step 51.",
+      "design_pattern": "doubled side beam"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Only one pin has an arrow."
+}

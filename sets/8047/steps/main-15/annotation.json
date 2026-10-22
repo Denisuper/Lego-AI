@@ -1,0 +1,548 @@
+{
+  "example_id": "8047-step-15",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 7,
+  "step": 15,
+  "input": {
+    "picture": "steps/main-15/picture.png",
+    "parts_box": [
+      {
+        "name": "tread-1..tread-56",
+        "part_number": "3873",
+        "count": 56
+      }
+    ],
+    "model_so_far": "Undercarriage upside down; a 16-tooth gear at each corner on free-spinning tan pins."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "tread-1",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 1 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-2",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 2 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-3",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 3 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-4",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 4 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-5",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 5 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-6",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 6 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-7",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 7 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-8",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 8 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-9",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 9 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-10",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 10 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-11",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 11 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-12",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 12 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-13",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 13 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-14",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 14 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-15",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 15 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-16",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 16 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-17",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 17 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-18",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 18 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-19",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 19 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-20",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 20 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-21",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 21 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-22",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 22 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-23",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 23 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-24",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 24 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-25",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 25 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-26",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 26 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-27",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 27 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-28",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "left track loop, link 28 of 28, around gear-1 and gear-2",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-29",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 1 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-30",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 2 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-31",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 3 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-32",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 4 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-33",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 5 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-34",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 6 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-35",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 7 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-36",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 8 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-37",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 9 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-38",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 10 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-39",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 11 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-40",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 12 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-41",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 13 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-42",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 14 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-43",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 15 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-44",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 16 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-45",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 17 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-46",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 18 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-47",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 19 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-48",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 20 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-49",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 21 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-50",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 22 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-51",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 23 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-52",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 24 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-53",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 25 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-54",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 26 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-55",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 27 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "tread-56",
+        "part_number": "3873",
+        "catalog_name": "Technic Link Tread",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "right track loop, link 28 of 28, around gear-3 and gear-4",
+        "rotation": "moves with the loop"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "each link clips to the next (side box: 28 links per loop, make 2)",
+      "the left loop wraps around gear-1 and gear-2, the right loop around gear-3 and gear-4; the gear teeth sit in the links"
+    ],
+    "who_does_what_to_which": [
+      "gear-1 and gear-2 hold the left loop tight",
+      "gear-3 and gear-4 hold the right loop tight",
+      "beam9-X supports the left loop through gear-1 and gear-2",
+      "beam9-Y supports the right loop through gear-3 and gear-4"
+    ],
+    "where_everything_is_after": [
+      "a closed track loop on each side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the excavator its tracks.",
+      "why_these_parts": "Tread links clip into a loop of any length and their teeth fit a 16-tooth gear, so two gears per side make a track.",
+      "sets_up_for_later": "The undercarriage is finished; step 16 flips it over to build the top.",
+      "design_pattern": "track loop around two idler gears"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

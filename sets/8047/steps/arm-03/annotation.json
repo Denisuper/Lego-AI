@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-arm-step-03",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 33,
+  "step": 3,
+  "input": {
+    "picture": "steps/arm-03/picture.png",
+    "parts_box": [
+      {
+        "name": "pin34-a",
+        "part_number": "32002",
+        "count": 1
+      },
+      {
+        "name": "conn3c-a1",
+        "part_number": "32184",
+        "count": 1
+      }
+    ],
+    "model_so_far": "curved plate on the base"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin34-a",
+        "part_number": "32002",
+        "catalog_name": "Technic Pin 3/4",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "in curve-a1 near its corner",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn3c-a1",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on pin34-a and axle3-a1",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin34-a pushes into curve-a1",
+      "conn3c-a1 goes over pin34-a and axle3-a1"
+    ],
+    "who_does_what_to_which": [
+      "pin34-a holds conn3c-a1",
+      "axle3-a1 holds conn3c-a1"
+    ],
+    "where_everything_is_after": [
+      "a gray connector across the arm base"
+    ],
+    "why": {
+      "problem_solved": "Adds a cross piece to the arm base.",
+      "why_these_parts": "A 3/4 pin is short enough not to stick out.",
+      "sets_up_for_later": "A shaft goes through it in step 4.",
+      "design_pattern": "two-point mount"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "No arrows; places read from the picture."
+}

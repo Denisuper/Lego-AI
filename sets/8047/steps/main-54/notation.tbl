@@ -1,0 +1,22 @@
+STEP 54
+# Which hub stud takes which light is a guess; placement picture is on page 56.
+ADD light-o1 6141 transorange
+ADD light-o2 6141 transorange
+ADD light-c1 6141 transclear
+ADD light-c2 6141 transclear
+ADD hub-54a 87082 lightgray
+ADD hub-54b 87082 lightgray
+ADD beam7-54 32524 black
+ADD beam5-54 32316 black
+CONNECT hub-54a.hole -> beam5-54.hole1
+CONNECT hub-54b.hole -> beam5-54.hole5
+CONNECT beam7-54.hole? -> hub-54a.pin?
+CONNECT light-o1.stud -> hub-54a.stud
+CONNECT light-o2.stud -> hub-54b.stud
+CONNECT light-c1.stud -> studaxle-1.stud
+CONNECT light-c2.stud -> studaxle-2.stud
+CONNECT beam7-54.hole? -> axle3-53a.end2
+CONNECT beam5-54.hole? -> axle3-53b.end2
+DOES hub-54a HOLDS beam5-54
+DOES axle3-53a SUPPORTS beam7-54
+PATTERN roof_with_lights

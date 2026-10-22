@@ -1,0 +1,6 @@
+STEP 37
+# Exact holes not shown.
+ADD beam11-37 32525 yellow
+CONNECT beam11-37.hole? -> pin-21a.end2
+DOES pin-21a HOLDS beam11-37
+PATTERN doubled_side_beam

@@ -1,0 +1,94 @@
+{
+  "example_id": "8047-step-19",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 14,
+  "step": 19,
+  "input": {
+    "picture": "steps/main-19/picture.png",
+    "parts_box": [
+      {
+        "name": "axle7-B",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "axcon-1",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axpin-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "conn3-1",
+        "part_number": "42003",
+        "count": 1
+      }
+    ],
+    "model_so_far": "seat build locked to the turntable; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-B",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "long axle running from under the seat out the left side (side box)",
+        "rotation": "spins"
+      },
+      {
+        "name": "axcon-1",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on one end of axle7-B (side box)",
+        "rotation": "spins with axle7-B"
+      },
+      {
+        "name": "axpin-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in the other end of axcon-1, pin end out (side box)",
+        "rotation": "spins with axle7-B"
+      },
+      {
+        "name": "conn3-1",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on the left end of axle7-B, standing up (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: axle7-B -> axcon-1 -> axpin-1 make one long shaft",
+      "the shaft goes in from below/behind the seat (the model is turned around)",
+      "conn3-1's axle hole goes onto the shaft's left end"
+    ],
+    "who_does_what_to_which": [
+      "axcon-1 holds axpin-1",
+      "axle7-B carries conn3-1"
+    ],
+    "where_everything_is_after": [
+      "a long shaft under the seat with a pin end on one side and conn3-1 on the other",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a long cross shaft under the seat for the side frames to hang on.",
+      "why_these_parts": "An axle connector plus axle pin turns an axle end into a pin, so a beam can swing on it.",
+      "sets_up_for_later": "The double-bent side beams go on its ends in steps 20 and 24.",
+      "design_pattern": "axle-to-pin shaft"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Model is turned around (turn symbol); which holes the shaft passes through is not visible."
+}

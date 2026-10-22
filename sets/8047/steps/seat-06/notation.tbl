@@ -1,0 +1,4 @@
+ADD axle9-s1 60485 lightgray
+CONNECT axle9-s1.mid -> conn-s1.axlehole
+DOES conn-s1 HOLDS axle9-s1
+PATTERN axle_as_cross_bar

@@ -1,0 +1,80 @@
+{
+  "example_id": "8047-boom-step-01",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 39,
+  "step": 1,
+  "input": {
+    "picture": "steps/boom-01/picture.png",
+    "parts_box": [
+      {
+        "name": "lthin-1",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "axle2-b1, axle2-b2, axle2-b3",
+        "part_number": "32062",
+        "count": 3
+      }
+    ],
+    "model_so_far": "arm locked on; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lthin-1",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "first part of the boom build",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-b1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed",
+        "position": "in lthin-1, standing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-b2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed",
+        "position": "in lthin-1, standing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-b3",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed",
+        "position": "in lthin-1, standing up",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "three red axles push into lthin-1's axle holes"
+    ],
+    "who_does_what_to_which": [
+      "lthin-1 holds axle2-b1, axle2-b2 and axle2-b3"
+    ],
+    "where_everything_is_after": [
+      "a yellow L with three red axles up"
+    ],
+    "why": {
+      "problem_solved": "Starts the boom joint.",
+      "why_these_parts": "Short red axles lock beams together without spinning.",
+      "sets_up_for_later": "Beams stack on them in step 2.",
+      "design_pattern": "stacked beams on short axles"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

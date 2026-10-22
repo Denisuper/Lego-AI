@@ -1,0 +1,8 @@
+STEP 38
+# Joins read from the two arrows only.
+ATTACH arm
+CONNECT axle3-a4.end2 -> link9-1.hole3
+CONNECT axle4-a1.end2 -> beam3-36.hole?
+DOES link9-1 HOLDS arm
+DOES beam3-36 SUPPORTS arm
+PATTERN side_build_attached

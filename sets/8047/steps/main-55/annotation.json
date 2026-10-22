@@ -1,0 +1,59 @@
+{
+  "example_id": "8047-step-55",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 57,
+  "step": 55,
+  "input": {
+    "picture": "steps/main-55/picture.png",
+    "parts_box": [
+      {
+        "name": "angle5-1, angle5-2",
+        "part_number": "32015",
+        "count": 2
+      }
+    ],
+    "model_so_far": "roof finished with orange and clear lights; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "angle5-1",
+        "part_number": "32015",
+        "catalog_name": "Technic Axle and Pin Connector Angled #5 112.5deg",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on top of hose-1, clipped to the roof's front corner (red arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "angle5-2",
+        "part_number": "32015",
+        "catalog_name": "Technic Axle and Pin Connector Angled #5 112.5deg",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on top of hose-2, clipped to the other front corner",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "angle5-1 and angle5-2 push onto the hose tops, then their holes clip over the roof hubs' pins"
+    ],
+    "who_does_what_to_which": [
+      "angle5-1 holds hose-1 to the roof",
+      "angle5-2 holds hose-2 to the roof"
+    ],
+    "where_everything_is_after": [
+      "hoses run from the body up to the roof",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Finishes the hoses and stiffens the roof.",
+      "why_these_parts": "An angled connector turns the hose end toward the roof pin.",
+      "sets_up_for_later": "Step 56 is the finished model.",
+      "design_pattern": "hose as brace"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Only one arrow shown."
+}

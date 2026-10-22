@@ -1,0 +1,11 @@
+# Which pin holds beam3-b is read from the arrow only.
+ADD beam3-b 32523 darkgray
+ADD pin-b3 2780 black
+ADD pin-b4 2780 black
+ADD pin-b5 2780 black
+CONNECT pin-b3.end1 -> beam9-b.hole?
+CONNECT pin-b4.end1 -> beam9-b.hole?
+CONNECT pin-b5.end1 -> beam9-b.hole?
+CONNECT pin-b3.end2 -> beam3-b.hole?
+DOES pin-b3 HOLDS beam3-b
+PATTERN pins_as_mounting_posts

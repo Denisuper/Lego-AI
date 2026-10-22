@@ -1,0 +1,131 @@
+{
+  "example_id": "8047-step-54",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 55,
+  "step": 54,
+  "input": {
+    "picture": "steps/main-54/picture.png",
+    "parts_box": [
+      {
+        "name": "light-o1, light-o2, light-c1, light-c2",
+        "part_number": "6141",
+        "count": 4
+      },
+      {
+        "name": "hub-54a, hub-54b",
+        "part_number": "87082",
+        "count": 2
+      },
+      {
+        "name": "beam7-54",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "beam5-54",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "two axle ends stick forward from the roof; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "light-o1",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1",
+        "color": "Trans-Orange",
+        "part_match": "confirmed",
+        "position": "orange light on hub-54a's top (side box 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "light-o2",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1",
+        "color": "Trans-Orange",
+        "part_match": "confirmed",
+        "position": "orange light on hub-54b's top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "light-c1",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "confirmed",
+        "position": "clear light on the front of the roof",
+        "rotation": "fixed"
+      },
+      {
+        "name": "light-c2",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "confirmed",
+        "position": "clear light on the front of the roof",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hub-54a",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on beam5-54's end (side box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hub-54b",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on beam5-54's other end (side box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam7-54",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "front roof beam (side box 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam5-54",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "front roof beam (side box 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box 1: hub-54a and hub-54b onto beam5-54's ends",
+      "side box 2: beam7-54 over the hubs' other pins",
+      "side box 3: lights on the hubs",
+      "the roof piece goes onto the forward axles (line to page 56)"
+    ],
+    "who_does_what_to_which": [
+      "hub-54a and hub-54b hold beam5-54 and beam7-54",
+      "axle3-53a and axle3-53b support the roof piece"
+    ],
+    "where_everything_is_after": [
+      "roof finished with orange and clear lights",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the front of the roof and the lights.",
+      "why_these_parts": "Round 1x1 plates in clear and orange look like work lights and beacons.",
+      "sets_up_for_later": "Step 55 clips the hoses to the roof.",
+      "design_pattern": "roof with lights"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which hub stud takes which light is a guess; placement picture is on page 56."
+}

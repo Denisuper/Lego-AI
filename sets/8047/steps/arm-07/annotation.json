@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-arm-step-07",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 34,
+  "step": 7,
+  "input": {
+    "picture": "steps/arm-07/picture.png",
+    "parts_box": [
+      {
+        "name": "beam3t-a2",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "holder-a",
+        "part_number": "61904",
+        "count": 1
+      }
+    ],
+    "model_so_far": "arm sides closed, worm inside"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3t-a2",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "on the outside of the arm base",
+        "rotation": "fixed"
+      },
+      {
+        "name": "holder-a",
+        "part_number": "61904",
+        "catalog_name": "Technic Linear Actuator Holder 4 x 3 x 2 1/2",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the end of the worm shaft (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "beam3t-a2 goes on the arm base",
+      "holder-a slides onto the shaft end at the front"
+    ],
+    "who_does_what_to_which": [
+      "the arm holds holder-a",
+      "beam3t-a2 locks the arm sides in place"
+    ],
+    "where_everything_is_after": [
+      "dark gray holder at the arm's front"
+    ],
+    "why": {
+      "problem_solved": "Gives the arm a hinge block at its front.",
+      "why_these_parts": "The actuator holder has a round body and two hinge plates.",
+      "sets_up_for_later": "The gear head goes in it in steps 8-10.",
+      "design_pattern": "hinge block"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

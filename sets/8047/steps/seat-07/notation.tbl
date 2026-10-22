@@ -1,0 +1,9 @@
+ADD axle7-s 44294 lightgray
+ADD gear-5 4019 lightgray
+CONNECT gear-5.axlehole -> axle7-s.end1
+CONNECT axle7-s.mid -> block-s.axlehole
+ADD bush-s1 3713 lightgray
+CONNECT bush-s1.axlehole -> axle7-s.end2
+DOES axle7-s CARRIES gear-5
+DOES bush-s1 LOCKS axle7-s
+PATTERN shaft_with_gear_and_bush

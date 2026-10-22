@@ -1,0 +1,13 @@
+STEP 9
+ADD pin-P 2780 black
+CONNECT pin-P.end1 -> turntable-O.base.hole?
+ADD pin-Q 2780 black
+CONNECT pin-Q.end1 -> turntable-O.base.hole?
+ADD beam-R 63869 lightgray
+CONNECT pin-P.end2 -> beam-R.hole1
+CONNECT pin-Q.end2 -> beam-R.hole3
+DOES turntable-O HOLDS pin-P
+DOES turntable-O HOLDS pin-Q
+DOES pin-P LOCKS beam-R
+DOES pin-Q LOCKS beam-R
+PATTERN two_pin_mount

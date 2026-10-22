@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-arm-step-04",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 33,
+  "step": 4,
+  "input": {
+    "picture": "steps/arm-04/picture.png",
+    "parts_box": [
+      {
+        "name": "axle3-a2",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "gear8-a",
+        "part_number": "3647",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a gray connector across the arm base"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-a2",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through conn3c-a1 (side box)",
+        "rotation": "spins"
+      },
+      {
+        "name": "gear8-a",
+        "part_number": "3647",
+        "catalog_name": "Technic Gear 8 Tooth",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on axle3-a2 (side box)",
+        "rotation": "spins with axle3-a2"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: gear8-a onto axle3-a2",
+      "axle3-a2 goes through conn3c-a1 (cream arrow)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-a2 carries gear8-a",
+      "axle3-a2 spins on conn3c-a1"
+    ],
+    "where_everything_is_after": [
+      "an 8-tooth gear inside the arm base"
+    ],
+    "why": {
+      "problem_solved": "Adds a small gear in the arm base.",
+      "why_these_parts": "An 8-tooth gear is the smallest; it fits in the tight space.",
+      "sets_up_for_later": "It meshes with the gear train in later steps.",
+      "design_pattern": "small idler gear"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "What gear8-a meshes is not confirmed."
+}

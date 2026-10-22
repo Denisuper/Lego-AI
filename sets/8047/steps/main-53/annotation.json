@@ -1,0 +1,83 @@
+{
+  "example_id": "8047-step-53",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 54,
+  "step": 53,
+  "input": {
+    "picture": "steps/main-53/picture.png",
+    "parts_box": [
+      {
+        "name": "axle3-53a, axle3-53b",
+        "part_number": "4519",
+        "count": 2
+      },
+      {
+        "name": "axcon-53a, axcon-53b",
+        "part_number": "59443",
+        "count": 2
+      }
+    ],
+    "model_so_far": "the back roof frame is a closed square; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-53a",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "into the top of post-L, pointing forward (side box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-53b",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "into the top of post-R (side box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axcon-53a",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on axle3-53a (side box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axcon-53b",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on axle3-53b (side box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box (make 2): axle3 into an axle connector",
+      "each unit goes onto a roof post top (cream arrows)"
+    ],
+    "who_does_what_to_which": [
+      "axcon-53a holds axle3-53a",
+      "axcon-53b holds axle3-53b"
+    ],
+    "where_everything_is_after": [
+      "two axle ends stick forward from the roof",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Extends the roof forward.",
+      "why_these_parts": "Axle connectors join two axles end to end.",
+      "sets_up_for_later": "The front roof piece goes on these in step 54.",
+      "design_pattern": "axle extension"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

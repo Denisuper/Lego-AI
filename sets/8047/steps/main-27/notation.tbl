@@ -1,0 +1,6 @@
+STEP 27
+# Which axle gets the bush is read from the arrow only.
+ADD bush-27 3713 lightgray
+CONNECT bush-27.axlehole -> axle3-21.end2
+DOES bush-27 LOCKS axle3-21
+PATTERN bush_as_end_stop

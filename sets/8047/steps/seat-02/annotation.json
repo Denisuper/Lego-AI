@@ -1,0 +1,49 @@
+{
+  "example_id": "8047-seat-step-02",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 8,
+  "step": 2,
+  "input": {
+    "picture": "steps/seat-02/picture.png",
+    "parts_box": [
+      {
+        "name": "lbeam-s1",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Hub block with pins."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lbeam-s1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "short arm flat at the bottom over the hub pins, long arm standing up",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "lbeam-s1's short-arm holes go over the hub pins"
+    ],
+    "who_does_what_to_which": [
+      "hub4-s holds lbeam-s1"
+    ],
+    "where_everything_is_after": [
+      "lbeam-s1: upright, forms the back of the seat",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the seat back.",
+      "why_these_parts": "An L-beam gives a seat and a back in one part.",
+      "sets_up_for_later": "Step 3 puts a beam beside its long arm.",
+      "design_pattern": "L-beam as seat"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

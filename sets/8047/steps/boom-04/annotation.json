@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-boom-step-04",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 40,
+  "step": 4,
+  "input": {
+    "picture": "steps/boom-04/picture.png",
+    "parts_box": [
+      {
+        "name": "lthin-2",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "axle3-b",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a bent link hangs down from the boom joint"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lthin-2",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "on top of the joint, mirror of lthin-1",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-b",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "standing up at the joint end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "lthin-2 closes the stack",
+      "axle3-b pushes in at the end"
+    ],
+    "who_does_what_to_which": [
+      "axle2-b1, axle2-b2 and axle2-b3 lock lthin-2 in place",
+      "lthin-2 holds axle3-b"
+    ],
+    "where_everything_is_after": [
+      "boom build done"
+    ],
+    "why": {
+      "problem_solved": "Closes the boom joint sandwich.",
+      "why_these_parts": "Same L on both faces makes it strong.",
+      "sets_up_for_later": "The boom goes on the arm in step 40.",
+      "design_pattern": "sandwich joint"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

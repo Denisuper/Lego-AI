@@ -1,0 +1,79 @@
+{
+  "example_id": "8047-arm-step-10",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 35,
+  "step": 10,
+  "input": {
+    "picture": "steps/arm-10/picture.png",
+    "parts_box": [
+      {
+        "name": "conn3c-a2",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "bevel20-a",
+        "part_number": "87407",
+        "count": 1
+      },
+      {
+        "name": "axle5-a",
+        "part_number": "32073",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a bevel gear at the arm's front"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn3c-a2",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the end of axle5-a (side box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bevel20-a",
+        "part_number": "87407",
+        "catalog_name": "Technic Gear 20 Tooth Bevel with Pin Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on pin-a9, meshing bevel12-a1",
+        "rotation": "spins on pin-a9"
+      },
+      {
+        "name": "axle5-a",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through bevel20-a's hole and holder-a (red arrow)",
+        "rotation": "spins"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: axle5-a into conn3c-a2",
+      "bevel20-a sits on holder-a's pin, axle5-a goes through"
+    ],
+    "who_does_what_to_which": [
+      "bevel12-a1 drives bevel20-a",
+      "bevel20-a spins on pin-a9",
+      "axle5-a carries conn3c-a2"
+    ],
+    "where_everything_is_after": [
+      "a 20-tooth bevel at the front meshes the 12-tooth bevel"
+    ],
+    "why": {
+      "problem_solved": "Finishes the right-angle drive.",
+      "why_these_parts": "The 20-tooth bevel has a pin hole, so it can spin freely on a pin.",
+      "sets_up_for_later": "Step 11 adds the input gears.",
+      "design_pattern": "bevel right-angle drive"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

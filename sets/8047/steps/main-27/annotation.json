@@ -1,0 +1,48 @@
+{
+  "example_id": "8047-step-27",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 22,
+  "step": 27,
+  "input": {
+    "picture": "steps/main-27/picture.png",
+    "parts_box": [
+      {
+        "name": "bush-27",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "worm shaft across the front, meshing crown-1; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-27",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the right end of axle3-21's neighbour axle, outside bent11-A (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bush-27 pushes onto the axle end sticking out of bent11-A"
+    ],
+    "who_does_what_to_which": [
+      "bush-27 locks the axle in place"
+    ],
+    "where_everything_is_after": [
+      "everything: no change"
+    ],
+    "why": {
+      "problem_solved": "Stops an axle sliding out.",
+      "why_these_parts": "A bush grips the axle end.",
+      "sets_up_for_later": "Nothing more goes on this end.",
+      "design_pattern": "bush as end stop"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which axle gets the bush is read from the arrow only."
+}

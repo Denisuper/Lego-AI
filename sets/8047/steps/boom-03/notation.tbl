@@ -1,0 +1,7 @@
+ADD beam3t-b2 6632 yellow
+ADD link9-b 64451 darkgray
+CONNECT beam3t-b2.hole1 -> axle2-b4.end2
+CONNECT link9-b.hole1 -> axle2-b1.end1
+DOES axle2-b4 HOLDS beam3t-b2
+DOES link9-b SPINS_ON axle2-b1
+PATTERN link_to_tool

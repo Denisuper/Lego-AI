@@ -1,0 +1,8 @@
+ADD hub4-s 48989 lightgray
+ADD pin-s1 6558 blue
+CONNECT pin-s1.end1 -> hub4-s.hole?
+ADD hub2-s 87082 lightgray
+CONNECT hub2-s.hole1 -> hub4-s.pin?
+DOES hub4-s HOLDS pin-s1
+DOES hub4-s HOLDS hub2-s
+PATTERN pin_hub_core

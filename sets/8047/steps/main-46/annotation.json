@@ -1,0 +1,64 @@
+{
+  "example_id": "8047-step-46",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 46,
+  "step": 46,
+  "input": {
+    "picture": "steps/main-46/picture.png",
+    "parts_box": [
+      {
+        "name": "bucket-1",
+        "part_number": "2950",
+        "count": 1
+      },
+      {
+        "name": "axle55-46",
+        "part_number": "59426",
+        "count": 1
+      }
+    ],
+    "model_so_far": "the stick is two beams thick; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bucket-1",
+        "part_number": "2950",
+        "catalog_name": "Technic Digger Bucket 4 x 4 x 9 with 3 teeth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "between the stick ends",
+        "rotation": "swings"
+      },
+      {
+        "name": "axle55-46",
+        "part_number": "59426",
+        "catalog_name": "Technic Axle 5.5 with Stop",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through the stick ends and bucket (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle55-46 goes through beam11-44, bucket-1 and beam11-45"
+    ],
+    "who_does_what_to_which": [
+      "axle55-46 carries bucket-1",
+      "bucket-1 spins on axle55-46"
+    ],
+    "where_everything_is_after": [
+      "bucket on the stick",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the bucket.",
+      "why_these_parts": "An axle with a stop can't slide out the far side.",
+      "sets_up_for_later": "Step 47 links the bucket to link9-b.",
+      "design_pattern": "bucket on a pivot axle"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

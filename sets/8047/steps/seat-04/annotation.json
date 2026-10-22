@@ -1,0 +1,50 @@
+{
+  "example_id": "8047-seat-step-04",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 8,
+  "step": 4,
+  "input": {
+    "picture": "steps/seat-04/picture.png",
+    "parts_box": [
+      {
+        "name": "lbeam-s2",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat back: lbeam-s1 plus beam5-s with two pins."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lbeam-s2",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in front of beam5-s, same shape as lbeam-s1",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "lbeam-s2's long arm goes over pin-s2 and pin-s3; its short arm over the hub pin"
+    ],
+    "who_does_what_to_which": [
+      "pin-s2 and pin-s3 lock lbeam-s2 in place",
+      "hub4-s holds lbeam-s2"
+    ],
+    "where_everything_is_after": [
+      "seat: two blue L-beams with the gray beam between them",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Closes the seat into a solid block.",
+      "why_these_parts": "Same L-beam as step 2, mirrored around the gray beam.",
+      "sets_up_for_later": "The seat sits on top of the frame built in steps 5-11.",
+      "design_pattern": "mirror the side"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

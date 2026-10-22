@@ -1,0 +1,12 @@
+STEP 53
+ADD axle3-53a 4519 lightgray
+ADD axle3-53b 4519 lightgray
+ADD axcon-53a 59443 black
+ADD axcon-53b 59443 black
+CONNECT axle3-53a.end1 -> axcon-53a.axlehole
+CONNECT axle3-53b.end1 -> axcon-53b.axlehole
+CONNECT axcon-53a.axlehole -> studaxle-1.end2
+CONNECT axcon-53b.axlehole -> studaxle-2.end2
+DOES axcon-53a HOLDS axle3-53a
+DOES axcon-53b HOLDS axle3-53b
+PATTERN axle_extension

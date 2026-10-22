@@ -1,0 +1,48 @@
+{
+  "example_id": "8047-arm-step-02",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 33,
+  "step": 2,
+  "input": {
+    "picture": "steps/arm-02/picture.png",
+    "parts_box": [
+      {
+        "name": "curve-a1",
+        "part_number": "32250",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a thin yellow beam with an axle sticking down"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "curve-a1",
+        "part_number": "32250",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape with Quarter Ellipse Thin",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "curved plate lying on beam3t-a1, the axle through its corner hole",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "curve-a1's corner hole goes over axle3-a1"
+    ],
+    "who_does_what_to_which": [
+      "axle3-a1 holds curve-a1"
+    ],
+    "where_everything_is_after": [
+      "curved plate on the base"
+    ],
+    "why": {
+      "problem_solved": "Gives the arm its curved side.",
+      "why_these_parts": "The quarter-ellipse beam gives a strong, nice-looking corner.",
+      "sets_up_for_later": "Its mirror goes on in step 6.",
+      "design_pattern": "curved side plate"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

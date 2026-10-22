@@ -1,0 +1,10 @@
+ADD beam3t-b1 6632 yellow
+ADD axle2-b4 32062 red
+ADD bent9-b 6629 yellow
+CONNECT axle2-b1.end2 -> bent9-b.hole1
+CONNECT axle2-b2.end2 -> bent9-b.hole2
+CONNECT axle2-b3.end2 -> beam3t-b1.hole1
+CONNECT axle2-b4.end1 -> bent9-b.hole?
+DOES axle2-b1 LOCKS bent9-b
+DOES axle2-b3 HOLDS beam3t-b1
+PATTERN stacked_beams_on_short_axles

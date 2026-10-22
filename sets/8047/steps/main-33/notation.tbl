@@ -1,0 +1,8 @@
+STEP 33
+# Whether it engages gear-7 is not confirmed.
+ADD axle9-33 60485 lightgray
+CONNECT axle9-33.mid -> ycon-1.axlehole
+CONNECT axle9-33.mid -> ycon-2.axlehole
+DOES ycon-1 HOLDS axle9-33
+DOES axle9-33 SPINS_ON ycon-2
+PATTERN long_cross_shaft

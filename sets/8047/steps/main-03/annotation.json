@@ -1,0 +1,75 @@
+{
+  "example_id": "8047-step-03",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 3,
+  "step": 3,
+  "input": {
+    "picture": "steps/main-03/picture.png",
+    "parts_box": [
+      {
+        "name": "bentbeam-D",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "pin-E / pin-F",
+        "part_number": "2780",
+        "count": 2
+      }
+    ],
+    "model_so_far": "Straight shaft (rod-A, axle-A, rod-B) with beam-C in the middle."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bentbeam-D",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "on rod-B's pin end, long arm pointing forward, short arm up at the shaft",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-E",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in one outer hole of beam-C, pointing backward",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-F",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in the other outer hole of beam-C, pointing backward",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bentbeam-D's short-arm end hole slides over rod-B's pin end (red arrow)",
+      "pin-E and pin-F go into beam-C's two outer pin holes"
+    ],
+    "who_does_what_to_which": [
+      "rod-B holds bentbeam-D",
+      "beam-C holds pin-E and pin-F"
+    ],
+    "where_everything_is_after": [
+      "bentbeam-D: one side of the frame, pointing forward",
+      "pin-E, pin-F: sticking backward out of beam-C",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts one side of the front frame and readies the turntable mount.",
+      "why_these_parts": "An L-shaped beam goes up and over the shaft, then runs forward; two pins give a firm two-point grip.",
+      "sets_up_for_later": "pin-E and pin-F hold the turntable in step 8; bentbeam-D's front end takes a connector in step 4.",
+      "design_pattern": "two-pin mount (stops twisting)"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The two pins have no arrow; their holes are read from where they appear in the picture."
+}

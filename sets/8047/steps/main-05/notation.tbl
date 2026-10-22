@@ -1,0 +1,14 @@
+STEP 5
+GROUP side-I
+  ADD axle-red-J 32062 red
+  ADD connector-K 6536 black
+  CONNECT axle-red-J.end1 -> connector-K.axlehole
+  ADD bentbeam-I 32140 black
+  CONNECT axle-red-J.end2 -> bentbeam-I.hole5
+END
+ATTACH side-I
+CONNECT rod-A.pin -> bentbeam-I.hole1
+DOES connector-K HOLDS axle-red-J
+DOES bentbeam-I HOLDS axle-red-J
+DOES rod-A HOLDS bentbeam-I
+PATTERN mirror_side

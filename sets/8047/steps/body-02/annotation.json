@@ -1,0 +1,81 @@
+{
+  "example_id": "8047-body-step-02",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 24,
+  "step": 2,
+  "input": {
+    "picture": "steps/body-02/picture.png",
+    "parts_box": [
+      {
+        "name": "beam3-b",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "pin-b3, pin-b4, pin-b5",
+        "part_number": "2780",
+        "count": 3
+      }
+    ],
+    "model_so_far": "a yellow 9-beam with a long pin at each end"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3-b",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on top of beam9-b near its middle",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-b3",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in beam9-b, under beam3-b",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-b4",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in beam9-b",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-b5",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in beam9-b",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "three pins go into beam9-b",
+      "beam3-b goes over one pin (red arrow)"
+    ],
+    "who_does_what_to_which": [
+      "pin-b3 holds beam3-b"
+    ],
+    "where_everything_is_after": [
+      "beam3-b on top of beam9-b, two more pins sticking up"
+    ],
+    "why": {
+      "problem_solved": "Adds a block and extra pins to the body beam.",
+      "why_these_parts": "A 3-beam stiffens and spaces the panel.",
+      "sets_up_for_later": "Fairing 1 goes on two pins in step 3.",
+      "design_pattern": "pins as mounting posts"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which pin holds beam3-b is read from the arrow only."
+}

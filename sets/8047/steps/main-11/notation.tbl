@@ -1,0 +1,8 @@
+STEP 11
+ADD connector-W 59443 black
+CONNECT axle-S.end1 -> connector-W.axlehole
+ADD pin-V 43093 blue
+CONNECT pin-V.axle -> connector-W.axlehole
+DOES axle-S CARRIES connector-W
+DOES connector-W HOLDS pin-V
+PATTERN mirror_side

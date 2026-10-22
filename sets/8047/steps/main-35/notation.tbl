@@ -1,0 +1,14 @@
+STEP 35
+# Which holes beam9-35 uses is not visible.
+ADD hoseconn-1 32013 darkgray
+ADD beam9-35 40490 yellow
+ADD hose-1 75c12 black
+ADD pin-35 2780 black
+CONNECT hose-1.end1 -> hoseconn-1.axlehole
+CONNECT pin-35.end1 -> hoseconn-1.pinhole
+CONNECT pin-35.end2 -> beam9-35.hole9
+CONNECT beam9-35.hole? -> bent11-B.hole?
+DOES hoseconn-1 HOLDS hose-1
+DOES pin-35 HOLDS hoseconn-1
+DOES bent11-B SUPPORTS beam9-35
+PATTERN decorative_hose

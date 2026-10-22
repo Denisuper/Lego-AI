@@ -1,0 +1,77 @@
+{
+  "example_id": "8047-step-13",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 6,
+  "step": 13,
+  "input": {
+    "picture": "steps/main-13/picture.png",
+    "parts_box": [
+      {
+        "name": "tan-1..tan-4",
+        "part_number": "3749",
+        "count": 4
+      }
+    ],
+    "model_so_far": "Undercarriage with two side rails."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "tan-1",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "front end hole of beam9-X, axle end pointing out",
+        "rotation": "spins freely in the hole"
+      },
+      {
+        "name": "tan-2",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "back end hole of beam9-X, axle end pointing out",
+        "rotation": "spins freely in the hole"
+      },
+      {
+        "name": "tan-3",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "front end hole of beam9-Y, axle end pointing out",
+        "rotation": "spins freely in the hole"
+      },
+      {
+        "name": "tan-4",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed",
+        "position": "back end hole of beam9-Y, axle end pointing out",
+        "rotation": "spins freely in the hole"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "each tan pin's pin end goes into one end hole of a rail"
+    ],
+    "who_does_what_to_which": [
+      "tan-1 and tan-2 spin on beam9-X",
+      "tan-3 and tan-4 spin on beam9-Y"
+    ],
+    "where_everything_is_after": [
+      "four axle ends stick out at the corners",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds four wheel axles that turn freely.",
+      "why_these_parts": "Tan pins have no friction ridges, so they spin easily; their axle ends will grip a gear.",
+      "sets_up_for_later": "Each takes a track wheel in step 14.",
+      "design_pattern": "free-spinning axle (smooth pin)"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": ""
+}

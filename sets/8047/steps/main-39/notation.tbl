@@ -1,0 +1,8 @@
+STEP 39
+ADD conn3c-39 32184 lightgray
+ADD axle3-39 4519 lightgray
+CONNECT conn3c-39.axlehole1 -> axle4-a2.end2
+CONNECT conn3c-39.axlehole2 -> axle5-36.end1
+CONNECT axle3-39.end1 -> curve-a1.hole?
+DOES conn3c-39 HOLDS axle4-a2
+PATTERN two_point_mount

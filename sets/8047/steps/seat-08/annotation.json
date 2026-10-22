@@ -1,0 +1,49 @@
+{
+  "example_id": "8047-seat-step-08",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 10,
+  "step": 8,
+  "input": {
+    "picture": "steps/seat-08/picture.png",
+    "parts_box": [
+      {
+        "name": "lbeam-s3",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat with axle9-s1 and the gear shaft."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "lbeam-s3",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "on the left end of axle9-s1, short arm down, long arm running back",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "lbeam-s3's corner hole goes onto axle9-s1's left end (red arrow)"
+    ],
+    "who_does_what_to_which": [
+      "axle9-s1 carries lbeam-s3"
+    ],
+    "where_everything_is_after": [
+      "lbeam-s3: left side of the seat frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the left side of the seat frame.",
+      "why_these_parts": "An L-beam gives a side and a leg in one part.",
+      "sets_up_for_later": "Its leg rests on the turntable in step 17.",
+      "design_pattern": "L-beam side plate"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which hole of lbeam-s3 takes the axle is not clear."
+}

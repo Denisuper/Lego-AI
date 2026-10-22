@@ -1,0 +1,13 @@
+STEP 43
+ADD axle9-43 60485 lightgray
+ADD tanpin-1 32556 tan
+ADD angle1-43 32013 darkgray
+ADD angle4-43 32192 darkgray
+CONNECT angle1-43.axlehole -> axle9-43.end1
+CONNECT angle4-43.axlehole -> axle9-43.end2
+CONNECT tanpin-1.end1 -> angle4-43.pinhole
+CONNECT angle1-43.pinhole -> axle3-42.end2
+DOES axle9-43 CARRIES angle1-43
+DOES axle9-43 CARRIES angle4-43
+DOES tanpin-1 SPINS_ON angle4-43
+PATTERN push_rod_linkage

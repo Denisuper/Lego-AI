@@ -1,0 +1,13 @@
+STEP 44
+# bent2-44 matched as 44809 by elimination (87082s are used in step 54).
+ADD beam11-44 32525 yellow
+ADD bent2-44 44809 lightgray
+ADD pin-44 6558 blue
+CONNECT beam11-44.hole1 -> tanpin-1.end2
+CONNECT beam11-44.hole? -> axle3-b.end2
+CONNECT pin-44.end1 -> beam11-44.hole11
+CONNECT bent2-44.hole? -> pin-44.end2
+DOES tanpin-1 HOLDS beam11-44
+DOES beam11-44 SPINS_ON axle3-b
+DOES pin-44 HOLDS bent2-44
+PATTERN stick_on_two_pivots

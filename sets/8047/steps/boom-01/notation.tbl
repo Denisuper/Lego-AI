@@ -1,0 +1,11 @@
+ADD lthin-1 32056 yellow
+ADD axle2-b1 32062 red
+ADD axle2-b2 32062 red
+ADD axle2-b3 32062 red
+CONNECT axle2-b1.end1 -> lthin-1.hole1
+CONNECT axle2-b2.end1 -> lthin-1.hole3
+CONNECT axle2-b3.end1 -> lthin-1.hole5
+DOES lthin-1 HOLDS axle2-b1
+DOES lthin-1 HOLDS axle2-b2
+DOES lthin-1 HOLDS axle2-b3
+PATTERN stacked_beams_on_short_axles

@@ -1,0 +1,10 @@
+STEP 2
+ADD beam-C 63869 lightgray
+CONNECT axle-A.mid -> beam-C.axlehole
+ADD rod-B 32054 black
+CONNECT axle-A.end2 -> rod-B.axlehole
+DOES axle-A CARRIES beam-C
+DOES rod-B HOLDS axle-A
+DOES rod-A LOCKS beam-C
+DOES rod-B LOCKS beam-C
+PATTERN trapped_connector

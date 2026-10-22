@@ -1,0 +1,48 @@
+{
+  "example_id": "8047-arm-step-08",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 35,
+  "step": 8,
+  "input": {
+    "picture": "steps/arm-08/picture.png",
+    "parts_box": [
+      {
+        "name": "axle3-a4",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "dark gray holder at the arm's front"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-a4",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "up through beam3t-a2 (red arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-a4 pushes up through beam3t-a2"
+    ],
+    "who_does_what_to_which": [
+      "beam3t-a2 holds axle3-a4"
+    ],
+    "where_everything_is_after": [
+      "an axle end sticks up at the base"
+    ],
+    "why": {
+      "problem_solved": "Adds a pivot axle at the arm base.",
+      "why_these_parts": "Short axle, short gap.",
+      "sets_up_for_later": "The arm hangs on the model by it in step 38.",
+      "design_pattern": "axle as pivot"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": ""
+}

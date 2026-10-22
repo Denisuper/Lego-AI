@@ -1,0 +1,80 @@
+{
+  "example_id": "8047-step-44",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 44,
+  "step": 44,
+  "input": {
+    "picture": "steps/main-44/picture.png",
+    "parts_box": [
+      {
+        "name": "beam11-44",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "bent2-44",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "pin-44",
+        "part_number": "6558",
+        "count": 1
+      }
+    ],
+    "model_so_far": "a long push rod across the top of the boom; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-44",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "the stick, hanging from the boom tip",
+        "rotation": "swings"
+      },
+      {
+        "name": "bent2-44",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "at the stick's bottom end (side box 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-44",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "in the stick's bottom hole (side box 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "side box: pin-44 into beam11-44's end, bent2-44 onto it",
+      "stick hangs on tanpin-1 and the boom tip axle (red circle)"
+    ],
+    "who_does_what_to_which": [
+      "tanpin-1 holds beam11-44",
+      "beam11-44 spins on axle3-b",
+      "pin-44 holds bent2-44"
+    ],
+    "where_everything_is_after": [
+      "the stick hangs from the boom",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the stick.",
+      "why_these_parts": "A long beam gives reach.",
+      "sets_up_for_later": "Its pair goes on in step 45; the bucket in step 46.",
+      "design_pattern": "stick on two pivots"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "bent2-44 matched as 44809 by elimination (87082s are used in step 54)."
+}

@@ -1,0 +1,73 @@
+{
+  "example_id": "8047-step-21",
+  "set": "LEGO Technic 8047 Compact Excavator",
+  "page": 16,
+  "step": 21,
+  "input": {
+    "picture": "steps/main-21/picture.png",
+    "parts_box": [
+      {
+        "name": "pin-21a, pin-21b",
+        "part_number": "2780",
+        "count": 2
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "bent11-A: one side of the upper frame; everything else: no change"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-21a",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in a hole near bent11-A's front end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-21b",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "in the next hole of bent11-A",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "through bent11-A's axle hole, pointing in (1:1 picture)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-21a and pin-21b push into bent11-A (red arrow)",
+      "axle3-21 goes into bent11-A's axle hole"
+    ],
+    "who_does_what_to_which": [
+      "bent11-A holds pin-21a, pin-21b and axle3-21"
+    ],
+    "where_everything_is_after": [
+      "two pins and a short axle stick out of bent11-A",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds mounting points on the side frame.",
+      "why_these_parts": "Friction pins and a short axle let the yellow body clip on later.",
+      "sets_up_for_later": "The yellow body build sits on these in step 30.",
+      "design_pattern": "pins as mounting posts"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Exact holes not visible."
+}
