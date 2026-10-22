@@ -2390,6 +2390,10 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 89651,hole1,pin hole (round),0.0,0.0,-1.0,-1.0,0.0,0.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 89651,hole2,pin hole (round),0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 89651,hole3,pin hole (round),0.0,0.0,1.0,-1.0,0.0,0.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
+90202,clip1,clip,-1.0,0.0,0.0,0.0,0.0,1.0,0.4,8.0,4.0,no,
+90202,clip2,clip,0.0,0.0,-1.0,-1.0,0.0,0.0,0.4,8.0,4.0,no,
+90202,clip3,clip,0.0,0.0,1.0,1.0,0.0,0.0,0.4,8.0,4.0,no,
+90202,clip4,clip,1.0,0.0,0.0,0.0,0.0,-1.0,0.4,8.0,4.0,no,
 90202,hole1,pin hole (round),0.0,0.0,0.0,0.0,1.0,0.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 92907,axlehole1,axle hole (cross),-0.8,1.0,-1.0,-1.0,0.0,0.0,0.5,10.0,6.0,yes,locks an axle: they turn together
 92907,axlehole2,axle hole (cross),0.8,1.0,-1.0,1.0,0.0,0.0,0.5,10.0,6.0,yes,locks an axle: they turn together
@@ -2753,7 +2757,19 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 57519,hole5,pin hole (round),0.9,-0.5,0.0,0.0,0.0,-1.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 57519,hole6,pin hole (round),0.9,0.5,0.0,0.0,0.0,-1.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 57520,axlehole1,axle hole (cross),0.0,0.0,0.0,0.0,0.0,-1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+57520,clip1,clip,-1.3,-0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520,clip2,clip,-1.3,0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520,clip3,clip,0.0,-1.5,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520,clip4,clip,0.0,1.5,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520,clip5,clip,1.3,-0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520,clip6,clip,1.3,0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
 57520pr0001,axlehole1,axle hole (cross),0.0,0.0,0.0,0.0,0.0,-1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+57520pr0001,clip1,clip,-1.3,-0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520pr0001,clip2,clip,-1.3,0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520pr0001,clip3,clip,0.0,-1.5,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520pr0001,clip4,clip,0.0,1.5,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520pr0001,clip5,clip,1.3,-0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
+57520pr0001,clip6,clip,1.3,0.8,0.0,0.0,0.0,-1.0,0.5,10.0,4.0,no,
 62821a,bar1,bar (3.2 mm),0.0,-1.0,0.0,0.0,1.0,0.0,0.5,10.0,0.0,yes,
 62821a,hole1,pin hole (round),0.0,0.0,-1.0,0.0,0.0,-1.0,1.0,20.0,20.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 62821a,hole2,pin hole (round),0.0,0.0,1.0,0.0,0.0,1.0,1.0,20.0,20.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
@@ -3838,6 +3854,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 18651,axle2,axle stop (cross),0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,6.0,yes,turns freely in a round hole; locked in a cross hole
 18651,barhole1,small hole (3.2 mm bar),-1.1,0.0,0.0,-1.0,0.0,0.0,0.9,18.0,4.0,no,
 18651,pin1,pin stop (round),1.0,0.0,0.0,-1.0,0.0,0.0,0.9,18.0,6.0,yes,turns in a round hole (stiff if friction)
+19159,clip1,clip,-1.5,-0.5,0.0,0.0,1.0,0.0,0.4,8.0,4.0,no,
+19159,clip2,clip,-1.5,0.5,0.0,0.0,1.0,0.0,0.4,8.0,4.0,no,
 19159,pin1,pin stop (round),0.5,-1.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
 19159,pin2,pin stop (round),0.5,1.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
 2736,axle1,axle stop (cross),0.5,0.0,0.0,1.0,0.0,0.0,0.8,17.0,6.0,yes,turns freely in a round hole; locked in a cross hole
@@ -3890,6 +3908,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 4459,pin2,pin stop (round),0.5,0.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
 47455,pin1,pin stop (round),0.0,-0.5,0.0,0.0,-1.0,0.0,1.0,20.0,6.0,no,turns in a round hole (stiff if friction)
 47455,pin2,pin stop (round),1.5,0.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
+47994,clip1,clip,-1.5,-0.5,0.0,0.0,1.0,0.0,0.4,8.0,4.0,no,
+47994,clip2,clip,-1.5,0.5,0.0,0.0,1.0,0.0,0.4,8.0,4.0,no,
 47994,pin1,pin stop (round),0.5,-1.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
 47994,pin2,pin stop (round),0.5,1.0,0.0,1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
 49731,pin1,pin stop (round),-0.5,0.0,0.0,-1.0,0.0,0.0,0.9,18.0,6.0,no,turns in a round hole (stiff if friction)
@@ -3952,6 +3972,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 15379,barhole3,small hole (3.2 mm bar),0.0,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
 15379,barhole4,small hole (3.2 mm bar),0.5,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
 15379,barhole5,small hole (3.2 mm bar),1.0,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
+15379,clip1,clip,-0.5,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
+15379,clip2,clip,0.4,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
 17114,axlehole1,axle hole (cross),0.0,0.5,0.0,0.0,1.0,0.0,1.4,28.0,8.0,no,locks an axle: they turn together
 17114,hole1,pin hole (round),-0.5,0.7,-0.5,0.0,1.0,0.0,1.0,20.0,6.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 17114,hole2,pin hole (round),-0.5,0.7,0.5,0.0,1.0,0.0,1.0,20.0,6.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
@@ -4311,9 +4333,13 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 3711a,bar1,bar (3.2 mm),-0.5,0.0,1.0,-1.0,0.0,0.0,0.1,2.5,0.0,no,
 3711a,bar2,bar (3.2 mm),0.0,0.0,1.0,-1.0,0.0,0.0,0.6,12.0,0.0,no,
 3711a,bar3,bar (3.2 mm),0.5,0.0,1.0,1.0,0.0,0.0,0.1,2.5,0.0,no,
+3711a,clip1,clip,-0.5,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
+3711a,clip2,clip,0.4,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
 3711b,bar1,bar (3.2 mm),-0.5,0.0,1.0,-1.0,0.0,0.0,0.1,2.5,0.0,no,
 3711b,bar2,bar (3.2 mm),0.0,0.0,1.0,-1.0,0.0,0.0,0.6,12.0,0.0,no,
 3711b,bar3,bar (3.2 mm),0.5,0.0,1.0,1.0,0.0,0.0,0.1,2.5,0.0,no,
+3711b,clip1,clip,-0.5,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
+3711b,clip2,clip,0.4,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
 3873,bar1,bar (3.2 mm),-0.5,0.0,1.0,-1.0,0.0,0.0,0.1,2.5,0.0,no,
 3873,bar2,bar (3.2 mm),0.0,0.0,1.0,-1.0,0.0,0.0,0.6,12.0,0.0,no,
 3873,bar3,bar (3.2 mm),0.5,0.0,1.0,1.0,0.0,0.0,0.1,2.5,0.0,no,
@@ -4322,6 +4348,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 3873,barhole3,small hole (3.2 mm bar),0.0,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
 3873,barhole4,small hole (3.2 mm bar),0.5,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
 3873,barhole5,small hole (3.2 mm bar),1.0,-0.3,0.2,0.0,1.0,0.0,0.1,3.0,4.0,no,
+3873,clip1,clip,-0.5,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
+3873,clip2,clip,0.4,0.0,0.0,-1.0,0.0,0.0,0.1,2.5,1.5,no,
 41669,axlehole1,axle hole (cross),0.0,0.0,0.0,0.0,1.0,0.0,1.0,20.0,6.0,yes,locks an axle: they turn together
 424,hole1,pin hole (round),0.0,0.0,-0.1,0.0,0.0,-1.0,0.9,18.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 4262,bar1,bar (3.2 mm),-1.0,0.5,0.0,0.0,1.0,0.0,0.2,4.0,0.0,no,
@@ -4523,6 +4551,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 51149,axlehole1,axle hole (cross),0.0,0.0,-0.1,0.0,0.0,-1.0,0.8,17.0,6.0,yes,locks an axle: they turn together
 53585,axlehole1,axle hole (cross),0.0,0.0,0.0,0.0,1.0,0.0,0.9,19.0,8.0,no,locks an axle: they turn together
 57518,bar1,bar (3.2 mm),0.0,0.0,0.0,1.0,0.0,0.0,1.4,28.0,0.0,yes,
+57518,clip1,clip,-0.4,0.0,-1.5,1.0,0.0,0.0,0.3,6.0,4.0,no,
+57518,clip2,clip,0.7,0.0,-1.5,1.0,0.0,0.0,0.3,6.0,4.0,no,
 57518,hole1,pin hole (round),1.0,-0.5,-0.8,0.0,-1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 57518,hole2,pin hole (round),1.0,-0.5,1.1,0.0,-1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 57908,hole1,pin hole (round),-0.5,0.7,-0.5,0.0,1.0,0.0,1.0,20.0,6.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
@@ -4731,6 +4761,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 67696,pin3,pin stop (round),0.5,0.0,-0.5,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 67696,pin4,pin stop (round),0.5,0.0,0.5,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 69910,bar1,bar (3.2 mm),0.0,0.0,0.0,-1.0,0.0,0.0,1.4,28.0,0.0,no,
+69910,clip1,clip,-0.7,0.0,-1.5,-1.0,0.0,0.0,0.3,6.0,4.0,no,
+69910,clip2,clip,0.7,0.0,-1.5,1.0,0.0,0.0,0.3,6.0,4.0,no,
 69910,hole1,pin hole (round),-1.0,-0.5,-0.8,0.0,1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 69910,hole2,pin hole (round),1.0,-0.5,-0.8,0.0,1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 7335,axlehole1,axle hole (cross),0.0,0.0,0.0,0.0,0.0,1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
@@ -4751,6 +4783,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 85943,pin1,pin stop (round),-0.5,0.0,0.0,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 85943,pin2,pin stop (round),0.5,0.0,0.0,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 88323,bar1,bar (3.2 mm),0.0,0.0,0.0,1.0,0.0,0.0,1.4,28.0,0.0,yes,
+88323,clip1,clip,-0.4,0.0,-1.5,1.0,0.0,0.0,0.3,6.0,4.0,no,
+88323,clip2,clip,0.7,0.0,-1.5,1.0,0.0,0.0,0.3,6.0,4.0,no,
 88323,hole1,pin hole (round),1.0,-0.5,-0.8,0.0,-1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 88323,hole2,pin hole (round),1.0,-0.5,1.1,0.0,-1.0,0.0,0.4,8.0,8.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 92013,axlehole1,axle hole (cross),0.0,0.6,0.0,0.0,1.0,0.0,1.2,24.0,6.0,no,locks an axle: they turn together
@@ -4947,6 +4981,8 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 3652,barhole2,small hole (3.2 mm bar),-0.5,-1.4,0.5,0.0,-1.0,0.0,0.2,4.0,4.0,no,
 3652,barhole3,small hole (3.2 mm bar),0.5,-1.4,-0.5,0.0,-1.0,0.0,0.2,4.0,4.0,no,
 3652,barhole4,small hole (3.2 mm bar),0.5,-1.4,0.5,0.0,-1.0,0.0,0.2,4.0,4.0,no,
+3652,clip1,clip,0.0,0.0,-0.5,0.0,0.0,1.0,0.2,4.0,6.0,no,
+3652,clip2,clip,0.0,0.0,0.7,0.0,0.0,1.0,0.2,4.0,6.0,no,
 3652,pin1,pin stop (round),-0.5,-1.5,-0.5,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 3652,pin2,pin stop (round),-0.5,-1.5,0.5,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
 3652,pin3,pin stop (round),0.5,-1.5,-0.5,0.0,-1.0,0.0,0.2,4.0,6.0,no,turns in a round hole (stiff if friction)
@@ -5015,7 +5051,10 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 5997,hole1,pin hole (round),0.0,0.0,-1.0,-1.0,0.0,0.0,1.0,20.0,8.0,yes,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 61903,axlehole1,axle hole (cross),0.0,0.0,-1.0,0.0,0.0,-1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
 61903,axlehole2,axle hole (cross),0.0,0.0,1.0,0.0,0.0,1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+61903,clip1,clip,0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,6.0,no,
+61903,clip2,clip,0.0,0.0,0.0,0.0,1.0,0.0,1.0,20.0,6.0,no,
 62520,axlehole1,axle hole (cross),0.0,0.0,1.0,0.0,0.0,1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+62520,clip1,clip,0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,6.0,no,
 6540a,axlehole1,axle hole (cross),3.5,0.0,1.0,0.0,-1.0,0.0,1.0,20.0,6.0,yes,locks an axle: they turn together
 6540a,hole1,pin hole (round),0.0,0.0,0.2,0.0,0.0,1.0,0.8,16.0,20.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
 6540b,hole1,pin hole (round),0.0,0.0,0.2,0.0,0.0,1.0,0.8,16.0,20.0,no,"axles turn freely; friction pins hold stiff, frictionless pins turn freely"
@@ -5067,8 +5106,12 @@ part_number,point,type,x_holes,y_holes,z_holes,axis_x,axis_y,axis_z,depth_holes,
 77590,axlehole1,axle hole (cross),0.0,0.0,2.8,0.0,0.0,1.0,3.5,70.0,6.0,no,locks an axle: they turn together
 9244,axlehole1,axle hole (cross),0.0,0.0,-1.5,0.0,0.0,-1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
 9244,axlehole2,axle hole (cross),0.0,0.0,1.5,0.0,0.0,1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+9244,clip1,clip,0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,6.0,no,
+9244,clip2,clip,0.0,0.0,0.0,0.0,-1.0,0.0,1.0,20.0,6.0,no,
 9244a,axlehole1,axle hole (cross),0.0,0.0,-1.5,0.0,0.0,-1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
 9244a,axlehole2,axle hole (cross),0.0,0.0,1.5,0.0,0.0,1.0,1.0,20.0,6.0,yes,locks an axle: they turn together
+9244a,clip1,clip,0.0,0.0,0.0,-1.0,0.0,0.0,1.0,20.0,6.0,no,
+9244a,clip2,clip,0.0,0.0,0.0,0.0,-1.0,0.0,1.0,20.0,6.0,no,
 92906,axle1,axle stop (cross),0.0,0.0,-2.0,0.0,0.0,-1.0,0.8,15.0,6.0,yes,turns freely in a round hole; locked in a cross hole
 92906,axle2,axle stop (cross),0.0,0.0,-1.5,0.0,0.0,-1.0,0.8,15.0,6.0,yes,turns freely in a round hole; locked in a cross hole
 92906,pin1,pin stop (round),0.0,0.0,-1.0,0.0,0.0,-1.0,0.4,8.0,6.0,yes,turns in a round hole (stiff if friction)

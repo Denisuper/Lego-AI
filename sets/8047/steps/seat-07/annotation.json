@@ -76,5 +76,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Whether axle7-s turns freely in block-s depends on block-s's hole type; check in a 3D view."
+  "review_note": "CONTRADICTION: axle7-s goes through block-s's cross hole, and block-s hangs on a hub pin by its round hole (parallel to the axle). That locks axle7-s, but the worm drive (steps 26-28) needs it to turn. Either block-s is a different part or it sits elsewhere: re-check seat steps 5 and 7."
 }

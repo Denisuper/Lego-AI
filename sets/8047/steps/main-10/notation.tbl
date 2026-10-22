@@ -2,9 +2,9 @@ STEP 10
 GROUP back-T
   ADD axle-S 4519 lightgray
   ADD connector-T 59443 black
-CONNECT axle-S.axle3 -> connector-T.axlehole?
+CONNECT axle-S.axle3 -> connector-T.axlehole1 LOCKED
   ADD pin-U 43093 blue
-CONNECT pin-U.axle1 -> connector-T.axlehole?
+CONNECT pin-U.axle1 -> connector-T.axlehole2 LOCKED
 END
 ATTACH back-T
 CONNECT axle-S.axle2 -> beam-R.axlehole1 LOCKED

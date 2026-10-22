@@ -17,7 +17,7 @@
 **Why:** Starts a straight cross shaft for the middle of the undercarriage. A long pin with a stop ring has a pin on one end (to hang beams on) and an axle hole on the other (to join an axle). *Next:* rod-A's pin end will hold a bent beam (step 5) and a side rail (step 12). *Pattern:* pin-axle-pin shaft
 
 **Big picture:**
-- **rod-A** (Undercarriage frame): Near end of the back cross shaft; its pin end carries bentbeam-I (step 5) and the near side rail beam9-Y (step 12). Later: 8047-step-02 `DOES rod-A LOCKS beam-C`; 8047-step-05 `CONNECT rod-A.pin2 -> bentbeam-I.hole1 STIFF`; 8047-step-05 `DOES rod-A HOLDS bentbeam-I`; 8047-step-12 `CONNECT rod-A.pin2 -> beam9-Y.hole?`; 8047-step-12 `DOES rod-A HOLDS beam9-Y`.
+- **rod-A** (Undercarriage frame): Near end of the back cross shaft; its pin end carries bentbeam-I (step 5) and the near side rail beam9-Y (step 12). Later: 8047-step-02 `DOES rod-A LOCKS beam-C`; 8047-step-05 `CONNECT rod-A.pin2 -> bentbeam-I.hole4 STIFF`; 8047-step-05 `DOES rod-A HOLDS bentbeam-I`; 8047-step-12 `CONNECT rod-A.pin2 -> beam9-Y.hole2 STIFF`; 8047-step-12 `DOES rod-A HOLDS beam9-Y`.
 - **axle-A** (Undercarriage frame): The spine of the cross shaft: carries beam-C in the middle and joins rod-A to rod-B. Later: 8047-step-02 `CONNECT axle-A.axle2 -> beam-C.axlehole1 LOCKED`; 8047-step-02 `CONNECT axle-A.axle3 -> rod-B.axlehole1 LOCKED`; 8047-step-02 `DOES axle-A CARRIES beam-C`; 8047-step-02 `DOES rod-B HOLDS axle-A`.
 
 ## 8047-step-02 (page 3) - high
@@ -38,7 +38,7 @@
 
 **Big picture:**
 - **beam-C** (Undercarriage frame): Turns the cross shaft into pin holes facing back, so the turntable can be pinned to the frame (via pin-E, pin-F in step 8). Later: 8047-step-03 `CONNECT pin-E.pin1 -> beam-C.hole1 STIFF`; 8047-step-03 `CONNECT pin-F.pin1 -> beam-C.hole3 STIFF`; 8047-step-03 `DOES beam-C HOLDS pin-E`; 8047-step-03 `DOES beam-C HOLDS pin-F`.
-- **rod-B** (Undercarriage frame): Far end of the cross shaft; carries bentbeam-D (step 3) and the far side rail beam9-X (step 12). Later: 8047-step-03 `CONNECT rod-B.pin2 -> bentbeam-D.hole1 STIFF`; 8047-step-03 `DOES rod-B HOLDS bentbeam-D`; 8047-step-12 `CONNECT rod-B.pin2 -> beam9-X.hole?`; 8047-step-12 `DOES rod-B HOLDS beam9-X`.
+- **rod-B** (Undercarriage frame): Far end of the cross shaft; carries bentbeam-D (step 3) and the far side rail beam9-X (step 12). Later: 8047-step-03 `CONNECT rod-B.pin2 -> bentbeam-D.hole4 STIFF`; 8047-step-03 `DOES rod-B HOLDS bentbeam-D`; 8047-step-12 `CONNECT rod-B.pin2 -> beam9-X.hole2 STIFF`; 8047-step-12 `DOES rod-B HOLDS beam9-X`.
 
 ## 8047-step-03 (page 3) - high
 
@@ -48,7 +48,7 @@
 
 **Touches:** bentbeam-D's short-arm end hole slides over rod-B's pin end (red arrow); pin-E and pin-F go into beam-C's two outer pin holes
 
-**Exact joins:** rod-B.pin2 into bentbeam-D.hole1 (0.9 hole deep, held stiff by friction); pin-E.pin1 into beam-C.hole1 (0.9 hole deep, held stiff by friction); pin-F.pin1 into beam-C.hole3 (0.9 hole deep, held stiff by friction)
+**Exact joins:** rod-B.pin2 into bentbeam-D.hole4 (0.9 hole deep, held stiff by friction); pin-E.pin1 into beam-C.hole1 (0.9 hole deep, held stiff by friction); pin-F.pin1 into beam-C.hole3 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** rod-B holds bentbeam-D; beam-C holds pin-E and pin-F
 
@@ -57,11 +57,11 @@
 **Why:** Starts one side of the front frame and readies the turntable mount. An L-shaped beam goes up and over the shaft, then runs forward; two pins give a firm two-point grip. *Next:* pin-E and pin-F hold the turntable in step 8; bentbeam-D's front end takes a connector in step 4. *Pattern:* two-pin mount (stops twisting)
 
 **Big picture:**
-- **bentbeam-D** (Undercarriage frame): Right side of the front U; reaches forward to the front cross beam. Later: 8047-step-04 `CONNECT axle-red-G.axle1 -> bentbeam-D.hole?`; 8047-step-04 `DOES bentbeam-D HOLDS axle-red-G`; 8047-step-07 `DOES beam7-N SUPPORTS bentbeam-D`.
-- **pin-E** (Undercarriage frame): One of the two pins the turntable's fixed half sits on (step 8). Later: 8047-step-08 `CONNECT pin-E.pin2 -> turntable-O.base.hole?`; 8047-step-08 `DOES pin-E HOLDS turntable-O`.
-- **pin-F** (Undercarriage frame): The other turntable pin. Later: 8047-step-08 `CONNECT pin-F.pin2 -> turntable-O.base.hole?`; 8047-step-08 `DOES pin-F HOLDS turntable-O`.
+- **bentbeam-D** (Undercarriage frame): Right side of the front U; reaches forward to the front cross beam. Later: 8047-step-04 `CONNECT axle-red-G.axle1 -> bentbeam-D.axlehole1 LOCKED`; 8047-step-04 `DOES bentbeam-D HOLDS axle-red-G`; 8047-step-07 `DOES beam7-N SUPPORTS bentbeam-D`.
+- **pin-E** (Undercarriage frame): One of the two pins the turntable's fixed half sits on (step 8). Later: 8047-step-08 `CONNECT pin-E.pin2 -> turntable-O.hole2~ STIFF`; 8047-step-08 `DOES pin-E HOLDS turntable-O`.
+- **pin-F** (Undercarriage frame): The other turntable pin. Later: 8047-step-08 `CONNECT pin-F.pin2 -> turntable-O.hole11~ STIFF`; 8047-step-08 `DOES pin-F HOLDS turntable-O`.
 
-**Review:** Settled by comparing steps: step 2 shows beam-C's three holes empty; steps 3 and 4 show the pins in the two outer holes (hole1, hole3) with the middle one empty.
+**Review:** Settled by comparing steps 2-4. Catalog numbering: rod-B goes into the L-beam's short-arm end, hole4.
 
 ## 8047-step-04 (page 3) - high
 
@@ -71,7 +71,7 @@
 
 **Touches:** axle-red-G goes into bentbeam-D's front axle hole; connector-H slides onto axle-red-G (red arrow)
 
-**Exact joins:** axle-red-G.axle1 into bentbeam-D.hole? (not fully shown in booklet); connector-H.axlehole1 into axle-red-G.axle2 (1 hole deep, locked (turn together))
+**Exact joins:** axle-red-G.axle1 into bentbeam-D.axlehole1 (1 hole deep, locked (turn together)); connector-H.axlehole1 into axle-red-G.axle2 (1 hole deep, locked (turn together))
 
 **Who does what:** bentbeam-D holds axle-red-G; axle-red-G carries connector-H
 
@@ -83,6 +83,8 @@
 - **axle-red-G** (Undercarriage frame): Short axle that fixes connector-H to bentbeam-D's front end without letting it turn.
 - **connector-H** (Undercarriage frame): Turns the right front corner into an upward pin hole for pin-L. Later: 8047-step-06 `CONNECT pin-L.pin1 -> connector-H.hole1 STIFF`; 8047-step-06 `DOES connector-H HOLDS pin-L`.
 
+**Review:** Red axle goes into the cross hole at the long arm's front end (axlehole1, red + mark).
+
 ## 8047-step-05 (page 4) - high
 
 ![8047-step-05](steps/main-05/picture.png)
@@ -91,7 +93,7 @@
 
 **Touches:** side box: axle-red-J into connector-K (1), then into bentbeam-I's front axle hole (2); the finished mini build's short-arm hole goes over rod-A's pin end (cream arrow)
 
-**Exact joins:** axle-red-J.axle1 into connector-K.axlehole1 (1 hole deep, locked (turn together)); axle-red-J.axle2 into bentbeam-I.hole? (not fully shown in booklet); rod-A.pin2 into bentbeam-I.hole1 (0.9 hole deep, held stiff by friction)
+**Exact joins:** axle-red-J.axle1 into connector-K.axlehole1 (1 hole deep, locked (turn together)); axle-red-J.axle2 into bentbeam-I.axlehole1 (1 hole deep, locked (turn together)); rod-A.pin2 into bentbeam-I.hole4 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** connector-K holds axle-red-J; bentbeam-I holds axle-red-J; rod-A holds bentbeam-I
 
@@ -103,6 +105,8 @@
 - **bentbeam-I** (Undercarriage frame): Left side of the front U, mirror of bentbeam-D. Later: 8047-step-07 `DOES beam7-N SUPPORTS bentbeam-I`.
 - **axle-red-J** (Undercarriage frame): Mirror of axle-red-G on the left.
 - **connector-K** (Undercarriage frame): Mirror of connector-H on the left, for pin-M. Later: 8047-step-06 `CONNECT pin-M.pin1 -> connector-K.hole1 STIFF`; 8047-step-06 `DOES connector-K HOLDS pin-M`.
+
+**Review:** Catalog numbering: rod-A into the short-arm end (hole4); the red axle into the cross hole at the long arm's front end (axlehole1).
 
 ## 8047-step-06 (page 4) - high
 
@@ -121,8 +125,8 @@
 **Why:** Gives the front corners pegs to hang a crossbar on. Plain friction pins hold firmly without spinning loose. *Next:* beam7-N goes on these in step 7. *Pattern:* pegs for a crossbar
 
 **Big picture:**
-- **pin-L** (Undercarriage frame): Right front pin; holds the front cross beam beam7-N. Later: 8047-step-07 `CONNECT pin-L.pin2 -> beam7-N.hole?`; 8047-step-07 `DOES pin-L LOCKS beam7-N`.
-- **pin-M** (Undercarriage frame): Left front pin; holds beam7-N. Later: 8047-step-07 `CONNECT pin-M.pin2 -> beam7-N.hole?`; 8047-step-07 `DOES pin-M LOCKS beam7-N`.
+- **pin-L** (Undercarriage frame): Right front pin; holds the front cross beam beam7-N. Later: 8047-step-07 `CONNECT pin-L.pin2 -> beam7-N.hole3 STIFF`; 8047-step-07 `DOES pin-L LOCKS beam7-N`.
+- **pin-M** (Undercarriage frame): Left front pin; holds beam7-N. Later: 8047-step-07 `CONNECT pin-M.pin2 -> beam7-N.hole5 STIFF`; 8047-step-07 `DOES pin-M LOCKS beam7-N`.
 
 ## 8047-step-07 (page 4) - high
 
@@ -132,7 +136,7 @@
 
 **Touches:** two of beam7-N's holes slide down over pin-L and pin-M
 
-**Exact joins:** pin-L.pin2 into beam7-N.hole? (not fully shown in booklet); pin-M.pin2 into beam7-N.hole? (not fully shown in booklet)
+**Exact joins:** pin-L.pin2 into beam7-N.hole3 (0.9 hole deep, held stiff by friction); pin-M.pin2 into beam7-N.hole5 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** pin-L and pin-M lock beam7-N in place; beam7-N supports bentbeam-D and bentbeam-I
 
@@ -143,6 +147,8 @@
 **Big picture:**
 - **beam7-N** (Undercarriage frame): Front cross beam: closes the U into a rectangle so the frame can't spread under the turntable's weight.
 
+**Review:** Settled with step 12: the pins sit in holes 3 and 5; the beam overhangs both sides.
+
 ## 8047-step-08 (page 5) - medium - NEEDS REVIEW
 
 ![8047-step-08](steps/main-08/picture.png)
@@ -151,7 +157,7 @@
 
 **Touches:** turntable-O's grey half pushes onto pin-E and pin-F
 
-**Exact joins:** pin-E.pin2 into turntable-O.base.hole? (not fully shown in booklet); pin-F.pin2 into turntable-O.base.hole? (not fully shown in booklet)
+**Exact joins:** pin-E.pin2 into turntable-O.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-F.pin2 into turntable-O.hole11 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pin-E and pin-F hold turntable-O; turntable-O's black-toothed half spins on its grey half
 
@@ -160,7 +166,7 @@
 **Why:** Adds the joint that lets the whole upper body turn all the way around. This big turntable has two halves that turn against each other, with 24 teeth inside and 56 outside for a gear to drive later. *Next:* The black-toothed half faces up once the model is flipped in step 16 and will carry the cab. *Pattern:* turntable joint between undercarriage and upper body
 
 **Big picture:**
-- **turntable-O** (Swing ring (turntable)): The joint between lower and upper machine: fixed half pinned to the chassis, turning half carries the whole upper body. Later: 8047-step-09 `CONNECT pin-P.pin1 -> turntable-O.base.hole?`; 8047-step-09 `CONNECT pin-Q.pin1 -> turntable-O.base.hole?`; 8047-step-09 `DOES turntable-O HOLDS pin-P`; 8047-step-09 `DOES turntable-O HOLDS pin-Q`; 8047-step-16 `CONNECT pinlong-1.pin1 -> turntable-O.top.hole?`; 8047-step-16 `CONNECT pinlong-2.pin1 -> turntable-O.top.hole?`; 8047-step-16 `DOES turntable-O HOLDS pinlong-1`; 8047-step-16 `DOES turntable-O HOLDS pinlong-2`; 8047-step-17 `DOES turntable-O SUPPORTS seat`.
+- **turntable-O** (Swing ring (turntable)): The joint between lower and upper machine: fixed half pinned to the chassis, turning half carries the whole upper body. Later: 8047-step-09 `CONNECT pin-P.pin1 -> turntable-O.hole4~ STIFF`; 8047-step-09 `CONNECT pin-Q.pin1 -> turntable-O.hole13~ STIFF`; 8047-step-09 `DOES turntable-O HOLDS pin-P`; 8047-step-09 `DOES turntable-O HOLDS pin-Q`; 8047-step-16 `CONNECT pinlong-1.pin1 -> turntable-O.hole5~ STIFF`; 8047-step-16 `CONNECT pinlong-2.pin1 -> turntable-O.hole8~ STIFF`; 8047-step-16 `DOES turntable-O HOLDS pinlong-1`; 8047-step-16 `DOES turntable-O HOLDS pinlong-2`; 8047-step-17 `DOES turntable-O SUPPORTS seat`.
 
 **Review:** OPEN (narrowed): steps 8-9 show pin-E/pin-F in the two outer holes of one row of the turntable's near hole block (2 apart, matching beam-C holes 1 and 3). Which of the block's two rows is not visible: hole1+hole10 or hole2+hole11 (or the mirror block).
 
@@ -172,7 +178,7 @@
 
 **Touches:** pin-P and pin-Q go into the raised block's holes; beam-R's outer holes slide over pin-P and pin-Q (red arrows)
 
-**Exact joins:** pin-P.pin1 into turntable-O.base.hole? (not fully shown in booklet); pin-Q.pin1 into turntable-O.base.hole? (not fully shown in booklet); pin-P.pin2 into beam-R.hole1 (0.9 hole deep, held stiff by friction); pin-Q.pin2 into beam-R.hole3 (0.9 hole deep, held stiff by friction)
+**Exact joins:** pin-P.pin1 into turntable-O.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-Q.pin1 into turntable-O.hole13 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-P.pin2 into beam-R.hole1 (0.9 hole deep, held stiff by friction); pin-Q.pin2 into beam-R.hole3 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** turntable-O holds pin-P and pin-Q; pin-P and pin-Q lock beam-R in place
 
@@ -193,7 +199,7 @@
 
 **Touches:** side box: axle-S into connector-T, then pin-U into connector-T's other end; the mini build's axle goes through beam-R's top hole (cream arrow)
 
-**Exact joins:** axle-S.axle3 into connector-T.axlehole? (not fully shown in booklet); pin-U.axle1 into connector-T.axlehole? (not fully shown in booklet); axle-S.axle2 into beam-R.axlehole1 (1 hole deep, locked (turn together))
+**Exact joins:** axle-S.axle3 into connector-T.axlehole1 (1 hole deep, locked (turn together)); pin-U.axle1 into connector-T.axlehole2 (1 hole deep, locked (turn together)); axle-S.axle2 into beam-R.axlehole1 (1 hole deep, locked (turn together))
 
 **Who does what:** beam-R holds axle-S; axle-S carries connector-T; connector-T holds pin-U
 
@@ -202,9 +208,9 @@
 **Why:** Starts a back cross bar reaching out to the right side rail. The axle connector extends the axle, and the blue axle pin turns its end into a pin for a beam to hang on. *Next:* pin-U holds the right side rail in step 12. *Pattern:* axle extended to a pin end
 
 **Big picture:**
-- **axle-S** (Undercarriage frame): Back cross axle; reaches out to both side rails. Later: 8047-step-11 `CONNECT axle-S.axle1 -> connector-W.axlehole?`; 8047-step-11 `DOES axle-S CARRIES connector-W`.
+- **axle-S** (Undercarriage frame): Back cross axle; reaches out to both side rails. Later: 8047-step-11 `CONNECT axle-S.axle1 -> connector-W.axlehole1 LOCKED`; 8047-step-11 `DOES axle-S CARRIES connector-W`.
 - **connector-T** (Undercarriage frame): Right end of the back cross axle; turns it into a pin end via pin-U.
-- **pin-U** (Undercarriage frame): Right back pin; holds the right side rail beam9-Y. Later: 8047-step-12 `CONNECT pin-U.pin1 -> beam9-Y.hole?`; 8047-step-12 `DOES pin-U HOLDS beam9-Y`.
+- **pin-U** (Undercarriage frame): Right back pin; holds the right side rail beam9-Y. Later: 8047-step-12 `CONNECT pin-U.pin1 -> beam9-Y.hole8 STIFF`; 8047-step-12 `DOES pin-U HOLDS beam9-Y`.
 
 ## 8047-step-11 (page 6) - high
 
@@ -214,7 +220,7 @@
 
 **Touches:** connector-W slides onto axle-S's left end; pin-V goes into connector-W (red arrow)
 
-**Exact joins:** axle-S.axle1 into connector-W.axlehole? (not fully shown in booklet); pin-V.axle1 into connector-W.axlehole? (not fully shown in booklet)
+**Exact joins:** axle-S.axle1 into connector-W.axlehole1 (1 hole deep, locked (turn together)); pin-V.axle1 into connector-W.axlehole2 (1 hole deep, locked (turn together))
 
 **Who does what:** axle-S carries connector-W; connector-W holds pin-V
 
@@ -224,7 +230,7 @@
 
 **Big picture:**
 - **connector-W** (Undercarriage frame): Left end of the back cross axle; turns it into a pin end via pin-V.
-- **pin-V** (Undercarriage frame): Left back pin; holds the left side rail beam9-X. Later: 8047-step-12 `CONNECT pin-V.pin1 -> beam9-X.hole?`; 8047-step-12 `DOES pin-V HOLDS beam9-X`.
+- **pin-V** (Undercarriage frame): Left back pin; holds the left side rail beam9-X. Later: 8047-step-12 `CONNECT pin-V.pin1 -> beam9-X.hole8 STIFF`; 8047-step-12 `DOES pin-V HOLDS beam9-X`.
 
 ## 8047-step-12 (page 6) - high
 
@@ -234,7 +240,7 @@
 
 **Touches:** each rail slides over one shaft pin end at the front and one blue pin at the back
 
-**Exact joins:** rod-B.pin2 into beam9-X.hole? (not fully shown in booklet); pin-V.pin1 into beam9-X.hole? (not fully shown in booklet); rod-A.pin2 into beam9-Y.hole? (not fully shown in booklet); pin-U.pin1 into beam9-Y.hole? (not fully shown in booklet)
+**Exact joins:** rod-B.pin2 into beam9-X.hole2 (0.9 hole deep, held stiff by friction); pin-V.pin1 into beam9-X.hole8 (0.9 hole deep, held stiff by friction); rod-A.pin2 into beam9-Y.hole2 (0.9 hole deep, held stiff by friction); pin-U.pin1 into beam9-Y.hole8 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** the shaft's pin ends and pin-V hold beam9-X; the shaft's pin ends and pin-U hold beam9-Y; beam9-X and beam9-Y support the whole undercarriage
 
@@ -300,7 +306,7 @@
 
 **Touches:** each link clips to the next (side box: 28 links per loop, make 2); the left loop wraps around gear-1 and gear-2, the right loop around gear-3 and gear-4; the gear teeth sit in the links
 
-**Exact joins:** tread-1.end2? into tread-2.end1? (not fully shown in booklet); tread-2.end2? into tread-3.end1? (not fully shown in booklet); tread-3.end2? into tread-4.end1? (not fully shown in booklet); tread-4.end2? into tread-5.end1? (not fully shown in booklet); tread-5.end2? into tread-6.end1? (not fully shown in booklet); tread-6.end2? into tread-7.end1? (not fully shown in booklet); tread-7.end2? into tread-8.end1? (not fully shown in booklet); tread-8.end2? into tread-9.end1? (not fully shown in booklet); tread-9.end2? into tread-10.end1? (not fully shown in booklet); tread-10.end2? into tread-11.end1? (not fully shown in booklet); tread-11.end2? into tread-12.end1? (not fully shown in booklet); tread-12.end2? into tread-13.end1? (not fully shown in booklet); tread-13.end2? into tread-14.end1? (not fully shown in booklet); tread-14.end2? into tread-15.end1? (not fully shown in booklet); tread-15.end2? into tread-16.end1? (not fully shown in booklet); tread-16.end2? into tread-17.end1? (not fully shown in booklet); tread-17.end2? into tread-18.end1? (not fully shown in booklet); tread-18.end2? into tread-19.end1? (not fully shown in booklet); tread-19.end2? into tread-20.end1? (not fully shown in booklet); tread-20.end2? into tread-21.end1? (not fully shown in booklet); tread-21.end2? into tread-22.end1? (not fully shown in booklet); tread-22.end2? into tread-23.end1? (not fully shown in booklet); tread-23.end2? into tread-24.end1? (not fully shown in booklet); tread-24.end2? into tread-25.end1? (not fully shown in booklet); tread-25.end2? into tread-26.end1? (not fully shown in booklet); tread-26.end2? into tread-27.end1? (not fully shown in booklet); tread-27.end2? into tread-28.end1? (not fully shown in booklet); tread-28.end2? into tread-1.end1? (not fully shown in booklet); tread-29.end2? into tread-30.end1? (not fully shown in booklet); tread-30.end2? into tread-31.end1? (not fully shown in booklet); tread-31.end2? into tread-32.end1? (not fully shown in booklet); tread-32.end2? into tread-33.end1? (not fully shown in booklet); tread-33.end2? into tread-34.end1? (not fully shown in booklet); tread-34.end2? into tread-35.end1? (not fully shown in booklet); tread-35.end2? into tread-36.end1? (not fully shown in booklet); tread-36.end2? into tread-37.end1? (not fully shown in booklet); tread-37.end2? into tread-38.end1? (not fully shown in booklet); tread-38.end2? into tread-39.end1? (not fully shown in booklet); tread-39.end2? into tread-40.end1? (not fully shown in booklet); tread-40.end2? into tread-41.end1? (not fully shown in booklet); tread-41.end2? into tread-42.end1? (not fully shown in booklet); tread-42.end2? into tread-43.end1? (not fully shown in booklet); tread-43.end2? into tread-44.end1? (not fully shown in booklet); tread-44.end2? into tread-45.end1? (not fully shown in booklet); tread-45.end2? into tread-46.end1? (not fully shown in booklet); tread-46.end2? into tread-47.end1? (not fully shown in booklet); tread-47.end2? into tread-48.end1? (not fully shown in booklet); tread-48.end2? into tread-49.end1? (not fully shown in booklet); tread-49.end2? into tread-50.end1? (not fully shown in booklet); tread-50.end2? into tread-51.end1? (not fully shown in booklet); tread-51.end2? into tread-52.end1? (not fully shown in booklet); tread-52.end2? into tread-53.end1? (not fully shown in booklet); tread-53.end2? into tread-54.end1? (not fully shown in booklet); tread-54.end2? into tread-55.end1? (not fully shown in booklet); tread-55.end2? into tread-56.end1? (not fully shown in booklet); tread-56.end2? into tread-29.end1? (not fully shown in booklet)
+**Exact joins:** tread-1.bar2 into tread-2.clip1 (0.1 hole deep, turns freely); tread-2.bar2 into tread-3.clip1 (0.1 hole deep, turns freely); tread-3.bar2 into tread-4.clip1 (0.1 hole deep, turns freely); tread-4.bar2 into tread-5.clip1 (0.1 hole deep, turns freely); tread-5.bar2 into tread-6.clip1 (0.1 hole deep, turns freely); tread-6.bar2 into tread-7.clip1 (0.1 hole deep, turns freely); tread-7.bar2 into tread-8.clip1 (0.1 hole deep, turns freely); tread-8.bar2 into tread-9.clip1 (0.1 hole deep, turns freely); tread-9.bar2 into tread-10.clip1 (0.1 hole deep, turns freely); tread-10.bar2 into tread-11.clip1 (0.1 hole deep, turns freely); tread-11.bar2 into tread-12.clip1 (0.1 hole deep, turns freely); tread-12.bar2 into tread-13.clip1 (0.1 hole deep, turns freely); tread-13.bar2 into tread-14.clip1 (0.1 hole deep, turns freely); tread-14.bar2 into tread-15.clip1 (0.1 hole deep, turns freely); tread-15.bar2 into tread-16.clip1 (0.1 hole deep, turns freely); tread-16.bar2 into tread-17.clip1 (0.1 hole deep, turns freely); tread-17.bar2 into tread-18.clip1 (0.1 hole deep, turns freely); tread-18.bar2 into tread-19.clip1 (0.1 hole deep, turns freely); tread-19.bar2 into tread-20.clip1 (0.1 hole deep, turns freely); tread-20.bar2 into tread-21.clip1 (0.1 hole deep, turns freely); tread-21.bar2 into tread-22.clip1 (0.1 hole deep, turns freely); tread-22.bar2 into tread-23.clip1 (0.1 hole deep, turns freely); tread-23.bar2 into tread-24.clip1 (0.1 hole deep, turns freely); tread-24.bar2 into tread-25.clip1 (0.1 hole deep, turns freely); tread-25.bar2 into tread-26.clip1 (0.1 hole deep, turns freely); tread-26.bar2 into tread-27.clip1 (0.1 hole deep, turns freely); tread-27.bar2 into tread-28.clip1 (0.1 hole deep, turns freely); tread-28.bar2 into tread-1.clip1 (0.1 hole deep, turns freely); tread-29.bar2 into tread-30.clip1 (0.1 hole deep, turns freely); tread-30.bar2 into tread-31.clip1 (0.1 hole deep, turns freely); tread-31.bar2 into tread-32.clip1 (0.1 hole deep, turns freely); tread-32.bar2 into tread-33.clip1 (0.1 hole deep, turns freely); tread-33.bar2 into tread-34.clip1 (0.1 hole deep, turns freely); tread-34.bar2 into tread-35.clip1 (0.1 hole deep, turns freely); tread-35.bar2 into tread-36.clip1 (0.1 hole deep, turns freely); tread-36.bar2 into tread-37.clip1 (0.1 hole deep, turns freely); tread-37.bar2 into tread-38.clip1 (0.1 hole deep, turns freely); tread-38.bar2 into tread-39.clip1 (0.1 hole deep, turns freely); tread-39.bar2 into tread-40.clip1 (0.1 hole deep, turns freely); tread-40.bar2 into tread-41.clip1 (0.1 hole deep, turns freely); tread-41.bar2 into tread-42.clip1 (0.1 hole deep, turns freely); tread-42.bar2 into tread-43.clip1 (0.1 hole deep, turns freely); tread-43.bar2 into tread-44.clip1 (0.1 hole deep, turns freely); tread-44.bar2 into tread-45.clip1 (0.1 hole deep, turns freely); tread-45.bar2 into tread-46.clip1 (0.1 hole deep, turns freely); tread-46.bar2 into tread-47.clip1 (0.1 hole deep, turns freely); tread-47.bar2 into tread-48.clip1 (0.1 hole deep, turns freely); tread-48.bar2 into tread-49.clip1 (0.1 hole deep, turns freely); tread-49.bar2 into tread-50.clip1 (0.1 hole deep, turns freely); tread-50.bar2 into tread-51.clip1 (0.1 hole deep, turns freely); tread-51.bar2 into tread-52.clip1 (0.1 hole deep, turns freely); tread-52.bar2 into tread-53.clip1 (0.1 hole deep, turns freely); tread-53.bar2 into tread-54.clip1 (0.1 hole deep, turns freely); tread-54.bar2 into tread-55.clip1 (0.1 hole deep, turns freely); tread-55.bar2 into tread-56.clip1 (0.1 hole deep, turns freely); tread-56.bar2 into tread-29.clip1 (0.1 hole deep, turns freely)
 
 **Who does what:** gear-1 and gear-2 hold the left loop tight; gear-3 and gear-4 hold the right loop tight; beam9-X supports the left loop through gear-1 and gear-2; beam9-Y supports the right loop through gear-3 and gear-4
 
@@ -320,7 +326,7 @@
 
 **Touches:** the model is flipped over (turn-over symbol): turntable-O's black toothed half now faces up; pinlong-1 and pinlong-2 each push halfway into a hole block on turntable-O's top half
 
-**Exact joins:** pinlong-1.pin1 into turntable-O.top.hole? (not fully shown in booklet); pinlong-2.pin1 into turntable-O.top.hole? (not fully shown in booklet)
+**Exact joins:** pinlong-1.pin1 into turntable-O.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); pinlong-2.pin1 into turntable-O.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** turntable-O holds pinlong-1 and pinlong-2
 
@@ -329,20 +335,20 @@
 **Why:** Gives the turning half of the turntable two mounting pins. Long pins stick out far enough to take a beam on their free half. *Next:* The seat frame drops onto them in step 17. *Pattern:* pins as mounting posts
 
 **Big picture:**
-- **pinlong-1** (Swing ring (turntable)): Mounting post on the turning half: holds the seat frame (steps 17-18) and the left side frame (step 24). Later: 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-17 `DOES pinlong-1 HOLDS seat`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-18 `DOES pinlong-1 LOCKS seat`; 8047-step-24 `CONNECT pinlong-1.pin3 -> bent11-B.hole1 STIFF`; 8047-step-24 `DOES pinlong-1 HOLDS bent11-B`.
-- **pinlong-2** (Swing ring (turntable)): Second mounting post on the turning half for the seat frame. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-17 `DOES pinlong-2 HOLDS seat`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-18 `DOES pinlong-2 LOCKS seat`.
+- **pinlong-1** (Swing ring (turntable)): Mounting post on the turning half: holds the seat frame (steps 17-18) and the left side frame (step 24). Later: 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF`; 8047-step-17 `DOES pinlong-1 HOLDS seat`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF`; 8047-step-18 `DOES pinlong-1 LOCKS seat`; 8047-step-24 `CONNECT pinlong-1.pin3 -> bent11-B.hole1 STIFF`; 8047-step-24 `DOES pinlong-1 HOLDS bent11-B`.
+- **pinlong-2** (Swing ring (turntable)): Second mounting post on the turning half for the seat frame. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole7~ STIFF`; 8047-step-17 `DOES pinlong-2 HOLDS seat`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole7~ STIFF`; 8047-step-18 `DOES pinlong-2 LOCKS seat`.
 
 **Review:** OPEN (narrowed): steps 16-18 show each pin in the outward-facing hole of one of the turntable top's two hole blocks, sticking out; in step 18 they are pushed through into the seat legs. Exact hole number in the block not named in the catalog's numbering yet.
 
-## 8047-seat-step-01 (page 8) - medium - NEEDS REVIEW
+## 8047-seat-step-01 (page 8) - medium
 
 ![8047-seat-step-01](steps/seat-01/picture.png)
 
-**New parts:** hub4-s (48989, light bluish gray) - first part of the seat build, four pins pointing out; pin-s1 (6558, blue) - in hub4-s's middle hole, sticking out the front; hub2-s (87082, light bluish gray) - pushed onto hub4-s's side pin (red arrow)
+**New parts:** hub4-s (48989, light bluish gray) - first part of the seat build, four pins pointing out; pin-s1 (6558, blue) - in hub4-s's middle hole, sticking out the front; hub2-s (87082, light bluish gray) - its pin pushed into hub4-s's top hole (red arrow)
 
-**Touches:** pin-s1 goes into the middle hole of hub4-s; hub2-s's hole slides over one side pin of hub4-s
+**Touches:** pin-s1 goes through hub4-s's middle hole; hub2-s's pin pushes into hub4-s's top hole
 
-**Exact joins:** pin-s1.pin1 into hub4-s.hole? (not fully shown in booklet); hub2-s.hole1 into hub4-s.pin? (not fully shown in booklet)
+**Exact joins:** pin-s1.pin2 into hub4-s.hole2 (0.9 hole deep, held stiff by friction); hub2-s.pin1 into hub4-s.hole1 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** hub4-s holds pin-s1; hub4-s holds hub2-s
 
@@ -351,11 +357,11 @@
 **Why:** Starts the seat frame with a block that has pins pointing in many directions. Hub connectors turn one spot into pins facing three ways, so beams can be added at right angles. *Next:* The blue L-beams go on these pins in steps 2 and 4. *Pattern:* pin hub core
 
 **Big picture:**
-- **hub4-s** (Upper frame and seat): Core block of the seat: pins in many directions let the seat back and the axle holders join at right angles. Later: 8047-seat-step-02 `CONNECT lbeam-s1.hole? -> hub4-s.pin?`; 8047-seat-step-02 `DOES hub4-s HOLDS lbeam-s1`; 8047-seat-step-05 `CONNECT block-s.hole1 -> hub4-s.pin?`; 8047-seat-step-05 `CONNECT conn-s1.pinhole? -> hub4-s.pin?`; 8047-seat-step-05 `DOES hub4-s HOLDS block-s`; 8047-seat-step-05 `DOES hub4-s HOLDS conn-s1`.
+- **hub4-s** (Upper frame and seat): Core block of the seat: pins in many directions let the seat back and the axle holders join at right angles. Later: 8047-seat-step-02 `CONNECT lbeam-s1.hole5~ -> hub4-s.pin1~ STIFF`; 8047-seat-step-02 `DOES hub4-s HOLDS lbeam-s1`; 8047-seat-step-05 `CONNECT block-s.hole1 -> hub4-s.pin4~ STIFF`; 8047-seat-step-05 `CONNECT conn-s1.hole1~ -> hub4-s.pin3~ STIFF`; 8047-seat-step-05 `DOES hub4-s HOLDS block-s`; 8047-seat-step-05 `DOES hub4-s HOLDS conn-s1`.
 - **pin-s1** (Upper frame and seat): Pin in the hub core; part of the seat's mounting.
 - **hub2-s** (Upper frame and seat): Adds more pins to the core so the seat parts lock together.
 
-**Review:** pin-s1 is already in hub4-s in the picture with no arrow; which hole it uses is a guess.
+**Review:** Corrected: the red arrow shows hub2-s's pin going into hub4-s's top hole (the earlier label had it the other way round). pin-s1 is already in the middle hole with no arrow.
 
 ## 8047-seat-step-02 (page 8) - high
 
@@ -365,7 +371,7 @@
 
 **Touches:** lbeam-s1's short-arm holes go over the hub pins
 
-**Exact joins:** lbeam-s1.hole? into hub4-s.pin? (not fully shown in booklet)
+**Exact joins:** lbeam-s1.hole5 into hub4-s.pin1 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** hub4-s holds lbeam-s1
 
@@ -428,7 +434,7 @@
 
 **Touches:** block-s's pin hole slides onto a hub pin on the right; conn-s1 sits under the seat on a hub pin
 
-**Exact joins:** block-s.hole1 into hub4-s.pin? (not fully shown in booklet); conn-s1.pinhole? into hub4-s.pin? (not fully shown in booklet)
+**Exact joins:** block-s.hole1 into hub4-s.pin4 (0.9 hole deep, held stiff by friction, estimated from the picture); conn-s1.hole1 into hub4-s.pin3 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** hub4-s holds block-s; hub4-s holds conn-s1
 
@@ -459,7 +465,7 @@
 **Why:** Adds the first cross bar of the seat frame. A long axle reaches both side beams of the frame. *Next:* Its ends take the dark gray L-beams in steps 8 and 11. *Pattern:* axle as cross bar
 
 **Big picture:**
-- **axle9-s1** (Upper frame and seat): Cross bar of the upper frame: carries both side plates and later conn3c-1. Later: 8047-seat-step-08 `CONNECT axle9-s1.axle1 -> lbeam-s3.hole?`; 8047-seat-step-08 `DOES axle9-s1 CARRIES lbeam-s3`; 8047-seat-step-09 `CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED`; 8047-seat-step-11 `CONNECT axle9-s1.axle9 -> lbeam-s4.hole?`; 8047-seat-step-11 `DOES axle9-s1 CARRIES lbeam-s4`; 8047-step-22 `CONNECT conn3c-1.axlehole1 -> axle9-s1.axle9 LOCKED`; 8047-step-22 `DOES conn3c-1 HOLDS axle9-s1`.
+- **axle9-s1** (Upper frame and seat): Cross bar of the upper frame: carries both side plates and later conn3c-1. Later: 8047-seat-step-08 `CONNECT axle9-s1.axle1 -> lbeam-s3.hole5~ TURNS`; 8047-seat-step-08 `DOES axle9-s1 CARRIES lbeam-s3`; 8047-seat-step-09 `CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED`; 8047-seat-step-11 `CONNECT axle9-s1.axle9 -> lbeam-s4.hole5~ TURNS`; 8047-seat-step-11 `DOES axle9-s1 CARRIES lbeam-s4`; 8047-step-22 `CONNECT conn3c-1.axlehole1 -> axle9-s1.axle9 LOCKED`; 8047-step-22 `DOES conn3c-1 HOLDS axle9-s1`.
 
 ## 8047-seat-step-07 (page 9) - medium - NEEDS REVIEW
 
@@ -482,7 +488,7 @@
 - **axle7-s** (Front worm drive (knob-2)): Shaft under the seat: carries crown-1 and gear-5, passing the worm's turning across to the left side. Later: 8047-seat-step-11 `CONNECT crown-1.axlehole1 -> axle7-s.axle7 LOCKED`; 8047-seat-step-11 `DOES axle7-s CARRIES crown-1`; 8047-step-28 `CONNECT bush-28.axlehole1 -> axle7-s.axle7 LOCKED`; 8047-step-28 `DOES bush-28 LOCKS axle7-s`.
 - **bush-s1** (Front worm drive (knob-2)): Stops axle7-s sliding.
 
-**Review:** Whether axle7-s turns freely in block-s depends on block-s's hole type; check in a 3D view.
+**Review:** CONTRADICTION: axle7-s goes through block-s's cross hole, and block-s hangs on a hub pin by its round hole (parallel to the axle). That locks axle7-s, but the worm drive (steps 26-28) needs it to turn. Either block-s is a different part or it sits elsewhere: re-check seat steps 5 and 7.
 
 ## 8047-seat-step-08 (page 10) - medium - NEEDS REVIEW
 
@@ -492,7 +498,7 @@
 
 **Touches:** lbeam-s3's corner hole goes onto axle9-s1's left end (red arrow)
 
-**Exact joins:** axle9-s1.axle1 into lbeam-s3.hole? (not fully shown in booklet)
+**Exact joins:** axle9-s1.axle1 into lbeam-s3.hole5 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** axle9-s1 carries lbeam-s3
 
@@ -501,7 +507,7 @@
 **Why:** Adds the left side of the seat frame. An L-beam gives a side and a leg in one part. *Next:* Its leg rests on the turntable in step 17. *Pattern:* L-beam side plate
 
 **Big picture:**
-- **lbeam-s3** (Upper frame and seat): Left side plate of the upper frame; its leg goes on pinlong-1 to fix the frame to the turntable. Later: 8047-seat-step-09 `DOES bush-s2 LOCKS lbeam-s3`; 8047-seat-step-10 `CONNECT axle9-s2.axle1 -> lbeam-s3.hole?`; 8047-seat-step-10 `DOES lbeam-s3 HOLDS axle9-s2`; 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-19 `CONNECT axle7-B.axle? -> lbeam-s3.hole?`; 8047-step-19 `DOES lbeam-s3 HOLDS axle7-B`.
+- **lbeam-s3** (Upper frame and seat): Left side plate of the upper frame; its leg goes on pinlong-1 to fix the frame to the turntable. Later: 8047-seat-step-09 `DOES bush-s2 LOCKS lbeam-s3`; 8047-seat-step-10 `CONNECT axle9-s2.axle1 -> lbeam-s3.hole3~ TURNS`; 8047-seat-step-10 `DOES lbeam-s3 HOLDS axle9-s2`; 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF`; 8047-step-19 `CONNECT axle7-B.axle2~ -> lbeam-s3.hole6~ TURNS`; 8047-step-19 `DOES lbeam-s3 HOLDS axle7-B`.
 
 **Review:** Which hole of lbeam-s3 takes the axle is not clear.
 
@@ -532,7 +538,7 @@
 
 **Touches:** bush-s3 slides onto axle9-s2 first; axle9-s2 pushes in from the front through lbeam-s3 and the seat
 
-**Exact joins:** bush-s3.axlehole1 into axle9-s2.axle5 (1 hole deep, locked (turn together)); axle9-s2.axle1 into lbeam-s3.hole? (not fully shown in booklet)
+**Exact joins:** bush-s3.axlehole1 into axle9-s2.axle5 (1 hole deep, locked (turn together)); axle9-s2.axle1 into lbeam-s3.hole3 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** lbeam-s3 holds axle9-s2; bush-s3 locks axle9-s2 in place
 
@@ -541,7 +547,7 @@
 **Why:** Adds the second cross bar of the seat frame. Two axles keep the side beams from twisting. *Next:* Both axle ends take lbeam-s4 in step 11. *Pattern:* two-bar frame
 
 **Big picture:**
-- **axle9-s2** (Upper frame and seat): Second cross bar; with axle9-s1 it keeps the side plates square. Later: 8047-seat-step-11 `CONNECT axle9-s2.axle9 -> lbeam-s4.hole?`; 8047-seat-step-11 `DOES axle9-s2 CARRIES lbeam-s4`; 8047-step-19 `CONNECT conn3-1.axlehole1 -> axle9-s2.axle1 LOCKED`; 8047-step-19 `DOES axle9-s2 CARRIES conn3-1`; 8047-step-22 `CONNECT conn3c-1.axlehole2 -> axle9-s2.axle9 LOCKED`.
+- **axle9-s2** (Upper frame and seat): Second cross bar; with axle9-s1 it keeps the side plates square. Later: 8047-seat-step-11 `CONNECT axle9-s2.axle9 -> lbeam-s4.hole3~ TURNS`; 8047-seat-step-11 `DOES axle9-s2 CARRIES lbeam-s4`; 8047-step-19 `CONNECT conn3-1.axlehole1 -> axle9-s2.axle1 LOCKED`; 8047-step-19 `DOES axle9-s2 CARRIES conn3-1`; 8047-step-22 `CONNECT conn3c-1.axlehole2 -> axle9-s2.axle9 LOCKED`.
 - **bush-s3** (Upper frame and seat): Stops axle9-s2 sliding.
 
 **Review:** Exact holes for axle9-s2 not visible.
@@ -554,7 +560,7 @@
 
 **Touches:** lbeam-s4 goes over the right ends of axle9-s1 and axle9-s2; crown-1 pushes onto axle7-s's right end
 
-**Exact joins:** axle9-s1.axle9 into lbeam-s4.hole? (not fully shown in booklet); axle9-s2.axle9 into lbeam-s4.hole? (not fully shown in booklet); crown-1.axlehole1 into axle7-s.axle7 (1 hole deep, locked (turn together))
+**Exact joins:** axle9-s1.axle9 into lbeam-s4.hole5 (1 hole deep, turns freely, estimated from the picture); axle9-s2.axle9 into lbeam-s4.hole3 (1 hole deep, turns freely, estimated from the picture); crown-1.axlehole1 into axle7-s.axle7 (1 hole deep, locked (turn together))
 
 **Who does what:** axle9-s1 and axle9-s2 carry lbeam-s4; axle7-s carries crown-1
 
@@ -563,7 +569,7 @@
 **Why:** Closes the seat frame and finishes the gear shaft. A crown gear can mesh with a gear at right angles. *Next:* The whole seat build goes on the turntable in step 17. *Pattern:* mirror the side
 
 **Big picture:**
-- **lbeam-s4** (Upper frame and seat): Right side plate; its leg goes on pinlong-2. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-19 `CONNECT axle7-B.axle? -> lbeam-s4.hole?`.
+- **lbeam-s4** (Upper frame and seat): Right side plate; its leg goes on pinlong-2. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole7~ STIFF`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole7~ STIFF`; 8047-step-19 `CONNECT axle7-B.axle6~ -> lbeam-s4.hole6~ TURNS`.
 - **crown-1** (Front worm drive (knob-2)): 24-tooth gear the worm turns; the 1:24 slow-down happens here. Later: 8047-step-26 `MESH worm-1.teeth crown-1.teeth`; 8047-step-26 `RATIO worm-1 crown-1 1/24`; 8047-step-26 `DOES worm-1 DRIVES crown-1`.
 
 **Review:** Not confirmed what crown-1 meshes with; check in later steps.
@@ -576,7 +582,7 @@
 
 **Touches:** GROUP seat drops onto the turntable: the lower ends of lbeam-s3 and lbeam-s4 go over pinlong-1 and pinlong-2 (red arrows)
 
-**Exact joins:** pinlong-1.pin3 into lbeam-s3.hole? (not fully shown in booklet); pinlong-2.pin3 into lbeam-s4.hole? (not fully shown in booklet)
+**Exact joins:** pinlong-1.pin3 into lbeam-s3.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); pinlong-2.pin3 into lbeam-s4.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pinlong-1 and pinlong-2 hold the seat build; turntable-O supports the seat build
 
@@ -597,7 +603,7 @@
 
 **Touches:** pinlong-1 and pinlong-2 are pushed further in (red arrows) so their free ends lock into the seat frame legs
 
-**Exact joins:** pinlong-1.pin3 into lbeam-s3.hole? (not fully shown in booklet); pinlong-2.pin3 into lbeam-s4.hole? (not fully shown in booklet)
+**Exact joins:** pinlong-1.pin3 into lbeam-s3.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); pinlong-2.pin3 into lbeam-s4.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pinlong-1 and pinlong-2 lock the seat build in place on turntable-O
 
@@ -618,7 +624,7 @@
 
 **Touches:** side box: axle7-B -> axcon-1 -> axpin-1 make one long shaft; the shaft goes in from the front through the seat frame's side plates; axpin-1's pin end is left sticking out at the front; conn3-1's axle hole goes onto axle9-s2's end sticking out at the back-left (seen in step 18)
 
-**Exact joins:** axle7-B.axle1 into axcon-1.axlehole? (not fully shown in booklet); axpin-1.axle1 into axcon-1.axlehole? (not fully shown in booklet); axle7-B.axle? into lbeam-s3.hole? (not fully shown in booklet); axle7-B.axle? into lbeam-s4.hole? (not fully shown in booklet); conn3-1.axlehole1 into axle9-s2.axle1 (1 hole deep, locked (turn together))
+**Exact joins:** axle7-B.axle1 into axcon-1.axlehole1 (1 hole deep, locked (turn together)); axpin-1.axle1 into axcon-1.axlehole2 (1 hole deep, locked (turn together)); axle7-B.axle2 into lbeam-s3.hole6 (1 hole deep, turns freely, estimated from the picture); axle7-B.axle6 into lbeam-s4.hole6 (1 hole deep, turns freely, estimated from the picture); conn3-1.axlehole1 into axle9-s2.axle1 (1 hole deep, locked (turn together))
 
 **Who does what:** axcon-1 holds axpin-1; lbeam-s3 and lbeam-s4 hold axle7-B; axle9-s2 carries conn3-1
 
@@ -634,13 +640,13 @@
 
 **Review:** Corrected by comparing with step 18: conn3-1 goes on the existing cross axle end (axle9-s2 most likely; axle9-s1's end already has a bush), not on the new shaft. OPEN: which side-plate holes axle7-B passes through.
 
-## 8047-step-20 (page 15) - medium - NEEDS REVIEW
+## 8047-step-20 (page 15) - medium
 
 ![8047-step-20](steps/main-20/picture.png)
 
-**New parts:** bent11-A (32009, black) - right side, along the frame, end hole on the blue pin (red arrow), bent end pointing up at the back
+**New parts:** bent11-A (32009, black) - right side, along the frame; the blue pin goes into its first round hole, next to the cross-shaped end hole; bent end rising at the back
 
-**Touches:** bent11-A's end hole goes over the blue pin sticking out under the seat
+**Touches:** bent11-A's first round hole (hole1, next to the cross-hole end) goes over axpin-1's pin end
 
 **Exact joins:** axpin-1.pin1 into bent11-A.hole1 (0.9 hole deep, held stiff by friction)
 
@@ -651,9 +657,9 @@
 **Why:** Starts the side frame of the upper body. A double-bent beam goes round the turntable and rises at the back in one part. *Next:* Step 21 pins things into its bent end. *Pattern:* bent beam side frame
 
 **Big picture:**
-- **bent11-A** (Upper frame and seat): Right side frame: wraps round the turntable and rises at the back; carries the body, side covers and roof post. Later: 8047-step-21 `CONNECT pin-21a.pin1 -> bent11-A.hole?`; 8047-step-21 `CONNECT pin-21b.pin1 -> bent11-A.hole?`; 8047-step-21 `CONNECT axle3-21.axle1 -> bent11-A.hole?`; 8047-step-21 `DOES bent11-A HOLDS pin-21a`; 8047-step-21 `DOES bent11-A HOLDS pin-21b`; 8047-step-21 `DOES bent11-A HOLDS axle3-21`; 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole?`; 8047-step-30 `DOES bent11-A SUPPORTS body`; 8047-step-48 `CONNECT pin-48.pin2 -> bent11-A.hole?`; 8047-step-49 `CONNECT beam9-49.hole? -> bent11-A.hole?`; 8047-step-49 `DOES bent11-A SUPPORTS beam9-49`.
+- **bent11-A** (Upper frame and seat): Right side frame: wraps round the turntable and rises at the back; carries the body, side covers and roof post. Later: 8047-step-21 `CONNECT pin-21a.pin1 -> bent11-A.hole8~ STIFF`; 8047-step-21 `CONNECT pin-21b.pin1 -> bent11-A.hole7~ STIFF`; 8047-step-21 `CONNECT axle3-21.axle1 -> bent11-A.hole3~ TURNS`; 8047-step-21 `DOES bent11-A HOLDS pin-21a`; 8047-step-21 `DOES bent11-A HOLDS pin-21b`; 8047-step-21 `DOES bent11-A HOLDS axle3-21`; 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole6~ STIFF`; 8047-step-30 `DOES bent11-A SUPPORTS body`; 8047-step-48 `CONNECT pin-48.pin2 -> bent11-A.hole1~ STIFF`; 8047-step-49 `CONNECT beam9-49.hole? -> bent11-A.hole?`; 8047-step-49 `DOES bent11-A SUPPORTS beam9-49`.
 
-**Review:** Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
+**Review:** Corrected with the catalog: the end holes of this double-bent beam are cross-shaped, so a round pin can't go there; the pin sits in the first round hole.
 
 ## 8047-step-21 (page 16) - medium - NEEDS REVIEW
 
@@ -663,7 +669,7 @@
 
 **Touches:** pin-21a and pin-21b push into bent11-A (red arrow); axle3-21 goes into bent11-A's axle hole
 
-**Exact joins:** pin-21a.pin1 into bent11-A.hole? (not fully shown in booklet); pin-21b.pin1 into bent11-A.hole? (not fully shown in booklet); axle3-21.axle1 into bent11-A.hole? (not fully shown in booklet)
+**Exact joins:** pin-21a.pin1 into bent11-A.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-21b.pin1 into bent11-A.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); axle3-21.axle1 into bent11-A.hole3 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** bent11-A holds pin-21a, pin-21b and axle3-21
 
@@ -695,7 +701,7 @@
 **Why:** Links the seat gear shaft to the long shaft. Two 16-tooth gears pass turning on at 1:1. *Next:* conn3c-1 carries the control lever in step 23. *Pattern:* gear pair 1:1
 
 **Big picture:**
-- **conn3c-1** (Upper frame and seat): Joins the two cross axles' ends and gives the control lever a pivot. Later: 8047-step-23 `CONNECT crank-1.axlehole? -> conn3c-1.hole1`.
+- **conn3c-1** (Upper frame and seat): Joins the two cross axles' ends and gives the control lever a pivot.
 - **gear-6** (Front worm drive (knob-2)): Receives the turning from gear-5.
 
 **Review:** conn3c-1 has no arrow. That gear-5 meshes gear-6 is read from the picture.
@@ -708,7 +714,7 @@
 
 **Touches:** side box: crank-1's pin goes into link9-1's end hole; crank-1 drops onto conn3c-1 (cream arrow)
 
-**Exact joins:** crank-1.pin1 into link9-1.hole1 (0.9 hole deep, held stiff by friction); crank-1.axlehole? into conn3c-1.hole1 (not fully shown in booklet)
+**Exact joins:** crank-1.pin1 into link9-1.hole1 (0.9 hole deep, held stiff by friction)
 
 **Who does what:** crank-1 holds link9-1; link9-1 spins on crank-1
 
@@ -720,7 +726,7 @@
 - **link9-1** (Boom (arm) with worm drive): Bent link from the crank to the boom's base pivot (axle3-a4, step 38): holds the boom to the frame as part of its lift linkage. Exact motion not confirmed. Later: 8047-step-38 `CONNECT axle3-a4.axle3 -> link9-1.hole3 TURNS`; 8047-step-38 `DOES link9-1 HOLDS arm`.
 - **crank-1** (Boom (arm) with worm drive): Crank on conn3c-1 in front of the seat: the fixed pivot the boom's lift link swings on.
 
-**Review:** What the lever moves is not confirmed yet.
+**Review:** ERROR found: the crank has only cross holes and a pin, so it can't sit in conn3c-1's round centre hole as labelled. It must sit on an axle end; which one is not visible.
 
 ## 8047-step-24 (page 19) - medium - NEEDS REVIEW
 
@@ -739,7 +745,7 @@
 **Why:** Adds the second side frame. Same part as step 20, mirrored. *Next:* Step 25 pins into it. *Pattern:* mirror the side
 
 **Big picture:**
-- **bent11-B** (Upper frame and seat): Left side frame, mirror of bent11-A. Later: 8047-step-25 `CONNECT pin-25a.pin1 -> bent11-B.hole?`; 8047-step-25 `CONNECT pin-25b.pin1 -> bent11-B.hole?`; 8047-step-25 `CONNECT axle3-25.axle1 -> bent11-B.hole?`; 8047-step-25 `DOES bent11-B HOLDS pin-25a`; 8047-step-25 `DOES bent11-B HOLDS pin-25b`; 8047-step-25 `DOES bent11-B HOLDS axle3-25`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole?`; 8047-step-30 `DOES bent11-B SUPPORTS body`; 8047-step-35 `CONNECT beam9-35.hole? -> bent11-B.hole?`; 8047-step-35 `DOES bent11-B SUPPORTS beam9-35`.
+- **bent11-B** (Upper frame and seat): Left side frame, mirror of bent11-A. Later: 8047-step-25 `CONNECT pin-25a.pin1 -> bent11-B.hole8~ STIFF`; 8047-step-25 `CONNECT pin-25b.pin1 -> bent11-B.hole7~ STIFF`; 8047-step-25 `CONNECT axle3-25.axle1 -> bent11-B.hole3~ TURNS`; 8047-step-25 `DOES bent11-B HOLDS pin-25a`; 8047-step-25 `DOES bent11-B HOLDS pin-25b`; 8047-step-25 `DOES bent11-B HOLDS axle3-25`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole6~ STIFF`; 8047-step-30 `DOES bent11-B SUPPORTS body`; 8047-step-35 `CONNECT beam9-35.hole? -> bent11-B.hole?`; 8047-step-35 `DOES bent11-B SUPPORTS beam9-35`.
 
 **Review:** Which blue pin is used is read from the arrow only.
 
@@ -751,7 +757,7 @@
 
 **Touches:** two pins and a short axle push into bent11-B
 
-**Exact joins:** pin-25a.pin1 into bent11-B.hole? (not fully shown in booklet); pin-25b.pin1 into bent11-B.hole? (not fully shown in booklet); axle3-25.axle1 into bent11-B.hole? (not fully shown in booklet)
+**Exact joins:** pin-25a.pin1 into bent11-B.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-25b.pin1 into bent11-B.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); axle3-25.axle1 into bent11-B.hole3 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** bent11-B holds pin-25a, pin-25b and axle3-25
 
@@ -868,9 +874,9 @@
 **Why:** Starts the yellow back body. Long pins leave a free half to hang the body on the frame. *Next:* The fairings go on in steps 3 and 5. *Pattern:* pins as mounting posts
 
 **Big picture:**
-- **pin-b1** (Engine cover and side covers): Holds fairing-2 and later the left bearing ycon-2. Later: 8047-body-step-05 `CONNECT pin-b1.pin3 -> fairing-2.hole?`; 8047-body-step-05 `DOES pin-b1 HOLDS fairing-2`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole?`; 8047-step-32 `CONNECT ycon-2.hole1 -> pin-b1.pin3 STIFF`; 8047-step-32 `DOES pin-b1 HOLDS ycon-2`.
-- **pin-b2** (Engine cover and side covers): Holds the right bearing ycon-1. Later: 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole?`; 8047-step-32 `CONNECT ycon-1.hole1 -> pin-b2.pin3 STIFF`; 8047-step-32 `DOES pin-b2 HOLDS ycon-1`.
-- **beam9-b** (Engine cover and side covers): Spine of the engine cover. Later: 8047-body-step-02 `CONNECT pin-b3.pin1 -> beam9-b.hole?`; 8047-body-step-02 `CONNECT pin-b4.pin1 -> beam9-b.hole?`; 8047-body-step-02 `CONNECT pin-b5.pin1 -> beam9-b.hole?`.
+- **pin-b1** (Engine cover and side covers): Holds fairing-2 and later the left bearing ycon-2. Later: 8047-body-step-05 `CONNECT pin-b1.pin3 -> fairing-2.hole6~ STIFF`; 8047-body-step-05 `DOES pin-b1 HOLDS fairing-2`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole6~ STIFF`; 8047-step-32 `CONNECT ycon-2.hole1 -> pin-b1.pin3 STIFF`; 8047-step-32 `DOES pin-b1 HOLDS ycon-2`.
+- **pin-b2** (Engine cover and side covers): Holds the right bearing ycon-1. Later: 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole6~ STIFF`; 8047-step-32 `CONNECT ycon-1.hole1 -> pin-b2.pin3 STIFF`; 8047-step-32 `DOES pin-b2 HOLDS ycon-1`.
+- **beam9-b** (Engine cover and side covers): Spine of the engine cover. Later: 8047-body-step-02 `CONNECT pin-b3.pin1 -> beam9-b.hole4~ STIFF`; 8047-body-step-02 `CONNECT pin-b4.pin1 -> beam9-b.hole7~ STIFF`; 8047-body-step-02 `CONNECT pin-b5.pin1 -> beam9-b.hole8~ STIFF`.
 
 ## 8047-body-step-02 (page 24) - medium - NEEDS REVIEW
 
@@ -880,7 +886,7 @@
 
 **Touches:** three pins go into beam9-b; beam3-b goes over one pin (red arrow)
 
-**Exact joins:** pin-b3.pin1 into beam9-b.hole? (not fully shown in booklet); pin-b4.pin1 into beam9-b.hole? (not fully shown in booklet); pin-b5.pin1 into beam9-b.hole? (not fully shown in booklet); pin-b3.pin2 into beam3-b.hole? (not fully shown in booklet)
+**Exact joins:** pin-b3.pin1 into beam9-b.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b4.pin1 into beam9-b.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b5.pin1 into beam9-b.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b3.pin2 into beam3-b.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pin-b3 holds beam3-b
 
@@ -889,10 +895,10 @@
 **Why:** Adds a block and extra pins to the body beam. A 3-beam stiffens and spaces the panel. *Next:* Fairing 1 goes on two pins in step 3. *Pattern:* pins as mounting posts
 
 **Big picture:**
-- **beam3-b** (Engine cover and side covers): Block that carries the body's gear shaft. Later: 8047-body-step-04 `CONNECT axle4s-b.axle2 -> beam3-b.hole?`; 8047-body-step-04 `DOES axle4s-b SPINS_ON beam3-b`.
-- **pin-b3** (Engine cover and side covers): Holds beam3-b and fairing-2. Later: 8047-body-step-05 `CONNECT pin-b3.pin2 -> fairing-2.hole?`; 8047-body-step-05 `DOES pin-b3 HOLDS fairing-2`.
-- **pin-b4** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b4.pin2 -> fairing-1.hole?`; 8047-body-step-03 `DOES pin-b4 HOLDS fairing-1`.
-- **pin-b5** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b5.pin2 -> fairing-1.hole?`; 8047-body-step-03 `DOES pin-b5 HOLDS fairing-1`.
+- **beam3-b** (Engine cover and side covers): Block that carries the body's gear shaft. Later: 8047-body-step-04 `CONNECT axle4s-b.axle2 -> beam3-b.hole3~ TURNS`; 8047-body-step-04 `DOES axle4s-b SPINS_ON beam3-b`.
+- **pin-b3** (Engine cover and side covers): Holds beam3-b and fairing-2. Later: 8047-body-step-05 `CONNECT pin-b3.pin2 -> fairing-2.hole7~ STIFF`; 8047-body-step-05 `DOES pin-b3 HOLDS fairing-2`.
+- **pin-b4** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b4.pin2 -> fairing-1.hole6~ STIFF`; 8047-body-step-03 `DOES pin-b4 HOLDS fairing-1`.
+- **pin-b5** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b5.pin2 -> fairing-1.hole7~ STIFF`; 8047-body-step-03 `DOES pin-b5 HOLDS fairing-1`.
 
 **Review:** Which pin holds beam3-b is read from the arrow only.
 
@@ -904,7 +910,7 @@
 
 **Touches:** fairing-1's two holes go over two pins in beam9-b (red arrows)
 
-**Exact joins:** pin-b4.pin2 into fairing-1.hole? (not fully shown in booklet); pin-b5.pin2 into fairing-1.hole? (not fully shown in booklet)
+**Exact joins:** pin-b4.pin2 into fairing-1.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b5.pin2 into fairing-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pin-b4 and pin-b5 hold fairing-1
 
@@ -923,7 +929,7 @@
 
 **Touches:** side box: gear-7 onto axle4s-b; axle4s-b goes through beam3-b; bush-b on the front end
 
-**Exact joins:** gear-7.axlehole1 into axle4s-b.axle1 (1 hole deep, locked (turn together)); axle4s-b.axle2 into beam3-b.hole? (not fully shown in booklet); bush-b.axlehole1 into axle4s-b.axle4 (1 hole deep, locked (turn together))
+**Exact joins:** gear-7.axlehole1 into axle4s-b.axle1 (1 hole deep, locked (turn together)); axle4s-b.axle2 into beam3-b.hole3 (1 hole deep, turns freely, estimated from the picture); bush-b.axlehole1 into axle4s-b.axle4 (1 hole deep, locked (turn together))
 
 **Who does what:** axle4s-b carries gear-7; bush-b locks axle4s-b in place; axle4s-b spins on beam3-b
 
@@ -946,7 +952,7 @@
 
 **Touches:** fairing-2's holes go over the remaining pin and the pin end
 
-**Exact joins:** pin-b1.pin3 into fairing-2.hole? (not fully shown in booklet); pin-b3.pin2 into fairing-2.hole? (not fully shown in booklet)
+**Exact joins:** pin-b1.pin3 into fairing-2.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b3.pin2 into fairing-2.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pin-b1 and pin-b3 hold fairing-2
 
@@ -967,7 +973,7 @@
 
 **Touches:** GROUP body drops onto the back of the upper frame (cream arrow): its pins go into the side frames' holes
 
-**Exact joins:** pin-b2.pin3 into bent11-A.hole? (not fully shown in booklet); pin-b1.pin3 into bent11-B.hole? (not fully shown in booklet)
+**Exact joins:** pin-b2.pin3 into bent11-A.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-b1.pin3 into bent11-B.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** bent11-A and bent11-B support the body build
 
@@ -1016,7 +1022,7 @@
 **Why:** Gives the back two lined-up axle holes. These connectors turn a pin end into an axle hole. *Next:* A long axle goes through both in step 33. *Pattern:* pin to axle-hole adapter
 
 **Big picture:**
-- **ycon-1** (Back shaft (knob-1)): Bearing for the back shaft on the right body pin. Later: 8047-step-33 `CONNECT axle9-33.axle5 -> ycon-1.axlehole1 LOCKED`; 8047-step-33 `DOES ycon-1 HOLDS axle9-33`; 8047-step-50 `CONNECT pin-50a.pin1 -> ycon-1.hole?`.
+- **ycon-1** (Back shaft (knob-1)): Bearing for the back shaft on the right body pin. Later: 8047-step-33 `CONNECT axle9-33.axle5 -> ycon-1.axlehole1 LOCKED`; 8047-step-33 `DOES ycon-1 HOLDS axle9-33`; 8047-step-50 `CONNECT pin-50a.pin1 -> ycon-1.hole1 STIFF`.
 - **ycon-2** (Back shaft (knob-1)): Bearing for the back shaft on the left body pin. Later: 8047-step-33 `CONNECT axle9-33.axle5 -> ycon-2.axlehole1 LOCKED`; 8047-step-33 `DOES axle9-33 SPINS_ON ycon-2`.
 - **bush-32** (Front worm drive (knob-2)): Stops the worm shaft sliding at the back.
 
@@ -1073,7 +1079,7 @@
 
 **Touches:** side box: hose-1 into hoseconn-1, then hoseconn-1 pins to beam9-35's end; beam9-35 goes onto the left side frame (cream arrow)
 
-**Exact joins:** hose-1.end1 into hoseconn-1.axlehole1 (not fully shown in booklet); pin-35.pin1 into hoseconn-1.hole1 (0.9 hole deep, held stiff by friction); pin-35.pin2 into beam9-35.hole9 (0.9 hole deep, held stiff by friction); beam9-35.hole? into bent11-B.hole? (not fully shown in booklet)
+**Exact joins:** hose-1.end1 into hoseconn-1.axlehole1 (not shown in booklet); pin-35.pin1 into hoseconn-1.hole1 (0.9 hole deep, held stiff by friction); pin-35.pin2 into beam9-35.hole9 (0.9 hole deep, held stiff by friction); beam9-35.hole? into bent11-B.hole? (not shown in booklet)
 
 **Who does what:** hoseconn-1 holds hose-1; pin-35 holds hoseconn-1 to beam9-35; bent11-B supports beam9-35
 
@@ -1097,7 +1103,7 @@
 
 **Touches:** side box 1: pin-36 through beam3-36; side box 2: rod-C/rod-D ring ends onto axle5-36, axle through beam3-36; the unit drops into the frame (cream arrow)
 
-**Exact joins:** pin-36.pin1 into beam3-36.hole1 (0.9 hole deep, held stiff by friction); axle5-36.axle3 into beam3-36.hole? (not fully shown in booklet); rod-C.axlehole1 into axle5-36.axle1 (1 hole deep, locked (turn together)); rod-D.axlehole1 into axle5-36.axle5 (1 hole deep, locked (turn together))
+**Exact joins:** pin-36.pin1 into beam3-36.hole1 (0.9 hole deep, held stiff by friction); axle5-36.axle3 into beam3-36.hole2 (1 hole deep, turns freely, estimated from the picture); rod-C.axlehole1 into axle5-36.axle1 (1 hole deep, locked (turn together)); rod-D.axlehole1 into axle5-36.axle5 (1 hole deep, locked (turn together))
 
 **Who does what:** beam3-36 holds axle5-36; beam3-36 holds pin-36
 
@@ -1110,7 +1116,7 @@
 - **pin-36** (Upper frame and seat): Pins beam3-36 to the frame.
 - **rod-C** (Upper frame and seat): Pin end on top of axle5-36.
 - **rod-D** (Upper frame and seat): Pin end under axle5-36.
-- **beam3-36** (Upper frame and seat): Front post for the arm mount (arm attaches in step 38). Later: 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole?`; 8047-step-38 `DOES beam3-36 SUPPORTS arm`.
+- **beam3-36** (Upper frame and seat): Front post for the arm mount (arm attaches in step 38). Later: 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole1~ TURNS`; 8047-step-38 `DOES beam3-36 SUPPORTS arm`.
 
 **Review:** Which end each long pin goes on is a guess.
 
@@ -1122,7 +1128,7 @@
 
 **Touches:** beam11-37 pushes onto pins along the left side
 
-**Exact joins:** beam11-37.hole? into pin-21a.pin2 (not fully shown in booklet)
+**Exact joins:** beam11-37.hole? into pin-21a.pin2 (not shown in booklet)
 
 **Who does what:** the side pins hold beam11-37
 
@@ -1153,7 +1159,7 @@
 
 **Big picture:**
 - **beam3t-a1** (Boom (arm) with worm drive): Base plate of the boom.
-- **axle3-a1** (Boom (arm) with worm drive): Ties both curved side plates together at the base. Later: 8047-arm-step-02 `CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS`; 8047-arm-step-02 `DOES axle3-a1 HOLDS curve-a1`; 8047-arm-step-03 `CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED`; 8047-arm-step-06 `CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS`; 8047-arm-step-06 `DOES axle3-a1 HOLDS curve-a2`; 8047-arm-step-07 `CONNECT beam3t-a2.hole? -> axle3-a1.axle1`.
+- **axle3-a1** (Boom (arm) with worm drive): Ties both curved side plates together at the base. Later: 8047-arm-step-02 `CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS`; 8047-arm-step-02 `DOES axle3-a1 HOLDS curve-a1`; 8047-arm-step-03 `CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED`; 8047-arm-step-06 `CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS`; 8047-arm-step-06 `DOES axle3-a1 HOLDS curve-a2`; 8047-arm-step-07 `CONNECT beam3t-a2.axlehole1~ -> axle3-a1.axle1 LOCKED`.
 
 ## 8047-arm-step-02 (page 33) - high
 
@@ -1172,7 +1178,7 @@
 **Why:** Gives the arm its curved side. The quarter-ellipse beam gives a strong, nice-looking corner. *Next:* Its mirror goes on in step 6. *Pattern:* curved side plate
 
 **Big picture:**
-- **curve-a1** (Boom (arm) with worm drive): Right curved side of the boom. Later: 8047-arm-step-03 `CONNECT pin34-a.pin1 -> curve-a1.hole?`; 8047-arm-step-07 `DOES beam3t-a2 LOCKS curve-a1`; 8047-step-39 `CONNECT axle3-39.axle1 -> curve-a1.hole?`.
+- **curve-a1** (Boom (arm) with worm drive): Right curved side of the boom. Later: 8047-arm-step-03 `CONNECT pin34-a.pin1 -> curve-a1.hole1~ STIFF`; 8047-arm-step-07 `DOES beam3t-a2 LOCKS curve-a1`; 8047-step-39 `CONNECT axle3-39.axle1 -> curve-a1.axlehole3~ LOCKED`.
 
 ## 8047-arm-step-03 (page 33) - medium - NEEDS REVIEW
 
@@ -1182,7 +1188,7 @@
 
 **Touches:** pin34-a pushes into curve-a1; conn3c-a1 goes over pin34-a and axle3-a1
 
-**Exact joins:** pin34-a.pin1 into curve-a1.hole? (not fully shown in booklet); conn3c-a1.hole1 into pin34-a.pin2 (0.9 hole deep, held stiff by friction); conn3c-a1.axlehole1 into axle3-a1.axle3 (1 hole deep, locked (turn together))
+**Exact joins:** pin34-a.pin1 into curve-a1.hole1 (0.4 hole deep, held stiff by friction, estimated from the picture); conn3c-a1.hole1 into pin34-a.pin2 (0.9 hole deep, held stiff by friction); conn3c-a1.axlehole1 into axle3-a1.axle3 (1 hole deep, locked (turn together))
 
 **Who does what:** pin34-a holds conn3c-a1; axle3-a1 holds conn3c-a1
 
@@ -1226,7 +1232,7 @@
 
 **Touches:** side box: ycon-a onto axle4s-a, then worm-2, then axcon-a, then axle3-a3 into axcon-a; axle2-a in ycon-a's cross hole (red mark); the unit drops into the arm (cream arrow)
 
-**Exact joins:** ycon-a.axlehole1 into axle4s-a.axle1 (1 hole deep, locked (turn together)); axle2-a.axle1 into ycon-a.hole1 (1 hole deep, turns freely); worm-2.axlehole1 into axle4s-a.axle2 (1 hole deep, locked (turn together)); axcon-a.axlehole? into axle4s-a.axle4 (not fully shown in booklet); axle3-a3.axle1 into axcon-a.axlehole? (not fully shown in booklet)
+**Exact joins:** ycon-a.axlehole1 into axle4s-a.axle1 (1 hole deep, locked (turn together)); axle2-a.axle1 into ycon-a.hole1 (1 hole deep, turns freely); worm-2.axlehole1 into axle4s-a.axle2 (1 hole deep, locked (turn together)); axcon-a.axlehole1 into axle4s-a.axle4 (1 hole deep, locked (turn together)); axle3-a3.axle1 into axcon-a.axlehole2 (1 hole deep, locked (turn together))
 
 **Who does what:** axle4s-a carries worm-2; axcon-a holds axle3-a3; ycon-a holds axle4s-a
 
@@ -1240,7 +1246,7 @@
 - **worm-2** (Boom (arm) with worm drive): Boom's self-locking drive.
 - **axcon-a** (Boom (arm) with worm drive): Joins the worm shaft to the axle that carries the front bevel gear.
 - **axle4s-a** (Boom (arm) with worm drive): Worm shaft along the boom.
-- **axle3-a3** (Boom (arm) with worm drive): Extends the worm shaft to the holder at the front. Later: 8047-arm-step-07 `CONNECT holder-a.axlehole? -> axle3-a3.axle3`; 8047-arm-step-07 `DOES axle3-a3 HOLDS holder-a`; 8047-arm-step-09 `CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED`; 8047-arm-step-09 `DOES axle3-a3 CARRIES bevel12-a1`.
+- **axle3-a3** (Boom (arm) with worm drive): Extends the worm shaft to the holder at the front. Later: 8047-arm-step-07 `CONNECT holder-a.axlehole1~ -> axle3-a3.axle3 LOCKED`; 8047-arm-step-07 `DOES axle3-a3 HOLDS holder-a`; 8047-arm-step-09 `CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED`; 8047-arm-step-09 `DOES axle3-a3 CARRIES bevel12-a1`.
 
 **Review:** Which arm holes take the unit is not visible.
 
@@ -1273,7 +1279,7 @@
 
 **Touches:** beam3t-a2 goes on the arm base; holder-a slides onto the shaft end at the front
 
-**Exact joins:** beam3t-a2.hole? into axle3-a1.axle1 (not fully shown in booklet); holder-a.axlehole? into axle3-a3.axle3 (not fully shown in booklet)
+**Exact joins:** beam3t-a2.axlehole1 into axle3-a1.axle1 (0.5 hole deep, locked (turn together), estimated from the picture); holder-a.axlehole1 into axle3-a3.axle3 (0.5 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** the arm holds holder-a; beam3t-a2 locks the arm sides in place
 
@@ -1282,8 +1288,8 @@
 **Why:** Gives the arm a hinge block at its front. The actuator holder has a round body and two hinge plates. *Next:* The gear head goes in it in steps 8-10. *Pattern:* hinge block
 
 **Big picture:**
-- **beam3t-a2** (Boom (arm) with worm drive): Outer plate at the boom base; holds the boom's pivot axle. Later: 8047-arm-step-08 `CONNECT axle3-a4.axle1 -> beam3t-a2.hole?`; 8047-arm-step-08 `DOES beam3t-a2 HOLDS axle3-a4`.
-- **holder-a** (Boom (arm) with worm drive): Hinge block at the boom's front: the boom tip (boom build) mounts on it. Later: 8047-arm-step-09 `CONNECT pin-a9.pin1 -> holder-a.hole?`; 8047-arm-step-09 `DOES holder-a HOLDS pin-a9`; 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole?`; 8047-step-40 `DOES holder-a CARRIES boom`.
+- **beam3t-a2** (Boom (arm) with worm drive): Outer plate at the boom base; holds the boom's pivot axle. Later: 8047-arm-step-08 `CONNECT axle3-a4.axle1 -> beam3t-a2.axlehole2~ LOCKED`; 8047-arm-step-08 `DOES beam3t-a2 HOLDS axle3-a4`.
+- **holder-a** (Boom (arm) with worm drive): Hinge block at the boom's front: the boom tip (boom build) mounts on it. Later: 8047-arm-step-09 `CONNECT pin-a9.pin1 -> holder-a.hole5~ STIFF`; 8047-arm-step-09 `DOES holder-a HOLDS pin-a9`; 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole6~ TURNS`; 8047-step-40 `DOES holder-a CARRIES boom`.
 
 ## 8047-arm-step-08 (page 35) - medium
 
@@ -1293,7 +1299,7 @@
 
 **Touches:** axle3-a4 pushes up through beam3t-a2
 
-**Exact joins:** axle3-a4.axle1 into beam3t-a2.hole? (not fully shown in booklet)
+**Exact joins:** axle3-a4.axle1 into beam3t-a2.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** beam3t-a2 holds axle3-a4
 
@@ -1312,7 +1318,7 @@
 
 **Touches:** pin-a9 into holder-a; bevel12-a1 pushes onto the shaft end
 
-**Exact joins:** pin-a9.pin1 into holder-a.hole? (not fully shown in booklet); bevel12-a1.axlehole1 into axle3-a3.axle3 (0.5 hole deep, locked (turn together))
+**Exact joins:** pin-a9.pin1 into holder-a.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); bevel12-a1.axlehole1 into axle3-a3.axle3 (0.5 hole deep, locked (turn together))
 
 **Who does what:** holder-a holds pin-a9; axle3-a3 carries bevel12-a1
 
@@ -1365,7 +1371,7 @@
 
 **Big picture:**
 - **axle3-a5** (Boom (arm) with worm drive): Input shaft at the boom side.
-- **axle4-a1** (Boom (arm) with worm drive): Input axle; goes into the front post (step 38). Later: 8047-arm-step-12 `CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED`; 8047-arm-step-12 `DOES conn3c-a3 HOLDS axle4-a1`; 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole?`.
+- **axle4-a1** (Boom (arm) with worm drive): Input axle; goes into the front post (step 38). Later: 8047-arm-step-12 `CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED`; 8047-arm-step-12 `DOES conn3c-a3 HOLDS axle4-a1`; 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole1~ TURNS`.
 - **bevel12-a2** (Boom (arm) with worm drive): Second bevel feeding bevel20-a.
 - **gear-8** (Boom (arm) with worm drive): Input gear: takes drive into the boom from the upper frame (mesh not confirmed).
 - **con180-a** (Boom (arm) with worm drive): Joins the two input axles end to end.
@@ -1400,7 +1406,7 @@
 
 **Touches:** model turned; GROUP arm goes in from the front: its pivot axle into the dark gray lever's end, its input shaft into the front post (red arrows)
 
-**Exact joins:** axle3-a4.axle3 into link9-1.hole3 (1 hole deep, turns freely); axle4-a1.axle4 into beam3-36.hole? (not fully shown in booklet)
+**Exact joins:** axle3-a4.axle3 into link9-1.hole3 (1 hole deep, turns freely); axle4-a1.axle4 into beam3-36.hole1 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** link9-1 holds the arm; the front post supports the arm
 
@@ -1421,7 +1427,7 @@
 
 **Touches:** conn3c-39 goes over two front axle ends; axle3-39 pushes into the arm
 
-**Exact joins:** conn3c-39.axlehole1 into axle4-a2.axle4 (1 hole deep, locked (turn together)); conn3c-39.axlehole2 into axle5-36.axle1 (1 hole deep, locked (turn together)); axle3-39.axle1 into curve-a1.hole? (not fully shown in booklet)
+**Exact joins:** conn3c-39.axlehole1 into axle4-a2.axle4 (1 hole deep, locked (turn together)); conn3c-39.axlehole2 into axle5-36.axle1 (1 hole deep, locked (turn together)); axle3-39.axle1 into curve-a1.axlehole3 (0.5 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** conn3c-39 holds the arm's input shaft
 
@@ -1441,7 +1447,7 @@
 
 **Touches:** three red axles push into lthin-1's axle holes
 
-**Exact joins:** axle2-b1.axle1 into lthin-1.hole1 (0.5 hole deep, turns freely); axle2-b2.axle1 into lthin-1.hole? (not fully shown in booklet); axle2-b3.axle1 into lthin-1.hole? (not fully shown in booklet)
+**Exact joins:** axle2-b1.axle1 into lthin-1.hole1 (0.5 hole deep, turns freely); axle2-b2.axle1 into lthin-1.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture); axle2-b3.axle1 into lthin-1.axlehole3 (0.5 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** lthin-1 holds axle2-b1, axle2-b2 and axle2-b3
 
@@ -1463,7 +1469,7 @@
 
 **Touches:** beam3t-b1 and bent9-b go over the red axles; axle2-b4 pushes in (green arrow)
 
-**Exact joins:** axle2-b1.axle2 into bent9-b.hole1 (1 hole deep, turns freely); axle2-b2.axle2 into bent9-b.hole2 (1 hole deep, turns freely); axle2-b3.axle2 into beam3t-b1.hole1 (0.5 hole deep, turns freely); axle2-b4.axle1 into bent9-b.hole? (not fully shown in booklet)
+**Exact joins:** axle2-b1.axle2 into bent9-b.hole1 (1 hole deep, turns freely); axle2-b2.axle2 into bent9-b.hole2 (1 hole deep, turns freely); axle2-b3.axle2 into beam3t-b1.hole1 (0.5 hole deep, turns freely); axle2-b4.axle1 into bent9-b.axlehole2 (1 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** axle2-b1 and axle2-b2 lock bent9-b in place; axle2-b3 holds beam3t-b1
 
@@ -1504,7 +1510,7 @@
 
 **Touches:** lthin-2 closes the stack; axle3-b pushes in at the end
 
-**Exact joins:** lthin-2.hole1 into axle2-b1.axle2 (0.5 hole deep, turns freely); axle3-b.axle1 into lthin-2.hole? (not fully shown in booklet)
+**Exact joins:** lthin-2.hole1 into axle2-b1.axle2 (0.5 hole deep, turns freely); axle3-b.axle1 into lthin-2.hole1 (0.5 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** axle2-b1, axle2-b2 and axle2-b3 lock lthin-2 in place; lthin-2 holds axle3-b
 
@@ -1514,7 +1520,7 @@
 
 **Big picture:**
 - **lthin-2** (Boom tip, stick and push rod): Top plate of the boom-tip joint (sandwich).
-- **axle3-b** (Boom tip, stick and push rod): Pivot the stick hangs on (step 44). Later: 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole?`; 8047-step-44 `CONNECT beam11-44.hole? -> axle3-b.axle3`; 8047-step-44 `DOES beam11-44 SPINS_ON axle3-b`.
+- **axle3-b** (Boom tip, stick and push rod): Pivot the stick hangs on (step 44). Later: 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole6~ TURNS`; 8047-step-44 `CONNECT beam11-44.hole2~ -> axle3-b.axle3 TURNS`; 8047-step-44 `DOES beam11-44 SPINS_ON axle3-b`.
 
 ## 8047-step-40 (page 40) - medium - NEEDS REVIEW
 
@@ -1524,7 +1530,7 @@
 
 **Touches:** GROUP boom drops onto the arm's front (cream arrow); an axle is pushed through the joint (red arrow)
 
-**Exact joins:** axle3-b.axle3 into holder-a.hole? (not fully shown in booklet)
+**Exact joins:** axle3-b.axle3 into holder-a.hole6 (0.5 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** the arm carries the boom
 
@@ -1545,7 +1551,7 @@
 
 **Touches:** thin4-1 goes on the arm side; axle3-41 pushes through it
 
-**Exact joins:** thin4-1.hole? into arm.hole? (not fully shown in booklet); axle3-41.axle1 into thin4-1.hole? (not fully shown in booklet)
+**Exact joins:** thin4-1.hole? into arm.hole? (not shown in booklet); axle3-41.axle1 into thin4-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture)
 
 **Who does what:** thin4-1 holds axle3-41
 
@@ -1555,7 +1561,7 @@
 
 **Big picture:**
 - **thin4-1** (Boom tip, stick and push rod): Mount on the boom for the push-rod hinge.
-- **axle3-41** (Boom tip, stick and push rod): Hinge axle for the push rod. Later: 8047-step-42 `CONNECT thin4-2.hole? -> axle3-41.axle3`; 8047-step-42 `CONNECT angle1-42.hole1 -> axle3-41.axle2 TURNS`; 8047-step-42 `DOES thin4-2 HOLDS axle3-41`; 8047-step-42 `DOES angle1-42 SPINS_ON axle3-41`.
+- **axle3-41** (Boom tip, stick and push rod): Hinge axle for the push rod. Later: 8047-step-42 `CONNECT thin4-2.axlehole1~ -> axle3-41.axle3 LOCKED`; 8047-step-42 `CONNECT angle1-42.hole1 -> axle3-41.axle2 TURNS`; 8047-step-42 `DOES thin4-2 HOLDS axle3-41`; 8047-step-42 `DOES angle1-42 SPINS_ON axle3-41`.
 
 ## 8047-step-42 (page 42) - medium
 
@@ -1565,7 +1571,7 @@
 
 **Touches:** side box: axle3-42 into angle1-42; the unit drops onto the axle end; thin4-2 closes it (red arrows)
 
-**Exact joins:** thin4-2.hole? into axle3-41.axle3 (not fully shown in booklet); axle3-42.axle1 into angle1-42.axlehole1 (1 hole deep, locked (turn together)); angle1-42.hole1 into axle3-41.axle2 (1 hole deep, turns freely)
+**Exact joins:** thin4-2.axlehole1 into axle3-41.axle3 (1 hole deep, locked (turn together), estimated from the picture); axle3-42.axle1 into angle1-42.axlehole1 (1 hole deep, locked (turn together)); angle1-42.hole1 into axle3-41.axle2 (1 hole deep, turns freely)
 
 **Who does what:** thin4-1 and thin4-2 hold axle3-41; angle1-42 spins on axle3-41
 
@@ -1586,7 +1592,7 @@
 
 **Touches:** side box: angle1-43 on one end of axle9-43, angle4-43 on the other, tanpin-1 in angle4-43; rod's back end hinges on axle3-42 (cream arrow)
 
-**Exact joins:** angle1-43.axlehole1 into axle9-43.axle1 (1 hole deep, locked (turn together)); angle4-43.axlehole? into axle9-43.axle9 (not fully shown in booklet); tanpin-1.pin1 into angle4-43.hole1 (0.9 hole deep, turns freely); angle1-43.hole1 into axle3-42.axle3 (1 hole deep, turns freely)
+**Exact joins:** angle1-43.axlehole1 into axle9-43.axle1 (1 hole deep, locked (turn together)); angle4-43.axlehole1 into axle9-43.axle9 (1 hole deep, locked (turn together)); tanpin-1.pin1 into angle4-43.hole1 (0.9 hole deep, turns freely); angle1-43.hole1 into axle3-42.axle3 (1 hole deep, turns freely)
 
 **Who does what:** axle9-43 carries angle1-43 and angle4-43; tanpin-1 spins on angle4-43
 
@@ -1608,7 +1614,7 @@
 
 **Touches:** side box: pin-44 into beam11-44's end, bent2-44 onto it; stick hangs on tanpin-1 and the boom tip axle (red circle)
 
-**Exact joins:** beam11-44.hole1 into tanpin-1.pin3 (0.9 hole deep, turns freely); beam11-44.hole? into axle3-b.axle3 (not fully shown in booklet); pin-44.pin1 into beam11-44.hole11 (0.9 hole deep, held stiff by friction); bent2-44.hole? into pin-44.pin3 (not fully shown in booklet)
+**Exact joins:** beam11-44.hole1 into tanpin-1.pin3 (0.9 hole deep, turns freely); beam11-44.hole2 into axle3-b.axle3 (1 hole deep, turns freely, estimated from the picture); pin-44.pin1 into beam11-44.hole11 (0.9 hole deep, held stiff by friction); bent2-44.hole1 into pin-44.pin3 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** tanpin-1 holds beam11-44; beam11-44 spins on axle3-b; pin-44 holds bent2-44
 
@@ -1617,7 +1623,7 @@
 **Why:** Adds the stick. A long beam gives reach. *Next:* Its pair goes on in step 45; the bucket in step 46. *Pattern:* stick on two pivots
 
 **Big picture:**
-- **beam11-44** (Boom tip, stick and push rod): Right stick beam: reach for the bucket. Later: 8047-step-46 `CONNECT axle55-46.pin1 -> beam11-44.hole?`.
+- **beam11-44** (Boom tip, stick and push rod): Right stick beam: reach for the bucket. Later: 8047-step-46 `CONNECT axle55-46.axle1~ -> beam11-44.hole11~ TURNS`.
 - **bent2-44** (Boom tip, stick and push rod): Spacer/link at the stick's bottom end.
 - **pin-44** (Boom tip, stick and push rod): Joins the two stick beams at the bottom. Later: 8047-step-45 `CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF`; 8047-step-45 `DOES pin-44 LOCKS beam11-45`.
 
@@ -1650,7 +1656,7 @@
 
 **Touches:** axle55-46 goes through beam11-44, bucket-1 and beam11-45
 
-**Exact joins:** axle55-46.pin1 into bucket-1.hole? (not fully shown in booklet); axle55-46.pin1 into beam11-44.hole? (not fully shown in booklet)
+**Exact joins:** axle55-46.axle3 into bucket-1.hole1 (0.4 hole deep, turns freely, estimated from the picture); axle55-46.axle1 into beam11-44.hole11 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** axle55-46 carries bucket-1; bucket-1 spins on axle55-46
 
@@ -1659,7 +1665,7 @@
 **Why:** Adds the bucket. An axle with a stop can't slide out the far side. *Next:* Step 47 links the bucket to link9-b. *Pattern:* bucket on a pivot axle
 
 **Big picture:**
-- **bucket-1** (Bucket): The bucket itself. Later: 8047-step-47 `CONNECT axle3-47.axle2 -> bucket-1.hole?`.
+- **bucket-1** (Bucket): The bucket itself. Later: 8047-step-47 `CONNECT axle3-47.axle2 -> bucket-1.hole3~ TURNS`.
 - **axle55-46** (Bucket): Bucket pivot; its stop end keeps it from sliding out.
 
 ## 8047-step-47 (page 47) - high
@@ -1670,7 +1676,7 @@
 
 **Touches:** side box: halfbush-1 onto axle3-47; axle3-47 goes through link9-b and bucket-1; halfbush-2 closes the other end
 
-**Exact joins:** axle3-47.axle2 into link9-b.hole3 (1 hole deep, turns freely); axle3-47.axle2 into bucket-1.hole? (not fully shown in booklet); halfbush-1.axlehole1 into axle3-47.axle1 (0.5 hole deep, locked (turn together)); halfbush-2.axlehole1 into axle3-47.axle3 (0.5 hole deep, locked (turn together))
+**Exact joins:** axle3-47.axle2 into link9-b.hole3 (1 hole deep, turns freely); axle3-47.axle2 into bucket-1.hole3 (0.4 hole deep, turns freely, estimated from the picture); halfbush-1.axlehole1 into axle3-47.axle1 (0.5 hole deep, locked (turn together)); halfbush-2.axlehole1 into axle3-47.axle3 (0.5 hole deep, locked (turn together))
 
 **Who does what:** axle3-47 holds link9-b to bucket-1; halfbush-1 and halfbush-2 lock axle3-47 in place
 
@@ -1691,7 +1697,7 @@
 
 **Touches:** beam3-48 sits on the frame, pin-48 pushes through
 
-**Exact joins:** pin-48.pin1 into beam3-48.hole? (not fully shown in booklet); pin-48.pin2 into bent11-A.hole? (not fully shown in booklet)
+**Exact joins:** pin-48.pin1 into beam3-48.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); pin-48.pin2 into bent11-A.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** pin-48 holds beam3-48
 
@@ -1711,7 +1717,7 @@
 
 **Touches:** side box: hose-2 into hoseconn-2, pinned to beam9-49's end; beam9-49 goes on the right side (line to page 50)
 
-**Exact joins:** hose-2.end1 into hoseconn-2.axlehole1 (not fully shown in booklet); pin-49.pin1 into hoseconn-2.hole1 (0.9 hole deep, held stiff by friction); pin-49.pin2 into beam9-49.hole9 (0.9 hole deep, held stiff by friction); beam9-49.hole? into bent11-A.hole? (not fully shown in booklet)
+**Exact joins:** hose-2.end1 into hoseconn-2.axlehole1 (not shown in booklet); pin-49.pin1 into hoseconn-2.hole1 (0.9 hole deep, held stiff by friction); pin-49.pin2 into beam9-49.hole9 (0.9 hole deep, held stiff by friction); beam9-49.hole? into bent11-A.hole? (not shown in booklet)
 
 **Who does what:** hoseconn-2 holds hose-2; pin-49 holds hoseconn-2; bent11-A supports beam9-49
 
@@ -1735,7 +1741,7 @@
 
 **Touches:** four pins push into the right side; beam11-50 goes over them
 
-**Exact joins:** pin-50a.pin1 into ycon-1.hole? (not fully shown in booklet); pin-50b.pin1 into beam11-50.hole? (not fully shown in booklet); pin-50c.pin1 into beam11-50.hole? (not fully shown in booklet); pin-50d.pin1 into beam11-50.hole? (not fully shown in booklet)
+**Exact joins:** pin-50a.pin1 into ycon-1.hole1 (0.9 hole deep, held stiff by friction); pin-50b.pin1 into beam11-50.hole? (not shown in booklet); pin-50c.pin1 into beam11-50.hole? (not shown in booklet); pin-50d.pin1 into beam11-50.hole? (not shown in booklet)
 
 **Who does what:** pin-50b, pin-50c and pin-50d hold beam11-50
 
@@ -1792,8 +1798,8 @@
 
 **Big picture:**
 - **beam7-52** (Cab roof and lights): Back roof beam: ties the posts into a frame.
-- **studaxle-1** (Cab roof and lights): Joins the back roof beam to post-L and carries a clear light. Later: 8047-step-53 `CONNECT axcon-53a.axlehole? -> studaxle-1.pin1`; 8047-step-54 `CONNECT light-c1.hole1 -> studaxle-1.pin1 STIFF`.
-- **studaxle-2** (Cab roof and lights): Same on post-R. Later: 8047-step-53 `CONNECT axcon-53b.axlehole? -> studaxle-2.pin1`; 8047-step-54 `CONNECT light-c2.hole1 -> studaxle-2.pin1 STIFF`.
+- **studaxle-1** (Cab roof and lights): Joins the back roof beam to post-L and carries a clear light. Later: 8047-step-53 `CONNECT axcon-53a.axlehole1 -> studaxle-1.axle3 LOCKED`; 8047-step-54 `CONNECT light-c1.hole1 -> studaxle-1.pin1 STIFF`.
+- **studaxle-2** (Cab roof and lights): Same on post-R. Later: 8047-step-53 `CONNECT axcon-53b.axlehole1 -> studaxle-2.axle3 LOCKED`; 8047-step-54 `CONNECT light-c2.hole1 -> studaxle-2.pin1 STIFF`.
 
 ## 8047-step-53 (page 54) - medium
 
@@ -1803,7 +1809,7 @@
 
 **Touches:** side box (make 2): axle3 into an axle connector; each unit goes onto a roof post top (cream arrows)
 
-**Exact joins:** axle3-53a.axle1 into axcon-53a.axlehole? (not fully shown in booklet); axle3-53b.axle1 into axcon-53b.axlehole? (not fully shown in booklet); axcon-53a.axlehole? into studaxle-1.pin1 (not fully shown in booklet); axcon-53b.axlehole? into studaxle-2.pin1 (not fully shown in booklet)
+**Exact joins:** axle3-53a.axle1 into axcon-53a.axlehole2 (1 hole deep, locked (turn together)); axle3-53b.axle1 into axcon-53b.axlehole2 (1 hole deep, locked (turn together)); axcon-53a.axlehole1 into studaxle-1.axle3 (1 hole deep, locked (turn together)); axcon-53b.axlehole1 into studaxle-2.axle3 (1 hole deep, locked (turn together))
 
 **Who does what:** axcon-53a holds axle3-53a; axcon-53b holds axle3-53b
 
@@ -1812,8 +1818,8 @@
 **Why:** Extends the roof forward. Axle connectors join two axles end to end. *Next:* The front roof piece goes on these in step 54. *Pattern:* axle extension
 
 **Big picture:**
-- **axle3-53a** (Cab roof and lights): Extends the roof forward from post-L. Later: 8047-step-54 `CONNECT beam7-54.hole? -> axle3-53a.axle3`; 8047-step-54 `DOES axle3-53a SUPPORTS beam7-54`.
-- **axle3-53b** (Cab roof and lights): Extends the roof forward from post-R. Later: 8047-step-54 `CONNECT beam5-54.hole? -> axle3-53b.axle3`.
+- **axle3-53a** (Cab roof and lights): Extends the roof forward from post-L. Later: 8047-step-54 `CONNECT beam7-54.hole7~ -> axle3-53a.axle3 TURNS`; 8047-step-54 `DOES axle3-53a SUPPORTS beam7-54`.
+- **axle3-53b** (Cab roof and lights): Extends the roof forward from post-R. Later: 8047-step-54 `CONNECT beam5-54.hole3~ -> axle3-53b.axle3 TURNS`.
 - **axcon-53a** (Cab roof and lights): Joins axle3-53a to the post's stud axle.
 - **axcon-53b** (Cab roof and lights): Joins axle3-53b to the post's stud axle.
 
@@ -1821,11 +1827,11 @@
 
 ![8047-step-54](steps/main-54/picture.png)
 
-**New parts:** light-o1 (6141, trans-orange) - orange light on hub-54a's top (side box 3); light-o2 (6141, trans-orange) - orange light on hub-54b's top; light-c1 (6141, trans-clear) - clear light on the front of the roof; light-c2 (6141, trans-clear) - clear light on the front of the roof; hub-54a (87082, light bluish gray) - on beam5-54's end (side box 1); hub-54b (87082, light bluish gray) - on beam5-54's other end (side box 1); beam7-54 (32524, black) - front roof beam (side box 2); beam5-54 (32316, black) - front roof beam (side box 1)
+**New parts:** light-o1 (6141, trans-orange) - orange light, its stud pushed into the roof hub's centre hole; light-o2 (6141, trans-orange) - orange light, its stud pushed into the roof hub's centre hole; light-c1 (6141, trans-clear) - clear light on the front of the roof; light-c2 (6141, trans-clear) - clear light on the front of the roof; hub-54a (87082, light bluish gray) - on beam5-54's end (side box 1); hub-54b (87082, light bluish gray) - on beam5-54's other end (side box 1); beam7-54 (32524, black) - front roof beam (side box 2); beam5-54 (32316, black) - front roof beam (side box 1)
 
-**Touches:** side box 1: hub-54a and hub-54b onto beam5-54's ends; side box 2: beam7-54 over the hubs' other pins; side box 3: lights on the hubs; the roof piece goes onto the forward axles (line to page 56)
+**Touches:** side box 1: hub-54a and hub-54b onto beam5-54's ends; side box 2: beam7-54 over the hubs' other pins; side box 3: the orange lights' studs go into the hubs' centre holes; the clear lights sit on the stud-axle studs; the roof piece goes onto the forward axles (line to page 56)
 
-**Exact joins:** hub-54a.pin1 into beam5-54.hole1 (0.9 hole deep, held stiff by friction); hub-54b.pin1 into beam5-54.hole5 (0.9 hole deep, held stiff by friction); hub-54a.pin2 into beam7-54.hole? (not fully shown in booklet); hub-54b.pin2 into beam7-54.hole? (not fully shown in booklet); light-o1.hole1 into hub-54a.pin? (not fully shown in booklet); light-o2.hole1 into hub-54b.pin? (not fully shown in booklet); light-c1.hole1 into studaxle-1.pin1 (0.2 hole deep, held stiff by friction); light-c2.hole1 into studaxle-2.pin1 (0.2 hole deep, held stiff by friction); beam7-54.hole? into axle3-53a.axle3 (not fully shown in booklet); beam5-54.hole? into axle3-53b.axle3 (not fully shown in booklet)
+**Exact joins:** hub-54a.pin1 into beam5-54.hole1 (0.9 hole deep, held stiff by friction); hub-54b.pin1 into beam5-54.hole5 (0.9 hole deep, held stiff by friction); hub-54a.pin2 into beam7-54.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); hub-54b.pin2 into beam7-54.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); light-o1.pin1 into hub-54a.hole1 (0.2 hole deep, held stiff by friction); light-o2.pin1 into hub-54b.hole1 (0.2 hole deep, held stiff by friction); light-c1.hole1 into studaxle-1.pin1 (0.2 hole deep, held stiff by friction); light-c2.hole1 into studaxle-2.pin1 (0.2 hole deep, held stiff by friction); beam7-54.hole7 into axle3-53a.axle3 (1 hole deep, turns freely, estimated from the picture); beam5-54.hole3 into axle3-53b.axle3 (1 hole deep, turns freely, estimated from the picture)
 
 **Who does what:** hub-54a and hub-54b hold beam5-54 and beam7-54; axle3-53a and axle3-53b support the roof piece
 
@@ -1838,12 +1844,12 @@
 - **light-o2** (Cab roof and lights): Orange beacon.
 - **light-c1** (Cab roof and lights): Clear work light.
 - **light-c2** (Cab roof and lights): Clear work light.
-- **hub-54a** (Cab roof and lights): Joins the two front roof beams; carries an orange beacon; hose-1 clips to it. Later: 8047-step-55 `CONNECT angle5-1.hole1 -> hub-54a.pin?`.
-- **hub-54b** (Cab roof and lights): Same on the other side. Later: 8047-step-55 `CONNECT angle5-2.hole1 -> hub-54b.pin?`.
+- **hub-54a** (Cab roof and lights): Joins the two front roof beams; carries an orange beacon; hose-1 clips to it.
+- **hub-54b** (Cab roof and lights): Same on the other side.
 - **beam7-54** (Cab roof and lights): Front roof beam.
 - **beam5-54** (Cab roof and lights): Front roof beam (shorter).
 
-**Review:** Which hub stud takes which light is a guess; placement picture is on page 56.
+**Review:** Corrected: both pins of each roof hub hold the two roof beams, so the orange lights go into the hub's centre hole by their stud. Exact roof-beam holes are estimates (~).
 
 ## 8047-step-55 (page 57) - medium - NEEDS REVIEW
 
@@ -1853,7 +1859,7 @@
 
 **Touches:** angle5-1 and angle5-2 push onto the hose tops, then their holes clip over the roof hubs' pins
 
-**Exact joins:** hose-1.end2 into angle5-1.axlehole? (not fully shown in booklet); hose-2.end2 into angle5-2.axlehole? (not fully shown in booklet); angle5-1.hole1 into hub-54a.pin? (not fully shown in booklet); angle5-2.hole1 into hub-54b.pin? (not fully shown in booklet)
+**Exact joins:** hose-1.end2 into angle5-1.axlehole? (not shown in booklet); hose-2.end2 into angle5-2.axlehole? (not shown in booklet)
 
 **Who does what:** angle5-1 holds hose-1 to the roof; angle5-2 holds hose-2 to the roof
 
@@ -1865,7 +1871,7 @@
 - **angle5-1** (Cab roof and lights): Clips hose-1 to the roof: the hose becomes a brace.
 - **angle5-2** (Cab roof and lights): Clips hose-2 to the roof.
 
-**Review:** Only one arrow shown.
+**Review:** ERROR found: the hose clips can't go on the roof hub pins (taken by the roof beams) or hub holes (taken by the lights). Where they clip is not visible; hose ends have no 3D data.
 
 ## 8047-step-56 (page 58) - high
 

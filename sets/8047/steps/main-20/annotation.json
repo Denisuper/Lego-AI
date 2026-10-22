@@ -22,12 +22,12 @@
         "catalog_name": "Technic Beam 1 x 11.5 Double Bent Thick",
         "color": "Black",
         "part_match": "confirmed",
-        "position": "right side, along the frame, end hole on the blue pin (red arrow), bent end pointing up at the back",
+        "position": "right side, along the frame; the blue pin goes into its first round hole, next to the cross-shaped end hole; bent end rising at the back",
         "rotation": "fixed"
       }
     ],
     "what_each_new_part_touches": [
-      "bent11-A's end hole goes over the blue pin sticking out under the seat"
+      "bent11-A's first round hole (hole1, next to the cross-hole end) goes over axpin-1's pin end"
     ],
     "who_does_what_to_which": [
       "the blue pin holds bent11-A"
@@ -44,6 +44,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only."
+  "needs_review": false,
+  "review_note": "Corrected with the catalog: the end holes of this double-bent beam are cross-shaped, so a round pin can't go there; the pin sits in the first round hole."
 }

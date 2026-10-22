@@ -37,7 +37,7 @@
         "catalog_name": "Plate Round 1 x 1",
         "color": "Trans-Orange",
         "part_match": "confirmed",
-        "position": "orange light on hub-54a's top (side box 3)",
+        "position": "orange light, its stud pushed into the roof hub's centre hole",
         "rotation": "fixed"
       },
       {
@@ -46,7 +46,7 @@
         "catalog_name": "Plate Round 1 x 1",
         "color": "Trans-Orange",
         "part_match": "confirmed",
-        "position": "orange light on hub-54b's top",
+        "position": "orange light, its stud pushed into the roof hub's centre hole",
         "rotation": "fixed"
       },
       {
@@ -107,7 +107,7 @@
     "what_each_new_part_touches": [
       "side box 1: hub-54a and hub-54b onto beam5-54's ends",
       "side box 2: beam7-54 over the hubs' other pins",
-      "side box 3: lights on the hubs",
+      "side box 3: the orange lights' studs go into the hubs' centre holes; the clear lights sit on the stud-axle studs",
       "the roof piece goes onto the forward axles (line to page 56)"
     ],
     "who_does_what_to_which": [
@@ -127,5 +127,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Which hub stud takes which light is a guess; placement picture is on page 56."
+  "review_note": "Corrected: both pins of each roof hub hold the two roof beams, so the orange lights go into the hub's centre hole by their stud. Exact roof-beam holes are estimates (~)."
 }

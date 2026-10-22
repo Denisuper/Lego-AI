@@ -55,5 +55,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Only one arrow shown."
+  "review_note": "ERROR found: the hose clips can't go on the roof hub pins (taken by the roof beams) or hub holes (taken by the lights). Where they clip is not visible; hose ends have no 3D data."
 }

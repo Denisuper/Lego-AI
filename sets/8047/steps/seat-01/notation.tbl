@@ -1,8 +1,9 @@
 ADD hub4-s 48989 lightgray
 ADD pin-s1 6558 blue
-CONNECT pin-s1.pin1 -> hub4-s.hole?
+CONNECT pin-s1.pin2 -> hub4-s.hole2 STIFF
 ADD hub2-s 87082 lightgray
-CONNECT hub2-s.hole1 -> hub4-s.pin?
+# ERROR fixed: hub2-s's pin goes into hub4-s's top hole (red arrow), not hub2-s's hole onto a pin
+CONNECT hub2-s.pin1 -> hub4-s.hole1 STIFF
 DOES hub4-s HOLDS pin-s1
 DOES hub4-s HOLDS hub2-s
 PATTERN pin_hub_core

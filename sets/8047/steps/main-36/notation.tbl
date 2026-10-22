@@ -6,7 +6,7 @@ ADD rod-C 32054 black
 ADD rod-D 32054 black
 ADD beam3-36 32523 darkgray
 CONNECT pin-36.pin1 -> beam3-36.hole1 STIFF
-CONNECT axle5-36.axle3 -> beam3-36.hole?
+CONNECT axle5-36.axle3 -> beam3-36.hole2~ TURNS
 CONNECT rod-C.axlehole1 -> axle5-36.axle1 LOCKED
 CONNECT rod-D.axlehole1 -> axle5-36.axle5 LOCKED
 DOES beam3-36 HOLDS axle5-36

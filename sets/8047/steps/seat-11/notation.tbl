@@ -1,6 +1,6 @@
 ADD lbeam-s4 32526 darkgray
-CONNECT axle9-s1.axle9 -> lbeam-s4.hole?
-CONNECT axle9-s2.axle9 -> lbeam-s4.hole?
+CONNECT axle9-s1.axle9 -> lbeam-s4.hole5~ TURNS
+CONNECT axle9-s2.axle9 -> lbeam-s4.hole3~ TURNS
 ADD crown-1 3650c lightgray
 CONNECT crown-1.axlehole1 -> axle7-s.axle7 LOCKED
 DOES axle9-s1 CARRIES lbeam-s4

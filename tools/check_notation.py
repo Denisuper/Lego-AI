@@ -2,7 +2,7 @@
 Usage: python tools/check_notation.py sets/8047/training.tbl
 For every CONNECT a.point -> b.point [LOCKED|TURNS|STIFF] [DEPTH n]:
   - both parts were ADDed earlier (or are a GROUP)
-  - each point exists on that part in catalog/connections.csv ('?' = not shown in the booklet, allowed but counted)
+  - each point exists on that part in catalog/connections.csv ('?' = not shown in the booklet, '~' = best reading of the picture; both allowed but counted)
   - the two points fit: pin stop -> round hole, axle stop -> round or cross hole, bar -> small hole
   - LOCKED / TURNS / STIFF matches what the catalog says the pair does
 Also: MESH only between parts with gear teeth."""
@@ -23,6 +23,7 @@ def mode(t1, t2, parts):
     if pair == {"pin stop (round)", "pin hole (round)"}:
         return "TURNS" if any(info.get(p, {}).get("friction") == "frictionless" for p in parts) else "STIFF"
     if pair == {"bar (3.2 mm)", "small hole (3.2 mm bar)"}: return "TURNS"
+    if pair == {"bar (3.2 mm)", "clip"}: return "TURNS"
     return None
 
 def check(path):
@@ -45,6 +46,7 @@ def check(path):
                 if name not in names: problems.append(f"{where}: '{name}' used before it is added"); ends.append(None); continue
                 part = names[name]
                 if "?" in pt: unknown["point not shown in booklet"] += 1; ends.append(None); continue
+                if pt.endswith("~"): unknown["point named from the picture but not confirmed (~)"] += 1; pt = pt[:-1]
                 if pt not in points.get(part, {}):
                     if part not in points: unknown[f"no catalog points for part {part}"] += 1
                     else: problems.append(f"{where}: {name} ({part}) has no point '{pt}'; it has {', '.join(sorted(points[part]))}")

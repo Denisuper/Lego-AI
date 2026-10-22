@@ -1,7 +1,7 @@
 ADD beam3t-a2 6632 yellow
 ADD holder-a 61904 darkgray
-CONNECT beam3t-a2.hole? -> axle3-a1.axle1
-CONNECT holder-a.axlehole? -> axle3-a3.axle3
+CONNECT beam3t-a2.axlehole1~ -> axle3-a1.axle1 LOCKED
+CONNECT holder-a.axlehole1~ -> axle3-a3.axle3 LOCKED
 DOES axle3-a3 HOLDS holder-a
 DOES beam3t-a2 LOCKS curve-a1
 PATTERN hinge_block

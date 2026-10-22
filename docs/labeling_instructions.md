@@ -52,7 +52,7 @@ Before writing `?` or setting `needs_review`, compare with the steps around it:
 3. **Mirrored steps:** a step that mirrors an earlier one (left/right side) uses the same holes, mirrored.
 4. **1:1 callouts:** the life-size drawings in the booklet confirm axle and beam lengths.
 5. **Hole count rule:** for a part that looks the same both ways round, its first join decides which end is hole1; later joins count from there.
-Write in `review_note` which step settled it ("seen in step 9: pin-P is in the 2nd hole"). Only keep `?` if no step around it shows it.
+Write in `review_note` which step settled it ("seen in step 9: pin-P is in the 2nd hole"). Only keep `?` if no step around it shows it. If the pictures point to one hole but you can't be sure (small picture, part at an angle), name it with `~` (`hole3~`): it counts as named and is checked, but stays marked as an estimate.
 
 ## Honesty rules
 - If the picture doesn't show something (no arrow, hidden join), say so, guess only if needed, set `needs_review: true`, and write why in `review_note`.

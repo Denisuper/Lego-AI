@@ -3,7 +3,7 @@ ADD axle3-47 4519 lightgray
 ADD halfbush-1 32123b lightgray
 ADD halfbush-2 32123b lightgray
 CONNECT axle3-47.axle2 -> link9-b.hole3 TURNS
-CONNECT axle3-47.axle2 -> bucket-1.hole?
+CONNECT axle3-47.axle2 -> bucket-1.hole3~ TURNS
 CONNECT halfbush-1.axlehole1 -> axle3-47.axle1 LOCKED
 CONNECT halfbush-2.axlehole1 -> axle3-47.axle3 LOCKED
 DOES axle3-47 HOLDS link9-b

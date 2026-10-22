@@ -3,7 +3,7 @@ ADD bush-b 3713 lightgray
 ADD axle4s-b 87083 darkgray
 ADD gear-7 4019 lightgray
 CONNECT gear-7.axlehole1 -> axle4s-b.axle1 LOCKED
-CONNECT axle4s-b.axle2 -> beam3-b.hole?
+CONNECT axle4s-b.axle2 -> beam3-b.hole3~ TURNS
 CONNECT bush-b.axlehole1 -> axle4s-b.axle4 LOCKED
 DOES axle4s-b CARRIES gear-7
 DOES bush-b LOCKS axle4s-b

@@ -4,7 +4,7 @@ ADD tanpin-1 32556 tan
 ADD angle1-43 32013 darkgray
 ADD angle4-43 32192 darkgray
 CONNECT angle1-43.axlehole1 -> axle9-43.axle1 LOCKED
-CONNECT angle4-43.axlehole? -> axle9-43.axle9
+CONNECT angle4-43.axlehole1 -> axle9-43.axle9 LOCKED
 CONNECT tanpin-1.pin1 -> angle4-43.hole1 TURNS
 CONNECT angle1-43.hole1 -> axle3-42.axle3 TURNS
 DOES axle9-43 CARRIES angle1-43

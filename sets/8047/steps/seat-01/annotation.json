@@ -50,13 +50,13 @@
         "catalog_name": "Technic Pin Connector Hub with 2 Pins",
         "color": "Light Bluish Gray",
         "part_match": "confirmed",
-        "position": "pushed onto hub4-s's side pin (red arrow)",
+        "position": "its pin pushed into hub4-s's top hole (red arrow)",
         "rotation": "fixed"
       }
     ],
     "what_each_new_part_touches": [
-      "pin-s1 goes into the middle hole of hub4-s",
-      "hub2-s's hole slides over one side pin of hub4-s"
+      "pin-s1 goes through hub4-s's middle hole",
+      "hub2-s's pin pushes into hub4-s's top hole"
     ],
     "who_does_what_to_which": [
       "hub4-s holds pin-s1",
@@ -73,6 +73,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "pin-s1 is already in hub4-s in the picture with no arrow; which hole it uses is a guess."
+  "needs_review": false,
+  "review_note": "Corrected: the red arrow shows hub2-s's pin going into hub4-s's top hole (the earlier label had it the other way round). pin-s1 is already in the middle hole with no arrow."
 }

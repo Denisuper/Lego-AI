@@ -4,10 +4,10 @@ ADD axle7-B 44294 lightgray
 ADD axcon-1 59443 black
 ADD axpin-1 43093 blue
 ADD conn3-1 42003 black
-CONNECT axle7-B.axle1 -> axcon-1.axlehole?
-CONNECT axpin-1.axle1 -> axcon-1.axlehole?
-CONNECT axle7-B.axle? -> lbeam-s3.hole?
-CONNECT axle7-B.axle? -> lbeam-s4.hole?
+CONNECT axle7-B.axle1 -> axcon-1.axlehole1 LOCKED
+CONNECT axpin-1.axle1 -> axcon-1.axlehole2 LOCKED
+CONNECT axle7-B.axle2~ -> lbeam-s3.hole6~ TURNS
+CONNECT axle7-B.axle6~ -> lbeam-s4.hole6~ TURNS
 CONNECT conn3-1.axlehole1 -> axle9-s2.axle1 LOCKED
 DOES axcon-1 HOLDS axpin-1
 DOES axle9-s2 CARRIES conn3-1

@@ -71,5 +71,5 @@
   },
   "confidence": "high",
   "needs_review": false,
-  "review_note": "Settled by comparing steps: step 2 shows beam-C's three holes empty; steps 3 and 4 show the pins in the two outer holes (hole1, hole3) with the middle one empty."
+  "review_note": "Settled by comparing steps 2-4. Catalog numbering: rod-B goes into the L-beam's short-arm end, hole4."
 }

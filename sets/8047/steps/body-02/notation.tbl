@@ -3,9 +3,9 @@ ADD beam3-b 32523 darkgray
 ADD pin-b3 2780 black
 ADD pin-b4 2780 black
 ADD pin-b5 2780 black
-CONNECT pin-b3.pin1 -> beam9-b.hole?
-CONNECT pin-b4.pin1 -> beam9-b.hole?
-CONNECT pin-b5.pin1 -> beam9-b.hole?
-CONNECT pin-b3.pin2 -> beam3-b.hole?
+CONNECT pin-b3.pin1 -> beam9-b.hole4~ STIFF
+CONNECT pin-b4.pin1 -> beam9-b.hole7~ STIFF
+CONNECT pin-b5.pin1 -> beam9-b.hole8~ STIFF
+CONNECT pin-b3.pin2 -> beam3-b.hole1~ STIFF
 DOES pin-b3 HOLDS beam3-b
 PATTERN pins_as_mounting_posts

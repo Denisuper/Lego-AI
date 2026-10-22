@@ -84,6 +84,11 @@ def resolve(name, depth=0):
             for go in grid_offsets(pr.get("grid")):
                 for pid, g, secs, q, ax, sy, sl in resolve(pr["ref"], depth + 1):
                     pts.append((pid, g, secs, [a + b + c for a, b, c in zip(app(M, q), pos, go)], app(M, ax), sy, sl))
+        elif kind == "SNAP_CLP":  # clip: grabs a bar (e.g. tread links, hose clips)
+            pos = list(map(float, pr.get("pos", "0 0 0").split())); M = list(map(float, pr.get("ori", " ".join(map(str, I3))).split()))
+            for go in grid_offsets(pr.get("grid")):
+                pts.append((pr.get("id"), "F", f"CLIP {pr.get('radius', '4')} {pr.get('length', '8')}", [a + b for a, b in zip(pos, go)],
+                            app(M, [0, 1, 0]), 1.0, (False, pr.get("center", "false").lower() == "true")))
         elif kind == "SNAP_CYL":
             pos = list(map(float, pr.get("pos", "0 0 0").split())); M = list(map(float, pr.get("ori", " ".join(map(str, I3))).split()))
             ys = 1.0 if pr.get("scale", "").lower() != "yonly" else None  # None: depth follows the parent's Y scale
@@ -137,6 +142,9 @@ MALE = {"axle": ("axle stop (cross)", "axle"), "pin": ("pin stop (round)", "pin"
 def points(g, secs, pos, ax, sy, slide, center):
     """Split one LDCad cylinder into named stops, one per hole-length (20 LDU).
     Female: one point (a hole), depth = its length. Male: walk the profile; every pin/axle run of n holes gives n stops."""
+    if secs.startswith("CLIP"):
+        _, rad, length = secs.split(); u = [c / (norm(ax) or 1) for c in ax]
+        return [("clip", "clip", list(pos), u, float(length), float(rad))]
     sec = sections(secs)
     total = sum(l for *_, l in sec) * sy
     u = [c / (norm(ax) or 1) for c in ax]
@@ -216,10 +224,10 @@ ROLES = [
 
 rows = list(csv.DictReader(open(CAT, encoding="utf-8")))
 conn_rows, found = [], 0
-ORDER = ["pin hole (round)", "axle hole (cross)", "pin stop (round)", "axle stop (cross)", "small hole (3.2 mm bar)", "bar (3.2 mm)", "square hole", "square bar"]
+ORDER = ["pin hole (round)", "axle hole (cross)", "pin stop (round)", "axle stop (cross)", "small hole (3.2 mm bar)", "bar (3.2 mm)", "clip", "square hole", "square bar"]
 PLURAL = {"pin hole (round)": "pin holes (round)", "axle hole (cross)": "axle holes (cross)", "pin stop (round)": "pin stops (round)",
           "axle stop (cross)": "axle stops (cross)", "small hole (3.2 mm bar)": "small holes (3.2 mm bar)", "bar (3.2 mm)": "bars (3.2 mm)",
-          "square hole": "square holes", "square bar": "square bars"}
+          "clip": "clips", "square hole": "square holes", "square bar": "square bars"}
 for r in rows:
     base = r["part_number"]
     tries = [base, re.sub(r"(pr|pat)\d+.*$", "", base), re.sub(r"[a-z]$", "", re.sub(r"(pr|pat)\d+.*$", "", base))]

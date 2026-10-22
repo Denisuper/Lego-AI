@@ -1,7 +1,7 @@
 # No arrows; places read from the picture.
 ADD pin34-a 32002 darkgray
 ADD conn3c-a1 32184 lightgray
-CONNECT pin34-a.pin1 -> curve-a1.hole?
+CONNECT pin34-a.pin1 -> curve-a1.hole1~ STIFF
 CONNECT conn3c-a1.hole1 -> pin34-a.pin2 STIFF
 CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED
 DOES pin34-a HOLDS conn3c-a1

@@ -1,4 +1,4 @@
 ADD lbeam-s1 32526 blue
-CONNECT lbeam-s1.hole? -> hub4-s.pin?
+CONNECT lbeam-s1.hole5~ -> hub4-s.pin1~ STIFF
 DOES hub4-s HOLDS lbeam-s1
 PATTERN l_beam_as_seat

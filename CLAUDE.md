@@ -30,7 +30,7 @@ STEP n | ADD name partnum color | CONNECT a.point -> b.point LOCKED|TURNS|STIFF 
 - Points are the catalog's point names for that part (catalog/connections.csv): hole1..N (round pin holes), axlehole1..N (cross holes), pin1..N and axle1..N (one stop per hole-length of a pin or axle), barhole/bar (3.2 mm). Numbered along the part's longest direction. Plus `teeth` for MESH.
 - `axle-A.axle2 -> beam-C.axlehole1` = the axle's 2nd hole-length sits in the beam's cross hole. Depth = the shorter of the two points (e.g. 0.5 in a half bush); write DEPTH only when pushed in less than that.
 - LOCKED = cross in cross (turn together); TURNS = axle in round hole or frictionless pin; STIFF = friction pin in round hole. tools/check_notation.py checks the point exists, the two fit, and the word is right.
-- `?` = point not shown in the booklet (allowed, counted as open). `#` = note for people, stripped before training.
+- `?` = point not shown in the booklet (open). `~` after a point (`hole3~`) = best reading of the picture, not confirmed: named and checked, counted as estimated. `#` = note for people, stripped before training.
 - Names are permanent (pin-L, gear-3, beam9-X). Only part numbers from the set's parts list.
 - build_set.py turns each step's CONNECT lines into a `joins` list in the annotation (points, point types, depth, fit, exact yes/no).
 
@@ -52,4 +52,4 @@ See docs/detail_spec.md "What to add first" for the detail roadmap. Keep its sta
 2. Write a parser/checker for the build language (names exist before use, parts on the list, counts, verbs).
 3. Check every part in 8047's list exists in the LDraw parts library.
 4. Build the converter: build language -> LDraw .ldr file with STEP markers (for LDCad viewing and LPub3D booklets).
-5. Resolve the open joins in 8047 (160 of 272 joins have a `?` end): re-read each picture, count holes, fill the exact point.
+5. Confirm the ~ estimates and the 11 open joins in 8047; resolve the seat 5/7 contradiction and the step 23 / 55 errors.

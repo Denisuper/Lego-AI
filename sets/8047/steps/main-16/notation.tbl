@@ -1,9 +1,9 @@
 STEP 16
 # model flipped: turntable-O's toothed half now on top
 ADD pinlong-1 6558 blue
-CONNECT pinlong-1.pin1 -> turntable-O.top.hole?
+CONNECT pinlong-1.pin1 -> turntable-O.hole5~ STIFF
 ADD pinlong-2 6558 blue
-CONNECT pinlong-2.pin1 -> turntable-O.top.hole?
+CONNECT pinlong-2.pin1 -> turntable-O.hole8~ STIFF
 DOES turntable-O HOLDS pinlong-1
 DOES turntable-O HOLDS pinlong-2
 PATTERN pins_as_mounting_posts

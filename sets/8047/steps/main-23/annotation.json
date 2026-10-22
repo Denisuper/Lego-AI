@@ -61,5 +61,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "What the lever moves is not confirmed yet."
+  "review_note": "ERROR found: the crank has only cross holes and a pin, so it can't sit in conn3c-1's round centre hole as labelled. It must sit on an axle end; which one is not visible."
 }

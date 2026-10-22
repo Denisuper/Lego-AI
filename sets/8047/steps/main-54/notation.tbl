@@ -11,15 +11,16 @@ ADD beam5-54 32316 black
 # 87082 hubs have two pins: one into each roof beam
 CONNECT hub-54a.pin1 -> beam5-54.hole1 STIFF
 CONNECT hub-54b.pin1 -> beam5-54.hole5 STIFF
-CONNECT hub-54a.pin2 -> beam7-54.hole? STIFF
-CONNECT hub-54b.pin2 -> beam7-54.hole? STIFF
+CONNECT hub-54a.pin2 -> beam7-54.hole1~ STIFF
+CONNECT hub-54b.pin2 -> beam7-54.hole5~ STIFF
 # round 1x1 lights: their bottom hole goes over a pin end or stud
-CONNECT light-o1.hole1 -> hub-54a.pin? STIFF
-CONNECT light-o2.hole1 -> hub-54b.pin? STIFF
+# ERROR fixed: both hub pins hold the roof beams, so the orange light's stud goes into the hub's centre hole
+CONNECT light-o1.pin1 -> hub-54a.hole1 STIFF
+CONNECT light-o2.pin1 -> hub-54b.hole1 STIFF
 CONNECT light-c1.hole1 -> studaxle-1.pin1 STIFF
 CONNECT light-c2.hole1 -> studaxle-2.pin1 STIFF
-CONNECT beam7-54.hole? -> axle3-53a.axle3
-CONNECT beam5-54.hole? -> axle3-53b.axle3
+CONNECT beam7-54.hole7~ -> axle3-53a.axle3 TURNS
+CONNECT beam5-54.hole3~ -> axle3-53b.axle3 TURNS
 DOES hub-54a HOLDS beam5-54
 DOES axle3-53a SUPPORTS beam7-54
 PATTERN roof_with_lights

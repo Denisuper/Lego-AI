@@ -1,7 +1,7 @@
 STEP 48
 ADD pin-48 2780 black
 ADD beam3-48 32523 darkgray
-CONNECT pin-48.pin1 -> beam3-48.hole?
-CONNECT pin-48.pin2 -> bent11-A.hole?
+CONNECT pin-48.pin1 -> beam3-48.hole1~ STIFF
+CONNECT pin-48.pin2 -> bent11-A.hole1~ STIFF
 DOES pin-48 HOLDS beam3-48
 PATTERN short_post

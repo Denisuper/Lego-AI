@@ -8,8 +8,8 @@ ADD axle3-a3 4519 lightgray
 CONNECT ycon-a.axlehole1 -> axle4s-a.axle1 LOCKED
 CONNECT axle2-a.axle1 -> ycon-a.hole1 TURNS
 CONNECT worm-2.axlehole1 -> axle4s-a.axle2 LOCKED
-CONNECT axcon-a.axlehole? -> axle4s-a.axle4
-CONNECT axle3-a3.axle1 -> axcon-a.axlehole?
+CONNECT axcon-a.axlehole1 -> axle4s-a.axle4 LOCKED
+CONNECT axle3-a3.axle1 -> axcon-a.axlehole2 LOCKED
 DOES axle4s-a CARRIES worm-2
 DOES axcon-a HOLDS axle3-a3
 DOES ycon-a HOLDS axle4s-a

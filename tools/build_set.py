@@ -17,12 +17,15 @@ def joins(notation):
         if t[:1] == ["ADD"]: names[t[1]] = t[2]
         if t[:1] != ["CONNECT"]: continue
         (a, _, pa), (b, _, pb) = t[1].partition("."), t[3].partition(".")
+        est = pa.endswith("~") or pb.endswith("~")
+        pa, pb = pa.rstrip("~"), pb.rstrip("~")
         ta, tb = DEPTH.get((names.get(a), pa)), DEPTH.get((names.get(b), pb))
         fit = next((x for x in t[4:] if x in FIT), None)
         out.append({"part": a, "point": pa, "point_type": ta[0] if ta else None,
                     "into": b, "into_point": pb, "into_type": tb[0] if tb else None,
                     "depth_holes": min(ta[1], tb[1]) if ta and tb else None,
-                    "fit": FIT.get(fit), "exact": "?" not in pa + pb and bool(ta and tb)})
+                    "fit": FIT.get(fit), "named": "?" not in pa + pb and bool(ta and tb),
+                    "exact": "?" not in pa + pb and bool(ta and tb) and not est})
     return out
 rows = list(csv.DictReader(open(d + "booklet_map.csv")))
 side = {}  # side build -> its sub-steps' notation, inserted before "ATTACH <build>"
@@ -85,7 +88,7 @@ with open(d + "part_matches.csv", "w", newline="", encoding="utf-8") as f:
                "**New parts:** " + "; ".join(f"{p['name']} ({p['part_number']}, {p['color'].lower()}) - {p['position']}" for p in a["new_parts"]) + "\n",
                "**Touches:** " + "; ".join(a["what_each_new_part_touches"]) + "\n",
                "**Exact joins:** " + ("; ".join(f"{j['part']}.{j['point']} into {j['into']}.{j['into_point']}"
-                                       + (f" ({j['depth_holes']:g} hole deep, {j['fit']})" if j["exact"] and j["fit"] else " (not fully shown in booklet)")
+                                       + (f" ({j['depth_holes']:g} hole deep, {j['fit']}{'' if j['exact'] else ', estimated from the picture'})" if j["named"] and j["fit"] else " (not shown in booklet)")
                                        for j in a["joins"]) or "none") + "\n",
                "**Who does what:** " + "; ".join(a["who_does_what_to_which"]) + "\n",
                "**After:** " + "; ".join(a["where_everything_is_after"]) + "\n",

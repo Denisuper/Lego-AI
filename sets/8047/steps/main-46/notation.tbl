@@ -1,8 +1,8 @@
 STEP 46
 ADD bucket-1 2950 black
 ADD axle55-46 59426 darkgray
-CONNECT axle55-46.pin1 -> bucket-1.hole?
-CONNECT axle55-46.pin1 -> beam11-44.hole?
+CONNECT axle55-46.axle3~ -> bucket-1.hole1~ TURNS
+CONNECT axle55-46.axle1~ -> beam11-44.hole11~ TURNS
 DOES axle55-46 CARRIES bucket-1
 DOES bucket-1 SPINS_ON axle55-46
 PATTERN bucket_on_pivot
