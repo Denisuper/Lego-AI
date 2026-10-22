@@ -1,5 +1,5 @@
 ADD beam3t-a1 6632 yellow
 ADD axle3-a1 4519 lightgray
-CONNECT axle3-a1.end1 -> beam3t-a1.hole1
+CONNECT axle3-a1.axle1 -> beam3t-a1.hole1 TURNS
 DOES beam3t-a1 HOLDS axle3-a1
 PATTERN axle_as_post

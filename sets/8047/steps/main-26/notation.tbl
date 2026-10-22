@@ -4,9 +4,9 @@ ADD axle8s-1 55013 darkgray
 ADD conn3-2 42003 black
 ADD worm-1 4716 lightgray
 ADD bush-26 3713 lightgray
-CONNECT axle8s-1.mid -> conn3-2.axlehole
-CONNECT worm-1.axlehole -> axle8s-1.mid
-CONNECT bush-26.axlehole -> axle8s-1.end2
+CONNECT axle8s-1.axle4 -> conn3-2.axlehole1 LOCKED
+CONNECT worm-1.axlehole1 -> axle8s-1.axle4 LOCKED
+CONNECT bush-26.axlehole1 -> axle8s-1.axle8 LOCKED
 MESH worm-1.teeth crown-1.teeth
 RATIO worm-1 crown-1 1/24
 DOES axle8s-1 CARRIES worm-1

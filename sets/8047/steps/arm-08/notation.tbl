@@ -1,4 +1,4 @@
 ADD axle3-a4 4519 lightgray
-CONNECT axle3-a4.end1 -> beam3t-a2.hole?
+CONNECT axle3-a4.axle1 -> beam3t-a2.hole?
 DOES beam3t-a2 HOLDS axle3-a4
 PATTERN axle_as_pivot

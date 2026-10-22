@@ -13,7 +13,7 @@ You answer in JSON, in exactly the format of the `annotation.json` files in `set
 
 ## The answer: four parts, always in this order
 1. `new_parts` - for each new part: name, part_number, position, rotation.
-2. `what_each_new_part_touches` - which part it joins, and through which hole, pin or axle end.
+2. `what_each_new_part_touches` - which part it joins, and through which hole, pin or axle end. In the step's notation.tbl, write each join with catalog point names (`CONNECT pin-L.pin2 -> beam7-N.hole1 STIFF`): count the holes in the picture. Use `?` only when the picture really doesn't show it.
 3. `who_does_what_to_which` - only these six verbs:
    - holds: keeps another part in place
    - carries: a shaft with something fixed to it

@@ -1,15 +1,15 @@
 STEP 1
 ADD rod-A 32054 black
 ADD axle-A 4519 lightgray
-CONNECT axle-A.end1 -> rod-A.axlehole
+CONNECT axle-A.axle1 -> rod-A.axlehole1 LOCKED
 DOES rod-A HOLDS axle-A
 PATTERN pin_axle_pin_shaft
 
 STEP 2
 ADD beam-C 63869 lightgray
-CONNECT axle-A.mid -> beam-C.axlehole
+CONNECT axle-A.axle2 -> beam-C.axlehole1 LOCKED
 ADD rod-B 32054 black
-CONNECT axle-A.end2 -> rod-B.axlehole
+CONNECT axle-A.axle3 -> rod-B.axlehole1 LOCKED
 DOES axle-A CARRIES beam-C
 DOES rod-B HOLDS axle-A
 DOES rod-A LOCKS beam-C
@@ -18,11 +18,11 @@ PATTERN trapped_connector
 
 STEP 3
 ADD bentbeam-D 32140 black
-CONNECT rod-B.pin -> bentbeam-D.hole1
+CONNECT rod-B.pin2 -> bentbeam-D.hole1 STIFF
 ADD pin-E 2780 black
-CONNECT pin-E.end1 -> beam-C.hole1
+CONNECT pin-E.pin1 -> beam-C.hole1 STIFF
 ADD pin-F 2780 black
-CONNECT pin-F.end1 -> beam-C.hole3
+CONNECT pin-F.pin1 -> beam-C.hole3 STIFF
 DOES rod-B HOLDS bentbeam-D
 DOES beam-C HOLDS pin-E
 DOES beam-C HOLDS pin-F
@@ -30,9 +30,9 @@ PATTERN two_pin_mount
 
 STEP 4
 ADD axle-red-G 32062 red
-CONNECT axle-red-G.end1 -> bentbeam-D.hole5
+CONNECT axle-red-G.axle1 -> bentbeam-D.hole?
 ADD connector-H 6536 black
-CONNECT connector-H.axlehole -> axle-red-G.end2
+CONNECT connector-H.axlehole1 -> axle-red-G.axle2 LOCKED
 DOES bentbeam-D HOLDS axle-red-G
 DOES axle-red-G CARRIES connector-H
 PATTERN change_direction
@@ -41,12 +41,12 @@ STEP 5
 GROUP side-I
   ADD axle-red-J 32062 red
   ADD connector-K 6536 black
-  CONNECT axle-red-J.end1 -> connector-K.axlehole
+CONNECT axle-red-J.axle1 -> connector-K.axlehole1 LOCKED
   ADD bentbeam-I 32140 black
-  CONNECT axle-red-J.end2 -> bentbeam-I.hole5
+CONNECT axle-red-J.axle2 -> bentbeam-I.hole?
 END
 ATTACH side-I
-CONNECT rod-A.pin -> bentbeam-I.hole1
+CONNECT rod-A.pin2 -> bentbeam-I.hole1 STIFF
 DOES connector-K HOLDS axle-red-J
 DOES bentbeam-I HOLDS axle-red-J
 DOES rod-A HOLDS bentbeam-I
@@ -54,17 +54,17 @@ PATTERN mirror_side
 
 STEP 6
 ADD pin-L 2780 black
-CONNECT pin-L.end1 -> connector-H.pinhole
+CONNECT pin-L.pin1 -> connector-H.hole1 STIFF
 ADD pin-M 2780 black
-CONNECT pin-M.end1 -> connector-K.pinhole
+CONNECT pin-M.pin1 -> connector-K.hole1 STIFF
 DOES connector-H HOLDS pin-L
 DOES connector-K HOLDS pin-M
 PATTERN pegs_for_crossbar
 
 STEP 7
 ADD beam7-N 32524 black
-CONNECT pin-L.end2 -> beam7-N.hole?
-CONNECT pin-M.end2 -> beam7-N.hole?
+CONNECT pin-L.pin2 -> beam7-N.hole?
+CONNECT pin-M.pin2 -> beam7-N.hole?
 DOES pin-L LOCKS beam7-N
 DOES pin-M LOCKS beam7-N
 DOES beam7-N SUPPORTS bentbeam-D
@@ -73,8 +73,8 @@ PATTERN closed_box_frame
 
 STEP 8
 ADD turntable-O 50163 darkgray
-CONNECT pin-E.end2 -> turntable-O.base.hole?
-CONNECT pin-F.end2 -> turntable-O.base.hole?
+CONNECT pin-E.pin2 -> turntable-O.base.hole?
+CONNECT pin-F.pin2 -> turntable-O.base.hole?
 DOES pin-E HOLDS turntable-O
 DOES pin-F HOLDS turntable-O
 DOES turntable-O.top SPINS_ON turntable-O.base
@@ -82,12 +82,12 @@ PATTERN turntable_joint
 
 STEP 9
 ADD pin-P 2780 black
-CONNECT pin-P.end1 -> turntable-O.base.hole?
+CONNECT pin-P.pin1 -> turntable-O.base.hole?
 ADD pin-Q 2780 black
-CONNECT pin-Q.end1 -> turntable-O.base.hole?
+CONNECT pin-Q.pin1 -> turntable-O.base.hole?
 ADD beam-R 63869 lightgray
-CONNECT pin-P.end2 -> beam-R.hole1
-CONNECT pin-Q.end2 -> beam-R.hole3
+CONNECT pin-P.pin2 -> beam-R.hole1 STIFF
+CONNECT pin-Q.pin2 -> beam-R.hole3 STIFF
 DOES turntable-O HOLDS pin-P
 DOES turntable-O HOLDS pin-Q
 DOES pin-P LOCKS beam-R
@@ -98,12 +98,12 @@ STEP 10
 GROUP back-T
   ADD axle-S 4519 lightgray
   ADD connector-T 59443 black
-  CONNECT axle-S.end2 -> connector-T.axlehole
+CONNECT axle-S.axle3 -> connector-T.axlehole?
   ADD pin-U 43093 blue
-  CONNECT pin-U.axle -> connector-T.axlehole
+CONNECT pin-U.axle1 -> connector-T.axlehole?
 END
 ATTACH back-T
-CONNECT axle-S.mid -> beam-R.axlehole
+CONNECT axle-S.axle2 -> beam-R.axlehole1 LOCKED
 DOES beam-R HOLDS axle-S
 DOES axle-S CARRIES connector-T
 DOES connector-T HOLDS pin-U
@@ -111,9 +111,9 @@ PATTERN axle_to_pin_end
 
 STEP 11
 ADD connector-W 59443 black
-CONNECT axle-S.end1 -> connector-W.axlehole
+CONNECT axle-S.axle1 -> connector-W.axlehole?
 ADD pin-V 43093 blue
-CONNECT pin-V.axle -> connector-W.axlehole
+CONNECT pin-V.axle1 -> connector-W.axlehole?
 DOES axle-S CARRIES connector-W
 DOES connector-W HOLDS pin-V
 PATTERN mirror_side
@@ -121,11 +121,11 @@ PATTERN mirror_side
 STEP 12
 # not sure which rod is on the left: rod-A and rod-B may be swapped
 ADD beam9-X 40490 black
-CONNECT rod-A.pin -> beam9-X.hole?
-CONNECT pin-V.pin -> beam9-X.hole?
+CONNECT rod-A.pin2 -> beam9-X.hole?
+CONNECT pin-V.pin1 -> beam9-X.hole?
 ADD beam9-Y 40490 black
-CONNECT rod-B.pin -> beam9-Y.hole?
-CONNECT pin-U.pin -> beam9-Y.hole?
+CONNECT rod-B.pin2 -> beam9-Y.hole?
+CONNECT pin-U.pin1 -> beam9-Y.hole?
 DOES rod-A HOLDS beam9-X
 DOES pin-V HOLDS beam9-X
 DOES rod-B HOLDS beam9-Y
@@ -134,13 +134,13 @@ PATTERN side_rails
 
 STEP 13
 ADD tan-1 3749 tan
-CONNECT tan-1.pin -> beam9-X.hole1
+CONNECT tan-1.pin1 -> beam9-X.hole1 TURNS
 ADD tan-2 3749 tan
-CONNECT tan-2.pin -> beam9-X.hole9
+CONNECT tan-2.pin1 -> beam9-X.hole9 TURNS
 ADD tan-3 3749 tan
-CONNECT tan-3.pin -> beam9-Y.hole1
+CONNECT tan-3.pin1 -> beam9-Y.hole1 TURNS
 ADD tan-4 3749 tan
-CONNECT tan-4.pin -> beam9-Y.hole9
+CONNECT tan-4.pin1 -> beam9-Y.hole9 TURNS
 DOES tan-1 SPINS_ON beam9-X
 DOES tan-2 SPINS_ON beam9-X
 DOES tan-3 SPINS_ON beam9-Y
@@ -149,13 +149,13 @@ PATTERN free_spinning_axle
 
 STEP 14
 ADD gear-1 4019 lightgray
-CONNECT gear-1.axlehole -> tan-1.axle
+CONNECT gear-1.axlehole1 -> tan-1.axle1 LOCKED
 ADD gear-2 4019 lightgray
-CONNECT gear-2.axlehole -> tan-2.axle
+CONNECT gear-2.axlehole1 -> tan-2.axle1 LOCKED
 ADD gear-3 4019 lightgray
-CONNECT gear-3.axlehole -> tan-3.axle
+CONNECT gear-3.axlehole1 -> tan-3.axle1 LOCKED
 ADD gear-4 4019 lightgray
-CONNECT gear-4.axlehole -> tan-4.axle
+CONNECT gear-4.axlehole1 -> tan-4.axle1 LOCKED
 DOES tan-1 CARRIES gear-1
 DOES tan-2 CARRIES gear-2
 DOES tan-3 CARRIES gear-3
@@ -192,34 +192,34 @@ ADD tread-25 3873 black
 ADD tread-26 3873 black
 ADD tread-27 3873 black
 ADD tread-28 3873 black
-CONNECT tread-1.end2 -> tread-2.end1
-CONNECT tread-2.end2 -> tread-3.end1
-CONNECT tread-3.end2 -> tread-4.end1
-CONNECT tread-4.end2 -> tread-5.end1
-CONNECT tread-5.end2 -> tread-6.end1
-CONNECT tread-6.end2 -> tread-7.end1
-CONNECT tread-7.end2 -> tread-8.end1
-CONNECT tread-8.end2 -> tread-9.end1
-CONNECT tread-9.end2 -> tread-10.end1
-CONNECT tread-10.end2 -> tread-11.end1
-CONNECT tread-11.end2 -> tread-12.end1
-CONNECT tread-12.end2 -> tread-13.end1
-CONNECT tread-13.end2 -> tread-14.end1
-CONNECT tread-14.end2 -> tread-15.end1
-CONNECT tread-15.end2 -> tread-16.end1
-CONNECT tread-16.end2 -> tread-17.end1
-CONNECT tread-17.end2 -> tread-18.end1
-CONNECT tread-18.end2 -> tread-19.end1
-CONNECT tread-19.end2 -> tread-20.end1
-CONNECT tread-20.end2 -> tread-21.end1
-CONNECT tread-21.end2 -> tread-22.end1
-CONNECT tread-22.end2 -> tread-23.end1
-CONNECT tread-23.end2 -> tread-24.end1
-CONNECT tread-24.end2 -> tread-25.end1
-CONNECT tread-25.end2 -> tread-26.end1
-CONNECT tread-26.end2 -> tread-27.end1
-CONNECT tread-27.end2 -> tread-28.end1
-CONNECT tread-28.end2 -> tread-1.end1
+CONNECT tread-1.end2? -> tread-2.end1?
+CONNECT tread-2.end2? -> tread-3.end1?
+CONNECT tread-3.end2? -> tread-4.end1?
+CONNECT tread-4.end2? -> tread-5.end1?
+CONNECT tread-5.end2? -> tread-6.end1?
+CONNECT tread-6.end2? -> tread-7.end1?
+CONNECT tread-7.end2? -> tread-8.end1?
+CONNECT tread-8.end2? -> tread-9.end1?
+CONNECT tread-9.end2? -> tread-10.end1?
+CONNECT tread-10.end2? -> tread-11.end1?
+CONNECT tread-11.end2? -> tread-12.end1?
+CONNECT tread-12.end2? -> tread-13.end1?
+CONNECT tread-13.end2? -> tread-14.end1?
+CONNECT tread-14.end2? -> tread-15.end1?
+CONNECT tread-15.end2? -> tread-16.end1?
+CONNECT tread-16.end2? -> tread-17.end1?
+CONNECT tread-17.end2? -> tread-18.end1?
+CONNECT tread-18.end2? -> tread-19.end1?
+CONNECT tread-19.end2? -> tread-20.end1?
+CONNECT tread-20.end2? -> tread-21.end1?
+CONNECT tread-21.end2? -> tread-22.end1?
+CONNECT tread-22.end2? -> tread-23.end1?
+CONNECT tread-23.end2? -> tread-24.end1?
+CONNECT tread-24.end2? -> tread-25.end1?
+CONNECT tread-25.end2? -> tread-26.end1?
+CONNECT tread-26.end2? -> tread-27.end1?
+CONNECT tread-27.end2? -> tread-28.end1?
+CONNECT tread-28.end2? -> tread-1.end1?
 END
 ATTACH track-left
 MESH tread-?.teeth gear-1.teeth
@@ -253,34 +253,34 @@ ADD tread-53 3873 black
 ADD tread-54 3873 black
 ADD tread-55 3873 black
 ADD tread-56 3873 black
-CONNECT tread-29.end2 -> tread-30.end1
-CONNECT tread-30.end2 -> tread-31.end1
-CONNECT tread-31.end2 -> tread-32.end1
-CONNECT tread-32.end2 -> tread-33.end1
-CONNECT tread-33.end2 -> tread-34.end1
-CONNECT tread-34.end2 -> tread-35.end1
-CONNECT tread-35.end2 -> tread-36.end1
-CONNECT tread-36.end2 -> tread-37.end1
-CONNECT tread-37.end2 -> tread-38.end1
-CONNECT tread-38.end2 -> tread-39.end1
-CONNECT tread-39.end2 -> tread-40.end1
-CONNECT tread-40.end2 -> tread-41.end1
-CONNECT tread-41.end2 -> tread-42.end1
-CONNECT tread-42.end2 -> tread-43.end1
-CONNECT tread-43.end2 -> tread-44.end1
-CONNECT tread-44.end2 -> tread-45.end1
-CONNECT tread-45.end2 -> tread-46.end1
-CONNECT tread-46.end2 -> tread-47.end1
-CONNECT tread-47.end2 -> tread-48.end1
-CONNECT tread-48.end2 -> tread-49.end1
-CONNECT tread-49.end2 -> tread-50.end1
-CONNECT tread-50.end2 -> tread-51.end1
-CONNECT tread-51.end2 -> tread-52.end1
-CONNECT tread-52.end2 -> tread-53.end1
-CONNECT tread-53.end2 -> tread-54.end1
-CONNECT tread-54.end2 -> tread-55.end1
-CONNECT tread-55.end2 -> tread-56.end1
-CONNECT tread-56.end2 -> tread-29.end1
+CONNECT tread-29.end2? -> tread-30.end1?
+CONNECT tread-30.end2? -> tread-31.end1?
+CONNECT tread-31.end2? -> tread-32.end1?
+CONNECT tread-32.end2? -> tread-33.end1?
+CONNECT tread-33.end2? -> tread-34.end1?
+CONNECT tread-34.end2? -> tread-35.end1?
+CONNECT tread-35.end2? -> tread-36.end1?
+CONNECT tread-36.end2? -> tread-37.end1?
+CONNECT tread-37.end2? -> tread-38.end1?
+CONNECT tread-38.end2? -> tread-39.end1?
+CONNECT tread-39.end2? -> tread-40.end1?
+CONNECT tread-40.end2? -> tread-41.end1?
+CONNECT tread-41.end2? -> tread-42.end1?
+CONNECT tread-42.end2? -> tread-43.end1?
+CONNECT tread-43.end2? -> tread-44.end1?
+CONNECT tread-44.end2? -> tread-45.end1?
+CONNECT tread-45.end2? -> tread-46.end1?
+CONNECT tread-46.end2? -> tread-47.end1?
+CONNECT tread-47.end2? -> tread-48.end1?
+CONNECT tread-48.end2? -> tread-49.end1?
+CONNECT tread-49.end2? -> tread-50.end1?
+CONNECT tread-50.end2? -> tread-51.end1?
+CONNECT tread-51.end2? -> tread-52.end1?
+CONNECT tread-52.end2? -> tread-53.end1?
+CONNECT tread-53.end2? -> tread-54.end1?
+CONNECT tread-54.end2? -> tread-55.end1?
+CONNECT tread-55.end2? -> tread-56.end1?
+CONNECT tread-56.end2? -> tread-29.end1?
 END
 ATTACH track-right
 MESH tread-?.teeth gear-3.teeth
@@ -296,9 +296,9 @@ PATTERN track_loop_on_idlers
 STEP 16
 # model flipped: turntable-O's toothed half now on top
 ADD pinlong-1 6558 blue
-CONNECT pinlong-1.end1 -> turntable-O.top.hole?
+CONNECT pinlong-1.pin1 -> turntable-O.top.hole?
 ADD pinlong-2 6558 blue
-CONNECT pinlong-2.end1 -> turntable-O.top.hole?
+CONNECT pinlong-2.pin1 -> turntable-O.top.hole?
 DOES turntable-O HOLDS pinlong-1
 DOES turntable-O HOLDS pinlong-2
 PATTERN pins_as_mounting_posts
@@ -307,7 +307,7 @@ STEP 17
 GROUP seat
 ADD hub4-s 48989 lightgray
 ADD pin-s1 6558 blue
-CONNECT pin-s1.end1 -> hub4-s.hole?
+CONNECT pin-s1.pin1 -> hub4-s.hole?
 ADD hub2-s 87082 lightgray
 CONNECT hub2-s.hole1 -> hub4-s.pin?
 DOES hub4-s HOLDS pin-s1
@@ -319,68 +319,68 @@ DOES hub4-s HOLDS lbeam-s1
 PATTERN l_beam_as_seat
 ADD beam5-s 32316 lightgray
 ADD pin-s2 6558 blue
-CONNECT pin-s2.end1 -> beam5-s.hole2
+CONNECT pin-s2.pin1 -> beam5-s.hole2 STIFF
 ADD pin-s3 6558 blue
-CONNECT pin-s3.end1 -> beam5-s.hole4
+CONNECT pin-s3.pin1 -> beam5-s.hole4 STIFF
 CONNECT beam5-s.hole? -> lbeam-s1.hole?
 DOES beam5-s HOLDS pin-s2
 DOES beam5-s HOLDS pin-s3
 DOES lbeam-s1 SUPPORTS beam5-s
 PATTERN doubled_upright
 ADD lbeam-s2 32526 blue
-CONNECT pin-s2.end2 -> lbeam-s2.hole?
-CONNECT pin-s3.end2 -> lbeam-s2.hole?
+CONNECT pin-s2.pin3 -> lbeam-s2.hole?
+CONNECT pin-s3.pin3 -> lbeam-s2.hole?
 DOES pin-s2 LOCKS lbeam-s2
 DOES pin-s3 LOCKS lbeam-s2
 PATTERN mirror_side
 ADD block-s 60483 lightgray
-CONNECT block-s.pinhole -> hub4-s.pin?
+CONNECT block-s.hole1 -> hub4-s.pin?
 ADD conn-s1 42003 black
 CONNECT conn-s1.pinhole? -> hub4-s.pin?
 DOES hub4-s HOLDS block-s
 DOES hub4-s HOLDS conn-s1
 PATTERN pin_to_axlehole_adapter
 ADD axle9-s1 60485 lightgray
-CONNECT axle9-s1.mid -> conn-s1.axlehole
+CONNECT axle9-s1.axle5 -> conn-s1.axlehole1 LOCKED
 DOES conn-s1 HOLDS axle9-s1
 PATTERN axle_as_cross_bar
 ADD axle7-s 44294 lightgray
 ADD gear-5 4019 lightgray
-CONNECT gear-5.axlehole -> axle7-s.end1
-CONNECT axle7-s.mid -> block-s.axlehole
+CONNECT gear-5.axlehole1 -> axle7-s.axle1 LOCKED
+CONNECT axle7-s.axle4 -> block-s.axlehole1 LOCKED
 ADD bush-s1 3713 lightgray
-CONNECT bush-s1.axlehole -> axle7-s.end2
+CONNECT bush-s1.axlehole1 -> axle7-s.axle7 LOCKED
 DOES axle7-s CARRIES gear-5
 DOES bush-s1 LOCKS axle7-s
 PATTERN shaft_with_gear_and_bush
 ADD lbeam-s3 32526 darkgray
-CONNECT axle9-s1.end1 -> lbeam-s3.hole?
+CONNECT axle9-s1.axle1 -> lbeam-s3.hole?
 DOES axle9-s1 CARRIES lbeam-s3
 PATTERN l_beam_side_plate
 ADD bush-s2 3713 lightgray
-CONNECT bush-s2.axlehole -> axle9-s1.end1
+CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED
 DOES bush-s2 LOCKS lbeam-s3
 PATTERN bush_as_end_stop
 ADD axle9-s2 60485 lightgray
 ADD bush-s3 3713 lightgray
-CONNECT bush-s3.axlehole -> axle9-s2.mid
-CONNECT axle9-s2.end1 -> lbeam-s3.hole?
+CONNECT bush-s3.axlehole1 -> axle9-s2.axle5 LOCKED
+CONNECT axle9-s2.axle1 -> lbeam-s3.hole?
 DOES lbeam-s3 HOLDS axle9-s2
 DOES bush-s3 LOCKS axle9-s2
 PATTERN two_bar_frame
 ADD lbeam-s4 32526 darkgray
-CONNECT axle9-s1.end2 -> lbeam-s4.hole?
-CONNECT axle9-s2.end2 -> lbeam-s4.hole?
+CONNECT axle9-s1.axle9 -> lbeam-s4.hole?
+CONNECT axle9-s2.axle9 -> lbeam-s4.hole?
 ADD crown-1 3650c lightgray
-CONNECT crown-1.axlehole -> axle7-s.end2
+CONNECT crown-1.axlehole1 -> axle7-s.axle7 LOCKED
 DOES axle9-s1 CARRIES lbeam-s4
 DOES axle9-s2 CARRIES lbeam-s4
 DOES axle7-s CARRIES crown-1
 PATTERN mirror_side
 END
 ATTACH seat
-CONNECT pinlong-1.end2 -> lbeam-s3.hole?
-CONNECT pinlong-2.end2 -> lbeam-s4.hole?
+CONNECT pinlong-1.pin3 -> lbeam-s3.hole?
+CONNECT pinlong-2.pin3 -> lbeam-s4.hole?
 DOES pinlong-1 HOLDS seat
 DOES pinlong-2 HOLDS seat
 DOES turntable-O SUPPORTS seat
@@ -388,8 +388,8 @@ PATTERN upper_body_on_turntable
 
 STEP 18
 # No parts box; reading the arrows as 'push the blue pins in'.
-CONNECT pinlong-1.end2 -> lbeam-s3.hole?
-CONNECT pinlong-2.end2 -> lbeam-s4.hole?
+CONNECT pinlong-1.pin3 -> lbeam-s3.hole?
+CONNECT pinlong-2.pin3 -> lbeam-s4.hole?
 DOES pinlong-1 LOCKS seat
 DOES pinlong-2 LOCKS seat
 PATTERN push_pins_home
@@ -400,10 +400,10 @@ ADD axle7-B 44294 lightgray
 ADD axcon-1 59443 black
 ADD axpin-1 43093 blue
 ADD conn3-1 42003 black
-CONNECT axle7-B.end1 -> axcon-1.axlehole
-CONNECT axpin-1.axle -> axcon-1.axlehole
-CONNECT axle7-B.mid -> seat.hole?
-CONNECT conn3-1.axlehole -> axle7-B.end2
+CONNECT axle7-B.axle1 -> axcon-1.axlehole?
+CONNECT axpin-1.axle1 -> axcon-1.axlehole?
+CONNECT axle7-B.axle4 -> seat.hole?
+CONNECT conn3-1.axlehole1 -> axle7-B.axle7 LOCKED
 DOES axcon-1 HOLDS axpin-1
 DOES axle7-B CARRIES conn3-1
 PATTERN axle_to_pin_shaft
@@ -411,7 +411,7 @@ PATTERN axle_to_pin_shaft
 STEP 20
 # Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
 ADD bent11-A 32009 black
-CONNECT axpin-1.pin -> bent11-A.hole1
+CONNECT axpin-1.pin1 -> bent11-A.hole1 STIFF
 DOES axpin-1 HOLDS bent11-A
 PATTERN bent_beam_side_frame
 
@@ -420,9 +420,9 @@ STEP 21
 ADD pin-21a 2780 black
 ADD pin-21b 2780 black
 ADD axle3-21 4519 lightgray
-CONNECT pin-21a.end1 -> bent11-A.hole?
-CONNECT pin-21b.end1 -> bent11-A.hole?
-CONNECT axle3-21.end1 -> bent11-A.hole?
+CONNECT pin-21a.pin1 -> bent11-A.hole?
+CONNECT pin-21b.pin1 -> bent11-A.hole?
+CONNECT axle3-21.axle1 -> bent11-A.hole?
 DOES bent11-A HOLDS pin-21a
 DOES bent11-A HOLDS pin-21b
 DOES bent11-A HOLDS axle3-21
@@ -432,9 +432,9 @@ STEP 22
 # conn3c-1 has no arrow. That gear-5 meshes gear-6 is read from the picture.
 ADD conn3c-1 32184 lightgray
 ADD gear-6 4019 lightgray
-CONNECT conn3c-1.axlehole1 -> axle9-s1.end2
-CONNECT conn3c-1.axlehole2 -> axle9-s2.end2
-CONNECT gear-6.axlehole -> axle7-B.end2
+CONNECT conn3c-1.axlehole1 -> axle9-s1.axle9 LOCKED
+CONNECT conn3c-1.axlehole2 -> axle9-s2.axle9 LOCKED
+CONNECT gear-6.axlehole1 -> axle7-B.axle7 LOCKED
 MESH gear-5.teeth gear-6.teeth
 RATIO gear-5 gear-6 16/16
 DOES axle7-B CARRIES gear-6
@@ -446,8 +446,8 @@ STEP 23
 # What the lever moves is not confirmed yet.
 ADD link9-1 64451 darkgray
 ADD crank-1 33299a lightgray
-CONNECT crank-1.pin -> link9-1.hole1
-CONNECT crank-1.axlehole -> conn3c-1.pinhole
+CONNECT crank-1.pin1 -> link9-1.hole1 STIFF
+CONNECT crank-1.axlehole? -> conn3c-1.hole1
 DOES crank-1 HOLDS link9-1
 DOES link9-1 SPINS_ON crank-1
 PATTERN crank_and_link_lever
@@ -455,7 +455,7 @@ PATTERN crank_and_link_lever
 STEP 24
 # Which blue pin is used is read from the arrow only.
 ADD bent11-B 32009 black
-CONNECT pinlong-1.end2 -> bent11-B.hole1
+CONNECT pinlong-1.pin3 -> bent11-B.hole1 STIFF
 DOES pinlong-1 HOLDS bent11-B
 PATTERN mirror_side
 
@@ -464,9 +464,9 @@ STEP 25
 ADD pin-25a 2780 black
 ADD pin-25b 2780 black
 ADD axle3-25 4519 lightgray
-CONNECT pin-25a.end1 -> bent11-B.hole?
-CONNECT pin-25b.end1 -> bent11-B.hole?
-CONNECT axle3-25.end1 -> bent11-B.hole?
+CONNECT pin-25a.pin1 -> bent11-B.hole?
+CONNECT pin-25b.pin1 -> bent11-B.hole?
+CONNECT axle3-25.axle1 -> bent11-B.hole?
 DOES bent11-B HOLDS pin-25a
 DOES bent11-B HOLDS pin-25b
 DOES bent11-B HOLDS axle3-25
@@ -478,9 +478,9 @@ ADD axle8s-1 55013 darkgray
 ADD conn3-2 42003 black
 ADD worm-1 4716 lightgray
 ADD bush-26 3713 lightgray
-CONNECT axle8s-1.mid -> conn3-2.axlehole
-CONNECT worm-1.axlehole -> axle8s-1.mid
-CONNECT bush-26.axlehole -> axle8s-1.end2
+CONNECT axle8s-1.axle4 -> conn3-2.axlehole1 LOCKED
+CONNECT worm-1.axlehole1 -> axle8s-1.axle4 LOCKED
+CONNECT bush-26.axlehole1 -> axle8s-1.axle8 LOCKED
 MESH worm-1.teeth crown-1.teeth
 RATIO worm-1 crown-1 1/24
 DOES axle8s-1 CARRIES worm-1
@@ -492,14 +492,14 @@ PATTERN worm_drive
 STEP 27
 # Which axle gets the bush is read from the arrow only.
 ADD bush-27 3713 lightgray
-CONNECT bush-27.axlehole -> axle3-21.end2
+CONNECT bush-27.axlehole1 -> axle3-21.axle3 LOCKED
 DOES bush-27 LOCKS axle3-21
 PATTERN bush_as_end_stop
 
 STEP 28
 # Dashed arrow read as 'push the worm shaft home'.
 ADD bush-28 3713 lightgray
-CONNECT bush-28.axlehole -> axle7-s.end2
+CONNECT bush-28.axlehole1 -> axle7-s.axle7 LOCKED
 DOES bush-28 LOCKS axle7-s
 PATTERN bush_as_end_stop
 
@@ -512,8 +512,8 @@ GROUP body
 ADD pin-b1 6558 blue
 ADD pin-b2 6558 blue
 ADD beam9-b 40490 yellow
-CONNECT pin-b1.end1 -> beam9-b.hole1
-CONNECT pin-b2.end1 -> beam9-b.hole9
+CONNECT pin-b1.pin1 -> beam9-b.hole1 STIFF
+CONNECT pin-b2.pin1 -> beam9-b.hole9 STIFF
 DOES beam9-b HOLDS pin-b1
 DOES beam9-b HOLDS pin-b2
 PATTERN pins_as_mounting_posts
@@ -522,15 +522,15 @@ ADD beam3-b 32523 darkgray
 ADD pin-b3 2780 black
 ADD pin-b4 2780 black
 ADD pin-b5 2780 black
-CONNECT pin-b3.end1 -> beam9-b.hole?
-CONNECT pin-b4.end1 -> beam9-b.hole?
-CONNECT pin-b5.end1 -> beam9-b.hole?
-CONNECT pin-b3.end2 -> beam3-b.hole?
+CONNECT pin-b3.pin1 -> beam9-b.hole?
+CONNECT pin-b4.pin1 -> beam9-b.hole?
+CONNECT pin-b5.pin1 -> beam9-b.hole?
+CONNECT pin-b3.pin2 -> beam3-b.hole?
 DOES pin-b3 HOLDS beam3-b
 PATTERN pins_as_mounting_posts
 ADD fairing-1 87080 yellow
-CONNECT pin-b4.end2 -> fairing-1.hole?
-CONNECT pin-b5.end2 -> fairing-1.hole?
+CONNECT pin-b4.pin2 -> fairing-1.hole?
+CONNECT pin-b5.pin2 -> fairing-1.hole?
 DOES pin-b4 HOLDS fairing-1
 DOES pin-b5 HOLDS fairing-1
 PATTERN panel_on_pins
@@ -538,24 +538,24 @@ PATTERN panel_on_pins
 ADD bush-b 3713 lightgray
 ADD axle4s-b 87083 darkgray
 ADD gear-7 4019 lightgray
-CONNECT gear-7.axlehole -> axle4s-b.end1
-CONNECT axle4s-b.mid -> beam3-b.hole?
-CONNECT bush-b.axlehole -> axle4s-b.end2
+CONNECT gear-7.axlehole1 -> axle4s-b.axle1 LOCKED
+CONNECT axle4s-b.axle2 -> beam3-b.hole?
+CONNECT bush-b.axlehole1 -> axle4s-b.axle4 LOCKED
 DOES axle4s-b CARRIES gear-7
 DOES bush-b LOCKS axle4s-b
 DOES axle4s-b SPINS_ON beam3-b
 PATTERN shaft_with_gear_and_stop
 # Which pins fairing-2 uses is not visible.
 ADD fairing-2 87086 yellow
-CONNECT pin-b1.end2 -> fairing-2.hole?
-CONNECT pin-b3.end2 -> fairing-2.hole?
+CONNECT pin-b1.pin3 -> fairing-2.hole?
+CONNECT pin-b3.pin2 -> fairing-2.hole?
 DOES pin-b1 HOLDS fairing-2
 DOES pin-b3 HOLDS fairing-2
 PATTERN mirror_side
 END
 ATTACH body
-CONNECT pin-b2.end2 -> bent11-A.hole?
-CONNECT pin-b1.end2 -> bent11-B.hole?
+CONNECT pin-b2.pin3 -> bent11-A.hole?
+CONNECT pin-b1.pin3 -> bent11-B.hole?
 DOES bent11-A SUPPORTS body
 DOES bent11-B SUPPORTS body
 PATTERN side_build_attached
@@ -568,9 +568,9 @@ STEP 32
 ADD ycon-1 6536 yellow
 ADD ycon-2 6536 yellow
 ADD bush-32 3713 lightgray
-CONNECT ycon-1.pinhole -> pin-b2.end2
-CONNECT ycon-2.pinhole -> pin-b1.end2
-CONNECT bush-32.axlehole -> axle8s-1.end1
+CONNECT ycon-1.hole1 -> pin-b2.pin3 STIFF
+CONNECT ycon-2.hole1 -> pin-b1.pin3 STIFF
+CONNECT bush-32.axlehole1 -> axle8s-1.axle1 LOCKED
 DOES pin-b2 HOLDS ycon-1
 DOES pin-b1 HOLDS ycon-2
 DOES bush-32 LOCKS axle8s-1
@@ -579,8 +579,8 @@ PATTERN pin_to_axlehole_adapter
 STEP 33
 # Whether it engages gear-7 is not confirmed.
 ADD axle9-33 60485 lightgray
-CONNECT axle9-33.mid -> ycon-1.axlehole
-CONNECT axle9-33.mid -> ycon-2.axlehole
+CONNECT axle9-33.axle5 -> ycon-1.axlehole1 LOCKED
+CONNECT axle9-33.axle5 -> ycon-2.axlehole1 LOCKED
 DOES ycon-1 HOLDS axle9-33
 DOES axle9-33 SPINS_ON ycon-2
 PATTERN long_cross_shaft
@@ -589,8 +589,8 @@ STEP 34
 # Only one arrow; the second knob's shaft is read from the picture. Which knob does what is a guess.
 ADD knob-1 32270 black
 ADD knob-2 32270 black
-CONNECT knob-1.axlehole -> axle9-33.end2
-CONNECT knob-2.axlehole -> axle8s-1.end2
+CONNECT knob-1.axlehole1 -> axle9-33.axle9 LOCKED
+CONNECT knob-2.axlehole1 -> axle8s-1.axle8 LOCKED
 DOES axle9-33 CARRIES knob-1
 DOES axle8s-1 CARRIES knob-2
 PATTERN gear_as_knob
@@ -601,9 +601,9 @@ ADD hoseconn-1 32013 darkgray
 ADD beam9-35 40490 yellow
 ADD hose-1 75c12 black
 ADD pin-35 2780 black
-CONNECT hose-1.end1 -> hoseconn-1.axlehole
-CONNECT pin-35.end1 -> hoseconn-1.pinhole
-CONNECT pin-35.end2 -> beam9-35.hole9
+CONNECT hose-1.end1 -> hoseconn-1.axlehole1
+CONNECT pin-35.pin1 -> hoseconn-1.hole1 STIFF
+CONNECT pin-35.pin2 -> beam9-35.hole9 STIFF
 CONNECT beam9-35.hole? -> bent11-B.hole?
 DOES hoseconn-1 HOLDS hose-1
 DOES pin-35 HOLDS hoseconn-1
@@ -617,10 +617,10 @@ ADD pin-36 2780 black
 ADD rod-C 32054 black
 ADD rod-D 32054 black
 ADD beam3-36 32523 darkgray
-CONNECT pin-36.end1 -> beam3-36.hole1
-CONNECT axle5-36.mid -> beam3-36.hole?
-CONNECT rod-C.axlehole -> axle5-36.end1
-CONNECT rod-D.axlehole -> axle5-36.end2
+CONNECT pin-36.pin1 -> beam3-36.hole1 STIFF
+CONNECT axle5-36.axle3 -> beam3-36.hole?
+CONNECT rod-C.axlehole1 -> axle5-36.axle1 LOCKED
+CONNECT rod-D.axlehole1 -> axle5-36.axle5 LOCKED
 DOES beam3-36 HOLDS axle5-36
 DOES beam3-36 HOLDS pin-36
 PATTERN pin_axle_pin_shaft
@@ -628,7 +628,7 @@ PATTERN pin_axle_pin_shaft
 STEP 37
 # Exact holes not shown.
 ADD beam11-37 32525 yellow
-CONNECT beam11-37.hole? -> pin-21a.end2
+CONNECT beam11-37.hole? -> pin-21a.pin2
 DOES pin-21a HOLDS beam11-37
 PATTERN doubled_side_beam
 
@@ -637,26 +637,26 @@ STEP 38
 GROUP arm
 ADD beam3t-a1 6632 yellow
 ADD axle3-a1 4519 lightgray
-CONNECT axle3-a1.end1 -> beam3t-a1.hole1
+CONNECT axle3-a1.axle1 -> beam3t-a1.hole1 TURNS
 DOES beam3t-a1 HOLDS axle3-a1
 PATTERN axle_as_post
 ADD curve-a1 32250 yellow
-CONNECT axle3-a1.mid -> curve-a1.hole1
+CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a1
 PATTERN curved_side_plate
 # No arrows; places read from the picture.
 ADD pin34-a 32002 darkgray
 ADD conn3c-a1 32184 lightgray
-CONNECT pin34-a.end1 -> curve-a1.hole?
-CONNECT conn3c-a1.pinhole -> pin34-a.end2
-CONNECT conn3c-a1.axlehole1 -> axle3-a1.end2
+CONNECT pin34-a.pin1 -> curve-a1.hole?
+CONNECT conn3c-a1.hole1 -> pin34-a.pin2 STIFF
+CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED
 DOES pin34-a HOLDS conn3c-a1
 PATTERN two_point_mount
 # What gear8-a meshes is not confirmed.
 ADD axle3-a2 4519 lightgray
 ADD gear8-a 3647 darkgray
-CONNECT gear8-a.axlehole -> axle3-a2.mid
-CONNECT axle3-a2.end1 -> conn3c-a1.pinhole
+CONNECT gear8-a.axlehole1 -> axle3-a2.axle2 LOCKED
+CONNECT axle3-a2.axle1 -> conn3c-a1.hole1 TURNS
 DOES axle3-a2 CARRIES gear8-a
 DOES axle3-a2 SPINS_ON conn3c-a1
 PATTERN small_idler_gear
@@ -667,44 +667,44 @@ ADD worm-2 4716 lightgray
 ADD axcon-a 59443 black
 ADD axle4s-a 87083 darkgray
 ADD axle3-a3 4519 lightgray
-CONNECT ycon-a.axlehole -> axle4s-a.end1
-CONNECT axle2-a.mid -> ycon-a.pinhole
-CONNECT worm-2.axlehole -> axle4s-a.mid
-CONNECT axcon-a.axlehole -> axle4s-a.end2
-CONNECT axle3-a3.end1 -> axcon-a.axlehole
+CONNECT ycon-a.axlehole1 -> axle4s-a.axle1 LOCKED
+CONNECT axle2-a.axle1 -> ycon-a.hole1 TURNS
+CONNECT worm-2.axlehole1 -> axle4s-a.axle2 LOCKED
+CONNECT axcon-a.axlehole? -> axle4s-a.axle4
+CONNECT axle3-a3.axle1 -> axcon-a.axlehole?
 DOES axle4s-a CARRIES worm-2
 DOES axcon-a HOLDS axle3-a3
 DOES ycon-a HOLDS axle4s-a
 PATTERN worm_drive
 # No arrow.
 ADD curve-a2 32250 yellow
-CONNECT axle3-a1.end2 -> curve-a2.hole1
+CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a2
 PATTERN mirror_side
 ADD beam3t-a2 6632 yellow
 ADD holder-a 61904 darkgray
-CONNECT beam3t-a2.hole? -> axle3-a1.end1
-CONNECT holder-a.axlehole -> axle3-a3.end2
+CONNECT beam3t-a2.hole? -> axle3-a1.axle1
+CONNECT holder-a.axlehole? -> axle3-a3.axle3
 DOES axle3-a3 HOLDS holder-a
 DOES beam3t-a2 LOCKS curve-a1
 PATTERN hinge_block
 ADD axle3-a4 4519 lightgray
-CONNECT axle3-a4.end1 -> beam3t-a2.hole?
+CONNECT axle3-a4.axle1 -> beam3t-a2.hole?
 DOES beam3t-a2 HOLDS axle3-a4
 PATTERN axle_as_pivot
 # pin-a9 looks long; matched to 2780 because both 32054s are used in step 36.
 ADD pin-a9 2780 black
 ADD bevel12-a1 6589 tan
-CONNECT pin-a9.end1 -> holder-a.hole?
-CONNECT bevel12-a1.axlehole -> axle3-a3.end2
+CONNECT pin-a9.pin1 -> holder-a.hole?
+CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED
 DOES holder-a HOLDS pin-a9
 DOES axle3-a3 CARRIES bevel12-a1
 PATTERN bevel_right_angle
 ADD conn3c-a2 32184 lightgray
 ADD bevel20-a 87407 lightgray
 ADD axle5-a 32073 lightgray
-CONNECT axle5-a.end1 -> conn3c-a2.axlehole1
-CONNECT bevel20-a.pinhole -> pin-a9.end2
+CONNECT axle5-a.axle1 -> conn3c-a2.axlehole1 LOCKED
+CONNECT bevel20-a.hole1 -> pin-a9.pin2 STIFF
 MESH bevel12-a1.teeth bevel20-a.teeth
 RATIO bevel12-a1 bevel20-a 12/20
 DOES bevel12-a1 DRIVES bevel20-a
@@ -717,10 +717,10 @@ ADD axle4-a1 3705 black
 ADD bevel12-a2 6589 tan
 ADD gear-8 4019 lightgray
 ADD con180-a 32034 black
-CONNECT gear-8.axlehole -> axle3-a5.mid
-CONNECT axle3-a5.end1 -> con180-a.axlehole1
-CONNECT bevel12-a2.axlehole -> axle3-a5.end2
-CONNECT axle4-a1.end1 -> con180-a.axlehole2
+CONNECT gear-8.axlehole1 -> axle3-a5.axle2 LOCKED
+CONNECT axle3-a5.axle1 -> con180-a.axlehole1 LOCKED
+CONNECT bevel12-a2.axlehole1 -> axle3-a5.axle3 LOCKED
+CONNECT axle4-a1.axle1 -> con180-a.axlehole2 LOCKED
 MESH bevel12-a2.teeth bevel20-a.teeth
 DOES axle3-a5 CARRIES gear-8
 DOES axle3-a5 CARRIES bevel12-a2
@@ -728,15 +728,15 @@ DOES bevel12-a2 DRIVES bevel20-a
 PATTERN input_shaft
 ADD axle4-a2 3705 black
 ADD conn3c-a3 32184 lightgray
-CONNECT conn3c-a3.axlehole1 -> axle4-a1.end2
-CONNECT conn3c-a3.axlehole2 -> axle4-a2.end1
+CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED
+CONNECT conn3c-a3.axlehole2 -> axle4-a2.axle1 LOCKED
 DOES conn3c-a3 HOLDS axle4-a1
 DOES conn3c-a3 HOLDS axle4-a2
 PATTERN two_point_mount
 END
 ATTACH arm
-CONNECT axle3-a4.end2 -> link9-1.hole3
-CONNECT axle4-a1.end2 -> beam3-36.hole?
+CONNECT axle3-a4.axle3 -> link9-1.hole3 TURNS
+CONNECT axle4-a1.axle4 -> beam3-36.hole?
 DOES link9-1 HOLDS arm
 DOES beam3-36 SUPPORTS arm
 PATTERN side_build_attached
@@ -744,9 +744,9 @@ PATTERN side_build_attached
 STEP 39
 ADD conn3c-39 32184 lightgray
 ADD axle3-39 4519 lightgray
-CONNECT conn3c-39.axlehole1 -> axle4-a2.end2
-CONNECT conn3c-39.axlehole2 -> axle5-36.end1
-CONNECT axle3-39.end1 -> curve-a1.hole?
+CONNECT conn3c-39.axlehole1 -> axle4-a2.axle4 LOCKED
+CONNECT conn3c-39.axlehole2 -> axle5-36.axle1 LOCKED
+CONNECT axle3-39.axle1 -> curve-a1.hole?
 DOES conn3c-39 HOLDS axle4-a2
 PATTERN two_point_mount
 
@@ -757,9 +757,9 @@ ADD lthin-1 32056 yellow
 ADD axle2-b1 32062 red
 ADD axle2-b2 32062 red
 ADD axle2-b3 32062 red
-CONNECT axle2-b1.end1 -> lthin-1.hole1
-CONNECT axle2-b2.end1 -> lthin-1.hole3
-CONNECT axle2-b3.end1 -> lthin-1.hole5
+CONNECT axle2-b1.axle1 -> lthin-1.hole1 TURNS
+CONNECT axle2-b2.axle1 -> lthin-1.hole?
+CONNECT axle2-b3.axle1 -> lthin-1.hole?
 DOES lthin-1 HOLDS axle2-b1
 DOES lthin-1 HOLDS axle2-b2
 DOES lthin-1 HOLDS axle2-b3
@@ -767,30 +767,30 @@ PATTERN stacked_beams_on_short_axles
 ADD beam3t-b1 6632 yellow
 ADD axle2-b4 32062 red
 ADD bent9-b 6629 yellow
-CONNECT axle2-b1.end2 -> bent9-b.hole1
-CONNECT axle2-b2.end2 -> bent9-b.hole2
-CONNECT axle2-b3.end2 -> beam3t-b1.hole1
-CONNECT axle2-b4.end1 -> bent9-b.hole?
+CONNECT axle2-b1.axle2 -> bent9-b.hole1 TURNS
+CONNECT axle2-b2.axle2 -> bent9-b.hole2 TURNS
+CONNECT axle2-b3.axle2 -> beam3t-b1.hole1 TURNS
+CONNECT axle2-b4.axle1 -> bent9-b.hole?
 DOES axle2-b1 LOCKS bent9-b
 DOES axle2-b3 HOLDS beam3t-b1
 PATTERN stacked_beams_on_short_axles
 ADD beam3t-b2 6632 yellow
 ADD link9-b 64451 darkgray
-CONNECT beam3t-b2.hole1 -> axle2-b4.end2
-CONNECT link9-b.hole1 -> axle2-b1.end1
+CONNECT beam3t-b2.hole1 -> axle2-b4.axle2 TURNS
+CONNECT link9-b.hole1 -> axle2-b1.axle1 TURNS
 DOES axle2-b4 HOLDS beam3t-b2
 DOES link9-b SPINS_ON axle2-b1
 PATTERN link_to_tool
 ADD lthin-2 32056 yellow
 ADD axle3-b 4519 lightgray
-CONNECT lthin-2.hole1 -> axle2-b1.end2
-CONNECT axle3-b.end1 -> lthin-2.hole?
+CONNECT lthin-2.hole1 -> axle2-b1.axle2 TURNS
+CONNECT axle3-b.axle1 -> lthin-2.hole?
 DOES axle2-b1 LOCKS lthin-2
 DOES lthin-2 HOLDS axle3-b
 PATTERN sandwich_joint
 END
 ATTACH boom
-CONNECT axle3-b.end2 -> holder-a.hole?
+CONNECT axle3-b.axle3 -> holder-a.hole?
 DOES holder-a CARRIES boom
 PATTERN side_build_attached
 
@@ -798,7 +798,7 @@ STEP 41
 ADD thin4-1 2825 black
 ADD axle3-41 4519 lightgray
 CONNECT thin4-1.hole? -> arm.hole?
-CONNECT axle3-41.end1 -> thin4-1.hole?
+CONNECT axle3-41.axle1 -> thin4-1.hole?
 DOES thin4-1 HOLDS axle3-41
 PATTERN rod_mount
 
@@ -806,9 +806,9 @@ STEP 42
 ADD thin4-2 2825 black
 ADD angle1-42 32013 darkgray
 ADD axle3-42 4519 lightgray
-CONNECT thin4-2.hole? -> axle3-41.end2
-CONNECT axle3-42.end1 -> angle1-42.axlehole
-CONNECT angle1-42.pinhole -> axle3-41.mid
+CONNECT thin4-2.hole? -> axle3-41.axle3
+CONNECT axle3-42.axle1 -> angle1-42.axlehole1 LOCKED
+CONNECT angle1-42.hole1 -> axle3-41.axle2 TURNS
 DOES thin4-2 HOLDS axle3-41
 DOES angle1-42 SPINS_ON axle3-41
 PATTERN axle_hinge
@@ -818,10 +818,10 @@ ADD axle9-43 60485 lightgray
 ADD tanpin-1 32556 tan
 ADD angle1-43 32013 darkgray
 ADD angle4-43 32192 darkgray
-CONNECT angle1-43.axlehole -> axle9-43.end1
-CONNECT angle4-43.axlehole -> axle9-43.end2
-CONNECT tanpin-1.end1 -> angle4-43.pinhole
-CONNECT angle1-43.pinhole -> axle3-42.end2
+CONNECT angle1-43.axlehole1 -> axle9-43.axle1 LOCKED
+CONNECT angle4-43.axlehole? -> axle9-43.axle9
+CONNECT tanpin-1.pin1 -> angle4-43.hole1 TURNS
+CONNECT angle1-43.hole1 -> axle3-42.axle3 TURNS
 DOES axle9-43 CARRIES angle1-43
 DOES axle9-43 CARRIES angle4-43
 DOES tanpin-1 SPINS_ON angle4-43
@@ -832,10 +832,10 @@ STEP 44
 ADD beam11-44 32525 yellow
 ADD bent2-44 44809 lightgray
 ADD pin-44 6558 blue
-CONNECT beam11-44.hole1 -> tanpin-1.end2
-CONNECT beam11-44.hole? -> axle3-b.end2
-CONNECT pin-44.end1 -> beam11-44.hole11
-CONNECT bent2-44.hole? -> pin-44.end2
+CONNECT beam11-44.hole1 -> tanpin-1.pin3 TURNS
+CONNECT beam11-44.hole? -> axle3-b.axle3
+CONNECT pin-44.pin1 -> beam11-44.hole11 STIFF
+CONNECT bent2-44.hole? -> pin-44.pin3
 DOES tanpin-1 HOLDS beam11-44
 DOES beam11-44 SPINS_ON axle3-b
 DOES pin-44 HOLDS bent2-44
@@ -843,16 +843,16 @@ PATTERN stick_on_two_pivots
 
 STEP 45
 ADD beam11-45 32525 yellow
-CONNECT beam11-45.hole1 -> tanpin-1.end2
-CONNECT beam11-45.hole11 -> pin-44.end2
+CONNECT beam11-45.hole1 -> tanpin-1.pin3 TURNS
+CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF
 DOES pin-44 LOCKS beam11-45
 PATTERN doubled_beam
 
 STEP 46
 ADD bucket-1 2950 black
 ADD axle55-46 59426 darkgray
-CONNECT axle55-46.mid -> bucket-1.hole?
-CONNECT axle55-46.end1 -> beam11-44.hole?
+CONNECT axle55-46.pin1 -> bucket-1.hole?
+CONNECT axle55-46.pin1 -> beam11-44.hole?
 DOES axle55-46 CARRIES bucket-1
 DOES bucket-1 SPINS_ON axle55-46
 PATTERN bucket_on_pivot
@@ -861,10 +861,10 @@ STEP 47
 ADD axle3-47 4519 lightgray
 ADD halfbush-1 32123b lightgray
 ADD halfbush-2 32123b lightgray
-CONNECT axle3-47.mid -> link9-b.hole3
-CONNECT axle3-47.mid -> bucket-1.hole?
-CONNECT halfbush-1.axlehole -> axle3-47.end1
-CONNECT halfbush-2.axlehole -> axle3-47.end2
+CONNECT axle3-47.axle2 -> link9-b.hole3 TURNS
+CONNECT axle3-47.axle2 -> bucket-1.hole?
+CONNECT halfbush-1.axlehole1 -> axle3-47.axle1 LOCKED
+CONNECT halfbush-2.axlehole1 -> axle3-47.axle3 LOCKED
 DOES axle3-47 HOLDS link9-b
 DOES halfbush-1 LOCKS axle3-47
 DOES halfbush-2 LOCKS axle3-47
@@ -873,8 +873,8 @@ PATTERN two_bar_linkage
 STEP 48
 ADD pin-48 2780 black
 ADD beam3-48 32523 darkgray
-CONNECT pin-48.end1 -> beam3-48.hole?
-CONNECT pin-48.end2 -> bent11-A.hole?
+CONNECT pin-48.pin1 -> beam3-48.hole?
+CONNECT pin-48.pin2 -> bent11-A.hole?
 DOES pin-48 HOLDS beam3-48
 PATTERN short_post
 
@@ -884,9 +884,9 @@ ADD beam9-49 40490 yellow
 ADD hose-2 75c12 black
 ADD pin-49 2780 black
 ADD hoseconn-2 32013 darkgray
-CONNECT hose-2.end1 -> hoseconn-2.axlehole
-CONNECT pin-49.end1 -> hoseconn-2.pinhole
-CONNECT pin-49.end2 -> beam9-49.hole9
+CONNECT hose-2.end1 -> hoseconn-2.axlehole1
+CONNECT pin-49.pin1 -> hoseconn-2.hole1 STIFF
+CONNECT pin-49.pin2 -> beam9-49.hole9 STIFF
 CONNECT beam9-49.hole? -> bent11-A.hole?
 DOES hoseconn-2 HOLDS hose-2
 DOES pin-49 HOLDS hoseconn-2
@@ -900,10 +900,10 @@ ADD pin-50a 2780 black
 ADD pin-50b 2780 black
 ADD pin-50c 2780 black
 ADD pin-50d 2780 black
-CONNECT pin-50a.end1 -> ycon-1.hole?
-CONNECT pin-50b.end1 -> beam11-50.hole?
-CONNECT pin-50c.end1 -> beam11-50.hole?
-CONNECT pin-50d.end1 -> beam11-50.hole?
+CONNECT pin-50a.pin1 -> ycon-1.hole?
+CONNECT pin-50b.pin1 -> beam11-50.hole?
+CONNECT pin-50c.pin1 -> beam11-50.hole?
+CONNECT pin-50d.pin1 -> beam11-50.hole?
 DOES pin-50b HOLDS beam11-50
 DOES pin-50c HOLDS beam11-50
 DOES pin-50d HOLDS beam11-50
@@ -913,8 +913,8 @@ STEP 51
 # No arrows.
 ADD post-L 40490 black
 ADD post-R 40490 black
-CONNECT post-R.hole1 -> pin-50a.end2
-CONNECT post-L.hole1 -> pin-25a.end2
+CONNECT post-R.hole1 -> pin-50a.pin2 STIFF
+CONNECT post-L.hole1 -> pin-25a.pin2 STIFF
 DOES pin-50a HOLDS post-R
 DOES pin-25a HOLDS post-L
 PATTERN upright_posts
@@ -923,10 +923,10 @@ STEP 52
 ADD beam7-52 32524 black
 ADD studaxle-1 6587 darktan
 ADD studaxle-2 6587 darktan
-CONNECT studaxle-1.end1 -> post-L.hole9
-CONNECT studaxle-2.end1 -> post-R.hole9
-CONNECT beam7-52.hole1 -> studaxle-1.end2
-CONNECT beam7-52.hole7 -> studaxle-2.end2
+CONNECT studaxle-1.pin1 -> post-L.hole9 STIFF
+CONNECT studaxle-2.pin1 -> post-R.hole9 STIFF
+CONNECT beam7-52.hole1 -> studaxle-1.pin1 STIFF
+CONNECT beam7-52.hole7 -> studaxle-2.pin1 STIFF
 DOES studaxle-1 HOLDS beam7-52
 DOES beam7-52 LOCKS post-L
 PATTERN closed_frame
@@ -936,10 +936,10 @@ ADD axle3-53a 4519 lightgray
 ADD axle3-53b 4519 lightgray
 ADD axcon-53a 59443 black
 ADD axcon-53b 59443 black
-CONNECT axle3-53a.end1 -> axcon-53a.axlehole
-CONNECT axle3-53b.end1 -> axcon-53b.axlehole
-CONNECT axcon-53a.axlehole -> studaxle-1.end2
-CONNECT axcon-53b.axlehole -> studaxle-2.end2
+CONNECT axle3-53a.axle1 -> axcon-53a.axlehole?
+CONNECT axle3-53b.axle1 -> axcon-53b.axlehole?
+CONNECT axcon-53a.axlehole? -> studaxle-1.pin1
+CONNECT axcon-53b.axlehole? -> studaxle-2.pin1
 DOES axcon-53a HOLDS axle3-53a
 DOES axcon-53b HOLDS axle3-53b
 PATTERN axle_extension
@@ -954,15 +954,18 @@ ADD hub-54a 87082 lightgray
 ADD hub-54b 87082 lightgray
 ADD beam7-54 32524 black
 ADD beam5-54 32316 black
-CONNECT hub-54a.hole -> beam5-54.hole1
-CONNECT hub-54b.hole -> beam5-54.hole5
-CONNECT beam7-54.hole? -> hub-54a.pin?
-CONNECT light-o1.stud -> hub-54a.stud
-CONNECT light-o2.stud -> hub-54b.stud
-CONNECT light-c1.stud -> studaxle-1.stud
-CONNECT light-c2.stud -> studaxle-2.stud
-CONNECT beam7-54.hole? -> axle3-53a.end2
-CONNECT beam5-54.hole? -> axle3-53b.end2
+# 87082 hubs have two pins: one into each roof beam
+CONNECT hub-54a.pin1 -> beam5-54.hole1 STIFF
+CONNECT hub-54b.pin1 -> beam5-54.hole5 STIFF
+CONNECT hub-54a.pin2 -> beam7-54.hole? STIFF
+CONNECT hub-54b.pin2 -> beam7-54.hole? STIFF
+# round 1x1 lights: their bottom hole goes over a pin end or stud
+CONNECT light-o1.hole1 -> hub-54a.pin? STIFF
+CONNECT light-o2.hole1 -> hub-54b.pin? STIFF
+CONNECT light-c1.hole1 -> studaxle-1.pin1 STIFF
+CONNECT light-c2.hole1 -> studaxle-2.pin1 STIFF
+CONNECT beam7-54.hole? -> axle3-53a.axle3
+CONNECT beam5-54.hole? -> axle3-53b.axle3
 DOES hub-54a HOLDS beam5-54
 DOES axle3-53a SUPPORTS beam7-54
 PATTERN roof_with_lights
@@ -971,10 +974,10 @@ STEP 55
 # Only one arrow shown.
 ADD angle5-1 32015 black
 ADD angle5-2 32015 black
-CONNECT hose-1.end2 -> angle5-1.axlehole
-CONNECT hose-2.end2 -> angle5-2.axlehole
-CONNECT angle5-1.pinhole -> hub-54a.pin?
-CONNECT angle5-2.pinhole -> hub-54b.pin?
+CONNECT hose-1.end2 -> angle5-1.axlehole?
+CONNECT hose-2.end2 -> angle5-2.axlehole?
+CONNECT angle5-1.hole1 -> hub-54a.pin?
+CONNECT angle5-2.hole1 -> hub-54b.pin?
 DOES angle5-1 HOLDS hose-1
 DOES angle5-2 HOLDS hose-2
 PATTERN hose_as_brace

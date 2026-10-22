@@ -1,8 +1,8 @@
 ADD pin-b1 6558 blue
 ADD pin-b2 6558 blue
 ADD beam9-b 40490 yellow
-CONNECT pin-b1.end1 -> beam9-b.hole1
-CONNECT pin-b2.end1 -> beam9-b.hole9
+CONNECT pin-b1.pin1 -> beam9-b.hole1 STIFF
+CONNECT pin-b2.pin1 -> beam9-b.hole9 STIFF
 DOES beam9-b HOLDS pin-b1
 DOES beam9-b HOLDS pin-b2
 PATTERN pins_as_mounting_posts

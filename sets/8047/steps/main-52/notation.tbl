@@ -2,10 +2,10 @@ STEP 52
 ADD beam7-52 32524 black
 ADD studaxle-1 6587 darktan
 ADD studaxle-2 6587 darktan
-CONNECT studaxle-1.end1 -> post-L.hole9
-CONNECT studaxle-2.end1 -> post-R.hole9
-CONNECT beam7-52.hole1 -> studaxle-1.end2
-CONNECT beam7-52.hole7 -> studaxle-2.end2
+CONNECT studaxle-1.pin1 -> post-L.hole9 STIFF
+CONNECT studaxle-2.pin1 -> post-R.hole9 STIFF
+CONNECT beam7-52.hole1 -> studaxle-1.pin1 STIFF
+CONNECT beam7-52.hole7 -> studaxle-2.pin1 STIFF
 DOES studaxle-1 HOLDS beam7-52
 DOES beam7-52 LOCKS post-L
 PATTERN closed_frame

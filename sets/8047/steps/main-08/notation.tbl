@@ -1,7 +1,7 @@
 STEP 8
 ADD turntable-O 50163 darkgray
-CONNECT pin-E.end2 -> turntable-O.base.hole?
-CONNECT pin-F.end2 -> turntable-O.base.hole?
+CONNECT pin-E.pin2 -> turntable-O.base.hole?
+CONNECT pin-F.pin2 -> turntable-O.base.hole?
 DOES pin-E HOLDS turntable-O
 DOES pin-F HOLDS turntable-O
 DOES turntable-O.top SPINS_ON turntable-O.base

@@ -2,10 +2,10 @@ STEP 55
 # Only one arrow shown.
 ADD angle5-1 32015 black
 ADD angle5-2 32015 black
-CONNECT hose-1.end2 -> angle5-1.axlehole
-CONNECT hose-2.end2 -> angle5-2.axlehole
-CONNECT angle5-1.pinhole -> hub-54a.pin?
-CONNECT angle5-2.pinhole -> hub-54b.pin?
+CONNECT hose-1.end2 -> angle5-1.axlehole?
+CONNECT hose-2.end2 -> angle5-2.axlehole?
+CONNECT angle5-1.hole1 -> hub-54a.pin?
+CONNECT angle5-2.hole1 -> hub-54b.pin?
 DOES angle5-1 HOLDS hose-1
 DOES angle5-2 HOLDS hose-2
 PATTERN hose_as_brace

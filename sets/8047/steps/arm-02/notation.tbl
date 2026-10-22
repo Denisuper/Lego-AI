@@ -1,4 +1,4 @@
 ADD curve-a1 32250 yellow
-CONNECT axle3-a1.mid -> curve-a1.hole1
+CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a1
 PATTERN curved_side_plate

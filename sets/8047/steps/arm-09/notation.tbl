@@ -1,8 +1,8 @@
 # pin-a9 looks long; matched to 2780 because both 32054s are used in step 36.
 ADD pin-a9 2780 black
 ADD bevel12-a1 6589 tan
-CONNECT pin-a9.end1 -> holder-a.hole?
-CONNECT bevel12-a1.axlehole -> axle3-a3.end2
+CONNECT pin-a9.pin1 -> holder-a.hole?
+CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED
 DOES holder-a HOLDS pin-a9
 DOES axle3-a3 CARRIES bevel12-a1
 PATTERN bevel_right_angle

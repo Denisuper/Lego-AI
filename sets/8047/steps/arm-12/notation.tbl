@@ -1,7 +1,7 @@
 ADD axle4-a2 3705 black
 ADD conn3c-a3 32184 lightgray
-CONNECT conn3c-a3.axlehole1 -> axle4-a1.end2
-CONNECT conn3c-a3.axlehole2 -> axle4-a2.end1
+CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED
+CONNECT conn3c-a3.axlehole2 -> axle4-a2.axle1 LOCKED
 DOES conn3c-a3 HOLDS axle4-a1
 DOES conn3c-a3 HOLDS axle4-a2
 PATTERN two_point_mount

@@ -11,18 +11,23 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `sets/<set>/booklet.pdf`, `parts_list.csv` | The booklet and its official parts list |
 | `sets/<set>/training.jsonl`, `training.tbl` | The whole set in one file each, ready for training (generated) |
 | `sets/<set>/preview.md` | Every step with its picture, easy to read (generated) |
-| `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, size, thickness, hole/pin/axle counts, gear teeth, plain-English description |
-| `catalog/connections.csv` | Every hole, pin and axle on every part: type (round pin hole, cross axle hole, pin, axle...), exact position, direction, depth, whether things can slide in it |
+| `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, size, thickness, type, friction/frictionless, what it's for, hole/pin/axle counts, gear teeth, plain-English description |
+| `catalog/connections.csv` | Every named point on every part (hole1, axlehole2, pin1, axle3...): type, exact position, direction, depth, whether things slide in it, how it turns |
 | `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
 | `docs/` | Labeling instructions, framework |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
+| `tools/check_notation.py` | Checks every join: the hole/pin exists on that part, the two fit, and locked/turns/stiff is right |
 
 ## Rebuild and check a set
 ```
 python tools/build_set.py sets/8047
 python tools/check_steps.py sets/8047/training.jsonl sets/8047/parts_list.csv
+python tools/check_notation.py sets/8047/training.tbl
 ```
+
+## How a join is written
+`CONNECT pin-L.pin2 -> beam7-N.hole1 STIFF` = the second hole-length of pin-L sits in hole 1 of beam7-N, held stiff by the pin's friction ridges. Point names (hole1, axlehole2, pin1, axle3...) come from `catalog/connections.csv`; depth is worked out from the catalog. LOCKED = turns together (cross in cross), TURNS = free, STIFF = friction pin.
 
 ## Status (Oct 22, 2026)
 | Set | Steps | Notes |

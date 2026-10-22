@@ -1,7 +1,7 @@
 # Which pins fairing-2 uses is not visible.
 ADD fairing-2 87086 yellow
-CONNECT pin-b1.end2 -> fairing-2.hole?
-CONNECT pin-b3.end2 -> fairing-2.hole?
+CONNECT pin-b1.pin3 -> fairing-2.hole?
+CONNECT pin-b3.pin2 -> fairing-2.hole?
 DOES pin-b1 HOLDS fairing-2
 DOES pin-b3 HOLDS fairing-2
 PATTERN mirror_side

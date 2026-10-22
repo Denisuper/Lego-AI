@@ -1,4 +1,4 @@
 ADD bush-s2 3713 lightgray
-CONNECT bush-s2.axlehole -> axle9-s1.end1
+CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED
 DOES bush-s2 LOCKS lbeam-s3
 PATTERN bush_as_end_stop

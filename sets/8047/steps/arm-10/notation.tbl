@@ -1,8 +1,8 @@
 ADD conn3c-a2 32184 lightgray
 ADD bevel20-a 87407 lightgray
 ADD axle5-a 32073 lightgray
-CONNECT axle5-a.end1 -> conn3c-a2.axlehole1
-CONNECT bevel20-a.pinhole -> pin-a9.end2
+CONNECT axle5-a.axle1 -> conn3c-a2.axlehole1 LOCKED
+CONNECT bevel20-a.hole1 -> pin-a9.pin2 STIFF
 MESH bevel12-a1.teeth bevel20-a.teeth
 RATIO bevel12-a1 bevel20-a 12/20
 DOES bevel12-a1 DRIVES bevel20-a

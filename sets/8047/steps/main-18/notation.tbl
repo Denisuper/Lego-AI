@@ -1,7 +1,7 @@
 STEP 18
 # No parts box; reading the arrows as 'push the blue pins in'.
-CONNECT pinlong-1.end2 -> lbeam-s3.hole?
-CONNECT pinlong-2.end2 -> lbeam-s4.hole?
+CONNECT pinlong-1.pin3 -> lbeam-s3.hole?
+CONNECT pinlong-2.pin3 -> lbeam-s4.hole?
 DOES pinlong-1 LOCKS seat
 DOES pinlong-2 LOCKS seat
 PATTERN push_pins_home

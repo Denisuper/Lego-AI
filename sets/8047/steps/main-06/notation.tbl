@@ -1,8 +1,8 @@
 STEP 6
 ADD pin-L 2780 black
-CONNECT pin-L.end1 -> connector-H.pinhole
+CONNECT pin-L.pin1 -> connector-H.hole1 STIFF
 ADD pin-M 2780 black
-CONNECT pin-M.end1 -> connector-K.pinhole
+CONNECT pin-M.pin1 -> connector-K.hole1 STIFF
 DOES connector-H HOLDS pin-L
 DOES connector-K HOLDS pin-M
 PATTERN pegs_for_crossbar

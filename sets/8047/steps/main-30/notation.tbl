@@ -1,8 +1,8 @@
 STEP 30
 # Exact holes for the body pins not visible.
 ATTACH body
-CONNECT pin-b2.end2 -> bent11-A.hole?
-CONNECT pin-b1.end2 -> bent11-B.hole?
+CONNECT pin-b2.pin3 -> bent11-A.hole?
+CONNECT pin-b1.pin3 -> bent11-B.hole?
 DOES bent11-A SUPPORTS body
 DOES bent11-B SUPPORTS body
 PATTERN side_build_attached

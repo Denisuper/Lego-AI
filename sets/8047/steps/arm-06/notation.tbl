@@ -1,5 +1,5 @@
 # No arrow.
 ADD curve-a2 32250 yellow
-CONNECT axle3-a1.end2 -> curve-a2.hole1
+CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a2
 PATTERN mirror_side

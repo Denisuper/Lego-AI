@@ -2,12 +2,12 @@ STEP 5
 GROUP side-I
   ADD axle-red-J 32062 red
   ADD connector-K 6536 black
-  CONNECT axle-red-J.end1 -> connector-K.axlehole
+CONNECT axle-red-J.axle1 -> connector-K.axlehole1 LOCKED
   ADD bentbeam-I 32140 black
-  CONNECT axle-red-J.end2 -> bentbeam-I.hole5
+CONNECT axle-red-J.axle2 -> bentbeam-I.hole?
 END
 ATTACH side-I
-CONNECT rod-A.pin -> bentbeam-I.hole1
+CONNECT rod-A.pin2 -> bentbeam-I.hole1 STIFF
 DOES connector-K HOLDS axle-red-J
 DOES bentbeam-I HOLDS axle-red-J
 DOES rod-A HOLDS bentbeam-I

@@ -1,6 +1,6 @@
 ADD lbeam-s2 32526 blue
-CONNECT pin-s2.end2 -> lbeam-s2.hole?
-CONNECT pin-s3.end2 -> lbeam-s2.hole?
+CONNECT pin-s2.pin3 -> lbeam-s2.hole?
+CONNECT pin-s3.pin3 -> lbeam-s2.hole?
 DOES pin-s2 LOCKS lbeam-s2
 DOES pin-s3 LOCKS lbeam-s2
 PATTERN mirror_side

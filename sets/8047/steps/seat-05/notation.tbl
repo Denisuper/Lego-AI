@@ -1,5 +1,5 @@
 ADD block-s 60483 lightgray
-CONNECT block-s.pinhole -> hub4-s.pin?
+CONNECT block-s.hole1 -> hub4-s.pin?
 ADD conn-s1 42003 black
 CONNECT conn-s1.pinhole? -> hub4-s.pin?
 DOES hub4-s HOLDS block-s

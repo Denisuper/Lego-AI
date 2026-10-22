@@ -1,12 +1,12 @@
 STEP 14
 ADD gear-1 4019 lightgray
-CONNECT gear-1.axlehole -> tan-1.axle
+CONNECT gear-1.axlehole1 -> tan-1.axle1 LOCKED
 ADD gear-2 4019 lightgray
-CONNECT gear-2.axlehole -> tan-2.axle
+CONNECT gear-2.axlehole1 -> tan-2.axle1 LOCKED
 ADD gear-3 4019 lightgray
-CONNECT gear-3.axlehole -> tan-3.axle
+CONNECT gear-3.axlehole1 -> tan-3.axle1 LOCKED
 ADD gear-4 4019 lightgray
-CONNECT gear-4.axlehole -> tan-4.axle
+CONNECT gear-4.axlehole1 -> tan-4.axle1 LOCKED
 DOES tan-1 CARRIES gear-1
 DOES tan-2 CARRIES gear-2
 DOES tan-3 CARRIES gear-3

@@ -1,6 +1,6 @@
 STEP 20
 # Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
 ADD bent11-A 32009 black
-CONNECT axpin-1.pin -> bent11-A.hole1
+CONNECT axpin-1.pin1 -> bent11-A.hole1 STIFF
 DOES axpin-1 HOLDS bent11-A
 PATTERN bent_beam_side_frame

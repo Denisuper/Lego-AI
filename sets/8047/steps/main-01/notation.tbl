@@ -1,6 +1,6 @@
 STEP 1
 ADD rod-A 32054 black
 ADD axle-A 4519 lightgray
-CONNECT axle-A.end1 -> rod-A.axlehole
+CONNECT axle-A.axle1 -> rod-A.axlehole1 LOCKED
 DOES rod-A HOLDS axle-A
 PATTERN pin_axle_pin_shaft

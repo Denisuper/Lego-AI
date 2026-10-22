@@ -3,9 +3,9 @@ STEP 21
 ADD pin-21a 2780 black
 ADD pin-21b 2780 black
 ADD axle3-21 4519 lightgray
-CONNECT pin-21a.end1 -> bent11-A.hole?
-CONNECT pin-21b.end1 -> bent11-A.hole?
-CONNECT axle3-21.end1 -> bent11-A.hole?
+CONNECT pin-21a.pin1 -> bent11-A.hole?
+CONNECT pin-21b.pin1 -> bent11-A.hole?
+CONNECT axle3-21.axle1 -> bent11-A.hole?
 DOES bent11-A HOLDS pin-21a
 DOES bent11-A HOLDS pin-21b
 DOES bent11-A HOLDS axle3-21

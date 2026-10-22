@@ -1,8 +1,8 @@
 ADD beam5-s 32316 lightgray
 ADD pin-s2 6558 blue
-CONNECT pin-s2.end1 -> beam5-s.hole2
+CONNECT pin-s2.pin1 -> beam5-s.hole2 STIFF
 ADD pin-s3 6558 blue
-CONNECT pin-s3.end1 -> beam5-s.hole4
+CONNECT pin-s3.pin1 -> beam5-s.hole4 STIFF
 CONNECT beam5-s.hole? -> lbeam-s1.hole?
 DOES beam5-s HOLDS pin-s2
 DOES beam5-s HOLDS pin-s3
