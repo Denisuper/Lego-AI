@@ -386,7 +386,7 @@
 
 **Exact joins:** pin-s2.pin2 into beam5-s.hole2 (0.9 hole deep, held stiff by friction); pin-s2.pin1 into lbeam-s1.hole2 (0.9 hole deep, held stiff by friction); pin-s3.pin2 into beam5-s.hole4 (0.9 hole deep, held stiff by friction); pin-s3.pin1 into lbeam-s1.hole4 (0.9 hole deep, held stiff by friction)
 
-**Who does what:** beam5-s holds pin-s2 and pin-s3; pin-s2 and pin-s3 lock beam5-s to lbeam-s1
+**Who does what:** beam5-s holds pin-s2 and pin-s3; pin-s2 and pin-s3 lock beam5-s in place against lbeam-s1
 
 **After:** beam5-s: upright next to the seat back, two pins sticking forward; everything else: no change
 

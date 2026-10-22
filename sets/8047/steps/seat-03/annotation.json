@@ -55,7 +55,7 @@
     ],
     "who_does_what_to_which": [
       "beam5-s holds pin-s2 and pin-s3",
-      "pin-s2 and pin-s3 lock beam5-s to lbeam-s1"
+      "pin-s2 and pin-s3 lock beam5-s in place against lbeam-s1"
     ],
     "where_everything_is_after": [
       "beam5-s: upright next to the seat back, two pins sticking forward",
