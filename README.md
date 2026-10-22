@@ -14,7 +14,7 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, size, thickness, type, friction/frictionless, what it's for, hole/pin/axle counts, gear teeth, plain-English description |
 | `catalog/connections.csv` | Every named point on every part (hole1, axlehole2, pin1, axle3...): type, exact position, direction, depth, whether things slide in it, how it turns |
 | `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
-| `docs/` | Labeling instructions, framework |
+| `docs/` | Labeling instructions, framework, and `detail_spec.md`: every kind of detail we record or plan to, with status |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
 | `tools/check_notation.py` | Checks every join: the hole/pin exists on that part, the two fit, and locked/turns/stiff is right |
