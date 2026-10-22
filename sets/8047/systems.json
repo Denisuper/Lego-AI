@@ -1,0 +1,370 @@
+{
+  "model": "LEGO Technic 8047 Compact Excavator",
+  "what_the_model_does": "A small tracked excavator. The upper body sits on a turntable so it can swing all the way round on the tracks. Two knobs at the back work the machine through worm gears, so whatever they move stays put when you let go. The arm, stick and bucket hang off the front; the bucket can also be tipped by hand through its link. Fairings, hoses and a roof with lights make it look like the real machine.",
+  "open_questions": [
+    "Which knob drives which output is not confirmed from the booklet: knob-2 turns worm-1 -> crown-1 -> axle7-s -> gear-5 -> gear-6 -> axle7-B, but where axle7-B's turning ends up (lever, arm or swing) is not visible.",
+    "knob-1's path (axle9-33 at the back, possibly via gear-7 in the body) is not visible.",
+    "What drives the arm's worm-2 (the gears gear-8 / bevels at the arm base take drive from the body) is not visible."
+  ],
+  "systems": [
+    {
+      "id": "chassis",
+      "name": "Undercarriage frame",
+      "real_machine": "The lower frame of a crawler excavator that carries the tracks and the slewing ring.",
+      "purpose": "A stiff, flat base. It holds the turntable's fixed half and the two side rails that carry the track wheels, so everything above can turn while this stays still.",
+      "depends_on": [],
+      "feeds": [
+        "tracks",
+        "swing"
+      ],
+      "why_built_first": "Everything else hangs off it; it's built upside down so the turntable can be pinned from below.",
+      "parts": {
+        "rod-A": "Left end of the back cross shaft; its pin end later carries the left bent beam (step 5) and the left side rail (step 12).",
+        "axle-A": "The spine of the cross shaft: carries beam-C in the middle and joins rod-A to rod-B.",
+        "beam-C": "Turns the cross shaft into pin holes facing back, so the turntable can be pinned to the frame (via pin-E, pin-F in step 8).",
+        "rod-B": "Right end of the cross shaft; carries the right bent beam (step 3) and right side rail (step 12).",
+        "bentbeam-D": "Right side of the front U; reaches forward to the front cross beam.",
+        "bentbeam-I": "Left side of the front U, mirror of bentbeam-D.",
+        "pin-E": "One of the two pins the turntable's fixed half sits on (step 8).",
+        "pin-F": "The other turntable pin.",
+        "axle-red-G": "Short axle that fixes connector-H to bentbeam-D's front end without letting it turn.",
+        "axle-red-J": "Mirror of axle-red-G on the left.",
+        "connector-H": "Turns the right front corner into an upward pin hole for pin-L.",
+        "connector-K": "Mirror of connector-H on the left, for pin-M.",
+        "pin-L": "Right front pin; holds the front cross beam beam7-N.",
+        "pin-M": "Left front pin; holds beam7-N.",
+        "beam7-N": "Front cross beam: closes the U into a rectangle so the frame can't spread under the turntable's weight.",
+        "pin-P": "Pins beam-R to the turntable's fixed half at the back.",
+        "pin-Q": "Second pin for beam-R (two pins stop it twisting).",
+        "beam-R": "Back mount: gives the back cross axle a hole and ties it to the turntable's fixed half.",
+        "axle-S": "Back cross axle; reaches out to both side rails.",
+        "connector-T": "Right end of the back cross axle; turns it into a pin end via pin-U.",
+        "connector-W": "Left end of the back cross axle; turns it into a pin end via pin-V.",
+        "pin-U": "Right back pin; holds the right side rail beam9-Y.",
+        "pin-V": "Left back pin; holds the left side rail beam9-X.",
+        "beam9-X": "Left side rail: ties front and back of the frame together and carries the left track's two wheels.",
+        "beam9-Y": "Right side rail, mirror of beam9-X."
+      }
+    },
+    {
+      "id": "tracks",
+      "name": "Tracks",
+      "real_machine": "Crawler tracks: spread the weight and let the machine move on soft ground.",
+      "purpose": "Two passive track loops. Nothing drives them: they roll when the model is pushed.",
+      "depends_on": [
+        "chassis"
+      ],
+      "feeds": [],
+      "why_built_first": "The wheels mount on the side rails, which only exist once the frame is closed.",
+      "parts": {
+        "tan-1": "Frictionless axle pin: lets the front-left track wheel spin freely on the rail.",
+        "tan-2": "Same, back-left wheel.",
+        "tan-3": "Same, front-right wheel.",
+        "tan-4": "Same, back-right wheel.",
+        "gear-1": "Front-left track wheel: its teeth sit in the tread links.",
+        "gear-2": "Back-left track wheel.",
+        "gear-3": "Front-right track wheel.",
+        "gear-4": "Back-right track wheel.",
+        "tread-.*": "One link of a track loop; 28 links make a loop just long enough to wrap two 16-tooth wheels tightly."
+      }
+    },
+    {
+      "id": "swing",
+      "name": "Swing ring (turntable)",
+      "real_machine": "The slewing ring that lets the whole upper body rotate 360 degrees on the undercarriage.",
+      "purpose": "Splits the model into a still lower half and a turning upper half. Everything built after step 16 turns with it.",
+      "depends_on": [
+        "chassis"
+      ],
+      "feeds": [
+        "upper_frame"
+      ],
+      "why_built_first": "It has to be pinned to the frame before the frame is flipped over.",
+      "parts": {
+        "turntable-O": "The joint between lower and upper machine: fixed half pinned to the chassis, turning half carries the whole upper body.",
+        "pinlong-1": "Mounting post on the turning half: holds the seat frame (steps 17-18) and the left side frame (step 24).",
+        "pinlong-2": "Second mounting post on the turning half for the seat frame."
+      }
+    },
+    {
+      "id": "upper_frame",
+      "name": "Upper frame and seat",
+      "real_machine": "The revolving frame and operator's seat: carries the cab, engine cover, controls and the boom.",
+      "purpose": "A stiff frame on the turning half that every upper part hangs on: the seat, both drive shafts, the body, the arm mount and the roof posts.",
+      "depends_on": [
+        "swing"
+      ],
+      "feeds": [
+        "drive_main",
+        "drive_back",
+        "arm",
+        "body",
+        "roof"
+      ],
+      "why_built_first": "Built as the seat side build so the cross axles can be fitted with both side plates open.",
+      "parts": {
+        "hub4-s": "Core block of the seat: pins in many directions let the seat back and the axle holders join at right angles.",
+        "pin-s1": "Pin in the hub core; part of the seat's mounting.",
+        "hub2-s": "Adds more pins to the core so the seat parts lock together.",
+        "lbeam-s1": "Seat back and seat in one part.",
+        "beam5-s": "Thickens the seat back and carries the two pins for the second blue L.",
+        "pin-s2": "Holds the second seat L-beam.",
+        "pin-s3": "Second pin for the second seat L-beam.",
+        "lbeam-s2": "Second seat L-beam; makes the seat a solid block.",
+        "block-s": "Gives the gear shaft axle7-s its hole under the seat.",
+        "conn-s1": "Gives the first cross axle axle9-s1 its hole under the seat.",
+        "axle9-s1": "Cross bar of the upper frame: carries both side plates and later conn3c-1.",
+        "bush-s2": "Stops lbeam-s3 sliding off axle9-s1.",
+        "axle9-s2": "Second cross bar; with axle9-s1 it keeps the side plates square.",
+        "bush-s3": "Stops axle9-s2 sliding.",
+        "lbeam-s3": "Left side plate of the upper frame; its leg goes on pinlong-1 to fix the frame to the turntable.",
+        "lbeam-s4": "Right side plate; its leg goes on pinlong-2.",
+        "axcon-1": "Joins axle7-B to axpin-1 so the shaft ends in a pin.",
+        "axpin-1": "Pin end that carries bent11-A (step 20).",
+        "conn3-1": "Standing connector on axle7-B's other end.",
+        "bent11-A": "Right side frame: wraps round the turntable and rises at the back; carries the body, side covers and roof post.",
+        "bent11-B": "Left side frame, mirror of bent11-A.",
+        "pin-21a": "Mount on bent11-A for the right side cover (step 37).",
+        "pin-21b": "Second mount pin on bent11-A.",
+        "axle3-21": "Short axle on bent11-A; end held by bush-27.",
+        "pin-25a": "Mount on bent11-B; later holds the left roof post (step 51).",
+        "pin-25b": "Second mount pin on bent11-B.",
+        "axle3-25": "Short axle on bent11-B, matching axle3-21.",
+        "bush-27": "Stops axle3-21 sliding out.",
+        "conn3c-1": "Joins the two cross axles' ends and gives the control lever a pivot.",
+        "beam3-36": "Front post for the arm mount (arm attaches in step 38).",
+        "axle5-36": "Axle through the front post; its ends are pin ends via rod-C, rod-D.",
+        "rod-C": "Pin end on top of axle5-36.",
+        "rod-D": "Pin end under axle5-36.",
+        "pin-36": "Pins beam3-36 to the frame.",
+        "pin-48": "Pins the right front post beam3-48.",
+        "beam3-48": "Right front post for the right side covers."
+      }
+    },
+    {
+      "id": "drive_main",
+      "name": "Front worm drive (knob-2)",
+      "real_machine": "Stands in for the hydraulic motor / cylinder that a real excavator uses; a worm gear gives the same 'holds position when you stop' behaviour.",
+      "purpose": "Turning knob-2 drives a worm that turns a 24-tooth gear 1 tooth per knob turn: 24 turns for one turn of crown-1. Very slow and strong, and the load can't turn it back.",
+      "depends_on": [
+        "upper_frame"
+      ],
+      "feeds": [
+        "arm"
+      ],
+      "why_built_first": "The gear shaft (axle7-s) is built into the seat frame; the worm is added once the frame is on the turntable.",
+      "parts": {
+        "axle7-s": "Shaft under the seat: carries crown-1 and gear-5, passing the worm's turning across to the left side.",
+        "gear-5": "Passes the shaft's turning to gear-6 (1:1).",
+        "bush-s1": "Stops axle7-s sliding.",
+        "crown-1": "24-tooth gear the worm turns; the 1:24 slow-down happens here.",
+        "bush-28": "Stops axle7-s sliding at the crown-gear end.",
+        "axle7-B": "Long shaft that receives the turning from gear-6. Where it ends up is an open question.",
+        "gear-6": "Receives the turning from gear-5.",
+        "axle8s-1": "Worm shaft running to the back: knob-2 at one end, worm-1 in the middle.",
+        "conn3-2": "Holds the worm shaft in line.",
+        "worm-1": "The self-locking slow-down: one knob turn = one tooth of crown-1.",
+        "bush-26": "Keeps the worm in place over crown-1.",
+        "bush-32": "Stops the worm shaft sliding at the back.",
+        "knob-2": "The control the operator turns."
+      }
+    },
+    {
+      "id": "drive_back",
+      "name": "Back shaft (knob-1)",
+      "real_machine": "Second control.",
+      "purpose": "A long shaft across the back with knob-1 on its end. Its output is an open question (possibly via gear-7 in the body).",
+      "depends_on": [
+        "body"
+      ],
+      "feeds": [],
+      "why_built_first": "Its bearings (ycon-1, ycon-2) hang on the body's pins, so it goes in after the body.",
+      "parts": {
+        "ycon-1": "Bearing for the back shaft on the right body pin.",
+        "ycon-2": "Bearing for the back shaft on the left body pin.",
+        "axle9-33": "The back shaft.",
+        "knob-1": "The second control the operator turns.",
+        "axle4s-b": "Gear shaft inside the body; carries gear-7.",
+        "gear-7": "Gear inside the body; may take or pass drive from the back shaft (not confirmed).",
+        "bush-b": "Stops axle4s-b sliding."
+      }
+    },
+    {
+      "id": "arm",
+      "name": "Boom (arm) with worm drive",
+      "real_machine": "The boom: the main arm that lifts the stick and bucket.",
+      "purpose": "Lifts and lowers the whole front end. A worm inside the boom holds it up under the bucket's weight.",
+      "depends_on": [
+        "upper_frame",
+        "drive_main"
+      ],
+      "feeds": [
+        "stick"
+      ],
+      "why_built_first": "Built as a side build so the worm, bevel gears and holder can be fitted with the sides open.",
+      "parts": {
+        "beam3t-a1": "Base plate of the boom.",
+        "axle3-a1": "Ties both curved side plates together at the base.",
+        "curve-a1": "Right curved side of the boom.",
+        "curve-a2": "Left curved side of the boom.",
+        "pin34-a": "Short pin that fixes the cross piece without sticking out.",
+        "conn3c-a1": "Cross piece in the boom base; holds the small gear shaft.",
+        "axle3-a2": "Shaft for gear8-a.",
+        "gear8-a": "Small gear in the boom base; part of the drive into the boom (mesh not confirmed).",
+        "ycon-a": "Holds the end of the boom's worm shaft.",
+        "axle2-a": "Locks ycon-a in place.",
+        "worm-2": "Boom's self-locking drive.",
+        "axcon-a": "Joins the worm shaft to the axle that carries the front bevel gear.",
+        "axle4s-a": "Worm shaft along the boom.",
+        "axle3-a3": "Extends the worm shaft to the holder at the front.",
+        "beam3t-a2": "Outer plate at the boom base; holds the boom's pivot axle.",
+        "holder-a": "Hinge block at the boom's front: the boom tip (boom build) mounts on it.",
+        "axle3-a4": "Boom pivot: goes into the control lever link9-1 (step 38).",
+        "pin-a9": "Pin the 20-tooth bevel turns on.",
+        "bevel12-a1": "Turns the drive 90 degrees at the boom front.",
+        "bevel20-a": "Receives drive from both 12-tooth bevels.",
+        "conn3c-a2": "End piece on axle5-a.",
+        "axle5-a": "Shaft through the front bevel.",
+        "axle3-a5": "Input shaft at the boom side.",
+        "bevel12-a2": "Second bevel feeding bevel20-a.",
+        "gear-8": "Input gear: takes drive into the boom from the upper frame (mesh not confirmed).",
+        "con180-a": "Joins the two input axles end to end.",
+        "axle4-a1": "Input axle; goes into the front post (step 38).",
+        "axle4-a2": "Second input axle; held by conn3c-39 (step 39).",
+        "conn3c-a3": "Ties the two input axle ends together.",
+        "conn3c-39": "Holds the boom's input shaft in line with the frame.",
+        "axle3-39": "Extra axle at the boom's top.",
+        "crank-1": "Crank on conn3c-1 in front of the seat: the fixed pivot the boom's lift link swings on.",
+        "link9-1": "Bent link from the crank to the boom's base pivot (axle3-a4, step 38): holds the boom to the frame as part of its lift linkage. Exact motion not confirmed."
+      }
+    },
+    {
+      "id": "stick",
+      "name": "Boom tip, stick and push rod",
+      "real_machine": "The stick (dipper arm) and the linkage that tips it.",
+      "purpose": "Carries the bucket out in front; the push rod tips the stick when the boom moves.",
+      "depends_on": [
+        "arm"
+      ],
+      "feeds": [
+        "bucket"
+      ],
+      "why_built_first": "Mounts on the boom's front holder.",
+      "parts": {
+        "lthin-1": "Bottom plate of the boom-tip joint.",
+        "lthin-2": "Top plate of the boom-tip joint (sandwich).",
+        "axle2-b1": "Locks the joint plates and is the pivot for link9-b.",
+        "axle2-b2": "Locks the joint plates.",
+        "axle2-b3": "Locks beam3t-b1 to the joint.",
+        "axle2-b4": "Locks beam3t-b2 to the bent beam.",
+        "beam3t-b1": "Spacer in the joint stack.",
+        "beam3t-b2": "Top spacer in the joint stack.",
+        "bent9-b": "The bent boom-tip beam: gives the classic excavator angle.",
+        "axle3-b": "Pivot the stick hangs on (step 44).",
+        "thin4-1": "Mount on the boom for the push-rod hinge.",
+        "thin4-2": "Second side of the push-rod mount.",
+        "axle3-41": "Hinge axle for the push rod.",
+        "angle1-42": "Hinge that lets the push rod swing.",
+        "axle3-42": "Short axle the push rod's back end hangs on.",
+        "axle9-43": "Push rod: transfers the boom's motion to the stick.",
+        "angle1-43": "Back end of the push rod.",
+        "angle4-43": "Front end of the push rod.",
+        "tanpin-1": "Frictionless pin: the stick swings freely on the push rod end.",
+        "beam11-44": "Right stick beam: reach for the bucket.",
+        "beam11-45": "Left stick beam; two beams stop the stick twisting.",
+        "pin-44": "Joins the two stick beams at the bottom.",
+        "bent2-44": "Spacer/link at the stick's bottom end."
+      }
+    },
+    {
+      "id": "bucket",
+      "name": "Bucket",
+      "real_machine": "The digging bucket.",
+      "purpose": "The working tool. It pivots on the stick end; link9-b ties it to the boom tip so the bucket tilts as the stick moves.",
+      "depends_on": [
+        "stick"
+      ],
+      "feeds": [],
+      "why_built_first": "Last on the arm because it hangs between the two stick beams.",
+      "parts": {
+        "bucket-1": "The bucket itself.",
+        "axle55-46": "Bucket pivot; its stop end keeps it from sliding out.",
+        "link9-b": "Bucket link from the boom tip; tilts the bucket.",
+        "axle3-47": "Joins link9-b to the bucket.",
+        "halfbush-1": "Thin stop on the bucket link axle.",
+        "halfbush-2": "Second thin stop on the bucket link axle."
+      }
+    },
+    {
+      "id": "body",
+      "name": "Engine cover and side covers",
+      "real_machine": "Engine housing and side panels of the upper structure.",
+      "purpose": "Looks like the real machine and closes the sides; also gives the back shaft its bearings.",
+      "depends_on": [
+        "upper_frame"
+      ],
+      "feeds": [
+        "drive_back",
+        "roof"
+      ],
+      "why_built_first": "Built as a side build so the fairings can be pinned on flat.",
+      "parts": {
+        "beam9-b": "Spine of the engine cover.",
+        "pin-b1": "Holds fairing-2 and later the left bearing ycon-2.",
+        "pin-b2": "Holds the right bearing ycon-1.",
+        "pin-b3": "Holds beam3-b and fairing-2.",
+        "pin-b4": "Holds fairing-1.",
+        "pin-b5": "Holds fairing-1.",
+        "beam3-b": "Block that carries the body's gear shaft.",
+        "fairing-1": "Right engine-cover panel (looks).",
+        "fairing-2": "Left engine-cover panel (looks).",
+        "beam9-35": "Lower left side cover.",
+        "beam11-37": "Upper left side cover.",
+        "beam9-49": "Lower right side cover.",
+        "beam11-50": "Upper right side cover.",
+        "pin-35": "Pins the left hose holder to the side cover.",
+        "pin-49": "Pins the right hose holder to the side cover.",
+        "pin-50a": "Holds the right roof post (step 51).",
+        "pin-50b": "Holds beam11-50.",
+        "pin-50c": "Holds beam11-50.",
+        "pin-50d": "Holds beam11-50.",
+        "hoseconn-1": "Holder for the left hose.",
+        "hoseconn-2": "Holder for the right hose.",
+        "hose-1": "Left 'hydraulic hose' (looks); later braces the roof (step 55).",
+        "hose-2": "Right 'hydraulic hose' (looks); later braces the roof."
+      }
+    },
+    {
+      "id": "roof",
+      "name": "Cab roof and lights",
+      "real_machine": "The operator's protective roof (ROPS canopy) with work lights and beacons.",
+      "purpose": "Protects the seat and finishes the look; the hoses brace its front corners.",
+      "depends_on": [
+        "body"
+      ],
+      "feeds": [],
+      "why_built_first": "Last: the posts need the side covers' pins.",
+      "parts": {
+        "post-L": "Left roof post.",
+        "post-R": "Right roof post.",
+        "beam7-52": "Back roof beam: ties the posts into a frame.",
+        "studaxle-1": "Joins the back roof beam to post-L and carries a clear light.",
+        "studaxle-2": "Same on post-R.",
+        "axle3-53a": "Extends the roof forward from post-L.",
+        "axle3-53b": "Extends the roof forward from post-R.",
+        "axcon-53a": "Joins axle3-53a to the post's stud axle.",
+        "axcon-53b": "Joins axle3-53b to the post's stud axle.",
+        "beam7-54": "Front roof beam.",
+        "beam5-54": "Front roof beam (shorter).",
+        "hub-54a": "Joins the two front roof beams; carries an orange beacon; hose-1 clips to it.",
+        "hub-54b": "Same on the other side.",
+        "light-o1": "Orange beacon.",
+        "light-o2": "Orange beacon.",
+        "light-c1": "Clear work light.",
+        "light-c2": "Clear work light.",
+        "angle5-1": "Clips hose-1 to the roof: the hose becomes a brace.",
+        "angle5-2": "Clips hose-2 to the roof."
+      }
+    }
+  ]
+}

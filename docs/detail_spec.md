@@ -179,6 +179,10 @@ This file lists every kind of detail, from one hole up to the whole machine. Eac
 | Detail | Example | Source | Status |
 | --- | --- | --- | --- |
 | Problem solved, why these parts, sets up later, pattern | per step | labeler | ✅ |
+| Role of every part in the finished machine | pin-L: holds beam7-N → closes the frame → carries the turntable | systems.json (human) | ✅ 8047 |
+| System map: what each system is on the real machine, purpose, depends on / feeds | swing ring feeds upper frame | systems.json (human) | ✅ 8047 |
+| Every later step that uses a part (forward links) | rod-A → steps 2, 5, 12 | derived from notation | ✅ |
+| Full chain from a part to the machine's output (part → system → function) | worm-1 → crown-1 → … → boom rises | derived once drive paths are confirmed | 🟡 open questions in 8047 |
 | Alternatives and why not | "a 24T gear would fit but the worm self-locks" | human | ⬜ |
 | Constraint that forced the choice | space, part count, look, strength | human | ⬜ |
 | Pattern library | named tricks with every place they're used | derived from PATTERN lines | ⬜ (catalog/patterns.csv) |

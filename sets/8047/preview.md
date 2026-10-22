@@ -16,6 +16,10 @@
 
 **Why:** Starts a straight cross shaft for the middle of the undercarriage. A long pin with a stop ring has a pin on one end (to hang beams on) and an axle hole on the other (to join an axle). *Next:* rod-A's pin end will hold a bent beam (step 5) and a side rail (step 12). *Pattern:* pin-axle-pin shaft
 
+**Big picture:**
+- **rod-A** (Undercarriage frame): Left end of the back cross shaft; its pin end later carries the left bent beam (step 5) and the left side rail (step 12). Later: 8047-step-02 `DOES rod-A LOCKS beam-C`; 8047-step-05 `CONNECT rod-A.pin2 -> bentbeam-I.hole1 STIFF`; 8047-step-05 `DOES rod-A HOLDS bentbeam-I`; 8047-step-12 `CONNECT rod-A.pin2 -> beam9-X.hole?`; 8047-step-12 `DOES rod-A HOLDS beam9-X`.
+- **axle-A** (Undercarriage frame): The spine of the cross shaft: carries beam-C in the middle and joins rod-A to rod-B. Later: 8047-step-02 `CONNECT axle-A.axle2 -> beam-C.axlehole1 LOCKED`; 8047-step-02 `CONNECT axle-A.axle3 -> rod-B.axlehole1 LOCKED`; 8047-step-02 `DOES axle-A CARRIES beam-C`; 8047-step-02 `DOES rod-B HOLDS axle-A`.
+
 ## 8047-step-02 (page 3) - high
 
 ![8047-step-02](steps/main-02/picture.png)
@@ -32,6 +36,10 @@
 
 **Why:** Finishes the cross shaft and gives it a mounting point in the middle. The triple connector turns one axle into three pin holes facing sideways; the two rings trap it so it can't slide. *Next:* beam-C's holes take the two pins that hold the turntable (steps 3 and 8). *Pattern:* trapped connector on a shaft
 
+**Big picture:**
+- **beam-C** (Undercarriage frame): Turns the cross shaft into pin holes facing back, so the turntable can be pinned to the frame (via pin-E, pin-F in step 8). Later: 8047-step-03 `CONNECT pin-E.pin1 -> beam-C.hole1 STIFF`; 8047-step-03 `CONNECT pin-F.pin1 -> beam-C.hole3 STIFF`; 8047-step-03 `DOES beam-C HOLDS pin-E`; 8047-step-03 `DOES beam-C HOLDS pin-F`.
+- **rod-B** (Undercarriage frame): Right end of the cross shaft; carries the right bent beam (step 3) and right side rail (step 12). Later: 8047-step-03 `CONNECT rod-B.pin2 -> bentbeam-D.hole1 STIFF`; 8047-step-03 `DOES rod-B HOLDS bentbeam-D`; 8047-step-12 `CONNECT rod-B.pin2 -> beam9-Y.hole?`; 8047-step-12 `DOES rod-B HOLDS beam9-Y`.
+
 ## 8047-step-03 (page 3) - medium - NEEDS REVIEW
 
 ![8047-step-03](steps/main-03/picture.png)
@@ -47,6 +55,11 @@
 **After:** bentbeam-D: one side of the frame, pointing forward; pin-E, pin-F: sticking backward out of beam-C; everything else: no change
 
 **Why:** Starts one side of the front frame and readies the turntable mount. An L-shaped beam goes up and over the shaft, then runs forward; two pins give a firm two-point grip. *Next:* pin-E and pin-F hold the turntable in step 8; bentbeam-D's front end takes a connector in step 4. *Pattern:* two-pin mount (stops twisting)
+
+**Big picture:**
+- **bentbeam-D** (Undercarriage frame): Right side of the front U; reaches forward to the front cross beam. Later: 8047-step-04 `CONNECT axle-red-G.axle1 -> bentbeam-D.hole?`; 8047-step-04 `DOES bentbeam-D HOLDS axle-red-G`; 8047-step-07 `DOES beam7-N SUPPORTS bentbeam-D`.
+- **pin-E** (Undercarriage frame): One of the two pins the turntable's fixed half sits on (step 8). Later: 8047-step-08 `CONNECT pin-E.pin2 -> turntable-O.base.hole?`; 8047-step-08 `DOES pin-E HOLDS turntable-O`.
+- **pin-F** (Undercarriage frame): The other turntable pin. Later: 8047-step-08 `CONNECT pin-F.pin2 -> turntable-O.base.hole?`; 8047-step-08 `DOES pin-F HOLDS turntable-O`.
 
 **Review:** The two pins have no arrow; their holes are read from where they appear in the picture.
 
@@ -66,6 +79,10 @@
 
 **Why:** Gives the front corner a pin hole facing up. The connector has an axle hole and a pin hole at right angles, so it turns a sideways axle into an upward hole. *Next:* connector-H takes pin-L in step 6. *Pattern:* change direction with an axle-pin connector
 
+**Big picture:**
+- **axle-red-G** (Undercarriage frame): Short axle that fixes connector-H to bentbeam-D's front end without letting it turn.
+- **connector-H** (Undercarriage frame): Turns the right front corner into an upward pin hole for pin-L. Later: 8047-step-06 `CONNECT pin-L.pin1 -> connector-H.hole1 STIFF`; 8047-step-06 `DOES connector-H HOLDS pin-L`.
+
 ## 8047-step-05 (page 4) - high
 
 ![8047-step-05](steps/main-05/picture.png)
@@ -81,6 +98,11 @@
 **After:** Model is a U: shaft at the back, bentbeam-D and bentbeam-I forward, a connector at each front corner; everything from steps 1-4: no change
 
 **Why:** Builds the other side so the frame is the same on both sides. Same parts as steps 3-4, so the two sides match. *Next:* connector-K takes pin-M in step 6. *Pattern:* mirror the side (symmetry)
+
+**Big picture:**
+- **bentbeam-I** (Undercarriage frame): Left side of the front U, mirror of bentbeam-D. Later: 8047-step-07 `DOES beam7-N SUPPORTS bentbeam-I`.
+- **axle-red-J** (Undercarriage frame): Mirror of axle-red-G on the left.
+- **connector-K** (Undercarriage frame): Mirror of connector-H on the left, for pin-M. Later: 8047-step-06 `CONNECT pin-M.pin1 -> connector-K.hole1 STIFF`; 8047-step-06 `DOES connector-K HOLDS pin-M`.
 
 ## 8047-step-06 (page 4) - high
 
@@ -98,6 +120,10 @@
 
 **Why:** Gives the front corners pegs to hang a crossbar on. Plain friction pins hold firmly without spinning loose. *Next:* beam7-N goes on these in step 7. *Pattern:* pegs for a crossbar
 
+**Big picture:**
+- **pin-L** (Undercarriage frame): Right front pin; holds the front cross beam beam7-N. Later: 8047-step-07 `CONNECT pin-L.pin2 -> beam7-N.hole?`; 8047-step-07 `DOES pin-L LOCKS beam7-N`.
+- **pin-M** (Undercarriage frame): Left front pin; holds beam7-N. Later: 8047-step-07 `CONNECT pin-M.pin2 -> beam7-N.hole?`; 8047-step-07 `DOES pin-M LOCKS beam7-N`.
+
 ## 8047-step-07 (page 4) - high
 
 ![8047-step-07](steps/main-07/picture.png)
@@ -114,6 +140,9 @@
 
 **Why:** Closes the U so the two sides can't spread or twist. A 7-hole beam is long enough to span both front corners. *Next:* Its spare holes are free for later parts; not shown yet. *Pattern:* closed box frame
 
+**Big picture:**
+- **beam7-N** (Undercarriage frame): Front cross beam: closes the U into a rectangle so the frame can't spread under the turntable's weight.
+
 ## 8047-step-08 (page 5) - medium - NEEDS REVIEW
 
 ![8047-step-08](steps/main-08/picture.png)
@@ -129,6 +158,9 @@
 **After:** turntable-O: behind the frame, grey half fixed to it; everything else: no change
 
 **Why:** Adds the joint that lets the whole upper body turn all the way around. This big turntable has two halves that turn against each other, with 24 teeth inside and 56 outside for a gear to drive later. *Next:* The black-toothed half faces up once the model is flipped in step 16 and will carry the cab. *Pattern:* turntable joint between undercarriage and upper body
+
+**Big picture:**
+- **turntable-O** (Swing ring (turntable)): The joint between lower and upper machine: fixed half pinned to the chassis, turning half carries the whole upper body. Later: 8047-step-09 `CONNECT pin-P.pin1 -> turntable-O.base.hole?`; 8047-step-09 `CONNECT pin-Q.pin1 -> turntable-O.base.hole?`; 8047-step-09 `DOES turntable-O HOLDS pin-P`; 8047-step-09 `DOES turntable-O HOLDS pin-Q`; 8047-step-16 `CONNECT pinlong-1.pin1 -> turntable-O.top.hole?`; 8047-step-16 `CONNECT pinlong-2.pin1 -> turntable-O.top.hole?`; 8047-step-16 `DOES turntable-O HOLDS pinlong-1`; 8047-step-16 `DOES turntable-O HOLDS pinlong-2`; 8047-step-17 `DOES turntable-O SUPPORTS seat`.
 
 **Review:** No arrow; the join to pin-E and pin-F is read from how the parts line up.
 
@@ -148,6 +180,11 @@
 
 **Why:** Adds a back mounting point so the turntable is held at both front and back. The same triple connector as beam-C, now at the back, gives a matching axle hole for a back cross bar. *Next:* A cross axle goes through beam-R in step 10. *Pattern:* two-pin mount (stops twisting)
 
+**Big picture:**
+- **pin-P** (Undercarriage frame): Pins beam-R to the turntable's fixed half at the back.
+- **pin-Q** (Undercarriage frame): Second pin for beam-R (two pins stop it twisting).
+- **beam-R** (Undercarriage frame): Back mount: gives the back cross axle a hole and ties it to the turntable's fixed half. Later: 8047-step-10 `CONNECT axle-S.axle2 -> beam-R.axlehole1 LOCKED`; 8047-step-10 `DOES beam-R HOLDS axle-S`.
+
 ## 8047-step-10 (page 5) - high
 
 ![8047-step-10](steps/main-10/picture.png)
@@ -163,6 +200,11 @@
 **After:** right half of the back cross bar done, blue pin pointing right; everything else: no change
 
 **Why:** Starts a back cross bar reaching out to the right side rail. The axle connector extends the axle, and the blue axle pin turns its end into a pin for a beam to hang on. *Next:* pin-U holds the right side rail in step 12. *Pattern:* axle extended to a pin end
+
+**Big picture:**
+- **axle-S** (Undercarriage frame): Back cross axle; reaches out to both side rails. Later: 8047-step-11 `CONNECT axle-S.axle1 -> connector-W.axlehole?`; 8047-step-11 `DOES axle-S CARRIES connector-W`.
+- **connector-T** (Undercarriage frame): Right end of the back cross axle; turns it into a pin end via pin-U.
+- **pin-U** (Undercarriage frame): Right back pin; holds the right side rail beam9-Y. Later: 8047-step-12 `CONNECT pin-U.pin1 -> beam9-Y.hole?`; 8047-step-12 `DOES pin-U HOLDS beam9-Y`.
 
 ## 8047-step-11 (page 6) - high
 
@@ -180,6 +222,10 @@
 
 **Why:** Finishes the back cross bar on the left side. Same parts as step 10, so both sides match. *Next:* pin-V holds the left side rail in step 12. *Pattern:* mirror the side (symmetry)
 
+**Big picture:**
+- **connector-W** (Undercarriage frame): Left end of the back cross axle; turns it into a pin end via pin-V.
+- **pin-V** (Undercarriage frame): Left back pin; holds the left side rail beam9-X. Later: 8047-step-12 `CONNECT pin-V.pin1 -> beam9-X.hole?`; 8047-step-12 `DOES pin-V HOLDS beam9-X`.
+
 ## 8047-step-12 (page 6) - medium - NEEDS REVIEW
 
 ![8047-step-12](steps/main-12/picture.png)
@@ -195,6 +241,10 @@
 **After:** two long side rails tie the front frame, turntable and back cross bar together; everything else: no change
 
 **Why:** Ties front and back into one stiff base and sets the track length. 9-hole beams reach from the shaft to the back cross bar with a hole left over at each end. *Next:* Their end holes take the four wheel axles in step 13. *Pattern:* side rails (track frame)
+
+**Big picture:**
+- **beam9-X** (Undercarriage frame): Left side rail: ties front and back of the frame together and carries the left track's two wheels. Later: 8047-step-13 `CONNECT tan-1.pin1 -> beam9-X.hole1 TURNS`; 8047-step-13 `CONNECT tan-2.pin1 -> beam9-X.hole9 TURNS`; 8047-step-13 `DOES tan-1 SPINS_ON beam9-X`; 8047-step-13 `DOES tan-2 SPINS_ON beam9-X`; 8047-step-15 `DOES beam9-X SUPPORTS track-left`.
+- **beam9-Y** (Undercarriage frame): Right side rail, mirror of beam9-X. Later: 8047-step-13 `CONNECT tan-3.pin1 -> beam9-Y.hole1 TURNS`; 8047-step-13 `CONNECT tan-4.pin1 -> beam9-Y.hole9 TURNS`; 8047-step-13 `DOES tan-3 SPINS_ON beam9-Y`; 8047-step-13 `DOES tan-4 SPINS_ON beam9-Y`; 8047-step-15 `DOES beam9-Y SUPPORTS track-right`.
 
 **Review:** Which rod (A or B) is on the left vs right is not clear from the angle change between steps 3 and 5.
 
@@ -214,6 +264,12 @@
 
 **Why:** Adds four wheel axles that turn freely. Tan pins have no friction ridges, so they spin easily; their axle ends will grip a gear. *Next:* Each takes a track wheel in step 14. *Pattern:* free-spinning axle (smooth pin)
 
+**Big picture:**
+- **tan-1** (Tracks): Frictionless axle pin: lets the front-left track wheel spin freely on the rail. Later: 8047-step-14 `CONNECT gear-1.axlehole1 -> tan-1.axle1 LOCKED`; 8047-step-14 `DOES tan-1 CARRIES gear-1`.
+- **tan-2** (Tracks): Same, back-left wheel. Later: 8047-step-14 `CONNECT gear-2.axlehole1 -> tan-2.axle1 LOCKED`; 8047-step-14 `DOES tan-2 CARRIES gear-2`.
+- **tan-3** (Tracks): Same, front-right wheel. Later: 8047-step-14 `CONNECT gear-3.axlehole1 -> tan-3.axle1 LOCKED`; 8047-step-14 `DOES tan-3 CARRIES gear-3`.
+- **tan-4** (Tracks): Same, back-right wheel. Later: 8047-step-14 `CONNECT gear-4.axlehole1 -> tan-4.axle1 LOCKED`; 8047-step-14 `DOES tan-4 CARRIES gear-4`.
+
 ## 8047-step-14 (page 6) - high
 
 ![8047-step-14](steps/main-14/picture.png)
@@ -229,6 +285,12 @@
 **After:** a 16-tooth gear at each corner; everything else: no change
 
 **Why:** Adds the wheels the tracks run around. The tread links have teeth that mesh with a 16-tooth gear, so a gear works as a track wheel. *Next:* Step 15 wraps 28 track links around each pair of gears; nothing drives them, they roll when the model is pushed. *Pattern:* gears as track wheels (idlers)
+
+**Big picture:**
+- **gear-1** (Tracks): Front-left track wheel: its teeth sit in the tread links. Later: 8047-step-15 `MESH tread-?.teeth gear-1.teeth`; 8047-step-15 `DOES gear-1 HOLDS track-left`.
+- **gear-2** (Tracks): Back-left track wheel. Later: 8047-step-15 `MESH tread-?.teeth gear-2.teeth`; 8047-step-15 `DOES gear-2 HOLDS track-left`.
+- **gear-3** (Tracks): Front-right track wheel. Later: 8047-step-15 `MESH tread-?.teeth gear-3.teeth`; 8047-step-15 `DOES gear-3 HOLDS track-right`.
+- **gear-4** (Tracks): Back-right track wheel. Later: 8047-step-15 `MESH tread-?.teeth gear-4.teeth`; 8047-step-15 `DOES gear-4 HOLDS track-right`.
 
 ## 8047-step-15 (page 7) - high
 
@@ -246,6 +308,10 @@
 
 **Why:** Gives the excavator its tracks. Tread links clip into a loop of any length and their teeth fit a 16-tooth gear, so two gears per side make a track. *Next:* The undercarriage is finished; step 16 flips it over to build the top. *Pattern:* track loop around two idler gears
 
+**Big picture:**
+- **tread-1** (Tracks): One link of a track loop; 28 links make a loop just long enough to wrap two 16-tooth wheels tightly.
+- **tread-29** (Tracks): One link of a track loop; 28 links make a loop just long enough to wrap two 16-tooth wheels tightly.
+
 ## 8047-step-16 (page 7) - medium - NEEDS REVIEW
 
 ![8047-step-16](steps/main-16/picture.png)
@@ -261,6 +327,10 @@
 **After:** model right side up, tracks on the ground; turntable-O: the turning half is on top; everything else: no change
 
 **Why:** Gives the turning half of the turntable two mounting pins. Long pins stick out far enough to take a beam on their free half. *Next:* The seat frame drops onto them in step 17. *Pattern:* pins as mounting posts
+
+**Big picture:**
+- **pinlong-1** (Swing ring (turntable)): Mounting post on the turning half: holds the seat frame (steps 17-18) and the left side frame (step 24). Later: 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-17 `DOES pinlong-1 HOLDS seat`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-18 `DOES pinlong-1 LOCKS seat`; 8047-step-24 `CONNECT pinlong-1.pin3 -> bent11-B.hole1 STIFF`; 8047-step-24 `DOES pinlong-1 HOLDS bent11-B`.
+- **pinlong-2** (Swing ring (turntable)): Second mounting post on the turning half for the seat frame. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-17 `DOES pinlong-2 HOLDS seat`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-18 `DOES pinlong-2 LOCKS seat`.
 
 **Review:** No arrows: which hole of each block the pins use is read from the picture only.
 
@@ -280,6 +350,11 @@
 
 **Why:** Starts the seat frame with a block that has pins pointing in many directions. Hub connectors turn one spot into pins facing three ways, so beams can be added at right angles. *Next:* The blue L-beams go on these pins in steps 2 and 4. *Pattern:* pin hub core
 
+**Big picture:**
+- **hub4-s** (Upper frame and seat): Core block of the seat: pins in many directions let the seat back and the axle holders join at right angles. Later: 8047-seat-step-02 `CONNECT lbeam-s1.hole? -> hub4-s.pin?`; 8047-seat-step-02 `DOES hub4-s HOLDS lbeam-s1`; 8047-seat-step-05 `CONNECT block-s.hole1 -> hub4-s.pin?`; 8047-seat-step-05 `CONNECT conn-s1.pinhole? -> hub4-s.pin?`; 8047-seat-step-05 `DOES hub4-s HOLDS block-s`; 8047-seat-step-05 `DOES hub4-s HOLDS conn-s1`.
+- **pin-s1** (Upper frame and seat): Pin in the hub core; part of the seat's mounting.
+- **hub2-s** (Upper frame and seat): Adds more pins to the core so the seat parts lock together.
+
 **Review:** pin-s1 is already in hub4-s in the picture with no arrow; which hole it uses is a guess.
 
 ## 8047-seat-step-02 (page 8) - high
@@ -298,6 +373,9 @@
 
 **Why:** Adds the seat back. An L-beam gives a seat and a back in one part. *Next:* Step 3 puts a beam beside its long arm. *Pattern:* L-beam as seat
 
+**Big picture:**
+- **lbeam-s1** (Upper frame and seat): Seat back and seat in one part. Later: 8047-seat-step-03 `CONNECT beam5-s.hole? -> lbeam-s1.hole?`; 8047-seat-step-03 `DOES lbeam-s1 SUPPORTS beam5-s`.
+
 ## 8047-seat-step-03 (page 8) - medium - NEEDS REVIEW
 
 ![8047-seat-step-03](steps/seat-03/picture.png)
@@ -313,6 +391,11 @@
 **After:** beam5-s: upright next to the seat back, two pins sticking forward; everything else: no change
 
 **Why:** Thickens the seat back and gives it two forward pins. A straight 5-beam lines up with the L-beam's long arm. *Next:* The second blue L-beam goes on pin-s2 and pin-s3 in step 4. *Pattern:* doubled upright
+
+**Big picture:**
+- **beam5-s** (Upper frame and seat): Thickens the seat back and carries the two pins for the second blue L.
+- **pin-s2** (Upper frame and seat): Holds the second seat L-beam. Later: 8047-seat-step-04 `CONNECT pin-s2.pin3 -> lbeam-s2.hole?`; 8047-seat-step-04 `DOES pin-s2 LOCKS lbeam-s2`.
+- **pin-s3** (Upper frame and seat): Second pin for the second seat L-beam. Later: 8047-seat-step-04 `CONNECT pin-s3.pin3 -> lbeam-s2.hole?`; 8047-seat-step-04 `DOES pin-s3 LOCKS lbeam-s2`.
 
 **Review:** Which holes of beam5-s the pins use, and how beam5-s is held to lbeam-s1, is not clear.
 
@@ -332,6 +415,9 @@
 
 **Why:** Closes the seat into a solid block. Same L-beam as step 2, mirrored around the gray beam. *Next:* The seat sits on top of the frame built in steps 5-11. *Pattern:* mirror the side
 
+**Big picture:**
+- **lbeam-s2** (Upper frame and seat): Second seat L-beam; makes the seat a solid block.
+
 ## 8047-seat-step-05 (page 9) - medium - NEEDS REVIEW
 
 ![8047-seat-step-05](steps/seat-05/picture.png)
@@ -347,6 +433,10 @@
 **After:** two axle holes now under the seat; everything else: no change
 
 **Why:** Adds axle holes under the seat. These connectors change pins into axle holes. *Next:* Axles go through them in steps 6 and 10. *Pattern:* pin to axle-hole adapter
+
+**Big picture:**
+- **conn-s1** (Upper frame and seat): Gives the first cross axle axle9-s1 its hole under the seat. Later: 8047-seat-step-06 `CONNECT axle9-s1.axle5 -> conn-s1.axlehole1 LOCKED`; 8047-seat-step-06 `DOES conn-s1 HOLDS axle9-s1`.
+- **block-s** (Upper frame and seat): Gives the gear shaft axle7-s its hole under the seat. Later: 8047-seat-step-07 `CONNECT axle7-s.axle4 -> block-s.axlehole1 LOCKED`.
 
 **Review:** conn-s1 has no arrow; its place is read from the picture.
 
@@ -366,6 +456,9 @@
 
 **Why:** Adds the first cross bar of the seat frame. A long axle reaches both side beams of the frame. *Next:* Its ends take the dark gray L-beams in steps 8 and 11. *Pattern:* axle as cross bar
 
+**Big picture:**
+- **axle9-s1** (Upper frame and seat): Cross bar of the upper frame: carries both side plates and later conn3c-1. Later: 8047-seat-step-08 `CONNECT axle9-s1.axle1 -> lbeam-s3.hole?`; 8047-seat-step-08 `DOES axle9-s1 CARRIES lbeam-s3`; 8047-seat-step-09 `CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED`; 8047-seat-step-11 `CONNECT axle9-s1.axle9 -> lbeam-s4.hole?`; 8047-seat-step-11 `DOES axle9-s1 CARRIES lbeam-s4`; 8047-step-22 `CONNECT conn3c-1.axlehole1 -> axle9-s1.axle9 LOCKED`; 8047-step-22 `DOES conn3c-1 HOLDS axle9-s1`.
+
 ## 8047-seat-step-07 (page 9) - medium - NEEDS REVIEW
 
 ![8047-seat-step-07](steps/seat-07/picture.png)
@@ -381,6 +474,11 @@
 **After:** a gear on the left, an axle running left to right under the seat; everything else: no change
 
 **Why:** Adds a turning shaft with a gear. A bush keeps an axle from sliding out without stopping it from turning. *Next:* A 24-tooth crown gear goes on this shaft in step 11. *Pattern:* shaft with gear and stop bush
+
+**Big picture:**
+- **gear-5** (Front worm drive (knob-2)): Passes the shaft's turning to gear-6 (1:1). Later: 8047-step-22 `MESH gear-5.teeth gear-6.teeth`; 8047-step-22 `RATIO gear-5 gear-6 16/16`; 8047-step-22 `DOES gear-5 DRIVES gear-6`.
+- **axle7-s** (Front worm drive (knob-2)): Shaft under the seat: carries crown-1 and gear-5, passing the worm's turning across to the left side. Later: 8047-seat-step-11 `CONNECT crown-1.axlehole1 -> axle7-s.axle7 LOCKED`; 8047-seat-step-11 `DOES axle7-s CARRIES crown-1`; 8047-step-28 `CONNECT bush-28.axlehole1 -> axle7-s.axle7 LOCKED`; 8047-step-28 `DOES bush-28 LOCKS axle7-s`.
+- **bush-s1** (Front worm drive (knob-2)): Stops axle7-s sliding.
 
 **Review:** Whether axle7-s turns freely in block-s depends on block-s's hole type; check in a 3D view.
 
@@ -400,6 +498,9 @@
 
 **Why:** Adds the left side of the seat frame. An L-beam gives a side and a leg in one part. *Next:* Its leg rests on the turntable in step 17. *Pattern:* L-beam side plate
 
+**Big picture:**
+- **lbeam-s3** (Upper frame and seat): Left side plate of the upper frame; its leg goes on pinlong-1 to fix the frame to the turntable. Later: 8047-seat-step-09 `DOES bush-s2 LOCKS lbeam-s3`; 8047-seat-step-10 `CONNECT axle9-s2.axle1 -> lbeam-s3.hole?`; 8047-seat-step-10 `DOES lbeam-s3 HOLDS axle9-s2`; 8047-step-17 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`; 8047-step-18 `CONNECT pinlong-1.pin3 -> lbeam-s3.hole?`.
+
 **Review:** Which hole of lbeam-s3 takes the axle is not clear.
 
 ## 8047-seat-step-09 (page 10) - high
@@ -418,6 +519,9 @@
 
 **Why:** Stops lbeam-s3 sliding off. A bush grips the axle end. *Next:* Nothing else goes on this end. *Pattern:* bush as end stop
 
+**Big picture:**
+- **bush-s2** (Upper frame and seat): Stops lbeam-s3 sliding off axle9-s1.
+
 ## 8047-seat-step-10 (page 11) - medium - NEEDS REVIEW
 
 ![8047-seat-step-10](steps/seat-10/picture.png)
@@ -433,6 +537,10 @@
 **After:** two parallel axles under the seat; everything else: no change
 
 **Why:** Adds the second cross bar of the seat frame. Two axles keep the side beams from twisting. *Next:* Both axle ends take lbeam-s4 in step 11. *Pattern:* two-bar frame
+
+**Big picture:**
+- **axle9-s2** (Upper frame and seat): Second cross bar; with axle9-s1 it keeps the side plates square. Later: 8047-seat-step-11 `CONNECT axle9-s2.axle9 -> lbeam-s4.hole?`; 8047-seat-step-11 `DOES axle9-s2 CARRIES lbeam-s4`; 8047-step-22 `CONNECT conn3c-1.axlehole2 -> axle9-s2.axle9 LOCKED`.
+- **bush-s3** (Upper frame and seat): Stops axle9-s2 sliding.
 
 **Review:** Exact holes for axle9-s2 not visible.
 
@@ -452,6 +560,10 @@
 
 **Why:** Closes the seat frame and finishes the gear shaft. A crown gear can mesh with a gear at right angles. *Next:* The whole seat build goes on the turntable in step 17. *Pattern:* mirror the side
 
+**Big picture:**
+- **lbeam-s4** (Upper frame and seat): Right side plate; its leg goes on pinlong-2. Later: 8047-step-17 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`; 8047-step-18 `CONNECT pinlong-2.pin3 -> lbeam-s4.hole?`.
+- **crown-1** (Front worm drive (knob-2)): 24-tooth gear the worm turns; the 1:24 slow-down happens here. Later: 8047-step-26 `MESH worm-1.teeth crown-1.teeth`; 8047-step-26 `RATIO worm-1 crown-1 1/24`; 8047-step-26 `DOES worm-1 DRIVES crown-1`.
+
 **Review:** Not confirmed what crown-1 meshes with; check in later steps.
 
 ## 8047-step-17 (page 12) - medium - NEEDS REVIEW
@@ -469,6 +581,9 @@
 **After:** seat build: on top of the turntable, turns with it; everything else: no change
 
 **Why:** Puts the seat on the turning half. Mounting on the turntable lets the whole upper body turn on the tracks. *Next:* Steps 18 onward build the drive around it. *Pattern:* upper body on turntable
+
+**Big picture:**
+
 
 **Review:** No new parts. Which leg goes on which pin is read from the arrows only.
 
@@ -488,6 +603,9 @@
 
 **Why:** Locks the seat build down so it can't lift off. No new parts: pushing the long pins home is enough. *Next:* The drive parts in steps 19-28 are built around the locked seat. *Pattern:* push pins home to lock
 
+**Big picture:**
+
+
 **Review:** No parts box; reading the arrows as 'push the blue pins in'.
 
 ## 8047-step-19 (page 14) - medium - NEEDS REVIEW
@@ -505,6 +623,12 @@
 **After:** a long shaft under the seat with a pin end on one side and conn3-1 on the other; everything else: no change
 
 **Why:** Adds a long cross shaft under the seat for the side frames to hang on. An axle connector plus axle pin turns an axle end into a pin, so a beam can swing on it. *Next:* The double-bent side beams go on its ends in steps 20 and 24. *Pattern:* axle-to-pin shaft
+
+**Big picture:**
+- **axle7-B** (Front worm drive (knob-2)): Long shaft that receives the turning from gear-6. Where it ends up is an open question. Later: 8047-step-22 `CONNECT gear-6.axlehole1 -> axle7-B.axle7 LOCKED`; 8047-step-22 `DOES axle7-B CARRIES gear-6`.
+- **axcon-1** (Upper frame and seat): Joins axle7-B to axpin-1 so the shaft ends in a pin.
+- **axpin-1** (Upper frame and seat): Pin end that carries bent11-A (step 20). Later: 8047-step-20 `CONNECT axpin-1.pin1 -> bent11-A.hole1 STIFF`; 8047-step-20 `DOES axpin-1 HOLDS bent11-A`.
+- **conn3-1** (Upper frame and seat): Standing connector on axle7-B's other end.
 
 **Review:** Model is turned around (turn symbol); which holes the shaft passes through is not visible.
 
@@ -524,6 +648,9 @@
 
 **Why:** Starts the side frame of the upper body. A double-bent beam goes round the turntable and rises at the back in one part. *Next:* Step 21 pins things into its bent end. *Pattern:* bent beam side frame
 
+**Big picture:**
+- **bent11-A** (Upper frame and seat): Right side frame: wraps round the turntable and rises at the back; carries the body, side covers and roof post. Later: 8047-step-21 `CONNECT pin-21a.pin1 -> bent11-A.hole?`; 8047-step-21 `CONNECT pin-21b.pin1 -> bent11-A.hole?`; 8047-step-21 `CONNECT axle3-21.axle1 -> bent11-A.hole?`; 8047-step-21 `DOES bent11-A HOLDS pin-21a`; 8047-step-21 `DOES bent11-A HOLDS pin-21b`; 8047-step-21 `DOES bent11-A HOLDS axle3-21`; 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole?`; 8047-step-30 `DOES bent11-A SUPPORTS body`; 8047-step-48 `CONNECT pin-48.pin2 -> bent11-A.hole?`; 8047-step-49 `CONNECT beam9-49.hole? -> bent11-A.hole?`; 8047-step-49 `DOES bent11-A SUPPORTS beam9-49`.
+
 **Review:** Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
 
 ## 8047-step-21 (page 16) - medium - NEEDS REVIEW
@@ -541,6 +668,11 @@
 **After:** two pins and a short axle stick out of bent11-A; everything else: no change
 
 **Why:** Adds mounting points on the side frame. Friction pins and a short axle let the yellow body clip on later. *Next:* The yellow body build sits on these in step 30. *Pattern:* pins as mounting posts
+
+**Big picture:**
+- **pin-21a** (Upper frame and seat): Mount on bent11-A for the right side cover (step 37). Later: 8047-step-37 `CONNECT beam11-37.hole? -> pin-21a.pin2`; 8047-step-37 `DOES pin-21a HOLDS beam11-37`.
+- **pin-21b** (Upper frame and seat): Second mount pin on bent11-A.
+- **axle3-21** (Upper frame and seat): Short axle on bent11-A; end held by bush-27. Later: 8047-step-27 `CONNECT bush-27.axlehole1 -> axle3-21.axle3 LOCKED`; 8047-step-27 `DOES bush-27 LOCKS axle3-21`.
 
 **Review:** Exact holes not visible.
 
@@ -560,6 +692,10 @@
 
 **Why:** Links the seat gear shaft to the long shaft. Two 16-tooth gears pass turning on at 1:1. *Next:* conn3c-1 carries the control lever in step 23. *Pattern:* gear pair 1:1
 
+**Big picture:**
+- **conn3c-1** (Upper frame and seat): Joins the two cross axles' ends and gives the control lever a pivot. Later: 8047-step-23 `CONNECT crank-1.axlehole? -> conn3c-1.hole1`.
+- **gear-6** (Front worm drive (knob-2)): Receives the turning from gear-5.
+
 **Review:** conn3c-1 has no arrow. That gear-5 meshes gear-6 is read from the picture.
 
 ## 8047-step-23 (page 18) - medium - NEEDS REVIEW
@@ -577,6 +713,10 @@
 **After:** a lever sticks up in front of the seat; everything else: no change
 
 **Why:** Adds a lever in front of the seat. A crank plus a bent link makes a lever that swings. *Next:* The lever works the arm via the push rod added later. *Pattern:* crank and link lever
+
+**Big picture:**
+- **link9-1** (Boom (arm) with worm drive): Bent link from the crank to the boom's base pivot (axle3-a4, step 38): holds the boom to the frame as part of its lift linkage. Exact motion not confirmed. Later: 8047-step-38 `CONNECT axle3-a4.axle3 -> link9-1.hole3 TURNS`; 8047-step-38 `DOES link9-1 HOLDS arm`.
+- **crank-1** (Boom (arm) with worm drive): Crank on conn3c-1 in front of the seat: the fixed pivot the boom's lift link swings on.
 
 **Review:** What the lever moves is not confirmed yet.
 
@@ -596,6 +736,9 @@
 
 **Why:** Adds the second side frame. Same part as step 20, mirrored. *Next:* Step 25 pins into it. *Pattern:* mirror the side
 
+**Big picture:**
+- **bent11-B** (Upper frame and seat): Left side frame, mirror of bent11-A. Later: 8047-step-25 `CONNECT pin-25a.pin1 -> bent11-B.hole?`; 8047-step-25 `CONNECT pin-25b.pin1 -> bent11-B.hole?`; 8047-step-25 `CONNECT axle3-25.axle1 -> bent11-B.hole?`; 8047-step-25 `DOES bent11-B HOLDS pin-25a`; 8047-step-25 `DOES bent11-B HOLDS pin-25b`; 8047-step-25 `DOES bent11-B HOLDS axle3-25`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole?`; 8047-step-30 `DOES bent11-B SUPPORTS body`; 8047-step-35 `CONNECT beam9-35.hole? -> bent11-B.hole?`; 8047-step-35 `DOES bent11-B SUPPORTS beam9-35`.
+
 **Review:** Which blue pin is used is read from the arrow only.
 
 ## 8047-step-25 (page 20) - medium - NEEDS REVIEW
@@ -613,6 +756,11 @@
 **After:** mounting pins on both side frames; everything else: no change
 
 **Why:** Matches step 21 on this side. Same parts, mirrored. *Next:* The yellow body sits on these in step 30. *Pattern:* mirror the side
+
+**Big picture:**
+- **pin-25a** (Upper frame and seat): Mount on bent11-B; later holds the left roof post (step 51). Later: 8047-step-51 `CONNECT post-L.hole1 -> pin-25a.pin2 STIFF`; 8047-step-51 `DOES pin-25a HOLDS post-L`.
+- **pin-25b** (Upper frame and seat): Second mount pin on bent11-B.
+- **axle3-25** (Upper frame and seat): Short axle on bent11-B, matching axle3-21.
 
 **Review:** Exact holes not visible.
 
@@ -632,6 +780,12 @@
 
 **Why:** Adds the slow drive for the gear train. A worm only turns the gear, never the other way, so the upper body stays where you leave it. *Next:* A knob goes on this shaft in step 34. *Pattern:* worm drive (self-locking)
 
+**Big picture:**
+- **axle8s-1** (Front worm drive (knob-2)): Worm shaft running to the back: knob-2 at one end, worm-1 in the middle. Later: 8047-step-32 `CONNECT bush-32.axlehole1 -> axle8s-1.axle1 LOCKED`; 8047-step-32 `DOES bush-32 LOCKS axle8s-1`; 8047-step-34 `CONNECT knob-2.axlehole1 -> axle8s-1.axle8 LOCKED`; 8047-step-34 `DOES axle8s-1 CARRIES knob-2`.
+- **conn3-2** (Front worm drive (knob-2)): Holds the worm shaft in line.
+- **worm-1** (Front worm drive (knob-2)): The self-locking slow-down: one knob turn = one tooth of crown-1.
+- **bush-26** (Front worm drive (knob-2)): Keeps the worm in place over crown-1.
+
 **Review:** The worm meshing crown-1 is read from the picture.
 
 ## 8047-step-27 (page 22) - medium - NEEDS REVIEW
@@ -649,6 +803,9 @@
 **After:** everything: no change
 
 **Why:** Stops an axle sliding out. A bush grips the axle end. *Next:* Nothing more goes on this end. *Pattern:* bush as end stop
+
+**Big picture:**
+- **bush-27** (Upper frame and seat): Stops axle3-21 sliding out.
 
 **Review:** Which axle gets the bush is read from the arrow only.
 
@@ -668,6 +825,9 @@
 
 **Why:** Keeps the crown gear shaft from sliding. A bush lets the shaft spin but not slide. *Next:* The model is turned in step 29. *Pattern:* bush as end stop
 
+**Big picture:**
+- **bush-28** (Front worm drive (knob-2)): Stops axle7-s sliding at the crown-gear end.
+
 **Review:** Dashed arrow read as 'push the worm shaft home'.
 
 ## 8047-step-29 (page 23) - high
@@ -686,6 +846,9 @@
 
 **Why:** Shows the back so the yellow body can go on. View change only. *Next:* The body build attaches in step 30. *Pattern:* turn the model
 
+**Big picture:**
+
+
 ## 8047-body-step-01 (page 24) - high
 
 ![8047-body-step-01](steps/body-01/picture.png)
@@ -702,6 +865,11 @@
 
 **Why:** Starts the yellow back body. Long pins leave a free half to hang the body on the frame. *Next:* The fairings go on in steps 3 and 5. *Pattern:* pins as mounting posts
 
+**Big picture:**
+- **pin-b1** (Engine cover and side covers): Holds fairing-2 and later the left bearing ycon-2. Later: 8047-body-step-05 `CONNECT pin-b1.pin3 -> fairing-2.hole?`; 8047-body-step-05 `DOES pin-b1 HOLDS fairing-2`; 8047-step-30 `CONNECT pin-b1.pin3 -> bent11-B.hole?`; 8047-step-32 `CONNECT ycon-2.hole1 -> pin-b1.pin3 STIFF`; 8047-step-32 `DOES pin-b1 HOLDS ycon-2`.
+- **pin-b2** (Engine cover and side covers): Holds the right bearing ycon-1. Later: 8047-step-30 `CONNECT pin-b2.pin3 -> bent11-A.hole?`; 8047-step-32 `CONNECT ycon-1.hole1 -> pin-b2.pin3 STIFF`; 8047-step-32 `DOES pin-b2 HOLDS ycon-1`.
+- **beam9-b** (Engine cover and side covers): Spine of the engine cover. Later: 8047-body-step-02 `CONNECT pin-b3.pin1 -> beam9-b.hole?`; 8047-body-step-02 `CONNECT pin-b4.pin1 -> beam9-b.hole?`; 8047-body-step-02 `CONNECT pin-b5.pin1 -> beam9-b.hole?`.
+
 ## 8047-body-step-02 (page 24) - medium - NEEDS REVIEW
 
 ![8047-body-step-02](steps/body-02/picture.png)
@@ -717,6 +885,12 @@
 **After:** beam3-b on top of beam9-b, two more pins sticking up
 
 **Why:** Adds a block and extra pins to the body beam. A 3-beam stiffens and spaces the panel. *Next:* Fairing 1 goes on two pins in step 3. *Pattern:* pins as mounting posts
+
+**Big picture:**
+- **beam3-b** (Engine cover and side covers): Block that carries the body's gear shaft. Later: 8047-body-step-04 `CONNECT axle4s-b.axle2 -> beam3-b.hole?`; 8047-body-step-04 `DOES axle4s-b SPINS_ON beam3-b`.
+- **pin-b3** (Engine cover and side covers): Holds beam3-b and fairing-2. Later: 8047-body-step-05 `CONNECT pin-b3.pin2 -> fairing-2.hole?`; 8047-body-step-05 `DOES pin-b3 HOLDS fairing-2`.
+- **pin-b4** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b4.pin2 -> fairing-1.hole?`; 8047-body-step-03 `DOES pin-b4 HOLDS fairing-1`.
+- **pin-b5** (Engine cover and side covers): Holds fairing-1. Later: 8047-body-step-03 `CONNECT pin-b5.pin2 -> fairing-1.hole?`; 8047-body-step-03 `DOES pin-b5 HOLDS fairing-1`.
 
 **Review:** Which pin holds beam3-b is read from the arrow only.
 
@@ -736,6 +910,9 @@
 
 **Why:** Adds the first side panel. Fairings give the smooth engine-cover look. *Next:* Its mirror goes on in step 5. *Pattern:* panel on pins
 
+**Big picture:**
+- **fairing-1** (Engine cover and side covers): Right engine-cover panel (looks).
+
 ## 8047-body-step-04 (page 25) - medium - NEEDS REVIEW
 
 ![8047-body-step-04](steps/body-04/picture.png)
@@ -751,6 +928,11 @@
 **After:** a gear shaft through the body
 
 **Why:** Adds a gear shaft inside the body. An axle with a stop holds the gear against one side. *Next:* gear-7 meshes the seat gears once the body is on (step 30). *Pattern:* shaft with gear and stop
+
+**Big picture:**
+- **bush-b** (Back shaft (knob-1)): Stops axle4s-b sliding.
+- **axle4s-b** (Back shaft (knob-1)): Gear shaft inside the body; carries gear-7.
+- **gear-7** (Back shaft (knob-1)): Gear inside the body; may take or pass drive from the back shaft (not confirmed).
 
 **Review:** What gear-7 meshes is not confirmed.
 
@@ -770,6 +952,9 @@
 
 **Why:** Adds the second side panel. Mirror of fairing-1. *Next:* The whole body goes on in step 30. *Pattern:* mirror the side
 
+**Big picture:**
+- **fairing-2** (Engine cover and side covers): Left engine-cover panel (looks).
+
 **Review:** Which pins fairing-2 uses is not visible.
 
 ## 8047-step-30 (page 25) - medium - NEEDS REVIEW
@@ -787,6 +972,9 @@
 **After:** yellow body on the back of the upper frame, turns with the turntable; everything else: no change
 
 **Why:** Adds the back of the excavator body. Building it on the side keeps it easy to hold. *Next:* Steps 31-34 add the knobs at the back. *Pattern:* side build attached
+
+**Big picture:**
+
 
 **Review:** Exact holes for the body pins not visible.
 
@@ -806,6 +994,9 @@
 
 **Why:** Shows the back for the knob parts. View change only. *Next:* Step 32 adds parts here. *Pattern:* turn the model
 
+**Big picture:**
+
+
 ## 8047-step-32 (page 27) - medium - NEEDS REVIEW
 
 ![8047-step-32](steps/main-32/picture.png)
@@ -821,6 +1012,11 @@
 **After:** two yellow connectors at the back with axle holes lined up; everything else: no change
 
 **Why:** Gives the back two lined-up axle holes. These connectors turn a pin end into an axle hole. *Next:* A long axle goes through both in step 33. *Pattern:* pin to axle-hole adapter
+
+**Big picture:**
+- **ycon-1** (Back shaft (knob-1)): Bearing for the back shaft on the right body pin. Later: 8047-step-33 `CONNECT axle9-33.axle5 -> ycon-1.axlehole1 LOCKED`; 8047-step-33 `DOES ycon-1 HOLDS axle9-33`; 8047-step-50 `CONNECT pin-50a.pin1 -> ycon-1.hole?`.
+- **ycon-2** (Back shaft (knob-1)): Bearing for the back shaft on the left body pin. Later: 8047-step-33 `CONNECT axle9-33.axle5 -> ycon-2.axlehole1 LOCKED`; 8047-step-33 `DOES axle9-33 SPINS_ON ycon-2`.
+- **bush-32** (Front worm drive (knob-2)): Stops the worm shaft sliding at the back.
 
 **Review:** Which shaft gets bush-32 is read from the arrow only.
 
@@ -840,6 +1036,9 @@
 
 **Why:** Adds the back control shaft. A 9-long axle reaches across the whole body. *Next:* A knob goes on its end in step 34. *Pattern:* long cross shaft
 
+**Big picture:**
+- **axle9-33** (Back shaft (knob-1)): The back shaft. Later: 8047-step-34 `CONNECT knob-1.axlehole1 -> axle9-33.axle9 LOCKED`; 8047-step-34 `DOES axle9-33 CARRIES knob-1`.
+
 **Review:** Whether it engages gear-7 is not confirmed.
 
 ## 8047-step-34 (page 29) - medium - NEEDS REVIEW
@@ -857,6 +1056,10 @@
 **After:** two black knobs at the back: one turns the upper body, one works the arm; everything else: no change
 
 **Why:** Adds the two control knobs. A small bevel gear is easy to grip and fits an axle end. *Next:* Turning them drives the worms. *Pattern:* gear as knob
+
+**Big picture:**
+- **knob-1** (Back shaft (knob-1)): The second control the operator turns.
+- **knob-2** (Front worm drive (knob-2)): The control the operator turns.
 
 **Review:** Only one arrow; the second knob's shaft is read from the picture. Which knob does what is a guess.
 
@@ -876,6 +1079,12 @@
 
 **Why:** Adds the left side cover and a look-alike hydraulic hose. A rigid hose bends into a smooth curve; it is only for looks. *Next:* The hose top clips to the roof in step 55. *Pattern:* decorative hose
 
+**Big picture:**
+- **hoseconn-1** (Engine cover and side covers): Holder for the left hose.
+- **beam9-35** (Engine cover and side covers): Lower left side cover.
+- **hose-1** (Engine cover and side covers): Left 'hydraulic hose' (looks); later braces the roof (step 55). Later: 8047-step-55 `CONNECT hose-1.end2 -> angle5-1.axlehole?`; 8047-step-55 `DOES angle5-1 HOLDS hose-1`.
+- **pin-35** (Engine cover and side covers): Pins the left hose holder to the side cover.
+
 **Review:** Which holes beam9-35 uses is not visible.
 
 ## 8047-step-36 (page 31) - medium - NEEDS REVIEW
@@ -893,6 +1102,13 @@
 **After:** an upright post at the front right with pin ends; everything else: no change
 
 **Why:** Adds a front post for the boom mount. Long pins with stop rings turn an axle into a pin on each end. *Next:* The boom hangs from this area (step 38). *Pattern:* pin-axle-pin shaft
+
+**Big picture:**
+- **axle5-36** (Upper frame and seat): Axle through the front post; its ends are pin ends via rod-C, rod-D. Later: 8047-step-39 `CONNECT conn3c-39.axlehole2 -> axle5-36.axle1 LOCKED`.
+- **pin-36** (Upper frame and seat): Pins beam3-36 to the frame.
+- **rod-C** (Upper frame and seat): Pin end on top of axle5-36.
+- **rod-D** (Upper frame and seat): Pin end under axle5-36.
+- **beam3-36** (Upper frame and seat): Front post for the arm mount (arm attaches in step 38). Later: 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole?`; 8047-step-38 `DOES beam3-36 SUPPORTS arm`.
 
 **Review:** Which end each long pin goes on is a guess.
 
@@ -912,6 +1128,9 @@
 
 **Why:** Finishes the left side cover. An 11-long beam covers the whole side. *Next:* The arm goes on the other side in step 38. *Pattern:* doubled side beam
 
+**Big picture:**
+- **beam11-37** (Engine cover and side covers): Upper left side cover.
+
 **Review:** Exact holes not shown.
 
 ## 8047-arm-step-01 (page 33) - high
@@ -930,6 +1149,10 @@
 
 **Why:** Starts the arm base. A thin beam keeps the arm narrow. *Next:* The curved plate goes on in step 2. *Pattern:* axle as post
 
+**Big picture:**
+- **beam3t-a1** (Boom (arm) with worm drive): Base plate of the boom.
+- **axle3-a1** (Boom (arm) with worm drive): Ties both curved side plates together at the base. Later: 8047-arm-step-02 `CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS`; 8047-arm-step-02 `DOES axle3-a1 HOLDS curve-a1`; 8047-arm-step-03 `CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED`; 8047-arm-step-06 `CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS`; 8047-arm-step-06 `DOES axle3-a1 HOLDS curve-a2`; 8047-arm-step-07 `CONNECT beam3t-a2.hole? -> axle3-a1.axle1`.
+
 ## 8047-arm-step-02 (page 33) - high
 
 ![8047-arm-step-02](steps/arm-02/picture.png)
@@ -946,6 +1169,9 @@
 
 **Why:** Gives the arm its curved side. The quarter-ellipse beam gives a strong, nice-looking corner. *Next:* Its mirror goes on in step 6. *Pattern:* curved side plate
 
+**Big picture:**
+- **curve-a1** (Boom (arm) with worm drive): Right curved side of the boom. Later: 8047-arm-step-03 `CONNECT pin34-a.pin1 -> curve-a1.hole?`; 8047-arm-step-07 `DOES beam3t-a2 LOCKS curve-a1`; 8047-step-39 `CONNECT axle3-39.axle1 -> curve-a1.hole?`.
+
 ## 8047-arm-step-03 (page 33) - medium - NEEDS REVIEW
 
 ![8047-arm-step-03](steps/arm-03/picture.png)
@@ -961,6 +1187,10 @@
 **After:** a gray connector across the arm base
 
 **Why:** Adds a cross piece to the arm base. A 3/4 pin is short enough not to stick out. *Next:* A shaft goes through it in step 4. *Pattern:* two-point mount
+
+**Big picture:**
+- **pin34-a** (Boom (arm) with worm drive): Short pin that fixes the cross piece without sticking out.
+- **conn3c-a1** (Boom (arm) with worm drive): Cross piece in the boom base; holds the small gear shaft. Later: 8047-arm-step-04 `CONNECT axle3-a2.axle1 -> conn3c-a1.hole1 TURNS`; 8047-arm-step-04 `DOES axle3-a2 SPINS_ON conn3c-a1`.
 
 **Review:** No arrows; places read from the picture.
 
@@ -980,6 +1210,10 @@
 
 **Why:** Adds a small gear in the arm base. An 8-tooth gear is the smallest; it fits in the tight space. *Next:* It meshes with the gear train in later steps. *Pattern:* small idler gear
 
+**Big picture:**
+- **axle3-a2** (Boom (arm) with worm drive): Shaft for gear8-a.
+- **gear8-a** (Boom (arm) with worm drive): Small gear in the boom base; part of the drive into the boom (mesh not confirmed).
+
 **Review:** What gear8-a meshes is not confirmed.
 
 ## 8047-arm-step-05 (page 34) - medium - NEEDS REVIEW
@@ -997,6 +1231,14 @@
 **After:** a worm shaft runs along the inside of the arm
 
 **Why:** Adds the slow drive that raises the arm. A worm holds the arm up on its own when you let go. *Next:* The drive gears in steps 9-11 turn this shaft. *Pattern:* worm drive (self-locking)
+
+**Big picture:**
+- **axle2-a** (Boom (arm) with worm drive): Locks ycon-a in place.
+- **ycon-a** (Boom (arm) with worm drive): Holds the end of the boom's worm shaft.
+- **worm-2** (Boom (arm) with worm drive): Boom's self-locking drive.
+- **axcon-a** (Boom (arm) with worm drive): Joins the worm shaft to the axle that carries the front bevel gear.
+- **axle4s-a** (Boom (arm) with worm drive): Worm shaft along the boom.
+- **axle3-a3** (Boom (arm) with worm drive): Extends the worm shaft to the holder at the front. Later: 8047-arm-step-07 `CONNECT holder-a.axlehole? -> axle3-a3.axle3`; 8047-arm-step-07 `DOES axle3-a3 HOLDS holder-a`; 8047-arm-step-09 `CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED`; 8047-arm-step-09 `DOES axle3-a3 CARRIES bevel12-a1`.
 
 **Review:** Which arm holes take the unit is not visible.
 
@@ -1016,6 +1258,9 @@
 
 **Why:** Closes the arm box. Mirror of step 2. *Next:* The actuator holder clips on in step 7. *Pattern:* mirror the side
 
+**Big picture:**
+- **curve-a2** (Boom (arm) with worm drive): Left curved side of the boom.
+
 **Review:** No arrow.
 
 ## 8047-arm-step-07 (page 34) - medium
@@ -1034,6 +1279,10 @@
 
 **Why:** Gives the arm a hinge block at its front. The actuator holder has a round body and two hinge plates. *Next:* The gear head goes in it in steps 8-10. *Pattern:* hinge block
 
+**Big picture:**
+- **beam3t-a2** (Boom (arm) with worm drive): Outer plate at the boom base; holds the boom's pivot axle. Later: 8047-arm-step-08 `CONNECT axle3-a4.axle1 -> beam3t-a2.hole?`; 8047-arm-step-08 `DOES beam3t-a2 HOLDS axle3-a4`.
+- **holder-a** (Boom (arm) with worm drive): Hinge block at the boom's front: the boom tip (boom build) mounts on it. Later: 8047-arm-step-09 `CONNECT pin-a9.pin1 -> holder-a.hole?`; 8047-arm-step-09 `DOES holder-a HOLDS pin-a9`; 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole?`; 8047-step-40 `DOES holder-a CARRIES boom`.
+
 ## 8047-arm-step-08 (page 35) - medium
 
 ![8047-arm-step-08](steps/arm-08/picture.png)
@@ -1050,6 +1299,9 @@
 
 **Why:** Adds a pivot axle at the arm base. Short axle, short gap. *Next:* The arm hangs on the model by it in step 38. *Pattern:* axle as pivot
 
+**Big picture:**
+- **axle3-a4** (Boom (arm) with worm drive): Boom pivot: goes into the control lever link9-1 (step 38). Later: 8047-step-38 `CONNECT axle3-a4.axle3 -> link9-1.hole3 TURNS`.
+
 ## 8047-arm-step-09 (page 35) - medium - NEEDS REVIEW
 
 ![8047-arm-step-09](steps/arm-09/picture.png)
@@ -1065,6 +1317,10 @@
 **After:** a bevel gear at the arm's front
 
 **Why:** Starts the right-angle drive at the arm's front. Bevel gears turn motion through 90 degrees. *Next:* bevel20-a meshes with it in step 10. *Pattern:* bevel right-angle drive
+
+**Big picture:**
+- **pin-a9** (Boom (arm) with worm drive): Pin the 20-tooth bevel turns on. Later: 8047-arm-step-10 `CONNECT bevel20-a.hole1 -> pin-a9.pin2 STIFF`; 8047-arm-step-10 `DOES bevel20-a SPINS_ON pin-a9`.
+- **bevel12-a1** (Boom (arm) with worm drive): Turns the drive 90 degrees at the boom front. Later: 8047-arm-step-10 `MESH bevel12-a1.teeth bevel20-a.teeth`; 8047-arm-step-10 `RATIO bevel12-a1 bevel20-a 12/20`; 8047-arm-step-10 `DOES bevel12-a1 DRIVES bevel20-a`.
 
 **Review:** pin-a9 looks long; matched to 2780 because both 32054s are used in step 36.
 
@@ -1084,6 +1340,11 @@
 
 **Why:** Finishes the right-angle drive. The 20-tooth bevel has a pin hole, so it can spin freely on a pin. *Next:* Step 11 adds the input gears. *Pattern:* bevel right-angle drive
 
+**Big picture:**
+- **conn3c-a2** (Boom (arm) with worm drive): End piece on axle5-a.
+- **bevel20-a** (Boom (arm) with worm drive): Receives drive from both 12-tooth bevels. Later: 8047-arm-step-11 `MESH bevel12-a2.teeth bevel20-a.teeth`; 8047-arm-step-11 `DOES bevel12-a2 DRIVES bevel20-a`.
+- **axle5-a** (Boom (arm) with worm drive): Shaft through the front bevel.
+
 ## 8047-arm-step-11 (page 36) - medium - NEEDS REVIEW
 
 ![8047-arm-step-11](steps/arm-11/picture.png)
@@ -1099,6 +1360,13 @@
 **After:** input gears on the arm's side
 
 **Why:** Brings the drive into the arm from the body. Gear and bevel on one shaft take turning from the body's gears into the arm. *Next:* Step 12 holds the shaft ends. *Pattern:* input shaft
+
+**Big picture:**
+- **axle3-a5** (Boom (arm) with worm drive): Input shaft at the boom side.
+- **axle4-a1** (Boom (arm) with worm drive): Input axle; goes into the front post (step 38). Later: 8047-arm-step-12 `CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED`; 8047-arm-step-12 `DOES conn3c-a3 HOLDS axle4-a1`; 8047-step-38 `CONNECT axle4-a1.axle4 -> beam3-36.hole?`.
+- **bevel12-a2** (Boom (arm) with worm drive): Second bevel feeding bevel20-a.
+- **gear-8** (Boom (arm) with worm drive): Input gear: takes drive into the boom from the upper frame (mesh not confirmed).
+- **con180-a** (Boom (arm) with worm drive): Joins the two input axles end to end.
 
 **Review:** con180-a matched as 32034 by elimination (all 42003s used); what drives gear-8 is not confirmed.
 
@@ -1118,6 +1386,10 @@
 
 **Why:** Ties the input shafts together. One connector holds both axle ends square. *Next:* The whole arm goes on in step 38. *Pattern:* two-point mount
 
+**Big picture:**
+- **axle4-a2** (Boom (arm) with worm drive): Second input axle; held by conn3c-39 (step 39). Later: 8047-step-39 `CONNECT conn3c-39.axlehole1 -> axle4-a2.axle4 LOCKED`; 8047-step-39 `DOES conn3c-39 HOLDS axle4-a2`.
+- **conn3c-a3** (Boom (arm) with worm drive): Ties the two input axle ends together.
+
 ## 8047-step-38 (page 37) - medium - NEEDS REVIEW
 
 ![8047-step-38](steps/main-38/picture.png)
@@ -1133,6 +1405,9 @@
 **After:** arm on the front of the upper body; everything else: no change
 
 **Why:** Mounts the arm on the body. Building it as a side build keeps the gears easy to fit. *Next:* Step 39 locks the arm's shaft. *Pattern:* side build attached
+
+**Big picture:**
+
 
 **Review:** Joins read from the two arrows only.
 
@@ -1152,6 +1427,10 @@
 
 **Why:** Holds the arm's input shaft in line. Same connector trick as before. *Next:* The boom goes on the arm in step 40. *Pattern:* two-point mount
 
+**Big picture:**
+- **conn3c-39** (Boom (arm) with worm drive): Holds the boom's input shaft in line with the frame.
+- **axle3-39** (Boom (arm) with worm drive): Extra axle at the boom's top.
+
 ## 8047-boom-step-01 (page 39) - high
 
 ![8047-boom-step-01](steps/boom-01/picture.png)
@@ -1167,6 +1446,12 @@
 **After:** a yellow L with three red axles up
 
 **Why:** Starts the boom joint. Short red axles lock beams together without spinning. *Next:* Beams stack on them in step 2. *Pattern:* stacked beams on short axles
+
+**Big picture:**
+- **lthin-1** (Boom tip, stick and push rod): Bottom plate of the boom-tip joint.
+- **axle2-b1** (Boom tip, stick and push rod): Locks the joint plates and is the pivot for link9-b. Later: 8047-boom-step-02 `CONNECT axle2-b1.axle2 -> bent9-b.hole1 TURNS`; 8047-boom-step-02 `DOES axle2-b1 LOCKS bent9-b`; 8047-boom-step-03 `CONNECT link9-b.hole1 -> axle2-b1.axle1 TURNS`; 8047-boom-step-03 `DOES link9-b SPINS_ON axle2-b1`; 8047-boom-step-04 `CONNECT lthin-2.hole1 -> axle2-b1.axle2 TURNS`; 8047-boom-step-04 `DOES axle2-b1 LOCKS lthin-2`.
+- **axle2-b2** (Boom tip, stick and push rod): Locks the joint plates. Later: 8047-boom-step-02 `CONNECT axle2-b2.axle2 -> bent9-b.hole2 TURNS`.
+- **axle2-b3** (Boom tip, stick and push rod): Locks beam3t-b1 to the joint. Later: 8047-boom-step-02 `CONNECT axle2-b3.axle2 -> beam3t-b1.hole1 TURNS`; 8047-boom-step-02 `DOES axle2-b3 HOLDS beam3t-b1`.
 
 ## 8047-boom-step-02 (page 39) - medium
 
@@ -1184,6 +1469,11 @@
 
 **Why:** Adds the main boom beam. A bent beam gives the classic excavator boom shape. *Next:* The link goes on in step 3. *Pattern:* stacked beams on short axles
 
+**Big picture:**
+- **beam3t-b1** (Boom tip, stick and push rod): Spacer in the joint stack.
+- **axle2-b4** (Boom tip, stick and push rod): Locks beam3t-b2 to the bent beam. Later: 8047-boom-step-03 `CONNECT beam3t-b2.hole1 -> axle2-b4.axle2 TURNS`; 8047-boom-step-03 `DOES axle2-b4 HOLDS beam3t-b2`.
+- **bent9-b** (Boom tip, stick and push rod): The bent boom-tip beam: gives the classic excavator angle.
+
 ## 8047-boom-step-03 (page 39) - medium
 
 ![8047-boom-step-03](steps/boom-03/picture.png)
@@ -1199,6 +1489,10 @@
 **After:** a bent link hangs down from the boom joint
 
 **Why:** Adds the bucket link. A bent link reaches round the arm. *Next:* It works the bucket (step 46). *Pattern:* link to the tool
+
+**Big picture:**
+- **beam3t-b2** (Boom tip, stick and push rod): Top spacer in the joint stack.
+- **link9-b** (Bucket): Bucket link from the boom tip; tilts the bucket. Later: 8047-step-47 `CONNECT axle3-47.axle2 -> link9-b.hole3 TURNS`; 8047-step-47 `DOES axle3-47 HOLDS link9-b`.
 
 ## 8047-boom-step-04 (page 40) - medium
 
@@ -1216,6 +1510,10 @@
 
 **Why:** Closes the boom joint sandwich. Same L on both faces makes it strong. *Next:* The boom goes on the arm in step 40. *Pattern:* sandwich joint
 
+**Big picture:**
+- **lthin-2** (Boom tip, stick and push rod): Top plate of the boom-tip joint (sandwich).
+- **axle3-b** (Boom tip, stick and push rod): Pivot the stick hangs on (step 44). Later: 8047-step-40 `CONNECT axle3-b.axle3 -> holder-a.hole?`; 8047-step-44 `CONNECT beam11-44.hole? -> axle3-b.axle3`; 8047-step-44 `DOES beam11-44 SPINS_ON axle3-b`.
+
 ## 8047-step-40 (page 40) - medium - NEEDS REVIEW
 
 ![8047-step-40](steps/main-40/picture.png)
@@ -1231,6 +1529,9 @@
 **After:** boom on the arm's front; everything else: no change
 
 **Why:** Adds the boom. Side build again. *Next:* Steps 41-45 add the stick and links. *Pattern:* side build attached
+
+**Big picture:**
+
 
 **Review:** Joins read from the arrows only.
 
@@ -1250,6 +1551,10 @@
 
 **Why:** Adds a mount for the push rod. Thin beam keeps clear of the gears. *Next:* The push rod hinge goes here in step 42. *Pattern:* rod mount
 
+**Big picture:**
+- **thin4-1** (Boom tip, stick and push rod): Mount on the boom for the push-rod hinge.
+- **axle3-41** (Boom tip, stick and push rod): Hinge axle for the push rod. Later: 8047-step-42 `CONNECT thin4-2.hole? -> axle3-41.axle3`; 8047-step-42 `CONNECT angle1-42.hole1 -> axle3-41.axle2 TURNS`; 8047-step-42 `DOES thin4-2 HOLDS axle3-41`; 8047-step-42 `DOES angle1-42 SPINS_ON axle3-41`.
+
 ## 8047-step-42 (page 42) - medium
 
 ![8047-step-42](steps/main-42/picture.png)
@@ -1265,6 +1570,11 @@
 **After:** a hinge on top of the arm; everything else: no change
 
 **Why:** Adds the hinge for the push rod. An angle connector spins on an axle, a simple hinge. *Next:* The push rod goes on in step 43. *Pattern:* axle hinge
+
+**Big picture:**
+- **thin4-2** (Boom tip, stick and push rod): Second side of the push-rod mount.
+- **angle1-42** (Boom tip, stick and push rod): Hinge that lets the push rod swing.
+- **axle3-42** (Boom tip, stick and push rod): Short axle the push rod's back end hangs on. Later: 8047-step-43 `CONNECT angle1-43.hole1 -> axle3-42.axle3 TURNS`.
 
 ## 8047-step-43 (page 43) - medium
 
@@ -1282,6 +1592,12 @@
 
 **Why:** Adds the push rod that tips the stick. A smooth tan pin lets the rod end swing freely. *Next:* The stick hangs on its front end (step 44). *Pattern:* push rod linkage
 
+**Big picture:**
+- **axle9-43** (Boom tip, stick and push rod): Push rod: transfers the boom's motion to the stick.
+- **tanpin-1** (Boom tip, stick and push rod): Frictionless pin: the stick swings freely on the push rod end. Later: 8047-step-44 `CONNECT beam11-44.hole1 -> tanpin-1.pin3 TURNS`; 8047-step-44 `DOES tanpin-1 HOLDS beam11-44`; 8047-step-45 `CONNECT beam11-45.hole1 -> tanpin-1.pin3 TURNS`.
+- **angle1-43** (Boom tip, stick and push rod): Back end of the push rod.
+- **angle4-43** (Boom tip, stick and push rod): Front end of the push rod.
+
 ## 8047-step-44 (page 44) - medium - NEEDS REVIEW
 
 ![8047-step-44](steps/main-44/picture.png)
@@ -1297,6 +1613,11 @@
 **After:** the stick hangs from the boom; everything else: no change
 
 **Why:** Adds the stick. A long beam gives reach. *Next:* Its pair goes on in step 45; the bucket in step 46. *Pattern:* stick on two pivots
+
+**Big picture:**
+- **beam11-44** (Boom tip, stick and push rod): Right stick beam: reach for the bucket. Later: 8047-step-46 `CONNECT axle55-46.pin1 -> beam11-44.hole?`.
+- **bent2-44** (Boom tip, stick and push rod): Spacer/link at the stick's bottom end.
+- **pin-44** (Boom tip, stick and push rod): Joins the two stick beams at the bottom. Later: 8047-step-45 `CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF`; 8047-step-45 `DOES pin-44 LOCKS beam11-45`.
 
 **Review:** bent2-44 matched as 44809 by elimination (87082s are used in step 54).
 
@@ -1316,6 +1637,9 @@
 
 **Why:** Doubles the stick. Two beams keep it from twisting. *Next:* The bucket fits between them in step 46. *Pattern:* doubled beam
 
+**Big picture:**
+- **beam11-45** (Boom tip, stick and push rod): Left stick beam; two beams stop the stick twisting.
+
 ## 8047-step-46 (page 46) - high
 
 ![8047-step-46](steps/main-46/picture.png)
@@ -1331,6 +1655,10 @@
 **After:** bucket on the stick; everything else: no change
 
 **Why:** Adds the bucket. An axle with a stop can't slide out the far side. *Next:* Step 47 links the bucket to link9-b. *Pattern:* bucket on a pivot axle
+
+**Big picture:**
+- **bucket-1** (Bucket): The bucket itself. Later: 8047-step-47 `CONNECT axle3-47.axle2 -> bucket-1.hole?`.
+- **axle55-46** (Bucket): Bucket pivot; its stop end keeps it from sliding out.
 
 ## 8047-step-47 (page 47) - high
 
@@ -1348,6 +1676,11 @@
 
 **Why:** Connects the bucket to its link. Half bushes are thin, so they fit in the tight bucket joint. *Next:* Bucket can now be tipped by hand. *Pattern:* two-bar linkage
 
+**Big picture:**
+- **axle3-47** (Bucket): Joins link9-b to the bucket.
+- **halfbush-1** (Bucket): Thin stop on the bucket link axle.
+- **halfbush-2** (Bucket): Second thin stop on the bucket link axle.
+
 ## 8047-step-48 (page 48) - medium
 
 ![8047-step-48](steps/main-48/picture.png)
@@ -1364,6 +1697,10 @@
 
 **Why:** Adds a post for the right side cover. A 3-beam is just tall enough. *Next:* The right side beams go on in steps 49-50. *Pattern:* short post
 
+**Big picture:**
+- **pin-48** (Upper frame and seat): Pins the right front post beam3-48.
+- **beam3-48** (Upper frame and seat): Right front post for the right side covers.
+
 ## 8047-step-49 (page 49) - medium - NEEDS REVIEW
 
 ![8047-step-49](steps/main-49/picture.png)
@@ -1379,6 +1716,12 @@
 **After:** right side cover with the second hose; everything else: no change
 
 **Why:** Mirrors step 35 on the right. Same parts, mirrored. *Next:* The hose top goes to the roof in step 55. *Pattern:* mirror the side
+
+**Big picture:**
+- **beam9-49** (Engine cover and side covers): Lower right side cover.
+- **hose-2** (Engine cover and side covers): Right 'hydraulic hose' (looks); later braces the roof. Later: 8047-step-55 `CONNECT hose-2.end2 -> angle5-2.axlehole?`; 8047-step-55 `DOES angle5-2 HOLDS hose-2`.
+- **pin-49** (Engine cover and side covers): Pins the right hose holder to the side cover.
+- **hoseconn-2** (Engine cover and side covers): Holder for the right hose.
 
 **Review:** The placement picture is on page 50.
 
@@ -1398,6 +1741,13 @@
 
 **Why:** Finishes the right side cover. Mirror of step 37. *Next:* The roof posts go on in step 51. *Pattern:* doubled side beam
 
+**Big picture:**
+- **beam11-50** (Engine cover and side covers): Upper right side cover.
+- **pin-50a** (Engine cover and side covers): Holds the right roof post (step 51). Later: 8047-step-51 `CONNECT post-R.hole1 -> pin-50a.pin2 STIFF`; 8047-step-51 `DOES pin-50a HOLDS post-R`.
+- **pin-50b** (Engine cover and side covers): Holds beam11-50.
+- **pin-50c** (Engine cover and side covers): Holds beam11-50.
+- **pin-50d** (Engine cover and side covers): Holds beam11-50.
+
 **Review:** Only one pin has an arrow.
 
 ## 8047-step-51 (page 52) - medium - NEEDS REVIEW
@@ -1415,6 +1765,10 @@
 **After:** two black roof posts at the back; everything else: no change
 
 **Why:** Starts the roof frame. 9-long beams give head room over the seat. *Next:* A cross beam joins them in step 52. *Pattern:* upright posts
+
+**Big picture:**
+- **post-L** (Cab roof and lights): Left roof post. Later: 8047-step-52 `CONNECT studaxle-1.pin1 -> post-L.hole9 STIFF`; 8047-step-52 `DOES beam7-52 LOCKS post-L`.
+- **post-R** (Cab roof and lights): Right roof post. Later: 8047-step-52 `CONNECT studaxle-2.pin1 -> post-R.hole9 STIFF`.
 
 **Review:** No arrows.
 
@@ -1434,6 +1788,11 @@
 
 **Why:** Ties the two posts together. Axles with a stud end leave a stud for the lights. *Next:* Step 53 extends the roof forward. *Pattern:* closed frame
 
+**Big picture:**
+- **beam7-52** (Cab roof and lights): Back roof beam: ties the posts into a frame.
+- **studaxle-1** (Cab roof and lights): Joins the back roof beam to post-L and carries a clear light. Later: 8047-step-53 `CONNECT axcon-53a.axlehole? -> studaxle-1.pin1`; 8047-step-54 `CONNECT light-c1.hole1 -> studaxle-1.pin1 STIFF`.
+- **studaxle-2** (Cab roof and lights): Same on post-R. Later: 8047-step-53 `CONNECT axcon-53b.axlehole? -> studaxle-2.pin1`; 8047-step-54 `CONNECT light-c2.hole1 -> studaxle-2.pin1 STIFF`.
+
 ## 8047-step-53 (page 54) - medium
 
 ![8047-step-53](steps/main-53/picture.png)
@@ -1450,6 +1809,12 @@
 
 **Why:** Extends the roof forward. Axle connectors join two axles end to end. *Next:* The front roof piece goes on these in step 54. *Pattern:* axle extension
 
+**Big picture:**
+- **axle3-53a** (Cab roof and lights): Extends the roof forward from post-L. Later: 8047-step-54 `CONNECT beam7-54.hole? -> axle3-53a.axle3`; 8047-step-54 `DOES axle3-53a SUPPORTS beam7-54`.
+- **axle3-53b** (Cab roof and lights): Extends the roof forward from post-R. Later: 8047-step-54 `CONNECT beam5-54.hole? -> axle3-53b.axle3`.
+- **axcon-53a** (Cab roof and lights): Joins axle3-53a to the post's stud axle.
+- **axcon-53b** (Cab roof and lights): Joins axle3-53b to the post's stud axle.
+
 ## 8047-step-54 (page 55) - medium - NEEDS REVIEW
 
 ![8047-step-54](steps/main-54/picture.png)
@@ -1465,6 +1830,16 @@
 **After:** roof finished with orange and clear lights; everything else: no change
 
 **Why:** Adds the front of the roof and the lights. Round 1x1 plates in clear and orange look like work lights and beacons. *Next:* Step 55 clips the hoses to the roof. *Pattern:* roof with lights
+
+**Big picture:**
+- **light-o1** (Cab roof and lights): Orange beacon.
+- **light-o2** (Cab roof and lights): Orange beacon.
+- **light-c1** (Cab roof and lights): Clear work light.
+- **light-c2** (Cab roof and lights): Clear work light.
+- **hub-54a** (Cab roof and lights): Joins the two front roof beams; carries an orange beacon; hose-1 clips to it. Later: 8047-step-55 `CONNECT angle5-1.hole1 -> hub-54a.pin?`.
+- **hub-54b** (Cab roof and lights): Same on the other side. Later: 8047-step-55 `CONNECT angle5-2.hole1 -> hub-54b.pin?`.
+- **beam7-54** (Cab roof and lights): Front roof beam.
+- **beam5-54** (Cab roof and lights): Front roof beam (shorter).
 
 **Review:** Which hub stud takes which light is a guess; placement picture is on page 56.
 
@@ -1484,6 +1859,10 @@
 
 **Why:** Finishes the hoses and stiffens the roof. An angled connector turns the hose end toward the roof pin. *Next:* Step 56 is the finished model. *Pattern:* hose as brace
 
+**Big picture:**
+- **angle5-1** (Cab roof and lights): Clips hose-1 to the roof: the hose becomes a brace.
+- **angle5-2** (Cab roof and lights): Clips hose-2 to the roof.
+
 **Review:** Only one arrow shown.
 
 ## 8047-step-56 (page 58) - high
@@ -1501,3 +1880,6 @@
 **After:** finished compact excavator: tracks, turning upper body, arm, boom, stick and bucket, roof with lights
 
 **Why:** Shows the finished model. No new parts. *Next:* Nothing; build complete. *Pattern:* finished model
+
+**Big picture:**
+

@@ -28,6 +28,12 @@ You answer in JSON, in exactly the format of the `annotation.json` files in `set
    - `sets_up_for_later`: what a later step uses this for (look ahead in the booklet to confirm)
    - `design_pattern`: a short name for the trick used ("two-pin mount", "mirror the side")
 
+## The big picture (required for every part)
+Every part must have a role in `sets/<set>/systems.json`: which system of the finished machine it belongs to (frame, tracks, swing, drive, arm, bucket, covers, roof...) and one line on what it does there. Each system says what it is on the real machine, its purpose, which systems it depends on and which it feeds.
+Read ahead to the end of the booklet before writing a role: a pin added in step 6 matters because of the beam in step 7, which closes the frame, which carries the turntable, which lets the upper body swing.
+`tools/build_set.py` adds a `big_picture` entry for every new part (system, role, real-machine purpose, and every later step that uses the part) and reports any part with no role. Don't write the later-step list by hand; it comes from the notation.
+If you can't confirm what a part ends up doing, say so in the role and in `open_questions`.
+
 Then add: `confidence` (low / medium / high), `needs_review` (true/false), `review_note`.
 
 ## Naming rules

@@ -1,8 +1,9 @@
 """Builds a set's training files from its step folders.
 Usage: python tools/build_set.py sets/8047
 Reads  steps/<folder>/annotation.json + notation.tbl in booklet_map.csv order.
-Writes training.jsonl, training.tbl, preview.md, part_matches.csv (all generated, don't hand-edit)."""
-import csv, json, sys
+Also reads systems.json (what each part is for in the finished machine).
+Writes training.jsonl, training.tbl, preview.md, part_matches.csv, roles.csv (all generated, don't hand-edit)."""
+import csv, json, re, sys
 d = sys.argv[1].rstrip("/") + "/"
 DEPTH = {(r["part_number"], r["point"]): (r["type"], float(r["depth_holes"])) for r in csv.DictReader(open("catalog/connections.csv", encoding="utf-8"))}
 FIT = {"LOCKED": "locked (turn together)", "TURNS": "turns freely", "STIFF": "held stiff by friction"}
@@ -28,10 +29,36 @@ side = {}  # side build -> its sub-steps' notation, inserted before "ATTACH <bui
 for r in rows:
     if r["build"] != "main":
         side.setdefault(r["build"], []).append(open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip())
+# ---- big picture: every part's system, role, and every later step that uses it
+systems = json.load(open(d + "systems.json", encoding="utf-8"))
+role_of = {pat: (sy, role) for sy in systems["systems"] for pat, role in sy["parts"].items()}
+def find_role(name):
+    return role_of.get(name) or next((v for k, v in role_of.items() if re.fullmatch(k, name)), (None, None))
+step_id = {r["folder"]: json.load(open(f"{d}steps/{r['folder']}/annotation.json", encoding="utf-8"))["example_id"] for r in rows}
+added_in, later = {}, {}
+for r in rows:
+    for line in open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().split("\n"):
+        t = line.split("#")[0].split()
+        if not t: continue
+        if t[0] == "ADD": added_in.setdefault(t[1], r["folder"]); continue
+        if t[0] not in ("DOES", "CONNECT", "MESH", "RATIO"): continue
+        for n in {tok.split(".")[0] for tok in t[1:]}:
+            if n in added_in and added_in[n] != r["folder"]:
+                later.setdefault(n, []).append((step_id[r["folder"]], " ".join(t)))
+missing = []
+def big_picture(name):
+    sy, role = find_role(name)
+    if not sy: missing.append(name)
+    return {"part": name, "system": sy and sy["name"], "role": role,
+            "system_purpose": sy and sy["purpose"], "real_machine": sy and sy["real_machine"],
+            "used_later": [{"step": s_, "line": l} for s_, l in later.get(name, [])],
+            "feeds": [x["name"] for x in systems["systems"] if sy and x["id"] in sy["feeds"]]}
+
 tbl, ann = [], []
 for r in rows:
     e = json.load(open(f"{d}steps/{r['folder']}/annotation.json", encoding="utf-8"))
     e["answer"]["joins"] = joins(open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read())
+    e["answer"]["big_picture"] = [big_picture(p["name"]) for p in e["answer"]["new_parts"]]
     ann.append(e)
     if r["build"] != "main": continue
     for line in open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip().split("\n"):
@@ -63,6 +90,18 @@ with open(d + "part_matches.csv", "w", newline="", encoding="utf-8") as f:
                "**Who does what:** " + "; ".join(a["who_does_what_to_which"]) + "\n",
                "**After:** " + "; ".join(a["where_everything_is_after"]) + "\n",
                f"**Why:** {y['problem_solved']} {y['why_these_parts']} *Next:* {y['sets_up_for_later']} *Pattern:* {y['design_pattern']}\n"]
+        md.append("**Big picture:**\n" + "\n".join(
+            f"- **{b['part']}** ({b['system']}): {b['role']}"
+            + (" Later: " + "; ".join(f"{u['step']} `{u['line']}`" for u in b["used_later"]) + "." if b["used_later"] else "")
+            for b in a["big_picture"] if not re.fullmatch(r"tread-(?!1$|29$).*", b["part"])) + "\n")
         if e["review_note"]: md.append(f"**Review:** {e['review_note']}\n")
 open(d + "preview.md", "w", encoding="utf-8").write("\n".join(md))
+with open(d + "roles.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f, lineterminator="\n")
+    w.writerow(["part", "part_number", "added_in", "system", "role", "used_later_in", "system_purpose"])
+    for e in ann:
+        for p, b in zip(e["answer"]["new_parts"], e["answer"]["big_picture"]):
+            w.writerow([p["name"], p["part_number"], e["example_id"], b["system"], b["role"],
+                        "; ".join(f"{u['step']}: {u['line']}" for u in b["used_later"]), b["system_purpose"]])
+if missing: print("NO ROLE in systems.json for:", ", ".join(missing))
 print(f"{len(ann)} steps -> {d}training.jsonl, training.tbl, preview.md, part_matches.csv")
