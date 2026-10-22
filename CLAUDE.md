@@ -42,7 +42,7 @@ STEP n | ADD name partnum color | CONNECT a.point -> b.point LOCKED|TURNS|STIFF 
 5. Flag anything the picture doesn't show (needs_review + review_note, `?` in the notation).
 
 ## Status (Oct 22, 2026)
-Set 8047 fully labeled: main steps 1-56 + side builds seat (11), body (5), arm (12), boom (4) = 88 examples. All 252 pieces used exactly once; all checks pass. 25 high / 63 medium confidence; 47 flagged needs_review (mostly exact hole numbers, marked `?` in the .tbl). Gear drive path (which knob drives what) is not confirmed. Joins: 112/272 exact (point + depth + fit), rest have a `?` end.
+Set 8047 fully labeled: main steps 1-56 + side builds seat (11), body (5), arm (12), boom (4) = 88 examples. All 252 pieces used exactly once; all checks pass; 40 steps flagged for review. Joins: 271 total, 198 confirmed, 62 estimated (~), 11 open (hoses: no 3D data; side-cover holes in steps 35/37/49/50; crank step 23; hose clips step 55). Open contradiction: seat steps 5/7 (block-s locks the gear shaft). Gear drive path (which knob drives what) not confirmed.
 
 Catalog: 975 Technic parts from Rebrickable's free downloads (cdn.rebrickable.com/media/downloads/parts.csv.gz, part_categories, elements, colors), Oct 22 2026. Size + connections from LDraw complete.zip + LDCad shadow library via tools/build_connections.py (772/975 parts covered; the rest have no LDraw file under that number). 20 LDU = 1 hole.
 
