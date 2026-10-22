@@ -177,7 +177,7 @@ for r in rows:
               "bar (3.2 mm)": "bars (3.2 mm)", "square bar": "square bars", "hole": "holes", "peg": "pegs", "other": "other"}
     plural = lambda n, k: f"{n} {k if n == 1 else PLURAL[k]}"
     parts = [plural(counts[k], k) for k in order if counts.get(k) and k != "clip surface"]
-    teeth = re.search(r"(\d+) Tooth", r["name"])
+    teeth = re.search(r"([\d/]+) Tooth", r["name"])
     r["gear_teeth"] = teeth.group(1) if teeth else ""
     thick = r["thickness_holes"]
     r["description"] = ("No 3D data in LDraw for this part number." if not b else
