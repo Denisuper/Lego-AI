@@ -1,0 +1,253 @@
+example_id,our_name,part_number,catalog_name,color,match
+8047-step-01,rod-A,32054,Technic Pin Long with Stop Bush,Black,confirmed
+8047-step-01,axle-A,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-02,beam-C,63869,Technic Axle and Pin Connector Perpendicular Triple,Light Bluish Gray,confirmed
+8047-step-02,rod-B,32054,Technic Pin Long with Stop Bush,Black,confirmed
+8047-step-03,bentbeam-D,32140,Technic Beam 2 x 4 L-Shape Thick,Black,confirmed
+8047-step-03,pin-E,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-03,pin-F,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-04,axle-red-G,32062,Technic Axle 2 Notched,Red,confirmed
+8047-step-04,connector-H,6536,Technic Axle and Pin Connector Perpendicular,Black,confirmed
+8047-step-05,bentbeam-I,32140,Technic Beam 2 x 4 L-Shape Thick,Black,confirmed
+8047-step-05,axle-red-J,32062,Technic Axle 2 Notched,Red,confirmed
+8047-step-05,connector-K,6536,Technic Axle and Pin Connector Perpendicular,Black,confirmed
+8047-step-06,pin-L,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-06,pin-M,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-07,beam7-N,32524,Technic Beam 1 x 7 Thick,Black,confirmed
+8047-step-08,turntable-O,50163,"Technic Turntable Large Type 2, 24/56 Tooth",Dark Bluish Gray,confirmed
+8047-step-09,pin-P,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-09,pin-Q,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-09,beam-R,63869,Technic Axle and Pin Connector Perpendicular Triple,Light Bluish Gray,confirmed
+8047-step-10,axle-S,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-10,connector-T,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-step-10,pin-U,43093,Technic Axle Pin with Friction Ridges,Blue,confirmed
+8047-step-11,connector-W,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-step-11,pin-V,43093,Technic Axle Pin with Friction Ridges,Blue,confirmed
+8047-step-12,beam9-X,40490,Technic Beam 1 x 9 Thick,Black,confirmed
+8047-step-12,beam9-Y,40490,Technic Beam 1 x 9 Thick,Black,confirmed
+8047-step-13,tan-1,3749,Technic Axle Pin without Friction Ridges,Tan,confirmed
+8047-step-13,tan-2,3749,Technic Axle Pin without Friction Ridges,Tan,confirmed
+8047-step-13,tan-3,3749,Technic Axle Pin without Friction Ridges,Tan,confirmed
+8047-step-13,tan-4,3749,Technic Axle Pin without Friction Ridges,Tan,confirmed
+8047-step-14,gear-1,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-step-14,gear-2,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-step-14,gear-3,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-step-14,gear-4,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-step-15,tread-1,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-2,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-3,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-4,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-5,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-6,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-7,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-8,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-9,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-10,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-11,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-12,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-13,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-14,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-15,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-16,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-17,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-18,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-19,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-20,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-21,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-22,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-23,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-24,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-25,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-26,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-27,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-28,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-29,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-30,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-31,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-32,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-33,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-34,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-35,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-36,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-37,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-38,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-39,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-40,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-41,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-42,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-43,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-44,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-45,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-46,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-47,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-48,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-49,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-50,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-51,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-52,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-53,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-54,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-55,3873,Technic Link Tread,Black,confirmed
+8047-step-15,tread-56,3873,Technic Link Tread,Black,confirmed
+8047-step-16,pinlong-1,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-step-16,pinlong-2,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-seat-step-01,hub4-s,48989,Technic Pin Connector Hub Perpendicular 3L with 4 Pins,Light Bluish Gray,confirmed
+8047-seat-step-01,pin-s1,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-seat-step-01,hub2-s,87082,Technic Pin Connector Hub with 2 Pins,Light Bluish Gray,confirmed
+8047-seat-step-02,lbeam-s1,32526,Technic Beam 3 x 5 L-Shape Thick,Blue,confirmed
+8047-seat-step-03,beam5-s,32316,Technic Beam 1 x 5 Thick,Light Bluish Gray,confirmed
+8047-seat-step-03,pin-s2,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-seat-step-03,pin-s3,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-seat-step-04,lbeam-s2,32526,Technic Beam 3 x 5 L-Shape Thick,Blue,confirmed
+8047-seat-step-05,conn-s1,42003,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes,Black,confirmed
+8047-seat-step-05,block-s,60483,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole,Light Bluish Gray,confirmed
+8047-seat-step-06,axle9-s1,60485,Technic Axle 9,Light Bluish Gray,confirmed
+8047-seat-step-07,gear-5,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-seat-step-07,axle7-s,44294,Technic Axle 7,Light Bluish Gray,confirmed
+8047-seat-step-07,bush-s1,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-seat-step-08,lbeam-s3,32526,Technic Beam 3 x 5 L-Shape Thick,Dark Bluish Gray,confirmed
+8047-seat-step-09,bush-s2,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-seat-step-10,axle9-s2,60485,Technic Axle 9,Light Bluish Gray,confirmed
+8047-seat-step-10,bush-s3,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-seat-step-11,lbeam-s4,32526,Technic Beam 3 x 5 L-Shape Thick,Dark Bluish Gray,confirmed
+8047-seat-step-11,crown-1,3650c,Technic Gear 24 Tooth Crown,Light Bluish Gray,confirmed
+8047-step-19,axle7-B,44294,Technic Axle 7,Light Bluish Gray,confirmed
+8047-step-19,axcon-1,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-step-19,axpin-1,43093,Technic Axle Pin with Friction,Blue,confirmed
+8047-step-19,conn3-1,42003,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes,Black,confirmed
+8047-step-20,bent11-A,32009,Technic Beam 1 x 11.5 Double Bent Thick,Black,confirmed
+8047-step-21,pin-21a,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-21,pin-21b,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-21,axle3-21,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-22,conn3c-1,32184,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole,Light Bluish Gray,confirmed
+8047-step-22,gear-6,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-step-23,link9-1,64451,Technic Link 1 x 9 Bent (6 - 4),Dark Bluish Gray,confirmed
+8047-step-23,crank-1,33299a,Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank,Light Bluish Gray,confirmed
+8047-step-24,bent11-B,32009,Technic Beam 1 x 11.5 Double Bent Thick,Black,confirmed
+8047-step-25,pin-25a,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-25,pin-25b,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-25,axle3-25,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-26,axle8s-1,55013,Technic Axle 8 with Stop,Dark Bluish Gray,confirmed
+8047-step-26,conn3-2,42003,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes,Black,confirmed
+8047-step-26,worm-1,4716,Technic Worm Gear,Light Bluish Gray,confirmed
+8047-step-26,bush-26,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-step-27,bush-27,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-step-28,bush-28,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-body-step-01,pin-b1,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-body-step-01,pin-b2,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-body-step-01,beam9-b,40490,Technic Beam 1 x 9 Thick,Yellow,confirmed
+8047-body-step-02,beam3-b,32523,Technic Beam 1 x 3 Thick,Dark Bluish Gray,confirmed
+8047-body-step-02,pin-b3,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-body-step-02,pin-b4,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-body-step-02,pin-b5,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-body-step-03,fairing-1,87080,Technic Panel Fairing #1 Side A,Yellow,confirmed
+8047-body-step-04,bush-b,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-body-step-04,axle4s-b,87083,Technic Axle 4 with Stop,Dark Bluish Gray,confirmed
+8047-body-step-04,gear-7,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-body-step-05,fairing-2,87086,Technic Panel Fairing #2 Side B,Yellow,confirmed
+8047-step-32,ycon-1,6536,Technic Axle and Pin Connector Perpendicular,Yellow,confirmed
+8047-step-32,ycon-2,6536,Technic Axle and Pin Connector Perpendicular,Yellow,confirmed
+8047-step-32,bush-32,3713,Technic Bush,Light Bluish Gray,confirmed
+8047-step-33,axle9-33,60485,Technic Axle 9,Light Bluish Gray,confirmed
+8047-step-34,knob-1,32270,Technic Gear 12 Tooth Double Bevel,Black,confirmed
+8047-step-34,knob-2,32270,Technic Gear 12 Tooth Double Bevel,Black,confirmed
+8047-step-35,hoseconn-1,32013,Technic Axle and Pin Connector Angled #1,Dark Bluish Gray,confirmed
+8047-step-35,beam9-35,40490,Technic Beam 1 x 9 Thick,Yellow,confirmed
+8047-step-35,hose-1,75c12,Hose Rigid 3mm 12L,Black,confirmed
+8047-step-35,pin-35,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-36,axle5-36,32073,Technic Axle 5,Light Bluish Gray,confirmed
+8047-step-36,pin-36,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-36,rod-C,32054,Technic Pin Long with Friction and Stop Bush,Black,confirmed
+8047-step-36,rod-D,32054,Technic Pin Long with Friction and Stop Bush,Black,confirmed
+8047-step-36,beam3-36,32523,Technic Beam 1 x 3 Thick,Dark Bluish Gray,confirmed
+8047-step-37,beam11-37,32525,Technic Beam 1 x 11 Thick,Yellow,confirmed
+8047-arm-step-01,beam3t-a1,6632,Technic Beam 1 x 3 Thin,Yellow,confirmed
+8047-arm-step-01,axle3-a1,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-arm-step-02,curve-a1,32250,Technic Beam 3 x 5 L-Shape with Quarter Ellipse Thin,Yellow,confirmed
+8047-arm-step-03,pin34-a,32002,Technic Pin 3/4,Dark Bluish Gray,confirmed
+8047-arm-step-03,conn3c-a1,32184,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole,Light Bluish Gray,confirmed
+8047-arm-step-04,axle3-a2,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-arm-step-04,gear8-a,3647,Technic Gear 8 Tooth,Dark Bluish Gray,confirmed
+8047-arm-step-05,axle2-a,32062,Technic Axle 2 Notched,Red,confirmed
+8047-arm-step-05,ycon-a,6536,Technic Axle and Pin Connector Perpendicular,Yellow,confirmed
+8047-arm-step-05,worm-2,4716,Technic Worm Gear,Light Bluish Gray,confirmed
+8047-arm-step-05,axcon-a,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-arm-step-05,axle4s-a,87083,Technic Axle 4 with Stop,Dark Bluish Gray,confirmed
+8047-arm-step-05,axle3-a3,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-arm-step-06,curve-a2,32250,Technic Beam 3 x 5 L-Shape with Quarter Ellipse Thin,Yellow,confirmed
+8047-arm-step-07,beam3t-a2,6632,Technic Beam 1 x 3 Thin,Yellow,confirmed
+8047-arm-step-07,holder-a,61904,Technic Linear Actuator Holder 4 x 3 x 2 1/2,Dark Bluish Gray,confirmed
+8047-arm-step-08,axle3-a4,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-arm-step-09,pin-a9,2780,Technic Pin with Friction Ridges,Black,likely
+8047-arm-step-09,bevel12-a1,6589,Technic Gear 12 Tooth Bevel,Tan,confirmed
+8047-arm-step-10,conn3c-a2,32184,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole,Light Bluish Gray,confirmed
+8047-arm-step-10,bevel20-a,87407,Technic Gear 20 Tooth Bevel with Pin Hole,Light Bluish Gray,confirmed
+8047-arm-step-10,axle5-a,32073,Technic Axle 5,Light Bluish Gray,confirmed
+8047-arm-step-11,axle3-a5,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-arm-step-11,axle4-a1,3705,Technic Axle 4,Black,confirmed
+8047-arm-step-11,bevel12-a2,6589,Technic Gear 12 Tooth Bevel,Tan,confirmed
+8047-arm-step-11,gear-8,4019,Technic Gear 16 Tooth,Light Bluish Gray,confirmed
+8047-arm-step-11,con180-a,32034,Technic Axle and Pin Connector Angled #2 180deg,Black,likely
+8047-arm-step-12,axle4-a2,3705,Technic Axle 4,Black,confirmed
+8047-arm-step-12,conn3c-a3,32184,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole,Light Bluish Gray,confirmed
+8047-step-39,conn3c-39,32184,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole,Light Bluish Gray,confirmed
+8047-step-39,axle3-39,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-boom-step-01,lthin-1,32056,Technic Beam 3 x 3 L-Shape Thin,Yellow,confirmed
+8047-boom-step-01,axle2-b1,32062,Technic Axle 2 Notched,Red,confirmed
+8047-boom-step-01,axle2-b2,32062,Technic Axle 2 Notched,Red,confirmed
+8047-boom-step-01,axle2-b3,32062,Technic Axle 2 Notched,Red,confirmed
+8047-boom-step-02,beam3t-b1,6632,Technic Beam 1 x 3 Thin,Yellow,confirmed
+8047-boom-step-02,axle2-b4,32062,Technic Axle 2 Notched,Red,confirmed
+8047-boom-step-02,bent9-b,6629,Technic Beam 1 x 9 Bent (6 - 4) Thick,Yellow,confirmed
+8047-boom-step-03,beam3t-b2,6632,Technic Beam 1 x 3 Thin,Yellow,confirmed
+8047-boom-step-03,link9-b,64451,Technic Link 1 x 9 Bent (6 - 4),Dark Bluish Gray,confirmed
+8047-boom-step-04,lthin-2,32056,Technic Beam 3 x 3 L-Shape Thin,Yellow,confirmed
+8047-boom-step-04,axle3-b,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-41,thin4-1,2825,Technic Beam 1 x 4 Thin with Stud Connector,Black,confirmed
+8047-step-41,axle3-41,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-42,thin4-2,2825,Technic Beam 1 x 4 Thin with Stud Connector,Black,confirmed
+8047-step-42,angle1-42,32013,Technic Axle and Pin Connector Angled #1,Dark Bluish Gray,confirmed
+8047-step-42,axle3-42,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-43,axle9-43,60485,Technic Axle 9,Light Bluish Gray,confirmed
+8047-step-43,tanpin-1,32556,Technic Pin Long without Friction,Tan,confirmed
+8047-step-43,angle1-43,32013,Technic Axle and Pin Connector Angled #1,Dark Bluish Gray,confirmed
+8047-step-43,angle4-43,32192,Technic Axle and Pin Connector Angled #4 135deg,Dark Bluish Gray,confirmed
+8047-step-44,beam11-44,32525,Technic Beam 1 x 11 Thick,Yellow,confirmed
+8047-step-44,bent2-44,44809,Technic Pin Connector Perpendicular 2 x 2 Bent,Light Bluish Gray,likely
+8047-step-44,pin-44,6558,Technic Pin Long with Friction,Blue,confirmed
+8047-step-45,beam11-45,32525,Technic Beam 1 x 11 Thick,Yellow,confirmed
+8047-step-46,bucket-1,2950,Technic Digger Bucket 4 x 4 x 9 with 3 teeth,Black,confirmed
+8047-step-46,axle55-46,59426,Technic Axle 5.5 with Stop,Dark Bluish Gray,confirmed
+8047-step-47,axle3-47,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-47,halfbush-1,32123b,Technic Bush 1/2 Smooth,Light Bluish Gray,confirmed
+8047-step-47,halfbush-2,32123b,Technic Bush 1/2 Smooth,Light Bluish Gray,confirmed
+8047-step-48,pin-48,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-48,beam3-48,32523,Technic Beam 1 x 3 Thick,Dark Bluish Gray,confirmed
+8047-step-49,beam9-49,40490,Technic Beam 1 x 9 Thick,Yellow,confirmed
+8047-step-49,hose-2,75c12,Hose Rigid 3mm 12L,Black,confirmed
+8047-step-49,pin-49,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-49,hoseconn-2,32013,Technic Axle and Pin Connector Angled #1,Dark Bluish Gray,confirmed
+8047-step-50,beam11-50,32525,Technic Beam 1 x 11 Thick,Yellow,confirmed
+8047-step-50,pin-50a,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-50,pin-50b,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-50,pin-50c,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-50,pin-50d,2780,Technic Pin with Friction Ridges,Black,confirmed
+8047-step-51,post-L,40490,Technic Beam 1 x 9 Thick,Black,confirmed
+8047-step-51,post-R,40490,Technic Beam 1 x 9 Thick,Black,confirmed
+8047-step-52,beam7-52,32524,Technic Beam 1 x 7 Thick,Black,confirmed
+8047-step-52,studaxle-1,6587,Technic Axle 3 with Stud,Dark Tan,confirmed
+8047-step-52,studaxle-2,6587,Technic Axle 3 with Stud,Dark Tan,confirmed
+8047-step-53,axle3-53a,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-53,axle3-53b,4519,Technic Axle 3,Light Bluish Gray,confirmed
+8047-step-53,axcon-53a,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-step-53,axcon-53b,59443,Technic Axle Connector Smooth,Black,confirmed
+8047-step-54,light-o1,6141,Plate Round 1 x 1,Trans-Orange,confirmed
+8047-step-54,light-o2,6141,Plate Round 1 x 1,Trans-Orange,confirmed
+8047-step-54,light-c1,6141,Plate Round 1 x 1,Trans-Clear,confirmed
+8047-step-54,light-c2,6141,Plate Round 1 x 1,Trans-Clear,confirmed
+8047-step-54,hub-54a,87082,Technic Pin Connector Hub with 2 Pins,Light Bluish Gray,confirmed
+8047-step-54,hub-54b,87082,Technic Pin Connector Hub with 2 Pins,Light Bluish Gray,confirmed
+8047-step-54,beam7-54,32524,Technic Beam 1 x 7 Thick,Black,confirmed
+8047-step-54,beam5-54,32316,Technic Beam 1 x 5 Thick,Black,confirmed
+8047-step-55,angle5-1,32015,Technic Axle and Pin Connector Angled #5 112.5deg,Black,confirmed
+8047-step-55,angle5-2,32015,Technic Axle and Pin Connector Angled #5 112.5deg,Black,confirmed
