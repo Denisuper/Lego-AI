@@ -11,7 +11,9 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `sets/<set>/booklet.pdf`, `parts_list.csv` | The booklet and its official parts list |
 | `sets/<set>/training.jsonl`, `training.tbl` | The whole set in one file each, ready for training (generated) |
 | `sets/<set>/preview.md` | Every step with its picture, easy to read (generated) |
-| `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, which labeled sets use it |
+| `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, size, thickness, hole/pin/axle counts, gear teeth, plain-English description |
+| `catalog/connections.csv` | Every hole, pin and axle on every part: type (round pin hole, cross axle hole, pin, axle...), exact position, direction, depth, whether things can slide in it |
+| `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
 | `docs/` | Labeling instructions, framework |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
@@ -27,4 +29,4 @@ python tools/check_steps.py sets/8047/training.jsonl sets/8047/parts_list.csv
 | --- | --- | --- |
 | 8047 Compact Excavator | 88 (main 1-56 + seat, body, arm, boom side builds) | All 252 pieces used exactly once; checks pass; 47 steps flagged for review |
 
-Catalog: 975 Technic parts from Rebrickable's free data downloads.
+Catalog: 975 Technic parts from Rebrickable's free data downloads; 772 have full 3D detail (4,968 connection points) from LDraw + LDCad. Units: 20 LDU = 1 hole spacing (8 mm).
