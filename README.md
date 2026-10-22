@@ -12,7 +12,7 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `sets/<set>/training.jsonl`, `training.tbl` | The whole set in one file each, ready for training (generated) |
 | `sets/<set>/preview.md` | Every step with its picture, easy to read (generated) |
 | `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, which labeled sets use it |
-| `docs/` | Labeling instructions, framework, plan |
+| `docs/` | Labeling instructions, framework |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
 
