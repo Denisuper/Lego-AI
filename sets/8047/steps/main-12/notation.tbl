@@ -1,13 +1,13 @@
 STEP 12
-# not sure which rod is on the left: rod-A and rod-B may be swapped
+# settled by comparing steps 4-5 (rod-B/bentbeam-D on the far side) and 11-12 (pin-V on the far side)
 ADD beam9-X 40490 black
-CONNECT rod-A.pin2 -> beam9-X.hole?
+CONNECT rod-B.pin2 -> beam9-X.hole?
 CONNECT pin-V.pin1 -> beam9-X.hole?
 ADD beam9-Y 40490 black
-CONNECT rod-B.pin2 -> beam9-Y.hole?
+CONNECT rod-A.pin2 -> beam9-Y.hole?
 CONNECT pin-U.pin1 -> beam9-Y.hole?
-DOES rod-A HOLDS beam9-X
+DOES rod-B HOLDS beam9-X
 DOES pin-V HOLDS beam9-X
-DOES rod-B HOLDS beam9-Y
+DOES rod-A HOLDS beam9-Y
 DOES pin-U HOLDS beam9-Y
 PATTERN side_rails

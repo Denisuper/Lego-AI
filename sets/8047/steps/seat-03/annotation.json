@@ -50,12 +50,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "side box: pin-s2 and pin-s3 push through beam5-s",
-      "beam5-s goes against lbeam-s1's long arm"
+      "side box: pin-s2 and pin-s3 push through beam5-s's 2nd and 4th holes, sticking out both sides",
+      "beam5-s goes against lbeam-s1's long arm: the pins' back ends go into lbeam-s1's 2nd and 4th holes"
     ],
     "who_does_what_to_which": [
       "beam5-s holds pin-s2 and pin-s3",
-      "lbeam-s1 supports beam5-s"
+      "pin-s2 and pin-s3 lock beam5-s to lbeam-s1"
     ],
     "where_everything_is_after": [
       "beam5-s: upright next to the seat back, two pins sticking forward",
@@ -68,7 +68,7 @@
       "design_pattern": "doubled upright"
     }
   },
-  "confidence": "medium",
-  "needs_review": true,
-  "review_note": "Which holes of beam5-s the pins use, and how beam5-s is held to lbeam-s1, is not clear."
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Settled with step 4: the pins stick out the front for lbeam-s2 and their back ends go into lbeam-s1. Holes 2 and 4 seen in the side box; lbeam-s1 holes assume the gray beam's top lines up with the blue L's top, as drawn."
 }

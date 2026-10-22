@@ -119,16 +119,16 @@ DOES connector-W HOLDS pin-V
 PATTERN mirror_side
 
 STEP 12
-# not sure which rod is on the left: rod-A and rod-B may be swapped
+# settled by comparing steps 4-5 (rod-B/bentbeam-D on the far side) and 11-12 (pin-V on the far side)
 ADD beam9-X 40490 black
-CONNECT rod-A.pin2 -> beam9-X.hole?
+CONNECT rod-B.pin2 -> beam9-X.hole?
 CONNECT pin-V.pin1 -> beam9-X.hole?
 ADD beam9-Y 40490 black
-CONNECT rod-B.pin2 -> beam9-Y.hole?
+CONNECT rod-A.pin2 -> beam9-Y.hole?
 CONNECT pin-U.pin1 -> beam9-Y.hole?
-DOES rod-A HOLDS beam9-X
+DOES rod-B HOLDS beam9-X
 DOES pin-V HOLDS beam9-X
-DOES rod-B HOLDS beam9-Y
+DOES rod-A HOLDS beam9-Y
 DOES pin-U HOLDS beam9-Y
 PATTERN side_rails
 
@@ -319,17 +319,20 @@ DOES hub4-s HOLDS lbeam-s1
 PATTERN l_beam_as_seat
 ADD beam5-s 32316 lightgray
 ADD pin-s2 6558 blue
-CONNECT pin-s2.pin1 -> beam5-s.hole2 STIFF
+# settled with step 4: the 3-long pins go through beam5-s, back end into lbeam-s1, front end later takes lbeam-s2
+CONNECT pin-s2.pin2 -> beam5-s.hole2 STIFF
+CONNECT pin-s2.pin1 -> lbeam-s1.hole2 STIFF
 ADD pin-s3 6558 blue
-CONNECT pin-s3.pin1 -> beam5-s.hole4 STIFF
-CONNECT beam5-s.hole? -> lbeam-s1.hole?
+CONNECT pin-s3.pin2 -> beam5-s.hole4 STIFF
+CONNECT pin-s3.pin1 -> lbeam-s1.hole4 STIFF
 DOES beam5-s HOLDS pin-s2
 DOES beam5-s HOLDS pin-s3
-DOES lbeam-s1 SUPPORTS beam5-s
+DOES pin-s2 LOCKS beam5-s
+DOES pin-s3 LOCKS beam5-s
 PATTERN doubled_upright
 ADD lbeam-s2 32526 blue
-CONNECT pin-s2.pin3 -> lbeam-s2.hole?
-CONNECT pin-s3.pin3 -> lbeam-s2.hole?
+CONNECT pin-s2.pin3 -> lbeam-s2.hole2 STIFF
+CONNECT pin-s3.pin3 -> lbeam-s2.hole4 STIFF
 DOES pin-s2 LOCKS lbeam-s2
 DOES pin-s3 LOCKS lbeam-s2
 PATTERN mirror_side
@@ -395,17 +398,19 @@ DOES pinlong-2 LOCKS seat
 PATTERN push_pins_home
 
 STEP 19
-# Model is turned around (turn symbol); which holes the shaft passes through is not visible.
+# compared with step 18 (model turned 180): conn3-1 goes on an axle end already sticking out of the seat frame, not on the new shaft
 ADD axle7-B 44294 lightgray
 ADD axcon-1 59443 black
 ADD axpin-1 43093 blue
 ADD conn3-1 42003 black
 CONNECT axle7-B.axle1 -> axcon-1.axlehole?
 CONNECT axpin-1.axle1 -> axcon-1.axlehole?
-CONNECT axle7-B.axle4 -> seat.hole?
-CONNECT conn3-1.axlehole1 -> axle7-B.axle7 LOCKED
+CONNECT axle7-B.axle? -> lbeam-s3.hole?
+CONNECT axle7-B.axle? -> lbeam-s4.hole?
+CONNECT conn3-1.axlehole1 -> axle9-s2.axle1 LOCKED
 DOES axcon-1 HOLDS axpin-1
-DOES axle7-B CARRIES conn3-1
+DOES axle9-s2 CARRIES conn3-1
+DOES lbeam-s3 HOLDS axle7-B
 PATTERN axle_to_pin_shaft
 
 STEP 20

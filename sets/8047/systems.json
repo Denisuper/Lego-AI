@@ -19,10 +19,10 @@
       ],
       "why_built_first": "Everything else hangs off it; it's built upside down so the turntable can be pinned from below.",
       "parts": {
-        "rod-A": "Left end of the back cross shaft; its pin end later carries the left bent beam (step 5) and the left side rail (step 12).",
+        "rod-A": "Near end of the back cross shaft; its pin end carries bentbeam-I (step 5) and the near side rail beam9-Y (step 12).",
         "axle-A": "The spine of the cross shaft: carries beam-C in the middle and joins rod-A to rod-B.",
         "beam-C": "Turns the cross shaft into pin holes facing back, so the turntable can be pinned to the frame (via pin-E, pin-F in step 8).",
-        "rod-B": "Right end of the cross shaft; carries the right bent beam (step 3) and right side rail (step 12).",
+        "rod-B": "Far end of the cross shaft; carries bentbeam-D (step 3) and the far side rail beam9-X (step 12).",
         "bentbeam-D": "Right side of the front U; reaches forward to the front cross beam.",
         "bentbeam-I": "Left side of the front U, mirror of bentbeam-D.",
         "pin-E": "One of the two pins the turntable's fixed half sits on (step 8).",
@@ -42,8 +42,8 @@
         "connector-W": "Left end of the back cross axle; turns it into a pin end via pin-V.",
         "pin-U": "Right back pin; holds the right side rail beam9-Y.",
         "pin-V": "Left back pin; holds the left side rail beam9-X.",
-        "beam9-X": "Left side rail: ties front and back of the frame together and carries the left track's two wheels.",
-        "beam9-Y": "Right side rail, mirror of beam9-X."
+        "beam9-X": "Far side rail (on rod-B and pin-V): ties front and back of the frame together and carries one track's two wheels.",
+        "beam9-Y": "Near side rail (on rod-A and pin-U), mirror of beam9-X."
       }
     },
     {
@@ -121,7 +121,7 @@
         "lbeam-s4": "Right side plate; its leg goes on pinlong-2.",
         "axcon-1": "Joins axle7-B to axpin-1 so the shaft ends in a pin.",
         "axpin-1": "Pin end that carries bent11-A (step 20).",
-        "conn3-1": "Standing connector on axle7-B's other end.",
+        "conn3-1": "Standing connector on the seat frame's cross axle axle9-s2 (back-left), a mount point for later parts.",
         "bent11-A": "Right side frame: wraps round the turntable and rises at the back; carries the body, side covers and roof post.",
         "bent11-B": "Left side frame, mirror of bent11-A.",
         "pin-21a": "Mount on bent11-A for the right side cover (step 37).",
@@ -159,7 +159,7 @@
         "bush-s1": "Stops axle7-s sliding.",
         "crown-1": "24-tooth gear the worm turns; the 1:24 slow-down happens here.",
         "bush-28": "Stops axle7-s sliding at the crown-gear end.",
-        "axle7-B": "Long shaft that receives the turning from gear-6. Where it ends up is an open question.",
+        "axle7-B": "Long shaft through the bottom of the seat frame; its front end becomes a pin (axcon-1 + axpin-1) for the side frame, its back end carries gear-6. Where its turning goes is an open question.",
         "gear-6": "Receives the turning from gear-5.",
         "axle8s-1": "Worm shaft running to the back: knob-2 at one end, worm-1 in the middle.",
         "conn3-2": "Holds the worm shaft in line.",

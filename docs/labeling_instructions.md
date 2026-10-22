@@ -45,6 +45,15 @@ Then add: `confidence` (low / medium / high), `needs_review` (true/false), `revi
 - Use only part numbers from the set's `sets/<set>/parts_list.csv`.
 - Mark each match `confirmed` (only one part in the set fits) or `likely` (matched by look and count).
 
+## When the picture doesn't show it: compare steps
+Before writing `?` or setting `needs_review`, compare with the steps around it:
+1. **Previous step:** which holes were still empty? The new part must use one of them. Count them on the earlier picture.
+2. **Next step(s):** the part is often visible from a new angle once it's in place, or something attaches to it that shows which hole it's in.
+3. **Mirrored steps:** a step that mirrors an earlier one (left/right side) uses the same holes, mirrored.
+4. **1:1 callouts:** the life-size drawings in the booklet confirm axle and beam lengths.
+5. **Hole count rule:** for a part that looks the same both ways round, its first join decides which end is hole1; later joins count from there.
+Write in `review_note` which step settled it ("seen in step 9: pin-P is in the 2nd hole"). Only keep `?` if no step around it shows it.
+
 ## Honesty rules
 - If the picture doesn't show something (no arrow, hidden join), say so, guess only if needed, set `needs_review: true`, and write why in `review_note`.
 - Plain language. No jargon.

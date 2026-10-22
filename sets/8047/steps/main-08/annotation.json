@@ -46,5 +46,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "No arrow; the join to pin-E and pin-F is read from how the parts line up."
+  "review_note": "OPEN (narrowed): steps 8-9 show pin-E/pin-F in the two outer holes of one row of the turntable's near hole block (2 apart, matching beam-C holes 1 and 3). Which of the block's two rows is not visible: hole1+hole10 or hole2+hole11 (or the mirror block)."
 }

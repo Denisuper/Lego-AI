@@ -28,6 +28,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "No parts box; reading the arrows as 'push the blue pins in'."
+  "needs_review": false,
+  "review_note": "Settled meaning by comparing steps 16-18: the red arrows push pinlong-1/2 inward through the turntable blocks into the bottom holes of the seat legs, locking the seat down."
 }

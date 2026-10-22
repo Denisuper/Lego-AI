@@ -44,7 +44,7 @@
       "design_pattern": "mirror the side"
     }
   },
-  "confidence": "medium",
+  "confidence": "high",
   "needs_review": false,
-  "review_note": ""
+  "review_note": "Settled with step 3: lbeam-s2 takes the pins' front ends in its 2nd and 4th holes."
 }

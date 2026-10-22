@@ -37,7 +37,7 @@
         "catalog_name": "Technic Axle 7",
         "color": "Light Bluish Gray",
         "part_match": "confirmed",
-        "position": "long axle running from under the seat out the left side (side box)",
+        "position": "long axle pushed in from the front through the lower holes of the seat frame's side plates (cream arrow)",
         "rotation": "spins"
       },
       {
@@ -64,21 +64,23 @@
         "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
         "color": "Black",
         "part_match": "confirmed",
-        "position": "on the left end of axle7-B, standing up (red arrow)",
+        "position": "on the left end of the seat frame's cross axle axle9-s2, standing up (red arrow)",
         "rotation": "fixed"
       }
     ],
     "what_each_new_part_touches": [
       "side box: axle7-B -> axcon-1 -> axpin-1 make one long shaft",
-      "the shaft goes in from below/behind the seat (the model is turned around)",
-      "conn3-1's axle hole goes onto the shaft's left end"
+      "the shaft goes in from the front through the seat frame's side plates; axpin-1's pin end is left sticking out at the front",
+      "conn3-1's axle hole goes onto axle9-s2's end sticking out at the back-left (seen in step 18)"
     ],
     "who_does_what_to_which": [
       "axcon-1 holds axpin-1",
-      "axle7-B carries conn3-1"
+      "lbeam-s3 and lbeam-s4 hold axle7-B",
+      "axle9-s2 carries conn3-1"
     ],
     "where_everything_is_after": [
-      "a long shaft under the seat with a pin end on one side and conn3-1 on the other",
+      "a long shaft through the bottom of the seat frame with a pin end at the front",
+      "conn3-1 standing on axle9-s2's back-left end",
       "everything else: no change"
     ],
     "why": {
@@ -90,5 +92,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Model is turned around (turn symbol); which holes the shaft passes through is not visible."
+  "review_note": "Corrected by comparing with step 18: conn3-1 goes on the existing cross axle end (axle9-s2 most likely; axle9-s1's end already has a bush), not on the new shaft. OPEN: which side-plate holes axle7-B passes through."
 }

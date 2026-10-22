@@ -29,6 +29,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "No new parts. Which leg goes on which pin is read from the arrows only."
+  "needs_review": false,
+  "review_note": "Steps 17-18 compared: the seat legs drop between the turntable's two hole blocks; the pins are only pushed through into the legs in step 18. Which leg hole: the bottom end hole as drawn, not named yet."
 }

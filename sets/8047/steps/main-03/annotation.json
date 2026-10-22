@@ -69,7 +69,7 @@
       "design_pattern": "two-pin mount (stops twisting)"
     }
   },
-  "confidence": "medium",
-  "needs_review": true,
-  "review_note": "The two pins have no arrow; their holes are read from where they appear in the picture."
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Settled by comparing steps: step 2 shows beam-C's three holes empty; steps 3 and 4 show the pins in the two outer holes (hole1, hole3) with the middle one empty."
 }

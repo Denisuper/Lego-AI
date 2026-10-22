@@ -54,7 +54,7 @@
       "design_pattern": "side rails (track frame)"
     }
   },
-  "confidence": "medium",
-  "needs_review": true,
-  "review_note": "Which rod (A or B) is on the left vs right is not clear from the angle change between steps 3 and 5."
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Settled by comparing steps: in steps 4-5 rod-B (with bentbeam-D) is the far end of the shaft; in steps 11-12 pin-V is on the far end of the back axle. So beam9-X sits on rod-B + pin-V and beam9-Y on rod-A + pin-U. Exact rail holes still open."
 }

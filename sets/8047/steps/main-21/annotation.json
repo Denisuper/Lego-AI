@@ -27,7 +27,7 @@
         "catalog_name": "Technic Pin with Friction Ridges",
         "color": "Black",
         "part_match": "confirmed",
-        "position": "in a hole near bent11-A's front end",
+        "position": "in one of the top two holes of bent11-A's rising back end, pointing outward",
         "rotation": "fixed"
       },
       {
@@ -36,7 +36,7 @@
         "catalog_name": "Technic Pin with Friction Ridges",
         "color": "Black",
         "part_match": "confirmed",
-        "position": "in the next hole of bent11-A",
+        "position": "in one of the top two holes of bent11-A's rising back end, pointing outward",
         "rotation": "fixed"
       },
       {
@@ -45,7 +45,7 @@
         "catalog_name": "Technic Axle 3",
         "color": "Light Bluish Gray",
         "part_match": "confirmed",
-        "position": "through bent11-A's axle hole, pointing in (1:1 picture)",
+        "position": "low in bent11-A's front section, next to the turntable, pointing inward",
         "rotation": "fixed"
       }
     ],
@@ -69,5 +69,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Exact holes not visible."
+  "review_note": "Narrowed by comparing step 25 (mirror): the two pins are in the top of the rising back end (the body hangs on them in step 30), the axle is low at the front. OPEN: hole numbers on the double-bent beam not mapped to the catalog numbering yet."
 }
