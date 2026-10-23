@@ -4589,3 +4589,248 @@ CONNECT cp-bp-1.pin1 -> cp-f8-1.hole?
 DOES cp-b7-1 CARRIES cp-dp-1
 DOES cp-f8-1 SUPPORTS cp-yax-1
 PATTERN pillar_build
+
+STEP 174
+THINK have Cab box with the yellow roof frame (steps 169-173); the pillar of step 173 is fitted on page 149.
+THINK goal Adds the connectors that the roof tube plugs into.
+THINK part ca-ec-1 (6536 Technic Axle and Pin Connector Perpendicular): two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x); fixed
+THINK part ca-ec-2 (6536 Technic Axle and Pin Connector Perpendicular): two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x); fixed
+THINK touches The front pillar from step 173 stands on the model (page 149, arrow to the front-right corner). Two black connectors are pressed onto its top (arrows, 2x). A green curved arrow says to turn the model.
+THINK does cp-b7-1 carries ca-ec-1
+THINK why Connectors make cross-hole sockets.
+THINK check ca-ec-1.axlehole1 goes into cp-yax-1.axle3? (not shown in the booklet)
+THINK check ca-ec-2.axlehole1 goes into cp-rax-1.axle2? (not shown in the booklet)
+THINK builds_on ca-ec-1 builds on cp-yax-1 (42175-step-173), and rests on cp-rax-1 (42175-step-173), cp-b7-1 (42175-step-173)
+THINK builds_on ca-ec-2 builds on cp-rax-1 (42175-step-173), and rests on cp-yax-1 (42175-step-173)
+THINK later Step 175 builds the roof tube. Pattern: pillar top
+ADD ca-ec-1 6536 black
+ADD ca-ec-2 6536 black
+CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?
+CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?
+DOES cp-b7-1 CARRIES ca-ec-1
+PATTERN end_connectors
+
+STEP 175
+THINK have Cab with the front pillar (step 174).
+THINK goal Builds the roof tube / cab handle.
+THINK part rt-rax-1 (32062 Technic Axle 2 Notched): two red 2-long notched axles (yellow box 1); fixed
+THINK part rt-rax-2 (32062 Technic Axle 2 Notched): two red 2-long notched axles (yellow box 1); fixed
+THINK part rt-ax5-1 (32073 Technic Axle 5): light grey 5-long axle (1:1 box, circled 5); fixed
+THINK part rt-cyl-1 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): black smooth axle connector (yellow box 1); fixed
+THINK part rt-end-1 (32291 Technic Axle and Pin Connector Perpendicular Double): two dark grey double axle and pin connectors (yellow box 2, ball ends); fixed
+THINK part rt-end-2 (32291 Technic Axle and Pin Connector Perpendicular Double): two dark grey double axle and pin connectors (yellow box 2, ball ends); fixed
+THINK touches Yellow box 1-2: a red axle goes in the black connector, then a rod with end fittings is built. One goes at the pillar's top (green line from the 5-long axle) and the rod lies toward the seat (arrow).
+THINK does rt-cyl-1 carries rt-rax-1
+THINK does rt-end-1 holds rt-ax5-1
+THINK why A rod with end fittings makes a bar that can be plugged on both ends.
+THINK check rt-rax-1.axle1 goes into rt-cyl-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check rt-ax5-1.axle1 goes into rt-end-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check rt-ax5-1.axle5 goes into rt-end-2.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK later Step 176 builds a second tube. Pattern: roof tube
+ADD rt-rax-1 32062 red
+ADD rt-rax-2 32062 red
+ADD rt-ax5-1 32073 lightgray
+ADD rt-cyl-1 59443 black
+ADD rt-end-1 32291 darkgray
+ADD rt-end-2 32291 darkgray
+CONNECT rt-rax-1.axle1 -> rt-cyl-1.axlehole1~ LOCKED
+CONNECT rt-ax5-1.axle1 -> rt-end-1.axlehole1~ LOCKED
+CONNECT rt-ax5-1.axle5 -> rt-end-2.axlehole1~ LOCKED
+DOES rt-cyl-1 CARRIES rt-rax-1
+DOES rt-end-1 HOLDS rt-ax5-1
+PATTERN rod_with_ends
+
+STEP 176
+THINK have (new build: the long bent tube; nothing attached yet)
+THINK goal Builds the bent roof tube that holds the hose handle.
+THINK part bt-hose-1 (32199 Axle Hose Soft 11L): black soft axle hose (1:1 box, shown with its two end pieces); fixed
+THINK part bt-ang-1 (32014 Technic Axle and Pin Connector Angled #6 - 90 deg): black angled axle and pin connector, 90 degrees (sub-step 4); fixed
+THINK part bt-ball-1 (52730 Technic Steering / CV Ball Joint Female 4L): dark grey steering ball joint (sub-step 5, round end); fixed
+THINK part bt-rax-1 (32062 Technic Axle 2 Notched): red 2-long notched axle (sub-step 1); fixed
+THINK part bt-yax-1 (4519 Technic Axle 3): yellow 3-long axle (1:1 box, circled 3); fixed
+THINK part bt-cyl-1 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): black smooth axle connector (sub-step 1); fixed
+THINK part bt-tb-1 (41677 Technic Beam 1 x 2 Thin): black thin oval beam slid onto the axle (sub-step 2); fixed
+THINK touches Sub-steps 1-5: a red axle and the yellow axle go in the black connector (1), a thin beam goes on the free end (2), a red axle is added (3), an angled connector is fitted (4), and the long soft hose is pushed into it (5).
+THINK does bt-cyl-1 carries bt-yax-1
+THINK does bt-ang-1 holds bt-hose-1
+THINK does bt-ball-1 holds bt-hose-1
+THINK why A soft hose bends where a rigid axle would not.
+THINK check bt-rax-1.axle1 goes into bt-cyl-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check bt-yax-1.axle1 goes into bt-cyl-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check bt-tb-1.axlehole1 goes into bt-yax-1.axle? (not shown in the booklet)
+THINK check bt-ang-1.axlehole1 goes into bt-cyl-1.axlehole1? (not shown in the booklet)
+THINK later Step 177 uses it. Pattern: bent tube
+ADD bt-hose-1 32199 black
+ADD bt-ang-1 32014 black
+ADD bt-ball-1 52730 darkgray
+ADD bt-rax-1 32062 red
+ADD bt-yax-1 4519 yellow
+ADD bt-cyl-1 59443 black
+ADD bt-tb-1 41677 black
+CONNECT bt-rax-1.axle1 -> bt-cyl-1.axlehole1~ LOCKED
+CONNECT bt-yax-1.axle1 -> bt-cyl-1.axlehole1~ LOCKED
+CONNECT bt-tb-1.axlehole1 -> bt-yax-1.axle?
+CONNECT bt-ang-1.axlehole1 -> bt-cyl-1.axlehole1?
+DOES bt-cyl-1 CARRIES bt-yax-1
+DOES bt-ang-1 HOLDS bt-hose-1
+DOES bt-ball-1 HOLDS bt-hose-1
+PATTERN bent_tube
+
+STEP 177
+THINK have Cab with front pillar (step 174), roof tube (step 175) and the bent tube (step 176).
+THINK goal Adds the second roof handle rod.
+THINK part bt-ax6-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK part bt-tb2-1 (41677 Technic Beam 1 x 2 Thin): black thin oval beam at one end (yellow box); fixed
+THINK touches Yellow box: a long black axle with an oval end beam. It is placed on the roof's right side, running from the front corner to the back (arrow and a green line).
+THINK does bt-tb2-1 holds bt-ax6-1
+THINK does bt-hose-1 supports bt-ax6-1
+THINK why A pair of rods frames the roof opening.
+THINK check bt-tb2-1.axlehole1 goes into bt-ax6-1.axlehole? (not shown in the booklet)
+THINK later Page 155 onwards finishes the cab. Pattern: roof rod 2
+ADD bt-ax6-1 3706 black
+ADD bt-tb2-1 41677 black
+CONNECT bt-tb2-1.axlehole1 -> bt-ax6-1.axlehole?
+DOES bt-tb2-1 HOLDS bt-ax6-1
+DOES bt-hose-1 SUPPORTS bt-ax6-1
+PATTERN bent_tube
+
+STEP 178
+THINK have Cab with front pillar and roof rods (steps 174-177).
+THINK goal Stops the thin roof beams from sliding off.
+THINK part sb-bush-1 (32123b Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced): two yellow bushes, pushed onto the pin ends on the roof rail (green line shows both); fixed
+THINK part sb-bush-2 (32123b Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced): two yellow bushes, pushed onto the pin ends on the roof rail (green line shows both); fixed
+THINK touches Two small yellow bushes are pushed onto the roof rail's side pins (green guide line with two parts).
+THINK does sb-bush-1 holds ca-ytb-1
+THINK why A bush on a pin end is a stopper.
+THINK check sb-bush-1.axlehole1 goes into ca-dp2-1.pin? (not shown in the booklet)
+THINK check sb-bush-2.axlehole1 goes into ca-dp2-3.pin? (not shown in the booklet)
+THINK builds_on sb-bush-1 builds on ca-dp2-1 (42175-step-170), and rests on ca-yb9-1 (42175-step-170), ca-ytb-1 (42175-step-170)
+THINK builds_on sb-bush-2 builds on ca-dp2-3 (42175-step-170), and rests on ca-yb9-1 (42175-step-170), ca-ytb-2 (42175-step-170)
+THINK later Step 179 adds a bracket under the roof. Pattern: roof stops
+ADD sb-bush-1 32123b yellow
+ADD sb-bush-2 32123b yellow
+CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?
+CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?
+DOES sb-bush-1 HOLDS ca-ytb-1
+PATTERN end_stops
+
+STEP 179
+THINK have Cab with roof stops (step 178).
+THINK goal Builds a hinge bracket for the roof.
+THINK part rb-tb-1 (11478 Technic Beam 1 x 5 Thin with Axle Holes on Ends): black thin 5-hole beam with axle holes at its ends; fixed
+THINK part rb-conn-1 (42003 Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes): black connector; fixed
+THINK part rb-ax-1 (87083 Technic Axle 4 with Stop): dark grey 4-long axle with stop; fixed
+THINK part rb-tp-1 (32002 Technic Pin 3/4): two tan 3/4 pins in the thin beam (sub-step 1); fixed
+THINK part rb-tp-2 (32002 Technic Pin 3/4): two tan 3/4 pins in the thin beam (sub-step 1); fixed
+THINK touches Yellow box 1-3: two tan pins go in the thin beam (1), a black connector is added at one end (2), a short axle goes into the connector (3). The bracket is pressed under the roof at the rear right (arrow, green line).
+THINK does rb-tb-1 carries rb-tp-1
+THINK does rb-conn-1 holds rb-ax-1
+THINK why A connector with an axle gives a pivot.
+THINK check rb-tp-1.pin1 goes into rb-tb-1.hole1, 0.4 hole deep, held stiff by friction (estimated from the picture)
+THINK check rb-tp-2.pin1 goes into rb-tb-1.hole3, 0.4 hole deep, held stiff by friction (estimated from the picture)
+THINK check rb-conn-1.hole1 goes into rb-tp-1.pin2? (not shown in the booklet)
+THINK check rb-ax-1.axle1 goes into rb-conn-1.axlehole1? (not shown in the booklet)
+THINK later Steps 180-181 add the roof beams. Pattern: roof hinge
+ADD rb-tb-1 11478 black
+ADD rb-conn-1 42003 black
+ADD rb-ax-1 87083 darkgray
+ADD rb-tp-1 32002 tan
+ADD rb-tp-2 32002 tan
+CONNECT rb-tp-1.pin1 -> rb-tb-1.hole1~ STIFF
+CONNECT rb-tp-2.pin1 -> rb-tb-1.hole3~ STIFF
+CONNECT rb-conn-1.hole1 -> rb-tp-1.pin2?
+CONNECT rb-ax-1.axle1 -> rb-conn-1.axlehole1?
+DOES rb-tb-1 CARRIES rb-tp-1
+DOES rb-conn-1 HOLDS rb-ax-1
+PATTERN bracket_build
+
+STEP 180
+THINK have Cab with roof bracket (step 179).
+THINK goal Doubles the yellow roof beam so the roof is wide.
+THINK part rf2-b9-1 (40490 Technic Beam 1 x 9 Thick): yellow 9-hole beam (1:1 box, circled 9); fixed
+THINK part rf2-tb-1 (32017 Technic Beam 1 x 5 Thin): two yellow thin 5-hole beams (sub-step 2); fixed
+THINK part rf2-tb-2 (32017 Technic Beam 1 x 5 Thin): two yellow thin 5-hole beams (sub-step 2); fixed
+THINK part rf2-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK part rf2-dp-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK part rf2-dp-3 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK touches Yellow box 1-2: the same as step 170: three dark pins in a 9-hole beam, then a thin yellow beam over them (green arrows). The finished roof beam is laid on the first one (arrow).
+THINK does rf2-b9-1 carries rf2-dp-1
+THINK does rf2-tb-1 supports rf2-b9-1
+THINK why Two roof beams make a flat roof.
+THINK check rf2-dp-1.pin1 goes into rf2-b9-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rf2-dp-2.pin1 goes into rf2-b9-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rf2-dp-3.pin1 goes into rf2-b9-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rf2-tb-1.hole1 goes into rf2-dp-1.pin2? (not shown in the booklet)
+THINK check rf2-tb-2.hole1 goes into rf2-dp-3.pin2? (not shown in the booklet)
+THINK later Step 181 adds the long rod. Pattern: roof beam 2
+ADD rf2-b9-1 40490 yellow
+ADD rf2-tb-1 32017 yellow
+ADD rf2-tb-2 32017 yellow
+ADD rf2-dp-1 61332 black
+ADD rf2-dp-2 61332 black
+ADD rf2-dp-3 61332 black
+CONNECT rf2-dp-1.pin1 -> rf2-b9-1.hole2~ STIFF
+CONNECT rf2-dp-2.pin1 -> rf2-b9-1.hole3~ STIFF
+CONNECT rf2-dp-3.pin1 -> rf2-b9-1.hole7~ STIFF
+CONNECT rf2-tb-1.hole1 -> rf2-dp-1.pin2?
+CONNECT rf2-tb-2.hole1 -> rf2-dp-3.pin2?
+DOES rf2-b9-1 CARRIES rf2-dp-1
+DOES rf2-tb-1 SUPPORTS rf2-b9-1
+PATTERN roof_beam
+
+STEP 181
+THINK have Cab with two yellow roof beams (step 180).
+THINK goal Adds the front roof rod that mirrors the one in step 171.
+THINK part ca-ax10b-1 (3706 Technic Axle 6): black 6-long axle with a yellow connector at one end (1:1 box); fixed
+THINK part ca-yc2-1 (6536 Technic Axle and Pin Connector Perpendicular): yellow perpendicular connector; fixed
+THINK touches Yellow box: a long black axle with a yellow connector at its end. It is placed at the front of the roof, pointing down (arrow).
+THINK does ca-yc2-1 carries ca-ax10b-1
+THINK does rf2-b9-1 holds ca-yc2-1
+THINK why A rod and a connector fix the roof's corner.
+THINK check ca-ax10b-1.axle6 goes into ca-yc2-1.axlehole1, 1 hole deep, locked (turn together)
+THINK check ca-yc2-1.hole1 goes into rf2-b9-1.hole? (not shown in the booklet)
+THINK builds_on ca-yc2-1 builds on rf2-b9-1 (42175-step-180), and rests on rf2-dp-1 (42175-step-180), rf2-dp-2 (42175-step-180)
+THINK later Step 182 adds the orange rod. Pattern: roof rod
+ADD ca-ax10b-1 3706 black
+ADD ca-yc2-1 6536 yellow
+CONNECT ca-ax10b-1.axle6 -> ca-yc2-1.axlehole1 LOCKED
+CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?
+DOES ca-yc2-1 CARRIES ca-ax10b-1
+DOES rf2-b9-1 HOLDS ca-yc2-1
+PATTERN rod_with_connector
+
+STEP 182
+THINK have Cab with roof rods (step 181).
+THINK goal Adds an orange line as a decoration and window-brace.
+THINK part or-hose-1 (75c11 Hose Rigid 3mm D. 11L / 8.8cm): orange rigid 3 mm hose, 11 long, laid down the front left pillar (picture); fixed
+THINK touches A long thin orange hose is placed beside the front left pillar (picture).
+THINK does or-hose-1 supports rf2-b9-1
+THINK why An orange rigid hose is a rod.
+THINK later Step 183 adds a small plate. Pattern: orange rod
+ADD or-hose-1 75c11 orange
+DOES or-hose-1 SUPPORTS rf2-b9-1
+PATTERN rigid_hose
+
+STEP 183
+THINK have Cab with orange hose (step 182).
+THINK goal Adds a small panel to the pillar top.
+THINK part fl-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (sub-step 1, green arrow); fixed
+THINK part fl-tile-1 (3069b Tile 1 x 2 with Groove): black 1 x 2 tile with sticker 14 (sub-steps 3-4); fixed
+THINK part fl-pl-1 (18677 Plate Special 1 x 2 with Pin Hole Underneath): black 1 x 2 plate with a pin hole underneath (sub-step 2); fixed
+THINK part fl-cn-1 (32014 Technic Axle and Pin Connector Angled #6 - 90 deg): black angled connector (read as the 90 degree one, since all three 112 degree ones are used) (sub-step 1); fixed
+THINK touches Yellow box 1-4: a blue pin goes in an angled connector (1), a plate is added (2), a black tile (3) and its sticker no. 14 (4) are pressed on. The finished piece is placed at the top front of the left pillar (arrow).
+THINK does fl-cn-1 holds fl-bp-1
+THINK does fl-pl-1 supports fl-tile-1
+THINK why Sticker tiles show the machine's label.
+THINK check fl-bp-1.pin1 goes into fl-cn-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check fl-pl-1.hole? goes into fl-bp-1.axle1? (not shown in the booklet)
+THINK later Step 184 continues. Pattern: pillar fitting
+ADD fl-bp-1 43093 blue
+ADD fl-tile-1 3069b black
+ADD fl-pl-1 18677 black
+ADD fl-cn-1 32014 black
+CONNECT fl-bp-1.pin1 -> fl-cn-1.hole1~ STIFF
+CONNECT fl-pl-1.hole? -> fl-bp-1.axle1?
+DOES fl-cn-1 HOLDS fl-bp-1
+DOES fl-pl-1 SUPPORTS fl-tile-1
+PATTERN fitting_with_tile

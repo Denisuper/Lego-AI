@@ -1,0 +1,135 @@
+{
+  "example_id": "42175-step-176",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 152,
+  "step": 176,
+  "input": {
+    "picture": "steps/main-176/picture.png",
+    "parts_box": [
+      {
+        "name": "bt-hose-1",
+        "part_number": "32199",
+        "count": 1
+      },
+      {
+        "name": "bt-ang-1",
+        "part_number": "32014",
+        "count": 1
+      },
+      {
+        "name": "bt-ball-1",
+        "part_number": "52730",
+        "count": 1
+      },
+      {
+        "name": "bt-rax-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "bt-yax-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "bt-cyl-1",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "bt-tb-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the long bent tube; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bt-hose-1",
+        "part_number": "32199",
+        "catalog_name": "Axle Hose Soft 11L",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black soft axle hose (1:1 box, shown with its two end pieces)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-ang-1",
+        "part_number": "32014",
+        "catalog_name": "Technic Axle and Pin Connector Angled #6 - 90 deg",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black angled axle and pin connector, 90 degrees (sub-step 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-ball-1",
+        "part_number": "52730",
+        "catalog_name": "Technic Steering / CV Ball Joint Female 4L",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "dark grey steering ball joint (sub-step 5, round end)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-rax-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "red 2-long notched axle (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-cyl-1",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black smooth axle connector (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-tb-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin oval beam slid onto the axle (sub-step 2)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-5: a red axle and the yellow axle go in the black connector (1), a thin beam goes on the free end (2), a red axle is added (3), an angled connector is fitted (4), and the long soft hose is pushed into it (5)."
+    ],
+    "who_does_what_to_which": [
+      "bt-cyl-1 carries bt-yax-1",
+      "bt-ang-1 holds bt-hose-1",
+      "bt-ball-1 holds bt-hose-1"
+    ],
+    "where_everything_is_after": [
+      "a long black bent tube with a yellow end and a red end is ready to be fitted",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the bent roof tube that holds the hose handle.",
+      "why_these_parts": "A soft hose bends where a rigid axle would not.",
+      "sets_up_for_later": "Step 177 uses it.",
+      "design_pattern": "bent tube"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Hose and connector parts have no useful catalog points, so joins use ? and DOES lines. The 1:1 box shows the hose length."
+}

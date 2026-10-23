@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 173 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 183 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -4442,11 +4442,11 @@
 
 **Big picture:**
 - **ca-yb9-1** (None): None Later: 42175-step-171 `CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?`; 42175-step-171 `DOES ca-yb9-1 HOLDS ca-yc-1`.
-- **ca-ytb-1** (None): None
+- **ca-ytb-1** (None): None Later: 42175-step-178 `DOES sb-bush-1 HOLDS ca-ytb-1`.
 - **ca-ytb-2** (None): None
-- **ca-dp2-1** (None): None
+- **ca-dp2-1** (None): None Later: 42175-step-178 `CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?`.
 - **ca-dp2-2** (None): None
-- **ca-dp2-3** (None): None
+- **ca-dp2-3** (None): None Later: 42175-step-178 `CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?`.
 
 **Review:** The box shows 2x thin beams; the picture shows one going on in sub-step 2 and a second is used on the other side.
 
@@ -4516,12 +4516,260 @@
 **Why:** Builds the front corner pillar of the roof. The yellow fairing finishes the corner. *Next:* Page 149 fits it to the model. *Pattern:* front pillar
 
 **Big picture:**
-- **cp-b7-1** (None): None
+- **cp-b7-1** (None): None Later: 42175-step-174 `DOES cp-b7-1 CARRIES ca-ec-1`.
 - **cp-bp-1** (None): None
 - **cp-dp-1** (None): None
 - **cp-dp-2** (None): None
-- **cp-rax-1** (None): None
+- **cp-rax-1** (None): None Later: 42175-step-174 `CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?`.
 - **cp-f8-1** (None): None
-- **cp-yax-1** (None): None
+- **cp-yax-1** (None): None Later: 42175-step-174 `CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?`.
 
 **Review:** The two small pins are drawn light grey in the icon. All grey 4274 pins are already used up in the count, so the dark friction pin is used as the nearest fit; this is flagged for review.
+
+## 42175-step-174 (page 150) - low - NEEDS REVIEW
+
+![42175-step-174](steps/main-174/picture.png)
+
+**New parts:** ca-ec-1 (6536, black) - two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x); ca-ec-2 (6536, black) - two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x)
+
+**Touches:** The front pillar from step 173 stands on the model (page 149, arrow to the front-right corner). Two black connectors are pressed onto its top (arrows, 2x). A green curved arrow says to turn the model.
+
+**Exact joins:** ca-ec-1.axlehole1 into cp-yax-1.axle3? (not shown in booklet); ca-ec-2.axlehole1 into cp-rax-1.axle2? (not shown in booklet)
+
+**Who does what:** cp-b7-1 carries ca-ec-1
+
+**After:** the front pillar is fixed and has two black connectors at its top; the model is turned; everything else: no change
+
+**Why:** Adds the connectors that the roof tube plugs into. Connectors make cross-hole sockets. *Next:* Step 175 builds the roof tube. *Pattern:* pillar top
+
+**Big picture:**
+- **ca-ec-1** (None): None
+- **ca-ec-2** (None): None
+
+**Mechanisms:**
+- **ca-ec-1** builds on cp-yax-1 (42175-step-173), which rests on cp-rax-1 (42175-step-173), cp-b7-1 (42175-step-173)
+- **ca-ec-2** builds on cp-rax-1 (42175-step-173), which rests on cp-yax-1 (42175-step-173)
+
+**Review:** Page 149 has no step number: it shows the pillar from step 173 being fitted. Connector type read from the icon.
+
+## 42175-step-175 (page 151) - low - NEEDS REVIEW
+
+![42175-step-175](steps/main-175/picture.png)
+
+**New parts:** rt-rax-1 (32062, red) - two red 2-long notched axles (yellow box 1); rt-rax-2 (32062, red) - two red 2-long notched axles (yellow box 1); rt-ax5-1 (32073, light bluish gray) - light grey 5-long axle (1:1 box, circled 5); rt-cyl-1 (59443, black) - black smooth axle connector (yellow box 1); rt-end-1 (32291, dark bluish gray) - two dark grey double axle and pin connectors (yellow box 2, ball ends); rt-end-2 (32291, dark bluish gray) - two dark grey double axle and pin connectors (yellow box 2, ball ends)
+
+**Touches:** Yellow box 1-2: a red axle goes in the black connector, then a rod with end fittings is built. One goes at the pillar's top (green line from the 5-long axle) and the rod lies toward the seat (arrow).
+
+**Exact joins:** rt-rax-1.axle1 into rt-cyl-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); rt-ax5-1.axle1 into rt-end-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); rt-ax5-1.axle5 into rt-end-2.axlehole1 (1 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** rt-cyl-1 carries rt-rax-1; rt-end-1 holds rt-ax5-1
+
+**After:** a rod with end fittings runs from the pillar toward the seat area; everything else: no change
+
+**Why:** Builds the roof tube / cab handle. A rod with end fittings makes a bar that can be plugged on both ends. *Next:* Step 176 builds a second tube. *Pattern:* roof tube
+
+**Big picture:**
+- **rt-rax-1** (None): None
+- **rt-rax-2** (None): None
+- **rt-ax5-1** (None): None
+- **rt-cyl-1** (None): None
+- **rt-end-1** (None): None
+- **rt-end-2** (None): None
+
+**Review:** Part types are read from small icons and are likely wrong in at least one case; the dark grey connector with a round end could be a ball-joint part (52730).
+
+## 42175-step-176 (page 152) - low - NEEDS REVIEW
+
+![42175-step-176](steps/main-176/picture.png)
+
+**New parts:** bt-hose-1 (32199, black) - black soft axle hose (1:1 box, shown with its two end pieces); bt-ang-1 (32014, black) - black angled axle and pin connector, 90 degrees (sub-step 4); bt-ball-1 (52730, dark bluish gray) - dark grey steering ball joint (sub-step 5, round end); bt-rax-1 (32062, red) - red 2-long notched axle (sub-step 1); bt-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3); bt-cyl-1 (59443, black) - black smooth axle connector (sub-step 1); bt-tb-1 (41677, black) - black thin oval beam slid onto the axle (sub-step 2)
+
+**Touches:** Sub-steps 1-5: a red axle and the yellow axle go in the black connector (1), a thin beam goes on the free end (2), a red axle is added (3), an angled connector is fitted (4), and the long soft hose is pushed into it (5).
+
+**Exact joins:** bt-rax-1.axle1 into bt-cyl-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); bt-yax-1.axle1 into bt-cyl-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); bt-tb-1.axlehole1 into bt-yax-1.axle? (not shown in booklet); bt-ang-1.axlehole1 into bt-cyl-1.axlehole1? (not shown in booklet)
+
+**Who does what:** bt-cyl-1 carries bt-yax-1; bt-ang-1 holds bt-hose-1; bt-ball-1 holds bt-hose-1
+
+**After:** a long black bent tube with a yellow end and a red end is ready to be fitted; everything else: no change
+
+**Why:** Builds the bent roof tube that holds the hose handle. A soft hose bends where a rigid axle would not. *Next:* Step 177 uses it. *Pattern:* bent tube
+
+**Big picture:**
+- **bt-hose-1** (None): None Later: 42175-step-177 `DOES bt-hose-1 SUPPORTS bt-ax6-1`.
+- **bt-ang-1** (None): None
+- **bt-ball-1** (None): None
+- **bt-rax-1** (None): None
+- **bt-yax-1** (None): None
+- **bt-cyl-1** (None): None
+- **bt-tb-1** (None): None
+
+**Review:** Hose and connector parts have no useful catalog points, so joins use ? and DOES lines. The 1:1 box shows the hose length.
+
+## 42175-step-177 (page 154) - low - NEEDS REVIEW
+
+![42175-step-177](steps/main-177/picture.png)
+
+**New parts:** bt-ax6-1 (3706, black) - black 6-long axle (1:1 box, circled 6); bt-tb2-1 (41677, black) - black thin oval beam at one end (yellow box)
+
+**Touches:** Yellow box: a long black axle with an oval end beam. It is placed on the roof's right side, running from the front corner to the back (arrow and a green line).
+
+**Exact joins:** bt-tb2-1.axlehole1 into bt-ax6-1.axlehole? (not shown in booklet)
+
+**Who does what:** bt-tb2-1 holds bt-ax6-1; bt-hose-1 supports bt-ax6-1
+
+**After:** a long black rod runs along the right roof edge; everything else: no change
+
+**Why:** Adds the second roof handle rod. A pair of rods frames the roof opening. *Next:* Page 155 onwards finishes the cab. *Pattern:* roof rod 2
+
+**Big picture:**
+- **bt-ax6-1** (None): None
+- **bt-tb2-1** (None): None
+
+**Review:** The 1:1 bar is a plain black rod, read as a 6-long axle. The step 176 build is shown joined on page 153 (arrow to the cab front), without its own number.
+
+## 42175-step-178 (page 155) - medium - NEEDS REVIEW
+
+![42175-step-178](steps/main-178/picture.png)
+
+**New parts:** sb-bush-1 (32123b, yellow) - two yellow bushes, pushed onto the pin ends on the roof rail (green line shows both); sb-bush-2 (32123b, yellow) - two yellow bushes, pushed onto the pin ends on the roof rail (green line shows both)
+
+**Touches:** Two small yellow bushes are pushed onto the roof rail's side pins (green guide line with two parts).
+
+**Exact joins:** sb-bush-1.axlehole1 into ca-dp2-1.pin? (not shown in booklet); sb-bush-2.axlehole1 into ca-dp2-3.pin? (not shown in booklet)
+
+**Who does what:** sb-bush-1 holds ca-ytb-1
+
+**After:** two yellow bushes sit on the roof rail pins; everything else: no change
+
+**Why:** Stops the thin roof beams from sliding off. A bush on a pin end is a stopper. *Next:* Step 179 adds a bracket under the roof. *Pattern:* roof stops
+
+**Big picture:**
+- **sb-bush-1** (None): None
+- **sb-bush-2** (None): None
+
+**Mechanisms:**
+- **sb-bush-1** builds on ca-dp2-1 (42175-step-170), which rests on ca-yb9-1 (42175-step-170), ca-ytb-1 (42175-step-170)
+- **sb-bush-2** builds on ca-dp2-3 (42175-step-170), which rests on ca-yb9-1 (42175-step-170), ca-ytb-2 (42175-step-170)
+
+**Review:** Which pins the bushes sit on is not named; the pins are read as the dark pins of step 170.
+
+## 42175-step-179 (page 156) - low - NEEDS REVIEW
+
+![42175-step-179](steps/main-179/picture.png)
+
+**New parts:** rb-tb-1 (11478, black) - black thin 5-hole beam with axle holes at its ends; rb-conn-1 (42003, black) - black connector; rb-ax-1 (87083, dark bluish gray) - dark grey 4-long axle with stop; rb-tp-1 (32002, tan) - two tan 3/4 pins in the thin beam (sub-step 1); rb-tp-2 (32002, tan) - two tan 3/4 pins in the thin beam (sub-step 1)
+
+**Touches:** Yellow box 1-3: two tan pins go in the thin beam (1), a black connector is added at one end (2), a short axle goes into the connector (3). The bracket is pressed under the roof at the rear right (arrow, green line).
+
+**Exact joins:** rb-tp-1.pin1 into rb-tb-1.hole1 (0.4 hole deep, held stiff by friction, estimated from the picture); rb-tp-2.pin1 into rb-tb-1.hole3 (0.4 hole deep, held stiff by friction, estimated from the picture); rb-conn-1.hole1 into rb-tp-1.pin2? (not shown in booklet); rb-ax-1.axle1 into rb-conn-1.axlehole1? (not shown in booklet)
+
+**Who does what:** rb-tb-1 carries rb-tp-1; rb-conn-1 holds rb-ax-1
+
+**After:** a small black bracket with two tan pins and an axle is fitted at the rear right of the roof; everything else: no change
+
+**Why:** Builds a hinge bracket for the roof. A connector with an axle gives a pivot. *Next:* Steps 180-181 add the roof beams. *Pattern:* roof hinge
+
+**Big picture:**
+- **rb-tb-1** (None): None
+- **rb-conn-1** (None): None
+- **rb-ax-1** (None): None
+- **rb-tp-1** (None): None
+- **rb-tp-2** (None): None
+
+**Review:** The small parts are read from icons and may be wrong; the connector is shown in sub-steps 2-3 and the axle in sub-step 3.
+
+## 42175-step-180 (page 157) - medium - NEEDS REVIEW
+
+![42175-step-180](steps/main-180/picture.png)
+
+**New parts:** rf2-b9-1 (40490, yellow) - yellow 9-hole beam (1:1 box, circled 9); rf2-tb-1 (32017, yellow) - two yellow thin 5-hole beams (sub-step 2); rf2-tb-2 (32017, yellow) - two yellow thin 5-hole beams (sub-step 2); rf2-dp-1 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1); rf2-dp-2 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1); rf2-dp-3 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1)
+
+**Touches:** Yellow box 1-2: the same as step 170: three dark pins in a 9-hole beam, then a thin yellow beam over them (green arrows). The finished roof beam is laid on the first one (arrow).
+
+**Exact joins:** rf2-dp-1.pin1 into rf2-b9-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); rf2-dp-2.pin1 into rf2-b9-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); rf2-dp-3.pin1 into rf2-b9-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); rf2-tb-1.hole1 into rf2-dp-1.pin2? (not shown in booklet); rf2-tb-2.hole1 into rf2-dp-3.pin2? (not shown in booklet)
+
+**Who does what:** rf2-b9-1 carries rf2-dp-1; rf2-tb-1 supports rf2-b9-1
+
+**After:** a second yellow roof beam lies on the first; everything else: no change
+
+**Why:** Doubles the yellow roof beam so the roof is wide. Two roof beams make a flat roof. *Next:* Step 181 adds the long rod. *Pattern:* roof beam 2
+
+**Big picture:**
+- **rf2-b9-1** (None): None Later: 42175-step-181 `CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?`; 42175-step-181 `DOES rf2-b9-1 HOLDS ca-yc2-1`; 42175-step-182 `DOES or-hose-1 SUPPORTS rf2-b9-1`.
+- **rf2-tb-1** (None): None
+- **rf2-tb-2** (None): None
+- **rf2-dp-1** (None): None
+- **rf2-dp-2** (None): None
+- **rf2-dp-3** (None): None
+
+**Review:** Same design as step 170; this builds the second.
+
+## 42175-step-181 (page 158) - low - NEEDS REVIEW
+
+![42175-step-181](steps/main-181/picture.png)
+
+**New parts:** ca-ax10b-1 (3706, black) - black 6-long axle with a yellow connector at one end (1:1 box); ca-yc2-1 (6536, yellow) - yellow perpendicular connector
+
+**Touches:** Yellow box: a long black axle with a yellow connector at its end. It is placed at the front of the roof, pointing down (arrow).
+
+**Exact joins:** ca-ax10b-1.axle6 into ca-yc2-1.axlehole1 (1 hole deep, locked (turn together)); ca-yc2-1.hole1 into rf2-b9-1.hole? (not shown in booklet)
+
+**Who does what:** ca-yc2-1 carries ca-ax10b-1; rf2-b9-1 holds ca-yc2-1
+
+**After:** a black rod hangs from the front of the roof beams; everything else: no change
+
+**Why:** Adds the front roof rod that mirrors the one in step 171. A rod and a connector fix the roof's corner. *Next:* Step 182 adds the orange rod. *Pattern:* roof rod
+
+**Big picture:**
+- **ca-ax10b-1** (None): None
+- **ca-yc2-1** (None): None
+
+**Mechanisms:**
+- **ca-yc2-1** builds on rf2-b9-1 (42175-step-180), which rests on rf2-dp-1 (42175-step-180), rf2-dp-2 (42175-step-180)
+
+**Review:** The 1:1 bar is a long thin black rod; read as a 6-long axle because 10-long (the other one) was used in step 171. This could be the soft hose; check.
+
+## 42175-step-182 (page 159) - medium - NEEDS REVIEW
+
+![42175-step-182](steps/main-182/picture.png)
+
+**New parts:** or-hose-1 (75c11, orange) - orange rigid 3 mm hose, 11 long, laid down the front left pillar (picture)
+
+**Touches:** A long thin orange hose is placed beside the front left pillar (picture).
+
+**Exact joins:** none
+
+**Who does what:** or-hose-1 supports rf2-b9-1
+
+**After:** an orange rigid hose lies down the front pillar; everything else: no change
+
+**Why:** Adds an orange line as a decoration and window-brace. An orange rigid hose is a rod. *Next:* Step 183 adds a small plate. *Pattern:* orange rod
+
+**Big picture:**
+- **or-hose-1** (None): None
+
+**Review:** The orange piece is read as a rigid hose; it has no catalog points so joins are not written.
+
+## 42175-step-183 (page 160) - low - NEEDS REVIEW
+
+![42175-step-183](steps/main-183/picture.png)
+
+**New parts:** fl-bp-1 (43093, blue) - blue pin (sub-step 1, green arrow); fl-tile-1 (3069b, black) - black 1 x 2 tile with sticker 14 (sub-steps 3-4); fl-pl-1 (18677, black) - black 1 x 2 plate with a pin hole underneath (sub-step 2); fl-cn-1 (32014, black) - black angled connector (read as the 90 degree one, since all three 112 degree ones are used) (sub-step 1)
+
+**Touches:** Yellow box 1-4: a blue pin goes in an angled connector (1), a plate is added (2), a black tile (3) and its sticker no. 14 (4) are pressed on. The finished piece is placed at the top front of the left pillar (arrow).
+
+**Exact joins:** fl-bp-1.pin1 into fl-cn-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); fl-pl-1.hole? into fl-bp-1.axle1? (not shown in booklet)
+
+**Who does what:** fl-cn-1 holds fl-bp-1; fl-pl-1 supports fl-tile-1
+
+**After:** a small black fitting with a sticker tile sits at the top front of the pillar; everything else: no change
+
+**Why:** Adds a small panel to the pillar top. Sticker tiles show the machine's label. *Next:* Step 184 continues. *Pattern:* pillar fitting
+
+**Big picture:**
+- **fl-bp-1** (None): None
+- **fl-tile-1** (None): None
+- **fl-pl-1** (None): None
+- **fl-cn-1** (None): None
+
+**Review:** Icons small; part identities likely, order of sub-steps as drawn.

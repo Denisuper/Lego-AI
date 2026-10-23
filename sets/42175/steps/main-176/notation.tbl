@@ -1,0 +1,16 @@
+STEP 176
+ADD bt-hose-1 32199 black
+ADD bt-ang-1 32014 black
+ADD bt-ball-1 52730 darkgray
+ADD bt-rax-1 32062 red
+ADD bt-yax-1 4519 yellow
+ADD bt-cyl-1 59443 black
+ADD bt-tb-1 41677 black
+CONNECT bt-rax-1.axle1 -> bt-cyl-1.axlehole1~ LOCKED
+CONNECT bt-yax-1.axle1 -> bt-cyl-1.axlehole1~ LOCKED
+CONNECT bt-tb-1.axlehole1 -> bt-yax-1.axle?
+CONNECT bt-ang-1.axlehole1 -> bt-cyl-1.axlehole1?
+DOES bt-cyl-1 CARRIES bt-yax-1
+DOES bt-ang-1 HOLDS bt-hose-1
+DOES bt-ball-1 HOLDS bt-hose-1
+PATTERN bent_tube

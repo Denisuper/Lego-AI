@@ -1,0 +1,120 @@
+{
+  "example_id": "42175-step-175",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 151,
+  "step": 175,
+  "input": {
+    "picture": "steps/main-175/picture.png",
+    "parts_box": [
+      {
+        "name": "rt-rax-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "rt-rax-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "rt-ax5-1",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "rt-cyl-1",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "rt-end-1",
+        "part_number": "32291",
+        "count": 1
+      },
+      {
+        "name": "rt-end-2",
+        "part_number": "32291",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab with the front pillar (step 174)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rt-rax-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "two red 2-long notched axles (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rt-rax-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "two red 2-long notched axles (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rt-ax5-1",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "light grey 5-long axle (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rt-cyl-1",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black smooth axle connector (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rt-end-1",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "two dark grey double axle and pin connectors (yellow box 2, ball ends)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rt-end-2",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "two dark grey double axle and pin connectors (yellow box 2, ball ends)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-2: a red axle goes in the black connector, then a rod with end fittings is built. One goes at the pillar's top (green line from the 5-long axle) and the rod lies toward the seat (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "rt-cyl-1 carries rt-rax-1",
+      "rt-end-1 holds rt-ax5-1"
+    ],
+    "where_everything_is_after": [
+      "a rod with end fittings runs from the pillar toward the seat area",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the roof tube / cab handle.",
+      "why_these_parts": "A rod with end fittings makes a bar that can be plugged on both ends.",
+      "sets_up_for_later": "Step 176 builds a second tube.",
+      "design_pattern": "roof tube"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Part types are read from small icons and are likely wrong in at least one case; the dark grey connector with a round end could be a ball-joint part (52730)."
+}

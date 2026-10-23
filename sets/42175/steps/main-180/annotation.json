@@ -1,0 +1,120 @@
+{
+  "example_id": "42175-step-180",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 157,
+  "step": 180,
+  "input": {
+    "picture": "steps/main-180/picture.png",
+    "parts_box": [
+      {
+        "name": "rf2-b9-1",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "rf2-tb-1",
+        "part_number": "32017",
+        "count": 1
+      },
+      {
+        "name": "rf2-tb-2",
+        "part_number": "32017",
+        "count": 1
+      },
+      {
+        "name": "rf2-dp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rf2-dp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rf2-dp-3",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab with roof bracket (step 179)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rf2-b9-1",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 9-hole beam (1:1 box, circled 9)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf2-tb-1",
+        "part_number": "32017",
+        "catalog_name": "Technic Beam 1 x 5 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two yellow thin 5-hole beams (sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf2-tb-2",
+        "part_number": "32017",
+        "catalog_name": "Technic Beam 1 x 5 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two yellow thin 5-hole beams (sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf2-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins in the 9-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf2-dp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins in the 9-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf2-dp-3",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins in the 9-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-2: the same as step 170: three dark pins in a 9-hole beam, then a thin yellow beam over them (green arrows). The finished roof beam is laid on the first one (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "rf2-b9-1 carries rf2-dp-1",
+      "rf2-tb-1 supports rf2-b9-1"
+    ],
+    "where_everything_is_after": [
+      "a second yellow roof beam lies on the first",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Doubles the yellow roof beam so the roof is wide.",
+      "why_these_parts": "Two roof beams make a flat roof.",
+      "sets_up_for_later": "Step 181 adds the long rod.",
+      "design_pattern": "roof beam 2"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Same design as step 170; this builds the second."
+}

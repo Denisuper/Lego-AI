@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-177",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 154,
+  "step": 177,
+  "input": {
+    "picture": "steps/main-177/picture.png",
+    "parts_box": [
+      {
+        "name": "bt-ax6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "bt-tb2-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab with front pillar (step 174), roof tube (step 175) and the bent tube (step 176)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bt-ax6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bt-tb2-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin oval beam at one end (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a long black axle with an oval end beam. It is placed on the roof's right side, running from the front corner to the back (arrow and a green line)."
+    ],
+    "who_does_what_to_which": [
+      "bt-tb2-1 holds bt-ax6-1",
+      "bt-hose-1 supports bt-ax6-1"
+    ],
+    "where_everything_is_after": [
+      "a long black rod runs along the right roof edge",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second roof handle rod.",
+      "why_these_parts": "A pair of rods frames the roof opening.",
+      "sets_up_for_later": "Page 155 onwards finishes the cab.",
+      "design_pattern": "roof rod 2"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The 1:1 bar is a plain black rod, read as a 6-long axle. The step 176 build is shown joined on page 153 (arrow to the cab front), without its own number."
+}

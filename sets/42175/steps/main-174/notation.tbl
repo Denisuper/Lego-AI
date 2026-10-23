@@ -1,0 +1,7 @@
+STEP 174
+ADD ca-ec-1 6536 black
+ADD ca-ec-2 6536 black
+CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?
+CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?
+DOES cp-b7-1 CARRIES ca-ec-1
+PATTERN end_connectors

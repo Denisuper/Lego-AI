@@ -1,0 +1,13 @@
+STEP 179
+ADD rb-tb-1 11478 black
+ADD rb-conn-1 42003 black
+ADD rb-ax-1 87083 darkgray
+ADD rb-tp-1 32002 tan
+ADD rb-tp-2 32002 tan
+CONNECT rb-tp-1.pin1 -> rb-tb-1.hole1~ STIFF
+CONNECT rb-tp-2.pin1 -> rb-tb-1.hole3~ STIFF
+CONNECT rb-conn-1.hole1 -> rb-tp-1.pin2?
+CONNECT rb-ax-1.axle1 -> rb-conn-1.axlehole1?
+DOES rb-tb-1 CARRIES rb-tp-1
+DOES rb-conn-1 HOLDS rb-ax-1
+PATTERN bracket_build

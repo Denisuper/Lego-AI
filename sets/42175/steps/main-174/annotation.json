@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-174",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 150,
+  "step": 174,
+  "input": {
+    "picture": "steps/main-174/picture.png",
+    "parts_box": [
+      {
+        "name": "ca-ec-1",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "ca-ec-2",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab box with the yellow roof frame (steps 169-173); the pillar of step 173 is fitted on page 149."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ca-ec-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ca-ec-2",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black perpendicular connectors pushed onto the pillar's top pins (yellow box, 2x)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The front pillar from step 173 stands on the model (page 149, arrow to the front-right corner). Two black connectors are pressed onto its top (arrows, 2x). A green curved arrow says to turn the model."
+    ],
+    "who_does_what_to_which": [
+      "cp-b7-1 carries ca-ec-1"
+    ],
+    "where_everything_is_after": [
+      "the front pillar is fixed and has two black connectors at its top; the model is turned",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the connectors that the roof tube plugs into.",
+      "why_these_parts": "Connectors make cross-hole sockets.",
+      "sets_up_for_later": "Step 175 builds the roof tube.",
+      "design_pattern": "pillar top"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Page 149 has no step number: it shows the pillar from step 173 being fitted. Connector type read from the icon."
+}

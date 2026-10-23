@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-181",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 158,
+  "step": 181,
+  "input": {
+    "picture": "steps/main-181/picture.png",
+    "parts_box": [
+      {
+        "name": "ca-ax10b-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "ca-yc2-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab with two yellow roof beams (step 180)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ca-ax10b-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 6-long axle with a yellow connector at one end (1:1 box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ca-yc2-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow perpendicular connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a long black axle with a yellow connector at its end. It is placed at the front of the roof, pointing down (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "ca-yc2-1 carries ca-ax10b-1",
+      "rf2-b9-1 holds ca-yc2-1"
+    ],
+    "where_everything_is_after": [
+      "a black rod hangs from the front of the roof beams",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the front roof rod that mirrors the one in step 171.",
+      "why_these_parts": "A rod and a connector fix the roof's corner.",
+      "sets_up_for_later": "Step 182 adds the orange rod.",
+      "design_pattern": "roof rod"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The 1:1 bar is a long thin black rod; read as a 6-long axle because 10-long (the other one) was used in step 171. This could be the soft hose; check."
+}

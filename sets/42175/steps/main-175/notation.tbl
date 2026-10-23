@@ -1,0 +1,13 @@
+STEP 175
+ADD rt-rax-1 32062 red
+ADD rt-rax-2 32062 red
+ADD rt-ax5-1 32073 lightgray
+ADD rt-cyl-1 59443 black
+ADD rt-end-1 32291 darkgray
+ADD rt-end-2 32291 darkgray
+CONNECT rt-rax-1.axle1 -> rt-cyl-1.axlehole1~ LOCKED
+CONNECT rt-ax5-1.axle1 -> rt-end-1.axlehole1~ LOCKED
+CONNECT rt-ax5-1.axle5 -> rt-end-2.axlehole1~ LOCKED
+DOES rt-cyl-1 CARRIES rt-rax-1
+DOES rt-end-1 HOLDS rt-ax5-1
+PATTERN rod_with_ends
