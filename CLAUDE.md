@@ -43,8 +43,46 @@ training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
 Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md). 42061 and 42116 are converted to steps.md but have no training files yet.
-UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because their training files are not built yet; delete the folders once they are): 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (only step 1 done, parts list incomplete), 8049.
+UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because their training files are not built yet; finish them with the prompt in "Finishing an unfinished set" below): 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (only step 1 done, parts list incomplete), 8049.
 NOT STARTED (parts list only): 8043, 8069, 42009, 42030, 8258.
+
+## Finishing an unfinished set (prompt for agents)
+Example sets: **8047** and **42175**. A finished set looks exactly like them: open them first and copy their files, THINK lines and header. Give an agent this prompt, one set at a time:
+
+```
+Finish set <set>. Copy the layout and wording style of sets/8047 and sets/42175. Work only inside sets/<set>/.
+
+WHY THE STEP FOLDERS ARE NOT DONE: every steps/*/annotation.json still says "TO WRITE" (why, model_so_far,
+rotation, where_everything_is_after). Training files built now would teach the model "TO WRITE". Fix that first.
+
+MAKE (in this order)
+1. Fill every "TO WRITE" in steps/*/annotation.json with real, short, plain text. Rotation = fixed / turns on X / turns with X.
+2. Write sets/<set>/systems.json (what each part family is for in the finished machine) and sets/<set>/mechanisms.json
+   (the real mechanism chains: input -> parts -> output; types from catalog/mechanisms.json). tools/build_set.py needs both.
+3. python tools/build_set.py sets/<set>  ->  training.tbl + training.jsonl.
+   Make both start with the instructions the model follows: copy the leading "# INSTRUCTIONS" lines from sets/8047/training.tbl
+   and the "instructions" field from sets/8047/training.jsonl.
+4. steps.md: one block per step (see sets/42175/steps.md): ADD and CONNECT lines from the step notation (keep the part names)
+   plus ONE real WHY sentence per step.
+5. booklet.pdf: the original, unedited booklet from LEGO (python tools/get_set.py <set> -, or download it). Add
+   !sets/<set>/booklet.pdf to .gitignore. Keep parts_list.csv.
+
+CHECK (all must pass before you delete anything)
+- python tools/check_notation.py sets/<set>/training.tbl says every join fits.
+- every part in parts_list.csv is used exactly once by the last step.
+- grep -c "TO WRITE" over the set's training.tbl, training.jsonl and steps.md is 0 everywhere.
+
+DELETE (only after the checks pass)
+- the whole steps/ folder (every annotation.json, notation.tbl and picture crop)
+- systems.json, mechanisms.json, preview.md, booklet_map.csv, model.mpd
+
+KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl.
+
+THEN: move the set from UNFINISHED to done in "Layout" and "Status" of CLAUDE.md. Commit only sets/<set>, plus CLAUDE.md and .gitignore for those two edits.
+Never delete before the checks pass. Never leave "TO WRITE" in a training file. Never force-push.
+```
+NOT STARTED sets have no step folders: use "How to add a set" above instead.
+Note: no script turns steps.md into training files yet, which is why the training files are built first from the step folders.
 
 ## Mechanisms (what the model must understand)
 A mechanism is a chain of parts that passes or changes motion. Every part in a build either belongs to one of these or holds the structure together. Full rules and failure modes: `catalog/mechanisms.json`.
