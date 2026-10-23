@@ -1,0 +1,4 @@
+STEP 13
+ATTACH sidepanel
+CONNECT pin-51.pin2 -> beam13-1.hole10 STIFF
+CONNECT pin-52.pin1 -> beam13-1.hole12 STIFF

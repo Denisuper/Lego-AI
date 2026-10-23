@@ -1,0 +1,42 @@
+{
+  "example_id": "42094-cabin-step-07",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "conn-37's axle2 goes into holes-6's axlehole2 (locked)",
+      "conn-41's axle2 goes into holes-7's axlehole2 (locked)",
+      "conn-37's axle1 goes into beam7-2's hole5 (turns)",
+      "conn-41's axle1 goes into beam7-2's hole3 (turns)",
+      "axle3-11's axle1 goes into conn-39's axlehole1 (locked)",
+      "axle3-12's axle1 goes into conn-42's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "conn-37 carries holes-6",
+      "conn-41 carries holes-7",
+      "beam7-2 spins on conn-37",
+      "beam7-2 spins on conn-41",
+      "axle3-11 carries conn-39",
+      "axle3-12 carries conn-42"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

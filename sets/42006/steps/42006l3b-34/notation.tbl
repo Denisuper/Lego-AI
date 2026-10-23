@@ -18,12 +18,6 @@ ADD gear16-4 94925 lightbluishgrey
 POS gear16-4 1 -10 3 -1 0 0 0 1 0 0 0 -1
 ADD beam3-4 32523 yellow
 POS beam3-4 0 -10 2 0 0 1 -1 0 0 0 -1 0
-ADD part-2 6590 lightbluishgrey
-POS part-2 -1 -10 1 1 0 0 0 1 0 0 0 1
-ADD part-3 6590 lightbluishgrey
-POS part-3 -1 -10 0 1 0 0 0 1 0 0 0 1
-ADD part-4 6590 lightbluishgrey
-POS part-4 -1 -10 -1 1 0 0 0 1 0 0 0 1
 ADD conn-10 59443 darkbluishgrey
 POS conn-10 1 -10 0.5 1 0 0 0 1 0 0 0 1
 ADD conn-11 59443 darkbluishgrey
@@ -36,8 +30,6 @@ ADD axle4-9 3705 black
 POS axle4-9 -1 -10 -4.5 0 0 -1 0 1 0 1 0 0
 ADD axle3-1 4519 lightbluishgrey
 POS axle3-1 1 -10 -5 0 0 -1 0 1 0 1 0 0
-ADD part-5 6590 lightbluishgrey
-POS part-5 -1 -10 -4 1 0 0 0 1 0 0 0 1
 CONNECT pin-83.pin1 -> beam3x5-5.hole5 STIFF
 CONNECT pin-84.pin1 -> beam3x5-5.hole7 STIFF
 CONNECT pin-85.pin3 -> beam3x5-5.hole1 STIFF

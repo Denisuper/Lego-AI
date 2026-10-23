@@ -11,10 +11,10 @@
   "answer": {
     "new_parts": [],
     "what_each_new_part_touches": [
-      "pin-3's axle1 goes into conn-6's hole1 (turns)"
+      "pin-7's axle1 goes into pin-40's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "conn-6 spins on pin-3"
+      "pin-40 spins on pin-7"
     ],
     "where_everything_is_after": [
       "TO WRITE"

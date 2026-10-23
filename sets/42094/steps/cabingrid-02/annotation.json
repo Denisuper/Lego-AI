@@ -1,0 +1,82 @@
+{
+  "example_id": "42094-cabingrid-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "cranksha-1",
+        "part_number": "2853",
+        "count": 1
+      },
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "count": 1
+      },
+      {
+        "name": "beam7-2",
+        "part_number": "32065",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cranksha-1",
+        "part_number": "2853",
+        "catalog_name": "Technic Engine Crankshaft",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=-1.75, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "catalog_name": "Technic Engine Crankshaft",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-1.75, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-2",
+        "part_number": "32065",
+        "catalog_name": "Technic Beam 1 x 7 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.75, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "cranksha-1's axle1 goes into beam7-2's hole7 (turns)",
+      "cranksha-2's axle1 goes into beam7-2's hole1 (turns)",
+      "cranksha-1's axle2 goes into holes-5's axlehole2 (locked)",
+      "cranksha-2's axle2 goes into holes-8's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-2 spins on cranksha-1",
+      "beam7-2 spins on cranksha-2",
+      "cranksha-1 carries holes-5",
+      "cranksha-2 carries holes-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

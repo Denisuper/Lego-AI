@@ -1,0 +1,13 @@
+STEP 11
+ADD axle2-1 32062 red
+POS axle2-1 0 -11.75 3 0 1 0 -1 0 0 0 0 1
+ADD axle3-5 4519 lightbluishgrey
+POS axle3-5 0 -11.25 6 0 1 0 -1 0 0 0 0 1
+ADD conn-7 59443 yellow
+POS conn-7 0 -12.75 6 0 -1 0 0 0 -1 1 0 0
+ADD conn-8 59443 yellow
+POS conn-8 0 -12.75 3 0 -1 0 0 0 -1 1 0 0
+CONNECT axle3-5.axle3 -> conn-7.axlehole1 LOCKED
+CONNECT axle2-1.axle2 -> conn-8.axlehole1 LOCKED
+CONNECT axle2-1.axle1 -> conn-3.axlehole2 LOCKED
+CONNECT axle3-5.axle1 -> conn-6.axlehole2 LOCKED

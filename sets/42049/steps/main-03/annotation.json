@@ -1,0 +1,110 @@
+{
+  "example_id": "42049-step-03",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle3-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "gear20-2",
+        "part_number": "32269",
+        "count": 1
+      },
+      {
+        "name": "conn-3",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "pin-9",
+        "part_number": "3749",
+        "count": 1
+      },
+      {
+        "name": "conn-4",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear20-2",
+        "part_number": "32269",
+        "catalog_name": "Technic Gear 20 Tooth Double Bevel with Axle Hole Type 2 [X Opening]",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-3",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-9",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-4",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-1's axle1 goes into gear20-2's axlehole1 (locked)",
+      "axle3-1's axle3 goes into conn-3's axlehole2 (locked)",
+      "axle3-1's axle2 goes into beam5x11-1's hole15 (turns)",
+      "pin-9's axle1 goes into beam5x11-1's hole14 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-1 carries gear20-2",
+      "axle3-1 carries conn-3",
+      "beam5x11-1 spins on axle3-1",
+      "beam5x11-1 spins on pin-9"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

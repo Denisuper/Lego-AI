@@ -1,0 +1,18 @@
+ADD beam3-18 32523 darkbluishgrey
+POS beam3-18 7 -12.4 -4.5 0 1 0 1 0 0 0 0 -1
+ADD beam3-19 32523 darkbluishgrey
+POS beam3-19 8 -12.4 -4.5 0 1 0 1 0 0 0 0 -1
+ADD pin-110 6558 blue
+POS pin-110 7 -12.4 -3.5 1 0 0 0 -1 0 0 0 -1
+ADD pin-111 6558 blue
+POS pin-111 7 -12.4 -5.5 1 0 0 0 -1 0 0 0 -1
+ADD axle4-13 87083 darkbluishgrey
+POS axle4-13 8.5 -12.4 -4.5 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-110.pin2 -> beam3-18.hole1 STIFF
+CONNECT pin-111.pin2 -> beam3-18.hole3 STIFF
+CONNECT axle4-13.axle4 -> beam3-18.hole2 TURNS
+CONNECT pin-110.pin3 -> beam3-19.hole1 STIFF
+CONNECT pin-111.pin3 -> beam3-19.hole3 STIFF
+CONNECT axle4-13.axle3 -> beam3-19.hole2 TURNS
+CONNECT pin-110.pin1 -> beam15-3.hole11 STIFF
+CONNECT pin-111.pin1 -> beam15-3.hole9 STIFF

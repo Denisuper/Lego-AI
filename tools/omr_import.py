@@ -15,6 +15,7 @@ RB = {r["part_num"]: r["name"] for r in csv.DictReader(open(sys.argv[5], encodin
 bc.init(LD, SH)
 OUT = f"sets/{SET}/"
 CAT = {r["part_number"]: r for r in csv.DictReader(open("catalog/technic_parts.csv", encoding="utf-8"))}
+KNOWN_PARTS = set(CAT) | {r["part_number"] for r in csv.DictReader(open(OUT + "parts_list.csv", encoding="utf-8"))}
 
 # LDraw colour codes -> names
 COLORS = {}
@@ -37,6 +38,34 @@ for raw in open(MPD, encoding="utf-8", errors="ignore"):
         files[cur][-1].append((ref, t[1], M, [x, y, z]))
 for f in files: files[f] = [s for s in files[f] if s]
 MAIN = order[0]
+
+def resolve_part(label):
+    """A raw LDraw label (filename minus any '<set> - ' prefix and path, minus .dat) -> a real
+    part number from this set's parts list / the catalog, or None if it's not a real part
+    (an LSynth hose placeholder, a bare geometry primitive like 4-4cyli, rect2p...).
+    Handles LDraw's shortcut suffixes: sNN (sticker/print shortcut), -N (instance copy),
+    bprNNNN / bpcN / bpcdNN (printed-decoration variants)."""
+    label = label.rsplit("\\", 1)[-1].rsplit("/", 1)[-1]  # drop s\ / 48\ path prefixes
+    if label in KNOWN_PARTS: return label
+    for cand in (re.sub(r"bpr\d+$", "", label), re.sub(r"bpc\w*$", "", label),
+                 re.sub(r"s\d+$", "", label), re.sub(r"-\d+$", "", label)):
+        if cand != label and cand in KNOWN_PARTS: return cand
+    return None
+
+
+# ---- a "0 FILE" entry can be a real sub-assembly (.ldr, has its own steps -> recurse) or an
+# official part's geometry bundled inline (.dat): resolve that to its part number instead of
+# recursing, so its surface primitives (rect2p, 4-4cyli...) never get treated as LEGO parts.
+# Anything else (LSynth hose placeholders, bare primitives) isn't a real part: drop it.
+OPAQUE, SKIP = {}, set()
+for f in order[1:]:
+    if f.endswith(".ldr"): continue  # genuine side-build, recurse as before
+    label = re.sub(r"\.dat$", "", f.split(" - ", 1)[-1])
+    num = resolve_part(label)
+    if num: OPAQUE[f] = num
+    else: SKIP.add(f)
+for f in SKIP: del files[f]
+for f in OPAQUE: del files[f]
 
 
 def slug(f):
@@ -160,6 +189,18 @@ placed_by_ctx = {}   # context file -> list of Placed (in that file's frame)
 steps_out = []       # (folder, build, step no, attaches_at, notation lines, annotation dict)
 built = {}           # submodel file -> (folder build name, list of Placed in its own frame)
 sub_counter = {}
+slug_owner = {}      # slug() output -> the first ref that claimed it
+
+
+def unique_slug(ref):
+    """slug() truncates to 12 chars, so distinct submodels (substep_step-10 vs -14 vs -18) can
+    collide on the same short name; a collision would silently overwrite one's step folders with
+    another's. Disambiguate with a counter whenever a different ref wants an already-claimed slug."""
+    base = slug(ref)
+    owner = slug_owner.setdefault(base, ref)
+    if owner == ref: return base
+    sub_counter[base] = sub_counter.get(base, 0) + 1
+    return f"{base}{sub_counter[base]}"
 
 
 def build_file(f, build):
@@ -168,15 +209,17 @@ def build_file(f, build):
     for i, step in enumerate(files[f], 1):
         new, attach_lines, attached = [], [], []
         for ref, color, M, t in step:
+            if ref in SKIP: continue  # LSynth placeholder / bare primitive, not a real part
             if ref in files:  # side build used here
                 if ref not in built:
-                    b = slug(ref); sub_counter[b] = sub_counter.get(b, 0) + 1
+                    b = unique_slug(ref)
                     built[ref] = (b, build_file(ref, b))
                 b, parts = built[ref]
                 attach_lines.append(b)
                 attached += [Placed(p.name, p.num, p.color, mul(M, p.M), add(app(M, p.t), t)) for p in parts]
                 continue
-            num = re.sub(r"\.dat$", "", ref)
+            num = OPAQUE.get(ref) or resolve_part(re.sub(r"\.dat$", "", ref))
+            if num is None: continue  # bare primitive/placeholder with no FILE block, not a real part
             new.append(Placed(name_for(num), num, color, M, t))
         lines = []
         for p in new:

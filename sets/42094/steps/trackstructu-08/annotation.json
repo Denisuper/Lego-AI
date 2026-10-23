@@ -1,0 +1,132 @@
+{
+  "example_id": "42094-trackstructu-step-08",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 8,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-25",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "beam9-26",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-221",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam15-3",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "pin-222",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-25",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-26",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-221",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam15-3",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-2, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-222",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14, y=-2, z=5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-9's axle1 goes into beam9-25's hole8 (turns)",
+      "axle5-11's axle1 goes into beam9-25's hole4 (turns)",
+      "pin-214's pin2 goes into beam9-25's hole9 (stiff)",
+      "pin-216's axle1 goes into beam9-25's hole5 (turns)",
+      "axle4-12's pin1 goes into beam9-25's hole6 (stiff)",
+      "axle5-14's axle1 goes into beam9-25's hole1 (turns)",
+      "axle5-10's axle1 goes into beam9-26's hole2 (turns)",
+      "axle5-12's axle1 goes into beam9-26's hole6 (turns)",
+      "pin-213's pin2 goes into beam9-26's hole1 (stiff)",
+      "axle6-2's axle2 goes into beam9-26's hole4 (turns)",
+      "pin-219's axle1 goes into beam9-26's hole5 (turns)",
+      "axle5-13's axle1 goes into beam9-26's hole9 (turns)",
+      "pin-221's pin1 goes into beam15-3's hole1 (stiff)",
+      "pin-222's pin2 goes into beam15-3's hole15 (stiff)",
+      "pin-221's pin2 goes into conn-83's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-25 spins on axle5-9",
+      "beam9-25 spins on axle5-11",
+      "beam9-25 holds pin-214",
+      "beam9-25 spins on pin-216",
+      "beam9-25 holds axle4-12",
+      "beam9-25 spins on axle5-14",
+      "beam9-26 spins on axle5-10",
+      "beam9-26 spins on axle5-12",
+      "beam9-26 holds pin-213",
+      "beam9-26 spins on axle6-2",
+      "beam9-26 spins on pin-219",
+      "beam9-26 spins on axle5-13",
+      "beam15-3 holds pin-221",
+      "beam15-3 holds pin-222",
+      "conn-83 holds pin-221"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

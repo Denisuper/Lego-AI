@@ -1,0 +1,9 @@
+STEP 6
+ADD pin-17 62462 lightbluishgrey
+POS pin-17 2 -8.95 9.5 0 0 1 0 -1 0 1 0 0
+ATTACH gearing1
+CONNECT axle6-1.axle4 -> pin-17.hole1 TURNS
+CONNECT pin-7.axle1 -> beam3x5-1.hole2 TURNS
+CONNECT pin-8.axle1 -> beam3x5-1.hole4 TURNS
+MESH gear20-3.teeth gear16-1.teeth
+RATIO gear20-3 gear16-1 20/16

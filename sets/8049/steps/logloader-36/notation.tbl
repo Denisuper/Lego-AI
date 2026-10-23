@@ -1,0 +1,20 @@
+ADD wheel-7 56145 lightbluishgrey
+POS wheel-7 9.5 -12.4 -4.5 0 0 1 0 1 0 -1 0 0
+ADD tyre-5 55976 rubberblack
+POS tyre-5 9.5 -12.4 -4.5 0 0 1 0 1 0 -1 0 0
+ADD wheel-8 56145 lightbluishgrey
+POS wheel-8 9.5 -12.4 4.5 0 0 1 0 1 0 -1 0 0
+ADD tyre-6 55976 rubberblack
+POS tyre-6 9.5 -12.4 4.5 0 0 1 0 1 0 -1 0 0
+ADD wheel-9 56145 lightbluishgrey
+POS wheel-9 -3.5 -12.4 -4.5 0 0 -1 0 1 0 1 0 0
+ADD tyre-7 55976 rubberblack
+POS tyre-7 -3.5 -12.4 -4.5 0 0 -1 0 1 0 1 0 0
+ADD wheel-10 56145 lightbluishgrey
+POS wheel-10 -3.5 -12.4 4.5 0 0 -1 0 1 0 1 0 0
+ADD tyre-8 55976 rubberblack
+POS tyre-8 -3.5 -12.4 4.5 0 0 -1 0 1 0 1 0 0
+CONNECT axle4-13.axle2 -> wheel-7.axlehole1 LOCKED
+CONNECT axle4-12.axle2 -> wheel-8.axlehole1 LOCKED
+CONNECT axle4-7.axle2 -> wheel-9.axlehole1 LOCKED
+CONNECT axle4-6.axle2 -> wheel-10.axlehole1 LOCKED

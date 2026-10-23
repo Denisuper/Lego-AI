@@ -1,0 +1,22 @@
+ADD axle5-3 15462 reddishbrown
+POS axle5-3 0 1 -7.5 0 -1 0 1 0 0 0 0 1
+ADD worm-1 4716 lightbluishgrey
+POS worm-1 0 1.5 -7.5 1 0 0 0 0 -1 0 1 0
+ADD conn-22 59443 red
+POS conn-22 0 -1.5 -7.5 1 0 0 0 0 -1 0 1 0
+ADD axle5-4 32073 lightbluishgrey
+POS axle5-4 0 2 -6.5 1 0 0 0 -0.207 -0.978 0 0.978 -0.207
+ADD bush-5 32123a yellow
+POS bush-5 -0.75 2 -6.5 0 0 1 -0.978 0.207 0 -0.207 -0.978 0
+ADD gear8-1 10928 darkbluishgrey
+POS gear8-1 0 2 -6.5 0 0 -1 -0.207 0.978 0 0.978 0.207 0
+ADD bush-6 32123a yellow
+POS bush-6 0.75 2 -6.5 0 0 1 -0.978 0.207 0 -0.207 -0.978 0
+CONNECT axle5-3.axle3 -> worm-1.axlehole1 LOCKED
+CONNECT axle5-3.axle1 -> conn-22.axlehole1 LOCKED
+CONNECT axle5-4.axle2 -> bush-5.axlehole1 LOCKED
+CONNECT axle5-4.axle3 -> gear8-1.axlehole1 LOCKED
+CONNECT axle5-4.axle4 -> bush-6.axlehole1 LOCKED
+CONNECT axle5-3.axle2 -> conn-20.hole1 TURNS
+CONNECT axle5-4.axle2 -> beam3x5-5.hole2 TURNS
+CONNECT axle5-3.axle5 -> conn-21.hole1 TURNS

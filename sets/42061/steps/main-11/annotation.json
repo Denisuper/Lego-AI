@@ -1,0 +1,70 @@
+{
+  "example_id": "42061-step-11",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam2x4-3",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "beam2x4-4",
+        "part_number": "32140",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam2x4-3",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-3.1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2x4-4",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-3.1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-38's pin2 goes into beam2x4-3's hole4 (stiff)",
+      "axle5-1's axle1 goes into beam2x4-3's axlehole1 (locked)",
+      "pin-37's pin1 goes into beam2x4-4's hole4 (stiff)",
+      "axle5-1's axle5 goes into beam2x4-4's axlehole1 (locked)",
+      "axle3-6's axle2 goes into conn-5's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam2x4-3 holds pin-38",
+      "axle5-1 carries beam2x4-3",
+      "beam2x4-4 holds pin-37",
+      "axle5-1 carries beam2x4-4",
+      "axle3-6 carries conn-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

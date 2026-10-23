@@ -1,6 +1,6 @@
 ADD beam3-2 6632 black
 POS beam3-2 0.75 1 -6 0 -1 0 0 0 -1 1 0 0
-ATTACH substepstep1
+ATTACH substepstep13
 CONNECT pin-14.pin1 -> beam3-2.hole1 STIFF
 CONNECT axle2-2.axle1 -> beam3-2.axlehole1 LOCKED
 CONNECT pin-14.pin1 -> beam2x4-1.hole3 STIFF

@@ -7,13 +7,18 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-23",
+        "name": "conn-18",
         "part_number": "32013",
         "count": 1
       },
       {
         "name": "axle4-3",
         "part_number": "3705",
+        "count": 1
+      },
+      {
+        "name": "pin-40",
+        "part_number": "65487",
         "count": 1
       }
     ],
@@ -22,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-23",
+        "name": "conn-18",
         "part_number": "32013",
         "catalog_name": "Technic Axle and Pin Connector Angled #1",
         "color": "Black",
@@ -38,13 +43,24 @@
         "part_match": "confirmed (official 3D model)",
         "position": "at x=0, y=0, z=2.5 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-40",
+        "part_number": "65487",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Centered Friction Ridge]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
       }
     ],
     "what_each_new_part_touches": [
-      "axle4-3's axle4 goes into conn-23's axlehole1 (locked)"
+      "axle4-3's axle4 goes into conn-18's axlehole1 (locked)",
+      "pin-40's pin1 goes into conn-18's hole1 (stiff)"
     ],
     "who_does_what_to_which": [
-      "axle4-3 carries conn-23"
+      "axle4-3 carries conn-18",
+      "conn-18 holds pin-40"
     ],
     "where_everything_is_after": [
       "TO WRITE"

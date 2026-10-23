@@ -1,0 +1,210 @@
+{
+  "example_id": "42094-door1-step-04",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-149",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-150",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam7-4",
+        "part_number": "32348",
+        "count": 1
+      },
+      {
+        "name": "pin-151",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "pin-152",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-153",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-54",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "pin-154",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "groove-10",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "conn-55",
+        "part_number": "32291",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-149",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-0.5, z=-4.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-150",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-0.5, z=-3.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-4",
+        "part_number": "32348",
+        "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-2.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-151",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.5, z=-2.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-152",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.6, y=-0.5, z=-6.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-153",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.8, y=-0.5, z=-5.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.4, y=-0.5, z=-7.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-54",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.4, y=0, z=-7.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-154",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=0, z=-7.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "groove-10",
+        "part_number": "98138",
+        "catalog_name": "Tile  1 x  1 Round with Groove",
+        "color": "Trans Clear",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.75, y=0, z=-6.95 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-55",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.6, y=0, z=-6.95 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-149's pin1 goes into beam7-4's hole2 (stiff)",
+      "pin-150's pin1 goes into beam7-4's hole1 (stiff)",
+      "pin-152's pin1 goes into beam7-4's hole5 (stiff)",
+      "pin-153's pin1 goes into beam7-4's hole4 (stiff)",
+      "axle2-7's axle1 goes into beam7-4's axlehole2 (locked)",
+      "axle2-7's axle2 goes into conn-54's axlehole1 (locked)",
+      "pin-154's pin1 goes into conn-54's hole1 (turns)",
+      "pin-154's pin2 goes into groove-10's hole1 (turns)",
+      "pin-152's pin2 goes into conn-55's hole2 (stiff)",
+      "pin-153's pin2 goes into conn-55's hole1 (stiff)",
+      "pin-149's pin2 goes into beam9-11's hole1 (stiff)",
+      "pin-150's pin2 goes into beam9-11's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-4 holds pin-149",
+      "beam7-4 holds pin-150",
+      "beam7-4 holds pin-152",
+      "beam7-4 holds pin-153",
+      "axle2-7 carries beam7-4",
+      "axle2-7 carries conn-54",
+      "pin-154 spins on conn-54",
+      "pin-154 spins on groove-10",
+      "conn-55 holds pin-152",
+      "conn-55 holds pin-153",
+      "beam9-11 holds pin-149",
+      "beam9-11 holds pin-150"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,84 @@
+{
+  "example_id": "42061-step-09",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 9,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-4",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-23",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "beam9-5",
+        "part_number": "40490",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-4",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.3, y=-4.1, z=-11.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-23",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-1.6, z=-7.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-5",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-2.1, z=-7.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-7's pin3 goes into beam9-4's hole9 (stiff)",
+      "pin-21's axle1 goes into beam9-4's hole1 (turns)",
+      "pin-23's pin1 goes into beam9-5's hole9 (turns)",
+      "pin-20's axle1 goes into beam9-5's hole1 (turns)",
+      "pin-22's axle1 goes into beam9-5's hole8 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-4 holds pin-7",
+      "beam9-4 spins on pin-21",
+      "pin-23 spins on beam9-5",
+      "beam9-5 spins on pin-20",
+      "beam9-5 spins on pin-22"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

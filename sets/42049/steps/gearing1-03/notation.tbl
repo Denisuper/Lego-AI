@@ -1,0 +1,28 @@
+ADD conn-14 32184 black
+POS conn-14 11 0 6 0 0 -1 0 1 0 1 0 0
+ADD pin-10 43093 blue
+POS pin-10 12.5 1 5 -1 0 0 0 1 0 0 0 -1
+ADD axle8-2 55013 darkbluishgrey
+POS axle8-2 14.5 0 1 -1 0 0 0 1 0 0 0 -1
+ADD gear20-3 32269 tan
+POS gear20-3 12 0 1 0 0 1 0 1 0 -1 0 0
+ADD beam3x5-1 32526 yellow
+POS beam3x5-1 13 1 5 0 -1 0 -1 0 0 0 0 -1
+ADD axle7-1 44294 yellow
+POS axle7-1 11 1 3 -1 0 0 0 1 0 0 0 -1
+ADD bush-3 3713 red
+POS bush-3 14 1 3 0 0 -1 0 1 0 1 0 0
+ADD gear16-1 94925 lightbluishgrey
+POS gear16-1 12 1 3 0 0 -1 0 1 0 1 0 0
+CONNECT axle3-3.axle3 -> conn-14.axlehole2 LOCKED
+CONNECT axle5-1.axle3 -> conn-14.axlehole1 LOCKED
+CONNECT axle8-2.axle7 -> gear20-3.axlehole1 LOCKED
+CONNECT pin-10.axle1 -> beam3x5-1.hole1 TURNS
+CONNECT axle8-2.axle6 -> beam3x5-1.hole6 TURNS
+CONNECT axle7-1.axle2 -> beam3x5-1.hole3 TURNS
+CONNECT axle7-1.axle1 -> bush-3.axlehole1 LOCKED
+CONNECT axle7-1.axle3 -> gear16-1.axlehole1 LOCKED
+CONNECT axle8-2.axle8 -> conn-8.hole1 TURNS
+CONNECT axle7-1.axle4 -> conn-9.hole1 TURNS
+MESH gear20-3.teeth gear16-1.teeth
+RATIO gear20-3 gear16-1 20/16

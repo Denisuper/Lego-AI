@@ -1,0 +1,156 @@
+{
+  "example_id": "8049-tractor-step-34",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 34,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-1",
+        "part_number": "3020",
+        "count": 1
+      },
+      {
+        "name": "part-2",
+        "part_number": "3710",
+        "count": 1
+      },
+      {
+        "name": "studs-1",
+        "part_number": "88930",
+        "count": 1
+      },
+      {
+        "name": "part-3",
+        "part_number": "3020",
+        "count": 1
+      },
+      {
+        "name": "part-4",
+        "part_number": "3710",
+        "count": 1
+      },
+      {
+        "name": "studs-2",
+        "part_number": "88930",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-1",
+        "part_number": "3020",
+        "catalog_name": "Plate  2 x  4",
+        "color": "Lime",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.1, y=5.95, z=-8.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-2",
+        "part_number": "3710",
+        "catalog_name": "Plate  1 x  4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=6.45, z=-8.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "studs-1",
+        "part_number": "88930",
+        "catalog_name": "Slope Brick Curved  2 x  4 with Underside Studs",
+        "color": "Lime",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.1, y=5.95, z=-8.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-3",
+        "part_number": "3020",
+        "catalog_name": "Plate  2 x  4",
+        "color": "Lime",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.9, y=5.95, z=-8.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-4",
+        "part_number": "3710",
+        "catalog_name": "Plate  1 x  4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.5, y=6.45, z=-8.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "studs-2",
+        "part_number": "88930",
+        "catalog_name": "Slope Brick Curved  2 x  4 with Underside Studs",
+        "color": "Lime",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.9, y=5.95, z=-8.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "part-2's pin1 goes into part-1's hole1 (stiff)",
+      "part-2's pin2 goes into part-1's hole3 (stiff)",
+      "part-2's pin3 goes into part-1's hole5 (stiff)",
+      "part-2's pin4 goes into part-1's hole7 (stiff)",
+      "pin-53's pin2 goes into part-1's hole4 (turns)",
+      "pin-54's pin2 goes into part-1's hole6 (turns)",
+      "pin-55's pin2 goes into part-1's hole8 (turns)",
+      "part-1's pin7 goes into studs-1's hole1 (stiff)",
+      "part-1's pin8 goes into studs-1's hole2 (stiff)",
+      "part-1's pin5 goes into studs-1's hole3 (stiff)",
+      "part-1's pin6 goes into studs-1's hole4 (stiff)",
+      "part-1's pin3 goes into studs-1's hole5 (stiff)",
+      "part-1's pin4 goes into studs-1's hole6 (stiff)",
+      "part-1's pin1 goes into studs-1's hole7 (stiff)",
+      "part-1's pin2 goes into studs-1's hole8 (stiff)",
+      "part-4's pin1 goes into part-3's hole1 (stiff)",
+      "part-4's pin2 goes into part-3's hole3 (stiff)",
+      "part-4's pin3 goes into part-3's hole5 (stiff)",
+      "part-4's pin4 goes into part-3's hole7 (stiff)",
+      "pin-46's pin2 goes into part-3's hole2 (turns)",
+      "pin-47's pin2 goes into part-3's hole4 (turns)",
+      "pin-48's pin2 goes into part-3's hole6 (turns)",
+      "part-3's pin7 goes into studs-2's hole1 (stiff)",
+      "part-3's pin8 goes into studs-2's hole2 (stiff)",
+      "part-3's pin5 goes into studs-2's hole3 (stiff)",
+      "part-3's pin6 goes into studs-2's hole4 (stiff)",
+      "part-3's pin3 goes into studs-2's hole5 (stiff)",
+      "part-3's pin4 goes into studs-2's hole6 (stiff)",
+      "part-3's pin1 goes into studs-2's hole7 (stiff)",
+      "part-3's pin2 goes into studs-2's hole8 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "part-1 holds part-2",
+      "pin-53 spins on part-1",
+      "pin-54 spins on part-1",
+      "pin-55 spins on part-1",
+      "studs-1 holds part-1",
+      "part-3 holds part-4",
+      "pin-46 spins on part-3",
+      "pin-47 spins on part-3",
+      "pin-48 spins on part-3",
+      "studs-2 holds part-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

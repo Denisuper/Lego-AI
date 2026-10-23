@@ -1,0 +1,128 @@
+{
+  "example_id": "42061-step-01",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-1",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "axle3-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "beam5-1",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "beam5-2",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "axle5-1",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "conn-2",
+        "part_number": "32184",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-1",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-3.1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-1",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=-3.1, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-2",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.25, y=-3.1, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-1",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-3.1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-2",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-3.1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-1's axle3 goes into conn-1's axlehole1 (locked)",
+      "axle5-1's axle4 goes into conn-1's axlehole2 (locked)",
+      "axle3-1's axle2 goes into beam5-1's axlehole1 (locked)",
+      "axle3-1's axle2 goes into beam5-2's axlehole1 (locked)",
+      "axle3-1's axle1 goes into conn-2's axlehole1 (locked)",
+      "axle5-1's axle2 goes into conn-2's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-1 carries conn-1",
+      "axle5-1 carries conn-1",
+      "axle3-1 carries beam5-1",
+      "axle3-1 carries beam5-2",
+      "axle3-1 carries conn-2",
+      "axle5-1 carries conn-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

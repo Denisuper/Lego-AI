@@ -1,13 +1,19 @@
 STEP 10
-ADD pin-18 4274 lightbluishgrey
-POS pin-18 2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
-ADD pin-19 4274 lightbluishgrey
-POS pin-19 -2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
-ADD part-310 98138 transred
-POS part-310 -2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
-ADD part-311 98138 transred
-POS part-311 2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
-ATTACH 65487dat
-ATTACH 65487dat
-CONNECT pin-18.pin1 -> conn-6.hole1 TURNS
-CONNECT pin-19.pin1 -> conn-6.hole1 TURNS
+ADD pin-22 65487 black
+POS pin-22 2 -3.9 6 -1 0 0 0 0 1 0 1 0
+ADD pin-23 65487 black
+POS pin-23 -2 -3.9 6 1 0 0 0 0 -1 0 1 0
+ADD pin-24 4274 lightbluishgrey
+POS pin-24 2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
+ADD pin-25 4274 lightbluishgrey
+POS pin-25 -2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
+ADD groove-1 98138 transred
+POS groove-1 -2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
+ADD groove-2 98138 transred
+POS groove-2 2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-24.pin1 -> pin-22.hole1 TURNS
+CONNECT pin-25.pin1 -> pin-23.hole1 TURNS
+CONNECT pin-25.pin2 -> groove-1.hole1 TURNS
+CONNECT pin-24.pin2 -> groove-2.hole1 TURNS
+CONNECT pin-23.pin1 -> beam11-1.hole7 STIFF
+CONNECT pin-22.pin1 -> beam11-2.hole7 STIFF

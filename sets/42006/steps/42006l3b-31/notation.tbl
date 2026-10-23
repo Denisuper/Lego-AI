@@ -20,8 +20,6 @@ ADD axle5-3 32073 lightbluishgrey
 POS axle5-3 -0.95 -8 4 0 0 -1 0 1 0 1 0 0
 ADD axle55-3 32209 darkbluishgrey
 POS axle55-3 1.05 -8 -0.85 0 0 1 0 1 0 -1 0 0
-ADD part-1 6590 lightbluishgrey
-POS part-1 1.05 -8 0 1 0 0 0 1 0 0 0 1
 ADD gear20-1 32269 tan
 POS gear20-1 1.05 -8 -2 1 0 0 0 1 0 0 0 1
 CONNECT pin-77.pin2 -> conn-8.hole2 STIFF

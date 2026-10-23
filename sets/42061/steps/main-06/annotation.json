@@ -1,0 +1,200 @@
+{
+  "example_id": "42061-step-06",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-1",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-2",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-13",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-14",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-15",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam3-1",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "pin-16",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-17",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-18",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam3-2",
+        "part_number": "32523",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-4.1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-2",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-4.1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-13",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-3.6, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-14",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-3.6, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-15",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-3.6, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-1",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-3.1, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-16",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.6, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-17",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.6, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-18",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.6, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-2",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.1, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-16's pin2 goes into beam3x5-1's hole6 (stiff)",
+      "pin-17's pin2 goes into beam3x5-1's hole7 (stiff)",
+      "pin-12's pin3 goes into beam3x5-1's hole1 (stiff)",
+      "pin-13's pin2 goes into beam3x5-2's hole6 (stiff)",
+      "pin-14's pin2 goes into beam3x5-2's hole7 (stiff)",
+      "pin-11's pin3 goes into beam3x5-2's hole1 (stiff)",
+      "pin-13's pin1 goes into beam3-1's hole3 (stiff)",
+      "pin-14's pin1 goes into beam3-1's hole2 (stiff)",
+      "pin-15's pin1 goes into beam3-1's hole1 (stiff)",
+      "pin-16's pin1 goes into beam3-2's hole3 (stiff)",
+      "pin-17's pin1 goes into beam3-2's hole2 (stiff)",
+      "pin-18's pin1 goes into beam3-2's hole1 (stiff)",
+      "pin-15's pin2 goes into beam13-1's hole1 (stiff)",
+      "pin-18's pin2 goes into beam13-1's hole13 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-1 holds pin-16",
+      "beam3x5-1 holds pin-17",
+      "beam3x5-1 holds pin-12",
+      "beam3x5-2 holds pin-13",
+      "beam3x5-2 holds pin-14",
+      "beam3x5-2 holds pin-11",
+      "beam3-1 holds pin-13",
+      "beam3-1 holds pin-14",
+      "beam3-1 holds pin-15",
+      "beam3-2 holds pin-16",
+      "beam3-2 holds pin-17",
+      "beam3-2 holds pin-18",
+      "beam13-1 holds pin-15",
+      "beam13-1 holds pin-18"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

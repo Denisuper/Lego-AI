@@ -1,0 +1,3 @@
+ATTACH submodel4
+CONNECT axle6-1.axle6 -> conn-23.axlehole1 LOCKED
+CONNECT axle6-1.axle6 -> conn-24.axlehole1 LOCKED

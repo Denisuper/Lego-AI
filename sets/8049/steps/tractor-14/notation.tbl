@@ -1,0 +1,16 @@
+ADD pin-26 43093 blue
+POS pin-26 -5.5 7.15 4 1 0 0 0 -1 0 0 0 -1
+ADD conn-6 32034 black
+POS conn-6 -4 7.15 4 0 0 -1 1 0 0 0 -1 0
+ADD pin-27 43093 blue
+POS pin-27 -2.5 7.15 4 -1 0 0 0 1 0 0 0 -1
+ADD wheel-2 32072 yellow
+POS wheel-2 -4 8.15 4 0.707 -0.707 0 0 0 -1 0.707 0.707 0
+ADD axle3-3 4519 lightbluishgrey
+POS axle3-3 -4 7.15 4 0 0.707 -0.707 1 0 0 0 -0.707 -0.707
+ADD conn-7 59443 black
+POS conn-7 -4 5.65 4 -0.707 0.707 0 0 0 1 0.707 0.707 0
+CONNECT axle3-3.axle2 -> conn-6.hole1 TURNS
+CONNECT axle3-3.axle3 -> wheel-2.axlehole1 LOCKED
+CONNECT axle3-3.axle1 -> conn-7.axlehole2 LOCKED
+CONNECT pin-26.axle1 -> beam11-3.hole4 TURNS

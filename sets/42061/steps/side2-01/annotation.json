@@ -1,0 +1,95 @@
+{
+  "example_id": "42061-side2-step-01",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-8",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "pin-70",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "pin-71",
+        "part_number": "32138",
+        "count": 1
+      },
+      {
+        "name": "conn-30",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-8",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-70",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-71",
+        "part_number": "32138",
+        "catalog_name": "Technic Pin Double with Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-30",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-70's axle1 goes into beam5-8's hole5 (turns)",
+      "pin-71's pin4 goes into beam5-8's hole1 (stiff)",
+      "pin-71's pin3 goes into beam5-8's hole2 (stiff)",
+      "pin-70's axle2 goes into conn-30's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-8 spins on pin-70",
+      "beam5-8 holds pin-71",
+      "pin-70 carries conn-30"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

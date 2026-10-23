@@ -1,0 +1,2 @@
+ATTACH seat
+CONNECT pin-38.pin1 -> beam2x4-1.hole1 STIFF

@@ -1,0 +1,6 @@
+ADD pin-8 6558 blue
+POS pin-8 0.5 1 0 0 0 -1 0 1 0 1 0 0
+ADD pin-9 11214 red
+POS pin-9 -0.5 1 0 0 0 1 0 1 0 -1 0 0
+CONNECT pin-8.pin2 -> conn-5.hole1 STIFF
+CONNECT pin-9.pin1 -> conn-5.hole2 STIFF

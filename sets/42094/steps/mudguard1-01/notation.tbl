@@ -1,0 +1,12 @@
+ADD panel-9 87086 black
+POS panel-9 0 0 0 0 -1 0 1 0 0 0 0 1
+ADD pin-170 2780 black
+POS pin-170 0 0 -0.5 0 0 1 0 -1 0 1 0 0
+ADD pin-171 2780 black
+POS pin-171 2 1 -0.5 0 0 1 0 -1 0 1 0 0
+ADD panel-10 64681 black
+POS panel-10 0 0 -1 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-170.pin2 -> panel-9.hole4 STIFF
+CONNECT pin-171.pin2 -> panel-9.hole2 STIFF
+CONNECT pin-170.pin1 -> panel-10.hole4 STIFF
+CONNECT pin-171.pin1 -> panel-10.hole2 STIFF

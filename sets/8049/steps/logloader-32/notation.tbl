@@ -1,0 +1,20 @@
+ADD pin-132 32054 black
+POS pin-132 0 -16.4 -12.5 1 0 0 0 1 0 0 0 1
+ADD pin-133 32054 black
+POS pin-133 0 -16.4 -10.5 1 0 0 0 1 0 0 0 1
+ADD pin-134 32054 black
+POS pin-134 6 -16.4 -12.5 -1 0 0 0 -1 0 0 0 1
+ADD pin-135 32054 black
+POS pin-135 6 -16.4 -10.5 -1 0 0 0 -1 0 0 0 1
+ADD gear56-1 48168 black
+POS gear56-1 3 -16.4 -11.5 1 0 0 0 1 0 0 0 1
+ADD gear24-1 48452 darkbluishgrey
+POS gear24-1 3 -16.4 -11.5 1 0 0 0 1 0 0 0 1
+CONNECT pin-132.pin2 -> gear24-1.hole1 STIFF
+CONNECT pin-133.pin2 -> gear24-1.hole5 STIFF
+CONNECT pin-134.pin2 -> gear24-1.hole2 STIFF
+CONNECT pin-135.pin2 -> gear24-1.hole6 STIFF
+CONNECT pin-132.pin1 -> beam15-2.hole2 STIFF
+CONNECT pin-133.pin1 -> beam15-2.hole4 STIFF
+CONNECT pin-134.pin1 -> beam15-4.hole2 STIFF
+CONNECT pin-135.pin1 -> beam15-4.hole4 STIFF

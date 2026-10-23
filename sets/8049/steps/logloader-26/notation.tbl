@@ -1,0 +1,7 @@
+ATTACH submodel7
+CONNECT axle5-4.axle2 -> conn-46.axlehole2 LOCKED
+CONNECT axle3-10.axle3 -> beam15-4.hole10 TURNS
+CONNECT axle5-6.axle3 -> beam15-4.hole7 TURNS
+CONNECT pin-80.pin2 -> beam15-4.hole8 STIFF
+CONNECT pin-92.pin2 -> beam15-4.hole5 STIFF
+CONNECT pin-96.pin2 -> beam15-4.hole1 STIFF

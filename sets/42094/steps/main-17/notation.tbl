@@ -1,0 +1,13 @@
+STEP 17
+ADD pin-99 2780 black
+POS pin-99 2.5 -10.25 -4 1 0 0 0 0 -1 0 1 0
+ADD pin-100 2780 black
+POS pin-100 2.5 -10.25 -6 1 0 0 0 0 -1 0 1 0
+ADD pin-101 2780 black
+POS pin-101 -2.5 -10.25 -4 1 0 0 0 0 -1 0 1 0
+ADD pin-102 2780 black
+POS pin-102 -2.5 -10.25 -6 1 0 0 0 0 -1 0 1 0
+CONNECT pin-99.pin1 -> gear60-1.hole1 STIFF
+CONNECT pin-100.pin1 -> gear60-1.hole3 STIFF
+CONNECT pin-101.pin2 -> gear60-1.hole4 STIFF
+CONNECT pin-102.pin2 -> gear60-1.hole6 STIFF

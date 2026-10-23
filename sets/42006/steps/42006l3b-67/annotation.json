@@ -32,21 +32,6 @@
         "count": 1
       },
       {
-        "name": "bush-10",
-        "part_number": "47157",
-        "count": 1
-      },
-      {
-        "name": "assembly-3",
-        "part_number": "62271c01",
-        "count": 1
-      },
-      {
-        "name": "assembly-4",
-        "part_number": "62274c01",
-        "count": 1
-      },
-      {
         "name": "conn-26",
         "part_number": "61904",
         "count": 1
@@ -112,33 +97,6 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-10",
-        "part_number": "47157",
-        "catalog_name": "Electric Technic Motor 9V Geared (480 RPM) Axle Bush",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-27.05, z=-17.75 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "assembly-3",
-        "part_number": "62271c01",
-        "catalog_name": "Technic Linear Actuator  8 x  2 x  2 Body Assembly",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-27.05, z=-17.75 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "assembly-4",
-        "part_number": "62274c01",
-        "catalog_name": "Technic Linear Actuator  8 x  2 x  2 Piston Assembly",
-        "color": "Dark Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-31.1, z=-30.25 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "conn-26",
         "part_number": "61904",
         "catalog_name": "Technic Axle and Pin Connector Block 4 x 3 x 2 1/2 [Linear Actuator Holder]",
@@ -176,8 +134,6 @@
       "pin-157's pin2 goes into beam3x5-19's hole7 (stiff)",
       "pin-148's pin2 goes into beam3x5-19's hole5 (stiff)",
       "pin-149's pin2 goes into beam3x5-19's hole1 (stiff)",
-      "axle2-9's axle1 goes into assembly-3's axlehole1 (locked)",
-      "axle2-10's axle1 goes into assembly-3's hole1 (turns)",
       "axle2-10's axle1 goes into conn-26's axlehole1 (locked)",
       "axle2-10's axle2 goes into conn-26's axlehole2 (locked)"
     ],
@@ -190,8 +146,6 @@
       "beam3x5-19 holds pin-157",
       "beam3x5-19 holds pin-148",
       "beam3x5-19 holds pin-149",
-      "axle2-9 carries assembly-3",
-      "assembly-3 spins on axle2-10",
       "axle2-10 carries conn-26"
     ],
     "where_everything_is_after": [

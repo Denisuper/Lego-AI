@@ -1,0 +1,194 @@
+{
+  "example_id": "42049-turntable-step-01",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear60-1",
+        "part_number": "18938",
+        "count": 1
+      },
+      {
+        "name": "base-1",
+        "part_number": "18939",
+        "count": 1
+      },
+      {
+        "name": "pin-65",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-66",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-67",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-68",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam5-1",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "beam5-2",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "pin-69",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam-1",
+        "part_number": "18654",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear60-1",
+        "part_number": "18938",
+        "catalog_name": "Technic Turntable Large Type 3 Top, 60 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "base-1",
+        "part_number": "18939",
+        "catalog_name": "Technic Turntable Large Type 3 Base",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-65",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-66",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1, z=-10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-67",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-1, z=-10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-68",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-1, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-2",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-69",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-1",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-65's pin2 goes into base-1's hole1 (stiff)",
+      "pin-66's pin2 goes into base-1's hole3 (stiff)",
+      "pin-67's pin2 goes into base-1's hole6 (stiff)",
+      "pin-68's pin2 goes into base-1's hole4 (stiff)",
+      "pin-69's pin3 goes into base-1's hole5 (stiff)",
+      "pin-67's pin3 goes into beam5-1's hole4 (stiff)",
+      "pin-68's pin3 goes into beam5-1's hole2 (stiff)",
+      "pin-69's pin2 goes into beam5-1's hole3 (stiff)",
+      "pin-65's pin3 goes into beam5-2's hole2 (stiff)",
+      "pin-66's pin3 goes into beam5-2's hole4 (stiff)",
+      "pin-69's pin1 goes into beam-1's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "base-1 holds pin-65",
+      "base-1 holds pin-66",
+      "base-1 holds pin-67",
+      "base-1 holds pin-68",
+      "base-1 holds pin-69",
+      "beam5-1 holds pin-67",
+      "beam5-1 holds pin-68",
+      "beam5-1 holds pin-69",
+      "beam5-2 holds pin-65",
+      "beam5-2 holds pin-66",
+      "beam-1 holds pin-69"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

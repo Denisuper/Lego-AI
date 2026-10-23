@@ -1,0 +1,154 @@
+{
+  "example_id": "42049-engine-step-03",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "cranksha-1",
+        "part_number": "2853",
+        "count": 1
+      },
+      {
+        "name": "rod-1",
+        "part_number": "2852",
+        "count": 1
+      },
+      {
+        "name": "center-1",
+        "part_number": "2854",
+        "count": 1
+      },
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "count": 1
+      },
+      {
+        "name": "axle4-6",
+        "part_number": "3705",
+        "count": 1
+      },
+      {
+        "name": "rod-2",
+        "part_number": "2852",
+        "count": 1
+      },
+      {
+        "name": "round-1",
+        "part_number": "2851",
+        "count": 1
+      },
+      {
+        "name": "round-2",
+        "part_number": "2851",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cranksha-1",
+        "part_number": "2853",
+        "catalog_name": "Technic Engine Crankshaft",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "rod-1",
+        "part_number": "2852",
+        "catalog_name": "Technic Engine Connecting Rod",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.5, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "center-1",
+        "part_number": "2854",
+        "catalog_name": "Technic Engine Crankshaft Center",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=13.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "catalog_name": "Technic Engine Crankshaft",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-6",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=17, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "rod-2",
+        "part_number": "2852",
+        "catalog_name": "Technic Engine Connecting Rod",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14.5, y=0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "round-1",
+        "part_number": "2851",
+        "catalog_name": "Technic Engine Piston Round",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.5, y=1.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "round-2",
+        "part_number": "2851",
+        "catalog_name": "Technic Engine Piston Round",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14.5, y=2.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "cranksha-1's axle1 goes into rod-1's hole1 (turns)",
+      "cranksha-1's axle2 goes into center-1's axlehole1 (locked)",
+      "cranksha-2's axle2 goes into center-1's axlehole2 (locked)",
+      "axle4-6's axle1 goes into cranksha-2's axlehole1 (locked)",
+      "cranksha-2's axle1 goes into rod-2's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "rod-1 spins on cranksha-1",
+      "cranksha-1 carries center-1",
+      "cranksha-2 carries center-1",
+      "axle4-6 carries cranksha-2",
+      "rod-2 spins on cranksha-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

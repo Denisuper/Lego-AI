@@ -1,0 +1,50 @@
+{
+  "example_id": "42101-substepstep14-step-03",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-3",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-3",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-2's axle2 goes into beam5-3's hole4 (turns)",
+      "axle2-3's axle1 goes into beam5-3's hole2 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-3 spins on axle4-2",
+      "beam5-3 spins on axle2-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

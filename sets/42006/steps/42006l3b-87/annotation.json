@@ -17,21 +17,6 @@
         "count": 1
       },
       {
-        "name": "c-1",
-        "part_number": "92693c01",
-        "count": 1
-      },
-      {
-        "name": "part-18",
-        "part_number": "92695",
-        "count": 1
-      },
-      {
-        "name": "part-19",
-        "part_number": "92696",
-        "count": 1
-      },
-      {
         "name": "gear12-14",
         "part_number": "6589",
         "count": 1
@@ -122,33 +107,6 @@
         "color": "Black",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-2.85, y=-5.1, z=-37 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "c-1",
-        "part_number": "92693c01",
-        "catalog_name": "92693c01",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-12.15, z=-37 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-18",
-        "part_number": "92695",
-        "catalog_name": "92695",
-        "color": "Orange",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-10.65, z=-37 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-19",
-        "part_number": "92696",
-        "catalog_name": "92696",
-        "color": "Dark Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-4.15, z=-37 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       },
       {

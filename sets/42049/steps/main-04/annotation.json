@@ -1,0 +1,260 @@
+{
+  "example_id": "42049-step-04",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-4",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "beam4-1",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "beam4-2",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "beam4-3",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "beam4-4",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "axle2-5",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-8",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-5",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "conn-6",
+        "part_number": "32184",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-3.95, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-3.95, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-3.95, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-4",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-3.95, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam4-1",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-3.2, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam4-2",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-3.2, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam4-3",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-3.2, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam4-4",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-3.2, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-5",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.95, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.95, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-3.95, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-8",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-3.95, z=12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-5",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-6",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-3.95, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-4's axle2 goes into beam4-1's axlehole1 (locked)",
+      "axle2-5's axle2 goes into beam4-1's axlehole2 (locked)",
+      "axle2-3's axle2 goes into beam4-2's axlehole1 (locked)",
+      "axle2-6's axle2 goes into beam4-2's axlehole2 (locked)",
+      "axle2-2's axle2 goes into beam4-3's axlehole2 (locked)",
+      "axle2-8's axle2 goes into beam4-3's axlehole1 (locked)",
+      "axle2-1's axle2 goes into beam4-4's axlehole2 (locked)",
+      "axle2-7's axle2 goes into beam4-4's axlehole1 (locked)",
+      "axle2-5's axle1 goes into conn-5's axlehole2 (locked)",
+      "axle2-6's axle1 goes into conn-5's axlehole1 (locked)",
+      "axle2-7's axle1 goes into conn-6's axlehole1 (locked)",
+      "axle2-8's axle1 goes into conn-6's axlehole2 (locked)",
+      "axle2-1's axle1 goes into beam5x11-1's hole13 (turns)",
+      "axle2-2's axle1 goes into beam5x11-1's hole17 (turns)",
+      "axle2-3's axle1 goes into beam5x11-1's hole12 (turns)",
+      "axle2-4's axle1 goes into beam5x11-1's hole16 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-4 carries beam4-1",
+      "axle2-5 carries beam4-1",
+      "axle2-3 carries beam4-2",
+      "axle2-6 carries beam4-2",
+      "axle2-2 carries beam4-3",
+      "axle2-8 carries beam4-3",
+      "axle2-1 carries beam4-4",
+      "axle2-7 carries beam4-4",
+      "axle2-5 carries conn-5",
+      "axle2-6 carries conn-5",
+      "axle2-7 carries conn-6",
+      "axle2-8 carries conn-6",
+      "beam5x11-1 spins on axle2-1",
+      "beam5x11-1 spins on axle2-2",
+      "beam5x11-1 spins on axle2-3",
+      "beam5x11-1 spins on axle2-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

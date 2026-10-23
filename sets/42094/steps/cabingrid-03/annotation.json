@@ -1,0 +1,220 @@
+{
+  "example_id": "42094-cabingrid-step-03",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "holes-9",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "holes-10",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "holes-11",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "holes-12",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "pin-125",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "pin-126",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "pin-127",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "pin-128",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "pin-129",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-130",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "conn-43",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "conn-44",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "holes-9",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=8.15, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "holes-10",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=8.15, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "holes-11",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=8.15, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "holes-12",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=8.15, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-125",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-126",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-127",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-128",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-129",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-130",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-43",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-44",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=7.5, z=-3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-128's axle1 goes into holes-9's axlehole2 (locked)",
+      "pin-127's axle1 goes into holes-10's axlehole2 (locked)",
+      "pin-126's axle1 goes into holes-11's axlehole2 (locked)",
+      "pin-125's axle1 goes into holes-12's axlehole2 (locked)",
+      "pin-129's pin3 goes into pin-125's hole1 (stiff)",
+      "pin-129's pin1 goes into pin-126's hole1 (stiff)",
+      "pin-130's pin3 goes into pin-127's hole1 (stiff)",
+      "pin-130's pin1 goes into pin-128's hole1 (stiff)",
+      "pin-129's pin2 goes into conn-43's hole1 (stiff)",
+      "pin-130's pin2 goes into conn-44's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-128 carries holes-9",
+      "pin-127 carries holes-10",
+      "pin-126 carries holes-11",
+      "pin-125 carries holes-12",
+      "pin-125 holds pin-129",
+      "pin-126 holds pin-129",
+      "pin-127 holds pin-130",
+      "pin-128 holds pin-130",
+      "conn-43 holds pin-129",
+      "conn-44 holds pin-130"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

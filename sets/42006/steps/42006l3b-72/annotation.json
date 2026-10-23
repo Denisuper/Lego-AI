@@ -57,11 +57,6 @@
         "count": 1
       },
       {
-        "name": "part-16",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "beam3-10",
         "part_number": "6632",
         "count": 1
@@ -166,15 +161,6 @@
         "name": "axle3-12",
         "part_number": "4519",
         "catalog_name": "Technic Axle 3",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-29.55, z=-31.95 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-16",
-        "part_number": "6590",
-        "catalog_name": "6590",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=0.05, y=-29.55, z=-31.95 holes (exact, from the 3D model)",

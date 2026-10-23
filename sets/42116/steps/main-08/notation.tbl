@@ -7,7 +7,7 @@ ADD gear20-1 18575 tan
 POS gear20-1 0 -6.9 4 0.707 -0.707 0 0 0 -1 0.707 0.707 0
 CONNECT axle4-1.axle3 -> worm-1.axlehole1 LOCKED
 CONNECT axle4-1.axle1 -> gear20-1.axlehole1 LOCKED
-CONNECT axle4-1.axle2 -> conn-2.hole1 TURNS
-CONNECT axle4-1.axle4 -> conn-7.axlehole2 LOCKED
+CONNECT axle4-1.axle2 -> pin-15.hole1 TURNS
+CONNECT axle4-1.axle4 -> conn-3.axlehole2 LOCKED
 MESH gear12-1.teeth gear20-1.teeth
 RATIO gear12-1 gear20-1 12/20

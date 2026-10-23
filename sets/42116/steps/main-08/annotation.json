@@ -57,14 +57,14 @@
     "what_each_new_part_touches": [
       "axle4-1's axle3 goes into worm-1's axlehole1 (locked)",
       "axle4-1's axle1 goes into gear20-1's axlehole1 (locked)",
-      "axle4-1's axle2 goes into conn-2's hole1 (turns)",
-      "axle4-1's axle4 goes into conn-7's axlehole2 (locked)"
+      "axle4-1's axle2 goes into pin-15's hole1 (turns)",
+      "axle4-1's axle4 goes into conn-3's axlehole2 (locked)"
     ],
     "who_does_what_to_which": [
       "axle4-1 carries worm-1",
       "axle4-1 carries gear20-1",
-      "conn-2 spins on axle4-1",
-      "axle4-1 carries conn-7"
+      "pin-15 spins on axle4-1",
+      "axle4-1 carries conn-3"
     ],
     "where_everything_is_after": [
       "TO WRITE"

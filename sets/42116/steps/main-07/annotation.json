@@ -12,12 +12,17 @@
         "count": 1
       },
       {
-        "name": "pin-14",
+        "name": "pin-17",
+        "part_number": "44874",
+        "count": 1
+      },
+      {
+        "name": "pin-18",
         "part_number": "3749",
         "count": 1
       },
       {
-        "name": "conn-7",
+        "name": "conn-3",
         "part_number": "59443",
         "count": 1
       }
@@ -36,7 +41,16 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-14",
+        "name": "pin-17",
+        "part_number": "44874",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.9, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-18",
         "part_number": "3749",
         "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
         "color": "Tan",
@@ -45,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-7",
+        "name": "conn-3",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Red",
@@ -55,14 +69,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-2's axle1 goes into beam3x3-1's hole4 (turns)",
-      "pin-13's axle1 goes into beam3x3-1's hole3 (turns)",
-      "pin-14's axle1 goes into conn-6's hole1 (turns)"
+      "pin-4's axle1 goes into beam3x3-1's hole4 (turns)",
+      "pin-16's axle1 goes into beam3x3-1's hole3 (turns)",
+      "pin-18's axle1 goes into pin-17's hole1 (turns)",
+      "pin-17's pin1 goes into beam11-1's hole6 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam3x3-1 spins on pin-2",
-      "beam3x3-1 spins on pin-13",
-      "conn-6 spins on pin-14"
+      "beam3x3-1 spins on pin-4",
+      "beam3x3-1 spins on pin-16",
+      "pin-17 spins on pin-18",
+      "beam11-1 holds pin-17"
     ],
     "where_everything_is_after": [
       "TO WRITE"

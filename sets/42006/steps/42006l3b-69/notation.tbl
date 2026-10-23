@@ -20,8 +20,6 @@ ADD beam-6 99773 yellow
 POS beam-6 -1.2 -27.7 -32.75 0 -1 0 0.924 0 0.383 -0.383 0 0.924
 ADD gear20-6 87407 lightbluishgrey
 POS gear20-6 -0.95 -26.95 -30.9 0 0 -1 -0.924 0.383 0 0.383 0.924 0
-ADD part-15 6590 lightbluishgrey
-POS part-15 0.55 -26.95 -30.9 0 0 -1 -0.924 0.383 0 0.383 0.924 0
 CONNECT axle55-7.axle1 -> beam3x3-3.axlehole2 LOCKED
 CONNECT axle5-7.axle1 -> beam3x3-3.axlehole3 LOCKED
 CONNECT axle5-7.axle1 -> beam3x5-23.axlehole2 LOCKED

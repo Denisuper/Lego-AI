@@ -1,0 +1,64 @@
+{
+  "example_id": "8049-grabber-step-12",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 12,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam7-7",
+        "part_number": "32348",
+        "count": 1
+      },
+      {
+        "name": "beam7-8",
+        "part_number": "32348",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam7-7",
+        "part_number": "32348",
+        "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-1, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-8",
+        "part_number": "32348",
+        "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-1, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-4's axle1 goes into beam7-7's axlehole1 (locked)",
+      "axle6-3's axle1 goes into beam7-8's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-4 carries beam7-7",
+      "axle6-3 carries beam7-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

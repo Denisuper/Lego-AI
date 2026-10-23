@@ -62,11 +62,6 @@
         "count": 1
       },
       {
-        "name": "part-1",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "gear20-1",
         "part_number": "32269",
         "count": 1
@@ -173,15 +168,6 @@
         "color": "Dark Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=1.05, y=-8, z=-0.85 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-1",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=1.05, y=-8, z=0 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       },
       {

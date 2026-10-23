@@ -1,0 +1,12 @@
+ADD beam2x4-2 32140 yellow
+POS beam2x4-2 3 -1 -9 0 0 -1 0 1 0 1 0 0
+ADD pin-72 2780 black
+POS pin-72 1 -1.5 -9 0 0 -1 1 0 0 0 -1 0
+ADD axle2-4 32062 red
+POS axle2-4 3 -0.5 -9 0 0 -1 1 0 0 0 -1 0
+ADD conn-31 32013 yellow
+POS conn-31 1 -2 -9 0 0 1 1 0 0 0 1 0
+CONNECT pin-72.pin2 -> beam2x4-2.hole2 STIFF
+CONNECT axle2-4.axle1 -> beam2x4-2.axlehole1 LOCKED
+CONNECT pin-71.pin2 -> beam2x4-2.hole4 STIFF
+CONNECT pin-72.pin1 -> conn-31.hole1 STIFF

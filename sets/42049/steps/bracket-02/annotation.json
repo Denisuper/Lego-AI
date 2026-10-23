@@ -1,0 +1,232 @@
+{
+  "example_id": "42049-bracket-step-02",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-3",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-4",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-40",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-41",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-42",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-43",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-5",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-6",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-44",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-45",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-46",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-47",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-3",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=3, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-4",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=3, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-40",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=3, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-41",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=1, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-42",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=1, z=2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-43",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=3, z=2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-5",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15, y=3, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-6",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15, y=3, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-44",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12, y=3, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-45",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15, y=3, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-46",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15, y=3, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-47",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12, y=3, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-40's pin1 goes into beam3x5-3's hole1 (stiff)",
+      "pin-41's pin2 goes into beam3x5-3's hole3 (stiff)",
+      "axle5-5's axle1 goes into beam3x5-3's hole4 (turns)",
+      "pin-38's pin2 goes into beam3x5-3's hole5 (stiff)",
+      "pin-42's pin1 goes into beam3x5-4's hole3 (stiff)",
+      "pin-43's pin1 goes into beam3x5-4's hole1 (stiff)",
+      "axle5-5's axle5 goes into beam3x5-4's hole4 (turns)",
+      "pin-39's pin2 goes into beam3x5-4's hole5 (stiff)",
+      "pin-40's pin2 goes into beam3x5-5's hole5 (stiff)",
+      "pin-41's pin1 goes into beam3x5-5's hole7 (stiff)",
+      "pin-44's pin1 goes into beam3x5-5's hole4 (stiff)",
+      "pin-45's pin1 goes into beam3x5-5's hole1 (stiff)",
+      "pin-42's pin2 goes into beam3x5-6's hole7 (stiff)",
+      "pin-43's pin2 goes into beam3x5-6's hole5 (stiff)",
+      "pin-46's pin1 goes into beam3x5-6's hole1 (stiff)",
+      "pin-47's pin1 goes into beam3x5-6's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-3 holds pin-40",
+      "beam3x5-3 holds pin-41",
+      "beam3x5-3 spins on axle5-5",
+      "beam3x5-3 holds pin-38",
+      "beam3x5-4 holds pin-42",
+      "beam3x5-4 holds pin-43",
+      "beam3x5-4 spins on axle5-5",
+      "beam3x5-4 holds pin-39",
+      "beam3x5-5 holds pin-40",
+      "beam3x5-5 holds pin-41",
+      "beam3x5-5 holds pin-44",
+      "beam3x5-5 holds pin-45",
+      "beam3x5-6 holds pin-42",
+      "beam3x5-6 holds pin-43",
+      "beam3x5-6 holds pin-46",
+      "beam3x5-6 holds pin-47"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

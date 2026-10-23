@@ -7,6 +7,11 @@
     "picture": null,
     "parts_box": [
       {
+        "name": "pin-26",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
         "name": "beam2-1",
         "part_number": "60483",
         "count": 1
@@ -16,6 +21,15 @@
   },
   "answer": {
     "new_parts": [
+      {
+        "name": "pin-26",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
       {
         "name": "beam2-1",
         "part_number": "60483",
@@ -27,9 +41,13 @@
       }
     ],
     "what_each_new_part_touches": [
-      "attaches the side build"
+      "pin-26's pin1 goes into beam2-1's hole1 (stiff)",
+      "pin-26's pin2 goes into beam2x4-3's hole2 (stiff)"
     ],
-    "who_does_what_to_which": [],
+    "who_does_what_to_which": [
+      "beam2-1 holds pin-26",
+      "beam2x4-3 holds pin-26"
+    ],
     "where_everything_is_after": [
       "TO WRITE"
     ],

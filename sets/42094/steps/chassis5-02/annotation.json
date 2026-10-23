@@ -1,0 +1,114 @@
+{
+  "example_id": "42094-chassis5-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-2",
+        "part_number": "14720",
+        "count": 1
+      },
+      {
+        "name": "pin-62",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "conn-27",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-28",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-2",
+        "part_number": "14720",
+        "catalog_name": "Technic Beam 3 x 5 Thick [90\u00b0 Offset Centre Beam Holes]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.75, y=-2, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-62",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.75, y=-2, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-27",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.25, y=-2, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.25, y=-1.5, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-28",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.25, y=-1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-62's pin1 goes into beam3x5-2's hole5 (stiff)",
+      "pin-60's axle1 goes into beam3x5-2's hole3 (turns)",
+      "pin-61's pin2 goes into beam3x5-2's hole2 (stiff)",
+      "pin-62's pin2 goes into conn-27's hole1 (stiff)",
+      "axle2-3's axle1 goes into conn-27's axlehole1 (locked)",
+      "axle2-3's axle2 goes into conn-28's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-2 holds pin-62",
+      "beam3x5-2 spins on pin-60",
+      "beam3x5-2 holds pin-61",
+      "conn-27 holds pin-62",
+      "axle2-3 carries conn-27",
+      "axle2-3 carries conn-28"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

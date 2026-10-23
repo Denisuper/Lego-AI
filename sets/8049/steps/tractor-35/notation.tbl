@@ -1,0 +1,4 @@
+ATTACH lights
+ATTACH lights
+CONNECT axle5-2.axle1 -> conn-29.axlehole1 LOCKED
+CONNECT axle5-2.axle5 -> conn-29.axlehole1 LOCKED

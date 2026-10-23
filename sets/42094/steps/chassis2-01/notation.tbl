@@ -1,0 +1,18 @@
+ADD beam5x11-2 64178 lightbluishgrey
+POS beam5x11-2 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-21 2780 black
+POS pin-21 2.5 0 -4 1 0 0 0 1 0 0 0 1
+ADD pin-22 2780 black
+POS pin-22 -2.5 0 -4 1 0 0 0 1 0 0 0 1
+ADD axle9-1 60485 lightbluishgrey
+POS axle9-1 0 0 0 0 0 1 0 -1 0 1 0 0
+ADD conn-4 59443 yellow
+POS conn-4 0 0 4.5 0 -1 0 -1 0 0 0 0 -1
+ADD gear12-5 6589 tan
+POS gear12-5 0 0 -3.65 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-21.pin1 -> beam5x11-2.hole4 STIFF
+CONNECT pin-22.pin2 -> beam5x11-2.hole3 STIFF
+CONNECT axle9-1.axle2 -> beam5x11-2.hole7 TURNS
+CONNECT axle9-1.axle8 -> beam5x11-2.hole22 TURNS
+CONNECT axle9-1.axle9 -> conn-4.axlehole2 LOCKED
+CONNECT axle9-1.axle1 -> gear12-5.axlehole1 LOCKED

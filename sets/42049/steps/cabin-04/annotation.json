@@ -1,0 +1,66 @@
+{
+  "example_id": "42049-cabin-step-04",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-10",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "bush-31",
+        "part_number": "32123a",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-10",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.25, y=-5.95, z=10.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-31",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.25, y=-4, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-10's axle1 goes into beam5-10's axlehole1 (locked)",
+      "axle5-13's axle3 goes into beam5-10's axlehole2 (locked)",
+      "axle5-13's axle3 goes into bush-31's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-10 carries beam5-10",
+      "axle5-13 carries beam5-10",
+      "axle5-13 carries bush-31"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

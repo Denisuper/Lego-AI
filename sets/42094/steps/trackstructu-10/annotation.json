@@ -1,0 +1,218 @@
+{
+  "example_id": "42094-trackstructu-step-10",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 10,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-235",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam15-4",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "pin-236",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "conn-95",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "pin-237",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-238",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "conn-96",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "pin-239",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "conn-97",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "pin-240",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "conn-98",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-235",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14, y=-2, z=-5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam15-4",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-2, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-236",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=-5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-95",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-237",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-2, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-238",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-2, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-96",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-239",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-2, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-97",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-240",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-2, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-98",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-1, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-235's pin1 goes into beam15-4's hole1 (stiff)",
+      "pin-236's pin2 goes into beam15-4's hole15 (stiff)",
+      "pin-239's pin2 goes into beam15-4's hole4 (stiff)",
+      "pin-240's pin2 goes into beam15-4's hole12 (stiff)",
+      "pin-237's pin1 goes into conn-95's hole1 (stiff)",
+      "axle4-12's axle1 goes into conn-95's axlehole1 (locked)",
+      "pin-238's pin1 goes into conn-96's hole1 (stiff)",
+      "axle4-13's axle1 goes into conn-96's axlehole1 (locked)",
+      "pin-239's pin1 goes into conn-97's hole1 (stiff)",
+      "axle6-3's axle6 goes into conn-97's axlehole1 (locked)",
+      "pin-240's pin1 goes into conn-98's hole1 (stiff)",
+      "axle6-2's axle1 goes into conn-98's axlehole1 (locked)",
+      "pin-236's pin1 goes into conn-84's hole1 (stiff)",
+      "pin-237's pin2 goes into beam15-3's hole4 (stiff)",
+      "pin-238's pin2 goes into beam15-3's hole12 (stiff)",
+      "pin-235's pin2 goes into conn-90's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-4 holds pin-235",
+      "beam15-4 holds pin-236",
+      "beam15-4 holds pin-239",
+      "beam15-4 holds pin-240",
+      "conn-95 holds pin-237",
+      "axle4-12 carries conn-95",
+      "conn-96 holds pin-238",
+      "axle4-13 carries conn-96",
+      "conn-97 holds pin-239",
+      "axle6-3 carries conn-97",
+      "conn-98 holds pin-240",
+      "axle6-2 carries conn-98",
+      "conn-84 holds pin-236",
+      "beam15-3 holds pin-237",
+      "beam15-3 holds pin-238",
+      "conn-90 holds pin-235"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

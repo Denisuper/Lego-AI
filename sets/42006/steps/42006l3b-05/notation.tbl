@@ -31,8 +31,12 @@ CONNECT pin-10.pin1 -> beam5-1.hole1 TURNS
 CONNECT pin-11.pin1 -> beam5-1.hole5 TURNS
 CONNECT pin-9.pin2 -> beam2-1.hole1 TURNS
 CONNECT conn-2.axle1 -> beam2-1.axlehole1 LOCKED
+CONNECT pin-10.pin2 -> wheel-1.hole1 TURNS
+CONNECT pin-11.pin2 -> wheel-2.hole1 TURNS
 CONNECT pin-12.pin2 -> beam2-2.hole1 TURNS
 CONNECT conn-1.axle1 -> beam2-2.axlehole1 LOCKED
 CONNECT pin-12.pin1 -> beam5-2.hole3 TURNS
 CONNECT pin-13.pin1 -> beam5-2.hole1 TURNS
 CONNECT pin-14.pin1 -> beam5-2.hole5 TURNS
+CONNECT pin-13.pin2 -> wheel-3.hole1 TURNS
+CONNECT pin-14.pin2 -> wheel-4.hole1 TURNS

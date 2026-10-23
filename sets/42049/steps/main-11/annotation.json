@@ -1,0 +1,116 @@
+{
+  "example_id": "42049-step-11",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle2-11",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "assembly-1",
+        "part_number": "61903",
+        "count": 1
+      },
+      {
+        "name": "axle5-6",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "gear12-7",
+        "part_number": "32270",
+        "count": 1
+      },
+      {
+        "name": "conn-35",
+        "part_number": "32034",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle2-11",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5.95, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "assembly-1",
+        "part_number": "61903",
+        "catalog_name": "Technic Universal Joint 3L [Complete Assembly]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5.95, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-6",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5.95, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-7",
+        "part_number": "32270",
+        "catalog_name": "Technic Gear 12 Tooth Double Bevel",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-7.95, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-35",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-7.95, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-11's axle2 goes into assembly-1's axlehole1 (locked)",
+      "axle5-6's axle5 goes into assembly-1's axlehole2 (locked)",
+      "axle9-1's axle2 goes into gear12-7's axlehole1 (locked)",
+      "axle9-1's axle1 goes into conn-35's hole1 (turns)",
+      "axle4-7's axle1 goes into conn-35's axlehole1 (locked)",
+      "axle4-8's axle1 goes into conn-35's axlehole2 (locked)",
+      "axle2-11's axle1 goes into conn-34's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-11 carries assembly-1",
+      "axle5-6 carries assembly-1",
+      "axle9-1 carries gear12-7",
+      "conn-35 spins on axle9-1",
+      "axle4-7 carries conn-35",
+      "axle4-8 carries conn-35",
+      "axle2-11 carries conn-34"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

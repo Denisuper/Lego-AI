@@ -1,0 +1,4 @@
+ADD beam15-6 32278 red
+POS beam15-6 0 9 20 0 -1 0 0 0 1 -1 0 0
+CONNECT pin-146.pin2 -> beam15-6.hole1 STIFF
+CONNECT pin-147.pin2 -> beam15-6.hole2 STIFF

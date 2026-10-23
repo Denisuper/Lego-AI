@@ -1,0 +1,8 @@
+ADD pin-73 11214 darkbluishgrey
+POS pin-73 -3 2.4 -4.8 1 0 0 0 0.6 -0.8 0 0.8 0.6
+ADD beam-2 18654 darkbluishgrey
+POS beam-2 -3 2.4 -4.8 0 -1 0 0 0 1 -1 0 0
+ADD pin-74 2780 black
+POS pin-74 -0.5 2.4 -6.8 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-73.pin1 -> beam-2.hole1 STIFF
+CONNECT pin-74.pin1 -> beam9-9.hole3 STIFF

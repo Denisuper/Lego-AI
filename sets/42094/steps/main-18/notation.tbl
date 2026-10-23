@@ -1,0 +1,7 @@
+STEP 18
+ADD beam2-8 43857 black
+POS beam2-8 3 -10.75 -4 0 -1 0 0 0 1 -1 0 0
+ATTACH cabin
+CONNECT pin-116.pin2 -> beam2-8.hole1 STIFF
+CONNECT pin-99.pin2 -> beam2-8.hole2 STIFF
+CONNECT pin-101.pin1 -> beam2-4.hole2 STIFF

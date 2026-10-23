@@ -1,0 +1,42 @@
+{
+  "example_id": "42094-step-19",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 19,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-181's pin2 goes into pin-69's hole1 (stiff)",
+      "pin-180's pin2 goes into pin-70's hole1 (stiff)",
+      "pin-174's pin1 goes into pin-82's hole1 (stiff)",
+      "pin-173's pin1 goes into pin-83's hole1 (stiff)",
+      "pin-179's pin2 goes into pin-94's hole1 (stiff)",
+      "pin-172's pin1 goes into pin-97's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-69 holds pin-181",
+      "pin-70 holds pin-180",
+      "pin-82 holds pin-174",
+      "pin-83 holds pin-173",
+      "pin-94 holds pin-179",
+      "pin-97 holds pin-172"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

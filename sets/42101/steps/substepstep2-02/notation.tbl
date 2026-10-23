@@ -1,3 +1,8 @@
-ADD conn-10 6536 black
-POS conn-10 0.75 0 0 -1 0 0 0 0 1 0 1 0
-CONNECT axle2-5.axle1 -> conn-10.axlehole1 LOCKED
+ADD axle3-4 24316 reddishbrown
+POS axle3-4 1 0 0 -1 0 0 0 0 1 0 1 0
+ADD wheel-2 55982 white
+POS wheel-2 1.5 0 0 0 0 -1 -1 0 0 0 1 0
+ADD tyre-2 92402 rubberblack
+POS tyre-2 1.5 0 0 0 0 -1 -1 0 0 0 1 0
+CONNECT axle3-4.axle2 -> wheel-2.axlehole1 LOCKED
+CONNECT axle3-4.axle3 -> conn-9.hole1 TURNS

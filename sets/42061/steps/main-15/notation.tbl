@@ -1,0 +1,25 @@
+STEP 15
+ADD conn-18 32184 black
+POS conn-18 4 -6.1 -15 1 0 0 0 1 0 0 0 1
+ADD pin-55 18651 black
+POS pin-55 5 -7.1 -15 -1 0 0 0 -1 0 0 0 1
+ADD beam2-5 60483 black
+POS beam2-5 5 -7.1 -15 0 1 0 1 0 0.01 0.01 0 -1
+ADD pin-56 2780 black
+POS pin-56 5.5 -7.1 -16 1 0 0 0 -1 0 0 0 -1
+ADD stud-3 6141 transclear
+POS stud-3 4 -6.1 -15.5 0 0 1 -1 0 0 0 -1 0
+ADD panel-3 11947 black
+POS panel-3 6 -7.1 -13 0 -1 0 -1 0 0 0 0 -1
+ADD axle3-8 4519 lightbluishgrey
+POS axle3-8 5 -7.1 -6 0 0.943 -0.333 1 0 0 0 -0.333 -0.943
+ADD conn-19 59443 red
+POS conn-19 5 -8.6 -6 -0.333 0.943 0 0 0 -1 -0.943 -0.333 0
+CONNECT stud-3.pin1 -> conn-18.hole1 STIFF
+CONNECT axle7-2.axle7 -> conn-18.axlehole2 LOCKED
+CONNECT pin-55.axle2 -> beam2-5.axlehole1 LOCKED
+CONNECT pin-56.pin1 -> beam2-5.hole1 STIFF
+CONNECT pin-55.axle1 -> panel-3.hole1 TURNS
+CONNECT pin-56.pin2 -> panel-3.hole2 STIFF
+CONNECT axle3-8.axle1 -> conn-19.axlehole1 LOCKED
+CONNECT axle3-8.axle3 -> conn-10.axlehole2 LOCKED

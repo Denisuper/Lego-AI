@@ -1,0 +1,5 @@
+ATTACH pneumaticspa
+CONNECT pin-95.pin2 -> beam15-1.hole5 STIFF
+CONNECT pin-103.pin3 -> beam15-1.hole1 STIFF
+CONNECT pin-93.pin2 -> beam15-2.hole5 STIFF
+CONNECT pin-98.pin2 -> beam15-2.hole1 STIFF

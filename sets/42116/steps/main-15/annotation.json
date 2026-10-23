@@ -17,12 +17,12 @@
         "count": 1
       },
       {
-        "name": "pin-25",
+        "name": "pin-32",
         "part_number": "2780",
         "count": 1
       },
       {
-        "name": "pin-26",
+        "name": "pin-33",
         "part_number": "2780",
         "count": 1
       },
@@ -55,7 +55,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-25",
+        "name": "pin-32",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -64,7 +64,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-26",
+        "name": "pin-33",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -84,21 +84,21 @@
     ],
     "what_each_new_part_touches": [
       "beam3x0-1's pin1 goes into beam3-1's hole3 (stiff)",
-      "pin-24's pin1 goes into beam3-1's hole1 (turns)",
-      "pin-25's pin2 goes into beam3-2's hole2 (stiff)",
-      "pin-26's pin2 goes into beam3-2's hole3 (stiff)",
+      "pin-31's pin1 goes into beam3-1's hole1 (turns)",
+      "pin-32's pin2 goes into beam3-2's hole2 (stiff)",
+      "pin-33's pin2 goes into beam3-2's hole3 (stiff)",
       "beam3x0-2's pin1 goes into beam3-2's hole1 (stiff)",
-      "pin-25's pin1 goes into beam13-2's hole2 (stiff)",
-      "pin-26's pin1 goes into beam13-2's hole3 (stiff)"
+      "pin-32's pin1 goes into beam13-2's hole2 (stiff)",
+      "pin-33's pin1 goes into beam13-2's hole3 (stiff)"
     ],
     "who_does_what_to_which": [
       "beam3-1 holds beam3x0-1",
-      "pin-24 spins on beam3-1",
-      "beam3-2 holds pin-25",
-      "beam3-2 holds pin-26",
+      "pin-31 spins on beam3-1",
+      "beam3-2 holds pin-32",
+      "beam3-2 holds pin-33",
       "beam3-2 holds beam3x0-2",
-      "beam13-2 holds pin-25",
-      "beam13-2 holds pin-26"
+      "beam13-2 holds pin-32",
+      "beam13-2 holds pin-33"
     ],
     "where_everything_is_after": [
       "TO WRITE"

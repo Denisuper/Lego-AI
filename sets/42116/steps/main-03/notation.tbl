@@ -1,17 +1,15 @@
 STEP 3
-ADD pin-3 11214 red
-POS pin-3 -1 -4.9 -3 1 0 0 0 -0.5 -0.866 0 0.866 -0.5
+ADD pin-7 11214 red
+POS pin-7 -1 -4.9 -3 1 0 0 0 -0.5 -0.866 0 0.866 -0.5
 ADD conn-1 63869 lightbluishgrey
 POS conn-1 0 -4.9 -3 1 0 0 0 -0.866 0.5 0 -0.5 -0.866
-ADD pin-4 4274 lightbluishgrey
-POS pin-4 -1 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
-ADD pin-5 4274 lightbluishgrey
-POS pin-5 0 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
-ADD pin-6 4274 lightbluishgrey
-POS pin-6 1 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
-ATTACH 3069bpcddat
-ATTACH 3070bpc5dat
-CONNECT pin-4.pin1 -> conn-1.hole1 TURNS
-CONNECT pin-5.pin1 -> conn-1.hole2 TURNS
-CONNECT pin-6.pin1 -> conn-1.hole3 TURNS
-CONNECT pin-3.pin1 -> beam2x4-1.hole3 STIFF
+ADD pin-8 4274 lightbluishgrey
+POS pin-8 -1 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
+ADD pin-9 4274 lightbluishgrey
+POS pin-9 0 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
+ADD pin-10 4274 lightbluishgrey
+POS pin-10 1 -6 -3.05 0 0 1 -0.5 -0.866 0 0.866 -0.5 0
+CONNECT pin-8.pin1 -> conn-1.hole1 TURNS
+CONNECT pin-9.pin1 -> conn-1.hole2 TURNS
+CONNECT pin-10.pin1 -> conn-1.hole3 TURNS
+CONNECT pin-7.pin1 -> beam2x4-1.hole3 STIFF

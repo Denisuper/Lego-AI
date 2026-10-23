@@ -1,0 +1,6 @@
+ADD beam7-7 32348 black
+POS beam7-7 -1.5 -1 -2.5 0.866 0 -0.5 0.5 0 0.866 0 -1 0
+ADD beam7-8 32348 black
+POS beam7-8 0.5 -1 -2.5 -0.866 0 0.5 0.5 0 0.866 0 1 0
+CONNECT axle6-4.axle1 -> beam7-7.axlehole1 LOCKED
+CONNECT axle6-3.axle1 -> beam7-8.axlehole1 LOCKED

@@ -1,0 +1,38 @@
+{
+  "example_id": "42049-step-14",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 14,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-82's pin2 goes into conn-39's hole1 (stiff)",
+      "pin-83's pin2 goes into conn-40's hole1 (stiff)",
+      "pin-85's pin2 goes into conn-42's hole1 (stiff)",
+      "pin-84's pin2 goes into conn-43's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-39 holds pin-82",
+      "conn-40 holds pin-83",
+      "conn-42 holds pin-85",
+      "conn-43 holds pin-84"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

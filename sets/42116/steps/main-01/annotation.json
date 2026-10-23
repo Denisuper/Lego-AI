@@ -18,6 +18,16 @@
       },
       {
         "name": "pin-2",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "pin-3",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "pin-4",
         "part_number": "43093",
         "count": 1
       }
@@ -46,6 +56,24 @@
       },
       {
         "name": "pin-2",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.9, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-3",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.9, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-4",
         "part_number": "43093",
         "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
         "color": "Blue",
@@ -55,9 +83,13 @@
       }
     ],
     "what_each_new_part_touches": [
-      "attaches the side build"
+      "pin-2's pin1 goes into beam11-1's hole1 (stiff)",
+      "pin-3's pin1 goes into beam11-1's hole3 (stiff)"
     ],
-    "who_does_what_to_which": [],
+    "who_does_what_to_which": [
+      "beam11-1 holds pin-2",
+      "beam11-1 holds pin-3"
+    ],
     "where_everything_is_after": [
       "TO WRITE"
     ],

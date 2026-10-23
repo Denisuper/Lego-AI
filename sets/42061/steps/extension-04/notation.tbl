@@ -1,0 +1,23 @@
+ADD beam3x5-6 32250 darkbluishgrey
+POS beam3x5-6 1.25 3 -6.5 0 1 0 0 0 -1 -1 0 0
+ADD beam3x0-3 33299b black
+POS beam3x0-3 -2 2 -6.5 0 1 0 -0.207 0 0.978 0.978 0 0.207
+ADD axle3-13 4519 lightbluishgrey
+POS axle3-13 0 6 -8.5 1 0 0 0 -0.928 0.372 0 -0.372 -0.928
+ADD beam2x4-5 32140 darkbluishgrey
+POS beam2x4-5 -1 6 -8.5 0 1 0 -0.928 0 -0.372 -0.372 0 0.928
+ADD beam3x0-4 33299b black
+POS beam3x0-4 2 2 -6.5 0 -1 0 0.207 0 0.978 -0.978 0 0.207
+ADD beam2x4-6 32140 darkbluishgrey
+POS beam2x4-6 1 6 -8.5 0 1 0 -0.928 0 -0.372 -0.372 0 0.928
+CONNECT axle3-9.axle3 -> beam3x5-6.hole4 TURNS
+CONNECT axle3-10.axle3 -> beam3x5-6.axlehole3 LOCKED
+CONNECT axle3-11.axle3 -> beam3x5-6.axlehole2 LOCKED
+CONNECT axle5-4.axle4 -> beam3x5-6.hole2 TURNS
+CONNECT axle5-4.axle1 -> beam3x0-3.axlehole1 LOCKED
+CONNECT beam3x0-3.pin1 -> beam2x4-5.hole4 STIFF
+CONNECT axle3-13.axle1 -> beam2x4-5.axlehole1 LOCKED
+CONNECT axle5-4.axle5 -> beam3x0-4.axlehole1 LOCKED
+CONNECT axle3-13.axle3 -> beam2x4-6.axlehole1 LOCKED
+CONNECT beam3x0-4.pin1 -> beam2x4-6.hole4 STIFF
+CONNECT axle3-13.axle2 -> hole-1.hole3 TURNS

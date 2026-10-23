@@ -11,10 +11,10 @@
   "answer": {
     "new_parts": [],
     "what_each_new_part_touches": [
-      "pin-23's pin2 goes into beam2x4-4's hole2 (stiff)"
+      "pin-30's pin2 goes into beam2x4-4's hole2 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam2x4-4 holds pin-23"
+      "beam2x4-4 holds pin-30"
     ],
     "where_everything_is_after": [
       "TO WRITE"

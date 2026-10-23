@@ -1,0 +1,252 @@
+{
+  "example_id": "42094-cabin-step-08",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 8,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-133",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "conn-47",
+        "part_number": "32039",
+        "count": 1
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-48",
+        "part_number": "32014",
+        "count": 1
+      },
+      {
+        "name": "axle3-13",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "conn-49",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "conn-50",
+        "part_number": "32291",
+        "count": 1
+      },
+      {
+        "name": "pin-134",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-135",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-136",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-137",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "groove-7",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "groove-8",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "part-2",
+        "part_number": "26603",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-133",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1.25, z=-0.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-47",
+        "part_number": "32039",
+        "catalog_name": "Technic Axle Connector with Axle Hole",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-1.25, z=-0.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-1.7, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-48",
+        "part_number": "32014",
+        "catalog_name": "Technic Axle and Pin Connector Angled #6 - 90\u00b0",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-3.05, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-13",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-3.05, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-49",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-3.05, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-50",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-3.05, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-134",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-3.25, z=-1.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-135",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-4.15, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-136",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-4.15, z=-1.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-137",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-3.25, z=-1.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "groove-7",
+        "part_number": "98138",
+        "catalog_name": "Tile  1 x  1 Round with Groove",
+        "color": "Trans Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-3.45, z=-0.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "groove-8",
+        "part_number": "98138",
+        "catalog_name": "Tile  1 x  1 Round with Groove",
+        "color": "Trans Green",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-3.45, z=-0.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-2",
+        "part_number": "26603",
+        "catalog_name": "Tile  2 x  3",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-4.35, z=-1.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-6's axle1 goes into conn-47's axlehole1 (locked)",
+      "axle2-6's axle2 goes into conn-48's axlehole2 (locked)",
+      "axle3-13's axle1 goes into conn-48's axlehole1 (locked)",
+      "pin-137's pin1 goes into conn-48's hole1 (turns)",
+      "axle3-13's axle3 goes into conn-49's axlehole1 (locked)",
+      "pin-134's pin1 goes into conn-49's hole1 (turns)",
+      "axle3-13's axle2 goes into conn-50's axlehole1 (locked)",
+      "pin-135's pin1 goes into conn-50's hole2 (turns)",
+      "pin-136's pin1 goes into conn-50's hole1 (turns)",
+      "pin-134's pin2 goes into groove-7's hole1 (turns)",
+      "pin-137's pin2 goes into groove-8's hole1 (turns)",
+      "pin-133's axle1 goes into beam3x3-1's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-6 carries conn-47",
+      "axle2-6 carries conn-48",
+      "axle3-13 carries conn-48",
+      "pin-137 spins on conn-48",
+      "axle3-13 carries conn-49",
+      "pin-134 spins on conn-49",
+      "axle3-13 carries conn-50",
+      "pin-135 spins on conn-50",
+      "pin-136 spins on conn-50",
+      "pin-134 spins on groove-7",
+      "pin-137 spins on groove-8",
+      "beam3x3-1 spins on pin-133"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -11,5 +11,7 @@ ADD wheel-2 55981 red
 POS wheel-2 -2.5 -1.9 -3 0 0 1 1 0 0 0 1 0
 ADD tyre-2 92402 rubberblack
 POS tyre-2 -2.5 -1.9 -3 0 0 1 1 0 0 0 1 0
+CONNECT axle3-7.axle2 -> wheel-1.hole1 TURNS
+CONNECT axle3-8.axle2 -> wheel-2.hole1 TURNS
 CONNECT axle3-8.axle1 -> beam2x4-1.axlehole1 LOCKED
 CONNECT axle3-7.axle1 -> beam2x4-2.axlehole1 LOCKED

@@ -1,0 +1,132 @@
+{
+  "example_id": "42049-gripper-step-07",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle5-10",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "beam2-11",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "pin-91",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam5-3",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "pin-92",
+        "part_number": "3673",
+        "count": 1
+      },
+      {
+        "name": "pin-93",
+        "part_number": "3673",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle5-10",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-11",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-2, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-91",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-1, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-3",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-1, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-92",
+        "part_number": "3673",
+        "catalog_name": "Technic Pin without Friction Ridges Lengthwise",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=1, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-93",
+        "part_number": "3673",
+        "catalog_name": "Technic Pin without Friction Ridges Lengthwise",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=-3, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-10's axle2 goes into beam2-11's axlehole1 (locked)",
+      "pin-91's pin2 goes into beam2-11's hole1 (stiff)",
+      "axle5-10's axle1 goes into beam5-3's hole4 (turns)",
+      "pin-91's pin1 goes into beam5-3's hole3 (stiff)",
+      "pin-92's pin2 goes into beam5-3's hole1 (turns)",
+      "pin-93's pin2 goes into beam5-3's hole5 (turns)",
+      "axle5-8's axle1 goes into beam5-3's hole2 (turns)",
+      "axle5-10's axle3 goes into conn-47's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-10 carries beam2-11",
+      "beam2-11 holds pin-91",
+      "beam5-3 spins on axle5-10",
+      "beam5-3 holds pin-91",
+      "pin-92 spins on beam5-3",
+      "pin-93 spins on beam5-3",
+      "beam5-3 spins on axle5-8",
+      "axle5-10 carries conn-47"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

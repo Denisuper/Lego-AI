@@ -1,0 +1,20 @@
+STEP 6
+ADD pin-13 6558 blue
+POS pin-13 -2 -7.25 -8 0 1 0 -1 0 0 0 0 1
+ADD pin-14 6558 blue
+POS pin-14 2 -7.25 -8 0 1 0 -1 0 0 0 0 1
+ADD pin-15 6558 blue
+POS pin-15 2 -7.25 -2 0 1 0 -1 0 0 0 0 1
+ADD pin-16 6558 blue
+POS pin-16 -2 -7.25 -2 0 1 0 -1 0 0 0 0 1
+ADD beam5x11-1 64178 lightbluishgrey
+POS beam5x11-1 0 -8.25 -5 1 0 0 0 1 0 0 0 1
+CONNECT pin-13.pin3 -> beam5x11-1.hole5 STIFF
+CONNECT pin-14.pin3 -> beam5x11-1.hole9 STIFF
+CONNECT pin-15.pin3 -> beam5x11-1.hole24 STIFF
+CONNECT pin-16.pin3 -> beam5x11-1.hole20 STIFF
+CONNECT axle5-1.axle1 -> beam5x11-1.hole22 TURNS
+CONNECT pin-14.pin2 -> beam13-1.hole2 STIFF
+CONNECT pin-15.pin2 -> beam13-1.hole8 STIFF
+CONNECT pin-13.pin2 -> beam13-2.hole2 STIFF
+CONNECT pin-16.pin2 -> beam13-2.hole8 STIFF

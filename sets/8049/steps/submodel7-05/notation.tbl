@@ -1,0 +1,9 @@
+ADD conn-47 32291 darkbluishgrey
+POS conn-47 -2 -1 -11.5 0 0 1 0 1 0 -1 0 0
+ADD pin-120 43093 blue
+POS pin-120 -2 -1 -11 0 0 -1 0 -1 0 -1 0 0
+ADD pin-121 2780 black
+POS pin-121 -1.5 0 -8 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-118.pin2 -> conn-47.hole2 STIFF
+CONNECT pin-119.pin2 -> conn-47.hole1 STIFF
+CONNECT pin-121.pin2 -> beam5-11.hole3 STIFF

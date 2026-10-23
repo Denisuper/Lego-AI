@@ -1,0 +1,15 @@
+ADD beam9-10 6629 black
+POS beam9-10 5.5 -8.8 4.6 0 -1 0 0.28 0 0.96 -0.96 0 0.28
+ADD pin-119 2780 black
+POS pin-119 5 -6.9 5.15 1 0 0 0 -0.6 0.8 0 -0.8 -0.6
+ADD pin-120 22961 lightbluishgrey
+POS pin-120 4.5 -6.9 5.15 0 -1 0 -0.96 0 0.28 -0.28 0 -0.96
+ADD conn-42 32015 black
+POS conn-42 4.5 -8.8 4.6 -1 0 0 0 -0.994 0.109 0 0.109 0.994
+CONNECT pin-119.pin2 -> beam9-10.hole2 STIFF
+CONNECT axle3-9.axle1 -> beam9-10.axlehole1 LOCKED
+CONNECT pin-117.pin2 -> beam9-10.hole7 STIFF
+CONNECT pin-118.axle1 -> beam9-10.hole5 TURNS
+CONNECT pin-119.pin1 -> pin-120.hole1 STIFF
+CONNECT pin-120.axle1 -> conn-42.axlehole2 LOCKED
+CONNECT axle3-9.axle2 -> conn-42.hole1 TURNS

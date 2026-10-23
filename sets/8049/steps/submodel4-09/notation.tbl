@@ -1,0 +1,3 @@
+ADD conn-25 32013 black
+POS conn-25 6.5 0 0 0 0 1 -0.998 -0.066 0 0.066 -0.998 0
+CONNECT axle12-1.axle12 -> conn-25.axlehole1 LOCKED

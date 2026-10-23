@@ -1,0 +1,17 @@
+ADD conn-48 42003 lightbluishgrey
+POS conn-48 2 0 12 1 0 0 0 0 -1 0 1 0
+ADD pin-88 43093 blue
+POS pin-88 2 0.5 12 0 1 0 1 0 0 0 0 -1
+ADD bush-27 3713 red
+POS bush-27 2 1 12 0 1 0 0 0 1 1 0 0
+ADD conn-49 6536 yellow
+POS conn-49 3 0 11 1 0 0 0 0 1 0 -1 0
+ADD pin-89 6628 black
+POS pin-89 -2.5 1.95 13.35 1 0 0 0 0.94 -0.342 0 0.342 0.94
+ADD pin-90 6628 black
+POS pin-90 2.5 1.95 13.35 -1 0 0 0 -0.94 -0.342 0 -0.342 0.94
+CONNECT pin-88.axle1 -> conn-48.hole1 TURNS
+CONNECT axle7-2.axle6 -> conn-48.axlehole1 LOCKED
+CONNECT axle7-2.axle7 -> conn-49.axlehole1 LOCKED
+CONNECT pin-90.pin1 -> beam2-9.hole1 STIFF
+CONNECT pin-89.pin1 -> beam2-10.hole1 STIFF

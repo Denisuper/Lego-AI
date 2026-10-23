@@ -1,0 +1,130 @@
+{
+  "example_id": "42094-cabin-step-03",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-107",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-108",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "conn-39",
+        "part_number": "32015",
+        "count": 1
+      },
+      {
+        "name": "axle3-8",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "conn-40",
+        "part_number": "26287",
+        "count": 1
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-107",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6.9, z=5.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-108",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-6.9, z=5.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-39",
+        "part_number": "32015",
+        "catalog_name": "Technic Axle and Pin Connector Angled #5 - 112.5\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-8",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-40",
+        "part_number": "26287",
+        "catalog_name": "Technic Driving Ring Connector Smooth [4 rounded side walls]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-107's pin2 goes into pin-108's hole1 (stiff)",
+      "pin-108's axle1 goes into conn-39's axlehole2 (locked)",
+      "axle3-8's axle2 goes into conn-39's hole1 (turns)",
+      "axle3-8's axle1 goes into conn-40's axlehole1 (locked)",
+      "axle3-9's axle3 goes into conn-40's axlehole1 (locked)",
+      "pin-107's pin1 goes into beam9-8's hole2 (stiff)",
+      "axle3-8's axle3 goes into beam9-8's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "pin-108 holds pin-107",
+      "pin-108 carries conn-39",
+      "conn-39 spins on axle3-8",
+      "axle3-8 carries conn-40",
+      "axle3-9 carries conn-40",
+      "beam9-8 holds pin-107",
+      "axle3-8 carries beam9-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

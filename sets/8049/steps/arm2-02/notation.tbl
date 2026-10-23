@@ -1,0 +1,10 @@
+ADD axle3-22 4519 lightbluishgrey
+POS axle3-22 0 0 4 1 0 0 0 0 -1 0 1 0
+ADD beam2-11 41677 black
+POS beam2-11 -0.75 0 4 0 -1 0 0 0 1 -1 0 0
+ADD beam2-12 41677 black
+POS beam2-12 -1.25 0 5 0 -1 0 -1 0 0 0 0 -1
+CONNECT axle3-22.axle1 -> beam2-11.axlehole1 LOCKED
+CONNECT axle3-22.axle1 -> beam2-12.axlehole2 LOCKED
+CONNECT axle3-21.axle1 -> beam2-12.axlehole1 LOCKED
+CONNECT axle3-22.axle2 -> beam15-5.hole5 TURNS

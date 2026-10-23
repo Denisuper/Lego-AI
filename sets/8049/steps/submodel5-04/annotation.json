@@ -1,0 +1,64 @@
+{
+  "example_id": "8049-submodel5-step-04",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam4-1",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "beam4-2",
+        "part_number": "32449",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam4-1",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam4-2",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-11's axle2 goes into beam4-1's axlehole2 (locked)",
+      "axle3-11's axle2 goes into beam4-2's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-11 carries beam4-1",
+      "axle3-11 carries beam4-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

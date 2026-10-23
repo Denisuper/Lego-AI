@@ -66,79 +66,12 @@ ADD beam5-23 32316 black
 POS beam5-23 -2.85 -7.35 -38 0.896 0 -0.444 0.444 0 0.896 0 -1 0
 ADD axle5-12 32073 lightbluishgrey
 POS axle5-12 0.05 -12.15 -37 -1 0 0 0 0.383 0.924 0 0.924 -0.383
-ADD bush-11 3713 lightbluishgrey
-POS bush-11 0.55 -12.15 -37 0 0 1 0.924 0.383 0 -0.383 0.924 0
+ADD bush-9 3713 lightbluishgrey
+POS bush-9 0.55 -12.15 -37 0 0 1 0.924 0.383 0 -0.383 0.924 0
 ADD beam-13 99773 yellow
 POS beam-13 -1.7 -14 -36.25 0 -1 0 -0.924 0 -0.383 0.383 0 -0.924
 ADD pin-247 43093 blue
 POS pin-247 -1.45 -15.85 -35.5 -1 0 0 0 0.383 0.924 0 0.924 -0.383
-ATTACH ls50dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls50dat
-ATTACH ls50dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls50dat
-ATTACH ls50dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls51dat
-ATTACH ls50dat
 CONNECT axle5-10.axle2 -> conn-46.axlehole3 LOCKED
 CONNECT axle5-10.axle4 -> conn-46.axlehole4 LOCKED
 CONNECT pin-238.pin1 -> conn-46.hole1 STIFF
@@ -179,7 +112,7 @@ CONNECT pin-240.pin3 -> beam5-22.hole1 STIFF
 CONNECT pin-244.pin3 -> beam5-22.hole5 TURNS
 CONNECT pin-240.pin1 -> beam5-23.hole1 STIFF
 CONNECT pin-244.pin1 -> beam5-23.hole5 TURNS
-CONNECT axle5-12.axle2 -> bush-11.axlehole1 LOCKED
+CONNECT axle5-12.axle2 -> bush-9.axlehole1 LOCKED
 CONNECT axle5-12.axle5 -> beam-13.axlehole1 LOCKED
 CONNECT pin-167.pin1 -> beam-13.hole2 STIFF
 CONNECT axle4-12.axle1 -> beam-13.hole3 TURNS

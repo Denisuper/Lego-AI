@@ -1,0 +1,5 @@
+ADD beam11-4 32525 black
+POS beam11-4 -2 5.15 4 0 -1 0 0 0 -1 1 0 0
+CONNECT pin-24.axle1 -> beam11-4.hole2 TURNS
+CONNECT pin-27.axle1 -> beam11-4.hole4 TURNS
+CONNECT axle3-5.axle2 -> beam11-4.hole11 TURNS

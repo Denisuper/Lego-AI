@@ -1,0 +1,3 @@
+ATTACH turntable
+CONNECT pin-52.axle1 -> beam13-1.hole4 TURNS
+CONNECT pin-59.pin2 -> beam13-1.hole13 STIFF

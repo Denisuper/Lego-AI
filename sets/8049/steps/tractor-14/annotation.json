@@ -1,0 +1,124 @@
+{
+  "example_id": "8049-tractor-step-14",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 14,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-26",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "conn-6",
+        "part_number": "32034",
+        "count": 1
+      },
+      {
+        "name": "pin-27",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "32072",
+        "count": 1
+      },
+      {
+        "name": "axle3-3",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "conn-7",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-26",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.5, y=7.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-6",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=7.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-27",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=7.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "32072",
+        "catalog_name": "Technic Knob Wheel",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=8.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-3",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=7.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-7",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=5.65, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-3's axle2 goes into conn-6's hole1 (turns)",
+      "axle3-3's axle3 goes into wheel-2's axlehole1 (locked)",
+      "axle3-3's axle1 goes into conn-7's axlehole2 (locked)",
+      "pin-26's axle1 goes into beam11-3's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "conn-6 spins on axle3-3",
+      "axle3-3 carries wheel-2",
+      "axle3-3 carries conn-7",
+      "beam11-3 spins on pin-26"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

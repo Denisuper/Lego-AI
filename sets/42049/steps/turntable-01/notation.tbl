@@ -1,0 +1,31 @@
+ADD gear60-1 18938 black
+POS gear60-1 0 0 -11 -1 0 0 0 -1 0 0 0 1
+ADD base-1 18939 lightbluishgrey
+POS base-1 0 0 -11 -1 0 0 0 -1 0 0 0 1
+ADD pin-65 6558 blue
+POS pin-65 2 -1 -12 -1 0 0 0 -1 0 0 0 1
+ADD pin-66 6558 blue
+POS pin-66 2 -1 -10 -1 0 0 0 -1 0 0 0 1
+ADD pin-67 6558 blue
+POS pin-67 -2 -1 -10 1 0 0 0 1 0 0 0 1
+ADD pin-68 6558 blue
+POS pin-68 -2 -1 -12 1 0 0 0 1 0 0 0 1
+ADD beam5-1 32316 yellow
+POS beam5-1 -1 -1 -11 0 1 0 -1 0 0 0 0 1
+ADD beam5-2 32316 yellow
+POS beam5-2 1 -1 -11 0 1 0 -1 0 0 0 0 1
+ADD pin-69 6558 blue
+POS pin-69 -1 -1 -11 -1 0 0 0 -1 0 0 0 1
+ADD beam-1 18654 darkbluishgrey
+POS beam-1 0 -1 -11 0 -1 0 1 0 0 0 0 1
+CONNECT pin-65.pin2 -> base-1.hole1 STIFF
+CONNECT pin-66.pin2 -> base-1.hole3 STIFF
+CONNECT pin-67.pin2 -> base-1.hole6 STIFF
+CONNECT pin-68.pin2 -> base-1.hole4 STIFF
+CONNECT pin-69.pin3 -> base-1.hole5 STIFF
+CONNECT pin-67.pin3 -> beam5-1.hole4 STIFF
+CONNECT pin-68.pin3 -> beam5-1.hole2 STIFF
+CONNECT pin-69.pin2 -> beam5-1.hole3 STIFF
+CONNECT pin-65.pin3 -> beam5-2.hole2 STIFF
+CONNECT pin-66.pin3 -> beam5-2.hole4 STIFF
+CONNECT pin-69.pin1 -> beam-1.hole1 STIFF

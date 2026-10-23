@@ -1,0 +1,6 @@
+ADD conn-34 32034 black
+POS conn-34 -2.25 0 1.5 0 0 1 0 1 0 -1 0 0
+ADD bush-15 32123b lightbluishgrey
+POS bush-15 -2.25 0 0.75 -1 0 0 0 1 0 0 0 -1
+CONNECT axle4-9.axle2 -> conn-34.hole1 TURNS
+CONNECT axle4-9.axle3 -> bush-15.axlehole1 LOCKED

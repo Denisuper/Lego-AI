@@ -1,0 +1,10 @@
+ADD beam5-11 32316 darkbluishgrey
+POS beam5-11 -2 0 -8 0 1 0 -1 0 0 0 0 1
+ADD pin-116 2780 black
+POS pin-116 -1.5 0 -9 -1 0 0 0 -1 0 0 0 1
+ADD pin-117 2780 black
+POS pin-117 -1.5 0 -10 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-116.pin2 -> beam5-11.hole2 STIFF
+CONNECT pin-117.pin2 -> beam5-11.hole1 STIFF
+CONNECT pin-113.pin2 -> beam5-11.hole5 STIFF
+CONNECT pin-114.pin2 -> beam5-11.hole4 STIFF

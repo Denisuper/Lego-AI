@@ -2,12 +2,6 @@ ADD beam-10 11953 black
 POS beam-10 2.95 -5.1 -37 0 0.458 -0.889 0 0.889 0.458 1 0 0
 ADD beam-11 11953 black
 POS beam-11 -2.85 -5.1 -37 0 -0.458 0.889 0 0.889 0.458 -1 0 0
-ADD c-1 92693c01 lightbluishgrey
-POS c-1 0.05 -12.15 -37 1 0 0 0 0 1 0 -1 0
-ADD part-18 92695 orange
-POS part-18 0.05 -10.65 -37 0 -1 0 0 0 1 -1 0 0
-ADD part-19 92696 darkbluishgrey
-POS part-19 0.05 -4.15 -37 0 -1 0 0 0 1 -1 0 0
 ADD gear12-14 6589 tan
 POS gear12-14 0.05 -10.8 -37 -1 0 0 0 0 -1 0 -1 0
 ADD pin-233 6558 blue

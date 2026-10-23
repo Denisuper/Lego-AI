@@ -1,0 +1,6 @@
+ADD beam11-13 32009 red
+POS beam11-13 -0.75 1 -4 0 1 0 0 0 1 1 0 0
+ADD axle3-20 4519 lightbluishgrey
+POS axle3-20 0.25 -7 -4 1 0 0 0 1 0 0 0 1
+CONNECT axle3-20.axle1 -> beam11-13.axlehole1 LOCKED
+CONNECT axle3-17.axle1 -> beam11-13.axlehole2 LOCKED

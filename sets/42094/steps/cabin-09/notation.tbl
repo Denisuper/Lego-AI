@@ -1,0 +1,20 @@
+ADD pin-138 15100 black
+POS pin-138 -1.5 -5.9 5.45 1 0 0 0 -0.96 0.28 0 -0.28 -0.96
+ADD pin-139 15100 black
+POS pin-139 -1.5 -4.95 5.7 1 0 0 0 -0.96 0.28 0 -0.28 -0.96
+ADD pin-140 11214 red
+POS pin-140 -1.5 -5.9 5.45 0 0 -1 -0.96 -0.28 0 -0.28 0.96 0
+ADD pin-141 15100 black
+POS pin-141 6.5 -4.95 5.7 -1 0 0 0 -0.96 -0.28 0 -0.28 0.96
+ADD pin-142 15100 black
+POS pin-142 6.5 -5.9 5.45 -1 0 0 0 -0.96 -0.28 0 -0.28 0.96
+ADD pin-143 11214 red
+POS pin-143 6.5 -5.9 5.45 0 0 -1 -0.96 -0.28 0 -0.28 0.96 0
+CONNECT pin-140.pin1 -> pin-138.hole1 STIFF
+CONNECT pin-140.axle1 -> pin-139.hole1 TURNS
+CONNECT pin-143.axle1 -> pin-141.hole1 TURNS
+CONNECT pin-143.pin1 -> pin-142.hole1 STIFF
+CONNECT pin-138.pin1 -> beam9-8.hole3 STIFF
+CONNECT pin-139.pin1 -> beam9-8.hole4 STIFF
+CONNECT pin-141.pin1 -> beam9-10.hole4 STIFF
+CONNECT pin-142.pin1 -> beam9-10.hole3 STIFF

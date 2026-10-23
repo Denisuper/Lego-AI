@@ -1,0 +1,64 @@
+{
+  "example_id": "8049-grabber-step-02",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-55",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-55",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "catalog_name": "Technic Worm Gear",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-2's axle5 goes into conn-55's hole1 (turns)",
+      "axle6-2's axle3 goes into worm-1's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "conn-55 spins on axle6-2",
+      "axle6-2 carries worm-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

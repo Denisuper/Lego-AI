@@ -7,17 +7,17 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-34",
+        "name": "pin-42",
         "part_number": "43093",
         "count": 1
       },
       {
-        "name": "pin-35",
+        "name": "pin-43",
         "part_number": "43093",
         "count": 1
       },
       {
-        "name": "conn-25",
+        "name": "conn-20",
         "part_number": "26287",
         "count": 1
       }
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-34",
+        "name": "pin-42",
         "part_number": "43093",
         "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
         "color": "Blue",
@@ -36,7 +36,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-35",
+        "name": "pin-43",
         "part_number": "43093",
         "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
         "color": "Blue",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-25",
+        "name": "conn-20",
         "part_number": "26287",
         "catalog_name": "Technic Driving Ring Connector Smooth [4 rounded side walls]",
         "color": "Black",
@@ -55,14 +55,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-7's pin2 goes into conn-6's hole1 (stiff)",
-      "pin-35's axle1 goes into conn-24's hole1 (turns)",
-      "pin-34's axle1 goes into conn-24's hole1 (turns)"
+      "pin-12's pin2 goes into pin-40's hole1 (stiff)",
+      "pin-43's axle1 goes into conn-19's hole1 (turns)",
+      "pin-42's axle1 goes into conn-19's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "conn-6 holds pin-7",
-      "conn-24 spins on pin-35",
-      "conn-24 spins on pin-34"
+      "pin-40 holds pin-12",
+      "conn-19 spins on pin-43",
+      "conn-19 spins on pin-42"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -7,17 +7,17 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-8",
+        "name": "conn-4",
         "part_number": "42003",
         "count": 1
       },
       {
-        "name": "pin-20",
+        "name": "pin-27",
         "part_number": "2780",
         "count": 1
       },
       {
-        "name": "pin-21",
+        "name": "pin-28",
         "part_number": "2780",
         "count": 1
       },
@@ -37,7 +37,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-8",
+        "name": "conn-4",
         "part_number": "42003",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
         "color": "Red",
@@ -46,7 +46,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-20",
+        "name": "pin-27",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -55,7 +55,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-21",
+        "name": "pin-28",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -83,17 +83,17 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-20's pin2 goes into conn-8's hole1 (stiff)",
-      "pin-21's pin2 goes into conn-8's hole2 (stiff)",
-      "pin-20's pin1 goes into panel-2's hole1 (stiff)",
-      "pin-21's pin1 goes into panel-2's hole2 (stiff)",
+      "pin-27's pin2 goes into conn-4's hole1 (stiff)",
+      "pin-28's pin2 goes into conn-4's hole2 (stiff)",
+      "pin-27's pin1 goes into panel-2's hole1 (stiff)",
+      "pin-28's pin1 goes into panel-2's hole2 (stiff)",
       "axle3-2's axle3 goes into panel-2's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "conn-8 holds pin-20",
-      "conn-8 holds pin-21",
-      "panel-2 holds pin-20",
-      "panel-2 holds pin-21",
+      "conn-4 holds pin-27",
+      "conn-4 holds pin-28",
+      "panel-2 holds pin-27",
+      "panel-2 holds pin-28",
       "axle3-2 carries panel-2"
     ],
     "where_everything_is_after": [

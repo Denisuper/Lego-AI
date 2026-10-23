@@ -7,11 +7,6 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "part-13",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "pin-152",
         "part_number": "32054",
         "count": 1
@@ -31,15 +26,6 @@
   },
   "answer": {
     "new_parts": [
-      {
-        "name": "part-13",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0.05, y=-24.35, z=-15.85 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
       {
         "name": "pin-152",
         "part_number": "32054",

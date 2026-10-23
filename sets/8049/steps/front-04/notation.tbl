@@ -1,0 +1,11 @@
+ADD beam2x4-3 32140 black
+POS beam2x4-3 0 -6.45 3.2 0 -1 0 0.866 0 -0.5 0.5 0 0.866
+ADD beam2-2 60483 black
+POS beam2-2 0 -4.45 -0.25 0 1 0 -0.866 0 -0.5 -0.5 0 0.866
+ADD axle5-2 32073 lightbluishgrey
+POS axle5-2 0 -4.45 -0.25 -1 0 0 0 0.866 0.5 0 0.5 -0.866
+CONNECT axle5-1.axle3 -> beam2x4-3.hole2 TURNS
+CONNECT pin-45.pin1 -> beam2x4-3.hole1 STIFF
+CONNECT axle5-2.axle3 -> beam2-2.axlehole1 LOCKED
+CONNECT pin-44.pin2 -> beam2-2.hole1 STIFF
+CONNECT axle5-2.axle4 -> beam11-5.hole6 TURNS

@@ -1,0 +1,68 @@
+{
+  "example_id": "8049-pneumaticspa-step-10",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 10,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-9",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "axle4-11",
+        "part_number": "87083",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-9",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-11",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=1.4, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-98's pin1 goes into beam5-9's hole1 (stiff)",
+      "pin-99's pin2 goes into beam5-9's hole3 (stiff)",
+      "pin-103's pin2 goes into beam5-9's hole5 (stiff)",
+      "axle4-11's axle4 goes into conn-45's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-9 holds pin-98",
+      "beam5-9 holds pin-99",
+      "beam5-9 holds pin-103",
+      "axle4-11 carries conn-45"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

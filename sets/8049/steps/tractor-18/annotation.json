@@ -1,0 +1,90 @@
+{
+  "example_id": "8049-tractor-step-18",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 18,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axlehole-1",
+        "part_number": "4032a",
+        "count": 1
+      },
+      {
+        "name": "reinforc-1",
+        "part_number": "3941",
+        "count": 1
+      },
+      {
+        "name": "a-1",
+        "part_number": "2654",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axlehole-1",
+        "part_number": "4032a",
+        "catalog_name": "Plate  2 x  2 Round with Axlehole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-1.05, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "reinforc-1",
+        "part_number": "3941",
+        "catalog_name": "Brick  2 x  2 Round without Reinforcement",
+        "color": "Trans Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-1.45, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "a-1",
+        "part_number": "2654",
+        "catalog_name": "Moved to 2654a",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-2.65, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "reinforc-1's pin1 goes into axlehole-1's hole1 (stiff)",
+      "reinforc-1's pin2 goes into axlehole-1's hole2 (stiff)",
+      "reinforc-1's pin3 goes into axlehole-1's hole4 (stiff)",
+      "reinforc-1's pin4 goes into axlehole-1's hole5 (stiff)",
+      "axle8-1's axle2 goes into axlehole-1's axlehole1 (locked)",
+      "a-1's pin1 goes into reinforc-1's hole1 (stiff)",
+      "a-1's pin2 goes into reinforc-1's hole2 (stiff)",
+      "a-1's pin3 goes into reinforc-1's hole5 (stiff)",
+      "a-1's pin4 goes into reinforc-1's hole6 (stiff)",
+      "axle8-1's axle1 goes into reinforc-1's axlehole1 (locked)",
+      "axle8-1's axle1 goes into reinforc-1's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axlehole-1 holds reinforc-1",
+      "axle8-1 carries axlehole-1",
+      "reinforc-1 holds a-1",
+      "axle8-1 carries reinforc-1",
+      "reinforc-1 spins on axle8-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

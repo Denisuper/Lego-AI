@@ -37,21 +37,6 @@
         "count": 1
       },
       {
-        "name": "bush-9",
-        "part_number": "47157",
-        "count": 1
-      },
-      {
-        "name": "assembly-1",
-        "part_number": "62271c01",
-        "count": 1
-      },
-      {
-        "name": "assembly-2",
-        "part_number": "62274c01",
-        "count": 1
-      },
-      {
         "name": "axle3-5",
         "part_number": "4519",
         "count": 1
@@ -146,33 +131,6 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-9",
-        "part_number": "47157",
-        "catalog_name": "Electric Technic Motor 9V Geared (480 RPM) Axle Bush",
-        "color": "Orange",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0, y=-8.25, z=-12.1 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "assembly-1",
-        "part_number": "62271c01",
-        "catalog_name": "Technic Linear Actuator  8 x  2 x  2 Body Assembly",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0, y=-8.25, z=-12.1 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "assembly-2",
-        "part_number": "62274c01",
-        "catalog_name": "Technic Linear Actuator  8 x  2 x  2 Piston Assembly",
-        "color": "Dark Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=0, y=-18.05, z=-16.85 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "axle3-5",
         "part_number": "4519",
         "catalog_name": "Technic Axle 3",
@@ -245,9 +203,6 @@
       "pin-123's pin2 goes into panel-2's hole9 (stiff)",
       "pin-117's pin3 goes into panel-2's hole8 (stiff)",
       "pin-119's pin1 goes into panel-2's hole3 (stiff)",
-      "axle3-5's axle3 goes into bush-9's axlehole1 (locked)",
-      "axle2-7's axle1 goes into assembly-1's hole1 (turns)",
-      "axle2-8's axle1 goes into assembly-1's axlehole1 (locked)",
       "axle3-5's axle2 goes into conn-21's hole5 (turns)",
       "axle2-7's axle1 goes into conn-21's axlehole1 (locked)",
       "axle2-7's axle2 goes into conn-21's axlehole2 (locked)",
@@ -268,9 +223,6 @@
       "panel-2 holds pin-123",
       "panel-2 holds pin-117",
       "panel-2 holds pin-119",
-      "axle3-5 carries bush-9",
-      "assembly-1 spins on axle2-7",
-      "axle2-8 carries assembly-1",
       "conn-21 spins on axle3-5",
       "axle2-7 carries conn-21",
       "axle3-5 carries gear12-8",

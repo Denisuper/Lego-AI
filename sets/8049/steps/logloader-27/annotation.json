@@ -1,0 +1,82 @@
+{
+  "example_id": "8049-logloader-step-27",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 27,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-12",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "bush-17",
+        "part_number": "32123b",
+        "count": 1
+      },
+      {
+        "name": "bush-18",
+        "part_number": "32123b",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-12",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6, y=-14.4, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-17",
+        "part_number": "32123b",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.75, y=-16.4, z=-7.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-18",
+        "part_number": "32123b",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.75, y=-16.4, z=-7.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-104's pin2 goes into beam5-12's hole1 (stiff)",
+      "pin-121's pin1 goes into beam5-12's hole5 (stiff)",
+      "axle5-6's axle2 goes into bush-17's axlehole1 (locked)",
+      "axle5-5's axle4 goes into bush-18's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-12 holds pin-104",
+      "beam5-12 holds pin-121",
+      "axle5-6 carries bush-17",
+      "axle5-5 carries bush-18"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

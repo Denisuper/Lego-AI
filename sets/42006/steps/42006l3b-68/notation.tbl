@@ -14,8 +14,6 @@ ADD axle3-9 4519 lightbluishgrey
 POS axle3-9 0.05 -26.9 -17.25 0 0 -1 0.307 0.952 0 0.952 -0.307 0
 ADD axle5-6 32073 lightbluishgrey
 POS axle5-6 0.05 -23.4 -11.95 -1 0 0 0 0.971 -0.239 0 -0.239 -0.971
-ADD part-14 6590 lightbluishgrey
-POS part-14 0.05 -23.4 -11.95 0 0 1 -0.239 0.971 0 -0.971 -0.239 0
 ADD beam13-2 41239 yellow
 POS beam13-2 -0.95 -18.75 -10.05 0 -1 0 0.382 0 0.924 -0.924 0 0.382
 ADD pin-158 87082 lightbluishgrey
@@ -84,5 +82,4 @@ CONNECT cranksha-4.axle2 -> beam3x3-2.axlehole1 LOCKED
 CONNECT cranksha-4.axle1 -> beam3x5-15.axlehole1 LOCKED
 CONNECT axle5-6.axle5 -> beam3x5-18.axlehole3 LOCKED
 CONNECT axle5-6.axle5 -> beam5-8.hole1 TURNS
-CONNECT axle3-9.axle1 -> bush-10.axlehole1 LOCKED
 CONNECT axle3-9.axle2 -> conn-26.hole5 TURNS

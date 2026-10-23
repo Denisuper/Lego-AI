@@ -1,0 +1,6 @@
+ADD conn-56 6536 darkbluishgrey
+POS conn-56 -2.5 -1 0 0 0 1 0 1 0 -1 0 0
+ADD axle2-8 32062 red
+POS axle2-8 -2.5 -1 0 0 0 1 0 1 0 -1 0 0
+CONNECT axle2-8.axle1 -> conn-56.axlehole1 LOCKED
+CONNECT axle6-2.axle1 -> conn-56.hole1 TURNS

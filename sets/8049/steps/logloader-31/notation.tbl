@@ -1,0 +1,38 @@
+ADD conn-50 32291 darkbluishgrey
+POS conn-50 -1.5 -16.4 -7.5 -1 0 0 0 0 1 0 1 0
+ADD conn-51 32291 darkbluishgrey
+POS conn-51 7.5 -16.4 -7.5 -1 0 0 0 0 1 0 1 0
+ADD pin-128 4274 lightbluishgrey
+POS pin-128 -2 -16.9 -6.5 0 0 -1 -1 0 0 0 1 0
+ADD pin-129 4274 lightbluishgrey
+POS pin-129 -1 -16.9 -6.5 0 0 -1 -1 0 0 0 1 0
+ADD pin-130 4274 lightbluishgrey
+POS pin-130 8 -16.9 -6.5 0 0 -1 -1 0 0 0 1 0
+ADD pin-131 4274 lightbluishgrey
+POS pin-131 7 -16.9 -6.5 0 0 -1 -1 0 0 0 1 0
+ADD b-2 3023 black
+POS b-2 -1.5 -17.3 -6.5 1 0 0 0 1 0 0 0 1
+ADD b-3 3023 black
+POS b-3 7.5 -17.3 -6.5 1 0 0 0 1 0 0 0 1
+ADD clip-1 2555 black
+POS clip-1 -2 -17.7 -6.5 0 0 1 0 1 0 -1 0 0
+ADD clip-2 2555 black
+POS clip-2 -1 -17.7 -6.5 0 0 1 0 1 0 -1 0 0
+ADD clip-3 2555 black
+POS clip-3 8 -17.7 -6.5 0 0 1 0 1 0 -1 0 0
+ADD clip-4 2555 black
+POS clip-4 7 -17.7 -6.5 0 0 1 0 1 0 -1 0 0
+CONNECT pin-128.pin1 -> conn-50.hole2 TURNS
+CONNECT pin-129.pin1 -> conn-50.hole1 TURNS
+CONNECT axle5-5.axle4 -> conn-50.axlehole1 LOCKED
+CONNECT pin-130.pin1 -> conn-51.hole1 TURNS
+CONNECT pin-131.pin1 -> conn-51.hole2 TURNS
+CONNECT axle5-6.axle1 -> conn-51.axlehole1 LOCKED
+CONNECT pin-128.pin2 -> b-2.hole1 TURNS
+CONNECT pin-129.pin2 -> b-2.hole2 TURNS
+CONNECT pin-130.pin2 -> b-3.hole2 TURNS
+CONNECT pin-131.pin2 -> b-3.hole1 TURNS
+CONNECT b-2.pin1 -> clip-1.hole1 STIFF
+CONNECT b-2.pin2 -> clip-2.hole1 STIFF
+CONNECT b-3.pin2 -> clip-3.hole1 STIFF
+CONNECT b-3.pin1 -> clip-4.hole1 STIFF

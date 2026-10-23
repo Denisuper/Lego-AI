@@ -1,0 +1,25 @@
+ADD beam2-8 60483 black
+POS beam2-8 0.75 0 0 0 1 0 0 0 1 1 0 0
+ADD pin-59 2780 black
+POS pin-59 0.25 1 0 1 0 0 0 0 1 0 -1 0
+ADD pin-60 32002 tan
+POS pin-60 0.25 0 -3 -1 0 0 0 0 -1 0 -1 0
+ADD beam2x4-7 32140 black
+POS beam2x4-7 0.75 3 -3 0 1 0 0 0 -1 -1 0 0
+ADD pin-61 32054 lightbluishgrey
+POS pin-61 0.75 1 -3 -1 0 0 0 0 -1 0 -1 0
+ADD axle3-16 4519 lightbluishgrey
+POS axle3-16 2.75 1 -3 -1 0 0 0 0 -1 0 -1 0
+ADD beam2-9 60483 black
+POS beam2-9 2.75 1 -3 0 1 0 0 0 -1 -1 0 0
+ADD pin-62 32002 tan
+POS pin-62 3.25 0 -3 1 0 0 0 0 1 0 -1 0
+CONNECT pin-59.pin2 -> beam2-8.hole1 STIFF
+CONNECT axle4-4.axle3 -> beam2-8.axlehole1 LOCKED
+CONNECT pin-60.pin1 -> beam2x4-7.hole3 STIFF
+CONNECT pin-61.pin1 -> beam2x4-7.hole2 STIFF
+CONNECT axle4-5.axle3 -> beam2x4-7.hole4 TURNS
+CONNECT axle3-16.axle3 -> pin-61.axlehole1 LOCKED
+CONNECT axle3-16.axle2 -> beam2-9.axlehole1 LOCKED
+CONNECT pin-62.pin1 -> beam2-9.hole1 STIFF
+CONNECT pin-60.pin2 -> beam5x7-1.hole3 STIFF

@@ -1,0 +1,182 @@
+{
+  "example_id": "42094-trackstructu-step-05",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-21",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "beam9-22",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-215",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-216",
+        "part_number": "11214",
+        "count": 1
+      },
+      {
+        "name": "beam-23",
+        "part_number": "18654",
+        "count": 1
+      },
+      {
+        "name": "beam-24",
+        "part_number": "18654",
+        "count": 1
+      },
+      {
+        "name": "pin-217",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "axle4-12",
+        "part_number": "99008",
+        "count": 1
+      },
+      {
+        "name": "beam9-23",
+        "part_number": "40490",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-21",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-22",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-1, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-215",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-216",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-23",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-24",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-217",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-12",
+        "part_number": "99008",
+        "catalog_name": "Technic Axle 4 with Centre Stop",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-23",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-3.2, z=0.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-215's pin2 goes into beam9-21's hole5 (stiff)",
+      "pin-217's pin2 goes into beam9-21's hole6 (stiff)",
+      "axle5-9's axle5 goes into beam9-21's hole8 (turns)",
+      "axle5-11's axle5 goes into beam9-21's hole4 (turns)",
+      "pin-212's pin1 goes into beam9-21's hole9 (stiff)",
+      "axle5-10's axle5 goes into beam9-22's hole2 (turns)",
+      "axle5-12's axle5 goes into beam9-22's hole6 (turns)",
+      "pin-211's pin1 goes into beam9-22's hole1 (stiff)",
+      "pin-215's pin1 goes into beam-23's hole1 (stiff)",
+      "pin-216's pin1 goes into beam-24's hole1 (stiff)",
+      "axle4-12's axle3 goes into pin-217's axlehole1 (locked)",
+      "pin-217's pin1 goes into beam9-23's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-21 holds pin-215",
+      "beam9-21 holds pin-217",
+      "beam9-21 spins on axle5-9",
+      "beam9-21 spins on axle5-11",
+      "beam9-21 holds pin-212",
+      "beam9-22 spins on axle5-10",
+      "beam9-22 spins on axle5-12",
+      "beam9-22 holds pin-211",
+      "beam-23 holds pin-215",
+      "beam-24 holds pin-216",
+      "axle4-12 carries pin-217",
+      "beam9-23 holds pin-217"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,4 @@
+ATTACH chassis5
+CONNECT axle9-2.axle9 -> beam4-3.axlehole1 LOCKED
+CONNECT axle9-2.axle9 -> beam4-4.axlehole1 LOCKED
+CONNECT axle6-1.axle3 -> beam3x5-2.hole8 TURNS

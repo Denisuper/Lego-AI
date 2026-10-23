@@ -1,11 +1,11 @@
 STEP 22
-ADD pin-34 43093 blue
-POS pin-34 -1.5 -9.9 -1.95 1 0 0 0 0.391 -0.921 0 0.921 0.391
-ADD pin-35 43093 blue
-POS pin-35 1.5 -9.9 -1.95 -1 0 0 0 -0.391 -0.921 0 -0.921 0.391
-ADD conn-25 26287 black
-POS conn-25 0 -9.9 -1.95 0 0 -1 -0.921 0.391 0 0.391 0.921 0
+ADD pin-42 43093 blue
+POS pin-42 -1.5 -9.9 -1.95 1 0 0 0 0.391 -0.921 0 0.921 0.391
+ADD pin-43 43093 blue
+POS pin-43 1.5 -9.9 -1.95 -1 0 0 0 -0.391 -0.921 0 -0.921 0.391
+ADD conn-20 26287 black
+POS conn-20 0 -9.9 -1.95 0 0 -1 -0.921 0.391 0 0.391 0.921 0
 ATTACH frame1
-CONNECT pin-7.pin2 -> conn-6.hole1 STIFF
-CONNECT pin-35.axle1 -> conn-24.hole1 TURNS
-CONNECT pin-34.axle1 -> conn-24.hole1 TURNS
+CONNECT pin-12.pin2 -> pin-40.hole1 STIFF
+CONNECT pin-43.axle1 -> conn-19.hole1 TURNS
+CONNECT pin-42.axle1 -> conn-19.hole1 TURNS

@@ -42,18 +42,8 @@
         "count": 1
       },
       {
-        "name": "part-7",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "axle3-3",
         "part_number": "4519",
-        "count": 1
-      },
-      {
-        "name": "part-8",
-        "part_number": "6590",
         "count": 1
       },
       {
@@ -82,18 +72,8 @@
         "count": 1
       },
       {
-        "name": "part-9",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "conn-19",
         "part_number": "32014",
-        "count": 1
-      },
-      {
-        "name": "part-10",
-        "part_number": "6590",
         "count": 1
       },
       {
@@ -170,27 +150,9 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "part-7",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-2.95, y=-8, z=7.5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "axle3-3",
         "part_number": "4519",
         "catalog_name": "Technic Axle 3",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-2.95, y=-8, z=5.5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-8",
-        "part_number": "6590",
-        "catalog_name": "6590",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-2.95, y=-8, z=5.5 holes (exact, from the 3D model)",
@@ -242,30 +204,12 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "part-9",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Red",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-4.95, y=-11, z=6.5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "conn-19",
         "part_number": "32014",
         "catalog_name": "Technic Axle and Pin Connector Angled #6 - 90\u00b0",
         "color": "Black",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-2.95, y=-11, z=1.5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-10",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Red",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-4.95, y=-11, z=1.5 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       },
       {

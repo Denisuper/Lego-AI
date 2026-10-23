@@ -57,21 +57,6 @@
         "count": 1
       },
       {
-        "name": "part-2",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
-        "name": "part-3",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
-        "name": "part-4",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "conn-10",
         "part_number": "59443",
         "count": 1
@@ -99,11 +84,6 @@
       {
         "name": "axle3-1",
         "part_number": "4519",
-        "count": 1
-      },
-      {
-        "name": "part-5",
-        "part_number": "6590",
         "count": 1
       }
     ],
@@ -202,33 +182,6 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "part-2",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-1, y=-10, z=1 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-3",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-1, y=-10, z=0 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-4",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-1, y=-10, z=-1 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "conn-10",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
@@ -280,15 +233,6 @@
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=1, y=-10, z=-5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-5",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-1, y=-10, z=-4 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       }
     ],

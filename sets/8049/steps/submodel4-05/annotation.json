@@ -1,0 +1,80 @@
+{
+  "example_id": "8049-submodel4-step-05",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-11",
+        "part_number": "32123b",
+        "count": 1
+      },
+      {
+        "name": "pin-58",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "pin-59",
+        "part_number": "62462",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-11",
+        "part_number": "32123b",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.25, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-58",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-59",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle12-1's axle9 goes into bush-11's axlehole1 (locked)",
+      "axle12-1's axle5 goes into pin-58's hole1 (turns)",
+      "axle12-1's axle7 goes into pin-59's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle12-1 carries bush-11",
+      "pin-58 spins on axle12-1",
+      "pin-59 spins on axle12-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

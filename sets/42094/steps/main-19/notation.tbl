@@ -1,0 +1,9 @@
+STEP 19
+ATTACH mudguard1
+ATTACH mudguard2
+CONNECT pin-181.pin2 -> pin-69.hole1 STIFF
+CONNECT pin-180.pin2 -> pin-70.hole1 STIFF
+CONNECT pin-174.pin1 -> pin-82.hole1 STIFF
+CONNECT pin-173.pin1 -> pin-83.hole1 STIFF
+CONNECT pin-179.pin2 -> pin-94.hole1 STIFF
+CONNECT pin-172.pin1 -> pin-97.hole1 STIFF

@@ -1,0 +1,78 @@
+{
+  "example_id": "42094-step-13",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 13,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-10",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "gear12-10",
+        "part_number": "32270",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-10",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-10.25, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-10",
+        "part_number": "32270",
+        "catalog_name": "Technic Gear 12 Tooth Double Bevel",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=-10.25, z=10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-1's axle5 goes into bush-10's axlehole1 (locked)",
+      "axle6-1's axle6 goes into gear12-10's axlehole1 (locked)",
+      "pin-11's pin1 goes into panel-1's hole5 (stiff)",
+      "pin-26's pin1 goes into pin-65's hole1 (stiff)",
+      "axle6-1's axle4 goes into pin-68's hole1 (turns)",
+      "pin-64's pin1 goes into pin-69's hole3 (stiff)",
+      "pin-63's pin1 goes into pin-71's hole1 (stiff)",
+      "axle9-3's axle9 goes into conn-31's axlehole1 (locked)",
+      "pin-56's axle1 goes into panel-2's hole5 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-1 carries bush-10",
+      "axle6-1 carries gear12-10",
+      "panel-1 holds pin-11",
+      "pin-65 holds pin-26",
+      "pin-68 spins on axle6-1",
+      "pin-69 holds pin-64",
+      "pin-71 holds pin-63",
+      "axle9-3 carries conn-31",
+      "panel-2 spins on pin-56"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

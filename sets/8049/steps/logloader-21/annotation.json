@@ -1,0 +1,44 @@
+{
+  "example_id": "8049-logloader-step-21",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 21,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-8",
+        "part_number": "4697b",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-8",
+        "part_number": "4697b",
+        "catalog_name": "Technic Pneumatic T-Piece - Type 2",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.7, y=-14.15, z=-5.8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

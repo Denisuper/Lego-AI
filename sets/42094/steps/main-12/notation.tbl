@@ -1,0 +1,22 @@
+STEP 12
+ADD axle4-2 99008 tan
+POS axle4-2 0 -14.75 6 0 -1 0 1 0 0 0 0 1
+ADD axle4-3 99008 tan
+POS axle4-3 0 -14.75 3 0 -1 0 1 0 0 0 0 1
+ADD bush-3 32123b yellow
+POS bush-3 0 -15 3 -1 0 0 0 0 1 0 1 0
+ADD bush-4 32123b yellow
+POS bush-4 0 -15 6 -1 0 0 0 0 1 0 1 0
+ADD gear12-7 32270 black
+POS gear12-7 0 -15.75 6 -1 0 0 0 0 1 0 1 0
+ADD gear12-8 32270 black
+POS gear12-8 0 -15.75 3 -1 0 0 0 0 1 0 1 0
+ATTACH chassis3
+CONNECT axle4-2.axle1 -> gear12-7.axlehole1 LOCKED
+CONNECT axle4-3.axle1 -> gear12-8.axlehole1 LOCKED
+CONNECT axle4-2.axle2 -> conn-24.hole1 TURNS
+CONNECT axle4-3.axle2 -> conn-25.hole1 TURNS
+CONNECT axle4-2.axle3 -> conn-7.axlehole2 LOCKED
+CONNECT axle4-3.axle3 -> conn-8.axlehole2 LOCKED
+MESH gear16-2.teeth gear16-1.teeth
+RATIO gear16-2 gear16-1 16/16

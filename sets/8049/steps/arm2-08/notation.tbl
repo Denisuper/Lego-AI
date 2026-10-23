@@ -1,0 +1,12 @@
+ADD beam7-3 32524 red
+POS beam7-3 -1 0 20 0 -1 0 0 0 -1 1 0 0
+ADD pin-146 6558 blue
+POS pin-146 0 2 20 1 0 0 0 -1 0 0 0 -1
+ADD pin-147 6558 blue
+POS pin-147 0 3 20 1 0 0 0 -1 0 0 0 -1
+ADD pin-148 32556 tan
+POS pin-148 0 -3 20 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-146.pin1 -> beam7-3.hole2 STIFF
+CONNECT pin-147.pin1 -> beam7-3.hole1 STIFF
+CONNECT pin-148.pin3 -> beam7-3.hole7 TURNS
+CONNECT pin-145.pin3 -> beam7-3.hole4 TURNS

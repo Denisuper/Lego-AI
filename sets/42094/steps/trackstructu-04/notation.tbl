@@ -1,0 +1,36 @@
+ADD pin-211 2780 black
+POS pin-211 -1.5 -1 -1 1 0 0 0 0 1 0 -1 0
+ADD pin-212 2780 black
+POS pin-212 -1.5 -1 1 1 0 0 0 0 1 0 -1 0
+ADD pin-213 2780 black
+POS pin-213 1.5 -1 -1 1 0 0 0 0 1 0 -1 0
+ADD pin-214 2780 black
+POS pin-214 1.5 -1 1 1 0 0 0 0 1 0 -1 0
+ADD wheel-1 42610 lightbluishgrey
+POS wheel-1 2 1 -6 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-2 42610 lightbluishgrey
+POS wheel-2 2 1 -2 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-3 42610 lightbluishgrey
+POS wheel-3 2 1 2 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-4 42610 lightbluishgrey
+POS wheel-4 2 1 6 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-5 42610 lightbluishgrey
+POS wheel-5 -2 1 6 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-6 42610 lightbluishgrey
+POS wheel-6 -2 1 2 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-7 42610 lightbluishgrey
+POS wheel-7 -2 1 -2 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-8 42610 lightbluishgrey
+POS wheel-8 -2 1 -6 0 0 -1 0 -1 0 -1 0 0
+CONNECT beam3x0-7.pin1 -> wheel-1.hole1 STIFF
+CONNECT beam3x0-8.pin1 -> wheel-2.hole1 STIFF
+CONNECT beam3x0-9.pin1 -> wheel-3.hole1 STIFF
+CONNECT beam3x0-10.pin1 -> wheel-4.hole1 STIFF
+CONNECT beam3x0-5.pin1 -> wheel-5.hole1 STIFF
+CONNECT beam3x0-3.pin1 -> wheel-6.hole1 STIFF
+CONNECT beam3x0-4.pin1 -> wheel-7.hole1 STIFF
+CONNECT beam3x0-6.pin1 -> wheel-8.hole1 STIFF
+CONNECT pin-213.pin1 -> conn-85.hole2 STIFF
+CONNECT pin-214.pin1 -> conn-86.hole2 STIFF
+CONNECT pin-211.pin2 -> conn-87.hole2 STIFF
+CONNECT pin-212.pin2 -> conn-88.hole2 STIFF

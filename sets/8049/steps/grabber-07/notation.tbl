@@ -1,0 +1,5 @@
+ADD beam-2 2905 black
+POS beam-2 -0.5 -1 -0.75 -1 0 0 0 0 -1 0 -1 0
+CONNECT axle2-7.axle2 -> beam-2.axlehole1 LOCKED
+CONNECT axle2-8.axle2 -> beam-2.axlehole2 LOCKED
+CONNECT axle6-3.axle3 -> beam-2.hole1 TURNS

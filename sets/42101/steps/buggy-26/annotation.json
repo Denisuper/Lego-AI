@@ -19,15 +19,20 @@
       {
         "name": "steeringwheel-1",
         "part_number": "16091",
-        "catalog_name": "Steering Wheel Small, 2 x 2 [Reinforced]",
+        "catalog_name": "Car Steering Wheel 2L Reinforced",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=0, y=-2.1, z=-0.25 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       }
     ],
-    "what_each_new_part_touches": [],
-    "who_does_what_to_which": [],
+    "what_each_new_part_touches": [
+      "pin-3's pin2 goes into steeringwheel-1's hole1 (turns)",
+      "pin-3's pin2 goes into steeringwheel-1's hole2 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-3 spins on steeringwheel-1"
+    ],
     "where_everything_is_after": [
       "TO WRITE"
     ],

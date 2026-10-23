@@ -1,0 +1,68 @@
+{
+  "example_id": "8049-pneumaticspa-step-02",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "af-1",
+        "part_number": "47223a",
+        "count": 1
+      },
+      {
+        "name": "af-2",
+        "part_number": "47223a",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "af-1",
+        "part_number": "47223a",
+        "catalog_name": "Moved to 47223a-f1",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "af-2",
+        "part_number": "47223a",
+        "catalog_name": "Moved to 47223a-f1",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-7's axle4 goes into af-1's hole2 (turns)",
+      "axle5-8's axle4 goes into af-1's hole1 (turns)",
+      "axle5-7's axle2 goes into af-2's hole1 (turns)",
+      "axle5-8's axle2 goes into af-2's hole2 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "af-1 spins on axle5-7",
+      "af-1 spins on axle5-8",
+      "af-2 spins on axle5-7",
+      "af-2 spins on axle5-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,96 @@
+{
+  "example_id": "42094-door2-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-157",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "conn-58",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "axle4-5",
+        "part_number": "99008",
+        "count": 1
+      },
+      {
+        "name": "beam-17",
+        "part_number": "18654",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-157",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-1.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-58",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1, z=-0.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-5",
+        "part_number": "99008",
+        "catalog_name": "Technic Axle 4 with Centre Stop",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-17",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1, z=-0.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-157's pin1 goes into conn-58's hole2 (stiff)",
+      "axle4-5's axle1 goes into conn-58's axlehole1 (locked)",
+      "axle4-5's axle1 goes into beam-17's hole1 (turns)",
+      "pin-157's pin2 goes into beam9-12's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-58 holds pin-157",
+      "axle4-5 carries conn-58",
+      "beam-17 spins on axle4-5",
+      "beam9-12 holds pin-157"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

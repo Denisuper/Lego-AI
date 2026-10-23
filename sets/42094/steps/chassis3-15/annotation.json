@@ -1,0 +1,36 @@
+{
+  "example_id": "42094-chassis3-step-15",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "axle9-2's axle9 goes into beam4-3's axlehole1 (locked)",
+      "axle9-2's axle9 goes into beam4-4's axlehole1 (locked)",
+      "axle6-1's axle3 goes into beam3x5-2's hole8 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle9-2 carries beam4-3",
+      "axle9-2 carries beam4-4",
+      "beam3x5-2 spins on axle6-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

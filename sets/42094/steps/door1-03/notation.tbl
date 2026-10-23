@@ -1,0 +1,19 @@
+ADD beam-16 18654 black
+POS beam-16 1 -1 -2.25 0 0 1 1 0 0 0 1 0
+ADD conn-53 63869 black
+POS conn-53 1 -1 -3.25 0 0 1 0 1 0 -1 0 0
+ADD pin-146 2780 black
+POS pin-146 1.5 0 -3.25 -1 0 0 0 1 0 0 0 -1
+ADD pin-147 2780 black
+POS pin-147 1.5 0 -4.25 -1 0 0 0 1 0 0 0 -1
+ADD panel-7 11946 black
+POS panel-7 2 0 -1.25 0 -1 0 -1 0 0 0 0 -1
+ADD pin-148 22961 lightbluishgrey
+POS pin-148 2 0 -0.25 0 0 -1 0 -1 0 -1 0 0
+CONNECT axle4-4.axle2 -> beam-16.hole1 TURNS
+CONNECT pin-146.pin2 -> conn-53.hole2 STIFF
+CONNECT pin-147.pin2 -> conn-53.hole3 STIFF
+CONNECT axle4-4.axle3 -> conn-53.axlehole1 LOCKED
+CONNECT pin-146.pin1 -> panel-7.hole1 STIFF
+CONNECT pin-147.pin1 -> panel-7.hole2 STIFF
+CONNECT pin-148.axle1 -> panel-7.axlehole1 LOCKED

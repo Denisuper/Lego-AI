@@ -1,0 +1,212 @@
+{
+  "example_id": "42094-trackstructu1-step-07",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle3-27",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "gear6-2",
+        "part_number": "57520",
+        "count": 1
+      },
+      {
+        "name": "beam9-30",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "axle5-19",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "bush-25",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "gear10-3",
+        "part_number": "57519",
+        "count": 1
+      },
+      {
+        "name": "bush-26",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "bush-27",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "gear10-4",
+        "part_number": "57519",
+        "count": 1
+      },
+      {
+        "name": "bush-28",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "axle5-20",
+        "part_number": "32073",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-27",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5.35, z=-2.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear6-2",
+        "part_number": "57520",
+        "catalog_name": "Technic Tread Sprocket Wheel Small 6 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5.35, z=-2.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-30",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-3.2, z=0.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-19",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-25",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear10-3",
+        "part_number": "57519",
+        "catalog_name": "Technic Tread Sprocket Wheel Large 10 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-26",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-27",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear10-4",
+        "part_number": "57519",
+        "catalog_name": "Technic Tread Sprocket Wheel Large 10 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-28",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-20",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-27's axle2 goes into gear6-2's axlehole1 (locked)",
+      "axle3-27's axle3 goes into beam9-30's hole9 (turns)",
+      "axle4-13's axle2 goes into beam9-30's hole1 (turns)",
+      "pin-234's pin1 goes into beam9-30's hole5 (turns)",
+      "axle5-19's axle2 goes into bush-25's axlehole1 (locked)",
+      "axle5-19's axle3 goes into gear10-3's axlehole1 (locked)",
+      "axle5-19's axle4 goes into bush-26's axlehole1 (locked)",
+      "axle5-20's axle2 goes into bush-27's axlehole1 (locked)",
+      "axle5-20's axle3 goes into gear10-4's axlehole1 (locked)",
+      "axle5-20's axle4 goes into bush-28's axlehole1 (locked)",
+      "axle5-20's axle1 goes into beam9-27's hole1 (turns)",
+      "axle5-19's axle1 goes into beam9-28's hole9 (turns)",
+      "axle3-27's axle1 goes into beam9-29's hole9 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-27 carries gear6-2",
+      "beam9-30 spins on axle3-27",
+      "beam9-30 spins on axle4-13",
+      "pin-234 spins on beam9-30",
+      "axle5-19 carries bush-25",
+      "axle5-19 carries gear10-3",
+      "axle5-19 carries bush-26",
+      "axle5-20 carries bush-27",
+      "axle5-20 carries gear10-4",
+      "axle5-20 carries bush-28",
+      "beam9-27 spins on axle5-20",
+      "beam9-28 spins on axle5-19",
+      "beam9-29 spins on axle3-27"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

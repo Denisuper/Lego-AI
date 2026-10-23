@@ -1,0 +1,6 @@
+ADD axle2-7 32062 red
+POS axle2-7 1.5 -1 0 0 0 1 0 1 0 -1 0 0
+ADD bush-21 3713 lightbluishgrey
+POS bush-21 -1.5 0 0 0 0 -1 0 1 0 1 0 0
+CONNECT axle6-2.axle2 -> bush-21.axlehole1 LOCKED
+CONNECT axle2-7.axle1 -> conn-55.axlehole1 LOCKED

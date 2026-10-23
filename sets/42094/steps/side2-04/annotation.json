@@ -1,0 +1,82 @@
+{
+  "example_id": "42094-side2-step-04",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-4",
+        "part_number": "64681",
+        "count": 1
+      },
+      {
+        "name": "pin-87",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-88",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-4",
+        "part_number": "64681",
+        "catalog_name": "Technic Panel Fairing #5 Long Smooth, Side A",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-4, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-87",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.5, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-88",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.5, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-87's pin2 goes into panel-4's hole8 (stiff)",
+      "pin-88's pin2 goes into panel-4's hole6 (stiff)",
+      "pin-87's pin1 goes into beam9-6's hole2 (stiff)",
+      "pin-88's pin1 goes into beam9-6's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-4 holds pin-87",
+      "panel-4 holds pin-88",
+      "beam9-6 holds pin-87",
+      "beam9-6 holds pin-88"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,12 @@
+ADD pin-157 32054 black
+POS pin-157 0 1 -1.25 0 0 -1 -1 0 0 0 1 0
+ADD conn-58 41678 lightbluishgrey
+POS conn-58 1 1 -0.75 0 0 1 0 1 0 -1 0 0
+ADD axle4-5 99008 tan
+POS axle4-5 1 1 -1.75 0 0 -1 0 -1 0 -1 0 0
+ADD beam-17 18654 black
+POS beam-17 1 1 -0.75 0 0 1 1 0 0 0 1 0
+CONNECT pin-157.pin1 -> conn-58.hole2 STIFF
+CONNECT axle4-5.axle1 -> conn-58.axlehole1 LOCKED
+CONNECT axle4-5.axle1 -> beam-17.hole1 TURNS
+CONNECT pin-157.pin2 -> beam9-12.hole4 STIFF

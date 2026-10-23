@@ -1,6 +1,6 @@
 ADD conn-7 32192 black
 POS conn-7 2.5 -1 -6 0 0 1 -1 0 0 0 -1 0
-ATTACH substepstep1
+ATTACH substepstep15
 CONNECT axle4-3.axle1 -> conn-7.axlehole1 LOCKED
 CONNECT axle4-3.axle2 -> beam3-2.axlehole2 LOCKED
 CONNECT axle4-3.axle3 -> beam3-1.axlehole2 LOCKED

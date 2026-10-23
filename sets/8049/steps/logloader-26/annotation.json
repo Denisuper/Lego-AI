@@ -1,0 +1,42 @@
+{
+  "example_id": "8049-logloader-step-26",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 26,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "axle5-4's axle2 goes into conn-46's axlehole2 (locked)",
+      "axle3-10's axle3 goes into beam15-4's hole10 (turns)",
+      "axle5-6's axle3 goes into beam15-4's hole7 (turns)",
+      "pin-80's pin2 goes into beam15-4's hole8 (stiff)",
+      "pin-92's pin2 goes into beam15-4's hole5 (stiff)",
+      "pin-96's pin2 goes into beam15-4's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-4 carries conn-46",
+      "beam15-4 spins on axle3-10",
+      "beam15-4 spins on axle5-6",
+      "beam15-4 holds pin-80",
+      "beam15-4 holds pin-92",
+      "beam15-4 holds pin-96"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,12 @@
+ADD beam7-1 32524 black
+POS beam7-1 1 0 -4 0 1 0 -1 0 0 0 0 1
+ADD pin-83 2780 black
+POS pin-83 1.5 0 -7 1 0 0 0 1 0 0 0 1
+ADD pin-84 2780 black
+POS pin-84 1.5 0 -6 1 0 0 0 1 0 0 0 1
+ADD pin-85 2780 black
+POS pin-85 0 -0.5 0 0 0 1 1 0 0 0 1 0
+CONNECT pin-83.pin1 -> beam7-1.hole1 STIFF
+CONNECT pin-84.pin1 -> beam7-1.hole2 STIFF
+CONNECT pin-82.axle1 -> beam7-1.hole7 TURNS
+CONNECT pin-85.pin2 -> conn-37.hole1 STIFF

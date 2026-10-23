@@ -1,0 +1,9 @@
+ADD conn-17 59443 black
+POS conn-17 1.5 -7.95 5.8 0 0 -1 0.185 -0.983 0 -0.983 -0.185 0
+ADD axle3-7 4519 lightbluishgrey
+POS axle3-7 0 -7.95 5.8 1 0 0 0 0.983 -0.185 0 0.185 0.983
+ADD conn-18 59443 black
+POS conn-18 -1.5 -7.95 5.8 0 0 -1 0.185 -0.983 0 -0.983 -0.185 0
+CONNECT axle3-7.axle3 -> conn-17.axlehole2 LOCKED
+CONNECT axle3-7.axle1 -> conn-18.axlehole1 LOCKED
+CONNECT axle3-7.axle2 -> beam2x4-3.hole3 TURNS

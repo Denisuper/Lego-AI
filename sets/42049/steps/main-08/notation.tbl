@@ -1,0 +1,16 @@
+STEP 8
+ADD axle2-9 32062 red
+POS axle2-9 2 -4.45 14 0 0 1 -1 0 0 0 -1 0
+ADD axle2-10 32062 red
+POS axle2-10 -2 -4.45 14 0 0 1 -1 0 0 0 -1 0
+ATTACH engine
+CONNECT axle2-9.axle2 -> conn-22.axlehole1 LOCKED
+CONNECT axle2-10.axle2 -> conn-23.axlehole1 LOCKED
+CONNECT axle8-2.axle1 -> beam3x5-2.hole1 TURNS
+CONNECT axle6-1.axle1 -> beam3x5-2.hole3 TURNS
+CONNECT axle2-9.axle1 -> beam5x11-1.hole24 TURNS
+CONNECT axle2-10.axle1 -> beam5x11-1.hole20 TURNS
+CONNECT axle55-1.axle1 -> beam3-1.hole1 TURNS
+CONNECT axle55-1.axle1 -> beam3-2.hole1 TURNS
+MESH gear20-1.teeth gear12-6.teeth
+RATIO gear20-1 gear12-6 20/12

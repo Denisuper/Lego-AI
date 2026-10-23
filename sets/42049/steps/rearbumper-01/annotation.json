@@ -1,0 +1,192 @@
+{
+  "example_id": "42049-rearbumper-step-01",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam7-10",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "pin-136",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "pin-137",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "conn-63",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "pin-138",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-139",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-140",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-141",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "stud-6",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-7",
+        "part_number": "6141",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam7-10",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-136",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-137",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-63",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-138",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-139",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-140",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11.5, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-141",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11.5, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-6",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11.9, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-7",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11.9, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-136's axle1 goes into beam7-10's hole3 (turns)",
+      "pin-137's axle1 goes into beam7-10's hole5 (turns)",
+      "pin-138's pin1 goes into beam7-10's hole2 (stiff)",
+      "pin-139's pin1 goes into beam7-10's hole6 (stiff)",
+      "pin-136's axle2 goes into conn-63's axlehole1 (locked)",
+      "pin-137's axle2 goes into conn-63's axlehole2 (locked)",
+      "pin-140's pin1 goes into pin-138's hole1 (turns)",
+      "pin-141's pin1 goes into pin-139's hole1 (turns)",
+      "pin-140's pin2 goes into stud-6's hole1 (turns)",
+      "pin-141's pin2 goes into stud-7's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-10 spins on pin-136",
+      "beam7-10 spins on pin-137",
+      "beam7-10 holds pin-138",
+      "beam7-10 holds pin-139",
+      "pin-136 carries conn-63",
+      "pin-137 carries conn-63",
+      "pin-140 spins on pin-138",
+      "pin-141 spins on pin-139",
+      "pin-140 spins on stud-6",
+      "pin-141 spins on stud-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

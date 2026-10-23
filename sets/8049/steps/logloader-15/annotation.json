@@ -1,0 +1,38 @@
+{
+  "example_id": "8049-logloader-step-15",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-95's pin2 goes into beam15-1's hole5 (stiff)",
+      "pin-103's pin3 goes into beam15-1's hole1 (stiff)",
+      "pin-93's pin2 goes into beam15-2's hole5 (stiff)",
+      "pin-98's pin2 goes into beam15-2's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-1 holds pin-95",
+      "beam15-1 holds pin-103",
+      "beam15-2 holds pin-93",
+      "beam15-2 holds pin-98"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

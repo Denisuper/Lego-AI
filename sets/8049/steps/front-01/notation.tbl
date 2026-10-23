@@ -1,0 +1,8 @@
+ADD axle3-6 4519 lightbluishgrey
+POS axle3-6 0 0 0 1 0 0 0 -0.866 0.5 0 -0.5 -0.866
+ADD beam11-5 32009 lime
+POS beam11-5 -1 -3.45 -2 0 1 0 0.866 0 0.5 0.5 0 -0.866
+ADD axle5-1 32073 lightbluishgrey
+POS axle5-1 0 -7.45 4.95 1 0 0 0 0.866 -0.5 0 0.5 0.866
+CONNECT axle3-6.axle1 -> beam11-5.axlehole2 LOCKED
+CONNECT axle5-1.axle2 -> beam11-5.axlehole1 LOCKED

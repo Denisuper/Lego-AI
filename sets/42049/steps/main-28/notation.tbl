@@ -1,0 +1,18 @@
+STEP 28
+ADD holes-1 15361 red
+POS holes-1 0 -6.45 -22.7 0 1 0 -1 0 0 0 0 1
+ADD pin-155 2780 black
+POS pin-155 -2 -6.45 -22.7 -1 0 0 0 1 0 0 0 -1
+ADD pin-156 62462 lightbluishgrey
+POS pin-156 -1 -6.45 -22.7 -1 0 0 0 1 0 0 0 -1
+ADD pin-157 2780 black
+POS pin-157 0 -6.45 -22.7 -1 0 0 0 1 0 0 0 -1
+ADD pin-158 62462 lightbluishgrey
+POS pin-158 1 -6.45 -22.7 -1 0 0 0 1 0 0 0 -1
+ADD pin-159 2780 black
+POS pin-159 2 -6.45 -22.7 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-155.pin2 -> holes-1.hole4 STIFF
+CONNECT pin-155.pin1 -> pin-156.hole1 STIFF
+CONNECT pin-157.pin2 -> pin-156.hole1 STIFF
+CONNECT pin-157.pin1 -> pin-158.hole1 STIFF
+CONNECT pin-159.pin2 -> pin-158.hole1 STIFF

@@ -1,0 +1,82 @@
+{
+  "example_id": "8049-submodel5-step-05",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-35",
+        "part_number": "32034",
+        "count": 1
+      },
+      {
+        "name": "axle5-5",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "axle5-6",
+        "part_number": "32073",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-35",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.25, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-5",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.25, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-6",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-5's axle1 goes into conn-35's axlehole1 (locked)",
+      "axle5-6's axle5 goes into conn-35's axlehole2 (locked)",
+      "axle5-5's axle2 goes into beam4-1's axlehole1 (locked)",
+      "axle5-5's axle2 goes into beam4-2's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-5 carries conn-35",
+      "axle5-6 carries conn-35",
+      "axle5-5 carries beam4-1",
+      "axle5-5 carries beam4-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

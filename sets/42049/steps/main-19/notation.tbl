@@ -1,0 +1,27 @@
+STEP 19
+ADD beam3-6 32523 black
+POS beam3-6 -4 -6.95 -5 0 1 0 0 0 -1 -1 0 0
+ADD pin-106 11214 darkbluishgrey
+POS pin-106 -5 -7.95 -5 -1 0 0 0 0 1 0 1 0
+ADD panel-2 24116 yellow
+POS panel-2 -5 -3.95 -2 1 0 0 0 0 1 0 -1 0
+ADD conn-55 32291 black
+POS conn-55 -6 -7.95 -5 -1 0 0 0 -1 0 0 0 1
+ADD pin-107 4274 lightbluishgrey
+POS pin-107 -6.5 -8.95 -5.5 0 0 -1 0 -1 0 -1 0 0
+ADD pin-108 4274 lightbluishgrey
+POS pin-108 -5.5 -8.95 -5.5 0 0 -1 0 -1 0 -1 0 0
+ADD stud-3 6141 transclear
+POS stud-3 -6.5 -8.95 -5.8 -1 0 0 0 0 1 0 1 0
+ADD stud-4 6141 transclear
+POS stud-4 -5.5 -8.95 -5.8 -1 0 0 0 0 1 0 1 0
+CONNECT pin-106.axle1 -> beam3-6.hole3 TURNS
+CONNECT pin-72.pin1 -> beam3-6.hole1 STIFF
+CONNECT pin-106.pin1 -> panel-2.hole1 STIFF
+CONNECT axle4-9.axle1 -> panel-2.hole2 TURNS
+CONNECT pin-107.pin1 -> conn-55.hole2 TURNS
+CONNECT pin-108.pin1 -> conn-55.hole1 TURNS
+CONNECT stud-3.pin1 -> conn-55.hole2 STIFF
+CONNECT stud-4.pin1 -> conn-55.hole1 STIFF
+CONNECT pin-107.pin2 -> stud-3.hole1 TURNS
+CONNECT pin-108.pin2 -> stud-4.hole1 TURNS

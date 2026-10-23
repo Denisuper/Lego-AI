@@ -1,0 +1,114 @@
+{
+  "example_id": "42049-frontaxle-step-01",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-52",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "beam3x3-2",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "beam3x3-3",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "pin-53",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "axle4-9",
+        "part_number": "87083",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-52",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x3-2",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.25, y=2, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x3-3",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.25, y=2, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-53",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=2, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-9",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.4, y=2, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-52's axle2 goes into beam3x3-2's axlehole2 (locked)",
+      "pin-53's axle2 goes into beam3x3-2's axlehole3 (locked)",
+      "axle4-9's axle4 goes into beam3x3-2's axlehole1 (locked)",
+      "pin-52's axle2 goes into beam3x3-3's axlehole2 (locked)",
+      "pin-53's axle2 goes into beam3x3-3's axlehole3 (locked)",
+      "axle4-9's axle4 goes into beam3x3-3's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "pin-52 carries beam3x3-2",
+      "pin-53 carries beam3x3-2",
+      "axle4-9 carries beam3x3-2",
+      "pin-52 carries beam3x3-3",
+      "pin-53 carries beam3x3-3",
+      "axle4-9 carries beam3x3-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

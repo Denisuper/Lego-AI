@@ -1,0 +1,168 @@
+{
+  "example_id": "42049-step-23",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 23,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-7",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-131",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-132",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-12",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-133",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-134",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "conn-61",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "pin-135",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-7",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-7.95, z=17 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-131",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-7.95, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-132",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-7.95, z=16 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-12",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-3.95, z=16 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-133",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-6.95, z=16 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-134",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-5.95, z=16 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-61",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-5.95, z=16 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-135",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-7.95, z=19 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-131's pin1 goes into beam9-7's hole3 (stiff)",
+      "pin-132's pin1 goes into beam9-7's hole4 (stiff)",
+      "pin-135's pin1 goes into beam9-7's hole7 (stiff)",
+      "pin-130's axle1 goes into beam9-7's hole9 (turns)",
+      "pin-131's pin2 goes into beam3x5-12's hole6 (stiff)",
+      "pin-132's pin2 goes into beam3x5-12's hole5 (stiff)",
+      "pin-133's pin1 goes into beam3x5-12's hole4 (stiff)",
+      "pin-134's pin1 goes into beam3x5-12's hole3 (stiff)",
+      "pin-2's pin3 goes into beam3x5-12's hole1 (stiff)",
+      "pin-133's pin2 goes into conn-61's hole2 (stiff)",
+      "pin-134's pin2 goes into conn-61's hole1 (stiff)",
+      "pin-135's pin2 goes into beam2-4's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-7 holds pin-131",
+      "beam9-7 holds pin-132",
+      "beam9-7 holds pin-135",
+      "beam9-7 spins on pin-130",
+      "beam3x5-12 holds pin-131",
+      "beam3x5-12 holds pin-132",
+      "beam3x5-12 holds pin-133",
+      "beam3x5-12 holds pin-134",
+      "beam3x5-12 holds pin-2",
+      "conn-61 holds pin-133",
+      "conn-61 holds pin-134",
+      "beam2-4 holds pin-135"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,14 @@
+ADD cranksha-1 2853 lightbluishgrey
+POS cranksha-1 -2.5 -1.75 -1.5 1 0 0 0 1 0 0 0 1
+ADD cranksha-2 2853 lightbluishgrey
+POS cranksha-2 2.5 -1.75 -1.5 -1 0 0 0 -1 0 0 0 1
+ADD beam7-2 32065 black
+POS beam7-2 0 -1.75 -1.75 0 0 -1 -1 0 0 0 1 0
+ATTACH technicflexs
+ATTACH technicflexs
+ATTACH technicflexs
+ATTACH technicflexs
+CONNECT cranksha-1.axle1 -> beam7-2.hole7 TURNS
+CONNECT cranksha-2.axle1 -> beam7-2.hole1 TURNS
+CONNECT cranksha-1.axle2 -> holes-5.axlehole2 LOCKED
+CONNECT cranksha-2.axle2 -> holes-8.axlehole2 LOCKED

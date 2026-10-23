@@ -1,0 +1,9 @@
+ADD conn-28 32013 black
+POS conn-28 -6 5.05 -5.9 1 0 0 0 -0.066 0.998 0 -0.998 -0.066
+ADD axle2-3 32062 red
+POS axle2-3 -6 3.55 -5.8 0 0 -1 0.998 -0.066 0 -0.066 -0.998 0
+ADD pin-64 32054 black
+POS pin-64 -6 2.05 -5.7 0 0 1 -0.998 -0.066 0 0.066 -0.998 0
+CONNECT axle2-3.axle2 -> conn-28.axlehole1 LOCKED
+CONNECT pin-45.pin3 -> conn-28.hole1 STIFF
+CONNECT axle2-3.axle1 -> pin-64.axlehole1 LOCKED

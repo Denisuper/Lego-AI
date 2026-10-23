@@ -1,0 +1,9 @@
+ADD pin-46 4274 lightbluishgrey
+POS pin-46 -1.5 -6.4 3.1 -1 0 0 0 -0.676 0.737 0 0.737 0.676
+ADD pin-47 4274 lightbluishgrey
+POS pin-47 -1.5 -5.9 2.2 -1 0 0 0 -0.676 0.737 0 0.737 0.676
+ADD pin-48 4274 lightbluishgrey
+POS pin-48 -1.5 -5.4 1.35 -1 0 0 0 -0.676 0.737 0 0.737 0.676
+CONNECT pin-46.pin1 -> beam11-5.hole2 TURNS
+CONNECT pin-47.pin1 -> beam11-5.hole3 TURNS
+CONNECT pin-48.pin1 -> beam11-5.hole4 TURNS

@@ -1,0 +1,79 @@
+{
+  "example_id": "8049-arm2-step-01",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam15-5",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "conn-52",
+        "part_number": "41678",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam15-5",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-52",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-21's axle2 goes into beam15-5's hole6 (turns)",
+      "axle3-21's axle1 goes into conn-52's axlehole1 (locked)",
+      "axle3-21's axle3 goes into conn-52's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-5 spins on axle3-21",
+      "axle3-21 carries conn-52"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

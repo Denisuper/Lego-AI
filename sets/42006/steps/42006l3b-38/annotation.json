@@ -22,11 +22,6 @@
         "count": 1
       },
       {
-        "name": "part-6",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "conn-16",
         "part_number": "59443",
         "count": 1
@@ -61,15 +56,6 @@
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=1.05, y=-8, z=4.5 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-6",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=1.05, y=-8, z=9 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       },
       {

@@ -129,7 +129,7 @@
       {
         "name": "wheel-1",
         "part_number": "42610",
-        "catalog_name": "Wheel 11 x 8 with Center Groove",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=7.5, y=-1, z=-4 holes (exact, from the 3D model)",
@@ -138,7 +138,7 @@
       {
         "name": "wheel-2",
         "part_number": "42610",
-        "catalog_name": "Wheel 11 x 8 with Center Groove",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=7.5, y=-1, z=-8 holes (exact, from the 3D model)",
@@ -192,7 +192,7 @@
       {
         "name": "wheel-3",
         "part_number": "42610",
-        "catalog_name": "Wheel 11 x 8 with Center Groove",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-7.5, y=-1, z=-8 holes (exact, from the 3D model)",
@@ -201,7 +201,7 @@
       {
         "name": "wheel-4",
         "part_number": "42610",
-        "catalog_name": "Wheel 11 x 8 with Center Groove",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-7.5, y=-1, z=-4 holes (exact, from the 3D model)",
@@ -214,11 +214,15 @@
       "pin-11's pin1 goes into beam5-1's hole5 (turns)",
       "pin-9's pin2 goes into beam2-1's hole1 (turns)",
       "conn-2's axle1 goes into beam2-1's axlehole1 (locked)",
+      "pin-10's pin2 goes into wheel-1's hole1 (turns)",
+      "pin-11's pin2 goes into wheel-2's hole1 (turns)",
       "pin-12's pin2 goes into beam2-2's hole1 (turns)",
       "conn-1's axle1 goes into beam2-2's axlehole1 (locked)",
       "pin-12's pin1 goes into beam5-2's hole3 (turns)",
       "pin-13's pin1 goes into beam5-2's hole1 (turns)",
-      "pin-14's pin1 goes into beam5-2's hole5 (turns)"
+      "pin-14's pin1 goes into beam5-2's hole5 (turns)",
+      "pin-13's pin2 goes into wheel-3's hole1 (turns)",
+      "pin-14's pin2 goes into wheel-4's hole1 (turns)"
     ],
     "who_does_what_to_which": [
       "pin-9 spins on beam5-1",
@@ -226,11 +230,15 @@
       "pin-11 spins on beam5-1",
       "pin-9 spins on beam2-1",
       "conn-2 carries beam2-1",
+      "pin-10 spins on wheel-1",
+      "pin-11 spins on wheel-2",
       "pin-12 spins on beam2-2",
       "conn-1 carries beam2-2",
       "pin-12 spins on beam5-2",
       "pin-13 spins on beam5-2",
-      "pin-14 spins on beam5-2"
+      "pin-14 spins on beam5-2",
+      "pin-13 spins on wheel-3",
+      "pin-14 spins on wheel-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

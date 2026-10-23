@@ -1,0 +1,28 @@
+ADD beam11-2 32525 yellow
+POS beam11-2 2 3 5 0 0 -1 0 -1 0 -1 0 0
+ADD beam13-2 41239 yellow
+POS beam13-2 5 0 8 0 1 0 1 0 0 0 0 -1
+ADD pin-81 2780 black
+POS pin-81 5.5 0 8 -1 0 0 0 0 1 0 1 0
+ADD bush-13 3713 red
+POS bush-13 5.9 2 11 0 0 -1 1 0 0 0 -1 0
+ADD pin-82 32054 black
+POS pin-82 5 0 4 -1 0 0 0 0 1 0 1 0
+ADD pin-83 32054 black
+POS pin-83 5 0 7 -1 0 0 0 0 1 0 1 0
+ADD pin-84 32054 black
+POS pin-84 -1 0 7 1 0 0 0 0 -1 0 1 0
+ADD pin-85 32054 black
+POS pin-85 -1 0 4 1 0 0 0 0 -1 0 1 0
+CONNECT pin-62.pin1 -> beam11-2.hole11 STIFF
+CONNECT pin-79.pin1 -> beam11-2.hole1 STIFF
+CONNECT pin-81.pin2 -> beam13-2.hole7 STIFF
+CONNECT pin-82.pin1 -> beam13-2.hole11 STIFF
+CONNECT pin-83.pin1 -> beam13-2.hole8 STIFF
+CONNECT pin-64.axle1 -> beam13-2.hole4 TURNS
+CONNECT pin-73.pin2 -> beam13-2.hole1 STIFF
+CONNECT pin-74.pin2 -> beam13-2.hole3 STIFF
+CONNECT pin-80.pin1 -> beam13-2.hole13 STIFF
+CONNECT axle4-11.axle2 -> bush-13.axlehole1 LOCKED
+CONNECT pin-84.pin1 -> beam13-1.hole8 STIFF
+CONNECT pin-85.pin1 -> beam13-1.hole11 STIFF

@@ -1,0 +1,4 @@
+STEP 29
+ADD holes-2 15361 red
+POS holes-2 0 -6.45 -22.7 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-159.pin1 -> holes-2.hole4 STIFF

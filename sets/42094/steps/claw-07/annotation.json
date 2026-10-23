@@ -1,0 +1,174 @@
+{
+  "example_id": "42094-claw-step-07",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-190",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "conn-73",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axle2-13",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-74",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axle2-14",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-75",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axle2-15",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-76",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axle2-16",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-190",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15.5, y=-3.8, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-73",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14.5, y=-3.8, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-13",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=13.5, y=-3.8, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-74",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.5, y=-3.8, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-14",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=11.5, y=-6.05, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-75",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.5, y=-6.05, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-15",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=13.5, y=-6.05, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-76",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=14.5, y=-6.05, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-16",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=15.5, y=-6.05, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-13's axle2 goes into conn-73's axlehole2 (locked)",
+      "axle2-13's axle1 goes into conn-74's axlehole1 (locked)",
+      "axle9-4's axle1 goes into conn-74's axlehole2 (locked)",
+      "axle2-14's axle1 goes into conn-75's axlehole1 (locked)",
+      "axle2-15's axle2 goes into conn-75's axlehole2 (locked)",
+      "axle2-15's axle1 goes into conn-76's axlehole1 (locked)",
+      "axle2-16's axle1 goes into conn-76's axlehole2 (locked)",
+      "axle2-14's axle2 goes into beam9-17's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-13 carries conn-73",
+      "axle2-13 carries conn-74",
+      "axle9-4 carries conn-74",
+      "axle2-14 carries conn-75",
+      "axle2-15 carries conn-75",
+      "axle2-15 carries conn-76",
+      "axle2-16 carries conn-76",
+      "axle2-14 carries beam9-17"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

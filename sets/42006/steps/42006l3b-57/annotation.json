@@ -12,11 +12,6 @@
         "count": 1
       },
       {
-        "name": "part-11",
-        "part_number": "6590",
-        "count": 1
-      },
-      {
         "name": "gear20-4",
         "part_number": "87407",
         "count": 1
@@ -24,11 +19,6 @@
       {
         "name": "gear20-5",
         "part_number": "87407",
-        "count": 1
-      },
-      {
-        "name": "part-12",
-        "part_number": "6590",
         "count": 1
       }
     ],
@@ -46,15 +36,6 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "part-11",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=-1.45, y=-10, z=-7 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
         "name": "gear20-4",
         "part_number": "87407",
         "catalog_name": "Technic Gear 20 Tooth Bevel with Pin Hole",
@@ -70,15 +51,6 @@
         "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=0.05, y=-10, z=-7 holes (exact, from the 3D model)",
-        "rotation": "TO WRITE"
-      },
-      {
-        "name": "part-12",
-        "part_number": "6590",
-        "catalog_name": "6590",
-        "color": "Light Bluish Grey",
-        "part_match": "confirmed (official 3D model)",
-        "position": "at x=1.55, y=-10, z=-7 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       }
     ],

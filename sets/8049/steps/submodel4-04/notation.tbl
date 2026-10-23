@@ -1,0 +1,9 @@
+ADD pin-56 4459 black
+POS pin-56 -3.5 0.05 1 1 0 0 0 0.998 0.066 0 -0.066 0.998
+ADD pin-57 43093 blue
+POS pin-57 -3.5 0.15 2 1 0 0 0 0.998 0.066 0 -0.066 0.998
+ADD bush-10 32123b lightbluishgrey
+POS bush-10 -2.25 0 0 0 0 1 -0.066 0.998 0 -0.998 -0.066 0
+CONNECT axle12-1.axle4 -> bush-10.axlehole1 LOCKED
+CONNECT pin-56.pin2 -> beam3-8.hole1 STIFF
+CONNECT pin-56.pin2 -> beam3-9.hole1 STIFF

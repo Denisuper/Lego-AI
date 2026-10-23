@@ -1,0 +1,3 @@
+STEP 15
+ATTACH gripper
+CONNECT axle6-3.axle1 -> l-3.axlehole1 LOCKED

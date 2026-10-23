@@ -1,0 +1,10 @@
+STEP 7
+ADD gear12-5 32270 black
+POS gear12-5 2 -8.95 12 1 0 0 0 1 0 0 0 1
+ATTACH hog
+CONNECT axle6-1.axle2 -> gear12-5.axlehole1 LOCKED
+CONNECT axle6-1.axle3 -> beam11-1.hole4 TURNS
+CONNECT pin-16.pin2 -> beam11-1.hole8 STIFF
+CONNECT axle9-1.axle4 -> conn-12.hole1 TURNS
+MESH gear20-4.teeth gear12-5.teeth
+RATIO gear20-4 gear12-5 20/12

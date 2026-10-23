@@ -1,0 +1,29 @@
+STEP 20
+ADD axle5-5 15462 reddishbrown
+POS axle5-5 5 -11.1 -6 0 0 1 -1 0 0 0 -1 0
+ADD gear12-3 32270 black
+POS gear12-3 5 -13 -6 0 -1 0 0 0 -1 1 0 0
+ADD wheel-1 56145 black
+POS wheel-1 6.5 -3.1 -0.1 0.035 -0.001 0.999 -0.025 -1 0 0.999 -0.025 -0.035
+ADD tyre-1 15413 rubberblack
+POS tyre-1 6.5 -3.1 -0.1 0.035 -0.001 0.999 -0.025 -1 0 0.999 -0.025 -0.035
+ADD wheel-2 56145 black
+POS wheel-2 6.5 -3.1 -15.1 0.035 0 0.999 0.01 -1 0 0.999 0.01 -0.035
+ADD tyre-2 15413 rubberblack
+POS tyre-2 6.5 -3.1 -15.1 0.035 0 0.999 0.01 -1 0 0.999 0.01 -0.035
+ADD wheel-3 56145 black
+POS wheel-3 -4.5 -3.1 -14.9 -0.035 0 -0.999 0.013 -1 0 -0.999 -0.013 0.035
+ADD tyre-3 15413 rubberblack
+POS tyre-3 -4.5 -3.1 -14.9 -0.035 0 -0.999 0.013 -1 0 -0.999 -0.013 0.035
+ADD wheel-4 56145 black
+POS wheel-4 -4.5 -3.1 0.1 -0.035 0.001 -0.999 -0.015 -1 0 -0.999 0.015 0.035
+ADD tyre-4 15413 rubberblack
+POS tyre-4 -4.5 -3.1 0.1 -0.035 0.001 -0.999 -0.015 -1 0 -0.999 0.015 0.035
+CONNECT axle5-5.axle5 -> gear12-3.axlehole1 LOCKED
+CONNECT axle4-2.axle2 -> wheel-1.axlehole1 LOCKED
+CONNECT axle4-1.axle2 -> wheel-2.axlehole1 LOCKED
+CONNECT axle4-2.axle2 -> wheel-3.axlehole1 LOCKED
+CONNECT axle4-1.axle2 -> wheel-4.axlehole1 LOCKED
+CONNECT axle5-5.axle1 -> conn-19.axlehole2 LOCKED
+CONNECT axle5-5.axle4 -> conn-26.hole1 TURNS
+CONNECT axle5-5.axle2 -> beam5-7.hole3 TURNS

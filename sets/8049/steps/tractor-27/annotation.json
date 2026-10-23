@@ -1,0 +1,102 @@
+{
+  "example_id": "8049-tractor-step-27",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 27,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam11-6",
+        "part_number": "32009",
+        "count": 1
+      },
+      {
+        "name": "pin-53",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-54",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-55",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-6",
+        "part_number": "32009",
+        "catalog_name": "Technic Beam 1 x 11.5 Double Bent Thick",
+        "color": "Lime",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=6.2, z=-12.8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-53",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=5.55, z=-8.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-54",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=5.35, z=-7.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-55",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=5.2, z=-6.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-53's pin1 goes into beam11-6's hole4 (turns)",
+      "pin-54's pin1 goes into beam11-6's hole3 (turns)",
+      "pin-55's pin1 goes into beam11-6's hole2 (turns)",
+      "axle3-6's axle3 goes into beam11-6's axlehole2 (locked)",
+      "axle5-1's axle4 goes into beam11-6's axlehole1 (locked)",
+      "pin-44's pin3 goes into beam11-6's hole5 (stiff)",
+      "axle5-2's axle2 goes into beam11-6's hole6 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-53 spins on beam11-6",
+      "pin-54 spins on beam11-6",
+      "pin-55 spins on beam11-6",
+      "axle3-6 carries beam11-6",
+      "axle5-1 carries beam11-6",
+      "beam11-6 holds pin-44",
+      "beam11-6 spins on axle5-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

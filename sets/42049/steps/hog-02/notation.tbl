@@ -1,0 +1,21 @@
+ADD axle4-3 3705 black
+POS axle4-3 10.5 0 -5 1 0 0 0 1 0 0 0 1
+ADD axle4-4 3705 black
+POS axle4-4 10.5 0 5 1 0 0 0 1 0 0 0 1
+ADD conn-17 32039 yellow
+POS conn-17 12 0 -5 0 0 -1 0 1 0 1 0 0
+ADD conn-18 32039 yellow
+POS conn-18 12 0 5 0 0 -1 0 1 0 1 0 0
+ADD pin-23 43093 blue
+POS pin-23 13 0 -5.5 0 0 -1 0 1 0 1 0 0
+ADD pin-24 43093 blue
+POS pin-24 13 0 5.5 0 0 -1 0 -1 0 -1 0 0
+ADD conn-19 32039 yellow
+POS conn-19 9 0 5 0 0 1 0 -1 0 1 0 0
+CONNECT axle4-3.axle4 -> conn-17.axlehole2 LOCKED
+CONNECT axle4-4.axle4 -> conn-18.axlehole2 LOCKED
+CONNECT axle4-4.axle1 -> conn-19.axlehole2 LOCKED
+CONNECT axle4-3.axle3 -> beam11-1.hole1 TURNS
+CONNECT axle4-4.axle3 -> beam11-1.hole11 TURNS
+CONNECT axle4-4.axle2 -> beam2-1.axlehole1 LOCKED
+CONNECT axle4-3.axle2 -> beam2-2.axlehole1 LOCKED

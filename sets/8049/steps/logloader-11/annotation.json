@@ -1,0 +1,66 @@
+{
+  "example_id": "8049-logloader-step-11",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear8-1",
+        "part_number": "10928",
+        "count": 1
+      },
+      {
+        "name": "axle4-10",
+        "part_number": "3705",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear8-1",
+        "part_number": "10928",
+        "catalog_name": "Technic Gear 8 Tooth [Reinforced]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-17.4, z=-7.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-10",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-16.4, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-8's axle4 goes into gear8-1's axlehole1 (locked)",
+      "axle4-10's axle3 goes into conn-30's hole1 (turns)",
+      "axle4-10's axle4 goes into conn-36's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-8 carries gear8-1",
+      "conn-30 spins on axle4-10",
+      "axle4-10 carries conn-36"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

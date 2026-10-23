@@ -1,0 +1,12 @@
+ADD axle5-4 15462 reddishbrown
+POS axle5-4 0 -5 3 0 0 1 0 1 0 -1 0 0
+ADD undersid-1 41669 red
+POS undersid-1 0 -5 2 -1 0 0 0 0 1 0 1 0
+ADD opening-1 6641 red
+POS opening-1 0 -6 4 0 -1 0 0 0 -1 1 0 0
+CONNECT axle5-4.axle4 -> undersid-1.axlehole1 LOCKED
+CONNECT axle5-4.axle2 -> opening-1.axlehole1 LOCKED
+CONNECT axle5-4.axle5 -> conn-21.hole1 TURNS
+CONNECT axle5-4.axle3 -> beam-8.hole2 TURNS
+CONNECT axle5-4.axle3 -> beam-9.hole2 TURNS
+CONNECT axle5-4.axle1 -> conn-22.hole2 TURNS

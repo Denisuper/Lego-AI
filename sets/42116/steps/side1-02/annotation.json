@@ -7,27 +7,27 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-9",
+        "name": "conn-5",
         "part_number": "32184",
         "count": 1
       },
       {
-        "name": "pin-22",
+        "name": "pin-29",
         "part_number": "18651",
         "count": 1
       },
       {
-        "name": "pin-23",
+        "name": "pin-30",
         "part_number": "2780",
         "count": 1
       },
       {
-        "name": "conn-10",
+        "name": "conn-6",
         "part_number": "59443",
         "count": 1
       },
       {
-        "name": "conn-11",
+        "name": "conn-7",
         "part_number": "59443",
         "count": 1
       }
@@ -37,7 +37,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-9",
+        "name": "conn-5",
         "part_number": "32184",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
         "color": "Red",
@@ -46,7 +46,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-22",
+        "name": "pin-29",
         "part_number": "18651",
         "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
         "color": "Black",
@@ -55,7 +55,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-23",
+        "name": "pin-30",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -64,7 +64,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-10",
+        "name": "conn-6",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Red",
@@ -73,7 +73,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-11",
+        "name": "conn-7",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Red",
@@ -83,16 +83,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-22's axle2 goes into conn-9's axlehole2 (locked)",
-      "pin-23's pin1 goes into conn-9's hole1 (stiff)",
-      "axle3-2's axle2 goes into conn-9's axlehole1 (locked)",
-      "axle3-2's axle1 goes into conn-10's axlehole1 (locked)"
+      "pin-29's axle2 goes into conn-5's axlehole2 (locked)",
+      "pin-30's pin1 goes into conn-5's hole1 (stiff)",
+      "axle3-2's axle2 goes into conn-5's axlehole1 (locked)",
+      "axle3-2's axle1 goes into conn-6's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "pin-22 carries conn-9",
-      "conn-9 holds pin-23",
-      "axle3-2 carries conn-9",
-      "axle3-2 carries conn-10"
+      "pin-29 carries conn-5",
+      "conn-5 holds pin-30",
+      "axle3-2 carries conn-5",
+      "axle3-2 carries conn-6"
     ],
     "where_everything_is_after": [
       "TO WRITE"

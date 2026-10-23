@@ -1,0 +1,146 @@
+{
+  "example_id": "42094-chassis3-step-03",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-35",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "conn-14",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "axle9-2",
+        "part_number": "60485",
+        "count": 1
+      },
+      {
+        "name": "beam2-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "beam2-2",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "6587",
+        "count": 1
+      },
+      {
+        "name": "bush-5",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-35",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-14",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle9-2",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.75, y=1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "6587",
+        "catalog_name": "Technic Axle 3 with Stud",
+        "color": "Dark Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.4, y=1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-5",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-35's pin2 goes into conn-14's hole2 (stiff)",
+      "axle9-2's axle5 goes into conn-14's axlehole1 (locked)",
+      "axle9-2's axle6 goes into beam2-1's axlehole2 (locked)",
+      "axle3-6's axle3 goes into beam2-1's axlehole1 (locked)",
+      "axle9-2's axle4 goes into beam2-2's axlehole2 (locked)",
+      "axle3-6's axle2 goes into beam2-2's axlehole1 (locked)",
+      "axle3-6's axle2 goes into bush-5's axlehole1 (locked)",
+      "pin-35's pin1 goes into pin-29's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-14 holds pin-35",
+      "axle9-2 carries conn-14",
+      "axle9-2 carries beam2-1",
+      "axle3-6 carries beam2-1",
+      "axle9-2 carries beam2-2",
+      "axle3-6 carries beam2-2",
+      "axle3-6 carries bush-5",
+      "pin-29 holds pin-35"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

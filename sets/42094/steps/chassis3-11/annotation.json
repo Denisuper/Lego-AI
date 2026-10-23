@@ -1,0 +1,130 @@
+{
+  "example_id": "42094-chassis3-step-11",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-48",
+        "part_number": "11214",
+        "count": 1
+      },
+      {
+        "name": "beam9-1",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-49",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "conn-23",
+        "part_number": "32034",
+        "count": 1
+      },
+      {
+        "name": "pin-50",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-51",
+        "part_number": "11214",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-48",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-7, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-1",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-7, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-49",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-7, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-23",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-7, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-50",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-7, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-51",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-7, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-48's pin1 goes into beam9-1's hole1 (stiff)",
+      "pin-49's pin2 goes into beam9-1's hole2 (stiff)",
+      "pin-50's pin1 goes into conn-23's hole1 (stiff)",
+      "pin-48's axle1 goes into beam11-1's hole7 (turns)",
+      "pin-49's pin3 goes into beam11-1's hole8 (stiff)",
+      "pin-50's pin2 goes into beam-8's hole4 (stiff)",
+      "pin-50's pin2 goes into beam-9's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-1 holds pin-48",
+      "beam9-1 holds pin-49",
+      "conn-23 holds pin-50",
+      "beam11-1 spins on pin-48",
+      "beam11-1 holds pin-49",
+      "beam-8 holds pin-50",
+      "beam-9 holds pin-50"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

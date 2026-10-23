@@ -1,0 +1,188 @@
+{
+  "example_id": "42061-step-20",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 20,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle5-5",
+        "part_number": "15462",
+        "count": 1
+      },
+      {
+        "name": "gear12-3",
+        "part_number": "32270",
+        "count": 1
+      },
+      {
+        "name": "wheel-1",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-1",
+        "part_number": "15413",
+        "count": 1
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-2",
+        "part_number": "15413",
+        "count": 1
+      },
+      {
+        "name": "wheel-3",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-3",
+        "part_number": "15413",
+        "count": 1
+      },
+      {
+        "name": "wheel-4",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-4",
+        "part_number": "15413",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle5-5",
+        "part_number": "15462",
+        "catalog_name": "Technic Axle 5 with Stop",
+        "color": "Reddish Brown",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-11.1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-3",
+        "part_number": "32270",
+        "catalog_name": "Technic Gear 12 Tooth Double Bevel",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-13, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-1",
+        "part_number": "56145",
+        "catalog_name": "Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-3.1, z=-0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-1",
+        "part_number": "15413",
+        "catalog_name": "Tyre 20/ 48 x 30",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-3.1, z=-0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "56145",
+        "catalog_name": "Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-3.1, z=-15.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-2",
+        "part_number": "15413",
+        "catalog_name": "Tyre 20/ 48 x 30",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-3.1, z=-15.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-3",
+        "part_number": "56145",
+        "catalog_name": "Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.5, y=-3.1, z=-14.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-3",
+        "part_number": "15413",
+        "catalog_name": "Tyre 20/ 48 x 30",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.5, y=-3.1, z=-14.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-4",
+        "part_number": "56145",
+        "catalog_name": "Wheel Rim 20 x 30 with  6 Dual Spokes and External Ribs",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.5, y=-3.1, z=0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-4",
+        "part_number": "15413",
+        "catalog_name": "Tyre 20/ 48 x 30",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.5, y=-3.1, z=0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-5's axle5 goes into gear12-3's axlehole1 (locked)",
+      "axle4-2's axle2 goes into wheel-1's axlehole1 (locked)",
+      "axle4-1's axle2 goes into wheel-2's axlehole1 (locked)",
+      "axle4-2's axle2 goes into wheel-3's axlehole1 (locked)",
+      "axle4-1's axle2 goes into wheel-4's axlehole1 (locked)",
+      "axle5-5's axle1 goes into conn-19's axlehole2 (locked)",
+      "axle5-5's axle4 goes into conn-26's hole1 (turns)",
+      "axle5-5's axle2 goes into beam5-7's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-5 carries gear12-3",
+      "axle4-2 carries wheel-1",
+      "axle4-1 carries wheel-2",
+      "axle4-2 carries wheel-3",
+      "axle4-1 carries wheel-4",
+      "axle5-5 carries conn-19",
+      "conn-26 spins on axle5-5",
+      "beam5-7 spins on axle5-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

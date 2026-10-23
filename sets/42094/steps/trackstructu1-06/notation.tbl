@@ -1,0 +1,17 @@
+ADD axle6-3 3706 black
+POS axle6-3 -0.5 -1 -4 -1 0 0 0 0 1 0 1 0
+ADD pin-232 32054 black
+POS pin-232 1 -1 -5 1 0 0 0 1 0 0 0 1
+ADD pin-233 11214 red
+POS pin-233 -1 -1 -5 1 0 0 0 1 0 0 0 1
+ADD rod-2 4254 black
+POS rod-2 0 -1 -4 0 0 1 -0.905 0.424 0 -0.424 -0.905 0
+ADD cylinder-2 4255 lightbluishgrey
+POS cylinder-2 0 -3.2 0.65 0 0 1 -0.905 0.424 0 -0.424 -0.905 0
+ADD pin-234 32556 tan
+POS pin-234 0 -3.2 0.65 1 0 0 0 -0.105 -0.995 0 0.995 -0.105
+CONNECT axle6-3.axle3 -> rod-2.hole1 TURNS
+CONNECT pin-234.pin2 -> cylinder-2.hole1 TURNS
+CONNECT axle6-3.axle1 -> beam9-28.hole4 TURNS
+CONNECT pin-232.pin2 -> beam9-28.hole5 STIFF
+CONNECT pin-234.pin3 -> beam9-29.hole5 TURNS

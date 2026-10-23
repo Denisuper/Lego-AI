@@ -1,8 +1,6 @@
-ADD beam2-3 41677 black
-POS beam2-3 0 0 0 0 -1 0 0 0 1 -1 0 0
-ADD axle2-5 32062 red
-POS axle2-5 0.75 0 0 -1 0 0 0 0 1 0 1 0
-ADD axle2-6 32062 red
-POS axle2-6 0.75 1 0 -1 0 0 0 0 1 0 1 0
-CONNECT axle2-5.axle2 -> beam2-3.axlehole1 LOCKED
-CONNECT axle2-6.axle2 -> beam2-3.axlehole2 LOCKED
+ADD conn-9 32184 lightbluishgrey
+POS conn-9 0 0 0 0 0 1 -1 0 0 0 -1 0
+ADD pin-19 3749 tan
+POS pin-19 0 0.5 -1 0 0 1 -1 0 0 0 -1 0
+ADD pin-20 3749 tan
+POS pin-20 0 -0.5 1 0 0 -1 1 0 0 0 -1 0

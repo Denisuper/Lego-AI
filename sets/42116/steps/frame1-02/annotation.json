@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-24",
+        "name": "conn-19",
         "part_number": "32015",
         "count": 1
       },
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-24",
+        "name": "conn-19",
         "part_number": "32015",
         "catalog_name": "Technic Axle and Pin Connector Angled #5 - 112.5\u00b0",
         "color": "Black",
@@ -55,13 +55,13 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle3-6's axle3 goes into conn-24's axlehole2 (locked)",
-      "axle4-3's axle1 goes into conn-24's axlehole1 (locked)",
+      "axle3-6's axle3 goes into conn-19's axlehole2 (locked)",
+      "axle4-3's axle1 goes into conn-19's axlehole1 (locked)",
       "axle3-6's axle2 goes into beam2-3's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle3-6 carries conn-24",
-      "axle4-3 carries conn-24",
+      "axle3-6 carries conn-19",
+      "axle4-3 carries conn-19",
       "axle3-6 carries beam2-3"
     ],
     "where_everything_is_after": [

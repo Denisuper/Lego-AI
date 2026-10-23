@@ -1,0 +1,130 @@
+{
+  "example_id": "42049-gripper-step-03",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-47",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "axle6-3",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "bush-22",
+        "part_number": "32123a",
+        "count": 1
+      },
+      {
+        "name": "bush-23",
+        "part_number": "32123a",
+        "count": 1
+      },
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "count": 1
+      },
+      {
+        "name": "bush-24",
+        "part_number": "32123a",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-47",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle6-3",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=13.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-22",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=11.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-23",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=14.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "catalog_name": "Technic Worm Gear",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=13 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-24",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=0, z=15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-3's axle2 goes into conn-47's hole1 (turns)",
+      "axle5-8's axle3 goes into conn-47's axlehole2 (locked)",
+      "axle6-3's axle5 goes into bush-22's axlehole1 (locked)",
+      "axle6-3's axle3 goes into bush-23's axlehole1 (locked)",
+      "axle6-3's axle4 goes into worm-1's axlehole1 (locked)",
+      "axle5-8's axle4 goes into bush-24's axlehole1 (locked)",
+      "axle6-3's axle6 goes into conn-46's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "conn-47 spins on axle6-3",
+      "axle5-8 carries conn-47",
+      "axle6-3 carries bush-22",
+      "axle6-3 carries bush-23",
+      "axle6-3 carries worm-1",
+      "axle5-8 carries bush-24",
+      "conn-46 spins on axle6-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

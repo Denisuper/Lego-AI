@@ -1,0 +1,10 @@
+ADD beam7-6 32348 black
+POS beam7-6 -1.5 -1 2.5 0.866 0 -0.5 0.5 0 0.866 0 -1 0
+ADD bush-23 3713 lightbluishgrey
+POS bush-23 -1.5 -1 1.5 -0.866 0.5 0 -0.5 -0.866 0 0 0 1
+ADD axle6-4 3706 black
+POS axle6-4 -1.5 -1 0 0 -0.5 -0.866 0 0.866 -0.5 1 0 0
+CONNECT axle6-4.axle6 -> beam7-6.axlehole1 LOCKED
+CONNECT axle6-4.axle5 -> bush-23.axlehole1 LOCKED
+CONNECT axle6-4.axle4 -> beam-1.hole5 TURNS
+CONNECT axle6-4.axle3 -> beam-2.hole5 TURNS

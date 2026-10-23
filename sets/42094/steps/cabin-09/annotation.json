@@ -1,0 +1,132 @@
+{
+  "example_id": "42094-cabin-step-09",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 9,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-138",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-139",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-140",
+        "part_number": "11214",
+        "count": 1
+      },
+      {
+        "name": "pin-141",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-142",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-143",
+        "part_number": "11214",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-138",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-5.9, z=5.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-139",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-4.95, z=5.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-140",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-5.9, z=5.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-141",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-4.95, z=5.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-142",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-5.9, z=5.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-143",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-5.9, z=5.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-140's pin1 goes into pin-138's hole1 (stiff)",
+      "pin-140's axle1 goes into pin-139's hole1 (turns)",
+      "pin-143's axle1 goes into pin-141's hole1 (turns)",
+      "pin-143's pin1 goes into pin-142's hole1 (stiff)",
+      "pin-138's pin1 goes into beam9-8's hole3 (stiff)",
+      "pin-139's pin1 goes into beam9-8's hole4 (stiff)",
+      "pin-141's pin1 goes into beam9-10's hole4 (stiff)",
+      "pin-142's pin1 goes into beam9-10's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-138 holds pin-140",
+      "pin-139 spins on pin-140",
+      "pin-141 spins on pin-143",
+      "pin-142 holds pin-143",
+      "beam9-8 holds pin-138",
+      "beam9-8 holds pin-139",
+      "beam9-10 holds pin-141",
+      "beam9-10 holds pin-142"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

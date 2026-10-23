@@ -1,0 +1,192 @@
+{
+  "example_id": "42094-trackstructu-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x0-3",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-4",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "axle5-9",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "axle5-10",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-5",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "axle5-11",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-6",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "axle5-12",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "conn-83",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "conn-84",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x0-3",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-4",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-9",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-10",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-5",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-11",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-6",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-12",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-83",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-84",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-9's axle4 goes into beam3x0-3's axlehole1 (locked)",
+      "axle3-21's axle3 goes into beam3x0-3's axlehole2 (locked)",
+      "axle5-10's axle4 goes into beam3x0-4's axlehole1 (locked)",
+      "axle3-18's axle3 goes into beam3x0-4's axlehole2 (locked)",
+      "axle5-11's axle4 goes into beam3x0-5's axlehole1 (locked)",
+      "axle3-20's axle3 goes into beam3x0-5's axlehole2 (locked)",
+      "axle5-12's axle4 goes into beam3x0-6's axlehole1 (locked)",
+      "axle3-19's axle3 goes into beam3x0-6's axlehole2 (locked)",
+      "axle5-11's axle3 goes into conn-83's axlehole1 (locked)",
+      "axle5-12's axle3 goes into conn-84's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-9 carries beam3x0-3",
+      "axle3-21 carries beam3x0-3",
+      "axle5-10 carries beam3x0-4",
+      "axle3-18 carries beam3x0-4",
+      "axle5-11 carries beam3x0-5",
+      "axle3-20 carries beam3x0-5",
+      "axle5-12 carries beam3x0-6",
+      "axle3-19 carries beam3x0-6",
+      "axle5-11 carries conn-83",
+      "axle5-12 carries conn-84"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,15 +1,19 @@
 STEP 9
 ADD beam2x4-5 32140 white
 POS beam2x4-5 1 -5.9 5 0 1 0 1 0 0 0 0 -1
-ADD pin-15 43093 blue
-POS pin-15 1.5 -5.9 5 -1 0 0 0 1 0 0 0 -1
-ADD pin-16 2780 black
-POS pin-16 1.5 -5.9 3 1 0 0 0 0 -1 0 1 0
+ADD pin-19 43093 blue
+POS pin-19 1.5 -5.9 5 -1 0 0 0 1 0 0 0 -1
+ADD pin-20 2780 black
+POS pin-20 1.5 -5.9 3 1 0 0 0 0 -1 0 1 0
 ADD beam11-2 32009 white
 POS beam11-2 1 -1.9 6 0 1 0 -1 0 0 0 0 1
-ADD pin-17 43093 blue
-POS pin-17 1.5 -5.9 6 -1 0 0 0 1 0 0 0 -1
-CONNECT pin-16.pin1 -> beam2x4-5.hole2 STIFF
-CONNECT pin-11.pin1 -> beam2x4-5.hole3 STIFF
-CONNECT pin-12.pin1 -> beam2x4-5.hole1 STIFF
-CONNECT pin-8.pin1 -> beam11-2.hole4 STIFF
+ADD pin-21 43093 blue
+POS pin-21 1.5 -5.9 6 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-20.pin1 -> beam2x4-5.hole2 STIFF
+CONNECT pin-14.pin3 -> beam2x4-5.hole4 STIFF
+CONNECT pin-15.pin1 -> beam2x4-5.hole1 STIFF
+CONNECT pin-15.pin2 -> beam2x4-5.hole3 STIFF
+CONNECT pin-2.pin3 -> beam11-2.hole1 STIFF
+CONNECT pin-3.pin3 -> beam11-2.hole3 STIFF
+CONNECT pin-13.pin1 -> beam11-2.hole4 STIFF
+CONNECT pin-17.pin2 -> beam11-2.hole6 STIFF

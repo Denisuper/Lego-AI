@@ -1,0 +1,84 @@
+{
+  "example_id": "8049-arm2-step-15",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam2-16",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "conn-53",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam2-16",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=17, z=20 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-53",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=17.65, z=19.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-4's axle2 goes into beam2-16's axlehole2 (locked)",
+      "axle2-5's axle2 goes into beam2-16's axlehole1 (locked)",
+      "axle2-5's axle1 goes into conn-53's hole1 (turns)",
+      "axle2-6's axle1 goes into beam2-11's axlehole2 (locked)",
+      "axle2-6's axle2 goes into beam2-14's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-4 carries beam2-16",
+      "axle2-5 carries beam2-16",
+      "conn-53 spins on axle2-5",
+      "axle2-6 carries beam2-11",
+      "axle2-6 carries beam2-14"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

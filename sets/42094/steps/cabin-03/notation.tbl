@@ -1,0 +1,19 @@
+ADD pin-107 2780 black
+POS pin-107 0 -6.9 5.15 1 0 0 0 -0.6 0.8 0 -0.8 -0.6
+ADD pin-108 22961 lightbluishgrey
+POS pin-108 0.5 -6.9 5.15 0 -1 0 -0.96 0 0.28 -0.28 0 -0.96
+ADD conn-39 32015 black
+POS conn-39 0.5 -8.8 4.6 -1 0 0 0 -0.994 0.109 0 0.109 0.994
+ADD axle3-8 4519 lightbluishgrey
+POS axle3-8 0.5 -8.8 4.6 -1 0 0 0 -0.96 -0.28 0 -0.28 0.96
+ADD conn-40 26287 lightbluishgrey
+POS conn-40 2.5 -8.8 4.6 0 0 -1 -0.28 0.96 0 0.96 0.28 0
+ADD axle3-9 4519 lightbluishgrey
+POS axle3-9 4.5 -8.8 4.6 -1 0 0 0 -0.96 -0.28 0 -0.28 0.96
+CONNECT pin-107.pin2 -> pin-108.hole1 STIFF
+CONNECT pin-108.axle1 -> conn-39.axlehole2 LOCKED
+CONNECT axle3-8.axle2 -> conn-39.hole1 TURNS
+CONNECT axle3-8.axle1 -> conn-40.axlehole1 LOCKED
+CONNECT axle3-9.axle3 -> conn-40.axlehole1 LOCKED
+CONNECT pin-107.pin1 -> beam9-8.hole2 STIFF
+CONNECT axle3-8.axle3 -> beam9-8.axlehole1 LOCKED

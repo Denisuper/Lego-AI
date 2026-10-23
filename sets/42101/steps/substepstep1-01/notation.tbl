@@ -1,6 +1,7 @@
-ADD conn-8 32184 lightbluishgrey
-POS conn-8 0 0 0 0 0 1 -1 0 0 0 -1 0
-ADD pin-17 3749 tan
-POS pin-17 0 0.5 -1 0 0 1 -1 0 0 0 -1 0
-ADD pin-18 3749 tan
-POS pin-18 0 -0.5 1 0 0 -1 1 0 0 0 -1 0
+ADD beam2x4-2 32140 black
+POS beam2x4-2 0 0 0 0 1 0 -1 0 0 0 0 1
+ADD pin-5 43093 blue
+POS pin-5 -0.5 0 0 1 0 0 0 0 -1 0 1 0
+ADD pin-6 2780 black
+POS pin-6 -0.5 0 1 1 0 0 0 1 0 0 0 1
+CONNECT pin-6.pin2 -> beam2x4-2.hole1 STIFF

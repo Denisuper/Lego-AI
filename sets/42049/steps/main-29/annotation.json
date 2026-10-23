@@ -1,0 +1,48 @@
+{
+  "example_id": "42049-step-29",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 29,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "holes-2",
+        "part_number": "15361",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "holes-2",
+        "part_number": "15361",
+        "catalog_name": "Technic Cylinder Half  3 x  5 x  8 with Pin Holes",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6.45, z=-22.7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-159's pin1 goes into holes-2's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "holes-2 holds pin-159"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,74 @@
+{
+  "example_id": "8049-logloader-step-23",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 23,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam15-3",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "pin-108",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam15-3",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6, y=-12.4, z=-6.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-108",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-12.4, z=-11.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-108's pin1 goes into beam15-3's hole3 (stiff)",
+      "axle7-3's axle7 goes into beam15-3's hole15 (turns)",
+      "pin-77's pin2 goes into beam15-3's hole8 (stiff)",
+      "axle3-8's axle1 goes into beam15-3's hole7 (turns)",
+      "pin-94's pin2 goes into beam15-3's hole5 (stiff)",
+      "pin-97's pin3 goes into beam15-3's hole1 (stiff)",
+      "pin-105's pin2 goes into beam15-3's hole14 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-3 holds pin-108",
+      "beam15-3 spins on axle7-3",
+      "beam15-3 holds pin-77",
+      "beam15-3 spins on axle3-8",
+      "beam15-3 holds pin-94",
+      "beam15-3 holds pin-97",
+      "beam15-3 holds pin-105"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

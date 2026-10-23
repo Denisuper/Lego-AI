@@ -1,0 +1,94 @@
+{
+  "example_id": "42049-gripperlever-step-01",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-1",
+        "part_number": "33299b",
+        "count": 1
+      },
+      {
+        "name": "beam7-3",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-2",
+        "part_number": "33299b",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1.4, z=12.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-1",
+        "part_number": "33299b",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin Semi-Reduced",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=1.4, z=12.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-3",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1.5, z=9.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-2",
+        "part_number": "33299b",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin Semi-Reduced",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1.4, z=12.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-7's axle2 goes into beam3x0-1's axlehole1 (locked)",
+      "axle5-7's axle3 goes into beam7-3's hole1 (turns)",
+      "axle5-7's axle4 goes into beam3x0-2's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-7 carries beam3x0-1",
+      "beam7-3 spins on axle5-7",
+      "axle5-7 carries beam3x0-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

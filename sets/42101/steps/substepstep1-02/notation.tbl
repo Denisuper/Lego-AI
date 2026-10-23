@@ -1,6 +1,4 @@
-ADD axle3-3 24316 reddishbrown
-POS axle3-3 -1 0 0 1 0 0 0 0 1 0 -1 0
-ADD wheel-1 55982 white
-POS wheel-1 -1.5 0 0 0 0 1 -1 0 0 0 -1 0
-ATTACH 92402dat
-CONNECT axle3-3.axle3 -> conn-8.hole1 TURNS
+ADD beam5-1 32316 black
+POS beam5-1 -1 0 0 0 -1 0 1 0 0 0 0 1
+CONNECT pin-5.axle1 -> beam5-1.hole3 TURNS
+CONNECT pin-6.pin1 -> beam5-1.hole4 STIFF

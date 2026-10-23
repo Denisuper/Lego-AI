@@ -1,8 +1,0 @@
-ADD part-26 4-4cyli maincolour
-POS part-26 0 0 0 4 0 0 0 1 0 0 0 4
-ADD part-27 4-4cyli maincolour
-POS part-27 0 0 0 2 0 0 0 1 0 0 0 2
-ADD part-28 4-4ring1 maincolour
-POS part-28 0 0 0 2 0 0 0 1 0 0 0 2
-ADD part-29 4-4ring1 maincolour
-POS part-29 0 0.05 0 2 0 0 0 -1 0 0 0 2

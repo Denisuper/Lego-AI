@@ -1,0 +1,102 @@
+{
+  "example_id": "42094-cabin-step-06",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-10",
+        "part_number": "6629",
+        "count": 1
+      },
+      {
+        "name": "pin-119",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-120",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "conn-42",
+        "part_number": "32015",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-10",
+        "part_number": "6629",
+        "catalog_name": "Technic Beam 1 x 9 Bent (6 - 4) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-119",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-6.9, z=5.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-120",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-6.9, z=5.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-42",
+        "part_number": "32015",
+        "catalog_name": "Technic Axle and Pin Connector Angled #5 - 112.5\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-8.8, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-119's pin2 goes into beam9-10's hole2 (stiff)",
+      "axle3-9's axle1 goes into beam9-10's axlehole1 (locked)",
+      "pin-117's pin2 goes into beam9-10's hole7 (stiff)",
+      "pin-118's axle1 goes into beam9-10's hole5 (turns)",
+      "pin-119's pin1 goes into pin-120's hole1 (stiff)",
+      "pin-120's axle1 goes into conn-42's axlehole2 (locked)",
+      "axle3-9's axle2 goes into conn-42's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-10 holds pin-119",
+      "axle3-9 carries beam9-10",
+      "beam9-10 holds pin-117",
+      "beam9-10 spins on pin-118",
+      "pin-120 holds pin-119",
+      "pin-120 carries conn-42",
+      "conn-42 spins on axle3-9"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

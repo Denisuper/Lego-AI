@@ -1,0 +1,17 @@
+ADD pin-136 32054 black
+POS pin-136 5 -18.4 -12.5 -1 0 0 0 -1 0 0 0 1
+ADD pin-137 32054 black
+POS pin-137 5 -18.4 -11.5 -1 0 0 0 -1 0 0 0 1
+ADD pin-138 32054 black
+POS pin-138 1 -18.4 -12.5 1 0 0 0 1 0 0 0 1
+ADD pin-139 32054 black
+POS pin-139 1 -18.4 -11.5 1 0 0 0 1 0 0 0 1
+ATTACH arm1
+CONNECT pin-138.pin2 -> beam11-13.hole7 STIFF
+CONNECT pin-139.pin2 -> beam11-13.hole8 STIFF
+CONNECT pin-136.pin2 -> beam11-14.hole7 STIFF
+CONNECT pin-137.pin2 -> beam11-14.hole8 STIFF
+CONNECT pin-136.pin1 -> gear56-1.hole2 STIFF
+CONNECT pin-137.pin1 -> gear56-1.hole5 STIFF
+CONNECT pin-138.pin1 -> gear56-1.hole1 STIFF
+CONNECT pin-139.pin1 -> gear56-1.hole3 STIFF

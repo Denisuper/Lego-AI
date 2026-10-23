@@ -1,0 +1,10 @@
+ADD axle3-18 4519 lightbluishgrey
+POS axle3-18 0.25 0 0 1 0 0 0 0 1 0 -1 0
+ADD bush-19 32123b lightbluishgrey
+POS bush-19 1 0 0 0 0 1 0 -1 0 1 0 0
+ADD bush-20 32123b lightbluishgrey
+POS bush-20 -0.5 0 0 0 0 1 0 -1 0 1 0 0
+CONNECT axle3-18.axle3 -> bush-19.axlehole1 LOCKED
+CONNECT axle3-18.axle1 -> bush-20.axlehole1 LOCKED
+CONNECT axle3-18.axle2 -> beam2-7.axlehole1 LOCKED
+CONNECT axle3-18.axle2 -> beam2-8.axlehole1 LOCKED

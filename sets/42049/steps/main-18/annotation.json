@@ -1,0 +1,140 @@
+{
+  "example_id": "42049-step-18",
+  "set": "LEGO Technic 42049",
+  "page": null,
+  "step": 18,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-7",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "pin-105",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam2x4-2",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "axle2-15",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "beam2-14",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "beam5-8",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-7",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-4.6, z=-12.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-105",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=-4.3, z=-11.95 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2x4-2",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-7.45, z=-11.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-15",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-7.45, z=-11.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-14",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-7.45, z=-11.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-8",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-8.6, z=-12.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-105's pin1 goes into beam5-7's hole4 (stiff)",
+      "pin-58's pin2 goes into beam5-7's hole5 (turns)",
+      "pin-92's pin1 goes into beam5-7's hole1 (turns)",
+      "pin-101's pin2 goes into beam5-7's hole3 (stiff)",
+      "pin-105's pin2 goes into beam2x4-2's hole4 (stiff)",
+      "axle2-15's axle2 goes into beam2x4-2's axlehole1 (locked)",
+      "axle4-15's axle1 goes into beam2x4-2's hole3 (turns)",
+      "pin-101's pin1 goes into beam2x4-2's hole3 (stiff)",
+      "axle2-15's axle1 goes into beam2-14's axlehole1 (locked)",
+      "pin-86's pin1 goes into beam2-14's hole1 (turns)",
+      "pin-57's pin2 goes into beam5-8's hole5 (turns)",
+      "pin-93's pin1 goes into beam5-8's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-7 holds pin-105",
+      "pin-58 spins on beam5-7",
+      "pin-92 spins on beam5-7",
+      "beam5-7 holds pin-101",
+      "beam2x4-2 holds pin-105",
+      "axle2-15 carries beam2x4-2",
+      "beam2x4-2 spins on axle4-15",
+      "beam2x4-2 holds pin-101",
+      "axle2-15 carries beam2-14",
+      "pin-86 spins on beam2-14",
+      "pin-57 spins on beam5-8",
+      "pin-93 spins on beam5-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

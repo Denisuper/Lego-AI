@@ -45,6 +45,5 @@ CONNECT axle55-7.axle5 -> beam3x3-4.axlehole2 LOCKED
 CONNECT axle5-7.axle5 -> beam3x3-4.axlehole3 LOCKED
 CONNECT pin-179.pin1 -> beam15-9.hole14 STIFF
 CONNECT pin-180.pin1 -> beam15-9.hole12 STIFF
-CONNECT axle2-11.axle1 -> assembly-4.hole1 TURNS
 CONNECT axle2-11.axle2 -> beam3-10.axlehole1 LOCKED
 CONNECT axle2-11.axle1 -> beam3-11.axlehole1 LOCKED

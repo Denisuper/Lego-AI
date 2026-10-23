@@ -1,0 +1,192 @@
+{
+  "example_id": "42094-step-16",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 16,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-93",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "holes-3",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "pin-94",
+        "part_number": "27940",
+        "count": 1
+      },
+      {
+        "name": "conn-35",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "pin-95",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-96",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "holes-4",
+        "part_number": "25214",
+        "count": 1
+      },
+      {
+        "name": "pin-97",
+        "part_number": "27940",
+        "count": 1
+      },
+      {
+        "name": "conn-36",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "pin-98",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-93",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-12.25, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "holes-3",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-12.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-94",
+        "part_number": "27940",
+        "catalog_name": "Technic Pin Connector Hub with 2 Axles",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-10.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-35",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-8.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-95",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-8.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-96",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-12.25, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "holes-4",
+        "part_number": "25214",
+        "catalog_name": "Cylinder  2 x  2 Elbow with Axle Holes",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-12.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-97",
+        "part_number": "27940",
+        "catalog_name": "Technic Pin Connector Hub with 2 Axles",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-10.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-36",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-8.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-98",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-8.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-94's axle2 goes into holes-3's axlehole1 (locked)",
+      "pin-94's axle1 goes into conn-35's axlehole1 (locked)",
+      "pin-95's pin1 goes into conn-35's hole1 (stiff)",
+      "pin-97's axle1 goes into holes-4's axlehole2 (locked)",
+      "pin-97's axle2 goes into conn-36's axlehole1 (locked)",
+      "pin-98's pin2 goes into conn-36's hole1 (stiff)",
+      "pin-98's pin1 goes into beam13-3's hole11 (stiff)",
+      "pin-95's pin2 goes into beam13-4's hole11 (stiff)",
+      "pin-93's axle1 goes into panel-2's hole4 (turns)",
+      "pin-96's axle1 goes into panel-4's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-94 carries holes-3",
+      "pin-94 carries conn-35",
+      "conn-35 holds pin-95",
+      "pin-97 carries holes-4",
+      "pin-97 carries conn-36",
+      "conn-36 holds pin-98",
+      "beam13-3 holds pin-98",
+      "beam13-4 holds pin-95",
+      "panel-2 spins on pin-93",
+      "panel-4 spins on pin-96"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

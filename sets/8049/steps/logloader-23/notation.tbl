@@ -1,0 +1,11 @@
+ADD beam15-3 32278 black
+POS beam15-3 6 -12.4 -6.5 0 -1 0 1 0 0 0 0 1
+ADD pin-108 2780 black
+POS pin-108 6.5 -12.4 -11.5 1 0 0 0 0.259 -0.966 0 0.966 0.259
+CONNECT pin-108.pin1 -> beam15-3.hole3 STIFF
+CONNECT axle7-3.axle7 -> beam15-3.hole15 TURNS
+CONNECT pin-77.pin2 -> beam15-3.hole8 STIFF
+CONNECT axle3-8.axle1 -> beam15-3.hole7 TURNS
+CONNECT pin-94.pin2 -> beam15-3.hole5 STIFF
+CONNECT pin-97.pin3 -> beam15-3.hole1 STIFF
+CONNECT pin-105.pin2 -> beam15-3.hole14 STIFF

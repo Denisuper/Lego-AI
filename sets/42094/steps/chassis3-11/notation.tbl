@@ -1,0 +1,19 @@
+ADD pin-48 11214 red
+POS pin-48 -2 -7 4 1 0 0 0 0 1 0 -1 0
+ADD beam9-1 40490 yellow
+POS beam9-1 -2 -7 8 0 -1 0 1 0 0 0 0 1
+ADD pin-49 6558 blue
+POS pin-49 -2 -7 5 -1 0 0 0 -1 0 0 0 1
+ADD conn-23 32034 darkbluishgrey
+POS conn-23 0 -7 4 0 0 -1 0 1 0 1 0 0
+ADD pin-50 32054 black
+POS pin-50 0 -7 4 0 0 -1 0 -1 0 -1 0 0
+ADD pin-51 11214 red
+POS pin-51 2 -7 4 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-48.pin1 -> beam9-1.hole1 STIFF
+CONNECT pin-49.pin2 -> beam9-1.hole2 STIFF
+CONNECT pin-50.pin1 -> conn-23.hole1 STIFF
+CONNECT pin-48.axle1 -> beam11-1.hole7 TURNS
+CONNECT pin-49.pin3 -> beam11-1.hole8 STIFF
+CONNECT pin-50.pin2 -> beam-8.hole4 STIFF
+CONNECT pin-50.pin2 -> beam-9.hole4 STIFF

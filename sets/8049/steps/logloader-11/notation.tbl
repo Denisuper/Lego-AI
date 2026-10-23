@@ -1,0 +1,7 @@
+ADD gear8-1 10928 darkbluishgrey
+POS gear8-1 3 -17.4 -7.5 -1 0 0 0 0 1 0 1 0
+ADD axle4-10 3705 black
+POS axle4-10 3 -16.4 11 0 0 1 0 1 0 -1 0 0
+CONNECT axle4-8.axle4 -> gear8-1.axlehole1 LOCKED
+CONNECT axle4-10.axle3 -> conn-30.hole1 TURNS
+CONNECT axle4-10.axle4 -> conn-36.axlehole1 LOCKED

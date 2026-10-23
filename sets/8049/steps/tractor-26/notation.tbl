@@ -1,0 +1,3 @@
+ATTACH front
+CONNECT conn-16.axle2 -> conn-17.axlehole1 LOCKED
+CONNECT axle3-6.axle2 -> beam2-1.hole1 TURNS

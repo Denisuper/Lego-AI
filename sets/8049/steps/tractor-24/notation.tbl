@@ -1,0 +1,20 @@
+ADD conn-9 42003 black
+POS conn-9 0 5.8 4.95 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+ADD axle8-2 3707 black
+POS axle8-2 0 3.1 5.05 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+ADD conn-10 6536 white
+POS conn-10 0 -0.2 3.95 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+ADD conn-11 42003 black
+POS conn-11 -8 5.8 4.95 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+ADD axle8-3 3707 black
+POS axle8-3 -8 3.1 5.1 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+ADD conn-12 6536 white
+POS conn-12 -8 -0.2 3.95 0 0 1 -0.946 0.326 0 -0.326 -0.946 0
+CONNECT axle8-2.axle2 -> conn-9.axlehole1 LOCKED
+CONNECT pin-32.pin3 -> conn-9.hole2 STIFF
+CONNECT axle8-2.axle8 -> conn-10.axlehole1 LOCKED
+CONNECT pin-36.pin1 -> conn-10.hole1 STIFF
+CONNECT axle8-3.axle2 -> conn-11.axlehole1 LOCKED
+CONNECT pin-21.pin3 -> conn-11.hole2 STIFF
+CONNECT axle8-3.axle8 -> conn-12.axlehole1 LOCKED
+CONNECT pin-34.pin1 -> conn-12.hole1 STIFF

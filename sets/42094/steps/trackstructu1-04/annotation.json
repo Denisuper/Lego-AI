@@ -1,0 +1,224 @@
+{
+  "example_id": "42094-trackstructu1-step-04",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-225",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-226",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-227",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-228",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "wheel-9",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-10",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-11",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-12",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-13",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-14",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-15",
+        "part_number": "42610",
+        "count": 1
+      },
+      {
+        "name": "wheel-16",
+        "part_number": "42610",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-225",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-226",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-227",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-228",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-1, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-9",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-10",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-11",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-12",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-13",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-14",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-15",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-16",
+        "part_number": "42610",
+        "catalog_name": "Wheel Rim  8 x 11.2 with Centre Groove",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "beam3x0-15's pin1 goes into wheel-9's hole1 (stiff)",
+      "beam3x0-16's pin1 goes into wheel-10's hole1 (stiff)",
+      "beam3x0-17's pin1 goes into wheel-11's hole1 (stiff)",
+      "beam3x0-18's pin1 goes into wheel-12's hole1 (stiff)",
+      "beam3x0-13's pin1 goes into wheel-13's hole1 (stiff)",
+      "beam3x0-11's pin1 goes into wheel-14's hole1 (stiff)",
+      "beam3x0-12's pin1 goes into wheel-15's hole1 (stiff)",
+      "beam3x0-14's pin1 goes into wheel-16's hole1 (stiff)",
+      "pin-227's pin2 goes into conn-91's hole1 (stiff)",
+      "pin-228's pin2 goes into conn-92's hole1 (stiff)",
+      "pin-225's pin1 goes into conn-93's hole1 (stiff)",
+      "pin-226's pin1 goes into conn-94's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "wheel-9 holds beam3x0-15",
+      "wheel-10 holds beam3x0-16",
+      "wheel-11 holds beam3x0-17",
+      "wheel-12 holds beam3x0-18",
+      "wheel-13 holds beam3x0-13",
+      "wheel-14 holds beam3x0-11",
+      "wheel-15 holds beam3x0-12",
+      "wheel-16 holds beam3x0-14",
+      "conn-91 holds pin-227",
+      "conn-92 holds pin-228",
+      "conn-93 holds pin-225",
+      "conn-94 holds pin-226"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

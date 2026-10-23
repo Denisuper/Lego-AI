@@ -1,0 +1,32 @@
+ADD pin-172 2780 black
+POS pin-172 -0.5 0 -5 1 0 0 0 -1 0 0 0 -1
+ADD pin-173 2780 black
+POS pin-173 -0.5 0 -3 1 0 0 0 -1 0 0 0 -1
+ADD pin-174 2780 black
+POS pin-174 -0.5 0 2 1 0 0 0 -1 0 0 0 -1
+ADD pin-175 43093 blue
+POS pin-175 2 0.5 1 0 -1 0 -1 0 0 0 0 -1
+ADD conn-63 32013 yellow
+POS conn-63 2 -1 1 0 1 0 0 0 -1 -1 0 0
+ADD axle3-14 6587 darktan
+POS axle3-14 2 -1 0 0 -1 0 0 0 -1 1 0 0
+ADD bush-11 32123b yellow
+POS bush-11 2 -1 0.25 0 1 0 1 0 0 0 0 -1
+ADD bush-12 32123b yellow
+POS bush-12 2 -1 -0.25 0 1 0 1 0 0 0 0 -1
+ADD groove-13 98138 transclear
+POS groove-13 2 -1 1.9 0 0 -1 1 0 0 0 -1 0
+ADD pin-176 43093 blue
+POS pin-176 2 0.5 -2 0 0 1 -1 0 0 0 -1 0
+ADD holes-13 25214 yellow
+POS holes-13 2 -1 -2 0 1 0 -1 0 0 0 0 1
+CONNECT axle3-14.axle3 -> conn-63.hole1 TURNS
+CONNECT axle3-14.axle2 -> bush-11.axlehole1 LOCKED
+CONNECT axle3-14.axle2 -> bush-12.axlehole1 LOCKED
+CONNECT axle3-14.pin1 -> groove-13.hole1 STIFF
+CONNECT axle3-14.axle1 -> holes-13.axlehole2 LOCKED
+CONNECT pin-174.pin2 -> panel-9.hole6 STIFF
+CONNECT pin-175.axle1 -> panel-9.hole5 TURNS
+CONNECT pin-172.pin2 -> panel-10.hole8 STIFF
+CONNECT pin-173.pin2 -> panel-10.hole6 STIFF
+CONNECT pin-176.axle1 -> panel-10.hole5 TURNS

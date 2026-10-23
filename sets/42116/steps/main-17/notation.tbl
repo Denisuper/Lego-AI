@@ -1,5 +1,5 @@
 STEP 17
 ATTACH side2
-CONNECT axle6-1.axle1 -> conn-14.axlehole1 LOCKED
-CONNECT pin-16.pin2 -> conn-15.hole1 STIFF
-CONNECT pin-30.pin1 -> beam2x4-5.hole2 STIFF
+CONNECT axle6-1.axle1 -> conn-9.axlehole1 LOCKED
+CONNECT pin-20.pin2 -> conn-10.hole1 STIFF
+CONNECT pin-37.pin1 -> beam2x4-5.hole2 STIFF

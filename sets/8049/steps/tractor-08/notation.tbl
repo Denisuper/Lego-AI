@@ -1,0 +1,8 @@
+ADD pin-15 3749 tan
+POS pin-15 -7 10.65 -8.5 0 1 0 1 0 0 0 0 -1
+ADD pin-16 3749 tan
+POS pin-16 -1 10.65 -8.5 0 1 0 1 0 0 0 0 -1
+ADD holes-1 87761 black
+POS holes-1 -4 10.15 -8.5 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-15.axle1 -> holes-1.hole2 TURNS
+CONNECT pin-16.axle1 -> holes-1.hole1 TURNS

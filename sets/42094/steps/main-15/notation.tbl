@@ -1,0 +1,35 @@
+STEP 15
+ADD holes-2 25214 yellow
+POS holes-2 7 -7.25 12 0 0 -1 1 0 0 0 -1 0
+ADD pin-89 18651 black
+POS pin-89 5 -7.25 12 1 0 0 0 0 1 0 -1 0
+ADD conn-34 63869 black
+POS conn-34 5 -7.25 12 -1 0 0 0 -1 0 0 0 1
+ADD pin-90 4274 lightbluishgrey
+POS pin-90 4 -8.25 12.5 0 0 -1 0 1 0 1 0 0
+ADD pin-91 4274 lightbluishgrey
+POS pin-91 5 -8.25 12.5 0 0 -1 0 1 0 1 0 0
+ADD pin-92 4274 lightbluishgrey
+POS pin-92 6 -8.25 12.5 0 0 -1 0 1 0 1 0 0
+ADD groove-4 98138 transclear
+POS groove-4 4 -8.25 12.9 0 0 -1 1 0 0 0 -1 0
+ADD groove-5 98138 transred
+POS groove-5 5 -8.25 12.9 0 0 -1 1 0 0 0 -1 0
+ADD groove-6 98138 transorange
+POS groove-6 6 -8.25 12.9 0 0 -1 1 0 0 0 -1 0
+ATTACH side2
+CONNECT axle2-5.axle1 -> holes-2.axlehole1 LOCKED
+CONNECT pin-89.axle2 -> conn-34.axlehole1 LOCKED
+CONNECT pin-90.pin1 -> conn-34.hole3 TURNS
+CONNECT pin-91.pin1 -> conn-34.hole2 TURNS
+CONNECT pin-92.pin1 -> conn-34.hole1 TURNS
+CONNECT pin-90.pin2 -> groove-4.hole1 TURNS
+CONNECT pin-91.pin2 -> groove-5.hole1 TURNS
+CONNECT pin-92.pin2 -> groove-6.hole1 TURNS
+CONNECT pin-10.pin2 -> panel-3.hole5 STIFF
+CONNECT pin-23.pin1 -> pin-79.hole1 STIFF
+CONNECT pin-42.pin2 -> pin-82.hole3 STIFF
+CONNECT pin-41.pin2 -> pin-85.hole1 STIFF
+CONNECT axle9-3.axle1 -> conn-33.axlehole1 LOCKED
+CONNECT pin-57.axle1 -> panel-4.hole5 TURNS
+CONNECT pin-89.axle1 -> conn-19.hole1 TURNS

@@ -1,0 +1,127 @@
+{
+  "example_id": "42094-chassis2-step-01",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5x11-2",
+        "part_number": "64178",
+        "count": 1
+      },
+      {
+        "name": "pin-21",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-22",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "axle9-1",
+        "part_number": "60485",
+        "count": 1
+      },
+      {
+        "name": "conn-4",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "gear12-5",
+        "part_number": "6589",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5x11-2",
+        "part_number": "64178",
+        "catalog_name": "Technic Beam 5 x 11 with 3 x 5 Opening Frame Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-21",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-22",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle9-1",
+        "part_number": "60485",
+        "catalog_name": "Technic Axle 9",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-4",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-5",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-3.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-21's pin1 goes into beam5x11-2's hole4 (stiff)",
+      "pin-22's pin2 goes into beam5x11-2's hole3 (stiff)",
+      "axle9-1's axle2 goes into beam5x11-2's hole7 (turns)",
+      "axle9-1's axle8 goes into beam5x11-2's hole22 (turns)",
+      "axle9-1's axle9 goes into conn-4's axlehole2 (locked)",
+      "axle9-1's axle1 goes into gear12-5's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam5x11-2 holds pin-21",
+      "beam5x11-2 holds pin-22",
+      "beam5x11-2 spins on axle9-1",
+      "axle9-1 carries conn-4",
+      "axle9-1 carries gear12-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

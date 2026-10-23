@@ -1,0 +1,132 @@
+{
+  "example_id": "42094-claw-step-09",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 9,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle3-17",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "beam9-19",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-193",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-194",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam3-4",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "pin-195",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-17",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=8, y=-3.7, z=7.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-19",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-2.25, z=11.95 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-193",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=8, y=-3.45, z=8.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-194",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=8, y=-3.15, z=9.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-4",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=8, y=-3.45, z=8.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-195",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-2.85, z=10.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-193's pin1 goes into beam9-19's hole9 (stiff)",
+      "pin-194's pin1 goes into beam9-19's hole8 (stiff)",
+      "pin-195's pin1 goes into beam9-19's hole7 (turns)",
+      "axle3-17's axle2 goes into beam3-4's hole3 (turns)",
+      "pin-193's pin2 goes into beam3-4's hole2 (stiff)",
+      "pin-194's pin2 goes into beam3-4's hole1 (stiff)",
+      "axle3-17's axle1 goes into beam9-15's axlehole1 (locked)",
+      "axle3-17's axle3 goes into beam9-16's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-19 holds pin-193",
+      "beam9-19 holds pin-194",
+      "pin-195 spins on beam9-19",
+      "beam3-4 spins on axle3-17",
+      "beam3-4 holds pin-193",
+      "beam3-4 holds pin-194",
+      "axle3-17 carries beam9-15",
+      "axle3-17 carries beam9-16"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

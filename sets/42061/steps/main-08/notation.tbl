@@ -1,0 +1,15 @@
+STEP 8
+ADD axle3-5 24316 reddishbrown
+POS axle3-5 -3 -4 -9 0 -0.943 0.333 1 0 0 0 0.333 0.943
+ADD cam-3 6575 darkbluishgrey
+POS cam-3 -2.85 -2.85 -8.55 -0.943 0.333 0 0 0 1 0.333 0.943 0
+ADD pin-21 3749 tan
+POS pin-21 -3.5 -3.6 -10.4 0 0.333 0.943 1 0 0 0 0.943 -0.333
+ADD cam-4 6575 darkbluishgrey
+POS cam-4 -3.15 -3.35 -9.45 0.943 -0.333 0 0 0 1 -0.333 -0.943 0
+ADD pin-22 3749 tan
+POS pin-22 -2.5 -2.6 -7.6 0 0.303 -0.953 -1 0 0 0 0.953 0.303
+ADD bush-3 32123a yellow
+POS bush-3 -3 -4.85 -9 0.333 0.943 0 0 0 1 0.943 -0.333 0
+CONNECT axle3-5.axle1 -> bush-3.axlehole1 LOCKED
+CONNECT axle3-5.axle2 -> beam3x5-1.hole3 TURNS

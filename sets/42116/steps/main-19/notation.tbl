@@ -1,27 +1,27 @@
 STEP 19
 ADD axle2-1 32062 red
 POS axle2-1 2 -8.4 2 0 1 0 -1 0 0 0 0 1
-ADD conn-18 32013 black
-POS conn-18 2 -6.9 2 0 -1 0 0 0 1 -1 0 0
-ADD conn-19 32013 black
-POS conn-19 2 -9.9 2 -1 0 0 0 0 -1 0 -1 0
-ADD pin-31 43093 blue
-POS pin-31 1.5 -9.9 2 -1 0 0 0 0 -1 0 -1 0
+ADD conn-13 32013 black
+POS conn-13 2 -6.9 2 0 -1 0 0 0 1 -1 0 0
+ADD conn-14 32013 black
+POS conn-14 2 -9.9 2 -1 0 0 0 0 -1 0 -1 0
+ADD pin-38 43093 blue
+POS pin-38 1.5 -9.9 2 -1 0 0 0 0 -1 0 -1 0
 ADD axle2-2 32062 red
 POS axle2-2 -2 -8.4 2 0 -1 0 -1 0 0 0 0 -1
-ADD conn-20 32013 black
-POS conn-20 -2 -6.9 2 0 1 0 0 0 1 1 0 0
-ADD conn-21 32013 black
-POS conn-21 -2 -9.9 2 1 0 0 0 0 -1 0 1 0
-ADD pin-32 43093 blue
-POS pin-32 -1.5 -9.9 2 1 0 0 0 0 -1 0 1 0
-ADD conn-22 32034 black
-POS conn-22 0 -9.9 2 0 0 -1 -1 0 0 0 1 0
-CONNECT axle2-1.axle1 -> conn-18.axlehole1 LOCKED
-CONNECT pin-29.axle1 -> conn-18.hole1 TURNS
-CONNECT axle2-1.axle2 -> conn-19.axlehole1 LOCKED
-CONNECT pin-31.axle1 -> conn-19.hole1 TURNS
-CONNECT axle2-2.axle1 -> conn-20.axlehole1 LOCKED
-CONNECT pin-22.axle1 -> conn-20.hole1 TURNS
-CONNECT axle2-2.axle2 -> conn-21.axlehole1 LOCKED
-CONNECT pin-32.axle1 -> conn-21.hole1 TURNS
+ADD conn-15 32013 black
+POS conn-15 -2 -6.9 2 0 1 0 0 0 1 1 0 0
+ADD conn-16 32013 black
+POS conn-16 -2 -9.9 2 1 0 0 0 0 -1 0 1 0
+ADD pin-39 43093 blue
+POS pin-39 -1.5 -9.9 2 1 0 0 0 0 -1 0 1 0
+ADD conn-17 32034 black
+POS conn-17 0 -9.9 2 0 0 -1 -1 0 0 0 1 0
+CONNECT axle2-1.axle1 -> conn-13.axlehole1 LOCKED
+CONNECT pin-36.axle1 -> conn-13.hole1 TURNS
+CONNECT axle2-1.axle2 -> conn-14.axlehole1 LOCKED
+CONNECT pin-38.axle1 -> conn-14.hole1 TURNS
+CONNECT axle2-2.axle1 -> conn-15.axlehole1 LOCKED
+CONNECT pin-29.axle1 -> conn-15.hole1 TURNS
+CONNECT axle2-2.axle2 -> conn-16.axlehole1 LOCKED
+CONNECT pin-39.axle1 -> conn-16.hole1 TURNS

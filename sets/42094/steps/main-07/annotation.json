@@ -1,0 +1,132 @@
+{
+  "example_id": "42094-step-07",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-17",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-18",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "base-1",
+        "part_number": "18939",
+        "count": 1
+      },
+      {
+        "name": "gear60-1",
+        "part_number": "18938",
+        "count": 1
+      },
+      {
+        "name": "pin-19",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-20",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-17",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-8.25, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-18",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-8.25, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "base-1",
+        "part_number": "18939",
+        "catalog_name": "Technic Turntable Large Type 3 Base",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-9.25, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear60-1",
+        "part_number": "18938",
+        "catalog_name": "Technic Turntable Large Type 3 Top, 60 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-9.25, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-19",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-8.25, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-20",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-8.25, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-17's pin1 goes into base-1's hole6 (stiff)",
+      "pin-18's pin1 goes into base-1's hole4 (stiff)",
+      "pin-19's pin2 goes into base-1's hole3 (stiff)",
+      "pin-20's pin2 goes into base-1's hole1 (stiff)",
+      "pin-17's pin2 goes into beam5x11-1's hole21 (stiff)",
+      "pin-18's pin2 goes into beam5x11-1's hole23 (stiff)",
+      "pin-19's pin1 goes into beam5x11-1's hole6 (stiff)",
+      "pin-20's pin1 goes into beam5x11-1's hole8 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "base-1 holds pin-17",
+      "base-1 holds pin-18",
+      "base-1 holds pin-19",
+      "base-1 holds pin-20",
+      "beam5x11-1 holds pin-17",
+      "beam5x11-1 holds pin-18",
+      "beam5x11-1 holds pin-19",
+      "beam5x11-1 holds pin-20"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

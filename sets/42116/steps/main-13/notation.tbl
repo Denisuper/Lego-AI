@@ -1,18 +1,19 @@
 STEP 13
 ADD axle6-1 3706 red
 POS axle6-1 -0.5 -3.9 1 -1 0 0 0 -1 0 0 0 1
-ADD conn-12 99021 darkbluishgrey
-POS conn-12 -3 -3.9 1 0 0 1 1 0 0 0 1 0
+ADD bush-1 99021 darkbluishgrey
+POS bush-1 -3 -3.9 1 0 0 1 1 0 0 0 1 0
 ADD axle6-2 3706 red
 POS axle6-2 -0.5 -4.9 6 -1 0 0 0 -1 0 0 0 1
 ADD beam3x0-1 33299a black
 POS beam3x0-1 -3 -4.9 6 0 -1 0 -1 0 0 0 0 -1
 ADD gear20-2 18575 tan
 POS gear20-2 0 -4.9 6 0 0 -1 0 1 0 1 0 0
+CONNECT axle6-1.axle6 -> bush-1.axlehole1 LOCKED
 CONNECT axle6-2.axle6 -> beam3x0-1.axlehole1 LOCKED
 CONNECT axle6-2.axle3 -> gear20-2.axlehole1 LOCKED
 CONNECT axle6-2.axle4 -> beam11-1.hole8 TURNS
 CONNECT axle6-2.axle5 -> beam3x3-1.hole5 TURNS
 CONNECT axle6-2.axle2 -> beam11-2.hole8 TURNS
 CONNECT axle6-1.axle4 -> beam2-1.axlehole1 LOCKED
-CONNECT axle6-1.axle5 -> conn-8.axlehole1 LOCKED
+CONNECT axle6-1.axle5 -> conn-4.axlehole1 LOCKED

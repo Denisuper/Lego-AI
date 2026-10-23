@@ -1,0 +1,48 @@
+{
+  "example_id": "42101-substepstep31-step-03",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-2",
+        "part_number": "11946",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-2",
+        "part_number": "11946",
+        "catalog_name": "Technic Panel Fairing #21 5L Small Smooth, Side B",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-5's axle1 goes into panel-2's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-5 carries panel-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

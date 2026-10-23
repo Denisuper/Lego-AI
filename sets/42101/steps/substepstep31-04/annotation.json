@@ -1,0 +1,64 @@
+{
+  "example_id": "42101-substepstep31-step-04",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-12",
+        "part_number": "32192",
+        "count": 1
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-12",
+        "part_number": "32192",
+        "catalog_name": "Technic Axle and Pin Connector Angled #4 - 135\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-7",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1.05, z=-4.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-7's axle1 goes into conn-12's axlehole2 (locked)",
+      "conn-11's axle2 goes into conn-12's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-7 carries conn-12",
+      "conn-11 carries conn-12"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

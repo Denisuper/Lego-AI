@@ -1,0 +1,142 @@
+{
+  "example_id": "42094-chassis3-step-01",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-9",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "pin-29",
+        "part_number": "27940",
+        "count": 1
+      },
+      {
+        "name": "conn-10",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "pin-30",
+        "part_number": "32556",
+        "count": 1
+      },
+      {
+        "name": "pin-31",
+        "part_number": "32556",
+        "count": 1
+      },
+      {
+        "name": "beam-3",
+        "part_number": "18654",
+        "count": 1
+      },
+      {
+        "name": "beam-4",
+        "part_number": "18654",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-9",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-29",
+        "part_number": "27940",
+        "catalog_name": "Technic Pin Connector Hub with 2 Axles",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-10",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-30",
+        "part_number": "32556",
+        "catalog_name": "Technic Pin Long without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-31",
+        "part_number": "32556",
+        "catalog_name": "Technic Pin Long without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-3",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-4",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-29's axle2 goes into conn-9's axlehole1 (locked)",
+      "pin-30's pin1 goes into conn-9's hole2 (turns)",
+      "pin-29's axle1 goes into conn-10's axlehole1 (locked)",
+      "pin-31's pin1 goes into conn-10's hole2 (turns)",
+      "pin-30's pin2 goes into beam-3's hole1 (turns)",
+      "pin-31's pin2 goes into beam-4's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-29 carries conn-9",
+      "pin-30 spins on conn-9",
+      "pin-29 carries conn-10",
+      "pin-31 spins on conn-10",
+      "pin-30 spins on beam-3",
+      "pin-31 spins on beam-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

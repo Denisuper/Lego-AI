@@ -1,0 +1,14 @@
+ADD beam2x4-8 32140 black
+POS beam2x4-8 2 0.1 10.9 0 -1 0 1 0 -0.027 0.027 0 1
+ADD beam5-9 11478 black
+POS beam5-9 2.25 2.05 9.45 0 -1 0 -0.23 0 0.973 -0.973 0 -0.23
+ADD axle5-13 15462 darktan
+POS axle5-13 0.1 4 9 1 0 0 0 -0.23 0.973 0 -0.973 -0.23
+ADD bush-30 32123a lightbluishgrey
+POS bush-30 1.75 4 9 0 0 -1 0.23 0.973 0 0.973 -0.23 0
+CONNECT pin-116.pin3 -> beam2x4-8.hole4 STIFF
+CONNECT pin-117.pin3 -> beam2x4-8.hole3 STIFF
+CONNECT axle3-9.axle3 -> beam2x4-8.axlehole1 LOCKED
+CONNECT axle5-13.axle5 -> beam5-9.axlehole2 LOCKED
+CONNECT axle3-10.axle3 -> beam5-9.axlehole1 LOCKED
+CONNECT axle5-13.axle5 -> bush-30.axlehole1 LOCKED

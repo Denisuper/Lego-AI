@@ -1,0 +1,27 @@
+STEP 27
+ADD pin-154 4274 lightbluishgrey
+POS pin-154 -1 -8.45 13 0 1 0 -1 0 0 0 0 1
+ADD rapier-1 93550 metallicdarkgrey
+POS rapier-1 -1 -8.6 13 0 0 1 0 1 0 -1 0 0
+ADD wheel-1 86652 lightbluishgrey
+POS wheel-1 -6.5 -3.95 11 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-2 86652 lightbluishgrey
+POS wheel-2 -6.5 -3.95 -8 0 0 -1 0 -1 0 -1 0 0
+ADD tyre-1 32019 rubberblack
+POS tyre-1 -6.5 -3.95 -8 0 0 -1 0 -1 0 -1 0 0
+ADD tyre-2 32019 rubberblack
+POS tyre-2 -6.5 -3.95 11 0 0 -1 0 -1 0 -1 0 0
+ADD wheel-3 86652 lightbluishgrey
+POS wheel-3 6.5 -3.95 11 0 0 1 0 1 0 -1 0 0
+ADD wheel-4 86652 lightbluishgrey
+POS wheel-4 6.5 -3.95 -8 0 0 1 0 1 0 -1 0 0
+ADD tyre-3 32019 rubberblack
+POS tyre-3 6.5 -3.95 -8 0 0 1 0 1 0 -1 0 0
+ADD tyre-4 32019 rubberblack
+POS tyre-4 6.5 -3.95 11 0 0 1 0 1 0 -1 0 0
+CONNECT rapier-1.bar1 -> pin-154.barhole1 TURNS
+CONNECT axle4-2.axle1 -> wheel-1.axlehole1 LOCKED
+CONNECT axle4-10.axle1 -> wheel-2.axlehole1 LOCKED
+CONNECT axle4-1.axle3 -> wheel-3.axlehole1 LOCKED
+CONNECT axle4-12.axle1 -> wheel-4.axlehole1 LOCKED
+CONNECT pin-154.pin1 -> beam3x5-2.hole6 TURNS

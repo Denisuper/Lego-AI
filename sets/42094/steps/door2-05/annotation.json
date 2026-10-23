@@ -1,0 +1,80 @@
+{
+  "example_id": "42094-door2-step-05",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-62",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "towball-3",
+        "part_number": "2736",
+        "count": 1
+      },
+      {
+        "name": "pin-167",
+        "part_number": "6628",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-62",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.9, y=2, z=-1.8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "towball-3",
+        "part_number": "2736",
+        "catalog_name": "Technic Axle Towball",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=2, z=-1.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-167",
+        "part_number": "6628",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Towball",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-0.5, z=-0.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "towball-3's axle1 goes into conn-62's axlehole1 (locked)",
+      "pin-163's axle1 goes into conn-62's hole2 (turns)",
+      "pin-167's pin1 goes into pin-160's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "towball-3 carries conn-62",
+      "conn-62 spins on pin-163",
+      "pin-160 holds pin-167"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

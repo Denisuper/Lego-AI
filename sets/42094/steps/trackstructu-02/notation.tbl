@@ -1,0 +1,30 @@
+ADD beam3x0-3 33299a black
+POS beam3x0-3 -1 -1 2 0 -1 0 0 0 1 -1 0 0
+ADD beam3x0-4 33299a black
+POS beam3x0-4 -1 -1 -2 0 -1 0 0 0 1 -1 0 0
+ADD axle5-9 32073 lightbluishgrey
+POS axle5-9 0 -1 2 -1 0 0 0 0 1 0 1 0
+ADD axle5-10 32073 lightbluishgrey
+POS axle5-10 0 -1 -2 -1 0 0 0 0 1 0 1 0
+ADD beam3x0-5 33299a black
+POS beam3x0-5 -1 -1 6 0 -1 0 0 0 1 -1 0 0
+ADD axle5-11 32073 lightbluishgrey
+POS axle5-11 0 -1 6 -1 0 0 0 0 1 0 1 0
+ADD beam3x0-6 33299a black
+POS beam3x0-6 -1 -1 -6 0 -1 0 0 0 1 -1 0 0
+ADD axle5-12 32073 lightbluishgrey
+POS axle5-12 0 -1 -6 -1 0 0 0 0 1 0 1 0
+ADD conn-83 6536 black
+POS conn-83 0 -1 6 1 0 0 0 -1 0 0 0 -1
+ADD conn-84 6536 black
+POS conn-84 0 -1 -6 1 0 0 0 -1 0 0 0 -1
+CONNECT axle5-9.axle4 -> beam3x0-3.axlehole1 LOCKED
+CONNECT axle3-21.axle3 -> beam3x0-3.axlehole2 LOCKED
+CONNECT axle5-10.axle4 -> beam3x0-4.axlehole1 LOCKED
+CONNECT axle3-18.axle3 -> beam3x0-4.axlehole2 LOCKED
+CONNECT axle5-11.axle4 -> beam3x0-5.axlehole1 LOCKED
+CONNECT axle3-20.axle3 -> beam3x0-5.axlehole2 LOCKED
+CONNECT axle5-12.axle4 -> beam3x0-6.axlehole1 LOCKED
+CONNECT axle3-19.axle3 -> beam3x0-6.axlehole2 LOCKED
+CONNECT axle5-11.axle3 -> conn-83.axlehole1 LOCKED
+CONNECT axle5-12.axle3 -> conn-84.axlehole1 LOCKED

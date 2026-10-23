@@ -1,0 +1,134 @@
+{
+  "example_id": "42094-seat-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-5",
+        "part_number": "11946",
+        "count": 1
+      },
+      {
+        "name": "panel-6",
+        "part_number": "11947",
+        "count": 1
+      },
+      {
+        "name": "pin-113",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-114",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam2-5",
+        "part_number": "43857",
+        "count": 1
+      },
+      {
+        "name": "axle3-10",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-5",
+        "part_number": "11946",
+        "catalog_name": "Technic Panel Fairing #21 5L Small Smooth, Side B",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "panel-6",
+        "part_number": "11947",
+        "catalog_name": "Technic Panel Fairing #22 5L Small Smooth, Side A",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-113",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-114",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-5",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-10",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-111's pin3 goes into panel-5's hole1 (stiff)",
+      "pin-112's pin3 goes into panel-5's hole2 (stiff)",
+      "pin-111's pin1 goes into panel-6's hole1 (stiff)",
+      "pin-112's pin1 goes into panel-6's hole2 (stiff)",
+      "pin-113's pin2 goes into beam2-5's hole1 (stiff)",
+      "pin-114's pin2 goes into beam2-5's hole2 (stiff)",
+      "pin-113's pin1 goes into beam2x4-5's hole2 (stiff)",
+      "pin-114's pin1 goes into beam2x4-5's hole1 (stiff)",
+      "axle3-10's axle1 goes into beam2x4-5's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "panel-5 holds pin-111",
+      "panel-5 holds pin-112",
+      "panel-6 holds pin-111",
+      "panel-6 holds pin-112",
+      "beam2-5 holds pin-113",
+      "beam2-5 holds pin-114",
+      "beam2x4-5 holds pin-113",
+      "beam2x4-5 holds pin-114",
+      "axle3-10 carries beam2x4-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

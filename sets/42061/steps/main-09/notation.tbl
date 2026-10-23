@@ -1,0 +1,12 @@
+STEP 9
+ADD beam9-4 40490 black
+POS beam9-4 0.3 -4.1 -11.7 0.323 0 0.946 0 -1 0 0.946 0 -0.323
+ADD pin-23 4274 lightbluishgrey
+POS pin-23 -3.5 -1.6 -7.6 0 0.999 0.032 1 0 0 0 0.032 -0.999
+ADD beam9-5 40490 black
+POS beam9-5 0.5 -2.1 -7.5 0.024 0 -1 0 -1 0 -1 0 -0.024
+CONNECT pin-7.pin3 -> beam9-4.hole9 STIFF
+CONNECT pin-21.axle1 -> beam9-4.hole1 TURNS
+CONNECT pin-23.pin1 -> beam9-5.hole9 TURNS
+CONNECT pin-20.axle1 -> beam9-5.hole1 TURNS
+CONNECT pin-22.axle1 -> beam9-5.hole8 TURNS

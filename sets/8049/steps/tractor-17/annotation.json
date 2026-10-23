@@ -1,0 +1,52 @@
+{
+  "example_id": "8049-tractor-step-17",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 17,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam11-4",
+        "part_number": "32525",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-4",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=5.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-24's axle1 goes into beam11-4's hole2 (turns)",
+      "pin-27's axle1 goes into beam11-4's hole4 (turns)",
+      "axle3-5's axle2 goes into beam11-4's hole11 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-4 spins on pin-24",
+      "beam11-4 spins on pin-27",
+      "beam11-4 spins on axle3-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

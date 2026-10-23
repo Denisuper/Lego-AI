@@ -1,0 +1,10 @@
+ADD axle3-1 4519 lightbluishgrey
+POS axle3-1 -4 11.15 -12 1 0 0 0 0.156 0.988 0 -0.988 0.156
+ADD beam2-1 60483 black
+POS beam2-1 -4 11.15 -12 0 1 0 0.122 0 -0.993 -0.993 0 -0.122
+ADD pin-9 32557 lightbluishgrey
+POS pin-9 -4 10.15 -7.5 0 0 -1 0 1 0 1 0 0
+CONNECT axle3-1.axle2 -> beam2-1.axlehole1 LOCKED
+CONNECT pin-7.pin2 -> pin-9.hole4 STIFF
+CONNECT pin-8.pin2 -> pin-9.hole3 STIFF
+CONNECT axle3-1.axle1 -> beam9-1.hole1 TURNS

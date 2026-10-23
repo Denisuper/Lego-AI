@@ -1,0 +1,110 @@
+{
+  "example_id": "42094-cabin-step-02",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle7-2",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "conn-37",
+        "part_number": "6553",
+        "count": 1
+      },
+      {
+        "name": "conn-38",
+        "part_number": "32034",
+        "count": 1
+      },
+      {
+        "name": "pin-106",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam-14",
+        "part_number": "18654",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-2",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-37",
+        "part_number": "6553",
+        "catalog_name": "Technic Axle 1.5 with Perpendicular Axle Connector (Technic Pole Reverser Handle)",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-38",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-4, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-106",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-4.3, z=5.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-14",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=-4.6, z=5.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-2's axle3 goes into conn-37's axlehole1 (locked)",
+      "pin-106's pin2 goes into conn-38's hole1 (stiff)",
+      "pin-106's pin1 goes into beam-14's hole1 (stiff)",
+      "axle7-2's axle2 goes into beam9-7's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-2 carries conn-37",
+      "conn-38 holds pin-106",
+      "beam-14 holds pin-106",
+      "axle7-2 carries beam9-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

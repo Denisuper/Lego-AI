@@ -1,5 +1,3 @@
-ADD part-13 6590 lightbluishgrey
-POS part-13 0.05 -24.35 -15.85 0 0 1 -0.239 0.971 0 -0.971 -0.239 0
 ADD pin-152 32054 lightbluishgrey
 POS pin-152 -0.95 -25.05 -18.75 -1 0 0 0 0.814 -0.581 0 -0.581 -0.814
 ADD pin-153 32054 lightbluishgrey

@@ -1,0 +1,6 @@
+ADD conn-26 6536 lime
+POS conn-26 -2 4.85 -4.9 -1 0 0 0 0.165 -0.986 0 -0.986 -0.165
+ADD conn-27 6536 lime
+POS conn-27 -6 4.85 -4.9 -1 0 0 0 0.986 0.165 0 0.165 -0.986
+CONNECT axle5-1.axle5 -> conn-26.axlehole1 LOCKED
+CONNECT axle5-1.axle1 -> conn-27.axlehole1 LOCKED

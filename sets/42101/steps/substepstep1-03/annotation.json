@@ -7,8 +7,8 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "bush-1",
-        "part_number": "3713",
+        "name": "pin-7",
+        "part_number": "3673",
         "count": 1
       }
     ],
@@ -17,20 +17,20 @@
   "answer": {
     "new_parts": [
       {
-        "name": "bush-1",
-        "part_number": "3713",
-        "catalog_name": "Technic Bush",
-        "color": "Red",
+        "name": "pin-7",
+        "part_number": "3673",
+        "catalog_name": "Technic Pin without Friction Ridges Lengthwise",
+        "color": "Light Bluish Grey",
         "part_match": "confirmed (official 3D model)",
-        "position": "at x=-2, y=0, z=0 holes (exact, from the 3D model)",
+        "position": "at x=-0.5, y=0, z=-2 holes (exact, from the 3D model)",
         "rotation": "TO WRITE"
       }
     ],
     "what_each_new_part_touches": [
-      "axle3-3's axle1 goes into bush-1's axlehole1 (locked)"
+      "pin-7's pin1 goes into beam5-1's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "axle3-3 carries bush-1"
+      "pin-7 spins on beam5-1"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -41,15 +41,17 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-15's axle1 goes into beam3x3-2's hole3 (turns)",
-      "pin-17's axle1 goes into beam3x3-2's hole4 (turns)",
+      "pin-19's axle1 goes into beam3x3-2's hole3 (turns)",
+      "pin-21's axle1 goes into beam3x3-2's hole4 (turns)",
       "axle6-2's axle1 goes into beam3x3-2's hole5 (turns)",
+      "pin-26's pin3 goes into beam2-2's hole1 (stiff)",
       "axle6-1's axle2 goes into beam2-2's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam3x3-2 spins on pin-15",
-      "beam3x3-2 spins on pin-17",
+      "beam3x3-2 spins on pin-19",
+      "beam3x3-2 spins on pin-21",
       "beam3x3-2 spins on axle6-2",
+      "beam2-2 holds pin-26",
       "axle6-1 carries beam2-2"
     ],
     "where_everything_is_after": [

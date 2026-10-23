@@ -1,0 +1,126 @@
+{
+  "example_id": "42094-cabin-step-11",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "shaft-1",
+        "part_number": "48729b",
+        "count": 1
+      },
+      {
+        "name": "l-2",
+        "part_number": "87994",
+        "count": 1
+      },
+      {
+        "name": "clip-1",
+        "part_number": "11090",
+        "count": 1
+      },
+      {
+        "name": "pin-168",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-169",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "stud-1",
+        "part_number": "6141",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "shaft-1",
+        "part_number": "48729b",
+        "catalog_name": "Bar  1.5L with Clip with Truncated Sides and Hole in Shaft",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-5.15, z=4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "l-2",
+        "part_number": "87994",
+        "catalog_name": "Bar  3L",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-3.55, z=3.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "clip-1",
+        "part_number": "11090",
+        "catalog_name": "Bar Tube with Clip",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-5.55, z=4.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-168",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-4.9, z=4.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-169",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-4.1, z=3.8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-1",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.5, y=-3.3, z=3.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "l-2's bar2 goes into shaft-1's clip1 (turns)",
+      "l-2's bar3 goes into clip-1's clip1 (turns)",
+      "l-2's bar2 goes into pin-168's barhole1 (turns)",
+      "pin-168's pin1 goes into pin-169's hole1 (turns)",
+      "stud-1's pin1 goes into pin-169's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "shaft-1 spins on l-2",
+      "clip-1 spins on l-2",
+      "pin-168 spins on l-2",
+      "pin-168 spins on pin-169",
+      "pin-169 holds stud-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

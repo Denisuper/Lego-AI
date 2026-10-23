@@ -1,0 +1,10 @@
+ADD beam5-3 32316 white
+POS beam5-3 -8 0 0 0 -1 0 0.998 0 0.066 -0.066 0 0.998
+ADD beam5-4 32316 white
+POS beam5-4 0 0 0 0 -1 0 0.998 0 0.066 -0.066 0 0.998
+CONNECT pin-35.axle1 -> beam5-3.hole5 TURNS
+CONNECT pin-56.pin1 -> beam5-3.hole1 STIFF
+CONNECT pin-57.axle1 -> beam5-3.hole2 TURNS
+CONNECT pin-37.axle1 -> beam5-4.hole5 TURNS
+CONNECT pin-60.pin2 -> beam5-4.hole1 STIFF
+CONNECT pin-61.axle1 -> beam5-4.hole2 TURNS

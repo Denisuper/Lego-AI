@@ -1,0 +1,4 @@
+ADD beam5-3 32316 orange
+POS beam5-3 0 0 -1 0 -1 0 1 0 0 0 0 1
+CONNECT axle4-2.axle2 -> beam5-3.hole4 TURNS
+CONNECT axle2-3.axle1 -> beam5-3.hole2 TURNS

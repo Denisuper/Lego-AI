@@ -1,0 +1,16 @@
+STEP 26
+ADD pin-241 32054 black
+POS pin-241 3 -4.25 -9 0 0 -1 0 -1 0 -1 0 0
+ADD pin-242 32054 black
+POS pin-242 -3 -4.25 -9 0 0 -1 0 -1 0 -1 0 0
+ADD pin-243 32054 black
+POS pin-243 3 -4.25 -1 0 0 -1 0 1 0 1 0 0
+ADD pin-244 32054 black
+POS pin-244 -3 -4.25 -1 0 0 -1 0 1 0 1 0 0
+ATTACH trackstructu
+CONNECT pin-243.pin2 -> beam15-3.hole11 STIFF
+CONNECT pin-244.pin2 -> beam15-3.hole5 STIFF
+CONNECT pin-241.pin2 -> beam15-4.hole5 STIFF
+CONNECT pin-242.pin2 -> beam15-4.hole11 STIFF
+CONNECT pin-243.pin1 -> conn-77.hole2 STIFF
+CONNECT pin-244.pin1 -> conn-80.hole2 STIFF

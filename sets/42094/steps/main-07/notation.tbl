@@ -1,0 +1,21 @@
+STEP 7
+ADD pin-17 32054 black
+POS pin-17 -1 -8.25 -3 0 0 -1 0 1 0 1 0 0
+ADD pin-18 32054 black
+POS pin-18 1 -8.25 -3 0 0 -1 0 1 0 1 0 0
+ADD base-1 18939 lightbluishgrey
+POS base-1 0 -9.25 -5 0 0 -1 0 1 0 1 0 0
+ADD gear60-1 18938 black
+POS gear60-1 0 -9.25 -5 -1 0 0 0 1 0 0 0 -1
+ADD pin-19 32054 black
+POS pin-19 -1 -8.25 -8 0 0 -1 0 1 0 1 0 0
+ADD pin-20 32054 black
+POS pin-20 1 -8.25 -8 0 0 -1 0 1 0 1 0 0
+CONNECT pin-17.pin1 -> base-1.hole6 STIFF
+CONNECT pin-18.pin1 -> base-1.hole4 STIFF
+CONNECT pin-19.pin2 -> base-1.hole3 STIFF
+CONNECT pin-20.pin2 -> base-1.hole1 STIFF
+CONNECT pin-17.pin2 -> beam5x11-1.hole21 STIFF
+CONNECT pin-18.pin2 -> beam5x11-1.hole23 STIFF
+CONNECT pin-19.pin1 -> beam5x11-1.hole6 STIFF
+CONNECT pin-20.pin1 -> beam5x11-1.hole8 STIFF

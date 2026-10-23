@@ -1,0 +1,25 @@
+ADD beam9-14 32271 yellow
+POS beam9-14 5 -0.2 0.85 0 1 0 0.423 0 -0.906 -0.906 0 -0.423
+ADD pin-187 32054 black
+POS pin-187 6 -2.9 -0.4 -1 0 0 0 -1 0 0 0 1
+ADD beam3-3 32523 yellow
+POS beam3-3 6 -3.8 -0.85 0 -1 0 -0.423 0 -0.906 0.906 0 -0.423
+ADD conn-70 59443 yellow
+POS conn-70 6.5 -0.2 0.85 0 0 1 -0.906 0.423 0 -0.423 -0.906 0
+ADD axle3-16 4519 lightbluishgrey
+POS axle3-16 8 -0.2 0.85 -1 0 0 0 0.906 0.423 0 0.423 -0.906
+ADD conn-71 59443 yellow
+POS conn-71 9.5 -0.2 0.85 0 0 1 -0.906 0.423 0 -0.423 -0.906 0
+ADD axle4-8 3705 red
+POS axle4-8 11.5 -0.2 0.85 -1 0 0 0 0.906 0.423 0 0.423 -0.906
+ADD beam-19 18654 black
+POS beam-19 8 -0.2 0.85 0 1 0 -0.906 0 -0.423 -0.423 0 0.906
+CONNECT pin-187.pin2 -> beam9-14.hole3 STIFF
+CONNECT axle4-7.axle3 -> beam9-14.axlehole1 LOCKED
+CONNECT axle2-12.axle2 -> beam9-14.axlehole2 LOCKED
+CONNECT pin-187.pin1 -> beam3-3.hole1 STIFF
+CONNECT axle3-16.axle3 -> conn-70.axlehole2 LOCKED
+CONNECT axle4-7.axle4 -> conn-70.axlehole1 LOCKED
+CONNECT axle3-16.axle1 -> conn-71.axlehole1 LOCKED
+CONNECT axle4-8.axle4 -> conn-71.axlehole2 LOCKED
+CONNECT axle3-16.axle2 -> beam-19.hole1 TURNS

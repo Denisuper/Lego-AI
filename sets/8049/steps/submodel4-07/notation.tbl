@@ -1,0 +1,6 @@
+ADD pin-60 4459 black
+POS pin-60 3.5 0.05 1 1 0 0 0 0.998 0.066 0 -0.066 0.998
+ADD pin-61 43093 blue
+POS pin-61 3.5 0.15 2 -1 0 0 0 -0.998 0.066 0 0.066 0.998
+CONNECT pin-60.pin1 -> beam3-10.hole1 STIFF
+CONNECT pin-60.pin1 -> beam3-11.hole1 STIFF

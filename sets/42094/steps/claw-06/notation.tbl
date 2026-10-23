@@ -1,0 +1,20 @@
+ADD beam13-5 41239 yellow
+POS beam13-5 10 -3.4 5.15 0 1 0 0.998 0 -0.07 -0.07 0 -0.998
+ADD beam9-17 32271 yellow
+POS beam9-17 11 -0.2 0.85 0 1 0 0.423 0 -0.906 -0.906 0 -0.423
+ADD undersid-7 41669 yellow
+POS undersid-7 12 -0.2 0.85 0 -1 0 0.906 0 -0.423 0.423 0 0.906
+ADD conn-72 59443 yellow
+POS conn-72 13.5 -0.2 0.85 0 0 1 -0.906 0.423 0 -0.423 -0.906 0
+ADD axle4-9 3705 red
+POS axle4-9 15.5 -0.2 0.85 -1 0 0 0 -0.423 0.906 0 0.906 0.423
+ADD undersid-8 41669 yellow
+POS undersid-8 15 -0.2 0.85 0 -1 0 0.906 0 -0.423 0.423 0 0.906
+CONNECT axle9-4.axle3 -> beam13-5.hole13 TURNS
+CONNECT axle4-8.axle3 -> beam9-17.axlehole1 LOCKED
+CONNECT axle9-4.axle2 -> beam9-17.hole4 TURNS
+CONNECT axle7-3.axle1 -> beam9-17.hole2 TURNS
+CONNECT axle4-8.axle2 -> undersid-7.axlehole1 LOCKED
+CONNECT axle4-9.axle4 -> conn-72.axlehole2 LOCKED
+CONNECT axle4-8.axle1 -> conn-72.axlehole1 LOCKED
+CONNECT axle4-9.axle3 -> undersid-8.axlehole1 LOCKED

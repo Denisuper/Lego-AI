@@ -1,0 +1,104 @@
+ADD holes-15 57518 maincolour
+POS holes-15 -2.5 0 0 0 0.953 -0.301 0 0.301 0.953 1 0 0
+ADD holes-16 57518 maincolour
+POS holes-16 -2.05 -1.45 0 0 0.609 -0.793 0 0.793 0.609 1 0 0
+ADD holes-17 57518 maincolour
+POS holes-17 -0.85 -2.35 0 0 0.279 -0.96 0 0.96 0.279 1 0 0
+ADD holes-18 57518 maincolour
+POS holes-18 0.6 -2.75 0 0 0.273 -0.962 0 0.962 0.273 1 0 0
+ADD holes-19 57518 maincolour
+POS holes-19 2.05 -3.15 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-20 57518 maincolour
+POS holes-20 3.45 -3.6 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-21 57518 maincolour
+POS holes-21 4.9 -4 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-22 57518 maincolour
+POS holes-22 6.35 -4.4 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-23 57518 maincolour
+POS holes-23 7.8 -4.8 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-24 57518 maincolour
+POS holes-24 9.25 -5.2 0 0 0.272 -0.962 0 0.962 0.272 1 0 0
+ADD holes-25 57518 maincolour
+POS holes-25 10.7 -5.6 0 0 0.101 -0.995 0 0.995 0.101 1 0 0
+ADD holes-26 57518 maincolour
+POS holes-26 12.2 -5.8 0 0 -0.443 -0.896 0 0.896 -0.443 1 0 0
+ADD holes-27 57518 maincolour
+POS holes-27 13.5 -5.1 0 0 -0.457 -0.89 0 0.89 -0.457 1 0 0
+ADD holes-28 57518 maincolour
+POS holes-28 14.85 -4.45 0 0 -0.457 -0.89 0 0.89 -0.457 1 0 0
+ADD holes-29 57518 maincolour
+POS holes-29 16.2 -3.75 0 0 -0.457 -0.89 0 0.89 -0.457 1 0 0
+ADD holes-30 57518 maincolour
+POS holes-30 17.5 -3.05 0 0 -0.457 -0.89 0 0.89 -0.457 1 0 0
+ADD holes-31 57518 maincolour
+POS holes-31 18.85 -2.35 0 0 -0.617 -0.787 0 0.787 -0.617 1 0 0
+ADD holes-32 57518 maincolour
+POS holes-32 20.05 -1.45 0 0 -0.952 -0.305 0 0.305 -0.952 1 0 0
+ADD holes-33 57518 maincolour
+POS holes-33 20.5 0 0 0 -0.955 0.295 0 -0.295 -0.955 1 0 0
+ADD holes-34 57518 maincolour
+POS holes-34 20.05 1.4 0 0 -0.614 0.789 0 -0.789 -0.614 1 0 0
+ADD holes-35 57518 maincolour
+POS holes-35 18.85 2.35 0 0 -0.105 0.994 0 -0.994 -0.105 1 0 0
+ADD holes-36 57518 maincolour
+POS holes-36 17.4 2.5 0 0 -0.003 1 0 -1 -0.003 1 0 0
+ADD holes-37 57518 maincolour
+POS holes-37 15.9 2.5 0 0 -0 1 0 -1 -0 1 0 0
+ADD holes-38 57518 maincolour
+POS holes-38 14.4 2.5 0 0 -0 1 0 -1 -0 1 0 0
+ADD holes-39 57518 maincolour
+POS holes-39 12.9 2.5 0 0 -0 1 0 -1 -0 1 0 0
+ADD holes-40 57518 maincolour
+POS holes-40 11.4 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-41 57518 maincolour
+POS holes-41 9.9 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-42 57518 maincolour
+POS holes-42 8.4 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-43 57518 maincolour
+POS holes-43 6.9 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-44 57518 maincolour
+POS holes-44 5.4 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-45 57518 maincolour
+POS holes-45 3.9 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-46 57518 maincolour
+POS holes-46 2.4 2.5 0 0 0 1 0 -1 0 1 0 0
+ADD holes-47 57518 maincolour
+POS holes-47 0.9 2.5 0 0 0.053 0.999 0 -0.999 0.053 1 0 0
+ADD holes-48 57518 maincolour
+POS holes-48 -0.6 2.4 0 0 0.528 0.849 0 -0.849 0.528 1 0 0
+ADD holes-49 57518 maincolour
+POS holes-49 -1.9 1.65 0 0 0.919 0.394 0 -0.394 0.919 1 0 0
+CONNECT holes-16.bar1 -> holes-15.clip1 TURNS
+CONNECT holes-17.bar1 -> holes-16.clip1 TURNS
+CONNECT holes-18.bar1 -> holes-17.clip1 TURNS
+CONNECT holes-19.bar1 -> holes-18.clip1 TURNS
+CONNECT holes-20.bar1 -> holes-19.clip1 TURNS
+CONNECT holes-21.bar1 -> holes-20.clip1 TURNS
+CONNECT holes-22.bar1 -> holes-21.clip1 TURNS
+CONNECT holes-23.bar1 -> holes-22.clip1 TURNS
+CONNECT holes-24.bar1 -> holes-23.clip1 TURNS
+CONNECT holes-25.bar1 -> holes-24.clip1 TURNS
+CONNECT holes-26.bar1 -> holes-25.clip1 TURNS
+CONNECT holes-27.bar1 -> holes-26.clip1 TURNS
+CONNECT holes-28.bar1 -> holes-27.clip1 TURNS
+CONNECT holes-29.bar1 -> holes-28.clip1 TURNS
+CONNECT holes-30.bar1 -> holes-29.clip1 TURNS
+CONNECT holes-31.bar1 -> holes-30.clip1 TURNS
+CONNECT holes-32.bar1 -> holes-31.clip1 TURNS
+CONNECT holes-33.bar1 -> holes-32.clip1 TURNS
+CONNECT holes-34.bar1 -> holes-33.clip1 TURNS
+CONNECT holes-35.bar1 -> holes-34.clip1 TURNS
+CONNECT holes-36.bar1 -> holes-35.clip1 TURNS
+CONNECT holes-37.bar1 -> holes-36.clip1 TURNS
+CONNECT holes-38.bar1 -> holes-37.clip1 TURNS
+CONNECT holes-39.bar1 -> holes-38.clip1 TURNS
+CONNECT holes-40.bar1 -> holes-39.clip1 TURNS
+CONNECT holes-41.bar1 -> holes-40.clip1 TURNS
+CONNECT holes-42.bar1 -> holes-41.clip1 TURNS
+CONNECT holes-43.bar1 -> holes-42.clip1 TURNS
+CONNECT holes-44.bar1 -> holes-43.clip1 TURNS
+CONNECT holes-45.bar1 -> holes-44.clip1 TURNS
+CONNECT holes-46.bar1 -> holes-45.clip1 TURNS
+CONNECT holes-47.bar1 -> holes-46.clip1 TURNS
+CONNECT holes-48.bar1 -> holes-47.clip1 TURNS
+CONNECT holes-49.bar1 -> holes-48.clip1 TURNS

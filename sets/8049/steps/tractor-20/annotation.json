@@ -1,0 +1,64 @@
+{
+  "example_id": "8049-tractor-step-20",
+  "set": "LEGO Technic 8049",
+  "page": null,
+  "step": 20,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-32",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-33",
+        "part_number": "4459",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-32",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=6.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-33",
+        "part_number": "4459",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise, without Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=5.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-32's pin1 goes into beam11-4's hole5 (stiff)",
+      "pin-33's pin2 goes into beam11-4's hole6 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-4 holds pin-32",
+      "beam11-4 holds pin-33"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

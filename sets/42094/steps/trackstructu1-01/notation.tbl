@@ -1,0 +1,36 @@
+ADD beam13-7 41239 darkbluishgrey
+POS beam13-7 0 0 0 0 1 0 -1 0 0 0 0 1
+ADD pin-223 6558 blue
+POS pin-223 0 0 -1 1 0 0 0 -1 0 0 0 -1
+ADD pin-224 6558 blue
+POS pin-224 0 0 1 1 0 0 0 -1 0 0 0 -1
+ADD axle3-23 4519 lightbluishgrey
+POS axle3-23 0 0 -2 -1 0 0 0 -1 0 0 0 1
+ADD axle3-24 4519 lightbluishgrey
+POS axle3-24 0 0 -6 -1 0 0 0 -1 0 0 0 1
+ADD beam5-6 11478 lightbluishgrey
+POS beam5-6 0.75 0 -4 0 -1 0 1 0 0 0 0 1
+ADD beam5-7 11478 lightbluishgrey
+POS beam5-7 -0.75 0 -4 0 -1 0 1 0 0 0 0 1
+ADD axle3-25 4519 lightbluishgrey
+POS axle3-25 0 0 6 -1 0 0 0 -1 0 0 0 1
+ADD axle3-26 4519 lightbluishgrey
+POS axle3-26 0 0 2 -1 0 0 0 -1 0 0 0 1
+ADD beam5-8 11478 lightbluishgrey
+POS beam5-8 0.75 0 4 0 -1 0 1 0 0 0 0 1
+ADD beam5-9 11478 lightbluishgrey
+POS beam5-9 -0.75 0 4 0 -1 0 1 0 0 0 0 1
+CONNECT pin-223.pin2 -> beam13-7.hole6 STIFF
+CONNECT pin-224.pin2 -> beam13-7.hole8 STIFF
+CONNECT axle3-23.axle2 -> beam13-7.hole5 TURNS
+CONNECT axle3-24.axle2 -> beam13-7.hole1 TURNS
+CONNECT axle3-25.axle2 -> beam13-7.hole13 TURNS
+CONNECT axle3-26.axle2 -> beam13-7.hole9 TURNS
+CONNECT axle3-23.axle1 -> beam5-6.axlehole2 LOCKED
+CONNECT axle3-24.axle1 -> beam5-6.axlehole1 LOCKED
+CONNECT axle3-23.axle3 -> beam5-7.axlehole2 LOCKED
+CONNECT axle3-24.axle3 -> beam5-7.axlehole1 LOCKED
+CONNECT axle3-25.axle1 -> beam5-8.axlehole2 LOCKED
+CONNECT axle3-26.axle1 -> beam5-8.axlehole1 LOCKED
+CONNECT axle3-25.axle3 -> beam5-9.axlehole2 LOCKED
+CONNECT axle3-26.axle3 -> beam5-9.axlehole1 LOCKED

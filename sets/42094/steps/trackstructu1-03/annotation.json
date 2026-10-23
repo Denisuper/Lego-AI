@@ -1,0 +1,206 @@
+{
+  "example_id": "42094-trackstructu1-step-03",
+  "set": "LEGO Technic 42094",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x0-15",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-16",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-17",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "beam3x0-18",
+        "part_number": "33299a",
+        "count": 1
+      },
+      {
+        "name": "conn-91",
+        "part_number": "32291",
+        "count": 1
+      },
+      {
+        "name": "conn-92",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "axle2-19",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-93",
+        "part_number": "32291",
+        "count": 1
+      },
+      {
+        "name": "conn-94",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "axle2-20",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x0-15",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-16",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-17",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x0-18",
+        "part_number": "33299a",
+        "catalog_name": "Technic Beam 3 x 0.5 Liftarm with Boss and Pin / Crank",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-91",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-92",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-19",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-93",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-94",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-20",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-24's axle3 goes into beam3x0-15's axlehole2 (locked)",
+      "axle5-18's axle4 goes into beam3x0-15's axlehole1 (locked)",
+      "axle3-23's axle3 goes into beam3x0-16's axlehole2 (locked)",
+      "axle5-16's axle4 goes into beam3x0-16's axlehole1 (locked)",
+      "axle3-26's axle3 goes into beam3x0-17's axlehole2 (locked)",
+      "axle5-15's axle4 goes into beam3x0-17's axlehole1 (locked)",
+      "axle3-25's axle3 goes into beam3x0-18's axlehole2 (locked)",
+      "axle5-17's axle4 goes into beam3x0-18's axlehole1 (locked)",
+      "axle2-19's axle1 goes into conn-91's axlehole1 (locked)",
+      "pin-223's pin1 goes into conn-91's hole2 (stiff)",
+      "axle2-19's axle1 goes into conn-92's axlehole1 (locked)",
+      "axle2-19's axle2 goes into conn-92's axlehole2 (locked)",
+      "pin-224's pin1 goes into conn-92's hole2 (stiff)",
+      "axle2-20's axle1 goes into conn-93's axlehole1 (locked)",
+      "pin-223's pin3 goes into conn-93's hole2 (stiff)",
+      "axle2-20's axle1 goes into conn-94's axlehole1 (locked)",
+      "axle2-20's axle2 goes into conn-94's axlehole2 (locked)",
+      "pin-224's pin3 goes into conn-94's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-24 carries beam3x0-15",
+      "axle5-18 carries beam3x0-15",
+      "axle3-23 carries beam3x0-16",
+      "axle5-16 carries beam3x0-16",
+      "axle3-26 carries beam3x0-17",
+      "axle5-15 carries beam3x0-17",
+      "axle3-25 carries beam3x0-18",
+      "axle5-17 carries beam3x0-18",
+      "axle2-19 carries conn-91",
+      "conn-91 holds pin-223",
+      "axle2-19 carries conn-92",
+      "conn-92 holds pin-224",
+      "axle2-20 carries conn-93",
+      "conn-93 holds pin-223",
+      "axle2-20 carries conn-94",
+      "conn-94 holds pin-224"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

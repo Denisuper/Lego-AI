@@ -1,0 +1,18 @@
+STEP 11
+ADD axle2-11 32062 red
+POS axle2-11 0 -5.95 1.5 0 -1 0 0 0 1 -1 0 0
+ADD assembly-1 61903 lightbluishgrey
+POS assembly-1 0 -5.95 0 0 -1 0 -1 0 0 0 0 -1
+ADD axle5-6 32073 lightbluishgrey
+POS axle5-6 0 -5.95 -3 0 -1 0 0 0 -1 1 0 0
+ADD gear12-7 32270 black
+POS gear12-7 0 -7.95 4 0 -1 0 -1 0 0 0 0 -1
+ADD conn-35 32034 black
+POS conn-35 0 -7.95 3 0 0 1 0 1 0 -1 0 0
+CONNECT axle2-11.axle2 -> assembly-1.axlehole1 LOCKED
+CONNECT axle5-6.axle5 -> assembly-1.axlehole2 LOCKED
+CONNECT axle9-1.axle2 -> gear12-7.axlehole1 LOCKED
+CONNECT axle9-1.axle1 -> conn-35.hole1 TURNS
+CONNECT axle4-7.axle1 -> conn-35.axlehole1 LOCKED
+CONNECT axle4-8.axle1 -> conn-35.axlehole2 LOCKED
+CONNECT axle2-11.axle1 -> conn-34.axlehole1 LOCKED

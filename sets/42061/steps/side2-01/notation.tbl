@@ -1,0 +1,12 @@
+ADD beam5-8 32316 black
+POS beam5-8 0 0 0 0 1 0 -1 0 0 0 0 1
+ADD pin-70 18651 black
+POS pin-70 -1 0 2 -1 0 0 0 1 0 0 0 -1
+ADD pin-71 32138 black
+POS pin-71 -1 0 -1.5 1 0 0 0 0 1 0 -1 0
+ADD conn-30 6536 darkbluishgrey
+POS conn-30 -1 0 2 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-70.axle1 -> beam5-8.hole5 TURNS
+CONNECT pin-71.pin4 -> beam5-8.hole1 STIFF
+CONNECT pin-71.pin3 -> beam5-8.hole2 STIFF
+CONNECT pin-70.axle2 -> conn-30.axlehole1 LOCKED

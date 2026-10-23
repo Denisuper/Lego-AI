@@ -1,0 +1,10 @@
+ADD axle55-1 59426 darkbluishgrey
+POS axle55-1 9.25 0 0 1 0 0 0 1 0 0 0 1
+ADD gear12-6 32270 black
+POS gear12-6 10 0 0 0 0 -1 0 1 0 1 0 0
+ADD pin-33 62462 lightbluishgrey
+POS pin-33 8.5 0 0 -1 0 0 0 0 1 0 1 0
+CONNECT axle55-1.axle4 -> gear12-6.axlehole1 LOCKED
+CONNECT axle55-1.axle2 -> pin-33.hole1 TURNS
+CONNECT axle55-1.pin1 -> conn-21.hole1 STIFF
+CONNECT axle55-1.axle5 -> cranksha-1.axlehole1 LOCKED

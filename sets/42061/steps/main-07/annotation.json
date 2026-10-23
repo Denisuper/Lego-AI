@@ -1,0 +1,138 @@
+{
+  "example_id": "42061-step-07",
+  "set": "LEGO Technic 42061",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle3-4",
+        "part_number": "24316",
+        "count": 1
+      },
+      {
+        "name": "cam-1",
+        "part_number": "6575",
+        "count": 1
+      },
+      {
+        "name": "cam-2",
+        "part_number": "6575",
+        "count": 1
+      },
+      {
+        "name": "pin-19",
+        "part_number": "3749",
+        "count": 1
+      },
+      {
+        "name": "pin-20",
+        "part_number": "3749",
+        "count": 1
+      },
+      {
+        "name": "conn-10",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "beam9-3",
+        "part_number": "40490",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle3-4",
+        "part_number": "24316",
+        "catalog_name": "Technic Axle 3 with Stop",
+        "color": "Reddish Brown",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-4, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "cam-1",
+        "part_number": "6575",
+        "catalog_name": "Technic Cam",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.15, y=-3.35, z=-5.55 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "cam-2",
+        "part_number": "6575",
+        "catalog_name": "Technic Cam",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.85, y=-2.85, z=-6.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-19",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=-3.6, z=-4.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-20",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-2.6, z=-7.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-10",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-5.6, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-3",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.7, y=-4.1, z=-3.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-4's axle1 goes into conn-10's axlehole1 (locked)",
+      "pin-19's axle1 goes into beam9-3's hole9 (turns)",
+      "pin-7's pin3 goes into beam9-3's hole1 (stiff)",
+      "axle3-4's axle2 goes into beam13-1's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-4 carries conn-10",
+      "beam9-3 spins on pin-19",
+      "beam9-3 holds pin-7",
+      "beam13-1 spins on axle3-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

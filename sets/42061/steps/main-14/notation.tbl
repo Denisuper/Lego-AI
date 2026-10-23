@@ -1,0 +1,19 @@
+STEP 14
+ADD conn-17 32184 black
+POS conn-17 -2 -6.1 -15 1 0 0 0 1 0 0 0 1
+ADD pin-53 18651 black
+POS pin-53 -3 -7.1 -15 1 0 0 0 -1 0 0 0 -1
+ADD beam2-4 60483 black
+POS beam2-4 -3 -7.1 -15 0 -1 0 -1 0 0.01 -0.01 0 -1
+ADD pin-54 2780 black
+POS pin-54 -3.5 -7.1 -16 1 0 0 0 -1 0 0 0 -1
+ADD stud-2 6141 transclear
+POS stud-2 -2 -6.1 -15.5 0 0 -1 1 0 0 0 -1 0
+ADD panel-2 11946 black
+POS panel-2 -4 -7.1 -13 0 1 0 1 0 0 0 0 -1
+CONNECT stud-2.pin1 -> conn-17.hole1 STIFF
+CONNECT axle7-2.axle1 -> conn-17.axlehole2 LOCKED
+CONNECT pin-53.axle2 -> beam2-4.axlehole1 LOCKED
+CONNECT pin-54.pin2 -> beam2-4.hole1 STIFF
+CONNECT pin-53.axle1 -> panel-2.hole1 TURNS
+CONNECT pin-54.pin1 -> panel-2.hole2 STIFF

@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "conn-12",
+        "name": "bush-1",
         "part_number": "99021",
         "count": 1
       },
@@ -46,9 +46,9 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-12",
+        "name": "bush-1",
         "part_number": "99021",
-        "catalog_name": "Pneumatic Hose Connector with Axle Connector",
+        "catalog_name": "Technic Pneumatic Hose Connector with Bush",
         "color": "Dark Bluish Grey",
         "part_match": "confirmed (official 3D model)",
         "position": "at x=-3, y=-3.9, z=1 holes (exact, from the 3D model)",
@@ -83,22 +83,24 @@
       }
     ],
     "what_each_new_part_touches": [
+      "axle6-1's axle6 goes into bush-1's axlehole1 (locked)",
       "axle6-2's axle6 goes into beam3x0-1's axlehole1 (locked)",
       "axle6-2's axle3 goes into gear20-2's axlehole1 (locked)",
       "axle6-2's axle4 goes into beam11-1's hole8 (turns)",
       "axle6-2's axle5 goes into beam3x3-1's hole5 (turns)",
       "axle6-2's axle2 goes into beam11-2's hole8 (turns)",
       "axle6-1's axle4 goes into beam2-1's axlehole1 (locked)",
-      "axle6-1's axle5 goes into conn-8's axlehole1 (locked)"
+      "axle6-1's axle5 goes into conn-4's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
+      "axle6-1 carries bush-1",
       "axle6-2 carries beam3x0-1",
       "axle6-2 carries gear20-2",
       "beam11-1 spins on axle6-2",
       "beam3x3-1 spins on axle6-2",
       "beam11-2 spins on axle6-2",
       "axle6-1 carries beam2-1",
-      "axle6-1 carries conn-8"
+      "axle6-1 carries conn-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -1,0 +1,9 @@
+ADD pin-96 32054 black
+POS pin-96 -2 -2 0 0 0 1 0 1 0 -1 0 0
+ADD beam3x5-5 32526 black
+POS beam3x5-5 -6 0 1 0 0 1 1 0 0 0 1 0
+ADD pin-97 6558 blue
+POS pin-97 -2 2 0 0 0 1 0 1 0 -1 0 0
+CONNECT pin-97.pin1 -> beam3x5-5.hole7 STIFF
+CONNECT pin-96.pin1 -> conn-40.hole1 STIFF
+CONNECT pin-97.pin2 -> conn-42.hole1 STIFF
