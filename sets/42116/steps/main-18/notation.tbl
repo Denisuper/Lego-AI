@@ -1,8 +1,0 @@
-STEP 18
-ADD axle3-4 4519 yellow
-POS axle3-4 2 -6.9 6 -1 0 0 0 -1 0 0 0 1
-ADD gear12-2 32270 black
-POS gear12-2 3 -6.9 6 0 0 1 -1 0 0 0 -1 0
-CONNECT axle3-4.axle1 -> gear12-2.axlehole1 LOCKED
-CONNECT axle3-4.axle3 -> conn-8.axlehole2 LOCKED
-CONNECT axle3-4.axle2 -> beam3x3-2.hole1 TURNS

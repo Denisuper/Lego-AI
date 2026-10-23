@@ -1,9 +1,0 @@
-STEP 10
-ADD pin-24 43093 blue
-POS pin-24 1 -4.6 0 0 1 0 -1 0 0 0 0 1
-ADD beam2-1 60483 black
-POS beam2-1 1 -5.1 0 1 0 -0.01 0 1 0 0.01 0 1
-ADD pin-25 2780 black
-POS pin-25 1 -4.6 1 0 -1 0 -1 0 0 0 0 -1
-CONNECT pin-25.pin2 -> beam2-1.hole1 STIFF
-CONNECT pin-24.axle1 -> beam7-4.hole4 TURNS

@@ -1,0 +1,14 @@
+STEP 7
+ADD bush-K 3713 lightgray
+ADD gear-gray-L 4019 lightgray
+ADD gear-tan-M 32269 tan
+ADD axle-N 3707 black
+CONNECT axle-N.axle1 -> bush-K.axlehole1 LOCKED
+CONNECT axle-N.axle3 -> gear-gray-L.axlehole1 LOCKED
+CONNECT axle-N.axle7 -> gear-tan-M.axlehole1 LOCKED
+CONNECT axle-N.axle8 -> fork-R.hole1~ TURNS
+DOES axle-N CARRIES bush-K
+DOES axle-N CARRIES gear-gray-L
+DOES axle-N CARRIES gear-tan-M
+DOES axle-N SPINS_ON fork-R
+PATTERN shaft_with_stops

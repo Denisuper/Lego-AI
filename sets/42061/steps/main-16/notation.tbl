@@ -1,5 +1,0 @@
-STEP 16
-ADD axle2-4 32062 red
-POS axle2-4 1 -10.5 -6.2 1 0 0 0 1 0 0 0 1
-ATTACH extension
-CONNECT axle2-4.axle1 -> holes-1.axlehole4 LOCKED

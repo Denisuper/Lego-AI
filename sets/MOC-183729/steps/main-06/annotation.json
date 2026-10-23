@@ -1,0 +1,58 @@
+{
+  "example_id": "MOC-183729-step-06",
+  "set": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "page": 6,
+  "step": 6,
+  "input": {
+    "picture": "steps/main-06/picture.png",
+    "parts_box": [
+      { "name": "knob-I", "part_number": "6628", "count": 1 },
+      { "name": "fork-J", "part_number": "32172", "count": 1 }
+    ],
+    "model_so_far": "Frame with bracket-G and bracket-H hanging on the outer middle pegs; pin-blue-E bare in the middle."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fork-J",
+        "part_number": "32172",
+        "catalog_name": "Technic Pin Connector Block 3 x 3 x 1",
+        "color": "Red",
+        "part_match": "needs_review",
+        "position": "cross hole onto pin-blue-E's free axle end, hanging down between bracket-G and bracket-H",
+        "rotation": "fixed"
+      },
+      {
+        "name": "knob-I",
+        "part_number": "6628",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Towball",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "pin end into fork-J's top hole, ball sticking straight up above the beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "fork-J's cross hole goes onto pin-blue-E's free axle end",
+      "knob-I's pin end goes into fork-J's top hole"
+    ],
+    "who_does_what_to_which": [
+      "pin-blue-E carries fork-J",
+      "fork-J holds knob-I"
+    ],
+    "where_everything_is_after": [
+      "fork-J: new, hanging between bracket-G and bracket-H, straddling the gap where the gear shaft will run",
+      "knob-I: new, sticking up out of the top of fork-J as a lever stud",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the gear-shift fork and its lever stud, so a shift lever (not in this model) can push the fork sideways to change gear.",
+      "why_these_parts": "fork-J's slot is sized to sit in the groove of the sliding clutch sleeve built in step 9, without turning with the shaft itself.",
+      "sets_up_for_later": "fork-J's slot will straddle the dog-clutch sleeve added in step 9, so sliding fork-J (by pushing knob-I) slides the clutch between the two gears.",
+      "design_pattern": "lever on a slider"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "fork-J's part number is a low-confidence guess -- the catalog search didn't turn up an exact match for a small red block with a vertical pin hole on top and a horizontal slot on the side; 32172 is the closest shape found (a small connector block), not a confirmed fit. Its real-machine job (gear-shift fork, straddling the clutch sleeve from step 9) is inferred from its position between bracket-G and bracket-H, exactly where the main shaft's clutch will run, and from the ball-stud on top being a standard lever-attachment point. Worth Dennis identifying the exact part from the PDF or BrickLink."
+}

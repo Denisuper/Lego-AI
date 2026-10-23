@@ -1,0 +1,58 @@
+{
+  "example_id": "MOC-183729-step-11",
+  "set": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "page": 11,
+  "step": 11,
+  "input": {
+    "picture": "steps/main-11/picture.png",
+    "parts_box": [
+      { "name": "ext-V", "part_number": "6538b", "count": 1 },
+      { "name": "ext-W", "part_number": "6538b", "count": 1 }
+    ],
+    "model_so_far": "Input shaft (axle-input-T, gear-blue-U) meshes with the main shaft's gear-gray-L; the dog-clutch sleeve sits between gear-gray-L and gear-red-P."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ext-V",
+        "part_number": "6538b",
+        "catalog_name": "Technic Axle Connector Ridged",
+        "color": "White",
+        "part_match": "likely",
+        "position": "on axle-input-T's free end, sticking out the bottom of the frame as a handle",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ext-W",
+        "part_number": "6538b",
+        "catalog_name": "Technic Axle Connector Ridged",
+        "color": "White",
+        "part_match": "likely",
+        "position": "on axle-N's free end, sticking out the top-right of the frame as the output",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "ext-V's cross hole locks onto axle-input-T's free end",
+      "ext-W's cross hole locks onto axle-N's free end~"
+    ],
+    "who_does_what_to_which": [
+      "axle-input-T carries ext-V",
+      "axle-N carries ext-W"
+    ],
+    "where_everything_is_after": [
+      "ext-V: new, the input handle, sticking out the bottom",
+      "ext-W: new, the output handle, sticking out the top-right",
+      "everything else: no change -- model complete"
+    ],
+    "why": {
+      "problem_solved": "Finishes both shaft ends as external handles a motor or another model can plug into.",
+      "why_these_parts": "A ridged axle connector gives a longer, grippable stub with a cross hole on its far end, so the shaft can reach past the frame and still take another axle.",
+      "sets_up_for_later": "Nothing further in this 11-step booklet -- this is the last step. ext-V is where you'd turn the gearbox by hand or motor; ext-W is where the selected speed comes out.",
+      "design_pattern": "axle extension handle"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": "The '2x' callout matches the count directly here (one extension added to each of the two exposed shaft ends in the same picture), unlike the forward-preview '2x' in step 1."
+}

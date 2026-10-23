@@ -1,0 +1,7 @@
+STEP 2
+ADD bracket-R 6536 lightgray
+ADD peg-black-B 43093 black
+ADD fork-R 32291 lightgray
+CONNECT peg-black-B.axle1 -> bracket-R.axlehole1 LOCKED
+DOES bracket-R HOLDS peg-black-B
+PATTERN peg_in_elbow_bracket

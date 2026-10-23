@@ -1,0 +1,57 @@
+{
+  "example_id": "MOC-183729-step-10",
+  "set": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "page": 10,
+  "step": 10,
+  "input": {
+    "picture": "steps/main-10/picture.png",
+    "parts_box": [
+      { "name": "axle-input-T", "part_number": "3705", "count": 1 },
+      { "name": "gear-blue-U", "part_number": "35185", "count": 1 }
+    ],
+    "model_so_far": "Main shaft complete with the dog-clutch sleeve and gear-red-P between gear-gray-L and gear-tan-M."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle-input-T",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "a short shaft below and parallel to the main shaft, through bracket-G's round hole, sticking out the bottom of the frame",
+        "rotation": "fixed"
+      },
+      {
+        "name": "gear-blue-U",
+        "part_number": "35185",
+        "catalog_name": "Technic Gear 20 Tooth Double Bevel with Clutch on Both Sides",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "on axle-input-T, meshing upward with gear-gray-L",
+        "rotation": "free"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle-input-T turns in bracket-G's round hole~",
+      "gear-blue-U's round hole goes onto axle-input-T~",
+      "gear-blue-U's teeth mesh with gear-gray-L's teeth"
+    ],
+    "who_does_what_to_which": [
+      "gear-blue-U drives gear-gray-L (ratio 20/16)"
+    ],
+    "where_everything_is_after": [
+      "axle-input-T, gear-blue-U: new, a second shaft below the main one, meshing into it",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the input: a hand- or motor-turned shaft that drives the main gear shaft through gear-gray-L.",
+      "why_these_parts": "A double-bevel gear meshes cleanly with gear-gray-L's plain teeth at this close spacing; its own clutch faces aren't used here, just its teeth.",
+      "sets_up_for_later": "axle-input-T's free end takes an output-style extension in step 11, making it an external handle. This is the gearbox's drive input.",
+      "design_pattern": "input gear mesh"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Read as meshing with gear-gray-L specifically (not gear-red-P) because gear-blue-U sits lower and further left in the picture, closer to gear-gray-L's position near the frame. Whether gear-blue-U actually reaches gear-red-P's teeth too (both are 16-tooth, so a wide double-bevel gear spanning the gap between them is plausible) is not confirmed -- if it does, the clutch selects between two gears that are both already being turned by the same input, which would change the design from 'speed select' to 'engage/disengage'. This is the open mechanism question in systems.json."
+}

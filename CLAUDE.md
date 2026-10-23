@@ -42,9 +42,9 @@ tools/check_notation.py        checks every join (point exists, the two fit, wor
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
-Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md).
-UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because their training files are not built yet; delete the folders once they are): 42004, 42006, 42021, 42029, 42049, 42061, 42094, 42101, 42116, 42129 (only step 1 done, parts list incomplete), 8049.
-NOT STARTED (parts list only): 8043, 8069, 42009, 42030.
+Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md). 42061 and 42116 are converted to steps.md but have no training files yet.
+UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because their training files are not built yet; delete the folders once they are): 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (only step 1 done, parts list incomplete), 8049.
+NOT STARTED (parts list only): 8043, 8069, 42009, 42030, 8258.
 
 ## Mechanisms (what the model must understand)
 A mechanism is a chain of parts that passes or changes motion. Every part in a build either belongs to one of these or holds the structure together. Full rules and failure modes: `catalog/mechanisms.json`.
@@ -79,8 +79,9 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 ## Status (Oct 23, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
 - 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
-- UNFINISHED: 42004, 42006, 42021, 42029, 42049, 42061, 42094, 42101, 42116, 42129, 8049. They come from 3D models and are labeled by other agents.
-- NOT STARTED: 8043, 8069, 42009, 42030 (parts list only).
+- 42061 and 42116 have steps.md but no training files yet.
+- UNFINISHED: 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. They come from 3D models and are labeled by other agents.
+- NOT STARTED: 8043, 8069, 42009, 42030, 8258 (parts list only).
 
 ## Saving (agents)
 Work only inside `sets/<set>/`. Commit only that folder , no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.

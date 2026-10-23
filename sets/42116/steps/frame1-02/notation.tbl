@@ -1,9 +1,0 @@
-ADD conn-19 32015 black
-POS conn-19 0 0 5 0 -1 0 1 0 0 0 0 1
-ADD axle3-6 4519 yellow
-POS axle3-6 1.85 0 5.75 -0.924 -0.383 0 0 0 1 -0.383 0.924 0
-ADD beam2-3 60483 black
-POS beam2-3 1.85 0 5.75 0 0.924 -0.383 -1 0 0 0 0.383 0.924
-CONNECT axle3-6.axle3 -> conn-19.axlehole2 LOCKED
-CONNECT axle4-3.axle1 -> conn-19.axlehole1 LOCKED
-CONNECT axle3-6.axle2 -> beam2-3.axlehole1 LOCKED

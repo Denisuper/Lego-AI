@@ -1,0 +1,8 @@
+STEP 9
+ADD sleeve-wht-Q 6538b white
+ADD sleeve-blk-S 6538b black
+CONNECT axle-N.axle5 -> sleeve-wht-Q.axlehole1~ LOCKED
+CONNECT axle-N.axle6 -> sleeve-blk-S.axlehole1~ LOCKED
+DOES axle-N CARRIES sleeve-wht-Q
+DOES axle-N CARRIES sleeve-blk-S
+PATTERN sliding_dog_clutch

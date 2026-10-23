@@ -1,0 +1,66 @@
+{
+  "example_id": "MOC-183729-step-02",
+  "set": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "page": 2,
+  "step": 2,
+  "input": {
+    "picture": "steps/main-02/picture.png",
+    "parts_box": [
+      { "name": "peg-black-B", "part_number": "43093", "count": 1 },
+      { "name": "bracket-R", "part_number": "6536", "count": 1 },
+      { "name": "fork-R", "part_number": "32291", "count": 1 }
+    ],
+    "model_so_far": "bracket-L carries pin-blue-A and pin-red-A (step 1)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bracket-R",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "a second elbow bracket, free-standing -- the right corner post",
+        "rotation": "fixed"
+      },
+      {
+        "name": "peg-black-B",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "its axle end pushed into bracket-R's cross hole",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fork-R",
+        "part_number": "32291",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "set next to bracket-R, not yet joined to anything -- it has no peg of its own",
+        "rotation": "unknown"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "peg-black-B's axle end goes into bracket-R's cross hole"
+    ],
+    "who_does_what_to_which": [
+      "bracket-R holds peg-black-B"
+    ],
+    "where_everything_is_after": [
+      "bracket-R: free-standing, the right corner post, now carrying peg-black-B",
+      "fork-R: sitting with bracket-R but not yet attached to anything",
+      "bracket-L, pin-blue-A, pin-red-A: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the right corner post, mirroring the left one from step 1 so the beam in step 3 has a matching peg to land on at both ends.",
+      "why_these_parts": "A friction peg with a stop on both ends bridges the elbow bracket's cross hole now and the beam's round hole in step 3, same trick as pin-blue-A on the left.",
+      "sets_up_for_later": "peg-black-B's free pin end takes the 7-hole beam in step 3. fork-R's holes take the long shaft's gray gear and right-hand bearing in step 7.",
+      "design_pattern": "peg-in-elbow corner mount, bearing block added alongside"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Item 1 in this step's parts box is read as 43093 (axle pin, friction, both ends are stops) rather than a hub-style part, because nothing else in the box has a stop to offer fork-R or the beam later -- a hub-with-one-hole part would leave this corner with no free peg for step 3. fork-R (32291) is hole-only in the catalog with no pin or axle stop, so it isn't connected to anything in this step; it's read as a bearing block positioned here and only joined when the main shaft threads through it in step 7. Worth Dennis checking the PDF for an arrow connecting fork-R that this crop doesn't show."
+}

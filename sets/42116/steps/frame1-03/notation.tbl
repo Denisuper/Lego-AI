@@ -1,9 +1,0 @@
-ADD pin-41 4274 lightbluishgrey
-POS pin-41 1 0 6.5 -0.924 0.354 -0.146 0 -0.383 -0.924 -0.383 -0.854 0.354
-ADD groove-3 98138 transclear
-POS groove-3 0.65 0 6.35 0.383 0.924 0 0 0 -1 -0.924 0.383 0
-ADD bush-2 3713 black
-POS bush-2 2.75 0 6.15 0.383 0 -0.924 0 -1 0 -0.924 0 -0.383
-CONNECT pin-41.pin2 -> groove-3.hole1 TURNS
-CONNECT axle3-6.axle1 -> bush-2.axlehole1 LOCKED
-CONNECT pin-41.pin2 -> beam2-3.hole1 TURNS

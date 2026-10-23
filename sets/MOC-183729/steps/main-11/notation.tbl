@@ -1,0 +1,8 @@
+STEP 11
+ADD ext-V 6538b white
+ADD ext-W 6538b white
+CONNECT axle-input-T.axle3 -> ext-V.axlehole1~ LOCKED
+CONNECT axle-N.axle8 -> ext-W.axlehole1~ LOCKED
+DOES axle-input-T CARRIES ext-V
+DOES axle-N CARRIES ext-W
+PATTERN axle_extension

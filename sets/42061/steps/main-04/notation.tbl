@@ -1,7 +1,0 @@
-STEP 4
-ATTACH axle
-ATTACH axle
-CONNECT pin-5.pin2 -> conn-1.hole1 STIFF
-CONNECT pin-6.pin2 -> conn-2.hole1 STIFF
-CONNECT pin-5.pin2 -> conn-3.hole1 STIFF
-CONNECT pin-6.pin2 -> conn-4.hole1 STIFF

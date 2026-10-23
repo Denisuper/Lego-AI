@@ -1,5 +1,0 @@
-STEP 18
-ATTACH cabin
-CONNECT axle6-1.axle1 -> beam2x4-7.axlehole1 LOCKED
-CONNECT pin-59.pin1 -> beam15-2.hole9 STIFF
-CONNECT pin-61.pin2 -> beam15-2.hole6 STIFF

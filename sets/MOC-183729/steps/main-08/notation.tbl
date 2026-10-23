@@ -1,0 +1,6 @@
+STEP 8
+ADD axle-brown-O 3705 brown
+ADD gear-red-P 18946 red
+CONNECT axle-brown-O.axle2 -> gear-red-P.hole1 TURNS
+DOES gear-red-P SPINS_ON axle-brown-O
+PATTERN stub_shaft_extension

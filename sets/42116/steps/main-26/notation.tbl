@@ -1,4 +1,0 @@
-STEP 26
-ADD hole-1 18943 black
-POS hole-1 0 -6.9 -7 1 0 0 0 1 0 0 0 1
-CONNECT pin-49.axle1 -> hole-1.hole1 TURNS

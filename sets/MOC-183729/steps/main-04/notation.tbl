@@ -1,0 +1,11 @@
+STEP 4
+ADD pin-blue-D 43093 blue
+ADD pin-blue-E 43093 blue
+ADD pin-blue-F 43093 blue
+CONNECT pin-blue-D.pin1 -> beam-C.hole3 STIFF
+CONNECT pin-blue-E.pin1 -> beam-C.hole4 STIFF
+CONNECT pin-blue-F.pin1 -> beam-C.hole5 STIFF
+DOES beam-C HOLDS pin-blue-D
+DOES beam-C HOLDS pin-blue-E
+DOES beam-C HOLDS pin-blue-F
+PATTERN three_pegs_in_a_row

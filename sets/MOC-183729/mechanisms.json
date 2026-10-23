@@ -1,0 +1,79 @@
+{
+  "about": "Mechanisms in MOC-183729 as chains of parts in the order motion flows. type = catalog/mechanisms.json, except sliding_dog_clutch which isn't in that library (see note on that mechanism). status per link: confirmed (seen in the booklet) or hypothesis.",
+  "mechanisms": [
+    {
+      "id": "frame",
+      "type": "rigid_frame",
+      "name": "Gearbox housing",
+      "does": "Holds all three shafts (input, main, and the shift lever's pivot) at fixed spacing so the gears mesh correctly.",
+      "input": null,
+      "output": null,
+      "chain": [
+        { "part": "bracket-L", "role": "left corner post", "status": "confirmed" },
+        { "part": "bracket-R", "role": "right corner post", "status": "confirmed" },
+        { "part": "beam-C", "role": "top bar, closes the U", "link": "on pin-blue-A and peg-black-B", "status": "confirmed" },
+        { "part": "bracket-G", "role": "input shaft bearing post", "link": "on pin-blue-D", "status": "confirmed" },
+        { "part": "bracket-H", "role": "second bearing post", "link": "on pin-blue-F", "status": "confirmed" },
+        { "part": "fork-R", "role": "right-hand main shaft bearing", "status": "hypothesis" }
+      ]
+    },
+    {
+      "id": "shift_fork",
+      "type": "hinge",
+      "name": "Shift lever mount",
+      "does": "knob-I's ball stud is a lever attachment point; fork-J (fixed to the frame via pin-blue-E, not free to swing) holds it.",
+      "input": "hand push on a lever (not included)",
+      "output": "slide of fork-J's slot along the main shaft",
+      "chain": [
+        { "part": "pin-blue-E", "role": "frame mount", "status": "confirmed" },
+        { "part": "fork-J", "role": "slotted housing, straddles the clutch sleeve", "link": "locked on pin-blue-E", "status": "confirmed" },
+        { "part": "knob-I", "role": "ball-stud lever point", "link": "pin into fork-J", "status": "confirmed" }
+      ]
+    },
+    {
+      "id": "input_mesh",
+      "type": "gear_pair",
+      "name": "Input to main shaft",
+      "does": "Turns the main shaft (axle-N) when the input shaft (axle-input-T) is turned by hand or motor.",
+      "input": "axle-input-T",
+      "output": "axle-N, via gear-gray-L",
+      "ratio": "20/16 (gear-blue-U to gear-gray-L)",
+      "chain": [
+        { "part": "axle-input-T", "role": "input shaft", "link": "turns in bracket-G", "status": "confirmed" },
+        { "part": "gear-blue-U", "role": "driver gear", "link": "locked on axle-input-T", "status": "hypothesis (catalog match TURNS, not LOCKED -- see systems.json open_questions)" },
+        { "part": "gear-gray-L", "role": "driven gear", "link": "locked on axle-N", "status": "confirmed" },
+        { "part": "axle-N", "role": "main shaft, carries the clutch and both output gears", "status": "confirmed" }
+      ]
+    },
+    {
+      "id": "clutch_select",
+      "type": "sliding_dog_clutch",
+      "name": "Two-position gear clutch",
+      "does": "Not in catalog/mechanisms.json's library -- described here: a collar (sleeve-wht-Q + sleeve-blk-S) locked to a shaft so it always turns with it, but free to slide along the shaft's length inside a fork's slot. Sliding it against a neighboring free gear's clutch face locks that gear to the shaft; sliding it away frees the gear again.",
+      "input": "slide of fork-J (from the shift lever)",
+      "output": "whether gear-red-P turns with axle-N or spins free of it",
+      "chain": [
+        { "part": "fork-J", "role": "pushes the sleeve", "status": "confirmed" },
+        { "part": "sleeve-wht-Q", "role": "half of the sliding collar, locked to axle-N", "status": "confirmed" },
+        { "part": "sleeve-blk-S", "role": "other half of the sliding collar, locked to axle-N", "status": "confirmed" },
+        { "part": "gear-red-P", "role": "free gear the sleeve can lock to the shaft", "status": "confirmed" }
+      ]
+    },
+    {
+      "id": "output",
+      "type": "shaft_with_stops",
+      "name": "Output shaft",
+      "does": "Carries the selected drive out through gear-tan-M, always locked to the main shaft.",
+      "input": "axle-N",
+      "output": "ext-W",
+      "chain": [
+        { "part": "gear-tan-M", "role": "always-locked output gear", "link": "locked on axle-N", "status": "confirmed" },
+        { "part": "fork-R", "role": "bearing, lets axle-N spin free", "status": "hypothesis" },
+        { "part": "ext-W", "role": "output handle", "link": "locked on axle-N", "status": "confirmed" }
+      ]
+    }
+  ],
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The clutch_select mechanism's real job (pick between two different output speeds, vs. simple engage/disengage) is unconfirmed -- see sets/MOC-183729/systems.json open_questions. gear-gray-L being a LOCKED (not free) gear in the catalog match is the main contradiction: a classic 2-speed dog clutch needs two FREE gears to choose between, and only gear-red-P is confirmed free."
+}

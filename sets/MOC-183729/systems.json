@@ -1,0 +1,71 @@
+{
+  "model": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "what_the_model_does": "A small free-standing gearbox: one input shaft (bottom) drives one output shaft (top-right) through a pair of gears on a common main shaft. A ball-stud lever slides a dog-clutch collar along the main shaft, which is meant to pick between two gear paths for two different output speeds (or possibly just engage/disengage drive -- see open_questions).",
+  "open_questions": [
+    "What exactly the dog-clutch sleeve (sleeve-wht-Q, sleeve-blk-S) selects between is not confirmed. gear-gray-L is catalogued as a locked (cross-hole) gear, always turning with the main shaft, which doesn't fit a classic 2-speed design where the clutch should pick between two FREE gears. gear-red-P is the only confirmed free gear. The booklet pictures aren't clear enough to settle whether gear-gray-L is really free (and the catalog match is wrong) or whether this model's '2-speed' is actually an engage/disengage clutch rather than two different ratios.",
+    "Whether gear-blue-U (the input gear) meshes only with gear-gray-L, or also reaches gear-red-P's teeth (both are 16-tooth, close together), is not shown clearly. If it meshes with both, the clutch is choosing which of two always-spinning gears gets locked to the output shaft (an engage/disengage clutch). If only gear-gray-L, then gear-red-P needs a second, unseen drive path to make sense as a '2nd speed' -- not found in this booklet.",
+    "fork-J's exact part number could not be confirmed from the catalog (see step 6's review_note) -- its shape (slot straddling the clutch sleeve, ball stud on top for a lever) is read from position and function, not a confirmed match.",
+    "The left-side bush-K and right-side fork-R bearing holes for the main shaft are read from the picture's rough layout, not confirmed hole-by-hole (see steps 7 and 11's review_notes)."
+  ],
+  "systems": [
+    {
+      "id": "housing",
+      "name": "Frame / housing",
+      "real_machine": "The casing of a real gearbox: a rigid box that holds the shafts at fixed spacing so the gears stay meshed.",
+      "purpose": "A U-shaped frame (a 7-hole beam on two corner posts) that all the shafts and the shift mechanism mount to.",
+      "depends_on": [],
+      "feeds": ["drivetrain", "shift"],
+      "why_built_first": "Every shaft, gear and the shift fork need something rigid to hang off; the frame has to close into a U before anything can be mounted at a fixed spacing.",
+      "parts": {
+        "bracket-L": "Left corner post: anchors pin-blue-A (holds the beam) and pin-red-A (unused stub in this 11-step booklet).",
+        "pin-blue-A": "Carries beam-C's left end.",
+        "pin-red-A": "Free stub on the left corner; not reached again in this booklet.",
+        "bracket-R": "Right corner post: anchors peg-black-B (holds the beam).",
+        "peg-black-B": "Carries beam-C's right end.",
+        "fork-R": "Right-hand bearing block: its round hole is where the main shaft axle-N spins free and exits the frame.",
+        "beam-C": "Top bar: closes the frame into a U and carries the shift mechanism's mounting pegs.",
+        "pin-blue-D": "Carries bracket-G, the input shaft's bearing post.",
+        "pin-blue-F": "Carries bracket-H, a second bearing post next to the output side.",
+        "bracket-G": "Bearing post for axle-input-T, the input shaft.",
+        "bracket-H": "Bearing post next to gear-tan-M / the output end.",
+        "pin-blue-E": "Carries fork-J, the shift-fork housing, in the middle of the frame."
+      }
+    },
+    {
+      "id": "shift",
+      "name": "Gear-shift lever and fork",
+      "real_machine": "The gear stick and selector fork of a manual gearbox: moving the lever slides a collar inside the box to pick a gear.",
+      "purpose": "Lets a person (through a lever, not included, plugged onto knob-I's ball) slide the dog-clutch sleeve along the main shaft.",
+      "depends_on": ["housing"],
+      "feeds": ["drivetrain"],
+      "why_built_first": "Built before the main shaft (steps 7-10) so the shaft can be threaded through its slot as the shaft goes in.",
+      "parts": {
+        "fork-J": "Housing with a slot that straddles the sliding clutch sleeve; a ball stud on top takes a lever.",
+        "knob-I": "Ball-stud lever attachment point on top of fork-J."
+      }
+    },
+    {
+      "id": "drivetrain",
+      "name": "Gear shaft and clutch",
+      "real_machine": "The gear cluster of a 2-speed transmission: an input shaft, an output shaft, two gears, and a clutch that picks between them.",
+      "purpose": "Carries drive from the input handle (axle-input-T) to the output handle (via axle-N), through whichever gear the dog-clutch currently selects.",
+      "depends_on": ["housing", "shift"],
+      "feeds": [],
+      "why_built_first": "Built last since every gear and the clutch sleeve mount on the main shaft, which needs the frame and the shift fork's slot already in place to thread through.",
+      "parts": {
+        "bush-K": "Spacer/stop near the main shaft's left end, locked to axle-N.",
+        "gear-gray-L": "Gear locked to axle-N; meshes with the input gear gear-blue-U.",
+        "gear-tan-M": "Gear locked to axle-N near the output end; always turns with the main shaft.",
+        "axle-N": "The main shaft: carries bush-K, gear-gray-L, the clutch sleeve, gear-red-P (free) and gear-tan-M, and exits through fork-R and ext-W as the output.",
+        "axle-brown-O": "Short axle gear-red-P free-spins on, positioned in line with the main shaft.",
+        "gear-red-P": "Free clutch gear between gear-gray-L and gear-tan-M; the dog-clutch sleeve can lock it to the shaft.",
+        "sleeve-wht-Q": "Half of the sliding dog-clutch collar, locked to axle-N, slides in fork-J's slot.",
+        "sleeve-blk-S": "Other half of the sliding dog-clutch collar, locked to axle-N next to sleeve-wht-Q.",
+        "axle-input-T": "Input shaft, turned by hand or motor at ext-V; meshes gear-blue-U into gear-gray-L.",
+        "gear-blue-U": "Input gear on axle-input-T; drives gear-gray-L.",
+        "ext-V": "Input handle, the exposed end of axle-input-T.",
+        "ext-W": "Output handle, the exposed end of axle-N."
+      }
+    }
+  ]
+}

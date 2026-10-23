@@ -1,0 +1,58 @@
+{
+  "example_id": "MOC-183729-step-05",
+  "set": "LEGO Technic MOC-183729 Compact 2-Speed Gearbox",
+  "page": 5,
+  "step": 5,
+  "input": {
+    "picture": "steps/main-05/picture.png",
+    "parts_box": [
+      { "name": "bracket-G", "part_number": "6536", "count": 1 },
+      { "name": "bracket-H", "part_number": "6536", "count": 1 }
+    ],
+    "model_so_far": "Frame with beam-C carrying 3 free pegs (pin-blue-D, pin-blue-E, pin-blue-F) in its middle holes."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bracket-G",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "cross hole onto pin-blue-D's free axle end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bracket-H",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "cross hole onto pin-blue-F's free axle end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bracket-G's cross hole goes onto pin-blue-D's free axle end",
+      "bracket-H's cross hole goes onto pin-blue-F's free axle end"
+    ],
+    "who_does_what_to_which": [
+      "pin-blue-D carries bracket-G",
+      "pin-blue-F carries bracket-H"
+    ],
+    "where_everything_is_after": [
+      "bracket-G, bracket-H: new, hanging below beam-C on the outer two of the three middle pegs",
+      "pin-blue-E: still bare, the only middle peg without a bracket",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Turns the outer two middle pegs into another pair of round-hole mounts, matching the corner brackets' shape.",
+      "why_these_parts": "Locking a bracket onto each axle end fixes it so it can't spin loose; leaving the middle peg bare keeps it free for the shift housing's cross hole next.",
+      "sets_up_for_later": "bracket-G and bracket-H's round holes are the bearing points the long gear shaft (step 7) passes between.",
+      "design_pattern": "mirror the side (two identical brackets added together)"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": false,
+  "review_note": "The two brackets in this step's picture are read as going on the outer two pegs (pin-blue-D, pin-blue-F) rather than the middle one, because step 6 shows the middle peg (pin-blue-E) taking the shift housing instead, and step 7's shaft needs a bearing hole on each side of the housing -- exactly where these two brackets end up."
+}

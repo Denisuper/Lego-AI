@@ -1,8 +1,0 @@
-ADD conn-18 32013 black
-POS conn-18 0 0 0 -1 0 0 0 1 0 0 0 -1
-ADD axle4-3 3705 black
-POS axle4-3 0 0 2.5 0 -1 0 0 0 1 -1 0 0
-ADD pin-40 65487 black
-POS pin-40 1 0 0 -1 0 0 0 1 0 0 0 -1
-CONNECT axle4-3.axle4 -> conn-18.axlehole1 LOCKED
-CONNECT pin-40.pin1 -> conn-18.hole1 STIFF
