@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-084",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 74,
+  "step": 84,
+  "input": {
+    "picture": "steps/main-084/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-l6-1",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "bm-bp9-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "bm-bp9-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Lower arm with cover (step 83)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-l6-1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 3 x 5 L-beam with two blue pins (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bp9-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins in the L-beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bp9-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins in the L-beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: two blue pins in the L-beam; the unit is placed on the lower arm (arrow) and swings down (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-l6-1 carries bm-bp9-1"
+    ],
+    "where_everything_is_after": [
+      "an L-beam with two blue pins sits at the end of the lower arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the elbow bracket.",
+      "why_these_parts": "An L-beam gives a stiff elbow.",
+      "sets_up_for_later": "Later steps join the upper arm here.",
+      "design_pattern": "elbow"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

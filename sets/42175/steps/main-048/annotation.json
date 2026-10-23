@@ -8,7 +8,7 @@
     "parts_box": [
       {
         "name": "cb-b15-1",
-        "part_number": "32278",
+        "part_number": "71710",
         "count": 1
       }
     ],
@@ -18,8 +18,8 @@
     "new_parts": [
       {
         "name": "cb-b15-1",
-        "part_number": "32278",
-        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "part_number": "71710",
+        "catalog_name": "Technic Beam 1 x 15 Thick with Alternating Holes",
         "color": "Black",
         "part_match": "confirmed",
         "position": "black 15-hole beam (1:1 box, circled 15)",

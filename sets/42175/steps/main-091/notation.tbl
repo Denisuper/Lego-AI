@@ -1,0 +1,10 @@
+STEP 91
+ADD bm-b11e-1 32525 black
+ADD bm-gp6-1 4274 lightgray
+ADD bm-l7-1 32526 black
+CONNECT bm-gp6-1.pin1 -> bm-b11e-1.hole11~ TURNS
+CONNECT bm-b11e-1.hole? -> bm-bp10-1.pin1?
+CONNECT bm-l7-1.hole? -> bm-b11-1.hole?
+DOES bm-b11e-1 HOLDS bm-tpin-1
+DOES bm-l7-1 SUPPORTS bm-b11e-1
+PATTERN cover_beam

@@ -1,0 +1,13 @@
+STEP 93
+ADD bm-tbk2-1 11478 black
+ADD bm-tbk2-2 11478 black
+ADD bm-bp12-1 43093 blue
+ADD bm-b5c-1 32316 black
+ADD bm-ap3-1 18651 black
+CONNECT bm-ap3-1.axle1 -> bm-tbk2-1.axlehole1~ LOCKED
+CONNECT bm-ap3-1.axle2 -> bm-tbk2-2.axlehole1~ LOCKED
+CONNECT bm-bp12-1.pin1 -> bm-b5c-1.hole1~ STIFF
+CONNECT bm-tbk2-1.hole1 -> bm-b5c-1.hole?
+DOES bm-ap3-1 CARRIES bm-tbk2-1
+DOES bm-b5c-1 HOLDS bm-bp12-1
+PATTERN hinge_plate

@@ -1,0 +1,78 @@
+{
+  "example_id": "42175-step-090",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 81,
+  "step": 90,
+  "input": {
+    "picture": "steps/main-090/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-cyl-1",
+        "part_number": "19478",
+        "count": 1
+      },
+      {
+        "name": "bm-tpin-1",
+        "part_number": "39888",
+        "count": 1
+      },
+      {
+        "name": "bm-tpin-2",
+        "part_number": "39888",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with posts along the upper beam (step 89)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-cyl-1",
+        "part_number": "19478",
+        "catalog_name": "Pneumatic Cylinder 2 x 11 with 2 Stepped Inlets [V2]",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey pneumatic cylinder 2 x 11 (second one in the set), fitted under the arm (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tpin-1",
+        "part_number": "39888",
+        "catalog_name": "Technic Pin Long without Friction Ridges, with Anti-Roll Notch",
+        "color": "Tan",
+        "part_match": "likely",
+        "position": "two tan long pins at the cylinder ends (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tpin-2",
+        "part_number": "39888",
+        "catalog_name": "Technic Pin Long without Friction Ridges, with Anti-Roll Notch",
+        "color": "Tan",
+        "part_match": "likely",
+        "position": "two tan long pins at the cylinder ends (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the cylinder has a tan pin at each end. It is lowered between the elbow posts and the root (arrow), so that extending it pushes the lower arm."
+    ],
+    "who_does_what_to_which": [
+      "bm-cyl-1 drives bm-b3-1",
+      "bm-tpin-1 holds bm-cyl-1"
+    ],
+    "where_everything_is_after": [
+      "a pneumatic cylinder is pinned between the root and the elbow beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the cylinder that bends the arm at the elbow.",
+      "why_these_parts": "A cylinder pushing between two pivots turns the joint.",
+      "sets_up_for_later": "Steps 91-92 add beams that lock its pins.",
+      "design_pattern": "arm cylinder"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Cylinders have little catalog detail, so cylinder holes are open. Which post takes each tan pin is read from the picture."
+}

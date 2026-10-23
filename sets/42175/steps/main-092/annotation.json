@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-092",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 83,
+  "step": 92,
+  "input": {
+    "picture": "steps/main-092/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-tb2-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with cover beam (step 91)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-tb2-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin beam over the pin end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A small black thin beam is added at the end of the cover beam (picture)."
+    ],
+    "who_does_what_to_which": [
+      "bm-tb2-1 holds bm-gp6-1"
+    ],
+    "where_everything_is_after": [
+      "the grey pin is covered by a thin beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Locks the grey pin so it stays.",
+      "why_these_parts": "A thin beam over a pin keeps it in.",
+      "sets_up_for_later": "Step 93 builds the next hinge.",
+      "design_pattern": "pin lock"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Position estimated."
+}

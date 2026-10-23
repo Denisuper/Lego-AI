@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-079",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 69,
+  "step": 79,
+  "input": {
+    "picture": "steps/main-079/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b11c-1",
+        "part_number": "32525",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with brace and underside connector (steps 74-78)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b11c-1",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam hanging from the arm root (1:1 box, circled 11)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The beam is pushed onto the blue pin at the arm's root end and hangs down, free to swing (picture shows it at an angle)."
+    ],
+    "who_does_what_to_which": [
+      "bm-bp7-1 holds bm-b11c-1"
+    ],
+    "where_everything_is_after": [
+      "an 11-hole beam hangs from the arm root on a pin",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Makes the lower arm section that will swing.",
+      "why_these_parts": "A beam on a free pin is a hinge.",
+      "sets_up_for_later": "Step 80 adds a long beam alongside.",
+      "design_pattern": "lower arm"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes used not countable."
+}

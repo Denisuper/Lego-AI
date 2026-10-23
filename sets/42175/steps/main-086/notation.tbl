@@ -1,0 +1,7 @@
+STEP 86
+ADD bm-ax5c-1 32073 lightgray
+ADD bm-tbk-1 41677 black
+CONNECT bm-ax5c-1.axle3 -> bm-tbk-1.axlehole1~ LOCKED
+CONNECT bm-ax5c-1.axle1 -> bm-tp-1.pin2?
+DOES bm-ax5c-1 CARRIES bm-tbk-1
+PATTERN axle_end

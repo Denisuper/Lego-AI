@@ -1,0 +1,5 @@
+STEP 94
+ADD bm-b15f-1 32278 black
+CONNECT bm-b15f-1.hole? -> bm-bp12-1.pin?
+DOES bm-b15f-1 SUPPORTS bm-b5c-1
+PATTERN long_beam

@@ -1,0 +1,78 @@
+{
+  "example_id": "42175-step-091",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 82,
+  "step": 91,
+  "input": {
+    "picture": "steps/main-091/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b11e-1",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "bm-gp6-1",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "bm-l7-1",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with cylinder (step 90)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b11e-1",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam (1:1 box, circled 11)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-gp6-1",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey pin in the beam's end (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-l7-1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 3 x 5 L-beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the 11-hole beam with a grey pin is pressed onto the arm over the blue pins and the tan pin (arrow). The L-beam goes beside it."
+    ],
+    "who_does_what_to_which": [
+      "bm-b11e-1 holds bm-tpin-1",
+      "bm-l7-1 supports bm-b11e-1"
+    ],
+    "where_everything_is_after": [
+      "an 11-hole beam and an L-beam cover the cylinder end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Holds the cylinder's pin in place from above.",
+      "why_these_parts": "A beam over a pin keeps it from popping out.",
+      "sets_up_for_later": "Step 92 adds a small beam.",
+      "design_pattern": "pin cover"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

@@ -1,0 +1,6 @@
+STEP 88
+ADD bm-b15e-1 32278 black
+CONNECT bm-bp10-1.pin1 -> bm-b15e-1.hole?
+CONNECT bm-bp10-2.pin1 -> bm-b15e-1.hole?
+DOES bm-b15e-1 SUPPORTS bm-b13-1
+PATTERN beam_on_pins

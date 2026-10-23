@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-080",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 70,
+  "step": 80,
+  "input": {
+    "picture": "steps/main-080/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b15b-1",
+        "part_number": "32278",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with hanging 11-hole beam (step 79)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b15b-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 15-hole beam (1:1 box, circled 15), shown above the model",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The long beam is shown on the model's upper side with its number tag; no arrow shows where."
+    ],
+    "who_does_what_to_which": [
+      "bm-b15b-1 supports bm-b15-1"
+    ],
+    "where_everything_is_after": [
+      "a 15-hole beam lies beside the upper arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the upper arm's second layer.",
+      "why_these_parts": "Two long beams side by side make a stiff arm.",
+      "sets_up_for_later": "Step 81 builds another.",
+      "design_pattern": "upper layer"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The picture shows the beam in place without an arrow; its holes are estimated."
+}

@@ -1,0 +1,11 @@
+STEP 89
+ADD bm-b3-1 32523 black
+ADD bm-bp11-1 43093 blue
+ADD bm-bp11-2 43093 blue
+ADD bm-bp11-3 43093 blue
+CONNECT bm-bp11-1.pin1 -> bm-b3-1.hole1~ STIFF
+CONNECT bm-bp11-2.pin1 -> bm-b3-1.hole3~ STIFF
+CONNECT bm-bp11-3.pin1 -> bm-b15e-1.hole?
+CONNECT bm-b3-1.hole2 -> bm-tp-1.pin2?
+DOES bm-b3-1 CARRIES bm-bp11-1
+PATTERN beam_with_posts

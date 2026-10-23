@@ -43,7 +43,7 @@
       },
       {
         "name": "sd-beam15-1",
-        "part_number": "32278",
+        "part_number": "71710",
         "count": 1
       }
     ],
@@ -116,8 +116,8 @@
       },
       {
         "name": "sd-beam15-1",
-        "part_number": "32278",
-        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "part_number": "71710",
+        "catalog_name": "Technic Beam 1 x 15 Thick with Alternating Holes",
         "color": "Black",
         "part_match": "confirmed",
         "position": "black 15-hole beam laid along the panel (sub-step 3, 1:1 length check)",

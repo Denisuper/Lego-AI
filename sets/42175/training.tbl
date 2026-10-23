@@ -1399,7 +1399,7 @@ THINK part sd-gbeam-1 (43857 Technic Beam 1 x 2 Thick): grey 1 x 2 thick beam sl
 THINK part sd-bpin-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins standing out of the panel end; fixed
 THINK part sd-bpin-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins standing out of the panel end; fixed
 THINK part sd-lbeam-1 (32140 Technic Beam 2 x 4 L-Shape Thick): black 2 x 4 L-beam at the end of the long beam (sub-step 3); fixed
-THINK part sd-beam15-1 (32278 Technic Beam 1 x 15 Thick): black 15-hole beam laid along the panel (sub-step 3, 1:1 length check); fixed
+THINK part sd-beam15-1 (71710 Technic Beam 1 x 15 Thick with Alternating Holes): black 15-hole beam laid along the panel (sub-step 3, 1:1 length check); fixed
 THINK touches Sub-steps 1-3: grey pins go into the panel, a grey beam is pressed over the two blue pins, then the 15-hole beam and the L-beam are laid on and locked by the blue pins. A 1:1 box confirms the 15-hole beam.
 THINK does sd-panel-1 supports sd-beam15-1
 THINK does sd-gbeam-1 holds sd-lbeam-1
@@ -1421,7 +1421,7 @@ ADD sd-gbeam-1 43857 darkgray
 ADD sd-bpin-1 43093 blue
 ADD sd-bpin-2 43093 blue
 ADD sd-lbeam-1 32140 black
-ADD sd-beam15-1 32278 black
+ADD sd-beam15-1 71710 black
 CONNECT sd-gpin-1.pin1 -> sd-panel-1.hole1~ TURNS
 CONNECT sd-gpin-2.pin1 -> sd-panel-1.hole2~ TURNS
 CONNECT sd-bpin-1.pin1 -> sd-panel-1.hole4~ STIFF
@@ -1825,7 +1825,7 @@ PATTERN attach_subassembly
 STEP 48
 THINK have Front assembly fixed to the frame (step 47).
 THINK goal Ties the front unit to the frame along the whole side.
-THINK part cb-b15-1 (32278 Technic Beam 1 x 15 Thick): black 15-hole beam (1:1 box, circled 15); fixed
+THINK part cb-b15-1 (71710 Technic Beam 1 x 15 Thick with Alternating Holes): black 15-hole beam (1:1 box, circled 15); fixed
 THINK touches The long beam is laid along the side of the machine; two green arrows show where it meets pins at the front and the middle of the frame.
 THINK does cb-b15-1 supports cb-beam11-1
 THINK why A long beam spans between the pins to make a rigid side.
@@ -1834,7 +1834,7 @@ THINK check cb-b15-1.hole? goes into cb-bp-1.pin1? (not shown in the booklet)
 THINK builds_on cb-b15-1 builds on cb-gp-1 (42175-step-041), and rests on cb-ll-2 (42175-step-041)
 THINK builds_on cb-b15-1 builds on cb-bp-1 (42175-step-046), and rests on cb-tb5-1 (42175-step-046), cb-tb3-1 (42175-step-046)
 THINK later Following steps add the same on the other side. Pattern: side beam
-ADD cb-b15-1 32278 black
+ADD cb-b15-1 71710 black
 CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?
 CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?
 DOES cb-b15-1 SUPPORTS cb-beam11-1
@@ -2496,3 +2496,419 @@ CONNECT bm-bc-1.hole? -> bm-b11-1.hole?
 DOES bm-bc-1 HOLDS bm-ap2-1
 DOES bm-bp7-1 HOLDS bm-bc-1
 PATTERN connector_on_pin
+
+STEP 79
+THINK have Arm with brace and underside connector (steps 74-78).
+THINK goal Makes the lower arm section that will swing.
+THINK part bm-b11c-1 (32525 Technic Beam 1 x 11 Thick): black 11-hole beam hanging from the arm root (1:1 box, circled 11); fixed
+THINK touches The beam is pushed onto the blue pin at the arm's root end and hangs down, free to swing (picture shows it at an angle).
+THINK does bm-bp7-1 holds bm-b11c-1
+THINK why A beam on a free pin is a hinge.
+THINK check bm-b11c-1.hole1 goes into bm-bp7-1.pin? (not shown in the booklet)
+THINK check bm-b11c-1.hole2? goes into bm-gb7-1.hole? (not shown in the booklet)
+THINK builds_on bm-b11c-1 builds on bm-bp7-1 (42175-step-078), and rests on bm-gb7-1 (42175-step-075)
+THINK builds_on bm-b11c-1 builds on bm-gb7-1 (42175-step-075), and rests on bm-bp6-1 (42175-step-075), bm-b15-1 (42175-step-074)
+THINK later Step 80 adds a long beam alongside. Pattern: lower arm
+ADD bm-b11c-1 32525 black
+CONNECT bm-b11c-1.hole1 -> bm-bp7-1.pin?
+CONNECT bm-b11c-1.hole2? -> bm-gb7-1.hole?
+DOES bm-bp7-1 HOLDS bm-b11c-1
+PATTERN hinged_beam
+
+STEP 80
+THINK have Arm with hanging 11-hole beam (step 79).
+THINK goal Adds the upper arm's second layer.
+THINK part bm-b15b-1 (32278 Technic Beam 1 x 15 Thick): black 15-hole beam (1:1 box, circled 15), shown above the model; fixed
+THINK touches The long beam is shown on the model's upper side with its number tag; no arrow shows where.
+THINK does bm-b15b-1 supports bm-b15-1
+THINK why Two long beams side by side make a stiff arm.
+THINK check bm-b15b-1.hole? goes into bm-bp5-1.pin? (not shown in the booklet)
+THINK builds_on bm-b15b-1 builds on bm-bp5-1 (42175-step-072), and rests on bm-l4-1 (42175-step-072), bm-ac-1 (42175-step-073)
+THINK later Step 81 builds another. Pattern: upper layer
+ADD bm-b15b-1 32278 black
+CONNECT bm-b15b-1.hole? -> bm-bp5-1.pin?
+DOES bm-b15b-1 SUPPORTS bm-b15-1
+PATTERN long_beam
+
+STEP 81
+THINK have Arm with hanging beam (step 80).
+THINK goal Builds the lower arm's second long beam.
+THINK part bm-b15c-1 (71710 Technic Beam 1 x 15 Thick with Alternating Holes): black 15-hole beam built in the yellow box (1:1 box, circled 15); fixed
+THINK part bm-bp8-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed into the 15-hole beam (sub-steps 1-2); fixed
+THINK part bm-bp8-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed into the 15-hole beam (sub-steps 1-2); fixed
+THINK part bm-bp8-3 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed into the 15-hole beam (sub-steps 1-2); fixed
+THINK part bm-bush-1 (3713 Technic Bush): grey bush slipped onto one pin end (sub-step 2); fixed
+THINK touches Yellow box 1-2: three blue pins stand in a long beam and a grey bush goes on the end of one. The finished beam is laid on the lower arm (arrow).
+THINK does bm-b15c-1 carries bm-bp8-1
+THINK does bm-bush-1 holds bm-bp8-3
+THINK why Pins locate the beam and tie both layers.
+THINK check bm-bp8-1.pin1 goes into bm-b15c-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp8-2.pin1 goes into bm-b15c-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp8-3.pin1 goes into bm-b15c-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bush-1.axlehole1 goes into bm-bp8-3.axle1? (not shown in the booklet)
+THINK later Step 82 adds a third. Pattern: lower arm layer
+ADD bm-b15c-1 71710 black
+ADD bm-bp8-1 43093 blue
+ADD bm-bp8-2 43093 blue
+ADD bm-bp8-3 43093 blue
+ADD bm-bush-1 3713 lightgray
+CONNECT bm-bp8-1.pin1 -> bm-b15c-1.hole2~ STIFF
+CONNECT bm-bp8-2.pin1 -> bm-b15c-1.hole7~ STIFF
+CONNECT bm-bp8-3.pin1 -> bm-b15c-1.hole1~ STIFF
+CONNECT bm-bush-1.axlehole1 -> bm-bp8-3.axle1?
+DOES bm-b15c-1 CARRIES bm-bp8-1
+DOES bm-bush-1 HOLDS bm-bp8-3
+PATTERN beam_with_pins
+
+STEP 82
+THINK have Lower arm with two beams (step 81).
+THINK goal Closes the lower arm sandwich.
+THINK part bm-b15d-1 (71710 Technic Beam 1 x 15 Thick with Alternating Holes): black 15-hole beam on the other side (1:1 box, circled 15); fixed
+THINK touches The 15-hole beam is pressed onto the pins on the lower arm.
+THINK does bm-b15d-1 supports bm-b15c-1
+THINK why Beams on both sides of the pins lock them.
+THINK check bm-bp8-1.pin1 goes into bm-b15d-1.hole? (not shown in the booklet)
+THINK check bm-bp8-2.pin1 goes into bm-b15d-1.hole? (not shown in the booklet)
+THINK builds_on bm-b15d-1 builds on bm-bp8-1 (42175-step-081), and rests on bm-b15c-1 (42175-step-081)
+THINK builds_on bm-b15d-1 builds on bm-bp8-2 (42175-step-081), and rests on bm-b15c-1 (42175-step-081)
+THINK later Step 83 adds the covers. Pattern: lower arm sandwich
+ADD bm-b15d-1 71710 black
+CONNECT bm-bp8-1.pin1 -> bm-b15d-1.hole?
+CONNECT bm-bp8-2.pin1 -> bm-b15d-1.hole?
+DOES bm-b15d-1 SUPPORTS bm-b15c-1
+PATTERN beam_sandwich
+
+STEP 83
+THINK have Lower arm sandwich (step 82).
+THINK goal Builds the side cover with the brand print.
+THINK part bm-fr21-1 (11946 Technic Panel Fairing #21 5L Small Smooth, Side B): black fairing no. 21 (circled 21); fixed
+THINK part bm-fr22-1 (11947 Technic Panel Fairing #22 5L Small Smooth, Side A): black fairing no. 22 (circled 22); fixed
+THINK part bm-fp-1 (4274 Technic Pin 1/2): two small grey pins; fixed
+THINK part bm-fp-2 (4274 Technic Pin 1/2): two small grey pins; fixed
+THINK part bm-fa-1 (32062 Technic Axle 2 Notched): two red 2-long notched axles (yellow box 1); fixed
+THINK part bm-fa-2 (32062 Technic Axle 2 Notched): two red 2-long notched axles (yellow box 1); fixed
+THINK part bm-ft-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams the red axles go through (yellow box 1); fixed
+THINK part bm-ft-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams the red axles go through (yellow box 1); fixed
+THINK touches Yellow box 1-5: red axles through a thin beam, fairings 21 and 22 pushed onto them, grey pins added, sticker panel (page 26 and 18) shown. The finished VOLVO cover is placed on the lower arm (arrow).
+THINK does bm-fr21-1 supports bm-fr22-1
+THINK does bm-ft-1 carries bm-fa-1
+THINK why Fairings give the arm its shape and hide the beams.
+THINK check bm-fa-1.axle1 goes into bm-ft-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-fa-2.axle1 goes into bm-ft-1.axlehole2, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-fp-1.pin1 goes into bm-fr21-1.hole? (not shown in the booklet)
+THINK check bm-fp-2.pin1 goes into bm-fr22-1.hole? (not shown in the booklet)
+THINK check bm-fr21-1.hole? goes into bm-fa-1.axle2? (not shown in the booklet)
+THINK later Step 84 adds the cross beam. Pattern: cover
+ADD bm-fr21-1 11946 black
+ADD bm-fr22-1 11947 black
+ADD bm-fp-1 4274 lightgray
+ADD bm-fp-2 4274 lightgray
+ADD bm-fa-1 32062 red
+ADD bm-fa-2 32062 red
+ADD bm-ft-1 41677 black
+ADD bm-ft-2 41677 black
+CONNECT bm-fa-1.axle1 -> bm-ft-1.axlehole1~ LOCKED
+CONNECT bm-fa-2.axle1 -> bm-ft-1.axlehole2~ LOCKED
+CONNECT bm-fp-1.pin1 -> bm-fr21-1.hole?
+CONNECT bm-fp-2.pin1 -> bm-fr22-1.hole?
+CONNECT bm-fr21-1.hole? -> bm-fa-1.axle2?
+DOES bm-fr21-1 SUPPORTS bm-fr22-1
+DOES bm-ft-1 CARRIES bm-fa-1
+PATTERN cover_panels
+
+STEP 84
+THINK have Lower arm with cover (step 83).
+THINK goal Adds the elbow bracket.
+THINK part bm-l6-1 (32526 Technic Beam 3 x 5 L-Shape Thick): black 3 x 5 L-beam with two blue pins (yellow box); fixed
+THINK part bm-bp9-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins in the L-beam; fixed
+THINK part bm-bp9-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins in the L-beam; fixed
+THINK touches Yellow box: two blue pins in the L-beam; the unit is placed on the lower arm (arrow) and swings down (green arrow).
+THINK does bm-l6-1 carries bm-bp9-1
+THINK why An L-beam gives a stiff elbow.
+THINK check bm-bp9-1.pin1 goes into bm-l6-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp9-2.pin1 goes into bm-l6-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-l6-1.hole? goes into bm-b15d-1.hole? (not shown in the booklet)
+THINK builds_on bm-l6-1 builds on bm-b15d-1 (42175-step-082), and rests on bm-bp8-1 (42175-step-081), bm-bp8-2 (42175-step-081)
+THINK later Later steps join the upper arm here. Pattern: elbow
+ADD bm-l6-1 32526 black
+ADD bm-bp9-1 43093 blue
+ADD bm-bp9-2 43093 blue
+CONNECT bm-bp9-1.pin1 -> bm-l6-1.hole1~ STIFF
+CONNECT bm-bp9-2.pin1 -> bm-l6-1.hole2~ STIFF
+CONNECT bm-l6-1.hole? -> bm-b15d-1.hole?
+DOES bm-l6-1 CARRIES bm-bp9-1
+PATTERN beam_with_posts
+
+STEP 85
+THINK have Arm with lower section and cover (steps 79-84).
+THINK goal Builds the elbow beam that the upper arm hangs on.
+THINK part bm-b11d-1 (32525 Technic Beam 1 x 11 Thick): black 11-hole beam, base of the sub-build (1:1 box, circled 11); fixed
+THINK part bm-b5b-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam laid under it (1:1 box, circled 5); fixed
+THINK part bm-gp5-1 (4274 Technic Pin 1/2): small grey pin pushed in at one end (sub-step 1, green arrow); fixed
+THINK part bm-bp10-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins in the beams (sub-steps 2-3); fixed
+THINK part bm-bp10-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins in the beams (sub-steps 2-3); fixed
+THINK part bm-bp10-3 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins in the beams (sub-steps 2-3); fixed
+THINK part bm-bp10-4 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins in the beams (sub-steps 2-3); fixed
+THINK part bm-tp-1 (32002 Technic Pin 3/4): tan 3/4 pin in the 5-hole beam's end (sub-step 4); fixed
+THINK touches Sub-steps 1-4: a grey pin and blue pins are pushed into the 11-hole beam, the 5-hole beam is laid beside, and a tan pin goes in its end. The finished piece is fitted at the lower end of the arm (arrow on page 76).
+THINK does bm-b11d-1 carries bm-bp10-1
+THINK does bm-b5b-1 carries bm-tp-1
+THINK why Pins give locating points for later beams.
+THINK check bm-gp5-1.pin1 goes into bm-b11d-1.hole1, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check bm-bp10-1.pin1 goes into bm-b11d-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp10-2.pin1 goes into bm-b11d-1.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp10-3.pin1 goes into bm-b11d-1.hole11, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp10-4.pin1 goes into bm-b5b-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-tp-1.pin1 goes into bm-b5b-1.hole1, 0.4 hole deep, held stiff by friction (estimated from the picture)
+THINK later Step 86 adds an axle. Pattern: elbow beam
+ADD bm-b11d-1 32525 black
+ADD bm-b5b-1 32316 black
+ADD bm-gp5-1 4274 lightgray
+ADD bm-bp10-1 43093 blue
+ADD bm-bp10-2 43093 blue
+ADD bm-bp10-3 43093 blue
+ADD bm-bp10-4 43093 blue
+ADD bm-tp-1 32002 tan
+CONNECT bm-gp5-1.pin1 -> bm-b11d-1.hole1~ TURNS
+CONNECT bm-bp10-1.pin1 -> bm-b11d-1.hole3~ STIFF
+CONNECT bm-bp10-2.pin1 -> bm-b11d-1.hole8~ STIFF
+CONNECT bm-bp10-3.pin1 -> bm-b11d-1.hole11~ STIFF
+CONNECT bm-bp10-4.pin1 -> bm-b5b-1.hole2~ STIFF
+CONNECT bm-tp-1.pin1 -> bm-b5b-1.hole1~ STIFF
+DOES bm-b11d-1 CARRIES bm-bp10-1
+DOES bm-b5b-1 CARRIES bm-tp-1
+PATTERN beam_with_posts
+
+STEP 86
+THINK have Arm with elbow beam (step 85).
+THINK goal Adds the elbow shaft.
+THINK part bm-ax5c-1 (32073 Technic Axle 5): grey 5-long axle (1:1 box, circled 5); fixed
+THINK part bm-tbk-1 (41677 Technic Beam 1 x 2 Thin): black thin beam slid onto the axle (yellow box 1-2); fixed
+THINK touches Yellow box: a thin black beam is slid onto the middle of the grey axle (1:1 check). The axle is pushed into the elbow beam end (green arrows).
+THINK does bm-ax5c-1 carries bm-tbk-1
+THINK why An axle through the beams makes the elbow hinge.
+THINK check bm-ax5c-1.axle3 goes into bm-tbk-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-ax5c-1.axle1 goes into bm-tp-1.pin2? (not shown in the booklet)
+THINK builds_on bm-ax5c-1 builds on bm-tp-1 (42175-step-085), and rests on bm-b5b-1 (42175-step-085)
+THINK later Step 87 adds a long beam. Pattern: elbow shaft
+ADD bm-ax5c-1 32073 lightgray
+ADD bm-tbk-1 41677 black
+CONNECT bm-ax5c-1.axle3 -> bm-tbk-1.axlehole1~ LOCKED
+CONNECT bm-ax5c-1.axle1 -> bm-tp-1.pin2?
+DOES bm-ax5c-1 CARRIES bm-tbk-1
+PATTERN axle_end
+
+STEP 87
+THINK have Arm with elbow shaft (step 86).
+THINK goal Adds the upper arm beam.
+THINK part bm-b13-1 (41239 Technic Beam 1 x 13 Thick): dark grey 13-hole beam (1:1 box, circled 13); fixed
+THINK touches The 13-hole beam is raised from below onto the grey axle (green arrow).
+THINK does bm-ax5c-1 carries bm-b13-1
+THINK why A long beam on a shaft is a swinging arm.
+THINK check bm-b13-1.hole1 goes into bm-ax5c-1.axle? (not shown in the booklet)
+THINK builds_on bm-b13-1 builds on bm-ax5c-1 (42175-step-086), and rests on bm-tbk-1 (42175-step-086), bm-tp-1 (42175-step-085)
+THINK later Step 88 adds a second long beam. Pattern: upper arm
+ADD bm-b13-1 41239 darkgray
+CONNECT bm-b13-1.hole1 -> bm-ax5c-1.axle?
+DOES bm-ax5c-1 CARRIES bm-b13-1
+PATTERN hinged_beam
+
+STEP 88
+THINK have Arm with hinged 13-hole beam (step 87).
+THINK goal Adds the second upper beam.
+THINK part bm-b15e-1 (32278 Technic Beam 1 x 15 Thick): black 15-hole beam (1:1 box, circled 15); fixed
+THINK touches The 15-hole beam is shown crossing the model, held at the pins (picture).
+THINK does bm-b15e-1 supports bm-b13-1
+THINK why Another beam on the same pins stiffens the elbow.
+THINK check bm-bp10-1.pin1 goes into bm-b15e-1.hole? (not shown in the booklet)
+THINK check bm-bp10-2.pin1 goes into bm-b15e-1.hole? (not shown in the booklet)
+THINK builds_on bm-b15e-1 builds on bm-bp10-1 (42175-step-085), and rests on bm-b11d-1 (42175-step-085)
+THINK builds_on bm-b15e-1 builds on bm-bp10-2 (42175-step-085), and rests on bm-b11d-1 (42175-step-085)
+THINK later Step 89 adds pins. Pattern: second beam
+ADD bm-b15e-1 32278 black
+CONNECT bm-bp10-1.pin1 -> bm-b15e-1.hole?
+CONNECT bm-bp10-2.pin1 -> bm-b15e-1.hole?
+DOES bm-b15e-1 SUPPORTS bm-b13-1
+PATTERN beam_on_pins
+
+STEP 89
+THINK have Arm with second beam (step 88).
+THINK goal Adds posts for the cylinder mounts.
+THINK part bm-b3-1 (32523 Technic Beam 1 x 3 Thick): black 1 x 3 beam with blue pins (yellow box); fixed
+THINK part bm-bp11-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins; fixed
+THINK part bm-bp11-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins; fixed
+THINK part bm-bp11-3 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins; fixed
+THINK touches Yellow box: a short beam with blue pins is pushed onto the end of the elbow; one more blue pin goes into the long beam (green arrow).
+THINK does bm-b3-1 carries bm-bp11-1
+THINK why Pins mark mounting points.
+THINK check bm-bp11-1.pin1 goes into bm-b3-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp11-2.pin1 goes into bm-b3-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-bp11-3.pin1 goes into bm-b15e-1.hole? (not shown in the booklet)
+THINK check bm-b3-1.hole2 goes into bm-tp-1.pin2? (not shown in the booklet)
+THINK builds_on bm-b3-1 builds on bm-tp-1 (42175-step-085), and rests on bm-b5b-1 (42175-step-085), bm-ax5c-1 (42175-step-086)
+THINK builds_on bm-bp11-3 builds on bm-b15e-1 (42175-step-088), and rests on bm-bp10-1 (42175-step-085), bm-bp10-2 (42175-step-085)
+THINK later Steps 90 onward add the cylinder. Pattern: mount posts
+ADD bm-b3-1 32523 black
+ADD bm-bp11-1 43093 blue
+ADD bm-bp11-2 43093 blue
+ADD bm-bp11-3 43093 blue
+CONNECT bm-bp11-1.pin1 -> bm-b3-1.hole1~ STIFF
+CONNECT bm-bp11-2.pin1 -> bm-b3-1.hole3~ STIFF
+CONNECT bm-bp11-3.pin1 -> bm-b15e-1.hole?
+CONNECT bm-b3-1.hole2 -> bm-tp-1.pin2?
+DOES bm-b3-1 CARRIES bm-bp11-1
+PATTERN beam_with_posts
+
+STEP 90
+THINK have Arm with posts along the upper beam (step 89).
+THINK goal Adds the cylinder that bends the arm at the elbow.
+THINK part bm-cyl-1 (19478 Pneumatic Cylinder 2 x 11 with 2 Stepped Inlets [V2]): grey pneumatic cylinder 2 x 11 (second one in the set), fitted under the arm (yellow box); fixed
+THINK part bm-tpin-1 (39888 Technic Pin Long without Friction Ridges, with Anti-Roll Notch): two tan long pins at the cylinder ends (yellow box); fixed
+THINK part bm-tpin-2 (39888 Technic Pin Long without Friction Ridges, with Anti-Roll Notch): two tan long pins at the cylinder ends (yellow box); fixed
+THINK touches Yellow box: the cylinder has a tan pin at each end. It is lowered between the elbow posts and the root (arrow), so that extending it pushes the lower arm.
+THINK does bm-cyl-1 drives bm-b3-1
+THINK does bm-tpin-1 holds bm-cyl-1
+THINK why A cylinder pushing between two pivots turns the joint.
+THINK check bm-tpin-1.pin1 goes into bm-cyl-1.hole? (not shown in the booklet)
+THINK check bm-tpin-2.pin1 goes into bm-cyl-1.hole? (not shown in the booklet)
+THINK check bm-tpin-1.pin2 goes into bm-b15e-1.hole? (not shown in the booklet)
+THINK check bm-tpin-2.pin2 goes into bm-b3-1.hole? (not shown in the booklet)
+THINK builds_on bm-tpin-1 builds on bm-b15e-1 (42175-step-088), and rests on bm-bp10-1 (42175-step-085), bm-bp10-2 (42175-step-085)
+THINK builds_on bm-tpin-2 builds on bm-b3-1 (42175-step-089), and rests on bm-bp11-1 (42175-step-089), bm-bp11-2 (42175-step-089)
+THINK later Steps 91-92 add beams that lock its pins. Pattern: arm cylinder
+ADD bm-cyl-1 19478 darkgray
+ADD bm-tpin-1 39888 tan
+ADD bm-tpin-2 39888 tan
+CONNECT bm-tpin-1.pin1 -> bm-cyl-1.hole?
+CONNECT bm-tpin-2.pin1 -> bm-cyl-1.hole?
+CONNECT bm-tpin-1.pin2 -> bm-b15e-1.hole?
+CONNECT bm-tpin-2.pin2 -> bm-b3-1.hole?
+DOES bm-cyl-1 DRIVES bm-b3-1
+DOES bm-tpin-1 HOLDS bm-cyl-1
+PATTERN cylinder_between_beams
+
+STEP 91
+THINK have Arm with cylinder (step 90).
+THINK goal Holds the cylinder's pin in place from above.
+THINK part bm-b11e-1 (32525 Technic Beam 1 x 11 Thick): black 11-hole beam (1:1 box, circled 11); fixed
+THINK part bm-gp6-1 (4274 Technic Pin 1/2): small grey pin in the beam's end (yellow box); fixed
+THINK part bm-l7-1 (32526 Technic Beam 3 x 5 L-Shape Thick): black 3 x 5 L-beam; fixed
+THINK touches Yellow box: the 11-hole beam with a grey pin is pressed onto the arm over the blue pins and the tan pin (arrow). The L-beam goes beside it.
+THINK does bm-b11e-1 holds bm-tpin-1
+THINK does bm-l7-1 supports bm-b11e-1
+THINK why A beam over a pin keeps it from popping out.
+THINK check bm-gp6-1.pin1 goes into bm-b11e-1.hole11, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check bm-b11e-1.hole? goes into bm-bp10-1.pin1? (not shown in the booklet)
+THINK check bm-l7-1.hole? goes into bm-b11-1.hole? (not shown in the booklet)
+THINK builds_on bm-b11e-1 builds on bm-bp10-1 (42175-step-085), and rests on bm-b11d-1 (42175-step-085), bm-b15e-1 (42175-step-088)
+THINK builds_on bm-l7-1 builds on bm-b11-1 (42175-step-062), and rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+THINK later Step 92 adds a small beam. Pattern: pin cover
+ADD bm-b11e-1 32525 black
+ADD bm-gp6-1 4274 lightgray
+ADD bm-l7-1 32526 black
+CONNECT bm-gp6-1.pin1 -> bm-b11e-1.hole11~ TURNS
+CONNECT bm-b11e-1.hole? -> bm-bp10-1.pin1?
+CONNECT bm-l7-1.hole? -> bm-b11-1.hole?
+DOES bm-b11e-1 HOLDS bm-tpin-1
+DOES bm-l7-1 SUPPORTS bm-b11e-1
+PATTERN cover_beam
+
+STEP 92
+THINK have Arm with cover beam (step 91).
+THINK goal Locks the grey pin so it stays.
+THINK part bm-tb2-1 (41677 Technic Beam 1 x 2 Thin): black thin beam over the pin end; fixed
+THINK touches A small black thin beam is added at the end of the cover beam (picture).
+THINK does bm-tb2-1 holds bm-gp6-1
+THINK why A thin beam over a pin keeps it in.
+THINK check bm-tb2-1.axlehole1 goes into bm-gp6-1.pin? (not shown in the booklet)
+THINK builds_on bm-tb2-1 builds on bm-gp6-1 (42175-step-091), and rests on bm-b11e-1 (42175-step-091)
+THINK later Step 93 builds the next hinge. Pattern: pin lock
+ADD bm-tb2-1 41677 black
+CONNECT bm-tb2-1.axlehole1 -> bm-gp6-1.pin?
+DOES bm-tb2-1 HOLDS bm-gp6-1
+PATTERN pin_cap_beam
+
+STEP 93
+THINK have Arm with covered pin (step 92).
+THINK goal Builds the link at the elbow.
+THINK part bm-tbk2-1 (11478 Technic Beam 1 x 5 Thin with Axle Holes on Ends): two black thin 5-hole beams with axle holes at the ends (yellow box); fixed
+THINK part bm-tbk2-2 (11478 Technic Beam 1 x 5 Thin with Axle Holes on Ends): two black thin 5-hole beams with axle holes at the ends (yellow box); fixed
+THINK part bm-bp12-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (yellow box sub-step 2); fixed
+THINK part bm-b5c-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam (1:1 box, circled 5); fixed
+THINK part bm-ap3-1 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): black axle pin (yellow box sub-step 1); fixed
+THINK touches Yellow box 1-3: two thin beams are joined by an axle pin, a blue pin links them with a 5-hole beam. The finished hinge plate goes on the lower end of the arm (arrow with a green arrow for the blue pin).
+THINK does bm-ap3-1 carries bm-tbk2-1
+THINK does bm-b5c-1 holds bm-bp12-1
+THINK why Thin beams on an axle pin make a plate that can swing.
+THINK check bm-ap3-1.axle1 goes into bm-tbk2-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-ap3-1.axle2 goes into bm-tbk2-2.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-bp12-1.pin1 goes into bm-b5c-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-tbk2-1.hole1 goes into bm-b5c-1.hole? (not shown in the booklet)
+THINK later Later steps hang the bucket cylinder on it. Pattern: elbow plate
+ADD bm-tbk2-1 11478 black
+ADD bm-tbk2-2 11478 black
+ADD bm-bp12-1 43093 blue
+ADD bm-b5c-1 32316 black
+ADD bm-ap3-1 18651 black
+CONNECT bm-ap3-1.axle1 -> bm-tbk2-1.axlehole1~ LOCKED
+CONNECT bm-ap3-1.axle2 -> bm-tbk2-2.axlehole1~ LOCKED
+CONNECT bm-bp12-1.pin1 -> bm-b5c-1.hole1~ STIFF
+CONNECT bm-tbk2-1.hole1 -> bm-b5c-1.hole?
+DOES bm-ap3-1 CARRIES bm-tbk2-1
+DOES bm-b5c-1 HOLDS bm-bp12-1
+PATTERN hinge_plate
+
+STEP 94
+THINK have Arm with hinge plate (step 93).
+THINK goal Lengthens the arm's lower section.
+THINK part bm-b15f-1 (32278 Technic Beam 1 x 15 Thick): black 15-hole beam (1:1 box, circled 15); fixed
+THINK touches The 15-hole beam is laid along the lower side (picture, tag 15).
+THINK does bm-b15f-1 supports bm-b5c-1
+THINK why A 15-hole beam spans two pivots.
+THINK check bm-b15f-1.hole? goes into bm-bp12-1.pin? (not shown in the booklet)
+THINK builds_on bm-b15f-1 builds on bm-bp12-1 (42175-step-093), and rests on bm-b5c-1 (42175-step-093)
+THINK later Step 95 adds side beams with pins. Pattern: lower beam
+ADD bm-b15f-1 32278 black
+CONNECT bm-b15f-1.hole? -> bm-bp12-1.pin?
+DOES bm-b15f-1 SUPPORTS bm-b5c-1
+PATTERN long_beam
+
+STEP 95
+THINK have Arm with long lower beam (step 94).
+THINK goal Builds the side plates for the next hinge.
+THINK part bm-b11f-1 (32525 Technic Beam 1 x 11 Thick): two black 11-hole beams (1:1 box, circled 11); fixed
+THINK part bm-b11f-2 (32525 Technic Beam 1 x 11 Thick): two black 11-hole beams (1:1 box, circled 11); fixed
+THINK part bm-gp7-1 (4274 Technic Pin 1/2): two grey pins in the beam ends (yellow box 1-2); fixed
+THINK part bm-gp7-2 (4274 Technic Pin 1/2): two grey pins in the beam ends (yellow box 1-2); fixed
+THINK part bm-rp-1 (89678 Technic Pin 1/2 with Friction): four red short pins pushed along the beams (yellow box 2, 2x); fixed
+THINK part bm-rp-2 (89678 Technic Pin 1/2 with Friction): four red short pins pushed along the beams (yellow box 2, 2x); fixed
+THINK part bm-rp-3 (89678 Technic Pin 1/2 with Friction): four red short pins pushed along the beams (yellow box 2, 2x); fixed
+THINK part bm-rp-4 (89678 Technic Pin 1/2 with Friction): four red short pins pushed along the beams (yellow box 2, 2x); fixed
+THINK touches Yellow box, built twice: a grey pin goes in the end, two red pins go in along the beam. The two beams are placed on both sides of the arm (arrows).
+THINK does bm-b11f-1 carries bm-rp-1
+THINK does bm-b11f-2 carries bm-rp-3
+THINK why The red pins are the connection points for the cylinder.
+THINK check bm-gp7-1.pin1 goes into bm-b11f-1.hole11, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check bm-gp7-2.pin1 goes into bm-b11f-2.hole11, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check bm-rp-1.pin1 goes into bm-b11f-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-rp-2.pin1 goes into bm-b11f-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-rp-3.pin1 goes into bm-b11f-2.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check bm-rp-4.pin1 goes into bm-b11f-2.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Following steps close the elbow. Pattern: side plates
+ADD bm-b11f-1 32525 black
+ADD bm-b11f-2 32525 black
+ADD bm-gp7-1 4274 lightgray
+ADD bm-gp7-2 4274 lightgray
+ADD bm-rp-1 89678 red
+ADD bm-rp-2 89678 red
+ADD bm-rp-3 89678 red
+ADD bm-rp-4 89678 red
+CONNECT bm-gp7-1.pin1 -> bm-b11f-1.hole11~ TURNS
+CONNECT bm-gp7-2.pin1 -> bm-b11f-2.hole11~ TURNS
+CONNECT bm-rp-1.pin1 -> bm-b11f-1.hole3~ STIFF
+CONNECT bm-rp-2.pin1 -> bm-b11f-1.hole7~ STIFF
+CONNECT bm-rp-3.pin1 -> bm-b11f-2.hole3~ STIFF
+CONNECT bm-rp-4.pin1 -> bm-b11f-2.hole7~ STIFF
+DOES bm-b11f-1 CARRIES bm-rp-1
+DOES bm-b11f-2 CARRIES bm-rp-3
+PATTERN side_beams

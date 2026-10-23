@@ -1,0 +1,106 @@
+{
+  "example_id": "42175-step-093",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 84,
+  "step": 93,
+  "input": {
+    "picture": "steps/main-093/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-tbk2-1",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "bm-tbk2-2",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "bm-bp12-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "bm-b5c-1",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "bm-ap3-1",
+        "part_number": "18651",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with covered pin (step 92)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-tbk2-1",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin 5-hole beams with axle holes at the ends (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tbk2-2",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin 5-hole beams with axle holes at the ends (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bp12-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "blue pin (yellow box sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-b5c-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-ap3-1",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black axle pin (yellow box sub-step 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-3: two thin beams are joined by an axle pin, a blue pin links them with a 5-hole beam. The finished hinge plate goes on the lower end of the arm (arrow with a green arrow for the blue pin)."
+    ],
+    "who_does_what_to_which": [
+      "bm-ap3-1 carries bm-tbk2-1",
+      "bm-b5c-1 holds bm-bp12-1"
+    ],
+    "where_everything_is_after": [
+      "a thin-beam hinge plate with a 5-hole beam is placed at the elbow",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the link at the elbow.",
+      "why_these_parts": "Thin beams on an axle pin make a plate that can swing.",
+      "sets_up_for_later": "Later steps hang the bucket cylinder on it.",
+      "design_pattern": "elbow plate"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which holes are used is not countable."
+}

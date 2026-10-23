@@ -1,0 +1,13 @@
+STEP 81
+ADD bm-b15c-1 71710 black
+ADD bm-bp8-1 43093 blue
+ADD bm-bp8-2 43093 blue
+ADD bm-bp8-3 43093 blue
+ADD bm-bush-1 3713 lightgray
+CONNECT bm-bp8-1.pin1 -> bm-b15c-1.hole2~ STIFF
+CONNECT bm-bp8-2.pin1 -> bm-b15c-1.hole7~ STIFF
+CONNECT bm-bp8-3.pin1 -> bm-b15c-1.hole1~ STIFF
+CONNECT bm-bush-1.axlehole1 -> bm-bp8-3.axle1?
+DOES bm-b15c-1 CARRIES bm-bp8-1
+DOES bm-bush-1 HOLDS bm-bp8-3
+PATTERN beam_with_pins

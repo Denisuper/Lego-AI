@@ -1,0 +1,6 @@
+STEP 79
+ADD bm-b11c-1 32525 black
+CONNECT bm-b11c-1.hole1 -> bm-bp7-1.pin?
+CONNECT bm-b11c-1.hole2? -> bm-gb7-1.hole?
+DOES bm-bp7-1 HOLDS bm-b11c-1
+PATTERN hinged_beam

@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-094",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 85,
+  "step": 94,
+  "input": {
+    "picture": "steps/main-094/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b15f-1",
+        "part_number": "32278",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with hinge plate (step 93)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b15f-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 15-hole beam (1:1 box, circled 15)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 15-hole beam is laid along the lower side (picture, tag 15)."
+    ],
+    "who_does_what_to_which": [
+      "bm-b15f-1 supports bm-b5c-1"
+    ],
+    "where_everything_is_after": [
+      "a 15-hole beam spans along the lower arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Lengthens the arm's lower section.",
+      "why_these_parts": "A 15-hole beam spans two pivots.",
+      "sets_up_for_later": "Step 95 adds side beams with pins.",
+      "design_pattern": "lower beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The picture shows it in place without an arrow."
+}
