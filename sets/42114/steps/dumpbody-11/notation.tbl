@@ -1,0 +1,28 @@
+ADD pin-785 6558 blue
+POS pin-785 -9.6 -1.2 3 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD pin-786 6558 blue
+POS pin-786 -9.6 -1.2 9 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD beam11-22 32525 yellow
+POS beam11-22 -9.6 -1.2 7 0.6 0.8 0 -0.8 0.6 0 0 0 1
+ADD beam11-23 32525 yellow
+POS beam11-23 -10.4 -1.8 7 0.6 0.8 0 -0.8 0.6 0 0 0 1
+ADD pin-787 6558 blue
+POS pin-787 9.6 -1.2 3 -0.8 0 -0.6 0.6 0 -0.8 0 -1 0
+ADD pin-788 6558 blue
+POS pin-788 9.6 -1.2 9 -0.8 0 -0.6 0.6 0 -0.8 0 -1 0
+ADD beam11-24 32525 yellow
+POS beam11-24 9.6 -1.2 7 0.6 -0.8 0 0.8 0.6 0 0 0 1
+ADD beam11-25 32525 yellow
+POS beam11-25 10.4 -1.8 7 0.6 -0.8 0 0.8 0.6 0 0 0 1
+CONNECT pin-785.pin2 -> beam11-22.hole2 STIFF
+CONNECT pin-786.pin2 -> beam11-22.hole8 STIFF
+CONNECT pin-785.pin1 -> beam11-23.hole2 STIFF
+CONNECT pin-786.pin1 -> beam11-23.hole8 STIFF
+CONNECT pin-787.pin2 -> beam11-24.hole2 STIFF
+CONNECT pin-788.pin2 -> beam11-24.hole8 STIFF
+CONNECT pin-787.pin1 -> beam11-25.hole2 STIFF
+CONNECT pin-788.pin1 -> beam11-25.hole8 STIFF
+CONNECT pin-785.pin3 -> panel-27.hole13 STIFF
+CONNECT pin-786.pin3 -> panel-27.hole6 STIFF
+CONNECT pin-787.pin3 -> panel-29.hole13 STIFF
+CONNECT pin-788.pin3 -> panel-29.hole6 STIFF

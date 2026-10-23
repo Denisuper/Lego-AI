@@ -1,0 +1,23 @@
+ADD beam3-55 32523 yellow
+POS beam3-55 -5.6 1.8 13 -0.6 0 0.8 0.8 0 0.6 0 1 0
+ADD pin-768 2780 black
+POS pin-768 -4.8 2.4 13.5 0 0.28 0.96 0 -0.96 0.28 1 0 0
+ADD pin-769 2780 black
+POS pin-769 -6.4 1.2 13.5 0 0.28 0.96 0 -0.96 0.28 1 0 0
+ADD beam3-56 32523 yellow
+POS beam3-56 5.6 1.8 13 -0.6 0 -0.8 -0.8 0 0.6 0 1 0
+ADD pin-770 2780 black
+POS pin-770 4.8 2.4 13.5 0 -0.28 -0.96 0 -0.96 0.28 -1 0 0
+ADD pin-771 2780 black
+POS pin-771 6.4 1.2 13.5 0 -0.28 -0.96 0 -0.96 0.28 -1 0 0
+ADD pin-772 6558 blue
+POS pin-772 -5.6 1.8 13 0 -0.28 0.96 0 -0.96 -0.28 1 0 0
+CONNECT pin-768.pin1 -> beam3-55.hole3 STIFF
+CONNECT pin-769.pin1 -> beam3-55.hole1 STIFF
+CONNECT pin-772.pin2 -> beam3-55.hole2 STIFF
+CONNECT pin-770.pin2 -> beam3-56.hole3 STIFF
+CONNECT pin-771.pin2 -> beam3-56.hole1 STIFF
+CONNECT pin-767.pin2 -> beam3-56.hole2 STIFF
+CONNECT pin-772.pin1 -> beam9-25.hole4 STIFF
+CONNECT pin-768.pin1 -> panel-26.hole20 STIFF
+CONNECT pin-770.pin2 -> panel-28.hole20 STIFF

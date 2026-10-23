@@ -1,0 +1,12 @@
+ADD pin-908 43093 blue
+POS pin-908 8 0 37.5 0 -1 0 0 0 -1 1 0 0
+ADD conn-167 6536 yellow
+POS conn-167 8 0 38 0 0 1 0 -1 0 1 0 0
+ADD pin-909 43093 blue
+POS pin-909 -8 0 37.5 0 -1 0 0 0 -1 1 0 0
+ADD conn-168 6536 yellow
+POS conn-168 -8 0 38 0 0 1 0 -1 0 1 0 0
+CONNECT pin-908.pin1 -> panel-46.hole1 STIFF
+CONNECT pin-908.axle1 -> panel-46.hole2 TURNS
+CONNECT pin-909.pin1 -> panel-49.hole1 STIFF
+CONNECT pin-909.axle1 -> panel-49.hole2 TURNS

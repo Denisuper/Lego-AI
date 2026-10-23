@@ -1,0 +1,17 @@
+ADD pin-620 87082 red
+POS pin-620 0 0 -2 1 0 0 0 0 -1 0 1 0
+ADD conn-107 32013 orange
+POS conn-107 -1 0 -2 -1 0 0 0 1 0 0 0 -1
+ADD pin-621 27940 darkbluishgrey
+POS pin-621 -1 0 0 0 -1 0 0 0 -1 1 0 0
+ADD conn-108 59443 black
+POS conn-108 -1 0 1.5 1 0 0 0 -1 0 0 0 -1
+ADD pin-622 6558 blue
+POS pin-622 0 0 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-623 15100 yellow
+POS pin-623 0 0 0 0 -1 0 -0.988 0 0.156 -0.156 0 -0.988
+CONNECT pin-620.pin1 -> conn-107.hole1 STIFF
+CONNECT pin-621.axle1 -> conn-107.axlehole1 LOCKED
+CONNECT pin-622.pin3 -> pin-621.hole1 STIFF
+CONNECT pin-621.axle2 -> conn-108.axlehole2 LOCKED
+CONNECT pin-622.pin2 -> pin-623.hole1 STIFF

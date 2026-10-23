@@ -1,0 +1,12 @@
+ADD axle4-45 87083 darkbluishgrey
+POS axle4-45 -12 -3 37.5 0 -0.6 -0.8 0 0.8 -0.6 1 0 0
+ADD axle4-46 87083 darkbluishgrey
+POS axle4-46 12 -3 37.5 0 0.6 -0.8 0 0.8 0.6 1 0 0
+CONNECT axle4-46.axle1 -> conn-162.axlehole1 LOCKED
+CONNECT axle4-45.axle1 -> conn-164.axlehole1 LOCKED
+CONNECT axle4-46.axle2 -> beam7-34.hole3 TURNS
+CONNECT axle4-46.axle3 -> beam2-45.hole2 TURNS
+CONNECT axle4-45.axle2 -> beam7-35.hole3 TURNS
+CONNECT axle4-45.axle3 -> beam2-46.hole2 TURNS
+CONNECT axle4-46.axle4 -> beam11-34.hole7 TURNS
+CONNECT axle4-45.axle4 -> beam11-35.hole7 TURNS

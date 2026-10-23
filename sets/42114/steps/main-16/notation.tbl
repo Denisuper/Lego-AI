@@ -1,0 +1,12 @@
+STEP 16
+ADD gear8-1 10928 darkbluishgrey
+POS gear8-1 2 -3 -11 0 -1 0 -1 0 0 0 0 -1
+ADD l-1 18947 darkbluishgrey
+POS l-1 -2 -5 -9.5 1 0 0 0 -1 0 0 0 -1
+ADD l-2 18947 darkbluishgrey
+POS l-2 -2 -1 -10.5 1 0 0 0 -1 0 0 0 -1
+ADD l-3 18947 darkbluishgrey
+POS l-3 0 -3 -10 1 0 0 0 -1 0 0 0 -1
+CONNECT axle11-1.axle8 -> gear8-1.axlehole1 LOCKED
+MESH gear24-1.teeth gear8-1.teeth
+RATIO gear24-1 gear8-1 24/8

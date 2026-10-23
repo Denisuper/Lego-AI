@@ -1,0 +1,12 @@
+ADD beam-7 64179 black
+POS beam-7 0 0 0 -1 0 0 0 0 1 0 1 0
+ADD pin-49 6558 blue
+POS pin-49 -2 0 0 1 0 0 0 0 1 0 -1 0
+ADD pin-50 6558 blue
+POS pin-50 2 0 0 -1 0 0 0 0 1 0 1 0
+ADD beam3x3-2 39793 yellow
+POS beam3x3-2 0 -1 0 -1 0 0 0 0 1 0 1 0
+CONNECT pin-49.pin2 -> beam-7.hole11 STIFF
+CONNECT pin-50.pin2 -> beam-7.hole10 STIFF
+CONNECT pin-49.pin3 -> beam3x3-2.hole9 STIFF
+CONNECT pin-50.pin3 -> beam3x3-2.hole2 STIFF

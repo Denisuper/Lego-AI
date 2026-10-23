@@ -1,0 +1,168 @@
+{
+  "example_id": "42114-dumpbody-step-11",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 11,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-785",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-786",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam11-22",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "beam11-23",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "pin-787",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-788",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam11-24",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "beam11-25",
+        "part_number": "32525",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-785",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9.6, y=-1.2, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-786",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9.6, y=-1.2, z=9 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-22",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9.6, y=-1.2, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-23",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-10.4, y=-1.8, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-787",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9.6, y=-1.2, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-788",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9.6, y=-1.2, z=9 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-24",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9.6, y=-1.2, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-25",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=10.4, y=-1.8, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-785's pin2 goes into beam11-22's hole2 (stiff)",
+      "pin-786's pin2 goes into beam11-22's hole8 (stiff)",
+      "pin-785's pin1 goes into beam11-23's hole2 (stiff)",
+      "pin-786's pin1 goes into beam11-23's hole8 (stiff)",
+      "pin-787's pin2 goes into beam11-24's hole2 (stiff)",
+      "pin-788's pin2 goes into beam11-24's hole8 (stiff)",
+      "pin-787's pin1 goes into beam11-25's hole2 (stiff)",
+      "pin-788's pin1 goes into beam11-25's hole8 (stiff)",
+      "pin-785's pin3 goes into panel-27's hole13 (stiff)",
+      "pin-786's pin3 goes into panel-27's hole6 (stiff)",
+      "pin-787's pin3 goes into panel-29's hole13 (stiff)",
+      "pin-788's pin3 goes into panel-29's hole6 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-22 holds pin-785",
+      "beam11-22 holds pin-786",
+      "beam11-23 holds pin-785",
+      "beam11-23 holds pin-786",
+      "beam11-24 holds pin-787",
+      "beam11-24 holds pin-788",
+      "beam11-25 holds pin-787",
+      "beam11-25 holds pin-788",
+      "panel-27 holds pin-785",
+      "panel-27 holds pin-786",
+      "panel-29 holds pin-787",
+      "panel-29 holds pin-788"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

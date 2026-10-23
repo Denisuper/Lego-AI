@@ -1,0 +1,6 @@
+ADD shaft-1 48729b orange
+POS shaft-1 -4 1.2 -2 -1 0 0 0 -1 0 0 0 1
+ADD shaft-2 48729b orange
+POS shaft-2 -4 1.2 2 -1 0 0 0 -1 0 0 0 1
+CONNECT shaft-2.bar1 -> pin-486.barhole1 TURNS
+CONNECT shaft-1.bar1 -> pin-487.barhole1 TURNS

@@ -1,0 +1,16 @@
+ADD axle6-1 3706 red
+POS axle6-1 -4 -3 -0.5 0 0 -1 0 1 0 1 0 0
+ADD gear16-21 94925 lightbluishgrey
+POS gear16-21 -4 -3 -2 1 0 0 0 1 0 0 0 1
+ADD gear16-22 94925 lightbluishgrey
+POS gear16-22 -4 -3 1 1 0 0 0 1 0 0 0 1
+ADD conn-14 59443 yellow
+POS conn-14 -4 -3 2.5 1 0 0 0 1 0 0 0 1
+ADD axle7-1 44294 yellow
+POS axle7-1 -4 -3 6 0 0 1 0 1 0 -1 0 0
+CONNECT axle6-1.axle2 -> gear16-21.axlehole1 LOCKED
+CONNECT axle6-1.axle5 -> gear16-22.axlehole1 LOCKED
+CONNECT axle6-1.axle6 -> conn-14.axlehole1 LOCKED
+CONNECT axle7-1.axle7 -> conn-14.axlehole2 LOCKED
+CONNECT axle6-1.axle4 -> conn-12.hole2 TURNS
+CONNECT axle6-1.axle3 -> beam11-4.hole3 TURNS

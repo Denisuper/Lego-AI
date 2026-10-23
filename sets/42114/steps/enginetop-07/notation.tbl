@@ -1,0 +1,10 @@
+ADD pin-561 11214 red
+POS pin-561 2 2 4 0 1 0 -1 0 0 0 0 1
+ADD holes-4 25214 black
+POS holes-4 2 0 4 0 -1 0 -1 0 0 0 0 -1
+ADD pin-562 43093 blue
+POS pin-562 2 1.5 2 0 -1 0 -1 0 0 0 0 -1
+ADD conn-96 32013 black
+POS conn-96 2 0 2 0 1 0 0 0 -1 -1 0 0
+CONNECT pin-561.pin1 -> beam3x5-23.hole5 STIFF
+CONNECT pin-562.axle1 -> beam3x5-23.hole7 TURNS

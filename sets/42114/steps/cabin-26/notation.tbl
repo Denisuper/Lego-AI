@@ -1,0 +1,5 @@
+ADD axle4-17 99008 tan
+POS axle4-17 0 -1 -9.5 0 1 0 0 0 1 1 0 0
+CONNECT axle4-17.axle3 -> conn-58.axlehole1 LOCKED
+CONNECT axle4-17.axle2 -> conn-58.axlehole2 LOCKED
+CONNECT axle4-17.pin1 -> conn-61.hole1 STIFF

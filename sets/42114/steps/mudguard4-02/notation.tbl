@@ -1,0 +1,17 @@
+ADD conn-91 63869 black
+POS conn-91 -1 1.4 -4.8 0 0 1 -0.8 -0.6 0 0.6 -0.8 0
+ADD pin-506 6558 blue
+POS pin-506 0 0.8 -5.6 1 0 0 0 -1 0 0 0 -1
+ADD pin-507 2780 black
+POS pin-507 -0.5 1.6 -6.2 -1 0 0 0 -0.6 -0.8 0 -0.8 0.6
+ADD pin-508 22961 darkbluishgrey
+POS pin-508 -1 2.2 -5.4 0 -1 0 -0.8 0 -0.6 0.6 0 -0.8
+ADD pin-509 6558 blue
+POS pin-509 -1 0 -5 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-506.pin1 -> conn-91.hole2 STIFF
+CONNECT pin-507.pin2 -> conn-91.hole1 STIFF
+CONNECT pin-508.axle1 -> conn-91.axlehole1 LOCKED
+CONNECT pin-509.pin2 -> conn-91.hole3 STIFF
+CONNECT pin-506.pin2 -> beam9-16.hole6 STIFF
+CONNECT pin-507.pin1 -> beam9-16.hole7 STIFF
+CONNECT pin-509.pin3 -> beam9-16.hole5 STIFF

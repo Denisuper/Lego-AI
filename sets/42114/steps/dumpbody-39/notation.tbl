@@ -1,0 +1,16 @@
+ADD panel-50 15458 yellow
+POS panel-50 -12 -5 31 0 1 0 0 0 -1 -1 0 0
+ADD pin-894 2780 black
+POS pin-894 -12 -6.5 28 0 0 1 -1 0 0 0 -1 0
+ADD pin-895 2780 black
+POS pin-895 -12 -6.5 31 0 0 1 -1 0 0 0 -1 0
+ADD pin-896 2780 black
+POS pin-896 -12 -6.5 32 0 0 1 -1 0 0 0 -1 0
+ADD pin-897 2780 black
+POS pin-897 -12 -6.5 34 0 0 1 -1 0 0 0 -1 0
+CONNECT pin-894.pin1 -> panel-50.hole12 STIFF
+CONNECT pin-895.pin1 -> panel-50.hole8 STIFF
+CONNECT pin-896.pin1 -> panel-50.hole7 STIFF
+CONNECT pin-897.pin1 -> panel-50.hole5 STIFF
+CONNECT pin-860.pin1 -> panel-50.hole9 STIFF
+CONNECT pin-881.pin1 -> panel-50.hole15 STIFF

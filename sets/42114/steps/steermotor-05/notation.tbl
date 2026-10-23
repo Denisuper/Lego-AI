@@ -1,0 +1,10 @@
+ADD pin-291 3673 lightbluishgrey
+POS pin-291 1 -2 -0.5 0 0 1 -1 0 0 0 -1 0
+ADD beam3-17 32523 yellow
+POS beam3-17 0 -2.5 -0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-292 3673 lightbluishgrey
+POS pin-292 0 -3 -0.5 0 0 1 -1 0 0 0 -1 0
+CONNECT pin-291.pin2 -> beam3-17.hole3 TURNS
+CONNECT pin-292.pin1 -> beam3-17.hole2 TURNS
+CONNECT pin-290.pin2 -> beam3-17.hole1 TURNS
+CONNECT pin-291.pin1 -> beam2x4-13.hole4 TURNS

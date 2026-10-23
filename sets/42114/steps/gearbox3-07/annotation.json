@@ -1,0 +1,64 @@
+{
+  "example_id": "42114-gearbox3-step-07",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam-11",
+        "part_number": "18654",
+        "count": 1
+      },
+      {
+        "name": "conn-15",
+        "part_number": "26287",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam-11",
+        "part_number": "18654",
+        "catalog_name": "Technic Pin Connector Round 1L [Beam]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn-15",
+        "part_number": "26287",
+        "catalog_name": "Technic Driving Ring Connector Smooth [4 rounded side walls]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-5's axle2 goes into beam-11's hole1 (turns)",
+      "axle5-5's axle1 goes into conn-15's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam-11 spins on axle5-5",
+      "axle5-5 carries conn-15"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

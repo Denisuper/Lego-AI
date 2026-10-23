@@ -1,0 +1,16 @@
+ADD axle4-10 99008 tan
+POS axle4-10 0 0 -0.5 0 -1 0 0 0 -1 1 0 0
+ADD beam-17 18654 darkbluishgrey
+POS beam-17 0 0 0 -1 0 0 0 0 -1 0 -1 0
+ADD gear8-2 10928 darkbluishgrey
+POS gear8-2 0 0 -1 0 1 0 -1 0 0 0 0 1
+ADD conn-33 59443 yellow
+POS conn-33 0 0 1.5 0 1 0 -1 0 0 0 0 1
+ADD axle3-9 4519 yellow
+POS axle3-9 0 0 3 0 -1 0 0 0 1 -1 0 0
+CONNECT axle4-10.axle2 -> beam-17.hole1 TURNS
+CONNECT axle4-10.axle3 -> conn-33.axlehole1 LOCKED
+CONNECT axle3-9.axle3 -> conn-33.axlehole2 LOCKED
+CONNECT axle4-10.pin1 -> housing-1.hole2 STIFF
+MESH gear24-2.teeth gear8-2.teeth
+RATIO gear24-2 gear8-2 24/8

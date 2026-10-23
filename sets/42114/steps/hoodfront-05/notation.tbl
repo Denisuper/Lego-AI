@@ -1,0 +1,18 @@
+ADD beam9-20 40490 black
+POS beam9-20 0 0.5 2 0 0 -1 -1 0 0 0 1 0
+ADD pin-570 2780 black
+POS pin-570 -3 0.5 2.5 0 0 -1 0 -1 0 -1 0 0
+ADD pin-571 2780 black
+POS pin-571 3 0.5 2.5 0 0 -1 0 -1 0 -1 0 0
+ADD pin-572 6558 blue
+POS pin-572 -2 0.5 2 0 0 -1 0 -1 0 -1 0 0
+ADD pin-573 6558 blue
+POS pin-573 2 0.5 2 0 0 -1 0 -1 0 -1 0 0
+CONNECT pin-570.pin2 -> beam9-20.hole8 STIFF
+CONNECT pin-571.pin2 -> beam9-20.hole2 STIFF
+CONNECT pin-572.pin2 -> beam9-20.hole7 STIFF
+CONNECT pin-573.pin2 -> beam9-20.hole3 STIFF
+CONNECT pin-568.axle1 -> beam9-20.hole9 TURNS
+CONNECT pin-569.axle1 -> beam9-20.hole1 TURNS
+CONNECT pin-572.pin3 -> undersid-5.hole2 STIFF
+CONNECT pin-573.pin3 -> undersid-8.hole2 STIFF

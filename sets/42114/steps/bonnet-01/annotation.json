@@ -1,0 +1,181 @@
+{
+  "example_id": "42114-bonnet-step-01",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-19",
+        "part_number": "64782",
+        "count": 1
+      },
+      {
+        "name": "pin-699",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-700",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-701",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-702",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-703",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-704",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-705",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "conn-128",
+        "part_number": "32034",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-19",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-699",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-700",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-701",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-702",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-703",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=0, z=-3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-704",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.5, y=0, z=-3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-705",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=5.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn-128",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-699's pin1 goes into panel-19's hole11 (stiff)",
+      "pin-699's pin1 goes into panel-19's hole12 (stiff)",
+      "pin-700's pin1 goes into panel-19's hole17 (stiff)",
+      "pin-700's pin1 goes into panel-19's hole18 (stiff)",
+      "pin-701's pin1 goes into panel-19's hole10 (stiff)",
+      "pin-701's pin1 goes into panel-19's hole11 (stiff)",
+      "pin-702's pin1 goes into panel-19's hole16 (stiff)",
+      "pin-702's pin1 goes into panel-19's hole17 (stiff)",
+      "pin-703's pin1 goes into panel-19's hole31 (stiff)",
+      "pin-703's pin1 goes into panel-19's hole32 (stiff)",
+      "pin-704's pin2 goes into panel-19's hole32 (stiff)",
+      "pin-704's pin2 goes into panel-19's hole33 (stiff)",
+      "pin-705's pin2 goes into panel-19's hole3 (stiff)",
+      "pin-705's pin2 goes into panel-19's hole22 (stiff)",
+      "pin-705's pin1 goes into conn-128's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-19 holds pin-699",
+      "panel-19 holds pin-700",
+      "panel-19 holds pin-701",
+      "panel-19 holds pin-702",
+      "panel-19 holds pin-703",
+      "panel-19 holds pin-704",
+      "panel-19 holds pin-705",
+      "conn-128 holds pin-705"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

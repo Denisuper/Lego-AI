@@ -1,0 +1,20 @@
+ADD beam9-27 32271 yellow
+POS beam9-27 -7.2 0.6 13 0.6 0 -0.8 -0.8 0 -0.6 0 1 0
+ADD pin-773 6558 blue
+POS pin-773 -8 0 13 0 1 0 0 0 -1 -1 0 0
+ADD pin-774 2780 black
+POS pin-774 -9.6 -1.2 13.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-775 2780 black
+POS pin-775 -11.2 -2.4 13.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-776 6558 blue
+POS pin-776 -12 -4 13 0 1 0 0 0 -1 -1 0 0
+ADD pin-777 18651 black
+POS pin-777 -12 -5 13 0 -1 0 0 0 -1 1 0 0
+CONNECT pin-773.pin2 -> beam9-27.hole1 STIFF
+CONNECT pin-774.pin2 -> beam9-27.hole3 STIFF
+CONNECT pin-775.pin2 -> beam9-27.hole5 STIFF
+CONNECT pin-776.pin2 -> beam9-27.hole7 STIFF
+CONNECT pin-777.axle2 -> beam9-27.axlehole2 LOCKED
+CONNECT pin-739.axle1 -> beam9-27.hole2 TURNS
+CONNECT pin-773.pin3 -> beam9-25.hole1 STIFF
+CONNECT pin-773.pin3 -> panel-27.hole1 STIFF

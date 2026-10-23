@@ -1,0 +1,36 @@
+ADD panel-17 64683 yellow
+POS panel-17 5.15 0 -3.2 0 -0.924 -0.383 -1 0 0 0 0.383 -0.924
+ADD pin-693 2780 black
+POS pin-693 5.35 0 -2.75 -0.383 -0.739 0.554 0 0.6 0.8 -0.924 0.306 -0.23
+ADD pin-694 2780 black
+POS pin-694 7.2 1 -3.5 -0.383 -0.924 0 0 0 1 -0.924 0.383 0
+ADD panel-18 87080 yellow
+POS panel-18 7.4 1 -3.05 0.739 0.554 0.383 -0.6 0.8 0 -0.306 -0.23 0.924
+ADD pin-695 2780 black
+POS pin-695 3.55 0 -5.8 0.924 0 0.383 0 1 0 -0.383 0 0.924
+ADD pin-696 2780 black
+POS pin-696 3.95 0 -4.9 0.924 0 0.383 0 1 0 -0.383 0 0.924
+ADD beam5-39 32316 yellow
+POS beam5-39 3.85 0 -3.75 0 0.924 0.383 -1 0 0 0 -0.383 0.924
+ADD pin-697 2780 black
+POS pin-697 3.75 0 -2.65 0.924 0 0.383 0 1 0 -0.383 0 0.924
+ADD pin-698 43093 blue
+POS pin-698 3.4 0 -3.55 -0.924 0 -0.383 0 1 0 0.383 0 -0.924
+ADD beam3-50 6632 black
+POS beam3-50 3.15 0 -3.45 0 0.924 0.383 -1 0 0 0 -0.383 0.924
+ADD beam3-51 6632 black
+POS beam3-51 2.7 0 -3.3 0 0.924 0.383 -1 0 0 0 -0.383 0.924
+CONNECT pin-693.pin2 -> panel-17.hole4 STIFF
+CONNECT pin-694.pin2 -> panel-17.hole2 STIFF
+CONNECT pin-695.pin2 -> panel-17.hole7 STIFF
+CONNECT pin-696.pin2 -> panel-17.hole6 STIFF
+CONNECT pin-693.pin1 -> panel-18.hole2 STIFF
+CONNECT pin-694.pin1 -> panel-18.hole4 STIFF
+CONNECT pin-695.pin1 -> beam5-39.hole1 STIFF
+CONNECT pin-696.pin1 -> beam5-39.hole2 STIFF
+CONNECT pin-697.pin2 -> beam5-39.hole4 STIFF
+CONNECT pin-698.axle1 -> beam5-39.hole3 TURNS
+CONNECT pin-697.pin1 -> beam3-50.hole1 STIFF
+CONNECT axle4-36.axle3 -> beam3-50.axlehole2 LOCKED
+CONNECT pin-697.pin1 -> beam3-51.hole1 STIFF
+CONNECT axle4-36.axle3 -> beam3-51.axlehole2 LOCKED

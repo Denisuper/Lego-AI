@@ -1,0 +1,19 @@
+ADD pin-947 2780 black
+POS pin-947 2 -0.5 -6 0 1 0 1 0 0 0 0 -1
+ADD pin-948 2780 black
+POS pin-948 -2 -0.5 -6 0 1 0 1 0 0 0 0 -1
+ADD beam15-19 32278 yellow
+POS beam15-19 1 -3.7 3.45 0 -1 0 -0.923 0 0.385 -0.385 0 -0.923
+ADD pin-949 6558 blue
+POS pin-949 0 -1.75 -1.15 -1 0 0 0 0.923 0.385 0 0.385 -0.923
+ADD beam11-40 32525 yellow
+POS beam11-40 0 -3.7 3.45 0 -1 0 -0.923 0 0.385 -0.385 0 -0.923
+ADD pin-950 6558 blue
+POS pin-950 0 -5.6 8.1 -1 0 0 0 0.923 0.385 0 0.385 -0.923
+CONNECT pin-949.pin1 -> beam15-19.hole13 STIFF
+CONNECT pin-950.pin1 -> beam15-19.hole3 STIFF
+CONNECT pin-921.pin1 -> beam15-19.hole15 STIFF
+CONNECT pin-949.pin2 -> beam11-40.hole11 STIFF
+CONNECT pin-950.pin2 -> beam11-40.hole1 STIFF
+CONNECT pin-948.pin2 -> pin-927.hole3 STIFF
+CONNECT pin-947.pin2 -> pin-928.hole3 STIFF

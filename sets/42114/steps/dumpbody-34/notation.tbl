@@ -1,0 +1,26 @@
+ADD beam9-33 32271 yellow
+POS beam9-33 8.8 -0.6 26 0.6 0 -0.8 0.8 0 0.6 0 -1 0
+ADD beam9-34 32271 yellow
+POS beam9-34 -8.8 -0.6 26 -0.6 0 0.8 0.8 0 0.6 0 1 0
+ADD axle4-41 3705 black
+POS axle4-41 8.8 -0.6 25.5 0 0.6 -0.8 0 0.8 0.6 1 0 0
+ADD axle4-42 3705 black
+POS axle4-42 -8.8 -0.6 25.5 0 0.8 -0.6 0 0.6 0.8 1 0 0
+CONNECT axle4-41.axle3 -> beam9-33.axlehole1 LOCKED
+CONNECT pin-863.pin1 -> beam9-33.hole2 STIFF
+CONNECT pin-864.pin3 -> beam9-33.hole3 STIFF
+CONNECT pin-865.pin3 -> beam9-33.hole5 STIFF
+CONNECT pin-874.pin3 -> beam9-33.hole6 STIFF
+CONNECT pin-875.pin1 -> beam9-33.hole7 STIFF
+CONNECT pin-879.pin2 -> beam9-33.hole1 STIFF
+CONNECT pin-880.pin2 -> beam9-33.hole4 STIFF
+CONNECT axle4-42.axle3 -> beam9-34.axlehole1 LOCKED
+CONNECT pin-861.pin1 -> beam9-34.hole2 STIFF
+CONNECT pin-866.pin3 -> beam9-34.hole3 STIFF
+CONNECT pin-867.pin3 -> beam9-34.hole5 STIFF
+CONNECT pin-870.pin3 -> beam9-34.hole6 STIFF
+CONNECT pin-871.pin2 -> beam9-34.hole7 STIFF
+CONNECT pin-884.pin2 -> beam9-34.hole1 STIFF
+CONNECT pin-885.pin2 -> beam9-34.hole4 STIFF
+CONNECT axle4-42.axle2 -> beam9-31.hole2 TURNS
+CONNECT axle4-41.axle2 -> beam9-32.hole2 TURNS

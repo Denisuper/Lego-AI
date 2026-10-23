@@ -1,0 +1,3 @@
+STEP 4
+ATTACH gearboxframe
+CONNECT pin-9.pin2 -> beam3x3-1.hole4 STIFF

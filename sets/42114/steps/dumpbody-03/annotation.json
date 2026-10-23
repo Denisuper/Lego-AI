@@ -1,0 +1,119 @@
+{
+  "example_id": "42114-dumpbody-step-03",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-736",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-737",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "conn-142",
+        "part_number": "63869",
+        "count": 1
+      },
+      {
+        "name": "panel-25",
+        "part_number": "64782",
+        "count": 1
+      },
+      {
+        "name": "pin-738",
+        "part_number": "15100",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-736",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=4, z=1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-737",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=4, z=1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn-142",
+        "part_number": "63869",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Triple",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=5, z=1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "panel-25",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=4, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-738",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=4, z=13 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-736's pin2 goes into conn-142's hole3 (stiff)",
+      "pin-737's pin2 goes into conn-142's hole1 (stiff)",
+      "pin-736's pin3 goes into panel-25's hole23 (stiff)",
+      "pin-736's pin3 goes into panel-25's hole41 (stiff)",
+      "pin-737's pin3 goes into panel-25's hole20 (stiff)",
+      "pin-737's pin3 goes into panel-25's hole39 (stiff)",
+      "pin-738's pin1 goes into panel-25's hole3 (stiff)",
+      "pin-738's pin1 goes into panel-25's hole22 (stiff)",
+      "pin-736's pin1 goes into panel-22's hole13 (stiff)",
+      "pin-737's pin1 goes into panel-22's hole14 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-142 holds pin-736",
+      "conn-142 holds pin-737",
+      "panel-25 holds pin-736",
+      "panel-25 holds pin-737",
+      "panel-25 holds pin-738",
+      "panel-22 holds pin-736",
+      "panel-22 holds pin-737"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

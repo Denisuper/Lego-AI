@@ -1,0 +1,43 @@
+STEP 78
+ADD wheel-2 15038 yellow
+POS wheel-2 -9.65 -1 -2 0 0 -1 -0.988 0.156 0 0.156 0.988 0
+ADD wheel-3 15038 yellow
+POS wheel-3 -9.65 -1 -15 0 0 -1 -0.988 0.156 0 0.156 0.988 0
+ADD wheel-4 15038 yellow
+POS wheel-4 -9.65 -1 -44 0 0 -1 0.988 -0.156 0 -0.156 -0.988 0
+ADD tyre-1 92912 rubberblack
+POS tyre-1 -9.5 -1 -44 0 0 -1 0.988 -0.156 0 -0.156 -0.988 0
+ADD tyre-2 92912 rubberblack
+POS tyre-2 -9.5 -1 -15.15 0 0 -1 0.988 -0.156 0 -0.156 -0.988 0
+ADD tyre-3 92912 rubberblack
+POS tyre-3 -9.5 -0.95 -2 0 0 -1 0.988 -0.156 0 -0.156 -0.988 0
+ADD wheel-5 15038 yellow
+POS wheel-5 9.65 -1 -2 0 0 1 0.988 -0.156 0 0.156 0.988 0
+ADD wheel-6 15038 yellow
+POS wheel-6 9.65 -1 -15 0 0 1 0.988 -0.156 0 0.156 0.988 0
+ADD wheel-7 15038 yellow
+POS wheel-7 9.65 -1 -44 0 0 1 0.988 -0.156 0 0.156 0.988 0
+ADD tyre-4 92912 rubberblack
+POS tyre-4 9.5 -1 -44 0 0 1 0.988 -0.156 0 0.156 0.988 0
+ADD tyre-5 92912 rubberblack
+POS tyre-5 9.5 -1 -15.15 0 0 1 0.988 -0.156 0 0.156 0.988 0
+ADD tyre-6 92912 rubberblack
+POS tyre-6 9.5 -1.05 -2 0 0 1 0.988 -0.156 0 0.156 0.988 0
+CONNECT axle-2.pin1 -> wheel-2.hole1 STIFF
+CONNECT axle-2.pin2 -> wheel-2.hole4 STIFF
+CONNECT axle-2.pin3 -> wheel-2.hole5 STIFF
+CONNECT axle-1.pin3 -> wheel-3.hole2 STIFF
+CONNECT axle-1.pin2 -> wheel-3.hole3 STIFF
+CONNECT axle-1.pin1 -> wheel-3.hole6 STIFF
+CONNECT axle-3.pin1 -> wheel-4.hole1 STIFF
+CONNECT axle-3.pin2 -> wheel-4.hole4 STIFF
+CONNECT axle-3.pin3 -> wheel-4.hole5 STIFF
+CONNECT axle-2.pin1 -> wheel-5.hole1 STIFF
+CONNECT axle-2.pin2 -> wheel-5.hole4 STIFF
+CONNECT axle-2.pin3 -> wheel-5.hole5 STIFF
+CONNECT axle-1.pin3 -> wheel-6.hole2 STIFF
+CONNECT axle-1.pin2 -> wheel-6.hole3 STIFF
+CONNECT axle-1.pin1 -> wheel-6.hole6 STIFF
+CONNECT axle-3.pin3 -> wheel-7.hole2 STIFF
+CONNECT axle-3.pin2 -> wheel-7.hole3 STIFF
+CONNECT axle-3.pin1 -> wheel-7.hole6 STIFF

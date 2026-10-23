@@ -1,0 +1,6 @@
+STEP 56
+ATTACH mudguard4
+CONNECT pin-426.pin1 -> pin-508.hole1 STIFF
+CONNECT pin-503.pin1 -> beam5-33.hole2 STIFF
+CONNECT pin-506.pin3 -> beam5-33.hole4 STIFF
+CONNECT pin-503.axle1 -> beam2x4-19.hole2 TURNS

@@ -1,0 +1,11 @@
+ADD beam3x0-2 33299b black
+POS beam3x0-2 4 -1 1 1 0 0 0 0 1 0 -1 0
+ADD pin-454 43093 blue
+POS pin-454 4 -1 1.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-455 18651 black
+POS pin-455 4 0 1 0 -1 0 0 0 -1 1 0 0
+ADD bush-13 32123b yellow
+POS bush-13 4 0 1.25 0 1 0 1 0 0 0 0 -1
+CONNECT pin-455.axle2 -> beam3x0-2.axlehole2 LOCKED
+CONNECT pin-455.axle2 -> bush-13.axlehole1 LOCKED
+CONNECT beam3x0-2.pin1 -> beam9-14.hole9 STIFF

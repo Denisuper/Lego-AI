@@ -1,0 +1,12 @@
+ADD beam5-18 32316 lightbluishgrey
+POS beam5-18 -2 -2.5 0.5 1 0 0 0 -1 0 0 0 -1
+ADD beam5-19 32316 lightbluishgrey
+POS beam5-19 2 -2.5 0.5 1 0 0 0 -1 0 0 0 -1
+ADD pin-293 32556 tan
+POS pin-293 -2 -2.5 2.5 0 -1 0 -1 0 0 0 0 -1
+ADD pin-294 32556 tan
+POS pin-294 2 -2.5 2.5 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-293.pin2 -> beam5-18.hole1 TURNS
+CONNECT pin-286.pin2 -> beam5-18.hole4 STIFF
+CONNECT pin-294.pin2 -> beam5-19.hole1 TURNS
+CONNECT pin-289.pin1 -> beam5-19.hole4 STIFF

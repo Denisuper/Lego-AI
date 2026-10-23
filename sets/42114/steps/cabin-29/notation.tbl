@@ -1,0 +1,14 @@
+ADD beam9-6 40490 yellow
+POS beam9-6 0 -4 -8 0 0 1 0 -1 0 1 0 0
+ADD pin-313 6558 blue
+POS pin-313 -2 -4 -8 0 -1 0 1 0 0 0 0 1
+ADD pin-314 6558 blue
+POS pin-314 2 -4 -8 0 -1 0 1 0 0 0 0 1
+CONNECT pin-313.pin2 -> beam9-6.hole3 STIFF
+CONNECT pin-314.pin2 -> beam9-6.hole7 STIFF
+CONNECT pin-256.pin1 -> beam9-6.hole2 TURNS
+CONNECT pin-261.pin1 -> beam9-6.hole8 TURNS
+CONNECT pin-262.pin2 -> beam9-6.hole1 STIFF
+CONNECT pin-263.pin2 -> beam9-6.hole9 STIFF
+CONNECT pin-313.pin3 -> conn-55.hole1 STIFF
+CONNECT pin-314.pin3 -> conn-60.hole3 STIFF

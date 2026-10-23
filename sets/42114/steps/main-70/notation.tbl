@@ -1,0 +1,3 @@
+STEP 70
+ATTACH hoodsides
+CONNECT pin-626.pin3 -> beam-36.hole18 STIFF

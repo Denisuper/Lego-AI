@@ -1,0 +1,12 @@
+ADD pin-311 2780 black
+POS pin-311 -3 -8.5 -1 0 -1 0 -1 0 0 0 0 -1
+ADD pin-312 2780 black
+POS pin-312 3 -8.5 -1 0 -1 0 -1 0 0 0 0 -1
+ADD axle2-18 32062 red
+POS axle2-18 0 -8.5 2 0 -1 0 -1 0 0 0 0 -1
+ADD gear12-14 32270 black
+POS gear12-14 0 -9 2 0 -1 0 0 0 -1 1 0 0
+CONNECT axle2-18.axle2 -> gear12-14.axlehole1 LOCKED
+CONNECT axle2-18.axle1 -> back-1.axlehole2 LOCKED
+CONNECT pin-312.pin1 -> beam-31.hole10 STIFF
+CONNECT pin-311.pin1 -> beam-32.hole11 STIFF

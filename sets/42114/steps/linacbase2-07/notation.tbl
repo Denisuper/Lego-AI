@@ -1,0 +1,10 @@
+ADD pin-192 2780 black
+POS pin-192 -0.3 0.05 0 -0.231 -0.973 0.005 0.973 -0.231 0.001 0 0.005 1
+ADD pin-193 2780 black
+POS pin-193 3.6 0.95 0 -0.231 -0.973 0.005 0.973 -0.231 0.001 0 0.005 1
+ADD beam5-5 32316 lightbluishgrey
+POS beam5-5 1.55 0.95 0 0 0.215 0.976 0 -0.976 0.215 1 0 0
+CONNECT pin-192.pin2 -> beam5-5.hole1 STIFF
+CONNECT pin-193.pin2 -> beam5-5.hole5 STIFF
+CONNECT pin-192.pin1 -> conn-46.hole1 STIFF
+CONNECT pin-193.pin1 -> conn-49.hole1 STIFF

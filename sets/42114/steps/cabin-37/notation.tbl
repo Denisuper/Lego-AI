@@ -1,0 +1,11 @@
+ATTACH engine
+CONNECT pin-377.pin2 -> beam5x11-2.hole28 STIFF
+CONNECT pin-378.pin2 -> beam5x11-2.hole27 STIFF
+CONNECT pin-376.pin2 -> beam5x11-3.hole28 STIFF
+CONNECT pin-379.pin2 -> beam5x11-3.hole27 STIFF
+CONNECT pin-373.pin1 -> pin-198.hole1 STIFF
+CONNECT pin-373.pin2 -> pin-198.hole3 STIFF
+CONNECT pin-372.pin1 -> pin-199.hole1 STIFF
+CONNECT pin-372.pin2 -> pin-199.hole3 STIFF
+MESH gear16-25.teeth gear16-26.teeth
+RATIO gear16-25 gear16-26 16/16

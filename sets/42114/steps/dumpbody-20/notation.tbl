@@ -1,0 +1,55 @@
+ADD panel-37 18945 yellow
+POS panel-37 -7.2 0.6 19 0 0.6 -0.8 0 -0.8 -0.6 -1 0 0
+ADD pin-826 2780 black
+POS pin-826 -9.2 -0.9 16 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD pin-827 2780 black
+POS pin-827 -9.2 -0.9 22 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD panel-38 15458 yellow
+POS panel-38 -10.4 -1.8 19 0 -0.6 -0.8 0 0.8 -0.6 1 0 0
+ADD pin-828 43093 blue
+POS pin-828 -7.5 1 23 -0.6 0 0.8 0.8 0 0.6 0 1 0
+ADD pin-829 43093 blue
+POS pin-829 -7.5 1 15 -0.6 0 0.8 0.8 0 0.6 0 1 0
+ADD conn-148 42003 yellow
+POS conn-148 -7.8 1.4 16 0.6 0 -0.8 -0.8 0 -0.6 0 1 0
+ADD conn-149 42003 yellow
+POS conn-149 -7.8 1.4 22 0.6 0 0.8 -0.8 0 0.6 0 -1 0
+ADD pin-830 2780 black
+POS pin-830 -8.2 1.1 22 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD pin-831 2780 black
+POS pin-831 -8.2 1.1 21 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD pin-832 2780 black
+POS pin-832 -8.2 1.1 17 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD pin-833 2780 black
+POS pin-833 -8.2 1.1 16 0.8 0 -0.6 0.6 0 0.8 0 -1 0
+ADD beam7-29 32524 yellow
+POS beam7-29 -8.6 0.8 19 -0.6 -0.8 0 0.8 -0.6 0 0 0 1
+ADD axle3-33 24316 reddishbrown
+POS axle3-33 -9.4 0.2 19 0.8 0.6 0 0.6 -0.8 0 0 0 -1
+ADD bush-28 32123b yellow
+POS bush-28 -9.2 0.35 19 0 -0.6 -0.8 0 0.8 -0.6 1 0 0
+ADD bush-29 32123b yellow
+POS bush-29 -9.6 0.05 19 0 -0.6 -0.8 0 0.8 -0.6 1 0 0
+ADD conn-150 59443 yellow
+POS conn-150 -10.6 -0.7 19 0 -0.6 -0.8 0 0.8 -0.6 1 0 0
+CONNECT pin-826.pin2 -> panel-37.hole13 STIFF
+CONNECT pin-827.pin2 -> panel-37.hole6 STIFF
+CONNECT pin-828.axle1 -> panel-37.hole3 TURNS
+CONNECT pin-829.axle1 -> panel-37.hole16 TURNS
+CONNECT pin-740.pin1 -> panel-37.hole20 STIFF
+CONNECT pin-826.pin1 -> panel-38.hole5 STIFF
+CONNECT pin-827.pin1 -> panel-38.hole12 STIFF
+CONNECT pin-774.pin1 -> panel-38.hole1 STIFF
+CONNECT pin-775.pin1 -> panel-38.hole2 STIFF
+CONNECT pin-832.pin2 -> conn-148.hole2 STIFF
+CONNECT pin-833.pin2 -> conn-148.hole1 STIFF
+CONNECT pin-830.pin2 -> conn-149.hole1 STIFF
+CONNECT pin-831.pin2 -> conn-149.hole2 STIFF
+CONNECT pin-830.pin1 -> beam7-29.hole7 STIFF
+CONNECT pin-831.pin1 -> beam7-29.hole6 STIFF
+CONNECT pin-832.pin1 -> beam7-29.hole2 STIFF
+CONNECT pin-833.pin1 -> beam7-29.hole1 STIFF
+CONNECT axle3-33.axle3 -> beam7-29.hole4 TURNS
+CONNECT axle3-33.axle2 -> bush-28.axlehole1 LOCKED
+CONNECT axle3-33.axle2 -> bush-29.axlehole1 LOCKED
+CONNECT axle3-33.axle1 -> conn-150.axlehole1 LOCKED

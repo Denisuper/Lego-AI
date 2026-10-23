@@ -1,0 +1,8 @@
+ADD panel-39 18945 yellow
+POS panel-39 4.8 2.4 19 0 0.6 -0.8 0 0.8 0.6 1 0 0
+ADD panel-40 18945 yellow
+POS panel-40 -4.8 2.4 19 0 0.6 0.8 0 -0.8 0.6 1 0 0
+CONNECT pin-765.pin2 -> panel-39.hole1 STIFF
+CONNECT pin-765.pin1 -> panel-39.hole2 STIFF
+CONNECT pin-751.pin2 -> panel-40.hole1 STIFF
+CONNECT pin-751.pin1 -> panel-40.hole2 STIFF

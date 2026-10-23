@@ -1,0 +1,21 @@
+STEP 37
+ADD beam3x5-8 32526 yellow
+POS beam3x5-8 5 -3 -2 0 -1 0 0 0 -1 1 0 0
+ADD beam11-9 32009 yellow
+POS beam11-9 4 -7 2 0 1 0 0 0 -1 -1 0 0
+ADD pin-148 11214 red
+POS pin-148 4 -7 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-149 18651 black
+POS pin-149 4 -7 -2 -1 0 0 0 1 0 0 0 -1
+ADD cam-2 6575 darkbluishgrey
+POS cam-2 3.25 -7 -1 0 0 1 1 0 0 0 1 0
+ADD beam3-6 6632 yellow
+POS beam3-6 2.75 -7 0 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-148.axle1 -> beam3x5-8.hole7 TURNS
+CONNECT pin-149.axle1 -> beam3x5-8.hole5 TURNS
+CONNECT pin-25.pin1 -> beam3x5-8.hole1 STIFF
+CONNECT pin-26.pin1 -> beam3x5-8.hole2 STIFF
+CONNECT pin-148.pin1 -> beam11-9.hole7 STIFF
+CONNECT pin-149.axle2 -> beam11-9.axlehole2 LOCKED
+CONNECT pin-21.pin1 -> beam11-9.hole3 STIFF
+CONNECT pin-23.pin1 -> beam11-9.hole1 STIFF

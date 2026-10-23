@@ -1,0 +1,12 @@
+ADD part-29 63864 metallicsilver
+POS part-29 0 1.9 -1 0 0 1 0 -1 0 1 0 0
+ADD beam2-34 60483 black
+POS beam2-34 0.75 -1 -1.35 0.665 0 -0.747 0 -1 0 -0.747 0 -0.665
+ADD pin-618 43093 blue
+POS pin-618 0.75 -1.5 -1.35 0 0.747 0.665 1 0 0 0 0.665 -0.747
+ADD pin-619 46667 black
+POS pin-619 -0.5 0 -1 0 0 1 -1 0 0 0 -1 0
+CONNECT pin-615.pin2 -> part-29.hole3 TURNS
+CONNECT pin-616.pin2 -> part-29.hole2 TURNS
+CONNECT pin-617.axle1 -> beam2-34.hole1 TURNS
+CONNECT pin-619.pin1 -> conn-106.hole2 STIFF

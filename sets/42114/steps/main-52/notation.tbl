@@ -1,0 +1,25 @@
+STEP 52
+ADD pin-485 2780 black
+POS pin-485 0 -6.5 -32 0 -1 0 -1 0 0 0 0 -1
+ADD conn-88 32184 black
+POS conn-88 0 -7 -32 0 -1 0 0 0 -1 1 0 0
+ADD axle3-22 4519 lightbluishgrey
+POS axle3-22 -1 -7 -32 0 -1 0 0 0 -1 1 0 0
+ADD axle3-23 4519 lightbluishgrey
+POS axle3-23 1 -7 -32 0 -1 0 0 0 -1 1 0 0
+ADD hole-2 49283 yellow
+POS hole-2 1 -7 -33 0 -1 0 1 0 0 0 0 1
+ADD hole-3 49283 yellow
+POS hole-3 1 -7 -31 0 -1 0 1 0 0 0 0 1
+ADD hole-4 49283 yellow
+POS hole-4 -1 -7 -33 0 1 0 -1 0 0 0 0 1
+ADD hole-5 49283 yellow
+POS hole-5 -1 -7 -31 0 1 0 -1 0 0 0 0 1
+CONNECT pin-485.pin2 -> conn-88.hole1 STIFF
+CONNECT axle3-22.axle2 -> conn-88.axlehole2 LOCKED
+CONNECT axle3-23.axle2 -> conn-88.axlehole1 LOCKED
+CONNECT axle3-23.axle1 -> hole-2.axlehole1 LOCKED
+CONNECT axle3-23.axle3 -> hole-3.axlehole1 LOCKED
+CONNECT axle3-22.axle1 -> hole-4.axlehole1 LOCKED
+CONNECT axle3-22.axle3 -> hole-5.axlehole1 LOCKED
+CONNECT pin-485.pin1 -> pin-163.hole1 STIFF

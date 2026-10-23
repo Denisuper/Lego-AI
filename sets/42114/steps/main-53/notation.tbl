@@ -1,0 +1,6 @@
+STEP 53
+ATTACH hub
+CONNECT pin-467.pin3 -> hub-1.hole10 STIFF
+CONNECT pin-475.axle1 -> hub-1.hole6 TURNS
+CONNECT pin-481.pin1 -> hub-1.hole7 STIFF
+CONNECT pin-482.pin1 -> hub-1.hole3 STIFF

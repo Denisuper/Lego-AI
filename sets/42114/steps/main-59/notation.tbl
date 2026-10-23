@@ -1,0 +1,13 @@
+STEP 59
+ADD pin-512 2780 black
+POS pin-512 -2 -18.5 -47 0 1 0 1 0 0 0 0 -1
+ADD pin-513 2780 black
+POS pin-513 3 -18.5 -47 0 1 0 1 0 0 0 0 -1
+ADD pin-514 2780 black
+POS pin-514 -1 -18.5 -39 0 1 0 1 0 0 0 0 -1
+ADD pin-515 2780 black
+POS pin-515 3 -18.5 -41 0 1 0 1 0 0 0 0 -1
+CONNECT pin-513.pin2 -> beam-34.hole10 STIFF
+CONNECT pin-514.pin2 -> beam-34.hole29 STIFF
+CONNECT pin-515.pin2 -> beam-34.hole24 STIFF
+CONNECT pin-512.pin2 -> conn-67.hole1 STIFF

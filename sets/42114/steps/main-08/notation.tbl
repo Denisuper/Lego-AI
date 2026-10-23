@@ -1,0 +1,28 @@
+STEP 8
+ADD beam3x5-3 32526 yellow
+POS beam3x5-3 -4 -5 -5 0 0 1 1 0 0 0 1 0
+ADD axle5-1 15462 reddishbrown
+POS axle5-1 0 -5 -7 0 1 0 0 0 1 1 0 0
+ADD axle5-2 15462 reddishbrown
+POS axle5-2 0 -3 -7 0 1 0 0 0 1 1 0 0
+ADD gear12-1 32270 black
+POS gear12-1 0 -5 -6 1 0 0 0 -1 0 0 0 -1
+ADD gear20-1 18575 tan
+POS gear20-1 0 -3 -6 1 0 0 0 -1 0 0 0 -1
+ADD gear16-1 18946 red
+POS gear16-1 0 -3 -7 0.982 -0.191 0 -0.191 -0.982 0 0 0 -1
+ADD ridges-1 35186 yellow
+POS ridges-1 0 -3 -8 1 0 0 0 -1 0 0 0 -1
+ADD conn-3 26287 lightbluishgrey
+POS conn-3 0 -3 -10 1 0 0 0 -1 0 0 0 -1
+CONNECT axle5-1.axle5 -> beam3x5-3.hole5 TURNS
+CONNECT axle5-2.axle5 -> beam3x5-3.hole7 TURNS
+CONNECT pin-18.pin1 -> beam3x5-3.hole6 STIFF
+CONNECT pin-19.pin1 -> beam3x5-3.hole2 STIFF
+CONNECT axle5-1.axle4 -> gear12-1.axlehole1 LOCKED
+CONNECT axle5-2.axle4 -> gear20-1.axlehole1 LOCKED
+CONNECT axle5-2.axle3 -> gear16-1.hole1 TURNS
+CONNECT axle5-2.axle2 -> ridges-1.hole1 TURNS
+CONNECT axle5-2.axle1 -> conn-3.axlehole1 LOCKED
+MESH gear20-1.teeth gear12-1.teeth
+RATIO gear20-1 gear12-1 20/12

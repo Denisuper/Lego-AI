@@ -1,0 +1,196 @@
+{
+  "example_id": "42114-cabin-step-40",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 40,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-409",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "beam9-11",
+        "part_number": "6629",
+        "count": 1
+      },
+      {
+        "name": "pin-410",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "beam9-12",
+        "part_number": "6629",
+        "count": 1
+      },
+      {
+        "name": "pin-411",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-412",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-413",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-414",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "24316",
+        "count": 1
+      },
+      {
+        "name": "pin-415",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-409",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-7, z=-2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam9-11",
+        "part_number": "6629",
+        "catalog_name": "Technic Beam 1 x 9 Bent (6 - 4) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-7, z=-2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-410",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-4.6, z=4.8 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam9-12",
+        "part_number": "6629",
+        "catalog_name": "Technic Beam 1 x 9 Bent (6 - 4) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-7, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-411",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-3, z=8 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-412",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-3, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-413",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-3, z=7 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-414",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-3, z=9 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle3-21",
+        "part_number": "24316",
+        "catalog_name": "Technic Axle 3 with Stop",
+        "color": "Reddish Brown",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-7, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-415",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-7, z=2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-21's axle3 goes into beam9-11's hole5 (turns)",
+      "pin-415's pin2 goes into beam9-11's hole4 (stiff)",
+      "pin-410's axle1 goes into beam9-12's hole3 (turns)",
+      "pin-411's pin2 goes into beam9-12's hole7 (stiff)",
+      "pin-412's pin2 goes into beam9-12's hole5 (stiff)",
+      "pin-413's pin1 goes into beam9-12's hole6 (stiff)",
+      "axle3-21's axle2 goes into beam9-12's axlehole1 (locked)",
+      "pin-409's axle1 goes into beam5-20's hole4 (turns)",
+      "axle3-21's axle1 goes into pin-301's hole1 (turns)",
+      "pin-415's pin1 goes into beam15-7's hole12 (stiff)",
+      "pin-411's pin1 goes into beam-36's hole11 (stiff)",
+      "pin-412's pin1 goes into beam-36's hole7 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-11 spins on axle3-21",
+      "beam9-11 holds pin-415",
+      "beam9-12 spins on pin-410",
+      "beam9-12 holds pin-411",
+      "beam9-12 holds pin-412",
+      "beam9-12 holds pin-413",
+      "axle3-21 carries beam9-12",
+      "beam5-20 spins on pin-409",
+      "pin-301 spins on axle3-21",
+      "beam15-7 holds pin-415",
+      "beam-36 holds pin-411",
+      "beam-36 holds pin-412"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

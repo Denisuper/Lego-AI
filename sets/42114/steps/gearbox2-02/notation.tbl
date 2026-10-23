@@ -1,0 +1,12 @@
+ADD axle5-3 15462 reddishbrown
+POS axle5-3 -4 -2 -2 0 1 0 0 0 1 1 0 0
+ADD gear16-3 94925 lightbluishgrey
+POS gear16-3 -4 -2 -1 0 1 0 1 0 0 0 0 -1
+ADD beam7-2 32524 yellow
+POS beam7-2 0 -3 -1 -1 0 0 0 0 -1 0 -1 0
+ADD pin-34 6558 blue
+POS pin-34 0 -2 -2 0 0 1 0 1 0 -1 0 0
+CONNECT axle5-3.axle4 -> gear16-3.axlehole1 LOCKED
+CONNECT pin-34.pin1 -> beam7-2.hole3 STIFF
+CONNECT pin-33.pin3 -> beam7-2.hole1 STIFF
+CONNECT axle5-3.axle5 -> beam3x5-4.hole7 TURNS

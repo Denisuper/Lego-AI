@@ -1,0 +1,64 @@
+{
+  "example_id": "42114-sidebars-step-02",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-134",
+        "part_number": "32034",
+        "count": 1
+      },
+      {
+        "name": "axle2-35",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-134",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-35",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-35's axle2 goes into conn-134's axlehole1 (locked)",
+      "axle2-34's axle1 goes into conn-134's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-35 carries conn-134",
+      "axle2-34 carries conn-134"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,19 @@
+ADD axle5-26 15462 reddishbrown
+POS axle5-26 1 -1 1.8 -0.035 0.999 0 0 0 -1 -0.999 -0.035 0
+ADD conn-123 32016 lightbluishgrey
+POS conn-123 1.1 -1 4.8 0 -0.999 0.035 1 0 0 0 0.035 0.999
+ADD pin-684 43093 blue
+POS pin-684 1.75 -1 6.15 -0.415 0.91 0 0 0 -1 -0.91 -0.415 0
+ADD conn-124 6536 yellow
+POS conn-124 1 -1 7.05 0 0.91 0.415 -1 0 0 0 -0.415 0.91
+ADD axle4-34 87083 darkbluishgrey
+POS axle4-34 1 -1.5 7 0 0.91 0.415 -1 0 0 0 -0.415 0.91
+ADD beam2-42 60483 black
+POS beam2-42 1.95 -3 6.7 0.316 0 -0.949 0 1 0 0.949 0 0.316
+CONNECT axle5-26.axle1 -> conn-123.axlehole1 LOCKED
+CONNECT pin-684.axle1 -> conn-124.hole1 TURNS
+CONNECT axle4-34.axle2 -> conn-124.axlehole1 LOCKED
+CONNECT axle4-34.axle4 -> beam2-42.hole1 TURNS
+CONNECT axle5-26.axle2 -> pin-680.hole2 TURNS
+CONNECT axle5-26.axle4 -> pin-681.hole2 TURNS
+CONNECT axle4-34.axle3 -> panel-14.hole1 TURNS

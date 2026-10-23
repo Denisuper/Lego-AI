@@ -1,0 +1,29 @@
+STEP 11
+ADD pin-35 15461 black
+POS pin-35 -3.5 -2 0 1 0 0 0 0 -1 0 1 0
+ADD pin-36 2780 black
+POS pin-36 -4.5 -2 0 1 0 0 0 0 -1 0 1 0
+ADD pin-37 2780 black
+POS pin-37 -4.5 0 0 1 0 0 0 0 -1 0 1 0
+ADD pin-38 15461 black
+POS pin-38 -3.5 0 0 1 0 0 0 0 -1 0 1 0
+ADD pin-39 2780 black
+POS pin-39 4.5 -2 0 -1 0 0 0 0 -1 0 -1 0
+ADD pin-40 15461 black
+POS pin-40 3.5 -2 0 -1 0 0 0 0 -1 0 -1 0
+ADD pin-41 2780 black
+POS pin-41 4.5 0 0 -1 0 0 0 0 -1 0 -1 0
+ADD pin-42 15461 black
+POS pin-42 3.5 0 0 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-36.pin2 -> pin-35.hole1 STIFF
+CONNECT pin-37.pin2 -> pin-38.hole1 STIFF
+CONNECT pin-39.pin2 -> pin-40.hole1 STIFF
+CONNECT pin-41.pin2 -> pin-42.hole1 STIFF
+CONNECT pin-40.pin2 -> beam7-1.hole4 STIFF
+CONNECT pin-40.pin1 -> beam7-1.hole6 STIFF
+CONNECT pin-42.pin2 -> beam9-1.hole5 STIFF
+CONNECT pin-42.pin1 -> beam9-1.hole7 STIFF
+CONNECT pin-38.pin1 -> beam9-2.hole5 STIFF
+CONNECT pin-38.pin2 -> beam9-2.hole7 STIFF
+CONNECT pin-35.pin1 -> beam9-3.hole5 STIFF
+CONNECT pin-35.pin2 -> beam9-3.hole7 STIFF

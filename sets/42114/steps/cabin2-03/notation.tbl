@@ -1,0 +1,16 @@
+ADD beam3-19 32523 lightbluishgrey
+POS beam3-19 2 -0.15 1 0 -1 0 0.99 0 -0.141 0.141 0 0.99
+ADD pin-330 32002 tan
+POS pin-330 1.5 -0.3 2 -1 0 0 0 -0.99 -0.141 0 -0.141 0.99
+ADD conn-65 6536 black
+POS conn-65 -3 0.7 0.7 0 0 -1 0.707 -0.707 0 -0.707 -0.707 0
+ADD conn-66 6536 black
+POS conn-66 3 0.7 0.7 0 0 -1 0.707 -0.707 0 -0.707 -0.707 0
+ADD pin-331 43093 blue
+POS pin-331 3 1.05 0.35 0 0 1 -0.707 -0.707 0 0.707 -0.707 0
+ADD pin-332 43093 blue
+POS pin-332 -3 1.05 0.35 0 0 1 -0.707 -0.707 0 0.707 -0.707 0
+CONNECT pin-330.pin1 -> beam3-19.hole3 STIFF
+CONNECT pin-326.pin1 -> beam3-19.hole1 STIFF
+CONNECT pin-327.axle1 -> conn-65.hole1 TURNS
+CONNECT pin-326.axle1 -> conn-66.hole1 TURNS

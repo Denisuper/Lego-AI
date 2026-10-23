@@ -1,0 +1,114 @@
+{
+  "example_id": "42114-dumpbody-step-15",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam11-28",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "beam11-29",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "axle4-37",
+        "part_number": "87083",
+        "count": 1
+      },
+      {
+        "name": "axle4-38",
+        "part_number": "87083",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-28",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=-5, z=-1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-29",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-5, z=-1 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle4-37",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-12, y=-5, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle4-38",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12, y=-5, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-37's axle4 goes into beam11-28's hole1 (turns)",
+      "pin-797's pin2 goes into beam11-28's hole7 (stiff)",
+      "pin-798's pin2 goes into beam11-28's hole11 (stiff)",
+      "axle4-38's axle4 goes into beam11-29's hole11 (turns)",
+      "pin-799's pin2 goes into beam11-29's hole1 (stiff)",
+      "pin-800's pin2 goes into beam11-29's hole5 (stiff)",
+      "axle4-38's axle1 goes into panel-30's hole3 (turns)",
+      "axle4-38's axle1 goes into panel-30's hole22 (turns)",
+      "axle4-38's axle2 goes into beam7-25's hole1 (turns)",
+      "axle4-37's axle1 goes into panel-31's hole22 (turns)",
+      "axle4-37's axle1 goes into panel-31's hole40 (turns)",
+      "axle4-37's axle2 goes into beam7-26's hole1 (turns)",
+      "axle4-37's axle3 goes into beam9-29's axlehole2 (locked)",
+      "axle4-38's axle3 goes into beam9-30's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-28 spins on axle4-37",
+      "beam11-28 holds pin-797",
+      "beam11-28 holds pin-798",
+      "beam11-29 spins on axle4-38",
+      "beam11-29 holds pin-799",
+      "beam11-29 holds pin-800",
+      "panel-30 spins on axle4-38",
+      "beam7-25 spins on axle4-38",
+      "panel-31 spins on axle4-37",
+      "beam7-26 spins on axle4-37",
+      "axle4-37 carries beam9-29",
+      "axle4-38 carries beam9-30"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

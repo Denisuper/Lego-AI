@@ -1,0 +1,8 @@
+ADD hub-1 22127 lightbluishgrey
+POS hub-1 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-486 4274 lightbluishgrey
+POS pin-486 -4 0.5 2 0 -1 0 1 0 0 0 0 1
+ADD pin-487 4274 lightbluishgrey
+POS pin-487 -4 0.5 -2 0 -1 0 1 0 0 0 0 1
+CONNECT pin-486.pin1 -> hub-1.hole5 TURNS
+CONNECT pin-487.pin1 -> hub-1.hole4 TURNS

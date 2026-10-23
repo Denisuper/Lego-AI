@@ -1,0 +1,31 @@
+STEP 77
+ADD axle11-3 23948 lightbluishgrey
+POS axle11-3 0 -7 -1 1 0 0 0 -1 0 0 0 -1
+ADD axle3-42 24316 reddishbrown
+POS axle3-42 11.8 -13.6 -10 0.8 0.6 0 -0.6 0.8 0 0 0 1
+ADD axle3-43 24316 reddishbrown
+POS axle3-43 -11.8 -13.6 -10 -0.798 -0.477 0.359 -0.599 0.636 -0.473 0 -0.593 -0.797
+ATTACH dumpbody
+CONNECT axle3-42.axle1 -> conn-147.axlehole2 LOCKED
+CONNECT axle3-43.axle1 -> conn-150.axlehole2 LOCKED
+CONNECT axle3-43.axle3 -> conn-153.hole1 TURNS
+CONNECT axle3-42.axle3 -> conn-158.hole1 TURNS
+CONNECT axle11-3.axle6 -> beam2x4-28.hole1 TURNS
+CONNECT axle11-3.axle5 -> beam11-36.hole3 TURNS
+CONNECT axle11-3.axle7 -> beam11-37.hole3 TURNS
+CONNECT axle11-3.axle4 -> beam7-38.hole3 TURNS
+CONNECT axle11-3.axle8 -> beam7-39.hole3 TURNS
+CONNECT axle11-3.axle1 -> beam3x5-7.hole6 TURNS
+CONNECT axle11-3.axle2 -> beam11-8.hole8 TURNS
+CONNECT axle11-3.axle4 -> cam-1.axlehole1 LOCKED
+CONNECT axle11-3.axle3 -> cam-1.axlehole2 LOCKED
+CONNECT axle11-3.axle3 -> cam-1.axlehole3 LOCKED
+CONNECT axle11-3.axle3 -> beam3-5.hole1 TURNS
+CONNECT axle11-3.axle11 -> beam3x5-8.hole6 TURNS
+CONNECT axle11-3.axle10 -> beam11-9.hole8 TURNS
+CONNECT axle11-3.axle8 -> cam-2.axlehole1 LOCKED
+CONNECT axle11-3.axle9 -> cam-2.axlehole2 LOCKED
+CONNECT axle11-3.axle9 -> cam-2.axlehole3 LOCKED
+CONNECT axle11-3.axle9 -> beam3-6.hole1 TURNS
+CONNECT axle3-42.axle2 -> conn-138.hole2 TURNS
+CONNECT axle3-43.axle2 -> conn-139.hole1 TURNS

@@ -1,0 +1,14 @@
+ADD axle55-1 59426 darkbluishgrey
+POS axle55-1 2.25 -0.9 -1 0.971 -0.067 -0.221 0.231 0.309 0.922 0.006 -0.948 0.317
+ADD conn-44 61904 darkbluishgrey
+POS conn-44 2.55 -3.25 -1.8 0.965 0.067 0.22 0.229 -0.307 -0.917 0.006 0.947 -0.317
+ADD gear20-3 32198 tan
+POS gear20-3 2.85 -0.75 -1 0.06 0.222 0.965 -0.275 -0.927 0.229 0.957 -0.284 0.005
+ADD axle3-13 4519 yellow
+POS axle3-13 2.45 -2.8 -1.6 0.22 0.965 0.067 -0.917 0.229 -0.307 -0.317 0.006 0.947
+ADD gear12-9 6589 tan
+POS gear12-9 2.3 -2.2 -1.4 -0.067 -0.965 -0.22 0.307 -0.229 0.917 -0.947 -0.006 0.317
+CONNECT axle3-13.axle2 -> conn-44.hole5 TURNS
+CONNECT axle55-1.axle3 -> gear20-3.axlehole1 LOCKED
+CONNECT axle3-13.axle1 -> gear12-9.axlehole1 LOCKED
+CONNECT axle55-1.axle1 -> beam3x3-7.hole2 TURNS

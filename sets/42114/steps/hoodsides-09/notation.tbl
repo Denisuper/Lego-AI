@@ -1,0 +1,20 @@
+ADD axle4-29 99008 tan
+POS axle4-29 6 0 2.5 0 0 1 0 -1 0 1 0 0
+ADD bush-22 3713 lightbluishgrey
+POS bush-22 6 0 2 1 0 0 0 -1 0 0 0 -1
+ADD beam2-35 41677 black
+POS beam2-35 6 0 1.25 -1 0 0 0 0 -1 0 -1 0
+ADD beam2-36 41677 black
+POS beam2-36 6 0 0.75 -1 0 0 0 0 -1 0 -1 0
+ADD axle2-27 32062 red
+POS axle2-27 6 -1 1.5 0 0 -1 0 -1 0 -1 0 0
+ADD undersid-9 41669 black
+POS undersid-9 6 -1 2 0 0 -1 -1 0 0 0 1 0
+CONNECT axle4-29.axle1 -> beam2-35.axlehole1 LOCKED
+CONNECT axle2-27.axle2 -> beam2-35.axlehole2 LOCKED
+CONNECT axle4-29.axle1 -> beam2-36.axlehole1 LOCKED
+CONNECT axle2-27.axle2 -> beam2-36.axlehole2 LOCKED
+CONNECT axle2-27.axle1 -> undersid-9.axlehole1 LOCKED
+CONNECT axle4-29.axle2 -> beam7-21.hole4 TURNS
+CONNECT axle4-29.axle3 -> beam3x3-19.axlehole2 LOCKED
+CONNECT axle4-29.axle3 -> beam3x3-20.axlehole2 LOCKED

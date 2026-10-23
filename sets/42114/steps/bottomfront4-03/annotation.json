@@ -1,0 +1,190 @@
+{
+  "example_id": "42114-bottomfront4-step-03",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-580",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "beam3-38",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "pin-581",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "pin-582",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-583",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "pin-584",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "beam3-39",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "axle5-24",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "pin-585",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "pin-586",
+        "part_number": "62462",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-580",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam3-38",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.25, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-581",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-582",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-583",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-584",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam3-39",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.25, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle5-24",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-585",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-586",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-24's axle1 goes into beam3-38's axlehole2 (locked)",
+      "pin-580's axle1 goes into pin-581's hole1 (turns)",
+      "pin-582's pin1 goes into pin-581's hole1 (stiff)",
+      "pin-582's pin2 goes into pin-583's hole1 (stiff)",
+      "pin-584's axle1 goes into pin-583's hole1 (turns)",
+      "axle5-24's axle5 goes into beam3-39's axlehole2 (locked)",
+      "axle5-24's axle2 goes into pin-585's hole1 (turns)",
+      "axle5-24's axle4 goes into pin-586's hole1 (turns)",
+      "pin-580's pin1 goes into beam5-36's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-24 carries beam3-38",
+      "pin-581 spins on pin-580",
+      "pin-581 holds pin-582",
+      "pin-583 holds pin-582",
+      "pin-583 spins on pin-584",
+      "axle5-24 carries beam3-39",
+      "pin-585 spins on axle5-24",
+      "pin-586 spins on axle5-24",
+      "beam5-36 holds pin-580"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,40 @@
+ADD pin-53 48989 lightbluishgrey
+POS pin-53 0 -1 -1 0 1 0 -1 0 0 0 0 1
+ADD beam-8 18654 darkbluishgrey
+POS beam-8 -1 -1 -2 0 0 1 -1 0 0 0 -1 0
+ADD beam-9 18654 darkbluishgrey
+POS beam-9 1 -1 -2 0 0 1 -1 0 0 0 -1 0
+ADD pin-54 2780 black
+POS pin-54 -1 -1.5 -1 0 0 1 -1 0 0 0 -1 0
+ADD pin-55 2780 black
+POS pin-55 1 -1.5 -1 0 0 1 -1 0 0 0 -1 0
+ADD beam11-3 32525 yellow
+POS beam11-3 0 -2 -1 0 0 1 0 1 0 -1 0 0
+ADD pin-56 2780 black
+POS pin-56 -3 -1.5 -1 0 0 1 1 0 0 0 1 0
+ADD pin-57 2780 black
+POS pin-57 -4 -1.5 -1 0 0 1 1 0 0 0 1 0
+ADD pin-58 2780 black
+POS pin-58 4 -1.5 -1 0 0 1 1 0 0 0 1 0
+ADD pin-59 2780 black
+POS pin-59 3 -1.5 -1 0 0 1 1 0 0 0 1 0
+ADD beam3-1 32523 yellow
+POS beam3-1 -4 -1 -1 0 0 1 0 -1 0 1 0 0
+ADD beam3-2 32523 yellow
+POS beam3-2 4 -1 -1 0 0 1 0 -1 0 1 0 0
+CONNECT pin-54.pin1 -> pin-53.hole1 STIFF
+CONNECT pin-55.pin1 -> pin-53.hole3 STIFF
+CONNECT pin-53.pin1 -> beam-8.hole1 STIFF
+CONNECT pin-53.pin2 -> beam-9.hole1 STIFF
+CONNECT pin-54.pin2 -> beam11-3.hole5 STIFF
+CONNECT pin-55.pin2 -> beam11-3.hole7 STIFF
+CONNECT pin-56.pin1 -> beam11-3.hole3 STIFF
+CONNECT pin-57.pin1 -> beam11-3.hole2 STIFF
+CONNECT pin-58.pin1 -> beam11-3.hole10 STIFF
+CONNECT pin-59.pin1 -> beam11-3.hole9 STIFF
+CONNECT pin-56.pin2 -> beam3-1.hole3 STIFF
+CONNECT pin-57.pin2 -> beam3-1.hole2 STIFF
+CONNECT pin-58.pin2 -> beam3-2.hole2 STIFF
+CONNECT pin-59.pin2 -> beam3-2.hole1 STIFF
+CONNECT pin-53.pin4 -> beam3x3-2.hole3 STIFF
+CONNECT pin-53.pin3 -> beam3x3-2.hole7 STIFF

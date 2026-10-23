@@ -1,0 +1,21 @@
+ADD beam5-14 11478 black
+POS beam5-14 1.25 -1 -7 0 1 0 0 0 -1 -1 0 0
+ADD beam5-15 11478 black
+POS beam5-15 0.75 -1 -7 0 1 0 0 0 -1 -1 0 0
+ADD conn-59 6536 yellow
+POS conn-59 2 -3 -7 -1 0 0 0 0 1 0 1 0
+ADD pin-261 4274 blue
+POS pin-261 3 -2.5 -8 0 0 -1 1 0 0 0 -1 0
+ADD conn-60 63869 black
+POS conn-60 3 -3 -7 -1 0 0 0 0 -1 0 -1 0
+CONNECT axle7-3.axle3 -> beam5-14.axlehole2 LOCKED
+CONNECT pin-257.pin3 -> beam5-14.hole1 STIFF
+CONNECT pin-258.pin3 -> beam5-14.hole3 STIFF
+CONNECT axle3-17.axle3 -> beam5-14.axlehole1 LOCKED
+CONNECT axle7-3.axle3 -> beam5-15.axlehole2 LOCKED
+CONNECT pin-257.pin3 -> beam5-15.hole1 STIFF
+CONNECT pin-258.pin3 -> beam5-15.hole3 STIFF
+CONNECT axle3-17.axle3 -> beam5-15.axlehole1 LOCKED
+CONNECT axle7-3.axle2 -> conn-59.axlehole1 LOCKED
+CONNECT pin-261.pin1 -> conn-60.hole2 TURNS
+CONNECT axle7-3.axle1 -> conn-60.axlehole1 LOCKED

@@ -1,0 +1,14 @@
+ADD axle4-2 99008 tan
+POS axle4-2 -4 0 -0.5 0 0 -1 0 1 0 1 0 0
+ADD gear16-4 94925 lightbluishgrey
+POS gear16-4 -4 0 -1 0 1 0 1 0 0 0 0 -1
+ADD beam3x5-5 32526 yellow
+POS beam3x5-5 0 -2 -2 0 0 -1 1 0 0 0 -1 0
+CONNECT axle4-2.axle1 -> beam3x5-5.hole7 TURNS
+CONNECT axle5-3.axle3 -> beam3x5-5.hole5 TURNS
+CONNECT pin-34.pin2 -> beam3x5-5.hole1 STIFF
+CONNECT axle4-2.axle2 -> beam3x5-4.hole5 TURNS
+MESH gear16-2.teeth gear16-4.teeth
+RATIO gear16-2 gear16-4 16/16
+MESH gear16-3.teeth gear16-4.teeth
+RATIO gear16-3 gear16-4 16/16

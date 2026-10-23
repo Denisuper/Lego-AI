@@ -1,0 +1,13 @@
+STEP 33
+ATTACH wheelsupport
+ATTACH wheelsupport
+CONNECT pin-130.pin1 -> housing-1.hole3 STIFF
+CONNECT pin-136.pin1 -> housing-1.hole4 STIFF
+CONNECT pin-105.pin1 -> housing-1.hole3 STIFF
+CONNECT pin-110.pin1 -> housing-1.hole4 STIFF
+CONNECT axle3-9.axle2 -> beam-13.hole11 TURNS
+CONNECT axle3-9.axle2 -> beam-13.hole10 TURNS
+MESH gear8-2.teeth gear24-2.teeth
+RATIO gear8-2 gear24-2 8/24
+MESH gear8-2.teeth gear24-2.teeth
+RATIO gear8-2 gear24-2 8/24

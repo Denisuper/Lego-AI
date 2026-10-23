@@ -1,0 +1,15 @@
+ADD conn-57 6536 yellow
+POS conn-57 0 1 -7 -1 0 0 0 0 1 0 1 0
+ADD gear28-3 99010 black
+POS gear28-3 0 -1 -8 0 0 1 -1 0 0 0 -1 0
+ADD top-3 99009 lightbluishgrey
+POS top-3 0 -1 -8 0 0 1 -1 0 0 0 -1 0
+ADD pin-259 6558 blue
+POS pin-259 0 -2 -9 -1 0 0 0 -1 0 0 0 1
+ADD pin-260 6558 blue
+POS pin-260 0 0 -9 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-222.pin1 -> conn-57.hole1 TURNS
+CONNECT axle3-17.axle2 -> conn-57.axlehole1 LOCKED
+CONNECT pin-258.pin2 -> gear28-3.hole1 STIFF
+CONNECT pin-259.pin2 -> top-3.hole2 STIFF
+CONNECT pin-260.pin2 -> top-3.hole1 STIFF

@@ -1,0 +1,7 @@
+STEP 58
+ADD axle6-7 3706 black
+POS axle6-7 1 -19.5 -39 0 0 1 -1 0 0 0 -1 0
+ATTACH onswitchleve
+CONNECT axle6-7.axle1 -> beam2-24.axlehole2 LOCKED
+CONNECT axle6-7.axle1 -> beam2-25.axlehole2 LOCKED
+CONNECT axle6-7.axle2 -> beam-34.hole30 TURNS

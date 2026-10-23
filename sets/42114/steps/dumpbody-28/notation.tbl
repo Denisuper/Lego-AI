@@ -1,0 +1,14 @@
+ADD axle4-39 87083 darkbluishgrey
+POS axle4-39 12 -6 0.5 0 0 1 0 1 0 -1 0 0
+ADD axle4-40 87083 darkbluishgrey
+POS axle4-40 -12 -6 0.5 0 0 1 0 1 0 -1 0 0
+CONNECT axle4-39.axle1 -> panel-30.hole4 TURNS
+CONNECT axle4-39.axle1 -> panel-30.hole23 TURNS
+CONNECT axle4-39.axle2 -> beam7-25.axlehole1 LOCKED
+CONNECT axle4-40.axle1 -> panel-31.hole23 TURNS
+CONNECT axle4-40.axle1 -> panel-31.hole41 TURNS
+CONNECT axle4-40.axle2 -> beam7-26.axlehole1 LOCKED
+CONNECT axle4-40.axle4 -> beam7-31.hole1 TURNS
+CONNECT axle4-39.axle4 -> beam7-33.hole1 TURNS
+CONNECT axle4-40.axle3 -> pin-852.hole1 TURNS
+CONNECT axle4-39.axle3 -> pin-853.hole1 TURNS

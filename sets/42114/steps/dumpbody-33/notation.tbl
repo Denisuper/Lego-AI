@@ -1,0 +1,38 @@
+ADD pin-876 6558 blue
+POS pin-876 12 -4 25 0 0 1 0 1 0 -1 0 0
+ADD pin-877 6558 blue
+POS pin-877 11.2 -2.4 25 0 0 1 0 1 0 -1 0 0
+ADD pin-878 6558 blue
+POS pin-878 9.6 -1.2 25 0 0 1 0 1 0 -1 0 0
+ADD pin-879 6558 blue
+POS pin-879 8 0 26 0 0 1 0 -1 0 1 0 0
+ADD pin-880 6558 blue
+POS pin-880 5.6 1.8 26 0 0 1 0 -1 0 1 0 0
+ADD pin-881 6558 blue
+POS pin-881 -12 -4 25 0 0 1 0 1 0 -1 0 0
+ADD pin-882 6558 blue
+POS pin-882 -11.2 -2.4 25 0 0 1 0 1 0 -1 0 0
+ADD pin-883 6558 blue
+POS pin-883 -9.6 -1.2 25 0 0 1 0 1 0 -1 0 0
+ADD pin-884 6558 blue
+POS pin-884 -8 0 26 0 0 1 0 -1 0 1 0 0
+ADD pin-885 6558 blue
+POS pin-885 -5.6 1.8 26 0 0 1 0 -1 0 1 0 0
+CONNECT pin-879.pin1 -> panel-35.hole1 STIFF
+CONNECT pin-877.pin3 -> panel-36.hole2 STIFF
+CONNECT pin-878.pin3 -> panel-36.hole1 STIFF
+CONNECT pin-884.pin1 -> panel-37.hole1 STIFF
+CONNECT pin-882.pin3 -> panel-38.hole16 STIFF
+CONNECT pin-883.pin3 -> panel-38.hole15 STIFF
+CONNECT pin-881.pin3 -> panel-41.hole1 STIFF
+CONNECT pin-876.pin3 -> panel-42.hole15 STIFF
+CONNECT pin-881.pin2 -> beam9-31.hole7 STIFF
+CONNECT pin-882.pin2 -> beam9-31.hole5 STIFF
+CONNECT pin-883.pin2 -> beam9-31.hole3 STIFF
+CONNECT pin-884.pin1 -> beam9-31.hole1 STIFF
+CONNECT pin-876.pin2 -> beam9-32.hole7 STIFF
+CONNECT pin-877.pin2 -> beam9-32.hole5 STIFF
+CONNECT pin-878.pin2 -> beam9-32.hole3 STIFF
+CONNECT pin-879.pin1 -> beam9-32.hole1 STIFF
+CONNECT pin-880.pin1 -> beam3-58.hole2 STIFF
+CONNECT pin-885.pin1 -> beam3-59.hole2 STIFF

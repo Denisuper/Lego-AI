@@ -1,0 +1,6 @@
+ADD pin-483 32054 lightbluishgrey
+POS pin-483 -2 -6 -9 1 0 0 0 0 -1 0 1 0
+ADD pin-484 32054 lightbluishgrey
+POS pin-484 2 -6 -9 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-483.pin1 -> beam7-12.hole1 STIFF
+CONNECT pin-484.pin1 -> beam7-13.hole1 STIFF

@@ -1,0 +1,15 @@
+ADD beam-34 39794 black
+POS beam-34 0 0 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-333 11214 darkbluishgrey
+POS pin-333 3 0 4 -1 0 0 0 1 0 0 0 -1
+ADD pin-334 11214 darkbluishgrey
+POS pin-334 3 0 2 -1 0 0 0 1 0 0 0 -1
+ADD conn-67 32184 black
+POS conn-67 2 0 3 1 0 0 0 0 1 0 -1 0
+ADD pin-335 2780 black
+POS pin-335 3.5 0 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-336 2780 black
+POS pin-336 3.5 0 -2 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-333.pin1 -> beam-34.hole7 STIFF
+CONNECT pin-334.pin1 -> beam-34.hole11 STIFF
+CONNECT pin-336.pin2 -> beam-34.hole21 STIFF

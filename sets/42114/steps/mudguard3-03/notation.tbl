@@ -1,0 +1,6 @@
+ADD undersid-1 18677 black
+POS undersid-1 -1 -0.5 -3.5 0 0 1 0 1 0 -1 0 0
+ADD undersid-2 18677 black
+POS undersid-2 -1 -0.5 -1.5 0 0 1 0 1 0 -1 0 0
+CONNECT pin-496.axle1 -> undersid-1.hole2 TURNS
+CONNECT pin-497.pin3 -> undersid-2.hole2 STIFF

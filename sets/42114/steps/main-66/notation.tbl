@@ -1,0 +1,29 @@
+STEP 66
+ADD pin-587 2780 black
+POS pin-587 -1 -3.5 -60 0 0 1 1 0 0 0 1 0
+ADD pin-588 2780 black
+POS pin-588 1 -3.5 -60 0 0 1 1 0 0 0 1 0
+ADD pin-589 62462 white
+POS pin-589 -1 -4.5 -60 0 0 -1 1 0 0 0 -1 0
+ADD pin-590 62462 white
+POS pin-590 1 -4.5 -60 0 0 -1 1 0 0 0 -1 0
+ADD pin-591 61184 lightbluishgrey
+POS pin-591 -1 -6.5 -60 0 0 -1 -1 0 0 0 1 0
+ADD pin-592 61184 lightbluishgrey
+POS pin-592 1 -6.5 -60 0 0 -1 -1 0 0 0 1 0
+ADD beam3-40 32523 green
+POS beam3-40 0 -6 -60 0 0 -1 0 -1 0 -1 0 0
+ADD pin-593 2780 black
+POS pin-593 0 -5.5 -60 0 0 -1 1 0 0 0 -1 0
+ADD pin-594 62462 white
+POS pin-594 0 -4.5 -60 0 0 -1 1 0 0 0 -1 0
+CONNECT pin-591.bar1 -> pin-587.barhole1 TURNS
+CONNECT pin-592.bar1 -> pin-588.barhole1 TURNS
+CONNECT pin-587.pin1 -> pin-589.hole1 STIFF
+CONNECT pin-588.pin1 -> pin-590.hole1 STIFF
+CONNECT pin-591.pin1 -> beam3-40.hole3 STIFF
+CONNECT pin-592.pin1 -> beam3-40.hole1 STIFF
+CONNECT pin-593.pin1 -> beam3-40.hole2 STIFF
+CONNECT pin-593.pin2 -> pin-594.hole1 STIFF
+CONNECT pin-587.pin2 -> pin-463.hole1 STIFF
+CONNECT pin-588.pin2 -> pin-464.hole1 STIFF

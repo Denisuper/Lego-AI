@@ -1,0 +1,162 @@
+{
+  "example_id": "42114-cabinrooftop-step-02",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-11",
+        "part_number": "15458",
+        "count": 1
+      },
+      {
+        "name": "pin-521",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-522",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-523",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-524",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-525",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-526",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-527",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-11",
+        "part_number": "15458",
+        "catalog_name": "Technic Panel 3 x 11 x 1",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=3 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-521",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-522",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-523",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-524",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-525",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-526",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-527",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-521's pin1 goes into panel-11's hole12 (turns)",
+      "pin-522's pin1 goes into panel-11's hole11 (turns)",
+      "pin-523's pin1 goes into panel-11's hole10 (turns)",
+      "pin-524's pin1 goes into panel-11's hole8 (turns)",
+      "pin-525's pin1 goes into panel-11's hole7 (turns)",
+      "pin-526's pin1 goes into panel-11's hole6 (turns)",
+      "pin-527's pin1 goes into panel-11's hole5 (turns)",
+      "pin-519's pin1 goes into panel-11's hole12 (stiff)",
+      "pin-520's pin1 goes into panel-11's hole5 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-521 spins on panel-11",
+      "pin-522 spins on panel-11",
+      "pin-523 spins on panel-11",
+      "pin-524 spins on panel-11",
+      "pin-525 spins on panel-11",
+      "pin-526 spins on panel-11",
+      "pin-527 spins on panel-11",
+      "panel-11 holds pin-519",
+      "panel-11 holds pin-520"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

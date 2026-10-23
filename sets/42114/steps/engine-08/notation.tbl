@@ -1,0 +1,26 @@
+ADD pin-372 55615 lightbluishgrey
+POS pin-372 3 -1 -5 1 0 0 0 1 0 0 0 1
+ADD pin-373 55615 lightbluishgrey
+POS pin-373 -3 -1 -5 1 0 0 0 1 0 0 0 1
+ADD pin-374 2780 black
+POS pin-374 -3 -1.5 -4 0 0 -1 1 0 0 0 -1 0
+ADD pin-375 2780 black
+POS pin-375 3 -1.5 -4 0 0 -1 1 0 0 0 -1 0
+ADD pin-376 32054 orange
+POS pin-376 -3 -1 -5 1 0 0 0 0 1 0 -1 0
+ADD pin-377 32054 orange
+POS pin-377 -3 -3 -5 1 0 0 0 0 1 0 -1 0
+ADD pin-378 32054 orange
+POS pin-378 3 -3 -5 -1 0 0 0 0 1 0 1 0
+ADD pin-379 32054 orange
+POS pin-379 3 -1 -5 -1 0 0 0 0 1 0 1 0
+CONNECT pin-375.pin2 -> pin-372.hole4 STIFF
+CONNECT pin-378.pin1 -> pin-372.hole1 STIFF
+CONNECT pin-379.pin1 -> pin-372.hole3 STIFF
+CONNECT pin-374.pin2 -> pin-373.hole4 STIFF
+CONNECT pin-376.pin1 -> pin-373.hole3 STIFF
+CONNECT pin-377.pin1 -> pin-373.hole1 STIFF
+CONNECT pin-372.pin3 -> beam-36.hole6 STIFF
+CONNECT pin-372.pin4 -> beam-36.hole10 STIFF
+CONNECT pin-373.pin3 -> beam-36.hole1 STIFF
+CONNECT pin-373.pin4 -> beam-36.hole9 STIFF

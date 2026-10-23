@@ -1,0 +1,22 @@
+ADD axle8-4 55013 darkbluishgrey
+POS axle8-4 6.6 -1 38 1 0 0 0 0 -1 0 1 0
+ADD bush-30 3713 lightbluishgrey
+POS bush-30 10 -1 38 0 0 -1 -1 0 0 0 1 0
+ADD axle8-5 55013 darkbluishgrey
+POS axle8-5 -6.6 -1 38 -1 0 0 0 0 -1 0 -1 0
+ADD bush-31 3713 lightbluishgrey
+POS bush-31 -10 -1 38 0 0 1 -1 0 0 0 -1 0
+CONNECT axle8-4.axle8 -> bush-30.axlehole1 LOCKED
+CONNECT axle8-5.axle8 -> bush-31.axlehole1 LOCKED
+CONNECT axle8-4.axle6 -> conn-167.hole1 TURNS
+CONNECT axle8-5.axle6 -> conn-168.hole1 TURNS
+CONNECT axle8-4.axle7 -> pin-910.hole1 TURNS
+CONNECT axle8-4.axle5 -> pin-911.hole1 TURNS
+CONNECT axle8-4.axle3 -> pin-912.hole1 TURNS
+CONNECT axle8-5.axle7 -> pin-915.hole1 TURNS
+CONNECT axle8-5.axle5 -> pin-916.hole1 TURNS
+CONNECT axle8-5.axle3 -> pin-917.hole1 TURNS
+CONNECT axle8-4.axle1 -> conn-175.axlehole2 LOCKED
+CONNECT axle8-5.axle1 -> conn-176.axlehole1 LOCKED
+CONNECT axle8-5.axle4 -> pin-959.hole1 TURNS
+CONNECT axle8-4.axle4 -> pin-960.hole1 TURNS

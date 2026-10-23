@@ -1,0 +1,8 @@
+ADD beam2-39 60483 lightbluishgrey
+POS beam2-39 8 2 5 0 0 1 -1 0 0 0 -1 0
+ADD beam2-40 60483 lightbluishgrey
+POS beam2-40 -8 2 5 0 0 -1 -1 0 0 0 1 0
+CONNECT axle2-26.axle1 -> beam2-39.axlehole1 LOCKED
+CONNECT pin-650.pin1 -> beam2-39.hole1 STIFF
+CONNECT axle2-28.axle2 -> beam2-40.axlehole1 LOCKED
+CONNECT pin-656.pin2 -> beam2-40.hole1 STIFF

@@ -1,0 +1,14 @@
+ADD beam2x4-10 32140 yellow
+POS beam2x4-10 -2 -2.5 -2.5 1 0 0 0 -1 0 0 0 -1
+ADD pin-284 43093 blue
+POS pin-284 -2 -2 -3.5 0 1 0 1 0 0 0 0 -1
+ADD pin-285 43093 blue
+POS pin-285 -2 -2 -2.5 0 -1 0 -1 0 0 0 0 -1
+ADD beam2x4-11 32140 yellow
+POS beam2x4-11 -2 -1.5 -3.5 1 0 0 0 1 0 0 0 1
+ADD pin-286 2780 black
+POS pin-286 -2 -2 -0.5 0 1 0 -1 0 0 0 0 1
+CONNECT pin-284.axle1 -> beam2x4-10.hole1 TURNS
+CONNECT pin-282.pin2 -> beam2x4-10.hole4 TURNS
+CONNECT pin-285.axle1 -> beam2x4-11.hole1 TURNS
+CONNECT pin-286.pin1 -> beam2x4-11.hole3 STIFF

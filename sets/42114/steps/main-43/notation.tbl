@@ -1,0 +1,8 @@
+STEP 43
+ATTACH motors
+CONNECT pin-155.pin2 -> motor-1.hole7 STIFF
+CONNECT pin-159.pin2 -> motor-2.hole5 STIFF
+CONNECT axle12-1.axle1 -> motor-2.axlehole1 LOCKED
+CONNECT pin-173.pin3 -> beam7-4.hole2 STIFF
+CONNECT pin-174.pin3 -> beam7-5.hole2 STIFF
+CONNECT axle2-6.axle2 -> conn-36.axlehole2 LOCKED

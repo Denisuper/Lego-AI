@@ -1,0 +1,34 @@
+ADD b-3 3023 black
+POS b-3 -2.5 0 0 1 0 0 0 1 0 0 0 1
+ADD b-4 3023 black
+POS b-4 2.5 0 0 1 0 0 0 1 0 0 0 1
+ADD part-26 3623 black
+POS part-26 0 0.4 1 1 0 0 0 1 0 0 0 1
+ADD part-27 3623 black
+POS part-27 0 0.4 -1 1 0 0 0 1 0 0 0 1
+ADD undersid-5 18677 black
+POS undersid-5 -2.5 0 1 1 0 0 0 1 0 0 0 1
+ADD undersid-6 18677 black
+POS undersid-6 -2.5 0 -1 1 0 0 0 1 0 0 0 1
+ADD undersid-7 18677 black
+POS undersid-7 2.5 0 -1 -1 0 0 0 1 0 0 0 -1
+ADD undersid-8 18677 black
+POS undersid-8 2.5 0 1 -1 0 0 0 1 0 0 0 -1
+CONNECT part-26.pin1 -> part-23.hole3 STIFF
+CONNECT part-26.pin2 -> part-23.hole6 STIFF
+CONNECT part-26.pin3 -> part-23.hole9 STIFF
+CONNECT part-27.pin1 -> part-23.hole1 STIFF
+CONNECT part-27.pin2 -> part-23.hole4 STIFF
+CONNECT part-27.pin3 -> part-23.hole7 STIFF
+CONNECT undersid-5.pin1 -> groove-10.hole1 STIFF
+CONNECT undersid-5.pin2 -> groove-10.hole2 STIFF
+CONNECT b-3.pin1 -> part-24.hole2 STIFF
+CONNECT b-3.pin2 -> part-24.hole4 STIFF
+CONNECT undersid-6.pin1 -> part-24.hole1 STIFF
+CONNECT undersid-6.pin2 -> part-24.hole3 STIFF
+CONNECT b-4.pin1 -> part-25.hole3 STIFF
+CONNECT b-4.pin2 -> part-25.hole5 STIFF
+CONNECT undersid-8.pin2 -> part-25.hole4 STIFF
+CONNECT undersid-8.pin1 -> part-25.hole6 STIFF
+CONNECT undersid-7.pin2 -> groove-11.hole3 STIFF
+CONNECT undersid-7.pin1 -> groove-11.hole4 STIFF

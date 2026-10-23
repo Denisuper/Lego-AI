@@ -1,0 +1,5 @@
+STEP 23
+ATTACH gearbox4
+CONNECT axle4-4.axle2 -> beam-13.hole3 TURNS
+CONNECT pin-93.pin3 -> beam-7.hole15 STIFF
+CONNECT pin-90.pin2 -> beam3x3-2.hole6 STIFF

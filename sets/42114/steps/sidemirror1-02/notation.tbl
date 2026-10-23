@@ -1,0 +1,20 @@
+ADD pin-718 11214 red
+POS pin-718 3 -3 0 0 1 0 1 0 0 0 0 -1
+ADD undersid-11 18677 black
+POS undersid-11 2.35 -3.1 -0.3 0.94 0.342 0 0 0 -1 -0.342 0.94 0
+ADD pin-719 62462 black
+POS pin-719 3 -4.5 0 0 1 0 1 0 0 0 0 -1
+ADD pin-720 18651 black
+POS pin-720 3 -6 0 0 -1 0 -1 0 0 0 0 -1
+ADD undersid-12 18677 black
+POS undersid-12 2.35 -6 -0.3 0.94 0.342 0 0 0 -1 -0.342 0.94 0
+ADD part-32 87079 black
+POS part-32 2.2 -4.5 -0.65 0 0.342 0.94 1 0 0 0 0.94 -0.342
+CONNECT pin-718.pin1 -> undersid-11.hole2 STIFF
+CONNECT pin-718.axle1 -> pin-719.hole1 TURNS
+CONNECT pin-720.axle1 -> pin-719.hole1 TURNS
+CONNECT pin-720.axle2 -> undersid-12.hole2 TURNS
+CONNECT undersid-11.pin1 -> part-32.hole7 STIFF
+CONNECT undersid-11.pin2 -> part-32.hole8 STIFF
+CONNECT undersid-12.pin1 -> part-32.hole1 STIFF
+CONNECT undersid-12.pin2 -> part-32.hole2 STIFF

@@ -1,0 +1,30 @@
+ADD panel-31 64782 yellow
+POS panel-31 -12 -5 7 0 1 0 0 0 -1 -1 0 0
+ADD pin-793 2780 black
+POS pin-793 -11.5 -3 11 1 0 0 0 0 -1 0 1 0
+ADD pin-794 2780 black
+POS pin-794 -11.5 -3 3 1 0 0 0 0 -1 0 1 0
+ADD beam11-27 32525 yellow
+POS beam11-27 -11 -3 7 0 1 0 -1 0 0 0 0 1
+ADD pin-795 2780 black
+POS pin-795 -12 -3 1.5 0 0 1 0 1 0 -1 0 0
+ADD pin-796 6558 blue
+POS pin-796 -12 -4 1 0 0 1 0 1 0 -1 0 0
+ADD beam7-26 32348 yellow
+POS beam7-26 -12 -6 1 1 0 0 0 0 1 0 -1 0
+CONNECT pin-793.pin1 -> panel-31.hole8 STIFF
+CONNECT pin-794.pin1 -> panel-31.hole34 STIFF
+CONNECT pin-795.pin1 -> panel-31.hole36 STIFF
+CONNECT pin-795.pin1 -> panel-31.hole38 STIFF
+CONNECT pin-796.pin1 -> panel-31.hole20 STIFF
+CONNECT pin-796.pin1 -> panel-31.hole39 STIFF
+CONNECT pin-776.pin3 -> panel-31.hole2 STIFF
+CONNECT pin-776.pin3 -> panel-31.hole20 STIFF
+CONNECT pin-777.axle1 -> panel-31.hole3 TURNS
+CONNECT pin-777.axle1 -> panel-31.hole22 TURNS
+CONNECT pin-784.axle1 -> panel-31.hole1 TURNS
+CONNECT pin-784.axle1 -> panel-31.hole6 TURNS
+CONNECT pin-793.pin2 -> beam11-27.hole10 STIFF
+CONNECT pin-794.pin2 -> beam11-27.hole2 STIFF
+CONNECT pin-795.pin2 -> beam7-26.hole3 STIFF
+CONNECT pin-796.pin2 -> beam7-26.hole2 STIFF

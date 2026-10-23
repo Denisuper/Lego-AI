@@ -1,0 +1,5 @@
+ADD pin-119 43093 blue
+POS pin-119 0 0 2.5 0 0 -1 0 -1 0 -1 0 0
+ADD beam2-1 60483 lightbluishgrey
+POS beam2-1 0 0 2 1 0 0 0 0 -1 0 1 0
+CONNECT pin-119.axle1 -> beam5x11-1.hole22 TURNS

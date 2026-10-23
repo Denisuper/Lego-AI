@@ -1,0 +1,8 @@
+ADD conn-46 92907 lightbluishgrey
+POS conn-46 -0.15 -0.45 0 0.972 -0.005 -0.231 0.231 -0.001 0.972 -0.005 -1 0
+ADD cranksha-3 2853 yellow
+POS cranksha-3 -0.55 -1.05 -1 -0.231 0.005 0.972 0.972 0.001 0.231 0 1 -0.005
+ADD beam3x3-9 60484 yellow
+POS beam3x3-9 0.05 -1.4 1 -0.231 0.972 -0.005 0.972 0.231 -0.001 0 -0.005 -1
+CONNECT cranksha-3.axle1 -> conn-46.axlehole1 LOCKED
+CONNECT cranksha-3.axle2 -> beam3x3-9.hole4 TURNS

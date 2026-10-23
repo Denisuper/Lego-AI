@@ -1,0 +1,156 @@
+{
+  "example_id": "42114-step-76",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 76,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-138",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "axle2-36",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-37",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-38",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-139",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "axle2-39",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-40",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-41",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-138",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.25, y=-13.05, z=-10.85 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-36",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=12.25, y=-13.05, z=-10.85 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-37",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-6.6, z=-21.35 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-38",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.7, y=-6.1, z=-22.15 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn-139",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-12.25, y=-13.05, z=-10.85 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-39",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-12.25, y=-13.05, z=-10.85 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-40",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=-6.6, z=-21.35 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle2-41",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6.7, y=-6.1, z=-22.15 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-36's axle1 goes into conn-138's axlehole1 (locked)",
+      "axle2-36's axle2 goes into conn-138's axlehole2 (locked)",
+      "axle2-39's axle1 goes into conn-139's axlehole1 (locked)",
+      "axle2-39's axle2 goes into conn-139's axlehole2 (locked)",
+      "axle2-38's axle1 goes into conn-44's axlehole1 (locked)",
+      "axle2-38's axle2 goes into conn-44's axlehole2 (locked)",
+      "axle2-41's axle1 goes into conn-48's axlehole1 (locked)",
+      "axle2-41's axle2 goes into conn-48's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-36 carries conn-138",
+      "axle2-39 carries conn-139",
+      "axle2-38 carries conn-44",
+      "axle2-41 carries conn-48"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

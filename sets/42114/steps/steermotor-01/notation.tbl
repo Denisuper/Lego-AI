@@ -1,0 +1,19 @@
+ADD pin-274 2780 black
+POS pin-274 -2 0.5 -7 0 0 1 0 -1 0 1 0 0
+ADD pin-275 2780 black
+POS pin-275 2 0.5 -7 0 0 1 0 -1 0 1 0 0
+ADD pin-276 2780 black
+POS pin-276 2.5 -0.5 -4.5 1 0 0 0 0 1 0 -1 0
+ADD pin-277 2780 black
+POS pin-277 2.5 -0.5 -0.5 1 0 0 0 0 1 0 -1 0
+ADD pin-278 2780 black
+POS pin-278 -2.5 -0.5 -0.5 1 0 0 0 0 1 0 -1 0
+ADD pin-279 2780 black
+POS pin-279 -2.5 -0.5 -4.5 1 0 0 0 0 1 0 -1 0
+ATTACH spikeprimemo
+CONNECT pin-274.pin2 -> back-1.hole1 STIFF
+CONNECT pin-275.pin2 -> back-1.hole2 STIFF
+CONNECT pin-276.pin1 -> back-1.hole16 STIFF
+CONNECT pin-277.pin1 -> back-1.hole24 STIFF
+CONNECT pin-278.pin2 -> back-1.hole22 STIFF
+CONNECT pin-279.pin2 -> back-1.hole13 STIFF

@@ -1,0 +1,96 @@
+{
+  "example_id": "42114-sidebars-step-03",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-135",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "pin-715",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-716",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-717",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-135",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-8, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-715",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-8, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-716",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-717",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-715's pin1 goes into conn-135's hole1 (turns)",
+      "axle2-35's axle1 goes into conn-135's axlehole1 (locked)",
+      "pin-717's pin1 goes into conn-133's hole1 (turns)",
+      "pin-716's pin1 goes into conn-134's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-715 spins on conn-135",
+      "axle2-35 carries conn-135",
+      "pin-717 spins on conn-133",
+      "pin-716 spins on conn-134"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,12 @@
+ADD panel-7 64393 yellow
+POS panel-7 -4.7 3.2 1 -0.246 0 0.969 -0.969 0 -0.246 0 -1 0
+ADD pin-452 2780 black
+POS pin-452 -2.8 2.7 0.5 0 0.246 0.969 0 0.969 -0.246 -1 0 0
+ADD pin-453 3673 lightbluishgrey
+POS pin-453 -0.85 2.25 0.5 0 0.246 0.969 0 0.969 -0.246 -1 0 0
+ADD beam9-14 40490 yellow
+POS beam9-14 0.1 2 0 0.246 0 0.969 0.969 0 -0.246 0 1 0
+CONNECT pin-452.pin1 -> panel-7.hole6 STIFF
+CONNECT pin-453.pin1 -> panel-7.hole8 TURNS
+CONNECT pin-452.pin2 -> beam9-14.hole2 STIFF
+CONNECT pin-453.pin2 -> beam9-14.hole4 TURNS

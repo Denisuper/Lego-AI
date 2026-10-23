@@ -1,0 +1,20 @@
+STEP 42
+ADD conn-35 59443 yellow
+POS conn-35 2 -3 -14.5 1 0 0 0 -1 0 0 0 -1
+ADD axle11-2 23948 yellow
+POS axle11-2 2 -3 -20 0 0 -1 0 -1 0 -1 0 0
+ADD conn-36 59443 yellow
+POS conn-36 2 -3 -25.5 1 0 0 0 -1 0 0 0 -1
+ADD axle3-10 4519 yellow
+POS axle3-10 -2 -3 -13 0 0 -1 0 -1 0 -1 0 0
+ADD conn-37 26287 lightbluishgrey
+POS conn-37 -2 -3 -15 -1 0 0 0 -1 0 0 0 1
+ADD axle12-1 3708 black
+POS axle12-1 -2 -3 -21.5 0 0 1 0 -1 0 1 0 0
+CONNECT axle11-2.axle1 -> conn-35.axlehole2 LOCKED
+CONNECT axle11-1.axle11 -> conn-35.axlehole1 LOCKED
+CONNECT axle11-2.axle11 -> conn-36.axlehole1 LOCKED
+CONNECT axle3-10.axle3 -> conn-37.axlehole1 LOCKED
+CONNECT axle12-1.axle12 -> conn-37.axlehole1 LOCKED
+CONNECT axle3-10.axle1 -> conn-11.axlehole1 LOCKED
+CONNECT axle3-10.axle2 -> beam-7.hole9 TURNS

@@ -1,0 +1,48 @@
+ADD pin-539 18651 black
+POS pin-539 0 0.5 2 0 1 0 -1 0 0 0 0 1
+ADD beam3-32 32523 lightbluishgrey
+POS beam3-32 0 1.5 2 0 0 -1 0 1 0 1 0 0
+ADD bush-14 32123b yellow
+POS bush-14 0 -0.75 2 0 1 0 0 0 1 1 0 0
+ADD pin-540 18651 black
+POS pin-540 0 -0.1 1 0 1 0 -1 0 0 0 0 1
+ADD beam3-33 32523 lightbluishgrey
+POS beam3-33 0 0.9 1 0 0 -1 0 1 0 1 0 0
+ADD bush-15 32123b yellow
+POS bush-15 0 -1.35 1 0 1 0 0 0 1 1 0 0
+ADD pin-541 18651 black
+POS pin-541 0 0.5 0 0 1 0 -1 0 0 0 0 1
+ADD beam3-34 32523 lightbluishgrey
+POS beam3-34 0 1.5 0 0 0 -1 0 1 0 1 0 0
+ADD bush-16 32123b yellow
+POS bush-16 0 -0.75 0 0 1 0 0 0 1 1 0 0
+ADD pin-542 18651 black
+POS pin-542 0 0.5 -1 0 1 0 -1 0 0 0 0 1
+ADD beam3-35 32523 lightbluishgrey
+POS beam3-35 0 1.5 -1 0 0 -1 0 1 0 1 0 0
+ADD bush-17 32123b yellow
+POS bush-17 0 -0.75 -1 0 1 0 0 0 1 1 0 0
+ADD pin-543 18651 black
+POS pin-543 0 0.5 -2 0 1 0 -1 0 0 0 0 1
+ADD beam3-36 32523 lightbluishgrey
+POS beam3-36 0 1.5 -2 0 0 -1 0 1 0 1 0 0
+ADD bush-18 32123b yellow
+POS bush-18 0 -0.75 -2 0 1 0 0 0 1 1 0 0
+ADD pin-544 18651 black
+POS pin-544 0 0 -3 0 1 0 -1 0 0 0 0 1
+ADD beam3-37 32523 lightbluishgrey
+POS beam3-37 0 1 -3 0 0 -1 0 1 0 1 0 0
+ADD bush-19 32123b yellow
+POS bush-19 0 -1.25 -3 0 1 0 0 0 1 1 0 0
+CONNECT pin-539.axle1 -> beam3-32.hole2 TURNS
+CONNECT pin-540.axle1 -> beam3-33.hole2 TURNS
+CONNECT pin-541.axle1 -> beam3-34.hole2 TURNS
+CONNECT pin-542.axle1 -> beam3-35.hole2 TURNS
+CONNECT pin-543.axle1 -> beam3-36.hole2 TURNS
+CONNECT pin-544.axle1 -> beam3-37.hole2 TURNS
+CONNECT pin-539.axle2 -> beam9-17.hole7 TURNS
+CONNECT pin-540.axle2 -> beam9-17.hole6 TURNS
+CONNECT pin-541.axle2 -> beam9-17.hole5 TURNS
+CONNECT pin-542.axle2 -> beam9-17.hole4 TURNS
+CONNECT pin-543.axle2 -> beam9-17.hole3 TURNS
+CONNECT pin-544.axle2 -> beam9-17.hole2 TURNS

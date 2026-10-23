@@ -1,0 +1,16 @@
+ADD beam7-20 32524 black
+POS beam7-20 0 -1 2 -1 0 0 0 1 0 0 0 -1
+ADD pin-605 4274 blue
+POS pin-605 0 -1.5 5 0 -1 0 -1 0 0 0 0 -1
+ADD pin-606 4274 blue
+POS pin-606 0 -1.5 2 0 -1 0 -1 0 0 0 0 -1
+ADD pin-607 4274 blue
+POS pin-607 0 -1.5 1 0 -1 0 -1 0 0 0 0 -1
+ADD pin-608 4274 blue
+POS pin-608 0 -1.5 0 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-605.pin1 -> beam7-20.hole1 TURNS
+CONNECT pin-606.pin1 -> beam7-20.hole4 TURNS
+CONNECT pin-607.pin1 -> beam7-20.hole5 TURNS
+CONNECT pin-608.pin1 -> beam7-20.hole6 TURNS
+CONNECT pin-600.pin3 -> beam7-20.hole7 STIFF
+CONNECT pin-604.pin3 -> beam7-20.hole2 STIFF

@@ -1,0 +1,12 @@
+ADD pin-438 87082 red
+POS pin-438 4 2 1 -0.969 0 0.246 -0.246 0 -0.969 0 -1 0
+ADD pin-439 6558 blue
+POS pin-439 4 2 1 0 -0.969 0.246 0 -0.246 -0.969 1 0 0
+ADD pin-440 27940 darkbluishgrey
+POS pin-440 4 2 2 0.969 0 0.246 0.246 0 -0.969 0 1 0
+ADD beam2-19 60483 lightbluishgrey
+POS beam2-19 3.05 1.75 2 -0.246 0.969 0 0.969 0.246 0 0 0 -1
+CONNECT pin-439.pin2 -> pin-438.hole1 STIFF
+CONNECT pin-439.pin3 -> pin-440.hole1 STIFF
+CONNECT pin-438.pin2 -> beam2-19.hole1 STIFF
+CONNECT pin-440.axle1 -> beam2-19.axlehole1 LOCKED

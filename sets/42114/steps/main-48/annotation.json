@@ -1,0 +1,126 @@
+{
+  "example_id": "42114-step-48",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 48,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-188",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-189",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-190",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam7-10",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "beam7-11",
+        "part_number": "32524",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-188",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-4, z=-27 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-189",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-6, z=-28 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-190",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-6, z=-31 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam7-10",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-3.6, z=-26.2 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam7-11",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-3, z=-34 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-189's pin1 goes into beam7-10's hole1 (stiff)",
+      "pin-160's pin1 goes into beam7-10's hole6 (stiff)",
+      "pin-117's pin3 goes into beam7-11's hole7 (stiff)",
+      "pin-168's pin2 goes into beam7-11's hole1 (stiff)",
+      "pin-179's pin1 goes into beam7-11's hole3 (stiff)",
+      "pin-180's pin1 goes into beam7-11's hole5 (stiff)",
+      "pin-188's pin1 goes into motor-2's hole6 (stiff)",
+      "pin-189's pin3 goes into beam7-7's hole7 (stiff)",
+      "pin-190's pin1 goes into beam7-7's hole4 (stiff)",
+      "pin-188's pin2 goes into beam3x5-13's hole7 (stiff)",
+      "pin-189's pin2 goes into beam3x5-13's hole4 (stiff)",
+      "pin-190's pin2 goes into beam3x5-13's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-10 holds pin-189",
+      "beam7-10 holds pin-160",
+      "beam7-11 holds pin-117",
+      "beam7-11 holds pin-168",
+      "beam7-11 holds pin-179",
+      "beam7-11 holds pin-180",
+      "motor-2 holds pin-188",
+      "beam7-7 holds pin-189",
+      "beam7-7 holds pin-190",
+      "beam3x5-13 holds pin-188",
+      "beam3x5-13 holds pin-189",
+      "beam3x5-13 holds pin-190"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

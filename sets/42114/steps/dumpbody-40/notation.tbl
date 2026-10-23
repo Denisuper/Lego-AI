@@ -1,0 +1,12 @@
+ADD beam11-32 32525 yellow
+POS beam11-32 -12 -7 26 -1 0 0 0 -1 0 0 0 1
+ADD beam11-33 32525 yellow
+POS beam11-33 12 -7 26 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-835.pin1 -> beam11-32.hole2 STIFF
+CONNECT pin-836.pin1 -> beam11-32.hole1 STIFF
+CONNECT pin-894.pin2 -> beam11-32.hole8 STIFF
+CONNECT pin-895.pin2 -> beam11-32.hole11 STIFF
+CONNECT pin-844.pin2 -> beam11-33.hole2 STIFF
+CONNECT pin-845.pin2 -> beam11-33.hole1 STIFF
+CONNECT pin-888.pin1 -> beam11-33.hole8 STIFF
+CONNECT pin-889.pin1 -> beam11-33.hole11 STIFF

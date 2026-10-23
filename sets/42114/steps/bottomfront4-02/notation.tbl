@@ -1,0 +1,22 @@
+ADD beam5-36 11478 black
+POS beam5-36 2.75 0 -3 0 1 0 -1 0 0 0 0 1
+ADD bush-20 32123b yellow
+POS bush-20 3.25 0 -1 0 0 1 -1 0 0 0 -1 0
+ADD conn-103 32184 yellow
+POS conn-103 3 -1 0 -1 0 0 0 1 0 0 0 -1
+ADD conn-104 32184 yellow
+POS conn-104 -3 -1 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-576 43093 blue
+POS pin-576 -2.5 -2 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-577 43093 blue
+POS pin-577 2.5 -2 0 1 0 0 0 1 0 0 0 1
+ADD pin-578 15100 black
+POS pin-578 2 -2 0 0 1 0 0 0 1 1 0 0
+ADD pin-579 15100 black
+POS pin-579 -2 -2 0 0 1 0 0 0 1 1 0 0
+CONNECT axle2-25.axle1 -> beam5-36.axlehole2 LOCKED
+CONNECT axle2-25.axle1 -> bush-20.axlehole1 LOCKED
+CONNECT axle3-26.axle1 -> conn-103.axlehole2 LOCKED
+CONNECT axle3-27.axle3 -> conn-104.axlehole2 LOCKED
+CONNECT pin-577.axle1 -> pin-578.hole1 TURNS
+CONNECT pin-576.axle1 -> pin-579.hole1 TURNS

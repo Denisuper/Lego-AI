@@ -1,0 +1,11 @@
+ADD conn-137 32039 black
+POS conn-137 0 0 0 1 0 0 0 0 -1 0 1 0
+ADD axle8-3 3707 black
+POS axle8-3 0 -3.5 0 0 0 -1 1 0 0 0 -1 0
+ADD beam-54 18654 black
+POS beam-54 0 -1 0 0 0 -1 0 1 0 1 0 0
+ADD beam4-3 2825 black
+POS beam4-3 -3 -2 0 0 0 1 0 1 0 -1 0 0
+CONNECT axle8-3.axle8 -> conn-137.axlehole2 LOCKED
+CONNECT axle8-3.axle7 -> beam-54.hole1 TURNS
+CONNECT axle8-3.axle6 -> beam4-3.axlehole2 LOCKED

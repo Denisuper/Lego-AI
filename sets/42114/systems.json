@@ -1,0 +1,63 @@
+{
+  "model": "LEGO Technic 42114 6x6 Volvo Articulated Hauler",
+  "what_the_model_does": "A 6x6 articulated dump truck controlled via Control+ motors. Features an articulated steering joint, a 3-speed automatic gearbox, 6-wheel drive with pendular rear suspension, and a heavy-duty tipping bed driven by linear actuators.",
+  "open_questions": [],
+  "systems": [
+    {
+      "id": "chassis",
+      "name": "Front and rear articulated chassis",
+      "real_machine": "The heavy-duty front cab frame and rear payload frame connected by an articulated pivot joint.",
+      "purpose": "Provides a rigid structural spine for the cab, motors, gearbox, drive shafts, axles, and dump body.",
+      "depends_on": [],
+      "feeds": ["drivetrain", "steering", "tipper_bed"],
+      "why_built_first": "Serves as the foundation that carries the electronics, motors, and suspension.",
+      "parts": {
+        "beam.*": "Structural frame member holding axles, pins, and motors.",
+        "pin-.*": "Friction or frictionless connector securing structural frame joints.",
+        "conn.*": "Connector joint holding axles and frame beams together.",
+        "plate.*": "Structural plate reinforcing frame joints.",
+        "tile.*": "Decorative trim or smooth surface tile."
+      }
+    },
+    {
+      "id": "drivetrain",
+      "name": "6x6 Drivetrain and 3-speed gearbox",
+      "real_machine": "The engine, automatic transmission, transfer case, drive shafts, differentials, and 6-wheel drive system.",
+      "purpose": "Transfers motor drive through a 3-speed transmission to all six wheels with pendular rear axle suspension.",
+      "depends_on": ["chassis"],
+      "feeds": [],
+      "why_built_first": "Gearbox and motors must be enclosed within the central chassis during early build steps.",
+      "parts": {
+        "gear.*": "Transmission and drive gear passing torque from motors to drive shafts.",
+        "axle.*": "Drive shaft transferring rotational power along the vehicle.",
+        "bush.*": "Spacer securing gears and axles along shafts.",
+        "wheel.*": "Rim holding heavy-duty tractor tire.",
+        "tyre.*": "Rubber tire providing traction on all six wheels."
+      }
+    },
+    {
+      "id": "steering",
+      "name": "Articulated steering mechanism",
+      "real_machine": "Hydraulic steering cylinders that pivot the front cab relative to the rear trailer.",
+      "purpose": "Pivots the front chassis section relative to the rear chassis section to steer the vehicle.",
+      "depends_on": ["chassis"],
+      "feeds": [],
+      "why_built_first": "Joins the front and rear frame sections together at the central articulated joint.",
+      "parts": {
+        "part-.*": "Steering linkage or structural component in the articulated joint."
+      }
+    },
+    {
+      "id": "tipper_bed",
+      "name": "Payload dump body and linear actuators",
+      "real_machine": "The rear tipping dump bed and hydraulic hoist rams.",
+      "purpose": "Lifts and dumps heavy cargo from the rear bed using motor-driven linear actuators.",
+      "depends_on": ["chassis", "drivetrain"],
+      "feeds": [],
+      "why_built_first": "Mounted on top of the rear frame after the drivetrain and suspension are assembled.",
+      "parts": {
+        "panel.*": "Side or floor panel of the heavy-duty dump bed."
+      }
+    }
+  ]
+}

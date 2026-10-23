@@ -1,0 +1,206 @@
+{
+  "example_id": "42114-bonnet-step-02",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam11-20",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "beam11-21",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "panel-20",
+        "part_number": "64393",
+        "count": 1
+      },
+      {
+        "name": "panel-21",
+        "part_number": "64681",
+        "count": 1
+      },
+      {
+        "name": "pin-706",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-707",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-708",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-709",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-710",
+        "part_number": "15100",
+        "count": 1
+      },
+      {
+        "name": "pin-711",
+        "part_number": "15100",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-20",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam11-21",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "panel-20",
+        "part_number": "64393",
+        "catalog_name": "Technic Panel Fairing #6 Long Smooth, Side B",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "panel-21",
+        "part_number": "64681",
+        "catalog_name": "Technic Panel Fairing #5 Long Smooth, Side A",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-706",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0.5, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-707",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0.5, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-708",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-709",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-710",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=0, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-711",
+        "part_number": "15100",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0, z=6 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-701's pin2 goes into beam11-20's hole3 (stiff)",
+      "pin-702's pin2 goes into beam11-20's hole5 (stiff)",
+      "pin-703's pin2 goes into beam11-20's hole9 (stiff)",
+      "pin-699's pin2 goes into beam11-21's hole3 (stiff)",
+      "pin-700's pin2 goes into beam11-21's hole5 (stiff)",
+      "pin-704's pin1 goes into beam11-21's hole9 (stiff)",
+      "pin-711's pin1 goes into panel-20's hole4 (stiff)",
+      "pin-701's pin3 goes into panel-20's hole6 (stiff)",
+      "pin-702's pin3 goes into panel-20's hole8 (stiff)",
+      "pin-710's pin1 goes into panel-21's hole4 (stiff)",
+      "pin-699's pin3 goes into panel-21's hole6 (stiff)",
+      "pin-700's pin3 goes into panel-21's hole8 (stiff)",
+      "pin-706's pin1 goes into panel-19's hole34 (stiff)",
+      "pin-707's pin1 goes into panel-19's hole35 (stiff)",
+      "pin-708's pin1 goes into panel-19's hole1 (stiff)",
+      "pin-708's pin1 goes into panel-19's hole6 (stiff)",
+      "pin-709's pin1 goes into panel-19's hole5 (stiff)",
+      "pin-709's pin1 goes into panel-19's hole7 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-20 holds pin-701",
+      "beam11-20 holds pin-702",
+      "beam11-20 holds pin-703",
+      "beam11-21 holds pin-699",
+      "beam11-21 holds pin-700",
+      "beam11-21 holds pin-704",
+      "panel-20 holds pin-711",
+      "panel-20 holds pin-701",
+      "panel-20 holds pin-702",
+      "panel-21 holds pin-710",
+      "panel-21 holds pin-699",
+      "panel-21 holds pin-700",
+      "panel-19 holds pin-706",
+      "panel-19 holds pin-707",
+      "panel-19 holds pin-708",
+      "panel-19 holds pin-709"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,7 @@
+ADD axle2-31 32062 red
+POS axle2-31 1.95 -3 6.7 0 0.949 0.316 -1 0 0 0 -0.316 0.949
+ADD conn-126 92907 black
+POS conn-126 1.65 -3 5.75 0 0.316 -0.949 -1 0 0 0 0.949 0.316
+CONNECT axle2-31.axle1 -> conn-126.axlehole3 LOCKED
+CONNECT axle2-31.axle2 -> conn-126.axlehole4 LOCKED
+CONNECT axle2-31.axle1 -> beam2-42.axlehole1 LOCKED

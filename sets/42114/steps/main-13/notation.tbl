@@ -1,0 +1,19 @@
+STEP 13
+ADD gear16-10 94925 lightbluishgrey
+POS gear16-10 0 -5 -8 1 0 0 0 -1 0 0 0 -1
+ADD beam5-1 32316 lightbluishgrey
+POS beam5-1 2 -3 -8 -1 0 0 0 0 1 0 1 0
+ADD axle8-1 55013 darkbluishgrey
+POS axle8-1 2 -5 -4.5 0 -1 0 0 0 1 -1 0 0
+ADD gear16-11 94925 lightbluishgrey
+POS gear16-11 2 -5 -5 -1 0 0 0 -1 0 0 0 1
+CONNECT axle5-1.axle2 -> gear16-10.axlehole1 LOCKED
+CONNECT axle8-1.axle8 -> beam5-1.hole1 TURNS
+CONNECT pin-34.pin3 -> beam5-1.hole5 STIFF
+CONNECT axle11-1.axle5 -> beam5-1.hole3 TURNS
+CONNECT axle8-1.axle5 -> gear16-11.axlehole1 LOCKED
+CONNECT axle8-1.axle4 -> beam-4.hole20 TURNS
+CONNECT axle8-1.axle6 -> beam7-2.hole7 TURNS
+CONNECT axle8-1.axle7 -> beam7-3.hole7 TURNS
+MESH gear16-7.teeth gear16-11.teeth
+RATIO gear16-7 gear16-11 16/16

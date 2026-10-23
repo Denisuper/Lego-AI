@@ -1,0 +1,80 @@
+{
+  "example_id": "42114-motors-step-06",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "pin-175",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-176",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-3, z=11.5 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-175",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-2, z=4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-176",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-4, z=4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-6's axle1 goes into motor-1's axlehole1 (locked)",
+      "pin-175's pin1 goes into motor-1's hole32 (stiff)",
+      "pin-176's pin1 goes into motor-1's hole31 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-6 carries motor-1",
+      "motor-1 holds pin-175",
+      "motor-1 holds pin-176"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

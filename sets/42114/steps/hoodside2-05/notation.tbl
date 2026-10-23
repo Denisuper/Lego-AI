@@ -1,0 +1,15 @@
+ADD conn-125 42003 black
+POS conn-125 0.6 0 6.1 0 -0.415 -0.91 1 0 0 0 -0.91 0.415
+ADD pin-685 4274 lightbluishgrey
+POS pin-685 0.15 0 6.3 -0.91 -0.415 0 0 0 -1 0.415 -0.91 0
+ADD pin-686 4274 lightbluishgrey
+POS pin-686 -0.3 0 5.4 -0.91 -0.415 0 0 0 -1 0.415 -0.91 0
+ADD groove-16 98138 transclear
+POS groove-16 -0.65 0 5.55 0.415 0.91 0 0 0 1 0.91 -0.415 0
+ADD groove-17 98138 transclear
+POS groove-17 -0.25 0 6.45 0.415 0.91 0 0 0 1 0.91 -0.415 0
+CONNECT pin-685.pin2 -> conn-125.hole1 TURNS
+CONNECT pin-686.pin2 -> conn-125.hole2 TURNS
+CONNECT axle4-34.axle1 -> conn-125.axlehole1 LOCKED
+CONNECT pin-686.pin2 -> groove-16.hole1 TURNS
+CONNECT pin-685.pin2 -> groove-17.hole1 TURNS

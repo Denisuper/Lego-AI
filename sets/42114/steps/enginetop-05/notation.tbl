@@ -1,0 +1,36 @@
+ADD beam9-18 40490 green
+POS beam9-18 -1 0 0 1 0 0 0 1 0 0 0 1
+ADD beam9-19 40490 green
+POS beam9-19 1 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-553 4274 blue
+POS pin-553 -1 -0.5 3 0 1 0 -1 0 0 0 0 1
+ADD pin-554 4274 blue
+POS pin-554 -1 -0.5 1 0 1 0 -1 0 0 0 0 1
+ADD pin-555 4274 blue
+POS pin-555 -1 -0.5 -1 0 1 0 -1 0 0 0 0 1
+ADD pin-556 4274 blue
+POS pin-556 -1 -0.5 -3 0 1 0 -1 0 0 0 0 1
+ADD pin-557 4274 blue
+POS pin-557 1 -0.5 3 0 1 0 -1 0 0 0 0 1
+ADD pin-558 4274 blue
+POS pin-558 1 -0.5 1 0 1 0 -1 0 0 0 0 1
+ADD pin-559 4274 blue
+POS pin-559 1 -0.5 -1 0 1 0 -1 0 0 0 0 1
+ADD pin-560 4274 blue
+POS pin-560 1 -0.5 -3 0 1 0 -1 0 0 0 0 1
+CONNECT pin-553.pin1 -> beam9-18.hole8 TURNS
+CONNECT pin-554.pin1 -> beam9-18.hole6 TURNS
+CONNECT pin-555.pin1 -> beam9-18.hole4 TURNS
+CONNECT pin-556.pin1 -> beam9-18.hole2 TURNS
+CONNECT pin-545.pin2 -> beam9-18.hole1 STIFF
+CONNECT pin-550.pin3 -> beam9-18.hole9 STIFF
+CONNECT pin-557.pin1 -> beam9-19.hole8 TURNS
+CONNECT pin-558.pin1 -> beam9-19.hole6 TURNS
+CONNECT pin-559.pin1 -> beam9-19.hole4 TURNS
+CONNECT pin-560.pin1 -> beam9-19.hole2 TURNS
+CONNECT pin-546.pin2 -> beam9-19.hole1 STIFF
+CONNECT pin-549.pin3 -> beam9-19.hole9 STIFF
+CONNECT pin-554.pin1 -> beam3-33.hole3 TURNS
+CONNECT pin-558.pin1 -> beam3-33.hole1 TURNS
+CONNECT pin-556.pin1 -> beam3-37.hole3 TURNS
+CONNECT pin-560.pin1 -> beam3-37.hole1 TURNS

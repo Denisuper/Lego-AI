@@ -1,0 +1,6 @@
+ATTACH hoodside1
+ATTACH hoodside2
+CONNECT pin-682.pin1 -> beam3x5-26.hole1 STIFF
+CONNECT pin-683.pin1 -> beam3x5-26.hole3 STIFF
+CONNECT pin-667.pin1 -> beam3x5-27.hole1 STIFF
+CONNECT pin-668.pin1 -> beam3x5-27.hole3 STIFF

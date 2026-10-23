@@ -1,0 +1,14 @@
+ADD beam5-30 32316 black
+POS beam5-30 0 0 0 0 1 0 -1 0 0 0 0 1
+ADD axle4-20 87083 darkbluishgrey
+POS axle4-20 -1.5 0 -1 1 0 0 0 1 0 0 0 1
+ADD beam2x4-14 32140 black
+POS beam2x4-14 -1 0 -1 0 -1 0 1 0 0 0 0 1
+ADD pin-397 6558 blue
+POS pin-397 -2 0 0 -1 0 0 0 -1 0 0 0 1
+ADD pin-398 6558 blue
+POS pin-398 -2 0 2 -1 0 0 0 -1 0 0 0 1
+CONNECT axle4-20.axle4 -> beam5-30.hole2 TURNS
+CONNECT axle4-20.axle3 -> beam2x4-14.axlehole1 LOCKED
+CONNECT pin-397.pin1 -> beam2x4-14.hole1 STIFF
+CONNECT pin-398.pin1 -> beam2x4-14.hole3 STIFF

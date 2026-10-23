@@ -1,0 +1,9 @@
+ADD conn-106 42003 black
+POS conn-106 0 0 0 0 0 1 -1 0 0 0 -1 0
+ADD pin-612 18651 black
+POS pin-612 0 0 1 0 0 1 -1 0 0 0 -1 0
+ADD beam3-41 6632 black
+POS beam3-41 -2 -0.75 1 0 0 1 0 1 0 -1 0 0
+ADD beam3-42 6632 black
+POS beam3-42 -2 -1.25 1 0 0 1 0 1 0 -1 0 0
+CONNECT pin-612.axle2 -> conn-106.axlehole1 LOCKED

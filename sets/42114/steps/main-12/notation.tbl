@@ -1,0 +1,18 @@
+STEP 12
+ADD beam7-3 32524 yellow
+POS beam7-3 -1 -5 -7 0 0 1 -1 0 0 0 -1 0
+ADD axle9-1 60485 lightbluishgrey
+POS axle9-1 -2 -5 -5 0 0 1 0 1 0 -1 0 0
+ADD gear16-9 18946 red
+POS gear16-9 -2 -5 -8 0.982 -0.191 0 -0.191 -0.982 0 0 0 -1
+ADD conn-8 26287 lightbluishgrey
+POS conn-8 -2 -5 -10 1 0 0 0 -1 0 0 0 -1
+ADD bush-3 3713 lightbluishgrey
+POS bush-3 -2 -5 -6 1 0 0 0 -1 0 0 0 -1
+CONNECT axle9-1.axle7 -> beam7-3.hole3 TURNS
+CONNECT axle5-1.axle3 -> beam7-3.hole5 TURNS
+CONNECT axle9-1.axle8 -> gear16-9.hole1 TURNS
+CONNECT axle9-1.axle9 -> conn-8.axlehole1 LOCKED
+CONNECT axle9-1.axle6 -> bush-3.axlehole1 LOCKED
+CONNECT axle9-1.axle4 -> beam-4.hole16 TURNS
+CONNECT axle9-1.axle5 -> beam3x5-3.hole3 TURNS

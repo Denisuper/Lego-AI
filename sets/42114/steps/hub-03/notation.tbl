@@ -1,0 +1,23 @@
+ADD pin-488 15100 black
+POS pin-488 4 1 -2 0 0 1 -1 0 0 0 -1 0
+ADD pin-489 6558 blue
+POS pin-489 4 1 -2 0 -1 0 0 0 1 -1 0 0
+ADD pin-490 62462 metallicsilver
+POS pin-490 4 1 -3.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-491 62462 metallicsilver
+POS pin-491 4 1 -0.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-492 2780 black
+POS pin-492 4 1 0.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-493 62462 metallicsilver
+POS pin-493 4 1 1.5 0 1 0 0 0 -1 -1 0 0
+ADD pin-494 43093 blue
+POS pin-494 4 1 -4.5 0 1 0 0 0 -1 -1 0 0
+ADD holes-1 25214 metallicsilver
+POS holes-1 4 1 -6 0 -1 0 0 0 1 -1 0 0
+CONNECT pin-489.pin2 -> pin-488.hole1 STIFF
+CONNECT pin-489.pin3 -> pin-490.hole1 STIFF
+CONNECT pin-494.axle1 -> pin-490.hole1 TURNS
+CONNECT pin-489.pin1 -> pin-491.hole1 STIFF
+CONNECT pin-492.pin2 -> pin-491.hole1 STIFF
+CONNECT pin-492.pin1 -> pin-493.hole1 STIFF
+CONNECT pin-488.pin1 -> hub-1.hole8 STIFF

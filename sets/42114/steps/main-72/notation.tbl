@@ -1,0 +1,12 @@
+STEP 72
+ADD axle5-29 32073 yellow
+POS axle5-29 0 -3 -62 0 0 -1 0 1 0 1 0 0
+ADD bush-24 32123b yellow
+POS bush-24 0 -3 -63.75 1 0 0 0 1 0 0 0 1
+ADD bush-25 32123b yellow
+POS bush-25 0 -3 -64.25 1 0 0 0 1 0 0 0 1
+CONNECT axle5-29.axle1 -> bush-24.axlehole1 LOCKED
+CONNECT axle5-29.axle1 -> bush-25.axlehole1 LOCKED
+CONNECT axle5-29.axle5 -> conn-73.axlehole1 LOCKED
+CONNECT axle5-29.axle2 -> conn-101.hole1 TURNS
+CONNECT axle5-29.axle3 -> conn-102.hole1 TURNS

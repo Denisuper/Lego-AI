@@ -1,0 +1,4 @@
+ATTACH cabin2
+CONNECT pin-331.axle1 -> beam-31.hole6 TURNS
+CONNECT pin-332.axle1 -> beam-32.hole7 TURNS
+CONNECT axle5-23.axle1 -> pin-322.hole1 TURNS

@@ -1,0 +1,23 @@
+ADD groove-1 3069b yellow
+POS groove-1 -1.5 0 4.9 -1 0 0 0 0 -1 0 -1 0
+ADD groove-2 3069b yellow
+POS groove-2 1.5 0 4.9 -1 0 0 0 0 -1 0 -1 0
+ADD cclip-5 15712 yellow
+POS cclip-5 -3 0 4.9 0 0 -1 1 0 0 0 -1 0
+ADD cclip-6 15712 yellow
+POS cclip-6 0 0 4.9 0 0 -1 1 0 0 0 -1 0
+ADD cclip-7 15712 yellow
+POS cclip-7 3 0 4.9 0 0 -1 1 0 0 0 -1 0
+ADD pin-528 4274 blue
+POS pin-528 -5.5 0 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-529 4274 blue
+POS pin-529 -5.5 0 3 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-522.pin2 -> groove-1.hole2 TURNS
+CONNECT pin-523.pin2 -> groove-1.hole1 TURNS
+CONNECT pin-525.pin2 -> groove-2.hole2 TURNS
+CONNECT pin-526.pin2 -> groove-2.hole1 TURNS
+CONNECT pin-521.pin2 -> cclip-5.hole1 TURNS
+CONNECT pin-524.pin2 -> cclip-6.hole1 TURNS
+CONNECT pin-527.pin2 -> cclip-7.hole1 TURNS
+CONNECT pin-528.pin1 -> panel-10.hole9 TURNS
+CONNECT pin-529.pin1 -> panel-11.hole9 TURNS

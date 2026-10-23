@@ -1,0 +1,6 @@
+STEP 57
+ADD beam5-35 32316 yellow
+POS beam5-35 -10 -8 -44 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-420.pin1 -> beam5-35.hole5 STIFF
+CONNECT pin-421.pin1 -> beam5-35.hole3 STIFF
+CONNECT pin-426.axle1 -> beam5-35.hole1 TURNS

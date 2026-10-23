@@ -1,0 +1,13 @@
+ADD beam9-16 6629 black
+POS beam9-16 0 0 0 0 1 0 1 0 0 0 0 -1
+ADD pin-503 11214 red
+POS pin-503 1 2.4 -6.8 -1 0 0 0 -0.8 0.6 0 0.6 0.8
+ADD pin-504 11214 red
+POS pin-504 0 0 -4 -1 0 0 0 -1 0 0 0 1
+ADD pin-505 6558 blue
+POS pin-505 0 0 -2 1 0 0 0 -1 0 0 0 -1
+ADD beam2x4-21 32140 black
+POS beam2x4-21 -1 0 -4 0 -1 0 1 0 0 0 0 1
+CONNECT pin-504.pin1 -> beam9-16.hole4 STIFF
+CONNECT pin-505.pin2 -> beam9-16.hole2 STIFF
+CONNECT pin-505.pin1 -> beam2x4-21.hole2 STIFF

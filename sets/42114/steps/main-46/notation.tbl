@@ -1,0 +1,27 @@
+STEP 46
+ADD pin-182 6558 blue
+POS pin-182 4 -6 -28 -1 0 0 0 1 0 0 0 -1
+ADD pin-183 2780 black
+POS pin-183 3.5 -6 -31 -1 0 0 0 1 0 0 0 -1
+ADD beam3x5-12 32526 yellow
+POS beam3x5-12 4 -6 -31 0 -1 0 1 0 0 0 0 1
+ADD beam7-8 32524 yellow
+POS beam7-8 4 -3 -34 0 -1 0 0 0 1 -1 0 0
+ADD pin-184 2780 black
+POS pin-184 3.5 -4 -27 -1 0 0 0 0 1 0 1 0
+ADD beam3x5-13 32526 yellow
+POS beam3x5-13 -4 -6 -31 0 -1 0 1 0 0 0 0 1
+ADD beam7-9 32524 yellow
+POS beam7-9 5 -3.6 -26.2 0 -1 0 0.6 0 0.8 -0.8 0 0.6
+CONNECT pin-182.pin2 -> beam3x5-12.hole4 STIFF
+CONNECT pin-183.pin1 -> beam3x5-12.hole1 STIFF
+CONNECT pin-184.pin1 -> beam3x5-12.hole7 STIFF
+CONNECT pin-118.pin3 -> beam7-8.hole7 STIFF
+CONNECT pin-167.pin2 -> beam7-8.hole1 STIFF
+CONNECT pin-175.pin2 -> beam7-8.hole3 STIFF
+CONNECT pin-176.pin2 -> beam7-8.hole5 STIFF
+CONNECT pin-182.pin1 -> beam7-9.hole1 STIFF
+CONNECT pin-156.pin1 -> beam7-9.hole6 STIFF
+CONNECT pin-184.pin2 -> motor-1.hole8 STIFF
+CONNECT pin-182.pin3 -> beam7-6.hole7 STIFF
+CONNECT pin-183.pin2 -> beam7-6.hole4 STIFF

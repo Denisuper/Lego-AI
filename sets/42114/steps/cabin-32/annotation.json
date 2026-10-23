@@ -1,0 +1,120 @@
+{
+  "example_id": "42114-cabin-step-32",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 32,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam15-8",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "pin-323",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-324",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-325",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam5-22",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam15-8",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-11, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-323",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-6, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-324",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-10, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-325",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.5, y=-11, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "beam5-22",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-4, z=-4 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-323's pin2 goes into beam15-8's hole13 (stiff)",
+      "pin-324's pin2 goes into beam15-8's hole9 (stiff)",
+      "pin-325's pin2 goes into beam15-8's hole8 (stiff)",
+      "pin-297's pin2 goes into beam15-8's hole11 (stiff)",
+      "pin-300's pin2 goes into beam15-8's hole15 (stiff)",
+      "pin-323's pin1 goes into beam5-22's hole1 (stiff)",
+      "pin-224's pin3 goes into beam5-22's hole4 (stiff)",
+      "pin-226's pin2 goes into beam5-22's hole5 (stiff)",
+      "pin-300's pin3 goes into beam5-22's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-8 holds pin-323",
+      "beam15-8 holds pin-324",
+      "beam15-8 holds pin-325",
+      "beam15-8 holds pin-297",
+      "beam15-8 holds pin-300",
+      "beam5-22 holds pin-323",
+      "beam5-22 holds pin-224",
+      "beam5-22 holds pin-226",
+      "beam5-22 holds pin-300"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

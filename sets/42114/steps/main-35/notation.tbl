@@ -1,0 +1,15 @@
+STEP 35
+ADD axle5-8 15462 reddishbrown
+POS axle5-8 -5 -1 -14 0 0 1 1 0 0 0 1 0
+ADD axle5-9 15462 reddishbrown
+POS axle5-9 5 -1 -14 0 0 1 1 0 0 0 1 0
+CONNECT axle5-8.axle1 -> beam3-1.hole1 TURNS
+CONNECT axle5-9.axle1 -> beam3-2.hole3 TURNS
+CONNECT axle5-8.axle5 -> beam11-7.hole1 TURNS
+CONNECT axle5-9.axle5 -> beam11-7.hole11 TURNS
+CONNECT axle5-9.axle4 -> conn-19.axlehole1 LOCKED
+CONNECT axle5-9.axle2 -> conn-21.axlehole1 LOCKED
+CONNECT axle5-8.axle2 -> conn-29.axlehole1 LOCKED
+CONNECT axle5-8.axle4 -> conn-31.axlehole1 LOCKED
+CONNECT axle5-8.axle3 -> housing-1.axlehole3 LOCKED
+CONNECT axle5-9.axle3 -> housing-1.axlehole3 LOCKED

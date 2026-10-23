@@ -1,0 +1,13 @@
+STEP 19
+ADD bush-4 3713 lightbluishgrey
+POS bush-4 -2 -1 -12 0 1 0 -1 0 0 0 0 1
+ADD gear16-16 18946 red
+POS gear16-16 -2 -5 -12 0.982 -0.191 0 -0.191 -0.982 0 0 0 -1
+ADD gear16-17 18946 red
+POS gear16-17 0 -3 -12 1 0 0 0 1 0 0 0 1
+ADD gear16-18 18946 red
+POS gear16-18 2 -3 -12 0.982 -0.191 0 -0.191 -0.982 0 0 0 -1
+CONNECT axle3-5.axle2 -> bush-4.axlehole1 LOCKED
+CONNECT axle3-4.axle2 -> gear16-16.hole1 TURNS
+CONNECT axle5-4.axle2 -> gear16-17.hole1 TURNS
+CONNECT axle11-1.axle9 -> gear16-18.hole1 TURNS

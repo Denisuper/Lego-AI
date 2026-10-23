@@ -1,0 +1,35 @@
+ADD part-18 3666 yellow
+POS part-18 -5.9 0 -0.5 0 1 0 0 0 -1 -1 0 0
+ADD part-19 3623 yellow
+POS part-19 -6.3 0 -2 0 1 0 0 0 -1 -1 0 0
+ADD part-20 3710 yellow
+POS part-20 -6.3 0 1.5 0 1 0 0 0 -1 -1 0 0
+ADD part-21 3024 yellow
+POS part-21 -5.9 0 3 0 1 0 0 0 -1 -1 0 0
+ADD stud-1 28192 yellow
+POS stud-1 -6.7 0 -3 0 1 0 -1 0 0 0 0 1
+ADD stud-2 28192 yellow
+POS stud-2 -6.7 0 3 0 1 0 1 0 0 0 0 -1
+ADD part-22 63864 yellow
+POS part-22 -6.7 0 0 0 1 0 0 0 1 1 0 0
+ADD cclip-10 15712 yellow
+POS cclip-10 -6.7 0 2 0 1 0 -1 0 0 0 0 1
+ADD cclip-11 15712 yellow
+POS cclip-11 -6.7 0 -2 0 1 0 -1 0 0 0 0 1
+CONNECT pin-528.pin2 -> part-18.hole3 TURNS
+CONNECT side-1.pin2 -> part-18.hole6 STIFF
+CONNECT part-18.pin4 -> part-19.hole1 STIFF
+CONNECT part-18.pin5 -> part-19.hole2 STIFF
+CONNECT part-18.pin6 -> part-19.hole3 STIFF
+CONNECT part-18.pin1 -> part-20.hole2 STIFF
+CONNECT part-18.pin2 -> part-20.hole3 STIFF
+CONNECT part-18.pin3 -> part-20.hole4 STIFF
+CONNECT part-21.pin1 -> part-20.hole1 STIFF
+CONNECT pin-529.pin2 -> part-21.hole1 TURNS
+CONNECT part-19.pin3 -> stud-1.hole2 STIFF
+CONNECT part-20.pin1 -> stud-2.hole2 STIFF
+CONNECT part-19.pin1 -> part-22.hole1 STIFF
+CONNECT part-20.pin4 -> part-22.hole2 STIFF
+CONNECT part-20.pin3 -> part-22.hole3 STIFF
+CONNECT part-20.pin2 -> cclip-10.hole1 STIFF
+CONNECT part-19.pin2 -> cclip-11.hole1 STIFF

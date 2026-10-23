@@ -1,0 +1,16 @@
+ADD panel-45 15458 yellow
+POS panel-45 10.4 -1.8 31 0 0.6 0.8 0 0.8 -0.6 -1 0 0
+ADD pin-886 2780 black
+POS pin-886 9.2 -0.9 29 -0.8 0.48 -0.36 0.6 0.64 -0.48 0 -0.6 -0.8
+ADD pin-887 2780 black
+POS pin-887 9.2 -0.9 34 -0.8 0.48 -0.36 0.6 0.64 -0.48 0 -0.6 -0.8
+ADD panel-46 18945 yellow
+POS panel-46 7.2 0.6 32 0 0.6 0.8 0 0.8 -0.6 -1 0 0
+CONNECT pin-886.pin1 -> panel-45.hole11 STIFF
+CONNECT pin-887.pin1 -> panel-45.hole5 STIFF
+CONNECT pin-877.pin1 -> panel-45.hole16 STIFF
+CONNECT pin-878.pin1 -> panel-45.hole15 STIFF
+CONNECT pin-886.pin2 -> panel-46.hole13 STIFF
+CONNECT pin-887.pin2 -> panel-46.hole7 STIFF
+CONNECT pin-863.pin1 -> panel-46.hole19 STIFF
+CONNECT pin-863.axle2 -> panel-46.hole20 TURNS

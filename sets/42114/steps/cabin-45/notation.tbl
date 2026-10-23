@@ -1,0 +1,10 @@
+ATTACH bottomfront1
+ATTACH bottomfront2
+CONNECT pin-360.pin1 -> panel-5.hole6 STIFF
+CONNECT pin-361.pin1 -> panel-5.hole9 STIFF
+CONNECT pin-394.pin1 -> panel-5.hole13 STIFF
+CONNECT pin-395.axle1 -> panel-5.hole10 TURNS
+CONNECT pin-358.pin1 -> panel-8.hole6 STIFF
+CONNECT pin-359.pin1 -> panel-8.hole9 STIFF
+CONNECT pin-413.pin2 -> panel-8.hole13 STIFF
+CONNECT pin-414.axle1 -> panel-8.hole10 TURNS

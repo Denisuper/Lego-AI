@@ -1,0 +1,13 @@
+ADD double-3 3043 black
+POS double-3 0.5 -1.7 -3.5 -1 0 0 0 1 0 0 0 -1
+ADD double-4 3043 black
+POS double-4 0.5 -1.7 -1.5 -1 0 0 0 1 0 0 0 -1
+ADD pin-510 11214 red
+POS pin-510 -1 0 0 1 0 0 0 1 0 0 0 1
+ADD conn-92 6536 black
+POS conn-92 -1 -0.8 0.6 0 0 1 -0.6 0.8 0 -0.8 -0.6 0
+CONNECT undersid-3.pin1 -> double-3.hole1 STIFF
+CONNECT undersid-3.pin2 -> double-3.hole2 STIFF
+CONNECT undersid-4.pin1 -> double-4.hole1 STIFF
+CONNECT undersid-4.pin2 -> double-4.hole2 STIFF
+CONNECT pin-510.pin1 -> conn-92.hole1 STIFF

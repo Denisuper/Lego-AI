@@ -1,0 +1,11 @@
+ADD beam2x4-28 32140 yellow
+POS beam2x4-28 0 0 0 0 -1 0 -1 0 0 0 0 -1
+ADD pin-920 18651 black
+POS pin-920 0 0 0 -1 0 0 0 1 0 0 0 -1
+ADD pin-921 6558 blue
+POS pin-921 0 -1 -3 -1 0 0 0 0.923 0.385 0 0.385 -0.923
+ADD pin-922 6558 blue
+POS pin-922 0 0 -3 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-920.axle2 -> beam2x4-28.axlehole1 LOCKED
+CONNECT pin-921.pin2 -> beam2x4-28.hole4 STIFF
+CONNECT pin-922.pin2 -> beam2x4-28.hole3 STIFF

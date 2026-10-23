@@ -1,0 +1,25 @@
+STEP 34
+ADD pin-142 11214 red
+POS pin-142 -5 0 -18 0 0 1 1 0 0 0 1 0
+ADD beam-18 18654 darkbluishgrey
+POS beam-18 -5 0 -18 -1 0 0 0 1 0 0 0 -1
+ADD beam2x4-4 32140 lightbluishgrey
+POS beam2x4-4 -5 1 -18 0 0 1 0 1 0 -1 0 0
+ADD pin-143 2780 black
+POS pin-143 -2 0.5 -18 0 -1 0 -1 0 0 0 0 -1
+ADD pin-144 11214 red
+POS pin-144 5 0 -18 0 0 1 1 0 0 0 1 0
+ADD beam-19 18654 darkbluishgrey
+POS beam-19 5 0 -18 -1 0 0 0 1 0 0 0 -1
+ADD beam2x4-5 32140 lightbluishgrey
+POS beam2x4-5 5 1 -18 0 0 -1 0 -1 0 -1 0 0
+ADD pin-145 2780 black
+POS pin-145 2 0.5 -18 0 1 0 1 0 0 0 0 -1
+CONNECT pin-142.pin1 -> beam-18.hole1 STIFF
+CONNECT pin-143.pin1 -> beam2x4-4.hole3 STIFF
+CONNECT pin-144.pin1 -> beam-19.hole1 STIFF
+CONNECT pin-145.pin2 -> beam2x4-5.hole3 STIFF
+CONNECT pin-143.pin2 -> beam-12.hole8 STIFF
+CONNECT pin-145.pin1 -> beam-12.hole9 STIFF
+CONNECT pin-142.axle1 -> housing-1.hole1 TURNS
+CONNECT pin-144.axle1 -> housing-1.hole1 TURNS

@@ -1,0 +1,8 @@
+ADD beam5x11-2 64178 lightbluishgrey
+POS beam5x11-2 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-194 6558 blue
+POS pin-194 -2 -1 3 0 1 0 -1 0 0 0 0 1
+ADD pin-195 6558 blue
+POS pin-195 2 -1 3 0 1 0 -1 0 0 0 0 1
+CONNECT pin-194.pin1 -> beam5x11-2.hole20 STIFF
+CONNECT pin-195.pin1 -> beam5x11-2.hole24 STIFF

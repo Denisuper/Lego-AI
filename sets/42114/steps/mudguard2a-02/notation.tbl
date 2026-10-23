@@ -1,0 +1,12 @@
+ADD pin-422 2780 black
+POS pin-422 1 0 2.5 0 0 1 0 1 0 -1 0 0
+ADD pin-423 2780 black
+POS pin-423 -1 0 2.5 0 0 1 0 1 0 -1 0 0
+ADD conn-83 6536 black
+POS conn-83 1 1 2 -1 0 0 0 -1 0 0 0 1
+ADD conn-84 6536 black
+POS conn-84 -1 1 2 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-422.pin2 -> conn-83.hole1 STIFF
+CONNECT pin-423.pin2 -> conn-84.hole1 STIFF
+CONNECT pin-422.pin1 -> beam-40.hole19 STIFF
+CONNECT pin-423.pin1 -> beam-40.hole17 STIFF

@@ -1,0 +1,21 @@
+ADD pin-177 6558 blue
+POS pin-177 0 -4 4 -1 0 0 0 -1 0 0 0 1
+ADD pin-178 6558 blue
+POS pin-178 1 -2 10 -1 0 0 0 -1 0 0 0 1
+ADD beam-24 18654 darkbluishgrey
+POS beam-24 0 -4 4 0 1 0 1 0 0 0 0 -1
+ADD beam-25 18654 darkbluishgrey
+POS beam-25 1 -2 10 0 1 0 1 0 0 0 0 -1
+ADD pin-179 2780 black
+POS pin-179 3.5 -2 4 -1 0 0 0 1 0 0 0 -1
+ADD pin-180 2780 black
+POS pin-180 3.5 -4 4 -1 0 0 0 1 0 0 0 -1
+ATTACH controlplusm2
+CONNECT pin-177.pin2 -> beam-24.hole1 STIFF
+CONNECT pin-178.pin2 -> beam-25.hole1 STIFF
+CONNECT pin-177.pin1 -> motor-2.hole11 STIFF
+CONNECT pin-179.pin2 -> motor-2.hole10 STIFF
+CONNECT pin-180.pin2 -> motor-2.hole9 STIFF
+CONNECT pin-165.pin1 -> motor-2.hole12 STIFF
+CONNECT pin-177.pin3 -> motor-1.hole29 STIFF
+CONNECT pin-178.pin3 -> motor-1.hole11 STIFF

@@ -1,0 +1,10 @@
+ADD conn-109 32013 orange
+POS conn-109 1 0 -2 -1 0 0 0 1 0 0 0 -1
+ADD pin-624 27940 darkbluishgrey
+POS pin-624 1 0 0 0 -1 0 0 0 -1 1 0 0
+ADD conn-110 59443 black
+POS conn-110 1 0 1.5 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-624.axle1 -> conn-109.axlehole1 LOCKED
+CONNECT pin-620.pin2 -> conn-109.hole1 STIFF
+CONNECT pin-622.pin1 -> pin-624.hole1 STIFF
+CONNECT pin-624.axle2 -> conn-110.axlehole2 LOCKED

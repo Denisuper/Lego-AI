@@ -1,0 +1,5 @@
+STEP 75
+ATTACH sidemirror1
+ATTACH sidemirror2
+CONNECT axle6-5.axle1 -> conn-136.axlehole1 LOCKED
+CONNECT axle6-6.axle6 -> conn-137.axlehole1 LOCKED

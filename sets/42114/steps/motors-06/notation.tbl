@@ -1,0 +1,9 @@
+ADD axle2-6 32062 red
+POS axle2-6 -2 -3 11.5 0 0 -1 0 1 0 1 0 0
+ADD pin-175 2780 black
+POS pin-175 -3.5 -2 4 -1 0 0 0 -1 0 0 0 1
+ADD pin-176 2780 black
+POS pin-176 -3.5 -4 4 -1 0 0 0 -1 0 0 0 1
+CONNECT axle2-6.axle1 -> motor-1.axlehole1 LOCKED
+CONNECT pin-175.pin1 -> motor-1.hole32 STIFF
+CONNECT pin-176.pin1 -> motor-1.hole31 STIFF

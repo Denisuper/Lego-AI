@@ -1,0 +1,4 @@
+STEP 68
+ATTACH engineside1
+CONNECT pin-603.axle1 -> panel-5.hole17 TURNS
+CONNECT pin-610.axle1 -> panel-5.hole4 TURNS

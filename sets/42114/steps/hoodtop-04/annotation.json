@@ -1,0 +1,82 @@
+{
+  "example_id": "42114-hoodtop-step-04",
+  "set": "LEGO Technic 42114",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle4-35",
+        "part_number": "99008",
+        "count": 1
+      },
+      {
+        "name": "conn-127",
+        "part_number": "32016",
+        "count": 1
+      },
+      {
+        "name": "axle4-36",
+        "part_number": "99008",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Assembled frame and mechanisms constructed in earlier steps."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle4-35",
+        "part_number": "99008",
+        "catalog_name": "Technic Axle 4 with Centre Stop",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "conn-127",
+        "part_number": "32016",
+        "catalog_name": "Technic Axle and Pin Connector Angled #3 - 157.5\u00b0",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "axle4-36",
+        "part_number": "99008",
+        "catalog_name": "Technic Axle 4 with Centre Stop",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.3, y=0, z=-0.95 holes (exact, from the 3D model)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-35's axle1 goes into conn-127's axlehole1 (locked)",
+      "axle4-36's axle1 goes into conn-127's axlehole2 (locked)",
+      "axle4-35's axle3 goes into beam3-48's axlehole2 (locked)",
+      "axle4-35's axle3 goes into beam3-49's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-35 carries conn-127",
+      "axle4-36 carries conn-127",
+      "axle4-35 carries beam3-48",
+      "axle4-35 carries beam3-49"
+    ],
+    "where_everything_is_after": [
+      "New parts joined in position. Everything else: no change."
+    ],
+    "why": {
+      "problem_solved": "Assembles structural members and extends the vehicle frame.",
+      "why_these_parts": "Beams and friction pins ensure rigid alignment under load.",
+      "sets_up_for_later": "Provides mounting points for subsequent drivetrain and bodywork steps.",
+      "design_pattern": "rigid frame"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

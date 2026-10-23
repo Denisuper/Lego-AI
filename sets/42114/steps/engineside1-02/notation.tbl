@@ -1,0 +1,7 @@
+ADD pin-600 6558 blue
+POS pin-600 0 0 -1 0 -1 0 -1 0 0 0 0 -1
+ADD beam7-19 32524 black
+POS beam7-19 0 1 2 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-600.pin1 -> beam7-19.hole7 STIFF
+CONNECT pin-597.axle1 -> beam7-19.hole6 TURNS
+CONNECT pin-600.pin2 -> beam2x4-22.hole1 STIFF
