@@ -7,17 +7,17 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x7-1",
+        "name": "beam7-1",
         "part_number": "32524",
         "count": 1
       },
       {
-        "name": "pin-29",
+        "name": "pin-28",
         "part_number": "6558",
         "count": 1
       },
       {
-        "name": "pin-30",
+        "name": "pin-29",
         "part_number": "6558",
         "count": 1
       }
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x7-1",
+        "name": "beam7-1",
         "part_number": "32524",
         "catalog_name": "Technic Beam 1 x 7 Thick",
         "color": "Yellow",
@@ -36,7 +36,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-29",
+        "name": "pin-28",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-30",
+        "name": "pin-29",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -55,12 +55,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-29's pin1 goes into beam1x7-1's hole3 (stiff)",
-      "pin-30's pin1 goes into beam1x7-1's hole4 (stiff)"
+      "pin-28's pin1 goes into beam7-1's hole3 (stiff)",
+      "pin-29's pin1 goes into beam7-1's hole4 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x7-1 holds pin-29",
-      "beam1x7-1 holds pin-30"
+      "beam7-1 holds pin-28",
+      "beam7-1 holds pin-29"
     ],
     "where_everything_is_after": [
       "TO WRITE"

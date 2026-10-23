@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x5-1",
+        "name": "beam5-1",
         "part_number": "32316",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x5-1",
+        "name": "beam5-1",
         "part_number": "32316",
         "catalog_name": "Technic Beam 1 x 5 Thick",
         "color": "Black",
@@ -27,12 +27,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "bush-5's pin2 goes into beam1x5-1's hole1 (stiff)",
-      "bush-6's pin2 goes into beam1x5-1's hole5 (stiff)"
+      "pin-20's pin2 goes into beam5-1's hole1 (stiff)",
+      "pin-21's pin2 goes into beam5-1's hole5 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x5-1 holds bush-5",
-      "beam1x5-1 holds bush-6"
+      "beam5-1 holds pin-20",
+      "beam5-1 holds pin-21"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-23",
+        "name": "pin-22",
         "part_number": "2780",
         "count": 1
       },
       {
-        "name": "pin-24",
+        "name": "pin-23",
         "part_number": "2780",
         "count": 1
       },
@@ -22,7 +22,7 @@
         "count": 1
       },
       {
-        "name": "pin-25",
+        "name": "pin-24",
         "part_number": "6558",
         "count": 1
       }
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-23",
+        "name": "pin-22",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-24",
+        "name": "pin-23",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-25",
+        "name": "pin-24",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -69,18 +69,18 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-23's pin1 goes into beam3x5-7's hole7 (stiff)",
-      "pin-24's pin1 goes into beam3x5-7's hole5 (stiff)",
-      "pin-25's pin2 goes into beam3x5-7's hole1 (stiff)",
-      "pin-23's pin2 goes into beam1x11-2's hole2 (stiff)",
-      "pin-24's pin2 goes into beam1x11-2's hole4 (stiff)"
+      "pin-22's pin1 goes into beam3x5-7's hole7 (stiff)",
+      "pin-23's pin1 goes into beam3x5-7's hole5 (stiff)",
+      "pin-24's pin2 goes into beam3x5-7's hole1 (stiff)",
+      "pin-22's pin2 goes into beam11-2's hole2 (stiff)",
+      "pin-23's pin2 goes into beam11-2's hole4 (stiff)"
     ],
     "who_does_what_to_which": [
+      "beam3x5-7 holds pin-22",
       "beam3x5-7 holds pin-23",
       "beam3x5-7 holds pin-24",
-      "beam3x5-7 holds pin-25",
-      "beam1x11-2 holds pin-23",
-      "beam1x11-2 holds pin-24"
+      "beam11-2 holds pin-22",
+      "beam11-2 holds pin-23"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x5-6",
+        "name": "beam5-6",
         "part_number": "32017",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x5-6",
+        "name": "beam5-6",
         "part_number": "32017",
         "catalog_name": "Technic Beam 1 x 5 Thin",
         "color": "Yellow",
@@ -27,12 +27,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-59's pin2 goes into beam1x5-6's hole2 (stiff)",
-      "pin-60's pin2 goes into beam1x5-6's hole1 (stiff)"
+      "pin-60's pin2 goes into beam5-6's hole2 (stiff)",
+      "pin-61's pin2 goes into beam5-6's hole1 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x5-6 holds pin-59",
-      "beam1x5-6 holds pin-60"
+      "beam5-6 holds pin-60",
+      "beam5-6 holds pin-61"
     ],
     "where_everything_is_after": [
       "TO WRITE"

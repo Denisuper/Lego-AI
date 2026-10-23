@@ -17,12 +17,12 @@
         "count": 1
       },
       {
-        "name": "beam1x3-1",
+        "name": "beam3-1",
         "part_number": "6632",
         "count": 1
       },
       {
-        "name": "beam1x3-2",
+        "name": "beam3-2",
         "part_number": "6632",
         "count": 1
       }
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x3-1",
+        "name": "beam3-1",
         "part_number": "6632",
         "catalog_name": "Technic Beam 1 x 3 Thin",
         "color": "Blue",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x3-2",
+        "name": "beam3-2",
         "part_number": "6632",
         "catalog_name": "Technic Beam 1 x 3 Thin",
         "color": "Blue",
@@ -70,17 +70,17 @@
     ],
     "what_each_new_part_touches": [
       "axle2-3's axle1 goes into beam2x4-1's axlehole1 (locked)",
-      "pin-29's pin2 goes into beam2x4-1's hole4 (stiff)",
-      "pin-30's pin2 goes into beam2x4-1's hole3 (stiff)",
-      "axle2-3's axle2 goes into beam1x3-1's axlehole1 (locked)",
-      "axle2-3's axle1 goes into beam1x3-2's axlehole1 (locked)"
+      "pin-28's pin2 goes into beam2x4-1's hole4 (stiff)",
+      "pin-29's pin2 goes into beam2x4-1's hole3 (stiff)",
+      "axle2-3's axle2 goes into beam3-1's axlehole1 (locked)",
+      "axle2-3's axle1 goes into beam3-2's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
       "axle2-3 carries beam2x4-1",
+      "beam2x4-1 holds pin-28",
       "beam2x4-1 holds pin-29",
-      "beam2x4-1 holds pin-30",
-      "axle2-3 carries beam1x3-1",
-      "axle2-3 carries beam1x3-2"
+      "axle2-3 carries beam3-1",
+      "axle2-3 carries beam3-2"
     ],
     "where_everything_is_after": [
       "TO WRITE"

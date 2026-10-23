@@ -1,11 +1,11 @@
 STEP 27
 ADD axle4-8 3705 black
 POS axle4-8 1 -9.5 1 0 0 1 -1 0 0 0 -1 0
-ADD bush-8 3713 lightbluishgrey
-POS bush-8 1 -10 1 1 0 0 0 0 1 0 -1 0
+ADD bush-5 3713 lightbluishgrey
+POS bush-5 1 -10 1 1 0 0 0 0 1 0 -1 0
 ADD gear12-2 32270 black
 POS gear12-2 1 -11 1 1 0 0 0 0 1 0 -1 0
-CONNECT axle4-8.axle3 -> bush-8.axlehole1 LOCKED
+CONNECT axle4-8.axle3 -> bush-5.axlehole1 LOCKED
 CONNECT axle4-8.axle4 -> gear12-2.axlehole1 LOCKED
-CONNECT axle4-8.axle1 -> conn-13.axlehole2 LOCKED
-CONNECT axle4-8.axle2 -> conn-15.hole1 TURNS
+CONNECT axle4-8.axle1 -> conn-10.axlehole2 LOCKED
+CONNECT axle4-8.axle2 -> conn-12.hole1 TURNS

@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-49",
+        "name": "beam-3",
         "part_number": "33299",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-49",
+        "name": "beam-3",
         "part_number": "33299",
         "catalog_name": "Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole",
         "color": "Black",
@@ -27,12 +27,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle4-11's axle2 goes into pin-49's axlehole1 (locked)",
-      "pin-49's pin1 goes into beam1x9-3's hole7 (stiff)"
+      "axle4-11's axle2 goes into beam-3's axlehole1 (locked)",
+      "beam-3's pin1 goes into beam9-3's hole7 (stiff)"
     ],
     "who_does_what_to_which": [
-      "axle4-11 carries pin-49",
-      "beam1x9-3 holds pin-49"
+      "axle4-11 carries beam-3",
+      "beam9-3 holds beam-3"
     ],
     "where_everything_is_after": [
       "TO WRITE"

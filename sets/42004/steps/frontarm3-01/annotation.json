@@ -12,17 +12,17 @@
         "count": 1
       },
       {
-        "name": "pin-59",
-        "part_number": "2780",
-        "count": 1
-      },
-      {
         "name": "pin-60",
         "part_number": "2780",
         "count": 1
       },
       {
         "name": "pin-61",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-62",
         "part_number": "2780",
         "count": 1
       }
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-59",
+        "name": "pin-60",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-60",
+        "name": "pin-61",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-61",
+        "name": "pin-62",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -69,14 +69,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-59's pin1 goes into beam3x5-10's hole5 (stiff)",
-      "pin-60's pin1 goes into beam3x5-10's hole4 (stiff)",
-      "pin-61's pin1 goes into beam3x5-10's hole1 (stiff)"
+      "pin-60's pin1 goes into beam3x5-10's hole5 (stiff)",
+      "pin-61's pin1 goes into beam3x5-10's hole4 (stiff)",
+      "pin-62's pin1 goes into beam3x5-10's hole1 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam3x5-10 holds pin-59",
       "beam3x5-10 holds pin-60",
-      "beam3x5-10 holds pin-61"
+      "beam3x5-10 holds pin-61",
+      "beam3x5-10 holds pin-62"
     ],
     "where_everything_is_after": [
       "TO WRITE"

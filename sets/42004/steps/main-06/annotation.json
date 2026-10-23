@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-3",
+        "name": "pin-4",
         "part_number": "6558",
         "count": 1
       },
       {
-        "name": "pin-4",
+        "name": "pin-5",
         "part_number": "6558",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-3",
+        "name": "pin-4",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-4",
+        "name": "pin-5",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-4's pin1 goes into beam1x11-1's hole7 (stiff)",
-      "pin-3's pin1 goes into beam1x11-2's hole7 (stiff)"
+      "pin-5's pin1 goes into beam11-1's hole7 (stiff)",
+      "pin-4's pin1 goes into beam11-2's hole7 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x11-1 holds pin-4",
-      "beam1x11-2 holds pin-3"
+      "beam11-1 holds pin-5",
+      "beam11-2 holds pin-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

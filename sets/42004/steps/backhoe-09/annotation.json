@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x3-8",
+        "name": "beam3-8",
         "part_number": "32523",
         "count": 1
       },
       {
-        "name": "beam1x4-6",
+        "name": "beam4-6",
         "part_number": "32449",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x3-8",
+        "name": "beam3-8",
         "part_number": "32523",
         "catalog_name": "Technic Beam 1 x 3 Thick",
         "color": "Light Bluish Grey",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x4-6",
+        "name": "beam4-6",
         "part_number": "32449",
         "catalog_name": "Technic Beam 1 x 4 Thin",
         "color": "Yellow",
@@ -41,16 +41,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle4-10's axle1 goes into beam1x3-8's hole3 (turns)",
-      "pin-48's pin3 goes into beam1x3-8's hole1 (turns)",
-      "axle4-9's axle1 goes into beam1x4-6's axlehole1 (locked)",
-      "axle4-10's axle1 goes into beam1x4-6's axlehole2 (locked)"
+      "axle4-10's axle1 goes into beam3-8's hole3 (turns)",
+      "pin-49's pin3 goes into beam3-8's hole1 (turns)",
+      "axle4-9's axle1 goes into beam4-6's axlehole1 (locked)",
+      "axle4-10's axle1 goes into beam4-6's axlehole2 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam1x3-8 spins on axle4-10",
-      "pin-48 spins on beam1x3-8",
-      "axle4-9 carries beam1x4-6",
-      "axle4-10 carries beam1x4-6"
+      "beam3-8 spins on axle4-10",
+      "pin-49 spins on beam3-8",
+      "axle4-9 carries beam4-6",
+      "axle4-10 carries beam4-6"
     ],
     "where_everything_is_after": [
       "TO WRITE"

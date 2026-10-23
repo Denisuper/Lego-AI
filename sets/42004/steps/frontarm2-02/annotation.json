@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x3-9",
+        "name": "beam3-9",
         "part_number": "6632",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x3-9",
+        "name": "beam3-9",
         "part_number": "6632",
         "catalog_name": "Technic Beam 1 x 3 Thin",
         "color": "Yellow",

@@ -1,6 +1,6 @@
 ADD worm-2 4716 lightbluishgrey
 POS worm-2 0 2 0 -1 0 0 0 0 1 0 1 0
-ADD conn-23 42003 yellow
-POS conn-23 0 0.5 0 -1 0 0 0 0 1 0 1 0
+ADD conn-20 42003 yellow
+POS conn-20 0 0.5 0 -1 0 0 0 0 1 0 1 0
 CONNECT axle8-2.axle6 -> worm-2.axlehole1 LOCKED
-CONNECT axle8-2.axle5 -> conn-23.hole1 TURNS
+CONNECT axle8-2.axle5 -> conn-20.hole1 TURNS

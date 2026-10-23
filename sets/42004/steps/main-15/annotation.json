@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-17",
+        "name": "pin-16",
         "part_number": "2780",
         "count": 1
       },
       {
-        "name": "pin-18",
+        "name": "pin-17",
         "part_number": "2780",
         "count": 1
       },
@@ -37,7 +37,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-17",
+        "name": "pin-16",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -46,7 +46,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-18",
+        "name": "pin-17",
         "part_number": "2780",
         "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
         "color": "Black",
@@ -83,22 +83,22 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-17's pin1 goes into beam3x5-5's hole4 (stiff)",
-      "pin-18's pin1 goes into beam3x5-5's hole1 (stiff)",
+      "pin-16's pin1 goes into beam3x5-5's hole4 (stiff)",
+      "pin-17's pin1 goes into beam3x5-5's hole1 (stiff)",
       "axle4-5's axle4 goes into beam3x5-5's hole7 (turns)",
       "axle5-2's axle5 goes into beam3x5-5's hole5 (turns)",
       "axle4-5's axle3 goes into bush-3's axlehole1 (locked)",
-      "pin-17's pin2 goes into beam1x9-2's hole5 (stiff)",
-      "pin-18's pin2 goes into beam1x9-2's hole8 (stiff)"
+      "pin-16's pin2 goes into beam9-2's hole5 (stiff)",
+      "pin-17's pin2 goes into beam9-2's hole8 (stiff)"
     ],
     "who_does_what_to_which": [
+      "beam3x5-5 holds pin-16",
       "beam3x5-5 holds pin-17",
-      "beam3x5-5 holds pin-18",
       "beam3x5-5 spins on axle4-5",
       "beam3x5-5 spins on axle5-2",
       "axle4-5 carries bush-3",
-      "beam1x9-2 holds pin-17",
-      "beam1x9-2 holds pin-18"
+      "beam9-2 holds pin-16",
+      "beam9-2 holds pin-17"
     ],
     "where_everything_is_after": [
       "TO WRITE"

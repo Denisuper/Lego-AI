@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x7-2",
+        "name": "beam7-2",
         "part_number": "32524",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x7-2",
+        "name": "beam7-2",
         "part_number": "32524",
         "catalog_name": "Technic Beam 1 x 7 Thick",
         "color": "Yellow",
@@ -27,12 +27,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-29's pin3 goes into beam1x7-2's hole3 (stiff)",
-      "pin-30's pin3 goes into beam1x7-2's hole4 (stiff)"
+      "pin-28's pin3 goes into beam7-2's hole3 (stiff)",
+      "pin-29's pin3 goes into beam7-2's hole4 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x7-2 holds pin-29",
-      "beam1x7-2 holds pin-30"
+      "beam7-2 holds pin-28",
+      "beam7-2 holds pin-29"
     ],
     "where_everything_is_after": [
       "TO WRITE"

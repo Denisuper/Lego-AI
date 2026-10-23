@@ -12,12 +12,12 @@
         "count": 1
       },
       {
-        "name": "conn-16",
+        "name": "conn-13",
         "part_number": "32039",
         "count": 1
       },
       {
-        "name": "bush-10",
+        "name": "bush-6",
         "part_number": "3713",
         "count": 1
       }
@@ -36,7 +36,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-16",
+        "name": "conn-13",
         "part_number": "32039",
         "catalog_name": "Technic Axle Connector with Axle Hole",
         "color": "Light Bluish Grey",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-10",
+        "name": "bush-6",
         "part_number": "3713",
         "catalog_name": "Technic Bush",
         "color": "Light Bluish Grey",
@@ -55,14 +55,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle7-3's axle5 goes into conn-16's axlehole1 (locked)",
-      "axle7-3's axle4 goes into bush-10's axlehole1 (locked)",
-      "pin-41's pin1 goes into beam1x3-5's hole1 (stiff)"
+      "axle7-3's axle5 goes into conn-13's axlehole1 (locked)",
+      "axle7-3's axle4 goes into bush-6's axlehole1 (locked)",
+      "pin-41's pin1 goes into beam3-5's hole1 (stiff)"
     ],
     "who_does_what_to_which": [
-      "axle7-3 carries conn-16",
-      "axle7-3 carries bush-10",
-      "beam1x3-5 holds pin-41"
+      "axle7-3 carries conn-13",
+      "axle7-3 carries bush-6",
+      "beam3-5 holds pin-41"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "conn-15",
+        "name": "conn-12",
         "part_number": "32034",
         "count": 1
       },
@@ -36,7 +36,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-15",
+        "name": "conn-12",
         "part_number": "32034",
         "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
         "color": "Black",
@@ -55,10 +55,10 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-35's axle1 goes into beam1x11-3's hole10 (turns)"
+      "pin-35's axle1 goes into beam11-3's hole10 (turns)"
     ],
     "who_does_what_to_which": [
-      "beam1x11-3 spins on pin-35"
+      "beam11-3 spins on pin-35"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "bush-19",
+        "name": "bush-12",
         "part_number": "32123b",
         "count": 1
       }
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-19",
+        "name": "bush-12",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle3-10's axle1 goes into bush-19's axlehole1 (locked)",
-      "axle3-10's axle1 goes into beam1x3-10's axlehole1 (locked)"
+      "axle3-10's axle1 goes into bush-12's axlehole1 (locked)",
+      "axle3-10's axle1 goes into beam3-10's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle3-10 carries bush-19",
-      "axle3-10 carries beam1x3-10"
+      "axle3-10 carries bush-12",
+      "axle3-10 carries beam3-10"
     ],
     "where_everything_is_after": [
       "TO WRITE"

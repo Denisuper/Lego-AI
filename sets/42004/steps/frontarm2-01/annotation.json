@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-58",
+        "name": "pin-59",
         "part_number": "3749",
         "count": 1
       },
       {
-        "name": "bush-18",
+        "name": "bush-11",
         "part_number": "32123b",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-58",
+        "name": "pin-59",
         "part_number": "3749",
         "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
         "color": "Tan",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-18",
+        "name": "bush-11",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",

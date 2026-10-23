@@ -7,22 +7,22 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-19",
+        "name": "beam2-5",
         "part_number": "60483",
         "count": 1
       },
       {
-        "name": "pin-20",
+        "name": "beam2-6",
         "part_number": "60483",
         "count": 1
       },
       {
-        "name": "pin-21",
+        "name": "pin-18",
         "part_number": "4274",
         "count": 1
       },
       {
-        "name": "pin-22",
+        "name": "pin-19",
         "part_number": "4274",
         "count": 1
       }
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-19",
+        "name": "beam2-5",
         "part_number": "60483",
         "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
         "color": "Black",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-20",
+        "name": "beam2-6",
         "part_number": "60483",
         "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
         "color": "Black",
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-21",
+        "name": "pin-18",
         "part_number": "4274",
         "catalog_name": "Technic Pin 1/2 without Friction Ridges",
         "color": "Light Bluish Grey",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-22",
+        "name": "pin-19",
         "part_number": "4274",
         "catalog_name": "Technic Pin 1/2 without Friction Ridges",
         "color": "Light Bluish Grey",
@@ -69,16 +69,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-22's pin1 goes into pin-19's hole1 (turns)",
-      "axle7-2's axle2 goes into pin-19's axlehole1 (locked)",
-      "pin-21's pin1 goes into pin-20's hole1 (turns)",
-      "axle7-2's axle6 goes into pin-20's axlehole1 (locked)"
+      "pin-19's pin1 goes into beam2-5's hole1 (turns)",
+      "axle7-2's axle2 goes into beam2-5's axlehole1 (locked)",
+      "pin-18's pin1 goes into beam2-6's hole1 (turns)",
+      "axle7-2's axle6 goes into beam2-6's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "pin-22 spins on pin-19",
-      "axle7-2 carries pin-19",
-      "pin-21 spins on pin-20",
-      "axle7-2 carries pin-20"
+      "pin-19 spins on beam2-5",
+      "axle7-2 carries beam2-5",
+      "pin-18 spins on beam2-6",
+      "axle7-2 carries beam2-6"
     ],
     "where_everything_is_after": [
       "TO WRITE"

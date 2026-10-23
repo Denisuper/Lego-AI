@@ -3,11 +3,11 @@ ADD axle7-4 44294 lightbluishgrey
 POS axle7-4 1 -0.85 -14.45 1 0 0 0 -0.259 -0.966 0 0.966 -0.259
 ADD part-1 2951 black
 POS part-1 1 -0.85 -14.45 1 0 0 0 0.966 -0.259 0 0.259 0.966
-ADD bush-20 3713 lightbluishgrey
-POS bush-20 4 -0.85 -14.45 0 0 -1 0.259 -0.966 0 -0.966 -0.259 0
-ADD bush-21 3713 lightbluishgrey
-POS bush-21 -2 -0.85 -14.45 0 0 -1 0.259 -0.966 0 -0.966 -0.259 0
-CONNECT axle7-4.axle7 -> bush-20.axlehole1 LOCKED
-CONNECT axle7-4.axle1 -> bush-21.axlehole1 LOCKED
-CONNECT axle7-4.axle2 -> beam1x5-3.hole5 TURNS
-CONNECT axle7-4.axle6 -> beam1x5-6.hole5 TURNS
+ADD bush-13 3713 lightbluishgrey
+POS bush-13 4 -0.85 -14.45 0 0 -1 0.259 -0.966 0 -0.966 -0.259 0
+ADD bush-14 3713 lightbluishgrey
+POS bush-14 -2 -0.85 -14.45 0 0 -1 0.259 -0.966 0 -0.966 -0.259 0
+CONNECT axle7-4.axle7 -> bush-13.axlehole1 LOCKED
+CONNECT axle7-4.axle1 -> bush-14.axlehole1 LOCKED
+CONNECT axle7-4.axle2 -> beam5-3.hole5 TURNS
+CONNECT axle7-4.axle6 -> beam5-6.hole5 TURNS

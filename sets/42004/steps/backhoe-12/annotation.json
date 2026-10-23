@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "bush-15",
+        "name": "pin-50",
         "part_number": "32054",
         "count": 1
       }
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-15",
+        "name": "pin-50",
         "part_number": "32054",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
         "color": "Black",
@@ -42,11 +42,11 @@
     ],
     "what_each_new_part_touches": [
       "axle4-11's axle1 goes into gear12-3's axlehole1 (locked)",
-      "bush-15's pin1 goes into beam1x11-5's hole11 (stiff)"
+      "pin-50's pin1 goes into beam11-5's hole11 (stiff)"
     ],
     "who_does_what_to_which": [
       "axle4-11 carries gear12-3",
-      "beam1x11-5 holds bush-15"
+      "beam11-5 holds pin-50"
     ],
     "where_everything_is_after": [
       "TO WRITE"

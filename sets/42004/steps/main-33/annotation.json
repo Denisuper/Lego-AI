@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-18",
+        "name": "conn-15",
         "part_number": "6536",
         "count": 1
       },
       {
-        "name": "conn-19",
+        "name": "conn-16",
         "part_number": "6536",
         "count": 1
       },
@@ -27,12 +27,12 @@
         "count": 1
       },
       {
-        "name": "conn-20",
+        "name": "conn-17",
         "part_number": "32013",
         "count": 1
       },
       {
-        "name": "conn-21",
+        "name": "conn-18",
         "part_number": "32013",
         "count": 1
       }
@@ -42,7 +42,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-18",
+        "name": "conn-15",
         "part_number": "6536",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular",
         "color": "Yellow",
@@ -51,7 +51,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-19",
+        "name": "conn-16",
         "part_number": "6536",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular",
         "color": "Yellow",
@@ -78,7 +78,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-20",
+        "name": "conn-17",
         "part_number": "32013",
         "catalog_name": "Technic Axle and Pin Connector Angled #1",
         "color": "Black",
@@ -87,7 +87,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-21",
+        "name": "conn-18",
         "part_number": "32013",
         "catalog_name": "Technic Axle and Pin Connector Angled #1",
         "color": "Black",
@@ -97,24 +97,24 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle6-2's axle6 goes into conn-18's axlehole1 (locked)",
-      "pin-25's pin1 goes into conn-18's hole1 (stiff)",
-      "axle6-1's axle6 goes into conn-19's axlehole1 (locked)",
-      "pin-28's pin1 goes into conn-19's hole1 (stiff)",
-      "axle6-2's axle1 goes into conn-20's axlehole1 (locked)",
-      "pin-46's pin1 goes into conn-20's hole1 (stiff)",
-      "axle6-1's axle1 goes into conn-21's axlehole1 (locked)",
-      "pin-41's pin2 goes into conn-21's hole1 (stiff)"
+      "axle6-2's axle6 goes into conn-15's axlehole1 (locked)",
+      "pin-24's pin1 goes into conn-15's hole1 (stiff)",
+      "axle6-1's axle6 goes into conn-16's axlehole1 (locked)",
+      "pin-27's pin1 goes into conn-16's hole1 (stiff)",
+      "axle6-2's axle1 goes into conn-17's axlehole1 (locked)",
+      "pin-47's pin1 goes into conn-17's hole1 (stiff)",
+      "axle6-1's axle1 goes into conn-18's axlehole1 (locked)",
+      "pin-41's pin2 goes into conn-18's hole1 (stiff)"
     ],
     "who_does_what_to_which": [
-      "axle6-2 carries conn-18",
-      "conn-18 holds pin-25",
-      "axle6-1 carries conn-19",
-      "conn-19 holds pin-28",
-      "axle6-2 carries conn-20",
-      "conn-20 holds pin-46",
-      "axle6-1 carries conn-21",
-      "conn-21 holds pin-41"
+      "axle6-2 carries conn-15",
+      "conn-15 holds pin-24",
+      "axle6-1 carries conn-16",
+      "conn-16 holds pin-27",
+      "axle6-2 carries conn-17",
+      "conn-17 holds pin-47",
+      "axle6-1 carries conn-18",
+      "conn-18 holds pin-41"
     ],
     "where_everything_is_after": [
       "TO WRITE"

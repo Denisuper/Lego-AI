@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x4-1",
+        "name": "beam4-1",
         "part_number": "32449",
         "count": 1
       },
@@ -17,7 +17,7 @@
         "count": 1
       },
       {
-        "name": "beam1x4-2",
+        "name": "beam4-2",
         "part_number": "32449",
         "count": 1
       }
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x4-1",
+        "name": "beam4-1",
         "part_number": "32449",
         "catalog_name": "Technic Beam 1 x 4 Thin",
         "color": "Yellow",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x4-2",
+        "name": "beam4-2",
         "part_number": "32449",
         "catalog_name": "Technic Beam 1 x 4 Thin",
         "color": "Yellow",
@@ -55,12 +55,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle2-4's axle2 goes into beam1x4-1's axlehole2 (locked)",
-      "axle2-4's axle2 goes into beam1x4-2's axlehole2 (locked)"
+      "axle2-4's axle2 goes into beam4-1's axlehole2 (locked)",
+      "axle2-4's axle2 goes into beam4-2's axlehole2 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle2-4 carries beam1x4-1",
-      "axle2-4 carries beam1x4-2"
+      "axle2-4 carries beam4-1",
+      "axle2-4 carries beam4-2"
     ],
     "where_everything_is_after": [
       "TO WRITE"

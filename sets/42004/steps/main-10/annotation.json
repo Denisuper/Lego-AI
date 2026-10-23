@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-4",
+        "name": "conn-3",
         "part_number": "6536",
         "count": 1
       },
       {
-        "name": "conn-5",
+        "name": "conn-4",
         "part_number": "6536",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-4",
+        "name": "conn-3",
         "part_number": "6536",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular",
         "color": "Yellow",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-5",
+        "name": "conn-4",
         "part_number": "6536",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular",
         "color": "Yellow",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle5-1's axle5 goes into conn-4's axlehole1 (locked)",
-      "axle5-1's axle1 goes into conn-5's axlehole1 (locked)"
+      "axle5-1's axle5 goes into conn-3's axlehole1 (locked)",
+      "axle5-1's axle1 goes into conn-4's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle5-1 carries conn-4",
-      "axle5-1 carries conn-5"
+      "axle5-1 carries conn-3",
+      "axle5-1 carries conn-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

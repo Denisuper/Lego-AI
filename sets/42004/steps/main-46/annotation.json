@@ -7,22 +7,22 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "bush-22",
+        "name": "bush-15",
         "part_number": "32123b",
         "count": 1
       },
       {
-        "name": "bush-23",
+        "name": "bush-16",
         "part_number": "32123b",
         "count": 1
       },
       {
-        "name": "bush-24",
+        "name": "bush-17",
         "part_number": "32123b",
         "count": 1
       },
       {
-        "name": "bush-25",
+        "name": "bush-18",
         "part_number": "32123b",
         "count": 1
       }
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "bush-22",
+        "name": "bush-15",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-23",
+        "name": "bush-16",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-24",
+        "name": "bush-17",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-25",
+        "name": "bush-18",
         "part_number": "32123b",
         "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
         "color": "Yellow",
@@ -69,16 +69,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle4-5's axle1 goes into bush-22's axlehole1 (locked)",
-      "axle4-1's axle1 goes into bush-23's axlehole1 (locked)",
-      "axle4-2's axle1 goes into bush-24's axlehole1 (locked)",
-      "axle4-6's axle1 goes into bush-25's axlehole1 (locked)"
+      "axle4-5's axle1 goes into bush-15's axlehole1 (locked)",
+      "axle4-1's axle1 goes into bush-16's axlehole1 (locked)",
+      "axle4-2's axle1 goes into bush-17's axlehole1 (locked)",
+      "axle4-6's axle1 goes into bush-18's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle4-5 carries bush-22",
-      "axle4-1 carries bush-23",
-      "axle4-2 carries bush-24",
-      "axle4-6 carries bush-25"
+      "axle4-5 carries bush-15",
+      "axle4-1 carries bush-16",
+      "axle4-2 carries bush-17",
+      "axle4-6 carries bush-18"
     ],
     "where_everything_is_after": [
       "TO WRITE"

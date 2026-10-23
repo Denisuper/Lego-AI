@@ -1,13 +1,13 @@
 STEP 46
-ADD bush-22 32123b yellow
-POS bush-22 5.75 0 -8 0 0 -1 0 1 0 1 0 0
-ADD bush-23 32123b yellow
-POS bush-23 5.75 0 2 0 0 -1 0 1 0 1 0 0
-ADD bush-24 32123b yellow
-POS bush-24 -3.75 0 2 0 0 -1 0 1 0 1 0 0
-ADD bush-25 32123b yellow
-POS bush-25 -3.75 0 -8 0 0 -1 0 1 0 1 0 0
-CONNECT axle4-5.axle1 -> bush-22.axlehole1 LOCKED
-CONNECT axle4-1.axle1 -> bush-23.axlehole1 LOCKED
-CONNECT axle4-2.axle1 -> bush-24.axlehole1 LOCKED
-CONNECT axle4-6.axle1 -> bush-25.axlehole1 LOCKED
+ADD bush-15 32123b yellow
+POS bush-15 5.75 0 -8 0 0 -1 0 1 0 1 0 0
+ADD bush-16 32123b yellow
+POS bush-16 5.75 0 2 0 0 -1 0 1 0 1 0 0
+ADD bush-17 32123b yellow
+POS bush-17 -3.75 0 2 0 0 -1 0 1 0 1 0 0
+ADD bush-18 32123b yellow
+POS bush-18 -3.75 0 -8 0 0 -1 0 1 0 1 0 0
+CONNECT axle4-5.axle1 -> bush-15.axlehole1 LOCKED
+CONNECT axle4-1.axle1 -> bush-16.axlehole1 LOCKED
+CONNECT axle4-2.axle1 -> bush-17.axlehole1 LOCKED
+CONNECT axle4-6.axle1 -> bush-18.axlehole1 LOCKED

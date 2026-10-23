@@ -12,12 +12,12 @@
         "count": 1
       },
       {
-        "name": "bush-16",
+        "name": "bush-9",
         "part_number": "3713",
         "count": 1
       },
       {
-        "name": "bush-17",
+        "name": "bush-10",
         "part_number": "3713",
         "count": 1
       }
@@ -36,7 +36,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-16",
+        "name": "bush-9",
         "part_number": "3713",
         "catalog_name": "Technic Bush",
         "color": "Light Bluish Grey",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-17",
+        "name": "bush-10",
         "part_number": "3713",
         "catalog_name": "Technic Bush",
         "color": "Light Bluish Grey",
@@ -55,18 +55,18 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle9-1's axle3 goes into bush-16's axlehole1 (locked)",
-      "axle9-1's axle7 goes into bush-17's axlehole1 (locked)",
-      "axle9-1's axle6 goes into beam1x7-1's hole7 (turns)",
-      "axle9-1's axle4 goes into beam1x7-2's hole7 (turns)",
-      "axle9-1's axle5 goes into conn-26's hole1 (turns)"
+      "axle9-1's axle3 goes into bush-9's axlehole1 (locked)",
+      "axle9-1's axle7 goes into bush-10's axlehole1 (locked)",
+      "axle9-1's axle6 goes into beam7-1's hole7 (turns)",
+      "axle9-1's axle4 goes into beam7-2's hole7 (turns)",
+      "axle9-1's axle5 goes into conn-23's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "axle9-1 carries bush-16",
-      "axle9-1 carries bush-17",
-      "beam1x7-1 spins on axle9-1",
-      "beam1x7-2 spins on axle9-1",
-      "conn-26 spins on axle9-1"
+      "axle9-1 carries bush-9",
+      "axle9-1 carries bush-10",
+      "beam7-1 spins on axle9-1",
+      "beam7-2 spins on axle9-1",
+      "conn-23 spins on axle9-1"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -1,11 +1,11 @@
 STEP 12
-ADD beam1x9-2 40490 yellow
-POS beam1x9-2 2 -2 -7 0 -1 0 1 0 0 0 0 1
-ADD pin-16 4274 lightbluishgrey
-POS pin-16 2.5 -2 -10 1 0 0 0 1 0 0 0 1
-CONNECT pin-16.pin1 -> beam1x9-2.hole2 TURNS
-CONNECT pin-7.pin3 -> beam1x9-2.hole1 STIFF
-CONNECT pin-8.pin3 -> beam1x9-2.hole9 STIFF
-CONNECT pin-9.pin3 -> beam1x9-2.hole7 STIFF
-CONNECT axle5-2.axle4 -> beam1x9-2.hole4 TURNS
-CONNECT conn-6.pin1 -> beam1x9-2.hole6 STIFF
+ADD beam9-2 40490 yellow
+POS beam9-2 2 -2 -7 0 -1 0 1 0 0 0 0 1
+ADD pin-15 4274 lightbluishgrey
+POS pin-15 2.5 -2 -10 1 0 0 0 1 0 0 0 1
+CONNECT pin-15.pin1 -> beam9-2.hole2 TURNS
+CONNECT pin-6.pin3 -> beam9-2.hole1 STIFF
+CONNECT pin-7.pin3 -> beam9-2.hole9 STIFF
+CONNECT pin-8.pin3 -> beam9-2.hole7 STIFF
+CONNECT axle5-2.axle4 -> beam9-2.hole4 TURNS
+CONNECT pin-13.pin1 -> beam9-2.hole6 STIFF

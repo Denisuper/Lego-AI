@@ -1,14 +1,14 @@
 STEP 28
-ADD beam1x11-4 32525 black
-POS beam1x11-4 3 -5 1 0 1 0 0 0 -1 -1 0 0
+ADD beam11-4 32525 black
+POS beam11-4 3 -5 1 0 1 0 0 0 -1 -1 0 0
 ADD pin-37 2780 black
 POS pin-37 3.5 -10 1 -1 0 0 0 -1 0 0 0 1
 ADD pin-38 43093 blue
 POS pin-38 4.5 -4 1 -1 0 0 0 0 -1 0 -1 0
-ADD bush-9 32054 black
-POS bush-9 3 -4 1 -1 0 0 0 0 -1 0 -1 0
-CONNECT pin-37.pin2 -> beam1x11-4.hole11 STIFF
-CONNECT bush-9.pin1 -> beam1x11-4.hole5 STIFF
-CONNECT pin-3.pin2 -> beam1x11-4.hole1 STIFF
-CONNECT pin-36.axle1 -> beam1x11-4.hole10 TURNS
-CONNECT bush-9.pin2 -> beam1x7-2.hole5 STIFF
+ADD pin-39 32054 black
+POS pin-39 3 -4 1 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-37.pin2 -> beam11-4.hole11 STIFF
+CONNECT pin-39.pin1 -> beam11-4.hole5 STIFF
+CONNECT pin-4.pin2 -> beam11-4.hole1 STIFF
+CONNECT pin-36.axle1 -> beam11-4.hole10 TURNS
+CONNECT pin-39.pin2 -> beam7-2.hole5 STIFF

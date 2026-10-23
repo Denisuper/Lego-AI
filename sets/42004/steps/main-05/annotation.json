@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x11-2",
+        "name": "beam11-2",
         "part_number": "32525",
         "count": 1
       }
@@ -17,7 +17,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x11-2",
+        "name": "beam11-2",
         "part_number": "32525",
         "catalog_name": "Technic Beam 1 x 11 Thick",
         "color": "Black",
@@ -27,22 +27,22 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-1's pin3 goes into beam1x11-2's hole1 (stiff)",
-      "pin-2's pin3 goes into beam1x11-2's hole3 (stiff)",
-      "conn-1's pin2 goes into beam1x11-2's hole5 (stiff)",
-      "axle5-1's axle4 goes into beam1x11-2's hole6 (turns)",
-      "axle3-1's axle3 goes into beam1x11-2's hole8 (turns)",
-      "axle3-2's axle3 goes into beam1x11-2's hole11 (turns)",
-      "axle7-1's axle5 goes into beam1x11-2's hole9 (turns)"
+      "pin-1's pin3 goes into beam11-2's hole1 (stiff)",
+      "pin-2's pin3 goes into beam11-2's hole3 (stiff)",
+      "pin-3's pin2 goes into beam11-2's hole5 (stiff)",
+      "axle5-1's axle4 goes into beam11-2's hole6 (turns)",
+      "axle3-1's axle3 goes into beam11-2's hole8 (turns)",
+      "axle3-2's axle3 goes into beam11-2's hole11 (turns)",
+      "axle7-1's axle5 goes into beam11-2's hole9 (turns)"
     ],
     "who_does_what_to_which": [
-      "beam1x11-2 holds pin-1",
-      "beam1x11-2 holds pin-2",
-      "beam1x11-2 holds conn-1",
-      "beam1x11-2 spins on axle5-1",
-      "beam1x11-2 spins on axle3-1",
-      "beam1x11-2 spins on axle3-2",
-      "beam1x11-2 spins on axle7-1"
+      "beam11-2 holds pin-1",
+      "beam11-2 holds pin-2",
+      "beam11-2 holds pin-3",
+      "beam11-2 spins on axle5-1",
+      "beam11-2 spins on axle3-1",
+      "beam11-2 spins on axle3-2",
+      "beam11-2 spins on axle7-1"
     ],
     "where_everything_is_after": [
       "TO WRITE"

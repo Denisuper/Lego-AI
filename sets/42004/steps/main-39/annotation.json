@@ -11,42 +11,12 @@
   "answer": {
     "new_parts": [],
     "what_each_new_part_touches": [
-      "pin-54's pin1 goes into beam3x5-9's hole1 (stiff)",
-      "pin-55's pin1 goes into beam3x5-9's hole5 (stiff)",
-      "pin-56's pin1 goes into beam3x5-9's hole4 (stiff)",
-      "pin-57's axle1 goes into beam3x5-9's hole3 (turns)",
-      "pin-55's pin2 goes into beam1x5-3's hole2 (stiff)",
-      "pin-56's pin2 goes into beam1x5-3's hole1 (stiff)",
-      "pin-54's pin2 goes into beam1x4-7's hole1 (stiff)",
-      "axle2-6's axle1 goes into beam1x4-7's axlehole1 (locked)",
-      "pin-54's pin2 goes into beam1x7-5's hole2 (stiff)",
-      "pin-55's pin2 goes into beam1x7-5's hole6 (stiff)",
-      "pin-56's pin2 goes into beam1x7-5's hole5 (stiff)",
-      "pin-57's pin1 goes into beam1x7-5's hole4 (stiff)",
-      "axle2-6's axle1 goes into beam1x7-5's hole1 (turns)",
-      "axle2-6's axle2 goes into beam1x2-1's axlehole2 (locked)",
-      "axle7-2's axle7 goes into beam1x2-1's axlehole1 (locked)",
-      "axle2-6's axle2 goes into beam1x2-2's axlehole2 (locked)",
-      "axle7-2's axle7 goes into beam1x2-2's axlehole1 (locked)"
+      "axle7-2's axle7 goes into beam2-9's axlehole1 (locked)",
+      "axle7-2's axle7 goes into beam2-10's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam3x5-9 holds pin-54",
-      "beam3x5-9 holds pin-55",
-      "beam3x5-9 holds pin-56",
-      "beam3x5-9 spins on pin-57",
-      "beam1x5-3 holds pin-55",
-      "beam1x5-3 holds pin-56",
-      "beam1x4-7 holds pin-54",
-      "axle2-6 carries beam1x4-7",
-      "beam1x7-5 holds pin-54",
-      "beam1x7-5 holds pin-55",
-      "beam1x7-5 holds pin-56",
-      "beam1x7-5 holds pin-57",
-      "beam1x7-5 spins on axle2-6",
-      "axle2-6 carries beam1x2-1",
-      "axle7-2 carries beam1x2-1",
-      "axle2-6 carries beam1x2-2",
-      "axle7-2 carries beam1x2-2"
+      "axle7-2 carries beam2-9",
+      "axle7-2 carries beam2-10"
     ],
     "where_everything_is_after": [
       "TO WRITE"

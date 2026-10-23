@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x11-3",
+        "name": "beam11-3",
         "part_number": "32525",
         "count": 1
       },
       {
-        "name": "bush-7",
+        "name": "pin-32",
         "part_number": "32054",
         "count": 1
       },
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x11-3",
+        "name": "beam11-3",
         "part_number": "32525",
         "catalog_name": "Technic Beam 1 x 11 Thick",
         "color": "Black",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "bush-7",
+        "name": "pin-32",
         "part_number": "32054",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
         "color": "Black",
@@ -69,16 +69,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "bush-7's pin1 goes into beam1x11-3's hole5 (stiff)",
-      "pin-34's pin1 goes into beam1x11-3's hole11 (stiff)",
-      "pin-4's pin2 goes into beam1x11-3's hole1 (stiff)",
-      "bush-7's pin2 goes into beam1x7-1's hole5 (stiff)"
+      "pin-32's pin1 goes into beam11-3's hole5 (stiff)",
+      "pin-34's pin1 goes into beam11-3's hole11 (stiff)",
+      "pin-5's pin2 goes into beam11-3's hole1 (stiff)",
+      "pin-32's pin2 goes into beam7-1's hole5 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x11-3 holds bush-7",
-      "beam1x11-3 holds pin-34",
-      "beam1x11-3 holds pin-4",
-      "beam1x7-1 holds bush-7"
+      "beam11-3 holds pin-32",
+      "beam11-3 holds pin-34",
+      "beam11-3 holds pin-5",
+      "beam7-1 holds pin-32"
     ],
     "where_everything_is_after": [
       "TO WRITE"

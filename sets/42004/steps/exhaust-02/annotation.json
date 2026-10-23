@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "conn-7",
+        "name": "conn-5",
         "part_number": "32184",
         "count": 1
       }
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-7",
+        "name": "conn-5",
         "part_number": "32184",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
         "color": "Black",
@@ -42,11 +42,11 @@
     ],
     "what_each_new_part_touches": [
       "axle8-1's axle6 goes into worm-1's axlehole1 (locked)",
-      "axle8-1's axle5 goes into conn-7's hole1 (turns)"
+      "axle8-1's axle5 goes into conn-5's hole1 (turns)"
     ],
     "who_does_what_to_which": [
       "axle8-1 carries worm-1",
-      "conn-7 spins on axle8-1"
+      "conn-5 spins on axle8-1"
     ],
     "where_everything_is_after": [
       "TO WRITE"

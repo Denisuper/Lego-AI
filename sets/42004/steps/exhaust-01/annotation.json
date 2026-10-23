@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "conn-6",
+        "name": "pin-13",
         "part_number": "87082",
         "count": 1
       }
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-6",
+        "name": "pin-13",
         "part_number": "87082",
         "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Big Squared Pin Holes]",
         "color": "Light Bluish Grey",
@@ -41,10 +41,10 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle8-1's axle8 goes into conn-6's hole1 (turns)"
+      "axle8-1's axle8 goes into pin-13's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "conn-6 spins on axle8-1"
+      "pin-13 spins on axle8-1"
     ],
     "where_everything_is_after": [
       "TO WRITE"

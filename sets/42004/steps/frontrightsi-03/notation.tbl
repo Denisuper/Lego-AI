@@ -1,10 +1,3 @@
 ATTACH exhaust
-CONNECT axle8-1.axle8 -> conn-6.hole1 TURNS
-CONNECT axle8-1.axle6 -> worm-1.axlehole1 LOCKED
-CONNECT axle8-1.axle5 -> conn-7.hole1 TURNS
-CONNECT axle3-4.axle2 -> conn-7.axlehole1 LOCKED
-CONNECT axle8-1.axle4 -> bush-1.axlehole1 LOCKED
-CONNECT axle8-1.axle4 -> bush-2.axlehole1 LOCKED
-CONNECT axle8-1.axle2 -> conn-8.hole1 TURNS
-CONNECT axle8-1.axle1 -> conn-9.axlehole1 LOCKED
-CONNECT conn-6.pin2 -> beam1x9-1.hole6 STIFF
+CONNECT axle3-4.axle2 -> conn-5.axlehole1 LOCKED
+CONNECT pin-13.pin2 -> beam9-1.hole6 STIFF

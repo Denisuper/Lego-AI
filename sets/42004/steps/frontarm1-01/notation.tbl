@@ -1,11 +1,11 @@
 ADD beam3x5-9 32526 yellow
 POS beam3x5-9 0 0 0 0 -1 0 -1 0 0 0 0 -1
-ADD pin-54 2780 black
-POS pin-54 0.5 0 0 1 0 0 0 -1 0 0 0 -1
 ADD pin-55 2780 black
-POS pin-55 0.5 0 -4 1 0 0 0 -1 0 0 0 -1
+POS pin-55 0.5 0 0 1 0 0 0 -1 0 0 0 -1
 ADD pin-56 2780 black
-POS pin-56 0.5 0 -3 1 0 0 0 -1 0 0 0 -1
-CONNECT pin-54.pin1 -> beam3x5-9.hole1 STIFF
-CONNECT pin-55.pin1 -> beam3x5-9.hole5 STIFF
-CONNECT pin-56.pin1 -> beam3x5-9.hole4 STIFF
+POS pin-56 0.5 0 -4 1 0 0 0 -1 0 0 0 -1
+ADD pin-57 2780 black
+POS pin-57 0.5 0 -3 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-55.pin1 -> beam3x5-9.hole1 STIFF
+CONNECT pin-56.pin1 -> beam3x5-9.hole5 STIFF
+CONNECT pin-57.pin1 -> beam3x5-9.hole4 STIFF

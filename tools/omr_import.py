@@ -66,12 +66,13 @@ def name_for(num):
     elif not c and "Bucket" in n: base = "bucket"
     elif c.get("gear_teeth"): base = "gear" + c["gear_teeth"].replace("/", "-")
     elif "Worm" in n: base = "worm"
-    elif "Bush" in n: base = "bush"
-    elif re.search(r"Axle (\d+(\.\d+)?)", n) and "Pin" not in n and "Connector" not in n:
-        base = "axle" + re.search(r"Axle (\d+(\.\d+)?)", n).group(1).replace(".", "")
-    elif "Pin" in n and "Connector" not in n: base = "pin"
-    elif re.search(r"Beam (\d+) x (\d+)", n): base = "beam" + "x".join(re.search(r"Beam (\d+) x (\d+)", n).groups())
+    elif re.search(r"Beam (\d+) x (\d+)", n) and not re.search(r"Beam 1 x", n): base = "beam" + "x".join(re.search(r"Beam (\d+) x (\d+)", n).groups())
     elif re.search(r"Beam 1 x (\d+)", n): base = "beam" + re.search(r"Beam 1 x (\d+)", n).group(1)
+    elif re.search(r"Liftarm|Beam", n): base = "beam"
+    elif re.match(r"Technic (Axle )?Pin", n): base = "pin"
+    elif re.search(r"Axle (\d+(\.\d+)?)", n) and "Connector" not in n:
+        base = "axle" + re.search(r"Axle (\d+(\.\d+)?)", n).group(1).replace(".", "")
+    elif "Bush" in n: base = "bush"
     elif "Connector" in n: base = "conn"
     elif "Panel" in n or "Fairing" in n: base = "panel"
     else: base = re.sub(r"[^a-z]+", "", n.split()[-1].lower())[:8] or "part"
@@ -107,13 +108,16 @@ MALE = ("pin stop (round)", "axle stop (cross)", "bar (3.2 mm)")
 FEMALE = ("pin hole (round)", "axle hole (cross)", "small hole (3.2 mm bar)", "clip")
 
 
-def find_joins(new, others):
-    """Joins between parts in `new` and parts in `new` + `others`: each hole gets the stop sitting in it."""
+def find_joins(new, others, inside=()):
+    """Joins between parts in `new` and parts in `new` + `others`: each hole gets the stop sitting in it.
+    Pairs where both parts are in `inside` (a side build being attached) were already joined in the side build."""
     pool = new + others
+    inside = set(id(p) for p in inside)
     out, seen = [], set()
     for a in pool:
         for b in pool:
             if a is b or (a not in new and b not in new): continue  # at least one of the two is new this step
+            if id(a) in inside and id(b) in inside: continue
             for pa in a.points:
                 if pa[1] not in FEMALE: continue
                 best = None
@@ -180,7 +184,7 @@ def build_file(f, build):
             lines.append(f"POS {p.name} {fmt(p.t[0])} {fmt(p.t[1])} {fmt(p.t[2])} " + " ".join(f"{round(c, 3):g}" for c in p.M))
         for g in attach_lines:
             lines.append(f"ATTACH {g}")
-        joins = find_joins(new + attached, [p for p in ctx])
+        joins = find_joins(new + attached, [p for p in ctx], inside=attached)
         for mpart, mpt, fpart, fpt in joins:
             m = mode(mpt[1], fpt[1], [mpart.num, fpart.num])
             lines.append(f"CONNECT {mpart.name}.{mpt[0]} -> {fpart.name}.{fpt[0]} {m}")

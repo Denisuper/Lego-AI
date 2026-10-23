@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x11-1",
+        "name": "beam11-1",
         "part_number": "32525",
         "count": 1
       },
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x11-1",
+        "name": "beam11-1",
         "part_number": "32525",
         "catalog_name": "Technic Beam 1 x 11 Thick",
         "color": "Black",
@@ -55,12 +55,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-1's pin1 goes into beam1x11-1's hole1 (stiff)",
-      "pin-2's pin1 goes into beam1x11-1's hole3 (stiff)"
+      "pin-1's pin1 goes into beam11-1's hole1 (stiff)",
+      "pin-2's pin1 goes into beam11-1's hole3 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x11-1 holds pin-1",
-      "beam1x11-1 holds pin-2"
+      "beam11-1 holds pin-1",
+      "beam11-1 holds pin-2"
     ],
     "where_everything_is_after": [
       "TO WRITE"

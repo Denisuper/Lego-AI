@@ -56,15 +56,15 @@
     ],
     "what_each_new_part_touches": [
       "axle4-6's axle4 goes into beam3x5-6's hole7 (turns)",
-      "pin-11's pin2 goes into beam3x5-6's hole4 (stiff)",
-      "pin-12's pin2 goes into beam3x5-6's hole1 (stiff)",
+      "pin-10's pin2 goes into beam3x5-6's hole4 (stiff)",
+      "pin-11's pin2 goes into beam3x5-6's hole1 (stiff)",
       "axle5-2's axle1 goes into beam3x5-6's hole5 (turns)",
       "axle4-6's axle3 goes into bush-4's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
       "beam3x5-6 spins on axle4-6",
+      "beam3x5-6 holds pin-10",
       "beam3x5-6 holds pin-11",
-      "beam3x5-6 holds pin-12",
       "beam3x5-6 spins on axle5-2",
       "axle4-6 carries bush-4"
     ],

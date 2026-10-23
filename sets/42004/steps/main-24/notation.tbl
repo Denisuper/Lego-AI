@@ -1,15 +1,4 @@
 STEP 24
 ATTACH seat
-CONNECT pin-29.pin1 -> beam1x7-1.hole3 STIFF
-CONNECT pin-30.pin1 -> beam1x7-1.hole4 STIFF
-CONNECT pin-31.axle1 -> beam1x7-1.hole1 TURNS
-CONNECT pin-28.pin3 -> beam1x7-1.hole2 STIFF
-CONNECT pin-29.pin2 -> beam2x4-1.hole4 STIFF
-CONNECT pin-30.pin2 -> beam2x4-1.hole3 STIFF
-CONNECT axle2-3.axle1 -> beam2x4-1.axlehole1 LOCKED
-CONNECT axle2-3.axle2 -> beam1x3-1.axlehole1 LOCKED
-CONNECT axle2-3.axle1 -> beam1x3-2.axlehole1 LOCKED
-CONNECT pin-32.pin1 -> conn-14.hole1 TURNS
-CONNECT pin-29.pin3 -> beam1x7-2.hole3 STIFF
-CONNECT pin-30.pin3 -> beam1x7-2.hole4 STIFF
-CONNECT pin-25.pin3 -> beam1x7-2.hole2 STIFF
+CONNECT pin-27.pin3 -> beam7-1.hole2 STIFF
+CONNECT pin-24.pin3 -> beam7-2.hole2 STIFF

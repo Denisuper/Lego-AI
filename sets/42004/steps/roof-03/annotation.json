@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x3-5",
+        "name": "beam3-5",
         "part_number": "32523",
         "count": 1
       },
       {
-        "name": "pin-40",
+        "name": "beam2-7",
         "part_number": "60483",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x3-5",
+        "name": "beam3-5",
         "part_number": "32523",
         "catalog_name": "Technic Beam 1 x 3 Thick",
         "color": "Black",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-40",
+        "name": "beam2-7",
         "part_number": "60483",
         "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
         "color": "Black",
@@ -41,14 +41,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle7-3's axle6 goes into beam1x3-5's hole2 (turns)",
-      "pin-39's pin1 goes into beam1x3-5's hole3 (stiff)",
-      "axle2-4's axle1 goes into pin-40's axlehole1 (locked)"
+      "axle7-3's axle6 goes into beam3-5's hole2 (turns)",
+      "pin-40's pin1 goes into beam3-5's hole3 (stiff)",
+      "axle2-4's axle1 goes into beam2-7's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam1x3-5 spins on axle7-3",
-      "beam1x3-5 holds pin-39",
-      "axle2-4 carries pin-40"
+      "beam3-5 spins on axle7-3",
+      "beam3-5 holds pin-40",
+      "axle2-4 carries beam2-7"
     ],
     "where_everything_is_after": [
       "TO WRITE"

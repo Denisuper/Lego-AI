@@ -7,8 +7,13 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x9-1",
+        "name": "beam9-1",
         "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-6",
+        "part_number": "6558",
         "count": 1
       },
       {
@@ -18,11 +23,6 @@
       },
       {
         "name": "pin-8",
-        "part_number": "6558",
-        "count": 1
-      },
-      {
-        "name": "pin-9",
         "part_number": "6558",
         "count": 1
       }
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x9-1",
+        "name": "beam9-1",
         "part_number": "40490",
         "catalog_name": "Technic Beam 1 x 9 Thick",
         "color": "Yellow",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-7",
+        "name": "pin-6",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-8",
+        "name": "pin-7",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -59,7 +59,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-9",
+        "name": "pin-8",
         "part_number": "6558",
         "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
         "color": "Blue",
@@ -69,14 +69,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-7's pin1 goes into beam1x9-1's hole1 (stiff)",
-      "pin-8's pin1 goes into beam1x9-1's hole9 (stiff)",
-      "pin-9's pin1 goes into beam1x9-1's hole7 (stiff)"
+      "pin-6's pin1 goes into beam9-1's hole1 (stiff)",
+      "pin-7's pin1 goes into beam9-1's hole9 (stiff)",
+      "pin-8's pin1 goes into beam9-1's hole7 (stiff)"
     ],
     "who_does_what_to_which": [
-      "beam1x9-1 holds pin-7",
-      "beam1x9-1 holds pin-8",
-      "beam1x9-1 holds pin-9"
+      "beam9-1 holds pin-6",
+      "beam9-1 holds pin-7",
+      "beam9-1 holds pin-8"
     ],
     "where_everything_is_after": [
       "TO WRITE"

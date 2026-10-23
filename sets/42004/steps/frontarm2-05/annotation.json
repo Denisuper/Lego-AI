@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x5-5",
+        "name": "beam5-5",
         "part_number": "32017",
         "count": 1
       },
       {
-        "name": "beam1x3-10",
+        "name": "beam3-10",
         "part_number": "6632",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x5-5",
+        "name": "beam5-5",
         "part_number": "32017",
         "catalog_name": "Technic Beam 1 x 5 Thin",
         "color": "Yellow",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x3-10",
+        "name": "beam3-10",
         "part_number": "6632",
         "catalog_name": "Technic Beam 1 x 3 Thin",
         "color": "Yellow",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle2-8's axle2 goes into beam1x5-5's hole5 (turns)",
-      "axle2-8's axle2 goes into beam1x3-10's axlehole2 (locked)"
+      "axle2-8's axle2 goes into beam5-5's hole5 (turns)",
+      "axle2-8's axle2 goes into beam3-10's axlehole2 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam1x5-5 spins on axle2-8",
-      "axle2-8 carries beam1x3-10"
+      "beam5-5 spins on axle2-8",
+      "axle2-8 carries beam3-10"
     ],
     "where_everything_is_after": [
       "TO WRITE"

@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-8",
+        "name": "pin-14",
         "part_number": "62462",
         "count": 1
       },
       {
-        "name": "conn-9",
+        "name": "conn-6",
         "part_number": "59443",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-8",
+        "name": "pin-14",
         "part_number": "62462",
         "catalog_name": "Technic Pin Connector Round [Slotted]",
         "color": "Black",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-9",
+        "name": "conn-6",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Black",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle8-1's axle2 goes into conn-8's hole1 (turns)",
-      "axle8-1's axle1 goes into conn-9's axlehole1 (locked)"
+      "axle8-1's axle2 goes into pin-14's hole1 (turns)",
+      "axle8-1's axle1 goes into conn-6's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "conn-8 spins on axle8-1",
-      "axle8-1 carries conn-9"
+      "pin-14 spins on axle8-1",
+      "axle8-1 carries conn-6"
     ],
     "where_everything_is_after": [
       "TO WRITE"

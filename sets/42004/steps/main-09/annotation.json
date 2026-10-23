@@ -42,11 +42,11 @@
     ],
     "what_each_new_part_touches": [
       "axle4-4's axle3 goes into gear12-1's axlehole1 (locked)",
-      "axle4-4's axle4 goes into conn-2's hole1 (turns)"
+      "axle4-4's axle4 goes into conn-1's hole1 (turns)"
     ],
     "who_does_what_to_which": [
       "axle4-4 carries gear12-1",
-      "conn-2 spins on axle4-4"
+      "conn-1 spins on axle4-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

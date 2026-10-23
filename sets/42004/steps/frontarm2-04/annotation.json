@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-31",
+        "name": "conn-28",
         "part_number": "59443",
         "count": 1
       },
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-31",
+        "name": "conn-28",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Black",
@@ -41,12 +41,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle2-8's axle1 goes into conn-31's axlehole1 (locked)",
-      "axle2-7's axle2 goes into conn-31's axlehole2 (locked)"
+      "axle2-8's axle1 goes into conn-28's axlehole1 (locked)",
+      "axle2-7's axle2 goes into conn-28's axlehole2 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle2-8 carries conn-31",
-      "axle2-7 carries conn-31"
+      "axle2-8 carries conn-28",
+      "axle2-7 carries conn-28"
     ],
     "where_everything_is_after": [
       "TO WRITE"

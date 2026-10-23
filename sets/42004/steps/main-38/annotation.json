@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x7-3",
+        "name": "beam7-3",
         "part_number": "32348",
         "count": 1
       },
       {
-        "name": "beam1x7-4",
+        "name": "beam7-4",
         "part_number": "32348",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x7-3",
+        "name": "beam7-3",
         "part_number": "32348",
         "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
         "color": "Yellow",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "beam1x7-4",
+        "name": "beam7-4",
         "part_number": "32348",
         "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
         "color": "Yellow",
@@ -41,16 +41,16 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-38's axle1 goes into beam1x7-3's hole2 (turns)",
-      "axle9-1's axle1 goes into beam1x7-3's axlehole1 (locked)",
-      "pin-33's axle1 goes into beam1x7-4's hole2 (turns)",
-      "axle9-1's axle9 goes into beam1x7-4's axlehole1 (locked)"
+      "pin-38's axle1 goes into beam7-3's hole2 (turns)",
+      "axle9-1's axle1 goes into beam7-3's axlehole1 (locked)",
+      "pin-33's axle1 goes into beam7-4's hole2 (turns)",
+      "axle9-1's axle9 goes into beam7-4's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam1x7-3 spins on pin-38",
-      "axle9-1 carries beam1x7-3",
-      "beam1x7-4 spins on pin-33",
-      "axle9-1 carries beam1x7-4"
+      "beam7-3 spins on pin-38",
+      "axle9-1 carries beam7-3",
+      "beam7-4 spins on pin-33",
+      "axle9-1 carries beam7-4"
     ],
     "where_everything_is_after": [
       "TO WRITE"

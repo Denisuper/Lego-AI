@@ -1,8 +1,8 @@
 STEP 26
 ADD pin-35 43093 blue
 POS pin-35 -0.5 -9 1 1 0 0 0 0 1 0 -1 0
-ADD conn-15 32034 black
-POS conn-15 1 -9 1 0 0 -1 1 0 0 0 -1 0
+ADD conn-12 32034 black
+POS conn-12 1 -9 1 0 0 -1 1 0 0 0 -1 0
 ADD pin-36 43093 blue
 POS pin-36 2.5 -9 1 -1 0 0 0 0 -1 0 -1 0
-CONNECT pin-35.axle1 -> beam1x11-3.hole10 TURNS
+CONNECT pin-35.axle1 -> beam11-3.hole10 TURNS

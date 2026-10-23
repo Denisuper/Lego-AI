@@ -7,12 +7,12 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "beam1x9-2",
+        "name": "beam9-2",
         "part_number": "40490",
         "count": 1
       },
       {
-        "name": "pin-16",
+        "name": "pin-15",
         "part_number": "4274",
         "count": 1
       }
@@ -22,7 +22,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "beam1x9-2",
+        "name": "beam9-2",
         "part_number": "40490",
         "catalog_name": "Technic Beam 1 x 9 Thick",
         "color": "Yellow",
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-16",
+        "name": "pin-15",
         "part_number": "4274",
         "catalog_name": "Technic Pin 1/2 without Friction Ridges",
         "color": "Light Bluish Grey",
@@ -41,20 +41,20 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-16's pin1 goes into beam1x9-2's hole2 (turns)",
-      "pin-7's pin3 goes into beam1x9-2's hole1 (stiff)",
-      "pin-8's pin3 goes into beam1x9-2's hole9 (stiff)",
-      "pin-9's pin3 goes into beam1x9-2's hole7 (stiff)",
-      "axle5-2's axle4 goes into beam1x9-2's hole4 (turns)",
-      "conn-6's pin1 goes into beam1x9-2's hole6 (stiff)"
+      "pin-15's pin1 goes into beam9-2's hole2 (turns)",
+      "pin-6's pin3 goes into beam9-2's hole1 (stiff)",
+      "pin-7's pin3 goes into beam9-2's hole9 (stiff)",
+      "pin-8's pin3 goes into beam9-2's hole7 (stiff)",
+      "axle5-2's axle4 goes into beam9-2's hole4 (turns)",
+      "pin-13's pin1 goes into beam9-2's hole6 (stiff)"
     ],
     "who_does_what_to_which": [
-      "pin-16 spins on beam1x9-2",
-      "beam1x9-2 holds pin-7",
-      "beam1x9-2 holds pin-8",
-      "beam1x9-2 holds pin-9",
-      "beam1x9-2 spins on axle5-2",
-      "beam1x9-2 holds conn-6"
+      "pin-15 spins on beam9-2",
+      "beam9-2 holds pin-6",
+      "beam9-2 holds pin-7",
+      "beam9-2 holds pin-8",
+      "beam9-2 spins on axle5-2",
+      "beam9-2 holds pin-13"
     ],
     "where_everything_is_after": [
       "TO WRITE"

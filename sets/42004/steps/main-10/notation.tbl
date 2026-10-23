@@ -1,7 +1,7 @@
 STEP 10
+ADD conn-3 6536 yellow
+POS conn-3 3 0 0 1 0 0 0 0 1 0 -1 0
 ADD conn-4 6536 yellow
-POS conn-4 3 0 0 1 0 0 0 0 1 0 -1 0
-ADD conn-5 6536 yellow
-POS conn-5 -1 0 0 1 0 0 0 0 1 0 -1 0
-CONNECT axle5-1.axle5 -> conn-4.axlehole1 LOCKED
-CONNECT axle5-1.axle1 -> conn-5.axlehole1 LOCKED
+POS conn-4 -1 0 0 1 0 0 0 0 1 0 -1 0
+CONNECT axle5-1.axle5 -> conn-3.axlehole1 LOCKED
+CONNECT axle5-1.axle1 -> conn-4.axlehole1 LOCKED

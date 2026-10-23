@@ -1,14 +1,14 @@
 STEP 23
+ADD pin-25 2780 black
+POS pin-25 -0.5 0 -2 -1 0 0 0 -1 0 0 0 1
 ADD pin-26 2780 black
-POS pin-26 -0.5 0 -2 -1 0 0 0 -1 0 0 0 1
-ADD pin-27 2780 black
-POS pin-27 -0.5 0 -4 -1 0 0 0 -1 0 0 0 1
+POS pin-26 -0.5 0 -4 -1 0 0 0 -1 0 0 0 1
 ADD beam3x5-8 32526 yellow
 POS beam3x5-8 -1 -4 -2 0 -1 0 0 0 1 -1 0 0
-ADD pin-28 6558 blue
-POS pin-28 -1 -4 -2 1 0 0 0 0.986 0.164 0 -0.164 0.986
-CONNECT pin-26.pin2 -> beam3x5-8.hole5 STIFF
-CONNECT pin-27.pin2 -> beam3x5-8.hole7 STIFF
-CONNECT pin-28.pin2 -> beam3x5-8.hole1 STIFF
-CONNECT pin-26.pin1 -> beam1x11-1.hole4 STIFF
-CONNECT pin-27.pin1 -> beam1x11-1.hole2 STIFF
+ADD pin-27 6558 blue
+POS pin-27 -1 -4 -2 1 0 0 0 0.986 0.164 0 -0.164 0.986
+CONNECT pin-25.pin2 -> beam3x5-8.hole5 STIFF
+CONNECT pin-26.pin2 -> beam3x5-8.hole7 STIFF
+CONNECT pin-27.pin2 -> beam3x5-8.hole1 STIFF
+CONNECT pin-25.pin1 -> beam11-1.hole4 STIFF
+CONNECT pin-26.pin1 -> beam11-1.hole2 STIFF

@@ -7,17 +7,17 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "pin-31",
+        "name": "pin-30",
         "part_number": "43093",
         "count": 1
       },
       {
-        "name": "conn-14",
+        "name": "conn-11",
         "part_number": "6536",
         "count": 1
       },
       {
-        "name": "pin-32",
+        "name": "pin-31",
         "part_number": "4274",
         "count": 1
       },
@@ -32,7 +32,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "pin-31",
+        "name": "pin-30",
         "part_number": "43093",
         "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
         "color": "Blue",
@@ -41,7 +41,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-14",
+        "name": "conn-11",
         "part_number": "6536",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular",
         "color": "Yellow",
@@ -50,7 +50,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "pin-32",
+        "name": "pin-31",
         "part_number": "4274",
         "catalog_name": "Technic Pin 1/2 without Friction Ridges",
         "color": "Light Bluish Grey",
@@ -69,12 +69,12 @@
       }
     ],
     "what_each_new_part_touches": [
-      "pin-32's pin1 goes into conn-14's hole1 (turns)",
-      "pin-31's axle1 goes into beam1x7-1's hole1 (turns)"
+      "pin-31's pin1 goes into conn-11's hole1 (turns)",
+      "pin-30's axle1 goes into beam7-1's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "pin-32 spins on conn-14",
-      "beam1x7-1 spins on pin-31"
+      "pin-31 spins on conn-11",
+      "beam7-1 spins on pin-30"
     ],
     "where_everything_is_after": [
       "TO WRITE"

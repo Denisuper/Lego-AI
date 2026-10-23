@@ -1,7 +1,7 @@
 STEP 6
-ADD pin-3 6558 blue
-POS pin-3 3 0 1 1 0 0 0 1 0 0 0 1
 ADD pin-4 6558 blue
-POS pin-4 -1 0 1 -1 0 0 0 -1 0 0 0 1
-CONNECT pin-4.pin1 -> beam1x11-1.hole7 STIFF
-CONNECT pin-3.pin1 -> beam1x11-2.hole7 STIFF
+POS pin-4 3 0 1 1 0 0 0 1 0 0 0 1
+ADD pin-5 6558 blue
+POS pin-5 -1 0 1 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-5.pin1 -> beam11-1.hole7 STIFF
+CONNECT pin-4.pin1 -> beam11-2.hole7 STIFF

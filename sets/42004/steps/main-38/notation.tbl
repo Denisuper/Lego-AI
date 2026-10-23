@@ -1,9 +1,9 @@
 STEP 38
-ADD beam1x7-3 32348 yellow
-POS beam1x7-3 5 -4 3 0 1 0 1 0 0 0 0 -1
-ADD beam1x7-4 32348 yellow
-POS beam1x7-4 -3 -4 3 0 1 0 1 0 0 0 0 -1
-CONNECT pin-38.axle1 -> beam1x7-3.hole2 TURNS
-CONNECT axle9-1.axle1 -> beam1x7-3.axlehole1 LOCKED
-CONNECT pin-33.axle1 -> beam1x7-4.hole2 TURNS
-CONNECT axle9-1.axle9 -> beam1x7-4.axlehole1 LOCKED
+ADD beam7-3 32348 yellow
+POS beam7-3 5 -4 3 0 1 0 1 0 0 0 0 -1
+ADD beam7-4 32348 yellow
+POS beam7-4 -3 -4 3 0 1 0 1 0 0 0 0 -1
+CONNECT pin-38.axle1 -> beam7-3.hole2 TURNS
+CONNECT axle9-1.axle1 -> beam7-3.axlehole1 LOCKED
+CONNECT pin-33.axle1 -> beam7-4.hole2 TURNS
+CONNECT axle9-1.axle9 -> beam7-4.axlehole1 LOCKED

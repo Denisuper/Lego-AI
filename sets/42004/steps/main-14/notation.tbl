@@ -5,9 +5,9 @@ ADD beam3x5-4 32250 yellow
 POS beam3x5-4 2.25 -3 -7 0 -1 0 -1 0 0 0 0 -1
 CONNECT axle3-3.axle3 -> beam3x5-3.axlehole3 LOCKED
 CONNECT axle3-4.axle3 -> beam3x5-3.axlehole2 LOCKED
-CONNECT pin-14.pin3 -> beam3x5-3.hole2 STIFF
+CONNECT pin-12.pin3 -> beam3x5-3.hole2 STIFF
 CONNECT axle7-2.axle3 -> beam3x5-3.hole1 TURNS
 CONNECT axle3-3.axle3 -> beam3x5-4.axlehole3 LOCKED
 CONNECT axle3-4.axle3 -> beam3x5-4.axlehole2 LOCKED
-CONNECT pin-14.pin3 -> beam3x5-4.hole2 STIFF
+CONNECT pin-12.pin3 -> beam3x5-4.hole2 STIFF
 CONNECT axle7-2.axle3 -> beam3x5-4.hole1 TURNS

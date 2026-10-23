@@ -7,7 +7,7 @@
     "picture": null,
     "parts_box": [
       {
-        "name": "conn-12",
+        "name": "conn-9",
         "part_number": "59443",
         "count": 1
       },
@@ -17,7 +17,7 @@
         "count": 1
       },
       {
-        "name": "conn-13",
+        "name": "conn-10",
         "part_number": "59443",
         "count": 1
       }
@@ -27,7 +27,7 @@
   "answer": {
     "new_parts": [
       {
-        "name": "conn-12",
+        "name": "conn-9",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Black",
@@ -45,7 +45,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-13",
+        "name": "conn-10",
         "part_number": "59443",
         "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
         "color": "Black",
@@ -55,14 +55,14 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle4-7's axle4 goes into conn-12's axlehole2 (locked)",
-      "axle4-4's axle1 goes into conn-12's axlehole1 (locked)",
-      "axle4-7's axle1 goes into conn-13's axlehole1 (locked)"
+      "axle4-7's axle4 goes into conn-9's axlehole2 (locked)",
+      "axle4-4's axle1 goes into conn-9's axlehole1 (locked)",
+      "axle4-7's axle1 goes into conn-10's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "axle4-7 carries conn-12",
-      "axle4-4 carries conn-12",
-      "axle4-7 carries conn-13"
+      "axle4-7 carries conn-9",
+      "axle4-4 carries conn-9",
+      "axle4-7 carries conn-10"
     ],
     "where_everything_is_after": [
       "TO WRITE"

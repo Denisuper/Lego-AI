@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "name": "conn-22",
+        "name": "conn-19",
         "part_number": "42003",
         "count": 1
       }
@@ -31,7 +31,7 @@
         "rotation": "TO WRITE"
       },
       {
-        "name": "conn-22",
+        "name": "conn-19",
         "part_number": "42003",
         "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
         "color": "Yellow",
@@ -41,10 +41,10 @@
       }
     ],
     "what_each_new_part_touches": [
-      "axle8-2's axle8 goes into conn-22's hole1 (turns)"
+      "axle8-2's axle8 goes into conn-19's hole1 (turns)"
     ],
     "who_does_what_to_which": [
-      "conn-22 spins on axle8-2"
+      "conn-19 spins on axle8-2"
     ],
     "where_everything_is_after": [
       "TO WRITE"

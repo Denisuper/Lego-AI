@@ -1,5 +1,5 @@
 STEP 20
-ADD beam1x5-1 32316 black
-POS beam1x5-1 1 1 -1 0 0 -1 0 1 0 1 0 0
-CONNECT bush-5.pin2 -> beam1x5-1.hole1 STIFF
-CONNECT bush-6.pin2 -> beam1x5-1.hole5 STIFF
+ADD beam5-1 32316 black
+POS beam5-1 1 1 -1 0 0 -1 0 1 0 1 0 0
+CONNECT pin-20.pin2 -> beam5-1.hole1 STIFF
+CONNECT pin-21.pin2 -> beam5-1.hole5 STIFF

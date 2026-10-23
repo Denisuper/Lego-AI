@@ -1,10 +1,10 @@
 ADD axle2-9 32062 red
 POS axle2-9 0.5 0 -1 -1 0 0 0 -1 0 0 0 1
-ADD beam1x2-3 41677 lightbluishgrey
-POS beam1x2-3 0.25 1 -1 0 -1 0 0 0 -1 1 0 0
-ADD beam1x2-4 41677 lightbluishgrey
-POS beam1x2-4 -0.25 1 -1 0 -1 0 0 0 -1 1 0 0
-CONNECT axle2-9.axle2 -> beam1x2-3.axlehole2 LOCKED
-CONNECT axle2-9.axle2 -> beam1x2-4.axlehole2 LOCKED
-CONNECT axle2-9.axle1 -> beam1x4-8.axlehole1 LOCKED
-CONNECT axle2-9.axle1 -> beam1x7-6.hole1 TURNS
+ADD beam2-11 41677 lightbluishgrey
+POS beam2-11 0.25 1 -1 0 -1 0 0 0 -1 1 0 0
+ADD beam2-12 41677 lightbluishgrey
+POS beam2-12 -0.25 1 -1 0 -1 0 0 0 -1 1 0 0
+CONNECT axle2-9.axle2 -> beam2-11.axlehole2 LOCKED
+CONNECT axle2-9.axle2 -> beam2-12.axlehole2 LOCKED
+CONNECT axle2-9.axle1 -> beam4-8.axlehole1 LOCKED
+CONNECT axle2-9.axle1 -> beam7-6.hole1 TURNS

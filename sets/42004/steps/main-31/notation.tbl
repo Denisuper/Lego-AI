@@ -1,10 +1,10 @@
 STEP 31
-ADD bush-11 32054 black
-POS bush-11 -1 -10 3 -1 0 0 0 -1 0 0 0 1
+ADD pin-44 32054 black
+POS pin-44 -1 -10 3 -1 0 0 0 -1 0 0 0 1
 ADD axle3-6 4519 lightbluishgrey
 POS axle3-6 1 -10 3 -1 0 0 0 -1 0 0 0 1
-ADD bush-12 32054 black
-POS bush-12 3 -10 3 1 0 0 0 1 0 0 0 1
-CONNECT axle3-6.axle3 -> bush-11.axlehole1 LOCKED
-CONNECT axle3-6.axle1 -> bush-12.axlehole1 LOCKED
-CONNECT bush-11.pin1 -> pin-40.hole1 STIFF
+ADD pin-45 32054 black
+POS pin-45 3 -10 3 1 0 0 0 1 0 0 0 1
+CONNECT axle3-6.axle3 -> pin-44.axlehole1 LOCKED
+CONNECT axle3-6.axle1 -> pin-45.axlehole1 LOCKED
+CONNECT pin-44.pin1 -> beam2-7.hole1 STIFF

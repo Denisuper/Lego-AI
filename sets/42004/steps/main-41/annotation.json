@@ -11,44 +11,14 @@
   "answer": {
     "new_parts": [],
     "what_each_new_part_touches": [
-      "pin-59's pin1 goes into beam3x5-10's hole5 (stiff)",
-      "pin-60's pin1 goes into beam3x5-10's hole4 (stiff)",
-      "pin-61's pin1 goes into beam3x5-10's hole1 (stiff)",
-      "pin-62's axle1 goes into beam3x5-10's hole3 (turns)",
       "axle3-10's axle2 goes into beam3x5-10's hole7 (turns)",
-      "pin-59's pin2 goes into beam1x5-6's hole2 (stiff)",
-      "pin-60's pin2 goes into beam1x5-6's hole1 (stiff)",
-      "pin-61's pin2 goes into beam1x4-8's hole1 (stiff)",
-      "axle2-9's axle1 goes into beam1x4-8's axlehole1 (locked)",
-      "pin-59's pin2 goes into beam1x7-6's hole6 (stiff)",
-      "pin-60's pin2 goes into beam1x7-6's hole5 (stiff)",
-      "pin-61's pin2 goes into beam1x7-6's hole2 (stiff)",
-      "pin-62's pin1 goes into beam1x7-6's hole4 (stiff)",
-      "axle2-9's axle1 goes into beam1x7-6's hole1 (turns)",
-      "axle2-9's axle2 goes into beam1x2-3's axlehole2 (locked)",
-      "axle7-2's axle1 goes into beam1x2-3's axlehole1 (locked)",
-      "axle2-9's axle2 goes into beam1x2-4's axlehole2 (locked)",
-      "axle7-2's axle1 goes into beam1x2-4's axlehole1 (locked)"
+      "axle7-2's axle1 goes into beam2-11's axlehole1 (locked)",
+      "axle7-2's axle1 goes into beam2-12's axlehole1 (locked)"
     ],
     "who_does_what_to_which": [
-      "beam3x5-10 holds pin-59",
-      "beam3x5-10 holds pin-60",
-      "beam3x5-10 holds pin-61",
-      "beam3x5-10 spins on pin-62",
       "beam3x5-10 spins on axle3-10",
-      "beam1x5-6 holds pin-59",
-      "beam1x5-6 holds pin-60",
-      "beam1x4-8 holds pin-61",
-      "axle2-9 carries beam1x4-8",
-      "beam1x7-6 holds pin-59",
-      "beam1x7-6 holds pin-60",
-      "beam1x7-6 holds pin-61",
-      "beam1x7-6 holds pin-62",
-      "beam1x7-6 spins on axle2-9",
-      "axle2-9 carries beam1x2-3",
-      "axle7-2 carries beam1x2-3",
-      "axle2-9 carries beam1x2-4",
-      "axle7-2 carries beam1x2-4"
+      "axle7-2 carries beam2-11",
+      "axle7-2 carries beam2-12"
     ],
     "where_everything_is_after": [
       "TO WRITE"
