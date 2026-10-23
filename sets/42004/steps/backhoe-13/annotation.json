@@ -1,0 +1,124 @@
+{
+  "example_id": "42004-backhoe-step-13",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 13,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-50",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "conn-25",
+        "part_number": "63869",
+        "count": 1
+      },
+      {
+        "name": "pin-51",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "bucket-1",
+        "part_number": "30394",
+        "count": 1
+      },
+      {
+        "name": "ends-1",
+        "part_number": "30552",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-50",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=2.75, z=-11.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-25",
+        "part_number": "63869",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Triple",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3.65, z=-10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-51",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=2.55, z=-9.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3.65, z=-10 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bucket-1",
+        "part_number": "30394",
+        "catalog_name": "Construction Vehicle Bucket 3 x 6, 9 Hinge Teeth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3.45, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "ends-1",
+        "part_number": "30552",
+        "catalog_name": "Hinge Cylinder 1 x 2 Locking with 1 Finger and Axle Hole On Ends",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3.5, z=-8.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-50's pin2 goes into conn-25's hole1 (stiff)",
+      "pin-51's pin1 goes into conn-25's hole3 (stiff)",
+      "axle3-9's axle2 goes into conn-25's axlehole1 (locked)",
+      "pin-50's pin1 goes into beam1x9-3's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-25 holds pin-50",
+      "conn-25 holds pin-51",
+      "axle3-9 carries conn-25",
+      "beam1x9-3 holds pin-50"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

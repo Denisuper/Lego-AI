@@ -1,0 +1,12 @@
+STEP 36
+ADD axle9-1 60485 lightbluishgrey
+POS axle9-1 1 -4 3 -1 0 0 0 1 0 0 0 -1
+ADD bush-16 3713 lightbluishgrey
+POS bush-16 3 -4 3 0 0 -1 -1 0 0 0 1 0
+ADD bush-17 3713 lightbluishgrey
+POS bush-17 -1 -4 3 0 0 -1 -1 0 0 0 1 0
+CONNECT axle9-1.axle3 -> bush-16.axlehole1 LOCKED
+CONNECT axle9-1.axle7 -> bush-17.axlehole1 LOCKED
+CONNECT axle9-1.axle6 -> beam1x7-1.hole7 TURNS
+CONNECT axle9-1.axle4 -> beam1x7-2.hole7 TURNS
+CONNECT axle9-1.axle5 -> conn-26.hole1 TURNS

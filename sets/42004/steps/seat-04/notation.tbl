@@ -1,0 +1,4 @@
+ADD beam1x7-2 32524 yellow
+POS beam1x7-2 2 0 0 0 -1 0 1 0 0 0 0 1
+CONNECT pin-29.pin3 -> beam1x7-2.hole3 STIFF
+CONNECT pin-30.pin3 -> beam1x7-2.hole4 STIFF

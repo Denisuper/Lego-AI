@@ -1,0 +1,9 @@
+STEP 9
+ADD axle4-4 87083 darkbluishgrey
+POS axle4-4 1 -1.5 1 0 1 0 1 0 0 0 0 -1
+ADD gear12-1 32270 black
+POS gear12-1 1 -1 1 -1 0 0 0 0 1 0 1 0
+CONNECT axle4-4.axle3 -> gear12-1.axlehole1 LOCKED
+CONNECT axle4-4.axle4 -> conn-2.hole1 TURNS
+MESH gear20-1.teeth gear12-1.teeth
+RATIO gear20-1 gear12-1 20/12

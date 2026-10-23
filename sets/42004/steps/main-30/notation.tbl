@@ -1,0 +1,17 @@
+STEP 30
+ATTACH roof
+CONNECT axle2-4.axle2 -> beam1x4-1.axlehole2 LOCKED
+CONNECT axle7-3.axle7 -> beam1x4-1.axlehole1 LOCKED
+CONNECT pin-39.pin2 -> beam1x4-1.hole1 STIFF
+CONNECT pin-34.pin2 -> beam1x4-1.hole2 STIFF
+CONNECT axle2-4.axle2 -> beam1x4-2.axlehole2 LOCKED
+CONNECT axle7-3.axle7 -> beam1x4-2.axlehole1 LOCKED
+CONNECT pin-39.pin2 -> beam1x4-2.hole1 STIFF
+CONNECT pin-34.pin2 -> beam1x4-2.hole2 STIFF
+CONNECT axle7-3.axle6 -> beam1x3-5.hole2 TURNS
+CONNECT pin-39.pin1 -> beam1x3-5.hole3 STIFF
+CONNECT pin-41.pin1 -> beam1x3-5.hole1 STIFF
+CONNECT axle2-4.axle1 -> pin-40.axlehole1 LOCKED
+CONNECT axle7-3.axle5 -> conn-16.axlehole1 LOCKED
+CONNECT axle7-3.axle4 -> bush-10.axlehole1 LOCKED
+CONNECT axle7-3.axle3 -> conn-17.axlehole1 LOCKED

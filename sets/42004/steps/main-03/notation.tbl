@@ -1,0 +1,7 @@
+STEP 3
+ADD top-1 99009 lightbluishgrey
+POS top-1 1 -1 -4 0 0 1 0 1 0 -1 0 0
+ADD gear28-1 99010 black
+POS gear28-1 1 -1 -4 0 0 1 0 1 0 -1 0 0
+CONNECT pin-1.pin2 -> top-1.hole2 STIFF
+CONNECT pin-2.pin2 -> top-1.hole1 STIFF

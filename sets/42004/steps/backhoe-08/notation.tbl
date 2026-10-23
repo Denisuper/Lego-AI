@@ -1,0 +1,4 @@
+ADD pin-48 32556 tan
+POS pin-48 0 0.9 -3.5 1 0 0 0 0.072 0.997 0 -0.997 0.072
+CONNECT pin-48.pin2 -> beam1x11-5.hole4 TURNS
+CONNECT pin-48.pin1 -> beam1x3-7.hole1 TURNS

@@ -1,0 +1,4 @@
+ADD beam1x5-3 32017 yellow
+POS beam1x5-3 0.75 0 -5 0 1 0 1 0 0 0 0 -1
+CONNECT pin-55.pin2 -> beam1x5-3.hole2 STIFF
+CONNECT pin-56.pin2 -> beam1x5-3.hole1 STIFF

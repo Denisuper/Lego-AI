@@ -1,0 +1,10 @@
+STEP 5
+ADD beam1x11-2 32525 black
+POS beam1x11-2 2 0 0 0 -1 0 1 0 0 0 0 1
+CONNECT pin-1.pin3 -> beam1x11-2.hole1 STIFF
+CONNECT pin-2.pin3 -> beam1x11-2.hole3 STIFF
+CONNECT conn-1.pin2 -> beam1x11-2.hole5 STIFF
+CONNECT axle5-1.axle4 -> beam1x11-2.hole6 TURNS
+CONNECT axle3-1.axle3 -> beam1x11-2.hole8 TURNS
+CONNECT axle3-2.axle3 -> beam1x11-2.hole11 TURNS
+CONNECT axle7-1.axle5 -> beam1x11-2.hole9 TURNS

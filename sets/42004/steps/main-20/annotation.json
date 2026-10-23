@@ -1,0 +1,50 @@
+{
+  "example_id": "42004-step-20",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 20,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam1x5-1",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam1x5-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "bush-5's pin2 goes into beam1x5-1's hole1 (stiff)",
+      "bush-6's pin2 goes into beam1x5-1's hole5 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam1x5-1 holds bush-5",
+      "beam1x5-1 holds bush-6"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,13 @@
+STEP 25
+ADD beam1x11-3 32525 black
+POS beam1x11-3 -1 -5 1 0 1 0 0 0 -1 -1 0 0
+ADD bush-7 32054 black
+POS bush-7 -1 -4 1 1 0 0 0 0 1 0 -1 0
+ADD pin-33 43093 blue
+POS pin-33 -2.5 -4 1 1 0 0 0 0 1 0 -1 0
+ADD pin-34 2780 black
+POS pin-34 -1.5 -10 1 -1 0 0 0 -1 0 0 0 1
+CONNECT bush-7.pin1 -> beam1x11-3.hole5 STIFF
+CONNECT pin-34.pin1 -> beam1x11-3.hole11 STIFF
+CONNECT pin-4.pin2 -> beam1x11-3.hole1 STIFF
+CONNECT bush-7.pin2 -> beam1x7-1.hole5 STIFF

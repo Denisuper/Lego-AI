@@ -1,0 +1,21 @@
+STEP 37
+ADD conn-27 6536 yellow
+POS conn-27 4 -4.15 4 0 0 1 -0.986 0.164 0 -0.164 -0.986 0
+ADD conn-28 6536 yellow
+POS conn-28 -2 -4.15 4 0 0 1 -0.986 0.164 0 -0.164 -0.986 0
+ADD axle6-3 3706 black
+POS axle6-3 4 -6.55 3.6 0 0 1 0.986 -0.164 0 0.164 0.986 0
+ADD conn-29 32013 black
+POS conn-29 4 -10 3 1 0 0 0 -0.164 -0.986 0 0.986 -0.164
+ADD axle6-4 3706 black
+POS axle6-4 -2 -6.55 3.6 0 0 1 0.986 -0.164 0 0.164 0.986 0
+ADD conn-30 32013 black
+POS conn-30 -2 -10 3 1 0 0 0 -0.164 -0.986 0 0.986 -0.164
+CONNECT axle6-3.axle6 -> conn-27.axlehole1 LOCKED
+CONNECT axle9-1.axle2 -> conn-27.hole1 TURNS
+CONNECT axle6-4.axle6 -> conn-28.axlehole1 LOCKED
+CONNECT axle9-1.axle8 -> conn-28.hole1 TURNS
+CONNECT axle6-3.axle1 -> conn-29.axlehole1 LOCKED
+CONNECT bush-12.pin2 -> conn-29.hole1 STIFF
+CONNECT axle6-4.axle1 -> conn-30.axlehole1 LOCKED
+CONNECT bush-11.pin2 -> conn-30.hole1 STIFF

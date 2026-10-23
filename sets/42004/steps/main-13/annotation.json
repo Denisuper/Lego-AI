@@ -1,0 +1,66 @@
+{
+  "example_id": "42004-step-13",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 13,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle7-2",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "gear8-1",
+        "part_number": "10928",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-2",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-4, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear8-1",
+        "part_number": "10928",
+        "catalog_name": "Technic Gear 8 Tooth [Reinforced]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-4, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-2's axle4 goes into gear8-1's axlehole1 (locked)",
+      "axle7-2's axle5 goes into beam3x5-1's hole1 (turns)",
+      "axle7-2's axle5 goes into beam3x5-2's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-2 carries gear8-1",
+      "beam3x5-1 spins on axle7-2",
+      "beam3x5-2 spins on axle7-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

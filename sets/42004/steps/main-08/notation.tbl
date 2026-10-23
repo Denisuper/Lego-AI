@@ -1,0 +1,7 @@
+STEP 8
+ADD axle4-3 87083 darkbluishgrey
+POS axle4-3 1 -1.5 -1 0 1 0 1 0 0 0 0 -1
+ADD gear20-1 32269 tan
+POS gear20-1 1 -1 -1 0 -1 0 0 0 -1 1 0 0
+CONNECT axle4-3.axle3 -> gear20-1.axlehole1 LOCKED
+CONNECT axle4-3.axle4 -> conn-1.hole1 TURNS

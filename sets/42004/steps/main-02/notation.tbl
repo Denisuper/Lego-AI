@@ -1,0 +1,4 @@
+STEP 2
+ADD conn-1 87082 lightbluishgrey
+POS conn-1 1 0 -1 1 0 0 0 1 0 0 0 1
+CONNECT conn-1.pin1 -> beam1x11-1.hole5 STIFF

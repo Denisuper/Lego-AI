@@ -1,0 +1,6 @@
+ADD beam1x5-5 32017 yellow
+POS beam1x5-5 3.75 1 0.2 0 1 0 0.997 0 -0.079 -0.079 0 -0.997
+ADD beam1x3-10 6632 yellow
+POS beam1x3-10 4.25 0 0 0 -1 0 -0.902 0 0.432 -0.432 0 -0.902
+CONNECT axle2-8.axle2 -> beam1x5-5.hole5 TURNS
+CONNECT axle2-8.axle2 -> beam1x3-10.axlehole2 LOCKED

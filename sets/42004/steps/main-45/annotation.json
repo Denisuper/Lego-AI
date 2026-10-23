@@ -1,0 +1,142 @@
+{
+  "example_id": "42004-step-45",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 45,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "wheel-1",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-1",
+        "part_number": "61481",
+        "count": 1
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-2",
+        "part_number": "61481",
+        "count": 1
+      },
+      {
+        "name": "wheel-3",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-3",
+        "part_number": "61481",
+        "count": 1
+      },
+      {
+        "name": "wheel-4",
+        "part_number": "56145",
+        "count": 1
+      },
+      {
+        "name": "tyre-4",
+        "part_number": "61481",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "wheel-1",
+        "part_number": "56145",
+        "catalog_name": "Wheel 30.4 x 20 without Pinholes, with Reinforced Rim",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-1",
+        "part_number": "61481",
+        "catalog_name": "Tyre 43.2 x 26 Balloon Small",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-2",
+        "part_number": "56145",
+        "catalog_name": "Wheel 30.4 x 20 without Pinholes, with Reinforced Rim",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-2",
+        "part_number": "61481",
+        "catalog_name": "Tyre 43.2 x 26 Balloon Small",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-3",
+        "part_number": "56145",
+        "catalog_name": "Wheel 30.4 x 20 without Pinholes, with Reinforced Rim",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-3",
+        "part_number": "61481",
+        "catalog_name": "Tyre 43.2 x 26 Balloon Small",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "wheel-4",
+        "part_number": "56145",
+        "catalog_name": "Wheel 30.4 x 20 without Pinholes, with Reinforced Rim",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "tyre-4",
+        "part_number": "61481",
+        "catalog_name": "Tyre 43.2 x 26 Balloon Small",
+        "color": "Rubber Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,5 @@
+ADD axle8-1 55013 darkbluishgrey
+POS axle8-1 0 0 0 0 -1 0 1 0 0 0 0 1
+ADD conn-6 87082 lightbluishgrey
+POS conn-6 0 3.5 0 -1 0 0 0 -1 0 0 0 1
+CONNECT axle8-1.axle8 -> conn-6.hole1 TURNS

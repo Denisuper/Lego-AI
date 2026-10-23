@@ -1,0 +1,68 @@
+{
+  "example_id": "42004-step-38",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 38,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam1x7-3",
+        "part_number": "32348",
+        "count": 1
+      },
+      {
+        "name": "beam1x7-4",
+        "part_number": "32348",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam1x7-3",
+        "part_number": "32348",
+        "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-4, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam1x7-4",
+        "part_number": "32348",
+        "catalog_name": "Technic Beam 1 x 7 Bent (4 - 4) Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-4, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-38's axle1 goes into beam1x7-3's hole2 (turns)",
+      "axle9-1's axle1 goes into beam1x7-3's axlehole1 (locked)",
+      "pin-33's axle1 goes into beam1x7-4's hole2 (turns)",
+      "axle9-1's axle9 goes into beam1x7-4's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam1x7-3 spins on pin-38",
+      "axle9-1 carries beam1x7-3",
+      "beam1x7-4 spins on pin-33",
+      "axle9-1 carries beam1x7-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

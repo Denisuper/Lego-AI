@@ -1,0 +1,4 @@
+ADD pin-42 43093 blue
+POS pin-42 2.25 0 -3 0 0 -1 0 1 0 1 0 0
+ADD pin-43 43093 blue
+POS pin-43 4.25 0 -3 0 0 -1 0 1 0 1 0 0

@@ -1,0 +1,48 @@
+{
+  "example_id": "42004-frontrightsi-step-03",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "axle8-1's axle8 goes into conn-6's hole1 (turns)",
+      "axle8-1's axle6 goes into worm-1's axlehole1 (locked)",
+      "axle8-1's axle5 goes into conn-7's hole1 (turns)",
+      "axle3-4's axle2 goes into conn-7's axlehole1 (locked)",
+      "axle8-1's axle4 goes into bush-1's axlehole1 (locked)",
+      "axle8-1's axle4 goes into bush-2's axlehole1 (locked)",
+      "axle8-1's axle2 goes into conn-8's hole1 (turns)",
+      "axle8-1's axle1 goes into conn-9's axlehole1 (locked)",
+      "conn-6's pin2 goes into beam1x9-1's hole6 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-6 spins on axle8-1",
+      "axle8-1 carries worm-1",
+      "conn-7 spins on axle8-1",
+      "axle3-4 carries conn-7",
+      "axle8-1 carries bush-1",
+      "axle8-1 carries bush-2",
+      "conn-8 spins on axle8-1",
+      "axle8-1 carries conn-9",
+      "beam1x9-1 holds conn-6"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

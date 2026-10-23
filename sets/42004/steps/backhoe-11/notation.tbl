@@ -1,0 +1,4 @@
+ADD pin-49 33299 black
+POS pin-49 -2 -3.45 -6 0 1 0 0.636 0 0.771 0.771 0 -0.636
+CONNECT axle4-11.axle2 -> pin-49.axlehole1 LOCKED
+CONNECT pin-49.pin1 -> beam1x9-3.hole7 STIFF

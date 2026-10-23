@@ -1,0 +1,64 @@
+{
+  "example_id": "42004-frontarm1-step-03",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam1x4-7",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "pin-57",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam1x4-7",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=0, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-57",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=0, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-54's pin2 goes into beam1x4-7's hole1 (stiff)",
+      "pin-57's axle1 goes into beam3x5-9's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam1x4-7 holds pin-54",
+      "beam3x5-9 spins on pin-57"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

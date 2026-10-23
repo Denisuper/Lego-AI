@@ -1,0 +1,66 @@
+{
+  "example_id": "42004-roof-step-03",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam1x3-5",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "pin-40",
+        "part_number": "60483",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam1x3-5",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.25, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-40",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.25, y=0, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-3's axle6 goes into beam1x3-5's hole2 (turns)",
+      "pin-39's pin1 goes into beam1x3-5's hole3 (stiff)",
+      "axle2-4's axle1 goes into pin-40's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam1x3-5 spins on axle7-3",
+      "beam1x3-5 holds pin-39",
+      "axle2-4 carries pin-40"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

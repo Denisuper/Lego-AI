@@ -1,0 +1,19 @@
+STEP 39
+ATTACH frontarm1
+CONNECT pin-54.pin1 -> beam3x5-9.hole1 STIFF
+CONNECT pin-55.pin1 -> beam3x5-9.hole5 STIFF
+CONNECT pin-56.pin1 -> beam3x5-9.hole4 STIFF
+CONNECT pin-57.axle1 -> beam3x5-9.hole3 TURNS
+CONNECT pin-55.pin2 -> beam1x5-3.hole2 STIFF
+CONNECT pin-56.pin2 -> beam1x5-3.hole1 STIFF
+CONNECT pin-54.pin2 -> beam1x4-7.hole1 STIFF
+CONNECT axle2-6.axle1 -> beam1x4-7.axlehole1 LOCKED
+CONNECT pin-54.pin2 -> beam1x7-5.hole2 STIFF
+CONNECT pin-55.pin2 -> beam1x7-5.hole6 STIFF
+CONNECT pin-56.pin2 -> beam1x7-5.hole5 STIFF
+CONNECT pin-57.pin1 -> beam1x7-5.hole4 STIFF
+CONNECT axle2-6.axle1 -> beam1x7-5.hole1 TURNS
+CONNECT axle2-6.axle2 -> beam1x2-1.axlehole2 LOCKED
+CONNECT axle7-2.axle7 -> beam1x2-1.axlehole1 LOCKED
+CONNECT axle2-6.axle2 -> beam1x2-2.axlehole2 LOCKED
+CONNECT axle7-2.axle7 -> beam1x2-2.axlehole1 LOCKED

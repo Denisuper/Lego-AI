@@ -1,0 +1,10 @@
+STEP 21
+ADD conn-12 59443 black
+POS conn-12 1 -3.5 1 0 -1 0 0 0 -1 1 0 0
+ADD axle4-7 3705 black
+POS axle4-7 1 -5.5 1 0 1 0 1 0 0 0 0 -1
+ADD conn-13 59443 black
+POS conn-13 1 -7.5 1 0 -1 0 0 0 -1 1 0 0
+CONNECT axle4-7.axle4 -> conn-12.axlehole2 LOCKED
+CONNECT axle4-4.axle1 -> conn-12.axlehole1 LOCKED
+CONNECT axle4-7.axle1 -> conn-13.axlehole1 LOCKED

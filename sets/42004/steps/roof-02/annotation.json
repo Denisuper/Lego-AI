@@ -1,0 +1,68 @@
+{
+  "example_id": "42004-roof-step-02",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle7-3",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "pin-39",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-3",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.25, y=0, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-39",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=0, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-3's axle7 goes into beam1x4-1's axlehole1 (locked)",
+      "pin-39's pin2 goes into beam1x4-1's hole1 (stiff)",
+      "axle7-3's axle7 goes into beam1x4-2's axlehole1 (locked)",
+      "pin-39's pin2 goes into beam1x4-2's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-3 carries beam1x4-1",
+      "beam1x4-1 holds pin-39",
+      "axle7-3 carries beam1x4-2",
+      "beam1x4-2 holds pin-39"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

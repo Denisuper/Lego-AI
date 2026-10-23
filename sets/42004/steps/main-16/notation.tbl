@@ -1,0 +1,12 @@
+STEP 16
+ADD beam3x5-6 32526 yellow
+POS beam3x5-6 -1 -2 -4 0 1 0 1 0 0 0 0 -1
+ADD bush-4 3713 lightbluishgrey
+POS bush-4 -2 0 -8 0 0 1 0 1 0 -1 0 0
+ADD axle4-6 87083 darkbluishgrey
+POS axle4-6 -2.5 0 -8 1 0 0 0 1 0 0 0 1
+CONNECT axle4-6.axle4 -> beam3x5-6.hole7 TURNS
+CONNECT pin-11.pin2 -> beam3x5-6.hole4 STIFF
+CONNECT pin-12.pin2 -> beam3x5-6.hole1 STIFF
+CONNECT axle5-2.axle1 -> beam3x5-6.hole5 TURNS
+CONNECT axle4-6.axle3 -> bush-4.axlehole1 LOCKED

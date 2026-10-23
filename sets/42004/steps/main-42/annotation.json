@@ -1,0 +1,48 @@
+{
+  "example_id": "42004-step-42",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 42,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear12-4",
+        "part_number": "32270",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear12-4",
+        "part_number": "32270",
+        "catalog_name": "Technic Gear 12 Tooth Double Bevel",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-4.1, z=-12.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-10's axle3 goes into gear12-4's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-10 carries gear12-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

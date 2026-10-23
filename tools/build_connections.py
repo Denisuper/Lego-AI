@@ -9,7 +9,6 @@ numbered along the part's longest direction; instructions name these points."""
 import csv, os, re, sys
 from functools import lru_cache
 
-LD, SH = sys.argv[1], sys.argv[2]
 CAT = "catalog/technic_parts.csv"
 
 def index(*dirs):
@@ -22,7 +21,10 @@ def index(*dirs):
                     for key in (rel, rel.split("/", 1)[-1]):  # "parts/s/x.dat" -> also "s/x.dat"
                         idx.setdefault(key, os.path.join(dp, f))
     return idx
-LDI, SHI = index(LD + "/parts", LD + "/p"), index(SH + "/parts", SH + "/p")
+LDI, SHI = {}, {}
+def init(ld, sh):
+    """Point the library at the LDraw and LDCad folders (call once before using it)."""
+    LDI.update(index(ld + "/parts", ld + "/p")); SHI.update(index(sh + "/parts", sh + "/p"))
 find = lambda idx, name: idx.get(name.replace("\\", "/").lower())
 
 def mul(A, B):  # 3x3 row-major
@@ -222,65 +224,74 @@ ROLES = [
     (r"Plate", "plate", "n/a", "Thin brick, usually for looks (e.g. lights)."),
 ]
 
-rows = list(csv.DictReader(open(CAT, encoding="utf-8")))
-conn_rows, found = [], 0
-ORDER = ["pin hole (round)", "axle hole (cross)", "pin stop (round)", "axle stop (cross)", "small hole (3.2 mm bar)", "bar (3.2 mm)", "clip", "square hole", "square bar"]
-PLURAL = {"pin hole (round)": "pin holes (round)", "axle hole (cross)": "axle holes (cross)", "pin stop (round)": "pin stops (round)",
-          "axle stop (cross)": "axle stops (cross)", "small hole (3.2 mm bar)": "small holes (3.2 mm bar)", "bar (3.2 mm)": "bars (3.2 mm)",
-          "clip": "clips", "square hole": "square holes", "square bar": "square bars"}
-for r in rows:
-    base = r["part_number"]
-    tries = [base, re.sub(r"(pr|pat)\d+.*$", "", base), re.sub(r"[a-z]$", "", re.sub(r"(pr|pat)\d+.*$", "", base))]
-    f = next((t + ".dat" for t in tries if find(LDI, t + ".dat")), base + ".dat")
-    r["ldraw_file"] = f if find(LDI, f) else ""
+def named_points(f):
+    """All connection points of one LDraw part file, named like the catalog (hole1.., axle1..), in the part's own frame (LDU).
+    Returns (points, bbox): points = [(name, type, pos, axis, depth, radius, slide)]."""
     b = bbox(f)
-    if b: found += 1
-    # collect points; the same spot reported by two layers keeps the longest one
     best = {}
     for pid, g, secs, pos, ax, sy, (slide, center) in resolve(f):
         if (pid or "").startswith("group:"): continue  # LDCad extras (crane-arm clips on beam bodies)
         for typ, prefix, p, u, depth, rad in points(g, secs, pos, ax, sy, slide, center):
             key = (typ, tuple(round(c) for c in p), tuple(abs(round(c, 1)) for c in u))
-            if key not in best or depth > best[key][4]:
+            if key not in best or depth > best[key][4]:  # same spot reported by two layers: keep the longest
                 best[key] = (typ, prefix, p, u, depth, rad, slide)
     pts = list(best.values())
-    # number points along the part's longest direction so names are stable: hole1..holeN, axle1..axleN
-    main = max(range(3), key=lambda i: b[1][i] - b[0][i]) if b else 2
+    main = max(range(3), key=lambda i: b[1][i] - b[0][i]) if b else 2  # number along the longest direction
     pts.sort(key=lambda q: (q[1], round(q[2][main], 1), round(q[2][(main + 1) % 3], 1), round(q[2][(main + 2) % 3], 1)))
-    counts, idx = {}, {}
+    idx, out = {}, []
     for typ, prefix, p, u, depth, rad, slide in pts:
         idx[prefix] = idx.get(prefix, 0) + 1
-        counts[typ] = counts.get(typ, 0) + 1
-        turns = {"pin hole (round)": "axles turn freely; friction pins hold stiff, frictionless pins turn freely",
-                 "axle hole (cross)": "locks an axle: they turn together", "pin stop (round)": "turns in a round hole (stiff if friction)",
-                 "axle stop (cross)": "turns freely in a round hole; locked in a cross hole"}.get(typ, "")
-        conn_rows.append([r["part_number"], f"{prefix}{idx[prefix]}", typ, r1(p[0] / 20), r1(p[1] / 20), r1(p[2] / 20),
-                          *[r1(c) for c in u], r1(depth / 20), r1(depth), r1(rad), "yes" if slide else "no", turns])
-    if b:
-        size = sorted((round((hi - lo) / 20, 2) for lo, hi in zip(*b)), reverse=True)
-        r["size_holes_LxWxH"] = " x ".join(str(s) for s in size)
-        r["thickness_holes"] = size[-1]
-    else:
-        r["size_holes_LxWxH"] = r["thickness_holes"] = ""
-    r["pin_holes"], r["axle_holes"], r["pin_stops"], r["axle_stops"] = (counts.get(k, 0) for k in ORDER[:4])
-    for k in ("pins", "axles", "connections"): r.pop(k, None)
-    teeth = re.search(r"([\d/]+) Tooth", r["name"])
-    r["gear_teeth"] = teeth.group(1) if teeth else ""
-    role = next(((t, fr, fn) for pat, t, fr, fn in ROLES if re.search(pat, r["name"], re.I)), ("other", "n/a", ""))
-    r["part_type"], r["friction"], r["function"] = role
-    listed = [f"{counts[k]} {k if counts[k] == 1 else PLURAL[k]}" for k in ORDER if counts.get(k)]
-    r["description"] = ("No 3D data in LDraw for this part number. " + role[2] if not b else
-                        f"{r['size_holes_LxWxH']} holes in size, {r['thickness_holes']} thick. "
-                        + (f"Gear with {r['gear_teeth']} teeth. " if teeth else "")
-                        + (("Connections: " + ", ".join(listed) + ". ") if listed else "")
-                        + role[2]).strip()
+        out.append((f"{prefix}{idx[prefix]}", typ, p, u, depth, rad, slide))
+    return out, b
 
-cols = [c for c in rows[0].keys() if c != "description"] + ["description"]
-with open(CAT, "w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, cols, lineterminator="\n"); w.writeheader(); w.writerows(rows)
-with open("catalog/connections.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f, lineterminator="\n")
-    w.writerow(["part_number", "point", "type", "x_holes", "y_holes", "z_holes", "axis_x", "axis_y", "axis_z",
-                "depth_holes", "depth_ldu", "radius_ldu", "can_slide", "how_it_turns"])
-    w.writerows(conn_rows)
-print(f"{found}/{len(rows)} parts have 3D data; {len(conn_rows)} named points")
+if __name__ == "__main__":
+    init(sys.argv[1], sys.argv[2])
+    rows = list(csv.DictReader(open(CAT, encoding="utf-8")))
+    conn_rows, found = [], 0
+    ORDER = ["pin hole (round)", "axle hole (cross)", "pin stop (round)", "axle stop (cross)", "small hole (3.2 mm bar)", "bar (3.2 mm)", "clip", "square hole", "square bar"]
+    PLURAL = {"pin hole (round)": "pin holes (round)", "axle hole (cross)": "axle holes (cross)", "pin stop (round)": "pin stops (round)",
+              "axle stop (cross)": "axle stops (cross)", "small hole (3.2 mm bar)": "small holes (3.2 mm bar)", "bar (3.2 mm)": "bars (3.2 mm)",
+              "clip": "clips", "square hole": "square holes", "square bar": "square bars"}
+    for r in rows:
+        base = r["part_number"]
+        tries = [base, re.sub(r"(pr|pat)\d+.*$", "", base), re.sub(r"[a-z]$", "", re.sub(r"(pr|pat)\d+.*$", "", base))]
+        f = next((t + ".dat" for t in tries if find(LDI, t + ".dat")), base + ".dat")
+        r["ldraw_file"] = f if find(LDI, f) else ""
+        pts, b = named_points(f)
+        if b: found += 1
+        counts = {}
+        for name, typ, p, u, depth, rad, slide in pts:
+            counts[typ] = counts.get(typ, 0) + 1
+            turns = {"pin hole (round)": "axles turn freely; friction pins hold stiff, frictionless pins turn freely",
+                     "axle hole (cross)": "locks an axle: they turn together", "pin stop (round)": "turns in a round hole (stiff if friction)",
+                     "axle stop (cross)": "turns freely in a round hole; locked in a cross hole"}.get(typ, "")
+            conn_rows.append([r["part_number"], name, typ, r1(p[0] / 20), r1(p[1] / 20), r1(p[2] / 20),
+                              *[r1(c) for c in u], r1(depth / 20), r1(depth), r1(rad), "yes" if slide else "no", turns])
+        if b:
+            size = sorted((round((hi - lo) / 20, 2) for lo, hi in zip(*b)), reverse=True)
+            r["size_holes_LxWxH"] = " x ".join(str(s) for s in size)
+            r["thickness_holes"] = size[-1]
+        else:
+            r["size_holes_LxWxH"] = r["thickness_holes"] = ""
+        r["pin_holes"], r["axle_holes"], r["pin_stops"], r["axle_stops"] = (counts.get(k, 0) for k in ORDER[:4])
+        for k in ("pins", "axles", "connections"): r.pop(k, None)
+        teeth = re.search(r"([\d/]+) Tooth", r["name"])
+        r["gear_teeth"] = teeth.group(1) if teeth else ""
+        role = next(((t, fr, fn) for pat, t, fr, fn in ROLES if re.search(pat, r["name"], re.I)), ("other", "n/a", ""))
+        r["part_type"], r["friction"], r["function"] = role
+        listed = [f"{counts[k]} {k if counts[k] == 1 else PLURAL[k]}" for k in ORDER if counts.get(k)]
+        r["description"] = ("No 3D data in LDraw for this part number. " + role[2] if not b else
+                            f"{r['size_holes_LxWxH']} holes in size, {r['thickness_holes']} thick. "
+                            + (f"Gear with {r['gear_teeth']} teeth. " if teeth else "")
+                            + (("Connections: " + ", ".join(listed) + ". ") if listed else "")
+                            + role[2]).strip()
+
+    cols = [c for c in rows[0].keys() if c != "description"] + ["description"]
+    with open(CAT, "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, cols, lineterminator="\n"); w.writeheader(); w.writerows(rows)
+    with open("catalog/connections.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["part_number", "point", "type", "x_holes", "y_holes", "z_holes", "axis_x", "axis_y", "axis_z",
+                    "depth_holes", "depth_ldu", "radius_ldu", "can_slide", "how_it_turns"])
+        w.writerows(conn_rows)
+    print(f"{found}/{len(rows)} parts have 3D data; {len(conn_rows)} named points")

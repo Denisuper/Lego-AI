@@ -2,3 +2,5 @@
 05_booklets/pages/
 __pycache__/
 training/out/
+sets/*/booklet*.pdf
+!sets/8047/booklet.pdf

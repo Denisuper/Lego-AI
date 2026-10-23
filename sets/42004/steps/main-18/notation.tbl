@@ -1,0 +1,13 @@
+STEP 18
+ADD pin-19 60483 black
+POS pin-19 3 -4 -7 0 -1 0 0.866 0 -0.5 0.5 0 0.866
+ADD pin-20 60483 black
+POS pin-20 -1 -4 -7 0 -1 0 0.866 0 -0.5 0.5 0 0.866
+ADD pin-21 4274 lightbluishgrey
+POS pin-21 -0.5 -4.5 -6.15 1 0 0 0 0.866 -0.5 0 0.5 0.866
+ADD pin-22 4274 lightbluishgrey
+POS pin-22 2.5 -4.5 -6.15 -1 0 0 0 -0.866 -0.5 0 -0.5 0.866
+CONNECT pin-22.pin1 -> pin-19.hole1 TURNS
+CONNECT axle7-2.axle2 -> pin-19.axlehole1 LOCKED
+CONNECT pin-21.pin1 -> pin-20.hole1 TURNS
+CONNECT axle7-2.axle6 -> pin-20.axlehole1 LOCKED

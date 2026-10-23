@@ -1,0 +1,132 @@
+{
+  "example_id": "42004-step-37",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 37,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-27",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "conn-28",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "axle6-3",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "conn-29",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "axle6-4",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "conn-30",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-27",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-4.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-28",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-4.15, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle6-3",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-6.55, z=3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-29",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle6-4",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-6.55, z=3.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-30",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-3's axle6 goes into conn-27's axlehole1 (locked)",
+      "axle9-1's axle2 goes into conn-27's hole1 (turns)",
+      "axle6-4's axle6 goes into conn-28's axlehole1 (locked)",
+      "axle9-1's axle8 goes into conn-28's hole1 (turns)",
+      "axle6-3's axle1 goes into conn-29's axlehole1 (locked)",
+      "bush-12's pin2 goes into conn-29's hole1 (stiff)",
+      "axle6-4's axle1 goes into conn-30's axlehole1 (locked)",
+      "bush-11's pin2 goes into conn-30's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-3 carries conn-27",
+      "conn-27 spins on axle9-1",
+      "axle6-4 carries conn-28",
+      "conn-28 spins on axle9-1",
+      "axle6-3 carries conn-29",
+      "conn-29 holds bush-12",
+      "axle6-4 carries conn-30",
+      "conn-30 holds bush-11"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

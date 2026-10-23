@@ -1,0 +1,18 @@
+STEP 15
+ADD pin-17 2780 black
+POS pin-17 2.5 -2 -7 -1 0 0 0 -1 0 0 0 1
+ADD pin-18 2780 black
+POS pin-18 2.5 -2 -4 -1 0 0 0 -1 0 0 0 1
+ADD beam3x5-5 32526 yellow
+POS beam3x5-5 3 -2 -4 0 1 0 1 0 0 0 0 -1
+ADD axle4-5 87083 darkbluishgrey
+POS axle4-5 4.5 0 -8 -1 0 0 0 1 0 0 0 -1
+ADD bush-3 3713 lightbluishgrey
+POS bush-3 4 0 -8 0 0 -1 0 1 0 1 0 0
+CONNECT pin-17.pin1 -> beam3x5-5.hole4 STIFF
+CONNECT pin-18.pin1 -> beam3x5-5.hole1 STIFF
+CONNECT axle4-5.axle4 -> beam3x5-5.hole7 TURNS
+CONNECT axle5-2.axle5 -> beam3x5-5.hole5 TURNS
+CONNECT axle4-5.axle3 -> bush-3.axlehole1 LOCKED
+CONNECT pin-17.pin2 -> beam1x9-2.hole5 STIFF
+CONNECT pin-18.pin2 -> beam1x9-2.hole8 STIFF

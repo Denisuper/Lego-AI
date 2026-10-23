@@ -1,0 +1,80 @@
+{
+  "example_id": "42004-step-31",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 31,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-11",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "bush-12",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-11",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-12",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-6's axle3 goes into bush-11's axlehole1 (locked)",
+      "axle3-6's axle1 goes into bush-12's axlehole1 (locked)",
+      "bush-11's pin1 goes into pin-40's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-6 carries bush-11",
+      "axle3-6 carries bush-12",
+      "pin-40 holds bush-11"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

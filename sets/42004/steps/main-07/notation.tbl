@@ -1,0 +1,13 @@
+STEP 7
+ADD pin-5 60483 black
+POS pin-5 3 0 3 0 -1 0 -1 0 0 0 0 -1
+ADD pin-6 60483 black
+POS pin-6 -1 0 3 0 -1 0 -1 0 0 0 0 -1
+ADD axle4-1 87083 darkbluishgrey
+POS axle4-1 4.5 0 2 -1 0 0 0 1 0 0 0 -1
+ADD axle4-2 87083 darkbluishgrey
+POS axle4-2 -2.5 0 2 1 0 0 0 -1 0 0 0 -1
+CONNECT axle4-1.axle4 -> pin-5.hole1 TURNS
+CONNECT axle7-1.axle6 -> pin-5.axlehole1 LOCKED
+CONNECT axle4-2.axle4 -> pin-6.hole1 TURNS
+CONNECT axle7-1.axle2 -> pin-6.axlehole1 LOCKED

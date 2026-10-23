@@ -1,0 +1,10 @@
+STEP 31
+ADD bush-11 32054 black
+POS bush-11 -1 -10 3 -1 0 0 0 -1 0 0 0 1
+ADD axle3-6 4519 lightbluishgrey
+POS axle3-6 1 -10 3 -1 0 0 0 -1 0 0 0 1
+ADD bush-12 32054 black
+POS bush-12 3 -10 3 1 0 0 0 1 0 0 0 1
+CONNECT axle3-6.axle3 -> bush-11.axlehole1 LOCKED
+CONNECT axle3-6.axle1 -> bush-12.axlehole1 LOCKED
+CONNECT bush-11.pin1 -> pin-40.hole1 STIFF

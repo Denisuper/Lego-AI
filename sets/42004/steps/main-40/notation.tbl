@@ -1,0 +1,11 @@
+STEP 40
+ATTACH frontarm2
+CONNECT axle2-7.axle1 -> beam1x3-9.axlehole2 LOCKED
+CONNECT axle2-7.axle1 -> beam1x5-4.hole5 TURNS
+CONNECT axle2-7.axle2 -> conn-31.axlehole2 LOCKED
+CONNECT axle2-8.axle1 -> conn-31.axlehole1 LOCKED
+CONNECT axle2-8.axle2 -> beam1x5-5.hole5 TURNS
+CONNECT axle2-8.axle2 -> beam1x3-10.axlehole2 LOCKED
+CONNECT axle3-10.axle1 -> beam1x3-10.axlehole1 LOCKED
+CONNECT axle3-10.axle1 -> bush-19.axlehole1 LOCKED
+CONNECT pin-58.axle1 -> beam3x5-9.hole7 TURNS

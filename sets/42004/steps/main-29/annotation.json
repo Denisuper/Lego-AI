@@ -1,0 +1,72 @@
+{
+  "example_id": "42004-step-29",
+  "set": "LEGO Technic 42004",
+  "page": null,
+  "step": 29,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam1x3-3",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "beam1x3-4",
+        "part_number": "32523",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam1x3-3",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam1x3-4",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-1's axle7 goes into beam1x3-3's hole1 (turns)",
+      "pin-3's pin3 goes into beam1x3-3's hole3 (stiff)",
+      "axle4-1's axle3 goes into beam1x3-3's hole2 (turns)",
+      "axle7-1's axle1 goes into beam1x3-4's hole1 (turns)",
+      "pin-4's pin3 goes into beam1x3-4's hole3 (stiff)",
+      "axle4-2's axle3 goes into beam1x3-4's hole2 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam1x3-3 spins on axle7-1",
+      "beam1x3-3 holds pin-3",
+      "beam1x3-3 spins on axle4-1",
+      "beam1x3-4 spins on axle7-1",
+      "beam1x3-4 holds pin-4",
+      "beam1x3-4 spins on axle4-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

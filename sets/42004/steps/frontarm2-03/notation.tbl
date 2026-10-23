@@ -1,0 +1,6 @@
+ADD axle2-7 32062 red
+POS axle2-7 1.5 0.85 -1.8 1 0 0 0 -0.902 0.432 0 -0.432 -0.902
+ADD beam1x5-4 32017 yellow
+POS beam1x5-4 1.25 1 0.2 0 1 0 0.997 0 -0.079 -0.079 0 -0.997
+CONNECT axle2-7.axle1 -> beam1x5-4.hole5 TURNS
+CONNECT axle2-7.axle1 -> beam1x3-9.axlehole2 LOCKED
