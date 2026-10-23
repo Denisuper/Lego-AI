@@ -1,7 +1,8 @@
 ADD axle7-s 44294 lightgray
 ADD gear-5 4019 lightgray
 CONNECT gear-5.axlehole1 -> axle7-s.axle1 LOCKED
-CONNECT axle7-s.axle4 -> block-s.axlehole1 LOCKED
+# ERROR fixed: block-s's cross hole is still empty after this step (seen in the picture); the shaft runs through the hub's round hole and turns freely
+CONNECT axle7-s.axle4~ -> hub4-s.hole3~ TURNS
 ADD bush-s1 3713 lightgray
 CONNECT bush-s1.axlehole1 -> axle7-s.axle7 LOCKED
 DOES axle7-s CARRIES gear-5

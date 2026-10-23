@@ -42,7 +42,8 @@
     ],
     "what_each_new_part_touches": [
       "bush-s3 slides onto axle9-s2 first",
-      "axle9-s2 pushes in from the front through lbeam-s3 and the seat"
+      "axle9-s2 pushes in from the front through lbeam-s3 and the seat",
+      "axle9-s2 also passes through block-s's cross hole (the one left empty in seat step 7), locking block-s to it"
     ],
     "who_does_what_to_which": [
       "lbeam-s3 holds axle9-s2",
@@ -60,6 +61,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "Exact holes for axle9-s2 not visible."
+  "needs_review": false,
+  "review_note": "Holes estimated (~). axle9-s2 takes block-s's empty cross hole."
 }

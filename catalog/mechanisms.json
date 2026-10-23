@@ -1,0 +1,138 @@
+{
+  "about": "General Technic mechanisms. Each set's mechanisms.json uses these types. Fields: what it does, the motion in and out, the parts it needs (roles), the rules that make it work, what breaks it, and how to recognise it in a booklet.",
+  "mechanisms": [
+    {
+      "type": "gear_pair",
+      "does": "Passes turning from one parallel shaft to another. Changes speed and force by the tooth ratio and reverses direction.",
+      "motion_in": "rotation", "motion_out": "rotation about a parallel axis, opposite direction",
+      "ratio": "output turns = input turns x (driver teeth / driven teeth)",
+      "roles": {"driver": "gear on the input shaft", "driven": "gear on the output shaft", "shafts": "axles locked to each gear", "bearings": "round holes the shafts turn in", "stops": "bushes keeping gears in mesh"},
+      "rules": ["Gears must be locked to their shafts (cross hole on axle).", "Shafts must turn freely (round holes) and be held at the right distance: (teeth_a + teeth_b) / 16 holes for spur gears (e.g. 16+16 = 2 holes, 8+24 = 2, 12+20 = 2).", "Each shaft needs support on two points or the gears push apart."],
+      "fails_when": ["Shaft in a cross hole of the frame (can't turn).", "Distance wrong (teeth skip or jam).", "Gear free on a round-hole part instead of locked to the axle."],
+      "recognise": "Two gears side by side, teeth touching, on parallel axles.",
+      "verbs": "DOES driver DRIVES driven; RATIO driver driven a/b; MESH driver.teeth driven.teeth"
+    },
+    {
+      "type": "idler_gear",
+      "does": "A gear between two others: carries turning across a gap and keeps the direction the same. Doesn't change the overall ratio.",
+      "motion_in": "rotation", "motion_out": "rotation, same direction as the first gear",
+      "ratio": "overall = first / last teeth (the idler cancels out)",
+      "roles": {"idler": "middle gear, often on a free-turning shaft"},
+      "rules": ["Same spacing rule as gear_pair on both sides."], "fails_when": ["Spacing wrong on either side."],
+      "recognise": "Three or more gears in a row.", "verbs": "DOES a DRIVES idler; DOES idler DRIVES c"
+    },
+    {
+      "type": "bevel_90",
+      "does": "Turns the drive through 90 degrees.",
+      "motion_in": "rotation", "motion_out": "rotation about a perpendicular axis",
+      "ratio": "driver teeth / driven teeth (12:20 = 0.6, 12:12 = 1)",
+      "roles": {"driver": "bevel or double-bevel gear", "driven": "bevel gear on the perpendicular shaft"},
+      "rules": ["Shaft axes must cross at a point; both gears sit 1 hole from the crossing for 12T/20T bevels."],
+      "fails_when": ["Gears not held tight against each other (they slip)."],
+      "recognise": "Two cone-shaped gears at right angles.", "verbs": "DOES a DRIVES b; RATIO a b x/y"
+    },
+    {
+      "type": "crown_90",
+      "does": "A crown gear (teeth on its face) meshes with a normal gear at 90 degrees, or with a worm or spur gear in line.",
+      "motion_in": "rotation", "motion_out": "rotation about a perpendicular axis",
+      "ratio": "driver teeth / 24", "roles": {"crown": "24-tooth crown gear"},
+      "rules": ["The other gear's teeth must reach the crown's face teeth."], "fails_when": ["Gear too far from the face."],
+      "recognise": "Gear with teeth on its flat side.", "verbs": "DOES a DRIVES crown"
+    },
+    {
+      "type": "worm_drive",
+      "does": "Big slow-down in one step, and self-locking: the gear can't turn the worm back, so the output holds its position (e.g. a boom stays up).",
+      "motion_in": "rotation of the worm shaft", "motion_out": "slow rotation about a perpendicular axis",
+      "ratio": "1 / gear teeth (worm on a 24T gear: 24 turns of the worm = 1 turn of the gear)",
+      "roles": {"worm": "worm gear locked on the input shaft", "wheel": "gear the worm turns", "thrust_stops": "bushes or beams that stop the worm sliding along its shaft"},
+      "rules": ["Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth.", "The worm pushes along its own shaft: both sides need a stop or the worm slides out of mesh."],
+      "fails_when": ["No end stops: the worm walks along its shaft.", "Worm too far from the wheel."],
+      "recognise": "Spiral gear on a shaft crossing another gear.", "verbs": "DOES worm DRIVES wheel; RATIO worm wheel 1/N"
+    },
+    {
+      "type": "slewing_ring",
+      "does": "Lets a whole upper structure rotate on a base. Big turntables have teeth so a gear can drive the rotation.",
+      "motion_in": "rotation of a pinion (or by hand)", "motion_out": "rotation of the top half about the vertical axis",
+      "ratio": "pinion teeth / ring teeth (e.g. 8T on 56T outer teeth = 1/7)",
+      "roles": {"base": "fixed half, pinned to the chassis", "top": "turning half, carries the upper structure", "pinion": "gear on the upper structure meshing the ring's teeth"},
+      "rules": ["Base fixed to the chassis on at least two points; top carries everything above.", "The pinion's shaft must be fixed to the turning half so it walks round the ring."],
+      "fails_when": ["Pinion mounted on the fixed half (nothing turns)."],
+      "recognise": "Large ring with teeth between lower and upper machine.", "verbs": "DOES top SPINS_ON base; DOES pinion DRIVES ring"
+    },
+    {
+      "type": "shaft_with_stops",
+      "does": "An axle that carries parts and turns, held from sliding by stops at both ends.",
+      "motion_in": "rotation", "motion_out": "same rotation along the whole shaft",
+      "roles": {"shaft": "axle", "bearings": "round holes it turns in", "stops": "bushes, axle-with-stop end, or a locked part on each side"},
+      "rules": ["At least two round-hole bearings.", "A stop on each side of the bearings."],
+      "fails_when": ["Shaft passes through a cross hole of a fixed part (it locks).", "Missing stop: it slides out."],
+      "recognise": "Axle with bushes on its ends.", "verbs": "DOES shaft SPINS_ON beam; DOES bush LOCKS shaft"
+    },
+    {
+      "type": "knob_input",
+      "does": "Where a person turns the machine: a gear, wheel or knob on the end of an input shaft.",
+      "motion_in": "hand rotation", "motion_out": "rotation of the input shaft",
+      "roles": {"knob": "part gripped by hand", "shaft": "input shaft"},
+      "rules": ["Knob locked to the shaft; easy to reach from outside the model."], "fails_when": ["Knob on a round-hole part (spins without turning the shaft)."],
+      "recognise": "Gear or round part on an exposed axle end.", "verbs": "DOES shaft CARRIES knob"
+    },
+    {
+      "type": "hinge",
+      "does": "Lets two parts swing about one axis.",
+      "motion_in": "push or pull", "motion_out": "rotation about the hinge axis (limited range)",
+      "roles": {"pivot": "frictionless pin or axle in round holes", "arms": "the two parts that swing"},
+      "rules": ["Use frictionless pins or axles for free swing; friction pins make it stiff."],
+      "fails_when": ["Friction pin where free movement is needed.", "Pivot in a cross hole of one part AND a cross hole of the other (locked)."],
+      "recognise": "Two beams joined by one pin or axle.", "verbs": "DOES a SPINS_ON pivot"
+    },
+    {
+      "type": "linkage_4bar",
+      "does": "Four bars joined by four hinges: moving one bar moves the others in a fixed way. Used to tip a stick or bucket as an arm moves.",
+      "motion_in": "rotation of the input bar", "motion_out": "rotation of the output bar (non-linear)",
+      "roles": {"ground": "the frame (fixed bar)", "input": "bar that is driven", "coupler": "bar that links them", "output": "bar that moves the tool"},
+      "rules": ["Four pivots, all free to turn.", "Bar lengths decide the range and speed of the output."],
+      "fails_when": ["A pivot is locked; the linkage jams.", "Lengths make it pass a dead point."],
+      "recognise": "A loop of bars with pins at the corners.", "verbs": "DOES coupler HOLDS output; PATTERN linkage"
+    },
+    {
+      "type": "push_rod",
+      "does": "A rod with a hinge at each end transfers push and pull between two parts that swing.",
+      "motion_in": "swing of part A", "motion_out": "swing of part B",
+      "roles": {"rod": "axle or beam", "end_hinges": "angled connectors or pins at both ends"},
+      "rules": ["Both ends must swing freely."], "fails_when": ["One end fixed in a cross hole without a free pivot."],
+      "recognise": "Long rod between two swinging parts.", "verbs": "DOES rod HOLDS b"
+    },
+    {
+      "type": "crank_lever",
+      "does": "A short arm on a shaft turns rotation into a back-and-forth swing (or the reverse).",
+      "motion_in": "rotation", "motion_out": "swing / push",
+      "roles": {"crank": "short arm locked on a shaft", "link": "bar from the crank pin to the moved part"},
+      "rules": ["Crank locked to its shaft; the link turns on the crank's pin."], "fails_when": ["Crank free on the shaft."],
+      "recognise": "Short arm with a pin, a link on that pin.", "verbs": "DOES shaft CARRIES crank; DOES link SPINS_ON crank"
+    },
+    {
+      "type": "track_loop",
+      "does": "Tread links wrapped round wheels: spreads weight, lets the machine roll or be driven.",
+      "motion_in": "rotation of a drive wheel (or pushing)", "motion_out": "loop moves, machine travels",
+      "roles": {"wheels": "gears or sprockets the links mesh with", "links": "tread links", "axles": "free-turning (idler) or driven"},
+      "rules": ["Link count must fit the wheel spacing so the loop is tight.", "Idler wheels on frictionless pins or free axles."],
+      "fails_when": ["Loop too loose (jumps off) or too tight (jams)."],
+      "recognise": "Chain of links round two or more gears.", "verbs": "MESH tread.teeth gear.teeth; DOES gear HOLDS track"
+    },
+    {
+      "type": "rigid_frame",
+      "does": "Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it.",
+      "motion_in": "none", "motion_out": "none",
+      "roles": {"members": "beams", "joints": "friction pins (2+ per joint stop twisting) or axles in cross holes"},
+      "rules": ["A joint with one pin can swing: use two pins, an axle in cross holes, or close a triangle/rectangle.", "Shafts' bearings must sit in the frame at the gear spacing."],
+      "fails_when": ["Single-pin joints where it must be stiff.", "Open U shapes that spread under load."],
+      "recognise": "Beams pinned in loops.", "verbs": "DOES a SUPPORTS b; DOES pins LOCKS beam"
+    },
+    {
+      "type": "decoration",
+      "does": "Looks only: panels, hoses, lights. Carries little or no load, never part of a drive.",
+      "motion_in": "none", "motion_out": "none", "roles": {}, "rules": ["Must not block moving parts."],
+      "fails_when": ["Rubs on a gear or link."], "recognise": "Panels, hoses, transparent plates.", "verbs": "DOES a HOLDS panel"
+    }
+  ]
+}

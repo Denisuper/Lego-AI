@@ -164,9 +164,10 @@ This file lists every kind of detail, from one hole up to the whole machine. Eac
 | --- | --- | --- | --- |
 | Inputs | knob-1, knob-2 at the back | picture + reasoning | 🟡 |
 | Outputs | upper body turns; arm raises; bucket tips | picture + reasoning | 🟡 |
-| Drive path, part by part | knob-2 → axle8s-1 → worm-1 → crown-1 → axle7-s → gear-5 → gear-6 | derived from DRIVES/CARRIES | 🟡 not confirmed in 8047 |
-| Total ratio and turns per output | 24 knob turns = 1 turn of crown-1 | derived from RATIOs | ⬜ |
-| Self-locking | worm drives hold position | derived (worm in path) | ⬜ |
+| Drive path, part by part | knob-2 → axle8s-1 → worm-1 → crown-1 → axle7-s → gear-5 → gear-6 → axle7-B | mechanisms.json + tools/mechanisms.py | ✅ front drive; 🟡 output and back shaft open |
+| Total ratio and turns per output | 24 knob turns = 1 turn of crown-1 | tools/mechanisms.py (MOTION lines) | ✅ |
+| Self-locking | worm drives hold position | mechanism library (worm_drive) | ✅ |
+| Jam check: a drive that would spin the frame | back shaft in 8047 | tools/mechanisms.py | ✅ |
 | Torque / speed trade-off in words | "slow and strong" | derived | ⬜ |
 | Linkages: pivot points, link lengths, range of motion | push rod axle9-43 tips the stick between angles | derived from geometry | ⬜ |
 | Limits / end stops | how far the arm can rise | 3D + human | ⬜ |

@@ -4,7 +4,8 @@ ADD axle8s-1 55013 darkgray
 ADD conn3-2 42003 black
 ADD worm-1 4716 lightgray
 ADD bush-26 3713 lightgray
-CONNECT axle8s-1.axle4 -> conn3-2.axlehole1 LOCKED
+# ERROR fixed (found by the motion check): through conn3-2's cross hole the worm shaft would be locked to the frame; it runs through a round hole
+CONNECT axle8s-1.axle4~ -> conn3-2.hole1~ TURNS
 CONNECT worm-1.axlehole1 -> axle8s-1.axle4 LOCKED
 CONNECT bush-26.axlehole1 -> axle8s-1.axle8 LOCKED
 MESH worm-1.teeth crown-1.teeth
@@ -12,5 +13,5 @@ RATIO worm-1 crown-1 1/24
 DOES axle8s-1 CARRIES worm-1
 DOES worm-1 DRIVES crown-1
 DOES bush-26 LOCKS axle8s-1
-DOES conn3-2 HOLDS axle8s-1
+DOES axle8s-1 SPINS_ON conn3-2
 PATTERN worm_drive

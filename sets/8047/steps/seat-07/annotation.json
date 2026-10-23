@@ -41,7 +41,7 @@
         "catalog_name": "Technic Axle 7",
         "color": "Light Bluish Gray",
         "part_match": "confirmed",
-        "position": "through the axle hole in block-s, running left to right",
+        "position": "through the round hole of the seat's hub core (hub4-s), running left to right above block-s",
         "rotation": "spins"
       },
       {
@@ -56,11 +56,12 @@
     ],
     "what_each_new_part_touches": [
       "side box: gear-5 slides onto axle7-s",
-      "axle7-s goes through block-s",
+      "axle7-s goes through hub4-s's round hole, above block-s",
       "bush-s1 pushes onto axle7-s's right end"
     ],
     "who_does_what_to_which": [
       "axle7-s carries gear-5",
+      "axle7-s spins on hub4-s",
       "bush-s1 locks axle7-s in place"
     ],
     "where_everything_is_after": [
@@ -75,6 +76,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "CONTRADICTION: axle7-s goes through block-s's cross hole, and block-s hangs on a hub pin by its round hole (parallel to the axle). That locks axle7-s, but the worm drive (steps 26-28) needs it to turn. Either block-s is a different part or it sits elsewhere: re-check seat steps 5 and 7."
+  "needs_review": false,
+  "review_note": "Corrected: the picture shows block-s's cross hole still empty after this step, so axle7-s does not go through it. It runs through the hub's round hole, so it turns freely: that's what lets the worm drive it later."
 }

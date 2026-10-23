@@ -46,5 +46,5 @@
   },
   "confidence": "medium",
   "needs_review": true,
-  "review_note": "Whether it engages gear-7 is not confirmed."
+  "review_note": "MECHANISM ERROR (motion check): axle9-33 sits in the cross holes of ycon-1 and ycon-2, which hang on pins at right angles to it, so the shaft cannot turn. Either it is a fixed bar (and knob-1 is a grip, not a drive) or the bearings are labelled wrong. Check steps 32-34 against the finished model."
 }

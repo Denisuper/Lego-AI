@@ -7,6 +7,7 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | --- | --- |
 | `sets/<set>/` | One folder per instruction booklet |
 | `sets/<set>/steps/<build>-NN/` | One folder per step: `picture.png`, `annotation.json`, `notation.tbl` |
+| `sets/<set>/mechanisms.json` | Each mechanism (worm drive, swing ring, linkages...) as a chain of parts in the order motion flows, with each part's role |
 | `sets/<set>/systems.json` | The machine's systems (frame, tracks, swing, drives, arm, bucket, covers, roof): what each is on a real excavator, what it's for, how they depend on each other, and every part's role |
 | `sets/<set>/roles.csv` | Every part: its system, its role, and every later step that uses it (generated) |
 | `sets/<set>/booklet_map.csv` | Every step in booklet order, with page and where each side build attaches |
@@ -14,9 +15,11 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `sets/<set>/training.jsonl`, `training.tbl` | The whole set in one file each, ready for training (generated) |
 | `sets/<set>/preview.md` | Every step with its picture, easy to read (generated) |
 | `catalog/technic_parts.csv` | Every Technic part: number, name, category, colors, size, thickness, type, friction/frictionless, what it's for, hole/pin/axle counts, gear teeth, plain-English description |
+| `catalog/mechanisms.json` | Library of mechanism types: what each does, motion in/out, ratio, part roles, rules, how it fails |
 | `catalog/connections.csv` | Every named point on every part (hole1, axlehole2, pin1, axle3...): type, exact position, direction, depth, whether things slide in it, how it turns |
 | `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
-| `docs/` | Labeling instructions, framework, and `detail_spec.md`: every kind of detail we record or plan to, with status |
+| `docs/` | Labeling instructions, framework, `mechanism_training.md` (what the data teaches and the training tasks), and `detail_spec.md`: every kind of detail we record or plan to, with status |
+| `tools/mechanisms.py` | Works out each mechanism's state after every step, what turns when you turn a knob (with ratios), what each part builds on, and flags jams |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
 | `tools/check_notation.py` | Checks every join: the hole/pin exists on that part, the two fit, and locked/turns/stiff is right |

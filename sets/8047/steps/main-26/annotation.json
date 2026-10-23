@@ -76,7 +76,7 @@
       "axle8s-1 carries worm-1",
       "worm-1 drives crown-1",
       "bush-26 locks axle8s-1 in place",
-      "conn3-2 holds axle8s-1"
+      "axle8s-1 spins on conn3-2"
     ],
     "where_everything_is_after": [
       "worm shaft across the front, meshing crown-1",
@@ -90,6 +90,6 @@
     }
   },
   "confidence": "medium",
-  "needs_review": true,
-  "review_note": "The worm meshing crown-1 is read from the picture."
+  "needs_review": false,
+  "review_note": "Corrected by the motion check: the worm shaft must turn, so it runs through conn3-2's round hole, not its cross hole. Worm on crown-1 confirmed in steps 26-28."
 }

@@ -4,6 +4,8 @@ ADD axle-A 4519 lightgray
 CONNECT axle-A.axle1 -> rod-A.axlehole1 LOCKED
 DOES rod-A HOLDS axle-A
 PATTERN pin_axle_pin_shaft
+MECH frame rigid_frame axle-A spine_of_the
+STATE frame 1/8
 
 STEP 2
 ADD beam-C 63869 lightgray
@@ -15,6 +17,8 @@ DOES rod-B HOLDS axle-A
 DOES rod-A LOCKS beam-C
 DOES rod-B LOCKS beam-C
 PATTERN trapped_connector
+MECH frame rigid_frame beam-C mount_for_the
+STATE frame 2/8
 
 STEP 3
 ADD bentbeam-D 32140 black
@@ -27,6 +31,8 @@ DOES rod-B HOLDS bentbeam-D
 DOES beam-C HOLDS pin-E
 DOES beam-C HOLDS pin-F
 PATTERN two_pin_mount
+MECH frame rigid_frame bentbeam-D far_side_member
+STATE frame 3/8
 
 STEP 4
 ADD axle-red-G 32062 red
@@ -51,6 +57,8 @@ DOES connector-K HOLDS axle-red-J
 DOES bentbeam-I HOLDS axle-red-J
 DOES rod-A HOLDS bentbeam-I
 PATTERN mirror_side
+MECH frame rigid_frame bentbeam-I near_side_member
+STATE frame 4/8
 
 STEP 6
 ADD pin-L 2780 black
@@ -70,6 +78,8 @@ DOES pin-M LOCKS beam7-N
 DOES beam7-N SUPPORTS bentbeam-D
 DOES beam7-N SUPPORTS bentbeam-I
 PATTERN closed_box_frame
+MECH frame rigid_frame beam7-N front_cross_member
+STATE frame 5/8
 
 STEP 8
 ADD turntable-O 50163 darkgray
@@ -79,6 +89,8 @@ DOES pin-E HOLDS turntable-O
 DOES pin-F HOLDS turntable-O
 DOES turntable-O.top SPINS_ON turntable-O.base
 PATTERN turntable_joint
+MECH swing slewing_ring turntable-O base_fixed_pins
+STATE swing 1/3
 
 STEP 9
 ADD pin-P 2780 black
@@ -93,6 +105,8 @@ DOES turntable-O HOLDS pin-Q
 DOES pin-P LOCKS beam-R
 DOES pin-Q LOCKS beam-R
 PATTERN two_pin_mount
+MECH frame rigid_frame beam-R back_mount_on
+STATE frame 6/8
 
 STEP 10
 GROUP back-T
@@ -131,6 +145,9 @@ DOES pin-V HOLDS beam9-X
 DOES rod-A HOLDS beam9-Y
 DOES pin-U HOLDS beam9-Y
 PATTERN side_rails
+MECH frame rigid_frame beam9-X far_rail
+MECH frame rigid_frame beam9-Y near_rail
+STATE frame 8/8 COMPLETE
 
 STEP 13
 ADD tan-1 3749 tan
@@ -146,6 +163,8 @@ DOES tan-2 SPINS_ON beam9-X
 DOES tan-3 SPINS_ON beam9-Y
 DOES tan-4 SPINS_ON beam9-Y
 PATTERN free_spinning_axle
+MECH tracks track_loop tan-1 frictionless_axle_pin
+STATE tracks 1/7
 
 STEP 14
 ADD gear-1 4019 lightgray
@@ -161,6 +180,11 @@ DOES tan-2 CARRIES gear-2
 DOES tan-3 CARRIES gear-3
 DOES tan-4 CARRIES gear-4
 PATTERN gears_as_track_wheels
+MECH tracks track_loop gear-1 idler_wheel
+MECH tracks track_loop gear-2 idler_wheel
+MECH tracks track_loop gear-3 idler_wheel_near
+MECH tracks track_loop gear-4 idler_wheel_near
+STATE tracks 5/7
 
 STEP 15
 GROUP track-left
@@ -292,6 +316,9 @@ DOES gear-4 HOLDS track-right
 DOES beam9-X SUPPORTS track-left
 DOES beam9-Y SUPPORTS track-right
 PATTERN track_loop_on_idlers
+MECH tracks track_loop tread-1 link_of_the
+MECH tracks track_loop tread-29 link_of_the
+STATE tracks 7/7 COMPLETE
 
 STEP 16
 # model flipped: turntable-O's toothed half now on top
@@ -302,6 +329,9 @@ CONNECT pinlong-2.pin1 -> turntable-O.hole8~ STIFF
 DOES turntable-O HOLDS pinlong-1
 DOES turntable-O HOLDS pinlong-2
 PATTERN pins_as_mounting_posts
+MECH swing slewing_ring pinlong-1 fixes_the_seat
+MECH swing slewing_ring pinlong-2 same_other_side
+STATE swing 3/3 COMPLETE
 
 STEP 17
 GROUP seat
@@ -351,12 +381,16 @@ PATTERN axle_as_cross_bar
 ADD axle7-s 44294 lightgray
 ADD gear-5 4019 lightgray
 CONNECT gear-5.axlehole1 -> axle7-s.axle1 LOCKED
-CONNECT axle7-s.axle4 -> block-s.axlehole1 LOCKED
+# ERROR fixed: block-s's cross hole is still empty after this step (seen in the picture); the shaft runs through the hub's round hole and turns freely
+CONNECT axle7-s.axle4~ -> hub4-s.hole3~ TURNS
 ADD bush-s1 3713 lightgray
 CONNECT bush-s1.axlehole1 -> axle7-s.axle7 LOCKED
 DOES axle7-s CARRIES gear-5
 DOES bush-s1 LOCKS axle7-s
 PATTERN shaft_with_gear_and_bush
+MECH drive_front worm_drive axle7-s shaft
+MECH drive_front worm_drive gear-5 driver_of_the
+STATE drive_front 2/8
 ADD lbeam-s3 32526 darkgray
 CONNECT axle9-s1.axle1 -> lbeam-s3.hole5~ TURNS
 DOES axle9-s1 CARRIES lbeam-s3
@@ -368,6 +402,7 @@ PATTERN bush_as_end_stop
 ADD axle9-s2 60485 lightgray
 ADD bush-s3 3713 lightgray
 CONNECT bush-s3.axlehole1 -> axle9-s2.axle5 LOCKED
+CONNECT axle9-s2.axle5~ -> block-s.axlehole1 LOCKED
 CONNECT axle9-s2.axle1 -> lbeam-s3.hole3~ TURNS
 DOES lbeam-s3 HOLDS axle9-s2
 DOES bush-s3 LOCKS axle9-s2
@@ -381,6 +416,8 @@ DOES axle9-s1 CARRIES lbeam-s4
 DOES axle9-s2 CARRIES lbeam-s4
 DOES axle7-s CARRIES crown-1
 PATTERN mirror_side
+MECH drive_front worm_drive crown-1 wheel
+STATE drive_front 3/8
 END
 ATTACH seat
 CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF
@@ -413,6 +450,8 @@ DOES axcon-1 HOLDS axpin-1
 DOES axle9-s2 CARRIES conn3-1
 DOES lbeam-s3 HOLDS axle7-B
 PATTERN axle_to_pin_shaft
+MECH drive_front worm_drive axle7-B output_shaft ?
+STATE drive_front 4/8
 
 STEP 20
 # Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
@@ -447,6 +486,8 @@ DOES axle7-B CARRIES gear-6
 DOES gear-5 DRIVES gear-6
 DOES conn3c-1 HOLDS axle9-s1
 PATTERN gear_pair_1to1
+MECH drive_front worm_drive gear-6 driven_gear_16
+STATE drive_front 5/8
 
 STEP 23
 # What the lever moves is not confirmed yet.
@@ -458,6 +499,9 @@ CONNECT crank-1.pin1 -> link9-1.hole1 STIFF
 DOES crank-1 HOLDS link9-1
 DOES link9-1 SPINS_ON crank-1
 PATTERN crank_and_link_lever
+MECH boom_mount crank_lever link9-1 link
+MECH boom_mount crank_lever crank-1 crank ?
+STATE boom_mount 2/3
 
 STEP 24
 # Which blue pin is used is read from the arrow only.
@@ -485,7 +529,8 @@ ADD axle8s-1 55013 darkgray
 ADD conn3-2 42003 black
 ADD worm-1 4716 lightgray
 ADD bush-26 3713 lightgray
-CONNECT axle8s-1.axle4 -> conn3-2.axlehole1 LOCKED
+# ERROR fixed (found by the motion check): through conn3-2's cross hole the worm shaft would be locked to the frame; it runs through a round hole
+CONNECT axle8s-1.axle4~ -> conn3-2.hole1~ TURNS
 CONNECT worm-1.axlehole1 -> axle8s-1.axle4 LOCKED
 CONNECT bush-26.axlehole1 -> axle8s-1.axle8 LOCKED
 MESH worm-1.teeth crown-1.teeth
@@ -493,8 +538,11 @@ RATIO worm-1 crown-1 1/24
 DOES axle8s-1 CARRIES worm-1
 DOES worm-1 DRIVES crown-1
 DOES bush-26 LOCKS axle8s-1
-DOES conn3-2 HOLDS axle8s-1
+DOES axle8s-1 SPINS_ON conn3-2
 PATTERN worm_drive
+MECH drive_front worm_drive axle8s-1 input_shaft
+MECH drive_front worm_drive worm-1 worm
+STATE drive_front 7/8
 
 STEP 27
 # Which axle gets the bush is read from the arrow only.
@@ -552,6 +600,8 @@ DOES axle4s-b CARRIES gear-7
 DOES bush-b LOCKS axle4s-b
 DOES axle4s-b SPINS_ON beam3-b
 PATTERN shaft_with_gear_and_stop
+MECH drive_back knob_input gear-7 possibly_driven_by ?
+STATE drive_back 1/3
 # Which pins fairing-2 uses is not visible.
 ADD fairing-2 87086 yellow
 CONNECT pin-b1.pin3 -> fairing-2.hole6~ STIFF
@@ -591,6 +641,8 @@ CONNECT axle9-33.axle5 -> ycon-2.axlehole1 LOCKED
 DOES ycon-1 HOLDS axle9-33
 DOES axle9-33 SPINS_ON ycon-2
 PATTERN long_cross_shaft
+MECH drive_back knob_input axle9-33 input_shaft_in
+STATE drive_back 2/3
 
 STEP 34
 # Only one arrow; the second knob's shaft is read from the picture. Which knob does what is a guess.
@@ -601,6 +653,12 @@ CONNECT knob-2.axlehole1 -> axle8s-1.axle8 LOCKED
 DOES axle9-33 CARRIES knob-1
 DOES axle8s-1 CARRIES knob-2
 PATTERN gear_as_knob
+MECH drive_back knob_input knob-1 knob_input
+MECH drive_front worm_drive knob-2 knob_input
+STATE drive_back 3/3 COMPLETE
+STATE drive_front 8/8 COMPLETE
+MOTION knob-1 axle9-33=1
+MOTION knob-2 axle8s-1=1 worm-1=1 crown-1=-1/24 axle7-s=-1/24 gear-5=-1/24 gear-6=1/24 axle7-B=1/24
 
 STEP 35
 # Which holes beam9-35 uses is not visible.
@@ -683,6 +741,11 @@ DOES axle4s-a CARRIES worm-2
 DOES axcon-a HOLDS axle3-a3
 DOES ycon-a HOLDS axle4s-a
 PATTERN worm_drive
+MECH boom_drive worm_drive worm-2 worm
+MECH boom_drive worm_drive axcon-a joins_the_shaft
+MECH boom_drive worm_drive axle4s-a worm_shaft
+MECH boom_drive worm_drive axle3-a3 shaft_to_the
+STATE boom_drive 4/9
 # No arrow.
 ADD curve-a2 32250 yellow
 CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS
@@ -699,6 +762,8 @@ ADD axle3-a4 4519 lightgray
 CONNECT axle3-a4.axle1 -> beam3t-a2.axlehole2~ LOCKED
 DOES beam3t-a2 HOLDS axle3-a4
 PATTERN axle_as_pivot
+MECH boom_mount crank_lever axle3-a4 boom_pivot
+STATE boom_mount 3/3 COMPLETE
 # pin-a9 looks long; matched to 2780 because both 32054s are used in step 36.
 ADD pin-a9 2780 black
 ADD bevel12-a1 6589 tan
@@ -707,6 +772,8 @@ CONNECT bevel12-a1.axlehole1 -> axle3-a3.axle3 LOCKED
 DOES holder-a HOLDS pin-a9
 DOES axle3-a3 CARRIES bevel12-a1
 PATTERN bevel_right_angle
+MECH boom_drive worm_drive bevel12-a1 bevel_driven
+STATE boom_drive 5/9
 ADD conn3c-a2 32184 lightgray
 ADD bevel20-a 87407 lightgray
 ADD axle5-a 32073 lightgray
@@ -718,6 +785,8 @@ DOES bevel12-a1 DRIVES bevel20-a
 DOES bevel20-a SPINS_ON pin-a9
 DOES axle5-a CARRIES conn3c-a2
 PATTERN bevel_right_angle
+MECH boom_drive worm_drive bevel20-a idler_bevel_turning
+STATE boom_drive 6/9
 # con180-a matched as 32034 by elimination (all 42003s used); what drives gear-8 is not confirmed.
 ADD axle3-a5 4519 lightgray
 ADD axle4-a1 3705 black
@@ -733,6 +802,10 @@ DOES axle3-a5 CARRIES gear-8
 DOES axle3-a5 CARRIES bevel12-a2
 DOES bevel12-a2 DRIVES bevel20-a
 PATTERN input_shaft
+MECH boom_drive worm_drive axle3-a5 input_shaft
+MECH boom_drive worm_drive bevel12-a2 bevel_driver
+MECH boom_drive worm_drive gear-8 input_gear ?
+STATE boom_drive 9/9 COMPLETE
 ADD axle4-a2 3705 black
 ADD conn3c-a3 32184 lightgray
 CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED
@@ -788,6 +861,8 @@ CONNECT link9-b.hole1 -> axle2-b1.axle1 TURNS
 DOES axle2-b4 HOLDS beam3t-b2
 DOES link9-b SPINS_ON axle2-b1
 PATTERN link_to_tool
+MECH bucket linkage_4bar link9-b coupler_from_the
+STATE bucket 1/3
 ADD lthin-2 32056 yellow
 ADD axle3-b 4519 lightgray
 CONNECT lthin-2.hole1 -> axle2-b1.axle2 TURNS
@@ -819,6 +894,8 @@ CONNECT angle1-42.hole1 -> axle3-41.axle2 TURNS
 DOES thin4-2 HOLDS axle3-41
 DOES angle1-42 SPINS_ON axle3-41
 PATTERN axle_hinge
+MECH stick push_rod angle1-42 rod_s_back
+STATE stick 1/5
 
 STEP 43
 ADD axle9-43 60485 lightgray
@@ -833,6 +910,9 @@ DOES axle9-43 CARRIES angle1-43
 DOES axle9-43 CARRIES angle4-43
 DOES tanpin-1 SPINS_ON angle4-43
 PATTERN push_rod_linkage
+MECH stick push_rod axle9-43 push_rod
+MECH stick push_rod tanpin-1 frictionless_pivot_at
+STATE stick 3/5
 
 STEP 44
 # bent2-44 matched as 44809 by elimination (87082s are used in step 54).
@@ -847,6 +927,8 @@ DOES tanpin-1 HOLDS beam11-44
 DOES beam11-44 SPINS_ON axle3-b
 DOES pin-44 HOLDS bent2-44
 PATTERN stick_on_two_pivots
+MECH stick push_rod beam11-44 stick
+STATE stick 4/5
 
 STEP 45
 ADD beam11-45 32525 yellow
@@ -854,6 +936,8 @@ CONNECT beam11-45.hole1 -> tanpin-1.pin3 TURNS
 CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF
 DOES pin-44 LOCKS beam11-45
 PATTERN doubled_beam
+MECH stick push_rod beam11-45 stick_second_beam
+STATE stick 5/5 COMPLETE
 
 STEP 46
 ADD bucket-1 2950 black
@@ -863,6 +947,9 @@ CONNECT axle55-46.axle1~ -> beam11-44.hole11~ TURNS
 DOES axle55-46 CARRIES bucket-1
 DOES bucket-1 SPINS_ON axle55-46
 PATTERN bucket_on_pivot
+MECH bucket linkage_4bar bucket-1 tool
+MECH bucket linkage_4bar axle55-46 bucket_pivot
+STATE bucket 3/3 COMPLETE
 
 STEP 47
 ADD axle3-47 4519 lightgray

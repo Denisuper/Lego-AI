@@ -4,6 +4,8 @@ Reads  steps/<folder>/annotation.json + notation.tbl in booklet_map.csv order.
 Also reads systems.json (what each part is for in the finished machine).
 Writes training.jsonl, training.tbl, preview.md, part_matches.csv, roles.csv (all generated, don't hand-edit)."""
 import csv, json, re, sys
+sys.path.insert(0, "tools")
+from mechanisms import Tracker
 d = sys.argv[1].rstrip("/") + "/"
 DEPTH = {(r["part_number"], r["point"]): (r["type"], float(r["depth_holes"])) for r in csv.DictReader(open("catalog/connections.csv", encoding="utf-8"))}
 FIT = {"LOCKED": "locked (turn together)", "TURNS": "turns freely", "STIFF": "held stiff by friction"}
@@ -29,9 +31,7 @@ def joins(notation):
     return out
 rows = list(csv.DictReader(open(d + "booklet_map.csv")))
 side = {}  # side build -> its sub-steps' notation, inserted before "ATTACH <build>"
-for r in rows:
-    if r["build"] != "main":
-        side.setdefault(r["build"], []).append(open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip())
+
 # ---- big picture: every part's system, role, and every later step that uses it
 systems = json.load(open(d + "systems.json", encoding="utf-8"))
 role_of = {pat: (sy, role) for sy in systems["systems"] for pat, role in sy["parts"].items()}
@@ -57,14 +57,21 @@ def big_picture(name):
             "used_later": [{"step": s_, "line": l} for s_, l in later.get(name, [])],
             "feeds": [x["name"] for x in systems["systems"] if sy and x["id"] in sy["feeds"]]}
 
+tracker = Tracker(d)
+mech_lines = {}
 tbl, ann = [], []
 for r in rows:
     e = json.load(open(f"{d}steps/{r['folder']}/annotation.json", encoding="utf-8"))
+    info = tracker.step(e["example_id"], open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read())
+    e["answer"]["mechanism"] = info
+    mech_lines[r["folder"]] = tracker.lines(info)
     e["answer"]["joins"] = joins(open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read())
     e["answer"]["big_picture"] = [big_picture(p["name"]) for p in e["answer"]["new_parts"]]
     ann.append(e)
-    if r["build"] != "main": continue
-    for line in open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip().split("\n"):
+    if r["build"] != "main":
+        side.setdefault(r["build"], []).append("\n".join([open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip()] + mech_lines[r["folder"]]))
+        continue
+    for line in open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip().split("\n") + mech_lines[r["folder"]]:
         g = line.split()[1] if line.startswith("ATTACH ") else None
         if g in side:
             tbl += [f"GROUP {g}", *"\n".join(side.pop(g)).split("\n"), "END"]
@@ -97,6 +104,16 @@ with open(d + "part_matches.csv", "w", newline="", encoding="utf-8") as f:
             f"- **{b['part']}** ({b['system']}): {b['role']}"
             + (" Later: " + "; ".join(f"{u['step']} `{u['line']}`" for u in b["used_later"]) + "." if b["used_later"] else "")
             for b in a["big_picture"] if not re.fullmatch(r"tread-(?!1$|29$).*", b["part"])) + "\n")
+        mi = a["mechanism"]
+        if mi["advances"] or mi["builds_on"]:
+            md.append("**Mechanisms:**\n" + "\n".join(
+                [f"- adds **{x['part']}** to the {x['name'].lower()} ({x['type']}) as {x['role']}" + (" *(not confirmed)*" if x["status"] == "hypothesis" else "") for x in mi["advances"]]
+                + [f"- {s['mechanism']}: {s['parts_present']}/{s['parts_total']} parts" + (" - complete" if s["complete"] else f" - still missing {', '.join(s['still_missing'][:4])}") for s in mi["state"]]
+                + [f"- motion: {mo['says']}" for mo in mi["motion"]]
+                + [f"- **{bo['part']}** builds on " + "; ".join(
+                    f"{x['joins']} ({x['added_in'].replace('8047-', '')}{', ' + x['that_part_is'][0] if x['that_part_is'] else ''})"
+                    + (", which rests on " + ", ".join(f"{w['part']} ({w['added_in'].replace('8047-', '')})" for w in x["which_rests_on"]) if x["which_rests_on"] else "")
+                    for x in bo["builds_on"]) for bo in mi["builds_on"] if not re.fullmatch(r"tread-(?!1$|29$).*", bo["part"])]) + "\n")
         if e["review_note"]: md.append(f"**Review:** {e['review_note']}\n")
 open(d + "preview.md", "w", encoding="utf-8").write("\n".join(md))
 with open(d + "roles.csv", "w", newline="", encoding="utf-8") as f:

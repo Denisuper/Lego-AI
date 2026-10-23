@@ -34,6 +34,9 @@ Read ahead to the end of the booklet before writing a role: a pin added in step 
 `tools/build_set.py` adds a `big_picture` entry for every new part (system, role, real-machine purpose, and every later step that uses the part) and reports any part with no role. Don't write the later-step list by hand; it comes from the notation.
 If you can't confirm what a part ends up doing, say so in the role and in `open_questions`.
 
+## Mechanisms (required for every set)
+Write `sets/<set>/mechanisms.json`: every mechanism as a chain of parts in the order motion flows, each part with its role (from `catalog/mechanisms.json`) and `confirmed` / `hypothesis`. Then run `python tools/mechanisms.py sets/<set>`: each input must turn something and there must be no JAM lines. See docs/mechanism_training.md.
+
 Then add: `confidence` (low / medium / high), `needs_review` (true/false), `review_note`.
 
 ## Naming rules
