@@ -1,0 +1,162 @@
+{
+  "example_id": "42006-42006l3b-step-75",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 75,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle4-14",
+        "part_number": "87083",
+        "count": 1
+      },
+      {
+        "name": "part-17",
+        "part_number": "6590",
+        "count": 1
+      },
+      {
+        "name": "beam7-8",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "pin-185",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-186",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-187",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "pin-188",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "beam2-3",
+        "part_number": "60483",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle4-14",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=-18.9, z=-17.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-17",
+        "part_number": "6590",
+        "catalog_name": "6590",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.95, y=-18.9, z=-17.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-8",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-7.6, z=-6.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-185",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.5, y=-10, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-186",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-6, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-187",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.5, y=-6, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-188",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.5, y=-6, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-3",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-6, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-185's pin1 goes into beam7-8's hole1 (stiff)",
+      "pin-186's pin1 goes into beam7-8's hole6 (stiff)",
+      "pin-187's axle1 goes into pin-188's hole1 (turns)",
+      "axle9-4's axle9 goes into beam2-3's axlehole1 (locked)",
+      "pin-186's pin2 goes into beam5-4's hole1 (stiff)",
+      "axle4-14's axle3 goes into assembly-2's hole1 (turns)",
+      "axle4-14's axle2 goes into beam3x5-16's hole7 (turns)",
+      "axle4-14's axle4 goes into beam3x5-21's hole7 (turns)",
+      "pin-185's pin2 goes into beam11-8's hole5 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-8 holds pin-185",
+      "beam7-8 holds pin-186",
+      "pin-188 spins on pin-187",
+      "axle9-4 carries beam2-3",
+      "beam5-4 holds pin-186",
+      "assembly-2 spins on axle4-14",
+      "beam3x5-16 spins on axle4-14",
+      "beam3x5-21 spins on axle4-14",
+      "beam11-8 holds pin-185"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

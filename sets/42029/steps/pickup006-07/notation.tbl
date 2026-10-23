@@ -1,0 +1,4 @@
+ADD beam2x4-4 32140 black
+POS beam2x4-4 0 3 0.5 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-11.pin1 -> beam2x4-4.hole4 STIFF
+CONNECT axle8-1.axle6 -> beam2x4-4.hole3 TURNS

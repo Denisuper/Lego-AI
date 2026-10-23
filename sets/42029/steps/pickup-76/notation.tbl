@@ -1,0 +1,6 @@
+ATTACH pickup090l
+ATTACH pickup090r
+CONNECT pin-335.pin1 -> beam13-2.hole10 STIFF
+CONNECT pin-336.pin1 -> beam13-2.hole8 STIFF
+CONNECT pin-333.pin1 -> beam13-3.hole10 STIFF
+CONNECT pin-334.pin1 -> beam13-3.hole8 STIFF

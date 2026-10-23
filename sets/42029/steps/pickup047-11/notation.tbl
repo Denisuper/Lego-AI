@@ -1,0 +1,12 @@
+ADD pin-107 44809 red
+POS pin-107 6 -1 10 0 0 -1 1 0 0 0 -1 0
+ADD pin-108 44809 red
+POS pin-108 -6 -1 10 -1 0 0 0 0 -1 0 -1 0
+ADD pin-109 2780 black
+POS pin-109 -7 -1.5 10 0 0 1 -1 0 0 0 -1 0
+ADD pin-110 2780 black
+POS pin-110 7 -1.5 10 0 0 1 -1 0 0 0 -1 0
+CONNECT pin-110.pin1 -> pin-107.hole1 STIFF
+CONNECT pin-106.axle1 -> pin-107.hole2 TURNS
+CONNECT pin-109.pin1 -> pin-108.hole3 STIFF
+CONNECT pin-105.axle1 -> pin-108.hole2 TURNS

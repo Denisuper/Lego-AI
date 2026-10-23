@@ -1,0 +1,164 @@
+{
+  "example_id": "42006-42006l3b-step-08",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 8,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-3",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-4",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-5",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-6",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "axle2-4",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-3",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9, y=0, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9, y=1, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-4",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9, y=0, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9, y=1, z=-12 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-5",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-3",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=9, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-6",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-4",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-9, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-1's axle1 goes into conn-3's axlehole3 (locked)",
+      "axle2-1's axle2 goes into conn-3's axlehole4 (locked)",
+      "pin-6's pin2 goes into conn-3's hole1 (stiff)",
+      "axle2-2's axle1 goes into conn-4's axlehole3 (locked)",
+      "axle2-2's axle2 goes into conn-4's axlehole4 (locked)",
+      "pin-7's pin2 goes into conn-4's hole1 (stiff)",
+      "axle2-3's axle1 goes into conn-5's axlehole3 (locked)",
+      "axle2-3's axle2 goes into conn-5's axlehole4 (locked)",
+      "pin-8's pin2 goes into conn-5's hole1 (stiff)",
+      "axle2-4's axle1 goes into conn-6's axlehole3 (locked)",
+      "axle2-4's axle2 goes into conn-6's axlehole4 (locked)",
+      "pin-5's pin2 goes into conn-6's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-1 carries conn-3",
+      "conn-3 holds pin-6",
+      "axle2-2 carries conn-4",
+      "conn-4 holds pin-7",
+      "axle2-3 carries conn-5",
+      "conn-5 holds pin-8",
+      "axle2-4 carries conn-6",
+      "conn-6 holds pin-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

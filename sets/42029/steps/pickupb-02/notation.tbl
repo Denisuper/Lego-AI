@@ -1,0 +1,10 @@
+ADD pin-145 48989 lightbluishgrey
+POS pin-145 1 0 -1 0 0 -1 -1 0 0 0 1 0
+ADD pin-146 2780 black
+POS pin-146 -0.5 0 -4 1 0 0 0 0 -1 0 1 0
+ADD pin-147 2780 black
+POS pin-147 -0.5 -2 -4 1 0 0 0 0 -1 0 1 0
+CONNECT pin-145.pin4 -> beam3x5-8.hole1 STIFF
+CONNECT pin-145.pin3 -> beam3x5-8.hole3 STIFF
+CONNECT pin-146.pin2 -> beam3x5-8.hole5 STIFF
+CONNECT pin-147.pin2 -> beam3x5-8.hole7 STIFF

@@ -1,0 +1,72 @@
+ADD sbs-1 s\3069bs01 maincolour
+POS sbs-1 0 0 0 1 0 0 0 1 0 0 0 1
+ADD part-121 4-4disc red
+POS part-121 0 0 -0.3 0.9 0 0 0 1 0 0 0 0.9
+ADD part-122 4-4ndis black
+POS part-122 0 0 -0.3 0.636 0 0.636 0 1 0 -0.636 0 0.636
+ADD part-123 1-4chrd black
+POS part-123 0 0 -0.3 -1.6 0 0 0 1 0 0 0 -1.6
+ADD part-124 1-4chrd black
+POS part-124 0 0 -0.3 1.6 0 0 0 1 0 0 0 1.6
+ADD part-125 1-4chrd black
+POS part-125 0 0 -0.3 1.6 0 0 0 1 0 0 0 -1.6
+ADD part-126 1-4chrd black
+POS part-126 0 0 -0.3 -1.6 0 0 0 1 0 0 0 1.6
+ADD part-127 4-4ndis maincolour
+POS part-127 0 0 -0.3 1.6 0 0 0 1 0 0 0 1.6
+ADD part-128 4-4ndis maincolour
+POS part-128 0.2 0 -0.3 1.6 0 0 0 1 0 0 0 1.6
+ADD part-129 1-4chrd black
+POS part-129 0.2 0 -0.3 -1.6 0 0 0 1 0 0 0 1.6
+ADD part-130 1-4chrd black
+POS part-130 0.2 0 -0.3 -1.6 0 0 0 1 0 0 0 -1.6
+ADD part-131 1-4chrd black
+POS part-131 0.2 0 -0.3 1.6 0 0 0 1 0 0 0 -1.6
+ADD part-132 1-4chrd black
+POS part-132 0.2 0 -0.3 1.6 0 0 0 1 0 0 0 1.6
+ADD part-133 4-4ndis black
+POS part-133 0.2 0 -0.3 0.636 0 0.636 0 1 0 -0.636 0 0.636
+ADD part-134 4-4disc yellow
+POS part-134 0.2 0 -0.3 0.9 0 0 0 1 0 0 0 0.9
+ADD part-135 3-8ring7 black
+POS part-135 0.1 0 0.2 0 0 0.5 0 1 0 0.5 0 0
+ADD part-136 3-8ring7 black
+POS part-136 0.1 0 0.2 0 0 -0.5 0 1 0 0.5 0 0
+ADD part-137 3-8ring8 white
+POS part-137 0.1 0 0.2 0 0 0.5 0 1 0 0.5 0 0
+ADD part-138 3-8ring8 white
+POS part-138 0.1 0 0.2 0 0 -0.5 0 1 0 0.5 0 0
+ADD part-139 3-8ndis black
+POS part-139 0.1 0 0.2 0 0 4.5 0 1 0 4.5 0 0
+ADD part-140 3-8ndis black
+POS part-140 0.1 0 0.2 0 0 -4.5 0 1 0 4.5 0 0
+ADD part-141 3-8ndis black
+POS part-141 0.7 0 0.2 0 0 4.5 0 1 0 4.5 0 0
+ADD part-142 3-8ndis black
+POS part-142 0.7 0 0.2 0 0 -4.5 0 1 0 4.5 0 0
+ADD part-143 1-4chrd white
+POS part-143 0.1 0 0.2 0 0 3.5 0 1 0 3.5 0 0
+ADD part-144 1-4chrd white
+POS part-144 0.1 0 0.2 0 0 -3.5 0 1 0 3.5 0 0
+ADD part-145 3-8ring7 black
+POS part-145 0.7 0 0.2 0 0 0.5 0 1 0 0.5 0 0
+ADD part-146 3-8ring7 black
+POS part-146 0.7 0 0.2 0 0 -0.5 0 1 0 0.5 0 0
+ADD part-147 3-8ring8 white
+POS part-147 0.7 0 0.2 0 0 0.5 0 1 0 0.5 0 0
+ADD part-148 3-8ring8 white
+POS part-148 0.7 0 0.2 0 0 -0.5 0 1 0 0.5 0 0
+ADD part-149 1-4chrd white
+POS part-149 0.7 0 0.2 0 0 3.5 0 1 0 3.5 0 0
+ADD part-150 1-8chrd white
+POS part-150 0.7 0 0.2 0 0 -3.5 0 1 0 3.5 0 0
+ADD part-151 1-8chrd white
+POS part-151 0.7 0 0.2 -3.5 0 0 0 1 0 0 0 3.5
+ADD part-152 1-8chrd white
+POS part-152 0.1 0 0.2 -3.5 0 0 0 1 0 0 0 -3.5
+ADD part-153 1-8chrd white
+POS part-153 0.1 0 0.2 3.5 0 0 0 1 0 0 0 -3.5
+ADD part-154 1-8chrd white
+POS part-154 0.7 0 0.2 -3.5 0 0 0 1 0 0 0 -3.5
+ADD part-155 1-8chrd white
+POS part-155 0.7 0 0.2 3.5 0 0 0 1 0 0 0 -3.5

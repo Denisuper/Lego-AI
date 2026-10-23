@@ -1,0 +1,14 @@
+ADD conn-39 32039 black
+POS conn-39 9.05 -13 -11 1 0 0 0 0 1 0 -1 0
+ADD pin-226 2780 black
+POS pin-226 8.55 -7 -12 1 0 0 0 1 0 0 0 1
+ADD conn-40 32014 black
+POS conn-40 9.05 -7 -12 -1 0 0 0 1 0 0 0 -1
+ADD pin-227 43093 blue
+POS pin-227 8.55 -12 -4 1 0 0 0 0.866 0.5 0 -0.5 0.866
+ADD conn-41 32039 black
+POS conn-41 9.05 -11.15 -4.5 1 0 0 0 -0.5 0.866 0 -0.866 -0.5
+CONNECT axle5-9.axle5 -> conn-39.axlehole1 LOCKED
+CONNECT pin-226.pin2 -> conn-40.hole1 STIFF
+CONNECT pin-226.pin1 -> beam2-4.hole1 STIFF
+CONNECT pin-227.axle1 -> beam7-9.hole3 TURNS

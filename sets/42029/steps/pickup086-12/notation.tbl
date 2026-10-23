@@ -1,0 +1,6 @@
+ADD beam9-10 6629 red
+POS beam9-10 -6 0 0 0 1 0 -1 0 0 0 0 1
+ADD conn-66 63869 lightbluishgrey
+POS conn-66 -7 0 0 -1 0 0 0 -1 0 0 0 1
+CONNECT axle6-7.axle3 -> beam9-10.axlehole1 LOCKED
+CONNECT axle6-7.axle2 -> conn-66.axlehole1 LOCKED

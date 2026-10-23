@@ -1,0 +1,8 @@
+ADD panel-20 64683 red
+POS panel-20 -7 1 2 -1 0 0 0 -1 0 0 0 1
+ADD pin-426 32054 red
+POS pin-426 -6 3 3 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-426.pin1 -> panel-20.hole5 STIFF
+CONNECT pin-419.pin1 -> panel-20.hole4 STIFF
+CONNECT pin-420.pin1 -> panel-20.hole2 STIFF
+CONNECT pin-426.pin2 -> beam13-12.hole13 STIFF

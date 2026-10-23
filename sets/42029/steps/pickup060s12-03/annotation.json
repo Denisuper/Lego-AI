@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup060s12-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-269",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-270",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-269",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-270",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=2, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-269's pin1 goes into beam5-10's hole4 (stiff)",
+      "pin-270's pin1 goes into beam5-10's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-10 holds pin-269",
+      "beam5-10 holds pin-270"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,5 @@
+ADD beam2x4-20 32140 black
+POS beam2x4-20 2 0 0 0 -1 0 0 0 -1 1 0 0
+CONNECT axle9-4.axle7 -> beam2x4-20.axlehole1 LOCKED
+CONNECT pin-222.pin2 -> beam2x4-20.hole2 STIFF
+CONNECT pin-225.pin1 -> beam2x4-20.hole3 STIFF

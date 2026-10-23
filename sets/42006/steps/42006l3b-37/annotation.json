@@ -1,0 +1,80 @@
+{
+  "example_id": "42006-42006l3b-step-37",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 37,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear16-5",
+        "part_number": "6542b",
+        "count": 1
+      },
+      {
+        "name": "conn-14",
+        "part_number": "6538b",
+        "count": 1
+      },
+      {
+        "name": "axle4-10",
+        "part_number": "3705",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear16-5",
+        "part_number": "6542b",
+        "catalog_name": "Technic Gear 16 Tooth with Clutch [Smooth]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-14",
+        "part_number": "6538b",
+        "catalog_name": "Technic Axle Connector Ridged [with x Hole x Orientation]",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=6.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-10",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=8.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-3's axle4 goes into gear16-5's hole1 (turns)",
+      "axle4-10's axle1 goes into conn-14's axlehole2 (locked)",
+      "axle5-3's axle5 goes into conn-14's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "gear16-5 spins on axle5-3",
+      "axle4-10 carries conn-14",
+      "axle5-3 carries conn-14"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

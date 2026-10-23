@@ -1,0 +1,4 @@
+ATTACH pickupc018
+CONNECT axle5-9.axle5 -> conn-23.axlehole2 LOCKED
+CONNECT axle5-9.axle4 -> beam3x3-11.hole2 TURNS
+CONNECT pin-169.axle1 -> beam3x3-11.hole3 TURNS

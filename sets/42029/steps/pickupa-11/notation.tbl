@@ -1,0 +1,22 @@
+ADD axle7-2 44294 lightbluishgrey
+POS axle7-2 -3 -1 5 0 0 1 0 -1 0 1 0 0
+ADD axle7-3 44294 lightbluishgrey
+POS axle7-3 3 -1 5 0 0 1 0 -1 0 1 0 0
+ADD conn-34 6536 black
+POS conn-34 -3 -1 2 0 1 0 0 0 1 1 0 0
+ADD conn-35 6536 black
+POS conn-35 3 -1 2 0 -1 0 0 0 -1 1 0 0
+CONNECT axle7-2.axle1 -> conn-34.axlehole1 LOCKED
+CONNECT axle7-3.axle1 -> conn-35.axlehole1 LOCKED
+CONNECT axle7-3.axle6 -> conn-31.axlehole1 LOCKED
+CONNECT axle7-3.axle2 -> conn-33.axlehole1 LOCKED
+CONNECT axle7-2.axle2 -> conn-31.axlehole1 LOCKED
+CONNECT axle7-2.axle6 -> conn-33.axlehole1 LOCKED
+CONNECT axle7-3.axle5 -> beam6-5.hole1 TURNS
+CONNECT axle7-3.axle5 -> beam6-6.hole1 TURNS
+CONNECT axle7-2.axle5 -> beam6-5.hole1 TURNS
+CONNECT axle7-2.axle5 -> beam6-6.hole1 TURNS
+CONNECT axle7-2.axle3 -> beam6-7.hole6 TURNS
+CONNECT axle7-2.axle3 -> beam6-8.hole6 TURNS
+CONNECT axle7-3.axle3 -> beam6-9.hole1 TURNS
+CONNECT axle7-3.axle3 -> beam6-10.hole1 TURNS

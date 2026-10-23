@@ -1,0 +1,12 @@
+ADD pin-59 44809 red
+POS pin-59 7 0 -8 -1 0 0 0 1 0 0 0 -1
+ADD pin-60 44809 red
+POS pin-60 -7 0 -8 0 0 -1 0 1 0 1 0 0
+ADD pin-61 6558 blue
+POS pin-61 -7 0 -8 0 0 -1 1 0 0 0 -1 0
+ADD pin-62 6558 blue
+POS pin-62 7 0 -8 0 0 -1 1 0 0 0 -1 0
+CONNECT pin-62.pin2 -> pin-59.hole2 STIFF
+CONNECT pin-21.axle1 -> pin-59.hole3 TURNS
+CONNECT pin-61.pin2 -> pin-60.hole2 STIFF
+CONNECT pin-22.axle1 -> pin-60.hole1 TURNS

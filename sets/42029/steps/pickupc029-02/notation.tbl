@@ -1,0 +1,14 @@
+ADD l-1 62520 lightbluishgrey
+POS l-1 2 0 -6.85 0 -0.986 -0.167 1 0 0 0 -0.167 0.986
+ADD l-2 62520 lightbluishgrey
+POS l-2 0 0 5 0.986 0 0.167 0 -1 0 0.167 0 -0.986
+ADD l-3 62520 lightbluishgrey
+POS l-3 0 0 5 0 1 0 -0.894 0 0.447 0.447 0 0.894
+ADD l-4 62520 lightbluishgrey
+POS l-4 2 0 -6.85 1 0 0 0 -1 0 0 0 -1
+ADD centre-1 62519 lightbluishgrey
+POS centre-1 2 0 -6.85 1 0 0 0 -1 0 0 0 -1
+ADD centre-2 62519 lightbluishgrey
+POS centre-2 0 0 5 0.989 0 0.149 0.067 -0.894 -0.442 0.134 0.447 -0.884
+CONNECT axle2-5.axle1 -> l-1.axlehole1 LOCKED
+CONNECT axle9-5.axle1 -> l-2.axlehole1 LOCKED

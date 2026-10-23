@@ -1,0 +1,3 @@
+ATTACH pickupa022s0
+CONNECT axle9-4.axle3 -> beam2x4-19.axlehole1 LOCKED
+CONNECT pin-223.pin1 -> beam2x4-19.hole2 STIFF

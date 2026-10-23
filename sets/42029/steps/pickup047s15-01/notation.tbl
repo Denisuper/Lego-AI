@@ -1,0 +1,8 @@
+ADD pin-117 10197 darkbluishgrey
+POS pin-117 -1 0.75 0 0 0 1 0 1 0 -1 0 0
+ADD beam3-8 6632 red
+POS beam3-8 -1 0 0 0 0 1 0 1 0 -1 0 0
+ADD pin-118 10197 darkbluishgrey
+POS pin-118 1 0.75 0 0 0 -1 0 1 0 1 0 0
+CONNECT pin-117.axle1 -> beam3-8.axlehole1 LOCKED
+CONNECT pin-118.axle1 -> beam3-8.axlehole2 LOCKED

@@ -1,0 +1,228 @@
+{
+  "example_id": "42006-42006l3b-step-06",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-1",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-15",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-16",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "axle5-1",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "axle5-2",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "pin-17",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-18",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "beam9-2",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-19",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-20",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-21",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-22",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-1",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-15",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-2, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-16",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-2, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-1",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-2, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-2",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-2, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-17",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-2, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-18",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-2, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-2",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-19",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-2, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-20",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-2, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-21",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-2, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-22",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-2, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-15's pin1 goes into beam9-1's hole9 (stiff)",
+      "pin-16's pin1 goes into beam9-1's hole1 (stiff)",
+      "pin-19's pin2 goes into beam9-1's hole6 (stiff)",
+      "pin-20's pin2 goes into beam9-1's hole4 (stiff)",
+      "axle5-2's axle5 goes into pin-15's axlehole1 (locked)",
+      "axle5-1's axle5 goes into pin-16's axlehole1 (locked)",
+      "axle5-1's axle1 goes into pin-17's axlehole1 (locked)",
+      "axle5-2's axle1 goes into pin-18's axlehole1 (locked)",
+      "pin-17's pin1 goes into beam9-2's hole1 (stiff)",
+      "pin-18's pin1 goes into beam9-2's hole9 (stiff)",
+      "pin-21's pin1 goes into beam9-2's hole6 (stiff)",
+      "pin-22's pin1 goes into beam9-2's hole4 (stiff)",
+      "pin-16's pin2 goes into beam3x5-1's hole7 (stiff)",
+      "pin-15's pin2 goes into beam3x5-2's hole7 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-1 holds pin-15",
+      "beam9-1 holds pin-16",
+      "beam9-1 holds pin-19",
+      "beam9-1 holds pin-20",
+      "axle5-2 carries pin-15",
+      "axle5-1 carries pin-16",
+      "axle5-1 carries pin-17",
+      "axle5-2 carries pin-18",
+      "beam9-2 holds pin-17",
+      "beam9-2 holds pin-18",
+      "beam9-2 holds pin-21",
+      "beam9-2 holds pin-22",
+      "beam3x5-1 holds pin-16",
+      "beam3x5-2 holds pin-15"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

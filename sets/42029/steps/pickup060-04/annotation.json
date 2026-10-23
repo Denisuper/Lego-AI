@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup060-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-251",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-252",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-251",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.2, y=2.1, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-252",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0.5, z=7.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-251's pin1 goes into pin-247's hole1 (stiff)",
+      "pin-252's pin1 goes into pin-247's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-247 holds pin-251",
+      "pin-252 spins on pin-247"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

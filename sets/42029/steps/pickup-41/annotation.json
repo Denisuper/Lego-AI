@@ -1,0 +1,36 @@
+{
+  "example_id": "42029-pickup-step-41",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 41,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "axle8-1's axle2 goes into beam3x3-6's hole4 (turns)",
+      "pin-34's pin2 goes into beam3x3-6's hole5 (stiff)",
+      "pin-35's pin2 goes into beam3x3-6's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x3-6 spins on axle8-1",
+      "beam3x3-6 holds pin-34",
+      "beam3x3-6 holds pin-35"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

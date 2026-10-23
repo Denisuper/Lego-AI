@@ -1,0 +1,15 @@
+ADD beam3-1 6632 white
+POS beam3-1 -0.75 0 -2 0 -1 0 1 0 0 0 0 1
+ADD beam3-2 6632 white
+POS beam3-2 0.75 0 -2 0 -1 0 1 0 0 0 0 1
+ADD axle2-3 32062 red
+POS axle2-3 0 0 0 -1 0 0 0 -1 0 0 0 1
+ADD axle2-4 32062 red
+POS axle2-4 0 0 -2 -1 0 0 0 -1 0 0 0 1
+ADD beam2-3 60483 darkbluishgrey
+POS beam2-3 0 0 -2 0 -1 0 -1 0 0 0 0 -1
+CONNECT axle2-3.axle2 -> beam3-1.axlehole2 LOCKED
+CONNECT axle2-4.axle2 -> beam3-1.axlehole1 LOCKED
+CONNECT axle2-3.axle1 -> beam3-2.axlehole2 LOCKED
+CONNECT axle2-4.axle1 -> beam3-2.axlehole1 LOCKED
+CONNECT axle2-4.axle1 -> beam2-3.axlehole1 LOCKED

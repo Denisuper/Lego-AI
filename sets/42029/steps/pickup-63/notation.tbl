@@ -1,0 +1,4 @@
+ATTACH pickup074
+CONNECT axle5-17.axle3 -> beam3x3-8.axlehole3 LOCKED
+CONNECT axle5-17.axle4 -> beam3x3-9.axlehole3 LOCKED
+CONNECT axle5-17.axle2 -> conn-58.axlehole1 LOCKED

@@ -1,0 +1,6 @@
+ADD conn-58 32068 black
+POS conn-58 -0.5 1 -21 0 -1 0 0 0 -1 1 0 0
+ADD bush-14 32123a yellow
+POS bush-14 -1 0 -21.75 0 -1 0 1 0 0 0 0 1
+CONNECT axle9-6.axle5 -> conn-58.hole1 TURNS
+CONNECT axle9-6.axle6 -> bush-14.axlehole1 LOCKED

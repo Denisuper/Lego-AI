@@ -1,0 +1,5 @@
+ADD conn-31 32184 lightbluishgrey
+POS conn-31 0 0 0 0 0 -1 0 1 0 1 0 0
+ADD axle5-11 32073 lightbluishgrey
+POS axle5-11 0 1 -2 0 0 -1 0 1 0 1 0 0
+CONNECT axle5-11.axle5 -> conn-31.axlehole2 LOCKED

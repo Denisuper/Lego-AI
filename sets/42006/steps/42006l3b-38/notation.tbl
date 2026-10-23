@@ -1,0 +1,14 @@
+ADD conn-15 59443 darkbluishgrey
+POS conn-15 1.05 -8 7 1 0 0 0 1 0 0 0 1
+ADD axle55-4 32209 darkbluishgrey
+POS axle55-4 1.05 -8 9.85 0 0 -1 0 1 0 1 0 0
+ADD axle5-4 32073 lightbluishgrey
+POS axle5-4 1.05 -8 4.5 0 0 -1 0 1 0 1 0 0
+ADD part-6 6590 lightbluishgrey
+POS part-6 1.05 -8 9 -1 0 0 0 1 0 0 0 -1
+ADD conn-16 59443 darkbluishgrey
+POS conn-16 1.05 -8 2 1 0 0 0 1 0 0 0 1
+CONNECT axle55-4.axle1 -> conn-15.axlehole2 LOCKED
+CONNECT axle5-4.axle5 -> conn-15.axlehole1 LOCKED
+CONNECT axle5-4.axle1 -> conn-16.axlehole2 LOCKED
+CONNECT axle55-3.axle1 -> conn-16.axlehole1 LOCKED

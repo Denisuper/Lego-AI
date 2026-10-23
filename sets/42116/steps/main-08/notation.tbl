@@ -1,0 +1,13 @@
+STEP 8
+ADD axle4-1 3705 black
+POS axle4-1 0 -5.4 4 0 1 0 1 0 0 0 0 -1
+ADD worm-1 27938 darkbluishgrey
+POS worm-1 0 -4.9 4 0.707 -0.707 0 0 0 -1 0.707 0.707 0
+ADD gear20-1 18575 tan
+POS gear20-1 0 -6.9 4 0.707 -0.707 0 0 0 -1 0.707 0.707 0
+CONNECT axle4-1.axle3 -> worm-1.axlehole1 LOCKED
+CONNECT axle4-1.axle1 -> gear20-1.axlehole1 LOCKED
+CONNECT axle4-1.axle2 -> conn-2.hole1 TURNS
+CONNECT axle4-1.axle4 -> conn-7.axlehole2 LOCKED
+MESH gear12-1.teeth gear20-1.teeth
+RATIO gear12-1 gear20-1 12/20

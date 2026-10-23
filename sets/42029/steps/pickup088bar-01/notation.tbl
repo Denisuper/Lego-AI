@@ -1,0 +1,5 @@
+ADD pin-326 10197 darkbluishgrey
+POS pin-326 0 0 0 1 0 0 0 1 0 0 0 1
+ADD conn-69 32192 darkbluishgrey
+POS conn-69 0 0 -2 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-326.axle2 -> conn-69.axlehole1 LOCKED

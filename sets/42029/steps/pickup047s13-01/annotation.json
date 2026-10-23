@@ -1,0 +1,62 @@
+{
+  "example_id": "42029-pickup047s13-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "diameter-1",
+        "part_number": "2819",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "diameter-1",
+        "part_number": "2819",
+        "catalog_name": "Technic Steering Wheel Small (3 Studs Diameter)",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=1.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-2's axle1 goes into diameter-1's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-2 carries diameter-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

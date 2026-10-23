@@ -1,0 +1,534 @@
+{
+  "example_id": "42116-3069bpcddat-step-01",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "sbs-1",
+        "part_number": "s\\3069bs01",
+        "count": 1
+      },
+      {
+        "name": "part-121",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-122",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-123",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-124",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-125",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-126",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-127",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-128",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-129",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-130",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-131",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-132",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-133",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-134",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-135",
+        "part_number": "3-8ring7",
+        "count": 1
+      },
+      {
+        "name": "part-136",
+        "part_number": "3-8ring7",
+        "count": 1
+      },
+      {
+        "name": "part-137",
+        "part_number": "3-8ring8",
+        "count": 1
+      },
+      {
+        "name": "part-138",
+        "part_number": "3-8ring8",
+        "count": 1
+      },
+      {
+        "name": "part-139",
+        "part_number": "3-8ndis",
+        "count": 1
+      },
+      {
+        "name": "part-140",
+        "part_number": "3-8ndis",
+        "count": 1
+      },
+      {
+        "name": "part-141",
+        "part_number": "3-8ndis",
+        "count": 1
+      },
+      {
+        "name": "part-142",
+        "part_number": "3-8ndis",
+        "count": 1
+      },
+      {
+        "name": "part-143",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-144",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-145",
+        "part_number": "3-8ring7",
+        "count": 1
+      },
+      {
+        "name": "part-146",
+        "part_number": "3-8ring7",
+        "count": 1
+      },
+      {
+        "name": "part-147",
+        "part_number": "3-8ring8",
+        "count": 1
+      },
+      {
+        "name": "part-148",
+        "part_number": "3-8ring8",
+        "count": 1
+      },
+      {
+        "name": "part-149",
+        "part_number": "1-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-150",
+        "part_number": "1-8chrd",
+        "count": 1
+      },
+      {
+        "name": "part-151",
+        "part_number": "1-8chrd",
+        "count": 1
+      },
+      {
+        "name": "part-152",
+        "part_number": "1-8chrd",
+        "count": 1
+      },
+      {
+        "name": "part-153",
+        "part_number": "1-8chrd",
+        "count": 1
+      },
+      {
+        "name": "part-154",
+        "part_number": "1-8chrd",
+        "count": 1
+      },
+      {
+        "name": "part-155",
+        "part_number": "1-8chrd",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sbs-1",
+        "part_number": "s\\3069bs01",
+        "catalog_name": "s\\3069bs01",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-121",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-122",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-123",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-124",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-125",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-126",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-127",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-128",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-129",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-130",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-131",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-132",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-133",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-134",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.2, y=0, z=-0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-135",
+        "part_number": "3-8ring7",
+        "catalog_name": "Ring  7 x 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-136",
+        "part_number": "3-8ring7",
+        "catalog_name": "Ring  7 x 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-137",
+        "part_number": "3-8ring8",
+        "catalog_name": "Ring  8 x 0.375",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-138",
+        "part_number": "3-8ring8",
+        "catalog_name": "Ring  8 x 0.375",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-139",
+        "part_number": "3-8ndis",
+        "catalog_name": "Disc Negative 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-140",
+        "part_number": "3-8ndis",
+        "catalog_name": "Disc Negative 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-141",
+        "part_number": "3-8ndis",
+        "catalog_name": "Disc Negative 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-142",
+        "part_number": "3-8ndis",
+        "catalog_name": "Disc Negative 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-143",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-144",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-145",
+        "part_number": "3-8ring7",
+        "catalog_name": "Ring  7 x 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-146",
+        "part_number": "3-8ring7",
+        "catalog_name": "Ring  7 x 0.375",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-147",
+        "part_number": "3-8ring8",
+        "catalog_name": "Ring  8 x 0.375",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-148",
+        "part_number": "3-8ring8",
+        "catalog_name": "Ring  8 x 0.375",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-149",
+        "part_number": "1-4chrd",
+        "catalog_name": "Chord 0.25",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-150",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-151",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-152",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-153",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-154",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-155",
+        "part_number": "1-8chrd",
+        "catalog_name": "Chord 0.125",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.7, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

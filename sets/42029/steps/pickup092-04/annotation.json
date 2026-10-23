@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup092-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "stud-4",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-5",
+        "part_number": "6141",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "stud-4",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Clear",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-1, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-5",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Clear",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=-1, z=-1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "stud-4's pin1 goes into beam2-14's hole1 (stiff)",
+      "stud-5's pin1 goes into beam2-15's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam2-14 holds stud-4",
+      "beam2-15 holds stud-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

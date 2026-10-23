@@ -1,0 +1,47 @@
+ADD conn-8 98989 lightbluishgrey
+POS conn-8 -1.95 -8 0 0 -1 0 0 0 -1 1 0 0
+ADD pin-77 2780 black
+POS pin-77 -1.95 -8 -0.5 0 0 -1 0 1 0 1 0 0
+ADD pin-78 43093 blue
+POS pin-78 0.05 -8 -0.5 0 0 -1 0 1 0 1 0 0
+ADD pin-79 6558 blue
+POS pin-79 -2.95 -8 -0.5 0 -1 0 1 0 0 0 0 1
+ADD pin-80 6558 blue
+POS pin-80 -2.95 -8 0.5 0 -1 0 1 0 0 0 0 1
+ADD beam9-17 40490 yellow
+POS beam9-17 2.05 -8 -1 0 0 1 1 0 0 0 1 0
+ADD axle55-2 32209 darkbluishgrey
+POS axle55-2 -0.95 -8 -1.35 0 0 1 0 1 0 -1 0 0
+ADD gear12-3 32270 black
+POS gear12-3 -0.95 -8 -2 1 0 0 0 1 0 0 0 1
+ADD conn-9 6538b tan
+POS conn-9 -0.95 -8 1.5 1 0 0 0 1 0 0 0 1
+ADD axle5-3 32073 lightbluishgrey
+POS axle5-3 -0.95 -8 4 0 0 -1 0 1 0 1 0 0
+ADD axle55-3 32209 darkbluishgrey
+POS axle55-3 1.05 -8 -0.85 0 0 1 0 1 0 -1 0 0
+ADD part-1 6590 lightbluishgrey
+POS part-1 1.05 -8 0 1 0 0 0 1 0 0 0 1
+ADD gear20-1 32269 tan
+POS gear20-1 1.05 -8 -2 1 0 0 0 1 0 0 0 1
+CONNECT pin-77.pin2 -> conn-8.hole2 STIFF
+CONNECT pin-79.pin2 -> conn-8.hole3 STIFF
+CONNECT pin-80.pin2 -> conn-8.hole4 STIFF
+CONNECT axle55-2.axle2 -> conn-8.hole1 TURNS
+CONNECT pin-77.pin1 -> beam9-17.hole1 STIFF
+CONNECT pin-78.axle1 -> beam9-17.hole3 TURNS
+CONNECT axle55-2.axle3 -> beam9-17.hole2 TURNS
+CONNECT axle55-3.axle3 -> beam9-17.hole4 TURNS
+CONNECT axle55-1.axle4 -> beam9-17.hole6 TURNS
+CONNECT axle55-2.axle4 -> gear12-3.axlehole1 LOCKED
+CONNECT axle55-2.axle1 -> conn-9.axlehole1 LOCKED
+CONNECT axle5-3.axle1 -> conn-9.axlehole2 LOCKED
+CONNECT axle55-3.axle4 -> gear20-1.axlehole1 LOCKED
+CONNECT pin-79.pin3 -> beam15-3.hole5 STIFF
+CONNECT pin-80.pin3 -> beam15-3.hole6 STIFF
+CONNECT axle55-2.pin1 -> beam7-5.hole2 STIFF
+CONNECT axle55-3.axle5 -> beam7-5.hole4 TURNS
+MESH gear20-1.teeth gear12-3.teeth
+RATIO gear20-1 gear12-3 20/12
+MESH gear12-2.teeth gear20-1.teeth
+RATIO gear12-2 gear20-1 12/20

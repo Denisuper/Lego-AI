@@ -1,0 +1,4 @@
+ATTACH pickupb010
+CONNECT pin-156.pin1 -> beam5-5.hole5 STIFF
+CONNECT pin-157.pin1 -> beam5-5.hole1 STIFF
+CONNECT axle5-8.axle5 -> conn-25.hole1 TURNS

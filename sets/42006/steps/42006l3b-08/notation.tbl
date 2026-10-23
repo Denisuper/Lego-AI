@@ -1,0 +1,28 @@
+ADD conn-3 92907 black
+POS conn-3 -9 0 -12 -1 0 0 0 1 0 0 0 -1
+ADD axle2-1 32062 red
+POS axle2-1 -9 1 -12 -1 0 0 0 1 0 0 0 -1
+ADD conn-4 92907 black
+POS conn-4 9 0 -12 -1 0 0 0 1 0 0 0 -1
+ADD axle2-2 32062 red
+POS axle2-2 9 1 -12 -1 0 0 0 1 0 0 0 -1
+ADD conn-5 92907 black
+POS conn-5 9 0 0 1 0 0 0 1 0 0 0 1
+ADD axle2-3 32062 red
+POS axle2-3 9 1 0 1 0 0 0 1 0 0 0 1
+ADD conn-6 92907 black
+POS conn-6 -9 0 0 1 0 0 0 1 0 0 0 1
+ADD axle2-4 32062 red
+POS axle2-4 -9 1 0 1 0 0 0 1 0 0 0 1
+CONNECT axle2-1.axle1 -> conn-3.axlehole3 LOCKED
+CONNECT axle2-1.axle2 -> conn-3.axlehole4 LOCKED
+CONNECT pin-6.pin2 -> conn-3.hole1 STIFF
+CONNECT axle2-2.axle1 -> conn-4.axlehole3 LOCKED
+CONNECT axle2-2.axle2 -> conn-4.axlehole4 LOCKED
+CONNECT pin-7.pin2 -> conn-4.hole1 STIFF
+CONNECT axle2-3.axle1 -> conn-5.axlehole3 LOCKED
+CONNECT axle2-3.axle2 -> conn-5.axlehole4 LOCKED
+CONNECT pin-8.pin2 -> conn-5.hole1 STIFF
+CONNECT axle2-4.axle1 -> conn-6.axlehole3 LOCKED
+CONNECT axle2-4.axle2 -> conn-6.axlehole4 LOCKED
+CONNECT pin-5.pin2 -> conn-6.hole1 STIFF

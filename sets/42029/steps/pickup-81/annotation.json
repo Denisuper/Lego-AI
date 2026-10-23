@@ -1,0 +1,40 @@
+{
+  "example_id": "42029-pickup-step-81",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 81,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-387's pin1 goes into panel-10's hole1 (stiff)",
+      "pin-387's pin1 goes into panel-10's hole6 (stiff)",
+      "pin-385's pin1 goes into panel-10's hole36 (stiff)",
+      "pin-385's pin1 goes into panel-10's hole38 (stiff)",
+      "pin-385's pin1 goes into panel-14's hole15 (stiff)",
+      "pin-387's pin1 goes into panel-14's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-10 holds pin-387",
+      "panel-10 holds pin-385",
+      "panel-14 holds pin-385",
+      "panel-14 holds pin-387"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

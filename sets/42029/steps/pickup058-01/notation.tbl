@@ -1,0 +1,16 @@
+ADD axle6-3 3706 black
+POS axle6-3 0.5 0 0.05 0.143 0 0.99 0 1 0 -0.99 0 0.143
+ADD l-5 62520 lightbluishgrey
+POS l-5 1 0 -3.45 0.99 0 -0.143 0 1 0 0.143 0 0.99
+ADD l-6 62520 lightbluishgrey
+POS l-6 0 0 3.5 0 -0.99 0.143 -1 0 0 0 -0.143 -0.99
+ADD centre-3 62519 lightbluishgrey
+POS centre-3 0 0 3.5 0 -1 0 -1 0 0 0 0 -1
+ADD centre-4 62519 lightbluishgrey
+POS centre-4 1 0 -3.45 0 -0.99 0.143 -1 0 0 0 -0.143 -0.99
+ADD l-7 62520 lightbluishgrey
+POS l-7 1 0 -3.45 0 -1 0 -1 0 0 0 0 -1
+ADD l-8 62520 lightbluishgrey
+POS l-8 0 0 3.5 1 0 0 0 1 0 0 0 1
+CONNECT axle6-3.axle6 -> l-5.axlehole1 LOCKED
+CONNECT axle6-3.axle1 -> l-6.axlehole1 LOCKED

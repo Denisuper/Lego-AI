@@ -1,0 +1,10 @@
+ADD conn-11 6536 black
+POS conn-11 -6 -1 12 0 0 1 0 1 0 -1 0 0
+ADD conn-12 6536 black
+POS conn-12 6 -1 12 0 0 1 0 1 0 -1 0 0
+ADD pin-105 11214 darkbluishgrey
+POS pin-105 -6 -1 11 0 0 -1 0 1 0 1 0 0
+ADD pin-106 11214 darkbluishgrey
+POS pin-106 6 -1 11 0 0 -1 0 1 0 1 0 0
+CONNECT pin-103.pin1 -> conn-11.hole1 STIFF
+CONNECT pin-104.pin1 -> conn-12.hole1 STIFF

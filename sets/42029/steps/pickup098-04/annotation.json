@@ -1,0 +1,34 @@
+{
+  "example_id": "42029-pickup098-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-405's pin2 goes into beam11-12's hole4 (stiff)",
+      "pin-406's pin2 goes into beam11-12's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-12 holds pin-405",
+      "beam11-12 holds pin-406"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

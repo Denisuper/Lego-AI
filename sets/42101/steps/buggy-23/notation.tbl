@@ -1,0 +1,5 @@
+ATTACH substepstep2
+CONNECT axle9-1.axle4 -> beam2x4-2.hole2 TURNS
+CONNECT axle9-1.axle3 -> beam5-1.hole5 TURNS
+CONNECT axle9-1.axle6 -> beam2x4-3.hole2 TURNS
+CONNECT axle9-1.axle7 -> beam5-2.hole5 TURNS

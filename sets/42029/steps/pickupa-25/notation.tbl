@@ -1,0 +1,8 @@
+ADD conn-44 6536 black
+POS conn-44 -3 -5 7 0 0 1 0 1 0 -1 0 0
+ADD conn-45 6536 black
+POS conn-45 3 -5 7 0 0 1 0 1 0 -1 0 0
+CONNECT pin-213.pin1 -> conn-44.hole1 STIFF
+CONNECT axle5-12.axle1 -> conn-44.axlehole1 LOCKED
+CONNECT pin-213.pin1 -> conn-45.hole1 STIFF
+CONNECT axle5-13.axle1 -> conn-45.axlehole1 LOCKED

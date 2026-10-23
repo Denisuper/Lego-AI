@@ -1,0 +1,12 @@
+ADD beam15-8 32278 yellow
+POS beam15-8 -0.95 -23.5 -22.6 0 -1 0 -0.924 0 -0.383 0.383 0 -0.924
+ADD pin-143 2780 black
+POS pin-143 -1.45 -20.8 -16.1 1 0 0 0 0.883 0.47 0 -0.47 0.883
+ADD pin-144 2780 black
+POS pin-144 -1.45 -23.1 -21.65 1 0 0 0 0.924 0.383 0 -0.383 0.924
+ADD pin-145 2780 black
+POS pin-145 -1.45 -24.65 -25.35 1 0 0 0 0.924 0.383 0 -0.383 0.924
+CONNECT pin-143.pin2 -> beam15-8.hole1 STIFF
+CONNECT pin-144.pin2 -> beam15-8.hole7 STIFF
+CONNECT pin-145.pin2 -> beam15-8.hole11 STIFF
+CONNECT pin-143.pin1 -> beam15-7.hole10 STIFF

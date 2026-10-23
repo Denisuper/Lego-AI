@@ -1,0 +1,4 @@
+ADD panel-18 11954 red
+POS panel-18 0 0 -6 1 0 0 0 -1 0 0 0 -1
+CONNECT pin-415.pin1 -> panel-18.hole2 STIFF
+CONNECT pin-416.pin1 -> panel-18.hole1 STIFF

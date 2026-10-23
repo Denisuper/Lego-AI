@@ -1,0 +1,8 @@
+ADD holes-3 32000 darkbluishgrey
+POS holes-3 0 0 0 0 0 -1 0 1 0 1 0 0
+ADD pin-230 6558 blue
+POS pin-230 0 0.5 0.5 1 0 0 0 1 0 0 0 1
+ADD pin-231 6558 blue
+POS pin-231 0 0.5 -0.5 1 0 0 0 1 0 0 0 1
+CONNECT pin-230.pin2 -> holes-3.hole3 STIFF
+CONNECT pin-231.pin2 -> holes-3.hole1 STIFF

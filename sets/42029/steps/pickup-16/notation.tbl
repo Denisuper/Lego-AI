@@ -1,0 +1,6 @@
+ADD bush-4 3713 red
+POS bush-4 2 0 1 0 1 0 -1 0 0 0 0 1
+ATTACH pickup016
+CONNECT axle8-2.axle3 -> bush-4.axlehole1 LOCKED
+CONNECT axle8-2.axle4 -> beam15-1.hole6 TURNS
+CONNECT axle8-2.axle5 -> beam3x3-1.hole3 TURNS

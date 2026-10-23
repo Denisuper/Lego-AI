@@ -1,0 +1,11 @@
+ADD beam9-7 6629 red
+POS beam9-7 8 0 0 0 1 0 -1 0 0 0 0 1
+ADD pin-301 6558 blue
+POS pin-301 7 0 5 -1 0 0 0 -1 0 0 0 1
+ADD pin-302 6558 blue
+POS pin-302 7 -1.6 6.2 -1 0 0 0 -1 0 0 0 1
+ADD axle3-25 4519 lightbluishgrey
+POS axle3-25 7 -2.4 6.8 -1 0 0 0 -0.8 0.6 0 0.6 0.8
+CONNECT pin-301.pin1 -> beam9-7.hole5 STIFF
+CONNECT pin-302.pin1 -> beam9-7.hole7 STIFF
+CONNECT axle3-25.axle1 -> beam9-7.axlehole2 LOCKED

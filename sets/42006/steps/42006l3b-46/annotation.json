@@ -1,0 +1,86 @@
+{
+  "example_id": "42006-42006l3b-step-46",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 46,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-10",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "axle6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "pin-105",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-10",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.95, y=-6, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=-10, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-105",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.05, y=-10, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-82's pin2 goes into beam3x5-10's hole1 (stiff)",
+      "pin-102's pin2 goes into beam3x5-10's hole7 (stiff)",
+      "pin-103's pin2 goes into beam3x5-10's hole5 (stiff)",
+      "axle6-1's axle1 goes into pin-105's axlehole1 (locked)",
+      "pin-105's pin1 goes into beam3x5-9's hole1 (stiff)",
+      "axle6-1's axle6 goes into pin-103's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-10 holds pin-82",
+      "beam3x5-10 holds pin-102",
+      "beam3x5-10 holds pin-103",
+      "axle6-1 carries pin-105",
+      "beam3x5-9 holds pin-105",
+      "axle6-1 carries pin-103"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

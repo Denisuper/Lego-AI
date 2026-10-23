@@ -1,0 +1,14 @@
+ADD slots-4 2850a lightbluishgrey
+POS slots-4 0 0 2 1 0 0 0 1 0 0 0 1
+ADD pin-253 2780 black
+POS pin-253 -1 1.3 1 0 0 1 0 1 0 -1 0 0
+ADD pin-254 2780 black
+POS pin-254 1 1.3 1 0 0 1 0 1 0 -1 0 0
+ADD pin-255 2780 black
+POS pin-255 -1 1.3 3 0 0 1 0 1 0 -1 0 0
+ADD pin-256 2780 black
+POS pin-256 1 1.3 3 0 0 1 0 1 0 -1 0 0
+CONNECT pin-253.pin1 -> slots-4.hole1 STIFF
+CONNECT pin-254.pin1 -> slots-4.hole2 STIFF
+CONNECT pin-255.pin2 -> slots-4.hole1 STIFF
+CONNECT pin-256.pin2 -> slots-4.hole2 STIFF

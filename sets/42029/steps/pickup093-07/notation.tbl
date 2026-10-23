@@ -1,0 +1,12 @@
+ADD pin-367 6558 blue
+POS pin-367 -6 0 8 -1 0 0 0 1 0 0 0 -1
+ADD pin-368 6558 blue
+POS pin-368 -6 -4 8 -1 0 0 0 1 0 0 0 -1
+ADD panel-12 64782 red
+POS panel-12 0 -2 8 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-367.pin1 -> panel-12.hole36 STIFF
+CONNECT pin-367.pin1 -> panel-12.hole38 STIFF
+CONNECT pin-368.pin1 -> panel-12.hole37 STIFF
+CONNECT pin-368.pin1 -> panel-12.hole42 STIFF
+CONNECT pin-367.pin2 -> beam3x5-18.hole5 STIFF
+CONNECT pin-368.pin2 -> beam3x5-18.hole1 STIFF

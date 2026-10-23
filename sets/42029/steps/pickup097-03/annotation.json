@@ -1,0 +1,82 @@
+{
+  "example_id": "42029-pickup097-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-394",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-395",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam2-18",
+        "part_number": "43857",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-394",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-0.5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-395",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-0.5, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-18",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.5, y=-2, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-392's pin3 goes into beam2-18's hole1 (stiff)",
+      "pin-393's pin2 goes into beam2-18's hole2 (stiff)",
+      "pin-394's pin1 goes into beam11-9's hole1 (stiff)",
+      "pin-395's pin1 goes into beam11-9's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam2-18 holds pin-392",
+      "beam2-18 holds pin-393",
+      "beam11-9 holds pin-394",
+      "beam11-9 holds pin-395"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

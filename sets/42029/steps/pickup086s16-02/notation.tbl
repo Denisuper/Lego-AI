@@ -1,0 +1,3 @@
+ADD conn-68 32015 red
+POS conn-68 -2.75 0 1.15 0 -0.383 -0.924 1 0 0 0 -0.924 0.383
+CONNECT axle2-7.axle1 -> conn-68.axlehole1 LOCKED

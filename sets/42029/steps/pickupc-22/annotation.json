@@ -1,0 +1,40 @@
+{
+  "example_id": "42029-pickupc-step-22",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 22,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "axle2-4's axle1 goes into conn-40's axlehole2 (locked)",
+      "pin-232's pin2 goes into beam5x11-1's hole28 (stiff)",
+      "pin-233's pin2 goes into beam5x11-1's hole19 (stiff)",
+      "pin-234's pin2 goes into beam5x11-1's hole27 (stiff)",
+      "pin-235's pin2 goes into beam5x11-1's hole18 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-4 carries conn-40",
+      "beam5x11-1 holds pin-232",
+      "beam5x11-1 holds pin-233",
+      "beam5x11-1 holds pin-234",
+      "beam5x11-1 holds pin-235"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

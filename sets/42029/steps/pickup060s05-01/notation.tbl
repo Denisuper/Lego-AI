@@ -1,0 +1,8 @@
+ADD cranksha-1 2853 yellow
+POS cranksha-1 0 0 0 1 0 0 0 1 0 0 0 1
+ADD rod-2 2852 lightbluishgrey
+POS rod-2 -0.5 0 0 0.473 -0.881 0 0.881 0.473 0 0 0 1
+ADD rod-3 2852 lightbluishgrey
+POS rod-3 -0.5 0 0 -0.713 0.701 0 0.701 0.713 0 0 0 -1
+CONNECT cranksha-1.axle1 -> rod-2.hole1 TURNS
+CONNECT cranksha-1.axle1 -> rod-3.hole1 TURNS

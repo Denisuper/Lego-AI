@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup-step-20",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 20,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear16-6",
+        "part_number": "94925",
+        "count": 1
+      },
+      {
+        "name": "gear16-7",
+        "part_number": "94925",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear16-6",
+        "part_number": "94925",
+        "catalog_name": "Technic Gear 16 Tooth Reinforced [New Style]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear16-7",
+        "part_number": "94925",
+        "catalog_name": "Technic Gear 16 Tooth Reinforced [New Style]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle8-1's axle4 goes into gear16-6's axlehole1 (locked)",
+      "axle4-1's axle3 goes into gear16-7's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle8-1 carries gear16-6",
+      "axle4-1 carries gear16-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

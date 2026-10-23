@@ -1,0 +1,10 @@
+ADD pin-210 2780 black
+POS pin-210 -2.5 -3 -5 1 0 0 0 1 0 0 0 1
+ADD pin-211 2780 black
+POS pin-211 -2.5 -2 -5 1 0 0 0 1 0 0 0 1
+ADD beam3-10 32523 lightbluishgrey
+POS beam3-10 -3 -3 -5 0 1 0 0 0 -1 -1 0 0
+CONNECT pin-210.pin1 -> beam3-10.hole2 STIFF
+CONNECT pin-211.pin1 -> beam3-10.hole1 STIFF
+CONNECT pin-210.pin2 -> beam3x5-13.hole4 STIFF
+CONNECT pin-211.pin2 -> beam3x5-13.hole3 STIFF

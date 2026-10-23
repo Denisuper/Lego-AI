@@ -1,0 +1,2 @@
+ATTACH pickup058
+CONNECT axle6-1.axle6 -> l-8.axlehole1 LOCKED

@@ -1,0 +1,9 @@
+ADD pin-385 2780 black
+POS pin-385 -1 -0.5 1 0 0 1 1 0 0 0 1 0
+ADD pin-386 2780 black
+POS pin-386 0 -0.5 1 0 0 1 1 0 0 0 1 0
+ADD pin-387 2780 black
+POS pin-387 1 -0.5 1 0 0 1 1 0 0 0 1 0
+CONNECT pin-385.pin2 -> conn-75.hole1 STIFF
+CONNECT pin-386.pin2 -> conn-75.hole2 STIFF
+CONNECT pin-387.pin2 -> conn-75.hole3 STIFF

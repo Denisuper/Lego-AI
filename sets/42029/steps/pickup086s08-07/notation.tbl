@@ -1,0 +1,4 @@
+ADD beam2x4-24 32140 red
+POS beam2x4-24 4 0 3 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-306.pin2 -> beam2x4-24.hole3 STIFF
+CONNECT pin-308.pin2 -> beam2x4-24.hole4 STIFF

@@ -1,0 +1,70 @@
+{
+  "example_id": "42006-42006l3b-step-59",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 59,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x3-2",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-15",
+        "part_number": "32250",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x3-2",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.8, y=-13.4, z=-9.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-15",
+        "part_number": "32250",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape with Quarter Ellipse Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.3, y=-13.4, z=-9.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-2's axle2 goes into beam3x3-2's axlehole3 (locked)",
+      "pin-140's axle1 goes into beam3x3-2's axlehole2 (locked)",
+      "axle7-2's axle2 goes into beam3x5-15's axlehole2 (locked)",
+      "axle7-3's axle2 goes into beam3x5-15's axlehole3 (locked)",
+      "pin-140's axle1 goes into beam3x5-15's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-2 carries beam3x3-2",
+      "pin-140 carries beam3x3-2",
+      "axle7-2 carries beam3x5-15",
+      "axle7-3 carries beam3x5-15",
+      "beam3x5-15 spins on pin-140"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

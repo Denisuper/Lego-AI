@@ -1,0 +1,240 @@
+{
+  "example_id": "42116-3070bpc5dat-step-01",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "sbs-2",
+        "part_number": "s\\3070bs01",
+        "count": 1
+      },
+      {
+        "name": "part-156",
+        "part_number": "4-4ring9",
+        "count": 1
+      },
+      {
+        "name": "part-157",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-158",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-159",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-160",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-161",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-162",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-163",
+        "part_number": "4-4disc",
+        "count": 1
+      },
+      {
+        "name": "part-164",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-165",
+        "part_number": "4-4ering",
+        "count": 1
+      },
+      {
+        "name": "part-166",
+        "part_number": "1-4tang",
+        "count": 1
+      },
+      {
+        "name": "part-167",
+        "part_number": "1-4tang",
+        "count": 1
+      },
+      {
+        "name": "part-168",
+        "part_number": "1-4tang",
+        "count": 1
+      },
+      {
+        "name": "part-169",
+        "part_number": "1-4tang",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sbs-2",
+        "part_number": "s\\3070bs01",
+        "catalog_name": "s\\3070bs01",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-156",
+        "part_number": "4-4ring9",
+        "catalog_name": "Ring  9 x 1.0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-157",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.4, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-158",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.4, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-159",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.4, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-160",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.4, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-161",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.4, y=0, z=-0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-162",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.4, y=0, z=-0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-163",
+        "part_number": "4-4disc",
+        "catalog_name": "Disc 1.0",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.4, y=0, z=-0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-164",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.4, y=0, z=-0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-165",
+        "part_number": "4-4ering",
+        "catalog_name": "Adapter Ring Triangles to Normal 1.0",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-166",
+        "part_number": "1-4tang",
+        "catalog_name": "Disc Negative Tangent 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-167",
+        "part_number": "1-4tang",
+        "catalog_name": "Disc Negative Tangent 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-168",
+        "part_number": "1-4tang",
+        "catalog_name": "Disc Negative Tangent 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-169",
+        "part_number": "1-4tang",
+        "catalog_name": "Disc Negative Tangent 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

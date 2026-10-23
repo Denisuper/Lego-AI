@@ -1,0 +1,78 @@
+{
+  "example_id": "42029-pickupc020-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam11-6",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "pin-170",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam3x3-12",
+        "part_number": "60484",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam11-6",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-170",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x3-12",
+        "part_number": "60484",
+        "catalog_name": "Technic Beam 3 x 3 T-Shape Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-170's pin2 goes into beam11-6's hole11 (stiff)",
+      "pin-170's pin1 goes into beam3x3-12's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-6 holds pin-170",
+      "beam3x3-12 holds pin-170"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

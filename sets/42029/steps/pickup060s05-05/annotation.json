@@ -1,0 +1,80 @@
+{
+  "example_id": "42029-pickup060s05-step-05",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "count": 1
+      },
+      {
+        "name": "rod-6",
+        "part_number": "2852",
+        "count": 1
+      },
+      {
+        "name": "rod-7",
+        "part_number": "2852",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cranksha-2",
+        "part_number": "2853",
+        "catalog_name": "Technic Engine Crankshaft",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "rod-6",
+        "part_number": "2852",
+        "catalog_name": "Technic Engine Connecting Rod",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "rod-7",
+        "part_number": "2852",
+        "catalog_name": "Technic Engine Connecting Rod",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "cranksha-2's axle1 goes into rod-6's hole1 (turns)",
+      "cranksha-2's axle1 goes into rod-7's hole1 (turns)",
+      "cranksha-2's axle2 goes into center-2's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "rod-6 spins on cranksha-2",
+      "rod-7 spins on cranksha-2",
+      "cranksha-2 carries center-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

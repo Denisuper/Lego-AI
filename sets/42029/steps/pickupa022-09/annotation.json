@@ -1,0 +1,100 @@
+{
+  "example_id": "42029-pickupa022-step-09",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 9,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam-1",
+        "part_number": "11455",
+        "count": 1
+      },
+      {
+        "name": "beam-2",
+        "part_number": "11455",
+        "count": 1
+      },
+      {
+        "name": "pin-226",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-227",
+        "part_number": "6558",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam-1",
+        "part_number": "11455",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 4 Bent - Beam with 90 Hole \u00d8 4.8",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-2",
+        "part_number": "11455",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 4 Bent - Beam with 90 Hole \u00d8 4.8",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-226",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-3, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-227",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-3, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-227's pin2 goes into beam-1's hole3 (stiff)",
+      "axle9-4's axle2 goes into beam-1's hole1 (turns)",
+      "pin-224's axle1 goes into beam-1's hole2 (turns)",
+      "pin-226's pin2 goes into beam-2's hole3 (stiff)",
+      "axle9-4's axle8 goes into beam-2's hole1 (turns)",
+      "pin-225's axle1 goes into beam-2's hole2 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam-1 holds pin-227",
+      "beam-1 spins on axle9-4",
+      "beam-1 spins on pin-224",
+      "beam-2 holds pin-226",
+      "beam-2 spins on axle9-4",
+      "beam-2 spins on pin-225"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

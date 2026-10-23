@@ -1,0 +1,14 @@
+ADD pin-373 43093 blue
+POS pin-373 -4 0.5 -2 0 1 0 1 0 0 0 0 -1
+ADD pin-374 43093 blue
+POS pin-374 4 0.5 -2 0 1 0 1 0 0 0 0 -1
+ADD bush-28 3713 red
+POS bush-28 4 1 -2 0 1 0 0 0 1 1 0 0
+ADD bush-29 3713 red
+POS bush-29 -4 1 -2 0 1 0 0 0 1 1 0 0
+ADD beam3-21 32523 lightbluishgrey
+POS beam3-21 2 1 8 0 0 -1 0 1 0 1 0 0
+CONNECT pin-371.pin1 -> beam3-21.hole1 STIFF
+CONNECT pin-372.pin1 -> beam3-21.hole3 STIFF
+CONNECT pin-373.axle1 -> panel-9.hole8 TURNS
+CONNECT pin-374.axle1 -> panel-9.hole34 TURNS

@@ -1,0 +1,7 @@
+ADD pin-219 32556 tan
+POS pin-219 0 0 -4 1 0 0 0 -1 0 0 0 -1
+ADD beam3x5-14 32526 lightbluishgrey
+POS beam3x5-14 -1 0 -4 0 1 0 -1 0 0 0 0 1
+CONNECT pin-219.pin1 -> beam3x5-14.hole1 TURNS
+CONNECT axle9-4.axle4 -> beam3x5-14.hole5 TURNS
+CONNECT pin-218.pin1 -> beam3x5-14.hole4 STIFF

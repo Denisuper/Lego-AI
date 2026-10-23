@@ -1,0 +1,178 @@
+{
+  "example_id": "42021-sub12-step-01",
+  "set": "LEGO Technic 42021",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-14",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "conn-15",
+        "part_number": "92907",
+        "count": 1
+      },
+      {
+        "name": "axle2-11",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-12",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "axle2-13",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "beam2x4-6",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "axle2-14",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "beam-2",
+        "part_number": "33299",
+        "count": 1
+      },
+      {
+        "name": "beam9-2",
+        "part_number": "32271",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-14",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-15",
+        "part_number": "92907",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Split",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-11",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-12",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-13",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2x4-6",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-14",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-2",
+        "part_number": "33299",
+        "catalog_name": "Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Closed Central Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-2",
+        "part_number": "32271",
+        "catalog_name": "Technic Beam 1 x 9 Bent (7 - 3) Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-11's axle1 goes into conn-14's axlehole1 (locked)",
+      "axle2-11's axle2 goes into conn-14's axlehole2 (locked)",
+      "axle2-14's axle1 goes into conn-14's axlehole3 (locked)",
+      "axle2-14's axle2 goes into conn-14's axlehole4 (locked)",
+      "axle2-12's axle2 goes into conn-15's axlehole3 (locked)",
+      "axle2-12's axle1 goes into conn-15's axlehole4 (locked)",
+      "axle2-13's axle2 goes into conn-15's axlehole1 (locked)",
+      "axle2-13's axle1 goes into conn-15's axlehole2 (locked)",
+      "axle2-13's axle1 goes into beam2x4-6's axlehole1 (locked)",
+      "axle2-14's axle1 goes into beam-2's axlehole1 (locked)",
+      "axle2-11's axle1 goes into beam9-2's hole1 (turns)",
+      "axle2-12's axle1 goes into beam9-2's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-11 carries conn-14",
+      "axle2-14 carries conn-14",
+      "axle2-12 carries conn-15",
+      "axle2-13 carries conn-15",
+      "axle2-13 carries beam2x4-6",
+      "axle2-14 carries beam-2",
+      "beam9-2 spins on axle2-11",
+      "axle2-12 carries beam9-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

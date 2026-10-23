@@ -1,0 +1,50 @@
+{
+  "example_id": "42029-pickup093-step-08",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 8,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-19",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-19",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6, y=-4, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-345's pin2 goes into beam3x5-19's hole6 (stiff)",
+      "pin-346's pin2 goes into beam3x5-19's hole7 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-19 holds pin-345",
+      "beam3x5-19 holds pin-346"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,127 @@
+STEP 1
+ADD beam3x5-1 14720 lightbluishgrey
+POS beam3x5-1 0 0 0 0 0 -1 -1 0 0 0 1 0
+ADD axle4-1 87083 darkbluishgrey
+POS axle4-1 0 -1.5 0 0 0 1 1 0 0 0 1 0
+ADD beam2-1 60483 darkbluishgrey
+POS beam2-1 0 -1 0 -1 0 0 0 1 0 0 0 -1
+ADD bush-1 3713 lightbluishgrey
+POS bush-1 0 -2 0 1 0 0 0 0 1 0 -1 0
+ADD pin-1 3673 lightbluishgrey
+POS pin-1 0 -0.5 -1 0 0 -1 1 0 0 0 -1 0
+ADD conn-1 32184 black
+POS conn-1 0 0 -1 0 -1 0 0 0 1 -1 0 0
+ADD towball-1 2736 lightbluishgrey
+POS towball-1 -1 0 -1.5 0 1 0 0 0 1 1 0 0
+ADD towball-2 2736 lightbluishgrey
+POS towball-2 1 0 -1.5 0 1 0 0 0 1 1 0 0
+ADD socket-1 15459 lightbluishgrey
+POS socket-1 2 1 -1 0 0 -1 0 -1 0 -1 0 0
+ADD socket-2 15459 lightbluishgrey
+POS socket-2 -2 1 -1 0 0 1 0 -1 0 1 0 0
+ADD socket-3 15459 lightbluishgrey
+POS socket-3 -2 -1 -1 0 0 1 0 1 0 -1 0 0
+ADD socket-4 15459 lightbluishgrey
+POS socket-4 2 -1 -1 0 0 -1 0 1 0 1 0 0
+ADD compact-1 15460 darkbluishgrey
+POS compact-1 6 0 -1 -1 0 0 0 -1 0 0 0 1
+ADD compact-2 15460 darkbluishgrey
+POS compact-2 -6 0 -1 -1 0 0 0 -1 0 0 0 1
+ADD pin-2 3673 lightbluishgrey
+POS pin-2 4 1 -0.5 0 0 -1 0 1 0 1 0 0
+ADD pin-3 3673 lightbluishgrey
+POS pin-3 -4 1 -0.5 0 0 -1 0 1 0 1 0 0
+ADD conn-2 32039 lightbluishgrey
+POS conn-2 2 1 -2 1 0 0 0 1 0 0 0 1
+ADD conn-3 32039 lightbluishgrey
+POS conn-3 -2 1 -2 1 0 0 0 1 0 0 0 1
+ADD pin-4 15461 black
+POS pin-4 5 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD axle4-2 87083 darkbluishgrey
+POS axle4-2 2 -1 0.5 0 0 1 0 1 0 -1 0 0
+ADD axle4-3 87083 darkbluishgrey
+POS axle4-3 -2 -1 0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-5 15461 black
+POS pin-5 -5 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD beam2x4-1 32140 lime
+POS beam2x4-1 2 -1 1 1 0 0 0 0 -1 0 1 0
+ADD pin-6 32054 black
+POS pin-6 3 -4 1 0 1 0 0 0 -1 -1 0 0
+ADD pin-7 32054 black
+POS pin-7 -3 -4 1 0 1 0 0 0 -1 -1 0 0
+ADD beam2x4-2 32140 lime
+POS beam2x4-2 -2 -1 1 -1 0 0 0 0 -1 0 -1 0
+ADD conn-4 59443 lightbluishgrey
+POS conn-4 0 -3.5 0 -1 0 0 0 0 -1 0 -1 0
+ADD steeringwheel-1 32005 black
+POS steeringwheel-1 -6 0 -2 0 0 1 1 0 0 0 1 0
+ADD axle5-1 32073 lightbluishgrey
+POS axle5-1 0 1 -3 1 0 0 0 1 0 0 0 1
+ADD axle5-2 32073 lightbluishgrey
+POS axle5-2 0 1 4 1 0 0 0 1 0 0 0 1
+ADD steeringwheel-2 32005 black
+POS steeringwheel-2 1 0 -2 0 0 1 1 0 0 0 1 0
+ATTACH sub01
+ATTACH sub01
+ATTACH sub02
+ATTACH sub03a
+ATTACH sub03b
+ATTACH sub03c
+ATTACH sub03d
+ATTACH sub04
+ATTACH sub05a
+ATTACH sub05b
+ATTACH sub08
+ATTACH sub05c
+ATTACH sub09
+ATTACH sub09
+ATTACH sub10
+ATTACH sub11
+ATTACH sub12
+CONNECT axle4-1.axle4 -> beam3x5-1.hole5 TURNS
+CONNECT axle4-2.axle3 -> beam3x5-1.hole3 TURNS
+CONNECT axle4-3.axle3 -> beam3x5-1.hole9 TURNS
+CONNECT axle6-1.axle4 -> beam3x5-1.hole7 TURNS
+CONNECT pin-8.pin2 -> beam3x5-1.hole8 STIFF
+CONNECT axle6-1.axle4 -> beam3x5-1.hole1 TURNS
+CONNECT pin-8.pin2 -> beam3x5-1.hole2 STIFF
+CONNECT axle4-1.axle3 -> beam2-1.axlehole1 LOCKED
+CONNECT pin-1.pin1 -> beam2-1.hole1 TURNS
+CONNECT axle4-1.axle2 -> bush-1.axlehole1 LOCKED
+CONNECT pin-1.pin2 -> conn-1.hole1 TURNS
+CONNECT towball-1.axle1 -> conn-1.axlehole2 LOCKED
+CONNECT towball-2.axle1 -> conn-1.axlehole1 LOCKED
+CONNECT pin-2.pin1 -> socket-1.hole2 TURNS
+CONNECT pin-4.pin2 -> socket-1.hole1 STIFF
+CONNECT axle6-1.axle5 -> socket-1.hole4 TURNS
+CONNECT pin-3.pin1 -> socket-2.hole2 TURNS
+CONNECT pin-5.pin2 -> socket-2.hole1 STIFF
+CONNECT axle6-1.axle5 -> socket-2.hole4 TURNS
+CONNECT axle4-3.axle4 -> socket-3.hole4 TURNS
+CONNECT pin-5.pin1 -> socket-3.hole1 STIFF
+CONNECT pin-4.pin1 -> socket-4.hole1 STIFF
+CONNECT axle4-2.axle4 -> socket-4.hole4 TURNS
+CONNECT beam-1.pin1 -> compact-1.hole1 STIFF
+CONNECT beam-2.pin1 -> compact-2.hole1 STIFF
+CONNECT axle5-1.axle5 -> conn-2.axlehole1 LOCKED
+CONNECT axle6-1.axle6 -> conn-2.axlehole2 LOCKED
+CONNECT axle5-1.axle1 -> conn-3.axlehole1 LOCKED
+CONNECT axle6-1.axle6 -> conn-3.axlehole2 LOCKED
+CONNECT axle4-2.axle2 -> beam2x4-1.axlehole1 LOCKED
+CONNECT pin-6.pin1 -> beam2x4-1.hole4 STIFF
+CONNECT axle4-3.axle2 -> beam2x4-2.axlehole1 LOCKED
+CONNECT pin-7.pin1 -> beam2x4-2.hole4 STIFF
+CONNECT axle4-1.axle1 -> conn-4.axlehole1 LOCKED
+CONNECT conn-9.axle2 -> conn-4.axlehole2 LOCKED
+CONNECT axle5-2.axle1 -> conn-5.axlehole1 LOCKED
+CONNECT axle4-3.axle1 -> conn-6.axlehole1 LOCKED
+CONNECT axle5-2.axle5 -> conn-5.axlehole1 LOCKED
+CONNECT axle4-2.axle1 -> conn-6.axlehole1 LOCKED
+CONNECT axle5-1.axle2 -> beam11-1.hole3 TURNS
+CONNECT axle5-2.axle2 -> beam11-1.hole10 TURNS
+CONNECT axle5-1.axle4 -> beam11-2.hole3 TURNS
+CONNECT axle5-2.axle4 -> beam11-2.hole10 TURNS
+CONNECT pin-6.pin2 -> rod-1.hole1 STIFF
+CONNECT pin-2.pin2 -> cylinder-1.hole1 TURNS
+CONNECT pin-7.pin2 -> rod-1.hole1 STIFF
+CONNECT pin-3.pin2 -> cylinder-1.hole1 TURNS

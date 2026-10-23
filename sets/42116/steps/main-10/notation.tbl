@@ -1,0 +1,13 @@
+STEP 10
+ADD pin-18 4274 lightbluishgrey
+POS pin-18 2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
+ADD pin-19 4274 lightbluishgrey
+POS pin-19 -2 -3.9 6.5 0 -1 0 0 0 -1 1 0 0
+ADD part-310 98138 transred
+POS part-310 -2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
+ADD part-311 98138 transred
+POS part-311 2 -3.9 6.9 -1 0 0 0 0 -1 0 -1 0
+ATTACH 65487dat
+ATTACH 65487dat
+CONNECT pin-18.pin1 -> conn-6.hole1 TURNS
+CONNECT pin-19.pin1 -> conn-6.hole1 TURNS

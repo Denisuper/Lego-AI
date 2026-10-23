@@ -1,0 +1,5 @@
+ADD axle-4 92909 darkbluishgrey
+POS axle-4 0 0 0 0 0 1 0 -1 0 1 0 0
+ADD arms-1 11949 lightbluishgrey
+POS arms-1 1.5 0 0 0 0 1 0 1 0 -1 0 0
+CONNECT axle-4.pin4 -> arms-1.hole1 STIFF

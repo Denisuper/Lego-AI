@@ -1,0 +1,3 @@
+ADD pin-250 2780 black
+POS pin-250 1 0.5 0.5 0 0 -1 0 1 0 1 0 0
+CONNECT pin-250.pin1 -> pin-247.hole9 STIFF

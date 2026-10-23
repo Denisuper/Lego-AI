@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickupa012-step-02",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam2-9",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "pin-188",
+        "part_number": "87082",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam2-9",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-188",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Big Squared Pin Holes]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-3, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-10's axle2 goes into beam2-9's axlehole1 (locked)",
+      "pin-188's pin1 goes into beam2x4-16's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-10 carries beam2-9",
+      "beam2x4-16 holds pin-188"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

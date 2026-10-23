@@ -1,0 +1,20 @@
+ADD conn-32 32184 lightbluishgrey
+POS conn-32 6.05 -8 -2 -1 0 0 0 1 0 0 0 -1
+ADD pin-194 43093 blue
+POS pin-194 5.55 -9 -2 1 0 0 0 1 0 0 0 1
+ADD pin-195 43093 blue
+POS pin-195 5.55 -7 -2 1 0 0 0 1 0 0 0 1
+ADD beam3x5-26 32526 yellow
+POS beam3x5-26 5.05 -10 -2 0 1 0 0 0 1 1 0 0
+ADD pin-196 2780 black
+POS pin-196 4.55 -10 -2 1 0 0 0 1 0 0 0 1
+ADD pin-197 32054 lightbluishgrey
+POS pin-197 6.05 -8 -2 0 0 -1 0 1 0 1 0 0
+CONNECT pin-197.pin1 -> conn-32.hole1 STIFF
+CONNECT pin-194.axle1 -> beam3x5-26.hole2 TURNS
+CONNECT pin-195.axle1 -> beam3x5-26.hole4 TURNS
+CONNECT pin-196.pin2 -> beam3x5-26.hole1 STIFF
+CONNECT pin-73.pin3 -> beam3x5-26.hole5 STIFF
+CONNECT pin-96.pin2 -> beam3x5-26.hole7 STIFF
+CONNECT pin-197.pin2 -> beam9-17.hole9 STIFF
+CONNECT pin-196.pin1 -> beam15-13.hole12 STIFF

@@ -1,0 +1,13 @@
+ADD beam11-8 32009 yellow
+POS beam11-8 3.05 -10 -11 0 1 0 1 0 0 0 0 -1
+ADD pin-182 6558 blue
+POS pin-182 3.05 -10 -4 -1 0 0 0 1 0 0 0 -1
+ADD pin-183 43093 blue
+POS pin-183 3.55 -10 -3 -1 0 0 0 1 0 0 0 -1
+ADD pin-184 2780 black
+POS pin-184 3.55 -10 -5 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-182.pin2 -> beam11-8.hole1 STIFF
+CONNECT pin-184.pin2 -> beam11-8.hole2 STIFF
+CONNECT axle9-4.axle8 -> beam11-8.axlehole2 LOCKED
+CONNECT axle7-3.axle1 -> beam11-8.hole4 TURNS
+CONNECT pin-182.pin3 -> pin-71.hole1 STIFF

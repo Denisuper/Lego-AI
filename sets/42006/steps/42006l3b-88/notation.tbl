@@ -1,0 +1,192 @@
+ADD axle5-10 32073 lightbluishgrey
+POS axle5-10 2.05 -10.15 -37 0 1 0 0 0 -1 -1 0 0
+ADD conn-46 92907 black
+POS conn-46 2.05 -11.15 -37 0 0 1 0 1 0 -1 0 0
+ADD beam2-7 60483 black
+POS beam2-7 2.05 -10.15 -37 -1 0 0 0 0 1 0 1 0
+ADD pin-237 6558 blue
+POS pin-237 2.05 -9.15 -37 0 1 0 0 0 -1 -1 0 0
+ADD pin-238 32002 tan
+POS pin-238 1.55 -11.15 -37 -1 0 0 0 1 0 0 0 -1
+ADD pin-239 32002 tan
+POS pin-239 -1.45 -11.15 -37 1 0 0 0 1 0 0 0 1
+ADD conn-47 92907 black
+POS conn-47 -1.95 -11.15 -37 0 0 -1 0 1 0 1 0 0
+ADD axle5-11 32073 lightbluishgrey
+POS axle5-11 -1.95 -10.15 -37 0 -1 0 0 0 -1 1 0 0
+ADD beam2-8 60483 black
+POS beam2-8 -1.95 -10.15 -37 1 0 0 0 0 1 0 -1 0
+ADD pin-240 6558 blue
+POS pin-240 -1.95 -9.15 -37 0 -1 0 0 0 -1 1 0 0
+ADD beam5-15 32017 yellow
+POS beam5-15 0.05 -10.15 -35.75 0 0 -1 1 0 0 0 -1 0
+ADD beam5-16 32017 yellow
+POS beam5-16 0.05 -10.15 -38.25 0 0 -1 1 0 0 0 -1 0
+ADD axle3-19 4519 lightbluishgrey
+POS axle3-19 0.05 -10.15 -35 -1 0 0 0 1 0 0 0 -1
+ADD beam2-9 60483 black
+POS beam2-9 0.05 -10.15 -35 0 -1 0 0 0 1 -1 0 0
+ADD pin-241 6558 blue
+POS pin-241 0.05 -9.15 -35 -1 0 0 0 1 0 0 0 -1
+ADD conn-48 32039 black
+POS conn-48 -0.95 -10.15 -35 0 0 1 0 1 0 -1 0 0
+ADD conn-49 32039 black
+POS conn-49 1.05 -10.15 -35 0 0 -1 0 1 0 1 0 0
+ADD conn-50 32039 black
+POS conn-50 1.05 -10.15 -39 0 0 -1 0 1 0 1 0 0
+ADD axle3-20 4519 lightbluishgrey
+POS axle3-20 0.05 -10.15 -39 -1 0 0 0 1 0 0 0 -1
+ADD beam2-10 60483 black
+POS beam2-10 0.05 -10.15 -39 0 -1 0 0 0 1 -1 0 0
+ADD pin-242 6558 blue
+POS pin-242 0.05 -9.15 -39 -1 0 0 0 1 0 0 0 -1
+ADD conn-51 32039 black
+POS conn-51 -0.95 -10.15 -39 0 0 1 0 1 0 -1 0 0
+ADD pin-243 32556 tan
+POS pin-243 0.05 -5.6 -33.25 -1 0 0 0 0.889 0.458 0 0.458 -0.889
+ADD pin-244 32556 tan
+POS pin-244 -3.75 -5.6 -37 0 -0.458 -0.889 0 0.889 -0.458 1 0 0
+ADD pin-245 32556 tan
+POS pin-245 0.05 -5.6 -40.8 -1 0 0 0 0.889 -0.458 0 -0.458 -0.889
+ADD pin-246 32556 tan
+POS pin-246 3.85 -5.6 -37 0 0.458 -0.889 0 0.889 0.458 1 0 0
+ADD beam5-17 32316 black
+POS beam5-17 -0.95 -7.35 -34.1 0 1 0 0.444 0 -0.896 -0.896 0 -0.444
+ADD beam5-18 32316 black
+POS beam5-18 1.05 -7.35 -34.1 0 1 0 0.444 0 -0.896 -0.896 0 -0.444
+ADD beam5-19 32316 black
+POS beam5-19 2.95 -7.35 -36 -0.896 0 -0.444 0.444 0 -0.896 0 -1 0
+ADD beam5-20 32316 black
+POS beam5-20 2.95 -7.35 -38 -0.896 0 -0.444 0.444 0 -0.896 0 -1 0
+ADD beam5-21 32316 black
+POS beam5-21 1.05 -7.35 -39.9 0 -1 0 -0.444 0 0.896 -0.896 0 -0.444
+ADD beam5-22 32316 black
+POS beam5-22 -2.85 -7.35 -36 0.896 0 -0.444 0.444 0 0.896 0 -1 0
+ADD beam5-23 32316 black
+POS beam5-23 -2.85 -7.35 -38 0.896 0 -0.444 0.444 0 0.896 0 -1 0
+ADD axle5-12 32073 lightbluishgrey
+POS axle5-12 0.05 -12.15 -37 -1 0 0 0 0.383 0.924 0 0.924 -0.383
+ADD bush-11 3713 lightbluishgrey
+POS bush-11 0.55 -12.15 -37 0 0 1 0.924 0.383 0 -0.383 0.924 0
+ADD beam-13 99773 yellow
+POS beam-13 -1.7 -14 -36.25 0 -1 0 -0.924 0 -0.383 0.383 0 -0.924
+ADD pin-247 43093 blue
+POS pin-247 -1.45 -15.85 -35.5 -1 0 0 0 0.383 0.924 0 0.924 -0.383
+ATTACH ls50dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls50dat
+ATTACH ls50dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls50dat
+ATTACH ls50dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls51dat
+ATTACH ls50dat
+CONNECT axle5-10.axle2 -> conn-46.axlehole3 LOCKED
+CONNECT axle5-10.axle4 -> conn-46.axlehole4 LOCKED
+CONNECT pin-238.pin1 -> conn-46.hole1 STIFF
+CONNECT axle5-10.axle3 -> beam2-7.axlehole1 LOCKED
+CONNECT pin-237.pin2 -> beam2-7.hole1 STIFF
+CONNECT pin-239.pin1 -> conn-47.hole1 STIFF
+CONNECT axle5-11.axle2 -> conn-47.axlehole3 LOCKED
+CONNECT axle5-11.axle4 -> conn-47.axlehole4 LOCKED
+CONNECT axle5-11.axle3 -> beam2-8.axlehole1 LOCKED
+CONNECT pin-240.pin2 -> beam2-8.hole1 STIFF
+CONNECT axle5-10.axle2 -> beam5-15.hole1 TURNS
+CONNECT axle5-11.axle4 -> beam5-15.hole5 TURNS
+CONNECT axle5-10.axle4 -> beam5-16.hole1 TURNS
+CONNECT axle5-11.axle2 -> beam5-16.hole5 TURNS
+CONNECT axle3-19.axle2 -> beam2-9.axlehole1 LOCKED
+CONNECT pin-241.pin2 -> beam2-9.hole1 STIFF
+CONNECT axle5-11.axle5 -> conn-48.axlehole1 LOCKED
+CONNECT axle3-19.axle3 -> conn-48.axlehole2 LOCKED
+CONNECT axle5-10.axle1 -> conn-49.axlehole1 LOCKED
+CONNECT axle3-19.axle1 -> conn-49.axlehole2 LOCKED
+CONNECT axle5-10.axle5 -> conn-50.axlehole1 LOCKED
+CONNECT axle3-20.axle1 -> conn-50.axlehole2 LOCKED
+CONNECT axle3-20.axle2 -> beam2-10.axlehole1 LOCKED
+CONNECT pin-242.pin2 -> beam2-10.hole1 STIFF
+CONNECT axle5-11.axle1 -> conn-51.axlehole1 LOCKED
+CONNECT axle3-20.axle3 -> conn-51.axlehole2 LOCKED
+CONNECT pin-241.pin3 -> beam5-17.hole5 STIFF
+CONNECT pin-243.pin3 -> beam5-17.hole1 TURNS
+CONNECT pin-241.pin1 -> beam5-18.hole5 STIFF
+CONNECT pin-243.pin1 -> beam5-18.hole1 TURNS
+CONNECT pin-237.pin1 -> beam5-19.hole5 STIFF
+CONNECT pin-246.pin3 -> beam5-19.hole1 TURNS
+CONNECT pin-237.pin3 -> beam5-20.hole5 STIFF
+CONNECT pin-246.pin1 -> beam5-20.hole1 TURNS
+CONNECT pin-242.pin1 -> beam5-21.hole1 STIFF
+CONNECT pin-245.pin1 -> beam5-21.hole5 TURNS
+CONNECT pin-240.pin3 -> beam5-22.hole1 STIFF
+CONNECT pin-244.pin3 -> beam5-22.hole5 TURNS
+CONNECT pin-240.pin1 -> beam5-23.hole1 STIFF
+CONNECT pin-244.pin1 -> beam5-23.hole5 TURNS
+CONNECT axle5-12.axle2 -> bush-11.axlehole1 LOCKED
+CONNECT axle5-12.axle5 -> beam-13.axlehole1 LOCKED
+CONNECT pin-167.pin1 -> beam-13.hole2 STIFF
+CONNECT axle4-12.axle1 -> beam-13.hole3 TURNS
+CONNECT pin-247.axle1 -> beam13-4.hole11 TURNS
+CONNECT axle5-12.axle1 -> beam-8.axlehole1 LOCKED
+CONNECT pin-245.pin2 -> beam-9.hole1 TURNS
+CONNECT pin-246.pin2 -> beam-10.hole1 TURNS
+CONNECT pin-244.pin2 -> beam-11.hole1 TURNS
+CONNECT axle5-12.axle3 -> gear20-7.hole1 TURNS
+CONNECT pin-243.pin2 -> beam-12.hole1 TURNS

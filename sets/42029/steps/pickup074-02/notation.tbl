@@ -1,0 +1,3 @@
+ADD beam-4 99773 black
+POS beam-4 -1.25 0 -2 0 -1 0 0 0 1 -1 0 0
+CONNECT axle5-17.axle2 -> beam-4.axlehole1 LOCKED

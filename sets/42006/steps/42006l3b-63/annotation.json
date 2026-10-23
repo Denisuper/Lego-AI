@@ -1,0 +1,130 @@
+{
+  "example_id": "42006-42006l3b-step-63",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 63,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle10-1",
+        "part_number": "3737",
+        "count": 1
+      },
+      {
+        "name": "conn-23",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "conn-24",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "axle3-7",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "gear12-11",
+        "part_number": "6589",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle10-1",
+        "part_number": "3737",
+        "catalog_name": "Technic Axle 10",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-23.7, z=-23.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-23",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-21.8, z=-18.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-24",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-25.6, z=-27.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-6",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-21.2, z=-17.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-7",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-26.2, z=-29.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-11",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-26.4, z=-29.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle10-1's axle10 goes into conn-23's axlehole2 (locked)",
+      "axle3-6's axle3 goes into conn-23's axlehole1 (locked)",
+      "axle10-1's axle1 goes into conn-24's axlehole1 (locked)",
+      "axle3-7's axle1 goes into conn-24's axlehole2 (locked)",
+      "axle3-7's axle3 goes into gear12-11's axlehole1 (locked)",
+      "axle3-7's axle2 goes into pin-146's hole1 (turns)",
+      "axle3-6's axle2 goes into pin-147's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle10-1 carries conn-23",
+      "axle3-6 carries conn-23",
+      "axle10-1 carries conn-24",
+      "axle3-7 carries conn-24",
+      "axle3-7 carries gear12-11",
+      "pin-146 spins on axle3-7",
+      "pin-147 spins on axle3-6"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

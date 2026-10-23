@@ -1,0 +1,64 @@
+{
+  "example_id": "42101-buggy-step-32",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 32,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-7",
+        "part_number": "32123b",
+        "count": 1
+      },
+      {
+        "name": "bush-8",
+        "part_number": "32123b",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-7",
+        "part_number": "32123b",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.25, y=-2, z=-2.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-8",
+        "part_number": "32123b",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.25, y=-2, z=-2.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-3's axle5 goes into bush-7's axlehole1 (locked)",
+      "axle5-3's axle1 goes into bush-8's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-3 carries bush-7",
+      "axle5-3 carries bush-8"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

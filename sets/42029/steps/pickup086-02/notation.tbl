@@ -1,0 +1,7 @@
+ADD beam9-8 6629 red
+POS beam9-8 7 -4 10 0 -1 0 -0.6 0 0.8 -0.8 0 -0.6
+ADD beam5-16 32316 red
+POS beam5-16 7 -3.2 7.4 0 1 0 -0.6 0 -0.8 -0.8 0 0.6
+CONNECT pin-301.pin2 -> beam9-8.hole7 STIFF
+CONNECT pin-302.pin2 -> beam5-16.hole1 STIFF
+CONNECT axle3-25.axle2 -> beam5-16.hole2 TURNS

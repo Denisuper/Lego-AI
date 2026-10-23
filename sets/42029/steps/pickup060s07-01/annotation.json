@@ -1,0 +1,110 @@
+{
+  "example_id": "42029-pickup060s07-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "slots-4",
+        "part_number": "2850a",
+        "count": 1
+      },
+      {
+        "name": "pin-253",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-254",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-255",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-256",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "slots-4",
+        "part_number": "2850a",
+        "catalog_name": "Technic Engine Cylinder with Side Slots",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-253",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=1.3, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-254",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1.3, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-255",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=1.3, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-256",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=1.3, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-253's pin1 goes into slots-4's hole1 (stiff)",
+      "pin-254's pin1 goes into slots-4's hole2 (stiff)",
+      "pin-255's pin2 goes into slots-4's hole1 (stiff)",
+      "pin-256's pin2 goes into slots-4's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "slots-4 holds pin-253",
+      "slots-4 holds pin-254",
+      "slots-4 holds pin-255",
+      "slots-4 holds pin-256"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

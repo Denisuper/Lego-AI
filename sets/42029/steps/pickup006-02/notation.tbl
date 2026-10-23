@@ -1,0 +1,9 @@
+ADD axle8-1 55013 darkbluishgrey
+POS axle8-1 0 0 2 0 0 1 0 1 0 -1 0 0
+ADD beam3-1 6632 red
+POS beam3-1 0 -1 -1.75 -1 0 0 0 0 1 0 1 0
+ADD gear12-1 6589 tan
+POS gear12-1 0 0 -1.15 1 0 0 0 -1 0 0 0 -1
+CONNECT axle8-1.axle8 -> beam3-1.hole1 TURNS
+CONNECT axle8-1.axle8 -> gear12-1.axlehole1 LOCKED
+CONNECT axle8-1.axle7 -> pin-10.hole3 TURNS

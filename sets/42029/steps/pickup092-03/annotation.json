@@ -1,0 +1,96 @@
+{
+  "example_id": "42029-pickup092-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam2-14",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "beam2-15",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "pin-339",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-340",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam2-14",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-15",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-339",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4, y=0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-340",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-337's axle2 goes into beam2-14's axlehole1 (locked)",
+      "pin-338's axle1 goes into beam2-15's axlehole1 (locked)",
+      "pin-340's pin2 goes into pin-337's hole1 (stiff)",
+      "pin-339's pin2 goes into pin-338's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-337 carries beam2-14",
+      "pin-338 carries beam2-15",
+      "pin-337 holds pin-340",
+      "pin-338 holds pin-339"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

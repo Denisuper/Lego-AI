@@ -1,0 +1,6 @@
+ADD beam3x5-12 32526 lightbluishgrey
+POS beam3x5-12 -1 -4 -3 0 1 0 0 0 1 1 0 0
+ATTACH pickupa015s0
+CONNECT pin-195.pin1 -> beam3x5-12.hole5 STIFF
+CONNECT pin-196.pin1 -> beam3x5-12.hole7 STIFF
+CONNECT pin-194.pin1 -> beam7-5.hole7 STIFF

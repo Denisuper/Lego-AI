@@ -1,0 +1,80 @@
+{
+  "example_id": "42029-pickupc-step-16",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 16,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam13-5",
+        "part_number": "41239",
+        "count": 1
+      },
+      {
+        "name": "beam13-6",
+        "part_number": "41239",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam13-5",
+        "part_number": "41239",
+        "catalog_name": "Technic Beam 1 x 13 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam13-6",
+        "part_number": "41239",
+        "catalog_name": "Technic Beam 1 x 13 Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-140's axle1 goes into beam13-5's hole7 (turns)",
+      "pin-150's pin3 goes into beam13-5's hole3 (stiff)",
+      "pin-151's pin3 goes into beam13-5's hole1 (stiff)",
+      "pin-162's pin1 goes into beam13-5's hole10 (stiff)",
+      "pin-163's pin1 goes into beam13-5's hole13 (stiff)",
+      "pin-139's axle1 goes into beam13-6's hole7 (turns)",
+      "pin-143's pin3 goes into beam13-6's hole3 (stiff)",
+      "pin-144's pin3 goes into beam13-6's hole1 (stiff)",
+      "pin-164's pin2 goes into beam13-6's hole13 (stiff)",
+      "pin-165's pin2 goes into beam13-6's hole10 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam13-5 spins on pin-140",
+      "beam13-5 holds pin-150",
+      "beam13-5 holds pin-151",
+      "beam13-5 holds pin-162",
+      "beam13-5 holds pin-163",
+      "beam13-6 spins on pin-139",
+      "beam13-6 holds pin-143",
+      "beam13-6 holds pin-144",
+      "beam13-6 holds pin-164",
+      "beam13-6 holds pin-165"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

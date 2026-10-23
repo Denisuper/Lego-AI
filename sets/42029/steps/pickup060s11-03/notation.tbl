@@ -1,0 +1,11 @@
+ADD beam5-9 32316 lightbluishgrey
+POS beam5-9 1 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-263 11214 darkbluishgrey
+POS pin-263 1 0 2 0 -1 0 1 0 0 0 0 1
+ADD pin-264 11214 darkbluishgrey
+POS pin-264 1 0 0 0 -1 0 1 0 0 0 0 1
+ADD pin-265 11214 darkbluishgrey
+POS pin-265 1 0 -2 0 -1 0 1 0 0 0 0 1
+CONNECT pin-263.pin1 -> beam5-9.hole5 STIFF
+CONNECT pin-264.pin1 -> beam5-9.hole3 STIFF
+CONNECT pin-265.pin1 -> beam5-9.hole1 STIFF

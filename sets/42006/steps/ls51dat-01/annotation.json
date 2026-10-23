@@ -1,0 +1,86 @@
+{
+  "example_id": "42006-ls51dat-step-01",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-26",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-27",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-28",
+        "part_number": "4-4ring1",
+        "count": 1
+      },
+      {
+        "name": "part-29",
+        "part_number": "4-4ring1",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-26",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-27",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-28",
+        "part_number": "4-4ring1",
+        "catalog_name": "Ring  1 x 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-29",
+        "part_number": "4-4ring1",
+        "catalog_name": "Ring  1 x 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0.05, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

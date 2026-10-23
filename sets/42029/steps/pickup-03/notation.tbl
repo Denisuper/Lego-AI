@@ -1,0 +1,10 @@
+ADD beam3x3-1 60484 lightbluishgrey
+POS beam3x3-1 3 0 -1 0 0 -1 -1 0 0 0 1 0
+ADD beam3x3-2 60484 lightbluishgrey
+POS beam3x3-2 -3 0 -1 0 0 1 1 0 0 0 1 0
+ADD axle4-1 87083 darkbluishgrey
+POS axle4-1 -2 0 1.5 0 -0.195 0.981 0 0.981 0.195 -1 0 0
+CONNECT pin-7.pin1 -> beam3x3-1.hole2 STIFF
+CONNECT pin-8.pin1 -> beam3x3-1.hole4 STIFF
+CONNECT pin-9.pin1 -> beam3x3-2.hole4 STIFF
+CONNECT axle4-1.axle4 -> beam15-1.hole10 TURNS

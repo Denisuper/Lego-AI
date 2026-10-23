@@ -1,0 +1,3 @@
+ADD conn-75 63869 lightbluishgrey
+POS conn-75 0 0 0 1 0 0 0 0 -1 0 1 0
+CONNECT axle2-9.axle1 -> conn-75.axlehole1 LOCKED

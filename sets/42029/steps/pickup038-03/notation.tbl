@@ -1,0 +1,6 @@
+ADD beam5-4 32316 red
+POS beam5-4 1 -1 0 1 0 0 0 1 0 0 0 1
+ADD pin-70 6558 blue
+POS pin-70 1 0 -2 0 -1 0 1 0 0 0 0 1
+CONNECT pin-70.pin1 -> beam5-4.hole1 STIFF
+CONNECT pin-69.pin2 -> beam5-4.hole5 STIFF

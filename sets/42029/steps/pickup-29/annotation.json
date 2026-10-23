@@ -1,0 +1,52 @@
+{
+  "example_id": "42029-pickup-step-29",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 29,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle5-1",
+        "part_number": "15462",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle5-1",
+        "part_number": "15462",
+        "catalog_name": "Technic Axle 5 with Stop",
+        "color": "Dark Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-2, z=-3.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-1's axle3 goes into beam9-1's hole4 (turns)",
+      "axle5-1's axle5 goes into beam9-2's hole4 (turns)",
+      "axle5-1's axle4 goes into opening-1's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-1 spins on axle5-1",
+      "beam9-2 spins on axle5-1",
+      "axle5-1 carries opening-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

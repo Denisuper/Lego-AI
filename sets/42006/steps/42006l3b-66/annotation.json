@@ -1,0 +1,99 @@
+{
+  "example_id": "42006-42006l3b-step-66",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 66,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-13",
+        "part_number": "6590",
+        "count": 1
+      },
+      {
+        "name": "pin-152",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-153",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-154",
+        "part_number": "32138",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-13",
+        "part_number": "6590",
+        "catalog_name": "6590",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-24.35, z=-15.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-152",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-25.05, z=-18.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-153",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-26.5, z=-24.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-154",
+        "part_number": "32138",
+        "catalog_name": "Technic Pin Double with Axle Hole",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-26.15, z=-23.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-152's pin2 goes into beam15-7's hole15 (stiff)",
+      "pin-153's pin2 goes into beam3x5-17's hole7 (stiff)",
+      "pin-152's pin1 goes into beam15-10's hole5 (stiff)",
+      "pin-153's pin1 goes into beam15-10's hole11 (stiff)",
+      "pin-154's pin4 goes into beam15-10's hole9 (stiff)",
+      "pin-154's pin3 goes into beam15-10's hole10 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam15-7 holds pin-152",
+      "beam3x5-17 holds pin-153",
+      "beam15-10 holds pin-152",
+      "beam15-10 holds pin-153",
+      "beam15-10 holds pin-154"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

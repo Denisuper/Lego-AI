@@ -1,0 +1,80 @@
+{
+  "example_id": "42116-step-07",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x3-1",
+        "part_number": "60484",
+        "count": 1
+      },
+      {
+        "name": "pin-14",
+        "part_number": "3749",
+        "count": 1
+      },
+      {
+        "name": "conn-7",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x3-1",
+        "part_number": "60484",
+        "catalog_name": "Technic Beam 3 x 3 T-Shape Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-5.9, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-14",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-2.4, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-7",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.4, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-2's axle1 goes into beam3x3-1's hole4 (turns)",
+      "pin-13's axle1 goes into beam3x3-1's hole3 (turns)",
+      "pin-14's axle1 goes into conn-6's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x3-1 spins on pin-2",
+      "beam3x3-1 spins on pin-13",
+      "conn-6 spins on pin-14"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

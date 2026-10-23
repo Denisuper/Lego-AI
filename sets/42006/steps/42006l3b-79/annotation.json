@@ -1,0 +1,132 @@
+{
+  "example_id": "42006-42006l3b-step-79",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 79,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-32",
+        "part_number": "32184",
+        "count": 1
+      },
+      {
+        "name": "pin-194",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "pin-195",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-26",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-196",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-197",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-32",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.05, y=-8, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-194",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.55, y=-9, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-195",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.55, y=-7, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-26",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.05, y=-10, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-196",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.55, y=-10, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-197",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.05, y=-8, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-197's pin1 goes into conn-32's hole1 (stiff)",
+      "pin-194's axle1 goes into beam3x5-26's hole2 (turns)",
+      "pin-195's axle1 goes into beam3x5-26's hole4 (turns)",
+      "pin-196's pin2 goes into beam3x5-26's hole1 (stiff)",
+      "pin-73's pin3 goes into beam3x5-26's hole5 (stiff)",
+      "pin-96's pin2 goes into beam3x5-26's hole7 (stiff)",
+      "pin-197's pin2 goes into beam9-17's hole9 (stiff)",
+      "pin-196's pin1 goes into beam15-13's hole12 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "conn-32 holds pin-197",
+      "beam3x5-26 spins on pin-194",
+      "beam3x5-26 spins on pin-195",
+      "beam3x5-26 holds pin-196",
+      "beam3x5-26 holds pin-73",
+      "beam3x5-26 holds pin-96",
+      "beam9-17 holds pin-197",
+      "beam15-13 holds pin-196"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

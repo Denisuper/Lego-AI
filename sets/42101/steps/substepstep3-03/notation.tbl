@@ -1,0 +1,3 @@
+ADD panel-2 11946 orange
+POS panel-2 1 0 0 0 0 1 1 0 0 0 1 0
+CONNECT axle3-5.axle1 -> panel-2.axlehole1 LOCKED

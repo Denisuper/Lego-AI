@@ -1,0 +1,6 @@
+ADD pin-10 6558 blue
+POS pin-10 0 2.4 9.5 -1 0 0 0 0.774 -0.633 0 -0.633 -0.774
+ATTACH shock065lsof
+CONNECT axle5-2.axle3 -> cylinder-1.hole1 TURNS
+CONNECT pin-10.pin2 -> rod-1.hole1 STIFF
+CONNECT pin-10.pin3 -> beam2x4-2.hole4 STIFF

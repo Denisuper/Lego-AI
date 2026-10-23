@@ -1,0 +1,4 @@
+ADD conn-29 42003 red
+POS conn-29 0 0 0 -1 0 0 0 1 0 0 0 -1
+CONNECT axle5-9.axle3 -> conn-29.hole1 TURNS
+CONNECT pin-169.pin1 -> conn-29.hole2 STIFF

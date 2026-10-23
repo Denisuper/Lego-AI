@@ -1,0 +1,8 @@
+ATTACH pickup093s12
+ATTACH pickup093s12
+CONNECT pin-353.pin2 -> conn-73.hole1 STIFF
+CONNECT pin-354.pin2 -> conn-73.hole2 STIFF
+CONNECT pin-355.pin2 -> conn-73.hole3 STIFF
+CONNECT pin-360.pin1 -> conn-73.hole3 STIFF
+CONNECT pin-361.pin1 -> conn-73.hole2 STIFF
+CONNECT pin-362.pin1 -> conn-73.hole1 STIFF

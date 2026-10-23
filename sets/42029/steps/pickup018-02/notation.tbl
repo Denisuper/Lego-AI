@@ -1,0 +1,12 @@
+ADD pin-23 2780 black
+POS pin-23 -3.5 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-24 2780 black
+POS pin-24 -1.5 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-25 2780 black
+POS pin-25 0.5 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-26 2780 black
+POS pin-26 2.5 0 -0.5 0 0 1 0 1 0 -1 0 0
+CONNECT pin-23.pin1 -> beam13-1.hole4 STIFF
+CONNECT pin-24.pin1 -> beam13-1.hole6 STIFF
+CONNECT pin-25.pin1 -> beam13-1.hole8 STIFF
+CONNECT pin-26.pin1 -> beam13-1.hole10 STIFF

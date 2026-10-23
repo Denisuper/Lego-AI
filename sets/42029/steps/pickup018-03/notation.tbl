@@ -1,0 +1,12 @@
+ADD beam3x3-3 60484 lightbluishgrey
+POS beam3x3-3 -3.5 0 -1 0 0 1 1 0 0 0 1 0
+ADD beam3x3-4 60484 lightbluishgrey
+POS beam3x3-4 2.5 0 -1 0 0 -1 -1 0 0 0 1 0
+ADD conn-8 6536 black
+POS conn-8 -6.5 0 -1 0 -1 0 0 0 -1 1 0 0
+ADD conn-9 6536 black
+POS conn-9 5.5 0 -1 0 1 0 0 0 1 1 0 0
+CONNECT pin-23.pin2 -> beam3x3-3.hole2 STIFF
+CONNECT pin-24.pin2 -> beam3x3-3.hole4 STIFF
+CONNECT pin-25.pin2 -> beam3x3-4.hole4 STIFF
+CONNECT pin-26.pin2 -> beam3x3-4.hole2 STIFF

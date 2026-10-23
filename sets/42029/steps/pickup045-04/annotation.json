@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup045-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-89",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "pin-90",
+        "part_number": "44809",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-89",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-90",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=1, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-86's pin1 goes into pin-89's hole1 (stiff)",
+      "pin-85's pin2 goes into pin-90's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-89 holds pin-86",
+      "pin-90 holds pin-85"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

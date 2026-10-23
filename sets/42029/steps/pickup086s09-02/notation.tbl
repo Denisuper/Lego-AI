@@ -1,0 +1,6 @@
+ADD pin-310 32054 red
+POS pin-310 -2 0 0 0 0 -1 0 1 0 1 0 0
+ADD pin-311 32054 red
+POS pin-311 2 0 0 0 0 -1 0 1 0 1 0 0
+CONNECT pin-311.pin1 -> conn-64.hole1 STIFF
+CONNECT pin-310.pin1 -> conn-65.hole1 STIFF

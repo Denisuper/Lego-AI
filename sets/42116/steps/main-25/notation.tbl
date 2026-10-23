@@ -1,0 +1,21 @@
+STEP 25
+ADD pin-38 3749 tan
+POS pin-38 -2.5 -8.9 -6 1 0 0 0 -1 0 0 0 -1
+ADD pin-39 43093 blue
+POS pin-39 -2.5 -6.9 -6 1 0 0 0 -1 0 0 0 -1
+ADD beam3x3-3 32056 black
+POS beam3x3-3 -2.25 -6.9 -6 0 1 0 0 0 -1 -1 0 0
+ADD beam3x3-4 32056 black
+POS beam3x3-4 -1.75 -6.9 -6 0 1 0 0 0 -1 -1 0 0
+ADD pin-40 18651 black
+POS pin-40 -1 -6.9 -7 1 0 0 0 0 -1 0 1 0
+ADD beam2-4 60483 black
+POS beam2-4 -1 -6.9 -7 0 1 0 1 0 0 0 0 -1
+ADD pin-41 11214 red
+POS pin-41 -1 -6.9 -8 -1 0 0 0 0 1 0 1 0
+CONNECT pin-40.axle1 -> beam3x3-3.hole2 TURNS
+CONNECT pin-40.axle1 -> beam3x3-4.hole2 TURNS
+CONNECT pin-40.axle2 -> beam2-4.axlehole1 LOCKED
+CONNECT pin-41.pin1 -> beam2-4.hole1 STIFF
+CONNECT pin-39.axle1 -> beam13-1.hole13 TURNS
+CONNECT pin-38.axle1 -> beam13-2.hole13 TURNS

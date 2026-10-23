@@ -1,0 +1,275 @@
+{
+  "example_id": "42006-42006l3b-step-50",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 50,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-112",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-113",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-114",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-115",
+        "part_number": "62462",
+        "count": 1
+      },
+      {
+        "name": "pin-116",
+        "part_number": "48989",
+        "count": 1
+      },
+      {
+        "name": "panel-1",
+        "part_number": "64683",
+        "count": 1
+      },
+      {
+        "name": "beam11-3",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "pin-117",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-118",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-119",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam9-18",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "pin-120",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-121",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam11-4",
+        "part_number": "32009",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-112",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6.45, y=-7, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-113",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6.45, y=-9, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-114",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-10, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-115",
+        "part_number": "62462",
+        "catalog_name": "Technic Pin Connector Round [Slotted]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.45, y=-6, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-116",
+        "part_number": "48989",
+        "catalog_name": "Technic Pin Connector Hub Perpendicular 3L with 4 Pins",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-8, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "panel-1",
+        "part_number": "64683",
+        "catalog_name": "Technic Panel Fairing # 3 Small Smooth Long, Side A",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6.95, y=-7, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam11-3",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-10, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-117",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-10, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-118",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.45, y=-10, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-119",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6.45, y=-10, z=6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-18",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4.95, y=-10, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-120",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-10, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-121",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.45, y=-10, z=-7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam11-4",
+        "part_number": "32009",
+        "catalog_name": "Technic Beam 1 x 11.5 Double Bent Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.95, y=-10, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-82's pin1 goes into pin-115's hole1 (stiff)",
+      "pin-107's pin3 goes into pin-115's hole1 (stiff)",
+      "pin-112's pin2 goes into pin-116's hole3 (stiff)",
+      "pin-113's pin2 goes into pin-116's hole1 (stiff)",
+      "pin-116's pin1 goes into panel-1's hole2 (stiff)",
+      "pin-114's pin2 goes into beam11-3's hole11 (stiff)",
+      "pin-117's pin2 goes into beam11-3's hole1 (stiff)",
+      "pin-118's pin1 goes into beam11-3's hole3 (stiff)",
+      "pin-119's pin2 goes into beam11-3's hole9 (stiff)",
+      "pin-104's pin2 goes into beam11-3's hole5 (stiff)",
+      "pin-104's pin1 goes into beam11-3's hole7 (stiff)",
+      "pin-117's pin1 goes into beam9-18's hole7 (stiff)",
+      "pin-118's pin2 goes into beam9-18's hole9 (stiff)",
+      "pin-120's pin1 goes into beam9-18's hole5 (stiff)",
+      "pin-121's pin2 goes into beam9-18's hole2 (stiff)",
+      "pin-100's pin3 goes into beam9-18's hole4 (stiff)",
+      "pin-101's pin3 goes into beam9-18's hole1 (stiff)",
+      "pin-120's pin2 goes into beam11-4's hole1 (stiff)",
+      "pin-121's pin1 goes into beam11-4's hole4 (stiff)",
+      "pin-114's pin3 goes into beam3x5-10's hole6 (stiff)",
+      "pin-112's pin1 goes into beam3x5-11's hole4 (stiff)",
+      "pin-113's pin1 goes into beam3x5-11's hole2 (stiff)",
+      "pin-120's pin3 goes into beam3x5-11's hole1 (stiff)",
+      "pin-114's pin1 goes into beam3x5-12's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-115 holds pin-82",
+      "pin-115 holds pin-107",
+      "pin-116 holds pin-112",
+      "pin-116 holds pin-113",
+      "panel-1 holds pin-116",
+      "beam11-3 holds pin-114",
+      "beam11-3 holds pin-117",
+      "beam11-3 holds pin-118",
+      "beam11-3 holds pin-119",
+      "beam11-3 holds pin-104",
+      "beam9-18 holds pin-117",
+      "beam9-18 holds pin-118",
+      "beam9-18 holds pin-120",
+      "beam9-18 holds pin-121",
+      "beam9-18 holds pin-100",
+      "beam9-18 holds pin-101",
+      "beam11-4 holds pin-120",
+      "beam11-4 holds pin-121",
+      "beam3x5-10 holds pin-114",
+      "beam3x5-11 holds pin-112",
+      "beam3x5-11 holds pin-113",
+      "beam3x5-11 holds pin-120",
+      "beam3x5-12 holds pin-114"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

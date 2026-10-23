@@ -1,0 +1,6 @@
+ADD gear12-6 32270 black
+POS gear12-6 1.05 -8 11 1 0 0 0 1 0 0 0 1
+ADD gear12-7 32270 black
+POS gear12-7 1.05 -8 12 1 0 0 0 1 0 0 0 1
+CONNECT axle55-4.axle4 -> gear12-6.axlehole1 LOCKED
+CONNECT axle55-4.axle5 -> gear12-7.axlehole1 LOCKED

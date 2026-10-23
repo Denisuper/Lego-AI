@@ -1,0 +1,8 @@
+ADD axle9-5 60485 lightbluishgrey
+POS axle9-5 0.85 0 0.05 0.167 -0.986 0 0 0 1 -0.986 -0.167 0
+ADD conn-49 59443 black
+POS conn-49 1.6 0 -4.35 0 -0.986 0.167 -1 0 0 0 -0.167 -0.986
+ADD axle2-5 32062 red
+POS axle2-5 1.75 0 -5.35 -0.167 -0.986 0 0 0 -1 0.986 -0.167 0
+CONNECT axle9-5.axle9 -> conn-49.axlehole1 LOCKED
+CONNECT axle2-5.axle2 -> conn-49.axlehole2 LOCKED

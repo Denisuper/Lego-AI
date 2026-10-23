@@ -1,0 +1,6 @@
+ADD conn-12 32192 black
+POS conn-12 0 0 -3 1 0 0 0 -1 0 0 0 -1
+ADD axle2-7 32062 red
+POS axle2-7 0 1.05 -4.05 0 1 0 0.707 0 -0.707 -0.707 0 -0.707
+CONNECT axle2-7.axle1 -> conn-12.axlehole2 LOCKED
+CONNECT conn-11.axle2 -> conn-12.axlehole1 LOCKED

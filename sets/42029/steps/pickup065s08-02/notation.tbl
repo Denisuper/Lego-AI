@@ -1,0 +1,6 @@
+ADD pin-291 6628 black
+POS pin-291 1.5 -1.5 0 0 0 1 1 0 0 0 1 0
+ADD pin-292 6628 black
+POS pin-292 1.5 1.5 0 0 0 -1 -1 0 0 0 1 0
+CONNECT pin-291.pin1 -> arms-1.hole2 STIFF
+CONNECT pin-292.pin1 -> arms-1.hole2 STIFF

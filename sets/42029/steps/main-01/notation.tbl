@@ -1,0 +1,12 @@
+STEP 1
+ATTACH pickup
+MESH gear16-7.teeth gear16-2.teeth
+RATIO gear16-7 gear16-2 16/16
+MESH gear16-7.teeth gear16-6.teeth
+RATIO gear16-7 gear16-6 16/16
+MESH gear16-9.teeth gear16-8.teeth
+RATIO gear16-9 gear16-8 16/16
+MESH gear16-13.teeth gear16-12.teeth
+RATIO gear16-13 gear16-12 16/16
+MESH gear8-2.teeth gear24-1.teeth
+RATIO gear8-2 gear24-1 8/24

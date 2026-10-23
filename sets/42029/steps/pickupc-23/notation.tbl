@@ -1,0 +1,10 @@
+ATTACH pickupc024l
+ATTACH pickupc024r
+CONNECT axle9-3.axle9 -> beam2x4-22.hole4 TURNS
+CONNECT pin-170.pin3 -> beam2x4-22.hole3 STIFF
+CONNECT axle9-3.axle1 -> beam2x4-23.hole4 TURNS
+CONNECT pin-170.pin3 -> beam2x4-23.hole3 STIFF
+CONNECT pin-236.axle1 -> beam5x11-1.hole25 TURNS
+CONNECT pin-238.axle1 -> beam5x11-1.hole26 TURNS
+CONNECT pin-236.pin1 -> beam13-9.hole3 STIFF
+CONNECT pin-238.pin1 -> beam13-10.hole3 STIFF

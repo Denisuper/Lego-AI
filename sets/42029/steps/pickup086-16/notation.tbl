@@ -1,0 +1,4 @@
+ATTACH pickup086s16
+ATTACH pickup086s16
+CONNECT axle9-8.axle9 -> conn-67.axlehole1 LOCKED
+CONNECT axle9-8.axle1 -> conn-67.axlehole1 LOCKED

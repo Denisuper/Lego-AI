@@ -1,0 +1,9 @@
+STEP 1
+ADD beam11-1 32009 white
+POS beam11-1 -1 -1.9 6 0 1 0 -1 0 0 0 0 1
+ADD pin-1 43093 blue
+POS pin-1 -0.5 -1.9 -2 -1 0 0 0 -1 0 0 0 1
+ADD pin-2 43093 blue
+POS pin-2 -1.5 -5.9 6 1 0 0 0 -1 0 0 0 -1
+ATTACH 42924dat
+ATTACH 42924dat

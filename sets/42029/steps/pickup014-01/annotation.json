@@ -1,0 +1,76 @@
+{
+  "example_id": "42029-pickup014-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "conn-6",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "pin-18",
+        "part_number": "3749",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-6",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-18",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-1's axle1 goes into conn-6's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-1 carries conn-6"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

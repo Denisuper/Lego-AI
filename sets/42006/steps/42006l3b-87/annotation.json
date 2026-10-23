@@ -1,0 +1,338 @@
+{
+  "example_id": "42006-42006l3b-step-87",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 87,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam-10",
+        "part_number": "11953",
+        "count": 1
+      },
+      {
+        "name": "beam-11",
+        "part_number": "11953",
+        "count": 1
+      },
+      {
+        "name": "c-1",
+        "part_number": "92693c01",
+        "count": 1
+      },
+      {
+        "name": "part-18",
+        "part_number": "92695",
+        "count": 1
+      },
+      {
+        "name": "part-19",
+        "part_number": "92696",
+        "count": 1
+      },
+      {
+        "name": "gear12-14",
+        "part_number": "6589",
+        "count": 1
+      },
+      {
+        "name": "pin-233",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "gear20-7",
+        "part_number": "87407",
+        "count": 1
+      },
+      {
+        "name": "beam3-14",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "axle3-17",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "axle3-18",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "conn-44",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "conn-45",
+        "part_number": "41678",
+        "count": 1
+      },
+      {
+        "name": "pin-234",
+        "part_number": "32556",
+        "count": 1
+      },
+      {
+        "name": "beam-12",
+        "part_number": "11953",
+        "count": 1
+      },
+      {
+        "name": "pin-235",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "pin-236",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "beam3-15",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "beam3-16",
+        "part_number": "6632",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam-10",
+        "part_number": "11953",
+        "catalog_name": "Technic Grabber Arm Claw with 3L Thick Beam [Type 1]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.95, y=-5.1, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-11",
+        "part_number": "11953",
+        "catalog_name": "Technic Grabber Arm Claw with 3L Thick Beam [Type 1]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.85, y=-5.1, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "c-1",
+        "part_number": "92693c01",
+        "catalog_name": "92693c01",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-12.15, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-18",
+        "part_number": "92695",
+        "catalog_name": "92695",
+        "color": "Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-10.65, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-19",
+        "part_number": "92696",
+        "catalog_name": "92696",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-4.15, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-14",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-10.8, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-233",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-4.15, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear20-7",
+        "part_number": "87407",
+        "catalog_name": "Technic Gear 20 Tooth Bevel with Pin Hole",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-12.15, z=-37 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-14",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-3.4, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-17",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-18",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-44",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-45",
+        "part_number": "41678",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-234",
+        "part_number": "32556",
+        "catalog_name": "Technic Pin Long without Friction Ridges",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-4.65, z=-35 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-12",
+        "part_number": "11953",
+        "catalog_name": "Technic Grabber Arm Claw with 3L Thick Beam [Type 1]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-5.1, z=-34.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-235",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-236",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-4.65, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-15",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-5.9, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-16",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-5.9, z=-36 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-231's pin2 goes into beam-10's hole3 (turns)",
+      "pin-232's pin2 goes into beam-11's hole3 (turns)",
+      "axle3-17's axle3 goes into beam3-14's axlehole2 (locked)",
+      "axle3-18's axle3 goes into beam3-14's axlehole1 (locked)",
+      "axle3-17's axle3 goes into conn-44's axlehole1 (locked)",
+      "axle3-17's axle1 goes into conn-44's axlehole2 (locked)",
+      "pin-233's pin1 goes into conn-45's hole1 (stiff)",
+      "axle3-18's axle3 goes into conn-45's axlehole1 (locked)",
+      "axle3-18's axle1 goes into conn-45's axlehole2 (locked)",
+      "pin-234's pin2 goes into beam-12's hole3 (turns)",
+      "axle3-17's axle2 goes into pin-235's hole2 (turns)",
+      "pin-234's pin1 goes into pin-235's hole3 (turns)",
+      "pin-231's pin3 goes into pin-235's hole1 (turns)",
+      "axle3-18's axle2 goes into pin-236's hole2 (turns)",
+      "pin-234's pin3 goes into pin-236's hole1 (turns)",
+      "pin-232's pin3 goes into pin-236's hole3 (turns)",
+      "axle3-18's axle1 goes into beam3-15's axlehole1 (locked)",
+      "axle3-16's axle1 goes into beam3-15's axlehole2 (locked)",
+      "axle3-17's axle1 goes into beam3-16's axlehole1 (locked)",
+      "axle3-15's axle1 goes into beam3-16's axlehole2 (locked)",
+      "pin-233's pin3 goes into conn-42's hole1 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-231 spins on beam-10",
+      "pin-232 spins on beam-11",
+      "axle3-17 carries beam3-14",
+      "axle3-18 carries beam3-14",
+      "axle3-17 carries conn-44",
+      "conn-45 holds pin-233",
+      "axle3-18 carries conn-45",
+      "pin-234 spins on beam-12",
+      "pin-235 spins on axle3-17",
+      "pin-234 spins on pin-235",
+      "pin-231 spins on pin-235",
+      "pin-236 spins on axle3-18",
+      "pin-234 spins on pin-236",
+      "pin-232 spins on pin-236",
+      "axle3-18 carries beam3-15",
+      "axle3-16 carries beam3-15",
+      "axle3-17 carries beam3-16",
+      "axle3-15 carries beam3-16",
+      "conn-42 holds pin-233"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

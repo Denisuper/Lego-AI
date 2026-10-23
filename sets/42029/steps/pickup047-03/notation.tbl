@@ -1,0 +1,8 @@
+ADD pin-95 32138 black
+POS pin-95 2 -1.15 -2.45 1 0 0 0 0.099 -0.995 0 0.995 0.099
+ADD pin-96 32138 black
+POS pin-96 -2 -1.15 -2.45 1 0 0 0 0.099 -0.995 0 0.995 0.099
+CONNECT pin-96.pin4 -> beam2x4-10.hole2 STIFF
+CONNECT pin-96.pin3 -> beam2x4-10.hole3 STIFF
+CONNECT pin-95.pin2 -> beam2x4-11.hole2 STIFF
+CONNECT pin-95.pin1 -> beam2x4-11.hole3 STIFF

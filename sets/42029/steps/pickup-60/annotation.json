@@ -1,0 +1,82 @@
+{
+  "example_id": "42029-pickup-step-60",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 60,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear16-12",
+        "part_number": "94925",
+        "count": 1
+      },
+      {
+        "name": "gear16-13",
+        "part_number": "94925",
+        "count": 1
+      },
+      {
+        "name": "axle3-22",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear16-12",
+        "part_number": "94925",
+        "catalog_name": "Technic Gear 16 Tooth Reinforced [New Style]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-20 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear16-13",
+        "part_number": "94925",
+        "catalog_name": "Technic Gear 16 Tooth Reinforced [New Style]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-20 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-22",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-19 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-5's axle1 goes into gear16-12's axlehole1 (locked)",
+      "axle3-22's axle3 goes into gear16-13's axlehole1 (locked)",
+      "axle3-22's axle1 goes into conn-51's axlehole1 (locked)",
+      "axle3-22's axle2 goes into beam3x3-13's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-5 carries gear16-12",
+      "axle3-22 carries gear16-13",
+      "axle3-22 carries conn-51",
+      "beam3x3-13 spins on axle3-22"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

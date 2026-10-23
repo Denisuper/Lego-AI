@@ -1,0 +1,8 @@
+ADD holes-1 87761 black
+POS holes-1 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-158 6628 black
+POS pin-158 -3 -0.5 0 0 -1 0 1 0 0 0 0 1
+ADD pin-159 6628 black
+POS pin-159 3 -0.5 0 0 -1 0 1 0 0 0 0 1
+CONNECT pin-158.pin1 -> holes-1.hole1 STIFF
+CONNECT pin-159.pin1 -> holes-1.hole2 STIFF

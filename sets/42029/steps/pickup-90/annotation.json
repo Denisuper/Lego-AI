@@ -1,0 +1,128 @@
+{
+  "example_id": "42029-pickup-step-90",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 90,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "stud-8",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-9",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-10",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-11",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-12",
+        "part_number": "6141",
+        "count": 1
+      },
+      {
+        "name": "stud-13",
+        "part_number": "6141",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "stud-8",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Clear",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=-2, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-9",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Clear",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-2, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-10",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=-3, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-11",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Orange",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-3, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-12",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=-4, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "stud-13",
+        "part_number": "6141",
+        "catalog_name": "Plate Round 1 x 1 with Solid Stud",
+        "color": "Trans Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=-4, z=25.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-433's pin2 goes into stud-8's hole1 (turns)",
+      "pin-430's pin2 goes into stud-9's hole1 (turns)",
+      "pin-432's pin2 goes into stud-10's hole1 (turns)",
+      "pin-429's pin2 goes into stud-11's hole1 (turns)",
+      "pin-428's pin2 goes into stud-12's hole1 (turns)",
+      "pin-431's pin2 goes into stud-13's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-433 spins on stud-8",
+      "pin-430 spins on stud-9",
+      "pin-432 spins on stud-10",
+      "pin-429 spins on stud-11",
+      "pin-428 spins on stud-12",
+      "pin-431 spins on stud-13"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,12 @@
+ADD pin-182 44809 lightbluishgrey
+POS pin-182 -6.15 0.7 3 0.222 0.975 0 0.975 -0.222 0 0 0 -1
+ADD pin-183 44809 lightbluishgrey
+POS pin-183 6.15 0.7 3 -0.222 0.975 0 0.975 0.222 0 0 0 -1
+ADD pin-184 44809 lightbluishgrey
+POS pin-184 -6.15 0.7 7 0.222 -0.975 0 0.975 0.222 0 0 0 1
+ADD pin-185 44809 lightbluishgrey
+POS pin-185 6.15 0.7 7 -0.222 -0.975 0 0.975 -0.222 0 0 0 1
+CONNECT pin-177.pin2 -> pin-182.hole3 STIFF
+CONNECT pin-176.pin1 -> pin-183.hole3 STIFF
+CONNECT pin-176.pin1 -> pin-184.hole3 STIFF
+CONNECT pin-177.pin2 -> pin-185.hole3 STIFF

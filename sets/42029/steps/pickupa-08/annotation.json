@@ -1,0 +1,124 @@
+{
+  "example_id": "42029-pickupa-step-08",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 8,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "joint-1",
+        "part_number": "32494",
+        "count": 1
+      },
+      {
+        "name": "joint-2",
+        "part_number": "32494",
+        "count": 1
+      },
+      {
+        "name": "axle3-8",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "joint-3",
+        "part_number": "32494",
+        "count": 1
+      },
+      {
+        "name": "joint-4",
+        "part_number": "32494",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "joint-1",
+        "part_number": "32494",
+        "catalog_name": "Technic Steering / CV Joint",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "joint-2",
+        "part_number": "32494",
+        "catalog_name": "Technic Steering / CV Joint",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7.9, y=1.1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-8",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.45, y=0.55, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle3-9",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5.45, y=0.55, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "joint-3",
+        "part_number": "32494",
+        "catalog_name": "Technic Steering / CV Joint",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "joint-4",
+        "part_number": "32494",
+        "catalog_name": "Technic Steering / CV Joint",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7.9, y=1.1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle3-8's axle3 goes into joint-1's axlehole1 (locked)",
+      "axle3-8's axle1 goes into joint-2's axlehole1 (locked)",
+      "axle3-9's axle3 goes into joint-3's axlehole1 (locked)",
+      "axle3-9's axle1 goes into joint-4's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle3-8 carries joint-1",
+      "axle3-8 carries joint-2",
+      "axle3-9 carries joint-3",
+      "axle3-9 carries joint-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

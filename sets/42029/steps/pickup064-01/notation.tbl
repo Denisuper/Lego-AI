@@ -1,0 +1,14 @@
+ADD beam7-8 32524 darkbluishgrey
+POS beam7-8 0 0 0 0 -1 0 0 0 -1 1 0 0
+ADD pin-277 2780 black
+POS pin-277 -0.5 3 0 1 0 0 0 0 -1 0 1 0
+ADD pin-278 6558 blue
+POS pin-278 0 -3 0 1 0 0 0 0 -1 0 1 0
+ADD pin-279 2780 black
+POS pin-279 0.5 -2 0 1 0 0 0 0 -1 0 1 0
+ADD pin-280 2780 black
+POS pin-280 -0.5 -1 0 1 0 0 0 0 -1 0 1 0
+CONNECT pin-277.pin2 -> beam7-8.hole1 STIFF
+CONNECT pin-278.pin2 -> beam7-8.hole7 STIFF
+CONNECT pin-279.pin1 -> beam7-8.hole6 STIFF
+CONNECT pin-280.pin2 -> beam7-8.hole5 STIFF

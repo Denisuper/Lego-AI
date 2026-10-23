@@ -1,0 +1,9 @@
+ADD conn-50 59443 black
+POS conn-50 0 -1 -11.5 0.195 -0.981 0 0.981 0.195 0 0 0 1
+ADD axle6-4 3706 black
+POS axle6-4 0 -1 -14.5 0 -0.981 0.195 0 0.195 0.981 -1 0 0
+ADD conn-51 59443 black
+POS conn-51 0 -1 -17.5 0 -1 0 1 0 0 0 0 1
+CONNECT axle6-4.axle1 -> conn-50.axlehole1 LOCKED
+CONNECT axle4-4.axle1 -> conn-50.axlehole2 LOCKED
+CONNECT axle6-4.axle6 -> conn-51.axlehole2 LOCKED

@@ -1,0 +1,33 @@
+ADD pin-9 connect7 maincolour
+POS pin-9 0 1 0.5 0 0 1 -1 0 0 0 -1 0
+ADD part-234 4-4edge maincolour
+POS part-234 0 1 0.5 8 0 0 0 0 8 0 -1 0
+ADD part-235 1-4edge maincolour
+POS part-235 0 1 0.5 2.828 0 2.828 -2.828 0 2.828 0 -1 0
+ADD part-236 1-4edge maincolour
+POS part-236 0 1 0.5 -2.828 0 -2.828 2.828 0 -2.828 0 -1 0
+ADD pin-10 connect7 maincolour
+POS pin-10 0 -1 0.5 0 0 1 1 0 0 0 -1 0
+ADD part-237 4-4edge maincolour
+POS part-237 0 -1 0.5 8 0 0 0 0 -8 0 -1 0
+ADD part-238 1-4edge maincolour
+POS part-238 0 -1 0.5 2.828 0 2.828 2.828 0 -2.828 0 -1 0
+ADD part-239 1-4edge maincolour
+POS part-239 0 -1 0.5 -2.828 0 -2.828 -2.828 0 2.828 0 -1 0
+ADD pin-11 connect7 maincolour
+POS pin-11 0 1 -0.5 0 0 1 -1 0 0 0 1 0
+ADD part-240 4-4edge maincolour
+POS part-240 0 1 -0.5 8 0 0 0 0 8 0 1 0
+ADD part-241 1-4edge maincolour
+POS part-241 0 1 -0.5 2.828 0 2.828 -2.828 0 2.828 0 1 0
+ADD part-242 1-4edge maincolour
+POS part-242 0 1 -0.5 -2.828 0 -2.828 2.828 0 -2.828 0 1 0
+ADD pin-12 connect7 maincolour
+POS pin-12 0 -1 -0.5 0 0 1 1 0 0 0 1 0
+ADD part-243 4-4edge maincolour
+POS part-243 0 -1 -0.5 8 0 0 0 0 -8 0 1 0
+ADD part-244 1-4edge maincolour
+POS part-244 0 -1 -0.5 2.828 0 2.828 2.828 0 -2.828 0 1 0
+ADD part-245 1-4edge maincolour
+POS part-245 0 -1 -0.5 -2.828 0 -2.828 -2.828 0 2.828 0 1 0
+ATTACH 48989s01dat

@@ -1,0 +1,43 @@
+ADD beam7-12 32524 black
+POS beam7-12 5.05 -14 -7 0 -1 0 -1 0 0 0 0 -1
+ADD pin-212 2780 black
+POS pin-212 5.55 -14 -7 -1 0 0 0 1 0 0 0 -1
+ADD pin-213 2780 black
+POS pin-213 5.55 -14 -10 -1 0 0 0 1 0 0 0 -1
+ADD pin-214 2780 black
+POS pin-214 5.55 -14 -4 -1 0 0 0 1 0 0 0 -1
+ADD pin-215 2780 black
+POS pin-215 4.55 -6 -10 -1 0 0 0 1 0 0 0 -1
+ADD pin-216 2780 black
+POS pin-216 7.55 -6 -5 -1 0 0 0 1 0 0 0 -1
+ADD pin-217 2780 black
+POS pin-217 7.55 -6 7 -1 0 0 0 1 0 0 0 -1
+ADD pin-218 6558 blue
+POS pin-218 7.05 -6 6 -1 0 0 0 1 0 0 0 -1
+ADD beam3x5-30 32526 yellow
+POS beam3x5-30 7.05 -10 8 0 -1 0 0 0 1 -1 0 0
+ADD pin-219 2780 black
+POS pin-219 6.55 -10 8 -1 0 0 0 1 0 0 0 -1
+ADD beam13-6 41239 yellow
+POS beam13-6 6.05 -10 2 0 1 0 1 0 0 0 0 -1
+CONNECT pin-212.pin2 -> beam7-12.hole4 STIFF
+CONNECT pin-213.pin2 -> beam7-12.hole7 STIFF
+CONNECT pin-214.pin2 -> beam7-12.hole1 STIFF
+CONNECT pin-217.pin2 -> beam3x5-30.hole6 STIFF
+CONNECT pin-218.pin2 -> beam3x5-30.hole7 STIFF
+CONNECT pin-219.pin1 -> beam3x5-30.hole1 STIFF
+CONNECT pin-219.pin2 -> beam13-6.hole1 STIFF
+CONNECT pin-189.pin3 -> beam13-6.hole5 STIFF
+CONNECT pin-189.pin4 -> beam13-6.hole7 STIFF
+CONNECT pin-193.pin1 -> beam13-6.hole2 STIFF
+CONNECT pin-205.pin3 -> beam13-6.hole13 STIFF
+CONNECT pin-218.pin3 -> beam3-5.hole2 STIFF
+CONNECT pin-216.pin2 -> pin-188.hole1 STIFF
+CONNECT pin-215.pin2 -> beam2-3.hole1 STIFF
+CONNECT pin-216.pin1 -> beam15-14.hole13 STIFF
+CONNECT pin-217.pin1 -> beam15-14.hole1 STIFF
+CONNECT pin-218.pin1 -> beam15-14.hole2 STIFF
+CONNECT pin-212.pin1 -> beam7-11.hole3 STIFF
+CONNECT pin-213.pin1 -> beam7-11.hole6 STIFF
+CONNECT pin-214.pin1 -> beam3-12.hole1 STIFF
+CONNECT pin-215.pin1 -> beam2x4-2.hole2 STIFF

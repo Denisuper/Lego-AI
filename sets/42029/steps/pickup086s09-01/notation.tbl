@@ -1,0 +1,8 @@
+ADD axle3-26 4519 lightbluishgrey
+POS axle3-26 0 0 0 1 0 0 0 1 0 0 0 1
+ADD conn-64 32034 black
+POS conn-64 2 0 0 0 0 1 0 1 0 -1 0 0
+ADD conn-65 32034 black
+POS conn-65 -2 0 0 0 0 1 0 1 0 -1 0 0
+CONNECT axle3-26.axle3 -> conn-64.axlehole1 LOCKED
+CONNECT axle3-26.axle1 -> conn-65.axlehole2 LOCKED

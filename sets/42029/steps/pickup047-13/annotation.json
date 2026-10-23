@@ -1,0 +1,50 @@
+{
+  "example_id": "42029-pickup047-step-13",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 13,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-113",
+        "part_number": "32054",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-113",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-1, z=11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-113's pin1 goes into beam13-4's hole4 (stiff)",
+      "pin-114's pin1 goes into beam13-4's hole10 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam13-4 holds pin-113",
+      "beam13-4 holds pin-114"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,62 @@
+{
+  "example_id": "42029-pickup-step-28",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 28,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "opening-1",
+        "part_number": "6641",
+        "count": 1
+      },
+      {
+        "name": "towball-1",
+        "part_number": "2736",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "opening-1",
+        "part_number": "6641",
+        "catalog_name": "Technic Changeover Catch - + opening",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-3.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "towball-1",
+        "part_number": "2736",
+        "catalog_name": "Technic Axle Towball",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3.35, z=-3.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "towball-1's axle1 goes into opening-1's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "towball-1 carries opening-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

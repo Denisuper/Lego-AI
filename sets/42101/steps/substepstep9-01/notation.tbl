@@ -1,0 +1,5 @@
+ADD beam2-2 60483 white
+POS beam2-2 0 0 0 0 0 1 0 1 0 -1 0 0
+ADD axle3-2 4519 yellow
+POS axle3-2 0 -1 0 0 0 1 1 0 0 0 1 0
+CONNECT axle3-2.axle3 -> beam2-2.axlehole1 LOCKED

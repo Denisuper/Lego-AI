@@ -1,0 +1,110 @@
+{
+  "example_id": "42116-step-03",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-3",
+        "part_number": "11214",
+        "count": 1
+      },
+      {
+        "name": "conn-1",
+        "part_number": "63869",
+        "count": 1
+      },
+      {
+        "name": "pin-4",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-5",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "pin-6",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-3",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-4.9, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-1",
+        "part_number": "63869",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Triple",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-4.9, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-4",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-6, z=-3.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-5",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6, z=-3.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-6",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-6, z=-3.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-4's pin1 goes into conn-1's hole1 (turns)",
+      "pin-5's pin1 goes into conn-1's hole2 (turns)",
+      "pin-6's pin1 goes into conn-1's hole3 (turns)",
+      "pin-3's pin1 goes into beam2x4-1's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "pin-4 spins on conn-1",
+      "pin-5 spins on conn-1",
+      "pin-6 spins on conn-1",
+      "beam2x4-1 holds pin-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

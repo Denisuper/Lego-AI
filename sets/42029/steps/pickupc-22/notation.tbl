@@ -1,0 +1,6 @@
+ATTACH pickupa
+CONNECT axle2-4.axle1 -> conn-40.axlehole2 LOCKED
+CONNECT pin-232.pin2 -> beam5x11-1.hole28 STIFF
+CONNECT pin-233.pin2 -> beam5x11-1.hole19 STIFF
+CONNECT pin-234.pin2 -> beam5x11-1.hole27 STIFF
+CONNECT pin-235.pin2 -> beam5x11-1.hole18 STIFF

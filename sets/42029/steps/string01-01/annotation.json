@@ -1,0 +1,198 @@
+{
+  "example_id": "42029-string01-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-84",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-85",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-86",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-87",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-88",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-89",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-90",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-91",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-92",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-93",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-94",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-95",
+        "part_number": "4-4cyli",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-84",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.55, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-85",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.85, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-86",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-87",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.15, y=0.05, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-88",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.3, y=0.05, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-89",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.45, y=0.05, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-90",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.6, y=0.1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-91",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.7, y=0.15, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-92",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.85, y=0.15, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-93",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0.2, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-94",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.15, y=0.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-95",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.3, y=0.3, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,78 @@
+{
+  "example_id": "42029-pickupb009-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "holes-1",
+        "part_number": "87761",
+        "count": 1
+      },
+      {
+        "name": "pin-158",
+        "part_number": "6628",
+        "count": 1
+      },
+      {
+        "name": "pin-159",
+        "part_number": "6628",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "holes-1",
+        "part_number": "87761",
+        "catalog_name": "Technic Gear Rack 1 x 7 with Axle and Pin Holes",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-158",
+        "part_number": "6628",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Towball",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-159",
+        "part_number": "6628",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Towball",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-0.5, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-158's pin1 goes into holes-1's hole1 (stiff)",
+      "pin-159's pin1 goes into holes-1's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "holes-1 holds pin-158",
+      "holes-1 holds pin-159"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

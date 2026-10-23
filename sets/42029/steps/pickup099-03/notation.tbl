@@ -1,0 +1,6 @@
+ADD pin-417 32054 red
+POS pin-417 -1 2 1 -1 0 0 0 -1 0 0 0 1
+ADD pin-418 32054 red
+POS pin-418 -1 2 -9 -1 0 0 0 -1 0 0 0 1
+CONNECT pin-417.pin1 -> panel-17.hole5 STIFF
+CONNECT pin-418.pin1 -> panel-18.hole14 STIFF

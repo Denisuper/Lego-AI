@@ -1,0 +1,10 @@
+ADD pin-138 3749 tan
+POS pin-138 0 -3 -0.5 0 0 1 0 1 0 -1 0 0
+ADD gear16-9 94925 lightbluishgrey
+POS gear16-9 0 -3 -1 -1 0 0 0 1 0 0 0 -1
+ADD bush-6 3713 red
+POS bush-6 0 -5 -2 -0.981 0.195 0 0.195 0.981 0 0 0 -1
+CONNECT axle4-4.axle2 -> bush-6.axlehole1 LOCKED
+CONNECT pin-138.axle1 -> pin-133.hole3 TURNS
+MESH gear16-8.teeth gear16-9.teeth
+RATIO gear16-8 gear16-9 16/16

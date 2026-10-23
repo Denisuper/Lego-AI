@@ -1,0 +1,8 @@
+ADD axle3-17 6587 darktan
+POS axle3-17 -3 -2 0 0 0.331 0.944 0 0.944 -0.331 -1 0 0
+ATTACH pickup065s09
+CONNECT axle3-17.axle1 -> beam3-13.axlehole2 LOCKED
+CONNECT axle3-17.axle1 -> chamfere-3.hole4 TURNS
+CONNECT axle3-17.axle3 -> chamfere-3.hole5 TURNS
+CONNECT axle3-17.axle2 -> beam-3.hole5 TURNS
+CONNECT axle3-17.axle3 -> beam7-9.hole1 TURNS

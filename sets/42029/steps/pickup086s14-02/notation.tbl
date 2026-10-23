@@ -1,0 +1,4 @@
+ADD ridges-2 32187 lightbluishgrey
+POS ridges-2 0 0 -0.75 0 -1 0 1 0 0 0 0 1
+CONNECT axle3-28.axle3 -> ridges-2.hole1 TURNS
+CONNECT stud-1.pin1 -> ridges-2.hole1 STIFF

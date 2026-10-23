@@ -1,0 +1,3 @@
+ADD pin-388 62462 lightbluishgrey
+POS pin-388 0 -1.5 1 0 0 1 1 0 0 0 1 0
+CONNECT pin-386.pin1 -> pin-388.hole1 STIFF

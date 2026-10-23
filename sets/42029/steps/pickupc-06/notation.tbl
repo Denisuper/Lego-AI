@@ -1,0 +1,6 @@
+ADD axle4-4 87083 darkbluishgrey
+POS axle4-4 0 -5 -1.5 0 0.195 -0.981 0 0.981 0.195 1 0 0
+ADD gear16-8 94925 lightbluishgrey
+POS gear16-8 0 -5 -1 -0.981 0.195 0 0.195 0.981 0 0 0 -1
+CONNECT axle4-4.axle3 -> gear16-8.axlehole1 LOCKED
+CONNECT axle4-4.axle4 -> pin-133.hole1 TURNS

@@ -1,0 +1,62 @@
+{
+  "example_id": "42116-step-02",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-1",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "beam2x4-1",
+        "part_number": "32140",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1.9, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2x4-1",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "White",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-1.9, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-1's axle1 goes into beam3x5-1's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-1 spins on pin-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

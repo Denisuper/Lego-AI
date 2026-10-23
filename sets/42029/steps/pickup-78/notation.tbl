@@ -1,0 +1,3 @@
+ATTACH pickup092
+CONNECT pin-339.pin1 -> panel-1.hole35 STIFF
+CONNECT pin-340.pin1 -> panel-1.hole9 STIFF

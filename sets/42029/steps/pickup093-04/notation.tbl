@@ -1,0 +1,12 @@
+ADD beam3x5-18 32526 red
+POS beam3x5-18 -6 -4 8 0 -1 0 0 0 1 -1 0 0
+ADD beam2-16 43857 red
+POS beam2-16 -6 0 4.5 0 -1 0 -1 0 0 0 0 -1
+ADD beam2-17 43857 red
+POS beam2-17 6 0 4.5 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-349.pin1 -> beam3x5-18.hole6 STIFF
+CONNECT pin-350.pin1 -> beam3x5-18.hole7 STIFF
+CONNECT pin-351.pin1 -> beam2-16.hole1 STIFF
+CONNECT pin-352.pin1 -> beam2-16.hole2 STIFF
+CONNECT pin-347.pin2 -> beam2-17.hole1 STIFF
+CONNECT pin-348.pin2 -> beam2-17.hole2 STIFF

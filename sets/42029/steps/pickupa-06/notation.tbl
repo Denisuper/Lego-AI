@@ -1,0 +1,16 @@
+ADD pin-178 32054 red
+POS pin-178 3 0 3 -1 0 0 0 1 0 0 0 -1
+ADD pin-179 32054 red
+POS pin-179 3 0 7 -1 0 0 0 1 0 0 0 -1
+ADD pin-180 32054 red
+POS pin-180 -3 0 3 1 0 0 0 1 0 0 0 1
+ADD pin-181 32054 red
+POS pin-181 -3 0 7 1 0 0 0 1 0 0 0 1
+CONNECT pin-178.pin2 -> beam5x11-2.hole18 STIFF
+CONNECT pin-179.pin2 -> beam5x11-2.hole10 STIFF
+CONNECT pin-180.pin2 -> beam5x11-2.hole19 STIFF
+CONNECT pin-181.pin2 -> beam5x11-2.hole11 STIFF
+CONNECT pin-179.pin1 -> conn-31.hole1 STIFF
+CONNECT pin-178.pin1 -> conn-33.hole1 STIFF
+CONNECT pin-180.pin1 -> conn-31.hole1 STIFF
+CONNECT pin-181.pin1 -> conn-33.hole1 STIFF

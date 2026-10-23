@@ -1,0 +1,5 @@
+ADD pin-38 11214 darkbluishgrey
+POS pin-38 0 0 -1 0 0 1 0 -1 0 1 0 0
+ADD pin-39 6558 blue
+POS pin-39 0 -1 -1 0 0 -1 0 -1 0 -1 0 0
+CONNECT pin-39.pin1 -> beam2x4-7.hole1 STIFF

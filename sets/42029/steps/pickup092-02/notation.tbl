@@ -1,0 +1,6 @@
+ADD pin-337 10197 darkbluishgrey
+POS pin-337 -4 0 0 0 -1 0 1 0 0 0 0 1
+ADD pin-338 10197 darkbluishgrey
+POS pin-338 4 0 0 0 0 1 1 0 0 0 1 0
+CONNECT pin-337.axle1 -> conn-70.axlehole1 LOCKED
+CONNECT pin-338.axle2 -> conn-71.axlehole2 LOCKED

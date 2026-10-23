@@ -1,0 +1,6 @@
+ADD conn-61 63869 lightbluishgrey
+POS conn-61 7 0 0 -1 0 0 0 -1 0 0 0 1
+ADD axle6-6 3706 black
+POS axle6-6 5.5 0 0 -1 0 0 0 -1 0 0 0 1
+CONNECT axle6-6.axle2 -> conn-61.axlehole1 LOCKED
+CONNECT axle6-6.axle1 -> beam9-7.axlehole1 LOCKED

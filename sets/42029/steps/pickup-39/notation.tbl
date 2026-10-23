@@ -1,0 +1,6 @@
+ADD pin-75 32054 red
+POS pin-75 -6 -8 2 1 0 0 0 0 -1 0 1 0
+ADD pin-76 32054 red
+POS pin-76 6 -8 2 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-76.pin1 -> pin-71.hole1 STIFF
+CONNECT pin-75.pin1 -> pin-72.hole3 STIFF

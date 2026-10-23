@@ -1,0 +1,11 @@
+ADD conn-33 32184 lightbluishgrey
+POS conn-33 0 0 -4 0 0 -1 0 1 0 1 0 0
+ADD pin-176 2780 black
+POS pin-176 2.9 1.65 -3.5 0 -0.222 -0.975 0 0.975 -0.222 1 0 0
+ADD pin-177 2780 black
+POS pin-177 2.9 1.65 -0.5 0 -0.222 -0.975 0 0.975 -0.222 1 0 0
+CONNECT axle5-11.axle1 -> conn-33.axlehole2 LOCKED
+CONNECT pin-177.pin1 -> beam6-1.hole3 STIFF
+CONNECT pin-177.pin1 -> beam6-2.hole3 STIFF
+CONNECT pin-176.pin2 -> beam6-3.hole3 STIFF
+CONNECT pin-176.pin2 -> beam6-4.hole3 STIFF

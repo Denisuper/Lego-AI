@@ -1,0 +1,68 @@
+{
+  "example_id": "42029-pickupb-step-06",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "conn-25",
+        "part_number": "32184",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-1, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-25",
+        "part_number": "32184",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-2, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle5-7's axle3 goes into conn-25's axlehole2 (locked)",
+      "axle5-6's axle3 goes into conn-25's axlehole1 (locked)",
+      "axle5-7's axle4 goes into beam3x5-8's hole6 (turns)",
+      "axle5-7's axle5 goes into beam3x3-7's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle5-7 carries conn-25",
+      "axle5-6 carries conn-25",
+      "beam3x5-8 spins on axle5-7",
+      "beam3x3-7 spins on axle5-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

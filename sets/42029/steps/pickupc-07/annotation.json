@@ -1,0 +1,78 @@
+{
+  "example_id": "42029-pickupc-step-07",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 7,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-138",
+        "part_number": "3749",
+        "count": 1
+      },
+      {
+        "name": "gear16-9",
+        "part_number": "94925",
+        "count": 1
+      },
+      {
+        "name": "bush-6",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-138",
+        "part_number": "3749",
+        "catalog_name": "Technic Axle Pin without Friction Ridges Lengthwise",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear16-9",
+        "part_number": "94925",
+        "catalog_name": "Technic Gear 16 Tooth Reinforced [New Style]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-3, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-6",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-5, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-4's axle2 goes into bush-6's axlehole1 (locked)",
+      "pin-138's axle1 goes into pin-133's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-4 carries bush-6",
+      "pin-133 spins on pin-138"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

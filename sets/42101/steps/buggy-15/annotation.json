@@ -1,0 +1,54 @@
+{
+  "example_id": "42101-buggy-step-15",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3-2",
+        "part_number": "6632",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3-2",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=1, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-14's pin1 goes into beam3-2's hole1 (stiff)",
+      "axle2-2's axle1 goes into beam3-2's axlehole1 (locked)",
+      "pin-14's pin1 goes into beam2x4-1's hole3 (stiff)",
+      "axle2-2's axle1 goes into beam2x4-1's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam3-2 holds pin-14",
+      "axle2-2 carries beam3-2",
+      "beam2x4-1 holds pin-14",
+      "beam2x4-1 spins on axle2-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

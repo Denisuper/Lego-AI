@@ -1,0 +1,68 @@
+{
+  "example_id": "42029-pickupa-step-16",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 16,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle6-2",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "conn-40",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle6-2",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-3.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-40",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-6.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle6-2's axle6 goes into conn-40's axlehole1 (locked)",
+      "axle6-2's axle1 goes into conn-30's axlehole1 (locked)",
+      "axle6-2's axle2 goes into conn-38's hole1 (turns)",
+      "axle6-2's axle5 goes into conn-39's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle6-2 carries conn-40",
+      "axle6-2 carries conn-30",
+      "conn-38 spins on axle6-2",
+      "conn-39 spins on axle6-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,5 @@
+ADD axle3-28 6587 darktan
+POS axle3-28 0 0 0 0 0 1 0 1 0 -1 0 0
+ADD stud-1 6141 transclear
+POS stud-1 0 0 -1.9 0 0 1 1 0 0 0 1 0
+CONNECT axle3-28.pin1 -> stud-1.hole1 STIFF

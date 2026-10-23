@@ -1,0 +1,4 @@
+ATTACH pickup057
+ATTACH pickup057
+CONNECT pin-123.pin3 -> pin-240.hole1 STIFF
+CONNECT pin-124.pin3 -> pin-240.hole1 STIFF

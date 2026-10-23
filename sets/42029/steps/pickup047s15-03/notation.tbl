@@ -1,0 +1,6 @@
+ADD beam2-3 60483 darkbluishgrey
+POS beam2-3 -2 0.75 0 0 -1 0 1 0 0 0 0 1
+ADD beam2-4 60483 darkbluishgrey
+POS beam2-4 2 0.75 0 0 -1 0 1 0 0 0 0 1
+CONNECT pin-117.axle2 -> beam2-3.axlehole1 LOCKED
+CONNECT pin-118.axle2 -> beam2-4.axlehole1 LOCKED

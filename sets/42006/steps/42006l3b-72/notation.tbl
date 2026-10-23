@@ -1,0 +1,49 @@
+ADD axle3-11 4519 lightbluishgrey
+POS axle3-11 0.05 -25.1 -31.65 0 0 -1 -0.924 0.383 0 0.383 0.924 0
+ADD conn-29 42003 yellow
+POS conn-29 0.05 -25.5 -32.6 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD conn-30 59443 darkbluishgrey
+POS conn-30 0.05 -23.7 -32.25 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD gear12-12 6589 tan
+POS gear12-12 0.05 -25.7 -31.4 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD axle8-3 3707 black
+POS axle8-3 0.05 -20 -33.75 0 0 -1 -0.924 0.383 0 0.383 0.924 0
+ADD conn-31 59443 darkbluishgrey
+POS conn-31 0.05 -16.3 -35.3 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD beam5-13 32017 yellow
+POS beam5-13 0.8 -23.95 -34.1 0 1 0 -0.301 0 -0.954 -0.954 0 0.301
+ADD axle4-13 3705 black
+POS axle4-13 0.05 -14.45 -36.05 0 0 -1 -0.924 0.383 0 0.383 0.924 0
+ADD gear12-13 6589 tan
+POS gear12-13 0.05 -13.4 -36.5 -1 0 0 0 0.383 0.924 0 0.924 -0.383
+ADD axle3-12 4519 lightbluishgrey
+POS axle3-12 0.05 -29.55 -31.95 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD part-16 6590 lightbluishgrey
+POS part-16 0.05 -29.55 -31.95 0 0 -1 -0.924 0.383 0 0.383 0.924 0
+ADD beam3-10 6632 yellow
+POS beam3-10 -0.7 -31.4 -31.2 0 1 0 0.383 0 0.924 0.924 0 -0.383
+ADD beam3-11 6632 yellow
+POS beam3-11 0.8 -31.4 -31.2 0 1 0 0.383 0 0.924 0.924 0 -0.383
+ADD beam-7 99773 yellow
+POS beam-7 1.3 -27.7 -32.75 0 -1 0 0.924 0 0.383 -0.383 0 0.924
+CONNECT axle3-11.axle2 -> conn-29.hole2 TURNS
+CONNECT axle5-7.axle3 -> conn-29.axlehole1 LOCKED
+CONNECT axle3-11.axle1 -> conn-30.axlehole2 LOCKED
+CONNECT axle8-3.axle8 -> conn-30.axlehole1 LOCKED
+CONNECT axle3-11.axle3 -> gear12-12.axlehole1 LOCKED
+CONNECT axle8-3.axle1 -> conn-31.axlehole2 LOCKED
+CONNECT axle4-13.axle4 -> conn-31.axlehole1 LOCKED
+CONNECT axle5-7.axle4 -> beam5-13.hole5 TURNS
+CONNECT pin-169.pin2 -> beam5-13.hole4 STIFF
+CONNECT pin-170.pin2 -> beam5-13.hole2 STIFF
+CONNECT pin-171.pin1 -> beam5-13.hole3 STIFF
+CONNECT pin-172.pin1 -> beam5-13.hole1 STIFF
+CONNECT axle4-13.axle1 -> gear12-13.axlehole1 LOCKED
+CONNECT axle3-12.axle1 -> beam3-10.axlehole2 LOCKED
+CONNECT axle3-12.axle3 -> beam3-11.axlehole2 LOCKED
+CONNECT axle3-12.axle3 -> beam-7.axlehole1 LOCKED
+CONNECT axle55-7.pin1 -> beam-7.hole4 STIFF
+CONNECT axle5-7.axle4 -> beam-7.axlehole2 LOCKED
+CONNECT axle3-12.axle1 -> beam-6.axlehole1 LOCKED
+CONNECT axle4-13.axle3 -> pin-168.hole1 TURNS
+CONNECT axle4-13.axle2 -> conn-28.hole1 TURNS

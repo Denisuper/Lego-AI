@@ -1,0 +1,11 @@
+ADD part-291 4-4cyli maincolour
+POS part-291 -0.5 0 0 0 1 0 8 0 0 0 0 -8
+ADD part-300 1-4cyls maincolour
+POS part-300 -0.45 0 0 0 8 0 8 0 0 0 0 8
+ADD part-301 1-4cyls maincolour
+POS part-301 -0.45 0 0 0 8 0 8 0 0 0 0 -8
+ADD part-302 1-4cyls maincolour
+POS part-302 -0.45 0 0 0 8 0 -8 0 0 0 0 8
+ADD part-303 1-4cyls maincolour
+POS part-303 -0.45 0 0 0 8 0 -8 0 0 0 0 -8
+ATTACH 15100s01dat

@@ -1,0 +1,34 @@
+{
+  "example_id": "42029-pickupa-step-15",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 15,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-206's pin1 goes into beam5x11-2's hole25 (stiff)",
+      "pin-207's pin1 goes into beam5x11-2's hole27 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam5x11-2 holds pin-206",
+      "beam5x11-2 holds pin-207"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

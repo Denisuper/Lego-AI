@@ -1,0 +1,6 @@
+ADD beam3-4 6632 black
+POS beam3-4 0.75 0 -2 0 1 0 -1 0 0 0 0 1
+ADD part-2 16646 red
+POS part-2 1.5 0 0 0 -1 0 1 0 0 0 0 1
+CONNECT axle4-2.axle2 -> beam3-4.axlehole2 LOCKED
+CONNECT axle2-3.axle2 -> beam3-4.axlehole1 LOCKED

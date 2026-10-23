@@ -1,0 +1,8 @@
+STEP 2
+ADD beam3x5-1 32526 black
+POS beam3x5-1 0 -1.9 1 0 -1 0 -1 0 0 0 0 -1
+ADD beam2x4-1 32140 white
+POS beam2x4-1 -1 -1.9 -3 0 -1 0 0 0 -1 1 0 0
+ATTACH 42924dat
+ATTACH 42924dat
+CONNECT pin-1.axle1 -> beam3x5-1.hole4 TURNS

@@ -1,0 +1,8 @@
+ADD pin-305 55615 lightbluishgrey
+POS pin-305 5 -4 10 -1 0 0 0 0 1 0 1 0
+ADD beam7-11 32524 darkbluishgrey
+POS beam7-11 5 -2 11 -1 0 0 0 0 1 0 1 0
+CONNECT pin-303.axle1 -> pin-305.hole3 TURNS
+CONNECT pin-304.pin3 -> pin-305.hole1 STIFF
+CONNECT pin-305.pin3 -> beam7-11.hole2 STIFF
+CONNECT pin-305.pin4 -> beam7-11.hole4 STIFF

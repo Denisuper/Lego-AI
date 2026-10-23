@@ -1,0 +1,5 @@
+ADD cylinder-2 4255 maincolour
+POS cylinder-2 0 0 0 1 0 0 0 1 0 0 0 1
+ADD rod-8 4254 black
+POS rod-8 0 5.05 0 1 0 0 0 1 0 0 0 1
+ATTACH shockfrontsp

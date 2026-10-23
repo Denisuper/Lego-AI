@@ -1,0 +1,48 @@
+{
+  "example_id": "42029-pickup006-step-05",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear20-1",
+        "part_number": "32198",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear20-1",
+        "part_number": "32198",
+        "catalog_name": "Technic Gear 20 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.85, y=0, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-2's axle2 goes into gear20-1's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-2 carries gear20-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

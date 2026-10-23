@@ -1,0 +1,8 @@
+ADD beam13-11 41239 red
+POS beam13-11 5 -1 5 0 -1 0 1 0 0 0 0 1
+ADD beam13-12 41239 red
+POS beam13-12 -5 -1 5 0 -1 0 1 0 0 0 0 1
+CONNECT pin-171.pin1 -> beam13-11.hole2 STIFF
+CONNECT pin-237.pin1 -> beam13-11.hole12 STIFF
+CONNECT pin-172.pin2 -> beam13-12.hole2 STIFF
+CONNECT pin-239.pin2 -> beam13-12.hole12 STIFF

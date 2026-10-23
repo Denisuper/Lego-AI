@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup094-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-14",
+        "part_number": "15458",
+        "count": 1
+      },
+      {
+        "name": "pin-384",
+        "part_number": "6558",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-14",
+        "part_number": "15458",
+        "catalog_name": "Technic Panel 3 x 11 x 1",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=3, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-384",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=3, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-384's pin1 goes into panel-14's hole2 (stiff)",
+      "pin-383's pin1 goes into panel-14's hole16 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-14 holds pin-384",
+      "panel-14 holds pin-383"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

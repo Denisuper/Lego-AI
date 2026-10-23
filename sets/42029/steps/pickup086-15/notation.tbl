@@ -1,0 +1,12 @@
+ADD pin-317 4274 lightbluishgrey
+POS pin-317 -8 -1 -0.5 0 0 -1 0 -1 0 -1 0 0
+ADD stud-2 6141 transorange
+POS stud-2 -8 -1 -0.9 0 0 -1 -1 0 0 0 1 0
+ADD pin-318 4274 lightbluishgrey
+POS pin-318 8 -1 -0.5 0 0 -1 0 -1 0 -1 0 0
+ADD stud-3 6141 transorange
+POS stud-3 8 -1 -0.9 0 0 -1 -1 0 0 0 1 0
+CONNECT pin-317.pin2 -> stud-2.hole1 TURNS
+CONNECT pin-318.pin2 -> stud-3.hole1 TURNS
+CONNECT pin-318.pin1 -> conn-61.hole1 TURNS
+CONNECT pin-317.pin1 -> conn-66.hole3 TURNS

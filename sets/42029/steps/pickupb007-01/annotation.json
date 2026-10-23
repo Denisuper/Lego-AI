@@ -1,0 +1,110 @@
+{
+  "example_id": "42029-pickupb007-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-10",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-150",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-151",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-152",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-153",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-10",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-150",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-151",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-152",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-2, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-153",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=0, z=-4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-150's pin1 goes into beam3x5-10's hole2 (stiff)",
+      "pin-151's pin1 goes into beam3x5-10's hole4 (stiff)",
+      "pin-152's pin1 goes into beam3x5-10's hole7 (stiff)",
+      "pin-153's pin1 goes into beam3x5-10's hole5 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-10 holds pin-150",
+      "beam3x5-10 holds pin-151",
+      "beam3x5-10 holds pin-152",
+      "beam3x5-10 holds pin-153"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

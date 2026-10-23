@@ -1,0 +1,6 @@
+ADD worm-1 4716 black
+POS worm-1 -1 0 -23 0 -1 0 1 0 0 0 0 1
+ADD bush-15 32123a yellow
+POS bush-15 -1 0 -24.25 0 -1 0 1 0 0 0 0 1
+CONNECT axle9-6.axle7 -> worm-1.axlehole1 LOCKED
+CONNECT axle9-6.axle8 -> bush-15.axlehole1 LOCKED

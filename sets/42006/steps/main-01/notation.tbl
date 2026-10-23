@@ -1,0 +1,6 @@
+STEP 1
+ATTACH 42006l3b
+MESH gear20-1.teeth gear12-2.teeth
+RATIO gear20-1 gear12-2 20/12
+MESH gear20-1.teeth gear12-3.teeth
+RATIO gear20-1 gear12-3 20/12

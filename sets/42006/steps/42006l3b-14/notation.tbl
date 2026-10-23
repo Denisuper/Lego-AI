@@ -1,0 +1,10 @@
+ADD beam9-7 40490 darkbluishgrey
+POS beam9-7 -6 1 -1 0 1 0 -1 0 0 0 0 1
+ADD beam9-8 40490 darkbluishgrey
+POS beam9-8 -6 1 -11 0 1 0 -1 0 0 0 0 1
+CONNECT axle4-2.axle1 -> beam9-7.hole9 TURNS
+CONNECT pin-34.pin2 -> beam9-7.hole1 STIFF
+CONNECT pin-35.pin2 -> beam9-7.hole4 STIFF
+CONNECT axle4-1.axle1 -> beam9-8.hole1 TURNS
+CONNECT pin-33.pin2 -> beam9-8.hole9 STIFF
+CONNECT pin-36.pin2 -> beam9-8.hole6 STIFF

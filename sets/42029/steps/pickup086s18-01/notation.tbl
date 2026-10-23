@@ -1,0 +1,8 @@
+ADD axle5-19 32073 lightbluishgrey
+POS axle5-19 0 0 0 1 0 0 0 1 0 0 0 1
+ADD panel-5 11947 red
+POS panel-5 2 0 0 0 0 1 0 1 0 -1 0 0
+ADD panel-6 11946 red
+POS panel-6 -2 0 0 0 0 -1 0 1 0 1 0 0
+CONNECT axle5-19.axle5 -> panel-5.axlehole1 LOCKED
+CONNECT axle5-19.axle1 -> panel-6.axlehole1 LOCKED

@@ -1,0 +1,4 @@
+ADD beam3-18 32523 red
+POS beam3-18 2 -4 9 0 1 0 -1 0 0 0 0 1
+CONNECT pin-314.pin1 -> beam3-18.hole3 STIFF
+CONNECT pin-315.pin2 -> beam3-18.hole1 STIFF

@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup-step-62",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 62,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "count": 1
+      },
+      {
+        "name": "bush-15",
+        "part_number": "32123a",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "worm-1",
+        "part_number": "4716",
+        "catalog_name": "Technic Worm Gear",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-23 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-15",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-24.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle9-6's axle7 goes into worm-1's axlehole1 (locked)",
+      "axle9-6's axle8 goes into bush-15's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle9-6 carries worm-1",
+      "axle9-6 carries bush-15"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

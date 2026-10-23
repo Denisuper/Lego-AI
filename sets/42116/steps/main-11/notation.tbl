@@ -1,0 +1,4 @@
+STEP 11
+ADD beam2-1 60483 black
+POS beam2-1 -1 -3.9 1 0 1 0 -1 0 0 0 0 1
+ATTACH 42924dat

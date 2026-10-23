@@ -1,0 +1,8 @@
+STEP 5
+ADD pin-8 18651 black
+POS pin-8 0 -1.9 2 1 0 0 0 0 -1 0 1 0
+ADD beam2x4-3 32140 white
+POS beam2x4-3 0 -1.9 2 0 1 0 0 0 -1 -1 0 0
+ATTACH 42924dat
+CONNECT pin-8.axle2 -> beam2x4-3.axlehole1 LOCKED
+CONNECT pin-8.axle1 -> beam11-1.hole4 TURNS

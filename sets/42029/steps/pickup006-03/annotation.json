@@ -1,0 +1,62 @@
+{
+  "example_id": "42029-pickup006-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-1",
+        "part_number": "32123a",
+        "count": 1
+      },
+      {
+        "name": "axle4-2",
+        "part_number": "87083",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-1",
+        "part_number": "32123a",
+        "catalog_name": "Technic Bush 1/2 Smooth with Axle Hole Reduced",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.75, y=0, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-2",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=0, z=-2.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-2's axle4 goes into bush-1's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-2 carries bush-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,106 @@
+ADD beam13-2 41239 lime
+POS beam13-2 0 0 0 0 -1 0 1 0 0 0 0 1
+ADD gear20-1 87407 lightbluishgrey
+POS gear20-1 0.5 0 -6 0 0 -1 1 0 0 0 -1 0
+ADD gear20-2 87407 lightbluishgrey
+POS gear20-2 0.5 0 6 0 0 -1 1 0 0 0 -1 0
+ADD gear20-3 87407 lightbluishgrey
+POS gear20-3 -0.5 0 6 0 0 1 1 0 0 0 1 0
+ADD gear20-4 87407 lightbluishgrey
+POS gear20-4 -0.5 0 -6 0 0 1 1 0 0 0 1 0
+ADD pin-32 32556 tan
+POS pin-32 0 0 -6 1 0 0 0 1 0 0 0 1
+ADD pin-33 32556 tan
+POS pin-33 0 0 6 1 0 0 0 1 0 0 0 1
+ADD edge-1 15379 black
+POS edge-1 0 1.2 -6.25 -1 0 0 0 -1 0 0 0 1
+ADD edge-2 15379 black
+POS edge-2 0 1.2 -5.45 -1 0 0 0 -1 0 0 0 1
+ADD edge-3 15379 black
+POS edge-3 0 1.2 -4.65 -1 0 0 0 -1 0 0 0 1
+ADD edge-4 15379 black
+POS edge-4 0 1.2 -3.85 -1 0 0 0 -1 0 0 0 1
+ADD edge-5 15379 black
+POS edge-5 0 1.2 -3.05 -1 0 0 0 -1 0 0 0 1
+ADD edge-6 15379 black
+POS edge-6 0 1.2 -2.25 -1 0 0 0 -1 0 0 0 1
+ADD edge-7 15379 black
+POS edge-7 0 1.2 -1.45 -1 0 0 0 -1 0 0 0 1
+ADD edge-8 15379 black
+POS edge-8 0 1.2 -0.65 -1 0 0 0 -1 0 0 0 1
+ADD edge-9 15379 black
+POS edge-9 0 1.2 0.15 -1 0 0 0 -1 0 0 0 1
+ADD edge-10 15379 black
+POS edge-10 0 1.2 0.95 -1 0 0 0 -1 0 0 0 1
+ADD edge-11 15379 black
+POS edge-11 0 1.2 1.75 -1 0 0 0 -1 0 0 0 1
+ADD edge-12 15379 black
+POS edge-12 0 1.2 2.55 -1 0 0 0 -1 0 0 0 1
+ADD edge-13 15379 black
+POS edge-13 0 1.2 3.35 -1 0 0 0 -1 0 0 0 1
+ADD edge-14 15379 black
+POS edge-14 0 1.2 4.15 -1 0 0 0 -1 0 0 0 1
+ADD edge-15 15379 black
+POS edge-15 0 1.2 4.95 -1 0 0 0 -1 0 0 0 1
+ADD edge-16 15379 black
+POS edge-16 0 1.2 5.75 -1 0 0 0 -1 0 0 0 1
+ADD edge-17 15379 black
+POS edge-17 0 1.2 6.55 -1 0 0 0 -0.669 -0.743 0 -0.743 0.669
+ADD edge-18 15379 black
+POS edge-18 0 0.6 7.1 -1 0 0 0 -0.25 -0.968 0 -0.968 0.25
+ADD edge-19 15379 black
+POS edge-19 0 -0.15 7.3 -1 0 0 0 0.485 -0.875 0 -0.875 -0.485
+ADD edge-20 15379 black
+POS edge-20 0 -0.85 6.9 -1 0 0 0 0.862 -0.508 0 -0.508 -0.862
+ADD edge-21 15379 black
+POS edge-21 0 -1.25 6.2 -1 0 0 0 0.956 -0.292 0 -0.292 -0.956
+ADD edge-22 15379 black
+POS edge-22 0 -1.5 5.45 -1 0 0 0 0.951 -0.309 0 -0.309 -0.951
+ADD edge-23 15379 black
+POS edge-23 0 -1.75 4.7 -1 0 0 0 0.948 -0.317 0 -0.317 -0.948
+ADD edge-24 15379 black
+POS edge-24 0 -2 3.9 -1 0 0 0 0.948 -0.317 0 -0.317 -0.948
+ADD edge-25 15379 black
+POS edge-25 0 -2.25 3.15 -1 0 0 0 0.951 -0.309 0 -0.309 -0.951
+ADD edge-26 15379 black
+POS edge-26 0 -2.5 2.4 -1 0 0 0 0.951 -0.309 0 -0.309 -0.951
+ADD edge-27 15379 black
+POS edge-27 0 -2.75 1.65 -1 0 0 0 0.946 -0.326 0 -0.326 -0.946
+ADD edge-28 15379 black
+POS edge-28 0 -3 0.9 -1 0 0 0 0.948 -0.317 0 -0.317 -0.948
+ADD edge-29 15379 black
+POS edge-29 0 -3.25 0.15 -1 0 0 0 0.948 -0.317 0 -0.317 -0.948
+ADD edge-30 15379 black
+POS edge-30 0 -3.55 -0.65 -1 0 0 0 0.948 -0.317 0 -0.317 -0.948
+ADD edge-31 15379 black
+POS edge-31 0 -3.8 -1.4 -1 0 0 0 0.974 -0.225 0 -0.225 -0.974
+ADD edge-32 15379 black
+POS edge-32 0 -3.95 -2.15 -1 0 0 0 0.834 0.552 0 0.552 -0.834
+ADD edge-33 15379 black
+POS edge-33 0 -3.5 -2.85 -1 0 0 0 0.834 0.552 0 0.552 -0.834
+ADD edge-34 15379 black
+POS edge-34 0 -3.1 -3.5 -1 0 0 0 0.834 0.552 0 0.552 -0.834
+ADD edge-35 15379 black
+POS edge-35 0 -2.65 -4.15 -1 0 0 0 0.834 0.552 0 0.552 -0.834
+ADD edge-36 15379 black
+POS edge-36 0 -2.2 -4.85 -1 0 0 0 0.834 0.552 0 0.552 -0.834
+ADD edge-37 15379 black
+POS edge-37 0 -1.75 -5.5 -1 0 0 0 0.843 0.537 0 0.537 -0.843
+ADD edge-38 15379 black
+POS edge-38 0 -1.3 -6.2 -1 0 0 0 0.843 0.537 0 0.537 -0.843
+ADD edge-39 15379 black
+POS edge-39 0 -0.9 -6.85 -1 0 0 0 0.53 0.848 0 0.848 -0.53
+ADD edge-40 15379 black
+POS edge-40 0 -0.2 -7.3 -1 0 0 0 -0.208 0.978 0 0.978 0.208
+ADD edge-41 15379 black
+POS edge-41 0 0.55 -7.1 -1 0 0 0 -0.688 0.725 0 0.725 0.688
+ATTACH sub07
+ATTACH sub06
+CONNECT pin-32.pin2 -> beam13-2.hole1 TURNS
+CONNECT pin-33.pin2 -> beam13-2.hole13 TURNS
+CONNECT pin-35.pin2 -> beam13-2.hole3 STIFF
+CONNECT axle2-3.axle1 -> beam13-2.hole9 TURNS
+CONNECT pin-32.pin3 -> gear20-1.hole1 TURNS
+CONNECT pin-33.pin3 -> gear20-2.hole1 TURNS
+CONNECT pin-33.pin1 -> gear20-3.hole1 TURNS
+CONNECT pin-32.pin1 -> gear20-4.hole1 TURNS

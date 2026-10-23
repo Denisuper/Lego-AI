@@ -1,0 +1,38 @@
+{
+  "example_id": "42029-pickup-step-75",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 75,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-321's pin3 goes into beam3x5-16's hole6 (stiff)",
+      "pin-322's pin3 goes into beam3x5-16's hole7 (stiff)",
+      "pin-328's pin3 goes into beam3x5-17's hole6 (stiff)",
+      "pin-329's pin3 goes into beam3x5-17's hole7 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-16 holds pin-321",
+      "beam3x5-16 holds pin-322",
+      "beam3x5-17 holds pin-328",
+      "beam3x5-17 holds pin-329"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

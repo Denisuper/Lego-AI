@@ -1,0 +1,1108 @@
+{
+  "example_id": "42116-48989s01dat-step-01",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-2",
+        "part_number": "connhole",
+        "count": 1
+      },
+      {
+        "name": "conn-3",
+        "part_number": "connhole",
+        "count": 1
+      },
+      {
+        "name": "conn-4",
+        "part_number": "connhole",
+        "count": 1
+      },
+      {
+        "name": "part-170",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-171",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-172",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-173",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-174",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-175",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-176",
+        "part_number": "2-4cylo",
+        "count": 1
+      },
+      {
+        "name": "part-177",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-178",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-179",
+        "part_number": "2-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-180",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-181",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-182",
+        "part_number": "2-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-183",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-184",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-185",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-186",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-187",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-188",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-189",
+        "part_number": "2-4cylo",
+        "count": 1
+      },
+      {
+        "name": "part-190",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-191",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-192",
+        "part_number": "2-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-193",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-194",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-195",
+        "part_number": "2-4chrd",
+        "count": 1
+      },
+      {
+        "name": "part-196",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-197",
+        "part_number": "4-4ndis",
+        "count": 1
+      },
+      {
+        "name": "part-198",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-199",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-200",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-201",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-202",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-203",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-204",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-205",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-206",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-207",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-208",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-209",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-210",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-211",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-212",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-213",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-214",
+        "part_number": "3-16cylo",
+        "count": 1
+      },
+      {
+        "name": "edges-9",
+        "part_number": "rect3",
+        "count": 1
+      },
+      {
+        "name": "part-215",
+        "part_number": "3-16cylo",
+        "count": 1
+      },
+      {
+        "name": "edges-10",
+        "part_number": "rect3",
+        "count": 1
+      },
+      {
+        "name": "edge-9",
+        "part_number": "rect1",
+        "count": 1
+      },
+      {
+        "name": "edge-10",
+        "part_number": "rect1",
+        "count": 1
+      },
+      {
+        "name": "edges-11",
+        "part_number": "box3u4a",
+        "count": 1
+      },
+      {
+        "name": "part-216",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-217",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-218",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-219",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-220",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-221",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-222",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-223",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-224",
+        "part_number": "2-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-225",
+        "part_number": "2-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-226",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-227",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-228",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-229",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-230",
+        "part_number": "1-8edge",
+        "count": 1
+      },
+      {
+        "name": "part-231",
+        "part_number": "1-8cyli",
+        "count": 1
+      },
+      {
+        "name": "part-232",
+        "part_number": "3-16cylo",
+        "count": 1
+      },
+      {
+        "name": "edges-12",
+        "part_number": "rect3",
+        "count": 1
+      },
+      {
+        "name": "part-233",
+        "part_number": "3-16cylo",
+        "count": 1
+      },
+      {
+        "name": "edges-13",
+        "part_number": "rect3",
+        "count": 1
+      },
+      {
+        "name": "edge-11",
+        "part_number": "rect1",
+        "count": 1
+      },
+      {
+        "name": "edge-12",
+        "part_number": "rect1",
+        "count": 1
+      },
+      {
+        "name": "edges-14",
+        "part_number": "box3u4a",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-2",
+        "part_number": "connhole",
+        "catalog_name": "Technic Connector Hole Long",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-3",
+        "part_number": "connhole",
+        "catalog_name": "Technic Connector Hole Long",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-4",
+        "part_number": "connhole",
+        "catalog_name": "Technic Connector Hole Long",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-170",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-171",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-172",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-173",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-174",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-175",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-176",
+        "part_number": "2-4cylo",
+        "catalog_name": "Cylinder Open 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-177",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-178",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-179",
+        "part_number": "2-4chrd",
+        "catalog_name": "Chord 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-180",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-181",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-182",
+        "part_number": "2-4chrd",
+        "catalog_name": "Chord 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-183",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-184",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-185",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-186",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-0.45 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-187",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-188",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-189",
+        "part_number": "2-4cylo",
+        "catalog_name": "Cylinder Open 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-190",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-191",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-192",
+        "part_number": "2-4chrd",
+        "catalog_name": "Chord 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-193",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-194",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-195",
+        "part_number": "2-4chrd",
+        "catalog_name": "Chord 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-196",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-197",
+        "part_number": "4-4ndis",
+        "catalog_name": "Disc Negative 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-198",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-199",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-200",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-201",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-202",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-203",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-204",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-205",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-206",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-207",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.5, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-208",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-209",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-210",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-211",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-212",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-213",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-214",
+        "part_number": "3-16cylo",
+        "catalog_name": "Cylinder Open 0.1875",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-9",
+        "part_number": "rect3",
+        "catalog_name": "Rectangle with 3 Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=-0.55, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-215",
+        "part_number": "3-16cylo",
+        "catalog_name": "Cylinder Open 0.1875",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-10",
+        "part_number": "rect3",
+        "catalog_name": "Rectangle with 3 Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.1, y=0.55, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edge-9",
+        "part_number": "rect1",
+        "catalog_name": "Rectangle with 1 Edge",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=0, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edge-10",
+        "part_number": "rect1",
+        "catalog_name": "Rectangle with 1 Edge",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.45, y=0, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-11",
+        "part_number": "box3u4a",
+        "catalog_name": "Box with 3 Faces without 4 Adjacent Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.35, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-216",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-217",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-218",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-219",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-220",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-221",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-222",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-223",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-224",
+        "part_number": "2-4cyli",
+        "catalog_name": "Cylinder 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-225",
+        "part_number": "2-4edge",
+        "catalog_name": "Circle 0.5",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-226",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-227",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-228",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-229",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-230",
+        "part_number": "1-8edge",
+        "catalog_name": "Circle 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-231",
+        "part_number": "1-8cyli",
+        "catalog_name": "Cylinder 0.125",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-232",
+        "part_number": "3-16cylo",
+        "catalog_name": "Cylinder Open 0.1875",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-12",
+        "part_number": "rect3",
+        "catalog_name": "Rectangle with 3 Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-0.55, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-233",
+        "part_number": "3-16cylo",
+        "catalog_name": "Cylinder Open 0.1875",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-13",
+        "part_number": "rect3",
+        "catalog_name": "Rectangle with 3 Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=0.55, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edge-11",
+        "part_number": "rect1",
+        "catalog_name": "Rectangle with 1 Edge",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edge-12",
+        "part_number": "rect1",
+        "catalog_name": "Rectangle with 1 Edge",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "edges-14",
+        "part_number": "box3u4a",
+        "catalog_name": "Box with 3 Faces without 4 Adjacent Edges",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.35, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

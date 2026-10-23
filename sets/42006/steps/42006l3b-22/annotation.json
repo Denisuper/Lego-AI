@@ -1,0 +1,54 @@
+{
+  "example_id": "42006-42006l3b-step-22",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 22,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5x11-1",
+        "part_number": "64178",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5x11-1",
+        "part_number": "64178",
+        "catalog_name": "Technic Beam 5 x 11 with 3 x 5 Opening Frame Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-57's pin3 goes into beam5x11-1's hole9 (stiff)",
+      "pin-58's pin3 goes into beam5x11-1's hole5 (stiff)",
+      "pin-59's pin3 goes into beam5x11-1's hole20 (stiff)",
+      "pin-60's pin3 goes into beam5x11-1's hole24 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam5x11-1 holds pin-57",
+      "beam5x11-1 holds pin-58",
+      "beam5x11-1 holds pin-59",
+      "beam5x11-1 holds pin-60"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

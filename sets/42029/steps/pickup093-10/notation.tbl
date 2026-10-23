@@ -1,0 +1,8 @@
+ADD pin-371 2780 black
+POS pin-371 3 0.5 8 0 -1 0 -1 0 0 0 0 -1
+ADD pin-372 2780 black
+POS pin-372 1 0.5 8 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-371.pin2 -> panel-12.hole10 STIFF
+CONNECT pin-371.pin2 -> panel-12.hole11 STIFF
+CONNECT pin-372.pin2 -> panel-12.hole16 STIFF
+CONNECT pin-372.pin2 -> panel-12.hole17 STIFF

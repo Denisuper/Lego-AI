@@ -1,0 +1,8 @@
+ADD beam2x4-9 32140 red
+POS beam2x4-9 0 -0.9 0.05 0 -1 0 -0.995 0 -0.099 0.099 0 -0.995
+ADD pin-93 6558 blue
+POS pin-93 0 -2.2 -2.85 1 0 0 0 -0.995 -0.099 0 0.099 -0.995
+ADD pin-94 6558 blue
+POS pin-94 0 -1 -0.95 1 0 0 0 -0.995 -0.099 0 0.099 -0.995
+CONNECT pin-93.pin2 -> beam2x4-9.hole4 STIFF
+CONNECT pin-94.pin2 -> beam2x4-9.hole1 STIFF

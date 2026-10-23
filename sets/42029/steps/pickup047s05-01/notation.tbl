@@ -1,0 +1,8 @@
+ADD axle3-6 4519 lightbluishgrey
+POS axle3-6 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-98 32054 red
+POS pin-98 2 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-99 32054 red
+POS pin-99 -2 0 0 -1 0 0 0 1 0 0 0 -1
+CONNECT axle3-6.axle3 -> pin-98.axlehole1 LOCKED
+CONNECT axle3-6.axle1 -> pin-99.axlehole1 LOCKED

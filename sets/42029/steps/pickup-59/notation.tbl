@@ -1,0 +1,10 @@
+ADD axle3-20 6587 darktan
+POS axle3-20 3 -3 -18 0 0 1 0 1 0 -1 0 0
+ADD axle3-21 6587 darktan
+POS axle3-21 -3 -3 -18 0 0 1 0 1 0 -1 0 0
+CONNECT axle3-20.axle3 -> beam3x3-14.hole2 TURNS
+CONNECT axle3-21.axle3 -> beam3x3-15.hole2 TURNS
+CONNECT axle3-20.axle1 -> conn-57.axlehole1 LOCKED
+CONNECT axle3-21.axle1 -> conn-57.axlehole1 LOCKED
+CONNECT axle3-21.axle2 -> cylinder-2.hole1 TURNS
+CONNECT axle3-20.axle2 -> cylinder-2.hole1 TURNS

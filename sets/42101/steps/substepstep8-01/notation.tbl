@@ -1,0 +1,8 @@
+ADD beam7-1 32348 black
+POS beam7-1 0 0 0 0 1 0 -1 0 0 0 0 1
+ADD axle3-1 4519 yellow
+POS axle3-1 1 0 0 1 0 0 0 1 0 0 0 1
+ADD axle5-2 32073 lightbluishgrey
+POS axle5-2 1 -2.4 4.8 1 0 0 0 0.8 0.6 0 -0.6 0.8
+CONNECT axle3-1.axle1 -> beam7-1.axlehole1 LOCKED
+CONNECT axle5-2.axle2 -> beam7-1.axlehole2 LOCKED

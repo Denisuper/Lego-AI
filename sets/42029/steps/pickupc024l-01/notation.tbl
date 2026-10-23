@@ -1,0 +1,7 @@
+ADD beam2x4-22 32140 black
+POS beam2x4-22 0 0 0 0 1 0 0 0 -1 -1 0 0
+ADD pin-236 11214 darkbluishgrey
+POS pin-236 -1 0 0 1 0 0 0 0 1 0 -1 0
+ADD pin-237 2780 black
+POS pin-237 0.5 -2 0 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-237.pin2 -> beam2x4-22.hole2 STIFF

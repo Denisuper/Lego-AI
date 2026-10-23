@@ -1,0 +1,2 @@
+ATTACH substepstep9
+CONNECT pin-4.pin1 -> beam7-1.hole1 STIFF

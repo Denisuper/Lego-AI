@@ -1,0 +1,72 @@
+{
+  "example_id": "42029-pickup093-step-02",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-10",
+        "part_number": "64782",
+        "count": 1
+      },
+      {
+        "name": "panel-11",
+        "part_number": "64782",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-10",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "panel-11",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-342's pin2 goes into panel-10's hole11 (stiff)",
+      "pin-342's pin2 goes into panel-10's hole12 (stiff)",
+      "pin-343's pin2 goes into panel-10's hole32 (stiff)",
+      "pin-343's pin2 goes into panel-10's hole33 (stiff)",
+      "pin-341's pin1 goes into panel-11's hole10 (stiff)",
+      "pin-341's pin1 goes into panel-11's hole11 (stiff)",
+      "pin-344's pin1 goes into panel-11's hole31 (stiff)",
+      "pin-344's pin1 goes into panel-11's hole32 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-10 holds pin-342",
+      "panel-10 holds pin-343",
+      "panel-11 holds pin-341",
+      "panel-11 holds pin-344"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

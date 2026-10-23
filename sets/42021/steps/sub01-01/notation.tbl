@@ -1,0 +1,14 @@
+ADD axle6-1 3706 black
+POS axle6-1 0 0 0 0 0 1 0 1 0 -1 0 0
+ADD conn-5 32039 lightbluishgrey
+POS conn-5 0 0 2.5 -1 0 0 0 1 0 0 0 -1
+ADD conn-6 32184 black
+POS conn-6 0 -1 1.5 0 0 1 0 1 0 -1 0 0
+ADD beam2-2 60483 darkbluishgrey
+POS beam2-2 0 0 0.5 1 0 0 0 0 -1 0 1 0
+ADD pin-8 2780 black
+POS pin-8 0 -1 0 0 1 0 0 0 -1 -1 0 0
+CONNECT axle6-1.axle1 -> conn-5.axlehole2 LOCKED
+CONNECT axle6-1.axle2 -> conn-6.axlehole2 LOCKED
+CONNECT axle6-1.axle3 -> beam2-2.axlehole1 LOCKED
+CONNECT pin-8.pin1 -> beam2-2.hole1 STIFF

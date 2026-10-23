@@ -1,0 +1,16 @@
+ADD beam11-5 32525 black
+POS beam11-5 -5 0 0 0 0 1 -1 0 0 0 -1 0
+ADD beam11-6 32525 black
+POS beam11-6 -5 0 4 0 0 1 -1 0 0 0 -1 0
+ADD pin-24 32054 black
+POS pin-24 -1 0 1 0 0 1 0 1 0 -1 0 0
+ADD pin-25 2780 black
+POS pin-25 -6 0 -0.5 0 0 1 0 1 0 -1 0 0
+ADD pin-26 2780 black
+POS pin-26 -6 0 4.5 0 0 1 0 1 0 -1 0 0
+ADD pin-27 11214 darkbluishgrey
+POS pin-27 -1 0 3 0 0 1 0 1 0 -1 0 0
+CONNECT pin-24.pin2 -> beam11-5.hole10 STIFF
+CONNECT pin-25.pin1 -> beam11-5.hole5 STIFF
+CONNECT pin-26.pin2 -> beam11-6.hole5 STIFF
+CONNECT pin-27.axle1 -> beam11-6.hole10 TURNS

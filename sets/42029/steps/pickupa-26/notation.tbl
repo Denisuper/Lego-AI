@@ -1,0 +1,15 @@
+ADD pin-232 32054 red
+POS pin-232 -3 0 -8 1 0 0 0 0 -1 0 1 0
+ADD pin-233 32054 red
+POS pin-233 -3 0 -11 1 0 0 0 0 -1 0 1 0
+ADD pin-234 32054 red
+POS pin-234 3 0 -8 -1 0 0 0 0 -1 0 -1 0
+ADD pin-235 32054 red
+POS pin-235 3 0 -11 -1 0 0 0 0 -1 0 -1 0
+ATTACH pickupa028
+CONNECT pin-230.pin1 -> beam3x5-12.hole3 STIFF
+CONNECT pin-231.pin1 -> beam3x5-12.hole2 STIFF
+CONNECT pin-234.pin1 -> beam13-9.hole4 STIFF
+CONNECT pin-235.pin1 -> beam13-9.hole1 STIFF
+CONNECT pin-232.pin1 -> beam13-10.hole4 STIFF
+CONNECT pin-233.pin1 -> beam13-10.hole1 STIFF

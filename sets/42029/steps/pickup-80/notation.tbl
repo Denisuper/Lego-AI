@@ -1,0 +1,5 @@
+ATTACH pickup094
+CONNECT pin-226.pin3 -> panel-14.hole12 STIFF
+CONNECT pin-227.pin3 -> panel-14.hole5 STIFF
+CONNECT pin-375.pin3 -> panel-14.hole10 STIFF
+CONNECT pin-376.pin3 -> panel-14.hole7 STIFF

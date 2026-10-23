@@ -1,0 +1,68 @@
+{
+  "example_id": "42029-pickupc-step-24",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 24,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam13-11",
+        "part_number": "41239",
+        "count": 1
+      },
+      {
+        "name": "beam13-12",
+        "part_number": "41239",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam13-11",
+        "part_number": "41239",
+        "catalog_name": "Technic Beam 1 x 13 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam13-12",
+        "part_number": "41239",
+        "catalog_name": "Technic Beam 1 x 13 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-5, y=-1, z=5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-171's pin1 goes into beam13-11's hole2 (stiff)",
+      "pin-237's pin1 goes into beam13-11's hole12 (stiff)",
+      "pin-172's pin2 goes into beam13-12's hole2 (stiff)",
+      "pin-239's pin2 goes into beam13-12's hole12 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam13-11 holds pin-171",
+      "beam13-11 holds pin-237",
+      "beam13-12 holds pin-172",
+      "beam13-12 holds pin-239"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

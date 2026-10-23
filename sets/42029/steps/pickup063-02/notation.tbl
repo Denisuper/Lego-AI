@@ -1,0 +1,4 @@
+ADD conn-56 42003 red
+POS conn-56 0 0 -1 0 -1 0 -1 0 0 0 0 -1
+CONNECT pin-274.pin1 -> conn-56.hole1 STIFF
+CONNECT pin-275.pin1 -> conn-56.hole2 STIFF

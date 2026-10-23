@@ -1,0 +1,82 @@
+{
+  "example_id": "42006-42006l3b-step-62",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 62,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-17",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "pin-146",
+        "part_number": "87082",
+        "count": 1
+      },
+      {
+        "name": "pin-147",
+        "part_number": "87082",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-17",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.95, y=-23.1, z=-21.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-146",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Big Squared Pin Holes]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-26.2, z=-29.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-147",
+        "part_number": "87082",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Big Squared Pin Holes]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-21.2, z=-17.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-144's pin1 goes into beam3x5-17's hole1 (stiff)",
+      "pin-145's pin1 goes into beam3x5-17's hole5 (stiff)",
+      "pin-146's pin1 goes into beam15-8's hole15 (stiff)",
+      "pin-147's pin1 goes into beam15-8's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-17 holds pin-144",
+      "beam3x5-17 holds pin-145",
+      "beam15-8 holds pin-146",
+      "beam15-8 holds pin-147"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,18 @@
+ADD conn-42 6536 black
+POS conn-42 3 -5 3 0 0 1 0 1 0 -1 0 0
+ADD conn-43 6536 black
+POS conn-43 -3 -5 3 0 0 1 0 1 0 -1 0 0
+ADD axle5-12 32073 lightbluishgrey
+POS axle5-12 -3 -5 5 0 0 1 0 1 0 -1 0 0
+ADD axle5-13 32073 lightbluishgrey
+POS axle5-13 3 -5 5 0 0 1 0 1 0 -1 0 0
+CONNECT axle5-13.axle5 -> conn-42.axlehole1 LOCKED
+CONNECT pin-212.pin1 -> conn-42.hole1 STIFF
+CONNECT axle5-12.axle5 -> conn-43.axlehole1 LOCKED
+CONNECT pin-212.pin1 -> conn-43.hole1 STIFF
+CONNECT axle5-13.axle3 -> cylinder-1.hole1 TURNS
+CONNECT axle5-12.axle3 -> cylinder-1.hole1 TURNS
+CONNECT axle5-12.axle2 -> beam2x4-16.hole3 TURNS
+CONNECT axle5-12.axle4 -> beam2x4-17.hole3 TURNS
+CONNECT axle5-13.axle4 -> beam2x4-16.hole3 TURNS
+CONNECT axle5-13.axle2 -> beam2x4-17.hole3 TURNS

@@ -1,0 +1,8 @@
+ADD pin-111 11214 darkbluishgrey
+POS pin-111 6 0 10 1 0 0 0 -0.8 0.6 0 -0.6 -0.8
+ADD pin-112 11214 darkbluishgrey
+POS pin-112 -6 0 10 -1 0 0 0 0.8 0.6 0 0.6 -0.8
+CONNECT pin-111.axle1 -> beam3-6.hole1 TURNS
+CONNECT pin-112.axle1 -> beam3-7.hole1 TURNS
+CONNECT pin-111.pin1 -> pin-107.hole3 STIFF
+CONNECT pin-112.pin1 -> pin-108.hole1 STIFF

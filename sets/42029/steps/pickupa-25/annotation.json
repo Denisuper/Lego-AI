@@ -1,0 +1,68 @@
+{
+  "example_id": "42029-pickupa-step-25",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 25,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-44",
+        "part_number": "6536",
+        "count": 1
+      },
+      {
+        "name": "conn-45",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-44",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-45",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=-5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-213's pin1 goes into conn-44's hole1 (stiff)",
+      "axle5-12's axle1 goes into conn-44's axlehole1 (locked)",
+      "pin-213's pin1 goes into conn-45's hole1 (stiff)",
+      "axle5-13's axle1 goes into conn-45's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "conn-44 holds pin-213",
+      "axle5-12 carries conn-44",
+      "conn-45 holds pin-213",
+      "axle5-13 carries conn-45"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

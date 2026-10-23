@@ -1,0 +1,18 @@
+ADD axle7-2 44294 lightbluishgrey
+POS axle7-2 0.05 -12.35 -10.8 -1 0 0 0 0.529 -0.848 0 -0.848 -0.529
+ADD beam3x5-13 32250 yellow
+POS beam3x5-13 -2.7 -12.35 -10.8 0 -1 0 -0.529 0 -0.848 0.848 0 -0.529
+ADD pin-132 6558 blue
+POS pin-132 -1.95 -13.2 -11.35 1 0 0 0 0.529 0.848 0 -0.848 0.529
+ADD pin-133 43093 blue
+POS pin-133 -2.45 -15.75 -12.95 -1 0 0 0 0.529 -0.848 0 -0.848 -0.529
+ADD beam5-5 32017 yellow
+POS beam5-5 -3.2 -14.05 -11.85 0 -1 0 -0.529 0 -0.848 0.848 0 -0.529
+ADD cranksha-1 2853 yellow
+POS cranksha-1 -2.45 -13.15 -9.55 0 0 1 0.529 0.848 0 -0.848 0.529 0
+CONNECT axle7-2.axle7 -> beam3x5-13.axlehole1 LOCKED
+CONNECT pin-132.pin1 -> beam3x5-13.hole2 STIFF
+CONNECT cranksha-1.axle1 -> beam3x5-13.axlehole2 LOCKED
+CONNECT axle7-2.axle7 -> beam5-5.hole1 TURNS
+CONNECT pin-132.pin1 -> beam5-5.hole2 STIFF
+CONNECT pin-133.pin1 -> beam5-5.hole5 STIFF

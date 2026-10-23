@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickup047s15-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam2-3",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "beam2-4",
+        "part_number": "60483",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam2-3",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0.75, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-4",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0.75, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-117's axle2 goes into beam2-3's axlehole1 (locked)",
+      "pin-118's axle2 goes into beam2-4's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "pin-117 carries beam2-3",
+      "pin-118 carries beam2-4"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

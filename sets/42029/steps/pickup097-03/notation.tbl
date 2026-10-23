@@ -1,0 +1,10 @@
+ADD pin-394 2780 black
+POS pin-394 0 -0.5 7 0 0 -1 -1 0 0 0 1 0
+ADD pin-395 2780 black
+POS pin-395 0 -0.5 4 0 0 -1 -1 0 0 0 1 0
+ADD beam2-18 43857 red
+POS beam2-18 -3.5 -2 0 0 0 -1 0 -1 0 -1 0 0
+CONNECT pin-392.pin3 -> beam2-18.hole1 STIFF
+CONNECT pin-393.pin2 -> beam2-18.hole2 STIFF
+CONNECT pin-394.pin1 -> beam11-9.hole1 STIFF
+CONNECT pin-395.pin1 -> beam11-9.hole4 STIFF

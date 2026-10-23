@@ -1,0 +1,5 @@
+ADD pin-267 48989 lightbluishgrey
+POS pin-267 0 0 0 1 0 0 0 1 0 0 0 1
+ADD pin-268 6558 blue
+POS pin-268 0 0 -1 0 0 1 0 1 0 -1 0 0
+CONNECT pin-268.pin1 -> pin-267.hole2 STIFF

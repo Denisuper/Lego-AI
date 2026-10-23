@@ -1,0 +1,78 @@
+{
+  "example_id": "42029-pickup012-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle7-1",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "conn-5",
+        "part_number": "6538b",
+        "count": 1
+      },
+      {
+        "name": "axle4-3",
+        "part_number": "3705",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-1",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-5",
+        "part_number": "6538b",
+        "catalog_name": "Technic Axle Connector Ridged [with x Hole x Orientation]",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-3.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-3",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-1's axle7 goes into conn-5's axlehole1 (locked)",
+      "axle4-3's axle4 goes into conn-5's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-1 carries conn-5",
+      "axle4-3 carries conn-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

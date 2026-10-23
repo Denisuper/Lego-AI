@@ -1,0 +1,5 @@
+ADD pin-259 32333 lightbluishgrey
+POS pin-259 0 0 1 1 0 0 0 1 0 0 0 1
+CONNECT axle6-5.axle5 -> pin-259.hole7 TURNS
+CONNECT pin-257.pin1 -> pin-259.hole12 STIFF
+CONNECT pin-258.pin1 -> pin-259.hole1 STIFF

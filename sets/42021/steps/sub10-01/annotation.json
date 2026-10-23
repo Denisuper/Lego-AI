@@ -1,0 +1,142 @@
+{
+  "example_id": "42021-sub10-step-01",
+  "set": "LEGO Technic 42021",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-9",
+        "part_number": "57585",
+        "count": 1
+      },
+      {
+        "name": "axle2-5",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "bush-2",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "conn-10",
+        "part_number": "32016",
+        "count": 1
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "bush-3",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "conn-11",
+        "part_number": "32016",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-9",
+        "part_number": "57585",
+        "catalog_name": "Technic Axle Connector Hub with 3 Axles at 120\u00b0",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-5",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.2, y=-1.2, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-2",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3.7, y=-1.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-10",
+        "part_number": "32016",
+        "catalog_name": "Technic Axle and Pin Connector Angled #3 - 157.5\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.75, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-6",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.2, y=-1.2, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "bush-3",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3.7, y=-1.25, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-11",
+        "part_number": "32016",
+        "catalog_name": "Technic Axle and Pin Connector Angled #3 - 157.5\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.75, y=-1, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-5's axle1 goes into bush-2's axlehole1 (locked)",
+      "conn-9's axle1 goes into conn-10's axlehole1 (locked)",
+      "axle2-5's axle2 goes into conn-10's axlehole2 (locked)",
+      "axle2-6's axle1 goes into bush-3's axlehole1 (locked)",
+      "conn-9's axle3 goes into conn-11's axlehole1 (locked)",
+      "axle2-6's axle2 goes into conn-11's axlehole2 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-5 carries bush-2",
+      "conn-9 carries conn-10",
+      "axle2-5 carries conn-10",
+      "axle2-6 carries bush-3",
+      "conn-9 carries conn-11",
+      "axle2-6 carries conn-11"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

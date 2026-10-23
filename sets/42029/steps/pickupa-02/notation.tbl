@@ -1,0 +1,6 @@
+ADD beam5x11-2 64178 lightbluishgrey
+POS beam5x11-2 0 0 5 -1 0 0 0 1 0 0 0 -1
+ADD gear20-2 32269 tan
+POS gear20-2 0 0 3 -0.988 -0.156 0 -0.156 0.988 0 0 0 -1
+CONNECT axle3-7.axle2 -> beam5x11-2.hole22 TURNS
+CONNECT axle3-7.axle1 -> gear20-2.axlehole1 LOCKED

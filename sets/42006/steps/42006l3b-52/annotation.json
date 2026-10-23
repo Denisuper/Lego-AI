@@ -1,0 +1,154 @@
+{
+  "example_id": "42006-42006l3b-step-52",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 52,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-124",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-125",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam11-6",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "pin-126",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "pin-127",
+        "part_number": "32054",
+        "count": 1
+      },
+      {
+        "name": "gear24-1",
+        "part_number": "48452",
+        "count": 1
+      },
+      {
+        "name": "gear56-1",
+        "part_number": "48168",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-124",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=5.05, y=-5.5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-125",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-4, y=-5.5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam11-6",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-5, z=7 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-126",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-4, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-127",
+        "part_number": "32054",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-4, z=-9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear24-1",
+        "part_number": "48452",
+        "catalog_name": "Technic Turntable Large Type 2 Base, 24 Tooth",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-4, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear56-1",
+        "part_number": "48168",
+        "catalog_name": "Technic Turntable Large Type 2 Top, 56 Tooth",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-4, z=-6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-124's pin2 goes into beam11-6's hole1 (stiff)",
+      "pin-125's pin2 goes into beam11-6's hole10 (stiff)",
+      "pin-126's pin2 goes into gear24-1's hole5 (stiff)",
+      "pin-127's pin2 goes into gear24-1's hole1 (stiff)",
+      "pin-19's pin3 goes into gear56-1's hole2 (stiff)",
+      "pin-20's pin3 goes into gear56-1's hole7 (stiff)",
+      "pin-21's pin2 goes into gear56-1's hole1 (stiff)",
+      "pin-22's pin2 goes into gear56-1's hole6 (stiff)",
+      "pin-126's pin1 goes into beam-5's hole4 (stiff)",
+      "pin-127's pin1 goes into beam-5's hole2 (stiff)",
+      "pin-125's pin1 goes into pin-82's hole1 (stiff)",
+      "pin-124's pin1 goes into pin-97's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam11-6 holds pin-124",
+      "beam11-6 holds pin-125",
+      "gear24-1 holds pin-126",
+      "gear24-1 holds pin-127",
+      "gear56-1 holds pin-19",
+      "gear56-1 holds pin-20",
+      "gear56-1 holds pin-21",
+      "gear56-1 holds pin-22",
+      "beam-5 holds pin-126",
+      "beam-5 holds pin-127",
+      "pin-82 holds pin-125",
+      "pin-97 holds pin-124"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,102 @@
+ADD pin-41 32054 lightbluishgrey
+POS pin-41 5 0 1 0 0 1 0 1 0 -1 0 0
+ADD beam-3 11455 black
+POS beam-3 5 1 -2 0 1 0 -1 0 0 0 0 1
+ADD beam9-9 40490 darkbluishgrey
+POS beam9-9 7 1 -6 0 -1 0 -1 0 0 0 0 -1
+ADD pin-42 2780 black
+POS pin-42 7.5 1 -3 -1 0 0 0 1 0 0 0 -1
+ADD pin-43 2780 black
+POS pin-43 6.5 1 -7 -1 0 0 0 1 0 0 0 -1
+ADD pin-44 6558 blue
+POS pin-44 6 1 -10 -1 0 0 0 1 0 0 0 -1
+ADD pin-45 6558 blue
+POS pin-45 6 1 -2 -1 0 0 0 1 0 0 0 -1
+ADD beam9-10 40490 darkbluishgrey
+POS beam9-10 6 1 -1 0 -1 0 -1 0 0 0 0 -1
+ADD pin-46 2780 black
+POS pin-46 6.5 1 -5 -1 0 0 0 1 0 0 0 -1
+ADD pin-47 2780 black
+POS pin-47 5.5 1 1 -1 0 0 0 1 0 0 0 -1
+ADD pin-48 2780 black
+POS pin-48 8.5 1 -5 -1 0 0 0 1 0 0 0 -1
+ADD pin-49 2780 black
+POS pin-49 7.5 1 -9 -1 0 0 0 1 0 0 0 -1
+ADD pin-50 2780 black
+POS pin-50 8.5 1 -7 -1 0 0 0 1 0 0 0 -1
+ADD pin-51 2780 black
+POS pin-51 8.5 1 -10 -1 0 0 0 1 0 0 0 -1
+ADD pin-52 2780 black
+POS pin-52 8.5 1 -2 -1 0 0 0 1 0 0 0 -1
+ADD beam9-11 40490 darkbluishgrey
+POS beam9-11 8 1 -6 0 -1 0 -1 0 0 0 0 -1
+ADD beam9-12 40490 darkbluishgrey
+POS beam9-12 6 1 -11 0 -1 0 -1 0 0 0 0 -1
+ADD pin-53 2780 black
+POS pin-53 5.5 1 -13 -1 0 0 0 1 0 0 0 -1
+ADD beam-4 11455 black
+POS beam-4 5 1 -10 0 -1 0 -1 0 0 0 0 -1
+ADD axle4-3 87083 darkbluishgrey
+POS axle4-3 7.5 1 3 1 0 0 0 1 0 0 0 1
+ADD bush-5 32123a lightbluishgrey
+POS bush-5 8.25 1 3 0 0 -1 0 1 0 1 0 0
+ADD gear10-3 57519 black
+POS gear10-3 7.5 1 3 0 0 -1 0 1 0 1 0 0
+ADD bush-6 32123a lightbluishgrey
+POS bush-6 6.7 1 3 0 0 -1 0 1 0 1 0 0
+ADD beam9-13 40490 darkbluishgrey
+POS beam9-13 9 1 -1 0 -1 0 -1 0 0 0 0 -1
+ADD beam9-14 40490 darkbluishgrey
+POS beam9-14 9 1 -11 0 -1 0 -1 0 0 0 0 -1
+ADD axle4-4 87083 darkbluishgrey
+POS axle4-4 7.5 1 -15 1 0 0 0 1 0 0 0 1
+ADD bush-7 32123a lightbluishgrey
+POS bush-7 8.25 1 -15 0 0 -1 0 1 0 1 0 0
+ADD gear10-4 57519 black
+POS gear10-4 7.5 1 -15 0 0 -1 0 1 0 1 0 0
+ADD bush-8 32123a lightbluishgrey
+POS bush-8 6.7 1 -15 0 0 -1 0 1 0 1 0 0
+ADD pin-54 32054 lightbluishgrey
+POS pin-54 5 0 -13 0 0 -1 0 1 0 1 0 0
+CONNECT pin-41.pin1 -> beam-3.hole3 STIFF
+CONNECT pin-45.pin3 -> beam-3.hole1 STIFF
+CONNECT pin-47.pin2 -> beam-3.hole2 STIFF
+CONNECT pin-42.pin2 -> beam9-9.hole2 STIFF
+CONNECT pin-43.pin1 -> beam9-9.hole6 STIFF
+CONNECT pin-44.pin1 -> beam9-9.hole9 STIFF
+CONNECT pin-45.pin1 -> beam9-9.hole1 STIFF
+CONNECT pin-46.pin1 -> beam9-9.hole4 STIFF
+CONNECT pin-49.pin2 -> beam9-9.hole8 STIFF
+CONNECT pin-45.pin2 -> beam9-10.hole6 STIFF
+CONNECT pin-46.pin2 -> beam9-10.hole9 STIFF
+CONNECT pin-47.pin1 -> beam9-10.hole3 STIFF
+CONNECT axle4-3.axle1 -> beam9-10.hole1 TURNS
+CONNECT pin-42.pin1 -> beam9-11.hole2 STIFF
+CONNECT pin-48.pin2 -> beam9-11.hole4 STIFF
+CONNECT pin-49.pin1 -> beam9-11.hole8 STIFF
+CONNECT pin-50.pin2 -> beam9-11.hole6 STIFF
+CONNECT pin-51.pin2 -> beam9-11.hole9 STIFF
+CONNECT pin-52.pin2 -> beam9-11.hole1 STIFF
+CONNECT pin-43.pin2 -> beam9-12.hole1 STIFF
+CONNECT pin-44.pin2 -> beam9-12.hole4 STIFF
+CONNECT pin-53.pin1 -> beam9-12.hole7 STIFF
+CONNECT axle4-4.axle1 -> beam9-12.hole9 TURNS
+CONNECT pin-44.pin3 -> beam-4.hole1 STIFF
+CONNECT pin-53.pin2 -> beam-4.hole2 STIFF
+CONNECT pin-54.pin1 -> beam-4.hole3 STIFF
+CONNECT axle4-3.axle3 -> bush-5.axlehole1 LOCKED
+CONNECT axle4-3.axle2 -> gear10-3.axlehole1 LOCKED
+CONNECT axle4-3.axle2 -> bush-6.axlehole1 LOCKED
+CONNECT pin-48.pin1 -> beam9-13.hole9 STIFF
+CONNECT pin-52.pin1 -> beam9-13.hole6 STIFF
+CONNECT axle4-3.axle4 -> beam9-13.hole1 TURNS
+CONNECT axle2-3.axle1 -> beam9-13.hole4 TURNS
+CONNECT pin-50.pin1 -> beam9-14.hole1 STIFF
+CONNECT pin-51.pin1 -> beam9-14.hole4 STIFF
+CONNECT axle4-4.axle4 -> beam9-14.hole9 TURNS
+CONNECT axle2-2.axle1 -> beam9-14.hole6 TURNS
+CONNECT axle4-4.axle3 -> bush-7.axlehole1 LOCKED
+CONNECT axle4-4.axle2 -> gear10-4.axlehole1 LOCKED
+CONNECT axle4-4.axle2 -> bush-8.axlehole1 LOCKED
+CONNECT pin-41.pin2 -> beam15-1.hole3 STIFF
+CONNECT pin-54.pin2 -> beam15-2.hole13 STIFF

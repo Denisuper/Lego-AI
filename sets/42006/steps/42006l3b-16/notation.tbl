@@ -1,0 +1,16 @@
+ADD beam-1 11455 black
+POS beam-1 -5 1 -2 0 1 0 -1 0 0 0 0 1
+ADD beam-2 11455 black
+POS beam-2 -5 1 -10 0 -1 0 -1 0 0 0 0 -1
+ADD pin-39 32054 lightbluishgrey
+POS pin-39 -5 0 1 0 0 1 0 1 0 -1 0 0
+ADD pin-40 32054 lightbluishgrey
+POS pin-40 -5 0 -13 0 0 -1 0 1 0 1 0 0
+CONNECT pin-39.pin1 -> beam-1.hole3 STIFF
+CONNECT pin-35.pin3 -> beam-1.hole1 STIFF
+CONNECT pin-38.pin2 -> beam-1.hole2 STIFF
+CONNECT pin-40.pin1 -> beam-2.hole3 STIFF
+CONNECT pin-36.pin3 -> beam-2.hole1 STIFF
+CONNECT pin-37.pin2 -> beam-2.hole2 STIFF
+CONNECT pin-39.pin2 -> beam15-1.hole13 STIFF
+CONNECT pin-40.pin2 -> beam15-2.hole3 STIFF

@@ -1,0 +1,14 @@
+ADD beam15-1 32278 red
+POS beam15-1 0 0 0 0 0 -1 1 0 0 0 -1 0
+ADD pin-1 6558 blue
+POS pin-1 -7 0 1 0 0 -1 0 1 0 1 0 0
+ADD pin-2 6558 blue
+POS pin-2 -6 0 1 0 0 -1 0 1 0 1 0 0
+ADD pin-3 6558 blue
+POS pin-3 7 0 1 0 0 -1 0 1 0 1 0 0
+ADD pin-4 6558 blue
+POS pin-4 6 0 1 0 0 -1 0 1 0 1 0 0
+CONNECT pin-1.pin1 -> beam15-1.hole15 STIFF
+CONNECT pin-2.pin1 -> beam15-1.hole14 STIFF
+CONNECT pin-3.pin1 -> beam15-1.hole1 STIFF
+CONNECT pin-4.pin1 -> beam15-1.hole2 STIFF

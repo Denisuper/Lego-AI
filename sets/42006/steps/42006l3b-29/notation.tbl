@@ -1,0 +1,15 @@
+ADD pin-73 6558 blue
+POS pin-73 4 -6 -2 1 0 0 0 1 0 0 0 1
+ADD pin-74 2780 black
+POS pin-74 3.5 -6 -3 1 0 0 0 1 0 0 0 1
+ADD beam15-3 32278 yellow
+POS beam15-3 -2.95 -7 2.5 1 0 0 0 1 0 0 0 1
+ADD pin-75 32138 black
+POS pin-75 -2.95 -8 -4 0 0 1 -1 0 0 0 -1 0
+ADD pin-76 43093 blue
+POS pin-76 -2.5 -8 -4 -1 0 0 0 1 0 0 0 -1
+CONNECT pin-75.pin2 -> beam15-3.hole1 STIFF
+CONNECT pin-75.pin1 -> beam15-3.hole2 STIFF
+CONNECT pin-76.axle1 -> pin-72.hole3 TURNS
+CONNECT pin-73.pin1 -> beam5-4.hole4 STIFF
+CONNECT pin-74.pin1 -> beam5-4.hole3 STIFF

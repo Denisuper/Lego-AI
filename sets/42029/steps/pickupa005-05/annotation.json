@@ -1,0 +1,64 @@
+{
+  "example_id": "42029-pickupa005-step-05",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "holes-2",
+        "part_number": "11950",
+        "count": 1
+      },
+      {
+        "name": "axle-3",
+        "part_number": "92909",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "holes-2",
+        "part_number": "11950",
+        "catalog_name": "Technic Steering Portal with 2 Pin Holes",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=4.9, y=1.1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle-3",
+        "part_number": "92909",
+        "catalog_name": "Technic Steering Hub for Portal Axle",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6.4, y=1.1, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle-3's pin4 goes into holes-2's hole2 (stiff)",
+      "pin-175's pin2 goes into holes-2's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "holes-2 holds axle-3",
+      "pin-175 spins on holes-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

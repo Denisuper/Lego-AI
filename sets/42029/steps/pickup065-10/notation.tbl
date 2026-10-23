@@ -1,0 +1,8 @@
+ADD axle3-19 6587 darktan
+POS axle3-19 3 -2 0 0 -0.331 0.944 0 0.944 0.331 -1 0 0
+ATTACH pickup065s10
+CONNECT axle3-19.axle1 -> beam3-14.axlehole2 LOCKED
+CONNECT axle3-19.axle3 -> chamfere-4.hole4 TURNS
+CONNECT axle3-19.axle1 -> chamfere-4.hole5 TURNS
+CONNECT axle3-19.axle2 -> beam-3.hole20 TURNS
+CONNECT axle3-19.axle3 -> beam7-9.hole7 TURNS

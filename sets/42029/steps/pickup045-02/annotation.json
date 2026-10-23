@@ -1,0 +1,68 @@
+{
+  "example_id": "42029-pickup045-step-02",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam7-3",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "beam7-4",
+        "part_number": "32524",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam7-3",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam7-4",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-81's pin2 goes into beam7-3's hole1 (stiff)",
+      "pin-83's pin1 goes into beam7-3's hole5 (stiff)",
+      "pin-82's pin2 goes into beam7-4's hole1 (stiff)",
+      "pin-84's pin2 goes into beam7-4's hole5 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam7-3 holds pin-81",
+      "beam7-3 holds pin-83",
+      "beam7-4 holds pin-82",
+      "beam7-4 holds pin-84"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

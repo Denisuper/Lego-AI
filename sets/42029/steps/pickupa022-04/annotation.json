@@ -1,0 +1,58 @@
+{
+  "example_id": "42029-pickupa022-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-220",
+        "part_number": "32002",
+        "count": 1
+      },
+      {
+        "name": "pin-221",
+        "part_number": "32002",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-220",
+        "part_number": "32002",
+        "catalog_name": "Technic Pin 3/4",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-8, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-221",
+        "part_number": "32002",
+        "catalog_name": "Technic Pin 3/4",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-8, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

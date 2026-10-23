@@ -1,0 +1,6 @@
+ADD gear12-4 6589 tan
+POS gear12-4 -1 -10 -5.65 -1 0 0 0 1 0 0 0 -1
+ADD gear12-5 6589 tan
+POS gear12-5 1 -10 -5.65 -1 0 0 0 1 0 0 0 -1
+CONNECT axle4-9.axle1 -> gear12-4.axlehole1 LOCKED
+CONNECT axle3-1.axle1 -> gear12-5.axlehole1 LOCKED

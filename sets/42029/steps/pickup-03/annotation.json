@@ -1,0 +1,82 @@
+{
+  "example_id": "42029-pickup-step-03",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 3,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x3-1",
+        "part_number": "60484",
+        "count": 1
+      },
+      {
+        "name": "beam3x3-2",
+        "part_number": "60484",
+        "count": 1
+      },
+      {
+        "name": "axle4-1",
+        "part_number": "87083",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x3-1",
+        "part_number": "60484",
+        "catalog_name": "Technic Beam 3 x 3 T-Shape Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=3, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x3-2",
+        "part_number": "60484",
+        "catalog_name": "Technic Beam 3 x 3 T-Shape Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle4-1",
+        "part_number": "87083",
+        "catalog_name": "Technic Axle 4 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-7's pin1 goes into beam3x3-1's hole2 (stiff)",
+      "pin-8's pin1 goes into beam3x3-1's hole4 (stiff)",
+      "pin-9's pin1 goes into beam3x3-2's hole4 (stiff)",
+      "axle4-1's axle4 goes into beam15-1's hole10 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x3-1 holds pin-7",
+      "beam3x3-1 holds pin-8",
+      "beam3x3-2 holds pin-9",
+      "beam15-1 spins on axle4-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,110 @@
+ADD part-246 4-4cyli maincolour
+POS part-246 0 -0.65 0 6 0 0 0 11 0 0 0 6
+ADD part-247 4-4edge maincolour
+POS part-247 0 -0.1 0 8 0 0 0 1 0 0 0 8
+ADD part-248 4-4cyli maincolour
+POS part-248 0 -0.1 0 8 0 0 0 2 0 0 0 8
+ADD part-249 4-4edge maincolour
+POS part-249 0 -0.1 0 6 0 0 0 1 0 0 0 6
+ADD part-250 4-4ring3 maincolour
+POS part-250 0 -0.1 0 2 0 0 0 1 0 0 0 2
+ADD part-251 3-8cyli maincolour
+POS part-251 0 -0.9 0 5.543 0 -2.296 0 5 0 2.296 0 5.543
+ADD part-252 3-8edge maincolour
+POS part-252 0 -0.9 0 -5.543 0 2.296 0 1 0 2.296 0 5.543
+ADD part-253 1-4cylo maincolour
+POS part-253 0 -1 0 4.596 0 -4.596 0 2 0 4.596 0 4.596
+ADD rin-9 1-4rin12 maincolour
+POS rin-9 0 -0.9 0 0.354 0 -0.354 0 -1 0 0.354 0 0.354
+ADD part-254 3-8cyli maincolour
+POS part-254 0 -0.9 0 5.543 0 -2.296 0 5 0 -2.296 0 -5.543
+ADD part-255 3-8edge maincolour
+POS part-255 0 -0.9 0 -5.543 0 2.296 0 1 0 -2.296 0 -5.543
+ADD part-256 1-4cylo maincolour
+POS part-256 0 -1 0 4.596 0 -4.596 0 2 0 -4.596 0 -4.596
+ADD rin-10 1-4rin12 maincolour
+POS rin-10 0 -0.9 0 0.354 0 -0.354 0 -1 0 -0.354 0 -0.354
+ADD part-257 8\1-4edge maincolour
+POS part-257 0.3 -0.7 0 0 -1 -0.199 1 0 0 0 0 1
+ADD part-258 8\1-4edge maincolour
+POS part-258 0.1 -0.7 0 0 1 0 1 0 0 0 0 1
+ADD part-259 8\1-4ndis maincolour
+POS part-259 0.3 -0.7 0 0 -1 -0.199 1 0 0 0 0 1
+ADD part-260 8\1-4ndis maincolour
+POS part-260 0.1 -0.7 0 0 1 0 1 0 0 0 0 1
+ADD part-261 8\1-4cyli maincolour
+POS part-261 0.3 -0.7 0 0 -3.401 -0.199 1 0 0 0 0 1
+ADD part-262 8\1-4cyls maincolour
+POS part-262 0.1 -0.7 0 0 0.199 0 0 0 1 1 0 0
+ADD part-263 8\1-4edge maincolour
+POS part-263 0.3 -0.7 0 0 -1 -0.199 1 0 0 0 0 -1
+ADD part-264 8\1-4edge maincolour
+POS part-264 0.1 -0.7 0 0 1 0 1 0 0 0 0 -1
+ADD part-265 8\1-4ndis maincolour
+POS part-265 0.3 -0.7 0 0 -1 -0.199 1 0 0 0 0 -1
+ADD part-266 8\1-4ndis maincolour
+POS part-266 0.1 -0.7 0 0 1 0 1 0 0 0 0 -1
+ADD part-267 8\1-4cyli maincolour
+POS part-267 0.3 -0.7 0 0 -3.401 -0.199 1 0 0 0 0 -1
+ADD part-268 8\1-4cyls maincolour
+POS part-268 0.1 -0.7 0 0 0.199 0 0 0 1 -1 0 0
+ADD part-269 8\1-4edge maincolour
+POS part-269 -0.3 -0.7 0 0 1 0.199 1 0 0 0 0 -1
+ADD part-270 8\1-4edge maincolour
+POS part-270 -0.1 -0.7 0 0 -1 0 1 0 0 0 0 -1
+ADD part-271 8\1-4ndis maincolour
+POS part-271 -0.3 -0.7 0 0 1 0.199 1 0 0 0 0 -1
+ADD part-272 8\1-4ndis maincolour
+POS part-272 -0.1 -0.7 0 0 -1 0 1 0 0 0 0 -1
+ADD part-273 8\1-4cyli maincolour
+POS part-273 -0.3 -0.7 0 0 3.401 0.199 1 0 0 0 0 -1
+ADD part-274 8\1-4cyls maincolour
+POS part-274 -0.1 -0.7 0 0 -0.199 0 0 0 1 -1 0 0
+ADD part-275 8\1-4edge maincolour
+POS part-275 -0.3 -0.7 0 0 1 0.199 1 0 0 0 0 1
+ADD part-276 8\1-4edge maincolour
+POS part-276 -0.1 -0.7 0 0 -1 0 1 0 0 0 0 1
+ADD part-277 8\1-4ndis maincolour
+POS part-277 -0.3 -0.7 0 0 1 0.199 1 0 0 0 0 1
+ADD part-278 8\1-4ndis maincolour
+POS part-278 -0.1 -0.7 0 0 -1 0 1 0 0 0 0 1
+ADD part-279 8\1-4cyli maincolour
+POS part-279 -0.3 -0.7 0 0 3.401 0.199 1 0 0 0 0 1
+ADD part-280 8\1-4cyls maincolour
+POS part-280 -0.1 -0.7 0 0 -0.199 0 0 0 1 1 0 0
+ADD edges-15 rect2a maincolour
+POS edges-15 0.2 -0.85 0.05 0 0 -1.7 -3 0 0 0 1 0
+ADD edges-16 rect2a maincolour
+POS edges-16 -0.2 -0.85 0.05 1.7 0 0 0 0 -3 0 1 0
+ADD edges-17 rect2a maincolour
+POS edges-17 0.2 -0.85 -0.05 -1.7 0 0 0 0 -3 0 -1 0
+ADD edges-18 rect2a maincolour
+POS edges-18 -0.2 -0.85 -0.05 0 0 1.7 -3 0 0 0 -1 0
+ADD part-281 1-4cyli maincolour
+POS part-281 0 -1 0.05 2.4 0 -2.4 0 20 0 2.4 0 2.4
+ADD part-282 1-4edge maincolour
+POS part-282 0 -1 0.05 2.4 0 -2.4 0 1 0 2.4 0 2.4
+ADD part-283 1-4ndis maincolour
+POS part-283 0 -1 0.05 2.4 0 -2.4 0 1 0 2.4 0 2.4
+ADD part-284 1-8chrd maincolour
+POS part-284 0 -1 0 4.596 0 -4.596 0 1 0 4.596 0 4.596
+ADD part-285 1-8chrd maincolour
+POS part-285 0 -1 0 -4.596 0 4.596 0 1 0 4.596 0 4.596
+ADD edge-13 rect1 maincolour
+POS edge-13 0.1 -0.8 0.1 0 1 0 -3.5 0 0 0 0 1
+ADD edge-14 rect1 maincolour
+POS edge-14 0.1 -0.8 -0.1 0 1 0 -3.5 0 0 0 0 1
+ADD part-286 1-4cyli maincolour
+POS part-286 0 -1 -0.05 -2.4 0 2.4 0 20 0 -2.4 0 -2.4
+ADD part-287 1-4edge maincolour
+POS part-287 0 -1 -0.05 -2.4 0 2.4 0 1 0 -2.4 0 -2.4
+ADD part-288 1-4ndis maincolour
+POS part-288 0 -1 -0.05 -2.4 0 2.4 0 1 0 -2.4 0 -2.4
+ADD part-289 1-8chrd maincolour
+POS part-289 0 -1 0 -4.596 0 4.596 0 1 0 -4.596 0 -4.596
+ADD part-290 1-8chrd maincolour
+POS part-290 0 -1 0 4.596 0 -4.596 0 1 0 -4.596 0 -4.596
+ADD edge-15 rect1 maincolour
+POS edge-15 -0.1 -0.8 -0.1 0 -1 0 -3.5 0 0 0 0 -1
+ADD edge-16 rect1 maincolour
+POS edge-16 -0.1 -0.8 0.1 0 -1 0 -3.5 0 0 0 0 -1

@@ -1,0 +1,3 @@
+ATTACH pickup060s07
+CONNECT pin-251.pin2 -> slots-5.hole1 STIFF
+CONNECT pin-252.pin2 -> slots-5.hole2 TURNS

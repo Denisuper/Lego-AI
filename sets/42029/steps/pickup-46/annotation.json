@@ -1,0 +1,84 @@
+{
+  "example_id": "42029-pickup-step-46",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 46,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-121",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-122",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "panel-2",
+        "part_number": "11954",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-121",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-11, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-122",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-11, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "panel-2",
+        "part_number": "11954",
+        "catalog_name": "Technic Panel Curved 11 x 3 with 10 Pin Holes Through Panel Surface",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-11, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-121's pin2 goes into panel-2's hole13 (stiff)",
+      "pin-122's pin2 goes into panel-2's hole8 (stiff)",
+      "pin-121's pin1 goes into panel-1's hole29 (stiff)",
+      "pin-121's pin1 goes into panel-1's hole30 (stiff)",
+      "pin-122's pin1 goes into panel-1's hole14 (stiff)",
+      "pin-122's pin1 goes into panel-1's hole15 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-2 holds pin-121",
+      "panel-2 holds pin-122",
+      "panel-1 holds pin-121",
+      "panel-1 holds pin-122"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

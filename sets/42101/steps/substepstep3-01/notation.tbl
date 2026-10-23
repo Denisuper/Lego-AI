@@ -1,0 +1,5 @@
+ADD conn-15 32013 black
+POS conn-15 0 -5.7 3.1 -1 0 0 0 0.216 -0.976 0 -0.976 -0.216
+ADD conn-16 32039 red
+POS conn-16 0 0 9 -1 0 0 0 1 0 0 0 -1
+ATTACH rigid3mmhose

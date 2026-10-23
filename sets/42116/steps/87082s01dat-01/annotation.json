@@ -1,0 +1,102 @@
+{
+  "example_id": "42116-87082s01dat-step-01",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-291",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-300",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-301",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-302",
+        "part_number": "1-4cyls",
+        "count": 1
+      },
+      {
+        "name": "part-303",
+        "part_number": "1-4cyls",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-291",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.5, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-300",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-301",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-302",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-303",
+        "part_number": "1-4cyls",
+        "catalog_name": "Cylinder Sloped 0.25",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.45, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "attaches the side build"
+    ],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

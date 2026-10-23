@@ -1,0 +1,17 @@
+STEP 6
+ADD beam2x4-4 32140 white
+POS beam2x4-4 -1 -5.9 5 0 1 0 1 0 0 0 0 -1
+ADD axle3-1 24316 reddishbrown
+POS axle3-1 0 -6.9 2 0 0 -1 1 0 0 0 -1 0
+ADD gear12-1 32270 black
+POS gear12-1 0 -6.9 2 -1 0 0 0 0 -1 0 -1 0
+ADD conn-5 59443 red
+POS conn-5 0 -8.4 2 -1 0 0 0 0 -1 0 -1 0
+ADD pin-13 43093 blue
+POS pin-13 -1.5 -5.9 5 1 0 0 0 -1 0 0 0 -1
+ATTACH 65489dat
+CONNECT pin-9.pin1 -> beam2x4-4.hole3 STIFF
+CONNECT pin-10.pin1 -> beam2x4-4.hole1 STIFF
+CONNECT axle3-1.axle2 -> gear12-1.axlehole1 LOCKED
+CONNECT axle3-1.axle1 -> conn-5.axlehole1 LOCKED
+CONNECT axle3-1.axle3 -> conn-3.hole1 TURNS

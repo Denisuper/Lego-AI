@@ -1,0 +1,3 @@
+ATTACH pickup097
+CONNECT pin-398.axle1 -> conn-72.hole1 TURNS
+CONNECT pin-393.pin3 -> conn-74.hole2 STIFF

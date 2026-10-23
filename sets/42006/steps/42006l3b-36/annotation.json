@@ -1,0 +1,64 @@
+{
+  "example_id": "42006-42006l3b-step-36",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 36,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle7-1",
+        "part_number": "44294",
+        "count": 1
+      },
+      {
+        "name": "conn-13",
+        "part_number": "59443",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle7-1",
+        "part_number": "44294",
+        "catalog_name": "Technic Axle 7",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-13",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-6, z=5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle7-1's axle1 goes into conn-13's axlehole2 (locked)",
+      "axle7-1's axle7 goes into conn-7's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle7-1 carries conn-13",
+      "axle7-1 carries conn-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

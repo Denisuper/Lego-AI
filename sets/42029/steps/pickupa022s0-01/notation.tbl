@@ -1,0 +1,6 @@
+ADD pin-224 11214 darkbluishgrey
+POS pin-224 -2 0 0 1 0 0 0 1 0 0 0 1
+ADD conn-41 32034 black
+POS conn-41 0 0 0 0 0 1 1 0 0 0 1 0
+ADD pin-225 11214 darkbluishgrey
+POS pin-225 2 0 0 -1 0 0 0 1 0 0 0 -1

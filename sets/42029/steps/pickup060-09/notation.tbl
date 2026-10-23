@@ -1,0 +1,6 @@
+ADD pin-257 2780 black
+POS pin-257 2.2 2.1 1.5 0 0 -1 0 1 0 1 0 0
+ADD pin-258 2780 black
+POS pin-258 -2.2 2.1 1.5 0 0 -1 0 1 0 1 0 0
+CONNECT pin-258.pin2 -> slots-2.hole2 STIFF
+CONNECT pin-257.pin2 -> slots-6.hole1 STIFF

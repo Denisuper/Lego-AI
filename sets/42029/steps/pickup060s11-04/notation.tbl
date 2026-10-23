@@ -1,0 +1,12 @@
+ADD wheel-1 42610 lightbluishgrey
+POS wheel-1 -1 -1 2 1 0 0 0 0 1 0 -1 0
+ADD wheel-2 42610 lightbluishgrey
+POS wheel-2 -1 -1 0 1 0 0 0 0 1 0 -1 0
+ADD wheel-3 42610 lightbluishgrey
+POS wheel-3 -1 -1 -2 1 0 0 0 0 1 0 -1 0
+ADD wheel-4 42610 lightbluishgrey
+POS wheel-4 1 -1 -2 1 0 0 0 0 1 0 -1 0
+ADD wheel-5 42610 lightbluishgrey
+POS wheel-5 1 -1 0 1 0 0 0 0 1 0 -1 0
+ADD wheel-6 42610 lightbluishgrey
+POS wheel-6 1 -1 2 1 0 0 0 0 1 0 -1 0

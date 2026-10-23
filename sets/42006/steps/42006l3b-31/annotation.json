@@ -1,0 +1,248 @@
+{
+  "example_id": "42006-42006l3b-step-31",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 31,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "conn-8",
+        "part_number": "98989",
+        "count": 1
+      },
+      {
+        "name": "pin-77",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-78",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "pin-79",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-80",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam9-17",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "axle55-2",
+        "part_number": "32209",
+        "count": 1
+      },
+      {
+        "name": "gear12-3",
+        "part_number": "32270",
+        "count": 1
+      },
+      {
+        "name": "conn-9",
+        "part_number": "6538b",
+        "count": 1
+      },
+      {
+        "name": "axle5-3",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "axle55-3",
+        "part_number": "32209",
+        "count": 1
+      },
+      {
+        "name": "part-1",
+        "part_number": "6590",
+        "count": 1
+      },
+      {
+        "name": "gear20-1",
+        "part_number": "32269",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "conn-8",
+        "part_number": "98989",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double 4L",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.95, y=-8, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-77",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.95, y=-8, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-78",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-8, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-79",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.95, y=-8, z=-0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-80",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.95, y=-8, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-17",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2.05, y=-8, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle55-2",
+        "part_number": "32209",
+        "catalog_name": "Technic Axle 5.5 with Stop [Flat Short End]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=-1.35 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-3",
+        "part_number": "32270",
+        "catalog_name": "Technic Gear 12 Tooth Double Bevel",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-9",
+        "part_number": "6538b",
+        "catalog_name": "Technic Axle Connector Ridged [with x Hole x Orientation]",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=1.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-3",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle55-3",
+        "part_number": "32209",
+        "catalog_name": "Technic Axle 5.5 with Stop [Flat Short End]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-8, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-1",
+        "part_number": "6590",
+        "catalog_name": "6590",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-8, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear20-1",
+        "part_number": "32269",
+        "catalog_name": "Technic Gear 20 Tooth Double Bevel with Axle Hole Type 2 [X Opening]",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.05, y=-8, z=-2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-77's pin2 goes into conn-8's hole2 (stiff)",
+      "pin-79's pin2 goes into conn-8's hole3 (stiff)",
+      "pin-80's pin2 goes into conn-8's hole4 (stiff)",
+      "axle55-2's axle2 goes into conn-8's hole1 (turns)",
+      "pin-77's pin1 goes into beam9-17's hole1 (stiff)",
+      "pin-78's axle1 goes into beam9-17's hole3 (turns)",
+      "axle55-2's axle3 goes into beam9-17's hole2 (turns)",
+      "axle55-3's axle3 goes into beam9-17's hole4 (turns)",
+      "axle55-1's axle4 goes into beam9-17's hole6 (turns)",
+      "axle55-2's axle4 goes into gear12-3's axlehole1 (locked)",
+      "axle55-2's axle1 goes into conn-9's axlehole1 (locked)",
+      "axle5-3's axle1 goes into conn-9's axlehole2 (locked)",
+      "axle55-3's axle4 goes into gear20-1's axlehole1 (locked)",
+      "pin-79's pin3 goes into beam15-3's hole5 (stiff)",
+      "pin-80's pin3 goes into beam15-3's hole6 (stiff)",
+      "axle55-2's pin1 goes into beam7-5's hole2 (stiff)",
+      "axle55-3's axle5 goes into beam7-5's hole4 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "conn-8 holds pin-77",
+      "conn-8 holds pin-79",
+      "conn-8 holds pin-80",
+      "conn-8 spins on axle55-2",
+      "beam9-17 holds pin-77",
+      "beam9-17 spins on pin-78",
+      "beam9-17 spins on axle55-2",
+      "beam9-17 spins on axle55-3",
+      "beam9-17 spins on axle55-1",
+      "axle55-2 carries gear12-3",
+      "axle55-2 carries conn-9",
+      "axle5-3 carries conn-9",
+      "axle55-3 carries gear20-1",
+      "beam15-3 holds pin-79",
+      "beam15-3 holds pin-80",
+      "beam7-5 holds axle55-2",
+      "beam7-5 spins on axle55-3"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

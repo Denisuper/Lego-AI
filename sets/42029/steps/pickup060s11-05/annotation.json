@@ -1,0 +1,54 @@
+{
+  "example_id": "42029-pickup060s11-step-05",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 5,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-13",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-13",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=1, z=3 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle9-7's axle2 goes into bush-13's axlehole1 (locked)",
+      "axle9-7's axle7 goes into conn-52's hole1 (turns)",
+      "axle9-7's axle5 goes into conn-53's hole1 (turns)",
+      "axle9-7's axle3 goes into conn-54's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle9-7 carries bush-13",
+      "conn-52 spins on axle9-7",
+      "conn-53 spins on axle9-7",
+      "conn-54 spins on axle9-7"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

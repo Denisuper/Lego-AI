@@ -1,0 +1,69 @@
+{
+  "example_id": "42029-pickup047-step-06",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 6,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam13-3",
+        "part_number": "41239",
+        "count": 1
+      },
+      {
+        "name": "pin-100",
+        "part_number": "11214",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam13-3",
+        "part_number": "41239",
+        "catalog_name": "Technic Beam 1 x 13 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=-0.6, z=3.05 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-100",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-3, y=0, z=9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-100's pin1 goes into beam13-3's hole13 (stiff)",
+      "pin-96's pin1 goes into beam13-3's hole1 (stiff)",
+      "pin-96's pin2 goes into beam13-3's hole2 (stiff)",
+      "pin-99's pin2 goes into beam13-3's hole12 (stiff)",
+      "pin-100's axle1 goes into beam2-1's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam13-3 holds pin-100",
+      "beam13-3 holds pin-96",
+      "beam13-3 holds pin-99",
+      "beam2-1 spins on pin-100"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

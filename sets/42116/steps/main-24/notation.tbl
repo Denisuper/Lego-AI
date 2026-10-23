@@ -1,0 +1,15 @@
+STEP 24
+ADD pin-36 32556 tan
+POS pin-36 2 -1.9 3 1 0 0 0 0 -1 0 1 0
+ADD wheel-3 55981 red
+POS wheel-3 2.5 -1.9 3 0 0 -1 1 0 0 0 -1 0
+ADD tyre-3 92402 rubberblack
+POS tyre-3 2.5 -1.9 3 0 0 -1 1 0 0 0 -1 0
+ADD pin-37 32556 tan
+POS pin-37 -2 -1.9 3 -1 0 0 0 0 -1 0 -1 0
+ADD wheel-4 55981 red
+POS wheel-4 -2.5 -1.9 3 0 0 1 1 0 0 0 1 0
+ADD tyre-4 92402 rubberblack
+POS tyre-4 -2.5 -1.9 3 0 0 1 1 0 0 0 1 0
+CONNECT pin-37.pin1 -> beam11-1.hole5 TURNS
+CONNECT pin-36.pin1 -> beam11-2.hole5 TURNS

@@ -1,0 +1,6 @@
+ADD axle5-2 15462 darktan
+POS axle5-2 2 0 0 -1 0 0 0 0 -1 0 -1 0
+ADD gear8-1 10928 darkbluishgrey
+POS gear8-1 1 0 0 0 0 1 -1 0 0 0 -1 0
+CONNECT axle5-2.axle4 -> gear8-1.axlehole1 LOCKED
+CONNECT axle5-2.axle5 -> beam3x3-6.hole2 TURNS

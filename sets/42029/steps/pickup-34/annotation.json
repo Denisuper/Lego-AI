@@ -1,0 +1,96 @@
+{
+  "example_id": "42029-pickup-step-34",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 34,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-59",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "pin-60",
+        "part_number": "44809",
+        "count": 1
+      },
+      {
+        "name": "pin-61",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-62",
+        "part_number": "6558",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-59",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-60",
+        "part_number": "44809",
+        "catalog_name": "Technic Pin Connector Perpendicular 2 x 2 Bent",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-61",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-7, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-62",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=7, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-62's pin2 goes into pin-59's hole2 (stiff)",
+      "pin-21's axle1 goes into pin-59's hole3 (turns)",
+      "pin-61's pin2 goes into pin-60's hole2 (stiff)",
+      "pin-22's axle1 goes into pin-60's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "pin-59 holds pin-62",
+      "pin-59 spins on pin-21",
+      "pin-60 holds pin-61",
+      "pin-60 spins on pin-22"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

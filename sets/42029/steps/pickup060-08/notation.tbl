@@ -1,0 +1,3 @@
+ADD axle6-5 3706 black
+POS axle6-5 0 2.5 -1 0 0 -1 0 1 0 1 0 0
+CONNECT axle6-5.axle6 -> cranksha-2.axlehole1 LOCKED

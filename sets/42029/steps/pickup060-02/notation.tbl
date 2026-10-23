@@ -1,0 +1,8 @@
+ADD slots-2 2850a lightbluishgrey
+POS slots-2 -2.65 0.5 2.5 -0.6 0.8 0 0.8 0.6 0 0 0 -1
+ADD slots-3 2850a lightbluishgrey
+POS slots-3 -2.65 0.5 6.5 -0.6 0.8 0 0.8 0.6 0 0 0 -1
+CONNECT pin-243.pin2 -> slots-2.hole2 STIFF
+CONNECT pin-245.pin2 -> slots-2.hole1 STIFF
+CONNECT pin-244.pin1 -> slots-3.hole2 STIFF
+CONNECT pin-246.pin1 -> slots-3.hole1 STIFF

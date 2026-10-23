@@ -1,0 +1,7 @@
+ADD beam13-2 41239 red
+POS beam13-2 3 -0.6 3.05 0 1 0 -0.995 0 0.099 0.099 0 0.995
+ADD pin-97 11214 darkbluishgrey
+POS pin-97 3 0 9 1 0 0 0 1 0 0 0 1
+CONNECT pin-97.pin1 -> beam13-2.hole13 STIFF
+CONNECT pin-95.pin3 -> beam13-2.hole1 STIFF
+CONNECT pin-95.pin4 -> beam13-2.hole2 STIFF

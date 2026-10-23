@@ -1,0 +1,16 @@
+ADD pin-379 2780 black
+POS pin-379 -5.5 -1 0 1 0 0 0 0 1 0 -1 0
+ADD pin-380 2780 black
+POS pin-380 -5.5 1 0 1 0 0 0 0 1 0 -1 0
+ADD pin-381 2780 black
+POS pin-381 5.5 -1 0 1 0 0 0 0 1 0 -1 0
+ADD pin-382 2780 black
+POS pin-382 5.5 1 0 1 0 0 0 0 1 0 -1 0
+ADD beam11-8 32525 red
+POS beam11-8 0 2 0 0 0 1 0 -1 0 1 0 0
+CONNECT pin-377.pin2 -> beam11-8.hole3 STIFF
+CONNECT pin-378.pin2 -> beam11-8.hole9 STIFF
+CONNECT pin-379.pin2 -> panel-13.hole16 STIFF
+CONNECT pin-380.pin2 -> panel-13.hole15 STIFF
+CONNECT pin-381.pin1 -> panel-13.hole2 STIFF
+CONNECT pin-382.pin1 -> panel-13.hole1 STIFF

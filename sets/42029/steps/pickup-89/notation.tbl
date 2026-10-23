@@ -1,0 +1,29 @@
+ADD pin-427 43093 blue
+POS pin-427 6.5 -5 24 -1 0 0 0 -1 0 0 0 1
+ADD bush-30 3713 red
+POS bush-30 6 -5 24 0 0 -1 0 -1 0 -1 0 0
+ADD pin-428 4274 lightbluishgrey
+POS pin-428 7 -4 25.5 0 0 1 0 -1 0 1 0 0
+ADD pin-429 4274 lightbluishgrey
+POS pin-429 7 -3 25.5 0 0 1 0 -1 0 1 0 0
+ADD pin-430 4274 lightbluishgrey
+POS pin-430 7 -2 25.5 0 0 1 0 -1 0 1 0 0
+ADD pin-431 4274 lightbluishgrey
+POS pin-431 -7 -4 25.5 0 0 1 0 -1 0 1 0 0
+ADD pin-432 4274 lightbluishgrey
+POS pin-432 -7 -3 25.5 0 0 1 0 -1 0 1 0 0
+ADD pin-433 4274 lightbluishgrey
+POS pin-433 -7 -2 25.5 0 0 1 0 -1 0 1 0 0
+CONNECT pin-431.pin1 -> panel-15.hole20 TURNS
+CONNECT pin-431.pin2 -> panel-15.hole39 TURNS
+CONNECT pin-432.pin1 -> panel-15.hole22 TURNS
+CONNECT pin-432.pin2 -> panel-15.hole40 TURNS
+CONNECT pin-433.pin1 -> panel-15.hole23 TURNS
+CONNECT pin-433.pin2 -> panel-15.hole41 TURNS
+CONNECT pin-427.axle1 -> panel-15.hole35 TURNS
+CONNECT pin-428.pin1 -> panel-15.hole23 TURNS
+CONNECT pin-428.pin2 -> panel-15.hole41 TURNS
+CONNECT pin-429.pin1 -> panel-15.hole22 TURNS
+CONNECT pin-429.pin2 -> panel-15.hole40 TURNS
+CONNECT pin-430.pin1 -> panel-15.hole20 TURNS
+CONNECT pin-430.pin2 -> panel-15.hole39 TURNS

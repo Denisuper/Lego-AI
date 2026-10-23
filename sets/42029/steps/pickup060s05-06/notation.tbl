@@ -1,0 +1,12 @@
+ADD round-1 2851 yellow
+POS round-1 1.9 -1.4 2 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1
+ADD round-2 2851 yellow
+POS round-2 1.25 -0.95 0 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1
+ADD round-3 2851 yellow
+POS round-3 -1.25 -0.95 2 0.6 0.8 0 -0.8 0.6 0 0 0 1
+ADD round-4 2851 yellow
+POS round-4 -1.9 -1.45 0 0.6 0.8 0 -0.8 0.6 0 0 0 1
+ADD round-5 2851 yellow
+POS round-5 -1.9 -1.45 4 0.6 0.8 0 -0.8 0.6 0 0 0 1
+ADD round-6 2851 yellow
+POS round-6 1.25 -0.95 4 -0.6 -0.8 0 -0.8 0.6 0 0 0 -1

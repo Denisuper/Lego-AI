@@ -1,0 +1,230 @@
+{
+  "example_id": "42006-42006l3b-step-69",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 69,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle55-7",
+        "part_number": "32209",
+        "count": 1
+      },
+      {
+        "name": "beam3x3-3",
+        "part_number": "32056",
+        "count": 1
+      },
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "beam3x5-23",
+        "part_number": "32250",
+        "count": 1
+      },
+      {
+        "name": "beam6-1",
+        "part_number": "32063",
+        "count": 1
+      },
+      {
+        "name": "pin-162",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-163",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "beam5-11",
+        "part_number": "32017",
+        "count": 1
+      },
+      {
+        "name": "pin-164",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "beam-6",
+        "part_number": "99773",
+        "count": 1
+      },
+      {
+        "name": "gear20-6",
+        "part_number": "87407",
+        "count": 1
+      },
+      {
+        "name": "part-15",
+        "part_number": "6590",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle55-7",
+        "part_number": "32209",
+        "catalog_name": "Technic Axle 5.5 with Stop [Flat Short End]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.1, y=-26.95, z=-30.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x3-3",
+        "part_number": "32056",
+        "catalog_name": "Technic Beam 3 x 3 L-Shape Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.2, y=-25.1, z=-31.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle5-7",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.05, y=-25.85, z=-33.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3x5-23",
+        "part_number": "32250",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape with Quarter Ellipse Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.7, y=-25.1, z=-31.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam6-1",
+        "part_number": "32063",
+        "catalog_name": "Technic Beam 1 x 6 Thin",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.7, y=-26, z=-28.6 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-162",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.45, y=-25.05, z=-26.25 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-163",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.45, y=-25.8, z=-28.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam5-11",
+        "part_number": "32017",
+        "catalog_name": "Technic Beam 1 x 5 Thin",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.2, y=-25.8, z=-28.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-164",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2 without Friction Ridges",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2.45, y=-26.55, z=-29.95 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam-6",
+        "part_number": "99773",
+        "catalog_name": "Technic Beam Triangle Thin [Type II]",
+        "color": "Yellow",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.2, y=-27.7, z=-32.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear20-6",
+        "part_number": "87407",
+        "catalog_name": "Technic Gear 20 Tooth Bevel with Pin Hole",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-26.95, z=-30.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-15",
+        "part_number": "6590",
+        "catalog_name": "6590",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0.55, y=-26.95, z=-30.9 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle55-7's axle1 goes into beam3x3-3's axlehole2 (locked)",
+      "axle5-7's axle1 goes into beam3x3-3's axlehole3 (locked)",
+      "axle5-7's axle1 goes into beam3x5-23's axlehole2 (locked)",
+      "axle55-7's axle1 goes into beam6-1's hole6 (turns)",
+      "pin-162's pin1 goes into beam6-1's hole1 (stiff)",
+      "pin-163's pin1 goes into beam6-1's hole3 (stiff)",
+      "pin-164's pin1 goes into beam6-1's hole5 (turns)",
+      "pin-162's pin1 goes into beam5-11's hole5 (stiff)",
+      "pin-163's pin1 goes into beam5-11's hole3 (stiff)",
+      "pin-164's pin2 goes into beam5-11's hole1 (turns)",
+      "axle55-7's axle2 goes into beam-6's hole4 (turns)",
+      "axle5-7's axle2 goes into beam-6's axlehole2 (locked)",
+      "axle55-7's axle3 goes into gear20-6's hole1 (turns)",
+      "pin-162's pin2 goes into beam15-8's hole12 (stiff)",
+      "pin-163's pin2 goes into beam15-8's hole14 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "axle55-7 carries beam3x3-3",
+      "axle5-7 carries beam3x3-3",
+      "axle5-7 carries beam3x5-23",
+      "beam6-1 spins on axle55-7",
+      "beam6-1 holds pin-162",
+      "beam6-1 holds pin-163",
+      "pin-164 spins on beam6-1",
+      "beam5-11 holds pin-162",
+      "beam5-11 holds pin-163",
+      "pin-164 spins on beam5-11",
+      "beam-6 spins on axle55-7",
+      "axle5-7 carries beam-6",
+      "gear20-6 spins on axle55-7",
+      "beam15-8 holds pin-162",
+      "beam15-8 holds pin-163"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

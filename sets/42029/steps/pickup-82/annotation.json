@@ -1,0 +1,50 @@
+{
+  "example_id": "42029-pickup-step-82",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 82,
+  "input": {
+    "picture": null,
+    "parts_box": [],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "pin-364's pin3 goes into panel-15's hole9 (stiff)",
+      "pin-384's pin3 goes into panel-15's hole35 (stiff)",
+      "pin-363's pin3 goes into panel-16's hole35 (stiff)",
+      "pin-369's pin1 goes into panel-16's hole8 (stiff)",
+      "pin-370's pin1 goes into panel-16's hole9 (stiff)",
+      "pin-366's pin3 goes into panel-15's hole8 (stiff)",
+      "pin-383's pin3 goes into panel-15's hole34 (stiff)",
+      "pin-365's pin3 goes into panel-16's hole34 (stiff)",
+      "pin-367's pin3 goes into panel-16's hole8 (stiff)",
+      "pin-368's pin3 goes into panel-16's hole9 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-15 holds pin-364",
+      "panel-15 holds pin-384",
+      "panel-16 holds pin-363",
+      "panel-16 holds pin-369",
+      "panel-16 holds pin-370",
+      "panel-15 holds pin-366",
+      "panel-15 holds pin-383",
+      "panel-16 holds pin-365",
+      "panel-16 holds pin-367",
+      "panel-16 holds pin-368"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

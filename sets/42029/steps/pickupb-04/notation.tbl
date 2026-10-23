@@ -1,0 +1,2 @@
+ATTACH pickupb004
+CONNECT axle5-4.axle5 -> beam3x3-7.hole2 TURNS

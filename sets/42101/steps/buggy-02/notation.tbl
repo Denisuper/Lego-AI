@@ -1,0 +1,6 @@
+ADD beam3x3-1 32056 red
+POS beam3x3-1 -0.25 0 2 0 1 0 0 0 -1 -1 0 0
+ADD beam3x3-2 32056 red
+POS beam3x3-2 0.25 0 2 0 1 0 0 0 -1 -1 0 0
+CONNECT axle5-1.axle3 -> beam3x3-1.axlehole3 LOCKED
+CONNECT axle5-1.axle3 -> beam3x3-2.axlehole3 LOCKED

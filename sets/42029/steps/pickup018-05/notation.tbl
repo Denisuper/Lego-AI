@@ -1,0 +1,3 @@
+ADD pin-30 32557 black
+POS pin-30 -0.5 -1 -1 0 0 1 0 -1 0 1 0 0
+CONNECT pin-29.pin2 -> pin-30.hole2 STIFF

@@ -1,0 +1,5 @@
+ADD axle5-17 32073 lightbluishgrey
+POS axle5-17 0 0 0 1 0 0 0 1 0 0 0 1
+ADD bush-16 3713 red
+POS bush-16 -2 0 0 0 0 1 0 1 0 -1 0 0
+CONNECT axle5-17.axle1 -> bush-16.axlehole1 LOCKED

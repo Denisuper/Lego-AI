@@ -1,0 +1,100 @@
+{
+  "example_id": "42029-pickup096-step-01",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "panel-15",
+        "part_number": "64782",
+        "count": 1
+      },
+      {
+        "name": "pin-389",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-390",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "panel-16",
+        "part_number": "64782",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "panel-15",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-389",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=0, z=-5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-390",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise and Center Slots",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=-5.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "panel-16",
+        "part_number": "64782",
+        "catalog_name": "Technic Panel 5 x 11 x 1",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-389's pin2 goes into panel-15's hole5 (stiff)",
+      "pin-389's pin2 goes into panel-15's hole7 (stiff)",
+      "pin-390's pin2 goes into panel-15's hole1 (stiff)",
+      "pin-390's pin2 goes into panel-15's hole6 (stiff)",
+      "pin-389's pin1 goes into panel-16's hole37 (stiff)",
+      "pin-389's pin1 goes into panel-16's hole42 (stiff)",
+      "pin-390's pin1 goes into panel-16's hole36 (stiff)",
+      "pin-390's pin1 goes into panel-16's hole38 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "panel-15 holds pin-389",
+      "panel-15 holds pin-390",
+      "panel-16 holds pin-389",
+      "panel-16 holds pin-390"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

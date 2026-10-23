@@ -1,0 +1,16 @@
+ADD panel-15 64782 red
+POS panel-15 0 0 0 0 0 -1 0 1 0 1 0 0
+ADD pin-389 2780 black
+POS pin-389 -2 0 -5.5 0 0 -1 0 1 0 1 0 0
+ADD pin-390 2780 black
+POS pin-390 2 0 -5.5 0 0 -1 0 1 0 1 0 0
+ADD panel-16 64782 red
+POS panel-16 0 0 -11 0 0 -1 0 1 0 1 0 0
+CONNECT pin-389.pin2 -> panel-15.hole5 STIFF
+CONNECT pin-389.pin2 -> panel-15.hole7 STIFF
+CONNECT pin-390.pin2 -> panel-15.hole1 STIFF
+CONNECT pin-390.pin2 -> panel-15.hole6 STIFF
+CONNECT pin-389.pin1 -> panel-16.hole37 STIFF
+CONNECT pin-389.pin1 -> panel-16.hole42 STIFF
+CONNECT pin-390.pin1 -> panel-16.hole36 STIFF
+CONNECT pin-390.pin1 -> panel-16.hole38 STIFF

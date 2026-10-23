@@ -1,0 +1,52 @@
+{
+  "example_id": "42029-pickup-step-16",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 16,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "bush-4",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bush-4",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=0, z=1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle8-2's axle3 goes into bush-4's axlehole1 (locked)",
+      "axle8-2's axle4 goes into beam15-1's hole6 (turns)",
+      "axle8-2's axle5 goes into beam3x3-1's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle8-2 carries bush-4",
+      "beam15-1 spins on axle8-2",
+      "beam3x3-1 spins on axle8-2"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

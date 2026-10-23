@@ -1,0 +1,5 @@
+ATTACH pickupa020
+ATTACH pickupa020
+CONNECT pin-215.pin2 -> beam5x11-2.hole1 STIFF
+CONNECT pin-215.pin2 -> beam5x11-2.hole2 STIFF
+CONNECT pin-214.pin3 -> beam11-7.hole1 STIFF

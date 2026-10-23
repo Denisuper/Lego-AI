@@ -1,0 +1,11 @@
+STEP 7
+ADD beam3x3-1 60484 red
+POS beam3x3-1 -2 -5.9 4 0 -1 0 1 0 0 0 0 1
+ADD pin-14 3749 tan
+POS pin-14 0 -2.4 4 0 -0.707 -0.707 -1 0 0 0 0.707 -0.707
+ADD conn-7 59443 red
+POS conn-7 0 -3.4 4 -0.707 -0.707 0 0 0 -1 0.707 -0.707 0
+ATTACH 44874dat
+CONNECT pin-2.axle1 -> beam3x3-1.hole4 TURNS
+CONNECT pin-13.axle1 -> beam3x3-1.hole3 TURNS
+CONNECT pin-14.axle1 -> conn-6.hole1 TURNS

@@ -1,0 +1,86 @@
+{
+  "example_id": "42029-pickup093-step-04",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 4,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam3x5-18",
+        "part_number": "32526",
+        "count": 1
+      },
+      {
+        "name": "beam2-16",
+        "part_number": "43857",
+        "count": 1
+      },
+      {
+        "name": "beam2-17",
+        "part_number": "43857",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3x5-18",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=-4, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-16",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam2-17",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=6, y=0, z=4.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-349's pin1 goes into beam3x5-18's hole6 (stiff)",
+      "pin-350's pin1 goes into beam3x5-18's hole7 (stiff)",
+      "pin-351's pin1 goes into beam2-16's hole1 (stiff)",
+      "pin-352's pin1 goes into beam2-16's hole2 (stiff)",
+      "pin-347's pin2 goes into beam2-17's hole1 (stiff)",
+      "pin-348's pin2 goes into beam2-17's hole2 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3x5-18 holds pin-349",
+      "beam3x5-18 holds pin-350",
+      "beam2-16 holds pin-351",
+      "beam2-16 holds pin-352",
+      "beam2-17 holds pin-347",
+      "beam2-17 holds pin-348"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

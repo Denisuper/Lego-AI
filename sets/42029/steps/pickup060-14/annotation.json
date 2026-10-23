@@ -1,0 +1,51 @@
+{
+  "example_id": "42029-pickup060-step-14",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 14,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam5-11",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam5-11",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0.5, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-266's pin1 goes into beam5-11's hole3 (stiff)",
+      "pin-267's pin1 goes into beam5-11's hole2 (stiff)",
+      "pin-267's pin1 goes into beam5-11's hole4 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam5-11 holds pin-266",
+      "beam5-11 holds pin-267"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

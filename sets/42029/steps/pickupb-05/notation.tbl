@@ -1,0 +1,10 @@
+ADD pin-148 6558 blue
+POS pin-148 -1 -4 -3 -1 0 0 0 1 0 0 0 -1
+ADD pin-149 11214 darkbluishgrey
+POS pin-149 -1 -4 -1 1 0 0 0 1 0 0 0 1
+ADD beam2x4-14 32140 red
+POS beam2x4-14 0 -4 -1 0 1 0 1 0 0 0 0 -1
+CONNECT pin-148.pin1 -> beam2x4-14.hole2 STIFF
+CONNECT axle5-6.axle4 -> beam2x4-14.hole4 TURNS
+CONNECT pin-148.pin2 -> beam3x5-9.hole9 STIFF
+CONNECT pin-149.pin1 -> beam3x5-9.hole7 STIFF

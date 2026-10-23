@@ -1,0 +1,62 @@
+{
+  "example_id": "42006-42006l3b-step-39",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 39,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "ridges-2",
+        "part_number": "6539",
+        "count": 1
+      },
+      {
+        "name": "gear16-6",
+        "part_number": "6542b",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ridges-2",
+        "part_number": "6539",
+        "catalog_name": "Technic Driving Ring 2L, 4 Ridges",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=6.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear16-6",
+        "part_number": "6542b",
+        "catalog_name": "Technic Gear 16 Tooth with Clutch [Smooth]",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-0.95, y=-8, z=8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-10's axle2 goes into gear16-6's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "gear16-6 spins on axle4-10"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

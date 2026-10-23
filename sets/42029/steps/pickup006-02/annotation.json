@@ -1,0 +1,80 @@
+{
+  "example_id": "42029-pickup006-step-02",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 2,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle8-1",
+        "part_number": "55013",
+        "count": 1
+      },
+      {
+        "name": "beam3-1",
+        "part_number": "6632",
+        "count": 1
+      },
+      {
+        "name": "gear12-1",
+        "part_number": "6589",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle8-1",
+        "part_number": "55013",
+        "catalog_name": "Technic Axle 8 with Stop",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-1",
+        "part_number": "6632",
+        "catalog_name": "Technic Beam 1 x 3 Thin",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-1, z=-1.75 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-1",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-1.15 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle8-1's axle8 goes into beam3-1's hole1 (turns)",
+      "axle8-1's axle8 goes into gear12-1's axlehole1 (locked)",
+      "axle8-1's axle7 goes into pin-10's hole3 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "beam3-1 spins on axle8-1",
+      "axle8-1 carries gear12-1",
+      "pin-10 spins on axle8-1"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,14 @@
+ADD beam13-5 41239 black
+POS beam13-5 3 1 -2 0 -1 0 1 0 0 0 0 1
+ADD beam13-6 41239 black
+POS beam13-6 -3 1 -2 0 -1 0 1 0 0 0 0 1
+CONNECT pin-140.axle1 -> beam13-5.hole7 TURNS
+CONNECT pin-150.pin3 -> beam13-5.hole3 STIFF
+CONNECT pin-151.pin3 -> beam13-5.hole1 STIFF
+CONNECT pin-162.pin1 -> beam13-5.hole10 STIFF
+CONNECT pin-163.pin1 -> beam13-5.hole13 STIFF
+CONNECT pin-139.axle1 -> beam13-6.hole7 TURNS
+CONNECT pin-143.pin3 -> beam13-6.hole3 STIFF
+CONNECT pin-144.pin3 -> beam13-6.hole1 STIFF
+CONNECT pin-164.pin2 -> beam13-6.hole13 STIFF
+CONNECT pin-165.pin2 -> beam13-6.hole10 STIFF

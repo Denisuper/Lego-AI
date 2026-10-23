@@ -1,0 +1,254 @@
+{
+  "example_id": "42101-92402dat-step-01",
+  "set": "LEGO Technic 42101",
+  "page": null,
+  "step": 1,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "part-3",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-4",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-5",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-6",
+        "part_number": "4-4con9",
+        "count": 1
+      },
+      {
+        "name": "part-7",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-8",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-9",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-10",
+        "part_number": "4-4con9",
+        "count": 1
+      },
+      {
+        "name": "part-11",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-12",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-13",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "to-1",
+        "part_number": "t01o0625",
+        "count": 1
+      },
+      {
+        "name": "to-2",
+        "part_number": "t01o0625",
+        "count": 1
+      },
+      {
+        "name": "part-14",
+        "part_number": "4-4edge",
+        "count": 1
+      },
+      {
+        "name": "part-15",
+        "part_number": "4-4cyli",
+        "count": 1
+      },
+      {
+        "name": "part-16",
+        "part_number": "4-4edge",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "part-3",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-4",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-5",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-6",
+        "part_number": "4-4con9",
+        "catalog_name": "Cone  9 x 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-7",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-8",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-9",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-10",
+        "part_number": "4-4con9",
+        "catalog_name": "Cone  9 x 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-11",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-12",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-13",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.35 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "to-1",
+        "part_number": "t01o0625",
+        "catalog_name": "t01o0625",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "to-2",
+        "part_number": "t01o0625",
+        "catalog_name": "t01o0625",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.4 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-14",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-15",
+        "part_number": "4-4cyli",
+        "catalog_name": "Cylinder 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.5 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "part-16",
+        "part_number": "4-4edge",
+        "catalog_name": "Circle 1.0",
+        "color": "Main Colour",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=0.85 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [],
+    "who_does_what_to_which": [],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

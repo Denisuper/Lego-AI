@@ -1,0 +1,50 @@
+ADD beam3x5-24 32250 yellow
+POS beam3x5-24 1.8 -25.1 -31.65 0 -1 0 -0.383 0 0.924 -0.924 0 -0.383
+ADD pin-175 43093 blue
+POS pin-175 1.55 -21.4 -33.2 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD pin-176 43093 blue
+POS pin-176 1.55 -25.1 -31.65 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD beam13-5 41239 yellow
+POS beam13-5 1.05 -19.55 -33.95 0 1 0 0.383 0 0.924 0.924 0 -0.383
+ADD pin-177 2780 black
+POS pin-177 1.55 -14 -36.25 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD pin-178 43093 blue
+POS pin-178 1.55 -15.85 -35.5 1 0 0 0 0.383 -0.924 0 0.924 0.383
+ADD beam-8 99773 yellow
+POS beam-8 1.8 -14 -36.25 0 -1 0 -0.924 0 -0.383 0.383 0 -0.924
+ADD axle2-11 32062 red
+POS axle2-11 0.05 -31.4 -31.2 -1 0 0 0 0.383 0.924 0 0.924 -0.383
+ADD beam6-2 32063 lightbluishgrey
+POS beam6-2 1.8 -26 -28.6 0 -1 0 -0.924 0 -0.383 0.383 0 -0.924
+ADD pin-179 2780 black
+POS pin-179 1.55 -25.8 -28.1 1 0 0 0 0.924 0.383 0 -0.383 0.924
+ADD pin-180 2780 black
+POS pin-180 1.55 -25.05 -26.25 1 0 0 0 0.924 0.383 0 -0.383 0.924
+ADD beam5-14 32017 yellow
+POS beam5-14 2.3 -25.8 -28.1 0 1 0 -0.924 0 0.383 0.383 0 0.924
+ADD pin-181 4274 lightbluishgrey
+POS pin-181 2.55 -26.55 -29.95 1 0 0 0 0.924 0.383 0 -0.383 0.924
+ADD beam3x3-4 32056 yellow
+POS beam3x3-4 2.3 -25.1 -31.65 0 1 0 -0.383 0 -0.924 -0.924 0 0.383
+CONNECT axle5-7.axle5 -> beam3x5-24.axlehole2 LOCKED
+CONNECT pin-175.axle1 -> beam13-5.hole5 TURNS
+CONNECT pin-176.axle1 -> beam13-5.hole1 TURNS
+CONNECT pin-177.pin1 -> beam13-5.hole13 STIFF
+CONNECT pin-178.axle1 -> beam13-5.hole11 TURNS
+CONNECT pin-168.pin2 -> beam13-5.hole12 STIFF
+CONNECT pin-177.pin2 -> beam-8.hole2 STIFF
+CONNECT axle4-12.axle4 -> beam-8.hole3 TURNS
+CONNECT pin-179.pin2 -> beam6-2.hole3 STIFF
+CONNECT pin-180.pin2 -> beam6-2.hole1 STIFF
+CONNECT pin-181.pin1 -> beam6-2.hole5 TURNS
+CONNECT axle55-7.axle5 -> beam6-2.hole6 TURNS
+CONNECT pin-179.pin2 -> beam5-14.hole3 STIFF
+CONNECT pin-180.pin2 -> beam5-14.hole5 STIFF
+CONNECT pin-181.pin2 -> beam5-14.hole1 TURNS
+CONNECT axle55-7.axle5 -> beam3x3-4.axlehole2 LOCKED
+CONNECT axle5-7.axle5 -> beam3x3-4.axlehole3 LOCKED
+CONNECT pin-179.pin1 -> beam15-9.hole14 STIFF
+CONNECT pin-180.pin1 -> beam15-9.hole12 STIFF
+CONNECT axle2-11.axle1 -> assembly-4.hole1 TURNS
+CONNECT axle2-11.axle2 -> beam3-10.axlehole1 LOCKED
+CONNECT axle2-11.axle1 -> beam3-11.axlehole1 LOCKED

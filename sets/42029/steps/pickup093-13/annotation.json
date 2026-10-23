@@ -1,0 +1,84 @@
+{
+  "example_id": "42029-pickup093-step-13",
+  "set": "LEGO Technic 42029",
+  "page": null,
+  "step": 13,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "pin-375",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "pin-376",
+        "part_number": "6558",
+        "count": 1
+      },
+      {
+        "name": "beam3-22",
+        "part_number": "32523",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "pin-375",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-376",
+        "part_number": "6558",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam3-22",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Light Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=0, z=-8 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-375's pin2 goes into beam3-22's hole3 (stiff)",
+      "pin-376's pin2 goes into beam3-22's hole1 (stiff)",
+      "pin-375's pin1 goes into panel-10's hole16 (stiff)",
+      "pin-375's pin1 goes into panel-10's hole17 (stiff)",
+      "pin-376's pin1 goes into panel-10's hole25 (stiff)",
+      "pin-376's pin1 goes into panel-10's hole26 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3-22 holds pin-375",
+      "beam3-22 holds pin-376",
+      "panel-10 holds pin-375",
+      "panel-10 holds pin-376"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

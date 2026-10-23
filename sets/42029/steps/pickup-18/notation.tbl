@@ -1,0 +1,8 @@
+ATTACH pickup018
+CONNECT pin-13.axle1 -> beam13-1.hole11 TURNS
+CONNECT axle4-3.axle1 -> beam13-1.hole7 TURNS
+CONNECT axle6-1.axle5 -> beam13-1.hole9 TURNS
+CONNECT pin-19.pin2 -> beam13-1.hole3 STIFF
+CONNECT pin-20.axle1 -> beam3x3-3.hole3 TURNS
+CONNECT axle6-1.axle4 -> beam3x3-4.hole3 TURNS
+CONNECT axle4-3.axle2 -> pin-30.hole1 TURNS

@@ -1,0 +1,72 @@
+{
+  "example_id": "42006-42006l3b-step-14",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 14,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "beam9-7",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "beam9-8",
+        "part_number": "40490",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam9-7",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=1, z=-1 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "beam9-8",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Grey",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-6, y=1, z=-11 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-2's axle1 goes into beam9-7's hole9 (turns)",
+      "pin-34's pin2 goes into beam9-7's hole1 (stiff)",
+      "pin-35's pin2 goes into beam9-7's hole4 (stiff)",
+      "axle4-1's axle1 goes into beam9-8's hole1 (turns)",
+      "pin-33's pin2 goes into beam9-8's hole9 (stiff)",
+      "pin-36's pin2 goes into beam9-8's hole6 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam9-7 spins on axle4-2",
+      "beam9-7 holds pin-34",
+      "beam9-7 holds pin-35",
+      "beam9-8 spins on axle4-1",
+      "beam9-8 holds pin-33",
+      "beam9-8 holds pin-36"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

@@ -1,0 +1,12 @@
+ADD pin-33 2780 black
+POS pin-33 -6.5 1 -7 1 0 0 0 1 0 0 0 1
+ADD pin-34 2780 black
+POS pin-34 -6.5 1 -5 1 0 0 0 1 0 0 0 1
+ADD pin-35 6558 blue
+POS pin-35 -6 1 -2 1 0 0 0 1 0 0 0 1
+ADD pin-36 6558 blue
+POS pin-36 -6 1 -10 1 0 0 0 1 0 0 0 1
+CONNECT pin-33.pin1 -> beam9-6.hole4 STIFF
+CONNECT pin-34.pin1 -> beam9-6.hole6 STIFF
+CONNECT pin-35.pin1 -> beam9-6.hole9 STIFF
+CONNECT pin-36.pin1 -> beam9-6.hole1 STIFF

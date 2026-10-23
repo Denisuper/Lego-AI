@@ -1,0 +1,6 @@
+ADD pin-319 2780 black
+POS pin-319 -5 -2.5 -3 0 1 0 -1 0 0 0 0 1
+ADD pin-320 2780 black
+POS pin-320 5 -2.5 -3 0 1 0 -1 0 0 0 0 1
+CONNECT pin-319.pin1 -> conn-67.hole1 STIFF
+CONNECT pin-320.pin1 -> conn-67.hole1 STIFF

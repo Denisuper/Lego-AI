@@ -1,0 +1,6 @@
+ADD beam2-8 60483 darkbluishgrey
+POS beam2-8 2 -2 0 0 1 0 1 0 0 0 0 -1
+ADD axle5-6 32073 lightbluishgrey
+POS axle5-6 1 -2 2 -1 0 0 0 1 0 0 0 -1
+CONNECT axle5-5.axle2 -> beam2-8.axlehole1 LOCKED
+CONNECT axle5-6.axle5 -> conn-24.axlehole1 LOCKED

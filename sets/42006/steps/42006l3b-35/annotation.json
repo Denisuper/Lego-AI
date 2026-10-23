@@ -1,0 +1,64 @@
+{
+  "example_id": "42006-42006l3b-step-35",
+  "set": "LEGO Technic 42006",
+  "page": null,
+  "step": 35,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "gear12-4",
+        "part_number": "6589",
+        "count": 1
+      },
+      {
+        "name": "gear12-5",
+        "part_number": "6589",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "gear12-4",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1, y=-10, z=-5.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "gear12-5",
+        "part_number": "6589",
+        "catalog_name": "Technic Gear 12 Tooth Bevel",
+        "color": "Tan",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1, y=-10, z=-5.65 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle4-9's axle1 goes into gear12-4's axlehole1 (locked)",
+      "axle3-1's axle1 goes into gear12-5's axlehole1 (locked)"
+    ],
+    "who_does_what_to_which": [
+      "axle4-9 carries gear12-4",
+      "axle3-1 carries gear12-5"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

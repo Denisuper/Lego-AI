@@ -1,0 +1,10 @@
+ADD beam3x5-16 32526 yellow
+POS beam3x5-16 -0.95 -16.6 -13.45 0 1 0 0.529 0 -0.848 -0.848 0 -0.529
+ADD pin-141 2780 black
+POS pin-141 -1.45 -19.95 -15.6 1 0 0 0 0.529 0.848 0 -0.848 0.529
+ADD pin-142 32054 lightbluishgrey
+POS pin-142 -0.95 -16.6 -13.45 -1 0 0 0 0.529 -0.848 0 -0.848 -0.529
+CONNECT pin-141.pin2 -> beam3x5-16.hole5 STIFF
+CONNECT pin-142.pin1 -> beam3x5-16.hole1 STIFF
+CONNECT pin-141.pin1 -> beam15-7.hole9 STIFF
+CONNECT pin-142.pin2 -> beam15-7.hole5 STIFF

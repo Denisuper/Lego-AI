@@ -1,0 +1,10 @@
+ADD beam3x5-16 32526 lightbluishgrey
+POS beam3x5-16 2 5 -20 0 1 0 0 0 -1 -1 0 0
+ADD pin-297 32054 red
+POS pin-297 2 4 -20 -1 0 0 0 0 -1 0 -1 0
+ADD pin-298 32054 red
+POS pin-298 2 2 -20 -1 0 0 0 0 -1 0 -1 0
+CONNECT pin-297.pin1 -> beam3x5-16.hole2 STIFF
+CONNECT pin-298.pin1 -> beam3x5-16.hole4 STIFF
+CONNECT pin-297.pin2 -> beam2-6.hole1 STIFF
+CONNECT pin-298.pin2 -> beam2-8.hole1 STIFF

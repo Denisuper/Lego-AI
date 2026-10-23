@@ -1,0 +1,7 @@
+ADD beam7-2 32348 black
+POS beam7-2 1 0 2 0 1 0 -1 0 0 0 0 1
+CONNECT axle3-1.axle3 -> beam7-2.axlehole1 LOCKED
+CONNECT axle5-2.axle4 -> beam7-2.axlehole2 LOCKED
+CONNECT pin-4.pin2 -> beam7-2.hole1 STIFF
+CONNECT pin-8.pin1 -> beam7-2.hole5 STIFF
+CONNECT pin-9.pin2 -> beam7-2.hole4 STIFF

@@ -1,0 +1,6 @@
+ADD bush-18 3713 red
+POS bush-18 1.5 2 -25 0 0 -1 0 -1 0 -1 0 0
+ADD bush-19 3713 red
+POS bush-19 1.5 2 -21 0 0 -1 0 -1 0 -1 0 0
+CONNECT axle4-6.axle1 -> bush-18.axlehole1 LOCKED
+CONNECT axle5-17.axle5 -> bush-19.axlehole1 LOCKED

@@ -1,0 +1,174 @@
+{
+  "example_id": "42116-step-19",
+  "set": "LEGO Technic 42116",
+  "page": null,
+  "step": 19,
+  "input": {
+    "picture": null,
+    "parts_box": [
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-18",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "conn-19",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "pin-31",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "conn-20",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "conn-21",
+        "part_number": "32013",
+        "count": 1
+      },
+      {
+        "name": "pin-32",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "conn-22",
+        "part_number": "32034",
+        "count": 1
+      }
+    ],
+    "model_so_far": "TO WRITE"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "axle2-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-8.4, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-18",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-6.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-19",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=2, y=-9.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-31",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=1.5, y=-9.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "axle2-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-8.4, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-20",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-6.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-21",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-2, y=-9.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "pin-32",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=-1.5, y=-9.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      },
+      {
+        "name": "conn-22",
+        "part_number": "32034",
+        "catalog_name": "Technic Axle and Pin Connector Angled #2 - 180\u00b0",
+        "color": "Black",
+        "part_match": "confirmed (official 3D model)",
+        "position": "at x=0, y=-9.9, z=2 holes (exact, from the 3D model)",
+        "rotation": "TO WRITE"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "axle2-1's axle1 goes into conn-18's axlehole1 (locked)",
+      "pin-29's axle1 goes into conn-18's hole1 (turns)",
+      "axle2-1's axle2 goes into conn-19's axlehole1 (locked)",
+      "pin-31's axle1 goes into conn-19's hole1 (turns)",
+      "axle2-2's axle1 goes into conn-20's axlehole1 (locked)",
+      "pin-22's axle1 goes into conn-20's hole1 (turns)",
+      "axle2-2's axle2 goes into conn-21's axlehole1 (locked)",
+      "pin-32's axle1 goes into conn-21's hole1 (turns)"
+    ],
+    "who_does_what_to_which": [
+      "axle2-1 carries conn-18",
+      "conn-18 spins on pin-29",
+      "axle2-1 carries conn-19",
+      "conn-19 spins on pin-31",
+      "axle2-2 carries conn-20",
+      "conn-20 spins on pin-22",
+      "axle2-2 carries conn-21",
+      "conn-21 spins on pin-32"
+    ],
+    "where_everything_is_after": [
+      "TO WRITE"
+    ],
+    "why": {
+      "problem_solved": "TO WRITE",
+      "why_these_parts": "TO WRITE",
+      "sets_up_for_later": "TO WRITE",
+      "design_pattern": "TO WRITE"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Joins and positions computed from the official LDraw 3D model."
+}

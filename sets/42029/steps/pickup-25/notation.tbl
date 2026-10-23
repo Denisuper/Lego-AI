@@ -1,0 +1,6 @@
+ADD beam9-2 40490 lightbluishgrey
+POS beam9-2 1 -2 -2.5 0 -1 0 1 0 0 0 0 1
+CONNECT pin-44.pin3 -> beam9-2.hole1 STIFF
+CONNECT pin-45.pin3 -> beam9-2.hole2 STIFF
+CONNECT pin-46.pin3 -> beam9-2.hole3 STIFF
+CONNECT pin-47.pin3 -> beam9-2.hole5 STIFF

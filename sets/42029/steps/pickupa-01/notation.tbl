@@ -1,0 +1,5 @@
+ADD conn-30 32034 black
+POS conn-30 0 0 0 0.988 -0.156 0 0.156 0.988 0 0 0 1
+ADD axle3-7 4519 lightbluishgrey
+POS axle3-7 0 0 2 0 -0.156 0.988 0 0.988 0.156 -1 0 0
+CONNECT axle3-7.axle3 -> conn-30.axlehole2 LOCKED

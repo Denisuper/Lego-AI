@@ -1,0 +1,4 @@
+ATTACH pickupa022
+CONNECT pin-221.pin1 -> pin-188.hole1 STIFF
+CONNECT pin-220.pin1 -> pin-188.hole1 STIFF
+CONNECT axle9-4.axle1 -> beam2x4-18.hole4 TURNS

@@ -1,0 +1,6 @@
+ADD bush-5 3713 red
+POS bush-5 4 2.55 8.1 0 0 1 0 1 0 -1 0 0
+ADD wheel-4 55982 white
+POS wheel-4 3.5 2.55 8.1 0 0 -1 -1 0 0 0 1 0
+ATTACH 92402dat
+CONNECT axle9-1.axle9 -> bush-5.axlehole1 LOCKED

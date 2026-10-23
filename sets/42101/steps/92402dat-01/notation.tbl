@@ -1,0 +1,36 @@
+ADD part-3 4-4edge maincolour
+POS part-3 0 0 -0.85 21 0 0 0 0 -21 0 1 0
+ADD part-4 4-4cyli maincolour
+POS part-4 0 0 -0.85 21 0 0 0 0 -21 0 13 0
+ADD part-5 4-4edge maincolour
+POS part-5 0 0 -0.2 21 0 0 0 0 -21 0 1 0
+ADD part-6 4-4con9 maincolour
+POS part-6 0 0 -0.2 2.1 0 0 0 0 -2.1 0 2 0
+ADD part-7 4-4edge maincolour
+POS part-7 0 0 -0.1 18.9 0 0 0 0 -18.9 0 1 0
+ADD part-8 4-4cyli maincolour
+POS part-8 0 0 -0.1 18.9 0 0 0 0 -18.9 0 4 0
+ADD part-9 4-4edge maincolour
+POS part-9 0 0 0.1 18.9 0 0 0 0 -18.9 0 1 0
+ADD part-10 4-4con9 maincolour
+POS part-10 0 0 0.2 2.1 0 0 0 0 -2.1 0 -2 0
+ADD part-11 4-4edge maincolour
+POS part-11 0 0 0.2 21 0 0 0 0 -21 0 1 0
+ADD part-12 4-4cyli maincolour
+POS part-12 0 0 0.2 21 0 0 0 0 -21 0 3 0
+ADD part-13 4-4edge maincolour
+POS part-13 0 0 0.35 21 0 0 0 0 -21 0 1 0
+ADD to-1 t01o0625 maincolour
+POS to-1 0 0 0.4 21 0 0 0 0 -21 0 24 0
+ADD to-2 t01o0625 maincolour
+POS to-2 0 0 0.4 21 0 0 0 0 -21 0 -24 0
+ADD part-14 4-4edge maincolour
+POS part-14 0 0 0.5 21 0 0 0 0 -21 0 1 0
+ADD part-15 4-4cyli maincolour
+POS part-15 0 0 0.5 21 0 0 0 0 -21 0 7 0
+ADD part-16 4-4edge maincolour
+POS part-16 0 0 0.85 21 0 0 0 0 -21 0 1 0
+ATTACH 92402s02dat
+ATTACH 92402s02dat
+ATTACH 92402s02dat
+ATTACH 92402s02dat

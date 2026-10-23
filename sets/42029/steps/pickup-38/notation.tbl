@@ -1,0 +1,12 @@
+ADD pin-71 44809 red
+POS pin-71 6 -8 1 1 0 0 0 -1 0 0 0 -1
+ADD pin-72 44809 red
+POS pin-72 -6 -8 1 0 0 1 0 -1 0 1 0 0
+ADD pin-73 6558 blue
+POS pin-73 6 -9 1 0 0 -1 -1 0 0 0 1 0
+ADD pin-74 6558 blue
+POS pin-74 -6 -9 1 0 0 -1 -1 0 0 0 1 0
+CONNECT pin-73.pin1 -> pin-71.hole2 STIFF
+CONNECT pin-58.pin1 -> pin-71.hole3 STIFF
+CONNECT pin-74.pin1 -> pin-72.hole2 STIFF
+CONNECT pin-57.pin1 -> pin-72.hole1 STIFF

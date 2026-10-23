@@ -1,0 +1,5 @@
+ADD beam3-11 6632 red
+POS beam3-11 0 0 0 0 -1 0 1 0 0 0 0 1
+ADD axle3-12 6587 darktan
+POS axle3-12 1.15 0 0 -1 0 0 0 -1 0 0 0 1
+CONNECT axle3-12.axle3 -> beam3-11.axlehole1 LOCKED

@@ -1,0 +1,18 @@
+ADD pin-61 2780 black
+POS pin-61 2.5 -6 -8 1 0 0 0 1 0 0 0 1
+ADD pin-62 2780 black
+POS pin-62 2.5 -6 -4 1 0 0 0 1 0 0 0 1
+ADD pin-63 2780 black
+POS pin-63 -2.5 -6 -4 1 0 0 0 1 0 0 0 1
+ADD pin-64 2780 black
+POS pin-64 -2.5 -6 -8 1 0 0 0 1 0 0 0 1
+ADD pin-65 2780 black
+POS pin-65 -2.5 -6 -1 1 0 0 0 1 0 0 0 1
+ADD pin-66 6558 blue
+POS pin-66 3 -6 -1 1 0 0 0 1 0 0 0 1
+CONNECT pin-61.pin1 -> beam5x11-1.hole11 STIFF
+CONNECT pin-62.pin1 -> beam5x11-1.hole19 STIFF
+CONNECT pin-63.pin2 -> beam5x11-1.hole18 STIFF
+CONNECT pin-64.pin2 -> beam5x11-1.hole10 STIFF
+CONNECT pin-65.pin2 -> beam5x11-1.hole27 STIFF
+CONNECT pin-66.pin1 -> beam5x11-1.hole28 STIFF
