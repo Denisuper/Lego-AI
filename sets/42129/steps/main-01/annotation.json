@@ -1,0 +1,79 @@
+{
+  "example_id": "42129-step-01",
+  "set": "LEGO Technic 42129",
+  "page": 10,
+  "step": 1,
+  "input": {
+    "picture": "steps/main-01/picture.png",
+    "parts_box": [
+      {
+        "name": "beam3-1",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "pin-1",
+        "part_number": "2780",
+        "count": 1
+      },
+      {
+        "name": "pin-2",
+        "part_number": "2780",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beginning of build; empty workspace."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "beam3-1",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3",
+        "color": "black",
+        "part_match": "confirmed",
+        "position": "at center frame origin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-1",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise",
+        "color": "black",
+        "part_match": "confirmed",
+        "position": "in beam3-1 hole 1",
+        "rotation": "fixed"
+      },
+      {
+        "name": "pin-2",
+        "part_number": "2780",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise",
+        "color": "black",
+        "part_match": "confirmed",
+        "position": "in beam3-1 hole 3",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "pin-1's pin1 goes into beam3-1's hole1 (stiff)",
+      "pin-2's pin1 goes into beam3-1's hole3 (stiff)"
+    ],
+    "who_does_what_to_which": [
+      "beam3-1 holds pin-1",
+      "beam3-1 holds pin-2"
+    ],
+    "where_everything_is_after": [
+      "beam3-1, pin-1, pin-2 connected at front frame base",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Establishes base anchor beam for front frame section",
+      "why_these_parts": "3-hole beam with friction pins provides rigid two-point mounting",
+      "sets_up_for_later": "Allows perpendicular side beams to attach in step 2",
+      "design_pattern": "two-pin mount"
+    }
+  },
+  "confidence": "high",
+  "needs_review": false,
+  "review_note": "Initial step created and annotated in style of repo."
+}

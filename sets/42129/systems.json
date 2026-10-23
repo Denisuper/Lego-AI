@@ -1,0 +1,21 @@
+{
+  "model": "LEGO Technic 42129 4x4 Mercedes-Benz Zetros Trial Truck",
+  "what_the_model_does": "A heavy-duty 4x4 trial truck with remote control capabilities, front and rear suspension, and differential lock controls.",
+  "open_questions": [],
+  "systems": [
+    {
+      "id": "frame",
+      "name": "Chassis frame",
+      "real_machine": "The structural ladder chassis.",
+      "purpose": "Provides rigid structural support for the axles and cab.",
+      "depends_on": [],
+      "feeds": ["drivetrain", "steering"],
+      "why_built_first": "Base structure for mounting mechanisms.",
+      "parts": {
+        "beam3-1": "Front cross-member beam",
+        "pin-1": "Structural connector pin",
+        "pin-2": "Structural connector pin"
+      }
+    }
+  ]
+}
