@@ -1,0 +1,78 @@
+{
+  "example_id": "42175-step-190",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 169,
+  "step": 190,
+  "input": {
+    "picture": "steps/main-190/picture.png",
+    "parts_box": [
+      {
+        "name": "of2-pl-1",
+        "part_number": "18677",
+        "count": 1
+      },
+      {
+        "name": "of2-tile-1",
+        "part_number": "3069b",
+        "count": 1
+      },
+      {
+        "name": "of2-dp-1",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Excavator with the orange fitting placed at the rear left (page 168)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of2-pl-1",
+        "part_number": "18677",
+        "catalog_name": "Plate Special 1 x 2 with Pin Hole Underneath",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 1 x 2 plate with pin hole underneath (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of2-tile-1",
+        "part_number": "3069b",
+        "catalog_name": "Tile 1 x 2 with Groove",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 1 x 2 tile with sticker no. 14 (sub-steps 2-3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of2-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small dark pin (sub-step 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-3: a plate with a dark pin (1), a tile on top (2), the sticker (no. 14) on the tile (3). The finished piece is placed at the foot of the orange fitting (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "of2-pl-1 carries of2-tile-1",
+      "of2-dp-1 holds of2-pl-1"
+    ],
+    "where_everything_is_after": [
+      "a small sticker tile sits at the foot of the orange fitting",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a label tile on the machine's rear-left.",
+      "why_these_parts": "The same pattern as step 183.",
+      "sets_up_for_later": "Steps 191-198 build a second orange fitting.",
+      "design_pattern": "label tile"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Page 168 shows the orange fitting of step 189 placed on the frame without a step number."
+}

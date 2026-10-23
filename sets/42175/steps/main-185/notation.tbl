@@ -1,0 +1,11 @@
+STEP 185
+ADD ao-dp-1 61332 black
+ADD ao-cn-1 6536 black
+ADD ao-bar-1 63965 orange
+ADD ao-tile-1 98138 clear
+CONNECT ao-dp-1.pin1 -> ao-cn-1.hole1 STIFF
+CONNECT ao-tile-1.stud? -> ao-cn-1.hole?
+CONNECT ao-bar-1.bar? -> ao-cn-1.hole?
+DOES ao-cn-1 CARRIES ao-bar-1
+DOES ao-cn-1 HOLDS ao-dp-1
+PATTERN bar_with_connector

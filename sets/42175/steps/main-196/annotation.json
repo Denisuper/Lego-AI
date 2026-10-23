@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-196",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 171,
+  "step": 196,
+  "input": {
+    "picture": "steps/main-196/picture.png",
+    "parts_box": [
+      {
+        "name": "of3-hose-1",
+        "part_number": "32580",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Orange pipe with two elbows (step 195)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of3-hose-1",
+        "part_number": "32580",
+        "catalog_name": "Axle Hose Soft 7L",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "orange 7-long soft axle hose",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The thin orange hose is pushed into the second elbow, hanging down."
+    ],
+    "who_does_what_to_which": [
+      "of3-ang2-1 carries of3-hose-1"
+    ],
+    "where_everything_is_after": [
+      "an orange hose hangs from the second elbow",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the long orange arm of the fitting.",
+      "why_these_parts": "A soft hose is the thin arm.",
+      "sets_up_for_later": "Step 197 adds the last elbow.",
+      "design_pattern": "orange arm"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Hose has no catalog points; joins are open."
+}

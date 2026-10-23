@@ -1,0 +1,6 @@
+STEP 191
+ADD of3-yax-1 4519 yellow
+ADD of3-ang-1 32013 orange
+CONNECT of3-yax-1.axle1 -> of3-ang-1.axlehole1~ LOCKED
+DOES of3-ang-1 CARRIES of3-yax-1
+PATTERN axle_in_connector

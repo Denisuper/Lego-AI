@@ -1,0 +1,6 @@
+STEP 192
+ADD of3-cyl-1 59443 orange
+ADD of3-rc-1 18654 orange
+CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED
+DOES of3-cyl-1 HOLDS of3-yax-1
+PATTERN sleeve

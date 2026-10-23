@@ -1,0 +1,9 @@
+STEP 187
+ADD ar-plate-1 6141 transorange
+ADD ar-dome-1 85861 black
+ADD ar-clip-1 3484 black
+CONNECT ar-plate-1.stud? -> ar-dome-1.stud?
+CONNECT ar-clip-1.clip? -> ar-dome-1.stud?
+DOES ar-dome-1 CARRIES ar-plate-1
+DOES ar-clip-1 HOLDS ar-dome-1
+PATTERN lamp

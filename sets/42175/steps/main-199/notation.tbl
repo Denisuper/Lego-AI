@@ -1,0 +1,4 @@
+STEP 199
+CONNECT of3-ang-1.hole? -> uc-frame-1.hole?
+DOES uc-frame-1 HOLDS of3-ang-1
+PATTERN attach_fitting

@@ -1,0 +1,5 @@
+STEP 186
+ADD ao-tb-1 41677 black
+CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?
+DOES ao-tb-1 HOLDS ao-bar-1
+PATTERN lock_beam

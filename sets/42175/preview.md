@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 183 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 199 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -17,7 +17,7 @@
 **Why:** Starts the undercarriage with a stiff rectangular base and four posts to hang the next beams on. A closed 5 x 7 frame stays square without extra bracing; long pins stick up far enough to carry two layers of beams. *Next:* Steps 2-4 slide the long beams onto these four posts. *Pattern:* pins in the corners
 
 **Big picture:**
-- **uc-frame-1** (Undercarriage frame): placeholder Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`; 42175-step-032 `CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?`; 42175-step-032 `DOES uc-frame-1 HOLDS sd-fpin-1`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`.
+- **uc-frame-1** (Undercarriage frame): placeholder Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`; 42175-step-032 `CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?`; 42175-step-032 `DOES uc-frame-1 HOLDS sd-fpin-1`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
 - **uc-pin-1** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-1.pin2 -> uc-beam9-1.hole2~ STIFF`.
 - **uc-pin-2** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF`.
 - **uc-pin-3** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF`.
@@ -4773,3 +4773,396 @@
 - **fl-cn-1** (None): None
 
 **Review:** Icons small; part identities likely, order of sub-steps as drawn.
+
+## 42175-step-184 (page 161) - low - NEEDS REVIEW
+
+![42175-step-184](steps/main-184/picture.png)
+
+**New parts:** ag-rax-1 (32062, red) - red 2-long notched axle (sub-step 1); ag-bp-1 (43093, blue) - blue pin (sub-step 1); ag-cap-1 (98138, black) - small black round tile (sub-step 2); ag-ang-1 (32015, black) - black angled axle and pin connector, 112.5 degrees (sub-step 1); ag-ball-1 (32291, dark bluish gray) - dark grey double axle and pin connector (sub-step 2, joined to the angled one)
+
+**Touches:** Yellow box 1-2: a red axle and a blue pin go in the angled black connector (1); a black round cap goes on the blue pin and a second dark connector joins (2). The finished piece is placed at the rear of the roof's right side (arrow with a green guide line).
+
+**Exact joins:** ag-rax-1.axle1 into ag-ang-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); ag-bp-1.pin1 into ag-ang-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); ag-ang-1.axlehole2 into ag-ball-1.axlehole1? (not shown in booklet); ag-cap-1.stud? into ag-bp-1.pin? (not shown in booklet)
+
+**Who does what:** ag-ang-1 carries ag-rax-1; ag-ang-1 holds ag-bp-1
+
+**After:** a black angled piece with a red axle, blue pin and round cap is fitted at the rear-right of the roof; everything else: no change
+
+**Why:** Builds the rear-right roof corner fitting. An angled connector turns a straight rod into a corner. *Next:* Step 185 builds the rear-left corner. *Pattern:* roof corner
+
+**Big picture:**
+- **ag-rax-1** (None): None
+- **ag-bp-1** (None): None
+- **ag-cap-1** (None): None
+- **ag-ang-1** (None): None
+- **ag-ball-1** (None): None
+
+**Review:** The three small black and grey parts are read from icons; the order on the blue pin is estimated.
+
+## 42175-step-185 (page 162) - low - NEEDS REVIEW
+
+![42175-step-185](steps/main-185/picture.png)
+
+**New parts:** ao-dp-1 (61332, black) - small dark pin (sub-step 1, green arrow); ao-cn-1 (6536, black) - black perpendicular connector (sub-step 1); ao-bar-1 (63965, orange) - orange 6-long bar with stop ring (sub-step 3); ao-tile-1 (98138, trans-clear) - small white round tile on the connector (sub-step 2)
+
+**Touches:** Yellow box 1-3: a dark pin goes in a black connector (1), a white tile caps the pin (2), the orange bar goes in the other hole (3). The finished piece is placed on the roof (arrow).
+
+**Exact joins:** ao-dp-1.pin1 into ao-cn-1.hole1 (0.9 hole deep, held stiff by friction); ao-tile-1.stud? into ao-cn-1.hole? (not shown in booklet); ao-bar-1.bar? into ao-cn-1.hole? (not shown in booklet)
+
+**Who does what:** ao-cn-1 carries ao-bar-1; ao-cn-1 holds ao-dp-1
+
+**After:** an orange bar with a capped black connector lies across the roof's rear; everything else: no change
+
+**Why:** Adds the orange rail (the real machine's rear handle) on the roof. A bar with a stop ring is easy to see and grab. *Next:* Step 186 locks it with a thin beam. *Pattern:* orange rail
+
+**Big picture:**
+- **ao-dp-1** (None): None
+- **ao-cn-1** (None): None Later: 42175-step-186 `CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?`.
+- **ao-bar-1** (None): None Later: 42175-step-186 `DOES ao-tb-1 HOLDS ao-bar-1`.
+- **ao-tile-1** (None): None
+
+**Review:** Part identities are likely; the tile colour reads white, the catalog colour is trans-clear.
+
+## 42175-step-186 (page 163) - low - NEEDS REVIEW
+
+![42175-step-186](steps/main-186/picture.png)
+
+**New parts:** ao-tb-1 (41677, black) - black thin oval beam (yellow box)
+
+**Touches:** A black thin oval beam is pressed on the connector at the end of the orange rail (arrow).
+
+**Exact joins:** ao-tb-1.axlehole1 into ao-cn-1.axlehole? (not shown in booklet)
+
+**Who does what:** ao-tb-1 holds ao-bar-1
+
+**After:** the orange rail is held by a thin beam; everything else: no change
+
+**Why:** Locks the orange rail in its connector. A thin beam across the end prevents it sliding out. *Next:* Step 187 adds caps. *Pattern:* rail lock
+
+**Big picture:**
+- **ao-tb-1** (None): None
+
+**Mechanisms:**
+- **ao-tb-1** builds on ao-cn-1 (42175-step-185), which rests on ao-dp-1 (42175-step-185), ao-tile-1 (42175-step-185)
+
+**Review:** Hole not countable.
+
+## 42175-step-187 (page 164) - low - NEEDS REVIEW
+
+![42175-step-187](steps/main-187/picture.png)
+
+**New parts:** ar-plate-1 (6141, trans-orange) - small round plate (looks tan or trans-orange); ar-dome-1 (85861, black) - small black round plate with open stud (sub-step 1); ar-clip-1 (3484, black) - black bar with clip (sub-step 2)
+
+**Touches:** Yellow box 1-2: the round plate goes onto the black round plate (1), a clip is added underneath (2). The lamp is placed on the roof (arrow).
+
+**Exact joins:** ar-plate-1.stud? into ar-dome-1.stud? (not shown in booklet); ar-clip-1.clip? into ar-dome-1.stud? (not shown in booklet)
+
+**Who does what:** ar-dome-1 carries ar-plate-1; ar-clip-1 holds ar-dome-1
+
+**After:** a little amber lamp with a clip sits on the roof's rear top; everything else: no change
+
+**Why:** Adds the amber warning beacon. A round plate in a clip looks like a light. *Next:* Step 188 builds the matching one for the other side. *Pattern:* beacon
+
+**Big picture:**
+- **ar-plate-1** (None): None
+- **ar-dome-1** (None): None
+- **ar-clip-1** (None): None
+
+**Review:** The plate colour reads tan on the page; the catalog has trans-orange 6141. The icon cannot tell them apart.
+
+## 42175-step-188 (page 165) - low - NEEDS REVIEW
+
+![42175-step-188](steps/main-188/picture.png)
+
+**New parts:** ah-tile-1 (98138, trans-clear) - small white round tile (icon); ah-dp-1 (61332, black) - small dark pin; ah-cn-1 (6536, black) - black perpendicular connector
+
+**Touches:** Yellow box 1-2: a dark pin goes in a black connector (1), a white tile caps it (2). The finished piece is placed on the rear of the frame (arrow).
+
+**Exact joins:** ah-dp-1.pin1 into ah-cn-1.hole1 (0.9 hole deep, held stiff by friction); ah-tile-1.stud? into ah-dp-1.barhole? (not shown in booklet)
+
+**Who does what:** ah-cn-1 holds ah-dp-1; ah-dp-1 carries ah-tile-1
+
+**After:** a capped pin connector is fitted at the rear of the frame; everything else: no change
+
+**Why:** Adds a small light fitting at the rear. A tile on a pin looks like a lamp. *Next:* Step 189 builds the orange fittings. *Pattern:* rear lamp
+
+**Big picture:**
+- **ah-tile-1** (None): None
+- **ah-dp-1** (None): None
+- **ah-cn-1** (None): None
+
+**Review:** The model is shown turned around; positions estimated.
+
+## 42175-step-189 (page 166) - low - NEEDS REVIEW
+
+![42175-step-189](steps/main-189/picture.png)
+
+**New parts:** of-ball-1 (52730, dark bluish gray) - dark grey ball-joint part (sub-step 3); of-rax-1 (32062, red) - five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); of-rax-2 (32062, red) - five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); of-rax-3 (32062, red) - five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); of-rax-4 (32062, red) - five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); of-rax-5 (32062, red) - five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); of-bp-1 (43093, blue) - two blue pins; of-bp-2 (43093, blue) - two blue pins; of-ang-1 (32014, orange) - two orange angled connectors (sub-steps 1-2); of-ang-2 (32014, orange) - two orange angled connectors (sub-steps 1-2); of-cyl-1 (59443, orange) - four orange smooth axle connectors (sub-step 4 and yellow box, 2x); of-cyl-2 (59443, orange) - four orange smooth axle connectors (sub-step 4 and yellow box, 2x); of-cyl-3 (59443, orange) - four orange smooth axle connectors (sub-step 4 and yellow box, 2x); of-cyl-4 (59443, orange) - four orange smooth axle connectors (sub-step 4 and yellow box, 2x); of-tb-1 (41677, black) - two black thin ovals; of-tb-2 (41677, black) - two black thin ovals
+
+**Touches:** Sub-steps 1-8 (5-8 are on page 167) and a yellow box: red axles go into an orange angled connector (1), a second orange angled connector is added (2), a dark grey ball part is added (3), and two orange smooth connectors with red axles are pushed on the two open ends (4, 2x box).
+
+**Exact joins:** of-rax-1.axle1 into of-ang-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); of-rax-2.axle1 into of-ang-1.axlehole2 (1 hole deep, locked (turn together), estimated from the picture); of-rax-3.axle1 into of-ang-2.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); of-ang-2.axlehole2 into of-ball-1.axle1? (not shown in booklet); of-rax-4.axle1 into of-cyl-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); of-rax-5.axle1 into of-cyl-2.axlehole1 (1 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** of-ang-1 carries of-rax-1; of-ang-2 holds of-ball-1; of-cyl-1 carries of-rax-4
+
+**After:** an orange two-arm fitting with a grey ball, red axles, black ovals and a blue pin is ready to be placed on the rear of the frame; everything else: no change
+
+**Why:** Builds the orange hose-end fitting used as the engine breather on the model. Angled connectors and axle connectors make a rigid pipe shape. *Next:* The next pages show where it goes. *Pattern:* orange fitting
+
+**Big picture:**
+- **of-ball-1** (None): None
+- **of-rax-1** (None): None
+- **of-rax-2** (None): None
+- **of-rax-3** (None): None
+- **of-rax-4** (None): None
+- **of-rax-5** (None): None
+- **of-bp-1** (None): None
+- **of-bp-2** (None): None
+- **of-ang-1** (None): None
+- **of-ang-2** (None): None
+- **of-cyl-1** (None): None
+- **of-cyl-2** (None): None
+- **of-cyl-3** (None): None
+- **of-cyl-4** (None): None
+- **of-tb-1** (None): None
+- **of-tb-2** (None): None
+
+**Review:** The part list at the top shows 1x ball part, 5x red axles, 2x blue pins, 2x orange angled connectors, 4x orange axle connectors and 2x thin black ovals. Sub-steps 5-8 are on page 167: a red axle goes in the first orange arm and a black thin oval is slid on it (7), then a blue pin goes through the oval into the second arm (8). The finished fitting is placed on the frame's left rear on page 168 (arrow, no number).
+
+## 42175-step-190 (page 169) - low - NEEDS REVIEW
+
+![42175-step-190](steps/main-190/picture.png)
+
+**New parts:** of2-pl-1 (18677, black) - black 1 x 2 plate with pin hole underneath (sub-step 1); of2-tile-1 (3069b, black) - black 1 x 2 tile with sticker no. 14 (sub-steps 2-3); of2-dp-1 (61332, black) - small dark pin (sub-step 1)
+
+**Touches:** Yellow box 1-3: a plate with a dark pin (1), a tile on top (2), the sticker (no. 14) on the tile (3). The finished piece is placed at the foot of the orange fitting (arrow).
+
+**Exact joins:** of2-dp-1.pin1 into of2-pl-1.hole? (not shown in booklet); of2-tile-1.stud? into of2-pl-1.stud? (not shown in booklet)
+
+**Who does what:** of2-pl-1 carries of2-tile-1; of2-dp-1 holds of2-pl-1
+
+**After:** a small sticker tile sits at the foot of the orange fitting; everything else: no change
+
+**Why:** Adds a label tile on the machine's rear-left. The same pattern as step 183. *Next:* Steps 191-198 build a second orange fitting. *Pattern:* label tile
+
+**Big picture:**
+- **of2-pl-1** (None): None
+- **of2-tile-1** (None): None
+- **of2-dp-1** (None): None
+
+**Review:** Page 168 shows the orange fitting of step 189 placed on the frame without a step number.
+
+## 42175-step-191 (page 170) - low - NEEDS REVIEW
+
+![42175-step-191](steps/main-191/picture.png)
+
+**New parts:** of3-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3); of3-ang-1 (32013, orange) - orange angled axle and pin connector
+
+**Touches:** The yellow 3-long axle is pushed into an orange angled connector.
+
+**Exact joins:** of3-yax-1.axle1 into of3-ang-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** of3-ang-1 carries of3-yax-1
+
+**After:** an orange angled connector has a yellow axle; everything else: no change
+
+**Why:** Starts the second orange fitting. The yellow axle is the core of the fitting. *Next:* Step 192 adds orange sleeves. *Pattern:* fitting start
+
+**Big picture:**
+- **of3-yax-1** (None): None Later: 42175-step-192 `CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED`; 42175-step-192 `DOES of3-cyl-1 HOLDS of3-yax-1`.
+- **of3-ang-1** (None): None Later: 42175-step-194 `CONNECT of3-bp-1.pin1 -> of3-ang-1.hole?`; 42175-step-195 `DOES of3-ang-1 CARRIES of3-ang2-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
+
+**Review:** Icon-based identity of the orange connector.
+
+## 42175-step-192 (page 170) - low - NEEDS REVIEW
+
+![42175-step-192](steps/main-192/picture.png)
+
+**New parts:** of3-cyl-1 (59443, orange) - orange smooth axle connector pushed onto the yellow axle (green arrow); of3-rc-1 (18654, orange) - small orange round pin connector (icon)
+
+**Touches:** Two small orange parts: a sleeve is pushed onto the yellow axle (green arrows) and a small round connector is added.
+
+**Exact joins:** of3-cyl-1.axlehole1 into of3-yax-1.axle2 (1 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** of3-cyl-1 holds of3-yax-1
+
+**After:** the yellow axle is covered by an orange sleeve; everything else: no change
+
+**Why:** Builds the orange outer tube. A sleeve covers the axle so it looks like a pipe. *Next:* Step 193 adds the black axle. *Pattern:* pipe sleeve
+
+**Big picture:**
+- **of3-cyl-1** (None): None Later: 42175-step-193 `CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?`; 42175-step-193 `DOES of3-cyl-1 CARRIES of3-ax6-1`.
+- **of3-rc-1** (None): None
+
+**Mechanisms:**
+- **of3-cyl-1** builds on of3-yax-1 (42175-step-191), which rests on of3-ang-1 (42175-step-191)
+
+**Review:** The round orange part is shown in the box but not placed; it is used in step 198.
+
+## 42175-step-193 (page 170) - low - NEEDS REVIEW
+
+![42175-step-193](steps/main-193/picture.png)
+
+**New parts:** of3-ax6-1 (3706, black) - black 6-long axle (1:1 box, circled 6)
+
+**Touches:** The long black axle is pushed into the orange sleeve.
+
+**Exact joins:** of3-ax6-1.axle6 into of3-cyl-1.axlehole2? (not shown in booklet)
+
+**Who does what:** of3-cyl-1 carries of3-ax6-1
+
+**After:** a long black rod sticks out of the orange pipe; everything else: no change
+
+**Why:** Adds the piston rod of the fitting. A black rod in an orange pipe looks like a cylinder. *Next:* Step 194 locks it with a bush. *Pattern:* piston rod
+
+**Big picture:**
+- **of3-ax6-1** (None): None Later: 42175-step-194 `CONNECT of3-bush-1.axlehole1 -> of3-ax6-1.axle?`; 42175-step-194 `DOES of3-bush-1 HOLDS of3-ax6-1`.
+
+**Mechanisms:**
+- **of3-ax6-1** builds on of3-cyl-1 (42175-step-192), which rests on of3-yax-1 (42175-step-191)
+
+**Review:** Which axle end goes in is shown by the picture; joins estimated.
+
+## 42175-step-194 (page 171) - low - NEEDS REVIEW
+
+![42175-step-194](steps/main-194/picture.png)
+
+**New parts:** of3-bp-1 (43093, blue) - blue pin in the connector end; of3-bush-1 (32123b, yellow) - yellow bush pushed onto the black rod (green arrow)
+
+**Touches:** A yellow bush is pushed on the black rod (green arrow); a blue pin sits in the angled connector.
+
+**Exact joins:** of3-bp-1.pin1 into of3-ang-1.hole? (not shown in booklet); of3-bush-1.axlehole1 into of3-ax6-1.axle? (not shown in booklet)
+
+**Who does what:** of3-bush-1 holds of3-ax6-1
+
+**After:** the black rod has a yellow stop and the angled end has a blue pin; everything else: no change
+
+**Why:** Stops the rod from sliding out. A bush is a simple stopper. *Next:* Step 195 adds a second angled connector. *Pattern:* rod stop
+
+**Big picture:**
+- **of3-bp-1** (None): None Later: 42175-step-195 `CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?`.
+- **of3-bush-1** (None): None
+
+**Mechanisms:**
+- **of3-bp-1** builds on of3-ang-1 (42175-step-191), which rests on of3-yax-1 (42175-step-191)
+- **of3-bush-1** builds on of3-ax6-1 (42175-step-193), which rests on of3-cyl-1 (42175-step-192)
+
+**Review:** Which rod length the bush sits at is estimated.
+
+## 42175-step-195 (page 171) - low - NEEDS REVIEW
+
+![42175-step-195](steps/main-195/picture.png)
+
+**New parts:** of3-ang2-1 (32015, orange) - orange angled connector 112.5 degrees
+
+**Touches:** A second orange angled connector is fitted at the elbow (picture).
+
+**Exact joins:** of3-ang2-1.axlehole1 into of3-bp-1.pin? (not shown in booklet)
+
+**Who does what:** of3-ang-1 carries of3-ang2-1
+
+**After:** an orange pipe has two elbows at its end; everything else: no change
+
+**Why:** Builds the bend of the fitting. Two angled connectors make a bent pipe. *Next:* Step 196 adds a thin orange rod. *Pattern:* elbow
+
+**Big picture:**
+- **of3-ang2-1** (None): None Later: 42175-step-196 `CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?`; 42175-step-196 `DOES of3-ang2-1 CARRIES of3-hose-1`.
+
+**Mechanisms:**
+- **of3-ang2-1** builds on of3-bp-1 (42175-step-194), which rests on of3-ang-1 (42175-step-191)
+
+**Review:** Identity of the second connector read from its angle.
+
+## 42175-step-196 (page 171) - low - NEEDS REVIEW
+
+![42175-step-196](steps/main-196/picture.png)
+
+**New parts:** of3-hose-1 (32580, orange) - orange 7-long soft axle hose
+
+**Touches:** The thin orange hose is pushed into the second elbow, hanging down.
+
+**Exact joins:** of3-hose-1.axlehole? into of3-ang2-1.axlehole? (not shown in booklet)
+
+**Who does what:** of3-ang2-1 carries of3-hose-1
+
+**After:** an orange hose hangs from the second elbow; everything else: no change
+
+**Why:** Adds the long orange arm of the fitting. A soft hose is the thin arm. *Next:* Step 197 adds the last elbow. *Pattern:* orange arm
+
+**Big picture:**
+- **of3-hose-1** (None): None Later: 42175-step-197 `CONNECT of3-ang3-1.axlehole1 -> of3-hose-1.axlehole?`; 42175-step-197 `DOES of3-hose-1 CARRIES of3-ang3-1`.
+
+**Mechanisms:**
+- **of3-hose-1** builds on of3-ang2-1 (42175-step-195), which rests on of3-bp-1 (42175-step-194)
+
+**Review:** Hose has no catalog points; joins are open.
+
+## 42175-step-197 (page 172) - low - NEEDS REVIEW
+
+![42175-step-197](steps/main-197/picture.png)
+
+**New parts:** of3-ang3-1 (32016, orange) - orange angled connector 157.5 degrees at the hose end
+
+**Touches:** The last orange connector is fitted at the free end of the hose.
+
+**Exact joins:** of3-ang3-1.axlehole1 into of3-hose-1.axlehole? (not shown in booklet)
+
+**Who does what:** of3-hose-1 carries of3-ang3-1
+
+**After:** the orange fitting has a connector at the hose's free end; everything else: no change
+
+**Why:** Finishes the arm with a foot. The last bend sets the foot. *Next:* Step 198 adds a small foot cap. *Pattern:* foot
+
+**Big picture:**
+- **of3-ang3-1** (None): None Later: 42175-step-198 `CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?`; 42175-step-198 `DOES of3-ang3-1 CARRIES of3-rax-1`.
+
+**Mechanisms:**
+- **of3-ang3-1** builds on of3-hose-1 (42175-step-196), which rests on of3-ang2-1 (42175-step-195)
+
+**Review:** Identity read from the angle.
+
+## 42175-step-198 (page 172) - low - NEEDS REVIEW
+
+![42175-step-198](steps/main-198/picture.png)
+
+**New parts:** of3-rax-1 (32062, red) - red 2-long notched axle (icon); of3-ro-1 (18654, orange) - small orange round pin connector (green arrow)
+
+**Touches:** A red axle goes into the foot connector and an orange round cap is pushed on it (green arrow).
+
+**Exact joins:** of3-rax-1.axle1 into of3-ang3-1.axlehole? (not shown in booklet); of3-ro-1.axlehole? into of3-rax-1.axle2? (not shown in booklet)
+
+**Who does what:** of3-ang3-1 carries of3-rax-1; of3-rax-1 holds of3-ro-1
+
+**After:** the orange fitting is complete with a capped foot; everything else: no change
+
+**Why:** Finishes the second orange fitting. A cap hides the axle end. *Next:* Step 199 places it on the frame. *Pattern:* foot cap
+
+**Big picture:**
+- **of3-rax-1** (None): None
+- **of3-ro-1** (None): None
+
+**Mechanisms:**
+- **of3-rax-1** builds on of3-ang3-1 (42175-step-197), which rests on of3-hose-1 (42175-step-196)
+
+**Review:** Part identities are likely; picture is small.
+
+## 42175-step-199 (page 173) - medium - NEEDS REVIEW
+
+![42175-step-199](steps/main-199/picture.png)
+
+**New parts:** 
+
+**Touches:** The second orange fitting is placed on the frame's rear-left, above the first one (arrow). The model is finished.
+
+**Exact joins:** of3-ang-1.hole? into uc-frame-1.hole? (not shown in booklet)
+
+**Who does what:** uc-frame-1 holds of3-ang-1
+
+**After:** the excavator is complete with both orange fittings; everything else: no change
+
+**Why:** Finishes the model. The two orange fittings are the last decoration. *Next:* Done. *Pattern:* finish
+
+**Big picture:**
+
+
+**Review:** Which frame holes take it is not shown.

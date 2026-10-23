@@ -1,0 +1,5 @@
+STEP 193
+ADD of3-ax6-1 3706 black
+CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?
+DOES of3-cyl-1 CARRIES of3-ax6-1
+PATTERN long_axle

@@ -1,0 +1,33 @@
+{
+  "example_id": "42175-step-199",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 173,
+  "step": 199,
+  "input": {
+    "picture": "steps/main-199/picture.png",
+    "parts_box": [],
+    "model_so_far": "Excavator with the first orange fitting at the rear left (step 189-190) and the second orange fitting (steps 191-198)."
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "The second orange fitting is placed on the frame's rear-left, above the first one (arrow). The model is finished."
+    ],
+    "who_does_what_to_which": [
+      "uc-frame-1 holds of3-ang-1"
+    ],
+    "where_everything_is_after": [
+      "the excavator is complete with both orange fittings",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Finishes the model.",
+      "why_these_parts": "The two orange fittings are the last decoration.",
+      "sets_up_for_later": "Done.",
+      "design_pattern": "finish"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which frame holes take it is not shown."
+}

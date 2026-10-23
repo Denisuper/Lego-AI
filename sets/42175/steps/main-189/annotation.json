@@ -1,0 +1,261 @@
+{
+  "example_id": "42175-step-189",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 166,
+  "step": 189,
+  "input": {
+    "picture": "steps/main-189/picture.png",
+    "parts_box": [
+      {
+        "name": "of-ball-1",
+        "part_number": "52730",
+        "count": 1
+      },
+      {
+        "name": "of-rax-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "of-rax-2",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "of-rax-3",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "of-rax-4",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "of-rax-5",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "of-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "of-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "of-ang-1",
+        "part_number": "32014",
+        "count": 1
+      },
+      {
+        "name": "of-ang-2",
+        "part_number": "32014",
+        "count": 1
+      },
+      {
+        "name": "of-cyl-1",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "of-cyl-2",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "of-cyl-3",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "of-cyl-4",
+        "part_number": "59443",
+        "count": 1
+      },
+      {
+        "name": "of-tb-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "of-tb-2",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the orange hose fitting; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of-ball-1",
+        "part_number": "52730",
+        "catalog_name": "Technic Steering / CV Ball Joint Female 4L",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "dark grey ball-joint part (sub-step 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-rax-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-rax-2",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-rax-3",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-rax-4",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-rax-5",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-ang-1",
+        "part_number": "32014",
+        "catalog_name": "Technic Axle and Pin Connector Angled #6 - 90 deg",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "two orange angled connectors (sub-steps 1-2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-ang-2",
+        "part_number": "32014",
+        "catalog_name": "Technic Axle and Pin Connector Angled #6 - 90 deg",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "two orange angled connectors (sub-steps 1-2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-cyl-1",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "four orange smooth axle connectors (sub-step 4 and yellow box, 2x)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-cyl-2",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "four orange smooth axle connectors (sub-step 4 and yellow box, 2x)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-cyl-3",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "four orange smooth axle connectors (sub-step 4 and yellow box, 2x)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-cyl-4",
+        "part_number": "59443",
+        "catalog_name": "Technic Axle Connector Smooth [with x Hole + Orientation]",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "four orange smooth axle connectors (sub-step 4 and yellow box, 2x)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-tb-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin ovals",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of-tb-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin ovals",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-8 (5-8 are on page 167) and a yellow box: red axles go into an orange angled connector (1), a second orange angled connector is added (2), a dark grey ball part is added (3), and two orange smooth connectors with red axles are pushed on the two open ends (4, 2x box)."
+    ],
+    "who_does_what_to_which": [
+      "of-ang-1 carries of-rax-1",
+      "of-ang-2 holds of-ball-1",
+      "of-cyl-1 carries of-rax-4"
+    ],
+    "where_everything_is_after": [
+      "an orange two-arm fitting with a grey ball, red axles, black ovals and a blue pin is ready to be placed on the rear of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the orange hose-end fitting used as the engine breather on the model.",
+      "why_these_parts": "Angled connectors and axle connectors make a rigid pipe shape.",
+      "sets_up_for_later": "The next pages show where it goes.",
+      "design_pattern": "orange fitting"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The part list at the top shows 1x ball part, 5x red axles, 2x blue pins, 2x orange angled connectors, 4x orange axle connectors and 2x thin black ovals. Sub-steps 5-8 are on page 167: a red axle goes in the first orange arm and a black thin oval is slid on it (7), then a blue pin goes through the oval into the second arm (8). The finished fitting is placed on the frame's left rear on page 168 (arrow, no number)."
+}

@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-191",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 170,
+  "step": 191,
+  "input": {
+    "picture": "steps/main-191/picture.png",
+    "parts_box": [
+      {
+        "name": "of3-yax-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "of3-ang-1",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the second orange hose fitting; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of3-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "of3-ang-1",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "orange angled axle and pin connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The yellow 3-long axle is pushed into an orange angled connector."
+    ],
+    "who_does_what_to_which": [
+      "of3-ang-1 carries of3-yax-1"
+    ],
+    "where_everything_is_after": [
+      "an orange angled connector has a yellow axle",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the second orange fitting.",
+      "why_these_parts": "The yellow axle is the core of the fitting.",
+      "sets_up_for_later": "Step 192 adds orange sleeves.",
+      "design_pattern": "fitting start"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Icon-based identity of the orange connector."
+}

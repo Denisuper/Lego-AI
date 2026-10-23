@@ -1,0 +1,78 @@
+{
+  "example_id": "42175-step-188",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 165,
+  "step": 188,
+  "input": {
+    "picture": "steps/main-188/picture.png",
+    "parts_box": [
+      {
+        "name": "ah-tile-1",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "ah-dp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "ah-cn-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Roof with beacon (step 187); model turned."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ah-tile-1",
+        "part_number": "98138",
+        "catalog_name": "Tile Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "likely",
+        "position": "small white round tile (icon)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ah-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small dark pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ah-cn-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black perpendicular connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-2: a dark pin goes in a black connector (1), a white tile caps it (2). The finished piece is placed on the rear of the frame (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "ah-cn-1 holds ah-dp-1",
+      "ah-dp-1 carries ah-tile-1"
+    ],
+    "where_everything_is_after": [
+      "a capped pin connector is fitted at the rear of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a small light fitting at the rear.",
+      "why_these_parts": "A tile on a pin looks like a lamp.",
+      "sets_up_for_later": "Step 189 builds the orange fittings.",
+      "design_pattern": "rear lamp"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The model is shown turned around; positions estimated."
+}

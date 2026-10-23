@@ -1,0 +1,8 @@
+STEP 198
+ADD of3-rax-1 32062 red
+ADD of3-ro-1 18654 orange
+CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?
+CONNECT of3-ro-1.axlehole? -> of3-rax-1.axle2?
+DOES of3-ang3-1 CARRIES of3-rax-1
+DOES of3-rax-1 HOLDS of3-ro-1
+PATTERN foot_cap

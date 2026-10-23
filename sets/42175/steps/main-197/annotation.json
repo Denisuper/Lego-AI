@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-197",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 172,
+  "step": 197,
+  "input": {
+    "picture": "steps/main-197/picture.png",
+    "parts_box": [
+      {
+        "name": "of3-ang3-1",
+        "part_number": "32016",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Orange fitting with a hose arm (step 196)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of3-ang3-1",
+        "part_number": "32016",
+        "catalog_name": "Technic Axle and Pin Connector Angled #3 - 157.5 deg",
+        "color": "Orange",
+        "part_match": "likely",
+        "position": "orange angled connector 157.5 degrees at the hose end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The last orange connector is fitted at the free end of the hose."
+    ],
+    "who_does_what_to_which": [
+      "of3-hose-1 carries of3-ang3-1"
+    ],
+    "where_everything_is_after": [
+      "the orange fitting has a connector at the hose's free end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Finishes the arm with a foot.",
+      "why_these_parts": "The last bend sets the foot.",
+      "sets_up_for_later": "Step 198 adds a small foot cap.",
+      "design_pattern": "foot"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Identity read from the angle."
+}

@@ -4834,3 +4834,344 @@ CONNECT fl-pl-1.hole? -> fl-bp-1.axle1?
 DOES fl-cn-1 HOLDS fl-bp-1
 DOES fl-pl-1 SUPPORTS fl-tile-1
 PATTERN fitting_with_tile
+
+STEP 184
+THINK have Cab roof with orange hose and fitting (steps 178-183).
+THINK goal Builds the rear-right roof corner fitting.
+THINK part ag-rax-1 (32062 Technic Axle 2 Notched): red 2-long notched axle (sub-step 1); fixed
+THINK part ag-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (sub-step 1); fixed
+THINK part ag-cap-1 (98138 Tile Round 1 x 1): small black round tile (sub-step 2); fixed
+THINK part ag-ang-1 (32015 Technic Axle and Pin Connector Angled #5 - 112.5 deg): black angled axle and pin connector, 112.5 degrees (sub-step 1); fixed
+THINK part ag-ball-1 (32291 Technic Axle and Pin Connector Perpendicular Double): dark grey double axle and pin connector (sub-step 2, joined to the angled one); fixed
+THINK touches Yellow box 1-2: a red axle and a blue pin go in the angled black connector (1); a black round cap goes on the blue pin and a second dark connector joins (2). The finished piece is placed at the rear of the roof's right side (arrow with a green guide line).
+THINK does ag-ang-1 carries ag-rax-1
+THINK does ag-ang-1 holds ag-bp-1
+THINK why An angled connector turns a straight rod into a corner.
+THINK check ag-rax-1.axle1 goes into ag-ang-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check ag-bp-1.pin1 goes into ag-ang-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ag-ang-1.axlehole2 goes into ag-ball-1.axlehole1? (not shown in the booklet)
+THINK check ag-cap-1.stud? goes into ag-bp-1.pin? (not shown in the booklet)
+THINK later Step 185 builds the rear-left corner. Pattern: roof corner
+ADD ag-rax-1 32062 red
+ADD ag-bp-1 43093 blue
+ADD ag-cap-1 98138 black
+ADD ag-ang-1 32015 black
+ADD ag-ball-1 32291 darkgray
+CONNECT ag-rax-1.axle1 -> ag-ang-1.axlehole1~ LOCKED
+CONNECT ag-bp-1.pin1 -> ag-ang-1.hole1~ STIFF
+CONNECT ag-ang-1.axlehole2 -> ag-ball-1.axlehole1?
+CONNECT ag-cap-1.stud? -> ag-bp-1.pin?
+DOES ag-ang-1 CARRIES ag-rax-1
+DOES ag-ang-1 HOLDS ag-bp-1
+PATTERN elbow_with_end_cap
+
+STEP 185
+THINK have Cab roof with a corner fitting (step 184).
+THINK goal Adds the orange rail (the real machine's rear handle) on the roof.
+THINK part ao-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin (sub-step 1, green arrow); fixed
+THINK part ao-cn-1 (6536 Technic Axle and Pin Connector Perpendicular): black perpendicular connector (sub-step 1); fixed
+THINK part ao-bar-1 (63965 Bar 6L with Stop Ring): orange 6-long bar with stop ring (sub-step 3); fixed
+THINK part ao-tile-1 (98138 Tile Round 1 x 1): small white round tile on the connector (sub-step 2); fixed
+THINK touches Yellow box 1-3: a dark pin goes in a black connector (1), a white tile caps the pin (2), the orange bar goes in the other hole (3). The finished piece is placed on the roof (arrow).
+THINK does ao-cn-1 carries ao-bar-1
+THINK does ao-cn-1 holds ao-dp-1
+THINK why A bar with a stop ring is easy to see and grab.
+THINK check ao-dp-1.pin1 goes into ao-cn-1.hole1, 0.9 hole deep, held stiff by friction
+THINK check ao-tile-1.stud? goes into ao-cn-1.hole? (not shown in the booklet)
+THINK check ao-bar-1.bar? goes into ao-cn-1.hole? (not shown in the booklet)
+THINK later Step 186 locks it with a thin beam. Pattern: orange rail
+ADD ao-dp-1 61332 black
+ADD ao-cn-1 6536 black
+ADD ao-bar-1 63965 orange
+ADD ao-tile-1 98138 clear
+CONNECT ao-dp-1.pin1 -> ao-cn-1.hole1 STIFF
+CONNECT ao-tile-1.stud? -> ao-cn-1.hole?
+CONNECT ao-bar-1.bar? -> ao-cn-1.hole?
+DOES ao-cn-1 CARRIES ao-bar-1
+DOES ao-cn-1 HOLDS ao-dp-1
+PATTERN bar_with_connector
+
+STEP 186
+THINK have Roof with orange rail (step 185).
+THINK goal Locks the orange rail in its connector.
+THINK part ao-tb-1 (41677 Technic Beam 1 x 2 Thin): black thin oval beam (yellow box); fixed
+THINK touches A black thin oval beam is pressed on the connector at the end of the orange rail (arrow).
+THINK does ao-tb-1 holds ao-bar-1
+THINK why A thin beam across the end prevents it sliding out.
+THINK check ao-tb-1.axlehole1 goes into ao-cn-1.axlehole? (not shown in the booklet)
+THINK builds_on ao-tb-1 builds on ao-cn-1 (42175-step-185), and rests on ao-dp-1 (42175-step-185), ao-tile-1 (42175-step-185)
+THINK later Step 187 adds caps. Pattern: rail lock
+ADD ao-tb-1 41677 black
+CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?
+DOES ao-tb-1 HOLDS ao-bar-1
+PATTERN lock_beam
+
+STEP 187
+THINK have Roof with locked orange rail (step 186).
+THINK goal Adds the amber warning beacon.
+THINK part ar-plate-1 (6141 Plate Round 1 x 1 with Solid Stud): small round plate (looks tan or trans-orange); fixed
+THINK part ar-dome-1 (85861 Plate Round 1 x 1 with Open Stud): small black round plate with open stud (sub-step 1); fixed
+THINK part ar-clip-1 (3484 Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip]): black bar with clip (sub-step 2); fixed
+THINK touches Yellow box 1-2: the round plate goes onto the black round plate (1), a clip is added underneath (2). The lamp is placed on the roof (arrow).
+THINK does ar-dome-1 carries ar-plate-1
+THINK does ar-clip-1 holds ar-dome-1
+THINK why A round plate in a clip looks like a light.
+THINK check ar-plate-1.stud? goes into ar-dome-1.stud? (not shown in the booklet)
+THINK check ar-clip-1.clip? goes into ar-dome-1.stud? (not shown in the booklet)
+THINK later Step 188 builds the matching one for the other side. Pattern: beacon
+ADD ar-plate-1 6141 transorange
+ADD ar-dome-1 85861 black
+ADD ar-clip-1 3484 black
+CONNECT ar-plate-1.stud? -> ar-dome-1.stud?
+CONNECT ar-clip-1.clip? -> ar-dome-1.stud?
+DOES ar-dome-1 CARRIES ar-plate-1
+DOES ar-clip-1 HOLDS ar-dome-1
+PATTERN lamp
+
+STEP 188
+THINK have Roof with beacon (step 187); model turned.
+THINK goal Adds a small light fitting at the rear.
+THINK part ah-tile-1 (98138 Tile Round 1 x 1): small white round tile (icon); fixed
+THINK part ah-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin; fixed
+THINK part ah-cn-1 (6536 Technic Axle and Pin Connector Perpendicular): black perpendicular connector; fixed
+THINK touches Yellow box 1-2: a dark pin goes in a black connector (1), a white tile caps it (2). The finished piece is placed on the rear of the frame (arrow).
+THINK does ah-cn-1 holds ah-dp-1
+THINK does ah-dp-1 carries ah-tile-1
+THINK why A tile on a pin looks like a lamp.
+THINK check ah-dp-1.pin1 goes into ah-cn-1.hole1, 0.9 hole deep, held stiff by friction
+THINK check ah-tile-1.stud? goes into ah-dp-1.barhole? (not shown in the booklet)
+THINK later Step 189 builds the orange fittings. Pattern: rear lamp
+ADD ah-tile-1 98138 clear
+ADD ah-dp-1 61332 black
+ADD ah-cn-1 6536 black
+CONNECT ah-dp-1.pin1 -> ah-cn-1.hole1 STIFF
+CONNECT ah-tile-1.stud? -> ah-dp-1.barhole?
+DOES ah-cn-1 HOLDS ah-dp-1
+DOES ah-dp-1 CARRIES ah-tile-1
+PATTERN capped_pin
+
+STEP 189
+THINK have (new build: the orange hose fitting; nothing attached yet)
+THINK goal Builds the orange hose-end fitting used as the engine breather on the model.
+THINK part of-ball-1 (52730 Technic Steering / CV Ball Joint Female 4L): dark grey ball-joint part (sub-step 3); fixed
+THINK part of-rax-1 (32062 Technic Axle 2 Notched): five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); fixed
+THINK part of-rax-2 (32062 Technic Axle 2 Notched): five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); fixed
+THINK part of-rax-3 (32062 Technic Axle 2 Notched): five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); fixed
+THINK part of-rax-4 (32062 Technic Axle 2 Notched): five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); fixed
+THINK part of-rax-5 (32062 Technic Axle 2 Notched): five red 2-long notched axles (sub-steps 1, 2 and the 2x box in 4); fixed
+THINK part of-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins; fixed
+THINK part of-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins; fixed
+THINK part of-ang-1 (32014 Technic Axle and Pin Connector Angled #6 - 90 deg): two orange angled connectors (sub-steps 1-2); fixed
+THINK part of-ang-2 (32014 Technic Axle and Pin Connector Angled #6 - 90 deg): two orange angled connectors (sub-steps 1-2); fixed
+THINK part of-cyl-1 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): four orange smooth axle connectors (sub-step 4 and yellow box, 2x); fixed
+THINK part of-cyl-2 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): four orange smooth axle connectors (sub-step 4 and yellow box, 2x); fixed
+THINK part of-cyl-3 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): four orange smooth axle connectors (sub-step 4 and yellow box, 2x); fixed
+THINK part of-cyl-4 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): four orange smooth axle connectors (sub-step 4 and yellow box, 2x); fixed
+THINK part of-tb-1 (41677 Technic Beam 1 x 2 Thin): two black thin ovals; fixed
+THINK part of-tb-2 (41677 Technic Beam 1 x 2 Thin): two black thin ovals; fixed
+THINK touches Sub-steps 1-8 (5-8 are on page 167) and a yellow box: red axles go into an orange angled connector (1), a second orange angled connector is added (2), a dark grey ball part is added (3), and two orange smooth connectors with red axles are pushed on the two open ends (4, 2x box).
+THINK does of-ang-1 carries of-rax-1
+THINK does of-ang-2 holds of-ball-1
+THINK does of-cyl-1 carries of-rax-4
+THINK why Angled connectors and axle connectors make a rigid pipe shape.
+THINK check of-rax-1.axle1 goes into of-ang-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check of-rax-2.axle1 goes into of-ang-1.axlehole2, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check of-rax-3.axle1 goes into of-ang-2.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check of-ang-2.axlehole2 goes into of-ball-1.axle1? (not shown in the booklet)
+THINK check of-rax-4.axle1 goes into of-cyl-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check of-rax-5.axle1 goes into of-cyl-2.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK later The next pages show where it goes. Pattern: orange fitting
+ADD of-ball-1 52730 darkgray
+ADD of-rax-1 32062 red
+ADD of-rax-2 32062 red
+ADD of-rax-3 32062 red
+ADD of-rax-4 32062 red
+ADD of-rax-5 32062 red
+ADD of-bp-1 43093 blue
+ADD of-bp-2 43093 blue
+ADD of-ang-1 32014 orange
+ADD of-ang-2 32014 orange
+ADD of-cyl-1 59443 orange
+ADD of-cyl-2 59443 orange
+ADD of-cyl-3 59443 orange
+ADD of-cyl-4 59443 orange
+ADD of-tb-1 41677 black
+ADD of-tb-2 41677 black
+CONNECT of-rax-1.axle1 -> of-ang-1.axlehole1~ LOCKED
+CONNECT of-rax-2.axle1 -> of-ang-1.axlehole2~ LOCKED
+CONNECT of-rax-3.axle1 -> of-ang-2.axlehole1~ LOCKED
+CONNECT of-ang-2.axlehole2 -> of-ball-1.axle1?
+CONNECT of-rax-4.axle1 -> of-cyl-1.axlehole1~ LOCKED
+CONNECT of-rax-5.axle1 -> of-cyl-2.axlehole1~ LOCKED
+DOES of-ang-1 CARRIES of-rax-1
+DOES of-ang-2 HOLDS of-ball-1
+DOES of-cyl-1 CARRIES of-rax-4
+PATTERN hose_fitting
+
+STEP 190
+THINK have Excavator with the orange fitting placed at the rear left (page 168).
+THINK goal Adds a label tile on the machine's rear-left.
+THINK part of2-pl-1 (18677 Plate Special 1 x 2 with Pin Hole Underneath): black 1 x 2 plate with pin hole underneath (sub-step 1); fixed
+THINK part of2-tile-1 (3069b Tile 1 x 2 with Groove): black 1 x 2 tile with sticker no. 14 (sub-steps 2-3); fixed
+THINK part of2-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin (sub-step 1); fixed
+THINK touches Yellow box 1-3: a plate with a dark pin (1), a tile on top (2), the sticker (no. 14) on the tile (3). The finished piece is placed at the foot of the orange fitting (arrow).
+THINK does of2-pl-1 carries of2-tile-1
+THINK does of2-dp-1 holds of2-pl-1
+THINK why The same pattern as step 183.
+THINK check of2-dp-1.pin1 goes into of2-pl-1.hole? (not shown in the booklet)
+THINK check of2-tile-1.stud? goes into of2-pl-1.stud? (not shown in the booklet)
+THINK later Steps 191-198 build a second orange fitting. Pattern: label tile
+ADD of2-pl-1 18677 black
+ADD of2-tile-1 3069b black
+ADD of2-dp-1 61332 black
+CONNECT of2-dp-1.pin1 -> of2-pl-1.hole?
+CONNECT of2-tile-1.stud? -> of2-pl-1.stud?
+DOES of2-pl-1 CARRIES of2-tile-1
+DOES of2-dp-1 HOLDS of2-pl-1
+PATTERN fitting_with_tile
+
+STEP 191
+THINK have (new build: the second orange hose fitting; nothing attached yet)
+THINK goal Starts the second orange fitting.
+THINK part of3-yax-1 (4519 Technic Axle 3): yellow 3-long axle (1:1 box, circled 3); fixed
+THINK part of3-ang-1 (32013 Technic Axle and Pin Connector Angled #1): orange angled axle and pin connector; fixed
+THINK touches The yellow 3-long axle is pushed into an orange angled connector.
+THINK does of3-ang-1 carries of3-yax-1
+THINK why The yellow axle is the core of the fitting.
+THINK check of3-yax-1.axle1 goes into of3-ang-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK later Step 192 adds orange sleeves. Pattern: fitting start
+ADD of3-yax-1 4519 yellow
+ADD of3-ang-1 32013 orange
+CONNECT of3-yax-1.axle1 -> of3-ang-1.axlehole1~ LOCKED
+DOES of3-ang-1 CARRIES of3-yax-1
+PATTERN axle_in_connector
+
+STEP 192
+THINK have Orange connector with a yellow axle (step 191).
+THINK goal Builds the orange outer tube.
+THINK part of3-cyl-1 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): orange smooth axle connector pushed onto the yellow axle (green arrow); fixed
+THINK part of3-rc-1 (18654 Technic Pin Connector Round 1L [Beam]): small orange round pin connector (icon); fixed
+THINK touches Two small orange parts: a sleeve is pushed onto the yellow axle (green arrows) and a small round connector is added.
+THINK does of3-cyl-1 holds of3-yax-1
+THINK why A sleeve covers the axle so it looks like a pipe.
+THINK check of3-cyl-1.axlehole1 goes into of3-yax-1.axle2, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK builds_on of3-cyl-1 builds on of3-yax-1 (42175-step-191), and rests on of3-ang-1 (42175-step-191)
+THINK later Step 193 adds the black axle. Pattern: pipe sleeve
+ADD of3-cyl-1 59443 orange
+ADD of3-rc-1 18654 orange
+CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED
+DOES of3-cyl-1 HOLDS of3-yax-1
+PATTERN sleeve
+
+STEP 193
+THINK have Orange pipe start (step 192).
+THINK goal Adds the piston rod of the fitting.
+THINK part of3-ax6-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK touches The long black axle is pushed into the orange sleeve.
+THINK does of3-cyl-1 carries of3-ax6-1
+THINK why A black rod in an orange pipe looks like a cylinder.
+THINK check of3-ax6-1.axle6 goes into of3-cyl-1.axlehole2? (not shown in the booklet)
+THINK builds_on of3-ax6-1 builds on of3-cyl-1 (42175-step-192), and rests on of3-yax-1 (42175-step-191)
+THINK later Step 194 locks it with a bush. Pattern: piston rod
+ADD of3-ax6-1 3706 black
+CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?
+DOES of3-cyl-1 CARRIES of3-ax6-1
+PATTERN long_axle
+
+STEP 194
+THINK have Orange pipe with black rod (step 193).
+THINK goal Stops the rod from sliding out.
+THINK part of3-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin in the connector end; fixed
+THINK part of3-bush-1 (32123b Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced): yellow bush pushed onto the black rod (green arrow); fixed
+THINK touches A yellow bush is pushed on the black rod (green arrow); a blue pin sits in the angled connector.
+THINK does of3-bush-1 holds of3-ax6-1
+THINK why A bush is a simple stopper.
+THINK check of3-bp-1.pin1 goes into of3-ang-1.hole? (not shown in the booklet)
+THINK check of3-bush-1.axlehole1 goes into of3-ax6-1.axle? (not shown in the booklet)
+THINK builds_on of3-bp-1 builds on of3-ang-1 (42175-step-191), and rests on of3-yax-1 (42175-step-191)
+THINK builds_on of3-bush-1 builds on of3-ax6-1 (42175-step-193), and rests on of3-cyl-1 (42175-step-192)
+THINK later Step 195 adds a second angled connector. Pattern: rod stop
+ADD of3-bp-1 43093 blue
+ADD of3-bush-1 32123b yellow
+CONNECT of3-bp-1.pin1 -> of3-ang-1.hole?
+CONNECT of3-bush-1.axlehole1 -> of3-ax6-1.axle?
+DOES of3-bush-1 HOLDS of3-ax6-1
+PATTERN end_stop
+
+STEP 195
+THINK have Orange pipe with rod and stop (step 194).
+THINK goal Builds the bend of the fitting.
+THINK part of3-ang2-1 (32015 Technic Axle and Pin Connector Angled #5 - 112.5 deg): orange angled connector 112.5 degrees; fixed
+THINK touches A second orange angled connector is fitted at the elbow (picture).
+THINK does of3-ang-1 carries of3-ang2-1
+THINK why Two angled connectors make a bent pipe.
+THINK check of3-ang2-1.axlehole1 goes into of3-bp-1.pin? (not shown in the booklet)
+THINK builds_on of3-ang2-1 builds on of3-bp-1 (42175-step-194), and rests on of3-ang-1 (42175-step-191)
+THINK later Step 196 adds a thin orange rod. Pattern: elbow
+ADD of3-ang2-1 32015 orange
+CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?
+DOES of3-ang-1 CARRIES of3-ang2-1
+PATTERN second_elbow
+
+STEP 196
+THINK have Orange pipe with two elbows (step 195).
+THINK goal Adds the long orange arm of the fitting.
+THINK part of3-hose-1 (32580 Axle Hose Soft 7L): orange 7-long soft axle hose; fixed
+THINK touches The thin orange hose is pushed into the second elbow, hanging down.
+THINK does of3-ang2-1 carries of3-hose-1
+THINK why A soft hose is the thin arm.
+THINK check of3-hose-1.axlehole? goes into of3-ang2-1.axlehole? (not shown in the booklet)
+THINK builds_on of3-hose-1 builds on of3-ang2-1 (42175-step-195), and rests on of3-bp-1 (42175-step-194)
+THINK later Step 197 adds the last elbow. Pattern: orange arm
+ADD of3-hose-1 32580 orange
+CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?
+DOES of3-ang2-1 CARRIES of3-hose-1
+PATTERN hose_in_elbow
+
+STEP 197
+THINK have Orange fitting with a hose arm (step 196).
+THINK goal Finishes the arm with a foot.
+THINK part of3-ang3-1 (32016 Technic Axle and Pin Connector Angled #3 - 157.5 deg): orange angled connector 157.5 degrees at the hose end; fixed
+THINK touches The last orange connector is fitted at the free end of the hose.
+THINK does of3-hose-1 carries of3-ang3-1
+THINK why The last bend sets the foot.
+THINK check of3-ang3-1.axlehole1 goes into of3-hose-1.axlehole? (not shown in the booklet)
+THINK builds_on of3-ang3-1 builds on of3-hose-1 (42175-step-196), and rests on of3-ang2-1 (42175-step-195)
+THINK later Step 198 adds a small foot cap. Pattern: foot
+ADD of3-ang3-1 32016 orange
+CONNECT of3-ang3-1.axlehole1 -> of3-hose-1.axlehole?
+DOES of3-hose-1 CARRIES of3-ang3-1
+PATTERN end_elbow
+
+STEP 198
+THINK have Orange fitting with a foot connector (step 197).
+THINK goal Finishes the second orange fitting.
+THINK part of3-rax-1 (32062 Technic Axle 2 Notched): red 2-long notched axle (icon); fixed
+THINK part of3-ro-1 (18654 Technic Pin Connector Round 1L [Beam]): small orange round pin connector (green arrow); fixed
+THINK touches A red axle goes into the foot connector and an orange round cap is pushed on it (green arrow).
+THINK does of3-ang3-1 carries of3-rax-1
+THINK does of3-rax-1 holds of3-ro-1
+THINK why A cap hides the axle end.
+THINK check of3-rax-1.axle1 goes into of3-ang3-1.axlehole? (not shown in the booklet)
+THINK check of3-ro-1.axlehole? goes into of3-rax-1.axle2? (not shown in the booklet)
+THINK builds_on of3-rax-1 builds on of3-ang3-1 (42175-step-197), and rests on of3-hose-1 (42175-step-196)
+THINK later Step 199 places it on the frame. Pattern: foot cap
+ADD of3-rax-1 32062 red
+ADD of3-ro-1 18654 orange
+CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?
+CONNECT of3-ro-1.axlehole? -> of3-rax-1.axle2?
+DOES of3-ang3-1 CARRIES of3-rax-1
+DOES of3-rax-1 HOLDS of3-ro-1
+PATTERN foot_cap
+
+STEP 199
+THINK have Excavator with the first orange fitting at the rear left (step 189-190) and the second orange fitting (steps 191-198).
+THINK goal Finishes the model.
+THINK touches The second orange fitting is placed on the frame's rear-left, above the first one (arrow). The model is finished.
+THINK does uc-frame-1 holds of3-ang-1
+THINK why The two orange fittings are the last decoration.
+THINK check of3-ang-1.hole? goes into uc-frame-1.hole? (not shown in the booklet)
+THINK later Done. Pattern: finish
+CONNECT of3-ang-1.hole? -> uc-frame-1.hole?
+DOES uc-frame-1 HOLDS of3-ang-1
+PATTERN attach_fitting

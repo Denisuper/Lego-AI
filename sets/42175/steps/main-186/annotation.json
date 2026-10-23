@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-186",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 163,
+  "step": 186,
+  "input": {
+    "picture": "steps/main-186/picture.png",
+    "parts_box": [
+      {
+        "name": "ao-tb-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Roof with orange rail (step 185)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ao-tb-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin oval beam (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A black thin oval beam is pressed on the connector at the end of the orange rail (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "ao-tb-1 holds ao-bar-1"
+    ],
+    "where_everything_is_after": [
+      "the orange rail is held by a thin beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Locks the orange rail in its connector.",
+      "why_these_parts": "A thin beam across the end prevents it sliding out.",
+      "sets_up_for_later": "Step 187 adds caps.",
+      "design_pattern": "rail lock"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Hole not countable."
+}

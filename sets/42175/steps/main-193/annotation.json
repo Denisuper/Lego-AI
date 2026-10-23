@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-193",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 170,
+  "step": 193,
+  "input": {
+    "picture": "steps/main-193/picture.png",
+    "parts_box": [
+      {
+        "name": "of3-ax6-1",
+        "part_number": "3706",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Orange pipe start (step 192)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "of3-ax6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The long black axle is pushed into the orange sleeve."
+    ],
+    "who_does_what_to_which": [
+      "of3-cyl-1 carries of3-ax6-1"
+    ],
+    "where_everything_is_after": [
+      "a long black rod sticks out of the orange pipe",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the piston rod of the fitting.",
+      "why_these_parts": "A black rod in an orange pipe looks like a cylinder.",
+      "sets_up_for_later": "Step 194 locks it with a bush.",
+      "design_pattern": "piston rod"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which axle end goes in is shown by the picture; joins estimated."
+}
