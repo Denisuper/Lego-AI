@@ -1,5 +1,5 @@
 """Downloads what a set needs: official 3D model (LDraw OMR), parts list (Rebrickable, spares left out), booklet PDFs (LEGO).
-Usage: python tools/get_set.py <set number> <rebrickable dir>
+Usage: python tools/get_set.py <set number> <rebrickable dir or ->   ("-" = skip the parts list, only booklets + 3D model)
 <rebrickable dir> holds parts.csv, colors.csv, inventories.csv, inventory_parts.csv from cdn.rebrickable.com/media/downloads/.
 Writes sets/<set>/model.mpd (if one exists), sets/<set>/parts_list.csv, sets/<set>/booklet*.pdf."""
 import csv, os, re, sys, urllib.request
@@ -15,16 +15,17 @@ def get(url):
 
 
 # parts list
-inv = next((r["id"] for r in csv.DictReader(open(RB + "inventories.csv", encoding="utf-8")) if r["set_num"] == SET + "-1"), None)
-names = {r["part_num"]: r["name"] for r in csv.DictReader(open(RB + "parts.csv", encoding="utf-8"))}
-colors = {r["id"]: r["name"] for r in csv.DictReader(open(RB + "colors.csv", encoding="utf-8"))}
-rows = [r for r in csv.DictReader(open(RB + "inventory_parts.csv", encoding="utf-8")) if r["inventory_id"] == inv and r["is_spare"] in ("f", "False", "0")]
-with open(OUT + "parts_list.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f, lineterminator="\n")
-    w.writerow(["qty", "part_number", "colour", "name"])
-    for r in rows:
-        w.writerow([r["quantity"], r["part_num"], colors.get(r["color_id"], r["color_id"]), names.get(r["part_num"], "")])
-print(f"parts list: {sum(int(r['quantity']) for r in rows)} pieces, {len(rows)} lines")
+if RB != "-/":
+    inv = next((r["id"] for r in csv.DictReader(open(RB + "inventories.csv", encoding="utf-8")) if r["set_num"] == SET + "-1"), None)
+    names = {r["part_num"]: r["name"] for r in csv.DictReader(open(RB + "parts.csv", encoding="utf-8"))}
+    colors = {r["id"]: r["name"] for r in csv.DictReader(open(RB + "colors.csv", encoding="utf-8"))}
+    rows = [r for r in csv.DictReader(open(RB + "inventory_parts.csv", encoding="utf-8")) if r["inventory_id"] == inv and r["is_spare"] in ("f", "False", "0")]
+    with open(OUT + "parts_list.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(["qty", "part_number", "colour", "name"])
+        for r in rows:
+            w.writerow([r["quantity"], r["part_num"], colors.get(r["color_id"], r["color_id"]), names.get(r["part_num"], "")])
+    print(f"parts list: {sum(int(r['quantity']) for r in rows)} pieces, {len(rows)} lines")
 
 # booklet PDFs (main booklets only, not the alternate-model extras)
 page = get(f"https://www.lego.com/en-us/service/buildinginstructions/{SET}").decode("utf-8", "ignore")
