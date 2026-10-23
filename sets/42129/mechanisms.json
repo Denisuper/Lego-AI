@@ -1,0 +1,21 @@
+{
+  "about": "Mechanisms in 42129 as chains of parts in motion order.",
+  "mechanisms": [
+    {
+      "id": "steering_linkage",
+      "type": "linkage",
+      "name": "Steering Linkage",
+      "does": "Steers front wheels left and right",
+      "input": "steering_motor",
+      "output": "wheel_angle",
+      "chain": [
+        {
+          "part": "beam3-1",
+          "role": "structural support",
+          "link": "pin-1 and pin-2 inserted stiffly into beam3-1",
+          "status": "confirmed"
+        }
+      ]
+    }
+  ]
+}

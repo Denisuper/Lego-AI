@@ -1,0 +1,26 @@
+STEP 1
+THINK have Beginning of build; empty workspace.
+THINK goal Establishes base anchor beam for front frame section
+THINK part beam3-1 (32523 Technic Beam 1 x 3): at center frame origin; fixed
+THINK part pin-1 (2780 Technic Pin with Friction Ridges Lengthwise): in beam3-1 hole 1; fixed
+THINK part pin-2 (2780 Technic Pin with Friction Ridges Lengthwise): in beam3-1 hole 3; fixed
+THINK touches pin-1's pin1 goes into beam3-1's hole1 (stiff)
+THINK touches pin-2's pin1 goes into beam3-1's hole3 (stiff)
+THINK does beam3-1 holds pin-1
+THINK does beam3-1 holds pin-2
+THINK why 3-hole beam with friction pins provides rigid two-point mounting
+THINK role beam3-1 in the chassis frame: Front cross-member beam
+THINK role pin-1 in the chassis frame: Structural connector pin
+THINK role pin-2 in the chassis frame: Structural connector pin
+THINK check pin-1.pin1 goes into beam3-1.hole1, 0.9 hole deep, held stiff by friction
+THINK check pin-2.pin1 goes into beam3-1.hole3, 0.9 hole deep, held stiff by friction
+THINK mechanism beam3-1 becomes the structural support of the steering linkage
+THINK state steering_linkage has 1 of 1 parts, complete
+THINK later Allows perpendicular side beams to attach in step 2 Pattern: two-pin mount
+ADD beam3-1 32523 black
+ADD pin-1 2780 black
+ADD pin-2 2780 black
+CONNECT pin-1.pin1 -> beam3-1.hole1 STIFF
+CONNECT pin-2.pin1 -> beam3-1.hole3 STIFF
+MECH steering_linkage linkage beam3-1 structural_support
+STATE steering_linkage 1/1 COMPLETE
