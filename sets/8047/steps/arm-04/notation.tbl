@@ -1,8 +1,0 @@
-# What gear8-a meshes is not confirmed.
-ADD axle3-a2 4519 lightgray
-ADD gear8-a 3647 darkgray
-CONNECT gear8-a.axlehole1 -> axle3-a2.axle2 LOCKED
-CONNECT axle3-a2.axle1 -> conn3c-a1.hole1 TURNS
-DOES axle3-a2 CARRIES gear8-a
-DOES axle3-a2 SPINS_ON conn3c-a1
-PATTERN small_idler_gear

@@ -1,6 +1,0 @@
-STEP 40
-# Joins read from the arrows only.
-ATTACH boom
-CONNECT axle3-b.axle3 -> holder-a.hole6~ TURNS
-DOES holder-a CARRIES boom
-PATTERN side_build_attached

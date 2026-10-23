@@ -1,8 +1,0 @@
-STEP 4
-ADD axle-red-G 32062 red
-CONNECT axle-red-G.axle1 -> bentbeam-D.axlehole1 LOCKED
-ADD connector-H 6536 black
-CONNECT connector-H.axlehole1 -> axle-red-G.axle2 LOCKED
-DOES bentbeam-D HOLDS axle-red-G
-DOES axle-red-G CARRIES connector-H
-PATTERN change_direction

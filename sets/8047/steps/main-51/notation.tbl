@@ -1,9 +1,0 @@
-STEP 51
-# No arrows.
-ADD post-L 40490 black
-ADD post-R 40490 black
-CONNECT post-R.hole1 -> pin-50a.pin2 STIFF
-CONNECT post-L.hole1 -> pin-25a.pin2 STIFF
-DOES pin-50a HOLDS post-R
-DOES pin-25a HOLDS post-L
-PATTERN upright_posts

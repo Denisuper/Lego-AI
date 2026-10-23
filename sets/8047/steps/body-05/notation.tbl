@@ -1,7 +1,0 @@
-# Which pins fairing-2 uses is not visible.
-ADD fairing-2 87086 yellow
-CONNECT pin-b1.pin3 -> fairing-2.hole6~ STIFF
-CONNECT pin-b3.pin2 -> fairing-2.hole7~ STIFF
-DOES pin-b1 HOLDS fairing-2
-DOES pin-b3 HOLDS fairing-2
-PATTERN mirror_side

@@ -1,7 +1,0 @@
-STEP 41
-ADD thin4-1 2825 black
-ADD axle3-41 4519 lightgray
-CONNECT thin4-1.hole? -> arm.hole?
-CONNECT axle3-41.axle1 -> thin4-1.axlehole1~ LOCKED
-DOES thin4-1 HOLDS axle3-41
-PATTERN rod_mount

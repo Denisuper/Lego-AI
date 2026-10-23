@@ -1,8 +1,0 @@
-ADD axle9-s2 60485 lightgray
-ADD bush-s3 3713 lightgray
-CONNECT bush-s3.axlehole1 -> axle9-s2.axle5 LOCKED
-CONNECT axle9-s2.axle5~ -> block-s.axlehole1 LOCKED
-CONNECT axle9-s2.axle1 -> lbeam-s3.hole3~ TURNS
-DOES lbeam-s3 HOLDS axle9-s2
-DOES bush-s3 LOCKS axle9-s2
-PATTERN two_bar_frame

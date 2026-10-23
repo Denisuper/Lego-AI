@@ -4,3 +4,4 @@ __pycache__/
 training/out/
 sets/*/booklet*.pdf
 !sets/8047/booklet.pdf
+!sets/42175/booklet.pdf

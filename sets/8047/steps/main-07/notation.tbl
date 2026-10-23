@@ -1,9 +1,0 @@
-STEP 7
-ADD beam7-N 32524 black
-CONNECT pin-L.pin2 -> beam7-N.hole3 STIFF
-CONNECT pin-M.pin2 -> beam7-N.hole5 STIFF
-DOES pin-L LOCKS beam7-N
-DOES pin-M LOCKS beam7-N
-DOES beam7-N SUPPORTS bentbeam-D
-DOES beam7-N SUPPORTS bentbeam-I
-PATTERN closed_box_frame

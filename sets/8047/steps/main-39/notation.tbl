@@ -1,8 +1,0 @@
-STEP 39
-ADD conn3c-39 32184 lightgray
-ADD axle3-39 4519 lightgray
-CONNECT conn3c-39.axlehole1 -> axle4-a2.axle4 LOCKED
-CONNECT conn3c-39.axlehole2 -> axle5-36.axle1 LOCKED
-CONNECT axle3-39.axle1 -> curve-a1.axlehole3~ LOCKED
-DOES conn3c-39 HOLDS axle4-a2
-PATTERN two_point_mount

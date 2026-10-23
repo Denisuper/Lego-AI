@@ -1,8 +1,0 @@
-STEP 8
-ADD turntable-O 50163 darkgray
-CONNECT pin-E.pin2 -> turntable-O.hole2~ STIFF
-CONNECT pin-F.pin2 -> turntable-O.hole11~ STIFF
-DOES pin-E HOLDS turntable-O
-DOES pin-F HOLDS turntable-O
-DOES turntable-O.top SPINS_ON turntable-O.base
-PATTERN turntable_joint

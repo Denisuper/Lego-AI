@@ -1,4 +1,0 @@
-ADD axle3-a4 4519 lightgray
-CONNECT axle3-a4.axle1 -> beam3t-a2.axlehole2~ LOCKED
-DOES beam3t-a2 HOLDS axle3-a4
-PATTERN axle_as_pivot

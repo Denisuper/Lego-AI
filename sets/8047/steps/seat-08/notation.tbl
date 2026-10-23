@@ -1,4 +1,0 @@
-ADD lbeam-s3 32526 darkgray
-CONNECT axle9-s1.axle1 -> lbeam-s3.hole5~ TURNS
-DOES axle9-s1 CARRIES lbeam-s3
-PATTERN l_beam_side_plate

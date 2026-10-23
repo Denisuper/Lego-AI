@@ -1,6 +1,0 @@
-STEP 45
-ADD beam11-45 32525 yellow
-CONNECT beam11-45.hole1 -> tanpin-1.pin3 TURNS
-CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF
-DOES pin-44 LOCKS beam11-45
-PATTERN doubled_beam

@@ -1,8 +1,0 @@
-STEP 30
-# Exact holes for the body pins not visible.
-ATTACH body
-CONNECT pin-b2.pin3 -> bent11-A.hole6~ STIFF
-CONNECT pin-b1.pin3 -> bent11-B.hole6~ STIFF
-DOES bent11-A SUPPORTS body
-DOES bent11-B SUPPORTS body
-PATTERN side_build_attached
