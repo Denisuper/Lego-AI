@@ -1,6 +1,0 @@
-STEP 82
-ADD bm-b15d-1 71710 black
-CONNECT bm-bp8-1.pin1 -> bm-b15d-1.hole?
-CONNECT bm-bp8-2.pin1 -> bm-b15d-1.hole?
-DOES bm-b15d-1 SUPPORTS bm-b15c-1
-PATTERN beam_sandwich

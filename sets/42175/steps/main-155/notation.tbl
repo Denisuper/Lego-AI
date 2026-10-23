@@ -1,5 +1,0 @@
-STEP 155
-ADD cn-yc-1 6536 yellow
-CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED
-DOES cn-yc-1 CARRIES cn-tb2-1
-PATTERN connector_on_axle

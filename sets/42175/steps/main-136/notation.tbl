@@ -1,6 +1,0 @@
-STEP 136
-ADD rf-b5b-1 32316 black
-CONNECT rf-b5b-1.hole? -> rf-bp-1.pin?
-DOES rf-b5b-1 SUPPORTS rf-b11-1
-DOES rf-b11-1 CARRIES rf-b5-1
-PATTERN beam_on_pins

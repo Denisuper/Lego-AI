@@ -1,7 +1,0 @@
-STEP 37
-ADD cb-axle6-1 3706 black
-ADD cb-conn2-1 32013 black
-CONNECT cb-axle6-1.axle1 -> cb-conn2-1.axlehole1~ LOCKED
-CONNECT cb-conn-1.axlehole1 -> cb-axle6-1.axle6?
-DOES cb-conn2-1 HOLDS cb-axle6-1
-PATTERN axle_with_connector

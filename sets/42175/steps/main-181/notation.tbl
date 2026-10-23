@@ -1,8 +1,0 @@
-STEP 181
-ADD ca-ax10b-1 3706 black
-ADD ca-yc2-1 6536 yellow
-CONNECT ca-ax10b-1.axle6 -> ca-yc2-1.axlehole1 LOCKED
-CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?
-DOES ca-yc2-1 CARRIES ca-ax10b-1
-DOES rf2-b9-1 HOLDS ca-yc2-1
-PATTERN rod_with_connector

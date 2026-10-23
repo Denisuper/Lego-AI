@@ -1,5 +1,0 @@
-STEP 110
-ADD hy-hose-7 5102c13 lightgray
-ADD hy-hose-8 5102c18 black
-DOES hy-valve-1 DRIVES hy-hose-7
-PATTERN hose_add

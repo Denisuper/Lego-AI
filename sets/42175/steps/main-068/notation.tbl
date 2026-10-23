@@ -1,7 +1,0 @@
-STEP 68
-ADD bm-bp4-1 43093 blue
-ADD bm-bp4-2 43093 blue
-CONNECT bm-bp4-1.pin1 -> bm-b11-1.hole?
-CONNECT bm-bp4-2.pin1 -> bm-b11-1.hole?
-DOES bm-b11-1 HOLDS bm-bp4-1
-PATTERN posts

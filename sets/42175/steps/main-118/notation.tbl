@@ -1,6 +1,0 @@
-STEP 118
-ADD cw-panel2-1 15458 black
-CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?
-CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?
-DOES cw-panel2-1 SUPPORTS cw-b7b-2
-PATTERN closing_panel

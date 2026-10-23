@@ -1,6 +1,0 @@
-STEP 153
-ADD cn-tb-1 41677 black
-ADD cn-tb-2 41677 black
-CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED
-DOES cn-tb-1 HOLDS cn-ax6-1
-PATTERN spacer_beam

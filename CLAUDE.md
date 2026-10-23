@@ -33,9 +33,9 @@ sets/<set>/parts_list.csv      official parts list
 catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types)
 tools/check_notation.py        checks every join (point exists, the two fit, word is right)
 training/                      export.py, train_qwen.py, system_prompt.md
-docs/                          set_list.md (sets to do), mechanism_training.md
+docs/                          set_list.md (sets to do)
 ```
-Older sets (8047, 42004, ...) still have step folders, annotation.json and generated training files from the old workflow. Leave them; do not do that for new sets.
+Older sets (8047, 42004, ...) still have step folders from the old workflow (other agents are working on them). Do not do that for new sets.
 
 ## Training (Qwen)
 1. `python training/export.py` -> training/data/train.jsonl (+ test.jsonl, one whole set held out).
@@ -44,6 +44,9 @@ Older sets (8047, 42004, ...) still have step folders, annotation.json and gener
 (export.py still reads the old step folders; it needs a small change to read steps.md.)
 
 ## Status (Oct 23, 2026)
-- 8047 fully labeled (old format). 42175 (Volvo EC230, 199 steps, all 731 parts) is in the old format and also written out as `sets/42175/steps.md`.
+- 8047 fully labeled (old format). 42175 (Volvo EC230, 199 steps, all 731 parts) is now only `sets/42175/steps.md` + parts list.
 - 42175 joins: about 276 are `~` estimates and 328 are `?`. Steps 13 and 18 were re-counted at high zoom; steps 19-199 not yet.
 - Other sets (42004 ... 42116) come from 3D models and are labeled by other agents.
+
+## Saving (agents)
+Work only inside `sets/<set>/`. Commit only that folder (never booklet PDFs), no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.

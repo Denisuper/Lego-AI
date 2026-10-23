@@ -1,5 +1,0 @@
-STEP 92
-ADD bm-tb2-1 41677 black
-CONNECT bm-tb2-1.axlehole1 -> bm-gp6-1.pin?
-DOES bm-tb2-1 HOLDS bm-gp6-1
-PATTERN pin_cap_beam

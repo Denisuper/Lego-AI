@@ -1,7 +1,0 @@
-STEP 115
-ADD cw-bp-1 43093 blue
-ADD cw-bp-2 43093 blue
-CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF
-CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF
-DOES cw-b7-1 CARRIES cw-bp-1
-PATTERN posts

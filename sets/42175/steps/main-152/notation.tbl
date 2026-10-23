@@ -1,6 +1,0 @@
-STEP 152
-ADD cn-ax6-1 3706 black
-ADD cn-conn-1 42003 black
-CONNECT cn-ax6-1.axle1 -> cn-conn-1.axlehole1 LOCKED
-DOES cn-conn-1 CARRIES cn-ax6-1
-PATTERN axle_in_connector

@@ -1,6 +1,0 @@
-STEP 172
-ADD ca-b7-1 32524 black
-CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?
-CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?
-DOES ca-b7-1 SUPPORTS ca-yl-1
-PATTERN beam_on_pins

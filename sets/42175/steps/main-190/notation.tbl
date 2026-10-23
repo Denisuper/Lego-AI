@@ -1,9 +1,0 @@
-STEP 190
-ADD of2-pl-1 18677 black
-ADD of2-tile-1 3069b black
-ADD of2-dp-1 61332 black
-CONNECT of2-dp-1.pin1 -> of2-pl-1.hole?
-CONNECT of2-tile-1.stud? -> of2-pl-1.stud?
-DOES of2-pl-1 CARRIES of2-tile-1
-DOES of2-dp-1 HOLDS of2-pl-1
-PATTERN fitting_with_tile

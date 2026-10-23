@@ -1,5 +1,0 @@
-STEP 67
-ADD bm-cn2-1 6536 lightgray
-CONNECT bm-cn2-1.axlehole1 -> bm-yax-1.axle?
-DOES bm-yax-1 HOLDS bm-cn2-1
-PATTERN end_connector

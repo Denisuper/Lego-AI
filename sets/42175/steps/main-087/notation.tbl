@@ -1,5 +1,0 @@
-STEP 87
-ADD bm-b13-1 41239 darkgray
-CONNECT bm-b13-1.hole1 -> bm-ax5c-1.axle?
-DOES bm-ax5c-1 CARRIES bm-b13-1
-PATTERN hinged_beam

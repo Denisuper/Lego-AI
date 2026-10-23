@@ -1,9 +1,0 @@
-STEP 4
-ADD uc-beam11-1 32525 black
-ADD uc-beam11-2 32525 black
-CONNECT uc-apin-1.pin1 -> uc-beam11-1.hole1~ STIFF
-CONNECT uc-apin-2.pin1 -> uc-beam11-1.hole3~ STIFF
-CONNECT uc-apin-3.pin1 -> uc-beam11-2.hole1~ STIFF
-CONNECT uc-apin-4.pin1 -> uc-beam11-2.hole3~ STIFF
-DOES uc-beam11-1 SUPPORTS uc-beam9-1
-PATTERN beams_on_posts

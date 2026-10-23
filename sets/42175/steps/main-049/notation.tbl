@@ -1,5 +1,0 @@
-STEP 49
-ADD fs-pin-1 43093 blue
-CONNECT fs-pin-1.pin1 -> cb-b15-1.hole?
-DOES cb-b15-1 HOLDS fs-pin-1
-PATTERN single_pin

@@ -1,5 +1,0 @@
-STEP 195
-ADD of3-ang2-1 32015 orange
-CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?
-DOES of3-ang-1 CARRIES of3-ang2-1
-PATTERN second_elbow

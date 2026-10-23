@@ -1,7 +1,0 @@
-STEP 28
-ADD up-spin-1 65304 black
-ADD up-spin-2 65304 black
-CONNECT up-spin-1.pin1 -> up-frame-2.hole?
-CONNECT up-spin-2.pin1 -> up-frame-2.hole?
-DOES up-spin-1 HOLDS up-frame-2
-PATTERN posts_for_cover

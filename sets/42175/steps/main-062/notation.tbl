@@ -1,6 +1,0 @@
-STEP 62
-ADD bm-b11-1 32525 black
-CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?
-CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?
-DOES bm-b11-1 CARRIES bm-lb-1
-PATTERN beam_on_beam

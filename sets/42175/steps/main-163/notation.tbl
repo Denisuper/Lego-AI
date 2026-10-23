@@ -1,5 +1,0 @@
-STEP 163
-CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?
-CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?
-DOES rs-b5c-1 HOLDS cn-ax6-1
-PATTERN attach_corner

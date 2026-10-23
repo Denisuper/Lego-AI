@@ -1,5 +1,0 @@
-STEP 158
-ADD cn-u-1 69819 black
-CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?
-DOES cn-u-1 HOLDS cn-yax-1
-PATTERN u_connector

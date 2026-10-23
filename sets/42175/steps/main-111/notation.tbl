@@ -1,5 +1,0 @@
-STEP 111
-CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?
-CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?
-DOES hy-hose-7 CARRIES hy-hose-8
-PATTERN plug_hoses

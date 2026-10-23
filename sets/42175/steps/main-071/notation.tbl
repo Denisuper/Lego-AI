@@ -1,5 +1,0 @@
-STEP 71
-ADD bm-l3-1 32140 black
-CONNECT bm-l3-1.hole? -> bm-gp2-1.pin1?
-DOES bm-l3-1 SUPPORTS bm-b11b-1
-PATTERN corner_piece

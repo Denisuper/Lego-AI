@@ -1,7 +1,0 @@
-STEP 64
-ADD bm-l2-1 32526 black
-ADD bm-bp2-1 43093 blue
-CONNECT bm-bp2-1.pin1 -> bm-l2-1.hole?
-CONNECT bm-l2-1.hole? -> bm-ax5-1.axle?
-DOES bm-l2-1 HOLDS bm-ax5-1
-PATTERN layered_beams

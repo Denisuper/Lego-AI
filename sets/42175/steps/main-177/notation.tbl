@@ -1,7 +1,0 @@
-STEP 177
-ADD bt-ax6-1 3706 black
-ADD bt-tb2-1 41677 black
-CONNECT bt-tb2-1.axlehole1 -> bt-ax6-1.axlehole?
-DOES bt-tb2-1 HOLDS bt-ax6-1
-DOES bt-hose-1 SUPPORTS bt-ax6-1
-PATTERN bent_tube

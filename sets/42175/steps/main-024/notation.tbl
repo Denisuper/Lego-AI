@@ -1,9 +1,0 @@
-STEP 24
-ADD hy-cyl-1 19478 darkgray
-ADD up-beam2-1 43857 darkgray
-ADD up-axle5-1 32073 lightgray
-ADD hy-pin-1 77765 lightgray
-DOES up-beam2-1 HOLDS hy-cyl-1
-DOES up-axle5-1 CARRIES hy-cyl-1
-DOES up-axle5-1 HOLDS up-lbeam-1
-PATTERN cylinder_between_posts

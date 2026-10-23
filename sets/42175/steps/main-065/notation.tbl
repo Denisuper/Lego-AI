@@ -1,8 +1,0 @@
-STEP 65
-ADD bm-ax5b-1 15462 brown
-ADD bm-cn-1 6536 lightgray
-CONNECT bm-ax5b-1.axle? -> bm-b11-1.hole?
-CONNECT bm-cn-1.axlehole1 -> bm-ax5b-1.axle?
-DOES bm-b11-1 CARRIES bm-ax5b-1
-DOES bm-cn-1 HOLDS bm-ax5b-1
-PATTERN second_axle

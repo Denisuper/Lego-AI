@@ -1,5 +1,0 @@
-STEP 159
-ADD cn-rax-1 32062 red
-CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?
-DOES cn-u-1 HOLDS cn-rax-1
-PATTERN axle_in_connector

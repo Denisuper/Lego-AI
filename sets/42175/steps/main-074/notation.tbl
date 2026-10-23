@@ -1,6 +1,0 @@
-STEP 74
-ADD bm-b15-1 32278 black
-CONNECT bm-b15-1.hole? -> bm-bp5-1.pin1?
-CONNECT bm-b15-1.hole? -> bm-ac-1.hole?
-DOES bm-b15-1 SUPPORTS bm-b11b-1
-PATTERN long_beam

@@ -1,9 +1,0 @@
-STEP 84
-ADD bm-l6-1 32526 black
-ADD bm-bp9-1 43093 blue
-ADD bm-bp9-2 43093 blue
-CONNECT bm-bp9-1.pin1 -> bm-l6-1.hole1~ STIFF
-CONNECT bm-bp9-2.pin1 -> bm-l6-1.hole2~ STIFF
-CONNECT bm-l6-1.hole? -> bm-b15d-1.hole?
-DOES bm-l6-1 CARRIES bm-bp9-1
-PATTERN beam_with_posts

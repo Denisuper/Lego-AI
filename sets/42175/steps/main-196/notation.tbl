@@ -1,5 +1,0 @@
-STEP 196
-ADD of3-hose-1 32580 orange
-CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?
-DOES of3-ang2-1 CARRIES of3-hose-1
-PATTERN hose_in_elbow

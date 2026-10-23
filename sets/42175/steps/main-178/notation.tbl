@@ -1,7 +1,0 @@
-STEP 178
-ADD sb-bush-1 32123b yellow
-ADD sb-bush-2 32123b yellow
-CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?
-CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?
-DOES sb-bush-1 HOLDS ca-ytb-1
-PATTERN end_stops

@@ -1,5 +1,0 @@
-STEP 109
-ADD cb-gpin-1 77765 lightgray
-CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?
-DOES cb-gpin-1 HOLDS cb-rax10-1
-PATTERN lock_pin

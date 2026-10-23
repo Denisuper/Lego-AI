@@ -1,8 +1,0 @@
-STEP 126
-ADD hd-fair-1 71682 black
-ADD hd-rpin-1 11214 red
-ADD hd-rpin-2 11214 red
-CONNECT hd-rpin-1.axle1 -> hd-fair-1.axlehole1~ LOCKED
-CONNECT hd-rpin-2.axle1 -> hd-fair-1.axlehole3~ LOCKED
-DOES hd-fair-1 CARRIES hd-rpin-1
-PATTERN fairing_with_pins

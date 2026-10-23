@@ -1,7 +1,0 @@
-STEP 45
-ADD cb-t1-1 60483 black
-ADD cb-tp-1 32002 tan
-CONNECT cb-tp-1.pin1 -> cb-t1-1.hole1~ STIFF
-CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?
-DOES cb-t1-1 HOLDS cb-tp-1
-PATTERN pin_in_connector

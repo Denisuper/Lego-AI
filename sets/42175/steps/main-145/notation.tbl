@@ -1,6 +1,0 @@
-STEP 145
-ADD rs-lb-1 32526 black
-CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF
-CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF
-DOES rs-lb-1 SUPPORTS rs-b11-1
-PATTERN corner_piece

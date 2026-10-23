@@ -1,7 +1,0 @@
-STEP 123
-ADD cw-b7d-1 32524 black
-ADD cw-bp5-1 43093 blue
-CONNECT cw-bp5-1.pin1 -> cw-b7d-1.hole1~ STIFF
-CONNECT cw-b7d-1.hole? -> up-gb13-1.hole?
-DOES cw-b7d-1 CARRIES cw-bp5-1
-PATTERN beam_with_posts

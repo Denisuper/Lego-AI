@@ -1,7 +1,0 @@
-STEP 116
-ADD cw-b7b-1 32524 black
-ADD cw-b7b-2 32524 black
-CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF
-CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF
-DOES cw-b7b-1 SUPPORTS cw-b7-1
-PATTERN beam_on_pins

@@ -1,4 +1,0 @@
-STEP 47
-CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?
-DOES uc-frame-1 HOLDS cb-beam11-1
-PATTERN attach_subassembly

@@ -1,5 +1,0 @@
-STEP 148
-ADD rs-b5-1 32316 black
-CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?
-DOES rs-b5-1 SUPPORTS rs-b7-1
-PATTERN beam_on_pins

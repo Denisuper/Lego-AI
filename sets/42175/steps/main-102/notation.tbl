@@ -1,7 +1,0 @@
-STEP 102
-ADD bm-b5f-1 32316 black
-ADD bm-go2-1 41677 darkgray
-CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?
-CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?
-DOES bm-go2-1 HOLDS bm-ax6-1
-PATTERN beam_on_shaft

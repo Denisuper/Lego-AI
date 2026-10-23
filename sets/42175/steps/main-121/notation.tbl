@@ -1,4 +1,0 @@
-STEP 121
-CONNECT cw-panel-1.hole? -> up-gb13-1.hole?
-DOES up-gb13-1 CARRIES cw-panel-1
-PATTERN attach_counterweight

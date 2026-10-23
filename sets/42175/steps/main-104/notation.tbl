@@ -1,5 +1,0 @@
-STEP 104
-ADD bm-ax6c-1 3706 black
-CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?
-DOES bm-ax6c-1 CARRIES bm-go3-1
-PATTERN cross_shaft

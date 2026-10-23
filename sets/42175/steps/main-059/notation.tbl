@@ -1,7 +1,0 @@
-STEP 59
-ADD fs-clip-1 3484 black
-ADD fs-clip-2 3484 black
-CONNECT fs-clip-1.bar? -> fs-sx-1.axle?
-CONNECT fs-clip-2.bar? -> fs-sx-1.axle?
-DOES fs-sx-1 CARRIES fs-clip-1
-PATTERN clip_holders

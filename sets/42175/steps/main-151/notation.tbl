@@ -1,5 +1,0 @@
-STEP 151
-ADD rs-b5c-1 32316 black
-CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?
-DOES rs-b5c-1 SUPPORTS rs-b5-1
-PATTERN beam_on_pins

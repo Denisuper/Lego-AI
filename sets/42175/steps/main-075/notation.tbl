@@ -1,7 +1,0 @@
-STEP 75
-ADD bm-gb7-1 32524 darkgray
-ADD bm-bp6-1 43093 blue
-CONNECT bm-bp6-1.pin1 -> bm-gb7-1.hole1~ STIFF
-CONNECT bm-gb7-1.hole? -> bm-b15-1.hole?
-DOES bm-gb7-1 SUPPORTS bm-b15-1
-PATTERN diagonal_brace

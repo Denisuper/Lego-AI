@@ -1,8 +1,0 @@
-STEP 36
-ADD cb-beam11-1 32525 black
-ADD cb-disc-1 98138 clear
-CONNECT cb-conn-1.axlehole1 -> cb-beam11-1.hole?
-CONNECT cb-disc-1.stud? -> cb-conn-1.hole?
-DOES cb-beam11-1 CARRIES cb-conn-1
-DOES cb-conn-1 HOLDS cb-disc-1
-PATTERN beam_end_fitting

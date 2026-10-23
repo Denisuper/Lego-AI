@@ -1,7 +1,0 @@
-STEP 43
-ADD cb-b11b-1 32525 black
-CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?
-CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?
-CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?
-DOES cb-b11b-1 SUPPORTS cb-lb-1
-PATTERN beam_on_pins

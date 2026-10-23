@@ -1,5 +1,0 @@
-STEP 63
-ADD bm-ax5-1 15462 brown
-CONNECT bm-ax5-1.axle? -> bm-b11-1.hole?
-DOES bm-b11-1 CARRIES bm-ax5-1
-PATTERN axle_through

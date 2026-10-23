@@ -1,8 +1,0 @@
-STEP 61
-ADD bm-gp-1 4274 lightgray
-ADD bm-lb-1 32140 black
-ADD bm-bp-1 43093 blue
-CONNECT bm-gp-1.pin1 -> bm-lb-1.hole1~ TURNS
-CONNECT bm-bp-1.pin1 -> bm-lb-1.hole2~ STIFF
-DOES bm-lb-1 CARRIES bm-gp-1
-PATTERN beam_with_pins

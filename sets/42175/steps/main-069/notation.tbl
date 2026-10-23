@@ -1,6 +1,0 @@
-STEP 69
-ADD bm-b5-1 32316 black
-CONNECT bm-bp4-1.pin1 -> bm-b5-1.hole1?
-CONNECT bm-bp4-2.pin1 -> bm-b5-1.hole2?
-DOES bm-b5-1 HOLDS bm-bp4-1
-PATTERN beam_on_pins

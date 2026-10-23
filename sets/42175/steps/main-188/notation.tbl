@@ -1,9 +1,0 @@
-STEP 188
-ADD ah-tile-1 98138 clear
-ADD ah-dp-1 61332 black
-ADD ah-cn-1 6536 black
-CONNECT ah-dp-1.pin1 -> ah-cn-1.hole1 STIFF
-CONNECT ah-tile-1.stud? -> ah-dp-1.barhole?
-DOES ah-cn-1 HOLDS ah-dp-1
-DOES ah-dp-1 CARRIES ah-tile-1
-PATTERN capped_pin

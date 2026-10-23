@@ -1,8 +1,0 @@
-STEP 99
-ADD bm-ax6-1 3706 black
-ADD bm-tb5-1 41677 black
-ADD bm-tb5-2 41677 black
-CONNECT bm-ax6-1.axle1 -> bm-tb5-1.axlehole1~ LOCKED
-CONNECT bm-ax6-1.axle6 -> bm-tb5-2.axlehole1~ LOCKED
-DOES bm-ax6-1 CARRIES bm-tb5-1
-PATTERN axle_with_end_beams

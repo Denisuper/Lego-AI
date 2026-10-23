@@ -1,7 +1,0 @@
-STEP 162
-ADD cn-fair-1 2403 black
-ADD cn-rax2-1 32062 red
-CONNECT cn-rax2-1.axle1 -> cn-fair-1.axlehole?
-CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?
-DOES cn-fair-1 CARRIES cn-rax2-1
-PATTERN fairing_on_axle

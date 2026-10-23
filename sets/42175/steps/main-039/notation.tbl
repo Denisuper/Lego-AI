@@ -1,7 +1,0 @@
-STEP 39
-ADD cb-axle5-1 32073 lightgray
-ADD cb-conn3-1 60483 black
-CONNECT cb-axle5-1.axle1 -> cb-conn3-1.axlehole1~ LOCKED
-CONNECT cb-conn3-1.hole1 -> cb-beam11-1.hole1?
-DOES cb-conn3-1 HOLDS cb-axle5-1
-PATTERN second_axle

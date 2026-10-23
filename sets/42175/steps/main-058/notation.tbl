@@ -1,5 +1,0 @@
-STEP 58
-ADD fs-sx-1 3706 black
-CONNECT fs-sx-1.axle1 -> fs-sb-1.hole?
-DOES fs-sx-1 HOLDS fs-seat-1
-PATTERN axle_through

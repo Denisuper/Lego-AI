@@ -1,5 +1,0 @@
-STEP 57
-ADD fs-sb-1 43857 darkgray
-CONNECT fs-sb-1.hole1 -> fs-seat-1.hole?
-DOES fs-sb-1 HOLDS fs-seat-1
-PATTERN lock_beam

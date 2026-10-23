@@ -1,5 +1,0 @@
-STEP 76
-ADD bm-l5-1 32526 black
-CONNECT bm-l5-1.hole? -> bm-b11-1.hole?
-DOES bm-l5-1 SUPPORTS bm-gb7-1
-PATTERN corner_bracket

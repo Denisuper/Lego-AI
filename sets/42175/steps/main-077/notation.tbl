@@ -1,9 +1,0 @@
-STEP 77
-ADD bm-cap2-1 98138 clear
-ADD bm-gp4-1 4274 lightgray
-ADD bm-ac2-1 32013 black
-CONNECT bm-gp4-1.pin1 -> bm-ac2-1.hole1~ TURNS
-CONNECT bm-cap2-1.stud? -> bm-gp4-1.barhole1?
-CONNECT bm-ac2-1.axlehole1 -> bm-l5-1.hole?
-DOES bm-ac2-1 HOLDS bm-gp4-1
-PATTERN end_fitting
