@@ -1,0 +1,11 @@
+STEP 119
+ADD cw-gp3-1 61332 black
+ADD cw-gp3-2 61332 black
+ADD cw-bp2-1 43093 blue
+ADD cw-bp2-2 43093 blue
+CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?
+CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?
+CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?
+CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?
+DOES cw-panel-1 CARRIES cw-bp2-1
+PATTERN side_pins

@@ -3129,14 +3129,323 @@ PATTERN bucket_on_hinge
 
 STEP 106
 THINK have Arm with bucket (step 105).
-THINK goal Brings the arm's cylinder hoses in.
-THINK part hy-hose-5 (5102c25 Hose, Pneumatic 4mm D. 25L / 20cm): light grey air hose (length bar runs off the page; best guess); fixed
-THINK part hy-hose-6 (5102c32 Hose, Pneumatic 4mm D. 32L / 256mm): long black air hose (length bar runs off the page; best guess); fixed
-THINK touches Two hoses (one light grey, one black) are added to the arm; the black one is drawn running along the top of the arm.
+THINK goal Brings the arm cylinder's long hose in.
+THINK part hy-hose-5 (5102c32 Hose, Pneumatic 4mm D. 32L / 256mm): long black air hose (length bar runs off the page; best guess); fixed
+THINK touches The black hose is drawn running along the top of the arm (plus-brick icon). The length box shows a grey and a black bar running off the page; only the black hose is added in this step.
 THINK does bm-cyl-1 drives hy-hose-5
 THINK why Hoses carry air from the machine to the cylinder.
 THINK later They are plugged in later. Pattern: arm hoses
-ADD hy-hose-5 5102c25 lightgray
-ADD hy-hose-6 5102c32 black
+ADD hy-hose-5 5102c32 black
 DOES bm-cyl-1 DRIVES hy-hose-5
 PATTERN hose_add
+
+STEP 107
+THINK have Arm with black hose (step 106).
+THINK goal Brings the second arm hose in.
+THINK part hy-hose-6 (5102c25 Hose, Pneumatic 4mm D. 25L / 20cm): long light grey air hose, drawn on the arm beside the black one (green check marks on the two length bars); fixed
+THINK touches The light grey hose is added next to the black one along the arm; both length bars show a green check, meaning the right lengths are in the model.
+THINK does bm-cyl-1 drives hy-hose-6
+THINK why A cylinder needs two hoses, one for each side of its piston.
+THINK later Later steps plug them into the cylinder and the switches. Pattern: arm hoses
+ADD hy-hose-6 5102c25 lightgray
+DOES bm-cyl-1 DRIVES hy-hose-6
+PATTERN hose_add
+
+STEP 108
+THINK have Whole excavator so far (undercarriage, cab frame, arm with bucket).
+THINK goal Adds the axle that the arm's root hinge sits on.
+THINK part cb-rax10-1 (3737 Technic Axle 10): red 10-long axle (1:1 box, circled 10); fixed
+THINK part cb-rbush-1 (3713 Technic Bush): red bush on the axle end; fixed
+THINK touches Yellow box: the red axle with a red bush on one end is pushed through the model from the arm side (green arrow) across the front of the frame.
+THINK does cb-rax10-1 carries cb-rbush-1
+THINK why A long axle ties the left and right sides together.
+THINK check cb-rax10-1.axle1 goes into cb-lb-1.axlehole? (not shown in the booklet)
+THINK check cb-rbush-1.axlehole1 goes into cb-rax10-1.axle10? (not shown in the booklet)
+THINK builds_on cb-rax10-1 builds on cb-lb-1 (42175-step-042), and rests on cb-lp-1 (42175-step-042), cb-lp-2 (42175-step-042)
+THINK later Step 109 locks it. Pattern: arm root axle
+ADD cb-rax10-1 3737 red
+ADD cb-rbush-1 3713 red
+CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?
+CONNECT cb-rbush-1.axlehole1 -> cb-rax10-1.axle10?
+DOES cb-rax10-1 CARRIES cb-rbush-1
+PATTERN long_axle
+
+STEP 109
+THINK have Red axle across the front (step 108).
+THINK goal Locks the arm to the machine.
+THINK part cb-gpin-1 (77765 Technic Pin Long 3l, No Friction Ridges, with Stop and Hole): grey long pin pushed in at the arm's root (yellow box); fixed
+THINK touches A grey long pin goes into the root of the arm next to the red axle (arrow).
+THINK does cb-gpin-1 holds cb-rax10-1
+THINK why A pin through the root keeps the axle from sliding.
+THINK check cb-gpin-1.pin? goes into bm-lb-1.hole? (not shown in the booklet)
+THINK builds_on cb-gpin-1 builds on bm-lb-1 (42175-step-061), and rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
+THINK later Step 110 adds hoses. Pattern: root pin
+ADD cb-gpin-1 77765 lightgray
+CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?
+DOES cb-gpin-1 HOLDS cb-rax10-1
+PATTERN lock_pin
+
+STEP 110
+THINK have Arm mounted on the frame (step 109).
+THINK goal Brings the hoses that run from the switches to the arm in.
+THINK part hy-hose-7 (5102c13 Hose, Pneumatic 4mm D. 13L / 10.4cm): short light grey air hose (length bar with green check); fixed
+THINK part hy-hose-8 (5102c18 Hose, Pneumatic 4mm D. 18L / 144mm): short black air hose (length bar with green check); fixed
+THINK touches Two plus-brick icons: a grey hose and a black hose are added near the rear (ends hang in the air).
+THINK does hy-valve-1 drives hy-hose-7
+THINK why The cab end of an arm cylinder's hoses is short.
+THINK later Step 111 plugs them. Pattern: cab hoses
+ADD hy-hose-7 5102c13 lightgray
+ADD hy-hose-8 5102c18 black
+DOES hy-valve-1 DRIVES hy-hose-7
+PATTERN hose_add
+
+STEP 111
+THINK have Arm mounted, hoses hanging (step 110).
+THINK goal Connects the cab-side hoses to the switches.
+THINK touches A red circle marks the place near the rear (right side of the picture) where the hoses are plugged onto the switches. No part is added.
+THINK does hy-hose-7 carries hy-hose-8
+THINK why Air must reach the cylinders.
+THINK check hy-hose-7.end? goes into hy-tee-1.nozzle? (not shown in the booklet)
+THINK check hy-hose-8.end? goes into hy-valve-2.nozzle? (not shown in the booklet)
+THINK later The arm is now ready for the power parts. Pattern: plug hoses
+CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?
+CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?
+DOES hy-hose-7 CARRIES hy-hose-8
+PATTERN plug_hoses
+
+STEP 112
+THINK have Whole excavator with arm and hoses (steps 1-111).
+THINK goal Adds a rear cross beam on which the counterweight will sit.
+THINK part up-gb13-1 (41239 Technic Beam 1 x 13 Thick): dark grey 13-hole beam laid across the rear of the frame (1:1 box, circled 13); fixed
+THINK touches The 13-hole beam is shown on the rear of the model with its number tag; no arrow shows which holes it uses.
+THINK does up-gb13-1 supports up-panel-1
+THINK why A long beam spans the full rear width.
+THINK check up-gb13-1.hole? goes into up-lbeam-1.hole? (not shown in the booklet)
+THINK check up-gb13-1.hole? goes into up-lbeam-2.hole? (not shown in the booklet)
+THINK builds_on up-gb13-1 builds on up-lbeam-1 (42175-step-019), and rests on up-bpin-1 (42175-step-019), up-bpin-2 (42175-step-019)
+THINK builds_on up-gb13-1 builds on up-lbeam-2 (42175-step-020), and rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+THINK later Steps 113-120 build the counterweight separately. Pattern: rear beam
+ADD up-gb13-1 41239 darkgray
+CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?
+CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?
+DOES up-gb13-1 SUPPORTS up-panel-1
+PATTERN rear_beam
+
+STEP 113
+THINK have (new build: the counterweight block; nothing attached yet)
+THINK goal Starts the rear counterweight: a stack of panels and beams.
+THINK part cw-panel-1 (15458 Technic Panel 3 x 11 x 1): black 3 x 11 panel, base of the counterweight; fixed
+THINK part cw-gp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark friction pins in the panel top; fixed
+THINK part cw-gp-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark friction pins in the panel top; fixed
+THINK part cw-gp-3 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark friction pins in the panel top; fixed
+THINK part cw-gp-4 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark friction pins in the panel top; fixed
+THINK touches Four small dark friction pins are pushed into the panel (two are shown at the top).
+THINK does cw-panel-1 carries cw-gp-1
+THINK why A panel is the base, pins hold the beams above it.
+THINK check cw-gp-1.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-gp-2.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-gp-3.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-gp-4.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK later Step 114 adds a 7-hole beam. Pattern: counterweight base
+ADD cw-panel-1 15458 black
+ADD cw-gp-1 61332 black
+ADD cw-gp-2 61332 black
+ADD cw-gp-3 61332 black
+ADD cw-gp-4 61332 black
+CONNECT cw-gp-1.pin1 -> cw-panel-1.hole?
+CONNECT cw-gp-2.pin1 -> cw-panel-1.hole?
+CONNECT cw-gp-3.pin1 -> cw-panel-1.hole?
+CONNECT cw-gp-4.pin1 -> cw-panel-1.hole?
+DOES cw-panel-1 CARRIES cw-gp-1
+PATTERN base_with_pins
+
+STEP 114
+THINK have Panel with pins (step 113).
+THINK goal Adds a layer to the stack.
+THINK part cw-b7-1 (32524 Technic Beam 1 x 7 Thick): black 7-hole beam (1:1 box, circled 7); fixed
+THINK touches The 7-hole beam is pressed onto the pins on top of the panel.
+THINK does cw-b7-1 supports cw-panel-1
+THINK why The beam locks on the pins.
+THINK check cw-gp-1.pin1 goes into cw-b7-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-gp-2.pin1 goes into cw-b7-1.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on cw-b7-1 builds on cw-gp-1 (42175-step-113), and rests on cw-panel-1 (42175-step-113)
+THINK builds_on cw-b7-1 builds on cw-gp-2 (42175-step-113), and rests on cw-panel-1 (42175-step-113)
+THINK later Step 115 adds blue pins for the next layer. Pattern: layer
+ADD cw-b7-1 32524 black
+CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF
+CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF
+DOES cw-b7-1 SUPPORTS cw-panel-1
+PATTERN beam_on_pins
+
+STEP 115
+THINK have Panel with 7-hole beam (step 114).
+THINK goal Adds posts for the next beam.
+THINK part cw-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins standing up from the 7-hole beam ends; fixed
+THINK part cw-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins standing up from the 7-hole beam ends; fixed
+THINK touches Two blue pins are pushed into the first and last holes of the 7-hole beam (picture).
+THINK does cw-b7-1 carries cw-bp-1
+THINK why Pins at both ends locate it.
+THINK check cw-bp-1.pin1 goes into cw-b7-1.hole1, 0.9 hole deep, held stiff by friction
+THINK check cw-bp-2.pin1 goes into cw-b7-1.hole7, 0.9 hole deep, held stiff by friction
+THINK builds_on cw-bp-1 builds on cw-b7-1 (42175-step-114), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK builds_on cw-bp-2 builds on cw-b7-1 (42175-step-114), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK later Step 116 puts a beam on. Pattern: posts
+ADD cw-bp-1 43093 blue
+ADD cw-bp-2 43093 blue
+CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF
+CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF
+DOES cw-b7-1 CARRIES cw-bp-1
+PATTERN posts
+
+STEP 116
+THINK have Counterweight with blue posts (step 115).
+THINK goal Builds up the counterweight's height.
+THINK part cw-b7b-1 (32524 Technic Beam 1 x 7 Thick): two black 7-hole beams (1:1 box, circled 7); fixed
+THINK part cw-b7b-2 (32524 Technic Beam 1 x 7 Thick): two black 7-hole beams (1:1 box, circled 7); fixed
+THINK touches One 7-hole beam is lowered onto the blue pins (green arrows); the second one is used in the stack in the next steps.
+THINK does cw-b7b-1 supports cw-b7-1
+THINK why Each layer locks the one below.
+THINK check cw-bp-1.pin1 goes into cw-b7b-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-bp-2.pin1 goes into cw-b7b-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on cw-b7b-1 builds on cw-bp-1 (42175-step-115), and rests on cw-b7-1 (42175-step-114)
+THINK builds_on cw-b7b-1 builds on cw-bp-2 (42175-step-115), and rests on cw-b7-1 (42175-step-114)
+THINK later Step 117 adds pins. Pattern: stack
+ADD cw-b7b-1 32524 black
+ADD cw-b7b-2 32524 black
+CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF
+CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF
+DOES cw-b7b-1 SUPPORTS cw-b7-1
+PATTERN beam_on_pins
+
+STEP 117
+THINK have Counterweight stack (step 116).
+THINK goal Posts for the top panel.
+THINK part cw-gp2-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark friction pins in the top beam; fixed
+THINK part cw-gp2-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark friction pins in the top beam; fixed
+THINK touches Two small dark friction pins are pushed into the top beam.
+THINK does cw-b7b-1 carries cw-gp2-1
+THINK why Pins make fixing points.
+THINK check cw-gp2-1.pin1 goes into cw-b7b-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-gp2-2.pin1 goes into cw-b7b-1.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on cw-gp2-1 builds on cw-b7b-1 (42175-step-116), and rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+THINK builds_on cw-gp2-2 builds on cw-b7b-1 (42175-step-116), and rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+THINK later Step 118 adds a panel on top. Pattern: posts
+ADD cw-gp2-1 61332 black
+ADD cw-gp2-2 61332 black
+CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF
+CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF
+DOES cw-b7b-1 CARRIES cw-gp2-1
+PATTERN posts
+
+STEP 118
+THINK have Counterweight with top pins (step 117).
+THINK goal Closes the sandwich.
+THINK part cw-panel2-1 (15458 Technic Panel 3 x 11 x 1): second black 3 x 11 panel closing the top of the stack; fixed
+THINK touches A second black panel is placed on top; a clear gap is left between the two panels (picture).
+THINK does cw-panel2-1 supports cw-b7b-2
+THINK why Panels on both ends lock the beams.
+THINK check cw-gp2-1.pin1 goes into cw-panel2-1.hole? (not shown in the booklet)
+THINK check cw-gp2-2.pin1 goes into cw-panel2-1.hole? (not shown in the booklet)
+THINK builds_on cw-panel2-1 builds on cw-gp2-1 (42175-step-117), and rests on cw-b7b-1 (42175-step-116)
+THINK builds_on cw-panel2-1 builds on cw-gp2-2 (42175-step-117), and rests on cw-b7b-1 (42175-step-116)
+THINK later Steps 119-120 add pins and connectors on the sides. Pattern: counterweight sandwich
+ADD cw-panel2-1 15458 black
+CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?
+CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?
+DOES cw-panel2-1 SUPPORTS cw-b7b-2
+PATTERN closing_panel
+
+STEP 119
+THINK have Closed counterweight sandwich (step 118).
+THINK goal Adds the mounting points that attach it to the frame.
+THINK part cw-gp3-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark friction pins; fixed
+THINK part cw-gp3-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark friction pins; fixed
+THINK part cw-bp2-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins pushed in sideways (picture); fixed
+THINK part cw-bp2-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins pushed in sideways (picture); fixed
+THINK touches Two blue and two dark pins are pushed into the sides of the counterweight (picture rotated).
+THINK does cw-panel-1 carries cw-bp2-1
+THINK why The pins go into the frame's holes.
+THINK check cw-gp3-1.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-gp3-2.pin1 goes into cw-panel2-1.hole? (not shown in the booklet)
+THINK check cw-bp2-1.pin1 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-bp2-2.pin1 goes into cw-panel2-1.hole? (not shown in the booklet)
+THINK builds_on cw-gp3-1 builds on cw-panel-1 (42175-step-113), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK builds_on cw-gp3-2 builds on cw-panel2-1 (42175-step-118), and rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+THINK builds_on cw-bp2-1 builds on cw-panel-1 (42175-step-113), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK builds_on cw-bp2-2 builds on cw-panel2-1 (42175-step-118), and rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+THINK later Step 120 adds connectors. Pattern: mounting pins
+ADD cw-gp3-1 61332 black
+ADD cw-gp3-2 61332 black
+ADD cw-bp2-1 43093 blue
+ADD cw-bp2-2 43093 blue
+CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?
+CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?
+CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?
+CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?
+DOES cw-panel-1 CARRIES cw-bp2-1
+PATTERN side_pins
+
+STEP 120
+THINK have Counterweight with side pins (step 119).
+THINK goal Adds the corner locks.
+THINK part cw-bp3-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins used inside the connectors (yellow box, 2x); fixed
+THINK part cw-bp3-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins used inside the connectors (yellow box, 2x); fixed
+THINK part cw-conn-1 (42003 Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes): two black connectors with two pin holes (yellow box, 2x); fixed
+THINK part cw-conn-2 (42003 Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes): two black connectors with two pin holes (yellow box, 2x); fixed
+THINK touches Yellow box (2x): a blue pin in a black connector. Two of them are pressed onto the corner pins of the counterweight (arrows).
+THINK does cw-conn-1 holds cw-bp3-1
+THINK does cw-conn-2 holds cw-bp3-2
+THINK why Connectors let more beams be attached later.
+THINK check cw-bp3-1.pin1 goes into cw-conn-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-bp3-2.pin1 goes into cw-conn-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-conn-1.hole2 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK check cw-conn-2.hole2 goes into cw-panel-1.hole? (not shown in the booklet)
+THINK builds_on cw-conn-1 builds on cw-panel-1 (42175-step-113), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK builds_on cw-conn-2 builds on cw-panel-1 (42175-step-113), and rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+THINK later Step 121 fits the counterweight to the model. Pattern: corner connectors
+ADD cw-bp3-1 43093 blue
+ADD cw-bp3-2 43093 blue
+ADD cw-conn-1 42003 black
+ADD cw-conn-2 42003 black
+CONNECT cw-bp3-1.pin1 -> cw-conn-1.hole1~ STIFF
+CONNECT cw-bp3-2.pin1 -> cw-conn-2.hole1~ STIFF
+CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?
+CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?
+DOES cw-conn-1 HOLDS cw-bp3-1
+DOES cw-conn-2 HOLDS cw-bp3-2
+PATTERN end_connectors
+
+STEP 121
+THINK have Excavator (step 112) and the counterweight block (steps 113-120).
+THINK goal Balances the arm.
+THINK touches The counterweight block is pressed onto the rear of the frame (arrow).
+THINK does up-gb13-1 carries cw-panel-1
+THINK why A heavy block on the opposite side stops the machine tipping.
+THINK check cw-panel-1.hole? goes into up-gb13-1.hole? (not shown in the booklet)
+THINK later Step 122 adds a beam beside it. Pattern: counterweight
+CONNECT cw-panel-1.hole? -> up-gb13-1.hole?
+DOES up-gb13-1 CARRIES cw-panel-1
+PATTERN attach_counterweight
+
+STEP 122
+THINK have Counterweight fixed at the rear (step 121).
+THINK goal Adds a side beam beside the cab.
+THINK part cw-b7c-1 (32524 Technic Beam 1 x 7 Thick): black 7-hole beam with two blue pins (yellow box, 1:1 box circled 7); fixed
+THINK part cw-bp4-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins in the 7-hole beam; fixed
+THINK part cw-bp4-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins in the 7-hole beam; fixed
+THINK touches Yellow box: a 7-hole beam with two blue pins. It is placed on the side of the frame (green arrows) near the cab.
+THINK does cw-b7c-1 carries cw-bp4-1
+THINK why The pins are posts for the next piece.
+THINK check cw-bp4-1.pin1 goes into cw-b7c-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-bp4-2.pin1 goes into cw-b7c-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cw-b7c-1.hole? goes into up-gb13-1.hole? (not shown in the booklet)
+THINK builds_on cw-b7c-1 builds on up-gb13-1 (42175-step-112), and rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
+THINK later Steps 123 onward continue the cab. Pattern: side beam
+ADD cw-b7c-1 32524 black
+ADD cw-bp4-1 43093 blue
+ADD cw-bp4-2 43093 blue
+CONNECT cw-bp4-1.pin1 -> cw-b7c-1.hole1~ STIFF
+CONNECT cw-bp4-2.pin1 -> cw-b7c-1.hole5~ STIFF
+CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?
+DOES cw-b7c-1 CARRIES cw-bp4-1
+PATTERN beam_with_posts

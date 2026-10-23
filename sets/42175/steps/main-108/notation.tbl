@@ -1,0 +1,7 @@
+STEP 108
+ADD cb-rax10-1 3737 red
+ADD cb-rbush-1 3713 red
+CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?
+CONNECT cb-rbush-1.axlehole1 -> cb-rax10-1.axle10?
+DOES cb-rax10-1 CARRIES cb-rbush-1
+PATTERN long_axle

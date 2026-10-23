@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-119",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 107,
+  "step": 119,
+  "input": {
+    "picture": "steps/main-119/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-gp3-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cw-gp3-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cw-bp2-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp2-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Closed counterweight sandwich (step 118)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-gp3-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small dark friction pins",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-gp3-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small dark friction pins",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp2-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed in sideways (picture)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp2-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed in sideways (picture)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two blue and two dark pins are pushed into the sides of the counterweight (picture rotated)."
+    ],
+    "who_does_what_to_which": [
+      "cw-panel-1 carries cw-bp2-1"
+    ],
+    "where_everything_is_after": [
+      "the counterweight has pins sticking out of its sides",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the mounting points that attach it to the frame.",
+      "why_these_parts": "The pins go into the frame's holes.",
+      "sets_up_for_later": "Step 120 adds connectors.",
+      "design_pattern": "mounting pins"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Positions are not countable."
+}

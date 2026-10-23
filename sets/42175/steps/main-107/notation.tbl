@@ -1,0 +1,4 @@
+STEP 107
+ADD hy-hose-6 5102c25 lightgray
+DOES bm-cyl-1 DRIVES hy-hose-6
+PATTERN hose_add

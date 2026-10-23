@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-108",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 100,
+  "step": 108,
+  "input": {
+    "picture": "steps/main-108/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-rax10-1",
+        "part_number": "3737",
+        "count": 1
+      },
+      {
+        "name": "cb-rbush-1",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Whole excavator so far (undercarriage, cab frame, arm with bucket)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-rax10-1",
+        "part_number": "3737",
+        "catalog_name": "Technic Axle 10",
+        "color": "Red",
+        "part_match": "confirmed",
+        "position": "red 10-long axle (1:1 box, circled 10)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-rbush-1",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "red bush on the axle end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the red axle with a red bush on one end is pushed through the model from the arm side (green arrow) across the front of the frame."
+    ],
+    "who_does_what_to_which": [
+      "cb-rax10-1 carries cb-rbush-1"
+    ],
+    "where_everything_is_after": [
+      "a long red axle runs across the front of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the axle that the arm's root hinge sits on.",
+      "why_these_parts": "A long axle ties the left and right sides together.",
+      "sets_up_for_later": "Step 109 locks it.",
+      "design_pattern": "arm root axle"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which parts the axle passes through is not countable."
+}

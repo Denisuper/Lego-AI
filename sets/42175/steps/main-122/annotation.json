@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-122",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 109,
+  "step": 122,
+  "input": {
+    "picture": "steps/main-122/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-b7c-1",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "cw-bp4-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp4-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Counterweight fixed at the rear (step 121)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-b7c-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam with two blue pins (yellow box, 1:1 box circled 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp4-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins in the 7-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp4-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins in the 7-hole beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a 7-hole beam with two blue pins. It is placed on the side of the frame (green arrows) near the cab."
+    ],
+    "who_does_what_to_which": [
+      "cw-b7c-1 carries cw-bp4-1"
+    ],
+    "where_everything_is_after": [
+      "a 7-hole beam with two blue pins sits at the side of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a side beam beside the cab.",
+      "why_these_parts": "The pins are posts for the next piece.",
+      "sets_up_for_later": "Steps 123 onward continue the cab.",
+      "design_pattern": "side beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

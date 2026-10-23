@@ -1,0 +1,7 @@
+STEP 117
+ADD cw-gp2-1 61332 black
+ADD cw-gp2-2 61332 black
+CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF
+CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF
+DOES cw-b7b-1 CARRIES cw-gp2-1
+PATTERN posts

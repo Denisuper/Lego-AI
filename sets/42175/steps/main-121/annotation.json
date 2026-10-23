@@ -1,0 +1,33 @@
+{
+  "example_id": "42175-step-121",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 108,
+  "step": 121,
+  "input": {
+    "picture": "steps/main-121/picture.png",
+    "parts_box": [],
+    "model_so_far": "Excavator (step 112) and the counterweight block (steps 113-120)."
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "The counterweight block is pressed onto the rear of the frame (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "up-gb13-1 carries cw-panel-1"
+    ],
+    "where_everything_is_after": [
+      "the counterweight sits on the rear of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Balances the arm.",
+      "why_these_parts": "A heavy block on the opposite side stops the machine tipping.",
+      "sets_up_for_later": "Step 122 adds a beam beside it.",
+      "design_pattern": "counterweight"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which holes take the pins is not shown."
+}

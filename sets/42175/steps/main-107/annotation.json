@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-107",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 99,
+  "step": 107,
+  "input": {
+    "picture": "steps/main-107/picture.png",
+    "parts_box": [
+      {
+        "name": "hy-hose-6",
+        "part_number": "5102c25",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with black hose (step 106)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hy-hose-6",
+        "part_number": "5102c25",
+        "catalog_name": "Hose, Pneumatic 4mm D. 25L / 20cm",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "long light grey air hose, drawn on the arm beside the black one (green check marks on the two length bars)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The light grey hose is added next to the black one along the arm; both length bars show a green check, meaning the right lengths are in the model."
+    ],
+    "who_does_what_to_which": [
+      "bm-cyl-1 drives hy-hose-6"
+    ],
+    "where_everything_is_after": [
+      "two long hoses (black and grey) lie along the arm; their ends are not plugged in yet",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Brings the second arm hose in.",
+      "why_these_parts": "A cylinder needs two hoses, one for each side of its piston.",
+      "sets_up_for_later": "Later steps plug them into the cylinder and the switches.",
+      "design_pattern": "arm hoses"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Length 25L read from the matching bar (the bar runs off the page); it could be a different hose."
+}

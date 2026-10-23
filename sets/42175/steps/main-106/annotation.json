@@ -8,11 +8,6 @@
     "parts_box": [
       {
         "name": "hy-hose-5",
-        "part_number": "5102c25",
-        "count": 1
-      },
-      {
-        "name": "hy-hose-6",
         "part_number": "5102c32",
         "count": 1
       }
@@ -23,15 +18,6 @@
     "new_parts": [
       {
         "name": "hy-hose-5",
-        "part_number": "5102c25",
-        "catalog_name": "Hose, Pneumatic 4mm D. 25L / 20cm",
-        "color": "Light Bluish Gray",
-        "part_match": "likely",
-        "position": "light grey air hose (length bar runs off the page; best guess)",
-        "rotation": "fixed"
-      },
-      {
-        "name": "hy-hose-6",
         "part_number": "5102c32",
         "catalog_name": "Hose, Pneumatic 4mm D. 32L / 256mm",
         "color": "Black",
@@ -41,17 +27,17 @@
       }
     ],
     "what_each_new_part_touches": [
-      "Two hoses (one light grey, one black) are added to the arm; the black one is drawn running along the top of the arm."
+      "The black hose is drawn running along the top of the arm (plus-brick icon). The length box shows a grey and a black bar running off the page; only the black hose is added in this step."
     ],
     "who_does_what_to_which": [
       "bm-cyl-1 drives hy-hose-5"
     ],
     "where_everything_is_after": [
-      "two hoses are added along the arm (ends are not connected yet)",
+      "a long black hose lies along the arm (ends are not connected yet)",
       "everything else: no change"
     ],
     "why": {
-      "problem_solved": "Brings the arm's cylinder hoses in.",
+      "problem_solved": "Brings the arm cylinder's long hose in.",
       "why_these_parts": "Hoses carry air from the machine to the cylinder.",
       "sets_up_for_later": "They are plugged in later.",
       "design_pattern": "arm hoses"
@@ -59,5 +45,5 @@
   },
   "confidence": "low",
   "needs_review": true,
-  "review_note": "The length bars run off the page edge, so the lengths are guesses (25L grey and 32L black are the longest unused hoses on the whole-set list). Check against later steps."
+  "review_note": "The length bars run off the page edge, so the lengths are a guess: 32L black is the longest unused black hose on the whole-set list; the same-page grey bar is the grey hose added in step 107 (25L)."
 }

@@ -1,0 +1,6 @@
+STEP 112
+ADD up-gb13-1 41239 darkgray
+CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?
+CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?
+DOES up-gb13-1 SUPPORTS up-panel-1
+PATTERN rear_beam

@@ -1,0 +1,33 @@
+{
+  "example_id": "42175-step-111",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 103,
+  "step": 111,
+  "input": {
+    "picture": "steps/main-111/picture.png",
+    "parts_box": [],
+    "model_so_far": "Arm mounted, hoses hanging (step 110)."
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "A red circle marks the place near the rear (right side of the picture) where the hoses are plugged onto the switches. No part is added."
+    ],
+    "who_does_what_to_which": [
+      "hy-hose-7 carries hy-hose-8"
+    ],
+    "where_everything_is_after": [
+      "the short hoses are plugged near the rear",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Connects the cab-side hoses to the switches.",
+      "why_these_parts": "Air must reach the cylinders.",
+      "sets_up_for_later": "The arm is now ready for the power parts.",
+      "design_pattern": "plug hoses"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which nozzle gets which hose is not shown (red circle only)."
+}

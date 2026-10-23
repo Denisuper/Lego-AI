@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 106 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 122 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -627,7 +627,7 @@
 
 **Big picture:**
 - **up-frame-1** (None): None Later: 42175-step-021 `DOES up-beam15-1 SUPPORTS up-frame-1`.
-- **up-lbeam-1** (None): None Later: 42175-step-024 `DOES up-axle5-1 HOLDS up-lbeam-1`.
+- **up-lbeam-1** (None): None Later: 42175-step-024 `DOES up-axle5-1 HOLDS up-lbeam-1`; 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?`.
 - **up-lpin-1** (None): None Later: 42175-step-022 `CONNECT hy-valve-1.hole? -> up-lpin-1.pin1`.
 - **up-lpin-2** (None): None
 - **up-lpin-3** (None): None
@@ -659,7 +659,7 @@
 
 **Big picture:**
 - **up-frame-2** (None): None Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`.
-- **up-lbeam-2** (None): None
+- **up-lbeam-2** (None): None Later: 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?`.
 - **up-lpin-6** (None): None Later: 42175-step-022 `CONNECT hy-valve-2.hole? -> up-lpin-6.pin1`.
 - **up-lpin-7** (None): None
 - **up-lpin-8** (None): None
@@ -709,9 +709,9 @@
 **Why:** Starts the air plumbing: this line will carry air from the pump to the two air cylinders. A T-piece splits the pump's air into two branches; a switch block on each branch lets the driver choose which cylinder moves. *Next:* Steps 24 and later fit the cylinders and the pump hose. *Pattern:* air line with switches
 
 **Big picture:**
-- **hy-tee-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
-- **hy-valve-1** (None): None Later: 42175-step-026 `DOES hy-valve-1 HOLDS hy-hose-3`.
-- **hy-valve-2** (None): None
+- **hy-tee-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`; 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`.
+- **hy-valve-1** (None): None Later: 42175-step-026 `DOES hy-valve-1 HOLDS hy-hose-3`; 42175-step-110 `DOES hy-valve-1 DRIVES hy-hose-7`.
+- **hy-valve-2** (None): None Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`.
 - **hy-hose-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
 - **hy-hose-2** (None): None Later: 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`; 42175-step-029 `DOES up-panel-1 SUPPORTS hy-hose-2`.
 
@@ -885,7 +885,7 @@
 **Why:** Closes the top of the rear section and gives a flat base for the cab. A panel is wide and flat, so it covers hoses and adds stiffness. *Next:* The cab frame in steps 30 onward sits on it. *Pattern:* panel on pins
 
 **Big picture:**
-- **up-panel-1** (None): None
+- **up-panel-1** (None): None Later: 42175-step-112 `DOES up-gb13-1 SUPPORTS up-panel-1`.
 - **up-spin-3** (None): None
 - **up-spin-4** (None): None
 - **up-spin-5** (None): None
@@ -1230,7 +1230,7 @@
 **Why:** Adds a tall rigid post on the beam's end. An L-shape stands upright and gives a tall mount. *Next:* Step 43 lays a second beam against it. *Pattern:* tall post
 
 **Big picture:**
-- **cb-lb-1** (None): None Later: 42175-step-043 `DOES cb-b11b-1 SUPPORTS cb-lb-1`.
+- **cb-lb-1** (None): None Later: 42175-step-043 `DOES cb-b11b-1 SUPPORTS cb-lb-1`; 42175-step-108 `CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?`.
 - **cb-lp-1** (None): None Later: 42175-step-043 `CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?`.
 - **cb-lp-2** (None): None Later: 42175-step-043 `CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?`.
 - **cb-lp-3** (None): None Later: 42175-step-043 `CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?`.
@@ -1718,7 +1718,7 @@
 
 **Big picture:**
 - **bm-gp-1** (None): None
-- **bm-lb-1** (None): None Later: 42175-step-062 `CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?`; 42175-step-062 `DOES bm-b11-1 CARRIES bm-lb-1`.
+- **bm-lb-1** (None): None Later: 42175-step-062 `CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?`; 42175-step-062 `DOES bm-b11-1 CARRIES bm-lb-1`; 42175-step-109 `CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?`.
 - **bm-bp-1** (None): None Later: 42175-step-062 `CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?`.
 
 **Review:** The inset picture on page 62 shows the arm that is built in the next steps.
@@ -2444,7 +2444,7 @@
 **Why:** Adds the cylinder that bends the arm at the elbow. A cylinder pushing between two pivots turns the joint. *Next:* Steps 91-92 add beams that lock its pins. *Pattern:* arm cylinder
 
 **Big picture:**
-- **bm-cyl-1** (None): None Later: 42175-step-106 `DOES bm-cyl-1 DRIVES hy-hose-5`.
+- **bm-cyl-1** (None): None Later: 42175-step-106 `DOES bm-cyl-1 DRIVES hy-hose-5`; 42175-step-107 `DOES bm-cyl-1 DRIVES hy-hose-6`.
 - **bm-tpin-1** (None): None Later: 42175-step-091 `DOES bm-b11e-1 HOLDS bm-tpin-1`.
 - **bm-tpin-2** (None): None
 
@@ -2836,20 +2836,411 @@
 
 ![42175-step-106](steps/main-106/picture.png)
 
-**New parts:** hy-hose-5 (5102c25, light bluish gray) - light grey air hose (length bar runs off the page; best guess); hy-hose-6 (5102c32, black) - long black air hose (length bar runs off the page; best guess)
+**New parts:** hy-hose-5 (5102c32, black) - long black air hose (length bar runs off the page; best guess)
 
-**Touches:** Two hoses (one light grey, one black) are added to the arm; the black one is drawn running along the top of the arm.
+**Touches:** The black hose is drawn running along the top of the arm (plus-brick icon). The length box shows a grey and a black bar running off the page; only the black hose is added in this step.
 
 **Exact joins:** none
 
 **Who does what:** bm-cyl-1 drives hy-hose-5
 
-**After:** two hoses are added along the arm (ends are not connected yet); everything else: no change
+**After:** a long black hose lies along the arm (ends are not connected yet); everything else: no change
 
-**Why:** Brings the arm's cylinder hoses in. Hoses carry air from the machine to the cylinder. *Next:* They are plugged in later. *Pattern:* arm hoses
+**Why:** Brings the arm cylinder's long hose in. Hoses carry air from the machine to the cylinder. *Next:* They are plugged in later. *Pattern:* arm hoses
 
 **Big picture:**
 - **hy-hose-5** (None): None
+
+**Review:** The length bars run off the page edge, so the lengths are a guess: 32L black is the longest unused black hose on the whole-set list; the same-page grey bar is the grey hose added in step 107 (25L).
+
+## 42175-step-107 (page 99) - low - NEEDS REVIEW
+
+![42175-step-107](steps/main-107/picture.png)
+
+**New parts:** hy-hose-6 (5102c25, light bluish gray) - long light grey air hose, drawn on the arm beside the black one (green check marks on the two length bars)
+
+**Touches:** The light grey hose is added next to the black one along the arm; both length bars show a green check, meaning the right lengths are in the model.
+
+**Exact joins:** none
+
+**Who does what:** bm-cyl-1 drives hy-hose-6
+
+**After:** two long hoses (black and grey) lie along the arm; their ends are not plugged in yet; everything else: no change
+
+**Why:** Brings the second arm hose in. A cylinder needs two hoses, one for each side of its piston. *Next:* Later steps plug them into the cylinder and the switches. *Pattern:* arm hoses
+
+**Big picture:**
 - **hy-hose-6** (None): None
 
-**Review:** The length bars run off the page edge, so the lengths are guesses (25L grey and 32L black are the longest unused hoses on the whole-set list). Check against later steps.
+**Review:** Length 25L read from the matching bar (the bar runs off the page); it could be a different hose.
+
+## 42175-step-108 (page 100) - medium - NEEDS REVIEW
+
+![42175-step-108](steps/main-108/picture.png)
+
+**New parts:** cb-rax10-1 (3737, red) - red 10-long axle (1:1 box, circled 10); cb-rbush-1 (3713, red) - red bush on the axle end
+
+**Touches:** Yellow box: the red axle with a red bush on one end is pushed through the model from the arm side (green arrow) across the front of the frame.
+
+**Exact joins:** cb-rax10-1.axle1 into cb-lb-1.axlehole? (not shown in booklet); cb-rbush-1.axlehole1 into cb-rax10-1.axle10? (not shown in booklet)
+
+**Who does what:** cb-rax10-1 carries cb-rbush-1
+
+**After:** a long red axle runs across the front of the frame; everything else: no change
+
+**Why:** Adds the axle that the arm's root hinge sits on. A long axle ties the left and right sides together. *Next:* Step 109 locks it. *Pattern:* arm root axle
+
+**Big picture:**
+- **cb-rax10-1** (None): None Later: 42175-step-109 `DOES cb-gpin-1 HOLDS cb-rax10-1`.
+- **cb-rbush-1** (None): None
+
+**Mechanisms:**
+- **cb-rax10-1** builds on cb-lb-1 (42175-step-042), which rests on cb-lp-1 (42175-step-042), cb-lp-2 (42175-step-042)
+
+**Review:** Which parts the axle passes through is not countable.
+
+## 42175-step-109 (page 101) - low - NEEDS REVIEW
+
+![42175-step-109](steps/main-109/picture.png)
+
+**New parts:** cb-gpin-1 (77765, light bluish gray) - grey long pin pushed in at the arm's root (yellow box)
+
+**Touches:** A grey long pin goes into the root of the arm next to the red axle (arrow).
+
+**Exact joins:** cb-gpin-1.pin? into bm-lb-1.hole? (not shown in booklet)
+
+**Who does what:** cb-gpin-1 holds cb-rax10-1
+
+**After:** a grey pin locks the arm root onto the model; everything else: no change
+
+**Why:** Locks the arm to the machine. A pin through the root keeps the axle from sliding. *Next:* Step 110 adds hoses. *Pattern:* root pin
+
+**Big picture:**
+- **cb-gpin-1** (None): None
+
+**Mechanisms:**
+- **cb-gpin-1** builds on bm-lb-1 (42175-step-061), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
+
+**Review:** Arm root is drawn on the frame; hole not countable.
+
+## 42175-step-110 (page 102) - low - NEEDS REVIEW
+
+![42175-step-110](steps/main-110/picture.png)
+
+**New parts:** hy-hose-7 (5102c13, light bluish gray) - short light grey air hose (length bar with green check); hy-hose-8 (5102c18, black) - short black air hose (length bar with green check)
+
+**Touches:** Two plus-brick icons: a grey hose and a black hose are added near the rear (ends hang in the air).
+
+**Exact joins:** none
+
+**Who does what:** hy-valve-1 drives hy-hose-7
+
+**After:** two shorter hoses (grey and black) are added near the cab (not plugged in yet); everything else: no change
+
+**Why:** Brings the hoses that run from the switches to the arm in. The cab end of an arm cylinder's hoses is short. *Next:* Step 111 plugs them. *Pattern:* cab hoses
+
+**Big picture:**
+- **hy-hose-7** (None): None Later: 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
+- **hy-hose-8** (None): None Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
+
+**Review:** Lengths 13L and 18L read from the bars (the grey bar is about 72% of the black one, matching 13/18); the pair 25L/32L was used in steps 106-107.
+
+## 42175-step-111 (page 103) - low - NEEDS REVIEW
+
+![42175-step-111](steps/main-111/picture.png)
+
+**New parts:** 
+
+**Touches:** A red circle marks the place near the rear (right side of the picture) where the hoses are plugged onto the switches. No part is added.
+
+**Exact joins:** hy-hose-7.end? into hy-tee-1.nozzle? (not shown in booklet); hy-hose-8.end? into hy-valve-2.nozzle? (not shown in booklet)
+
+**Who does what:** hy-hose-7 carries hy-hose-8
+
+**After:** the short hoses are plugged near the rear; everything else: no change
+
+**Why:** Connects the cab-side hoses to the switches. Air must reach the cylinders. *Next:* The arm is now ready for the power parts. *Pattern:* plug hoses
+
+**Big picture:**
+
+
+**Review:** Which nozzle gets which hose is not shown (red circle only).
+
+## 42175-step-112 (page 105) - low - NEEDS REVIEW
+
+![42175-step-112](steps/main-112/picture.png)
+
+**New parts:** up-gb13-1 (41239, dark bluish gray) - dark grey 13-hole beam laid across the rear of the frame (1:1 box, circled 13)
+
+**Touches:** The 13-hole beam is shown on the rear of the model with its number tag; no arrow shows which holes it uses.
+
+**Exact joins:** up-gb13-1.hole? into up-lbeam-1.hole? (not shown in booklet); up-gb13-1.hole? into up-lbeam-2.hole? (not shown in booklet)
+
+**Who does what:** up-gb13-1 supports up-panel-1
+
+**After:** a dark grey 13-hole beam spans the rear of the frame; everything else: no change
+
+**Why:** Adds a rear cross beam on which the counterweight will sit. A long beam spans the full rear width. *Next:* Steps 113-120 build the counterweight separately. *Pattern:* rear beam
+
+**Big picture:**
+- **up-gb13-1** (None): None Later: 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-122 `CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?`.
+
+**Mechanisms:**
+- **up-gb13-1** builds on up-lbeam-1 (42175-step-019), which rests on up-bpin-1 (42175-step-019), up-bpin-2 (42175-step-019); up-lbeam-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+
+**Review:** Which rear holes it uses is not countable.
+
+## 42175-step-113 (page 106) - low - NEEDS REVIEW
+
+![42175-step-113](steps/main-113/picture.png)
+
+**New parts:** cw-panel-1 (15458, black) - black 3 x 11 panel, base of the counterweight; cw-gp-1 (61332, black) - four small dark friction pins in the panel top; cw-gp-2 (61332, black) - four small dark friction pins in the panel top; cw-gp-3 (61332, black) - four small dark friction pins in the panel top; cw-gp-4 (61332, black) - four small dark friction pins in the panel top
+
+**Touches:** Four small dark friction pins are pushed into the panel (two are shown at the top).
+
+**Exact joins:** cw-gp-1.pin1 into cw-panel-1.hole? (not shown in booklet); cw-gp-2.pin1 into cw-panel-1.hole? (not shown in booklet); cw-gp-3.pin1 into cw-panel-1.hole? (not shown in booklet); cw-gp-4.pin1 into cw-panel-1.hole? (not shown in booklet)
+
+**Who does what:** cw-panel-1 carries cw-gp-1
+
+**After:** a black panel with four dark pins is ready; everything else: no change
+
+**Why:** Starts the rear counterweight: a stack of panels and beams. A panel is the base, pins hold the beams above it. *Next:* Step 114 adds a 7-hole beam. *Pattern:* counterweight base
+
+**Big picture:**
+- **cw-panel-1** (None): None Later: 42175-step-114 `DOES cw-b7-1 SUPPORTS cw-panel-1`; 42175-step-119 `CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `DOES cw-panel-1 CARRIES cw-bp2-1`; 42175-step-120 `CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?`; 42175-step-120 `CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?`; 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`.
+- **cw-gp-1** (None): None Later: 42175-step-114 `CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF`.
+- **cw-gp-2** (None): None Later: 42175-step-114 `CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF`.
+- **cw-gp-3** (None): None
+- **cw-gp-4** (None): None
+
+**Review:** Four pins in the box; the picture shows the two on top and two others hidden.
+
+## 42175-step-114 (page 106) - low - NEEDS REVIEW
+
+![42175-step-114](steps/main-114/picture.png)
+
+**New parts:** cw-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7)
+
+**Touches:** The 7-hole beam is pressed onto the pins on top of the panel.
+
+**Exact joins:** cw-gp-1.pin1 into cw-b7-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-gp-2.pin1 into cw-b7-1.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** cw-b7-1 supports cw-panel-1
+
+**After:** a 7-hole beam lies along the panel; everything else: no change
+
+**Why:** Adds a layer to the stack. The beam locks on the pins. *Next:* Step 115 adds blue pins for the next layer. *Pattern:* layer
+
+**Big picture:**
+- **cw-b7-1** (None): None Later: 42175-step-115 `CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF`; 42175-step-115 `CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF`; 42175-step-115 `DOES cw-b7-1 CARRIES cw-bp-1`; 42175-step-116 `DOES cw-b7b-1 SUPPORTS cw-b7-1`.
+
+**Mechanisms:**
+- **cw-b7-1** builds on cw-gp-1 (42175-step-113), which rests on cw-panel-1 (42175-step-113); cw-gp-2 (42175-step-113), which rests on cw-panel-1 (42175-step-113)
+
+**Review:** Holes not countable.
+
+## 42175-step-115 (page 106) - low - NEEDS REVIEW
+
+![42175-step-115](steps/main-115/picture.png)
+
+**New parts:** cw-bp-1 (43093, blue) - two blue pins standing up from the 7-hole beam ends; cw-bp-2 (43093, blue) - two blue pins standing up from the 7-hole beam ends
+
+**Touches:** Two blue pins are pushed into the first and last holes of the 7-hole beam (picture).
+
+**Exact joins:** cw-bp-1.pin1 into cw-b7-1.hole1 (0.9 hole deep, held stiff by friction); cw-bp-2.pin1 into cw-b7-1.hole7 (0.9 hole deep, held stiff by friction)
+
+**Who does what:** cw-b7-1 carries cw-bp-1
+
+**After:** two blue pins stand at the ends of the beam; everything else: no change
+
+**Why:** Adds posts for the next beam. Pins at both ends locate it. *Next:* Step 116 puts a beam on. *Pattern:* posts
+
+**Big picture:**
+- **cw-bp-1** (None): None Later: 42175-step-116 `CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF`.
+- **cw-bp-2** (None): None Later: 42175-step-116 `CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF`.
+
+**Mechanisms:**
+- **cw-bp-1** builds on cw-b7-1 (42175-step-114), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp-2** builds on cw-b7-1 (42175-step-114), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+
+**Review:** Positions read from the picture.
+
+## 42175-step-116 (page 106) - medium - NEEDS REVIEW
+
+![42175-step-116](steps/main-116/picture.png)
+
+**New parts:** cw-b7b-1 (32524, black) - two black 7-hole beams (1:1 box, circled 7); cw-b7b-2 (32524, black) - two black 7-hole beams (1:1 box, circled 7)
+
+**Touches:** One 7-hole beam is lowered onto the blue pins (green arrows); the second one is used in the stack in the next steps.
+
+**Exact joins:** cw-bp-1.pin1 into cw-b7b-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-bp-2.pin1 into cw-b7b-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** cw-b7b-1 supports cw-b7-1
+
+**After:** a second beam covers the blue pins; the stack has three layers; everything else: no change
+
+**Why:** Builds up the counterweight's height. Each layer locks the one below. *Next:* Step 117 adds pins. *Pattern:* stack
+
+**Big picture:**
+- **cw-b7b-1** (None): None Later: 42175-step-117 `CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF`; 42175-step-117 `CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF`; 42175-step-117 `DOES cw-b7b-1 CARRIES cw-gp2-1`.
+- **cw-b7b-2** (None): None Later: 42175-step-118 `DOES cw-panel2-1 SUPPORTS cw-b7b-2`.
+
+**Mechanisms:**
+- **cw-b7b-1** builds on cw-bp-1 (42175-step-115), which rests on cw-b7-1 (42175-step-114); cw-bp-2 (42175-step-115), which rests on cw-b7-1 (42175-step-114)
+
+**Review:** The box has 2x beams; the picture only shows one being placed, the second is hidden in the stack below.
+
+## 42175-step-117 (page 107) - low - NEEDS REVIEW
+
+![42175-step-117](steps/main-117/picture.png)
+
+**New parts:** cw-gp2-1 (61332, black) - two small dark friction pins in the top beam; cw-gp2-2 (61332, black) - two small dark friction pins in the top beam
+
+**Touches:** Two small dark friction pins are pushed into the top beam.
+
+**Exact joins:** cw-gp2-1.pin1 into cw-b7b-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-gp2-2.pin1 into cw-b7b-1.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** cw-b7b-1 carries cw-gp2-1
+
+**After:** two dark posts stand on top of the stack; everything else: no change
+
+**Why:** Posts for the top panel. Pins make fixing points. *Next:* Step 118 adds a panel on top. *Pattern:* posts
+
+**Big picture:**
+- **cw-gp2-1** (None): None Later: 42175-step-118 `CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?`.
+- **cw-gp2-2** (None): None Later: 42175-step-118 `CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?`.
+
+**Mechanisms:**
+- **cw-gp2-1** builds on cw-b7b-1 (42175-step-116), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+- **cw-gp2-2** builds on cw-b7b-1 (42175-step-116), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+
+**Review:** Positions estimated.
+
+## 42175-step-118 (page 107) - medium - NEEDS REVIEW
+
+![42175-step-118](steps/main-118/picture.png)
+
+**New parts:** cw-panel2-1 (15458, black) - second black 3 x 11 panel closing the top of the stack
+
+**Touches:** A second black panel is placed on top; a clear gap is left between the two panels (picture).
+
+**Exact joins:** cw-gp2-1.pin1 into cw-panel2-1.hole? (not shown in booklet); cw-gp2-2.pin1 into cw-panel2-1.hole? (not shown in booklet)
+
+**Who does what:** cw-panel2-1 supports cw-b7b-2
+
+**After:** two black panels sandwich the beams; everything else: no change
+
+**Why:** Closes the sandwich. Panels on both ends lock the beams. *Next:* Steps 119-120 add pins and connectors on the sides. *Pattern:* counterweight sandwich
+
+**Big picture:**
+- **cw-panel2-1** (None): None Later: 42175-step-119 `CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?`; 42175-step-119 `CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?`.
+
+**Mechanisms:**
+- **cw-panel2-1** builds on cw-gp2-1 (42175-step-117), which rests on cw-b7b-1 (42175-step-116); cw-gp2-2 (42175-step-117), which rests on cw-b7b-1 (42175-step-116)
+
+**Review:** Holes not countable.
+
+## 42175-step-119 (page 107) - low - NEEDS REVIEW
+
+![42175-step-119](steps/main-119/picture.png)
+
+**New parts:** cw-gp3-1 (61332, black) - two small dark friction pins; cw-gp3-2 (61332, black) - two small dark friction pins; cw-bp2-1 (43093, blue) - two blue pins pushed in sideways (picture); cw-bp2-2 (43093, blue) - two blue pins pushed in sideways (picture)
+
+**Touches:** Two blue and two dark pins are pushed into the sides of the counterweight (picture rotated).
+
+**Exact joins:** cw-gp3-1.pin1 into cw-panel-1.hole? (not shown in booklet); cw-gp3-2.pin1 into cw-panel2-1.hole? (not shown in booklet); cw-bp2-1.pin1 into cw-panel-1.hole? (not shown in booklet); cw-bp2-2.pin1 into cw-panel2-1.hole? (not shown in booklet)
+
+**Who does what:** cw-panel-1 carries cw-bp2-1
+
+**After:** the counterweight has pins sticking out of its sides; everything else: no change
+
+**Why:** Adds the mounting points that attach it to the frame. The pins go into the frame's holes. *Next:* Step 120 adds connectors. *Pattern:* mounting pins
+
+**Big picture:**
+- **cw-gp3-1** (None): None
+- **cw-gp3-2** (None): None
+- **cw-bp2-1** (None): None
+- **cw-bp2-2** (None): None
+
+**Mechanisms:**
+- **cw-gp3-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-gp3-2** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-bp2-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp2-2** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+
+**Review:** Positions are not countable.
+
+## 42175-step-120 (page 107) - low - NEEDS REVIEW
+
+![42175-step-120](steps/main-120/picture.png)
+
+**New parts:** cw-bp3-1 (43093, blue) - two blue pins used inside the connectors (yellow box, 2x); cw-bp3-2 (43093, blue) - two blue pins used inside the connectors (yellow box, 2x); cw-conn-1 (42003, black) - two black connectors with two pin holes (yellow box, 2x); cw-conn-2 (42003, black) - two black connectors with two pin holes (yellow box, 2x)
+
+**Touches:** Yellow box (2x): a blue pin in a black connector. Two of them are pressed onto the corner pins of the counterweight (arrows).
+
+**Exact joins:** cw-bp3-1.pin1 into cw-conn-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-bp3-2.pin1 into cw-conn-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-conn-1.hole2 into cw-panel-1.hole? (not shown in booklet); cw-conn-2.hole2 into cw-panel-1.hole? (not shown in booklet)
+
+**Who does what:** cw-conn-1 holds cw-bp3-1; cw-conn-2 holds cw-bp3-2
+
+**After:** two black connectors with blue pins sit at the counterweight's corners; everything else: no change
+
+**Why:** Adds the corner locks. Connectors let more beams be attached later. *Next:* Step 121 fits the counterweight to the model. *Pattern:* corner connectors
+
+**Big picture:**
+- **cw-bp3-1** (None): None
+- **cw-bp3-2** (None): None
+- **cw-conn-1** (None): None
+- **cw-conn-2** (None): None
+
+**Mechanisms:**
+- **cw-conn-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-conn-2** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+
+**Review:** Positions not countable.
+
+## 42175-step-121 (page 108) - medium - NEEDS REVIEW
+
+![42175-step-121](steps/main-121/picture.png)
+
+**New parts:** 
+
+**Touches:** The counterweight block is pressed onto the rear of the frame (arrow).
+
+**Exact joins:** cw-panel-1.hole? into up-gb13-1.hole? (not shown in booklet)
+
+**Who does what:** up-gb13-1 carries cw-panel-1
+
+**After:** the counterweight sits on the rear of the frame; everything else: no change
+
+**Why:** Balances the arm. A heavy block on the opposite side stops the machine tipping. *Next:* Step 122 adds a beam beside it. *Pattern:* counterweight
+
+**Big picture:**
+
+
+**Review:** Which holes take the pins is not shown.
+
+## 42175-step-122 (page 109) - low - NEEDS REVIEW
+
+![42175-step-122](steps/main-122/picture.png)
+
+**New parts:** cw-b7c-1 (32524, black) - black 7-hole beam with two blue pins (yellow box, 1:1 box circled 7); cw-bp4-1 (43093, blue) - two blue pins in the 7-hole beam; cw-bp4-2 (43093, blue) - two blue pins in the 7-hole beam
+
+**Touches:** Yellow box: a 7-hole beam with two blue pins. It is placed on the side of the frame (green arrows) near the cab.
+
+**Exact joins:** cw-bp4-1.pin1 into cw-b7c-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-bp4-2.pin1 into cw-b7c-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-b7c-1.hole? into up-gb13-1.hole? (not shown in booklet)
+
+**Who does what:** cw-b7c-1 carries cw-bp4-1
+
+**After:** a 7-hole beam with two blue pins sits at the side of the frame; everything else: no change
+
+**Why:** Adds a side beam beside the cab. The pins are posts for the next piece. *Next:* Steps 123 onward continue the cab. *Pattern:* side beam
+
+**Big picture:**
+- **cw-b7c-1** (None): None
+- **cw-bp4-1** (None): None
+- **cw-bp4-2** (None): None
+
+**Mechanisms:**
+- **cw-b7c-1** builds on up-gb13-1 (42175-step-112), which rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
+
+**Review:** Holes not countable.

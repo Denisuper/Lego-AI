@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-118",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 107,
+  "step": 118,
+  "input": {
+    "picture": "steps/main-118/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-panel2-1",
+        "part_number": "15458",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Counterweight with top pins (step 117)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-panel2-1",
+        "part_number": "15458",
+        "catalog_name": "Technic Panel 3 x 11 x 1",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "second black 3 x 11 panel closing the top of the stack",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A second black panel is placed on top; a clear gap is left between the two panels (picture)."
+    ],
+    "who_does_what_to_which": [
+      "cw-panel2-1 supports cw-b7b-2"
+    ],
+    "where_everything_is_after": [
+      "two black panels sandwich the beams",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Closes the sandwich.",
+      "why_these_parts": "Panels on both ends lock the beams.",
+      "sets_up_for_later": "Steps 119-120 add pins and connectors on the sides.",
+      "design_pattern": "counterweight sandwich"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

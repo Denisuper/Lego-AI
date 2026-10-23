@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-115",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 106,
+  "step": 115,
+  "input": {
+    "picture": "steps/main-115/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Panel with 7-hole beam (step 114)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins standing up from the 7-hole beam ends",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins standing up from the 7-hole beam ends",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two blue pins are pushed into the first and last holes of the 7-hole beam (picture)."
+    ],
+    "who_does_what_to_which": [
+      "cw-b7-1 carries cw-bp-1"
+    ],
+    "where_everything_is_after": [
+      "two blue pins stand at the ends of the beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds posts for the next beam.",
+      "why_these_parts": "Pins at both ends locate it.",
+      "sets_up_for_later": "Step 116 puts a beam on.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Positions read from the picture."
+}

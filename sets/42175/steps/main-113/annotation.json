@@ -1,0 +1,105 @@
+{
+  "example_id": "42175-step-113",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 106,
+  "step": 113,
+  "input": {
+    "picture": "steps/main-113/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-panel-1",
+        "part_number": "15458",
+        "count": 1
+      },
+      {
+        "name": "cw-gp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cw-gp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cw-gp-3",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cw-gp-4",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the counterweight block; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-panel-1",
+        "part_number": "15458",
+        "catalog_name": "Technic Panel 3 x 11 x 1",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 3 x 11 panel, base of the counterweight",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-gp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the panel top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-gp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the panel top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-gp-3",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the panel top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-gp-4",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the panel top",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Four small dark friction pins are pushed into the panel (two are shown at the top)."
+    ],
+    "who_does_what_to_which": [
+      "cw-panel-1 carries cw-gp-1"
+    ],
+    "where_everything_is_after": [
+      "a black panel with four dark pins is ready",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the rear counterweight: a stack of panels and beams.",
+      "why_these_parts": "A panel is the base, pins hold the beams above it.",
+      "sets_up_for_later": "Step 114 adds a 7-hole beam.",
+      "design_pattern": "counterweight base"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Four pins in the box; the picture shows the two on top and two others hidden."
+}
