@@ -9,7 +9,6 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `sets/<set>/steps/<build>-NN/` | One folder per step: `picture.png`, `annotation.json`, `notation.tbl` |
 | `sets/<set>/mechanisms.json` | Each mechanism (worm drive, swing ring, linkages...) as a chain of parts in the order motion flows, with each part's role |
 | `sets/<set>/systems.json` | The machine's systems (frame, tracks, swing, drives, arm, bucket, covers, roof): what each is on a real excavator, what it's for, how they depend on each other, and every part's role |
-| `sets/<set>/roles.csv` | Every part: its system, its role, and every later step that uses it (generated) |
 | `sets/<set>/booklet_map.csv` | Every step in booklet order, with page and where each side build attaches |
 | `sets/<set>/booklet.pdf`, `parts_list.csv` | The booklet and its official parts list |
 | `sets/<set>/training.jsonl`, `training.tbl` | The whole set in one file each, ready for training (generated) |
