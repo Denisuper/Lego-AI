@@ -47,30 +47,26 @@ UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because 
 NOT STARTED (parts list only): 8043, 8069, 42009, 42030, 8258.
 
 ## Finishing an unfinished set (prompt for agents)
-Example sets: **8047** and **42175**. A finished set looks exactly like them: open them first and copy their files, THINK lines and header. Give an agent this prompt, one set at a time:
+Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/steps.md first and copy its wording style. Give an agent this prompt, one set at a time:
 
 ```
-Finish set <set>. Copy the layout and wording style of sets/8047 and sets/42175. Work only inside sets/<set>/.
+Finish set <set>. Copy the layout and wording style of sets/42175/steps.md. Work only inside sets/<set>/.
 
 WHY THE STEP FOLDERS ARE NOT DONE: every steps/*/annotation.json still says "TO WRITE" (why, model_so_far,
-rotation, where_everything_is_after). Training files built now would teach the model "TO WRITE". Fix that first.
+rotation, where_everything_is_after). Pull a real one-sentence WHY and the real joins out of each step before
+writing steps.md - don't carry "TO WRITE" forward.
 
 MAKE (in this order)
-1. Fill every "TO WRITE" in steps/*/annotation.json with real, short, plain text. Rotation = fixed / turns on X / turns with X.
-2. Write sets/<set>/systems.json (what each part family is for in the finished machine) and sets/<set>/mechanisms.json
-   (the real mechanism chains: input -> parts -> output; types from catalog/mechanisms.json). tools/build_set.py needs both.
-3. python tools/build_set.py sets/<set>  ->  training.tbl + training.jsonl.
-   Make both start with the instructions the model follows: copy the leading "# INSTRUCTIONS" lines from sets/8047/training.tbl
-   and the "instructions" field from sets/8047/training.jsonl.
-4. steps.md: one block per step (see sets/42175/steps.md): ADD and CONNECT lines from the step notation (keep the part names)
-   plus ONE real WHY sentence per step.
-5. booklet.pdf: the original, unedited booklet from LEGO (python tools/get_set.py <set> -, or download it). Add
-   !sets/<set>/booklet.pdf to .gitignore. Keep parts_list.csv.
+1. Write sets/<set>/steps.md: one block per step (see sets/42175/steps.md), in booklet order (use booklet_map.csv
+   for the order if the set has sub-builds): ADD and CONNECT lines from the step's annotation.json (keep the part
+   names), GROUP/END/ATTACH for side builds, plus ONE real WHY sentence per step.
+2. python training/export.py  ->  writes sets/<set>/training.tbl + training.jsonl from that steps.md, and
+   rebuilds training/data/train.jsonl + test.jsonl for every set that has one.
 
 CHECK (all must pass before you delete anything)
-- python tools/check_notation.py sets/<set>/training.tbl says every join fits.
-- every part in parts_list.csv is used exactly once by the last step.
-- grep -c "TO WRITE" over the set's training.tbl, training.jsonl and steps.md is 0 everywhere.
+- every part in parts_list.csv is used exactly once by the last step in steps.md.
+- every point in steps.md exists in catalog/connections.csv.
+- grep -c "TO WRITE" over steps.md and the set's training.tbl/training.jsonl is 0.
 
 DELETE (only after the checks pass)
 - the whole steps/ folder (every annotation.json, notation.tbl and picture crop)
@@ -82,7 +78,9 @@ THEN: move the set from UNFINISHED to done in "Layout" and "Status" of CLAUDE.md
 Never delete before the checks pass. Never leave "TO WRITE" in a training file. Never force-push.
 ```
 NOT STARTED sets have no step folders: use "How to add a set" above instead.
-Note: no script turns steps.md into training files yet, which is why the training files are built first from the step folders.
+Don't use tools/build_set.py or write systems.json/mechanisms.json for a set's training files - training/export.py
+builds training.tbl/.jsonl straight from steps.md now, and the THINK/MECH/STATE/MOTION lines those used to produce
+were almost entirely restating ADD/CONNECT/WHY in prose. Dropped on purpose; don't bring them back.
 
 ## Mechanisms (what the model must understand)
 A mechanism is a chain of parts that passes or changes motion. Every part in a build either belongs to one of these or holds the structure together. Full rules and failure modes: `catalog/mechanisms.json`.
