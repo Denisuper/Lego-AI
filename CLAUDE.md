@@ -70,7 +70,7 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 
 ## Status (Oct 23, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
-- 42175 joins: about 276 are `~` estimates and 328 are `?`. Steps 13 and 18 were re-counted at high zoom; steps 19-199 not yet.
+- 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
 - Other sets (42004 ... 42116) come from 3D models and are labeled by other agents.
 
 ## Saving (agents)
