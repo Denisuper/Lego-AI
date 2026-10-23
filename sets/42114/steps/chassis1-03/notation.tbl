@@ -1,3 +1,0 @@
-ATTACH chassis1a
-CONNECT pin-120.pin2 -> beam5x11-1.hole8 STIFF
-CONNECT pin-121.pin2 -> beam5x11-1.hole6 STIFF

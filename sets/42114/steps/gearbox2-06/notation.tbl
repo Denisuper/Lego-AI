@@ -1,9 +1,0 @@
-ADD axle11-1 23948 yellow
-POS axle11-1 0 -4 -4 0 0 -1 0 -1 0 -1 0 0
-ADD gear16-7 94925 lightbluishgrey
-POS gear16-7 0 -4 0 0 1 0 1 0 0 0 0 -1
-ADD gear16-8 94925 lightbluishgrey
-POS gear16-8 0 -4 -2 0 1 0 1 0 0 0 0 -1
-CONNECT axle11-1.axle2 -> gear16-7.axlehole1 LOCKED
-CONNECT axle11-1.axle4 -> gear16-8.axlehole1 LOCKED
-CONNECT axle11-1.axle3 -> beam7-2.hole5 TURNS

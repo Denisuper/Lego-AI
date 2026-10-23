@@ -1,6 +1,0 @@
-ADD pin-262 2780 black
-POS pin-262 -4 -3.5 -8 0 -1 0 -1 0 0 0 0 -1
-ADD pin-263 2780 black
-POS pin-263 4 -3.5 -8 0 -1 0 -1 0 0 0 0 -1
-CONNECT pin-262.pin1 -> conn-55.hole3 STIFF
-CONNECT pin-263.pin1 -> conn-60.hole1 STIFF

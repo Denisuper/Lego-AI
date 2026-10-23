@@ -1,3 +1,0 @@
-ATTACH cabinroof
-CONNECT pin-333.axle1 -> beam15-7.hole1 TURNS
-CONNECT pin-336.pin1 -> beam15-8.hole1 STIFF

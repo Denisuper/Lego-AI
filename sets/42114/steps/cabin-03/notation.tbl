@@ -1,8 +1,0 @@
-ADD pin-198 48989 lightbluishgrey
-POS pin-198 3 -1 4 0 0 -1 0 -1 0 -1 0 0
-ADD pin-199 48989 lightbluishgrey
-POS pin-199 -3 -1 4 0 0 -1 0 -1 0 -1 0 0
-CONNECT pin-198.pin3 -> beam5x11-2.hole26 STIFF
-CONNECT pin-199.pin1 -> beam5x11-2.hole25 STIFF
-CONNECT pin-198.pin4 -> beam5x11-3.hole26 STIFF
-CONNECT pin-199.pin2 -> beam5x11-3.hole25 STIFF

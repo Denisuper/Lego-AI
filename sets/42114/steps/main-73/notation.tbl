@@ -1,9 +1,0 @@
-STEP 73
-ATTACH sidebars
-ATTACH sidebars
-ATTACH sidebars
-ATTACH sidebars
-CONNECT pin-714.axle1 -> beam-39.hole20 TURNS
-CONNECT pin-714.axle1 -> beam-39.hole5 TURNS
-CONNECT pin-714.axle1 -> beam-40.hole16 TURNS
-CONNECT pin-714.axle1 -> beam-40.hole1 TURNS

@@ -1,4 +1,0 @@
-STEP 65
-ATTACH hoodfront
-CONNECT pin-578.pin1 -> panel-1.hole3 STIFF
-CONNECT pin-579.pin1 -> panel-1.hole8 STIFF

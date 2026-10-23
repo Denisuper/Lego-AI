@@ -1,3 +1,0 @@
-ADD beam4-4 2825 black
-POS beam4-4 -3 -7 0 0 0 1 0 -1 0 1 0 0
-CONNECT axle8-3.axle1 -> beam4-4.axlehole2 LOCKED

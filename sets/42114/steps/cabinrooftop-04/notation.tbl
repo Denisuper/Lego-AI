@@ -1,4 +1,0 @@
-ATTACH cabinrooftop1
-CONNECT pin-516.pin2 -> part-5.hole3 TURNS
-CONNECT pin-517.pin2 -> part-5.hole6 TURNS
-CONNECT pin-518.pin2 -> part-5.hole9 TURNS

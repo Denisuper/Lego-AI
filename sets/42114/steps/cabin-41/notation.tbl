@@ -1,3 +1,0 @@
-ATTACH mudguard2
-CONNECT pin-299.pin3 -> beam-40.hole15 STIFF
-CONNECT pin-302.pin3 -> beam-40.hole7 STIFF

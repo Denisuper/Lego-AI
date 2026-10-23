@@ -1,3 +1,0 @@
-ATTACH dumpbodybott
-CONNECT pin-947.pin1 -> panel-34.hole9 STIFF
-CONNECT pin-948.pin1 -> panel-34.hole8 STIFF

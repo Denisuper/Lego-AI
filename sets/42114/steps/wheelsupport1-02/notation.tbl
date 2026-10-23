@@ -1,7 +1,0 @@
-ADD axle4-11 87083 darkbluishgrey
-POS axle4-11 0 2 -1.5 0 0.156 -0.988 0 0.988 0.156 1 0 0
-ADD gear24-3 3648b darkbluishgrey
-POS gear24-3 0 2 -1 0.988 0.156 0 -0.156 0.988 0 0 0 1
-CONNECT axle4-11.axle3 -> gear24-3.axlehole1 LOCKED
-CONNECT axle4-11.axle2 -> housing-2.hole6 TURNS
-CONNECT axle4-11.axle1 -> axle-2.axlehole1 LOCKED

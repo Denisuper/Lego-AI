@@ -1,8 +1,0 @@
-ADD panel-15 64391 yellow
-POS panel-15 -6 0 -1 0 1 0 1 0 0 0 0 -1
-ADD pin-687 2780 black
-POS pin-687 -6 0 -0.5 0 0.8 -0.6 0 0.6 0.8 1 0 0
-ADD pin-688 2780 black
-POS pin-688 -8 1 -0.5 0 1 0 0 0 1 1 0 0
-CONNECT pin-687.pin1 -> panel-15.hole4 STIFF
-CONNECT pin-688.pin1 -> panel-15.hole2 STIFF

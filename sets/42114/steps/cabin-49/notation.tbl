@@ -1,6 +1,0 @@
-ADD pin-468 2780 black
-POS pin-468 2 -7 -5.5 0 0 -1 0 1 0 1 0 0
-ADD pin-469 2780 black
-POS pin-469 -2 -7 -5.5 0 0 -1 0 1 0 1 0 0
-CONNECT pin-468.pin2 -> back-1.hole35 STIFF
-CONNECT pin-469.pin2 -> back-1.hole34 STIFF

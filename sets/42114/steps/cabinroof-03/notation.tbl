@@ -1,8 +1,0 @@
-ADD beam5-23 32316 black
-POS beam5-23 -4 0 1 0 1 0 1 0 0 0 0 -1
-ADD beam5-24 32316 black
-POS beam5-24 4 0 1 0 1 0 1 0 0 0 0 -1
-CONNECT pin-339.pin2 -> beam5-23.hole2 STIFF
-CONNECT pin-340.pin2 -> beam5-23.hole4 STIFF
-CONNECT pin-334.axle1 -> beam5-24.hole2 TURNS
-CONNECT pin-335.pin1 -> beam5-24.hole4 STIFF

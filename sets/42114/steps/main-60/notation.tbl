@@ -1,7 +1,0 @@
-STEP 60
-ATTACH cabinrooftop
-CONNECT axle6-7.axle3 -> panel-10.hole4 TURNS
-CONNECT pin-514.pin1 -> panel-10.hole3 STIFF
-CONNECT pin-512.pin1 -> panel-11.hole14 STIFF
-CONNECT pin-515.pin1 -> hole-6.hole1 STIFF
-CONNECT pin-513.pin1 -> hole-7.hole1 STIFF

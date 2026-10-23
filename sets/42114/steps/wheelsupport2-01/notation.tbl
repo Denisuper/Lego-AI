@@ -1,5 +1,0 @@
-ADD housing-3 92908 lightbluishgrey
-POS housing-3 0 0 0 1 0 0 0 1 0 0 0 1
-ADD axle-3 92909 darkbluishgrey
-POS axle-3 0 2 -3.5 0.988 0.156 0 -0.156 0.988 0 0 0 1
-CONNECT axle-3.pin4 -> housing-3.hole6 STIFF

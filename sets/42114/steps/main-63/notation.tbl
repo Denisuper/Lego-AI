@@ -1,6 +1,0 @@
-STEP 63
-ATTACH enginetop
-CONNECT pin-547.axle1 -> beam-36.hole4 TURNS
-CONNECT pin-548.axle1 -> beam-36.hole3 TURNS
-CONNECT pin-552.pin1 -> conn-69.hole1 STIFF
-CONNECT pin-561.axle1 -> conn-70.hole1 TURNS

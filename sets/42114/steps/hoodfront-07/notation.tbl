@@ -1,9 +1,0 @@
-ADD petals-2 24866 orange
-POS petals-2 0 -0.4 0 0 0 -1 0 1 0 1 0 0
-ADD stud-4 14769 black
-POS stud-4 0 -0.8 0 0 0 -1 0 1 0 1 0 0
-ATTACH bottomfront4
-CONNECT part-23.pin5 -> petals-2.hole1 STIFF
-CONNECT petals-2.pin1 -> stud-4.hole3 STIFF
-CONNECT pin-571.pin1 -> conn-103.hole1 STIFF
-CONNECT pin-570.pin1 -> conn-104.hole1 STIFF

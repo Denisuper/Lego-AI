@@ -1,7 +1,0 @@
-ADD beam5-37 11478 black
-POS beam5-37 -2.75 0 -2 0 1 0 -1 0 0 0 0 1
-ADD bush-21 32123b yellow
-POS bush-21 -3.25 0 -1 0 0 1 -1 0 0 0 -1 0
-CONNECT axle3-27.axle3 -> beam5-37.axlehole2 LOCKED
-CONNECT axle2-24.axle2 -> beam5-37.hole3 TURNS
-CONNECT axle2-24.axle2 -> bush-21.axlehole1 LOCKED

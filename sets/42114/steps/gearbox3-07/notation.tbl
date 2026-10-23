@@ -1,6 +1,0 @@
-ADD beam-11 18654 darkbluishgrey
-POS beam-11 0 -3 -4 0 0 1 -1 0 0 0 -1 0
-ADD conn-15 26287 lightbluishgrey
-POS conn-15 0 -3 -6 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-5.axle2 -> beam-11.hole1 TURNS
-CONNECT axle5-5.axle1 -> conn-15.axlehole1 LOCKED

@@ -1,7 +1,0 @@
-STEP 10
-ADD axle3-1 4519 yellow
-POS axle3-1 -2 -1 0 -1 0 0 0 1 0 0 0 -1
-ADD axle3-2 4519 yellow
-POS axle3-2 2 -1 0 -1 0 0 0 1 0 0 0 -1
-CONNECT axle3-1.axle2 -> beam-2.hole11 TURNS
-CONNECT axle3-2.axle2 -> beam-2.hole10 TURNS
