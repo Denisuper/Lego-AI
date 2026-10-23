@@ -1546,15 +1546,15 @@ THINK why A long beam reaches from one frame to the other; the hub and red pin a
 THINK role up-beam15-1 in the upper frame: Beam (32278) in the upper frame that sits on the turntable.
 THINK role up-hub-1 in the upper frame: Pin (44874) in the upper frame that sits on the turntable.
 THINK role up-rpin-1 in the upper frame: Pin (89678) in the upper frame that sits on the turntable.
-THINK check up-hub-1.pin1 goes into up-beam15-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check up-hub-1.pin2 goes into up-beam15-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-hub-1.pin1 goes into up-beam15-1.hole7, 0.9 hole deep, held stiff by friction
+THINK check up-hub-1.pin2 goes into up-beam15-1.hole9, 0.9 hole deep, held stiff by friction
 THINK check up-rpin-1.pin1 goes into up-hub-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK later The cab frame is built on this beam. Pattern: cross beam
 ADD up-beam15-1 32278 black
 ADD up-hub-1 44874 lightgray
 ADD up-rpin-1 89678 red
-CONNECT up-hub-1.pin1 -> up-beam15-1.hole5~ STIFF
-CONNECT up-hub-1.pin2 -> up-beam15-1.hole7~ STIFF
+CONNECT up-hub-1.pin1 -> up-beam15-1.hole7 STIFF
+CONNECT up-hub-1.pin2 -> up-beam15-1.hole9 STIFF
 CONNECT up-rpin-1.pin1 -> up-hub-1.hole1~ STIFF
 DOES up-hub-1 HOLDS up-beam15-1
 DOES up-beam15-1 SUPPORTS up-frame-1
@@ -1581,10 +1581,6 @@ THINK role hy-valve-1 in the air system: Pneumatic switch: a lever that chooses 
 THINK role hy-valve-2 in the air system: Pneumatic switch: a second lever for the other cylinder.
 THINK role hy-hose-1 in the air system: Air hose (5102c06) in the air (pneumatic) system.
 THINK role hy-hose-2 in the air system: Air hose (5102c06) in the air (pneumatic) system.
-THINK check hy-valve-1.hole? goes into up-lpin-1.pin1 (not shown in the booklet)
-THINK check hy-valve-2.hole? goes into up-lpin-6.pin1 (not shown in the booklet)
-THINK builds_on hy-valve-1 builds on up-lpin-1 (42175-step-019), and rests on up-frame-1 (42175-step-019)
-THINK builds_on hy-valve-2 builds on up-lpin-6 (42175-step-020), and rests on up-frame-2 (42175-step-020)
 THINK mechanism hy-tee-1 becomes the T-piece: splits the air line of the air system (pump, switches, cylinders) (not confirmed)
 THINK mechanism hy-valve-1 becomes the switch lever of the air system (pump, switches, cylinders) (not confirmed)
 THINK mechanism hy-valve-2 becomes the switch lever of the air system (pump, switches, cylinders) (not confirmed)
@@ -1601,8 +1597,6 @@ DOES hy-tee-1 HOLDS hy-hose-1
 DOES hy-tee-1 HOLDS hy-hose-2
 DOES hy-valve-1 HOLDS hy-hose-1
 DOES hy-valve-2 HOLDS hy-hose-2
-CONNECT hy-valve-1.hole? -> up-lpin-1.pin1
-CONNECT hy-valve-2.hole? -> up-lpin-6.pin1
 PATTERN air_line
 MECH air pneumatic_circuit hy-tee-1 t_piece ?
 MECH air pneumatic_circuit hy-valve-1 switch_lever ?
@@ -1646,7 +1640,11 @@ THINK check up-pin-4.pin1 goes into up-lbeam-4.hole1, 0.2 hole deep, turns freel
 THINK check up-pin-5.pin1 goes into up-lbeam-4.hole3, 0.2 hole deep, turns freely (estimated from the picture)
 THINK check up-pin-6.pin1 goes into up-lbeam-4.hole5, 0.2 hole deep, turns freely (estimated from the picture)
 THINK check up-pin-1.pin2 goes into up-beam5-1.hole1, 0.9 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-2.pin2 goes into up-beam5-1.hole3, 0.9 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-3.pin2 goes into up-beam5-1.hole5, 0.9 hole deep, turns freely (estimated from the picture)
 THINK check up-pin-4.pin2 goes into up-beam5-2.hole1, 0.9 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-5.pin2 goes into up-beam5-2.hole3, 0.9 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-6.pin2 goes into up-beam5-2.hole5, 0.9 hole deep, turns freely (estimated from the picture)
 THINK later Step 24 puts the cylinder between these posts. Pattern: twin posts
 ADD up-pin-1 4274 lightgray
 ADD up-pin-2 4274 lightgray
@@ -1665,7 +1663,11 @@ CONNECT up-pin-4.pin1 -> up-lbeam-4.hole1~ TURNS
 CONNECT up-pin-5.pin1 -> up-lbeam-4.hole3~ TURNS
 CONNECT up-pin-6.pin1 -> up-lbeam-4.hole5~ TURNS
 CONNECT up-pin-1.pin2 -> up-beam5-1.hole1~ TURNS
+CONNECT up-pin-2.pin2 -> up-beam5-1.hole3~ TURNS
+CONNECT up-pin-3.pin2 -> up-beam5-1.hole5~ TURNS
 CONNECT up-pin-4.pin2 -> up-beam5-2.hole1~ TURNS
+CONNECT up-pin-5.pin2 -> up-beam5-2.hole3~ TURNS
+CONNECT up-pin-6.pin2 -> up-beam5-2.hole5~ TURNS
 DOES up-pin-1 HOLDS up-beam5-1
 DOES up-pin-4 HOLDS up-beam5-2
 PATTERN twin_post_builds
@@ -1897,8 +1899,8 @@ THINK check sd-gpin-1.pin1 goes into sd-panel-1.hole1, 0.2 hole deep, turns free
 THINK check sd-gpin-2.pin1 goes into sd-panel-1.hole2, 0.2 hole deep, turns freely (estimated from the picture)
 THINK check sd-bpin-1.pin1 goes into sd-panel-1.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK check sd-bpin-2.pin1 goes into sd-panel-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check sd-bpin-1.axle1 goes into sd-gbeam-1.hole1, 1 hole deep, turns freely (estimated from the picture)
-THINK check sd-bpin-2.axle1 goes into sd-gbeam-1.hole2, 1 hole deep, turns freely (estimated from the picture)
+THINK check sd-bpin-1.axle1 goes into sd-gbeam-1.hole1, 1 hole deep, turns freely
+THINK check sd-bpin-2.axle1 goes into sd-gbeam-1.hole3, 1 hole deep, turns freely
 THINK check sd-lbeam-1.hole1 goes into sd-bpin-1.axle1? (not shown in the booklet)
 THINK check sd-beam15-1.hole1? goes into sd-panel-1.hole3? (not shown in the booklet)
 THINK later Step 32 and 33 add pins and a small yellow part to the model before this piece is fitted. Pattern: side beam
@@ -1914,8 +1916,8 @@ CONNECT sd-gpin-1.pin1 -> sd-panel-1.hole1~ TURNS
 CONNECT sd-gpin-2.pin1 -> sd-panel-1.hole2~ TURNS
 CONNECT sd-bpin-1.pin1 -> sd-panel-1.hole4~ STIFF
 CONNECT sd-bpin-2.pin1 -> sd-panel-1.hole5~ STIFF
-CONNECT sd-bpin-1.axle1 -> sd-gbeam-1.hole1~ TURNS
-CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole2~ TURNS
+CONNECT sd-bpin-1.axle1 -> sd-gbeam-1.hole1 TURNS
+CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole3 TURNS
 CONNECT sd-lbeam-1.hole1 -> sd-bpin-1.axle1?
 CONNECT sd-beam15-1.hole1? -> sd-panel-1.hole3?
 DOES sd-panel-1 SUPPORTS sd-beam15-1

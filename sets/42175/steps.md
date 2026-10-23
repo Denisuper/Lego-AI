@@ -457,8 +457,8 @@ WHY Gives the upper body a wall on both sides of the pump.
 ADD up-beam15-1 32278 black
 ADD up-hub-1 44874 lightgray
 ADD up-rpin-1 89678 red
-CONNECT up-hub-1.pin1 -> up-beam15-1.hole5~ STIFF
-CONNECT up-hub-1.pin2 -> up-beam15-1.hole7~ STIFF
+CONNECT up-hub-1.pin1 -> up-beam15-1.hole7 STIFF
+CONNECT up-hub-1.pin2 -> up-beam15-1.hole9 STIFF
 CONNECT up-rpin-1.pin1 -> up-hub-1.hole1~ STIFF
 WHY Ties the two upright frames into one rigid structure over the pump.
 
@@ -468,8 +468,6 @@ ADD hy-valve-1 19474 lightgray
 ADD hy-valve-2 19474 lightgray
 ADD hy-hose-1 5102c06 blue
 ADD hy-hose-2 5102c06 blue
-CONNECT hy-valve-1.hole? -> up-lpin-1.pin1
-CONNECT hy-valve-2.hole? -> up-lpin-6.pin1
 WHY Starts the air plumbing: this line will carry air from the pump to the two air cylinders.
 
 ## Step 23 (page 26)
@@ -490,7 +488,11 @@ CONNECT up-pin-4.pin1 -> up-lbeam-4.hole1~ TURNS
 CONNECT up-pin-5.pin1 -> up-lbeam-4.hole3~ TURNS
 CONNECT up-pin-6.pin1 -> up-lbeam-4.hole5~ TURNS
 CONNECT up-pin-1.pin2 -> up-beam5-1.hole1~ TURNS
+CONNECT up-pin-2.pin2 -> up-beam5-1.hole3~ TURNS
+CONNECT up-pin-3.pin2 -> up-beam5-1.hole5~ TURNS
 CONNECT up-pin-4.pin2 -> up-beam5-2.hole1~ TURNS
+CONNECT up-pin-5.pin2 -> up-beam5-2.hole3~ TURNS
+CONNECT up-pin-6.pin2 -> up-beam5-2.hole5~ TURNS
 WHY Builds the two tall supports that the air cylinder will hang between.
 
 ## Step 24 (page 27)
@@ -565,8 +567,8 @@ CONNECT sd-gpin-1.pin1 -> sd-panel-1.hole1~ TURNS
 CONNECT sd-gpin-2.pin1 -> sd-panel-1.hole2~ TURNS
 CONNECT sd-bpin-1.pin1 -> sd-panel-1.hole4~ STIFF
 CONNECT sd-bpin-2.pin1 -> sd-panel-1.hole5~ STIFF
-CONNECT sd-bpin-1.axle1 -> sd-gbeam-1.hole1~ TURNS
-CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole2~ TURNS
+CONNECT sd-bpin-1.axle1 -> sd-gbeam-1.hole1 TURNS
+CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole3 TURNS
 CONNECT sd-lbeam-1.hole1 -> sd-bpin-1.axle1?
 CONNECT sd-beam15-1.hole1? -> sd-panel-1.hole3?
 WHY Builds the long side piece that rides along the cab frame.
