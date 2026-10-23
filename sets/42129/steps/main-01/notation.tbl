@@ -1,0 +1,6 @@
+STEP 1
+ADD beam3-1 32523 black
+ADD pin-1 2780 black
+ADD pin-2 2780 black
+CONNECT pin-1.pin1 -> beam3-1.hole1 STIFF
+CONNECT pin-2.pin1 -> beam3-1.hole3 STIFF
