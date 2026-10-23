@@ -423,15 +423,15 @@ ADD up-lpin-4 65304 lightgray
 ADD up-lpin-5 65304 lightgray
 ADD up-bpin-1 42924 blue
 ADD up-bpin-2 42924 blue
-CONNECT up-bpin-1.pin1 -> up-lbeam-1.hole1~ STIFF
-CONNECT up-bpin-1.pin3 -> up-frame-1.hole?
-CONNECT up-bpin-2.pin1 -> up-lbeam-1.hole5~ STIFF
-CONNECT up-bpin-2.pin3 -> up-frame-1.hole?
-CONNECT up-lpin-1.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-2.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-3.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-4.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-5.pin1 -> sw-top-1.hole?
+CONNECT up-bpin-1.pin1 -> up-lbeam-1.hole5~ STIFF
+CONNECT up-bpin-1.pin3 -> up-frame-1.hole10~ STIFF
+CONNECT up-bpin-2.pin1 -> up-lbeam-1.hole6~ STIFF
+CONNECT up-bpin-2.pin3 -> up-frame-1.hole14~ STIFF
+CONNECT up-lpin-1.pin1 -> up-frame-1.hole3~ STIFF
+CONNECT up-lpin-2.pin1 -> up-frame-1.hole18~ STIFF
+CONNECT up-lpin-3.pin1 -> up-frame-1.hole11~ STIFF
+CONNECT up-lpin-4.pin1 -> up-frame-1.hole7~ STIFF
+CONNECT up-lpin-5.pin1 -> up-frame-1.hole16~ STIFF
 WHY Starts the walls of the upper body around the pump.
 
 ## Step 20 (page 22)
@@ -443,14 +443,14 @@ ADD up-lpin-8 65304 lightgray
 ADD up-lpin-9 65304 lightgray
 ADD up-bpin-3 42924 blue
 ADD up-bpin-4 42924 blue
-CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole1~ STIFF
-CONNECT up-bpin-3.pin3 -> up-frame-2.hole?
-CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole5~ STIFF
-CONNECT up-bpin-4.pin3 -> up-frame-2.hole?
-CONNECT up-lpin-6.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-7.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-8.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-9.pin1 -> up-frame-2.hole?
+CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole5~ STIFF
+CONNECT up-bpin-3.pin3 -> up-frame-2.hole10~ STIFF
+CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole6~ STIFF
+CONNECT up-bpin-4.pin3 -> up-frame-2.hole14~ STIFF
+CONNECT up-lpin-6.pin1 -> up-frame-2.hole3~ STIFF
+CONNECT up-lpin-7.pin1 -> up-frame-2.hole18~ STIFF
+CONNECT up-lpin-8.pin1 -> up-frame-2.hole11~ STIFF
+CONNECT up-lpin-9.pin1 -> up-frame-2.hole7~ STIFF
 WHY Gives the upper body a wall on both sides of the pump.
 
 ## Step 21 (page 23)

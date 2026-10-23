@@ -1448,16 +1448,15 @@ THINK role up-lpin-4 in the upper frame: Pin (65304) in the upper frame that sit
 THINK role up-lpin-5 in the upper frame: Pin (65304) in the upper frame that sits on the turntable.
 THINK role up-bpin-1 in the upper frame: Pin (42924) in the upper frame that sits on the turntable.
 THINK role up-bpin-2 in the upper frame: Pin (42924) in the upper frame that sits on the turntable.
-THINK check up-bpin-1.pin1 goes into up-lbeam-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check up-bpin-1.pin3 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-bpin-2.pin1 goes into up-lbeam-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check up-bpin-2.pin3 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-lpin-1.pin1 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-lpin-2.pin1 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-lpin-3.pin1 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-lpin-4.pin1 goes into up-frame-1.hole? (not shown in the booklet)
-THINK check up-lpin-5.pin1 goes into sw-top-1.hole? (not shown in the booklet)
-THINK builds_on up-lpin-5 builds on sw-top-1 (42175-step-017), which is the turning half in the swing turntable
+THINK check up-bpin-1.pin1 goes into up-lbeam-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-1.pin3 goes into up-frame-1.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-2.pin1 goes into up-lbeam-1.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-2.pin3 goes into up-frame-1.hole14, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-1.pin1 goes into up-frame-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-2.pin1 goes into up-frame-1.hole18, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-3.pin1 goes into up-frame-1.hole11, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-4.pin1 goes into up-frame-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-5.pin1 goes into up-frame-1.hole16, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK later Step 20 builds the same on the other side; step 21 joins the two with a long beam. Pattern: side frame
 ADD up-frame-1 64179 black
 ADD up-lbeam-1 32526 darkgray
@@ -1468,15 +1467,15 @@ ADD up-lpin-4 65304 lightgray
 ADD up-lpin-5 65304 lightgray
 ADD up-bpin-1 42924 blue
 ADD up-bpin-2 42924 blue
-CONNECT up-bpin-1.pin1 -> up-lbeam-1.hole1~ STIFF
-CONNECT up-bpin-1.pin3 -> up-frame-1.hole?
-CONNECT up-bpin-2.pin1 -> up-lbeam-1.hole5~ STIFF
-CONNECT up-bpin-2.pin3 -> up-frame-1.hole?
-CONNECT up-lpin-1.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-2.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-3.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-4.pin1 -> up-frame-1.hole?
-CONNECT up-lpin-5.pin1 -> sw-top-1.hole?
+CONNECT up-bpin-1.pin1 -> up-lbeam-1.hole5~ STIFF
+CONNECT up-bpin-1.pin3 -> up-frame-1.hole10~ STIFF
+CONNECT up-bpin-2.pin1 -> up-lbeam-1.hole6~ STIFF
+CONNECT up-bpin-2.pin3 -> up-frame-1.hole14~ STIFF
+CONNECT up-lpin-1.pin1 -> up-frame-1.hole3~ STIFF
+CONNECT up-lpin-2.pin1 -> up-frame-1.hole18~ STIFF
+CONNECT up-lpin-3.pin1 -> up-frame-1.hole11~ STIFF
+CONNECT up-lpin-4.pin1 -> up-frame-1.hole7~ STIFF
+CONNECT up-lpin-5.pin1 -> up-frame-1.hole16~ STIFF
 DOES up-bpin-1 HOLDS up-lbeam-1
 DOES up-lpin-1 HOLDS up-frame-1
 PATTERN side_frame_with_upright
@@ -1504,14 +1503,14 @@ THINK role up-lpin-8 in the upper frame: Pin (65304) in the upper frame that sit
 THINK role up-lpin-9 in the upper frame: Pin (65304) in the upper frame that sits on the turntable.
 THINK role up-bpin-3 in the upper frame: Pin (42924) in the upper frame that sits on the turntable.
 THINK role up-bpin-4 in the upper frame: Pin (42924) in the upper frame that sits on the turntable.
-THINK check up-bpin-3.pin1 goes into up-lbeam-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check up-bpin-3.pin3 goes into up-frame-2.hole? (not shown in the booklet)
-THINK check up-bpin-4.pin1 goes into up-lbeam-2.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check up-bpin-4.pin3 goes into up-frame-2.hole? (not shown in the booklet)
-THINK check up-lpin-6.pin1 goes into up-frame-2.hole? (not shown in the booklet)
-THINK check up-lpin-7.pin1 goes into up-frame-2.hole? (not shown in the booklet)
-THINK check up-lpin-8.pin1 goes into up-frame-2.hole? (not shown in the booklet)
-THINK check up-lpin-9.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-bpin-3.pin1 goes into up-lbeam-2.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-3.pin3 goes into up-frame-2.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-4.pin1 goes into up-lbeam-2.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-4.pin3 goes into up-frame-2.hole14, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-6.pin1 goes into up-frame-2.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-7.pin1 goes into up-frame-2.hole18, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-8.pin1 goes into up-frame-2.hole11, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-lpin-9.pin1 goes into up-frame-2.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK later Step 21 ties the two frames together across the top. Pattern: mirrored side frame
 ADD up-frame-2 64179 black
 ADD up-lbeam-2 32526 darkgray
@@ -1521,14 +1520,14 @@ ADD up-lpin-8 65304 lightgray
 ADD up-lpin-9 65304 lightgray
 ADD up-bpin-3 42924 blue
 ADD up-bpin-4 42924 blue
-CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole1~ STIFF
-CONNECT up-bpin-3.pin3 -> up-frame-2.hole?
-CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole5~ STIFF
-CONNECT up-bpin-4.pin3 -> up-frame-2.hole?
-CONNECT up-lpin-6.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-7.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-8.pin1 -> up-frame-2.hole?
-CONNECT up-lpin-9.pin1 -> up-frame-2.hole?
+CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole5~ STIFF
+CONNECT up-bpin-3.pin3 -> up-frame-2.hole10~ STIFF
+CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole6~ STIFF
+CONNECT up-bpin-4.pin3 -> up-frame-2.hole14~ STIFF
+CONNECT up-lpin-6.pin1 -> up-frame-2.hole3~ STIFF
+CONNECT up-lpin-7.pin1 -> up-frame-2.hole18~ STIFF
+CONNECT up-lpin-8.pin1 -> up-frame-2.hole11~ STIFF
+CONNECT up-lpin-9.pin1 -> up-frame-2.hole7~ STIFF
 DOES up-bpin-3 HOLDS up-lbeam-2
 DOES up-lpin-6 HOLDS up-frame-2
 PATTERN side_frame_with_upright
