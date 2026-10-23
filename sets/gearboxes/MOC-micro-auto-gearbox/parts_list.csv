@@ -1,18 +1,18 @@
-part_number,name,color,qty
-2780,Technic Axle Pin Connector,Black,1
-6536,Technic Angle Connector #1,Black,2
-63869,Technic Beam 1 x 3 with Pin Hole and Axle Hole,Black,2
-3705,Technic Axle 4,Black,4
-41678,Technic Angle Connector #2,Black,2
-4519,Technic Axle 3,Black,2
-18651,Technic Axle Pin with Friction,Black,4
-10928,Technic Gear 8 Tooth,Dark Bluish Gray,2
-6573,Technic Differential Gear 24 Tooth,Dark Bluish Gray,2
-3647,Technic Gear 12 Tooth Bevel,Dark Bluish Gray,2
-18654,Technic Bush,Dark Bluish Gray,2
-99499c01,"Technic Gearbox 2-Speed (pre-built, sealed)",Light Bluish Gray,1
-3713,Technic Pin Round 3L with Friction Ridges,Red,4
-26287,Technic Axle Pin Connector Hub with 2 Pin Holes,Red,2
-3749,Technic Axle Pin with Friction,Tan,1
-6589,Technic Gear 12 Tooth Bevel,Tan,6
-43093,Technic Axle Pin with Friction,Blue,1
+qty,part_number,colour,name
+1,2780,Black,Technic Pin with Friction Ridges Lengthwise and Center Slots
+2,6536,Black,Technic Axle and Pin Connector Perpendicular
+2,63869,Black,Technic Axle and Pin Connector Perpendicular Triple
+4,3705,Black,Technic Axle 4
+2,41678,Black,Technic Axle and Pin Connector Perpendicular Double Split
+2,4519,Black,Technic Axle 3
+4,18651,Black,Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle
+2,10928,Dark Bluish Gray,Technic Gear 8 Tooth [Reinforced]
+2,6573,Dark Bluish Gray,"Technic Gear Differential, 24 -16 Tooth with Clutch on Both Sides"
+2,3647,Dark Bluish Gray,Technic Gear 8 Tooth
+2,18654,Dark Bluish Gray,Technic Pin Connector Round 1L [Beam]
+1,99499c01,Light Bluish Gray,
+4,3713,Red,Technic Bush
+2,26287,Red,Technic Driving Ring Connector Smooth [4 rounded side walls]
+1,3749,Tan,Technic Axle Pin without Friction Ridges Lengthwise
+6,6589,Tan,Technic Gear 12 Tooth Bevel
+1,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
