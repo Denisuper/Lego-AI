@@ -16,7 +16,13 @@ CONNECT pump-pin-1.pin1 -> pump-beam-1.hole4 STIFF
 WHY one plain sentence: what this step builds and what it is for.
 ```
 4. Check: every part in the parts list used exactly once by the end; every point exists in `catalog/connections.csv`.
-5. Count holes at high zoom (render the page at 200+ dpi). Pins usually sit in every second hole, not in neighbours. Use `~` when the picture is unclear and `?` when it is not shown. Look at the step before and after.
+5. Rules for placing a join:
+   - Look at the previous step to see what changed, and the next step: a later picture often shows the finished part from another side.
+   - An arrow points at the exact hole it enters. Use it.
+   - Count the distance between two pins and use the same distance on the part that receives them (pins 2 apart go into holes 2 apart).
+   - Pins that come out the other side of a part are often visible in the picture: use them to find the hole.
+   - When in doubt, assume the part or pin pair is centered, but only if the picture looks that way.
+   - Count holes at high zoom (render the page at 200+ dpi). Pins usually sit in every second hole, not in neighbours. Use `~` when the picture is unclear and `?` when it is not shown. Look at the step before and after.
 
 ## The build language
 - `ADD name partnum colour` - a part. Names never change once used (beam9-1, gear-3). Only part numbers from the set's parts list.
