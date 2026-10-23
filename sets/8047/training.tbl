@@ -1,4 +1,9 @@
 STEP 1
+THINK goal Starts a straight cross shaft for the middle of the undercarriage
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose rod-A 32054, axle-A 4519 because A long pin with a stop ring has a pin on one end (to hang beams
+THINK check axle-A.axle1 in rod-A.axlehole1: locked (turn together)
+THINK result rod-A's pin end will hold a bent beam (step 5) and a side rail (step 12)
 ADD rod-A 32054 black
 ADD axle-A 4519 lightgray
 CONNECT axle-A.axle1 -> rod-A.axlehole1 LOCKED
@@ -8,6 +13,13 @@ MECH frame rigid_frame axle-A spine_of_the
 STATE frame 1/8
 
 STEP 2
+THINK have axle-A (step-01): spine of the cross shaft in the undercarriage frame
+THINK goal Finishes the cross shaft and gives it a mounting point in the middle
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose beam-C 63869, rod-B 32054 because The triple connector turns one axle into three pin holes facing sideways; the two rings trap
+THINK check axle-A.axle2 in beam-C.axlehole1: locked (turn together)
+THINK check axle-A.axle3 in rod-B.axlehole1: locked (turn together)
+THINK result beam-C's holes take the two pins that hold the turntable (steps 3 and 8)
 ADD beam-C 63869 lightgray
 CONNECT axle-A.axle2 -> beam-C.axlehole1 LOCKED
 ADD rod-B 32054 black
@@ -21,6 +33,15 @@ MECH frame rigid_frame beam-C mount_for_the
 STATE frame 2/8
 
 STEP 3
+THINK have rod-B (step-02): already in the model
+THINK have beam-C (step-02): mount for the turntable pins in the undercarriage frame
+THINK goal Starts one side of the front frame and readies the turntable mount
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose bentbeam-D 32140, pin-E 2780, pin-F 2780 because An L-shaped beam goes up and over the shaft, then runs forward; two pins give a
+THINK check rod-B.pin2 in bentbeam-D.hole4: held stiff by friction
+THINK check pin-E.pin1 in beam-C.hole1: held stiff by friction
+THINK check pin-F.pin1 in beam-C.hole3: held stiff by friction
+THINK result pin-E and pin-F hold the turntable in step 8; bentbeam-D's front end takes a connector in step 4
 ADD bentbeam-D 32140 black
 CONNECT rod-B.pin2 -> bentbeam-D.hole4 STIFF
 ADD pin-E 2780 black
@@ -35,6 +56,12 @@ MECH frame rigid_frame bentbeam-D far_side_member
 STATE frame 3/8
 
 STEP 4
+THINK have bentbeam-D (step-03): far side member in the undercarriage frame
+THINK goal Gives the front corner a pin hole facing up
+THINK choose axle-red-G 32062, connector-H 6536 because The connector has an axle hole and a pin hole at right angles, so it turns
+THINK check axle-red-G.axle1 in bentbeam-D.axlehole1: locked (turn together)
+THINK check connector-H.axlehole1 in axle-red-G.axle2: locked (turn together)
+THINK result connector-H takes pin-L in step 6
 ADD axle-red-G 32062 red
 CONNECT axle-red-G.axle1 -> bentbeam-D.axlehole1 LOCKED
 ADD connector-H 6536 black
@@ -44,6 +71,14 @@ DOES axle-red-G CARRIES connector-H
 PATTERN change_direction
 
 STEP 5
+THINK have rod-A (step-01): already in the model
+THINK goal Builds the other side so the frame is the same on both sides
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose bentbeam-I 32140, axle-red-J 32062, connector-K 6536 because Same parts as steps 3-4, so the two sides match
+THINK check axle-red-J.axle1 in connector-K.axlehole1: locked (turn together)
+THINK check axle-red-J.axle2 in bentbeam-I.axlehole1: locked (turn together)
+THINK check rod-A.pin2 in bentbeam-I.hole4: held stiff by friction
+THINK result connector-K takes pin-M in step 6
 GROUP side-I
   ADD axle-red-J 32062 red
   ADD connector-K 6536 black
@@ -61,6 +96,13 @@ MECH frame rigid_frame bentbeam-I near_side_member
 STATE frame 4/8
 
 STEP 6
+THINK have connector-H (step-04): already in the model
+THINK have connector-K (step-05): already in the model
+THINK goal Gives the front corners pegs to hang a crossbar on
+THINK choose pin-L 2780, pin-M 2780 because Plain friction pins hold firmly without spinning loose
+THINK check pin-L.pin1 in connector-H.hole1: held stiff by friction
+THINK check pin-M.pin1 in connector-K.hole1: held stiff by friction
+THINK result beam7-N goes on these in step 7
 ADD pin-L 2780 black
 CONNECT pin-L.pin1 -> connector-H.hole1 STIFF
 ADD pin-M 2780 black
@@ -70,6 +112,14 @@ DOES connector-K HOLDS pin-M
 PATTERN pegs_for_crossbar
 
 STEP 7
+THINK have pin-L (step-06): already in the model
+THINK have pin-M (step-06): already in the model
+THINK goal Closes the U so the two sides can't spread or twist
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose beam7-N 32524 because A 7-hole beam is long enough to span both front corners
+THINK check pin-L.pin2 in beam7-N.hole3: held stiff by friction
+THINK check pin-M.pin2 in beam7-N.hole5: held stiff by friction
+THINK result Its spare holes are free for later parts; not shown yet
 ADD beam7-N 32524 black
 CONNECT pin-L.pin2 -> beam7-N.hole3 STIFF
 CONNECT pin-M.pin2 -> beam7-N.hole5 STIFF
@@ -82,6 +132,14 @@ MECH frame rigid_frame beam7-N front_cross_member
 STATE frame 5/8
 
 STEP 8
+THINK have pin-E (step-03): already in the model
+THINK have pin-F (step-03): already in the model
+THINK goal Adds the joint that lets the whole upper body turn all the way around
+THINK need slewing_ring: Base fixed to the chassis on at least two points; top carries everything above
+THINK choose turntable-O 50163 because This big turntable has two halves that turn against each other, with 24 teeth inside and
+THINK check pin-E.pin2 in turntable-O.hole2: held stiff by friction
+THINK check pin-F.pin2 in turntable-O.hole11: held stiff by friction
+THINK result The black-toothed half faces up once the model is flipped in step 16 and will carry the cab
 ADD turntable-O 50163 darkgray
 CONNECT pin-E.pin2 -> turntable-O.hole2~ STIFF
 CONNECT pin-F.pin2 -> turntable-O.hole11~ STIFF
@@ -93,6 +151,15 @@ MECH swing slewing_ring turntable-O base_fixed_pins
 STATE swing 1/3
 
 STEP 9
+THINK have turntable-O (step-08): base fixed (pins E, F, P, Q), top turning in
+THINK goal Adds a back mounting point so the turntable is held at both front and back
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose pin-P 2780, pin-Q 2780, beam-R 63869 because The same triple connector as beam-C, now at the back, gives a matching axle hole for
+THINK check pin-P.pin1 in turntable-O.hole4: held stiff by friction
+THINK check pin-Q.pin1 in turntable-O.hole13: held stiff by friction
+THINK check pin-P.pin2 in beam-R.hole1: held stiff by friction
+THINK check pin-Q.pin2 in beam-R.hole3: held stiff by friction
+THINK result A cross axle goes through beam-R in step 10
 ADD pin-P 2780 black
 CONNECT pin-P.pin1 -> turntable-O.hole4~ STIFF
 ADD pin-Q 2780 black
@@ -109,6 +176,13 @@ MECH frame rigid_frame beam-R back_mount_on
 STATE frame 6/8
 
 STEP 10
+THINK have beam-R (step-09): back mount on the turntable in the undercarriage frame
+THINK goal Starts a back cross bar reaching out to the right side rail
+THINK choose axle-S 4519, connector-T 59443, pin-U 43093 because The axle connector extends the axle, and the blue axle pin turns its end into a
+THINK check axle-S.axle3 in connector-T.axlehole1: locked (turn together)
+THINK check pin-U.axle1 in connector-T.axlehole2: locked (turn together)
+THINK check axle-S.axle2 in beam-R.axlehole1: locked (turn together)
+THINK result pin-U holds the right side rail in step 12
 GROUP back-T
   ADD axle-S 4519 lightgray
   ADD connector-T 59443 black
@@ -124,6 +198,12 @@ DOES connector-T HOLDS pin-U
 PATTERN axle_to_pin_end
 
 STEP 11
+THINK have axle-S (step-10): already in the model
+THINK goal Finishes the back cross bar on the left side
+THINK choose connector-W 59443, pin-V 43093 because Same parts as step 10, so both sides match
+THINK check axle-S.axle1 in connector-W.axlehole1: locked (turn together)
+THINK check pin-V.axle1 in connector-W.axlehole2: locked (turn together)
+THINK result pin-V holds the left side rail in step 12
 ADD connector-W 59443 black
 CONNECT axle-S.axle1 -> connector-W.axlehole1 LOCKED
 ADD pin-V 43093 blue
@@ -133,6 +213,18 @@ DOES connector-W HOLDS pin-V
 PATTERN mirror_side
 
 STEP 12
+THINK have rod-B (step-02): already in the model
+THINK have pin-V (step-11): already in the model
+THINK have rod-A (step-01): already in the model
+THINK have pin-U (step-10): already in the model
+THINK goal Ties front and back into one stiff base and sets the track length
+THINK need rigid_frame: A joint with one pin can swing: use two pins, an axle in cross holes, or close a
+THINK choose beam9-X 40490, beam9-Y 40490 because 9-hole beams reach from the shaft to the back cross bar with a hole left over
+THINK check rod-B.pin2 in beam9-X.hole2: held stiff by friction
+THINK check pin-V.pin1 in beam9-X.hole8: held stiff by friction
+THINK check rod-A.pin2 in beam9-Y.hole2: held stiff by friction
+THINK check pin-U.pin1 in beam9-Y.hole8: held stiff by friction
+THINK result Their end holes take the four wheel axles in step 13
 # settled by comparing steps 4-5 (rod-B/bentbeam-D on the far side) and 11-12 (pin-V on the far side)
 ADD beam9-X 40490 black
 CONNECT rod-B.pin2 -> beam9-X.hole2 STIFF
@@ -150,6 +242,16 @@ MECH frame rigid_frame beam9-Y near_rail
 STATE frame 8/8 COMPLETE
 
 STEP 13
+THINK have beam9-X (step-12): far rail: ties front shaft to back axle in the
+THINK have beam9-Y (step-12): near rail in the undercarriage frame
+THINK goal Adds four wheel axles that turn freely
+THINK need track_loop: Link count must fit the wheel spacing so the loop is tight
+THINK choose tan-1 3749, tan-2 3749, tan-3 3749, tan-4 3749 because Tan pins have no friction ridges, so they spin easily; their axle ends will grip a
+THINK check tan-1.pin1 in beam9-X.hole1: turns freely
+THINK check tan-2.pin1 in beam9-X.hole9: turns freely
+THINK check tan-3.pin1 in beam9-Y.hole1: turns freely
+THINK check tan-4.pin1 in beam9-Y.hole9: turns freely
+THINK result Each takes a track wheel in step 14
 ADD tan-1 3749 tan
 CONNECT tan-1.pin1 -> beam9-X.hole1 TURNS
 ADD tan-2 3749 tan
@@ -167,6 +269,18 @@ MECH tracks track_loop tan-1 frictionless_axle_pin
 STATE tracks 1/7
 
 STEP 14
+THINK have tan-1 (step-13): frictionless axle pin: wheel bearing in the tracks (passive)
+THINK have tan-2 (step-13): already in the model
+THINK have tan-3 (step-13): already in the model
+THINK have tan-4 (step-13): already in the model
+THINK goal Adds the wheels the tracks run around
+THINK need track_loop: Link count must fit the wheel spacing so the loop is tight
+THINK choose gear-1 4019, gear-2 4019, gear-3 4019, gear-4 4019 because The tread links have teeth that mesh with a 16-tooth gear, so a gear works as
+THINK check gear-1.axlehole1 in tan-1.axle1: locked (turn together)
+THINK check gear-2.axlehole1 in tan-2.axle1: locked (turn together)
+THINK check gear-3.axlehole1 in tan-3.axle1: locked (turn together)
+THINK check gear-4.axlehole1 in tan-4.axle1: locked (turn together)
+THINK result Step 15 wraps 28 track links around each pair of gears; nothing drives them, they roll when the
 ADD gear-1 4019 lightgray
 CONNECT gear-1.axlehole1 -> tan-1.axle1 LOCKED
 ADD gear-2 4019 lightgray
@@ -187,6 +301,14 @@ MECH tracks track_loop gear-4 idler_wheel_near
 STATE tracks 5/7
 
 STEP 15
+THINK goal Gives the excavator its tracks
+THINK need track_loop: Link count must fit the wheel spacing so the loop is tight
+THINK choose tread-1 3873, tread-2 3873, tread-3 3873, tread-4 3873 and 52 more because Tread links clip into a loop of any length and their teeth fit a 16-tooth gear
+THINK check tread-1.bar2 in tread-2.clip1: turns freely
+THINK check tread-2.bar2 in tread-3.clip1: turns freely
+THINK check tread-3.bar2 in tread-4.clip1: turns freely
+THINK check tread-4.bar2 in tread-5.clip1: turns freely
+THINK result The undercarriage is finished; step 16 flips it over to build the top
 GROUP track-left
 ADD tread-1 3873 black
 ADD tread-2 3873 black
@@ -321,6 +443,13 @@ MECH tracks track_loop tread-29 link_of_the
 STATE tracks 7/7 COMPLETE
 
 STEP 16
+THINK have turntable-O (step-08): base fixed (pins E, F, P, Q), top turning in
+THINK goal Gives the turning half of the turntable two mounting pins
+THINK need slewing_ring: Base fixed to the chassis on at least two points; top carries everything above
+THINK choose pinlong-1 6558, pinlong-2 6558 because Long pins stick out far enough to take a beam on their free half
+THINK check pinlong-1.pin1 in turntable-O.hole5: held stiff by friction
+THINK check pinlong-2.pin1 in turntable-O.hole8: held stiff by friction
+THINK result The seat frame drops onto them in step 17
 # model flipped: turntable-O's toothed half now on top
 ADD pinlong-1 6558 blue
 CONNECT pinlong-1.pin1 -> turntable-O.hole5~ STIFF
@@ -334,7 +463,16 @@ MECH swing slewing_ring pinlong-2 same_other_side
 STATE swing 3/3 COMPLETE
 
 STEP 17
+THINK goal Puts the seat on the turning half
+THINK check pinlong-1.pin3 in lbeam-s3.hole7: held stiff by friction
+THINK check pinlong-2.pin3 in lbeam-s4.hole7: held stiff by friction
+THINK result Steps 18 onward build the drive around it
 GROUP seat
+THINK goal Starts the seat frame with a block that has pins pointing in many directions
+THINK choose hub4-s 48989, pin-s1 6558, hub2-s 87082 because Hub connectors turn one spot into pins facing three ways, so beams can be added at
+THINK check pin-s1.pin2 in hub4-s.hole2: held stiff by friction
+THINK check hub2-s.pin1 in hub4-s.hole1: held stiff by friction
+THINK result The blue L-beams go on these pins in steps 2 and 4
 ADD hub4-s 48989 lightgray
 ADD pin-s1 6558 blue
 CONNECT pin-s1.pin2 -> hub4-s.hole2 STIFF
@@ -344,10 +482,23 @@ CONNECT hub2-s.pin1 -> hub4-s.hole1 STIFF
 DOES hub4-s HOLDS pin-s1
 DOES hub4-s HOLDS hub2-s
 PATTERN pin_hub_core
+THINK have hub4-s (seat-step-01): already in the model
+THINK goal Adds the seat back
+THINK choose lbeam-s1 32526 because An L-beam gives a seat and a back in one part
+THINK check lbeam-s1.hole5 in hub4-s.pin1: held stiff by friction
+THINK result Step 3 puts a beam beside its long arm
 ADD lbeam-s1 32526 blue
 CONNECT lbeam-s1.hole5~ -> hub4-s.pin1~ STIFF
 DOES hub4-s HOLDS lbeam-s1
 PATTERN l_beam_as_seat
+THINK have lbeam-s1 (seat-step-02): already in the model
+THINK goal Thickens the seat back and gives it two forward pins
+THINK choose beam5-s 32316, pin-s2 6558, pin-s3 6558 because A straight 5-beam lines up with the L-beam's long arm
+THINK check pin-s2.pin2 in beam5-s.hole2: held stiff by friction
+THINK check pin-s2.pin1 in lbeam-s1.hole2: held stiff by friction
+THINK check pin-s3.pin2 in beam5-s.hole4: held stiff by friction
+THINK check pin-s3.pin1 in lbeam-s1.hole4: held stiff by friction
+THINK result The second blue L-beam goes on pin-s2 and pin-s3 in step 4
 ADD beam5-s 32316 lightgray
 ADD pin-s2 6558 blue
 # settled with step 4: the 3-long pins go through beam5-s, back end into lbeam-s1, front end later takes lbeam-s2
@@ -361,12 +512,25 @@ DOES beam5-s HOLDS pin-s3
 DOES pin-s2 LOCKS beam5-s
 DOES pin-s3 LOCKS beam5-s
 PATTERN doubled_upright
+THINK have pin-s2 (seat-step-03): already in the model
+THINK have pin-s3 (seat-step-03): already in the model
+THINK goal Closes the seat into a solid block
+THINK choose lbeam-s2 32526 because Same L-beam as step 2, mirrored around the gray beam
+THINK check pin-s2.pin3 in lbeam-s2.hole2: held stiff by friction
+THINK check pin-s3.pin3 in lbeam-s2.hole4: held stiff by friction
+THINK result The seat sits on top of the frame built in steps 5-11
 ADD lbeam-s2 32526 blue
 CONNECT pin-s2.pin3 -> lbeam-s2.hole2 STIFF
 CONNECT pin-s3.pin3 -> lbeam-s2.hole4 STIFF
 DOES pin-s2 LOCKS lbeam-s2
 DOES pin-s3 LOCKS lbeam-s2
 PATTERN mirror_side
+THINK have hub4-s (seat-step-01): already in the model
+THINK goal Adds axle holes under the seat
+THINK choose conn-s1 42003, block-s 60483 because These connectors change pins into axle holes
+THINK check block-s.hole1 in hub4-s.pin4: held stiff by friction
+THINK check conn-s1.hole1 in hub4-s.pin3: held stiff by friction
+THINK result Axles go through them in steps 6 and 10
 ADD block-s 60483 lightgray
 CONNECT block-s.hole1 -> hub4-s.pin4~ STIFF
 ADD conn-s1 42003 black
@@ -374,10 +538,23 @@ CONNECT conn-s1.hole1~ -> hub4-s.pin3~ STIFF
 DOES hub4-s HOLDS block-s
 DOES hub4-s HOLDS conn-s1
 PATTERN pin_to_axlehole_adapter
+THINK have conn-s1 (seat-step-05): already in the model
+THINK goal Adds the first cross bar of the seat frame
+THINK choose axle9-s1 60485 because A long axle reaches both side beams of the frame
+THINK check axle9-s1.axle5 in conn-s1.axlehole1: locked (turn together)
+THINK result Its ends take the dark gray L-beams in steps 8 and 11
 ADD axle9-s1 60485 lightgray
 CONNECT axle9-s1.axle5 -> conn-s1.axlehole1 LOCKED
 DOES conn-s1 HOLDS axle9-s1
 PATTERN axle_as_cross_bar
+THINK have hub4-s (seat-step-01): already in the model
+THINK goal Adds a turning shaft with a gear
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose gear-5 4019, axle7-s 44294, bush-s1 3713 because A bush keeps an axle from sliding out without stopping it from turning
+THINK check gear-5.axlehole1 in axle7-s.axle1: locked (turn together)
+THINK check axle7-s.axle4 in hub4-s.hole3: turns freely
+THINK check bush-s1.axlehole1 in axle7-s.axle7: locked (turn together)
+THINK result A 24-tooth crown gear goes on this shaft in step 11
 ADD axle7-s 44294 lightgray
 ADD gear-5 4019 lightgray
 CONNECT gear-5.axlehole1 -> axle7-s.axle1 LOCKED
@@ -391,14 +568,32 @@ PATTERN shaft_with_gear_and_bush
 MECH drive_front worm_drive axle7-s shaft
 MECH drive_front worm_drive gear-5 driver_of_the
 STATE drive_front 2/8
+THINK have axle9-s1 (seat-step-06): already in the model
+THINK goal Adds the left side of the seat frame
+THINK choose lbeam-s3 32526 because An L-beam gives a side and a leg in one part
+THINK check axle9-s1.axle1 in lbeam-s3.hole5: turns freely
+THINK result Its leg rests on the turntable in step 17
 ADD lbeam-s3 32526 darkgray
 CONNECT axle9-s1.axle1 -> lbeam-s3.hole5~ TURNS
 DOES axle9-s1 CARRIES lbeam-s3
 PATTERN l_beam_side_plate
+THINK have axle9-s1 (seat-step-06): already in the model
+THINK goal Stops lbeam-s3 sliding off
+THINK choose bush-s2 3713 because A bush grips the axle end
+THINK check bush-s2.axlehole1 in axle9-s1.axle1: locked (turn together)
+THINK result Nothing else goes on this end
 ADD bush-s2 3713 lightgray
 CONNECT bush-s2.axlehole1 -> axle9-s1.axle1 LOCKED
 DOES bush-s2 LOCKS lbeam-s3
 PATTERN bush_as_end_stop
+THINK have block-s (seat-step-05): already in the model
+THINK have lbeam-s3 (seat-step-08): already in the model
+THINK goal Adds the second cross bar of the seat frame
+THINK choose axle9-s2 60485, bush-s3 3713 because Two axles keep the side beams from twisting
+THINK check bush-s3.axlehole1 in axle9-s2.axle5: locked (turn together)
+THINK check axle9-s2.axle5 in block-s.axlehole1: locked (turn together)
+THINK check axle9-s2.axle1 in lbeam-s3.hole3: turns freely
+THINK result Both axle ends take lbeam-s4 in step 11
 ADD axle9-s2 60485 lightgray
 ADD bush-s3 3713 lightgray
 CONNECT bush-s3.axlehole1 -> axle9-s2.axle5 LOCKED
@@ -407,6 +602,16 @@ CONNECT axle9-s2.axle1 -> lbeam-s3.hole3~ TURNS
 DOES lbeam-s3 HOLDS axle9-s2
 DOES bush-s3 LOCKS axle9-s2
 PATTERN two_bar_frame
+THINK have axle9-s1 (seat-step-06): already in the model
+THINK have axle9-s2 (seat-step-10): already in the model
+THINK have axle7-s (seat-step-07): shaft: turns freely in hub4-s's round hole, carries crown-1 and
+THINK goal Closes the seat frame and finishes the gear shaft
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose lbeam-s4 32526, crown-1 3650c because A crown gear can mesh with a gear at right angles
+THINK check axle9-s1.axle9 in lbeam-s4.hole5: turns freely
+THINK check axle9-s2.axle9 in lbeam-s4.hole3: turns freely
+THINK check crown-1.axlehole1 in axle7-s.axle7: locked (turn together)
+THINK result The whole seat build goes on the turntable in step 17
 ADD lbeam-s4 32526 darkgray
 CONNECT axle9-s1.axle9 -> lbeam-s4.hole5~ TURNS
 CONNECT axle9-s2.axle9 -> lbeam-s4.hole3~ TURNS
@@ -428,6 +633,10 @@ DOES turntable-O SUPPORTS seat
 PATTERN upper_body_on_turntable
 
 STEP 18
+THINK goal Locks the seat build down so it can't lift off
+THINK check pinlong-1.pin3 in lbeam-s3.hole7: held stiff by friction
+THINK check pinlong-2.pin3 in lbeam-s4.hole7: held stiff by friction
+THINK result The drive parts in steps 19-28 are built around the locked seat
 # No parts box; reading the arrows as 'push the blue pins in'.
 CONNECT pinlong-1.pin3 -> lbeam-s3.hole7~ STIFF
 CONNECT pinlong-2.pin3 -> lbeam-s4.hole7~ STIFF
@@ -436,6 +645,18 @@ DOES pinlong-2 LOCKS seat
 PATTERN push_pins_home
 
 STEP 19
+THINK have lbeam-s3 (seat-step-08): already in the model
+THINK have lbeam-s4 (seat-step-11): already in the model
+THINK have axle9-s2 (seat-step-10): already in the model
+THINK goal Adds a long cross shaft under the seat for the side frames to hang on
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose axle7-B 44294, axcon-1 59443, axpin-1 43093, conn3-1 42003 because An axle connector plus axle pin turns an axle end into a pin, so a beam
+THINK check axle7-B.axle1 in axcon-1.axlehole1: locked (turn together)
+THINK check axpin-1.axle1 in axcon-1.axlehole2: locked (turn together)
+THINK check axle7-B.axle2 in lbeam-s3.hole6: turns freely
+THINK check axle7-B.axle6 in lbeam-s4.hole6: turns freely
+THINK unsure axle7-B role in drive_front not confirmed
+THINK result The double-bent side beams go on its ends in steps 20 and 24
 # compared with step 18 (model turned 180): conn3-1 goes on an axle end already sticking out of the seat frame, not on the new shaft
 ADD axle7-B 44294 lightgray
 ADD axcon-1 59443 black
@@ -454,6 +675,11 @@ MECH drive_front worm_drive axle7-B output_shaft ?
 STATE drive_front 4/8
 
 STEP 20
+THINK have axpin-1 (step-19): already in the model
+THINK goal Starts the side frame of the upper body
+THINK choose bent11-A 32009 because A double-bent beam goes round the turntable and rises at the back in one part
+THINK check axpin-1.pin1 in bent11-A.hole1: held stiff by friction
+THINK result Step 21 pins things into its bent end
 # Which blue pin (axpin-1 or pinlong) takes bent11-A is read from the arrow only.
 ADD bent11-A 32009 black
 CONNECT axpin-1.pin1 -> bent11-A.hole1 STIFF
@@ -461,6 +687,13 @@ DOES axpin-1 HOLDS bent11-A
 PATTERN bent_beam_side_frame
 
 STEP 21
+THINK have bent11-A (step-20): already in the model
+THINK goal Adds mounting points on the side frame
+THINK choose pin-21a 2780, pin-21b 2780, axle3-21 4519 because Friction pins and a short axle let the yellow body clip on later
+THINK check pin-21a.pin1 in bent11-A.hole8: held stiff by friction
+THINK check pin-21b.pin1 in bent11-A.hole7: held stiff by friction
+THINK check axle3-21.axle1 in bent11-A.hole3: turns freely
+THINK result The yellow body build sits on these in step 30
 # Exact holes not visible.
 ADD pin-21a 2780 black
 ADD pin-21b 2780 black
@@ -474,6 +707,17 @@ DOES bent11-A HOLDS axle3-21
 PATTERN pins_as_mounting_posts
 
 STEP 22
+THINK have axle9-s1 (seat-step-06): already in the model
+THINK have axle9-s2 (seat-step-10): already in the model
+THINK have axle7-B (step-19): output shaft in the front worm drive (knob-2)
+THINK have gear-5 (seat-step-07): driver of the gear pair in the front worm drive
+THINK goal Links the seat gear shaft to the long shaft
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose conn3c-1 32184, gear-6 4019 because Two 16-tooth gears pass turning on at 1:1
+THINK check conn3c-1.axlehole1 in axle9-s1.axle9: locked (turn together)
+THINK check conn3c-1.axlehole2 in axle9-s2.axle9: locked (turn together)
+THINK check gear-6.axlehole1 in axle7-B.axle7: locked (turn together)
+THINK result conn3c-1 carries the control lever in step 23
 # conn3c-1 has no arrow. That gear-5 meshes gear-6 is read from the picture.
 ADD conn3c-1 32184 lightgray
 ADD gear-6 4019 lightgray
@@ -490,6 +734,12 @@ MECH drive_front worm_drive gear-6 driven_gear_16
 STATE drive_front 5/8
 
 STEP 23
+THINK goal Adds a lever in front of the seat
+THINK need crank_lever: Crank locked to its shaft; the link turns on the crank's pin
+THINK choose link9-1 64451, crank-1 33299a because A crank plus a bent link makes a lever that swings
+THINK check crank-1.pin1 in link9-1.hole1: held stiff by friction
+THINK unsure crank-1 role in boom_mount not confirmed
+THINK result The lever works the arm via the push rod added later
 # What the lever moves is not confirmed yet.
 ADD link9-1 64451 darkgray
 ADD crank-1 33299a lightgray
@@ -504,6 +754,11 @@ MECH boom_mount crank_lever crank-1 crank ?
 STATE boom_mount 2/3
 
 STEP 24
+THINK have pinlong-1 (step-16): fixes the seat frame to the turning top in the
+THINK goal Adds the second side frame
+THINK choose bent11-B 32009 because Same part as step 20, mirrored
+THINK check pinlong-1.pin3 in bent11-B.hole1: held stiff by friction
+THINK result Step 25 pins into it
 # Which blue pin is used is read from the arrow only.
 ADD bent11-B 32009 black
 CONNECT pinlong-1.pin3 -> bent11-B.hole1 STIFF
@@ -511,6 +766,13 @@ DOES pinlong-1 HOLDS bent11-B
 PATTERN mirror_side
 
 STEP 25
+THINK have bent11-B (step-24): already in the model
+THINK goal Matches step 21 on this side
+THINK choose pin-25a 2780, pin-25b 2780, axle3-25 4519 because Same parts, mirrored
+THINK check pin-25a.pin1 in bent11-B.hole8: held stiff by friction
+THINK check pin-25b.pin1 in bent11-B.hole7: held stiff by friction
+THINK check axle3-25.axle1 in bent11-B.hole3: turns freely
+THINK result The yellow body sits on these in step 30
 # Exact holes not visible.
 ADD pin-25a 2780 black
 ADD pin-25b 2780 black
@@ -524,6 +786,14 @@ DOES bent11-B HOLDS axle3-25
 PATTERN mirror_side
 
 STEP 26
+THINK have crown-1 (seat-step-11): wheel: 24 teeth, so 24 knob turns = 1 turn
+THINK goal Adds the slow drive for the gear train
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose axle8s-1 55013, conn3-2 42003, worm-1 4716, bush-26 3713 because A worm only turns the gear, never the other way, so the upper body stays where
+THINK check axle8s-1.axle4 in conn3-2.hole1: turns freely
+THINK check worm-1.axlehole1 in axle8s-1.axle4: locked (turn together)
+THINK check bush-26.axlehole1 in axle8s-1.axle8: locked (turn together)
+THINK result A knob goes on this shaft in step 34
 # The worm meshing crown-1 is read from the picture.
 ADD axle8s-1 55013 darkgray
 ADD conn3-2 42003 black
@@ -545,6 +815,11 @@ MECH drive_front worm_drive worm-1 worm
 STATE drive_front 7/8
 
 STEP 27
+THINK have axle3-21 (step-21): already in the model
+THINK goal Stops an axle sliding out
+THINK choose bush-27 3713 because A bush grips the axle end
+THINK check bush-27.axlehole1 in axle3-21.axle3: locked (turn together)
+THINK result Nothing more goes on this end
 # Which axle gets the bush is read from the arrow only.
 ADD bush-27 3713 lightgray
 CONNECT bush-27.axlehole1 -> axle3-21.axle3 LOCKED
@@ -552,6 +827,11 @@ DOES bush-27 LOCKS axle3-21
 PATTERN bush_as_end_stop
 
 STEP 28
+THINK have axle7-s (seat-step-07): shaft: turns freely in hub4-s's round hole, carries crown-1 and
+THINK goal Keeps the crown gear shaft from sliding
+THINK choose bush-28 3713 because A bush lets the shaft spin but not slide
+THINK check bush-28.axlehole1 in axle7-s.axle7: locked (turn together)
+THINK result The model is turned in step 29
 # Dashed arrow read as 'push the worm shaft home'.
 ADD bush-28 3713 lightgray
 CONNECT bush-28.axlehole1 -> axle7-s.axle7 LOCKED
@@ -559,11 +839,22 @@ DOES bush-28 LOCKS axle7-s
 PATTERN bush_as_end_stop
 
 STEP 29
+THINK goal Shows the back so the yellow body can go on
+THINK result The body build attaches in step 30
 # turn the model round, no parts
 
 STEP 30
+THINK goal Adds the back of the excavator body
+THINK check pin-b2.pin3 in bent11-A.hole6: held stiff by friction
+THINK check pin-b1.pin3 in bent11-B.hole6: held stiff by friction
+THINK result Steps 31-34 add the knobs at the back
 # Exact holes for the body pins not visible.
 GROUP body
+THINK goal Starts the yellow back body
+THINK choose pin-b1 6558, pin-b2 6558, beam9-b 40490 because Long pins leave a free half to hang the body on the frame
+THINK check pin-b1.pin1 in beam9-b.hole1: held stiff by friction
+THINK check pin-b2.pin1 in beam9-b.hole9: held stiff by friction
+THINK result The fairings go on in steps 3 and 5
 ADD pin-b1 6558 blue
 ADD pin-b2 6558 blue
 ADD beam9-b 40490 yellow
@@ -572,6 +863,14 @@ CONNECT pin-b2.pin1 -> beam9-b.hole9 STIFF
 DOES beam9-b HOLDS pin-b1
 DOES beam9-b HOLDS pin-b2
 PATTERN pins_as_mounting_posts
+THINK have beam9-b (body-step-01): already in the model
+THINK goal Adds a block and extra pins to the body beam
+THINK choose beam3-b 32523, pin-b3 2780, pin-b4 2780, pin-b5 2780 because A 3-beam stiffens and spaces the panel
+THINK check pin-b3.pin1 in beam9-b.hole4: held stiff by friction
+THINK check pin-b4.pin1 in beam9-b.hole7: held stiff by friction
+THINK check pin-b5.pin1 in beam9-b.hole8: held stiff by friction
+THINK check pin-b3.pin2 in beam3-b.hole1: held stiff by friction
+THINK result Fairing 1 goes on two pins in step 3
 # Which pin holds beam3-b is read from the arrow only.
 ADD beam3-b 32523 darkgray
 ADD pin-b3 2780 black
@@ -583,12 +882,28 @@ CONNECT pin-b5.pin1 -> beam9-b.hole8~ STIFF
 CONNECT pin-b3.pin2 -> beam3-b.hole1~ STIFF
 DOES pin-b3 HOLDS beam3-b
 PATTERN pins_as_mounting_posts
+THINK have pin-b4 (body-step-02): already in the model
+THINK have pin-b5 (body-step-02): already in the model
+THINK goal Adds the first side panel
+THINK choose fairing-1 87080 because Fairings give the smooth engine-cover look
+THINK check pin-b4.pin2 in fairing-1.hole6: held stiff by friction
+THINK check pin-b5.pin2 in fairing-1.hole7: held stiff by friction
+THINK result Its mirror goes on in step 5
 ADD fairing-1 87080 yellow
 CONNECT pin-b4.pin2 -> fairing-1.hole6~ STIFF
 CONNECT pin-b5.pin2 -> fairing-1.hole7~ STIFF
 DOES pin-b4 HOLDS fairing-1
 DOES pin-b5 HOLDS fairing-1
 PATTERN panel_on_pins
+THINK have beam3-b (body-step-02): already in the model
+THINK goal Adds a gear shaft inside the body
+THINK need knob_input: Knob locked to the shaft; easy to reach from outside the model
+THINK choose bush-b 3713, axle4s-b 87083, gear-7 4019 because An axle with a stop holds the gear against one side
+THINK check gear-7.axlehole1 in axle4s-b.axle1: locked (turn together)
+THINK check axle4s-b.axle2 in beam3-b.hole3: turns freely
+THINK check bush-b.axlehole1 in axle4s-b.axle4: locked (turn together)
+THINK unsure gear-7 role in drive_back not confirmed
+THINK result gear-7 meshes the seat gears once the body is on (step 30)
 # What gear-7 meshes is not confirmed.
 ADD bush-b 3713 lightgray
 ADD axle4s-b 87083 darkgray
@@ -602,6 +917,13 @@ DOES axle4s-b SPINS_ON beam3-b
 PATTERN shaft_with_gear_and_stop
 MECH drive_back knob_input gear-7 possibly_driven_by ?
 STATE drive_back 1/3
+THINK have pin-b1 (body-step-01): already in the model
+THINK have pin-b3 (body-step-02): already in the model
+THINK goal Adds the second side panel
+THINK choose fairing-2 87086 because Mirror of fairing-1
+THINK check pin-b1.pin3 in fairing-2.hole6: held stiff by friction
+THINK check pin-b3.pin2 in fairing-2.hole7: held stiff by friction
+THINK result The whole body goes on in step 30
 # Which pins fairing-2 uses is not visible.
 ADD fairing-2 87086 yellow
 CONNECT pin-b1.pin3 -> fairing-2.hole6~ STIFF
@@ -618,9 +940,20 @@ DOES bent11-B SUPPORTS body
 PATTERN side_build_attached
 
 STEP 31
+THINK goal Shows the back for the knob parts
+THINK result Step 32 adds parts here
 # turn the model, no parts
 
 STEP 32
+THINK have pin-b2 (body-step-01): already in the model
+THINK have pin-b1 (body-step-01): already in the model
+THINK have axle8s-1 (step-26): input shaft; its stop end and bush-26 / bush-32 keep
+THINK goal Gives the back two lined-up axle holes
+THINK choose ycon-1 6536, ycon-2 6536, bush-32 3713 because These connectors turn a pin end into an axle hole
+THINK check ycon-1.hole1 in pin-b2.pin3: held stiff by friction
+THINK check ycon-2.hole1 in pin-b1.pin3: held stiff by friction
+THINK check bush-32.axlehole1 in axle8s-1.axle1: locked (turn together)
+THINK result A long axle goes through both in step 33
 # Which shaft gets bush-32 is read from the arrow only.
 ADD ycon-1 6536 yellow
 ADD ycon-2 6536 yellow
@@ -634,6 +967,14 @@ DOES bush-32 LOCKS axle8s-1
 PATTERN pin_to_axlehole_adapter
 
 STEP 33
+THINK have ycon-1 (step-32): already in the model
+THINK have ycon-2 (step-32): already in the model
+THINK goal Adds the back control shaft
+THINK need knob_input: Knob locked to the shaft; easy to reach from outside the model
+THINK choose axle9-33 60485 because A 9-long axle reaches across the whole body
+THINK check axle9-33.axle5 in ycon-1.axlehole1: locked (turn together)
+THINK check axle9-33.axle5 in ycon-2.axlehole1: locked (turn together)
+THINK result A knob goes on its end in step 34
 # Whether it engages gear-7 is not confirmed.
 ADD axle9-33 60485 lightgray
 CONNECT axle9-33.axle5 -> ycon-1.axlehole1 LOCKED
@@ -645,6 +986,15 @@ MECH drive_back knob_input axle9-33 input_shaft_in
 STATE drive_back 2/3
 
 STEP 34
+THINK have axle9-33 (step-33): input shaft in two yellow bearings (ycon-1, ycon-2) in the
+THINK have axle8s-1 (step-26): input shaft; its stop end and bush-26 / bush-32 keep
+THINK goal Adds the two control knobs
+THINK need knob_input: Knob locked to the shaft; easy to reach from outside the model
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose knob-1 32270, knob-2 32270 because A small bevel gear is easy to grip and fits an axle end
+THINK check knob-1.axlehole1 in axle9-33.axle9: locked (turn together)
+THINK check knob-2.axlehole1 in axle8s-1.axle8: locked (turn together)
+THINK result Turn knob-1 once: axle9-33 turns 1 turn
 # Only one arrow; the second knob's shaft is read from the picture. Which knob does what is a guess.
 ADD knob-1 32270 black
 ADD knob-2 32270 black
@@ -661,6 +1011,12 @@ MOTION knob-1 axle9-33=1
 MOTION knob-2 axle8s-1=1 worm-1=1 crown-1=-1/24 axle7-s=-1/24 gear-5=-1/24 gear-6=1/24 axle7-B=1/24
 
 STEP 35
+THINK have bent11-B (step-24): already in the model
+THINK goal Adds the left side cover and a look-alike hydraulic hose
+THINK choose hoseconn-1 32013, beam9-35 40490, hose-1 75c12, pin-35 2780 because A rigid hose bends into a smooth curve; it is only for looks
+THINK check pin-35.pin1 in hoseconn-1.hole1: held stiff by friction
+THINK check pin-35.pin2 in beam9-35.hole9: held stiff by friction
+THINK result The hose top clips to the roof in step 55
 # Which holes beam9-35 uses is not visible.
 ADD hoseconn-1 32013 darkgray
 ADD beam9-35 40490 yellow
@@ -676,6 +1032,13 @@ DOES bent11-B SUPPORTS beam9-35
 PATTERN decorative_hose
 
 STEP 36
+THINK goal Adds a front post for the boom mount
+THINK choose axle5-36 32073, pin-36 2780, rod-C 32054, rod-D 32054 and 1 more because Long pins with stop rings turn an axle into a pin on each end
+THINK check pin-36.pin1 in beam3-36.hole1: held stiff by friction
+THINK check axle5-36.axle3 in beam3-36.hole2: turns freely
+THINK check rod-C.axlehole1 in axle5-36.axle1: locked (turn together)
+THINK check rod-D.axlehole1 in axle5-36.axle5: locked (turn together)
+THINK result The boom hangs from this area (step 38)
 # Which end each long pin goes on is a guess.
 ADD axle5-36 32073 lightgray
 ADD pin-36 2780 black
@@ -691,6 +1054,10 @@ DOES beam3-36 HOLDS pin-36
 PATTERN pin_axle_pin_shaft
 
 STEP 37
+THINK have pin-21a (step-21): already in the model
+THINK goal Finishes the left side cover
+THINK choose beam11-37 32525 because An 11-long beam covers the whole side
+THINK result The arm goes on the other side in step 38
 # Exact holes not shown.
 ADD beam11-37 32525 yellow
 CONNECT beam11-37.hole? -> pin-21a.pin2
@@ -698,17 +1065,38 @@ DOES pin-21a HOLDS beam11-37
 PATTERN doubled_side_beam
 
 STEP 38
+THINK goal Mounts the arm on the body
+THINK check axle3-a4.axle3 in link9-1.hole3: turns freely
+THINK check axle4-a1.axle4 in beam3-36.hole1: turns freely
+THINK result Step 39 locks the arm's shaft
 # Joins read from the two arrows only.
 GROUP arm
+THINK goal Starts the arm base
+THINK choose beam3t-a1 6632, axle3-a1 4519 because A thin beam keeps the arm narrow
+THINK check axle3-a1.axle1 in beam3t-a1.hole1: turns freely
+THINK result The curved plate goes on in step 2
 ADD beam3t-a1 6632 yellow
 ADD axle3-a1 4519 lightgray
 CONNECT axle3-a1.axle1 -> beam3t-a1.hole1 TURNS
 DOES beam3t-a1 HOLDS axle3-a1
 PATTERN axle_as_post
+THINK have axle3-a1 (arm-step-01): already in the model
+THINK goal Gives the arm its curved side
+THINK choose curve-a1 32250 because The quarter-ellipse beam gives a strong, nice-looking corner
+THINK check axle3-a1.axle2 in curve-a1.hole1: turns freely
+THINK result Its mirror goes on in step 6
 ADD curve-a1 32250 yellow
 CONNECT axle3-a1.axle2 -> curve-a1.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a1
 PATTERN curved_side_plate
+THINK have curve-a1 (arm-step-02): already in the model
+THINK have axle3-a1 (arm-step-01): already in the model
+THINK goal Adds a cross piece to the arm base
+THINK choose pin34-a 32002, conn3c-a1 32184 because A 3/4 pin is short enough not to stick out
+THINK check pin34-a.pin1 in curve-a1.hole1: held stiff by friction
+THINK check conn3c-a1.hole1 in pin34-a.pin2: held stiff by friction
+THINK check conn3c-a1.axlehole1 in axle3-a1.axle3: locked (turn together)
+THINK result A shaft goes through it in step 4
 # No arrows; places read from the picture.
 ADD pin34-a 32002 darkgray
 ADD conn3c-a1 32184 lightgray
@@ -717,6 +1105,12 @@ CONNECT conn3c-a1.hole1 -> pin34-a.pin2 STIFF
 CONNECT conn3c-a1.axlehole1 -> axle3-a1.axle3 LOCKED
 DOES pin34-a HOLDS conn3c-a1
 PATTERN two_point_mount
+THINK have conn3c-a1 (arm-step-03): already in the model
+THINK goal Adds a small gear in the arm base
+THINK choose axle3-a2 4519, gear8-a 3647 because An 8-tooth gear is the smallest; it fits in the tight space
+THINK check gear8-a.axlehole1 in axle3-a2.axle2: locked (turn together)
+THINK check axle3-a2.axle1 in conn3c-a1.hole1: turns freely
+THINK result It meshes with the gear train in later steps
 # What gear8-a meshes is not confirmed.
 ADD axle3-a2 4519 lightgray
 ADD gear8-a 3647 darkgray
@@ -725,6 +1119,14 @@ CONNECT axle3-a2.axle1 -> conn3c-a1.hole1 TURNS
 DOES axle3-a2 CARRIES gear8-a
 DOES axle3-a2 SPINS_ON conn3c-a1
 PATTERN small_idler_gear
+THINK goal Adds the slow drive that raises the arm
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose axle2-a 32062, ycon-a 6536, worm-2 4716, axcon-a 59443 and 2 more because A worm holds the arm up on its own when you let go
+THINK check ycon-a.axlehole1 in axle4s-a.axle1: locked (turn together)
+THINK check axle2-a.axle1 in ycon-a.hole1: turns freely
+THINK check worm-2.axlehole1 in axle4s-a.axle2: locked (turn together)
+THINK check axcon-a.axlehole1 in axle4s-a.axle4: locked (turn together)
+THINK result The drive gears in steps 9-11 turn this shaft
 # Which arm holes take the unit is not visible.
 ADD axle2-a 32062 red
 ADD ycon-a 6536 yellow
@@ -746,11 +1148,23 @@ MECH boom_drive worm_drive axcon-a joins_the_shaft
 MECH boom_drive worm_drive axle4s-a worm_shaft
 MECH boom_drive worm_drive axle3-a3 shaft_to_the
 STATE boom_drive 4/9
+THINK have axle3-a1 (arm-step-01): already in the model
+THINK goal Closes the arm box
+THINK choose curve-a2 32250 because Mirror of step 2
+THINK check axle3-a1.axle3 in curve-a2.hole1: turns freely
+THINK result The actuator holder clips on in step 7
 # No arrow.
 ADD curve-a2 32250 yellow
 CONNECT axle3-a1.axle3 -> curve-a2.hole1 TURNS
 DOES axle3-a1 HOLDS curve-a2
 PATTERN mirror_side
+THINK have axle3-a1 (arm-step-01): already in the model
+THINK have axle3-a3 (arm-step-05): shaft to the worm in the boom drive inside the
+THINK goal Gives the arm a hinge block at its front
+THINK choose beam3t-a2 6632, holder-a 61904 because The actuator holder has a round body and two hinge plates
+THINK check beam3t-a2.axlehole1 in axle3-a1.axle1: locked (turn together)
+THINK check holder-a.axlehole1 in axle3-a3.axle3: locked (turn together)
+THINK result The gear head goes in it in steps 8-10
 ADD beam3t-a2 6632 yellow
 ADD holder-a 61904 darkgray
 CONNECT beam3t-a2.axlehole1~ -> axle3-a1.axle1 LOCKED
@@ -758,12 +1172,26 @@ CONNECT holder-a.axlehole1~ -> axle3-a3.axle3 LOCKED
 DOES axle3-a3 HOLDS holder-a
 DOES beam3t-a2 LOCKS curve-a1
 PATTERN hinge_block
+THINK have beam3t-a2 (arm-step-07): already in the model
+THINK goal Adds a pivot axle at the arm base
+THINK need crank_lever: Crank locked to its shaft; the link turns on the crank's pin
+THINK choose axle3-a4 4519 because Short axle, short gap
+THINK check axle3-a4.axle1 in beam3t-a2.axlehole2: locked (turn together)
+THINK result The arm hangs on the model by it in step 38
 ADD axle3-a4 4519 lightgray
 CONNECT axle3-a4.axle1 -> beam3t-a2.axlehole2~ LOCKED
 DOES beam3t-a2 HOLDS axle3-a4
 PATTERN axle_as_pivot
 MECH boom_mount crank_lever axle3-a4 boom_pivot
 STATE boom_mount 3/3 COMPLETE
+THINK have holder-a (arm-step-07): already in the model
+THINK have axle3-a3 (arm-step-05): shaft to the worm in the boom drive inside the
+THINK goal Starts the right-angle drive at the arm's front
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose pin-a9 2780, bevel12-a1 6589 because Bevel gears turn motion through 90 degrees
+THINK check pin-a9.pin1 in holder-a.hole5: held stiff by friction
+THINK check bevel12-a1.axlehole1 in axle3-a3.axle3: locked (turn together)
+THINK result bevel20-a meshes with it in step 10
 # pin-a9 looks long; matched to 2780 because both 32054s are used in step 36.
 ADD pin-a9 2780 black
 ADD bevel12-a1 6589 tan
@@ -774,6 +1202,14 @@ DOES axle3-a3 CARRIES bevel12-a1
 PATTERN bevel_right_angle
 MECH boom_drive worm_drive bevel12-a1 bevel_driven
 STATE boom_drive 5/9
+THINK have pin-a9 (arm-step-09): already in the model
+THINK have bevel12-a1 (arm-step-09): bevel driven in the boom drive inside the arm
+THINK goal Finishes the right-angle drive
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose conn3c-a2 32184, bevel20-a 87407, axle5-a 32073 because The 20-tooth bevel has a pin hole, so it can spin freely on a pin
+THINK check axle5-a.axle1 in conn3c-a2.axlehole1: locked (turn together)
+THINK check bevel20-a.hole1 in pin-a9.pin2: held stiff by friction
+THINK result Step 11 adds the input gears
 ADD conn3c-a2 32184 lightgray
 ADD bevel20-a 87407 lightgray
 ADD axle5-a 32073 lightgray
@@ -787,6 +1223,16 @@ DOES axle5-a CARRIES conn3c-a2
 PATTERN bevel_right_angle
 MECH boom_drive worm_drive bevel20-a idler_bevel_turning
 STATE boom_drive 6/9
+THINK have bevel20-a (arm-step-10): idler bevel turning on pin-a9 in the boom drive inside
+THINK goal Brings the drive into the arm from the body
+THINK need worm_drive: Worm shaft at 90 degrees to the wheel's shaft, worm touching the wheel's teeth
+THINK choose axle3-a5 4519, axle4-a1 3705, bevel12-a2 6589, gear-8 4019 and 1 more because Gear and bevel on one shaft take turning from the body's gears into the arm
+THINK check gear-8.axlehole1 in axle3-a5.axle2: locked (turn together)
+THINK check axle3-a5.axle1 in con180-a.axlehole1: locked (turn together)
+THINK check bevel12-a2.axlehole1 in axle3-a5.axle3: locked (turn together)
+THINK check axle4-a1.axle1 in con180-a.axlehole2: locked (turn together)
+THINK unsure gear-8 role in boom_drive not confirmed
+THINK result Step 12 holds the shaft ends
 # con180-a matched as 32034 by elimination (all 42003s used); what drives gear-8 is not confirmed.
 ADD axle3-a5 4519 lightgray
 ADD axle4-a1 3705 black
@@ -806,6 +1252,12 @@ MECH boom_drive worm_drive axle3-a5 input_shaft
 MECH boom_drive worm_drive bevel12-a2 bevel_driver
 MECH boom_drive worm_drive gear-8 input_gear ?
 STATE boom_drive 9/9 COMPLETE
+THINK have axle4-a1 (arm-step-11): already in the model
+THINK goal Ties the input shafts together
+THINK choose axle4-a2 3705, conn3c-a3 32184 because One connector holds both axle ends square
+THINK check conn3c-a3.axlehole1 in axle4-a1.axle4: locked (turn together)
+THINK check conn3c-a3.axlehole2 in axle4-a2.axle1: locked (turn together)
+THINK result The whole arm goes on in step 38
 ADD axle4-a2 3705 black
 ADD conn3c-a3 32184 lightgray
 CONNECT conn3c-a3.axlehole1 -> axle4-a1.axle4 LOCKED
@@ -822,6 +1274,15 @@ DOES beam3-36 SUPPORTS arm
 PATTERN side_build_attached
 
 STEP 39
+THINK have axle4-a2 (arm-step-12): already in the model
+THINK have axle5-36 (step-36): already in the model
+THINK have curve-a1 (arm-step-02): already in the model
+THINK goal Holds the arm's input shaft in line
+THINK choose conn3c-39 32184, axle3-39 4519 because Same connector trick as before
+THINK check conn3c-39.axlehole1 in axle4-a2.axle4: locked (turn together)
+THINK check conn3c-39.axlehole2 in axle5-36.axle1: locked (turn together)
+THINK check axle3-39.axle1 in curve-a1.axlehole3: locked (turn together)
+THINK result The boom goes on the arm in step 40
 ADD conn3c-39 32184 lightgray
 ADD axle3-39 4519 lightgray
 CONNECT conn3c-39.axlehole1 -> axle4-a2.axle4 LOCKED
@@ -831,8 +1292,17 @@ DOES conn3c-39 HOLDS axle4-a2
 PATTERN two_point_mount
 
 STEP 40
+THINK goal Adds the boom
+THINK check axle3-b.axle3 in holder-a.hole6: turns freely
+THINK result Steps 41-45 add the stick and links
 # Joins read from the arrows only.
 GROUP boom
+THINK goal Starts the boom joint
+THINK choose lthin-1 32056, axle2-b1 32062, axle2-b2 32062, axle2-b3 32062 because Short red axles lock beams together without spinning
+THINK check axle2-b1.axle1 in lthin-1.hole1: turns freely
+THINK check axle2-b2.axle1 in lthin-1.axlehole2: locked (turn together)
+THINK check axle2-b3.axle1 in lthin-1.axlehole3: locked (turn together)
+THINK result Beams stack on them in step 2
 ADD lthin-1 32056 yellow
 ADD axle2-b1 32062 red
 ADD axle2-b2 32062 red
@@ -844,6 +1314,16 @@ DOES lthin-1 HOLDS axle2-b1
 DOES lthin-1 HOLDS axle2-b2
 DOES lthin-1 HOLDS axle2-b3
 PATTERN stacked_beams_on_short_axles
+THINK have axle2-b3 (boom-step-01): already in the model
+THINK have axle2-b1 (boom-step-01): already in the model
+THINK have axle2-b2 (boom-step-01): already in the model
+THINK goal Adds the main boom beam
+THINK choose beam3t-b1 6632, axle2-b4 32062, bent9-b 6629 because A bent beam gives the classic excavator boom shape
+THINK check axle2-b1.axle2 in bent9-b.hole1: turns freely
+THINK check axle2-b2.axle2 in bent9-b.hole2: turns freely
+THINK check axle2-b3.axle2 in beam3t-b1.hole1: turns freely
+THINK check axle2-b4.axle1 in bent9-b.axlehole2: locked (turn together)
+THINK result The link goes on in step 3
 ADD beam3t-b1 6632 yellow
 ADD axle2-b4 32062 red
 ADD bent9-b 6629 yellow
@@ -854,6 +1334,14 @@ CONNECT axle2-b4.axle1 -> bent9-b.axlehole2~ LOCKED
 DOES axle2-b1 LOCKS bent9-b
 DOES axle2-b3 HOLDS beam3t-b1
 PATTERN stacked_beams_on_short_axles
+THINK have axle2-b4 (boom-step-02): already in the model
+THINK have axle2-b1 (boom-step-01): already in the model
+THINK goal Adds the bucket link
+THINK need linkage_4bar: Four pivots, all free to turn
+THINK choose beam3t-b2 6632, link9-b 64451 because A bent link reaches round the arm
+THINK check beam3t-b2.hole1 in axle2-b4.axle2: turns freely
+THINK check link9-b.hole1 in axle2-b1.axle1: turns freely
+THINK result It works the bucket (step 46)
 ADD beam3t-b2 6632 yellow
 ADD link9-b 64451 darkgray
 CONNECT beam3t-b2.hole1 -> axle2-b4.axle2 TURNS
@@ -863,6 +1351,12 @@ DOES link9-b SPINS_ON axle2-b1
 PATTERN link_to_tool
 MECH bucket linkage_4bar link9-b coupler_from_the
 STATE bucket 1/3
+THINK have axle2-b1 (boom-step-01): already in the model
+THINK goal Closes the boom joint sandwich
+THINK choose lthin-2 32056, axle3-b 4519 because Same L on both faces makes it strong
+THINK check lthin-2.hole1 in axle2-b1.axle2: turns freely
+THINK check axle3-b.axle1 in lthin-2.hole1: turns freely
+THINK result The boom goes on the arm in step 40
 ADD lthin-2 32056 yellow
 ADD axle3-b 4519 lightgray
 CONNECT lthin-2.hole1 -> axle2-b1.axle2 TURNS
@@ -877,6 +1371,10 @@ DOES holder-a CARRIES boom
 PATTERN side_build_attached
 
 STEP 41
+THINK goal Adds a mount for the push rod
+THINK choose thin4-1 2825, axle3-41 4519 because Thin beam keeps clear of the gears
+THINK check axle3-41.axle1 in thin4-1.axlehole1: locked (turn together)
+THINK result The push rod hinge goes here in step 42
 ADD thin4-1 2825 black
 ADD axle3-41 4519 lightgray
 CONNECT thin4-1.hole? -> arm.hole?
@@ -885,6 +1383,14 @@ DOES thin4-1 HOLDS axle3-41
 PATTERN rod_mount
 
 STEP 42
+THINK have axle3-41 (step-41): already in the model
+THINK goal Adds the hinge for the push rod
+THINK need push_rod: Both ends must swing freely
+THINK choose thin4-2 2825, angle1-42 32013, axle3-42 4519 because An angle connector spins on an axle, a simple hinge
+THINK check thin4-2.axlehole1 in axle3-41.axle3: locked (turn together)
+THINK check axle3-42.axle1 in angle1-42.axlehole1: locked (turn together)
+THINK check angle1-42.hole1 in axle3-41.axle2: turns freely
+THINK result The push rod goes on in step 43
 ADD thin4-2 2825 black
 ADD angle1-42 32013 darkgray
 ADD axle3-42 4519 lightgray
@@ -898,6 +1404,15 @@ MECH stick push_rod angle1-42 rod_s_back
 STATE stick 1/5
 
 STEP 43
+THINK have axle3-42 (step-42): already in the model
+THINK goal Adds the push rod that tips the stick
+THINK need push_rod: Both ends must swing freely
+THINK choose axle9-43 60485, tanpin-1 32556, angle1-43 32013, angle4-43 32192 because A smooth tan pin lets the rod end swing freely
+THINK check angle1-43.axlehole1 in axle9-43.axle1: locked (turn together)
+THINK check angle4-43.axlehole1 in axle9-43.axle9: locked (turn together)
+THINK check tanpin-1.pin1 in angle4-43.hole1: turns freely
+THINK check angle1-43.hole1 in axle3-42.axle3: turns freely
+THINK result The stick hangs on its front end (step 44)
 ADD axle9-43 60485 lightgray
 ADD tanpin-1 32556 tan
 ADD angle1-43 32013 darkgray
@@ -915,6 +1430,16 @@ MECH stick push_rod tanpin-1 frictionless_pivot_at
 STATE stick 3/5
 
 STEP 44
+THINK have tanpin-1 (step-43): frictionless pivot at the rod's front end in the stick
+THINK have axle3-b (boom-step-04): already in the model
+THINK goal Adds the stick
+THINK need push_rod: Both ends must swing freely
+THINK choose beam11-44 32525, bent2-44 44809, pin-44 6558 because A long beam gives reach
+THINK check beam11-44.hole1 in tanpin-1.pin3: turns freely
+THINK check beam11-44.hole2 in axle3-b.axle3: turns freely
+THINK check pin-44.pin1 in beam11-44.hole11: held stiff by friction
+THINK check bent2-44.hole1 in pin-44.pin3: held stiff by friction
+THINK result Its pair goes on in step 45; the bucket in step 46
 # bent2-44 matched as 44809 by elimination (87082s are used in step 54).
 ADD beam11-44 32525 yellow
 ADD bent2-44 44809 lightgray
@@ -931,6 +1456,14 @@ MECH stick push_rod beam11-44 stick
 STATE stick 4/5
 
 STEP 45
+THINK have tanpin-1 (step-43): frictionless pivot at the rod's front end in the stick
+THINK have pin-44 (step-44): already in the model
+THINK goal Doubles the stick
+THINK need push_rod: Both ends must swing freely
+THINK choose beam11-45 32525 because Two beams keep it from twisting
+THINK check beam11-45.hole1 in tanpin-1.pin3: turns freely
+THINK check beam11-45.hole11 in pin-44.pin3: held stiff by friction
+THINK result The bucket fits between them in step 46
 ADD beam11-45 32525 yellow
 CONNECT beam11-45.hole1 -> tanpin-1.pin3 TURNS
 CONNECT beam11-45.hole11 -> pin-44.pin3 STIFF
@@ -940,6 +1473,13 @@ MECH stick push_rod beam11-45 stick_second_beam
 STATE stick 5/5 COMPLETE
 
 STEP 46
+THINK have beam11-44 (step-44): stick in the stick linkage
+THINK goal Adds the bucket
+THINK need linkage_4bar: Four pivots, all free to turn
+THINK choose bucket-1 2950, axle55-46 59426 because An axle with a stop can't slide out the far side
+THINK check axle55-46.axle3 in bucket-1.hole1: turns freely
+THINK check axle55-46.axle1 in beam11-44.hole11: turns freely
+THINK result Step 47 links the bucket to link9-b
 ADD bucket-1 2950 black
 ADD axle55-46 59426 darkgray
 CONNECT axle55-46.axle3~ -> bucket-1.hole1~ TURNS
@@ -952,6 +1492,15 @@ MECH bucket linkage_4bar axle55-46 bucket_pivot
 STATE bucket 3/3 COMPLETE
 
 STEP 47
+THINK have link9-b (boom-step-03): coupler from the boom tip in the bucket linkage
+THINK have bucket-1 (step-46): tool in the bucket linkage
+THINK goal Connects the bucket to its link
+THINK choose axle3-47 4519, halfbush-1 32123b, halfbush-2 32123b because Half bushes are thin, so they fit in the tight bucket joint
+THINK check axle3-47.axle2 in link9-b.hole3: turns freely
+THINK check axle3-47.axle2 in bucket-1.hole3: turns freely
+THINK check halfbush-1.axlehole1 in axle3-47.axle1: locked (turn together)
+THINK check halfbush-2.axlehole1 in axle3-47.axle3: locked (turn together)
+THINK result Bucket can now be tipped by hand
 ADD axle3-47 4519 lightgray
 ADD halfbush-1 32123b lightgray
 ADD halfbush-2 32123b lightgray
@@ -965,6 +1514,12 @@ DOES halfbush-2 LOCKS axle3-47
 PATTERN two_bar_linkage
 
 STEP 48
+THINK have bent11-A (step-20): already in the model
+THINK goal Adds a post for the right side cover
+THINK choose pin-48 2780, beam3-48 32523 because A 3-beam is just tall enough
+THINK check pin-48.pin1 in beam3-48.hole1: held stiff by friction
+THINK check pin-48.pin2 in bent11-A.hole1: held stiff by friction
+THINK result The right side beams go on in steps 49-50
 ADD pin-48 2780 black
 ADD beam3-48 32523 darkgray
 CONNECT pin-48.pin1 -> beam3-48.hole1~ STIFF
@@ -973,6 +1528,12 @@ DOES pin-48 HOLDS beam3-48
 PATTERN short_post
 
 STEP 49
+THINK have bent11-A (step-20): already in the model
+THINK goal Mirrors step 35 on the right
+THINK choose beam9-49 40490, hose-2 75c12, pin-49 2780, hoseconn-2 32013 because Same parts, mirrored
+THINK check pin-49.pin1 in hoseconn-2.hole1: held stiff by friction
+THINK check pin-49.pin2 in beam9-49.hole9: held stiff by friction
+THINK result The hose top goes to the roof in step 55
 # The placement picture is on page 50.
 ADD beam9-49 40490 yellow
 ADD hose-2 75c12 black
@@ -988,6 +1549,11 @@ DOES bent11-A SUPPORTS beam9-49
 PATTERN mirror_side
 
 STEP 50
+THINK have ycon-1 (step-32): already in the model
+THINK goal Finishes the right side cover
+THINK choose beam11-50 32525, pin-50a 2780, pin-50b 2780, pin-50c 2780 and 1 more because Mirror of step 37
+THINK check pin-50a.pin1 in ycon-1.hole1: held stiff by friction
+THINK result The roof posts go on in step 51
 # Only one pin has an arrow.
 ADD beam11-50 32525 yellow
 ADD pin-50a 2780 black
@@ -1004,6 +1570,13 @@ DOES pin-50d HOLDS beam11-50
 PATTERN doubled_side_beam
 
 STEP 51
+THINK have pin-25a (step-25): already in the model
+THINK have pin-50a (step-50): already in the model
+THINK goal Starts the roof frame
+THINK choose post-L 40490, post-R 40490 because 9-long beams give head room over the seat
+THINK check post-R.hole1 in pin-50a.pin2: held stiff by friction
+THINK check post-L.hole1 in pin-25a.pin2: held stiff by friction
+THINK result A cross beam joins them in step 52
 # No arrows.
 ADD post-L 40490 black
 ADD post-R 40490 black
@@ -1014,6 +1587,15 @@ DOES pin-25a HOLDS post-L
 PATTERN upright_posts
 
 STEP 52
+THINK have post-L (step-51): already in the model
+THINK have post-R (step-51): already in the model
+THINK goal Ties the two posts together
+THINK choose beam7-52 32524, studaxle-1 6587, studaxle-2 6587 because Axles with a stud end leave a stud for the lights
+THINK check studaxle-1.pin1 in post-L.hole9: held stiff by friction
+THINK check studaxle-2.pin1 in post-R.hole9: held stiff by friction
+THINK check beam7-52.hole1 in studaxle-1.pin1: held stiff by friction
+THINK check beam7-52.hole7 in studaxle-2.pin1: held stiff by friction
+THINK result Step 53 extends the roof forward
 ADD beam7-52 32524 black
 ADD studaxle-1 6587 darktan
 ADD studaxle-2 6587 darktan
@@ -1026,6 +1608,15 @@ DOES beam7-52 LOCKS post-L
 PATTERN closed_frame
 
 STEP 53
+THINK have studaxle-1 (step-52): already in the model
+THINK have studaxle-2 (step-52): already in the model
+THINK goal Extends the roof forward
+THINK choose axle3-53a 4519, axle3-53b 4519, axcon-53a 59443, axcon-53b 59443 because Axle connectors join two axles end to end
+THINK check axle3-53a.axle1 in axcon-53a.axlehole2: locked (turn together)
+THINK check axle3-53b.axle1 in axcon-53b.axlehole2: locked (turn together)
+THINK check axcon-53a.axlehole1 in studaxle-1.axle3: locked (turn together)
+THINK check axcon-53b.axlehole1 in studaxle-2.axle3: locked (turn together)
+THINK result The front roof piece goes on these in step 54
 ADD axle3-53a 4519 lightgray
 ADD axle3-53b 4519 lightgray
 ADD axcon-53a 59443 black
@@ -1039,6 +1630,17 @@ DOES axcon-53b HOLDS axle3-53b
 PATTERN axle_extension
 
 STEP 54
+THINK have studaxle-1 (step-52): already in the model
+THINK have studaxle-2 (step-52): already in the model
+THINK have axle3-53a (step-53): already in the model
+THINK have axle3-53b (step-53): already in the model
+THINK goal Adds the front of the roof and the lights
+THINK choose light-o1 6141, light-o2 6141, light-c1 6141, light-c2 6141 and 4 more because Round 1x1 plates in clear and orange look like work lights and beacons
+THINK check hub-54a.pin1 in beam5-54.hole1: held stiff by friction
+THINK check hub-54b.pin1 in beam5-54.hole5: held stiff by friction
+THINK check hub-54a.pin2 in beam7-54.hole1: held stiff by friction
+THINK check hub-54b.pin2 in beam7-54.hole5: held stiff by friction
+THINK result Step 55 clips the hoses to the roof
 # Which hub stud takes which light is a guess; placement picture is on page 56.
 ADD light-o1 6141 transorange
 ADD light-o2 6141 transorange
@@ -1066,6 +1668,11 @@ DOES axle3-53a SUPPORTS beam7-54
 PATTERN roof_with_lights
 
 STEP 55
+THINK have hose-1 (step-35): already in the model
+THINK have hose-2 (step-49): already in the model
+THINK goal Finishes the hoses and stiffens the roof
+THINK choose angle5-1 32015, angle5-2 32015 because An angled connector turns the hose end toward the roof pin
+THINK result Step 56 is the finished model
 # 'roof' = some roof part, not identified
 # Only one arrow shown.
 ADD angle5-1 32015 black
@@ -1080,4 +1687,6 @@ DOES angle5-2 HOLDS hose-2
 PATTERN hose_as_brace
 
 STEP 56
+THINK goal Shows the finished model
+THINK result Nothing; build complete
 # finished model, no parts

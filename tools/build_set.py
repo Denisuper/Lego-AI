@@ -6,6 +6,7 @@ Writes training.jsonl, training.tbl, preview.md, part_matches.csv, roles.csv (al
 import csv, json, re, sys
 sys.path.insert(0, "tools")
 from mechanisms import Tracker
+from think import think
 d = sys.argv[1].rstrip("/") + "/"
 DEPTH = {(r["part_number"], r["point"]): (r["type"], float(r["depth_holes"])) for r in csv.DictReader(open("catalog/connections.csv", encoding="utf-8"))}
 FIT = {"LOCKED": "locked (turn together)", "TURNS": "turns freely", "STIFF": "held stiff by friction"}
@@ -67,11 +68,13 @@ for r in rows:
     mech_lines[r["folder"]] = tracker.lines(info)
     e["answer"]["joins"] = joins(open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read())
     e["answer"]["big_picture"] = [big_picture(p["name"]) for p in e["answer"]["new_parts"]]
+    e["answer"]["think"] = think(e, info)
     ann.append(e)
+    src = open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip().split("\n")
     if r["build"] != "main":
-        side.setdefault(r["build"], []).append("\n".join([open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip()] + mech_lines[r["folder"]]))
+        side.setdefault(r["build"], []).append("\n".join(e["answer"]["think"] + src + mech_lines[r["folder"]]))
         continue
-    for line in open(f"{d}steps/{r['folder']}/notation.tbl", encoding="utf-8").read().strip().split("\n") + mech_lines[r["folder"]]:
+    for line in src[:1] + e["answer"]["think"] + src[1:] + mech_lines[r["folder"]]:  # STEP n, THINK, moves, mechanism lines
         g = line.split()[1] if line.startswith("ATTACH ") else None
         if g in side:
             tbl += [f"GROUP {g}", *"\n".join(side.pop(g)).split("\n"), "END"]
