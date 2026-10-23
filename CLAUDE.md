@@ -112,7 +112,7 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 1. `python training/export.py` -> training/data/train.jsonl (+ test.jsonl, one whole set held out).
 2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-1.5B-Instruct` on a GPU (24 GB).
 3. Later: GRPO (TRL) with check_notation.py as the reward.
-(export.py still reads the old step folders; it needs a small change to read steps.md.)
+export.py reads every sets/<set>/steps.md; it writes that set's own training.jsonl/training.tbl too. One whole set is held out for test.
 
 ## Status (Oct 23, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
