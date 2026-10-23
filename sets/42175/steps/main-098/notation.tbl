@@ -1,0 +1,8 @@
+STEP 98
+ADD bm-tile-1 6636 black
+ADD bm-tile-2 6636 black
+CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?
+CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?
+DOES bm-b11f-1 SUPPORTS bm-tile-1
+DOES bm-b11f-2 SUPPORTS bm-tile-2
+PATTERN sticker_tiles

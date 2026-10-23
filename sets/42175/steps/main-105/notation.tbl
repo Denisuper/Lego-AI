@@ -1,0 +1,14 @@
+STEP 105
+ADD bk-bucket-1 24120 darkgray
+ADD bk-bucket-2 24120 darkgray
+ADD bk-tpin-1 32002 tan
+ADD bk-tpin-2 32002 tan
+ADD bk-tb-1 41677 black
+ADD bk-tb-2 41677 black
+CONNECT bk-tpin-1.pin1 -> bk-tb-1.axlehole?
+CONNECT bk-tpin-2.pin1 -> bk-tb-2.axlehole?
+CONNECT bk-tpin-1.pin2 -> bk-bucket-1.hole?
+CONNECT bk-tpin-2.pin2 -> bk-bucket-2.hole?
+DOES bk-bucket-1 CARRIES bk-tpin-1
+DOES bm-ax6c-1 HOLDS bk-bucket-1
+PATTERN bucket_on_hinge

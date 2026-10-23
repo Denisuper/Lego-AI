@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-100",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 91,
+  "step": 100,
+  "input": {
+    "picture": "steps/main-100/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b5d-1",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with lower shaft (step 99)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b5d-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam (1:1 box, circled 5)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 5-hole beam is placed on the lower end of the arm, over the shaft (picture, tag 5)."
+    ],
+    "who_does_what_to_which": [
+      "bm-b5d-1 supports bm-ax6-1"
+    ],
+    "where_everything_is_after": [
+      "a 5-hole beam sits at the arm's lower end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Strengthens the lower end.",
+      "why_these_parts": "A beam alongside the shaft spreads the load.",
+      "sets_up_for_later": "Step 101 builds a new sub-assembly.",
+      "design_pattern": "lower end beam"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

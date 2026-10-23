@@ -1,0 +1,8 @@
+STEP 96
+ADD bm-ax5d-1 32073 lightgray
+ADD bm-tb3-1 41677 black
+CONNECT bm-ax5d-1.axle1 -> bm-tb3-1.axlehole1~ LOCKED
+CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?
+DOES bm-ax5d-1 CARRIES bm-tb3-1
+DOES bm-b11f-1 HOLDS bm-ax5d-1
+PATTERN axle_through

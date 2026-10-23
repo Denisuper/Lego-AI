@@ -1,0 +1,5 @@
+STEP 100
+ADD bm-b5d-1 32316 black
+CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?
+DOES bm-b5d-1 SUPPORTS bm-ax6-1
+PATTERN beam_on_axle

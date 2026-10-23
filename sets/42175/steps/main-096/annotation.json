@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-096",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 87,
+  "step": 96,
+  "input": {
+    "picture": "steps/main-096/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-ax5d-1",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "bm-tb3-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with side beams and red pins (step 95)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-ax5d-1",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey 5-long axle (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tb3-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin beam on the axle end (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the thin beam is slid onto the axle end. The axle is pushed through the lower ends of the two side beams (green arrows)."
+    ],
+    "who_does_what_to_which": [
+      "bm-ax5d-1 carries bm-tb3-1",
+      "bm-b11f-1 holds bm-ax5d-1"
+    ],
+    "where_everything_is_after": [
+      "a grey axle with a thin beam crosses the lower ends of the side beams",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a cross shaft that ties the two side beams.",
+      "why_these_parts": "An axle through both beams makes a hinge pin.",
+      "sets_up_for_later": "Step 97 adds a cap beam.",
+      "design_pattern": "cross shaft"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which holes the axle goes through is not countable."
+}

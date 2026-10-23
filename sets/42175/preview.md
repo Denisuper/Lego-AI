@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 95 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 106 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -2444,7 +2444,7 @@
 **Why:** Adds the cylinder that bends the arm at the elbow. A cylinder pushing between two pivots turns the joint. *Next:* Steps 91-92 add beams that lock its pins. *Pattern:* arm cylinder
 
 **Big picture:**
-- **bm-cyl-1** (None): None
+- **bm-cyl-1** (None): None Later: 42175-step-106 `DOES bm-cyl-1 DRIVES hy-hose-5`.
 - **bm-tpin-1** (None): None Later: 42175-step-091 `DOES bm-b11e-1 HOLDS bm-tpin-1`.
 - **bm-tpin-2** (None): None
 
@@ -2571,8 +2571,8 @@
 **Why:** Builds the side plates for the next hinge. The red pins are the connection points for the cylinder. *Next:* Following steps close the elbow. *Pattern:* side plates
 
 **Big picture:**
-- **bm-b11f-1** (None): None
-- **bm-b11f-2** (None): None
+- **bm-b11f-1** (None): None Later: 42175-step-096 `CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?`; 42175-step-096 `DOES bm-b11f-1 HOLDS bm-ax5d-1`; 42175-step-098 `CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?`; 42175-step-098 `DOES bm-b11f-1 SUPPORTS bm-tile-1`.
+- **bm-b11f-2** (None): None Later: 42175-step-098 `CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?`; 42175-step-098 `DOES bm-b11f-2 SUPPORTS bm-tile-2`.
 - **bm-gp7-1** (None): None
 - **bm-gp7-2** (None): None
 - **bm-rp-1** (None): None
@@ -2581,3 +2581,275 @@
 - **bm-rp-4** (None): None
 
 **Review:** Hole positions estimated.
+
+## 42175-step-096 (page 87) - low - NEEDS REVIEW
+
+![42175-step-096](steps/main-096/picture.png)
+
+**New parts:** bm-ax5d-1 (32073, light bluish gray) - grey 5-long axle (1:1 box, circled 5); bm-tb3-1 (41677, black) - black thin beam on the axle end (yellow box)
+
+**Touches:** Yellow box: the thin beam is slid onto the axle end. The axle is pushed through the lower ends of the two side beams (green arrows).
+
+**Exact joins:** bm-ax5d-1.axle1 into bm-tb3-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); bm-ax5d-1.axle5 into bm-b11f-1.hole? (not shown in booklet)
+
+**Who does what:** bm-ax5d-1 carries bm-tb3-1; bm-b11f-1 holds bm-ax5d-1
+
+**After:** a grey axle with a thin beam crosses the lower ends of the side beams; everything else: no change
+
+**Why:** Adds a cross shaft that ties the two side beams. An axle through both beams makes a hinge pin. *Next:* Step 97 adds a cap beam. *Pattern:* cross shaft
+
+**Big picture:**
+- **bm-ax5d-1** (None): None Later: 42175-step-097 `CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?`; 42175-step-097 `DOES bm-tb4-1 HOLDS bm-ax5d-1`.
+- **bm-tb3-1** (None): None
+
+**Mechanisms:**
+- **bm-ax5d-1** builds on bm-b11f-1 (42175-step-095), which rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
+
+**Review:** Which holes the axle goes through is not countable.
+
+## 42175-step-097 (page 88) - low - NEEDS REVIEW
+
+![42175-step-097](steps/main-097/picture.png)
+
+**New parts:** bm-tb4-1 (41677, black) - black thin beam on the axle end (green arrows)
+
+**Touches:** The thin beam is pushed onto the axle end that sticks out of the other side (green arrows).
+
+**Exact joins:** bm-tb4-1.axlehole1 into bm-ax5d-1.axle1? (not shown in booklet)
+
+**Who does what:** bm-tb4-1 holds bm-ax5d-1
+
+**After:** the cross shaft is locked at both ends by thin beams; everything else: no change
+
+**Why:** Locks the cross shaft from the other side. A beam on each end keeps an axle from sliding. *Next:* Step 98 puts tiles on the side beams. *Pattern:* shaft lock
+
+**Big picture:**
+- **bm-tb4-1** (None): None
+
+**Mechanisms:**
+- **bm-tb4-1** builds on bm-ax5d-1 (42175-step-096), which rests on bm-tb3-1 (42175-step-096), bm-b11f-1 (42175-step-095)
+
+**Review:** Hole not countable.
+
+## 42175-step-098 (page 89) - medium - NEEDS REVIEW
+
+![42175-step-098](steps/main-098/picture.png)
+
+**New parts:** bm-tile-1 (6636, black) - two black 1 x 6 grooved tiles; each gets a red-white hazard sticker (pages 19 and 20); bm-tile-2 (6636, black) - two black 1 x 6 grooved tiles; each gets a red-white hazard sticker (pages 19 and 20)
+
+**Touches:** Yellow boxes 1-2 (two of them): the black tile gets a red and white warning sticker, then is pressed onto the side beam (arrows).
+
+**Exact joins:** bm-tile-1.stud? into bm-b11f-1.hole? (not shown in booklet); bm-tile-2.stud? into bm-b11f-2.hole? (not shown in booklet)
+
+**Who does what:** bm-b11f-1 supports bm-tile-1; bm-b11f-2 supports bm-tile-2
+
+**After:** both side beams carry a red-white hazard tile; everything else: no change
+
+**Why:** Adds the warning stripe that real excavator arms show. Tiles are the flat surface for stickers. *Next:* Step 99 continues at the lower end. *Pattern:* warning stripes
+
+**Big picture:**
+- **bm-tile-1** (None): None
+- **bm-tile-2** (None): None
+
+**Mechanisms:**
+- **bm-tile-1** builds on bm-b11f-1 (42175-step-095), which rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
+- **bm-tile-2** builds on bm-b11f-2 (42175-step-095), which rests on bm-gp7-2 (42175-step-095), bm-rp-3 (42175-step-095)
+
+**Review:** Tile has no catalog points.
+
+## 42175-step-099 (page 90) - low - NEEDS REVIEW
+
+![42175-step-099](steps/main-099/picture.png)
+
+**New parts:** bm-ax6-1 (3706, black) - black 6-long axle (1:1 box, circled 6); bm-tb5-1 (41677, black) - two black thin beams (yellow box); bm-tb5-2 (41677, black) - two black thin beams (yellow box)
+
+**Touches:** Yellow box: a thin beam on each end of the 6-long axle. The unit is pushed through the lower end of the side beams (arrow).
+
+**Exact joins:** bm-ax6-1.axle1 into bm-tb5-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); bm-ax6-1.axle6 into bm-tb5-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** bm-ax6-1 carries bm-tb5-1
+
+**After:** a 6-long axle with end beams crosses the arm's lower end; everything else: no change
+
+**Why:** Adds the second cross shaft at the bottom. End beams keep the axle from sliding out. *Next:* Step 100 adds a beam. *Pattern:* lower shaft
+
+**Big picture:**
+- **bm-ax6-1** (None): None Later: 42175-step-100 `CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?`; 42175-step-100 `DOES bm-b5d-1 SUPPORTS bm-ax6-1`; 42175-step-102 `CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?`; 42175-step-102 `DOES bm-go2-1 HOLDS bm-ax6-1`.
+- **bm-tb5-1** (None): None
+- **bm-tb5-2** (None): None
+
+**Review:** Hole not countable.
+
+## 42175-step-100 (page 91) - medium - NEEDS REVIEW
+
+![42175-step-100](steps/main-100/picture.png)
+
+**New parts:** bm-b5d-1 (32316, black) - black 5-hole beam (1:1 box, circled 5)
+
+**Touches:** The 5-hole beam is placed on the lower end of the arm, over the shaft (picture, tag 5).
+
+**Exact joins:** bm-b5d-1.hole? into bm-ax6-1.axle? (not shown in booklet)
+
+**Who does what:** bm-b5d-1 supports bm-ax6-1
+
+**After:** a 5-hole beam sits at the arm's lower end; everything else: no change
+
+**Why:** Strengthens the lower end. A beam alongside the shaft spreads the load. *Next:* Step 101 builds a new sub-assembly. *Pattern:* lower end beam
+
+**Big picture:**
+- **bm-b5d-1** (None): None
+
+**Mechanisms:**
+- **bm-b5d-1** builds on bm-ax6-1 (42175-step-099), which rests on bm-tb5-1 (42175-step-099), bm-tb5-2 (42175-step-099)
+
+**Review:** Holes not countable.
+
+## 42175-step-101 (page 92) - low - NEEDS REVIEW
+
+![42175-step-101](steps/main-101/picture.png)
+
+**New parts:** bm-rax-1 (3705, red) - red 4-long axle (1:1 box, circled 4); bm-b5e-1 (32316, black) - black 5-hole beam (1:1 box, circled 5); bm-ax6b-1 (3706, black) - black 6-long axle (1:1 box, circled 6); bm-gb4-1 (32449, dark bluish gray) - grey 4-hole thin beam; bm-go-1 (41677, dark bluish gray) - grey thin beam; bm-bu-1 (3713, light bluish gray) - grey bush (sub-step 2)
+
+**Touches:** Sub-steps 1-6: a grey beam has the 6-long black axle pushed through, a bush slides onto the axle end, a second grey beam goes on, the red 4-long axle is added and the 5-hole beam is pushed onto the red axle (the beam is shown angled in step 6).
+
+**Exact joins:** bm-ax6b-1.axle1 into bm-gb4-1.axlehole? (not shown in booklet); bm-bu-1.axlehole1 into bm-ax6b-1.axle6 (1 hole deep, locked (turn together)); bm-go-1.axlehole1 into bm-ax6b-1.axle? (not shown in booklet); bm-rax-1.axle1 into bm-gb4-1.axlehole? (not shown in booklet); bm-b5e-1.hole? into bm-rax-1.axle? (not shown in booklet)
+
+**Who does what:** bm-gb4-1 carries bm-ax6b-1; bm-rax-1 holds bm-b5e-1
+
+**After:** a grey hinge bracket with a black axle, a red axle and a 5-hole beam is ready to be fitted; everything else: no change
+
+**Why:** Builds the bucket link bracket. Two axles in one bracket give two hinge points. *Next:* The following steps attach it to the arm end. *Pattern:* bucket link
+
+**Big picture:**
+- **bm-rax-1** (None): None Later: 42175-step-102 `CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?`; 42175-step-103 `CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?`; 42175-step-103 `DOES bm-bu2-1 HOLDS bm-rax-1`.
+- **bm-b5e-1** (None): None
+- **bm-ax6b-1** (None): None Later: 42175-step-103 `CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?`.
+- **bm-gb4-1** (None): None
+- **bm-go-1** (None): None
+- **bm-bu-1** (None): None
+
+**Review:** Sub-step order is as drawn; join points are estimates.
+
+## 42175-step-102 (page 94) - low - NEEDS REVIEW
+
+![42175-step-102](steps/main-102/picture.png)
+
+**New parts:** bm-b5f-1 (32316, black) - black 5-hole beam (1:1 box, circled 5); bm-go2-1 (41677, dark bluish gray) - grey thin oval beam pushed onto the shaft end (green arrow)
+
+**Touches:** A grey thin beam is pushed onto the black shaft end, next to a red-axle spot (arrows).
+
+**Exact joins:** bm-go2-1.axlehole1 into bm-ax6-1.axle6? (not shown in booklet); bm-b5f-1.hole? into bm-rax-1.axle? (not shown in booklet)
+
+**Who does what:** bm-go2-1 holds bm-ax6-1
+
+**After:** the lower shaft end is covered by a thin grey beam; everything else: no change
+
+**Why:** Locks the shaft end. A beam on the shaft end stops it sliding out. *Next:* Step 103 finishes the other end. *Pattern:* shaft end
+
+**Big picture:**
+- **bm-b5f-1** (None): None
+- **bm-go2-1** (None): None
+
+**Mechanisms:**
+- **bm-b5f-1** builds on bm-rax-1 (42175-step-101), which rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
+- **bm-go2-1** builds on bm-ax6-1 (42175-step-099), which rests on bm-tb5-1 (42175-step-099), bm-tb5-2 (42175-step-099)
+
+**Review:** Where the black 5-hole beam goes is not shown; holes not countable.
+
+## 42175-step-103 (page 95) - low - NEEDS REVIEW
+
+![42175-step-103](steps/main-103/picture.png)
+
+**New parts:** bm-bu2-1 (3713, light bluish gray) - grey bush on the red axle end (green arrow); bm-go3-1 (41677, dark bluish gray) - grey thin oval beam
+
+**Touches:** A bush and a thin grey beam are pushed onto the two axle ends at the lower corner (green arrow).
+
+**Exact joins:** bm-bu2-1.axlehole1 into bm-rax-1.axle4? (not shown in booklet); bm-go3-1.axlehole1 into bm-ax6b-1.axle? (not shown in booklet)
+
+**Who does what:** bm-bu2-1 holds bm-rax-1
+
+**After:** both shafts at the lower corner are locked; everything else: no change
+
+**Why:** Locks the bucket hinge shafts. Bushes and thin beams act as stops. *Next:* Step 104 adds a long axle. *Pattern:* stops
+
+**Big picture:**
+- **bm-bu2-1** (None): None
+- **bm-go3-1** (None): None Later: 42175-step-104 `CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?`; 42175-step-104 `DOES bm-ax6c-1 CARRIES bm-go3-1`.
+
+**Mechanisms:**
+- **bm-bu2-1** builds on bm-rax-1 (42175-step-101), which rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
+- **bm-go3-1** builds on bm-ax6b-1 (42175-step-101), which rests on bm-gb4-1 (42175-step-101), bm-bu-1 (42175-step-101)
+
+**Review:** Hole not countable.
+
+## 42175-step-104 (page 96) - low - NEEDS REVIEW
+
+![42175-step-104](steps/main-104/picture.png)
+
+**New parts:** bm-ax6c-1 (3706, black) - black 6-long axle (1:1 box, circled 6)
+
+**Touches:** The black axle goes in the lower corner through the beams (picture, tag 6).
+
+**Exact joins:** bm-ax6c-1.axle? into bm-go3-1.axlehole? (not shown in booklet)
+
+**Who does what:** bm-ax6c-1 carries bm-go3-1
+
+**After:** a third 6-long axle crosses the lower corner; everything else: no change
+
+**Why:** Adds the shaft the bucket will hang on. An axle through two side beams makes a hinge. *Next:* Step 105 puts the bucket on. *Pattern:* bucket shaft
+
+**Big picture:**
+- **bm-ax6c-1** (None): None Later: 42175-step-105 `DOES bm-ax6c-1 HOLDS bk-bucket-1`.
+
+**Mechanisms:**
+- **bm-ax6c-1** builds on bm-go3-1 (42175-step-103), which rests on bm-ax6b-1 (42175-step-101)
+
+**Review:** The picture shows no arrow; which holes unknown.
+
+## 42175-step-105 (page 97) - medium - NEEDS REVIEW
+
+![42175-step-105](steps/main-105/picture.png)
+
+**New parts:** bk-bucket-1 (24120, dark bluish gray) - two grey digger buckets 4 x 7 (set side by side to make one wide bucket); bk-bucket-2 (24120, dark bluish gray) - two grey digger buckets 4 x 7 (set side by side to make one wide bucket); bk-tpin-1 (32002, tan) - two tan pins, one for each bucket (sub-step 1); bk-tpin-2 (32002, tan) - two tan pins, one for each bucket (sub-step 1); bk-tb-1 (41677, black) - two black thin beams, one for each bucket (sub-step 1); bk-tb-2 (41677, black) - two black thin beams, one for each bucket (sub-step 1)
+
+**Touches:** Two yellow boxes: a tan pin goes in a thin black beam, then in the bucket's eye (sub-steps 1-2). Both buckets are pressed onto the lower corner shafts (arrows).
+
+**Exact joins:** bk-tpin-1.pin1 into bk-tb-1.axlehole? (not shown in booklet); bk-tpin-2.pin1 into bk-tb-2.axlehole? (not shown in booklet); bk-tpin-1.pin2 into bk-bucket-1.hole? (not shown in booklet); bk-tpin-2.pin2 into bk-bucket-2.hole? (not shown in booklet)
+
+**Who does what:** bk-bucket-1 carries bk-tpin-1; bm-ax6c-1 holds bk-bucket-1
+
+**After:** two grey buckets hang on the arm's lower corner; everything else: no change
+
+**Why:** Adds the digging bucket(s). A bucket on a hinge pin can tip to dig. *Next:* Step 106 adds air hoses. *Pattern:* bucket
+
+**Big picture:**
+- **bk-bucket-1** (None): None
+- **bk-bucket-2** (None): None
+- **bk-tpin-1** (None): None
+- **bk-tpin-2** (None): None
+- **bk-tb-1** (None): None
+- **bk-tb-2** (None): None
+
+**Review:** The picture shows two buckets (two boxes) drawn on one arm; they are 4 x 7 buckets (24120).
+
+## 42175-step-106 (page 98) - low - NEEDS REVIEW
+
+![42175-step-106](steps/main-106/picture.png)
+
+**New parts:** hy-hose-5 (5102c25, light bluish gray) - light grey air hose (length bar runs off the page; best guess); hy-hose-6 (5102c32, black) - long black air hose (length bar runs off the page; best guess)
+
+**Touches:** Two hoses (one light grey, one black) are added to the arm; the black one is drawn running along the top of the arm.
+
+**Exact joins:** none
+
+**Who does what:** bm-cyl-1 drives hy-hose-5
+
+**After:** two hoses are added along the arm (ends are not connected yet); everything else: no change
+
+**Why:** Brings the arm's cylinder hoses in. Hoses carry air from the machine to the cylinder. *Next:* They are plugged in later. *Pattern:* arm hoses
+
+**Big picture:**
+- **hy-hose-5** (None): None
+- **hy-hose-6** (None): None
+
+**Review:** The length bars run off the page edge, so the lengths are guesses (25L grey and 32L black are the longest unused hoses on the whole-set list). Check against later steps.

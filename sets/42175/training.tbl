@@ -2912,3 +2912,231 @@ CONNECT bm-rp-4.pin1 -> bm-b11f-2.hole7~ STIFF
 DOES bm-b11f-1 CARRIES bm-rp-1
 DOES bm-b11f-2 CARRIES bm-rp-3
 PATTERN side_beams
+
+STEP 96
+THINK have Arm with side beams and red pins (step 95).
+THINK goal Adds a cross shaft that ties the two side beams.
+THINK part bm-ax5d-1 (32073 Technic Axle 5): grey 5-long axle (1:1 box, circled 5); fixed
+THINK part bm-tb3-1 (41677 Technic Beam 1 x 2 Thin): black thin beam on the axle end (yellow box); fixed
+THINK touches Yellow box: the thin beam is slid onto the axle end. The axle is pushed through the lower ends of the two side beams (green arrows).
+THINK does bm-ax5d-1 carries bm-tb3-1
+THINK does bm-b11f-1 holds bm-ax5d-1
+THINK why An axle through both beams makes a hinge pin.
+THINK check bm-ax5d-1.axle1 goes into bm-tb3-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-ax5d-1.axle5 goes into bm-b11f-1.hole? (not shown in the booklet)
+THINK builds_on bm-ax5d-1 builds on bm-b11f-1 (42175-step-095), and rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
+THINK later Step 97 adds a cap beam. Pattern: cross shaft
+ADD bm-ax5d-1 32073 lightgray
+ADD bm-tb3-1 41677 black
+CONNECT bm-ax5d-1.axle1 -> bm-tb3-1.axlehole1~ LOCKED
+CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?
+DOES bm-ax5d-1 CARRIES bm-tb3-1
+DOES bm-b11f-1 HOLDS bm-ax5d-1
+PATTERN axle_through
+
+STEP 97
+THINK have Arm with cross shaft (step 96).
+THINK goal Locks the cross shaft from the other side.
+THINK part bm-tb4-1 (41677 Technic Beam 1 x 2 Thin): black thin beam on the axle end (green arrows); fixed
+THINK touches The thin beam is pushed onto the axle end that sticks out of the other side (green arrows).
+THINK does bm-tb4-1 holds bm-ax5d-1
+THINK why A beam on each end keeps an axle from sliding.
+THINK check bm-tb4-1.axlehole1 goes into bm-ax5d-1.axle1? (not shown in the booklet)
+THINK builds_on bm-tb4-1 builds on bm-ax5d-1 (42175-step-096), and rests on bm-tb3-1 (42175-step-096), bm-b11f-1 (42175-step-095)
+THINK later Step 98 puts tiles on the side beams. Pattern: shaft lock
+ADD bm-tb4-1 41677 black
+CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?
+DOES bm-tb4-1 HOLDS bm-ax5d-1
+PATTERN end_cap_beam
+
+STEP 98
+THINK have Arm with locked shaft (step 97).
+THINK goal Adds the warning stripe that real excavator arms show.
+THINK part bm-tile-1 (6636 Tile 1 x 6 with Groove): two black 1 x 6 grooved tiles; each gets a red-white hazard sticker (pages 19 and 20); fixed
+THINK part bm-tile-2 (6636 Tile 1 x 6 with Groove): two black 1 x 6 grooved tiles; each gets a red-white hazard sticker (pages 19 and 20); fixed
+THINK touches Yellow boxes 1-2 (two of them): the black tile gets a red and white warning sticker, then is pressed onto the side beam (arrows).
+THINK does bm-b11f-1 supports bm-tile-1
+THINK does bm-b11f-2 supports bm-tile-2
+THINK why Tiles are the flat surface for stickers.
+THINK check bm-tile-1.stud? goes into bm-b11f-1.hole? (not shown in the booklet)
+THINK check bm-tile-2.stud? goes into bm-b11f-2.hole? (not shown in the booklet)
+THINK builds_on bm-tile-1 builds on bm-b11f-1 (42175-step-095), and rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
+THINK builds_on bm-tile-2 builds on bm-b11f-2 (42175-step-095), and rests on bm-gp7-2 (42175-step-095), bm-rp-3 (42175-step-095)
+THINK later Step 99 continues at the lower end. Pattern: warning stripes
+ADD bm-tile-1 6636 black
+ADD bm-tile-2 6636 black
+CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?
+CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?
+DOES bm-b11f-1 SUPPORTS bm-tile-1
+DOES bm-b11f-2 SUPPORTS bm-tile-2
+PATTERN sticker_tiles
+
+STEP 99
+THINK have Arm with hazard tiles (step 98).
+THINK goal Adds the second cross shaft at the bottom.
+THINK part bm-ax6-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK part bm-tb5-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams (yellow box); fixed
+THINK part bm-tb5-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams (yellow box); fixed
+THINK touches Yellow box: a thin beam on each end of the 6-long axle. The unit is pushed through the lower end of the side beams (arrow).
+THINK does bm-ax6-1 carries bm-tb5-1
+THINK why End beams keep the axle from sliding out.
+THINK check bm-ax6-1.axle1 goes into bm-tb5-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check bm-ax6-1.axle6 goes into bm-tb5-2.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK later Step 100 adds a beam. Pattern: lower shaft
+ADD bm-ax6-1 3706 black
+ADD bm-tb5-1 41677 black
+ADD bm-tb5-2 41677 black
+CONNECT bm-ax6-1.axle1 -> bm-tb5-1.axlehole1~ LOCKED
+CONNECT bm-ax6-1.axle6 -> bm-tb5-2.axlehole1~ LOCKED
+DOES bm-ax6-1 CARRIES bm-tb5-1
+PATTERN axle_with_end_beams
+
+STEP 100
+THINK have Arm with lower shaft (step 99).
+THINK goal Strengthens the lower end.
+THINK part bm-b5d-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam (1:1 box, circled 5); fixed
+THINK touches The 5-hole beam is placed on the lower end of the arm, over the shaft (picture, tag 5).
+THINK does bm-b5d-1 supports bm-ax6-1
+THINK why A beam alongside the shaft spreads the load.
+THINK check bm-b5d-1.hole? goes into bm-ax6-1.axle? (not shown in the booklet)
+THINK builds_on bm-b5d-1 builds on bm-ax6-1 (42175-step-099), and rests on bm-tb5-1 (42175-step-099), bm-tb5-2 (42175-step-099)
+THINK later Step 101 builds a new sub-assembly. Pattern: lower end beam
+ADD bm-b5d-1 32316 black
+CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?
+DOES bm-b5d-1 SUPPORTS bm-ax6-1
+PATTERN beam_on_axle
+
+STEP 101
+THINK have (small separate build)
+THINK goal Builds the bucket link bracket.
+THINK part bm-rax-1 (3705 Technic Axle 4): red 4-long axle (1:1 box, circled 4); fixed
+THINK part bm-b5e-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam (1:1 box, circled 5); fixed
+THINK part bm-ax6b-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK part bm-gb4-1 (32449 Technic Beam 1 x 4 Thin): grey 4-hole thin beam; fixed
+THINK part bm-go-1 (41677 Technic Beam 1 x 2 Thin): grey thin beam; fixed
+THINK part bm-bu-1 (3713 Technic Bush): grey bush (sub-step 2); fixed
+THINK touches Sub-steps 1-6: a grey beam has the 6-long black axle pushed through, a bush slides onto the axle end, a second grey beam goes on, the red 4-long axle is added and the 5-hole beam is pushed onto the red axle (the beam is shown angled in step 6).
+THINK does bm-gb4-1 carries bm-ax6b-1
+THINK does bm-rax-1 holds bm-b5e-1
+THINK why Two axles in one bracket give two hinge points.
+THINK check bm-ax6b-1.axle1 goes into bm-gb4-1.axlehole? (not shown in the booklet)
+THINK check bm-bu-1.axlehole1 goes into bm-ax6b-1.axle6, 1 hole deep, locked (turn together)
+THINK check bm-go-1.axlehole1 goes into bm-ax6b-1.axle? (not shown in the booklet)
+THINK check bm-rax-1.axle1 goes into bm-gb4-1.axlehole? (not shown in the booklet)
+THINK check bm-b5e-1.hole? goes into bm-rax-1.axle? (not shown in the booklet)
+THINK later The following steps attach it to the arm end. Pattern: bucket link
+ADD bm-rax-1 3705 red
+ADD bm-b5e-1 32316 black
+ADD bm-ax6b-1 3706 black
+ADD bm-gb4-1 32449 darkgray
+ADD bm-go-1 41677 darkgray
+ADD bm-bu-1 3713 lightgray
+CONNECT bm-ax6b-1.axle1 -> bm-gb4-1.axlehole?
+CONNECT bm-bu-1.axlehole1 -> bm-ax6b-1.axle6 LOCKED
+CONNECT bm-go-1.axlehole1 -> bm-ax6b-1.axle?
+CONNECT bm-rax-1.axle1 -> bm-gb4-1.axlehole?
+CONNECT bm-b5e-1.hole? -> bm-rax-1.axle?
+DOES bm-gb4-1 CARRIES bm-ax6b-1
+DOES bm-rax-1 HOLDS bm-b5e-1
+PATTERN axle_bracket
+
+STEP 102
+THINK have Arm with lower shaft and bracket (steps 96-101).
+THINK goal Locks the shaft end.
+THINK part bm-b5f-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam (1:1 box, circled 5); fixed
+THINK part bm-go2-1 (41677 Technic Beam 1 x 2 Thin): grey thin oval beam pushed onto the shaft end (green arrow); fixed
+THINK touches A grey thin beam is pushed onto the black shaft end, next to a red-axle spot (arrows).
+THINK does bm-go2-1 holds bm-ax6-1
+THINK why A beam on the shaft end stops it sliding out.
+THINK check bm-go2-1.axlehole1 goes into bm-ax6-1.axle6? (not shown in the booklet)
+THINK check bm-b5f-1.hole? goes into bm-rax-1.axle? (not shown in the booklet)
+THINK builds_on bm-b5f-1 builds on bm-rax-1 (42175-step-101), and rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
+THINK builds_on bm-go2-1 builds on bm-ax6-1 (42175-step-099), and rests on bm-tb5-1 (42175-step-099), bm-tb5-2 (42175-step-099)
+THINK later Step 103 finishes the other end. Pattern: shaft end
+ADD bm-b5f-1 32316 black
+ADD bm-go2-1 41677 darkgray
+CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?
+CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?
+DOES bm-go2-1 HOLDS bm-ax6-1
+PATTERN beam_on_shaft
+
+STEP 103
+THINK have Arm with shaft end locked (step 102).
+THINK goal Locks the bucket hinge shafts.
+THINK part bm-bu2-1 (3713 Technic Bush): grey bush on the red axle end (green arrow); fixed
+THINK part bm-go3-1 (41677 Technic Beam 1 x 2 Thin): grey thin oval beam; fixed
+THINK touches A bush and a thin grey beam are pushed onto the two axle ends at the lower corner (green arrow).
+THINK does bm-bu2-1 holds bm-rax-1
+THINK why Bushes and thin beams act as stops.
+THINK check bm-bu2-1.axlehole1 goes into bm-rax-1.axle4? (not shown in the booklet)
+THINK check bm-go3-1.axlehole1 goes into bm-ax6b-1.axle? (not shown in the booklet)
+THINK builds_on bm-bu2-1 builds on bm-rax-1 (42175-step-101), and rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
+THINK builds_on bm-go3-1 builds on bm-ax6b-1 (42175-step-101), and rests on bm-gb4-1 (42175-step-101), bm-bu-1 (42175-step-101)
+THINK later Step 104 adds a long axle. Pattern: stops
+ADD bm-bu2-1 3713 lightgray
+ADD bm-go3-1 41677 darkgray
+CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?
+CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?
+DOES bm-bu2-1 HOLDS bm-rax-1
+PATTERN end_stops
+
+STEP 104
+THINK have Arm with locked corner (step 103).
+THINK goal Adds the shaft the bucket will hang on.
+THINK part bm-ax6c-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK touches The black axle goes in the lower corner through the beams (picture, tag 6).
+THINK does bm-ax6c-1 carries bm-go3-1
+THINK why An axle through two side beams makes a hinge.
+THINK check bm-ax6c-1.axle? goes into bm-go3-1.axlehole? (not shown in the booklet)
+THINK builds_on bm-ax6c-1 builds on bm-go3-1 (42175-step-103), and rests on bm-ax6b-1 (42175-step-101)
+THINK later Step 105 puts the bucket on. Pattern: bucket shaft
+ADD bm-ax6c-1 3706 black
+CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?
+DOES bm-ax6c-1 CARRIES bm-go3-1
+PATTERN cross_shaft
+
+STEP 105
+THINK have Arm with bucket shafts (step 104).
+THINK goal Adds the digging bucket(s).
+THINK part bk-bucket-1 (24120 Technic Digger Bucket 4 x 7): two grey digger buckets 4 x 7 (set side by side to make one wide bucket); fixed
+THINK part bk-bucket-2 (24120 Technic Digger Bucket 4 x 7): two grey digger buckets 4 x 7 (set side by side to make one wide bucket); fixed
+THINK part bk-tpin-1 (32002 Technic Pin 3/4): two tan pins, one for each bucket (sub-step 1); fixed
+THINK part bk-tpin-2 (32002 Technic Pin 3/4): two tan pins, one for each bucket (sub-step 1); fixed
+THINK part bk-tb-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams, one for each bucket (sub-step 1); fixed
+THINK part bk-tb-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams, one for each bucket (sub-step 1); fixed
+THINK touches Two yellow boxes: a tan pin goes in a thin black beam, then in the bucket's eye (sub-steps 1-2). Both buckets are pressed onto the lower corner shafts (arrows).
+THINK does bk-bucket-1 carries bk-tpin-1
+THINK does bm-ax6c-1 holds bk-bucket-1
+THINK why A bucket on a hinge pin can tip to dig.
+THINK check bk-tpin-1.pin1 goes into bk-tb-1.axlehole? (not shown in the booklet)
+THINK check bk-tpin-2.pin1 goes into bk-tb-2.axlehole? (not shown in the booklet)
+THINK check bk-tpin-1.pin2 goes into bk-bucket-1.hole? (not shown in the booklet)
+THINK check bk-tpin-2.pin2 goes into bk-bucket-2.hole? (not shown in the booklet)
+THINK later Step 106 adds air hoses. Pattern: bucket
+ADD bk-bucket-1 24120 darkgray
+ADD bk-bucket-2 24120 darkgray
+ADD bk-tpin-1 32002 tan
+ADD bk-tpin-2 32002 tan
+ADD bk-tb-1 41677 black
+ADD bk-tb-2 41677 black
+CONNECT bk-tpin-1.pin1 -> bk-tb-1.axlehole?
+CONNECT bk-tpin-2.pin1 -> bk-tb-2.axlehole?
+CONNECT bk-tpin-1.pin2 -> bk-bucket-1.hole?
+CONNECT bk-tpin-2.pin2 -> bk-bucket-2.hole?
+DOES bk-bucket-1 CARRIES bk-tpin-1
+DOES bm-ax6c-1 HOLDS bk-bucket-1
+PATTERN bucket_on_hinge
+
+STEP 106
+THINK have Arm with bucket (step 105).
+THINK goal Brings the arm's cylinder hoses in.
+THINK part hy-hose-5 (5102c25 Hose, Pneumatic 4mm D. 25L / 20cm): light grey air hose (length bar runs off the page; best guess); fixed
+THINK part hy-hose-6 (5102c32 Hose, Pneumatic 4mm D. 32L / 256mm): long black air hose (length bar runs off the page; best guess); fixed
+THINK touches Two hoses (one light grey, one black) are added to the arm; the black one is drawn running along the top of the arm.
+THINK does bm-cyl-1 drives hy-hose-5
+THINK why Hoses carry air from the machine to the cylinder.
+THINK later They are plugged in later. Pattern: arm hoses
+ADD hy-hose-5 5102c25 lightgray
+ADD hy-hose-6 5102c32 black
+DOES bm-cyl-1 DRIVES hy-hose-5
+PATTERN hose_add

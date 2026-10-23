@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-103",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 95,
+  "step": 103,
+  "input": {
+    "picture": "steps/main-103/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-bu2-1",
+        "part_number": "3713",
+        "count": 1
+      },
+      {
+        "name": "bm-go3-1",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with shaft end locked (step 102)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-bu2-1",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey bush on the red axle end (green arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-go3-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "grey thin oval beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A bush and a thin grey beam are pushed onto the two axle ends at the lower corner (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-bu2-1 holds bm-rax-1"
+    ],
+    "where_everything_is_after": [
+      "both shafts at the lower corner are locked",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Locks the bucket hinge shafts.",
+      "why_these_parts": "Bushes and thin beams act as stops.",
+      "sets_up_for_later": "Step 104 adds a long axle.",
+      "design_pattern": "stops"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Hole not countable."
+}

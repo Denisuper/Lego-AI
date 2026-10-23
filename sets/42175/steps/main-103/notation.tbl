@@ -1,0 +1,7 @@
+STEP 103
+ADD bm-bu2-1 3713 lightgray
+ADD bm-go3-1 41677 darkgray
+CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?
+CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?
+DOES bm-bu2-1 HOLDS bm-rax-1
+PATTERN end_stops

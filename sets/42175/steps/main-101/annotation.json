@@ -1,0 +1,120 @@
+{
+  "example_id": "42175-step-101",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 92,
+  "step": 101,
+  "input": {
+    "picture": "steps/main-101/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-rax-1",
+        "part_number": "3705",
+        "count": 1
+      },
+      {
+        "name": "bm-b5e-1",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "bm-ax6b-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "bm-gb4-1",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "bm-go-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "bm-bu-1",
+        "part_number": "3713",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(small separate build)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-rax-1",
+        "part_number": "3705",
+        "catalog_name": "Technic Axle 4",
+        "color": "Red",
+        "part_match": "confirmed",
+        "position": "red 4-long axle (1:1 box, circled 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-b5e-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-ax6b-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-gb4-1",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "grey 4-hole thin beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-go-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "grey thin beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bu-1",
+        "part_number": "3713",
+        "catalog_name": "Technic Bush",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey bush (sub-step 2)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-6: a grey beam has the 6-long black axle pushed through, a bush slides onto the axle end, a second grey beam goes on, the red 4-long axle is added and the 5-hole beam is pushed onto the red axle (the beam is shown angled in step 6)."
+    ],
+    "who_does_what_to_which": [
+      "bm-gb4-1 carries bm-ax6b-1",
+      "bm-rax-1 holds bm-b5e-1"
+    ],
+    "where_everything_is_after": [
+      "a grey hinge bracket with a black axle, a red axle and a 5-hole beam is ready to be fitted",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the bucket link bracket.",
+      "why_these_parts": "Two axles in one bracket give two hinge points.",
+      "sets_up_for_later": "The following steps attach it to the arm end.",
+      "design_pattern": "bucket link"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Sub-step order is as drawn; join points are estimates."
+}

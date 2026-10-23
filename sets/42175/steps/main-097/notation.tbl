@@ -1,0 +1,5 @@
+STEP 97
+ADD bm-tb4-1 41677 black
+CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?
+DOES bm-tb4-1 HOLDS bm-ax5d-1
+PATTERN end_cap_beam

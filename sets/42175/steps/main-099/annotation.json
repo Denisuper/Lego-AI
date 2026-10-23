@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-099",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 90,
+  "step": 99,
+  "input": {
+    "picture": "steps/main-099/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-ax6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "bm-tb5-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "bm-tb5-2",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with hazard tiles (step 98)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-ax6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tb5-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin beams (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-tb5-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin beams (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a thin beam on each end of the 6-long axle. The unit is pushed through the lower end of the side beams (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-ax6-1 carries bm-tb5-1"
+    ],
+    "where_everything_is_after": [
+      "a 6-long axle with end beams crosses the arm's lower end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second cross shaft at the bottom.",
+      "why_these_parts": "End beams keep the axle from sliding out.",
+      "sets_up_for_later": "Step 100 adds a beam.",
+      "design_pattern": "lower shaft"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Hole not countable."
+}
