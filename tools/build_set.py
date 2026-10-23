@@ -2,7 +2,7 @@
 Usage: python tools/build_set.py sets/8047
 Reads  steps/<folder>/annotation.json + notation.tbl in booklet_map.csv order.
 Also reads systems.json (what each part is for in the finished machine).
-Writes training.jsonl, training.tbl, preview.md, part_matches.csv, roles.csv (all generated, don't hand-edit)."""
+Writes training.jsonl, training.tbl, preview.md (all generated, don't hand-edit)."""
 import csv, json, re, sys
 sys.path.insert(0, "tools")
 from mechanisms import Tracker
@@ -86,45 +86,33 @@ with open(d + "training.jsonl", "w", encoding="utf-8", newline="\n") as f:
     for e in ann: f.write(json.dumps(e) + "\n")
 
 md = [f"# {ann[0]['set']} - {len(ann)} labeled steps\n"]
-with open(d + "part_matches.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f)
-    w.writerow(["example_id", "our_name", "part_number", "catalog_name", "color", "match"])
-    for e in ann:
-        a, y = e["answer"], e["answer"]["why"]
-        for p in a["new_parts"]:
-            w.writerow([e["example_id"], p["name"], p["part_number"], p["catalog_name"], p["color"], p["part_match"]])
-        md += [f"## {e['example_id']} (page {e['page']}) - {e['confidence']}" + (" - NEEDS REVIEW" if e["needs_review"] else "") + "\n",
-               f"![{e['example_id']}]({e['input']['picture']})\n",
-               "**New parts:** " + "; ".join(f"{p['name']} ({p['part_number']}, {p['color'].lower()}) - {p['position']}" for p in a["new_parts"]) + "\n",
-               "**Touches:** " + "; ".join(a["what_each_new_part_touches"]) + "\n",
-               "**Exact joins:** " + ("; ".join(f"{j['part']}.{j['point']} into {j['into']}.{j['into_point']}"
-                                       + (f" ({j['depth_holes']:g} hole deep, {j['fit']}{'' if j['exact'] else ', estimated from the picture'})" if j["named"] and j["fit"] else " (not shown in booklet)")
-                                       for j in a["joins"]) or "none") + "\n",
-               "**Who does what:** " + "; ".join(a["who_does_what_to_which"]) + "\n",
-               "**After:** " + "; ".join(a["where_everything_is_after"]) + "\n",
-               f"**Why:** {y['problem_solved']} {y['why_these_parts']} *Next:* {y['sets_up_for_later']} *Pattern:* {y['design_pattern']}\n"]
-        md.append("**Big picture:**\n" + "\n".join(
-            f"- **{b['part']}** ({b['system']}): {b['role']}"
-            + (" Later: " + "; ".join(f"{u['step']} `{u['line']}`" for u in b["used_later"]) + "." if b["used_later"] else "")
-            for b in a["big_picture"] if not re.fullmatch(r"tread-(?!1$|29$).*", b["part"])) + "\n")
-        mi = a["mechanism"]
-        if mi["advances"] or mi["builds_on"]:
-            md.append("**Mechanisms:**\n" + "\n".join(
-                [f"- adds **{x['part']}** to the {x['name'].lower()} ({x['type']}) as {x['role']}" + (" *(not confirmed)*" if x["status"] == "hypothesis" else "") for x in mi["advances"]]
-                + [f"- {s['mechanism']}: {s['parts_present']}/{s['parts_total']} parts" + (" - complete" if s["complete"] else f" - still missing {', '.join(s['still_missing'][:4])}") for s in mi["state"]]
-                + [f"- motion: {mo['says']}" for mo in mi["motion"]]
-                + [f"- **{bo['part']}** builds on " + "; ".join(
-                    f"{x['joins']} ({x['added_in'].replace('8047-', '')}{', ' + x['that_part_is'][0] if x['that_part_is'] else ''})"
-                    + (", which rests on " + ", ".join(f"{w['part']} ({w['added_in'].replace('8047-', '')})" for w in x["which_rests_on"]) if x["which_rests_on"] else "")
-                    for x in bo["builds_on"]) for bo in mi["builds_on"] if not re.fullmatch(r"tread-(?!1$|29$).*", bo["part"])]) + "\n")
-        if e["review_note"]: md.append(f"**Review:** {e['review_note']}\n")
+for e in ann:
+    a, y = e["answer"], e["answer"]["why"]
+    md += [f"## {e['example_id']} (page {e['page']}) - {e['confidence']}" + (" - NEEDS REVIEW" if e["needs_review"] else "") + "\n",
+           f"![{e['example_id']}]({e['input']['picture']})\n",
+           "**New parts:** " + "; ".join(f"{p['name']} ({p['part_number']}, {p['color'].lower()}) - {p['position']}" for p in a["new_parts"]) + "\n",
+           "**Touches:** " + "; ".join(a["what_each_new_part_touches"]) + "\n",
+           "**Exact joins:** " + ("; ".join(f"{j['part']}.{j['point']} into {j['into']}.{j['into_point']}"
+                                   + (f" ({j['depth_holes']:g} hole deep, {j['fit']}{'' if j['exact'] else ', estimated from the picture'})" if j["named"] and j["fit"] else " (not shown in booklet)")
+                                   for j in a["joins"]) or "none") + "\n",
+           "**Who does what:** " + "; ".join(a["who_does_what_to_which"]) + "\n",
+           "**After:** " + "; ".join(a["where_everything_is_after"]) + "\n",
+           f"**Why:** {y['problem_solved']} {y['why_these_parts']} *Next:* {y['sets_up_for_later']} *Pattern:* {y['design_pattern']}\n"]
+    md.append("**Big picture:**\n" + "\n".join(
+        f"- **{b['part']}** ({b['system']}): {b['role']}"
+        + (" Later: " + "; ".join(f"{u['step']} `{u['line']}`" for u in b["used_later"]) + "." if b["used_later"] else "")
+        for b in a["big_picture"] if not re.fullmatch(r"tread-(?!1$|29$).*", b["part"])) + "\n")
+    mi = a["mechanism"]
+    if mi["advances"] or mi["builds_on"]:
+        md.append("**Mechanisms:**\n" + "\n".join(
+            [f"- adds **{x['part']}** to the {x['name'].lower()} ({x['type']}) as {x['role']}" + (" *(not confirmed)*" if x["status"] == "hypothesis" else "") for x in mi["advances"]]
+            + [f"- {s['mechanism']}: {s['parts_present']}/{s['parts_total']} parts" + (" - complete" if s["complete"] else f" - still missing {', '.join(s['still_missing'][:4])}") for s in mi["state"]]
+            + [f"- motion: {mo['says']}" for mo in mi["motion"]]
+            + [f"- **{bo['part']}** builds on " + "; ".join(
+                f"{x['joins']} ({x['added_in'].replace('8047-', '')}{', ' + x['that_part_is'][0] if x['that_part_is'] else ''})"
+                + (", which rests on " + ", ".join(f"{w['part']} ({w['added_in'].replace('8047-', '')})" for w in x["which_rests_on"]) if x["which_rests_on"] else "")
+                for x in bo["builds_on"]) for bo in mi["builds_on"] if not re.fullmatch(r"tread-(?!1$|29$).*", bo["part"])]) + "\n")
+    if e["review_note"]: md.append(f"**Review:** {e['review_note']}\n")
 open(d + "preview.md", "w", encoding="utf-8").write("\n".join(md))
-with open(d + "roles.csv", "w", newline="", encoding="utf-8") as f:
-    w = csv.writer(f, lineterminator="\n")
-    w.writerow(["part", "part_number", "added_in", "system", "role", "used_later_in", "system_purpose"])
-    for e in ann:
-        for p, b in zip(e["answer"]["new_parts"], e["answer"]["big_picture"]):
-            w.writerow([p["name"], p["part_number"], e["example_id"], b["system"], b["role"],
-                        "; ".join(f"{u['step']}: {u['line']}" for u in b["used_later"]), b["system_purpose"]])
 if missing: print("NO ROLE in systems.json for:", ", ".join(missing))
-print(f"{len(ann)} steps -> {d}training.jsonl, training.tbl, preview.md, part_matches.csv")
+print(f"{len(ann)} steps -> {d}training.jsonl, training.tbl, preview.md")

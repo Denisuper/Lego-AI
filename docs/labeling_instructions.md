@@ -62,7 +62,7 @@ Write in `review_note` which step settled it ("seen in step 9: pin-P is in the 2
 - Plain language. No jargon.
 
 ## After you answer
-Run `python tools/build_set.py sets/<set>` then `python tools/check_steps.py sets/<set>/training.jsonl sets/<set>/parts_list.csv`. Fix anything it lists.
+Run `python tools/build_set.py sets/<set>` (then `python training/export.py` to refresh the Qwen training data) then `python tools/check_steps.py sets/<set>/training.jsonl sets/<set>/parts_list.csv`. Fix anything it lists.
 
 ## Before you answer, check
 - Every part number is on the parts list.

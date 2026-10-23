@@ -52,6 +52,9 @@ Task 4 is grounded in real mistakes. The checkers caught these in 8047's own lab
 3. Mark each link `confirmed` only if a picture shows it; otherwise `hypothesis`, and say what to check.
 4. Run `python tools/mechanisms.py sets/<set>`: every mechanism with an input must turn something, and no JAM lines. A JAM is either a label error or a misunderstanding of the mechanism; fix it, don't ignore it.
 
+## Model
+We fine-tune Qwen (open source, Apache 2.0) instead of training from scratch: it already reads English, so the full-sentence THINK lines are understood, not just copied. training/export.py builds tasks 1 and 2 today; 3-5 are next.
+
 ## Limits (be honest)
 - One set is far too little to learn general mechanisms. The library + tasks 2-4 help, but more sets are the real fix.
 - 8047 still has open mechanism questions (where axle7-B's turning goes; the back shaft that can't turn as labelled). They are marked `hypothesis` / JAM, and the model must not be trained on them as facts: filter `status: hypothesis` out of task 2 targets until confirmed.

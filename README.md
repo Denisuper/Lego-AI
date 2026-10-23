@@ -1,6 +1,6 @@
 # Lego AI - Technic training data
 
-Real LEGO Technic instruction booklets turned into training data: for every step, the picture, a labeled annotation (parts, joins, what each part does and why) and the same step in our build language. A small AI is trained on the build language to design its own Technic builds.
+Real LEGO Technic instruction booklets turned into training data: for every step, the picture, a labeled annotation (parts, joins, what each part does and why) and the same step in our build language. An open-source Qwen model is fine-tuned on this data (with its full step-by-step reasoning) to design its own Technic builds.
 
 ## Layout
 | Path | What it is |
@@ -18,11 +18,21 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `catalog/mechanisms.json` | Library of mechanism types: what each does, motion in/out, ratio, part roles, rules, how it fails |
 | `catalog/connections.csv` | Every named point on every part (hole1, axlehole2, pin1, axle3...): type, exact position, direction, depth, whether things slide in it, how it turns |
 | `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
-| `docs/` | Labeling instructions, framework, `mechanism_training.md` (what the data teaches and the training tasks), and `detail_spec.md`: every kind of detail we record or plan to, with status |
+| `docs/` | Labeling instructions, `mechanism_training.md` (what the data teaches and the training tasks), and `detail_spec.md`: every kind of detail we record or plan to, with status |
 | `tools/mechanisms.py` | Works out each mechanism's state after every step, what turns when you turn a knob (with ratios), what each part builds on, and flags jams |
+| `training/export.py` | Turns every set into chat examples for Qwen: "build so far → think + next step" and "turn a knob → what moves" |
+| `training/train_qwen.py` | Fine-tunes Qwen on them with LoRA (needs a GPU) |
 | `tools/build_set.py` | Rebuilds a set's generated files from its step folders |
 | `tools/check_steps.py` | Checks parts, counts, verbs, names, "why" fields |
 | `tools/check_notation.py` | Checks every join: the hole/pin exists on that part, the two fit, and locked/turns/stiff is right |
+
+## Train Qwen
+```
+python tools/build_set.py sets/8047
+python training/export.py
+pip install -r training/requirements.txt
+python training/train_qwen.py --model Qwen/Qwen2.5-1.5B-Instruct
+```
 
 ## Rebuild and check a set
 ```
