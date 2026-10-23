@@ -1,3 +1,0 @@
-ADD pin-421 32054 red
-POS pin-421 -1 2 3 -1 0 0 0 -1 0 0 0 1
-CONNECT pin-421.pin1 -> panel-19.hole5 STIFF

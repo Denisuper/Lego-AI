@@ -1,6 +1,0 @@
-ADD bush-7 3713 red
-POS bush-7 0 0 0 -1 0 0 0 1 0 0 0 -1
-ADD beam5-5 32316 lightbluishgrey
-POS beam5-5 0 0 1 0 0 1 1 0 0 0 1 0
-CONNECT axle5-8.axle3 -> bush-7.axlehole1 LOCKED
-CONNECT axle5-8.axle2 -> beam5-5.hole3 TURNS

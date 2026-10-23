@@ -1,4 +1,0 @@
-ADD beam3x5-19 32526 red
-POS beam3x5-19 6 -4 8 0 -1 0 0 0 1 -1 0 0
-CONNECT pin-345.pin2 -> beam3x5-19.hole6 STIFF
-CONNECT pin-346.pin2 -> beam3x5-19.hole7 STIFF

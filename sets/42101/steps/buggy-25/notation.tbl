@@ -1,7 +1,0 @@
-ADD beam2-4 41677 black
-POS beam2-4 0.75 -3 2 0 -1 0 0 0 1 -1 0 0
-ATTACH substepstep24
-CONNECT axle2-5.axle1 -> beam2-4.axlehole1 LOCKED
-CONNECT axle2-6.axle1 -> beam2-4.axlehole2 LOCKED
-CONNECT axle2-6.axle2 -> beam3x3-1.axlehole2 LOCKED
-CONNECT axle2-6.axle1 -> beam3x3-2.axlehole2 LOCKED

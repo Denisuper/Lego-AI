@@ -1,8 +1,0 @@
-ADD axle6-2 3706 black
-POS axle6-2 0 0 -3.5 0 -0.156 0.988 0 0.988 0.156 -1 0 0
-ADD conn-40 59443 black
-POS conn-40 0 0 -6.5 -0.988 -0.156 0 -0.156 0.988 0 0 0 -1
-CONNECT axle6-2.axle6 -> conn-40.axlehole1 LOCKED
-CONNECT axle6-2.axle1 -> conn-30.axlehole1 LOCKED
-CONNECT axle6-2.axle2 -> conn-38.hole1 TURNS
-CONNECT axle6-2.axle5 -> conn-39.hole1 TURNS

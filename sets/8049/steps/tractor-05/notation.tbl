@@ -1,5 +1,0 @@
-ATTACH submodel1
-CONNECT pin-7.pin3 -> beam9-2.hole6 STIFF
-CONNECT pin-8.pin3 -> beam9-2.hole5 STIFF
-CONNECT axle3-1.axle3 -> beam9-2.hole1 TURNS
-CONNECT pin-3.pin1 -> beam5-2.hole5 STIFF

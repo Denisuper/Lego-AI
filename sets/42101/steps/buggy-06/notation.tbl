@@ -1,5 +1,0 @@
-ADD beam4-2 2825 black
-POS beam4-2 1 0 0 0 -1 0 -1 0 0 0 0 -1
-CONNECT axle5-1.axle4 -> beam4-2.axlehole1 LOCKED
-CONNECT axle4-1.axle2 -> beam4-2.axlehole2 LOCKED
-CONNECT pin-1.pin2 -> beam4-2.hole2 STIFF

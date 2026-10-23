@@ -1,4 +1,0 @@
-ADD axle3-11 4519 lightbluishgrey
-POS axle3-11 0 2.5 8.5 0 0 -1 0 1 0 1 0 0
-CONNECT axle3-11.axle1 -> pin-247.hole7 TURNS
-CONNECT axle3-11.axle1 -> cranksha-1.axlehole1 LOCKED

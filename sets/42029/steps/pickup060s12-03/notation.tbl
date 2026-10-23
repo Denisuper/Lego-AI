@@ -1,6 +1,0 @@
-ADD pin-269 2780 black
-POS pin-269 0 3 -1.5 0 0 1 0 1 0 -1 0 0
-ADD pin-270 2780 black
-POS pin-270 0 2 -1.5 0 0 1 0 1 0 -1 0 0
-CONNECT pin-269.pin1 -> beam5-10.hole4 STIFF
-CONNECT pin-270.pin1 -> beam5-10.hole3 STIFF

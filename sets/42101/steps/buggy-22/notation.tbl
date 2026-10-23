@@ -1,3 +1,0 @@
-ATTACH substepstep22
-CONNECT pin-23.axle1 -> beam2-2.hole1 TURNS
-CONNECT axle2-4.axle1 -> beam2x4-4.axlehole1 LOCKED

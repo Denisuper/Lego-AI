@@ -1,4 +1,0 @@
-ADD beam5-1 32316 black
-POS beam5-1 -1 0 0 0 -1 0 1 0 0 0 0 1
-CONNECT pin-5.axle1 -> beam5-1.hole3 TURNS
-CONNECT pin-6.pin1 -> beam5-1.hole4 STIFF

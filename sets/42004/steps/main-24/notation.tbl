@@ -1,4 +1,0 @@
-STEP 24
-ATTACH seat
-CONNECT pin-27.pin3 -> beam7-1.hole2 STIFF
-CONNECT pin-24.pin3 -> beam7-2.hole2 STIFF

@@ -1,8 +1,0 @@
-ADD axle7-3 44294 lightbluishgrey
-POS axle7-3 3.25 0 -1.5 -1 0 0 0 -1 0 0 0 1
-ADD pin-40 2780 black
-POS pin-40 0.75 0 -0.5 -1 0 0 0 -1 0 0 0 1
-CONNECT axle7-3.axle7 -> beam4-1.axlehole1 LOCKED
-CONNECT pin-40.pin2 -> beam4-1.hole1 STIFF
-CONNECT axle7-3.axle7 -> beam4-2.axlehole1 LOCKED
-CONNECT pin-40.pin2 -> beam4-2.hole1 STIFF

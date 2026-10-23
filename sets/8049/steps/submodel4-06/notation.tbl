@@ -1,6 +1,0 @@
-ADD beam3-10 6632 black
-POS beam3-10 3.25 0 0 0 -1 0 0.998 0 0.066 -0.066 0 0.998
-ADD beam3-11 6632 black
-POS beam3-11 2.75 0 0 0 -1 0 0.998 0 0.066 -0.066 0 0.998
-CONNECT axle12-1.axle10 -> beam3-10.axlehole1 LOCKED
-CONNECT axle12-1.axle9 -> beam3-11.axlehole1 LOCKED

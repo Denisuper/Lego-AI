@@ -1,9 +1,0 @@
-ADD gear12-2 32270 black
-POS gear12-2 -2.25 0 0 -1 0 0 0 1 0 0 0 -1
-ADD axle3-10 4519 lightbluishgrey
-POS axle3-10 -0.25 0 1.5 1 0 0 0 1 0 0 0 1
-ADD axle3-11 4519 lightbluishgrey
-POS axle3-11 -4.25 0 1.5 1 0 0 0 1 0 0 0 1
-CONNECT axle4-9.axle3 -> gear12-2.axlehole1 LOCKED
-CONNECT axle3-10.axle1 -> conn-34.axlehole2 LOCKED
-CONNECT axle3-11.axle3 -> conn-34.axlehole1 LOCKED

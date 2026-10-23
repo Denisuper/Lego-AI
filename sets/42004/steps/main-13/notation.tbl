@@ -1,8 +1,0 @@
-STEP 13
-ADD axle7-2 44294 lightbluishgrey
-POS axle7-2 1 -4 -7 -1 0 0 0 -0.866 -0.5 0 -0.5 0.866
-ADD gear8-1 10928 darkbluishgrey
-POS gear8-1 1 -4 -7 0 0 1 0 -1 0 1 0 0
-CONNECT axle7-2.axle4 -> gear8-1.axlehole1 LOCKED
-CONNECT axle7-2.axle5 -> beam3x5-1.hole1 TURNS
-CONNECT axle7-2.axle5 -> beam3x5-2.hole1 TURNS

@@ -1,4 +1,0 @@
-ADD beam3x3-5 60484 lightbluishgrey
-POS beam3x3-5 1 4 -2 0 -1 0 1 0 0 0 0 1
-CONNECT pin-55.pin2 -> beam3x3-5.hole1 STIFF
-CONNECT pin-56.pin2 -> beam3x3-5.hole2 STIFF

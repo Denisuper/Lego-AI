@@ -1,6 +1,0 @@
-ADD pin-63 43093 blue
-POS pin-63 0.5 0 2 1 0 0 0 1 0 0 0 1
-ADD beam4-8 32449 yellow
-POS beam4-8 0.75 0 0.5 0 -1 0 1 0 0 0 0 1
-CONNECT pin-62.pin2 -> beam4-8.hole1 STIFF
-CONNECT pin-63.axle1 -> beam3x5-10.hole3 TURNS

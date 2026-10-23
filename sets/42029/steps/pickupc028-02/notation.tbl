@@ -1,6 +1,0 @@
-ADD conn-48 59443 black
-POS conn-48 0 0 -2.5 -1 0 0 0 1 0 0 0 -1
-ADD bush-10 3713 red
-POS bush-10 0 0 4 1 0 0 0 1 0 0 0 1
-CONNECT axle5-15.axle5 -> conn-48.axlehole1 LOCKED
-CONNECT axle5-16.axle4 -> bush-10.axlehole1 LOCKED

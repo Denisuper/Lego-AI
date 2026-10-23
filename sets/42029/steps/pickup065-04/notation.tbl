@@ -1,8 +1,0 @@
-ADD beam7-9 32065 black
-POS beam7-9 0 -2 -1.25 0 0 1 1 0 0 0 1 0
-ADD beam7-10 32065 black
-POS beam7-10 0 2 -1.25 0 0 1 1 0 0 0 1 0
-CONNECT pin-283.pin1 -> beam7-9.hole3 STIFF
-CONNECT pin-284.pin1 -> beam7-9.hole5 STIFF
-CONNECT pin-285.pin1 -> beam7-10.hole3 STIFF
-CONNECT pin-286.pin1 -> beam7-10.hole5 STIFF

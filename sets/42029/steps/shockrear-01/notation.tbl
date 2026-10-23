@@ -1,5 +1,0 @@
-ADD cylinder-1 4255 maincolour
-POS cylinder-1 0 0 0 1 0 0 0 1 0 0 0 1
-ADD rod-1 4254 black
-POS rod-1 0 4.85 0 1 0 0 0 1 0 0 0 1
-ATTACH shockrearspr

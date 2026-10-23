@@ -1,9 +1,0 @@
-STEP 10
-ADD axle-input-T 3705 black
-ADD gear-blue-U 35185 blue
-CONNECT axle-input-T.axle1 -> bracket-G.hole1~ TURNS
-CONNECT axle-input-T.axle2 -> gear-blue-U.hole1~ TURNS
-MESH gear-blue-U.teeth gear-gray-L.teeth
-DOES gear-blue-U DRIVES gear-gray-L
-RATIO gear-blue-U gear-gray-L 20/16
-PATTERN input_gear_mesh

@@ -1,6 +1,0 @@
-ADD gear24-1 3648b darkbluishgrey
-POS gear24-1 -1 2 -23 0 0 1 0 1 0 -1 0 0
-ADD axle3-23 6587 darktan
-POS axle3-23 -0.5 2 -23 -1 0 0 0 1 0 0 0 -1
-CONNECT axle3-23.axle2 -> gear24-1.axlehole1 LOCKED
-CONNECT axle3-23.axle3 -> beam-4.hole2 TURNS

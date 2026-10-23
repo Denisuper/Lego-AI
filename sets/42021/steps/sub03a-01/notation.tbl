@@ -1,5 +1,0 @@
-ADD beam2x4-3 32140 lime
-POS beam2x4-3 0 0 0 0 -1 0 0 0 1 -1 0 0
-ADD axle3-1 4519 lightbluishgrey
-POS axle3-1 0 0 0 1 0 0 0 -1 0 0 0 -1
-CONNECT axle3-1.axle2 -> beam2x4-3.axlehole1 LOCKED

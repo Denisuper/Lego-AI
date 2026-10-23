@@ -1,9 +1,0 @@
-ADD pin-135 2780 black
-POS pin-135 1.5 0 0 -1 0 0 0 -1 0 0 0 1
-ADD pin-136 6558 blue
-POS pin-136 -2 -2 0 -1 0 0 0 -1 0 0 0 1
-ADD pin-137 6558 blue
-POS pin-137 2 -2 0 1 0 0 0 1 0 0 0 1
-CONNECT pin-136.pin1 -> beam11-4.hole3 STIFF
-CONNECT pin-135.pin2 -> beam11-5.hole1 STIFF
-CONNECT pin-137.pin1 -> beam11-5.hole3 STIFF

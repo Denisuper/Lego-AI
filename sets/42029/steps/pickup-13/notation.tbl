@@ -1,3 +1,0 @@
-ADD gear16-2 94925 lightbluishgrey
-POS gear16-2 0 0 1 -1 0 0 0 -1 0 0 0 1
-CONNECT axle7-1.axle3 -> gear16-2.axlehole1 LOCKED

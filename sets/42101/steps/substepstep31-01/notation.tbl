@@ -1,5 +1,0 @@
-ADD axle3-5 4519 yellow
-POS axle3-5 0 0 0 -1 0 0 0 1 0 0 0 -1
-ADD panel-1 11947 orange
-POS panel-1 -1 0 0 0 0 -1 -1 0 0 0 1 0
-CONNECT axle3-5.axle3 -> panel-1.axlehole1 LOCKED

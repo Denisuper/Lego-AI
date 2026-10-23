@@ -1,5 +1,0 @@
-ADD axle8-1 55013 darkbluishgrey
-POS axle8-1 0 0 0 0 -1 0 1 0 0 0 0 1
-ADD pin-13 87082 lightbluishgrey
-POS pin-13 0 3.5 0 -1 0 0 0 -1 0 0 0 1
-CONNECT axle8-1.axle8 -> pin-13.hole1 TURNS

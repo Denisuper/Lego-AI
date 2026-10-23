@@ -1,6 +1,0 @@
-ADD conn-62 32184 lightbluishgrey
-POS conn-62 1 -1 0 -1 0 0 0 1 0 0 0 -1
-ADD bush-21 3713 red
-POS bush-21 0 0 0 0 0 1 0 1 0 -1 0 0
-CONNECT axle5-18.axle4 -> conn-62.axlehole2 LOCKED
-CONNECT axle5-18.axle3 -> bush-21.axlehole1 LOCKED

@@ -42,39 +42,31 @@ tools/check_notation.py        checks every join (point exists, the two fit, wor
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
-Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md). 42061 and 42116 are converted to steps.md but have no training files yet.
-UNFINISHED sets (still have step folders, model.mpd and booklet_map.csv because their training files are not built yet; finish them with the prompt in "Finishing an unfinished set" below): 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (only step 1 done, parts list incomplete), 8049.
-NOT STARTED (parts list only): 8043, 8069, 42009, 42030, 8258.
+Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md). 42061 and 42116 have steps.md, training.tbl and training.jsonl too.
+NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (parts list also incomplete), 8049.
 
-## Finishing an unfinished set (prompt for agents)
-Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/steps.md first and copy its wording style. Give an agent this prompt, one set at a time:
+## Finishing a NOT STARTED set (prompt for agents)
+Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/steps.md first and copy its wording style. These sets have no step folders left (unconverted old-format work was deleted rather than carried forward) - read the booklet directly, per "How to add a set" above. Give an agent this prompt, one set at a time:
 
 ```
-Finish set <set>. Copy the layout and wording style of sets/42175/steps.md. Work only inside sets/<set>/.
-
-WHY THE STEP FOLDERS ARE NOT DONE: every steps/*/annotation.json still says "TO WRITE" (why, model_so_far,
-rotation, where_everything_is_after). Pull a real one-sentence WHY and the real joins out of each step before
-writing steps.md - don't carry "TO WRITE" forward.
+Add set <set>. Copy the layout and wording style of sets/42175/steps.md. Work only inside sets/<set>/.
 
 MAKE (in this order)
-1. Write sets/<set>/steps.md: one block per step (see sets/42175/steps.md), in booklet order (use booklet_map.csv
-   for the order if the set has sub-builds): ADD and CONNECT lines from the step's annotation.json (keep the part
-   names), GROUP/END/ATTACH for side builds, plus ONE real WHY sentence per step.
+1. Write sets/<set>/steps.md: one block per step, in booklet order: read the booklet page directly (do not
+   crop pictures or write annotation.json), ADD and CONNECT lines for that step, GROUP/END/ATTACH for side
+   builds, plus ONE real WHY sentence per step.
 2. python training/export.py  ->  writes sets/<set>/training.tbl + training.jsonl from that steps.md, and
    rebuilds training/data/train.jsonl + test.jsonl for every set that has one.
 
-CHECK (all must pass before you delete anything)
+CHECK (all must pass before moving on)
 - every part in parts_list.csv is used exactly once by the last step in steps.md.
 - every point in steps.md exists in catalog/connections.csv.
 - grep -c "TO WRITE" over steps.md and the set's training.tbl/training.jsonl is 0.
 
-DELETE (only after the checks pass)
-- the whole steps/ folder (every annotation.json, notation.tbl and picture crop)
-- systems.json, mechanisms.json, preview.md, booklet_map.csv, model.mpd
+KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl. Delete model.mpd and
+booklet_map.csv once steps.md is done - they were only needed for the old per-step pipeline.
 
-KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl.
-
-THEN: move the set from UNFINISHED to done in "Layout" and "Status" of CLAUDE.md. Commit only sets/<set>, plus CLAUDE.md and .gitignore for those two edits.
+THEN: move the set out of NOT STARTED in "Layout" and "Status" of CLAUDE.md. Commit only sets/<set>, plus CLAUDE.md and .gitignore for those two edits.
 Never delete before the checks pass. Never leave "TO WRITE" in a training file. Never force-push.
 ```
 NOT STARTED sets have no step folders: use "How to add a set" above instead.
@@ -115,9 +107,8 @@ export.py reads every sets/<set>/steps.md; it writes that set's own training.jso
 ## Status (Oct 23, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
 - 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
-- 42061 and 42116 have steps.md but no training files yet.
-- UNFINISHED: 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. They come from 3D models and are labeled by other agents.
-- NOT STARTED: 8043, 8069, 42009, 42030, 8258 (parts list only).
+- 42061 and 42116 have steps.md, training.tbl and training.jsonl too.
+- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" / "Finishing a NOT STARTED set" above.
 
 ## Saving (agents)
 Work only inside `sets/<set>/`. Commit only that folder , no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.

@@ -1,8 +1,0 @@
-ADD pin-71 48989 lightbluishgrey
-POS pin-71 2 -9 -4 1 0 0 0 1 0 0 0 1
-ADD pin-72 48989 lightbluishgrey
-POS pin-72 -2 -9 -4 1 0 0 0 1 0 0 0 1
-CONNECT pin-67.pin1 -> pin-71.hole2 STIFF
-CONNECT pin-68.pin1 -> pin-72.hole2 STIFF
-CONNECT pin-71.pin2 -> pin-67.hole2 STIFF
-CONNECT pin-72.pin2 -> pin-68.hole2 STIFF

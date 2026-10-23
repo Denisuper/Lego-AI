@@ -1,6 +1,0 @@
-ADD axle5-3 32073 lightbluishgrey
-POS axle5-3 0 -2 -2.15 1 0 0 0 -0.063 -0.998 0 0.998 -0.063
-ATTACH substepstep14
-CONNECT axle5-3.axle3 -> beam5-3.hole5 TURNS
-CONNECT axle5-3.axle2 -> conn-2.axlehole1 LOCKED
-CONNECT axle5-3.axle4 -> conn-2.axlehole2 LOCKED

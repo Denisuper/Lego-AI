@@ -1,2 +1,0 @@
-ATTACH substepstep3
-CONNECT axle4-1.axle3 -> beam4-1.axlehole2 LOCKED

@@ -1,3 +1,0 @@
-ATTACH pickup012
-CONNECT axle7-1.axle4 -> beam15-1.hole8 TURNS
-CONNECT axle7-1.axle5 -> pin-17.hole1 TURNS

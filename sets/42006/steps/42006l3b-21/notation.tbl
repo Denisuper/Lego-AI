@@ -1,8 +1,0 @@
-ADD beam9-15 40490 yellow
-POS beam9-15 2 -5 -6 1 0 0 0 1 0 0 0 1
-ADD beam9-16 40490 yellow
-POS beam9-16 -2 -5 -6 1 0 0 0 1 0 0 0 1
-CONNECT pin-57.pin2 -> beam9-15.hole2 STIFF
-CONNECT pin-60.pin2 -> beam9-15.hole8 STIFF
-CONNECT pin-58.pin2 -> beam9-16.hole2 STIFF
-CONNECT pin-59.pin2 -> beam9-16.hole8 STIFF

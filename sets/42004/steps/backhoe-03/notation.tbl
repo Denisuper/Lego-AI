@@ -1,9 +1,0 @@
-ADD axle3-7 4519 lightbluishgrey
-POS axle3-7 0 0.5 -1 -1 0 0 0 0 1 0 1 0
-ADD beam2x4-2 32140 yellow
-POS beam2x4-2 -1 0.5 -1 0 -1 0 0 0 1 -1 0 0
-ADD pin-48 6558 blue
-POS pin-48 0 3.5 -2 1 0 0 0 -0.866 0.5 0 -0.5 -0.866
-CONNECT axle3-7.axle3 -> beam2x4-2.axlehole1 LOCKED
-CONNECT pin-48.pin1 -> beam2x4-2.hole4 STIFF
-CONNECT axle3-7.axle2 -> conn-20.axlehole1 LOCKED

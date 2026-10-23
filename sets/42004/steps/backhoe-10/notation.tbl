@@ -1,6 +1,0 @@
-ADD axle4-11 87083 darkbluishgrey
-POS axle4-11 -1.5 -3.45 -6 1 0 0 0 -0.636 0.771 0 -0.771 -0.636
-ADD beam9-3 40490 yellow
-POS beam9-3 -1 -0.35 -8.55 0 -1 0 0.636 0 -0.771 0.771 0 0.636
-CONNECT axle4-11.axle3 -> beam9-3.hole9 TURNS
-CONNECT axle4-11.axle4 -> beam11-5.hole9 TURNS

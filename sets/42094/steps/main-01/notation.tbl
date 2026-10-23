@@ -1,8 +1,0 @@
-STEP 1
-ADD conn-1 63869 black
-POS conn-1 0 -7.25 0 1 0 0 0 -1 0 0 0 -1
-ADD axle3-1 4519 lightbluishgrey
-POS axle3-1 0 -7.25 0 1 0 0 0 -1 0 0 0 -1
-ADD pin-1 87082 black
-POS pin-1 0 -7.25 1 -1 0 0 0 0 1 0 1 0
-CONNECT axle3-1.axle2 -> conn-1.axlehole1 LOCKED

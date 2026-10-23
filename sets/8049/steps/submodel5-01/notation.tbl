@@ -1,5 +1,0 @@
-ADD axle4-9 3705 black
-POS axle4-9 -2.25 0 1 0 0 1 0 1 0 -1 0 0
-ADD conn-33 59443 black
-POS conn-33 -2.25 0 3 -1 0 0 0 1 0 0 0 -1
-CONNECT axle4-9.axle1 -> conn-33.axlehole2 LOCKED

@@ -1,9 +1,0 @@
-ADD beam5-15 32316 red
-POS beam5-15 1 0 15 0 1 0 1 0 0 0 0 -1
-ADD pin-145 32556 tan
-POS pin-145 0 0 20 -1 0 0 0 1 0 0 0 -1
-CONNECT pin-140.pin3 -> beam5-15.hole4 STIFF
-CONNECT pin-141.pin3 -> beam5-15.hole5 STIFF
-CONNECT pin-143.pin3 -> beam5-15.hole1 STIFF
-CONNECT pin-144.pin3 -> beam5-15.hole2 STIFF
-CONNECT pin-145.pin2 -> beam5-14.hole1 TURNS

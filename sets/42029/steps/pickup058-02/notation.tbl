@@ -1,3 +1,0 @@
-ADD axle9-6 60485 lightbluishgrey
-POS axle9-6 1 0 -8.45 0 0 1 0 1 0 -1 0 0
-CONNECT axle9-6.axle1 -> l-7.axlehole1 LOCKED

@@ -1,3 +1,0 @@
-ATTACH pickup060s03
-CONNECT pin-248.pin2 -> slots-3.hole2 STIFF
-CONNECT pin-250.pin2 -> slots-3.hole1 STIFF

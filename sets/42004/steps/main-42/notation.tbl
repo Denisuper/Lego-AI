@@ -1,4 +1,0 @@
-STEP 42
-ADD gear12-4 32270 black
-POS gear12-4 5 -4.1 -12.85 0 0 -1 0.077 0.997 0 0.997 -0.077 0
-CONNECT axle3-10.axle3 -> gear12-4.axlehole1 LOCKED

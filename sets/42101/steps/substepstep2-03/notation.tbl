@@ -1,3 +1,0 @@
-ADD bush-2 3713 red
-POS bush-2 2 0 0 0 0 1 -1 0 0 0 -1 0
-CONNECT axle3-4.axle1 -> bush-2.axlehole1 LOCKED

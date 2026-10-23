@@ -1,8 +1,0 @@
-ADD af-1 47223a darkbluishgrey
-POS af-1 1 0 0 1 0 0 0 1 0 0 0 1
-ADD af-2 47223a darkbluishgrey
-POS af-2 -1 0 0 -1 0 0 0 -1 0 0 0 1
-CONNECT axle5-7.axle4 -> af-1.hole2 TURNS
-CONNECT axle5-8.axle4 -> af-1.hole1 TURNS
-CONNECT axle5-7.axle2 -> af-2.hole1 TURNS
-CONNECT axle5-8.axle2 -> af-2.hole2 TURNS

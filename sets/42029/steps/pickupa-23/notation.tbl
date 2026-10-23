@@ -1,5 +1,0 @@
-ATTACH pickupa023
-CONNECT pin-214.pin1 -> beam2x4-21.hole3 STIFF
-CONNECT axle9-4.axle9 -> beam2x4-21.hole4 TURNS
-CONNECT pin-228.pin3 -> beam11-7.hole3 STIFF
-CONNECT pin-229.axle1 -> beam11-7.hole4 TURNS

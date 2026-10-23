@@ -1,8 +1,0 @@
-ADD axle5-8 32073 lightbluishgrey
-POS axle5-8 0 0 0 0 0 1 0 1 0 -1 0 0
-ADD axle2-3 32062 red
-POS axle2-3 0 0 3.5 0 0 1 0 1 0 -1 0 0
-ADD conn-27 59443 black
-POS conn-27 0 0 2.5 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-8.axle1 -> conn-27.axlehole2 LOCKED
-CONNECT axle2-3.axle2 -> conn-27.axlehole1 LOCKED

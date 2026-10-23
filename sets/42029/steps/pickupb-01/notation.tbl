@@ -1,8 +1,0 @@
-ADD beam3x5-8 32526 lightbluishgrey
-POS beam3x5-8 0 0 0 0 -1 0 -1 0 0 0 0 -1
-ADD pin-143 6558 blue
-POS pin-143 -1 0 -1 -1 0 0 0 1 0 0 0 -1
-ADD pin-144 6558 blue
-POS pin-144 -1 0 -3 -1 0 0 0 1 0 0 0 -1
-CONNECT pin-143.pin1 -> beam3x5-8.hole2 STIFF
-CONNECT pin-144.pin1 -> beam3x5-8.hole4 STIFF

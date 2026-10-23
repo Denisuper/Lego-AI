@@ -1,6 +1,0 @@
-ADD stud-4 6141 transclear
-POS stud-4 -4 -1 -1.5 -1 0 0 0 0 -1 0 -1 0
-ADD stud-5 6141 transclear
-POS stud-5 4 -1 -1.5 -1 0 0 0 0 -1 0 -1 0
-CONNECT stud-4.pin1 -> beam2-14.hole1 STIFF
-CONNECT stud-5.pin1 -> beam2-15.hole1 STIFF

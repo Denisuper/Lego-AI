@@ -1,8 +1,0 @@
-ADD axle3-24 6587 darktan
-POS axle3-24 -0.5 4 -23 -1 0 0 0 0.924 -0.383 0 -0.383 -0.924
-ADD gear8-2 10928 darkbluishgrey
-POS gear8-2 -1.1 4 -23 0 0 1 -0.383 0.924 0 -0.924 -0.383 0
-CONNECT axle3-24.axle3 -> gear8-2.axlehole1 LOCKED
-CONNECT axle3-24.axle3 -> beam-4.hole4 TURNS
-MESH gear24-1.teeth gear8-2.teeth
-RATIO gear24-1 gear8-2 24/8

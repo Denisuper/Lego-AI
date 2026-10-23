@@ -1,7 +1,0 @@
-ADD panel-4 64680 red
-POS panel-4 0 0 0 -1 0 0 0 -1 0 0 0 1
-ADD pin-274 2780 black
-POS pin-274 0 0 -0.5 0 0 1 0 -1 0 1 0 0
-ADD pin-275 2780 black
-POS pin-275 -1 0 -0.5 0 0 1 0 -1 0 1 0 0
-CONNECT pin-274.pin2 -> panel-4.hole6 STIFF

@@ -1,6 +1,0 @@
-ADD conn-24 32013 white
-POS conn-24 4 0 0 1 0 0 0 0.189 -0.982 0 0.982 0.189
-ADD bush-12 32123b lightbluishgrey
-POS bush-12 4.75 0 0 0 0 1 -0.066 0.998 0 -0.998 -0.066 0
-CONNECT axle12-1.axle10 -> conn-24.hole1 TURNS
-CONNECT axle12-1.axle11 -> bush-12.axlehole1 LOCKED

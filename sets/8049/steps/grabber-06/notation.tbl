@@ -1,6 +1,0 @@
-ADD axle6-3 3706 black
-POS axle6-3 0.5 -1 0 0 -0.866 -0.5 0 0.5 -0.866 1 0 0
-ADD gear8-2 10928 darkbluishgrey
-POS gear8-2 0.5 -1 0 1 0 0 0 -1 0 0 0 -1
-CONNECT axle6-3.axle3 -> gear8-2.axlehole1 LOCKED
-CONNECT axle6-3.axle4 -> beam-1.hole1 TURNS

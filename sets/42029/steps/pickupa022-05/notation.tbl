@@ -1,5 +1,0 @@
-ADD beam3x5-15 32526 lightbluishgrey
-POS beam3x5-15 1 0 -4 0 1 0 -1 0 0 0 0 1
-CONNECT axle9-4.axle6 -> beam3x5-15.hole5 TURNS
-CONNECT pin-218.pin3 -> beam3x5-15.hole4 STIFF
-CONNECT pin-219.pin3 -> beam3x5-15.hole1 TURNS

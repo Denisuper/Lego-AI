@@ -1,6 +1,0 @@
-ADD beam4-1 32449 darkbluishgrey
-POS beam4-1 -4 0 0 0 -1 0 1 0 0 0 0 1
-ADD beam4-2 32449 darkbluishgrey
-POS beam4-2 -4.5 0 0 0 -1 0 1 0 0 0 0 1
-CONNECT axle3-11.axle2 -> beam4-1.axlehole2 LOCKED
-CONNECT axle3-11.axle2 -> beam4-2.axlehole2 LOCKED

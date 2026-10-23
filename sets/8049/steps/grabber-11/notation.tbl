@@ -1,8 +1,0 @@
-ADD gear16-1 94925 lightbluishgrey
-POS gear16-1 0.5 -1 -1.5 0.866 -0.5 0 -0.5 -0.866 0 0 0 -1
-ADD gear16-2 94925 lightbluishgrey
-POS gear16-2 -1.5 -1 -1.5 0.866 0.5 0 0.5 -0.866 0 0 0 -1
-CONNECT axle6-3.axle2 -> gear16-1.axlehole1 LOCKED
-CONNECT axle6-4.axle2 -> gear16-2.axlehole1 LOCKED
-MESH gear16-2.teeth gear16-1.teeth
-RATIO gear16-2 gear16-1 16/16

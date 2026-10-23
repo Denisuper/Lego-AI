@@ -1,7 +1,0 @@
-STEP 3
-ADD beam-C 32524 lightgray
-CONNECT pin-blue-A.pin1 -> beam-C.hole1 STIFF
-CONNECT peg-black-B.pin1 -> beam-C.hole7 STIFF
-DOES beam-C HOLDS pin-blue-A
-DOES beam-C HOLDS peg-black-B
-PATTERN close_the_u

@@ -1,5 +1,0 @@
-ADD conn-1 32013 red
-POS conn-1 0 0 -2.5 1 0 0 0 1 0 0 0 1
-ADD pin-13 11214 darkbluishgrey
-POS pin-13 0 0 -4.5 0 0 -1 0 1 0 1 0 0
-CONNECT axle4-2.axle3 -> conn-1.hole1 TURNS

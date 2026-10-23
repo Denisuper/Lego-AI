@@ -1,6 +1,0 @@
-ADD pin-14 62462 black
-POS pin-14 0 -2 0 0 0 -1 -1 0 0 0 1 0
-ADD conn-6 59443 black
-POS conn-6 0 -4 0 1 0 0 0 0 -1 0 1 0
-CONNECT axle8-1.axle2 -> pin-14.hole1 TURNS
-CONNECT axle8-1.axle1 -> conn-6.axlehole1 LOCKED

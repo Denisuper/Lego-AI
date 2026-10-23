@@ -1,8 +1,0 @@
-ADD pin-91 32054 red
-POS pin-91 7 -10 1 0 0 1 0 1 0 -1 0 0
-ADD pin-92 32054 red
-POS pin-92 -7 -10 1 0 0 1 0 1 0 -1 0 0
-CONNECT pin-91.pin2 -> beam11-1.hole2 STIFF
-CONNECT pin-92.pin2 -> beam11-2.hole2 STIFF
-CONNECT pin-91.pin1 -> pin-89.hole2 STIFF
-CONNECT pin-92.pin1 -> pin-90.hole2 STIFF

@@ -1,8 +1,0 @@
-ADD pin-316 55615 lightbluishgrey
-POS pin-316 3 -4 10 -1 0 0 0 0 1 0 1 0
-ADD beam7-12 32524 darkbluishgrey
-POS beam7-12 3 -2 11 -1 0 0 0 0 1 0 1 0
-CONNECT pin-314.axle1 -> pin-316.hole3 TURNS
-CONNECT pin-315.pin3 -> pin-316.hole1 STIFF
-CONNECT pin-316.pin3 -> beam7-12.hole2 STIFF
-CONNECT pin-316.pin4 -> beam7-12.hole4 STIFF

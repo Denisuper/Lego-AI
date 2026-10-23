@@ -1,5 +1,0 @@
-ADD gear12-5 6589 tan
-POS gear12-5 0 -0.85 3 0.259 0.966 0 0 0 1 0.966 -0.259 0
-ADD axle5-10 15462 darktan
-POS axle5-10 0 -1 3 0 0.966 -0.259 1 0 0 0 -0.259 -0.966
-CONNECT axle5-10.axle3 -> gear12-5.axlehole1 LOCKED

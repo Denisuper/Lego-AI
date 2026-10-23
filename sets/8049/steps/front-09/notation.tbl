@@ -1,7 +1,0 @@
-ADD beam3-7 32523 darkbluishgrey
-POS beam3-7 0 -7.45 7.65 0 0 1 -0.5 0.866 0 -0.866 -0.5 0
-ADD pin-52 43093 blue
-POS pin-52 0 -7.9 7.9 0 0 1 -0.866 -0.5 0 0.5 -0.866 0
-CONNECT pin-52.axle1 -> beam3-7.hole2 TURNS
-CONNECT pin-50.axle1 -> beam3-7.hole3 TURNS
-CONNECT pin-51.axle1 -> beam3-7.hole1 TURNS

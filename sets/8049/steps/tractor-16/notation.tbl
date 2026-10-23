@@ -1,7 +1,0 @@
-ADD axle8-1 3707 black
-POS axle8-1 -4 1.65 4 0 -0.707 -0.707 1 0 0 0 -0.707 0.707
-ADD bush-7 32123b lightbluishgrey
-POS bush-7 -4 -0.6 4 0.707 0.707 0 0 0 1 0.707 -0.707 0
-CONNECT axle8-1.axle2 -> bush-7.axlehole1 LOCKED
-CONNECT axle8-1.axle8 -> conn-7.axlehole1 LOCKED
-CONNECT axle8-1.axle3 -> conn-8.hole1 TURNS

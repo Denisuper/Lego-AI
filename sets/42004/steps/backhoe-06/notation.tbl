@@ -1,9 +1,0 @@
-ADD beam11-5 32525 yellow
-POS beam11-5 0 -0.85 -4.5 0 -1 0 -0.5 0 -0.866 0.866 0 -0.5
-ADD beam2x4-3 32140 yellow
-POS beam2x4-3 1 0.5 -1 0 -1 0 0 0 1 -1 0 0
-CONNECT pin-48.pin2 -> beam11-5.hole1 STIFF
-CONNECT axle3-7.axle1 -> beam2x4-3.axlehole1 LOCKED
-CONNECT pin-48.pin3 -> beam2x4-3.hole4 STIFF
-CONNECT axle3-8.axle1 -> beam2x4-3.hole3 TURNS
-CONNECT axle4-9.axle1 -> beam2x4-3.hole1 TURNS

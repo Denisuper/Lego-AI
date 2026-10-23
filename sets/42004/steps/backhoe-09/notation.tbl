@@ -1,8 +1,0 @@
-ADD beam3-8 32523 lightbluishgrey
-POS beam3-8 1 0 -3.1 0 1 0 -0.382 0 -0.924 -0.924 0 0.382
-ADD beam4-6 32449 yellow
-POS beam4-6 1.75 0.3 -1.85 0 -1 0 -0.579 0 -0.816 0.816 0 -0.579
-CONNECT axle4-10.axle1 -> beam3-8.hole3 TURNS
-CONNECT pin-49.pin3 -> beam3-8.hole1 TURNS
-CONNECT axle4-9.axle1 -> beam4-6.axlehole1 LOCKED
-CONNECT axle4-10.axle1 -> beam4-6.axlehole2 LOCKED

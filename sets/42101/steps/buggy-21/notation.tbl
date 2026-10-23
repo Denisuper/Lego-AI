@@ -1,3 +1,0 @@
-ATTACH substepstep21
-CONNECT pin-18.axle1 -> beam5-4.hole5 TURNS
-CONNECT pin-20.axle1 -> beam5-4.hole1 TURNS

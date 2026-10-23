@@ -1,5 +1,0 @@
-ADD opening-1 6641 red
-POS opening-1 0 -3 -3.5 -1 0 0 0 0 -1 0 -1 0
-ADD towball-1 2736 lightbluishgrey
-POS towball-1 0 -3.35 -3.5 0 0 -1 1 0 0 0 -1 0
-CONNECT towball-1.axle1 -> opening-1.axlehole2 LOCKED

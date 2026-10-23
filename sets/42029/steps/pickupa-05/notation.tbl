@@ -1,6 +1,0 @@
-ATTACH pickupa005
-ATTACH pickupa005
-CONNECT pin-173.pin1 -> beam5x11-2.hole12 STIFF
-CONNECT pin-174.pin1 -> beam5x11-2.hole16 STIFF
-CONNECT pin-173.pin1 -> beam5x11-2.hole17 STIFF
-CONNECT pin-174.pin1 -> beam5x11-2.hole13 STIFF

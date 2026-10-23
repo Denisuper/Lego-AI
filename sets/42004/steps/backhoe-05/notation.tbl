@@ -1,6 +1,0 @@
-ADD axle4-9 3705 black
-POS axle4-9 0 1.5 -1 -1 0 0 0 0.816 0.579 0 0.579 -0.816
-ADD gear8-2 10928 darkbluishgrey
-POS gear8-2 0 1.5 -1 0 0 1 -0.816 0.579 0 -0.579 -0.816 0
-CONNECT axle4-9.axle2 -> gear8-2.axlehole1 LOCKED
-CONNECT axle4-9.axle3 -> beam2x4-2.hole1 TURNS

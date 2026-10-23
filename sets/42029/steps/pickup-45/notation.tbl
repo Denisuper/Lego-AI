@@ -1,8 +1,0 @@
-ADD beam9-3 6629 red
-POS beam9-3 7 -7 -8 0 -1 0 0.6 0 -0.8 0.8 0 0.6
-ADD beam9-4 6629 red
-POS beam9-4 -7 -7 -8 0 -1 0 0.6 0 -0.8 0.8 0 0.6
-CONNECT pin-82.pin3 -> beam9-3.hole5 STIFF
-CONNECT pin-87.pin1 -> beam9-3.hole7 STIFF
-CONNECT pin-81.pin3 -> beam9-4.hole5 STIFF
-CONNECT pin-88.pin2 -> beam9-4.hole7 STIFF

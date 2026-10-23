@@ -1,7 +1,0 @@
-STEP 8
-ATTACH chassis2
-CONNECT pin-13.pin1 -> beam5x11-2.hole5 STIFF
-CONNECT pin-14.pin1 -> beam5x11-2.hole9 STIFF
-CONNECT pin-15.pin1 -> beam5x11-2.hole24 STIFF
-CONNECT pin-16.pin1 -> beam5x11-2.hole20 STIFF
-CONNECT axle8-1.axle1 -> conn-4.axlehole1 LOCKED

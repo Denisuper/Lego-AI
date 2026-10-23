@@ -1,6 +1,0 @@
-ADD conn-55 6536 darkbluishgrey
-POS conn-55 1.5 -1 0 0 0 1 0 1 0 -1 0 0
-ADD worm-1 4716 lightbluishgrey
-POS worm-1 0 0 0 0 0 1 0 1 0 -1 0 0
-CONNECT axle6-2.axle5 -> conn-55.hole1 TURNS
-CONNECT axle6-2.axle3 -> worm-1.axlehole1 LOCKED

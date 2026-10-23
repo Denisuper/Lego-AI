@@ -1,7 +1,0 @@
-ADD beam2-13 41677 black
-POS beam2-13 1.25 0 5 0 -1 0 -1 0 0 0 0 -1
-ADD beam2-14 41677 black
-POS beam2-14 0.75 0 4 0 -1 0 0 0 1 -1 0 0
-CONNECT axle3-21.axle3 -> beam2-13.axlehole1 LOCKED
-CONNECT axle3-22.axle3 -> beam2-13.axlehole2 LOCKED
-CONNECT axle3-22.axle3 -> beam2-14.axlehole1 LOCKED

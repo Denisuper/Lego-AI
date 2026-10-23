@@ -1,4 +1,0 @@
-ADD conn-55 42003 red
-POS conn-55 0 0 -1 0 1 0 1 0 0 0 0 -1
-CONNECT pin-271.pin1 -> conn-55.hole1 STIFF
-CONNECT pin-272.pin1 -> conn-55.hole2 STIFF

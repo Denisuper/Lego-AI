@@ -1,7 +1,0 @@
-ADD beam3-23 32523 red
-POS beam3-23 -3 -1 0 0 0 -1 0 -1 0 -1 0 0
-ADD pin-393 6558 blue
-POS pin-393 -4 -2 0 0 0 -1 -1 0 0 0 1 0
-CONNECT pin-393.pin1 -> beam3-23.hole3 STIFF
-CONNECT pin-391.pin2 -> beam3-23.hole1 STIFF
-CONNECT pin-392.pin2 -> beam3-23.hole2 STIFF

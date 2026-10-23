@@ -1,4 +1,0 @@
-ADD beam2x4-3 32140 black
-POS beam2x4-3 4 3 -1 1 0 0 0 0 -1 0 1 0
-CONNECT pin-5.pin1 -> beam2x4-3.hole4 STIFF
-CONNECT pin-6.pin1 -> beam2x4-3.hole3 STIFF

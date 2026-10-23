@@ -1,9 +1,0 @@
-ADD pin-90 2780 black
-POS pin-90 1.5 0 -8 1 0 0 0 1 0 0 0 1
-ADD conn-38 32291 darkbluishgrey
-POS conn-38 2 -1 -11.5 0 0 1 0 1 0 -1 0 0
-ADD pin-91 43093 blue
-POS pin-91 2 -1 -11 0 0 -1 0 -1 0 -1 0 0
-CONNECT pin-88.pin2 -> conn-38.hole2 STIFF
-CONNECT pin-89.pin2 -> conn-38.hole1 STIFF
-CONNECT pin-90.pin2 -> beam5-6.hole3 STIFF

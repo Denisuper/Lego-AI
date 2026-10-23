@@ -1,4 +1,0 @@
-ATTACH pickup032
-ATTACH pickup032
-CONNECT pin-53.pin1 -> beam3x3-5.hole5 STIFF
-CONNECT pin-52.pin2 -> beam3x3-5.hole5 STIFF

@@ -1,4 +1,0 @@
-ADD chamfere-4 57515 darkbluishgrey
-POS chamfere-4 -2 0 -1.25 0 0 -1 0 1 0 1 0 0
-CONNECT axle3-18.axle1 -> chamfere-4.axlehole1 LOCKED
-CONNECT axle3-18.axle3 -> chamfere-4.axlehole2 LOCKED

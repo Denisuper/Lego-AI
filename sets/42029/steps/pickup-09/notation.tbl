@@ -1,7 +1,0 @@
-ADD axle3-2 4519 lightbluishgrey
-POS axle3-2 4 3 -6 0 -1 0 0 0 -1 1 0 0
-ADD axle3-3 4519 lightbluishgrey
-POS axle3-3 -4 3 -6 0 -1 0 0 0 -1 1 0 0
-CONNECT axle3-2.axle3 -> conn-4.axlehole2 LOCKED
-CONNECT axle3-3.axle3 -> conn-4.axlehole2 LOCKED
-CONNECT axle3-3.axle2 -> beam2x4-5.axlehole1 LOCKED

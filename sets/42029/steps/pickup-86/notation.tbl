@@ -1,5 +1,0 @@
-ATTACH pickup101
-CONNECT pin-61.pin3 -> panel-19.hole4 STIFF
-CONNECT pin-69.pin1 -> panel-19.hole13 STIFF
-CONNECT pin-70.pin3 -> panel-19.hole8 STIFF
-CONNECT pin-421.pin2 -> beam13-12.hole3 STIFF

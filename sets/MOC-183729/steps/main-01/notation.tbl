@@ -1,9 +1,0 @@
-STEP 1
-ADD bracket-L 6536 lightgray
-ADD pin-blue-A 43093 blue
-ADD pin-red-A 11214 red
-CONNECT pin-blue-A.axle1 -> bracket-L.axlehole1 LOCKED
-CONNECT pin-red-A.pin1 -> bracket-L.hole1~ STIFF
-DOES bracket-L HOLDS pin-blue-A
-DOES bracket-L HOLDS pin-red-A
-PATTERN peg_in_elbow_bracket

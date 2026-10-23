@@ -1,2 +1,0 @@
-ATTACH pickupb
-CONNECT axle2-3.axle1 -> conn-22.axlehole1 LOCKED

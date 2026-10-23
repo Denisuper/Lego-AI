@@ -1,9 +1,0 @@
-ADD bush-11 32123b lightbluishgrey
-POS bush-11 2.25 0 0 0 0 1 -0.066 0.998 0 -0.998 -0.066 0
-ADD pin-58 62462 white
-POS pin-58 -1 0 0 1 0 0 0 -0.982 -0.189 0 0.189 -0.982
-ADD pin-59 62462 white
-POS pin-59 1 0 0 1 0 0 0 -0.982 -0.189 0 0.189 -0.982
-CONNECT axle12-1.axle9 -> bush-11.axlehole1 LOCKED
-CONNECT axle12-1.axle5 -> pin-58.hole1 TURNS
-CONNECT axle12-1.axle7 -> pin-59.hole1 TURNS

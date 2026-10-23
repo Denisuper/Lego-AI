@@ -1,3 +1,0 @@
-ATTACH pickup088bar
-CONNECT pin-324.pin2 -> pin-326.hole1 STIFF
-CONNECT pin-325.axle1 -> conn-69.hole1 TURNS

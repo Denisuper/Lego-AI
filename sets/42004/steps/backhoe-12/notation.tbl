@@ -1,6 +1,0 @@
-ADD gear12-3 32270 black
-POS gear12-3 -3 -3.45 -6 0 0 -1 0.636 0.771 0 0.771 -0.636 0
-ADD pin-50 32054 black
-POS pin-50 0 -5.15 -7 1 0 0 0 -0.255 -0.967 0 0.967 -0.255
-CONNECT axle4-11.axle1 -> gear12-3.axlehole1 LOCKED
-CONNECT pin-50.pin1 -> beam11-5.hole11 STIFF

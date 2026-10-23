@@ -1,5 +1,0 @@
-ADD axle5-18 32073 lightbluishgrey
-POS axle5-18 0 0 0 1 0 0 0 1 0 0 0 1
-ADD pin-306 32054 red
-POS pin-306 3 0 0 1 0 0 0 1 0 0 0 1
-CONNECT axle5-18.axle5 -> pin-306.axlehole1 LOCKED

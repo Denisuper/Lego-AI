@@ -1,5 +1,0 @@
-ADD axle9-7 60485 lightbluishgrey
-POS axle9-7 0 0 0 0 0 1 0 1 0 -1 0 0
-ADD beam2-13 60483 darkbluishgrey
-POS beam2-13 0 0 -4 1 0 0 0 0 1 0 -1 0
-CONNECT axle9-7.axle9 -> beam2-13.axlehole1 LOCKED

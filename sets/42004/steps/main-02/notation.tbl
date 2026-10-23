@@ -1,4 +1,0 @@
-STEP 2
-ADD pin-3 87082 lightbluishgrey
-POS pin-3 1 0 -1 1 0 0 0 1 0 0 0 1
-CONNECT pin-3.pin1 -> beam11-1.hole5 STIFF

@@ -1,8 +1,0 @@
-ADD beam6-3 32063 lightbluishgrey
-POS beam6-3 2.45 1.55 -2.75 -0.222 0 -0.975 0.975 0 -0.222 0 -1 0
-ADD beam6-4 32063 lightbluishgrey
-POS beam6-4 2.45 1.55 -3.25 -0.222 0 -0.975 0.975 0 -0.222 0 -1 0
-CONNECT axle5-11.axle2 -> beam6-3.hole6 TURNS
-CONNECT pin-175.pin3 -> beam6-3.hole1 TURNS
-CONNECT axle5-11.axle2 -> beam6-4.hole6 TURNS
-CONNECT pin-175.pin3 -> beam6-4.hole1 TURNS

@@ -1,8 +1,0 @@
-ATTACH pickupc020
-ATTACH pickupc020
-CONNECT pin-136.pin3 -> beam11-6.hole1 STIFF
-CONNECT axle9-3.axle2 -> beam11-6.hole10 TURNS
-CONNECT axle9-3.axle3 -> beam3x3-12.hole2 TURNS
-CONNECT pin-137.pin3 -> beam11-6.hole1 STIFF
-CONNECT axle9-3.axle8 -> beam11-6.hole10 TURNS
-CONNECT axle9-3.axle7 -> beam3x3-12.hole2 TURNS

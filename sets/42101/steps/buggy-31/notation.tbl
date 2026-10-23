@@ -1,6 +1,0 @@
-ATTACH substepstep34
-ATTACH substepstep34
-CONNECT axle5-3.axle4 -> conn-15.hole1 TURNS
-CONNECT axle5-2.axle4 -> conn-16.axlehole1 LOCKED
-CONNECT axle5-3.axle1 -> conn-15.hole1 TURNS
-CONNECT axle5-2.axle1 -> conn-16.axlehole1 LOCKED

@@ -1,3 +1,0 @@
-ADD pin-287 32002 tan
-POS pin-287 0.75 0 -2 -1 0 0 0 -1 0 0 0 1
-CONNECT pin-287.pin1 -> chamfere-1.hole1 STIFF

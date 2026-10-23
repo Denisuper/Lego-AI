@@ -1,3 +1,0 @@
-ATTACH substepstep16
-CONNECT pin-16.pin2 -> conn-1.hole1 STIFF
-CONNECT pin-15.pin2 -> conn-3.hole2 STIFF

@@ -1,6 +1,0 @@
-ADD beam7-6 32065 yellow
-POS beam7-6 1.25 0 2 0 -1 0 1 0 0 0 0 1
-CONNECT pin-60.pin2 -> beam7-6.hole6 STIFF
-CONNECT pin-61.pin2 -> beam7-6.hole5 STIFF
-CONNECT pin-62.pin2 -> beam7-6.hole2 STIFF
-CONNECT pin-63.pin1 -> beam7-6.hole4 STIFF

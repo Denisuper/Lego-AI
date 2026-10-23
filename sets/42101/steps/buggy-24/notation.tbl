@@ -1,8 +1,0 @@
-ADD bush-5 3713 red
-POS bush-5 4 2.55 8.1 0 0 1 0 1 0 -1 0 0
-ADD wheel-4 55982 white
-POS wheel-4 3.5 2.55 8.1 0 0 -1 -1 0 0 0 1 0
-ADD tyre-4 92402 rubberblack
-POS tyre-4 3.5 2.55 8.1 0 0 -1 -1 0 0 0 1 0
-CONNECT axle9-1.axle9 -> bush-5.axlehole1 LOCKED
-CONNECT axle9-1.axle8 -> wheel-4.axlehole1 LOCKED

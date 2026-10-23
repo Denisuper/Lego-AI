@@ -1,8 +1,0 @@
-ADD pin-247 32333 lightbluishgrey
-POS pin-247 0 0 0 1 0 0 0 1 0 0 0 1
-ADD pin-248 32054 red
-POS pin-248 2.2 2.1 0 0 0 -1 0 1 0 1 0 0
-ADD pin-249 2780 black
-POS pin-249 0 0.5 -0.5 0 0 -1 0 1 0 1 0 0
-CONNECT pin-248.pin1 -> pin-247.hole12 STIFF
-CONNECT pin-249.pin2 -> pin-247.hole6 STIFF

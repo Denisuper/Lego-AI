@@ -1,6 +1,0 @@
-ADD bush-1 32123b yellow
-POS bush-1 0 -0.25 0 -1 0 0 0 0 1 0 1 0
-ADD bush-2 32123b yellow
-POS bush-2 0 -0.75 0 -1 0 0 0 0 1 0 1 0
-CONNECT axle8-1.axle4 -> bush-1.axlehole1 LOCKED
-CONNECT axle8-1.axle4 -> bush-2.axlehole1 LOCKED

@@ -1,9 +1,0 @@
-ADD gear16-5 6542b darkbluishgrey
-POS gear16-5 -0.95 -8 5 1 0 0 0 1 0 0 0 1
-ADD conn-14 6538b tan
-POS conn-14 -0.95 -8 6.5 1 0 0 0 1 0 0 0 1
-ADD axle4-10 3705 black
-POS axle4-10 -0.95 -8 8.5 0 0 -1 0 1 0 1 0 0
-CONNECT axle5-3.axle4 -> gear16-5.hole1 TURNS
-CONNECT axle4-10.axle1 -> conn-14.axlehole2 LOCKED
-CONNECT axle5-3.axle5 -> conn-14.axlehole1 LOCKED

@@ -1,6 +1,0 @@
-ADD bush-5 3713 red
-POS bush-5 0 0 0 0 0 1 0 1 0 -1 0 0
-ADD beam3-5 6632 yellow
-POS beam3-5 -0.75 -2 0 0 -1 0 0 0 1 -1 0 0
-CONNECT axle3-4.axle2 -> bush-5.axlehole1 LOCKED
-CONNECT axle3-4.axle1 -> beam3-5.axlehole2 LOCKED

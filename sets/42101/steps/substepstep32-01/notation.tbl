@@ -1,8 +1,0 @@
-ADD conn-13 42003 black
-POS conn-13 0 0 0 -1 0 0 0 0 1 0 1 0
-ADD pin-24 2780 black
-POS pin-24 0 -0.5 0 0 1 0 -1 0 0 0 0 1
-ADD pin-25 2780 black
-POS pin-25 0 -0.5 1 0 1 0 -1 0 0 0 0 1
-CONNECT pin-24.pin1 -> conn-13.hole1 STIFF
-CONNECT pin-25.pin1 -> conn-13.hole2 STIFF

@@ -1,4 +1,0 @@
-ADD beam5-4 32316 orange
-POS beam5-4 0 -1 -3 0 0 -1 0 1 0 1 0 0
-CONNECT pin-21.pin2 -> beam5-4.hole3 STIFF
-CONNECT pin-22.pin2 -> beam5-4.hole4 STIFF

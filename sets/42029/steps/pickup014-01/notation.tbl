@@ -1,7 +1,0 @@
-ADD axle6-1 3706 black
-POS axle6-1 0 0 0 0 0 1 0 1 0 -1 0 0
-ADD conn-6 59443 black
-POS conn-6 0 0 3 -1 0 0 0 1 0 0 0 -1
-ADD pin-18 3749 tan
-POS pin-18 0 0 4 0 0 1 0 1 0 -1 0 0
-CONNECT axle6-1.axle1 -> conn-6.axlehole2 LOCKED

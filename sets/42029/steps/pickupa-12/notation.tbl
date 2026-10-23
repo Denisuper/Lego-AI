@@ -1,4 +1,0 @@
-ATTACH pickupa012
-ATTACH pickupa012
-CONNECT axle7-2.axle4 -> beam2-9.hole1 TURNS
-CONNECT axle7-3.axle4 -> beam2-9.hole1 TURNS

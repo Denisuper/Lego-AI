@@ -1,3 +1,0 @@
-ADD conn-10 6536 black
-POS conn-10 0.75 0 0 -1 0 0 0 0 1 0 1 0
-CONNECT axle2-5.axle1 -> conn-10.axlehole1 LOCKED

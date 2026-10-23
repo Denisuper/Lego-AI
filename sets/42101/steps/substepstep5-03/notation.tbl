@@ -1,3 +1,0 @@
-ADD pin-1 11214 red
-POS pin-1 0 1 1 1 0 0 0 0 -1 0 1 0
-CONNECT pin-1.pin1 -> beam2-1.hole1 STIFF

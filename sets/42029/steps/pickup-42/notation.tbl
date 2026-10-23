@@ -1,3 +1,0 @@
-ATTACH pickup045
-CONNECT pin-73.pin3 -> pin-89.hole3 STIFF
-CONNECT pin-74.pin3 -> pin-90.hole1 STIFF

@@ -1,4 +1,0 @@
-ADD steeringwheel-1 16091 lightbluishgrey
-POS steeringwheel-1 0 -2.1 -0.25 1 0 0 0 0.063 0.998 0 -0.998 0.063
-CONNECT pin-3.pin2 -> steeringwheel-1.hole1 TURNS
-CONNECT pin-3.pin2 -> steeringwheel-1.hole2 TURNS

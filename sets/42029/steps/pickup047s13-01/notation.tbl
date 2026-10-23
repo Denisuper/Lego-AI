@@ -1,5 +1,0 @@
-ADD axle2-2 32062 red
-POS axle2-2 0 0 0 0 0 1 0 1 0 -1 0 0
-ADD diameter-1 2819 black
-POS diameter-1 0 0 1.2 -1 0 0 0 0 -1 0 -1 0
-CONNECT axle2-2.axle1 -> diameter-1.axlehole1 LOCKED

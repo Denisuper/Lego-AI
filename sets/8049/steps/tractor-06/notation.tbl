@@ -1,8 +1,0 @@
-ADD pins-1 32069 black
-POS pins-1 -2.5 11.15 -10.5 0 -1 0 1 0 0 0 0 1
-ADD pins-2 32069 black
-POS pins-2 -5.5 11.15 -10.5 0 1 0 -1 0 0 0 0 1
-CONNECT pins-2.pin1 -> beam9-1.hole2 STIFF
-CONNECT pins-2.pin2 -> beam9-1.hole3 STIFF
-CONNECT pins-1.pin1 -> beam9-2.hole2 STIFF
-CONNECT pins-1.pin2 -> beam9-2.hole3 STIFF

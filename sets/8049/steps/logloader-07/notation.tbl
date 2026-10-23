@@ -1,6 +1,0 @@
-ADD pin-73 2780 black
-POS pin-73 -0.5 -12.4 -11.5 1 0 0 0 0.259 -0.966 0 0.966 0.259
-ADD pin-74 2780 black
-POS pin-74 0.5 -12.4 1.5 1 0 0 0 1 0 0 0 1
-CONNECT pin-74.pin2 -> beam5-5.hole3 STIFF
-CONNECT pin-73.pin2 -> beam15-1.hole3 STIFF

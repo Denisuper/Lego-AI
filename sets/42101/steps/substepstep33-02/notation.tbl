@@ -1,4 +1,0 @@
-ADD panel-4 11947 orange
-POS panel-4 0 0 -6 1 0 0 0 1 0 0 0 1
-CONNECT pin-26.pin2 -> panel-4.hole2 STIFF
-CONNECT pin-27.pin2 -> panel-4.hole1 STIFF

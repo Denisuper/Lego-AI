@@ -1,3 +1,0 @@
-ADD conn-46 32184 lightbluishgrey
-POS conn-46 0 -3 12 -1 0 0 0 0 1 0 1 0
-CONNECT axle5-10.axle2 -> conn-46.hole1 TURNS

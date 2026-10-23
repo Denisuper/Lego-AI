@@ -1,3 +1,0 @@
-ADD gear12-3 32270 black
-POS gear12-3 0 0 -1 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-8.axle4 -> gear12-3.axlehole1 LOCKED

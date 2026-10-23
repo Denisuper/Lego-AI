@@ -1,9 +1,0 @@
-ADD beam2x4-15 32140 red
-POS beam2x4-15 0 -4 -1 0 1 0 1 0 0 0 0 -1
-ADD pin-154 11214 darkbluishgrey
-POS pin-154 1 -4 -1 -1 0 0 0 1 0 0 0 -1
-ADD pin-155 6558 blue
-POS pin-155 1 -4 -3 1 0 0 0 1 0 0 0 1
-CONNECT pin-155.pin1 -> beam2x4-15.hole2 STIFF
-CONNECT pin-154.pin1 -> beam3x5-11.hole7 STIFF
-CONNECT pin-155.pin2 -> beam3x5-11.hole9 STIFF

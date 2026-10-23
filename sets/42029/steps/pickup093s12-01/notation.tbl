@@ -1,6 +1,0 @@
-ADD conn-72 41678 darkbluishgrey
-POS conn-72 0 0 0 -1 0 0 0 1 0 0 0 -1
-ADD axle2-8 32062 red
-POS axle2-8 0 0 0 -1 0 0 0 1 0 0 0 -1
-CONNECT axle2-8.axle1 -> conn-72.axlehole1 LOCKED
-CONNECT axle2-8.axle2 -> conn-72.axlehole2 LOCKED

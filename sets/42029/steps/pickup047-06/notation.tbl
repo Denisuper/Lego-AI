@@ -1,9 +1,0 @@
-ADD beam13-3 41239 red
-POS beam13-3 -3 -0.6 3.05 0 1 0 -0.995 0 0.099 0.099 0 0.995
-ADD pin-100 11214 darkbluishgrey
-POS pin-100 -3 0 9 -1 0 0 0 1 0 0 0 -1
-CONNECT pin-100.pin1 -> beam13-3.hole13 STIFF
-CONNECT pin-96.pin1 -> beam13-3.hole1 STIFF
-CONNECT pin-96.pin2 -> beam13-3.hole2 STIFF
-CONNECT pin-99.pin2 -> beam13-3.hole12 STIFF
-CONNECT pin-100.axle1 -> beam2-1.hole1 TURNS

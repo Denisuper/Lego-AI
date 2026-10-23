@@ -1,6 +1,0 @@
-ADD beam2-9 60483 darkbluishgrey
-POS beam2-9 0 0 -1 1 0 0 0 0 1 0 -1 0
-ADD pin-188 87082 lightbluishgrey
-POS pin-188 1 -3 -1 0 -1 0 0 0 1 -1 0 0
-CONNECT axle3-10.axle2 -> beam2-9.axlehole1 LOCKED
-CONNECT pin-188.pin1 -> beam2x4-16.hole4 STIFF

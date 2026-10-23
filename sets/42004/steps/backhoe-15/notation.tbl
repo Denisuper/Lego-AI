@@ -1,8 +1,0 @@
-ADD pin-53 2780 black
-POS pin-53 0 4 1 0 -1 0 -1 0 0 0 0 -1
-ADD pin-54 43093 blue
-POS pin-54 0 0 1 0 -1 0 -1 0 0 0 0 -1
-ADD conn-23 63869 lightbluishgrey
-POS conn-23 0 -0.5 1 0 0 -1 -1 0 0 0 1 0
-CONNECT pin-53.pin2 -> conn-19.hole2 STIFF
-CONNECT pin-54.axle1 -> conn-20.hole2 TURNS

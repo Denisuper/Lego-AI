@@ -1,6 +1,0 @@
-ADD pin-251 32054 red
-POS pin-251 2.2 2.1 8 0 0 1 0 1 0 -1 0 0
-ADD pin-252 4274 lightbluishgrey
-POS pin-252 1 0.5 7.5 0 0 1 0 1 0 -1 0 0
-CONNECT pin-251.pin1 -> pin-247.hole1 STIFF
-CONNECT pin-252.pin1 -> pin-247.hole3 TURNS

@@ -1,8 +1,0 @@
-ADD axle5-7 32073 lightbluishgrey
-POS axle5-7 1 -1 -4 -1 0 0 0 1 0 0 0 -1
-ADD conn-25 32184 lightbluishgrey
-POS conn-25 1 -2 -4 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-7.axle3 -> conn-25.axlehole2 LOCKED
-CONNECT axle5-6.axle3 -> conn-25.axlehole1 LOCKED
-CONNECT axle5-7.axle4 -> beam3x5-8.hole6 TURNS
-CONNECT axle5-7.axle5 -> beam3x3-7.hole4 TURNS

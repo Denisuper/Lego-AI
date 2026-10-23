@@ -1,8 +1,0 @@
-STEP 6
-ADD fork-J 32172 red
-ADD knob-I 6628 lightgray
-CONNECT pin-blue-E.axle1 -> fork-J.axlehole1 LOCKED
-CONNECT knob-I.pin1 -> fork-J.hole1 STIFF
-DOES pin-blue-E CARRIES fork-J
-DOES fork-J HOLDS knob-I
-PATTERN lever_on_a_slider

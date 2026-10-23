@@ -1,4 +1,0 @@
-ADD beam5-6 32017 yellow
-POS beam5-6 0.75 0 5 0 -1 0 1 0 0 0 0 1
-CONNECT pin-60.pin2 -> beam5-6.hole2 STIFF
-CONNECT pin-61.pin2 -> beam5-6.hole1 STIFF

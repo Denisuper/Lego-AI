@@ -1,8 +1,0 @@
-STEP 5
-ADD bracket-G 6536 lightgray
-ADD bracket-H 6536 lightgray
-CONNECT pin-blue-D.axle1 -> bracket-G.axlehole1 LOCKED
-CONNECT pin-blue-F.axle1 -> bracket-H.axlehole1 LOCKED
-DOES pin-blue-D CARRIES bracket-G
-DOES pin-blue-F CARRIES bracket-H
-PATTERN mirror_the_side

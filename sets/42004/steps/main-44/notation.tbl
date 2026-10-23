@@ -1,7 +1,0 @@
-STEP 44
-ADD pin-64 4274 lightbluishgrey
-POS pin-64 3 -2.8 -14.95 1 0 0 0 -0.942 -0.335 0 0.335 -0.942
-ADD pin-65 4274 lightbluishgrey
-POS pin-65 -1 -2.8 -14.95 -1 0 0 0 0.215 -0.977 0 -0.977 -0.215
-CONNECT pin-65.pin1 -> beam5-4.hole1 TURNS
-CONNECT pin-64.pin1 -> beam5-5.hole1 TURNS

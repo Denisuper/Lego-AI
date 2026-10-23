@@ -1,6 +1,0 @@
-ADD bush-9 32123b lightbluishgrey
-POS bush-9 -4.75 0 0 0 0 1 -0.066 0.998 0 -0.998 -0.066 0
-ADD conn-23 32013 white
-POS conn-23 -4 0 0 1 0 0 0 0.189 -0.982 0 0.982 0.189
-CONNECT axle12-1.axle2 -> bush-9.axlehole1 LOCKED
-CONNECT axle12-1.axle2 -> conn-23.hole1 TURNS

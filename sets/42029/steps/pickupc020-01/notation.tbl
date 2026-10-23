@@ -1,8 +1,0 @@
-ADD beam11-6 32525 darkbluishgrey
-POS beam11-6 0 0 0 0 -1 0 1 0 0 0 0 1
-ADD pin-170 6558 blue
-POS pin-170 0 0 5 -1 0 0 0 -1 0 0 0 1
-ADD beam3x3-12 60484 lightbluishgrey
-POS beam3x3-12 1 0 4 0 1 0 -1 0 0 0 0 1
-CONNECT pin-170.pin2 -> beam11-6.hole11 STIFF
-CONNECT pin-170.pin1 -> beam3x3-12.hole3 STIFF

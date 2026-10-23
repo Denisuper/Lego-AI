@@ -1,6 +1,0 @@
-STEP 14
-ATTACH gripperlever
-CONNECT pin-82.pin2 -> conn-39.hole1 STIFF
-CONNECT pin-83.pin2 -> conn-40.hole1 STIFF
-CONNECT pin-85.pin2 -> conn-42.hole1 STIFF
-CONNECT pin-84.pin2 -> conn-43.hole1 STIFF

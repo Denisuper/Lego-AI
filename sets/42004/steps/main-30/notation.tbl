@@ -1,4 +1,0 @@
-STEP 30
-ATTACH roof
-CONNECT pin-34.pin2 -> beam4-1.hole2 STIFF
-CONNECT pin-34.pin2 -> beam4-2.hole2 STIFF

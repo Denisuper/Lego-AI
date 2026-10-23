@@ -1,5 +1,0 @@
-STEP 41
-ATTACH frontarm3
-CONNECT axle3-10.axle2 -> beam3x5-10.hole7 TURNS
-CONNECT axle7-2.axle1 -> beam2-11.axlehole1 LOCKED
-CONNECT axle7-2.axle1 -> beam2-12.axlehole1 LOCKED

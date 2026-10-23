@@ -1,7 +1,0 @@
-ATTACH pickupb007
-CONNECT pin-145.pin2 -> beam3x5-10.hole1 STIFF
-CONNECT pin-145.pin1 -> beam3x5-10.hole3 STIFF
-CONNECT axle5-7.axle2 -> beam3x5-10.hole6 TURNS
-CONNECT axle5-4.axle1 -> beam3x3-10.hole2 TURNS
-CONNECT axle5-7.axle1 -> beam3x3-10.hole4 TURNS
-CONNECT axle5-6.axle2 -> beam2x4-15.hole4 TURNS

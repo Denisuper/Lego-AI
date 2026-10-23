@@ -1,7 +1,0 @@
-ATTACH cabingrid
-CONNECT conn-37.axle2 -> holes-6.axlehole2 LOCKED
-CONNECT conn-41.axle2 -> holes-7.axlehole2 LOCKED
-CONNECT conn-37.axle1 -> beam7-2.hole5 TURNS
-CONNECT conn-41.axle1 -> beam7-2.hole3 TURNS
-CONNECT axle3-11.axle1 -> conn-39.axlehole1 LOCKED
-CONNECT axle3-12.axle1 -> conn-42.axlehole1 LOCKED

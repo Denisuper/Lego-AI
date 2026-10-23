@@ -1,7 +1,0 @@
-STEP 9
-ATTACH bracket
-CONNECT axle9-1.axle3 -> conn-31.hole1 TURNS
-CONNECT pin-44.pin2 -> beam5x11-1.hole2 STIFF
-CONNECT pin-45.pin2 -> beam5x11-1.hole11 STIFF
-CONNECT pin-46.pin2 -> beam5x11-1.hole10 STIFF
-CONNECT pin-47.pin2 -> beam5x11-1.hole1 STIFF

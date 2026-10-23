@@ -1,3 +1,0 @@
-ATTACH exhaust
-CONNECT axle3-4.axle2 -> conn-5.axlehole1 LOCKED
-CONNECT pin-13.pin2 -> beam9-1.hole6 STIFF

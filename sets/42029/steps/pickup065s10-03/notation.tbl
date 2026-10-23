@@ -1,5 +1,0 @@
-ADD pin-294 32002 tan
-POS pin-294 2 0 -0.75 0 0 1 0 -1 0 1 0 0
-ATTACH shockfront
-CONNECT axle3-18.axle2 -> rod-8.hole1 TURNS
-CONNECT pin-294.pin1 -> chamfere-4.hole1 STIFF

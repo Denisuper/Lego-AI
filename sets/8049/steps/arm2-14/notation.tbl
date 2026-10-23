@@ -1,9 +1,0 @@
-ADD axle2-4 32062 red
-POS axle2-4 0 16 20 1 0 0 0 1 0 0 0 1
-ADD beam2-15 41677 black
-POS beam2-15 -0.75 17 20 0 -1 0 0 0 -1 1 0 0
-ADD axle2-5 32062 red
-POS axle2-5 0 17 20 1 0 0 0 1 0 0 0 1
-CONNECT axle2-4.axle1 -> beam2-15.axlehole2 LOCKED
-CONNECT axle2-5.axle1 -> beam2-15.axlehole1 LOCKED
-CONNECT axle2-4.axle1 -> beam15-6.hole15 TURNS

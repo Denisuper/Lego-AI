@@ -1,4 +1,0 @@
-ADD beam13-4 41239 black
-POS beam13-4 0 -1 11 0 0 -1 1 0 0 0 -1 0
-CONNECT pin-105.pin1 -> beam13-4.hole13 STIFF
-CONNECT pin-106.pin1 -> beam13-4.hole1 STIFF

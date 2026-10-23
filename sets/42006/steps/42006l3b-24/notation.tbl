@@ -1,8 +1,0 @@
-ADD beam3-1 32523 black
-POS beam3-1 3 -5 -8 0 -1 0 0 0 -1 1 0 0
-ADD beam3-2 32523 black
-POS beam3-2 -3 -5 -8 0 -1 0 0 0 -1 1 0 0
-CONNECT pin-55.pin2 -> beam3-1.hole1 STIFF
-CONNECT pin-61.pin2 -> beam3-1.hole3 STIFF
-CONNECT pin-56.pin1 -> beam3-2.hole1 STIFF
-CONNECT pin-64.pin1 -> beam3-2.hole3 STIFF

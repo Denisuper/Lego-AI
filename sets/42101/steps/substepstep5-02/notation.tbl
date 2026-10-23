@@ -1,3 +1,0 @@
-ADD beam2-1 60483 white
-POS beam2-1 0 1 0 0 -1 0 1 0 0 0 0 1
-CONNECT axle2-1.axle1 -> beam2-1.axlehole1 LOCKED

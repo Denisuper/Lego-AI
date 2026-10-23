@@ -1,6 +1,0 @@
-ATTACH pickup060s12
-ATTACH pickup060s12
-CONNECT pin-267.pin3 -> pin-259.hole9 STIFF
-CONNECT pin-267.pin4 -> pin-259.hole10 STIFF
-CONNECT pin-267.pin3 -> pin-259.hole3 STIFF
-CONNECT pin-267.pin4 -> pin-259.hole4 STIFF

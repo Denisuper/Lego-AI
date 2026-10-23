@@ -1,6 +1,0 @@
-ADD pin-398 11214 darkbluishgrey
-POS pin-398 -1 -2 0 0 -1 0 1 0 0 0 0 1
-ADD beam2-19 43857 red
-POS beam2-19 -0.5 -2 0 0 0 1 0 1 0 -1 0 0
-CONNECT pin-398.pin1 -> beam2-19.hole1 STIFF
-CONNECT pin-396.pin3 -> beam2-19.hole2 STIFF

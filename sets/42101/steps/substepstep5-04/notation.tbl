@@ -1,6 +1,0 @@
-ADD pin-2 15100 darkbluishgrey
-POS pin-2 0 0 -1 0 0 1 0 -1 0 1 0 0
-ADD pin-3 4274 lightbluishgrey
-POS pin-3 0 -0.5 -1 0 -1 0 -1 0 0 0 0 -1
-CONNECT pin-3.pin1 -> pin-2.hole1 TURNS
-CONNECT pin-2.pin1 -> conn-2.hole1 STIFF

@@ -1,6 +1,0 @@
-ADD beam2-1 43857 red
-POS beam2-1 -2 0 0.5 0 -1 0 -1 0 0 0 0 -1
-ADD beam2-2 43857 red
-POS beam2-2 2 0 0.5 0 -1 0 -1 0 0 0 0 -1
-CONNECT pin-99.pin1 -> beam2-1.hole2 STIFF
-CONNECT pin-98.pin1 -> beam2-2.hole2 STIFF

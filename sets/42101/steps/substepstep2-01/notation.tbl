@@ -1,6 +1,0 @@
-ADD conn-9 32184 lightbluishgrey
-POS conn-9 0 0 0 0 0 1 -1 0 0 0 -1 0
-ADD pin-19 3749 tan
-POS pin-19 0 0.5 -1 0 0 1 -1 0 0 0 -1 0
-ADD pin-20 3749 tan
-POS pin-20 0 -0.5 1 0 0 -1 1 0 0 0 -1 0

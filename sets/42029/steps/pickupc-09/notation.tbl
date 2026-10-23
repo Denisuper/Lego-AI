@@ -1,9 +1,0 @@
-ADD beam3x5-7 32526 lightbluishgrey
-POS beam3x5-7 2 -3 0 0 -1 0 0 0 1 -1 0 0
-ATTACH pickupc009
-CONNECT pin-140.pin1 -> beam3x5-7.hole7 STIFF
-CONNECT pin-135.pin1 -> beam3x5-7.hole4 STIFF
-CONNECT pin-137.pin2 -> beam3x5-7.hole2 STIFF
-CONNECT axle4-5.axle1 -> conn-21.hole1 TURNS
-CONNECT pin-131.pin1 -> beam3x5-6.hole4 STIFF
-CONNECT pin-136.pin2 -> beam3x5-6.hole2 STIFF

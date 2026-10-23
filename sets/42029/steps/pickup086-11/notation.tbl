@@ -1,7 +1,0 @@
-ADD axle6-7 3706 black
-POS axle6-7 -5.5 0 0 1 0 0 0 -1 0 0 0 -1
-ADD bush-25 3713 red
-POS bush-25 -5 0 0 0 0 -1 0 -1 0 -1 0 0
-CONNECT axle6-7.axle4 -> bush-25.axlehole1 LOCKED
-CONNECT axle6-7.axle6 -> conn-65.axlehole1 LOCKED
-CONNECT axle6-7.axle5 -> beam2x4-25.axlehole1 LOCKED

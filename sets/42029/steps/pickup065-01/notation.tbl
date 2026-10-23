@@ -1,8 +1,0 @@
-ADD beam-3 64179 lightbluishgrey
-POS beam-3 0 0 0 0 0 1 -1 0 0 0 -1 0
-ADD pin-281 4274 lightbluishgrey
-POS pin-281 3.5 -1 0 1 0 0 0 0 1 0 -1 0
-ADD pin-282 4274 lightbluishgrey
-POS pin-282 -3.5 -1 0 -1 0 0 0 0 -1 0 -1 0
-CONNECT pin-281.pin1 -> beam-3.hole19 TURNS
-CONNECT pin-282.pin1 -> beam-3.hole4 TURNS

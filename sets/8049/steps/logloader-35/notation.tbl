@@ -1,8 +1,0 @@
-ADD axle2-10 32062 red
-POS axle2-10 3 -29.8 11.4 0 0 -1 0 -1 0 -1 0 0
-ATTACH grabber
-CONNECT axle2-10.axle1 -> beam-1.hole4 TURNS
-CONNECT axle2-10.axle2 -> beam-2.hole4 TURNS
-CONNECT axle2-10.axle1 -> conn-53.axlehole1 LOCKED
-MESH gear16-2.teeth gear16-1.teeth
-RATIO gear16-2 gear16-1 16/16

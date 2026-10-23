@@ -1,8 +1,0 @@
-ADD beam7-18 32524 darkbluishgrey
-POS beam7-18 0 -2 -1 -1 0 0 0 0 1 0 1 0
-ADD beam3-27 32523 lightbluishgrey
-POS beam3-27 0 0 -2 -1 0 0 0 0 1 0 1 0
-CONNECT axle4-7.axle2 -> beam7-18.hole5 TURNS
-CONNECT axle4-8.axle2 -> beam7-18.hole7 TURNS
-CONNECT axle4-7.axle3 -> beam3-27.hole1 TURNS
-CONNECT axle4-8.axle3 -> beam3-27.hole3 TURNS

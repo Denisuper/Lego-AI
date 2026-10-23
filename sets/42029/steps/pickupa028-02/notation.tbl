@@ -1,4 +1,0 @@
-ADD holes-4 32000 darkbluishgrey
-POS holes-4 1 0 0 0 0 1 0 1 0 -1 0 0
-CONNECT pin-230.pin3 -> holes-4.hole1 STIFF
-CONNECT pin-231.pin3 -> holes-4.hole3 STIFF

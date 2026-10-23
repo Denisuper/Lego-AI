@@ -1,4 +1,0 @@
-ADD conn-63 32184 lightbluishgrey
-POS conn-63 -1 -1 0 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-18.axle2 -> conn-63.axlehole2 LOCKED
-CONNECT axle9-8.axle6 -> conn-63.axlehole1 LOCKED

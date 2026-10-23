@@ -1,3 +1,0 @@
-ADD pin-17 32557 black
-POS pin-17 0 -1 -1 0 0 1 0 -1 0 1 0 0
-CONNECT pin-16.pin1 -> pin-17.hole2 STIFF

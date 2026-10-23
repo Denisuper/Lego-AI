@@ -1,3 +1,0 @@
-ATTACH substepstep11
-CONNECT pin-8.pin3 -> beam7-1.hole5 STIFF
-CONNECT pin-9.axle1 -> beam7-1.hole4 TURNS

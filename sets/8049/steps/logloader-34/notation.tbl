@@ -1,2 +1,0 @@
-ATTACH arm2
-CONNECT axle3-20.axle2 -> beam15-5.hole1 TURNS

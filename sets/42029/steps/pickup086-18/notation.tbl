@@ -1,3 +1,0 @@
-ATTACH pickup086s18
-CONNECT pin-320.pin2 -> panel-5.hole2 STIFF
-CONNECT pin-319.pin2 -> panel-6.hole2 STIFF

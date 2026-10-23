@@ -1,6 +1,0 @@
-ADD bush-24 3713 red
-POS bush-24 -2 -2 0 0 0 1 0 1 0 -1 0 0
-ADD pin-307 32054 red
-POS pin-307 -3 0 0 -1 0 0 0 1 0 0 0 -1
-CONNECT axle9-8.axle7 -> bush-24.axlehole1 LOCKED
-CONNECT axle5-18.axle1 -> pin-307.axlehole1 LOCKED

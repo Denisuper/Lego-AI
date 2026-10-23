@@ -1,6 +1,0 @@
-ADD center-1 2854 tan
-POS center-1 0 0 1 -1 0 0 0 1 0 0 0 -1
-ADD axle2-6 32062 red
-POS axle2-6 0.5 0 2 0 0 -1 0 1 0 1 0 0
-CONNECT axle2-6.axle1 -> center-1.axlehole1 LOCKED
-CONNECT cranksha-1.axle2 -> center-1.axlehole2 LOCKED

@@ -1,5 +1,0 @@
-ATTACH pickup086s13
-CONNECT axle6-7.axle1 -> beam9-11.axlehole1 LOCKED
-CONNECT pin-312.pin3 -> beam9-10.hole5 STIFF
-CONNECT pin-313.pin3 -> beam9-10.hole7 STIFF
-CONNECT axle3-27.axle1 -> beam9-10.axlehole2 LOCKED

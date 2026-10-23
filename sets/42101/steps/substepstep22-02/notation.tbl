@@ -1,5 +1,0 @@
-ADD axle2-4 32062 red
-POS axle2-4 0 0.5 0 0 0 1 -1 0 0 0 -1 0
-ADD bush-3 32123b lightbluishgrey
-POS bush-3 0 -0.25 3 1 0 0 0 0 1 0 -1 0
-CONNECT axle2-4.axle2 -> beam4-3.axlehole1 LOCKED

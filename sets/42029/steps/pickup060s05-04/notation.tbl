@@ -1,3 +1,0 @@
-ADD center-2 2854 tan
-POS center-2 0 0 3 1 0 0 0 -1 0 0 0 -1
-CONNECT axle2-6.axle2 -> center-2.axlehole2 LOCKED

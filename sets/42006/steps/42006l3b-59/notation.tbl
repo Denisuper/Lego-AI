@@ -1,9 +1,0 @@
-ADD beam3x3-2 32056 yellow
-POS beam3x3-2 1.8 -13.4 -9.1 0 -1 0 0.529 0 0.848 -0.848 0 0.529
-ADD beam3x5-15 32250 yellow
-POS beam3x5-15 2.3 -13.4 -9.1 0 -1 0 0.529 0 0.848 -0.848 0 0.529
-CONNECT axle7-2.axle2 -> beam3x3-2.axlehole3 LOCKED
-CONNECT pin-140.axle1 -> beam3x3-2.axlehole2 LOCKED
-CONNECT axle7-2.axle2 -> beam3x5-15.axlehole2 LOCKED
-CONNECT axle7-3.axle2 -> beam3x5-15.axlehole3 LOCKED
-CONNECT pin-140.axle1 -> beam3x5-15.hole3 TURNS

@@ -1,5 +1,0 @@
-ADD conn-16 6553 black
-POS conn-16 0 4.7 -3.95 0 -1 0 -0.985 0 -0.171 0.171 0 -0.985
-ATTACH roofholder
-CONNECT axle6-1.axle2 -> conn-16.axlehole1 LOCKED
-CONNECT pin-14.pin2 -> conn-13.hole1 STIFF

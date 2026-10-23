@@ -1,5 +1,0 @@
-STEP 1
-ATTACH tractor
-ATTACH logloader
-MESH gear16-2.teeth gear16-1.teeth
-RATIO gear16-2 gear16-1 16/16

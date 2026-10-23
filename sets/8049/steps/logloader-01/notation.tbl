@@ -1,5 +1,0 @@
-ADD beam11-7 32009 black
-POS beam11-7 0 -12.4 10.5 0 1 0 -1 0 0 0 0 1
-ADD pin-67 32054 black
-POS pin-67 0 -12.4 3.5 1 0 0 0 1 0 0 0 1
-CONNECT pin-67.pin1 -> beam11-7.hole1 STIFF

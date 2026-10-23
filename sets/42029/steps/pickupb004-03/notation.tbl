@@ -1,3 +1,0 @@
-ADD beam2-6 60483 darkbluishgrey
-POS beam2-6 2 0 0 0 1 0 1 0 0 0 0 -1
-CONNECT axle5-4.axle2 -> beam2-6.axlehole1 LOCKED

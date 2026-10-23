@@ -1,4 +1,0 @@
-ADD beam5-7 32316 darkbluishgrey
-POS beam5-7 0 -14.4 1.5 0 1 0 0 0 -1 -1 0 0
-CONNECT pin-74.pin1 -> beam5-7.hole1 STIFF
-CONNECT pin-90.pin1 -> beam5-7.hole5 STIFF

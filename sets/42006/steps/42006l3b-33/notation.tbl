@@ -1,5 +1,0 @@
-ADD ridges-1 6539 red
-POS ridges-1 -0.95 -8 1.5 1 0 0 0 1 0 0 0 1
-ADD gear16-1 6542b darkbluishgrey
-POS gear16-1 -0.95 -8 3 -1 0 0 0 1 0 0 0 -1
-CONNECT axle5-3.axle2 -> gear16-1.hole1 TURNS

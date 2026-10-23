@@ -1,9 +1,0 @@
-ADD beam9-9 6629 red
-POS beam9-9 6 0 0 0 1 0 -1 0 0 0 0 1
-ADD bush-20 3713 red
-POS bush-20 5 0 0 0 0 1 -1 0 0 0 -1 0
-CONNECT pin-301.pin3 -> beam9-9.hole5 STIFF
-CONNECT pin-302.pin3 -> beam9-9.hole7 STIFF
-CONNECT axle3-25.axle3 -> beam9-9.axlehole2 LOCKED
-CONNECT axle6-6.axle3 -> beam9-9.axlehole1 LOCKED
-CONNECT axle6-6.axle4 -> bush-20.axlehole1 LOCKED

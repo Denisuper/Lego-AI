@@ -1,6 +1,0 @@
-ADD pin-44 6558 blue
-POS pin-44 0 -4.95 0.6 1 0 0 0 -1 0 0 0 -1
-ADD pin-45 6558 blue
-POS pin-45 -1 -6.95 4.05 -1 0 0 0 -0.5 -0.866 0 -0.866 0.5
-CONNECT pin-44.pin1 -> beam11-5.hole5 STIFF
-CONNECT pin-45.pin2 -> beam11-5.hole1 STIFF

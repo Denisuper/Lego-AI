@@ -1,3 +1,0 @@
-ADD conn-32 63869 lightbluishgrey
-POS conn-32 0 1 -2 0 -1 0 0 0 -1 1 0 0
-CONNECT axle5-11.axle3 -> conn-32.axlehole1 LOCKED

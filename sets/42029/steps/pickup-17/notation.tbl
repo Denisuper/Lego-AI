@@ -1,3 +1,0 @@
-ADD gear16-5 6542b darkbluishgrey
-POS gear16-5 0 0 -5 0 1 0 -1 0 0 0 0 1
-CONNECT axle4-3.axle3 -> gear16-5.hole1 TURNS

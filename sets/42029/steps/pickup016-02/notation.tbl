@@ -1,6 +1,0 @@
-ADD bush-3 3713 red
-POS bush-3 0 0 -2.5 1 0 0 0 1 0 0 0 1
-ADD gear16-4 94925 lightbluishgrey
-POS gear16-4 0 0 -1.5 1 0 0 0 1 0 0 0 1
-CONNECT axle8-2.axle7 -> bush-3.axlehole1 LOCKED
-CONNECT axle8-2.axle6 -> gear16-4.axlehole1 LOCKED

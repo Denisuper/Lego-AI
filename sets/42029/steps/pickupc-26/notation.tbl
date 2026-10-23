@@ -1,7 +1,0 @@
-ADD axle5-14 32073 lightbluishgrey
-POS axle5-14 0 -3 11 -1 0 0 0 0 1 0 1 0
-CONNECT axle5-14.axle5 -> beam3x3-12.hole5 TURNS
-CONNECT axle5-14.axle1 -> beam3x3-12.hole1 TURNS
-CONNECT axle5-14.axle2 -> beam13-7.hole1 TURNS
-CONNECT axle5-14.axle4 -> beam13-8.hole1 TURNS
-CONNECT axle5-14.axle3 -> conn-46.axlehole1 LOCKED

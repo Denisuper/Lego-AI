@@ -1,2 +1,0 @@
-ATTACH substepstep1
-CONNECT pin-7.pin2 -> beam7-1.hole3 TURNS

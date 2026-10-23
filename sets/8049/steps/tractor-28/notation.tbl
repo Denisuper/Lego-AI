@@ -1,6 +1,0 @@
-ADD conn-21 6553 black
-POS conn-21 -8 4.7 -3.95 0 1 0 -0.982 0 0.189 0.189 0 0.982
-ATTACH roofholder
-CONNECT axle6-1.axle2 -> conn-21.axlehole1 LOCKED
-CONNECT pin-6.pin2 -> conn-13.hole1 STIFF
-CONNECT conn-21.axle2 -> conn-18.axlehole2 LOCKED

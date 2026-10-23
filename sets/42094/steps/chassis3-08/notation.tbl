@@ -1,8 +1,0 @@
-ADD pin-43 43093 blue
-POS pin-43 0 -3.5 1 0 0 1 -1 0 0 0 -1 0
-ADD conn-21 32013 black
-POS conn-21 0 -5 1 0 -1 0 0 0 -1 1 0 0
-ATTACH chassis4
-CONNECT axle9-2.axle1 -> beam4-1.axlehole1 LOCKED
-CONNECT axle9-2.axle1 -> beam4-2.axlehole1 LOCKED
-CONNECT pin-43.axle1 -> conn-15.hole1 TURNS

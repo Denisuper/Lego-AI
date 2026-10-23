@@ -1,6 +1,0 @@
-ADD bush-12 3713 red
-POS bush-12 0 0 -3 1 0 0 0 1 0 0 0 1
-ADD pin-266 6558 blue
-POS pin-266 0 1 -4 0 0 -1 0 1 0 1 0 0
-CONNECT axle9-7.axle8 -> bush-12.axlehole1 LOCKED
-CONNECT pin-266.pin2 -> beam2-13.hole1 STIFF

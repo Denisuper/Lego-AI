@@ -1,5 +1,0 @@
-ADD pin-168 87408 black
-POS pin-168 0 0 0.5 1 0 0 0 0 1 0 -1 0
-ADD pin-169 11214 darkbluishgrey
-POS pin-169 0 1 0 0 1 0 0 0 1 1 0 0
-CONNECT axle5-9.axle2 -> pin-168.hole3 TURNS

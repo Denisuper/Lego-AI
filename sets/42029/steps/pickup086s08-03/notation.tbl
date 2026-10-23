@@ -1,9 +1,0 @@
-ADD axle9-8 60485 lightbluishgrey
-POS axle9-8 0 -2 0 -1 0 0 0 1 0 0 0 -1
-ADD bush-22 3713 red
-POS bush-22 0 -2 0 0 0 1 0 1 0 -1 0 0
-ADD bush-23 3713 red
-POS bush-23 2 -2 0 0 0 1 0 1 0 -1 0 0
-CONNECT axle9-8.axle5 -> bush-22.axlehole1 LOCKED
-CONNECT axle9-8.axle3 -> bush-23.axlehole1 LOCKED
-CONNECT axle9-8.axle4 -> conn-62.axlehole1 LOCKED
