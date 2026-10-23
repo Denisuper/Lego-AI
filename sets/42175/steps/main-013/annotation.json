@@ -1,0 +1,232 @@
+{
+  "example_id": "42175-step-013",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 12,
+  "step": 13,
+  "input": {
+    "picture": "steps/main-013/picture.png",
+    "parts_box": [
+      {
+        "name": "trk-beam15-1",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "trk-beam15-2",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "trk-beam9-1",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "trk-beam9-2",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "trk-beam9-3",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "trk-beam9-4",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-1",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-2",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-3",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-4",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-5",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-6",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-7",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "trk-pin-8",
+        "part_number": "18651",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Undercarriage with sprockets at both ends and six rollers (steps 10-12)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "trk-beam15-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "one long 15-hole beam per side build",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-beam15-2",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "one long 15-hole beam per side build",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-beam9-1",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "two grey 9-hole beams per side build, side by side under the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-beam9-2",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "two grey 9-hole beams per side build, side by side under the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-beam9-3",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "two grey 9-hole beams per side build, side by side under the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-beam9-4",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "two grey 9-hole beams per side build, side by side under the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-1",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-2",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-3",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-4",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-5",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-6",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-7",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "trk-pin-8",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four black pins per side build, pushed through the 15-hole beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box (built twice): four black pins go into a 15-hole beam, then two grey 9-hole beams are laid under it on the pins. Each finished side build is lowered along one side of the undercarriage (two black arrows)."
+    ],
+    "who_does_what_to_which": [
+      "trk-pin-1 holds trk-beam15-1",
+      "trk-pin-5 holds trk-beam15-2"
+    ],
+    "where_everything_is_after": [
+      "a long track rail (15-hole beam over two 9-hole beams) lies along each side of the undercarriage",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the long track frames that hold the wheels in line and give the track something to slide on.",
+      "why_these_parts": "A 15-hole beam spans from sprocket to sprocket; two 9-hole beams under it add height so the track links ride flat.",
+      "sets_up_for_later": "Steps 14-16 cap the axle ends and wrap the track links around the whole assembly.",
+      "design_pattern": "track rail"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Pin positions along the 15-hole beam are read by eye from sub-step 1 (pins near holes 1, 8, 10, 15) and are estimates. Which pin holds which 9-hole beam is not shown."
+}

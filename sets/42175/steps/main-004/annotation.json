@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-004",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 3,
+  "step": 4,
+  "input": {
+    "picture": "steps/main-004/picture.png",
+    "parts_box": [
+      {
+        "name": "uc-beam11-1",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "uc-beam11-2",
+        "part_number": "32525",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Frame, two 9-hole beams and four pins standing at their ends (step 3)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "uc-beam11-1",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "one long 11-hole beam on each side, lying along the outside on the end pins",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-beam11-2",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "one long 11-hole beam on each side, lying along the outside on the end pins",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The two 11-hole beams are lowered onto the four end pins, so they lie flat on top of the 9-hole beams but reach further out."
+    ],
+    "who_does_what_to_which": [
+      "uc-beam11-1 supports uc-beam9-1"
+    ],
+    "where_everything_is_after": [
+      "the 11-hole beams form the outer rails of the base, longer than the frame on both ends",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Widens and lengthens the base so it can carry the track rails later.",
+      "why_these_parts": "11 holes is long enough to stick out past the 9-hole beams at both ends; thick black beams are stiff.",
+      "sets_up_for_later": "Later steps hang the track wheels and the turntable parts off these rails.",
+      "design_pattern": "long rails"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Exact pin-to-hole pairing is an estimate: the picture only shows the beams resting on the pins."
+}

@@ -1,0 +1,35 @@
+STEP 7
+ADD uc-axpin-1 43093 blue
+ADD uc-axpin-2 43093 blue
+ADD uc-axpin-3 43093 blue
+ADD uc-axpin-4 43093 blue
+ADD uc-axpin-5 43093 blue
+ADD uc-axpin-6 43093 blue
+ADD uc-axpin-7 43093 blue
+ADD uc-axpin-8 43093 blue
+ADD uc-pin-5 65304 black
+ADD uc-pin-6 65304 black
+ADD uc-pin-7 65304 black
+ADD uc-pin-8 65304 black
+ADD uc-pin-9 65304 black
+ADD uc-pin-10 65304 black
+ADD uc-pin-11 65304 black
+ADD uc-pin-12 65304 black
+CONNECT uc-axpin-1.axle1 -> uc-pin-5.axlehole1 LOCKED
+CONNECT uc-axpin-2.axle1 -> uc-pin-6.axlehole1 LOCKED
+CONNECT uc-axpin-3.axle1 -> uc-pin-7.axlehole1 LOCKED
+CONNECT uc-axpin-4.axle1 -> uc-pin-8.axlehole1 LOCKED
+CONNECT uc-axpin-5.axle1 -> uc-pin-9.axlehole1 LOCKED
+CONNECT uc-axpin-6.axle1 -> uc-pin-10.axlehole1 LOCKED
+CONNECT uc-axpin-7.axle1 -> uc-pin-11.axlehole1 LOCKED
+CONNECT uc-axpin-8.axle1 -> uc-pin-12.axlehole1 LOCKED
+CONNECT uc-pin-5.pin1 -> uc-beam11-1.hole2~ STIFF
+CONNECT uc-pin-6.pin1 -> uc-beam11-1.hole4~ STIFF
+CONNECT uc-pin-7.pin1 -> uc-beam11-1.hole8~ STIFF
+CONNECT uc-pin-8.pin1 -> uc-beam11-1.hole10~ STIFF
+CONNECT uc-pin-9.pin1 -> uc-beam11-2.hole2~ STIFF
+CONNECT uc-pin-10.pin1 -> uc-beam11-2.hole4~ STIFF
+CONNECT uc-pin-11.pin1 -> uc-beam11-2.hole8~ STIFF
+CONNECT uc-pin-12.pin1 -> uc-beam11-2.hole10~ STIFF
+DOES uc-pin-5 HOLDS uc-beam11-1
+PATTERN peg_extension

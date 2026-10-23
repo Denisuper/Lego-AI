@@ -1,0 +1,9 @@
+STEP 2
+ADD uc-beam9-1 40490 darkgray
+ADD uc-beam9-2 40490 darkgray
+CONNECT uc-pin-1.pin2 -> uc-beam9-1.hole2~ STIFF
+CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF
+CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF
+CONNECT uc-pin-4.pin2 -> uc-beam9-2.hole8~ STIFF
+DOES uc-beam9-1 SUPPORTS uc-frame-1
+PATTERN beams_on_posts

@@ -1,0 +1,1 @@
+{"model":"LEGO Technic 42175 Volvo EC230 Electric Excavator","what_the_model_does":"placeholder","open_questions":[],"systems":[{"id":"chassis","name":"Undercarriage frame","real_machine":"The lower frame of a crawler excavator.","purpose":"A stiff base.","depends_on":[],"feeds":[],"why_built_first":"Everything hangs off it.","parts":{"uc-.*":"placeholder"}}]}

@@ -1,0 +1,15 @@
+STEP 8
+ADD uc-tpin-1 39888 tan
+ADD uc-tpin-2 39888 tan
+ADD uc-tpin-3 39888 tan
+ADD uc-tpin-4 39888 tan
+ADD uc-tpin-5 39888 tan
+ADD uc-tpin-6 39888 tan
+CONNECT uc-tpin-1.pin1 -> uc-beam11-1.hole3~ TURNS
+CONNECT uc-tpin-2.pin1 -> uc-beam11-1.hole9~ TURNS
+CONNECT uc-tpin-3.pin1 -> uc-beam11-1.hole6~ TURNS
+CONNECT uc-tpin-4.pin1 -> uc-beam11-2.hole3~ TURNS
+CONNECT uc-tpin-5.pin1 -> uc-beam11-2.hole9~ TURNS
+CONNECT uc-tpin-6.pin1 -> uc-beam11-2.hole6~ TURNS
+DOES uc-tpin-1 HOLDS uc-beam11-1
+PATTERN peg_row

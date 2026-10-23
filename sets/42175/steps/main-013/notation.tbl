@@ -1,0 +1,28 @@
+STEP 13
+ADD trk-beam15-1 32278 black
+ADD trk-beam15-2 32278 black
+ADD trk-beam9-1 40490 darkgray
+ADD trk-beam9-2 40490 darkgray
+ADD trk-beam9-3 40490 darkgray
+ADD trk-beam9-4 40490 darkgray
+ADD trk-pin-1 18651 black
+ADD trk-pin-2 18651 black
+ADD trk-pin-3 18651 black
+ADD trk-pin-4 18651 black
+ADD trk-pin-5 18651 black
+ADD trk-pin-6 18651 black
+ADD trk-pin-7 18651 black
+ADD trk-pin-8 18651 black
+CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1~ STIFF
+CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8~ STIFF
+CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10~ STIFF
+CONNECT trk-pin-4.pin1 -> trk-beam15-1.hole15~ STIFF
+CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1~ STIFF
+CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8~ STIFF
+CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10~ STIFF
+CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15~ STIFF
+CONNECT trk-pin-1.axle2 -> trk-beam9-1.hole2~ TURNS
+CONNECT trk-pin-5.axle2 -> trk-beam9-3.hole2~ TURNS
+DOES trk-pin-1 HOLDS trk-beam15-1
+DOES trk-pin-5 HOLDS trk-beam15-2
+PATTERN stacked_rails

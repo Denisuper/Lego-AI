@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-003",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 3,
+  "step": 3,
+  "input": {
+    "picture": "steps/main-003/picture.png",
+    "parts_box": [
+      {
+        "name": "uc-apin-1",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "uc-apin-2",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "uc-apin-3",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "uc-apin-4",
+        "part_number": "18651",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Two 9-hole beams lie on the frame (step 2)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "uc-apin-1",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one pin pushed into each free end hole of the two 9-hole beams, pointing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-apin-2",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one pin pushed into each free end hole of the two 9-hole beams, pointing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-apin-3",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one pin pushed into each free end hole of the two 9-hole beams, pointing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-apin-4",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one pin pushed into each free end hole of the two 9-hole beams, pointing up",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Four pins go into the four end holes of the two 9-hole beams and stick up on top."
+    ],
+    "who_does_what_to_which": [
+      "uc-apin-1 holds uc-beam9-1"
+    ],
+    "where_everything_is_after": [
+      "four new pins stand up at the ends of the two 9-hole beams",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the posts that the long outer beams will sit on.",
+      "why_these_parts": "A pin with a collar keeps the sides rigid and is long enough to carry a further beam.",
+      "sets_up_for_later": "Step 4 lays the 11-hole beams over these pins.",
+      "design_pattern": "end pins"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which end hole each pin takes (hole1 or hole9) is not important for the shape; marked as an estimate."
+}

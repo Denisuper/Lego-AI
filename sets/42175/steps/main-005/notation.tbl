@@ -1,0 +1,27 @@
+STEP 5
+ADD uc-lbeam-1 32526 black
+ADD uc-lbeam-2 32526 black
+ADD uc-lbeam-3 32526 black
+ADD uc-lbeam-4 32526 black
+ADD uc-beam15-1 32278 black
+ADD uc-beam15-2 32278 black
+ADD uc-beam5-1 32316 lightgray
+ADD uc-beam5-2 32316 lightgray
+ADD uc-bpin-1 43093 blue
+ADD uc-bpin-2 43093 blue
+ADD uc-bpin-3 43093 blue
+ADD uc-bpin-4 43093 blue
+ADD uc-lpin-1 42924 blue
+ADD uc-lpin-2 42924 blue
+ADD uc-lpin-3 42924 blue
+ADD uc-lpin-4 42924 blue
+ADD uc-apin-5 18651 black
+ADD uc-apin-6 18651 black
+ADD uc-apin-7 18651 black
+ADD uc-apin-8 18651 black
+CONNECT uc-bpin-1.pin1 -> uc-beam5-1.hole1~ STIFF
+CONNECT uc-bpin-2.pin1 -> uc-beam5-1.hole5~ STIFF
+CONNECT uc-bpin-3.pin1 -> uc-beam5-2.hole1~ STIFF
+CONNECT uc-bpin-4.pin1 -> uc-beam5-2.hole5~ STIFF
+DOES uc-bpin-1 HOLDS uc-beam15-1
+PATTERN mirrored_side_builds

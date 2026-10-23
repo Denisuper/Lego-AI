@@ -1,0 +1,259 @@
+{
+  "example_id": "42175-step-007",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 6,
+  "step": 7,
+  "input": {
+    "picture": "steps/main-007/picture.png",
+    "parts_box": [
+      {
+        "name": "uc-axpin-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-3",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-4",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-5",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-6",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-7",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-axpin-8",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-5",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-6",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-7",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-8",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-9",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-10",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-11",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-12",
+        "part_number": "65304",
+        "count": 1
+      }
+    ],
+    "model_so_far": "The base with two side builds and four 7-hole cross beams (steps 5-6), seen from below."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "uc-axpin-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-3",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-4",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-5",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-6",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-7",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-axpin-8",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue axle pins, each pushed into the end of a black long pin to make a longer peg",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-5",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-6",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-7",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-8",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-9",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-10",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-11",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-12",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "long stop-bush pins that take a blue axle pin in their cross hole, then go into the outer rails",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Eight times: a blue axle pin is pushed into the cross hole of a black long pin (yellow box). The eight finished pegs then go into the two outer 11-hole rails, four per rail, pointing out."
+    ],
+    "who_does_what_to_which": [
+      "uc-pin-5 holds uc-beam11-1"
+    ],
+    "where_everything_is_after": [
+      "eight pegs stick out sideways from the two outer rails",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the track rollers and wheel carriers something to hang on.",
+      "why_these_parts": "A blue axle pin in a long pin's cross hole makes a peg that is longer than any single pin and still friction-tight.",
+      "sets_up_for_later": "Step 8 and 9 put tan pins and the wheel carriers between and on these pegs.",
+      "design_pattern": "extended pegs"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which holes of the outer rails take the pegs is an estimate (spacing read by eye); the exact hole count can't be read at this size."
+}

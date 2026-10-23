@@ -1,0 +1,14 @@
+STEP 12
+ADD trk-roller-1 55982 lightgray
+ADD trk-roller-2 55982 lightgray
+ADD trk-roller-3 55982 lightgray
+ADD trk-roller-4 55982 lightgray
+ADD trk-roller-5 55982 lightgray
+ADD trk-roller-6 55982 lightgray
+DOES trk-roller-1 SPINS_ON uc-tpin-1
+DOES trk-roller-2 SPINS_ON uc-tpin-2
+DOES trk-roller-3 SPINS_ON uc-tpin-3
+DOES trk-roller-4 SPINS_ON uc-tpin-4
+DOES trk-roller-5 SPINS_ON uc-tpin-5
+DOES trk-roller-6 SPINS_ON uc-tpin-6
+PATTERN free_spinning_roller

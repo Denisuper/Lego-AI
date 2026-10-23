@@ -1,0 +1,12 @@
+STEP 10
+ADD trk-axle5-1 32073 lightgray
+ADD trk-axle5-2 32073 lightgray
+ADD trk-sprocket-1 57520 black
+ADD trk-sprocket-2 57520 black
+CONNECT trk-axle5-1.axle1 -> uc-beam11-1.hole1~ TURNS
+CONNECT trk-axle5-2.axle1 -> uc-beam11-2.hole1~ TURNS
+CONNECT trk-axle5-1.axle3 -> trk-sprocket-1.axlehole1~ LOCKED
+CONNECT trk-axle5-2.axle3 -> trk-sprocket-2.axlehole1~ LOCKED
+DOES trk-axle5-1 CARRIES trk-sprocket-1
+DOES trk-axle5-2 CARRIES trk-sprocket-2
+PATTERN sprocket_on_axle

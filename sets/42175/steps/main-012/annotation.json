@@ -1,0 +1,124 @@
+{
+  "example_id": "42175-step-012",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 11,
+  "step": 12,
+  "input": {
+    "picture": "steps/main-012/picture.png",
+    "parts_box": [
+      {
+        "name": "trk-roller-1",
+        "part_number": "55982",
+        "count": 1
+      },
+      {
+        "name": "trk-roller-2",
+        "part_number": "55982",
+        "count": 1
+      },
+      {
+        "name": "trk-roller-3",
+        "part_number": "55982",
+        "count": 1
+      },
+      {
+        "name": "trk-roller-4",
+        "part_number": "55982",
+        "count": 1
+      },
+      {
+        "name": "trk-roller-5",
+        "part_number": "55982",
+        "count": 1
+      },
+      {
+        "name": "trk-roller-6",
+        "part_number": "55982",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Sprockets on all four rail ends (step 11)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "trk-roller-1",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      },
+      {
+        "name": "trk-roller-2",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      },
+      {
+        "name": "trk-roller-3",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      },
+      {
+        "name": "trk-roller-4",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      },
+      {
+        "name": "trk-roller-5",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      },
+      {
+        "name": "trk-roller-6",
+        "part_number": "55982",
+        "catalog_name": "Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey roller wheel on each tan spindle, three per side",
+        "rotation": "spins"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Six grey wheels are pushed onto the six tan pins that stick out from the rails."
+    ],
+    "who_does_what_to_which": [
+      "trk-roller-1 spins on uc-tpin-1",
+      "trk-roller-2 spins on uc-tpin-2",
+      "trk-roller-3 spins on uc-tpin-3",
+      "trk-roller-4 spins on uc-tpin-4",
+      "trk-roller-5 spins on uc-tpin-5",
+      "trk-roller-6 spins on uc-tpin-6"
+    ],
+    "where_everything_is_after": [
+      "three roller wheels on each side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the lower rollers that carry the weight on the track.",
+      "why_these_parts": "Tan pins have no friction ridges, so the wheel spins freely.",
+      "sets_up_for_later": "The track loop (steps 13-14) runs under and over these.",
+      "design_pattern": "free-spinning roller"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The wheels have no catalog entry (not in the Technic parts list), so no point names are given."
+}

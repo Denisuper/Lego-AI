@@ -1,0 +1,876 @@
+{
+  "example_id": "42175-step-016",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 15,
+  "step": 16,
+  "input": {
+    "picture": "steps/main-016/picture.png",
+    "parts_box": [
+      {
+        "name": "trk-link-1",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-2",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-3",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-4",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-5",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-6",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-7",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-8",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-9",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-10",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-11",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-12",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-13",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-14",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-15",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-16",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-17",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-18",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-19",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-20",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-21",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-22",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-23",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-24",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-25",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-26",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-27",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-28",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-29",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-30",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-31",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-32",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-33",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-34",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-35",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-36",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-37",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-38",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-39",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-40",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-41",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-42",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-43",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-44",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-45",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-46",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-47",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-48",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-49",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-50",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-51",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-52",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-53",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-54",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-55",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-56",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-57",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-58",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-59",
+        "part_number": "88323",
+        "count": 1
+      },
+      {
+        "name": "trk-link-60",
+        "part_number": "88323",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Undercarriage with both track rails and caps (step 15). Bag 13 is now open."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "trk-link-1",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-2",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-3",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-4",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-5",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-6",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-7",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-8",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-9",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-10",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-11",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-12",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-13",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-14",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-15",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-16",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-17",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-18",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-19",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-20",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-21",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-22",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-23",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-24",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-25",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-26",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-27",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-28",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-29",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-30",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-31",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-32",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-33",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-34",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-35",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-36",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-37",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-38",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-39",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-40",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-41",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-42",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-43",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-44",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-45",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-46",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-47",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-48",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-49",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-50",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-51",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-52",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-53",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-54",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-55",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-56",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-57",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-58",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-59",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      },
+      {
+        "name": "trk-link-60",
+        "part_number": "88323",
+        "catalog_name": "Technic Link Tread Wide with Two Pin Holes, Reinforced",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "60 track links; 30 per track",
+        "rotation": "moves with the loop"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box (30x, built twice): each link clips onto the end of the last link; the two chains of 30 form a closed belt each.",
+      "The two finished track loops are wrapped around the track rails, sprockets and rollers (arrows)."
+    ],
+    "who_does_what_to_which": [
+      "trk-link-1 carries trk-link-2"
+    ],
+    "where_everything_is_after": [
+      "a closed track loop of 30 links runs round each side of the undercarriage",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Makes the tracks that the machine rolls on.",
+      "why_these_parts": "Wide links with two clips each can be snapped together by hand; 30 links is the right length to go round the sprockets and rollers.",
+      "sets_up_for_later": "Everything above is built on the finished undercarriage.",
+      "design_pattern": "track loop"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The link join is the bar of one link in the clip of the next (as in set 8047). The exact way the loops sit on the sprocket teeth is not shown in detail. Looks complete: 2 x 30 links as the callout says."
+}

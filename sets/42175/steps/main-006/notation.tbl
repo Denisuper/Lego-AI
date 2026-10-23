@@ -1,0 +1,15 @@
+STEP 6
+ADD uc-beam7-1 32524 black
+ADD uc-beam7-2 32524 black
+ADD uc-beam7-3 32524 black
+ADD uc-beam7-4 32524 black
+ADD uc-apin-9 18651 black
+ADD uc-apin-10 18651 black
+ADD uc-apin-11 18651 black
+ADD uc-apin-12 18651 black
+CONNECT uc-apin-9.pin1 -> uc-beam7-1.hole4~ STIFF
+CONNECT uc-apin-10.pin1 -> uc-beam7-2.hole4~ STIFF
+CONNECT uc-apin-11.pin1 -> uc-beam7-3.hole4~ STIFF
+CONNECT uc-apin-12.pin1 -> uc-beam7-4.hole4~ STIFF
+DOES uc-apin-9 HOLDS uc-beam7-1
+PATTERN repeat_x4

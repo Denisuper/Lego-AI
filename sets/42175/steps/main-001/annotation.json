@@ -1,0 +1,105 @@
+{
+  "example_id": "42175-step-001",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 2,
+  "step": 1,
+  "input": {
+    "picture": "steps/main-001/picture.png",
+    "parts_box": [
+      {
+        "name": "uc-frame-1",
+        "part_number": "64179",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-1",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-2",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-3",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "uc-pin-4",
+        "part_number": "65304",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Nothing is built yet. Bag 12 is open; the first part is the black 5 x 7 frame."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "uc-frame-1",
+        "part_number": "64179",
+        "catalog_name": "Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "lying flat with its big 3 x 5 opening facing up",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-1",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one long stop-bush pin standing up in each corner hole of the frame",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-2",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one long stop-bush pin standing up in each corner hole of the frame",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-3",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one long stop-bush pin standing up in each corner hole of the frame",
+        "rotation": "fixed"
+      },
+      {
+        "name": "uc-pin-4",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "one long stop-bush pin standing up in each corner hole of the frame",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Each pin is pushed down (green arrow) into one of the four corner holes of the frame, so it stands straight up."
+    ],
+    "who_does_what_to_which": [
+      "uc-pin-1 holds uc-frame-1"
+    ],
+    "where_everything_is_after": [
+      "uc-frame-1 with a pin standing in each of its four corners",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the undercarriage with a stiff rectangular base and four posts to hang the next beams on.",
+      "why_these_parts": "A closed 5 x 7 frame stays square without extra bracing; long pins stick up far enough to carry two layers of beams.",
+      "sets_up_for_later": "Steps 2-4 slide the long beams onto these four posts.",
+      "design_pattern": "pins in the corners"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The pin type is read from the small parts-box picture (black pin with a stop ring); the corner holes are named from the frame's catalog point list, not counted on the picture."
+}

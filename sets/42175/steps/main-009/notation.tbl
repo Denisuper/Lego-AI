@@ -1,0 +1,32 @@
+STEP 9
+ADD trk-beam5-1 32316 lightgray
+ADD trk-beam5-2 32316 lightgray
+ADD trk-axpin-1 18651 black
+ADD trk-axpin-2 18651 black
+ADD trk-axpin-3 18651 black
+ADD trk-axpin-4 18651 black
+ADD trk-tpin-1 3749 tan
+ADD trk-tpin-2 3749 tan
+ADD trk-tpin-3 3749 tan
+ADD trk-tpin-4 3749 tan
+ADD trk-wheel-1 42610 black
+ADD trk-wheel-2 42610 black
+ADD trk-wheel-3 42610 black
+ADD trk-wheel-4 42610 black
+ADD trk-tyre-1 50951 black
+ADD trk-tyre-2 50951 black
+ADD trk-tyre-3 50951 black
+ADD trk-tyre-4 50951 black
+CONNECT trk-axpin-1.pin1 -> trk-beam5-1.hole1~ STIFF
+CONNECT trk-axpin-3.pin1 -> trk-beam5-1.hole5~ STIFF
+CONNECT trk-axpin-2.pin1 -> trk-beam5-2.hole1~ STIFF
+CONNECT trk-axpin-4.pin1 -> trk-beam5-2.hole5~ STIFF
+CONNECT trk-tpin-1.pin1 -> trk-beam5-1.hole2~ TURNS
+CONNECT trk-tpin-2.pin1 -> trk-beam5-1.hole4~ TURNS
+CONNECT trk-tpin-3.pin1 -> trk-beam5-2.hole2~ TURNS
+CONNECT trk-tpin-4.pin1 -> trk-beam5-2.hole4~ TURNS
+DOES trk-wheel-1 SPINS_ON trk-tpin-1
+DOES trk-wheel-2 SPINS_ON trk-tpin-2
+DOES trk-wheel-3 SPINS_ON trk-tpin-3
+DOES trk-wheel-4 SPINS_ON trk-tpin-4
+PATTERN roller_carrier
