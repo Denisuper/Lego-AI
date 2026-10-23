@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-130",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 114,
+  "step": 130,
+  "input": {
+    "picture": "steps/main-130/picture.png",
+    "parts_box": [
+      {
+        "name": "hd-gp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "hd-gp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "hd-gp-3",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "hd-gp-4",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Hood with VOLVO beam (step 129)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hd-gp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the beam's holes on the underside",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd-gp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the beam's holes on the underside",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd-gp-3",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the beam's holes on the underside",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd-gp-4",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "four small dark friction pins in the beam's holes on the underside",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Four small dark pins are pushed into the beam's free holes (the model is turned over)."
+    ],
+    "who_does_what_to_which": [
+      "hd-b9-1 carries hd-gp-1"
+    ],
+    "where_everything_is_after": [
+      "four small dark pins stand in the VOLVO beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds posts for the next beam.",
+      "why_these_parts": "Pins fix a beam on top.",
+      "sets_up_for_later": "Step 131 adds a short beam.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Positions estimated."
+}

@@ -1,0 +1,33 @@
+{
+  "example_id": "42175-step-134",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 115,
+  "step": 134,
+  "input": {
+    "picture": "steps/main-134/picture.png",
+    "parts_box": [],
+    "model_so_far": "Hood (steps 126-133) and the excavator with counterweight (step 125)."
+  },
+  "answer": {
+    "new_parts": [],
+    "what_each_new_part_touches": [
+      "The hood from steps 126-133 is pressed onto the back of the counterweight by its two red pins (green arrows) so the VOLVO beam faces out."
+    ],
+    "who_does_what_to_which": [
+      "cw-panel-1 holds hd-b7-1"
+    ],
+    "where_everything_is_after": [
+      "the hood is fixed to the back of the counterweight",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the machine its rear cover.",
+      "why_these_parts": "Red pins press into the frame's holes.",
+      "sets_up_for_later": "Step 135 builds the roof beams separately.",
+      "design_pattern": "rear hood"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which counterweight holes take the red pins is not shown."
+}

@@ -1,0 +1,5 @@
+STEP 134
+CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?
+CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?
+DOES cw-panel-1 HOLDS hd-b7-1
+PATTERN attach_hood

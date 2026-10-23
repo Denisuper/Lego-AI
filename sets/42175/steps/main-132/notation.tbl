@@ -1,0 +1,12 @@
+STEP 132
+ADD hd-rp-1 11214 red
+ADD hd-rp-2 11214 red
+ADD hd-cb-1 60483 black
+ADD hd-cb-2 60483 black
+CONNECT hd-rp-1.axle1 -> hd-cb-1.axlehole1 LOCKED
+CONNECT hd-rp-2.axle1 -> hd-cb-2.axlehole1 LOCKED
+CONNECT hd-cb-1.hole1 -> hd-b9-1.pin?
+CONNECT hd-cb-2.hole1 -> hd-b9-1.pin?
+DOES hd-cb-1 HOLDS hd-rp-1
+DOES hd-cb-2 HOLDS hd-rp-2
+PATTERN pin_connectors

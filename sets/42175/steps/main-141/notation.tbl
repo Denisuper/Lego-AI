@@ -1,0 +1,6 @@
+STEP 141
+ADD cb-yb5b-1 32316 yellow
+CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF
+CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF
+DOES cb-yb5b-1 HOLDS cb-dp3-1
+PATTERN beam_on_pins

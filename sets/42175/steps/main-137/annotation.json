@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-137",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 120,
+  "step": 137,
+  "input": {
+    "picture": "steps/main-137/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-yb3-1",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "cb-bp7-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cb-dp-1",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Excavator with hood and roof stack (steps 134-136)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-yb3-1",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow 1 x 3 beam (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-bp7-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "blue pin in the yellow beam (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small dark pin in the yellow beam (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a yellow 3-hole beam has a blue pin and a small dark pin. It is placed on the front-left of the frame beside the yellow 5-hole beam (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "cb-yb3-1 carries cb-bp7-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow 3-hole beam with two pins sits at the side of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the yellow trim beam that matches the yellow beam already there.",
+      "why_these_parts": "Pins locate it on the frame.",
+      "sets_up_for_later": "Steps 139 and 141 add more yellow beams.",
+      "design_pattern": "yellow trim"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which frame holes are used is not countable."
+}

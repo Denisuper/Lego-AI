@@ -1,0 +1,6 @@
+STEP 127
+ADD hd-f8-1 2389 black
+ADD hd-f7-1 2387 black
+DOES hd-fair-1 CARRIES hd-f7-1
+DOES hd-fair-1 CARRIES hd-f8-1
+PATTERN end_fairings

@@ -1,0 +1,6 @@
+STEP 129
+ADD hd-b9-1 40490 black
+CONNECT hd-rpin2-1.pin1 -> hd-b9-1.hole1~ STIFF
+CONNECT hd-rpin2-2.pin1 -> hd-b9-1.hole9~ STIFF
+DOES hd-b9-1 HOLDS hd-rpin2-1
+PATTERN beam_on_pins

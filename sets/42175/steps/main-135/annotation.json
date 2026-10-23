@@ -1,0 +1,190 @@
+{
+  "example_id": "42175-step-135",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 116,
+  "step": 135,
+  "input": {
+    "picture": "steps/main-135/picture.png",
+    "parts_box": [
+      {
+        "name": "rf-b11-1",
+        "part_number": "73507",
+        "count": 1
+      },
+      {
+        "name": "rf-b7-1",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "rf-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "rf-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "rf-bp-3",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "rf-b5-1",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "rf-b5-2",
+        "part_number": "32316",
+        "count": 1
+      },
+      {
+        "name": "rf-b4-1",
+        "part_number": "32449",
+        "count": 1
+      },
+      {
+        "name": "rf-gp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rf-gp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rf-gp-3",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the cab roof frame; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rf-b11-1",
+        "part_number": "73507",
+        "catalog_name": "Technic Beam 1 x 11 Thick with Alternating Holes",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam with alternating holes (1:1 box, circled 11)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-b7-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam (1:1 box, circled 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the 11-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the 11-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-bp-3",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the 11-hole beam (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-b5-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "two black 5-hole beams (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-b5-2",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "two black 5-hole beams (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-b4-1",
+        "part_number": "32449",
+        "catalog_name": "Technic Beam 1 x 4 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 4-hole thin beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-gp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark friction pins (sub-step 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-gp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark friction pins (sub-step 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rf-gp-3",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark friction pins (sub-step 3)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-5: blue pins go through the 11-hole beam, a 5-hole beam is placed on two of them, small pins join, the 7-hole beam is pressed on, and another 5-hole beam closes the stack. The finished stack is fitted to the model on page 118 (arrow with green guide lines)."
+    ],
+    "who_does_what_to_which": [
+      "rf-b11-1 carries rf-bp-1",
+      "rf-b7-1 supports rf-b11-1"
+    ],
+    "where_everything_is_after": [
+      "a long layered black beam stack with blue pins is ready for the roof",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the roof support: layered beams make a stiff bar.",
+      "why_these_parts": "Pins locate each layer.",
+      "sets_up_for_later": "Step 136 fits it.",
+      "design_pattern": "roof frame"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Five sub-steps; pin counts per sub-step follow the box (3 blue, 3 dark). The 4-hole beam is read from the icon."
+}

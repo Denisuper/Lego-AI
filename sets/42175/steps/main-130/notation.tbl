@@ -1,0 +1,11 @@
+STEP 130
+ADD hd-gp-1 61332 black
+ADD hd-gp-2 61332 black
+ADD hd-gp-3 61332 black
+ADD hd-gp-4 61332 black
+CONNECT hd-gp-1.pin1 -> hd-b9-1.hole3~ STIFF
+CONNECT hd-gp-2.pin1 -> hd-b9-1.hole4~ STIFF
+CONNECT hd-gp-3.pin1 -> hd-b9-1.hole5~ STIFF
+CONNECT hd-gp-4.pin1 -> hd-b9-1.hole7~ STIFF
+DOES hd-b9-1 CARRIES hd-gp-1
+PATTERN posts

@@ -1,0 +1,6 @@
+STEP 131
+ADD hd-b3-1 32523 black
+CONNECT hd-b3-1.hole1 -> hd-gp-1.pin2~ STIFF
+CONNECT hd-b3-1.hole3 -> hd-gp-3.pin2~ STIFF
+DOES hd-b3-1 SUPPORTS hd-b9-1
+PATTERN beam_on_pins

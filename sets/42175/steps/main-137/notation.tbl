@@ -1,0 +1,9 @@
+STEP 137
+ADD cb-yb3-1 32523 yellow
+ADD cb-bp7-1 43093 blue
+ADD cb-dp-1 61332 black
+CONNECT cb-bp7-1.pin1 -> cb-yb3-1.hole1~ STIFF
+CONNECT cb-dp-1.pin1 -> cb-yb3-1.hole3~ STIFF
+CONNECT cb-yb3-1.hole2 -> cb-bp-1.pin?
+DOES cb-yb3-1 CARRIES cb-bp7-1
+PATTERN beam_with_pins

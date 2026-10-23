@@ -1,0 +1,6 @@
+STEP 133
+ADD hd-b7-1 32524 black
+CONNECT hd-rp-1.pin1 -> hd-b7-1.hole2~ STIFF
+CONNECT hd-rp-2.pin1 -> hd-b7-1.hole6~ STIFF
+DOES hd-b7-1 HOLDS hd-rp-1
+PATTERN beam_on_pins

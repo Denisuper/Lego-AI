@@ -1,0 +1,7 @@
+STEP 128
+ADD hd-rpin2-1 11214 red
+ADD hd-rpin2-2 11214 red
+CONNECT hd-rpin2-1.axle1 -> hd-f7-1.axlehole?
+CONNECT hd-rpin2-2.axle1 -> hd-f8-1.axlehole?
+DOES hd-f7-1 CARRIES hd-rpin2-1
+PATTERN fairing_with_pins

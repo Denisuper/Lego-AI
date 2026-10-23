@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 122 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 141 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -1334,7 +1334,7 @@
 **Why:** Adds a plate that ties the underside together. Thin beams on a pin lock in flat. *Next:* Step 47 attaches the whole assembly to the machine. *Pattern:* underside plate
 
 **Big picture:**
-- **cb-bp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?`.
+- **cb-bp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?`; 42175-step-137 `CONNECT cb-yb3-1.hole2 -> cb-bp-1.pin?`.
 - **cb-tb5-1** (None): None
 - **cb-tb3-1** (None): None
 
@@ -2983,7 +2983,7 @@
 **Why:** Adds a rear cross beam on which the counterweight will sit. A long beam spans the full rear width. *Next:* Steps 113-120 build the counterweight separately. *Pattern:* rear beam
 
 **Big picture:**
-- **up-gb13-1** (None): None Later: 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-122 `CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?`.
+- **up-gb13-1** (None): None Later: 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-122 `CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?`; 42175-step-123 `CONNECT cw-b7d-1.hole? -> up-gb13-1.hole?`.
 
 **Mechanisms:**
 - **up-gb13-1** builds on up-lbeam-1 (42175-step-019), which rests on up-bpin-1 (42175-step-019), up-bpin-2 (42175-step-019); up-lbeam-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
@@ -3007,7 +3007,7 @@
 **Why:** Starts the rear counterweight: a stack of panels and beams. A panel is the base, pins hold the beams above it. *Next:* Step 114 adds a 7-hole beam. *Pattern:* counterweight base
 
 **Big picture:**
-- **cw-panel-1** (None): None Later: 42175-step-114 `DOES cw-b7-1 SUPPORTS cw-panel-1`; 42175-step-119 `CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `DOES cw-panel-1 CARRIES cw-bp2-1`; 42175-step-120 `CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?`; 42175-step-120 `CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?`; 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`.
+- **cw-panel-1** (None): None Later: 42175-step-114 `DOES cw-b7-1 SUPPORTS cw-panel-1`; 42175-step-119 `CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `DOES cw-panel-1 CARRIES cw-bp2-1`; 42175-step-120 `CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?`; 42175-step-120 `CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?`; 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-124 `CONNECT cw-bp6-1.pin1 -> cw-panel-1.hole?`; 42175-step-124 `CONNECT cw-bp6-2.pin1 -> cw-panel-1.hole?`; 42175-step-124 `DOES cw-panel-1 CARRIES cw-bp6-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`; 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`.
 - **cw-gp-1** (None): None Later: 42175-step-114 `CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF`.
 - **cw-gp-2** (None): None Later: 42175-step-114 `CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF`.
 - **cw-gp-3** (None): None
@@ -3133,7 +3133,7 @@
 **Why:** Closes the sandwich. Panels on both ends lock the beams. *Next:* Steps 119-120 add pins and connectors on the sides. *Pattern:* counterweight sandwich
 
 **Big picture:**
-- **cw-panel2-1** (None): None Later: 42175-step-119 `CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?`; 42175-step-119 `CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?`.
+- **cw-panel2-1** (None): None Later: 42175-step-119 `CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?`; 42175-step-119 `CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-3.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-4.pin1 -> cw-panel2-1.hole?`; 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
 
 **Mechanisms:**
 - **cw-panel2-1** builds on cw-gp2-1 (42175-step-117), which rests on cw-b7b-1 (42175-step-116); cw-gp2-2 (42175-step-117), which rests on cw-b7b-1 (42175-step-116)
@@ -3244,3 +3244,488 @@
 - **cw-b7c-1** builds on up-gb13-1 (42175-step-112), which rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
 
 **Review:** Holes not countable.
+
+## 42175-step-123 (page 110) - low - NEEDS REVIEW
+
+![42175-step-123](steps/main-123/picture.png)
+
+**New parts:** cw-b7d-1 (32524, black) - black 7-hole beam with one blue pin (yellow box, 1:1 box circled 7); cw-bp5-1 (43093, blue) - one blue pin in the 7-hole beam end
+
+**Touches:** Yellow box: a 7-hole beam with a blue pin on it. It is lowered onto the frame at the arm-side of the cab (arrow); a green marker shows the pin goes toward the yellow part.
+
+**Exact joins:** cw-bp5-1.pin1 into cw-b7d-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cw-b7d-1.hole? into up-gb13-1.hole? (not shown in booklet)
+
+**Who does what:** cw-b7d-1 carries cw-bp5-1
+
+**After:** a 7-hole beam with a blue pin stands at the frame's side next to the yellow piece; everything else: no change
+
+**Why:** Adds a second side post beside the cab. Beams on both sides of the cab make a box. *Next:* Step 124 adds more pins. *Pattern:* side post
+
+**Big picture:**
+- **cw-b7d-1** (None): None
+- **cw-bp5-1** (None): None
+
+**Mechanisms:**
+- **cw-b7d-1** builds on up-gb13-1 (42175-step-112), which rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
+
+**Review:** Holes not countable.
+
+## 42175-step-124 (page 111) - low - NEEDS REVIEW
+
+![42175-step-124](steps/main-124/picture.png)
+
+**New parts:** cw-bp6-1 (43093, blue) - four blue pins pushed into the rear of the frame (green arrow shows one); cw-bp6-2 (43093, blue) - four blue pins pushed into the rear of the frame (green arrow shows one); cw-bp6-3 (43093, blue) - four blue pins pushed into the rear of the frame (green arrow shows one); cw-bp6-4 (43093, blue) - four blue pins pushed into the rear of the frame (green arrow shows one)
+
+**Touches:** Four blue pins are pushed into the counterweight and the beams around it (one arrow shown).
+
+**Exact joins:** cw-bp6-1.pin1 into cw-panel-1.hole? (not shown in booklet); cw-bp6-2.pin1 into cw-panel-1.hole? (not shown in booklet); cw-bp6-3.pin1 into cw-panel2-1.hole? (not shown in booklet); cw-bp6-4.pin1 into cw-panel2-1.hole? (not shown in booklet)
+
+**Who does what:** cw-panel-1 carries cw-bp6-1
+
+**After:** four blue pins stand around the counterweight; everything else: no change
+
+**Why:** Adds the posts for the top cover. Pins locate the cover. *Next:* Step 125 closes the top. *Pattern:* cover posts
+
+**Big picture:**
+- **cw-bp6-1** (None): None Later: 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
+- **cw-bp6-2** (None): None
+- **cw-bp6-3** (None): None
+- **cw-bp6-4** (None): None
+
+**Mechanisms:**
+- **cw-bp6-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp6-2** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp6-3** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-bp6-4** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+
+**Review:** Which holes take the pins is not countable.
+
+## 42175-step-125 (page 112) - medium - NEEDS REVIEW
+
+![42175-step-125](steps/main-125/picture.png)
+
+**New parts:** 
+
+**Touches:** A red box marks the top of the counterweight: four sticker spots (pages 30, 31, 36 and 37 show the stickers) are on it. No part is added.
+
+**Exact joins:** none
+
+**Who does what:** cw-panel2-1 supports cw-bp6-1
+
+**After:** the counterweight's top shows four sticker spots (stickers added from the sticker sheet); everything else: no change
+
+**Why:** Tells the builder to put the four stickers on the counterweight top. Stickers show the machine's control icons. *Next:* The cab roof follows. *Pattern:* stickers
+
+**Big picture:**
+
+
+**Review:** No parts are added in this step; stickers are not on the parts list.
+
+## 42175-step-126 (page 113) - medium - NEEDS REVIEW
+
+![42175-step-126](steps/main-126/picture.png)
+
+**New parts:** hd-fair-1 (71682, black) - black fairing 2 x 3 x 1; hd-rpin-1 (11214, red) - two red axle pins pushed into the fairing's cross holes; hd-rpin-2 (11214, red) - two red axle pins pushed into the fairing's cross holes
+
+**Touches:** Two red axle pins are pushed into the ends of the black fairing.
+
+**Exact joins:** hd-rpin-1.axle1 into hd-fair-1.axlehole1 (0.9 hole deep, locked (turn together), estimated from the picture); hd-rpin-2.axle1 into hd-fair-1.axlehole3 (0.9 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** hd-fair-1 carries hd-rpin-1
+
+**After:** a black fairing carries two red axle pins; everything else: no change
+
+**Why:** Starts the hood piece. Fairing gives the curved shape. *Next:* Step 127 adds the end pieces. *Pattern:* hood
+
+**Big picture:**
+- **hd-fair-1** (None): None Later: 42175-step-127 `DOES hd-fair-1 CARRIES hd-f7-1`; 42175-step-127 `DOES hd-fair-1 CARRIES hd-f8-1`.
+- **hd-rpin-1** (None): None
+- **hd-rpin-2** (None): None
+
+**Review:** Red pin type read from the icon.
+
+## 42175-step-127 (page 113) - medium - NEEDS REVIEW
+
+![42175-step-127](steps/main-127/picture.png)
+
+**New parts:** hd-f8-1 (2389, black) - black fairing no. 8 (circled 8); hd-f7-1 (2387, black) - black fairing no. 7 (circled 7)
+
+**Touches:** Fairing 7 is placed on the left end and fairing 8 on the right end of the black fairing (picture).
+
+**Exact joins:** none
+
+**Who does what:** hd-fair-1 carries hd-f7-1; hd-fair-1 carries hd-f8-1
+
+**After:** a long curved black hood with a 7 end and an 8 end; everything else: no change
+
+**Why:** Gives the hood its long curved shape. End fairings continue the curve. *Next:* Step 128 adds red pins. *Pattern:* hood
+
+**Big picture:**
+- **hd-f8-1** (None): None Later: 42175-step-128 `CONNECT hd-rpin2-2.axle1 -> hd-f8-1.axlehole?`.
+- **hd-f7-1** (None): None Later: 42175-step-128 `CONNECT hd-rpin2-1.axle1 -> hd-f7-1.axlehole?`; 42175-step-128 `DOES hd-f7-1 CARRIES hd-rpin2-1`.
+
+**Review:** Fairings have no catalog points; joins are open.
+
+## 42175-step-128 (page 113) - low - NEEDS REVIEW
+
+![42175-step-128](steps/main-128/picture.png)
+
+**New parts:** hd-rpin2-1 (11214, red) - two red axle pins, one at each end of the hood (green arrow shows one); hd-rpin2-2 (11214, red) - two red axle pins, one at each end of the hood (green arrow shows one)
+
+**Touches:** A red axle pin is pushed into each end fairing (green arrow).
+
+**Exact joins:** hd-rpin2-1.axle1 into hd-f7-1.axlehole? (not shown in booklet); hd-rpin2-2.axle1 into hd-f8-1.axlehole? (not shown in booklet)
+
+**Who does what:** hd-f7-1 carries hd-rpin2-1
+
+**After:** the hood has a red pin at each end; everything else: no change
+
+**Why:** Adds the pins that the beam in step 129 sits on. Axle pins lock fairings to beams. *Next:* Step 129 adds the VOLVO beam. *Pattern:* hood pins
+
+**Big picture:**
+- **hd-rpin2-1** (None): None Later: 42175-step-129 `CONNECT hd-rpin2-1.pin1 -> hd-b9-1.hole1~ STIFF`; 42175-step-129 `DOES hd-b9-1 HOLDS hd-rpin2-1`.
+- **hd-rpin2-2** (None): None Later: 42175-step-129 `CONNECT hd-rpin2-2.pin1 -> hd-b9-1.hole9~ STIFF`.
+
+**Mechanisms:**
+- **hd-rpin2-1** builds on hd-f7-1 (42175-step-127)
+- **hd-rpin2-2** builds on hd-f8-1 (42175-step-127)
+
+**Review:** Positions read from the picture.
+
+## 42175-step-129 (page 113) - medium - NEEDS REVIEW
+
+![42175-step-129](steps/main-129/picture.png)
+
+**New parts:** hd-b9-1 (40490, black) - black 9-hole beam with a VOLVO sticker (sticker no. 12, 1:1 box circled 9)
+
+**Touches:** Yellow box 1-2: the 9-hole beam gets the VOLVO sticker. It is pressed onto the two red pins (green arrows).
+
+**Exact joins:** hd-rpin2-1.pin1 into hd-b9-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-rpin2-2.pin1 into hd-b9-1.hole9 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** hd-b9-1 holds hd-rpin2-1
+
+**After:** a VOLVO 9-hole beam sits on the hood; everything else: no change
+
+**Why:** Adds the brand beam on the front of the hood. A beam on pins locks both fairing ends. *Next:* Step 130 adds small pins. *Pattern:* brand beam
+
+**Big picture:**
+- **hd-b9-1** (None): None Later: 42175-step-130 `CONNECT hd-gp-1.pin1 -> hd-b9-1.hole3~ STIFF`; 42175-step-130 `CONNECT hd-gp-2.pin1 -> hd-b9-1.hole4~ STIFF`; 42175-step-130 `CONNECT hd-gp-3.pin1 -> hd-b9-1.hole5~ STIFF`; 42175-step-130 `CONNECT hd-gp-4.pin1 -> hd-b9-1.hole7~ STIFF`; 42175-step-130 `DOES hd-b9-1 CARRIES hd-gp-1`; 42175-step-131 `DOES hd-b3-1 SUPPORTS hd-b9-1`; 42175-step-132 `CONNECT hd-cb-1.hole1 -> hd-b9-1.pin?`; 42175-step-132 `CONNECT hd-cb-2.hole1 -> hd-b9-1.pin?`.
+
+**Mechanisms:**
+- **hd-b9-1** builds on hd-rpin2-1 (42175-step-128), which rests on hd-f7-1 (42175-step-127); hd-rpin2-2 (42175-step-128), which rests on hd-f8-1 (42175-step-127)
+
+**Review:** Pin holes estimated.
+
+## 42175-step-130 (page 114) - low - NEEDS REVIEW
+
+![42175-step-130](steps/main-130/picture.png)
+
+**New parts:** hd-gp-1 (61332, black) - four small dark friction pins in the beam's holes on the underside; hd-gp-2 (61332, black) - four small dark friction pins in the beam's holes on the underside; hd-gp-3 (61332, black) - four small dark friction pins in the beam's holes on the underside; hd-gp-4 (61332, black) - four small dark friction pins in the beam's holes on the underside
+
+**Touches:** Four small dark pins are pushed into the beam's free holes (the model is turned over).
+
+**Exact joins:** hd-gp-1.pin1 into hd-b9-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-gp-2.pin1 into hd-b9-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-gp-3.pin1 into hd-b9-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-gp-4.pin1 into hd-b9-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** hd-b9-1 carries hd-gp-1
+
+**After:** four small dark pins stand in the VOLVO beam; everything else: no change
+
+**Why:** Adds posts for the next beam. Pins fix a beam on top. *Next:* Step 131 adds a short beam. *Pattern:* posts
+
+**Big picture:**
+- **hd-gp-1** (None): None Later: 42175-step-131 `CONNECT hd-b3-1.hole1 -> hd-gp-1.pin2~ STIFF`.
+- **hd-gp-2** (None): None
+- **hd-gp-3** (None): None Later: 42175-step-131 `CONNECT hd-b3-1.hole3 -> hd-gp-3.pin2~ STIFF`.
+- **hd-gp-4** (None): None
+
+**Mechanisms:**
+- **hd-gp-1** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-2** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-3** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-4** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+
+**Review:** Positions estimated.
+
+## 42175-step-131 (page 114) - low - NEEDS REVIEW
+
+![42175-step-131](steps/main-131/picture.png)
+
+**New parts:** hd-b3-1 (32523, black) - black 1 x 3 beam
+
+**Touches:** The short beam is pressed onto the grey pins.
+
+**Exact joins:** hd-b3-1.hole1 into hd-gp-1.pin2 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-b3-1.hole3 into hd-gp-3.pin2 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** hd-b3-1 supports hd-b9-1
+
+**After:** a short beam sits in the middle of the hood; everything else: no change
+
+**Why:** Adds the middle spacer. A short beam fills the gap. *Next:* Step 132 adds the red pins' connectors. *Pattern:* spacer
+
+**Big picture:**
+- **hd-b3-1** (None): None
+
+**Mechanisms:**
+- **hd-b3-1** builds on hd-gp-1 (42175-step-130), which rests on hd-b9-1 (42175-step-129); hd-gp-3 (42175-step-130), which rests on hd-b9-1 (42175-step-129)
+
+**Review:** Holes estimated.
+
+## 42175-step-132 (page 114) - low - NEEDS REVIEW
+
+![42175-step-132](steps/main-132/picture.png)
+
+**New parts:** hd-rp-1 (11214, red) - two red axle pins pointing down (yellow box, 2x); hd-rp-2 (11214, red) - two red axle pins pointing down (yellow box, 2x); hd-cb-1 (60483, black) - two black beams with pin and axle hole (yellow box, 2x); hd-cb-2 (60483, black) - two black beams with pin and axle hole (yellow box, 2x)
+
+**Touches:** Yellow box (2x): a red axle pin goes in a small black beam. Two of them are pressed on the hood so the red pins point down (arrows).
+
+**Exact joins:** hd-rp-1.axle1 into hd-cb-1.axlehole1 (1 hole deep, locked (turn together)); hd-rp-2.axle1 into hd-cb-2.axlehole1 (1 hole deep, locked (turn together)); hd-cb-1.hole1 into hd-b9-1.pin? (not shown in booklet); hd-cb-2.hole1 into hd-b9-1.pin? (not shown in booklet)
+
+**Who does what:** hd-cb-1 holds hd-rp-1; hd-cb-2 holds hd-rp-2
+
+**After:** two red pins point down from the hood; everything else: no change
+
+**Why:** Makes the hood's mounting pins. Red pins give a strong fit into the frame. *Next:* Step 133 adds a 7-hole beam on them. *Pattern:* mounting pins
+
+**Big picture:**
+- **hd-rp-1** (None): None Later: 42175-step-133 `CONNECT hd-rp-1.pin1 -> hd-b7-1.hole2~ STIFF`; 42175-step-133 `DOES hd-b7-1 HOLDS hd-rp-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`.
+- **hd-rp-2** (None): None Later: 42175-step-133 `CONNECT hd-rp-2.pin1 -> hd-b7-1.hole6~ STIFF`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`.
+- **hd-cb-1** (None): None
+- **hd-cb-2** (None): None
+
+**Mechanisms:**
+- **hd-cb-1** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-cb-2** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+
+**Review:** Which hood holes they use is estimated.
+
+## 42175-step-133 (page 114) - medium - NEEDS REVIEW
+
+![42175-step-133](steps/main-133/picture.png)
+
+**New parts:** hd-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7)
+
+**Touches:** The 7-hole beam is pushed up onto the two red pins from below (green arrows).
+
+**Exact joins:** hd-rp-1.pin1 into hd-b7-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); hd-rp-2.pin1 into hd-b7-1.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** hd-b7-1 holds hd-rp-1
+
+**After:** a 7-hole beam closes the hood's underside; everything else: no change
+
+**Why:** Ties the hood together underneath. A beam on the red pins locks them. *Next:* Steps 134 onward add parts on the hood. *Pattern:* hood underside
+
+**Big picture:**
+- **hd-b7-1** (None): None Later: 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`; 42175-step-140 `CONNECT cb-dp3-1.pin1 -> hd-b7-1.hole?`; 42175-step-140 `CONNECT cb-dp3-2.pin1 -> hd-b7-1.hole?`; 42175-step-140 `DOES hd-b7-1 CARRIES cb-dp3-1`.
+
+**Mechanisms:**
+- **hd-b7-1** builds on hd-rp-1 (42175-step-132), which rests on hd-cb-1 (42175-step-132); hd-rp-2 (42175-step-132), which rests on hd-cb-2 (42175-step-132)
+
+**Review:** Holes estimated.
+
+## 42175-step-134 (page 115) - medium - NEEDS REVIEW
+
+![42175-step-134](steps/main-134/picture.png)
+
+**New parts:** 
+
+**Touches:** The hood from steps 126-133 is pressed onto the back of the counterweight by its two red pins (green arrows) so the VOLVO beam faces out.
+
+**Exact joins:** hd-rp-1.pin2 into cw-panel-1.hole? (not shown in booklet); hd-rp-2.pin2 into cw-panel-1.hole? (not shown in booklet)
+
+**Who does what:** cw-panel-1 holds hd-b7-1
+
+**After:** the hood is fixed to the back of the counterweight; everything else: no change
+
+**Why:** Gives the machine its rear cover. Red pins press into the frame's holes. *Next:* Step 135 builds the roof beams separately. *Pattern:* rear hood
+
+**Big picture:**
+
+
+**Review:** Which counterweight holes take the red pins is not shown.
+
+## 42175-step-135 (page 116) - low - NEEDS REVIEW
+
+![42175-step-135](steps/main-135/picture.png)
+
+**New parts:** rf-b11-1 (73507, black) - black 11-hole beam with alternating holes (1:1 box, circled 11); rf-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7); rf-bp-1 (43093, blue) - three blue pins pushed through the 11-hole beam (sub-step 1); rf-bp-2 (43093, blue) - three blue pins pushed through the 11-hole beam (sub-step 1); rf-bp-3 (43093, blue) - three blue pins pushed through the 11-hole beam (sub-step 1); rf-b5-1 (32316, black) - two black 5-hole beams (1:1 box, circled 5); rf-b5-2 (32316, black) - two black 5-hole beams (1:1 box, circled 5); rf-b4-1 (32449, black) - black 4-hole thin beam; rf-gp-1 (61332, black) - three small dark friction pins (sub-step 3); rf-gp-2 (61332, black) - three small dark friction pins (sub-step 3); rf-gp-3 (61332, black) - three small dark friction pins (sub-step 3)
+
+**Touches:** Sub-steps 1-5: blue pins go through the 11-hole beam, a 5-hole beam is placed on two of them, small pins join, the 7-hole beam is pressed on, and another 5-hole beam closes the stack. The finished stack is fitted to the model on page 118 (arrow with green guide lines).
+
+**Exact joins:** rf-bp-1.pin1 into rf-b11-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); rf-bp-2.pin1 into rf-b11-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); rf-bp-3.pin1 into rf-b11-1.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); rf-gp-1.pin1 into rf-b11-1.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); rf-gp-2.pin1 into rf-b11-1.hole11 (0.9 hole deep, held stiff by friction, estimated from the picture); rf-bp-1.axle1 into rf-b7-1.hole? (not shown in booklet)
+
+**Who does what:** rf-b11-1 carries rf-bp-1; rf-b7-1 supports rf-b11-1
+
+**After:** a long layered black beam stack with blue pins is ready for the roof; everything else: no change
+
+**Why:** Builds the roof support: layered beams make a stiff bar. Pins locate each layer. *Next:* Step 136 fits it. *Pattern:* roof frame
+
+**Big picture:**
+- **rf-b11-1** (None): None Later: 42175-step-136 `DOES rf-b5b-1 SUPPORTS rf-b11-1`; 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
+- **rf-b7-1** (None): None
+- **rf-bp-1** (None): None Later: 42175-step-136 `CONNECT rf-b5b-1.hole? -> rf-bp-1.pin?`.
+- **rf-bp-2** (None): None
+- **rf-bp-3** (None): None
+- **rf-b5-1** (None): None Later: 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
+- **rf-b5-2** (None): None
+- **rf-b4-1** (None): None
+- **rf-gp-1** (None): None
+- **rf-gp-2** (None): None
+- **rf-gp-3** (None): None
+
+**Review:** Five sub-steps; pin counts per sub-step follow the box (3 blue, 3 dark). The 4-hole beam is read from the icon.
+
+## 42175-step-136 (page 119) - medium - NEEDS REVIEW
+
+![42175-step-136](steps/main-136/picture.png)
+
+**New parts:** rf-b5b-1 (32316, black) - black 5-hole beam on top of the stack (1:1 box, circled 5)
+
+**Touches:** The finished stack from step 135 is on the model's rear frame with a 5-hole beam being added on top (tag 5).
+
+**Exact joins:** rf-b5b-1.hole? into rf-bp-1.pin? (not shown in booklet)
+
+**Who does what:** rf-b5b-1 supports rf-b11-1; rf-b11-1 carries rf-b5-1
+
+**After:** the roof stack and an extra 5-hole beam sit on the rear frame; everything else: no change
+
+**Why:** Fixes the roof stack to the frame. The beam on pins holds it down. *Next:* Steps 137 onward add the cab. *Pattern:* roof stack
+
+**Big picture:**
+- **rf-b5b-1** (None): None
+
+**Mechanisms:**
+- **rf-b5b-1** builds on rf-bp-1 (42175-step-135), which rests on rf-b11-1 (42175-step-135), rf-b7-1 (42175-step-135)
+
+**Review:** Page 118 has the stack fitted by arrows (no new number); the stack is read as being attached in the same step.
+
+## 42175-step-137 (page 120) - medium - NEEDS REVIEW
+
+![42175-step-137](steps/main-137/picture.png)
+
+**New parts:** cb-yb3-1 (32523, yellow) - yellow 1 x 3 beam (yellow box); cb-bp7-1 (43093, blue) - blue pin in the yellow beam (yellow box); cb-dp-1 (61332, black) - small dark pin in the yellow beam (yellow box)
+
+**Touches:** Yellow box: a yellow 3-hole beam has a blue pin and a small dark pin. It is placed on the front-left of the frame beside the yellow 5-hole beam (arrow).
+
+**Exact joins:** cb-bp7-1.pin1 into cb-yb3-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-dp-1.pin1 into cb-yb3-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-yb3-1.hole2 into cb-bp-1.pin? (not shown in booklet)
+
+**Who does what:** cb-yb3-1 carries cb-bp7-1
+
+**After:** a yellow 3-hole beam with two pins sits at the side of the frame; everything else: no change
+
+**Why:** Adds the yellow trim beam that matches the yellow beam already there. Pins locate it on the frame. *Next:* Steps 139 and 141 add more yellow beams. *Pattern:* yellow trim
+
+**Big picture:**
+- **cb-yb3-1** (None): None Later: 42175-step-139 `CONNECT cb-yb5-1.hole? -> cb-yb3-1.hole?`.
+- **cb-bp7-1** (None): None
+- **cb-dp-1** (None): None
+
+**Mechanisms:**
+- **cb-yb3-1** builds on cb-bp-1 (42175-step-046), which rests on cb-tb5-1 (42175-step-046), cb-tb3-1 (42175-step-046)
+
+**Review:** Which frame holes are used is not countable.
+
+## 42175-step-138 (page 121) - low - NEEDS REVIEW
+
+![42175-step-138](steps/main-138/picture.png)
+
+**New parts:** cr-tb-1 (41677, black) - four small black thin beams (sub-steps 1-2); cr-tb-2 (41677, black) - four small black thin beams (sub-steps 1-2); cr-tb-3 (41677, black) - four small black thin beams (sub-steps 1-2); cr-tb-4 (41677, black) - four small black thin beams (sub-steps 1-2); cr-conn-1 (42003, black) - black connector with pin holes; cr-rax-1 (32062, red) - red 2-long notched axle (sub-step 6, yellow box); cr-hub-1 (44874, black) - black hub with pins (sub-steps 3-4); cr-fair-1 (2395, black) - black curved fairing no. 9 (circled 9); cr-yax-1 (4519, yellow) - two yellow 3-long axles (1:1 box, circled 3); cr-yax-2 (4519, yellow) - two yellow 3-long axles (1:1 box, circled 3)
+
+**Touches:** Sub-steps 1-6: two yellow axles each get thin beams on both ends, a black hub and the connector hold them at right angles, and the curved fairing 9 gets a red axle (yellow box). The finished corner piece is fitted to the lower left of the frame (page 122, green guide lines).
+
+**Exact joins:** cr-yax-1.axle1 into cr-tb-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cr-yax-1.axle3 into cr-tb-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cr-yax-2.axle1 into cr-tb-3.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cr-yax-2.axle3 into cr-tb-4.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cr-rax-1.axle1 into cr-fair-1.axlehole? (not shown in booklet); cr-hub-1.hole? into cr-yax-1.axle2? (not shown in booklet)
+
+**Who does what:** cr-yax-1 carries cr-tb-1; cr-hub-1 holds cr-yax-2; cr-fair-1 carries cr-rax-1
+
+**After:** a black corner piece with yellow axles and a curved fairing is fitted to the frame's lower left; everything else: no change
+
+**Why:** Builds the front-left corner cover/hinge. Axles with end beams make a rigid corner. *Next:* Step 139 adds yellow beams above. *Pattern:* corner piece
+
+**Big picture:**
+- **cr-tb-1** (None): None
+- **cr-tb-2** (None): None
+- **cr-tb-3** (None): None
+- **cr-tb-4** (None): None
+- **cr-conn-1** (None): None
+- **cr-rax-1** (None): None
+- **cr-hub-1** (None): None
+- **cr-fair-1** (None): None
+- **cr-yax-1** (None): None
+- **cr-yax-2** (None): None
+
+**Review:** Six sub-steps from small icons; several part identities (hub, connector, thin beams) are estimates. Fitting to the frame is shown on page 122 without a step number.
+
+## 42175-step-139 (page 123) - medium - NEEDS REVIEW
+
+![42175-step-139](steps/main-139/picture.png)
+
+**New parts:** cb-yb5-1 (32316, yellow) - yellow 5-hole beam (1:1 box, circled 5); cb-bp8-1 (43093, blue) - blue pin in the yellow beam (yellow box); cb-dp2-1 (61332, black) - small dark pin in the yellow beam (yellow box)
+
+**Touches:** Yellow box: the yellow 5-hole beam has a blue pin and a dark pin. It is pushed down onto the frame next to the yellow 3-hole beam (green arrow).
+
+**Exact joins:** cb-bp8-1.pin1 into cb-yb5-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-dp2-1.pin1 into cb-yb5-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-yb5-1.hole? into cb-yb3-1.hole? (not shown in booklet)
+
+**Who does what:** cb-yb5-1 carries cb-bp8-1
+
+**After:** a yellow 5-hole beam with two pins sits next to the yellow 3-hole beam; everything else: no change
+
+**Why:** Extends the yellow trim along the frame side. Same piece as step 137 but longer. *Next:* Step 140 adds pins on top. *Pattern:* yellow trim
+
+**Big picture:**
+- **cb-yb5-1** (None): None
+- **cb-bp8-1** (None): None
+- **cb-dp2-1** (None): None
+
+**Mechanisms:**
+- **cb-yb5-1** builds on cb-yb3-1 (42175-step-137), which rests on cb-bp7-1 (42175-step-137), cb-dp-1 (42175-step-137)
+
+**Review:** Frame holes are not countable.
+
+## 42175-step-140 (page 124) - medium - NEEDS REVIEW
+
+![42175-step-140](steps/main-140/picture.png)
+
+**New parts:** cb-dp3-1 (61332, black) - two small dark pins pushed into the frame's top (yellow box, 2x); cb-dp3-2 (61332, black) - two small dark pins pushed into the frame's top (yellow box, 2x)
+
+**Touches:** Yellow box 2x: two small dark pins are pushed into the top of the frame (two arrows).
+
+**Exact joins:** cb-dp3-1.pin1 into hd-b7-1.hole? (not shown in booklet); cb-dp3-2.pin1 into hd-b7-1.hole? (not shown in booklet)
+
+**Who does what:** hd-b7-1 carries cb-dp3-1
+
+**After:** two small dark pins stand up from the frame beside the yellow trim; everything else: no change
+
+**Why:** Adds posts for the next yellow beam. Pins locate parts above. *Next:* Step 141 lays a yellow beam over them. *Pattern:* posts
+
+**Big picture:**
+- **cb-dp3-1** (None): None Later: 42175-step-141 `CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF`; 42175-step-141 `DOES cb-yb5b-1 HOLDS cb-dp3-1`.
+- **cb-dp3-2** (None): None Later: 42175-step-141 `CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF`.
+
+**Mechanisms:**
+- **cb-dp3-1** builds on hd-b7-1 (42175-step-133), which rests on hd-rp-1 (42175-step-132), hd-rp-2 (42175-step-132)
+- **cb-dp3-2** builds on hd-b7-1 (42175-step-133), which rests on hd-rp-1 (42175-step-132), hd-rp-2 (42175-step-132)
+
+**Review:** Which frame holes are used is not countable.
+
+## 42175-step-141 (page 125) - medium - NEEDS REVIEW
+
+![42175-step-141](steps/main-141/picture.png)
+
+**New parts:** cb-yb5b-1 (32316, yellow) - yellow 5-hole beam (1:1 box, circled 5)
+
+**Touches:** The yellow 5-hole beam is pressed onto the two dark pins (picture, tag 5).
+
+**Exact joins:** cb-dp3-1.pin2 into cb-yb5b-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-dp3-2.pin2 into cb-yb5b-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** cb-yb5b-1 holds cb-dp3-1
+
+**After:** a yellow 5-hole beam covers the two dark pins; everything else: no change
+
+**Why:** Finishes the yellow trim line. A beam over pins locks them. *Next:* Next steps continue with the roof. *Pattern:* yellow trim
+
+**Big picture:**
+- **cb-yb5b-1** (None): None
+
+**Mechanisms:**
+- **cb-yb5b-1** builds on cb-dp3-1 (42175-step-140), which rests on hd-b7-1 (42175-step-133); cb-dp3-2 (42175-step-140), which rests on hd-b7-1 (42175-step-133)
+
+**Review:** Holes estimated.

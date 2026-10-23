@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-128",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 113,
+  "step": 128,
+  "input": {
+    "picture": "steps/main-128/picture.png",
+    "parts_box": [
+      {
+        "name": "hd-rpin2-1",
+        "part_number": "11214",
+        "count": 1
+      },
+      {
+        "name": "hd-rpin2-2",
+        "part_number": "11214",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Hood with end fairings (step 127)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hd-rpin2-1",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "two red axle pins, one at each end of the hood (green arrow shows one)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd-rpin2-2",
+        "part_number": "11214",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "two red axle pins, one at each end of the hood (green arrow shows one)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A red axle pin is pushed into each end fairing (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "hd-f7-1 carries hd-rpin2-1"
+    ],
+    "where_everything_is_after": [
+      "the hood has a red pin at each end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the pins that the beam in step 129 sits on.",
+      "why_these_parts": "Axle pins lock fairings to beams.",
+      "sets_up_for_later": "Step 129 adds the VOLVO beam.",
+      "design_pattern": "hood pins"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Positions read from the picture."
+}

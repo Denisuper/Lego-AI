@@ -1,0 +1,50 @@
+{
+  "example_id": "42175-step-136",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 119,
+  "step": 136,
+  "input": {
+    "picture": "steps/main-136/picture.png",
+    "parts_box": [
+      {
+        "name": "rf-b5b-1",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Excavator with hood (step 134) and the roof beam stack (step 135)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rf-b5b-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam on top of the stack (1:1 box, circled 5)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The finished stack from step 135 is on the model's rear frame with a 5-hole beam being added on top (tag 5)."
+    ],
+    "who_does_what_to_which": [
+      "rf-b5b-1 supports rf-b11-1",
+      "rf-b11-1 carries rf-b5-1"
+    ],
+    "where_everything_is_after": [
+      "the roof stack and an extra 5-hole beam sit on the rear frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Fixes the roof stack to the frame.",
+      "why_these_parts": "The beam on pins holds it down.",
+      "sets_up_for_later": "Steps 137 onward add the cab.",
+      "design_pattern": "roof stack"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Page 118 has the stack fitted by arrows (no new number); the stack is read as being attached in the same step."
+}

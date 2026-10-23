@@ -1,0 +1,7 @@
+STEP 140
+ADD cb-dp3-1 61332 black
+ADD cb-dp3-2 61332 black
+CONNECT cb-dp3-1.pin1 -> hd-b7-1.hole?
+CONNECT cb-dp3-2.pin1 -> hd-b7-1.hole?
+DOES hd-b7-1 CARRIES cb-dp3-1
+PATTERN posts

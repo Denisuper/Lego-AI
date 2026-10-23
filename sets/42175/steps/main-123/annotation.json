@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-123",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 110,
+  "step": 123,
+  "input": {
+    "picture": "steps/main-123/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-b7d-1",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "cw-bp5-1",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Counterweight and a side beam on the frame (steps 121-122)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-b7d-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam with one blue pin (yellow box, 1:1 box circled 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp5-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "one blue pin in the 7-hole beam end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a 7-hole beam with a blue pin on it. It is lowered onto the frame at the arm-side of the cab (arrow); a green marker shows the pin goes toward the yellow part."
+    ],
+    "who_does_what_to_which": [
+      "cw-b7d-1 carries cw-bp5-1"
+    ],
+    "where_everything_is_after": [
+      "a 7-hole beam with a blue pin stands at the frame's side next to the yellow piece",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a second side post beside the cab.",
+      "why_these_parts": "Beams on both sides of the cab make a box.",
+      "sets_up_for_later": "Step 124 adds more pins.",
+      "design_pattern": "side post"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

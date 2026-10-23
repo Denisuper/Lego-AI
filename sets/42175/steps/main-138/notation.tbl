@@ -1,0 +1,21 @@
+STEP 138
+ADD cr-tb-1 41677 black
+ADD cr-tb-2 41677 black
+ADD cr-tb-3 41677 black
+ADD cr-tb-4 41677 black
+ADD cr-conn-1 42003 black
+ADD cr-rax-1 32062 red
+ADD cr-hub-1 44874 black
+ADD cr-fair-1 2395 black
+ADD cr-yax-1 4519 yellow
+ADD cr-yax-2 4519 yellow
+CONNECT cr-yax-1.axle1 -> cr-tb-1.axlehole1~ LOCKED
+CONNECT cr-yax-1.axle3 -> cr-tb-2.axlehole1~ LOCKED
+CONNECT cr-yax-2.axle1 -> cr-tb-3.axlehole1~ LOCKED
+CONNECT cr-yax-2.axle3 -> cr-tb-4.axlehole1~ LOCKED
+CONNECT cr-rax-1.axle1 -> cr-fair-1.axlehole?
+CONNECT cr-hub-1.hole? -> cr-yax-1.axle2?
+DOES cr-yax-1 CARRIES cr-tb-1
+DOES cr-hub-1 HOLDS cr-yax-2
+DOES cr-fair-1 CARRIES cr-rax-1
+PATTERN corner_piece

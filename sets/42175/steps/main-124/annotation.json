@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-124",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 111,
+  "step": 124,
+  "input": {
+    "picture": "steps/main-124/picture.png",
+    "parts_box": [
+      {
+        "name": "cw-bp6-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp6-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp6-3",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cw-bp6-4",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Frame with two side beams (step 123)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cw-bp6-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "four blue pins pushed into the rear of the frame (green arrow shows one)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp6-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "four blue pins pushed into the rear of the frame (green arrow shows one)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp6-3",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "four blue pins pushed into the rear of the frame (green arrow shows one)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cw-bp6-4",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "four blue pins pushed into the rear of the frame (green arrow shows one)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Four blue pins are pushed into the counterweight and the beams around it (one arrow shown)."
+    ],
+    "who_does_what_to_which": [
+      "cw-panel-1 carries cw-bp6-1"
+    ],
+    "where_everything_is_after": [
+      "four blue pins stand around the counterweight",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the posts for the top cover.",
+      "why_these_parts": "Pins locate the cover.",
+      "sets_up_for_later": "Step 125 closes the top.",
+      "design_pattern": "cover posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which holes take the pins is not countable."
+}

@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-133",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 114,
+  "step": 133,
+  "input": {
+    "picture": "steps/main-133/picture.png",
+    "parts_box": [
+      {
+        "name": "hd-b7-1",
+        "part_number": "32524",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Hood with two downward pins (step 132)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hd-b7-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam (1:1 box, circled 7)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 7-hole beam is pushed up onto the two red pins from below (green arrows)."
+    ],
+    "who_does_what_to_which": [
+      "hd-b7-1 holds hd-rp-1"
+    ],
+    "where_everything_is_after": [
+      "a 7-hole beam closes the hood's underside",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Ties the hood together underneath.",
+      "why_these_parts": "A beam on the red pins locks them.",
+      "sets_up_for_later": "Steps 134 onward add parts on the hood.",
+      "design_pattern": "hood underside"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Holes estimated."
+}
