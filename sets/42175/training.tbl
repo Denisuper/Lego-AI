@@ -4306,3 +4306,286 @@ CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?
 CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?
 DOES rs-b5c-1 HOLDS cn-ax6-1
 PATTERN attach_corner
+
+STEP 164
+THINK have Excavator with the cab corner fitted (step 163).
+THINK goal Adds the posts for the corner covers.
+THINK part cn-dp4-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark pins pushed into the rear right corner (one green arrow shown); fixed
+THINK part cn-dp4-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark pins pushed into the rear right corner (one green arrow shown); fixed
+THINK part cn-dp4-3 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark pins pushed into the rear right corner (one green arrow shown); fixed
+THINK part cn-dp4-4 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): four small dark pins pushed into the rear right corner (one green arrow shown); fixed
+THINK touches Four small dark pins are pushed into the top of the rear right corner (green arrow shows one going down).
+THINK does cn-fair-1 carries cn-dp4-1
+THINK why Pins locate the two fairings of step 165.
+THINK check cn-dp4-1.pin1 goes into cn-fair-1.hole? (not shown in the booklet)
+THINK check cn-dp4-2.pin1 goes into cn-fair-1.hole? (not shown in the booklet)
+THINK check cn-dp4-3.pin1 goes into rs-b11-1.hole? (not shown in the booklet)
+THINK check cn-dp4-4.pin1 goes into rs-b11-1.hole? (not shown in the booklet)
+THINK builds_on cn-dp4-1 builds on cn-fair-1 (42175-step-162), and rests on cn-rax2-1 (42175-step-162)
+THINK builds_on cn-dp4-2 builds on cn-fair-1 (42175-step-162), and rests on cn-rax2-1 (42175-step-162)
+THINK builds_on cn-dp4-3 builds on rs-b11-1 (42175-step-144), and rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+THINK builds_on cn-dp4-4 builds on rs-b11-1 (42175-step-144), and rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+THINK later Step 165 clips the fairings on. Pattern: cover posts
+ADD cn-dp4-1 61332 black
+ADD cn-dp4-2 61332 black
+ADD cn-dp4-3 61332 black
+ADD cn-dp4-4 61332 black
+CONNECT cn-dp4-1.pin1 -> cn-fair-1.hole?
+CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?
+CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?
+CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?
+DOES cn-fair-1 CARRIES cn-dp4-1
+PATTERN posts
+
+STEP 165
+THINK have Corner posts on the right rear (step 164).
+THINK goal Gives the corner its finished shape and warning marks.
+THINK part cv-f1-1 (87080 Technic Panel Fairing #1 Small Smooth Short, Side A): black small fairing no. 1 with warning stickers 27 and 28 (yellow box 1-2); fixed
+THINK part cv-f2-1 (87086 Technic Panel Fairing #2 Small Smooth Short, Side B): black small fairing no. 2 (the mirror part) with stickers; fixed
+THINK touches Two yellow boxes: fairing 1 and fairing 2 each get a red/yellow warning sticker (27 and 28), then each is pressed onto the corner posts (arrows with green guide lines).
+THINK does cv-f1-1 supports cv-f2-1
+THINK why Fairings hide the pins and beams.
+THINK check cv-f1-1.hole? goes into cn-dp4-1.pin2? (not shown in the booklet)
+THINK check cv-f2-1.hole? goes into cn-dp4-3.pin2? (not shown in the booklet)
+THINK builds_on cv-f1-1 builds on cn-dp4-1 (42175-step-164), and rests on cn-fair-1 (42175-step-162)
+THINK builds_on cv-f2-1 builds on cn-dp4-3 (42175-step-164), and rests on rs-b11-1 (42175-step-144)
+THINK later Step 166 builds a yellow bar. Pattern: corner covers
+ADD cv-f1-1 87080 black
+ADD cv-f2-1 87086 black
+CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?
+CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?
+DOES cv-f1-1 SUPPORTS cv-f2-1
+PATTERN cover_fairings
+
+STEP 166
+THINK have Excavator with covers (step 165).
+THINK goal Adds the long yellow trim on the right side, matching the left.
+THINK part yb-b9-1 (40490 Technic Beam 1 x 9 Thick): yellow 9-hole beam (1:1 box, circled 9); fixed
+THINK part yb-hub-1 (65487 Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Square Holes]): blue hub with one pin (yellow box 2); fixed
+THINK part yb-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark pins in the yellow beam (yellow box 1); fixed
+THINK part yb-dp-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small dark pins in the yellow beam (yellow box 1); fixed
+THINK part yb-gp-1 (3673 Technic Pin without Friction Ridges Lengthwise): small grey frictionless pin pushed in after the hub (green arrow in yellow box 2); fixed
+THINK touches Yellow box 1-2: two dark pins go in the yellow beam, then a blue hub and a small grey pin at its end. The yellow beam is placed on the right side of the cab box (arrow).
+THINK does yb-b9-1 carries yb-dp-1
+THINK does yb-hub-1 holds yb-gp-1
+THINK why Pins locate it on the frame.
+THINK check yb-dp-1.pin1 goes into yb-b9-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check yb-dp-2.pin1 goes into yb-b9-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check yb-hub-1.pin1 goes into yb-b9-1.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check yb-gp-1.pin1 goes into yb-hub-1.hole1, 0.9 hole deep, turns freely (estimated from the picture)
+THINK later Step 167 builds the right ELECTRIC cover. Pattern: right yellow trim
+ADD yb-b9-1 40490 yellow
+ADD yb-hub-1 65487 blue
+ADD yb-dp-1 61332 black
+ADD yb-dp-2 61332 black
+ADD yb-gp-1 3673 lightgray
+CONNECT yb-dp-1.pin1 -> yb-b9-1.hole2~ STIFF
+CONNECT yb-dp-2.pin1 -> yb-b9-1.hole3~ STIFF
+CONNECT yb-hub-1.pin1 -> yb-b9-1.hole9~ STIFF
+CONNECT yb-gp-1.pin1 -> yb-hub-1.hole1~ TURNS
+DOES yb-b9-1 CARRIES yb-dp-1
+DOES yb-hub-1 HOLDS yb-gp-1
+PATTERN beam_with_posts
+
+STEP 167
+THINK have (new build: the right ELECTRIC side cover; fitted to the frame on page 141)
+THINK goal Builds the right side cover with the machine's ELECTRIC label.
+THINK part sc2-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (sub-step 5); fixed
+THINK part sc2-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (sub-step 5); fixed
+THINK part sc2-yax-1 (4519 Technic Axle 3): yellow 3-long axle (1:1 box, circled 3); fixed
+THINK part sc2-lb-1 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams with stickers 23, 16 and 10; fixed
+THINK part sc2-lb-2 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams with stickers 23, 16 and 10; fixed
+THINK part sc2-lb-3 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams with stickers 23, 16 and 10; fixed
+THINK part sc2-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin (sub-step 3); fixed
+THINK touches Sub-steps 1-5, the same as step 142 but mirrored: yellow axle in the first L-beam (sticker 23), dark pin in the second (sticker 16), stacked, a third beam (sticker 10) on top, two blue pins from the side. The finished cover is pressed onto the frame's right side (page 141, arrow).
+THINK does sc2-lb-1 carries sc2-yax-1
+THINK does sc2-lb-2 supports sc2-lb-1
+THINK does sc2-lb-3 supports sc2-lb-2
+THINK why It mirrors the left cover so both sides match.
+THINK check sc2-yax-1.axle1 goes into sc2-lb-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check sc2-dp-1.pin1 goes into sc2-lb-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sc2-bp-1.pin1 goes into sc2-lb-3.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sc2-bp-2.pin1 goes into sc2-lb-3.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Step 168 adds the yellow cover. Pattern: right side cover
+ADD sc2-bp-1 43093 blue
+ADD sc2-bp-2 43093 blue
+ADD sc2-yax-1 4519 yellow
+ADD sc2-lb-1 32140 black
+ADD sc2-lb-2 32140 black
+ADD sc2-lb-3 32140 black
+ADD sc2-dp-1 61332 black
+CONNECT sc2-yax-1.axle1 -> sc2-lb-1.axlehole1~ LOCKED
+CONNECT sc2-dp-1.pin1 -> sc2-lb-2.hole1~ STIFF
+CONNECT sc2-bp-1.pin1 -> sc2-lb-3.hole2~ STIFF
+CONNECT sc2-bp-2.pin1 -> sc2-lb-3.hole3~ STIFF
+DOES sc2-lb-1 CARRIES sc2-yax-1
+DOES sc2-lb-2 SUPPORTS sc2-lb-1
+DOES sc2-lb-3 SUPPORTS sc2-lb-2
+PATTERN stacked_covers
+
+STEP 168
+THINK have Frame with the right side cover fitted (step 167).
+THINK goal Matches the left yellow cover with the model name.
+THINK part yc-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (yellow box 1-2); fixed
+THINK part yc-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (yellow box 1-2); fixed
+THINK part yc-panel-1 (71709 Technic Panel 3 x 7 x 1): yellow 3 x 7 panel with the EC230 sticker no. 15 (yellow box 3-4); fixed
+THINK part yc-tb-1 (41677 Technic Beam 1 x 2 Thin): two small yellow thin beams (yellow box 1); fixed
+THINK part yc-tb-2 (41677 Technic Beam 1 x 2 Thin): two small yellow thin beams (yellow box 1); fixed
+THINK touches Yellow box 1-4: two blue pins each get a yellow thin beam, they are pushed into the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on the right side cover (arrow).
+THINK does yc-panel-1 supports yc-tb-1
+THINK does yc-tb-1 holds yc-bp-1
+THINK why The yellow top finishes the right side.
+THINK check yc-bp-1.axle1 goes into yc-tb-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check yc-bp-2.axle1 goes into yc-tb-2.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check yc-bp-1.pin1 goes into yc-panel-1.hole? (not shown in the booklet)
+THINK check yc-bp-2.pin1 goes into yc-panel-1.hole? (not shown in the booklet)
+THINK later Steps 169 onward build the cab. Pattern: right EC230 cover
+ADD yc-bp-1 43093 blue
+ADD yc-bp-2 43093 blue
+ADD yc-panel-1 71709 yellow
+ADD yc-tb-1 41677 yellow
+ADD yc-tb-2 41677 yellow
+CONNECT yc-bp-1.axle1 -> yc-tb-1.axlehole1~ LOCKED
+CONNECT yc-bp-2.axle1 -> yc-tb-2.axlehole1~ LOCKED
+CONNECT yc-bp-1.pin1 -> yc-panel-1.hole?
+CONNECT yc-bp-2.pin1 -> yc-panel-1.hole?
+DOES yc-panel-1 SUPPORTS yc-tb-1
+DOES yc-tb-1 HOLDS yc-bp-1
+PATTERN cover_panel
+
+STEP 169
+THINK have Excavator with both yellow EC230 side covers (steps 143, 168).
+THINK goal Builds the yellow upright (roof pillar) for the cab.
+THINK part ca-yl-1 (32526 Technic Beam 3 x 5 L-Shape Thick): yellow 3 x 5 L-beam; fixed
+THINK part ca-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins in the L-beam (yellow box 1-2); fixed
+THINK part ca-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins in the L-beam (yellow box 1-2); fixed
+THINK part ca-bp-3 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins in the L-beam (yellow box 1-2); fixed
+THINK part ca-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin added at the beam end (yellow box 2); fixed
+THINK touches Yellow box 1-2: two blue pins go in the long side of the yellow L-beam, a third pin from the side (green arrow) and a dark pin at the end. The L-beam is placed on the right-rear of the cab box (arrow).
+THINK does ca-yl-1 carries ca-bp-1
+THINK why Pins locate the next beams.
+THINK check ca-bp-1.pin1 goes into ca-yl-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-bp-2.pin1 goes into ca-yl-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-bp-3.pin1 goes into ca-yl-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-dp-1.pin1 goes into ca-yl-1.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Step 170 adds the yellow roof beams. Pattern: roof pillar
+ADD ca-yl-1 32526 yellow
+ADD ca-bp-1 43093 blue
+ADD ca-bp-2 43093 blue
+ADD ca-bp-3 43093 blue
+ADD ca-dp-1 61332 black
+CONNECT ca-bp-1.pin1 -> ca-yl-1.hole1~ STIFF
+CONNECT ca-bp-2.pin1 -> ca-yl-1.hole2~ STIFF
+CONNECT ca-bp-3.pin1 -> ca-yl-1.hole5~ STIFF
+CONNECT ca-dp-1.pin1 -> ca-yl-1.hole4~ STIFF
+DOES ca-yl-1 CARRIES ca-bp-1
+PATTERN beam_with_posts
+
+STEP 170
+THINK have Cab box with a yellow pillar (step 169).
+THINK goal Builds the yellow roof rail.
+THINK part ca-yb9-1 (40490 Technic Beam 1 x 9 Thick): yellow 9-hole beam (1:1 box, circled 9); fixed
+THINK part ca-ytb-1 (32017 Technic Beam 1 x 5 Thin): two yellow thin 5-hole beams (sub-step 2); fixed
+THINK part ca-ytb-2 (32017 Technic Beam 1 x 5 Thin): two yellow thin 5-hole beams (sub-step 2); fixed
+THINK part ca-dp2-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK part ca-dp2-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK part ca-dp2-3 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins in the 9-hole beam (sub-step 1); fixed
+THINK touches Yellow box 1-2: three dark pins in the yellow 9-hole beam, then a thin yellow beam over two of them (green arrows). The finished roof beam is placed on the pillar's blue pins (arrow and two green arrows).
+THINK does ca-yb9-1 carries ca-dp2-1
+THINK does ca-ytb-1 supports ca-yb9-1
+THINK why A thin beam over pins locks them.
+THINK check ca-dp2-1.pin1 goes into ca-yb9-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-dp2-2.pin1 goes into ca-yb9-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-dp2-3.pin1 goes into ca-yb9-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check ca-ytb-1.hole1 goes into ca-dp2-1.pin2? (not shown in the booklet)
+THINK check ca-ytb-2.hole1 goes into ca-dp2-3.pin2? (not shown in the booklet)
+THINK later Step 171 adds the black hose rod. Pattern: roof rail
+ADD ca-yb9-1 40490 yellow
+ADD ca-ytb-1 32017 yellow
+ADD ca-ytb-2 32017 yellow
+ADD ca-dp2-1 61332 black
+ADD ca-dp2-2 61332 black
+ADD ca-dp2-3 61332 black
+CONNECT ca-dp2-1.pin1 -> ca-yb9-1.hole2~ STIFF
+CONNECT ca-dp2-2.pin1 -> ca-yb9-1.hole3~ STIFF
+CONNECT ca-dp2-3.pin1 -> ca-yb9-1.hole7~ STIFF
+CONNECT ca-ytb-1.hole1 -> ca-dp2-1.pin2?
+CONNECT ca-ytb-2.hole1 -> ca-dp2-3.pin2?
+DOES ca-yb9-1 CARRIES ca-dp2-1
+DOES ca-ytb-1 SUPPORTS ca-yb9-1
+PATTERN roof_beam
+
+STEP 171
+THINK have Cab box with a yellow roof rail (step 170).
+THINK goal Adds the long rod the roof leans on.
+THINK part ca-ax10-1 (3737 Technic Axle 10): black 10-long axle with a yellow connector at one end (1:1 box); fixed
+THINK part ca-yc-1 (6536 Technic Axle and Pin Connector Perpendicular): yellow perpendicular connector; fixed
+THINK touches Yellow box: the long black axle has a yellow connector at its end; it is placed on the roof rail's rear end, pointing down toward the front (arrow). The 1:1 bar is a long black axle.
+THINK does ca-yc-1 carries ca-ax10-1
+THINK does ca-yb9-1 holds ca-yc-1
+THINK why A long axle fixes the roof's front corner.
+THINK check ca-ax10-1.axle10 goes into ca-yc-1.axlehole1, 1 hole deep, locked (turn together)
+THINK check ca-yc-1.hole1 goes into ca-yb9-1.hole? (not shown in the booklet)
+THINK builds_on ca-yc-1 builds on ca-yb9-1 (42175-step-170), and rests on ca-dp2-1 (42175-step-170), ca-dp2-2 (42175-step-170)
+THINK later Step 172 adds a 7-hole beam. Pattern: roof rod
+ADD ca-ax10-1 3737 black
+ADD ca-yc-1 6536 yellow
+CONNECT ca-ax10-1.axle10 -> ca-yc-1.axlehole1 LOCKED
+CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?
+DOES ca-yc-1 CARRIES ca-ax10-1
+DOES ca-yb9-1 HOLDS ca-yc-1
+PATTERN rod_with_connector
+
+STEP 172
+THINK have Cab with roof rod (step 171).
+THINK goal Ties the pillar's pins.
+THINK part ca-b7-1 (32524 Technic Beam 1 x 7 Thick): black 7-hole beam (1:1 box, circled 7); fixed
+THINK touches The 7-hole beam (tag 7) is placed across the blue pins of the yellow pillar.
+THINK does ca-b7-1 supports ca-yl-1
+THINK why A beam over pins locks them.
+THINK check ca-b7-1.hole? goes into ca-bp-1.pin1? (not shown in the booklet)
+THINK check ca-b7-1.hole? goes into ca-bp-2.pin1? (not shown in the booklet)
+THINK builds_on ca-b7-1 builds on ca-bp-1 (42175-step-169), and rests on ca-yl-1 (42175-step-169)
+THINK builds_on ca-b7-1 builds on ca-bp-2 (42175-step-169), and rests on ca-yl-1 (42175-step-169)
+THINK later Step 173 builds the front pillar. Pattern: pillar tie
+ADD ca-b7-1 32524 black
+CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?
+CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?
+DOES ca-b7-1 SUPPORTS ca-yl-1
+PATTERN beam_on_pins
+
+STEP 173
+THINK have (new build: the front pillar with the yellow fairing; nothing attached yet)
+THINK goal Builds the front corner pillar of the roof.
+THINK part cp-b7-1 (32524 Technic Beam 1 x 7 Thick): black 7-hole beam (1:1 box, circled 7); fixed
+THINK part cp-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (sub-step 3); fixed
+THINK part cp-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit); fixed
+THINK part cp-dp-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit); fixed
+THINK part cp-rax-1 (32062 Technic Axle 2 Notched): red 2-long notched axle (sub-step 2, yellow box); fixed
+THINK part cp-f8-1 (2389 Technic Panel Fairing #8 3L Very Small Smooth, Side B): yellow fairing no. 8 (circled 8); fixed
+THINK part cp-yax-1 (4519 Technic Axle 3): yellow 3-long axle (sub-step 2); fixed
+THINK touches Sub-steps 1-3: two pins go in the 7-hole beam, a red axle is pushed into the yellow axle (yellow box), and the yellow fairing 8 goes on a blue pin (yellow box). The pillar is then fitted to the model (page 149).
+THINK does cp-b7-1 carries cp-dp-1
+THINK does cp-f8-1 supports cp-yax-1
+THINK why The yellow fairing finishes the corner.
+THINK check cp-dp-1.pin1 goes into cp-b7-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cp-dp-2.pin1 goes into cp-b7-1.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check cp-rax-1.axle1 goes into cp-yax-1.axle? (not shown in the booklet)
+THINK check cp-yax-1.axle3 goes into cp-b7-1.hole? (not shown in the booklet)
+THINK check cp-bp-1.pin1 goes into cp-f8-1.hole? (not shown in the booklet)
+THINK later Page 149 fits it to the model. Pattern: front pillar
+ADD cp-b7-1 32524 black
+ADD cp-bp-1 43093 blue
+ADD cp-dp-1 61332 black
+ADD cp-dp-2 61332 black
+ADD cp-rax-1 32062 red
+ADD cp-f8-1 2389 yellow
+ADD cp-yax-1 4519 yellow
+CONNECT cp-dp-1.pin1 -> cp-b7-1.hole2~ STIFF
+CONNECT cp-dp-2.pin1 -> cp-b7-1.hole4~ STIFF
+CONNECT cp-rax-1.axle1 -> cp-yax-1.axle?
+CONNECT cp-yax-1.axle3 -> cp-b7-1.hole?
+CONNECT cp-bp-1.pin1 -> cp-f8-1.hole?
+DOES cp-b7-1 CARRIES cp-dp-1
+DOES cp-f8-1 SUPPORTS cp-yax-1
+PATTERN pillar_build

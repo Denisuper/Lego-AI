@@ -1,0 +1,106 @@
+{
+  "example_id": "42175-step-168",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 142,
+  "step": 168,
+  "input": {
+    "picture": "steps/main-168/picture.png",
+    "parts_box": [
+      {
+        "name": "yc-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "yc-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "yc-panel-1",
+        "part_number": "71709",
+        "count": 1
+      },
+      {
+        "name": "yc-tb-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "yc-tb-2",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Frame with the right side cover fitted (step 167)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "yc-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (yellow box 1-2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yc-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (yellow box 1-2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yc-panel-1",
+        "part_number": "71709",
+        "catalog_name": "Technic Panel 3 x 7 x 1",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow 3 x 7 panel with the EC230 sticker no. 15 (yellow box 3-4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yc-tb-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two small yellow thin beams (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yc-tb-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two small yellow thin beams (yellow box 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-4: two blue pins each get a yellow thin beam, they are pushed into the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on the right side cover (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "yc-panel-1 supports yc-tb-1",
+      "yc-tb-1 holds yc-bp-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow EC230 panel covers the right side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Matches the left yellow cover with the model name.",
+      "why_these_parts": "The yellow top finishes the right side.",
+      "sets_up_for_later": "Steps 169 onward build the cab.",
+      "design_pattern": "right EC230 cover"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Panel identity read from the icon; holes not countable."
+}

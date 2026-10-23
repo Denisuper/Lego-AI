@@ -1,0 +1,13 @@
+STEP 166
+ADD yb-b9-1 40490 yellow
+ADD yb-hub-1 65487 blue
+ADD yb-dp-1 61332 black
+ADD yb-dp-2 61332 black
+ADD yb-gp-1 3673 lightgray
+CONNECT yb-dp-1.pin1 -> yb-b9-1.hole2~ STIFF
+CONNECT yb-dp-2.pin1 -> yb-b9-1.hole3~ STIFF
+CONNECT yb-hub-1.pin1 -> yb-b9-1.hole9~ STIFF
+CONNECT yb-gp-1.pin1 -> yb-hub-1.hole1~ TURNS
+DOES yb-b9-1 CARRIES yb-dp-1
+DOES yb-hub-1 HOLDS yb-gp-1
+PATTERN beam_with_posts

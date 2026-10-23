@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-172",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 147,
+  "step": 172,
+  "input": {
+    "picture": "steps/main-172/picture.png",
+    "parts_box": [
+      {
+        "name": "ca-b7-1",
+        "part_number": "32524",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab with roof rod (step 171)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ca-b7-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam (1:1 box, circled 7)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 7-hole beam (tag 7) is placed across the blue pins of the yellow pillar."
+    ],
+    "who_does_what_to_which": [
+      "ca-b7-1 supports ca-yl-1"
+    ],
+    "where_everything_is_after": [
+      "a black 7-hole beam holds the blue pins of the yellow pillar",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Ties the pillar's pins.",
+      "why_these_parts": "A beam over pins locks them.",
+      "sets_up_for_later": "Step 173 builds the front pillar.",
+      "design_pattern": "pillar tie"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Holes not countable."
+}

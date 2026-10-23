@@ -1,0 +1,106 @@
+{
+  "example_id": "42175-step-166",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 139,
+  "step": 166,
+  "input": {
+    "picture": "steps/main-166/picture.png",
+    "parts_box": [
+      {
+        "name": "yb-b9-1",
+        "part_number": "40490",
+        "count": 1
+      },
+      {
+        "name": "yb-hub-1",
+        "part_number": "65487",
+        "count": 1
+      },
+      {
+        "name": "yb-dp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "yb-dp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "yb-gp-1",
+        "part_number": "3673",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Excavator with covers (step 165)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "yb-b9-1",
+        "part_number": "40490",
+        "catalog_name": "Technic Beam 1 x 9 Thick",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 9-hole beam (1:1 box, circled 9)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yb-hub-1",
+        "part_number": "65487",
+        "catalog_name": "Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Square Holes]",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "blue hub with one pin (yellow box 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yb-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small dark pins in the yellow beam (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yb-dp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small dark pins in the yellow beam (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "yb-gp-1",
+        "part_number": "3673",
+        "catalog_name": "Technic Pin without Friction Ridges Lengthwise",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey frictionless pin pushed in after the hub (green arrow in yellow box 2)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-2: two dark pins go in the yellow beam, then a blue hub and a small grey pin at its end. The yellow beam is placed on the right side of the cab box (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "yb-b9-1 carries yb-dp-1",
+      "yb-hub-1 holds yb-gp-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow 9-hole beam with pins and a blue hub sits on the right side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the long yellow trim on the right side, matching the left.",
+      "why_these_parts": "Pins locate it on the frame.",
+      "sets_up_for_later": "Step 167 builds the right ELECTRIC cover.",
+      "design_pattern": "right yellow trim"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The blue hub is read from the colour and icon; which beam holes hold the pins is estimated."
+}

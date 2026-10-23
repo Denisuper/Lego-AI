@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 163 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 173 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -3798,7 +3798,7 @@
 **Why:** Starts the right side beam. Same pattern as the roof beam in step 135. *Next:* Step 145 adds an L-beam. *Pattern:* right beam
 
 **Big picture:**
-- **rs-b11-1** (None): None Later: 42175-step-145 `DOES rs-lb-1 SUPPORTS rs-b11-1`; 42175-step-146 `CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF`; 42175-step-146 `CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF`; 42175-step-146 `CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF`; 42175-step-146 `DOES rs-b11-1 CARRIES rs-dp-1`; 42175-step-147 `DOES rs-b7-1 SUPPORTS rs-b11-1`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`.
+- **rs-b11-1** (None): None Later: 42175-step-145 `DOES rs-lb-1 SUPPORTS rs-b11-1`; 42175-step-146 `CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF`; 42175-step-146 `CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF`; 42175-step-146 `CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF`; 42175-step-146 `DOES rs-b11-1 CARRIES rs-dp-1`; 42175-step-147 `DOES rs-b7-1 SUPPORTS rs-b11-1`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`; 42175-step-164 `CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?`; 42175-step-164 `CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?`.
 - **rs-bp-1** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF`; 42175-step-147 `CONNECT rs-b7-1.hole? -> rs-bp-1.pin?`.
 - **rs-bp-2** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF`.
 - **rs-bp-3** (None): None Later: 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`.
@@ -4237,7 +4237,7 @@
 **Why:** Adds the rounded corner of the cab. A fairing hides the joints. *Next:* Step 163 fits it to the frame. *Pattern:* cab corner
 
 **Big picture:**
-- **cn-fair-1** (None): None
+- **cn-fair-1** (None): None Later: 42175-step-164 `CONNECT cn-dp4-1.pin1 -> cn-fair-1.hole?`; 42175-step-164 `CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?`; 42175-step-164 `DOES cn-fair-1 CARRIES cn-dp4-1`.
 - **cn-rax2-1** (None): None
 
 **Mechanisms:**
@@ -4265,3 +4265,263 @@
 
 
 **Review:** Which holes take the axles is not shown.
+
+## 42175-step-164 (page 137) - medium - NEEDS REVIEW
+
+![42175-step-164](steps/main-164/picture.png)
+
+**New parts:** cn-dp4-1 (61332, black) - four small dark pins pushed into the rear right corner (one green arrow shown); cn-dp4-2 (61332, black) - four small dark pins pushed into the rear right corner (one green arrow shown); cn-dp4-3 (61332, black) - four small dark pins pushed into the rear right corner (one green arrow shown); cn-dp4-4 (61332, black) - four small dark pins pushed into the rear right corner (one green arrow shown)
+
+**Touches:** Four small dark pins are pushed into the top of the rear right corner (green arrow shows one going down).
+
+**Exact joins:** cn-dp4-1.pin1 into cn-fair-1.hole? (not shown in booklet); cn-dp4-2.pin1 into cn-fair-1.hole? (not shown in booklet); cn-dp4-3.pin1 into rs-b11-1.hole? (not shown in booklet); cn-dp4-4.pin1 into rs-b11-1.hole? (not shown in booklet)
+
+**Who does what:** cn-fair-1 carries cn-dp4-1
+
+**After:** four small dark posts stand at the rear right corner; everything else: no change
+
+**Why:** Adds the posts for the corner covers. Pins locate the two fairings of step 165. *Next:* Step 165 clips the fairings on. *Pattern:* cover posts
+
+**Big picture:**
+- **cn-dp4-1** (None): None Later: 42175-step-165 `CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?`.
+- **cn-dp4-2** (None): None
+- **cn-dp4-3** (None): None Later: 42175-step-165 `CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?`.
+- **cn-dp4-4** (None): None
+
+**Mechanisms:**
+- **cn-dp4-1** builds on cn-fair-1 (42175-step-162), which rests on cn-rax2-1 (42175-step-162)
+- **cn-dp4-2** builds on cn-fair-1 (42175-step-162), which rests on cn-rax2-1 (42175-step-162)
+- **cn-dp4-3** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+- **cn-dp4-4** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+
+**Review:** Only one arrow is drawn for four pins; positions estimated.
+
+## 42175-step-165 (page 138) - medium - NEEDS REVIEW
+
+![42175-step-165](steps/main-165/picture.png)
+
+**New parts:** cv-f1-1 (87080, black) - black small fairing no. 1 with warning stickers 27 and 28 (yellow box 1-2); cv-f2-1 (87086, black) - black small fairing no. 2 (the mirror part) with stickers
+
+**Touches:** Two yellow boxes: fairing 1 and fairing 2 each get a red/yellow warning sticker (27 and 28), then each is pressed onto the corner posts (arrows with green guide lines).
+
+**Exact joins:** cv-f1-1.hole? into cn-dp4-1.pin2? (not shown in booklet); cv-f2-1.hole? into cn-dp4-3.pin2? (not shown in booklet)
+
+**Who does what:** cv-f1-1 supports cv-f2-1
+
+**After:** two black warning-sticker fairings cover the rear right corner; everything else: no change
+
+**Why:** Gives the corner its finished shape and warning marks. Fairings hide the pins and beams. *Next:* Step 166 builds a yellow bar. *Pattern:* corner covers
+
+**Big picture:**
+- **cv-f1-1** (None): None
+- **cv-f2-1** (None): None
+
+**Mechanisms:**
+- **cv-f1-1** builds on cn-dp4-1 (42175-step-164), which rests on cn-fair-1 (42175-step-162)
+- **cv-f2-1** builds on cn-dp4-3 (42175-step-164), which rests on rs-b11-1 (42175-step-144)
+
+**Review:** The two numbers 1 and 2 in the circles are fairing part tags; fairing joins are open (no catalog points beyond the cross holes).
+
+## 42175-step-166 (page 139) - medium - NEEDS REVIEW
+
+![42175-step-166](steps/main-166/picture.png)
+
+**New parts:** yb-b9-1 (40490, yellow) - yellow 9-hole beam (1:1 box, circled 9); yb-hub-1 (65487, blue) - blue hub with one pin (yellow box 2); yb-dp-1 (61332, black) - two small dark pins in the yellow beam (yellow box 1); yb-dp-2 (61332, black) - two small dark pins in the yellow beam (yellow box 1); yb-gp-1 (3673, light bluish gray) - small grey frictionless pin pushed in after the hub (green arrow in yellow box 2)
+
+**Touches:** Yellow box 1-2: two dark pins go in the yellow beam, then a blue hub and a small grey pin at its end. The yellow beam is placed on the right side of the cab box (arrow).
+
+**Exact joins:** yb-dp-1.pin1 into yb-b9-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); yb-dp-2.pin1 into yb-b9-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); yb-hub-1.pin1 into yb-b9-1.hole9 (0.9 hole deep, held stiff by friction, estimated from the picture); yb-gp-1.pin1 into yb-hub-1.hole1 (0.9 hole deep, turns freely, estimated from the picture)
+
+**Who does what:** yb-b9-1 carries yb-dp-1; yb-hub-1 holds yb-gp-1
+
+**After:** a yellow 9-hole beam with pins and a blue hub sits on the right side; everything else: no change
+
+**Why:** Adds the long yellow trim on the right side, matching the left. Pins locate it on the frame. *Next:* Step 167 builds the right ELECTRIC cover. *Pattern:* right yellow trim
+
+**Big picture:**
+- **yb-b9-1** (None): None
+- **yb-hub-1** (None): None
+- **yb-dp-1** (None): None
+- **yb-dp-2** (None): None
+- **yb-gp-1** (None): None
+
+**Review:** The blue hub is read from the colour and icon; which beam holes hold the pins is estimated.
+
+## 42175-step-167 (page 140) - low - NEEDS REVIEW
+
+![42175-step-167](steps/main-167/picture.png)
+
+**New parts:** sc2-bp-1 (43093, blue) - two blue pins (sub-step 5); sc2-bp-2 (43093, blue) - two blue pins (sub-step 5); sc2-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3); sc2-lb-1 (32140, black) - three black 2 x 4 L-beams with stickers 23, 16 and 10; sc2-lb-2 (32140, black) - three black 2 x 4 L-beams with stickers 23, 16 and 10; sc2-lb-3 (32140, black) - three black 2 x 4 L-beams with stickers 23, 16 and 10; sc2-dp-1 (61332, black) - small dark pin (sub-step 3)
+
+**Touches:** Sub-steps 1-5, the same as step 142 but mirrored: yellow axle in the first L-beam (sticker 23), dark pin in the second (sticker 16), stacked, a third beam (sticker 10) on top, two blue pins from the side. The finished cover is pressed onto the frame's right side (page 141, arrow).
+
+**Exact joins:** sc2-yax-1.axle1 into sc2-lb-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); sc2-dp-1.pin1 into sc2-lb-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); sc2-bp-1.pin1 into sc2-lb-3.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); sc2-bp-2.pin1 into sc2-lb-3.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** sc2-lb-1 carries sc2-yax-1; sc2-lb-2 supports sc2-lb-1; sc2-lb-3 supports sc2-lb-2
+
+**After:** a mirrored stack of three black L-beams with ELECTRIC stickers is ready and fitted to the right side; everything else: no change
+
+**Why:** Builds the right side cover with the machine's ELECTRIC label. It mirrors the left cover so both sides match. *Next:* Step 168 adds the yellow cover. *Pattern:* right side cover
+
+**Big picture:**
+- **sc2-bp-1** (None): None
+- **sc2-bp-2** (None): None
+- **sc2-yax-1** (None): None
+- **sc2-lb-1** (None): None
+- **sc2-lb-2** (None): None
+- **sc2-lb-3** (None): None
+- **sc2-dp-1** (None): None
+
+**Review:** Fitting is shown on page 141 without a step number; the stack is read as attached at the end of this step.
+
+## 42175-step-168 (page 142) - medium - NEEDS REVIEW
+
+![42175-step-168](steps/main-168/picture.png)
+
+**New parts:** yc-bp-1 (43093, blue) - two blue pins (yellow box 1-2); yc-bp-2 (43093, blue) - two blue pins (yellow box 1-2); yc-panel-1 (71709, yellow) - yellow 3 x 7 panel with the EC230 sticker no. 15 (yellow box 3-4); yc-tb-1 (41677, yellow) - two small yellow thin beams (yellow box 1); yc-tb-2 (41677, yellow) - two small yellow thin beams (yellow box 1)
+
+**Touches:** Yellow box 1-4: two blue pins each get a yellow thin beam, they are pushed into the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on the right side cover (arrow).
+
+**Exact joins:** yc-bp-1.axle1 into yc-tb-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); yc-bp-2.axle1 into yc-tb-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); yc-bp-1.pin1 into yc-panel-1.hole? (not shown in booklet); yc-bp-2.pin1 into yc-panel-1.hole? (not shown in booklet)
+
+**Who does what:** yc-panel-1 supports yc-tb-1; yc-tb-1 holds yc-bp-1
+
+**After:** a yellow EC230 panel covers the right side; everything else: no change
+
+**Why:** Matches the left yellow cover with the model name. The yellow top finishes the right side. *Next:* Steps 169 onward build the cab. *Pattern:* right EC230 cover
+
+**Big picture:**
+- **yc-bp-1** (None): None
+- **yc-bp-2** (None): None
+- **yc-panel-1** (None): None
+- **yc-tb-1** (None): None
+- **yc-tb-2** (None): None
+
+**Review:** Panel identity read from the icon; holes not countable.
+
+## 42175-step-169 (page 144) - medium - NEEDS REVIEW
+
+![42175-step-169](steps/main-169/picture.png)
+
+**New parts:** ca-yl-1 (32526, yellow) - yellow 3 x 5 L-beam; ca-bp-1 (43093, blue) - three blue pins in the L-beam (yellow box 1-2); ca-bp-2 (43093, blue) - three blue pins in the L-beam (yellow box 1-2); ca-bp-3 (43093, blue) - three blue pins in the L-beam (yellow box 1-2); ca-dp-1 (61332, black) - small dark pin added at the beam end (yellow box 2)
+
+**Touches:** Yellow box 1-2: two blue pins go in the long side of the yellow L-beam, a third pin from the side (green arrow) and a dark pin at the end. The L-beam is placed on the right-rear of the cab box (arrow).
+
+**Exact joins:** ca-bp-1.pin1 into ca-yl-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-bp-2.pin1 into ca-yl-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-bp-3.pin1 into ca-yl-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-dp-1.pin1 into ca-yl-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** ca-yl-1 carries ca-bp-1
+
+**After:** a yellow L-beam with three blue pins and a dark pin stands at the right-rear of the cab box; everything else: no change
+
+**Why:** Builds the yellow upright (roof pillar) for the cab. Pins locate the next beams. *Next:* Step 170 adds the yellow roof beams. *Pattern:* roof pillar
+
+**Big picture:**
+- **ca-yl-1** (None): None Later: 42175-step-172 `DOES ca-b7-1 SUPPORTS ca-yl-1`.
+- **ca-bp-1** (None): None Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?`.
+- **ca-bp-2** (None): None Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?`.
+- **ca-bp-3** (None): None
+- **ca-dp-1** (None): None
+
+**Review:** Pin holes estimated.
+
+## 42175-step-170 (page 145) - medium - NEEDS REVIEW
+
+![42175-step-170](steps/main-170/picture.png)
+
+**New parts:** ca-yb9-1 (40490, yellow) - yellow 9-hole beam (1:1 box, circled 9); ca-ytb-1 (32017, yellow) - two yellow thin 5-hole beams (sub-step 2); ca-ytb-2 (32017, yellow) - two yellow thin 5-hole beams (sub-step 2); ca-dp2-1 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1); ca-dp2-2 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1); ca-dp2-3 (61332, black) - three small dark pins in the 9-hole beam (sub-step 1)
+
+**Touches:** Yellow box 1-2: three dark pins in the yellow 9-hole beam, then a thin yellow beam over two of them (green arrows). The finished roof beam is placed on the pillar's blue pins (arrow and two green arrows).
+
+**Exact joins:** ca-dp2-1.pin1 into ca-yb9-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-dp2-2.pin1 into ca-yb9-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-dp2-3.pin1 into ca-yb9-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); ca-ytb-1.hole1 into ca-dp2-1.pin2? (not shown in booklet); ca-ytb-2.hole1 into ca-dp2-3.pin2? (not shown in booklet)
+
+**Who does what:** ca-yb9-1 carries ca-dp2-1; ca-ytb-1 supports ca-yb9-1
+
+**After:** a yellow roof beam with a thin cover sits on the pillar's pins; everything else: no change
+
+**Why:** Builds the yellow roof rail. A thin beam over pins locks them. *Next:* Step 171 adds the black hose rod. *Pattern:* roof rail
+
+**Big picture:**
+- **ca-yb9-1** (None): None Later: 42175-step-171 `CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?`; 42175-step-171 `DOES ca-yb9-1 HOLDS ca-yc-1`.
+- **ca-ytb-1** (None): None
+- **ca-ytb-2** (None): None
+- **ca-dp2-1** (None): None
+- **ca-dp2-2** (None): None
+- **ca-dp2-3** (None): None
+
+**Review:** The box shows 2x thin beams; the picture shows one going on in sub-step 2 and a second is used on the other side.
+
+## 42175-step-171 (page 146) - low - NEEDS REVIEW
+
+![42175-step-171](steps/main-171/picture.png)
+
+**New parts:** ca-ax10-1 (3737, black) - black 10-long axle with a yellow connector at one end (1:1 box); ca-yc-1 (6536, yellow) - yellow perpendicular connector
+
+**Touches:** Yellow box: the long black axle has a yellow connector at its end; it is placed on the roof rail's rear end, pointing down toward the front (arrow). The 1:1 bar is a long black axle.
+
+**Exact joins:** ca-ax10-1.axle10 into ca-yc-1.axlehole1 (1 hole deep, locked (turn together)); ca-yc-1.hole1 into ca-yb9-1.hole? (not shown in booklet)
+
+**Who does what:** ca-yc-1 carries ca-ax10-1; ca-yb9-1 holds ca-yc-1
+
+**After:** a long black rod hangs from the yellow roof rail; everything else: no change
+
+**Why:** Adds the long rod the roof leans on. A long axle fixes the roof's front corner. *Next:* Step 172 adds a 7-hole beam. *Pattern:* roof rod
+
+**Big picture:**
+- **ca-ax10-1** (None): None
+- **ca-yc-1** (None): None
+
+**Mechanisms:**
+- **ca-yc-1** builds on ca-yb9-1 (42175-step-170), which rests on ca-dp2-1 (42175-step-170), ca-dp2-2 (42175-step-170)
+
+**Review:** The part is read as a black Axle 10 (3737); the picture has no number. Hole not countable.
+
+## 42175-step-172 (page 147) - medium - NEEDS REVIEW
+
+![42175-step-172](steps/main-172/picture.png)
+
+**New parts:** ca-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7)
+
+**Touches:** The 7-hole beam (tag 7) is placed across the blue pins of the yellow pillar.
+
+**Exact joins:** ca-b7-1.hole? into ca-bp-1.pin1? (not shown in booklet); ca-b7-1.hole? into ca-bp-2.pin1? (not shown in booklet)
+
+**Who does what:** ca-b7-1 supports ca-yl-1
+
+**After:** a black 7-hole beam holds the blue pins of the yellow pillar; everything else: no change
+
+**Why:** Ties the pillar's pins. A beam over pins locks them. *Next:* Step 173 builds the front pillar. *Pattern:* pillar tie
+
+**Big picture:**
+- **ca-b7-1** (None): None
+
+**Mechanisms:**
+- **ca-b7-1** builds on ca-bp-1 (42175-step-169), which rests on ca-yl-1 (42175-step-169); ca-bp-2 (42175-step-169), which rests on ca-yl-1 (42175-step-169)
+
+**Review:** Holes not countable.
+
+## 42175-step-173 (page 148) - low - NEEDS REVIEW
+
+![42175-step-173](steps/main-173/picture.png)
+
+**New parts:** cp-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7); cp-bp-1 (43093, blue) - blue pin (sub-step 3); cp-dp-1 (61332, black) - two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit); cp-dp-2 (61332, black) - two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit); cp-rax-1 (32062, red) - red 2-long notched axle (sub-step 2, yellow box); cp-f8-1 (2389, yellow) - yellow fairing no. 8 (circled 8); cp-yax-1 (4519, yellow) - yellow 3-long axle (sub-step 2)
+
+**Touches:** Sub-steps 1-3: two pins go in the 7-hole beam, a red axle is pushed into the yellow axle (yellow box), and the yellow fairing 8 goes on a blue pin (yellow box). The pillar is then fitted to the model (page 149).
+
+**Exact joins:** cp-dp-1.pin1 into cp-b7-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); cp-dp-2.pin1 into cp-b7-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); cp-rax-1.axle1 into cp-yax-1.axle? (not shown in booklet); cp-yax-1.axle3 into cp-b7-1.hole? (not shown in booklet); cp-bp-1.pin1 into cp-f8-1.hole? (not shown in booklet)
+
+**Who does what:** cp-b7-1 carries cp-dp-1; cp-f8-1 supports cp-yax-1
+
+**After:** a black beam with a yellow axle, a red axle and a yellow fairing is ready to be fitted; everything else: no change
+
+**Why:** Builds the front corner pillar of the roof. The yellow fairing finishes the corner. *Next:* Page 149 fits it to the model. *Pattern:* front pillar
+
+**Big picture:**
+- **cp-b7-1** (None): None
+- **cp-bp-1** (None): None
+- **cp-dp-1** (None): None
+- **cp-dp-2** (None): None
+- **cp-rax-1** (None): None
+- **cp-f8-1** (None): None
+- **cp-yax-1** (None): None
+
+**Review:** The two small pins are drawn light grey in the icon. All grey 4274 pins are already used up in the count, so the dark friction pin is used as the nearest fit; this is flagged for review.

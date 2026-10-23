@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-165",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 138,
+  "step": 165,
+  "input": {
+    "picture": "steps/main-165/picture.png",
+    "parts_box": [
+      {
+        "name": "cv-f1-1",
+        "part_number": "87080",
+        "count": 1
+      },
+      {
+        "name": "cv-f2-1",
+        "part_number": "87086",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Corner posts on the right rear (step 164)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cv-f1-1",
+        "part_number": "87080",
+        "catalog_name": "Technic Panel Fairing #1 Small Smooth Short, Side A",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black small fairing no. 1 with warning stickers 27 and 28 (yellow box 1-2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cv-f2-1",
+        "part_number": "87086",
+        "catalog_name": "Technic Panel Fairing #2 Small Smooth Short, Side B",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black small fairing no. 2 (the mirror part) with stickers",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two yellow boxes: fairing 1 and fairing 2 each get a red/yellow warning sticker (27 and 28), then each is pressed onto the corner posts (arrows with green guide lines)."
+    ],
+    "who_does_what_to_which": [
+      "cv-f1-1 supports cv-f2-1"
+    ],
+    "where_everything_is_after": [
+      "two black warning-sticker fairings cover the rear right corner",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the corner its finished shape and warning marks.",
+      "why_these_parts": "Fairings hide the pins and beams.",
+      "sets_up_for_later": "Step 166 builds a yellow bar.",
+      "design_pattern": "corner covers"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The two numbers 1 and 2 in the circles are fairing part tags; fairing joins are open (no catalog points beyond the cross holes)."
+}

@@ -1,0 +1,7 @@
+STEP 165
+ADD cv-f1-1 87080 black
+ADD cv-f2-1 87086 black
+CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?
+CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?
+DOES cv-f1-1 SUPPORTS cv-f2-1
+PATTERN cover_fairings

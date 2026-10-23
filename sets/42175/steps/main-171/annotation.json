@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-171",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 146,
+  "step": 171,
+  "input": {
+    "picture": "steps/main-171/picture.png",
+    "parts_box": [
+      {
+        "name": "ca-ax10-1",
+        "part_number": "3737",
+        "count": 1
+      },
+      {
+        "name": "ca-yc-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab box with a yellow roof rail (step 170)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "ca-ax10-1",
+        "part_number": "3737",
+        "catalog_name": "Technic Axle 10",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 10-long axle with a yellow connector at one end (1:1 box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "ca-yc-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow perpendicular connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the long black axle has a yellow connector at its end; it is placed on the roof rail's rear end, pointing down toward the front (arrow). The 1:1 bar is a long black axle."
+    ],
+    "who_does_what_to_which": [
+      "ca-yc-1 carries ca-ax10-1",
+      "ca-yb9-1 holds ca-yc-1"
+    ],
+    "where_everything_is_after": [
+      "a long black rod hangs from the yellow roof rail",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the long rod the roof leans on.",
+      "why_these_parts": "A long axle fixes the roof's front corner.",
+      "sets_up_for_later": "Step 172 adds a 7-hole beam.",
+      "design_pattern": "roof rod"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The part is read as a black Axle 10 (3737); the picture has no number. Hole not countable."
+}

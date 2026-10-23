@@ -1,0 +1,135 @@
+{
+  "example_id": "42175-step-167",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 140,
+  "step": 167,
+  "input": {
+    "picture": "steps/main-167/picture.png",
+    "parts_box": [
+      {
+        "name": "sc2-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sc2-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sc2-yax-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "sc2-lb-1",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc2-lb-2",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc2-lb-3",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc2-dp-1",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the right ELECTRIC side cover; fitted to the frame on page 141)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sc2-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (sub-step 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (sub-step 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-lb-1",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams with stickers 23, 16 and 10",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-lb-2",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams with stickers 23, 16 and 10",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-lb-3",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams with stickers 23, 16 and 10",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc2-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small dark pin (sub-step 3)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-5, the same as step 142 but mirrored: yellow axle in the first L-beam (sticker 23), dark pin in the second (sticker 16), stacked, a third beam (sticker 10) on top, two blue pins from the side. The finished cover is pressed onto the frame's right side (page 141, arrow)."
+    ],
+    "who_does_what_to_which": [
+      "sc2-lb-1 carries sc2-yax-1",
+      "sc2-lb-2 supports sc2-lb-1",
+      "sc2-lb-3 supports sc2-lb-2"
+    ],
+    "where_everything_is_after": [
+      "a mirrored stack of three black L-beams with ELECTRIC stickers is ready and fitted to the right side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the right side cover with the machine's ELECTRIC label.",
+      "why_these_parts": "It mirrors the left cover so both sides match.",
+      "sets_up_for_later": "Step 168 adds the yellow cover.",
+      "design_pattern": "right side cover"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Fitting is shown on page 141 without a step number; the stack is read as attached at the end of this step."
+}

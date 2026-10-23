@@ -1,0 +1,134 @@
+{
+  "example_id": "42175-step-173",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 148,
+  "step": 173,
+  "input": {
+    "picture": "steps/main-173/picture.png",
+    "parts_box": [
+      {
+        "name": "cp-b7-1",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "cp-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cp-dp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cp-dp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "cp-rax-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "cp-f8-1",
+        "part_number": "2389",
+        "count": 1
+      },
+      {
+        "name": "cp-yax-1",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the front pillar with the yellow fairing; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cp-b7-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 7-hole beam (1:1 box, circled 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "blue pin (sub-step 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-dp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small pins pushed into the beam's top (sub-step 1; drawn light grey, the grey 4274 stock is used up so a dark friction pin is the best fit)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-rax-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "red 2-long notched axle (sub-step 2, yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-f8-1",
+        "part_number": "2389",
+        "catalog_name": "Technic Panel Fairing #8 3L Very Small Smooth, Side B",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow fairing no. 8 (circled 8)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cp-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow 3-long axle (sub-step 2)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-3: two pins go in the 7-hole beam, a red axle is pushed into the yellow axle (yellow box), and the yellow fairing 8 goes on a blue pin (yellow box). The pillar is then fitted to the model (page 149)."
+    ],
+    "who_does_what_to_which": [
+      "cp-b7-1 carries cp-dp-1",
+      "cp-f8-1 supports cp-yax-1"
+    ],
+    "where_everything_is_after": [
+      "a black beam with a yellow axle, a red axle and a yellow fairing is ready to be fitted",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the front corner pillar of the roof.",
+      "why_these_parts": "The yellow fairing finishes the corner.",
+      "sets_up_for_later": "Page 149 fits it to the model.",
+      "design_pattern": "front pillar"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The two small pins are drawn light grey in the icon. All grey 4274 pins are already used up in the count, so the dark friction pin is used as the nearest fit; this is flagged for review."
+}

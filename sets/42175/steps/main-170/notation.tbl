@@ -1,0 +1,15 @@
+STEP 170
+ADD ca-yb9-1 40490 yellow
+ADD ca-ytb-1 32017 yellow
+ADD ca-ytb-2 32017 yellow
+ADD ca-dp2-1 61332 black
+ADD ca-dp2-2 61332 black
+ADD ca-dp2-3 61332 black
+CONNECT ca-dp2-1.pin1 -> ca-yb9-1.hole2~ STIFF
+CONNECT ca-dp2-2.pin1 -> ca-yb9-1.hole3~ STIFF
+CONNECT ca-dp2-3.pin1 -> ca-yb9-1.hole7~ STIFF
+CONNECT ca-ytb-1.hole1 -> ca-dp2-1.pin2?
+CONNECT ca-ytb-2.hole1 -> ca-dp2-3.pin2?
+DOES ca-yb9-1 CARRIES ca-dp2-1
+DOES ca-ytb-1 SUPPORTS ca-yb9-1
+PATTERN roof_beam

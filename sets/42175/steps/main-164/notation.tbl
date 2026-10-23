@@ -1,0 +1,11 @@
+STEP 164
+ADD cn-dp4-1 61332 black
+ADD cn-dp4-2 61332 black
+ADD cn-dp4-3 61332 black
+ADD cn-dp4-4 61332 black
+CONNECT cn-dp4-1.pin1 -> cn-fair-1.hole?
+CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?
+CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?
+CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?
+DOES cn-fair-1 CARRIES cn-dp4-1
+PATTERN posts
