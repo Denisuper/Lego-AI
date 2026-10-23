@@ -10,17 +10,17 @@ ADD pm-hub-1 44874 black
 ADD pm-conn-1 6536 black
 ADD pm-hose-1 5102c04 blue
 ADD pm-pump-1 26288 blue
-CONNECT pm-lpin-1.pin1 -> pm-beam15-1.hole6~ STIFF
-CONNECT pm-lpin-2.pin1 -> pm-beam15-1.hole7~ STIFF
-CONNECT pm-lpin-3.pin1 -> pm-beam15-1.hole8~ STIFF
-CONNECT pm-lpin-4.pin1 -> pm-beam15-1.hole9~ STIFF
+CONNECT pm-lpin-1.pin1 -> pm-beam15-1.hole4 STIFF
+CONNECT pm-lpin-2.pin1 -> pm-beam15-1.hole6 STIFF
+CONNECT pm-lpin-3.pin1 -> pm-beam15-1.hole8 STIFF
+CONNECT pm-lpin-4.pin1 -> pm-beam15-1.hole10 STIFF
 CONNECT pm-conn-1.hole1 -> pm-beam15-1.hole?
-CONNECT pm-hub-1.pin1 -> pm-beam15-1.hole3~ STIFF
+CONNECT pm-hub-1.pin1 -> pm-beam15-1.hole5~ STIFF
 CONNECT pm-apin-1.pin1 -> pm-hub-1.hole1~ STIFF
-CONNECT pm-lpin-1.pin2 -> pm-beam15-2.hole6~ STIFF
-CONNECT pm-lpin-2.pin2 -> pm-beam15-2.hole7~ STIFF
-CONNECT pm-lpin-3.pin2 -> pm-beam15-2.hole8~ STIFF
-CONNECT pm-lpin-4.pin2 -> pm-beam15-2.hole9~ STIFF
+CONNECT pm-lpin-1.pin3 -> pm-beam15-2.hole4 STIFF
+CONNECT pm-lpin-2.pin3 -> pm-beam15-2.hole6 STIFF
+CONNECT pm-lpin-3.pin3 -> pm-beam15-2.hole8 STIFF
+CONNECT pm-lpin-4.pin3 -> pm-beam15-2.hole10 STIFF
 CONNECT sw-bpin-1.pin2 -> pm-beam15-1.hole3~ STIFF
 CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF
 CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF

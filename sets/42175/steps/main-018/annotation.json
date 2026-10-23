@@ -189,5 +189,5 @@
   },
   "confidence": "low",
   "needs_review": true,
-  "review_note": "Part numbers are likely (pump = 26288, hose 5102c04 from the 1:1 length check). Pin holes along the beams are rough estimates read from the picture. The pump's own points aren't in the catalog, so no join to the pump is written. Red box on page 19: pushing the black top up and down must move it; confirmation check only."
+  "review_note": "Part numbers are likely (pump = 26288, hose 5102c04 from the 1:1 length check). Long pins counted at 220-450 dpi: they sit in every second hole (4, 6, 8, 10) of both beams; the hub covers holes 4-6 and the pump foot holes 8-10. The four turntable pins on page 20 and the hub/connector holes are still estimates. The pump's own points aren't in the catalog, so no join to the pump is written. Red box on page 19: pushing the black top up and down must move it; confirmation check only."
 }
