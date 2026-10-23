@@ -17,7 +17,7 @@ Real LEGO Technic instruction booklets turned into training data: for every step
 | `catalog/mechanisms.json` | Library of mechanism types: what each does, motion in/out, ratio, part roles, rules, how it fails |
 | `catalog/connections.csv` | Every named point on every part (hole1, axlehole2, pin1, axle3...): type, exact position, direction, depth, whether things slide in it, how it turns |
 | `tools/build_connections.py` | Rebuilds both from the LDraw 3D part library + LDCad connection data |
-| `docs/` | Labeling instructions, `mechanism_training.md` (what the data teaches and the training tasks), and `detail_spec.md`: every kind of detail we record or plan to, with status |
+| `docs/` | `set_list.md` (which sets to label next), labeling instructions, `mechanism_training.md` (what the data teaches and the training tasks), and `detail_spec.md`: every kind of detail we record or plan to, with status |
 | `tools/mechanisms.py` | Works out each mechanism's state after every step, what turns when you turn a knob (with ratios), what each part builds on, and flags jams |
 | `training/export.py` | Turns every set into chat examples for Qwen: "build so far → think + next step" and "turn a knob → what moves" |
 | `training/train_qwen.py` | Fine-tunes Qwen on them with LoRA (needs a GPU) |
