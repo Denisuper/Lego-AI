@@ -556,14 +556,14 @@ THINK part trk-beam9-1 (40490 Technic Beam 1 x 9 Thick): two grey 9-hole beams p
 THINK part trk-beam9-2 (40490 Technic Beam 1 x 9 Thick): two grey 9-hole beams per side build, side by side under the 15-hole beam; fixed
 THINK part trk-beam9-3 (40490 Technic Beam 1 x 9 Thick): two grey 9-hole beams per side build, side by side under the 15-hole beam; fixed
 THINK part trk-beam9-4 (40490 Technic Beam 1 x 9 Thick): two grey 9-hole beams per side build, side by side under the 15-hole beam; fixed
-THINK part trk-pin-1 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-2 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-3 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-4 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-5 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-6 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-7 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
-THINK part trk-pin-8 (18651 Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-1 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-2 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-3 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-4 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-5 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-6 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-7 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
+THINK part trk-pin-8 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four black pins per side build, pushed through the 15-hole beam; fixed
 THINK touches Yellow box (built twice): four black pins go into a 15-hole beam, then two grey 9-hole beams are laid under it on the pins. Each finished side build is lowered along one side of the undercarriage (two black arrows).
 THINK does trk-pin-1 holds trk-beam15-1
 THINK does trk-pin-5 holds trk-beam15-2
@@ -576,8 +576,8 @@ THINK check trk-pin-5.pin1 goes into trk-beam15-2.hole1, 0.9 hole deep, held sti
 THINK check trk-pin-6.pin1 goes into trk-beam15-2.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK check trk-pin-7.pin1 goes into trk-beam15-2.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK check trk-pin-8.pin1 goes into trk-beam15-2.hole15, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-1.axle2 goes into trk-beam9-1.hole2, 1 hole deep, turns freely (estimated from the picture)
-THINK check trk-pin-5.axle2 goes into trk-beam9-3.hole2, 1 hole deep, turns freely (estimated from the picture)
+THINK check trk-pin-1.pin2 goes into trk-beam9-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-5.pin2 goes into trk-beam9-3.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK later Steps 14-16 cap the axle ends and wrap the track links around the whole assembly. Pattern: track rail
 ADD trk-beam15-1 32278 black
 ADD trk-beam15-2 32278 black
@@ -585,14 +585,14 @@ ADD trk-beam9-1 40490 darkgray
 ADD trk-beam9-2 40490 darkgray
 ADD trk-beam9-3 40490 darkgray
 ADD trk-beam9-4 40490 darkgray
-ADD trk-pin-1 18651 black
-ADD trk-pin-2 18651 black
-ADD trk-pin-3 18651 black
-ADD trk-pin-4 18651 black
-ADD trk-pin-5 18651 black
-ADD trk-pin-6 18651 black
-ADD trk-pin-7 18651 black
-ADD trk-pin-8 18651 black
+ADD trk-pin-1 65304 black
+ADD trk-pin-2 65304 black
+ADD trk-pin-3 65304 black
+ADD trk-pin-4 65304 black
+ADD trk-pin-5 65304 black
+ADD trk-pin-6 65304 black
+ADD trk-pin-7 65304 black
+ADD trk-pin-8 65304 black
 CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1~ STIFF
 CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8~ STIFF
 CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10~ STIFF
@@ -601,8 +601,8 @@ CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1~ STIFF
 CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8~ STIFF
 CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10~ STIFF
 CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15~ STIFF
-CONNECT trk-pin-1.axle2 -> trk-beam9-1.hole2~ TURNS
-CONNECT trk-pin-5.axle2 -> trk-beam9-3.hole2~ TURNS
+CONNECT trk-pin-1.pin2 -> trk-beam9-1.hole2~ STIFF
+CONNECT trk-pin-5.pin2 -> trk-beam9-3.hole2~ STIFF
 DOES trk-pin-1 HOLDS trk-beam15-1
 DOES trk-pin-5 HOLDS trk-beam15-2
 PATTERN stacked_rails
@@ -915,3 +915,476 @@ CONNECT trk-link-59.bar1 -> trk-link-60.clip1 TURNS
 CONNECT trk-link-60.bar1 -> trk-link-31.clip1 TURNS
 DOES trk-link-1 CARRIES trk-link-2
 PATTERN track_loop
+
+STEP 17
+THINK have Undercarriage with two finished track loops around it (step 16). Bag 14 is open (it also holds loose hoses for later steps).
+THINK goal Gives the machine a ring that lets the whole upper body swing round on the tracks.
+THINK part sw-top-1 (88738 Technic Turntable Large Type 4 Top, 60 Tooth): black 60-tooth turntable top ring with three 3-hole blocks; spins
+THINK part sw-base-1 (18939 Technic Turntable Large Type 3 Base): light-grey turntable base ring, snapped under the top ring; fixed
+THINK part sw-bpin-1 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the holes of the black blocks on the turntable top; fixed
+THINK part sw-bpin-2 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the holes of the black blocks on the turntable top; fixed
+THINK part sw-bpin-3 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the holes of the black blocks on the turntable top; fixed
+THINK part sw-bpin-4 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the holes of the black blocks on the turntable top; fixed
+THINK touches Yellow box 1: the black turntable top is pressed onto the grey base ring. Yellow box 2: four blue pins go into the blocks on the top ring. The finished turntable is lowered onto the middle of the undercarriage (arrow) and the four grey pins (green arrows, two from each side) are pushed in through the base ring to lock it.
+THINK does sw-top-1 spins on sw-base-1
+THINK does uc-lpin-1 holds sw-base-1
+THINK does uc-lpin-3 holds sw-base-1
+THINK why A slewing ring (grey base + black top) is the Technic version of a real excavator's swing bearing; the four long pins already waiting in the frame lock the base without extra parts.
+THINK check uc-lpin-1.pin1 goes into sw-base-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check uc-lpin-2.pin1 goes into sw-base-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check uc-lpin-3.pin1 goes into sw-base-1.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check uc-lpin-4.pin1 goes into sw-base-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on sw-base-1 builds on uc-lpin-1 (42175-step-005)
+THINK builds_on sw-base-1 builds on uc-lpin-2 (42175-step-005)
+THINK builds_on sw-base-1 builds on uc-lpin-3 (42175-step-005)
+THINK builds_on sw-base-1 builds on uc-lpin-4 (42175-step-005)
+THINK later Everything from step 18 onward that is part of the upper body is built on the black top ring. Pattern: turntable on pins
+ADD sw-top-1 88738 black
+ADD sw-base-1 18939 lightgray
+ADD sw-bpin-1 42924 blue
+ADD sw-bpin-2 42924 blue
+ADD sw-bpin-3 42924 blue
+ADD sw-bpin-4 42924 blue
+CONNECT uc-lpin-1.pin1 -> sw-base-1.hole1~ STIFF
+CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF
+CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF
+CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF
+DOES sw-top-1 SPINS_ON sw-base-1
+DOES uc-lpin-1 HOLDS sw-base-1
+DOES uc-lpin-3 HOLDS sw-base-1
+PATTERN turntable_on_pins
+
+STEP 18
+THINK have Turntable on the undercarriage (step 17). The next steps build the pump deck in the air beside it (shown as a faded picture).
+THINK goal Builds the air pump that will later power the arm's air cylinders.
+THINK part pm-beam15-1 (32278 Technic Beam 1 x 15 Thick): two 15-hole dark-grey beams that carry the pump; fixed
+THINK part pm-beam15-2 (32278 Technic Beam 1 x 15 Thick): two 15-hole dark-grey beams that carry the pump; fixed
+THINK part pm-lpin-1 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the first beam; fixed
+THINK part pm-lpin-2 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the first beam; fixed
+THINK part pm-lpin-3 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the first beam; fixed
+THINK part pm-lpin-4 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): four long blue pins pushed into the first beam; fixed
+THINK part pm-apin-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): one short blue axle pin; fixed
+THINK part pm-hub-1 (44874 Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]): black pin hub with two pins; fixed
+THINK part pm-conn-1 (6536 Technic Axle and Pin Connector Perpendicular): black perpendicular axle-and-pin connector at the end of the beam; fixed
+THINK part pm-hose-1 (5102c04 Hose, Pneumatic 4mm D. 4L / 3.2cm): short blue pneumatic hose (3.2 cm), length checked 1:1 on page 19; fixed
+THINK part pm-pump-1 (26288 Pneumatic Pump Large (11L) with 1 x 3 Liftarm): blue pneumatic pump with black plunger top and a 1 x 3 base; moves up and down
+THINK touches Sub-step 1: four blue long pins go into the first 15-hole beam, with a black connector at its far end. Sub-step 2: a black hub with a blue pin goes onto the beam (yellow box).
+THINK touches Sub-step 3: the blue pump stands on three of the pins by its 1 x 3 base and the short blue hose is pushed onto its side nozzle (yellow box). Sub-step 4: the second 15-hole beam is pressed on under the pin ends. Page 20: the finished deck is placed on the turntable and the four blue pins of step 17 are pushed in from the sides (green arrows, two per side) to lock it.
+THINK does pm-beam15-1 supports pm-pump-1
+THINK does sw-bpin-1 holds pm-beam15-1
+THINK does pm-lpin-2 holds pm-pump-1
+THINK does pm-hose-1 carries pm-pump-1
+THINK why A pump with a plunger pushed by hand pushes air through hoses; the two beams make a light frame for it.
+THINK check pm-lpin-1.pin1 goes into pm-beam15-1.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-2.pin1 goes into pm-beam15-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-3.pin1 goes into pm-beam15-1.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-4.pin1 goes into pm-beam15-1.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-conn-1.hole1 goes into pm-beam15-1.hole? (not shown in the booklet)
+THINK check pm-hub-1.pin1 goes into pm-beam15-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-apin-1.pin1 goes into pm-hub-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-1.pin2 goes into pm-beam15-2.hole6, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-2.pin2 goes into pm-beam15-2.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-3.pin2 goes into pm-beam15-2.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check pm-lpin-4.pin2 goes into pm-beam15-2.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sw-bpin-1.pin2 goes into pm-beam15-1.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sw-bpin-2.pin2 goes into pm-beam15-2.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sw-bpin-3.pin2 goes into pm-beam15-1.hole12, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sw-bpin-4.pin2 goes into pm-beam15-2.hole12, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on pm-beam15-1 builds on sw-bpin-1 (42175-step-017)
+THINK builds_on pm-beam15-1 builds on sw-bpin-3 (42175-step-017)
+THINK builds_on pm-beam15-2 builds on sw-bpin-2 (42175-step-017)
+THINK builds_on pm-beam15-2 builds on sw-bpin-4 (42175-step-017)
+THINK later Steps 19-21 build the side frames and cross beam around the pump on the turntable. Pattern: pneumatic pump deck
+ADD pm-beam15-1 32278 darkgray
+ADD pm-beam15-2 32278 darkgray
+ADD pm-lpin-1 42924 blue
+ADD pm-lpin-2 42924 blue
+ADD pm-lpin-3 42924 blue
+ADD pm-lpin-4 42924 blue
+ADD pm-apin-1 43093 blue
+ADD pm-hub-1 44874 black
+ADD pm-conn-1 6536 black
+ADD pm-hose-1 5102c04 blue
+ADD pm-pump-1 26288 blue
+CONNECT pm-lpin-1.pin1 -> pm-beam15-1.hole6~ STIFF
+CONNECT pm-lpin-2.pin1 -> pm-beam15-1.hole7~ STIFF
+CONNECT pm-lpin-3.pin1 -> pm-beam15-1.hole8~ STIFF
+CONNECT pm-lpin-4.pin1 -> pm-beam15-1.hole9~ STIFF
+CONNECT pm-conn-1.hole1 -> pm-beam15-1.hole?
+CONNECT pm-hub-1.pin1 -> pm-beam15-1.hole3~ STIFF
+CONNECT pm-apin-1.pin1 -> pm-hub-1.hole1~ STIFF
+CONNECT pm-lpin-1.pin2 -> pm-beam15-2.hole6~ STIFF
+CONNECT pm-lpin-2.pin2 -> pm-beam15-2.hole7~ STIFF
+CONNECT pm-lpin-3.pin2 -> pm-beam15-2.hole8~ STIFF
+CONNECT pm-lpin-4.pin2 -> pm-beam15-2.hole9~ STIFF
+CONNECT sw-bpin-1.pin2 -> pm-beam15-1.hole3~ STIFF
+CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF
+CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF
+CONNECT sw-bpin-4.pin2 -> pm-beam15-2.hole12~ STIFF
+DOES pm-beam15-1 SUPPORTS pm-pump-1
+DOES sw-bpin-1 HOLDS pm-beam15-1
+DOES pm-lpin-2 HOLDS pm-pump-1
+DOES pm-hose-1 CARRIES pm-pump-1
+PATTERN pump_deck
+
+STEP 19
+THINK have Pump deck sits on the turntable and is locked by the four blue pins (step 18).
+THINK goal Starts the walls of the upper body around the pump.
+THINK part up-frame-1 (64179 Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick): black 5 x 7 frame, built in the yellow box and placed beside the pump; fixed
+THINK part up-lbeam-1 (32526 Technic Beam 3 x 5 L-Shape Thick): dark-grey 3 x 5 L-beam standing upright inside the frame; fixed
+THINK part up-lpin-1 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; fixed
+THINK part up-lpin-2 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; fixed
+THINK part up-lpin-3 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; fixed
+THINK part up-lpin-4 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; fixed
+THINK part up-lpin-5 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; fixed
+THINK part up-bpin-1 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): two long blue pins that hold the L-beam to the frame; fixed
+THINK part up-bpin-2 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): two long blue pins that hold the L-beam to the frame; fixed
+THINK touches Yellow box 1-3: an L-beam gets a blue pin, stands inside the 5 x 7 frame, and two more pins go through the frame and L-beam; long grey pins are pushed into the frame sides.
+THINK touches The frame is lowered next to the pump and the grey pins slide through the pump deck's beams (green arrows).
+THINK does up-bpin-1 holds up-lbeam-1
+THINK does up-lpin-1 holds up-frame-1
+THINK why A 5 x 7 frame is stiff and its many holes take pins for the next layers; the L-beam is a tall post.
+THINK check up-bpin-1.pin1 goes into up-lbeam-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-1.pin3 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-bpin-2.pin1 goes into up-lbeam-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-2.pin3 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-lpin-1.pin1 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-lpin-2.pin1 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-lpin-3.pin1 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-lpin-4.pin1 goes into up-frame-1.hole? (not shown in the booklet)
+THINK check up-lpin-5.pin1 goes into sw-top-1.hole? (not shown in the booklet)
+THINK builds_on up-lpin-5 builds on sw-top-1 (42175-step-017)
+THINK later Step 20 builds the same on the other side; step 21 joins the two with a long beam. Pattern: side frame
+ADD up-frame-1 64179 black
+ADD up-lbeam-1 32526 darkgray
+ADD up-lpin-1 65304 lightgray
+ADD up-lpin-2 65304 lightgray
+ADD up-lpin-3 65304 lightgray
+ADD up-lpin-4 65304 lightgray
+ADD up-lpin-5 65304 lightgray
+ADD up-bpin-1 42924 blue
+ADD up-bpin-2 42924 blue
+CONNECT up-bpin-1.pin1 -> up-lbeam-1.hole1~ STIFF
+CONNECT up-bpin-1.pin3 -> up-frame-1.hole?
+CONNECT up-bpin-2.pin1 -> up-lbeam-1.hole5~ STIFF
+CONNECT up-bpin-2.pin3 -> up-frame-1.hole?
+CONNECT up-lpin-1.pin1 -> up-frame-1.hole?
+CONNECT up-lpin-2.pin1 -> up-frame-1.hole?
+CONNECT up-lpin-3.pin1 -> up-frame-1.hole?
+CONNECT up-lpin-4.pin1 -> up-frame-1.hole?
+CONNECT up-lpin-5.pin1 -> sw-top-1.hole?
+DOES up-bpin-1 HOLDS up-lbeam-1
+DOES up-lpin-1 HOLDS up-frame-1
+PATTERN side_frame_with_upright
+
+STEP 20
+THINK have Pump deck on the turntable with one side frame beside it (step 19).
+THINK goal Gives the upper body a wall on both sides of the pump.
+THINK part up-frame-2 (64179 Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick): second black 5 x 7 frame for the other side; fixed
+THINK part up-lbeam-2 (32526 Technic Beam 3 x 5 L-Shape Thick): dark-grey 3 x 5 L-beam standing upright in the frame; fixed
+THINK part up-lpin-6 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four light-grey long pins pushed into the frame sides; fixed
+THINK part up-lpin-7 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four light-grey long pins pushed into the frame sides; fixed
+THINK part up-lpin-8 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four light-grey long pins pushed into the frame sides; fixed
+THINK part up-lpin-9 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): four light-grey long pins pushed into the frame sides; fixed
+THINK part up-bpin-3 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): two long blue pins; fixed
+THINK part up-bpin-4 (42924 Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot): two long blue pins; fixed
+THINK touches Same three sub-steps as step 19 (mirrored): L-beam, frame, pins. The finished frame is placed on the other side of the pump (arrow).
+THINK does up-bpin-3 holds up-lbeam-2
+THINK does up-lpin-6 holds up-frame-2
+THINK why Mirror of step 19 so the two walls match.
+THINK check up-bpin-3.pin1 goes into up-lbeam-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-3.pin3 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-bpin-4.pin1 goes into up-lbeam-2.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-4.pin3 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-lpin-6.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-lpin-7.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-lpin-8.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-lpin-9.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK later Step 21 ties the two frames together across the top. Pattern: mirrored side frame
+ADD up-frame-2 64179 black
+ADD up-lbeam-2 32526 darkgray
+ADD up-lpin-6 65304 lightgray
+ADD up-lpin-7 65304 lightgray
+ADD up-lpin-8 65304 lightgray
+ADD up-lpin-9 65304 lightgray
+ADD up-bpin-3 42924 blue
+ADD up-bpin-4 42924 blue
+CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole1~ STIFF
+CONNECT up-bpin-3.pin3 -> up-frame-2.hole?
+CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole5~ STIFF
+CONNECT up-bpin-4.pin3 -> up-frame-2.hole?
+CONNECT up-lpin-6.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-7.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-8.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-9.pin1 -> up-frame-2.hole?
+DOES up-bpin-3 HOLDS up-lbeam-2
+DOES up-lpin-6 HOLDS up-frame-2
+PATTERN side_frame_with_upright
+
+STEP 21
+THINK have Pump deck with a black side frame on each side (steps 19-20).
+THINK goal Ties the two upright frames into one rigid structure over the pump.
+THINK part up-beam15-1 (32278 Technic Beam 1 x 15 Thick): long black 15-hole cross beam bridging the two side frames; fixed
+THINK part up-hub-1 (44874 Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]): light-grey pin connector hub with two pins, pressed into the beam; fixed
+THINK part up-rpin-1 (89678 Technic Pin 1/2 with Friction): short red pin in the hub's centre hole; fixed
+THINK touches Yellow box 1: the grey hub is pushed onto two holes of the 15-hole beam. Yellow box 2: a red pin is pressed into the hub's middle hole. The finished beam is placed across the model (arrow) over the two side frames.
+THINK does up-hub-1 holds up-beam15-1
+THINK does up-beam15-1 supports up-frame-1
+THINK why A long beam reaches from one frame to the other; the hub and red pin add a mounting point for the next parts.
+THINK check up-hub-1.pin1 goes into up-beam15-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-hub-1.pin2 goes into up-beam15-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-rpin-1.pin1 goes into up-hub-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later The cab frame is built on this beam. Pattern: cross beam
+ADD up-beam15-1 32278 black
+ADD up-hub-1 44874 lightgray
+ADD up-rpin-1 89678 red
+CONNECT up-hub-1.pin1 -> up-beam15-1.hole5~ STIFF
+CONNECT up-hub-1.pin2 -> up-beam15-1.hole7~ STIFF
+CONNECT up-rpin-1.pin1 -> up-hub-1.hole1~ STIFF
+DOES up-hub-1 HOLDS up-beam15-1
+DOES up-beam15-1 SUPPORTS up-frame-1
+PATTERN cross_beam_with_hub
+
+STEP 22
+THINK have Turntable with pump deck, two side frames and a cross beam (steps 18-21).
+THINK goal Starts the air plumbing: this line will carry air from the pump to the two air cylinders.
+THINK part hy-tee-1 (4697b Pneumatic T-Piece (T Bar) [New Style]): grey air T-piece that joins two hoses; fixed
+THINK part hy-valve-1 (19474 Pneumatic Switch with Pin Holes, Axle Hole and Stepped Outlets): two grey pneumatic switch blocks, one on each end of the hose line; fixed
+THINK part hy-valve-2 (19474 Pneumatic Switch with Pin Holes, Axle Hole and Stepped Outlets): two grey pneumatic switch blocks, one on each end of the hose line; fixed
+THINK part hy-hose-1 (5102c06 Hose, Pneumatic 4mm D. 6L / 4.8cm): two blue 6-long air hoses (length checked 1:1 on page 24); fixed
+THINK part hy-hose-2 (5102c06 Hose, Pneumatic 4mm D. 6L / 4.8cm): two blue 6-long air hoses (length checked 1:1 on page 24); fixed
+THINK touches Sub-step 1: the two blue hoses are pushed onto the two ends of the grey T-piece. Sub-step 2: the free hose ends go onto a nozzle of each grey switch block, one block at each end of the line.
+THINK touches Page 25: the finished air line is laid across the model; each switch block sits on pins sticking out of the two side frames (arrow).
+THINK does hy-tee-1 holds hy-hose-1
+THINK does hy-tee-1 holds hy-hose-2
+THINK does hy-valve-1 holds hy-hose-1
+THINK does hy-valve-2 holds hy-hose-2
+THINK why A T-piece splits the pump's air into two branches; a switch block on each branch lets the driver choose which cylinder moves.
+THINK check hy-valve-1.hole? goes into up-lpin-1.pin1 (not shown in the booklet)
+THINK check hy-valve-2.hole? goes into up-lpin-6.pin1 (not shown in the booklet)
+THINK builds_on hy-valve-1 builds on up-lpin-1 (42175-step-019), and rests on up-frame-1 (42175-step-019)
+THINK builds_on hy-valve-2 builds on up-lpin-6 (42175-step-020), and rests on up-frame-2 (42175-step-020)
+THINK later Steps 24 and later fit the cylinders and the pump hose. Pattern: air line with switches
+ADD hy-tee-1 4697b lightgray
+ADD hy-valve-1 19474 lightgray
+ADD hy-valve-2 19474 lightgray
+ADD hy-hose-1 5102c06 blue
+ADD hy-hose-2 5102c06 blue
+DOES hy-tee-1 HOLDS hy-hose-1
+DOES hy-tee-1 HOLDS hy-hose-2
+DOES hy-valve-1 HOLDS hy-hose-1
+DOES hy-valve-2 HOLDS hy-hose-2
+CONNECT hy-valve-1.hole? -> up-lpin-1.pin1
+CONNECT hy-valve-2.hole? -> up-lpin-6.pin1
+PATTERN air_line
+
+STEP 23
+THINK have Air line fitted across the turntable (step 22).
+THINK goal Builds the two tall supports that the air cylinder will hang between.
+THINK part up-pin-1 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-pin-2 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-pin-3 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-pin-4 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-pin-5 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-pin-6 (4274 Technic Pin 1/2): six short light-grey pins used inside the two post builds; fixed
+THINK part up-beam5-1 (32316 Technic Beam 1 x 5 Thick): two black 5-hole beams, one per post build; fixed
+THINK part up-beam5-2 (32316 Technic Beam 1 x 5 Thick): two black 5-hole beams, one per post build; fixed
+THINK part up-lbeam-3 (32526 Technic Beam 3 x 5 L-Shape Thick): two dark-grey 3 x 5 L-beams, the base of each post; fixed
+THINK part up-lbeam-4 (32526 Technic Beam 3 x 5 L-Shape Thick): two dark-grey 3 x 5 L-beams, the base of each post; fixed
+THINK touches Two small yellow-box builds (sub-steps 1-2, same for both): three small pins go into an L-beam and a black 5-hole beam is pressed on to stand upright.
+THINK touches The two finished posts are set on top of the left side frame (arrows).
+THINK does up-pin-1 holds up-beam5-1
+THINK does up-pin-4 holds up-beam5-2
+THINK why An L-beam with a 5-hole beam on its tall leg gives a post two pin holes wide, so a cylinder pivot pin can pass through.
+THINK check up-pin-1.pin1 goes into up-lbeam-3.hole1, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-2.pin1 goes into up-lbeam-3.hole3, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-3.pin1 goes into up-lbeam-3.hole5, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-4.pin1 goes into up-lbeam-4.hole1, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-5.pin1 goes into up-lbeam-4.hole3, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-6.pin1 goes into up-lbeam-4.hole5, 0.2 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-1.pin2 goes into up-beam5-1.hole1, 0.9 hole deep, turns freely (estimated from the picture)
+THINK check up-pin-4.pin2 goes into up-beam5-2.hole1, 0.9 hole deep, turns freely (estimated from the picture)
+THINK later Step 24 puts the cylinder between these posts. Pattern: twin posts
+ADD up-pin-1 4274 lightgray
+ADD up-pin-2 4274 lightgray
+ADD up-pin-3 4274 lightgray
+ADD up-pin-4 4274 lightgray
+ADD up-pin-5 4274 lightgray
+ADD up-pin-6 4274 lightgray
+ADD up-beam5-1 32316 black
+ADD up-beam5-2 32316 black
+ADD up-lbeam-3 32526 darkgray
+ADD up-lbeam-4 32526 darkgray
+CONNECT up-pin-1.pin1 -> up-lbeam-3.hole1~ TURNS
+CONNECT up-pin-2.pin1 -> up-lbeam-3.hole3~ TURNS
+CONNECT up-pin-3.pin1 -> up-lbeam-3.hole5~ TURNS
+CONNECT up-pin-4.pin1 -> up-lbeam-4.hole1~ TURNS
+CONNECT up-pin-5.pin1 -> up-lbeam-4.hole3~ TURNS
+CONNECT up-pin-6.pin1 -> up-lbeam-4.hole5~ TURNS
+CONNECT up-pin-1.pin2 -> up-beam5-1.hole1~ TURNS
+CONNECT up-pin-4.pin2 -> up-beam5-2.hole1~ TURNS
+DOES up-pin-1 HOLDS up-beam5-1
+DOES up-pin-4 HOLDS up-beam5-2
+PATTERN twin_post_builds
+
+STEP 24
+THINK have Two posts on the left side of the turntable (step 23).
+THINK goal Adds the first air cylinder.
+THINK part hy-cyl-1 (19478 Pneumatic Cylinder 2 x 11 with 2 Stepped Inlets [V2]): dark-grey air cylinder with a piston rod; rod slides in and out
+THINK part up-beam2-1 (43857 Technic Beam 1 x 2 Thick): dark-grey 1 x 2 beam on the cylinder's fixed end; fixed
+THINK part up-axle5-1 (32073 Technic Axle 5): light-grey 5-long axle through the cylinder end and the posts; fixed
+THINK part hy-pin-1 (77765 Technic Pin Long 3l, No Friction Ridges, with Stop and Hole): grey 3L pin with stop at the cylinder's rod end; fixed
+THINK touches Sub-step 1: a dark-grey 1 x 2 beam is clipped to the cylinder's fixed end. Sub-step 2: the 5-long axle is pushed through it.
+THINK touches The cylinder is then lowered between the two posts and the axle slides through the post holes (green arrows).
+THINK does up-beam2-1 holds hy-cyl-1
+THINK does up-axle5-1 carries hy-cyl-1
+THINK does up-axle5-1 holds up-lbeam-1
+THINK why A cylinder with a pivot axle can swing up and down as air pushes the rod.
+THINK later It will drive the upper body's arm later. Pattern: pivoting cylinder
+ADD hy-cyl-1 19478 darkgray
+ADD up-beam2-1 43857 darkgray
+ADD up-axle5-1 32073 lightgray
+ADD hy-pin-1 77765 lightgray
+DOES up-beam2-1 HOLDS hy-cyl-1
+DOES up-axle5-1 CARRIES hy-cyl-1
+DOES up-axle5-1 HOLDS up-lbeam-1
+PATTERN cylinder_between_posts
+
+STEP 25
+THINK have Cylinder pinned between the two posts (step 24).
+THINK goal Stops the cylinder pivot axle from slipping out.
+THINK part up-conn-1 (59443 Technic Axle Connector Smooth [with x Hole + Orientation]): black axle connector, pushed onto the end of the axle; fixed
+THINK touches One black axle connector is pushed onto the free end of the cylinder axle so it can't slide out.
+THINK does up-conn-1 locks up-axle5-1 in place
+THINK why A smooth axle connector with a cross hole grips the axle end.
+THINK check up-conn-1.axlehole? goes into up-axle5-1.axle5 (not shown in the booklet)
+THINK builds_on up-conn-1 builds on up-axle5-1 (42175-step-024)
+THINK later The model is ready for the cab frame in the next step. Pattern: axle stop
+ADD up-conn-1 59443 black
+CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5
+DOES up-conn-1 LOCKS up-axle5-1
+PATTERN end_stop
+
+STEP 26
+THINK have Cylinder pinned between the two posts, air line across the turntable (steps 22-25).
+THINK goal Brings the two long hoses into the model before they are plugged in.
+THINK part hy-hose-3 (5102c20 Hose, Pneumatic 4mm D. 20L / 16cm): long light-grey air hose (16 cm, length checked 1:1 in the red box); fixed
+THINK part hy-hose-4 (5102c29 Hose, Pneumatic 4mm D. 29L / 232mm): long black air hose (23 cm, length checked 1:1 in the red box); fixed
+THINK touches The two hoses are shown hanging above the model (plus-brick icons): they are just added to the model here, one light grey and one black.
+THINK does hy-valve-1 holds hy-hose-3
+THINK does hy-cyl-1 holds hy-hose-4
+THINK why The two lengths were checked 1:1 so the right one goes to each nozzle.
+THINK later Step 27 plugs them onto the cylinder, switch blocks and T-piece. Pattern: air hoses
+ADD hy-hose-3 5102c20 lightgray
+ADD hy-hose-4 5102c29 black
+DOES hy-valve-1 HOLDS hy-hose-3
+DOES hy-cyl-1 HOLDS hy-hose-4
+PATTERN hose_length_check
+
+STEP 27
+THINK have Two loose hoses added (step 26).
+THINK goal Connects the pump, switches and cylinder into one air circuit.
+THINK touches The black hose is plugged onto the cylinder's nozzle and its other end goes to a nozzle of the left switch block (red circle left). The grey hose is plugged onto the T-piece and the right switch block (red circle right).
+THINK does hy-hose-2 carries hy-cyl-1
+THINK does hy-hose-1 carries hy-tee-1
+THINK why Pressing the pump pushes air through the T-piece and the switches into the cylinder.
+THINK later Steps 28 onward continue on the top of the frame. Pattern: air circuit
+DOES hy-hose-2 CARRIES hy-cyl-1
+DOES hy-hose-1 CARRIES hy-tee-1
+PATTERN plug_hoses
+
+STEP 28
+THINK have Air circuit connected (step 27).
+THINK goal Adds the posts for the next cover panel.
+THINK part up-spin-1 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): two black pins pushed into the right rear frame, pointing up (arrows); fixed
+THINK part up-spin-2 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): two black pins pushed into the right rear frame, pointing up (arrows); fixed
+THINK touches Two black pins are pressed into the frame at the right rear (yellow box 2x).
+THINK does up-spin-1 holds up-frame-2
+THINK why The pins are the same type used elsewhere in the model.
+THINK check up-spin-1.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check up-spin-2.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK builds_on up-spin-1 builds on up-frame-2 (42175-step-020), and rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+THINK builds_on up-spin-2 builds on up-frame-2 (42175-step-020), and rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+THINK later Step 29 lowers a panel onto them. Pattern: posts for panel
+ADD up-spin-1 65304 black
+ADD up-spin-2 65304 black
+CONNECT up-spin-1.pin1 -> up-frame-2.hole?
+CONNECT up-spin-2.pin1 -> up-frame-2.hole?
+DOES up-spin-1 HOLDS up-frame-2
+PATTERN posts_for_cover
+
+STEP 29
+THINK have Two pins stand up on the right rear frame (step 28).
+THINK goal Closes the top of the rear section and gives a flat base for the cab.
+THINK part up-panel-1 (15458 Technic Panel 3 x 11 x 1): black 3 x 11 panel built in the yellow box and placed on the rear frame; fixed
+THINK part up-spin-3 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK part up-spin-4 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK part up-spin-5 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK part up-spin-6 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK part up-spin-7 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK part up-spin-8 (65304 Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]): six black pins pushed through the panel holes; fixed
+THINK touches Yellow box: pins go into the panel's end holes (green arrow shows the last one). The panel is lowered onto the two pins standing on the rear frame (arrows).
+THINK does up-panel-1 supports hy-hose-2
+THINK does up-spin-3 holds up-panel-1
+THINK why A panel is wide and flat, so it covers hoses and adds stiffness.
+THINK check up-spin-3.pin1 goes into up-panel-1.hole? (not shown in the booklet)
+THINK check up-spin-4.pin1 goes into up-panel-1.hole? (not shown in the booklet)
+THINK check up-spin-5.pin1 goes into up-panel-1.hole? (not shown in the booklet)
+THINK check up-spin-6.pin1 goes into up-panel-1.hole? (not shown in the booklet)
+THINK later The cab frame in steps 30 onward sits on it. Pattern: panel on pins
+ADD up-panel-1 15458 black
+ADD up-spin-3 65304 black
+ADD up-spin-4 65304 black
+ADD up-spin-5 65304 black
+ADD up-spin-6 65304 black
+ADD up-spin-7 65304 black
+ADD up-spin-8 65304 black
+CONNECT up-spin-3.pin1 -> up-panel-1.hole?
+CONNECT up-spin-4.pin1 -> up-panel-1.hole?
+CONNECT up-spin-5.pin1 -> up-panel-1.hole?
+CONNECT up-spin-6.pin1 -> up-panel-1.hole?
+DOES up-panel-1 SUPPORTS hy-hose-2
+DOES up-spin-3 HOLDS up-panel-1
+PATTERN panel_on_pins
+
+STEP 30
+THINK have Rear panel in place (step 29).
+THINK goal Builds the first side-body piece with its cosmetic fairings.
+THINK part up-beam11-1 (32525 Technic Beam 1 x 11 Thick): black 11-hole beam, base of this small build; fixed
+THINK part up-tbeam-1 (41677 Technic Beam 1 x 2 Thin): two small black 1 x 2 thin beams slid on top; fixed
+THINK part up-tbeam-2 (41677 Technic Beam 1 x 2 Thin): two small black 1 x 2 thin beams slid on top; fixed
+THINK part up-bpin-5 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins used as fasteners in sub-steps 1-4; fixed
+THINK part up-bpin-6 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins used as fasteners in sub-steps 1-4; fixed
+THINK part up-bpin-7 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins used as fasteners in sub-steps 1-4; fixed
+THINK part up-bpin-8 (43093 Technic Axle Pin with Friction Ridges Lengthwise): four blue pins used as fasteners in sub-steps 1-4; fixed
+THINK part fr-fair7-1 (2387 Technic Panel Fairing #7 3L Very Small Smooth, Side A): black side fairing no. 7 (circled 7 in the booklet); fixed
+THINK part fr-fair8-1 (2389 Technic Panel Fairing #8 3L Very Small Smooth, Side B): black side fairing no. 8 (circled 8 in the booklet); fixed
+THINK touches Sub-steps 1-5: blue pins go into thin beams, the thin beams are pressed on the 11-hole beam, and the two numbered fairings (7 and 8) are clipped on the beam's ends.
+THINK does up-tbeam-1 holds fr-fair7-1
+THINK does up-tbeam-2 holds fr-fair8-1
+THINK why A long beam with pins gives mounting points; fairings 7 and 8 round off the shape.
+THINK check up-bpin-5.axle1 goes into up-tbeam-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check up-bpin-6.axle1 goes into up-tbeam-1.axlehole2, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check up-bpin-7.axle1 goes into up-tbeam-2.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check up-bpin-8.axle1 goes into up-tbeam-2.axlehole2, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check up-bpin-5.pin1 goes into up-beam11-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check up-bpin-6.pin1 goes into up-beam11-1.hole7, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Step 31 fits it to the model. Pattern: beam with fairings
+ADD up-beam11-1 32525 black
+ADD up-tbeam-1 41677 black
+ADD up-tbeam-2 41677 black
+ADD up-bpin-5 43093 blue
+ADD up-bpin-6 43093 blue
+ADD up-bpin-7 43093 blue
+ADD up-bpin-8 43093 blue
+ADD fr-fair7-1 2387 black
+ADD fr-fair8-1 2389 black
+CONNECT up-bpin-5.axle1 -> up-tbeam-1.axlehole1~ LOCKED
+CONNECT up-bpin-6.axle1 -> up-tbeam-1.axlehole2~ LOCKED
+CONNECT up-bpin-7.axle1 -> up-tbeam-2.axlehole1~ LOCKED
+CONNECT up-bpin-8.axle1 -> up-tbeam-2.axlehole2~ LOCKED
+CONNECT up-bpin-5.pin1 -> up-beam11-1.hole5~ STIFF
+CONNECT up-bpin-6.pin1 -> up-beam11-1.hole7~ STIFF
+DOES up-tbeam-1 HOLDS fr-fair7-1
+DOES up-tbeam-2 HOLDS fr-fair8-1
+PATTERN beam_with_fairings

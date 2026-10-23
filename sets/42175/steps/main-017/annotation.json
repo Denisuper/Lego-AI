@@ -1,0 +1,121 @@
+{
+  "example_id": "42175-step-017",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 17,
+  "step": 17,
+  "input": {
+    "picture": "steps/main-017/picture.png",
+    "parts_box": [
+      {
+        "name": "sw-top-1",
+        "part_number": "88738",
+        "count": 1
+      },
+      {
+        "name": "sw-base-1",
+        "part_number": "18939",
+        "count": 1
+      },
+      {
+        "name": "sw-bpin-1",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "sw-bpin-2",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "sw-bpin-3",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "sw-bpin-4",
+        "part_number": "42924",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Undercarriage with two finished track loops around it (step 16). Bag 14 is open (it also holds loose hoses for later steps)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sw-top-1",
+        "part_number": "88738",
+        "catalog_name": "Technic Turntable Large Type 4 Top, 60 Tooth",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 60-tooth turntable top ring with three 3-hole blocks",
+        "rotation": "spins"
+      },
+      {
+        "name": "sw-base-1",
+        "part_number": "18939",
+        "catalog_name": "Technic Turntable Large Type 3 Base",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "light-grey turntable base ring, snapped under the top ring",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sw-bpin-1",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "four long blue pins pushed into the holes of the black blocks on the turntable top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sw-bpin-2",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "four long blue pins pushed into the holes of the black blocks on the turntable top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sw-bpin-3",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "four long blue pins pushed into the holes of the black blocks on the turntable top",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sw-bpin-4",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "four long blue pins pushed into the holes of the black blocks on the turntable top",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1: the black turntable top is pressed onto the grey base ring. Yellow box 2: four blue pins go into the blocks on the top ring. The finished turntable is lowered onto the middle of the undercarriage (arrow) and the four grey pins (green arrows, two from each side) are pushed in through the base ring to lock it."
+    ],
+    "who_does_what_to_which": [
+      "sw-top-1 spins on sw-base-1",
+      "uc-lpin-1 holds sw-base-1",
+      "uc-lpin-3 holds sw-base-1"
+    ],
+    "where_everything_is_after": [
+      "the turntable sits on the middle of the undercarriage with its base locked by the four grey pins; the top ring can turn on it",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the machine a ring that lets the whole upper body swing round on the tracks.",
+      "why_these_parts": "A slewing ring (grey base + black top) is the Technic version of a real excavator's swing bearing; the four long pins already waiting in the frame lock the base without extra parts.",
+      "sets_up_for_later": "Everything from step 18 onward that is part of the upper body is built on the black top ring.",
+      "design_pattern": "turntable on pins"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The four pins that lock the base are the grey pins of step 15. Which of the base's six side holes (hole1-3 left, hole4-6 right) each one takes is an estimate (two per side). The blue pins go into the top ring's blocks; their exact holes are not named."
+}

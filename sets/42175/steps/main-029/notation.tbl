@@ -1,0 +1,15 @@
+STEP 29
+ADD up-panel-1 15458 black
+ADD up-spin-3 65304 black
+ADD up-spin-4 65304 black
+ADD up-spin-5 65304 black
+ADD up-spin-6 65304 black
+ADD up-spin-7 65304 black
+ADD up-spin-8 65304 black
+CONNECT up-spin-3.pin1 -> up-panel-1.hole?
+CONNECT up-spin-4.pin1 -> up-panel-1.hole?
+CONNECT up-spin-5.pin1 -> up-panel-1.hole?
+CONNECT up-spin-6.pin1 -> up-panel-1.hole?
+DOES up-panel-1 SUPPORTS hy-hose-2
+DOES up-spin-3 HOLDS up-panel-1
+PATTERN panel_on_pins

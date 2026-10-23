@@ -1,0 +1,5 @@
+STEP 25
+ADD up-conn-1 59443 black
+CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5
+DOES up-conn-1 LOCKS up-axle5-1
+PATTERN end_stop

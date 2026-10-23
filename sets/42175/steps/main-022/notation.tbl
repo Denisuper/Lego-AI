@@ -1,0 +1,13 @@
+STEP 22
+ADD hy-tee-1 4697b lightgray
+ADD hy-valve-1 19474 lightgray
+ADD hy-valve-2 19474 lightgray
+ADD hy-hose-1 5102c06 blue
+ADD hy-hose-2 5102c06 blue
+DOES hy-tee-1 HOLDS hy-hose-1
+DOES hy-tee-1 HOLDS hy-hose-2
+DOES hy-valve-1 HOLDS hy-hose-1
+DOES hy-valve-2 HOLDS hy-hose-2
+CONNECT hy-valve-1.hole? -> up-lpin-1.pin1
+CONNECT hy-valve-2.hole? -> up-lpin-6.pin1
+PATTERN air_line

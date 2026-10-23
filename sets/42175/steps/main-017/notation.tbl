@@ -1,0 +1,15 @@
+STEP 17
+ADD sw-top-1 88738 black
+ADD sw-base-1 18939 lightgray
+ADD sw-bpin-1 42924 blue
+ADD sw-bpin-2 42924 blue
+ADD sw-bpin-3 42924 blue
+ADD sw-bpin-4 42924 blue
+CONNECT uc-lpin-1.pin1 -> sw-base-1.hole1~ STIFF
+CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF
+CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF
+CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF
+DOES sw-top-1 SPINS_ON sw-base-1
+DOES uc-lpin-1 HOLDS sw-base-1
+DOES uc-lpin-3 HOLDS sw-base-1
+PATTERN turntable_on_pins

@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-028",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 31,
+  "step": 28,
+  "input": {
+    "picture": "steps/main-028/picture.png",
+    "parts_box": [
+      {
+        "name": "up-spin-1",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-2",
+        "part_number": "65304",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Air circuit connected (step 27)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "up-spin-1",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black pins pushed into the right rear frame, pointing up (arrows)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-2",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black pins pushed into the right rear frame, pointing up (arrows)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two black pins are pressed into the frame at the right rear (yellow box 2x)."
+    ],
+    "who_does_what_to_which": [
+      "up-spin-1 holds up-frame-2"
+    ],
+    "where_everything_is_after": [
+      "two pins stand up from the right rear frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the posts for the next cover panel.",
+      "why_these_parts": "The pins are the same type used elsewhere in the model.",
+      "sets_up_for_later": "Step 29 lowers a panel onto them.",
+      "design_pattern": "posts for panel"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which frame holes are used is not countable; the picture only shows two pins standing up."
+}

@@ -1,0 +1,78 @@
+{
+  "example_id": "42175-step-021",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 23,
+  "step": 21,
+  "input": {
+    "picture": "steps/main-021/picture.png",
+    "parts_box": [
+      {
+        "name": "up-beam15-1",
+        "part_number": "32278",
+        "count": 1
+      },
+      {
+        "name": "up-hub-1",
+        "part_number": "44874",
+        "count": 1
+      },
+      {
+        "name": "up-rpin-1",
+        "part_number": "89678",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Pump deck with a black side frame on each side (steps 19-20)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "up-beam15-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "long black 15-hole cross beam bridging the two side frames",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-hub-1",
+        "part_number": "44874",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "light-grey pin connector hub with two pins, pressed into the beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-rpin-1",
+        "part_number": "89678",
+        "catalog_name": "Technic Pin 1/2 with Friction",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "short red pin in the hub's centre hole",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1: the grey hub is pushed onto two holes of the 15-hole beam. Yellow box 2: a red pin is pressed into the hub's middle hole. The finished beam is placed across the model (arrow) over the two side frames."
+    ],
+    "who_does_what_to_which": [
+      "up-hub-1 holds up-beam15-1",
+      "up-beam15-1 supports up-frame-1"
+    ],
+    "where_everything_is_after": [
+      "a 15-hole beam with a grey hub and red pin lies across the pump deck, tying the two side frames",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Ties the two upright frames into one rigid structure over the pump.",
+      "why_these_parts": "A long beam reaches from one frame to the other; the hub and red pin add a mounting point for the next parts.",
+      "sets_up_for_later": "The cab frame is built on this beam.",
+      "design_pattern": "cross beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The beam rests on the pins sticking out of both side frames; exactly which pins it sits on is not labeled. Hub holes are estimates."
+}

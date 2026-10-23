@@ -1,0 +1,94 @@
+{
+  "example_id": "42175-step-024",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 27,
+  "step": 24,
+  "input": {
+    "picture": "steps/main-024/picture.png",
+    "parts_box": [
+      {
+        "name": "hy-cyl-1",
+        "part_number": "19478",
+        "count": 1
+      },
+      {
+        "name": "up-beam2-1",
+        "part_number": "43857",
+        "count": 1
+      },
+      {
+        "name": "up-axle5-1",
+        "part_number": "32073",
+        "count": 1
+      },
+      {
+        "name": "hy-pin-1",
+        "part_number": "77765",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Two posts on the left side of the turntable (step 23)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hy-cyl-1",
+        "part_number": "19478",
+        "catalog_name": "Pneumatic Cylinder 2 x 11 with 2 Stepped Inlets [V2]",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "dark-grey air cylinder with a piston rod",
+        "rotation": "rod slides in and out"
+      },
+      {
+        "name": "up-beam2-1",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "dark-grey 1 x 2 beam on the cylinder's fixed end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-axle5-1",
+        "part_number": "32073",
+        "catalog_name": "Technic Axle 5",
+        "color": "Light Bluish Gray",
+        "part_match": "confirmed",
+        "position": "light-grey 5-long axle through the cylinder end and the posts",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hy-pin-1",
+        "part_number": "77765",
+        "catalog_name": "Technic Pin Long 3l, No Friction Ridges, with Stop and Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey 3L pin with stop at the cylinder's rod end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-step 1: a dark-grey 1 x 2 beam is clipped to the cylinder's fixed end. Sub-step 2: the 5-long axle is pushed through it.",
+      "The cylinder is then lowered between the two posts and the axle slides through the post holes (green arrows)."
+    ],
+    "who_does_what_to_which": [
+      "up-beam2-1 holds hy-cyl-1",
+      "up-axle5-1 carries hy-cyl-1",
+      "up-axle5-1 holds up-lbeam-1"
+    ],
+    "where_everything_is_after": [
+      "the air cylinder lies along the left side with its fixed end pinned between the two posts and its rod pointing forward",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the first air cylinder.",
+      "why_these_parts": "A cylinder with a pivot axle can swing up and down as air pushes the rod.",
+      "sets_up_for_later": "It will drive the upper body's arm later.",
+      "design_pattern": "pivoting cylinder"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The cylinder has no catalog points, so joins to it are only shown in DOES lines. The loose grey pin (5th part of the parts box) is used near the rod end; where is not visible here."
+}

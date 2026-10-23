@@ -1,0 +1,20 @@
+STEP 20
+ADD up-frame-2 64179 black
+ADD up-lbeam-2 32526 darkgray
+ADD up-lpin-6 65304 lightgray
+ADD up-lpin-7 65304 lightgray
+ADD up-lpin-8 65304 lightgray
+ADD up-lpin-9 65304 lightgray
+ADD up-bpin-3 42924 blue
+ADD up-bpin-4 42924 blue
+CONNECT up-bpin-3.pin1 -> up-lbeam-2.hole1~ STIFF
+CONNECT up-bpin-3.pin3 -> up-frame-2.hole?
+CONNECT up-bpin-4.pin1 -> up-lbeam-2.hole5~ STIFF
+CONNECT up-bpin-4.pin3 -> up-frame-2.hole?
+CONNECT up-lpin-6.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-7.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-8.pin1 -> up-frame-2.hole?
+CONNECT up-lpin-9.pin1 -> up-frame-2.hole?
+DOES up-bpin-3 HOLDS up-lbeam-2
+DOES up-lpin-6 HOLDS up-frame-2
+PATTERN side_frame_with_upright

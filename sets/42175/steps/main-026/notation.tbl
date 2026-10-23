@@ -1,0 +1,6 @@
+STEP 26
+ADD hy-hose-3 5102c20 lightgray
+ADD hy-hose-4 5102c29 black
+DOES hy-valve-1 HOLDS hy-hose-3
+DOES hy-cyl-1 HOLDS hy-hose-4
+PATTERN hose_length_check

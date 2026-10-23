@@ -1,0 +1,134 @@
+{
+  "example_id": "42175-step-029",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 32,
+  "step": 29,
+  "input": {
+    "picture": "steps/main-029/picture.png",
+    "parts_box": [
+      {
+        "name": "up-panel-1",
+        "part_number": "15458",
+        "count": 1
+      },
+      {
+        "name": "up-spin-3",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-4",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-5",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-6",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-7",
+        "part_number": "65304",
+        "count": 1
+      },
+      {
+        "name": "up-spin-8",
+        "part_number": "65304",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Two pins stand up on the right rear frame (step 28)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "up-panel-1",
+        "part_number": "15458",
+        "catalog_name": "Technic Panel 3 x 11 x 1",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 3 x 11 panel built in the yellow box and placed on the rear frame",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-3",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-4",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-5",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-6",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-7",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      },
+      {
+        "name": "up-spin-8",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "six black pins pushed through the panel holes",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: pins go into the panel's end holes (green arrow shows the last one). The panel is lowered onto the two pins standing on the rear frame (arrows)."
+    ],
+    "who_does_what_to_which": [
+      "up-panel-1 supports hy-hose-2",
+      "up-spin-3 holds up-panel-1"
+    ],
+    "where_everything_is_after": [
+      "a black 3 x 11 panel lies across the rear of the frame, covering the hoses",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Closes the top of the rear section and gives a flat base for the cab.",
+      "why_these_parts": "A panel is wide and flat, so it covers hoses and adds stiffness.",
+      "sets_up_for_later": "The cab frame in steps 30 onward sits on it.",
+      "design_pattern": "panel on pins"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The panel has 3 x 11 holes on its top; pin holes used are not countable so joins are marked ?."
+}

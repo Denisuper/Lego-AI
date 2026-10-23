@@ -1,0 +1,22 @@
+STEP 23
+ADD up-pin-1 4274 lightgray
+ADD up-pin-2 4274 lightgray
+ADD up-pin-3 4274 lightgray
+ADD up-pin-4 4274 lightgray
+ADD up-pin-5 4274 lightgray
+ADD up-pin-6 4274 lightgray
+ADD up-beam5-1 32316 black
+ADD up-beam5-2 32316 black
+ADD up-lbeam-3 32526 darkgray
+ADD up-lbeam-4 32526 darkgray
+CONNECT up-pin-1.pin1 -> up-lbeam-3.hole1~ TURNS
+CONNECT up-pin-2.pin1 -> up-lbeam-3.hole3~ TURNS
+CONNECT up-pin-3.pin1 -> up-lbeam-3.hole5~ TURNS
+CONNECT up-pin-4.pin1 -> up-lbeam-4.hole1~ TURNS
+CONNECT up-pin-5.pin1 -> up-lbeam-4.hole3~ TURNS
+CONNECT up-pin-6.pin1 -> up-lbeam-4.hole5~ TURNS
+CONNECT up-pin-1.pin2 -> up-beam5-1.hole1~ TURNS
+CONNECT up-pin-4.pin2 -> up-beam5-2.hole1~ TURNS
+DOES up-pin-1 HOLDS up-beam5-1
+DOES up-pin-4 HOLDS up-beam5-2
+PATTERN twin_post_builds

@@ -1,0 +1,19 @@
+STEP 30
+ADD up-beam11-1 32525 black
+ADD up-tbeam-1 41677 black
+ADD up-tbeam-2 41677 black
+ADD up-bpin-5 43093 blue
+ADD up-bpin-6 43093 blue
+ADD up-bpin-7 43093 blue
+ADD up-bpin-8 43093 blue
+ADD fr-fair7-1 2387 black
+ADD fr-fair8-1 2389 black
+CONNECT up-bpin-5.axle1 -> up-tbeam-1.axlehole1~ LOCKED
+CONNECT up-bpin-6.axle1 -> up-tbeam-1.axlehole2~ LOCKED
+CONNECT up-bpin-7.axle1 -> up-tbeam-2.axlehole1~ LOCKED
+CONNECT up-bpin-8.axle1 -> up-tbeam-2.axlehole2~ LOCKED
+CONNECT up-bpin-5.pin1 -> up-beam11-1.hole5~ STIFF
+CONNECT up-bpin-6.pin1 -> up-beam11-1.hole7~ STIFF
+DOES up-tbeam-1 HOLDS fr-fair7-1
+DOES up-tbeam-2 HOLDS fr-fair8-1
+PATTERN beam_with_fairings

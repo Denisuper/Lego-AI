@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 16 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 30 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -136,10 +136,10 @@
 - **uc-bpin-2** (Undercarriage frame): placeholder
 - **uc-bpin-3** (Undercarriage frame): placeholder
 - **uc-bpin-4** (Undercarriage frame): placeholder
-- **uc-lpin-1** (Undercarriage frame): placeholder
-- **uc-lpin-2** (Undercarriage frame): placeholder
-- **uc-lpin-3** (Undercarriage frame): placeholder
-- **uc-lpin-4** (Undercarriage frame): placeholder
+- **uc-lpin-1** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-1.pin1 -> sw-base-1.hole1~ STIFF`; 42175-step-017 `DOES uc-lpin-1 HOLDS sw-base-1`.
+- **uc-lpin-2** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF`.
+- **uc-lpin-3** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF`; 42175-step-017 `DOES uc-lpin-3 HOLDS sw-base-1`.
+- **uc-lpin-4** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF`.
 - **uc-apin-5** (Undercarriage frame): placeholder
 - **uc-apin-6** (Undercarriage frame): placeholder
 - **uc-apin-7** (Undercarriage frame): placeholder
@@ -379,11 +379,11 @@
 
 ![42175-step-013](steps/main-013/picture.png)
 
-**New parts:** trk-beam15-1 (32278, black) - one long 15-hole beam per side build; trk-beam15-2 (32278, black) - one long 15-hole beam per side build; trk-beam9-1 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-2 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-3 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-4 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-pin-1 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-2 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-3 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-4 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-5 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-6 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-7 (18651, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-8 (18651, black) - four black pins per side build, pushed through the 15-hole beam
+**New parts:** trk-beam15-1 (32278, black) - one long 15-hole beam per side build; trk-beam15-2 (32278, black) - one long 15-hole beam per side build; trk-beam9-1 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-2 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-3 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-beam9-4 (40490, dark bluish gray) - two grey 9-hole beams per side build, side by side under the 15-hole beam; trk-pin-1 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-2 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-3 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-4 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-5 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-6 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-7 (65304, black) - four black pins per side build, pushed through the 15-hole beam; trk-pin-8 (65304, black) - four black pins per side build, pushed through the 15-hole beam
 
 **Touches:** Yellow box (built twice): four black pins go into a 15-hole beam, then two grey 9-hole beams are laid under it on the pins. Each finished side build is lowered along one side of the undercarriage (two black arrows).
 
-**Exact joins:** trk-pin-1.pin1 into trk-beam15-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-2.pin1 into trk-beam15-1.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-3.pin1 into trk-beam15-1.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-4.pin1 into trk-beam15-1.hole15 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-5.pin1 into trk-beam15-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-6.pin1 into trk-beam15-2.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-7.pin1 into trk-beam15-2.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-8.pin1 into trk-beam15-2.hole15 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-1.axle2 into trk-beam9-1.hole2 (1 hole deep, turns freely, estimated from the picture); trk-pin-5.axle2 into trk-beam9-3.hole2 (1 hole deep, turns freely, estimated from the picture)
+**Exact joins:** trk-pin-1.pin1 into trk-beam15-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-2.pin1 into trk-beam15-1.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-3.pin1 into trk-beam15-1.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-4.pin1 into trk-beam15-1.hole15 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-5.pin1 into trk-beam15-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-6.pin1 into trk-beam15-2.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-7.pin1 into trk-beam15-2.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-8.pin1 into trk-beam15-2.hole15 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-1.pin2 into trk-beam9-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); trk-pin-5.pin2 into trk-beam9-3.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture)
 
 **Who does what:** trk-pin-1 holds trk-beam15-1; trk-pin-5 holds trk-beam15-2
 
@@ -544,3 +544,382 @@
 - **trk-link-60** (None): None
 
 **Review:** The link join is the bar of one link in the clip of the next (as in set 8047). The exact way the loops sit on the sprocket teeth is not shown in detail. Looks complete: 2 x 30 links as the callout says.
+
+## 42175-step-017 (page 17) - medium - NEEDS REVIEW
+
+![42175-step-017](steps/main-017/picture.png)
+
+**New parts:** sw-top-1 (88738, black) - black 60-tooth turntable top ring with three 3-hole blocks; sw-base-1 (18939, light bluish gray) - light-grey turntable base ring, snapped under the top ring; sw-bpin-1 (42924, blue) - four long blue pins pushed into the holes of the black blocks on the turntable top; sw-bpin-2 (42924, blue) - four long blue pins pushed into the holes of the black blocks on the turntable top; sw-bpin-3 (42924, blue) - four long blue pins pushed into the holes of the black blocks on the turntable top; sw-bpin-4 (42924, blue) - four long blue pins pushed into the holes of the black blocks on the turntable top
+
+**Touches:** Yellow box 1: the black turntable top is pressed onto the grey base ring. Yellow box 2: four blue pins go into the blocks on the top ring. The finished turntable is lowered onto the middle of the undercarriage (arrow) and the four grey pins (green arrows, two from each side) are pushed in through the base ring to lock it.
+
+**Exact joins:** uc-lpin-1.pin1 into sw-base-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); uc-lpin-2.pin1 into sw-base-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); uc-lpin-3.pin1 into sw-base-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); uc-lpin-4.pin1 into sw-base-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** sw-top-1 spins on sw-base-1; uc-lpin-1 holds sw-base-1; uc-lpin-3 holds sw-base-1
+
+**After:** the turntable sits on the middle of the undercarriage with its base locked by the four grey pins; the top ring can turn on it; everything else: no change
+
+**Why:** Gives the machine a ring that lets the whole upper body swing round on the tracks. A slewing ring (grey base + black top) is the Technic version of a real excavator's swing bearing; the four long pins already waiting in the frame lock the base without extra parts. *Next:* Everything from step 18 onward that is part of the upper body is built on the black top ring. *Pattern:* turntable on pins
+
+**Big picture:**
+- **sw-top-1** (None): None Later: 42175-step-019 `CONNECT up-lpin-5.pin1 -> sw-top-1.hole?`.
+- **sw-base-1** (None): None
+- **sw-bpin-1** (None): None Later: 42175-step-018 `CONNECT sw-bpin-1.pin2 -> pm-beam15-1.hole3~ STIFF`; 42175-step-018 `DOES sw-bpin-1 HOLDS pm-beam15-1`.
+- **sw-bpin-2** (None): None Later: 42175-step-018 `CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF`.
+- **sw-bpin-3** (None): None Later: 42175-step-018 `CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF`.
+- **sw-bpin-4** (None): None Later: 42175-step-018 `CONNECT sw-bpin-4.pin2 -> pm-beam15-2.hole12~ STIFF`.
+
+**Mechanisms:**
+- **sw-base-1** builds on uc-lpin-1 (42175-step-005); uc-lpin-2 (42175-step-005); uc-lpin-3 (42175-step-005); uc-lpin-4 (42175-step-005)
+
+**Review:** The four pins that lock the base are the grey pins of step 15. Which of the base's six side holes (hole1-3 left, hole4-6 right) each one takes is an estimate (two per side). The blue pins go into the top ring's blocks; their exact holes are not named.
+
+## 42175-step-018 (page 18) - low - NEEDS REVIEW
+
+![42175-step-018](steps/main-018/picture.png)
+
+**New parts:** pm-beam15-1 (32278, dark bluish gray) - two 15-hole dark-grey beams that carry the pump; pm-beam15-2 (32278, dark bluish gray) - two 15-hole dark-grey beams that carry the pump; pm-lpin-1 (42924, blue) - four long blue pins pushed into the first beam; pm-lpin-2 (42924, blue) - four long blue pins pushed into the first beam; pm-lpin-3 (42924, blue) - four long blue pins pushed into the first beam; pm-lpin-4 (42924, blue) - four long blue pins pushed into the first beam; pm-apin-1 (43093, blue) - one short blue axle pin; pm-hub-1 (44874, black) - black pin hub with two pins; pm-conn-1 (6536, black) - black perpendicular axle-and-pin connector at the end of the beam; pm-hose-1 (5102c04, blue) - short blue pneumatic hose (3.2 cm), length checked 1:1 on page 19; pm-pump-1 (26288, blue) - blue pneumatic pump with black plunger top and a 1 x 3 base
+
+**Touches:** Sub-step 1: four blue long pins go into the first 15-hole beam, with a black connector at its far end. Sub-step 2: a black hub with a blue pin goes onto the beam (yellow box).; Sub-step 3: the blue pump stands on three of the pins by its 1 x 3 base and the short blue hose is pushed onto its side nozzle (yellow box). Sub-step 4: the second 15-hole beam is pressed on under the pin ends. Page 20: the finished deck is placed on the turntable and the four blue pins of step 17 are pushed in from the sides (green arrows, two per side) to lock it.
+
+**Exact joins:** pm-lpin-1.pin1 into pm-beam15-1.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-2.pin1 into pm-beam15-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-3.pin1 into pm-beam15-1.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-4.pin1 into pm-beam15-1.hole9 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-conn-1.hole1 into pm-beam15-1.hole? (not shown in booklet); pm-hub-1.pin1 into pm-beam15-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-apin-1.pin1 into pm-hub-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-1.pin2 into pm-beam15-2.hole6 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-2.pin2 into pm-beam15-2.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-3.pin2 into pm-beam15-2.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture); pm-lpin-4.pin2 into pm-beam15-2.hole9 (0.9 hole deep, held stiff by friction, estimated from the picture); sw-bpin-1.pin2 into pm-beam15-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); sw-bpin-2.pin2 into pm-beam15-2.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); sw-bpin-3.pin2 into pm-beam15-1.hole12 (0.9 hole deep, held stiff by friction, estimated from the picture); sw-bpin-4.pin2 into pm-beam15-2.hole12 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** pm-beam15-1 supports pm-pump-1; sw-bpin-1 holds pm-beam15-1; pm-lpin-2 holds pm-pump-1; pm-hose-1 carries pm-pump-1
+
+**After:** the pump deck (two 15-hole beams with the blue pump standing on it) sits on the turntable top and is held by the four blue pins pushed in from the sides; everything else: no change
+
+**Why:** Builds the air pump that will later power the arm's air cylinders. A pump with a plunger pushed by hand pushes air through hoses; the two beams make a light frame for it. *Next:* Steps 19-21 build the side frames and cross beam around the pump on the turntable. *Pattern:* pneumatic pump deck
+
+**Big picture:**
+- **pm-beam15-1** (None): None
+- **pm-beam15-2** (None): None
+- **pm-lpin-1** (None): None
+- **pm-lpin-2** (None): None
+- **pm-lpin-3** (None): None
+- **pm-lpin-4** (None): None
+- **pm-apin-1** (None): None
+- **pm-hub-1** (None): None
+- **pm-conn-1** (None): None
+- **pm-hose-1** (None): None
+- **pm-pump-1** (None): None
+
+**Mechanisms:**
+- **pm-beam15-1** builds on sw-bpin-1 (42175-step-017); sw-bpin-3 (42175-step-017)
+- **pm-beam15-2** builds on sw-bpin-2 (42175-step-017); sw-bpin-4 (42175-step-017)
+
+**Review:** Part numbers are likely (pump = 26288, hose 5102c04 from the 1:1 length check). Pin holes along the beams are rough estimates read from the picture. The pump's own points aren't in the catalog, so no join to the pump is written. Red box on page 19: pushing the black top up and down must move it; confirmation check only.
+
+## 42175-step-019 (page 21) - low - NEEDS REVIEW
+
+![42175-step-019](steps/main-019/picture.png)
+
+**New parts:** up-frame-1 (64179, black) - black 5 x 7 frame, built in the yellow box and placed beside the pump; up-lbeam-1 (32526, dark bluish gray) - dark-grey 3 x 5 L-beam standing upright inside the frame; up-lpin-1 (65304, light bluish gray) - five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; up-lpin-2 (65304, light bluish gray) - five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; up-lpin-3 (65304, light bluish gray) - five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; up-lpin-4 (65304, light bluish gray) - five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; up-lpin-5 (65304, light bluish gray) - five light-grey long pins; four stick out of the frame sides and one is spare for the arrow; up-bpin-1 (42924, blue) - two long blue pins that hold the L-beam to the frame; up-bpin-2 (42924, blue) - two long blue pins that hold the L-beam to the frame
+
+**Touches:** Yellow box 1-3: an L-beam gets a blue pin, stands inside the 5 x 7 frame, and two more pins go through the frame and L-beam; long grey pins are pushed into the frame sides.; The frame is lowered next to the pump and the grey pins slide through the pump deck's beams (green arrows).
+
+**Exact joins:** up-bpin-1.pin1 into up-lbeam-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); up-bpin-1.pin3 into up-frame-1.hole? (not shown in booklet); up-bpin-2.pin1 into up-lbeam-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); up-bpin-2.pin3 into up-frame-1.hole? (not shown in booklet); up-lpin-1.pin1 into up-frame-1.hole? (not shown in booklet); up-lpin-2.pin1 into up-frame-1.hole? (not shown in booklet); up-lpin-3.pin1 into up-frame-1.hole? (not shown in booklet); up-lpin-4.pin1 into up-frame-1.hole? (not shown in booklet); up-lpin-5.pin1 into sw-top-1.hole? (not shown in booklet)
+
+**Who does what:** up-bpin-1 holds up-lbeam-1; up-lpin-1 holds up-frame-1
+
+**After:** a black side frame with an upright L-beam is fixed next to the pump on one side of the turntable; everything else: no change
+
+**Why:** Starts the walls of the upper body around the pump. A 5 x 7 frame is stiff and its many holes take pins for the next layers; the L-beam is a tall post. *Next:* Step 20 builds the same on the other side; step 21 joins the two with a long beam. *Pattern:* side frame
+
+**Big picture:**
+- **up-frame-1** (None): None Later: 42175-step-021 `DOES up-beam15-1 SUPPORTS up-frame-1`.
+- **up-lbeam-1** (None): None Later: 42175-step-024 `DOES up-axle5-1 HOLDS up-lbeam-1`.
+- **up-lpin-1** (None): None Later: 42175-step-022 `CONNECT hy-valve-1.hole? -> up-lpin-1.pin1`.
+- **up-lpin-2** (None): None
+- **up-lpin-3** (None): None
+- **up-lpin-4** (None): None
+- **up-lpin-5** (None): None
+- **up-bpin-1** (None): None
+- **up-bpin-2** (None): None
+
+**Mechanisms:**
+- **up-lpin-5** builds on sw-top-1 (42175-step-017)
+
+**Review:** Which frame holes take each pin is not countable in the picture, so most joins are marked ? (not shown). The fifth grey pin (parts box 5x) goes through the pump deck; see the green arrows.
+
+## 42175-step-020 (page 22) - low - NEEDS REVIEW
+
+![42175-step-020](steps/main-020/picture.png)
+
+**New parts:** up-frame-2 (64179, black) - second black 5 x 7 frame for the other side; up-lbeam-2 (32526, dark bluish gray) - dark-grey 3 x 5 L-beam standing upright in the frame; up-lpin-6 (65304, light bluish gray) - four light-grey long pins pushed into the frame sides; up-lpin-7 (65304, light bluish gray) - four light-grey long pins pushed into the frame sides; up-lpin-8 (65304, light bluish gray) - four light-grey long pins pushed into the frame sides; up-lpin-9 (65304, light bluish gray) - four light-grey long pins pushed into the frame sides; up-bpin-3 (42924, blue) - two long blue pins; up-bpin-4 (42924, blue) - two long blue pins
+
+**Touches:** Same three sub-steps as step 19 (mirrored): L-beam, frame, pins. The finished frame is placed on the other side of the pump (arrow).
+
+**Exact joins:** up-bpin-3.pin1 into up-lbeam-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); up-bpin-3.pin3 into up-frame-2.hole? (not shown in booklet); up-bpin-4.pin1 into up-lbeam-2.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); up-bpin-4.pin3 into up-frame-2.hole? (not shown in booklet); up-lpin-6.pin1 into up-frame-2.hole? (not shown in booklet); up-lpin-7.pin1 into up-frame-2.hole? (not shown in booklet); up-lpin-8.pin1 into up-frame-2.hole? (not shown in booklet); up-lpin-9.pin1 into up-frame-2.hole? (not shown in booklet)
+
+**Who does what:** up-bpin-3 holds up-lbeam-2; up-lpin-6 holds up-frame-2
+
+**After:** a second black side frame stands on the opposite side of the pump deck; everything else: no change
+
+**Why:** Gives the upper body a wall on both sides of the pump. Mirror of step 19 so the two walls match. *Next:* Step 21 ties the two frames together across the top. *Pattern:* mirrored side frame
+
+**Big picture:**
+- **up-frame-2** (None): None Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`.
+- **up-lbeam-2** (None): None
+- **up-lpin-6** (None): None Later: 42175-step-022 `CONNECT hy-valve-2.hole? -> up-lpin-6.pin1`.
+- **up-lpin-7** (None): None
+- **up-lpin-8** (None): None
+- **up-lpin-9** (None): None
+- **up-bpin-3** (None): None
+- **up-bpin-4** (None): None
+
+**Review:** Joins are marked ? because the pin holes are hidden. The model is shown from a new angle (turned round) in this step.
+
+## 42175-step-021 (page 23) - low - NEEDS REVIEW
+
+![42175-step-021](steps/main-021/picture.png)
+
+**New parts:** up-beam15-1 (32278, black) - long black 15-hole cross beam bridging the two side frames; up-hub-1 (44874, light bluish gray) - light-grey pin connector hub with two pins, pressed into the beam; up-rpin-1 (89678, red) - short red pin in the hub's centre hole
+
+**Touches:** Yellow box 1: the grey hub is pushed onto two holes of the 15-hole beam. Yellow box 2: a red pin is pressed into the hub's middle hole. The finished beam is placed across the model (arrow) over the two side frames.
+
+**Exact joins:** up-hub-1.pin1 into up-beam15-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); up-hub-1.pin2 into up-beam15-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture); up-rpin-1.pin1 into up-hub-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** up-hub-1 holds up-beam15-1; up-beam15-1 supports up-frame-1
+
+**After:** a 15-hole beam with a grey hub and red pin lies across the pump deck, tying the two side frames; everything else: no change
+
+**Why:** Ties the two upright frames into one rigid structure over the pump. A long beam reaches from one frame to the other; the hub and red pin add a mounting point for the next parts. *Next:* The cab frame is built on this beam. *Pattern:* cross beam
+
+**Big picture:**
+- **up-beam15-1** (None): None
+- **up-hub-1** (None): None
+- **up-rpin-1** (None): None
+
+**Review:** The beam rests on the pins sticking out of both side frames; exactly which pins it sits on is not labeled. Hub holes are estimates.
+
+## 42175-step-022 (page 24) - low - NEEDS REVIEW
+
+![42175-step-022](steps/main-022/picture.png)
+
+**New parts:** hy-tee-1 (4697b, light bluish gray) - grey air T-piece that joins two hoses; hy-valve-1 (19474, light bluish gray) - two grey pneumatic switch blocks, one on each end of the hose line; hy-valve-2 (19474, light bluish gray) - two grey pneumatic switch blocks, one on each end of the hose line; hy-hose-1 (5102c06, blue) - two blue 6-long air hoses (length checked 1:1 on page 24); hy-hose-2 (5102c06, blue) - two blue 6-long air hoses (length checked 1:1 on page 24)
+
+**Touches:** Sub-step 1: the two blue hoses are pushed onto the two ends of the grey T-piece. Sub-step 2: the free hose ends go onto a nozzle of each grey switch block, one block at each end of the line.; Page 25: the finished air line is laid across the model; each switch block sits on pins sticking out of the two side frames (arrow).
+
+**Exact joins:** hy-valve-1.hole? into up-lpin-1.pin1 (not shown in booklet); hy-valve-2.hole? into up-lpin-6.pin1 (not shown in booklet)
+
+**Who does what:** hy-tee-1 holds hy-hose-1; hy-tee-1 holds hy-hose-2; hy-valve-1 holds hy-hose-1; hy-valve-2 holds hy-hose-2
+
+**After:** a blue air line runs from one side frame to the other with a switch block at each end; the T-piece's third nozzle is still free for the pump hose; everything else: no change
+
+**Why:** Starts the air plumbing: this line will carry air from the pump to the two air cylinders. A T-piece splits the pump's air into two branches; a switch block on each branch lets the driver choose which cylinder moves. *Next:* Steps 24 and later fit the cylinders and the pump hose. *Pattern:* air line with switches
+
+**Big picture:**
+- **hy-tee-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
+- **hy-valve-1** (None): None Later: 42175-step-026 `DOES hy-valve-1 HOLDS hy-hose-3`.
+- **hy-valve-2** (None): None
+- **hy-hose-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
+- **hy-hose-2** (None): None Later: 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`; 42175-step-029 `DOES up-panel-1 SUPPORTS hy-hose-2`.
+
+**Mechanisms:**
+- **hy-valve-1** builds on up-lpin-1 (42175-step-019), which rests on up-frame-1 (42175-step-019)
+- **hy-valve-2** builds on up-lpin-6 (42175-step-020), which rests on up-frame-2 (42175-step-020)
+
+**Review:** Switch blocks have no connection data in the catalog, so their joins to the frame pins are marked ? (not shown). Hoses are matched by the 1:1 length check (6L, 4.8 cm).
+
+## 42175-step-023 (page 26) - low - NEEDS REVIEW
+
+![42175-step-023](steps/main-023/picture.png)
+
+**New parts:** up-pin-1 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-pin-2 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-pin-3 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-pin-4 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-pin-5 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-pin-6 (4274, light bluish gray) - six short light-grey pins used inside the two post builds; up-beam5-1 (32316, black) - two black 5-hole beams, one per post build; up-beam5-2 (32316, black) - two black 5-hole beams, one per post build; up-lbeam-3 (32526, dark bluish gray) - two dark-grey 3 x 5 L-beams, the base of each post; up-lbeam-4 (32526, dark bluish gray) - two dark-grey 3 x 5 L-beams, the base of each post
+
+**Touches:** Two small yellow-box builds (sub-steps 1-2, same for both): three small pins go into an L-beam and a black 5-hole beam is pressed on to stand upright.; The two finished posts are set on top of the left side frame (arrows).
+
+**Exact joins:** up-pin-1.pin1 into up-lbeam-3.hole1 (0.2 hole deep, turns freely, estimated from the picture); up-pin-2.pin1 into up-lbeam-3.hole3 (0.2 hole deep, turns freely, estimated from the picture); up-pin-3.pin1 into up-lbeam-3.hole5 (0.2 hole deep, turns freely, estimated from the picture); up-pin-4.pin1 into up-lbeam-4.hole1 (0.2 hole deep, turns freely, estimated from the picture); up-pin-5.pin1 into up-lbeam-4.hole3 (0.2 hole deep, turns freely, estimated from the picture); up-pin-6.pin1 into up-lbeam-4.hole5 (0.2 hole deep, turns freely, estimated from the picture); up-pin-1.pin2 into up-beam5-1.hole1 (0.9 hole deep, turns freely, estimated from the picture); up-pin-4.pin2 into up-beam5-2.hole1 (0.9 hole deep, turns freely, estimated from the picture)
+
+**Who does what:** up-pin-1 holds up-beam5-1; up-pin-4 holds up-beam5-2
+
+**After:** two upright posts, each an L-beam with a black 5-hole beam, stand on the left side; everything else: no change
+
+**Why:** Builds the two tall supports that the air cylinder will hang between. An L-beam with a 5-hole beam on its tall leg gives a post two pin holes wide, so a cylinder pivot pin can pass through. *Next:* Step 24 puts the cylinder between these posts. *Pattern:* twin posts
+
+**Big picture:**
+- **up-pin-1** (None): None
+- **up-pin-2** (None): None
+- **up-pin-3** (None): None
+- **up-pin-4** (None): None
+- **up-pin-5** (None): None
+- **up-pin-6** (None): None
+- **up-beam5-1** (None): None
+- **up-beam5-2** (None): None
+- **up-lbeam-3** (None): None
+- **up-lbeam-4** (None): None
+
+**Review:** Small pins are read from the parts box as light-grey short pins (6x). Hole numbers are estimates.
+
+## 42175-step-024 (page 27) - low - NEEDS REVIEW
+
+![42175-step-024](steps/main-024/picture.png)
+
+**New parts:** hy-cyl-1 (19478, dark bluish gray) - dark-grey air cylinder with a piston rod; up-beam2-1 (43857, dark bluish gray) - dark-grey 1 x 2 beam on the cylinder's fixed end; up-axle5-1 (32073, light bluish gray) - light-grey 5-long axle through the cylinder end and the posts; hy-pin-1 (77765, light bluish gray) - grey 3L pin with stop at the cylinder's rod end
+
+**Touches:** Sub-step 1: a dark-grey 1 x 2 beam is clipped to the cylinder's fixed end. Sub-step 2: the 5-long axle is pushed through it.; The cylinder is then lowered between the two posts and the axle slides through the post holes (green arrows).
+
+**Exact joins:** none
+
+**Who does what:** up-beam2-1 holds hy-cyl-1; up-axle5-1 carries hy-cyl-1; up-axle5-1 holds up-lbeam-1
+
+**After:** the air cylinder lies along the left side with its fixed end pinned between the two posts and its rod pointing forward; everything else: no change
+
+**Why:** Adds the first air cylinder. A cylinder with a pivot axle can swing up and down as air pushes the rod. *Next:* It will drive the upper body's arm later. *Pattern:* pivoting cylinder
+
+**Big picture:**
+- **hy-cyl-1** (None): None Later: 42175-step-026 `DOES hy-cyl-1 HOLDS hy-hose-4`; 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`.
+- **up-beam2-1** (None): None
+- **up-axle5-1** (None): None Later: 42175-step-025 `CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5`; 42175-step-025 `DOES up-conn-1 LOCKS up-axle5-1`.
+- **hy-pin-1** (None): None
+
+**Review:** The cylinder has no catalog points, so joins to it are only shown in DOES lines. The loose grey pin (5th part of the parts box) is used near the rod end; where is not visible here.
+
+## 42175-step-025 (page 28) - low - NEEDS REVIEW
+
+![42175-step-025](steps/main-025/picture.png)
+
+**New parts:** up-conn-1 (59443, black) - black axle connector, pushed onto the end of the axle
+
+**Touches:** One black axle connector is pushed onto the free end of the cylinder axle so it can't slide out.
+
+**Exact joins:** up-conn-1.axlehole? into up-axle5-1.axle5 (not shown in booklet)
+
+**Who does what:** up-conn-1 locks up-axle5-1 in place
+
+**After:** the cylinder axle is held in place on both sides; everything else: no change
+
+**Why:** Stops the cylinder pivot axle from slipping out. A smooth axle connector with a cross hole grips the axle end. *Next:* The model is ready for the cab frame in the next step. *Pattern:* axle stop
+
+**Big picture:**
+- **up-conn-1** (None): None
+
+**Mechanisms:**
+- **up-conn-1** builds on up-axle5-1 (42175-step-024)
+
+**Review:** The new part is small and its place is not circled in the picture; read as the end stop of the step-24 axle. The picture shows no other change.
+
+## 42175-step-026 (page 29) - medium - NEEDS REVIEW
+
+![42175-step-026](steps/main-026/picture.png)
+
+**New parts:** hy-hose-3 (5102c20, light bluish gray) - long light-grey air hose (16 cm, length checked 1:1 in the red box); hy-hose-4 (5102c29, black) - long black air hose (23 cm, length checked 1:1 in the red box)
+
+**Touches:** The two hoses are shown hanging above the model (plus-brick icons): they are just added to the model here, one light grey and one black.
+
+**Exact joins:** none
+
+**Who does what:** hy-valve-1 holds hy-hose-3; hy-cyl-1 holds hy-hose-4
+
+**After:** two loose hoses (one grey, one black) are added to the model; they are connected in step 27; everything else: no change
+
+**Why:** Brings the two long hoses into the model before they are plugged in. The two lengths were checked 1:1 so the right one goes to each nozzle. *Next:* Step 27 plugs them onto the cylinder, switch blocks and T-piece. *Pattern:* air hoses
+
+**Big picture:**
+- **hy-hose-3** (None): None
+- **hy-hose-4** (None): None
+
+**Review:** Hose lengths come from the 1:1 length bars (grey 16 cm = 5102c20, black 23 cm = 5102c29). No picture shows the join yet, so the DOES lines are the planned ones from step 27.
+
+## 42175-step-027 (page 30) - medium - NEEDS REVIEW
+
+![42175-step-027](steps/main-027/picture.png)
+
+**New parts:** 
+
+**Touches:** The black hose is plugged onto the cylinder's nozzle and its other end goes to a nozzle of the left switch block (red circle left). The grey hose is plugged onto the T-piece and the right switch block (red circle right).
+
+**Exact joins:** none
+
+**Who does what:** hy-hose-2 carries hy-cyl-1; hy-hose-1 carries hy-tee-1
+
+**After:** the black hose runs from the air cylinder to the left switch; the grey hose runs from a switch to the T-piece; the pump line is closed; everything else: no change
+
+**Why:** Connects the pump, switches and cylinder into one air circuit. Pressing the pump pushes air through the T-piece and the switches into the cylinder. *Next:* Steps 28 onward continue on the top of the frame. *Pattern:* air circuit
+
+**Big picture:**
+
+
+**Review:** No new parts in this step (hoses were added in step 26). Which nozzle each hose end takes is shown only by the two red circles.
+
+## 42175-step-028 (page 31) - medium - NEEDS REVIEW
+
+![42175-step-028](steps/main-028/picture.png)
+
+**New parts:** up-spin-1 (65304, black) - two black pins pushed into the right rear frame, pointing up (arrows); up-spin-2 (65304, black) - two black pins pushed into the right rear frame, pointing up (arrows)
+
+**Touches:** Two black pins are pressed into the frame at the right rear (yellow box 2x).
+
+**Exact joins:** up-spin-1.pin1 into up-frame-2.hole? (not shown in booklet); up-spin-2.pin1 into up-frame-2.hole? (not shown in booklet)
+
+**Who does what:** up-spin-1 holds up-frame-2
+
+**After:** two pins stand up from the right rear frame; everything else: no change
+
+**Why:** Adds the posts for the next cover panel. The pins are the same type used elsewhere in the model. *Next:* Step 29 lowers a panel onto them. *Pattern:* posts for panel
+
+**Big picture:**
+- **up-spin-1** (None): None
+- **up-spin-2** (None): None
+
+**Mechanisms:**
+- **up-spin-1** builds on up-frame-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+- **up-spin-2** builds on up-frame-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
+
+**Review:** Which frame holes are used is not countable; the picture only shows two pins standing up.
+
+## 42175-step-029 (page 32) - medium - NEEDS REVIEW
+
+![42175-step-029](steps/main-029/picture.png)
+
+**New parts:** up-panel-1 (15458, black) - black 3 x 11 panel built in the yellow box and placed on the rear frame; up-spin-3 (65304, black) - six black pins pushed through the panel holes; up-spin-4 (65304, black) - six black pins pushed through the panel holes; up-spin-5 (65304, black) - six black pins pushed through the panel holes; up-spin-6 (65304, black) - six black pins pushed through the panel holes; up-spin-7 (65304, black) - six black pins pushed through the panel holes; up-spin-8 (65304, black) - six black pins pushed through the panel holes
+
+**Touches:** Yellow box: pins go into the panel's end holes (green arrow shows the last one). The panel is lowered onto the two pins standing on the rear frame (arrows).
+
+**Exact joins:** up-spin-3.pin1 into up-panel-1.hole? (not shown in booklet); up-spin-4.pin1 into up-panel-1.hole? (not shown in booklet); up-spin-5.pin1 into up-panel-1.hole? (not shown in booklet); up-spin-6.pin1 into up-panel-1.hole? (not shown in booklet)
+
+**Who does what:** up-panel-1 supports hy-hose-2; up-spin-3 holds up-panel-1
+
+**After:** a black 3 x 11 panel lies across the rear of the frame, covering the hoses; everything else: no change
+
+**Why:** Closes the top of the rear section and gives a flat base for the cab. A panel is wide and flat, so it covers hoses and adds stiffness. *Next:* The cab frame in steps 30 onward sits on it. *Pattern:* panel on pins
+
+**Big picture:**
+- **up-panel-1** (None): None
+- **up-spin-3** (None): None
+- **up-spin-4** (None): None
+- **up-spin-5** (None): None
+- **up-spin-6** (None): None
+- **up-spin-7** (None): None
+- **up-spin-8** (None): None
+
+**Review:** The panel has 3 x 11 holes on its top; pin holes used are not countable so joins are marked ?.
+
+## 42175-step-030 (page 33) - low - NEEDS REVIEW
+
+![42175-step-030](steps/main-030/picture.png)
+
+**New parts:** up-beam11-1 (32525, black) - black 11-hole beam, base of this small build; up-tbeam-1 (41677, black) - two small black 1 x 2 thin beams slid on top; up-tbeam-2 (41677, black) - two small black 1 x 2 thin beams slid on top; up-bpin-5 (43093, blue) - four blue pins used as fasteners in sub-steps 1-4; up-bpin-6 (43093, blue) - four blue pins used as fasteners in sub-steps 1-4; up-bpin-7 (43093, blue) - four blue pins used as fasteners in sub-steps 1-4; up-bpin-8 (43093, blue) - four blue pins used as fasteners in sub-steps 1-4; fr-fair7-1 (2387, black) - black side fairing no. 7 (circled 7 in the booklet); fr-fair8-1 (2389, black) - black side fairing no. 8 (circled 8 in the booklet)
+
+**Touches:** Sub-steps 1-5: blue pins go into thin beams, the thin beams are pressed on the 11-hole beam, and the two numbered fairings (7 and 8) are clipped on the beam's ends.
+
+**Exact joins:** up-bpin-5.axle1 into up-tbeam-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); up-bpin-6.axle1 into up-tbeam-1.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture); up-bpin-7.axle1 into up-tbeam-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); up-bpin-8.axle1 into up-tbeam-2.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture); up-bpin-5.pin1 into up-beam11-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); up-bpin-6.pin1 into up-beam11-1.hole7 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** up-tbeam-1 holds fr-fair7-1; up-tbeam-2 holds fr-fair8-1
+
+**After:** a finished 11-hole beam with two thin beams and two small black fairings is ready to be fitted next; everything else: no change
+
+**Why:** Builds the first side-body piece with its cosmetic fairings. A long beam with pins gives mounting points; fairings 7 and 8 round off the shape. *Next:* Step 31 fits it to the model. *Pattern:* beam with fairings
+
+**Big picture:**
+- **up-beam11-1** (None): None
+- **up-tbeam-1** (None): None
+- **up-tbeam-2** (None): None
+- **up-bpin-5** (None): None
+- **up-bpin-6** (None): None
+- **up-bpin-7** (None): None
+- **up-bpin-8** (None): None
+- **fr-fair7-1** (None): None
+- **fr-fair8-1** (None): None
+
+**Review:** The booklet circles 7 and 8 refer to fairing part numbers. The pin type (43093 vs 42924) cannot be told apart in the sub-step pictures; both blue pins are read as 43093 from the parts box. This sub-build is not attached yet; attachment is in step 31.
