@@ -228,5 +228,5 @@
   },
   "confidence": "low",
   "needs_review": true,
-  "review_note": "Pin positions along the 15-hole beam are read by eye from sub-step 1 (pins near holes 1, 8, 10, 15) and are estimates. Which pin holds which 9-hole beam is not shown."
+  "review_note": "Counted at 220 dpi: pins sit in holes 1, 8, 10 and 15 of the 15-hole beam (hole spacing 33 px; two middle pins exactly 2 holes apart; end pin level with the last hole). The two 9-hole beams overlap by about 3 holes: the first covers holes 1-9, the second holes 7-15 (placement of the 9-hole beams is read from the picture, so those joins stay estimated)."
 }

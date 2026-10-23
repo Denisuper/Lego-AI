@@ -13,16 +13,22 @@ ADD trk-pin-5 65304 black
 ADD trk-pin-6 65304 black
 ADD trk-pin-7 65304 black
 ADD trk-pin-8 65304 black
-CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1~ STIFF
-CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8~ STIFF
-CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10~ STIFF
-CONNECT trk-pin-4.pin1 -> trk-beam15-1.hole15~ STIFF
-CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1~ STIFF
-CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8~ STIFF
-CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10~ STIFF
-CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15~ STIFF
-CONNECT trk-pin-1.pin2 -> trk-beam9-1.hole2~ STIFF
-CONNECT trk-pin-5.pin2 -> trk-beam9-3.hole2~ STIFF
+CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1 STIFF
+CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8 STIFF
+CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10 STIFF
+CONNECT trk-pin-4.pin1 -> trk-beam15-1.hole15 STIFF
+CONNECT trk-pin-1.pin2 -> trk-beam9-1.hole1~ STIFF
+CONNECT trk-pin-2.pin2 -> trk-beam9-1.hole8~ STIFF
+CONNECT trk-pin-3.pin2 -> trk-beam9-2.hole4~ STIFF
+CONNECT trk-pin-4.pin2 -> trk-beam9-2.hole9~ STIFF
+CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1 STIFF
+CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8 STIFF
+CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10 STIFF
+CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15 STIFF
+CONNECT trk-pin-5.pin2 -> trk-beam9-3.hole1~ STIFF
+CONNECT trk-pin-6.pin2 -> trk-beam9-3.hole8~ STIFF
+CONNECT trk-pin-7.pin2 -> trk-beam9-4.hole4~ STIFF
+CONNECT trk-pin-8.pin2 -> trk-beam9-4.hole9~ STIFF
 DOES trk-pin-1 HOLDS trk-beam15-1
 DOES trk-pin-5 HOLDS trk-beam15-2
 PATTERN stacked_rails

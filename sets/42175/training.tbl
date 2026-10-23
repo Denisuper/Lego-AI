@@ -711,16 +711,22 @@ THINK role trk-pin-5 in the tracks: Friction pin that holds the track rail beams
 THINK role trk-pin-6 in the tracks: Friction pin that holds the track rail beams together.
 THINK role trk-pin-7 in the tracks: Friction pin that holds the track rail beams together.
 THINK role trk-pin-8 in the tracks: Friction pin that holds the track rail beams together.
-THINK check trk-pin-1.pin1 goes into trk-beam15-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-2.pin1 goes into trk-beam15-1.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-3.pin1 goes into trk-beam15-1.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-4.pin1 goes into trk-beam15-1.hole15, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-5.pin1 goes into trk-beam15-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-6.pin1 goes into trk-beam15-2.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-7.pin1 goes into trk-beam15-2.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-8.pin1 goes into trk-beam15-2.hole15, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-1.pin2 goes into trk-beam9-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK check trk-pin-5.pin2 goes into trk-beam9-3.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-1.pin1 goes into trk-beam15-1.hole1, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-2.pin1 goes into trk-beam15-1.hole8, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-3.pin1 goes into trk-beam15-1.hole10, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-4.pin1 goes into trk-beam15-1.hole15, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-1.pin2 goes into trk-beam9-1.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-2.pin2 goes into trk-beam9-1.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-3.pin2 goes into trk-beam9-2.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-4.pin2 goes into trk-beam9-2.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-5.pin1 goes into trk-beam15-2.hole1, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-6.pin1 goes into trk-beam15-2.hole8, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-7.pin1 goes into trk-beam15-2.hole10, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-8.pin1 goes into trk-beam15-2.hole15, 0.9 hole deep, held stiff by friction
+THINK check trk-pin-5.pin2 goes into trk-beam9-3.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-6.pin2 goes into trk-beam9-3.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-7.pin2 goes into trk-beam9-4.hole4, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check trk-pin-8.pin2 goes into trk-beam9-4.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
 THINK later Steps 14-16 cap the axle ends and wrap the track links around the whole assembly. Pattern: track rail
 ADD trk-beam15-1 32278 black
 ADD trk-beam15-2 32278 black
@@ -736,16 +742,22 @@ ADD trk-pin-5 65304 black
 ADD trk-pin-6 65304 black
 ADD trk-pin-7 65304 black
 ADD trk-pin-8 65304 black
-CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1~ STIFF
-CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8~ STIFF
-CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10~ STIFF
-CONNECT trk-pin-4.pin1 -> trk-beam15-1.hole15~ STIFF
-CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1~ STIFF
-CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8~ STIFF
-CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10~ STIFF
-CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15~ STIFF
-CONNECT trk-pin-1.pin2 -> trk-beam9-1.hole2~ STIFF
-CONNECT trk-pin-5.pin2 -> trk-beam9-3.hole2~ STIFF
+CONNECT trk-pin-1.pin1 -> trk-beam15-1.hole1 STIFF
+CONNECT trk-pin-2.pin1 -> trk-beam15-1.hole8 STIFF
+CONNECT trk-pin-3.pin1 -> trk-beam15-1.hole10 STIFF
+CONNECT trk-pin-4.pin1 -> trk-beam15-1.hole15 STIFF
+CONNECT trk-pin-1.pin2 -> trk-beam9-1.hole1~ STIFF
+CONNECT trk-pin-2.pin2 -> trk-beam9-1.hole8~ STIFF
+CONNECT trk-pin-3.pin2 -> trk-beam9-2.hole4~ STIFF
+CONNECT trk-pin-4.pin2 -> trk-beam9-2.hole9~ STIFF
+CONNECT trk-pin-5.pin1 -> trk-beam15-2.hole1 STIFF
+CONNECT trk-pin-6.pin1 -> trk-beam15-2.hole8 STIFF
+CONNECT trk-pin-7.pin1 -> trk-beam15-2.hole10 STIFF
+CONNECT trk-pin-8.pin1 -> trk-beam15-2.hole15 STIFF
+CONNECT trk-pin-5.pin2 -> trk-beam9-3.hole1~ STIFF
+CONNECT trk-pin-6.pin2 -> trk-beam9-3.hole8~ STIFF
+CONNECT trk-pin-7.pin2 -> trk-beam9-4.hole4~ STIFF
+CONNECT trk-pin-8.pin2 -> trk-beam9-4.hole9~ STIFF
 DOES trk-pin-1 HOLDS trk-beam15-1
 DOES trk-pin-5 HOLDS trk-beam15-2
 PATTERN stacked_rails
