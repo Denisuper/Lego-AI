@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-045",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 44,
+  "step": 45,
+  "input": {
+    "picture": "steps/main-045/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-t1-1",
+        "part_number": "60483",
+        "count": 1
+      },
+      {
+        "name": "cb-tp-1",
+        "part_number": "32002",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam pair with connectors (step 44)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-t1-1",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 1 x 2 thick beam with pin and axle hole",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-tp-1",
+        "part_number": "32002",
+        "catalog_name": "Technic Pin 3/4",
+        "color": "Tan",
+        "part_match": "likely",
+        "position": "tan 3/4 pin pushed into the model (arrow in the small box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A black connector is added to the lower end and a tan pin is pushed into it (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "cb-t1-1 holds cb-tp-1"
+    ],
+    "where_everything_is_after": [
+      "a tan pin sits in a connector on the underside of the beam pair",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a smooth free-turning pin for a link.",
+      "why_these_parts": "A tan pin has no friction so a link can swing on it.",
+      "sets_up_for_later": "A later link hangs on this pin.",
+      "design_pattern": "free pin"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Part reading from the icon only; likely."
+}

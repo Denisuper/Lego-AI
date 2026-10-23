@@ -1,0 +1,177 @@
+{
+  "example_id": "42175-step-050",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 48,
+  "step": 50,
+  "input": {
+    "picture": "steps/main-050/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-bp-1",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "fs-ax3-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "fs-yb-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "fs-yb-2",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "fs-yb-3",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "fs-yb-4",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "fs-gp-1",
+        "part_number": "77765",
+        "count": 1
+      },
+      {
+        "name": "fs-ap-1",
+        "part_number": "18651",
+        "count": 1
+      },
+      {
+        "name": "fs-vb-1",
+        "part_number": "32523",
+        "count": 1
+      },
+      {
+        "name": "fs-gb-1",
+        "part_number": "60483",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Blue pin on the side beam (step 49)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-bp-1",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "long blue pin (sub-step 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-ax3-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3, sub-step 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yb-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yb-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yb-3",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yb-4",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-gp-1",
+        "part_number": "77765",
+        "catalog_name": "Technic Pin Long 3l, No Friction Ridges, with Stop and Hole",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey long pin (sub-step 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-ap-1",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black axle pin (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-vb-1",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 1 x 3 beam with the VOLVO print (base of the build)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-gb-1",
+        "part_number": "60483",
+        "catalog_name": "Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey beam with pin and axle hole",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "7 sub-steps: yellow thin beams sit on a black axle pin, are pushed onto the VOLVO beam, a yellow axle goes through them, more yellow beams are added and a blue and a grey pin finish the top. The whole piece is lowered onto the blue pin of step 49."
+    ],
+    "who_does_what_to_which": [
+      "fs-vb-1 carries fs-yb-1",
+      "fs-ax3-1 holds fs-yb-3",
+      "fs-gb-1 holds fs-gp-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow double-beam pivot stack with a blue pin and a grey pin stands on a VOLVO beam on the side beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the pivot block that will carry a link or an arm.",
+      "why_these_parts": "Yellow thin beams on an axle form a stiff yet turning pivot.",
+      "sets_up_for_later": "The yellow L-beam in step 51 sits beside it.",
+      "design_pattern": "pivot block"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Sub-step stacking order and exact holes are estimated; the icons are small. Seven items in the box (one 4x group)."
+}

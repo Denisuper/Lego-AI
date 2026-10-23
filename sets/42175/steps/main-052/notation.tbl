@@ -1,0 +1,11 @@
+STEP 52
+ADD fs-bl-1 32526 black
+ADD fs-bp3-1 4274 lightgray
+ADD fs-bp3-2 4274 lightgray
+ADD fs-bp3-3 4274 lightgray
+CONNECT fs-bp3-1.pin1 -> fs-bl-1.hole1~ TURNS
+CONNECT fs-bp3-2.pin1 -> fs-bl-1.hole2~ TURNS
+CONNECT fs-bp3-3.pin1 -> fs-bl-1.hole3~ TURNS
+CONNECT fs-bl-1.hole5? -> cb-b15-1.hole?
+DOES fs-bl-1 CARRIES fs-bp3-1
+PATTERN beam_with_posts

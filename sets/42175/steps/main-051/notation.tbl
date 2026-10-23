@@ -1,0 +1,11 @@
+STEP 51
+ADD fs-yl-1 32140 yellow
+ADD fs-yp-1 4274 lightgray
+ADD fs-yp-2 4274 lightgray
+ADD fs-yp-3 4274 lightgray
+CONNECT fs-yp-1.pin1 -> fs-yl-1.hole1~ TURNS
+CONNECT fs-yp-2.pin1 -> fs-yl-1.hole2~ TURNS
+CONNECT fs-yp-3.pin1 -> fs-yl-1.hole3~ TURNS
+CONNECT fs-yl-1.hole4? -> cb-b15-1.hole?
+DOES fs-yl-1 CARRIES fs-yp-1
+PATTERN beam_with_posts

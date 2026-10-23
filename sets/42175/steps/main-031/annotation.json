@@ -1,0 +1,149 @@
+{
+  "example_id": "42175-step-031",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 35,
+  "step": 31,
+  "input": {
+    "picture": "steps/main-031/picture.png",
+    "parts_box": [
+      {
+        "name": "sd-panel-1",
+        "part_number": "71709",
+        "count": 1
+      },
+      {
+        "name": "sd-gpin-1",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "sd-gpin-2",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "sd-gbeam-1",
+        "part_number": "43857",
+        "count": 1
+      },
+      {
+        "name": "sd-bpin-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sd-bpin-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sd-lbeam-1",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sd-beam15-1",
+        "part_number": "32278",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Cab-side beam with two fairings sits on the rear of the frame (step 30)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sd-panel-1",
+        "part_number": "71709",
+        "catalog_name": "Technic Panel 3 x 7 x 1",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 3 x 7 panel, base of this small build",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-gpin-1",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "two small grey pins pushed into the panel's end holes (sub-step 1, green arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-gpin-2",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "two small grey pins pushed into the panel's end holes (sub-step 1, green arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-gbeam-1",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "grey 1 x 2 thick beam slid over the blue pins (sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-bpin-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins standing out of the panel end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-bpin-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins standing out of the panel end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-lbeam-1",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 2 x 4 L-beam at the end of the long beam (sub-step 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-beam15-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 15-hole beam laid along the panel (sub-step 3, 1:1 length check)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-3: grey pins go into the panel, a grey beam is pressed over the two blue pins, then the 15-hole beam and the L-beam are laid on and locked by the blue pins. A 1:1 box confirms the 15-hole beam."
+    ],
+    "who_does_what_to_which": [
+      "sd-panel-1 supports sd-beam15-1",
+      "sd-gbeam-1 holds sd-lbeam-1",
+      "sd-beam15-1 carries sd-lbeam-1"
+    ],
+    "where_everything_is_after": [
+      "a long black side beam with a panel, an L-beam end and two blue pins is ready to be fitted next",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the long side piece that rides along the cab frame.",
+      "why_these_parts": "A 15-hole beam spans the whole side; the panel and L-beam add stiffness and mounting points.",
+      "sets_up_for_later": "Step 32 and 33 add pins and a small yellow part to the model before this piece is fitted.",
+      "design_pattern": "side beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Exact holes are not countable from the picture. The small grey part in the box is read as a thick 1 x 2 beam (43857); it could be a different grey part."
+}

@@ -1,0 +1,16 @@
+STEP 33
+ADD sd-hub-1 22961 lightgray
+ADD sd-rpin-1 89678 red
+ADD sd-ybeam-1 41677 yellow
+ADD sd-ybeam-2 41677 yellow
+ADD sd-conn-1 42003 black
+ADD sd-hub2-1 44874 lightgray
+ADD sd-lpin-1 65304 black
+CONNECT sd-hub-1.axle1 -> sd-ybeam-1.axlehole1~ LOCKED
+CONNECT sd-ybeam-2.axlehole1 -> sd-hub-1.axle1~ LOCKED
+CONNECT sd-conn-1.hole1? -> sd-ybeam-1.axlehole2?
+CONNECT sd-rpin-1.pin1 -> sd-hub2-1.hole1?
+CONNECT sd-conn-1.axlehole1 -> sd-fpin-1.axle1?
+DOES sd-ybeam-1 HOLDS sd-hub-1
+DOES sd-conn-1 CARRIES sd-ybeam-1
+PATTERN small_pivot_build

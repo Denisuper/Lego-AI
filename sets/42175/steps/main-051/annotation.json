@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-051",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 50,
+  "step": 51,
+  "input": {
+    "picture": "steps/main-051/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-yl-1",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "fs-yp-1",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "fs-yp-2",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "fs-yp-3",
+        "part_number": "4274",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Pivot block on the side beam (step 50)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-yl-1",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow 2 x 4 L-beam with three grey pins (yellow box)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yp-1",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "three small grey pins in the yellow L-beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yp-2",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "three small grey pins in the yellow L-beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-yp-3",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "three small grey pins in the yellow L-beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: three small grey pins stand in the yellow L-beam. The beam is pressed onto the side beam beside the pivot block (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "fs-yl-1 carries fs-yp-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow L-beam with three posts lies on the side beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the yellow L bracket that the next links hang on.",
+      "why_these_parts": "The same piece as in step 34 on the other side.",
+      "sets_up_for_later": "Step 52 adds a black L-beam.",
+      "design_pattern": "L bracket"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Beam holes not countable."
+}

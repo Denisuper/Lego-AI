@@ -1,0 +1,134 @@
+{
+  "example_id": "42175-step-033",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 38,
+  "step": 33,
+  "input": {
+    "picture": "steps/main-033/picture.png",
+    "parts_box": [
+      {
+        "name": "sd-hub-1",
+        "part_number": "22961",
+        "count": 1
+      },
+      {
+        "name": "sd-rpin-1",
+        "part_number": "89678",
+        "count": 1
+      },
+      {
+        "name": "sd-ybeam-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "sd-ybeam-2",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "sd-conn-1",
+        "part_number": "42003",
+        "count": 1
+      },
+      {
+        "name": "sd-hub2-1",
+        "part_number": "44874",
+        "count": 1
+      },
+      {
+        "name": "sd-lpin-1",
+        "part_number": "65304",
+        "count": 1
+      }
+    ],
+    "model_so_far": "One blue pin stands at the front of the frame (step 32)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sd-hub-1",
+        "part_number": "22961",
+        "catalog_name": "Technic Pin Connector Hub with 1 Axle",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey hub with one axle (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-rpin-1",
+        "part_number": "89678",
+        "catalog_name": "Technic Pin 1/2 with Friction",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "short red friction pin (sub-step 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-ybeam-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two yellow thin 1 x 2 beams (sub-steps 1-4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-ybeam-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "two yellow thin 1 x 2 beams (sub-steps 1-4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-conn-1",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black perpendicular connector (sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-hub2-1",
+        "part_number": "44874",
+        "catalog_name": "Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "grey hub with two pins (sub-step 4)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sd-lpin-1",
+        "part_number": "65304",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black long pin (sub-step 5 stack)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box sub-steps 1-5: a hub with an axle goes through two yellow beams, the pair is set on a black connector (a page-13 callout is a reference), a red pin joins the hub and the stack gets a long pin. It is then placed over the blue pin (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "sd-ybeam-1 holds sd-hub-1",
+      "sd-conn-1 carries sd-ybeam-1"
+    ],
+    "where_everything_is_after": [
+      "a small yellow pivot assembly stands on the blue pin at the front of the frame",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the pivot for a moving link at the front.",
+      "why_these_parts": "Yellow beams are used for the visible, moving part.",
+      "sets_up_for_later": "Later steps hang a link on the long pin.",
+      "design_pattern": "pivot"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Part identities in the small box are read from icons only; the sub-step stacking order is estimated. Check carefully."
+}

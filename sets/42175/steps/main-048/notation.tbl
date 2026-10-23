@@ -1,0 +1,6 @@
+STEP 48
+ADD cb-b15-1 32278 black
+CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?
+CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?
+DOES cb-b15-1 SUPPORTS cb-beam11-1
+PATTERN side_beam

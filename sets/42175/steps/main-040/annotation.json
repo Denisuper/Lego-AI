@@ -1,0 +1,106 @@
+{
+  "example_id": "42175-step-040",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 41,
+  "step": 40,
+  "input": {
+    "picture": "steps/main-040/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-tbeam-1",
+        "part_number": "11478",
+        "count": 1
+      },
+      {
+        "name": "cb-bp1-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "cb-bp2-1",
+        "part_number": "42924",
+        "count": 1
+      },
+      {
+        "name": "cb-tb2-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "cb-gax-1",
+        "part_number": "18651",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam with two axles (step 39)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-tbeam-1",
+        "part_number": "11478",
+        "catalog_name": "Technic Beam 1 x 5 Thin with Axle Holes on Ends",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black thin beam with axle holes at the ends",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-bp1-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "short blue pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-bp2-1",
+        "part_number": "42924",
+        "catalog_name": "Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "long blue pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-tb2-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small black thin beam (oval with holes)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-gax-1",
+        "part_number": "18651",
+        "catalog_name": "Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black axle pin (rib on axle end)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box sub-steps 1-2: a thin beam goes on top of an upright axle, then pins are pushed into the beam. The finished piece is pressed onto the long beam (green arrows, two places)."
+    ],
+    "who_does_what_to_which": [
+      "cb-tbeam-1 carries cb-bp1-1",
+      "cb-tbeam-1 holds cb-gax-1"
+    ],
+    "where_everything_is_after": [
+      "a thin beam with three posts sits on the long beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds posts on the beam for linking the next parts.",
+      "why_these_parts": "A thin beam on top of pins locks everything flat.",
+      "sets_up_for_later": "Step 41 onward continues this arm piece.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Icons were hard to read; all five part identities are estimates and the box has 5 parts."
+}

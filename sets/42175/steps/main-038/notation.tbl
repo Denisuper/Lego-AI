@@ -1,0 +1,10 @@
+STEP 38
+ADD cb-bpin-1 42924 blue
+ADD cb-gbeam-1 41677 lightgray
+ADD cb-gbeam-2 41677 lightgray
+CONNECT cb-bpin-1.pin1 -> cb-beam11-1.hole2~ STIFF
+CONNECT cb-gbeam-1.axlehole1 -> cb-axle6-1.axle5~ LOCKED
+CONNECT cb-gbeam-2.axlehole1 -> cb-axle6-1.axle4?
+DOES cb-gbeam-1 HOLDS cb-axle6-1
+DOES cb-beam11-1 CARRIES cb-bpin-1
+PATTERN spacers_on_axle

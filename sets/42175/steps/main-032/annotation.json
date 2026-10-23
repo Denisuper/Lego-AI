@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-032",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 37,
+  "step": 32,
+  "input": {
+    "picture": "steps/main-032/picture.png",
+    "parts_box": [
+      {
+        "name": "sd-fpin-1",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Model from step 30 on the rear frame; blue pin spot at the front."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sd-fpin-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "one blue pin pushed into the front frame hole",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A single blue pin is pushed into the frame next to the front (green highlight only shows the pin)."
+    ],
+    "who_does_what_to_which": [
+      "uc-frame-1 holds sd-fpin-1"
+    ],
+    "where_everything_is_after": [
+      "one blue pin stands up from the frame at the front",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a post for a part that is fitted in step 33.",
+      "why_these_parts": "A friction pin holds a part firmly without extra pieces.",
+      "sets_up_for_later": "Step 33 places a small yellow assembly over it.",
+      "design_pattern": "post pin"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which frame hole receives the pin is not countable."
+}

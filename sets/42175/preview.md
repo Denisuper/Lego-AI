@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 30 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 53 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -17,7 +17,7 @@
 **Why:** Starts the undercarriage with a stiff rectangular base and four posts to hang the next beams on. A closed 5 x 7 frame stays square without extra bracing; long pins stick up far enough to carry two layers of beams. *Next:* Steps 2-4 slide the long beams onto these four posts. *Pattern:* pins in the corners
 
 **Big picture:**
-- **uc-frame-1** (Undercarriage frame): placeholder Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`.
+- **uc-frame-1** (Undercarriage frame): placeholder Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`; 42175-step-032 `CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?`; 42175-step-032 `DOES uc-frame-1 HOLDS sd-fpin-1`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`.
 - **uc-pin-1** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-1.pin2 -> uc-beam9-1.hole2~ STIFF`.
 - **uc-pin-2** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF`.
 - **uc-pin-3** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF`.
@@ -923,3 +923,599 @@
 - **fr-fair8-1** (None): None
 
 **Review:** The booklet circles 7 and 8 refer to fairing part numbers. The pin type (43093 vs 42924) cannot be told apart in the sub-step pictures; both blue pins are read as 43093 from the parts box. This sub-build is not attached yet; attachment is in step 31.
+
+## 42175-step-031 (page 35) - low - NEEDS REVIEW
+
+![42175-step-031](steps/main-031/picture.png)
+
+**New parts:** sd-panel-1 (71709, black) - black 3 x 7 panel, base of this small build; sd-gpin-1 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gpin-2 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gbeam-1 (43857, dark bluish gray) - grey 1 x 2 thick beam slid over the blue pins (sub-step 2); sd-bpin-1 (43093, blue) - two blue pins standing out of the panel end; sd-bpin-2 (43093, blue) - two blue pins standing out of the panel end; sd-lbeam-1 (32140, black) - black 2 x 4 L-beam at the end of the long beam (sub-step 3); sd-beam15-1 (32278, black) - black 15-hole beam laid along the panel (sub-step 3, 1:1 length check)
+
+**Touches:** Sub-steps 1-3: grey pins go into the panel, a grey beam is pressed over the two blue pins, then the 15-hole beam and the L-beam are laid on and locked by the blue pins. A 1:1 box confirms the 15-hole beam.
+
+**Exact joins:** sd-gpin-1.pin1 into sd-panel-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); sd-gpin-2.pin1 into sd-panel-1.hole2 (0.2 hole deep, turns freely, estimated from the picture); sd-bpin-1.pin1 into sd-panel-1.hole4 (0.9 hole deep, held stiff by friction, estimated from the picture); sd-bpin-2.pin1 into sd-panel-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); sd-bpin-1.axle1 into sd-gbeam-1.hole1 (1 hole deep, turns freely, estimated from the picture); sd-bpin-2.axle1 into sd-gbeam-1.hole2 (1 hole deep, turns freely, estimated from the picture); sd-lbeam-1.hole1 into sd-bpin-1.axle1? (not shown in booklet); sd-beam15-1.hole1? into sd-panel-1.hole3? (not shown in booklet)
+
+**Who does what:** sd-panel-1 supports sd-beam15-1; sd-gbeam-1 holds sd-lbeam-1; sd-beam15-1 carries sd-lbeam-1
+
+**After:** a long black side beam with a panel, an L-beam end and two blue pins is ready to be fitted next; everything else: no change
+
+**Why:** Builds the long side piece that rides along the cab frame. A 15-hole beam spans the whole side; the panel and L-beam add stiffness and mounting points. *Next:* Step 32 and 33 add pins and a small yellow part to the model before this piece is fitted. *Pattern:* side beam
+
+**Big picture:**
+- **sd-panel-1** (None): None
+- **sd-gpin-1** (None): None
+- **sd-gpin-2** (None): None
+- **sd-gbeam-1** (None): None
+- **sd-bpin-1** (None): None
+- **sd-bpin-2** (None): None
+- **sd-lbeam-1** (None): None
+- **sd-beam15-1** (None): None
+
+**Review:** Exact holes are not countable from the picture. The small grey part in the box is read as a thick 1 x 2 beam (43857); it could be a different grey part.
+
+## 42175-step-032 (page 37) - medium - NEEDS REVIEW
+
+![42175-step-032](steps/main-032/picture.png)
+
+**New parts:** sd-fpin-1 (43093, blue) - one blue pin pushed into the front frame hole
+
+**Touches:** A single blue pin is pushed into the frame next to the front (green highlight only shows the pin).
+
+**Exact joins:** sd-fpin-1.pin1 into uc-frame-1.hole? (not shown in booklet)
+
+**Who does what:** uc-frame-1 holds sd-fpin-1
+
+**After:** one blue pin stands up from the frame at the front; everything else: no change
+
+**Why:** Adds a post for a part that is fitted in step 33. A friction pin holds a part firmly without extra pieces. *Next:* Step 33 places a small yellow assembly over it. *Pattern:* post pin
+
+**Big picture:**
+- **sd-fpin-1** (None): None Later: 42175-step-033 `CONNECT sd-conn-1.axlehole1 -> sd-fpin-1.axle1?`; 42175-step-034 `CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole4?`; 42175-step-034 `DOES sd-fpin-1 HOLDS cb-ybeam-1`.
+
+**Mechanisms:**
+- **sd-fpin-1** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+
+**Review:** Which frame hole receives the pin is not countable.
+
+## 42175-step-033 (page 38) - low - NEEDS REVIEW
+
+![42175-step-033](steps/main-033/picture.png)
+
+**New parts:** sd-hub-1 (22961, light bluish gray) - grey hub with one axle (sub-step 1); sd-rpin-1 (89678, red) - short red friction pin (sub-step 4); sd-ybeam-1 (41677, yellow) - two yellow thin 1 x 2 beams (sub-steps 1-4); sd-ybeam-2 (41677, yellow) - two yellow thin 1 x 2 beams (sub-steps 1-4); sd-conn-1 (42003, black) - black perpendicular connector (sub-step 2); sd-hub2-1 (44874, light bluish gray) - grey hub with two pins (sub-step 4); sd-lpin-1 (65304, black) - black long pin (sub-step 5 stack)
+
+**Touches:** Yellow box sub-steps 1-5: a hub with an axle goes through two yellow beams, the pair is set on a black connector (a page-13 callout is a reference), a red pin joins the hub and the stack gets a long pin. It is then placed over the blue pin (green arrow).
+
+**Exact joins:** sd-hub-1.axle1 into sd-ybeam-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); sd-ybeam-2.axlehole1 into sd-hub-1.axle1 (0.5 hole deep, locked (turn together), estimated from the picture); sd-conn-1.hole1? into sd-ybeam-1.axlehole2? (not shown in booklet); sd-rpin-1.pin1 into sd-hub2-1.hole1? (not shown in booklet); sd-conn-1.axlehole1 into sd-fpin-1.axle1? (not shown in booklet)
+
+**Who does what:** sd-ybeam-1 holds sd-hub-1; sd-conn-1 carries sd-ybeam-1
+
+**After:** a small yellow pivot assembly stands on the blue pin at the front of the frame; everything else: no change
+
+**Why:** Builds the pivot for a moving link at the front. Yellow beams are used for the visible, moving part. *Next:* Later steps hang a link on the long pin. *Pattern:* pivot
+
+**Big picture:**
+- **sd-hub-1** (None): None
+- **sd-rpin-1** (None): None
+- **sd-ybeam-1** (None): None
+- **sd-ybeam-2** (None): None
+- **sd-conn-1** (None): None
+- **sd-hub2-1** (None): None
+- **sd-lpin-1** (None): None
+
+**Mechanisms:**
+- **sd-conn-1** builds on sd-fpin-1 (42175-step-032), which rests on uc-frame-1 (42175-step-001)
+
+**Review:** Part identities in the small box are read from icons only; the sub-step stacking order is estimated. Check carefully.
+
+## 42175-step-034 (page 39) - medium - NEEDS REVIEW
+
+![42175-step-034](steps/main-034/picture.png)
+
+**New parts:** cb-ybeam-1 (32140, yellow) - yellow 2 x 4 L-beam placed over the front pin (yellow box shows it with three pins); cb-pin-1 (4274, light bluish gray) - three small grey pins pushed into the yellow beam's holes (yellow box); cb-pin-2 (4274, light bluish gray) - three small grey pins pushed into the yellow beam's holes (yellow box); cb-pin-3 (4274, light bluish gray) - three small grey pins pushed into the yellow beam's holes (yellow box)
+
+**Touches:** Yellow box: three grey pins stand in the yellow L-beam. Arrow: the beam is lowered onto the blue pin at the front of the frame.
+
+**Exact joins:** cb-pin-1.pin1 into cb-ybeam-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); cb-pin-2.pin1 into cb-ybeam-1.hole2 (0.2 hole deep, turns freely, estimated from the picture); cb-pin-3.pin1 into cb-ybeam-1.hole3 (0.2 hole deep, turns freely, estimated from the picture); sd-fpin-1.pin1 into cb-ybeam-1.hole4? (not shown in booklet)
+
+**Who does what:** cb-ybeam-1 carries cb-pin-1; sd-fpin-1 holds cb-ybeam-1
+
+**After:** a yellow L-beam with three posts sits on the blue pin at the front of the frame; everything else: no change
+
+**Why:** Makes three posts for the front hinge parts built next. An L-beam with pins gives several mounting points in one piece. *Next:* Later side beams fit onto these posts. *Pattern:* posts on beam
+
+**Big picture:**
+- **cb-ybeam-1** (None): None
+- **cb-pin-1** (None): None
+- **cb-pin-2** (None): None
+- **cb-pin-3** (None): None
+
+**Mechanisms:**
+- **cb-ybeam-1** builds on sd-fpin-1 (42175-step-032), which rests on uc-frame-1 (42175-step-001), sd-conn-1 (42175-step-033)
+
+**Review:** Which beam hole sits on the blue pin is not countable. The yellow part is read as a 2 x 4 L-beam from its icon.
+
+## 42175-step-035 (page 40) - low - NEEDS REVIEW
+
+![42175-step-035](steps/main-035/picture.png)
+
+**New parts:** cb-bush-1 (3713, light bluish gray) - grey bush pushed onto the connector's axle end (green arrow); cb-conn-1 (6536, black) - black perpendicular axle and pin connector
+
+**Touches:** A grey bush is pushed onto the end of a black connector (green arrow).
+
+**Exact joins:** cb-bush-1.axlehole1 into cb-conn-1.axlehole? (not shown in booklet)
+
+**Who does what:** cb-conn-1 carries cb-bush-1
+
+**After:** a black connector with a grey bush on it is ready for step 36; everything else: no change
+
+**Why:** Starts the pivot end of the long arm-like beam in the next step. A bush keeps parts from sliding along a shaft. *Next:* Step 36 fits it to an 11-hole beam. *Pattern:* bush spacer
+
+**Big picture:**
+- **cb-bush-1** (None): None
+- **cb-conn-1** (None): None Later: 42175-step-036 `CONNECT cb-conn-1.axlehole1 -> cb-beam11-1.hole?`; 42175-step-036 `CONNECT cb-disc-1.stud? -> cb-conn-1.hole?`; 42175-step-036 `DOES cb-beam11-1 CARRIES cb-conn-1`; 42175-step-036 `DOES cb-conn-1 HOLDS cb-disc-1`; 42175-step-037 `CONNECT cb-conn-1.axlehole1 -> cb-axle6-1.axle6?`.
+
+**Review:** The small grey part is read as a bush from its picture; it could be a pin. Join points are not shown.
+
+## 42175-step-036 (page 40) - low - NEEDS REVIEW
+
+![42175-step-036](steps/main-036/picture.png)
+
+**New parts:** cb-beam11-1 (32525, black) - black 11-hole beam (1:1 length box, circled 11); cb-disc-1 (98138, trans-clear) - small round trans-clear tile pressed into the connector end (green arrow)
+
+**Touches:** The connector from step 35 sits at the end of the 11-hole beam. A round white-looking tile is pushed into its open end (green arrow).
+
+**Exact joins:** cb-conn-1.axlehole1 into cb-beam11-1.hole? (not shown in booklet); cb-disc-1.stud? into cb-conn-1.hole? (not shown in booklet)
+
+**Who does what:** cb-beam11-1 carries cb-conn-1; cb-conn-1 holds cb-disc-1
+
+**After:** an 11-hole black beam has a connector, bush and round cap at one end; everything else: no change
+
+**Why:** Gives the long beam a rounded end with a pivot. The cap closes the open end of the connector. *Next:* Steps 37-40 add more parts to the same beam. *Pattern:* beam end
+
+**Big picture:**
+- **cb-beam11-1** (None): None Later: 42175-step-038 `CONNECT cb-bpin-1.pin1 -> cb-beam11-1.hole2~ STIFF`; 42175-step-038 `DOES cb-beam11-1 CARRIES cb-bpin-1`; 42175-step-039 `CONNECT cb-conn3-1.hole1 -> cb-beam11-1.hole1?`; 42175-step-040 `CONNECT cb-tbeam-1.hole1 -> cb-beam11-1.hole3?`; 42175-step-042 `CONNECT cb-lb-1.hole5? -> cb-beam11-1.hole?`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-048 `DOES cb-b15-1 SUPPORTS cb-beam11-1`.
+- **cb-disc-1** (None): None
+
+**Mechanisms:**
+- **cb-beam11-1** builds on cb-conn-1 (42175-step-035), which rests on cb-bush-1 (42175-step-035)
+- **cb-disc-1** builds on cb-conn-1 (42175-step-035), which rests on cb-bush-1 (42175-step-035)
+
+**Review:** The round tile looks white in the picture; trans-clear 1 x 1 tile (98138) is the only round tile that fits that colour group. Colour not confirmed.
+
+## 42175-step-037 (page 40) - low - NEEDS REVIEW
+
+![42175-step-037](steps/main-037/picture.png)
+
+**New parts:** cb-axle6-1 (3706, black) - black 6-long axle (1:1 box, circled 6); cb-conn2-1 (32013, black) - black angled connector at the axle's end (yellow box)
+
+**Touches:** Yellow box: the axle is pushed through the connector. Arrow: the pair is attached beside the connector at the beam end.
+
+**Exact joins:** cb-axle6-1.axle1 into cb-conn2-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); cb-conn-1.axlehole1 into cb-axle6-1.axle6? (not shown in booklet)
+
+**Who does what:** cb-conn2-1 holds cb-axle6-1
+
+**After:** a 6-long axle sticks out from the end of the beam; everything else: no change
+
+**Why:** Adds the shaft that the beam will turn on. An axle through a connector gives a stiff shaft. *Next:* Steps 38-39 lock parts onto this shaft. *Pattern:* shaft
+
+**Big picture:**
+- **cb-axle6-1** (None): None Later: 42175-step-038 `CONNECT cb-gbeam-1.axlehole1 -> cb-axle6-1.axle5~ LOCKED`; 42175-step-038 `CONNECT cb-gbeam-2.axlehole1 -> cb-axle6-1.axle4?`; 42175-step-038 `DOES cb-gbeam-1 HOLDS cb-axle6-1`.
+- **cb-conn2-1** (None): None
+
+**Mechanisms:**
+- **cb-axle6-1** builds on cb-conn-1 (42175-step-035), which rests on cb-bush-1 (42175-step-035), cb-beam11-1 (42175-step-036)
+
+**Review:** The 6-long length is checked by the 1:1 box. The connector type is read from the icon.
+
+## 42175-step-038 (page 41) - low - NEEDS REVIEW
+
+![42175-step-038](steps/main-038/picture.png)
+
+**New parts:** cb-bpin-1 (42924, blue) - long blue pin pushed into the beam (shown already in place); cb-gbeam-1 (41677, light bluish gray) - two small grey thin beams; one is slid onto the axle (green arrow); cb-gbeam-2 (41677, light bluish gray) - two small grey thin beams; one is slid onto the axle (green arrow)
+
+**Touches:** A blue pin sits in the beam; a thin grey beam is pressed onto the axle (green arrow). The box says 2 of them.
+
+**Exact joins:** cb-bpin-1.pin1 into cb-beam11-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); cb-gbeam-1.axlehole1 into cb-axle6-1.axle5 (0.5 hole deep, locked (turn together), estimated from the picture); cb-gbeam-2.axlehole1 into cb-axle6-1.axle4? (not shown in booklet)
+
+**Who does what:** cb-gbeam-1 holds cb-axle6-1; cb-beam11-1 carries cb-bpin-1
+
+**After:** a blue pin and grey thin beams are on the beam beside the axle; everything else: no change
+
+**Why:** Adds a fixing pin and spacers next to the shaft. Thin beams work as washers/stops. *Next:* Step 39 adds a longer axle next. *Pattern:* stops
+
+**Big picture:**
+- **cb-bpin-1** (None): None
+- **cb-gbeam-1** (None): None
+- **cb-gbeam-2** (None): None
+
+**Mechanisms:**
+- **cb-bpin-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035)
+- **cb-gbeam-1** builds on cb-axle6-1 (42175-step-037), which rests on cb-conn2-1 (42175-step-037), cb-conn-1 (42175-step-035)
+- **cb-gbeam-2** builds on cb-axle6-1 (42175-step-037), which rests on cb-conn2-1 (42175-step-037), cb-conn-1 (42175-step-035)
+
+**Review:** Only one grey beam is clearly shown; the second one is probably used next to it.
+
+## 42175-step-039 (page 41) - low - NEEDS REVIEW
+
+![42175-step-039](steps/main-039/picture.png)
+
+**New parts:** cb-axle5-1 (32073, light bluish gray) - grey 5-long axle (1:1 box, circled 5); cb-conn3-1 (60483, black) - black connector holding the axle (yellow box)
+
+**Touches:** Yellow box: the axle is pushed through the connector. Arrow: the pair goes on the end of the beam beside the first axle.
+
+**Exact joins:** cb-axle5-1.axle1 into cb-conn3-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); cb-conn3-1.hole1 into cb-beam11-1.hole1? (not shown in booklet)
+
+**Who does what:** cb-conn3-1 holds cb-axle5-1
+
+**After:** a 5-long axle with a connector is on the beam end next to the 6-long axle; everything else: no change
+
+**Why:** Adds a second shaft for the next mechanism. Two parallel shafts make a pair of pivots. *Next:* Step 40 builds a plate on top. *Pattern:* second shaft
+
+**Big picture:**
+- **cb-axle5-1** (None): None
+- **cb-conn3-1** (None): None
+
+**Mechanisms:**
+- **cb-conn3-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
+
+**Review:** Length checked by the 1:1 box.
+
+## 42175-step-040 (page 41) - low - NEEDS REVIEW
+
+![42175-step-040](steps/main-040/picture.png)
+
+**New parts:** cb-tbeam-1 (11478, black) - black thin beam with axle holes at the ends; cb-bp1-1 (43093, blue) - short blue pin; cb-bp2-1 (42924, blue) - long blue pin; cb-tb2-1 (41677, black) - small black thin beam (oval with holes); cb-gax-1 (18651, black) - black axle pin (rib on axle end)
+
+**Touches:** Yellow box sub-steps 1-2: a thin beam goes on top of an upright axle, then pins are pushed into the beam. The finished piece is pressed onto the long beam (green arrows, two places).
+
+**Exact joins:** cb-gax-1.axle1 into cb-tbeam-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cb-bp1-1.axle1 into cb-tb2-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cb-bp2-1.pin1 into cb-tbeam-1.hole2 (0.5 hole deep, held stiff by friction, estimated from the picture); cb-tbeam-1.hole1 into cb-beam11-1.hole3? (not shown in booklet)
+
+**Who does what:** cb-tbeam-1 carries cb-bp1-1; cb-tbeam-1 holds cb-gax-1
+
+**After:** a thin beam with three posts sits on the long beam; everything else: no change
+
+**Why:** Adds posts on the beam for linking the next parts. A thin beam on top of pins locks everything flat. *Next:* Step 41 onward continues this arm piece. *Pattern:* posts
+
+**Big picture:**
+- **cb-tbeam-1** (None): None
+- **cb-bp1-1** (None): None
+- **cb-bp2-1** (None): None
+- **cb-tb2-1** (None): None
+- **cb-gax-1** (None): None
+
+**Mechanisms:**
+- **cb-tbeam-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
+
+**Review:** Icons were hard to read; all five part identities are estimates and the box has 5 parts.
+
+## 42175-step-041 (page 42) - low - NEEDS REVIEW
+
+![42175-step-041](steps/main-041/picture.png)
+
+**New parts:** cb-ll-1 (32056, dark bluish gray) - two dark grey 3 x 3 thin L-beams, one goes on each end of the grey axle (yellow box sub-step 1); cb-ll-2 (32056, dark bluish gray) - two dark grey 3 x 3 thin L-beams, one goes on each end of the grey axle (yellow box sub-step 1); cb-ax5-1 (32073, light bluish gray) - grey 5-long axle (1:1 box, circled 5); cb-ax3-1 (4519, yellow) - yellow 3-long axle through both L-beams (sub-step 2, 1:1 box, circled 3); cb-gp-1 (4274, light bluish gray) - small grey pin pushed into the top L-beam hole (sub-step 3); cb-ob-1 (43857, dark bluish gray) - grey 1 x 2 beam slid over the yellow axle end
+
+**Touches:** Yellow box sub-steps 1-3: the grey axle goes through two L-beams, a yellow axle locks them, a pin and grey beam finish the top. The unit is then lowered onto the long beam (black arrow).
+
+**Exact joins:** cb-ax5-1.axle2 into cb-ll-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cb-ax5-1.axle4 into cb-ll-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cb-ax3-1.axle1 into cb-ll-1.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture); cb-ax3-1.axle3 into cb-ll-2.axlehole2 (0.5 hole deep, locked (turn together), estimated from the picture); cb-gp-1.pin1 into cb-ll-2.hole1 (0.2 hole deep, turns freely, estimated from the picture); cb-ob-1.hole1 into cb-ax3-1.axle3? (not shown in booklet)
+
+**Who does what:** cb-ax5-1 carries cb-ll-1; cb-ax3-1 holds cb-ll-2; cb-ll-1 supports cb-gp-1
+
+**After:** two tall L-beams stand on the long beam, tied together by a grey and a yellow axle; everything else: no change
+
+**Why:** Builds the tall double post that will carry the boom later. Two L-beams tied by two axles make a stiff frame that can pivot. *Next:* The following steps add the beams on both sides of it. *Pattern:* double post
+
+**Big picture:**
+- **cb-ll-1** (None): None
+- **cb-ll-2** (None): None
+- **cb-ax5-1** (None): None Later: 42175-step-044 `CONNECT cb-pc-1.axlehole1 -> cb-ax5-1.axle5?`; 42175-step-044 `CONNECT cb-pc-2.axlehole1 -> cb-ax5-1.axle1?`; 42175-step-045 `CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?`; 42175-step-046 `CONNECT cb-tb5-1.axlehole1 -> cb-ax5-1.axle?`.
+- **cb-ax3-1** (None): None
+- **cb-gp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?`.
+- **cb-ob-1** (None): None
+
+**Review:** The booklet checks the axle lengths 1:1 (yellow = 3, grey = 5). Which beam holes hold each axle is estimated.
+
+## 42175-step-042 (page 43) - low - NEEDS REVIEW
+
+![42175-step-042](steps/main-042/picture.png)
+
+**New parts:** cb-lb-1 (32526, dark bluish gray) - dark grey 3 x 5 L-beam, 5-hole side upright; cb-lp-1 (4274, light bluish gray) - three small grey pins in the L-beam's lower holes (yellow box); cb-lp-2 (4274, light bluish gray) - three small grey pins in the L-beam's lower holes (yellow box); cb-lp-3 (4274, light bluish gray) - three small grey pins in the L-beam's lower holes (yellow box)
+
+**Touches:** Yellow box: three small grey pins are pushed into the foot of the L-beam. The finished piece stands on the long beam (arrow).
+
+**Exact joins:** cb-lp-1.pin1 into cb-lb-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); cb-lp-2.pin1 into cb-lb-1.hole2 (0.2 hole deep, turns freely, estimated from the picture); cb-lp-3.pin1 into cb-lb-1.hole3 (0.2 hole deep, turns freely, estimated from the picture); cb-lb-1.hole5? into cb-beam11-1.hole? (not shown in booklet)
+
+**Who does what:** cb-lb-1 supports cb-lp-1
+
+**After:** a tall dark grey L-beam stands on the long beam with three pins on its foot; everything else: no change
+
+**Why:** Adds a tall rigid post on the beam's end. An L-shape stands upright and gives a tall mount. *Next:* Step 43 lays a second beam against it. *Pattern:* tall post
+
+**Big picture:**
+- **cb-lb-1** (None): None Later: 42175-step-043 `DOES cb-b11b-1 SUPPORTS cb-lb-1`.
+- **cb-lp-1** (None): None Later: 42175-step-043 `CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?`.
+- **cb-lp-2** (None): None Later: 42175-step-043 `CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?`.
+- **cb-lp-3** (None): None Later: 42175-step-043 `CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?`.
+
+**Mechanisms:**
+- **cb-lb-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
+
+**Review:** Pin holes not countable.
+
+## 42175-step-043 (page 43) - low - NEEDS REVIEW
+
+![42175-step-043](steps/main-043/picture.png)
+
+**New parts:** cb-b11b-1 (32525, black) - black 11-hole beam (1:1 box, circled 11)
+
+**Touches:** The new 11-hole beam is pressed onto the three pins of step 42 and lies parallel to the first beam.
+
+**Exact joins:** cb-lp-1.pin1 into cb-b11b-1.hole1? (not shown in booklet); cb-lp-2.pin1 into cb-b11b-1.hole2? (not shown in booklet); cb-lp-3.pin1 into cb-b11b-1.hole3? (not shown in booklet)
+
+**Who does what:** cb-b11b-1 supports cb-lb-1
+
+**After:** two parallel 11-hole beams carry the tall post and twin posts between them; everything else: no change
+
+**Why:** Doubles the beam so the unit is wide and stiff. A second beam locked on pins makes a sandwich. *Next:* Later steps fit the pins and connectors along it. *Pattern:* beam pair
+
+**Big picture:**
+- **cb-b11b-1** (None): None
+
+**Mechanisms:**
+- **cb-b11b-1** builds on cb-lp-1 (42175-step-042), which rests on cb-lb-1 (42175-step-042); cb-lp-2 (42175-step-042), which rests on cb-lb-1 (42175-step-042); cb-lp-3 (42175-step-042), which rests on cb-lb-1 (42175-step-042)
+
+**Review:** Which three beam holes hold the pins is not countable.
+
+## 42175-step-044 (page 43) - low - NEEDS REVIEW
+
+![42175-step-044](steps/main-044/picture.png)
+
+**New parts:** cb-pc-1 (60483, black) - two black 1 x 2 thick beams with pin and axle hole; cb-pc-2 (60483, black) - two black 1 x 2 thick beams with pin and axle hole; cb-gp2-1 (4274, light bluish gray) - two small grey pins; cb-gp2-2 (4274, light bluish gray) - two small grey pins
+
+**Touches:** Two black connectors are pressed onto the axle ends under the beams and each gets a grey pin (the pictures show them on the lower side of the assembly).
+
+**Exact joins:** cb-gp2-1.pin1 into cb-pc-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); cb-gp2-2.pin1 into cb-pc-2.hole1 (0.2 hole deep, turns freely, estimated from the picture); cb-pc-1.axlehole1 into cb-ax5-1.axle5? (not shown in booklet); cb-pc-2.axlehole1 into cb-ax5-1.axle1? (not shown in booklet)
+
+**Who does what:** cb-pc-1 holds cb-gp2-1; cb-pc-2 holds cb-gp2-2
+
+**After:** two connectors with pins sit at the lower side of the beam pair; everything else: no change
+
+**Why:** Makes anchor points on the underside. The pin and axle holes lock onto the axle and give a pin point. *Next:* Later steps hang links from them. *Pattern:* anchors
+
+**Big picture:**
+- **cb-pc-1** (None): None
+- **cb-pc-2** (None): None
+- **cb-gp2-1** (None): None
+- **cb-gp2-2** (None): None
+
+**Mechanisms:**
+- **cb-pc-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
+- **cb-pc-2** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
+
+**Review:** Their exact place is not countable.
+
+## 42175-step-045 (page 44) - low - NEEDS REVIEW
+
+![42175-step-045](steps/main-045/picture.png)
+
+**New parts:** cb-t1-1 (60483, black) - black 1 x 2 thick beam with pin and axle hole; cb-tp-1 (32002, tan) - tan 3/4 pin pushed into the model (arrow in the small box)
+
+**Touches:** A black connector is added to the lower end and a tan pin is pushed into it (arrow).
+
+**Exact joins:** cb-tp-1.pin1 into cb-t1-1.hole1 (0.4 hole deep, held stiff by friction, estimated from the picture); cb-t1-1.axlehole1 into cb-ax5-1.axle3? (not shown in booklet)
+
+**Who does what:** cb-t1-1 holds cb-tp-1
+
+**After:** a tan pin sits in a connector on the underside of the beam pair; everything else: no change
+
+**Why:** Adds a smooth free-turning pin for a link. A tan pin has no friction so a link can swing on it. *Next:* A later link hangs on this pin. *Pattern:* free pin
+
+**Big picture:**
+- **cb-t1-1** (None): None
+- **cb-tp-1** (None): None
+
+**Mechanisms:**
+- **cb-t1-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
+
+**Review:** Part reading from the icon only; likely.
+
+## 42175-step-046 (page 44) - low - NEEDS REVIEW
+
+![42175-step-046](steps/main-046/picture.png)
+
+**New parts:** cb-bp-1 (43093, blue) - blue pin (yellow box); cb-tb5-1 (11478, black) - black thin beam, 5 holes (yellow box sub-step 1); cb-tb3-1 (6632, black) - black thin 1 x 3 beam (sub-step 2)
+
+**Touches:** Yellow box: a blue pin goes through a thin 5-hole beam, then the small thin beam goes on top. The finished piece is pressed onto the lower side of the assembly (arrow).
+
+**Exact joins:** cb-bp-1.pin1 into cb-tb5-1.hole1 (0.5 hole deep, held stiff by friction, estimated from the picture); cb-bp-1.axle1 into cb-tb3-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); cb-tb5-1.axlehole1 into cb-ax5-1.axle? (not shown in booklet)
+
+**Who does what:** cb-bp-1 holds cb-tb5-1; cb-tb5-1 carries cb-tb3-1
+
+**After:** thin beams are pinned to the underside of the beam pair; everything else: no change
+
+**Why:** Adds a plate that ties the underside together. Thin beams on a pin lock in flat. *Next:* Step 47 attaches the whole assembly to the machine. *Pattern:* underside plate
+
+**Big picture:**
+- **cb-bp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?`.
+- **cb-tb5-1** (None): None
+- **cb-tb3-1** (None): None
+
+**Mechanisms:**
+- **cb-tb5-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
+
+**Review:** Hole numbers not countable.
+
+## 42175-step-047 (page 45) - medium - NEEDS REVIEW
+
+![42175-step-047](steps/main-047/picture.png)
+
+**New parts:** 
+
+**Touches:** The assembly built in steps 35-46 is attached to the front of the frame (two green arrows, magnified red box): its beam pushes onto the grey pin of the frame side and its yellow-end post goes to the cylinder side.
+
+**Exact joins:** cb-beam11-1.hole? into uc-frame-1.hole? (not shown in booklet)
+
+**Who does what:** uc-frame-1 holds cb-beam11-1
+
+**After:** the beam assembly is fixed to the front of the frame; everything else: no change
+
+**Why:** Joins the new front unit to the machine. Two pins (green arrows) give a firm, square fit. *Next:* Step 48 puts a 15-hole beam across the front. *Pattern:* attach
+
+**Big picture:**
+
+
+**Review:** The picture shows two arrows but not which holes they use.
+
+## 42175-step-048 (page 46) - low - NEEDS REVIEW
+
+![42175-step-048](steps/main-048/picture.png)
+
+**New parts:** cb-b15-1 (32278, black) - black 15-hole beam (1:1 box, circled 15)
+
+**Touches:** The long beam is laid along the side of the machine; two green arrows show where it meets pins at the front and the middle of the frame.
+
+**Exact joins:** cb-b15-1.hole? into cb-gp-1.pin1? (not shown in booklet); cb-b15-1.hole? into cb-bp-1.pin1? (not shown in booklet)
+
+**Who does what:** cb-b15-1 supports cb-beam11-1
+
+**After:** a 15-hole beam runs along the side of the machine; everything else: no change
+
+**Why:** Ties the front unit to the frame along the whole side. A long beam spans between the pins to make a rigid side. *Next:* Following steps add the same on the other side. *Pattern:* side beam
+
+**Big picture:**
+- **cb-b15-1** (None): None Later: 42175-step-049 `CONNECT fs-pin-1.pin1 -> cb-b15-1.hole?`; 42175-step-049 `DOES cb-b15-1 HOLDS fs-pin-1`; 42175-step-051 `CONNECT fs-yl-1.hole4? -> cb-b15-1.hole?`; 42175-step-052 `CONNECT fs-bl-1.hole5? -> cb-b15-1.hole?`.
+
+**Mechanisms:**
+- **cb-b15-1** builds on cb-gp-1 (42175-step-041), which rests on cb-ll-2 (42175-step-041); cb-bp-1 (42175-step-046), which rests on cb-tb5-1 (42175-step-046), cb-tb3-1 (42175-step-046)
+
+**Review:** Pins hit are not named in the picture.
+
+## 42175-step-049 (page 47) - medium - NEEDS REVIEW
+
+![42175-step-049](steps/main-049/picture.png)
+
+**New parts:** fs-pin-1 (43093, blue) - one blue pin pushed into the 15-hole beam
+
+**Touches:** One blue pin is pushed into the new side beam near the front.
+
+**Exact joins:** fs-pin-1.pin1 into cb-b15-1.hole? (not shown in booklet)
+
+**Who does what:** cb-b15-1 holds fs-pin-1
+
+**After:** a blue pin stands up from the 15-hole beam; everything else: no change
+
+**Why:** Adds a post for the small build placed in step 50. A pin gives a fixing point without extra parts. *Next:* Step 50 sets the yellow assembly over it. *Pattern:* post pin
+
+**Big picture:**
+- **fs-pin-1** (None): None
+
+**Mechanisms:**
+- **fs-pin-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
+
+**Review:** Which beam hole is not countable.
+
+## 42175-step-050 (page 48) - low - NEEDS REVIEW
+
+![42175-step-050](steps/main-050/picture.png)
+
+**New parts:** fs-bp-1 (42924, blue) - long blue pin (sub-step 7); fs-ax3-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3, sub-step 4); fs-yb-1 (41677, yellow) - four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6); fs-yb-2 (41677, yellow) - four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6); fs-yb-3 (41677, yellow) - four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6); fs-yb-4 (41677, yellow) - four yellow thin 1 x 2 beams (sub-steps 1, 2, 5, 6); fs-gp-1 (77765, light bluish gray) - grey long pin (sub-step 7); fs-ap-1 (18651, black) - black axle pin (sub-step 1); fs-vb-1 (32523, black) - black 1 x 3 beam with the VOLVO print (base of the build); fs-gb-1 (60483, dark bluish gray) - small grey beam with pin and axle hole
+
+**Touches:** 7 sub-steps: yellow thin beams sit on a black axle pin, are pushed onto the VOLVO beam, a yellow axle goes through them, more yellow beams are added and a blue and a grey pin finish the top. The whole piece is lowered onto the blue pin of step 49.
+
+**Exact joins:** fs-ap-1.axle1 into fs-yb-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); fs-ap-1.axle2 into fs-yb-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); fs-ax3-1.axle1 into fs-yb-3.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); fs-ax3-1.axle3 into fs-yb-4.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); fs-bp-1.pin1 into fs-vb-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); fs-gp-1.pin1 into fs-gb-1.hole1? (not shown in booklet); fs-ap-1.pin1 into fs-vb-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** fs-vb-1 carries fs-yb-1; fs-ax3-1 holds fs-yb-3; fs-gb-1 holds fs-gp-1
+
+**After:** a yellow double-beam pivot stack with a blue pin and a grey pin stands on a VOLVO beam on the side beam; everything else: no change
+
+**Why:** Builds the pivot block that will carry a link or an arm. Yellow thin beams on an axle form a stiff yet turning pivot. *Next:* The yellow L-beam in step 51 sits beside it. *Pattern:* pivot block
+
+**Big picture:**
+- **fs-bp-1** (None): None
+- **fs-ax3-1** (None): None
+- **fs-yb-1** (None): None
+- **fs-yb-2** (None): None
+- **fs-yb-3** (None): None
+- **fs-yb-4** (None): None
+- **fs-gp-1** (None): None
+- **fs-ap-1** (None): None
+- **fs-vb-1** (None): None
+- **fs-gb-1** (None): None
+
+**Review:** Sub-step stacking order and exact holes are estimated; the icons are small. Seven items in the box (one 4x group).
+
+## 42175-step-051 (page 50) - medium - NEEDS REVIEW
+
+![42175-step-051](steps/main-051/picture.png)
+
+**New parts:** fs-yl-1 (32140, yellow) - yellow 2 x 4 L-beam with three grey pins (yellow box); fs-yp-1 (4274, light bluish gray) - three small grey pins in the yellow L-beam; fs-yp-2 (4274, light bluish gray) - three small grey pins in the yellow L-beam; fs-yp-3 (4274, light bluish gray) - three small grey pins in the yellow L-beam
+
+**Touches:** Yellow box: three small grey pins stand in the yellow L-beam. The beam is pressed onto the side beam beside the pivot block (arrow).
+
+**Exact joins:** fs-yp-1.pin1 into fs-yl-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); fs-yp-2.pin1 into fs-yl-1.hole2 (0.2 hole deep, turns freely, estimated from the picture); fs-yp-3.pin1 into fs-yl-1.hole3 (0.2 hole deep, turns freely, estimated from the picture); fs-yl-1.hole4? into cb-b15-1.hole? (not shown in booklet)
+
+**Who does what:** fs-yl-1 carries fs-yp-1
+
+**After:** a yellow L-beam with three posts lies on the side beam; everything else: no change
+
+**Why:** Adds the yellow L bracket that the next links hang on. The same piece as in step 34 on the other side. *Next:* Step 52 adds a black L-beam. *Pattern:* L bracket
+
+**Big picture:**
+- **fs-yl-1** (None): None
+- **fs-yp-1** (None): None
+- **fs-yp-2** (None): None
+- **fs-yp-3** (None): None
+
+**Mechanisms:**
+- **fs-yl-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
+
+**Review:** Beam holes not countable.
+
+## 42175-step-052 (page 51) - medium - NEEDS REVIEW
+
+![42175-step-052](steps/main-052/picture.png)
+
+**New parts:** fs-bl-1 (32526, black) - black 3 x 5 L-beam (yellow box); fs-bp3-1 (4274, light bluish gray) - three small grey pins in the L-beam's holes; fs-bp3-2 (4274, light bluish gray) - three small grey pins in the L-beam's holes; fs-bp3-3 (4274, light bluish gray) - three small grey pins in the L-beam's holes
+
+**Touches:** Yellow box 1-2: three small grey pins are pushed into the L-beam. The finished piece is placed on the model next to the tall upright (arrow).
+
+**Exact joins:** fs-bp3-1.pin1 into fs-bl-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); fs-bp3-2.pin1 into fs-bl-1.hole2 (0.2 hole deep, turns freely, estimated from the picture); fs-bp3-3.pin1 into fs-bl-1.hole3 (0.2 hole deep, turns freely, estimated from the picture); fs-bl-1.hole5? into cb-b15-1.hole? (not shown in booklet)
+
+**Who does what:** fs-bl-1 carries fs-bp3-1
+
+**After:** a black L-beam with three pins is on the side next to the tall upright; everything else: no change
+
+**Why:** Adds a black bracket beside the tall upright. An L shape bridges the two side beams. *Next:* Step 53 lays a beam across. *Pattern:* bracket
+
+**Big picture:**
+- **fs-bl-1** (None): None Later: 42175-step-053 `DOES fs-b5-1 SUPPORTS fs-bl-1`.
+- **fs-bp3-1** (None): None Later: 42175-step-053 `CONNECT fs-b5-1.hole1 -> fs-bp3-1.pin1?`.
+- **fs-bp3-2** (None): None Later: 42175-step-053 `CONNECT fs-b5-1.hole3 -> fs-bp3-2.pin1?`.
+- **fs-bp3-3** (None): None
+
+**Mechanisms:**
+- **fs-bl-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
+
+**Review:** Holes not countable.
+
+## 42175-step-053 (page 52) - medium - NEEDS REVIEW
+
+![42175-step-053](steps/main-053/picture.png)
+
+**New parts:** fs-b5-1 (32316, black) - black 5-hole thick beam (1:1 box, circled 5)
+
+**Touches:** The 5-hole beam is lowered onto the pins of step 52 (arrow in the yellow box).
+
+**Exact joins:** fs-b5-1.hole1 into fs-bp3-1.pin1? (not shown in booklet); fs-b5-1.hole3 into fs-bp3-2.pin1? (not shown in booklet)
+
+**Who does what:** fs-b5-1 supports fs-bl-1
+
+**After:** a 5-hole beam lies over the black L-beam's pins; everything else: no change
+
+**Why:** Closes the bracket and ties it into the frame. A beam on pins locks them. *Next:* Next steps continue with parts for the other side. *Pattern:* tie beam
+
+**Big picture:**
+- **fs-b5-1** (None): None
+
+**Mechanisms:**
+- **fs-b5-1** builds on fs-bp3-1 (42175-step-052), which rests on fs-bl-1 (42175-step-052); fs-bp3-2 (42175-step-052), which rests on fs-bl-1 (42175-step-052)
+
+**Review:** Which three of the five holes are used is not countable.

@@ -1,0 +1,10 @@
+STEP 46
+ADD cb-bp-1 43093 blue
+ADD cb-tb5-1 11478 black
+ADD cb-tb3-1 6632 black
+CONNECT cb-bp-1.pin1 -> cb-tb5-1.hole1~ STIFF
+CONNECT cb-bp-1.axle1 -> cb-tb3-1.axlehole1~ LOCKED
+CONNECT cb-tb5-1.axlehole1 -> cb-ax5-1.axle?
+DOES cb-bp-1 HOLDS cb-tb5-1
+DOES cb-tb5-1 CARRIES cb-tb3-1
+PATTERN plate_on_pin

@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-043",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 43,
+  "step": 43,
+  "input": {
+    "picture": "steps/main-043/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-b11b-1",
+        "part_number": "32525",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Tall L-beam on the long beam (step 42)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-b11b-1",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam (1:1 box, circled 11)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The new 11-hole beam is pressed onto the three pins of step 42 and lies parallel to the first beam."
+    ],
+    "who_does_what_to_which": [
+      "cb-b11b-1 supports cb-lb-1"
+    ],
+    "where_everything_is_after": [
+      "two parallel 11-hole beams carry the tall post and twin posts between them",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Doubles the beam so the unit is wide and stiff.",
+      "why_these_parts": "A second beam locked on pins makes a sandwich.",
+      "sets_up_for_later": "Later steps fit the pins and connectors along it.",
+      "design_pattern": "beam pair"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which three beam holes hold the pins is not countable."
+}

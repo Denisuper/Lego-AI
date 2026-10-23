@@ -1,0 +1,13 @@
+STEP 40
+ADD cb-tbeam-1 11478 black
+ADD cb-bp1-1 43093 blue
+ADD cb-bp2-1 42924 blue
+ADD cb-tb2-1 41677 black
+ADD cb-gax-1 18651 black
+CONNECT cb-gax-1.axle1 -> cb-tbeam-1.axlehole1~ LOCKED
+CONNECT cb-bp1-1.axle1 -> cb-tb2-1.axlehole1~ LOCKED
+CONNECT cb-bp2-1.pin1 -> cb-tbeam-1.hole2~ STIFF
+CONNECT cb-tbeam-1.hole1 -> cb-beam11-1.hole3?
+DOES cb-tbeam-1 CARRIES cb-bp1-1
+DOES cb-tbeam-1 HOLDS cb-gax-1
+PATTERN plate_on_pins

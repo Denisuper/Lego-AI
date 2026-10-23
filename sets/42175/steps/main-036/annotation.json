@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-036",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 40,
+  "step": 36,
+  "input": {
+    "picture": "steps/main-036/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-beam11-1",
+        "part_number": "32525",
+        "count": 1
+      },
+      {
+        "name": "cb-disc-1",
+        "part_number": "98138",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Connector with bush (step 35)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-beam11-1",
+        "part_number": "32525",
+        "catalog_name": "Technic Beam 1 x 11 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam (1:1 length box, circled 11)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-disc-1",
+        "part_number": "98138",
+        "catalog_name": "Tile Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "likely",
+        "position": "small round trans-clear tile pressed into the connector end (green arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The connector from step 35 sits at the end of the 11-hole beam. A round white-looking tile is pushed into its open end (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "cb-beam11-1 carries cb-conn-1",
+      "cb-conn-1 holds cb-disc-1"
+    ],
+    "where_everything_is_after": [
+      "an 11-hole black beam has a connector, bush and round cap at one end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Gives the long beam a rounded end with a pivot.",
+      "why_these_parts": "The cap closes the open end of the connector.",
+      "sets_up_for_later": "Steps 37-40 add more parts to the same beam.",
+      "design_pattern": "beam end"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The round tile looks white in the picture; trans-clear 1 x 1 tile (98138) is the only round tile that fits that colour group. Colour not confirmed."
+}

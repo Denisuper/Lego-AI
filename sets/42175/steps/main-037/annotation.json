@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-037",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 40,
+  "step": 37,
+  "input": {
+    "picture": "steps/main-037/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-axle6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "cb-conn2-1",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "11-hole beam with connector and cap (step 36)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-axle6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cb-conn2-1",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black angled connector at the axle's end (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the axle is pushed through the connector. Arrow: the pair is attached beside the connector at the beam end."
+    ],
+    "who_does_what_to_which": [
+      "cb-conn2-1 holds cb-axle6-1"
+    ],
+    "where_everything_is_after": [
+      "a 6-long axle sticks out from the end of the beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the shaft that the beam will turn on.",
+      "why_these_parts": "An axle through a connector gives a stiff shaft.",
+      "sets_up_for_later": "Steps 38-39 lock parts onto this shaft.",
+      "design_pattern": "shaft"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The 6-long length is checked by the 1:1 box. The connector type is read from the icon."
+}

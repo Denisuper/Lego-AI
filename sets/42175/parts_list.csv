@@ -1,35 +1,49 @@
 qty,part_number,colour,name
+2,11478,Black,Technic Beam 1 x 5 Thin with Axle Holes on Ends
 1,15458,Black,Technic Panel 3 x 11 x 1
 2,15535,Black,Tile Round 2 x 2 with Hole
-16,18651,Black,Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle
+18,18651,Black,Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle
 1,18939,Light Bluish Gray,Technic Turntable Large Type 3 Base
 2,19474,Light Bluish Gray,"Pneumatic Switch with Pin Holes, Axle Hole and Stepped Outlets"
 1,19478,Dark Bluish Gray,Pneumatic Cylinder 2 x 11 with 2 Stepped Inlets [V2]
+1,22961,Light Bluish Gray,Technic Pin Connector Hub with 1 Axle
 1,2387,Black,"Technic Panel Fairing #7 3L Very Small Smooth, Side A"
 1,2389,Black,"Technic Panel Fairing #8 3L Very Small Smooth, Side B"
 2,2476a,Light Bluish Gray,Plate Special 2 x 2 with Pin on Bottom
 1,26288,Blue,Pneumatic Pump Large (11L) with 1 x 3 Liftarm
-3,32073,Light Bluish Gray,Technic Axle 5
-5,32278,Black,Technic Beam 1 x 15 Thick
+1,32002,Tan,Technic Pin 3/4
+1,32013,Black,Technic Axle and Pin Connector Angled #1
+2,32056,Dark Bluish Gray,Technic Beam 3 x 3 L-Shape Thin
+5,32073,Light Bluish Gray,Technic Axle 5
+1,32140,Black,Technic Beam 2 x 4 L-Shape Thick
+2,32140,Yellow,Technic Beam 2 x 4 L-Shape Thick
+7,32278,Black,Technic Beam 1 x 15 Thick
 2,32278,Dark Bluish Gray,Technic Beam 1 x 15 Thick
-2,32316,Black,Technic Beam 1 x 5 Thick
+3,32316,Black,Technic Beam 1 x 5 Thick
 4,32316,Light Bluish Gray,Technic Beam 1 x 5 Thick
+1,32523,Black,Technic Beam 1 x 3 Thick
 4,32524,Black,Technic Beam 1 x 7 Thick
-3,32525,Black,Technic Beam 1 x 11 Thick
-4,32526,Black,Technic Beam 3 x 5 L-Shape Thick
-4,32526,Dark Bluish Gray,Technic Beam 3 x 5 L-Shape Thick
+5,32525,Black,Technic Beam 1 x 11 Thick
+5,32526,Black,Technic Beam 3 x 5 L-Shape Thick
+5,32526,Dark Bluish Gray,Technic Beam 3 x 5 L-Shape Thick
+1,3706,Black,Technic Axle 6
+1,3713,Light Bluish Gray,Technic Bush
 4,3749,Tan,Technic Axle Pin without Friction Ridges Lengthwise
 6,39888,Tan,"Technic Pin Long without Friction Ridges, with Anti-Roll Notch"
 2,4032a,Black,Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)
 6,40490,Dark Bluish Gray,Technic Beam 1 x 9 Thick
-2,41677,Black,Technic Beam 1 x 2 Thin
+3,41677,Black,Technic Beam 1 x 2 Thin
+2,41677,Light Bluish Gray,Technic Beam 1 x 2 Thin
+6,41677,Yellow,Technic Beam 1 x 2 Thin
+1,42003,Black,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes
 4,42610,Black,Wheel 11 x 8 with Center Groove
-6,4274,Light Bluish Gray,Technic Pin 1/2
-16,42924,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot"
-17,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
-1,43857,Dark Bluish Gray,Technic Beam 1 x 2 Thick
+23,4274,Light Bluish Gray,Technic Pin 1/2
+19,42924,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot"
+23,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
+3,43857,Dark Bluish Gray,Technic Beam 1 x 2 Thick
 1,44874,Black,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
-1,44874,Light Bluish Gray,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
+2,44874,Light Bluish Gray,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
+2,4519,Yellow,Technic Axle 3
 1,4697b,Light Bluish Gray,Pneumatic T-Piece (T Bar) [New Style]
 4,50951,Black,Tyre 14 x 6 Solid Smooth
 1,5102c04,Blue,"Hose, Pneumatic 4mm D. 4L / 3.2cm"
@@ -39,12 +53,17 @@ qty,part_number,colour,name
 6,55982,Light Bluish Gray,"Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes"
 4,57520,Black,Technic Tread Sprocket Wheel Small 6 Tooth
 1,59443,Black,Technic Axle Connector Smooth [with x Hole + Orientation]
+4,60483,Black,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
+1,60483,Dark Bluish Gray,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
 3,64179,Black,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
-28,65304,Black,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
+29,65304,Black,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
 13,65304,Light Bluish Gray,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
-1,6536,Black,Technic Axle and Pin Connector Perpendicular
-1,77765,Light Bluish Gray,"Technic Pin Long 3l, No Friction Ridges, with Stop and Hole"
+2,6536,Black,Technic Axle and Pin Connector Perpendicular
+1,6632,Black,Technic Beam 1 x 3 Thin
+1,71709,Black,Technic Panel 3 x 7 x 1
+2,77765,Light Bluish Gray,"Technic Pin Long 3l, No Friction Ridges, with Stop and Hole"
 2,87083,Dark Bluish Gray,Technic Axle 4 with Stop
 60,88323,Black,"Technic Link Tread Wide with Two Pin Holes, Reinforced"
 1,88738,Black,"Technic Turntable Large Type 4 Top, 60 Tooth"
-1,89678,Red,Technic Pin 1/2 with Friction
+2,89678,Red,Technic Pin 1/2 with Friction
+1,98138,Trans-Clear,Tile Round 1 x 1

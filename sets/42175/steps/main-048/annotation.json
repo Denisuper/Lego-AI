@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-048",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 46,
+  "step": 48,
+  "input": {
+    "picture": "steps/main-048/picture.png",
+    "parts_box": [
+      {
+        "name": "cb-b15-1",
+        "part_number": "32278",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Front assembly fixed to the frame (step 47)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cb-b15-1",
+        "part_number": "32278",
+        "catalog_name": "Technic Beam 1 x 15 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 15-hole beam (1:1 box, circled 15)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The long beam is laid along the side of the machine; two green arrows show where it meets pins at the front and the middle of the frame."
+    ],
+    "who_does_what_to_which": [
+      "cb-b15-1 supports cb-beam11-1"
+    ],
+    "where_everything_is_after": [
+      "a 15-hole beam runs along the side of the machine",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Ties the front unit to the frame along the whole side.",
+      "why_these_parts": "A long beam spans between the pins to make a rigid side.",
+      "sets_up_for_later": "Following steps add the same on the other side.",
+      "design_pattern": "side beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Pins hit are not named in the picture."
+}

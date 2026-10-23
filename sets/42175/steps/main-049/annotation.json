@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-049",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 47,
+  "step": 49,
+  "input": {
+    "picture": "steps/main-049/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-pin-1",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "15-hole side beam on the machine (step 48)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-pin-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "one blue pin pushed into the 15-hole beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "One blue pin is pushed into the new side beam near the front."
+    ],
+    "who_does_what_to_which": [
+      "cb-b15-1 holds fs-pin-1"
+    ],
+    "where_everything_is_after": [
+      "a blue pin stands up from the 15-hole beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a post for the small build placed in step 50.",
+      "why_these_parts": "A pin gives a fixing point without extra parts.",
+      "sets_up_for_later": "Step 50 sets the yellow assembly over it.",
+      "design_pattern": "post pin"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which beam hole is not countable."
+}

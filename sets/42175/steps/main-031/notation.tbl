@@ -1,0 +1,21 @@
+STEP 31
+ADD sd-panel-1 71709 black
+ADD sd-gpin-1 4274 lightgray
+ADD sd-gpin-2 4274 lightgray
+ADD sd-gbeam-1 43857 darkgray
+ADD sd-bpin-1 43093 blue
+ADD sd-bpin-2 43093 blue
+ADD sd-lbeam-1 32140 black
+ADD sd-beam15-1 32278 black
+CONNECT sd-gpin-1.pin1 -> sd-panel-1.hole1~ TURNS
+CONNECT sd-gpin-2.pin1 -> sd-panel-1.hole2~ TURNS
+CONNECT sd-bpin-1.pin1 -> sd-panel-1.hole4~ STIFF
+CONNECT sd-bpin-2.pin1 -> sd-panel-1.hole5~ STIFF
+CONNECT sd-bpin-1.axle1 -> sd-gbeam-1.hole1~ TURNS
+CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole2~ TURNS
+CONNECT sd-lbeam-1.hole1 -> sd-bpin-1.axle1?
+CONNECT sd-beam15-1.hole1? -> sd-panel-1.hole3?
+DOES sd-panel-1 SUPPORTS sd-beam15-1
+DOES sd-gbeam-1 HOLDS sd-lbeam-1
+DOES sd-beam15-1 CARRIES sd-lbeam-1
+PATTERN side_beam_build

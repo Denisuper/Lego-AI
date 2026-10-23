@@ -1,0 +1,6 @@
+STEP 53
+ADD fs-b5-1 32316 black
+CONNECT fs-b5-1.hole1 -> fs-bp3-1.pin1?
+CONNECT fs-b5-1.hole3 -> fs-bp3-2.pin1?
+DOES fs-b5-1 SUPPORTS fs-bl-1
+PATTERN beam_on_pins

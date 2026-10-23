@@ -1,0 +1,5 @@
+STEP 32
+ADD sd-fpin-1 43093 blue
+CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?
+DOES uc-frame-1 HOLDS sd-fpin-1
+PATTERN single_pin
