@@ -518,8 +518,8 @@ WHY Connects the pump, switches and cylinder into one air circuit.
 ## Step 28 (page 31)
 ADD up-spin-1 65304 black
 ADD up-spin-2 65304 black
-CONNECT up-spin-1.pin1 -> up-frame-2.hole?
-CONNECT up-spin-2.pin1 -> up-frame-2.hole?
+CONNECT up-spin-1.pin1 -> up-frame-2.hole9~ STIFF
+CONNECT up-spin-2.pin1 -> up-frame-2.hole13~ STIFF
 WHY Adds the posts for the next cover panel.
 
 ## Step 29 (page 32)
@@ -530,10 +530,14 @@ ADD up-spin-5 65304 black
 ADD up-spin-6 65304 black
 ADD up-spin-7 65304 black
 ADD up-spin-8 65304 black
-CONNECT up-spin-3.pin1 -> up-panel-1.hole?
-CONNECT up-spin-4.pin1 -> up-panel-1.hole?
-CONNECT up-spin-5.pin1 -> up-panel-1.hole?
-CONNECT up-spin-6.pin1 -> up-panel-1.hole?
+CONNECT up-spin-1.pin2 -> up-panel-1.hole3~ STIFF
+CONNECT up-spin-2.pin2 -> up-panel-1.hole4~ STIFF
+CONNECT up-spin-3.pin1 -> up-panel-1.hole1~ STIFF
+CONNECT up-spin-4.pin1 -> up-panel-1.hole2~ STIFF
+CONNECT up-spin-5.pin1 -> up-panel-1.hole15~ STIFF
+CONNECT up-spin-6.pin1 -> up-panel-1.hole16~ STIFF
+CONNECT up-spin-7.pin1 -> up-panel-1.hole6~ STIFF
+CONNECT up-spin-8.pin1 -> up-panel-1.hole10~ STIFF
 WHY Closes the top of the rear section and gives a flat base for the cab.
 
 ## Step 30 (page 33)
@@ -599,9 +603,9 @@ ADD cb-pin-1 4274 lightgray
 ADD cb-pin-2 4274 lightgray
 ADD cb-pin-3 4274 lightgray
 CONNECT cb-pin-1.pin1 -> cb-ybeam-1.hole1~ TURNS
-CONNECT cb-pin-2.pin1 -> cb-ybeam-1.hole2~ TURNS
-CONNECT cb-pin-3.pin1 -> cb-ybeam-1.hole3~ TURNS
-CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole4?
+CONNECT cb-pin-2.pin1 -> cb-ybeam-1.hole3~ TURNS
+CONNECT cb-pin-3.pin1 -> cb-ybeam-1.hole4~ TURNS
+CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole2~ STIFF
 WHY Makes three posts for the front hinge parts built next.
 
 ## Step 35 (page 40)
