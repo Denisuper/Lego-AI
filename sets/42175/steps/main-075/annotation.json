@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-075",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 67,
+  "step": 75,
+  "input": {
+    "picture": "steps/main-075/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-gb7-1",
+        "part_number": "32524",
+        "count": 1
+      },
+      {
+        "name": "bm-bp6-1",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with 15-hole beam (step 74)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-gb7-1",
+        "part_number": "32524",
+        "catalog_name": "Technic Beam 1 x 7 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "confirmed",
+        "position": "grey 7-hole beam with blue pins (1:1 box, circled 7)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bp6-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "blue pin",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: a grey 7-hole beam with two pins. It is placed diagonally on the arm (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-gb7-1 supports bm-b15-1"
+    ],
+    "where_everything_is_after": [
+      "a grey diagonal brace sits on the arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the diagonal brace for the middle joint.",
+      "why_these_parts": "A diagonal beam makes a triangle that resists bending.",
+      "sets_up_for_later": "Step 76 adds an L-beam.",
+      "design_pattern": "brace"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Only one blue pin is in the box; the second pin in the yellow box belongs to the model."
+}

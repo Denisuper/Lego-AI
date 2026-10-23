@@ -1,0 +1,8 @@
+STEP 70
+ADD bm-b11b-1 32525 black
+ADD bm-gp2-1 4274 lightgray
+CONNECT bm-gp2-1.pin1 -> bm-b11b-1.hole?
+CONNECT bm-b11b-1.hole? -> bm-b11-1.hole?
+DOES bm-b11b-1 SUPPORTS bm-b5-1
+DOES bm-b11b-1 HOLDS bm-gp2-1
+PATTERN second_beam

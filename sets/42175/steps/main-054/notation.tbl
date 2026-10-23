@@ -1,0 +1,7 @@
+STEP 54
+ADD fs-bp4-1 43093 blue
+ADD fs-bp4-2 43093 blue
+CONNECT fs-bp4-1.pin1 -> fs-b5-1.hole?
+CONNECT fs-bp4-2.pin1 -> fs-b5-1.hole?
+DOES fs-b5-1 HOLDS fs-bp4-1
+PATTERN posts

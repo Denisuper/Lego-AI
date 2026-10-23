@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-059",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 58,
+  "step": 59,
+  "input": {
+    "picture": "steps/main-059/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-clip-1",
+        "part_number": "3484",
+        "count": 1
+      },
+      {
+        "name": "fs-clip-2",
+        "part_number": "3484",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat with axle on the side frame (steps 56-58)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-clip-1",
+        "part_number": "3484",
+        "catalog_name": "Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small black bars with a clip, added to the model (icon only, no arrow)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-clip-2",
+        "part_number": "3484",
+        "catalog_name": "Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two small black bars with a clip, added to the model (icon only, no arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two small clip bars are listed in the box; the picture shows the model without any visible change, so where they go is not shown."
+    ],
+    "who_does_what_to_which": [
+      "fs-sx-1 carries fs-clip-1"
+    ],
+    "where_everything_is_after": [
+      "two small clip bars are added at the seat (positions not shown)",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Clips will later hold hoses or lines.",
+      "why_these_parts": "A bar with a clip snaps a thin hose in place.",
+      "sets_up_for_later": "Step 60 builds a hose piece that clips here.",
+      "design_pattern": "hose clips"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Position is not shown in the picture; joins are open. Part identity read from the icon."
+}

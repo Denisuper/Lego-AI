@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-069",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 64,
+  "step": 69,
+  "input": {
+    "picture": "steps/main-069/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-b5-1",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam with two blue pins (step 68)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-b5-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam (1:1 box, circled 5)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 5-hole beam is pressed onto the two blue pins."
+    ],
+    "who_does_what_to_which": [
+      "bm-b5-1 holds bm-bp4-1"
+    ],
+    "where_everything_is_after": [
+      "a 5-hole beam extends the arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Extends the arm's length.",
+      "why_these_parts": "A beam on two pins is stiff.",
+      "sets_up_for_later": "Step 70 adds a long beam on top.",
+      "design_pattern": "extension"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes used not countable."
+}

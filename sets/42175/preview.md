@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 53 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 78 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -1513,9 +1513,636 @@
 **Why:** Closes the bracket and ties it into the frame. A beam on pins locks them. *Next:* Next steps continue with parts for the other side. *Pattern:* tie beam
 
 **Big picture:**
-- **fs-b5-1** (None): None
+- **fs-b5-1** (None): None Later: 42175-step-054 `CONNECT fs-bp4-1.pin1 -> fs-b5-1.hole?`; 42175-step-054 `CONNECT fs-bp4-2.pin1 -> fs-b5-1.hole?`; 42175-step-054 `DOES fs-b5-1 HOLDS fs-bp4-1`.
 
 **Mechanisms:**
 - **fs-b5-1** builds on fs-bp3-1 (42175-step-052), which rests on fs-bl-1 (42175-step-052); fs-bp3-2 (42175-step-052), which rests on fs-bl-1 (42175-step-052)
 
 **Review:** Which three of the five holes are used is not countable.
+
+## 42175-step-054 (page 53) - medium - NEEDS REVIEW
+
+![42175-step-054](steps/main-054/picture.png)
+
+**New parts:** fs-bp4-1 (43093, blue) - two blue pins pushed into the model beside the pivot stack; fs-bp4-2 (43093, blue) - two blue pins pushed into the model beside the pivot stack
+
+**Touches:** Two blue pins are pushed into the side beam next to the pivot stack (pictured, no arrows).
+
+**Exact joins:** fs-bp4-1.pin1 into fs-b5-1.hole? (not shown in booklet); fs-bp4-2.pin1 into fs-b5-1.hole? (not shown in booklet)
+
+**Who does what:** fs-b5-1 holds fs-bp4-1
+
+**After:** two blue pins stand beside the pivot stack; everything else: no change
+
+**Why:** Adds posts for the beam fitted in step 55. Pins give fixing points at no cost in space. *Next:* Step 55 slides a beam over them. *Pattern:* posts
+
+**Big picture:**
+- **fs-bp4-1** (None): None Later: 42175-step-055 `CONNECT fs-b7-1.hole1~ -> fs-bp4-1.pin1?`.
+- **fs-bp4-2** (None): None Later: 42175-step-055 `CONNECT fs-b7-1.hole3~ -> fs-bp4-2.pin1?`.
+
+**Mechanisms:**
+- **fs-bp4-1** builds on fs-b5-1 (42175-step-053), which rests on fs-bp3-1 (42175-step-052), fs-bp3-2 (42175-step-052)
+- **fs-bp4-2** builds on fs-b5-1 (42175-step-053), which rests on fs-bp3-1 (42175-step-052), fs-bp3-2 (42175-step-052)
+
+**Review:** The pin type is read from the icon; where they go is not countable.
+
+## 42175-step-055 (page 54) - low - NEEDS REVIEW
+
+![42175-step-055](steps/main-055/picture.png)
+
+**New parts:** fs-bh-1 (42003, black) - black connector with two pin holes and a cross hole (yellow box 1); fs-gp5-1 (4274, light bluish gray) - two small grey pins in the connector; fs-gp5-2 (4274, light bluish gray) - two small grey pins in the connector; fs-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7); fs-rax-1 (32062, red) - red 2-long notched axle (sub-step 1, goes into the connector's cross hole)
+
+**Touches:** Yellow box 1-2: the red axle goes in the black connector, two grey pins join, then the connector is pressed onto a 7-hole beam. The unit is placed on the two blue pins (green arrows) with the red axle pointing up (arrow).
+
+**Exact joins:** fs-gp5-1.pin1 into fs-bh-1.hole1 (0.2 hole deep, turns freely); fs-gp5-2.pin1 into fs-bh-1.hole2 (0.2 hole deep, turns freely); fs-rax-1.axle1 into fs-bh-1.axlehole1 (1 hole deep, locked (turn together)); fs-bh-1.hole? into fs-b7-1.hole? (not shown in booklet); fs-b7-1.hole1 into fs-bp4-1.pin1? (not shown in booklet); fs-b7-1.hole3 into fs-bp4-2.pin1? (not shown in booklet)
+
+**Who does what:** fs-bh-1 holds fs-rax-1; fs-b7-1 carries fs-bh-1
+
+**After:** a 7-hole beam lies on the blue pins, with a red axle standing up from it; everything else: no change
+
+**Why:** Builds the seat mount: the red axle will carry the seat. A cross axle in a connector locks and gives a vertical post. *Next:* Step 56 puts the seat on it. *Pattern:* seat mount
+
+**Big picture:**
+- **fs-bh-1** (None): None
+- **fs-gp5-1** (None): None
+- **fs-gp5-2** (None): None
+- **fs-b7-1** (None): None
+- **fs-rax-1** (None): None Later: 42175-step-056 `CONNECT fs-seat-1.hole1 -> fs-rax-1.axle2?`; 42175-step-056 `DOES fs-rax-1 HOLDS fs-seat-1`.
+
+**Mechanisms:**
+- **fs-b7-1** builds on fs-bp4-1 (42175-step-054), which rests on fs-b5-1 (42175-step-053); fs-bp4-2 (42175-step-054), which rests on fs-b5-1 (42175-step-053)
+
+**Review:** Which beam holes the two blue pins use is not countable.
+
+## 42175-step-056 (page 55) - medium - NEEDS REVIEW
+
+![42175-step-056](steps/main-056/picture.png)
+
+**New parts:** fs-seat-1 (24116, dark bluish gray) - dark grey curved panel that works as the seat back/seat
+
+**Touches:** The curved panel is pushed onto the red axle so it stands as a seat.
+
+**Exact joins:** fs-seat-1.hole1 into fs-rax-1.axle2? (not shown in booklet)
+
+**Who does what:** fs-rax-1 holds fs-seat-1
+
+**After:** a curved dark grey seat stands on the red axle; everything else: no change
+
+**Why:** Adds the operator's seat of the excavator. A bent panel has the shape of a seat. *Next:* Step 57 locks it with a small beam. *Pattern:* seat
+
+**Big picture:**
+- **fs-seat-1** (None): None Later: 42175-step-057 `CONNECT fs-sb-1.hole1 -> fs-seat-1.hole?`; 42175-step-057 `DOES fs-sb-1 HOLDS fs-seat-1`; 42175-step-058 `DOES fs-sx-1 HOLDS fs-seat-1`.
+
+**Mechanisms:**
+- **fs-seat-1** builds on fs-rax-1 (42175-step-055), which rests on fs-bh-1 (42175-step-055)
+
+**Review:** Which panel hole is on the axle is not countable.
+
+## 42175-step-057 (page 56) - medium - NEEDS REVIEW
+
+![42175-step-057](steps/main-057/picture.png)
+
+**New parts:** fs-sb-1 (43857, dark bluish gray) - grey 1 x 2 thick beam added at the seat's lower end (yellow box)
+
+**Touches:** The small grey beam is pressed onto the seat's foot (arrow).
+
+**Exact joins:** fs-sb-1.hole1 into fs-seat-1.hole? (not shown in booklet)
+
+**Who does what:** fs-sb-1 holds fs-seat-1
+
+**After:** the seat is held at its foot by a grey beam; everything else: no change
+
+**Why:** Holds the seat's foot so it doesn't pop off. A beam clamps the foot. *Next:* Step 58 adds a shaft through it. *Pattern:* seat lock
+
+**Big picture:**
+- **fs-sb-1** (None): None Later: 42175-step-058 `CONNECT fs-sx-1.axle1 -> fs-sb-1.hole?`.
+
+**Mechanisms:**
+- **fs-sb-1** builds on fs-seat-1 (42175-step-056), which rests on fs-rax-1 (42175-step-055)
+
+**Review:** Part read from the icon.
+
+## 42175-step-058 (page 57) - medium - NEEDS REVIEW
+
+![42175-step-058](steps/main-058/picture.png)
+
+**New parts:** fs-sx-1 (3706, black) - black 6-long axle pushed through the seat foot (yellow box)
+
+**Touches:** The black axle is pushed through the seat foot and beam (arrow).
+
+**Exact joins:** fs-sx-1.axle1 into fs-sb-1.hole? (not shown in booklet)
+
+**Who does what:** fs-sx-1 holds fs-seat-1
+
+**After:** the seat foot has a black axle through it; everything else: no change
+
+**Why:** Adds the shaft the seat turns or tilts on. An axle through a beam is a pivot. *Next:* Later steps hang parts off the shaft. *Pattern:* seat pivot
+
+**Big picture:**
+- **fs-sx-1** (None): None Later: 42175-step-059 `CONNECT fs-clip-1.bar? -> fs-sx-1.axle?`; 42175-step-059 `CONNECT fs-clip-2.bar? -> fs-sx-1.axle?`; 42175-step-059 `DOES fs-sx-1 CARRIES fs-clip-1`.
+
+**Mechanisms:**
+- **fs-sx-1** builds on fs-sb-1 (42175-step-057), which rests on fs-seat-1 (42175-step-056)
+
+**Review:** Length read as 6; hard to verify from the picture.
+
+## 42175-step-059 (page 58) - medium - NEEDS REVIEW
+
+![42175-step-059](steps/main-059/picture.png)
+
+**New parts:** fs-clip-1 (3484, black) - two small black bars with a clip, added to the model (icon only, no arrow); fs-clip-2 (3484, black) - two small black bars with a clip, added to the model (icon only, no arrow)
+
+**Touches:** Two small clip bars are listed in the box; the picture shows the model without any visible change, so where they go is not shown.
+
+**Exact joins:** fs-clip-1.bar? into fs-sx-1.axle? (not shown in booklet); fs-clip-2.bar? into fs-sx-1.axle? (not shown in booklet)
+
+**Who does what:** fs-sx-1 carries fs-clip-1
+
+**After:** two small clip bars are added at the seat (positions not shown); everything else: no change
+
+**Why:** Clips will later hold hoses or lines. A bar with a clip snaps a thin hose in place. *Next:* Step 60 builds a hose piece that clips here. *Pattern:* hose clips
+
+**Big picture:**
+- **fs-clip-1** (None): None
+- **fs-clip-2** (None): None
+
+**Mechanisms:**
+- **fs-clip-1** builds on fs-sx-1 (42175-step-058), which rests on fs-sb-1 (42175-step-057)
+- **fs-clip-2** builds on fs-sx-1 (42175-step-058), which rests on fs-sb-1 (42175-step-057)
+
+**Review:** Position is not shown in the picture; joins are open. Part identity read from the icon.
+
+## 42175-step-060 (page 59) - low - NEEDS REVIEW
+
+![42175-step-060](steps/main-060/picture.png)
+
+**New parts:** hs-hose-1 (32580, black) - black 7-long soft axle hose (sub-step 1); hs-rax-1 (32062, red) - two red 2-long notched axles at the two ends of the hose (sub-steps 1-2); hs-rax-2 (32062, red) - two red 2-long notched axles at the two ends of the hose (sub-steps 1-2); hs-conn-1 (99021, dark bluish gray) - two grey hose connectors (sub-step 2 and 4); hs-conn-2 (99021, dark bluish gray) - two grey hose connectors (sub-step 2 and 4); hs-bp-1 (43093, blue) - blue pin (sub-step 3); hs-tile-1 (3069b, black) - black 1 x 2 tile with a sticker (sub-step 5, sticker no. 29 in the yellow box); hs-plate-1 (18677, black) - black 1 x 2 plate with a pin hole underneath (sub-step 4)
+
+**Touches:** Sub-steps 1-5: red axles go into the ends of the black hose, a grey connector and a blue pin are added at one end, and a black tile with a sticker goes on the plate (yellow box). The whole piece is fitted next to the seat (arrow).
+
+**Exact joins:** hs-rax-1.axle1 into hs-hose-1.axlehole? (not shown in booklet); hs-rax-2.axle1 into hs-hose-1.axlehole? (not shown in booklet); hs-conn-1.axle? into hs-rax-1.axle2? (not shown in booklet); hs-bp-1.pin1 into hs-conn-1.hole? (not shown in booklet); hs-conn-2.hole? into hs-hose-1.axlehole? (not shown in booklet); hs-tile-1.stud? into hs-plate-1.stud? (not shown in booklet)
+
+**Who does what:** hs-hose-1 carries hs-rax-1; hs-conn-1 holds hs-bp-1; hs-plate-1 supports hs-tile-1
+
+**After:** a black soft hose link with red end axles, connectors and a sticker tile is fitted at the seat; everything else: no change
+
+**Why:** Builds a stiff rod link with end fittings (a Volvo-style label tile). A soft axle hose is a bendable shaft; the red axles are its end fittings. *Next:* It becomes a link in the cab area. *Pattern:* hose link
+
+**Big picture:**
+- **hs-hose-1** (None): None
+- **hs-rax-1** (None): None
+- **hs-rax-2** (None): None
+- **hs-conn-1** (None): None
+- **hs-conn-2** (None): None
+- **hs-bp-1** (None): None
+- **hs-tile-1** (None): None
+- **hs-plate-1** (None): None
+
+**Review:** Parts are read from small icons; the soft hose and the sticker tile have no catalog points so joins are open.
+
+## 42175-step-061 (page 62) - low - NEEDS REVIEW
+
+![42175-step-061](steps/main-061/picture.png)
+
+**New parts:** bm-gp-1 (4274, light bluish gray) - small grey pin; bm-lb-1 (32140, black) - black 2 x 4 L-beam; bm-bp-1 (43093, blue) - blue pin
+
+**Touches:** A black L-beam gets a small grey pin and a blue pin (picture).
+
+**Exact joins:** bm-gp-1.pin1 into bm-lb-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); bm-bp-1.pin1 into bm-lb-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** bm-lb-1 carries bm-gp-1
+
+**After:** a black L-beam with one grey and one blue pin; everything else: no change
+
+**Why:** Starts the arm from its root: an L-beam gives the corner for the first section. Pins make fixing points. *Next:* Step 62 puts it on the long beam. *Pattern:* arm start
+
+**Big picture:**
+- **bm-gp-1** (None): None
+- **bm-lb-1** (None): None Later: 42175-step-062 `CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?`; 42175-step-062 `DOES bm-b11-1 CARRIES bm-lb-1`.
+- **bm-bp-1** (None): None Later: 42175-step-062 `CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?`.
+
+**Review:** The inset picture on page 62 shows the arm that is built in the next steps.
+
+## 42175-step-062 (page 62) - low - NEEDS REVIEW
+
+![42175-step-062](steps/main-062/picture.png)
+
+**New parts:** bm-b11-1 (32525, black) - black 11-hole beam (1:1 box, circled 11)
+
+**Touches:** The L-beam stands on one end of the 11-hole beam with the blue pin sticking out (picture).
+
+**Exact joins:** bm-bp-1.pin1 into bm-b11-1.hole1? (not shown in booklet); bm-lb-1.hole3 into bm-b11-1.hole2? (not shown in booklet)
+
+**Who does what:** bm-b11-1 carries bm-lb-1
+
+**After:** an 11-hole beam with an upright L-beam at one end; everything else: no change
+
+**Why:** Builds the first long section of the arm. An 11-hole beam is the main bar. *Next:* Step 63 puts an axle through it. *Pattern:* arm bar
+
+**Big picture:**
+- **bm-b11-1** (None): None Later: 42175-step-063 `CONNECT bm-ax5-1.axle? -> bm-b11-1.hole?`; 42175-step-063 `DOES bm-b11-1 CARRIES bm-ax5-1`; 42175-step-065 `CONNECT bm-ax5b-1.axle? -> bm-b11-1.hole?`; 42175-step-065 `DOES bm-b11-1 CARRIES bm-ax5b-1`; 42175-step-068 `CONNECT bm-bp4-1.pin1 -> bm-b11-1.hole?`; 42175-step-068 `CONNECT bm-bp4-2.pin1 -> bm-b11-1.hole?`; 42175-step-068 `DOES bm-b11-1 HOLDS bm-bp4-1`; 42175-step-070 `CONNECT bm-b11b-1.hole? -> bm-b11-1.hole?`; 42175-step-076 `CONNECT bm-l5-1.hole? -> bm-b11-1.hole?`; 42175-step-078 `CONNECT bm-bc-1.hole? -> bm-b11-1.hole?`.
+
+**Mechanisms:**
+- **bm-b11-1** builds on bm-bp-1 (42175-step-061), which rests on bm-lb-1 (42175-step-061); bm-lb-1 (42175-step-061), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
+
+**Review:** Holes not countable.
+
+## 42175-step-063 (page 62) - low - NEEDS REVIEW
+
+![42175-step-063](steps/main-063/picture.png)
+
+**New parts:** bm-ax5-1 (15462, reddish brown) - brown 5-long axle with stop (1:1 box, circled 5)
+
+**Touches:** The brown axle is pushed through the beam end (green arrow).
+
+**Exact joins:** bm-ax5-1.axle? into bm-b11-1.hole? (not shown in booklet)
+
+**Who does what:** bm-b11-1 carries bm-ax5-1
+
+**After:** a brown axle sticks out of the end of the beam; everything else: no change
+
+**Why:** Adds a shaft for the next link to turn on. A stop end keeps the axle from sliding out. *Next:* Step 64 hangs more on it. *Pattern:* shaft
+
+**Big picture:**
+- **bm-ax5-1** (None): None Later: 42175-step-064 `CONNECT bm-l2-1.hole? -> bm-ax5-1.axle?`; 42175-step-064 `DOES bm-l2-1 HOLDS bm-ax5-1`.
+
+**Mechanisms:**
+- **bm-ax5-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Which hole not shown.
+
+## 42175-step-064 (page 63) - low - NEEDS REVIEW
+
+![42175-step-064](steps/main-064/picture.png)
+
+**New parts:** bm-l2-1 (32526, black) - black 3 x 5 L-beam laid on the beam end; bm-bp2-1 (43093, blue) - blue pin pushed in beside the brown axle (green arrow)
+
+**Touches:** The L-beam is added at the end of the beam and a blue pin is pushed in through the beam (green arrow).
+
+**Exact joins:** bm-bp2-1.pin1 into bm-l2-1.hole? (not shown in booklet); bm-l2-1.hole? into bm-ax5-1.axle? (not shown in booklet)
+
+**Who does what:** bm-l2-1 holds bm-ax5-1
+
+**After:** a second L-beam lies on the arm start, pinned; everything else: no change
+
+**Why:** Doubles the beam at the arm's root so the joint is wide and strong. Two layers on one axle and pin hold well. *Next:* Step 65 adds another axle. *Pattern:* root doubling
+
+**Big picture:**
+- **bm-l2-1** (None): None
+- **bm-bp2-1** (None): None
+
+**Mechanisms:**
+- **bm-l2-1** builds on bm-ax5-1 (42175-step-063), which rests on bm-b11-1 (42175-step-062)
+
+**Review:** Which holes are used is not countable.
+
+## 42175-step-065 (page 63) - low - NEEDS REVIEW
+
+![42175-step-065](steps/main-065/picture.png)
+
+**New parts:** bm-ax5b-1 (15462, reddish brown) - second brown 5-long axle (1:1 box, circled 5); bm-cn-1 (6536, light bluish gray) - small grey axle and pin connector pressed on the other end of the axle (green arrow)
+
+**Touches:** The second brown axle goes through the layered root; a small grey connector sits on its tip (green arrow).
+
+**Exact joins:** bm-ax5b-1.axle? into bm-b11-1.hole? (not shown in booklet); bm-cn-1.axlehole1 into bm-ax5b-1.axle? (not shown in booklet)
+
+**Who does what:** bm-b11-1 carries bm-ax5b-1; bm-cn-1 holds bm-ax5b-1
+
+**After:** two brown axles pass through the arm root, one with a connector; everything else: no change
+
+**Why:** Adds the second pivot shaft of the root. Two parallel shafts make a double hinge. *Next:* Step 66 adds spacers and a yellow axle. *Pattern:* root hinge
+
+**Big picture:**
+- **bm-ax5b-1** (None): None
+- **bm-cn-1** (None): None
+
+**Mechanisms:**
+- **bm-ax5b-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Exact holes are not countable.
+
+## 42175-step-066 (page 63) - low - NEEDS REVIEW
+
+![42175-step-066](steps/main-066/picture.png)
+
+**New parts:** bm-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3); bm-bp3-1 (43093, blue) - blue pin (yellow box); bm-tb-1 (41677, black) - two small black thin beams (yellow box); bm-tb-2 (41677, black) - two small black thin beams (yellow box)
+
+**Touches:** Yellow box 1-2: a blue pin goes through the first thin beam, the second thin beam goes on, and a yellow axle locks them. The unit is placed onto the root (arrow).
+
+**Exact joins:** bm-bp3-1.axle1 into bm-tb-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); bm-yax-1.axle1 into bm-tb-2.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); bm-tb-1.axlehole2 into bm-yax-1.axle3? (not shown in booklet)
+
+**Who does what:** bm-tb-1 holds bm-bp3-1; bm-yax-1 holds bm-tb-2
+
+**After:** a small linking plate with a yellow axle and blue pin sits on the root; everything else: no change
+
+**Why:** Builds the plate that will carry the cylinder joint. Two thin beams tied by an axle make a light plate. *Next:* Later steps add the cylinder mount. *Pattern:* link plate
+
+**Big picture:**
+- **bm-yax-1** (None): None Later: 42175-step-067 `CONNECT bm-cn2-1.axlehole1 -> bm-yax-1.axle?`; 42175-step-067 `DOES bm-yax-1 HOLDS bm-cn2-1`.
+- **bm-bp3-1** (None): None
+- **bm-tb-1** (None): None
+- **bm-tb-2** (None): None
+
+**Review:** Which holes are used is estimated.
+
+## 42175-step-067 (page 64) - low - NEEDS REVIEW
+
+![42175-step-067](steps/main-067/picture.png)
+
+**New parts:** bm-cn2-1 (6536, light bluish gray) - small grey connector (icon)
+
+**Touches:** One more small grey connector is added at the yellow axle end (picture).
+
+**Exact joins:** bm-cn2-1.axlehole1 into bm-yax-1.axle? (not shown in booklet)
+
+**Who does what:** bm-yax-1 holds bm-cn2-1
+
+**After:** a grey connector is on the yellow axle; everything else: no change
+
+**Why:** Adds an attachment point for a later link. A connector turns an axle end into a pin point. *Next:* Steps 68-69 add pins and a beam. *Pattern:* connector
+
+**Big picture:**
+- **bm-cn2-1** (None): None
+
+**Mechanisms:**
+- **bm-cn2-1** builds on bm-yax-1 (42175-step-066), which rests on bm-tb-2 (42175-step-066), bm-tb-1 (42175-step-066)
+
+**Review:** Position is not countable.
+
+## 42175-step-068 (page 64) - low - NEEDS REVIEW
+
+![42175-step-068](steps/main-068/picture.png)
+
+**New parts:** bm-bp4-1 (43093, blue) - two blue pins pushed into the underside of the beam (picture); bm-bp4-2 (43093, blue) - two blue pins pushed into the underside of the beam (picture)
+
+**Touches:** Two blue pins stand out of the front end of the arm beam.
+
+**Exact joins:** bm-bp4-1.pin1 into bm-b11-1.hole? (not shown in booklet); bm-bp4-2.pin1 into bm-b11-1.hole? (not shown in booklet)
+
+**Who does what:** bm-b11-1 holds bm-bp4-1
+
+**After:** two blue pins stick out of the arm's far end; everything else: no change
+
+**Why:** Adds the posts for the next beam. Pins make the connection points. *Next:* Step 69 slides a beam over them. *Pattern:* posts
+
+**Big picture:**
+- **bm-bp4-1** (None): None Later: 42175-step-069 `CONNECT bm-bp4-1.pin1 -> bm-b5-1.hole1?`; 42175-step-069 `DOES bm-b5-1 HOLDS bm-bp4-1`.
+- **bm-bp4-2** (None): None Later: 42175-step-069 `CONNECT bm-bp4-2.pin1 -> bm-b5-1.hole2?`.
+
+**Mechanisms:**
+- **bm-bp4-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+- **bm-bp4-2** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Which holes are used is not countable.
+
+## 42175-step-069 (page 64) - low - NEEDS REVIEW
+
+![42175-step-069](steps/main-069/picture.png)
+
+**New parts:** bm-b5-1 (32316, black) - black 5-hole beam (1:1 box, circled 5)
+
+**Touches:** The 5-hole beam is pressed onto the two blue pins.
+
+**Exact joins:** bm-bp4-1.pin1 into bm-b5-1.hole1? (not shown in booklet); bm-bp4-2.pin1 into bm-b5-1.hole2? (not shown in booklet)
+
+**Who does what:** bm-b5-1 holds bm-bp4-1
+
+**After:** a 5-hole beam extends the arm; everything else: no change
+
+**Why:** Extends the arm's length. A beam on two pins is stiff. *Next:* Step 70 adds a long beam on top. *Pattern:* extension
+
+**Big picture:**
+- **bm-b5-1** (None): None Later: 42175-step-070 `DOES bm-b11b-1 SUPPORTS bm-b5-1`; 42175-step-072 `CONNECT bm-l4-1.hole? -> bm-b5-1.hole?`.
+
+**Mechanisms:**
+- **bm-b5-1** builds on bm-bp4-1 (42175-step-068), which rests on bm-b11-1 (42175-step-062); bm-bp4-2 (42175-step-068), which rests on bm-b11-1 (42175-step-062)
+
+**Review:** Holes used not countable.
+
+## 42175-step-070 (page 65) - low - NEEDS REVIEW
+
+![42175-step-070](steps/main-070/picture.png)
+
+**New parts:** bm-b11b-1 (32525, black) - second black 11-hole beam (1:1 box, circled 11); bm-gp2-1 (4274, light bluish gray) - small grey pin pushed into the arm end (green arrow)
+
+**Touches:** A second 11-hole beam lies along the first; the grey pin is pushed in at the root end (arrow).
+
+**Exact joins:** bm-gp2-1.pin1 into bm-b11b-1.hole? (not shown in booklet); bm-b11b-1.hole? into bm-b11-1.hole? (not shown in booklet)
+
+**Who does what:** bm-b11b-1 supports bm-b5-1; bm-b11b-1 holds bm-gp2-1
+
+**After:** two long beams run side by side with a grey pin at the root; everything else: no change
+
+**Why:** Builds the arm's double beam. Two parallel beams are much stiffer than one. *Next:* Step 71 adds a corner piece. *Pattern:* double beam
+
+**Big picture:**
+- **bm-b11b-1** (None): None Later: 42175-step-071 `DOES bm-l3-1 SUPPORTS bm-b11b-1`; 42175-step-074 `DOES bm-b15-1 SUPPORTS bm-b11b-1`.
+- **bm-gp2-1** (None): None Later: 42175-step-071 `CONNECT bm-l3-1.hole? -> bm-gp2-1.pin1?`.
+
+**Mechanisms:**
+- **bm-b11b-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Holes not countable.
+
+## 42175-step-071 (page 65) - low - NEEDS REVIEW
+
+![42175-step-071](steps/main-071/picture.png)
+
+**New parts:** bm-l3-1 (32140, black) - small black L-beam at the root end
+
+**Touches:** An L-beam is placed at the root end of the double beam (picture).
+
+**Exact joins:** bm-l3-1.hole? into bm-gp2-1.pin1? (not shown in booklet)
+
+**Who does what:** bm-l3-1 supports bm-b11b-1
+
+**After:** the root end has a black L-beam corner; everything else: no change
+
+**Why:** Closes the corner of the root. An L-beam ties the two beams across the end. *Next:* Step 72 adds a bigger L-beam to the far end. *Pattern:* corner
+
+**Big picture:**
+- **bm-l3-1** (None): None
+
+**Mechanisms:**
+- **bm-l3-1** builds on bm-gp2-1 (42175-step-070), which rests on bm-b11b-1 (42175-step-070)
+
+**Review:** Holes not countable.
+
+## 42175-step-072 (page 65) - low - NEEDS REVIEW
+
+![42175-step-072](steps/main-072/picture.png)
+
+**New parts:** bm-l4-1 (32526, black) - black 3 x 5 L-beam with three blue pins (yellow box); bm-bp5-1 (43093, blue) - three blue pins in the L-beam's short side; bm-bp5-2 (43093, blue) - three blue pins in the L-beam's short side; bm-bp5-3 (43093, blue) - three blue pins in the L-beam's short side
+
+**Touches:** Yellow box: three blue pins stand in an L-beam. It is placed on the far end of the arm (arrow).
+
+**Exact joins:** bm-bp5-1.pin1 into bm-l4-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); bm-bp5-2.pin1 into bm-l4-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); bm-bp5-3.pin1 into bm-l4-1.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture); bm-l4-1.hole? into bm-b5-1.hole? (not shown in booklet)
+
+**Who does what:** bm-l4-1 carries bm-bp5-1
+
+**After:** the arm's far end has a black L-beam with three upright blue pins; everything else: no change
+
+**Why:** Makes the far end ready for the next piece. An L-beam with pins gives several fixing points. *Next:* Steps 73-74 add parts on this end. *Pattern:* far end posts
+
+**Big picture:**
+- **bm-l4-1** (None): None
+- **bm-bp5-1** (None): None Later: 42175-step-073 `CONNECT bm-ac-1.axlehole1 -> bm-bp5-1.axle?`; 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-bp5-1.pin1?`.
+- **bm-bp5-2** (None): None
+- **bm-bp5-3** (None): None
+
+**Mechanisms:**
+- **bm-l4-1** builds on bm-b5-1 (42175-step-069), which rests on bm-bp4-1 (42175-step-068), bm-bp4-2 (42175-step-068)
+
+**Review:** Holes not countable.
+
+## 42175-step-073 (page 66) - low - NEEDS REVIEW
+
+![42175-step-073](steps/main-073/picture.png)
+
+**New parts:** bm-cap-1 (98138, trans-clear) - round 1 x 1 cap (yellow box sub-step 2); bm-gp3-1 (4274, light bluish gray) - small grey pin (sub-step 1); bm-ac-1 (32013, black) - black angled connector (sub-step 1)
+
+**Touches:** Yellow box: the grey pin goes in the black connector and the cap goes on top. The piece is then fitted to the far end of the arm (arrows).
+
+**Exact joins:** bm-gp3-1.pin1 into bm-ac-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); bm-cap-1.stud? into bm-gp3-1.barhole1? (not shown in booklet); bm-ac-1.axlehole1 into bm-bp5-1.axle? (not shown in booklet)
+
+**Who does what:** bm-ac-1 holds bm-gp3-1
+
+**After:** a capped pin connector sits at the arm's far end; everything else: no change
+
+**Why:** Adds a smooth post for a link. A capped pin stops a link from falling off. *Next:* Step 74 lays the 15-hole beam. *Pattern:* end post
+
+**Big picture:**
+- **bm-cap-1** (None): None
+- **bm-gp3-1** (None): None
+- **bm-ac-1** (None): None Later: 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-ac-1.hole?`.
+
+**Mechanisms:**
+- **bm-ac-1** builds on bm-bp5-1 (42175-step-072), which rests on bm-l4-1 (42175-step-072)
+
+**Review:** The cap's colour looks white; trans-clear read.
+
+## 42175-step-074 (page 66) - low - NEEDS REVIEW
+
+![42175-step-074](steps/main-074/picture.png)
+
+**New parts:** bm-b15-1 (32278, black) - black 15-hole beam (1:1 box, circled 15)
+
+**Touches:** The 15-hole beam is laid over the arm and its pins (picture shows it floating above).
+
+**Exact joins:** bm-b15-1.hole? into bm-bp5-1.pin1? (not shown in booklet); bm-b15-1.hole? into bm-ac-1.hole? (not shown in booklet)
+
+**Who does what:** bm-b15-1 supports bm-b11b-1
+
+**After:** a long 15-hole beam spans the arm; everything else: no change
+
+**Why:** Makes the arm long enough to reach. A 15-hole beam is the longest we have; it tops the arm. *Next:* Step 75 adds a diagonal brace. *Pattern:* long beam
+
+**Big picture:**
+- **bm-b15-1** (None): None Later: 42175-step-075 `CONNECT bm-gb7-1.hole? -> bm-b15-1.hole?`; 42175-step-075 `DOES bm-gb7-1 SUPPORTS bm-b15-1`.
+
+**Mechanisms:**
+- **bm-b15-1** builds on bm-bp5-1 (42175-step-072), which rests on bm-l4-1 (42175-step-072), bm-ac-1 (42175-step-073); bm-ac-1 (42175-step-073), which rests on bm-gp3-1 (42175-step-073), bm-bp5-1 (42175-step-072)
+
+**Review:** Holes not countable.
+
+## 42175-step-075 (page 67) - low - NEEDS REVIEW
+
+![42175-step-075](steps/main-075/picture.png)
+
+**New parts:** bm-gb7-1 (32524, dark bluish gray) - grey 7-hole beam with blue pins (1:1 box, circled 7); bm-bp6-1 (43093, blue) - blue pin
+
+**Touches:** Yellow box: a grey 7-hole beam with two pins. It is placed diagonally on the arm (arrow).
+
+**Exact joins:** bm-bp6-1.pin1 into bm-gb7-1.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); bm-gb7-1.hole? into bm-b15-1.hole? (not shown in booklet)
+
+**Who does what:** bm-gb7-1 supports bm-b15-1
+
+**After:** a grey diagonal brace sits on the arm; everything else: no change
+
+**Why:** Adds the diagonal brace for the middle joint. A diagonal beam makes a triangle that resists bending. *Next:* Step 76 adds an L-beam. *Pattern:* brace
+
+**Big picture:**
+- **bm-gb7-1** (None): None Later: 42175-step-076 `DOES bm-l5-1 SUPPORTS bm-gb7-1`; 42175-step-078 `CONNECT bm-bp7-1.pin1 -> bm-gb7-1.hole?`.
+- **bm-bp6-1** (None): None
+
+**Mechanisms:**
+- **bm-gb7-1** builds on bm-b15-1 (42175-step-074), which rests on bm-bp5-1 (42175-step-072), bm-ac-1 (42175-step-073)
+
+**Review:** Only one blue pin is in the box; the second pin in the yellow box belongs to the model.
+
+## 42175-step-076 (page 67) - low - NEEDS REVIEW
+
+![42175-step-076](steps/main-076/picture.png)
+
+**New parts:** bm-l5-1 (32526, black) - black 3 x 5 L-beam hanging under the arm
+
+**Touches:** A black L-beam is placed at the lower side (picture).
+
+**Exact joins:** bm-l5-1.hole? into bm-b11-1.hole? (not shown in booklet)
+
+**Who does what:** bm-l5-1 supports bm-gb7-1
+
+**After:** a black L-beam hangs below the arm; everything else: no change
+
+**Why:** Gives the arm a bracket underneath. An L-beam bridges both layers. *Next:* Step 77 adds the cap piece. *Pattern:* bracket
+
+**Big picture:**
+- **bm-l5-1** (None): None Later: 42175-step-077 `CONNECT bm-ac2-1.axlehole1 -> bm-l5-1.hole?`.
+
+**Mechanisms:**
+- **bm-l5-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Holes not countable.
+
+## 42175-step-077 (page 68) - low - NEEDS REVIEW
+
+![42175-step-077](steps/main-077/picture.png)
+
+**New parts:** bm-cap2-1 (98138, trans-clear) - round cap; bm-gp4-1 (4274, light bluish gray) - small grey pin; bm-ac2-1 (32013, black) - black angled connector
+
+**Touches:** Yellow box: same capped pin connector as step 73; placed on the underside (arrow).
+
+**Exact joins:** bm-gp4-1.pin1 into bm-ac2-1.hole1 (0.2 hole deep, turns freely, estimated from the picture); bm-cap2-1.stud? into bm-gp4-1.barhole1? (not shown in booklet); bm-ac2-1.axlehole1 into bm-l5-1.hole? (not shown in booklet)
+
+**Who does what:** bm-ac2-1 holds bm-gp4-1
+
+**After:** a second capped pin connector hangs under the arm; everything else: no change
+
+**Why:** Adds a smooth post below. Same piece as step 73. *Next:* Step 78 adds a connector and pin on top. *Pattern:* end post
+
+**Big picture:**
+- **bm-cap2-1** (None): None
+- **bm-gp4-1** (None): None
+- **bm-ac2-1** (None): None
+
+**Mechanisms:**
+- **bm-ac2-1** builds on bm-l5-1 (42175-step-076), which rests on bm-b11-1 (42175-step-062)
+
+**Review:** Same icon as step 73.
+
+## 42175-step-078 (page 68) - low - NEEDS REVIEW
+
+![42175-step-078](steps/main-078/picture.png)
+
+**New parts:** bm-bp7-1 (42924, blue) - long blue pin (yellow box); bm-ap2-1 (18651, black) - black axle pin (yellow box); bm-bc-1 (42003, black) - black connector with two pin holes and a cross hole
+
+**Touches:** Yellow box: an axle pin goes through the black connector; a long blue pin is pushed up from below (arrow). The connector is placed on the arm's root end.
+
+**Exact joins:** bm-ap2-1.axle1 into bm-bc-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); bm-bp7-1.pin1 into bm-gb7-1.hole? (not shown in booklet); bm-bc-1.hole? into bm-b11-1.hole? (not shown in booklet)
+
+**Who does what:** bm-bc-1 holds bm-ap2-1; bm-bp7-1 holds bm-bc-1
+
+**After:** a black connector with an axle pin sits at the arm root; everything else: no change
+
+**Why:** Adds a joint for the cylinder that lifts the arm. A connector with a cross hole turns an axle pin into a hinge. *Next:* Steps 79 onward continue the arm. *Pattern:* cylinder joint
+
+**Big picture:**
+- **bm-bp7-1** (None): None
+- **bm-ap2-1** (None): None
+- **bm-bc-1** (None): None
+
+**Mechanisms:**
+- **bm-bp7-1** builds on bm-gb7-1 (42175-step-075), which rests on bm-bp6-1 (42175-step-075), bm-b15-1 (42175-step-074)
+- **bm-bc-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
+
+**Review:** Which holes are used is not countable.

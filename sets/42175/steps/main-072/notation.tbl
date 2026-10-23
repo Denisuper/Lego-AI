@@ -1,0 +1,11 @@
+STEP 72
+ADD bm-l4-1 32526 black
+ADD bm-bp5-1 43093 blue
+ADD bm-bp5-2 43093 blue
+ADD bm-bp5-3 43093 blue
+CONNECT bm-bp5-1.pin1 -> bm-l4-1.hole1~ STIFF
+CONNECT bm-bp5-2.pin1 -> bm-l4-1.hole2~ STIFF
+CONNECT bm-bp5-3.pin1 -> bm-l4-1.hole3~ STIFF
+CONNECT bm-l4-1.hole? -> bm-b5-1.hole?
+DOES bm-l4-1 CARRIES bm-bp5-1
+PATTERN beam_with_posts

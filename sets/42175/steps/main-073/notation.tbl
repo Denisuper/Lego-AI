@@ -1,0 +1,9 @@
+STEP 73
+ADD bm-cap-1 98138 clear
+ADD bm-gp3-1 4274 lightgray
+ADD bm-ac-1 32013 black
+CONNECT bm-gp3-1.pin1 -> bm-ac-1.hole1~ TURNS
+CONNECT bm-cap-1.stud? -> bm-gp3-1.barhole1?
+CONNECT bm-ac-1.axlehole1 -> bm-bp5-1.axle?
+DOES bm-ac-1 HOLDS bm-gp3-1
+PATTERN end_fitting

@@ -1,0 +1,11 @@
+STEP 66
+ADD bm-yax-1 4519 yellow
+ADD bm-bp3-1 43093 blue
+ADD bm-tb-1 41677 black
+ADD bm-tb-2 41677 black
+CONNECT bm-bp3-1.axle1 -> bm-tb-1.axlehole1~ LOCKED
+CONNECT bm-yax-1.axle1 -> bm-tb-2.axlehole1~ LOCKED
+CONNECT bm-tb-1.axlehole2 -> bm-yax-1.axle3?
+DOES bm-tb-1 HOLDS bm-bp3-1
+DOES bm-yax-1 HOLDS bm-tb-2
+PATTERN link_plate

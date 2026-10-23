@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-067",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 64,
+  "step": 67,
+  "input": {
+    "picture": "steps/main-067/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-cn2-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Link plate on the arm root (step 66)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-cn2-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey connector (icon)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "One more small grey connector is added at the yellow axle end (picture)."
+    ],
+    "who_does_what_to_which": [
+      "bm-yax-1 holds bm-cn2-1"
+    ],
+    "where_everything_is_after": [
+      "a grey connector is on the yellow axle",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds an attachment point for a later link.",
+      "why_these_parts": "A connector turns an axle end into a pin point.",
+      "sets_up_for_later": "Steps 68-69 add pins and a beam.",
+      "design_pattern": "connector"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Position is not countable."
+}

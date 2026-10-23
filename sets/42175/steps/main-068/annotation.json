@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-068",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 64,
+  "step": 68,
+  "input": {
+    "picture": "steps/main-068/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-bp4-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "bm-bp4-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Link plate with connector (step 67)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-bp4-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed into the underside of the beam (picture)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-bp4-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed into the underside of the beam (picture)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two blue pins stand out of the front end of the arm beam."
+    ],
+    "who_does_what_to_which": [
+      "bm-b11-1 holds bm-bp4-1"
+    ],
+    "where_everything_is_after": [
+      "two blue pins stick out of the arm's far end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the posts for the next beam.",
+      "why_these_parts": "Pins make the connection points.",
+      "sets_up_for_later": "Step 69 slides a beam over them.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which holes are used is not countable."
+}

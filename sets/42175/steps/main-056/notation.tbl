@@ -1,0 +1,5 @@
+STEP 56
+ADD fs-seat-1 24116 darkgray
+CONNECT fs-seat-1.hole1 -> fs-rax-1.axle2?
+DOES fs-rax-1 HOLDS fs-seat-1
+PATTERN panel_on_axle

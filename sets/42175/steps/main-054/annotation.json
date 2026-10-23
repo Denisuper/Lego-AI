@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-054",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 53,
+  "step": 54,
+  "input": {
+    "picture": "steps/main-054/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-bp4-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "fs-bp4-2",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Brackets and tie beam at the side (steps 51-53)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-bp4-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed into the model beside the pivot stack",
+        "rotation": "fixed"
+      },
+      {
+        "name": "fs-bp4-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "likely",
+        "position": "two blue pins pushed into the model beside the pivot stack",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Two blue pins are pushed into the side beam next to the pivot stack (pictured, no arrows)."
+    ],
+    "who_does_what_to_which": [
+      "fs-b5-1 holds fs-bp4-1"
+    ],
+    "where_everything_is_after": [
+      "two blue pins stand beside the pivot stack",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds posts for the beam fitted in step 55.",
+      "why_these_parts": "Pins give fixing points at no cost in space.",
+      "sets_up_for_later": "Step 55 slides a beam over them.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The pin type is read from the icon; where they go is not countable."
+}

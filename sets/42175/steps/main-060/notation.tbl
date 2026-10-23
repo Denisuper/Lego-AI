@@ -1,0 +1,19 @@
+STEP 60
+ADD hs-hose-1 32580 black
+ADD hs-rax-1 32062 red
+ADD hs-rax-2 32062 red
+ADD hs-conn-1 99021 darkgray
+ADD hs-conn-2 99021 darkgray
+ADD hs-bp-1 43093 blue
+ADD hs-tile-1 3069b black
+ADD hs-plate-1 18677 black
+CONNECT hs-rax-1.axle1 -> hs-hose-1.axlehole?
+CONNECT hs-rax-2.axle1 -> hs-hose-1.axlehole?
+CONNECT hs-conn-1.axle? -> hs-rax-1.axle2?
+CONNECT hs-bp-1.pin1 -> hs-conn-1.hole?
+CONNECT hs-conn-2.hole? -> hs-hose-1.axlehole?
+CONNECT hs-tile-1.stud? -> hs-plate-1.stud?
+DOES hs-hose-1 CARRIES hs-rax-1
+DOES hs-conn-1 HOLDS hs-bp-1
+DOES hs-plate-1 SUPPORTS hs-tile-1
+PATTERN hose_link

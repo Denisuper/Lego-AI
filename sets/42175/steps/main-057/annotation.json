@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-057",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 56,
+  "step": 57,
+  "input": {
+    "picture": "steps/main-057/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-sb-1",
+        "part_number": "43857",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Seat on a red axle (step 56)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-sb-1",
+        "part_number": "43857",
+        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "grey 1 x 2 thick beam added at the seat's lower end (yellow box)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The small grey beam is pressed onto the seat's foot (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "fs-sb-1 holds fs-seat-1"
+    ],
+    "where_everything_is_after": [
+      "the seat is held at its foot by a grey beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Holds the seat's foot so it doesn't pop off.",
+      "why_these_parts": "A beam clamps the foot.",
+      "sets_up_for_later": "Step 58 adds a shaft through it.",
+      "design_pattern": "seat lock"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Part read from the icon."
+}

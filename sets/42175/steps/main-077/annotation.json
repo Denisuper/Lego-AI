@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-077",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 68,
+  "step": 77,
+  "input": {
+    "picture": "steps/main-077/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-cap2-1",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "bm-gp4-1",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "bm-ac2-1",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with underside bracket (step 76)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-cap2-1",
+        "part_number": "98138",
+        "catalog_name": "Tile Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "likely",
+        "position": "round cap",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-gp4-1",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey pin",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-ac2-1",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black angled connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: same capped pin connector as step 73; placed on the underside (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-ac2-1 holds bm-gp4-1"
+    ],
+    "where_everything_is_after": [
+      "a second capped pin connector hangs under the arm",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a smooth post below.",
+      "why_these_parts": "Same piece as step 73.",
+      "sets_up_for_later": "Step 78 adds a connector and pin on top.",
+      "design_pattern": "end post"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Same icon as step 73."
+}

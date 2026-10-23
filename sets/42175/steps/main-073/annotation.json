@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-073",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 66,
+  "step": 73,
+  "input": {
+    "picture": "steps/main-073/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-cap-1",
+        "part_number": "98138",
+        "count": 1
+      },
+      {
+        "name": "bm-gp3-1",
+        "part_number": "4274",
+        "count": 1
+      },
+      {
+        "name": "bm-ac-1",
+        "part_number": "32013",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm with far-end posts (step 72)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-cap-1",
+        "part_number": "98138",
+        "catalog_name": "Tile Round 1 x 1",
+        "color": "Trans-Clear",
+        "part_match": "likely",
+        "position": "round 1 x 1 cap (yellow box sub-step 2)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-gp3-1",
+        "part_number": "4274",
+        "catalog_name": "Technic Pin 1/2",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey pin (sub-step 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-ac-1",
+        "part_number": "32013",
+        "catalog_name": "Technic Axle and Pin Connector Angled #1",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black angled connector (sub-step 1)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box: the grey pin goes in the black connector and the cap goes on top. The piece is then fitted to the far end of the arm (arrows)."
+    ],
+    "who_does_what_to_which": [
+      "bm-ac-1 holds bm-gp3-1"
+    ],
+    "where_everything_is_after": [
+      "a capped pin connector sits at the arm's far end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a smooth post for a link.",
+      "why_these_parts": "A capped pin stops a link from falling off.",
+      "sets_up_for_later": "Step 74 lays the 15-hole beam.",
+      "design_pattern": "end post"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "The cap's colour looks white; trans-clear read."
+}

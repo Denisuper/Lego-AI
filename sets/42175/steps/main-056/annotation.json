@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-056",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 55,
+  "step": 56,
+  "input": {
+    "picture": "steps/main-056/picture.png",
+    "parts_box": [
+      {
+        "name": "fs-seat-1",
+        "part_number": "24116",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam with a red axle standing up (step 55)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "fs-seat-1",
+        "part_number": "24116",
+        "catalog_name": "Technic Panel Curved and Bent 6 x 3",
+        "color": "Dark Bluish Gray",
+        "part_match": "likely",
+        "position": "dark grey curved panel that works as the seat back/seat",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The curved panel is pushed onto the red axle so it stands as a seat."
+    ],
+    "who_does_what_to_which": [
+      "fs-rax-1 holds fs-seat-1"
+    ],
+    "where_everything_is_after": [
+      "a curved dark grey seat stands on the red axle",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the operator's seat of the excavator.",
+      "why_these_parts": "A bent panel has the shape of a seat.",
+      "sets_up_for_later": "Step 57 locks it with a small beam.",
+      "design_pattern": "seat"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Which panel hole is on the axle is not countable."
+}

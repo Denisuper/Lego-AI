@@ -1,0 +1,64 @@
+{
+  "example_id": "42175-step-065",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 63,
+  "step": 65,
+  "input": {
+    "picture": "steps/main-065/picture.png",
+    "parts_box": [
+      {
+        "name": "bm-ax5b-1",
+        "part_number": "15462",
+        "count": 1
+      },
+      {
+        "name": "bm-cn-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Arm root with two layers (step 64)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "bm-ax5b-1",
+        "part_number": "15462",
+        "catalog_name": "Technic Axle 5 with Stop",
+        "color": "Reddish Brown",
+        "part_match": "confirmed",
+        "position": "second brown 5-long axle (1:1 box, circled 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "bm-cn-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Light Bluish Gray",
+        "part_match": "likely",
+        "position": "small grey axle and pin connector pressed on the other end of the axle (green arrow)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The second brown axle goes through the layered root; a small grey connector sits on its tip (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "bm-b11-1 carries bm-ax5b-1",
+      "bm-cn-1 holds bm-ax5b-1"
+    ],
+    "where_everything_is_after": [
+      "two brown axles pass through the arm root, one with a connector",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second pivot shaft of the root.",
+      "why_these_parts": "Two parallel shafts make a double hinge.",
+      "sets_up_for_later": "Step 66 adds spacers and a yellow axle.",
+      "design_pattern": "root hinge"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Exact holes are not countable."
+}
