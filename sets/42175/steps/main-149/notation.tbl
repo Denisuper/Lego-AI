@@ -1,0 +1,11 @@
+STEP 149
+ADD rs-bp2-1 43093 blue
+ADD rs-dp2-1 61332 black
+ADD rs-tb-1 11478 black
+ADD rs-tb-2 11478 black
+CONNECT rs-bp2-1.axle1 -> rs-tb-1.axlehole1~ LOCKED
+CONNECT rs-bp2-1.pin1 -> rs-tb-2.hole1~ STIFF
+CONNECT rs-dp2-1.pin1 -> rs-tb-1.hole3~ STIFF
+DOES rs-tb-1 CARRIES rs-bp2-1
+DOES rs-tb-2 SUPPORTS rs-tb-1
+PATTERN thin_beam_pair

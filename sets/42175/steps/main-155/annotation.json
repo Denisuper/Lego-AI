@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-155",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 133,
+  "step": 155,
+  "input": {
+    "picture": "steps/main-155/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-yc-1",
+        "part_number": "6536",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Axle with spacers (step 154)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-yc-1",
+        "part_number": "6536",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow perpendicular axle and pin connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The yellow connector is pushed onto the axle (picture)."
+    ],
+    "who_does_what_to_which": [
+      "cn-yc-1 carries cn-tb2-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow connector sits on the axle",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the yellow end of the cab corner.",
+      "why_these_parts": "A connector with a pin hole gives a pivot point.",
+      "sets_up_for_later": "Step 156 adds beams.",
+      "design_pattern": "yellow end"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Colour is clear; position on the axle is estimated."
+}

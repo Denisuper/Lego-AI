@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-152",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 133,
+  "step": 152,
+  "input": {
+    "picture": "steps/main-152/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-ax6-1",
+        "part_number": "3706",
+        "count": 1
+      },
+      {
+        "name": "cn-conn-1",
+        "part_number": "42003",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the cab corner pivot; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-ax6-1",
+        "part_number": "3706",
+        "catalog_name": "Technic Axle 6",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 6-long axle (1:1 box, circled 6)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cn-conn-1",
+        "part_number": "42003",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black connector with pin holes",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 6-long axle is pushed into the cross hole of the black connector."
+    ],
+    "who_does_what_to_which": [
+      "cn-conn-1 carries cn-ax6-1"
+    ],
+    "where_everything_is_after": [
+      "a black connector has a 6-long axle sticking out",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the corner pivot.",
+      "why_these_parts": "A long axle in a connector is the pivot shaft.",
+      "sets_up_for_later": "Steps 153-156 slide beams on it.",
+      "design_pattern": "pivot shaft"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Connector read from the icon."
+}

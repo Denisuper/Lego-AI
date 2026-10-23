@@ -1,0 +1,9 @@
+STEP 146
+ADD rs-dp-1 61332 black
+ADD rs-dp-2 61332 black
+ADD rs-dp-3 61332 black
+CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF
+CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF
+CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF
+DOES rs-b11-1 CARRIES rs-dp-1
+PATTERN posts

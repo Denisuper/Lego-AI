@@ -1,0 +1,5 @@
+STEP 150
+CONNECT rs-bp-3.pin1 -> up-frame-2.hole?
+CONNECT rs-b11-1.hole? -> up-frame-2.hole?
+DOES up-frame-2 HOLDS rs-b11-1
+PATTERN attach_side_beam

@@ -1,6 +1,6 @@
 qty,part_number,colour,name
 6,11214,Red,Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle
-4,11478,Black,Technic Beam 1 x 5 Thin with Axle Holes on Ends
+6,11478,Black,Technic Beam 1 x 5 Thin with Axle Holes on Ends
 1,11946,Black,"Technic Panel Fairing #21 5L Small Smooth, Side B"
 1,11947,Black,"Technic Panel Fairing #22 5L Small Smooth, Side A"
 3,15458,Black,Technic Panel 3 x 11 x 1
@@ -14,7 +14,9 @@ qty,part_number,colour,name
 1,22961,Light Bluish Gray,Technic Pin Connector Hub with 1 Axle
 2,2387,Black,"Technic Panel Fairing #7 3L Very Small Smooth, Side A"
 2,2389,Black,"Technic Panel Fairing #8 3L Very Small Smooth, Side B"
+1,2389,Yellow,"Technic Panel Fairing #8 3L Very Small Smooth, Side B"
 1,2395,Black,Technic Panel Fairing #9 Medium Triangle Smooth
+1,2403,Black,Technic Panel Fairing #10 Medium Triangle Smooth
 1,24116,Dark Bluish Gray,Technic Panel Curved and Bent 6 x 3
 2,24120,Dark Bluish Gray,Technic Digger Bucket 4 x 7
 2,2476a,Light Bluish Gray,Plate Special 2 x 2 with Pin on Bottom
@@ -23,28 +25,28 @@ qty,part_number,colour,name
 4,32002,Tan,Technic Pin 3/4
 3,32013,Black,Technic Axle and Pin Connector Angled #1
 2,32056,Dark Bluish Gray,Technic Beam 3 x 3 L-Shape Thin
-6,32062,Red,Technic Axle 2 Notched
+9,32062,Red,Technic Axle 2 Notched
 7,32073,Light Bluish Gray,Technic Axle 5
-3,32140,Black,Technic Beam 2 x 4 L-Shape Thick
+6,32140,Black,Technic Beam 2 x 4 L-Shape Thick
 2,32140,Yellow,Technic Beam 2 x 4 L-Shape Thick
 9,32278,Black,Technic Beam 1 x 15 Thick
 2,32278,Dark Bluish Gray,Technic Beam 1 x 15 Thick
-12,32316,Black,Technic Beam 1 x 5 Thick
+14,32316,Black,Technic Beam 1 x 5 Thick
 4,32316,Light Bluish Gray,Technic Beam 1 x 5 Thick
 2,32316,Yellow,Technic Beam 1 x 5 Thick
 1,32449,Black,Technic Beam 1 x 4 Thin
 1,32449,Dark Bluish Gray,Technic Beam 1 x 4 Thin
-3,32523,Black,Technic Beam 1 x 3 Thick
+4,32523,Black,Technic Beam 1 x 3 Thick
 1,32523,Yellow,Technic Beam 1 x 3 Thick
-12,32524,Black,Technic Beam 1 x 7 Thick
+13,32524,Black,Technic Beam 1 x 7 Thick
 1,32524,Dark Bluish Gray,Technic Beam 1 x 7 Thick
 12,32525,Black,Technic Beam 1 x 11 Thick
-10,32526,Black,Technic Beam 3 x 5 L-Shape Thick
+11,32526,Black,Technic Beam 3 x 5 L-Shape Thick
 5,32526,Dark Bluish Gray,Technic Beam 3 x 5 L-Shape Thick
 1,32580,Black,Axle Hose Soft 7L
 2,3484,Black,Bar 1L with Clip [Cut Edges and One Side Hole] [Full Clip]
 1,3705,Red,Technic Axle 4
-5,3706,Black,Technic Axle 6
+6,3706,Black,Technic Axle 6
 4,3713,Light Bluish Gray,Technic Bush
 1,3713,Red,Technic Bush
 1,3737,Red,Technic Axle 10
@@ -54,19 +56,19 @@ qty,part_number,colour,name
 1,40490,Black,Technic Beam 1 x 9 Thick
 6,40490,Dark Bluish Gray,Technic Beam 1 x 9 Thick
 2,41239,Dark Bluish Gray,Technic Beam 1 x 13 Thick
-19,41677,Black,Technic Beam 1 x 2 Thin
+25,41677,Black,Technic Beam 1 x 2 Thin
 3,41677,Dark Bluish Gray,Technic Beam 1 x 2 Thin
 2,41677,Light Bluish Gray,Technic Beam 1 x 2 Thin
 6,41677,Yellow,Technic Beam 1 x 2 Thin
-6,42003,Black,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes
+7,42003,Black,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes
 4,42610,Black,Wheel 11 x 8 with Center Groove
 35,4274,Light Bluish Gray,Technic Pin 1/2
 20,42924,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot"
-66,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
+73,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
 4,43857,Dark Bluish Gray,Technic Beam 1 x 2 Thick
 2,44874,Black,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
 2,44874,Light Bluish Gray,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
-5,4519,Yellow,Technic Axle 3
+7,4519,Yellow,Technic Axle 3
 1,4697b,Light Bluish Gray,Pneumatic T-Piece (T Bar) [New Style]
 4,50951,Black,Tyre 14 x 6 Solid Smooth
 1,5102c04,Blue,"Hose, Pneumatic 4mm D. 4L / 3.2cm"
@@ -82,18 +84,21 @@ qty,part_number,colour,name
 1,59443,Black,Technic Axle Connector Smooth [with x Hole + Orientation]
 6,60483,Black,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
 1,60483,Dark Bluish Gray,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
-19,61332,Black,Technic Pin with Friction Ridges Lengthwise with No Center Slots
+25,61332,Black,Technic Pin with Friction Ridges Lengthwise with No Center Slots
 3,64179,Black,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
 29,65304,Black,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
 13,65304,Light Bluish Gray,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
 2,6536,Black,Technic Axle and Pin Connector Perpendicular
 2,6536,Light Bluish Gray,Technic Axle and Pin Connector Perpendicular
+3,6536,Yellow,Technic Axle and Pin Connector Perpendicular
 1,6632,Black,Technic Beam 1 x 3 Thin
 2,6636,Black,Tile 1 x 6 with Groove
+1,69819,Black,Technic Axle and Pin Connector Perpendicular Double Split [Reinforced]
 1,71682,Black,Technic Panel Fairing 2 x 3 x 1
 1,71709,Black,Technic Panel 3 x 7 x 1
+1,71709,Yellow,Technic Panel 3 x 7 x 1
 4,71710,Black,Technic Beam 1 x 15 Thick with Alternating Holes
-1,73507,Black,Technic Beam 1 x 11 Thick with Alternating Holes
+2,73507,Black,Technic Beam 1 x 11 Thick with Alternating Holes
 3,77765,Light Bluish Gray,"Technic Pin Long 3l, No Friction Ridges, with Stop and Hole"
 2,87083,Dark Bluish Gray,Technic Axle 4 with Stop
 60,88323,Black,"Technic Link Tread Wide with Two Pin Holes, Reinforced"

@@ -1,0 +1,63 @@
+{
+  "example_id": "42175-step-156",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 134,
+  "step": 156,
+  "input": {
+    "picture": "steps/main-156/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-tb3-1",
+        "part_number": "41677",
+        "count": 1
+      },
+      {
+        "name": "cn-tb3-2",
+        "part_number": "41677",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Axle with yellow connector (step 155)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-tb3-1",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin beams (green arrow shows the first)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "cn-tb3-2",
+        "part_number": "41677",
+        "catalog_name": "Technic Beam 1 x 2 Thin",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "two black thin beams (green arrow shows the first)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A black thin beam is slid onto the axle's free end (green arrow)."
+    ],
+    "who_does_what_to_which": [
+      "cn-tb3-1 holds cn-ax6-1"
+    ],
+    "where_everything_is_after": [
+      "the free end of the axle has a thin beam",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Locks the axle's free end.",
+      "why_these_parts": "A thin beam stops the connector sliding off.",
+      "sets_up_for_later": "Step 157 adds a yellow axle.",
+      "design_pattern": "end lock"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Two thin beams are in the box; the picture shows one."
+}

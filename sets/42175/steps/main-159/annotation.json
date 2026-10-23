@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-159",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 134,
+  "step": 159,
+  "input": {
+    "picture": "steps/main-159/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-rax-1",
+        "part_number": "32062",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Pivot with U connector (step 158)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-rax-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "red 2-long notched axle pushed into the U connector (picture)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A red notched axle is pushed in at the free end."
+    ],
+    "who_does_what_to_which": [
+      "cn-u-1 holds cn-rax-1"
+    ],
+    "where_everything_is_after": [
+      "a red axle sticks out of the pivot",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds a red mount axle.",
+      "why_these_parts": "A short axle gives a plug-in point.",
+      "sets_up_for_later": "Step 160 adds yellow connectors.",
+      "design_pattern": "mount axle"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Position estimated."
+}

@@ -1,0 +1,16 @@
+STEP 142
+ADD sc-bp-1 43093 blue
+ADD sc-bp-2 43093 blue
+ADD sc-yax-1 4519 yellow
+ADD sc-lb-1 32140 black
+ADD sc-lb-2 32140 black
+ADD sc-lb-3 32140 black
+ADD sc-dp-1 61332 black
+CONNECT sc-yax-1.axle1 -> sc-lb-1.axlehole1~ LOCKED
+CONNECT sc-dp-1.pin1 -> sc-lb-2.hole1~ STIFF
+CONNECT sc-bp-1.pin1 -> sc-lb-3.hole2~ STIFF
+CONNECT sc-bp-2.pin1 -> sc-lb-3.hole3~ STIFF
+DOES sc-lb-1 CARRIES sc-yax-1
+DOES sc-lb-2 SUPPORTS sc-lb-1
+DOES sc-lb-3 SUPPORTS sc-lb-2
+PATTERN stacked_covers

@@ -1,0 +1,92 @@
+{
+  "example_id": "42175-step-143",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 128,
+  "step": 143,
+  "input": {
+    "picture": "steps/main-143/picture.png",
+    "parts_box": [
+      {
+        "name": "hd2-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "hd2-rp-1",
+        "part_number": "32062",
+        "count": 1
+      },
+      {
+        "name": "hd2-f8-1",
+        "part_number": "2389",
+        "count": 1
+      },
+      {
+        "name": "hd2-panel-1",
+        "part_number": "71709",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Frame with the side cover fitted (step 142)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "hd2-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "blue pin (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd2-rp-1",
+        "part_number": "32062",
+        "catalog_name": "Technic Axle 2 Notched",
+        "color": "Red",
+        "part_match": "likely",
+        "position": "red axle on the fairing's end (yellow box 1)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd2-f8-1",
+        "part_number": "2389",
+        "catalog_name": "Technic Panel Fairing #8 3L Very Small Smooth, Side B",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow fairing no. 8 (circled 8)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "hd2-panel-1",
+        "part_number": "71709",
+        "catalog_name": "Technic Panel 3 x 7 x 1",
+        "color": "Yellow",
+        "part_match": "likely",
+        "position": "yellow 3 x 7 panel with the EC230 sticker (no. 15)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Yellow box 1-3: a blue pin and a red axle go in the yellow fairing, the fairing joins the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on top of the side cover (arrow)."
+    ],
+    "who_does_what_to_which": [
+      "hd2-panel-1 supports hd2-f8-1",
+      "hd2-f8-1 carries hd2-rp-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow EC230 panel covers the top of the side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the yellow cover with the model name.",
+      "why_these_parts": "The brand colour (yellow) tops the black body.",
+      "sets_up_for_later": "Steps 144 onward start another side build.",
+      "design_pattern": "EC230 cover"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The yellow panel identity is read from the icon (3 x 7 panel, 71709); holes are not countable."
+}

@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-151",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 132,
+  "step": 151,
+  "input": {
+    "picture": "steps/main-151/picture.png",
+    "parts_box": [
+      {
+        "name": "rs-b5c-1",
+        "part_number": "32316",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Right side beam on the frame (step 150)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rs-b5c-1",
+        "part_number": "32316",
+        "catalog_name": "Technic Beam 1 x 5 Thick",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 5-hole beam on top of the cab box (1:1 box, circled 5)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The 5-hole beam is shown on the top rear of the right side (tag 5)."
+    ],
+    "who_does_what_to_which": [
+      "rs-b5c-1 supports rs-b5-1"
+    ],
+    "where_everything_is_after": [
+      "a 5-hole beam closes the top of the right side",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Finishes the top rail of the right side.",
+      "why_these_parts": "A beam over pins locks them.",
+      "sets_up_for_later": "Steps 152-162 build a small cab-corner piece.",
+      "design_pattern": "top rail"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "The picture shows it in place without an arrow; its holes are not countable."
+}

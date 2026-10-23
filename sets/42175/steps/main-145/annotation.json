@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-145",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 129,
+  "step": 145,
+  "input": {
+    "picture": "steps/main-145/picture.png",
+    "parts_box": [
+      {
+        "name": "rs-lb-1",
+        "part_number": "32526",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam with blue pins (step 144)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rs-lb-1",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black 3 x 5 L-beam at the beam's end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The L-beam is pressed onto the blue pins at the beam's end (picture)."
+    ],
+    "who_does_what_to_which": [
+      "rs-lb-1 supports rs-b11-1"
+    ],
+    "where_everything_is_after": [
+      "the 11-hole beam has an L-beam at one end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the upright end of the side beam.",
+      "why_these_parts": "An L-beam turns a flat beam into a side wall.",
+      "sets_up_for_later": "Step 146 adds small pins.",
+      "design_pattern": "corner"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Holes estimated."
+}

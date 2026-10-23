@@ -1,0 +1,8 @@
+STEP 147
+ADD rs-b3-1 32523 black
+ADD rs-b7-1 32524 black
+CONNECT rs-b7-1.hole? -> rs-bp-1.pin?
+CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?
+DOES rs-b7-1 SUPPORTS rs-b11-1
+DOES rs-b3-1 HOLDS rs-dp-1
+PATTERN beams_on_pins

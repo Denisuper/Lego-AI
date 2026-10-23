@@ -1,0 +1,5 @@
+STEP 161
+ADD cn-dp-1 61332 black
+CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?
+DOES cn-yc2-1 HOLDS cn-dp-1
+PATTERN lock_pin

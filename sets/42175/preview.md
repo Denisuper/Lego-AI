@@ -1,4 +1,4 @@
-# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 141 labeled steps
+# LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17) - 163 labeled steps
 
 ## 42175-step-001 (page 2) - medium - NEEDS REVIEW
 
@@ -658,7 +658,7 @@
 **Why:** Gives the upper body a wall on both sides of the pump. Mirror of step 19 so the two walls match. *Next:* Step 21 ties the two frames together across the top. *Pattern:* mirrored side frame
 
 **Big picture:**
-- **up-frame-2** (None): None Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`.
+- **up-frame-2** (None): None Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`; 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`.
 - **up-lbeam-2** (None): None Later: 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?`.
 - **up-lpin-6** (None): None Later: 42175-step-022 `CONNECT hy-valve-2.hole? -> up-lpin-6.pin1`.
 - **up-lpin-7** (None): None
@@ -3729,3 +3729,539 @@
 - **cb-yb5b-1** builds on cb-dp3-1 (42175-step-140), which rests on hd-b7-1 (42175-step-133); cb-dp3-2 (42175-step-140), which rests on hd-b7-1 (42175-step-133)
 
 **Review:** Holes estimated.
+
+## 42175-step-142 (page 126) - low - NEEDS REVIEW
+
+![42175-step-142](steps/main-142/picture.png)
+
+**New parts:** sc-bp-1 (43093, blue) - two blue pins (sub-step 5); sc-bp-2 (43093, blue) - two blue pins (sub-step 5); sc-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3); sc-lb-1 (32140, black) - three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; sc-lb-2 (32140, black) - three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; sc-lb-3 (32140, black) - three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; sc-dp-1 (61332, black) - small dark pin (sub-step 3)
+
+**Touches:** Sub-steps 1-5: the yellow axle goes in the first L-beam (sticker 24), the second gets a dark pin (sticker 17), they are stacked, a third L-beam with sticker 11 is added on top, and two blue pins are pushed in from the side.
+
+**Exact joins:** sc-yax-1.axle1 into sc-lb-1.axlehole1 (1 hole deep, locked (turn together), estimated from the picture); sc-dp-1.pin1 into sc-lb-2.hole1 (0.9 hole deep, held stiff by friction, estimated from the picture); sc-bp-1.pin1 into sc-lb-3.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); sc-bp-2.pin1 into sc-lb-3.hole3 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** sc-lb-1 carries sc-yax-1; sc-lb-2 supports sc-lb-1; sc-lb-3 supports sc-lb-2
+
+**After:** a stack of three black L-beams with ELECTRIC and yellow stripe stickers, a yellow axle and two blue pins is ready; everything else: no change
+
+**Why:** Builds the left side cover with the machine's ELECTRIC label. Stacked L-beams make a solid panel. *Next:* Page 127 presses it on the frame's side. *Pattern:* side cover
+
+**Big picture:**
+- **sc-bp-1** (None): None
+- **sc-bp-2** (None): None
+- **sc-yax-1** (None): None
+- **sc-lb-1** (None): None
+- **sc-lb-2** (None): None
+- **sc-lb-3** (None): None
+- **sc-dp-1** (None): None
+
+**Review:** Which beam holds the dark pin and axle is read from the drawings; fitting is shown on page 127 without a step number.
+
+## 42175-step-143 (page 128) - medium - NEEDS REVIEW
+
+![42175-step-143](steps/main-143/picture.png)
+
+**New parts:** hd2-bp-1 (43093, blue) - blue pin (yellow box 1); hd2-rp-1 (32062, red) - red axle on the fairing's end (yellow box 1); hd2-f8-1 (2389, yellow) - yellow fairing no. 8 (circled 8); hd2-panel-1 (71709, yellow) - yellow 3 x 7 panel with the EC230 sticker (no. 15)
+
+**Touches:** Yellow box 1-3: a blue pin and a red axle go in the yellow fairing, the fairing joins the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on top of the side cover (arrow).
+
+**Exact joins:** hd2-rp-1.axle1 into hd2-f8-1.axlehole? (not shown in booklet); hd2-bp-1.pin1 into hd2-f8-1.hole? (not shown in booklet); hd2-f8-1.hole? into hd2-panel-1.hole? (not shown in booklet)
+
+**Who does what:** hd2-panel-1 supports hd2-f8-1; hd2-f8-1 carries hd2-rp-1
+
+**After:** a yellow EC230 panel covers the top of the side; everything else: no change
+
+**Why:** Adds the yellow cover with the model name. The brand colour (yellow) tops the black body. *Next:* Steps 144 onward start another side build. *Pattern:* EC230 cover
+
+**Big picture:**
+- **hd2-bp-1** (None): None
+- **hd2-rp-1** (None): None
+- **hd2-f8-1** (None): None
+- **hd2-panel-1** (None): None
+
+**Review:** The yellow panel identity is read from the icon (3 x 7 panel, 71709); holes are not countable.
+
+## 42175-step-144 (page 129) - low - NEEDS REVIEW
+
+![42175-step-144](steps/main-144/picture.png)
+
+**New parts:** rs-b11-1 (73507, black) - black 11-hole beam with alternating holes (1:1 box, circled 11); rs-bp-1 (43093, blue) - three blue pins pushed through the beam; rs-bp-2 (43093, blue) - three blue pins pushed through the beam; rs-bp-3 (43093, blue) - three blue pins pushed through the beam
+
+**Touches:** Three blue pins are pushed through the 11-hole beam (picture).
+
+**Exact joins:** rs-bp-1.pin1 into rs-b11-1.hole2 (0.9 hole deep, held stiff by friction, estimated from the picture); rs-bp-2.pin1 into rs-b11-1.hole5 (0.9 hole deep, held stiff by friction, estimated from the picture); rs-bp-3.pin1 into rs-b11-1.hole8 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** rs-b11-1 carries rs-bp-1
+
+**After:** an 11-hole beam with three blue pins; everything else: no change
+
+**Why:** Starts the right side beam. Same pattern as the roof beam in step 135. *Next:* Step 145 adds an L-beam. *Pattern:* right beam
+
+**Big picture:**
+- **rs-b11-1** (None): None Later: 42175-step-145 `DOES rs-lb-1 SUPPORTS rs-b11-1`; 42175-step-146 `CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF`; 42175-step-146 `CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF`; 42175-step-146 `CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF`; 42175-step-146 `DOES rs-b11-1 CARRIES rs-dp-1`; 42175-step-147 `DOES rs-b7-1 SUPPORTS rs-b11-1`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`.
+- **rs-bp-1** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF`; 42175-step-147 `CONNECT rs-b7-1.hole? -> rs-bp-1.pin?`.
+- **rs-bp-2** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF`.
+- **rs-bp-3** (None): None Later: 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`.
+
+**Review:** Pin holes estimated.
+
+## 42175-step-145 (page 129) - low - NEEDS REVIEW
+
+![42175-step-145](steps/main-145/picture.png)
+
+**New parts:** rs-lb-1 (32526, black) - black 3 x 5 L-beam at the beam's end
+
+**Touches:** The L-beam is pressed onto the blue pins at the beam's end (picture).
+
+**Exact joins:** rs-lb-1.hole1 into rs-bp-1.pin1 (0.9 hole deep, held stiff by friction, estimated from the picture); rs-lb-1.hole2 into rs-bp-2.pin1 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** rs-lb-1 supports rs-b11-1
+
+**After:** the 11-hole beam has an L-beam at one end; everything else: no change
+
+**Why:** Adds the upright end of the side beam. An L-beam turns a flat beam into a side wall. *Next:* Step 146 adds small pins. *Pattern:* corner
+
+**Big picture:**
+- **rs-lb-1** (None): None
+
+**Mechanisms:**
+- **rs-lb-1** builds on rs-bp-1 (42175-step-144), which rests on rs-b11-1 (42175-step-144); rs-bp-2 (42175-step-144), which rests on rs-b11-1 (42175-step-144)
+
+**Review:** Holes estimated.
+
+## 42175-step-146 (page 129) - low - NEEDS REVIEW
+
+![42175-step-146](steps/main-146/picture.png)
+
+**New parts:** rs-dp-1 (61332, black) - three small dark pins pushed into the beam's far end; rs-dp-2 (61332, black) - three small dark pins pushed into the beam's far end; rs-dp-3 (61332, black) - three small dark pins pushed into the beam's far end
+
+**Touches:** Three small dark pins are pushed into the far end of the 11-hole beam (two on top, one on the side).
+
+**Exact joins:** rs-dp-1.pin1 into rs-b11-1.hole10 (0.9 hole deep, held stiff by friction, estimated from the picture); rs-dp-2.pin1 into rs-b11-1.hole11 (0.9 hole deep, held stiff by friction, estimated from the picture); rs-dp-3.pin1 into rs-b11-1.hole9 (0.9 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** rs-b11-1 carries rs-dp-1
+
+**After:** the beam has three dark pins at its far end; everything else: no change
+
+**Why:** Adds posts for the next beams. Pins locate parts above. *Next:* Step 147 adds beams. *Pattern:* posts
+
+**Big picture:**
+- **rs-dp-1** (None): None Later: 42175-step-147 `CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?`; 42175-step-147 `DOES rs-b3-1 HOLDS rs-dp-1`; 42175-step-151 `CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?`.
+- **rs-dp-2** (None): None Later: 42175-step-148 `CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?`.
+- **rs-dp-3** (None): None
+
+**Mechanisms:**
+- **rs-dp-1** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+- **rs-dp-2** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+- **rs-dp-3** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+
+**Review:** Positions estimated.
+
+## 42175-step-147 (page 130) - low - NEEDS REVIEW
+
+![42175-step-147](steps/main-147/picture.png)
+
+**New parts:** rs-b3-1 (32523, black) - black 1 x 3 beam; rs-b7-1 (32524, black) - black 7-hole beam (1:1 box, circled 7)
+
+**Touches:** The 7-hole beam is laid along the 11-hole beam over the blue pins; the short beam lies at the far end.
+
+**Exact joins:** rs-b7-1.hole? into rs-bp-1.pin? (not shown in booklet); rs-b3-1.hole? into rs-dp-1.pin2? (not shown in booklet)
+
+**Who does what:** rs-b7-1 supports rs-b11-1; rs-b3-1 holds rs-dp-1
+
+**After:** a 7-hole beam doubles the right side beam; everything else: no change
+
+**Why:** Thickens the side beam. Two beams are stiffer than one. *Next:* Step 148 adds a 5-hole beam. *Pattern:* thickening
+
+**Big picture:**
+- **rs-b3-1** (None): None
+- **rs-b7-1** (None): None Later: 42175-step-148 `DOES rs-b5-1 SUPPORTS rs-b7-1`.
+
+**Mechanisms:**
+- **rs-b3-1** builds on rs-dp-1 (42175-step-146), which rests on rs-b11-1 (42175-step-144)
+- **rs-b7-1** builds on rs-bp-1 (42175-step-144), which rests on rs-b11-1 (42175-step-144), rs-lb-1 (42175-step-145)
+
+**Review:** Holes not countable.
+
+## 42175-step-148 (page 130) - low - NEEDS REVIEW
+
+![42175-step-148](steps/main-148/picture.png)
+
+**New parts:** rs-b5-1 (32316, black) - black 5-hole beam on top (1:1 box, circled 5)
+
+**Touches:** The 5-hole beam is placed on the dark pins at the far end (picture).
+
+**Exact joins:** rs-dp-2.pin2 into rs-b5-1.hole? (not shown in booklet)
+
+**Who does what:** rs-b5-1 supports rs-b7-1
+
+**After:** a 5-hole beam closes the far end; everything else: no change
+
+**Why:** Closes the right beam's far end. Beam on pins locks them. *Next:* Step 149 builds an end plate. *Pattern:* far end
+
+**Big picture:**
+- **rs-b5-1** (None): None Later: 42175-step-151 `DOES rs-b5c-1 SUPPORTS rs-b5-1`.
+
+**Mechanisms:**
+- **rs-b5-1** builds on rs-dp-2 (42175-step-146), which rests on rs-b11-1 (42175-step-144)
+
+**Review:** Holes not countable.
+
+## 42175-step-149 (page 130) - low - NEEDS REVIEW
+
+![42175-step-149](steps/main-149/picture.png)
+
+**New parts:** rs-bp2-1 (43093, blue) - blue pin (yellow box 1); rs-dp2-1 (61332, black) - small dark pin (yellow box 2); rs-tb-1 (11478, black) - two black thin 5-hole beams with axle holes at the ends (yellow box 1-2); rs-tb-2 (11478, black) - two black thin 5-hole beams with axle holes at the ends (yellow box 1-2)
+
+**Touches:** Yellow box 1-2: a blue pin joins two thin beams, then a dark pin is added. The pair is placed upright on the end of the right beam (arrow).
+
+**Exact joins:** rs-bp2-1.axle1 into rs-tb-1.axlehole1 (0.5 hole deep, locked (turn together), estimated from the picture); rs-bp2-1.pin1 into rs-tb-2.hole1 (0.5 hole deep, held stiff by friction, estimated from the picture); rs-dp2-1.pin1 into rs-tb-1.hole3 (0.5 hole deep, held stiff by friction, estimated from the picture)
+
+**Who does what:** rs-tb-1 carries rs-bp2-1; rs-tb-2 supports rs-tb-1
+
+**After:** an upright thin-beam pair sits at the end of the right side beam; everything else: no change
+
+**Why:** Adds the tall end plate. Two thin beams on a pin make a light upright wall. *Next:* Later steps use it to fit the right side. *Pattern:* end wall
+
+**Big picture:**
+- **rs-bp2-1** (None): None
+- **rs-dp2-1** (None): None
+- **rs-tb-1** (None): None
+- **rs-tb-2** (None): None
+
+**Review:** Sub-step order is as drawn; pin type estimated.
+
+## 42175-step-150 (page 131) - medium - NEEDS REVIEW
+
+![42175-step-150](steps/main-150/picture.png)
+
+**New parts:** 
+
+**Touches:** The right side beam is pushed onto the right side of the frame by its blue pins (two green guide lines); it lines up with the beam on the left.
+
+**Exact joins:** rs-bp-3.pin1 into up-frame-2.hole? (not shown in booklet); rs-b11-1.hole? into up-frame-2.hole? (not shown in booklet)
+
+**Who does what:** up-frame-2 holds rs-b11-1
+
+**After:** the right side beam is fixed to the right of the frame; everything else: no change
+
+**Why:** Closes the right side of the cab box. A side beam on pins ties the frame together. *Next:* Step 151 adds a 5-hole beam on top. *Pattern:* right side
+
+**Big picture:**
+
+
+**Review:** Which frame holes take the pins is not shown.
+
+## 42175-step-151 (page 132) - medium - NEEDS REVIEW
+
+![42175-step-151](steps/main-151/picture.png)
+
+**New parts:** rs-b5c-1 (32316, black) - black 5-hole beam on top of the cab box (1:1 box, circled 5)
+
+**Touches:** The 5-hole beam is shown on the top rear of the right side (tag 5).
+
+**Exact joins:** rs-b5c-1.hole? into rs-dp-1.pin? (not shown in booklet)
+
+**Who does what:** rs-b5c-1 supports rs-b5-1
+
+**After:** a 5-hole beam closes the top of the right side; everything else: no change
+
+**Why:** Finishes the top rail of the right side. A beam over pins locks them. *Next:* Steps 152-162 build a small cab-corner piece. *Pattern:* top rail
+
+**Big picture:**
+- **rs-b5c-1** (None): None Later: 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
+
+**Mechanisms:**
+- **rs-b5c-1** builds on rs-dp-1 (42175-step-146), which rests on rs-b11-1 (42175-step-144), rs-b3-1 (42175-step-147)
+
+**Review:** The picture shows it in place without an arrow; its holes are not countable.
+
+## 42175-step-152 (page 133) - low - NEEDS REVIEW
+
+![42175-step-152](steps/main-152/picture.png)
+
+**New parts:** cn-ax6-1 (3706, black) - black 6-long axle (1:1 box, circled 6); cn-conn-1 (42003, black) - black connector with pin holes
+
+**Touches:** The 6-long axle is pushed into the cross hole of the black connector.
+
+**Exact joins:** cn-ax6-1.axle1 into cn-conn-1.axlehole1 (1 hole deep, locked (turn together))
+
+**Who does what:** cn-conn-1 carries cn-ax6-1
+
+**After:** a black connector has a 6-long axle sticking out; everything else: no change
+
+**Why:** Starts the corner pivot. A long axle in a connector is the pivot shaft. *Next:* Steps 153-156 slide beams on it. *Pattern:* pivot shaft
+
+**Big picture:**
+- **cn-ax6-1** (None): None Later: 42175-step-153 `CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED`; 42175-step-153 `DOES cn-tb-1 HOLDS cn-ax6-1`; 42175-step-154 `CONNECT cn-tb2-1.axlehole1 -> cn-ax6-1.axle4~ LOCKED`; 42175-step-154 `CONNECT cn-tb2-2.axlehole1 -> cn-ax6-1.axle3~ LOCKED`; 42175-step-154 `DOES cn-tb2-1 HOLDS cn-ax6-1`; 42175-step-155 `CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-1.axlehole1 -> cn-ax6-1.axle1~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-2.axlehole1 -> cn-ax6-1.axle2?`; 42175-step-156 `DOES cn-tb3-1 HOLDS cn-ax6-1`; 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
+- **cn-conn-1** (None): None
+
+**Review:** Connector read from the icon.
+
+## 42175-step-153 (page 133) - medium - NEEDS REVIEW
+
+![42175-step-153](steps/main-153/picture.png)
+
+**New parts:** cn-tb-1 (41677, black) - two black thin beams (only one is shown going on); cn-tb-2 (41677, black) - two black thin beams (only one is shown going on)
+
+**Touches:** A black thin beam is slid onto the axle (green arrow).
+
+**Exact joins:** cn-tb-1.axlehole1 into cn-ax6-1.axle5 (0.5 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** cn-tb-1 holds cn-ax6-1
+
+**After:** a thin beam sits on the axle; everything else: no change
+
+**Why:** Adds a spacer beside the connector. Thin beams hold the next part off the connector. *Next:* Step 154 adds the second. *Pattern:* spacer
+
+**Big picture:**
+- **cn-tb-1** (None): None
+- **cn-tb-2** (None): None
+
+**Mechanisms:**
+- **cn-tb-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152)
+
+**Review:** The box says 2x; the second thin beam goes on in step 154.
+
+## 42175-step-154 (page 133) - medium - NEEDS REVIEW
+
+![42175-step-154](steps/main-154/picture.png)
+
+**New parts:** cn-tb2-1 (41677, black) - two black thin beams (slid on one after the other); cn-tb2-2 (41677, black) - two black thin beams (slid on one after the other)
+
+**Touches:** A second thin beam is slid onto the axle (green arrow).
+
+**Exact joins:** cn-tb2-1.axlehole1 into cn-ax6-1.axle4 (0.5 hole deep, locked (turn together), estimated from the picture); cn-tb2-2.axlehole1 into cn-ax6-1.axle3 (0.5 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** cn-tb2-1 holds cn-ax6-1
+
+**After:** two thin beams are on the axle next to the connector; everything else: no change
+
+**Why:** Adds the second spacer. Two spacers make room for the yellow connector. *Next:* Step 155 adds the yellow connector. *Pattern:* spacers
+
+**Big picture:**
+- **cn-tb2-1** (None): None Later: 42175-step-155 `DOES cn-yc-1 CARRIES cn-tb2-1`.
+- **cn-tb2-2** (None): None
+
+**Mechanisms:**
+- **cn-tb2-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+- **cn-tb2-2** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+
+**Review:** The box shows 2x for this step; step 153 also has a 2x box, so four thin beams are drawn in total.
+
+## 42175-step-155 (page 133) - medium - NEEDS REVIEW
+
+![42175-step-155](steps/main-155/picture.png)
+
+**New parts:** cn-yc-1 (6536, yellow) - yellow perpendicular axle and pin connector
+
+**Touches:** The yellow connector is pushed onto the axle (picture).
+
+**Exact joins:** cn-yc-1.axlehole1 into cn-ax6-1.axle2 (1 hole deep, locked (turn together), estimated from the picture)
+
+**Who does what:** cn-yc-1 carries cn-tb2-1
+
+**After:** a yellow connector sits on the axle; everything else: no change
+
+**Why:** Adds the yellow end of the cab corner. A connector with a pin hole gives a pivot point. *Next:* Step 156 adds beams. *Pattern:* yellow end
+
+**Big picture:**
+- **cn-yc-1** (None): None Later: 42175-step-157 `CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?`; 42175-step-157 `DOES cn-yc-1 HOLDS cn-yax-1`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`.
+
+**Mechanisms:**
+- **cn-yc-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+
+**Review:** Colour is clear; position on the axle is estimated.
+
+## 42175-step-156 (page 134) - medium - NEEDS REVIEW
+
+![42175-step-156](steps/main-156/picture.png)
+
+**New parts:** cn-tb3-1 (41677, black) - two black thin beams (green arrow shows the first); cn-tb3-2 (41677, black) - two black thin beams (green arrow shows the first)
+
+**Touches:** A black thin beam is slid onto the axle's free end (green arrow).
+
+**Exact joins:** cn-tb3-1.axlehole1 into cn-ax6-1.axle1 (0.5 hole deep, locked (turn together), estimated from the picture); cn-tb3-2.axlehole1 into cn-ax6-1.axle2? (not shown in booklet)
+
+**Who does what:** cn-tb3-1 holds cn-ax6-1
+
+**After:** the free end of the axle has a thin beam; everything else: no change
+
+**Why:** Locks the axle's free end. A thin beam stops the connector sliding off. *Next:* Step 157 adds a yellow axle. *Pattern:* end lock
+
+**Big picture:**
+- **cn-tb3-1** (None): None
+- **cn-tb3-2** (None): None
+
+**Mechanisms:**
+- **cn-tb3-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+- **cn-tb3-2** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+
+**Review:** Two thin beams are in the box; the picture shows one.
+
+## 42175-step-157 (page 134) - medium - NEEDS REVIEW
+
+![42175-step-157](steps/main-157/picture.png)
+
+**New parts:** cn-yax-1 (4519, yellow) - yellow 3-long axle (1:1 box, circled 3)
+
+**Touches:** The yellow axle is added next to the black one in the yellow connector.
+
+**Exact joins:** cn-yax-1.axle1 into cn-yc-1.axlehole? (not shown in booklet)
+
+**Who does what:** cn-yc-1 holds cn-yax-1
+
+**After:** a yellow axle sticks out beside the black one; everything else: no change
+
+**Why:** Adds the second pivot shaft. Two parallel axles make a double hinge. *Next:* Step 158 adds a U-shaped connector. *Pattern:* second shaft
+
+**Big picture:**
+- **cn-yax-1** (None): None Later: 42175-step-158 `CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?`; 42175-step-158 `DOES cn-u-1 HOLDS cn-yax-1`.
+
+**Mechanisms:**
+- **cn-yax-1** builds on cn-yc-1 (42175-step-155), which rests on cn-ax6-1 (42175-step-152)
+
+**Review:** Length checked by the 1:1 box.
+
+## 42175-step-158 (page 134) - low - NEEDS REVIEW
+
+![42175-step-158](steps/main-158/picture.png)
+
+**New parts:** cn-u-1 (69819, black) - black U-shaped connector
+
+**Touches:** A black U-shaped connector is pushed onto the yellow axle (picture).
+
+**Exact joins:** cn-u-1.axlehole? into cn-yax-1.axle2? (not shown in booklet)
+
+**Who does what:** cn-u-1 holds cn-yax-1
+
+**After:** a black U connector sits on the pivot; everything else: no change
+
+**Why:** Closes the pivot with a U clamp. A U connector holds two axles at once. *Next:* Step 159 adds a red axle. *Pattern:* clamp
+
+**Big picture:**
+- **cn-u-1** (None): None Later: 42175-step-159 `CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?`; 42175-step-159 `DOES cn-u-1 HOLDS cn-rax-1`.
+
+**Mechanisms:**
+- **cn-u-1** builds on cn-yax-1 (42175-step-157), which rests on cn-yc-1 (42175-step-155)
+
+**Review:** Part identity read from the icon; it may be a different black connector.
+
+## 42175-step-159 (page 134) - medium - NEEDS REVIEW
+
+![42175-step-159](steps/main-159/picture.png)
+
+**New parts:** cn-rax-1 (32062, red) - red 2-long notched axle pushed into the U connector (picture)
+
+**Touches:** A red notched axle is pushed in at the free end.
+
+**Exact joins:** cn-rax-1.axle1 into cn-u-1.axlehole? (not shown in booklet)
+
+**Who does what:** cn-u-1 holds cn-rax-1
+
+**After:** a red axle sticks out of the pivot; everything else: no change
+
+**Why:** Adds a red mount axle. A short axle gives a plug-in point. *Next:* Step 160 adds yellow connectors. *Pattern:* mount axle
+
+**Big picture:**
+- **cn-rax-1** (None): None Later: 42175-step-160 `CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED`.
+
+**Mechanisms:**
+- **cn-rax-1** builds on cn-u-1 (42175-step-158), which rests on cn-yax-1 (42175-step-157)
+
+**Review:** Position estimated.
+
+## 42175-step-160 (page 135) - medium - NEEDS REVIEW
+
+![42175-step-160](steps/main-160/picture.png)
+
+**New parts:** cn-yc2-1 (6536, yellow) - two yellow perpendicular connectors at the end of the pivot; cn-yc2-2 (6536, yellow) - two yellow perpendicular connectors at the end of the pivot
+
+**Touches:** Two yellow connectors are pushed onto the red axle (picture).
+
+**Exact joins:** cn-yc2-1.axlehole1 into cn-rax-1.axle2 (1 hole deep, locked (turn together), estimated from the picture); cn-yc2-2.hole? into cn-yc2-1.hole? (not shown in booklet)
+
+**Who does what:** cn-yc2-1 carries cn-yc2-2
+
+**After:** two yellow connectors form the pivot's end; everything else: no change
+
+**Why:** Gives the corner its yellow end. Yellow connectors form the visible corner. *Next:* Step 161 adds a pin. *Pattern:* yellow corner
+
+**Big picture:**
+- **cn-yc2-1** (None): None Later: 42175-step-161 `CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?`; 42175-step-161 `DOES cn-yc2-1 HOLDS cn-dp-1`.
+- **cn-yc2-2** (None): None Later: 42175-step-162 `CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?`.
+
+**Mechanisms:**
+- **cn-yc2-1** builds on cn-rax-1 (42175-step-159), which rests on cn-u-1 (42175-step-158)
+
+**Review:** Their order on the axle is estimated.
+
+## 42175-step-161 (page 135) - medium - NEEDS REVIEW
+
+![42175-step-161](steps/main-161/picture.png)
+
+**New parts:** cn-dp-1 (61332, black) - small dark pin dropped into the yellow connectors from above (green arrow)
+
+**Touches:** One small dark pin is pushed down through the yellow connectors (green arrow).
+
+**Exact joins:** cn-dp-1.pin1 into cn-yc2-1.hole? (not shown in booklet)
+
+**Who does what:** cn-yc2-1 holds cn-dp-1
+
+**After:** a pin locks the yellow connectors together; everything else: no change
+
+**Why:** Locks the yellow corner. A pin through both connectors holds them. *Next:* Step 162 adds a fairing. *Pattern:* lock pin
+
+**Big picture:**
+- **cn-dp-1** (None): None
+
+**Mechanisms:**
+- **cn-dp-1** builds on cn-yc2-1 (42175-step-160), which rests on cn-rax-1 (42175-step-159), cn-yc2-2 (42175-step-160)
+
+**Review:** Hole not countable.
+
+## 42175-step-162 (page 135) - medium - NEEDS REVIEW
+
+![42175-step-162](steps/main-162/picture.png)
+
+**New parts:** cn-fair-1 (2403, black) - black curved fairing no. 10 (circled 10); cn-rax2-1 (32062, red) - red 2-long notched axle pushed into the fairing (yellow box)
+
+**Touches:** Yellow box: a red axle goes in the curved fairing. The fairing is pressed on the pivot's black end (arrow).
+
+**Exact joins:** cn-rax2-1.axle1 into cn-fair-1.axlehole? (not shown in booklet); cn-rax2-1.axle2 into cn-yc2-2.axlehole? (not shown in booklet)
+
+**Who does what:** cn-fair-1 carries cn-rax2-1
+
+**After:** a black curved fairing finishes the cab corner; everything else: no change
+
+**Why:** Adds the rounded corner of the cab. A fairing hides the joints. *Next:* Step 163 fits it to the frame. *Pattern:* cab corner
+
+**Big picture:**
+- **cn-fair-1** (None): None
+- **cn-rax2-1** (None): None
+
+**Mechanisms:**
+- **cn-rax2-1** builds on cn-yc2-2 (42175-step-160), which rests on cn-yc2-1 (42175-step-160)
+
+**Review:** Fairing and axle positions estimated.
+
+## 42175-step-163 (page 136) - medium - NEEDS REVIEW
+
+![42175-step-163](steps/main-163/picture.png)
+
+**New parts:** 
+
+**Touches:** The corner piece is pushed onto the right rear of the cab box (two green arrows, one at the top and one at the lower yellow trim).
+
+**Exact joins:** cn-ax6-1.axle6 into rs-b5c-1.hole? (not shown in booklet); cn-yc-1.hole? into rs-b5c-1.hole? (not shown in booklet)
+
+**Who does what:** rs-b5c-1 holds cn-ax6-1
+
+**After:** the cab corner is fixed to the right rear of the cab box; everything else: no change
+
+**Why:** Adds the yellow-black corner that closes the cab box. Two attachment points make it firm. *Next:* Later steps add the roof. *Pattern:* corner
+
+**Big picture:**
+
+
+**Review:** Which holes take the axles is not shown.

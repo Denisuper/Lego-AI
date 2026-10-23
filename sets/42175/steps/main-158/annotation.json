@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-158",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 134,
+  "step": 158,
+  "input": {
+    "picture": "steps/main-158/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-u-1",
+        "part_number": "69819",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Pivot with two axles (step 157)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-u-1",
+        "part_number": "69819",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Double Split [Reinforced]",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "black U-shaped connector",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "A black U-shaped connector is pushed onto the yellow axle (picture)."
+    ],
+    "who_does_what_to_which": [
+      "cn-u-1 holds cn-yax-1"
+    ],
+    "where_everything_is_after": [
+      "a black U connector sits on the pivot",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Closes the pivot with a U clamp.",
+      "why_these_parts": "A U connector holds two axles at once.",
+      "sets_up_for_later": "Step 159 adds a red axle.",
+      "design_pattern": "clamp"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Part identity read from the icon; it may be a different black connector."
+}

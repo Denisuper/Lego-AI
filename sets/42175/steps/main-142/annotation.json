@@ -1,0 +1,135 @@
+{
+  "example_id": "42175-step-142",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 126,
+  "step": 142,
+  "input": {
+    "picture": "steps/main-142/picture.png",
+    "parts_box": [
+      {
+        "name": "sc-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sc-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "sc-yax-1",
+        "part_number": "4519",
+        "count": 1
+      },
+      {
+        "name": "sc-lb-1",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc-lb-2",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc-lb-3",
+        "part_number": "32140",
+        "count": 1
+      },
+      {
+        "name": "sc-dp-1",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the black side-cover stack with ELECTRIC stickers; fitted to the frame on page 127)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "sc-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (sub-step 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "two blue pins (sub-step 5)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-lb-1",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-lb-2",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-lb-3",
+        "part_number": "32140",
+        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11",
+        "rotation": "fixed"
+      },
+      {
+        "name": "sc-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "small dark pin (sub-step 3)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Sub-steps 1-5: the yellow axle goes in the first L-beam (sticker 24), the second gets a dark pin (sticker 17), they are stacked, a third L-beam with sticker 11 is added on top, and two blue pins are pushed in from the side."
+    ],
+    "who_does_what_to_which": [
+      "sc-lb-1 carries sc-yax-1",
+      "sc-lb-2 supports sc-lb-1",
+      "sc-lb-3 supports sc-lb-2"
+    ],
+    "where_everything_is_after": [
+      "a stack of three black L-beams with ELECTRIC and yellow stripe stickers, a yellow axle and two blue pins is ready",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Builds the left side cover with the machine's ELECTRIC label.",
+      "why_these_parts": "Stacked L-beams make a solid panel.",
+      "sets_up_for_later": "Page 127 presses it on the frame's side.",
+      "design_pattern": "side cover"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Which beam holds the dark pin and axle is read from the drawings; fitting is shown on page 127 without a step number."
+}

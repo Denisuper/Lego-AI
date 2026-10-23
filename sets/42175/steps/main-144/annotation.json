@@ -1,0 +1,91 @@
+{
+  "example_id": "42175-step-144",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 129,
+  "step": 144,
+  "input": {
+    "picture": "steps/main-144/picture.png",
+    "parts_box": [
+      {
+        "name": "rs-b11-1",
+        "part_number": "73507",
+        "count": 1
+      },
+      {
+        "name": "rs-bp-1",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "rs-bp-2",
+        "part_number": "43093",
+        "count": 1
+      },
+      {
+        "name": "rs-bp-3",
+        "part_number": "43093",
+        "count": 1
+      }
+    ],
+    "model_so_far": "(new build: the right side beam; nothing attached yet)"
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rs-b11-1",
+        "part_number": "73507",
+        "catalog_name": "Technic Beam 1 x 11 Thick with Alternating Holes",
+        "color": "Black",
+        "part_match": "confirmed",
+        "position": "black 11-hole beam with alternating holes (1:1 box, circled 11)",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rs-bp-1",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rs-bp-2",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the beam",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rs-bp-3",
+        "part_number": "43093",
+        "catalog_name": "Technic Axle Pin with Friction Ridges Lengthwise",
+        "color": "Blue",
+        "part_match": "confirmed",
+        "position": "three blue pins pushed through the beam",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Three blue pins are pushed through the 11-hole beam (picture)."
+    ],
+    "who_does_what_to_which": [
+      "rs-b11-1 carries rs-bp-1"
+    ],
+    "where_everything_is_after": [
+      "an 11-hole beam with three blue pins",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Starts the right side beam.",
+      "why_these_parts": "Same pattern as the roof beam in step 135.",
+      "sets_up_for_later": "Step 145 adds an L-beam.",
+      "design_pattern": "right beam"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Pin holes estimated."
+}

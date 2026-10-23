@@ -1,0 +1,49 @@
+{
+  "example_id": "42175-step-157",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 134,
+  "step": 157,
+  "input": {
+    "picture": "steps/main-157/picture.png",
+    "parts_box": [
+      {
+        "name": "cn-yax-1",
+        "part_number": "4519",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Axle with end beams (step 156)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "cn-yax-1",
+        "part_number": "4519",
+        "catalog_name": "Technic Axle 3",
+        "color": "Yellow",
+        "part_match": "confirmed",
+        "position": "yellow 3-long axle (1:1 box, circled 3)",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "The yellow axle is added next to the black one in the yellow connector."
+    ],
+    "who_does_what_to_which": [
+      "cn-yc-1 holds cn-yax-1"
+    ],
+    "where_everything_is_after": [
+      "a yellow axle sticks out beside the black one",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds the second pivot shaft.",
+      "why_these_parts": "Two parallel axles make a double hinge.",
+      "sets_up_for_later": "Step 158 adds a U-shaped connector.",
+      "design_pattern": "second shaft"
+    }
+  },
+  "confidence": "medium",
+  "needs_review": true,
+  "review_note": "Length checked by the 1:1 box."
+}

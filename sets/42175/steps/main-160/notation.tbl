@@ -1,0 +1,7 @@
+STEP 160
+ADD cn-yc2-1 6536 yellow
+ADD cn-yc2-2 6536 yellow
+CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED
+CONNECT cn-yc2-2.hole? -> cn-yc2-1.hole?
+DOES cn-yc2-1 CARRIES cn-yc2-2
+PATTERN end_connectors

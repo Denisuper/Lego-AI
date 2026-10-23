@@ -1,0 +1,5 @@
+STEP 157
+ADD cn-yax-1 4519 yellow
+CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?
+DOES cn-yc-1 HOLDS cn-yax-1
+PATTERN second_axle

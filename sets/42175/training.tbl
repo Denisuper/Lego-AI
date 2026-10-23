@@ -3885,3 +3885,424 @@ CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF
 CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF
 DOES cb-yb5b-1 HOLDS cb-dp3-1
 PATTERN beam_on_pins
+
+STEP 142
+THINK have (new build: the black side-cover stack with ELECTRIC stickers; fitted to the frame on page 127)
+THINK goal Builds the left side cover with the machine's ELECTRIC label.
+THINK part sc-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (sub-step 5); fixed
+THINK part sc-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): two blue pins (sub-step 5); fixed
+THINK part sc-yax-1 (4519 Technic Axle 3): yellow 3-long axle (1:1 box, circled 3); fixed
+THINK part sc-lb-1 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; fixed
+THINK part sc-lb-2 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; fixed
+THINK part sc-lb-3 (32140 Technic Beam 2 x 4 L-Shape Thick): three black 2 x 4 L-beams (sub-steps 1-4), two get stickers 24, 17 and 11; fixed
+THINK part sc-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin (sub-step 3); fixed
+THINK touches Sub-steps 1-5: the yellow axle goes in the first L-beam (sticker 24), the second gets a dark pin (sticker 17), they are stacked, a third L-beam with sticker 11 is added on top, and two blue pins are pushed in from the side.
+THINK does sc-lb-1 carries sc-yax-1
+THINK does sc-lb-2 supports sc-lb-1
+THINK does sc-lb-3 supports sc-lb-2
+THINK why Stacked L-beams make a solid panel.
+THINK check sc-yax-1.axle1 goes into sc-lb-1.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check sc-dp-1.pin1 goes into sc-lb-2.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sc-bp-1.pin1 goes into sc-lb-3.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check sc-bp-2.pin1 goes into sc-lb-3.hole3, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Page 127 presses it on the frame's side. Pattern: side cover
+ADD sc-bp-1 43093 blue
+ADD sc-bp-2 43093 blue
+ADD sc-yax-1 4519 yellow
+ADD sc-lb-1 32140 black
+ADD sc-lb-2 32140 black
+ADD sc-lb-3 32140 black
+ADD sc-dp-1 61332 black
+CONNECT sc-yax-1.axle1 -> sc-lb-1.axlehole1~ LOCKED
+CONNECT sc-dp-1.pin1 -> sc-lb-2.hole1~ STIFF
+CONNECT sc-bp-1.pin1 -> sc-lb-3.hole2~ STIFF
+CONNECT sc-bp-2.pin1 -> sc-lb-3.hole3~ STIFF
+DOES sc-lb-1 CARRIES sc-yax-1
+DOES sc-lb-2 SUPPORTS sc-lb-1
+DOES sc-lb-3 SUPPORTS sc-lb-2
+PATTERN stacked_covers
+
+STEP 143
+THINK have Frame with the side cover fitted (step 142).
+THINK goal Adds the yellow cover with the model name.
+THINK part hd2-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (yellow box 1); fixed
+THINK part hd2-rp-1 (32062 Technic Axle 2 Notched): red axle on the fairing's end (yellow box 1); fixed
+THINK part hd2-f8-1 (2389 Technic Panel Fairing #8 3L Very Small Smooth, Side B): yellow fairing no. 8 (circled 8); fixed
+THINK part hd2-panel-1 (71709 Technic Panel 3 x 7 x 1): yellow 3 x 7 panel with the EC230 sticker (no. 15); fixed
+THINK touches Yellow box 1-3: a blue pin and a red axle go in the yellow fairing, the fairing joins the yellow panel, and the EC230 sticker (no. 15) goes on. The yellow cover is placed on top of the side cover (arrow).
+THINK does hd2-panel-1 supports hd2-f8-1
+THINK does hd2-f8-1 carries hd2-rp-1
+THINK why The brand colour (yellow) tops the black body.
+THINK check hd2-rp-1.axle1 goes into hd2-f8-1.axlehole? (not shown in the booklet)
+THINK check hd2-bp-1.pin1 goes into hd2-f8-1.hole? (not shown in the booklet)
+THINK check hd2-f8-1.hole? goes into hd2-panel-1.hole? (not shown in the booklet)
+THINK later Steps 144 onward start another side build. Pattern: EC230 cover
+ADD hd2-bp-1 43093 blue
+ADD hd2-rp-1 32062 red
+ADD hd2-f8-1 2389 yellow
+ADD hd2-panel-1 71709 yellow
+CONNECT hd2-rp-1.axle1 -> hd2-f8-1.axlehole?
+CONNECT hd2-bp-1.pin1 -> hd2-f8-1.hole?
+CONNECT hd2-f8-1.hole? -> hd2-panel-1.hole?
+DOES hd2-panel-1 SUPPORTS hd2-f8-1
+DOES hd2-f8-1 CARRIES hd2-rp-1
+PATTERN cover_panel
+
+STEP 144
+THINK have (new build: the right side beam; nothing attached yet)
+THINK goal Starts the right side beam.
+THINK part rs-b11-1 (73507 Technic Beam 1 x 11 Thick with Alternating Holes): black 11-hole beam with alternating holes (1:1 box, circled 11); fixed
+THINK part rs-bp-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed through the beam; fixed
+THINK part rs-bp-2 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed through the beam; fixed
+THINK part rs-bp-3 (43093 Technic Axle Pin with Friction Ridges Lengthwise): three blue pins pushed through the beam; fixed
+THINK touches Three blue pins are pushed through the 11-hole beam (picture).
+THINK does rs-b11-1 carries rs-bp-1
+THINK why Same pattern as the roof beam in step 135.
+THINK check rs-bp-1.pin1 goes into rs-b11-1.hole2, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-bp-2.pin1 goes into rs-b11-1.hole5, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-bp-3.pin1 goes into rs-b11-1.hole8, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK later Step 145 adds an L-beam. Pattern: right beam
+ADD rs-b11-1 73507 black
+ADD rs-bp-1 43093 blue
+ADD rs-bp-2 43093 blue
+ADD rs-bp-3 43093 blue
+CONNECT rs-bp-1.pin1 -> rs-b11-1.hole2~ STIFF
+CONNECT rs-bp-2.pin1 -> rs-b11-1.hole5~ STIFF
+CONNECT rs-bp-3.pin1 -> rs-b11-1.hole8~ STIFF
+DOES rs-b11-1 CARRIES rs-bp-1
+PATTERN beam_with_pins
+
+STEP 145
+THINK have Beam with blue pins (step 144).
+THINK goal Adds the upright end of the side beam.
+THINK part rs-lb-1 (32526 Technic Beam 3 x 5 L-Shape Thick): black 3 x 5 L-beam at the beam's end; fixed
+THINK touches The L-beam is pressed onto the blue pins at the beam's end (picture).
+THINK does rs-lb-1 supports rs-b11-1
+THINK why An L-beam turns a flat beam into a side wall.
+THINK check rs-lb-1.hole1 goes into rs-bp-1.pin1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-lb-1.hole2 goes into rs-bp-2.pin1, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on rs-lb-1 builds on rs-bp-1 (42175-step-144), and rests on rs-b11-1 (42175-step-144)
+THINK builds_on rs-lb-1 builds on rs-bp-2 (42175-step-144), and rests on rs-b11-1 (42175-step-144)
+THINK later Step 146 adds small pins. Pattern: corner
+ADD rs-lb-1 32526 black
+CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF
+CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF
+DOES rs-lb-1 SUPPORTS rs-b11-1
+PATTERN corner_piece
+
+STEP 146
+THINK have Beam with L-beam end (step 145).
+THINK goal Adds posts for the next beams.
+THINK part rs-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins pushed into the beam's far end; fixed
+THINK part rs-dp-2 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins pushed into the beam's far end; fixed
+THINK part rs-dp-3 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): three small dark pins pushed into the beam's far end; fixed
+THINK touches Three small dark pins are pushed into the far end of the 11-hole beam (two on top, one on the side).
+THINK does rs-b11-1 carries rs-dp-1
+THINK why Pins locate parts above.
+THINK check rs-dp-1.pin1 goes into rs-b11-1.hole10, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-dp-2.pin1 goes into rs-b11-1.hole11, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-dp-3.pin1 goes into rs-b11-1.hole9, 0.9 hole deep, held stiff by friction (estimated from the picture)
+THINK builds_on rs-dp-1 builds on rs-b11-1 (42175-step-144), and rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+THINK builds_on rs-dp-2 builds on rs-b11-1 (42175-step-144), and rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+THINK builds_on rs-dp-3 builds on rs-b11-1 (42175-step-144), and rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
+THINK later Step 147 adds beams. Pattern: posts
+ADD rs-dp-1 61332 black
+ADD rs-dp-2 61332 black
+ADD rs-dp-3 61332 black
+CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF
+CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF
+CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF
+DOES rs-b11-1 CARRIES rs-dp-1
+PATTERN posts
+
+STEP 147
+THINK have Beam with dark pins (step 146).
+THINK goal Thickens the side beam.
+THINK part rs-b3-1 (32523 Technic Beam 1 x 3 Thick): black 1 x 3 beam; fixed
+THINK part rs-b7-1 (32524 Technic Beam 1 x 7 Thick): black 7-hole beam (1:1 box, circled 7); fixed
+THINK touches The 7-hole beam is laid along the 11-hole beam over the blue pins; the short beam lies at the far end.
+THINK does rs-b7-1 supports rs-b11-1
+THINK does rs-b3-1 holds rs-dp-1
+THINK why Two beams are stiffer than one.
+THINK check rs-b7-1.hole? goes into rs-bp-1.pin? (not shown in the booklet)
+THINK check rs-b3-1.hole? goes into rs-dp-1.pin2? (not shown in the booklet)
+THINK builds_on rs-b3-1 builds on rs-dp-1 (42175-step-146), and rests on rs-b11-1 (42175-step-144)
+THINK builds_on rs-b7-1 builds on rs-bp-1 (42175-step-144), and rests on rs-b11-1 (42175-step-144), rs-lb-1 (42175-step-145)
+THINK later Step 148 adds a 5-hole beam. Pattern: thickening
+ADD rs-b3-1 32523 black
+ADD rs-b7-1 32524 black
+CONNECT rs-b7-1.hole? -> rs-bp-1.pin?
+CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?
+DOES rs-b7-1 SUPPORTS rs-b11-1
+DOES rs-b3-1 HOLDS rs-dp-1
+PATTERN beams_on_pins
+
+STEP 148
+THINK have Doubled right beam (step 147).
+THINK goal Closes the right beam's far end.
+THINK part rs-b5-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam on top (1:1 box, circled 5); fixed
+THINK touches The 5-hole beam is placed on the dark pins at the far end (picture).
+THINK does rs-b5-1 supports rs-b7-1
+THINK why Beam on pins locks them.
+THINK check rs-dp-2.pin2 goes into rs-b5-1.hole? (not shown in the booklet)
+THINK builds_on rs-b5-1 builds on rs-dp-2 (42175-step-146), and rests on rs-b11-1 (42175-step-144)
+THINK later Step 149 builds an end plate. Pattern: far end
+ADD rs-b5-1 32316 black
+CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?
+DOES rs-b5-1 SUPPORTS rs-b7-1
+PATTERN beam_on_pins
+
+STEP 149
+THINK have Right side beam (step 148).
+THINK goal Adds the tall end plate.
+THINK part rs-bp2-1 (43093 Technic Axle Pin with Friction Ridges Lengthwise): blue pin (yellow box 1); fixed
+THINK part rs-dp2-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin (yellow box 2); fixed
+THINK part rs-tb-1 (11478 Technic Beam 1 x 5 Thin with Axle Holes on Ends): two black thin 5-hole beams with axle holes at the ends (yellow box 1-2); fixed
+THINK part rs-tb-2 (11478 Technic Beam 1 x 5 Thin with Axle Holes on Ends): two black thin 5-hole beams with axle holes at the ends (yellow box 1-2); fixed
+THINK touches Yellow box 1-2: a blue pin joins two thin beams, then a dark pin is added. The pair is placed upright on the end of the right beam (arrow).
+THINK does rs-tb-1 carries rs-bp2-1
+THINK does rs-tb-2 supports rs-tb-1
+THINK why Two thin beams on a pin make a light upright wall.
+THINK check rs-bp2-1.axle1 goes into rs-tb-1.axlehole1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check rs-bp2-1.pin1 goes into rs-tb-2.hole1, 0.5 hole deep, held stiff by friction (estimated from the picture)
+THINK check rs-dp2-1.pin1 goes into rs-tb-1.hole3, 0.5 hole deep, held stiff by friction (estimated from the picture)
+THINK later Later steps use it to fit the right side. Pattern: end wall
+ADD rs-bp2-1 43093 blue
+ADD rs-dp2-1 61332 black
+ADD rs-tb-1 11478 black
+ADD rs-tb-2 11478 black
+CONNECT rs-bp2-1.axle1 -> rs-tb-1.axlehole1~ LOCKED
+CONNECT rs-bp2-1.pin1 -> rs-tb-2.hole1~ STIFF
+CONNECT rs-dp2-1.pin1 -> rs-tb-1.hole3~ STIFF
+DOES rs-tb-1 CARRIES rs-bp2-1
+DOES rs-tb-2 SUPPORTS rs-tb-1
+PATTERN thin_beam_pair
+
+STEP 150
+THINK have Excavator seen from the rear-right (steps 1-141) and the right side beam (steps 144-149).
+THINK goal Closes the right side of the cab box.
+THINK touches The right side beam is pushed onto the right side of the frame by its blue pins (two green guide lines); it lines up with the beam on the left.
+THINK does up-frame-2 holds rs-b11-1
+THINK why A side beam on pins ties the frame together.
+THINK check rs-bp-3.pin1 goes into up-frame-2.hole? (not shown in the booklet)
+THINK check rs-b11-1.hole? goes into up-frame-2.hole? (not shown in the booklet)
+THINK later Step 151 adds a 5-hole beam on top. Pattern: right side
+CONNECT rs-bp-3.pin1 -> up-frame-2.hole?
+CONNECT rs-b11-1.hole? -> up-frame-2.hole?
+DOES up-frame-2 HOLDS rs-b11-1
+PATTERN attach_side_beam
+
+STEP 151
+THINK have Right side beam on the frame (step 150).
+THINK goal Finishes the top rail of the right side.
+THINK part rs-b5c-1 (32316 Technic Beam 1 x 5 Thick): black 5-hole beam on top of the cab box (1:1 box, circled 5); fixed
+THINK touches The 5-hole beam is shown on the top rear of the right side (tag 5).
+THINK does rs-b5c-1 supports rs-b5-1
+THINK why A beam over pins locks them.
+THINK check rs-b5c-1.hole? goes into rs-dp-1.pin? (not shown in the booklet)
+THINK builds_on rs-b5c-1 builds on rs-dp-1 (42175-step-146), and rests on rs-b11-1 (42175-step-144), rs-b3-1 (42175-step-147)
+THINK later Steps 152-162 build a small cab-corner piece. Pattern: top rail
+ADD rs-b5c-1 32316 black
+CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?
+DOES rs-b5c-1 SUPPORTS rs-b5-1
+PATTERN beam_on_pins
+
+STEP 152
+THINK have (new build: the cab corner pivot; nothing attached yet)
+THINK goal Starts the corner pivot.
+THINK part cn-ax6-1 (3706 Technic Axle 6): black 6-long axle (1:1 box, circled 6); fixed
+THINK part cn-conn-1 (42003 Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes): black connector with pin holes; fixed
+THINK touches The 6-long axle is pushed into the cross hole of the black connector.
+THINK does cn-conn-1 carries cn-ax6-1
+THINK why A long axle in a connector is the pivot shaft.
+THINK check cn-ax6-1.axle1 goes into cn-conn-1.axlehole1, 1 hole deep, locked (turn together)
+THINK later Steps 153-156 slide beams on it. Pattern: pivot shaft
+ADD cn-ax6-1 3706 black
+ADD cn-conn-1 42003 black
+CONNECT cn-ax6-1.axle1 -> cn-conn-1.axlehole1 LOCKED
+DOES cn-conn-1 CARRIES cn-ax6-1
+PATTERN axle_in_connector
+
+STEP 153
+THINK have Connector with axle (step 152).
+THINK goal Adds a spacer beside the connector.
+THINK part cn-tb-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams (only one is shown going on); fixed
+THINK part cn-tb-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams (only one is shown going on); fixed
+THINK touches A black thin beam is slid onto the axle (green arrow).
+THINK does cn-tb-1 holds cn-ax6-1
+THINK why Thin beams hold the next part off the connector.
+THINK check cn-tb-1.axlehole1 goes into cn-ax6-1.axle5, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK builds_on cn-tb-1 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152)
+THINK later Step 154 adds the second. Pattern: spacer
+ADD cn-tb-1 41677 black
+ADD cn-tb-2 41677 black
+CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED
+DOES cn-tb-1 HOLDS cn-ax6-1
+PATTERN spacer_beam
+
+STEP 154
+THINK have Axle with one thin beam (step 153).
+THINK goal Adds the second spacer.
+THINK part cn-tb2-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams (slid on one after the other); fixed
+THINK part cn-tb2-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams (slid on one after the other); fixed
+THINK touches A second thin beam is slid onto the axle (green arrow).
+THINK does cn-tb2-1 holds cn-ax6-1
+THINK why Two spacers make room for the yellow connector.
+THINK check cn-tb2-1.axlehole1 goes into cn-ax6-1.axle4, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check cn-tb2-2.axlehole1 goes into cn-ax6-1.axle3, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK builds_on cn-tb2-1 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+THINK builds_on cn-tb2-2 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+THINK later Step 155 adds the yellow connector. Pattern: spacers
+ADD cn-tb2-1 41677 black
+ADD cn-tb2-2 41677 black
+CONNECT cn-tb2-1.axlehole1 -> cn-ax6-1.axle4~ LOCKED
+CONNECT cn-tb2-2.axlehole1 -> cn-ax6-1.axle3~ LOCKED
+DOES cn-tb2-1 HOLDS cn-ax6-1
+PATTERN spacer_beam
+
+STEP 155
+THINK have Axle with spacers (step 154).
+THINK goal Adds the yellow end of the cab corner.
+THINK part cn-yc-1 (6536 Technic Axle and Pin Connector Perpendicular): yellow perpendicular axle and pin connector; fixed
+THINK touches The yellow connector is pushed onto the axle (picture).
+THINK does cn-yc-1 carries cn-tb2-1
+THINK why A connector with a pin hole gives a pivot point.
+THINK check cn-yc-1.axlehole1 goes into cn-ax6-1.axle2, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK builds_on cn-yc-1 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+THINK later Step 156 adds beams. Pattern: yellow end
+ADD cn-yc-1 6536 yellow
+CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED
+DOES cn-yc-1 CARRIES cn-tb2-1
+PATTERN connector_on_axle
+
+STEP 156
+THINK have Axle with yellow connector (step 155).
+THINK goal Locks the axle's free end.
+THINK part cn-tb3-1 (41677 Technic Beam 1 x 2 Thin): two black thin beams (green arrow shows the first); fixed
+THINK part cn-tb3-2 (41677 Technic Beam 1 x 2 Thin): two black thin beams (green arrow shows the first); fixed
+THINK touches A black thin beam is slid onto the axle's free end (green arrow).
+THINK does cn-tb3-1 holds cn-ax6-1
+THINK why A thin beam stops the connector sliding off.
+THINK check cn-tb3-1.axlehole1 goes into cn-ax6-1.axle1, 0.5 hole deep, locked (turn together) (estimated from the picture)
+THINK check cn-tb3-2.axlehole1 goes into cn-ax6-1.axle2? (not shown in the booklet)
+THINK builds_on cn-tb3-1 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+THINK builds_on cn-tb3-2 builds on cn-ax6-1 (42175-step-152), and rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
+THINK later Step 157 adds a yellow axle. Pattern: end lock
+ADD cn-tb3-1 41677 black
+ADD cn-tb3-2 41677 black
+CONNECT cn-tb3-1.axlehole1 -> cn-ax6-1.axle1~ LOCKED
+CONNECT cn-tb3-2.axlehole1 -> cn-ax6-1.axle2?
+DOES cn-tb3-1 HOLDS cn-ax6-1
+PATTERN spacer_beam
+
+STEP 157
+THINK have Axle with end beams (step 156).
+THINK goal Adds the second pivot shaft.
+THINK part cn-yax-1 (4519 Technic Axle 3): yellow 3-long axle (1:1 box, circled 3); fixed
+THINK touches The yellow axle is added next to the black one in the yellow connector.
+THINK does cn-yc-1 holds cn-yax-1
+THINK why Two parallel axles make a double hinge.
+THINK check cn-yax-1.axle1 goes into cn-yc-1.axlehole? (not shown in the booklet)
+THINK builds_on cn-yax-1 builds on cn-yc-1 (42175-step-155), and rests on cn-ax6-1 (42175-step-152)
+THINK later Step 158 adds a U-shaped connector. Pattern: second shaft
+ADD cn-yax-1 4519 yellow
+CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?
+DOES cn-yc-1 HOLDS cn-yax-1
+PATTERN second_axle
+
+STEP 158
+THINK have Pivot with two axles (step 157).
+THINK goal Closes the pivot with a U clamp.
+THINK part cn-u-1 (69819 Technic Axle and Pin Connector Perpendicular Double Split [Reinforced]): black U-shaped connector; fixed
+THINK touches A black U-shaped connector is pushed onto the yellow axle (picture).
+THINK does cn-u-1 holds cn-yax-1
+THINK why A U connector holds two axles at once.
+THINK check cn-u-1.axlehole? goes into cn-yax-1.axle2? (not shown in the booklet)
+THINK builds_on cn-u-1 builds on cn-yax-1 (42175-step-157), and rests on cn-yc-1 (42175-step-155)
+THINK later Step 159 adds a red axle. Pattern: clamp
+ADD cn-u-1 69819 black
+CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?
+DOES cn-u-1 HOLDS cn-yax-1
+PATTERN u_connector
+
+STEP 159
+THINK have Pivot with U connector (step 158).
+THINK goal Adds a red mount axle.
+THINK part cn-rax-1 (32062 Technic Axle 2 Notched): red 2-long notched axle pushed into the U connector (picture); fixed
+THINK touches A red notched axle is pushed in at the free end.
+THINK does cn-u-1 holds cn-rax-1
+THINK why A short axle gives a plug-in point.
+THINK check cn-rax-1.axle1 goes into cn-u-1.axlehole? (not shown in the booklet)
+THINK builds_on cn-rax-1 builds on cn-u-1 (42175-step-158), and rests on cn-yax-1 (42175-step-157)
+THINK later Step 160 adds yellow connectors. Pattern: mount axle
+ADD cn-rax-1 32062 red
+CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?
+DOES cn-u-1 HOLDS cn-rax-1
+PATTERN axle_in_connector
+
+STEP 160
+THINK have Pivot with red axle (step 159).
+THINK goal Gives the corner its yellow end.
+THINK part cn-yc2-1 (6536 Technic Axle and Pin Connector Perpendicular): two yellow perpendicular connectors at the end of the pivot; fixed
+THINK part cn-yc2-2 (6536 Technic Axle and Pin Connector Perpendicular): two yellow perpendicular connectors at the end of the pivot; fixed
+THINK touches Two yellow connectors are pushed onto the red axle (picture).
+THINK does cn-yc2-1 carries cn-yc2-2
+THINK why Yellow connectors form the visible corner.
+THINK check cn-yc2-1.axlehole1 goes into cn-rax-1.axle2, 1 hole deep, locked (turn together) (estimated from the picture)
+THINK check cn-yc2-2.hole? goes into cn-yc2-1.hole? (not shown in the booklet)
+THINK builds_on cn-yc2-1 builds on cn-rax-1 (42175-step-159), and rests on cn-u-1 (42175-step-158)
+THINK later Step 161 adds a pin. Pattern: yellow corner
+ADD cn-yc2-1 6536 yellow
+ADD cn-yc2-2 6536 yellow
+CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED
+CONNECT cn-yc2-2.hole? -> cn-yc2-1.hole?
+DOES cn-yc2-1 CARRIES cn-yc2-2
+PATTERN end_connectors
+
+STEP 161
+THINK have Pivot with yellow end (step 160).
+THINK goal Locks the yellow corner.
+THINK part cn-dp-1 (61332 Technic Pin with Friction Ridges Lengthwise with No Center Slots): small dark pin dropped into the yellow connectors from above (green arrow); fixed
+THINK touches One small dark pin is pushed down through the yellow connectors (green arrow).
+THINK does cn-yc2-1 holds cn-dp-1
+THINK why A pin through both connectors holds them.
+THINK check cn-dp-1.pin1 goes into cn-yc2-1.hole? (not shown in the booklet)
+THINK builds_on cn-dp-1 builds on cn-yc2-1 (42175-step-160), and rests on cn-rax-1 (42175-step-159), cn-yc2-2 (42175-step-160)
+THINK later Step 162 adds a fairing. Pattern: lock pin
+ADD cn-dp-1 61332 black
+CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?
+DOES cn-yc2-1 HOLDS cn-dp-1
+PATTERN lock_pin
+
+STEP 162
+THINK have Pivot locked (step 161).
+THINK goal Adds the rounded corner of the cab.
+THINK part cn-fair-1 (2403 Technic Panel Fairing #10 Medium Triangle Smooth): black curved fairing no. 10 (circled 10); fixed
+THINK part cn-rax2-1 (32062 Technic Axle 2 Notched): red 2-long notched axle pushed into the fairing (yellow box); fixed
+THINK touches Yellow box: a red axle goes in the curved fairing. The fairing is pressed on the pivot's black end (arrow).
+THINK does cn-fair-1 carries cn-rax2-1
+THINK why A fairing hides the joints.
+THINK check cn-rax2-1.axle1 goes into cn-fair-1.axlehole? (not shown in the booklet)
+THINK check cn-rax2-1.axle2 goes into cn-yc2-2.axlehole? (not shown in the booklet)
+THINK builds_on cn-rax2-1 builds on cn-yc2-2 (42175-step-160), and rests on cn-yc2-1 (42175-step-160)
+THINK later Step 163 fits it to the frame. Pattern: cab corner
+ADD cn-fair-1 2403 black
+ADD cn-rax2-1 32062 red
+CONNECT cn-rax2-1.axle1 -> cn-fair-1.axlehole?
+CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?
+DOES cn-fair-1 CARRIES cn-rax2-1
+PATTERN fairing_on_axle
+
+STEP 163
+THINK have Excavator with right side beam (step 151) and the cab-corner piece (steps 152-162).
+THINK goal Adds the yellow-black corner that closes the cab box.
+THINK touches The corner piece is pushed onto the right rear of the cab box (two green arrows, one at the top and one at the lower yellow trim).
+THINK does rs-b5c-1 holds cn-ax6-1
+THINK why Two attachment points make it firm.
+THINK check cn-ax6-1.axle6 goes into rs-b5c-1.hole? (not shown in the booklet)
+THINK check cn-yc-1.hole? goes into rs-b5c-1.hole? (not shown in the booklet)
+THINK later Later steps add the roof. Pattern: corner
+CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?
+CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?
+DOES rs-b5c-1 HOLDS cn-ax6-1
+PATTERN attach_corner

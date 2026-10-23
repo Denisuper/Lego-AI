@@ -1,0 +1,77 @@
+{
+  "example_id": "42175-step-146",
+  "set": "LEGO Technic 42175 Volvo EC230 Electric Excavator (excavator booklet, bags 12-17)",
+  "page": 129,
+  "step": 146,
+  "input": {
+    "picture": "steps/main-146/picture.png",
+    "parts_box": [
+      {
+        "name": "rs-dp-1",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rs-dp-2",
+        "part_number": "61332",
+        "count": 1
+      },
+      {
+        "name": "rs-dp-3",
+        "part_number": "61332",
+        "count": 1
+      }
+    ],
+    "model_so_far": "Beam with L-beam end (step 145)."
+  },
+  "answer": {
+    "new_parts": [
+      {
+        "name": "rs-dp-1",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins pushed into the beam's far end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rs-dp-2",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins pushed into the beam's far end",
+        "rotation": "fixed"
+      },
+      {
+        "name": "rs-dp-3",
+        "part_number": "61332",
+        "catalog_name": "Technic Pin with Friction Ridges Lengthwise with No Center Slots",
+        "color": "Black",
+        "part_match": "likely",
+        "position": "three small dark pins pushed into the beam's far end",
+        "rotation": "fixed"
+      }
+    ],
+    "what_each_new_part_touches": [
+      "Three small dark pins are pushed into the far end of the 11-hole beam (two on top, one on the side)."
+    ],
+    "who_does_what_to_which": [
+      "rs-b11-1 carries rs-dp-1"
+    ],
+    "where_everything_is_after": [
+      "the beam has three dark pins at its far end",
+      "everything else: no change"
+    ],
+    "why": {
+      "problem_solved": "Adds posts for the next beams.",
+      "why_these_parts": "Pins locate parts above.",
+      "sets_up_for_later": "Step 147 adds beams.",
+      "design_pattern": "posts"
+    }
+  },
+  "confidence": "low",
+  "needs_review": true,
+  "review_note": "Positions estimated."
+}
