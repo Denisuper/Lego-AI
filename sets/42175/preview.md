@@ -17,11 +17,15 @@
 **Why:** Starts the undercarriage with a stiff rectangular base and four posts to hang the next beams on. A closed 5 x 7 frame stays square without extra bracing; long pins stick up far enough to carry two layers of beams. *Next:* Steps 2-4 slide the long beams onto these four posts. *Pattern:* pins in the corners
 
 **Big picture:**
-- **uc-frame-1** (Undercarriage frame): placeholder Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`; 42175-step-032 `CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?`; 42175-step-032 `DOES uc-frame-1 HOLDS sd-fpin-1`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
-- **uc-pin-1** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-1.pin2 -> uc-beam9-1.hole2~ STIFF`.
-- **uc-pin-2** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF`.
-- **uc-pin-3** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF`.
-- **uc-pin-4** (Undercarriage frame): placeholder Later: 42175-step-002 `CONNECT uc-pin-4.pin2 -> uc-beam9-2.hole8~ STIFF`.
+- **uc-frame-1** (Undercarriage frame): The main frame: a 5 x 7 open frame that is the heart of the undercarriage; everything in the lower body is pinned to it. Later: 42175-step-002 `DOES uc-beam9-1 SUPPORTS uc-frame-1`; 42175-step-015 `CONNECT uc-lpin-5.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?`; 42175-step-015 `CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?`; 42175-step-015 `DOES uc-lpin-5 HOLDS uc-frame-1`; 42175-step-032 `CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?`; 42175-step-032 `DOES uc-frame-1 HOLDS sd-fpin-1`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
+- **uc-pin-1** (Undercarriage frame): Pin (65304) in the undercarriage frame. Later: 42175-step-002 `CONNECT uc-pin-1.pin2 -> uc-beam9-1.hole2~ STIFF`.
+- **uc-pin-2** (Undercarriage frame): Pin (65304) in the undercarriage frame. Later: 42175-step-002 `CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF`.
+- **uc-pin-3** (Undercarriage frame): Pin (65304) in the undercarriage frame. Later: 42175-step-002 `CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF`.
+- **uc-pin-4** (Undercarriage frame): Pin (65304) in the undercarriage frame. Later: 42175-step-002 `CONNECT uc-pin-4.pin2 -> uc-beam9-2.hole8~ STIFF`.
+
+**Mechanisms:**
+- adds **uc-frame-1** to the undercarriage frame (rigid_frame) as main 5 x 7 frame: base of the lower body
+- frame: 1/17 parts - still missing uc-beam9-1, uc-beam9-2, uc-beam11-1, uc-beam11-2
 
 **Review:** The pin type is read from the small parts-box picture (black pin with a stop ring); the corner holes are named from the frame's catalog point list, not counted on the picture.
 
@@ -42,10 +46,13 @@
 **Why:** Doubles the thickness of the frame's long sides and gives free end holes for the next pins. A 9-hole beam is two holes longer than the 7-hole frame side, so the corner pins land in holes 2 and 8 and the end holes stay free. *Next:* Step 3 puts pins into those free end holes. *Pattern:* beams on posts
 
 **Big picture:**
-- **uc-beam9-1** (Undercarriage frame): placeholder Later: 42175-step-003 `CONNECT uc-apin-1.pin1 -> uc-beam9-1.hole1~ STIFF`; 42175-step-003 `CONNECT uc-apin-2.pin1 -> uc-beam9-1.hole9~ STIFF`; 42175-step-003 `DOES uc-apin-1 HOLDS uc-beam9-1`; 42175-step-004 `DOES uc-beam11-1 SUPPORTS uc-beam9-1`.
-- **uc-beam9-2** (Undercarriage frame): placeholder Later: 42175-step-003 `CONNECT uc-apin-3.pin1 -> uc-beam9-2.hole1~ STIFF`; 42175-step-003 `CONNECT uc-apin-4.pin1 -> uc-beam9-2.hole9~ STIFF`.
+- **uc-beam9-1** (Undercarriage frame): Beam (40490) in the undercarriage frame. Later: 42175-step-003 `CONNECT uc-apin-1.pin1 -> uc-beam9-1.hole1~ STIFF`; 42175-step-003 `CONNECT uc-apin-2.pin1 -> uc-beam9-1.hole9~ STIFF`; 42175-step-003 `DOES uc-apin-1 HOLDS uc-beam9-1`; 42175-step-004 `DOES uc-beam11-1 SUPPORTS uc-beam9-1`.
+- **uc-beam9-2** (Undercarriage frame): Beam (40490) in the undercarriage frame. Later: 42175-step-003 `CONNECT uc-apin-3.pin1 -> uc-beam9-2.hole1~ STIFF`; 42175-step-003 `CONNECT uc-apin-4.pin1 -> uc-beam9-2.hole9~ STIFF`.
 
 **Mechanisms:**
+- adds **uc-beam9-1** to the undercarriage frame (rigid_frame) as side rail beam
+- adds **uc-beam9-2** to the undercarriage frame (rigid_frame) as side rail beam
+- frame: 3/17 parts - still missing uc-beam11-1, uc-beam11-2, uc-beam15-1, uc-beam15-2
 - **uc-beam9-1** builds on uc-pin-1 (42175-step-001), which rests on uc-frame-1 (42175-step-001); uc-pin-3 (42175-step-001), which rests on uc-frame-1 (42175-step-001)
 - **uc-beam9-2** builds on uc-pin-2 (42175-step-001), which rests on uc-frame-1 (42175-step-001); uc-pin-4 (42175-step-001), which rests on uc-frame-1 (42175-step-001)
 
@@ -68,16 +75,16 @@
 **Why:** Adds the posts that the long outer beams will sit on. A pin with a collar keeps the sides rigid and is long enough to carry a further beam. *Next:* Step 4 lays the 11-hole beams over these pins. *Pattern:* end pins
 
 **Big picture:**
-- **uc-apin-1** (Undercarriage frame): placeholder Later: 42175-step-004 `CONNECT uc-apin-1.pin1 -> uc-beam11-1.hole1~ STIFF`.
-- **uc-apin-2** (Undercarriage frame): placeholder Later: 42175-step-004 `CONNECT uc-apin-2.pin1 -> uc-beam11-1.hole3~ STIFF`.
-- **uc-apin-3** (Undercarriage frame): placeholder Later: 42175-step-004 `CONNECT uc-apin-3.pin1 -> uc-beam11-2.hole1~ STIFF`.
-- **uc-apin-4** (Undercarriage frame): placeholder Later: 42175-step-004 `CONNECT uc-apin-4.pin1 -> uc-beam11-2.hole3~ STIFF`.
+- **uc-apin-1** (Undercarriage frame): Pin (18651) in the undercarriage frame. Later: 42175-step-004 `CONNECT uc-apin-1.pin1 -> uc-beam11-1.hole1~ STIFF`.
+- **uc-apin-2** (Undercarriage frame): Pin (18651) in the undercarriage frame. Later: 42175-step-004 `CONNECT uc-apin-2.pin1 -> uc-beam11-1.hole3~ STIFF`.
+- **uc-apin-3** (Undercarriage frame): Pin (18651) in the undercarriage frame. Later: 42175-step-004 `CONNECT uc-apin-3.pin1 -> uc-beam11-2.hole1~ STIFF`.
+- **uc-apin-4** (Undercarriage frame): Pin (18651) in the undercarriage frame. Later: 42175-step-004 `CONNECT uc-apin-4.pin1 -> uc-beam11-2.hole3~ STIFF`.
 
 **Mechanisms:**
-- **uc-apin-1** builds on uc-beam9-1 (42175-step-002), which rests on uc-pin-1 (42175-step-001), uc-pin-3 (42175-step-001)
-- **uc-apin-2** builds on uc-beam9-1 (42175-step-002), which rests on uc-pin-1 (42175-step-001), uc-pin-3 (42175-step-001)
-- **uc-apin-3** builds on uc-beam9-2 (42175-step-002), which rests on uc-pin-2 (42175-step-001), uc-pin-4 (42175-step-001)
-- **uc-apin-4** builds on uc-beam9-2 (42175-step-002), which rests on uc-pin-2 (42175-step-001), uc-pin-4 (42175-step-001)
+- **uc-apin-1** builds on uc-beam9-1 (42175-step-002, side rail beam in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-3 (42175-step-001)
+- **uc-apin-2** builds on uc-beam9-1 (42175-step-002, side rail beam in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-3 (42175-step-001)
+- **uc-apin-3** builds on uc-beam9-2 (42175-step-002, side rail beam in the undercarriage frame), which rests on uc-pin-2 (42175-step-001), uc-pin-4 (42175-step-001)
+- **uc-apin-4** builds on uc-beam9-2 (42175-step-002, side rail beam in the undercarriage frame), which rests on uc-pin-2 (42175-step-001), uc-pin-4 (42175-step-001)
 
 **Review:** Which end hole each pin takes (hole1 or hole9) is not important for the shape; marked as an estimate.
 
@@ -98,10 +105,13 @@
 **Why:** Widens and lengthens the base so it can carry the track rails later. 11 holes is long enough to stick out past the 9-hole beams at both ends; thick black beams are stiff. *Next:* Later steps hang the track wheels and the turntable parts off these rails. *Pattern:* long rails
 
 **Big picture:**
-- **uc-beam11-1** (Undercarriage frame): placeholder Later: 42175-step-007 `CONNECT uc-pin-5.pin1 -> uc-beam11-1.hole2~ STIFF`; 42175-step-007 `CONNECT uc-pin-6.pin1 -> uc-beam11-1.hole4~ STIFF`; 42175-step-007 `CONNECT uc-pin-7.pin1 -> uc-beam11-1.hole8~ STIFF`; 42175-step-007 `CONNECT uc-pin-8.pin1 -> uc-beam11-1.hole10~ STIFF`; 42175-step-007 `DOES uc-pin-5 HOLDS uc-beam11-1`; 42175-step-008 `CONNECT uc-tpin-1.pin1 -> uc-beam11-1.hole3~ TURNS`; 42175-step-008 `CONNECT uc-tpin-2.pin1 -> uc-beam11-1.hole9~ TURNS`; 42175-step-008 `CONNECT uc-tpin-3.pin1 -> uc-beam11-1.hole6~ TURNS`; 42175-step-008 `DOES uc-tpin-1 HOLDS uc-beam11-1`; 42175-step-010 `CONNECT trk-axle5-1.axle1 -> uc-beam11-1.hole1~ TURNS`; 42175-step-011 `CONNECT trk-axle4-1.axle1 -> uc-beam11-1.hole11~ TURNS`.
-- **uc-beam11-2** (Undercarriage frame): placeholder Later: 42175-step-007 `CONNECT uc-pin-9.pin1 -> uc-beam11-2.hole2~ STIFF`; 42175-step-007 `CONNECT uc-pin-10.pin1 -> uc-beam11-2.hole4~ STIFF`; 42175-step-007 `CONNECT uc-pin-11.pin1 -> uc-beam11-2.hole8~ STIFF`; 42175-step-007 `CONNECT uc-pin-12.pin1 -> uc-beam11-2.hole10~ STIFF`; 42175-step-008 `CONNECT uc-tpin-4.pin1 -> uc-beam11-2.hole3~ TURNS`; 42175-step-008 `CONNECT uc-tpin-5.pin1 -> uc-beam11-2.hole9~ TURNS`; 42175-step-008 `CONNECT uc-tpin-6.pin1 -> uc-beam11-2.hole6~ TURNS`; 42175-step-010 `CONNECT trk-axle5-2.axle1 -> uc-beam11-2.hole1~ TURNS`; 42175-step-011 `CONNECT trk-axle4-2.axle1 -> uc-beam11-2.hole11~ TURNS`.
+- **uc-beam11-1** (Undercarriage frame): Beam (32525) in the undercarriage frame. Later: 42175-step-007 `CONNECT uc-pin-5.pin1 -> uc-beam11-1.hole2~ STIFF`; 42175-step-007 `CONNECT uc-pin-6.pin1 -> uc-beam11-1.hole4~ STIFF`; 42175-step-007 `CONNECT uc-pin-7.pin1 -> uc-beam11-1.hole8~ STIFF`; 42175-step-007 `CONNECT uc-pin-8.pin1 -> uc-beam11-1.hole10~ STIFF`; 42175-step-007 `DOES uc-pin-5 HOLDS uc-beam11-1`; 42175-step-008 `CONNECT uc-tpin-1.pin1 -> uc-beam11-1.hole3~ TURNS`; 42175-step-008 `CONNECT uc-tpin-2.pin1 -> uc-beam11-1.hole9~ TURNS`; 42175-step-008 `CONNECT uc-tpin-3.pin1 -> uc-beam11-1.hole6~ TURNS`; 42175-step-008 `DOES uc-tpin-1 HOLDS uc-beam11-1`; 42175-step-010 `CONNECT trk-axle5-1.axle1 -> uc-beam11-1.hole1~ TURNS`; 42175-step-011 `CONNECT trk-axle4-1.axle1 -> uc-beam11-1.hole11~ TURNS`.
+- **uc-beam11-2** (Undercarriage frame): Beam (32525) in the undercarriage frame. Later: 42175-step-007 `CONNECT uc-pin-9.pin1 -> uc-beam11-2.hole2~ STIFF`; 42175-step-007 `CONNECT uc-pin-10.pin1 -> uc-beam11-2.hole4~ STIFF`; 42175-step-007 `CONNECT uc-pin-11.pin1 -> uc-beam11-2.hole8~ STIFF`; 42175-step-007 `CONNECT uc-pin-12.pin1 -> uc-beam11-2.hole10~ STIFF`; 42175-step-008 `CONNECT uc-tpin-4.pin1 -> uc-beam11-2.hole3~ TURNS`; 42175-step-008 `CONNECT uc-tpin-5.pin1 -> uc-beam11-2.hole9~ TURNS`; 42175-step-008 `CONNECT uc-tpin-6.pin1 -> uc-beam11-2.hole6~ TURNS`; 42175-step-010 `CONNECT trk-axle5-2.axle1 -> uc-beam11-2.hole1~ TURNS`; 42175-step-011 `CONNECT trk-axle4-2.axle1 -> uc-beam11-2.hole11~ TURNS`.
 
 **Mechanisms:**
+- adds **uc-beam11-1** to the undercarriage frame (rigid_frame) as cross beam
+- adds **uc-beam11-2** to the undercarriage frame (rigid_frame) as cross beam
+- frame: 5/17 parts - still missing uc-beam15-1, uc-beam15-2, uc-lbeam-1, uc-lbeam-2
 - **uc-beam11-1** builds on uc-apin-1 (42175-step-003), which rests on uc-beam9-1 (42175-step-002); uc-apin-2 (42175-step-003), which rests on uc-beam9-1 (42175-step-002)
 - **uc-beam11-2** builds on uc-apin-3 (42175-step-003), which rests on uc-beam9-2 (42175-step-002); uc-apin-4 (42175-step-003), which rests on uc-beam9-2 (42175-step-002)
 
@@ -124,26 +134,37 @@
 **Why:** Builds the two long side members that will carry the track wheels. Each side needs a very long 15-hole beam; the grey 5-hole beam and L-beams give it depth and hold the wheel axles. *Next:* Steps 6-12 add cross beams and the turntable base between these sides. *Pattern:* mirrored side builds
 
 **Big picture:**
-- **uc-lbeam-1** (Undercarriage frame): placeholder
-- **uc-lbeam-2** (Undercarriage frame): placeholder
-- **uc-lbeam-3** (Undercarriage frame): placeholder
-- **uc-lbeam-4** (Undercarriage frame): placeholder
-- **uc-beam15-1** (Undercarriage frame): placeholder
-- **uc-beam15-2** (Undercarriage frame): placeholder
-- **uc-beam5-1** (Undercarriage frame): placeholder
-- **uc-beam5-2** (Undercarriage frame): placeholder
-- **uc-bpin-1** (Undercarriage frame): placeholder
-- **uc-bpin-2** (Undercarriage frame): placeholder
-- **uc-bpin-3** (Undercarriage frame): placeholder
-- **uc-bpin-4** (Undercarriage frame): placeholder
-- **uc-lpin-1** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-1.pin1 -> sw-base-1.hole1~ STIFF`; 42175-step-017 `DOES uc-lpin-1 HOLDS sw-base-1`.
-- **uc-lpin-2** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF`.
-- **uc-lpin-3** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF`; 42175-step-017 `DOES uc-lpin-3 HOLDS sw-base-1`.
-- **uc-lpin-4** (Undercarriage frame): placeholder Later: 42175-step-017 `CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF`.
-- **uc-apin-5** (Undercarriage frame): placeholder
-- **uc-apin-6** (Undercarriage frame): placeholder
-- **uc-apin-7** (Undercarriage frame): placeholder
-- **uc-apin-8** (Undercarriage frame): placeholder
+- **uc-lbeam-1** (Undercarriage frame): Beam (32526) in the undercarriage frame.
+- **uc-lbeam-2** (Undercarriage frame): Beam (32526) in the undercarriage frame.
+- **uc-lbeam-3** (Undercarriage frame): Beam (32526) in the undercarriage frame.
+- **uc-lbeam-4** (Undercarriage frame): Beam (32526) in the undercarriage frame.
+- **uc-beam15-1** (Undercarriage frame): Beam (32278) in the undercarriage frame.
+- **uc-beam15-2** (Undercarriage frame): Beam (32278) in the undercarriage frame.
+- **uc-beam5-1** (Undercarriage frame): Beam (32316) in the undercarriage frame.
+- **uc-beam5-2** (Undercarriage frame): Beam (32316) in the undercarriage frame.
+- **uc-bpin-1** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-bpin-2** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-bpin-3** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-bpin-4** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-lpin-1** (Undercarriage frame): Pin (42924) in the undercarriage frame. Later: 42175-step-017 `CONNECT uc-lpin-1.pin1 -> sw-base-1.hole1~ STIFF`; 42175-step-017 `DOES uc-lpin-1 HOLDS sw-base-1`.
+- **uc-lpin-2** (Undercarriage frame): Pin (42924) in the undercarriage frame. Later: 42175-step-017 `CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF`.
+- **uc-lpin-3** (Undercarriage frame): Pin (42924) in the undercarriage frame. Later: 42175-step-017 `CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF`; 42175-step-017 `DOES uc-lpin-3 HOLDS sw-base-1`.
+- **uc-lpin-4** (Undercarriage frame): Pin (42924) in the undercarriage frame. Later: 42175-step-017 `CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF`.
+- **uc-apin-5** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-6** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-7** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-8** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+
+**Mechanisms:**
+- adds **uc-lbeam-1** to the undercarriage frame (rigid_frame) as L-beam corner
+- adds **uc-lbeam-2** to the undercarriage frame (rigid_frame) as L-beam corner
+- adds **uc-lbeam-3** to the undercarriage frame (rigid_frame) as L-beam corner
+- adds **uc-lbeam-4** to the undercarriage frame (rigid_frame) as L-beam corner
+- adds **uc-beam15-1** to the undercarriage frame (rigid_frame) as long side beam
+- adds **uc-beam15-2** to the undercarriage frame (rigid_frame) as long side beam
+- adds **uc-beam5-1** to the undercarriage frame (rigid_frame) as short beam
+- adds **uc-beam5-2** to the undercarriage frame (rigid_frame) as short beam
+- frame: 13/17 parts - still missing uc-beam7-1, uc-beam7-2, uc-beam7-3, uc-beam7-4
 
 **Review:** The sub-steps in the yellow box are listed as one step here. Part kinds are read from the parts box (4 L-beams, 2 x 15-beams, 2 grey 5-beams, 4 + 4 + 4 pins); only a few joins are listed (all are 'estimated'): the picture is too small to count the holes. A CONNECT between two beams without a pin (first join) is only a sketch of where they meet.
 
@@ -164,14 +185,21 @@
 **Why:** Ties the left and right sides together so the base can't spread. Short pins in the middle hole of a 7-hole beam centre it on the spot; four of them make the frame rigid. *Next:* Step 7 onward builds the turntable seat on top of these. *Pattern:* cross ties
 
 **Big picture:**
-- **uc-beam7-1** (Undercarriage frame): placeholder
-- **uc-beam7-2** (Undercarriage frame): placeholder
-- **uc-beam7-3** (Undercarriage frame): placeholder
-- **uc-beam7-4** (Undercarriage frame): placeholder
-- **uc-apin-9** (Undercarriage frame): placeholder
-- **uc-apin-10** (Undercarriage frame): placeholder
-- **uc-apin-11** (Undercarriage frame): placeholder
-- **uc-apin-12** (Undercarriage frame): placeholder
+- **uc-beam7-1** (Undercarriage frame): Beam (32524) in the undercarriage frame.
+- **uc-beam7-2** (Undercarriage frame): Beam (32524) in the undercarriage frame.
+- **uc-beam7-3** (Undercarriage frame): Beam (32524) in the undercarriage frame.
+- **uc-beam7-4** (Undercarriage frame): Beam (32524) in the undercarriage frame.
+- **uc-apin-9** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-10** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-11** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+- **uc-apin-12** (Undercarriage frame): Pin (18651) in the undercarriage frame.
+
+**Mechanisms:**
+- adds **uc-beam7-1** to the undercarriage frame (rigid_frame) as side beam
+- adds **uc-beam7-2** to the undercarriage frame (rigid_frame) as side beam
+- adds **uc-beam7-3** to the undercarriage frame (rigid_frame) as side beam
+- adds **uc-beam7-4** to the undercarriage frame (rigid_frame) as side beam
+- frame: 17/17 parts - complete
 
 **Review:** Where exactly the four cross beams land on the base is shown by the two black arrows; their pin holes are not countable in the picture.
 
@@ -192,32 +220,32 @@
 **Why:** Gives the track rollers and wheel carriers something to hang on. A blue axle pin in a long pin's cross hole makes a peg that is longer than any single pin and still friction-tight. *Next:* Step 8 and 9 put tan pins and the wheel carriers between and on these pegs. *Pattern:* extended pegs
 
 **Big picture:**
-- **uc-axpin-1** (Undercarriage frame): placeholder
-- **uc-axpin-2** (Undercarriage frame): placeholder
-- **uc-axpin-3** (Undercarriage frame): placeholder
-- **uc-axpin-4** (Undercarriage frame): placeholder
-- **uc-axpin-5** (Undercarriage frame): placeholder
-- **uc-axpin-6** (Undercarriage frame): placeholder
-- **uc-axpin-7** (Undercarriage frame): placeholder
-- **uc-axpin-8** (Undercarriage frame): placeholder
-- **uc-pin-5** (Undercarriage frame): placeholder
-- **uc-pin-6** (Undercarriage frame): placeholder
-- **uc-pin-7** (Undercarriage frame): placeholder
-- **uc-pin-8** (Undercarriage frame): placeholder
-- **uc-pin-9** (Undercarriage frame): placeholder
-- **uc-pin-10** (Undercarriage frame): placeholder
-- **uc-pin-11** (Undercarriage frame): placeholder
-- **uc-pin-12** (Undercarriage frame): placeholder
+- **uc-axpin-1** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-2** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-3** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-4** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-5** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-6** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-7** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-axpin-8** (Undercarriage frame): Pin (43093) in the undercarriage frame.
+- **uc-pin-5** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-6** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-7** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-8** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-9** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-10** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-11** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-pin-12** (Undercarriage frame): Pin (65304) in the undercarriage frame.
 
 **Mechanisms:**
-- **uc-pin-5** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-pin-6** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-pin-7** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-pin-8** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-pin-9** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
-- **uc-pin-10** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
-- **uc-pin-11** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
-- **uc-pin-12** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-pin-5** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-pin-6** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-pin-7** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-pin-8** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-pin-9** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-pin-10** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-pin-11** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-pin-12** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
 
 **Review:** Which holes of the outer rails take the pegs is an estimate (spacing read by eye); the exact hole count can't be read at this size.
 
@@ -238,20 +266,20 @@
 **Why:** Adds the spindles on which free-turning track rollers will run. Tan pins have no friction ridges, so a wheel on them spins freely. *Next:* Step 9 builds the roller carriers that hang on these. *Pattern:* free-spinning spindles
 
 **Big picture:**
-- **uc-tpin-1** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-1 SPINS_ON uc-tpin-1`.
-- **uc-tpin-2** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-2 SPINS_ON uc-tpin-2`.
-- **uc-tpin-3** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-3 SPINS_ON uc-tpin-3`.
-- **uc-tpin-4** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-4 SPINS_ON uc-tpin-4`.
-- **uc-tpin-5** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-5 SPINS_ON uc-tpin-5`.
-- **uc-tpin-6** (Undercarriage frame): placeholder Later: 42175-step-012 `DOES trk-roller-6 SPINS_ON uc-tpin-6`.
+- **uc-tpin-1** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-1 SPINS_ON uc-tpin-1`.
+- **uc-tpin-2** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-2 SPINS_ON uc-tpin-2`.
+- **uc-tpin-3** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-3 SPINS_ON uc-tpin-3`.
+- **uc-tpin-4** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-4 SPINS_ON uc-tpin-4`.
+- **uc-tpin-5** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-5 SPINS_ON uc-tpin-5`.
+- **uc-tpin-6** (Undercarriage frame): Pin (39888) in the undercarriage frame. Later: 42175-step-012 `DOES trk-roller-6 SPINS_ON uc-tpin-6`.
 
 **Mechanisms:**
-- **uc-tpin-1** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-tpin-2** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-tpin-3** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **uc-tpin-4** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
-- **uc-tpin-5** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
-- **uc-tpin-6** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-tpin-1** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-tpin-2** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-tpin-3** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **uc-tpin-4** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-tpin-5** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- **uc-tpin-6** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
 
 **Review:** Pin hole numbers are estimates read off the row spacing.
 
@@ -272,24 +300,31 @@
 **Why:** Adds the small rollers that the track will run on. Free-spinning wheels on pins keep friction low; the grey 5-hole beam is the right length to hold two wheels one track-link apart. *Next:* Steps 10 onward build the track wheels and the track loop around these rollers. *Pattern:* roller carrier
 
 **Big picture:**
-- **trk-beam5-1** (None): None
-- **trk-beam5-2** (None): None
-- **trk-axpin-1** (None): None
-- **trk-axpin-2** (None): None
-- **trk-axpin-3** (None): None
-- **trk-axpin-4** (None): None
-- **trk-tpin-1** (None): None
-- **trk-tpin-2** (None): None
-- **trk-tpin-3** (None): None
-- **trk-tpin-4** (None): None
-- **trk-wheel-1** (None): None
-- **trk-wheel-2** (None): None
-- **trk-wheel-3** (None): None
-- **trk-wheel-4** (None): None
-- **trk-tyre-1** (None): None
-- **trk-tyre-2** (None): None
-- **trk-tyre-3** (None): None
-- **trk-tyre-4** (None): None
+- **trk-beam5-1** (Tracks): Short track rail beam.
+- **trk-beam5-2** (Tracks): Short track rail beam.
+- **trk-axpin-1** (Tracks): Axle pin that holds a wheel on the rail.
+- **trk-axpin-2** (Tracks): Axle pin that holds a wheel on the rail.
+- **trk-axpin-3** (Tracks): Axle pin that holds a wheel on the rail.
+- **trk-axpin-4** (Tracks): Axle pin that holds a wheel on the rail.
+- **trk-tpin-1** (Tracks): Frictionless tan pin: free-turning bearing for a wheel.
+- **trk-tpin-2** (Tracks): Frictionless tan pin: free-turning bearing for a wheel.
+- **trk-tpin-3** (Tracks): Frictionless tan pin: free-turning bearing for a wheel.
+- **trk-tpin-4** (Tracks): Frictionless tan pin: free-turning bearing for a wheel.
+- **trk-wheel-1** (Tracks): Front wheel of the track.
+- **trk-wheel-2** (Tracks): Front wheel of the track.
+- **trk-wheel-3** (Tracks): Front wheel of the track.
+- **trk-wheel-4** (Tracks): Front wheel of the track.
+- **trk-tyre-1** (Tracks): Tyre on a front wheel.
+- **trk-tyre-2** (Tracks): Tyre on a front wheel.
+- **trk-tyre-3** (Tracks): Tyre on a front wheel.
+- **trk-tyre-4** (Tracks): Tyre on a front wheel.
+
+**Mechanisms:**
+- adds **trk-wheel-1** to the tracks (passive) (track_loop) as front wheel
+- adds **trk-wheel-2** to the tracks (passive) (track_loop) as front wheel
+- adds **trk-wheel-3** to the tracks (passive) (track_loop) as front wheel
+- adds **trk-wheel-4** to the tracks (passive) (track_loop) as front wheel
+- tracks: 4/78 parts - still missing trk-axle5-1, trk-axle5-2, trk-axle4-1, trk-axle4-2
 
 **Review:** The parts box shows tan x4, black x4 (pin with axle), 2 grey beams, 4 tyres and 4 wheels. Which of the two pin types goes in which hole was read from sub-steps 1-2 and is an estimate. The attachment holes on the undercarriage are not shown.
 
@@ -310,14 +345,19 @@
 **Why:** Starts the drive end of the track: the sprockets are the wheels whose teeth will grab the track links. The axle locks into the sprocket's cross hole but turns freely in the round beam hole, so the sprocket can spin. *Next:* Step 11 does the same at the other end. *Pattern:* sprocket on axle
 
 **Big picture:**
-- **trk-axle5-1** (None): None
-- **trk-axle5-2** (None): None
-- **trk-sprocket-1** (None): None
-- **trk-sprocket-2** (None): None
+- **trk-axle5-1** (Tracks): Axle that carries the sprocket.
+- **trk-axle5-2** (Tracks): Axle that carries the sprocket.
+- **trk-sprocket-1** (Tracks): Track sprocket (6 teeth) that grabs the links.
+- **trk-sprocket-2** (Tracks): Track sprocket (6 teeth) that grabs the links.
 
 **Mechanisms:**
-- **trk-axle5-1** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **trk-axle5-2** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- adds **trk-axle5-1** to the tracks (passive) (track_loop) as axle that carries a sprocket
+- adds **trk-axle5-2** to the tracks (passive) (track_loop) as axle that carries a sprocket
+- adds **trk-sprocket-1** to the tracks (passive) (track_loop) as sprocket wheel
+- adds **trk-sprocket-2** to the tracks (passive) (track_loop) as sprocket wheel
+- tracks: 8/78 parts - still missing trk-axle4-1, trk-axle4-2, trk-sprocket-3, trk-sprocket-4
+- **trk-axle5-1** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **trk-axle5-2** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
 
 **Review:** Which rail hole holds the axle is an estimate. The booklet part is a light grey axle with a ridge; read as Technic Axle 5 (1:1 callout not shown for this step).
 
@@ -338,14 +378,19 @@
 **Why:** Gives each track loop a sprocket at the front and at the back. A stop axle can't slide out of the sprocket from the inside. *Next:* Steps 12-20 add the middle rollers, then the track links wrap around all of them. *Pattern:* sprocket on axle
 
 **Big picture:**
-- **trk-axle4-1** (None): None
-- **trk-axle4-2** (None): None
-- **trk-sprocket-3** (None): None
-- **trk-sprocket-4** (None): None
+- **trk-axle4-1** (Tracks): Axle that carries the sprocket and passes through the beams.
+- **trk-axle4-2** (Tracks): Axle that carries the sprocket and passes through the beams.
+- **trk-sprocket-3** (Tracks): Track sprocket (6 teeth) that grabs the links.
+- **trk-sprocket-4** (Tracks): Track sprocket (6 teeth) that grabs the links.
 
 **Mechanisms:**
-- **trk-axle4-1** builds on uc-beam11-1 (42175-step-004), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
-- **trk-axle4-2** builds on uc-beam11-2 (42175-step-004), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
+- adds **trk-axle4-1** to the tracks (passive) (track_loop) as axle that carries a sprocket
+- adds **trk-axle4-2** to the tracks (passive) (track_loop) as axle that carries a sprocket
+- adds **trk-sprocket-3** to the tracks (passive) (track_loop) as sprocket wheel
+- adds **trk-sprocket-4** to the tracks (passive) (track_loop) as sprocket wheel
+- tracks: 12/78 parts - still missing trk-roller-1, trk-roller-2, trk-roller-3, trk-roller-4
+- **trk-axle4-1** builds on uc-beam11-1 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-1 (42175-step-003), uc-apin-2 (42175-step-003)
+- **trk-axle4-2** builds on uc-beam11-2 (42175-step-004, cross beam in the undercarriage frame), which rests on uc-apin-3 (42175-step-003), uc-apin-4 (42175-step-003)
 
 **Review:** Hole numbers are estimates.
 
@@ -366,12 +411,21 @@
 **Why:** Adds the lower rollers that carry the weight on the track. Tan pins have no friction ridges, so the wheel spins freely. *Next:* The track loop (steps 13-14) runs under and over these. *Pattern:* free-spinning roller
 
 **Big picture:**
-- **trk-roller-1** (None): None
-- **trk-roller-2** (None): None
-- **trk-roller-3** (None): None
-- **trk-roller-4** (None): None
-- **trk-roller-5** (None): None
-- **trk-roller-6** (None): None
+- **trk-roller-1** (Tracks): Roller that carries the track on its inside.
+- **trk-roller-2** (Tracks): Roller that carries the track on its inside.
+- **trk-roller-3** (Tracks): Roller that carries the track on its inside.
+- **trk-roller-4** (Tracks): Roller that carries the track on its inside.
+- **trk-roller-5** (Tracks): Roller that carries the track on its inside.
+- **trk-roller-6** (Tracks): Roller that carries the track on its inside.
+
+**Mechanisms:**
+- adds **trk-roller-1** to the tracks (passive) (track_loop) as roller under the rail
+- adds **trk-roller-2** to the tracks (passive) (track_loop) as roller under the rail
+- adds **trk-roller-3** to the tracks (passive) (track_loop) as roller under the rail
+- adds **trk-roller-4** to the tracks (passive) (track_loop) as roller under the rail
+- adds **trk-roller-5** to the tracks (passive) (track_loop) as roller under the rail
+- adds **trk-roller-6** to the tracks (passive) (track_loop) as roller under the rail
+- tracks: 18/78 parts - still missing trk-link-1, trk-link-2, trk-link-3, trk-link-4
 
 **Review:** The wheels have no catalog entry (not in the Technic parts list), so no point names are given.
 
@@ -392,20 +446,20 @@
 **Why:** Builds the long track frames that hold the wheels in line and give the track something to slide on. A 15-hole beam spans from sprocket to sprocket; two 9-hole beams under it add height so the track links ride flat. *Next:* Steps 14-16 cap the axle ends and wrap the track links around the whole assembly. *Pattern:* track rail
 
 **Big picture:**
-- **trk-beam15-1** (None): None
-- **trk-beam15-2** (None): None
-- **trk-beam9-1** (None): None
-- **trk-beam9-2** (None): None
-- **trk-beam9-3** (None): None
-- **trk-beam9-4** (None): None
-- **trk-pin-1** (None): None
-- **trk-pin-2** (None): None
-- **trk-pin-3** (None): None
-- **trk-pin-4** (None): None
-- **trk-pin-5** (None): None
-- **trk-pin-6** (None): None
-- **trk-pin-7** (None): None
-- **trk-pin-8** (None): None
+- **trk-beam15-1** (Tracks): Long track rail beam; carries the wheels and rollers.
+- **trk-beam15-2** (Tracks): Long track rail beam; carries the wheels and rollers.
+- **trk-beam9-1** (Tracks): Track rail beam.
+- **trk-beam9-2** (Tracks): Track rail beam.
+- **trk-beam9-3** (Tracks): Track rail beam.
+- **trk-beam9-4** (Tracks): Track rail beam.
+- **trk-pin-1** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-2** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-3** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-4** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-5** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-6** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-7** (Tracks): Friction pin that holds the track rail beams together.
+- **trk-pin-8** (Tracks): Friction pin that holds the track rail beams together.
 
 **Review:** Pin positions along the 15-hole beam are read by eye from sub-step 1 (pins near holes 1, 8, 10, 15) and are estimates. Which pin holds which 9-hole beam is not shown.
 
@@ -426,12 +480,12 @@
 **Why:** Covers the bare axle ends so they look finished and can't catch. Stacked round plates make a flat cap that matches the sprocket size. *Next:* Nothing else attaches here. *Pattern:* stacked cap
 
 **Big picture:**
-- **trk-capplate-1** (None): None
-- **trk-capplate-2** (None): None
-- **trk-capdisc-1** (None): None
-- **trk-capdisc-2** (None): None
-- **trk-captile-1** (None): None
-- **trk-captile-2** (None): None
+- **trk-capplate-1** (Tracks): Cap plate on the sprocket end.
+- **trk-capplate-2** (Tracks): Cap plate on the sprocket end.
+- **trk-capdisc-1** (Tracks): Cap disc on the sprocket end.
+- **trk-capdisc-2** (Tracks): Cap disc on the sprocket end.
+- **trk-captile-1** (Tracks): Cap tile on the sprocket end.
+- **trk-captile-2** (Tracks): Cap tile on the sprocket end.
 
 **Review:** Part numbers are matched by look and count (grey plate with a pin = 2476a, black round plate = 4032a, black round tile = 15535). Which sprocket axle (front or rear) takes the caps is shown by the arrows but not named.
 
@@ -452,16 +506,16 @@
 **Why:** Adds the posts the next layer (the turntable base) will hang from. Long pins with a stop bush reach through two layers. *Next:* The turntable base in the next bag sits on these. *Pattern:* posts
 
 **Big picture:**
-- **uc-lpin-5** (Undercarriage frame): placeholder
-- **uc-lpin-6** (Undercarriage frame): placeholder
-- **uc-lpin-7** (Undercarriage frame): placeholder
-- **uc-lpin-8** (Undercarriage frame): placeholder
+- **uc-lpin-5** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-lpin-6** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-lpin-7** (Undercarriage frame): Pin (65304) in the undercarriage frame.
+- **uc-lpin-8** (Undercarriage frame): Pin (65304) in the undercarriage frame.
 
 **Mechanisms:**
-- **uc-lpin-5** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
-- **uc-lpin-6** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
-- **uc-lpin-7** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
-- **uc-lpin-8** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+- **uc-lpin-5** builds on uc-frame-1 (42175-step-001, main 5 x 7 frame: base of the lower body in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+- **uc-lpin-6** builds on uc-frame-1 (42175-step-001, main 5 x 7 frame: base of the lower body in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+- **uc-lpin-7** builds on uc-frame-1 (42175-step-001, main 5 x 7 frame: base of the lower body in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+- **uc-lpin-8** builds on uc-frame-1 (42175-step-001, main 5 x 7 frame: base of the lower body in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
 
 **Review:** The picture shows four grey pins on the frame but the holes they use are not countable at this size, so the holes are marked ? (not shown).
 
@@ -482,66 +536,129 @@
 **Why:** Makes the tracks that the machine rolls on. Wide links with two clips each can be snapped together by hand; 30 links is the right length to go round the sprockets and rollers. *Next:* Everything above is built on the finished undercarriage. *Pattern:* track loop
 
 **Big picture:**
-- **trk-link-1** (None): None
-- **trk-link-2** (None): None
-- **trk-link-3** (None): None
-- **trk-link-4** (None): None
-- **trk-link-5** (None): None
-- **trk-link-6** (None): None
-- **trk-link-7** (None): None
-- **trk-link-8** (None): None
-- **trk-link-9** (None): None
-- **trk-link-10** (None): None
-- **trk-link-11** (None): None
-- **trk-link-12** (None): None
-- **trk-link-13** (None): None
-- **trk-link-14** (None): None
-- **trk-link-15** (None): None
-- **trk-link-16** (None): None
-- **trk-link-17** (None): None
-- **trk-link-18** (None): None
-- **trk-link-19** (None): None
-- **trk-link-20** (None): None
-- **trk-link-21** (None): None
-- **trk-link-22** (None): None
-- **trk-link-23** (None): None
-- **trk-link-24** (None): None
-- **trk-link-25** (None): None
-- **trk-link-26** (None): None
-- **trk-link-27** (None): None
-- **trk-link-28** (None): None
-- **trk-link-29** (None): None
-- **trk-link-30** (None): None
-- **trk-link-31** (None): None
-- **trk-link-32** (None): None
-- **trk-link-33** (None): None
-- **trk-link-34** (None): None
-- **trk-link-35** (None): None
-- **trk-link-36** (None): None
-- **trk-link-37** (None): None
-- **trk-link-38** (None): None
-- **trk-link-39** (None): None
-- **trk-link-40** (None): None
-- **trk-link-41** (None): None
-- **trk-link-42** (None): None
-- **trk-link-43** (None): None
-- **trk-link-44** (None): None
-- **trk-link-45** (None): None
-- **trk-link-46** (None): None
-- **trk-link-47** (None): None
-- **trk-link-48** (None): None
-- **trk-link-49** (None): None
-- **trk-link-50** (None): None
-- **trk-link-51** (None): None
-- **trk-link-52** (None): None
-- **trk-link-53** (None): None
-- **trk-link-54** (None): None
-- **trk-link-55** (None): None
-- **trk-link-56** (None): None
-- **trk-link-57** (None): None
-- **trk-link-58** (None): None
-- **trk-link-59** (None): None
-- **trk-link-60** (None): None
+- **trk-link-1** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-2** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-3** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-4** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-5** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-6** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-7** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-8** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-9** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-10** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-11** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-12** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-13** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-14** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-15** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-16** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-17** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-18** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-19** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-20** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-21** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-22** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-23** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-24** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-25** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-26** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-27** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-28** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-29** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-30** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-31** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-32** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-33** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-34** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-35** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-36** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-37** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-38** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-39** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-40** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-41** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-42** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-43** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-44** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-45** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-46** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-47** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-48** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-49** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-50** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-51** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-52** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-53** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-54** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-55** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-56** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-57** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-58** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-59** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+- **trk-link-60** (Tracks): Track link: one of 60 links of the loop; teeth of the sprockets sit in it.
+
+**Mechanisms:**
+- adds **trk-link-1** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-2** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-3** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-4** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-5** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-6** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-7** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-8** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-9** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-10** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-11** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-12** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-13** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-14** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-15** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-16** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-17** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-18** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-19** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-20** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-21** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-22** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-23** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-24** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-25** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-26** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-27** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-28** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-29** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-30** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-31** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-32** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-33** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-34** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-35** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-36** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-37** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-38** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-39** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-40** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-41** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-42** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-43** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-44** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-45** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-46** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-47** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-48** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-49** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-50** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-51** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-52** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-53** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-54** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-55** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-56** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-57** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-58** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-59** to the tracks (passive) (track_loop) as track link
+- adds **trk-link-60** to the tracks (passive) (track_loop) as track link
+- tracks: 78/78 parts - complete
 
 **Review:** The link join is the bar of one link in the clip of the next (as in set 8047). The exact way the loops sit on the sprocket teeth is not shown in detail. Looks complete: 2 x 30 links as the callout says.
 
@@ -562,14 +679,21 @@
 **Why:** Gives the machine a ring that lets the whole upper body swing round on the tracks. A slewing ring (grey base + black top) is the Technic version of a real excavator's swing bearing; the four long pins already waiting in the frame lock the base without extra parts. *Next:* Everything from step 18 onward that is part of the upper body is built on the black top ring. *Pattern:* turntable on pins
 
 **Big picture:**
-- **sw-top-1** (None): None Later: 42175-step-019 `CONNECT up-lpin-5.pin1 -> sw-top-1.hole?`.
-- **sw-base-1** (None): None
-- **sw-bpin-1** (None): None Later: 42175-step-018 `CONNECT sw-bpin-1.pin2 -> pm-beam15-1.hole3~ STIFF`; 42175-step-018 `DOES sw-bpin-1 HOLDS pm-beam15-1`.
-- **sw-bpin-2** (None): None Later: 42175-step-018 `CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF`.
-- **sw-bpin-3** (None): None Later: 42175-step-018 `CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF`.
-- **sw-bpin-4** (None): None Later: 42175-step-018 `CONNECT sw-bpin-4.pin2 -> pm-beam15-2.hole12~ STIFF`.
+- **sw-top-1** (Swing turntable): Top half of the swing turntable: the upper machine is built on it and turns on it. Later: 42175-step-019 `CONNECT up-lpin-5.pin1 -> sw-top-1.hole?`.
+- **sw-base-1** (Swing turntable): Fixed half of the turntable, pinned to the undercarriage; holds the 60 teeth the top half runs on.
+- **sw-bpin-1** (Swing turntable): Pin (42924) in the swing turntable. Later: 42175-step-018 `CONNECT sw-bpin-1.pin2 -> pm-beam15-1.hole3~ STIFF`; 42175-step-018 `DOES sw-bpin-1 HOLDS pm-beam15-1`.
+- **sw-bpin-2** (Swing turntable): Pin (42924) in the swing turntable. Later: 42175-step-018 `CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF`.
+- **sw-bpin-3** (Swing turntable): Pin (42924) in the swing turntable. Later: 42175-step-018 `CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF`.
+- **sw-bpin-4** (Swing turntable): Pin (42924) in the swing turntable. Later: 42175-step-018 `CONNECT sw-bpin-4.pin2 -> pm-beam15-2.hole12~ STIFF`.
 
 **Mechanisms:**
+- adds **sw-top-1** to the swing turntable (slewing_ring) as turning half
+- adds **sw-base-1** to the swing turntable (slewing_ring) as fixed half
+- adds **sw-bpin-1** to the swing turntable (slewing_ring) as blue pin that fixes the base
+- adds **sw-bpin-2** to the swing turntable (slewing_ring) as blue pin that fixes the base
+- adds **sw-bpin-3** to the swing turntable (slewing_ring) as blue pin that fixes the base
+- adds **sw-bpin-4** to the swing turntable (slewing_ring) as blue pin that fixes the base
+- swing: 6/6 parts - complete
 - **sw-base-1** builds on uc-lpin-1 (42175-step-005); uc-lpin-2 (42175-step-005); uc-lpin-3 (42175-step-005); uc-lpin-4 (42175-step-005)
 
 **Review:** The four pins that lock the base are the grey pins of step 15. Which of the base's six side holes (hole1-3 left, hole4-6 right) each one takes is an estimate (two per side). The blue pins go into the top ring's blocks; their exact holes are not named.
@@ -591,21 +715,24 @@
 **Why:** Builds the air pump that will later power the arm's air cylinders. A pump with a plunger pushed by hand pushes air through hoses; the two beams make a light frame for it. *Next:* Steps 19-21 build the side frames and cross beam around the pump on the turntable. *Pattern:* pneumatic pump deck
 
 **Big picture:**
-- **pm-beam15-1** (None): None
-- **pm-beam15-2** (None): None
-- **pm-lpin-1** (None): None
-- **pm-lpin-2** (None): None
-- **pm-lpin-3** (None): None
-- **pm-lpin-4** (None): None
-- **pm-apin-1** (None): None
-- **pm-hub-1** (None): None
-- **pm-conn-1** (None): None
-- **pm-hose-1** (None): None
-- **pm-pump-1** (None): None
+- **pm-beam15-1** (Air system): Beam (32278) in the air (pneumatic) system.
+- **pm-beam15-2** (Air system): Beam (32278) in the air (pneumatic) system.
+- **pm-lpin-1** (Air system): Pin (42924) in the air (pneumatic) system.
+- **pm-lpin-2** (Air system): Pin (42924) in the air (pneumatic) system.
+- **pm-lpin-3** (Air system): Pin (42924) in the air (pneumatic) system.
+- **pm-lpin-4** (Air system): Pin (42924) in the air (pneumatic) system.
+- **pm-apin-1** (Air system): Pin (43093) in the air (pneumatic) system.
+- **pm-hub-1** (Air system): Pin (44874) in the air (pneumatic) system.
+- **pm-conn-1** (Air system): Connector (6536) in the air (pneumatic) system.
+- **pm-hose-1** (Air system): Air hose (5102c04) in the air (pneumatic) system.
+- **pm-pump-1** (Air system): Pneumatic pump (11L): pushing it makes air that the switches send to the cylinders.
 
 **Mechanisms:**
-- **pm-beam15-1** builds on sw-bpin-1 (42175-step-017); sw-bpin-3 (42175-step-017)
-- **pm-beam15-2** builds on sw-bpin-2 (42175-step-017); sw-bpin-4 (42175-step-017)
+- adds **pm-hose-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as short hose from the pump *(not confirmed)*
+- adds **pm-pump-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as pump (11L)
+- air: 2/15 parts - still missing hy-tee-1, hy-valve-1, hy-valve-2, hy-hose-1
+- **pm-beam15-1** builds on sw-bpin-1 (42175-step-017, blue pin that fixes the base in the swing turntable); sw-bpin-3 (42175-step-017, blue pin that fixes the base in the swing turntable)
+- **pm-beam15-2** builds on sw-bpin-2 (42175-step-017, blue pin that fixes the base in the swing turntable); sw-bpin-4 (42175-step-017, blue pin that fixes the base in the swing turntable)
 
 **Review:** Part numbers are likely (pump = 26288, hose 5102c04 from the 1:1 length check). Pin holes along the beams are rough estimates read from the picture. The pump's own points aren't in the catalog, so no join to the pump is written. Red box on page 19: pushing the black top up and down must move it; confirmation check only.
 
@@ -626,18 +753,18 @@
 **Why:** Starts the walls of the upper body around the pump. A 5 x 7 frame is stiff and its many holes take pins for the next layers; the L-beam is a tall post. *Next:* Step 20 builds the same on the other side; step 21 joins the two with a long beam. *Pattern:* side frame
 
 **Big picture:**
-- **up-frame-1** (None): None Later: 42175-step-021 `DOES up-beam15-1 SUPPORTS up-frame-1`.
-- **up-lbeam-1** (None): None Later: 42175-step-024 `DOES up-axle5-1 HOLDS up-lbeam-1`; 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?`.
-- **up-lpin-1** (None): None Later: 42175-step-022 `CONNECT hy-valve-1.hole? -> up-lpin-1.pin1`.
-- **up-lpin-2** (None): None
-- **up-lpin-3** (None): None
-- **up-lpin-4** (None): None
-- **up-lpin-5** (None): None
-- **up-bpin-1** (None): None
-- **up-bpin-2** (None): None
+- **up-frame-1** (Upper frame): Beam (64179) in the upper frame that sits on the turntable. Later: 42175-step-021 `DOES up-beam15-1 SUPPORTS up-frame-1`.
+- **up-lbeam-1** (Upper frame): Beam (32526) in the upper frame that sits on the turntable. Later: 42175-step-024 `DOES up-axle5-1 HOLDS up-lbeam-1`; 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?`.
+- **up-lpin-1** (Upper frame): Pin (65304) in the upper frame that sits on the turntable. Later: 42175-step-022 `CONNECT hy-valve-1.hole? -> up-lpin-1.pin1`.
+- **up-lpin-2** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-lpin-3** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-lpin-4** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-lpin-5** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-bpin-1** (Upper frame): Pin (42924) in the upper frame that sits on the turntable.
+- **up-bpin-2** (Upper frame): Pin (42924) in the upper frame that sits on the turntable.
 
 **Mechanisms:**
-- **up-lpin-5** builds on sw-top-1 (42175-step-017)
+- **up-lpin-5** builds on sw-top-1 (42175-step-017, turning half in the swing turntable)
 
 **Review:** Which frame holes take each pin is not countable in the picture, so most joins are marked ? (not shown). The fifth grey pin (parts box 5x) goes through the pump deck; see the green arrows.
 
@@ -658,14 +785,14 @@
 **Why:** Gives the upper body a wall on both sides of the pump. Mirror of step 19 so the two walls match. *Next:* Step 21 ties the two frames together across the top. *Pattern:* mirrored side frame
 
 **Big picture:**
-- **up-frame-2** (None): None Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`; 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`.
-- **up-lbeam-2** (None): None Later: 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?`.
-- **up-lpin-6** (None): None Later: 42175-step-022 `CONNECT hy-valve-2.hole? -> up-lpin-6.pin1`.
-- **up-lpin-7** (None): None
-- **up-lpin-8** (None): None
-- **up-lpin-9** (None): None
-- **up-bpin-3** (None): None
-- **up-bpin-4** (None): None
+- **up-frame-2** (Upper frame): Beam (64179) in the upper frame that sits on the turntable. Later: 42175-step-028 `CONNECT up-spin-1.pin1 -> up-frame-2.hole?`; 42175-step-028 `CONNECT up-spin-2.pin1 -> up-frame-2.hole?`; 42175-step-028 `DOES up-spin-1 HOLDS up-frame-2`; 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`.
+- **up-lbeam-2** (Upper frame): Beam (32526) in the upper frame that sits on the turntable. Later: 42175-step-112 `CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?`.
+- **up-lpin-6** (Upper frame): Pin (65304) in the upper frame that sits on the turntable. Later: 42175-step-022 `CONNECT hy-valve-2.hole? -> up-lpin-6.pin1`.
+- **up-lpin-7** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-lpin-8** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-lpin-9** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-bpin-3** (Upper frame): Pin (42924) in the upper frame that sits on the turntable.
+- **up-bpin-4** (Upper frame): Pin (42924) in the upper frame that sits on the turntable.
 
 **Review:** Joins are marked ? because the pin holes are hidden. The model is shown from a new angle (turned round) in this step.
 
@@ -686,9 +813,9 @@
 **Why:** Ties the two upright frames into one rigid structure over the pump. A long beam reaches from one frame to the other; the hub and red pin add a mounting point for the next parts. *Next:* The cab frame is built on this beam. *Pattern:* cross beam
 
 **Big picture:**
-- **up-beam15-1** (None): None
-- **up-hub-1** (None): None
-- **up-rpin-1** (None): None
+- **up-beam15-1** (Upper frame): Beam (32278) in the upper frame that sits on the turntable.
+- **up-hub-1** (Upper frame): Pin (44874) in the upper frame that sits on the turntable.
+- **up-rpin-1** (Upper frame): Pin (89678) in the upper frame that sits on the turntable.
 
 **Review:** The beam rests on the pins sticking out of both side frames; exactly which pins it sits on is not labeled. Hub holes are estimates.
 
@@ -709,13 +836,19 @@
 **Why:** Starts the air plumbing: this line will carry air from the pump to the two air cylinders. A T-piece splits the pump's air into two branches; a switch block on each branch lets the driver choose which cylinder moves. *Next:* Steps 24 and later fit the cylinders and the pump hose. *Pattern:* air line with switches
 
 **Big picture:**
-- **hy-tee-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`; 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`.
-- **hy-valve-1** (None): None Later: 42175-step-026 `DOES hy-valve-1 HOLDS hy-hose-3`; 42175-step-110 `DOES hy-valve-1 DRIVES hy-hose-7`.
-- **hy-valve-2** (None): None Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`.
-- **hy-hose-1** (None): None Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
-- **hy-hose-2** (None): None Later: 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`; 42175-step-029 `DOES up-panel-1 SUPPORTS hy-hose-2`.
+- **hy-tee-1** (Air system): Air T-piece: splits one air line to two places. Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`; 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`.
+- **hy-valve-1** (Air system): Pneumatic switch: a lever that chooses which way the air goes. Later: 42175-step-026 `DOES hy-valve-1 HOLDS hy-hose-3`; 42175-step-110 `DOES hy-valve-1 DRIVES hy-hose-7`.
+- **hy-valve-2** (Air system): Pneumatic switch: a second lever for the other cylinder. Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`.
+- **hy-hose-1** (Air system): Air hose (5102c06) in the air (pneumatic) system. Later: 42175-step-027 `DOES hy-hose-1 CARRIES hy-tee-1`.
+- **hy-hose-2** (Air system): Air hose (5102c06) in the air (pneumatic) system. Later: 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`; 42175-step-029 `DOES up-panel-1 SUPPORTS hy-hose-2`.
 
 **Mechanisms:**
+- adds **hy-tee-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as T-piece: splits the air line *(not confirmed)*
+- adds **hy-valve-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as switch lever *(not confirmed)*
+- adds **hy-valve-2** to the air system (pump, switches, cylinders) (pneumatic_circuit) as switch lever *(not confirmed)*
+- adds **hy-hose-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- adds **hy-hose-2** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- air: 7/15 parts - still missing hy-hose-3, hy-hose-4, hy-hose-5, hy-hose-6
 - **hy-valve-1** builds on up-lpin-1 (42175-step-019), which rests on up-frame-1 (42175-step-019)
 - **hy-valve-2** builds on up-lpin-6 (42175-step-020), which rests on up-frame-2 (42175-step-020)
 
@@ -738,16 +871,16 @@
 **Why:** Builds the two tall supports that the air cylinder will hang between. An L-beam with a 5-hole beam on its tall leg gives a post two pin holes wide, so a cylinder pivot pin can pass through. *Next:* Step 24 puts the cylinder between these posts. *Pattern:* twin posts
 
 **Big picture:**
-- **up-pin-1** (None): None
-- **up-pin-2** (None): None
-- **up-pin-3** (None): None
-- **up-pin-4** (None): None
-- **up-pin-5** (None): None
-- **up-pin-6** (None): None
-- **up-beam5-1** (None): None
-- **up-beam5-2** (None): None
-- **up-lbeam-3** (None): None
-- **up-lbeam-4** (None): None
+- **up-pin-1** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-pin-2** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-pin-3** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-pin-4** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-pin-5** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-pin-6** (Upper frame): Pin (4274) in the upper frame that sits on the turntable.
+- **up-beam5-1** (Upper frame): Beam (32316) in the upper frame that sits on the turntable.
+- **up-beam5-2** (Upper frame): Beam (32316) in the upper frame that sits on the turntable.
+- **up-lbeam-3** (Upper frame): Beam (32526) in the upper frame that sits on the turntable.
+- **up-lbeam-4** (Upper frame): Beam (32526) in the upper frame that sits on the turntable.
 
 **Review:** Small pins are read from the parts box as light-grey short pins (6x). Hole numbers are estimates.
 
@@ -768,10 +901,14 @@
 **Why:** Adds the first air cylinder. A cylinder with a pivot axle can swing up and down as air pushes the rod. *Next:* It will drive the upper body's arm later. *Pattern:* pivoting cylinder
 
 **Big picture:**
-- **hy-cyl-1** (None): None Later: 42175-step-026 `DOES hy-cyl-1 HOLDS hy-hose-4`; 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`.
-- **up-beam2-1** (None): None
-- **up-axle5-1** (None): None Later: 42175-step-025 `CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5`; 42175-step-025 `DOES up-conn-1 LOCKS up-axle5-1`.
-- **hy-pin-1** (None): None
+- **hy-cyl-1** (Air system): Air cylinder (first one, steps 22-26): its rod pushes when air arrives. Later: 42175-step-026 `DOES hy-cyl-1 HOLDS hy-hose-4`; 42175-step-027 `DOES hy-hose-2 CARRIES hy-cyl-1`.
+- **up-beam2-1** (Upper frame): Beam (43857) in the upper frame that sits on the turntable.
+- **up-axle5-1** (Upper frame): Axle (32073) in the upper frame that sits on the turntable. Later: 42175-step-025 `CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5`; 42175-step-025 `DOES up-conn-1 LOCKS up-axle5-1`.
+- **hy-pin-1** (Air system): Pin (77765) in the air (pneumatic) system.
+
+**Mechanisms:**
+- adds **hy-cyl-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as cylinder at the arm base
+- air: 8/15 parts - still missing hy-hose-3, hy-hose-4, hy-hose-5, hy-hose-6
 
 **Review:** The cylinder has no catalog points, so joins to it are only shown in DOES lines. The loose grey pin (5th part of the parts box) is used near the rod end; where is not visible here.
 
@@ -792,7 +929,7 @@
 **Why:** Stops the cylinder pivot axle from slipping out. A smooth axle connector with a cross hole grips the axle end. *Next:* The model is ready for the cab frame in the next step. *Pattern:* axle stop
 
 **Big picture:**
-- **up-conn-1** (None): None
+- **up-conn-1** (Upper frame): Connector (59443) in the upper frame that sits on the turntable.
 
 **Mechanisms:**
 - **up-conn-1** builds on up-axle5-1 (42175-step-024)
@@ -816,8 +953,13 @@
 **Why:** Brings the two long hoses into the model before they are plugged in. The two lengths were checked 1:1 so the right one goes to each nozzle. *Next:* Step 27 plugs them onto the cylinder, switch blocks and T-piece. *Pattern:* air hoses
 
 **Big picture:**
-- **hy-hose-3** (None): None
-- **hy-hose-4** (None): None
+- **hy-hose-3** (Air system): Air hose (5102c20) in the air (pneumatic) system.
+- **hy-hose-4** (Air system): Air hose (5102c29) in the air (pneumatic) system.
+
+**Mechanisms:**
+- adds **hy-hose-3** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- adds **hy-hose-4** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- air: 10/15 parts - still missing hy-hose-5, hy-hose-6, hy-hose-7, hy-hose-8
 
 **Review:** Hose lengths come from the 1:1 length bars (grey 16 cm = 5102c20, black 23 cm = 5102c29). No picture shows the join yet, so the DOES lines are the planned ones from step 27.
 
@@ -859,8 +1001,8 @@
 **Why:** Adds the posts for the next cover panel. The pins are the same type used elsewhere in the model. *Next:* Step 29 lowers a panel onto them. *Pattern:* posts for panel
 
 **Big picture:**
-- **up-spin-1** (None): None
-- **up-spin-2** (None): None
+- **up-spin-1** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-2** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
 
 **Mechanisms:**
 - **up-spin-1** builds on up-frame-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
@@ -885,13 +1027,13 @@
 **Why:** Closes the top of the rear section and gives a flat base for the cab. A panel is wide and flat, so it covers hoses and adds stiffness. *Next:* The cab frame in steps 30 onward sits on it. *Pattern:* panel on pins
 
 **Big picture:**
-- **up-panel-1** (None): None Later: 42175-step-112 `DOES up-gb13-1 SUPPORTS up-panel-1`.
-- **up-spin-3** (None): None
-- **up-spin-4** (None): None
-- **up-spin-5** (None): None
-- **up-spin-6** (None): None
-- **up-spin-7** (None): None
-- **up-spin-8** (None): None
+- **up-panel-1** (Upper frame): Panel that covers the rear of the upper frame and the hoses under it. Later: 42175-step-112 `DOES up-gb13-1 SUPPORTS up-panel-1`.
+- **up-spin-3** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-4** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-5** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-6** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-7** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
+- **up-spin-8** (Upper frame): Pin (65304) in the upper frame that sits on the turntable.
 
 **Review:** The panel has 3 x 11 holes on its top; pin holes used are not countable so joins are marked ?.
 
@@ -912,15 +1054,15 @@
 **Why:** Builds the first side-body piece with its cosmetic fairings. A long beam with pins gives mounting points; fairings 7 and 8 round off the shape. *Next:* Step 31 fits it to the model. *Pattern:* beam with fairings
 
 **Big picture:**
-- **up-beam11-1** (None): None
-- **up-tbeam-1** (None): None
-- **up-tbeam-2** (None): None
-- **up-bpin-5** (None): None
-- **up-bpin-6** (None): None
-- **up-bpin-7** (None): None
-- **up-bpin-8** (None): None
-- **fr-fair7-1** (None): None
-- **fr-fair8-1** (None): None
+- **up-beam11-1** (Upper frame): Beam (32525) in the upper frame that sits on the turntable.
+- **up-tbeam-1** (Upper frame): Beam (41677) in the upper frame that sits on the turntable.
+- **up-tbeam-2** (Upper frame): Beam (41677) in the upper frame that sits on the turntable.
+- **up-bpin-5** (Upper frame): Pin (43093) in the upper frame that sits on the turntable.
+- **up-bpin-6** (Upper frame): Pin (43093) in the upper frame that sits on the turntable.
+- **up-bpin-7** (Upper frame): Pin (43093) in the upper frame that sits on the turntable.
+- **up-bpin-8** (Upper frame): Pin (43093) in the upper frame that sits on the turntable.
+- **fr-fair7-1** (Fairings): Panel or fairing (2387) in the fairings on the upper frame.
+- **fr-fair8-1** (Fairings): Panel or fairing (2389) in the fairings on the upper frame.
 
 **Review:** The booklet circles 7 and 8 refer to fairing part numbers. The pin type (43093 vs 42924) cannot be told apart in the sub-step pictures; both blue pins are read as 43093 from the parts box. This sub-build is not attached yet; attachment is in step 31.
 
@@ -928,7 +1070,7 @@
 
 ![42175-step-031](steps/main-031/picture.png)
 
-**New parts:** sd-panel-1 (71709, black) - black 3 x 7 panel, base of this small build; sd-gpin-1 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gpin-2 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gbeam-1 (43857, dark bluish gray) - grey 1 x 2 thick beam slid over the blue pins (sub-step 2); sd-bpin-1 (43093, blue) - two blue pins standing out of the panel end; sd-bpin-2 (43093, blue) - two blue pins standing out of the panel end; sd-lbeam-1 (32140, black) - black 2 x 4 L-beam at the end of the long beam (sub-step 3); sd-beam15-1 (71710, black) - black 15-hole beam laid along the panel (sub-step 3, 1:1 length check)
+**New parts:** sd-panel-1 (71709, black) - black 3 x 7 panel, base of this small build; sd-gpin-1 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gpin-2 (4274, light bluish gray) - two small grey pins pushed into the panel's end holes (sub-step 1, green arrow); sd-gbeam-1 (32523, dark bluish gray) - grey 1 x 3 thick beam slid over the blue pins (sub-step 2); sd-bpin-1 (43093, blue) - two blue pins standing out of the panel end; sd-bpin-2 (43093, blue) - two blue pins standing out of the panel end; sd-lbeam-1 (32526, black) - black 3 x 5 L-beam at the end of the long beam (sub-step 3); sd-beam15-1 (71710, black) - black 15-hole beam laid along the panel (sub-step 3, 1:1 length check)
 
 **Touches:** Sub-steps 1-3: grey pins go into the panel, a grey beam is pressed over the two blue pins, then the 15-hole beam and the L-beam are laid on and locked by the blue pins. A 1:1 box confirms the 15-hole beam.
 
@@ -941,14 +1083,14 @@
 **Why:** Builds the long side piece that rides along the cab frame. A 15-hole beam spans the whole side; the panel and L-beam add stiffness and mounting points. *Next:* Step 32 and 33 add pins and a small yellow part to the model before this piece is fitted. *Pattern:* side beam
 
 **Big picture:**
-- **sd-panel-1** (None): None
-- **sd-gpin-1** (None): None
-- **sd-gpin-2** (None): None
-- **sd-gbeam-1** (None): None
-- **sd-bpin-1** (None): None
-- **sd-bpin-2** (None): None
-- **sd-lbeam-1** (None): None
-- **sd-beam15-1** (None): None
+- **sd-panel-1** (Cab side build): Panel or fairing (71709) in the left cab-side build.
+- **sd-gpin-1** (Cab side build): Pin (4274) in the left cab-side build.
+- **sd-gpin-2** (Cab side build): Pin (4274) in the left cab-side build.
+- **sd-gbeam-1** (Cab side build): Beam (43857) in the left cab-side build.
+- **sd-bpin-1** (Cab side build): Pin (43093) in the left cab-side build.
+- **sd-bpin-2** (Cab side build): Pin (43093) in the left cab-side build.
+- **sd-lbeam-1** (Cab side build): Beam (32140) in the left cab-side build.
+- **sd-beam15-1** (Cab side build): Beam (71710) in the left cab-side build.
 
 **Review:** Exact holes are not countable from the picture. The small grey part in the box is read as a thick 1 x 2 beam (43857); it could be a different grey part.
 
@@ -969,10 +1111,10 @@
 **Why:** Adds a post for a part that is fitted in step 33. A friction pin holds a part firmly without extra pieces. *Next:* Step 33 places a small yellow assembly over it. *Pattern:* post pin
 
 **Big picture:**
-- **sd-fpin-1** (None): None Later: 42175-step-033 `CONNECT sd-conn-1.axlehole1 -> sd-fpin-1.axle1?`; 42175-step-034 `CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole4?`; 42175-step-034 `DOES sd-fpin-1 HOLDS cb-ybeam-1`.
+- **sd-fpin-1** (Cab side build): Pin (43093) in the left cab-side build. Later: 42175-step-033 `CONNECT sd-conn-1.axlehole1 -> sd-fpin-1.axle1?`; 42175-step-034 `CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole4?`; 42175-step-034 `DOES sd-fpin-1 HOLDS cb-ybeam-1`.
 
 **Mechanisms:**
-- **sd-fpin-1** builds on uc-frame-1 (42175-step-001), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
+- **sd-fpin-1** builds on uc-frame-1 (42175-step-001, main 5 x 7 frame: base of the lower body in the undercarriage frame), which rests on uc-pin-1 (42175-step-001), uc-pin-2 (42175-step-001)
 
 **Review:** Which frame hole receives the pin is not countable.
 
@@ -993,13 +1135,13 @@
 **Why:** Builds the pivot for a moving link at the front. Yellow beams are used for the visible, moving part. *Next:* Later steps hang a link on the long pin. *Pattern:* pivot
 
 **Big picture:**
-- **sd-hub-1** (None): None
-- **sd-rpin-1** (None): None
-- **sd-ybeam-1** (None): None
-- **sd-ybeam-2** (None): None
-- **sd-conn-1** (None): None
-- **sd-hub2-1** (None): None
-- **sd-lpin-1** (None): None
+- **sd-hub-1** (Cab side build): Connector (22961) in the left cab-side build.
+- **sd-rpin-1** (Cab side build): Pin (89678) in the left cab-side build.
+- **sd-ybeam-1** (Cab side build): Beam (41677) in the left cab-side build.
+- **sd-ybeam-2** (Cab side build): Beam (41677) in the left cab-side build.
+- **sd-conn-1** (Cab side build): Connector (42003) in the left cab-side build.
+- **sd-hub2-1** (Cab side build): Pin (44874) in the left cab-side build.
+- **sd-lpin-1** (Cab side build): Pin (65304) in the left cab-side build.
 
 **Mechanisms:**
 - **sd-conn-1** builds on sd-fpin-1 (42175-step-032), which rests on uc-frame-1 (42175-step-001)
@@ -1023,10 +1165,10 @@
 **Why:** Makes three posts for the front hinge parts built next. An L-beam with pins gives several mounting points in one piece. *Next:* Later side beams fit onto these posts. *Pattern:* posts on beam
 
 **Big picture:**
-- **cb-ybeam-1** (None): None
-- **cb-pin-1** (None): None
-- **cb-pin-2** (None): None
-- **cb-pin-3** (None): None
+- **cb-ybeam-1** (Boom-root unit): Beam (32140) in the front boom-root unit that carries the arm.
+- **cb-pin-1** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm.
+- **cb-pin-2** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm.
+- **cb-pin-3** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-ybeam-1** builds on sd-fpin-1 (42175-step-032), which rests on uc-frame-1 (42175-step-001), sd-conn-1 (42175-step-033)
@@ -1037,7 +1179,7 @@
 
 ![42175-step-035](steps/main-035/picture.png)
 
-**New parts:** cb-bush-1 (3713, light bluish gray) - grey bush pushed onto the connector's axle end (green arrow); cb-conn-1 (6536, black) - black perpendicular axle and pin connector
+**New parts:** cb-bush-1 (3713, light bluish gray) - grey bush pushed onto the connector's axle end (green arrow); cb-conn-1 (63869, black) - black triple axle and pin connector (T shape with three ends)
 
 **Touches:** A grey bush is pushed onto the end of a black connector (green arrow).
 
@@ -1050,8 +1192,8 @@
 **Why:** Starts the pivot end of the long arm-like beam in the next step. A bush keeps parts from sliding along a shaft. *Next:* Step 36 fits it to an 11-hole beam. *Pattern:* bush spacer
 
 **Big picture:**
-- **cb-bush-1** (None): None
-- **cb-conn-1** (None): None Later: 42175-step-036 `CONNECT cb-conn-1.axlehole1 -> cb-beam11-1.hole?`; 42175-step-036 `CONNECT cb-disc-1.stud? -> cb-conn-1.hole?`; 42175-step-036 `DOES cb-beam11-1 CARRIES cb-conn-1`; 42175-step-036 `DOES cb-conn-1 HOLDS cb-disc-1`; 42175-step-037 `CONNECT cb-conn-1.axlehole1 -> cb-axle6-1.axle6?`.
+- **cb-bush-1** (Boom-root unit): Bush (spacer/stop) (3713) in the front boom-root unit that carries the arm.
+- **cb-conn-1** (Boom-root unit): Connector (6536) in the front boom-root unit that carries the arm. Later: 42175-step-036 `CONNECT cb-conn-1.axlehole1 -> cb-beam11-1.hole?`; 42175-step-036 `CONNECT cb-disc-1.stud? -> cb-conn-1.hole?`; 42175-step-036 `DOES cb-beam11-1 CARRIES cb-conn-1`; 42175-step-036 `DOES cb-conn-1 HOLDS cb-disc-1`; 42175-step-037 `CONNECT cb-conn-1.axlehole1 -> cb-axle6-1.axle6?`.
 
 **Review:** The small grey part is read as a bush from its picture; it could be a pin. Join points are not shown.
 
@@ -1072,8 +1214,8 @@
 **Why:** Gives the long beam a rounded end with a pivot. The cap closes the open end of the connector. *Next:* Steps 37-40 add more parts to the same beam. *Pattern:* beam end
 
 **Big picture:**
-- **cb-beam11-1** (None): None Later: 42175-step-038 `CONNECT cb-bpin-1.pin1 -> cb-beam11-1.hole2~ STIFF`; 42175-step-038 `DOES cb-beam11-1 CARRIES cb-bpin-1`; 42175-step-039 `CONNECT cb-conn3-1.hole1 -> cb-beam11-1.hole1?`; 42175-step-040 `CONNECT cb-tbeam-1.hole1 -> cb-beam11-1.hole3?`; 42175-step-042 `CONNECT cb-lb-1.hole5? -> cb-beam11-1.hole?`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-048 `DOES cb-b15-1 SUPPORTS cb-beam11-1`.
-- **cb-disc-1** (None): None
+- **cb-beam11-1** (Boom-root unit): Beam (32525) in the front boom-root unit that carries the arm. Later: 42175-step-038 `CONNECT cb-bpin-1.pin1 -> cb-beam11-1.hole2~ STIFF`; 42175-step-038 `DOES cb-beam11-1 CARRIES cb-bpin-1`; 42175-step-039 `CONNECT cb-conn3-1.hole1 -> cb-beam11-1.hole1?`; 42175-step-040 `CONNECT cb-tbeam-1.hole1 -> cb-beam11-1.hole3?`; 42175-step-042 `CONNECT cb-lb-1.hole5? -> cb-beam11-1.hole?`; 42175-step-047 `CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?`; 42175-step-047 `DOES uc-frame-1 HOLDS cb-beam11-1`; 42175-step-048 `DOES cb-b15-1 SUPPORTS cb-beam11-1`.
+- **cb-disc-1** (Boom-root unit): Tile, plate or clip (98138) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-beam11-1** builds on cb-conn-1 (42175-step-035), which rests on cb-bush-1 (42175-step-035)
@@ -1098,8 +1240,8 @@
 **Why:** Adds the shaft that the beam will turn on. An axle through a connector gives a stiff shaft. *Next:* Steps 38-39 lock parts onto this shaft. *Pattern:* shaft
 
 **Big picture:**
-- **cb-axle6-1** (None): None Later: 42175-step-038 `CONNECT cb-gbeam-1.axlehole1 -> cb-axle6-1.axle5~ LOCKED`; 42175-step-038 `CONNECT cb-gbeam-2.axlehole1 -> cb-axle6-1.axle4?`; 42175-step-038 `DOES cb-gbeam-1 HOLDS cb-axle6-1`.
-- **cb-conn2-1** (None): None
+- **cb-axle6-1** (Boom-root unit): Axle (3706) in the front boom-root unit that carries the arm. Later: 42175-step-038 `CONNECT cb-gbeam-1.axlehole1 -> cb-axle6-1.axle5~ LOCKED`; 42175-step-038 `CONNECT cb-gbeam-2.axlehole1 -> cb-axle6-1.axle4?`; 42175-step-038 `DOES cb-gbeam-1 HOLDS cb-axle6-1`.
+- **cb-conn2-1** (Boom-root unit): Connector (32013) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-axle6-1** builds on cb-conn-1 (42175-step-035), which rests on cb-bush-1 (42175-step-035), cb-beam11-1 (42175-step-036)
@@ -1123,9 +1265,9 @@
 **Why:** Adds a fixing pin and spacers next to the shaft. Thin beams work as washers/stops. *Next:* Step 39 adds a longer axle next. *Pattern:* stops
 
 **Big picture:**
-- **cb-bpin-1** (None): None
-- **cb-gbeam-1** (None): None
-- **cb-gbeam-2** (None): None
+- **cb-bpin-1** (Boom-root unit): Pin (42924) in the front boom-root unit that carries the arm.
+- **cb-gbeam-1** (Boom-root unit): Beam (41677) in the front boom-root unit that carries the arm.
+- **cb-gbeam-2** (Boom-root unit): Beam (41677) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-bpin-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035)
@@ -1151,8 +1293,8 @@
 **Why:** Adds a second shaft for the next mechanism. Two parallel shafts make a pair of pivots. *Next:* Step 40 builds a plate on top. *Pattern:* second shaft
 
 **Big picture:**
-- **cb-axle5-1** (None): None
-- **cb-conn3-1** (None): None
+- **cb-axle5-1** (Boom-root unit): Axle (32073) in the front boom-root unit that carries the arm.
+- **cb-conn3-1** (Boom-root unit): Beam (60483) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-conn3-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
@@ -1176,11 +1318,11 @@
 **Why:** Adds posts on the beam for linking the next parts. A thin beam on top of pins locks everything flat. *Next:* Step 41 onward continues this arm piece. *Pattern:* posts
 
 **Big picture:**
-- **cb-tbeam-1** (None): None
-- **cb-bp1-1** (None): None
-- **cb-bp2-1** (None): None
-- **cb-tb2-1** (None): None
-- **cb-gax-1** (None): None
+- **cb-tbeam-1** (Boom-root unit): Beam (11478) in the front boom-root unit that carries the arm.
+- **cb-bp1-1** (Boom-root unit): Pin (43093) in the front boom-root unit that carries the arm.
+- **cb-bp2-1** (Boom-root unit): Pin (42924) in the front boom-root unit that carries the arm.
+- **cb-tb2-1** (Boom-root unit): Beam (41677) in the front boom-root unit that carries the arm.
+- **cb-gax-1** (Boom-root unit): Pin (18651) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-tbeam-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
@@ -1204,12 +1346,12 @@
 **Why:** Builds the tall double post that will carry the boom later. Two L-beams tied by two axles make a stiff frame that can pivot. *Next:* The following steps add the beams on both sides of it. *Pattern:* double post
 
 **Big picture:**
-- **cb-ll-1** (None): None
-- **cb-ll-2** (None): None
-- **cb-ax5-1** (None): None Later: 42175-step-044 `CONNECT cb-pc-1.axlehole1 -> cb-ax5-1.axle5?`; 42175-step-044 `CONNECT cb-pc-2.axlehole1 -> cb-ax5-1.axle1?`; 42175-step-045 `CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?`; 42175-step-046 `CONNECT cb-tb5-1.axlehole1 -> cb-ax5-1.axle?`.
-- **cb-ax3-1** (None): None
-- **cb-gp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?`.
-- **cb-ob-1** (None): None
+- **cb-ll-1** (Boom-root unit): Beam (32056) in the front boom-root unit that carries the arm.
+- **cb-ll-2** (Boom-root unit): Beam (32056) in the front boom-root unit that carries the arm.
+- **cb-ax5-1** (Boom-root unit): Axle (32073) in the front boom-root unit that carries the arm. Later: 42175-step-044 `CONNECT cb-pc-1.axlehole1 -> cb-ax5-1.axle5?`; 42175-step-044 `CONNECT cb-pc-2.axlehole1 -> cb-ax5-1.axle1?`; 42175-step-045 `CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?`; 42175-step-046 `CONNECT cb-tb5-1.axlehole1 -> cb-ax5-1.axle?`.
+- **cb-ax3-1** (Boom-root unit): Axle (4519) in the front boom-root unit that carries the arm.
+- **cb-gp-1** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm. Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?`.
+- **cb-ob-1** (Boom-root unit): Beam (43857) in the front boom-root unit that carries the arm.
 
 **Review:** The booklet checks the axle lengths 1:1 (yellow = 3, grey = 5). Which beam holes hold each axle is estimated.
 
@@ -1230,10 +1372,10 @@
 **Why:** Adds a tall rigid post on the beam's end. An L-shape stands upright and gives a tall mount. *Next:* Step 43 lays a second beam against it. *Pattern:* tall post
 
 **Big picture:**
-- **cb-lb-1** (None): None Later: 42175-step-043 `DOES cb-b11b-1 SUPPORTS cb-lb-1`; 42175-step-108 `CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?`.
-- **cb-lp-1** (None): None Later: 42175-step-043 `CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?`.
-- **cb-lp-2** (None): None Later: 42175-step-043 `CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?`.
-- **cb-lp-3** (None): None Later: 42175-step-043 `CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?`.
+- **cb-lb-1** (Boom-root unit): Beam (32526) in the front boom-root unit that carries the arm. Later: 42175-step-043 `DOES cb-b11b-1 SUPPORTS cb-lb-1`; 42175-step-108 `CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?`.
+- **cb-lp-1** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm. Later: 42175-step-043 `CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?`.
+- **cb-lp-2** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm. Later: 42175-step-043 `CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?`.
+- **cb-lp-3** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm. Later: 42175-step-043 `CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?`.
 
 **Mechanisms:**
 - **cb-lb-1** builds on cb-beam11-1 (42175-step-036), which rests on cb-conn-1 (42175-step-035), cb-bpin-1 (42175-step-038)
@@ -1257,7 +1399,7 @@
 **Why:** Doubles the beam so the unit is wide and stiff. A second beam locked on pins makes a sandwich. *Next:* Later steps fit the pins and connectors along it. *Pattern:* beam pair
 
 **Big picture:**
-- **cb-b11b-1** (None): None
+- **cb-b11b-1** (Boom-root unit): Beam (32525) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-b11b-1** builds on cb-lp-1 (42175-step-042), which rests on cb-lb-1 (42175-step-042); cb-lp-2 (42175-step-042), which rests on cb-lb-1 (42175-step-042); cb-lp-3 (42175-step-042), which rests on cb-lb-1 (42175-step-042)
@@ -1281,10 +1423,10 @@
 **Why:** Makes anchor points on the underside. The pin and axle holes lock onto the axle and give a pin point. *Next:* Later steps hang links from them. *Pattern:* anchors
 
 **Big picture:**
-- **cb-pc-1** (None): None
-- **cb-pc-2** (None): None
-- **cb-gp2-1** (None): None
-- **cb-gp2-2** (None): None
+- **cb-pc-1** (Boom-root unit): Beam (60483) in the front boom-root unit that carries the arm.
+- **cb-pc-2** (Boom-root unit): Beam (60483) in the front boom-root unit that carries the arm.
+- **cb-gp2-1** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm.
+- **cb-gp2-2** (Boom-root unit): Pin (4274) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-pc-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
@@ -1309,8 +1451,8 @@
 **Why:** Adds a smooth free-turning pin for a link. A tan pin has no friction so a link can swing on it. *Next:* A later link hangs on this pin. *Pattern:* free pin
 
 **Big picture:**
-- **cb-t1-1** (None): None
-- **cb-tp-1** (None): None
+- **cb-t1-1** (Boom-root unit): Beam (60483) in the front boom-root unit that carries the arm.
+- **cb-tp-1** (Boom-root unit): Pin (32002) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-t1-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
@@ -1334,9 +1476,9 @@
 **Why:** Adds a plate that ties the underside together. Thin beams on a pin lock in flat. *Next:* Step 47 attaches the whole assembly to the machine. *Pattern:* underside plate
 
 **Big picture:**
-- **cb-bp-1** (None): None Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?`; 42175-step-137 `CONNECT cb-yb3-1.hole2 -> cb-bp-1.pin?`.
-- **cb-tb5-1** (None): None
-- **cb-tb3-1** (None): None
+- **cb-bp-1** (Boom-root unit): Pin (43093) in the front boom-root unit that carries the arm. Later: 42175-step-048 `CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?`; 42175-step-137 `CONNECT cb-yb3-1.hole2 -> cb-bp-1.pin?`.
+- **cb-tb5-1** (Boom-root unit): Beam (11478) in the front boom-root unit that carries the arm.
+- **cb-tb3-1** (Boom-root unit): Beam (6632) in the front boom-root unit that carries the arm.
 
 **Mechanisms:**
 - **cb-tb5-1** builds on cb-ax5-1 (42175-step-041), which rests on cb-ll-1 (42175-step-041), cb-ll-2 (42175-step-041)
@@ -1381,7 +1523,7 @@
 **Why:** Ties the front unit to the frame along the whole side. A long beam spans between the pins to make a rigid side. *Next:* Following steps add the same on the other side. *Pattern:* side beam
 
 **Big picture:**
-- **cb-b15-1** (None): None Later: 42175-step-049 `CONNECT fs-pin-1.pin1 -> cb-b15-1.hole?`; 42175-step-049 `DOES cb-b15-1 HOLDS fs-pin-1`; 42175-step-051 `CONNECT fs-yl-1.hole4? -> cb-b15-1.hole?`; 42175-step-052 `CONNECT fs-bl-1.hole5? -> cb-b15-1.hole?`.
+- **cb-b15-1** (Boom-root unit): Beam (71710) in the front boom-root unit that carries the arm. Later: 42175-step-049 `CONNECT fs-pin-1.pin1 -> cb-b15-1.hole?`; 42175-step-049 `DOES cb-b15-1 HOLDS fs-pin-1`; 42175-step-051 `CONNECT fs-yl-1.hole4? -> cb-b15-1.hole?`; 42175-step-052 `CONNECT fs-bl-1.hole5? -> cb-b15-1.hole?`.
 
 **Mechanisms:**
 - **cb-b15-1** builds on cb-gp-1 (42175-step-041), which rests on cb-ll-2 (42175-step-041); cb-bp-1 (42175-step-046), which rests on cb-tb5-1 (42175-step-046), cb-tb3-1 (42175-step-046)
@@ -1405,7 +1547,7 @@
 **Why:** Adds a post for the small build placed in step 50. A pin gives a fixing point without extra parts. *Next:* Step 50 sets the yellow assembly over it. *Pattern:* post pin
 
 **Big picture:**
-- **fs-pin-1** (None): None
+- **fs-pin-1** (Seat and hose link): Pin (43093) in the seat and the hose link beside it.
 
 **Mechanisms:**
 - **fs-pin-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
@@ -1429,16 +1571,16 @@
 **Why:** Builds the pivot block that will carry a link or an arm. Yellow thin beams on an axle form a stiff yet turning pivot. *Next:* The yellow L-beam in step 51 sits beside it. *Pattern:* pivot block
 
 **Big picture:**
-- **fs-bp-1** (None): None
-- **fs-ax3-1** (None): None
-- **fs-yb-1** (None): None
-- **fs-yb-2** (None): None
-- **fs-yb-3** (None): None
-- **fs-yb-4** (None): None
-- **fs-gp-1** (None): None
-- **fs-ap-1** (None): None
-- **fs-vb-1** (None): None
-- **fs-gb-1** (None): None
+- **fs-bp-1** (Seat and hose link): Pin (42924) in the seat and the hose link beside it.
+- **fs-ax3-1** (Seat and hose link): Axle (4519) in the seat and the hose link beside it.
+- **fs-yb-1** (Seat and hose link): Beam (41677) in the seat and the hose link beside it.
+- **fs-yb-2** (Seat and hose link): Beam (41677) in the seat and the hose link beside it.
+- **fs-yb-3** (Seat and hose link): Beam (41677) in the seat and the hose link beside it.
+- **fs-yb-4** (Seat and hose link): Beam (41677) in the seat and the hose link beside it.
+- **fs-gp-1** (Seat and hose link): Pin (77765) in the seat and the hose link beside it.
+- **fs-ap-1** (Seat and hose link): Pin (18651) in the seat and the hose link beside it.
+- **fs-vb-1** (Seat and hose link): Beam (32523) in the seat and the hose link beside it.
+- **fs-gb-1** (Seat and hose link): Beam (60483) in the seat and the hose link beside it.
 
 **Review:** Sub-step stacking order and exact holes are estimated; the icons are small. Seven items in the box (one 4x group).
 
@@ -1459,10 +1601,10 @@
 **Why:** Adds the yellow L bracket that the next links hang on. The same piece as in step 34 on the other side. *Next:* Step 52 adds a black L-beam. *Pattern:* L bracket
 
 **Big picture:**
-- **fs-yl-1** (None): None
-- **fs-yp-1** (None): None
-- **fs-yp-2** (None): None
-- **fs-yp-3** (None): None
+- **fs-yl-1** (Seat and hose link): Beam (32140) in the seat and the hose link beside it.
+- **fs-yp-1** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
+- **fs-yp-2** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
+- **fs-yp-3** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
 
 **Mechanisms:**
 - **fs-yl-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
@@ -1486,10 +1628,10 @@
 **Why:** Adds a black bracket beside the tall upright. An L shape bridges the two side beams. *Next:* Step 53 lays a beam across. *Pattern:* bracket
 
 **Big picture:**
-- **fs-bl-1** (None): None Later: 42175-step-053 `DOES fs-b5-1 SUPPORTS fs-bl-1`.
-- **fs-bp3-1** (None): None Later: 42175-step-053 `CONNECT fs-b5-1.hole1 -> fs-bp3-1.pin1?`.
-- **fs-bp3-2** (None): None Later: 42175-step-053 `CONNECT fs-b5-1.hole3 -> fs-bp3-2.pin1?`.
-- **fs-bp3-3** (None): None
+- **fs-bl-1** (Seat and hose link): Beam (32526) in the seat and the hose link beside it. Later: 42175-step-053 `DOES fs-b5-1 SUPPORTS fs-bl-1`.
+- **fs-bp3-1** (Seat and hose link): Pin (4274) in the seat and the hose link beside it. Later: 42175-step-053 `CONNECT fs-b5-1.hole1 -> fs-bp3-1.pin1?`.
+- **fs-bp3-2** (Seat and hose link): Pin (4274) in the seat and the hose link beside it. Later: 42175-step-053 `CONNECT fs-b5-1.hole3 -> fs-bp3-2.pin1?`.
+- **fs-bp3-3** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
 
 **Mechanisms:**
 - **fs-bl-1** builds on cb-b15-1 (42175-step-048), which rests on cb-gp-1 (42175-step-041), cb-bp-1 (42175-step-046)
@@ -1513,7 +1655,7 @@
 **Why:** Closes the bracket and ties it into the frame. A beam on pins locks them. *Next:* Next steps continue with parts for the other side. *Pattern:* tie beam
 
 **Big picture:**
-- **fs-b5-1** (None): None Later: 42175-step-054 `CONNECT fs-bp4-1.pin1 -> fs-b5-1.hole?`; 42175-step-054 `CONNECT fs-bp4-2.pin1 -> fs-b5-1.hole?`; 42175-step-054 `DOES fs-b5-1 HOLDS fs-bp4-1`.
+- **fs-b5-1** (Seat and hose link): Beam (32316) in the seat and the hose link beside it. Later: 42175-step-054 `CONNECT fs-bp4-1.pin1 -> fs-b5-1.hole?`; 42175-step-054 `CONNECT fs-bp4-2.pin1 -> fs-b5-1.hole?`; 42175-step-054 `DOES fs-b5-1 HOLDS fs-bp4-1`.
 
 **Mechanisms:**
 - **fs-b5-1** builds on fs-bp3-1 (42175-step-052), which rests on fs-bl-1 (42175-step-052); fs-bp3-2 (42175-step-052), which rests on fs-bl-1 (42175-step-052)
@@ -1537,8 +1679,8 @@
 **Why:** Adds posts for the beam fitted in step 55. Pins give fixing points at no cost in space. *Next:* Step 55 slides a beam over them. *Pattern:* posts
 
 **Big picture:**
-- **fs-bp4-1** (None): None Later: 42175-step-055 `CONNECT fs-b7-1.hole1~ -> fs-bp4-1.pin1?`.
-- **fs-bp4-2** (None): None Later: 42175-step-055 `CONNECT fs-b7-1.hole3~ -> fs-bp4-2.pin1?`.
+- **fs-bp4-1** (Seat and hose link): Pin (43093) in the seat and the hose link beside it. Later: 42175-step-055 `CONNECT fs-b7-1.hole1~ -> fs-bp4-1.pin1?`.
+- **fs-bp4-2** (Seat and hose link): Pin (43093) in the seat and the hose link beside it. Later: 42175-step-055 `CONNECT fs-b7-1.hole3~ -> fs-bp4-2.pin1?`.
 
 **Mechanisms:**
 - **fs-bp4-1** builds on fs-b5-1 (42175-step-053), which rests on fs-bp3-1 (42175-step-052), fs-bp3-2 (42175-step-052)
@@ -1563,13 +1705,15 @@
 **Why:** Builds the seat mount: the red axle will carry the seat. A cross axle in a connector locks and gives a vertical post. *Next:* Step 56 puts the seat on it. *Pattern:* seat mount
 
 **Big picture:**
-- **fs-bh-1** (None): None
-- **fs-gp5-1** (None): None
-- **fs-gp5-2** (None): None
-- **fs-b7-1** (None): None
-- **fs-rax-1** (None): None Later: 42175-step-056 `CONNECT fs-seat-1.hole1 -> fs-rax-1.axle2?`; 42175-step-056 `DOES fs-rax-1 HOLDS fs-seat-1`.
+- **fs-bh-1** (Seat and hose link): Connector (42003) in the seat and the hose link beside it.
+- **fs-gp5-1** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
+- **fs-gp5-2** (Seat and hose link): Pin (4274) in the seat and the hose link beside it.
+- **fs-b7-1** (Seat and hose link): Beam (32524) in the seat and the hose link beside it.
+- **fs-rax-1** (Seat and hose link): Axle (32062) in the seat and the hose link beside it. Later: 42175-step-056 `CONNECT fs-seat-1.hole1 -> fs-rax-1.axle2?`; 42175-step-056 `DOES fs-rax-1 HOLDS fs-seat-1`.
 
 **Mechanisms:**
+- adds **fs-rax-1** to the seat and hose link (decoration) as red axle the seat stands on
+- seat_deco: 1/3 parts - still missing fs-seat-1, hs-hose-1
 - **fs-b7-1** builds on fs-bp4-1 (42175-step-054), which rests on fs-b5-1 (42175-step-053); fs-bp4-2 (42175-step-054), which rests on fs-b5-1 (42175-step-053)
 
 **Review:** Which beam holes the two blue pins use is not countable.
@@ -1591,10 +1735,12 @@
 **Why:** Adds the operator's seat of the excavator. A bent panel has the shape of a seat. *Next:* Step 57 locks it with a small beam. *Pattern:* seat
 
 **Big picture:**
-- **fs-seat-1** (None): None Later: 42175-step-057 `CONNECT fs-sb-1.hole1 -> fs-seat-1.hole?`; 42175-step-057 `DOES fs-sb-1 HOLDS fs-seat-1`; 42175-step-058 `DOES fs-sx-1 HOLDS fs-seat-1`.
+- **fs-seat-1** (Seat and hose link): The operator's seat (curved panel) on its red axle. Later: 42175-step-057 `CONNECT fs-sb-1.hole1 -> fs-seat-1.hole?`; 42175-step-057 `DOES fs-sb-1 HOLDS fs-seat-1`; 42175-step-058 `DOES fs-sx-1 HOLDS fs-seat-1`.
 
 **Mechanisms:**
-- **fs-seat-1** builds on fs-rax-1 (42175-step-055), which rests on fs-bh-1 (42175-step-055)
+- adds **fs-seat-1** to the seat and hose link (decoration) as seat panel
+- seat_deco: 2/3 parts - still missing hs-hose-1
+- **fs-seat-1** builds on fs-rax-1 (42175-step-055, red axle the seat stands on in the seat and hose link), which rests on fs-bh-1 (42175-step-055)
 
 **Review:** Which panel hole is on the axle is not countable.
 
@@ -1615,10 +1761,10 @@
 **Why:** Holds the seat's foot so it doesn't pop off. A beam clamps the foot. *Next:* Step 58 adds a shaft through it. *Pattern:* seat lock
 
 **Big picture:**
-- **fs-sb-1** (None): None Later: 42175-step-058 `CONNECT fs-sx-1.axle1 -> fs-sb-1.hole?`.
+- **fs-sb-1** (Seat and hose link): Beam (43857) in the seat and the hose link beside it. Later: 42175-step-058 `CONNECT fs-sx-1.axle1 -> fs-sb-1.hole?`.
 
 **Mechanisms:**
-- **fs-sb-1** builds on fs-seat-1 (42175-step-056), which rests on fs-rax-1 (42175-step-055)
+- **fs-sb-1** builds on fs-seat-1 (42175-step-056, seat panel in the seat and hose link), which rests on fs-rax-1 (42175-step-055)
 
 **Review:** Part read from the icon.
 
@@ -1639,7 +1785,7 @@
 **Why:** Adds the shaft the seat turns or tilts on. An axle through a beam is a pivot. *Next:* Later steps hang parts off the shaft. *Pattern:* seat pivot
 
 **Big picture:**
-- **fs-sx-1** (None): None Later: 42175-step-059 `CONNECT fs-clip-1.bar? -> fs-sx-1.axle?`; 42175-step-059 `CONNECT fs-clip-2.bar? -> fs-sx-1.axle?`; 42175-step-059 `DOES fs-sx-1 CARRIES fs-clip-1`.
+- **fs-sx-1** (Seat and hose link): Axle (3706) in the seat and the hose link beside it. Later: 42175-step-059 `CONNECT fs-clip-1.bar? -> fs-sx-1.axle?`; 42175-step-059 `CONNECT fs-clip-2.bar? -> fs-sx-1.axle?`; 42175-step-059 `DOES fs-sx-1 CARRIES fs-clip-1`.
 
 **Mechanisms:**
 - **fs-sx-1** builds on fs-sb-1 (42175-step-057), which rests on fs-seat-1 (42175-step-056)
@@ -1663,8 +1809,8 @@
 **Why:** Clips will later hold hoses or lines. A bar with a clip snaps a thin hose in place. *Next:* Step 60 builds a hose piece that clips here. *Pattern:* hose clips
 
 **Big picture:**
-- **fs-clip-1** (None): None
-- **fs-clip-2** (None): None
+- **fs-clip-1** (Seat and hose link): Tile, plate or clip (3484) in the seat and the hose link beside it.
+- **fs-clip-2** (Seat and hose link): Tile, plate or clip (3484) in the seat and the hose link beside it.
 
 **Mechanisms:**
 - **fs-clip-1** builds on fs-sx-1 (42175-step-058), which rests on fs-sb-1 (42175-step-057)
@@ -1689,14 +1835,18 @@
 **Why:** Builds a stiff rod link with end fittings (a Volvo-style label tile). A soft axle hose is a bendable shaft; the red axles are its end fittings. *Next:* It becomes a link in the cab area. *Pattern:* hose link
 
 **Big picture:**
-- **hs-hose-1** (None): None
-- **hs-rax-1** (None): None
-- **hs-rax-2** (None): None
-- **hs-conn-1** (None): None
-- **hs-conn-2** (None): None
-- **hs-bp-1** (None): None
-- **hs-tile-1** (None): None
-- **hs-plate-1** (None): None
+- **hs-hose-1** (Seat and hose link): Hose or rod (32580) in the seat and the hose link beside it.
+- **hs-rax-1** (Seat and hose link): Axle (32062) in the seat and the hose link beside it.
+- **hs-rax-2** (Seat and hose link): Axle (32062) in the seat and the hose link beside it.
+- **hs-conn-1** (Seat and hose link): Connector (99021) in the seat and the hose link beside it.
+- **hs-conn-2** (Seat and hose link): Connector (99021) in the seat and the hose link beside it.
+- **hs-bp-1** (Seat and hose link): Pin (43093) in the seat and the hose link beside it.
+- **hs-tile-1** (Seat and hose link): Tile, plate or clip (3069b) in the seat and the hose link beside it.
+- **hs-plate-1** (Seat and hose link): Tile, plate or clip (18677) in the seat and the hose link beside it.
+
+**Mechanisms:**
+- adds **hs-hose-1** to the seat and hose link (decoration) as soft hose link
+- seat_deco: 3/3 parts - complete
 
 **Review:** Parts are read from small icons; the soft hose and the sticker tile have no catalog points so joins are open.
 
@@ -1717,9 +1867,13 @@
 **Why:** Starts the arm from its root: an L-beam gives the corner for the first section. Pins make fixing points. *Next:* Step 62 puts it on the long beam. *Pattern:* arm start
 
 **Big picture:**
-- **bm-gp-1** (None): None
-- **bm-lb-1** (None): None Later: 42175-step-062 `CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?`; 42175-step-062 `DOES bm-b11-1 CARRIES bm-lb-1`; 42175-step-109 `CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?`.
-- **bm-bp-1** (None): None Later: 42175-step-062 `CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?`.
+- **bm-gp-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-lb-1** (Arm and bucket): Beam (32140) in the arm (boom, stick and bucket). Later: 42175-step-062 `CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?`; 42175-step-062 `DOES bm-b11-1 CARRIES bm-lb-1`; 42175-step-109 `CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?`.
+- **bm-bp-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-062 `CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?`.
+
+**Mechanisms:**
+- adds **bm-lb-1** to the arm-root hinge (hinge) as arm root L-beam
+- arm_root: 1/4 parts - still missing cb-rax10-1, cb-rbush-1, cb-gpin-1
 
 **Review:** The inset picture on page 62 shows the arm that is built in the next steps.
 
@@ -1740,10 +1894,10 @@
 **Why:** Builds the first long section of the arm. An 11-hole beam is the main bar. *Next:* Step 63 puts an axle through it. *Pattern:* arm bar
 
 **Big picture:**
-- **bm-b11-1** (None): None Later: 42175-step-063 `CONNECT bm-ax5-1.axle? -> bm-b11-1.hole?`; 42175-step-063 `DOES bm-b11-1 CARRIES bm-ax5-1`; 42175-step-065 `CONNECT bm-ax5b-1.axle? -> bm-b11-1.hole?`; 42175-step-065 `DOES bm-b11-1 CARRIES bm-ax5b-1`; 42175-step-068 `CONNECT bm-bp4-1.pin1 -> bm-b11-1.hole?`; 42175-step-068 `CONNECT bm-bp4-2.pin1 -> bm-b11-1.hole?`; 42175-step-068 `DOES bm-b11-1 HOLDS bm-bp4-1`; 42175-step-070 `CONNECT bm-b11b-1.hole? -> bm-b11-1.hole?`; 42175-step-076 `CONNECT bm-l5-1.hole? -> bm-b11-1.hole?`; 42175-step-078 `CONNECT bm-bc-1.hole? -> bm-b11-1.hole?`; 42175-step-091 `CONNECT bm-l7-1.hole? -> bm-b11-1.hole?`.
+- **bm-b11-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket). Later: 42175-step-063 `CONNECT bm-ax5-1.axle? -> bm-b11-1.hole?`; 42175-step-063 `DOES bm-b11-1 CARRIES bm-ax5-1`; 42175-step-065 `CONNECT bm-ax5b-1.axle? -> bm-b11-1.hole?`; 42175-step-065 `DOES bm-b11-1 CARRIES bm-ax5b-1`; 42175-step-068 `CONNECT bm-bp4-1.pin1 -> bm-b11-1.hole?`; 42175-step-068 `CONNECT bm-bp4-2.pin1 -> bm-b11-1.hole?`; 42175-step-068 `DOES bm-b11-1 HOLDS bm-bp4-1`; 42175-step-070 `CONNECT bm-b11b-1.hole? -> bm-b11-1.hole?`; 42175-step-076 `CONNECT bm-l5-1.hole? -> bm-b11-1.hole?`; 42175-step-078 `CONNECT bm-bc-1.hole? -> bm-b11-1.hole?`; 42175-step-091 `CONNECT bm-l7-1.hole? -> bm-b11-1.hole?`.
 
 **Mechanisms:**
-- **bm-b11-1** builds on bm-bp-1 (42175-step-061), which rests on bm-lb-1 (42175-step-061); bm-lb-1 (42175-step-061), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
+- **bm-b11-1** builds on bm-bp-1 (42175-step-061), which rests on bm-lb-1 (42175-step-061); bm-lb-1 (42175-step-061, arm root L-beam in the arm-root hinge), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
 
 **Review:** Holes not countable.
 
@@ -1764,7 +1918,7 @@
 **Why:** Adds a shaft for the next link to turn on. A stop end keeps the axle from sliding out. *Next:* Step 64 hangs more on it. *Pattern:* shaft
 
 **Big picture:**
-- **bm-ax5-1** (None): None Later: 42175-step-064 `CONNECT bm-l2-1.hole? -> bm-ax5-1.axle?`; 42175-step-064 `DOES bm-l2-1 HOLDS bm-ax5-1`.
+- **bm-ax5-1** (Arm and bucket): Axle (15462) in the arm (boom, stick and bucket). Later: 42175-step-064 `CONNECT bm-l2-1.hole? -> bm-ax5-1.axle?`; 42175-step-064 `DOES bm-l2-1 HOLDS bm-ax5-1`.
 
 **Mechanisms:**
 - **bm-ax5-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
@@ -1788,8 +1942,8 @@
 **Why:** Doubles the beam at the arm's root so the joint is wide and strong. Two layers on one axle and pin hold well. *Next:* Step 65 adds another axle. *Pattern:* root doubling
 
 **Big picture:**
-- **bm-l2-1** (None): None
-- **bm-bp2-1** (None): None
+- **bm-l2-1** (Arm and bucket): Beam (32526) in the arm (boom, stick and bucket).
+- **bm-bp2-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-l2-1** builds on bm-ax5-1 (42175-step-063), which rests on bm-b11-1 (42175-step-062)
@@ -1813,8 +1967,8 @@
 **Why:** Adds the second pivot shaft of the root. Two parallel shafts make a double hinge. *Next:* Step 66 adds spacers and a yellow axle. *Pattern:* root hinge
 
 **Big picture:**
-- **bm-ax5b-1** (None): None
-- **bm-cn-1** (None): None
+- **bm-ax5b-1** (Arm and bucket): Axle (15462) in the arm (boom, stick and bucket).
+- **bm-cn-1** (Arm and bucket): Connector (6536) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-ax5b-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
@@ -1838,10 +1992,10 @@
 **Why:** Builds the plate that will carry the cylinder joint. Two thin beams tied by an axle make a light plate. *Next:* Later steps add the cylinder mount. *Pattern:* link plate
 
 **Big picture:**
-- **bm-yax-1** (None): None Later: 42175-step-067 `CONNECT bm-cn2-1.axlehole1 -> bm-yax-1.axle?`; 42175-step-067 `DOES bm-yax-1 HOLDS bm-cn2-1`.
-- **bm-bp3-1** (None): None
-- **bm-tb-1** (None): None
-- **bm-tb-2** (None): None
+- **bm-yax-1** (Arm and bucket): Axle (4519) in the arm (boom, stick and bucket). Later: 42175-step-067 `CONNECT bm-cn2-1.axlehole1 -> bm-yax-1.axle?`; 42175-step-067 `DOES bm-yax-1 HOLDS bm-cn2-1`.
+- **bm-bp3-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-tb-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+- **bm-tb-2** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Review:** Which holes are used is estimated.
 
@@ -1862,7 +2016,7 @@
 **Why:** Adds an attachment point for a later link. A connector turns an axle end into a pin point. *Next:* Steps 68-69 add pins and a beam. *Pattern:* connector
 
 **Big picture:**
-- **bm-cn2-1** (None): None
+- **bm-cn2-1** (Arm and bucket): Connector (6536) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-cn2-1** builds on bm-yax-1 (42175-step-066), which rests on bm-tb-2 (42175-step-066), bm-tb-1 (42175-step-066)
@@ -1886,8 +2040,8 @@
 **Why:** Adds the posts for the next beam. Pins make the connection points. *Next:* Step 69 slides a beam over them. *Pattern:* posts
 
 **Big picture:**
-- **bm-bp4-1** (None): None Later: 42175-step-069 `CONNECT bm-bp4-1.pin1 -> bm-b5-1.hole1?`; 42175-step-069 `DOES bm-b5-1 HOLDS bm-bp4-1`.
-- **bm-bp4-2** (None): None Later: 42175-step-069 `CONNECT bm-bp4-2.pin1 -> bm-b5-1.hole2?`.
+- **bm-bp4-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-069 `CONNECT bm-bp4-1.pin1 -> bm-b5-1.hole1?`; 42175-step-069 `DOES bm-b5-1 HOLDS bm-bp4-1`.
+- **bm-bp4-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-069 `CONNECT bm-bp4-2.pin1 -> bm-b5-1.hole2?`.
 
 **Mechanisms:**
 - **bm-bp4-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
@@ -1912,7 +2066,7 @@
 **Why:** Extends the arm's length. A beam on two pins is stiff. *Next:* Step 70 adds a long beam on top. *Pattern:* extension
 
 **Big picture:**
-- **bm-b5-1** (None): None Later: 42175-step-070 `DOES bm-b11b-1 SUPPORTS bm-b5-1`; 42175-step-072 `CONNECT bm-l4-1.hole? -> bm-b5-1.hole?`.
+- **bm-b5-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket). Later: 42175-step-070 `DOES bm-b11b-1 SUPPORTS bm-b5-1`; 42175-step-072 `CONNECT bm-l4-1.hole? -> bm-b5-1.hole?`.
 
 **Mechanisms:**
 - **bm-b5-1** builds on bm-bp4-1 (42175-step-068), which rests on bm-b11-1 (42175-step-062); bm-bp4-2 (42175-step-068), which rests on bm-b11-1 (42175-step-062)
@@ -1936,8 +2090,8 @@
 **Why:** Builds the arm's double beam. Two parallel beams are much stiffer than one. *Next:* Step 71 adds a corner piece. *Pattern:* double beam
 
 **Big picture:**
-- **bm-b11b-1** (None): None Later: 42175-step-071 `DOES bm-l3-1 SUPPORTS bm-b11b-1`; 42175-step-074 `DOES bm-b15-1 SUPPORTS bm-b11b-1`.
-- **bm-gp2-1** (None): None Later: 42175-step-071 `CONNECT bm-l3-1.hole? -> bm-gp2-1.pin1?`.
+- **bm-b11b-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket). Later: 42175-step-071 `DOES bm-l3-1 SUPPORTS bm-b11b-1`; 42175-step-074 `DOES bm-b15-1 SUPPORTS bm-b11b-1`.
+- **bm-gp2-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket). Later: 42175-step-071 `CONNECT bm-l3-1.hole? -> bm-gp2-1.pin1?`.
 
 **Mechanisms:**
 - **bm-b11b-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
@@ -1961,7 +2115,7 @@
 **Why:** Closes the corner of the root. An L-beam ties the two beams across the end. *Next:* Step 72 adds a bigger L-beam to the far end. *Pattern:* corner
 
 **Big picture:**
-- **bm-l3-1** (None): None
+- **bm-l3-1** (Arm and bucket): Beam (32140) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-l3-1** builds on bm-gp2-1 (42175-step-070), which rests on bm-b11b-1 (42175-step-070)
@@ -1985,10 +2139,10 @@
 **Why:** Makes the far end ready for the next piece. An L-beam with pins gives several fixing points. *Next:* Steps 73-74 add parts on this end. *Pattern:* far end posts
 
 **Big picture:**
-- **bm-l4-1** (None): None
-- **bm-bp5-1** (None): None Later: 42175-step-073 `CONNECT bm-ac-1.axlehole1 -> bm-bp5-1.axle?`; 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-bp5-1.pin1?`; 42175-step-080 `CONNECT bm-b15b-1.hole? -> bm-bp5-1.pin?`.
-- **bm-bp5-2** (None): None
-- **bm-bp5-3** (None): None
+- **bm-l4-1** (Arm and bucket): Beam (32526) in the arm (boom, stick and bucket).
+- **bm-bp5-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-073 `CONNECT bm-ac-1.axlehole1 -> bm-bp5-1.axle?`; 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-bp5-1.pin1?`; 42175-step-080 `CONNECT bm-b15b-1.hole? -> bm-bp5-1.pin?`.
+- **bm-bp5-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bp5-3** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-l4-1** builds on bm-b5-1 (42175-step-069), which rests on bm-bp4-1 (42175-step-068), bm-bp4-2 (42175-step-068)
@@ -2012,9 +2166,9 @@
 **Why:** Adds a smooth post for a link. A capped pin stops a link from falling off. *Next:* Step 74 lays the 15-hole beam. *Pattern:* end post
 
 **Big picture:**
-- **bm-cap-1** (None): None
-- **bm-gp3-1** (None): None
-- **bm-ac-1** (None): None Later: 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-ac-1.hole?`.
+- **bm-cap-1** (Arm and bucket): Tile, plate or clip (98138) in the arm (boom, stick and bucket).
+- **bm-gp3-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-ac-1** (Arm and bucket): Connector (32013) in the arm (boom, stick and bucket). Later: 42175-step-074 `CONNECT bm-b15-1.hole? -> bm-ac-1.hole?`.
 
 **Mechanisms:**
 - **bm-ac-1** builds on bm-bp5-1 (42175-step-072), which rests on bm-l4-1 (42175-step-072)
@@ -2038,7 +2192,7 @@
 **Why:** Makes the arm long enough to reach. A 15-hole beam is the longest we have; it tops the arm. *Next:* Step 75 adds a diagonal brace. *Pattern:* long beam
 
 **Big picture:**
-- **bm-b15-1** (None): None Later: 42175-step-075 `CONNECT bm-gb7-1.hole? -> bm-b15-1.hole?`; 42175-step-075 `DOES bm-gb7-1 SUPPORTS bm-b15-1`; 42175-step-080 `DOES bm-b15b-1 SUPPORTS bm-b15-1`.
+- **bm-b15-1** (Arm and bucket): Beam (32278) in the arm (boom, stick and bucket). Later: 42175-step-075 `CONNECT bm-gb7-1.hole? -> bm-b15-1.hole?`; 42175-step-075 `DOES bm-gb7-1 SUPPORTS bm-b15-1`; 42175-step-080 `DOES bm-b15b-1 SUPPORTS bm-b15-1`.
 
 **Mechanisms:**
 - **bm-b15-1** builds on bm-bp5-1 (42175-step-072), which rests on bm-l4-1 (42175-step-072), bm-ac-1 (42175-step-073); bm-ac-1 (42175-step-073), which rests on bm-gp3-1 (42175-step-073), bm-bp5-1 (42175-step-072)
@@ -2062,8 +2216,8 @@
 **Why:** Adds the diagonal brace for the middle joint. A diagonal beam makes a triangle that resists bending. *Next:* Step 76 adds an L-beam. *Pattern:* brace
 
 **Big picture:**
-- **bm-gb7-1** (None): None Later: 42175-step-076 `DOES bm-l5-1 SUPPORTS bm-gb7-1`; 42175-step-078 `CONNECT bm-bp7-1.pin1 -> bm-gb7-1.hole?`; 42175-step-079 `CONNECT bm-b11c-1.hole2? -> bm-gb7-1.hole?`.
-- **bm-bp6-1** (None): None
+- **bm-gb7-1** (Arm and bucket): Beam (32524) in the arm (boom, stick and bucket). Later: 42175-step-076 `DOES bm-l5-1 SUPPORTS bm-gb7-1`; 42175-step-078 `CONNECT bm-bp7-1.pin1 -> bm-gb7-1.hole?`; 42175-step-079 `CONNECT bm-b11c-1.hole2? -> bm-gb7-1.hole?`.
+- **bm-bp6-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-gb7-1** builds on bm-b15-1 (42175-step-074), which rests on bm-bp5-1 (42175-step-072), bm-ac-1 (42175-step-073)
@@ -2087,7 +2241,7 @@
 **Why:** Gives the arm a bracket underneath. An L-beam bridges both layers. *Next:* Step 77 adds the cap piece. *Pattern:* bracket
 
 **Big picture:**
-- **bm-l5-1** (None): None Later: 42175-step-077 `CONNECT bm-ac2-1.axlehole1 -> bm-l5-1.hole?`.
+- **bm-l5-1** (Arm and bucket): Beam (32526) in the arm (boom, stick and bucket). Later: 42175-step-077 `CONNECT bm-ac2-1.axlehole1 -> bm-l5-1.hole?`.
 
 **Mechanisms:**
 - **bm-l5-1** builds on bm-b11-1 (42175-step-062), which rests on bm-bp-1 (42175-step-061), bm-lb-1 (42175-step-061)
@@ -2111,9 +2265,9 @@
 **Why:** Adds a smooth post below. Same piece as step 73. *Next:* Step 78 adds a connector and pin on top. *Pattern:* end post
 
 **Big picture:**
-- **bm-cap2-1** (None): None
-- **bm-gp4-1** (None): None
-- **bm-ac2-1** (None): None
+- **bm-cap2-1** (Arm and bucket): Tile, plate or clip (98138) in the arm (boom, stick and bucket).
+- **bm-gp4-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-ac2-1** (Arm and bucket): Connector (32013) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-ac2-1** builds on bm-l5-1 (42175-step-076), which rests on bm-b11-1 (42175-step-062)
@@ -2137,9 +2291,9 @@
 **Why:** Adds a joint for the cylinder that lifts the arm. A connector with a cross hole turns an axle pin into a hinge. *Next:* Steps 79 onward continue the arm. *Pattern:* cylinder joint
 
 **Big picture:**
-- **bm-bp7-1** (None): None Later: 42175-step-079 `CONNECT bm-b11c-1.hole1 -> bm-bp7-1.pin?`; 42175-step-079 `DOES bm-bp7-1 HOLDS bm-b11c-1`.
-- **bm-ap2-1** (None): None
-- **bm-bc-1** (None): None
+- **bm-bp7-1** (Arm and bucket): Pin (42924) in the arm (boom, stick and bucket). Later: 42175-step-079 `CONNECT bm-b11c-1.hole1 -> bm-bp7-1.pin?`; 42175-step-079 `DOES bm-bp7-1 HOLDS bm-b11c-1`.
+- **bm-ap2-1** (Arm and bucket): Pin (18651) in the arm (boom, stick and bucket).
+- **bm-bc-1** (Arm and bucket): Connector (42003) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-bp7-1** builds on bm-gb7-1 (42175-step-075), which rests on bm-bp6-1 (42175-step-075), bm-b15-1 (42175-step-074)
@@ -2164,7 +2318,7 @@
 **Why:** Makes the lower arm section that will swing. A beam on a free pin is a hinge. *Next:* Step 80 adds a long beam alongside. *Pattern:* lower arm
 
 **Big picture:**
-- **bm-b11c-1** (None): None
+- **bm-b11c-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b11c-1** builds on bm-bp7-1 (42175-step-078), which rests on bm-gb7-1 (42175-step-075); bm-gb7-1 (42175-step-075), which rests on bm-bp6-1 (42175-step-075), bm-b15-1 (42175-step-074)
@@ -2188,7 +2342,7 @@
 **Why:** Adds the upper arm's second layer. Two long beams side by side make a stiff arm. *Next:* Step 81 builds another. *Pattern:* upper layer
 
 **Big picture:**
-- **bm-b15b-1** (None): None
+- **bm-b15b-1** (Arm and bucket): Beam (32278) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b15b-1** builds on bm-bp5-1 (42175-step-072), which rests on bm-l4-1 (42175-step-072), bm-ac-1 (42175-step-073)
@@ -2212,11 +2366,11 @@
 **Why:** Builds the lower arm's second long beam. Pins locate the beam and tie both layers. *Next:* Step 82 adds a third. *Pattern:* lower arm layer
 
 **Big picture:**
-- **bm-b15c-1** (None): None Later: 42175-step-082 `DOES bm-b15d-1 SUPPORTS bm-b15c-1`.
-- **bm-bp8-1** (None): None Later: 42175-step-082 `CONNECT bm-bp8-1.pin1 -> bm-b15d-1.hole?`.
-- **bm-bp8-2** (None): None Later: 42175-step-082 `CONNECT bm-bp8-2.pin1 -> bm-b15d-1.hole?`.
-- **bm-bp8-3** (None): None
-- **bm-bush-1** (None): None
+- **bm-b15c-1** (Arm and bucket): Beam (71710) in the arm (boom, stick and bucket). Later: 42175-step-082 `DOES bm-b15d-1 SUPPORTS bm-b15c-1`.
+- **bm-bp8-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-082 `CONNECT bm-bp8-1.pin1 -> bm-b15d-1.hole?`.
+- **bm-bp8-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-082 `CONNECT bm-bp8-2.pin1 -> bm-b15d-1.hole?`.
+- **bm-bp8-3** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bush-1** (Arm and bucket): Bush (spacer/stop) (3713) in the arm (boom, stick and bucket).
 
 **Review:** Which holes carry the pins is not countable.
 
@@ -2237,7 +2391,7 @@
 **Why:** Closes the lower arm sandwich. Beams on both sides of the pins lock them. *Next:* Step 83 adds the covers. *Pattern:* lower arm sandwich
 
 **Big picture:**
-- **bm-b15d-1** (None): None Later: 42175-step-084 `CONNECT bm-l6-1.hole? -> bm-b15d-1.hole?`.
+- **bm-b15d-1** (Arm and bucket): Beam (71710) in the arm (boom, stick and bucket). Later: 42175-step-084 `CONNECT bm-l6-1.hole? -> bm-b15d-1.hole?`.
 
 **Mechanisms:**
 - **bm-b15d-1** builds on bm-bp8-1 (42175-step-081), which rests on bm-b15c-1 (42175-step-081); bm-bp8-2 (42175-step-081), which rests on bm-b15c-1 (42175-step-081)
@@ -2261,14 +2415,14 @@
 **Why:** Builds the side cover with the brand print. Fairings give the arm its shape and hide the beams. *Next:* Step 84 adds the cross beam. *Pattern:* cover
 
 **Big picture:**
-- **bm-fr21-1** (None): None
-- **bm-fr22-1** (None): None
-- **bm-fp-1** (None): None
-- **bm-fp-2** (None): None
-- **bm-fa-1** (None): None
-- **bm-fa-2** (None): None
-- **bm-ft-1** (None): None
-- **bm-ft-2** (None): None
+- **bm-fr21-1** (Arm and bucket): Panel or fairing (11946) in the arm (boom, stick and bucket).
+- **bm-fr22-1** (Arm and bucket): Panel or fairing (11947) in the arm (boom, stick and bucket).
+- **bm-fp-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-fp-2** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-fa-1** (Arm and bucket): Axle (32062) in the arm (boom, stick and bucket).
+- **bm-fa-2** (Arm and bucket): Axle (32062) in the arm (boom, stick and bucket).
+- **bm-ft-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+- **bm-ft-2** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Review:** The covers have no catalog points; their joins are open. Sub-steps 4-5 refer to sticker pages 26 and 18.
 
@@ -2289,9 +2443,9 @@
 **Why:** Adds the elbow bracket. An L-beam gives a stiff elbow. *Next:* Later steps join the upper arm here. *Pattern:* elbow
 
 **Big picture:**
-- **bm-l6-1** (None): None
-- **bm-bp9-1** (None): None
-- **bm-bp9-2** (None): None
+- **bm-l6-1** (Arm and bucket): Beam (32526) in the arm (boom, stick and bucket).
+- **bm-bp9-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bp9-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-l6-1** builds on bm-b15d-1 (42175-step-082), which rests on bm-bp8-1 (42175-step-081), bm-bp8-2 (42175-step-081)
@@ -2315,14 +2469,18 @@
 **Why:** Builds the elbow beam that the upper arm hangs on. Pins give locating points for later beams. *Next:* Step 86 adds an axle. *Pattern:* elbow beam
 
 **Big picture:**
-- **bm-b11d-1** (None): None
-- **bm-b5b-1** (None): None
-- **bm-gp5-1** (None): None
-- **bm-bp10-1** (None): None Later: 42175-step-088 `CONNECT bm-bp10-1.pin1 -> bm-b15e-1.hole?`; 42175-step-091 `CONNECT bm-b11e-1.hole? -> bm-bp10-1.pin1?`.
-- **bm-bp10-2** (None): None Later: 42175-step-088 `CONNECT bm-bp10-2.pin1 -> bm-b15e-1.hole?`.
-- **bm-bp10-3** (None): None
-- **bm-bp10-4** (None): None
-- **bm-tp-1** (None): None Later: 42175-step-086 `CONNECT bm-ax5c-1.axle1 -> bm-tp-1.pin2?`; 42175-step-089 `CONNECT bm-b3-1.hole2 -> bm-tp-1.pin2?`.
+- **bm-b11d-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket).
+- **bm-b5b-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket).
+- **bm-gp5-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-bp10-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-088 `CONNECT bm-bp10-1.pin1 -> bm-b15e-1.hole?`; 42175-step-091 `CONNECT bm-b11e-1.hole? -> bm-bp10-1.pin1?`.
+- **bm-bp10-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-088 `CONNECT bm-bp10-2.pin1 -> bm-b15e-1.hole?`.
+- **bm-bp10-3** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bp10-4** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-tp-1** (Arm and bucket): Pin (32002) in the arm (boom, stick and bucket). Later: 42175-step-086 `CONNECT bm-ax5c-1.axle1 -> bm-tp-1.pin2?`; 42175-step-089 `CONNECT bm-b3-1.hole2 -> bm-tp-1.pin2?`.
+
+**Mechanisms:**
+- adds **bm-tp-1** to the elbow hinge (hinge) as tan pin
+- elbow: 1/3 parts - still missing bm-ax5c-1, bm-b13-1
 
 **Review:** Pin hole numbers are estimates.
 
@@ -2343,11 +2501,13 @@
 **Why:** Adds the elbow shaft. An axle through the beams makes the elbow hinge. *Next:* Step 87 adds a long beam. *Pattern:* elbow shaft
 
 **Big picture:**
-- **bm-ax5c-1** (None): None Later: 42175-step-087 `CONNECT bm-b13-1.hole1 -> bm-ax5c-1.axle?`; 42175-step-087 `DOES bm-ax5c-1 CARRIES bm-b13-1`.
-- **bm-tbk-1** (None): None
+- **bm-ax5c-1** (Arm and bucket): Axle (32073) in the arm (boom, stick and bucket). Later: 42175-step-087 `CONNECT bm-b13-1.hole1 -> bm-ax5c-1.axle?`; 42175-step-087 `DOES bm-ax5c-1 CARRIES bm-b13-1`.
+- **bm-tbk-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
-- **bm-ax5c-1** builds on bm-tp-1 (42175-step-085), which rests on bm-b5b-1 (42175-step-085)
+- adds **bm-ax5c-1** to the elbow hinge (hinge) as elbow shaft
+- elbow: 2/3 parts - still missing bm-b13-1
+- **bm-ax5c-1** builds on bm-tp-1 (42175-step-085, tan pin in the elbow hinge), which rests on bm-b5b-1 (42175-step-085)
 
 **Review:** The grey axle end goes between the pairs; hole not countable.
 
@@ -2368,10 +2528,12 @@
 **Why:** Adds the upper arm beam. A long beam on a shaft is a swinging arm. *Next:* Step 88 adds a second long beam. *Pattern:* upper arm
 
 **Big picture:**
-- **bm-b13-1** (None): None Later: 42175-step-088 `DOES bm-b15e-1 SUPPORTS bm-b13-1`.
+- **bm-b13-1** (Arm and bucket): Beam (41239) in the arm (boom, stick and bucket). Later: 42175-step-088 `DOES bm-b15e-1 SUPPORTS bm-b13-1`.
 
 **Mechanisms:**
-- **bm-b13-1** builds on bm-ax5c-1 (42175-step-086), which rests on bm-tbk-1 (42175-step-086), bm-tp-1 (42175-step-085)
+- adds **bm-b13-1** to the elbow hinge (hinge) as 13-hole beam on the shaft
+- elbow: 3/3 parts - complete
+- **bm-b13-1** builds on bm-ax5c-1 (42175-step-086, elbow shaft in the elbow hinge), which rests on bm-tbk-1 (42175-step-086), bm-tp-1 (42175-step-085)
 
 **Review:** Holes not countable.
 
@@ -2392,7 +2554,7 @@
 **Why:** Adds the second upper beam. Another beam on the same pins stiffens the elbow. *Next:* Step 89 adds pins. *Pattern:* second beam
 
 **Big picture:**
-- **bm-b15e-1** (None): None Later: 42175-step-089 `CONNECT bm-bp11-3.pin1 -> bm-b15e-1.hole?`; 42175-step-090 `CONNECT bm-tpin-1.pin2 -> bm-b15e-1.hole?`.
+- **bm-b15e-1** (Arm and bucket): Beam (32278) in the arm (boom, stick and bucket). Later: 42175-step-089 `CONNECT bm-bp11-3.pin1 -> bm-b15e-1.hole?`; 42175-step-090 `CONNECT bm-tpin-1.pin2 -> bm-b15e-1.hole?`.
 
 **Mechanisms:**
 - **bm-b15e-1** builds on bm-bp10-1 (42175-step-085), which rests on bm-b11d-1 (42175-step-085); bm-bp10-2 (42175-step-085), which rests on bm-b11d-1 (42175-step-085)
@@ -2416,13 +2578,15 @@
 **Why:** Adds posts for the cylinder mounts. Pins mark mounting points. *Next:* Steps 90 onward add the cylinder. *Pattern:* mount posts
 
 **Big picture:**
-- **bm-b3-1** (None): None Later: 42175-step-090 `CONNECT bm-tpin-2.pin2 -> bm-b3-1.hole?`; 42175-step-090 `DOES bm-cyl-1 DRIVES bm-b3-1`.
-- **bm-bp11-1** (None): None
-- **bm-bp11-2** (None): None
-- **bm-bp11-3** (None): None
+- **bm-b3-1** (Arm and bucket): Beam (32523) in the arm (boom, stick and bucket). Later: 42175-step-090 `CONNECT bm-tpin-2.pin2 -> bm-b3-1.hole?`; 42175-step-090 `DOES bm-cyl-1 DRIVES bm-b3-1`.
+- **bm-bp11-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bp11-2** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
+- **bm-bp11-3** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
-- **bm-b3-1** builds on bm-tp-1 (42175-step-085), which rests on bm-b5b-1 (42175-step-085), bm-ax5c-1 (42175-step-086)
+- adds **bm-b3-1** to the elbow cylinder (push_rod) as short beam that takes the push *(not confirmed)*
+- elbow_cylinder: 1/4 parts - still missing bm-cyl-1, bm-tpin-1, bm-tpin-2
+- **bm-b3-1** builds on bm-tp-1 (42175-step-085, tan pin in the elbow hinge), which rests on bm-b5b-1 (42175-step-085), bm-ax5c-1 (42175-step-086)
 - **bm-bp11-3** builds on bm-b15e-1 (42175-step-088), which rests on bm-bp10-1 (42175-step-085), bm-bp10-2 (42175-step-085)
 
 **Review:** The yellow box shows a short beam with pins on both sides; hole numbers are estimated.
@@ -2444,13 +2608,19 @@
 **Why:** Adds the cylinder that bends the arm at the elbow. A cylinder pushing between two pivots turns the joint. *Next:* Steps 91-92 add beams that lock its pins. *Pattern:* arm cylinder
 
 **Big picture:**
-- **bm-cyl-1** (None): None Later: 42175-step-106 `DOES bm-cyl-1 DRIVES hy-hose-5`; 42175-step-107 `DOES bm-cyl-1 DRIVES hy-hose-6`.
-- **bm-tpin-1** (None): None Later: 42175-step-091 `DOES bm-b11e-1 HOLDS bm-tpin-1`.
-- **bm-tpin-2** (None): None
+- **bm-cyl-1** (Arm and bucket): Air cylinder on the arm (step 90): pushes the lower arm at the elbow when air arrives. Later: 42175-step-106 `DOES bm-cyl-1 DRIVES hy-hose-5`; 42175-step-107 `DOES bm-cyl-1 DRIVES hy-hose-6`.
+- **bm-tpin-1** (Arm and bucket): Pin (39888) in the arm (boom, stick and bucket). Later: 42175-step-091 `DOES bm-b11e-1 HOLDS bm-tpin-1`.
+- **bm-tpin-2** (Arm and bucket): Pin (39888) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
+- adds **bm-cyl-1** to the air system (pump, switches, cylinders) (pneumatic_circuit) as elbow cylinder on the arm
+- adds **bm-cyl-1** to the elbow cylinder (push_rod) as cylinder body and rod
+- adds **bm-tpin-1** to the elbow cylinder (push_rod) as tan pivot pin at each cylinder end
+- adds **bm-tpin-2** to the elbow cylinder (push_rod) as tan pivot pin at each cylinder end
+- air: 11/15 parts - still missing hy-hose-5, hy-hose-6, hy-hose-7, hy-hose-8
+- elbow_cylinder: 4/4 parts - complete
 - **bm-tpin-1** builds on bm-b15e-1 (42175-step-088), which rests on bm-bp10-1 (42175-step-085), bm-bp10-2 (42175-step-085)
-- **bm-tpin-2** builds on bm-b3-1 (42175-step-089), which rests on bm-bp11-1 (42175-step-089), bm-bp11-2 (42175-step-089)
+- **bm-tpin-2** builds on bm-b3-1 (42175-step-089, short beam that takes the push in the elbow cylinder), which rests on bm-bp11-1 (42175-step-089), bm-bp11-2 (42175-step-089)
 
 **Review:** Cylinders have little catalog detail, so cylinder holes are open. Which post takes each tan pin is read from the picture.
 
@@ -2471,9 +2641,9 @@
 **Why:** Holds the cylinder's pin in place from above. A beam over a pin keeps it from popping out. *Next:* Step 92 adds a small beam. *Pattern:* pin cover
 
 **Big picture:**
-- **bm-b11e-1** (None): None
-- **bm-gp6-1** (None): None Later: 42175-step-092 `CONNECT bm-tb2-1.axlehole1 -> bm-gp6-1.pin?`; 42175-step-092 `DOES bm-tb2-1 HOLDS bm-gp6-1`.
-- **bm-l7-1** (None): None
+- **bm-b11e-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket).
+- **bm-gp6-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket). Later: 42175-step-092 `CONNECT bm-tb2-1.axlehole1 -> bm-gp6-1.pin?`; 42175-step-092 `DOES bm-tb2-1 HOLDS bm-gp6-1`.
+- **bm-l7-1** (Arm and bucket): Beam (32526) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b11e-1** builds on bm-bp10-1 (42175-step-085), which rests on bm-b11d-1 (42175-step-085), bm-b15e-1 (42175-step-088)
@@ -2498,7 +2668,7 @@
 **Why:** Locks the grey pin so it stays. A thin beam over a pin keeps it in. *Next:* Step 93 builds the next hinge. *Pattern:* pin lock
 
 **Big picture:**
-- **bm-tb2-1** (None): None
+- **bm-tb2-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-tb2-1** builds on bm-gp6-1 (42175-step-091), which rests on bm-b11e-1 (42175-step-091)
@@ -2522,11 +2692,11 @@
 **Why:** Builds the link at the elbow. Thin beams on an axle pin make a plate that can swing. *Next:* Later steps hang the bucket cylinder on it. *Pattern:* elbow plate
 
 **Big picture:**
-- **bm-tbk2-1** (None): None
-- **bm-tbk2-2** (None): None
-- **bm-bp12-1** (None): None Later: 42175-step-094 `CONNECT bm-b15f-1.hole? -> bm-bp12-1.pin?`.
-- **bm-b5c-1** (None): None Later: 42175-step-094 `DOES bm-b15f-1 SUPPORTS bm-b5c-1`.
-- **bm-ap3-1** (None): None
+- **bm-tbk2-1** (Arm and bucket): Beam (11478) in the arm (boom, stick and bucket).
+- **bm-tbk2-2** (Arm and bucket): Beam (11478) in the arm (boom, stick and bucket).
+- **bm-bp12-1** (Arm and bucket): Pin (43093) in the arm (boom, stick and bucket). Later: 42175-step-094 `CONNECT bm-b15f-1.hole? -> bm-bp12-1.pin?`.
+- **bm-b5c-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket). Later: 42175-step-094 `DOES bm-b15f-1 SUPPORTS bm-b5c-1`.
+- **bm-ap3-1** (Arm and bucket): Pin (18651) in the arm (boom, stick and bucket).
 
 **Review:** Which holes are used is not countable.
 
@@ -2547,7 +2717,7 @@
 **Why:** Lengthens the arm's lower section. A 15-hole beam spans two pivots. *Next:* Step 95 adds side beams with pins. *Pattern:* lower beam
 
 **Big picture:**
-- **bm-b15f-1** (None): None
+- **bm-b15f-1** (Arm and bucket): Beam (32278) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b15f-1** builds on bm-bp12-1 (42175-step-093), which rests on bm-b5c-1 (42175-step-093)
@@ -2571,14 +2741,14 @@
 **Why:** Builds the side plates for the next hinge. The red pins are the connection points for the cylinder. *Next:* Following steps close the elbow. *Pattern:* side plates
 
 **Big picture:**
-- **bm-b11f-1** (None): None Later: 42175-step-096 `CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?`; 42175-step-096 `DOES bm-b11f-1 HOLDS bm-ax5d-1`; 42175-step-098 `CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?`; 42175-step-098 `DOES bm-b11f-1 SUPPORTS bm-tile-1`.
-- **bm-b11f-2** (None): None Later: 42175-step-098 `CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?`; 42175-step-098 `DOES bm-b11f-2 SUPPORTS bm-tile-2`.
-- **bm-gp7-1** (None): None
-- **bm-gp7-2** (None): None
-- **bm-rp-1** (None): None
-- **bm-rp-2** (None): None
-- **bm-rp-3** (None): None
-- **bm-rp-4** (None): None
+- **bm-b11f-1** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket). Later: 42175-step-096 `CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?`; 42175-step-096 `DOES bm-b11f-1 HOLDS bm-ax5d-1`; 42175-step-098 `CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?`; 42175-step-098 `DOES bm-b11f-1 SUPPORTS bm-tile-1`.
+- **bm-b11f-2** (Arm and bucket): Beam (32525) in the arm (boom, stick and bucket). Later: 42175-step-098 `CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?`; 42175-step-098 `DOES bm-b11f-2 SUPPORTS bm-tile-2`.
+- **bm-gp7-1** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-gp7-2** (Arm and bucket): Pin (4274) in the arm (boom, stick and bucket).
+- **bm-rp-1** (Arm and bucket): Pin (89678) in the arm (boom, stick and bucket).
+- **bm-rp-2** (Arm and bucket): Pin (89678) in the arm (boom, stick and bucket).
+- **bm-rp-3** (Arm and bucket): Pin (89678) in the arm (boom, stick and bucket).
+- **bm-rp-4** (Arm and bucket): Pin (89678) in the arm (boom, stick and bucket).
 
 **Review:** Hole positions estimated.
 
@@ -2599,8 +2769,8 @@
 **Why:** Adds a cross shaft that ties the two side beams. An axle through both beams makes a hinge pin. *Next:* Step 97 adds a cap beam. *Pattern:* cross shaft
 
 **Big picture:**
-- **bm-ax5d-1** (None): None Later: 42175-step-097 `CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?`; 42175-step-097 `DOES bm-tb4-1 HOLDS bm-ax5d-1`.
-- **bm-tb3-1** (None): None
+- **bm-ax5d-1** (Arm and bucket): Axle (32073) in the arm (boom, stick and bucket). Later: 42175-step-097 `CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?`; 42175-step-097 `DOES bm-tb4-1 HOLDS bm-ax5d-1`.
+- **bm-tb3-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-ax5d-1** builds on bm-b11f-1 (42175-step-095), which rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
@@ -2624,7 +2794,7 @@
 **Why:** Locks the cross shaft from the other side. A beam on each end keeps an axle from sliding. *Next:* Step 98 puts tiles on the side beams. *Pattern:* shaft lock
 
 **Big picture:**
-- **bm-tb4-1** (None): None
+- **bm-tb4-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-tb4-1** builds on bm-ax5d-1 (42175-step-096), which rests on bm-tb3-1 (42175-step-096), bm-b11f-1 (42175-step-095)
@@ -2648,8 +2818,8 @@
 **Why:** Adds the warning stripe that real excavator arms show. Tiles are the flat surface for stickers. *Next:* Step 99 continues at the lower end. *Pattern:* warning stripes
 
 **Big picture:**
-- **bm-tile-1** (None): None
-- **bm-tile-2** (None): None
+- **bm-tile-1** (Arm and bucket): Tile, plate or clip (6636) in the arm (boom, stick and bucket).
+- **bm-tile-2** (Arm and bucket): Tile, plate or clip (6636) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-tile-1** builds on bm-b11f-1 (42175-step-095), which rests on bm-gp7-1 (42175-step-095), bm-rp-1 (42175-step-095)
@@ -2674,9 +2844,9 @@
 **Why:** Adds the second cross shaft at the bottom. End beams keep the axle from sliding out. *Next:* Step 100 adds a beam. *Pattern:* lower shaft
 
 **Big picture:**
-- **bm-ax6-1** (None): None Later: 42175-step-100 `CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?`; 42175-step-100 `DOES bm-b5d-1 SUPPORTS bm-ax6-1`; 42175-step-102 `CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?`; 42175-step-102 `DOES bm-go2-1 HOLDS bm-ax6-1`.
-- **bm-tb5-1** (None): None
-- **bm-tb5-2** (None): None
+- **bm-ax6-1** (Arm and bucket): Axle (3706) in the arm (boom, stick and bucket). Later: 42175-step-100 `CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?`; 42175-step-100 `DOES bm-b5d-1 SUPPORTS bm-ax6-1`; 42175-step-102 `CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?`; 42175-step-102 `DOES bm-go2-1 HOLDS bm-ax6-1`.
+- **bm-tb5-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+- **bm-tb5-2** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Review:** Hole not countable.
 
@@ -2697,7 +2867,7 @@
 **Why:** Strengthens the lower end. A beam alongside the shaft spreads the load. *Next:* Step 101 builds a new sub-assembly. *Pattern:* lower end beam
 
 **Big picture:**
-- **bm-b5d-1** (None): None
+- **bm-b5d-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b5d-1** builds on bm-ax6-1 (42175-step-099), which rests on bm-tb5-1 (42175-step-099), bm-tb5-2 (42175-step-099)
@@ -2721,12 +2891,12 @@
 **Why:** Builds the bucket link bracket. Two axles in one bracket give two hinge points. *Next:* The following steps attach it to the arm end. *Pattern:* bucket link
 
 **Big picture:**
-- **bm-rax-1** (None): None Later: 42175-step-102 `CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?`; 42175-step-103 `CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?`; 42175-step-103 `DOES bm-bu2-1 HOLDS bm-rax-1`.
-- **bm-b5e-1** (None): None
-- **bm-ax6b-1** (None): None Later: 42175-step-103 `CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?`.
-- **bm-gb4-1** (None): None
-- **bm-go-1** (None): None
-- **bm-bu-1** (None): None
+- **bm-rax-1** (Arm and bucket): Axle (3705) in the arm (boom, stick and bucket). Later: 42175-step-102 `CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?`; 42175-step-103 `CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?`; 42175-step-103 `DOES bm-bu2-1 HOLDS bm-rax-1`.
+- **bm-b5e-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket).
+- **bm-ax6b-1** (Arm and bucket): Axle (3706) in the arm (boom, stick and bucket). Later: 42175-step-103 `CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?`.
+- **bm-gb4-1** (Arm and bucket): Beam (32449) in the arm (boom, stick and bucket).
+- **bm-go-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+- **bm-bu-1** (Arm and bucket): Bush (spacer/stop) (3713) in the arm (boom, stick and bucket).
 
 **Review:** Sub-step order is as drawn; join points are estimates.
 
@@ -2747,8 +2917,8 @@
 **Why:** Locks the shaft end. A beam on the shaft end stops it sliding out. *Next:* Step 103 finishes the other end. *Pattern:* shaft end
 
 **Big picture:**
-- **bm-b5f-1** (None): None
-- **bm-go2-1** (None): None
+- **bm-b5f-1** (Arm and bucket): Beam (32316) in the arm (boom, stick and bucket).
+- **bm-go2-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
 
 **Mechanisms:**
 - **bm-b5f-1** builds on bm-rax-1 (42175-step-101), which rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
@@ -2773,8 +2943,8 @@
 **Why:** Locks the bucket hinge shafts. Bushes and thin beams act as stops. *Next:* Step 104 adds a long axle. *Pattern:* stops
 
 **Big picture:**
-- **bm-bu2-1** (None): None
-- **bm-go3-1** (None): None Later: 42175-step-104 `CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?`; 42175-step-104 `DOES bm-ax6c-1 CARRIES bm-go3-1`.
+- **bm-bu2-1** (Arm and bucket): Bush (spacer/stop) (3713) in the arm (boom, stick and bucket).
+- **bm-go3-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket). Later: 42175-step-104 `CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?`; 42175-step-104 `DOES bm-ax6c-1 CARRIES bm-go3-1`.
 
 **Mechanisms:**
 - **bm-bu2-1** builds on bm-rax-1 (42175-step-101), which rests on bm-gb4-1 (42175-step-101), bm-b5e-1 (42175-step-101)
@@ -2799,9 +2969,11 @@
 **Why:** Adds the shaft the bucket will hang on. An axle through two side beams makes a hinge. *Next:* Step 105 puts the bucket on. *Pattern:* bucket shaft
 
 **Big picture:**
-- **bm-ax6c-1** (None): None Later: 42175-step-105 `DOES bm-ax6c-1 HOLDS bk-bucket-1`.
+- **bm-ax6c-1** (Arm and bucket): Axle (3706) in the arm (boom, stick and bucket). Later: 42175-step-105 `DOES bm-ax6c-1 HOLDS bk-bucket-1`.
 
 **Mechanisms:**
+- adds **bm-ax6c-1** to the bucket hinge (hinge) as lower corner shaft
+- bucket: 1/7 parts - still missing bk-bucket-1, bk-bucket-2, bk-tpin-1, bk-tpin-2
 - **bm-ax6c-1** builds on bm-go3-1 (42175-step-103), which rests on bm-ax6b-1 (42175-step-101)
 
 **Review:** The picture shows no arrow; which holes unknown.
@@ -2823,12 +2995,21 @@
 **Why:** Adds the digging bucket(s). A bucket on a hinge pin can tip to dig. *Next:* Step 106 adds air hoses. *Pattern:* bucket
 
 **Big picture:**
-- **bk-bucket-1** (None): None
-- **bk-bucket-2** (None): None
-- **bk-tpin-1** (None): None
-- **bk-tpin-2** (None): None
-- **bk-tb-1** (None): None
-- **bk-tb-2** (None): None
+- **bk-bucket-1** (Arm and bucket): Left half of the digger bucket, hung on the lower-corner shafts.
+- **bk-bucket-2** (Arm and bucket): Right half of the digger bucket, side by side with the left half.
+- **bk-tpin-1** (Arm and bucket): Pin (32002) in the arm (boom, stick and bucket).
+- **bk-tpin-2** (Arm and bucket): Pin (32002) in the arm (boom, stick and bucket).
+- **bk-tb-1** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+- **bk-tb-2** (Arm and bucket): Beam (41677) in the arm (boom, stick and bucket).
+
+**Mechanisms:**
+- adds **bk-bucket-1** to the bucket hinge (hinge) as bucket half
+- adds **bk-bucket-2** to the bucket hinge (hinge) as bucket half
+- adds **bk-tpin-1** to the bucket hinge (hinge) as tan pin in the bucket eye
+- adds **bk-tpin-2** to the bucket hinge (hinge) as tan pin in the bucket eye
+- adds **bk-tb-1** to the bucket hinge (hinge) as thin black beam
+- adds **bk-tb-2** to the bucket hinge (hinge) as thin black beam
+- bucket: 7/7 parts - complete
 
 **Review:** The picture shows two buckets (two boxes) drawn on one arm; they are 4 x 7 buckets (24120).
 
@@ -2849,7 +3030,11 @@
 **Why:** Brings the arm cylinder's long hose in. Hoses carry air from the machine to the cylinder. *Next:* They are plugged in later. *Pattern:* arm hoses
 
 **Big picture:**
-- **hy-hose-5** (None): None
+- **hy-hose-5** (Air system): Air hose (5102c32) in the air (pneumatic) system.
+
+**Mechanisms:**
+- adds **hy-hose-5** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- air: 12/15 parts - still missing hy-hose-6, hy-hose-7, hy-hose-8
 
 **Review:** The length bars run off the page edge, so the lengths are a guess: 32L black is the longest unused black hose on the whole-set list; the same-page grey bar is the grey hose added in step 107 (25L).
 
@@ -2870,7 +3055,11 @@
 **Why:** Brings the second arm hose in. A cylinder needs two hoses, one for each side of its piston. *Next:* Later steps plug them into the cylinder and the switches. *Pattern:* arm hoses
 
 **Big picture:**
-- **hy-hose-6** (None): None
+- **hy-hose-6** (Air system): Air hose (5102c25) in the air (pneumatic) system.
+
+**Mechanisms:**
+- adds **hy-hose-6** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- air: 13/15 parts - still missing hy-hose-7, hy-hose-8
 
 **Review:** Length 25L read from the matching bar (the bar runs off the page); it could be a different hose.
 
@@ -2891,10 +3080,13 @@
 **Why:** Adds the axle that the arm's root hinge sits on. A long axle ties the left and right sides together. *Next:* Step 109 locks it. *Pattern:* arm root axle
 
 **Big picture:**
-- **cb-rax10-1** (None): None Later: 42175-step-109 `DOES cb-gpin-1 HOLDS cb-rax10-1`.
-- **cb-rbush-1** (None): None
+- **cb-rax10-1** (Arm-root axle): Long red axle across the front: the hinge pin for the arm root. Later: 42175-step-109 `DOES cb-gpin-1 HOLDS cb-rax10-1`.
+- **cb-rbush-1** (Arm-root axle): Bush (spacer/stop) (3713) in the arm-root axle across the front.
 
 **Mechanisms:**
+- adds **cb-rax10-1** to the arm-root hinge (hinge) as pivot axle across the front
+- adds **cb-rbush-1** to the arm-root hinge (hinge) as stop on the pivot axle
+- arm_root: 3/4 parts - still missing cb-gpin-1
 - **cb-rax10-1** builds on cb-lb-1 (42175-step-042), which rests on cb-lp-1 (42175-step-042), cb-lp-2 (42175-step-042)
 
 **Review:** Which parts the axle passes through is not countable.
@@ -2916,10 +3108,12 @@
 **Why:** Locks the arm to the machine. A pin through the root keeps the axle from sliding. *Next:* Step 110 adds hoses. *Pattern:* root pin
 
 **Big picture:**
-- **cb-gpin-1** (None): None
+- **cb-gpin-1** (Arm-root axle): Pin (77765) in the arm-root axle across the front.
 
 **Mechanisms:**
-- **cb-gpin-1** builds on bm-lb-1 (42175-step-061), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
+- adds **cb-gpin-1** to the arm-root hinge (hinge) as lock pin
+- arm_root: 4/4 parts - complete
+- **cb-gpin-1** builds on bm-lb-1 (42175-step-061, arm root L-beam in the arm-root hinge), which rests on bm-gp-1 (42175-step-061), bm-bp-1 (42175-step-061)
 
 **Review:** Arm root is drawn on the frame; hole not countable.
 
@@ -2940,8 +3134,13 @@
 **Why:** Brings the hoses that run from the switches to the arm in. The cab end of an arm cylinder's hoses is short. *Next:* Step 111 plugs them. *Pattern:* cab hoses
 
 **Big picture:**
-- **hy-hose-7** (None): None Later: 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
-- **hy-hose-8** (None): None Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
+- **hy-hose-7** (Air system): Air hose (5102c13) in the air (pneumatic) system. Later: 42175-step-111 `CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
+- **hy-hose-8** (Air system): Air hose (5102c18) in the air (pneumatic) system. Later: 42175-step-111 `CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?`; 42175-step-111 `DOES hy-hose-7 CARRIES hy-hose-8`.
+
+**Mechanisms:**
+- adds **hy-hose-7** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- adds **hy-hose-8** to the air system (pump, switches, cylinders) (pneumatic_circuit) as air hose *(not confirmed)*
+- air: 15/15 parts - complete
 
 **Review:** Lengths 13L and 18L read from the bars (the grey bar is about 72% of the black one, matching 13/18); the pair 25L/32L was used in steps 106-107.
 
@@ -2983,7 +3182,7 @@
 **Why:** Adds a rear cross beam on which the counterweight will sit. A long beam spans the full rear width. *Next:* Steps 113-120 build the counterweight separately. *Pattern:* rear beam
 
 **Big picture:**
-- **up-gb13-1** (None): None Later: 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-122 `CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?`; 42175-step-123 `CONNECT cw-b7d-1.hole? -> up-gb13-1.hole?`.
+- **up-gb13-1** (Upper frame): Beam (41239) in the upper frame that sits on the turntable. Later: 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-122 `CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?`; 42175-step-123 `CONNECT cw-b7d-1.hole? -> up-gb13-1.hole?`.
 
 **Mechanisms:**
 - **up-gb13-1** builds on up-lbeam-1 (42175-step-019), which rests on up-bpin-1 (42175-step-019), up-bpin-2 (42175-step-019); up-lbeam-2 (42175-step-020), which rests on up-bpin-3 (42175-step-020), up-bpin-4 (42175-step-020)
@@ -3007,11 +3206,15 @@
 **Why:** Starts the rear counterweight: a stack of panels and beams. A panel is the base, pins hold the beams above it. *Next:* Step 114 adds a 7-hole beam. *Pattern:* counterweight base
 
 **Big picture:**
-- **cw-panel-1** (None): None Later: 42175-step-114 `DOES cw-b7-1 SUPPORTS cw-panel-1`; 42175-step-119 `CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `DOES cw-panel-1 CARRIES cw-bp2-1`; 42175-step-120 `CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?`; 42175-step-120 `CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?`; 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-124 `CONNECT cw-bp6-1.pin1 -> cw-panel-1.hole?`; 42175-step-124 `CONNECT cw-bp6-2.pin1 -> cw-panel-1.hole?`; 42175-step-124 `DOES cw-panel-1 CARRIES cw-bp6-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`; 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`.
-- **cw-gp-1** (None): None Later: 42175-step-114 `CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF`.
-- **cw-gp-2** (None): None Later: 42175-step-114 `CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF`.
-- **cw-gp-3** (None): None
-- **cw-gp-4** (None): None
+- **cw-panel-1** (Counterweight and hood): Counterweight base panel: with the second panel it sandwiches the beams that make the heavy rear block. Later: 42175-step-114 `DOES cw-b7-1 SUPPORTS cw-panel-1`; 42175-step-119 `CONNECT cw-gp3-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?`; 42175-step-119 `DOES cw-panel-1 CARRIES cw-bp2-1`; 42175-step-120 `CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?`; 42175-step-120 `CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?`; 42175-step-121 `CONNECT cw-panel-1.hole? -> up-gb13-1.hole?`; 42175-step-121 `DOES up-gb13-1 CARRIES cw-panel-1`; 42175-step-124 `CONNECT cw-bp6-1.pin1 -> cw-panel-1.hole?`; 42175-step-124 `CONNECT cw-bp6-2.pin1 -> cw-panel-1.hole?`; 42175-step-124 `DOES cw-panel-1 CARRIES cw-bp6-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`; 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`.
+- **cw-gp-1** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-114 `CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF`.
+- **cw-gp-2** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-114 `CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF`.
+- **cw-gp-3** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
+- **cw-gp-4** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
+
+**Mechanisms:**
+- adds **cw-panel-1** to the counterweight and hood (decoration) as base panel
+- counterweight: 1/7 parts - still missing cw-panel2-1, cw-b7-1, cw-b7b-1, cw-b7b-2
 
 **Review:** Four pins in the box; the picture shows the two on top and two others hidden.
 
@@ -3032,9 +3235,11 @@
 **Why:** Adds a layer to the stack. The beam locks on the pins. *Next:* Step 115 adds blue pins for the next layer. *Pattern:* layer
 
 **Big picture:**
-- **cw-b7-1** (None): None Later: 42175-step-115 `CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF`; 42175-step-115 `CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF`; 42175-step-115 `DOES cw-b7-1 CARRIES cw-bp-1`; 42175-step-116 `DOES cw-b7b-1 SUPPORTS cw-b7-1`.
+- **cw-b7-1** (Counterweight and hood): Beam (32524) in the rear counterweight and hood. Later: 42175-step-115 `CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF`; 42175-step-115 `CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF`; 42175-step-115 `DOES cw-b7-1 CARRIES cw-bp-1`; 42175-step-116 `DOES cw-b7b-1 SUPPORTS cw-b7-1`.
 
 **Mechanisms:**
+- adds **cw-b7-1** to the counterweight and hood (decoration) as 7-hole beam in the sandwich
+- counterweight: 2/7 parts - still missing cw-panel2-1, cw-b7b-1, cw-b7b-2, hd-fair-1
 - **cw-b7-1** builds on cw-gp-1 (42175-step-113), which rests on cw-panel-1 (42175-step-113); cw-gp-2 (42175-step-113), which rests on cw-panel-1 (42175-step-113)
 
 **Review:** Holes not countable.
@@ -3056,12 +3261,12 @@
 **Why:** Adds posts for the next beam. Pins at both ends locate it. *Next:* Step 116 puts a beam on. *Pattern:* posts
 
 **Big picture:**
-- **cw-bp-1** (None): None Later: 42175-step-116 `CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF`.
-- **cw-bp-2** (None): None Later: 42175-step-116 `CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF`.
+- **cw-bp-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood. Later: 42175-step-116 `CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF`.
+- **cw-bp-2** (Counterweight and hood): Pin (43093) in the rear counterweight and hood. Later: 42175-step-116 `CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF`.
 
 **Mechanisms:**
-- **cw-bp-1** builds on cw-b7-1 (42175-step-114), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-bp-2** builds on cw-b7-1 (42175-step-114), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp-1** builds on cw-b7-1 (42175-step-114, 7-hole beam in the sandwich in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp-2** builds on cw-b7-1 (42175-step-114, 7-hole beam in the sandwich in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
 
 **Review:** Positions read from the picture.
 
@@ -3082,10 +3287,13 @@
 **Why:** Builds up the counterweight's height. Each layer locks the one below. *Next:* Step 117 adds pins. *Pattern:* stack
 
 **Big picture:**
-- **cw-b7b-1** (None): None Later: 42175-step-117 `CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF`; 42175-step-117 `CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF`; 42175-step-117 `DOES cw-b7b-1 CARRIES cw-gp2-1`.
-- **cw-b7b-2** (None): None Later: 42175-step-118 `DOES cw-panel2-1 SUPPORTS cw-b7b-2`.
+- **cw-b7b-1** (Counterweight and hood): Beam (32524) in the rear counterweight and hood. Later: 42175-step-117 `CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF`; 42175-step-117 `CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF`; 42175-step-117 `DOES cw-b7b-1 CARRIES cw-gp2-1`.
+- **cw-b7b-2** (Counterweight and hood): Beam (32524) in the rear counterweight and hood. Later: 42175-step-118 `DOES cw-panel2-1 SUPPORTS cw-b7b-2`.
 
 **Mechanisms:**
+- adds **cw-b7b-1** to the counterweight and hood (decoration) as 7-hole beam in the sandwich
+- adds **cw-b7b-2** to the counterweight and hood (decoration) as 7-hole beam in the sandwich
+- counterweight: 4/7 parts - still missing cw-panel2-1, hd-fair-1, hd-b9-1
 - **cw-b7b-1** builds on cw-bp-1 (42175-step-115), which rests on cw-b7-1 (42175-step-114); cw-bp-2 (42175-step-115), which rests on cw-b7-1 (42175-step-114)
 
 **Review:** The box has 2x beams; the picture only shows one being placed, the second is hidden in the stack below.
@@ -3107,12 +3315,12 @@
 **Why:** Posts for the top panel. Pins make fixing points. *Next:* Step 118 adds a panel on top. *Pattern:* posts
 
 **Big picture:**
-- **cw-gp2-1** (None): None Later: 42175-step-118 `CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?`.
-- **cw-gp2-2** (None): None Later: 42175-step-118 `CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?`.
+- **cw-gp2-1** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-118 `CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?`.
+- **cw-gp2-2** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-118 `CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?`.
 
 **Mechanisms:**
-- **cw-gp2-1** builds on cw-b7b-1 (42175-step-116), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
-- **cw-gp2-2** builds on cw-b7b-1 (42175-step-116), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+- **cw-gp2-1** builds on cw-b7b-1 (42175-step-116, 7-hole beam in the sandwich in the counterweight and hood), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
+- **cw-gp2-2** builds on cw-b7b-1 (42175-step-116, 7-hole beam in the sandwich in the counterweight and hood), which rests on cw-bp-1 (42175-step-115), cw-bp-2 (42175-step-115)
 
 **Review:** Positions estimated.
 
@@ -3133,9 +3341,11 @@
 **Why:** Closes the sandwich. Panels on both ends lock the beams. *Next:* Steps 119-120 add pins and connectors on the sides. *Pattern:* counterweight sandwich
 
 **Big picture:**
-- **cw-panel2-1** (None): None Later: 42175-step-119 `CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?`; 42175-step-119 `CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-3.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-4.pin1 -> cw-panel2-1.hole?`; 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
+- **cw-panel2-1** (Counterweight and hood): Top panel of the counterweight sandwich. Later: 42175-step-119 `CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?`; 42175-step-119 `CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-3.pin1 -> cw-panel2-1.hole?`; 42175-step-124 `CONNECT cw-bp6-4.pin1 -> cw-panel2-1.hole?`; 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
 
 **Mechanisms:**
+- adds **cw-panel2-1** to the counterweight and hood (decoration) as top panel
+- counterweight: 5/7 parts - still missing hd-fair-1, hd-b9-1
 - **cw-panel2-1** builds on cw-gp2-1 (42175-step-117), which rests on cw-b7b-1 (42175-step-116); cw-gp2-2 (42175-step-117), which rests on cw-b7b-1 (42175-step-116)
 
 **Review:** Holes not countable.
@@ -3157,16 +3367,16 @@
 **Why:** Adds the mounting points that attach it to the frame. The pins go into the frame's holes. *Next:* Step 120 adds connectors. *Pattern:* mounting pins
 
 **Big picture:**
-- **cw-gp3-1** (None): None
-- **cw-gp3-2** (None): None
-- **cw-bp2-1** (None): None
-- **cw-bp2-2** (None): None
+- **cw-gp3-1** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
+- **cw-gp3-2** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
+- **cw-bp2-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-bp2-2** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
 
 **Mechanisms:**
-- **cw-gp3-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-gp3-2** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
-- **cw-bp2-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-bp2-2** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-gp3-1** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-gp3-2** builds on cw-panel2-1 (42175-step-118, top panel in the counterweight and hood), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-bp2-1** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp2-2** builds on cw-panel2-1 (42175-step-118, top panel in the counterweight and hood), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
 
 **Review:** Positions are not countable.
 
@@ -3187,14 +3397,14 @@
 **Why:** Adds the corner locks. Connectors let more beams be attached later. *Next:* Step 121 fits the counterweight to the model. *Pattern:* corner connectors
 
 **Big picture:**
-- **cw-bp3-1** (None): None
-- **cw-bp3-2** (None): None
-- **cw-conn-1** (None): None
-- **cw-conn-2** (None): None
+- **cw-bp3-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-bp3-2** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-conn-1** (Counterweight and hood): Connector (42003) in the rear counterweight and hood.
+- **cw-conn-2** (Counterweight and hood): Connector (42003) in the rear counterweight and hood.
 
 **Mechanisms:**
-- **cw-conn-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-conn-2** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-conn-1** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-conn-2** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
 
 **Review:** Positions not countable.
 
@@ -3236,9 +3446,9 @@
 **Why:** Adds a side beam beside the cab. The pins are posts for the next piece. *Next:* Steps 123 onward continue the cab. *Pattern:* side beam
 
 **Big picture:**
-- **cw-b7c-1** (None): None
-- **cw-bp4-1** (None): None
-- **cw-bp4-2** (None): None
+- **cw-b7c-1** (Counterweight and hood): Beam (32524) in the rear counterweight and hood.
+- **cw-bp4-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-bp4-2** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
 
 **Mechanisms:**
 - **cw-b7c-1** builds on up-gb13-1 (42175-step-112), which rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
@@ -3262,8 +3472,8 @@
 **Why:** Adds a second side post beside the cab. Beams on both sides of the cab make a box. *Next:* Step 124 adds more pins. *Pattern:* side post
 
 **Big picture:**
-- **cw-b7d-1** (None): None
-- **cw-bp5-1** (None): None
+- **cw-b7d-1** (Counterweight and hood): Beam (32524) in the rear counterweight and hood.
+- **cw-bp5-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
 
 **Mechanisms:**
 - **cw-b7d-1** builds on up-gb13-1 (42175-step-112), which rests on up-lbeam-1 (42175-step-019), up-lbeam-2 (42175-step-020)
@@ -3287,16 +3497,16 @@
 **Why:** Adds the posts for the top cover. Pins locate the cover. *Next:* Step 125 closes the top. *Pattern:* cover posts
 
 **Big picture:**
-- **cw-bp6-1** (None): None Later: 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
-- **cw-bp6-2** (None): None
-- **cw-bp6-3** (None): None
-- **cw-bp6-4** (None): None
+- **cw-bp6-1** (Counterweight and hood): Pin (43093) in the rear counterweight and hood. Later: 42175-step-125 `DOES cw-panel2-1 SUPPORTS cw-bp6-1`.
+- **cw-bp6-2** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-bp6-3** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
+- **cw-bp6-4** (Counterweight and hood): Pin (43093) in the rear counterweight and hood.
 
 **Mechanisms:**
-- **cw-bp6-1** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-bp6-2** builds on cw-panel-1 (42175-step-113), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
-- **cw-bp6-3** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
-- **cw-bp6-4** builds on cw-panel2-1 (42175-step-118), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-bp6-1** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp6-2** builds on cw-panel-1 (42175-step-113, base panel in the counterweight and hood), which rests on cw-gp-1 (42175-step-113), cw-gp-2 (42175-step-113)
+- **cw-bp6-3** builds on cw-panel2-1 (42175-step-118, top panel in the counterweight and hood), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
+- **cw-bp6-4** builds on cw-panel2-1 (42175-step-118, top panel in the counterweight and hood), which rests on cw-gp2-1 (42175-step-117), cw-gp2-2 (42175-step-117)
 
 **Review:** Which holes take the pins is not countable.
 
@@ -3338,9 +3548,13 @@
 **Why:** Starts the hood piece. Fairing gives the curved shape. *Next:* Step 127 adds the end pieces. *Pattern:* hood
 
 **Big picture:**
-- **hd-fair-1** (None): None Later: 42175-step-127 `DOES hd-fair-1 CARRIES hd-f7-1`; 42175-step-127 `DOES hd-fair-1 CARRIES hd-f8-1`.
-- **hd-rpin-1** (None): None
-- **hd-rpin-2** (None): None
+- **hd-fair-1** (Counterweight and hood): Panel or fairing (71682) in the rear counterweight and hood. Later: 42175-step-127 `DOES hd-fair-1 CARRIES hd-f7-1`; 42175-step-127 `DOES hd-fair-1 CARRIES hd-f8-1`.
+- **hd-rpin-1** (Counterweight and hood): Pin (11214) in the rear counterweight and hood.
+- **hd-rpin-2** (Counterweight and hood): Pin (11214) in the rear counterweight and hood.
+
+**Mechanisms:**
+- adds **hd-fair-1** to the counterweight and hood (decoration) as hood fairing
+- counterweight: 6/7 parts - still missing hd-b9-1
 
 **Review:** Red pin type read from the icon.
 
@@ -3361,8 +3575,8 @@
 **Why:** Gives the hood its long curved shape. End fairings continue the curve. *Next:* Step 128 adds red pins. *Pattern:* hood
 
 **Big picture:**
-- **hd-f8-1** (None): None Later: 42175-step-128 `CONNECT hd-rpin2-2.axle1 -> hd-f8-1.axlehole?`.
-- **hd-f7-1** (None): None Later: 42175-step-128 `CONNECT hd-rpin2-1.axle1 -> hd-f7-1.axlehole?`; 42175-step-128 `DOES hd-f7-1 CARRIES hd-rpin2-1`.
+- **hd-f8-1** (Counterweight and hood): Panel or fairing (2389) in the rear counterweight and hood. Later: 42175-step-128 `CONNECT hd-rpin2-2.axle1 -> hd-f8-1.axlehole?`.
+- **hd-f7-1** (Counterweight and hood): Panel or fairing (2387) in the rear counterweight and hood. Later: 42175-step-128 `CONNECT hd-rpin2-1.axle1 -> hd-f7-1.axlehole?`; 42175-step-128 `DOES hd-f7-1 CARRIES hd-rpin2-1`.
 
 **Review:** Fairings have no catalog points; joins are open.
 
@@ -3383,8 +3597,8 @@
 **Why:** Adds the pins that the beam in step 129 sits on. Axle pins lock fairings to beams. *Next:* Step 129 adds the VOLVO beam. *Pattern:* hood pins
 
 **Big picture:**
-- **hd-rpin2-1** (None): None Later: 42175-step-129 `CONNECT hd-rpin2-1.pin1 -> hd-b9-1.hole1~ STIFF`; 42175-step-129 `DOES hd-b9-1 HOLDS hd-rpin2-1`.
-- **hd-rpin2-2** (None): None Later: 42175-step-129 `CONNECT hd-rpin2-2.pin1 -> hd-b9-1.hole9~ STIFF`.
+- **hd-rpin2-1** (Counterweight and hood): Pin (11214) in the rear counterweight and hood. Later: 42175-step-129 `CONNECT hd-rpin2-1.pin1 -> hd-b9-1.hole1~ STIFF`; 42175-step-129 `DOES hd-b9-1 HOLDS hd-rpin2-1`.
+- **hd-rpin2-2** (Counterweight and hood): Pin (11214) in the rear counterweight and hood. Later: 42175-step-129 `CONNECT hd-rpin2-2.pin1 -> hd-b9-1.hole9~ STIFF`.
 
 **Mechanisms:**
 - **hd-rpin2-1** builds on hd-f7-1 (42175-step-127)
@@ -3409,9 +3623,11 @@
 **Why:** Adds the brand beam on the front of the hood. A beam on pins locks both fairing ends. *Next:* Step 130 adds small pins. *Pattern:* brand beam
 
 **Big picture:**
-- **hd-b9-1** (None): None Later: 42175-step-130 `CONNECT hd-gp-1.pin1 -> hd-b9-1.hole3~ STIFF`; 42175-step-130 `CONNECT hd-gp-2.pin1 -> hd-b9-1.hole4~ STIFF`; 42175-step-130 `CONNECT hd-gp-3.pin1 -> hd-b9-1.hole5~ STIFF`; 42175-step-130 `CONNECT hd-gp-4.pin1 -> hd-b9-1.hole7~ STIFF`; 42175-step-130 `DOES hd-b9-1 CARRIES hd-gp-1`; 42175-step-131 `DOES hd-b3-1 SUPPORTS hd-b9-1`; 42175-step-132 `CONNECT hd-cb-1.hole1 -> hd-b9-1.pin?`; 42175-step-132 `CONNECT hd-cb-2.hole1 -> hd-b9-1.pin?`.
+- **hd-b9-1** (Counterweight and hood): The 9-hole VOLVO beam on the hood's front face. Later: 42175-step-130 `CONNECT hd-gp-1.pin1 -> hd-b9-1.hole3~ STIFF`; 42175-step-130 `CONNECT hd-gp-2.pin1 -> hd-b9-1.hole4~ STIFF`; 42175-step-130 `CONNECT hd-gp-3.pin1 -> hd-b9-1.hole5~ STIFF`; 42175-step-130 `CONNECT hd-gp-4.pin1 -> hd-b9-1.hole7~ STIFF`; 42175-step-130 `DOES hd-b9-1 CARRIES hd-gp-1`; 42175-step-131 `DOES hd-b3-1 SUPPORTS hd-b9-1`; 42175-step-132 `CONNECT hd-cb-1.hole1 -> hd-b9-1.pin?`; 42175-step-132 `CONNECT hd-cb-2.hole1 -> hd-b9-1.pin?`.
 
 **Mechanisms:**
+- adds **hd-b9-1** to the counterweight and hood (decoration) as VOLVO beam
+- counterweight: 7/7 parts - complete
 - **hd-b9-1** builds on hd-rpin2-1 (42175-step-128), which rests on hd-f7-1 (42175-step-127); hd-rpin2-2 (42175-step-128), which rests on hd-f8-1 (42175-step-127)
 
 **Review:** Pin holes estimated.
@@ -3433,16 +3649,16 @@
 **Why:** Adds posts for the next beam. Pins fix a beam on top. *Next:* Step 131 adds a short beam. *Pattern:* posts
 
 **Big picture:**
-- **hd-gp-1** (None): None Later: 42175-step-131 `CONNECT hd-b3-1.hole1 -> hd-gp-1.pin2~ STIFF`.
-- **hd-gp-2** (None): None
-- **hd-gp-3** (None): None Later: 42175-step-131 `CONNECT hd-b3-1.hole3 -> hd-gp-3.pin2~ STIFF`.
-- **hd-gp-4** (None): None
+- **hd-gp-1** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-131 `CONNECT hd-b3-1.hole1 -> hd-gp-1.pin2~ STIFF`.
+- **hd-gp-2** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
+- **hd-gp-3** (Counterweight and hood): Pin (61332) in the rear counterweight and hood. Later: 42175-step-131 `CONNECT hd-b3-1.hole3 -> hd-gp-3.pin2~ STIFF`.
+- **hd-gp-4** (Counterweight and hood): Pin (61332) in the rear counterweight and hood.
 
 **Mechanisms:**
-- **hd-gp-1** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
-- **hd-gp-2** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
-- **hd-gp-3** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
-- **hd-gp-4** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-1** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-2** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-3** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-gp-4** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
 
 **Review:** Positions estimated.
 
@@ -3463,7 +3679,7 @@
 **Why:** Adds the middle spacer. A short beam fills the gap. *Next:* Step 132 adds the red pins' connectors. *Pattern:* spacer
 
 **Big picture:**
-- **hd-b3-1** (None): None
+- **hd-b3-1** (Counterweight and hood): Beam (32523) in the rear counterweight and hood.
 
 **Mechanisms:**
 - **hd-b3-1** builds on hd-gp-1 (42175-step-130), which rests on hd-b9-1 (42175-step-129); hd-gp-3 (42175-step-130), which rests on hd-b9-1 (42175-step-129)
@@ -3487,14 +3703,14 @@
 **Why:** Makes the hood's mounting pins. Red pins give a strong fit into the frame. *Next:* Step 133 adds a 7-hole beam on them. *Pattern:* mounting pins
 
 **Big picture:**
-- **hd-rp-1** (None): None Later: 42175-step-133 `CONNECT hd-rp-1.pin1 -> hd-b7-1.hole2~ STIFF`; 42175-step-133 `DOES hd-b7-1 HOLDS hd-rp-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`.
-- **hd-rp-2** (None): None Later: 42175-step-133 `CONNECT hd-rp-2.pin1 -> hd-b7-1.hole6~ STIFF`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`.
-- **hd-cb-1** (None): None
-- **hd-cb-2** (None): None
+- **hd-rp-1** (Counterweight and hood): Pin (11214) in the rear counterweight and hood. Later: 42175-step-133 `CONNECT hd-rp-1.pin1 -> hd-b7-1.hole2~ STIFF`; 42175-step-133 `DOES hd-b7-1 HOLDS hd-rp-1`; 42175-step-134 `CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?`.
+- **hd-rp-2** (Counterweight and hood): Pin (11214) in the rear counterweight and hood. Later: 42175-step-133 `CONNECT hd-rp-2.pin1 -> hd-b7-1.hole6~ STIFF`; 42175-step-134 `CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?`.
+- **hd-cb-1** (Counterweight and hood): Beam (60483) in the rear counterweight and hood.
+- **hd-cb-2** (Counterweight and hood): Beam (60483) in the rear counterweight and hood.
 
 **Mechanisms:**
-- **hd-cb-1** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
-- **hd-cb-2** builds on hd-b9-1 (42175-step-129), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-cb-1** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
+- **hd-cb-2** builds on hd-b9-1 (42175-step-129, VOLVO beam in the counterweight and hood), which rests on hd-rpin2-1 (42175-step-128), hd-rpin2-2 (42175-step-128)
 
 **Review:** Which hood holes they use is estimated.
 
@@ -3515,7 +3731,7 @@
 **Why:** Ties the hood together underneath. A beam on the red pins locks them. *Next:* Steps 134 onward add parts on the hood. *Pattern:* hood underside
 
 **Big picture:**
-- **hd-b7-1** (None): None Later: 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`; 42175-step-140 `CONNECT cb-dp3-1.pin1 -> hd-b7-1.hole?`; 42175-step-140 `CONNECT cb-dp3-2.pin1 -> hd-b7-1.hole?`; 42175-step-140 `DOES hd-b7-1 CARRIES cb-dp3-1`.
+- **hd-b7-1** (Counterweight and hood): Beam (32524) in the rear counterweight and hood. Later: 42175-step-134 `DOES cw-panel-1 HOLDS hd-b7-1`; 42175-step-140 `CONNECT cb-dp3-1.pin1 -> hd-b7-1.hole?`; 42175-step-140 `CONNECT cb-dp3-2.pin1 -> hd-b7-1.hole?`; 42175-step-140 `DOES hd-b7-1 CARRIES cb-dp3-1`.
 
 **Mechanisms:**
 - **hd-b7-1** builds on hd-rp-1 (42175-step-132), which rests on hd-cb-1 (42175-step-132); hd-rp-2 (42175-step-132), which rests on hd-cb-2 (42175-step-132)
@@ -3560,17 +3776,17 @@
 **Why:** Builds the roof support: layered beams make a stiff bar. Pins locate each layer. *Next:* Step 136 fits it. *Pattern:* roof frame
 
 **Big picture:**
-- **rf-b11-1** (None): None Later: 42175-step-136 `DOES rf-b5b-1 SUPPORTS rf-b11-1`; 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
-- **rf-b7-1** (None): None
-- **rf-bp-1** (None): None Later: 42175-step-136 `CONNECT rf-b5b-1.hole? -> rf-bp-1.pin?`.
-- **rf-bp-2** (None): None
-- **rf-bp-3** (None): None
-- **rf-b5-1** (None): None Later: 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
-- **rf-b5-2** (None): None
-- **rf-b4-1** (None): None
-- **rf-gp-1** (None): None
-- **rf-gp-2** (None): None
-- **rf-gp-3** (None): None
+- **rf-b11-1** (Roof frame): Beam (73507) in the cab roof frame. Later: 42175-step-136 `DOES rf-b5b-1 SUPPORTS rf-b11-1`; 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
+- **rf-b7-1** (Roof frame): Beam (32524) in the cab roof frame.
+- **rf-bp-1** (Roof frame): Pin (43093) in the cab roof frame. Later: 42175-step-136 `CONNECT rf-b5b-1.hole? -> rf-bp-1.pin?`.
+- **rf-bp-2** (Roof frame): Pin (43093) in the cab roof frame.
+- **rf-bp-3** (Roof frame): Pin (43093) in the cab roof frame.
+- **rf-b5-1** (Roof frame): Beam (32316) in the cab roof frame. Later: 42175-step-136 `DOES rf-b11-1 CARRIES rf-b5-1`.
+- **rf-b5-2** (Roof frame): Beam (32316) in the cab roof frame.
+- **rf-b4-1** (Roof frame): Beam (32449) in the cab roof frame.
+- **rf-gp-1** (Roof frame): Pin (61332) in the cab roof frame.
+- **rf-gp-2** (Roof frame): Pin (61332) in the cab roof frame.
+- **rf-gp-3** (Roof frame): Pin (61332) in the cab roof frame.
 
 **Review:** Five sub-steps; pin counts per sub-step follow the box (3 blue, 3 dark). The 4-hole beam is read from the icon.
 
@@ -3591,7 +3807,7 @@
 **Why:** Fixes the roof stack to the frame. The beam on pins holds it down. *Next:* Steps 137 onward add the cab. *Pattern:* roof stack
 
 **Big picture:**
-- **rf-b5b-1** (None): None
+- **rf-b5b-1** (Roof frame): Beam (32316) in the cab roof frame.
 
 **Mechanisms:**
 - **rf-b5b-1** builds on rf-bp-1 (42175-step-135), which rests on rf-b11-1 (42175-step-135), rf-b7-1 (42175-step-135)
@@ -3615,9 +3831,9 @@
 **Why:** Adds the yellow trim beam that matches the yellow beam already there. Pins locate it on the frame. *Next:* Steps 139 and 141 add more yellow beams. *Pattern:* yellow trim
 
 **Big picture:**
-- **cb-yb3-1** (None): None Later: 42175-step-139 `CONNECT cb-yb5-1.hole? -> cb-yb3-1.hole?`.
-- **cb-bp7-1** (None): None
-- **cb-dp-1** (None): None
+- **cb-yb3-1** (Yellow trim): Beam (32523) in the yellow trim beams on the side of the frame. Later: 42175-step-139 `CONNECT cb-yb5-1.hole? -> cb-yb3-1.hole?`.
+- **cb-bp7-1** (Yellow trim): Pin (43093) in the yellow trim beams on the side of the frame.
+- **cb-dp-1** (Yellow trim): Pin (61332) in the yellow trim beams on the side of the frame.
 
 **Mechanisms:**
 - **cb-yb3-1** builds on cb-bp-1 (42175-step-046), which rests on cb-tb5-1 (42175-step-046), cb-tb3-1 (42175-step-046)
@@ -3641,16 +3857,16 @@
 **Why:** Builds the front-left corner cover/hinge. Axles with end beams make a rigid corner. *Next:* Step 139 adds yellow beams above. *Pattern:* corner piece
 
 **Big picture:**
-- **cr-tb-1** (None): None
-- **cr-tb-2** (None): None
-- **cr-tb-3** (None): None
-- **cr-tb-4** (None): None
-- **cr-conn-1** (None): None
-- **cr-rax-1** (None): None
-- **cr-hub-1** (None): None
-- **cr-fair-1** (None): None
-- **cr-yax-1** (None): None
-- **cr-yax-2** (None): None
+- **cr-tb-1** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-tb-2** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-tb-3** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-tb-4** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-conn-1** (Side covers and corners): Connector (42003) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-rax-1** (Side covers and corners): Axle (32062) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-hub-1** (Side covers and corners): Pin (44874) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-fair-1** (Side covers and corners): Panel or fairing (2395) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-yax-1** (Side covers and corners): Axle (4519) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cr-yax-2** (Side covers and corners): Axle (4519) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** Six sub-steps from small icons; several part identities (hub, connector, thin beams) are estimates. Fitting to the frame is shown on page 122 without a step number.
 
@@ -3671,9 +3887,9 @@
 **Why:** Extends the yellow trim along the frame side. Same piece as step 137 but longer. *Next:* Step 140 adds pins on top. *Pattern:* yellow trim
 
 **Big picture:**
-- **cb-yb5-1** (None): None
-- **cb-bp8-1** (None): None
-- **cb-dp2-1** (None): None
+- **cb-yb5-1** (Yellow trim): Beam (32316) in the yellow trim beams on the side of the frame.
+- **cb-bp8-1** (Yellow trim): Pin (43093) in the yellow trim beams on the side of the frame.
+- **cb-dp2-1** (Yellow trim): Pin (61332) in the yellow trim beams on the side of the frame.
 
 **Mechanisms:**
 - **cb-yb5-1** builds on cb-yb3-1 (42175-step-137), which rests on cb-bp7-1 (42175-step-137), cb-dp-1 (42175-step-137)
@@ -3697,8 +3913,8 @@
 **Why:** Adds posts for the next yellow beam. Pins locate parts above. *Next:* Step 141 lays a yellow beam over them. *Pattern:* posts
 
 **Big picture:**
-- **cb-dp3-1** (None): None Later: 42175-step-141 `CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF`; 42175-step-141 `DOES cb-yb5b-1 HOLDS cb-dp3-1`.
-- **cb-dp3-2** (None): None Later: 42175-step-141 `CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF`.
+- **cb-dp3-1** (Yellow trim): Pin (61332) in the yellow trim beams on the side of the frame. Later: 42175-step-141 `CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF`; 42175-step-141 `DOES cb-yb5b-1 HOLDS cb-dp3-1`.
+- **cb-dp3-2** (Yellow trim): Pin (61332) in the yellow trim beams on the side of the frame. Later: 42175-step-141 `CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF`.
 
 **Mechanisms:**
 - **cb-dp3-1** builds on hd-b7-1 (42175-step-133), which rests on hd-rp-1 (42175-step-132), hd-rp-2 (42175-step-132)
@@ -3723,7 +3939,7 @@
 **Why:** Finishes the yellow trim line. A beam over pins locks them. *Next:* Next steps continue with the roof. *Pattern:* yellow trim
 
 **Big picture:**
-- **cb-yb5b-1** (None): None
+- **cb-yb5b-1** (Yellow trim): Beam (32316) in the yellow trim beams on the side of the frame.
 
 **Mechanisms:**
 - **cb-yb5b-1** builds on cb-dp3-1 (42175-step-140), which rests on hd-b7-1 (42175-step-133); cb-dp3-2 (42175-step-140), which rests on hd-b7-1 (42175-step-133)
@@ -3747,13 +3963,13 @@
 **Why:** Builds the left side cover with the machine's ELECTRIC label. Stacked L-beams make a solid panel. *Next:* Page 127 presses it on the frame's side. *Pattern:* side cover
 
 **Big picture:**
-- **sc-bp-1** (None): None
-- **sc-bp-2** (None): None
-- **sc-yax-1** (None): None
-- **sc-lb-1** (None): None
-- **sc-lb-2** (None): None
-- **sc-lb-3** (None): None
-- **sc-dp-1** (None): None
+- **sc-bp-1** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-bp-2** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-yax-1** (Side covers and corners): Axle (4519) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-lb-1** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-lb-2** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-lb-3** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc-dp-1** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** Which beam holds the dark pin and axle is read from the drawings; fitting is shown on page 127 without a step number.
 
@@ -3774,10 +3990,10 @@
 **Why:** Adds the yellow cover with the model name. The brand colour (yellow) tops the black body. *Next:* Steps 144 onward start another side build. *Pattern:* EC230 cover
 
 **Big picture:**
-- **hd2-bp-1** (None): None
-- **hd2-rp-1** (None): None
-- **hd2-f8-1** (None): None
-- **hd2-panel-1** (None): None
+- **hd2-bp-1** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **hd2-rp-1** (Side covers and corners): Axle (32062) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **hd2-f8-1** (Side covers and corners): Panel or fairing (2389) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **hd2-panel-1** (Side covers and corners): Left yellow EC230 cover panel.
 
 **Review:** The yellow panel identity is read from the icon (3 x 7 panel, 71709); holes are not countable.
 
@@ -3798,10 +4014,10 @@
 **Why:** Starts the right side beam. Same pattern as the roof beam in step 135. *Next:* Step 145 adds an L-beam. *Pattern:* right beam
 
 **Big picture:**
-- **rs-b11-1** (None): None Later: 42175-step-145 `DOES rs-lb-1 SUPPORTS rs-b11-1`; 42175-step-146 `CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF`; 42175-step-146 `CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF`; 42175-step-146 `CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF`; 42175-step-146 `DOES rs-b11-1 CARRIES rs-dp-1`; 42175-step-147 `DOES rs-b7-1 SUPPORTS rs-b11-1`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`; 42175-step-164 `CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?`; 42175-step-164 `CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?`.
-- **rs-bp-1** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF`; 42175-step-147 `CONNECT rs-b7-1.hole? -> rs-bp-1.pin?`.
-- **rs-bp-2** (None): None Later: 42175-step-145 `CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF`.
-- **rs-bp-3** (None): None Later: 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`.
+- **rs-b11-1** (Cab side build): Beam (73507) in the left cab-side build. Later: 42175-step-145 `DOES rs-lb-1 SUPPORTS rs-b11-1`; 42175-step-146 `CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF`; 42175-step-146 `CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF`; 42175-step-146 `CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF`; 42175-step-146 `DOES rs-b11-1 CARRIES rs-dp-1`; 42175-step-147 `DOES rs-b7-1 SUPPORTS rs-b11-1`; 42175-step-150 `CONNECT rs-b11-1.hole? -> up-frame-2.hole?`; 42175-step-150 `DOES up-frame-2 HOLDS rs-b11-1`; 42175-step-164 `CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?`; 42175-step-164 `CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?`.
+- **rs-bp-1** (Cab side build): Pin (43093) in the left cab-side build. Later: 42175-step-145 `CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF`; 42175-step-147 `CONNECT rs-b7-1.hole? -> rs-bp-1.pin?`.
+- **rs-bp-2** (Cab side build): Pin (43093) in the left cab-side build. Later: 42175-step-145 `CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF`.
+- **rs-bp-3** (Cab side build): Pin (43093) in the left cab-side build. Later: 42175-step-150 `CONNECT rs-bp-3.pin1 -> up-frame-2.hole?`.
 
 **Review:** Pin holes estimated.
 
@@ -3822,7 +4038,7 @@
 **Why:** Adds the upright end of the side beam. An L-beam turns a flat beam into a side wall. *Next:* Step 146 adds small pins. *Pattern:* corner
 
 **Big picture:**
-- **rs-lb-1** (None): None
+- **rs-lb-1** (Cab side build): Beam (32526) in the left cab-side build.
 
 **Mechanisms:**
 - **rs-lb-1** builds on rs-bp-1 (42175-step-144), which rests on rs-b11-1 (42175-step-144); rs-bp-2 (42175-step-144), which rests on rs-b11-1 (42175-step-144)
@@ -3846,9 +4062,9 @@
 **Why:** Adds posts for the next beams. Pins locate parts above. *Next:* Step 147 adds beams. *Pattern:* posts
 
 **Big picture:**
-- **rs-dp-1** (None): None Later: 42175-step-147 `CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?`; 42175-step-147 `DOES rs-b3-1 HOLDS rs-dp-1`; 42175-step-151 `CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?`.
-- **rs-dp-2** (None): None Later: 42175-step-148 `CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?`.
-- **rs-dp-3** (None): None
+- **rs-dp-1** (Cab side build): Pin (61332) in the left cab-side build. Later: 42175-step-147 `CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?`; 42175-step-147 `DOES rs-b3-1 HOLDS rs-dp-1`; 42175-step-151 `CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?`.
+- **rs-dp-2** (Cab side build): Pin (61332) in the left cab-side build. Later: 42175-step-148 `CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?`.
+- **rs-dp-3** (Cab side build): Pin (61332) in the left cab-side build.
 
 **Mechanisms:**
 - **rs-dp-1** builds on rs-b11-1 (42175-step-144), which rests on rs-bp-1 (42175-step-144), rs-bp-2 (42175-step-144)
@@ -3874,8 +4090,8 @@
 **Why:** Thickens the side beam. Two beams are stiffer than one. *Next:* Step 148 adds a 5-hole beam. *Pattern:* thickening
 
 **Big picture:**
-- **rs-b3-1** (None): None
-- **rs-b7-1** (None): None Later: 42175-step-148 `DOES rs-b5-1 SUPPORTS rs-b7-1`.
+- **rs-b3-1** (Cab side build): Beam (32523) in the left cab-side build.
+- **rs-b7-1** (Cab side build): Beam (32524) in the left cab-side build. Later: 42175-step-148 `DOES rs-b5-1 SUPPORTS rs-b7-1`.
 
 **Mechanisms:**
 - **rs-b3-1** builds on rs-dp-1 (42175-step-146), which rests on rs-b11-1 (42175-step-144)
@@ -3900,7 +4116,7 @@
 **Why:** Closes the right beam's far end. Beam on pins locks them. *Next:* Step 149 builds an end plate. *Pattern:* far end
 
 **Big picture:**
-- **rs-b5-1** (None): None Later: 42175-step-151 `DOES rs-b5c-1 SUPPORTS rs-b5-1`.
+- **rs-b5-1** (Cab side build): Beam (32316) in the left cab-side build. Later: 42175-step-151 `DOES rs-b5c-1 SUPPORTS rs-b5-1`.
 
 **Mechanisms:**
 - **rs-b5-1** builds on rs-dp-2 (42175-step-146), which rests on rs-b11-1 (42175-step-144)
@@ -3924,10 +4140,10 @@
 **Why:** Adds the tall end plate. Two thin beams on a pin make a light upright wall. *Next:* Later steps use it to fit the right side. *Pattern:* end wall
 
 **Big picture:**
-- **rs-bp2-1** (None): None
-- **rs-dp2-1** (None): None
-- **rs-tb-1** (None): None
-- **rs-tb-2** (None): None
+- **rs-bp2-1** (Cab side build): Pin (43093) in the left cab-side build.
+- **rs-dp2-1** (Cab side build): Pin (61332) in the left cab-side build.
+- **rs-tb-1** (Cab side build): Beam (11478) in the left cab-side build.
+- **rs-tb-2** (Cab side build): Beam (11478) in the left cab-side build.
 
 **Review:** Sub-step order is as drawn; pin type estimated.
 
@@ -3969,7 +4185,7 @@
 **Why:** Finishes the top rail of the right side. A beam over pins locks them. *Next:* Steps 152-162 build a small cab-corner piece. *Pattern:* top rail
 
 **Big picture:**
-- **rs-b5c-1** (None): None Later: 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
+- **rs-b5c-1** (Cab side build): Beam (32316) in the left cab-side build. Later: 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
 
 **Mechanisms:**
 - **rs-b5c-1** builds on rs-dp-1 (42175-step-146), which rests on rs-b11-1 (42175-step-144), rs-b3-1 (42175-step-147)
@@ -3993,8 +4209,8 @@
 **Why:** Starts the corner pivot. A long axle in a connector is the pivot shaft. *Next:* Steps 153-156 slide beams on it. *Pattern:* pivot shaft
 
 **Big picture:**
-- **cn-ax6-1** (None): None Later: 42175-step-153 `CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED`; 42175-step-153 `DOES cn-tb-1 HOLDS cn-ax6-1`; 42175-step-154 `CONNECT cn-tb2-1.axlehole1 -> cn-ax6-1.axle4~ LOCKED`; 42175-step-154 `CONNECT cn-tb2-2.axlehole1 -> cn-ax6-1.axle3~ LOCKED`; 42175-step-154 `DOES cn-tb2-1 HOLDS cn-ax6-1`; 42175-step-155 `CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-1.axlehole1 -> cn-ax6-1.axle1~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-2.axlehole1 -> cn-ax6-1.axle2?`; 42175-step-156 `DOES cn-tb3-1 HOLDS cn-ax6-1`; 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
-- **cn-conn-1** (None): None
+- **cn-ax6-1** (Side covers and corners): Axle (3706) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-153 `CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED`; 42175-step-153 `DOES cn-tb-1 HOLDS cn-ax6-1`; 42175-step-154 `CONNECT cn-tb2-1.axlehole1 -> cn-ax6-1.axle4~ LOCKED`; 42175-step-154 `CONNECT cn-tb2-2.axlehole1 -> cn-ax6-1.axle3~ LOCKED`; 42175-step-154 `DOES cn-tb2-1 HOLDS cn-ax6-1`; 42175-step-155 `CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-1.axlehole1 -> cn-ax6-1.axle1~ LOCKED`; 42175-step-156 `CONNECT cn-tb3-2.axlehole1 -> cn-ax6-1.axle2?`; 42175-step-156 `DOES cn-tb3-1 HOLDS cn-ax6-1`; 42175-step-163 `CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?`; 42175-step-163 `DOES rs-b5c-1 HOLDS cn-ax6-1`.
+- **cn-conn-1** (Side covers and corners): Connector (42003) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** Connector read from the icon.
 
@@ -4015,8 +4231,8 @@
 **Why:** Adds a spacer beside the connector. Thin beams hold the next part off the connector. *Next:* Step 154 adds the second. *Pattern:* spacer
 
 **Big picture:**
-- **cn-tb-1** (None): None
-- **cn-tb-2** (None): None
+- **cn-tb-1** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cn-tb-2** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-tb-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152)
@@ -4040,8 +4256,8 @@
 **Why:** Adds the second spacer. Two spacers make room for the yellow connector. *Next:* Step 155 adds the yellow connector. *Pattern:* spacers
 
 **Big picture:**
-- **cn-tb2-1** (None): None Later: 42175-step-155 `DOES cn-yc-1 CARRIES cn-tb2-1`.
-- **cn-tb2-2** (None): None
+- **cn-tb2-1** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-155 `DOES cn-yc-1 CARRIES cn-tb2-1`.
+- **cn-tb2-2** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-tb2-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
@@ -4066,7 +4282,7 @@
 **Why:** Adds the yellow end of the cab corner. A connector with a pin hole gives a pivot point. *Next:* Step 156 adds beams. *Pattern:* yellow end
 
 **Big picture:**
-- **cn-yc-1** (None): None Later: 42175-step-157 `CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?`; 42175-step-157 `DOES cn-yc-1 HOLDS cn-yax-1`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`.
+- **cn-yc-1** (Side covers and corners): Connector (6536) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-157 `CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?`; 42175-step-157 `DOES cn-yc-1 HOLDS cn-yax-1`; 42175-step-163 `CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?`.
 
 **Mechanisms:**
 - **cn-yc-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
@@ -4090,8 +4306,8 @@
 **Why:** Locks the axle's free end. A thin beam stops the connector sliding off. *Next:* Step 157 adds a yellow axle. *Pattern:* end lock
 
 **Big picture:**
-- **cn-tb3-1** (None): None
-- **cn-tb3-2** (None): None
+- **cn-tb3-1** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cn-tb3-2** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-tb3-1** builds on cn-ax6-1 (42175-step-152), which rests on cn-conn-1 (42175-step-152), cn-tb-1 (42175-step-153)
@@ -4116,7 +4332,7 @@
 **Why:** Adds the second pivot shaft. Two parallel axles make a double hinge. *Next:* Step 158 adds a U-shaped connector. *Pattern:* second shaft
 
 **Big picture:**
-- **cn-yax-1** (None): None Later: 42175-step-158 `CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?`; 42175-step-158 `DOES cn-u-1 HOLDS cn-yax-1`.
+- **cn-yax-1** (Side covers and corners): Axle (4519) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-158 `CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?`; 42175-step-158 `DOES cn-u-1 HOLDS cn-yax-1`.
 
 **Mechanisms:**
 - **cn-yax-1** builds on cn-yc-1 (42175-step-155), which rests on cn-ax6-1 (42175-step-152)
@@ -4140,7 +4356,7 @@
 **Why:** Closes the pivot with a U clamp. A U connector holds two axles at once. *Next:* Step 159 adds a red axle. *Pattern:* clamp
 
 **Big picture:**
-- **cn-u-1** (None): None Later: 42175-step-159 `CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?`; 42175-step-159 `DOES cn-u-1 HOLDS cn-rax-1`.
+- **cn-u-1** (Side covers and corners): Connector (69819) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-159 `CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?`; 42175-step-159 `DOES cn-u-1 HOLDS cn-rax-1`.
 
 **Mechanisms:**
 - **cn-u-1** builds on cn-yax-1 (42175-step-157), which rests on cn-yc-1 (42175-step-155)
@@ -4164,7 +4380,7 @@
 **Why:** Adds a red mount axle. A short axle gives a plug-in point. *Next:* Step 160 adds yellow connectors. *Pattern:* mount axle
 
 **Big picture:**
-- **cn-rax-1** (None): None Later: 42175-step-160 `CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED`.
+- **cn-rax-1** (Side covers and corners): Axle (32062) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-160 `CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED`.
 
 **Mechanisms:**
 - **cn-rax-1** builds on cn-u-1 (42175-step-158), which rests on cn-yax-1 (42175-step-157)
@@ -4188,8 +4404,8 @@
 **Why:** Gives the corner its yellow end. Yellow connectors form the visible corner. *Next:* Step 161 adds a pin. *Pattern:* yellow corner
 
 **Big picture:**
-- **cn-yc2-1** (None): None Later: 42175-step-161 `CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?`; 42175-step-161 `DOES cn-yc2-1 HOLDS cn-dp-1`.
-- **cn-yc2-2** (None): None Later: 42175-step-162 `CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?`.
+- **cn-yc2-1** (Side covers and corners): Connector (6536) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-161 `CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?`; 42175-step-161 `DOES cn-yc2-1 HOLDS cn-dp-1`.
+- **cn-yc2-2** (Side covers and corners): Connector (6536) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-162 `CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?`.
 
 **Mechanisms:**
 - **cn-yc2-1** builds on cn-rax-1 (42175-step-159), which rests on cn-u-1 (42175-step-158)
@@ -4213,7 +4429,7 @@
 **Why:** Locks the yellow corner. A pin through both connectors holds them. *Next:* Step 162 adds a fairing. *Pattern:* lock pin
 
 **Big picture:**
-- **cn-dp-1** (None): None
+- **cn-dp-1** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-dp-1** builds on cn-yc2-1 (42175-step-160), which rests on cn-rax-1 (42175-step-159), cn-yc2-2 (42175-step-160)
@@ -4237,8 +4453,8 @@
 **Why:** Adds the rounded corner of the cab. A fairing hides the joints. *Next:* Step 163 fits it to the frame. *Pattern:* cab corner
 
 **Big picture:**
-- **cn-fair-1** (None): None Later: 42175-step-164 `CONNECT cn-dp4-1.pin1 -> cn-fair-1.hole?`; 42175-step-164 `CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?`; 42175-step-164 `DOES cn-fair-1 CARRIES cn-dp4-1`.
-- **cn-rax2-1** (None): None
+- **cn-fair-1** (Side covers and corners): Panel or fairing (2403) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-164 `CONNECT cn-dp4-1.pin1 -> cn-fair-1.hole?`; 42175-step-164 `CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?`; 42175-step-164 `DOES cn-fair-1 CARRIES cn-dp4-1`.
+- **cn-rax2-1** (Side covers and corners): Axle (32062) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-rax2-1** builds on cn-yc2-2 (42175-step-160), which rests on cn-yc2-1 (42175-step-160)
@@ -4283,10 +4499,10 @@
 **Why:** Adds the posts for the corner covers. Pins locate the two fairings of step 165. *Next:* Step 165 clips the fairings on. *Pattern:* cover posts
 
 **Big picture:**
-- **cn-dp4-1** (None): None Later: 42175-step-165 `CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?`.
-- **cn-dp4-2** (None): None
-- **cn-dp4-3** (None): None Later: 42175-step-165 `CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?`.
-- **cn-dp4-4** (None): None
+- **cn-dp4-1** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-165 `CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?`.
+- **cn-dp4-2** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cn-dp4-3** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels). Later: 42175-step-165 `CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?`.
+- **cn-dp4-4** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cn-dp4-1** builds on cn-fair-1 (42175-step-162), which rests on cn-rax2-1 (42175-step-162)
@@ -4313,8 +4529,8 @@
 **Why:** Gives the corner its finished shape and warning marks. Fairings hide the pins and beams. *Next:* Step 166 builds a yellow bar. *Pattern:* corner covers
 
 **Big picture:**
-- **cv-f1-1** (None): None
-- **cv-f2-1** (None): None
+- **cv-f1-1** (Side covers and corners): Panel or fairing (87080) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **cv-f2-1** (Side covers and corners): Panel or fairing (87086) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Mechanisms:**
 - **cv-f1-1** builds on cn-dp4-1 (42175-step-164), which rests on cn-fair-1 (42175-step-162)
@@ -4339,11 +4555,11 @@
 **Why:** Adds the long yellow trim on the right side, matching the left. Pins locate it on the frame. *Next:* Step 167 builds the right ELECTRIC cover. *Pattern:* right yellow trim
 
 **Big picture:**
-- **yb-b9-1** (None): None
-- **yb-hub-1** (None): None
-- **yb-dp-1** (None): None
-- **yb-dp-2** (None): None
-- **yb-gp-1** (None): None
+- **yb-b9-1** (Side covers and corners): Beam (40490) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yb-hub-1** (Side covers and corners): Pin (65487) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yb-dp-1** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yb-dp-2** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yb-gp-1** (Side covers and corners): Pin (3673) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** The blue hub is read from the colour and icon; which beam holes hold the pins is estimated.
 
@@ -4364,13 +4580,13 @@
 **Why:** Builds the right side cover with the machine's ELECTRIC label. It mirrors the left cover so both sides match. *Next:* Step 168 adds the yellow cover. *Pattern:* right side cover
 
 **Big picture:**
-- **sc2-bp-1** (None): None
-- **sc2-bp-2** (None): None
-- **sc2-yax-1** (None): None
-- **sc2-lb-1** (None): None
-- **sc2-lb-2** (None): None
-- **sc2-lb-3** (None): None
-- **sc2-dp-1** (None): None
+- **sc2-bp-1** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-bp-2** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-yax-1** (Side covers and corners): Axle (4519) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-lb-1** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-lb-2** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-lb-3** (Side covers and corners): Beam (32140) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **sc2-dp-1** (Side covers and corners): Pin (61332) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** Fitting is shown on page 141 without a step number; the stack is read as attached at the end of this step.
 
@@ -4391,11 +4607,11 @@
 **Why:** Matches the left yellow cover with the model name. The yellow top finishes the right side. *Next:* Steps 169 onward build the cab. *Pattern:* right EC230 cover
 
 **Big picture:**
-- **yc-bp-1** (None): None
-- **yc-bp-2** (None): None
-- **yc-panel-1** (None): None
-- **yc-tb-1** (None): None
-- **yc-tb-2** (None): None
+- **yc-bp-1** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yc-bp-2** (Side covers and corners): Pin (43093) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yc-panel-1** (Side covers and corners): Right yellow EC230 cover panel.
+- **yc-tb-1** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
+- **yc-tb-2** (Side covers and corners): Beam (41677) in the side covers and corner pieces (the yellow EC230 and ELECTRIC panels).
 
 **Review:** Panel identity read from the icon; holes not countable.
 
@@ -4416,11 +4632,15 @@
 **Why:** Builds the yellow upright (roof pillar) for the cab. Pins locate the next beams. *Next:* Step 170 adds the yellow roof beams. *Pattern:* roof pillar
 
 **Big picture:**
-- **ca-yl-1** (None): None Later: 42175-step-172 `DOES ca-b7-1 SUPPORTS ca-yl-1`.
-- **ca-bp-1** (None): None Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?`.
-- **ca-bp-2** (None): None Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?`.
-- **ca-bp-3** (None): None
-- **ca-dp-1** (None): None
+- **ca-yl-1** (Cab roof and pillars): Beam (32526) in the cab roof, pillars and roof rods. Later: 42175-step-172 `DOES ca-b7-1 SUPPORTS ca-yl-1`.
+- **ca-bp-1** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods. Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?`.
+- **ca-bp-2** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods. Later: 42175-step-172 `CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?`.
+- **ca-bp-3** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods.
+- **ca-dp-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+
+**Mechanisms:**
+- adds **ca-yl-1** to the cab roof (decoration) as yellow pillar L-beam
+- roof: 1/5 parts - still missing ca-yb9-1, rf2-b9-1, ao-bar-1, ar-plate-1
 
 **Review:** Pin holes estimated.
 
@@ -4441,12 +4661,16 @@
 **Why:** Builds the yellow roof rail. A thin beam over pins locks them. *Next:* Step 171 adds the black hose rod. *Pattern:* roof rail
 
 **Big picture:**
-- **ca-yb9-1** (None): None Later: 42175-step-171 `CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?`; 42175-step-171 `DOES ca-yb9-1 HOLDS ca-yc-1`.
-- **ca-ytb-1** (None): None Later: 42175-step-178 `DOES sb-bush-1 HOLDS ca-ytb-1`.
-- **ca-ytb-2** (None): None
-- **ca-dp2-1** (None): None Later: 42175-step-178 `CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?`.
-- **ca-dp2-2** (None): None
-- **ca-dp2-3** (None): None Later: 42175-step-178 `CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?`.
+- **ca-yb9-1** (Cab roof and pillars): Beam (40490) in the cab roof, pillars and roof rods. Later: 42175-step-171 `CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?`; 42175-step-171 `DOES ca-yb9-1 HOLDS ca-yc-1`.
+- **ca-ytb-1** (Cab roof and pillars): Beam (32017) in the cab roof, pillars and roof rods. Later: 42175-step-178 `DOES sb-bush-1 HOLDS ca-ytb-1`.
+- **ca-ytb-2** (Cab roof and pillars): Beam (32017) in the cab roof, pillars and roof rods.
+- **ca-dp2-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods. Later: 42175-step-178 `CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?`.
+- **ca-dp2-2** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **ca-dp2-3** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods. Later: 42175-step-178 `CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?`.
+
+**Mechanisms:**
+- adds **ca-yb9-1** to the cab roof (decoration) as first yellow roof beam
+- roof: 2/5 parts - still missing rf2-b9-1, ao-bar-1, ar-plate-1
 
 **Review:** The box shows 2x thin beams; the picture shows one going on in sub-step 2 and a second is used on the other side.
 
@@ -4467,11 +4691,11 @@
 **Why:** Adds the long rod the roof leans on. A long axle fixes the roof's front corner. *Next:* Step 172 adds a 7-hole beam. *Pattern:* roof rod
 
 **Big picture:**
-- **ca-ax10-1** (None): None
-- **ca-yc-1** (None): None
+- **ca-ax10-1** (Cab roof and pillars): Axle (3737) in the cab roof, pillars and roof rods.
+- **ca-yc-1** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
-- **ca-yc-1** builds on ca-yb9-1 (42175-step-170), which rests on ca-dp2-1 (42175-step-170), ca-dp2-2 (42175-step-170)
+- **ca-yc-1** builds on ca-yb9-1 (42175-step-170, first yellow roof beam in the cab roof), which rests on ca-dp2-1 (42175-step-170), ca-dp2-2 (42175-step-170)
 
 **Review:** The part is read as a black Axle 10 (3737); the picture has no number. Hole not countable.
 
@@ -4492,7 +4716,7 @@
 **Why:** Ties the pillar's pins. A beam over pins locks them. *Next:* Step 173 builds the front pillar. *Pattern:* pillar tie
 
 **Big picture:**
-- **ca-b7-1** (None): None
+- **ca-b7-1** (Cab roof and pillars): Beam (32524) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
 - **ca-b7-1** builds on ca-bp-1 (42175-step-169), which rests on ca-yl-1 (42175-step-169); ca-bp-2 (42175-step-169), which rests on ca-yl-1 (42175-step-169)
@@ -4516,13 +4740,13 @@
 **Why:** Builds the front corner pillar of the roof. The yellow fairing finishes the corner. *Next:* Page 149 fits it to the model. *Pattern:* front pillar
 
 **Big picture:**
-- **cp-b7-1** (None): None Later: 42175-step-174 `DOES cp-b7-1 CARRIES ca-ec-1`.
-- **cp-bp-1** (None): None
-- **cp-dp-1** (None): None
-- **cp-dp-2** (None): None
-- **cp-rax-1** (None): None Later: 42175-step-174 `CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?`.
-- **cp-f8-1** (None): None
-- **cp-yax-1** (None): None Later: 42175-step-174 `CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?`.
+- **cp-b7-1** (Cab roof and pillars): Beam (32524) in the cab roof, pillars and roof rods. Later: 42175-step-174 `DOES cp-b7-1 CARRIES ca-ec-1`.
+- **cp-bp-1** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods.
+- **cp-dp-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **cp-dp-2** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **cp-rax-1** (Cab roof and pillars): Axle (32062) in the cab roof, pillars and roof rods. Later: 42175-step-174 `CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?`.
+- **cp-f8-1** (Cab roof and pillars): Panel or fairing (2389) in the cab roof, pillars and roof rods.
+- **cp-yax-1** (Cab roof and pillars): Axle (4519) in the cab roof, pillars and roof rods. Later: 42175-step-174 `CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?`.
 
 **Review:** The two small pins are drawn light grey in the icon. All grey 4274 pins are already used up in the count, so the dark friction pin is used as the nearest fit; this is flagged for review.
 
@@ -4543,8 +4767,8 @@
 **Why:** Adds the connectors that the roof tube plugs into. Connectors make cross-hole sockets. *Next:* Step 175 builds the roof tube. *Pattern:* pillar top
 
 **Big picture:**
-- **ca-ec-1** (None): None
-- **ca-ec-2** (None): None
+- **ca-ec-1** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods.
+- **ca-ec-2** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
 - **ca-ec-1** builds on cp-yax-1 (42175-step-173), which rests on cp-rax-1 (42175-step-173), cp-b7-1 (42175-step-173)
@@ -4569,12 +4793,12 @@
 **Why:** Builds the roof tube / cab handle. A rod with end fittings makes a bar that can be plugged on both ends. *Next:* Step 176 builds a second tube. *Pattern:* roof tube
 
 **Big picture:**
-- **rt-rax-1** (None): None
-- **rt-rax-2** (None): None
-- **rt-ax5-1** (None): None
-- **rt-cyl-1** (None): None
-- **rt-end-1** (None): None
-- **rt-end-2** (None): None
+- **rt-rax-1** (Cab roof and pillars): Axle (32062) in the cab roof, pillars and roof rods.
+- **rt-rax-2** (Cab roof and pillars): Axle (32062) in the cab roof, pillars and roof rods.
+- **rt-ax5-1** (Cab roof and pillars): Axle (32073) in the cab roof, pillars and roof rods.
+- **rt-cyl-1** (Cab roof and pillars): Connector (59443) in the cab roof, pillars and roof rods.
+- **rt-end-1** (Cab roof and pillars): Connector (32291) in the cab roof, pillars and roof rods.
+- **rt-end-2** (Cab roof and pillars): Connector (32291) in the cab roof, pillars and roof rods.
 
 **Review:** Part types are read from small icons and are likely wrong in at least one case; the dark grey connector with a round end could be a ball-joint part (52730).
 
@@ -4595,13 +4819,13 @@
 **Why:** Builds the bent roof tube that holds the hose handle. A soft hose bends where a rigid axle would not. *Next:* Step 177 uses it. *Pattern:* bent tube
 
 **Big picture:**
-- **bt-hose-1** (None): None Later: 42175-step-177 `DOES bt-hose-1 SUPPORTS bt-ax6-1`.
-- **bt-ang-1** (None): None
-- **bt-ball-1** (None): None
-- **bt-rax-1** (None): None
-- **bt-yax-1** (None): None
-- **bt-cyl-1** (None): None
-- **bt-tb-1** (None): None
+- **bt-hose-1** (Cab roof and pillars): Hose or rod (32199) in the cab roof, pillars and roof rods. Later: 42175-step-177 `DOES bt-hose-1 SUPPORTS bt-ax6-1`.
+- **bt-ang-1** (Cab roof and pillars): Connector (32014) in the cab roof, pillars and roof rods.
+- **bt-ball-1** (Cab roof and pillars): Connector (52730) in the cab roof, pillars and roof rods.
+- **bt-rax-1** (Cab roof and pillars): Axle (32062) in the cab roof, pillars and roof rods.
+- **bt-yax-1** (Cab roof and pillars): Axle (4519) in the cab roof, pillars and roof rods.
+- **bt-cyl-1** (Cab roof and pillars): Connector (59443) in the cab roof, pillars and roof rods.
+- **bt-tb-1** (Cab roof and pillars): Beam (41677) in the cab roof, pillars and roof rods.
 
 **Review:** Hose and connector parts have no useful catalog points, so joins use ? and DOES lines. The 1:1 box shows the hose length.
 
@@ -4622,8 +4846,8 @@
 **Why:** Adds the second roof handle rod. A pair of rods frames the roof opening. *Next:* Page 155 onwards finishes the cab. *Pattern:* roof rod 2
 
 **Big picture:**
-- **bt-ax6-1** (None): None
-- **bt-tb2-1** (None): None
+- **bt-ax6-1** (Cab roof and pillars): Axle (3706) in the cab roof, pillars and roof rods.
+- **bt-tb2-1** (Cab roof and pillars): Beam (41677) in the cab roof, pillars and roof rods.
 
 **Review:** The 1:1 bar is a plain black rod, read as a 6-long axle. The step 176 build is shown joined on page 153 (arrow to the cab front), without its own number.
 
@@ -4644,8 +4868,8 @@
 **Why:** Stops the thin roof beams from sliding off. A bush on a pin end is a stopper. *Next:* Step 179 adds a bracket under the roof. *Pattern:* roof stops
 
 **Big picture:**
-- **sb-bush-1** (None): None
-- **sb-bush-2** (None): None
+- **sb-bush-1** (Cab roof and pillars): Bush (spacer/stop) (32123b) in the cab roof, pillars and roof rods.
+- **sb-bush-2** (Cab roof and pillars): Bush (spacer/stop) (32123b) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
 - **sb-bush-1** builds on ca-dp2-1 (42175-step-170), which rests on ca-yb9-1 (42175-step-170), ca-ytb-1 (42175-step-170)
@@ -4670,11 +4894,11 @@
 **Why:** Builds a hinge bracket for the roof. A connector with an axle gives a pivot. *Next:* Steps 180-181 add the roof beams. *Pattern:* roof hinge
 
 **Big picture:**
-- **rb-tb-1** (None): None
-- **rb-conn-1** (None): None
-- **rb-ax-1** (None): None
-- **rb-tp-1** (None): None
-- **rb-tp-2** (None): None
+- **rb-tb-1** (Cab roof and pillars): Beam (11478) in the cab roof, pillars and roof rods.
+- **rb-conn-1** (Cab roof and pillars): Connector (42003) in the cab roof, pillars and roof rods.
+- **rb-ax-1** (Cab roof and pillars): Axle (87083) in the cab roof, pillars and roof rods.
+- **rb-tp-1** (Cab roof and pillars): Pin (32002) in the cab roof, pillars and roof rods.
+- **rb-tp-2** (Cab roof and pillars): Pin (32002) in the cab roof, pillars and roof rods.
 
 **Review:** The small parts are read from icons and may be wrong; the connector is shown in sub-steps 2-3 and the axle in sub-step 3.
 
@@ -4695,12 +4919,16 @@
 **Why:** Doubles the yellow roof beam so the roof is wide. Two roof beams make a flat roof. *Next:* Step 181 adds the long rod. *Pattern:* roof beam 2
 
 **Big picture:**
-- **rf2-b9-1** (None): None Later: 42175-step-181 `CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?`; 42175-step-181 `DOES rf2-b9-1 HOLDS ca-yc2-1`; 42175-step-182 `DOES or-hose-1 SUPPORTS rf2-b9-1`.
-- **rf2-tb-1** (None): None
-- **rf2-tb-2** (None): None
-- **rf2-dp-1** (None): None
-- **rf2-dp-2** (None): None
-- **rf2-dp-3** (None): None
+- **rf2-b9-1** (Cab roof and pillars): Beam (40490) in the cab roof, pillars and roof rods. Later: 42175-step-181 `CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?`; 42175-step-181 `DOES rf2-b9-1 HOLDS ca-yc2-1`; 42175-step-182 `DOES or-hose-1 SUPPORTS rf2-b9-1`.
+- **rf2-tb-1** (Cab roof and pillars): Beam (32017) in the cab roof, pillars and roof rods.
+- **rf2-tb-2** (Cab roof and pillars): Beam (32017) in the cab roof, pillars and roof rods.
+- **rf2-dp-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **rf2-dp-2** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **rf2-dp-3** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+
+**Mechanisms:**
+- adds **rf2-b9-1** to the cab roof (decoration) as second yellow roof beam
+- roof: 3/5 parts - still missing ao-bar-1, ar-plate-1
 
 **Review:** Same design as step 170; this builds the second.
 
@@ -4721,11 +4949,11 @@
 **Why:** Adds the front roof rod that mirrors the one in step 171. A rod and a connector fix the roof's corner. *Next:* Step 182 adds the orange rod. *Pattern:* roof rod
 
 **Big picture:**
-- **ca-ax10b-1** (None): None
-- **ca-yc2-1** (None): None
+- **ca-ax10b-1** (Cab roof and pillars): Axle (3706) in the cab roof, pillars and roof rods.
+- **ca-yc2-1** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
-- **ca-yc2-1** builds on rf2-b9-1 (42175-step-180), which rests on rf2-dp-1 (42175-step-180), rf2-dp-2 (42175-step-180)
+- **ca-yc2-1** builds on rf2-b9-1 (42175-step-180, second yellow roof beam in the cab roof), which rests on rf2-dp-1 (42175-step-180), rf2-dp-2 (42175-step-180)
 
 **Review:** The 1:1 bar is a long thin black rod; read as a 6-long axle because 10-long (the other one) was used in step 171. This could be the soft hose; check.
 
@@ -4746,7 +4974,7 @@
 **Why:** Adds an orange line as a decoration and window-brace. An orange rigid hose is a rod. *Next:* Step 183 adds a small plate. *Pattern:* orange rod
 
 **Big picture:**
-- **or-hose-1** (None): None
+- **or-hose-1** (Orange hose fittings): Hose or rod (75c11) in the orange hose fittings at the rear.
 
 **Review:** The orange piece is read as a rigid hose; it has no catalog points so joins are not written.
 
@@ -4767,10 +4995,10 @@
 **Why:** Adds a small panel to the pillar top. Sticker tiles show the machine's label. *Next:* Step 184 continues. *Pattern:* pillar fitting
 
 **Big picture:**
-- **fl-bp-1** (None): None
-- **fl-tile-1** (None): None
-- **fl-pl-1** (None): None
-- **fl-cn-1** (None): None
+- **fl-bp-1** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods.
+- **fl-tile-1** (Cab roof and pillars): Tile, plate or clip (3069b) in the cab roof, pillars and roof rods.
+- **fl-pl-1** (Cab roof and pillars): Tile, plate or clip (18677) in the cab roof, pillars and roof rods.
+- **fl-cn-1** (Cab roof and pillars): Connector (32014) in the cab roof, pillars and roof rods.
 
 **Review:** Icons small; part identities likely, order of sub-steps as drawn.
 
@@ -4791,11 +5019,11 @@
 **Why:** Builds the rear-right roof corner fitting. An angled connector turns a straight rod into a corner. *Next:* Step 185 builds the rear-left corner. *Pattern:* roof corner
 
 **Big picture:**
-- **ag-rax-1** (None): None
-- **ag-bp-1** (None): None
-- **ag-cap-1** (None): None
-- **ag-ang-1** (None): None
-- **ag-ball-1** (None): None
+- **ag-rax-1** (Cab roof and pillars): Axle (32062) in the cab roof, pillars and roof rods.
+- **ag-bp-1** (Cab roof and pillars): Pin (43093) in the cab roof, pillars and roof rods.
+- **ag-cap-1** (Cab roof and pillars): Tile, plate or clip (98138) in the cab roof, pillars and roof rods.
+- **ag-ang-1** (Cab roof and pillars): Connector (32015) in the cab roof, pillars and roof rods.
+- **ag-ball-1** (Cab roof and pillars): Connector (32291) in the cab roof, pillars and roof rods.
 
 **Review:** The three small black and grey parts are read from icons; the order on the blue pin is estimated.
 
@@ -4816,10 +5044,14 @@
 **Why:** Adds the orange rail (the real machine's rear handle) on the roof. A bar with a stop ring is easy to see and grab. *Next:* Step 186 locks it with a thin beam. *Pattern:* orange rail
 
 **Big picture:**
-- **ao-dp-1** (None): None
-- **ao-cn-1** (None): None Later: 42175-step-186 `CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?`.
-- **ao-bar-1** (None): None Later: 42175-step-186 `DOES ao-tb-1 HOLDS ao-bar-1`.
-- **ao-tile-1** (None): None
+- **ao-dp-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **ao-cn-1** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods. Later: 42175-step-186 `CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?`.
+- **ao-bar-1** (Cab roof and pillars): Part 63965 in the cab roof, pillars and roof rods. Later: 42175-step-186 `DOES ao-tb-1 HOLDS ao-bar-1`.
+- **ao-tile-1** (Cab roof and pillars): Tile, plate or clip (98138) in the cab roof, pillars and roof rods.
+
+**Mechanisms:**
+- adds **ao-bar-1** to the cab roof (decoration) as orange rail on the roof
+- roof: 4/5 parts - still missing ar-plate-1
 
 **Review:** Part identities are likely; the tile colour reads white, the catalog colour is trans-clear.
 
@@ -4840,7 +5072,7 @@
 **Why:** Locks the orange rail in its connector. A thin beam across the end prevents it sliding out. *Next:* Step 187 adds caps. *Pattern:* rail lock
 
 **Big picture:**
-- **ao-tb-1** (None): None
+- **ao-tb-1** (Cab roof and pillars): Beam (41677) in the cab roof, pillars and roof rods.
 
 **Mechanisms:**
 - **ao-tb-1** builds on ao-cn-1 (42175-step-185), which rests on ao-dp-1 (42175-step-185), ao-tile-1 (42175-step-185)
@@ -4864,9 +5096,13 @@
 **Why:** Adds the amber warning beacon. A round plate in a clip looks like a light. *Next:* Step 188 builds the matching one for the other side. *Pattern:* beacon
 
 **Big picture:**
-- **ar-plate-1** (None): None
-- **ar-dome-1** (None): None
-- **ar-clip-1** (None): None
+- **ar-plate-1** (Cab roof and pillars): Tile, plate or clip (6141) in the cab roof, pillars and roof rods.
+- **ar-dome-1** (Cab roof and pillars): Tile, plate or clip (85861) in the cab roof, pillars and roof rods.
+- **ar-clip-1** (Cab roof and pillars): Tile, plate or clip (3484) in the cab roof, pillars and roof rods.
+
+**Mechanisms:**
+- adds **ar-plate-1** to the cab roof (decoration) as amber lamp plate *(not confirmed)*
+- roof: 5/5 parts - complete
 
 **Review:** The plate colour reads tan on the page; the catalog has trans-orange 6141. The icon cannot tell them apart.
 
@@ -4887,9 +5123,9 @@
 **Why:** Adds a small light fitting at the rear. A tile on a pin looks like a lamp. *Next:* Step 189 builds the orange fittings. *Pattern:* rear lamp
 
 **Big picture:**
-- **ah-tile-1** (None): None
-- **ah-dp-1** (None): None
-- **ah-cn-1** (None): None
+- **ah-tile-1** (Cab roof and pillars): Tile, plate or clip (98138) in the cab roof, pillars and roof rods.
+- **ah-dp-1** (Cab roof and pillars): Pin (61332) in the cab roof, pillars and roof rods.
+- **ah-cn-1** (Cab roof and pillars): Connector (6536) in the cab roof, pillars and roof rods.
 
 **Review:** The model is shown turned around; positions estimated.
 
@@ -4910,22 +5146,26 @@
 **Why:** Builds the orange hose-end fitting used as the engine breather on the model. Angled connectors and axle connectors make a rigid pipe shape. *Next:* The next pages show where it goes. *Pattern:* orange fitting
 
 **Big picture:**
-- **of-ball-1** (None): None
-- **of-rax-1** (None): None
-- **of-rax-2** (None): None
-- **of-rax-3** (None): None
-- **of-rax-4** (None): None
-- **of-rax-5** (None): None
-- **of-bp-1** (None): None
-- **of-bp-2** (None): None
-- **of-ang-1** (None): None
-- **of-ang-2** (None): None
-- **of-cyl-1** (None): None
-- **of-cyl-2** (None): None
-- **of-cyl-3** (None): None
-- **of-cyl-4** (None): None
-- **of-tb-1** (None): None
-- **of-tb-2** (None): None
+- **of-ball-1** (Orange hose fittings): Connector (52730) in the orange hose fittings at the rear.
+- **of-rax-1** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of-rax-2** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of-rax-3** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of-rax-4** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of-rax-5** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of-bp-1** (Orange hose fittings): Pin (43093) in the orange hose fittings at the rear.
+- **of-bp-2** (Orange hose fittings): Pin (43093) in the orange hose fittings at the rear.
+- **of-ang-1** (Orange hose fittings): Connector (32014) in the orange hose fittings at the rear.
+- **of-ang-2** (Orange hose fittings): Connector (32014) in the orange hose fittings at the rear.
+- **of-cyl-1** (Orange hose fittings): Connector (59443) in the orange hose fittings at the rear.
+- **of-cyl-2** (Orange hose fittings): Connector (59443) in the orange hose fittings at the rear.
+- **of-cyl-3** (Orange hose fittings): Connector (59443) in the orange hose fittings at the rear.
+- **of-cyl-4** (Orange hose fittings): Connector (59443) in the orange hose fittings at the rear.
+- **of-tb-1** (Orange hose fittings): Beam (41677) in the orange hose fittings at the rear.
+- **of-tb-2** (Orange hose fittings): Beam (41677) in the orange hose fittings at the rear.
+
+**Mechanisms:**
+- adds **of-ball-1** to the orange hose fittings (decoration) as grey ball joint of the first fitting
+- orange: 1/2 parts - still missing of3-hose-1
 
 **Review:** The part list at the top shows 1x ball part, 5x red axles, 2x blue pins, 2x orange angled connectors, 4x orange axle connectors and 2x thin black ovals. Sub-steps 5-8 are on page 167: a red axle goes in the first orange arm and a black thin oval is slid on it (7), then a blue pin goes through the oval into the second arm (8). The finished fitting is placed on the frame's left rear on page 168 (arrow, no number).
 
@@ -4946,9 +5186,9 @@
 **Why:** Adds a label tile on the machine's rear-left. The same pattern as step 183. *Next:* Steps 191-198 build a second orange fitting. *Pattern:* label tile
 
 **Big picture:**
-- **of2-pl-1** (None): None
-- **of2-tile-1** (None): None
-- **of2-dp-1** (None): None
+- **of2-pl-1** (Orange hose fittings): Tile, plate or clip (18677) in the orange hose fittings at the rear.
+- **of2-tile-1** (Orange hose fittings): Tile, plate or clip (3069b) in the orange hose fittings at the rear.
+- **of2-dp-1** (Orange hose fittings): Pin (61332) in the orange hose fittings at the rear.
 
 **Review:** Page 168 shows the orange fitting of step 189 placed on the frame without a step number.
 
@@ -4969,8 +5209,8 @@
 **Why:** Starts the second orange fitting. The yellow axle is the core of the fitting. *Next:* Step 192 adds orange sleeves. *Pattern:* fitting start
 
 **Big picture:**
-- **of3-yax-1** (None): None Later: 42175-step-192 `CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED`; 42175-step-192 `DOES of3-cyl-1 HOLDS of3-yax-1`.
-- **of3-ang-1** (None): None Later: 42175-step-194 `CONNECT of3-bp-1.pin1 -> of3-ang-1.hole?`; 42175-step-195 `DOES of3-ang-1 CARRIES of3-ang2-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
+- **of3-yax-1** (Orange hose fittings): Axle (4519) in the orange hose fittings at the rear. Later: 42175-step-192 `CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED`; 42175-step-192 `DOES of3-cyl-1 HOLDS of3-yax-1`.
+- **of3-ang-1** (Orange hose fittings): Connector (32013) in the orange hose fittings at the rear. Later: 42175-step-194 `CONNECT of3-bp-1.pin1 -> of3-ang-1.hole?`; 42175-step-195 `DOES of3-ang-1 CARRIES of3-ang2-1`; 42175-step-199 `CONNECT of3-ang-1.hole? -> uc-frame-1.hole?`; 42175-step-199 `DOES uc-frame-1 HOLDS of3-ang-1`.
 
 **Review:** Icon-based identity of the orange connector.
 
@@ -4991,8 +5231,8 @@
 **Why:** Builds the orange outer tube. A sleeve covers the axle so it looks like a pipe. *Next:* Step 193 adds the black axle. *Pattern:* pipe sleeve
 
 **Big picture:**
-- **of3-cyl-1** (None): None Later: 42175-step-193 `CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?`; 42175-step-193 `DOES of3-cyl-1 CARRIES of3-ax6-1`.
-- **of3-rc-1** (None): None
+- **of3-cyl-1** (Orange hose fittings): Connector (59443) in the orange hose fittings at the rear. Later: 42175-step-193 `CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?`; 42175-step-193 `DOES of3-cyl-1 CARRIES of3-ax6-1`.
+- **of3-rc-1** (Orange hose fittings): Connector (18654) in the orange hose fittings at the rear.
 
 **Mechanisms:**
 - **of3-cyl-1** builds on of3-yax-1 (42175-step-191), which rests on of3-ang-1 (42175-step-191)
@@ -5016,7 +5256,7 @@
 **Why:** Adds the piston rod of the fitting. A black rod in an orange pipe looks like a cylinder. *Next:* Step 194 locks it with a bush. *Pattern:* piston rod
 
 **Big picture:**
-- **of3-ax6-1** (None): None Later: 42175-step-194 `CONNECT of3-bush-1.axlehole1 -> of3-ax6-1.axle?`; 42175-step-194 `DOES of3-bush-1 HOLDS of3-ax6-1`.
+- **of3-ax6-1** (Orange hose fittings): Axle (3706) in the orange hose fittings at the rear. Later: 42175-step-194 `CONNECT of3-bush-1.axlehole1 -> of3-ax6-1.axle?`; 42175-step-194 `DOES of3-bush-1 HOLDS of3-ax6-1`.
 
 **Mechanisms:**
 - **of3-ax6-1** builds on of3-cyl-1 (42175-step-192), which rests on of3-yax-1 (42175-step-191)
@@ -5040,8 +5280,8 @@
 **Why:** Stops the rod from sliding out. A bush is a simple stopper. *Next:* Step 195 adds a second angled connector. *Pattern:* rod stop
 
 **Big picture:**
-- **of3-bp-1** (None): None Later: 42175-step-195 `CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?`.
-- **of3-bush-1** (None): None
+- **of3-bp-1** (Orange hose fittings): Pin (43093) in the orange hose fittings at the rear. Later: 42175-step-195 `CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?`.
+- **of3-bush-1** (Orange hose fittings): Bush (spacer/stop) (32123b) in the orange hose fittings at the rear.
 
 **Mechanisms:**
 - **of3-bp-1** builds on of3-ang-1 (42175-step-191), which rests on of3-yax-1 (42175-step-191)
@@ -5066,7 +5306,7 @@
 **Why:** Builds the bend of the fitting. Two angled connectors make a bent pipe. *Next:* Step 196 adds a thin orange rod. *Pattern:* elbow
 
 **Big picture:**
-- **of3-ang2-1** (None): None Later: 42175-step-196 `CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?`; 42175-step-196 `DOES of3-ang2-1 CARRIES of3-hose-1`.
+- **of3-ang2-1** (Orange hose fittings): Connector (32015) in the orange hose fittings at the rear. Later: 42175-step-196 `CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?`; 42175-step-196 `DOES of3-ang2-1 CARRIES of3-hose-1`.
 
 **Mechanisms:**
 - **of3-ang2-1** builds on of3-bp-1 (42175-step-194), which rests on of3-ang-1 (42175-step-191)
@@ -5090,9 +5330,11 @@
 **Why:** Adds the long orange arm of the fitting. A soft hose is the thin arm. *Next:* Step 197 adds the last elbow. *Pattern:* orange arm
 
 **Big picture:**
-- **of3-hose-1** (None): None Later: 42175-step-197 `CONNECT of3-ang3-1.axlehole1 -> of3-hose-1.axlehole?`; 42175-step-197 `DOES of3-hose-1 CARRIES of3-ang3-1`.
+- **of3-hose-1** (Orange hose fittings): Hose or rod (32580) in the orange hose fittings at the rear. Later: 42175-step-197 `CONNECT of3-ang3-1.axlehole1 -> of3-hose-1.axlehole?`; 42175-step-197 `DOES of3-hose-1 CARRIES of3-ang3-1`.
 
 **Mechanisms:**
+- adds **of3-hose-1** to the orange hose fittings (decoration) as orange hose arm of the second fitting
+- orange: 2/2 parts - complete
 - **of3-hose-1** builds on of3-ang2-1 (42175-step-195), which rests on of3-bp-1 (42175-step-194)
 
 **Review:** Hose has no catalog points; joins are open.
@@ -5114,10 +5356,10 @@
 **Why:** Finishes the arm with a foot. The last bend sets the foot. *Next:* Step 198 adds a small foot cap. *Pattern:* foot
 
 **Big picture:**
-- **of3-ang3-1** (None): None Later: 42175-step-198 `CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?`; 42175-step-198 `DOES of3-ang3-1 CARRIES of3-rax-1`.
+- **of3-ang3-1** (Orange hose fittings): Connector (32016) in the orange hose fittings at the rear. Later: 42175-step-198 `CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?`; 42175-step-198 `DOES of3-ang3-1 CARRIES of3-rax-1`.
 
 **Mechanisms:**
-- **of3-ang3-1** builds on of3-hose-1 (42175-step-196), which rests on of3-ang2-1 (42175-step-195)
+- **of3-ang3-1** builds on of3-hose-1 (42175-step-196, orange hose arm of the second fitting in the orange hose fittings), which rests on of3-ang2-1 (42175-step-195)
 
 **Review:** Identity read from the angle.
 
@@ -5138,8 +5380,8 @@
 **Why:** Finishes the second orange fitting. A cap hides the axle end. *Next:* Step 199 places it on the frame. *Pattern:* foot cap
 
 **Big picture:**
-- **of3-rax-1** (None): None
-- **of3-ro-1** (None): None
+- **of3-rax-1** (Orange hose fittings): Axle (32062) in the orange hose fittings at the rear.
+- **of3-ro-1** (Orange hose fittings): Connector (18654) in the orange hose fittings at the rear.
 
 **Mechanisms:**
 - **of3-rax-1** builds on of3-ang3-1 (42175-step-197), which rests on of3-hose-1 (42175-step-196)

@@ -36,7 +36,7 @@ qty,part_number,colour,name
 20,32062,Red,Technic Axle 2 Notched
 8,32073,Light Bluish Gray,Technic Axle 5
 3,32123b,Yellow,Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
-9,32140,Black,Technic Beam 2 x 4 L-Shape Thick
+8,32140,Black,Technic Beam 2 x 4 L-Shape Thick
 2,32140,Yellow,Technic Beam 2 x 4 L-Shape Thick
 1,32199,Black,Axle Hose Soft 11L
 9,32278,Black,Technic Beam 1 x 15 Thick
@@ -48,11 +48,12 @@ qty,part_number,colour,name
 1,32449,Black,Technic Beam 1 x 4 Thin
 1,32449,Dark Bluish Gray,Technic Beam 1 x 4 Thin
 4,32523,Black,Technic Beam 1 x 3 Thick
+1,32523,Dark Bluish Gray,Technic Beam 1 x 3 Thick
 1,32523,Yellow,Technic Beam 1 x 3 Thick
 15,32524,Black,Technic Beam 1 x 7 Thick
 1,32524,Dark Bluish Gray,Technic Beam 1 x 7 Thick
 12,32525,Black,Technic Beam 1 x 11 Thick
-11,32526,Black,Technic Beam 3 x 5 L-Shape Thick
+12,32526,Black,Technic Beam 3 x 5 L-Shape Thick
 5,32526,Dark Bluish Gray,Technic Beam 3 x 5 L-Shape Thick
 1,32526,Yellow,Technic Beam 3 x 5 L-Shape Thick
 1,32580,Black,Axle Hose Soft 7L
@@ -81,7 +82,7 @@ qty,part_number,colour,name
 35,4274,Light Bluish Gray,Technic Pin 1/2
 20,42924,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot"
 86,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
-4,43857,Dark Bluish Gray,Technic Beam 1 x 2 Thick
+3,43857,Dark Bluish Gray,Technic Beam 1 x 2 Thick
 2,44874,Black,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
 2,44874,Light Bluish Gray,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
 11,4519,Yellow,Technic Axle 3
@@ -104,11 +105,12 @@ qty,part_number,colour,name
 1,60483,Dark Bluish Gray,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
 44,61332,Black,Technic Pin with Friction Ridges Lengthwise with No Center Slots
 1,6141,Trans-Orange,Plate Round 1 x 1 with Solid Stud
+1,63869,Black,Technic Axle and Pin Connector Perpendicular Triple
 1,63965,Orange,Bar 6L with Stop Ring
 3,64179,Black,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
 29,65304,Black,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
 13,65304,Light Bluish Gray,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [2 Lateral Holes, Small Pin Hole]"
-6,6536,Black,Technic Axle and Pin Connector Perpendicular
+5,6536,Black,Technic Axle and Pin Connector Perpendicular
 2,6536,Light Bluish Gray,Technic Axle and Pin Connector Perpendicular
 5,6536,Yellow,Technic Axle and Pin Connector Perpendicular
 1,65487,Blue,Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Square Holes]

@@ -1,6 +1,6 @@
 STEP 35
 ADD cb-bush-1 3713 lightgray
-ADD cb-conn-1 6536 black
+ADD cb-conn-1 63869 black
 CONNECT cb-bush-1.axlehole1 -> cb-conn-1.axlehole?
 DOES cb-conn-1 CARRIES cb-bush-1
 PATTERN spacer_on_connector

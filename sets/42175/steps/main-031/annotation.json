@@ -23,7 +23,7 @@
       },
       {
         "name": "sd-gbeam-1",
-        "part_number": "43857",
+        "part_number": "32523",
         "count": 1
       },
       {
@@ -38,7 +38,7 @@
       },
       {
         "name": "sd-lbeam-1",
-        "part_number": "32140",
+        "part_number": "32526",
         "count": 1
       },
       {
@@ -80,11 +80,11 @@
       },
       {
         "name": "sd-gbeam-1",
-        "part_number": "43857",
-        "catalog_name": "Technic Beam 1 x 2 Thick",
+        "part_number": "32523",
+        "catalog_name": "Technic Beam 1 x 3 Thick",
         "color": "Dark Bluish Gray",
         "part_match": "likely",
-        "position": "grey 1 x 2 thick beam slid over the blue pins (sub-step 2)",
+        "position": "grey 1 x 3 thick beam slid over the blue pins (sub-step 2)",
         "rotation": "fixed"
       },
       {
@@ -107,11 +107,11 @@
       },
       {
         "name": "sd-lbeam-1",
-        "part_number": "32140",
-        "catalog_name": "Technic Beam 2 x 4 L-Shape Thick",
+        "part_number": "32526",
+        "catalog_name": "Technic Beam 3 x 5 L-Shape Thick",
         "color": "Black",
         "part_match": "likely",
-        "position": "black 2 x 4 L-beam at the end of the long beam (sub-step 3)",
+        "position": "black 3 x 5 L-beam at the end of the long beam (sub-step 3)",
         "rotation": "fixed"
       },
       {

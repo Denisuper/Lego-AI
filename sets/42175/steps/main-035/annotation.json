@@ -13,7 +13,7 @@
       },
       {
         "name": "cb-conn-1",
-        "part_number": "6536",
+        "part_number": "63869",
         "count": 1
       }
     ],
@@ -32,11 +32,11 @@
       },
       {
         "name": "cb-conn-1",
-        "part_number": "6536",
-        "catalog_name": "Technic Axle and Pin Connector Perpendicular",
+        "part_number": "63869",
+        "catalog_name": "Technic Axle and Pin Connector Perpendicular Triple",
         "color": "Black",
         "part_match": "likely",
-        "position": "black perpendicular axle and pin connector",
+        "position": "black triple axle and pin connector (T shape with three ends)",
         "rotation": "fixed"
       }
     ],

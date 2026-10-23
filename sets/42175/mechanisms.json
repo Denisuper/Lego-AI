@@ -1,1 +1,1021 @@
-{"about":"placeholder","mechanisms":[]}
+{
+ "about": "Each mechanism in 42175 as a chain of parts in the order force/motion flows. type = catalog/mechanisms.json. status per link: confirmed (seen in the booklet) or hypothesis.",
+ "mechanisms": [
+  {
+   "id": "frame",
+   "type": "rigid_frame",
+   "name": "Undercarriage frame",
+   "does": "Holds the turntable's fixed half, the track rails and the front and rear beams at fixed distances.",
+   "input": null,
+   "output": null,
+   "chain": [
+    {
+     "part": "uc-frame-1",
+     "role": "main 5 x 7 frame: base of the lower body",
+     "status": "confirmed"
+    },
+    {
+     "part": "uc-beam9-1",
+     "role": "side rail beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam9-2",
+     "role": "side rail beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam11-1",
+     "role": "cross beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam11-2",
+     "role": "cross beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam15-1",
+     "role": "long side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam15-2",
+     "role": "long side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-lbeam-1",
+     "role": "L-beam corner",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-lbeam-2",
+     "role": "L-beam corner",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-lbeam-3",
+     "role": "L-beam corner",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-lbeam-4",
+     "role": "L-beam corner",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam7-1",
+     "role": "side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam7-2",
+     "role": "side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam7-3",
+     "role": "side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam7-4",
+     "role": "side beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam5-1",
+     "role": "short beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    },
+    {
+     "part": "uc-beam5-2",
+     "role": "short beam",
+     "status": "confirmed",
+     "link": "pinned to the frame"
+    }
+   ]
+  },
+  {
+   "id": "tracks",
+   "type": "track_loop",
+   "name": "Tracks (passive)",
+   "does": "Two loops of 60 links on sprockets and rollers. Nothing drives them: they roll when the model is pushed.",
+   "input": null,
+   "output": "rolling when pushed",
+   "chain": [
+    {
+     "part": "trk-axle5-1",
+     "role": "axle that carries a sprocket",
+     "status": "confirmed",
+     "link": "locked in the sprocket's cross hole"
+    },
+    {
+     "part": "trk-axle5-2",
+     "role": "axle that carries a sprocket",
+     "status": "confirmed",
+     "link": "locked in the sprocket's cross hole"
+    },
+    {
+     "part": "trk-axle4-1",
+     "role": "axle that carries a sprocket",
+     "status": "confirmed",
+     "link": "locked in the sprocket's cross hole"
+    },
+    {
+     "part": "trk-axle4-2",
+     "role": "axle that carries a sprocket",
+     "status": "confirmed",
+     "link": "locked in the sprocket's cross hole"
+    },
+    {
+     "part": "trk-sprocket-1",
+     "role": "sprocket wheel",
+     "status": "confirmed",
+     "link": "teeth sit in the links"
+    },
+    {
+     "part": "trk-sprocket-2",
+     "role": "sprocket wheel",
+     "status": "confirmed",
+     "link": "teeth sit in the links"
+    },
+    {
+     "part": "trk-sprocket-3",
+     "role": "sprocket wheel",
+     "status": "confirmed",
+     "link": "teeth sit in the links"
+    },
+    {
+     "part": "trk-sprocket-4",
+     "role": "sprocket wheel",
+     "status": "confirmed",
+     "link": "teeth sit in the links"
+    },
+    {
+     "part": "trk-wheel-1",
+     "role": "front wheel",
+     "status": "confirmed",
+     "link": "on an axle pin"
+    },
+    {
+     "part": "trk-wheel-2",
+     "role": "front wheel",
+     "status": "confirmed",
+     "link": "on an axle pin"
+    },
+    {
+     "part": "trk-wheel-3",
+     "role": "front wheel",
+     "status": "confirmed",
+     "link": "on an axle pin"
+    },
+    {
+     "part": "trk-wheel-4",
+     "role": "front wheel",
+     "status": "confirmed",
+     "link": "on an axle pin"
+    },
+    {
+     "part": "trk-roller-1",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-roller-2",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-roller-3",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-roller-4",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-roller-5",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-roller-6",
+     "role": "roller under the rail",
+     "status": "confirmed",
+     "link": "on a pin in the rail"
+    },
+    {
+     "part": "trk-link-1",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-2",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-3",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-4",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-5",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-6",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-7",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-8",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-9",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-10",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-11",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-12",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-13",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-14",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-15",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-16",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-17",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-18",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-19",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-20",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-21",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-22",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-23",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-24",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-25",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-26",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-27",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-28",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-29",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-30",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-31",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-32",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-33",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-34",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-35",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-36",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-37",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-38",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-39",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-40",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-41",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-42",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-43",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-44",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-45",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-46",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-47",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-48",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-49",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-50",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-51",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-52",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-53",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-54",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-55",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-56",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-57",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-58",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-59",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    },
+    {
+     "part": "trk-link-60",
+     "role": "track link",
+     "status": "confirmed",
+     "link": "joined link to link into a closed loop"
+    }
+   ]
+  },
+  {
+   "id": "swing",
+   "type": "slewing_ring",
+   "name": "Swing turntable",
+   "does": "A 60-tooth turntable: the base is fixed to the undercarriage and the top half turns on it, so the upper machine can spin on the tracks. It is turned by hand (no pinion drives it).",
+   "input": null,
+   "output": "upper machine rotates when turned by hand",
+   "chain": [
+    {
+     "part": "sw-base-1",
+     "role": "fixed half",
+     "status": "confirmed",
+     "link": "pinned to the undercarriage"
+    },
+    {
+     "part": "sw-top-1",
+     "role": "turning half",
+     "status": "confirmed",
+     "link": "sits on the base's ring"
+    },
+    {
+     "part": "sw-bpin-1",
+     "role": "blue pin that fixes the base",
+     "status": "confirmed",
+     "link": "into the frame"
+    },
+    {
+     "part": "sw-bpin-2",
+     "role": "blue pin that fixes the base",
+     "status": "confirmed",
+     "link": "into the frame"
+    },
+    {
+     "part": "sw-bpin-3",
+     "role": "blue pin that fixes the base",
+     "status": "confirmed",
+     "link": "into the frame"
+    },
+    {
+     "part": "sw-bpin-4",
+     "role": "blue pin that fixes the base",
+     "status": "confirmed",
+     "link": "into the frame"
+    }
+   ]
+  },
+  {
+   "id": "air",
+   "type": "pneumatic_circuit",
+   "name": "Air system (pump, switches, cylinders)",
+   "does": "The hand pump pushes air through the T-piece and two switches to the cylinder at the arm base and the elbow cylinder on the arm. The exact routing of the hoses is not clear from the booklet.",
+   "input": "pump piston pushed",
+   "output": "cylinder rods push or pull",
+   "chain": [
+    {
+     "part": "pm-pump-1",
+     "role": "pump (11L)",
+     "status": "confirmed"
+    },
+    {
+     "part": "pm-hose-1",
+     "role": "short hose from the pump",
+     "status": "hypothesis"
+    },
+    {
+     "part": "hy-tee-1",
+     "role": "T-piece: splits the air line",
+     "status": "hypothesis",
+     "link": "hose pushed on"
+    },
+    {
+     "part": "hy-valve-1",
+     "role": "switch lever",
+     "status": "hypothesis",
+     "link": "hose pushed on its nozzle"
+    },
+    {
+     "part": "hy-valve-2",
+     "role": "switch lever",
+     "status": "hypothesis",
+     "link": "hose pushed on its nozzle"
+    },
+    {
+     "part": "hy-hose-1",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-2",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-3",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-4",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-5",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-6",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-7",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-hose-8",
+     "role": "air hose",
+     "status": "hypothesis",
+     "link": "pushed on a nozzle"
+    },
+    {
+     "part": "hy-cyl-1",
+     "role": "cylinder at the arm base",
+     "status": "confirmed",
+     "link": "pinned between the posts (step 24)"
+    },
+    {
+     "part": "bm-cyl-1",
+     "role": "elbow cylinder on the arm",
+     "status": "confirmed",
+     "link": "tan pins at both ends (step 90)"
+    }
+   ]
+  },
+  {
+   "id": "arm_root",
+   "type": "hinge",
+   "name": "Arm-root hinge",
+   "does": "The arm's root swings on the long red axle across the front.",
+   "input": null,
+   "output": "arm swings up and down",
+   "chain": [
+    {
+     "part": "cb-rax10-1",
+     "role": "pivot axle across the front",
+     "status": "confirmed"
+    },
+    {
+     "part": "cb-rbush-1",
+     "role": "stop on the pivot axle",
+     "status": "confirmed",
+     "link": "on the axle end"
+    },
+    {
+     "part": "cb-gpin-1",
+     "role": "lock pin",
+     "status": "confirmed",
+     "link": "in the arm root"
+    },
+    {
+     "part": "bm-lb-1",
+     "role": "arm root L-beam",
+     "status": "confirmed",
+     "link": "on the pivot"
+    }
+   ]
+  },
+  {
+   "id": "elbow_cylinder",
+   "type": "push_rod",
+   "name": "Elbow cylinder",
+   "does": "The cylinder on the arm pushes the lower arm and bends the elbow when air arrives.",
+   "input": "cylinder rod pushes",
+   "output": "lower arm swings",
+   "chain": [
+    {
+     "part": "bm-cyl-1",
+     "role": "cylinder body and rod",
+     "status": "confirmed"
+    },
+    {
+     "part": "bm-tpin-1",
+     "role": "tan pivot pin at each cylinder end",
+     "status": "confirmed",
+     "link": "in the beams"
+    },
+    {
+     "part": "bm-tpin-2",
+     "role": "tan pivot pin at each cylinder end",
+     "status": "confirmed",
+     "link": "in the beams"
+    },
+    {
+     "part": "bm-b3-1",
+     "role": "short beam that takes the push",
+     "status": "hypothesis",
+     "link": "on the elbow posts"
+    }
+   ]
+  },
+  {
+   "id": "elbow",
+   "type": "hinge",
+   "name": "Elbow hinge",
+   "does": "The elbow joint between upper arm and lower arm: grey axle and tan pin on the elbow beam.",
+   "input": null,
+   "output": "lower arm swings on the elbow",
+   "chain": [
+    {
+     "part": "bm-ax5c-1",
+     "role": "elbow shaft",
+     "status": "confirmed",
+     "link": "through the elbow beams"
+    },
+    {
+     "part": "bm-tp-1",
+     "role": "tan pin",
+     "status": "confirmed",
+     "link": "in the 5-hole beam"
+    },
+    {
+     "part": "bm-b13-1",
+     "role": "13-hole beam on the shaft",
+     "status": "confirmed",
+     "link": "swings on the shaft"
+    }
+   ]
+  },
+  {
+   "id": "bucket",
+   "type": "hinge",
+   "name": "Bucket hinge",
+   "does": "The wide digger bucket hangs on shafts at the arm's lower corner and swings on them.",
+   "input": null,
+   "output": "bucket tips",
+   "chain": [
+    {
+     "part": "bm-ax6c-1",
+     "role": "lower corner shaft",
+     "status": "confirmed",
+     "link": "through the arm's lower end"
+    },
+    {
+     "part": "bk-bucket-1",
+     "role": "bucket half",
+     "status": "confirmed",
+     "link": "pressed onto the corner shafts"
+    },
+    {
+     "part": "bk-bucket-2",
+     "role": "bucket half",
+     "status": "confirmed",
+     "link": "pressed onto the corner shafts"
+    },
+    {
+     "part": "bk-tpin-1",
+     "role": "tan pin in the bucket eye",
+     "status": "confirmed",
+     "link": "in the thin beam"
+    },
+    {
+     "part": "bk-tpin-2",
+     "role": "tan pin in the bucket eye",
+     "status": "confirmed",
+     "link": "in the thin beam"
+    },
+    {
+     "part": "bk-tb-1",
+     "role": "thin black beam",
+     "status": "confirmed",
+     "link": "on the tan pin"
+    },
+    {
+     "part": "bk-tb-2",
+     "role": "thin black beam",
+     "status": "confirmed",
+     "link": "on the tan pin"
+    }
+   ]
+  },
+  {
+   "id": "seat_deco",
+   "type": "decoration",
+   "name": "Seat and hose link",
+   "does": "The operator's seat on its red axle, and the hose link beside it.",
+   "input": null,
+   "output": null,
+   "chain": [
+    {
+     "part": "fs-seat-1",
+     "role": "seat panel",
+     "status": "confirmed",
+     "link": "on the red axle"
+    },
+    {
+     "part": "fs-rax-1",
+     "role": "red axle the seat stands on",
+     "status": "confirmed",
+     "link": "in the black connector"
+    },
+    {
+     "part": "hs-hose-1",
+     "role": "soft hose link",
+     "status": "confirmed",
+     "link": "between red end axles"
+    }
+   ]
+  },
+  {
+   "id": "counterweight",
+   "type": "decoration",
+   "name": "Counterweight and hood",
+   "does": "The heavy rear block and the VOLVO hood.",
+   "input": null,
+   "output": null,
+   "chain": [
+    {
+     "part": "cw-panel-1",
+     "role": "base panel",
+     "status": "confirmed"
+    },
+    {
+     "part": "cw-panel2-1",
+     "role": "top panel",
+     "status": "confirmed",
+     "link": "closes the sandwich"
+    },
+    {
+     "part": "cw-b7-1",
+     "role": "7-hole beam in the sandwich",
+     "status": "confirmed",
+     "link": "on pins"
+    },
+    {
+     "part": "cw-b7b-1",
+     "role": "7-hole beam in the sandwich",
+     "status": "confirmed",
+     "link": "on pins"
+    },
+    {
+     "part": "cw-b7b-2",
+     "role": "7-hole beam in the sandwich",
+     "status": "confirmed",
+     "link": "on pins"
+    },
+    {
+     "part": "hd-fair-1",
+     "role": "hood fairing",
+     "status": "confirmed"
+    },
+    {
+     "part": "hd-b9-1",
+     "role": "VOLVO beam",
+     "status": "confirmed",
+     "link": "on the red pins"
+    }
+   ]
+  },
+  {
+   "id": "roof",
+   "type": "decoration",
+   "name": "Cab roof",
+   "does": "Yellow roof beams on the pillars, roof rods and the orange rail with lamps.",
+   "input": null,
+   "output": null,
+   "chain": [
+    {
+     "part": "ca-yl-1",
+     "role": "yellow pillar L-beam",
+     "status": "confirmed"
+    },
+    {
+     "part": "ca-yb9-1",
+     "role": "first yellow roof beam",
+     "status": "confirmed",
+     "link": "on the pillar's pins"
+    },
+    {
+     "part": "rf2-b9-1",
+     "role": "second yellow roof beam",
+     "status": "confirmed",
+     "link": "laid on the first"
+    },
+    {
+     "part": "ao-bar-1",
+     "role": "orange rail on the roof",
+     "status": "confirmed",
+     "link": "in a black connector"
+    },
+    {
+     "part": "ar-plate-1",
+     "role": "amber lamp plate",
+     "status": "hypothesis",
+     "link": "on a round plate"
+    }
+   ]
+  },
+  {
+   "id": "orange",
+   "type": "decoration",
+   "name": "Orange hose fittings",
+   "does": "The two orange fittings on the machine's rear.",
+   "input": null,
+   "output": null,
+   "chain": [
+    {
+     "part": "of-ball-1",
+     "role": "grey ball joint of the first fitting",
+     "status": "confirmed"
+    },
+    {
+     "part": "of3-hose-1",
+     "role": "orange hose arm of the second fitting",
+     "status": "confirmed"
+    }
+   ]
+  }
+ ]
+}

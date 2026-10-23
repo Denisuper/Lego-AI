@@ -2,10 +2,10 @@ STEP 31
 ADD sd-panel-1 71709 black
 ADD sd-gpin-1 4274 lightgray
 ADD sd-gpin-2 4274 lightgray
-ADD sd-gbeam-1 43857 darkgray
+ADD sd-gbeam-1 32523 darkgray
 ADD sd-bpin-1 43093 blue
 ADD sd-bpin-2 43093 blue
-ADD sd-lbeam-1 32140 black
+ADD sd-lbeam-1 32526 black
 ADD sd-beam15-1 71710 black
 CONNECT sd-gpin-1.pin1 -> sd-panel-1.hole1~ TURNS
 CONNECT sd-gpin-2.pin1 -> sd-panel-1.hole2~ TURNS
