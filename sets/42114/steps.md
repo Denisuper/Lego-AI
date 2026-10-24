@@ -204,3 +204,185 @@ WHY Mounts a 16-tooth gear on a short tan axle that meshes with the previous gea
 ADD lbeam-5 32526 yellow
 CONNECT lbeam-5.hole?~ -> beam7-2.hole?~ STIFF
 WHY Caps the gear sub-assembly with another yellow L-beam so the shafts are held at both ends and the unit can be dropped into the main frame.
+
+## Step 24 (page 16)
+ADD axle3-2 4519 yellow
+ADD bush-5 3713 yellow
+ADD bush-6 3713 yellow
+ADD gear16-5 94925 lightgray
+ADD pin-17 2780 red
+CONNECT gear16-5.axlehole1 -> axle3-2.axle1 LOCKED
+CONNECT bush-5.axlehole1 -> axle3-2.axle2 LOCKED
+CONNECT bush-6.axlehole1 -> axle3-2.axle3 LOCKED
+CONNECT pin-17.pin1 -> bush-6.hole1~ STIFF
+WHY Builds a short output shaft with a 16-tooth gear, two yellow bushes and a red pin that will later drive the differential.
+
+## Step 25 (page 17)
+ADD axle4-2 3705 yellow
+ADD axle3-3 4519 tan
+CONNECT axle4-2.axle1 -> lbeam-5.hole?~ TURNS
+CONNECT axle3-3.axle1 -> beam7-2.hole?~ TURNS
+WHY Adds two more short axles through the upright beams to carry additional gears.
+
+## Step 26 (page 17)
+ADD gear16c-2 18946 red
+ADD bush-7 3713 lightgray
+CONNECT gear16c-2.axlehole1 -> axle4-2.axle2 LOCKED
+CONNECT bush-7.axlehole1 -> axle4-2.axle3 LOCKED
+WHY Puts a red clutch gear and a bush on the yellow axle so it can engage or freewheel depending on the drive path.
+
+## Step 27 (page 18)
+ADD beam11-3 32525 yellow
+ADD gear16-6 94925 lightgray
+CONNECT gear16-6.axlehole1 -> beam11-3.hole1~ LOCKED
+CONNECT beam11-3.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a long yellow 11-hole beam with a 16-tooth gear on the end that will mesh with the clutch gear and span the gearbox.
+
+## Step 28 (page 18)
+ADD gear16-7 94925 lightgray
+CONNECT gear16-7.axlehole1 -> beam11-3.hole?~ LOCKED
+WHY Adds a second 16-tooth gear on the long beam so both ends of the beam drive parallel shafts.
+
+## Step 29 (page 19)
+CONNECT lbeam-3.hole?~ -> frame-?.hole?~ STIFF
+CONNECT lbeam-4.hole?~ -> frame-?.hole?~ STIFF
+CONNECT lbeam-5.hole?~ -> frame-?.hole?~ STIFF
+WHY Inserts the completed gear carrier sub-assembly into the main stacked frames (rotate and drop in as shown by the arrow).
+
+## Step 30 (page 20)
+ADD gear16-8 94925 lightgray
+CONNECT gear16-8.axlehole1 -> axle5-1.axle?~ LOCKED
+WHY Adds one more 16-tooth gear deep inside the frame that meshes with the first carrier gears.
+
+## Step 31 (page 21)
+ADD diff-1 62821 lightgray
+ADD gear24-1 3649 red
+ADD axle3-4 4519 tan
+ADD axle3-5 4519 tan
+ADD gear8-2 3647 lightgray
+ADD gear8-3 3647 lightgray
+ADD gear8-4 3647 lightgray
+ADD gear8-5 3647 lightgray
+ADD gear8-6 3647 lightgray
+CONNECT gear8-2.axlehole1 -> diff-1.axlehole?~ LOCKED
+CONNECT gear8-3.axlehole1 -> diff-1.axlehole?~ LOCKED
+CONNECT gear8-4.axlehole1 -> diff-1.axlehole?~ LOCKED
+CONNECT gear8-5.axlehole1 -> diff-1.axlehole?~ LOCKED
+CONNECT gear24-1.axlehole1 -> diff-1.axlehole?~ LOCKED
+CONNECT axle3-4.axle1 -> diff-1.axlehole?~ TURNS
+CONNECT axle3-5.axle1 -> diff-1.axlehole?~ TURNS
+WHY Builds the first differential: housing, four small bevels, a large red crown gear and two output axles that will drive the left and right rear wheels.
+
+## Step 32 (page 22)
+ADD connector-1 6536 black
+ADD connector-2 6536 black
+ADD connector-3 6536 black
+ADD connector-4 6536 black
+ADD axpin-14 43093 blue
+ADD axpin-15 43093 blue
+ADD axpin-16 43093 blue
+ADD axpin-17 43093 blue
+CONNECT axpin-14.pin1 -> connector-1.hole1 STIFF
+CONNECT axpin-15.pin1 -> connector-2.hole1 STIFF
+CONNECT axpin-16.pin1 -> connector-3.hole1 STIFF
+CONNECT axpin-17.pin1 -> connector-4.hole1 STIFF
+CONNECT connector-1.hole2 -> frame-?.hole?~ STIFF
+CONNECT connector-2.hole2 -> frame-?.hole?~ STIFF
+CONNECT connector-3.hole2 -> frame-?.hole?~ STIFF
+CONNECT connector-4.hole2 -> frame-?.hole?~ STIFF
+WHY Adds four perpendicular connectors with blue axle-pins that will hold the differential shafts and keep the gears aligned.
+
+## Step 33 (page 23)
+ADD axle9-1 22961 lightgray
+ADD axle9-2 22961 lightgray
+ADD gear16c-3 18946 red
+ADD beam7-3 32524 yellow
+CONNECT gear16c-3.axlehole1 -> axle9-1.axle2 LOCKED
+CONNECT beam7-3.hole?~ -> axle9-1.axle3 TURNS
+CONNECT axle9-1.axle1 -> connector-?.hole?~ TURNS
+CONNECT axle9-2.axle1 -> connector-?.hole?~ TURNS
+WHY Adds two long output shafts with a red clutch gear and a yellow beam that will later connect to the wheel hubs.
+
+## Step 34 (page 24)
+ADD beam5-1 32316 lightgray
+ADD gear16-9 94925 lightgray
+CONNECT gear16-9.axlehole1 -> beam5-1.hole?~ LOCKED
+CONNECT beam5-1.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a short light-gray beam with a 16-tooth gear that meshes with the differential crown and transfers drive sideways.
+
+## Step 35 (page 25)
+ADD axle8-1 3707 black
+ADD gear16-10 94925 lightgray
+CONNECT gear16-10.axlehole1 -> axle8-1.axle2 LOCKED
+CONNECT axle8-1.axle1 -> frame-?.hole?~ TURNS
+WHY Inserts a long black 8L axle with a 16-tooth gear that will carry drive toward the second differential or intermediate shaft.
+
+## Step 36 (page 26)
+ADD beam9-4 40490 lightgray
+ADD axpin-18 43093 blue
+ADD axpin-19 43093 blue
+CONNECT axpin-18.pin1 -> beam9-4.hole1~ STIFF
+CONNECT axpin-19.pin1 -> beam9-4.hole9~ STIFF
+CONNECT beam9-4.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds another 9-hole beam with blue pins across the top of the gearbox to close the structure and support more gears.
+
+## Step 37 (page 26)
+ADD gear16-11 94925 lightgray
+ADD gear16-12 94925 lightgray
+ADD gear16c-4 18946 red
+ADD axle3-6 4519 tan
+CONNECT gear16-11.axlehole1 -> axle3-6.axle1 LOCKED
+CONNECT gear16-12.axlehole1 -> axle3-6.axle2 LOCKED
+CONNECT gear16c-4.axlehole1 -> axle3-6.axle3 LOCKED
+CONNECT axle3-6.axle?~ -> beam9-4.hole?~ TURNS
+WHY Builds a triple-gear stack (two plain 16s + one clutch) on a short axle that sits in the new top beam.
+
+## Step 38 (page 27)
+ADD beam9-5 40490 lightgray
+CONNECT beam9-5.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds the matching 9-hole beam on the other side so the top of the gearbox is fully closed and rigid.
+
+## Step 39 (page 28)
+ADD beam5-2 32316 lightgray
+ADD gear16-13 94925 lightgray
+ADD gear16-14 94925 lightgray
+ADD axle4-3 3705 black
+ADD axpin-20 43093 blue
+ADD axpin-21 43093 blue
+ADD lbeam-6 32526 yellow
+CONNECT axpin-20.pin1 -> beam5-2.hole1~ STIFF
+CONNECT axpin-21.pin1 -> beam5-2.hole5~ STIFF
+CONNECT gear16-13.axlehole1 -> axle4-3.axle1 LOCKED
+CONNECT gear16-14.axlehole1 -> axle4-3.axle2 LOCKED
+CONNECT axle4-3.axle3 -> beam5-2.hole?~ TURNS
+CONNECT lbeam-6.hole?~ -> beam5-2.hole?~ STIFF
+WHY Builds a side gear carrier with two 16-tooth gears on a 4L axle that will mesh with the main drive train and sit outside the frame.
+
+## Step 40 (page 29)
+ADD gear16-15 94925 lightgray
+CONNECT gear16-15.axlehole1 -> axle4-3.axle?~ LOCKED
+WHY Adds one more 16-tooth gear on the outer shaft so it can drive the next stage or a wheel hub.
+
+## Step 41 (page 29)
+ADD bush-8 3713 lightgray
+ADD bush-9 3713 lightgray
+ADD bush-10 3713 lightgray
+CONNECT bush-8.axlehole1 -> axle8-1.axle?~ LOCKED
+CONNECT bush-9.axlehole1 -> axle9-1.axle?~ LOCKED
+CONNECT bush-10.axlehole1 -> axle9-2.axle?~ LOCKED
+WHY Caps three free axle ends with bushes so the shafts cannot slide out of the frames.
+
+## Step 42 (page 30)
+ADD axle3-7 4519 yellow
+ADD axle3-8 4519 yellow
+ADD axle3-9 4519 yellow
+ADD bush-11 3713 yellow
+ADD connector-5 32013 purple
+ADD gear24-2 3650a orange
+ADD pin-18 2780 red
+CONNECT gear24-2.axlehole1 -> axle3-7.axle1 LOCKED
+CONNECT bush-11.axlehole1 -> axle3-7.axle2 LOCKED
+CONNECT pin-18.pin1 -> bush-11.hole1~ STIFF
+CONNECT connector-5.hole1 -> axle3-8.axle1 LOCKED
+CONNECT axle3-9.axle1 -> connector-5.hole2 LOCKED
+WHY Builds a short orange-crowned shaft with a purple angle connector that will later link to the motor or an intermediate drive.
