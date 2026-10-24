@@ -1,20 +1,23 @@
-"""Fine-tune Qwen on the exported examples with LoRA (small add-on weights; the base model stays as it is).
+"""Fine-tune Qwen2.5-VL-7B on the exported examples with LoRA.
 Usage:
   pip install -r training/requirements.txt
   python training/export.py
-  python training/train_qwen.py --model Qwen/Qwen2.5-1.5B-Instruct --epochs 3
-Needs a GPU (a 1.5B-3B model fits on one 24 GB card). Output: training/out/<model name>/ (LoRA adapter)."""
+  python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct --epochs 3
+Needs a GPU with 24+ GB VRAM, or run 4-bit quantized on ~10 GB.
+The booklet page images are loaded via the model's image processor;
+training/export.py must emit image paths in each jsonl example.
+Output: training/out/<model name>/ (LoRA adapter)."""
 import argparse
 from datasets import load_dataset
 from peft import LoraConfig
 from trl import SFTConfig, SFTTrainer
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--model", default="Qwen/Qwen2.5-1.5B-Instruct")
+ap.add_argument("--model", default="Qwen/Qwen2.5-VL-7B-Instruct")
 ap.add_argument("--epochs", type=float, default=3)
 ap.add_argument("--max_length", type=int, default=8192)
 ap.add_argument("--lr", type=float, default=2e-4)
-args = ap.parse_args()
+Args = ap.parse_args()
 
 files = {"train": "training/data/train.jsonl"}
 import os
@@ -34,6 +37,7 @@ config = SFTConfig(
     save_strategy="epoch",
     bf16=True,
 )
+# target_modules="all-linear" covers the LLM layers; the ViT encoder is left frozen
 lora = LoraConfig(r=32, lora_alpha=64, lora_dropout=0.05, target_modules="all-linear", task_type="CAUSAL_LM")
 trainer = SFTTrainer(model=args.model, args=config, train_dataset=data["train"],
                      eval_dataset=data.get("test"), peft_config=lora)
