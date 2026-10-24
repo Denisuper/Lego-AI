@@ -9,16 +9,18 @@ Owner: Dennis. Plain language, no jargon, straight to the point. Save tokens.
 
 1. **Input**: a booklet.pdf page image plus the set's parts_list.csv. The model sees the picture; it does not see cropped annotations or JSON sidecars.
 2. **Output**: one build-language block per step (ADD, CONNECT, WHY lines — see "The build language" below). The WHY line is the model's reasoning: one real sentence grounded in the picture and the previous/next steps. There is no separate "think" instruction; reasoning is learned from seeing WHY lines in training examples.
-3. **Check**: tools/check_notation.py validates every join — the point exists in catalog/connections.csv, the two parts fit, the connection word (LOCKED/TURNS/STIFF) is legal for that pair.
-4. **Reward (non-scalar)**: instead of one float, the checker returns a list of critique objects. Each has a severity (error/warning), a code, the exact line it failed on, and a one-sentence explanation a human could act on — e.g. "CONNECT pump-pin-1.pin1 -> pump-beam-1.hole9: hole9 does not exist on 32278; nearest valid holes are 4 and 5". GRPO trains on these: the scalar component is mean reward across critiques, but the language component is fed back as additional context so the model sees *why* a join failed, not just that it did. See "Reward format" below.
-5. **Loop**: generate a candidate step block, score it, feed critiques back, regenerate. Repeat until clean or a step budget is hit.
+3. **Check, two stages**:
+   - **Stage 1 — geometric (cheap)**: tools/check_notation.py validates every join — the point exists in catalog/connections.csv, the two parts fit, the connection word (LOCKED/TURNS/STIFF) is legal for that pair. Instant.
+   - **Stage 2 — functional (expensive)**: the same script then traces motion from each input (knob, crank, pump) through the mechanism chain using catalog/mechanisms.json rules and failure modes. Does the crank actually reach the output? Does the worm drive self-lock? Does a four-bar have a free pivot at every corner? Geometry-clean builds that are dead weight — every join legal, nothing moves — get flagged here.
+4. **Reward (non-scalar)**: the checker returns a list of critique objects, not one float. Each has a severity (error/warning/info), a code, the exact line it failed on, and a one-sentence explanation a human could act on. GRPO's scalar component is -1 per error and -0.25 per warning; the critique texts are concatenated into the prompt prefix on the next attempt so the model conditions on its own mistakes. This is process supervision: the signal is per-failure and verbal.
+5. **Loop**: generate a candidate step block, score it in both stages, feed critiques back, regenerate. Repeat until clean or a step budget is hit. Stage 1 runs on everything; stage 2 only on geometry-clean survivors, because simulation is slow.
 
 ## Reward format
-check_notation.py emits JSONL, one object per finding:
+check_notation.py with --jsonl emits one object per finding:
 ```json
-{"severity": "error", "code": "POINT_MISSING", "line": 12, "part": "pump-beam-1", "point": "hole9", "message": "hole9 does not exist on 32278; valid holes are 1-8"}
+{"severity": "error", "code": "WORM_NO_STOP", "line": 12, "message": "line 12 (step 4): worm worm-1 (4716) drives gear-2 but has no LOCKED stop — per worm_drive rules the worm walks along its shaft and loses mesh"}
 ```
-Severity levels: error (illegal join, must fix), warning (plausible but unverified, e.g. a `~` estimate), info (style nits). GRPO's reward = -1 per error, -0.25 per warning, 0 for clean. The critique texts are also concatenated into the GRPO prompt prefix on the next attempt so the model conditions on its own mistakes. This is process supervision: the signal is per-failure and verbal, not one end-of-sequence number.
+Severity levels: error (illegal join or dead mechanism, must fix), warning (plausible but unverified or suboptimal), info (style nits). Codes include POINT_MISSING, NO_FIT, WRONG_MODE, MESH_NO_TEETH, USED_BEFORE_ADD, WORM_NO_STOP, GEAR_NOT_LOCKED, FRICTION_ON_HINGE, UNREFERENCED_PART. GRPO reward = -1 per error, -0.25 per warning, 0 for clean.
 
 ## How to add a set (the only workflow)
 1. Make `sets/<set>/` with the original `booklet.pdf` (commit it unedited; add `!sets/<set>/booklet.pdf` to .gitignore) and `parts_list.csv` (Rebrickable).
@@ -43,7 +45,7 @@ WHY one plain sentence: what this step builds and what it is for.
 - `ADD name partnum colour` - a part. Names never change once used (beam9-1, gear-3). Only part numbers from the set's parts list.
 - `CONNECT a.point -> b.point LOCKED|TURNS|STIFF` - LOCKED = cross in cross (turn together), TURNS = axle in round hole or frictionless pin, STIFF = friction pin in round hole.
 - Points are the catalog's names (`catalog/connections.csv`): hole1.. (round), axlehole1.. (cross), pin1.. / axle1.. (one per hole-length), `teeth` for gears.
-- Optional: `MESH a.teeth b.teeth`, `RATIO a b x/y`, `GROUP g ... END` / `ATTACH g` for a side build.
+- Optional: `MESH a.teeth b.teeth`, `RATIO a b x/y`, `GROUP g ... END` / `ATTACH g` for a side build, `DOES a DRIVES b`, `PATTERN linkage`.
 - `WHY` is the reasoning. Training turns it into the model's thinking, so keep it short and real. We do not need a separate "think" instruction: the model learns to reason by seeing WHY lines in the examples.
 
 ## Layout
@@ -52,8 +54,8 @@ sets/<set>/steps.md            the whole set in plain steps (what you write)
 sets/<set>/training.tbl + .jsonl  the same set as training text; every file starts with the instructions the model follows
 sets/<set>/booklet.pdf         the original, unedited booklet
 sets/<set>/parts_list.csv      official parts list
-catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types)
-tools/check_notation.py        checks every join and emits the structured critique JSONL above
+catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types, rules, failure modes)
+tools/check_notation.py        two-stage checker: geometric legality + functional motion tracing; emits structured critique JSONL
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
@@ -77,7 +79,7 @@ CHECK (all must pass before moving on)
 - every part in parts_list.csv is used exactly once by the last step in steps.md.
 - every point in steps.md exists in catalog/connections.csv.
 - grep -c "TO WRITE" over steps.md and the set's training.tbl/training.jsonl is 0.
-- python tools/check_notation.py sets/<set>/steps.md exits 0 (no error-severity critiques).
+- python tools/check_notation.py sets/<set>/steps.md exits 0 (no error-severity critiques in either stage).
 
 KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl. Delete model.mpd and
 booklet_map.csv once steps.md is done - they were only needed for the old per-step pipeline.
@@ -117,7 +119,7 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 ## Training (Qwen2.5-VL-7B)
 1. `python training/export.py` -> training/data/train.jsonl (+ test.jsonl, one whole set held out).
 2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct` on a GPU with 24+ GB VRAM (or 4-bit quant on ~10 GB).
-3. Later: GRPO (TRL) with check_notation.py's structured critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above.
+3. Later: GRPO (TRL) with check_notation.py's two-stage critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above. Stage 1 filters; stage 2 scores survivors.
 export.py reads every sets/<set>/steps.md; it writes that set's own training.jsonl/training.tbl too. One whole set is held out for test.
 
 ## Status (Oct 23, 2026)
