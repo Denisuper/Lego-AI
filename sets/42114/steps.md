@@ -540,3 +540,233 @@ WHY Caps another free axle and inserts a short tan axle through the new beam.
 CONNECT beam11-4.hole?~ -> frame-5.hole?~ STIFF
 CONNECT beam11-5.hole?~ -> frame-5.hole?~ STIFF
 WHY Attaches the completed motor-drive beam sandwich onto the new 5x7 frame (arrow shows seating direction).
+
+## Step 61 (page 41)
+ADD lbeam-8 32526 yellow
+ADD pin-25 2780 black
+ADD pin-26 2780 black
+CONNECT pin-25.pin1 -> lbeam-8.hole?~ STIFF
+CONNECT pin-26.pin1 -> lbeam-8.hole?~ STIFF
+WHY Builds a yellow L-beam with two pins that will become a motor support bracket.
+
+## Step 62 (page 41)
+ADD axpin-26 43093 blue
+ADD axpin-27 43093 blue
+CONNECT axpin-26.pin1 -> lbeam-8.hole?~ STIFF
+CONNECT axpin-27.pin1 -> lbeam-8.hole?~ STIFF
+WHY Adds two blue axle-pins to the L-beam so it can lock into the motor mount frame.
+
+## Step 63 (page 41)
+ADD beam11-6 32525 yellow
+CONNECT beam11-6.hole?~ -> pin-25.pin2 STIFF
+CONNECT beam11-6.hole?~ -> pin-26.pin2 STIFF
+WHY Attaches a long yellow 11-hole beam to the L-beam, forming an extended motor support arm.
+
+## Step 64 (page 41)
+ADD connector-9 6536 black
+ADD pin-27 2780 black
+ADD pin-28 2780 black
+CONNECT pin-27.pin1 -> connector-9.hole1 STIFF
+CONNECT pin-28.pin1 -> connector-9.hole2 STIFF
+CONNECT connector-9.hole?~ -> beam11-6.hole?~ STIFF
+WHY Adds a perpendicular connector with two pins on the end of the long beam for later attachment.
+
+## Step 65 (page 42)
+CONNECT beam11-6.hole?~ -> frame-5.hole?~ STIFF
+WHY Seats the motor support arm onto the motor mount frame.
+
+## Step 66 (page 42)
+ADD axle5-7 15462 lightgray
+ADD bush-21 3713 yellow
+ADD bush-22 3713 yellow
+CONNECT axle5-7.axle1 -> beam11-6.hole?~ TURNS
+CONNECT bush-21.axlehole1 -> axle5-7.axle2 LOCKED
+CONNECT bush-22.axlehole1 -> axle5-7.axle3 LOCKED
+WHY Adds a 5.5 axle with two yellow bushes through the motor support arm that will later hold a gear or coupler.
+
+## Step 67 (page 43)
+ADD frame-6 64179 darkgray
+ADD pin-29 2780 black
+ADD pin-30 2780 black
+ADD pin-31 2780 black
+ADD pin-32 2780 black
+ADD pin-33 2780 black
+ADD pin-34 2780 black
+CONNECT pin-29.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-30.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-31.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-32.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-33.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-34.pin1 -> frame-6.hole?~ STIFF
+WHY Starts another 5x7 frame with six pins that will form the next stage of the chassis.
+
+## Step 68 (page 43)
+ADD axpin-28 43093 blue
+ADD axpin-29 43093 blue
+CONNECT axpin-28.pin1 -> frame-6.hole?~ STIFF
+CONNECT axpin-29.pin1 -> frame-6.hole?~ STIFF
+WHY Adds two blue axle-pins standing up on the new frame for stacking.
+
+## Step 69 (page 43)
+ADD frame-7 64179 darkgray
+ADD pin-35 2780 black
+ADD pin-36 2780 black
+CONNECT pin-35.pin1 -> frame-7.hole?~ STIFF
+CONNECT pin-36.pin1 -> frame-7.hole?~ STIFF
+CONNECT frame-7.hole?~ -> axpin-28.pin2 STIFF
+CONNECT frame-7.hole?~ -> axpin-29.pin2 STIFF
+WHY Stacks a second 5x7 frame on the blue axle-pins and locks it with two more pins.
+
+## Step 70 (page 44)
+ADD frame-8 64179 darkgray
+CONNECT frame-8.hole?~ -> pin-?.pin2 STIFF
+WHY Adds a third 5x7 frame to the stack, thickening the chassis core.
+
+## Step 71 (page 44)
+ADD lbeam-9 32526 yellow
+ADD pin-37 2780 black
+ADD pin-38 2780 black
+ADD pin-39 2780 black
+ADD pin-40 2780 black
+CONNECT pin-37.pin1 -> lbeam-9.hole?~ STIFF
+CONNECT pin-38.pin1 -> lbeam-9.hole?~ STIFF
+CONNECT pin-39.pin1 -> lbeam-9.hole?~ STIFF
+CONNECT pin-40.pin1 -> lbeam-9.hole?~ STIFF
+CONNECT lbeam-9.hole?~ -> frame-6.hole?~ STIFF
+WHY Adds a yellow L-beam with four pins as a side brace on the stacked frames.
+
+## Step 72 (page 44)
+ADD axpin-30 43093 blue
+ADD axpin-31 43093 blue
+ADD axpin-32 43093 blue
+ADD pin-41 2780 black
+CONNECT axpin-30.pin1 -> frame-6.hole?~ STIFF
+CONNECT axpin-31.pin1 -> frame-6.hole?~ STIFF
+CONNECT axpin-32.pin1 -> frame-6.hole?~ STIFF
+CONNECT pin-41.pin1 -> frame-6.hole?~ STIFF
+WHY Adds more axle-pins and a friction pin after rotating the stack so more beams can attach.
+
+## Step 73 (page 45)
+ADD beam15-1 32278 yellow
+ADD axpin-33 43093 blue
+ADD axpin-34 43093 blue
+ADD axpin-35 43093 blue
+CONNECT axpin-33.pin1 -> beam15-1.hole1~ STIFF
+CONNECT axpin-34.pin1 -> beam15-1.hole8~ STIFF
+CONNECT axpin-35.pin1 -> beam15-1.hole15~ STIFF
+CONNECT beam15-1.hole?~ -> frame-6.hole?~ STIFF
+WHY Adds a long yellow 15-hole beam with three blue axle-pins that will become a main chassis rail.
+
+## Step 74 (page 45)
+ADD beam11-7 32525 yellow
+CONNECT beam11-7.hole?~ -> frame-6.hole?~ STIFF
+WHY Adds a parallel yellow 11-hole beam on the other side of the stacked frames to balance the rail.
+
+## Step 75 (page 46)
+CONNECT frame-5.hole?~ -> beam15-1.hole?~ STIFF
+CONNECT frame-5.hole?~ -> beam11-7.hole?~ STIFF
+WHY Joins the motor mount assembly to the new chassis rails (rotate and seat as shown).
+
+## Step 76 (page 46)
+CONNECT beam15-1.hole?~ -> frame-1.hole?~ STIFF
+CONNECT beam11-7.hole?~ -> frame-1.hole?~ STIFF
+WHY Connects the chassis rails to the original gearbox core so the whole rear section is now one rigid unit.
+
+## Step 77 (page 47)
+ADD beam13-1 41239 lightgray
+ADD pin-42 2780 black
+CONNECT pin-42.pin1 -> beam13-1.hole?~ STIFF
+CONNECT beam13-1.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a long light-gray 13-hole beam across the top of the joined assemblies to stiffen the structure.
+
+## Step 78 (page 48)
+ADD gear16-20 94925 lightgray
+CONNECT gear16-20.axlehole1 -> axle5-4.axle?~ LOCKED
+WHY Adds one more 16-tooth gear on the intermediate shaft that meshes with the motor drive train.
+
+## Step 79 (page 49)
+ADD beam7-4 32524 yellow
+ADD connector-10 6536 black
+ADD pin-43 2780 black
+ADD pin-44 2780 black
+CONNECT pin-43.pin1 -> connector-10.hole1 STIFF
+CONNECT pin-44.pin1 -> connector-10.hole2 STIFF
+CONNECT connector-10.hole?~ -> beam7-4.hole?~ STIFF
+CONNECT beam7-4.hole?~ -> frame-?.hole?~ STIFF
+WHY Builds a short yellow beam with a perpendicular connector that will support an intermediate gear or shaft.
+
+## Step 80 (page 50)
+ADD beam5-3 32316 lightgray
+ADD axpin-36 43093 blue
+ADD axpin-37 43093 blue
+CONNECT axpin-36.pin1 -> beam5-3.hole1~ STIFF
+CONNECT axpin-37.pin1 -> beam5-3.hole5~ STIFF
+CONNECT beam5-3.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a short light-gray beam with two blue axle-pins as a side support for the next stage.
+
+## Step 81 (page 51)
+ADD beam7-5 32524 yellow
+ADD connector-11 6536 black
+CONNECT connector-11.hole1 -> beam7-5.hole?~ STIFF
+CONNECT beam7-5.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds another yellow 7-hole beam with a connector that will hold a vertical support.
+
+## Step 82 (page 52)
+ADD beam13-2 41239 lightgray
+ADD pin-45 2780 black
+CONNECT pin-45.pin1 -> beam13-2.hole?~ STIFF
+CONNECT beam13-2.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a second long light-gray 13-hole beam parallel to the first, closing the top of the chassis.
+
+## Step 83 (page 53)
+ADD beam15-2 32278 yellow
+ADD axpin-38 43093 blue
+ADD axpin-39 43093 blue
+ADD axpin-40 43093 blue
+CONNECT axpin-38.pin1 -> beam15-2.hole1~ STIFF
+CONNECT axpin-39.pin1 -> beam15-2.hole8~ STIFF
+CONNECT axpin-40.pin1 -> beam15-2.hole15~ STIFF
+CONNECT beam15-2.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds the matching long yellow 15-hole beam on the opposite side, completing the main chassis rails.
+
+## Step 84 (page 54)
+ADD beam15-3 32278 yellow
+ADD axpin-41 43093 blue
+ADD axpin-42 43093 blue
+ADD axpin-43 43093 blue
+ADD connector-12 6536 black
+ADD connector-13 6536 black
+ADD pin-46 2780 black
+ADD pin-47 2780 black
+ADD pin-48 2780 black
+CONNECT axpin-41.pin1 -> beam15-3.hole1~ STIFF
+CONNECT axpin-42.pin1 -> beam15-3.hole8~ STIFF
+CONNECT axpin-43.pin1 -> beam15-3.hole15~ STIFF
+CONNECT connector-12.hole1 -> beam15-3.hole?~ STIFF
+CONNECT connector-13.hole1 -> beam15-3.hole?~ STIFF
+CONNECT pin-46.pin1 -> connector-12.hole2 STIFF
+CONNECT pin-47.pin1 -> connector-13.hole2 STIFF
+CONNECT pin-48.pin1 -> beam15-3.hole?~ STIFF
+CONNECT beam15-3.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds a third long yellow 15-hole beam with connectors and pins that will support the next sub-assembly.
+
+## Step 85 (page 55)
+ADD beam15-4 32278 yellow
+ADD axpin-44 43093 blue
+ADD axpin-45 43093 blue
+ADD connector-14 6536 black
+ADD connector-15 6536 black
+ADD pin-49 2780 black
+ADD pin-50 2780 black
+ADD pin-51 2780 black
+ADD pin-52 2780 black
+CONNECT axpin-44.pin1 -> beam15-4.hole1~ STIFF
+CONNECT axpin-45.pin1 -> beam15-4.hole15~ STIFF
+CONNECT connector-14.hole1 -> beam15-4.hole?~ STIFF
+CONNECT connector-15.hole1 -> beam15-4.hole?~ STIFF
+CONNECT pin-49.pin1 -> connector-14.hole2 STIFF
+CONNECT pin-50.pin1 -> connector-15.hole2 STIFF
+CONNECT pin-51.pin1 -> beam15-4.hole?~ STIFF
+CONNECT pin-52.pin1 -> beam15-4.hole?~ STIFF
+CONNECT beam15-4.hole?~ -> frame-?.hole?~ STIFF
+WHY Adds the fourth long yellow 15-hole beam with connectors, completing the lower chassis rail structure.
