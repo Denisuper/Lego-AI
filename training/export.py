@@ -88,7 +88,7 @@ def write_set_files(set_dir, examples):
 
 
 if __name__ == "__main__":
-    set_dirs = sorted(os.path.dirname(p) + "/" for p in glob.glob("sets/*/steps.md"))
+    set_dirs = sorted(os.path.dirname(p) + "/" for p in glob.glob("sets/*/steps.md") + glob.glob("sets/*/*/steps.md"))
     by_set = {d: examples_for(d) for d in set_dirs}
     for d, examples in by_set.items():
         write_set_files(d, examples)
