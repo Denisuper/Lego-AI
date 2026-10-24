@@ -147,3 +147,60 @@ CONNECT pin-15.pin1 -> lbeam-2.hole?~ STIFF
 CONNECT pin-16.pin1 -> lbeam-2.hole?~ STIFF
 CONNECT lbeam-2.hole?~ -> frame-?.hole?~ STIFF
 WHY Adds the second yellow L-beam on the opposite corner so both sides of the gearbox core are braced the same way.
+
+## Step 17 (page 13)
+ADD lbeam-3 32526 yellow
+ADD axle5-1 15462 reddishbrown
+ADD axle5-2 15462 reddishbrown
+ADD gear16-1 94925 lightgray
+ADD gear16c-1 18946 red
+ADD bush-3 3713 yellow
+ADD bush-4 3713 lightgray
+CONNECT axle5-1.axle1 -> lbeam-3.hole?~ TURNS
+CONNECT axle5-2.axle1 -> lbeam-3.hole?~ TURNS
+CONNECT gear16-1.axlehole1 -> axle5-1.axle2 LOCKED
+CONNECT gear16c-1.axlehole1 -> axle5-2.axle2 LOCKED
+CONNECT bush-3.axlehole1 -> axle5-1.axle3 LOCKED
+CONNECT bush-4.axlehole1 -> axle5-2.axle3 LOCKED
+WHY Builds the first gear carrier: a yellow L-beam holding two 5.5 axles with a plain 16-tooth gear and a red clutch gear ready to mesh inside the frame.
+
+## Step 18 (page 14)
+ADD lbeam-4 32526 yellow
+ADD axpin-12 43093 blue
+ADD axle4-1 3705 black
+CONNECT axpin-12.pin1 -> lbeam-4.hole?~ STIFF
+CONNECT axle4-1.axle1 -> lbeam-4.hole?~ TURNS
+WHY Makes a second short carrier with a blue axle-pin and a 4L axle that will hold the next gear pair.
+
+## Step 19 (page 14)
+ADD gear16-2 94925 lightgray
+ADD gear8-1 3647 lightgray
+CONNECT gear16-2.axlehole1 -> axle4-1.axle2 LOCKED
+CONNECT gear8-1.axlehole1 -> axle4-1.axle3 LOCKED
+WHY Puts a 16-tooth and an 8-tooth gear on the 4L axle so they turn together as a reduction stage.
+
+## Step 20 (page 14)
+ADD gear16-3 94925 lightgray
+ADD axle5-3 15462 reddishbrown
+CONNECT gear16-3.axlehole1 -> axle5-3.axle2 LOCKED
+CONNECT axle5-3.axle1 -> lbeam-4.hole?~ TURNS
+WHY Adds another 16-tooth gear on a 5.5 axle that will mesh with the previous stage and carry drive out of the carrier.
+
+## Step 21 (page 15)
+ADD beam7-2 32524 yellow
+ADD axpin-13 43093 blue
+CONNECT axpin-13.pin1 -> beam7-2.hole1~ STIFF
+CONNECT beam7-2.hole?~ -> lbeam-4.hole?~ STIFF
+WHY Adds a yellow 7-hole beam as an upright that will support the outer end of the gear shafts.
+
+## Step 22 (page 15)
+ADD gear16-4 94925 lightgray
+ADD axle3-1 4519 tan
+CONNECT gear16-4.axlehole1 -> axle3-1.axle1 LOCKED
+CONNECT axle3-1.axle2 -> beam7-2.hole?~ TURNS
+WHY Mounts a 16-tooth gear on a short tan axle that meshes with the previous gear and sits in the upright beam.
+
+## Step 23 (page 15)
+ADD lbeam-5 32526 yellow
+CONNECT lbeam-5.hole?~ -> beam7-2.hole?~ STIFF
+WHY Caps the gear sub-assembly with another yellow L-beam so the shafts are held at both ends and the unit can be dropped into the main frame.
