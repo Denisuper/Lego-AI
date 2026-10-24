@@ -1,1 +1,1 @@
-open('/home/workdir/artifacts/42114-volvo/training.jsonl').read()
+open('/home/workdir/artifacts/42114-volvo/training.jsonl').read() if False else '''
