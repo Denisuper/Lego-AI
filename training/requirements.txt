@@ -4,3 +4,4 @@ trl
 peft
 datasets
 accelerate
+qwen-vl-utils
