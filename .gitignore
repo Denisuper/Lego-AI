@@ -4,7 +4,10 @@ __pycache__/
 training/out/
 sets/*/booklet*.pdf
 sets/gearboxes/*/booklet*.pdf
+sets/differentials/*/booklet*.pdf
 !sets/8047/booklet.pdf
 !sets/42175/booklet.pdf
 !sets/42061/booklet*.pdf
 !sets/42116/booklet*.pdf
+!sets/differentials/MOC-266362/booklet.pdf
+!sets/differentials/MOC-226025/booklet.pdf
