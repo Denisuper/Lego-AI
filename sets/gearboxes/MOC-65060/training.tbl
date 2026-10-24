@@ -1,0 +1,174 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD frame-1 64178 lightgray
+ADD conn-1 39793 black
+WHY Starts with two 5x11 frames joined by a connector beam, the base of the gearbox.
+STEP 2
+ADD frame-2 64178 lightgray
+ADD conn-2 39793 black
+WHY Adds the second long frame on the other side, mirroring step 1.
+STEP 3
+ADD pin-1 2780 black
+ADD pin-2 2780 black
+WHY Pins the two side frames into place.
+STEP 4
+ADD pin-3 2780 black
+ADD pin-4 2780 black
+WHY Pins the remaining corners, locking the base box together.
+STEP 5
+ADD topframe-1 39794 black
+WHY Adds the 7x11 top frame over the base box.
+STEP 6
+ADD hub-1 18654 black
+WHY Pins the top frame to the base with a round connector.
+STEP 7
+ADD hub-2 22961 black
+WHY Starts a separate sub-assembly: a hub with one axle hole.
+STEP 8
+ADD pin-5 3673 lightgray
+WHY Adds a smooth pin into the hub sub-assembly.
+STEP 9
+ADD hub-3 22961 black
+ADD gear-1 6589 tan
+ADD gear-1b 6589 tan
+ADD gear-1c 6589 tan
+WHY Adds a second hub and three bevel gears to the clutch sub-assembly.
+STEP 10
+ADD pin-6 32556 tan
+ADD pin-7 32556 tan
+WHY Adds two long pins through the clutch hub.
+STEP 11
+ADD hub-4 32039 lightgray
+ADD pin-8 3673 lightgray
+WHY Adds a connector and a smooth pin to the clutch sub-assembly.
+STEP 12
+ADD hub-5 22961 black
+WHY Adds the last connector hub, finishing the clutch core.
+STEP 13
+ADD conn-3 32184 darkgray
+ADD conn-4 6536 darkgray
+WHY Starts a second sub-assembly: a perpendicular connector pair for the output shaft.
+STEP 14
+ADD pin-9 32002 tan
+WHY Adds a 3/4 pin into the connector pair.
+STEP 15
+WHY No new parts - joins the clutch core (steps 7-12) to the connector pair (step 13).
+STEP 16
+WHY No new parts - extends the joined sub-assembly's connection into the frame.
+STEP 17
+WHY No new parts - drops the clutch/connector sub-assembly into the main frame.
+STEP 18
+ADD axle-1 32073 yellow
+WHY Adds the first axle through the clutch assembly.
+STEP 19
+ADD axle-2 32073 yellow
+WHY Adds a second axle, extending the shaft the other way.
+STEP 20
+ADD gear-2 18946 red
+WHY Adds the first 16-tooth clutch gear onto the shaft.
+STEP 21
+ADD gear-3 18946 red
+ADD gear-4 18946 red
+WHY Adds the remaining two 16-tooth clutch gears, completing the one-way clutch stack.
+STEP 22
+ADD diffgear-1 6573 red
+WHY Adds the 24-16 tooth differential-style gear with the built-in yellow driving ring.
+STEP 23
+WHY No new parts - drops the finished gear stack into the main frame.
+STEP 24
+ADD axle-3 32073 yellow
+ADD axle-4 3706 black
+WHY Adds the input and output axles through the gear stack.
+STEP 25
+ADD arm-1 42003 lightgray
+WHY Starts a new lever sub-assembly: a perpendicular connector with two pin holes.
+STEP 26
+ADD ball-1 2736 lightgray
+ADD ball-2 2736 lightgray
+ADD pin-10 32556 tan
+WHY Adds a towball and a long pin to the lever arm.
+STEP 27
+ADD arm-2 42003 lightgray
+WHY Adds a second connector, mirroring step 25.
+STEP 28
+WHY No new parts - attaches the lever sub-assembly to the main frame.
+STEP 29
+ADD pin-11 6536 darkgray
+ADD latch-1 32013 red
+WHY Adds a pin and the angled connector that acts as the shift catch.
+STEP 30
+ADD pin-12 2780 black
+ADD axle-5 87083 darkgray
+WHY Adds a pin and a stopped axle locking the catch mechanism in place.
+STEP 31
+ADD conn-5 60483 orange
+WHY Adds an orange connector marking the shift position.
+STEP 32
+ADD hub-6 22961 black
+WHY Adds another hub to the shifting mechanism.
+STEP 33
+ADD pin-13 2780 black
+ADD pin-14 2780 black
+ADD pin-15 2780 black
+ADD pin-16 2780 black
+WHY Pins the whole gear cluster and shift mechanism firmly into the frame.
+STEP 34
+ADD gear-6 94925 lightgray
+ADD conn-6 42003 lightgray
+WHY Starts the output-shaft sub-assembly: a 16-tooth reinforced gear on a connector.
+STEP 35
+ADD axle-6 24316 reddishbrown
+ADD gear-7 94925 lightgray
+WHY Adds a stopped axle and a second reinforced gear.
+STEP 36
+ADD axle-7 4519 lightgray
+ADD hub-7 32039 lightgray
+WHY Extends the output shaft with another short axle and connector.
+STEP 37
+ADD axle-8 4519 lightgray
+WHY Extends the shaft further.
+STEP 38
+ADD pin-17 18654 black
+ADD bush-1 3713 red
+WHY Joins the output shaft to a connector hub partway along its length.
+STEP 39
+WHY No new parts - caps the output shaft against the existing connector.
+STEP 40
+WHY No new parts - drops the finished output shaft sub-assembly into the main frame.
+STEP 41
+ADD gear-8 94925 lightgray
+ADD gear-8b 94925 lightgray
+ADD gear-8c 94925 lightgray
+WHY Adds three more reinforced gears onto the output shaft.
+STEP 42
+ADD pin-18 18654 black
+ADD pin-19 32039 lightgray
+WHY Pins the output gear in place.
+STEP 43
+ADD axle-9 4519 lightgray
+ADD axle-10 4519 lightgray
+WHY Adds two more short axles, meshing the drive train.
+STEP 44
+ADD bush-2 32123b lightgray
+WHY Adds a half bush, finishing the gear train support.
+STEP 45
+ADD pin-20 59443 yellow
+ADD pulley-1 4185 lightgray
+WHY Adds the output pulley (wedge belt wheel) on its own connector.
+STEP 46
+ADD pin-21 32184 darkgray
+ADD gear-9 32270 black
+WHY Adds the 12-tooth double bevel gear that drives the pulley shaft.
+STEP 47
+ADD pin-22 59443 yellow
+ADD cap-1 35186 yellow
+WHY Caps the shaft with a driving ring extension, finishing the converter.
