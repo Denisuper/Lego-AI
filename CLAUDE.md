@@ -25,14 +25,10 @@ Severity levels: error (illegal join or dead mechanism, must fix), warning (plau
 ## How to add a set (the only workflow)
 1. Make `sets/<set>/` with the original `booklet.pdf` (commit it unedited; add `!sets/<set>/booklet.pdf` to .gitignore) and `parts_list.csv` (Rebrickable).
 2. Read the booklet pages directly. Do NOT crop pictures, do NOT write annotation.json, systems.json, mechanisms.json or booklet_map.csv.
-3. Write ONE file: `sets/<set>/steps.md`, one block per step (see 42175 for an example):
-```
-## Step 18 (page 18)
-ADD pump-beam-1 32278 darkgray
-CONNECT pump-pin-1.pin1 -> pump-beam-1.hole4 STIFF
-WHY one plain sentence: what this step builds and what it is for.
-```
-4. Check: every part in the parts list used exactly once by the end; every point exists in `catalog/connections.csv`.
+3. Write TWO files directly in the 42175 style — copy `sets/42175/training.tbl` header verbatim, swap set name:
+   - `sets/<set>/training.tbl` — plain text: the header comment block, then `STEP N` followed by that step's ADD, CONNECT, optional GROUP/END/ATTACH, and WHY lines.
+   - `sets/<set>/training.jsonl` — one JSON object per step: `{"set": "Set <set> - <title>", "step": "N", "messages": [...]}`. System prompt identical to 42175. User message has SET line, PARTS SO FAR (condensed to counts past 60 items), LAST STEPS (previous four steps in full), and the write-step prompt. Assistant message is the ADD/CONNECT/WHY block.
+4. Check: every part in the parts list used exactly once by the last step; every point exists in `catalog/connections.csv`; grep -c "TO WRITE" over both training files is 0.
 5. Rules for placing a join:
    - Look at the previous step to see what changed, and the next step: a later picture often shows the finished part from another side.
    - An arrow points at the exact hole it enters. Use it.
@@ -50,8 +46,7 @@ WHY one plain sentence: what this step builds and what it is for.
 
 ## Layout
 ```
-sets/<set>/steps.md            the whole set in plain steps (what you write)
-sets/<set>/training.tbl + .jsonl  the same set as training text; every file starts with the instructions the model follows
+sets/<set>/training.tbl + .jsonl  the whole set as training text; every file starts with the instructions the model follows
 sets/<set>/booklet.pdf         the original, unedited booklet
 sets/<set>/parts_list.csv      official parts list
 catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types, rules, failure modes)
@@ -59,38 +54,36 @@ tools/check_notation.py        two-stage checker: geometric legality + functiona
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
-Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also steps.md). 42061 and 42116 have steps.md, training.tbl and training.jsonl too.
+Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also keeps steps.md as a style fossil — new sets do not write it). 42061 and 42116 have steps.md, training.tbl and training.jsonl too. 42114 in progress: training.tbl + training.jsonl for steps 1-54, continuing from booklet page 37.
 NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (parts list also incomplete), 8049.
 
 ## Finishing a NOT STARTED set (prompt for agents)
-Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/steps.md first and copy its wording style. These sets have no step folders left (unconverted old-format work was deleted rather than carried forward) - read the booklet directly, per "How to add a set" above. Give an agent this prompt, one set at a time:
+Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/training.tbl first and copy its header and STEP format. These sets have no step folders left (unconverted old-format work was deleted rather than carried forward) - read the booklet directly, per "How to add a set" above. Give an agent this prompt, one set at a time:
 
 ```
-Add set <set>. Copy the layout and wording style of sets/42175/steps.md. Work only inside sets/<set>/.
+Add set <set>. Copy the layout and wording style of sets/42175/training.tbl. Work only inside sets/<set>/.
 
 MAKE (in this order)
-1. Write sets/<set>/steps.md: one block per step, in booklet order: read the booklet page directly (do not
-   crop pictures or write annotation.json), ADD and CONNECT lines for that step, GROUP/END/ATTACH for side
-   builds, plus ONE real WHY sentence per step.
-2. python training/export.py  ->  writes sets/<set>/training.tbl + training.jsonl from that steps.md, and
-   rebuilds training/data/train.jsonl + test.jsonl for every set that has one.
+1. Write sets/<set>/training.tbl and sets/<set>/training.jsonl directly from the booklet (do not
+   write steps.md, do not run export.py, do not crop pictures or write annotation.json).
+   One STEP block per step in booklet order: ADD and CONNECT lines, GROUP/END/ATTACH for side
+   builds, plus ONE real WHY sentence per step. jsonl: one object per step with set, step,
+   messages[system, user, assistant] per the 42175 schema.
+2. grep -c "TO WRITE" over both training files must be 0.
 
 CHECK (all must pass before moving on)
-- every part in parts_list.csv is used exactly once by the last step in steps.md.
-- every point in steps.md exists in catalog/connections.csv.
-- grep -c "TO WRITE" over steps.md and the set's training.tbl/training.jsonl is 0.
-- python tools/check_notation.py sets/<set>/steps.md exits 0 (no error-severity critiques in either stage).
+- every part in parts_list.csv is used exactly once by the last step.
+- every point in the training files exists in catalog/connections.csv.
+- python tools/check_notation.py sets/<set>/training.tbl exits 0 (no error-severity critiques in either stage).
 
-KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl. Delete model.mpd and
-booklet_map.csv once steps.md is done - they were only needed for the old per-step pipeline.
+KEEP: booklet.pdf (unedited), parts_list.csv, training.tbl, training.jsonl. Delete model.mpd and
+booklet_map.csv once the training files are done - they were only needed for the old per-step pipeline.
 
 THEN: move the set out of NOT STARTED in "Layout" and "Status" of CLAUDE.md. Commit only sets/<set>, plus CLAUDE.md and .gitignore for those two edits.
 Never delete before the checks pass. Never leave "TO WRITE" in a training file. Never force-push.
 ```
 NOT STARTED sets have no step folders: use "How to add a set" above instead.
-Don't use tools/build_set.py or write systems.json/mechanisms.json for a set's training files - training/export.py
-builds training.tbl/.jsonl straight from steps.md now, and the THINK/MECH/STATE/MOTION lines those used to produce
-were almost entirely restating ADD/CONNECT/WHY in prose. Dropped on purpose; don't bring them back.
+Don't use tools/build_set.py or write systems.json/mechanisms.json for a set's training files.
 
 ## Mechanisms (what the model must understand)
 A mechanism is a chain of parts that passes or changes motion. Every part in a build either belongs to one of these or holds the structure together. Full rules and failure modes: `catalog/mechanisms.json`.
@@ -117,16 +110,16 @@ A mechanism is a chain of parts that passes or changes motion. Every part in a b
 How to read a build: find the input (knob, crank, pump), follow the motion through the chain, name the output (what finally moves). A step is correct only if every part still turns or holds the way its mechanism needs (shaft turns in round holes, cross holes lock, gears sit at the right distance).
 
 ## Training (Qwen2.5-VL-7B)
-1. `python training/export.py` -> training/data/train.jsonl (+ test.jsonl, one whole set held out).
+1. Cat every sets/<set>/training.jsonl into training/data/train.jsonl (+ test.jsonl, one whole set held out).
 2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct` on a GPU with 24+ GB VRAM (or 4-bit quant on ~10 GB).
 3. Later: GRPO (TRL) with check_notation.py's two-stage critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above. Stage 1 filters; stage 2 scores survivors.
-export.py reads every sets/<set>/steps.md; it writes that set's own training.jsonl/training.tbl too. One whole set is held out for test.
 
-## Status (Oct 23, 2026)
+## Status (Oct 24, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
 - 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
 - 42061 and 42116 have steps.md, training.tbl and training.jsonl too.
-- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" / "Finishing a NOT STARTED set" above.
+- 42114 in progress: training.tbl + training.jsonl for steps 1-54 (booklet pages 6-43). Remaining steps 55-508 from pages 37-300 still to transcribe.
+- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" above.
 
 ## Saving (agents)
-Work only inside `sets/<set>/`. Commit only that folder , no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.
+Work only inside `sets/<set>/`. Commit only that folder, no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.

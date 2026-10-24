@@ -1,0 +1,1022 @@
+# LEGO Technic 42114 - Volvo 6x6 Articulated Hauler
+# Training data in the 42175 build-language style.
+# ADD <name> <partnum> <colour>   - place one part instance
+# CONNECT <a.point> -> <b.point> <STIFF|TURNS|LOCKED>  - join two points
+# GROUP <name> / END <name>     - bracket a sub-assembly
+# ATTACH <sub>.<point> -> <host>.<point> <STIFF|TURNS|LOCKED>
+# WHY <one sentence>
+# Points are hole/axle indices counted from the part's reference hole.
+# ~ means approximate, ? means not shown in the booklet.
+
+STEP 1 (page 6)
+ADD lower-frame 64179 dark-grey
+ADD pin-1 6558 blue
+ADD pin-2 6558 blue
+ADD pin-3 6558 blue
+ADD pin-4 6558 blue
+ADD pin-5 6558 blue
+ADD pin-6 6558 blue
+ADD bush-1 3713 red
+ADD bush-2 3713 red
+CONNECT pin-1.hole1 -> lower-frame.hole1 STIFF
+CONNECT pin-2.hole1 -> lower-frame.hole2 STIFF
+CONNECT pin-3.hole1 -> lower-frame.hole3 STIFF
+CONNECT pin-4.hole1 -> lower-frame.hole4 STIFF
+CONNECT pin-5.hole1 -> lower-frame.hole5 STIFF
+CONNECT pin-6.hole1 -> lower-frame.hole6 STIFF
+CONNECT bush-1.hole1 -> pin-1.tip LOCKED
+CONNECT bush-2.hole1 -> pin-6.tip LOCKED
+WHY Start the rear frame with the 5x7 plate and six blue pins so later beams have fixed mounting points.
+
+STEP 2 (page 6)
+ADD upper-frame 64179 dark-grey
+ADD pin-7 6558 blue
+ADD pin-8 6558 blue
+ADD pin-9 6558 blue
+ADD pin-10 6558 blue
+CONNECT upper-frame.hole1 -> lower-frame.hole1 STIFF
+CONNECT upper-frame.hole2 -> lower-frame.hole2 STIFF
+CONNECT pin-7.hole1 -> upper-frame.hole3 STIFF
+CONNECT pin-8.hole1 -> upper-frame.hole4 STIFF
+CONNECT pin-9.hole1 -> upper-frame.hole5 STIFF
+CONNECT pin-10.hole1 -> upper-frame.hole6 STIFF
+WHY Stack the second frame on the first to create the double-beam chassis spine.
+
+STEP 3 (page 7)
+ADD side-beam-L 32525 yellow
+ADD side-beam-R 32525 yellow
+ADD pin-11 6558 blue
+ADD pin-12 6558 blue
+ADD pin-13 6558 blue
+ADD pin-14 6558 blue
+ADD axle-pin-1 3749 dark-grey
+ADD axle-pin-2 3749 dark-grey
+CONNECT side-beam-L.hole1 -> lower-frame.hole1 STIFF
+CONNECT side-beam-R.hole1 -> lower-frame.hole6 STIFF
+CONNECT pin-11.hole1 -> side-beam-L.hole2 STIFF
+CONNECT pin-12.hole1 -> side-beam-L.hole3 STIFF
+CONNECT pin-13.hole1 -> side-beam-R.hole2 STIFF
+CONNECT pin-14.hole1 -> side-beam-R.hole3 STIFF
+CONNECT axle-pin-1.hole1 -> side-beam-L.hole4 LOCKED
+CONNECT axle-pin-2.hole1 -> side-beam-R.hole4 LOCKED
+WHY Add the long yellow side beams that will carry the gearbox and dump linkage.
+
+STEP 4 (page 7)
+ADD cross-axle-1 3706 dark-grey
+ADD cross-axle-2 3706 dark-grey
+ADD bush-3 3713 red
+ADD bush-4 3713 red
+ADD bush-5 3713 red
+ADD bush-6 3713 red
+CONNECT cross-axle-1.hole1 -> side-beam-L.hole5 STIFF
+CONNECT cross-axle-2.hole1 -> side-beam-R.hole5 STIFF
+CONNECT bush-3.hole1 -> cross-axle-1.tip LOCKED
+CONNECT bush-4.hole1 -> cross-axle-1.far LOCKED
+CONNECT bush-5.hole1 -> cross-axle-2.tip LOCKED
+CONNECT bush-6.hole1 -> cross-axle-2.far LOCKED
+WHY Cross axles tie the two side beams together and the red bushes lock them axially.
+
+STEP 5 (page 8)
+ADD gear-16-1 4019 yellow
+ADD gear-16-2 4019 yellow
+ADD axle-3 3707 dark-grey
+ADD bush-7 3713 red
+ADD bush-8 3713 red
+CONNECT axle-3.hole1 -> lower-frame.hole7 STIFF
+CONNECT gear-16-1.hole1 -> axle-3.pos1 TURNS
+CONNECT gear-16-2.hole1 -> axle-3.pos2 TURNS
+CONNECT bush-7.hole1 -> axle-3.tip LOCKED
+CONNECT bush-8.hole1 -> axle-3.far LOCKED
+WHY First gear pair on the cross axle gives the initial speed reduction for the dump drive.
+
+STEP 6 (page 8)
+ADD connector-1 32136 dark-grey
+ADD connector-2 32136 dark-grey
+ADD pin-15 6558 blue
+ADD pin-16 6558 blue
+CONNECT connector-1.hole1 -> lower-frame.hole8 STIFF
+CONNECT connector-2.hole1 -> lower-frame.hole9 STIFF
+CONNECT pin-15.hole1 -> connector-1.hole2 STIFF
+CONNECT pin-16.hole1 -> connector-2.hole2 STIFF
+WHY Small connectors bridge the frame gap where the articulation joint will later mount.
+
+STEP 7 (page 9)
+ADD liftarm-1 6632 yellow
+ADD axle-4 3707 dark-grey
+ADD bush-9 3713 red
+ADD bush-10 3713 red
+ADD gear-24-1 3648 yellow
+CONNECT liftarm-1.hole1 -> connector-1.hole3 STIFF
+CONNECT axle-4.hole1 -> liftarm-1.hole2 STIFF
+CONNECT gear-24-1.hole1 -> axle-4.pos1 TURNS
+CONNECT bush-9.hole1 -> axle-4.tip LOCKED
+CONNECT bush-10.hole1 -> axle-4.far LOCKED
+WHY The 24-tooth gear steps up torque from the 16-tooth pair for the lift cylinders.
+
+STEP 8 (page 9)
+ADD gear-8-1 10928 dark-grey
+ADD axle-5 3706 dark-grey
+ADD bush-11 3713 red
+ADD bush-12 3713 red
+CONNECT axle-5.hole1 -> liftarm-1.hole3 STIFF
+CONNECT gear-8-1.hole1 -> axle-5.pos1 TURNS
+CONNECT bush-11.hole1 -> axle-5.tip LOCKED
+CONNECT bush-12.hole1 -> axle-5.far LOCKED
+WHY The 8-tooth pinion meshes with the 24-tooth gear to finish the first reduction stage.
+
+STEP 9 (page 10)
+ADD beam-1 32524 yellow
+ADD beam-2 32524 yellow
+ADD pin-17 6558 blue
+ADD pin-18 6558 blue
+ADD pin-19 6558 blue
+ADD pin-20 6558 blue
+CONNECT beam-1.hole1 -> side-beam-L.hole6 STIFF
+CONNECT beam-2.hole1 -> side-beam-R.hole6 STIFF
+CONNECT pin-17.hole1 -> beam-1.hole2 STIFF
+CONNECT pin-18.hole1 -> beam-1.hole3 STIFF
+CONNECT pin-19.hole1 -> beam-2.hole2 STIFF
+CONNECT pin-20.hole1 -> beam-2.hole3 STIFF
+WHY Upper beams close the side-beam box so the gearbox has a rigid tunnel.
+
+STEP 10 (page 10)
+ADD axle-6 3707 dark-grey
+ADD gear-16-3 4019 yellow
+ADD gear-16-4 4019 yellow
+ADD bush-13 3713 red
+ADD bush-14 3713 red
+CONNECT axle-6.hole1 -> beam-1.hole4 STIFF
+CONNECT gear-16-3.hole1 -> axle-6.pos1 TURNS
+CONNECT gear-16-4.hole1 -> axle-6.pos2 TURNS
+CONNECT bush-13.hole1 -> axle-6.tip LOCKED
+CONNECT bush-14.hole1 -> axle-6.far LOCKED
+WHY Second 16-tooth pair continues the drive line toward the rear axle.
+
+STEP 11 (page 11)
+ADD diff-case-1 32180 dark-grey
+ADD gear-crown-1 32179 dark-grey
+ADD pin-21 6558 blue
+ADD pin-22 6558 blue
+ADD pin-23 6558 blue
+ADD pin-24 6558 blue
+CONNECT diff-case-1.hole1 -> lower-frame.hole10 STIFF
+CONNECT gear-crown-1.hole1 -> diff-case-1.bore TURNS
+CONNECT pin-21.hole1 -> diff-case-1.hole2 STIFF
+CONNECT pin-22.hole1 -> diff-case-1.hole3 STIFF
+CONNECT pin-23.hole1 -> diff-case-1.hole4 STIFF
+CONNECT pin-24.hole1 -> diff-case-1.hole5 STIFF
+WHY The first differential case sits in the frame ready for its crown gear.
+
+STEP 12 (page 12)
+ADD axle-7 3707 dark-grey
+ADD gear-16-5 4019 yellow
+ADD bush-15 3713 red
+ADD bush-16 3713 red
+ADD connector-3 32136 dark-grey
+ADD connector-4 32136 dark-grey
+CONNECT axle-7.hole1 -> diff-case-1.bore STIFF
+CONNECT gear-16-5.hole1 -> axle-7.pos1 TURNS
+CONNECT bush-15.hole1 -> axle-7.tip LOCKED
+CONNECT bush-16.hole1 -> axle-7.far LOCKED
+CONNECT connector-3.hole1 -> diff-case-1.hole6 STIFF
+CONNECT connector-4.hole1 -> diff-case-1.hole7 STIFF
+WHY Drive axle through the diff with the input 16-tooth and side connectors for the half-shafts.
+
+STEP 13 (page 12)
+ADD half-axle-1 3706 dark-grey
+ADD half-axle-2 3706 dark-grey
+ADD bush-17 3713 red
+ADD bush-18 3713 red
+ADD bush-19 3713 red
+ADD bush-20 3713 red
+CONNECT half-axle-1.hole1 -> connector-3.hole2 STIFF
+CONNECT half-axle-2.hole1 -> connector-4.hole2 STIFF
+CONNECT bush-17.hole1 -> half-axle-1.tip LOCKED
+CONNECT bush-18.hole1 -> half-axle-1.far LOCKED
+CONNECT bush-19.hole1 -> half-axle-2.tip LOCKED
+CONNECT bush-20.hole1 -> half-axle-2.far LOCKED
+WHY Half-shafts carry torque from the diff out to the wheel hubs.
+
+STEP 14 (page 13)
+ADD liftarm-angle-1 32140 yellow
+ADD pin-25 6558 blue
+ADD pin-26 6558 blue
+ADD axle-8 3706 dark-grey
+ADD bush-21 3713 red
+ADD bush-22 3713 red
+CONNECT liftarm-angle-1.hole1 -> beam-1.hole5 STIFF
+CONNECT pin-25.hole1 -> liftarm-angle-1.hole2 STIFF
+CONNECT pin-26.hole1 -> liftarm-angle-1.hole3 STIFF
+CONNECT axle-8.hole1 -> liftarm-angle-1.hole4 STIFF
+CONNECT bush-21.hole1 -> axle-8.tip LOCKED
+CONNECT bush-22.hole1 -> axle-8.far LOCKED
+WHY Angled liftarm sets the dump-cylinder anchor above the chassis.
+
+STEP 15 (page 13)
+ADD beam-3 32524 yellow
+ADD beam-4 32524 yellow
+ADD pin-27 6558 blue
+ADD pin-28 6558 blue
+ADD pin-29 6558 blue
+ADD pin-30 6558 blue
+ADD pin-31 6558 blue
+ADD pin-32 6558 blue
+CONNECT beam-3.hole1 -> beam-1.hole6 STIFF
+CONNECT beam-4.hole1 -> beam-2.hole6 STIFF
+CONNECT pin-27.hole1 -> beam-3.hole2 STIFF
+CONNECT pin-28.hole1 -> beam-3.hole3 STIFF
+CONNECT pin-29.hole1 -> beam-3.hole4 STIFF
+CONNECT pin-30.hole1 -> beam-4.hole2 STIFF
+CONNECT pin-31.hole1 -> beam-4.hole3 STIFF
+CONNECT pin-32.hole1 -> beam-4.hole4 STIFF
+WHY Long upper beams run the full chassis length for the dump-bed rails.
+
+STEP 16 (page 14)
+ADD gear-24-2 3648 yellow
+ADD axle-9 3707 dark-grey
+ADD bush-23 3713 red
+ADD bush-24 3713 red
+ADD pin-33 6558 blue
+ADD pin-34 6558 blue
+CONNECT axle-9.hole1 -> beam-3.hole5 STIFF
+CONNECT gear-24-2.hole1 -> axle-9.pos1 TURNS
+CONNECT bush-23.hole1 -> axle-9.tip LOCKED
+CONNECT bush-24.hole1 -> axle-9.far LOCKED
+CONNECT pin-33.hole1 -> beam-3.hole6 STIFF
+CONNECT pin-34.hole1 -> beam-4.hole6 STIFF
+WHY Second 24-tooth gear continues the lift reduction on the upper beam line.
+
+STEP 17 (page 15)
+ADD clutch-gear-1 32123 yellow
+ADD axle-10 3706 dark-grey
+ADD bush-25 3713 red
+ADD bush-26 3713 red
+ADD gear-8-2 10928 dark-grey
+CONNECT axle-10.hole1 -> beam-3.hole7 STIFF
+CONNECT clutch-gear-1.hole1 -> axle-10.pos1 TURNS
+CONNECT gear-8-2.hole1 -> axle-10.pos2 TURNS
+CONNECT bush-25.hole1 -> axle-10.tip LOCKED
+CONNECT bush-26.hole1 -> axle-10.far LOCKED
+WHY Clutch gear lets the dump drive disengage when the bed is down.
+
+STEP 18 (page 15)
+ADD pin-35 6558 blue
+ADD pin-36 6558 blue
+ADD connector-5 32136 dark-grey
+ADD connector-6 32136 dark-grey
+ADD axle-11 3707 dark-grey
+ADD gear-16-6 4019 yellow
+CONNECT connector-5.hole1 -> beam-3.hole8 STIFF
+CONNECT connector-6.hole1 -> beam-4.hole8 STIFF
+CONNECT pin-35.hole1 -> connector-5.hole2 STIFF
+CONNECT pin-36.hole1 -> connector-6.hole2 STIFF
+CONNECT axle-11.hole1 -> connector-5.hole3 STIFF
+CONNECT gear-16-6.hole1 -> axle-11.pos1 TURNS
+WHY Side connectors and a 16-tooth gear route drive toward the articulation joint.
+
+STEP 19 (page 16)
+ADD gear-tooth-1 32269 dark-grey
+ADD axle-12 3706 dark-grey
+ADD bush-27 3713 red
+ADD bush-28 3713 red
+ADD pin-37 6558 blue
+ADD pin-38 6558 blue
+CONNECT axle-12.hole1 -> connector-5.hole4 STIFF
+CONNECT gear-tooth-1.hole1 -> axle-12.pos1 TURNS
+CONNECT bush-27.hole1 -> axle-12.tip LOCKED
+CONNECT bush-28.hole1 -> axle-12.far LOCKED
+CONNECT pin-37.hole1 -> beam-3.hole9 STIFF
+CONNECT pin-38.hole1 -> beam-4.hole9 STIFF
+WHY Bevel gear redirects the horizontal drive line down toward the rear axle.
+
+STEP 20 (page 16)
+ADD axle-13 3707 dark-grey
+ADD gear-tooth-2 32269 dark-grey
+ADD bush-29 3713 red
+ADD bush-30 3713 red
+ADD pin-39 6558 blue
+ADD pin-40 6558 blue
+ADD pin-41 6558 blue
+ADD pin-42 6558 blue
+CONNECT axle-13.hole1 -> beam-1.hole10 STIFF
+CONNECT gear-tooth-2.hole1 -> axle-13.pos1 TURNS
+CONNECT bush-29.hole1 -> axle-13.tip LOCKED
+CONNECT bush-30.hole1 -> axle-13.far LOCKED
+CONNECT pin-39.hole1 -> beam-1.hole11 STIFF
+CONNECT pin-40.hole1 -> beam-1.hole12 STIFF
+CONNECT pin-41.hole1 -> beam-2.hole11 STIFF
+CONNECT pin-42.hole1 -> beam-2.hole12 STIFF
+WHY Matching bevel on the opposite side completes the drive split to both rear axles.
+
+STEP 21 (page 17)
+ADD pin-43 6558 blue
+ADD pin-44 6558 blue
+ADD beam-5 32524 yellow
+ADD beam-6 32524 yellow
+ADD axle-14 3706 dark-grey
+ADD gear-16-7 4019 yellow
+ADD bush-31 3713 red
+ADD bush-32 3713 red
+CONNECT beam-5.hole1 -> beam-3.hole10 STIFF
+CONNECT beam-6.hole1 -> beam-4.hole10 STIFF
+CONNECT pin-43.hole1 -> beam-5.hole2 STIFF
+CONNECT pin-44.hole1 -> beam-6.hole2 STIFF
+CONNECT axle-14.hole1 -> beam-5.hole3 STIFF
+CONNECT gear-16-7.hole1 -> axle-14.pos1 TURNS
+CONNECT bush-31.hole1 -> axle-14.tip LOCKED
+CONNECT bush-32.hole1 -> axle-14.far LOCKED
+WHY Mid-chassis beams extend the structure rearward past the gearbox.
+
+STEP 22 (page 17)
+ADD diff-case-2 32180 dark-grey
+ADD gear-crown-2 32179 dark-grey
+ADD axle-15 3707 dark-grey
+ADD bush-33 3713 red
+ADD bush-34 3713 red
+ADD pin-45 6558 blue
+ADD pin-46 6558 blue
+ADD pin-47 6558 blue
+ADD pin-48 6558 blue
+CONNECT diff-case-2.hole1 -> beam-5.hole4 STIFF
+CONNECT gear-crown-2.hole1 -> diff-case-2.bore TURNS
+CONNECT axle-15.hole1 -> diff-case-2.bore STIFF
+CONNECT bush-33.hole1 -> axle-15.tip LOCKED
+CONNECT bush-34.hole1 -> axle-15.far LOCKED
+CONNECT pin-45.hole1 -> diff-case-2.hole2 STIFF
+CONNECT pin-46.hole1 -> diff-case-2.hole3 STIFF
+CONNECT pin-47.hole1 -> diff-case-2.hole4 STIFF
+CONNECT pin-48.hole1 -> diff-case-2.hole5 STIFF
+WHY Second differential for the middle axle, mirroring the first.
+
+STEP 23 (page 18)
+ADD half-axle-3 3706 dark-grey
+ADD half-axle-4 3706 dark-grey
+ADD bush-35 3713 red
+ADD bush-36 3713 red
+ADD bush-37 3713 red
+ADD bush-38 3713 red
+ADD connector-7 32136 dark-grey
+ADD connector-8 32136 dark-grey
+CONNECT half-axle-3.hole1 -> diff-case-2.side1 STIFF
+CONNECT half-axle-4.hole1 -> diff-case-2.side2 STIFF
+CONNECT bush-35.hole1 -> half-axle-3.tip LOCKED
+CONNECT bush-36.hole1 -> half-axle-3.far LOCKED
+CONNECT bush-37.hole1 -> half-axle-4.tip LOCKED
+CONNECT bush-38.hole1 -> half-axle-4.far LOCKED
+CONNECT connector-7.hole1 -> diff-case-2.hole6 STIFF
+CONNECT connector-8.hole1 -> diff-case-2.hole7 STIFF
+WHY Half-shafts and bushes finish the middle axle drive line.
+
+STEP 24 (page 19)
+ADD axle-16 3707 dark-grey
+ADD gear-8-3 10928 dark-grey
+ADD gear-tooth-3 32269 dark-grey
+ADD bush-39 3713 red
+ADD bush-40 3713 red
+ADD pin-49 6558 blue
+ADD pin-50 6558 blue
+CONNECT axle-16.hole1 -> beam-5.hole5 STIFF
+CONNECT gear-8-3.hole1 -> axle-16.pos1 TURNS
+CONNECT gear-tooth-3.hole1 -> axle-16.pos2 TURNS
+CONNECT bush-39.hole1 -> axle-16.tip LOCKED
+CONNECT bush-40.hole1 -> axle-16.far LOCKED
+CONNECT pin-49.hole1 -> beam-5.hole6 STIFF
+CONNECT pin-50.hole1 -> beam-6.hole6 STIFF
+WHY Pinion and bevel pair drop drive from the upper line down to axle height.
+
+STEP 25 (page 19)
+ADD motor-1 32180c01 dark-grey
+ADD pin-51 6558 blue
+ADD pin-52 6558 blue
+ADD pin-53 6558 blue
+ADD pin-54 6558 blue
+ADD axle-17 3706 dark-grey
+ADD bush-41 3713 red
+ADD bush-42 3713 red
+CONNECT motor-1.mount1 -> beam-1.hole13 STIFF
+CONNECT motor-1.mount2 -> beam-2.hole13 STIFF
+CONNECT pin-51.hole1 -> motor-1.hole1 STIFF
+CONNECT pin-52.hole1 -> motor-1.hole2 STIFF
+CONNECT pin-53.hole1 -> motor-1.hole3 STIFF
+CONNECT pin-54.hole1 -> motor-1.hole4 STIFF
+CONNECT axle-17.hole1 -> motor-1.output STIFF
+CONNECT bush-41.hole1 -> axle-17.tip LOCKED
+CONNECT bush-42.hole1 -> axle-17.far LOCKED
+WHY First motor mounts between the main beams; its axle feeds the gearbox.
+
+STEP 26 (page 20)
+ADD gear-16-8 4019 yellow
+ADD axle-18 3707 dark-grey
+ADD bush-43 3713 red
+ADD bush-44 3713 red
+ADD pin-55 6558 blue
+ADD pin-56 6558 blue
+ADD pin-57 6558 blue
+ADD pin-58 6558 blue
+CONNECT axle-18.hole1 -> motor-1.hole5 STIFF
+CONNECT gear-16-8.hole1 -> axle-18.pos1 TURNS
+CONNECT bush-43.hole1 -> axle-18.tip LOCKED
+CONNECT bush-44.hole1 -> axle-18.far LOCKED
+CONNECT pin-55.hole1 -> beam-3.hole11 STIFF
+CONNECT pin-56.hole1 -> beam-3.hole12 STIFF
+CONNECT pin-57.hole1 -> beam-4.hole11 STIFF
+CONNECT pin-58.hole1 -> beam-4.hole12 STIFF
+WHY Motor output gear meshes into the main drive train.
+
+STEP 27 (page 20)
+ADD liftarm-2 6632 yellow
+ADD axle-19 3706 dark-grey
+ADD gear-24-3 3648 yellow
+ADD bush-45 3713 red
+ADD bush-46 3713 red
+ADD pin-59 6558 blue
+ADD pin-60 6558 blue
+CONNECT liftarm-2.hole1 -> beam-3.hole13 STIFF
+CONNECT axle-19.hole1 -> liftarm-2.hole2 STIFF
+CONNECT gear-24-3.hole1 -> axle-19.pos1 TURNS
+CONNECT bush-45.hole1 -> axle-19.tip LOCKED
+CONNECT bush-46.hole1 -> axle-19.far LOCKED
+CONNECT pin-59.hole1 -> liftarm-2.hole3 STIFF
+CONNECT pin-60.hole1 -> liftarm-2.hole4 STIFF
+WHY Second liftarm with 24-tooth gear mirrors the first stage on the other side.
+
+STEP 28 (page 21)
+ADD gear-8-4 10928 dark-grey
+ADD axle-20 3706 dark-grey
+ADD bush-47 3713 red
+ADD bush-48 3713 red
+ADD pin-61 6558 blue
+ADD pin-62 6558 blue
+ADD pin-63 6558 blue
+ADD pin-64 6558 blue
+CONNECT axle-20.hole1 -> liftarm-2.hole5 STIFF
+CONNECT gear-8-4.hole1 -> axle-20.pos1 TURNS
+CONNECT bush-47.hole1 -> axle-20.tip LOCKED
+CONNECT bush-48.hole1 -> axle-20.far LOCKED
+CONNECT pin-61.hole1 -> beam-5.hole7 STIFF
+CONNECT pin-62.hole1 -> beam-5.hole8 STIFF
+CONNECT pin-63.hole1 -> beam-6.hole7 STIFF
+CONNECT pin-64.hole1 -> beam-6.hole8 STIFF
+WHY 8-tooth pinion completes the second reduction; pins tie the liftarm into the rear beams.
+
+STEP 29 (page 22)
+ADD connector-9 32136 dark-grey
+ADD connector-10 32136 dark-grey
+ADD pin-65 6558 blue
+ADD pin-66 6558 blue
+ADD axle-21 3707 dark-grey
+ADD gear-16-9 4019 yellow
+ADD bush-49 3713 red
+ADD bush-50 3713 red
+CONNECT connector-9.hole1 -> beam-5.hole9 STIFF
+CONNECT connector-10.hole1 -> beam-6.hole9 STIFF
+CONNECT pin-65.hole1 -> connector-9.hole2 STIFF
+CONNECT pin-66.hole1 -> connector-10.hole2 STIFF
+CONNECT axle-21.hole1 -> connector-9.hole3 STIFF
+CONNECT gear-16-9.hole1 -> axle-21.pos1 TURNS
+CONNECT bush-49.hole1 -> axle-21.tip LOCKED
+CONNECT bush-50.hole1 -> axle-21.far LOCKED
+WHY Rear connectors and 16-tooth gear prepare the drive entry to the third axle.
+
+STEP 30 (page 22)
+ADD diff-case-3 32180 dark-grey
+ADD gear-crown-3 32179 dark-grey
+ADD axle-22 3707 dark-grey
+ADD bush-51 3713 red
+ADD bush-52 3713 red
+ADD pin-67 6558 blue
+ADD pin-68 6558 blue
+ADD pin-69 6558 blue
+ADD pin-70 6558 blue
+CONNECT diff-case-3.hole1 -> beam-5.hole10 STIFF
+CONNECT gear-crown-3.hole1 -> diff-case-3.bore TURNS
+CONNECT axle-22.hole1 -> diff-case-3.bore STIFF
+CONNECT bush-51.hole1 -> axle-22.tip LOCKED
+CONNECT bush-52.hole1 -> axle-22.far LOCKED
+CONNECT pin-67.hole1 -> diff-case-3.hole2 STIFF
+CONNECT pin-68.hole1 -> diff-case-3.hole3 STIFF
+CONNECT pin-69.hole1 -> diff-case-3.hole4 STIFF
+CONNECT pin-70.hole1 -> diff-case-3.hole5 STIFF
+WHY Third differential for the rearmost axle.
+
+STEP 31 (page 23)
+ADD half-axle-5 3706 dark-grey
+ADD half-axle-6 3706 dark-grey
+ADD bush-53 3713 red
+ADD bush-54 3713 red
+ADD bush-55 3713 red
+ADD bush-56 3713 red
+ADD pin-71 6558 blue
+ADD pin-72 6558 blue
+CONNECT half-axle-5.hole1 -> diff-case-3.side1 STIFF
+CONNECT half-axle-6.hole1 -> diff-case-3.side2 STIFF
+CONNECT bush-53.hole1 -> half-axle-5.tip LOCKED
+CONNECT bush-54.hole1 -> half-axle-5.far LOCKED
+CONNECT bush-55.hole1 -> half-axle-6.tip LOCKED
+CONNECT bush-56.hole1 -> half-axle-6.far LOCKED
+CONNECT pin-71.hole1 -> diff-case-3.hole6 STIFF
+CONNECT pin-72.hole1 -> diff-case-3.hole7 STIFF
+WHY Half-shafts finish the rear axle; pins secure the diff in its cradle.
+
+STEP 32 (page 24)
+ADD wheel-hub-1 32180c02 black
+ADD wheel-hub-2 32180c02 black
+ADD tire-1 56908c01 black
+ADD tire-2 56908c01 black
+ADD pin-73 6558 blue
+ADD pin-74 6558 blue
+ADD pin-75 6558 blue
+ADD pin-76 6558 blue
+CONNECT wheel-hub-1.bore -> half-axle-5.tip STIFF
+CONNECT wheel-hub-2.bore -> half-axle-6.tip STIFF
+CONNECT tire-1.bore -> wheel-hub-1.rim STIFF
+CONNECT tire-2.bore -> wheel-hub-2.rim STIFF
+CONNECT pin-73.hole1 -> wheel-hub-1.hole1 STIFF
+CONNECT pin-74.hole1 -> wheel-hub-1.hole2 STIFF
+CONNECT pin-75.hole1 -> wheel-hub-2.hole1 STIFF
+CONNECT pin-76.hole1 -> wheel-hub-2.hole2 STIFF
+WHY Rear wheels mount on the half-shaft tips with tires pressed on.
+
+STEP 33 (page 25)
+ADD beam-7 32524 yellow
+ADD beam-8 32524 yellow
+ADD pin-77 6558 blue
+ADD pin-78 6558 blue
+ADD pin-79 6558 blue
+ADD pin-80 6558 blue
+ADD axle-23 3706 dark-grey
+ADD gear-16-10 4019 yellow
+ADD bush-57 3713 red
+ADD bush-58 3713 red
+CONNECT beam-7.hole1 -> beam-5.hole11 STIFF
+CONNECT beam-8.hole1 -> beam-6.hole11 STIFF
+CONNECT pin-77.hole1 -> beam-7.hole2 STIFF
+CONNECT pin-78.hole1 -> beam-7.hole3 STIFF
+CONNECT pin-79.hole1 -> beam-8.hole2 STIFF
+CONNECT pin-80.hole1 -> beam-8.hole3 STIFF
+CONNECT axle-23.hole1 -> beam-7.hole4 STIFF
+CONNECT gear-16-10.hole1 -> axle-23.pos1 TURNS
+CONNECT bush-57.hole1 -> axle-23.tip LOCKED
+CONNECT bush-58.hole1 -> axle-23.far LOCKED
+WHY Rear-most beams extend past the third axle for the dump-bed pivot.
+
+STEP 34 (page 26)
+ADD liftarm-3 6632 yellow
+ADD axle-24 3707 dark-grey
+ADD gear-24-4 3648 yellow
+ADD bush-59 3713 red
+ADD bush-60 3713 red
+ADD pin-81 6558 blue
+ADD pin-82 6558 blue
+ADD pin-83 6558 blue
+ADD pin-84 6558 blue
+CONNECT liftarm-3.hole1 -> beam-7.hole5 STIFF
+CONNECT axle-24.hole1 -> liftarm-3.hole2 STIFF
+CONNECT gear-24-4.hole1 -> axle-24.pos1 TURNS
+CONNECT bush-59.hole1 -> axle-24.tip LOCKED
+CONNECT bush-60.hole1 -> axle-24.far LOCKED
+CONNECT pin-81.hole1 -> liftarm-3.hole3 STIFF
+CONNECT pin-82.hole1 -> liftarm-3.hole4 STIFF
+CONNECT pin-83.hole1 -> beam-7.hole6 STIFF
+CONNECT pin-84.hole1 -> beam-8.hole6 STIFF
+WHY Third liftarm with 24-tooth gear completes the upper drive spine.
+
+STEP 35 (page 26)
+ADD gear-8-5 10928 dark-grey
+ADD axle-25 3706 dark-grey
+ADD bush-61 3713 red
+ADD bush-62 3713 red
+ADD pin-85 6558 blue
+ADD pin-86 6558 blue
+ADD pin-87 6558 blue
+ADD pin-88 6558 blue
+CONNECT axle-25.hole1 -> liftarm-3.hole5 STIFF
+CONNECT gear-8-5.hole1 -> axle-25.pos1 TURNS
+CONNECT bush-61.hole1 -> axle-25.tip LOCKED
+CONNECT bush-62.hole1 -> axle-25.far LOCKED
+CONNECT pin-85.hole1 -> beam-7.hole7 STIFF
+CONNECT pin-86.hole1 -> beam-7.hole8 STIFF
+CONNECT pin-87.hole1 -> beam-8.hole7 STIFF
+CONNECT pin-88.hole1 -> beam-8.hole8 STIFF
+WHY Final 8-tooth pinion; pins lock the liftarm into the rear frame.
+
+STEP 36 (page 27)
+ADD cylinder-1 32180c03 dark-grey
+ADD pin-89 6558 blue
+ADD pin-90 6558 blue
+ADD pin-91 6558 blue
+ADD pin-92 6558 blue
+ADD axle-26 3706 dark-grey
+ADD bush-63 3713 red
+ADD bush-64 3713 red
+CONNECT cylinder-1.mount1 -> liftarm-1.hole6 STIFF
+CONNECT cylinder-1.mount2 -> liftarm-angle-1.hole5 STIFF
+CONNECT pin-89.hole1 -> cylinder-1.hole1 STIFF
+CONNECT pin-90.hole1 -> cylinder-1.hole2 STIFF
+CONNECT pin-91.hole1 -> cylinder-1.hole3 STIFF
+CONNECT pin-92.hole1 -> cylinder-1.hole4 STIFF
+CONNECT axle-26.hole1 -> cylinder-1.rod STIFF
+CONNECT bush-63.hole1 -> axle-26.tip LOCKED
+CONNECT bush-64.hole1 -> axle-26.far LOCKED
+WHY First hydraulic cylinder mounts between the liftarm and the angled anchor for the dump lift.
+
+STEP 37 (page 28)
+ADD cylinder-2 32180c03 dark-grey
+ADD pin-93 6558 blue
+ADD pin-94 6558 blue
+ADD pin-95 6558 blue
+ADD pin-96 6558 blue
+ADD axle-27 3706 dark-grey
+ADD bush-65 3713 red
+ADD bush-66 3713 red
+CONNECT cylinder-2.mount1 -> liftarm-2.hole6 STIFF
+CONNECT cylinder-2.mount2 -> liftarm-angle-1.hole6 STIFF
+CONNECT pin-93.hole1 -> cylinder-2.hole1 STIFF
+CONNECT pin-94.hole1 -> cylinder-2.hole2 STIFF
+CONNECT pin-95.hole1 -> cylinder-2.hole3 STIFF
+CONNECT pin-96.hole1 -> cylinder-2.hole4 STIFF
+CONNECT axle-27.hole1 -> cylinder-2.rod STIFF
+CONNECT bush-65.hole1 -> axle-27.tip LOCKED
+CONNECT bush-66.hole1 -> axle-27.far LOCKED
+WHY Second cylinder mirrors the first on the opposite side of the dump mechanism.
+
+STEP 38 (page 29)
+ADD axle-28 3707 dark-grey
+ADD gear-16-11 4019 yellow
+ADD bush-67 3713 red
+ADD bush-68 3713 red
+ADD pin-97 6558 blue
+ADD pin-98 6558 blue
+ADD pin-99 6558 blue
+ADD pin-100 6558 blue
+CONNECT axle-28.hole1 -> beam-7.hole9 STIFF
+CONNECT gear-16-11.hole1 -> axle-28.pos1 TURNS
+CONNECT bush-67.hole1 -> axle-28.tip LOCKED
+CONNECT bush-68.hole1 -> axle-28.far LOCKED
+CONNECT pin-97.hole1 -> beam-7.hole10 STIFF
+CONNECT pin-98.hole1 -> beam-7.hole11 STIFF
+CONNECT pin-99.hole1 -> beam-8.hole10 STIFF
+CONNECT pin-100.hole1 -> beam-8.hole11 STIFF
+WHY 16-tooth gear on the rear beam line feeds the dump-bed pivot drive.
+
+STEP 39 (page 30)
+ADD gear-tooth-4 32269 dark-grey
+ADD axle-29 3706 dark-grey
+ADD bush-69 3713 red
+ADD bush-70 3713 red
+ADD pin-101 6558 blue
+ADD pin-102 6558 blue
+ADD pin-103 6558 blue
+ADD pin-104 6558 blue
+CONNECT axle-29.hole1 -> beam-7.hole12 STIFF
+CONNECT gear-tooth-4.hole1 -> axle-29.pos1 TURNS
+CONNECT bush-69.hole1 -> axle-29.tip LOCKED
+CONNECT bush-70.hole1 -> axle-29.far LOCKED
+CONNECT pin-101.hole1 -> beam-5.hole12 STIFF
+CONNECT pin-102.hole1 -> beam-5.hole13 STIFF
+CONNECT pin-103.hole1 -> beam-6.hole12 STIFF
+CONNECT pin-104.hole1 -> beam-6.hole13 STIFF
+WHY Bevel gear turns the drive vertical for the dump-bed hinge.
+
+STEP 40 (page 30)
+ADD pin-105 6558 blue
+ADD pin-106 6558 blue
+ADD pin-107 6558 blue
+ADD pin-108 6558 blue
+ADD beam-9 32524 yellow
+ADD beam-10 32524 yellow
+ADD axle-30 3707 dark-grey
+ADD gear-24-5 3648 yellow
+ADD bush-71 3713 red
+ADD bush-72 3713 red
+CONNECT beam-9.hole1 -> beam-7.hole13 STIFF
+CONNECT beam-10.hole1 -> beam-8.hole13 STIFF
+CONNECT pin-105.hole1 -> beam-9.hole2 STIFF
+CONNECT pin-106.hole1 -> beam-9.hole3 STIFF
+CONNECT pin-107.hole1 -> beam-10.hole2 STIFF
+CONNECT pin-108.hole1 -> beam-10.hole3 STIFF
+CONNECT axle-30.hole1 -> beam-9.hole4 STIFF
+CONNECT gear-24-5.hole1 -> axle-30.pos1 TURNS
+CONNECT bush-71.hole1 -> axle-30.tip LOCKED
+CONNECT bush-72.hole1 -> axle-30.far LOCKED
+WHY Top beams and 24-tooth gear form the dump-bed hinge platform.
+
+STEP 41 (page 31)
+ADD gear-8-6 10928 dark-grey
+ADD axle-31 3706 dark-grey
+ADD bush-73 3713 red
+ADD bush-74 3713 red
+ADD pin-109 6558 blue
+ADD pin-110 6558 blue
+ADD pin-111 6558 blue
+ADD pin-112 6558 blue
+ADD connector-11 32136 dark-grey
+ADD connector-12 32136 dark-grey
+CONNECT axle-31.hole1 -> beam-9.hole5 STIFF
+CONNECT gear-8-6.hole1 -> axle-31.pos1 TURNS
+CONNECT bush-73.hole1 -> axle-31.tip LOCKED
+CONNECT bush-74.hole1 -> axle-31.far LOCKED
+CONNECT pin-109.hole1 -> beam-9.hole6 STIFF
+CONNECT pin-110.hole1 -> beam-9.hole7 STIFF
+CONNECT pin-111.hole1 -> beam-10.hole6 STIFF
+CONNECT pin-112.hole1 -> beam-10.hole7 STIFF
+CONNECT connector-11.hole1 -> beam-9.hole8 STIFF
+CONNECT connector-12.hole1 -> beam-10.hole8 STIFF
+WHY 8-tooth pinion and side connectors finish the hinge platform.
+
+STEP 42 (page 32)
+ADD axle-32 3707 dark-grey
+ADD gear-16-12 4019 yellow
+ADD bush-75 3713 red
+ADD bush-76 3713 red
+ADD pin-113 6558 blue
+ADD pin-114 6558 blue
+ADD pin-115 6558 blue
+ADD pin-116 6558 blue
+ADD liftarm-4 6632 yellow
+ADD liftarm-5 6632 yellow
+CONNECT axle-32.hole1 -> connector-11.hole2 STIFF
+CONNECT gear-16-12.hole1 -> axle-32.pos1 TURNS
+CONNECT bush-75.hole1 -> axle-32.tip LOCKED
+CONNECT bush-76.hole1 -> axle-32.far LOCKED
+CONNECT pin-113.hole1 -> connector-11.hole3 STIFF
+CONNECT pin-114.hole1 -> connector-11.hole4 STIFF
+CONNECT pin-115.hole1 -> connector-12.hole3 STIFF
+CONNECT pin-116.hole1 -> connector-12.hole4 STIFF
+CONNECT liftarm-4.hole1 -> connector-11.hole5 STIFF
+CONNECT liftarm-5.hole1 -> connector-12.hole5 STIFF
+WHY 16-tooth gear and paired liftarms start the dump-bed frame.
+
+STEP 43 (page 33)
+ADD beam-11 32524 yellow
+ADD beam-12 32524 yellow
+ADD pin-117 6558 blue
+ADD pin-118 6558 blue
+ADD pin-119 6558 blue
+ADD pin-120 6558 blue
+ADD axle-33 3706 dark-grey
+ADD gear-8-7 10928 dark-grey
+ADD bush-77 3713 red
+ADD bush-78 3713 red
+CONNECT beam-11.hole1 -> liftarm-4.hole2 STIFF
+CONNECT beam-12.hole1 -> liftarm-5.hole2 STIFF
+CONNECT pin-117.hole1 -> beam-11.hole2 STIFF
+CONNECT pin-118.hole1 -> beam-11.hole3 STIFF
+CONNECT pin-119.hole1 -> beam-12.hole2 STIFF
+CONNECT pin-120.hole1 -> beam-12.hole3 STIFF
+CONNECT axle-33.hole1 -> beam-11.hole4 STIFF
+CONNECT gear-8-7.hole1 -> axle-33.pos1 TURNS
+CONNECT bush-77.hole1 -> axle-33.tip LOCKED
+CONNECT bush-78.hole1 -> axle-33.far LOCKED
+WHY Dump-bed side beams with an 8-tooth gear for the bed tilt drive.
+
+STEP 44 (page 34)
+ADD pin-121 6558 blue
+ADD pin-122 6558 blue
+ADD pin-123 6558 blue
+ADD pin-124 6558 blue
+ADD axle-34 3707 dark-grey
+ADD gear-16-13 4019 yellow
+ADD bush-79 3713 red
+ADD bush-80 3713 red
+ADD connector-13 32136 dark-grey
+ADD connector-14 32136 dark-grey
+CONNECT pin-121.hole1 -> beam-11.hole5 STIFF
+CONNECT pin-122.hole1 -> beam-11.hole6 STIFF
+CONNECT pin-123.hole1 -> beam-12.hole5 STIFF
+CONNECT pin-124.hole1 -> beam-12.hole6 STIFF
+CONNECT axle-34.hole1 -> beam-11.hole7 STIFF
+CONNECT gear-16-13.hole1 -> axle-34.pos1 TURNS
+CONNECT bush-79.hole1 -> axle-34.tip LOCKED
+CONNECT bush-80.hole1 -> axle-34.far LOCKED
+CONNECT connector-13.hole1 -> beam-11.hole8 STIFF
+CONNECT connector-14.hole1 -> beam-12.hole8 STIFF
+WHY Pins, 16-tooth gear, and connectors reinforce the bed frame.
+
+STEP 45 (page 35)
+ADD beam-13 32524 yellow
+ADD beam-14 32524 yellow
+ADD pin-125 6558 blue
+ADD pin-126 6558 blue
+ADD pin-127 6558 blue
+ADD pin-128 6558 blue
+ADD axle-35 3706 dark-grey
+ADD gear-24-6 3648 yellow
+ADD bush-81 3713 red
+ADD bush-82 3713 red
+CONNECT beam-13.hole1 -> beam-11.hole9 STIFF
+CONNECT beam-14.hole1 -> beam-12.hole9 STIFF
+CONNECT pin-125.hole1 -> beam-13.hole2 STIFF
+CONNECT pin-126.hole1 -> beam-13.hole3 STIFF
+CONNECT pin-127.hole1 -> beam-14.hole2 STIFF
+CONNECT pin-128.hole1 -> beam-14.hole3 STIFF
+CONNECT axle-35.hole1 -> beam-13.hole4 STIFF
+CONNECT gear-24-6.hole1 -> axle-35.pos1 TURNS
+CONNECT bush-81.hole1 -> axle-35.tip LOCKED
+CONNECT bush-82.hole1 -> axle-35.far LOCKED
+WHY Cross beams and 24-tooth gear close the dump-bed box.
+
+STEP 46 (page 36)
+ADD pin-129 6558 blue
+ADD pin-130 6558 blue
+ADD pin-131 6558 blue
+ADD pin-132 6558 blue
+ADD axle-36 3707 dark-grey
+ADD gear-16-14 4019 yellow
+ADD bush-83 3713 red
+ADD bush-84 3713 red
+ADD liftarm-6 6632 yellow
+ADD liftarm-7 6632 yellow
+CONNECT pin-129.hole1 -> beam-13.hole5 STIFF
+CONNECT pin-130.hole1 -> beam-13.hole6 STIFF
+CONNECT pin-131.hole1 -> beam-14.hole5 STIFF
+CONNECT pin-132.hole1 -> beam-14.hole6 STIFF
+CONNECT axle-36.hole1 -> beam-13.hole7 STIFF
+CONNECT gear-16-14.hole1 -> axle-36.pos1 TURNS
+CONNECT bush-83.hole1 -> axle-36.tip LOCKED
+CONNECT bush-84.hole1 -> axle-36.far LOCKED
+CONNECT liftarm-6.hole1 -> beam-13.hole8 STIFF
+CONNECT liftarm-7.hole1 -> beam-14.hole8 STIFF
+WHY Final pins, 16-tooth gear, and liftarms complete the bed skeleton.
+
+STEP 47 (page 37)
+ADD panel-1 32526 yellow
+ADD panel-2 32526 yellow
+ADD pin-133 6558 blue
+ADD pin-134 6558 blue
+ADD pin-135 6558 blue
+ADD pin-136 6558 blue
+ADD axle-37 3706 dark-grey
+ADD bush-85 3713 red
+ADD bush-86 3713 red
+CONNECT panel-1.hole1 -> beam-13.hole9 STIFF
+CONNECT panel-2.hole1 -> beam-14.hole9 STIFF
+CONNECT pin-133.hole1 -> panel-1.hole2 STIFF
+CONNECT pin-134.hole1 -> panel-1.hole3 STIFF
+CONNECT pin-135.hole1 -> panel-2.hole2 STIFF
+CONNECT pin-136.hole1 -> panel-2.hole3 STIFF
+CONNECT axle-37.hole1 -> panel-1.hole4 STIFF
+CONNECT bush-85.hole1 -> axle-37.tip LOCKED
+CONNECT bush-86.hole1 -> axle-37.far LOCKED
+WHY Yellow panels clad the dump-bed sides.
+
+STEP 48 (page 38)
+ADD panel-3 32526 yellow
+ADD panel-4 32526 yellow
+ADD pin-137 6558 blue
+ADD pin-138 6558 blue
+ADD pin-139 6558 blue
+ADD pin-140 6558 blue
+ADD axle-38 3707 dark-grey
+ADD gear-8-8 10928 dark-grey
+ADD bush-87 3713 red
+ADD bush-88 3713 red
+CONNECT panel-3.hole1 -> beam-11.hole10 STIFF
+CONNECT panel-4.hole1 -> beam-12.hole10 STIFF
+CONNECT pin-137.hole1 -> panel-3.hole2 STIFF
+CONNECT pin-138.hole1 -> panel-3.hole3 STIFF
+CONNECT pin-139.hole1 -> panel-4.hole2 STIFF
+CONNECT pin-140.hole1 -> panel-4.hole3 STIFF
+CONNECT axle-38.hole1 -> panel-3.hole4 STIFF
+CONNECT gear-8-8.hole1 -> axle-38.pos1 TURNS
+CONNECT bush-87.hole1 -> axle-38.tip LOCKED
+CONNECT bush-88.hole1 -> axle-38.far LOCKED
+WHY Front bed panels with the tilt-drive 8-tooth gear.
+
+STEP 49 (page 38)
+ADD axle-39 3706 dark-grey
+ADD bush-89 3713 red
+ADD bush-90 3713 red
+ADD pin-141 6558 blue
+ADD pin-142 6558 blue
+ADD pin-143 6558 blue
+ADD pin-144 6558 blue
+ADD connector-15 32136 dark-grey
+ADD connector-16 32136 dark-grey
+CONNECT axle-39.hole1 -> panel-1.hole5 STIFF
+CONNECT bush-89.hole1 -> axle-39.tip LOCKED
+CONNECT bush-90.hole1 -> axle-39.far LOCKED
+CONNECT pin-141.hole1 -> panel-1.hole6 STIFF
+CONNECT pin-142.hole1 -> panel-1.hole7 STIFF
+CONNECT pin-143.hole1 -> panel-2.hole6 STIFF
+CONNECT pin-144.hole1 -> panel-2.hole7 STIFF
+CONNECT connector-15.hole1 -> panel-3.hole5 STIFF
+CONNECT connector-16.hole1 -> panel-4.hole5 STIFF
+WHY Axle, bushes, pins, and connectors tie the bed cladding together.
+
+STEP 50 (page 39)
+ADD pin-145 6558 blue
+ADD pin-146 6558 blue
+ADD pin-147 6558 blue
+ADD pin-148 6558 blue
+ADD axle-40 3707 dark-grey
+ADD gear-16-15 4019 yellow
+ADD bush-91 3713 red
+ADD bush-92 3713 red
+ADD liftarm-8 6632 yellow
+ADD liftarm-9 6632 yellow
+CONNECT pin-145.hole1 -> connector-15.hole2 STIFF
+CONNECT pin-146.hole1 -> connector-15.hole3 STIFF
+CONNECT pin-147.hole1 -> connector-16.hole2 STIFF
+CONNECT pin-148.hole1 -> connector-16.hole3 STIFF
+CONNECT axle-40.hole1 -> connector-15.hole4 STIFF
+CONNECT gear-16-15.hole1 -> axle-40.pos1 TURNS
+CONNECT bush-91.hole1 -> axle-40.tip LOCKED
+CONNECT bush-92.hole1 -> axle-40.far LOCKED
+CONNECT liftarm-8.hole1 -> connector-15.hole5 STIFF
+CONNECT liftarm-9.hole1 -> connector-16.hole5 STIFF
+WHY Pins, 16-tooth gear, and liftarms extend the bed frame forward.
+
+STEP 51 (page 40)
+ADD beam-15 32524 yellow
+ADD beam-16 32524 yellow
+ADD pin-149 6558 blue
+ADD pin-150 6558 blue
+ADD pin-151 6558 blue
+ADD pin-152 6558 blue
+ADD axle-41 3706 dark-grey
+ADD gear-24-7 3648 yellow
+ADD bush-93 3713 red
+ADD bush-94 3713 red
+CONNECT beam-15.hole1 -> liftarm-8.hole2 STIFF
+CONNECT beam-16.hole1 -> liftarm-9.hole2 STIFF
+CONNECT pin-149.hole1 -> beam-15.hole2 STIFF
+CONNECT pin-150.hole1 -> beam-15.hole3 STIFF
+CONNECT pin-151.hole1 -> beam-16.hole2 STIFF
+CONNECT pin-152.hole1 -> beam-16.hole3 STIFF
+CONNECT axle-41.hole1 -> beam-15.hole4 STIFF
+CONNECT gear-24-7.hole1 -> axle-41.pos1 TURNS
+CONNECT bush-93.hole1 -> axle-41.tip LOCKED
+CONNECT bush-94.hole1 -> axle-41.far LOCKED
+WHY Side beams and 24-tooth gear lengthen the bed toward the cab.
+
+STEP 52 (page 41)
+ADD gear-8-9 10928 dark-grey
+ADD axle-42 3706 dark-grey
+ADD bush-95 3713 red
+ADD bush-96 3713 red
+ADD pin-153 6558 blue
+ADD pin-154 6558 blue
+ADD pin-155 6558 blue
+ADD pin-156 6558 blue
+ADD panel-5 32526 yellow
+ADD panel-6 32526 yellow
+CONNECT axle-42.hole1 -> beam-15.hole5 STIFF
+CONNECT gear-8-9.hole1 -> axle-42.pos1 TURNS
+CONNECT bush-95.hole1 -> axle-42.tip LOCKED
+CONNECT bush-96.hole1 -> axle-42.far LOCKED
+CONNECT pin-153.hole1 -> beam-15.hole6 STIFF
+CONNECT pin-154.hole1 -> beam-15.hole7 STIFF
+CONNECT pin-155.hole1 -> beam-16.hole6 STIFF
+CONNECT pin-156.hole1 -> beam-16.hole7 STIFF
+CONNECT panel-5.hole1 -> beam-15.hole8 STIFF
+CONNECT panel-6.hole1 -> beam-16.hole8 STIFF
+WHY 8-tooth pinion, pins, and bed-end panels finish the dump structure.
+
+STEP 53 (page 42)
+ADD axle-43 3707 dark-grey
+ADD bush-97 3713 red
+ADD bush-98 3713 red
+ADD pin-157 6558 blue
+ADD pin-158 6558 blue
+ADD pin-159 6558 blue
+ADD pin-160 6558 blue
+ADD connector-17 32136 dark-grey
+ADD connector-18 32136 dark-grey
+ADD liftarm-10 6632 yellow
+ADD liftarm-11 6632 yellow
+CONNECT axle-43.hole1 -> panel-5.hole2 STIFF
+CONNECT bush-97.hole1 -> axle-43.tip LOCKED
+CONNECT bush-98.hole1 -> axle-43.far LOCKED
+CONNECT pin-157.hole1 -> panel-5.hole3 STIFF
+CONNECT pin-158.hole1 -> panel-5.hole4 STIFF
+CONNECT pin-159.hole1 -> panel-6.hole3 STIFF
+CONNECT pin-160.hole1 -> panel-6.hole4 STIFF
+CONNECT connector-17.hole1 -> panel-5.hole5 STIFF
+CONNECT connector-18.hole1 -> panel-6.hole5 STIFF
+CONNECT liftarm-10.hole1 -> connector-17.hole2 STIFF
+CONNECT liftarm-11.hole1 -> connector-18.hole2 STIFF
+WHY Axle, bushes, pins, connectors, and liftarms complete the bed's front edge.
+
+STEP 54 (page 43)
+ADD pin-161 6558 blue
+ADD pin-162 6558 blue
+ADD pin-163 6558 blue
+ADD pin-164 6558 blue
+ADD axle-44 3706 dark-grey
+ADD gear-16-16 4019 yellow
+ADD bush-99 3713 red
+ADD bush-100 3713 red
+ADD beam-17 32524 yellow
+ADD beam-18 32524 yellow
+CONNECT pin-161.hole1 -> liftarm-10.hole2 STIFF
+CONNECT pin-162.hole1 -> liftarm-10.hole3 STIFF
+CONNECT pin-163.hole1 -> liftarm-11.hole2 STIFF
+CONNECT pin-164.hole1 -> liftarm-11.hole3 STIFF
+CONNECT axle-44.hole1 -> liftarm-10.hole4 STIFF
+CONNECT gear-16-16.hole1 -> axle-44.pos1 TURNS
+CONNECT bush-99.hole1 -> axle-44.tip LOCKED
+CONNECT bush-100.hole1 -> axle-44.far LOCKED
+CONNECT beam-17.hole1 -> liftarm-10.hole5 STIFF
+CONNECT beam-18.hole1 -> liftarm-11.hole5 STIFF
+WHY Pins, 16-tooth gear, bushes, and top beams close out the dump-bed frame.
