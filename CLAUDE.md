@@ -1,9 +1,24 @@
 # Lego AI - project guide
 
 ## What this project is
-An AI made only for LEGO Technic. Real instruction booklets are turned into step-by-step build text. A Qwen model (Apache 2.0, start with Qwen2.5-1.5B/3B-Instruct) is fine-tuned on it with LoRA, then improved with GRPO using our checkers as the score.
+An AI made only for LEGO Technic. Real instruction booklets are turned into step-by-step build text. A vision-language model reads booklet pages and parts lists directly, is fine-tuned with LoRA, then improved with GRPO where the reward is not a single number but a structured critique: pass/fail plus plain-language reasons for every failure. The model learns both what is wrong and why.
 
 Owner: Dennis. Plain language, no jargon, straight to the point. Save tokens.
+
+## How everything works (end to end)
+
+1. **Input**: a booklet.pdf page image plus the set's parts_list.csv. The model sees the picture; it does not see cropped annotations or JSON sidecars.
+2. **Output**: one build-language block per step (ADD, CONNECT, WHY lines — see "The build language" below). The WHY line is the model's reasoning: one real sentence grounded in the picture and the previous/next steps. There is no separate "think" instruction; reasoning is learned from seeing WHY lines in training examples.
+3. **Check**: tools/check_notation.py validates every join — the point exists in catalog/connections.csv, the two parts fit, the connection word (LOCKED/TURNS/STIFF) is legal for that pair.
+4. **Reward (non-scalar)**: instead of one float, the checker returns a list of critique objects. Each has a severity (error/warning), a code, the exact line it failed on, and a one-sentence explanation a human could act on — e.g. "CONNECT pump-pin-1.pin1 -> pump-beam-1.hole9: hole9 does not exist on 32278; nearest valid holes are 4 and 5". GRPO trains on these: the scalar component is mean reward across critiques, but the language component is fed back as additional context so the model sees *why* a join failed, not just that it did. See "Reward format" below.
+5. **Loop**: generate a candidate step block, score it, feed critiques back, regenerate. Repeat until clean or a step budget is hit.
+
+## Reward format
+check_notation.py emits JSONL, one object per finding:
+```json
+{"severity": "error", "code": "POINT_MISSING", "line": 12, "part": "pump-beam-1", "point": "hole9", "message": "hole9 does not exist on 32278; valid holes are 1-8"}
+```
+Severity levels: error (illegal join, must fix), warning (plausible but unverified, e.g. a `~` estimate), info (style nits). GRPO's reward = -1 per error, -0.25 per warning, 0 for clean. The critique texts are also concatenated into the GRPO prompt prefix on the next attempt so the model conditions on its own mistakes. This is process supervision: the signal is per-failure and verbal, not one end-of-sequence number.
 
 ## How to add a set (the only workflow)
 1. Make `sets/<set>/` with the original `booklet.pdf` (commit it unedited; add `!sets/<set>/booklet.pdf` to .gitignore) and `parts_list.csv` (Rebrickable).
@@ -38,7 +53,7 @@ sets/<set>/training.tbl + .jsonl  the same set as training text; every file star
 sets/<set>/booklet.pdf         the original, unedited booklet
 sets/<set>/parts_list.csv      official parts list
 catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types)
-tools/check_notation.py        checks every join (point exists, the two fit, word is right)
+tools/check_notation.py        checks every join and emits the structured critique JSONL above
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
@@ -62,6 +77,7 @@ CHECK (all must pass before moving on)
 - every part in parts_list.csv is used exactly once by the last step in steps.md.
 - every point in steps.md exists in catalog/connections.csv.
 - grep -c "TO WRITE" over steps.md and the set's training.tbl/training.jsonl is 0.
+- python tools/check_notation.py sets/<set>/steps.md exits 0 (no error-severity critiques).
 
 KEEP: booklet.pdf (unedited), parts_list.csv, steps.md, training.tbl, training.jsonl. Delete model.mpd and
 booklet_map.csv once steps.md is done - they were only needed for the old per-step pipeline.
@@ -98,10 +114,10 @@ A mechanism is a chain of parts that passes or changes motion. Every part in a b
 
 How to read a build: find the input (knob, crank, pump), follow the motion through the chain, name the output (what finally moves). A step is correct only if every part still turns or holds the way its mechanism needs (shaft turns in round holes, cross holes lock, gears sit at the right distance).
 
-## Training (Qwen)
+## Training (Qwen2.5-VL-7B)
 1. `python training/export.py` -> training/data/train.jsonl (+ test.jsonl, one whole set held out).
-2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-1.5B-Instruct` on a GPU (24 GB).
-3. Later: GRPO (TRL) with check_notation.py as the reward.
+2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct` on a GPU with 24+ GB VRAM (or 4-bit quant on ~10 GB).
+3. Later: GRPO (TRL) with check_notation.py's structured critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above.
 export.py reads every sets/<set>/steps.md; it writes that set's own training.jsonl/training.tbl too. One whole set is held out for test.
 
 ## Status (Oct 23, 2026)
