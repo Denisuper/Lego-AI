@@ -386,3 +386,157 @@ CONNECT pin-18.pin1 -> bush-11.hole1~ STIFF
 CONNECT connector-5.hole1 -> axle3-8.axle1 LOCKED
 CONNECT axle3-9.axle1 -> connector-5.hole2 LOCKED
 WHY Builds a short orange-crowned shaft with a purple angle connector that will later link to the motor or an intermediate drive.
+
+## Step 43 (page 32)
+ADD axle5-4 15462 lightgray
+ADD axle3-10 4519 yellow
+ADD axle3-11 4519 yellow
+CONNECT axle5-4.axle1 -> frame-?.hole?~ TURNS
+CONNECT axle3-10.axle1 -> connector-5.hole?~ LOCKED
+CONNECT axle3-11.axle1 -> gear24-2.axlehole?~ LOCKED
+WHY Extends the orange crown shaft and adds a longer axle that will carry drive further into the gearbox.
+
+## Step 44 (page 33)
+ADD gear24-3 3650a lightgray
+ADD gear16-16 94925 lightgray
+ADD axle3-12 4519 yellow
+CONNECT gear24-3.axlehole1 -> axle3-12.axle1 LOCKED
+CONNECT gear16-16.axlehole1 -> axle3-12.axle2 LOCKED
+WHY Builds a free-spinning gear pair (24-tooth + 16-tooth) that will later mesh with the main train.
+
+## Step 45 (page 33)
+CONNECT axle3-12.axle3 -> lbeam-6.hole?~ TURNS
+WHY Mounts the free gear pair onto the side carrier so it can transfer rotation.
+
+## Step 46 (page 33)
+ADD redpin-3 32054 red
+ADD bush-12 3713 lightgray
+CONNECT redpin-3.pin1 -> lbeam-6.hole?~ STIFF
+CONNECT bush-12.axlehole1 -> redpin-3.axle1 LOCKED
+WHY Adds a red axle-pin with bush on the side carrier to give a free axle end for later attachment.
+
+## Step 47 (page 33)
+ADD lbeam-7 32526 yellow
+CONNECT lbeam-7.hole?~ -> redpin-3.pin2 STIFF
+WHY Caps the side carrier with another yellow L-beam so the free gear pair is fully supported.
+
+## Step 48 (page 34)
+ADD redpin-4 32054 red
+ADD bush-13 3713 lightgray
+CONNECT redpin-4.pin1 -> lbeam-7.hole?~ STIFF
+CONNECT bush-13.axlehole1 -> redpin-4.axle1 LOCKED
+WHY Adds another red axle-pin and bush on the opposite side of the new L-beam.
+
+## Step 49 (page 34)
+CONNECT lbeam-7.hole?~ -> frame-?.hole?~ STIFF
+WHY Attaches the completed side gear carrier to the main gearbox frame (rotate and seat as shown).
+
+## Step 50 (page 34)
+ADD gear16c-5 18946 red
+ADD gear16c-6 18946 red
+ADD gear16c-7 18946 red
+ADD bush-14 3713 lightgray
+CONNECT gear16c-5.axlehole1 -> axle8-1.axle?~ LOCKED
+CONNECT gear16c-6.axlehole1 -> axle9-1.axle?~ LOCKED
+CONNECT gear16c-7.axlehole1 -> axle9-2.axle?~ LOCKED
+CONNECT bush-14.axlehole1 -> axle8-1.axle?~ LOCKED
+WHY Adds three more red clutch gears and a bush on the long output shafts so they can selectively engage drive.
+
+## Step 51 (page 35)
+ADD frame-5 64179 darkgray
+ADD axpin-22 43093 blue
+ADD axpin-23 43093 blue
+CONNECT axpin-22.pin1 -> frame-5.hole?~ STIFF
+CONNECT axpin-23.pin1 -> frame-5.hole?~ STIFF
+WHY Starts a new 5x7 frame that will become the motor mount / second stage housing.
+
+## Step 52 (page 35)
+ADD plate-2 60484 yellow
+CONNECT plate-2.hole?~ -> axpin-22.axle1 LOCKED
+CONNECT plate-2.hole?~ -> axpin-23.axle1 LOCKED
+WHY Puts a yellow 2x4 plate into the centre of the new frame, locked by the axle-pins.
+
+## Step 53 (page 35)
+ADD redpin-5 32054 red
+ADD redpin-6 32054 red
+ADD bush-15 3713 lightgray
+ADD bush-16 3713 lightgray
+ADD connector-6 6536 black
+ADD connector-7 6536 black
+CONNECT redpin-5.pin1 -> frame-5.hole?~ STIFF
+CONNECT redpin-6.pin1 -> frame-5.hole?~ STIFF
+CONNECT bush-15.axlehole1 -> redpin-5.axle1 LOCKED
+CONNECT bush-16.axlehole1 -> redpin-6.axle1 LOCKED
+CONNECT connector-6.hole1 -> frame-5.hole?~ STIFF
+CONNECT connector-7.hole1 -> frame-5.hole?~ STIFF
+WHY Adds red axle-pins with bushes and two perpendicular connectors on the new frame for later shaft support.
+
+## Step 54 (page 36)
+ADD beam11-4 32525 yellow
+ADD pin-19 2780 black
+ADD pin-20 2780 black
+ADD pin-21 2780 black
+ADD pin-22 2780 black
+ADD pin-23 2780 black
+ADD pin-24 2780 black
+ADD connector-8 6536 black
+ADD bush-17 3713 lightgray
+ADD bush-18 3713 lightgray
+CONNECT pin-19.pin1 -> beam11-4.hole?~ STIFF
+CONNECT pin-20.pin1 -> beam11-4.hole?~ STIFF
+CONNECT pin-21.pin1 -> beam11-4.hole?~ STIFF
+CONNECT pin-22.pin1 -> beam11-4.hole?~ STIFF
+CONNECT pin-23.pin1 -> beam11-4.hole?~ STIFF
+CONNECT pin-24.pin1 -> beam11-4.hole?~ STIFF
+CONNECT connector-8.hole1 -> beam11-4.hole?~ STIFF
+CONNECT bush-17.axlehole1 -> pin-?.axle1 LOCKED
+CONNECT bush-18.axlehole1 -> pin-?.axle1 LOCKED
+WHY Builds a long yellow 11-hole beam with six pins and a connector that will later hold the motor drive gears.
+
+## Step 55 (page 37)
+ADD axle5-5 15462 reddishbrown
+ADD axle5-6 15462 reddishbrown
+ADD gear16c-8 18946 red
+ADD gear16-17 94925 lightgray
+ADD axpin-24 43093 blue
+CONNECT axle5-5.axle1 -> beam11-4.hole?~ TURNS
+CONNECT axle5-6.axle1 -> beam11-4.hole?~ TURNS
+CONNECT gear16c-8.axlehole1 -> axle5-5.axle2 LOCKED
+CONNECT gear16-17.axlehole1 -> axle5-6.axle2 LOCKED
+CONNECT axpin-24.pin1 -> beam11-4.hole?~ STIFF
+WHY Adds two 5.5 axles with a clutch gear and a plain 16-tooth gear into the long beam, ready to mesh with the motor.
+
+## Step 56 (page 38)
+ADD axle7-1 44294 yellow
+ADD axle6-1 3706 red
+ADD gear16-18 94925 lightgray
+ADD gear16-19 94925 lightgray
+CONNECT axle7-1.axle1 -> beam11-4.hole?~ TURNS
+CONNECT axle6-1.axle1 -> axle7-1.axle2 LOCKED
+CONNECT gear16-18.axlehole1 -> axle6-1.axle2 LOCKED
+CONNECT gear16-19.axlehole1 -> axle6-1.axle3 LOCKED
+WHY Builds a longer compound shaft (7L yellow + 6L red) with two 16-tooth gears that will carry drive from the motor into the gearbox.
+
+## Step 57 (page 39)
+ADD bush-19 3713 lightgray
+ADD axpin-25 43093 blue
+CONNECT bush-19.axlehole1 -> axle6-1.axle?~ LOCKED
+CONNECT axpin-25.pin1 -> beam11-4.hole?~ STIFF
+WHY Caps the long shaft with a bush and adds one more axle-pin for stability.
+
+## Step 58 (page 39)
+ADD beam11-5 32525 yellow
+CONNECT beam11-5.hole?~ -> pin-?.pin2 STIFF
+WHY Adds a second long yellow 11-hole beam parallel to the first, forming a sandwich that holds the motor gears.
+
+## Step 59 (page 39)
+ADD bush-20 3713 lightgray
+ADD axle3-13 4519 tan
+CONNECT bush-20.axlehole1 -> axle5-5.axle?~ LOCKED
+CONNECT axle3-13.axle1 -> beam11-5.hole?~ TURNS
+WHY Caps another free axle and inserts a short tan axle through the new beam.
+
+## Step 60 (page 40)
+CONNECT beam11-4.hole?~ -> frame-5.hole?~ STIFF
+CONNECT beam11-5.hole?~ -> frame-5.hole?~ STIFF
+WHY Attaches the completed motor-drive beam sandwich onto the new 5x7 frame (arrow shows seating direction).
