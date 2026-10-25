@@ -2617,3 +2617,158 @@ CONNECT cc-clip-2.hole1~ -> h-apin-1.axle1~ STIFF
 WHY A blue pin and two white slotted clips hold the cables beside the new beam so they stay clear of moving parts.
 STEP 300
 WHY Turns the white clip so its slot grips the cable, as the circled arrow shows.
+STEP 301
+GROUP bu
+ADD bu-beam9-1 40490 black
+ADD bu-pin-1 61332 black
+ADD bu-pin-2 61332 black
+ADD bu-pin-3 61332 black
+ADD bu-pin-4 61332 black
+CONNECT bu-pin-1.pin1 -> bu-beam9-1.hole1~ STIFF
+CONNECT bu-pin-2.pin1 -> bu-beam9-1.hole2~ STIFF
+CONNECT bu-pin-3.pin1 -> bu-beam9-1.hole7~ STIFF
+CONNECT bu-pin-4.pin1 -> bu-beam9-1.hole9~ STIFF
+WHY Starts the front bumper with a black 9-beam and four black pins along its top.
+STEP 302
+ADD bu-lblue-1 42924 blue
+ADD bu-lblue-2 42924 blue
+ADD bu-gpin-1 65304 lightgray
+ADD bu-gpin-2 65304 lightgray
+CONNECT bu-gpin-1.pin1 -> bu-beam9-1.hole4~ STIFF
+CONNECT bu-gpin-2.pin1 -> bu-beam9-1.hole6~ STIFF
+CONNECT bu-lblue-1.axle1? -> bu-gpin-1.pin2 STIFF
+CONNECT bu-lblue-2.axle1? -> bu-gpin-2.pin2 STIFF
+WHY Two long grey pins each with a blue pin on top go on the 9-beam as posts for the bumper's upper parts.
+STEP 303
+ADD bu-pin-5 61332 black
+ADD bu-pin-6 61332 black
+ADD bu-tbeam-1 60484 black
+ADD bu-tbeam-2 60484 black
+CONNECT bu-pin-5.pin1 -> bu-tbeam-1.hole1~ STIFF
+CONNECT bu-pin-6.pin1 -> bu-tbeam-2.hole1~ STIFF
+CONNECT bu-tbeam-1.hole2~ -> bu-pin-1.pin2 STIFF
+CONNECT bu-tbeam-2.hole2~ -> bu-pin-4.pin2 STIFF
+WHY A black T-beam with a pin goes on each end of the bumper beam to make the bumper corners.
+STEP 304
+ADD bu-beam5-1 32316 black
+ADD bu-beam5-2 32316 black
+ADD bu-bpin-1 43093 blue
+ADD bu-bpin-2 43093 blue
+CONNECT bu-bpin-1.pin1 -> bu-beam5-1.hole1~ STIFF
+CONNECT bu-bpin-2.pin1 -> bu-beam5-2.hole1~ STIFF
+CONNECT bu-beam5-1.hole3~ -> bu-pin-5.pin2 STIFF
+CONNECT bu-beam5-2.hole3~ -> bu-pin-6.pin2 STIFF
+WHY A black 5-beam with a blue pin at each end sticks out sideways from the T-beams as the bumper wings.
+STEP 305
+ADD bu-beam9-2 40490 black
+ADD bu-apin-1 18651 black
+CONNECT bu-apin-1.pin1 -> bu-beam9-2.hole5~ STIFF
+CONNECT bu-beam9-2.hole2~ -> bu-lblue-1.pin2~ STIFF
+CONNECT bu-beam9-2.hole8~ -> bu-lblue-2.pin2~ STIFF
+WHY A second black 9-beam goes on top of the grey and blue posts with a black axle pin through the middle, doubling the bumper's thickness.
+STEP 306
+ADD bu-pin-7 61332 black
+ADD bu-pin-8 61332 black
+ADD bu-beam2-1 60483 lightgray
+CONNECT bu-pin-7.pin1 -> bu-beam9-1.hole3~ STIFF
+CONNECT bu-pin-8.pin1 -> bu-beam9-1.hole8~ STIFF
+CONNECT bu-beam2-1.hole1~ -> bu-pin-7.pin2 STIFF
+WHY Two black pins and a light grey 2-beam on the lower bumper beam make a mount for the lamp.
+STEP 307
+GROUP bv
+ADD bv-lbeam-1 32526 black
+ADD bv-bpin-1 43093 blue
+ADD bv-bpin-2 43093 blue
+ADD bv-pin-1 61332 black
+ADD bv-gpin-1 65304 lightgray
+CONNECT bv-bpin-1.pin1 -> bv-lbeam-1.hole1~ STIFF
+CONNECT bv-bpin-2.pin1 -> bv-lbeam-1.hole5~ STIFF
+CONNECT bv-pin-1.pin1 -> bv-lbeam-1.hole3~ STIFF
+CONNECT bv-gpin-1.pin1 -> bv-pin-1.pin2 STIFF
+END
+ATTACH bv
+CONNECT bv-lbeam-1.hole2~ -> bu-beam5-1.hole5~ STIFF
+WHY Builds a black L-beam with two blue pins, a black pin and a grey pin in three small steps and fixes it on the left end of the bumper.
+STEP 308
+GROUP bw
+ADD bw-beam3-1 6632 black
+ADD bw-tbeam-1 60484 black
+ADD bw-ring-1 18654 black
+ADD bw-pin-1 61332 black
+ADD bw-pin-2 61332 black
+ADD bw-pin-3 61332 black
+CONNECT bw-pin-1.pin1 -> bw-beam3-1.hole1~ STIFF
+CONNECT bw-pin-2.pin1 -> bw-beam3-1.hole2~ STIFF
+CONNECT bw-pin-3.pin1 -> bw-beam3-1.hole3~ STIFF
+CONNECT bw-tbeam-1.hole1~ -> bw-pin-1.pin2 STIFF
+END
+ATTACH bw
+CONNECT bw-ring-1.hole1 -> bv-gpin-1.pin2~ TURNS
+CONNECT bw-tbeam-1.hole3~ -> bu-beam9-2.hole9~ STIFF
+WHY Builds a small black beam with three pins and a T-beam and fixes it beside the left wing, with a round connector as a guide.
+STEP 309
+ADD bu-pin-9 61332 black
+ADD bu-pin-10 61332 black
+ADD bu-beam2-2 60483 lightgray
+CONNECT bu-pin-9.pin1 -> bu-beam9-2.hole1~ STIFF
+CONNECT bu-pin-10.pin1 -> bu-beam9-2.hole3~ STIFF
+CONNECT bu-beam2-2.hole1~ -> bu-pin-9.pin2 STIFF
+WHY Two pins and a second light 2-beam on the other end of the bumper make the matching lamp mount.
+STEP 310
+GROUP bx
+ADD bx-lbeam-1 32526 black
+ADD bx-bpin-1 43093 blue
+ADD bx-bpin-2 43093 blue
+ADD bx-pin-1 61332 black
+ADD bx-gpin-1 65304 lightgray
+CONNECT bx-bpin-1.pin1 -> bx-lbeam-1.hole1~ STIFF
+CONNECT bx-bpin-2.pin1 -> bx-lbeam-1.hole5~ STIFF
+CONNECT bx-pin-1.pin1 -> bx-lbeam-1.hole3~ STIFF
+CONNECT bx-gpin-1.pin1 -> bx-pin-1.pin2 STIFF
+END
+ATTACH bx
+CONNECT bx-lbeam-1.hole2~ -> bu-beam5-2.hole5~ STIFF
+WHY Builds the right-hand twin of the L-beam piece and fixes it on the right end of the bumper.
+STEP 311
+GROUP by
+ADD by-beam3-1 6632 black
+ADD by-tbeam-1 60484 black
+ADD by-ring-1 18654 black
+ADD by-pin-1 61332 black
+ADD by-pin-2 61332 black
+ADD by-pin-3 61332 black
+CONNECT by-pin-1.pin1 -> by-beam3-1.hole1~ STIFF
+CONNECT by-pin-2.pin1 -> by-beam3-1.hole2~ STIFF
+CONNECT by-pin-3.pin1 -> by-beam3-1.hole3~ STIFF
+CONNECT by-tbeam-1.hole1~ -> by-pin-1.pin2 STIFF
+END
+ATTACH by
+CONNECT by-ring-1.hole1 -> bx-gpin-1.pin2~ TURNS
+CONNECT by-tbeam-1.hole3~ -> bu-beam9-2.hole1~ STIFF
+WHY Builds the right-hand twin of the small black beam with a T-beam and fixes it beside the right wing.
+STEP 312
+ADD stickers-1 77604 nocolor
+WHY Turns the bumper over and sticks the black-and-orange and the lime-and-red stickers 33 and 34 on the bottom face.
+STEP 313
+GROUP bz
+ADD bz-tile-1 3070b black
+ADD bz-pin-1 61332 black
+ADD bz-axle3-1 4519 lightgray
+ADD bz-lens-1 98138 transclear
+ADD bz-lens-2 98138 transclear
+ADD bz-plate-1 18677 black
+ADD bz-conn-1 6536 darkgray
+ADD bz-conn-2 6536 darkgray
+ADD bz-plate-2 3023 black
+ADD bz-trip-1 63869 black
+CONNECT bz-pin-1.pin1 -> bz-conn-1.hole1 STIFF
+CONNECT bz-axle3-1.axle1 -> bz-conn-1.axlehole1 LOCKED
+CONNECT bz-conn-2.axlehole1 -> bz-axle3-1.axle3 LOCKED
+CONNECT bz-plate-1.hole1~ -> bz-pin-1.pin2 STIFF
+CONNECT bz-tile-1.stud1? -> bz-plate-1.stud1? STIFF
+CONNECT bz-plate-2.stud1? -> bz-lens-1.stud1? STIFF
+CONNECT bz-trip-1.hole1~ -> bz-conn-2.hole1~ STIFF
+END
+ATTACH bz
+CONNECT bz-trip-1.hole3~ -> bu-beam9-1.hole1~ STIFF
+WHY Builds a headlight unit in five small steps from two clear lenses on black plates, a tile and a black connector stack, and fits it at one end of the bumper.
