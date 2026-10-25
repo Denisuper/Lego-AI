@@ -3995,3 +3995,178 @@ ATTACH rv2
 CONNECT rv2-axle3-1.axle1 -> rv2-ang-1.hole2~ TURNS
 CONNECT rv2-axle3-1.axle3 -> dp-beam11-1.hole9~ TURNS
 WHY Turns the truck over and fits the second grille bar down the cab's other front corner, held by a brown axle with a stop.
+STEP 465
+GROUP rw2
+ADD rw2-ell-1 71708 black
+ADD rw2-axle3-1 4519 lightgray
+ADD rw2-pin-1 61332 black
+CONNECT rw2-pin-1.pin1 -> rw2-ell-1.hole1~ STIFF
+CONNECT rw2-axle3-1.axle1 -> rw2-ell-1.axlehole1? LOCKED
+WHY Starts the second bumper bracket: a dark grey quarter-ellipse beam with a 3-long axle and a black pin.
+STEP 466
+ADD rw2-lbeam-1 32526 black
+ADD rw2-pin-2 61332 black
+CONNECT rw2-pin-2.pin1 -> rw2-lbeam-1.hole3~ STIFF
+CONNECT rw2-lbeam-1.hole1~ -> rw2-pin-1.pin2 STIFF
+WHY A black 3x5 L-beam with a pin is added on the first pin to make the bracket's arm.
+STEP 467
+ADD rw2-lbeam-2 32526 black
+ADD rw2-tbeam-1 60484 black
+ADD rw2-lpin-1 11214 red
+ADD rw2-bpin-1 43093 blue
+ADD rw2-pin-3 61332 black
+CONNECT rw2-lpin-1.pin1 -> rw2-tbeam-1.hole2~ STIFF
+CONNECT rw2-bpin-1.pin1 -> rw2-tbeam-1.hole1~ STIFF
+CONNECT rw2-lbeam-2.hole1~ -> rw2-tbeam-1.hole3~ STIFF
+CONNECT rw2-tbeam-1.hole5~ -> rw2-ell-1.hole2~ STIFF
+CONNECT rw2-pin-3.pin1 -> rw2-lbeam-2.hole3~ STIFF
+WHY A T-beam with a red pin and a blue pin, a second L-beam and a black pin widen the bracket into a corner shape, like the first bracket.
+STEP 468
+ADD rw2-ell-2 71708 black
+CONNECT rw2-ell-2.hole1~ -> rw2-pin-3.pin2 STIFF
+WHY A second dark grey quarter-ellipse beam is added on top of the bracket.
+STEP 469
+ADD rw2-beam2-1 41677 black
+ADD rw2-beam2-2 41677 black
+ADD rw2-cb-1 39793 lightgray
+ADD rw2-bpin-2 43093 blue
+CONNECT rw2-bpin-2.pin1 -> rw2-cb-1.hole1~ STIFF
+CONNECT rw2-beam2-1.hole1~ -> rw2-bpin-2.pin2 STIFF
+CONNECT rw2-beam2-2.hole1~ -> rw2-lbeam-2.hole5~ STIFF
+CONNECT rw2-cb-1.hole3~ -> rw2-ell-2.hole2~ STIFF
+WHY A light connector beam with a blue pin and two thin black beams make the bracket's crossbar.
+STEP 470
+ADD rw2-axle4-1 3705 darkgray
+CONNECT rw2-axle4-1.axle1 -> rw2-lbeam-2.hole1~ TURNS
+WHY A 4-long axle goes through the bracket's corner as its pivot.
+STEP 471
+WHY Turns the bracket over to show its far side before it is fitted.
+STEP 472
+ATTACH rw2
+CONNECT rw2-axle4-1.axle4 -> rv2-ang-1.hole2~ TURNS
+WHY Fits the finished bracket onto the truck in front of the cab, on the right side beside the second grille bar.
+STEP 473
+GROUP rx3
+ADD rx3-beam13-1 41239 black
+ADD rx3-lpin-1 11214 red
+ADD rx3-pin-1 61332 black
+CONNECT rx3-lpin-1.pin1 -> rx3-beam13-1.hole1~ STIFF
+CONNECT rx3-pin-1.pin1 -> rx3-beam13-1.hole13~ STIFF
+WHY Starts the right-hand step board with a black 13-long beam with a red pin at one end and a black pin at the other.
+STEP 474
+ADD rx3-beam13-2 41239 black
+CONNECT rx3-beam13-2.hole1~ -> rx3-lpin-1.pin2 STIFF
+WHY A second 13-long black beam is stacked on the first so the step board is two beams thick.
+STEP 475
+ADD rx3-gpin-1 4274 lightgray
+ADD rx3-gpin-2 4274 lightgray
+ADD rx3-gpin-3 4274 lightgray
+ADD rx3-gpin-4 4274 lightgray
+ADD rx3-gpin-5 4274 lightgray
+ADD rx3-gpin-6 4274 lightgray
+CONNECT rx3-gpin-1.pin1 -> rx3-beam13-2.hole3~ TURNS
+CONNECT rx3-gpin-2.pin1 -> rx3-beam13-2.hole4~ TURNS
+CONNECT rx3-gpin-3.pin1 -> rx3-beam13-2.hole5~ TURNS
+CONNECT rx3-gpin-4.pin1 -> rx3-beam13-2.hole6~ TURNS
+CONNECT rx3-gpin-5.pin1 -> rx3-beam13-2.hole7~ TURNS
+CONNECT rx3-gpin-6.pin1 -> rx3-beam13-2.hole8~ TURNS
+WHY Six light grey frictionless pins go along the step board to make the tread surface.
+STEP 476
+ADD rx3-tile-1 6636 black
+CONNECT rx3-tile-1.stud1? -> rx3-beam13-1.stud1? STIFF
+WHY A long black 1x6 tile is pressed on the end of the step board.
+STEP 477
+ADD rx3-slope-1 15672 lightgray
+ADD rx3-curve-1 11477 black
+ADD rx3-plate-1 3710 black
+ADD rx3-plate-2 3023 black
+ADD rx3-plate-3 3023 black
+CONNECT rx3-plate-1.stud1? -> rx3-plate-2.stud1? STIFF
+CONNECT rx3-plate-3.stud1? -> rx3-plate-1.stud3? STIFF
+CONNECT rx3-slope-1.stud1? -> rx3-plate-1.stud4? STIFF
+CONNECT rx3-curve-1.stud1? -> rx3-plate-1.stud1? STIFF
+CONNECT rx3-plate-1.stud1? -> rx3-tile-1.stud1? STIFF
+WHY Builds a small step-board end cap in four small steps from a 1x4 plate, two 1x2 plates, a slope and a curved brick, and presses it onto the step board.
+STEP 478
+ADD rx3-tile-2 4162 black
+ADD rx3-curve-2 93273 black
+ADD rx3-bracket-1 99780 black
+ADD rx3-bracket-2 99780 black
+ADD rx3-plate-4 3623 black
+CONNECT rx3-tile-2.stud1? -> rx3-plate-4.stud1? STIFF
+CONNECT rx3-bracket-1.stud1? -> rx3-tile-2.stud1? STIFF
+CONNECT rx3-bracket-2.stud1? -> rx3-bracket-1.stud1? STIFF
+CONNECT rx3-curve-2.stud1? -> rx3-bracket-2.stud1? STIFF
+CONNECT rx3-plate-4.stud1? -> rx3-plate-1.stud1? STIFF
+WHY Builds the step-board's mudguard cap from a 1x8 tile (sticker 8), two brackets, a 1x3 plate and a long curved black brick and presses it on next to the first.
+STEP 479
+ADD rx3-bpin-1 43093 blue
+ADD rx3-bpin-2 43093 blue
+CONNECT rx3-bpin-1.pin1 -> rx3-beam13-1.hole4~ STIFF
+CONNECT rx3-bpin-2.pin1 -> rx3-beam13-1.hole7~ STIFF
+WHY Turns the board over and puts two blue pins in its underside.
+STEP 480
+ADD rx3-lpin-2 11214 red
+ADD rx3-lpin-3 11214 red
+ADD rx3-lpin-4 11214 red
+ADD rx3-ang-1 6536 black
+ADD rx3-ang-2 6536 black
+ADD rx3-ang-3 6536 black
+CONNECT rx3-ang-1.axlehole1 -> rx3-lpin-2.axle1 LOCKED
+CONNECT rx3-ang-2.axlehole1 -> rx3-lpin-3.axle1 LOCKED
+CONNECT rx3-ang-3.axlehole1 -> rx3-lpin-4.axle1 LOCKED
+CONNECT rx3-ang-1.hole1~ -> rx3-bpin-1.pin2~ STIFF
+CONNECT rx3-ang-2.hole1~ -> rx3-bpin-2.pin2~ STIFF
+WHY Three connectors, each with a red pin, go on the underside of the board as the mounts for the board's supports.
+STEP 481
+GROUP ry
+ADD ry-lbeam-1 32140 darkgray
+ADD ry-axle3-1 4519 lightgray
+ADD ry-pin-1 61332 black
+ADD ry-pin-2 61332 black
+CONNECT ry-pin-1.pin1 -> ry-lbeam-1.hole1~ STIFF
+CONNECT ry-pin-2.pin1 -> ry-lbeam-1.hole2~ STIFF
+CONNECT ry-axle3-1.axle1 -> ry-lbeam-1.hole4~ TURNS
+WHY Starts the step board's mounting arm: a grey 2x4 L-beam with two pins and a 3-long axle.
+STEP 482
+ADD ry-beam11-1 32525 darkgray
+ADD ry-bush-1 3713 darkgray
+CONNECT ry-beam11-1.hole1~ -> ry-pin-1.pin2 STIFF
+CONNECT ry-bush-1.axlehole1 -> ry-axle3-1.axle3 LOCKED
+WHY A grey 11-beam and a bush go on the arm.
+STEP 483
+ADD ry-pin-3 61332 black
+ADD ry-gpin-1 65304 lightgray
+CONNECT ry-pin-3.pin1 -> ry-beam11-1.hole3~ STIFF
+CONNECT ry-gpin-1.pin1 -> ry-beam11-1.hole10~ STIFF
+WHY A black pin and a long grey pin go in the 11-beam to carry the next beams.
+STEP 484
+ADD ry-beam5-1 32316 darkgray
+ADD ry-pin-4 61332 black
+ADD ry-bpin-1 43093 blue
+CONNECT ry-pin-4.pin1 -> ry-beam11-1.hole5~ STIFF
+CONNECT ry-bpin-1.axle1 -> ry-gpin-1.axlehole1 LOCKED
+CONNECT ry-beam5-1.hole1~ -> ry-pin-3.pin2 STIFF
+WHY A grey 5-beam, a black pin and a blue pin are added on the 11-beam.
+STEP 485
+ADD ry-lbeam-2 32140 darkgray
+ADD ry-pin-5 61332 black
+ADD ry-bpin-2 43093 blue
+CONNECT ry-pin-5.pin1 -> ry-lbeam-2.hole1~ STIFF
+CONNECT ry-bpin-2.pin1 -> ry-lbeam-2.hole4~ STIFF
+CONNECT ry-lbeam-2.hole2~ -> ry-beam5-1.hole3~ STIFF
+WHY A second 2x4 L-beam with a black pin and a blue pin is fixed on the end of the arm.
+STEP 486
+ADD ry-pin-6 61332 black
+ADD ry-bush-2 3713 darkgray
+CONNECT ry-pin-6.pin1 -> ry-lbeam-2.hole3~ STIFF
+CONNECT ry-bush-2.axlehole1 -> ry-pin-6.axle1? LOCKED
+END
+WHY A black pin and a bush finish the mounting arm.
+STEP 487
+ATTACH ry
+CONNECT ry-lbeam-2.hole1~ -> rx3-ang-1.hole2~ STIFF
+CONNECT rx3-lpin-2.pin2 -> ry-beam11-1.hole3~ STIFF
+CONNECT rx3-lpin-3.pin2 -> ry-beam11-1.hole5~ STIFF
+CONNECT rx3-lpin-4.pin2 -> ry-beam11-1.hole7~ STIFF
+WHY Fixes the mounting arm onto the underside of the step board using the three red pins.
