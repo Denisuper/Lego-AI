@@ -3567,3 +3567,123 @@ CONNECT pb-pin-1.pin1 -> pb-panel-1.hole1~ STIFF
 CONNECT pb-axle4-1.axle1 -> dp-beam11-1.hole6~ TURNS
 CONNECT pb-panel-1.hole3~ -> dp-beam11-1.hole3~ STIFF
 WHY The matching right-side panel (sticker 1) is fitted the same way on the right door.
+STEP 416
+GROUP rf3
+ADD rf3-panel-1 64782 darkgray
+ADD rf3-pin-1 61332 black
+ADD rf3-pin-2 61332 black
+ADD rf3-lblue-1 42924 blue
+ADD rf3-lblue-2 42924 blue
+CONNECT rf3-pin-1.pin1 -> rf3-panel-1.hole1~ STIFF
+CONNECT rf3-pin-2.pin1 -> rf3-panel-1.hole3~ STIFF
+CONNECT rf3-lblue-1.pin1 -> rf3-panel-1.hole9~ STIFF
+CONNECT rf3-lblue-2.pin1 -> rf3-panel-1.hole11~ STIFF
+WHY Starts the cab roof: a big dark grey 5x11 panel with two black pins and two long blue pins.
+STEP 417
+ADD rf3-panel-2 64782 darkgray
+ADD rf3-beam11-1 32525 darkgray
+CONNECT rf3-panel-2.hole1~ -> rf3-pin-1.pin2 STIFF
+CONNECT rf3-beam11-1.hole1~ -> rf3-lblue-1.pin2 STIFF
+CONNECT rf3-beam11-1.hole11~ -> rf3-lblue-2.pin2 STIFF
+WHY A second 5x11 panel and an 11-long beam are laid over the first to make the roof two layers thick.
+STEP 418
+ADD rf3-panel-3 64782 darkgray
+CONNECT rf3-panel-3.hole1~ -> rf3-panel-2.hole1~ STIFF
+WHY A third 5x11 panel is added next to the others so the roof is wide enough.
+STEP 419
+ADD rf3-pin-3 61332 black
+ADD rf3-pin-4 61332 black
+ADD rf3-pin-5 61332 black
+ADD rf3-pin-6 61332 black
+ADD rf3-pin-7 61332 black
+ADD rf3-pin-8 61332 black
+ADD rf3-pin-9 61332 black
+ADD rf3-pin-10 61332 black
+CONNECT rf3-pin-3.pin1 -> rf3-panel-1.hole2~ STIFF
+CONNECT rf3-pin-4.pin1 -> rf3-panel-1.hole10~ STIFF
+CONNECT rf3-pin-5.pin1 -> rf3-panel-2.hole2~ STIFF
+CONNECT rf3-pin-6.pin1 -> rf3-panel-2.hole10~ STIFF
+CONNECT rf3-pin-7.pin1 -> rf3-panel-3.hole2~ STIFF
+CONNECT rf3-pin-8.pin1 -> rf3-panel-3.hole10~ STIFF
+CONNECT rf3-pin-9.pin1 -> rf3-panel-3.hole4~ STIFF
+CONNECT rf3-pin-10.pin1 -> rf3-panel-3.hole8~ STIFF
+WHY Eight black pins on the underside tie the three roof panels together and take the next beam.
+STEP 420
+ADD rf3-beam11-2 32525 darkgray
+ADD rf3-pin-11 61332 black
+ADD rf3-pin-12 61332 black
+ADD rf3-stud-1 6141 darkgray
+ADD rf3-stud-2 6141 darkgray
+ADD rf3-stud-3 6141 darkgray
+ADD rf3-stud-4 6141 darkgray
+CONNECT rf3-pin-11.pin1 -> rf3-beam11-2.hole4~ STIFF
+CONNECT rf3-pin-12.pin1 -> rf3-beam11-2.hole8~ STIFF
+CONNECT rf3-beam11-2.hole2~ -> rf3-pin-9.pin2 STIFF
+WHY A second 11-long beam with two pins goes across the underside of the roof panels as a cross-tie.
+STEP 421
+ADD rf3-curve-1 24119 black
+ADD rf3-curve-2 24119 black
+CONNECT rf3-curve-1.hole1~ -> rf3-pin-3.pin2 STIFF
+CONNECT rf3-curve-2.hole1~ -> rf3-pin-4.pin2 STIFF
+WHY Two curved black panels go on the two long edges of the roof to give it its rounded eaves.
+STEP 422
+ADD rf3-bushpin-1 22977 black
+ADD rf3-bushpin-2 22977 black
+CONNECT rf3-bushpin-1.pin1? -> rf3-curve-1.hole2~ STIFF
+CONNECT rf3-bushpin-2.pin1? -> rf3-curve-2.hole2~ STIFF
+WHY Two small black end caps are pushed into the eaves; stickers 2 and 3 (the ZETROS name and a stripe) go on the roof as shown.
+STEP 423
+ADD rf3-pin-13 61332 black
+ADD rf3-pin-14 61332 black
+CONNECT rf3-pin-13.pin1 -> rf3-curve-1.hole3~ STIFF
+CONNECT rf3-pin-14.pin1 -> rf3-curve-2.hole3~ STIFF
+WHY Turns the roof over and pushes two pins into the eaves from below to hold the curved panels.
+STEP 424
+GROUP rg2
+ADD rg2-axle7-1 44294 lightgray
+ADD rg2-conn-1 32184 darkgray
+ADD rg2-conn-2 32184 darkgray
+ADD rg2-pin-1 4274 lightgray
+ADD rg2-pin-2 4274 lightgray
+ADD rg2-ell-1 71708 black
+ADD rg2-ell-2 71708 black
+CONNECT rg2-conn-1.axlehole1 -> rg2-axle7-1.axle2 LOCKED
+CONNECT rg2-conn-2.axlehole1 -> rg2-axle7-1.axle6 LOCKED
+CONNECT rg2-ell-1.hole1~ -> rg2-axle7-1.axle1 TURNS
+CONNECT rg2-ell-2.hole1~ -> rg2-axle7-1.axle7 TURNS
+CONNECT rg2-pin-1.pin1 -> rg2-ell-1.hole3~ TURNS
+CONNECT rg2-pin-2.pin1 -> rg2-ell-2.hole3~ TURNS
+END
+ATTACH rg2
+CONNECT rg2-conn-1.hole1~ -> rf3-pin-11.pin2~ STIFF
+WHY Builds a roof crossbar from a 7-long axle with two connectors, two grey pins and two black quarter-ellipse ends in four small steps and fixes it across the underside of the roof.
+STEP 425
+GROUP rh
+ADD rh-beam9-1 40490 black
+ADD rh-bpin-1 43093 blue
+ADD rh-bpin-2 43093 blue
+ADD rh-bush-1 3749 tan
+ADD rh-bush-2 3749 tan
+CONNECT rh-bpin-1.pin1 -> rh-beam9-1.hole1~ STIFF
+CONNECT rh-bpin-2.pin1 -> rh-beam9-1.hole9~ STIFF
+CONNECT rh-bush-1.pin1 -> rh-bpin-1.pin2? TURNS
+CONNECT rh-bush-2.pin1 -> rh-bpin-2.pin2? TURNS
+END
+ATTACH rh
+CONNECT rh-beam9-1.hole5~ -> rg2-axle7-1.axle4~ TURNS
+WHY Builds a black 9-beam with two blue pins and two tan pins and fixes it across the roof, holding the crossbar.
+STEP 426
+ADD ra-ant-1 33299 black
+ADD ra-pin-1 61332 black
+ADD ra-pin-2 61332 black
+ADD ra-conn-1 6536 darkgray
+CONNECT ra-pin-1.pin1 -> ra-conn-1.hole1 STIFF
+CONNECT ra-ant-1.pin1? -> ra-conn-1.hole2? TURNS
+CONNECT ra-pin-2.pin1 -> rh-beam9-1.hole3~ STIFF
+CONNECT ra-conn-1.hole3~ -> ra-pin-2.pin2 STIFF
+WHY A black radio aerial on a pin and a connector is put on the roof, then the roof is turned over.
+STEP 427
+ATTACH rf3
+CONNECT rf3-panel-1.hole5~ -> hc-tbeam-1.hole4~ STIFF
+CONNECT rf3-panel-3.hole5~ -> he-tbeam-1.hole4~ STIFF
+WHY Fits the finished roof on top of the cab frame over the two door panels.
