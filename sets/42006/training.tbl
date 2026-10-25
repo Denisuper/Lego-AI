@@ -645,3 +645,281 @@ CONNECT p59426-1.axle3 -> p32270-1.axlehole1 LOCKED
 CONNECT p48989-2.pin4 -> p32524-5.hole1 STIFF
 CONNECT p48989-1.pin4 -> p32524-5.hole5 STIFF
 WHY Fits the black twelve-tooth gear on a stopped shaft through the yellow seven-hole crossbeam and mounts that beam across the grey upright hubs.
+STEP 24
+GROUP gearbox-side
+ADD p98989-1 98989 lightgray
+ADD p2780-31 2780 black
+ADD p43093-2 43093 blue
+ADD p6558-21 6558 blue
+ADD p6558-22 6558 blue
+ADD p40490-17 40490 yellow
+ADD p59426-2 59426 darkgray
+ADD p32270-2 32270 black
+ADD p6538b-1 6538b tan
+ADD p32073-3 32073 lightgray
+ADD p59426-3 59426 darkgray
+ADD p3713-1 3713 lightgray
+ADD p32269-1 32269 tan
+CONNECT p2780-31.pin2 -> p98989-1.hole2 STIFF
+CONNECT p43093-2.axle1 -> p98989-1.axlehole1 LOCKED
+CONNECT p6558-21.pin2 -> p98989-1.hole3 STIFF
+CONNECT p6558-22.pin2 -> p98989-1.hole4 STIFF
+CONNECT p2780-31.pin1 -> p40490-17.hole1 STIFF
+CONNECT p43093-2.pin1 -> p40490-17.hole3 STIFF
+CONNECT p59426-2.axle2 -> p98989-1.hole1 TURNS
+CONNECT p59426-2.axle3 -> p40490-17.hole2 TURNS
+CONNECT p59426-2.axle4 -> p32270-2.axlehole1 LOCKED
+CONNECT p59426-2.axle1 -> p6538b-1.axlehole1 LOCKED
+CONNECT p32073-3.axle1 -> p6538b-1.axlehole2 LOCKED
+CONNECT p59426-3.axle2~ -> p3713-1.axlehole1 LOCKED
+CONNECT p59426-3.axle3 -> p40490-17.hole4 TURNS
+CONNECT p59426-3.axle4 -> p32269-1.? LOCKED
+MESH p32270-2.teeth p32269-1.teeth
+RATIO p32270-2 p32269-1 3/5
+END
+ATTACH gearbox-side
+CONNECT p6558-21.pin3 -> p32278-3.hole5 STIFF
+CONNECT p6558-22.pin3 -> p32278-3.hole6 STIFF
+CONNECT p59426-2.pin1 -> p32524-5.hole2 TURNS
+CONNECT p59426-3.axle5 -> p32524-5.hole4 TURNS
+CONNECT p59426-1.axle4 -> p40490-17.hole6 TURNS
+MESH p32269-1.teeth p32270-1.teeth
+RATIO p32269-1 p32270-1 5/3
+WHY Builds the opposite gearbox side with a twelve-tooth input shaft, a tan twenty-tooth intermediate gear and the grey extension shaft, then fits it so the twenty-tooth gear meshes with both black gears.
+STEP 25
+WHY Pushes both upright blue pins fully down through the grey gearbox-side connector after the cross shafts are seated.
+STEP 26
+ADD p87083-5 87083 darkgray
+ADD p87083-6 87083 darkgray
+CONNECT p87083-5.axle4 -> p32278-3.hole7 TURNS
+CONNECT p87083-6.axle4 -> p32278-3.hole12 TURNS
+WHY Turns the upper structure over and inserts two stopped four-length axles through the yellow side rail with their free ends facing downward.
+STEP 27
+ADD p32278-4 32278 yellow
+ADD p2780-32 2780 black
+ADD p48989-3 48989 lightgray
+CONNECT p2780-32.pin1 -> p32278-4.hole1 STIFF
+CONNECT p48989-3.pin3 -> p32278-4.hole13 STIFF
+CONNECT p48989-3.pin4 -> p32278-4.hole15 STIFF
+CONNECT p2780-25.pin1 -> p32278-4.hole2 STIFF
+CONNECT p2780-27.pin1 -> p32278-4.hole5 STIFF
+WHY Adds the second long yellow side rail with a black pin at one end and a grey four-pin hub at the other, fastening it to the large frame's side pins.
+STEP 28
+ADD p6539-1 6539 red
+ADD p6542b-1 6542b darkgray
+CONNECT p6539-1.? -> p6538b-1.? LOCKED
+CONNECT p32073-3.axle2 -> p6542b-1.hole1 TURNS
+WHY Slides the red driving ring over the ridged tan connector and adds the free-running sixteen-tooth clutch gear with its clutch face toward the ring.
+STEP 29
+GROUP upper-gear-carrier
+ADD p32526-5 32526 yellow
+ADD p32054-15 32054 lightgray
+ADD p32054-16 32054 lightgray
+ADD p55615-3 55615 lightgray
+ADD p55013-1 55013 darkgray
+ADD p94925-1 94925 lightgray
+ADD p6542b-2 6542b darkgray
+ADD p99008-1 99008 tan
+ADD p94925-2 94925 lightgray
+ADD p32523-4 32523 yellow
+ADD p3713-2 3713 lightgray
+ADD p3713-3 3713 lightgray
+ADD p3713-4 3713 lightgray
+ADD p3713-5 3713 lightgray
+ADD p59443-2 59443 darkgray
+ADD p59443-3 59443 darkgray
+ADD p59443-4 59443 darkgray
+ADD p3705-1 3705 black
+ADD p3705-2 3705 black
+ADD p4519-1 4519 lightgray
+CONNECT p32054-15.pin1 -> p32526-5.hole5 STIFF
+CONNECT p32054-16.pin1 -> p32526-5.hole7 STIFF
+CONNECT p55615-3.pin3 -> p32526-5.hole1 STIFF
+CONNECT p55615-3.pin4 -> p32526-5.hole3 STIFF
+CONNECT p55013-1.axle8 -> p94925-1.axlehole1 LOCKED
+CONNECT p55013-1.axle7 -> p55615-3.hole3 TURNS
+CONNECT p55013-1.axle6 -> p6542b-2.hole1 TURNS
+CONNECT p99008-1.axle2 -> p94925-2.axlehole1 LOCKED
+CONNECT p99008-1.axle3 -> p55615-3.hole1 TURNS
+MESH p6542b-2.teeth p94925-2.teeth
+RATIO p6542b-2 p94925-2 1/1
+CONNECT p55013-1.axle5 -> p32523-4.hole1 TURNS
+CONNECT p99008-1.pin1 -> p32523-4.hole3 TURNS
+CONNECT p55013-1.axle4~ -> p3713-2.axlehole1 LOCKED
+CONNECT p55013-1.axle3~ -> p3713-3.axlehole1 LOCKED
+CONNECT p55013-1.axle2~ -> p3713-4.axlehole1 LOCKED
+CONNECT p99008-1.axle1 -> p59443-2.axlehole2 LOCKED
+CONNECT p55013-1.axle1 -> p59443-3.axlehole2 LOCKED
+CONNECT p3705-1.axle4 -> p59443-2.axlehole1 LOCKED
+CONNECT p3705-1.axle1 -> p59443-4.axlehole2 LOCKED
+CONNECT p3705-2.axle4 -> p59443-3.axlehole1 LOCKED
+CONNECT p3705-2.axle3~ -> p3713-5.axlehole1 LOCKED
+CONNECT p4519-1.axle3 -> p59443-4.axlehole1 LOCKED
+END
+ATTACH upper-gear-carrier
+CONNECT p32054-15.pin2 -> p32278-4.hole10 STIFF
+CONNECT p32054-16.pin2 -> p32278-4.hole8 STIFF
+CONNECT p32073-3.axle3 -> p55615-3.hole5 TURNS
+CONNECT p3705-2.axle2 -> p32316-3.hole4 TURNS
+CONNECT p4519-1.axle2 -> p32316-3.hole2 TURNS
+MESH p6542b-1.teeth p6542b-2.teeth
+RATIO p6542b-1 p6542b-2 1/1
+WHY Builds the upper gear carrier with its free clutch gear, stopped shafts, axle joiners and four spacer bushes, then seats it across the frame with both extended shafts in the yellow top beam's round holes.
+STEP 30
+ADD p6589-2 6589 tan
+ADD p6589-3 6589 tan
+CONNECT p3705-2.axle1 -> p6589-2.axlehole1 LOCKED
+CONNECT p4519-1.axle1 -> p6589-3.axlehole1 LOCKED
+WHY Adds a tan twelve-tooth bevel gear to each exposed end of the upper carrier's extended shafts.
+STEP 31
+ADD p44294-1 44294 lightgray
+ADD p59443-5 59443 darkgray
+CONNECT p44294-1.axle1 -> p59443-5.axlehole2 LOCKED
+CONNECT p44294-1.axle7 -> p59443-1.axlehole1 LOCKED
+WHY Extends the lower transmission shaft with a seven-length grey axle and a second dark-grey axle joiner at its free end.
+STEP 32
+ADD p6542b-3 6542b darkgray
+CONNECT p32073-3.axle4 -> p6542b-3.hole1 TURNS
+MESH p6542b-3.teeth p94925-1.teeth
+RATIO p6542b-3 p94925-1 1/1
+WHY Adds the second free clutch gear on the grey five-length shaft with its clutch face pointing toward the red sliding ring.
+STEP 33
+ADD p3705-3 3705 black
+ADD p6538b-2 6538b tan
+CONNECT p3705-3.axle1 -> p6538b-2.axlehole2 LOCKED
+CONNECT p32073-3.axle5 -> p6538b-2.axlehole1 LOCKED
+WHY Extends the clutch shaft with a black four-length axle in a ridged tan joiner for the next selector section.
+STEP 34
+ADD p59426-4 59426 darkgray
+ADD p32073-4 32073 lightgray
+ADD p59443-6 59443 darkgray
+ADD p59443-7 59443 darkgray
+ADD p3713-6 3713 lightgray
+CONNECT p32073-4.axle5 -> p59443-6.axlehole1 LOCKED
+CONNECT p59426-4.axle1 -> p59443-6.axlehole2 LOCKED
+CONNECT p32073-4.axle1 -> p59443-7.axlehole2 LOCKED
+CONNECT p59426-4.axle2~ -> p3713-6.axlehole1 LOCKED
+CONNECT p59426-3.axle1 -> p59443-7.axlehole1 LOCKED
+WHY Extends the adjacent geared shaft with a five-length axle, two dark-grey joiners and a stopped shaft retained by a grey bush.
+STEP 35
+ADD p6539-2 6539 red
+ADD p6542b-4 6542b darkgray
+CONNECT p6539-2.? -> p6538b-2.? LOCKED
+CONNECT p3705-3.axle2 -> p6542b-4.hole1 TURNS
+WHY Slides the second red driving ring onto the ridged joiner and adds its outer free clutch gear with the engagement face pointing inward.
+STEP 36
+ADD p98989-2 98989 lightgray
+ADD p2780-33 2780 black
+ADD p43093-3 43093 blue
+ADD p6558-23 6558 blue
+ADD p6558-24 6558 blue
+CONNECT p2780-33.pin2 -> p98989-2.hole2 STIFF
+CONNECT p43093-3.axle1 -> p98989-2.axlehole1 LOCKED
+CONNECT p6558-23.pin2 -> p98989-2.hole3 STIFF
+CONNECT p6558-24.pin2 -> p98989-2.hole4 STIFF
+CONNECT p3705-3.axle3 -> p98989-2.hole1 TURNS
+CONNECT p6558-23.pin3 -> p32278-3.hole15 STIFF
+CONNECT p6558-24.pin3 -> p32278-3.hole14 STIFF
+WHY Closes the far end of the clutch shaft with a grey perpendicular bearing connector and pushes its two blue mounting pins fully into the yellow rail.
+STEP 37
+GROUP end-gear-support
+ADD p32526-6 32526 yellow
+ADD p32526-7 32526 yellow
+ADD p32526-8 32526 yellow
+ADD p43093-4 43093 blue
+ADD p43093-5 43093 blue
+ADD p32054-17 32054 lightgray
+ADD p32054-18 32054 lightgray
+ADD p87082-1 87082 lightgray
+ADD p99008-2 99008 tan
+ADD p32269-2 32269 tan
+CONNECT p43093-4.pin1 -> p32526-6.hole1 STIFF
+CONNECT p43093-5.pin1 -> p32526-6.hole7 STIFF
+CONNECT p43093-4.axle1 -> p32054-18.axlehole1 LOCKED
+CONNECT p43093-5.axle1 -> p32054-17.axlehole1 LOCKED
+CONNECT p87082-1.pin1 -> p32526-6.hole5 STIFF
+CONNECT p99008-2.axle2 -> p32269-2.? LOCKED
+CONNECT p99008-2.pin1 -> p32526-6.hole3 TURNS
+CONNECT p32054-18.pin1 -> p32526-7.hole1 STIFF
+CONNECT p32054-17.pin1 -> p32526-7.hole7 STIFF
+CONNECT p87082-1.pin2 -> p32526-7.hole5 STIFF
+CONNECT p99008-2.axle3 -> p32526-7.hole3 TURNS
+CONNECT p32054-17.pin2 -> p32526-8.hole1 STIFF
+CONNECT p32054-18.pin2 -> p32526-8.hole7 STIFF
+END
+ATTACH end-gear-support
+CONNECT p59426-4.axle3 -> p32526-8.hole2 TURNS
+CONNECT p3705-3.axle4 -> p32526-8.hole4 TURNS
+CONNECT p43093-3.pin1 -> p32526-8.hole3 STIFF
+CONNECT p2780-33.pin1 -> p32526-8.hole5 STIFF
+CONNECT p99008-2.axle1 -> p59443-5.axlehole1 LOCKED
+WHY Builds the three-layer yellow end support around a freely bearing tan stopped axle and twenty-tooth gear, then closes the gearbox shafts and joins the tan axle to the lower transmission shaft.
+STEP 38
+ADD p32270-3 32270 black
+ADD p32270-4 32270 black
+CONNECT p59426-4.axle4 -> p32270-3.axlehole1 LOCKED
+CONNECT p59426-4.axle5 -> p32270-4.axlehole1 LOCKED
+WHY Slides two black twelve-tooth gears together onto the exposed stopped shaft outside the yellow end support.
+STEP 39
+GROUP outer-yellow-side
+ADD p32526-9 32526 yellow
+ADD p6558-25 6558 blue
+ADD p41239-1 41239 yellow
+ADD p2780-34 2780 black
+ADD p48989-4 48989 lightgray
+ADD p32523-5 32523 yellow
+CONNECT p6558-25.pin2 -> p32526-9.hole6 STIFF
+CONNECT p6558-25.pin1 -> p41239-1.hole2 STIFF
+CONNECT p2780-34.pin1 -> p41239-1.hole10 STIFF
+CONNECT p48989-4.pin3 -> p41239-1.hole5 STIFF
+CONNECT p48989-4.pin4 -> p41239-1.hole3 STIFF
+CONNECT p48989-4.pin1 -> p32523-5.hole1 STIFF
+CONNECT p48989-4.pin2 -> p32523-5.hole3 STIFF
+END
+ATTACH outer-yellow-side
+CONNECT p6558-19.pin3 -> p41239-1.hole11 STIFF
+CONNECT p6558-20.pin2 -> p41239-1.hole12 STIFF
+CONNECT p2780-30.pin2 -> p41239-1.hole13 STIFF
+CONNECT p6558-25.pin3 -> p87082-1.hole1 STIFF
+WHY Builds the outer thirteen-hole side rail with its yellow end upright and grey hub, then attaches it to the three side pins and the end-support hub.
+STEP 40
+ADD p4519-2 4519 lightgray
+ADD p4519-3 4519 lightgray
+ADD p3713-7 3713 lightgray
+ADD p3713-8 3713 lightgray
+ADD p6641-1 6641 red
+ADD p6641-2 6641 red
+CONNECT p4519-2.axle3 -> p32278-3.hole13 TURNS
+CONNECT p4519-3.axle3 -> p32278-3.hole11 TURNS
+CONNECT p4519-2.axle2~ -> p3713-7.axlehole1 LOCKED
+CONNECT p4519-3.axle2~ -> p3713-8.axlehole1 LOCKED
+CONNECT p87083-6.axle3 -> p6641-1.axlehole1 LOCKED
+CONNECT p87083-5.axle3 -> p6641-2.axlehole1 LOCKED
+CONNECT p6641-1.? -> p6539-2.? TURNS
+CONNECT p6641-2.? -> p6539-1.? TURNS
+WHY Adds two bushed three-length shafts and the red selector catches, placing each catch in the groove of its driving ring so the rings can slide along their keyed joiners.
+STEP 41
+ADD p32525-1 32525 yellow
+CONNECT p6558-21.pin1 -> p32525-1.hole1 STIFF
+CONNECT p6558-22.pin1 -> p32525-1.hole2 STIFF
+CONNECT p6558-24.pin1 -> p32525-1.hole10 STIFF
+CONNECT p6558-23.pin1 -> p32525-1.hole11 STIFF
+CONNECT p87083-5.axle2 -> p32525-1.hole3 TURNS
+CONNECT p87083-6.axle2 -> p32525-1.hole8 TURNS
+CONNECT p4519-3.axle1 -> p32525-1.hole7 TURNS
+CONNECT p4519-2.axle1 -> p32525-1.hole9 TURNS
+WHY Closes the selector side with an eleven-hole yellow rail over four blue pins and the four free-turning grey selector shafts.
+STEP 42
+ADD p32014-1 32014 black
+ADD p32014-2 32014 black
+ADD p32062-5 32062 red
+ADD p32062-6 32062 red
+ADD p3713-red1 3713 red
+ADD p3713-red2 3713 red
+CONNECT p32062-5.axle2 -> p32014-1.axlehole1 LOCKED
+CONNECT p32062-5.axle1 -> p3713-red1.axlehole1 LOCKED
+CONNECT p32062-6.axle2 -> p32014-2.axlehole1 LOCKED
+CONNECT p32062-6.axle1 -> p3713-red2.axlehole1 LOCKED
+CONNECT p87083-6.axle1 -> p32014-1.axlehole2 LOCKED
+CONNECT p87083-5.axle1 -> p32014-2.axlehole2 LOCKED
+WHY Builds two black right-angle selector handles with red bushed ends and locks them onto the exposed shafts that turn the red changeover catches.
