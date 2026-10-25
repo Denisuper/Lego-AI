@@ -2572,3 +2572,48 @@ ADD sp-axle6-1 3706 red
 CONNECT sp-axle6-1.axle1 -> sk-axle5-1.axle1~ LOCKED
 CONNECT sp-axle6-1.axle5 -> sl-axle5-1.axle1~ LOCKED
 WHY A red 6-long axle goes through the steering box as the input shaft that will be driven from the chassis.
+STEP 291
+ATTACH ds
+CONNECT ds-beam11-1.hole6~ -> a-axle4-1.axle3~ TURNS
+CONNECT sp-link-1.hole1~ -> ds-conn-1.hole1~ TURNS
+WHY Turns the chassis over and brings the finished front axle up to the front of the frame, ready to fix.
+STEP 292
+CONNECT sp-axle6-1.axle6 -> fs-axle4-1.axle1~ LOCKED
+CONNECT ds-beam7-3.hole2~ -> ba-gpin-1.pin2~ STIFF
+WHY Slides the red axle from the front axle into the drive shaft at the front of the chassis, then checks both shaft ends sit fully in their connectors as the picture shows.
+STEP 293
+WHY Checks the bumper-side mount of the front axle sits in its slot, as the picture's red circle points out.
+STEP 294
+CONNECT ds-axle4-1.axle1 -> fs-pin-1.pin2~ TURNS
+WHY Turns the front axle's pivot into place at the front of the frame as the arrows show.
+STEP 295
+CONNECT sp-link-1.hole1~ -> ds-ball-1.pin2? TURNS
+WHY Presses the end of the tie rod onto the ball at the front corner as the circled arrow shows.
+STEP 296
+ADD ds-conn-9 59443 darkgray
+ADD ds-conn-10 59443 darkgray
+ADD ds-axle5-1 32073 yellow
+CONNECT ds-conn-9.axlehole1 -> ds-axle5-1.axle1 LOCKED
+CONNECT ds-conn-10.axlehole1 -> ds-axle5-1.axle5 LOCKED
+CONNECT ds-axle5-1.axle3 -> sf-axle5-1.axle1~ LOCKED
+WHY A yellow 5-long axle with a connector at each end is the front drive shaft that links the front axle to the diff lock at the middle of the chassis.
+STEP 297
+ADD ds-beam15-1 32278 darkgray
+CONNECT ds-beam15-1.hole1~ -> fm-beam11-1.hole10~ STIFF
+CONNECT ds-beam15-1.hole15~ -> ba-gpin-2.pin2~ STIFF
+WHY A 15-long grey beam is laid along the right side of the front end to join the front axle frame to the chassis side.
+STEP 298
+ADD ds-beam15-2 32278 darkgray
+CONNECT ds-beam15-2.hole1~ -> fq-lbeam-1.hole4~ STIFF
+CONNECT ds-beam15-2.hole15~ -> ba-gpin-4.pin2~ STIFF
+WHY A second 15-long beam goes on the other side so the front axle is held at both sides.
+STEP 299
+ADD cc-lblue-1 43093 blue
+ADD cc-clip-1 62462 white
+ADD cc-clip-2 62462 white
+CONNECT cc-lblue-1.pin1 -> ds-beam15-1.hole7~ STIFF
+CONNECT cc-clip-1.hole1 -> cc-lblue-1.pin2 STIFF
+CONNECT cc-clip-2.hole1~ -> h-apin-1.axle1~ STIFF
+WHY A blue pin and two white slotted clips hold the cables beside the new beam so they stay clear of moving parts.
+STEP 300
+WHY Turns the white clip so its slot grips the cable, as the circled arrow shows.
