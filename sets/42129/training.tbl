@@ -1168,3 +1168,281 @@ ADD rx-pin-4 61332 black
 CONNECT rx-pin-3.pin1 -> rx-beam3-1.hole2~ STIFF
 CONNECT rx-pin-4.pin1 -> rx-beam3-2.hole2~ STIFF
 WHY Two pins at the top of the standing beams hold the next piece.
+STEP 134
+ADD rx-bent-1 32009 black
+CONNECT rx-bent-1.hole3~ -> rx-pin-3.pin2 STIFF
+CONNECT rx-bent-1.hole5~ -> rx-pin-4.pin2 STIFF
+WHY Lays a long double-bent black beam over the two pins to make the arched top of the rear axle housing.
+STEP 135
+ADD rx-hub-1 46490 lightgray
+ADD rx-ball-1 52731 lightgray
+ADD rx-axle4-1 3705 red
+CONNECT rx-ball-1.pin1? -> rx-hub-1.hole1? TURNS
+CONNECT rx-axle4-1.axle1 -> rx-hub-1.axlehole1? LOCKED
+WHY Builds the wheel hub with a built-in gear reduction: a ball joint goes into it and a red 4-long axle goes through the middle.
+STEP 136
+ADD rx-axle3-3 4519 lightgray
+ADD rx-axle3-4 4519 lightgray
+CONNECT rx-axle3-3.axle1 -> rx-hub-1.axlehole2? LOCKED
+CONNECT rx-axle3-4.axle1 -> rx-hub-1.axlehole3? LOCKED
+WHY Two 3-long axles go through the sides of the hub and will carry the arms.
+STEP 137
+ADD rx-lblue-1 42924 blue
+ADD rx-lblue-2 42924 blue
+CONNECT rx-lblue-1.pin1 -> rx-hub-1.hole2? STIFF
+CONNECT rx-lblue-2.pin1 -> rx-hub-1.hole3? STIFF
+WHY Two long blue pins fix the hub into its frame.
+STEP 138
+ADD rx-beam3-3 6632 black
+ADD rx-beam3-4 6632 black
+CONNECT rx-beam3-3.hole1~ -> rx-lblue-1.pin2 STIFF
+CONNECT rx-beam3-4.hole1~ -> rx-lblue-2.pin2 STIFF
+WHY Two thin black 3-beams cover the pins on the back of the hub.
+STEP 139
+ADD rx-lpin-1 11214 red
+ADD rx-beam4-1 32449 darkgray
+ADD rx-beam2-1 41677 darkgray
+CONNECT rx-lpin-1.pin1 -> rx-beam4-1.hole1~ STIFF
+CONNECT rx-beam2-1.hole1~ -> rx-lpin-1.pin2 STIFF
+WHY A red pin carries a thin 4-beam and a thin 2-beam as the first part of the steering link on the hub.
+STEP 140
+ADD rx-lpin-2 11214 red
+ADD rx-beam4-2 2825 lightgray
+CONNECT rx-lpin-2.pin1 -> rx-beam4-2.hole1~ STIFF
+CONNECT rx-beam4-2.hole3~ -> rx-hub-1.hole4? STIFF
+WHY A second red pin and a light grey 4-beam fix the steering link to the hub from the other side.
+STEP 141
+ADD rx-gear20-1 35185 blue
+ADD rx-ring-1 18947 darkgray
+ADD rx-lpin-3 11214 red
+CONNECT rx-gear20-1.axlehole1 -> rx-axle4-1.axle2~ LOCKED
+CONNECT rx-lpin-3.axle1 -> rx-ring-1.axlehole1? LOCKED
+CONNECT rx-ring-1.axlehole2? -> rx-axle4-1.axle4 LOCKED
+WHY A blue 20-tooth clutch gear and a driving ring on a red pin go on the axle to make the lock for the rear differential.
+STEP 142
+GROUP df
+ADD df-house-1 65414 lightgray
+ADD df-gear28-1 65413 red
+ADD df-axle2-1 32062 red
+ADD df-bevel-1 6589 tan
+ADD df-bevel-2 6589 tan
+ADD df-bevel-3 6589 tan
+ADD df-bevel-4 6589 tan
+ADD df-bevel-5 6589 tan
+CONNECT df-bevel-1.axlehole1 -> df-house-1.axlehole1? TURNS
+CONNECT df-bevel-2.axlehole1 -> df-house-1.axlehole2? TURNS
+CONNECT df-gear28-1.axlehole1? -> df-house-1.axlehole3? LOCKED
+CONNECT df-axle2-1.axle1 -> df-house-1.axlehole1? LOCKED
+MESH df-bevel-1.teeth df-bevel-3.teeth
+MESH df-bevel-2.teeth df-bevel-3.teeth
+END
+ATTACH df
+CONNECT df-axle2-1.axle2 -> rx-ring-1.axlehole1? LOCKED
+WHY Builds the rear differential: five tan bevel gears in a grey housing closed by a red 28-tooth gear, then joins it to the axle and driving ring.
+STEP 143
+ADD rz-beam5-1 32316 black
+ADD rz-pin-1 61332 black
+ADD rz-pin-2 61332 black
+CONNECT rz-pin-1.pin1 -> rz-beam5-1.hole2~ STIFF
+CONNECT rz-pin-2.pin1 -> rz-beam5-1.hole4~ STIFF
+WHY Starts the second half of the rear axle with a black 5-beam and two pins, the mirror of steps 130-133.
+STEP 144
+ADD rz-trip-1 63869 lightgray
+ADD rz-trip-2 63869 lightgray
+CONNECT rz-trip-1.hole1~ -> rz-pin-1.pin2 STIFF
+CONNECT rz-trip-2.hole1~ -> rz-pin-2.pin2 STIFF
+WHY Puts two grey triple connectors on the pins to hold the second axle end.
+STEP 145
+ADD rz-beam2-1 41677 darkgray
+ADD rz-lpin-1 11214 red
+ADD rz-lblue-1 42924 blue
+CONNECT rz-lpin-1.pin1 -> rz-beam2-1.hole1~ STIFF
+CONNECT rz-lblue-1.pin1 -> rz-beam2-1.hole2~ STIFF
+CONNECT rz-beam2-1.hole1~ -> rz-trip-1.hole2~ STIFF
+WHY A thin 2-beam with a red pin and a blue pin goes on the connector as the second steering link.
+STEP 146
+ADD rz-pin-3 61332 black
+CONNECT rz-pin-3.pin1 -> rz-trip-2.hole2~ STIFF
+WHY One more pin is added to the second connector to hold the next beam.
+STEP 147
+ADD rz-bent-1 32009 black
+CONNECT rz-bent-1.hole3~ -> rz-pin-3.pin2 STIFF
+CONNECT rz-bent-1.hole5~ -> rz-lblue-1.pin2 STIFF
+WHY A second bent black beam makes the matching arched top on the second side.
+STEP 148
+ADD rz-hub-1 46490 lightgray
+ADD rz-ball-1 52731 lightgray
+ADD rz-axle3-1 4519 lightgray
+ADD rz-axle3-2 4519 lightgray
+ADD rz-axle3-3 4519 lightgray
+ADD rz-beam3-1 6632 black
+ADD rz-beam3-2 6632 black
+CONNECT rz-ball-1.pin1? -> rz-hub-1.hole1? TURNS
+CONNECT rz-axle3-1.axle1 -> rz-hub-1.axlehole1? LOCKED
+CONNECT rz-beam3-1.hole1~ -> rz-axle3-2.axle2~ TURNS
+CONNECT rz-beam3-2.hole1~ -> rz-axle3-3.axle2~ TURNS
+WHY Builds the second wheel hub like the first: a ball joint and axle in the hub with a thin black beam on each side.
+STEP 149
+ADD rz-axle3-4 4519 lightgray
+ADD rz-axle3-5 4519 lightgray
+CONNECT rz-axle3-4.axle1 -> rz-hub-1.axlehole2? LOCKED
+CONNECT rz-axle3-5.axle1 -> rz-hub-1.axlehole3? LOCKED
+WHY Two more 3-long axles go through the sides of the hub.
+STEP 150
+ADD rz-lblue-2 42924 blue
+ADD rz-lblue-3 42924 blue
+CONNECT rz-lblue-2.pin1 -> rz-hub-1.hole2? STIFF
+CONNECT rz-lblue-3.pin1 -> rz-hub-1.hole3? STIFF
+WHY Two long blue pins fix the hub in its frame.
+STEP 151
+ADD rz-beam3-3 6632 black
+ADD rz-beam3-4 6632 black
+CONNECT rz-beam3-3.hole1~ -> rz-lblue-2.pin2 STIFF
+CONNECT rz-beam3-4.hole1~ -> rz-lblue-3.pin2 STIFF
+WHY Two thin black 3-beams cover the pins on the back of the hub.
+STEP 152
+ADD rz-lpin-2 11214 red
+ADD rz-beam4-1 32449 darkgray
+ADD rz-beam2-2 41677 darkgray
+CONNECT rz-lpin-2.pin1 -> rz-beam4-1.hole1~ STIFF
+CONNECT rz-beam2-2.hole1~ -> rz-lpin-2.pin2 STIFF
+WHY A red pin carries a thin 4-beam and 2-beam as the first steering link on the second hub.
+STEP 153
+ADD rz-lpin-3 11214 red
+ADD rz-beam4-2 2825 lightgray
+CONNECT rz-lpin-3.pin1 -> rz-beam4-2.hole1~ STIFF
+CONNECT rz-beam4-2.hole3~ -> rz-hub-1.hole4? STIFF
+WHY A second red pin and light 4-beam fix the steering link on the other side of the hub.
+STEP 154
+CONNECT rz-hub-1.hole5? -> rx-hub-1.hole5? TURNS
+CONNECT df-gear28-1.axlehole2? -> rz-axle3-1.axle3~ LOCKED
+WHY Joins the two hub halves on the two ends of the differential so the whole rear axle is one piece.
+STEP 155
+GROUP lk
+ADD lk-axle8-1 55013 darkgray
+ADD lk-conn-1 32034 black
+CONNECT lk-conn-1.axlehole1 -> lk-axle8-1.axle4 LOCKED
+WHY Starts the rear differential lock shaft: an 8-long axle with an angled connector part way along it.
+STEP 156
+ADD lk-shift-1 35188 orange
+ADD lk-bush-1 3713 red
+CONNECT lk-bush-1.axlehole1 -> lk-axle8-1.axle2 LOCKED
+CONNECT lk-shift-1.axlehole1? -> lk-axle8-1.axle6 TURNS
+WHY A red bush and an orange gear shifter go on the axle; the shifter slides the lock.
+STEP 157
+ADD lk-gear12-1 32270 black
+ADD lk-bush-2 3713 red
+CONNECT lk-bush-2.axlehole1 -> lk-axle8-1.axle7 LOCKED
+CONNECT lk-gear12-1.axlehole1 -> lk-axle8-1.axle8 LOCKED
+WHY A 12-tooth double bevel gear and a red bush go on the end of the shaft to hold the shifter.
+STEP 158
+ADD lk-bush-3 3713 red
+ADD lk-conn-2 32034 black
+CONNECT lk-bush-3.axlehole1 -> lk-axle8-1.axle1 LOCKED
+CONNECT lk-conn-2.axlehole1 -> lk-axle8-1.axle8~ LOCKED
+WHY A second angled connector and bush at the other end make the shaft a self-contained unit.
+STEP 159
+ADD lk-bpin-1 43093 blue
+ADD lk-bpin-2 43093 blue
+CONNECT lk-bpin-1.pin1 -> lk-conn-1.hole1~ STIFF
+CONNECT lk-bpin-2.pin1 -> lk-conn-2.hole1~ STIFF
+WHY Two blue pins go in the angled connectors to join the shaft to the beam in the next step.
+STEP 160
+ADD lk-beam11-1 73507 black
+CONNECT lk-beam11-1.hole3~ -> lk-bpin-1.pin2 STIFF
+CONNECT lk-beam11-1.hole9~ -> lk-bpin-2.pin2 STIFF
+WHY An 11-long black beam carries the whole lock shaft.
+STEP 161
+ADD lk-bpin-3 43093 blue
+ADD lk-lpin-1 11214 red
+CONNECT lk-bpin-3.pin1 -> lk-beam11-1.hole1~ STIFF
+CONNECT lk-lpin-1.axle1 -> lk-bpin-3.axle1 LOCKED
+WHY A red axle pin on a blue pin at the end of the beam makes a handle to move the shifter.
+STEP 162
+ADD lk-bpin-4 43093 blue
+ADD lk-lpin-2 11214 red
+ADD lk-lpin-3 11214 red
+CONNECT lk-bpin-4.pin1 -> lk-beam11-1.hole5~ STIFF
+CONNECT lk-lpin-2.pin1 -> lk-beam11-1.hole7~ STIFF
+CONNECT lk-lpin-3.pin1 -> lk-beam11-1.hole11~ STIFF
+WHY Adds a blue pin and two red pins along the beam to hold it into the rear axle frame.
+STEP 163
+ADD lk-beam11-2 73507 black
+ADD lk-beam2-1 43857 black
+CONNECT lk-beam11-2.hole1~ -> lk-lpin-2.pin2~ STIFF
+CONNECT lk-beam2-1.hole1~ -> lk-beam11-2.hole11~ STIFF
+WHY Adds a second 11-beam on the other side of the lock shaft with a small black beam at the end to make a closed frame.
+STEP 164
+ATTACH lk
+CONNECT lk-beam11-1.hole2~ -> rx-bent-1.hole8~ STIFF
+CONNECT lk-beam11-2.hole2~ -> rz-bent-1.hole8~ STIFF
+WHY Fits the finished lock frame across the rear axle so the shifter sits next to the differential.
+STEP 165
+ADD lk-pin-1 61332 black
+ADD lk-pin-2 61332 black
+ADD lk-pin-3 61332 black
+CONNECT lk-pin-1.pin1 -> lk-beam11-1.hole4~ STIFF
+CONNECT lk-pin-2.pin1 -> lk-beam11-1.hole6~ STIFF
+CONNECT lk-pin-3.pin1 -> lk-beam11-2.hole6~ STIFF
+WHY Three black pins hold the lock frame onto the axle housing.
+STEP 166
+GROUP lc
+ADD lc-cb-1 39793 black
+ADD lc-pin-1 61332 black
+ADD lc-bpin-1 43093 blue
+ADD lc-lblue-1 42924 blue
+CONNECT lc-pin-1.pin1 -> lc-cb-1.hole1~ STIFF
+CONNECT lc-bpin-1.pin1 -> lc-cb-1.hole3~ STIFF
+CONNECT lc-lblue-1.pin1 -> lc-cb-1.hole5~ STIFF
+END
+ATTACH lc
+CONNECT lc-pin-1.pin2 -> lk-beam11-1.hole8~ STIFF
+WHY Builds a black 3x3 connector beam with three pins and fits it onto the axle frame as the mount for the rear shock arms.
+STEP 167
+ADD lc-lpin-1 11214 red
+ADD lc-lpin-2 11214 red
+ADD lc-beam4-1 2825 lightgray
+ADD lc-beam4-2 2825 lightgray
+CONNECT lc-lpin-1.pin1 -> lc-beam4-1.hole1~ STIFF
+CONNECT lc-lpin-2.pin1 -> lc-beam4-2.hole1~ STIFF
+CONNECT lc-beam4-1.hole3~ -> rx-hub-1.hole5? STIFF
+CONNECT lc-beam4-2.hole3~ -> rz-hub-1.hole5? STIFF
+WHY Red pins in light 4-beams go onto each hub as the arms the suspension will push on.
+STEP 168
+GROUP ya
+ADD ya-axle5-1 32073 yellow
+ADD ya-beam4-1 32449 darkgray
+ADD ya-beam2-1 41677 darkgray
+CONNECT ya-axle5-1.axle1 -> ya-beam4-1.axlehole1? LOCKED
+CONNECT ya-beam2-1.hole1~ -> ya-beam4-1.hole2~ STIFF
+END
+ATTACH ya
+CONNECT ya-beam4-1.hole4~ -> lc-lblue-1.pin2~ STIFF
+WHY Builds a yellow axle in a thin 4-beam with a small beam and fixes it beside the lock to carry the next gear.
+STEP 169
+ADD ya-lpin-1 11214 red
+ADD ya-beam4-2 32449 darkgray
+ADD ya-beam2-2 41677 darkgray
+CONNECT ya-lpin-1.pin1 -> ya-beam4-2.hole1~ STIFF
+CONNECT ya-beam2-2.hole1~ -> ya-lpin-1.pin2 STIFF
+CONNECT ya-beam4-2.hole3~ -> lk-pin-3.pin2~ STIFF
+WHY A red pin carries a second thin 4-beam and 2-beam on the other side of the frame.
+STEP 170
+GROUP yb
+ADD yb-bpin-1 43093 blue
+ADD yb-lpin-1 11214 red
+ADD yb-axle4-1 87083 darkgray
+ADD yb-tpin-1 3749 tan
+ADD yb-axle3-1 4519 lightgray
+ADD yb-conn-1 32034 black
+ADD yb-gear-1 94925 lightgray
+CONNECT yb-axle3-1.axle1 -> yb-axle4-1.axle1 LOCKED
+CONNECT yb-gear-1.axlehole1 -> yb-axle3-1.axle2 LOCKED
+CONNECT yb-conn-1.axlehole1 -> yb-axle3-1.axle3 LOCKED
+CONNECT yb-bpin-1.pin1 -> yb-conn-1.hole1~ STIFF
+CONNECT yb-tpin-1.pin1 -> yb-axle4-1.axle4~ TURNS
+END
+ATTACH yb
+CONNECT yb-gear-1.teeth -> ya-axle5-1.axle3~ TURNS
+CONNECT yb-lpin-1.pin1 -> yb-conn-1.hole2~ STIFF
+WHY Builds a short shaft with a gear and angled connector and fits it next to the yellow axle so the gear can drive the lock.
