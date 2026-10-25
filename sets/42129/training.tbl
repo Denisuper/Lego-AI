@@ -2401,3 +2401,110 @@ ADD sn-pin-8 61332 black
 CONNECT sn-pin-7.pin1 -> sn-lbeam-1.hole3~ STIFF
 CONNECT sn-pin-8.pin1 -> sn-lbeam-4.hole3~ STIFF
 WHY Two black pins go in the braces from the back to lock the steering box together.
+STEP 268
+GROUP sq
+ADD sq-ang-1 32034 black
+ADD sq-gpin-1 65304 lightgray
+ADD sq-conn-1 6536 darkgray
+ADD sq-conn-2 6536 darkgray
+ADD sq-bush-1 3713 red
+CONNECT sq-conn-1.axlehole1 -> sq-ang-1.axlehole1? LOCKED
+CONNECT sq-conn-2.hole1~ -> sq-conn-1.hole1 STIFF
+CONNECT sq-gpin-1.pin1 -> sq-conn-2.hole2 STIFF
+CONNECT sq-bush-1.axlehole1 -> sq-ang-1.axle1? LOCKED
+END
+ATTACH sq
+CONNECT sq-conn-1.hole2~ -> sn-lbeam-4.hole5~ STIFF
+WHY Builds a second small connector stack with an angled connector, a grey pin and a red bush and fits it to the other end of the steering box.
+STEP 269
+GROUP sr
+ADD sr-axle5-1 32073 yellow
+ADD sr-conn-1 6536 darkgray
+ADD sr-conn-2 6536 darkgray
+ADD sr-conn-3 6536 darkgray
+ADD sr-conn-4 6536 darkgray
+ADD sr-conn-5 42003 lightgray
+CONNECT sr-conn-1.axlehole1 -> sr-axle5-1.axle1 LOCKED
+CONNECT sr-conn-2.axlehole1 -> sr-axle5-1.axle3 LOCKED
+CONNECT sr-conn-3.hole1~ -> sr-conn-1.hole1 STIFF
+CONNECT sr-conn-4.hole1~ -> sr-conn-2.hole1 STIFF
+CONNECT sr-conn-5.axlehole1 -> sr-axle5-1.axle5 LOCKED
+END
+ATTACH sr
+CONNECT sr-conn-1.hole2~ -> sq-conn-1.hole1~ TURNS
+WHY Builds a yellow axle with four connectors and a light connector in three small steps and fits it between the two connector stacks.
+STEP 270
+ADD sr-axle4-1 87083 darkgray
+ADD sr-bush-1 3713 red
+CONNECT sr-axle4-1.axle1 -> sr-conn-5.hole1~ TURNS
+CONNECT sr-bush-1.axlehole1 -> sr-axle4-1.axle4 LOCKED
+WHY A 4-long axle with a red bush locks the connector assembly in place.
+STEP 271
+ADD sr-beam2-1 60483 darkgray
+ADD sr-lpin-1 11214 red
+ADD sr-lpin-2 11214 red
+CONNECT sr-lpin-1.pin1 -> sr-beam2-1.hole1~ STIFF
+CONNECT sr-lpin-2.pin1 -> sr-beam2-1.hole2~ STIFF
+CONNECT sr-lpin-1.pin2 -> sq-conn-2.hole3~ STIFF
+WHY A small beam with two red pins goes underneath to tie the two connector stacks together.
+STEP 272
+GROUP sm
+ADD sm-motor-1 22169 lightgray
+ADD sm-pin-1 61332 black
+ADD sm-pin-2 61332 black
+ADD sm-pin-3 61332 black
+CONNECT sm-pin-1.pin1 -> sm-motor-1.hole1? STIFF
+CONNECT sm-pin-2.pin1 -> sm-motor-1.hole2? STIFF
+CONNECT sm-pin-3.pin1 -> sm-motor-1.hole3? STIFF
+WHY Starts the steering motor (a large motor with three pins in its front holes).
+STEP 273
+ADD sm-cb-1 39793 white
+CONNECT sm-cb-1.hole1~ -> sm-pin-1.pin2 STIFF
+CONNECT sm-cb-1.hole2~ -> sm-pin-2.pin2 STIFF
+WHY A white connector beam over the pins makes a mount on the front of the motor.
+STEP 274
+ADD sm-tpin-1 3749 tan
+CONNECT sm-tpin-1.pin1 -> sm-cb-1.hole3~ TURNS
+CONNECT sm-tpin-1.pin2 -> sm-motor-1.axlehole1? TURNS
+WHY A tan frictionless pin in the white beam is a bearing for the motor gear.
+STEP 275
+ADD sm-gear-1 32270 black
+CONNECT sm-gear-1.axlehole1 -> sm-motor-1.axlehole1? LOCKED
+WHY A black 12-tooth double bevel gear on the motor shaft will drive the steering rack.
+STEP 276
+WHY Turns the motor to show it from the back so the next steps can be placed.
+STEP 277
+ATTACH sm
+CONNECT sm-cb-1.hole1~ -> sr-beam2-1.hole3~ STIFF
+CONNECT sm-gear-1.teeth -> rk-rack-1.teeth? MESH
+WHY Fits the finished steering motor beside the steering box with its gear against the rack.
+STEP 278
+WHY Pulls the motor cable up through the frame so it will not be trapped by the next parts.
+STEP 279
+ADD sp-tbeam-1 60484 black
+ADD sp-pin-1 61332 black
+ADD sp-pin-2 61332 black
+ADD sp-tpin-1 66906 red
+CONNECT sp-pin-1.pin1 -> sp-tbeam-1.hole1~ STIFF
+CONNECT sp-pin-2.pin1 -> sp-tbeam-1.hole3~ STIFF
+CONNECT sp-tpin-1.pin1 -> sp-tbeam-1.hole5~ STIFF
+CONNECT sp-tbeam-1.hole2~ -> sn-lbeam-1.hole5~ STIFF
+WHY A black T-beam with two pins and a red towball pin is fixed on the underside as a cable guide.
+STEP 280
+ADD sp-link-1 32005 darkgray
+CONNECT sp-link-1.hole1~ -> sp-tpin-1.pin2 TURNS
+WHY A grey 6-long link clips onto the red towball pin and will be the steering tie rod.
+STEP 281
+ADD sp-lpin-1 11214 red
+ADD sp-conn-1 6536 darkgray
+ADD sp-conn-2 42003 lightgray
+CONNECT sp-lpin-1.axle1 -> sp-conn-1.axlehole1 LOCKED
+CONNECT sp-conn-2.hole1~ -> sp-lpin-1.pin2 STIFF
+CONNECT sp-conn-1.hole1~ -> sp-link-1.hole6~ TURNS
+WHY A red pin in a connector joins the end of the tie rod to a light connector on the steering arm.
+STEP 282
+ADD sp-conn-3 6536 darkgray
+ADD sp-bush-1 3713 red
+CONNECT sp-conn-3.hole1~ -> sp-conn-2.hole2~ STIFF
+CONNECT sp-bush-1.axlehole1 -> sp-lpin-1.axle1 LOCKED
+WHY A connector and a red bush hold the tie rod end on so it can pivot but not fall off.
