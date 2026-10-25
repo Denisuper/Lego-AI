@@ -1944,3 +1944,126 @@ ATTACH rr
 CONNECT rr-lblue-1.pin2 -> sh-lblue-1.pin2~ STIFF
 CONNECT rr-lblue-3.pin2 -> sh-lblue-3.pin2~ STIFF
 WHY Lowers the finished rear frame onto the four blue pins at the back of the chassis.
+STEP 225
+ADD rx2-axle4-1 87083 darkgray
+ADD rx2-axle4-2 87083 darkgray
+CONNECT rx2-axle4-1.axle1 -> rr-beam11-1.hole3~ TURNS
+CONNECT rx2-axle4-2.axle1 -> rr-beam11-2.hole3~ TURNS
+WHY Pushes two 4-long axles with stops across the rear frame into the rear axle beams as hinge pins.
+STEP 226
+ADD rx2-pin-1 61332 black
+ADD rx2-pin-2 61332 black
+ADD rx2-pin-3 61332 black
+ADD rx2-pin-4 61332 black
+ADD rx2-pin-5 61332 black
+ADD rx2-pin-6 61332 black
+CONNECT rx2-pin-1.pin1 -> rr-beam11-1.hole12~ STIFF
+CONNECT rx2-pin-2.pin1 -> rr-beam11-1.hole13~ STIFF
+CONNECT rx2-pin-3.pin1 -> rr-beam11-1.hole14~ STIFF
+CONNECT rx2-pin-4.pin1 -> rr-beam11-2.hole12~ STIFF
+CONNECT rx2-pin-5.pin1 -> rr-beam11-2.hole13~ STIFF
+CONNECT rx2-pin-6.pin1 -> rr-beam11-2.hole14~ STIFF
+WHY Six black pins go into the back end of the rails for the rear cross member.
+STEP 227
+ADD rx2-pin-7 61332 black
+ADD rx2-pin-8 61332 black
+ADD rx2-lbeam-1 32526 black
+ADD rx2-lbeam-2 32526 black
+CONNECT rx2-pin-7.pin1 -> rr-beam11-1.hole15~ STIFF
+CONNECT rx2-pin-8.pin1 -> rr-beam11-2.hole15~ STIFF
+CONNECT rx2-lbeam-1.hole1~ -> rx2-pin-1.pin2 STIFF
+CONNECT rx2-lbeam-2.hole1~ -> rx2-pin-4.pin2 STIFF
+WHY Two black 3x5 L-beams on the pins make the rear corners of the chassis.
+STEP 228
+ADD rf2-panel-1 71709 black
+ADD rf2-panel-2 71709 black
+ADD rf2-panel-3 15458 black
+ADD rf2-panel-4 15458 black
+ADD rf2-ring-1 18654 lightgray
+ADD rf2-ring-2 18654 lightgray
+ADD rf2-ring-3 18654 lightgray
+ADD rf2-ring-4 18654 lightgray
+ADD rf2-ring-5 18654 lightgray
+ADD rf2-ring-6 18654 lightgray
+ADD rf2-pin-1 61332 black
+ADD rf2-pin-2 61332 black
+ADD rf2-pin-3 61332 black
+ADD rf2-pin-4 61332 black
+CONNECT rf2-pin-1.pin1 -> rf2-panel-3.hole1~ STIFF
+CONNECT rf2-panel-1.hole1~ -> rf2-pin-1.pin2 STIFF
+CONNECT rf2-pin-2.pin1 -> rf2-panel-4.hole1~ STIFF
+CONNECT rf2-panel-2.hole1~ -> rf2-pin-2.pin2 STIFF
+CONNECT rf2-ring-1.hole1 -> rf2-panel-1.hole3~ STIFF
+CONNECT rf2-ring-2.hole1 -> rf2-panel-2.hole3~ STIFF
+CONNECT rf2-panel-3.hole5~ -> rr-pin-2.pin2~ STIFF
+CONNECT rf2-panel-4.hole5~ -> rr-pin-4.pin2~ STIFF
+WHY Lays long and short black panels over the rear frame on each side with round connectors and pins to close in the rear deck.
+STEP 229
+GROUP ds
+ADD ds-lift-1 61408 red
+ADD ds-bpin-1 43093 blue
+CONNECT ds-bpin-1.pin1 -> ds-lift-1.hole1~ STIFF
+WHY Starts the transfer box: a red 3-long liftarm with a blue pin.
+STEP 230
+ADD ds-frame-1 64179 black
+CONNECT ds-lift-1.hole3~ -> ds-frame-1.hole4~ STIFF
+WHY A black 5x7 frame around the red liftarm will hold the transfer gears.
+STEP 231
+ADD ds-house-1 65414 lightgray
+ADD ds-gear28-1 65413 red
+ADD ds-bevel-1 6589 tan
+ADD ds-bevel-2 6589 tan
+ADD ds-bevel-3 6589 tan
+ADD ds-bevel-4 6589 tan
+ADD ds-bevel-5 6589 tan
+CONNECT ds-bevel-1.axlehole1 -> ds-house-1.axlehole1? TURNS
+CONNECT ds-bevel-2.axlehole1 -> ds-house-1.axlehole2? TURNS
+CONNECT ds-gear28-1.axlehole1? -> ds-house-1.axlehole3? LOCKED
+MESH ds-bevel-1.teeth ds-bevel-3.teeth
+MESH ds-bevel-2.teeth ds-bevel-3.teeth
+CONNECT ds-house-1.hole1~ -> ds-frame-1.hole6~ TURNS
+WHY Builds another differential from five tan bevel gears in a grey housing closed by a red 28-tooth gear, and sets it in the frame.
+STEP 232
+ADD ds-axle3-1 4519 lightgray
+ADD ds-axle3-2 4519 lightgray
+CONNECT ds-axle3-1.axle1 -> ds-house-1.axlehole1? LOCKED
+CONNECT ds-axle3-2.axle1 -> ds-house-1.axlehole2? LOCKED
+WHY Two 3-long axles go into the sides of the differential as its outputs.
+STEP 233
+ADD ds-gear-1 94925 lightgray
+ADD ds-axle6-1 3706 red
+CONNECT ds-axle6-1.axle1 -> ds-frame-1.hole2~ TURNS
+CONNECT ds-gear-1.axlehole1 -> ds-axle6-1.axle5 LOCKED
+MESH ds-gear-1.teeth ds-gear28-1.teeth
+WHY A red 6-long axle with a small gear meshes with the big red gear to drive the differential.
+STEP 234
+ADD ds-beam7-1 32524 darkgray
+ADD ds-beam7-2 32524 darkgray
+ADD ds-bpin-2 43093 blue
+ADD ds-bpin-3 43093 blue
+ADD ds-bpin-4 43093 blue
+ADD ds-bpin-5 43093 blue
+CONNECT ds-bpin-2.pin1 -> ds-frame-1.hole1~ STIFF
+CONNECT ds-bpin-3.pin1 -> ds-frame-1.hole7~ STIFF
+CONNECT ds-beam7-1.hole1~ -> ds-bpin-2.pin2 STIFF
+CONNECT ds-beam7-1.hole7~ -> ds-bpin-3.pin2 STIFF
+CONNECT ds-bpin-4.pin1 -> ds-frame-1.hole13~ STIFF
+CONNECT ds-bpin-5.pin1 -> ds-frame-1.hole19~ STIFF
+CONNECT ds-beam7-2.hole1~ -> ds-bpin-4.pin2 STIFF
+CONNECT ds-beam7-2.hole7~ -> ds-bpin-5.pin2 STIFF
+WHY Two 7-long grey beams on blue pins close the top of the frame around the gear.
+STEP 235
+ADD ds-pin-1 61332 black
+ADD ds-pin-2 61332 black
+CONNECT ds-pin-1.pin1 -> ds-beam7-1.hole3~ STIFF
+CONNECT ds-pin-2.pin1 -> ds-beam7-1.hole5~ STIFF
+WHY Two black pins on top of the first beam hold the 5-beam in the next step.
+STEP 236
+ADD ds-beam5-1 32316 black
+ADD ds-hub-1 65487 lightgray
+ADD ds-hub-2 65487 lightgray
+CONNECT ds-beam5-1.hole2~ -> ds-pin-1.pin2 STIFF
+CONNECT ds-beam5-1.hole4~ -> ds-pin-2.pin2 STIFF
+CONNECT ds-hub-1.pin1 -> ds-beam5-1.hole1~ STIFF
+CONNECT ds-hub-2.pin1 -> ds-beam5-1.hole5~ STIFF
+WHY A black 5-beam with two small hubs on the pins gives the box its cover and two mounting posts.
