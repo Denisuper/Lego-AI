@@ -55,7 +55,7 @@ training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
 Finished sets keep only booklet, parts list, training.tbl and training.jsonl. The steps live in training.tbl/.jsonl, so there is no separate steps.md per set (never add one). 42114 in progress: training.tbl + training.jsonl for steps 1-54, continuing from booklet page 37.
-NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42129 (parts list also incomplete), 8049.
+NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42029, 42049, 42094, 42129 (parts list also incomplete), 8049.
 
 ## Finishing a NOT STARTED set (prompt for agents)
 Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/training.tbl first and copy its header and STEP format. These sets have no step folders left (unconverted old-format work was deleted rather than carried forward) - read the booklet directly, per "How to add a set" above. Give an agent this prompt, one set at a time:
@@ -121,7 +121,8 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 - 42114 in progress: training.tbl + training.jsonl for steps 1-54 (booklet pages 6-43). Remaining steps 55-508 from pages 37-300 still to transcribe.
 - sets/differentials/ and sets/gearboxes/ are fan MOCs, not official sets. Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-266362 (12 steps), MOC-226025 (41 steps), MOC-65060 (47 steps), MOC-150019 (32 steps), MOC-51409 (88 steps, 251 parts - largest in the project), MOC-50877 (36 steps). Parts lists only (no training files yet): MOC-171508 (+ parts_list_booklet2.csv for its alternate booklet), MOC-180337, MOC-74158, MOC-187095, MOC-54174, MOC-191057, MOC-6speed-gearbox (unconfirmed - no part numbers in that booklet), Differential-v2, MOC-157410, MOC-158072, MOC-185197, MOC-31209, MOC-31377, MOC-194194. Confidence on the fan MOCs is lower than 8047/42175/42061/42116: many small similar-looking connector parts are a best reading of the render, and several (6speed-gearbox, Differential-v2, etc.) have no printed part numbers in their booklet at all.
 - 42101 (Dune Buggy, 117 pieces, 36 steps) is done: booklet, parts list, training.tbl, training.jsonl, 0 errors from check_notation.py.
-- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" above.
+- 42021 (Snowmobile, 186 pieces, 38 steps) is done: booklet (main A-model only; the B-model alternate booklet was deleted as it doesn't match parts_list.csv's build), parts list, training.tbl, training.jsonl, 0 errors from check_notation.py.
+- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42029, 42049, 42094, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" above.
 
 ## Saving (agents)
 Work only inside `sets/<set>/`. Commit only that folder, no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.
