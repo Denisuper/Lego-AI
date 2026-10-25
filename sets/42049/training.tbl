@@ -777,3 +777,164 @@ CONNECT p32073-6.axle4 -> p32034-5.hole1 TURNS
 MESH p32270-5.teeth p18938-1.teeth
 RATIO p32270-5 p18938-1 12/60
 WHY Brings the front and rear chassis together around the drive shaft and meshes the steering pinion with the large turntable.
+STEP 83
+ADD p32524-1 32524 yellow
+ADD p32524-2 32524 yellow
+CONNECT p6558-7.pin1 -> p32524-1.hole3 STIFF
+CONNECT p6558-8.pin1 -> p32524-1.hole1 STIFF
+CONNECT p6558-9.pin1 -> p32524-2.hole1 STIFF
+CONNECT p6558-10.pin1 -> p32524-2.hole3 STIFF
+CONNECT p6558-3.pin3 -> p32524-2.hole7 STIFF
+CONNECT p6558-4.pin3 -> p32524-1.hole7 STIFF
+CONNECT p3705-6.axle3 -> p32524-1.hole5 TURNS
+CONNECT p3705-7.axle3 -> p32524-2.hole5 TURNS
+WHY Bridges the grey turntable base to the rear bracket with two parallel yellow beams while retaining the free cross axles.
+STEP 84
+WHY Folds the two loose grey connector arms downward so their long axles point clear of the steering joint.
+STEP 85
+ADD p61903-2 61903 lightgray
+ADD p61903-3 61903 lightgray
+ADD p3706-2 3706 red
+CONNECT p32073-6.axle1 -> p61903-2.axlehole1 LOCKED
+CONNECT p3706-2.axle1~ -> p61903-2.axlehole2 LOCKED
+CONNECT p3706-2.axle6~ -> p61903-3.axlehole1 LOCKED
+WHY Extends the control shaft with two universal joints and a red axle so it can follow the lifting assembly while transmitting rotation.
+STEP 86
+GROUP lift-lever
+ADD p32073-7 32073 lightgray
+ADD p33299b-1 33299b black
+CONNECT p32073-7.axle2 -> p33299b-1.axlehole1 LOCKED
+WHY Starts the lift lever with a black crank plate set one axle length in from the end of its cross shaft.
+STEP 87
+ADD p32524-3 32524 yellow
+ADD p33299b-2 33299b black
+CONNECT p32073-7.axle3 -> p32524-3.hole1 TURNS
+CONNECT p32073-7.axle4 -> p33299b-2.axlehole1 LOCKED
+WHY Mounts the long yellow lever between the paired black crank plates and applies its control sticker.
+STEP 88
+ADD p3705-8 3705 black
+ADD p3705-9 3705 black
+ADD p6536-11 6536 yellow
+ADD p6536-12 6536 yellow
+ADD p6536-13 6536 yellow
+ADD p6536-14 6536 yellow
+ADD p6536-15 6536 yellow
+ADD p6536-16 6536 yellow
+ADD p32123b-5 32123b lightgray
+ADD p32123b-6 32123b lightgray
+ADD p32123b-7 32123b lightgray
+ADD p32123b-8 32123b lightgray
+CONNECT p3705-8.axle2 -> p6536-11.axlehole1 LOCKED
+CONNECT p3705-8.axle1 -> p6536-12.axlehole1 LOCKED
+CONNECT p3705-8.axle4 -> p6536-13.axlehole1 LOCKED
+CONNECT p3705-8.axle2 -> p32123b-5.axlehole1 LOCKED
+CONNECT p3705-8.axle3 -> p32123b-6.axlehole1 LOCKED
+CONNECT p3705-9.axle2 -> p6536-14.axlehole1 LOCKED
+CONNECT p3705-9.axle1 -> p6536-15.axlehole1 LOCKED
+CONNECT p3705-9.axle4 -> p6536-16.axlehole1 LOCKED
+CONNECT p3705-9.axle2 -> p32123b-7.axlehole1 LOCKED
+CONNECT p3705-9.axle3 -> p32123b-8.axlehole1 LOCKED
+CONNECT p33299b-1.pin1 -> p6536-14.hole1 STIFF
+CONNECT p33299b-2.pin1 -> p6536-11.hole1 STIFF
+WHY Adds the two yellow pivot crossbars with half bushes separating the center and outer lugs on each shaft.
+STEP 89
+ADD p32556-1 32556 tan
+CONNECT p32556-1.pin2 -> p32524-3.hole7 TURNS
+END
+WHY Adds the frictionless tip pin that will link the hand lever to the moving lift arms.
+STEP 90
+ATTACH lift-lever
+CONNECT p32054-7.pin2 -> p6536-12.hole1 STIFF
+CONNECT p32054-8.pin2 -> p6536-13.hole1 STIFF
+CONNECT p32054-9.pin2 -> p6536-16.hole1 STIFF
+CONNECT p32054-10.pin2 -> p6536-15.hole1 STIFF
+WHY Mounts both yellow crossbars on the four chassis posts with the long hand lever standing above them.
+STEP 91
+GROUP grabber
+ADD p44294-2 44294 yellow
+ADD p6536-17 6536 yellow
+CONNECT p44294-2.axle1 -> p6536-17.axlehole1 LOCKED
+WHY Starts the grabber's main cross shaft with a yellow perpendicular connector at one end.
+STEP 92
+ADD p42003-3 42003 lightgray
+ADD p43093-8 43093 blue
+ADD p3713-10 3713 red
+CONNECT p43093-8.axle1 -> p3713-10.axlehole1 LOCKED
+CONNECT p43093-8.pin1 -> p42003-3.hole1 STIFF
+CONNECT p44294-2.axle2 -> p42003-3.axlehole1 LOCKED
+WHY Adds the first grey grabber mount with a blue pin retained underneath by a red bush.
+STEP 93
+ADD p99773-1 99773 black
+ADD p32123b-9 32123b lightgray
+CONNECT p44294-2.axle3 -> p99773-1.axlehole1 LOCKED
+CONNECT p44294-2.axle3 -> p32123b-9.axlehole1 LOCKED
+WHY Places the first triangular gearbox cheek and an inner half bush on the main cross shaft.
+STEP 94
+ADD p6536-18 6536 yellow
+ADD p32123b-10 32123b lightgray
+CONNECT p44294-2.axle4 -> p6536-18.axlehole1 LOCKED
+CONNECT p44294-2.axle5 -> p32123b-10.axlehole1 LOCKED
+WHY Adds the central yellow worm-shaft bearing and the spacer for the opposite gearbox cheek.
+STEP 95
+ADD p32073-8 32073 lightgray
+ADD p32123b-11 32123b lightgray
+CONNECT p32073-8.axle2 -> p32123b-11.axlehole1 LOCKED
+CONNECT p32073-8.axle2 -> p99773-1.axlehole2 LOCKED
+WHY Fits the second cross shaft through the rear cross hole of the triangular cheek with a half bush inside it.
+STEP 96
+ADD p3706-3 3706 red
+ADD p32184-9 32184 black
+ADD p4716-1 4716 lightgray
+ADD p32123b-12 32123b lightgray
+ADD p32123b-13 32123b lightgray
+CONNECT p3706-3.axle6 -> p6536-18.hole1 TURNS
+CONNECT p3706-3.axle5 -> p32123b-12.axlehole1 LOCKED
+CONNECT p3706-3.axle4 -> p4716-1.axlehole1 LOCKED
+CONNECT p3706-3.axle3 -> p32123b-13.axlehole1 LOCKED
+CONNECT p3706-3.axle2 -> p32184-9.hole1 TURNS
+CONNECT p32073-8.axle3 -> p32184-9.axlehole2 LOCKED
+WHY Installs the worm shaft in round bearings with half bushes on both sides of the worm to stop it walking along the axle.
+STEP 97
+ADD p32123b-14 32123b lightgray
+CONNECT p32073-8.axle4 -> p32123b-14.axlehole1 LOCKED
+WHY Adds the inner spacer for the second triangular gearbox cheek on the rear cross shaft.
+STEP 98
+ADD p32073-9 32073 lightgray
+ADD p3648b-1 3648b darkgray
+ADD p32123b-15 32123b lightgray
+ADD p32123b-16 32123b lightgray
+CONNECT p32073-9.axle3 -> p3648b-1.axlehole1 LOCKED
+CONNECT p32073-9.axle4 -> p32123b-15.axlehole1 LOCKED
+CONNECT p32073-9.axle2 -> p32123b-16.axlehole1 LOCKED
+CONNECT p32073-9.axle4 -> p99773-1.hole3 TURNS
+MESH p4716-1.teeth p3648b-1.teeth
+RATIO p4716-1 p3648b-1 1/24
+WHY Meshes the worm with the twenty-four-tooth output gear, giving a slow self-locking drive for the grabber jaws.
+STEP 99
+ADD p99773-2 99773 black
+CONNECT p44294-2.axle5 -> p99773-2.axlehole1 LOCKED
+CONNECT p32073-8.axle4 -> p99773-2.axlehole2 LOCKED
+CONNECT p32073-9.axle2 -> p99773-2.hole3 TURNS
+WHY Closes the gearbox with the second triangular cheek while leaving the geared output shaft free in round holes.
+STEP 100
+ADD p60483-9 60483 black
+ADD p60483-10 60483 black
+ADD p6628-3 6628 black
+ADD p6628-4 6628 black
+CONNECT p6628-3.pin1 -> p60483-10.hole1 STIFF
+CONNECT p6628-4.pin1 -> p60483-9.hole1 STIFF
+CONNECT p32073-9.axle1 -> p60483-9.axlehole1 LOCKED
+CONNECT p32073-9.axle5 -> p60483-10.axlehole1 LOCKED
+WHY Adds the two ball-ended output cranks on the worm-driven shaft to move the jaw links together.
+STEP 101
+ADD p42003-4 42003 lightgray
+ADD p43093-9 43093 blue
+ADD p3713-11 3713 red
+CONNECT p43093-9.axle1 -> p3713-11.axlehole1 LOCKED
+CONNECT p43093-9.pin1 -> p42003-4.hole1 STIFF
+CONNECT p44294-2.axle6 -> p42003-4.axlehole1 LOCKED
+WHY Adds the matching grey jaw mount with its captured blue pin on the opposite end of the grabber cross shaft.
+STEP 102
+ADD p6536-19 6536 yellow
+CONNECT p44294-2.axle7 -> p6536-19.axlehole1 LOCKED
+WHY Caps the second end of the main grabber shaft with its yellow perpendicular jaw-pivot connector.
