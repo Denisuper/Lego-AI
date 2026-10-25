@@ -3025,3 +3025,53 @@ CONNECT se8-beam2-1.hole1~ -> se7-lblue-1.pin2~ STIFF
 CONNECT se8-beam2-2.hole1~ -> se7-lblue-3.pin2~ STIFF
 CONNECT se8-beam2-3.hole1~ -> se7-lblue-5.pin2~ STIFF
 WHY Three more black 2-beams are fixed on top of the seat backs to make the head rests.
+STEP 342
+ATTACH se2
+CONNECT se2-conn-1.hole2~ -> b-beam15-1.hole10~ STIFF
+CONNECT se2-conn-2.hole2~ -> b-beam15-2.hole10~ STIFF
+WHY Sets the three-seat bench between the two tall posts at the back of the front frame.
+STEP 343
+ADD hub-1 85824 lightgray
+CONNECT hub-1.hole1? -> se2-beam11-1.hole5~ STIFF
+WHY Takes out the Technic Control+ hub (the battery and controller box), loads six AA batteries as the small pictures show, and sticks labels 24 and 25 (the A, B, C, D port letters) on top.
+STEP 344
+CONNECT hub-1.hole2? -> b-beam15-1.hole5~ STIFF
+CONNECT hub-1.hole3? -> b-beam15-2.hole5~ STIFF
+WHY Stands the hub upright between the two tall posts with its ports facing out, and plugs in the motor cables the picture shows (steering and drive motors).
+STEP 345
+WHY Routes the four cables along both sides of the hub so each port lead lies against the frame as shown.
+STEP 346
+ADD hb-bpin-1 43093 blue
+ADD hb-bpin-2 43093 blue
+ADD hb-beam2-1 60483 lightgray
+ADD hb-beam2-2 60483 lightgray
+ADD hb-lpin-1 11214 red
+ADD hb-lpin-2 11214 red
+CONNECT hb-bpin-1.pin1 -> hb-beam2-1.hole2~ STIFF
+CONNECT hb-bpin-2.pin1 -> hb-beam2-2.hole2~ STIFF
+CONNECT hb-lpin-1.pin1 -> hb-beam2-1.hole1~ STIFF
+CONNECT hb-lpin-2.pin1 -> hb-beam2-2.hole1~ STIFF
+CONNECT hb-beam2-1.hole1~ -> b-beam15-1.hole3~ STIFF
+CONNECT hb-beam2-2.hole1~ -> b-beam15-2.hole3~ STIFF
+WHY A light 2-beam with a blue pin and a red pin is fixed on each post as a clip that holds the hub in place.
+STEP 347
+WHY Turns the clips so they close over the hub's top corners, as the yellow arrows show.
+STEP 348
+GROUP hc
+ADD hc-ring-1 18654 black
+ADD hc-pin-1 61332 black
+ADD hc-tbeam-1 60484 black
+ADD hc-conn-1 65489 lightgray
+ADD hc-bpin-1 43093 blue
+ADD hc-bpin-2 43093 blue
+ADD hc-bpin-3 43093 blue
+CONNECT hc-pin-1.pin1 -> hc-tbeam-1.hole1~ STIFF
+CONNECT hc-bpin-1.pin1 -> hc-tbeam-1.hole3~ STIFF
+CONNECT hc-conn-1.pin1~ -> hc-tbeam-1.hole5~ STIFF
+CONNECT hc-bpin-2.pin1 -> hc-conn-1.hole1~ STIFF
+CONNECT hc-bpin-3.pin1 -> hc-conn-1.hole2~ STIFF
+CONNECT hc-ring-1.hole1 -> hc-pin-1.pin2 TURNS
+END
+ATTACH hc
+CONNECT hc-tbeam-1.hole2~ -> b-beam15-1.hole8~ STIFF
+WHY Builds a black T-beam with a pin, a ring and two blue pins in four small steps and fixes it on the left post behind the hub as a mount for the cab.
