@@ -4606,3 +4606,96 @@ END
 ATTACH bi
 CONNECT bi-tan-1.pin2 -> bh-panel-1.hole7~ TURNS
 WHY Builds a rear mudguard (sticker 21, a splash flap) from two angled connectors, a 3-beam and a curved panel in three small steps and fits it on the underside of the bed.
+STEP 541
+GROUP bj
+ADD bj-lbeam-1 32526 darkgray
+ADD bj-ang-1 32184 darkgray
+ADD bj-pin-1 61332 black
+ADD bj-pin-2 61332 black
+ADD bj-pin-3 61332 black
+ADD bj-pin-4 61332 black
+ADD bj-beam3-1 41677 black
+ADD bj-beam3-2 41677 black
+ADD bj-cross-1 44874 black
+ADD bj-tan-1 32002 tan
+CONNECT bj-pin-1.pin1 -> bj-lbeam-1.hole1~ STIFF
+CONNECT bj-pin-2.pin1 -> bj-lbeam-1.hole2~ STIFF
+CONNECT bj-pin-3.pin1 -> bj-lbeam-1.hole3~ STIFF
+CONNECT bj-pin-4.pin1 -> bj-lbeam-1.hole4~ STIFF
+CONNECT bj-beam3-1.hole1~ -> bj-pin-2.pin2 STIFF
+CONNECT bj-beam3-2.hole1~ -> bj-pin-4.pin2 STIFF
+CONNECT bj-tan-1.pin1 -> bj-lbeam-1.hole5~ TURNS
+CONNECT bj-ang-1.hole1~ -> bj-tan-1.pin2 TURNS
+CONNECT bj-cross-1.hole1~ -> bj-ang-1.hole2~ STIFF
+END
+ATTACH bj
+CONNECT bj-lbeam-1.hole5~ -> bi-beam3-1.hole2~ STIFF
+WHY Builds a corner step for the bed in five small steps from a grey 3x5 L-beam with four pins, two thin beams, a tan pin and an angled connector (stickers 31 and 7) and fixes it at the red-circled corner.
+STEP 542
+GROUP bk
+ADD bk-ang-1 32184 darkgray
+ADD bk-ang-2 32013 darkgray
+ADD bk-beam3-1 32523 black
+ADD bk-tan-1 32002 tan
+ADD bk-flap-1 24116 black
+CONNECT bk-ang-1.hole1~ -> bk-tan-1.pin1 TURNS
+CONNECT bk-ang-2.hole1~ -> bk-ang-1.hole2~ STIFF
+CONNECT bk-beam3-1.hole1~ -> bk-ang-2.hole2~ STIFF
+CONNECT bk-flap-1.hole1~ -> bk-beam3-1.hole3~ STIFF
+END
+ATTACH bk
+CONNECT bk-tan-1.pin2 -> bj-lbeam-1.hole1~ TURNS
+WHY Builds a second mudguard (sticker 22) from an angled connector, a perpendicular connector, a 3-beam and a panel in three small steps and fits it on the bed's corner.
+STEP 543
+GROUP bl
+ADD bl-lbeam-1 32526 darkgray
+ADD bl-ang-1 32184 darkgray
+ADD bl-pin-1 61332 black
+ADD bl-pin-2 61332 black
+ADD bl-pin-3 61332 black
+ADD bl-pin-4 61332 black
+ADD bl-beam3-1 41677 black
+ADD bl-beam3-2 41677 black
+ADD bl-cross-1 44874 black
+ADD bl-tan-1 32002 tan
+CONNECT bl-pin-1.pin1 -> bl-lbeam-1.hole1~ STIFF
+CONNECT bl-pin-2.pin1 -> bl-lbeam-1.hole2~ STIFF
+CONNECT bl-pin-3.pin1 -> bl-lbeam-1.hole3~ STIFF
+CONNECT bl-pin-4.pin1 -> bl-lbeam-1.hole4~ STIFF
+CONNECT bl-beam3-1.hole1~ -> bl-pin-2.pin2 STIFF
+CONNECT bl-beam3-2.hole1~ -> bl-pin-4.pin2 STIFF
+CONNECT bl-tan-1.pin1 -> bl-lbeam-1.hole5~ TURNS
+CONNECT bl-ang-1.hole1~ -> bl-tan-1.pin2 TURNS
+CONNECT bl-cross-1.hole1~ -> bl-ang-1.hole2~ STIFF
+END
+ATTACH bl
+CONNECT bl-lbeam-1.hole5~ -> bi-beam3-1.hole1~ STIFF
+WHY Builds the matching corner step for the other side the same way (stickers 31 and 5) and fixes it at the second red-circled corner.
+STEP 544
+GROUP bm
+ADD bm-axle32-1 6587 darktan
+ADD bm-beam7-1 32524 darkgray
+ADD bm-beam7-2 32524 darkgray
+ADD bm-cb-1 39793 lightgray
+ADD bm-axle3-1 4519 lightgray
+ADD bm-bush-1 3713 black
+ADD bm-bush-2 3713 black
+ADD bm-cap-1 6141 tan
+ADD bm-pin-1 61332 black
+ADD bm-pin-2 61332 black
+ADD bm-lpin-1 11214 red
+ADD bm-block-1 42135 black
+CONNECT bm-cap-1.stud1? -> bm-axle32-1.axle1 STIFF
+CONNECT bm-beam7-1.hole1~ -> bm-axle32-1.axle2~ TURNS
+CONNECT bm-beam7-2.hole1~ -> bm-axle32-1.axle3~ TURNS
+CONNECT bm-cb-1.hole1~ -> bm-beam7-1.hole3~ STIFF
+CONNECT bm-pin-1.pin1 -> bm-cb-1.hole2~ STIFF
+CONNECT bm-pin-2.pin1 -> bm-cb-1.hole3~ STIFF
+CONNECT bm-axle3-1.axle1 -> bm-cb-1.axlehole1? LOCKED
+CONNECT bm-bush-1.axlehole1 -> bm-axle3-1.axle3 LOCKED
+CONNECT bm-bush-2.axlehole1 -> bm-pin-1.axle1? LOCKED
+CONNECT bm-block-1.axlehole1 -> bm-lpin-1.axle1 LOCKED
+END
+ATTACH bm
+CONNECT bm-beam7-2.hole5~ -> bl-lbeam-1.hole1~ STIFF
+WHY Builds a lamp bracket in eight small steps from a long tan axle with an end cap, two 7-beams, a connector beam, pins and bushes, and fixes it onto the bed's rear corner with a red pin.
