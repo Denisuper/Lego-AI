@@ -1,0 +1,164 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD p32278-1 32278 black
+ADD p6558-1 6558 blue
+ADD p6558-2 6558 blue
+ADD p6558-3 6558 blue
+ADD p6558-4 6558 blue
+CONNECT p6558-1.pin1 -> p32278-1.hole15 STIFF
+CONNECT p6558-2.pin1 -> p32278-1.hole12 STIFF
+CONNECT p6558-3.pin1 -> p32278-1.hole1 STIFF
+CONNECT p6558-4.pin1 -> p32278-1.hole4 STIFF
+WHY Starts the tracked base with four long blue pins spaced three holes apart near the ends of the black fifteen-hole crossbeam.
+STEP 2
+ADD p32524-1 32524 lightgray
+ADD p32524-2 32524 lightgray
+CONNECT p6558-1.pin2 -> p32524-1.hole5 STIFF
+CONNECT p6558-2.pin2 -> p32524-1.hole2 STIFF
+CONNECT p6558-3.pin2 -> p32524-2.hole3 STIFF
+CONNECT p6558-4.pin2 -> p32524-2.hole6 STIFF
+WHY Fits a grey seven-hole beam across each blue pin pair with its outer end projecting beyond the crossbeam.
+STEP 3
+ADD p32526-1 32526 lightgray
+ADD p32526-2 32526 lightgray
+CONNECT p6558-1.pin3 -> p32526-2.hole2 STIFF
+CONNECT p6558-2.pin3 -> p32526-2.hole5 STIFF
+CONNECT p6558-3.pin3 -> p32526-1.hole2 STIFF
+CONNECT p6558-4.pin3 -> p32526-1.hole5 STIFF
+WHY Adds the two grey L beams on the remaining blue pin ends with their short legs pointing upward.
+STEP 4
+ADD p60485-1 60485 lightgray
+ADD p60485-2 60485 lightgray
+ADD p6553-1 6553 lightgray
+ADD p6553-2 6553 lightgray
+ADD p32054-1 32054 lightgray
+ADD p32054-2 32054 lightgray
+ADD p32054-3 32054 lightgray
+ADD p32054-4 32054 lightgray
+CONNECT p60485-1.axle5 -> p6553-1.axlehole1 LOCKED
+CONNECT p60485-1.axle9 -> p32054-1.axlehole1 LOCKED
+CONNECT p60485-1.axle1 -> p32054-2.axlehole1 LOCKED
+CONNECT p60485-2.axle5 -> p6553-2.axlehole1 LOCKED
+CONNECT p60485-2.axle1 -> p32054-4.axlehole1 LOCKED
+CONNECT p60485-2.axle9 -> p32054-3.axlehole1 LOCKED
+CONNECT p32054-1.pin1 -> p32524-1.hole7 STIFF
+CONNECT p32054-4.pin1 -> p32524-2.hole1 STIFF
+WHY Builds two nine-length side shafts with grey long-pin sockets at their ends and perpendicular handles at their centres, then plugs them into the outer grey beams.
+STEP 5
+ADD p32316-1 32316 lightgray
+ADD p32316-2 32316 lightgray
+ADD p3673-1 3673 lightgray
+ADD p3673-2 3673 lightgray
+ADD p3673-3 3673 lightgray
+ADD p3673-4 3673 lightgray
+ADD p3673-5 3673 lightgray
+ADD p3673-6 3673 lightgray
+ADD p60483-1 60483 black
+ADD p60483-2 60483 black
+ADD p42610-1 42610 lightgray
+ADD p42610-2 42610 lightgray
+ADD p42610-3 42610 lightgray
+ADD p42610-4 42610 lightgray
+CONNECT p3673-1.pin1 -> p32316-1.hole3 TURNS
+CONNECT p3673-2.pin1 -> p32316-1.hole1 TURNS
+CONNECT p3673-3.pin1 -> p32316-1.hole5 TURNS
+CONNECT p3673-1.pin2 -> p60483-1.hole1 TURNS
+CONNECT p3673-2.pin2 -> p42610-1.? TURNS
+CONNECT p3673-3.pin2 -> p42610-2.? TURNS
+CONNECT p6553-2.axle1 -> p60483-1.axlehole1 LOCKED
+CONNECT p3673-4.pin1 -> p32316-2.hole3 TURNS
+CONNECT p3673-5.pin1 -> p32316-2.hole1 TURNS
+CONNECT p3673-6.pin1 -> p32316-2.hole5 TURNS
+CONNECT p3673-4.pin2 -> p60483-2.hole1 TURNS
+CONNECT p3673-5.pin2 -> p42610-3.? TURNS
+CONNECT p3673-6.pin2 -> p42610-4.? TURNS
+CONNECT p6553-1.axle1 -> p60483-2.axlehole1 LOCKED
+WHY Builds two freely pivoting roller bogies with small wheels at the ends and plugs their black centre lugs onto the perpendicular side-shaft handles.
+STEP 6
+GROUP centre-base
+ADD p40490-1 40490 darkgray
+ADD p40490-2 40490 darkgray
+ADD p32054-5 32054 lightgray
+ADD p32054-6 32054 lightgray
+ADD p32054-7 32054 lightgray
+ADD p32054-8 32054 lightgray
+ADD p32054-9 32054 lightgray
+ADD p32054-10 32054 lightgray
+ADD p32073-1 32073 lightgray
+ADD p32073-2 32073 lightgray
+ADD p6558-5 6558 blue
+ADD p6558-6 6558 blue
+CONNECT p32054-5.pin1 -> p40490-1.hole9 STIFF
+CONNECT p32054-6.pin1 -> p40490-1.hole1 STIFF
+CONNECT p32073-2.axle5 -> p32054-5.axlehole1 LOCKED
+CONNECT p32073-1.axle5 -> p32054-6.axlehole1 LOCKED
+CONNECT p32073-2.axle1 -> p32054-8.axlehole1 LOCKED
+CONNECT p32073-1.axle1 -> p32054-7.axlehole1 LOCKED
+CONNECT p32054-8.pin1 -> p40490-2.hole9 STIFF
+CONNECT p32054-7.pin1 -> p40490-2.hole1 STIFF
+CONNECT p6558-5.pin2 -> p40490-1.hole6 STIFF
+CONNECT p6558-6.pin2 -> p40490-1.hole4 STIFF
+CONNECT p32054-9.pin1 -> p40490-2.hole6 STIFF
+CONNECT p32054-10.pin1 -> p40490-2.hole4 STIFF
+END
+ATTACH centre-base
+CONNECT p32054-5.pin2 -> p32526-2.hole7 STIFF
+CONNECT p32054-6.pin2 -> p32526-1.hole7 STIFF
+WHY Builds a rectangular centre frame from two nine-hole beams and two five-length axles, then plugs its long pins into the first crossbeam assembly.
+STEP 7
+GROUP second-base-crossbeam
+ADD p32278-2 32278 black
+ADD p6558-7 6558 blue
+ADD p6558-8 6558 blue
+ADD p6558-9 6558 blue
+ADD p6558-10 6558 blue
+ADD p32524-3 32524 lightgray
+ADD p32524-4 32524 lightgray
+ADD p32526-3 32526 lightgray
+ADD p32526-4 32526 lightgray
+CONNECT p6558-7.pin1 -> p32278-2.hole15 STIFF
+CONNECT p6558-8.pin1 -> p32278-2.hole12 STIFF
+CONNECT p6558-9.pin1 -> p32278-2.hole4 STIFF
+CONNECT p6558-10.pin1 -> p32278-2.hole1 STIFF
+CONNECT p6558-7.pin2 -> p32524-4.hole5 STIFF
+CONNECT p6558-8.pin2 -> p32524-4.hole2 STIFF
+CONNECT p6558-9.pin2 -> p32524-3.hole6 STIFF
+CONNECT p6558-10.pin2 -> p32524-3.hole3 STIFF
+CONNECT p6558-7.pin3 -> p32526-4.hole2 STIFF
+CONNECT p6558-8.pin3 -> p32526-4.hole5 STIFF
+CONNECT p6558-9.pin3 -> p32526-3.hole5 STIFF
+CONNECT p6558-10.pin3 -> p32526-3.hole2 STIFF
+END
+ATTACH second-base-crossbeam
+CONNECT p32054-8.pin2 -> p32526-3.hole7 STIFF
+CONNECT p32054-7.pin2 -> p32526-4.hole7 STIFF
+CONNECT p32054-2.pin1 -> p32524-3.hole1 STIFF
+CONNECT p32054-3.pin1 -> p32524-4.hole7 STIFF
+WHY Makes the matching crossbeam with grey straight and L beams, then closes the base over the four exposed long grey pins.
+STEP 8
+ADD p92907-1 92907 black
+ADD p92907-2 92907 black
+ADD p92907-3 92907 black
+ADD p92907-4 92907 black
+ADD p32062-1 32062 red
+ADD p32062-2 32062 red
+ADD p32062-3 32062 red
+ADD p32062-4 32062 red
+CONNECT p32062-1.axle1 -> p92907-1.axlehole3 LOCKED
+CONNECT p32062-2.axle1 -> p92907-2.axlehole3 LOCKED
+CONNECT p32062-3.axle1 -> p92907-3.axlehole3 LOCKED
+CONNECT p32062-4.axle1 -> p92907-4.axlehole3 LOCKED
+CONNECT p32054-2.pin2 -> p92907-1.hole1 STIFF
+CONNECT p32054-3.pin2 -> p92907-2.hole1 STIFF
+CONNECT p32054-4.pin2 -> p92907-3.hole1 STIFF
+CONNECT p32054-1.pin2 -> p92907-4.hole1 STIFF
+WHY Adds four split black corner connectors on the exposed grey pins with their red axles pointing outward to support the track frames.
