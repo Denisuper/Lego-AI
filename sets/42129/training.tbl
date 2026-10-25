@@ -5345,3 +5345,52 @@ CONNECT nt-pin-2.pin1 -> nt-panel-1.hole4~ STIFF
 CONNECT nt-panel-2.hole1~ -> nt-pin-1.pin2 STIFF
 END
 WHY Builds the second side fuel tank from two curved black panels joined by pins in three small steps (sticker 36 goes on it). The booklet prints the number 594 twice here, so this one is labelled 594b.
+STEP 595
+ADD nu-pin-1 61332 black
+ADD nu-pin-2 61332 black
+ADD nu-beam3-1 32523 black
+CONNECT nu-pin-1.pin1 -> nu-beam3-1.hole1 STIFF
+CONNECT nu-pin-2.pin1 -> nu-beam3-1.hole3 STIFF
+CONNECT nu-beam3-1.hole2~ -> nt-panel-2.hole4~ STIFF
+CONNECT nt-panel-1.hole3~ -> ns-bpin-1.pin2~ STIFF
+WHY Fits the second fuel tank against the right chassis side and clips it with two pins and a 3-beam.
+STEP 596
+GROUP nv
+ADD nv-axle3-1 4519 lightgray
+ADD nv-ang-1 32184 lightgray
+CONNECT nv-axle3-1.axle1 -> nv-ang-1.axlehole1 LOCKED
+WHY Starts a small light grey fixing piece: a 3-long axle in a perpendicular connector.
+STEP 597
+ADD nv-beam3-1 32523 lightgray
+ADD nv-cb-1 39793 lightgray
+CONNECT nv-cb-1.hole1~ -> nv-axle3-1.axle3~ TURNS
+CONNECT nv-beam3-1.hole1~ -> nv-ang-1.hole1~ STIFF
+WHY A light 3-beam and a connector beam are added on the axle.
+STEP 598
+ADD nv-pin-1 61332 black
+ADD nv-pin-2 61332 black
+ADD nv-pin-3 61332 black
+ADD nv-pin-4 61332 black
+ADD nv-pin-5 61332 black
+CONNECT nv-pin-1.pin1 -> nv-cb-1.hole1~ STIFF
+CONNECT nv-pin-2.pin1 -> nv-cb-1.hole2~ STIFF
+CONNECT nv-pin-3.pin1 -> nv-cb-1.hole3~ STIFF
+CONNECT nv-pin-4.pin1 -> nv-beam3-1.hole2~ STIFF
+CONNECT nv-pin-5.pin1 -> nv-beam3-1.hole3~ STIFF
+WHY Five black pins go in the two beams as the links for the final bracket.
+STEP 599
+ADD nv-hub-1 49130 lightgray
+CONNECT nv-hub-1.pin1~ -> nv-pin-1.pin2 STIFF
+CONNECT nv-hub-1.pin2~ -> nv-pin-3.pin2 STIFF
+END
+WHY A 3x3 bent pin hub joins the two beams to finish the piece.
+STEP 600
+ATTACH nv
+CONNECT nv-hub-1.pin3~ -> nk-hub-1.pin2~ STIFF
+WHY Fits the finished piece on the right chassis side by the front hub, as the arrow shows.
+STEP 601
+ADD nw-bpin-1 43093 blue
+ADD nw-hose-1 78c03 flatsilver
+CONNECT nw-bpin-1.pin1 -> nw-hose-1.hole1? STIFF
+CONNECT nw-bpin-1.pin2 -> nv-hub-1.hole1~ STIFF
+WHY A grey bent hose with a blue pin is pushed into the hub as the fuel pipe from the tank.
