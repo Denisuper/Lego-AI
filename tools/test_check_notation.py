@@ -14,6 +14,12 @@ class BearingModes(unittest.TestCase):
     def test_smooth_center_stop_rotates_in_round_bearing(self):
         self.assertEqual(mode('pin stop (round)', 'pin hole (round)', ['99008', '32009']), 'TURNS')
 
+    def test_cv_shaft_neck_rotates_in_its_support_hub(self):
+        self.assertEqual(mode('pin stop (round)', 'pin hole (round)', ['92906', '10197']), 'TURNS')
+
+    def test_cv_shaft_cross_end_still_locks_its_gear(self):
+        self.assertEqual(mode('axle stop (cross)', 'axle hole (cross)', ['92906', '6589']), 'LOCKED')
+
     def test_friction_axle_pin_stays_stiff_on_its_round_end(self):
         self.assertEqual(mode('pin stop (round)', 'pin hole (round)', ['43093', '32316']), 'STIFF')
 
