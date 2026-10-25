@@ -640,3 +640,262 @@ ADD p18946-1 18946 red
 CONNECT p3706-1.axle2 -> p18946-1.hole1 TURNS
 CONNECT p3706-1.axle1 -> p18948-1.axlehole1 LOCKED
 WHY Slides the red sixteen-tooth clutch gear onto the black six-length axle and feeds the axle into the white clutch connector so the gear can turn freely until the sliding ring engages it.
+
+STEP 61
+GROUP opposite-clutch-support
+ADD p2780-14 2780 black
+ADD p32449-3 32449 yellow
+ADD p32449-4 32449 yellow
+ADD p43093-9 43093 blue
+CONNECT p43093-9.axle1 -> p32449-3.axlehole2 LOCKED
+CONNECT p43093-9.axle1 -> p32449-4.axlehole2 LOCKED
+CONNECT p2780-14.pin1 -> p32449-3.hole2 STIFF
+CONNECT p2780-14.pin1 -> p32449-4.hole2 STIFF
+WHY Joins two thin yellow four-hole beams face to face with a black pin and the cross end of a blue axle-pin to start the opposite clutch support.
+
+STEP 62
+ADD p14720-2 14720 lightgray
+CONNECT p2780-14.pin2 -> p14720-2.hole2 STIFF
+CONNECT p43093-9.pin1 -> p14720-2.hole3 STIFF
+WHY Fastens the upright grey offset frame onto the paired yellow beams with its upper three holes above the future clutch axle.
+
+STEP 63
+ADD p2780-15 2780 black
+ADD p32062-3 32062 red
+ADD p6536-3 6536 yellow
+ADD p6536-4 6536 yellow
+CONNECT p32062-3.axle1 -> p6536-3.axlehole1 LOCKED
+CONNECT p32062-3.axle2 -> p6536-4.axlehole1 LOCKED
+CONNECT p2780-15.pin2 -> p6536-3.hole1 STIFF
+CONNECT p2780-15.pin1 -> p14720-2.hole5 STIFF
+WHY Stacks the two yellow perpendicular connectors on a red two-length axle and pins the lower connector against the middle of the grey support.
+
+STEP 64
+ADD p2780-16 2780 black
+ADD p2780-17 2780 black
+CONNECT p2780-16.pin2 -> p14720-2.hole7 STIFF
+CONNECT p2780-17.pin2 -> p14720-2.hole9 STIFF
+WHY Places black friction pins in the outer holes of the grey support's top crossbar for the structure added later.
+
+STEP 65
+ADD p32039-1 32039 lightgray
+ADD p32123b-5 32123b yellow
+ADD p15462-4 15462 brown
+CONNECT p15462-4.axle5 -> p32039-1.axlehole1 LOCKED
+CONNECT p15462-4.axle4 -> p14720-2.hole1 TURNS
+CONNECT p15462-4.axle3 -> p32449-3.hole1 TURNS
+CONNECT p15462-4.axle3 -> p32449-4.hole1 TURNS
+CONNECT p15462-4.axle2~ -> p32123b-5.axlehole1 LOCKED
+WHY Runs a brown stopped axle through the support's lower round bearings, fixing the grey perpendicular connector behind it and a yellow half bush in front while leaving the shaft free to turn.
+
+STEP 66
+ADD p6553-1 6553 black
+ADD p3713-5 3713 red
+CONNECT p6553-1.axle2 -> p3713-5.axlehole1 LOCKED
+CONNECT p15462-4.axle2 -> p6553-1.axlehole1 LOCKED
+WHY Adds the black offset axle connector to the projecting brown shaft with a red bush on its perpendicular axle end.
+END
+
+STEP 67
+ATTACH opposite-clutch-support
+CONNECT p60485-2.axle9 -> p32449-3.axlehole1 LOCKED
+CONNECT p60485-2.axle9 -> p32449-4.axlehole1 LOCKED
+CONNECT p3706-1.axle3 -> p14720-2.hole8 TURNS
+WHY Slides the complete opposite support onto the lower grey cross shaft and around the black clutch axle, retaining the freely turning red gear inside the gearbox.
+END
+
+STEP 68
+ADD p32270-2 32270 black
+ADD p32270-3 32270 black
+ADD p32123b-1 32123b yellow
+ADD p32123b-2 32123b yellow
+ADD p99008-2 99008 tan
+ADD p99008-3 99008 tan
+CONNECT p99008-2.axle2 -> p32123b-2.axlehole1 LOCKED
+CONNECT p99008-2.axle3 -> p32270-2.axlehole1 LOCKED
+CONNECT p99008-3.axle2 -> p32123b-1.axlehole1 LOCKED
+CONNECT p99008-3.axle3 -> p32270-3.axlehole1 LOCKED
+ATTACH upper-gearbox
+CONNECT p99008-2.pin1 -> p32034-4.hole1 TURNS
+CONNECT p99008-3.pin1 -> p32034-5.hole1 TURNS
+CONNECT p99008-2.axle1 -> p59443-4.axlehole2 LOCKED
+CONNECT p99008-3.axle1 -> p59443-5.axlehole2 LOCKED
+WHY Seats the gearbox above the chassis and inserts two tan shafts through its round crosspiece bearings into the yellow drive extensions, with black twelve-tooth gears and yellow half bushes retained on top.
+
+STEP 69
+GROUP left-body-panel
+ADD p15100-1 15100 black
+ADD p64683-1 64683 darkgray
+CONNECT p15100-1.pin1 -> p64683-1.hole4 STIFF
+WHY Inserts a black right-angle pin connector into the narrow end of the dark grey number-three body panel with its round hole outside the panel.
+
+STEP 70
+ADD p2780-18 2780 black
+ADD p2780-19 2780 black
+ADD p40490-3 40490 yellow
+CONNECT p2780-18.pin2 -> p64683-1.hole7 STIFF
+CONNECT p2780-19.pin2 -> p64683-1.hole6 STIFF
+CONNECT p2780-18.pin1 -> p40490-3.hole5 STIFF
+CONNECT p2780-19.pin1 -> p40490-3.hole6 STIFF
+WHY Fastens a yellow nine-hole beam across the grey panel with two black pins in adjacent middle holes.
+
+STEP 71
+ADD p48989-1 48989 lightgray
+ADD p87082-2 87082 black
+ADD p87082-3 87082 black
+CONNECT p48989-1.pin2 -> p40490-3.hole2 STIFF
+CONNECT p48989-1.pin1 -> p40490-3.hole4 STIFF
+CONNECT p87082-2.pin2 -> p40490-3.hole1 STIFF
+CONNECT p87082-3.pin2 -> p40490-3.hole9 STIFF
+WHY Adds the grey four-pin connector and a black twin-pin connector at each end of the yellow beam to support the raised rail.
+
+STEP 72
+ADD p32140-1 32140 yellow
+ADD p32271-1 32271 yellow
+ADD p87082-4 87082 black
+CONNECT p48989-1.pin4 -> p32140-1.hole3 STIFF
+CONNECT p87082-2.pin1 -> p32140-1.hole2 STIFF
+CONNECT p48989-1.pin3 -> p32271-1.hole1 STIFF
+CONNECT p87082-3.pin1 -> p32271-1.hole6 STIFF
+CONNECT p87082-4.pin1 -> p32140-1.hole1 STIFF
+WHY Pins the short sticker-9 yellow elbow and longer bent yellow beam onto the exposed connectors to form the upper rail, adding a black twin-pin connector beneath its short end.
+
+STEP 73
+ADD p32062-4 32062 red
+ADD p2780-20 2780 black
+ADD p32013-2 32013 yellow
+ADD p32140-2 32140 yellow
+CONNECT p32062-4.axle1 -> p32140-2.axlehole1 LOCKED
+CONNECT p2780-20.pin2 -> p32140-2.hole2 STIFF
+CONNECT p2780-20.pin1 -> p32013-2.hole1 STIFF
+CONNECT p87082-4.pin2 -> p32140-2.hole4 STIFF
+WHY Adds the outward yellow bracket carrying sticker 16, a red axle and a yellow angle connector, securing its inner end beneath the short upper rail.
+
+STEP 74
+ADD p2780-21 2780 black
+ADD p2780-22 2780 black
+ADD p64393-1 64393 black
+CONNECT p2780-21.pin2 -> p32271-1.hole2 STIFF
+CONNECT p2780-22.pin2 -> p32271-1.hole4 STIFF
+CONNECT p2780-21.pin1 -> p64393-1.hole8 STIFF
+CONNECT p2780-22.pin1 -> p64393-1.hole6 STIFF
+WHY Attaches the long black number-six panel to the upper yellow rail with two friction pins after applying sticker 3 to its outward face.
+
+STEP 75
+END
+ATTACH left-body-panel
+CONNECT p15100-1.hole1 -> p6558-11.pin1 STIFF
+CONNECT p64683-1.hole5 -> p2780-4.pin1 STIFF
+CONNECT p2780-17.pin1 -> p48989-1.hole3 STIFF
+CONNECT p2780-16.pin1 -> p87082-4.hole1 STIFF
+CONNECT p3706-1.axle4 -> p87082-2.hole1 TURNS
+CONNECT p60485-3.axle9 -> p32013-2.axlehole1 LOCKED
+CONNECT p11214-3.pin2 -> p64393-1.hole5 STIFF
+WHY Fixes the complete decorated body panel to the left side of the chassis and gearbox while its black round bearing supports the free clutch input axle.
+
+STEP 76
+ADD p3713-6 3713 red
+ADD p32270-5 32270 black
+CONNECT p3706-1.axle5 -> p3713-6.axlehole1 LOCKED
+CONNECT p3706-1.axle6 -> p32270-5.axlehole1 LOCKED
+WHY Retains the projecting black clutch axle with a red bush and locks a black twelve-tooth gear on its outer end as the side input knob.
+
+STEP 77
+GROUP left-tail-lights
+ADD p98138-1 98138 transred
+ADD p98138-2 98138 transorange
+ADD p98138-3 98138 transclear
+ADD p4274-1 4274 lightgray
+ADD p4274-2 4274 lightgray
+ADD p4274-3 4274 lightgray
+ADD p18651-4 18651 black
+ADD p63869-3 63869 black
+ADD p25214-1 25214 yellow
+CONNECT p18651-4.axle2 -> p63869-3.axlehole1 LOCKED
+CONNECT p18651-4.axle1 -> p25214-1.? LOCKED
+CONNECT p4274-1.pin2 -> p63869-3.hole1 TURNS
+CONNECT p4274-2.pin2 -> p63869-3.hole2 TURNS
+CONNECT p4274-3.pin2 -> p63869-3.hole3 TURNS
+CONNECT p98138-3.? -> p4274-1.? STIFF
+CONNECT p98138-1.? -> p4274-2.? STIFF
+CONNECT p98138-2.? -> p4274-3.? STIFF
+END
+ATTACH left-tail-lights
+CONNECT p18651-4.pin1 -> p6536-4.hole1 STIFF
+WHY Builds the three-lamp bar with clear, red and orange round tiles in the shown order, then pins its black axle-pin into the upper yellow rear bracket with the yellow elbow still outside the lower bracket.
+
+STEP 78
+CONNECT p25214-1.? -> p32062-4.axle2 LOCKED
+WHY Swings the left lamp bar downward and pushes its yellow elbow onto the red axle in the lower bracket to secure the lights in their final position.
+
+STEP 79
+GROUP right-body-panel
+ADD p15100-2 15100 black
+ADD p64391-1 64391 darkgray
+CONNECT p15100-2.pin1 -> p64391-1.hole4 STIFF
+WHY Inserts the black right-angle pin connector into the narrow end of the mirrored dark grey number-four panel with its round hole outside.
+
+STEP 80
+ADD p2780-23 2780 black
+ADD p2780-24 2780 black
+ADD p40490-4 40490 yellow
+CONNECT p2780-23.pin1 -> p64391-1.hole7 STIFF
+CONNECT p2780-24.pin1 -> p64391-1.hole6 STIFF
+CONNECT p2780-23.pin2 -> p40490-4.hole5 STIFF
+CONNECT p2780-24.pin2 -> p40490-4.hole6 STIFF
+WHY Turns the mirrored panel over and pins a yellow nine-hole beam across it through adjacent middle holes.
+
+STEP 81
+ADD p6558-17 6558 blue
+ADD p18654-7 18654 black
+ADD p87082-5 87082 black
+ADD p48989-2 48989 lightgray
+CONNECT p6558-17.pin2 -> p18654-7.hole1 STIFF
+CONNECT p6558-17.pin1 -> p40490-4.hole1 STIFF
+CONNECT p48989-2.pin2 -> p40490-4.hole2 STIFF
+CONNECT p48989-2.pin1 -> p40490-4.hole4 STIFF
+CONNECT p87082-5.pin1 -> p40490-4.hole9 STIFF
+WHY Places a long blue pin with a black spacer at one end, the grey four-pin connector beside it and a black twin-pin connector at the opposite end of the beam.
+
+STEP 82
+ADD p32271-2 32271 yellow
+ADD p32140-3 32140 yellow
+ADD p87082-6 87082 black
+CONNECT p48989-2.pin3 -> p32271-2.hole1 STIFF
+CONNECT p87082-5.pin2 -> p32271-2.hole6 STIFF
+CONNECT p48989-2.pin4 -> p32140-3.hole3 STIFF
+CONNECT p6558-17.pin3 -> p32140-3.hole2 STIFF
+CONNECT p87082-6.pin2 -> p32140-3.hole1 STIFF
+WHY Mounts the mirrored yellow upper rail and sticker-9 short elbow on the exposed pins, then inserts a black twin-pin connector beneath the short rail end.
+
+STEP 83
+ADD p2780-25 2780 black
+ADD p32062-5 32062 red
+ADD p32013-3 32013 yellow
+ADD p32140-4 32140 yellow
+CONNECT p32062-5.axle2 -> p32140-4.axlehole1 LOCKED
+CONNECT p2780-25.pin1 -> p32140-4.hole2 STIFF
+CONNECT p2780-25.pin2 -> p32013-3.hole1 STIFF
+CONNECT p87082-6.pin1 -> p32140-4.hole4 STIFF
+WHY Adds the sticker-15 yellow rear bracket with its red axle and perpendicular yellow connector, fitting the bracket beneath the short upper rail.
+
+STEP 84
+ADD p2780-26 2780 black
+ADD p2780-27 2780 black
+ADD p64681-1 64681 black
+CONNECT p2780-26.pin1 -> p32271-2.hole2 STIFF
+CONNECT p2780-27.pin1 -> p32271-2.hole4 STIFF
+CONNECT p2780-26.pin2 -> p64681-1.hole8 STIFF
+CONNECT p2780-27.pin2 -> p64681-1.hole6 STIFF
+WHY Pins the black number-five panel to the mirrored upper rail after applying sticker 4 to its outer face.
+END
+
+STEP 85
+ATTACH right-body-panel
+CONNECT p15100-2.hole1 -> p6558-9.pin1 STIFF
+CONNECT p64391-1.hole5 -> p2780-3.pin2 STIFF
+CONNECT p2780-13.pin2 -> p48989-2.hole3 STIFF
+CONNECT p2780-12.pin2 -> p87082-6.hole1 STIFF
+CONNECT p60485-3.axle1 -> p32013-3.axlehole1 LOCKED
+CONNECT p11214-4.pin2 -> p64681-1.hole5 STIFF
+WHY Attaches the complete mirrored panel to the other side of the chassis and gearbox, locking its rear angle connector onto the remaining end of the upper grey cross shaft.
