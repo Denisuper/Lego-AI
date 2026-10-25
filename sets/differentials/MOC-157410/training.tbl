@@ -1,0 +1,61 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD housing-1 60c01 black
+ADD bush-1 3713 red
+ADD sleeve-1 18654 lightgray
+CONNECT bush-1.axlehole1 -> housing-1.stub1? LOCKED
+CONNECT sleeve-1.hole1 -> housing-1.hub1? TURNS
+WHY Starts the build with the 60c01 differential housing, seating a bush on its output stub and a bearing sleeve on its hub so the next parts have places to lock on.
+STEP 2
+ADD connector-1 32184 yellow
+ADD rod-1 3749 yellow
+CONNECT connector-1.axlehole2 -> housing-1.stub1? LOCKED
+CONNECT rod-1.axle1 -> connector-1.axlehole1 LOCKED
+WHY Locks a yellow angle connector onto the housing's stub next to the bush, then plugs an axle-pin into its free cross hole so the pin end can reach the next part.
+STEP 3
+ADD liftarm-1 32523 yellow
+ADD joint-1 32014 black
+CONNECT rod-1.pin1 -> liftarm-1.hole1 TURNS
+CONNECT joint-1.axlehole1 -> housing-1.stub2? LOCKED
+WHY Swings a 4-hole yellow beam onto the axle-pin's free end and locks a 90-degree joint onto the housing's other side, starting a second arm.
+STEP 4
+ADD joint-2 32014 black
+ADD axle-1 4519 yellow
+ADD sleeve-2 18654 yellow
+CONNECT axle-1.axle1 -> joint-1.axlehole2 LOCKED
+CONNECT axle-1.axle2 -> joint-2.axlehole1 LOCKED
+CONNECT axle-1.axle3 -> sleeve-2.hole1 TURNS
+WHY Threads an axle through both 90-degree joints and caps the free end with a bearing sleeve, turning the second arm into a shaft.
+STEP 5
+ADD connector-2 32184 yellow
+ADD bevel-1 6589 darkgray
+ADD rod-2 3749 tan
+CONNECT connector-2.axlehole1 -> housing-1.stub3? LOCKED
+CONNECT rod-2.axle1 -> bevel-1.axlehole1 LOCKED
+CONNECT rod-2.pin1 -> connector-2.hole1 TURNS
+WHY Adds a second yellow angle connector to the housing and locks a bevel gear onto an axle-pin whose free end turns in the connector's round hole.
+STEP 6
+ADD sleeve-3 18654 yellow
+ADD sleeve-4 18654 yellow
+ADD bevel-2 6589 tan
+CONNECT sleeve-3.hole1 -> housing-1.stub4? TURNS
+CONNECT sleeve-4.hole1 -> housing-1.stub5? TURNS
+CONNECT bevel-2.axlehole1 -> housing-1.stub6? LOCKED
+WHY Adds two more bearing sleeves and a third bevel gear onto the housing's remaining stubs, filling out the gear cluster.
+STEP 7
+ADD bevel-3 6589 tan
+ADD bevel-4 6589 tan
+ADD axle-2 4519 yellow
+CONNECT axle-2.axle1 -> bevel-3.axlehole1 LOCKED
+CONNECT axle-2.axle2 -> bevel-4.axlehole1 LOCKED
+CONNECT axle-2.axle3 -> housing-1.hub2? TURNS
+WHY Locks the last two bevel gears onto a final axle and passes it into the housing's bore, finishing the output shaft and completing the minimalist differential.
