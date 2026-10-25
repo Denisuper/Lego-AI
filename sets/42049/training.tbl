@@ -1,0 +1,237 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD p64178-1 64178 lightgray
+ADD p6558-1 6558 blue
+ADD p6558-2 6558 blue
+ADD p2780-1 2780 black
+ADD p2780-2 2780 black
+CONNECT p6558-1.pin1 -> p64178-1.hole28 STIFF
+CONNECT p6558-2.pin1 -> p64178-1.hole27 STIFF
+CONNECT p2780-1.pin1 -> p64178-1.hole18 STIFF
+CONNECT p2780-2.pin2 -> p64178-1.hole19 STIFF
+WHY Starts the rear chassis with a rigid grey frame and two matching pairs of outward mounting pins.
+STEP 2
+ADD p55013-1 55013 darkgray
+ADD p18575-1 18575 tan
+ADD p6589-1 6589 tan
+CONNECT p55013-1.axle7 -> p18575-1.axlehole1 LOCKED
+CONNECT p55013-1.axle6 -> p6589-1.axlehole1 LOCKED
+WHY Puts the twenty-tooth gear and smaller bevel gear on the same stopped shaft so they turn together.
+STEP 3
+CONNECT p55013-1.axle2 -> p64178-1.hole7 TURNS
+CONNECT p55013-1.axle8 -> p64178-1.hole22 TURNS
+WHY Inserts the geared shaft through the frame's central round bearings so both gears remain free to rotate.
+STEP 4
+GROUP rear-upright-bearings
+ADD p43093-1 43093 blue
+ADD p43093-2 43093 blue
+ADD p32184-1 32184 black
+ADD p32184-2 32184 black
+ADD p18651-1 18651 black
+ADD p18651-2 18651 black
+ADD p6632-1 6632 lightgray
+ADD p6632-2 6632 lightgray
+CONNECT p43093-1.axle1 -> p32184-1.axlehole2 LOCKED
+CONNECT p43093-2.axle1 -> p32184-2.axlehole2 LOCKED
+CONNECT p18651-1.axle2 -> p32184-1.axlehole1 LOCKED
+CONNECT p18651-2.axle2 -> p32184-2.axlehole1 LOCKED
+CONNECT p18651-1.axle1 -> p6632-1.axlehole2 LOCKED
+CONNECT p18651-1.axle1 -> p6632-2.axlehole2 LOCKED
+CONNECT p18651-2.axle1 -> p6632-1.axlehole1 LOCKED
+CONNECT p18651-2.axle1 -> p6632-2.axlehole1 LOCKED
+END
+ATTACH rear-upright-bearings
+CONNECT p43093-1.pin1 -> p64178-1.hole6 STIFF
+CONNECT p43093-2.pin1 -> p64178-1.hole8 STIFF
+WHY Builds and mounts the paired upright bearings with doubled thin cross braces above the chassis frame.
+STEP 5
+ADD p4519-1 4519 lightgray
+ADD p18575-2 18575 tan
+ADD p59443-1 59443 darkgray
+CONNECT p4519-1.axle3 -> p59443-1.axlehole2 LOCKED
+CONNECT p4519-1.axle2 -> p64178-1.hole15 TURNS
+CONNECT p4519-1.axle1 -> p18575-2.axlehole1 LOCKED
+MESH p6589-1.teeth p18575-2.teeth
+RATIO p6589-1 p18575-2 12/20
+WHY Adds the transverse twenty-tooth output gear, turning the bevel drive through ninety degrees toward the wheel axle.
+STEP 6
+ADD p3749-1 3749 tan
+ADD p59443-2 59443 darkgray
+CONNECT p3749-1.axle1 -> p59443-2.axlehole1 LOCKED
+CONNECT p3749-1.pin1 -> p64178-1.hole14 TURNS
+WHY Fits the opposite axle joiner on a frictionless pin so that side can turn freely in the frame.
+STEP 7
+GROUP rear-wheel-carriers
+ADD p32062-1 32062 red
+ADD p32062-2 32062 red
+ADD p32062-3 32062 red
+ADD p32062-4 32062 red
+ADD p32062-5 32062 red
+ADD p32062-6 32062 red
+ADD p32062-7 32062 red
+ADD p32062-8 32062 red
+ADD p32449-1 32449 yellow
+ADD p32449-2 32449 yellow
+ADD p32449-3 32449 yellow
+ADD p32449-4 32449 yellow
+ADD p32184-3 32184 black
+ADD p32184-4 32184 black
+CONNECT p32062-4.axle2 -> p32449-1.axlehole1 LOCKED
+CONNECT p32062-3.axle2 -> p32449-2.axlehole1 LOCKED
+CONNECT p32062-2.axle2 -> p32449-3.axlehole2 LOCKED
+CONNECT p32062-1.axle2 -> p32449-4.axlehole2 LOCKED
+CONNECT p32062-5.axle2 -> p32449-1.axlehole2 LOCKED
+CONNECT p32062-6.axle2 -> p32449-2.axlehole2 LOCKED
+CONNECT p32062-7.axle2 -> p32449-4.axlehole1 LOCKED
+CONNECT p32062-8.axle2 -> p32449-3.axlehole1 LOCKED
+CONNECT p32062-5.axle1 -> p32184-3.axlehole2 LOCKED
+CONNECT p32062-6.axle1 -> p32184-3.axlehole1 LOCKED
+CONNECT p32062-7.axle1 -> p32184-4.axlehole1 LOCKED
+CONNECT p32062-8.axle1 -> p32184-4.axlehole2 LOCKED
+END
+ATTACH rear-wheel-carriers
+CONNECT p32062-1.axle1 -> p64178-1.hole13 TURNS
+CONNECT p32062-2.axle1 -> p64178-1.hole17 TURNS
+CONNECT p32062-3.axle1 -> p64178-1.hole12 TURNS
+CONNECT p32062-4.axle1 -> p64178-1.hole16 TURNS
+WHY Mounts the two wheel carriers on paired yellow arms that pivot in the frame while holding the carriers parallel.
+STEP 8
+ADD p32449-5 32449 yellow
+ADD p32449-6 32449 yellow
+ADD p32449-7 32449 yellow
+ADD p32449-8 32449 yellow
+CONNECT p32062-1.axle1 -> p32449-6.axlehole2 LOCKED
+CONNECT p32062-2.axle1 -> p32449-5.axlehole2 LOCKED
+CONNECT p32062-3.axle1 -> p32449-7.axlehole1 LOCKED
+CONNECT p32062-4.axle1 -> p32449-8.axlehole1 LOCKED
+CONNECT p32062-5.axle1 -> p32449-8.axlehole2 LOCKED
+CONNECT p32062-6.axle1 -> p32449-7.axlehole2 LOCKED
+CONNECT p32062-7.axle1 -> p32449-6.axlehole1 LOCKED
+CONNECT p32062-8.axle1 -> p32449-5.axlehole1 LOCKED
+WHY Doubles all four yellow carrier arms above the frame without locking their round chassis pivots.
+STEP 9
+ADD p3705-1 3705 black
+ADD p3705-2 3705 black
+ADD p32123b-1 32123b lightgray
+ADD p32123b-2 32123b lightgray
+CONNECT p3705-1.axle1 -> p59443-1.axlehole1 LOCKED
+CONNECT p3705-1.axle2 -> p32184-4.hole1 TURNS
+CONNECT p3705-1.axle3 -> p32123b-1.axlehole1 LOCKED
+CONNECT p3705-2.axle4 -> p59443-2.axlehole2 LOCKED
+CONNECT p3705-2.axle3 -> p32184-3.hole1 TURNS
+CONNECT p3705-2.axle2 -> p32123b-2.axlehole1 LOCKED
+WHY Inserts the two wheel shafts through the carriers into the inner joiners and retains them with half bushes.
+STEP 10
+GROUP rear-transfer-drive
+ADD p32184-5 32184 black
+ADD p4519-2 4519 lightgray
+CONNECT p4519-2.axle1 -> p32184-5.axlehole2 LOCKED
+WHY Starts the transfer-drive support with a short cross axle through its lower bearing lug.
+STEP 11
+ADD p6536-1 6536 yellow
+ADD p32034-1 32034 black
+CONNECT p4519-2.axle2 -> p6536-1.axlehole1 LOCKED
+CONNECT p4519-2.axle3 -> p32034-1.axlehole1 LOCKED
+WHY Extends the lower cross member with a yellow perpendicular bearing and a black inline connector.
+STEP 12
+ADD p4519-3 4519 lightgray
+ADD p32039-1 32039 yellow
+CONNECT p4519-3.axle1 -> p32034-1.axlehole2 LOCKED
+CONNECT p4519-3.axle2 -> p32039-1.axlehole1 LOCKED
+WHY Adds the opposite cross axle and its yellow angled mounting connector.
+STEP 13
+ADD p4519-4 4519 lightgray
+ADD p32073-1 32073 lightgray
+ADD p6536-2 6536 yellow
+ADD p6536-3 6536 yellow
+ADD p32034-2 32034 black
+CONNECT p4519-4.axle1 -> p32184-5.axlehole1 LOCKED
+CONNECT p4519-4.axle2 -> p6536-2.axlehole1 LOCKED
+CONNECT p4519-4.axle3 -> p32034-2.axlehole1 LOCKED
+CONNECT p32073-1.axle5 -> p32034-2.axlehole2 LOCKED
+CONNECT p32073-1.axle4 -> p6536-3.axlehole1 LOCKED
+WHY Builds the matching upper cross member with yellow bearings aligned above the lower pair.
+STEP 14
+ADD p32184-6 32184 black
+ADD p43093-3 43093 blue
+CONNECT p4519-3.axle3 -> p32184-6.axlehole2 LOCKED
+CONNECT p32073-1.axle3 -> p32184-6.axlehole1 LOCKED
+CONNECT p43093-3.axle1 -> p32039-1.axlehole2 LOCKED
+WHY Closes the transfer-drive frame with its second upright and adds the blue locating pin.
+STEP 15
+ADD p55013-2 55013 darkgray
+ADD p18575-3 18575 tan
+CONNECT p55013-2.axle8 -> p6536-1.hole1 TURNS
+CONNECT p55013-2.axle7 -> p18575-3.axlehole1 LOCKED
+WHY Inserts the stopped transfer shaft into a round yellow bearing and slides its twenty-tooth gear into position.
+STEP 16
+ADD p32526-1 32526 yellow
+ADD p44294-1 44294 yellow
+ADD p3713-1 3713 red
+ADD p94925-1 94925 lightgray
+CONNECT p44294-1.axle1 -> p3713-1.axlehole1 LOCKED
+CONNECT p44294-1.axle2 -> p32526-1.hole3 TURNS
+CONNECT p44294-1.axle3 -> p94925-1.axlehole1 LOCKED
+CONNECT p44294-1.axle4 -> p32034-1.hole1 TURNS
+CONNECT p43093-3.pin1 -> p32526-1.hole1 STIFF
+CONNECT p55013-2.axle6 -> p32526-1.hole6 TURNS
+MESH p18575-3.teeth p94925-1.teeth
+RATIO p18575-3 p94925-1 20/16
+WHY Adds the yellow support and the sixteen-tooth cross-shaft gear while keeping both shafts free in round bearings.
+STEP 17
+ADD p3713-2 3713 red
+ADD p3713-3 3713 red
+CONNECT p44294-1.axle5 -> p3713-2.axlehole1 LOCKED
+CONNECT p32073-1.axle2 -> p3713-3.axlehole1 LOCKED
+WHY Retains the projecting yellow and grey cross axles with red bushes.
+STEP 18
+ADD p3713-4 3713 red
+ADD p62462-1 62462 lightgray
+CONNECT p55013-2.axle4 -> p62462-1.hole1 TURNS
+CONNECT p55013-2.axle5 -> p62462-1.hole1 TURNS
+CONNECT p55013-2.axle3 -> p3713-4.axlehole1 LOCKED
+WHY Slides a long round sleeve and a red stop bush onto the transfer shaft to preserve the gear spacing.
+STEP 19
+ADD p18575-4 18575 tan
+CONNECT p55013-2.axle2 -> p18575-4.axlehole1 LOCKED
+WHY Adds the outer twenty-tooth gear on the same transfer shaft beyond the sleeve and retaining bush.
+STEP 20
+ADD p3749-2 3749 tan
+ADD p59443-3 59443 darkgray
+ADD p3706-1 3706 red
+CONNECT p3749-2.axle1 -> p59443-3.axlehole1 LOCKED
+CONNECT p3706-1.axle6 -> p59443-3.axlehole2 LOCKED
+CONNECT p3749-2.pin1 -> p6536-2.hole1 TURNS
+WHY Builds the second long transfer shaft from a red axle and a joiner, with a frictionless pin bearing at its inner end.
+STEP 21
+ADD p43093-4 43093 blue
+ADD p43093-5 43093 blue
+ADD p59443-4 59443 darkgray
+ADD p62462-2 62462 lightgray
+ADD p2780-3 2780 black
+CONNECT p43093-4.axle1 -> p59443-4.axlehole2 LOCKED
+CONNECT p43093-5.axle1 -> p59443-4.axlehole1 LOCKED
+CONNECT p43093-5.pin1 -> p62462-2.hole1 STIFF
+CONNECT p2780-3.pin1 -> p62462-2.hole1 STIFF
+CONNECT p43093-4.pin1 -> p6536-3.hole1 STIFF
+END
+WHY Adds the parallel pin-and-sleeve brace above the red shaft to steady the transfer-drive assembly.
+STEP 22
+ATTACH rear-transfer-drive
+CONNECT p18651-1.pin1 -> p32526-1.hole2 STIFF
+CONNECT p18651-2.pin1 -> p32526-1.hole4 STIFF
+WHY Mounts the completed transfer-drive support onto the two black posts above the rear chassis.
+STEP 23
+ADD p62462-3 62462 lightgray
+CONNECT p3706-1.axle4 -> p62462-3.hole1 TURNS
+CONNECT p3706-1.axle5 -> p62462-3.hole1 TURNS
+WHY Slides a round sleeve over the exposed red transfer shaft before the next cross member is fitted.
