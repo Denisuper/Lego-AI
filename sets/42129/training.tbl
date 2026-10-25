@@ -3451,3 +3451,119 @@ END
 ATTACH dq
 CONNECT dq-ang-1.hole1~ -> dq-ang-2.hole2~ TURNS
 WHY Finishes the mirror arm with a brown axle with a stop and a 3-long axle in two connectors, the same as on the left door, and joins the two halves.
+STEP 396
+ADD dq-bush-5 3713 black
+ADD dq-ang-3 32184 darkgray
+CONNECT dq-bush-5.axlehole1 -> dq-axle3-1.axle2~ LOCKED
+CONNECT dq-ang-3.axlehole1 -> dq-axle3-1.axle3~ LOCKED
+WHY A black bush and a perpendicular connector go on the right mirror arm to carry the elbow piece.
+STEP 397
+ADD dq-lbeam-1 32526 black
+ADD dq-axle4-1 87083 darkgray
+ADD dq-pin-1 61332 black
+ADD dq-pin-2 61332 black
+CONNECT dq-pin-1.pin1 -> dq-lbeam-1.hole1~ STIFF
+CONNECT dq-pin-2.pin1 -> dq-lbeam-1.hole3~ STIFF
+CONNECT dq-axle4-1.axle1 -> dq-lbeam-1.hole5~ TURNS
+WHY A black L-beam with two pins and a 4-long axle makes the right mirror's elbow so it can fold, the same as on the left.
+STEP 398
+ADD dq-bush-6 3713 black
+ADD dq-ang-4 32184 darkgray
+CONNECT dq-bush-6.axlehole1 -> dq-axle4-1.axle3~ LOCKED
+CONNECT dq-ang-4.axlehole1 -> dq-axle3-2.axle2~ LOCKED
+WHY A second bush and connector add the second pivot at the elbow.
+STEP 399
+ADD dq-plate-1 3623 black
+ADD dq-pin-3 61332 black
+ADD dq-bpin-2 43093 blue
+ADD dq-plate-2 18677 black
+CONNECT dq-bpin-2.pin1 -> dq-plate-1.hole1? STIFF
+CONNECT dq-pin-3.pin1 -> dq-plate-1.hole2? STIFF
+CONNECT dq-plate-2.hole1~ -> dq-pin-3.pin2 STIFF
+CONNECT dq-plate-1.stud1? -> dq-ang-3.stud1? STIFF
+WHY A black 1x3 plate with a blue pin and a black pin-plate make the right mirror head base.
+STEP 400
+ADD dq-bpin-3 43093 blue
+ADD dq-plate-3 18677 black
+CONNECT dq-bpin-3.pin1 -> dq-plate-3.hole1~ STIFF
+CONNECT dq-plate-3.stud1? -> dq-plate-1.stud3? STIFF
+WHY One more blue pin and pin-plate widen the right mirror head base.
+STEP 401
+ADD dq-tile-1 26603 black
+CONNECT dq-tile-1.stud1? -> dq-plate-1.stud1? STIFF
+WHY A black 2x3 tile is pressed on top as the mirror glass; sticker 4 goes on it.
+STEP 402
+ADD dq-tile-2 3068b black
+CONNECT dq-tile-2.stud1? -> dq-plate-3.stud1? STIFF
+WHY A black 2x2 tile goes on the second base as the second mirror glass; sticker 10 goes on it.
+STEP 403
+WHY Turns the right mirror over to show it from the back before it is fitted to the door.
+STEP 404
+CONNECT dq-pin-1.pin2 -> dp-beam11-1.hole2~ STIFF
+WHY Moves the finished mirror onto the top corner of the right door frame.
+STEP 405
+WHY Swings the mirror arm out so it stands away from the door, as the yellow arrow shows.
+STEP 406
+WHY Turns the door over; stickers 13 and 29 (the number 13 and the stripe) go on the door skin as the picture shows.
+STEP 407
+ADD dp-lpin-2 11214 red
+ADD dp-beam2-3 41677 black
+CONNECT dp-lpin-2.pin1 -> dp-beam2-3.hole1~ STIFF
+CONNECT dp-beam2-3.hole2~ -> dp-beam11-1.hole10~ STIFF
+WHY A red pin and a thin black beam are added on the back of the right door as the lock.
+STEP 408
+CONNECT dn-beam11-1.hole5~ -> dp-beam11-1.hole5~ STIFF
+WHY Lays the long beam from the left door across to the right door, so the two doors are joined into one bar for the cab's lower frame.
+STEP 409
+ADD cf-axle4-1 87083 darkgray
+ADD cf-axle4-2 87083 darkgray
+ADD cf-conn-1 32184 darkgray
+ADD cf-conn-2 32184 darkgray
+CONNECT cf-axle4-1.axle1 -> dn-beam2-1.hole2~ TURNS
+CONNECT cf-axle4-2.axle1 -> dn-beam2-2.hole2~ TURNS
+CONNECT cf-conn-1.hole1~ -> cf-axle4-1.axle3~ TURNS
+CONNECT cf-conn-2.hole1~ -> cf-axle4-2.axle3~ TURNS
+WHY Two 4-long axles with stops and two connectors go down through the joined doors as the hinge pins the doors will swing on.
+STEP 410
+ATTACH dr
+CONNECT cf-axle4-1.axle4 -> se2-beam11-1.hole1~ TURNS
+WHY Lowers the left door onto the chassis beside the seats.
+STEP 411
+ATTACH dp
+CONNECT cf-axle4-2.axle4 -> se2-beam11-1.hole11~ TURNS
+WHY Swings both doors in against the chassis (the yellow arrows) so the doors rest closed beside the seats.
+STEP 412
+ADD cg-tile-1 4162 lightgray
+CONNECT cg-tile-1.stud1? -> ec-tile-1.stud1? STIFF
+WHY A long light grey 1x8 tile (sticker 26) is pressed onto the top of the front cover as the bonnet's trim.
+STEP 413
+GROUP ch
+ADD ch-axle3-1 4519 lightgray
+ADD ch-bush-1 6632 darkgray
+ADD ch-ang-1 32013 black
+ADD ch-conn-1 6536 darkgray
+ADD ch-bush-2 3713 black
+CONNECT ch-bush-1.axlehole1? -> ch-axle3-1.axle1 LOCKED
+CONNECT ch-ang-1.axlehole1 -> ch-axle3-1.axle3 LOCKED
+CONNECT ch-conn-1.hole1~ -> ch-ang-1.hole1~ STIFF
+CONNECT ch-bush-2.axlehole1 -> ch-axle3-1.axle2 LOCKED
+END
+ATTACH ch
+CONNECT ch-conn-1.hole2~ -> dq-ang-1.hole2~ TURNS
+WHY Makes two small mirror-brace sticks, each a 3-long axle with a grey beam, a black angled connector and a bush, and clips them on the door so the mirrors are held steady.
+STEP 414
+ADD pa-panel-1 64782 darkgray
+ADD pa-pin-1 61332 black
+ADD pa-axle4-1 87083 darkgray
+CONNECT pa-pin-1.pin1 -> pa-panel-1.hole1~ STIFF
+CONNECT pa-axle4-1.axle1 -> dn-beam11-1.hole6~ TURNS
+CONNECT pa-panel-1.hole3~ -> dn-beam11-1.hole3~ STIFF
+WHY A big dark grey 5x11 panel (sticker 6, the Zetros green side graphic) covers the left side of the cab, held by a pin and a 4-long axle through the door frame.
+STEP 415
+ADD pb-panel-1 64782 darkgray
+ADD pb-pin-1 61332 black
+ADD pb-axle4-1 87083 darkgray
+CONNECT pb-pin-1.pin1 -> pb-panel-1.hole1~ STIFF
+CONNECT pb-axle4-1.axle1 -> dp-beam11-1.hole6~ TURNS
+CONNECT pb-panel-1.hole3~ -> dp-beam11-1.hole3~ STIFF
+WHY The matching right-side panel (sticker 1) is fitted the same way on the right door.
