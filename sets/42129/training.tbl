@@ -5252,3 +5252,96 @@ CONNECT no-tpin-1.pin1 -> bq-beam11-2.hole3~ TURNS
 CONNECT no-tpin-2.pin1 -> bq-beam11-2.hole8~ TURNS
 CONNECT no-tpin-3.pin1 -> mw-panel-1.hole2~ TURNS
 WHY Turns the truck round and pushes three tan caps on grey pins into the right chassis side as covers for the fixing points. The booklet prints the step number 590 twice, so this one is labelled 590b.
+STEP 591
+GROUP np
+ADD np-beam5-1 32316 black
+ADD np-beam2-1 41677 black
+ADD np-beam2-2 41677 black
+ADD np-axle4-1 3705 black
+ADD np-axle4-2 3705 black
+ADD np-axle3-1 4519 lightgray
+ADD np-pin-1 61332 black
+ADD np-bpin-1 43093 blue
+ADD np-ell-1 71708 black
+ADD np-ang-1 32034 darkgray
+ADD np-ang-2 32034 darkgray
+ADD np-bush-1 3713 darkgray
+ADD np-conn-1 6536 darkgray
+ADD np-conn-2 6536 darkgray
+CONNECT np-ang-1.axlehole1 -> np-conn-1.axlehole1 LOCKED
+CONNECT np-axle4-1.axle1 -> np-ang-1.axlehole2 LOCKED
+CONNECT np-ell-1.hole1~ -> np-axle4-1.axle2~ TURNS
+CONNECT np-pin-1.pin1 -> np-ell-1.hole3~ STIFF
+CONNECT np-axle4-2.axle1 -> np-conn-2.axlehole1 LOCKED
+CONNECT np-beam2-1.hole1~ -> np-axle4-2.axle3~ TURNS
+CONNECT np-bush-1.axlehole1 -> np-axle4-2.axle4 LOCKED
+CONNECT np-beam5-1.hole1~ -> np-pin-1.pin2 STIFF
+CONNECT np-bpin-1.pin1 -> np-beam5-1.hole3~ STIFF
+CONNECT np-beam2-2.hole1~ -> np-beam5-1.hole5~ STIFF
+CONNECT np-axle3-1.axle1 -> np-ang-2.axlehole1 LOCKED
+END
+ATTACH np
+CONNECT np-ang-2.hole1~ -> nn-ang-2.hole2~ STIFF
+WHY Builds the left front corner mount the same way as the right one in nine small steps and fixes it on the left front corner, as the yellow arrow shows.
+STEP 592
+ADD nq-ang-1 32034 darkgray
+ADD nq-ang-2 32184 darkgray
+CONNECT nq-ang-1.hole1~ -> nq-ang-2.hole2~ STIFF
+CONNECT nq-ang-2.hole1~ -> np-ang-2.hole2~ STIFF
+WHY Two grey angled connectors are linked on the left front corner as the last piece of that side.
+STEP 593
+GROUP nr
+ADD nr-beam5-1 32316 black
+ADD nr-beam5-2 32316 black
+ADD nr-beam5-3 32316 black
+ADD nr-axle3-1 4519 lightgray
+ADD nr-tan-1 32002 tan
+ADD nr-tan-2 32002 tan
+ADD nr-tube-1 42135 black
+ADD nr-tube-2 42135 black
+ADD nr-tube-3 42135 black
+ADD nr-bpin-1 43093 blue
+ADD nr-bpin-2 43093 blue
+ADD nr-pin-1 61332 black
+ADD nr-pin-2 61332 black
+ADD nr-bush-1 3713 darkgray
+ADD nr-bush-2 3713 darkgray
+ADD nr-ang-1 32034 darkgray
+ADD nr-ang-2 32034 darkgray
+CONNECT nr-axle3-1.axle1 -> nr-beam5-1.axlehole1? LOCKED
+CONNECT nr-tube-1.axlehole1 -> nr-tan-1.axle1? LOCKED
+CONNECT nr-tan-2.pin1 -> nr-tube-2.axlehole1 TURNS
+CONNECT nr-tube-3.axlehole1 -> nr-axle3-1.axle3 LOCKED
+CONNECT nr-beam5-2.hole1~ -> nr-axle3-1.axle2~ TURNS
+CONNECT nr-pin-1.pin1 -> nr-beam5-1.hole3~ STIFF
+CONNECT nr-pin-2.pin1 -> nr-beam5-1.hole5~ STIFF
+CONNECT nr-beam5-3.hole2~ -> nr-pin-1.pin2 STIFF
+CONNECT nr-bpin-1.pin1 -> nr-beam5-3.hole1~ STIFF
+CONNECT nr-bpin-2.pin1 -> nr-beam5-3.hole3~ STIFF
+CONNECT nr-bush-1.axlehole1 -> nr-bpin-1.axle1 LOCKED
+CONNECT nr-bush-2.axlehole1 -> nr-bpin-2.axle1 LOCKED
+CONNECT nr-ang-1.hole1~ -> nr-beam5-1.hole1~ STIFF
+CONNECT nr-ang-2.hole1~ -> nr-beam5-2.hole5~ STIFF
+END
+ATTACH nr
+CONNECT nr-ang-1.hole2~ -> nk-hub-1.pin2~ STIFF
+WHY Builds the right side's front corner trim bracket exactly like the left one (step 588) in seven small steps and fixes it on the right chassis side.
+STEP 594
+ADD ns-bpin-1 43093 blue
+ADD ns-pin-1 61332 black
+ADD ns-lbeam-1 32140 black
+CONNECT ns-pin-1.pin1 -> ns-lbeam-1.hole1~ STIFF
+CONNECT ns-bpin-1.pin1 -> ns-lbeam-1.hole3~ STIFF
+CONNECT ns-lbeam-1.hole2~ -> bq-beam11-2.hole9~ STIFF
+WHY A black 2x4 L-beam with a black pin and a blue pin is fixed on the right chassis side as the mount for the second fuel tank, as the small picture shows.
+STEP 594b
+GROUP nt
+ADD nt-panel-1 24116 black
+ADD nt-panel-2 24116 black
+ADD nt-pin-1 61332 black
+ADD nt-pin-2 61332 black
+CONNECT nt-pin-1.pin1 -> nt-panel-1.hole1~ STIFF
+CONNECT nt-pin-2.pin1 -> nt-panel-1.hole4~ STIFF
+CONNECT nt-panel-2.hole1~ -> nt-pin-1.pin2 STIFF
+END
+WHY Builds the second side fuel tank from two curved black panels joined by pins in three small steps (sticker 36 goes on it). The booklet prints the number 594 twice here, so this one is labelled 594b.
