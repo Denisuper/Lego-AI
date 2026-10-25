@@ -11,22 +11,26 @@
 STEP 1
 ADD beam-1 32524 black
 WHY Starts the model with a long 7-hole beam that the differential assembly will build onto from both ends.
+
 STEP 2
 ADD conn-1 32184 yellow
 ADD joint-1 32014 darkgray
 CONNECT conn-1.hole1? -> beam-1.hole1?
 CONNECT joint-1.hole1? -> conn-1.axlehole1?
 WHY Mounts a yellow angle connector on the beam's first hole and stacks a dark gray 90-degree joint on top of it, leaving the joint's axle stub free for the housing.
+
 STEP 3
 ADD ring-1 18654 yellow
 ADD joint-2 32014 darkgray
 CONNECT ring-1.hole1? -> beam-1.hole7?
 CONNECT joint-2.hole1? -> ring-1.hole1?
 WHY Adds a bearing sleeve on the beam's last hole and a second 90-degree joint on top of it, starting the opposite arm of the differential.
+
 STEP 4
 ADD housing-1 60c01 black
 CONNECT housing-1.stub1? -> joint-1.axlehole1?
 WHY Drops the 24-tooth differential housing onto joint-1's free axle stub, seating the gear case at the beam's near end.
+
 STEP 5
 ADD ring-2 18654 yellow
 ADD conn-2 32184 yellow
@@ -34,6 +38,7 @@ CONNECT ring-2.hole1? -> beam-1.hole2?
 CONNECT conn-2.axlehole1? -> ring-2.hole1?
 CONNECT conn-2.hole1? -> housing-1.stub2?
 WHY Braces the housing against the beam with a second yellow connector and sleeve so the case can't twist as the gears inside turn.
+
 STEP 6
 ADD bevel-1 6589 tan
 ADD axle-1 4519 yellow
@@ -42,6 +47,7 @@ CONNECT bevel-1.axlehole1 -> axle-1.axle1 LOCKED
 CONNECT axle-1.axle2 -> joint-2.hole1 TURNS
 CONNECT ring-3.hole1 -> axle-1.axle3 TURNS
 WHY Builds the right output half-shaft: a tan bevel gear locked onto a yellow axle that turns in joint-2's socket and meshes with the gears inside the housing, with a sleeve as an end bearing.
+
 STEP 7
 ADD bevel-2 6589 tan
 ADD axle-2 4519 yellow
@@ -50,6 +56,7 @@ CONNECT bevel-2.axlehole1 -> axle-2.axle1 LOCKED
 CONNECT axle-2.axle2 -> housing-1.hub1? TURNS
 CONNECT ring-4.hole1 -> axle-2.axle3 TURNS
 WHY Builds the matching left half-shaft, passing its axle into the housing's bore so both output shafts mesh with the gears inside the differential case.
+
 STEP 8
 ADD tube-1 18654 darkgray
 ADD gear-1 3648 darkgray

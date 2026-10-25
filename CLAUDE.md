@@ -1,138 +1,71 @@
 # Lego AI - project guide
 
-## What this project is
-An AI made only for LEGO Technic. Real instruction booklets are turned into step-by-step build text. A vision-language model reads booklet pages and parts lists directly, is fine-tuned with LoRA, then improved with GRPO where the reward is not a single number but a structured critique: pass/fail plus plain-language reasons for every failure. The model learns both what is wrong and why.
+Training data for LEGO Technic builds, transcribed from instruction booklets. Owner: Dennis. Use plain language.
 
-Owner: Dennis. Plain language, no jargon, straight to the point. Save tokens.
+## Source files and layout
 
-## How everything works (end to end)
+- `sets/<set>/booklet.pdf`: source booklet. Preserve official originals unchanged.
+- `booklet-part2.pdf`, `booklet-part3.pdf`, etc.: additional volumes. Some older local sources include alternate models; check the cover before transcribing.
+- `booklet-compressed.pdf` and similar names: optional reading copies; keep the original.
+- `parts_list.csv`: inventory, with quantity, part number, colour and name.
+- `training.tbl` and `training.jsonl`: the hand-written build steps and matching chat examples.
+- `catalog/connections.csv`: named connection points and allowed connection types.
+- `catalog/technic_parts.csv`, `catalog/mechanisms.json`: part and mechanism references.
+- `docs/dataset_status.csv`: current coverage, inventory differences and checker results for every set.
+- `docs/booklets.csv`: PDF page counts, hashes and available source information.
 
-1. **Input**: a booklet.pdf page image plus the set's parts_list.csv. The model sees the picture; it does not see cropped annotations or JSON sidecars.
-2. **Output**: one build-language block per step (ADD, CONNECT, WHY lines — see "The build language" below). The WHY line is the model's reasoning: one real sentence grounded in the picture and the previous/next steps. There is no separate "think" instruction; reasoning is learned from seeing WHY lines in training examples.
-3. **Check, two stages**:
-   - **Stage 1 — geometric (cheap)**: tools/check_notation.py validates every join — the point exists in catalog/connections.csv, the two parts fit, the connection word (LOCKED/TURNS/STIFF) is legal for that pair. Instant.
-   - **Stage 2 — functional (expensive)**: the same script then traces motion from each input (knob, crank, pump) through the mechanism chain using catalog/mechanisms.json rules and failure modes. Does the crank actually reach the output? Does the worm drive self-lock? Does a four-bar have a free pivot at every corner? Geometry-clean builds that are dead weight — every join legal, nothing moves — get flagged here.
-4. **Reward (non-scalar)**: the checker returns a list of critique objects, not one float. Each has a severity (error/warning/info), a code, the exact line it failed on, and a one-sentence explanation a human could act on. GRPO's scalar component is -1 per error and -0.25 per warning; the critique texts are concatenated into the prompt prefix on the next attempt so the model conditions on its own mistakes. This is process supervision: the signal is per-failure and verbal.
-5. **Loop**: generate a candidate step block, score it in both stages, feed critiques back, regenerate. Repeat until clean or a step budget is hit. Stage 1 runs on everything; stage 2 only on geometry-clean survivors, because simulation is slow.
+Fan models live in `sets/differentials/`, `sets/gearboxes/` and the existing `sets/MOC-183729/`. They are not official LEGO sets. Question marks in MOC inventory part numbers indicate unresolved identification.
 
-## Reward format
-check_notation.py with --jsonl emits one object per finding:
-```json
-{"severity": "error", "code": "WORM_NO_STOP", "line": 12, "message": "line 12 (step 4): worm worm-1 (4716) drives gear-2 but has no LOCKED stop — per worm_drive rules the worm walks along its shaft and loses mesh"}
+All booklet PDFs use Git LFS. Run `git lfs install` and `git lfs pull` after cloning. The 8862 and 8880 PDFs contain the unmodified numbered page scans from Brick Instructions; they are not original LEGO digital PDFs. The merged 42129 `booklet-reference.pdf` is a compressed 384-page edition; `booklet.pdf` is the official 388-page edition. Do not assume their page numbers match.
+
+Optional `model.mpd` reference files remain for unfinished official sets. They can help check geometry, but the PDF takes precedence. Obsolete per-step annotation folders, booklet maps, systems sidecars and their generators are retired; backups were saved outside the repo during cleanup.
+
+## Writing training data
+
+1. Read the source booklet directly. Do not create `steps.md`, cropped annotations, `annotation.json`, `booklet_map.csv`, `systems.json` or per-set `mechanisms.json`.
+2. Copy the header of `sets/42175/training.tbl` verbatim. Use consecutive global `STEP N` numbers in source order, including side-build steps.
+3. Write the build block and one plain `WHY` line explaining what the step builds and why. Keep estimates visible: `~` means estimated, `?` means unknown. Do not replace unknown points with invented exact joins.
+4. Write matching JSONL: one object with `set`, string `step` and `messages` containing system, user and assistant. The system text is identical to 42175. The user has SET, PARTS SO FAR, LAST STEPS (the previous four full steps), and the write-step prompt with the source page. Condense parts to counts after 60 items. The assistant is exactly the STEP body without its STEP heading.
+5. Keep the original PDF and inventory. Compare the complete build against every inventory part and colour; optional motor conversions may need a separate inventory scope.
+
+## Build language
+
+- `ADD name partnumber colour`: add one uniquely named part instance. Names do not change after introduction.
+- `CONNECT a.point -> b.point LOCKED|TURNS|STIFF`: join catalog points.
+- `LOCKED`: axle cross in cross hole, turning together.
+- `TURNS`: shaft in a round bearing or a frictionless pin connection.
+- `STIFF`: friction pin in a round hole or a known friction fit.
+- Points use catalog names such as `hole1`, `axlehole1`, `pin1`, `axle1` and `teeth`.
+- Optional `MESH a.teeth b.teeth`, `RATIO a b x/y`, `GROUP name` / `END` / `ATTACH name`, `DOES a DRIVES b` and `PATTERN name`.
+- `WHY`: one grounded explanation per step. Legacy THINK, MECH, STATE and MOTION scaffolding is retired.
+
+Use the arrow, visible pin exits and neighbouring pages to identify the join. Count holes at high zoom when needed. Shafts that must turn need round bearings; cross holes lock shafts. Friction on a moving pivot must agree with the actual part. Preserve uncertainty when the picture or catalog does not resolve an interface.
+
+## Validation and training
+
+```sh
+python tools/audit_dataset.py
+python tools/check_notation.py sets/<set>/training.tbl
+python -m unittest discover -s tools -p test_check_notation.py
+python training/pack_data.py
 ```
-Severity levels: error (illegal join or dead mechanism, must fix), warning (plausible but unverified or suboptimal), info (style nits). Codes include POINT_MISSING, NO_FIT, WRONG_MODE, MESH_NO_TEETH, USED_BEFORE_ADD, WORM_NO_STOP, GEAR_NOT_LOCKED, FRICTION_ON_HINGE, UNREFERENCED_PART. GRPO reward = -1 per error, -0.25 per warning, 0 for clean.
 
-## How to add a set (the only workflow)
-1. Make `sets/<set>/` with the original `booklet.pdf` (commit it unedited; add `!sets/<set>/booklet.pdf` to .gitignore) and `parts_list.csv` (Rebrickable).
-2. Read the booklet pages directly. Do NOT write steps.md: training.tbl/.jsonl already hold every step. Do NOT crop pictures, do NOT write annotation.json, systems.json, mechanisms.json or booklet_map.csv.
-3. Write TWO files directly in the 42175 style — copy `sets/42175/training.tbl` header verbatim, swap set name:
-   - `sets/<set>/training.tbl` — plain text: the header comment block, then `STEP N` followed by that step's ADD, CONNECT, optional GROUP/END/ATTACH, and WHY lines.
-   - `sets/<set>/training.jsonl` — one JSON object per step: `{"set": "Set <set> - <title>", "step": "N", "messages": [...]}`. System prompt identical to 42175. User message has SET line, PARTS SO FAR (condensed to counts past 60 items), LAST STEPS (previous four steps in full), and the write-step prompt. Assistant message is the ADD/CONNECT/WHY block.
-4. Check: every part in the parts list used exactly once by the last step; every point exists in `catalog/connections.csv`; grep -c "TO WRITE" over both training files is 0.
-5. Rules for placing a join:
-   - Look at the previous step to see what changed, and the next step: a later picture often shows the finished part from another side.
-   - An arrow points at the exact hole it enters. Use it.
-   - Count the distance between two pins and use the same distance on the part that receives them (pins 2 apart go into holes 2 apart).
-   - Pins that come out the other side of a part are often visible in the picture: use them to find the hole.
-   - When in doubt, assume the part or pin pair is centered, but only if the picture looks that way.
-   - Count holes at high zoom (render the page at 200+ dpi). Pins usually sit in every second hole, not in neighbours. Use `~` when the picture is unclear and `?` when it is not shown. Look at the step before and after.
+The audit checks matching table/chat content, the shared prompt, sequential steps, one WHY, unique names, previous-step context, booklet coverage, inventory by part and colour, and checker findings. It updates `docs/dataset_status.csv`. `--strict` fails when any transcribed set needs review; existing unfinished data currently causes that failure.
 
-## The build language
-- `ADD name partnum colour` - a part. Names never change once used (beam9-1, gear-3). Only part numbers from the set's parts list.
-- `CONNECT a.point -> b.point LOCKED|TURNS|STIFF` - LOCKED = cross in cross (turn together), TURNS = axle in round hole or frictionless pin, STIFF = friction pin in round hole.
-- Points are the catalog's names (`catalog/connections.csv`): hole1.. (round), axlehole1.. (cross), pin1.. / axle1.. (one per hole-length), `teeth` for gears.
-- Optional: `MESH a.teeth b.teeth`, `RATIO a b x/y`, `GROUP g ... END` / `ATTACH g` for a side build, `DOES a DRIVES b`, `PATTERN linkage`.
-- `WHY` is the reasoning. Training turns it into the model's thinking, so keep it short and real. We do not need a separate "think" instruction: the model learns to reason by seeing WHY lines in the examples.
+The notation checker checks catalog legality and applies mechanism heuristics. It is not a physical simulation and does not prove full motion or geometry. Its warnings and uncertainty markers still matter when there are zero errors.
 
-## Layout
-```
-sets/<set>/training.tbl + .jsonl  the whole set as training text; every file starts with the instructions the model follows
-sets/<set>/booklet.pdf         the original, unedited booklet
-sets/<set>/parts_list.csv      official parts list
-catalog/                       technic_parts.csv, connections.csv (every point of every part), mechanisms.json (mechanism types, rules, failure modes)
-tools/check_notation.py        two-stage checker: geometric legality + functional motion tracing; emits structured critique JSONL
-training/                      export.py, train_qwen.py, system_prompt.md
-docs/                          set_list.md (sets to do)
-```
-Finished sets keep only booklet, parts list, training.tbl and training.jsonl. The steps live in training.tbl/.jsonl, so there is no separate steps.md per set (never add one). 42114 in progress: training.tbl + training.jsonl for steps 1-54, continuing from booklet page 37.
-NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42029, 42094, 42129 (parts list also incomplete), 8049.
+`training/pack_data.py` only includes sets marked ready by the audit and holds out one entire set for testing. `--holdout <set-folder>` chooses it explicitly. Generated `training/data/` and model output are ignored. The current trainer consumes text chat messages; PDF page images are not yet connected to it.
 
-## Finishing a NOT STARTED set (prompt for agents)
-Example sets: **8047**, **42175**, **42061**, **42116**. A finished set looks exactly like them: open sets/42175/training.tbl first and copy its header and STEP format. These sets have no step folders left (unconverted old-format work was deleted rather than carried forward) - read the booklet directly, per "How to add a set" above. Give an agent this prompt, one set at a time:
+## Current work
 
-```
-Add set <set>. Copy the layout and wording style of sets/42175/training.tbl. Work only inside sets/<set>/.
+Use `docs/dataset_status.csv` for actual state instead of a duplicated completed-set list. The cleanup normalized 29 training pairs with 1,779 steps. No new booklet steps were invented during formatting.
 
-MAKE (in this order)
-1. Write sets/<set>/training.tbl and sets/<set>/training.jsonl directly from the booklet (do not
-   write steps.md, do not run export.py, do not crop pictures or write annotation.json).
-   One STEP block per step in booklet order: ADD and CONNECT lines, GROUP/END/ATTACH for side
-   builds, plus ONE real WHY sentence per step. jsonl: one object per step with set, step,
-   messages[system, user, assistant] per the 42175 schema.
-2. grep -c "TO WRITE" over both training files must be 0.
+- 42094 remains paused at global step 126, source page 71, with 394 of 827 inventory parts. Continue at page 72 only when asked.
+- 42006 has all 89 main-build steps and 695 inventory entries. Its 25 remaining parts are reserved for the optional 8293 conversion, which also uses external kit components. Do not add those parts to arbitrary main-build steps.
+- 42114 has 54 existing steps. Its malformed placeholder JSONL was rebuilt from the existing table, but its notation and incomplete inventory still need substantive repair.
+- 8047's 56 main steps and 32 side-build steps are now 88 consecutive global steps. Six ADD records present only in the old JSON were retained. Its existing worm-stop check remains unresolved.
+- 42129's separate training branch was merged. It has 409 steps and passes notation checks after two frictionless-pin mode corrections, but duplicate names and inventory differences still need review.
 
-CHECK (all must pass before moving on)
-- every part in parts_list.csv is used exactly once by the last step.
-- every point in the training files exists in catalog/connections.csv.
-- python tools/check_notation.py sets/<set>/training.tbl exits 0 (no error-severity critiques in either stage).
+## Saving
 
-KEEP: booklet.pdf (unedited), parts_list.csv, training.tbl, training.jsonl. Delete model.mpd and
-booklet_map.csv once the training files are done - they were only needed for the old per-step pipeline.
-
-THEN: move the set out of NOT STARTED in "Layout" and "Status" of CLAUDE.md. Commit only sets/<set>, plus CLAUDE.md and .gitignore for those two edits.
-Never delete before the checks pass. Never leave "TO WRITE" in a training file. Never force-push.
-```
-NOT STARTED sets have no step folders: use "How to add a set" above instead.
-Don't use tools/build_set.py or write systems.json/mechanisms.json for a set's training files.
-
-## Mechanisms (what the model must understand)
-A mechanism is a chain of parts that passes or changes motion. Every part in a build either belongs to one of these or holds the structure together. Full rules and failure modes: `catalog/mechanisms.json`.
-
-| Mechanism | What it does |
-| --- | --- |
-| gear_pair | Passes turning from one parallel shaft to another. Changes speed and force by the tooth ratio and reverses direction. |
-| idler_gear | A gear between two others: carries turning across a gap and keeps the direction the same. Doesn't change the overall ratio. |
-| bevel_90 | Turns the drive through 90 degrees. |
-| crown_90 | A crown gear (teeth on its face) meshes with a normal gear at 90 degrees, or with a worm or spur gear in line. |
-| worm_drive | Big slow-down in one step, and self-locking: the gear can't turn the worm back, so the output holds its position (e.g. a boom stays up). |
-| slewing_ring | Lets a whole upper structure rotate on a base. Big turntables have teeth so a gear can drive the rotation. |
-| shaft_with_stops | An axle that carries parts and turns, held from sliding by stops at both ends. |
-| knob_input | Where a person turns the machine: a gear, wheel or knob on the end of an input shaft. |
-| hinge | Lets two parts swing about one axis. |
-| linkage_4bar | Four bars joined by four hinges: moving one bar moves the others in a fixed way. Used to tip a stick or bucket as an arm moves. |
-| push_rod | A rod with a hinge at each end transfers push and pull between two parts that swing. |
-| crank_lever | A short arm on a shaft turns rotation into a back-and-forth swing (or the reverse). |
-| track_loop | Tread links wrapped round wheels: spreads weight, lets the machine roll or be driven. |
-| rigid_frame | Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it. |
-| decoration | Looks only: panels, hoses, lights. Carries little or no load, never part of a drive. |
-| pneumatic_circuit | A hand pump pushes air through hoses and switches into a cylinder; the cylinder rod pushes or pulls a part. Used where a real machine would use hydraulics. |
-
-How to read a build: find the input (knob, crank, pump), follow the motion through the chain, name the output (what finally moves). A step is correct only if every part still turns or holds the way its mechanism needs (shaft turns in round holes, cross holes lock, gears sit at the right distance).
-
-## Training (Qwen2.5-VL-7B)
-1. Cat every sets/<set>/training.jsonl into training/data/train.jsonl (+ test.jsonl, one whole set held out).
-2. `pip install -r training/requirements.txt`, then `python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct` on a GPU with 24+ GB VRAM (or 4-bit quant on ~10 GB).
-3. Later: GRPO (TRL) with check_notation.py's two-stage critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above. Stage 1 filters; stage 2 scores survivors.
-
-## Status (Oct 24, 2026)
-- 42094 (Tracked Loader, 827 inventory pieces): in progress, training.tbl + training.jsonl through printed step 126 on page 71, with 394 parts. Original booklet.pdf verified byte-for-byte against LEGO asset 6268336 (SHA256 d46dffc52921fe6a1c3e1730161978f3150487fcb6b9b4cd2a8b7c5d0caea570); compressed reading copy is 45.1% smaller at 160 dpi JPEG quality 75. First 126 steps pass the checker with 0 errors and no inventory overuse; 460 joins match the registered read-only OMR reference, 60 are unavailable or uncertain. Seventy-one unknown (?) endpoints cover turntable, small-actuator, cord, selector, elbow, hose, lamp and console interfaces; thirteen endpoints are estimated (~). Full motion remains unverified. Official LDraw aliases 74695 for 60483 and 18171 for 48496 were checked. The red 11214 axle-pin catalog orientation is registered so its axle end locks into the crosspiece while its long round pin end fastens the side beam. The PDF adds a second black 2780 bracket pin at step 120 that is absent from the older OMR reference; it is included from the booklet. Continue on booklet page 72 with the mirrored cab side. Work continues in the isolated Lego-AI-overnight worktree to avoid a concurrent workflow stashing the shared checkout. Keep model.mpd and booklet_map.csv until the full set passes.
-- 42006 (Excavator, 720 advertised pieces): main model transcribed through all 89 global steps, ending at book 2 page 26, with 695 inventory entries including the sticker sheet. Both training files match and pass the notation checker with 0 errors; 831 joins match the registered read-only OMR reference and 204 are unavailable or uncertain, including modern track clips, hose ends and the small actuator. There are 41 unknown (?) and 25 estimated (~) endpoints. Full motion is not verified. Original PDFs verified against LEGO assets 6037216 and 6037218; compressed copies are 47.0% and 56.2% smaller at 160 dpi JPEG quality 75. All 25 unused inventory parts are reserved for the optional 8293 motor conversion on book 2 pages 31-41. The CSV already matches the PDF bush counts (16 light grey and 3 red); no inventory correction was necessary. The conversion introduces external motor, switch, battery and clutch gear plus removal and reuse of existing assemblies. These are deliberately not invented into the manual build. Whole-inventory completion is pending a separate conversion variant or an agreed main-build inventory scope. Keep model.mpd and booklet_map.csv until that requirement is resolved.
-- 42049 (Mine Loader, 476 inventory pieces, 164 steps): complete booklet transcription in training.tbl + training.jsonl; exact inventory match by part and colour; 0 checker errors. Main-build originals verified against LEGO downloads: booklet.pdf is book 1; booklet-part2.pdf is book 2. Reading copies are 40.0% and 30.5% smaller. Existing booklet2.pdf is the alternate cutter build and is not used. A read-only OMR comparison matched 572 joins after registering catalog pin orientations; 42 joins were unavailable or uncertain. There are 9 estimated (~) endpoints and 56 unknown (?) endpoints, including uncataloged wheel, stud and ball-socket interfaces. The checker emits 451 UNREFERENCED_PART warnings; full motion and geometry remain unverified. The OMR substitutes a four-length axle for the booklet's grey three-length linkage axle, so the PDF and inventory take precedence there. Old model.mpd and booklet_map.csv were removed after checks passed; reference copies remain outside the repo. The smooth round axle-bearing checker fix has 6 passing regression tests.
-- 42133 (Telehandler, 143 pieces, 59 steps): complete booklet transcription in training.tbl + training.jsonl; exact inventory match by part and colour; 0 checker errors. There are 96 estimated (~) endpoint references and 16 unknown (?) references, including wheel/tyre/stud interfaces absent from the catalog. The checker also emits 142 UNREFERENCED_PART warnings; this is not a fully verified motion model. Original booklet.pdf is preserved; booklet-compressed.pdf is a 220 dpi reading copy (24.2% smaller).
-- 42117 (Race Plane, 154 inventory pieces including the sticker sheet, 55 steps): complete booklet transcription in training.tbl + training.jsonl; exact inventory match by part and colour; 0 checker errors. There are 88 estimated (~) endpoints, 86 unknown (?) endpoints, and 4 endpoint references on parts absent from the catalog (18677, 15790, 61800). Stud and tyre interfaces account for many unknowns. The checker emits 144 UNREFERENCED_PART warnings; full motion and geometry remain unverified. Original booklet.pdf is preserved; booklet-compressed.pdf is a 220 dpi reading copy (27.8% smaller).
-- 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
-- 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
-- 42061 and 42116 are done too.
-- 42114 in progress: training.tbl + training.jsonl for steps 1-54 (booklet pages 6-43). Remaining steps 55-508 from pages 37-300 still to transcribe.
-- sets/differentials/ and sets/gearboxes/ are fan MOCs, not official sets. Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-266362 (12 steps), MOC-226025 (41 steps), MOC-65060 (47 steps), MOC-150019 (32 steps), MOC-51409 (88 steps, 251 parts - largest in the project), MOC-50877 (36 steps), MOC-185197 (10 pieces, 6 steps). Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-31209 (Dual Differential Unit, 20 pieces, 10 steps). Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-157410 (Minimalist Differential, 19 pieces, 7 steps). Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-194194 (Worm-Driven Differential, 35 pieces, 15 steps); exact inventory match by part number. The differential housing (6573) only has bar1/hole1/hole2 in the catalog, so most beam-to-connector plugs between purely female-holed parts (32014, 32557, 32184, 32316, 6632, 18654) have no catalog-legal pairing and are marked unknown (?) rather than asserted; 18 ? endpoints, 0 ~ estimates. All functional joins (axles into gears/bushes/housing, the worm and output axle) use real cataloged points. Done (training.tbl + training.jsonl, 0 errors from check_notation.py): Differential-v2 (Differential v.2.0, 35 pieces, 9 steps); exact inventory match by part number and colour. The booklet has no printed part numbers (parts_list.csv is authoritative per the rule above); 6562, 24201 and 60c01 have no catalog entries at all, so every one of their endpoints is marked unknown (?) rather than asserted. 26 exact endpoints, 12 `~` estimates, 42 `?` unknown, out of 80 total CONNECT endpoints across 40 CONNECT lines. The two 60-tooth-housing (60c01) sub-assemblies are built as GROUP arm-a / arm-b and ATTACHed to the frame; full motion is not independently verified.
-Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-158072 (Differential Gearbox, 24 pieces, 8 steps); exact inventory match by part number and colour. Its 8-page booklet shows the housing, connectors, beam, two bevel-gear half-shafts and two 24-tooth gears but ends before every part is placed; the remaining bush, bracket, connector and sleeve parts are closed out in step 8 with `?` points since the booklet never shows them being added.
-Parts lists only (no training files yet): MOC-171508 (+ parts_list_booklet2.csv for its alternate booklet), MOC-180337, MOC-187095, MOC-54174, MOC-191057, MOC-6speed-gearbox (unconfirmed - no part numbers in that booklet). Confidence on the fan MOCs is lower than 8047/42175/42061/42116: many small similar-looking connector parts are a best reading of the render, and several (6speed-gearbox, etc.) have no printed part numbers in their booklet at all.
-Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-74158 (4-Speed Sequential Gearbox by Don Santos, 81 pieces, 39 steps - the booklet's own step numbers run 1-40 but skip 9, and steps 5/6 and 21/22 each share one page while step 18 spans two); exact inventory match by part number and colour. The render-style booklet carries no printed part numbers and mislabels several real colours (e.g. light bluish gray parts render orange or yellow), so parts were matched to parts_list.csv by shape and quantity, not by the picture's colour. Three parts have no catalog/connections.csv entry at all (6538c, 3648, 18947), so every one of their endpoints is marked unknown (?); 55 exact endpoints, 38 `~` estimates, 9 `?` unknown across 51 CONNECT lines. Full motion is not independently verified.
-Done (training.tbl + training.jsonl, 0 errors from check_notation.py): MOC-31377 (45 pieces, 13 steps); exact inventory match by part number and colour. Its 13-page booklet builds two nested 24-16 tooth differential housings (6573) in a thin rectangular frame (32449), with three 12-tooth bevels (6589) and three 16-tooth gears (3648, no catalog entry) on friction-pinned axle shafts. The frame's own catalog entry (32449 = a 1x4 thin beam) has far fewer points than the pictured part, so most of the surrounding beam/connector lattice (32184, 32140, 32014, the long beams) is marked unknown (?) rather than asserted; the axle-bevel-housing drivetrain uses real, catalog-checked LOCKED/TURNS points throughout. 43 exact endpoints, 6 ~ estimates, 31 ? unknown, out of 80 total CONNECT endpoints across 40 CONNECT lines. Full motion is not independently verified.
-- 42101 (Dune Buggy, 117 pieces, 36 steps) is done: booklet, parts list, training.tbl, training.jsonl, 0 errors from check_notation.py.
-- 42021 (Snowmobile, 186 pieces, 29 steps) is done: booklet (main A-model only; the B-model alternate booklet was deleted as it doesn't match parts_list.csv's build), parts list, training.tbl, training.jsonl, 0 errors from check_notation.py. Joins: 74 exact, 34 ~ estimates, 0 ?.
-- MOC-micro-auto-gearbox (Micro Automatic Gearbox, 40 pieces, 19 steps) is done: booklet, parts list, training.tbl, training.jsonl, 0 errors from check_notation.py; exact inventory match by part number and colour. Twin differential housings (6573) sit between two mirrored input/output blocks (63869+41678+6536) and two pin-and-bush output rods joined by driving rings (26287); fixed idler gears (3647/3749 sub-assemblies) mesh with each differential's reinforced output gear (10928) via MESH lines. The light bluish gray motor part (99499c01) has no catalog/connections.csv entry, so its shaft connection is marked unknown (?). 65 exact endpoints, 12 `~` estimates, 1 `?` unknown, out of 78 total CONNECT endpoints across 39 CONNECT lines. Full motion is not independently verified.
-- NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42029, 42094, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" above.
-
-## Saving (agents)
-Work only inside `sets/<set>/`. Commit only that folder, no Co-Authored-By lines. Push every ~20 steps: `git add sets/<set> && git commit -m "<set>: steps ..." && git pull --rebase && git push`. Never force-push.
+Work in an isolated worktree when another task is using the shared checkout. Stage explicit task paths. Commit and push useful checkpoints, roughly every 20 transcribed steps. Merge current main before pushing; never force-push or overwrite another task's work. Preserve original booklets and back up reference material before removing anything obsolete.

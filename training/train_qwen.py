@@ -1,11 +1,12 @@
 """Fine-tune Qwen2.5-VL-7B on the exported examples with LoRA.
 Usage:
   pip install -r training/requirements.txt
-  python training/export.py
+  python tools/audit_dataset.py
+  python training/pack_data.py
   python training/train_qwen.py --model Qwen/Qwen2.5-VL-7B-Instruct --epochs 3
 Needs a GPU with 24+ GB VRAM, or run 4-bit quantized on ~10 GB.
-The booklet page images are loaded via the model's image processor;
-training/export.py must emit image paths in each jsonl example.
+The current JSONL contains text messages. Booklet PDFs are source material;
+page images are not currently passed to the trainer.
 Output: training/out/<model name>/ (LoRA adapter)."""
 import argparse
 from datasets import load_dataset

@@ -1,30 +1,33 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD rear-crossaxle-1 44294 yellow
 ADD rear-crossconnector-1 42003 darkturquoise
 CONNECT rear-crossaxle-1.axle4 -> rear-crossconnector-1.axlehole1 LOCKED
 WHY Centers a turquoise perpendicular connector on the seven-length rear cross axle.
+
 STEP 2
 ADD rear-halfpin-1 4274 lightgray
 ADD rear-halfpin-2 4274 lightgray
 CONNECT rear-halfpin-1.pin1 -> rear-crossconnector-1.hole1 TURNS
 CONNECT rear-halfpin-2.pin1 -> rear-crossconnector-1.hole2 TURNS
 WHY Adds two half pins in the rear connector with their stud ends exposed above the fuselage core.
+
 STEP 3
 ADD rear-side-link-1 32449 lightgray
 ADD rear-tie-axle-1 32062 red
 CONNECT rear-tie-axle-1.axle1 -> rear-side-link-1.axlehole2 LOCKED
 CONNECT rear-crossaxle-1.axle3~ -> rear-side-link-1.axlehole1 LOCKED
 WHY Adds the first thin side link with a short red axle at its rear end.
+
 STEP 4
 ADD rear-side-link-2 32449 lightgray
 ADD tail-root-beam-1 32140 white
@@ -32,6 +35,7 @@ CONNECT rear-tie-axle-1.axle1~ -> tail-root-beam-1.axlehole1 LOCKED
 CONNECT rear-tie-axle-1.axle2 -> rear-side-link-2.axlehole2 LOCKED
 CONNECT rear-crossaxle-1.axle5~ -> rear-side-link-2.axlehole1 LOCKED
 WHY Traps the white tail-root beam between matching thin links on the red axle.
+
 STEP 5
 GROUP fuselage-left-base
 ADD fuselage-lower-link-1 32449 lightgray
@@ -48,6 +52,7 @@ ATTACH fuselage-left-base
 CONNECT rear-crossaxle-1.axle2~ -> rear-cross-spacer-1.hole1 TURNS
 CONNECT rear-crossaxle-1.axle1~ -> fuselage-lower-link-1.axlehole2 LOCKED
 WHY Builds the first long lower fuselage side and slides it onto the cross axle outside a white spacer.
+
 STEP 6
 ADD front-crossaxle-1 44294 yellow
 ADD front-crossconnector-1 42003 darkturquoise
@@ -58,6 +63,7 @@ CONNECT front-crossaxle-1.axle3 -> front-crossconnector-2.axlehole1 LOCKED
 CONNECT front-crossaxle-1.axle5 -> front-crossconnector-3.axlehole1 LOCKED
 CONNECT front-crossaxle-1.axle1~ -> fuselage-lower-beam-1.hole4~ TURNS
 WHY Groups three turquoise connectors on the front cross axle and fits them across the forward fuselage.
+
 STEP 7
 GROUP nose-drive
 ADD nose-base-1 39793 white
@@ -66,17 +72,20 @@ ADD nose-shortpin-2 32002 tan
 CONNECT nose-shortpin-1.pin1 -> nose-base-1.hole1~ STIFF
 CONNECT nose-shortpin-2.pin1 -> nose-base-1.hole8~ STIFF
 WHY Places two short tan pins in the white nose base for mounting the bevel-drive assembly.
+
 STEP 8
 ADD nose-axlepin-1 18651 black
 ADD nose-axlepin-2 18651 black
 CONNECT nose-axlepin-1.pin1 -> nose-base-1.hole2~ STIFF
 CONNECT nose-axlepin-2.pin1 -> nose-base-1.hole9~ STIFF
 WHY Adds the two long axle pins that will secure the nose assembly across the fuselage sides.
+
 STEP 9
 ADD nose-drive-bracket-1 65746 black
 CONNECT nose-drive-bracket-1.pin1? -> nose-base-1.hole4~ STIFF
 CONNECT nose-drive-bracket-1.pin2? -> nose-base-1.hole6~ STIFF
 WHY Seats the black drive bracket on the nose base with its two round shaft bearings upright.
+
 STEP 10
 ADD drive-vertical-axle-1 3705 black
 ADD drive-bevel-gear-1 6589 tan
@@ -84,6 +93,7 @@ CONNECT drive-vertical-axle-1.axle1 -> drive-bevel-gear-1.axlehole1 LOCKED
 CONNECT drive-vertical-axle-1.axle2~ -> nose-drive-bracket-1.hole1? TURNS
 CONNECT drive-vertical-axle-1.axle3~ -> nose-base-1.hole5 TURNS
 WHY Drops the first bevel gear on its vertical axle through the bracket and nose base.
+
 STEP 11
 ADD propeller-axle-1 15462 brown
 ADD drive-bevel-gear-2 6589 tan
@@ -92,6 +102,7 @@ CONNECT propeller-axle-1.axle3~ -> nose-drive-bracket-1.hole2? TURNS
 MESH drive-bevel-gear-1.teeth drive-bevel-gear-2.teeth
 RATIO drive-bevel-gear-1 drive-bevel-gear-2 1/1
 WHY Adds the stopped propeller shaft with a matching bevel gear to turn the drive through ninety degrees.
+
 STEP 12
 ADD nose-front-link-1 6632 white
 ADD nose-front-link-2 6632 white
@@ -104,12 +115,14 @@ CONNECT nose-frame-axle-2.axle1~ -> nose-front-link-2.axlehole2 LOCKED
 CONNECT propeller-axle-1.axle4~ -> nose-front-link-1.hole1 TURNS
 CONNECT propeller-axle-1.axle4~ -> nose-front-link-2.hole1 TURNS
 WHY Braces the propeller shaft with paired white links while their round center holes let it rotate.
+
 STEP 13
 ADD nose-frame-spacer-1 18654 white
 ADD nose-frame-spacer-2 18654 white
 CONNECT nose-frame-axle-1.axle2~ -> nose-frame-spacer-1.hole1 TURNS
 CONNECT nose-frame-axle-2.axle2~ -> nose-frame-spacer-2.hole1 TURNS
 WHY Slides white spacers onto both frame axles to keep the front nose pieces evenly separated.
+
 STEP 14
 ADD nose-front-crossaxle-1 3705 black
 ADD nose-connector-1 42003 darkturquoise
@@ -122,6 +135,7 @@ CONNECT nose-frame-axle-1.axle3~ -> nose-connector-1.hole1 TURNS
 CONNECT nose-frame-axle-2.axle3~ -> nose-connector-3.hole1 TURNS
 CONNECT propeller-axle-1.axle5 -> nose-connector-2.hole1 TURNS
 WHY Closes the turquoise nose face around the propeller shaft and the two frame axles.
+
 STEP 15
 ADD nose-tooth-1 48267 orange
 ADD nose-tooth-2 48267 orange
@@ -131,12 +145,14 @@ CONNECT nose-frame-axle-2.axle4 -> nose-tooth-2.axlehole1 LOCKED
 CONNECT propeller-axle-1.axle5~ -> propeller-pin-1.axlehole1 LOCKED
 END
 WHY Fits the two orange nose teeth and locks the orange propeller pin onto the driven shaft.
+
 STEP 16
 ATTACH nose-drive
 CONNECT nose-front-crossaxle-1.axle1~ -> fuselage-lower-beam-1.hole1 TURNS
 CONNECT nose-shortpin-1.pin2 -> fuselage-lower-beam-1.hole2 STIFF
 CONNECT nose-axlepin-1.axle1~ -> fuselage-lower-beam-1.hole4~ TURNS
 WHY Attaches the complete bevel-drive nose to the first fuselage side at the three shown mounting points.
+
 STEP 17
 GROUP fuselage-right-base
 ADD fuselage-lower-link-2 32449 lightgray
@@ -157,6 +173,7 @@ CONNECT nose-front-crossaxle-1.axle4~ -> fuselage-lower-beam-2.hole1 TURNS
 CONNECT nose-shortpin-2.pin2 -> fuselage-lower-beam-2.hole2 STIFF
 CONNECT nose-axlepin-2.axle1~ -> fuselage-lower-beam-2.hole4~ TURNS
 WHY Closes the lower fuselage with the matching side beam and rear spacer around the nose mounting axles.
+
 STEP 18
 GROUP fuselage-side-left
 ADD side-connector-1 32034 white
@@ -165,28 +182,33 @@ ADD side-tail-axle-1 4519 yellow
 CONNECT side-join-axle-1.axle1 -> side-connector-1.axlehole1 LOCKED
 CONNECT side-tail-axle-1.axle1 -> side-connector-1.axlehole2 LOCKED
 WHY Starts the left upper fuselage rail with a short joining axle and a longer yellow tail axle.
+
 STEP 19
 ADD side-connector-2 32034 white
 ADD side-nose-axlepin-1 43093 blue
 CONNECT side-join-axle-1.axle2 -> side-connector-2.axlehole2 LOCKED
 CONNECT side-nose-axlepin-1.axle1 -> side-connector-2.axlehole1 LOCKED
 WHY Extends the rail with a second inline connector and an outward nose mounting pin.
+
 STEP 20
 ADD side-vertical-pin-1 61332 black
 ADD side-vertical-longpin-1 42924 blue
 CONNECT side-vertical-pin-1.pin1 -> side-connector-1.hole1 STIFF
 CONNECT side-vertical-longpin-1.pin1 -> side-connector-2.hole1 STIFF
 WHY Inserts downward friction pins through the rail's round center holes to carry the turquoise side beam.
+
 STEP 21
 ADD side-beam-1 32524 darkturquoise
 CONNECT side-vertical-longpin-1.pin2 -> side-beam-1.hole1 STIFF
 CONNECT side-vertical-pin-1.pin2 -> side-beam-1.hole5 STIFF
 WHY Pins the turquoise seven-hole beam below the white rail with the two attachment holes four spaces apart.
+
 STEP 22
 ADD side-vertical-longpin-2 42924 blue
 ADD decal-sheet-1 72378 anycolor
 CONNECT side-vertical-longpin-2.pin1 -> side-beam-1.hole2 STIFF
 WHY Adds the second downward mounting pin and applies sticker 5 from the set's decal sheet to the side beam.
+
 STEP 23
 GROUP nose-skin-left
 ADD nose-skin-plate-1 3021 white
@@ -209,11 +231,13 @@ ATTACH nose-skin-left
 CONNECT side-nose-axlepin-1.pin1 -> nose-skin-socket-1.hole1~ STIFF
 END
 WHY Builds the white-and-turquoise left nose skin with two grey slopes and mounts its underside socket on the blue nose pin.
+
 STEP 24
 ATTACH fuselage-side-left
 CONNECT side-vertical-longpin-1.pin3 -> front-crossconnector-3.hole2~ STIFF
 CONNECT side-vertical-longpin-2.pin2 -> front-crossconnector-3.hole1~ STIFF
 WHY Fits the complete left upper fuselage side onto the turquoise core with the decorated nose facing forward.
+
 STEP 25
 GROUP fuselage-side-right
 ADD side-connector-3 32034 white
@@ -222,27 +246,32 @@ ADD side-nose-axlepin-2 43093 blue
 CONNECT side-join-axle-2.axle1 -> side-connector-3.axlehole1 LOCKED
 CONNECT side-nose-axlepin-2.axle1 -> side-connector-3.axlehole2 LOCKED
 WHY Starts the matching right rail with a red joining axle at one end and a blue nose pin at the other.
+
 STEP 26
 ADD side-connector-4 32034 white
 ADD side-tail-axle-2 4519 yellow
 CONNECT side-join-axle-2.axle2 -> side-connector-4.axlehole2 LOCKED
 CONNECT side-tail-axle-2.axle1 -> side-connector-4.axlehole1 LOCKED
 WHY Extends the right rail and adds its yellow tail-mounting axle.
+
 STEP 27
 ADD side-vertical-pin-2 61332 black
 ADD side-vertical-longpin-3 42924 blue
 CONNECT side-vertical-pin-2.pin1 -> side-connector-4.hole1 STIFF
 CONNECT side-vertical-longpin-3.pin1 -> side-connector-3.hole1 STIFF
 WHY Puts the right rail's downward mounting pins in the two connector center holes.
+
 STEP 28
 ADD side-beam-2 32524 darkturquoise
 CONNECT side-vertical-longpin-3.pin2 -> side-beam-2.hole7 STIFF
 CONNECT side-vertical-pin-2.pin2 -> side-beam-2.hole3 STIFF
 WHY Attaches the right turquoise side beam with the mounting pins four holes apart to match the left side.
+
 STEP 29
 ADD side-vertical-longpin-4 42924 blue
 CONNECT side-vertical-longpin-4.pin1 -> side-beam-2.hole6 STIFF
 WHY Adds the second right-side mounting pin and applies sticker 1 to the outer turquoise face.
+
 STEP 30
 GROUP nose-skin-right
 ADD nose-skin-plate-2 3021 white
@@ -265,11 +294,13 @@ ATTACH nose-skin-right
 CONNECT side-nose-axlepin-2.pin1 -> nose-skin-socket-2.hole1~ STIFF
 END
 WHY Builds the mirrored nose skin and fits its underside pin socket onto the right rail's blue nose pin.
+
 STEP 31
 ATTACH fuselage-side-right
 CONNECT side-vertical-longpin-3.pin3 -> front-crossconnector-2.hole2~ STIFF
 CONNECT side-vertical-longpin-4.pin2 -> front-crossconnector-2.hole1~ STIFF
 WHY Closes the upper fuselage with the right side rail and leaves the two yellow tail axles exposed at the rear.
+
 STEP 32
 ADD tail-crossconnector-1 32184 white
 ADD tail-halfpin-1 4274 lightgray
@@ -277,6 +308,7 @@ CONNECT tail-halfpin-1.pin1 -> tail-crossconnector-1.hole1 TURNS
 CONNECT side-tail-axle-1.axle2~ -> tail-crossconnector-1.axlehole1 LOCKED
 CONNECT side-tail-axle-2.axle2~ -> tail-crossconnector-1.axlehole2 LOCKED
 WHY Bridges the two upper tail axles with a white connector and an upward half pin.
+
 STEP 33
 ADD tail-hinge-connector-1 92907 lightgray
 ADD tail-hinge-axle-1 32062 red
@@ -284,6 +316,7 @@ CONNECT tail-hinge-axle-1.axle1 -> tail-hinge-connector-1.axlehole1~ LOCKED
 CONNECT side-tail-axle-1.axle3~ -> tail-hinge-connector-1.axlehole2~ LOCKED
 CONNECT side-tail-axle-2.axle3~ -> tail-hinge-connector-1.axlehole3~ LOCKED
 WHY Caps the rear yellow axles with the grey split connector and adds the short red tailwheel hinge axle.
+
 STEP 34
 GROUP tailwheel
 ADD tailwheel-elbow-1 32015 black
@@ -304,24 +337,28 @@ CONNECT tail-hinge-axle-1.axle2 -> tailwheel-elbow-1.hole1 TURNS
 CONNECT tailwheel-hinge-axle-2.axle1 -> tail-hinge-connector-1.axlehole4~ LOCKED
 CONNECT tailwheel-hinge-axle-2.axle2 -> tailwheel-elbow-1.hole1 TURNS
 WHY Adds the free-running tailwheel on its angled support and hinges that support below the tail.
+
 STEP 35
 ADD tail-panel-1 11946 white
 ADD tail-panel-2 11947 white
 CONNECT side-tail-axle-1.axle3~ -> tail-panel-1.axlehole1 LOCKED
 CONNECT side-tail-axle-2.axle3~ -> tail-panel-2.axlehole1 LOCKED
 WHY Adds the two white tail panels and folds the hinged tailwheel support down beneath them.
+
 STEP 36
 ADD nose-retaining-bush-1 32123b lightgray
 ADD nose-retaining-bush-2 32123b lightgray
 CONNECT nose-axlepin-1.axle2 -> nose-retaining-bush-1.axlehole1 LOCKED
 CONNECT nose-axlepin-2.axle2 -> nose-retaining-bush-2.axlehole1 LOCKED
 WHY Retains the projecting nose axle pins with half bushes after turning the fuselage upside down.
+
 STEP 37
 GROUP wing-right
 ADD wing-panel-1 18945 darkturquoise
 ADD wing-shortpin-1 32002 tan
 CONNECT wing-shortpin-1.pin1 -> wing-panel-1.hole16~ STIFF
 WHY Starts the right wing with an inward-facing tan mounting pin at the middle of its wide root.
+
 STEP 38
 ADD wing-halfpin-1 4274 lightgray
 ADD wing-halfpin-2 4274 lightgray
@@ -330,6 +367,7 @@ CONNECT wing-halfpin-1.pin1 -> wing-panel-1.hole? TURNS
 CONNECT wing-halfpin-2.pin1 -> wing-panel-1.hole? TURNS
 CONNECT wing-halfpin-3.pin1 -> wing-panel-1.hole? TURNS
 WHY Adds three stud-ended half pins across the narrow wing tip for the colored trim and navigation light.
+
 STEP 39
 ADD wing-tip-plate-1 3024 orange
 ADD wing-tip-curve-1 11477 orange
@@ -340,17 +378,20 @@ CONNECT wing-tip-curve-1.underside? -> wing-halfpin-3.stud? STIFF
 CONNECT wing-light-1.underside? -> wing-halfpin-1.stud? STIFF
 END
 WHY Finishes the right wing tip with orange trim and the green navigation light.
+
 STEP 40
 ATTACH wing-right
 CONNECT front-crossaxle-1.axle7~ -> wing-panel-1.hole? TURNS
 CONNECT rear-crossaxle-1.axle7~ -> wing-panel-1.hole? TURNS
 WHY Slides the right wing onto the two yellow cross axles outside the fuselage.
+
 STEP 41
 GROUP wing-left
 ADD wing-panel-2 18945 darkturquoise
 ADD wing-shortpin-2 32002 tan
 CONNECT wing-shortpin-2.pin1 -> wing-panel-2.hole16~ STIFF
 WHY Starts the mirrored left wing with a tan mounting pin at the middle of its wide root.
+
 STEP 42
 ADD wing-halfpin-4 4274 lightgray
 ADD wing-halfpin-5 4274 lightgray
@@ -359,6 +400,7 @@ CONNECT wing-halfpin-4.pin1 -> wing-panel-2.hole? TURNS
 CONNECT wing-halfpin-5.pin1 -> wing-panel-2.hole? TURNS
 CONNECT wing-halfpin-6.pin1 -> wing-panel-2.hole? TURNS
 WHY Places three stud-ended half pins across the left wing tip for its trim and red navigation light.
+
 STEP 43
 ADD wing-tip-plate-2 3024 orange
 ADD wing-tip-curve-2 11477 orange
@@ -369,11 +411,13 @@ CONNECT wing-tip-curve-2.underside? -> wing-halfpin-4.stud? STIFF
 CONNECT wing-light-2.underside? -> wing-halfpin-6.stud? STIFF
 END
 WHY Finishes the left wing tip with orange trim and the red navigation light opposite the right wing's green light.
+
 STEP 44
 ATTACH wing-left
 CONNECT front-crossaxle-1.axle1~ -> wing-panel-2.hole? TURNS
 CONNECT rear-crossaxle-1.axle1~ -> wing-panel-2.hole? TURNS
 WHY Fits the left wing to the exposed yellow cross axles to complete the main wing pair.
+
 STEP 45
 ADD wing-root-brace-1 32017 darkgray
 ADD wing-root-brace-2 32017 darkgray
@@ -389,6 +433,7 @@ CONNECT landing-drive-axlepin-2.axle1 -> landing-drive-bracket-1.axlehole2~ LOCK
 CONNECT landing-drive-axlepin-1.pin1 -> nose-base-1.hole4~ STIFF
 CONNECT landing-drive-axlepin-2.pin1 -> nose-base-1.hole6~ STIFF
 WHY Braces both wing roots and mounts the upright landing-drive bracket under the nose.
+
 STEP 46
 ADD landing-axle-1 32073 lightgray
 ADD landing-bevel-gear-1 6589 tan
@@ -400,12 +445,14 @@ CONNECT drive-vertical-axle-1.axle4 -> landing-vertical-gear-1.axlehole1 LOCKED
 MESH landing-bevel-gear-1.teeth landing-vertical-gear-1.teeth
 RATIO landing-bevel-gear-1 landing-vertical-gear-1 1/1
 WHY Meshes the landing-axle bevel gear with the vertical double-bevel gear so rolling the wheels can drive the propeller.
+
 STEP 47
 ADD landing-inner-bush-1 32123b lightgray
 ADD landing-inner-bush-2 32123b lightgray
 CONNECT landing-axle-1.axle1~ -> landing-inner-bush-1.axlehole1 LOCKED
 CONNECT landing-axle-1.axle4~ -> landing-inner-bush-2.axlehole1 LOCKED
 WHY Adds inner half bushes on both sides of the landing bracket to locate the driven wheel axle.
+
 STEP 48
 ADD landing-tyre-1 59895 black
 ADD landing-tyre-2 59895 black
@@ -416,18 +463,21 @@ CONNECT landing-axle-1.axle5 -> landing-outer-bush-2.axlehole1 LOCKED
 CONNECT landing-tyre-1.rim? -> landing-outer-bush-1.rim? STIFF
 CONNECT landing-tyre-2.rim? -> landing-outer-bush-2.rim? STIFF
 WHY Fits the two main tyres between half bushes locked to the common landing axle so the wheels drive the gears together.
+
 STEP 49
 ADD propeller-1 15790 black
 ADD propeller-retainer-1 18654 white
 CONNECT propeller-pin-1.pin1 -> propeller-1.hole1~ STIFF
 CONNECT propeller-pin-1.pin2 -> propeller-retainer-1.hole1 STIFF
 WHY Fits the three-blade propeller onto the orange driven pin and retains it with a white sleeve after applying the three blade stickers.
+
 STEP 50
 ADD tail-fin-connector-1 27940 darkgray
 ADD tail-fin-connector-2 42135 lightgray
 CONNECT tail-fin-connector-1.axle1 -> tail-fin-connector-2.axlehole1 LOCKED
 CONNECT tailwheel-mountpin-1.pin1 -> tail-fin-connector-1.hole1 STIFF
 WHY Mounts the transverse tail-fin connector above the tailwheel hinge and applies the two large wing decals.
+
 STEP 51
 ADD tailplane-root-1 42003 darkturquoise
 ADD tailplane-root-2 42003 darkturquoise
@@ -444,6 +494,7 @@ CONNECT tailplane-pin-2.pin2 -> tail-panel-1.hole2 STIFF
 CONNECT tailplane-pin-3.pin2 -> tail-panel-2.hole1 STIFF
 CONNECT tailplane-pin-4.pin2 -> tail-panel-2.hole2 STIFF
 WHY Adds two turquoise tailplane roots above the white tail panels, each fixed with two friction pins.
+
 STEP 52
 GROUP tailplane-left
 ADD tailplane-beam-1 32316 white
@@ -461,6 +512,7 @@ ATTACH tailplane-left
 CONNECT tailplane-axle-1.axle2~ -> tailplane-root-1.axlehole1 LOCKED
 CONNECT tailplane-axle-1.axle4~ -> tailplane-root-2.axlehole1 LOCKED
 WHY Builds the first horizontal tailplane with sticker 2 and slides its long axle through both tailplane roots.
+
 STEP 53
 GROUP tailplane-right
 ADD tailplane-beam-2 32316 white
@@ -475,10 +527,12 @@ END
 ATTACH tailplane-right
 CONNECT tailplane-axle-1.axle5 -> tailplane-panel-2.axlehole1 LOCKED
 WHY Fits the mirrored tailplane with sticker 6 onto the other end of the shared axle.
+
 STEP 54
 ADD tail-fin-1 61800 white
 CONNECT tail-fin-connector-1.axle2 -> tail-fin-1.axlehole1~ LOCKED
 WHY Locks the upright white fin onto the transverse connector between the two horizontal tailplanes.
+
 STEP 55
 GROUP cockpit
 ADD cockpit-base-brick-1 3010 black

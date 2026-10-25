@@ -11,6 +11,7 @@
 STEP 1
 ADD frame-1 32449 lightgray
 WHY Starts the build with the thin open frame that both output shafts will be hung from.
+
 STEP 2
 ADD pin-1 43093 blue
 ADD pin-2 43093 blue
@@ -23,42 +24,50 @@ CONNECT pin-2.axle1 -> conn-1.axlehole2 LOCKED
 CONNECT pin-3.axle1 -> conn-2.axlehole1 LOCKED
 CONNECT pin-4.axle1 -> conn-2.axlehole2 LOCKED
 WHY Builds two pin-and-connector bearing blocks, one for each side of the frame.
+
 STEP 3
 CONNECT pin-1.pin1 -> frame-1.hole1~ STIFF
 CONNECT pin-3.pin1 -> frame-1.hole2~ STIFF
 WHY Seats the two bearing blocks into the frame's end holes so they stand up ready for the shafts.
+
 STEP 4
 ADD diff-1 6573 darkgray
 ADD axle-1 4519 lightgray
 CONNECT axle-1.axle2 -> diff-1.hole1~ TURNS
 WHY Slides the second differential housing onto a free-spinning shaft, leaving both ends of the shaft open for gears.
+
 STEP 5
 ADD diff-2 6573 darkgray
 ADD bevel-1 6589 tan
 CONNECT bevel-1.axlehole1 -> diff-2.bar1? LOCKED
 WHY Sets the main differential housing in the middle of the frame and fits its first internal pinion gear onto the housing's cross bar.
+
 STEP 6
 ADD axle-2 4519 lightgray
 ADD axle-3 4519 lightgray
 CONNECT axle-2.axle1 -> diff-2.hole1~ TURNS
 CONNECT axle-3.axle1 -> diff-2.hole2~ TURNS
 WHY Passes a left and a right output shaft through the housing so each can spin independently of it, like a real differential's axles.
+
 STEP 7
 ADD bevel-2 6589 tan
 ADD bevel-3 6589 tan
 CONNECT bevel-2.axlehole1 -> axle-2.axle2 LOCKED
 CONNECT bevel-3.axlehole1 -> axle-3.axle2 LOCKED
 WHY Locks a side gear onto each output shaft so they mesh with the housing the way a differential's side gears do.
+
 STEP 8
 ADD axle-4 4519 lightgray
 CONNECT axle-4.axle1 -> diff-1.hole2~ TURNS
 WHY Gives the second housing a shaft on its far side too, so it can carry output gears the same way as the main differential.
+
 STEP 9
 ADD spur-1 3648b darkgray
 ADD spur-2 3648b darkgray
 CONNECT spur-1.axlehole1 -> axle-1.axle1 LOCKED
 CONNECT spur-2.axlehole1 -> axle-4.axle2 LOCKED
 WHY Locks a 24-tooth gear onto a free end of each of the second housing's shafts, giving it its own pair of outputs.
+
 STEP 10
 ADD spur-3 3648b darkgray
 ADD spur-4 3648b darkgray

@@ -1,12 +1,12 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD conn-1 32184 black
@@ -22,6 +22,7 @@ CONNECT axle3-1.axle2 -> beam5-2.axlehole1 LOCKED
 CONNECT axle3-1.axle1 -> conn-2.axlehole1 LOCKED
 CONNECT axle5-1.axle2 -> conn-2.axlehole2 LOCKED
 WHY Starts the front cross shaft: a 3L axle between two perpendicular connectors, with a pair of thin beams locked to its middle.
+
 STEP 2
 ADD pin-1 6558 blue
 ADD beam9-1 40490 black
@@ -47,6 +48,7 @@ CONNECT axle3-3.axle2 -> conn-5.axlehole1 LOCKED
 CONNECT pin-1.pin2 -> beam5-1.hole2 STIFF
 CONNECT pin-1.pin2 -> beam5-2.hole2 STIFF
 WHY Builds the main chassis rail (beam9-1) and starts a second cross shaft behind it, pinned to the first beam pair.
+
 STEP 3
 ADD beam9-2 40490 black
 ADD axle6-1 3706 red
@@ -70,6 +72,7 @@ CONNECT axle6-2.axle4 -> beam9-1.hole3 TURNS
 CONNECT axle6-1.axle4 -> beam5-3.axlehole1 LOCKED
 CONNECT axle6-1.axle4 -> beam5-4.axlehole1 LOCKED
 WHY Adds the second chassis rail (beam9-2) and the red cross axles that will carry the rear hub build, closing the chassis ladder.
+
 STEP 4
 GROUP axle
 ADD beam7-1 32524 darkgray
@@ -82,6 +85,7 @@ CONNECT pin-4.pin1 -> beam7-1.hole6 STIFF
 CONNECT pin-5.pin1 -> beam7-1.hole3 STIFF
 CONNECT pin-6.pin1 -> beam7-1.hole5 STIFF
 WHY Builds the front hub beam: a 7-hole beam with friction pins and towball pins set into it for the steering linkage.
+
 STEP 5
 ADD pin-7 48989 lightgray
 ADD axle4-1 87083 darkgray
@@ -96,12 +100,14 @@ CONNECT axle4-2.axle3 -> bush-2.axlehole1 LOCKED
 CONNECT pin-7.pin2 -> beam7-1.hole1 STIFF
 CONNECT pin-8.pin2 -> beam7-1.hole7 STIFF
 WHY Builds the hub pivot itself: a 4-hole perpendicular connector (48989) turning freely on an axle-with-stop, bushed so it can't slide off.
+
 STEP 6
 ADD beam7-2 32524 darkgray
 CONNECT pin-7.pin1 -> beam7-2.hole1 STIFF
 CONNECT pin-8.pin1 -> beam7-2.hole7 STIFF
-WHY Closes the hub beam with a second 7-hole beam, pinned to both hub pivots.
 END
+WHY Closes the hub beam with a second 7-hole beam, pinned to both hub pivots.
+
 STEP 7
 ATTACH axle
 CONNECT pin-5.pin2 -> conn-1.hole1 STIFF
@@ -109,6 +115,7 @@ CONNECT pin-6.pin2 -> conn-2.hole1 STIFF
 CONNECT pin-5.pin2 -> conn-3.hole1 STIFF
 CONNECT pin-6.pin2 -> conn-4.hole1 STIFF
 WHY No new parts - this step just pins the finished axle-01..03 hub assembly onto the chassis built in main-01..03.
+
 STEP 8
 ADD pin-9 2780 black
 ADD pin-10 2780 black
@@ -135,6 +142,7 @@ CONNECT pin-12.pin2 -> conn-7.hole1 STIFF
 CONNECT pin-11.pin2 -> conn-8.hole1 STIFF
 CONNECT pin-10.pin1 -> conn-9.hole1 STIFF
 WHY Adds a long 13-hole rail (beam13-1) across the chassis and two 7-hole beams, with friction pins tying them to the hub connectors - the start of the steering tie-rods.
+
 STEP 9
 ADD beam3x5-1 32526 red
 ADD beam3x5-2 32526 red
@@ -161,6 +169,7 @@ CONNECT pin-18.pin1 -> beam3-2.hole1 STIFF
 CONNECT pin-15.pin2 -> beam13-1.hole1 STIFF
 CONNECT pin-18.pin2 -> beam13-1.hole13 STIFF
 WHY Builds the X-shaped steering linkage: two L-shaped red beams (the steering arms) tied together by a short cross-bar, so turning one swings the other.
+
 STEP 10
 ADD axle3-4 24316 brown
 ADD cam-1 6575 darkgray
@@ -174,6 +183,7 @@ CONNECT pin-19.axle1 -> beam9-3.hole9 TURNS
 CONNECT pin-7.pin3 -> beam9-3.hole1 STIFF
 CONNECT axle3-4.axle2 -> beam13-1.hole3 TURNS
 WHY Mounts the first steering cam pair onto an axle-with-stop, with tan (low-friction) axle pins holding a smooth red connector.
+
 STEP 11
 ADD axle3-5 24316 brown
 ADD cam-3 6575 darkgray
@@ -184,6 +194,7 @@ ADD bush-3 32123a yellow
 CONNECT axle3-5.axle1 -> bush-3.axlehole1 LOCKED
 CONNECT axle3-5.axle2 -> beam3x5-1.hole3 TURNS
 WHY Mirrors main-07: a second steering cam pair on the other side, finished with a reduced bush so it seats snugly.
+
 STEP 12
 ADD beam9-4 40490 black
 ADD pin-23 4274 lightgray
@@ -194,6 +205,7 @@ CONNECT pin-23.pin1 -> beam9-5.hole9 TURNS
 CONNECT pin-20.axle1 -> beam9-5.hole1 TURNS
 CONNECT pin-22.axle1 -> beam9-5.hole8 TURNS
 WHY Adds two more 9-hole beams either side of the chassis, pinned to the cam pivots and the hub connectors.
+
 STEP 13
 ADD pin-24 43093 blue
 ADD beam2-1 60483 black
@@ -201,6 +213,7 @@ ADD pin-25 2780 black
 CONNECT pin-25.pin2 -> beam2-1.hole1 STIFF
 CONNECT pin-24.axle1 -> beam7-4.hole4 TURNS
 WHY Finishes the front axle area: a short 2-hole beam and friction pins, plus a loose-fit blue pin that lets something turn freely against beam7-4.
+
 STEP 14
 GROUP arm
 ADD beam7-5 32348 red
@@ -213,6 +226,7 @@ CONNECT pin-27.pin1 -> beam7-5.hole1 STIFF
 CONNECT pin-28.pin1 -> beam7-5.hole3 STIFF
 CONNECT pin-29.pin1 -> beam7-5.hole4 STIFF
 WHY Starts the boom's outer beam: a bent red beam with a double-axle hub and friction pins down its length.
+
 STEP 15
 ADD housing-1 18940 red
 ADD pin-30 6558 blue
@@ -243,6 +257,7 @@ CONNECT pin-31.pin3 -> beam2x4-2.hole3 STIFF
 CONNECT pin-32.axle2 -> beam2x4-2.axlehole1 LOCKED
 CONNECT axle5-2.axle2 -> beam7-5.axlehole2 LOCKED
 WHY Adds the gear-rack housing and the 12t/20t bevel gear pair that will turn a crank into boom motion, plus a second bent beam mirroring the first.
+
 STEP 16
 ADD beam2-2 60483 black
 ADD pin-33 11214 darkgray
@@ -266,6 +281,7 @@ CONNECT pin-35.pin2 -> beam3x5-4.hole1 STIFF
 CONNECT pin-36.pin2 -> beam3x5-4.hole4 STIFF
 CONNECT pin-37.pin2 -> beam3x5-4.hole6 STIFF
 WHY Builds the boom's second side wall: two L-shaped red beams boxing in the bevel gears, pinned together with six friction pins.
+
 STEP 17
 ADD beam15-1 32278 red
 ADD bush-4 3713 lightgray
@@ -279,6 +295,7 @@ CONNECT axle7-1.axle1 -> conn-11.axlehole1 LOCKED
 CONNECT axle5-2.axle1 -> beam2-3.axlehole1 LOCKED
 CONNECT pin-34.pin2 -> beam2-3.hole1 STIFF
 WHY Extends the boom outward with a 15-hole beam and a smooth axle connector.
+
 STEP 18
 ADD axle7-2 44294 yellow
 ADD beam3x0-1 33299b black
@@ -298,8 +315,9 @@ CONNECT pin-39.pin2 -> beam15-2.hole12 STIFF
 CONNECT pin-40.pin2 -> beam15-2.hole15 STIFF
 CONNECT axle7-2.axle2 -> beam15-1.hole1 TURNS
 CONNECT beam3x0-1.pin1 -> beam15-1.hole2 STIFF
-WHY Finishes the outer boom: a second 15-hole beam, thin liftarms with boss-and-pin studs, and a short cross axle tying the two long beams together.
 END
+WHY Finishes the outer boom: a second 15-hole beam, thin liftarms with boss-and-pin studs, and a short cross axle tying the two long beams together.
+
 STEP 19
 ATTACH arm
 ADD beam2x4-3 32140 black
@@ -310,6 +328,7 @@ CONNECT pin-37.pin1 -> beam2x4-4.hole4 STIFF
 CONNECT axle5-1.axle5 -> beam2x4-4.axlehole1 LOCKED
 CONNECT axle3-6.axle2 -> conn-5.axlehole2 LOCKED
 WHY No new chassis parts - mounts two black L-shaped beams that become the boom's base bracket, closing the chassis build before the boom is attached.
+
 STEP 20
 GROUP side1
 ADD beam5-6 32316 black
@@ -321,6 +340,7 @@ CONNECT pin-43.pin2 -> beam5-6.hole1 STIFF
 CONNECT pin-43.pin1 -> beam5-6.hole2 STIFF
 CONNECT pin-42.axle2 -> conn-12.axlehole1 LOCKED
 WHY Adds beam5-6, pin-42, pin-43, conn-12 to extend the build.
+
 STEP 21
 ADD beam9-6 6629 black
 ADD pin-44 32138 black
@@ -334,6 +354,7 @@ CONNECT pin-44.pin4 -> beam9-7.hole6 STIFF
 CONNECT pin-44.pin3 -> beam9-7.hole7 STIFF
 CONNECT stud-1.pin1 -> conn-12.hole1 STIFF
 WHY Adds beam9-6, pin-44, beam9-7, stud-1 to extend the build.
+
 STEP 22
 ADD pin-45 11214 darkgray
 ADD beam3-3 32523 darkgray
@@ -345,8 +366,9 @@ CONNECT pin-45.pin1 -> beam3-3.hole1 STIFF
 CONNECT axle2-1.axle1 -> conn-13.axlehole2 LOCKED
 CONNECT pin-46.pin1 -> beam-1.hole1 STIFF
 CONNECT axle2-1.axle2 -> beam9-7.axlehole1 LOCKED
-WHY Adds pin-45, beam3-3, axle2-1, conn-13, pin-46, beam-1 to extend the build.
 END
+WHY Adds pin-45, beam3-3, axle2-1, conn-13, pin-46, beam-1 to extend the build.
+
 STEP 23
 ATTACH side1
 ADD axle3-7 24316 brown
@@ -358,6 +380,7 @@ CONNECT pin-45.axle1 -> beam15-1.hole11 TURNS
 CONNECT pin-46.axle1 -> beam15-1.hole6 TURNS
 CONNECT axle3-7.axle1 -> conn-11.axlehole2 LOCKED
 WHY Mounts a perpendicular connector and friction pins onto the chassis - likely a body/panel mount point.
+
 STEP 24
 GROUP sidepanel
 ADD conn-14 42003 lightgray
@@ -367,6 +390,7 @@ ADD panel-1 87080 red
 CONNECT pin-47.pin1 -> conn-14.hole1 STIFF
 CONNECT pin-48.pin1 -> conn-14.hole2 STIFF
 WHY Adds conn-14, pin-47, pin-48, panel-1 to extend the build.
+
 STEP 25
 ADD pin-49 2780 black
 ADD axle2-2 32062 red
@@ -386,13 +410,15 @@ CONNECT pin-50.axle1 -> conn-16.hole1 TURNS
 CONNECT axle2-3.axle1 -> conn-16.axlehole1 LOCKED
 CONNECT axle2-2.axle1 -> conn-14.axlehole1 LOCKED
 CONNECT pin-49.pin1 -> panel-1.hole5 STIFF
-WHY Adds pin-49, axle2-2, beam7-7, pin-50, conn-15, pin-51, axle2-3, conn-16, pin-52 to extend the build.
 END
+WHY Adds pin-49, axle2-2, beam7-7, pin-50, conn-15, pin-51, axle2-3, conn-16, pin-52 to extend the build.
+
 STEP 26
 ATTACH sidepanel
 CONNECT pin-51.pin2 -> beam13-1.hole10 STIFF
 CONNECT pin-52.pin1 -> beam13-1.hole12 STIFF
 WHY No new parts - joins an existing sub-build onto the chassis.
+
 STEP 27
 ADD conn-17 32184 black
 ADD pin-53 18651 black
@@ -407,6 +433,7 @@ CONNECT pin-54.pin2 -> beam2-4.hole1 STIFF
 CONNECT pin-53.axle1 -> panel-2.hole1 TURNS
 CONNECT pin-54.pin1 -> panel-2.hole2 STIFF
 WHY Adds a headlight-style round light lens and a black fairing panel to the chassis side, plus the beam and pins that mount them.
+
 STEP 28
 ADD conn-18 32184 black
 ADD pin-55 18651 black
@@ -425,6 +452,7 @@ CONNECT pin-56.pin2 -> panel-3.hole2 STIFF
 CONNECT axle3-8.axle1 -> conn-19.axlehole1 LOCKED
 CONNECT axle3-8.axle3 -> conn-10.axlehole2 LOCKED
 WHY Mirrors main-14 on the other side of the chassis, with its own fairing panel, light lens, and a smooth axle connector.
+
 STEP 29
 GROUP extension
 ADD holes-1 18942 darkgray
@@ -438,6 +466,7 @@ CONNECT axle3-9.axle1 -> conn-20.axlehole4 LOCKED
 CONNECT axle3-10.axle3 -> conn-20.axlehole1 LOCKED
 CONNECT axle3-10.axle1 -> conn-20.axlehole2 LOCKED
 WHY Starts the inner (telescoping) boom: a gear rack beam with axle and pin holes, plus two short axles and a split perpendicular connector.
+
 STEP 30
 ADD beam3x5-5 32250 darkgray
 ADD axle3-11 4519 lightgray
@@ -453,6 +482,7 @@ CONNECT axle3-12.axle3 -> conn-21.axlehole1 LOCKED
 CONNECT axle3-12.axle1 -> conn-21.axlehole2 LOCKED
 CONNECT axle3-12.axle2 -> hole-1.hole1 TURNS
 WHY Extends the inner boom with an L-shaped quarter-ellipse beam and mounts the digger bucket/fork attachment itself.
+
 STEP 31
 ADD axle5-3 15462 brown
 ADD worm-1 4716 lightgray
@@ -470,6 +500,7 @@ CONNECT axle5-3.axle2 -> conn-20.hole1 TURNS
 CONNECT axle5-4.axle2 -> beam3x5-5.hole2 TURNS
 CONNECT axle5-3.axle5 -> conn-21.hole1 TURNS
 WHY Builds the tilt/extend drive: a worm gear meshed with an 8-tooth gear on a bushed axle, between two smooth axle connectors.
+
 STEP 32
 ADD beam3x5-6 32250 darkgray
 ADD beam3x0-3 33299b black
@@ -488,13 +519,15 @@ CONNECT axle5-4.axle5 -> beam3x0-4.axlehole1 LOCKED
 CONNECT axle3-13.axle3 -> beam2x4-6.axlehole1 LOCKED
 CONNECT beam3x0-4.pin1 -> beam2x4-6.hole4 STIFF
 CONNECT axle3-13.axle2 -> hole-1.hole3 TURNS
-WHY Finishes the inner boom/bucket-tilt frame: a second curved L-beam, more boss-and-pin liftarms, and two more L-shaped beams boxing in the tilt mechanism.
 END
+WHY Finishes the inner boom/bucket-tilt frame: a second curved L-beam, more boss-and-pin liftarms, and two more L-shaped beams boxing in the tilt mechanism.
+
 STEP 33
 ATTACH extension
 ADD axle2-4 32062 red
 CONNECT axle2-4.axle1 -> holes-1.axlehole4 LOCKED
 WHY Adds a single red notched axle - most likely a drive-chain link between the boom's gear train and the crank built next.
+
 STEP 34
 ADD axle3-14 4519 lightgray
 ADD conn-23 59443 red
@@ -512,6 +545,7 @@ CONNECT axle3-15.axle3 -> conn-25.axlehole1 LOCKED
 CONNECT axle3-15.axle2 -> pin-26.hole1 TURNS
 CONNECT axle3-14.axle3 -> pin-32.hole1 TURNS
 WHY Builds the external hand crank: a long 10-hole red axle through two worm gears and smooth connectors, reaching out past the model's own body so a person can turn it.
+
 STEP 35
 GROUP cabin
 ADD beam5x7-1 32251 darkgray
@@ -537,6 +571,7 @@ CONNECT stud-4.pin1 -> conn-27.hole1 STIFF
 CONNECT axle4-3.axle1 -> beam2-7.hole1 TURNS
 CONNECT pin-58.pin2 -> stud-4.hole1 TURNS
 WHY Starts the cab floor: an L-shaped quarter-ellipse beam with three 4L axles and connectors, plus an orange light lens.
+
 STEP 36
 ADD beam2-8 60483 black
 ADD pin-59 2780 black
@@ -556,6 +591,7 @@ CONNECT axle3-16.axle2 -> beam2-9.axlehole1 LOCKED
 CONNECT pin-62.pin1 -> beam2-9.hole1 STIFF
 CONNECT pin-60.pin2 -> beam5x7-1.hole3 STIFF
 WHY Adds an L-shaped black beam bracket and a long friction pin with a stop bush, plus tan low-friction pins.
+
 STEP 37
 ADD pin-63 85940 black
 ADD pin-64 2780 black
@@ -566,6 +602,7 @@ CONNECT axle4-5.axle2 -> pin-63.hole2 TURNS
 CONNECT pin-64.pin2 -> beam2-10.hole1 STIFF
 CONNECT axle4-5.axle1 -> beam2-10.axlehole1 LOCKED
 WHY Adds the small steering wheel part directly to the cab frame.
+
 STEP 38
 ADD beam2-11 60483 black
 ADD pin-65 6558 blue
@@ -588,6 +625,7 @@ CONNECT axle4-4.axle1 -> beam5x7-2.axlehole1 LOCKED
 CONNECT axle4-5.axle1 -> beam5x7-2.axlehole2 LOCKED
 CONNECT pin-62.pin2 -> beam5x7-2.hole3 STIFF
 WHY Adds the cab's blue side panels (2x4 L-shaped beams) and a second curved floor beam, mirroring cabin-01's shape in blue instead of black.
+
 STEP 39
 ADD axle2-5 32062 red
 ADD conn-28 41678 darkgray
@@ -612,14 +650,16 @@ CONNECT pin-68.pin1 -> beam5-7.hole4 STIFF
 CONNECT pin-69.pin1 -> beam5-7.hole5 STIFF
 CONNECT axle2-6.axle2 -> beam5x7-1.hole8 TURNS
 CONNECT axle2-5.axle1 -> beam5x7-2.hole8 TURNS
-WHY Closes the cab with a final 5-hole beam and two notched-axle/split-connector pairs.
 END
+WHY Closes the cab with a final 5-hole beam and two notched-axle/split-connector pairs.
+
 STEP 40
 ATTACH cabin
 CONNECT axle6-1.axle1 -> beam2x4-7.axlehole1 LOCKED
 CONNECT pin-59.pin1 -> beam15-2.hole9 STIFF
 CONNECT pin-61.pin2 -> beam15-2.hole6 STIFF
 WHY No new parts - pins the finished cab onto the chassis.
+
 STEP 41
 GROUP side2
 ADD beam5-8 32316 black
@@ -631,6 +671,7 @@ CONNECT pin-71.pin4 -> beam5-8.hole1 STIFF
 CONNECT pin-71.pin3 -> beam5-8.hole2 STIFF
 CONNECT pin-70.axle2 -> conn-30.axlehole1 LOCKED
 WHY Mirrors side1-01 on the model's other side: a 5-hole beam, friction/axle pins and a perpendicular connector.
+
 STEP 42
 ADD beam9-8 6629 black
 ADD pin-72 32138 black
@@ -644,20 +685,23 @@ CONNECT pin-72.pin2 -> beam9-9.hole6 STIFF
 CONNECT pin-72.pin1 -> beam9-9.hole7 STIFF
 CONNECT stud-5.pin1 -> conn-30.hole1 STIFF
 WHY Mirrors side1-02: two bent 9-hole beams and a red light lens (instead of side1's red - actually matching, both sides use a red lens here).
+
 STEP 43
 ADD pin-73 11214 darkgray
 ADD beam-2 18654 darkgray
 ADD pin-74 2780 black
 CONNECT pin-73.pin1 -> beam-2.hole1 STIFF
 CONNECT pin-74.pin1 -> beam9-9.hole3 STIFF
-WHY Finishes the rear-right side cladding: friction pins, a short beam and a 1L round connector.
 END
+WHY Finishes the rear-right side cladding: friction pins, a short beam and a 1L round connector.
+
 STEP 44
 ATTACH side2
 CONNECT axle3-16.axle1 -> beam9-9.axlehole1 LOCKED
 CONNECT pin-73.axle1 -> beam15-2.hole11 TURNS
 CONNECT pin-74.pin2 -> beam2-12.hole1 STIFF
 WHY No new parts - pins the finished side2 cladding onto the chassis.
+
 STEP 45
 ADD axle5-5 15462 brown
 ADD gear12-3 32270 black

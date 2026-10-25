@@ -1,12 +1,12 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD uc-frame-1 64179 black
@@ -19,6 +19,7 @@ CONNECT uc-pin-2.pin1 -> uc-frame-1.hole5~ STIFF
 CONNECT uc-pin-3.pin1 -> uc-frame-1.hole16~ STIFF
 CONNECT uc-pin-4.pin1 -> uc-frame-1.hole20~ STIFF
 WHY Starts the undercarriage with a stiff rectangular base and four posts to hang the next beams on.
+
 STEP 2
 ADD uc-beam9-1 40490 darkgray
 ADD uc-beam9-2 40490 darkgray
@@ -27,6 +28,7 @@ CONNECT uc-pin-3.pin2 -> uc-beam9-1.hole8~ STIFF
 CONNECT uc-pin-2.pin2 -> uc-beam9-2.hole2~ STIFF
 CONNECT uc-pin-4.pin2 -> uc-beam9-2.hole8~ STIFF
 WHY Doubles the thickness of the frame's long sides and gives free end holes for the next pins.
+
 STEP 3
 ADD uc-apin-1 18651 black
 ADD uc-apin-2 18651 black
@@ -37,6 +39,7 @@ CONNECT uc-apin-2.pin1 -> uc-beam9-1.hole9~ STIFF
 CONNECT uc-apin-3.pin1 -> uc-beam9-2.hole1~ STIFF
 CONNECT uc-apin-4.pin1 -> uc-beam9-2.hole9~ STIFF
 WHY Adds the posts that the long outer beams will sit on.
+
 STEP 4
 ADD uc-beam11-1 32525 black
 ADD uc-beam11-2 32525 black
@@ -45,6 +48,7 @@ CONNECT uc-apin-2.pin1 -> uc-beam11-1.hole3~ STIFF
 CONNECT uc-apin-3.pin1 -> uc-beam11-2.hole1~ STIFF
 CONNECT uc-apin-4.pin1 -> uc-beam11-2.hole3~ STIFF
 WHY Widens and lengthens the base so it can carry the track rails later.
+
 STEP 5
 ADD uc-lbeam-1 32526 black
 ADD uc-lbeam-2 32526 black
@@ -71,6 +75,7 @@ CONNECT uc-bpin-2.pin1 -> uc-beam5-1.hole5~ STIFF
 CONNECT uc-bpin-3.pin1 -> uc-beam5-2.hole1~ STIFF
 CONNECT uc-bpin-4.pin1 -> uc-beam5-2.hole5~ STIFF
 WHY Builds the two long side members that will carry the track wheels.
+
 STEP 6
 ADD uc-beam7-1 32524 black
 ADD uc-beam7-2 32524 black
@@ -85,6 +90,7 @@ CONNECT uc-apin-10.pin1 -> uc-beam7-2.hole4~ STIFF
 CONNECT uc-apin-11.pin1 -> uc-beam7-3.hole4~ STIFF
 CONNECT uc-apin-12.pin1 -> uc-beam7-4.hole4~ STIFF
 WHY Ties the left and right sides together so the base can't spread.
+
 STEP 7
 ADD uc-axpin-1 43093 blue
 ADD uc-axpin-2 43093 blue
@@ -119,6 +125,7 @@ CONNECT uc-pin-10.pin1 -> uc-beam11-2.hole4~ STIFF
 CONNECT uc-pin-11.pin1 -> uc-beam11-2.hole8~ STIFF
 CONNECT uc-pin-12.pin1 -> uc-beam11-2.hole10~ STIFF
 WHY Gives the track rollers and wheel carriers something to hang on.
+
 STEP 8
 ADD uc-tpin-1 39888 tan
 ADD uc-tpin-2 39888 tan
@@ -133,6 +140,7 @@ CONNECT uc-tpin-4.pin1 -> uc-beam11-2.hole3~ TURNS
 CONNECT uc-tpin-5.pin1 -> uc-beam11-2.hole9~ TURNS
 CONNECT uc-tpin-6.pin1 -> uc-beam11-2.hole6~ TURNS
 WHY Adds the spindles on which free-turning track rollers will run.
+
 STEP 9
 ADD trk-beam5-1 32316 lightgray
 ADD trk-beam5-2 32316 lightgray
@@ -161,6 +169,7 @@ CONNECT trk-tpin-2.pin1 -> trk-beam5-1.hole4~ TURNS
 CONNECT trk-tpin-3.pin1 -> trk-beam5-2.hole2~ TURNS
 CONNECT trk-tpin-4.pin1 -> trk-beam5-2.hole4~ TURNS
 WHY Adds the small rollers that the track will run on.
+
 STEP 10
 ADD trk-axle5-1 32073 lightgray
 ADD trk-axle5-2 32073 lightgray
@@ -171,6 +180,7 @@ CONNECT trk-axle5-2.axle1 -> uc-beam11-2.hole1~ TURNS
 CONNECT trk-axle5-1.axle3 -> trk-sprocket-1.axlehole1~ LOCKED
 CONNECT trk-axle5-2.axle3 -> trk-sprocket-2.axlehole1~ LOCKED
 WHY Starts the drive end of the track: the sprockets are the wheels whose teeth will grab the track links.
+
 STEP 11
 ADD trk-axle4-1 87083 darkgray
 ADD trk-axle4-2 87083 darkgray
@@ -181,6 +191,7 @@ CONNECT trk-axle4-2.axle1 -> uc-beam11-2.hole11~ TURNS
 CONNECT trk-axle4-1.axle3 -> trk-sprocket-3.axlehole1~ LOCKED
 CONNECT trk-axle4-2.axle3 -> trk-sprocket-4.axlehole1~ LOCKED
 WHY Gives each track loop a sprocket at the front and at the back.
+
 STEP 12
 ADD trk-roller-1 55982 lightgray
 ADD trk-roller-2 55982 lightgray
@@ -189,6 +200,7 @@ ADD trk-roller-4 55982 lightgray
 ADD trk-roller-5 55982 lightgray
 ADD trk-roller-6 55982 lightgray
 WHY Adds the lower rollers that carry the weight on the track.
+
 STEP 13
 ADD trk-beam15-1 32278 black
 ADD trk-beam15-2 32278 black
@@ -221,6 +233,7 @@ CONNECT trk-pin-6.pin2 -> trk-beam9-3.hole8~ STIFF
 CONNECT trk-pin-7.pin2 -> trk-beam9-4.hole4~ STIFF
 CONNECT trk-pin-8.pin2 -> trk-beam9-4.hole9~ STIFF
 WHY Builds the long track frames that hold the wheels in line and give the track something to slide on.
+
 STEP 14
 ADD trk-capplate-1 2476a lightgray
 ADD trk-capplate-2 2476a lightgray
@@ -229,6 +242,7 @@ ADD trk-capdisc-2 4032a black
 ADD trk-captile-1 15535 black
 ADD trk-captile-2 15535 black
 WHY Covers the bare axle ends so they look finished and can't catch.
+
 STEP 15
 ADD uc-lpin-5 65304 lightgray
 ADD uc-lpin-6 65304 lightgray
@@ -239,6 +253,7 @@ CONNECT uc-lpin-6.pin1 -> uc-frame-1.hole?
 CONNECT uc-lpin-7.pin1 -> uc-frame-1.hole?
 CONNECT uc-lpin-8.pin1 -> uc-frame-1.hole?
 WHY Adds the posts the next layer (the turntable base) will hang from.
+
 STEP 16
 ADD trk-link-1 88323 black
 ADD trk-link-2 88323 black
@@ -361,6 +376,7 @@ CONNECT trk-link-58.bar1 -> trk-link-59.clip1 TURNS
 CONNECT trk-link-59.bar1 -> trk-link-60.clip1 TURNS
 CONNECT trk-link-60.bar1 -> trk-link-31.clip1 TURNS
 WHY Makes the tracks that the machine rolls on.
+
 STEP 17
 ADD sw-top-1 88738 black
 ADD sw-base-1 18939 lightgray
@@ -373,6 +389,7 @@ CONNECT uc-lpin-2.pin1 -> sw-base-1.hole2~ STIFF
 CONNECT uc-lpin-3.pin1 -> sw-base-1.hole4~ STIFF
 CONNECT uc-lpin-4.pin1 -> sw-base-1.hole5~ STIFF
 WHY Gives the machine a ring that lets the whole upper body swing round on the tracks.
+
 STEP 18
 ADD pm-beam15-1 32278 darkgray
 ADD pm-beam15-2 32278 darkgray
@@ -401,6 +418,7 @@ CONNECT sw-bpin-2.pin2 -> pm-beam15-2.hole3~ STIFF
 CONNECT sw-bpin-3.pin2 -> pm-beam15-1.hole12~ STIFF
 CONNECT sw-bpin-4.pin2 -> pm-beam15-2.hole12~ STIFF
 WHY Builds the air pump that will later power the arm's air cylinders.
+
 STEP 19
 ADD up-frame-1 64179 black
 ADD up-lbeam-1 32526 darkgray
@@ -421,6 +439,7 @@ CONNECT up-lpin-3.pin1 -> up-frame-1.hole11~ STIFF
 CONNECT up-lpin-4.pin1 -> up-frame-1.hole7~ STIFF
 CONNECT up-lpin-5.pin1 -> up-frame-1.hole16~ STIFF
 WHY Starts the walls of the upper body around the pump.
+
 STEP 20
 ADD up-frame-2 64179 black
 ADD up-lbeam-2 32526 darkgray
@@ -439,6 +458,7 @@ CONNECT up-lpin-7.pin1 -> up-frame-2.hole18~ STIFF
 CONNECT up-lpin-8.pin1 -> up-frame-2.hole11~ STIFF
 CONNECT up-lpin-9.pin1 -> up-frame-2.hole7~ STIFF
 WHY Gives the upper body a wall on both sides of the pump.
+
 STEP 21
 ADD up-beam15-1 32278 black
 ADD up-hub-1 44874 lightgray
@@ -447,6 +467,7 @@ CONNECT up-hub-1.pin1 -> up-beam15-1.hole7 STIFF
 CONNECT up-hub-1.pin2 -> up-beam15-1.hole9 STIFF
 CONNECT up-rpin-1.pin1 -> up-hub-1.hole1~ STIFF
 WHY Ties the two upright frames into one rigid structure over the pump.
+
 STEP 22
 ADD hy-tee-1 4697b lightgray
 ADD hy-valve-1 19474 lightgray
@@ -454,6 +475,7 @@ ADD hy-valve-2 19474 lightgray
 ADD hy-hose-1 5102c06 blue
 ADD hy-hose-2 5102c06 blue
 WHY Starts the air plumbing: this line will carry air from the pump to the two air cylinders.
+
 STEP 23
 ADD up-pin-1 4274 lightgray
 ADD up-pin-2 4274 lightgray
@@ -478,28 +500,34 @@ CONNECT up-pin-4.pin2 -> up-beam5-2.hole1~ TURNS
 CONNECT up-pin-5.pin2 -> up-beam5-2.hole3~ TURNS
 CONNECT up-pin-6.pin2 -> up-beam5-2.hole5~ TURNS
 WHY Builds the two tall supports that the air cylinder will hang between.
+
 STEP 24
 ADD hy-cyl-1 19478 darkgray
 ADD up-beam2-1 43857 darkgray
 ADD up-axle5-1 32073 lightgray
 ADD hy-pin-1 77765 lightgray
 WHY Adds the first air cylinder.
+
 STEP 25
 ADD up-conn-1 59443 black
 CONNECT up-conn-1.axlehole? -> up-axle5-1.axle5
 WHY Stops the cylinder pivot axle from slipping out.
+
 STEP 26
 ADD hy-hose-3 5102c20 lightgray
 ADD hy-hose-4 5102c29 black
 WHY Brings the two long hoses into the model before they are plugged in.
+
 STEP 27
 WHY Connects the pump, switches and cylinder into one air circuit.
+
 STEP 28
 ADD up-spin-1 65304 black
 ADD up-spin-2 65304 black
 CONNECT up-spin-1.pin1 -> up-frame-2.hole9~ STIFF
 CONNECT up-spin-2.pin1 -> up-frame-2.hole13~ STIFF
 WHY Adds the posts for the next cover panel.
+
 STEP 29
 ADD up-panel-1 15458 black
 ADD up-spin-3 65304 black
@@ -517,6 +545,7 @@ CONNECT up-spin-6.pin1 -> up-panel-1.hole16~ STIFF
 CONNECT up-spin-7.pin1 -> up-panel-1.hole6~ STIFF
 CONNECT up-spin-8.pin1 -> up-panel-1.hole10~ STIFF
 WHY Closes the top of the rear section and gives a flat base for the cab.
+
 STEP 30
 ADD up-beam11-1 32525 black
 ADD up-tbeam-1 41677 black
@@ -534,6 +563,7 @@ CONNECT up-bpin-8.axle1 -> up-tbeam-2.axlehole2~ LOCKED
 CONNECT up-bpin-5.pin1 -> up-beam11-1.hole5~ STIFF
 CONNECT up-bpin-6.pin1 -> up-beam11-1.hole7~ STIFF
 WHY Builds the first side-body piece with its cosmetic fairings.
+
 STEP 31
 ADD sd-panel-1 71709 black
 ADD sd-gpin-1 4274 lightgray
@@ -552,10 +582,12 @@ CONNECT sd-bpin-2.axle1 -> sd-gbeam-1.hole3 TURNS
 CONNECT sd-lbeam-1.hole1 -> sd-bpin-1.axle1?
 CONNECT sd-beam15-1.hole1? -> sd-panel-1.hole3?
 WHY Builds the long side piece that rides along the cab frame.
+
 STEP 32
 ADD sd-fpin-1 43093 blue
 CONNECT sd-fpin-1.pin1 -> uc-frame-1.hole?
 WHY Adds a post for a part that is fitted in step 33.
+
 STEP 33
 ADD sd-hub-1 22961 lightgray
 ADD sd-rpin-1 89678 red
@@ -570,6 +602,7 @@ CONNECT sd-conn-1.hole1? -> sd-ybeam-1.axlehole2?
 CONNECT sd-rpin-1.pin1 -> sd-hub2-1.hole1?
 CONNECT sd-conn-1.axlehole1 -> sd-fpin-1.axle1?
 WHY Builds the pivot for a moving link at the front.
+
 STEP 34
 ADD cb-ybeam-1 32140 yellow
 ADD cb-pin-1 4274 lightgray
@@ -580,23 +613,27 @@ CONNECT cb-pin-2.pin1 -> cb-ybeam-1.hole3~ TURNS
 CONNECT cb-pin-3.pin1 -> cb-ybeam-1.hole4~ TURNS
 CONNECT sd-fpin-1.pin1 -> cb-ybeam-1.hole2~ STIFF
 WHY Makes three posts for the front hinge parts built next.
+
 STEP 35
 ADD cb-bush-1 3713 lightgray
 ADD cb-conn-1 63869 black
 CONNECT cb-bush-1.axlehole1 -> cb-conn-1.axlehole?
 WHY Starts the pivot end of the long arm-like beam in the next step.
+
 STEP 36
 ADD cb-beam11-1 32525 black
 ADD cb-disc-1 98138 clear
 CONNECT cb-conn-1.axlehole1 -> cb-beam11-1.hole?
 CONNECT cb-disc-1.stud? -> cb-conn-1.hole?
 WHY Gives the long beam a rounded end with a pivot.
+
 STEP 37
 ADD cb-axle6-1 3706 black
 ADD cb-conn2-1 32013 black
 CONNECT cb-axle6-1.axle1 -> cb-conn2-1.axlehole1~ LOCKED
 CONNECT cb-conn-1.axlehole1 -> cb-axle6-1.axle6?
 WHY Adds the shaft that the beam will turn on.
+
 STEP 38
 ADD cb-bpin-1 42924 blue
 ADD cb-gbeam-1 41677 lightgray
@@ -605,12 +642,14 @@ CONNECT cb-bpin-1.pin1 -> cb-beam11-1.hole2~ STIFF
 CONNECT cb-gbeam-1.axlehole1 -> cb-axle6-1.axle5~ LOCKED
 CONNECT cb-gbeam-2.axlehole1 -> cb-axle6-1.axle4?
 WHY Adds a fixing pin and spacers next to the shaft.
+
 STEP 39
 ADD cb-axle5-1 32073 lightgray
 ADD cb-conn3-1 60483 black
 CONNECT cb-axle5-1.axle1 -> cb-conn3-1.axlehole1~ LOCKED
 CONNECT cb-conn3-1.hole1 -> cb-beam11-1.hole1?
 WHY Adds a second shaft for the next mechanism.
+
 STEP 40
 ADD cb-tbeam-1 11478 black
 ADD cb-bp1-1 43093 blue
@@ -622,6 +661,7 @@ CONNECT cb-bp1-1.axle1 -> cb-tb2-1.axlehole1~ LOCKED
 CONNECT cb-bp2-1.pin1 -> cb-tbeam-1.hole2~ STIFF
 CONNECT cb-tbeam-1.hole1 -> cb-beam11-1.hole3?
 WHY Adds posts on the beam for linking the next parts.
+
 STEP 41
 ADD cb-ll-1 32056 darkgray
 ADD cb-ll-2 32056 darkgray
@@ -636,6 +676,7 @@ CONNECT cb-ax3-1.axle3 -> cb-ll-2.axlehole2~ LOCKED
 CONNECT cb-gp-1.pin1 -> cb-ll-2.hole1~ TURNS
 CONNECT cb-ob-1.hole1 -> cb-ax3-1.axle3?
 WHY Builds the tall double post that will carry the boom later.
+
 STEP 42
 ADD cb-lb-1 32526 darkgray
 ADD cb-lp-1 4274 lightgray
@@ -646,12 +687,14 @@ CONNECT cb-lp-2.pin1 -> cb-lb-1.hole2~ TURNS
 CONNECT cb-lp-3.pin1 -> cb-lb-1.hole3~ TURNS
 CONNECT cb-lb-1.hole5? -> cb-beam11-1.hole?
 WHY Adds a tall rigid post on the beam's end.
+
 STEP 43
 ADD cb-b11b-1 32525 black
 CONNECT cb-lp-1.pin1 -> cb-b11b-1.hole1?
 CONNECT cb-lp-2.pin1 -> cb-b11b-1.hole2?
 CONNECT cb-lp-3.pin1 -> cb-b11b-1.hole3?
 WHY Doubles the beam so the unit is wide and stiff.
+
 STEP 44
 ADD cb-pc-1 60483 black
 ADD cb-pc-2 60483 black
@@ -662,12 +705,14 @@ CONNECT cb-gp2-2.pin1 -> cb-pc-2.hole1~ TURNS
 CONNECT cb-pc-1.axlehole1 -> cb-ax5-1.axle5?
 CONNECT cb-pc-2.axlehole1 -> cb-ax5-1.axle1?
 WHY Makes anchor points on the underside.
+
 STEP 45
 ADD cb-t1-1 60483 black
 ADD cb-tp-1 32002 tan
 CONNECT cb-tp-1.pin1 -> cb-t1-1.hole1~ STIFF
 CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?
 WHY Adds a smooth free-turning pin for a link.
+
 STEP 46
 ADD cb-bp-1 43093 blue
 ADD cb-tb5-1 11478 black
@@ -676,18 +721,22 @@ CONNECT cb-bp-1.pin1 -> cb-tb5-1.hole1~ STIFF
 CONNECT cb-bp-1.axle1 -> cb-tb3-1.axlehole1~ LOCKED
 CONNECT cb-tb5-1.axlehole1 -> cb-ax5-1.axle?
 WHY Adds a plate that ties the underside together.
+
 STEP 47
 CONNECT cb-beam11-1.hole? -> uc-frame-1.hole?
 WHY Joins the new front unit to the machine.
+
 STEP 48
 ADD cb-b15-1 71710 black
 CONNECT cb-b15-1.hole? -> cb-gp-1.pin1?
 CONNECT cb-b15-1.hole? -> cb-bp-1.pin1?
 WHY Ties the front unit to the frame along the whole side.
+
 STEP 49
 ADD fs-pin-1 43093 blue
 CONNECT fs-pin-1.pin1 -> cb-b15-1.hole?
 WHY Adds a post for the small build placed in step 50.
+
 STEP 50
 ADD fs-bp-1 42924 blue
 ADD fs-ax3-1 4519 yellow
@@ -707,6 +756,7 @@ CONNECT fs-bp-1.pin1 -> fs-vb-1.hole2~ STIFF
 CONNECT fs-gp-1.pin1 -> fs-gb-1.hole1?
 CONNECT fs-ap-1.pin1 -> fs-vb-1.hole1~ STIFF
 WHY Builds the pivot block that will carry a link or an arm.
+
 STEP 51
 ADD fs-yl-1 32140 yellow
 ADD fs-yp-1 4274 lightgray
@@ -717,6 +767,7 @@ CONNECT fs-yp-2.pin1 -> fs-yl-1.hole2~ TURNS
 CONNECT fs-yp-3.pin1 -> fs-yl-1.hole3~ TURNS
 CONNECT fs-yl-1.hole4? -> cb-b15-1.hole?
 WHY Adds the yellow L bracket that the next links hang on.
+
 STEP 52
 ADD fs-bl-1 32526 black
 ADD fs-bp3-1 4274 lightgray
@@ -727,17 +778,20 @@ CONNECT fs-bp3-2.pin1 -> fs-bl-1.hole2~ TURNS
 CONNECT fs-bp3-3.pin1 -> fs-bl-1.hole3~ TURNS
 CONNECT fs-bl-1.hole5? -> cb-b15-1.hole?
 WHY Adds a black bracket beside the tall upright.
+
 STEP 53
 ADD fs-b5-1 32316 black
 CONNECT fs-b5-1.hole1 -> fs-bp3-1.pin1?
 CONNECT fs-b5-1.hole3 -> fs-bp3-2.pin1?
 WHY Closes the bracket and ties it into the frame.
+
 STEP 54
 ADD fs-bp4-1 43093 blue
 ADD fs-bp4-2 43093 blue
 CONNECT fs-bp4-1.pin1 -> fs-b5-1.hole?
 CONNECT fs-bp4-2.pin1 -> fs-b5-1.hole?
 WHY Adds posts for the beam fitted in step 55.
+
 STEP 55
 ADD fs-bh-1 42003 black
 ADD fs-gp5-1 4274 lightgray
@@ -751,24 +805,29 @@ CONNECT fs-bh-1.hole? -> fs-b7-1.hole?
 CONNECT fs-b7-1.hole1~ -> fs-bp4-1.pin1?
 CONNECT fs-b7-1.hole3~ -> fs-bp4-2.pin1?
 WHY Builds the seat mount: the red axle will carry the seat.
+
 STEP 56
 ADD fs-seat-1 24116 darkgray
 CONNECT fs-seat-1.hole1 -> fs-rax-1.axle2?
 WHY Adds the operator's seat of the excavator.
+
 STEP 57
 ADD fs-sb-1 43857 darkgray
 CONNECT fs-sb-1.hole1 -> fs-seat-1.hole?
 WHY Holds the seat's foot so it doesn't pop off.
+
 STEP 58
 ADD fs-sx-1 3706 black
 CONNECT fs-sx-1.axle1 -> fs-sb-1.hole?
 WHY Adds the shaft the seat turns or tilts on.
+
 STEP 59
 ADD fs-clip-1 3484 black
 ADD fs-clip-2 3484 black
 CONNECT fs-clip-1.bar? -> fs-sx-1.axle?
 CONNECT fs-clip-2.bar? -> fs-sx-1.axle?
 WHY Clips will later hold hoses or lines.
+
 STEP 60
 ADD hs-hose-1 32580 black
 ADD hs-rax-1 32062 red
@@ -785,6 +844,7 @@ CONNECT hs-bp-1.pin1 -> hs-conn-1.hole?
 CONNECT hs-conn-2.hole? -> hs-hose-1.axlehole?
 CONNECT hs-tile-1.stud? -> hs-plate-1.stud?
 WHY Builds a stiff rod link with end fittings (a Volvo-style label tile).
+
 STEP 61
 ADD bm-gp-1 4274 lightgray
 ADD bm-lb-1 32140 black
@@ -792,27 +852,32 @@ ADD bm-bp-1 43093 blue
 CONNECT bm-gp-1.pin1 -> bm-lb-1.hole1~ TURNS
 CONNECT bm-bp-1.pin1 -> bm-lb-1.hole2~ STIFF
 WHY Starts the arm from its root: an L-beam gives the corner for the first section.
+
 STEP 62
 ADD bm-b11-1 32525 black
 CONNECT bm-bp-1.pin1 -> bm-b11-1.hole1?
 CONNECT bm-lb-1.hole3 -> bm-b11-1.hole2?
 WHY Builds the first long section of the arm.
+
 STEP 63
 ADD bm-ax5-1 15462 brown
 CONNECT bm-ax5-1.axle? -> bm-b11-1.hole?
 WHY Adds a shaft for the next link to turn on.
+
 STEP 64
 ADD bm-l2-1 32526 black
 ADD bm-bp2-1 43093 blue
 CONNECT bm-bp2-1.pin1 -> bm-l2-1.hole?
 CONNECT bm-l2-1.hole? -> bm-ax5-1.axle?
 WHY Doubles the beam at the arm's root so the joint is wide and strong.
+
 STEP 65
 ADD bm-ax5b-1 15462 brown
 ADD bm-cn-1 6536 lightgray
 CONNECT bm-ax5b-1.axle? -> bm-b11-1.hole?
 CONNECT bm-cn-1.axlehole1 -> bm-ax5b-1.axle?
 WHY Adds the second pivot shaft of the root.
+
 STEP 66
 ADD bm-yax-1 4519 yellow
 ADD bm-bp3-1 43093 blue
@@ -822,31 +887,37 @@ CONNECT bm-bp3-1.axle1 -> bm-tb-1.axlehole1~ LOCKED
 CONNECT bm-yax-1.axle1 -> bm-tb-2.axlehole1~ LOCKED
 CONNECT bm-tb-1.axlehole2 -> bm-yax-1.axle3?
 WHY Builds the plate that will carry the cylinder joint.
+
 STEP 67
 ADD bm-cn2-1 6536 lightgray
 CONNECT bm-cn2-1.axlehole1 -> bm-yax-1.axle?
 WHY Adds an attachment point for a later link.
+
 STEP 68
 ADD bm-bp4-1 43093 blue
 ADD bm-bp4-2 43093 blue
 CONNECT bm-bp4-1.pin1 -> bm-b11-1.hole?
 CONNECT bm-bp4-2.pin1 -> bm-b11-1.hole?
 WHY Adds the posts for the next beam.
+
 STEP 69
 ADD bm-b5-1 32316 black
 CONNECT bm-bp4-1.pin1 -> bm-b5-1.hole1?
 CONNECT bm-bp4-2.pin1 -> bm-b5-1.hole2?
 WHY Extends the arm's length.
+
 STEP 70
 ADD bm-b11b-1 32525 black
 ADD bm-gp2-1 4274 lightgray
 CONNECT bm-gp2-1.pin1 -> bm-b11b-1.hole?
 CONNECT bm-b11b-1.hole? -> bm-b11-1.hole?
 WHY Builds the arm's double beam.
+
 STEP 71
 ADD bm-l3-1 32140 black
 CONNECT bm-l3-1.hole? -> bm-gp2-1.pin1?
 WHY Closes the corner of the root.
+
 STEP 72
 ADD bm-l4-1 32526 black
 ADD bm-bp5-1 43093 blue
@@ -857,6 +928,7 @@ CONNECT bm-bp5-2.pin1 -> bm-l4-1.hole2~ STIFF
 CONNECT bm-bp5-3.pin1 -> bm-l4-1.hole3~ STIFF
 CONNECT bm-l4-1.hole? -> bm-b5-1.hole?
 WHY Makes the far end ready for the next piece.
+
 STEP 73
 ADD bm-cap-1 98138 clear
 ADD bm-gp3-1 4274 lightgray
@@ -865,21 +937,25 @@ CONNECT bm-gp3-1.pin1 -> bm-ac-1.hole1~ TURNS
 CONNECT bm-cap-1.stud? -> bm-gp3-1.barhole1?
 CONNECT bm-ac-1.axlehole1 -> bm-bp5-1.axle?
 WHY Adds a smooth post for a link.
+
 STEP 74
 ADD bm-b15-1 32278 black
 CONNECT bm-b15-1.hole? -> bm-bp5-1.pin1?
 CONNECT bm-b15-1.hole? -> bm-ac-1.hole?
 WHY Makes the arm long enough to reach.
+
 STEP 75
 ADD bm-gb7-1 32524 darkgray
 ADD bm-bp6-1 43093 blue
 CONNECT bm-bp6-1.pin1 -> bm-gb7-1.hole1~ STIFF
 CONNECT bm-gb7-1.hole? -> bm-b15-1.hole?
 WHY Adds the diagonal brace for the middle joint.
+
 STEP 76
 ADD bm-l5-1 32526 black
 CONNECT bm-l5-1.hole? -> bm-b11-1.hole?
 WHY Gives the arm a bracket underneath.
+
 STEP 77
 ADD bm-cap2-1 98138 clear
 ADD bm-gp4-1 4274 lightgray
@@ -888,6 +964,7 @@ CONNECT bm-gp4-1.pin1 -> bm-ac2-1.hole1~ TURNS
 CONNECT bm-cap2-1.stud? -> bm-gp4-1.barhole1?
 CONNECT bm-ac2-1.axlehole1 -> bm-l5-1.hole?
 WHY Adds a smooth post below.
+
 STEP 78
 ADD bm-bp7-1 42924 blue
 ADD bm-ap2-1 18651 black
@@ -896,15 +973,18 @@ CONNECT bm-ap2-1.axle1 -> bm-bc-1.axlehole1~ LOCKED
 CONNECT bm-bp7-1.pin1 -> bm-gb7-1.hole?
 CONNECT bm-bc-1.hole? -> bm-b11-1.hole?
 WHY Adds a joint for the cylinder that lifts the arm.
+
 STEP 79
 ADD bm-b11c-1 32525 black
 CONNECT bm-b11c-1.hole1 -> bm-bp7-1.pin?
 CONNECT bm-b11c-1.hole2? -> bm-gb7-1.hole?
 WHY Makes the lower arm section that will swing.
+
 STEP 80
 ADD bm-b15b-1 32278 black
 CONNECT bm-b15b-1.hole? -> bm-bp5-1.pin?
 WHY Adds the upper arm's second layer.
+
 STEP 81
 ADD bm-b15c-1 71710 black
 ADD bm-bp8-1 43093 blue
@@ -916,11 +996,13 @@ CONNECT bm-bp8-2.pin1 -> bm-b15c-1.hole7~ STIFF
 CONNECT bm-bp8-3.pin1 -> bm-b15c-1.hole1~ STIFF
 CONNECT bm-bush-1.axlehole1 -> bm-bp8-3.axle1?
 WHY Builds the lower arm's second long beam.
+
 STEP 82
 ADD bm-b15d-1 71710 black
 CONNECT bm-bp8-1.pin1 -> bm-b15d-1.hole?
 CONNECT bm-bp8-2.pin1 -> bm-b15d-1.hole?
 WHY Closes the lower arm sandwich.
+
 STEP 83
 ADD bm-fr21-1 11946 black
 ADD bm-fr22-1 11947 black
@@ -936,6 +1018,7 @@ CONNECT bm-fp-1.pin1 -> bm-fr21-1.hole?
 CONNECT bm-fp-2.pin1 -> bm-fr22-1.hole?
 CONNECT bm-fr21-1.hole? -> bm-fa-1.axle2?
 WHY Builds the side cover with the brand print.
+
 STEP 84
 ADD bm-l6-1 32526 black
 ADD bm-bp9-1 43093 blue
@@ -944,6 +1027,7 @@ CONNECT bm-bp9-1.pin1 -> bm-l6-1.hole1~ STIFF
 CONNECT bm-bp9-2.pin1 -> bm-l6-1.hole2~ STIFF
 CONNECT bm-l6-1.hole? -> bm-b15d-1.hole?
 WHY Adds the elbow bracket.
+
 STEP 85
 ADD bm-b11d-1 32525 black
 ADD bm-b5b-1 32316 black
@@ -960,21 +1044,25 @@ CONNECT bm-bp10-3.pin1 -> bm-b11d-1.hole11~ STIFF
 CONNECT bm-bp10-4.pin1 -> bm-b5b-1.hole2~ STIFF
 CONNECT bm-tp-1.pin1 -> bm-b5b-1.hole1~ STIFF
 WHY Builds the elbow beam that the upper arm hangs on.
+
 STEP 86
 ADD bm-ax5c-1 32073 lightgray
 ADD bm-tbk-1 41677 black
 CONNECT bm-ax5c-1.axle3 -> bm-tbk-1.axlehole1~ LOCKED
 CONNECT bm-ax5c-1.axle1 -> bm-tp-1.pin2?
 WHY Adds the elbow shaft.
+
 STEP 87
 ADD bm-b13-1 41239 darkgray
 CONNECT bm-b13-1.hole1 -> bm-ax5c-1.axle?
 WHY Adds the upper arm beam.
+
 STEP 88
 ADD bm-b15e-1 32278 black
 CONNECT bm-bp10-1.pin1 -> bm-b15e-1.hole?
 CONNECT bm-bp10-2.pin1 -> bm-b15e-1.hole?
 WHY Adds the second upper beam.
+
 STEP 89
 ADD bm-b3-1 32523 black
 ADD bm-bp11-1 43093 blue
@@ -985,6 +1073,7 @@ CONNECT bm-bp11-2.pin1 -> bm-b3-1.hole3~ STIFF
 CONNECT bm-bp11-3.pin1 -> bm-b15e-1.hole?
 CONNECT bm-b3-1.hole2 -> bm-tp-1.pin2?
 WHY Adds posts for the cylinder mounts.
+
 STEP 90
 ADD bm-cyl-1 19478 darkgray
 ADD bm-tpin-1 39888 tan
@@ -994,6 +1083,7 @@ CONNECT bm-tpin-2.pin1 -> bm-cyl-1.hole?
 CONNECT bm-tpin-1.pin2 -> bm-b15e-1.hole?
 CONNECT bm-tpin-2.pin2 -> bm-b3-1.hole?
 WHY Adds the cylinder that bends the arm at the elbow.
+
 STEP 91
 ADD bm-b11e-1 32525 black
 ADD bm-gp6-1 4274 lightgray
@@ -1002,10 +1092,12 @@ CONNECT bm-gp6-1.pin1 -> bm-b11e-1.hole11~ TURNS
 CONNECT bm-b11e-1.hole? -> bm-bp10-1.pin1?
 CONNECT bm-l7-1.hole? -> bm-b11-1.hole?
 WHY Holds the cylinder's pin in place from above.
+
 STEP 92
 ADD bm-tb2-1 41677 black
 CONNECT bm-tb2-1.axlehole1 -> bm-gp6-1.pin?
 WHY Locks the grey pin so it stays.
+
 STEP 93
 ADD bm-tbk2-1 11478 black
 ADD bm-tbk2-2 11478 black
@@ -1017,10 +1109,12 @@ CONNECT bm-ap3-1.axle2 -> bm-tbk2-2.axlehole1~ LOCKED
 CONNECT bm-bp12-1.pin1 -> bm-b5c-1.hole1~ STIFF
 CONNECT bm-tbk2-1.hole1 -> bm-b5c-1.hole?
 WHY Builds the link at the elbow.
+
 STEP 94
 ADD bm-b15f-1 32278 black
 CONNECT bm-b15f-1.hole? -> bm-bp12-1.pin?
 WHY Lengthens the arm's lower section.
+
 STEP 95
 ADD bm-b11f-1 32525 black
 ADD bm-b11f-2 32525 black
@@ -1037,22 +1131,26 @@ CONNECT bm-rp-2.pin1 -> bm-b11f-1.hole7~ STIFF
 CONNECT bm-rp-3.pin1 -> bm-b11f-2.hole3~ STIFF
 CONNECT bm-rp-4.pin1 -> bm-b11f-2.hole7~ STIFF
 WHY Builds the side plates for the next hinge.
+
 STEP 96
 ADD bm-ax5d-1 32073 lightgray
 ADD bm-tb3-1 41677 black
 CONNECT bm-ax5d-1.axle1 -> bm-tb3-1.axlehole1~ LOCKED
 CONNECT bm-ax5d-1.axle5 -> bm-b11f-1.hole?
 WHY Adds a cross shaft that ties the two side beams.
+
 STEP 97
 ADD bm-tb4-1 41677 black
 CONNECT bm-tb4-1.axlehole1 -> bm-ax5d-1.axle1?
 WHY Locks the cross shaft from the other side.
+
 STEP 98
 ADD bm-tile-1 6636 black
 ADD bm-tile-2 6636 black
 CONNECT bm-tile-1.stud? -> bm-b11f-1.hole?
 CONNECT bm-tile-2.stud? -> bm-b11f-2.hole?
 WHY Adds the warning stripe that real excavator arms show.
+
 STEP 99
 ADD bm-ax6-1 3706 black
 ADD bm-tb5-1 41677 black
@@ -1060,10 +1158,12 @@ ADD bm-tb5-2 41677 black
 CONNECT bm-ax6-1.axle1 -> bm-tb5-1.axlehole1~ LOCKED
 CONNECT bm-ax6-1.axle6 -> bm-tb5-2.axlehole1~ LOCKED
 WHY Adds the second cross shaft at the bottom.
+
 STEP 100
 ADD bm-b5d-1 32316 black
 CONNECT bm-b5d-1.hole? -> bm-ax6-1.axle?
 WHY Strengthens the lower end.
+
 STEP 101
 ADD bm-rax-1 3705 red
 ADD bm-b5e-1 32316 black
@@ -1077,22 +1177,26 @@ CONNECT bm-go-1.axlehole1 -> bm-ax6b-1.axle?
 CONNECT bm-rax-1.axle1 -> bm-gb4-1.axlehole?
 CONNECT bm-b5e-1.hole? -> bm-rax-1.axle?
 WHY Builds the bucket link bracket.
+
 STEP 102
 ADD bm-b5f-1 32316 black
 ADD bm-go2-1 41677 darkgray
 CONNECT bm-go2-1.axlehole1 -> bm-ax6-1.axle6?
 CONNECT bm-b5f-1.hole? -> bm-rax-1.axle?
 WHY Locks the shaft end.
+
 STEP 103
 ADD bm-bu2-1 3713 lightgray
 ADD bm-go3-1 41677 darkgray
 CONNECT bm-bu2-1.axlehole1 -> bm-rax-1.axle4?
 CONNECT bm-go3-1.axlehole1 -> bm-ax6b-1.axle?
 WHY Locks the bucket hinge shafts.
+
 STEP 104
 ADD bm-ax6c-1 3706 black
 CONNECT bm-ax6c-1.axle? -> bm-go3-1.axlehole?
 WHY Adds the shaft the bucket will hang on.
+
 STEP 105
 ADD bk-bucket-1 24120 darkgray
 ADD bk-bucket-2 24120 darkgray
@@ -1105,35 +1209,43 @@ CONNECT bk-tpin-2.pin1 -> bk-tb-2.axlehole?
 CONNECT bk-tpin-1.pin2 -> bk-bucket-1.hole?
 CONNECT bk-tpin-2.pin2 -> bk-bucket-2.hole?
 WHY Adds the digging bucket(s).
+
 STEP 106
 ADD hy-hose-5 5102c32 black
 WHY Brings the arm cylinder's long hose in.
+
 STEP 107
 ADD hy-hose-6 5102c25 lightgray
 WHY Brings the second arm hose in.
+
 STEP 108
 ADD cb-rax10-1 3737 red
 ADD cb-rbush-1 3713 red
 CONNECT cb-rax10-1.axle1 -> cb-lb-1.axlehole?
 CONNECT cb-rbush-1.axlehole1 -> cb-rax10-1.axle10?
 WHY Adds the axle that the arm's root hinge sits on.
+
 STEP 109
 ADD cb-gpin-1 77765 lightgray
 CONNECT cb-gpin-1.pin? -> bm-lb-1.hole?
 WHY Locks the arm to the machine.
+
 STEP 110
 ADD hy-hose-7 5102c13 lightgray
 ADD hy-hose-8 5102c18 black
 WHY Brings the hoses that run from the switches to the arm in.
+
 STEP 111
 CONNECT hy-hose-7.end? -> hy-tee-1.nozzle?
 CONNECT hy-hose-8.end? -> hy-valve-2.nozzle?
 WHY Connects the cab-side hoses to the switches.
+
 STEP 112
 ADD up-gb13-1 41239 darkgray
 CONNECT up-gb13-1.hole? -> up-lbeam-1.hole?
 CONNECT up-gb13-1.hole? -> up-lbeam-2.hole?
 WHY Adds a rear cross beam on which the counterweight will sit.
+
 STEP 113
 ADD cw-panel-1 15458 black
 ADD cw-gp-1 61332 black
@@ -1145,34 +1257,40 @@ CONNECT cw-gp-2.pin1 -> cw-panel-1.hole?
 CONNECT cw-gp-3.pin1 -> cw-panel-1.hole?
 CONNECT cw-gp-4.pin1 -> cw-panel-1.hole?
 WHY Starts the rear counterweight: a stack of panels and beams.
+
 STEP 114
 ADD cw-b7-1 32524 black
 CONNECT cw-gp-1.pin1 -> cw-b7-1.hole2~ STIFF
 CONNECT cw-gp-2.pin1 -> cw-b7-1.hole6~ STIFF
 WHY Adds a layer to the stack.
+
 STEP 115
 ADD cw-bp-1 43093 blue
 ADD cw-bp-2 43093 blue
 CONNECT cw-bp-1.pin1 -> cw-b7-1.hole1 STIFF
 CONNECT cw-bp-2.pin1 -> cw-b7-1.hole7 STIFF
 WHY Adds posts for the next beam.
+
 STEP 116
 ADD cw-b7b-1 32524 black
 ADD cw-b7b-2 32524 black
 CONNECT cw-bp-1.pin1 -> cw-b7b-1.hole1~ STIFF
 CONNECT cw-bp-2.pin1 -> cw-b7b-1.hole7~ STIFF
 WHY Builds up the counterweight's height.
+
 STEP 117
 ADD cw-gp2-1 61332 black
 ADD cw-gp2-2 61332 black
 CONNECT cw-gp2-1.pin1 -> cw-b7b-1.hole2~ STIFF
 CONNECT cw-gp2-2.pin1 -> cw-b7b-1.hole6~ STIFF
 WHY Posts for the top panel.
+
 STEP 118
 ADD cw-panel2-1 15458 black
 CONNECT cw-gp2-1.pin1 -> cw-panel2-1.hole?
 CONNECT cw-gp2-2.pin1 -> cw-panel2-1.hole?
 WHY Closes the sandwich.
+
 STEP 119
 ADD cw-gp3-1 61332 black
 ADD cw-gp3-2 61332 black
@@ -1183,6 +1301,7 @@ CONNECT cw-gp3-2.pin1 -> cw-panel2-1.hole?
 CONNECT cw-bp2-1.pin1 -> cw-panel-1.hole?
 CONNECT cw-bp2-2.pin1 -> cw-panel2-1.hole?
 WHY Adds the mounting points that attach it to the frame.
+
 STEP 120
 ADD cw-bp3-1 43093 blue
 ADD cw-bp3-2 43093 blue
@@ -1193,9 +1312,11 @@ CONNECT cw-bp3-2.pin1 -> cw-conn-2.hole1~ STIFF
 CONNECT cw-conn-1.hole2 -> cw-panel-1.hole?
 CONNECT cw-conn-2.hole2 -> cw-panel-1.hole?
 WHY Adds the corner locks.
+
 STEP 121
 CONNECT cw-panel-1.hole? -> up-gb13-1.hole?
 WHY Balances the arm.
+
 STEP 122
 ADD cw-b7c-1 32524 black
 ADD cw-bp4-1 43093 blue
@@ -1204,12 +1325,14 @@ CONNECT cw-bp4-1.pin1 -> cw-b7c-1.hole1~ STIFF
 CONNECT cw-bp4-2.pin1 -> cw-b7c-1.hole5~ STIFF
 CONNECT cw-b7c-1.hole? -> up-gb13-1.hole?
 WHY Adds a side beam beside the cab.
+
 STEP 123
 ADD cw-b7d-1 32524 black
 ADD cw-bp5-1 43093 blue
 CONNECT cw-bp5-1.pin1 -> cw-b7d-1.hole1~ STIFF
 CONNECT cw-b7d-1.hole? -> up-gb13-1.hole?
 WHY Adds a second side post beside the cab.
+
 STEP 124
 ADD cw-bp6-1 43093 blue
 ADD cw-bp6-2 43093 blue
@@ -1220,8 +1343,10 @@ CONNECT cw-bp6-2.pin1 -> cw-panel-1.hole?
 CONNECT cw-bp6-3.pin1 -> cw-panel2-1.hole?
 CONNECT cw-bp6-4.pin1 -> cw-panel2-1.hole?
 WHY Adds the posts for the top cover.
+
 STEP 125
 WHY Tells the builder to put the four stickers on the counterweight top.
+
 STEP 126
 ADD hd-fair-1 71682 black
 ADD hd-rpin-1 11214 red
@@ -1229,21 +1354,25 @@ ADD hd-rpin-2 11214 red
 CONNECT hd-rpin-1.axle1 -> hd-fair-1.axlehole1~ LOCKED
 CONNECT hd-rpin-2.axle1 -> hd-fair-1.axlehole3~ LOCKED
 WHY Starts the hood piece.
+
 STEP 127
 ADD hd-f8-1 2389 black
 ADD hd-f7-1 2387 black
 WHY Gives the hood its long curved shape.
+
 STEP 128
 ADD hd-rpin2-1 11214 red
 ADD hd-rpin2-2 11214 red
 CONNECT hd-rpin2-1.axle1 -> hd-f7-1.axlehole?
 CONNECT hd-rpin2-2.axle1 -> hd-f8-1.axlehole?
 WHY Adds the pins that the beam in step 129 sits on.
+
 STEP 129
 ADD hd-b9-1 40490 black
 CONNECT hd-rpin2-1.pin1 -> hd-b9-1.hole1~ STIFF
 CONNECT hd-rpin2-2.pin1 -> hd-b9-1.hole9~ STIFF
 WHY Adds the brand beam on the front of the hood.
+
 STEP 130
 ADD hd-gp-1 61332 black
 ADD hd-gp-2 61332 black
@@ -1254,11 +1383,13 @@ CONNECT hd-gp-2.pin1 -> hd-b9-1.hole4~ STIFF
 CONNECT hd-gp-3.pin1 -> hd-b9-1.hole5~ STIFF
 CONNECT hd-gp-4.pin1 -> hd-b9-1.hole7~ STIFF
 WHY Adds posts for the next beam.
+
 STEP 131
 ADD hd-b3-1 32523 black
 CONNECT hd-b3-1.hole1 -> hd-gp-1.pin2~ STIFF
 CONNECT hd-b3-1.hole3 -> hd-gp-3.pin2~ STIFF
 WHY Adds the middle spacer.
+
 STEP 132
 ADD hd-rp-1 11214 red
 ADD hd-rp-2 11214 red
@@ -1269,15 +1400,18 @@ CONNECT hd-rp-2.axle1 -> hd-cb-2.axlehole1 LOCKED
 CONNECT hd-cb-1.hole1 -> hd-b9-1.pin?
 CONNECT hd-cb-2.hole1 -> hd-b9-1.pin?
 WHY Makes the hood's mounting pins.
+
 STEP 133
 ADD hd-b7-1 32524 black
 CONNECT hd-rp-1.pin1 -> hd-b7-1.hole2~ STIFF
 CONNECT hd-rp-2.pin1 -> hd-b7-1.hole6~ STIFF
 WHY Ties the hood together underneath.
+
 STEP 134
 CONNECT hd-rp-1.pin2 -> cw-panel-1.hole?
 CONNECT hd-rp-2.pin2 -> cw-panel-1.hole?
 WHY Gives the machine its rear cover.
+
 STEP 135
 ADD rf-b11-1 73507 black
 ADD rf-b7-1 32524 black
@@ -1297,10 +1431,12 @@ CONNECT rf-gp-1.pin1 -> rf-b11-1.hole10~ STIFF
 CONNECT rf-gp-2.pin1 -> rf-b11-1.hole11~ STIFF
 CONNECT rf-bp-1.axle1 -> rf-b7-1.hole?
 WHY Builds the roof support: layered beams make a stiff bar.
+
 STEP 136
 ADD rf-b5b-1 32316 black
 CONNECT rf-b5b-1.hole? -> rf-bp-1.pin?
 WHY Fixes the roof stack to the frame.
+
 STEP 137
 ADD cb-yb3-1 32523 yellow
 ADD cb-bp7-1 43093 blue
@@ -1309,6 +1445,7 @@ CONNECT cb-bp7-1.pin1 -> cb-yb3-1.hole1~ STIFF
 CONNECT cb-dp-1.pin1 -> cb-yb3-1.hole3~ STIFF
 CONNECT cb-yb3-1.hole2 -> cb-bp-1.pin?
 WHY Adds the yellow trim beam that matches the yellow beam already there.
+
 STEP 138
 ADD cr-tb-1 41677 black
 ADD cr-tb-2 41677 black
@@ -1327,6 +1464,7 @@ CONNECT cr-yax-2.axle3 -> cr-tb-4.axlehole1~ LOCKED
 CONNECT cr-rax-1.axle1 -> cr-fair-1.axlehole?
 CONNECT cr-hub-1.hole? -> cr-yax-1.axle2?
 WHY Builds the front-left corner cover/hinge.
+
 STEP 139
 ADD cb-yb5-1 32316 yellow
 ADD cb-bp8-1 43093 blue
@@ -1335,17 +1473,20 @@ CONNECT cb-bp8-1.pin1 -> cb-yb5-1.hole1~ STIFF
 CONNECT cb-dp2-1.pin1 -> cb-yb5-1.hole3~ STIFF
 CONNECT cb-yb5-1.hole? -> cb-yb3-1.hole?
 WHY Extends the yellow trim along the frame side.
+
 STEP 140
 ADD cb-dp3-1 61332 black
 ADD cb-dp3-2 61332 black
 CONNECT cb-dp3-1.pin1 -> hd-b7-1.hole?
 CONNECT cb-dp3-2.pin1 -> hd-b7-1.hole?
 WHY Adds posts for the next yellow beam.
+
 STEP 141
 ADD cb-yb5b-1 32316 yellow
 CONNECT cb-dp3-1.pin2 -> cb-yb5b-1.hole2~ STIFF
 CONNECT cb-dp3-2.pin2 -> cb-yb5b-1.hole4~ STIFF
 WHY Finishes the yellow trim line.
+
 STEP 142
 ADD sc-bp-1 43093 blue
 ADD sc-bp-2 43093 blue
@@ -1359,6 +1500,7 @@ CONNECT sc-dp-1.pin1 -> sc-lb-2.hole1~ STIFF
 CONNECT sc-bp-1.pin1 -> sc-lb-3.hole2~ STIFF
 CONNECT sc-bp-2.pin1 -> sc-lb-3.hole3~ STIFF
 WHY Builds the left side cover with the machine's ELECTRIC label.
+
 STEP 143
 ADD hd2-bp-1 43093 blue
 ADD hd2-rp-1 32062 red
@@ -1368,6 +1510,7 @@ CONNECT hd2-rp-1.axle1 -> hd2-f8-1.axlehole?
 CONNECT hd2-bp-1.pin1 -> hd2-f8-1.hole?
 CONNECT hd2-f8-1.hole? -> hd2-panel-1.hole?
 WHY Adds the yellow cover with the model name.
+
 STEP 144
 ADD rs-b11-1 73507 black
 ADD rs-bp-1 43093 blue
@@ -1377,11 +1520,13 @@ CONNECT rs-bp-1.pin1 -> rs-b11-1.hole2~ STIFF
 CONNECT rs-bp-2.pin1 -> rs-b11-1.hole5~ STIFF
 CONNECT rs-bp-3.pin1 -> rs-b11-1.hole8~ STIFF
 WHY Starts the right side beam.
+
 STEP 145
 ADD rs-lb-1 32526 black
 CONNECT rs-lb-1.hole1 -> rs-bp-1.pin1~ STIFF
 CONNECT rs-lb-1.hole2 -> rs-bp-2.pin1~ STIFF
 WHY Adds the upright end of the side beam.
+
 STEP 146
 ADD rs-dp-1 61332 black
 ADD rs-dp-2 61332 black
@@ -1390,16 +1535,19 @@ CONNECT rs-dp-1.pin1 -> rs-b11-1.hole10~ STIFF
 CONNECT rs-dp-2.pin1 -> rs-b11-1.hole11~ STIFF
 CONNECT rs-dp-3.pin1 -> rs-b11-1.hole9~ STIFF
 WHY Adds posts for the next beams.
+
 STEP 147
 ADD rs-b3-1 32523 black
 ADD rs-b7-1 32524 black
 CONNECT rs-b7-1.hole? -> rs-bp-1.pin?
 CONNECT rs-b3-1.hole? -> rs-dp-1.pin2?
 WHY Thickens the side beam.
+
 STEP 148
 ADD rs-b5-1 32316 black
 CONNECT rs-dp-2.pin2 -> rs-b5-1.hole?
 WHY Closes the right beam's far end.
+
 STEP 149
 ADD rs-bp2-1 43093 blue
 ADD rs-dp2-1 61332 black
@@ -1409,72 +1557,87 @@ CONNECT rs-bp2-1.axle1 -> rs-tb-1.axlehole1~ LOCKED
 CONNECT rs-bp2-1.pin1 -> rs-tb-2.hole1~ STIFF
 CONNECT rs-dp2-1.pin1 -> rs-tb-1.hole3~ STIFF
 WHY Adds the tall end plate.
+
 STEP 150
 CONNECT rs-bp-3.pin1 -> up-frame-2.hole?
 CONNECT rs-b11-1.hole? -> up-frame-2.hole?
 WHY Closes the right side of the cab box.
+
 STEP 151
 ADD rs-b5c-1 32316 black
 CONNECT rs-b5c-1.hole? -> rs-dp-1.pin?
 WHY Finishes the top rail of the right side.
+
 STEP 152
 ADD cn-ax6-1 3706 black
 ADD cn-conn-1 42003 black
 CONNECT cn-ax6-1.axle1 -> cn-conn-1.axlehole1 LOCKED
 WHY Starts the corner pivot.
+
 STEP 153
 ADD cn-tb-1 41677 black
 ADD cn-tb-2 41677 black
 CONNECT cn-tb-1.axlehole1 -> cn-ax6-1.axle5~ LOCKED
 WHY Adds a spacer beside the connector.
+
 STEP 154
 ADD cn-tb2-1 41677 black
 ADD cn-tb2-2 41677 black
 CONNECT cn-tb2-1.axlehole1 -> cn-ax6-1.axle4~ LOCKED
 CONNECT cn-tb2-2.axlehole1 -> cn-ax6-1.axle3~ LOCKED
 WHY Adds the second spacer.
+
 STEP 155
 ADD cn-yc-1 6536 yellow
 CONNECT cn-yc-1.axlehole1 -> cn-ax6-1.axle2~ LOCKED
 WHY Adds the yellow end of the cab corner.
+
 STEP 156
 ADD cn-tb3-1 41677 black
 ADD cn-tb3-2 41677 black
 CONNECT cn-tb3-1.axlehole1 -> cn-ax6-1.axle1~ LOCKED
 CONNECT cn-tb3-2.axlehole1 -> cn-ax6-1.axle2?
 WHY Locks the axle's free end.
+
 STEP 157
 ADD cn-yax-1 4519 yellow
 CONNECT cn-yax-1.axle1 -> cn-yc-1.axlehole?
 WHY Adds the second pivot shaft.
+
 STEP 158
 ADD cn-u-1 69819 black
 CONNECT cn-u-1.axlehole? -> cn-yax-1.axle2?
 WHY Closes the pivot with a U clamp.
+
 STEP 159
 ADD cn-rax-1 32062 red
 CONNECT cn-rax-1.axle1 -> cn-u-1.axlehole?
 WHY Adds a red mount axle.
+
 STEP 160
 ADD cn-yc2-1 6536 yellow
 ADD cn-yc2-2 6536 yellow
 CONNECT cn-yc2-1.axlehole1 -> cn-rax-1.axle2~ LOCKED
 CONNECT cn-yc2-2.hole? -> cn-yc2-1.hole?
 WHY Gives the corner its yellow end.
+
 STEP 161
 ADD cn-dp-1 61332 black
 CONNECT cn-dp-1.pin1 -> cn-yc2-1.hole?
 WHY Locks the yellow corner.
+
 STEP 162
 ADD cn-fair-1 2403 black
 ADD cn-rax2-1 32062 red
 CONNECT cn-rax2-1.axle1 -> cn-fair-1.axlehole?
 CONNECT cn-rax2-1.axle2 -> cn-yc2-2.axlehole?
 WHY Adds the rounded corner of the cab.
+
 STEP 163
 CONNECT cn-ax6-1.axle6 -> rs-b5c-1.hole?
 CONNECT cn-yc-1.hole? -> rs-b5c-1.hole?
 WHY Adds the yellow-black corner that closes the cab box.
+
 STEP 164
 ADD cn-dp4-1 61332 black
 ADD cn-dp4-2 61332 black
@@ -1485,12 +1648,14 @@ CONNECT cn-dp4-2.pin1 -> cn-fair-1.hole?
 CONNECT cn-dp4-3.pin1 -> rs-b11-1.hole?
 CONNECT cn-dp4-4.pin1 -> rs-b11-1.hole?
 WHY Adds the posts for the corner covers.
+
 STEP 165
 ADD cv-f1-1 87080 black
 ADD cv-f2-1 87086 black
 CONNECT cv-f1-1.hole? -> cn-dp4-1.pin2?
 CONNECT cv-f2-1.hole? -> cn-dp4-3.pin2?
 WHY Gives the corner its finished shape and warning marks.
+
 STEP 166
 ADD yb-b9-1 40490 yellow
 ADD yb-hub-1 65487 blue
@@ -1502,6 +1667,7 @@ CONNECT yb-dp-2.pin1 -> yb-b9-1.hole3~ STIFF
 CONNECT yb-hub-1.pin1 -> yb-b9-1.hole9~ STIFF
 CONNECT yb-gp-1.pin1 -> yb-hub-1.hole1~ TURNS
 WHY Adds the long yellow trim on the right side, matching the left.
+
 STEP 167
 ADD sc2-bp-1 43093 blue
 ADD sc2-bp-2 43093 blue
@@ -1515,6 +1681,7 @@ CONNECT sc2-dp-1.pin1 -> sc2-lb-2.hole1~ STIFF
 CONNECT sc2-bp-1.pin1 -> sc2-lb-3.hole2~ STIFF
 CONNECT sc2-bp-2.pin1 -> sc2-lb-3.hole3~ STIFF
 WHY Builds the right side cover with the machine's ELECTRIC label.
+
 STEP 168
 ADD yc-bp-1 43093 blue
 ADD yc-bp-2 43093 blue
@@ -1526,6 +1693,7 @@ CONNECT yc-bp-2.axle1 -> yc-tb-2.axlehole1~ LOCKED
 CONNECT yc-bp-1.pin1 -> yc-panel-1.hole?
 CONNECT yc-bp-2.pin1 -> yc-panel-1.hole?
 WHY Matches the left yellow cover with the model name.
+
 STEP 169
 ADD ca-yl-1 32526 yellow
 ADD ca-bp-1 43093 blue
@@ -1537,6 +1705,7 @@ CONNECT ca-bp-2.pin1 -> ca-yl-1.hole2~ STIFF
 CONNECT ca-bp-3.pin1 -> ca-yl-1.hole5~ STIFF
 CONNECT ca-dp-1.pin1 -> ca-yl-1.hole4~ STIFF
 WHY Builds the yellow upright (roof pillar) for the cab.
+
 STEP 170
 ADD ca-yb9-1 40490 yellow
 ADD ca-ytb-1 32017 yellow
@@ -1550,17 +1719,20 @@ CONNECT ca-dp2-3.pin1 -> ca-yb9-1.hole7~ STIFF
 CONNECT ca-ytb-1.hole1 -> ca-dp2-1.pin2?
 CONNECT ca-ytb-2.hole1 -> ca-dp2-3.pin2?
 WHY Builds the yellow roof rail.
+
 STEP 171
 ADD ca-ax10-1 3737 black
 ADD ca-yc-1 6536 yellow
 CONNECT ca-ax10-1.axle10 -> ca-yc-1.axlehole1 LOCKED
 CONNECT ca-yc-1.hole1 -> ca-yb9-1.hole?
 WHY Adds the long rod the roof leans on.
+
 STEP 172
 ADD ca-b7-1 32524 black
 CONNECT ca-b7-1.hole? -> ca-bp-1.pin1?
 CONNECT ca-b7-1.hole? -> ca-bp-2.pin1?
 WHY Ties the pillar's pins.
+
 STEP 173
 ADD cp-b7-1 32524 black
 ADD cp-bp-1 43093 blue
@@ -1575,12 +1747,14 @@ CONNECT cp-rax-1.axle1 -> cp-yax-1.axle?
 CONNECT cp-yax-1.axle3 -> cp-b7-1.hole?
 CONNECT cp-bp-1.pin1 -> cp-f8-1.hole?
 WHY Builds the front corner pillar of the roof.
+
 STEP 174
 ADD ca-ec-1 6536 black
 ADD ca-ec-2 6536 black
 CONNECT ca-ec-1.axlehole1 -> cp-yax-1.axle3?
 CONNECT ca-ec-2.axlehole1 -> cp-rax-1.axle2?
 WHY Adds the connectors that the roof tube plugs into.
+
 STEP 175
 ADD rt-rax-1 32062 red
 ADD rt-rax-2 32062 red
@@ -1592,6 +1766,7 @@ CONNECT rt-rax-1.axle1 -> rt-cyl-1.axlehole1~ LOCKED
 CONNECT rt-ax5-1.axle1 -> rt-end-1.axlehole1~ LOCKED
 CONNECT rt-ax5-1.axle5 -> rt-end-2.axlehole1~ LOCKED
 WHY Builds the roof tube / cab handle.
+
 STEP 176
 ADD bt-hose-1 32199 black
 ADD bt-ang-1 32014 black
@@ -1605,17 +1780,20 @@ CONNECT bt-yax-1.axle1 -> bt-cyl-1.axlehole1~ LOCKED
 CONNECT bt-tb-1.axlehole1 -> bt-yax-1.axle?
 CONNECT bt-ang-1.axlehole1 -> bt-cyl-1.axlehole1?
 WHY Builds the bent roof tube that holds the hose handle.
+
 STEP 177
 ADD bt-ax6-1 3706 black
 ADD bt-tb2-1 41677 black
 CONNECT bt-tb2-1.axlehole1 -> bt-ax6-1.axlehole?
 WHY Adds the second roof handle rod.
+
 STEP 178
 ADD sb-bush-1 32123b yellow
 ADD sb-bush-2 32123b yellow
 CONNECT sb-bush-1.axlehole1 -> ca-dp2-1.pin?
 CONNECT sb-bush-2.axlehole1 -> ca-dp2-3.pin?
 WHY Stops the thin roof beams from sliding off.
+
 STEP 179
 ADD rb-tb-1 11478 black
 ADD rb-conn-1 42003 black
@@ -1627,6 +1805,7 @@ CONNECT rb-tp-2.pin1 -> rb-tb-1.hole3~ STIFF
 CONNECT rb-conn-1.hole1 -> rb-tp-1.pin2?
 CONNECT rb-ax-1.axle1 -> rb-conn-1.axlehole1?
 WHY Builds a hinge bracket for the roof.
+
 STEP 180
 ADD rf2-b9-1 40490 yellow
 ADD rf2-tb-1 32017 yellow
@@ -1640,15 +1819,18 @@ CONNECT rf2-dp-3.pin1 -> rf2-b9-1.hole7~ STIFF
 CONNECT rf2-tb-1.hole1 -> rf2-dp-1.pin2?
 CONNECT rf2-tb-2.hole1 -> rf2-dp-3.pin2?
 WHY Doubles the yellow roof beam so the roof is wide.
+
 STEP 181
 ADD ca-ax10b-1 3706 black
 ADD ca-yc2-1 6536 yellow
 CONNECT ca-ax10b-1.axle6 -> ca-yc2-1.axlehole1 LOCKED
 CONNECT ca-yc2-1.hole1 -> rf2-b9-1.hole?
 WHY Adds the front roof rod that mirrors the one in step 171.
+
 STEP 182
 ADD or-hose-1 75c11 orange
 WHY Adds an orange line as a decoration and window-brace.
+
 STEP 183
 ADD fl-bp-1 43093 blue
 ADD fl-tile-1 3069b black
@@ -1657,6 +1839,7 @@ ADD fl-cn-1 32014 black
 CONNECT fl-bp-1.pin1 -> fl-cn-1.hole1~ STIFF
 CONNECT fl-pl-1.hole? -> fl-bp-1.axle1?
 WHY Adds a small panel to the pillar top.
+
 STEP 184
 ADD ag-rax-1 32062 red
 ADD ag-bp-1 43093 blue
@@ -1668,6 +1851,7 @@ CONNECT ag-bp-1.pin1 -> ag-ang-1.hole1~ STIFF
 CONNECT ag-ang-1.axlehole2 -> ag-ball-1.axlehole1?
 CONNECT ag-cap-1.stud? -> ag-bp-1.pin?
 WHY Builds the rear-right roof corner fitting.
+
 STEP 185
 ADD ao-dp-1 61332 black
 ADD ao-cn-1 6536 black
@@ -1677,10 +1861,12 @@ CONNECT ao-dp-1.pin1 -> ao-cn-1.hole1 STIFF
 CONNECT ao-tile-1.stud? -> ao-cn-1.hole?
 CONNECT ao-bar-1.bar? -> ao-cn-1.hole?
 WHY Adds the orange rail (the real machine's rear handle) on the roof.
+
 STEP 186
 ADD ao-tb-1 41677 black
 CONNECT ao-tb-1.axlehole1 -> ao-cn-1.axlehole?
 WHY Locks the orange rail in its connector.
+
 STEP 187
 ADD ar-plate-1 6141 transorange
 ADD ar-dome-1 85861 black
@@ -1688,6 +1874,7 @@ ADD ar-clip-1 3484 black
 CONNECT ar-plate-1.stud? -> ar-dome-1.stud?
 CONNECT ar-clip-1.clip? -> ar-dome-1.stud?
 WHY Adds the amber warning beacon.
+
 STEP 188
 ADD ah-tile-1 98138 clear
 ADD ah-dp-1 61332 black
@@ -1695,6 +1882,7 @@ ADD ah-cn-1 6536 black
 CONNECT ah-dp-1.pin1 -> ah-cn-1.hole1 STIFF
 CONNECT ah-tile-1.stud? -> ah-dp-1.barhole?
 WHY Adds a small light fitting at the rear.
+
 STEP 189
 ADD of-ball-1 52730 darkgray
 ADD of-rax-1 32062 red
@@ -1719,6 +1907,7 @@ CONNECT of-ang-2.axlehole2 -> of-ball-1.axle1?
 CONNECT of-rax-4.axle1 -> of-cyl-1.axlehole1~ LOCKED
 CONNECT of-rax-5.axle1 -> of-cyl-2.axlehole1~ LOCKED
 WHY Builds the orange hose-end fitting used as the engine breather on the model.
+
 STEP 190
 ADD of2-pl-1 18677 black
 ADD of2-tile-1 3069b black
@@ -1726,44 +1915,53 @@ ADD of2-dp-1 61332 black
 CONNECT of2-dp-1.pin1 -> of2-pl-1.hole?
 CONNECT of2-tile-1.stud? -> of2-pl-1.stud?
 WHY Adds a label tile on the machine's rear-left.
+
 STEP 191
 ADD of3-yax-1 4519 yellow
 ADD of3-ang-1 32013 orange
 CONNECT of3-yax-1.axle1 -> of3-ang-1.axlehole1~ LOCKED
 WHY Starts the second orange fitting.
+
 STEP 192
 ADD of3-cyl-1 59443 orange
 ADD of3-rc-1 18654 orange
 CONNECT of3-cyl-1.axlehole1 -> of3-yax-1.axle2~ LOCKED
 WHY Builds the orange outer tube.
+
 STEP 193
 ADD of3-ax6-1 3706 black
 CONNECT of3-ax6-1.axle6 -> of3-cyl-1.axlehole2?
 WHY Adds the piston rod of the fitting.
+
 STEP 194
 ADD of3-bp-1 43093 blue
 ADD of3-bush-1 32123b yellow
 CONNECT of3-bp-1.pin1 -> of3-ang-1.hole?
 CONNECT of3-bush-1.axlehole1 -> of3-ax6-1.axle?
 WHY Stops the rod from sliding out.
+
 STEP 195
 ADD of3-ang2-1 32015 orange
 CONNECT of3-ang2-1.axlehole1 -> of3-bp-1.pin?
 WHY Builds the bend of the fitting.
+
 STEP 196
 ADD of3-hose-1 32580 orange
 CONNECT of3-hose-1.axlehole? -> of3-ang2-1.axlehole?
 WHY Adds the long orange arm of the fitting.
+
 STEP 197
 ADD of3-ang3-1 32016 orange
 CONNECT of3-ang3-1.axlehole1 -> of3-hose-1.axlehole?
 WHY Finishes the arm with a foot.
+
 STEP 198
 ADD of3-rax-1 32062 red
 ADD of3-ro-1 18654 orange
 CONNECT of3-rax-1.axle1 -> of3-ang3-1.axlehole?
 CONNECT of3-ro-1.axlehole? -> of3-rax-1.axle2?
 WHY Finishes the second orange fitting.
+
 STEP 199
 CONNECT of3-ang-1.hole? -> uc-frame-1.hole?
 WHY Finishes the model.

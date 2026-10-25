@@ -1,12 +1,12 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD p63869-1 63869 black
@@ -213,8 +213,8 @@ MESH p87407-1.teeth p6589-5.teeth
 RATIO p87407-1 p6589-5 5/3
 MESH p6589-4.teeth p87407-1.teeth
 RATIO p6589-4 p87407-1 3/5
-WHY Slides the yellow axle through the free twenty-tooth gear so it transfers rotation from the carrier shaft to the actuator input while remaining free on the pivot axle.
 END
+WHY Slides the yellow axle through the free twenty-tooth gear so it transfers rotation from the carrier shaft to the actuator input while remaining free on the pivot axle.
 
 STEP 21
 ATTACH actuator-carrier
@@ -498,8 +498,8 @@ ADD p2780-12 2780 black
 ADD p2780-13 2780 black
 CONNECT p2780-12.pin1 -> p14720-1.hole9 STIFF
 CONNECT p2780-13.pin1 -> p14720-1.hole7 STIFF
-WHY Adds black pins to the two outer holes of the grey upper crossbar for the frame that will close around the gearbox.
 END
+WHY Adds black pins to the two outer holes of the grey upper crossbar for the frame that will close around the gearbox.
 
 STEP 49
 ATTACH clutch-input-module
@@ -693,16 +693,16 @@ ADD p6553-1 6553 black
 ADD p3713-5 3713 red
 CONNECT p6553-1.axle2 -> p3713-5.axlehole1 LOCKED
 CONNECT p15462-4.axle2 -> p6553-1.axlehole1 LOCKED
-WHY Adds the black offset axle connector to the projecting brown shaft with a red bush on its perpendicular axle end.
 END
+WHY Adds the black offset axle connector to the projecting brown shaft with a red bush on its perpendicular axle end.
 
 STEP 67
 ATTACH opposite-clutch-support
 CONNECT p60485-2.axle9 -> p32449-3.axlehole1 LOCKED
 CONNECT p60485-2.axle9 -> p32449-4.axlehole1 LOCKED
 CONNECT p3706-1.axle3 -> p14720-2.hole8 TURNS
-WHY Slides the complete opposite support onto the lower grey cross shaft and around the black clutch axle, retaining the freely turning red gear inside the gearbox.
 END
+WHY Slides the complete opposite support onto the lower grey cross shaft and around the black clutch axle, retaining the freely turning red gear inside the gearbox.
 
 STEP 68
 ADD p32270-2 32270 black
@@ -887,8 +887,8 @@ CONNECT p2780-26.pin1 -> p32271-2.hole2 STIFF
 CONNECT p2780-27.pin1 -> p32271-2.hole4 STIFF
 CONNECT p2780-26.pin2 -> p64681-1.hole8 STIFF
 CONNECT p2780-27.pin2 -> p64681-1.hole6 STIFF
-WHY Pins the black number-five panel to the mirrored upper rail after applying sticker 4 to its outer face.
 END
+WHY Pins the black number-five panel to the mirrored upper rail after applying sticker 4 to its outer face.
 
 STEP 85
 ATTACH right-body-panel
@@ -1222,8 +1222,8 @@ CONNECT p4274-7.pin2 -> p32065-3.hole7 TURNS
 CONNECT p4274-8.pin2 -> p32065-3.hole1 TURNS
 CONNECT p58176-1.? -> p4274-7.barhole1 STIFF
 CONNECT p58176-2.? -> p4274-8.barhole1 STIFF
-WHY Fits the thin black seven-hole roof-light beam across the half pins and pushes an orange warning light into each end.
 END
+WHY Fits the thin black seven-hole roof-light beam across the half pins and pushes an orange warning light into each end.
 
 STEP 113
 WHY Turns the completed protective guard upright with the orange lights at the top, the four black bars facing forward and the lower mounting sockets facing the cab.

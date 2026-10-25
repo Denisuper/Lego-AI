@@ -1,12 +1,12 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD beam11-1 32009 white
@@ -17,6 +17,7 @@ ADD pin-4 43093 blue
 CONNECT pin-2.pin1 -> beam11-1.hole1 STIFF
 CONNECT pin-3.pin1 -> beam11-1.hole3 STIFF
 WHY Starts the right-hand side rail and gives it its first two mounting pins.
+
 STEP 2
 ADD beam3x5-1 32526 black
 ADD pin-5 42924 blue
@@ -30,6 +31,7 @@ CONNECT pin-3.pin2 -> beam3x5-1.hole1 STIFF
 CONNECT pin-5.pin1 -> beam2x4-1.hole2 STIFF
 CONNECT pin-6.pin1 -> beam2x4-1.hole1 STIFF
 WHY Turns the single beam into an L, starting the front corner of the frame.
+
 STEP 3
 ADD pin-7 11214 red
 ADD conn-1 63869 lightgray
@@ -41,6 +43,7 @@ CONNECT pin-9.pin1 -> conn-1.hole2 TURNS
 CONNECT pin-10.pin1 -> conn-1.hole3 TURNS
 CONNECT pin-7.pin1 -> beam2x4-1.hole3 STIFF
 WHY Adds a cosmetic engine-fan detail to the body front.
+
 STEP 4
 ADD pin-11 42924 blue
 ADD panel-1 24116 blue
@@ -53,6 +56,7 @@ CONNECT pin-5.pin3 -> beam2x4-2.hole2 STIFF
 CONNECT pin-6.pin3 -> beam2x4-2.hole1 STIFF
 CONNECT pin-11.pin1 -> beam2x4-1.hole4 STIFF
 WHY Adds the left front upright, so the frame is no longer one-sided, and closes the gap between the two uprights with a panel.
+
 STEP 5
 ADD pin-13 18651 black
 ADD beam2x4-3 32140 white
@@ -61,6 +65,7 @@ CONNECT pin-13.axle2 -> beam2x4-3.axlehole1 LOCKED
 CONNECT pin-14.pin2 -> beam2x4-3.hole3 STIFF
 CONNECT pin-13.axle1 -> beam11-1.hole4 TURNS
 WHY Starts the engine-deck section behind the cab, stepping the frame back from the front box.
+
 STEP 6
 ADD beam2x4-4 32140 white
 ADD pin-15 65489 lightgray
@@ -75,6 +80,7 @@ CONNECT axle3-1.axle3 -> pin-15.hole3 TURNS
 CONNECT axle3-1.axle2 -> gear12-1.axlehole1 LOCKED
 CONNECT axle3-1.axle1 -> conn-2.axlehole1 LOCKED
 WHY Closes the engine deck and starts the control gear train inside it.
+
 STEP 7
 ADD beam3x3-1 60484 red
 ADD pin-17 44874 red
@@ -85,6 +91,7 @@ CONNECT pin-16.axle1 -> beam3x3-1.hole3 TURNS
 CONNECT pin-18.axle1 -> pin-17.hole1 TURNS
 CONNECT pin-17.pin1 -> beam11-1.hole6 STIFF
 WHY Adds the outer bearing point the worm gear's shaft will spin in, opposite pin-15.
+
 STEP 8
 ADD axle4-1 3705 black
 ADD worm-1 27938 darkgray
@@ -94,6 +101,7 @@ CONNECT axle4-1.axle1 -> gear20-1.axlehole1 LOCKED
 CONNECT axle4-1.axle2 -> pin-15.hole1 TURNS
 CONNECT axle4-1.axle4 -> conn-3.axlehole2 LOCKED
 WHY Fits the worm gear and the first driven gear onto the same shaft, next to the gear train built in step 6.
+
 STEP 9
 ADD beam2x4-5 32140 white
 ADD pin-19 43093 blue
@@ -109,6 +117,7 @@ CONNECT pin-3.pin3 -> beam11-2.hole3 STIFF
 CONNECT pin-13.pin1 -> beam11-2.hole4 STIFF
 CONNECT pin-17.pin2 -> beam11-2.hole6 STIFF
 WHY Starts the left side rail so the frame becomes a full width box, not just a right-hand skeleton.
+
 STEP 10
 ADD pin-22 65487 black
 ADD pin-23 65487 black
@@ -123,12 +132,14 @@ CONNECT pin-24.pin2 -> groove-2.hole1 TURNS
 CONNECT pin-23.pin1 -> beam11-1.hole7 STIFF
 CONNECT pin-22.pin1 -> beam11-2.hole7 STIFF
 WHY Adds the headlights.
+
 STEP 11
 ADD pin-26 42924 blue
 ADD beam2-1 60483 black
 CONNECT pin-26.pin1 -> beam2-1.hole1 STIFF
 CONNECT pin-26.pin2 -> beam2x4-3.hole2 STIFF
 WHY Adds a small mounting tab off the engine-deck upright.
+
 STEP 12
 GROUP side1
 ADD conn-4 42003 red
@@ -142,6 +153,7 @@ CONNECT pin-27.pin1 -> panel-2.hole1 STIFF
 CONNECT pin-28.pin1 -> panel-2.hole2 STIFF
 CONNECT axle3-2.axle3 -> panel-2.axlehole1 LOCKED
 WHY Builds the right-side fairing as its own unit before fitting it to the model.
+
 STEP 13
 ADD conn-5 32184 red
 ADD pin-29 18651 black
@@ -152,12 +164,14 @@ CONNECT pin-29.axle2 -> conn-5.axlehole2 LOCKED
 CONNECT pin-30.pin1 -> conn-5.hole1 STIFF
 CONNECT axle3-2.axle2 -> conn-5.axlehole1 LOCKED
 CONNECT axle3-2.axle1 -> conn-6.axlehole1 LOCKED
-WHY Extends the fairing sub-build with the pins that will both attach it to the frame and feed the lift-crank linkage.
 END
+WHY Extends the fairing sub-build with the pins that will both attach it to the frame and feed the lift-crank linkage.
+
 STEP 14
 ATTACH side1
 CONNECT pin-30.pin2 -> beam2x4-4.hole2 STIFF
 WHY Fits the finished right-side fairing onto the frame in one motion.
+
 STEP 15
 ADD axle6-1 3706 red
 ADD bush-1 99021 darkgray
@@ -173,6 +187,7 @@ CONNECT axle6-2.axle2 -> beam11-2.hole8 TURNS
 CONNECT axle6-1.axle4 -> beam2-1.axlehole1 LOCKED
 CONNECT axle6-1.axle5 -> conn-4.axlehole1 LOCKED
 WHY Builds the rear axle that will carry the rear wheels and a second drive gear.
+
 STEP 16
 ADD axle4-2 87083 darkgray
 ADD beam13-1 41239 white
@@ -185,6 +200,7 @@ CONNECT axle4-2.axle2 -> beam3x0-2.axlehole1 LOCKED
 CONNECT axle4-2.axle1 -> conn-8.axlehole1 LOCKED
 CONNECT axle4-2.axle3 -> beam3x3-1.hole1 TURNS
 WHY Hangs the right lift arm off the frame for the first time.
+
 STEP 17
 ADD beam3-1 32523 white
 ADD beam3-2 32523 white
@@ -199,6 +215,7 @@ CONNECT beam3x0-2.pin1 -> beam3-2.hole1 STIFF
 CONNECT pin-32.pin1 -> beam13-2.hole2 STIFF
 CONNECT pin-33.pin1 -> beam13-2.hole3 STIFF
 WHY Triangulates both lift arms so they can't flex sideways under load, and brings the left arm into the build.
+
 STEP 18
 ADD beam3x3-2 60484 red
 ADD beam2-2 60483 black
@@ -208,6 +225,7 @@ CONNECT axle6-2.axle1 -> beam3x3-2.hole5 TURNS
 CONNECT pin-26.pin3 -> beam2-2.hole1 STIFF
 CONNECT axle6-1.axle2 -> beam2-2.axlehole1 LOCKED
 WHY Finishes the left-side mirror of the engine-deck corner and the frame1 attachment tab.
+
 STEP 19
 GROUP side2
 ADD conn-9 42003 red
@@ -221,6 +239,7 @@ CONNECT pin-34.pin2 -> panel-3.hole1 STIFF
 CONNECT pin-35.pin2 -> panel-3.hole2 STIFF
 CONNECT axle3-3.axle1 -> panel-3.axlehole1 LOCKED
 WHY Builds the left-side fairing, mirroring side1.
+
 STEP 20
 ADD conn-10 32184 red
 ADD pin-36 18651 black
@@ -231,14 +250,16 @@ CONNECT pin-36.axle2 -> conn-10.axlehole2 LOCKED
 CONNECT pin-37.pin2 -> conn-10.hole1 STIFF
 CONNECT axle3-3.axle2 -> conn-10.axlehole1 LOCKED
 CONNECT axle3-3.axle3 -> conn-11.axlehole1 LOCKED
-WHY Extends the left fairing sub-build with its attachment and linkage-feed pins, mirroring side1-02.
 END
+WHY Extends the left fairing sub-build with its attachment and linkage-feed pins, mirroring side1-02.
+
 STEP 21
 ATTACH side2
 CONNECT axle6-1.axle1 -> conn-9.axlehole1 LOCKED
 CONNECT pin-20.pin2 -> conn-10.hole1 STIFF
 CONNECT pin-37.pin1 -> beam2x4-5.hole2 STIFF
 WHY Fits the finished left fairing onto the frame, mirroring step 12.
+
 STEP 22
 ADD axle3-4 4519 yellow
 ADD gear12-2 32270 black
@@ -246,6 +267,7 @@ CONNECT axle3-4.axle1 -> gear12-2.axlehole1 LOCKED
 CONNECT axle3-4.axle3 -> conn-8.axlehole2 LOCKED
 CONNECT axle3-4.axle2 -> beam3x3-2.hole1 TURNS
 WHY Adds a second gear near the rear axle's gear20-2.
+
 STEP 23
 ADD axle2-1 32062 red
 ADD conn-13 32013 black
@@ -265,6 +287,7 @@ CONNECT pin-29.axle1 -> conn-15.hole1 TURNS
 CONNECT axle2-2.axle2 -> conn-16.axlehole1 LOCKED
 CONNECT pin-39.axle1 -> conn-16.hole1 TURNS
 WHY Builds the crank linkage that will carry the control train's motion out to the arm pivot.
+
 STEP 24
 ADD axle3-5 4519 yellow
 ADD gear12-3 32270 black
@@ -272,6 +295,7 @@ CONNECT axle3-5.axle1 -> gear12-3.axlehole1 LOCKED
 CONNECT axle3-5.axle3 -> conn-2.axlehole2 LOCKED
 CONNECT axle3-5.axle2 -> conn-17.hole1 TURNS
 WHY Carries the worm-train's rotation across to the crank linkage's middle connector.
+
 STEP 25
 GROUP frame1
 ADD conn-18 32013 black
@@ -280,6 +304,7 @@ ADD pin-40 65487 black
 CONNECT axle4-3.axle4 -> conn-18.axlehole1 LOCKED
 CONNECT pin-40.pin1 -> conn-18.hole1 STIFF
 WHY Starts the pivot block that the arm's control linkage will reach.
+
 STEP 26
 ADD conn-19 32015 black
 ADD axle3-6 4519 yellow
@@ -288,6 +313,7 @@ CONNECT axle3-6.axle3 -> conn-19.axlehole2 LOCKED
 CONNECT axle4-3.axle1 -> conn-19.axlehole1 LOCKED
 CONNECT axle3-6.axle2 -> beam2-3.axlehole1 LOCKED
 WHY Extends the pivot block with the hub (conn-19) that the crank linkage's followers (pin-42/pin-43) will reach.
+
 STEP 27
 ADD pin-41 4274 lightgray
 ADD groove-3 98138 clear
@@ -295,11 +321,13 @@ ADD bush-2 3713 black
 CONNECT pin-41.pin2 -> groove-3.hole1 TURNS
 CONNECT axle3-6.axle1 -> bush-2.axlehole1 LOCKED
 CONNECT pin-41.pin2 -> beam2-3.hole1 TURNS
-WHY Finishes the pivot block with its outer bearing and a small lens detail.
 END
+WHY Finishes the pivot block with its outer bearing and a small lens detail.
+
 STEP 28
 CONNECT pin-7.axle1 -> pin-40.hole1 TURNS
 WHY Mounts the arm's far pivot block onto the frame.
+
 STEP 29
 ATTACH frame1
 ADD pin-42 43093 blue
@@ -309,6 +337,7 @@ CONNECT pin-12.pin2 -> pin-40.hole1 STIFF
 CONNECT pin-43.axle1 -> conn-19.hole1 TURNS
 CONNECT pin-42.axle1 -> conn-19.hole1 TURNS
 WHY Finishes the link between the crank linkage and the arm pivot.
+
 STEP 30
 ADD axle3-7 24316 brown
 ADD wheel-1 55981 red
@@ -321,6 +350,7 @@ CONNECT axle3-8.axle2 -> wheel-2.hole1 TURNS
 CONNECT axle3-8.axle1 -> beam2x4-1.axlehole1 LOCKED
 CONNECT axle3-7.axle1 -> beam2x4-2.axlehole1 LOCKED
 WHY Fits the front wheels.
+
 STEP 31
 ADD pin-44 32556 tan
 ADD wheel-3 55981 red
@@ -333,6 +363,7 @@ CONNECT pin-45.pin2 -> wheel-4.hole1 TURNS
 CONNECT pin-45.pin1 -> beam11-1.hole5 TURNS
 CONNECT pin-44.pin1 -> beam11-2.hole5 TURNS
 WHY Fits the rear wheels, completing all four.
+
 STEP 32
 ADD pin-46 3749 tan
 ADD pin-47 43093 blue
@@ -348,6 +379,7 @@ CONNECT pin-49.pin1 -> beam2-4.hole1 STIFF
 CONNECT pin-47.axle1 -> beam13-1.hole13 TURNS
 CONNECT pin-46.axle1 -> beam13-2.hole13 TURNS
 WHY Builds the 4-bar linkage at the arm's far end that will keep the bucket level as the arm lifts.
+
 STEP 33
 ADD hole-1 18943 black
 CONNECT pin-49.axle1 -> hole-1.hole1 TURNS

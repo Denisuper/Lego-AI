@@ -11,19 +11,23 @@
 STEP 1
 ADD frame-1 32449 lightbluishgray
 WHY Starts the build with the rectangular case frame that every other part will mount to.
+
 STEP 2
 ADD housing-1 6573 darkbluishgray
 WHY Drops the first 24-16 tooth differential housing into the frame's open middle, the core the whole mechanism is built around.
+
 STEP 3
 ADD bevel-1 6589 tan
 ADD bevel-2 6589 tan
 ADD bevel-3 6589 tan
 ADD housing-2 6573 darkbluishgray
 WHY Delivers the three 12-tooth bevel gears that become the differential's output gears, and nests a second housing behind the first to thicken the gear cluster.
+
 STEP 4
 CONNECT housing-1.hole1? -> frame-1.axlehole1?
 CONNECT housing-2.hole1? -> frame-1.axlehole2?
 WHY Seats both housings against the frame's cross holes before the side beams pin them in place.
+
 STEP 5
 ADD pin-1 43093 blue
 ADD pin-2 43093 blue
@@ -38,6 +42,7 @@ CONNECT pin-2.axle1 -> beam7-2.hole1~ TURNS
 CONNECT conn-1.hole1? -> beam7-1.hole7?
 CONNECT conn-2.hole1? -> beam7-2.hole7?
 WHY Friction-pins two 7-hole beams along the frame's lower edge and caps their far ends with angle connectors, boxing in the housings.
+
 STEP 6
 ADD pin-3 43093 blue
 ADD pin-4 43093 blue
@@ -52,6 +57,7 @@ CONNECT tbeam-2.axlehole1? -> conn-2.axlehole1?
 CONNECT conn-3.hole1? -> tbeam-1.hole3?
 CONNECT conn-4.hole1? -> tbeam-2.hole3?
 WHY Pins an L-shaped beam onto each end connector and adds two more angle connectors, starting the frame that will carry the output shafts.
+
 STEP 7
 ADD pin-5 43093 blue
 ADD pin-6 43093 blue
@@ -64,6 +70,7 @@ CONNECT pin-6.pin1 -> conn-6.hole1 STIFF
 CONNECT conn-5.axlehole1? -> beam7-1.hole4?
 CONNECT conn-6.axlehole1? -> beam7-2.hole4?
 WHY Adds two 90-degree elbow connectors that will carry the output axles, plus two more friction-pinned connectors bracing the long beams.
+
 STEP 8
 ADD axle-1 4519 lightbluishgray
 ADD axle-2 4519 lightbluishgray
@@ -74,6 +81,7 @@ CONNECT axle-1.axle2 -> elbow-1.hole1 TURNS
 CONNECT axle-2.axle1 -> gear-2.axlehole1?
 CONNECT axle-2.axle2 -> elbow-2.hole1 TURNS
 WHY Locks a 16-tooth gear onto each of two new axles and passes them through the elbow connectors so they turn freely, meshing with the housing's outer teeth.
+
 STEP 9
 ADD pin-7 43093 blue
 ADD pin-8 43093 blue
@@ -85,6 +93,7 @@ CONNECT pin-8.pin1 -> conn-8.hole1 STIFF
 CONNECT conn-7.axlehole1? -> topbeam-1.hole1?
 CONNECT conn-8.axlehole1? -> topbeam-1.hole9?
 WHY Bridges a long 9-hole beam over the top of the model, anchored at both ends by friction-pinned connectors.
+
 STEP 10
 ADD pin-9 43093 blue
 ADD pin-10 43093 blue
@@ -95,6 +104,7 @@ CONNECT pin-10.pin1 -> conn-10.hole1 STIFF
 CONNECT conn-9.axlehole1? -> topbeam-1.hole5?
 CONNECT conn-10.axlehole1? -> tbeam-1.hole4?
 WHY Adds the last two angle connectors, friction-pinned in place and braced against the top beam and the L-shaped side beam.
+
 STEP 11
 ADD axle-3 4519 lightbluishgray
 ADD gear-3 3648 darkbluishgray
@@ -103,12 +113,14 @@ CONNECT axle-3.axle1 -> gear-3.axlehole1?
 CONNECT axle-3.axle2 -> elbow-3.hole1 TURNS
 CONNECT axle-3.axle3 -> bevel-3.axlehole1 LOCKED
 WHY Adds the third 16-tooth gear on its own axle, with the last bevel gear locked onto the axle's far end to feed the second housing.
+
 STEP 12
 ADD sleeve-1 18654 darkbluishgray
 ADD pin-11 43093 blue
 CONNECT sleeve-1.hole1 -> axle-1.axle3 TURNS
 CONNECT pin-11.pin1 -> beam7-1.hole4~ STIFF
 WHY Caps the end of the first gear axle with a round sleeve so it can't slide out sideways, and adds one more friction pin bracing the beam.
+
 STEP 13
 ADD axle-4 4519 lightbluishgray
 ADD axle-5 4519 lightbluishgray

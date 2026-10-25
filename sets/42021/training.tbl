@@ -15,18 +15,21 @@ ADD hub-pin-1 2780 black
 CONNECT hub-axle-1.axle1 -> hub-1.axlehole1 LOCKED
 CONNECT hub-pin-1.pin1 -> hub-1.hole1 STIFF
 WHY Starts the chassis spine with a cross connector, a locked axle through it and a friction pin for the next part to hang on.
+
 STEP 2
 ADD hub-2 32184 black
 ADD hub-bush-1 3713 lightgray
 CONNECT hub-pin-1.pin2 -> hub-2.hole1~ STIFF
 CONNECT hub-axle-1.axle2 -> hub-bush-1.axlehole1 LOCKED
 WHY Extends the spine with a second cross connector and caps the axle end with a bush so it can't slide out.
+
 STEP 3
 ADD hub-pin-2 2780 black
 ADD hub-conn2-1 60483 darkgray
 CONNECT hub-pin-2.pin1 -> hub-2.hole1~ STIFF
 CONNECT hub-conn2-1.hole1 -> hub-pin-2.pin2 STIFF
 WHY Adds a beam with a pin and axle hole off the spine, the start of the engine cowling frame.
+
 STEP 4
 ADD body-beam11-1 32525 black
 ADD body-pin-1 2780 black
@@ -36,6 +39,7 @@ CONNECT body-pin-2.pin1 -> hub-2.hole1~ STIFF
 CONNECT body-beam11-1.hole1 -> body-pin-1.pin2 STIFF
 CONNECT body-beam11-1.hole11 -> body-pin-2.pin2 STIFF
 WHY Lays an 11-hole beam across both cross connectors to start the left chassis rail.
+
 STEP 5
 ADD body-beam11-2 32525 black
 ADD body-pin-3 2780 black
@@ -45,22 +49,26 @@ CONNECT body-pin-4.pin1 -> hub-2.hole1~ STIFF
 CONNECT body-beam11-2.hole1 -> body-pin-3.pin2 STIFF
 CONNECT body-beam11-2.hole11 -> body-pin-4.pin2 STIFF
 WHY Mirrors the first rail on the other side of the spine so the chassis is symmetric.
+
 STEP 6
 ADD body-lshape-1 32140 black
 ADD body-lshape-2 32140 black
 WHY Hangs an L-shaped beam off each rail to start turning the frame upward toward the engine cover.
+
 STEP 7
 ADD body-axle-1 32073 lightgray
 ADD body-conn-1 32039 lightgray
 CONNECT body-axle-1.axle1 -> body-lshape-1.axlehole1 LOCKED
 CONNECT body-conn-1.axlehole1 -> body-axle-1.axle2 LOCKED
 WHY Runs a 5L axle between the two L-beams so they hold their angle and share a common cross-brace.
+
 STEP 8
 ADD body-axle-2 32073 lightgray
 ADD body-conn-2 32039 lightgray
 CONNECT body-axle-2.axle1 -> body-lshape-2.axlehole1 LOCKED
 CONNECT body-conn-2.axlehole1 -> body-axle-2.axle2 LOCKED
 WHY Mirrors the cross-brace on the other side, squaring up the upper frame.
+
 STEP 9
 ADD body-bent-1 32271 black
 ADD body-pin-5 2780 black
@@ -69,40 +77,48 @@ CONNECT body-pin-5.pin1 -> body-beam11-1.hole9~ STIFF
 CONNECT body-pin-6.pin1 -> body-beam11-2.hole9~ STIFF
 CONNECT body-bent-1.hole1 -> body-pin-5.pin2 STIFF
 WHY Adds a 7-3 bent beam at the rear of one rail to begin the kick-up toward the tail of the hood.
+
 STEP 10
 ADD body-bent-2 32271 black
 CONNECT body-bent-2.hole1 -> body-pin-6.pin2 STIFF
 WHY Mirrors the rear kick-up beam on the other rail.
+
 STEP 11
 ADD str-conn-1 92907 black
 ADD str-axle-1 4519 lightgray
 CONNECT str-axle-1.axle1 -> body-conn-1.axlehole2 LOCKED
 CONNECT str-conn-1.axlehole1 -> str-axle-1.axle2 LOCKED
 WHY Builds the start of the steering column off the front cross-brace.
+
 STEP 12
 ADD str-conn-2 92907 black
 ADD str-pin-1 2780 black
 CONNECT str-pin-1.pin1 -> str-conn-1.hole1~ STIFF
 CONNECT str-conn-2.hole1~ -> str-pin-1.pin2 STIFF
 WHY Stacks a second perpendicular split connector to carry the steering linkage higher.
+
 STEP 13
 ADD str-conn-4 32184 black
 WHY Stacks another cross connector on the steering tower for the handlebar linkage to pick up later.
+
 STEP 14
 ADD str-arm-1 15459 lightgray
 ADD str-arm-2 15459 lightgray
 ADD str-gear-1 15460 darkgray
 WHY Builds the steering gear with a towball steering arm on each side, the core of the Ackermann linkage.
+
 STEP 15
 ADD str-ball-1 2736 lightgray
 ADD str-ball-2 2736 lightgray
 CONNECT str-ball-1.axle1 -> str-conn-1.axlehole2~ LOCKED
 CONNECT str-ball-2.axle1 -> str-conn-2.axlehole2~ LOCKED
 WHY Adds the two towballs that the steering arms will clip onto, letting the skis swivel.
+
 STEP 16
 ADD str-conn-3 15461 black
 CONNECT str-conn-3.hole1 -> str-axle-1.axle3~ TURNS
 WHY Adds a 3L pin connector on the steering column so the handlebar mast can be plugged in above it.
+
 STEP 17
 GROUP gearbox
 ADD gb-frame-1 32526 white
@@ -127,16 +143,17 @@ CONNECT gb-axlepin-1.axle1 -> gb-gear-1.hole1~ TURNS
 CONNECT gb-axlepin-2.axle1 -> gb-gear-3.hole1~ TURNS
 MESH gb-gear-1.teeth gb-gear-2.teeth
 MESH gb-gear-3.teeth gb-gear-4.teeth
-WHY Builds the bevel-gear track sprocket shafts as their own unit before dropping them into the chassis.
 END gearbox
 ATTACH gearbox
-WHY Attaches the finished sprocket-shaft unit under the chassis rails where the track will wrap around it.
+WHY Builds the bevel-gear track sprocket shafts as their own unit before dropping them into the chassis; Attaches the finished sprocket-shaft unit under the chassis rails where the track will wrap around it.
+
 STEP 18
 ADD trk-beam11-1 32525 black
 ADD trk-pin-1 2780 black
 CONNECT trk-pin-1.pin1 -> body-beam11-1.hole11~ STIFF
 CONNECT trk-beam11-1.hole1 -> trk-pin-1.pin2 STIFF
 WHY Extends the rail rearward with another 11-hole beam to carry the length of the track run.
+
 STEP 19
 ADD trk-beam7-1 32524 lime
 ADD trk-beam5-1 32316 black
@@ -144,30 +161,36 @@ ADD trk-pin-2 2780 black
 CONNECT trk-pin-2.pin1 -> trk-beam11-1.hole7~ STIFF
 CONNECT trk-beam7-1.hole1 -> trk-pin-2.pin2 STIFF
 WHY Adds the lime side panel beams that will show through the track guard.
+
 STEP 20
 ADD trk-pinconn-1 15461 black
 CONNECT trk-pinconn-1.pin1 -> trk-beam5-1.hole5~ STIFF
 WHY Adds a 3L pin connector at the end of the side panel for the rear mudguard to clip onto later.
+
 STEP 21
 ADD trk-axlepin-1 32062 red
 ADD trk-axlepin-2 32062 red
 WHY Extends both sprocket axles out to the rear idler position with notched red axles.
+
 STEP 22
 ADD trk-conn-1 92907 black
 ADD trk-conn-2 92907 black
 CONNECT trk-conn-1.axlehole1 -> trk-axlepin-1.axle2~ LOCKED
 CONNECT trk-conn-2.axlehole1 -> trk-axlepin-2.axle2~ LOCKED
 WHY Caps the rear idler axles with perpendicular split connectors so the track loop has somewhere to turn.
+
 STEP 23
 ADD body-panel-1 11946 black
 ADD body-panel-2 11947 black
 WHY Applies the left and right 5L side-fairing panels over the chassis rails, carrying stickers 5 and 9.
+
 STEP 24
 ADD body-panel-3 11946 black
 ADD body-panel-4 11947 black
 ADD body-link-1 32005a black
 CONNECT body-link-1.pin1 -> trk-beam7-1.hole3~ STIFF
 WHY Continues the fairing panels rearward and adds a short link track guide, carrying stickers 3 and 6.
+
 STEP 25
 ADD trk-tread-1 15379 black
 ADD trk-tread-2 15379 black
@@ -190,6 +213,7 @@ ADD trk-tread-18 15379 black
 ADD trk-tread-19 15379 black
 ADD trk-tread-20 15379 black
 WHY Wraps the first run of beveled tread links around the sprocket and idler; the tread tension holds the loop together without a separate join.
+
 STEP 26
 ADD trk-tread-21 15379 black
 ADD trk-tread-22 15379 black
@@ -214,6 +238,7 @@ ADD trk-tread-40 15379 black
 ADD trk-tread-41 15379 black
 ADD body-shock-1 76138 lightgray
 WHY Finishes the first track loop and fits a soft-spring shock absorber between the rail and the sprocket frame to cushion the ride.
+
 STEP 27
 GROUP ski-left
 ADD skiL-angle-1 32016 black
@@ -221,11 +246,11 @@ ADD skiL-pin-1 2780 black
 ADD skiL-ski-1 14720 lightgray
 CONNECT skiL-pin-1.pin1 -> skiL-angle-1.hole1 STIFF
 CONNECT skiL-ski-1.hole1~ -> skiL-pin-1.pin2 STIFF
-WHY Builds the left ski's angled mounting arm so the ski can pivot under spring load.
 END ski-left
 ATTACH ski-left
 CONNECT skiL-angle-1.axlehole1~ -> str-ball-1.axle1 LOCKED
-WHY Fits the left ski arm onto the steering towball so turning the handlebars steers the ski.
+WHY Builds the left ski's angled mounting arm so the ski can pivot under spring load; Fits the left ski arm onto the steering towball so turning the handlebars steers the ski.
+
 STEP 28
 GROUP ski-right
 ADD skiR-angle-1 32016 black
@@ -233,11 +258,11 @@ ADD skiR-pin-1 2780 black
 ADD skiR-ski-1 60483 darkgray
 CONNECT skiR-pin-1.pin1 -> skiR-angle-1.hole1 STIFF
 CONNECT skiR-ski-1.hole1~ -> skiR-pin-1.pin2 STIFF
-WHY Mirrors the ski arm for the right side with a beam forming the ski's tip mount.
 END ski-right
 ATTACH ski-right
 CONNECT skiR-angle-1.axlehole1~ -> str-ball-2.axle1 LOCKED
-WHY Fits the right ski arm onto its towball so both skis steer together.
+WHY Mirrors the ski arm for the right side with a beam forming the ski's tip mount; Fits the right ski arm onto its towball so both skis steer together.
+
 STEP 29
 ADD trim-link-1 32005a black
 ADD trim-beam13-1 41239 lime

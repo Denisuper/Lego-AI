@@ -11,6 +11,7 @@
 STEP 1
 ADD diff-1 6573 darkgray
 WHY Starts the build with the 24/16-tooth differential housing that the whole mechanism sits in.
+
 STEP 2
 ADD bevel-1 6589 tan
 ADD bevel-2 6589 tan
@@ -19,6 +20,7 @@ CONNECT bevel-1.axlehole1 -> diff-1.bar1? LOCKED
 CONNECT bevel-2.axlehole1 -> diff-1.bar1? LOCKED
 CONNECT bevel-3.axlehole1 -> diff-1.bar1? LOCKED
 WHY Slots the three small bevel gears onto the housing's internal cross bar so they can spin as the differential's pinions.
+
 STEP 3
 ADD frame-1 64179 lightgray
 ADD axle-1 4519 lightgray
@@ -26,14 +28,17 @@ ADD axle-2 4519 lightgray
 CONNECT axle-1.axle1 -> diff-1.hole1 TURNS
 CONNECT axle-2.axle1 -> diff-1.hole2 TURNS
 WHY Fits a short axle stub into each side of the housing, then wraps the open H-shaped frame around the whole assembly.
+
 STEP 4
 ADD axle-3 4519 lightgray
 CONNECT axle-3.axle1 -> frame-1.hole10~ TURNS
 WHY Adds a bearing axle through the frame's side hole, ready to carry the output gear.
+
 STEP 5
 ADD bevel-4 6589 tan
 CONNECT bevel-4.axlehole1 -> axle-3.axle2 LOCKED
 WHY Locks the fourth bevel gear onto the bearing axle so it meshes with the housing's outer teeth as the differential's output.
+
 STEP 6
 ADD connector-1 6553 lightgray
 CONNECT connector-1.axlehole1 -> axle-3.axle3 LOCKED

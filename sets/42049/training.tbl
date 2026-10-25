@@ -1,12 +1,12 @@
 # You design and build LEGO Technic models one step at a time, in a build language.
-# 
+#
 # For each step you write:
 # ADD name partnumber color
 # CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
 # Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
 # WHY one plain sentence: what this step builds and what it is for.
 # A point ending in ~ is an estimate; ? means not known.
-# 
+#
 # Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
 ADD p64178-1 64178 lightgray
@@ -19,6 +19,7 @@ CONNECT p6558-2.pin1 -> p64178-1.hole27 STIFF
 CONNECT p2780-1.pin1 -> p64178-1.hole18 STIFF
 CONNECT p2780-2.pin2 -> p64178-1.hole19 STIFF
 WHY Starts the rear chassis with a rigid grey frame and two matching pairs of outward mounting pins.
+
 STEP 2
 ADD p55013-1 55013 darkgray
 ADD p18575-1 18575 tan
@@ -26,10 +27,12 @@ ADD p6589-1 6589 tan
 CONNECT p55013-1.axle7 -> p18575-1.axlehole1 LOCKED
 CONNECT p55013-1.axle6 -> p6589-1.axlehole1 LOCKED
 WHY Puts the twenty-tooth gear and smaller bevel gear on the same stopped shaft so they turn together.
+
 STEP 3
 CONNECT p55013-1.axle2 -> p64178-1.hole7 TURNS
 CONNECT p55013-1.axle8 -> p64178-1.hole22 TURNS
 WHY Inserts the geared shaft through the frame's central round bearings so both gears remain free to rotate.
+
 STEP 4
 GROUP rear-upright-bearings
 ADD p43093-1 43093 blue
@@ -53,6 +56,7 @@ ATTACH rear-upright-bearings
 CONNECT p43093-1.pin1 -> p64178-1.hole6 STIFF
 CONNECT p43093-2.pin1 -> p64178-1.hole8 STIFF
 WHY Builds and mounts the paired upright bearings with doubled thin cross braces above the chassis frame.
+
 STEP 5
 ADD p4519-1 4519 lightgray
 ADD p18575-2 18575 tan
@@ -63,12 +67,14 @@ CONNECT p4519-1.axle1 -> p18575-2.axlehole1 LOCKED
 MESH p6589-1.teeth p18575-2.teeth
 RATIO p6589-1 p18575-2 12/20
 WHY Adds the transverse twenty-tooth output gear, turning the bevel drive through ninety degrees toward the wheel axle.
+
 STEP 6
 ADD p3749-1 3749 tan
 ADD p59443-2 59443 darkgray
 CONNECT p3749-1.axle1 -> p59443-2.axlehole1 LOCKED
 CONNECT p3749-1.pin1 -> p64178-1.hole14 TURNS
 WHY Fits the opposite axle joiner on a frictionless pin so that side can turn freely in the frame.
+
 STEP 7
 GROUP rear-wheel-carriers
 ADD p32062-1 32062 red
@@ -104,6 +110,7 @@ CONNECT p32062-2.axle1 -> p64178-1.hole17 TURNS
 CONNECT p32062-3.axle1 -> p64178-1.hole12 TURNS
 CONNECT p32062-4.axle1 -> p64178-1.hole16 TURNS
 WHY Mounts the two wheel carriers on paired yellow arms that pivot in the frame while holding the carriers parallel.
+
 STEP 8
 ADD p32449-5 32449 yellow
 ADD p32449-6 32449 yellow
@@ -118,6 +125,7 @@ CONNECT p32062-6.axle1 -> p32449-7.axlehole2 LOCKED
 CONNECT p32062-7.axle1 -> p32449-6.axlehole1 LOCKED
 CONNECT p32062-8.axle1 -> p32449-5.axlehole1 LOCKED
 WHY Doubles all four yellow carrier arms above the frame without locking their round chassis pivots.
+
 STEP 9
 ADD p3705-1 3705 black
 ADD p3705-2 3705 black
@@ -130,24 +138,28 @@ CONNECT p3705-2.axle4 -> p59443-2.axlehole2 LOCKED
 CONNECT p3705-2.axle3 -> p32184-3.hole1 TURNS
 CONNECT p3705-2.axle2 -> p32123b-2.axlehole1 LOCKED
 WHY Inserts the two wheel shafts through the carriers into the inner joiners and retains them with half bushes.
+
 STEP 10
 GROUP rear-transfer-drive
 ADD p32184-5 32184 black
 ADD p4519-2 4519 lightgray
 CONNECT p4519-2.axle1 -> p32184-5.axlehole2 LOCKED
 WHY Starts the transfer-drive support with a short cross axle through its lower bearing lug.
+
 STEP 11
 ADD p6536-1 6536 yellow
 ADD p32034-1 32034 black
 CONNECT p4519-2.axle2 -> p6536-1.axlehole1 LOCKED
 CONNECT p4519-2.axle3 -> p32034-1.axlehole1 LOCKED
 WHY Extends the lower cross member with a yellow perpendicular bearing and a black inline connector.
+
 STEP 12
 ADD p4519-3 4519 lightgray
 ADD p32039-1 32039 yellow
 CONNECT p4519-3.axle1 -> p32034-1.axlehole2 LOCKED
 CONNECT p4519-3.axle2 -> p32039-1.axlehole1 LOCKED
 WHY Adds the opposite cross axle and its yellow angled mounting connector.
+
 STEP 13
 ADD p4519-4 4519 lightgray
 ADD p32073-1 32073 lightgray
@@ -160,6 +172,7 @@ CONNECT p4519-4.axle3 -> p32034-2.axlehole1 LOCKED
 CONNECT p32073-1.axle5 -> p32034-2.axlehole2 LOCKED
 CONNECT p32073-1.axle4 -> p6536-3.axlehole1 LOCKED
 WHY Builds the matching upper cross member with yellow bearings aligned above the lower pair.
+
 STEP 14
 ADD p32184-6 32184 black
 ADD p43093-3 43093 blue
@@ -167,12 +180,14 @@ CONNECT p4519-3.axle3 -> p32184-6.axlehole2 LOCKED
 CONNECT p32073-1.axle3 -> p32184-6.axlehole1 LOCKED
 CONNECT p43093-3.axle1 -> p32039-1.axlehole2 LOCKED
 WHY Closes the transfer-drive frame with its second upright and adds the blue locating pin.
+
 STEP 15
 ADD p55013-2 55013 darkgray
 ADD p18575-3 18575 tan
 CONNECT p55013-2.axle8 -> p6536-1.hole1 TURNS
 CONNECT p55013-2.axle7 -> p18575-3.axlehole1 LOCKED
 WHY Inserts the stopped transfer shaft into a round yellow bearing and slides its twenty-tooth gear into position.
+
 STEP 16
 ADD p32526-1 32526 yellow
 ADD p44294-1 44294 yellow
@@ -187,12 +202,14 @@ CONNECT p55013-2.axle6 -> p32526-1.hole6 TURNS
 MESH p18575-3.teeth p94925-1.teeth
 RATIO p18575-3 p94925-1 20/16
 WHY Adds the yellow support and the sixteen-tooth cross-shaft gear while keeping both shafts free in round bearings.
+
 STEP 17
 ADD p3713-2 3713 red
 ADD p3713-3 3713 red
 CONNECT p44294-1.axle5 -> p3713-2.axlehole1 LOCKED
 CONNECT p32073-1.axle2 -> p3713-3.axlehole1 LOCKED
 WHY Retains the projecting yellow and grey cross axles with red bushes.
+
 STEP 18
 ADD p3713-4 3713 red
 ADD p62462-1 62462 lightgray
@@ -200,10 +217,12 @@ CONNECT p55013-2.axle4 -> p62462-1.hole1 TURNS
 CONNECT p55013-2.axle5 -> p62462-1.hole1 TURNS
 CONNECT p55013-2.axle3 -> p3713-4.axlehole1 LOCKED
 WHY Slides a long round sleeve and a red stop bush onto the transfer shaft to preserve the gear spacing.
+
 STEP 19
 ADD p18575-4 18575 tan
 CONNECT p55013-2.axle2 -> p18575-4.axlehole1 LOCKED
 WHY Adds the outer twenty-tooth gear on the same transfer shaft beyond the sleeve and retaining bush.
+
 STEP 20
 ADD p3749-2 3749 tan
 ADD p59443-3 59443 darkgray
@@ -212,6 +231,7 @@ CONNECT p3749-2.axle1 -> p59443-3.axlehole1 LOCKED
 CONNECT p3706-1.axle6 -> p59443-3.axlehole2 LOCKED
 CONNECT p3749-2.pin1 -> p6536-2.hole1 TURNS
 WHY Builds the second long transfer shaft from a red axle and a joiner, with a frictionless pin bearing at its inner end.
+
 STEP 21
 ADD p43093-4 43093 blue
 ADD p43093-5 43093 blue
@@ -225,16 +245,19 @@ CONNECT p2780-3.pin1 -> p62462-2.hole1 STIFF
 CONNECT p43093-4.pin1 -> p6536-3.hole1 STIFF
 END
 WHY Adds the parallel pin-and-sleeve brace above the red shaft to steady the transfer-drive assembly.
+
 STEP 22
 ATTACH rear-transfer-drive
 CONNECT p18651-1.pin1 -> p32526-1.hole2 STIFF
 CONNECT p18651-2.pin1 -> p32526-1.hole4 STIFF
 WHY Mounts the completed transfer-drive support onto the two black posts above the rear chassis.
+
 STEP 23
 ADD p62462-3 62462 lightgray
 CONNECT p3706-1.axle4 -> p62462-3.hole1 TURNS
 CONNECT p3706-1.axle5 -> p62462-3.hole1 TURNS
 WHY Slides a round sleeve over the exposed red transfer shaft before the next cross member is fitted.
+
 STEP 24
 GROUP steering-cross-member
 ADD p32525-1 32525 yellow
@@ -247,6 +270,7 @@ CONNECT p2780-5.pin1 -> p32525-1.hole5 STIFF
 CONNECT p2780-6.pin1 -> p32525-1.hole7 STIFF
 CONNECT p2780-7.pin1 -> p32525-1.hole10 STIFF
 WHY Places four mounting pins in an eleven-hole yellow cross member with the middle pair two holes apart.
+
 STEP 25
 ADD p60484-1 60484 yellow
 ADD p4274-1 4274 lightgray
@@ -254,12 +278,14 @@ CONNECT p4274-1.pin1 -> p60484-1.hole2 TURNS
 CONNECT p2780-5.pin2 -> p60484-1.hole1 STIFF
 CONNECT p2780-6.pin2 -> p60484-1.hole5 STIFF
 WHY Fits the T-shaped center support behind the cross member with a half pin at the end of its stem.
+
 STEP 26
 ADD p60483-1 60483 black
 ADD p60483-2 60483 black
 CONNECT p2780-7.pin2 -> p60483-1.hole1 STIFF
 CONNECT p2780-4.pin2 -> p60483-2.hole1 STIFF
 WHY Adds black axle-bearing lugs near both ends of the cross member.
+
 STEP 27
 ADD p3705-3 3705 black
 ADD p3705-4 3705 black
@@ -276,11 +302,13 @@ CONNECT p3705-4.axle4 -> p32039-3.axlehole2 LOCKED
 CONNECT p3705-4.axle3 -> p32525-1.hole11 TURNS
 CONNECT p3705-4.axle2 -> p60483-1.axlehole1 LOCKED
 WHY Adds matching pivot shafts and yellow connectors at both ends, each carrying an outward blue pin.
+
 STEP 28
 ADD p32039-4 32039 yellow
 ADD p24931-1 24931 anycolor
 CONNECT p3705-4.axle1 -> p32039-4.axlehole2 LOCKED
 WHY Adds the rear-facing yellow connector and applies the control-symbol sticker to the cross member.
+
 STEP 29
 GROUP steering-knob-drive
 ADD p87408-1 87408 black
@@ -308,18 +336,21 @@ CONNECT p60485-1.axle9 -> p59443-5.axlehole1 LOCKED
 CONNECT p32002-1.pin2 -> p60484-1.hole4 STIFF
 END
 WHY Builds the roof knob's right-angle drive and mounts its long shaft through the yellow center support.
+
 STEP 30
 ATTACH steering-cross-member
 CONNECT p3706-1.axle3 -> p32525-1.hole4 TURNS
 CONNECT p2780-3.pin2 -> p32525-1.hole8 STIFF
 CONNECT p60485-1.axle4 -> p32034-2.hole1 TURNS
 WHY Fits the completed steering cross member across the transfer shafts without locking their round bearings.
+
 STEP 31
 ADD p32270-3 32270 black
 CONNECT p3706-1.axle2 -> p32270-3.axlehole1 LOCKED
 MESH p18575-4.teeth p32270-3.teeth
 RATIO p18575-4 p32270-3 20/12
 WHY Adds the twelve-tooth gear to the red shaft and meshes it with the transfer shaft's outer twenty-tooth gear.
+
 STEP 32
 GROUP engine
 ADD p32184-7 32184 black
@@ -328,6 +359,7 @@ ADD p32073-2 32073 lightgray
 CONNECT p4519-5.axle2 -> p32184-7.axlehole1 LOCKED
 CONNECT p32073-2.axle3 -> p32184-7.axlehole2 LOCKED
 WHY Starts the engine support with a centered short axle above a longer lower cross axle.
+
 STEP 33
 ADD p32039-5 32039 yellow
 ADD p32039-6 32039 yellow
@@ -342,6 +374,7 @@ CONNECT p32073-2.axle2 -> p6536-4.axlehole1 LOCKED
 CONNECT p32073-2.axle4 -> p6536-6.axlehole1 LOCKED
 CONNECT p32073-2.axle5 -> p6536-7.axlehole1 LOCKED
 WHY Adds the yellow engine mounting lugs while keeping their round pin holes available for the cylinder block.
+
 STEP 34
 ADD p2850b-1 2850b lightgray
 ADD p2850b-2 2850b lightgray
@@ -362,6 +395,7 @@ CONNECT p2780-13.pin2 -> p2850b-2.hole1 STIFF
 CONNECT p2780-8.pin2 -> p6536-4.hole1 STIFF
 CONNECT p2780-9.pin2 -> p6536-6.hole1 STIFF
 WHY Joins the two cylinder blocks end to end and pins their first end onto the yellow engine supports.
+
 STEP 35
 GROUP engine-crankshaft
 ADD p2853-1 2853 yellow
@@ -370,12 +404,14 @@ ADD p2854-1 2854 tan
 CONNECT p2853-1.axle1 -> p2852-1.hole1 TURNS
 CONNECT p2853-1.axle2 -> p2854-1.axlehole1 LOCKED
 WHY Places the first connecting rod on an offset crank pin and locks the center crank section onto its end.
+
 STEP 36
 ADD p2853-2 2853 yellow
 ADD p2852-2 2852 lightgray
 CONNECT p2853-2.axle1 -> p2852-2.hole1 TURNS
 CONNECT p2853-2.axle2 -> p2854-1.axlehole2 LOCKED
 WHY Adds the opposite crank end and second connecting rod with its offset facing the other way.
+
 STEP 37
 ADD p3705-5 3705 black
 ADD p2851-1 2851 yellow
@@ -385,11 +421,13 @@ CONNECT p2852-1.ball? -> p2851-1.socket? TURNS
 CONNECT p2852-2.ball? -> p2851-2.socket? TURNS
 END
 WHY Extends the crankshaft and snaps a piston onto each connecting rod so crank rotation can move both pistons.
+
 STEP 38
 ATTACH engine-crankshaft
 CONNECT p2851-1.piston? -> p2850b-1.bore? TURNS
 CONNECT p2851-2.piston? -> p2850b-2.bore? TURNS
 WHY Seats both pistons in their cylinders with the offset crankshaft running freely below the block.
+
 STEP 39
 ADD p59426-1 59426 darkgray
 ADD p62462-4 62462 lightgray
@@ -399,6 +437,7 @@ CONNECT p59426-1.axle4 -> p32270-4.axlehole1 LOCKED
 CONNECT p59426-1.axle5 -> p2853-1.axlehole1 LOCKED
 CONNECT p59426-1.pin1 -> p32184-7.hole1 TURNS
 WHY Adds the geared crankshaft input through the support's round bearing with a sleeve controlling its spacing.
+
 STEP 40
 ADD p32184-8 32184 black
 ADD p32073-3 32073 lightgray
@@ -429,6 +468,7 @@ CONNECT p2780-12.pin1 -> p6536-8.hole1 STIFF
 CONNECT p2780-13.pin1 -> p6536-9.hole1 STIFF
 CONNECT p3705-5.axle2 -> p32184-8.hole1 TURNS
 WHY Closes the far end of the engine with a matching cross support that holds the crankshaft in a round bearing.
+
 STEP 41
 ADD p14720-1 14720 lightgray
 ADD p2780-16 2780 black
@@ -441,6 +481,7 @@ CONNECT p2780-17.pin1 -> p6536-7.hole1 STIFF
 CONNECT p3705-5.axle4 -> p41530-1.axlehole1? LOCKED
 END
 WHY Braces the engine's input end with the grey offset beam and locks the cooling fan onto the crankshaft's other end.
+
 STEP 42
 ATTACH engine
 CONNECT p59426-1.axle1 -> p6632-1.hole1 TURNS
@@ -450,6 +491,7 @@ CONNECT p3706-1.axle1 -> p14720-1.hole3 TURNS
 MESH p18575-1.teeth p32270-4.teeth
 RATIO p18575-1 p32270-4 20/12
 WHY Installs the engine above the rear chassis and meshes its crankshaft gear with the wheel-driven twenty-tooth gear.
+
 STEP 43
 ADD p32062-9 32062 red
 ADD p32062-10 32062 red
@@ -458,24 +500,28 @@ CONNECT p32062-9.axle2 -> p32039-5.axlehole1 LOCKED
 CONNECT p32062-10.axle1 -> p64178-1.hole20 TURNS
 CONNECT p32062-10.axle2 -> p32039-6.axlehole1 LOCKED
 WHY Secures the engine's yellow mounting connectors down to the rear frame with two short red axles.
+
 STEP 44
 GROUP center-chassis-bracket
 ADD p32073-5 32073 lightgray
 ADD p6536-10 6536 yellow
 CONNECT p32073-5.axle3 -> p6536-10.axlehole1 LOCKED
 WHY Centers the yellow perpendicular bearing on a five-length cross axle to start the forward chassis bracket.
+
 STEP 45
 ADD p60483-7 60483 black
 ADD p60483-8 60483 black
 CONNECT p32073-5.axle2 -> p60483-7.axlehole1 LOCKED
 CONNECT p32073-5.axle4 -> p60483-8.axlehole1 LOCKED
 WHY Adds matching black lugs on either side of the central yellow bearing.
+
 STEP 46
 ADD p6558-3 6558 blue
 ADD p6558-4 6558 blue
 CONNECT p6558-3.pin1 -> p60483-7.hole1 STIFF
 CONNECT p6558-4.pin1 -> p60483-8.hole1 STIFF
 WHY Inserts two outward long friction pins into the black lugs for the bracket's side beams.
+
 STEP 47
 ADD p32526-2 32526 yellow
 ADD p32526-3 32526 yellow
@@ -484,6 +530,7 @@ CONNECT p6558-4.pin2 -> p32526-3.hole5 STIFF
 CONNECT p32073-5.axle1 -> p32526-2.hole4 TURNS
 CONNECT p32073-5.axle5 -> p32526-3.hole4 TURNS
 WHY Fits the two tall L-shaped sides over the long pins and the ends of the cross axle.
+
 STEP 48
 ADD p6558-5 6558 blue
 ADD p2780-18 2780 black
@@ -494,6 +541,7 @@ CONNECT p2780-18.pin2 -> p32526-2.hole3 STIFF
 CONNECT p2780-19.pin1 -> p32526-3.hole3 STIFF
 CONNECT p2780-20.pin1 -> p32526-3.hole1 STIFF
 WHY Adds the two-hole-spaced mounting pins that will fix the yellow feet to the bracket sides.
+
 STEP 49
 ADD p32526-4 32526 yellow
 ADD p32526-5 32526 yellow
@@ -502,6 +550,7 @@ CONNECT p2780-18.pin1 -> p32526-4.hole7 STIFF
 CONNECT p2780-19.pin2 -> p32526-5.hole7 STIFF
 CONNECT p2780-20.pin2 -> p32526-5.hole5 STIFF
 WHY Attaches the two L-shaped feet with their mounting holes two spaces apart to match the pins.
+
 STEP 50
 ADD p32054-1 32054 black
 ADD p32054-2 32054 black
@@ -513,16 +562,19 @@ CONNECT p32054-3.pin1 -> p32526-5.hole1 STIFF
 CONNECT p32054-4.pin1 -> p32526-5.hole4 STIFF
 END
 WHY Loads four long stop-bush pins into the feet so the bracket can be pushed into the chassis frame.
+
 STEP 51
 ATTACH center-chassis-bracket
 CONNECT p60485-1.axle3 -> p6536-10.hole1 TURNS
 WHY Slides the bracket into position around the forward end of the long steering shaft.
+
 STEP 52
 CONNECT p32054-1.pin2 -> p64178-1.hole2 STIFF
 CONNECT p32054-2.pin2 -> p64178-1.hole11 STIFF
 CONNECT p32054-3.pin2 -> p64178-1.hole10 STIFF
 CONNECT p32054-4.pin2 -> p64178-1.hole1 STIFF
 WHY Pushes all four stop-bush pins fully into the frame to lock the bracket feet in place.
+
 STEP 53
 ADD p40490-1 40490 yellow
 ADD p2780-21 2780 black
@@ -547,6 +599,7 @@ CONNECT p3705-7.axle2 -> p32526-2.hole7 TURNS
 CONNECT p44294-1.axle6 -> p40490-1.hole5 TURNS
 CONNECT p44294-1.axle7 -> p59443-6.axlehole2 LOCKED
 WHY Adds the forward crossbeam with two ball pins, downward mounting axles, and the central drive-shaft joiner.
+
 STEP 54
 ADD p32062-11 32062 red
 ADD p61903-1 61903 lightgray
@@ -555,6 +608,7 @@ CONNECT p32062-11.axle1 -> p59443-6.axlehole1 LOCKED
 CONNECT p32062-11.axle2 -> p61903-1.axlehole1 LOCKED
 CONNECT p32073-6.axle5 -> p61903-1.axlehole2 LOCKED
 WHY Extends the drive through a universal joint so torque can pass forward when the chassis articulates.
+
 STEP 55
 ADD p32034-3 32034 black
 ADD p32270-5 32270 black
@@ -563,6 +617,7 @@ CONNECT p3705-7.axle1 -> p32034-3.axlehole2 LOCKED
 CONNECT p60485-1.axle1 -> p32034-3.hole1 TURNS
 CONNECT p60485-1.axle2 -> p32270-5.axlehole1 LOCKED
 WHY Braces the downward cross axles and adds the forward twelve-tooth steering gear on the long shaft.
+
 STEP 56
 GROUP front-chassis
 ADD p32056-1 32056 lightgray
@@ -574,11 +629,13 @@ CONNECT p18651-3.axle2 -> p32056-2.axlehole2 LOCKED
 CONNECT p18651-4.axle2 -> p32056-1.axlehole3 LOCKED
 CONNECT p18651-4.axle2 -> p32056-2.axlehole3 LOCKED
 WHY Starts the front chassis with paired thin L-shaped plates locked together on two long axle pins.
+
 STEP 57
 ADD p87083-2 87083 darkgray
 CONNECT p87083-2.axle4 -> p32056-1.axlehole1 LOCKED
 CONNECT p87083-2.axle4 -> p32056-2.axlehole1 LOCKED
 WHY Inserts a stopped axle through the corner cross holes of the doubled front support.
+
 STEP 58
 ADD p32034-4 32034 black
 ADD p32034-5 32034 black
@@ -587,6 +644,7 @@ CONNECT p18651-3.axle1 -> p32034-5.axlehole2 LOCKED
 CONNECT p18651-4.axle1 -> p32034-4.axlehole2 LOCKED
 CONNECT p4274-2.pin1 -> p32034-4.hole1 TURNS
 WHY Adds the two transverse inline connectors and a half pin for the later central mounting point.
+
 STEP 59
 ADD p32056-3 32056 lightgray
 ADD p32056-4 32056 lightgray
@@ -602,6 +660,7 @@ CONNECT p18651-6.axle2 -> p32056-4.axlehole2 LOCKED
 CONNECT p87083-4.axle4 -> p32056-3.axlehole1 LOCKED
 CONNECT p87083-4.axle4 -> p32056-4.axlehole1 LOCKED
 WHY Closes the other side of the front support with doubled grey plates and a matching stopped corner axle.
+
 STEP 60
 ADD p40490-2 40490 yellow
 ADD p3713-8 3713 red
@@ -609,6 +668,7 @@ CONNECT p87083-2.axle3 -> p40490-2.hole1 TURNS
 CONNECT p18651-4.pin1 -> p40490-2.hole3 STIFF
 CONNECT p87083-2.axle2 -> p3713-8.axlehole1 LOCKED
 WHY Mounts the first long yellow front-chassis rail on its stopped axle and black pin, then adds a red retaining bush.
+
 STEP 61
 ADD p32526-6 32526 yellow
 ADD p6558-6 6558 blue
@@ -618,6 +678,7 @@ CONNECT p32054-5.pin1 -> p32526-6.hole6 STIFF
 CONNECT p6558-6.pin2 -> p40490-2.hole8 STIFF
 CONNECT p32054-5.pin2 -> p40490-2.hole9 STIFF
 WHY Fixes the first upright lift-arm support to the end of the yellow rail with two adjacent mounting pins.
+
 STEP 62
 ADD p3673-1 3673 lightgray
 ADD p3673-2 3673 lightgray
@@ -626,12 +687,14 @@ CONNECT p3673-1.pin1 -> p32526-6.hole1 TURNS
 CONNECT p3673-2.pin1 -> p32526-6.hole5 TURNS
 CONNECT p2780-23.pin1 -> p32526-6.hole3 STIFF
 WHY Gives the upright two frictionless lift-link pivots with a fixed center pin for the side rail.
+
 STEP 63
 ADD p4519-6 4519 lightgray
 ADD p32054-6 32054 black
 CONNECT p4519-6.axle3 -> p32054-5.axlehole1 LOCKED
 CONNECT p4519-6.axle1 -> p32054-6.axlehole1 LOCKED
 WHY Links the two opposite stop-bush pins with a short transverse axle through their cross holes.
+
 STEP 64
 ADD p32523-1 32523 black
 ADD p2780-24 2780 black
@@ -646,12 +709,14 @@ CONNECT p87083-3.axle3 -> p32523-1.hole2 TURNS
 CONNECT p87083-3.axle2 -> p15100-1.hole1 TURNS
 CONNECT p87083-3.axle2 -> p32123b-3.axlehole1 LOCKED
 WHY Adds the first front wheel shaft through the black bearing beam with a free connector lug and a retaining half bush.
+
 STEP 65
 GROUP steering-turntable
 ADD p18938-1 18938 black
 ADD p18939-1 18939 lightgray
 CONNECT p18938-1.race? -> p18939-1.race? TURNS
 WHY Snaps the two turntable halves together so the front chassis can steer about the central bearing.
+
 STEP 66
 ADD p6558-7 6558 blue
 ADD p6558-8 6558 blue
@@ -669,12 +734,14 @@ CONNECT p6558-8.pin2 -> p18939-1.hole3 STIFF
 CONNECT p6558-9.pin2 -> p18939-1.hole6 STIFF
 CONNECT p6558-10.pin2 -> p18939-1.hole4 STIFF
 WHY Fits the grey turntable base with two yellow mounting beams, a central spacer, and four outward long pins.
+
 STEP 67
 CONNECT p6558-7.pin3 -> p32316-2.hole2 STIFF
 CONNECT p6558-8.pin3 -> p32316-2.hole4 STIFF
 CONNECT p6558-9.pin3 -> p32316-1.hole4 STIFF
 CONNECT p6558-10.pin3 -> p32316-1.hole2 STIFF
 WHY Pushes the four long pins through the yellow beams with each pair two holes apart.
+
 STEP 68
 ADD p41239-1 41239 yellow
 ADD p2780-25 2780 black
@@ -686,6 +753,7 @@ CONNECT p2780-27.pin2 -> p41239-1.hole7 STIFF
 CONNECT p2780-25.pin2 -> p18938-1.hole1 STIFF
 CONNECT p2780-26.pin2 -> p18938-1.hole3 STIFF
 WHY Pins the first thirteen-hole front rail to the black rotating half of the turntable.
+
 STEP 69
 ADD p2780-28 2780 black
 ADD p2780-29 2780 black
@@ -693,13 +761,16 @@ CONNECT p2780-28.pin1 -> p18938-1.hole4 STIFF
 CONNECT p2780-29.pin1 -> p18938-1.hole6 STIFF
 END
 WHY Adds the second pair of turntable mounting pins for the opposite long rail.
+
 STEP 70
 WHY Turns the turntable assembly over with the two yellow base beams upward before joining it to the front chassis.
+
 STEP 71
 ATTACH steering-turntable
 CONNECT p18651-3.pin1 -> p41239-1.hole4 STIFF
 CONNECT p2780-23.pin2 -> p41239-1.hole13 STIFF
 WHY Connects the turntable's first long rail to the grey front support and the center pin of the lift-arm upright.
+
 STEP 72
 GROUP front-rail-right
 ADD p32523-2 32523 black
@@ -708,26 +779,31 @@ ADD p6558-12 6558 blue
 CONNECT p2780-30.pin1 -> p32523-2.hole1 STIFF
 CONNECT p6558-12.pin3 -> p32523-2.hole3 STIFF
 WHY Starts the second front wheel-bearing beam with a short pin and a long blue mounting pin.
+
 STEP 73
 ADD p87083-5 87083 darkgray
 CONNECT p87083-5.axle3 -> p32523-2.hole2 TURNS
 WHY Inserts the matching stopped wheel axle through the middle round hole of the black bearing beam.
+
 STEP 74
 ADD p40490-3 40490 yellow
 CONNECT p2780-30.pin2 -> p40490-3.hole6 STIFF
 CONNECT p6558-12.pin2 -> p40490-3.hole8 STIFF
 CONNECT p87083-5.axle4 -> p40490-3.hole7 TURNS
 WHY Fits the second long yellow rail over the two mounting pins and around the free wheel axle.
+
 STEP 75
 ADD p15100-2 15100 black
 ADD p32123b-4 32123b lightgray
 CONNECT p87083-5.axle2 -> p15100-2.hole1 TURNS
 CONNECT p87083-5.axle2 -> p32123b-4.axlehole1 LOCKED
 WHY Adds the second free wheel-end lug and retains it on the stopped shaft with a half bush.
+
 STEP 76
 ADD p32526-7 32526 yellow
 CONNECT p6558-12.pin1 -> p32526-7.hole7 STIFF
 WHY Adds the second upright lift-arm support at the front end of the yellow rail.
+
 STEP 77
 ADD p3673-3 3673 lightgray
 ADD p3673-4 3673 lightgray
@@ -737,6 +813,7 @@ CONNECT p3673-4.pin2 -> p32526-7.hole5 TURNS
 CONNECT p2780-31.pin2 -> p32526-7.hole3 STIFF
 END
 WHY Gives the second upright the same pair of free lift-link pivots and fixed center pin as the first.
+
 STEP 78
 ATTACH front-rail-right
 CONNECT p87083-4.axle3 -> p40490-3.hole1 TURNS
@@ -744,11 +821,13 @@ CONNECT p18651-5.pin1 -> p40490-3.hole3 STIFF
 CONNECT p32054-6.pin2 -> p40490-3.hole9 STIFF
 CONNECT p32054-6.pin1 -> p32526-7.hole6 STIFF
 WHY Installs the completed opposite rail and upright around the existing stopped support axle and transverse stop-bush pin.
+
 STEP 79
 ADD p32525-2 32525 yellow
 CONNECT p15100-1.pin1 -> p32525-2.hole11 STIFF
 CONNECT p15100-2.pin1 -> p32525-2.hole1 STIFF
 WHY Ties the two free wheel-end lugs together with an eleven-hole yellow crossbeam.
+
 STEP 80
 ADD p41239-2 41239 yellow
 ADD p2780-32 2780 black
@@ -758,6 +837,7 @@ CONNECT p2780-29.pin2 -> p41239-2.hole3 STIFF
 CONNECT p18651-6.pin1 -> p41239-2.hole4 STIFF
 CONNECT p2780-31.pin1 -> p41239-2.hole13 STIFF
 WHY Closes the second long rail between the turntable, grey front support, and lift-arm upright.
+
 STEP 81
 ADD p32054-7 32054 black
 ADD p32054-8 32054 black
@@ -771,12 +851,14 @@ CONNECT p32054-10.pin1 -> p41239-1.hole11 STIFF
 CONNECT p87083-4.axle2 -> p3713-9.axlehole1 LOCKED
 END
 WHY Adds the four outward mounting posts for the lift mechanism and retains the opposite stopped chassis axle.
+
 STEP 82
 ATTACH front-chassis
 CONNECT p32073-6.axle4 -> p32034-5.hole1 TURNS
 MESH p32270-5.teeth p18938-1.teeth
 RATIO p32270-5 p18938-1 12/60
 WHY Brings the front and rear chassis together around the drive shaft and meshes the steering pinion with the large turntable.
+
 STEP 83
 ADD p32524-1 32524 yellow
 ADD p32524-2 32524 yellow
@@ -789,8 +871,10 @@ CONNECT p6558-4.pin3 -> p32524-1.hole7 STIFF
 CONNECT p3705-6.axle3 -> p32524-1.hole5 TURNS
 CONNECT p3705-7.axle3 -> p32524-2.hole5 TURNS
 WHY Bridges the grey turntable base to the rear bracket with two parallel yellow beams while retaining the free cross axles.
+
 STEP 84
 WHY Folds the two loose grey connector arms downward so their long axles point clear of the steering joint.
+
 STEP 85
 ADD p61903-2 61903 lightgray
 ADD p61903-3 61903 lightgray
@@ -799,18 +883,21 @@ CONNECT p32073-6.axle1 -> p61903-2.axlehole1 LOCKED
 CONNECT p3706-2.axle1~ -> p61903-2.axlehole2 LOCKED
 CONNECT p3706-2.axle6~ -> p61903-3.axlehole1 LOCKED
 WHY Extends the control shaft with two universal joints and a red axle so it can follow the lifting assembly while transmitting rotation.
+
 STEP 86
 GROUP lift-lever
 ADD p32073-7 32073 lightgray
 ADD p33299b-1 33299b black
 CONNECT p32073-7.axle2 -> p33299b-1.axlehole1 LOCKED
 WHY Starts the lift lever with a black crank plate set one axle length in from the end of its cross shaft.
+
 STEP 87
 ADD p32524-3 32524 yellow
 ADD p33299b-2 33299b black
 CONNECT p32073-7.axle3 -> p32524-3.hole1 TURNS
 CONNECT p32073-7.axle4 -> p33299b-2.axlehole1 LOCKED
 WHY Mounts the long yellow lever between the paired black crank plates and applies its control sticker.
+
 STEP 88
 ADD p3705-8 3705 black
 ADD p3705-9 3705 black
@@ -837,11 +924,13 @@ CONNECT p3705-9.axle3 -> p32123b-8.axlehole1 LOCKED
 CONNECT p33299b-1.pin1 -> p6536-14.hole1 STIFF
 CONNECT p33299b-2.pin1 -> p6536-11.hole1 STIFF
 WHY Adds the two yellow pivot crossbars with half bushes separating the center and outer lugs on each shaft.
+
 STEP 89
 ADD p32556-1 32556 tan
 CONNECT p32556-1.pin2 -> p32524-3.hole7 TURNS
 END
 WHY Adds the frictionless tip pin that will link the hand lever to the moving lift arms.
+
 STEP 90
 ATTACH lift-lever
 CONNECT p32054-7.pin2 -> p6536-12.hole1 STIFF
@@ -849,12 +938,14 @@ CONNECT p32054-8.pin2 -> p6536-13.hole1 STIFF
 CONNECT p32054-9.pin2 -> p6536-16.hole1 STIFF
 CONNECT p32054-10.pin2 -> p6536-15.hole1 STIFF
 WHY Mounts both yellow crossbars on the four chassis posts with the long hand lever standing above them.
+
 STEP 91
 GROUP grabber
 ADD p44294-2 44294 yellow
 ADD p6536-17 6536 yellow
 CONNECT p44294-2.axle1 -> p6536-17.axlehole1 LOCKED
 WHY Starts the grabber's main cross shaft with a yellow perpendicular connector at one end.
+
 STEP 92
 ADD p42003-3 42003 lightgray
 ADD p43093-8 43093 blue
@@ -863,24 +954,28 @@ CONNECT p43093-8.axle1 -> p3713-10.axlehole1 LOCKED
 CONNECT p43093-8.pin1 -> p42003-3.hole1 STIFF
 CONNECT p44294-2.axle2 -> p42003-3.axlehole1 LOCKED
 WHY Adds the first grey grabber mount with a blue pin retained underneath by a red bush.
+
 STEP 93
 ADD p99773-1 99773 black
 ADD p32123b-9 32123b lightgray
 CONNECT p44294-2.axle3 -> p99773-1.axlehole1 LOCKED
 CONNECT p44294-2.axle3 -> p32123b-9.axlehole1 LOCKED
 WHY Places the first triangular gearbox cheek and an inner half bush on the main cross shaft.
+
 STEP 94
 ADD p6536-18 6536 yellow
 ADD p32123b-10 32123b lightgray
 CONNECT p44294-2.axle4 -> p6536-18.axlehole1 LOCKED
 CONNECT p44294-2.axle5 -> p32123b-10.axlehole1 LOCKED
 WHY Adds the central yellow worm-shaft bearing and the spacer for the opposite gearbox cheek.
+
 STEP 95
 ADD p32073-8 32073 lightgray
 ADD p32123b-11 32123b lightgray
 CONNECT p32073-8.axle2 -> p32123b-11.axlehole1 LOCKED
 CONNECT p32073-8.axle2 -> p99773-1.axlehole2 LOCKED
 WHY Fits the second cross shaft through the rear cross hole of the triangular cheek with a half bush inside it.
+
 STEP 96
 ADD p3706-3 3706 red
 ADD p32184-9 32184 black
@@ -894,10 +989,12 @@ CONNECT p3706-3.axle3 -> p32123b-13.axlehole1 LOCKED
 CONNECT p3706-3.axle2 -> p32184-9.hole1 TURNS
 CONNECT p32073-8.axle3 -> p32184-9.axlehole2 LOCKED
 WHY Installs the worm shaft in round bearings with half bushes on both sides of the worm to stop it walking along the axle.
+
 STEP 97
 ADD p32123b-14 32123b lightgray
 CONNECT p32073-8.axle4 -> p32123b-14.axlehole1 LOCKED
 WHY Adds the inner spacer for the second triangular gearbox cheek on the rear cross shaft.
+
 STEP 98
 ADD p32073-9 32073 lightgray
 ADD p3648b-1 3648b darkgray
@@ -910,12 +1007,14 @@ CONNECT p32073-9.axle4 -> p99773-1.hole3 TURNS
 MESH p4716-1.teeth p3648b-1.teeth
 RATIO p4716-1 p3648b-1 1/24
 WHY Meshes the worm with the twenty-four-tooth output gear, giving a slow self-locking drive for the grabber jaws.
+
 STEP 99
 ADD p99773-2 99773 black
 CONNECT p44294-2.axle5 -> p99773-2.axlehole1 LOCKED
 CONNECT p32073-8.axle4 -> p99773-2.axlehole2 LOCKED
 CONNECT p32073-9.axle2 -> p99773-2.hole3 TURNS
 WHY Closes the gearbox with the second triangular cheek while leaving the geared output shaft free in round holes.
+
 STEP 100
 ADD p60483-9 60483 black
 ADD p60483-10 60483 black
@@ -926,6 +1025,7 @@ CONNECT p6628-4.pin1 -> p60483-9.hole1 STIFF
 CONNECT p32073-9.axle1 -> p60483-9.axlehole1 LOCKED
 CONNECT p32073-9.axle5 -> p60483-10.axlehole1 LOCKED
 WHY Adds the two ball-ended output cranks on the worm-driven shaft to move the jaw links together.
+
 STEP 101
 ADD p42003-4 42003 lightgray
 ADD p43093-9 43093 blue
@@ -934,10 +1034,12 @@ CONNECT p43093-9.axle1 -> p3713-11.axlehole1 LOCKED
 CONNECT p43093-9.pin1 -> p42003-4.hole1 STIFF
 CONNECT p44294-2.axle6 -> p42003-4.axlehole1 LOCKED
 WHY Adds the matching grey jaw mount with its captured blue pin on the opposite end of the grabber cross shaft.
+
 STEP 102
 ADD p6536-19 6536 yellow
 CONNECT p44294-2.axle7 -> p6536-19.axlehole1 LOCKED
 WHY Caps the second end of the main grabber shaft with its yellow perpendicular jaw-pivot connector.
+
 STEP 103
 ADD p32073-10 32073 lightgray
 ADD p60483-11 60483 black
@@ -954,6 +1056,7 @@ CONNECT p3673-6.pin2 -> p32316-3.hole5 TURNS
 CONNECT p32073-10.axle3 -> p32184-9.axlehole1 LOCKED
 CONNECT p32073-8.axle1 -> p32316-3.hole2 TURNS
 WHY Adds the first rear five-hole mounting bar with two frictionless pins for the moving lift links.
+
 STEP 104
 ADD p32316-4 32316 black
 ADD p60483-12 60483 black
@@ -968,6 +1071,7 @@ CONNECT p32073-10.axle4 -> p60483-12.axlehole1 LOCKED
 CONNECT p32073-10.axle5 -> p32316-4.hole4 TURNS
 CONNECT p32073-8.axle5 -> p32316-4.hole2 TURNS
 WHY Fits the matching rear mounting bar over both cross shafts with its two free pivot pins facing outward.
+
 STEP 105
 ADD p32073-11 32073 lightgray
 ADD p32073-12 32073 lightgray
@@ -994,17 +1098,20 @@ CONNECT p32062-13.axle2 -> p32348-2.axlehole2 LOCKED
 CONNECT p32062-13.axle1 -> p45590-2.axlehole1 LOCKED
 CONNECT p32073-12.axle3 -> p6536-19.hole1 TURNS
 WHY Builds the two lower jaws with rubber tips and stripe labels 13 and 11, then puts their shafts through the yellow round pivot holes.
+
 STEP 106
 ADD p32524-4 32524 yellow
 CONNECT p32073-11.axle4 -> p32524-4.hole7 TURNS
 CONNECT p32073-12.axle4 -> p32524-4.hole1 TURNS
 WHY Bridges the jaw shafts with a yellow seven-hole beam while leaving both shafts free to turn.
+
 STEP 107
 ADD p32348-3 32348 black
 ADD p32348-4 32348 black
 CONNECT p32073-11.axle5 -> p32348-3.axlehole1 LOCKED
 CONNECT p32073-12.axle5 -> p32348-4.axlehole1 LOCKED
 WHY Fits the upper jaw beams on the same shafts as the lower jaws and applies the matching stripe labels.
+
 STEP 108
 ADD p32005a-1 32005a black
 ADD p32005a-2 32005a black
@@ -1012,12 +1119,14 @@ CONNECT p32005a-1.? -> p6628-3.? TURNS
 CONNECT p32005a-1.? -> p6628-5.? TURNS
 CONNECT p32005a-2.? -> p6628-4.? TURNS
 CONNECT p32005a-2.? -> p6628-6.? TURNS
-WHY Snaps the two links over the output-crank and jaw balls so the worm gearbox opens and closes both jaws.
 END
+WHY Snaps the two links over the output-crank and jaw balls so the worm gearbox opens and closes both jaws.
+
 STEP 109
 ATTACH grabber
 CONNECT p3706-3.axle1 -> p61903-3.axlehole2 LOCKED
 WHY Slides the grabber's worm shaft into the front universal joint to connect the jaw gearbox to the chassis drive.
+
 STEP 110
 GROUP right-lift-link
 ADD p32140-1 32140 black
@@ -1036,19 +1145,22 @@ CONNECT p4519-linkage1.axle3~ -> p32054-11.axlehole1 LOCKED
 CONNECT p4519-linkage1.axle1~ -> p32054-12.axlehole1 LOCKED
 CONNECT p32062-14.axle1 -> p32140-1.axlehole1 LOCKED
 CONNECT p32062-14.axle2 -> p60483-13.axlehole1 LOCKED
-WHY Makes a rigid side lever from the L beam and five-hole bar, with a grey three-length axle through the long pin and a red axle at its other end.
 END
+WHY Makes a rigid side lever from the L beam and five-hole bar, with a grey three-length axle through the long pin and a red axle at its other end.
+
 STEP 111
 ATTACH right-lift-link
 CONNECT p3673-7.pin1 -> p32316-5.hole1 TURNS
 CONNECT p3673-4.pin1 -> p32316-5.hole5 TURNS
 CONNECT p32556-1.pin3 -> p60483-13.hole1 TURNS
 WHY Puts the side lever on the two grey pivots and turns the hand lever down to connect its moving post to the black lug.
+
 STEP 112
 ADD p32316-6 32316 black
 CONNECT p3673-8.pin1 -> p32316-6.hole1 TURNS
 CONNECT p3673-3.pin1 -> p32316-6.hole5 TURNS
 WHY Joins the second pair of grey pivots with a free-turning five-hole link to complete this side of the grabber lift linkage.
+
 STEP 113
 GROUP right-front-guard
 ADD p24116-1 24116 yellow
@@ -1066,11 +1178,12 @@ CONNECT p4274-3.pin1 -> p32291-1.hole2 TURNS
 CONNECT p4274-4.pin1 -> p32291-1.hole1 TURNS
 CONNECT p4274-3.? -> p6141-1.? LOCKED
 CONNECT p4274-4.? -> p6141-2.? LOCKED
-WHY Builds the first curved front guard with two clear lamps above it and applies warning label 10.
 END
 ATTACH right-front-guard
 CONNECT p2780-32.pin1 -> p32523-3.hole1 STIFF
 CONNECT p87083-4.axle1 -> p24116-1.hole2 TURNS
+WHY Builds the first curved front guard with two clear lamps above it and applies warning label 10.
+
 STEP 114
 GROUP left-lift-link
 ADD p32140-2 32140 black
@@ -1090,11 +1203,13 @@ CONNECT p32054-12.pin2 -> p32316-7.hole3 STIFF
 CONNECT p32054-12.pin1 -> p32140-2.hole3 STIFF
 CONNECT p32556-1.pin1 -> p60483-14.hole1 TURNS
 WHY Fits the opposite lift lever over the grey pivot pins and exposed three-length cross axle, then connects its lug to the other end of the hand lever.
+
 STEP 115
 ADD p32316-8 32316 black
 CONNECT p3673-6.pin1 -> p32316-8.hole1 TURNS
 CONNECT p3673-1.pin2 -> p32316-8.hole5 TURNS
 WHY Closes the other side of the parallel lift linkage with a five-hole bar on the remaining grey pivots.
+
 STEP 116
 GROUP left-front-guard
 ADD p24116-2 24116 yellow
@@ -1117,6 +1232,7 @@ ATTACH left-front-guard
 CONNECT p2780-27.pin1 -> p32523-4.hole1 STIFF
 CONNECT p87083-2.axle1 -> p24116-2.hole2 TURNS
 WHY Builds the mirrored front guard with two clear lamps and label 5, then mounts it beside the opposite wheel axle.
+
 STEP 117
 GROUP cab
 ADD p32140-3 32140 black
@@ -1127,6 +1243,7 @@ CONNECT p4519-7.axle3 -> p32140-3.axlehole1 LOCKED
 CONNECT p6558-13.pin1 -> p32140-3.hole2 STIFF
 CONNECT p2780-37.pin2 -> p32140-3.hole4 STIFF
 WHY Starts the cab's inner bracket with a three-length axle and blue and black pins facing opposite ways.
+
 STEP 118
 ADD p32526-8 32526 yellow
 ADD p2780-38 2780 black
@@ -1136,6 +1253,7 @@ CONNECT p6558-13.pin2 -> p32526-8.hole7 STIFF
 CONNECT p2780-38.pin1 -> p32526-8.hole4 STIFF
 CONNECT p2780-39.pin1 -> p32526-8.hole2 STIFF
 WHY Places the first yellow L beam over the axle and blue pin, with two black pins ready for the outside cab frame.
+
 STEP 119
 ADD p32526-9 32526 yellow
 ADD p32348-5 32348 yellow
@@ -1144,12 +1262,14 @@ CONNECT p2780-39.pin2 -> p32526-9.hole5 STIFF
 CONNECT p4519-7.axle1 -> p32348-5.axlehole1 LOCKED
 CONNECT p6558-13.pin3 -> p32348-5.hole2 STIFF
 WHY Adds the outside L beam and diagonal bent beam to form the yellow cab side frame.
+
 STEP 120
 ADD p4274-7 4274 lightgray
 ADD p4274-8 4274 lightgray
 CONNECT p4274-7.pin1 -> p32526-9.hole4 TURNS
 CONNECT p4274-8.pin1 -> p32526-9.hole3 TURNS
 WHY Fits two short grey pins in adjacent upper-frame holes to carry the printed side tile.
+
 STEP 121
 ADD p32140-4 32140 blue
 ADD p32140-5 32140 blue
@@ -1161,11 +1281,13 @@ CONNECT p6558-14.pin1 -> p32140-4.hole3 STIFF
 CONNECT p6558-14.pin2 -> p32140-5.hole3 STIFF
 CONNECT p6558-14.pin3 -> p32526-9.hole2 STIFF
 WHY Joins two blue L beams into the seat back with a red axle and mounts the doubled seat on the cab side frame.
+
 STEP 122
 ADD p2431-1 2431 yellow
 CONNECT p2431-1.? -> p4274-7.? LOCKED
 CONNECT p2431-1.? -> p4274-8.? LOCKED
 WHY Presses the yellow side tile over the two short-pin studs and applies the mining-company label 9.
+
 STEP 123
 GROUP cab-roof
 ADD p32140-6 32140 black
@@ -1174,11 +1296,13 @@ ADD p6558-16 6558 blue
 CONNECT p6558-15.pin1 -> p32140-6.hole4 STIFF
 CONNECT p6558-16.pin1 -> p32140-6.hole3 STIFF
 WHY Starts the roof bracket with two adjacent blue pins in the short leg of a black L beam.
+
 STEP 124
 ADD p32140-7 32140 black
 CONNECT p6558-15.pin2 -> p32140-7.hole2 STIFF
 CONNECT p6558-16.pin2 -> p32140-7.hole3 STIFF
 WHY Adds a second L beam across the two blue pins with its long leg pointing down.
+
 STEP 125
 ADD p4519-8 4519 lightgray
 ADD p18651-7 18651 black
@@ -1189,6 +1313,7 @@ CONNECT p4519-8.axle2 -> p32039-7.axlehole1 LOCKED
 CONNECT p18651-7.pin1 -> p60483-15.hole1 STIFF
 CONNECT p18651-7.axle2 -> p32140-7.axlehole1 LOCKED
 WHY Adds the yellow perpendicular cab mount and its parallel grey axle on the bottom of the roof bracket.
+
 STEP 126
 ADD p32523-5 32523 black
 ADD p2780-40 2780 black
@@ -1196,6 +1321,7 @@ CONNECT p2780-40.pin2 -> p32523-5.hole3 STIFF
 CONNECT p2780-40.pin1 -> p32140-7.hole1 STIFF
 CONNECT p18651-7.axle1 -> p32523-5.hole2 TURNS
 WHY Reinforces the lower roof bracket with a three-hole beam over the exposed axle end and a black pin.
+
 STEP 127
 ADD p15100-3 15100 black
 ADD p4274-9 4274 lightgray
@@ -1204,6 +1330,7 @@ CONNECT p4274-9.pin1 -> p15100-3.hole1 TURNS
 CONNECT p4274-9.? -> p6141-5.? LOCKED
 CONNECT p15100-3.pin1 -> p32140-6.hole1 STIFF
 WHY Builds the orange roof beacon on a short grey pin and plugs its black right-angle base into the roof beam.
+
 STEP 128
 ADD p4519-9 4519 lightgray
 ADD p4519-10 4519 lightgray
@@ -1216,12 +1343,14 @@ CONNECT p4519-10.axle1 -> p32123b-17.axlehole1 LOCKED
 CONNECT p4519-10.axle3 -> p32123b-18.axlehole1 LOCKED
 CONNECT p4519-9.axle1 -> p32140-6.axlehole1 LOCKED
 WHY Fits the cab hinge shaft through the black lug with half bushes on both sides, then anchors the lug's other axle to the roof.
+
 STEP 129
 ADD p32140-8 32140 black
 CONNECT p6558-15.pin3 -> p32140-8.hole4 STIFF
 CONNECT p6558-16.pin3 -> p32140-8.hole3 STIFF
 CONNECT p4519-9.axle3 -> p32140-8.axlehole1 LOCKED
 WHY Closes the roof bracket with the third black L beam over the two blue pins and grey cross axle.
+
 STEP 130
 ADD p11478-1 11478 black
 ADD p15462-1 15462 darktan
@@ -1229,20 +1358,23 @@ ADD p32123b-19 32123b lightgray
 CONNECT p15462-1.axle5 -> p11478-1.axlehole2 LOCKED
 CONNECT p15462-1.axle5 -> p32123b-19.axlehole1 LOCKED
 CONNECT p4519-10.axle3 -> p11478-1.axlehole1 LOCKED
-WHY Puts a thin five-hole cab pillar on the upper hinge axle and fits the long stopped axle through its lower cross hole.
 END
+WHY Puts a thin five-hole cab pillar on the upper hinge axle and fits the long stopped axle through its lower cross hole.
+
 STEP 131
 ATTACH cab-roof
 CONNECT p15462-1.axle4 -> p32526-8.hole1 TURNS
 WHY Slides the stopped lower hinge axle through the round hole at the top of the yellow cab frame to join the roof and side.
+
 STEP 132
 ADD p11478-2 11478 black
 ADD p32123b-20 32123b lightgray
 CONNECT p15462-1.axle3 -> p32123b-20.axlehole1 LOCKED
 CONNECT p15462-1.axle3 -> p11478-2.axlehole2 LOCKED
 CONNECT p4519-10.axle1 -> p11478-2.axlehole1 LOCKED
-WHY Adds the inner half bush and second thin pillar on the two hinge axles to complete the paired cab supports.
 END
+WHY Adds the inner half bush and second thin pillar on the two hinge axles to complete the paired cab supports.
+
 STEP 133
 ATTACH cab
 CONNECT p2780-37.pin1 -> p32526-4.hole6 STIFF
@@ -1250,6 +1382,7 @@ CONNECT p6558-5.pin3 -> p32140-3.hole3 STIFF
 CONNECT p15462-1.axle2 -> p32524-2.hole4 TURNS
 CONNECT p3705-3.axle1 -> p32039-7.axlehole2 LOCKED
 WHY Mounts the complete cab on the chassis pins and stopped axle, seating the yellow perpendicular mount on the exposed black chassis axle.
+
 STEP 134
 ADD p40490-4 40490 yellow
 ADD p40490-5 40490 yellow
@@ -1267,6 +1400,7 @@ CONNECT p2780-1.pin2 -> p40490-5.hole1 STIFF
 CONNECT p6558-2.pin2 -> p40490-5.hole4 STIFF
 CONNECT p2780-15.pin1 -> p40490-5.hole7 STIFF
 WHY Fits two yellow nine-hole lower rear rails and joins their back ends with the black axle connector and two axle pins.
+
 STEP 135
 GROUP right-rear-side
 ADD p40490-6 40490 yellow
@@ -1275,17 +1409,20 @@ ADD p2780-42 2780 black
 CONNECT p2780-41.pin2 -> p40490-6.hole3 STIFF
 CONNECT p2780-42.pin2 -> p40490-6.hole4 STIFF
 WHY Starts the upper rear side rail with two adjacent black pins near its front end.
+
 STEP 136
 ADD p32526-10 32526 yellow
 CONNECT p2780-41.pin1 -> p32526-10.hole6 STIFF
 CONNECT p2780-42.pin1 -> p32526-10.hole5 STIFF
 WHY Fastens a yellow L beam below the rear rail to support the outside body panel.
+
 STEP 137
 ADD p6558-17 6558 blue
 ADD p6558-18 6558 blue
 CONNECT p6558-17.pin1 -> p32526-10.hole4 STIFF
 CONNECT p6558-18.pin1 -> p32526-10.hole3 STIFF
 WHY Inserts two blue long pins through adjacent holes in the upright L beam for the grey connector and outer panel.
+
 STEP 138
 ADD p42003-7 42003 lightgray
 ADD p32054-13 32054 black
@@ -1293,16 +1430,19 @@ CONNECT p6558-18.pin2 -> p42003-7.hole1 STIFF
 CONNECT p6558-17.pin2 -> p42003-7.hole2 STIFF
 CONNECT p32054-13.pin1 -> p40490-6.hole7 STIFF
 WHY Fits the grey perpendicular connector over the blue pins and adds the long black mounting pin near the back of the rail.
+
 STEP 139
 ADD p14682-1 14682 lightgray
 CONNECT p14682-1.? -> p40490-6.hole1~ STIFF
-WHY Plugs the exhaust pipe into the front end of the upper side rail with the pipe running backward beside it.
 END
+WHY Plugs the exhaust pipe into the front end of the upper side rail with the pipe running backward beside it.
+
 STEP 140
 ATTACH right-rear-side
 CONNECT p6558-1.pin3 -> p32526-10.hole1 STIFF
 CONNECT p32054-13.pin2 -> p60483-3.hole1 STIFF
 WHY Mounts the exhaust-side rear frame on the existing blue chassis pin and the black rear lug.
+
 STEP 141
 ADD p18651-10 18651 black
 ADD p18651-11 18651 black
@@ -1311,6 +1451,7 @@ CONNECT p18651-10.axle1 -> p32034-7.axlehole2 LOCKED
 CONNECT p18651-11.axle1 -> p32034-7.axlehole1 LOCKED
 CONNECT p18651-10.pin1 -> p40490-6.hole9 STIFF
 WHY Builds the second black rear crossbar and plugs its near pin into the end of the upper side rail.
+
 STEP 142
 ADD p32009-1 32009 yellow
 ADD p32062-17 32062 red
@@ -1322,6 +1463,7 @@ CONNECT p43093-6.pin1 -> p32009-1.hole5 STIFF
 CONNECT p32062-17.axle1 -> p42003-7.axlehole1 LOCKED
 CONNECT p32062-17.axle2 -> p6536-20.axlehole1 LOCKED
 WHY Fits the long bent yellow side beam from the cab to the rear frame and adds a perpendicular yellow mount on the red axle below it.
+
 STEP 143
 GROUP left-rear-side
 ADD p40490-7 40490 yellow
@@ -1347,12 +1489,14 @@ CONNECT p6558-2.pin3 -> p32526-11.hole1 STIFF
 CONNECT p32054-14.pin2 -> p60483-4.hole1 STIFF
 CONNECT p18651-11.pin1 -> p40490-7.hole9 STIFF
 WHY Builds the opposite rear side frame and fits it over the existing chassis pins and the free end of the upper rear crossbar.
+
 STEP 144
 ADD p32062-18 32062 red
 ADD p6536-21 6536 yellow
 CONNECT p32062-18.axle1 -> p42003-8.axlehole1 LOCKED
 CONNECT p32062-18.axle2 -> p6536-21.axlehole1 LOCKED
 WHY Adds the mirrored yellow rear-body mount on a red axle in the grey side connector.
+
 STEP 145
 GROUP rear-bumper
 ADD p32184-10 32184 black
@@ -1361,11 +1505,13 @@ ADD p18651-13 18651 black
 CONNECT p18651-12.axle2 -> p32184-10.axlehole1 LOCKED
 CONNECT p18651-13.axle2 -> p32184-10.axlehole2 LOCKED
 WHY Starts the rear bumper with two axle pins through the parallel cross holes of the black connector.
+
 STEP 146
 ADD p32524-5 32524 yellow
 CONNECT p18651-12.pin1 -> p32524-5.hole3 STIFF
 CONNECT p18651-13.pin1 -> p32524-5.hole5 STIFF
 WHY Adds the first yellow seven-hole bumper rail across the two pins with one empty hole between them.
+
 STEP 147
 ADD p15100-4 15100 black
 ADD p15100-5 15100 black
@@ -1380,18 +1526,21 @@ CONNECT p4274-11.? -> p6141-7.? LOCKED
 CONNECT p15100-4.pin1 -> p32524-5.hole2 STIFF
 CONNECT p15100-5.pin1 -> p32524-5.hole6 STIFF
 WHY Builds two red rear lamps on short grey pins and places their right-angle bases beside the bumper's central connector.
+
 STEP 148
 ADD p6558-21 6558 blue
 ADD p6558-22 6558 blue
 CONNECT p6558-21.pin1 -> p32524-5.hole1 STIFF
 CONNECT p6558-22.pin1 -> p32524-5.hole7 STIFF
 WHY Inserts a long blue pin into each end of the bumper rail for the curved corner panels.
+
 STEP 149
 ADD p24116-3 24116 yellow
 ADD p24116-4 24116 yellow
 CONNECT p6558-21.pin2 -> p24116-3.hole1 STIFF
 CONNECT p6558-22.pin2 -> p24116-4.hole1 STIFF
 WHY Fits the two curved yellow corner panels over the end pins with their free mounting holes above the bumper.
+
 STEP 150
 ADD p32524-6 32524 yellow
 CONNECT p6558-21.pin3 -> p32524-6.hole1 STIFF
@@ -1399,23 +1548,28 @@ CONNECT p6558-22.pin3 -> p32524-6.hole7 STIFF
 CONNECT p18651-12.axle1 -> p32524-6.hole3 TURNS
 CONNECT p18651-13.axle1 -> p32524-6.hole5 TURNS
 WHY Closes the bumper sandwich with a second seven-hole rail over both blue pins and the exposed black axle ends.
+
 STEP 151
 ADD p32054-15 32054 black
 ADD p32054-16 32054 black
 CONNECT p32054-15.pin1 -> p24116-4.hole2 STIFF
 CONNECT p32054-16.pin1 -> p24116-3.hole2 STIFF
 WHY Pushes long black pins into the two free panel holes so their pin ends can mount the bumper to the side frames.
+
 STEP 152
 WHY Applies rear-corner labels 3 and 1 to the first curved panel as shown.
+
 STEP 153
-WHY Applies rear-corner labels 4 and 2 to the opposite curved panel with the stripes facing outward.
 END
+WHY Applies rear-corner labels 4 and 2 to the opposite curved panel with the stripes facing outward.
+
 STEP 154
 ATTACH rear-bumper
 CONNECT p32054-15.pin2 -> p6536-21.hole1 STIFF
 CONNECT p32054-16.pin2 -> p6536-20.hole1 STIFF
 CONNECT p3705-5.axle3 -> p32184-10.hole1 TURNS
 WHY Mounts the finished rear bumper on both yellow side mounts and the central rear axle.
+
 STEP 155
 ADD p32009-2 32009 yellow
 ADD p32062-19 32062 red
@@ -1424,6 +1578,7 @@ CONNECT p6558-19.pin3 -> p32009-2.hole7 STIFF
 CONNECT p6558-20.pin3 -> p32009-2.hole8 STIFF
 CONNECT p43093-7.pin1 -> p32009-2.hole5 STIFF
 WHY Adds the remaining long yellow side beam with a red axle in its front cross hole, then pushes the rear mounting pins fully down.
+
 STEP 156
 GROUP engine-side-cover
 ADD p32316-9 32316 yellow
@@ -1460,12 +1615,14 @@ ATTACH engine-side-cover
 CONNECT p32073-1.axle1 -> p42003-9.axlehole1 LOCKED
 CONNECT p32062-19.axle2~ -> p42003-9.axlehole1 LOCKED
 WHY Pins four yellow five-hole beams into the solid side cover, adds control label 12, and mounts its grey connector between the exposed chassis axle and the red side-beam axle.
+
 STEP 157
 ADD p4274-12 4274 lightgray
 ADD p93550-1 93550 flatsilver
 CONNECT p4274-12.? -> p93550-1.? LOCKED
 CONNECT p4274-12.pin1 -> p14720-1.hole6 TURNS
 WHY Inserts the foil handle into a short grey pin and mounts it upright as the antenna beside the engine.
+
 STEP 158
 ADD p32019-1 32019 black
 ADD p32019-2 32019 black
@@ -1484,6 +1641,7 @@ CONNECT p87083-5.axle1 -> p86652-2.? LOCKED
 CONNECT p3705-1.axle4 -> p86652-3.? LOCKED
 CONNECT p3705-2.axle1 -> p86652-4.? LOCKED
 WHY Fits each tyre on a grey wheel and pushes the four wheels onto the exposed drive axles with the recessed wheel faces outward.
+
 STEP 159
 GROUP barrel
 ADD p2780-53 2780 black
@@ -1492,23 +1650,28 @@ ADD p62462-5 62462 lightgray
 CONNECT p2780-53.pin1 -> p62462-5.hole1 STIFF
 CONNECT p2780-54.pin2 -> p62462-5.hole1 STIFF
 WHY Puts black pins into both ends of a grey round connector to start the barrel's internal cross brace.
+
 STEP 160
 ADD p62462-6 62462 lightgray
 ADD p2780-55 2780 black
 CONNECT p2780-54.pin1 -> p62462-6.hole1 STIFF
 CONNECT p2780-55.pin2 -> p62462-6.hole1 STIFF
 WHY Extends the internal brace with a second grey connector and a black pin at its free end.
+
 STEP 161
 ADD p15361-1 15361 red
 ADD p15361-2 15361 red
 CONNECT p2780-53.pin2 -> p15361-1.? STIFF
 CONNECT p2780-55.pin1 -> p15361-2.? STIFF
 WHY Joins the two red barrel halves over the ends of the internal pin brace to make a closed cylinder.
+
 STEP 162
 WHY Applies two copies of warning stripe label 6 near the top and bottom of the first barrel half.
+
 STEP 163
-WHY Turns the barrel around and applies the other two warning stripe labels to the second half.
 END
+WHY Turns the barrel around and applies the other two warning stripe labels to the second half.
+
 STEP 164
 ATTACH barrel
 WHY Places the finished barrel between the rubber-tipped jaws and closes the grabber around it.

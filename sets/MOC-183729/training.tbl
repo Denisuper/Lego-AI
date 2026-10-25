@@ -1,23 +1,14 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
 STEP 1
-THINK have Nothing yet.
-THINK goal Starts the left corner post of the gearbox housing.
-THINK part bracket-L (6536 Technic Axle and Pin Connector Perpendicular): first part; a small elbow with one round hole and one cross hole at right angles; fixed
-THINK part pin-blue-A (43093 Technic Axle Pin with Friction Ridges Lengthwise): its axle end pushed into bracket-L's cross hole, sticking straight up; fixed
-THINK part pin-red-A (11214 Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle): its pin end pushed into bracket-L's round hole, sticking out to the side; fixed
-THINK touches pin-blue-A's axle end goes into bracket-L's cross hole
-THINK touches pin-red-A's pin end goes into bracket-L's round hole~
-THINK does bracket-L holds pin-blue-A
-THINK does bracket-L holds pin-red-A
-THINK need rigid_frame: Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it. Rules: A joint with one pin can swing: use two pins, an axle in cross holes, or close a triangle/rectangle. Shafts' bearings must sit in the frame at the gear spacing.
-THINK why The elbow bracket has only one round hole and one cross hole; a friction peg in each turns those into two usable mounting studs at right angles, so the beam and the frame's bottom corner can both attach here later.
-THINK role bracket-L in the frame / housing: Left corner post: anchors pin-blue-A (holds the beam) and pin-red-A (unused stub in this 11-step booklet).
-THINK role pin-blue-A in the frame / housing: Carries beam-C's left end.
-THINK role pin-red-A in the frame / housing: Free stub on the left corner; not reached again in this booklet.
-THINK check pin-blue-A.axle1 goes into bracket-L.axlehole1, 1 hole deep, locked (turn together)
-THINK check pin-red-A.pin1 goes into bracket-L.hole1, 0.9 hole deep, held stiff by friction (estimated from the picture)
-THINK mechanism bracket-L becomes the left corner post of the gearbox housing
-THINK state frame has 1 of 6 parts, still missing bracket-R, beam-C, bracket-G, bracket-H, fork-R
-THINK later pin-blue-A's free end takes the 7-hole beam in step 3; pin-red-A's free end is the frame's open bottom corner (not reached again in this 11-step booklet, so it stays as a stub in this model as built). Pattern: peg-in-elbow corner mount
 ADD bracket-L 6536 lightgray
 ADD pin-blue-A 43093 blue
 ADD pin-red-A 11214 red
@@ -26,95 +17,27 @@ CONNECT pin-red-A.pin1 -> bracket-L.hole1~ STIFF
 DOES bracket-L HOLDS pin-blue-A
 DOES bracket-L HOLDS pin-red-A
 PATTERN peg_in_elbow_bracket
-MECH frame rigid_frame bracket-L left_corner_post
-STATE frame 1/6
+WHY The elbow bracket has only one round hole and one cross hole; a friction peg in each turns those into two usable mounting studs at right angles, so the beam and the frame's bottom corner can both attach here later.
 
 STEP 2
-THINK have bracket-L carries pin-blue-A and pin-red-A (step 1).
-THINK goal Starts the right corner post, mirroring the left one from step 1 so the beam in step 3 has a matching peg to land on at both ends.
-THINK part bracket-R (6536 Technic Axle and Pin Connector Perpendicular): a second elbow bracket, free-standing -- the right corner post; fixed
-THINK part peg-black-B (43093 Technic Axle Pin with Friction Ridges Lengthwise): its axle end pushed into bracket-R's cross hole; fixed
-THINK part fork-R (32291 Technic Axle and Pin Connector Perpendicular Double): set next to bracket-R, not yet joined to anything -- it has no peg of its own; unknown
-THINK touches peg-black-B's axle end goes into bracket-R's cross hole
-THINK does bracket-R holds peg-black-B
-THINK need rigid_frame: Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it. Rules: A joint with one pin can swing: use two pins, an axle in cross holes, or close a triangle/rectangle. Shafts' bearings must sit in the frame at the gear spacing.
-THINK need shaft_with_stops: An axle that carries parts and turns, held from sliding by stops at both ends. Rules: At least two round-hole bearings. A stop on each side of the bearings.
-THINK why A friction peg with a stop on both ends bridges the elbow bracket's cross hole now and the beam's round hole in step 3, same trick as pin-blue-A on the left.
-THINK role bracket-R in the frame / housing: Right corner post: anchors peg-black-B (holds the beam).
-THINK role peg-black-B in the frame / housing: Carries beam-C's right end.
-THINK role fork-R in the frame / housing: Right-hand bearing block: its round hole is where the main shaft axle-N spins free and exits the frame.
-THINK check peg-black-B.axle1 goes into bracket-R.axlehole1, 1 hole deep, locked (turn together)
-THINK mechanism bracket-R becomes the right corner post of the gearbox housing
-THINK mechanism fork-R becomes the right-hand main shaft bearing of the gearbox housing (not confirmed)
-THINK mechanism fork-R becomes the bearing, lets axle-N spin free of the output shaft (not confirmed)
-THINK state frame has 3 of 6 parts, still missing beam-C, bracket-G, bracket-H
-THINK state output has 1 of 3 parts, still missing gear-tan-M, ext-W
-THINK later peg-black-B's free pin end takes the 7-hole beam in step 3. fork-R's holes take the long shaft's gray gear and right-hand bearing in step 7. Pattern: peg-in-elbow corner mount, bearing block added alongside
 ADD bracket-R 6536 lightgray
 ADD peg-black-B 43093 black
 ADD fork-R 32291 lightgray
 CONNECT peg-black-B.axle1 -> bracket-R.axlehole1 LOCKED
 DOES bracket-R HOLDS peg-black-B
 PATTERN peg_in_elbow_bracket
-MECH frame rigid_frame bracket-R right_corner_post
-MECH frame rigid_frame fork-R right_hand_main ?
-MECH output shaft_with_stops fork-R bearing_lets_axle ?
-STATE frame 3/6
-STATE output 1/3
+WHY A friction peg with a stop on both ends bridges the elbow bracket's cross hole now and the beam's round hole in step 3, same trick as pin-blue-A on the left.
 
 STEP 3
-THINK have bracket-L (with pin-blue-A, pin-red-A) and bracket-R (with peg-black-B, fork-R) stand apart, not yet joined.
-THINK goal Closes the two separate corner posts into one U-shaped frame.
-THINK part beam-C (32524 Technic Beam 1 x 7 Thick): spans the top, end holes land on pin-blue-A's and peg-black-B's free pegs; fixed
-THINK touches pin-blue-A's free pin end goes into beam-C's hole1 (left end)
-THINK touches peg-black-B's free pin end goes into beam-C's hole7 (right end)
-THINK does beam-C holds pin-blue-A
-THINK does beam-C holds peg-black-B
-THINK need rigid_frame: Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it. Rules: A joint with one pin can swing: use two pins, an axle in cross holes, or close a triangle/rectangle. Shafts' bearings must sit in the frame at the gear spacing.
-THINK why A single 7-hole beam is long enough to reach both corners, with 5 spare holes in the middle for the shift mechanism (steps 4-6).
-THINK role beam-C in the frame / housing: Top bar: closes the frame into a U and carries the shift mechanism's mounting pegs.
-THINK check pin-blue-A.pin1 goes into beam-C.hole1, 0.9 hole deep, held stiff by friction
-THINK check peg-black-B.pin1 goes into beam-C.hole7, 0.9 hole deep, held stiff by friction
-THINK builds_on beam-C builds on pin-blue-A (MOC-183729-step-01), and rests on bracket-L (MOC-183729-step-01)
-THINK builds_on beam-C builds on peg-black-B (MOC-183729-step-02), and rests on bracket-R (MOC-183729-step-02)
-THINK mechanism beam-C becomes the top bar, closes the U of the gearbox housing
-THINK state frame has 4 of 6 parts, still missing bracket-G, bracket-H
-THINK later beam-C's middle holes take 3 more friction pegs in step 4, which carry the shift-fork housing and two more corner brackets. Pattern: close the U into a frame
 ADD beam-C 32524 lightgray
 CONNECT pin-blue-A.pin1 -> beam-C.hole1 STIFF
 CONNECT peg-black-B.pin1 -> beam-C.hole7 STIFF
 DOES beam-C HOLDS pin-blue-A
 DOES beam-C HOLDS peg-black-B
 PATTERN close_the_u
-MECH frame rigid_frame beam-C top_bar_closes
-STATE frame 4/6
+WHY A single 7-hole beam is long enough to reach both corners, with 5 spare holes in the middle for the shift mechanism (steps 4-6).
 
 STEP 4
-THINK have U-shaped frame: bracket-L and bracket-R joined by beam-C.
-THINK goal Turns three of the beam's middle holes into mounting studs, ready for the shift mechanism's housing and two more corner brackets.
-THINK part pin-blue-D (43093 Technic Axle Pin with Friction Ridges Lengthwise): pin end into beam-C's 3rd hole, axle end hanging free below the beam; fixed
-THINK part pin-blue-E (43093 Technic Axle Pin with Friction Ridges Lengthwise): pin end into beam-C's 4th (middle) hole, axle end hanging free; fixed
-THINK part pin-blue-F (43093 Technic Axle Pin with Friction Ridges Lengthwise): pin end into beam-C's 5th hole, axle end hanging free; fixed
-THINK touches pin-blue-D's pin end goes into beam-C's hole3
-THINK touches pin-blue-E's pin end goes into beam-C's hole4
-THINK touches pin-blue-F's pin end goes into beam-C's hole5
-THINK does beam-C holds pin-blue-D
-THINK does beam-C holds pin-blue-E
-THINK does beam-C holds pin-blue-F
-THINK need hinge: Lets two parts swing about one axis. Rules: Use frictionless pins or axles for free swing; friction pins make it stiff.
-THINK why Same friction peg as pin-blue-A: a cross-hole axle end hanging free is exactly what a bracket's cross hole needs next.
-THINK role pin-blue-D in the frame / housing: Carries bracket-G, the input shaft's bearing post.
-THINK role pin-blue-E in the frame / housing: Carries fork-J, the shift-fork housing, in the middle of the frame.
-THINK role pin-blue-F in the frame / housing: Carries bracket-H, a second bearing post next to the output side.
-THINK check pin-blue-D.pin1 goes into beam-C.hole3, 0.9 hole deep, held stiff by friction
-THINK check pin-blue-E.pin1 goes into beam-C.hole4, 0.9 hole deep, held stiff by friction
-THINK check pin-blue-F.pin1 goes into beam-C.hole5, 0.9 hole deep, held stiff by friction
-THINK builds_on pin-blue-D builds on beam-C (MOC-183729-step-03), which is the top bar, closes the U in the gearbox housing, and rests on pin-blue-A (MOC-183729-step-01), peg-black-B (MOC-183729-step-02)
-THINK builds_on pin-blue-E builds on beam-C (MOC-183729-step-03), which is the top bar, closes the U in the gearbox housing, and rests on pin-blue-A (MOC-183729-step-01), peg-black-B (MOC-183729-step-02)
-THINK builds_on pin-blue-F builds on beam-C (MOC-183729-step-03), which is the top bar, closes the U in the gearbox housing, and rests on pin-blue-A (MOC-183729-step-01), peg-black-B (MOC-183729-step-02)
-THINK mechanism pin-blue-E becomes the frame mount of the shift lever mount
-THINK state shift_fork has 1 of 3 parts, still missing fork-J, knob-I
-THINK later pin-blue-D and pin-blue-F each take a bracket in step 5; pin-blue-E (the middle one) takes the shift-fork housing in step 6. Pattern: three pegs in a row
 ADD pin-blue-D 43093 blue
 ADD pin-blue-E 43093 blue
 ADD pin-blue-F 43093 blue
@@ -125,30 +48,9 @@ DOES beam-C HOLDS pin-blue-D
 DOES beam-C HOLDS pin-blue-E
 DOES beam-C HOLDS pin-blue-F
 PATTERN three_pegs_in_a_row
-MECH shift_fork hinge pin-blue-E frame_mount
-STATE shift_fork 1/3
+WHY Same friction peg as pin-blue-A: a cross-hole axle end hanging free is exactly what a bracket's cross hole needs next.
 
 STEP 5
-THINK have Frame with beam-C carrying 3 free pegs (pin-blue-D, pin-blue-E, pin-blue-F) in its middle holes.
-THINK goal Turns the outer two middle pegs into another pair of round-hole mounts, matching the corner brackets' shape.
-THINK part bracket-G (6536 Technic Axle and Pin Connector Perpendicular): cross hole onto pin-blue-D's free axle end; fixed
-THINK part bracket-H (6536 Technic Axle and Pin Connector Perpendicular): cross hole onto pin-blue-F's free axle end; fixed
-THINK touches bracket-G's cross hole goes onto pin-blue-D's free axle end
-THINK touches bracket-H's cross hole goes onto pin-blue-F's free axle end
-THINK does pin-blue-D carries bracket-G
-THINK does pin-blue-F carries bracket-H
-THINK need rigid_frame: Structure that keeps everything at the right distance. Not a moving mechanism, but every mechanism depends on it. Rules: A joint with one pin can swing: use two pins, an axle in cross holes, or close a triangle/rectangle. Shafts' bearings must sit in the frame at the gear spacing.
-THINK why Locking a bracket onto each axle end fixes it so it can't spin loose; leaving the middle peg bare keeps it free for the shift housing's cross hole next.
-THINK role bracket-G in the frame / housing: Bearing post for axle-input-T, the input shaft.
-THINK role bracket-H in the frame / housing: Bearing post next to gear-tan-M / the output end.
-THINK check pin-blue-D.axle1 goes into bracket-G.axlehole1, 1 hole deep, locked (turn together)
-THINK check pin-blue-F.axle1 goes into bracket-H.axlehole1, 1 hole deep, locked (turn together)
-THINK builds_on bracket-G builds on pin-blue-D (MOC-183729-step-04), and rests on beam-C (MOC-183729-step-03)
-THINK builds_on bracket-H builds on pin-blue-F (MOC-183729-step-04), and rests on beam-C (MOC-183729-step-03)
-THINK mechanism bracket-G becomes the input shaft bearing post of the gearbox housing
-THINK mechanism bracket-H becomes the second bearing post of the gearbox housing
-THINK state frame has 6 of 6 parts, complete
-THINK later bracket-G and bracket-H's round holes are the bearing points the long gear shaft (step 7) passes between. Pattern: mirror the side (two identical brackets added together)
 ADD bracket-G 6536 lightgray
 ADD bracket-H 6536 lightgray
 CONNECT pin-blue-D.axle1 -> bracket-G.axlehole1 LOCKED
@@ -156,32 +58,9 @@ CONNECT pin-blue-F.axle1 -> bracket-H.axlehole1 LOCKED
 DOES pin-blue-D CARRIES bracket-G
 DOES pin-blue-F CARRIES bracket-H
 PATTERN mirror_the_side
-MECH frame rigid_frame bracket-G input_shaft_bearing
-MECH frame rigid_frame bracket-H second_bearing_post
-STATE frame 6/6 COMPLETE
+WHY Locking a bracket onto each axle end fixes it so it can't spin loose; leaving the middle peg bare keeps it free for the shift housing's cross hole next.
 
 STEP 6
-THINK have Frame with bracket-G and bracket-H hanging on the outer middle pegs; pin-blue-E bare in the middle.
-THINK goal Adds the gear-shift fork and its lever stud, so a shift lever (not in this model) can push the fork sideways to change gear.
-THINK part fork-J (32172 Technic Pin Connector Block 3 x 3 x 1): cross hole onto pin-blue-E's free axle end, hanging down between bracket-G and bracket-H; fixed
-THINK part knob-I (6628 Technic Pin with Friction Ridges Lengthwise and Towball): pin end into fork-J's top hole, ball sticking straight up above the beam; fixed
-THINK touches fork-J's cross hole goes onto pin-blue-E's free axle end
-THINK touches knob-I's pin end goes into fork-J's top hole
-THINK does pin-blue-E carries fork-J
-THINK does fork-J holds knob-I
-THINK need hinge: Lets two parts swing about one axis. Rules: Use frictionless pins or axles for free swing; friction pins make it stiff.
-THINK why fork-J's slot is sized to sit in the groove of the sliding clutch sleeve built in step 9, without turning with the shaft itself.
-THINK role fork-J in the gear-shift lever and fork: Housing with a slot that straddles the sliding clutch sleeve; a ball stud on top takes a lever.
-THINK role knob-I in the gear-shift lever and fork: Ball-stud lever attachment point on top of fork-J.
-THINK check pin-blue-E.axle1 goes into fork-J.axlehole1, 1 hole deep, locked (turn together)
-THINK check knob-I.pin1 goes into fork-J.hole1, 0.7 hole deep, held stiff by friction
-THINK builds_on fork-J builds on pin-blue-E (MOC-183729-step-04), which is the frame mount in the shift lever mount, and rests on beam-C (MOC-183729-step-03)
-THINK mechanism fork-J becomes the slotted housing, straddles the clutch sleeve of the shift lever mount
-THINK mechanism fork-J becomes the pushes the sleeve of the two-position gear clutch
-THINK mechanism knob-I becomes the ball-stud lever point of the shift lever mount
-THINK state shift_fork has 3 of 3 parts, complete
-THINK state clutch_select has 1 of 4 parts, still missing sleeve-wht-Q, sleeve-blk-S, gear-red-P
-THINK later fork-J's slot will straddle the dog-clutch sleeve added in step 9, so sliding fork-J (by pushing knob-I) slides the clutch between the two gears. Pattern: lever on a slider
 ADD fork-J 32172 red
 ADD knob-I 6628 lightgray
 CONNECT pin-blue-E.axle1 -> fork-J.axlehole1 LOCKED
@@ -189,46 +68,9 @@ CONNECT knob-I.pin1 -> fork-J.hole1 STIFF
 DOES pin-blue-E CARRIES fork-J
 DOES fork-J HOLDS knob-I
 PATTERN lever_on_a_slider
-MECH shift_fork hinge fork-J slotted_housing_straddles
-MECH clutch_select sliding_dog_clutch fork-J pushes_the_sleeve
-MECH shift_fork hinge knob-I ball_stud_lever
-STATE shift_fork 3/3 COMPLETE
-STATE clutch_select 1/4
+WHY fork-J's slot is sized to sit in the groove of the sliding clutch sleeve built in step 9, without turning with the shaft itself.
 
 STEP 7
-THINK have Frame with fork-J (shift housing, carrying knob-I) hanging in the middle, bracket-G and bracket-H either side.
-THINK goal Builds the main gear shaft that will carry the clutch mechanism and drive the output.
-THINK part bush-K (3713 Technic Bush): near the left end of axle-N, against the frame; fixed
-THINK part gear-gray-L (4019 Technic Gear 16 Tooth with Round Holes): on axle-N, just right of bush-K; fixed
-THINK part gear-tan-M (32269 Technic Gear 20 Tooth Double Bevel with Axle Hole Type 2): on axle-N, near the right end, inside fork-R; fixed
-THINK part axle-N (3707 Technic Axle 8): the main gear shaft, running the length of the frame through bush-K, gear-gray-L and gear-tan-M, and out through fork-R's bearing hole on the right; fixed
-THINK touches axle-N's 1st cross point locks into bush-K's cross hole
-THINK touches axle-N's 3rd cross point locks into gear-gray-L's cross hole
-THINK touches axle-N's 7th cross point locks into gear-tan-M's cross hole
-THINK touches axle-N's far end turns freely in fork-R's round hole~
-THINK does axle-N carries bush-K
-THINK does axle-N carries gear-gray-L
-THINK does axle-N carries gear-tan-M
-THINK does axle-N spins on fork-R
-THINK need gear_pair: Passes turning from one parallel shaft to another. Changes speed and force by the tooth ratio and reverses direction. Rules: Gears must be locked to their shafts (cross hole on axle). Shafts must turn freely (round holes) and be held at the right distance: (teeth_a + teeth_b) / 16 holes for spur gears (e.g. 16+16 = 2 holes, 8+24 = 2, 12+20 = 2). Each shaft needs support on two points or the gears push apart.
-THINK need shaft_with_stops: An axle that carries parts and turns, held from sliding by stops at both ends. Rules: At least two round-hole bearings. A stop on each side of the bearings.
-THINK why gear-gray-L and gear-tan-M are locked to the shaft (cross-hole gears) so they always turn with it; bush-K keeps the shaft from sliding left; fork-R's round hole lets the shaft spin free on the right.
-THINK role bush-K in the gear shaft and clutch: Spacer/stop near the main shaft's left end, locked to axle-N.
-THINK role gear-gray-L in the gear shaft and clutch: Gear locked to axle-N; meshes with the input gear gear-blue-U.
-THINK role gear-tan-M in the gear shaft and clutch: Gear locked to axle-N near the output end; always turns with the main shaft.
-THINK role axle-N in the gear shaft and clutch: The main shaft: carries bush-K, gear-gray-L, the clutch sleeve, gear-red-P (free) and gear-tan-M, and exits through fork-R and ext-W as the output.
-THINK check axle-N.axle1 goes into bush-K.axlehole1, 1 hole deep, locked (turn together)
-THINK check axle-N.axle3 goes into gear-gray-L.axlehole1, 1 hole deep, locked (turn together)
-THINK check axle-N.axle7 goes into gear-tan-M.axlehole1, 1 hole deep, locked (turn together)
-THINK check axle-N.axle8 goes into fork-R.hole1, 1 hole deep, turns freely (estimated from the picture)
-THINK builds_on axle-N builds on fork-R (MOC-183729-step-02), which is the right-hand main shaft bearing in the gearbox housing
-THINK mechanism gear-gray-L becomes the driven gear of the input to main shaft
-THINK mechanism gear-tan-M becomes the always-locked output gear of the output shaft
-THINK mechanism axle-N becomes the main shaft, carries the clutch and both output gears of the input to main shaft
-THINK state input_mesh has 2 of 4 parts, still missing axle-input-T, gear-blue-U
-THINK state output has 2 of 3 parts, still missing ext-W
-THINK result Turn axle-N once: gear-tan-M turns 1 turn
-THINK later gear-gray-L will mesh with the input gear added in step 10. The dog-clutch sleeve (step 9) and the second clutch gear (step 8) go on this same shaft, between gear-gray-L and gear-tan-M. The shaft's right end takes an output extension in step 11. Pattern: shaft with stops
 ADD bush-K 3713 lightgray
 ADD gear-gray-L 4019 lightgray
 ADD gear-tan-M 32269 tan
@@ -242,55 +84,17 @@ DOES axle-N CARRIES gear-gray-L
 DOES axle-N CARRIES gear-tan-M
 DOES axle-N SPINS_ON fork-R
 PATTERN shaft_with_stops
-MECH input_mesh gear_pair gear-gray-L driven_gear
-MECH output shaft_with_stops gear-tan-M always_locked_output
-MECH input_mesh gear_pair axle-N main_shaft_carries
-STATE input_mesh 2/4
-STATE output 2/3
-MOTION axle-N gear-tan-M=1
+WHY gear-gray-L and gear-tan-M are locked to the shaft (cross-hole gears) so they always turn with it; bush-K keeps the shaft from sliding left; fork-R's round hole lets the shaft spin free on the right.
 
 STEP 8
-THINK have Main shaft axle-N carries bush-K, gear-gray-L and gear-tan-M, spinning free in fork-R.
-THINK goal Adds the second of the two clutch gears -- one side of the gear choice the shift fork will select between.
-THINK part axle-brown-O (3705 Technic Axle 4): short axle, positioned between gear-gray-L and gear-tan-M on the main shaft line; fixed
-THINK part gear-red-P (18946 Technic Gear 16 Tooth with Clutch on Both Sides): on axle-brown-O, free to turn; free
-THINK touches gear-red-P's round hole goes onto axle-brown-O
-THINK does gear-red-P spins on axle-brown-O
-THINK why gear-red-P has clutch (dog-tooth) faces on both sides and a plain round hole, so by design it never locks to a shaft on its own -- only the sliding clutch sleeve from step 9 can lock it in.
-THINK role axle-brown-O in the gear shaft and clutch: Short axle gear-red-P free-spins on, positioned in line with the main shaft.
-THINK role gear-red-P in the gear shaft and clutch: Free clutch gear between gear-gray-L and gear-tan-M; the dog-clutch sleeve can lock it to the shaft.
-THINK check axle-brown-O.axle2 goes into gear-red-P.hole1, 1 hole deep, turns freely
-THINK mechanism gear-red-P becomes the free gear the sleeve can lock to the shaft of the two-position gear clutch
-THINK state clutch_select has 2 of 4 parts, still missing sleeve-wht-Q, sleeve-blk-S
-THINK later The dog-clutch sleeve in step 9 sits right next to gear-red-P and can slide onto its clutch face to lock it to the main shaft, giving one of the two gear speeds. Pattern: free clutch gear on a stub shaft
 ADD axle-brown-O 3705 brown
 ADD gear-red-P 18946 red
 CONNECT axle-brown-O.axle2 -> gear-red-P.hole1 TURNS
 DOES gear-red-P SPINS_ON axle-brown-O
 PATTERN stub_shaft_extension
-MECH clutch_select sliding_dog_clutch gear-red-P free_gear_the
-STATE clutch_select 2/4
+WHY gear-red-P has clutch (dog-tooth) faces on both sides and a plain round hole, so by design it never locks to a shaft on its own -- only the sliding clutch sleeve from step 9 can lock it in.
 
 STEP 9
-THINK have Main shaft carries gear-gray-L and gear-tan-M (locked); gear-red-P free on its own stub between them.
-THINK goal Adds the sliding dog-clutch collar that fork-J (step 6) will push back and forth to choose a gear.
-THINK part sleeve-wht-Q (6538b Technic Axle Connector Ridged): locked onto axle-N, sitting inside fork-J's shift slot; fixed
-THINK part sleeve-blk-S (6538b Technic Axle Connector Ridged): locked onto axle-N next to sleeve-wht-Q, forming one combined sliding sleeve; fixed
-THINK touches sleeve-wht-Q's cross hole locks onto axle-N
-THINK touches sleeve-blk-S's cross hole locks onto axle-N, next to sleeve-wht-Q
-THINK does axle-N carries sleeve-wht-Q
-THINK does axle-N carries sleeve-blk-S
-THINK why A cross-hole connector locked to the shaft always turns with it (unlike gear-red-P's free hole), but can still slide along the shaft's length -- that sliding motion, guided by fork-J's slot, is what engages or disengages gear-red-P's clutch face.
-THINK role sleeve-wht-Q in the gear shaft and clutch: Half of the sliding dog-clutch collar, locked to axle-N, slides in fork-J's slot.
-THINK role sleeve-blk-S in the gear shaft and clutch: Other half of the sliding dog-clutch collar, locked to axle-N next to sleeve-wht-Q.
-THINK check axle-N.axle5 goes into sleeve-wht-Q.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
-THINK check axle-N.axle6 goes into sleeve-blk-S.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
-THINK builds_on sleeve-wht-Q builds on axle-N (MOC-183729-step-07), which is the main shaft, carries the clutch and both output gears in the input to main shaft, and rests on bush-K (MOC-183729-step-07), gear-gray-L (MOC-183729-step-07)
-THINK builds_on sleeve-blk-S builds on axle-N (MOC-183729-step-07), which is the main shaft, carries the clutch and both output gears in the input to main shaft, and rests on bush-K (MOC-183729-step-07), gear-gray-L (MOC-183729-step-07)
-THINK mechanism sleeve-wht-Q becomes the half of the sliding collar, locked to axle-N of the two-position gear clutch
-THINK mechanism sleeve-blk-S becomes the other half of the sliding collar, locked to axle-N of the two-position gear clutch
-THINK state clutch_select has 4 of 4 parts, complete
-THINK later Sliding this collar toward gear-red-P locks that gear to the shaft for one output speed; sliding it the other way disengages it. Exactly what the other position connects to is not confirmed -- see systems.json. Pattern: sliding dog clutch
 ADD sleeve-wht-Q 6538b white
 ADD sleeve-blk-S 6538b black
 CONNECT axle-N.axle5 -> sleeve-wht-Q.axlehole1~ LOCKED
@@ -298,31 +102,9 @@ CONNECT axle-N.axle6 -> sleeve-blk-S.axlehole1~ LOCKED
 DOES axle-N CARRIES sleeve-wht-Q
 DOES axle-N CARRIES sleeve-blk-S
 PATTERN sliding_dog_clutch
-MECH clutch_select sliding_dog_clutch sleeve-wht-Q half_of_the
-MECH clutch_select sliding_dog_clutch sleeve-blk-S other_half_of
-STATE clutch_select 4/4 COMPLETE
+WHY A cross-hole connector locked to the shaft always turns with it (unlike gear-red-P's free hole), but can still slide along the shaft's length -- that sliding motion, guided by fork-J's slot, is what engages or disengages gear-red-P's clutch face.
 
 STEP 10
-THINK have Main shaft complete with the dog-clutch sleeve and gear-red-P between gear-gray-L and gear-tan-M.
-THINK goal Adds the input: a hand- or motor-turned shaft that drives the main gear shaft through gear-gray-L.
-THINK part axle-input-T (3705 Technic Axle 4): a short shaft below and parallel to the main shaft, through bracket-G's round hole, sticking out the bottom of the frame; fixed
-THINK part gear-blue-U (35185 Technic Gear 20 Tooth Double Bevel with Clutch on Both Sides): on axle-input-T, meshing upward with gear-gray-L; free
-THINK touches axle-input-T turns in bracket-G's round hole~
-THINK touches gear-blue-U's round hole goes onto axle-input-T~
-THINK touches gear-blue-U's teeth mesh with gear-gray-L's teeth
-THINK does gear-blue-U drives gear-gray-L (ratio 20/16)
-THINK need gear_pair: Passes turning from one parallel shaft to another. Changes speed and force by the tooth ratio and reverses direction. Rules: Gears must be locked to their shafts (cross hole on axle). Shafts must turn freely (round holes) and be held at the right distance: (teeth_a + teeth_b) / 16 holes for spur gears (e.g. 16+16 = 2 holes, 8+24 = 2, 12+20 = 2). Each shaft needs support on two points or the gears push apart.
-THINK why A double-bevel gear meshes cleanly with gear-gray-L's plain teeth at this close spacing; its own clutch faces aren't used here, just its teeth.
-THINK role axle-input-T in the gear shaft and clutch: Input shaft, turned by hand or motor at ext-V; meshes gear-blue-U into gear-gray-L.
-THINK role gear-blue-U in the gear shaft and clutch: Input gear on axle-input-T; drives gear-gray-L.
-THINK check axle-input-T.axle1 goes into bracket-G.hole1, 1 hole deep, turns freely (estimated from the picture)
-THINK check axle-input-T.axle2 goes into gear-blue-U.hole1, 1 hole deep, turns freely (estimated from the picture)
-THINK builds_on axle-input-T builds on bracket-G (MOC-183729-step-05), which is the input shaft bearing post in the gearbox housing, and rests on pin-blue-D (MOC-183729-step-04)
-THINK builds_on gear-blue-U builds on gear-gray-L (MOC-183729-step-07), which is the driven gear in the input to main shaft, and rests on axle-N (MOC-183729-step-07)
-THINK mechanism axle-input-T becomes the input shaft of the input to main shaft
-THINK mechanism gear-blue-U becomes the driver gear of the input to main shaft
-THINK state input_mesh has 4 of 4 parts, complete
-THINK later axle-input-T's free end takes an output-style extension in step 11, making it an external handle. This is the gearbox's drive input. Pattern: input gear mesh
 ADD axle-input-T 3705 black
 ADD gear-blue-U 35185 blue
 CONNECT axle-input-T.axle1 -> bracket-G.hole1~ TURNS
@@ -331,31 +113,9 @@ MESH gear-blue-U.teeth gear-gray-L.teeth
 DOES gear-blue-U DRIVES gear-gray-L
 RATIO gear-blue-U gear-gray-L 20/16
 PATTERN input_gear_mesh
-MECH input_mesh gear_pair axle-input-T input_shaft
-MECH input_mesh gear_pair gear-blue-U driver_gear
-STATE input_mesh 4/4 COMPLETE
+WHY A double-bevel gear meshes cleanly with gear-gray-L's plain teeth at this close spacing; its own clutch faces aren't used here, just its teeth.
 
 STEP 11
-THINK have Input shaft (axle-input-T, gear-blue-U) meshes with the main shaft's gear-gray-L; the dog-clutch sleeve sits between gear-gray-L and gear-red-P.
-THINK goal Finishes both shaft ends as external handles a motor or another model can plug into.
-THINK part ext-V (6538b Technic Axle Connector Ridged): on axle-input-T's free end, sticking out the bottom of the frame as a handle; fixed
-THINK part ext-W (6538b Technic Axle Connector Ridged): on axle-N's free end, sticking out the top-right of the frame as the output; fixed
-THINK touches ext-V's cross hole locks onto axle-input-T's free end
-THINK touches ext-W's cross hole locks onto axle-N's free end~
-THINK does axle-input-T carries ext-V
-THINK does axle-N carries ext-W
-THINK need shaft_with_stops: An axle that carries parts and turns, held from sliding by stops at both ends. Rules: At least two round-hole bearings. A stop on each side of the bearings.
-THINK why A ridged axle connector gives a longer, grippable stub with a cross hole on its far end, so the shaft can reach past the frame and still take another axle.
-THINK role ext-V in the gear shaft and clutch: Input handle, the exposed end of axle-input-T.
-THINK role ext-W in the gear shaft and clutch: Output handle, the exposed end of axle-N.
-THINK check axle-input-T.axle3 goes into ext-V.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
-THINK check axle-N.axle8 goes into ext-W.axlehole1, 1 hole deep, locked (turn together) (estimated from the picture)
-THINK builds_on ext-V builds on axle-input-T (MOC-183729-step-10), which is the input shaft in the input to main shaft, and rests on bracket-G (MOC-183729-step-05), gear-blue-U (MOC-183729-step-10)
-THINK builds_on ext-W builds on axle-N (MOC-183729-step-07), which is the main shaft, carries the clutch and both output gears in the input to main shaft, and rests on bush-K (MOC-183729-step-07), gear-gray-L (MOC-183729-step-07)
-THINK mechanism ext-W becomes the output handle of the output shaft
-THINK state output has 3 of 3 parts, complete
-THINK result Turn axle-N once: gear-tan-M turns 1 turn, ext-W turns 1 turn
-THINK later Nothing further in this 11-step booklet -- this is the last step. ext-V is where you'd turn the gearbox by hand or motor; ext-W is where the selected speed comes out. Pattern: axle extension handle
 ADD ext-V 6538b white
 ADD ext-W 6538b white
 CONNECT axle-input-T.axle3 -> ext-V.axlehole1~ LOCKED
@@ -363,6 +123,4 @@ CONNECT axle-N.axle8 -> ext-W.axlehole1~ LOCKED
 DOES axle-input-T CARRIES ext-V
 DOES axle-N CARRIES ext-W
 PATTERN axle_extension
-MECH output shaft_with_stops ext-W output_handle
-STATE output 3/3 COMPLETE
-MOTION axle-N gear-tan-M=1 ext-W=1
+WHY A ridged axle connector gives a longer, grippable stub with a cross hole on its far end, so the shaft can reach past the frame and still take another axle.

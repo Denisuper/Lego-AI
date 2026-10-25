@@ -15,15 +15,18 @@ ADD axle-1 3705 black
 CONNECT axle-1.axle1 -> triple-1.axlehole1 LOCKED
 CONNECT axle-1.axle2 -> doublesplit-1.axlehole1~ LOCKED
 WHY Starts the input block by joining a triple connector and a double-split connector nose to nose on one long axle.
+
 STEP 2
 ADD sixfivethreesix-1 6536 black
 CONNECT sixfivethreesix-1.axlehole1 -> axle-1.axle3 LOCKED
 WHY Caps the free end of the same axle with another perpendicular connector, finishing the input block's three-connector stack.
+
 STEP 3
 ADD pin-1 43093 blue
 ADD gear-1 3647 darkbluishgray
 CONNECT gear-1.axlehole1 -> pin-1.axle1 LOCKED
 WHY Builds a small fixed-gear sub-assembly on its own, separate from the input block, ready to plug in later.
+
 STEP 4
 ADD apin-1 18651 black
 ADD apin-2 18651 black
@@ -32,15 +35,18 @@ ADD bush-2 3713 red
 CONNECT bush-1.axlehole1 -> apin-1.axle1 LOCKED
 CONNECT bush-2.axlehole1 -> apin-2.axle1 LOCKED
 WHY Builds two identical pin-and-bush units, the outer tip of each capped with a bush so it can't slide out later.
+
 STEP 5
 ADD drivering-1 26287 red
 CONNECT drivering-1.axlehole1 -> apin-1.axle2 LOCKED
 CONNECT drivering-1.axlehole1 -> apin-2.axle2 LOCKED
 WHY Joins the two pin units end to end through the long driving ring, making one output rod with a bush at each end.
+
 STEP 6
 CONNECT pin-1.pin1 -> doublesplit-1.hole1~ STIFF
 CONNECT apin-1.pin1 -> sixfivethreesix-1.hole1 STIFF
 WHY Plugs the small fixed-gear unit and the long output rod into the input block's two free round holes, tying all three sub-builds together.
+
 STEP 7
 ADD diff-1 6573 darkbluishgray
 ADD bevel-1 6589 tan
@@ -50,6 +56,7 @@ CONNECT bevel-1.axlehole1 -> axle-2.axle1 LOCKED
 CONNECT bevel-2.axlehole1 -> axle-2.axle2 LOCKED
 CONNECT axle-2.axle3 -> diff-1.hole1~ TURNS
 WHY Locks two bevel gears onto a short axle and drops them inside the first differential housing, with the axle riding free in the housing's near hole.
+
 STEP 8
 ADD conn18654-1 18654 darkbluishgray
 ADD bevel-3 6589 tan
@@ -60,6 +67,7 @@ CONNECT axle-3.axle2 -> diff-1.hole2~ TURNS
 CONNECT conn18654-1.hole1 -> axle-3.axle3 TURNS
 CONNECT gear10928-1.axlehole1 -> axle-3.axle4 LOCKED
 WHY Builds the first differential's output shaft: a third bevel gear through the housing's far hole, a round spacer, and a reinforced gear locked on the tip.
+
 STEP 9
 ADD diff-2 6573 darkbluishgray
 ADD bevel-4 6589 tan
@@ -69,6 +77,7 @@ CONNECT bevel-4.axlehole1 -> axle-4.axle1 LOCKED
 CONNECT bevel-5.axlehole1 -> axle-4.axle2 LOCKED
 CONNECT axle-4.axle3 -> diff-2.hole1~ TURNS
 WHY Repeats step 7 for the second differential housing, so the gearbox ends up with two matching gear units side by side.
+
 STEP 10
 ADD conn18654-2 18654 darkbluishgray
 ADD bevel-6 6589 tan
@@ -79,11 +88,13 @@ CONNECT axle-5.axle2 -> diff-2.hole2~ TURNS
 CONNECT conn18654-2.hole1 -> axle-5.axle3 TURNS
 CONNECT gear10928-2.axlehole1 -> axle-5.axle4 LOCKED
 WHY Repeats step 8 for the second housing, giving it its own spaced, reinforced output gear.
+
 STEP 11
 CONNECT axle-2.axle3 -> triple-1.hole2~ TURNS
 CONNECT axle-4.axle3 -> triple-1.hole3~ TURNS
 MESH gear-1.teeth gear10928-1.teeth
 WHY Swings both differential units back onto the input block's spare holes and brings the fixed gear into mesh with the first output gear.
+
 STEP 12
 ADD triple-2 63869 black
 ADD doublesplit-2 41678 black
@@ -91,12 +102,14 @@ ADD axle-6 3705 black
 CONNECT axle-6.axle1 -> triple-2.axlehole1 LOCKED
 CONNECT axle-6.axle2 -> doublesplit-2.axlehole1~ LOCKED
 WHY Builds a second input-style block, a mirror of step 1, for the far end of the gearbox.
+
 STEP 13
 ADD sixfivethreesix-2 6536 black
 ADD pin2780-1 2780 black
 CONNECT sixfivethreesix-2.axlehole1 -> axle-6.axle3 LOCKED
 CONNECT pin2780-1.pin1 -> triple-2.hole1~ STIFF
 WHY Caps the second block's axle the same way as step 2, then plugs a friction pin into its triple connector for a later attachment point.
+
 STEP 14
 ADD apin-4 18651 black
 ADD apin-5 18651 black
@@ -105,24 +118,29 @@ ADD bush-6 3713 red
 CONNECT bush-5.axlehole1 -> apin-4.axle1 LOCKED
 CONNECT bush-6.axlehole1 -> apin-5.axle1 LOCKED
 WHY Repeats step 4 to build the second output rod's two pin-and-bush units.
+
 STEP 15
 ADD drivering-2 26287 red
 CONNECT drivering-2.axlehole1 -> apin-4.axle2 LOCKED
 CONNECT drivering-2.axlehole1 -> apin-5.axle2 LOCKED
 WHY Joins the second pair of pin units through the second driving ring, completing the second output rod.
+
 STEP 16
 ADD pin3749-1 3749 tan
 ADD gear-2 3647 darkbluishgray
 CONNECT gear-2.axlehole1 -> pin3749-1.axle1 LOCKED
 WHY Builds a second small fixed-gear unit the same way as step 3, using the frictionless tan pin left in the inventory.
+
 STEP 17
 CONNECT pin3749-1.pin1 -> doublesplit-2.hole1~ TURNS
 CONNECT apin-4.pin1 -> sixfivethreesix-2.hole1 STIFF
 WHY Plugs the second fixed-gear unit and the second output rod into the second block, mirroring step 6.
+
 STEP 18
 CONNECT apin-5.pin1 -> triple-2.hole2~ STIFF
 MESH gear-2.teeth gear10928-2.teeth
 WHY Closes the far end of the gearbox: the second rod's last free pin grips the second block's triple connector while the second fixed gear meshes with the second output gear.
+
 STEP 19
 ADD motor-1 99499c01 lightbluishgray
 CONNECT axle-1.axle4 -> motor-1.shaft? LOCKED

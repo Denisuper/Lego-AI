@@ -1,0 +1,61 @@
+set,steps,inventory_parts,training_parts,booklets,checker_errors,missing_parts,extra_parts,unknown_endpoints,estimated_endpoints,status,notes
+42004,0,246,0,2,0,0,0,0,0,not started,
+42006,89,720,695,4,0,25,0,41,25,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
+42009,0,2607,0,1,0,0,0,0,0,not started,
+42021,29,186,185,1,0,1,0,0,34,needs review,Inventory differs by part and colour
+42029,0,1063,0,2,0,0,0,0,0,not started,
+42030,0,1636,0,1,0,0,0,0,0,not started,
+42049,164,476,476,5,0,0,0,56,9,ready,
+42052,0,1042,0,1,0,0,0,0,0,not started,
+42054,0,1976,0,1,0,0,0,0,0,not started,
+42055,0,3929,0,1,0,0,0,0,0,not started,
+42056,0,2704,0,1,0,0,0,0,0,not started,
+42061,45,260,245,2,0,20,5,4,0,needs review,Inventory differs by part and colour
+42063,0,603,0,2,0,0,0,0,0,not started,
+42080,0,1003,0,1,0,0,0,0,0,not started,
+42082,0,4056,0,2,0,0,0,0,0,not started,
+42083,0,3599,0,2,0,0,0,0,0,not started,
+42094,126,827,394,2,0,433,0,71,13,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
+42095,0,324,0,1,0,0,0,0,0,not started,
+42100,0,4108,0,2,0,0,0,0,0,not started,
+42101,36,117,116,1,0,10,9,10,132,needs review,Inventory differs by part and colour
+42110,0,2573,0,1,0,0,0,0,0,not started,
+42114,54,44,424,1,572,33,413,120,0,needs review,Incomplete training or unresolved main/optional-build inventory scope; Run check_notation.py for existing connection errors; Inventory differs by part and colour
+42116,33,139,129,1,0,17,7,8,0,needs review,Inventory differs by part and colour
+42117,55,154,154,2,0,0,0,90,88,ready,
+42129,409,2131,2141,2,0,66,76,434,0,needs review,Duplicate name: ra-gear-3; Duplicate name: fa-gear-1; Inventory differs by part and colour
+42131,0,3854,0,2,0,0,0,0,0,not started,
+42133,59,143,143,2,0,0,0,16,96,ready,
+42175,199,731,731,1,0,5,5,306,300,needs review,Inventory differs by part and colour
+8043,0,1123,0,3,0,0,0,0,0,not started,
+8047,88,252,252,1,1,0,0,15,73,needs review,Run check_notation.py for existing connection errors
+8049,0,525,0,2,0,0,0,0,0,not started,
+8069,0,609,0,2,0,0,0,0,0,not started,
+8258,0,1877,0,5,0,0,0,0,0,not started,
+8275,0,1381,0,3,0,0,0,0,0,not started,
+8448,0,1406,0,2,0,0,0,0,0,not started,
+8862,0,679,0,1,0,0,0,0,0,not started,
+8880,0,1346,0,1,0,0,0,0,0,not started,
+differentials/Differential-v2,9,35,35,1,0,35,35,42,12,needs review,Inventory differs by part and colour
+differentials/MOC-150019,32,124,118,1,0,10,4,0,0,needs review,Inventory differs by part and colour
+differentials/MOC-157410,7,19,19,1,0,19,19,9,0,needs review,Inventory differs by part and colour
+differentials/MOC-158072,8,24,24,1,0,24,24,32,0,needs review,Inventory differs by part and colour
+differentials/MOC-185197,6,10,10,1,0,10,10,3,1,needs review,Inventory differs by part and colour
+differentials/MOC-194194,15,35,35,1,0,35,35,18,0,needs review,Inventory differs by part and colour
+differentials/MOC-226025,41,128,116,1,0,19,7,28,78,needs review,Inventory differs by part and colour
+differentials/MOC-266362,12,32,32,1,0,0,0,9,40,ready,
+differentials/MOC-31209,10,20,20,1,0,20,20,1,6,needs review,Inventory differs by part and colour
+differentials/MOC-31377,13,45,45,1,0,45,45,31,6,needs review,Inventory differs by part and colour
+gearboxes/MOC-171508,0,154,0,2,0,0,0,0,0,not started,
+gearboxes/MOC-180337,0,147,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-187095,0,100,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-191057,0,186,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-50877,36,127,127,1,0,0,0,0,0,ready,
+gearboxes/MOC-51030,0,161,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-51409,88,251,251,1,0,0,0,0,0,ready,
+gearboxes/MOC-54174,0,114,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-65060,47,70,70,1,0,0,0,0,0,ready,
+gearboxes/MOC-6speed-gearbox,0,110,0,1,0,0,0,0,0,not started,
+gearboxes/MOC-74158,39,81,81,1,0,51,51,9,38,needs review,Inventory differs by part and colour
+gearboxes/MOC-micro-auto-gearbox,19,40,40,1,0,0,0,1,12,ready,
+MOC-183729,11,26,26,1,0,0,0,0,8,ready,

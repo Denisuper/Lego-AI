@@ -55,4 +55,4 @@ Names are from memory: confirm the set number and name on Rebrickable before lab
 - **Mechanism coverage:** across the list the model sees levers, linkages, worm drives, turntables, tracks, steering (normal, articulated, 4-wheel), suspension, gearboxes, differentials, pneumatics, linear actuators, motors, winches and telescopic booms. 8047 only covers worm drives, a turntable, linkages and tracks.
 - **Small first:** labeling cost grows with step count, and small sets make the tools faster before tackling 1,000+ piece sets.
 - **3D models:** they let us check every label against exact geometry and build the picture-comparison check.
-- **Testing:** with 2+ sets, `training/export.py` keeps one whole set aside to test on.
+- **Testing:** `training/pack_data.py` combines audited ready sets and holds out one whole set. See `dataset_status.csv` for actual progress; this list is a selection guide.

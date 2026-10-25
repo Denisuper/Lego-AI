@@ -19,12 +19,14 @@ CONNECT pin-2.? -> frame-1.hole5~ STIFF
 CONNECT pin-3.? -> frame-1.hole16~ STIFF
 CONNECT pin-4.? -> frame-1.hole20~ STIFF
 WHY Starts the build with the 7x5 open frame and presses a pin joiner into each of its four corner holes, giving the next parts posts to sit on.
+
 STEP 2
 ADD beam-1 32523 red
 ADD beam-2 32523 red
 CONNECT beam-1.hole1 -> pin-1.? STIFF
 CONNECT beam-2.hole1 -> pin-3.? STIFF
 WHY Presses the two red 1x3 beams onto the free ends of two corner pins, starting the inner cage that will hold the gear cluster.
+
 STEP 3
 ADD fric-1 2780 black
 ADD fric-2 2780 black
@@ -33,20 +35,24 @@ CONNECT fric-1.pin2 -> beam-1.hole3 STIFF
 CONNECT fric-2.pin1 -> frame-1.hole11~ STIFF
 CONNECT fric-2.pin2 -> beam-2.hole3 STIFF
 WHY Pins the free ends of the two red beams into the frame's middle holes with friction pins, squaring up the cage.
+
 STEP 4
 ADD bevel-1 6589 tan
 ADD bevel-2 6589 tan
 WHY Drops the two 12-tooth bevel gears into the cage; they will lock onto the differential housings' stubs once those are built.
+
 STEP 5
 ADD gear20-1 24201 black
 ADD gear20-2 24201 black
 WHY Adds the two 20-tooth gears that will carry the housings' output drive once the housings are built.
+
 STEP 6
 ADD beam7-1 32524 lightbluishgray
 ADD beam7-2 32524 lightbluishgray
 CONNECT beam7-1.hole1 -> pin-2.? STIFF
 CONNECT beam7-2.hole1 -> pin-4.? STIFF
 WHY Presses the two long 1x7 beams onto the remaining corner pins, extending the frame into the side rails that will carry the output axles.
+
 STEP 7
 GROUP arm-a
 ADD housing-a 60c01 black
@@ -70,6 +76,7 @@ END
 ATTACH arm-a
 CONNECT axlecon-a1.? -> beam-1.hole2~ STIFF
 WHY Builds the first differential housing with its red angled spokes, cross connectors and cap, locks the 12- and 20-tooth gears onto its stubs, and attaches the finished arm to the cage.
+
 STEP 8
 GROUP arm-b
 ADD housing-b 60c01 black
@@ -93,6 +100,7 @@ END
 ATTACH arm-b
 CONNECT axlecon-b1.? -> beam-2.hole2~ STIFF
 WHY Builds the mirrored second differential housing the same way and attaches it to the opposite side of the cage, completing both gear clusters.
+
 STEP 9
 ADD lock-1 6587 lightbluishgray
 ADD lock-2 6587 lightbluishgray
