@@ -1631,3 +1631,449 @@ CONNECT p87083-7.axle4 -> p32526-16.hole7 TURNS
 CONNECT p87083-7.axle3~ -> p61927b-1.hole2~ TURNS
 CONNECT p87083-7.axle1~ -> p3713-15.axlehole1 LOCKED
 WHY Pins the lift actuator rod between the two boom braces and adds the bush to stop the axle sliding out while the rod eye pivots.
+
+STEP 82
+GROUP cab-front-brace
+ADD p32524-8 32524 yellow
+ADD p2780-73 2780 black
+ADD p32054-27 32054 lightgray
+ADD p43093-15 43093 blue
+ADD p62462-2 62462 yellow
+CONNECT p2780-73.pin1 -> p32524-8.hole1 STIFF
+CONNECT p32054-27.pin1 -> p32524-8.hole6 STIFF
+CONNECT p43093-15.axle1 -> p32054-27.axlehole1 LOCKED
+CONNECT p43093-15.pin1 -> p62462-2.hole1 STIFF
+END
+ATTACH cab-front-brace
+CONNECT p2780-73.pin2 -> p32009-3.hole5 STIFF
+CONNECT p32054-27.pin2 -> p32316-4.hole1 STIFF
+ADD p60483-3 60483 black
+CONNECT p60485-4.axle9 -> p60483-3.axlehole1 LOCKED
+WHY Adds the sloping seven-hole cab brace with its yellow sleeve and fits a black connector onto the exposed lower cross shaft for the later cab mounts.
+
+STEP 83
+ADD p32278-13 32278 yellow
+CONNECT p43093-14.pin1 -> p32278-13.hole13 STIFF
+CONNECT p6558-40.pin1 -> p32278-13.hole14 STIFF
+CONNECT p2780-72.pin1 -> p32278-13.hole15 STIFF
+CONNECT p32054-20.pin2 -> p32278-13.hole1 STIFF
+ADD p48989-7 48989 lightgray
+CONNECT p48989-7.pin1 -> p32278-13.hole6 STIFF
+CONNECT p48989-7.pin2 -> p32278-13.hole8 STIFF
+WHY Closes the right top rail over the four existing pins and adds the grey four-pin connector with its pair of pins two holes apart.
+
+STEP 84
+ADD p2780-74 2780 black
+ADD p2780-75 2780 black
+ADD p32525-6 32525 yellow
+CONNECT p2780-74.pin1 -> p48989-5.hole1 STIFF
+CONNECT p2780-75.pin1 -> p48989-7.hole1 STIFF
+CONNECT p2780-74.pin2 -> p32525-6.hole11 STIFF
+CONNECT p2780-75.pin2 -> p32525-6.hole1 STIFF
+CONNECT p55615-3.pin1 -> p32525-6.hole5 STIFF
+CONNECT p55615-3.pin2 -> p32525-6.hole7 STIFF
+WHY Bridges the two sides with the eleven-hole top beam, pressing its ends onto the new black pins and its middle over the two gearbox support pins.
+
+STEP 85
+GROUP rear-cab-bracket
+ADD p32526-17 32526 yellow
+ADD p6558-41 6558 blue
+ADD p6558-42 6558 blue
+CONNECT p6558-41.pin1 -> p32526-17.hole1 STIFF
+CONNECT p6558-42.pin2 -> p32526-17.hole7 STIFF
+END
+ATTACH rear-cab-bracket
+CONNECT p6558-41.pin2 -> p41239-1.hole1 STIFF
+CONNECT p6558-41.pin3 -> p32526-9.hole5 STIFF
+CONNECT p6558-42.pin3 -> p32278-13.hole3 STIFF
+WHY Applies the rear warning sticker from the existing sheet and mounts the yellow bent bracket with both blue pins projecting to receive the cab.
+
+STEP 86
+GROUP middle-cab-bracket
+ADD p32184-3 32184 lightgray
+ADD p43093-16 43093 blue
+ADD p43093-17 43093 blue
+ADD p32526-18 32526 yellow
+ADD p2780-76 2780 black
+ADD p32054-28 32054 lightgray
+CONNECT p43093-16.axle1 -> p32184-3.axlehole1 LOCKED
+CONNECT p43093-17.axle1 -> p32184-3.axlehole2 LOCKED
+CONNECT p43093-16.pin1 -> p32526-18.hole2 STIFF
+CONNECT p43093-17.pin1 -> p32526-18.hole4 STIFF
+CONNECT p2780-76.pin2 -> p32526-18.hole1 STIFF
+CONNECT p32054-28.pin1 -> p32184-3.hole1 STIFF
+END
+ATTACH middle-cab-bracket
+CONNECT p2780-76.pin1 -> p32278-13.hole12 STIFF
+CONNECT p6558-20.pin3 -> p32526-18.hole5 STIFF
+CONNECT p2780-34.pin2 -> p32526-18.hole7 STIFF
+CONNECT p32054-28.pin2 -> p40490-17.hole9 STIFF
+WHY Builds the second bent cab bracket around the grey cross connector and mounts it beside the sloping front brace with its grey pin pointing outward.
+
+STEP 87
+GROUP cab
+ADD p32073-8 32073 lightgray
+ADD p32009-4 32009 black
+ADD p60483-4 60483 black
+CONNECT p32073-8.axle1 -> p32009-4.axlehole1 LOCKED
+CONNECT p32073-8.axle2 -> p60483-4.axlehole1 LOCKED
+ADD p60483-5 60483 black
+ADD p6558-43 6558 blue
+ADD p32013-1 32013 lightgray
+ADD p4519-12 4519 lightgray
+ADD p32013-2 32013 lightgray
+ADD p4519-13 4519 lightgray
+CONNECT p6558-43.pin2 -> p60483-5.hole1 STIFF
+CONNECT p6558-43.pin1 -> p32013-1.hole1 STIFF
+CONNECT p6558-43.pin3 -> p32013-2.hole1 STIFF
+CONNECT p4519-12.axle3 -> p32013-1.axlehole1 LOCKED
+CONNECT p4519-13.axle3 -> p32013-2.axlehole1 LOCKED
+CONNECT p32073-8.axle3 -> p60483-5.axlehole1 LOCKED
+ADD p60483-6 60483 black
+ADD p32034-1 32034 black
+ADD p43093-18 43093 blue
+ADD p43093-19 43093 blue
+CONNECT p43093-18.axle1 -> p32034-1.axlehole1 LOCKED
+CONNECT p43093-19.axle1 -> p32034-1.axlehole2 LOCKED
+CONNECT p43093-19.pin1 -> p32009-4.hole3 STIFF
+CONNECT p32073-8.axle4 -> p60483-6.axlehole1 LOCKED
+ADD p6558-44 6558 blue
+ADD p2780-77 2780 black
+ADD p2780-78 2780 black
+ADD p2780-79 2780 black
+CONNECT p6558-44.pin1 -> p32009-4.hole5 STIFF
+CONNECT p2780-77.pin1 -> p32009-4.hole6 STIFF
+CONNECT p2780-78.pin1 -> p32009-4.hole7 STIFF
+CONNECT p2780-79.pin1 -> p32009-4.hole8 STIFF
+ADD p32524-9 32524 black
+ADD p32278-14 32278 yellow
+CONNECT p2780-78.pin2 -> p32524-9.hole7 STIFF
+CONNECT p2780-79.pin2 -> p32524-9.hole6 STIFF
+CONNECT p6558-44.pin2 -> p32278-14.hole15 STIFF
+CONNECT p2780-77.pin2 -> p32278-14.hole14 STIFF
+ADD p6558-45 6558 blue
+ADD p6558-46 6558 blue
+CONNECT p6558-45.pin1 -> p32524-9.hole5 STIFF
+CONNECT p6558-46.pin2 -> p32524-9.hole1 STIFF
+ADD p32526-19 32526 black
+ADD p2780-80 2780 black
+ADD p6558-47 6558 blue
+ADD p6558-48 6558 blue
+CONNECT p2780-80.pin1 -> p32526-19.hole3 STIFF
+CONNECT p6558-47.pin2 -> p32526-19.hole6 STIFF
+CONNECT p6558-48.pin2 -> p32526-19.hole7 STIFF
+CONNECT p6558-45.pin2 -> p32526-19.hole1 STIFF
+CONNECT p6558-46.pin3 -> p32526-19.hole5 STIFF
+GROUP seat
+ADD p32524-10 32524 black
+ADD p6558-49 6558 blue
+ADD p6558-50 6558 blue
+ADD p32526-20 32526 blue
+ADD p32526-21 32526 blue
+CONNECT p6558-49.pin2 -> p32524-10.hole2 STIFF
+CONNECT p6558-50.pin2 -> p32524-10.hole6 STIFF
+CONNECT p6558-49.pin1 -> p32526-20.hole1 STIFF
+CONNECT p6558-50.pin1 -> p32526-20.hole5 STIFF
+CONNECT p6558-49.pin3 -> p32526-21.hole1 STIFF
+CONNECT p6558-50.pin3 -> p32526-21.hole5 STIFF
+END
+ATTACH seat
+CONNECT p6558-44.pin3 -> p32524-10.hole7 STIFF
+ADD p32524-11 32524 black
+ADD p32523-10 32523 black
+ADD p32140-2 32140 black
+CONNECT p6558-47.pin3 -> p32524-11.hole1 STIFF
+CONNECT p6558-48.pin3 -> p32524-11.hole2 STIFF
+CONNECT p2780-80.pin2 -> p32523-10.hole3 STIFF
+CONNECT p32073-8.axle5 -> p32140-2.axlehole1 LOCKED
+CONNECT p43093-18.pin1 -> p32140-2.hole3 STIFF
+ADD p32524-12 32524 black
+ADD p2780-81 2780 black
+ADD p2780-82 2780 black
+ADD p2780-83 2780 black
+CONNECT p2780-81.pin1 -> p32524-11.hole3 STIFF
+CONNECT p2780-82.pin1 -> p32524-11.hole6 STIFF
+CONNECT p2780-83.pin1 -> p32523-10.hole1 STIFF
+CONNECT p2780-81.pin2 -> p32524-12.hole4 STIFF
+CONNECT p2780-82.pin2 -> p32524-12.hole7 STIFF
+CONNECT p2780-83.pin2 -> p32524-12.hole1 STIFF
+ADD p2780-84 2780 black
+ADD p2780-85 2780 black
+ADD p2780-86 2780 black
+ADD p6558-51 6558 blue
+CONNECT p2780-84.pin1 -> p32140-2.hole2 STIFF
+CONNECT p2780-85.pin1 -> p32278-14.hole13 STIFF
+CONNECT p2780-86.pin1 -> p32278-14.hole1 STIFF
+CONNECT p6558-51.pin1 -> p32278-14.hole2 STIFF
+ADD p32526-22 32526 yellow
+ADD p2780-87 2780 black
+CONNECT p2780-86.pin2 -> p32526-22.hole6 STIFF
+CONNECT p6558-51.pin2 -> p32526-22.hole7 STIFF
+CONNECT p2780-87.pin1 -> p32526-22.hole1 STIFF
+ADD p41239-6 41239 yellow
+CONNECT p2780-87.pin2 -> p41239-6.hole1 STIFF
+CONNECT p6558-45.pin3 -> p41239-6.hole13 STIFF
+GROUP cab-side-panel
+ADD p32525-7 32525 yellow
+ADD p2780-88 2780 black
+ADD p2780-89 2780 black
+ADD p62531-2 62531 yellow
+ADD p2780-90 2780 black
+ADD p2780-91 2780 black
+CONNECT p2780-88.pin1 -> p32525-7.hole2 STIFF
+CONNECT p2780-89.pin1 -> p32525-7.hole10 STIFF
+CONNECT p2780-88.pin2 -> p62531-2.hole9 STIFF
+CONNECT p2780-89.pin2 -> p62531-2.hole4 STIFF
+CONNECT p2780-90.pin1 -> p62531-2.hole8 STIFF
+CONNECT p2780-91.pin1 -> p62531-2.hole3 STIFF
+END
+ATTACH cab-side-panel
+CONNECT p2780-90.pin2 -> p41239-6.hole3 STIFF
+CONNECT p2780-91.pin2 -> p41239-6.hole11 STIFF
+GROUP inner-windscreen-post
+ADD tube6-1 75c06 black
+ADD p32039-1 32039 black
+ADD p32014-3 32014 black
+ADD p32073-9 32073 lightgray
+ADD p2780-92 2780 black
+CONNECT tube6-1.? -> p32039-1.axlehole2 LOCKED
+CONNECT tube6-1.? -> p32014-3.axlehole1 LOCKED
+CONNECT p32073-9.axle1 -> p32039-1.axlehole1 LOCKED
+CONNECT p2780-92.pin1 -> p32014-3.hole1 STIFF
+END
+ATTACH inner-windscreen-post
+CONNECT p32073-9.axle2 -> p32524-11.hole7 TURNS
+CONNECT p2780-92.pin2 -> p60483-6.hole1 STIFF
+ADD p32291-1 32291 black
+ADD p6141-1 6141 transclear
+ADD p6141-2 6141 transclear
+CONNECT p6141-1.pin1 -> p32291-1.hole1 STIFF
+CONNECT p6141-2.pin1 -> p32291-1.hole2 STIFF
+CONNECT p32073-9.axle3 -> p32291-1.axlehole1 LOCKED
+ADD p32524-13 32524 black
+ADD p2780-93 2780 black
+CONNECT p32073-9.axle4 -> p32524-13.hole7 TURNS
+CONNECT p6558-47.pin1 -> p32524-13.hole1 STIFF
+CONNECT p6558-48.pin1 -> p32524-13.hole2 STIFF
+CONNECT p2780-93.pin1 -> p32524-13.hole6 STIFF
+ADD p32524-14 32524 black
+CONNECT p6558-46.pin1 -> p32524-14.hole1 STIFF
+CONNECT p2780-93.pin2 -> p32524-14.hole7 STIFF
+GROUP outer-windscreen-post
+ADD tube6-2 75c06 black
+ADD tube9-1 75c09 black
+ADD p32039-2 32039 black
+ADD p32039-3 32039 black
+ADD p32014-4 32014 black
+ADD p2780-94 2780 black
+ADD p43093-20 43093 blue
+CONNECT tube6-2.? -> p32014-4.axlehole1 LOCKED
+CONNECT tube9-1.? -> p32014-4.axlehole2 LOCKED
+CONNECT tube6-2.? -> p32039-2.axlehole2 LOCKED
+CONNECT tube9-1.? -> p32039-3.axlehole2 LOCKED
+CONNECT p2780-94.pin2 -> p32014-4.hole1 STIFF
+CONNECT p43093-20.axle1 -> p32039-3.axlehole1 LOCKED
+END
+ATTACH outer-windscreen-post
+CONNECT p2780-94.pin1 -> p60483-4.hole1 STIFF
+CONNECT p32073-9.axle5 -> p32039-2.axlehole1 LOCKED
+CONNECT p43093-20.pin1 -> p32524-9.hole3 STIFF
+END
+ATTACH cab
+CONNECT p2780-84.pin2 -> p60483-3.hole1 STIFF
+CONNECT p2780-85.pin2 -> p62462-2.hole1 STIFF
+CONNECT p6558-51.pin3 -> p32523-5.hole2 STIFF
+CONNECT p6558-42.pin1 -> p41239-6.hole2 STIFF
+CONNECT p48989-7.pin3 -> p41239-6.hole5 STIFF
+CONNECT p48989-7.pin4 -> p41239-6.hole7 STIFF
+WHY Builds the cab around the blue seat and two control levers, closes the roof and stickered side panel, fits the hose windscreen posts and paired lamps, and presses the finished cab onto the chassis mounts.
+
+STEP 88
+GROUP grabber
+ADD p6632-3 6632 black
+ADD p4519-14 4519 lightgray
+ADD p4519-15 4519 lightgray
+CONNECT p4519-14.axle3 -> p6632-3.axlehole1 LOCKED
+CONNECT p4519-15.axle3 -> p6632-3.axlehole2 LOCKED
+ADD p41678-1 41678 lightgray
+ADD p41678-2 41678 lightgray
+CONNECT p4519-14.axle3 -> p41678-1.axlehole1 LOCKED
+CONNECT p4519-15.axle3 -> p41678-2.axlehole1 LOCKED
+ADD p32556-2 32556 tan
+ADD p11953-1 11953 black
+ADD p44809-1 44809 black
+ADD p44809-2 44809 black
+CONNECT p32556-2.pin2 -> p11953-1.hole3 TURNS
+CONNECT p32556-2.pin3 -> p44809-1.hole1 TURNS
+CONNECT p32556-2.pin1 -> p44809-2.hole3 TURNS
+CONNECT p4519-14.axle2 -> p44809-1.hole2 TURNS
+CONNECT p4519-15.axle2 -> p44809-2.hole2 TURNS
+CONNECT p4519-14.axle1 -> p41678-1.axlehole2 LOCKED
+CONNECT p4519-15.axle1 -> p41678-2.axlehole2 LOCKED
+ADD p32556-3 32556 tan
+ADD p32556-4 32556 tan
+CONNECT p32556-3.pin1 -> p44809-1.hole3 TURNS
+CONNECT p32556-4.pin1 -> p44809-2.hole1 TURNS
+ADD p11953-2 11953 black
+ADD p11953-3 11953 black
+CONNECT p32556-3.pin2 -> p11953-2.hole3 TURNS
+CONNECT p32556-4.pin2 -> p11953-3.hole3 TURNS
+GROUP grabber-actuator-unit
+ADD grabber-actuator 92693 lightgray
+ADD p6589-10 6589 tan
+ADD p6558-52 6558 blue
+ADD p32073-12 32073 lightgray
+ADD p3713-16 3713 lightgray
+ADD p87407-5 87407 lightgray
+CONNECT p6558-52.pin2 -> grabber-actuator.? STIFF
+CONNECT p6589-10.axlehole1 -> grabber-actuator.? LOCKED
+CONNECT p32073-12.axle2~ -> p3713-16.axlehole1 LOCKED
+CONNECT p32073-12.axle3 -> p87407-5.hole1 TURNS
+CONNECT p32073-12.axle3~ -> grabber-actuator.? TURNS
+MESH p87407-5.teeth p6589-10.teeth
+RATIO p87407-5 p6589-10 5/3
+END
+ATTACH grabber-actuator-unit
+CONNECT p6558-52.pin3 -> p41678-1.hole1 STIFF
+GROUP fourth-jaw-frame
+ADD p6632-4 6632 black
+ADD p4519-16 4519 lightgray
+ADD p4519-17 4519 lightgray
+ADD p41678-3 41678 lightgray
+ADD p41678-4 41678 lightgray
+ADD p32556-5 32556 tan
+ADD p11953-4 11953 black
+ADD p44809-3 44809 black
+ADD p44809-4 44809 black
+CONNECT p4519-16.axle3 -> p6632-4.axlehole2 LOCKED
+CONNECT p4519-17.axle3 -> p6632-4.axlehole1 LOCKED
+CONNECT p4519-16.axle3 -> p41678-3.axlehole1 LOCKED
+CONNECT p4519-17.axle3 -> p41678-4.axlehole1 LOCKED
+CONNECT p32556-5.pin2 -> p11953-4.hole3 TURNS
+CONNECT p32556-5.pin1 -> p44809-3.hole3 TURNS
+CONNECT p32556-5.pin3 -> p44809-4.hole1 TURNS
+CONNECT p4519-16.axle2 -> p44809-3.hole2 TURNS
+CONNECT p4519-17.axle2 -> p44809-4.hole2 TURNS
+CONNECT p4519-16.axle1 -> p41678-3.axlehole2 LOCKED
+CONNECT p4519-17.axle1 -> p41678-4.axlehole2 LOCKED
+END
+ATTACH fourth-jaw-frame
+CONNECT p32556-3.pin3 -> p44809-3.hole1 TURNS
+CONNECT p32556-4.pin3 -> p44809-4.hole3 TURNS
+CONNECT p6558-52.pin1 -> p41678-4.hole1 STIFF
+ADD p6632-5 6632 black
+ADD p6632-6 6632 black
+CONNECT p4519-17.axle1 -> p6632-5.axlehole1 LOCKED
+CONNECT p4519-15.axle1 -> p6632-5.axlehole2 LOCKED
+CONNECT p4519-16.axle1 -> p6632-6.axlehole1 LOCKED
+CONNECT p4519-14.axle1 -> p6632-6.axlehole2 LOCKED
+GROUP grabber-left-yoke
+ADD p32073-10 32073 lightgray
+ADD p92907-5 92907 black
+ADD p60483-7 60483 black
+ADD p6558-53 6558 blue
+ADD p32002-5 32002 tan
+CONNECT p32073-10.axle2 -> p92907-5.axlehole3 LOCKED
+CONNECT p32073-10.axle4 -> p92907-5.axlehole4 LOCKED
+CONNECT p32073-10.axle3 -> p60483-7.axlehole1 LOCKED
+CONNECT p6558-53.pin2 -> p60483-7.hole1 STIFF
+CONNECT p32002-5.pin1 -> p92907-5.hole1 STIFF
+END
+ATTACH grabber-left-yoke
+CONNECT p32002-5.pin2 -> grabber-actuator.? STIFF
+GROUP grabber-right-yoke
+ADD p32073-11 32073 lightgray
+ADD p92907-6 92907 black
+ADD p60483-8 60483 black
+ADD p6558-54 6558 blue
+ADD p32002-6 32002 tan
+CONNECT p32073-11.axle2 -> p92907-6.axlehole3 LOCKED
+CONNECT p32073-11.axle4 -> p92907-6.axlehole4 LOCKED
+CONNECT p32073-11.axle3 -> p60483-8.axlehole1 LOCKED
+CONNECT p6558-54.pin2 -> p60483-8.hole1 STIFF
+CONNECT p32002-6.pin1 -> p92907-6.hole1 STIFF
+END
+ATTACH grabber-right-yoke
+CONNECT p32002-6.pin2 -> grabber-actuator.? STIFF
+ADD p32017-9 32017 yellow
+ADD p32017-10 32017 yellow
+CONNECT p32073-10.axle2 -> p32017-9.hole1 TURNS
+CONNECT p32073-11.axle4 -> p32017-9.hole5 TURNS
+CONNECT p32073-10.axle4 -> p32017-10.hole1 TURNS
+CONNECT p32073-11.axle2 -> p32017-10.hole5 TURNS
+GROUP front-jaw-link-support
+ADD p4519-18 4519 lightgray
+ADD p60483-9 60483 black
+ADD p6558-55 6558 blue
+ADD p32039-4 32039 black
+ADD p32039-5 32039 black
+CONNECT p4519-18.axle2 -> p60483-9.axlehole1 LOCKED
+CONNECT p6558-55.pin2 -> p60483-9.hole1 STIFF
+CONNECT p4519-18.axle3 -> p32039-4.axlehole2 LOCKED
+CONNECT p4519-18.axle1 -> p32039-5.axlehole2 LOCKED
+END
+ATTACH front-jaw-link-support
+CONNECT p32073-11.axle5 -> p32039-4.axlehole1 LOCKED
+CONNECT p32073-10.axle1 -> p32039-5.axlehole1 LOCKED
+GROUP rear-jaw-link-support
+ADD p4519-19 4519 lightgray
+ADD p60483-10 60483 black
+ADD p6558-56 6558 blue
+ADD p32039-6 32039 black
+ADD p32039-7 32039 black
+CONNECT p4519-19.axle2 -> p60483-10.axlehole1 LOCKED
+CONNECT p6558-56.pin2 -> p60483-10.hole1 STIFF
+CONNECT p4519-19.axle1 -> p32039-6.axlehole2 LOCKED
+CONNECT p4519-19.axle3 -> p32039-7.axlehole2 LOCKED
+END
+ATTACH rear-jaw-link-support
+CONNECT p32073-10.axle5 -> p32039-6.axlehole1 LOCKED
+CONNECT p32073-11.axle1 -> p32039-7.axlehole1 LOCKED
+ADD p32556-6 32556 tan
+ADD p32556-7 32556 tan
+ADD p32556-8 32556 tan
+ADD p32556-9 32556 tan
+CONNECT p32556-6.pin2 -> p11953-4.hole1 TURNS
+CONNECT p32556-7.pin2 -> p11953-3.hole1 TURNS
+CONNECT p32556-8.pin2 -> p11953-1.hole1 TURNS
+CONNECT p32556-9.pin2 -> p11953-2.hole1 TURNS
+ADD p32316-7 32316 black
+ADD p32316-8 32316 black
+ADD p32316-9 32316 black
+ADD p32316-10 32316 black
+ADD p32316-11 32316 black
+ADD p32316-12 32316 black
+ADD p32316-13 32316 black
+ADD p32316-14 32316 black
+CONNECT p32556-6.pin3 -> p32316-7.hole1 TURNS
+CONNECT p6558-55.pin3 -> p32316-7.hole5 STIFF
+CONNECT p32556-6.pin1 -> p32316-8.hole1 TURNS
+CONNECT p6558-55.pin1 -> p32316-8.hole5 STIFF
+CONNECT p32556-9.pin3 -> p32316-9.hole1 TURNS
+CONNECT p6558-53.pin1 -> p32316-9.hole5 STIFF
+CONNECT p32556-9.pin1 -> p32316-10.hole1 TURNS
+CONNECT p6558-53.pin3 -> p32316-10.hole5 STIFF
+CONNECT p6558-56.pin1 -> p32316-11.hole1 STIFF
+CONNECT p32556-8.pin1 -> p32316-11.hole5 TURNS
+CONNECT p6558-54.pin3 -> p32316-12.hole1 STIFF
+CONNECT p32556-7.pin3 -> p32316-12.hole5 TURNS
+CONNECT p6558-54.pin1 -> p32316-13.hole1 STIFF
+CONNECT p32556-7.pin1 -> p32316-13.hole5 TURNS
+CONNECT p6558-56.pin3 -> p32316-14.hole1 STIFF
+CONNECT p32556-8.pin3 -> p32316-14.hole5 TURNS
+END
+ATTACH grabber
+CONNECT p32073-12.axle1 -> p99773-3.axlehole1 LOCKED
+MESH p87407-5.teeth p6589-9.teeth
+RATIO p6589-9 p87407-5 3/5
+WHY Builds the four freely pivoting jaws around the small actuator, keeps the two lower connector rows parallel as shown, adds the eight lifting links and warning stripes, and mounts the grabber with its free gear meshing with the stick drive.
+
+STEP 89
+ADD p99773-4 99773 yellow
+ADD p43093-21 43093 blue
+CONNECT p43093-21.axle1 -> p99773-4.axlehole2 LOCKED
+CONNECT p32073-12.axle5 -> p99773-4.axlehole1 LOCKED
+CONNECT p2780-68.pin1 -> p99773-4.hole2 STIFF
+CONNECT p3705-4.axle1 -> p99773-4.hole3 TURNS
+CONNECT p43093-21.pin1 -> p41239-4.hole11 STIFF
+WHY Closes the far side of the grabber mount with the yellow triangular plate, retaining both cross shafts while the grabber transfer gear remains free on its shaft.
