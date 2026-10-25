@@ -4349,3 +4349,84 @@ CONNECT bc2-beam2-3.hole1~ -> bc2-axle4-1.axle4~ TURNS
 CONNECT bc2-beam5-2.hole3~ -> bc2-beam5-1.hole3~ STIFF
 END
 WHY A second thin 5-beam, a 4-long axle and two thin 2-beams make the second hinge frame.
+STEP 510
+ADD bc2-bush-3 32123b lightgray
+ADD bc2-beam2-4 41677 black
+CONNECT bc2-bush-3.axlehole1 -> bc2-axle3-1.axle2~ LOCKED
+CONNECT bc2-beam2-4.hole1~ -> bc2-bush-3.hole1? TURNS
+WHY A small bush and a thin beam lock the second hinge frame together, the same as the first.
+STEP 511
+WHY Turns the second hinge frame over to show how it sits.
+STEP 512
+ATTACH bc2
+CONNECT bc2-beam5-1.hole1~ -> bb2-beam11-1.hole1~ STIFF
+WHY Joins the second hinge frame onto the other end of the drop-side rail.
+STEP 513
+GROUP bd2
+ADD bd2-lbeam-1 32526 darkgray
+ADD bd2-axle4-1 3705 darkgray
+CONNECT bd2-axle4-1.axle1 -> bd2-lbeam-1.hole1~ TURNS
+WHY Starts the bed's end-gate hinge: a grey 3x5 L-beam with a 4-long axle through it.
+STEP 514
+ADD bd2-beam2-1 41677 black
+ADD bd2-beam2-2 41677 black
+CONNECT bd2-beam2-1.hole1~ -> bd2-axle4-1.axle2~ TURNS
+CONNECT bd2-beam2-2.hole1~ -> bd2-axle4-1.axle3~ TURNS
+WHY Two thin black beams are put on the axle.
+STEP 515
+ADD bd2-beam2-3 41677 black
+ADD bd2-beam2-4 41677 black
+CONNECT bd2-beam2-3.hole1~ -> bd2-axle4-1.axle4~ TURNS
+CONNECT bd2-beam2-4.hole1~ -> bd2-beam2-3.hole2~ STIFF
+WHY Two more thin black beams are added to the axle end.
+STEP 516
+ADD bd2-axle3-1 4519 lightgray
+ADD bd2-bush-1 42135 black
+CONNECT bd2-axle3-1.axle1 -> bd2-beam2-1.axlehole1? LOCKED
+CONNECT bd2-bush-1.axlehole1 -> bd2-axle3-1.axle3 LOCKED
+WHY A 3-long axle and a black bush are added to the hinge.
+STEP 517
+ADD bd2-bush-2 42135 black
+ADD bd2-trip-1 63869 lightgray
+CONNECT bd2-bush-2.axlehole1 -> bd2-axle3-1.axle2~ LOCKED
+CONNECT bd2-trip-1.hole1~ -> bd2-beam2-4.hole2~ STIFF
+WHY A black bush and a light triple connector are added on the hinge axle.
+STEP 518
+ADD bd2-lbeam-2 32526 darkgray
+ADD bd2-axle4-2 3705 darkgray
+ADD bd2-beam2-5 41677 black
+ADD bd2-beam2-6 41677 black
+ADD bd2-beam2-7 41677 black
+ADD bd2-beam2-8 41677 black
+CONNECT bd2-axle4-2.axle1 -> bd2-lbeam-2.hole1~ TURNS
+CONNECT bd2-beam2-5.hole1~ -> bd2-axle4-2.axle2~ TURNS
+CONNECT bd2-beam2-6.hole1~ -> bd2-axle4-2.axle3~ TURNS
+CONNECT bd2-beam2-7.hole1~ -> bd2-beam2-1.hole2~ STIFF
+CONNECT bd2-beam2-8.hole1~ -> bd2-beam2-2.hole2~ STIFF
+WHY Builds the other half of the end-gate hinge, with a second L-beam, a 4-long axle and four thin black beams in three small steps, and joins it to the first half.
+STEP 519
+ADD bd2-lpin-1 11214 red
+ADD bd2-lpin-2 11214 red
+ADD bd2-lpin-3 11214 red
+ADD bd2-lpin-4 11214 red
+CONNECT bd2-lpin-1.axle1 -> bd2-beam2-1.axlehole1? LOCKED
+CONNECT bd2-lpin-2.axle1 -> bd2-beam2-2.axlehole1? LOCKED
+CONNECT bd2-lpin-3.axle1 -> bd2-beam2-5.axlehole1? LOCKED
+CONNECT bd2-lpin-4.axle1 -> bd2-beam2-6.axlehole1? LOCKED
+WHY Four red axle pins go into the hinge's beams as the locks.
+STEP 520
+ADD bd2-ang-1 6536 black
+ADD bd2-ang-2 6536 black
+ADD bd2-bush-3 3713 darkgray
+CONNECT bd2-ang-1.hole1~ -> bd2-lbeam-1.hole4~ STIFF
+CONNECT bd2-ang-2.hole1~ -> bd2-lbeam-2.hole4~ STIFF
+CONNECT bd2-bush-3.axlehole1 -> bd2-trip-1.axlehole1? LOCKED
+WHY Two black connectors and a bush are added in the hinge's middle.
+STEP 521
+WHY Turns the hinge over to show its far side.
+STEP 522
+ATTACH bd2
+CONNECT bd2-lbeam-1.hole5~ -> bc2-axle4-1.axle4~ TURNS
+CONNECT bd2-lbeam-2.hole5~ -> ba2-axle4-1.axle4~ TURNS
+END
+WHY Fits the finished end-gate hinge onto the two rails so the end gate can be folded.
