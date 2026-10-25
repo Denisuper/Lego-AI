@@ -3254,3 +3254,200 @@ END
 ATTACH dm
 CONNECT dm-ang-1.hole1~ -> dm-ang-2.hole2~ TURNS
 WHY Finishes the mirror: a brown axle with a stop and a 3-long axle in two connectors let the mirror arm fold, and it is joined to the first part.
+STEP 368
+ADD dm-bush-5 3713 black
+ADD dm-ang-3 32184 darkgray
+CONNECT dm-bush-5.axlehole1 -> dm-axle4-1.axle3~ LOCKED
+CONNECT dm-ang-3.axlehole1 -> dm-axle3-1.axle2~ LOCKED
+WHY A black bush and a perpendicular connector go on the mirror arm to carry the next piece.
+STEP 369
+ADD dm-lbeam-1 32526 black
+ADD dm-axle4-2 87083 darkgray
+ADD dm-pin-1 61332 black
+ADD dm-pin-2 61332 black
+CONNECT dm-pin-1.pin1 -> dm-lbeam-1.hole1~ STIFF
+CONNECT dm-pin-2.pin1 -> dm-lbeam-1.hole3~ STIFF
+CONNECT dm-axle4-2.axle1 -> dm-lbeam-1.hole5~ TURNS
+WHY A black L-beam with two pins and a 4-long axle makes the mirror's elbow so it can fold.
+STEP 370
+ADD dm-bush-6 3713 black
+ADD dm-ang-4 32184 darkgray
+CONNECT dm-bush-6.axlehole1 -> dm-axle4-2.axle3~ LOCKED
+CONNECT dm-ang-4.axlehole1 -> dm-axle3-2.axle2~ LOCKED
+WHY A second bush and connector add a second pivot at the elbow.
+STEP 371
+ADD dm-plate-1 3623 black
+ADD dm-pin-3 61332 black
+ADD dm-bpin-1 43093 blue
+ADD dm-plate-2 18677 black
+CONNECT dm-bpin-1.pin1 -> dm-plate-1.hole1? STIFF
+CONNECT dm-pin-3.pin1 -> dm-plate-1.hole2? STIFF
+CONNECT dm-plate-2.hole1~ -> dm-pin-3.pin2 STIFF
+CONNECT dm-plate-1.stud1? -> dm-ang-3.stud1? STIFF
+WHY A black 1x3 plate with a blue pin and a black pin-plate make the mirror head base.
+STEP 372
+ADD dm-bpin-2 43093 blue
+ADD dm-plate-3 18677 black
+CONNECT dm-bpin-2.pin1 -> dm-plate-3.hole1~ STIFF
+CONNECT dm-plate-3.stud1? -> dm-plate-1.stud3? STIFF
+WHY One more blue pin and pin-plate widen the mirror head base.
+STEP 373
+ADD dm-tile-1 26603 black
+CONNECT dm-tile-1.stud1? -> dm-plate-1.stud1? STIFF
+WHY A black 2x3 tile is pressed on top as the mirror glass; sticker 4 goes on it.
+STEP 374
+ADD dm-tile-2 3068b black
+CONNECT dm-tile-2.stud1? -> dm-plate-3.stud1? STIFF
+WHY A black 2x2 tile is pressed on the second base as the second mirror glass; sticker 10 goes on it.
+STEP 375
+WHY Turns the mirror over to show it from the back before it is fitted to the door.
+STEP 376
+ATTACH dm
+CONNECT dm-pin-1.pin2 -> dr-beam11-1.hole2~ STIFF
+WHY Moves the finished mirror onto the top corner of the door frame.
+STEP 377
+WHY Swings the mirror arm out so it stands away from the door, as the yellow arrow shows.
+STEP 378
+ADD dr-lpin-2 11214 red
+ADD dr-beam2-3 41677 black
+CONNECT dr-lpin-2.pin1 -> dr-beam2-3.hole1~ STIFF
+CONNECT dr-beam2-3.hole2~ -> dr-beam11-1.hole10~ STIFF
+WHY A red pin and a thin black beam are added on the back of the door as the lock.
+STEP 379
+ADD dr-tile-1 3070b black
+ADD dr-conn-5 11458 black
+ADD dr-bpin-5 43093 blue
+CONNECT dr-tile-1.stud1? -> dr-conn-5.stud1? STIFF
+CONNECT dr-bpin-5.pin1 -> dr-conn-5.hole1~ STIFF
+WHY A small black tile (sticker 10) and a pin plate make the second wing mirror on the door's outer corner.
+STEP 380
+GROUP dn
+ADD dn-beam11-1 32525 darkgray
+ADD dn-bpin-1 43093 blue
+ADD dn-bpin-2 43093 blue
+ADD dn-pin-1 61332 black
+ADD dn-pin-2 61332 black
+ADD dn-pin-3 61332 black
+ADD dn-pin-4 61332 black
+ADD dn-beam2-1 60483 lightgray
+ADD dn-beam2-2 60483 lightgray
+CONNECT dn-pin-1.pin1 -> dn-beam11-1.hole1~ STIFF
+CONNECT dn-pin-2.pin1 -> dn-beam11-1.hole2~ STIFF
+CONNECT dn-pin-3.pin1 -> dn-beam11-1.hole10~ STIFF
+CONNECT dn-pin-4.pin1 -> dn-beam11-1.hole11~ STIFF
+CONNECT dn-bpin-1.pin1 -> dn-beam11-1.hole4~ STIFF
+CONNECT dn-bpin-2.pin1 -> dn-beam11-1.hole8~ STIFF
+CONNECT dn-beam2-1.hole1~ -> dn-bpin-1.pin2 STIFF
+CONNECT dn-beam2-2.hole1~ -> dn-bpin-2.pin2 STIFF
+END
+ATTACH dn
+CONNECT dn-beam11-1.hole3~ -> dr-beam11-1.hole3~ STIFF
+WHY Builds a long 11-beam with four black pins, two blue pins and two light 2-beams in three small steps and lays it along the bottom of the door.
+STEP 381
+GROUP dp
+ADD dp-beam5-1 32316 black
+ADD dp-bpin-1 43093 blue
+CONNECT dp-bpin-1.pin1 -> dp-beam5-1.hole5~ STIFF
+WHY Starts the right door's lower rail: a black 5-beam with a blue pin at one end.
+STEP 382
+ADD dp-ang-1 32034 lightgray
+ADD dp-ang-2 32034 lightgray
+CONNECT dp-ang-1.hole1~ -> dp-bpin-1.pin2 STIFF
+CONNECT dp-ang-2.hole1~ -> dp-beam5-1.hole4~ STIFF
+WHY Two light angled connectors are added on the rail as the hinge parts.
+STEP 383
+ADD dp-panel-1 24116 black
+CONNECT dp-panel-1.hole1~ -> dp-beam5-1.hole1~ STIFF
+WHY A black curved panel (the door skin) goes on the rail.
+STEP 384
+ADD dp-bpin-2 43093 blue
+ADD dp-axle3-1 4519 lightgray
+ADD dp-beam2-1 41677 black
+CONNECT dp-axle3-1.axle1 -> dp-ang-1.axlehole1 LOCKED
+CONNECT dp-beam2-1.hole1~ -> dp-axle3-1.axle3~ TURNS
+CONNECT dp-bpin-2.pin1 -> dp-beam2-1.hole2~ STIFF
+WHY A 3-long axle, a thin beam and a blue pin make the door's hinge arm.
+STEP 385
+ADD dp-beam2-2 41677 black
+CONNECT dp-beam2-2.hole1~ -> dp-ang-2.hole2~ STIFF
+WHY One more thin black beam is added alongside the hinge arm.
+STEP 386
+ADD dp-tpin-1 32002 tan
+ADD dp-conn-1 6536 darkgray
+CONNECT dp-tpin-1.pin1 -> dp-panel-1.hole3~ TURNS
+CONNECT dp-conn-1.hole1~ -> dp-tpin-1.pin2 TURNS
+WHY A tan pin and a connector are the door handle.
+STEP 387
+ADD dp-beam3-1 6632 black
+ADD dp-beam3-2 6632 black
+ADD dp-bpin-3 43093 blue
+ADD dp-bpin-4 43093 blue
+ADD dp-conn-2 6536 darkgray
+CONNECT dp-bpin-3.pin1 -> dp-beam3-1.hole1~ STIFF
+CONNECT dp-bpin-4.pin1 -> dp-beam3-2.hole1~ STIFF
+CONNECT dp-beam3-1.hole3~ -> dp-panel-1.hole5~ STIFF
+CONNECT dp-conn-2.hole1~ -> dp-beam3-2.hole3~ STIFF
+WHY Two thin 3-beams with blue pins and a connector are put on the door's front edge.
+STEP 388
+ADD dp-pin-1 61332 black
+ADD dp-pin-2 61332 black
+ADD dp-pin-3 61332 black
+ADD dp-pin-4 61332 black
+CONNECT dp-pin-1.pin1 -> dp-panel-1.hole6~ STIFF
+CONNECT dp-pin-2.pin1 -> dp-panel-1.hole7~ STIFF
+CONNECT dp-pin-3.pin1 -> dp-panel-1.hole8~ STIFF
+CONNECT dp-pin-4.pin1 -> dp-panel-1.hole9~ STIFF
+WHY Four black pins go along the top of the door skin to take the window frame.
+STEP 389
+ADD dp-beam11-1 32525 darkgray
+ADD dp-beam5-2 32316 darkgray
+CONNECT dp-beam11-1.hole1~ -> dp-pin-3.pin2 STIFF
+CONNECT dp-beam5-2.hole1~ -> dp-pin-4.pin2 STIFF
+WHY A grey 11-beam and a grey 5-beam make the door's top rail and window frame.
+STEP 390
+ADD dp-pin-5 61332 black
+ADD dp-lpin-1 11214 red
+CONNECT dp-pin-5.pin1 -> dp-beam11-1.hole5~ STIFF
+CONNECT dp-lpin-1.pin1 -> dp-beam5-2.hole3~ STIFF
+WHY A black pin and a red pin lock the top rail to the frame.
+STEP 391
+ADD dp-beam5-3 11478 black
+ADD dp-beam5-4 11478 black
+CONNECT dp-beam5-3.hole1~ -> dp-lpin-1.pin2 STIFF
+CONNECT dp-beam5-4.hole1~ -> dp-pin-5.pin2 STIFF
+WHY Two thin black 5-beams close the window frame.
+STEP 392
+GROUP dq
+ADD dq-axle2-1 32062 red
+ADD dq-bush-1 6632 darkgray
+ADD dq-bush-2 6632 darkgray
+CONNECT dq-bush-1.axlehole1? -> dq-axle2-1.axle1 LOCKED
+CONNECT dq-bush-2.axlehole1? -> dq-axle2-1.axle2 LOCKED
+WHY Starts the right wing mirror arm: a short red axle between two grey beams.
+STEP 393
+ADD dq-lpin-1 11214 red
+ADD dq-bpin-1 43093 blue
+CONNECT dq-lpin-1.axle1 -> dq-bush-1.axlehole2? LOCKED
+CONNECT dq-bpin-1.pin1 -> dq-bush-2.hole1? STIFF
+WHY A red axle pin and a blue pin go on the ends of the mirror arm.
+STEP 394
+ADD dq-ang-1 32034 black
+CONNECT dq-ang-1.axlehole1 -> dq-lpin-1.axle1~ LOCKED
+WHY A black angled connector goes on the red axle pin at the mirror arm's elbow.
+STEP 395
+ADD dq-lpin-2 11214 red
+ADD dq-axle3-1 24316 reddishbrown
+ADD dq-axle3-2 4519 lightgray
+ADD dq-bush-3 6632 darkgray
+ADD dq-conn-1 6536 darkgray
+ADD dq-ang-2 32034 black
+ADD dq-bush-4 3713 black
+CONNECT dq-lpin-2.axle1 -> dq-ang-1.axlehole2~ LOCKED
+CONNECT dq-axle3-2.axle1 -> dq-ang-2.axlehole1 LOCKED
+CONNECT dq-axle3-1.axle1 -> dq-conn-1.axlehole1 LOCKED
+CONNECT dq-ang-2.hole1~ -> dq-conn-1.hole1~ STIFF
+CONNECT dq-bush-4.axlehole1 -> dq-axle3-2.axle3 LOCKED
+END
+ATTACH dq
+CONNECT dq-ang-1.hole1~ -> dq-ang-2.hole2~ TURNS
+WHY Finishes the mirror arm with a brown axle with a stop and a 3-long axle in two connectors, the same as on the left door, and joins the two halves.
