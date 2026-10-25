@@ -177,3 +177,171 @@ ADD side-vertical-longpin-1 42924 blue
 CONNECT side-vertical-pin-1.pin1 -> side-connector-1.hole1 STIFF
 CONNECT side-vertical-longpin-1.pin1 -> side-connector-2.hole1 STIFF
 WHY Inserts downward friction pins through the rail's round center holes to carry the turquoise side beam.
+STEP 21
+ADD side-beam-1 32524 darkturquoise
+CONNECT side-vertical-longpin-1.pin2 -> side-beam-1.hole1 STIFF
+CONNECT side-vertical-pin-1.pin2 -> side-beam-1.hole5 STIFF
+WHY Pins the turquoise seven-hole beam below the white rail with the two attachment holes four spaces apart.
+STEP 22
+ADD side-vertical-longpin-2 42924 blue
+ADD decal-sheet-1 72378 anycolor
+CONNECT side-vertical-longpin-2.pin1 -> side-beam-1.hole2 STIFF
+WHY Adds the second downward mounting pin and applies sticker 5 from the set's decal sheet to the side beam.
+STEP 23
+GROUP nose-skin-left
+ADD nose-skin-plate-1 3021 white
+ADD nose-skin-curve-1 11477 white
+ADD nose-skin-curve-2 11477 darkturquoise
+ADD nose-skin-tile-1 3069b white
+ADD nose-skin-slope-1 54200 darkgray
+ADD nose-skin-slope-2 54200 darkgray
+ADD nose-skin-socket-1 18677 white
+ADD nose-skin-inverted-1 24201 darkgray
+CONNECT nose-skin-curve-1.underside? -> nose-skin-plate-1.stud1? STIFF
+CONNECT nose-skin-tile-1.underside? -> nose-skin-plate-1.stud2? STIFF
+CONNECT nose-skin-curve-2.underside? -> nose-skin-plate-1.stud3? STIFF
+CONNECT nose-skin-slope-1.underside? -> nose-skin-plate-1.stud5? STIFF
+CONNECT nose-skin-slope-2.underside? -> nose-skin-plate-1.stud6? STIFF
+CONNECT nose-skin-socket-1.stud1? -> nose-skin-plate-1.underside? STIFF
+CONNECT nose-skin-inverted-1.stud1? -> nose-skin-plate-1.underside? STIFF
+END
+ATTACH nose-skin-left
+CONNECT side-nose-axlepin-1.pin1 -> nose-skin-socket-1.hole1~ STIFF
+END
+WHY Builds the white-and-turquoise left nose skin with two grey slopes and mounts its underside socket on the blue nose pin.
+STEP 24
+ATTACH fuselage-side-left
+CONNECT side-vertical-longpin-1.pin3 -> front-crossconnector-3.hole2~ STIFF
+CONNECT side-vertical-longpin-2.pin2 -> front-crossconnector-3.hole1~ STIFF
+WHY Fits the complete left upper fuselage side onto the turquoise core with the decorated nose facing forward.
+STEP 25
+GROUP fuselage-side-right
+ADD side-connector-3 32034 white
+ADD side-join-axle-2 32062 red
+ADD side-nose-axlepin-2 43093 blue
+CONNECT side-join-axle-2.axle1 -> side-connector-3.axlehole1 LOCKED
+CONNECT side-nose-axlepin-2.axle1 -> side-connector-3.axlehole2 LOCKED
+WHY Starts the matching right rail with a red joining axle at one end and a blue nose pin at the other.
+STEP 26
+ADD side-connector-4 32034 white
+ADD side-tail-axle-2 4519 yellow
+CONNECT side-join-axle-2.axle2 -> side-connector-4.axlehole2 LOCKED
+CONNECT side-tail-axle-2.axle1 -> side-connector-4.axlehole1 LOCKED
+WHY Extends the right rail and adds its yellow tail-mounting axle.
+STEP 27
+ADD side-vertical-pin-2 61332 black
+ADD side-vertical-longpin-3 42924 blue
+CONNECT side-vertical-pin-2.pin1 -> side-connector-4.hole1 STIFF
+CONNECT side-vertical-longpin-3.pin1 -> side-connector-3.hole1 STIFF
+WHY Puts the right rail's downward mounting pins in the two connector center holes.
+STEP 28
+ADD side-beam-2 32524 darkturquoise
+CONNECT side-vertical-longpin-3.pin2 -> side-beam-2.hole7 STIFF
+CONNECT side-vertical-pin-2.pin2 -> side-beam-2.hole3 STIFF
+WHY Attaches the right turquoise side beam with the mounting pins four holes apart to match the left side.
+STEP 29
+ADD side-vertical-longpin-4 42924 blue
+CONNECT side-vertical-longpin-4.pin1 -> side-beam-2.hole6 STIFF
+WHY Adds the second right-side mounting pin and applies sticker 1 to the outer turquoise face.
+STEP 30
+GROUP nose-skin-right
+ADD nose-skin-plate-2 3021 white
+ADD nose-skin-curve-3 11477 white
+ADD nose-skin-curve-4 11477 darkturquoise
+ADD nose-skin-tile-2 3069b white
+ADD nose-skin-slope-3 54200 darkgray
+ADD nose-skin-slope-4 54200 darkgray
+ADD nose-skin-socket-2 18677 white
+ADD nose-skin-inverted-2 24201 darkgray
+CONNECT nose-skin-curve-3.underside? -> nose-skin-plate-2.stud1? STIFF
+CONNECT nose-skin-tile-2.underside? -> nose-skin-plate-2.stud2? STIFF
+CONNECT nose-skin-curve-4.underside? -> nose-skin-plate-2.stud3? STIFF
+CONNECT nose-skin-slope-3.underside? -> nose-skin-plate-2.stud5? STIFF
+CONNECT nose-skin-slope-4.underside? -> nose-skin-plate-2.stud6? STIFF
+CONNECT nose-skin-socket-2.stud1? -> nose-skin-plate-2.underside? STIFF
+CONNECT nose-skin-inverted-2.stud1? -> nose-skin-plate-2.underside? STIFF
+END
+ATTACH nose-skin-right
+CONNECT side-nose-axlepin-2.pin1 -> nose-skin-socket-2.hole1~ STIFF
+END
+WHY Builds the mirrored nose skin and fits its underside pin socket onto the right rail's blue nose pin.
+STEP 31
+ATTACH fuselage-side-right
+CONNECT side-vertical-longpin-3.pin3 -> front-crossconnector-2.hole2~ STIFF
+CONNECT side-vertical-longpin-4.pin2 -> front-crossconnector-2.hole1~ STIFF
+WHY Closes the upper fuselage with the right side rail and leaves the two yellow tail axles exposed at the rear.
+STEP 32
+ADD tail-crossconnector-1 32184 white
+ADD tail-halfpin-1 4274 lightgray
+CONNECT tail-halfpin-1.pin1 -> tail-crossconnector-1.hole1 TURNS
+CONNECT side-tail-axle-1.axle2~ -> tail-crossconnector-1.axlehole1 LOCKED
+CONNECT side-tail-axle-2.axle2~ -> tail-crossconnector-1.axlehole2 LOCKED
+WHY Bridges the two upper tail axles with a white connector and an upward half pin.
+STEP 33
+ADD tail-hinge-connector-1 92907 lightgray
+ADD tail-hinge-axle-1 32062 red
+CONNECT tail-hinge-axle-1.axle1 -> tail-hinge-connector-1.axlehole1~ LOCKED
+CONNECT side-tail-axle-1.axle3~ -> tail-hinge-connector-1.axlehole2~ LOCKED
+CONNECT side-tail-axle-2.axle3~ -> tail-hinge-connector-1.axlehole3~ LOCKED
+WHY Caps the rear yellow axles with the grey split connector and adds the short red tailwheel hinge axle.
+STEP 34
+GROUP tailwheel
+ADD tailwheel-elbow-1 32015 black
+ADD tailwheel-lug-1 22961 black
+ADD tailwheel-axlepin-1 3749 tan
+ADD tailwheel-mountpin-1 43093 blue
+ADD tailwheel-tyre-1 59895 black
+ADD tailwheel-bush-1 32123b lightgray
+ADD tailwheel-hinge-axle-2 32062 red
+CONNECT tailwheel-lug-1.axle1 -> tailwheel-elbow-1.axlehole2 LOCKED
+CONNECT tailwheel-axlepin-1.pin1 -> tailwheel-lug-1.hole1 TURNS
+CONNECT tailwheel-axlepin-1.axle1 -> tailwheel-bush-1.axlehole1 LOCKED
+CONNECT tailwheel-tyre-1.rim? -> tailwheel-bush-1.rim? STIFF
+CONNECT tailwheel-mountpin-1.axle1 -> tailwheel-elbow-1.axlehole1 LOCKED
+END
+ATTACH tailwheel
+CONNECT tail-hinge-axle-1.axle2 -> tailwheel-elbow-1.hole1 TURNS
+CONNECT tailwheel-hinge-axle-2.axle1 -> tail-hinge-connector-1.axlehole4~ LOCKED
+CONNECT tailwheel-hinge-axle-2.axle2 -> tailwheel-elbow-1.hole1 TURNS
+WHY Adds the free-running tailwheel on its angled support and hinges that support below the tail.
+STEP 35
+ADD tail-panel-1 11946 white
+ADD tail-panel-2 11947 white
+CONNECT side-tail-axle-1.axle3~ -> tail-panel-1.axlehole1 LOCKED
+CONNECT side-tail-axle-2.axle3~ -> tail-panel-2.axlehole1 LOCKED
+WHY Adds the two white tail panels and folds the hinged tailwheel support down beneath them.
+STEP 36
+ADD nose-retaining-bush-1 32123b lightgray
+ADD nose-retaining-bush-2 32123b lightgray
+CONNECT nose-axlepin-1.axle2 -> nose-retaining-bush-1.axlehole1 LOCKED
+CONNECT nose-axlepin-2.axle2 -> nose-retaining-bush-2.axlehole1 LOCKED
+WHY Retains the projecting nose axle pins with half bushes after turning the fuselage upside down.
+STEP 37
+GROUP wing-right
+ADD wing-panel-1 18945 darkturquoise
+ADD wing-shortpin-1 32002 tan
+CONNECT wing-shortpin-1.pin1 -> wing-panel-1.hole2~ STIFF
+WHY Starts the right wing with an inward-facing tan mounting pin at the middle of its wide root.
+STEP 38
+ADD wing-halfpin-1 4274 lightgray
+ADD wing-halfpin-2 4274 lightgray
+ADD wing-halfpin-3 4274 lightgray
+CONNECT wing-halfpin-1.pin1 -> wing-panel-1.hole4~ TURNS
+CONNECT wing-halfpin-2.pin1 -> wing-panel-1.hole5~ TURNS
+CONNECT wing-halfpin-3.pin1 -> wing-panel-1.hole6~ TURNS
+WHY Adds three stud-ended half pins across the narrow wing tip for the colored trim and navigation light.
+STEP 39
+ADD wing-tip-plate-1 3024 orange
+ADD wing-tip-curve-1 11477 orange
+ADD wing-light-1 54200 transgreen
+CONNECT wing-tip-curve-1.underside? -> wing-tip-plate-1.stud1? STIFF
+CONNECT wing-tip-plate-1.underside? -> wing-halfpin-2.stud? STIFF
+CONNECT wing-tip-curve-1.underside? -> wing-halfpin-3.stud? STIFF
+CONNECT wing-light-1.underside? -> wing-halfpin-1.stud? STIFF
+END
+WHY Finishes the right wing tip with orange trim and the green navigation light.
+STEP 40
+ATTACH wing-right
+CONNECT front-crossaxle-1.axle7~ -> wing-panel-1.hole1~ TURNS
+CONNECT rear-crossaxle-1.axle7~ -> wing-panel-1.hole3~ TURNS
+WHY Slides the right wing onto the two yellow cross axles outside the fuselage.
