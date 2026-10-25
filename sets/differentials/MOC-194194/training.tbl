@@ -1,0 +1,108 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD elbow-1 32014 black
+ADD elbow-2 32014 black
+ADD bar-1 32557 black
+CONNECT elbow-1.hole1? -> bar-1.hole1? STIFF
+CONNECT elbow-2.hole1? -> bar-1.hole4? STIFF
+WHY Starts the build by capping both ends of the long perpendicular connector with angled elbows, making a twin-armed yoke for the output stubs.
+STEP 2
+ADD worm-1 4716 lightbluishgray
+ADD axle-1 3705 reddishbrown
+CONNECT axle-1.axle1 -> worm-1.axlehole1 LOCKED
+CONNECT axle-1.axle2 -> bar-1.hole2 TURNS
+WHY Locks a worm gear onto the brown drive axle and passes the axle through the yoke's centre hole, starting the input shaft.
+STEP 3
+ADD axle-2 3705 lightbluishgray
+ADD axle-3 3705 lightbluishgray
+ADD axle-4 3705 lightbluishgray
+ADD axle-5 3705 lightbluishgray
+ADD plate-1 32316 black
+ADD plate-2 32316 black
+CONNECT axle-2.axle1 -> plate-1.hole1 TURNS
+CONNECT axle-3.axle1 -> plate-1.hole5 TURNS
+CONNECT axle-4.axle1 -> plate-2.hole1 TURNS
+CONNECT axle-5.axle1 -> plate-2.hole5 TURNS
+WHY Threads four frame axles through the end holes of two long plates, building the cage that will carry the differential's gears.
+STEP 4
+ADD cap-1 18654 lightbluishgray
+ADD housing-1 6573 darkbluishgray
+CONNECT cap-1.hole1 -> axle-1.axle3 TURNS
+CONNECT housing-1.hole1 -> axle-1.axle2 TURNS
+WHY Slides a round spacer onto the drive axle and mounts the differential gear housing on the same axle so it can spin freely around it.
+STEP 5
+ADD yoke-1 32184 black
+ADD pin-1 43093 blue
+CONNECT pin-1.axle1 -> yoke-1.axlehole1 LOCKED
+CONNECT pin-1.pin1 -> housing-1.hole2 STIFF
+WHY Locks a friction axle-pin into the small connector's cross hole, then presses its pin end stiffly into the housing's second hole, hanging a stub arm off the differential.
+STEP 6
+ADD bush-1 3713 red
+ADD bush-2 3713 red
+ADD bush-3 3713 red
+ADD bush-4 3713 red
+ADD gear-1 94925 lightbluishgray
+ADD gear-2 94925 lightbluishgray
+ADD gear-3 94925 lightbluishgray
+ADD gear-4 94925 lightbluishgray
+CONNECT gear-1.axlehole1 -> axle-2.axle2 LOCKED
+CONNECT bush-1.axlehole1 -> axle-2.axle3 LOCKED
+CONNECT gear-2.axlehole1 -> axle-3.axle2 LOCKED
+CONNECT bush-2.axlehole1 -> axle-3.axle3 LOCKED
+CONNECT gear-3.axlehole1 -> axle-4.axle2 LOCKED
+CONNECT bush-3.axlehole1 -> axle-4.axle3 LOCKED
+CONNECT gear-4.axlehole1 -> axle-5.axle2 LOCKED
+CONNECT bush-4.axlehole1 -> axle-5.axle3 LOCKED
+WHY Builds four identical gear units, a reinforced 16-tooth gear locked to each frame axle and stopped by a red bush, ready to ring the housing.
+STEP 7
+CONNECT bar-1.hole3 -> axle-4.axle4 TURNS
+WHY Seen from this angle the gear cluster now sits square around the housing, so the yoke's last free hole is dropped onto a frame axle to brace it.
+STEP 8
+ADD worm-2 4716 lightbluishgray
+CONNECT worm-2.axlehole1 -> axle-1.axle4 LOCKED
+WHY Locks a second worm gear onto the far end of the drive axle, giving the input shaft a stop at both ends so it can't slide out.
+STEP 9
+ADD plate-3 32316 black
+ADD plate-4 32316 black
+CONNECT plate-3.hole1 -> axle-2.axle4 TURNS
+CONNECT plate-4.hole1 -> axle-3.axle4 TURNS
+WHY Adds a second pair of long plates across the tops of two frame axles, doubling the structure's rigidity around the gear cluster.
+STEP 10
+ADD bar-2 32557 black
+CONNECT bar-2.hole1? -> plate-3.hole5? STIFF
+WHY Plugs a second long connector into the free end of a side plate, stretching the frame out toward the output end.
+STEP 11
+ADD cap-2 18654 lightbluishgray
+ADD cap-3 18654 lightbluishgray
+ADD elbow-3 32014 black
+CONNECT cap-2.hole1? -> bar-2.hole2? STIFF
+CONNECT cap-3.hole1? -> bar-2.hole3? STIFF
+CONNECT elbow-3.hole1? -> bar-2.hole4? STIFF
+WHY Caps the new connector's remaining holes with two round spacers and an elbow, shaping the far end where the output axle will sit.
+STEP 12
+WHY Rotating the model confirms the elbow and yoke line up square with the housing before the closing plates go on.
+STEP 13
+ADD bar-3 32557 black
+CONNECT bar-3.hole1? -> plate-4.hole5? STIFF
+WHY Mirrors step 10 on the other side, plugging a third long connector into the remaining side plate's free end.
+STEP 14
+ADD plate3-1 6632 black
+ADD plate3-2 6632 black
+CONNECT plate3-1.hole1? -> bar-3.hole2? STIFF
+CONNECT plate3-2.hole1? -> bar-3.hole3? STIFF
+WHY Adds two thin cover plates across the new connector, closing in the frame on this side.
+STEP 15
+ADD cap-4 18654 lightbluishgray
+ADD axle-6 4519 black
+CONNECT axle-6.axle1 -> elbow-3.axlehole1 LOCKED
+CONNECT cap-4.hole1 -> axle-6.axle2 TURNS
+WHY Locks the last axle through the elbow to form the output stub and caps it with the final round spacer, completing the differential.
