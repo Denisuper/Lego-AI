@@ -1,0 +1,250 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD p63869-1 63869 black
+ADD p60483-2 60483 lightgray
+WHY Aligns the grey two-hole beam beside the cross bore of the black triple connector so the next step can capture them with the axle.
+
+STEP 2
+ADD p4519-1 4519 lightgray
+ADD p87082-1 87082 black
+CONNECT p4519-1.axle2 -> p63869-1.axlehole1 LOCKED
+CONNECT p4519-1.axle3 -> p60483-2.axlehole1 LOCKED
+CONNECT p87082-1.pin1 -> p60483-2.hole1 STIFF
+WHY Slides the three-length axle through the aligned cross holes and places one pin of the black hub in the grey beam's round hole.
+
+STEP 3
+ADD p60483-1 60483 lightgray
+CONNECT p4519-1.axle1 -> p60483-1.axlehole1 LOCKED
+CONNECT p87082-1.pin2 -> p60483-1.hole1 STIFF
+WHY Closes the other side with the second grey beam, capturing the remaining cross shaft and the hub's other pin.
+
+STEP 4
+ADD p64179-1 64179 lightgray
+ADD p2780-1 2780 black
+ADD p2780-2 2780 black
+CONNECT p2780-1.pin1 -> p63869-1.hole1 STIFF
+CONNECT p2780-2.pin1 -> p63869-1.hole3 STIFF
+CONNECT p2780-1.pin2 -> p64179-1.hole4 STIFF
+CONNECT p2780-2.pin2 -> p64179-1.hole2 STIFF
+WHY Pins the connector block to the short side of the rectangular frame with the two black pins two holes apart.
+
+STEP 5
+ADD p6558-1 6558 blue
+ADD p6558-2 6558 blue
+CONNECT p6558-1.pin2 -> p64179-1.hole5 STIFF
+CONNECT p6558-2.pin2 -> p64179-1.hole1 STIFF
+WHY Inserts the two long blue pins through the frame corners with their ends projecting above and below for the next layers.
+
+STEP 6
+GROUP upper-front-crossbar
+ADD p22961-1 22961 lightgray
+ADD p22961-2 22961 lightgray
+ADD p32034-1 32034 darkgray
+CONNECT p22961-1.axle1 -> p32034-1.axlehole1 LOCKED
+CONNECT p22961-2.axle1 -> p32034-1.axlehole2 LOCKED
+END
+ATTACH upper-front-crossbar
+CONNECT p6558-1.pin1 -> p22961-1.hole1 STIFF
+CONNECT p6558-2.pin1 -> p22961-2.hole1 STIFF
+WHY Joins the two grey axle-pin hubs with the straight grey cross connector and fits their round holes over the blue corner pins.
+
+STEP 7
+GROUP bevel-input-support
+ADD p15462-1 15462 brown
+ADD p6589-1 6589 tan
+ADD p48496-1 48496 black
+CONNECT p15462-1.axle5 -> p6589-1.axlehole1 LOCKED
+CONNECT p15462-1.axle5 -> p48496-1.hole2 TURNS
+END
+ATTACH bevel-input-support
+CONNECT p15462-1.axle4 -> p64179-1.hole3 TURNS
+CONNECT p15462-1.axle3 -> p63869-1.hole2 TURNS
+CONNECT p48496-1.pin1 -> p32034-1.hole1 STIFF
+CONNECT p48496-1.pin2 -> p87082-1.hole1 STIFF
+WHY Feeds the brown stopped axle through the front bearings and pins the black toggle support in place, keeping the tan bevel gear locked to the rotating axle.
+
+STEP 8
+ADD p32270-1 32270 black
+CONNECT p15462-1.axle2 -> p32270-1.axlehole1 LOCKED
+WHY Adds the black twelve-tooth double-bevel gear to the exposed front end of the same brown axle.
+
+STEP 9
+ADD p99008-1 99008 tan
+ADD p6589-2 6589 tan
+ADD p59443-1 59443 yellow
+CONNECT p99008-1.axle3 -> p59443-1.axlehole1 LOCKED
+CONNECT p99008-1.axle1 -> p6589-2.axlehole1 LOCKED
+CONNECT p99008-1.axle2 -> p48496-1.hole1 TURNS
+CONNECT p99008-1.axle1 -> p48496-1.hole3 TURNS
+MESH p6589-1.teeth p6589-2.teeth
+RATIO p6589-1 p6589-2 1/1
+WHY Installs the vertical tan axle with its yellow extension and meshes the two twelve-tooth bevel gears at right angles inside the black support.
+
+STEP 10
+ADD p41239-1 41239 darkgray
+ADD p41239-2 41239 darkgray
+ADD p6558-3 6558 blue
+ADD p6558-4 6558 blue
+CONNECT p6558-3.pin2 -> p41239-1.hole13 STIFF
+CONNECT p6558-4.pin2 -> p41239-2.hole13 STIFF
+CONNECT p6558-3.pin1 -> p64179-1.hole8 STIFF
+CONNECT p6558-4.pin1 -> p64179-1.hole9 STIFF
+CONNECT p6558-2.pin3 -> p41239-1.hole11 STIFF
+CONNECT p6558-1.pin3 -> p41239-2.hole11 STIFF
+WHY Adds the two long side rails beneath the frame, using the existing corner pins and the new pins two holes farther along each rail.
+
+STEP 11
+GROUP lower-axle-frame
+ADD p64179-2 64179 lightgray
+ADD p2780-3 2780 black
+ADD p2780-4 2780 black
+ADD p55013-1 55013 darkgray
+ADD p6589-3 6589 tan
+ADD p3713-1 3713 red
+ADD p62462-1 62462 red
+CONNECT p2780-3.pin1 -> p64179-2.hole10 STIFF
+CONNECT p2780-4.pin2 -> p64179-2.hole11 STIFF
+CONNECT p55013-1.axle8 -> p64179-2.hole18 TURNS
+CONNECT p55013-1.axle2 -> p64179-2.hole3 TURNS
+CONNECT p55013-1.axle6 -> p6589-3.axlehole1 LOCKED
+CONNECT p55013-1.axle3 -> p3713-1.axlehole1 LOCKED
+CONNECT p55013-1.axle4 -> p62462-1.hole1 TURNS
+END
+ATTACH lower-axle-frame
+CONNECT p6558-3.pin3 -> p64179-2.hole8 STIFF
+CONNECT p6558-4.pin3 -> p64179-2.hole9 STIFF
+MESH p6589-3.teeth p6589-2.teeth
+RATIO p6589-3 p6589-2 1/1
+WHY Builds the lower frame around the stopped eight-length axle with its red sleeve and bush, then stacks it beneath the rails so its bevel gear meets the vertical gear.
+
+STEP 12
+ADD p6558-5 6558 blue
+ADD p6558-6 6558 blue
+ADD p6558-7 6558 blue
+ADD p6558-8 6558 blue
+CONNECT p6558-5.pin2 -> p41239-2.hole2 STIFF
+CONNECT p6558-6.pin2 -> p41239-1.hole2 STIFF
+CONNECT p6558-7.pin2 -> p41239-1.hole8 STIFF
+CONNECT p6558-8.pin2 -> p41239-2.hole8 STIFF
+WHY Places four long blue pins through the forward portions of the rails to hold the next rectangular frame.
+
+STEP 13
+ADD p64178-1 64178 lightgray
+CONNECT p15462-1.axle1 -> p64178-1.hole22 TURNS
+WHY Lowers the large frame between the rails, feeding the exposed brown axle into the central round hole of its rear crossbar.
+
+STEP 14
+CONNECT p6558-5.pin3 -> p64178-1.hole5 STIFF
+CONNECT p6558-6.pin3 -> p64178-1.hole9 STIFF
+CONNECT p6558-7.pin3 -> p64178-1.hole24 STIFF
+CONNECT p6558-8.pin3 -> p64178-1.hole20 STIFF
+WHY Pushes the four waiting blue pins up into the large frame to hold it square on both rails.
+
+STEP 15
+GROUP turntable
+ADD p18939-1 18939 lightgray
+ADD p18938-1 18938 black
+ADD p32054-1 32054 black
+ADD p32054-2 32054 black
+CONNECT p18938-1.? -> p18939-1.? TURNS
+CONNECT p32054-1.pin1 -> p18939-1.hole6 STIFF
+CONNECT p32054-2.pin1 -> p18939-1.hole4 STIFF
+END
+ATTACH turntable
+CONNECT p32054-1.pin2 -> p64178-1.hole21 STIFF
+CONNECT p32054-2.pin2 -> p64178-1.hole23 STIFF
+WHY Snaps the black toothed turntable into its grey base and pins one base bracket to the large frame, leaving the black ring free to rotate.
+
+STEP 16
+ADD p32054-3 32054 black
+ADD p32054-4 32054 black
+CONNECT p32054-3.pin1 -> p64178-1.hole6 STIFF
+CONNECT p32054-4.pin1 -> p64178-1.hole8 STIFF
+CONNECT p32054-3.pin2 -> p18939-1.hole3 STIFF
+CONNECT p32054-4.pin2 -> p18939-1.hole1 STIFF
+MESH p32270-1.teeth p18938-1.teeth
+RATIO p32270-1 p18938-1 1/5
+WHY Pins the other turntable bracket to the frame and checks that turning the yellow input drives the black ring through the twelve-tooth pinion.
+
+STEP 17
+GROUP actuator-carrier
+ADD p64178-2 64178 lightgray
+ADD p2780-5 2780 black
+ADD p2780-6 2780 black
+CONNECT p2780-5.pin1 -> p64178-2.hole4 STIFF
+CONNECT p2780-6.pin2 -> p64178-2.hole3 STIFF
+WHY Starts the lower actuator carrier with two black pins projecting from opposite sides near its open end.
+
+STEP 18
+ADD p60485-1 60485 lightgray
+ADD p59443-2 59443 yellow
+ADD p6589-4 6589 tan
+CONNECT p60485-1.axle9 -> p59443-2.axlehole2 LOCKED
+CONNECT p60485-1.axle8 -> p64178-2.hole22 TURNS
+CONNECT p60485-1.axle2 -> p64178-2.hole7 TURNS
+CONNECT p60485-1.axle1 -> p6589-4.axlehole1 LOCKED
+WHY Threads the nine-length axle through both carrier crossbars and locks the tan bevel gear and yellow connector to its opposite ends.
+
+STEP 19
+ADD lift-actuator 92693 lightgray
+ADD p44294-1 44294 yellow
+ADD p6589-5 6589 tan
+ADD p3713-2 3713 red
+CONNECT p6589-5.axlehole1 -> lift-actuator.? LOCKED
+CONNECT p44294-1.axle2 -> p64178-2.hole1 TURNS
+CONNECT p44294-1.axle6 -> p64178-2.hole2 TURNS
+CONNECT p44294-1.axle3~ -> lift-actuator.? TURNS
+CONNECT p44294-1.axle3 -> p3713-2.axlehole1 LOCKED
+WHY Sets the small actuator to the pictured extension, adds its tan input gear, and captures its mounting fork on the yellow axle with the red bush beside it.
+
+STEP 20
+ADD p87407-1 87407 lightgray
+CONNECT p44294-1.axle4 -> p87407-1.hole1 TURNS
+MESH p87407-1.teeth p6589-5.teeth
+RATIO p87407-1 p6589-5 5/3
+MESH p6589-4.teeth p87407-1.teeth
+RATIO p6589-4 p87407-1 3/5
+WHY Slides the yellow axle through the free twenty-tooth gear so it transfers rotation from the carrier shaft to the actuator input while remaining free on the pivot axle.
+END
+
+STEP 21
+ATTACH actuator-carrier
+CONNECT p6558-5.pin1 -> p64178-2.hole5 STIFF
+CONNECT p6558-6.pin1 -> p64178-2.hole9 STIFF
+CONNECT p6558-7.pin1 -> p64178-2.hole24 STIFF
+CONNECT p6558-8.pin1 -> p64178-2.hole20 STIFF
+CONNECT p55013-1.axle1 -> p59443-2.axlehole1 LOCKED
+WHY Fits the actuator carrier beneath the rails and joins its nine-length shaft to the stopped axle with the yellow connector, then checks that pushing the rear axle turns the actuator drive.
+
+STEP 22
+GROUP upper-bevel-crank
+ADD p4519-4 4519 lightgray
+ADD p18575-1 18575 tan
+ADD p32034-2 32034 darkgray
+ADD p59443-3 59443 yellow
+CONNECT p4519-4.axle3 -> p18575-1.axlehole1 LOCKED
+CONNECT p4519-4.axle2 -> p32034-2.hole1 TURNS
+CONNECT p4519-4.axle1 -> p59443-3.axlehole1 LOCKED
+END
+ATTACH upper-bevel-crank
+MESH p18575-1.teeth p6589-3.teeth
+RATIO p6589-3 p18575-1 3/5
+WHY Places the second yellow input above the tan twenty-tooth gear and the straight grey bearing bar, meshing that gear with the lower axle's bevel gear.
+
+STEP 23
+ADD p4519-2 4519 lightgray
+ADD p4519-3 4519 lightgray
+CONNECT p4519-2.axle2 -> p64179-1.hole14 TURNS
+CONNECT p4519-3.axle2 -> p64179-1.hole15 TURNS
+CONNECT p4519-2.axle1 -> p32034-2.axlehole2 LOCKED
+CONNECT p4519-3.axle3 -> p32034-2.axlehole1 LOCKED
+WHY Secures the straight bearing bar between the frame sides with the two grey three-length axles, leaving its central vertical input free to turn.
