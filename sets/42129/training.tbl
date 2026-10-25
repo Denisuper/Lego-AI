@@ -4170,3 +4170,182 @@ CONNECT rx3-lpin-2.pin2 -> ry-beam11-1.hole3~ STIFF
 CONNECT rx3-lpin-3.pin2 -> ry-beam11-1.hole5~ STIFF
 CONNECT rx3-lpin-4.pin2 -> ry-beam11-1.hole7~ STIFF
 WHY Fixes the mounting arm onto the underside of the step board using the three red pins.
+STEP 488
+ADD rz2-axle4-1 3705 black
+ADD rz2-axle4-2 3705 black
+ADD rz2-axle4-3 3705 black
+ADD rz2-conn-1 6536 black
+ADD rz2-conn-2 6536 black
+ADD rz2-conn-3 6536 black
+CONNECT rz2-axle4-1.axle1 -> rz2-conn-1.axlehole1 LOCKED
+CONNECT rz2-axle4-2.axle1 -> rz2-conn-2.axlehole1 LOCKED
+CONNECT rz2-axle4-3.axle1 -> rz2-conn-3.axlehole1 LOCKED
+CONNECT rz2-conn-1.hole1~ -> rx3-ang-1.hole2~ TURNS
+CONNECT rz2-conn-2.hole1~ -> rx3-ang-2.hole2~ TURNS
+CONNECT rz2-conn-3.hole1~ -> rx3-ang-3.hole2~ TURNS
+WHY Three black axle-and-connector pieces are pushed into the three connectors under the step board as its mounting pins.
+STEP 489
+ATTACH rx3
+CONNECT rz2-axle4-1.axle4 -> dp-beam11-1.hole8~ TURNS
+CONNECT rz2-axle4-2.axle4 -> dp-beam11-1.hole6~ TURNS
+WHY Turns the truck over and fits the finished step board on the right front corner of the cab.
+STEP 490
+GROUP ra2
+ADD ra2-lpin-1 11214 red
+ADD ra2-ang-1 32034 black
+ADD ra2-ang-2 32034 black
+CONNECT ra2-lpin-1.axle1 -> ra2-ang-1.axlehole1 LOCKED
+CONNECT ra2-ang-2.axlehole1 -> ra2-lpin-1.axle2? LOCKED
+WHY Starts a wing mirror stalk for the cab: a red axle pin with two angled connectors.
+STEP 491
+ADD ra2-gpin-1 4274 lightgray
+ADD ra2-gpin-2 4274 lightgray
+CONNECT ra2-gpin-1.pin1 -> ra2-ang-1.hole1~ TURNS
+CONNECT ra2-gpin-2.pin1 -> ra2-ang-2.hole1~ TURNS
+WHY Two grey frictionless pins go in the connectors so the mirror can swing.
+STEP 492
+ADD ra2-bush-1 3713 black
+ADD ra2-bush-2 3713 black
+CONNECT ra2-bush-1.axlehole1 -> ra2-ang-1.axle1~ LOCKED
+CONNECT ra2-bush-2.axlehole1 -> ra2-ang-2.axle1~ LOCKED
+WHY Two small bushes hold the connectors in place.
+STEP 493
+ADD ra2-bush-3 4274 lightgray
+ADD ra2-bush-4 4274 lightgray
+CONNECT ra2-bush-3.pin1 -> ra2-gpin-1.pin2~ TURNS
+CONNECT ra2-bush-4.pin1 -> ra2-gpin-2.pin2~ TURNS
+WHY Two more grey pins are added in the stalk's ends.
+STEP 494
+ADD ra2-ang-3 32184 black
+ADD ra2-ang-4 32184 black
+CONNECT ra2-ang-3.axlehole1 -> ra2-ang-1.axle2~ LOCKED
+CONNECT ra2-ang-4.axlehole1 -> ra2-ang-2.axle2~ LOCKED
+WHY Two perpendicular connectors are added at the stalk's ends to hold the mirror head.
+STEP 495
+ADD ra2-tile-1 6636 black
+CONNECT ra2-tile-1.stud1? -> ra2-ang-3.stud1? STIFF
+WHY A long black tile is pressed onto the mirror stalk as the mirror glass.
+STEP 496
+ADD ra2-tile-2 6636 black
+CONNECT ra2-tile-2.stud1? -> ra2-tile-1.stud1? STIFF
+WHY A second long black tile (sticker 17) goes on to make the mirror head thicker.
+STEP 497
+ADD ra2-dish-1 43898 transclear
+ADD ra2-dish-2 43898 transclear
+ADD ra2-dish-3 43898 black
+ADD ra2-dish-4 44375b black
+ADD ra2-lpin-2 11214 red
+ADD ra2-ang-5 32034 black
+ADD ra2-ang-6 6536 black
+ADD ra2-axle3-1 6587 darktan
+ADD ra2-pin-1 61332 black
+ADD ra2-conn-1 6536 black
+CONNECT ra2-axle3-1.axle1 -> ra2-dish-4.axlehole1? LOCKED
+CONNECT ra2-ang-5.axlehole1 -> ra2-axle3-1.axle3 LOCKED
+CONNECT ra2-lpin-2.axle1 -> ra2-ang-5.axlehole2 LOCKED
+CONNECT ra2-pin-1.pin1 -> ra2-ang-5.hole1~ STIFF
+CONNECT ra2-dish-1.stud1? -> ra2-dish-2.stud1? STIFF
+CONNECT ra2-dish-3.stud1? -> ra2-dish-4.stud1? STIFF
+CONNECT ra2-conn-1.hole1~ -> ra2-pin-1.pin2 STIFF
+END
+ATTACH ra2
+CONNECT ra2-ang-6.hole1~ -> ra2-ang-3.hole2~ TURNS
+WHY Builds a round spot mirror in five small steps from two clear dishes, a black dish and a large black dish on a tan axle, with a red pin, and fixes it onto the end of the mirror stalk.
+STEP 498
+WHY Turns the finished round mirror over and shows how it hangs from its stalk.
+STEP 499
+ATTACH ra2
+CONNECT ra2-ang-3.hole1~ -> rf3-pin-5.pin2~ STIFF
+WHY Fits the finished round mirror stalk onto the front corner of the cab roof on the right side.
+STEP 500
+GROUP ba2
+ADD ba2-axle5-1 15462 reddishbrown
+ADD ba2-ang-1 32034 black
+CONNECT ba2-ang-1.axlehole1 -> ba2-axle5-1.axle1 LOCKED
+WHY Bag 5 starts the truck bed; it begins with a brown 5-long axle with a stop in a black angled connector.
+STEP 501
+ADD ba2-beam5-1 11478 black
+ADD ba2-bush-1 3713 black
+CONNECT ba2-bush-1.axlehole1 -> ba2-axle5-1.axle2 LOCKED
+CONNECT ba2-beam5-1.axlehole1? -> ba2-axle5-1.axle5 LOCKED
+WHY A bush and a thin 5-beam are put on the brown axle.
+STEP 502
+ADD ba2-axle3-1 4519 lightgray
+ADD ba2-bush-2 32123b lightgray
+ADD ba2-beam2-1 41677 black
+CONNECT ba2-axle3-1.axle1 -> ba2-beam5-1.axlehole2? LOCKED
+CONNECT ba2-bush-2.axlehole1 -> ba2-axle3-1.axle3 LOCKED
+CONNECT ba2-beam2-1.hole1~ -> ba2-bush-2.hole1? TURNS
+WHY A 3-long axle, a small bush and a thin 2-beam are added to the end of the arm.
+STEP 503
+ADD ba2-beam5-2 11478 black
+ADD ba2-axle4-1 3705 black
+ADD ba2-beam2-2 41677 black
+ADD ba2-beam2-3 41677 black
+CONNECT ba2-axle4-1.axle1 -> ba2-beam5-2.axlehole1? LOCKED
+CONNECT ba2-beam2-2.hole1~ -> ba2-axle4-1.axle3~ TURNS
+CONNECT ba2-beam2-3.hole1~ -> ba2-axle4-1.axle4~ TURNS
+CONNECT ba2-beam5-2.hole3~ -> ba2-beam5-1.hole3~ STIFF
+WHY A second thin 5-beam, a 4-long axle and two thin 2-beams make a hinge frame, which is turned over for the next step.
+STEP 504
+ADD ba2-bush-3 32123b lightgray
+ADD ba2-beam2-4 41677 black
+CONNECT ba2-bush-3.axlehole1 -> ba2-axle3-1.axle2~ LOCKED
+CONNECT ba2-beam2-4.hole1~ -> ba2-bush-3.hole1? TURNS
+WHY A small bush and one more thin beam lock the hinge frame together.
+STEP 505
+GROUP bb2
+ADD bb2-beam11-1 32525 darkgray
+ADD bb2-pin-1 61332 black
+ADD bb2-pin-2 61332 black
+ADD bb2-pin-3 61332 black
+ADD bb2-pin-4 61332 black
+ADD bb2-bar-1 4274 lightgray
+ADD bb2-bar-2 4274 lightgray
+ADD bb2-bar-3 4274 lightgray
+ADD bb2-bar-4 4274 lightgray
+ADD bb2-bar-5 4274 lightgray
+CONNECT bb2-pin-1.pin1 -> bb2-beam11-1.hole1~ STIFF
+CONNECT bb2-pin-2.pin1 -> bb2-beam11-1.hole3~ STIFF
+CONNECT bb2-pin-3.pin1 -> bb2-beam11-1.hole5~ STIFF
+CONNECT bb2-pin-4.pin1 -> bb2-beam11-1.hole7~ STIFF
+CONNECT bb2-bar-1.pin1 -> bb2-beam11-1.hole2~ TURNS
+CONNECT bb2-bar-2.pin1 -> bb2-beam11-1.hole4~ TURNS
+CONNECT bb2-bar-3.pin1 -> bb2-beam11-1.hole6~ TURNS
+CONNECT bb2-bar-4.pin1 -> bb2-beam11-1.hole8~ TURNS
+CONNECT bb2-bar-5.pin1 -> bb2-beam11-1.hole10~ TURNS
+END
+ATTACH bb2
+CONNECT bb2-beam11-1.hole11~ -> ba2-beam5-1.hole1~ STIFF
+WHY Builds the bed's drop-side rail from an 11-long grey beam with four black pins and five light grey pins and joins it to the hinge frame.
+STEP 506
+GROUP bc2
+ADD bc2-axle5-1 15462 reddishbrown
+ADD bc2-ang-1 32034 black
+CONNECT bc2-ang-1.axlehole1 -> bc2-axle5-1.axle1 LOCKED
+WHY Starts the second hinge frame the same way as the first: a brown 5-long axle in an angled connector.
+STEP 507
+ADD bc2-beam5-1 11478 black
+ADD bc2-bush-1 3713 black
+CONNECT bc2-bush-1.axlehole1 -> bc2-axle5-1.axle2 LOCKED
+CONNECT bc2-beam5-1.axlehole1? -> bc2-axle5-1.axle5 LOCKED
+WHY A thin 5-beam and a bush are put on the axle.
+STEP 508
+ADD bc2-axle3-1 4519 lightgray
+ADD bc2-bush-2 32123b lightgray
+ADD bc2-beam2-1 41677 black
+CONNECT bc2-axle3-1.axle1 -> bc2-beam5-1.axlehole2? LOCKED
+CONNECT bc2-bush-2.axlehole1 -> bc2-axle3-1.axle3 LOCKED
+CONNECT bc2-beam2-1.hole1~ -> bc2-bush-2.hole1? TURNS
+WHY A 3-long axle, a small bush and a thin 2-beam go on the end of the arm.
+STEP 509
+ADD bc2-beam5-2 11478 black
+ADD bc2-axle4-1 3705 black
+ADD bc2-beam2-2 41677 black
+ADD bc2-beam2-3 41677 black
+CONNECT bc2-axle4-1.axle1 -> bc2-beam5-2.axlehole1? LOCKED
+CONNECT bc2-beam2-2.hole1~ -> bc2-axle4-1.axle3~ TURNS
+CONNECT bc2-beam2-3.hole1~ -> bc2-axle4-1.axle4~ TURNS
+CONNECT bc2-beam5-2.hole3~ -> bc2-beam5-1.hole3~ STIFF
+END
+WHY A second thin 5-beam, a 4-long axle and two thin 2-beams make the second hinge frame.
