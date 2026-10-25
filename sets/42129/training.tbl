@@ -1812,3 +1812,135 @@ STEP 210
 CONNECT rx-bent-1.hole1~ -> fl-panel-1.hole11~ STIFF
 CONNECT rz-bent-1.hole1~ -> fl-panel-2.hole11~ STIFF
 WHY Pushes the rear axle fully in so its beams sit against the floor panels and the shafts engage.
+STEP 211
+WHY Checks that both rear shocks sit correctly in their mounts before the rear is closed in.
+STEP 212
+ADD sh-lblue-1 42924 blue
+ADD sh-lblue-2 42924 blue
+ADD sh-lblue-3 42924 blue
+ADD sh-lblue-4 42924 blue
+CONNECT sh-lblue-1.pin1 -> r-beam11-1.hole5~ STIFF
+CONNECT sh-lblue-2.pin1 -> r-beam11-1.hole7~ STIFF
+CONNECT sh-lblue-3.pin1 -> r-beam11-2.hole5~ STIFF
+CONNECT sh-lblue-4.pin1 -> r-beam11-2.hole7~ STIFF
+WHY Four long blue pins go into the side beams at the back to carry the rear frame.
+STEP 213
+GROUP rr
+ADD rr-frame-1 64179 black
+ADD rr-lblue-1 42924 blue
+ADD rr-lblue-2 42924 blue
+ADD rr-lblue-3 42924 blue
+ADD rr-lblue-4 42924 blue
+CONNECT rr-lblue-1.pin1 -> rr-frame-1.hole2~ STIFF
+CONNECT rr-lblue-2.pin1 -> rr-frame-1.hole4~ STIFF
+CONNECT rr-lblue-3.pin1 -> rr-frame-1.hole12~ STIFF
+CONNECT rr-lblue-4.pin1 -> rr-frame-1.hole14~ STIFF
+WHY Starts the rear cross frame: a black 5x7 frame with four long blue pins.
+STEP 214
+ADD rr-beam11-1 32525 darkgray
+ADD rr-beam11-2 32525 darkgray
+CONNECT rr-beam11-1.hole1~ -> rr-lblue-1.pin2 STIFF
+CONNECT rr-beam11-2.hole1~ -> rr-lblue-3.pin2 STIFF
+WHY Two long grey beams on the pins make the side rails of the rear frame.
+STEP 215
+ADD rr-beam3-1 6632 black
+ADD rr-beam3-2 6632 black
+CONNECT rr-beam3-1.hole1~ -> rr-lblue-2.pin2 STIFF
+CONNECT rr-beam3-2.hole1~ -> rr-lblue-4.pin2 STIFF
+WHY Two thin black beams at the rear end hold the pins and finish the back corners.
+STEP 216
+ADD rr-pin-1 61332 black
+ADD rr-pin-2 61332 black
+ADD rr-pin-3 61332 black
+ADD rr-pin-4 61332 black
+CONNECT rr-pin-1.pin1 -> rr-beam11-1.hole10~ STIFF
+CONNECT rr-pin-2.pin1 -> rr-beam11-1.hole11~ STIFF
+CONNECT rr-pin-3.pin1 -> rr-beam11-2.hole10~ STIFF
+CONNECT rr-pin-4.pin1 -> rr-beam11-2.hole11~ STIFF
+WHY Four black pins at the back of the rails are for the bumper beam.
+STEP 217
+GROUP rs
+ADD rs-beam5-1 32316 black
+ADD rs-panel-1 71709 black
+ADD rs-pin-1 61332 black
+ADD rs-pin-2 61332 black
+ADD rs-pin-3 61332 black
+ADD rs-pin-4 61332 black
+CONNECT rs-pin-1.pin1 -> rs-panel-1.hole1~ STIFF
+CONNECT rs-pin-2.pin1 -> rs-panel-1.hole3~ STIFF
+CONNECT rs-pin-3.pin1 -> rs-panel-1.hole5~ STIFF
+CONNECT rs-pin-4.pin1 -> rs-panel-1.hole7~ STIFF
+CONNECT rs-beam5-1.hole1~ -> rs-pin-1.pin2 STIFF
+END
+ATTACH rs
+CONNECT rs-panel-1.hole2~ -> rr-pin-1.pin2 STIFF
+WHY Builds a rear bumper piece from a black 3x7 panel and a 5-beam on four pins and fixes it onto the back of the rails.
+STEP 218
+ADD rs-beam5-2 32316 black
+CONNECT rs-beam5-2.hole1~ -> rr-pin-3.pin2 STIFF
+CONNECT rs-beam5-2.hole5~ -> rr-pin-4.pin2 STIFF
+WHY A second black 5-beam goes on the other rail to make the rear step symmetric.
+STEP 219
+ADD rt-pin-1 61332 black
+ADD rt-pin-2 61332 black
+ADD rt-ring-1 18654 black
+ADD rt-ring-2 18654 black
+CONNECT rt-pin-1.pin1 -> rs-beam5-1.hole3~ STIFF
+CONNECT rt-pin-2.pin1 -> rs-beam5-2.hole3~ STIFF
+CONNECT rt-ring-1.hole1 -> rt-pin-1.pin2 TURNS
+CONNECT rt-ring-2.hole1 -> rt-pin-2.pin2 TURNS
+WHY Two pins with round black connectors on the beams are the towing eyes at the back.
+STEP 220
+GROUP ru
+ADD ru-beam6-1 32063 lightgray
+ADD ru-tpin-1 3749 tan
+ADD ru-conn-1 6536 darkgray
+ADD ru-conn-2 6536 darkgray
+ADD ru-pin-1 61332 black
+ADD ru-pin-2 61332 black
+ADD ru-conn-3 42003 darkgray
+CONNECT ru-tpin-1.pin1 -> ru-beam6-1.hole3~ TURNS
+CONNECT ru-conn-1.hole1~ -> ru-tpin-1.pin2 TURNS
+CONNECT ru-conn-2.hole1~ -> ru-pin-1.pin2 STIFF
+CONNECT ru-pin-1.pin1 -> ru-beam6-1.hole5~ STIFF
+CONNECT ru-pin-2.pin1 -> ru-conn-2.hole2~ STIFF
+CONNECT ru-conn-3.hole1~ -> ru-pin-2.pin2 STIFF
+END
+ATTACH ru
+CONNECT ru-beam6-1.hole1~ -> rr-beam11-1.hole4~ STIFF
+WHY Builds a tall stand-up piece (the support for the cab tilt) from a light 6-beam, a tan pin and three connectors and fits it on the rear frame.
+STEP 221
+GROUP rv
+ADD rv-conn-1 42003 darkgray
+ADD rv-bpin-1 43093 blue
+ADD rv-bpin-2 43093 blue
+ADD rv-lblue-1 42924 blue
+ADD rv-lblue-2 42924 blue
+ADD rv-beam5-1 32316 black
+CONNECT rv-bpin-1.pin1 -> rv-conn-1.hole1 STIFF
+CONNECT rv-bpin-2.pin1 -> rv-conn-1.hole2 STIFF
+CONNECT rv-beam5-1.hole1~ -> rv-bpin-1.pin2 STIFF
+CONNECT rv-lblue-1.pin1 -> rv-beam5-1.hole3~ STIFF
+CONNECT rv-lblue-2.pin1 -> rv-beam5-1.hole5~ STIFF
+END
+ATTACH rv
+CONNECT rv-beam5-1.hole2~ -> ru-conn-3.hole2~ STIFF
+WHY Builds a short 5-beam with a connector and four blue pins and fixes it on top of the stand-up piece to hold the end of the frame.
+STEP 222
+ADD rw-pin-1 61332 black
+ADD rw-pin-2 61332 black
+ADD rw-pin-3 61332 black
+CONNECT rw-pin-1.pin1 -> rr-frame-1.hole6~ STIFF
+CONNECT rw-pin-2.pin1 -> rr-frame-1.hole8~ STIFF
+CONNECT rw-pin-3.pin1 -> rr-frame-1.hole10~ STIFF
+WHY Three black pins go into the rear frame for the last beam before the frame is turned over.
+STEP 223
+ADD rw-beam5-1 32316 black
+CONNECT rw-beam5-1.hole1~ -> rw-pin-1.pin2 STIFF
+CONNECT rw-beam5-1.hole5~ -> rw-pin-3.pin2 STIFF
+WHY A last black 5-beam closes the rear frame, which is then ready to fit onto the chassis.
+STEP 224
+ATTACH rr
+CONNECT rr-lblue-1.pin2 -> sh-lblue-1.pin2~ STIFF
+CONNECT rr-lblue-3.pin2 -> sh-lblue-3.pin2~ STIFF
+WHY Lowers the finished rear frame onto the four blue pins at the back of the chassis.
