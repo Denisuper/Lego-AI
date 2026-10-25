@@ -5534,3 +5534,65 @@ CONNECT ob-pin-12.pin1 -> ob-hub-2.hole1~ STIFF
 CONNECT ob-hub-1.hole1~ -> ob-beam13-2.hole7~ STIFF
 CONNECT ob-hub-2.hole1~ -> ob-beam13-3.hole7~ STIFF
 WHY Two light perpendicular connectors, each with two black pins, are fixed in the middle of the side members as the hinge mounts.
+STEP 612
+ADD ob-axle3-1 4519 lightgray
+ADD ob-axle3-2 4519 lightgray
+CONNECT ob-axle3-1.axle1 -> ob-hub-1.axlehole1? LOCKED
+CONNECT ob-axle3-2.axle1 -> ob-hub-2.axlehole1? LOCKED
+WHY Two 3-long axles go through the middle connectors of the frame as the hinge pins.
+STEP 613
+WHY Turns the frame over to show its far side.
+STEP 614
+ATTACH ob
+CONNECT ob-beam7-1.hole7~ -> ng-ang-1.hole2~ STIFF
+CONNECT ob-beam7-2.hole7~ -> ng-ang-2.hole2~ STIFF
+CONNECT ob-axle4-1.axle4 -> nz-conn-1.hole2~ TURNS
+CONNECT ob-axle4-2.axle4 -> nz-conn-2.hole2~ TURNS
+WHY Lays the finished frame onto the bed, with the four red circles showing where its arms meet the cab and the bed corners.
+STEP 615
+GROUP oc
+ADD oc-pin-1 61332 black
+ADD oc-beam2-1 60483 darkgray
+CONNECT oc-pin-1.pin1 -> oc-beam2-1.hole1 STIFF
+WHY Starts the exhaust stack: a grey beam with a black pin.
+STEP 616
+ADD oc-axle9-1 60485 yellow
+CONNECT oc-axle9-1.axle1 -> oc-beam2-1.axlehole1? LOCKED
+WHY A yellow 9-long axle goes through the beam as the stack's pipe.
+STEP 617
+ADD oc-bush-1 4274 lightgray
+ADD oc-bush-2 4274 lightgray
+CONNECT oc-bush-1.pin1 -> oc-axle9-1.axle9? TURNS
+CONNECT oc-bush-2.pin1 -> oc-axle9-1.axle8? TURNS
+WHY Two small light grey end caps go on the far end of the pipe.
+STEP 618
+ADD oc-disc-1 4032a lightgray
+ADD oc-round-1 3941 lightgray
+CONNECT oc-disc-1.axlehole1 -> oc-axle9-1.axle3 LOCKED
+CONNECT oc-round-1.axlehole1 -> oc-axle9-1.axle4 LOCKED
+WHY A round plate and a round brick on the pipe make the first segment of the stack.
+STEP 619
+ADD oc-round-2 3941 lightgray
+ADD oc-round-3 3941 lightgray
+CONNECT oc-round-2.axlehole1 -> oc-axle9-1.axle5 LOCKED
+CONNECT oc-round-3.axlehole1 -> oc-axle9-1.axle6 LOCKED
+WHY Two more light round bricks extend the stack.
+STEP 620
+ADD oc-round-4 3941 lightgray
+ADD oc-round-5 3941 lightgray
+CONNECT oc-round-4.axlehole1 -> oc-axle9-1.axle7 LOCKED
+CONNECT oc-round-5.axlehole1 -> oc-axle9-1.axle8~ LOCKED
+WHY Two more light round bricks fill the pipe.
+STEP 621
+ADD oc-axle4-1 3705 black
+ADD oc-round-6 3941 lightgray
+CONNECT oc-round-6.axlehole1 -> oc-axle9-1.axle9~ LOCKED
+CONNECT oc-axle4-1.axle1 -> oc-round-6.axlehole2? LOCKED
+WHY A last round brick and a 4-long black axle with a stop finish the end of the stack.
+STEP 622
+ADD oc-round-7 3941 lightgray
+ADD oc-tile-1 15535 lightgray
+CONNECT oc-round-7.axlehole1 -> oc-axle4-1.axle3 LOCKED
+CONNECT oc-tile-1.stud1? -> oc-round-7.stud1? STIFF
+END
+WHY A round brick and a round tile with a hole are put on the end to cap the exhaust stack.
