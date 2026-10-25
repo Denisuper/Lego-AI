@@ -24,7 +24,7 @@ Severity levels: error (illegal join or dead mechanism, must fix), warning (plau
 
 ## How to add a set (the only workflow)
 1. Make `sets/<set>/` with the original `booklet.pdf` (commit it unedited; add `!sets/<set>/booklet.pdf` to .gitignore) and `parts_list.csv` (Rebrickable).
-2. Read the booklet pages directly. Do NOT crop pictures, do NOT write annotation.json, systems.json, mechanisms.json or booklet_map.csv.
+2. Read the booklet pages directly. Do NOT write steps.md: training.tbl/.jsonl already hold every step. Do NOT crop pictures, do NOT write annotation.json, systems.json, mechanisms.json or booklet_map.csv.
 3. Write TWO files directly in the 42175 style — copy `sets/42175/training.tbl` header verbatim, swap set name:
    - `sets/<set>/training.tbl` — plain text: the header comment block, then `STEP N` followed by that step's ADD, CONNECT, optional GROUP/END/ATTACH, and WHY lines.
    - `sets/<set>/training.jsonl` — one JSON object per step: `{"set": "Set <set> - <title>", "step": "N", "messages": [...]}`. System prompt identical to 42175. User message has SET line, PARTS SO FAR (condensed to counts past 60 items), LAST STEPS (previous four steps in full), and the write-step prompt. Assistant message is the ADD/CONNECT/WHY block.
@@ -54,7 +54,7 @@ tools/check_notation.py        two-stage checker: geometric legality + functiona
 training/                      export.py, train_qwen.py, system_prompt.md
 docs/                          set_list.md (sets to do)
 ```
-Set 8047 and 42175 now keep only booklet, parts list, training.tbl and training.jsonl (42175 also keeps steps.md as a style fossil — new sets do not write it). 42061 and 42116 have steps.md, training.tbl and training.jsonl too. 42114 in progress: training.tbl + training.jsonl for steps 1-54, continuing from booklet page 37.
+Finished sets keep only booklet, parts list, training.tbl and training.jsonl. The steps live in training.tbl/.jsonl, so there is no separate steps.md per set (old ones in 42175, 42061, 42116, 42114 are leftovers; never add new ones). 42114 in progress: training.tbl + training.jsonl for steps 1-54, continuing from booklet page 37.
 NOT STARTED (parts list only; old step folders were deleted unconverted - redo from the booklet with "How to add a set" above): 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129 (parts list also incomplete), 8049.
 
 ## Finishing a NOT STARTED set (prompt for agents)
@@ -117,7 +117,7 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 ## Status (Oct 24, 2026)
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
 - 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
-- 42061 and 42116 have steps.md, training.tbl and training.jsonl too.
+- 42061 and 42116 are done too (old steps.md leftovers can be deleted).
 - 42114 in progress: training.tbl + training.jsonl for steps 1-54 (booklet pages 6-43). Remaining steps 55-508 from pages 37-300 still to transcribe.
 - NOT STARTED: 8043, 8069, 42009, 42030, 8258, 42004, 42006, 42021, 42029, 42049, 42094, 42101, 42129, 8049. Old per-step annotation work for the last 9 was deleted unconverted; redo these from the booklet with "How to add a set" above.
 
