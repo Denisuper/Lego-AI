@@ -5076,3 +5076,66 @@ CONNECT nf-pin-10.pin1 -> ne-beam7-1.hole7~ STIFF
 CONNECT nf-pin-11.pin1 -> ne-beam7-2.hole1~ STIFF
 CONNECT nf-pin-12.pin1 -> ne-beam7-2.hole7~ STIFF
 WHY Twelve black pins go in the ends of the green beams to hold the bed's side panels.
+STEP 580
+ADD ng-ang-1 32013 brightgreen
+ADD ng-ang-2 32013 brightgreen
+ADD ng-beam11-1 32525 brightgreen
+ADD ng-beam11-2 32525 brightgreen
+ADD ng-beam11-3 32525 brightgreen
+ADD ng-beam11-4 32525 brightgreen
+ADD ng-beam7-1 32524 brightgreen
+ADD ng-beam7-2 32524 brightgreen
+CONNECT ng-beam11-1.hole2~ -> nf-pin-1.pin2 STIFF
+CONNECT ng-beam11-2.hole2~ -> nf-pin-3.pin2 STIFF
+CONNECT ng-beam11-3.hole2~ -> nf-pin-5.pin2 STIFF
+CONNECT ng-beam11-4.hole2~ -> nf-pin-7.pin2 STIFF
+CONNECT ng-beam7-1.hole2~ -> nf-pin-9.pin2 STIFF
+CONNECT ng-beam7-2.hole2~ -> nf-pin-11.pin2 STIFF
+CONNECT ng-ang-1.hole1~ -> nf-pin-2.pin2 STIFF
+CONNECT ng-ang-2.hole1~ -> nf-pin-6.pin2 STIFF
+WHY A second layer of bright green beams (four 11-beams and two 7-beams) and two small angled connectors go on the black pins to double the thickness of the bed edge.
+STEP 581
+WHY Sticks stickers 15, 27, 28, 35 and 37 (engine, oil and brand labels) along the right side of the green bed edge, as the picture shows.
+STEP 582
+WHY Turns the truck round and sticks stickers 9, 21, 22, 35 and 37 along the left side of the green bed edge in the same way.
+STEP 583
+ADD nh-tpin-1 4274 lightgray
+ADD nh-tpin-2 4274 lightgray
+ADD nh-tpin-3 4274 lightgray
+ADD nh-cap-1 6141 tan
+ADD nh-cap-2 6141 tan
+ADD nh-cap-3 6141 tan
+CONNECT nh-cap-1.stud1? -> nh-tpin-1.pin2 STIFF
+CONNECT nh-cap-2.stud1? -> nh-tpin-2.pin2 STIFF
+CONNECT nh-cap-3.stud1? -> nh-tpin-3.pin2 STIFF
+CONNECT nh-tpin-1.pin1 -> bq-beam11-1.hole3~ TURNS
+CONNECT nh-tpin-2.pin1 -> bq-beam11-1.hole8~ TURNS
+CONNECT nh-tpin-3.pin1 -> mw-panel-1.hole6~ TURNS
+WHY Three tan caps on grey pins are pushed into the chassis side on the left of the bed as the covers for the fixing points.
+STEP 584
+ADD ni-bpin-1 43093 blue
+ADD ni-lbeam-1 32140 black
+ADD ni-pin-1 61332 black
+CONNECT ni-pin-1.pin1 -> ni-lbeam-1.hole1~ STIFF
+CONNECT ni-bpin-1.pin1 -> ni-lbeam-1.hole3~ STIFF
+CONNECT ni-lbeam-1.hole2~ -> bq-beam11-1.hole9~ STIFF
+WHY A black 2x4 L-beam with a black pin and a blue pin is fixed on the chassis side where the bed meets the cab, as the small picture shows, to hold the fuel tank.
+STEP 585
+GROUP nj
+ADD nj-panel-1 24116 black
+ADD nj-panel-2 24116 black
+ADD nj-pin-1 61332 black
+ADD nj-pin-2 61332 black
+CONNECT nj-pin-1.pin1 -> nj-panel-1.hole1~ STIFF
+CONNECT nj-pin-2.pin1 -> nj-panel-1.hole4~ STIFF
+CONNECT nj-panel-2.hole1~ -> nj-pin-1.pin2 STIFF
+END
+WHY Builds the side fuel tank from two curved black panels joined by pins in three small steps (sticker 36, a set of labels goes on it).
+STEP 586
+ATTACH nj
+CONNECT nj-panel-1.hole3~ -> ni-bpin-1.pin2~ STIFF
+ADD ni-pin-2 61332 black
+ADD ni-beam3-1 32523 black
+CONNECT ni-pin-2.pin1 -> ni-beam3-1.hole1~ STIFF
+CONNECT ni-beam3-1.hole2~ -> nj-panel-2.hole4~ STIFF
+WHY Fits the finished fuel tank against the chassis side and clips it with a pin and a 3-beam.
