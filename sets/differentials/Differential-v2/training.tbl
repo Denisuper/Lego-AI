@@ -1,0 +1,109 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD frame-1 64179 lightbluishgray
+ADD pin-1 6562 lightbluishgray
+ADD pin-2 6562 lightbluishgray
+ADD pin-3 6562 lightbluishgray
+ADD pin-4 6562 lightbluishgray
+CONNECT pin-1.? -> frame-1.hole1~ STIFF
+CONNECT pin-2.? -> frame-1.hole5~ STIFF
+CONNECT pin-3.? -> frame-1.hole16~ STIFF
+CONNECT pin-4.? -> frame-1.hole20~ STIFF
+WHY Starts the build with the 7x5 open frame and presses a pin joiner into each of its four corner holes, giving the next parts posts to sit on.
+STEP 2
+ADD beam-1 32523 red
+ADD beam-2 32523 red
+CONNECT beam-1.hole1 -> pin-1.? STIFF
+CONNECT beam-2.hole1 -> pin-3.? STIFF
+WHY Presses the two red 1x3 beams onto the free ends of two corner pins, starting the inner cage that will hold the gear cluster.
+STEP 3
+ADD fric-1 2780 black
+ADD fric-2 2780 black
+CONNECT fric-1.pin1 -> frame-1.hole10~ STIFF
+CONNECT fric-1.pin2 -> beam-1.hole3 STIFF
+CONNECT fric-2.pin1 -> frame-1.hole11~ STIFF
+CONNECT fric-2.pin2 -> beam-2.hole3 STIFF
+WHY Pins the free ends of the two red beams into the frame's middle holes with friction pins, squaring up the cage.
+STEP 4
+ADD bevel-1 6589 tan
+ADD bevel-2 6589 tan
+WHY Drops the two 12-tooth bevel gears into the cage; they will lock onto the differential housings' stubs once those are built.
+STEP 5
+ADD gear20-1 24201 black
+ADD gear20-2 24201 black
+WHY Adds the two 20-tooth gears that will carry the housings' output drive once the housings are built.
+STEP 6
+ADD beam7-1 32524 lightbluishgray
+ADD beam7-2 32524 lightbluishgray
+CONNECT beam7-1.hole1 -> pin-2.? STIFF
+CONNECT beam7-2.hole1 -> pin-4.? STIFF
+WHY Presses the two long 1x7 beams onto the remaining corner pins, extending the frame into the side rails that will carry the output axles.
+STEP 7
+GROUP arm-a
+ADD housing-a 60c01 black
+ADD axlecon-a1 32184 black
+ADD axlecon-a2 32184 black
+ADD cross-a1 32184 black
+ADD cross-a2 32184 black
+ADD elbow-a1 32014 red
+ADD elbow-a2 32014 red
+ADD cap-a 18654 lightbluishgray
+CONNECT axlecon-a1.? -> housing-a.stub1? LOCKED
+CONNECT axlecon-a2.? -> housing-a.stub2? LOCKED
+CONNECT cross-a1.? -> housing-a.stub3? LOCKED
+CONNECT cross-a2.? -> housing-a.stub4? LOCKED
+CONNECT elbow-a1.axlehole1 -> housing-a.stub5? LOCKED
+CONNECT elbow-a2.axlehole1 -> housing-a.stub6? LOCKED
+CONNECT cap-a.hole1 -> housing-a.hub1? TURNS
+CONNECT bevel-1.axlehole1 -> housing-a.stub7? LOCKED
+CONNECT gear20-1.? -> housing-a.stub8? LOCKED
+END
+ATTACH arm-a
+CONNECT axlecon-a1.? -> beam-1.hole2~ STIFF
+WHY Builds the first differential housing with its red angled spokes, cross connectors and cap, locks the 12- and 20-tooth gears onto its stubs, and attaches the finished arm to the cage.
+STEP 8
+GROUP arm-b
+ADD housing-b 60c01 black
+ADD axlecon-b1 32184 black
+ADD axlecon-b2 32184 black
+ADD cross-b1 32184 black
+ADD cross-b2 32184 black
+ADD elbow-b1 32014 red
+ADD elbow-b2 32014 red
+ADD cap-b 18654 lightbluishgray
+CONNECT axlecon-b1.? -> housing-b.stub1? LOCKED
+CONNECT axlecon-b2.? -> housing-b.stub2? LOCKED
+CONNECT cross-b1.? -> housing-b.stub3? LOCKED
+CONNECT cross-b2.? -> housing-b.stub4? LOCKED
+CONNECT elbow-b1.axlehole1 -> housing-b.stub5? LOCKED
+CONNECT elbow-b2.axlehole1 -> housing-b.stub6? LOCKED
+CONNECT cap-b.hole1 -> housing-b.hub1? TURNS
+CONNECT bevel-2.axlehole1 -> housing-b.stub7? LOCKED
+CONNECT gear20-2.? -> housing-b.stub8? LOCKED
+END
+ATTACH arm-b
+CONNECT axlecon-b1.? -> beam-2.hole2~ STIFF
+WHY Builds the mirrored second differential housing the same way and attaches it to the opposite side of the cage, completing both gear clusters.
+STEP 9
+ADD lock-1 6587 lightbluishgray
+ADD lock-2 6587 lightbluishgray
+ADD lock-3 6587 lightbluishgray
+ADD lock-4 6587 lightbluishgray
+CONNECT lock-1.axle1 -> housing-a.stub9? LOCKED
+CONNECT lock-1.pin1 -> beam7-1.hole4~ TURNS
+CONNECT lock-2.axle1 -> housing-a.stub10? LOCKED
+CONNECT lock-2.pin1 -> beam7-1.hole2~ TURNS
+CONNECT lock-3.axle1 -> housing-b.stub9? LOCKED
+CONNECT lock-3.pin1 -> beam7-2.hole4~ TURNS
+CONNECT lock-4.axle1 -> housing-b.stub10? LOCKED
+CONNECT lock-4.pin1 -> beam7-2.hole2~ TURNS
+WHY Locks the four stud-capped axle pins through both housings' last stubs and out into the side rails, bracing the gear clusters and finishing the differential.
