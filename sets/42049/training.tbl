@@ -1164,3 +1164,184 @@ ADD p2431-1 2431 yellow
 CONNECT p2431-1.? -> p4274-7.? LOCKED
 CONNECT p2431-1.? -> p4274-8.? LOCKED
 WHY Presses the yellow side tile over the two short-pin studs and applies the mining-company label 9.
+STEP 123
+GROUP cab-roof
+ADD p32140-6 32140 black
+ADD p6558-15 6558 blue
+ADD p6558-16 6558 blue
+CONNECT p6558-15.pin1 -> p32140-6.hole4 STIFF
+CONNECT p6558-16.pin1 -> p32140-6.hole3 STIFF
+WHY Starts the roof bracket with two adjacent blue pins in the short leg of a black L beam.
+STEP 124
+ADD p32140-7 32140 black
+CONNECT p6558-15.pin2 -> p32140-7.hole2 STIFF
+CONNECT p6558-16.pin2 -> p32140-7.hole3 STIFF
+WHY Adds a second L beam across the two blue pins with its long leg pointing down.
+STEP 125
+ADD p4519-8 4519 lightgray
+ADD p18651-7 18651 black
+ADD p60483-15 60483 black
+ADD p32039-7 32039 yellow
+CONNECT p4519-8.axle3 -> p60483-15.axlehole1 LOCKED
+CONNECT p4519-8.axle2 -> p32039-7.axlehole1 LOCKED
+CONNECT p18651-7.pin1 -> p60483-15.hole1 STIFF
+CONNECT p18651-7.axle2 -> p32140-7.axlehole1 LOCKED
+WHY Adds the yellow perpendicular cab mount and its parallel grey axle on the bottom of the roof bracket.
+STEP 126
+ADD p32523-5 32523 black
+ADD p2780-40 2780 black
+CONNECT p2780-40.pin2 -> p32523-5.hole3 STIFF
+CONNECT p2780-40.pin1 -> p32140-7.hole1 STIFF
+CONNECT p18651-7.axle1 -> p32523-5.hole2 TURNS
+WHY Reinforces the lower roof bracket with a three-hole beam over the exposed axle end and a black pin.
+STEP 127
+ADD p15100-3 15100 black
+ADD p4274-9 4274 lightgray
+ADD p6141-5 6141 transorange
+CONNECT p4274-9.pin1 -> p15100-3.hole1 TURNS
+CONNECT p4274-9.? -> p6141-5.? LOCKED
+CONNECT p15100-3.pin1 -> p32140-6.hole1 STIFF
+WHY Builds the orange roof beacon on a short grey pin and plugs its black right-angle base into the roof beam.
+STEP 128
+ADD p4519-9 4519 lightgray
+ADD p4519-10 4519 lightgray
+ADD p60483-16 60483 black
+ADD p32123b-17 32123b lightgray
+ADD p32123b-18 32123b lightgray
+CONNECT p4519-9.axle2 -> p60483-16.axlehole1 LOCKED
+CONNECT p4519-10.axle2 -> p60483-16.hole1 TURNS
+CONNECT p4519-10.axle1 -> p32123b-17.axlehole1 LOCKED
+CONNECT p4519-10.axle3 -> p32123b-18.axlehole1 LOCKED
+CONNECT p4519-9.axle1 -> p32140-6.axlehole1 LOCKED
+WHY Fits the cab hinge shaft through the black lug with half bushes on both sides, then anchors the lug's other axle to the roof.
+STEP 129
+ADD p32140-8 32140 black
+CONNECT p6558-15.pin3 -> p32140-8.hole4 STIFF
+CONNECT p6558-16.pin3 -> p32140-8.hole3 STIFF
+CONNECT p4519-9.axle3 -> p32140-8.axlehole1 LOCKED
+WHY Closes the roof bracket with the third black L beam over the two blue pins and grey cross axle.
+STEP 130
+ADD p11478-1 11478 black
+ADD p15462-1 15462 darktan
+ADD p32123b-19 32123b lightgray
+CONNECT p15462-1.axle5 -> p11478-1.axlehole2 LOCKED
+CONNECT p15462-1.axle5 -> p32123b-19.axlehole1 LOCKED
+CONNECT p4519-10.axle3 -> p11478-1.axlehole1 LOCKED
+WHY Puts a thin five-hole cab pillar on the upper hinge axle and fits the long stopped axle through its lower cross hole.
+END
+STEP 131
+ATTACH cab-roof
+CONNECT p15462-1.axle4 -> p32526-8.hole1 TURNS
+WHY Slides the stopped lower hinge axle through the round hole at the top of the yellow cab frame to join the roof and side.
+STEP 132
+ADD p11478-2 11478 black
+ADD p32123b-20 32123b lightgray
+CONNECT p15462-1.axle3 -> p32123b-20.axlehole1 LOCKED
+CONNECT p15462-1.axle3 -> p11478-2.axlehole2 LOCKED
+CONNECT p4519-10.axle1 -> p11478-2.axlehole1 LOCKED
+WHY Adds the inner half bush and second thin pillar on the two hinge axles to complete the paired cab supports.
+END
+STEP 133
+ATTACH cab
+CONNECT p2780-37.pin1 -> p32526-4.hole6 STIFF
+CONNECT p6558-5.pin3 -> p32140-3.hole3 STIFF
+CONNECT p15462-1.axle2 -> p32524-2.hole4 TURNS
+CONNECT p3705-3.axle1 -> p32039-7.axlehole2 LOCKED
+WHY Mounts the complete cab on the chassis pins and stopped axle, seating the yellow perpendicular mount on the exposed black chassis axle.
+STEP 134
+ADD p40490-4 40490 yellow
+ADD p40490-5 40490 yellow
+ADD p18651-8 18651 black
+ADD p18651-9 18651 black
+ADD p32034-6 32034 black
+CONNECT p18651-8.axle1 -> p32034-6.axlehole2 LOCKED
+CONNECT p18651-9.axle1 -> p32034-6.axlehole1 LOCKED
+CONNECT p18651-8.pin1 -> p40490-4.hole9 STIFF
+CONNECT p18651-9.pin1 -> p40490-5.hole9 STIFF
+CONNECT p2780-2.pin1 -> p40490-4.hole1 STIFF
+CONNECT p6558-1.pin2 -> p40490-4.hole4 STIFF
+CONNECT p2780-14.pin2 -> p40490-4.hole7 STIFF
+CONNECT p2780-1.pin2 -> p40490-5.hole1 STIFF
+CONNECT p6558-2.pin2 -> p40490-5.hole4 STIFF
+CONNECT p2780-15.pin1 -> p40490-5.hole7 STIFF
+WHY Fits two yellow nine-hole lower rear rails and joins their back ends with the black axle connector and two axle pins.
+STEP 135
+GROUP right-rear-side
+ADD p40490-6 40490 yellow
+ADD p2780-41 2780 black
+ADD p2780-42 2780 black
+CONNECT p2780-41.pin2 -> p40490-6.hole3 STIFF
+CONNECT p2780-42.pin2 -> p40490-6.hole4 STIFF
+WHY Starts the upper rear side rail with two adjacent black pins near its front end.
+STEP 136
+ADD p32526-10 32526 yellow
+CONNECT p2780-41.pin1 -> p32526-10.hole6 STIFF
+CONNECT p2780-42.pin1 -> p32526-10.hole5 STIFF
+WHY Fastens a yellow L beam below the rear rail to support the outside body panel.
+STEP 137
+ADD p6558-17 6558 blue
+ADD p6558-18 6558 blue
+CONNECT p6558-17.pin1 -> p32526-10.hole4 STIFF
+CONNECT p6558-18.pin1 -> p32526-10.hole3 STIFF
+WHY Inserts two blue long pins through adjacent holes in the upright L beam for the grey connector and outer panel.
+STEP 138
+ADD p42003-7 42003 lightgray
+ADD p32054-13 32054 black
+CONNECT p6558-18.pin2 -> p42003-7.hole1 STIFF
+CONNECT p6558-17.pin2 -> p42003-7.hole2 STIFF
+CONNECT p32054-13.pin1 -> p40490-6.hole7 STIFF
+WHY Fits the grey perpendicular connector over the blue pins and adds the long black mounting pin near the back of the rail.
+STEP 139
+ADD p14682-1 14682 lightgray
+CONNECT p14682-1.? -> p40490-6.hole1~ STIFF
+WHY Plugs the exhaust pipe into the front end of the upper side rail with the pipe running backward beside it.
+END
+STEP 140
+ATTACH right-rear-side
+CONNECT p6558-1.pin3 -> p32526-10.hole1 STIFF
+CONNECT p32054-13.pin2 -> p60483-3.hole1 STIFF
+WHY Mounts the exhaust-side rear frame on the existing blue chassis pin and the black rear lug.
+STEP 141
+ADD p18651-10 18651 black
+ADD p18651-11 18651 black
+ADD p32034-7 32034 black
+CONNECT p18651-10.axle1 -> p32034-7.axlehole2 LOCKED
+CONNECT p18651-11.axle1 -> p32034-7.axlehole1 LOCKED
+CONNECT p18651-10.pin1 -> p40490-6.hole9 STIFF
+WHY Builds the second black rear crossbar and plugs its near pin into the end of the upper side rail.
+STEP 142
+ADD p32009-1 32009 yellow
+ADD p32062-17 32062 red
+ADD p6536-20 6536 yellow
+CONNECT p6558-17.pin3 -> p32009-1.hole7 STIFF
+CONNECT p6558-18.pin3 -> p32009-1.hole8 STIFF
+CONNECT p4519-8.axle1 -> p32009-1.axlehole1 LOCKED
+CONNECT p43093-6.pin1 -> p32009-1.hole5 STIFF
+CONNECT p32062-17.axle1 -> p42003-7.axlehole1 LOCKED
+CONNECT p32062-17.axle2 -> p6536-20.axlehole1 LOCKED
+WHY Fits the long bent yellow side beam from the cab to the rear frame and adds a perpendicular yellow mount on the red axle below it.
+STEP 143
+GROUP left-rear-side
+ADD p40490-7 40490 yellow
+ADD p32526-11 32526 yellow
+ADD p42003-8 42003 lightgray
+ADD p2780-43 2780 black
+ADD p2780-44 2780 black
+ADD p6558-19 6558 blue
+ADD p6558-20 6558 blue
+ADD p32054-14 32054 black
+CONNECT p6558-19.pin2 -> p42003-8.hole2 STIFF
+CONNECT p6558-20.pin2 -> p42003-8.hole1 STIFF
+CONNECT p6558-19.pin1 -> p32526-11.hole4 STIFF
+CONNECT p6558-20.pin1 -> p32526-11.hole3 STIFF
+CONNECT p2780-43.pin2 -> p32526-11.hole6 STIFF
+CONNECT p2780-44.pin2 -> p32526-11.hole5 STIFF
+CONNECT p2780-43.pin1 -> p40490-7.hole3 STIFF
+CONNECT p2780-44.pin1 -> p40490-7.hole4 STIFF
+CONNECT p32054-14.pin1 -> p40490-7.hole7 STIFF
+END
+ATTACH left-rear-side
+CONNECT p6558-2.pin3 -> p32526-11.hole1 STIFF
+CONNECT p32054-14.pin2 -> p60483-4.hole1 STIFF
+CONNECT p18651-11.pin1 -> p40490-7.hole9 STIFF
+WHY Builds the opposite rear side frame and fits it over the existing chassis pins and the free end of the upper rear crossbar.
