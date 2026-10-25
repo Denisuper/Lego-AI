@@ -1565,9 +1565,9 @@ WHY Mounts the yellow side fitting on a blue axle-pin and slides the stopped dar
 STEP 144
 ADD p43093-16 43093 blue
 ADD p25214-13 25214 yellow
-CONNECT p43093-16.axle1 -> p25214-13.axlehole1 LOCKED
+CONNECT p43093-16.axle1 -> p25214-13.? LOCKED
 CONNECT p43093-16.pin1 -> p64681-2.hole5 STIFF
-CONNECT p6587-2.axle1~ -> p25214-13.axlehole2 LOCKED
+CONNECT p6587-2.axle1~ -> p25214-13.? LOCKED
 WHY Fits the curved yellow elbow onto a blue axle-pin and pushes the dark tan shaft into its other cross socket to complete the side pipe.
 
 STEP 145
@@ -1577,3 +1577,266 @@ CONNECT p2780-57.pin1 -> p27940-4.hole1 STIFF
 CONNECT p2780-58.pin1 -> p87082-5.hole1 STIFF
 CONNECT p2780-59.pin1 -> p48989-2.hole1 STIFF
 WHY Pins the decorated cover to the chassis below the upper yellow side panel, with the curved yellow pipe facing outward.
+
+STEP 146
+GROUP opposite-side-cover
+ADD p64393-2 64393 black
+ADD p2780-60 2780 black
+ADD p2780-61 2780 black
+CONNECT p2780-60.pin2 -> p64393-2.hole4 STIFF
+CONNECT p2780-61.pin2 -> p64393-2.hole2 STIFF
+WHY Applies sticker 2 to the opposite long black cover panel and inserts its two joining pins.
+
+STEP 147
+ADD p87080-1 87080 black
+CONNECT p2780-60.pin1 -> p87080-1.hole4 STIFF
+CONNECT p2780-61.pin1 -> p87080-1.hole2 STIFF
+WHY Joins the small black end panel with sticker 17 to the long tapered panel.
+
+STEP 148
+ADD p2780-62 2780 black
+ADD p2780-63 2780 black
+ADD p2780-64 2780 black
+CONNECT p2780-62.pin1 -> p64393-2.hole8 STIFF
+CONNECT p2780-63.pin1 -> p64393-2.hole6 STIFF
+CONNECT p2780-64.pin1 -> p87080-1.hole6 STIFF
+WHY Inserts three black mounting pins along the back of the second cover.
+
+STEP 149
+ADD p43093-17 43093 blue
+ADD p32013-10 32013 yellow
+ADD p6587-3 6587 darktan
+ADD cover-bush-3 32123b yellow
+ADD cover-bush-4 32123b yellow
+ADD p98138-14 98138 transclear
+CONNECT p43093-17.axle1 -> p32013-10.axlehole1 LOCKED
+CONNECT p43093-17.pin1 -> p87080-1.hole5 STIFF
+CONNECT p6587-3.axle3 -> p32013-10.hole1 TURNS
+CONNECT p6587-3.axle2~ -> cover-bush-3.axlehole1 LOCKED
+CONNECT p6587-3.axle2~ -> cover-bush-4.axlehole1 LOCKED
+CONNECT p98138-14.? -> p6587-3.? STIFF
+WHY Adds the opposite yellow pipe bearing with a stopped dark tan axle, two yellow half bushes and a clear round end cap.
+
+STEP 150
+ADD p43093-18 43093 blue
+ADD p25214-14 25214 yellow
+CONNECT p43093-18.axle1 -> p25214-14.? LOCKED
+CONNECT p43093-18.pin1 -> p64393-2.hole5 STIFF
+CONNECT p6587-3.axle1~ -> p25214-14.? LOCKED
+WHY Locks the curved yellow elbow onto its blue axle-pin and the projecting dark tan shaft to complete the opposite side pipe.
+
+STEP 151
+END
+ATTACH opposite-side-cover
+CONNECT p2780-62.pin2 -> p27940-3.hole1 STIFF
+CONNECT p2780-63.pin2 -> p87082-3.hole1 STIFF
+CONNECT p2780-64.pin2 -> p48989-1.hole1 STIFF
+WHY Mounts the second decorated cover beneath the opposite upper side panel using its three black pins.
+
+STEP 152
+ADD p32526-1 32526 yellow
+ADD p60484-2 60484 yellow
+ADD p2780-65 2780 black
+ADD p2780-66 2780 black
+CONNECT p2780-65.pin1 -> p60484-2.hole1 STIFF
+CONNECT p2780-66.pin1 -> p60484-2.hole5 STIFF
+CONNECT p2780-65.pin2 -> p32526-1.hole4 STIFF
+CONNECT p2780-66.pin2 -> p32526-1.hole2 STIFF
+CONNECT p44294-1.axle1 -> p32526-1.hole6 TURNS
+CONNECT p2780-6.pin1 -> p32526-1.hole7 STIFF
+CONNECT p6558-12.pin1 -> p60484-2.hole2 STIFF
+WHY Builds the yellow doubled front support and mounts it over the exposed long axle and lower black pin beside the lifting actuator.
+
+STEP 153
+GROUP loader-arm
+ADD p3705-1 3705 red
+ADD p41669-2 41669 yellow
+CONNECT p3705-1.axle4 -> p41669-2.axlehole1 LOCKED
+WHY Starts the loader attachment with a yellow tooth locked onto one end of a red four-length axle.
+
+STEP 154
+ADD p32271-3 32271 yellow
+CONNECT p3705-1.axle3 -> p32271-3.axlehole1 LOCKED
+WHY Applies the two hazard-striped stickers to the yellow bent beam and locks its lower cross hole onto the red axle beside the first tooth.
+
+STEP 155
+ADD p41669-3 41669 yellow
+ADD p59443-6 59443 yellow
+CONNECT p3705-1.axle2 -> p41669-3.axlehole1 LOCKED
+CONNECT p3705-1.axle1 -> p59443-6.axlehole1 LOCKED
+WHY Adds a second yellow tooth and a yellow cross-axle coupler on the other side of the bent beam.
+
+STEP 156
+ADD p3705-2 3705 red
+ADD p41669-4 41669 yellow
+CONNECT p3705-2.axle1 -> p59443-6.axlehole2 LOCKED
+CONNECT p3705-2.axle2 -> p41669-4.axlehole1 LOCKED
+WHY Extends the lower crossbar with another red four-length axle and a third yellow tooth.
+
+STEP 157
+ADD p43093-19 43093 blue
+ADD p32062-9 32062 red
+ADD p59443-7 59443 yellow
+ADD p59443-8 59443 yellow
+CONNECT p43093-19.axle1 -> p59443-7.axlehole1 LOCKED
+CONNECT p32062-9.axle2 -> p59443-7.axlehole2 LOCKED
+CONNECT p32062-9.axle1 -> p59443-8.axlehole1 LOCKED
+CONNECT p43093-19.pin1 -> p32271-3.hole4 STIFF
+WHY Makes a yellow middle crossbar from two couplers and a red joining axle, then pins its blue axle-pin into the striped beam's round hole.
+
+STEP 158
+ADD p32062-10 32062 red
+ADD p32062-11 32062 red
+ADD p32062-12 32062 red
+ADD p59443-9 59443 yellow
+ADD p59443-10 59443 yellow
+CONNECT p32062-10.axle1 -> p59443-9.axlehole1 LOCKED
+CONNECT p32062-11.axle2 -> p59443-9.axlehole2 LOCKED
+CONNECT p32062-11.axle1 -> p59443-10.axlehole1 LOCKED
+CONNECT p32062-12.axle1 -> p59443-10.axlehole2 LOCKED
+CONNECT p32062-10.axle2 -> p32271-3.axlehole2 LOCKED
+WHY Builds the upper crossbar from three red short axles and two yellow couplers and locks it into the striped beam's upper cross hole.
+
+STEP 159
+ADD p32271-4 32271 yellow
+CONNECT p3705-2.axle3 -> p32271-4.axlehole1 LOCKED
+CONNECT p32062-12.axle2 -> p32271-4.axlehole2 LOCKED
+WHY Closes the first attachment frame with a second yellow bent beam over the lower and upper projecting red axles.
+
+STEP 160
+ADD p32054-9 32054 black
+ADD p32523-1 32523 yellow
+CONNECT p32054-9.pin1 -> p32523-1.hole1 STIFF
+CONNECT p32054-9.pin2 -> p32271-4.hole3 STIFF
+WHY Pins the small yellow three-hole beam onto the outside of the second upright, leaving the grey-ended stop pin accessible.
+
+STEP 161
+ADD p59443-11 59443 yellow
+ADD p4519-12 4519 lightgray
+ADD p59443-12 59443 yellow
+ADD p3705-3 3705 red
+ADD p18654-13 18654 black
+CONNECT p4519-12.axle3 -> p59443-11.axlehole2 LOCKED
+CONNECT p4519-12.axle2 -> p18654-13.hole1 TURNS
+CONNECT p4519-12.axle1 -> p59443-12.axlehole1 LOCKED
+CONNECT p3705-3.axle4 -> p59443-12.axlehole2 LOCKED
+CONNECT p3705-2.axle4 -> p59443-11.axlehole1 LOCKED
+WHY Extends the lower tooth axle across the centre with two yellow couplers joined by a grey axle and separated by a black sleeve.
+
+STEP 162
+ADD p60485-4 60485 lightgray
+ADD p32348-3 32348 yellow
+ADD p32348-4 32348 yellow
+ADD p32270-6 32270 black
+ADD p32073-2 32073 lightgray
+ADD p18654-14 18654 black
+ADD p41669-5 41669 yellow
+ADD p41669-6 41669 yellow
+CONNECT p32073-2.axle1 -> p41669-5.axlehole1 LOCKED
+CONNECT p32073-2.axle2 -> p32348-3.axlehole2 LOCKED
+CONNECT p32073-2.axle3 -> p18654-14.hole1 TURNS
+CONNECT p32073-2.axle4 -> p32348-4.axlehole2 LOCKED
+CONNECT p32073-2.axle5 -> p41669-6.axlehole1 LOCKED
+CONNECT p60485-4.axle6 -> p32348-3.axlehole1 LOCKED
+CONNECT p60485-4.axle5 -> p32270-6.axlehole1 LOCKED
+CONNECT p60485-4.axle4 -> p32348-4.axlehole1 LOCKED
+CONNECT p60485-4.axle7 -> p32523-1.hole2 TURNS
+CONNECT p60485-4.axle8 -> p32271-4.hole4 TURNS
+CONNECT p60485-4.axle9 -> p59443-8.axlehole2 LOCKED
+WHY Builds the paired yellow bent fork with two teeth and a locked twelve-tooth gear, then feeds its grey nine-length shaft through the first upright and into the yellow middle crossbar.
+
+STEP 163
+ADD p44294-3 44294 yellow
+ADD p32271-5 32271 yellow
+ADD p32271-6 32271 yellow
+ADD p18575-2 18575 black
+ADD arm-half-bush-1 32123b yellow
+ADD arm-half-bush-2 32123b yellow
+ADD p32054-10 32054 black
+ADD p11214-7 11214 red
+CONNECT p44294-3.axle5 -> p32271-5.axlehole2 LOCKED
+CONNECT p11214-7.axle1 -> p32054-10.axlehole1 LOCKED
+CONNECT p11214-7.pin1 -> p32271-5.hole6 STIFF
+CONNECT p44294-3.axle4 -> p18575-2.axlehole1 LOCKED
+CONNECT p44294-3.axle3 -> p32271-6.axlehole2 LOCKED
+CONNECT p32054-10.pin1 -> p32271-6.hole6 STIFF
+CONNECT p44294-3.axle2~ -> arm-half-bush-1.axlehole1 LOCKED
+CONNECT p44294-3.axle2~ -> arm-half-bush-2.axlehole1 LOCKED
+CONNECT p44294-3.axle7 -> p32271-4.hole2 TURNS
+MESH p18575-2.teeth p32270-6.teeth
+RATIO p18575-2 p32270-6 5/3
+WHY Builds the second paired yellow arm around a locked twenty-tooth gear, inserts its yellow shaft through the upright and aligns its gear teeth with the black twelve-tooth gear as shown in the side view.
+
+STEP 164
+ADD p41239-5 41239 yellow
+ADD p32271-7 32271 yellow
+CONNECT p60485-4.axle3 -> p41239-5.hole13 TURNS
+CONNECT p3705-3.axle3 -> p32271-7.axlehole1 LOCKED
+CONNECT p60485-4.axle2 -> p32271-7.hole4 TURNS
+CONNECT p44294-3.axle1 -> p32271-7.hole2 TURNS
+WHY Fits the long yellow thirteen-hole beam onto the grey pivot shaft and adds the next upright over the lower red axle and two upper shafts.
+
+STEP 165
+ADD p41669-7 41669 yellow
+ADD p59443-13 59443 yellow
+CONNECT p3705-3.axle2 -> p41669-7.axlehole1 LOCKED
+CONNECT p3705-3.axle1 -> p59443-13.axlehole1 LOCKED
+WHY Locks another yellow tooth and axle coupler onto the lower red shaft beyond the new upright.
+
+STEP 166
+ADD p3705-4 3705 red
+ADD p41669-8 41669 yellow
+CONNECT p3705-4.axle4 -> p59443-13.axlehole2 LOCKED
+CONNECT p3705-4.axle3 -> p41669-8.axlehole1 LOCKED
+WHY Extends the lower crossbar with the fourth red four-length axle and another yellow tooth.
+
+STEP 167
+ADD p43093-20 43093 blue
+ADD p32062-13 32062 red
+ADD p59443-14 59443 yellow
+ADD p59443-15 59443 yellow
+CONNECT p32062-13.axle2 -> p59443-14.axlehole2 LOCKED
+CONNECT p32062-13.axle1 -> p59443-15.axlehole1 LOCKED
+CONNECT p43093-20.axle1 -> p59443-14.axlehole1 LOCKED
+CONNECT p60485-4.axle1 -> p59443-15.axlehole2 LOCKED
+WHY Extends the grey middle pivot shaft with a pair of yellow couplers and a red joining axle, finishing with a blue axle-pin for the outer upright.
+
+STEP 168
+ADD p32062-14 32062 red
+ADD p32062-15 32062 red
+ADD p32062-16 32062 red
+ADD p59443-16 59443 yellow
+ADD p59443-17 59443 yellow
+CONNECT p32062-14.axle1 -> p59443-16.axlehole1 LOCKED
+CONNECT p32062-15.axle2 -> p59443-16.axlehole2 LOCKED
+CONNECT p32062-15.axle1 -> p59443-17.axlehole1 LOCKED
+CONNECT p32062-16.axle1 -> p59443-17.axlehole2 LOCKED
+CONNECT p32062-14.axle2 -> p32271-7.axlehole2 LOCKED
+WHY Makes the final upper crossbar from three short red axles and two yellow couplers and locks it into the inner upright's upper cross hole.
+
+STEP 169
+ADD p32271-8 32271 yellow
+ADD p41669-9 41669 yellow
+CONNECT p3705-4.axle2 -> p32271-8.axlehole1 LOCKED
+CONNECT p32062-16.axle2 -> p32271-8.axlehole2 LOCKED
+CONNECT p43093-20.pin1 -> p32271-8.hole4 STIFF
+CONNECT p3705-4.axle1 -> p41669-9.axlehole1 LOCKED
+WHY Applies the hazard stickers to the outer yellow upright, fits it over the three projecting joints and locks the final tooth onto the lower red axle.
+
+STEP 170
+ADD p32278-1 32278 black
+ADD p4274-18 4274 lightgray
+ADD p4274-19 4274 lightgray
+ADD arm-warning-tile 6636 black
+CONNECT p4274-18.pin1 -> p32278-1.hole4 TURNS
+CONNECT p4274-19.pin1 -> p32278-1.hole9 TURNS
+CONNECT arm-warning-tile.? -> p4274-18.? STIFF
+CONNECT arm-warning-tile.? -> p4274-19.? STIFF
+CONNECT p11214-7.pin2 -> p32278-1.hole1 STIFF
+WHY Adds the black fifteen-hole outer arm with its hazard-labelled tile on two grey half pins, mounting its end onto the red projecting pin.
+
+STEP 171
+ADD p4519-13 4519 lightgray
+CONNECT p4519-13.axle1 -> p32271-5.axlehole1 LOCKED
+CONNECT p4519-13.axle3 -> p32271-6.axlehole1 LOCKED
+WHY Joins the two yellow arm tips with a grey three-length axle, leaving one end projecting for the next side rail.
