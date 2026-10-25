@@ -4792,3 +4792,142 @@ STEP 557
 ATTACH mu
 CONNECT mu-bpin-1.pin2 -> bq-beam11-1.hole5~ STIFF
 WHY Fixes the finished bracket on the side of the chassis beside the front wheel position.
+STEP 558
+GROUP mv
+ADD mv-bpin-1 43093 blue
+ADD mv-tpin-1 4274 lightgray
+CONNECT mv-bpin-1.pin1 -> mv-tpin-1.pin2? STIFF
+WHY Starts the second mudguard bracket for the other wheel with a blue pin on a light grey pin.
+STEP 559
+ADD mv-plate-1 18677 black
+ADD mv-plate-2 18677 black
+CONNECT mv-plate-1.hole1~ -> mv-tpin-1.pin1 STIFF
+CONNECT mv-plate-2.hole1~ -> mv-tpin-1.pin1~ STIFF
+WHY Two black pin-hole plates are put on the grey pin.
+STEP 560
+ADD mv-plate-3 3020 black
+CONNECT mv-plate-3.stud1? -> mv-plate-1.stud1? STIFF
+WHY A black 2x4 plate goes on top of the two small plates.
+STEP 561
+WHY Turns the bracket over to show its far side.
+STEP 562
+ATTACH mv
+CONNECT mv-bpin-1.pin2 -> bq-beam11-2.hole5~ STIFF
+WHY Fixes the second bracket on the other side of the chassis, by the rear wheel position.
+STEP 563
+GROUP mw
+ADD mw-panel-1 71709 black
+ADD mw-beam2-1 41677 black
+ADD mw-beam2-2 41677 black
+ADD mw-pin-1 61332 black
+ADD mw-pin-2 61332 black
+ADD mw-pin-3 61332 black
+ADD mw-pin-4 61332 black
+CONNECT mw-pin-1.pin1 -> mw-panel-1.hole1~ STIFF
+CONNECT mw-pin-2.pin1 -> mw-panel-1.hole3~ STIFF
+CONNECT mw-pin-3.pin1 -> mw-panel-1.hole5~ STIFF
+CONNECT mw-pin-4.pin1 -> mw-panel-1.hole7~ STIFF
+CONNECT mw-beam2-1.hole1~ -> mw-pin-1.pin2 STIFF
+CONNECT mw-beam2-2.hole1~ -> mw-pin-4.pin2 STIFF
+END
+ATTACH mw
+CONNECT mw-panel-1.hole4~ -> rf2-pin-1.pin2~ STIFF
+WHY Builds a rear plate from a black 3x7 panel with four black pins and two 2-beams in two small steps (sticker 18, a warning triangle) and sets it across the back of the chassis.
+STEP 564
+GROUP mx
+ADD mx-beam11-1 32525 brightgreen
+ADD mx-beam7-1 32524 brightgreen
+ADD mx-lbeam-1 32526 brightgreen
+ADD mx-lbeam-2 32526 brightgreen
+ADD mx-lbeam-3 32526 brightgreen
+ADD mx-lbeam-4 32526 brightgreen
+ADD mx-pin-1 61332 black
+ADD mx-pin-2 61332 black
+ADD mx-pin-3 61332 black
+ADD mx-pin-4 61332 black
+ADD mx-pin-5 61332 black
+ADD mx-pin-6 61332 black
+ADD mx-pin-7 61332 black
+ADD mx-pin-8 61332 black
+ADD mx-pin-9 61332 black
+ADD mx-pin-10 61332 black
+ADD mx-pin-11 61332 black
+ADD mx-pin-12 61332 black
+ADD mx-bpin-1 43093 blue
+ADD mx-bpin-2 43093 blue
+ADD mx-bpin-3 43093 blue
+ADD mx-bpin-4 43093 blue
+CONNECT mx-pin-1.pin1 -> mx-beam11-1.hole1~ STIFF
+CONNECT mx-pin-2.pin1 -> mx-beam11-1.hole2~ STIFF
+CONNECT mx-pin-3.pin1 -> mx-beam11-1.hole10~ STIFF
+CONNECT mx-pin-4.pin1 -> mx-beam11-1.hole11~ STIFF
+CONNECT mx-lbeam-1.hole1~ -> mx-pin-1.pin2 STIFF
+CONNECT mx-lbeam-2.hole1~ -> mx-pin-3.pin2 STIFF
+CONNECT mx-beam7-1.hole1~ -> mx-lbeam-1.hole5~ STIFF
+CONNECT mx-pin-5.pin1 -> mx-lbeam-3.hole1~ STIFF
+CONNECT mx-pin-6.pin1 -> mx-lbeam-4.hole1~ STIFF
+CONNECT mx-bpin-1.pin1 -> mx-lbeam-1.hole3~ STIFF
+CONNECT mx-bpin-2.pin1 -> mx-lbeam-2.hole3~ STIFF
+CONNECT mx-bpin-3.pin1 -> mx-beam11-1.hole5~ STIFF
+CONNECT mx-bpin-4.pin1 -> mx-beam11-1.hole7~ STIFF
+END
+ATTACH mx
+CONNECT mx-beam11-1.hole3~ -> mw-panel-1.hole2~ STIFF
+WHY Builds the green mudguard rail in four small steps from a bright green 11-beam, a 7-beam and four bright green 3x5 L-beams on twelve black pins and four blue pins, and fixes it above the rear plate.
+STEP 565
+GROUP my
+ADD my-plate-1 3020 black
+ADD my-plate-2 3020 black
+ADD my-tile-1 3069b transred
+ADD my-tile-2 3069b transred
+ADD my-tile-3 3069b transred
+ADD my-tile-4 3069b transred
+ADD my-tile-5 3069b transclear
+ADD my-tile-6 3069b transclear
+ADD my-tile-7 3069b transorange
+ADD my-tile-8 3069b transorange
+CONNECT my-tile-1.stud1? -> my-plate-1.stud1? STIFF
+CONNECT my-tile-2.stud1? -> my-plate-1.stud3? STIFF
+CONNECT my-tile-5.stud1? -> my-plate-1.stud2? STIFF
+CONNECT my-tile-7.stud1? -> my-plate-1.stud4? STIFF
+CONNECT my-tile-3.stud1? -> my-plate-2.stud1? STIFF
+CONNECT my-tile-4.stud1? -> my-plate-2.stud3? STIFF
+CONNECT my-tile-6.stud1? -> my-plate-2.stud2? STIFF
+CONNECT my-tile-8.stud1? -> my-plate-2.stud4? STIFF
+END
+ATTACH my
+CONNECT my-plate-1.stud1? -> mx-lbeam-1.stud1? STIFF
+CONNECT my-plate-2.stud1? -> mx-lbeam-2.stud1? STIFF
+WHY Builds two tail-light strips in two small steps each, a black 2x4 plate with red, clear and amber tiles, and presses one onto each rear corner of the green rail.
+STEP 566
+GROUP mz
+ADD mz-beam11-1 73507 black
+ADD mz-beam11-2 73507 black
+ADD mz-beam13-1 41239 black
+ADD mz-beam13-2 41239 black
+ADD mz-beam5-1 32316 black
+ADD mz-beam5-2 32316 black
+ADD mz-beam3-1 6632 black
+ADD mz-beam3-2 6632 black
+ADD mz-pin-1 61332 black
+ADD mz-pin-2 61332 black
+ADD mz-pin-3 61332 black
+ADD mz-pin-4 61332 black
+ADD mz-pin-5 61332 black
+ADD mz-pin-6 61332 black
+ADD mz-pin-7 61332 black
+ADD mz-pin-8 61332 black
+ADD mz-bpin-1 43093 blue
+ADD mz-bpin-2 43093 blue
+CONNECT mz-pin-1.pin1 -> mz-beam11-1.hole1~ STIFF
+CONNECT mz-beam13-1.hole1~ -> mz-pin-1.pin2 STIFF
+CONNECT mz-pin-2.pin1 -> mz-beam5-1.hole1~ STIFF
+CONNECT mz-beam3-1.hole1~ -> mz-pin-2.pin2 STIFF
+CONNECT mz-bpin-1.pin1 -> mz-beam3-1.hole3~ STIFF
+CONNECT mz-pin-3.pin1 -> mz-beam11-2.hole1~ STIFF
+CONNECT mz-beam13-2.hole1~ -> mz-pin-3.pin2 STIFF
+CONNECT mz-pin-4.pin1 -> mz-beam5-2.hole1~ STIFF
+CONNECT mz-beam3-2.hole1~ -> mz-pin-4.pin2 STIFF
+CONNECT mz-bpin-2.pin1 -> mz-beam3-2.hole3~ STIFF
+END
+WHY Builds two black side rails for the bed (an 11-beam with a 13-beam, a 5-beam and a thin 3-beam on pins and a blue pin) in five small steps and sets them aside to fit on the two sides.
