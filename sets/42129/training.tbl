@@ -2508,3 +2508,67 @@ ADD sp-bush-1 3713 red
 CONNECT sp-conn-3.hole1~ -> sp-conn-2.hole2~ STIFF
 CONNECT sp-bush-1.axlehole1 -> sp-lpin-1.axle1 LOCKED
 WHY A connector and a red bush hold the tie rod end on so it can pivot but not fall off.
+STEP 283
+ADD sp-axle4-1 87083 darkgray
+ADD sp-bush-2 3713 red
+CONNECT sp-axle4-1.axle1 -> sp-conn-3.hole2~ TURNS
+CONNECT sp-bush-2.axlehole1 -> sp-axle4-1.axle4 LOCKED
+WHY A 4-long axle through the tie rod joint with a red bush at the end holds it on the steering arm.
+STEP 284
+ADD sp-lpin-2 11214 red
+ADD sp-conn-4 6536 darkgray
+ADD sp-conn-5 42003 lightgray
+CONNECT sp-lpin-2.axle1 -> sp-conn-4.axlehole1 LOCKED
+CONNECT sp-conn-5.hole1~ -> sp-lpin-2.pin2 STIFF
+WHY A red pin in a dark connector and a light connector make the same joint on the other side of the steering box.
+STEP 285
+ADD sp-conn-6 6536 darkgray
+ADD sp-bush-3 3713 red
+CONNECT sp-conn-6.hole1~ -> sp-conn-5.hole2~ STIFF
+CONNECT sp-bush-3.axlehole1 -> sp-lpin-2.axle1 LOCKED
+WHY A connector and a red bush finish the second joint.
+STEP 286
+ADD sp-axle4-2 87083 darkgray
+ADD sp-bush-4 3713 red
+CONNECT sp-axle4-2.axle1 -> sp-conn-6.hole2~ TURNS
+CONNECT sp-bush-4.axlehole1 -> sp-axle4-2.axle4 LOCKED
+WHY A second 4-long axle with a red bush holds the other steering joint on, finishing the steering box.
+STEP 287
+ADD sp-pin-3 61332 black
+ADD sp-pin-4 61332 black
+ADD sp-pin-5 61332 black
+ADD sp-pin-6 61332 black
+CONNECT sp-pin-3.pin1 -> sn-lbeam-1.hole5~ STIFF
+CONNECT sp-pin-4.pin1 -> sn-lbeam-3.hole4~ STIFF
+CONNECT sp-pin-5.pin1 -> sn-lbeam-4.hole5~ STIFF
+CONNECT sp-pin-6.pin1 -> sn-lbeam-6.hole4~ STIFF
+WHY Four black pins go into the side braces to take the long beams of the next step.
+STEP 288
+ADD sp-beam6-1 32063 lightgray
+ADD sp-beam6-2 32063 lightgray
+ADD sp-beam6-3 32063 lightgray
+ADD sp-beam6-4 32063 lightgray
+CONNECT sp-beam6-1.hole1~ -> sp-pin-3.pin2 STIFF
+CONNECT sp-beam6-2.hole1~ -> sp-pin-4.pin2 STIFF
+CONNECT sp-beam6-3.hole1~ -> sp-pin-5.pin2 STIFF
+CONNECT sp-beam6-4.hole1~ -> sp-pin-6.pin2 STIFF
+WHY Four light 6-beams are laid along both sides of the steering box to close it in.
+STEP 289
+ADD sp-lpin-3 11214 red
+ADD sp-lpin-4 11214 red
+ADD sp-tpin-2 3749 tan
+ADD sp-tpin-3 3749 tan
+ADD sp-cross-1 44874 black
+ADD sp-cross-2 44874 black
+CONNECT sp-lpin-3.pin1 -> sp-cross-1.hole1? STIFF
+CONNECT sp-tpin-2.pin1 -> sp-cross-1.pin1? TURNS
+CONNECT sp-lpin-4.pin1 -> sp-cross-2.hole1? STIFF
+CONNECT sp-tpin-3.pin1 -> sp-cross-2.pin1? TURNS
+CONNECT sp-cross-1.pin2 -> sm-gear-1.hole1? TURNS
+CONNECT sp-cross-2.pin2 -> sk-axle5-1.axle5~ TURNS
+WHY Two black cross pieces with a red and a tan pin each are put on the ends of the steering box to be the kingpin mounts for the wheels.
+STEP 290
+ADD sp-axle6-1 3706 red
+CONNECT sp-axle6-1.axle1 -> sk-axle5-1.axle1~ LOCKED
+CONNECT sp-axle6-1.axle5 -> sl-axle5-1.axle1~ LOCKED
+WHY A red 6-long axle goes through the steering box as the input shaft that will be driven from the chassis.
