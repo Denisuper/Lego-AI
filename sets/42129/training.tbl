@@ -3075,3 +3075,182 @@ END
 ATTACH hc
 CONNECT hc-tbeam-1.hole2~ -> b-beam15-1.hole8~ STIFF
 WHY Builds a black T-beam with a pin, a ring and two blue pins in four small steps and fixes it on the left post behind the hub as a mount for the cab.
+STEP 349
+GROUP hd
+ADD hd-beam13-1 41239 black
+ADD hd-beam4-1 41677 black
+ADD hd-beam4-2 41677 black
+ADD hd-pin-1 61332 black
+ADD hd-pin-2 61332 black
+ADD hd-pin-3 61332 black
+CONNECT hd-pin-1.pin1 -> hd-beam13-1.hole5~ STIFF
+CONNECT hd-pin-2.pin1 -> hd-beam13-1.hole8~ STIFF
+CONNECT hd-pin-3.pin1 -> hd-beam13-1.hole12~ STIFF
+CONNECT hd-beam4-1.hole1~ -> hd-pin-1.pin2 STIFF
+CONNECT hd-beam4-2.hole1~ -> hd-pin-2.pin2 STIFF
+END
+ATTACH hd
+CONNECT hd-beam13-1.hole3~ -> hc-bpin-1.pin2~ STIFF
+WHY Builds a 13-long black beam with three pins and two thin black beams and fixes it along the side behind the hub, as the cab's left lower rail.
+STEP 350
+GROUP he
+ADD he-ring-1 18654 black
+ADD he-pin-1 61332 black
+ADD he-tbeam-1 60484 black
+ADD he-conn-1 65489 lightgray
+ADD he-bpin-1 43093 blue
+ADD he-bpin-2 43093 blue
+ADD he-bpin-3 43093 blue
+CONNECT he-pin-1.pin1 -> he-tbeam-1.hole1~ STIFF
+CONNECT he-bpin-1.pin1 -> he-tbeam-1.hole3~ STIFF
+CONNECT he-conn-1.pin1~ -> he-tbeam-1.hole5~ STIFF
+CONNECT he-bpin-2.pin1 -> he-conn-1.hole1~ STIFF
+CONNECT he-bpin-3.pin1 -> he-conn-1.hole2~ STIFF
+CONNECT he-ring-1.hole1 -> he-pin-1.pin2 TURNS
+END
+ATTACH he
+CONNECT he-tbeam-1.hole2~ -> b-beam15-2.hole8~ STIFF
+WHY Builds the mirror-image T-beam mount for the right post, in four small steps, and fixes it on the right post behind the hub.
+STEP 351
+GROUP hf
+ADD hf2-beam13-1 41239 black
+ADD hf2-beam4-1 41677 black
+ADD hf2-beam4-2 41677 black
+ADD hf2-pin-1 61332 black
+ADD hf2-pin-2 61332 black
+ADD hf2-pin-3 61332 black
+CONNECT hf2-pin-1.pin1 -> hf2-beam13-1.hole5~ STIFF
+CONNECT hf2-pin-2.pin1 -> hf2-beam13-1.hole8~ STIFF
+CONNECT hf2-pin-3.pin1 -> hf2-beam13-1.hole12~ STIFF
+CONNECT hf2-beam4-1.hole1~ -> hf2-pin-1.pin2 STIFF
+CONNECT hf2-beam4-2.hole1~ -> hf2-pin-2.pin2 STIFF
+END
+ATTACH hf
+CONNECT hf2-beam13-1.hole3~ -> he-bpin-1.pin2~ STIFF
+WHY Builds the matching 13-long beam with three pins and two thin black beams and fixes it along the right side as the cab's right lower rail.
+STEP 352
+GROUP sw
+ADD sw-lpin-1 11214 red
+ADD sw-wheel-1 2819 black
+ADD sw-ang-1 32034 black
+ADD sw-round-1 98138 black
+CONNECT sw-ang-1.axlehole1 -> sw-lpin-1.axle1 LOCKED
+CONNECT sw-wheel-1.axlehole1 -> sw-ang-1.axlehole2 LOCKED
+CONNECT sw-round-1.stud1? -> sw-wheel-1.stud1? STIFF
+END
+ATTACH sw
+CONNECT sw-lpin-1.pin2 -> se2-beam11-1.hole4~ STIFF
+WHY Builds the steering wheel: a small black wheel on an angled connector and a red pin with a round tile (sticker 14) in the middle, and fits it in front of the left seat.
+STEP 353
+GROUP dr
+ADD dr-beam5-1 32316 black
+ADD dr-bpin-1 43093 blue
+CONNECT dr-bpin-1.pin1 -> dr-beam5-1.hole1~ STIFF
+WHY Starts the left door: a black 5-beam with a blue pin at one end.
+STEP 354
+ADD dr-conn-1 6536 darkgray
+ADD dr-conn-2 6536 darkgray
+CONNECT dr-conn-1.hole1~ -> dr-beam5-1.hole3~ STIFF
+CONNECT dr-conn-2.hole1~ -> dr-beam5-1.hole4~ STIFF
+WHY Two small connectors are put on the beam, ready for the door panel.
+STEP 355
+ADD dr-panel-1 24116 black
+CONNECT dr-panel-1.hole1~ -> dr-bpin-1.pin2 STIFF
+WHY A curved black panel (the door skin) sits over the beam and the blue pin.
+STEP 356
+ADD dr-ang-1 32034 black
+ADD dr-ang-2 32034 black
+ADD dr-axle3-1 4519 lightgray
+ADD dr-bpin-2 43093 blue
+CONNECT dr-bpin-2.pin1 -> dr-ang-1.hole1~ STIFF
+CONNECT dr-ang-2.hole1~ -> dr-bpin-2.pin2 STIFF
+CONNECT dr-axle3-1.axle1 -> dr-ang-1.axlehole1 LOCKED
+CONNECT dr-ang-1.hole2~ -> dr-beam5-1.hole5~ STIFF
+WHY Two black angled connectors and a 3-long axle are fitted at the door's lower end as its hinge.
+STEP 357
+ADD dr-beam2-1 41677 black
+ADD dr-beam2-2 41677 black
+CONNECT dr-beam2-1.hole1~ -> dr-ang-2.hole2~ STIFF
+CONNECT dr-beam2-2.hole1~ -> dr-conn-1.hole2~ STIFF
+WHY Two thin black 2-beams are added along the edge of the door to stiffen it.
+STEP 358
+ADD dr-tpin-1 32002 tan
+ADD dr-conn-3 6536 darkgray
+CONNECT dr-tpin-1.pin1 -> dr-panel-1.hole3~ TURNS
+CONNECT dr-conn-3.hole1~ -> dr-tpin-1.pin2 TURNS
+WHY A tan pin and a connector are the door handle; sticker 12 goes on the door skin as the picture shows.
+STEP 359
+ADD dr-pin-1 61332 black
+ADD dr-pin-2 61332 black
+ADD dr-pin-3 61332 black
+ADD dr-pin-4 61332 black
+CONNECT dr-pin-1.pin1 -> dr-panel-1.hole5~ STIFF
+CONNECT dr-pin-2.pin1 -> dr-panel-1.hole6~ STIFF
+CONNECT dr-pin-3.pin1 -> dr-panel-1.hole7~ STIFF
+CONNECT dr-pin-4.pin1 -> dr-panel-1.hole8~ STIFF
+WHY Four black pins go along the top of the door skin to take the window frame.
+STEP 360
+ADD dr-beam3-1 6632 black
+ADD dr-beam3-2 6632 black
+ADD dr-conn-4 6536 darkgray
+ADD dr-bpin-3 43093 blue
+ADD dr-bpin-4 43093 blue
+CONNECT dr-bpin-3.pin1 -> dr-beam3-1.hole1~ STIFF
+CONNECT dr-bpin-4.pin1 -> dr-beam3-2.hole1~ STIFF
+CONNECT dr-beam3-1.hole3~ -> dr-pin-1.pin2 STIFF
+CONNECT dr-conn-4.hole1~ -> dr-beam3-2.hole3~ STIFF
+WHY Two thin black 3-beams with blue pins and a connector are fixed at the door's front edge.
+STEP 361
+ADD dr-beam11-1 32525 darkgray
+ADD dr-beam5-2 32316 darkgray
+CONNECT dr-beam11-1.hole1~ -> dr-pin-3.pin2 STIFF
+CONNECT dr-beam5-2.hole1~ -> dr-pin-4.pin2 STIFF
+WHY A long grey 11-beam (sticker 30, a stripe) and a 5-beam make the top rail and the window frame of the door.
+STEP 362
+ADD dr-lpin-1 11214 red
+ADD dr-pin-5 61332 black
+CONNECT dr-lpin-1.pin1 -> dr-beam5-2.hole3~ STIFF
+CONNECT dr-pin-5.pin1 -> dr-beam11-1.hole5~ STIFF
+WHY A red pin and a black pin lock the top rail to the frame.
+STEP 363
+ADD dr-beam5-3 11478 black
+ADD dr-beam5-4 11478 black
+CONNECT dr-beam5-3.hole1~ -> dr-lpin-1.pin2 STIFF
+CONNECT dr-beam5-4.hole1~ -> dr-pin-5.pin2 STIFF
+WHY Two thin black 5-beams with axle holes close the window frame.
+STEP 364
+GROUP dm
+ADD dm-bpin-1 43093 blue
+ADD dm-bush-1 6632 darkgray
+ADD dm-axle4-1 3706 red
+CONNECT dm-axle4-1.axle1 -> dm-bush-1.axlehole1? LOCKED
+CONNECT dm-bpin-1.pin1 -> dm-bush-1.hole1? STIFF
+WHY Starts the wing mirror arm: a red axle through a grey beam with a blue pin on top.
+STEP 365
+ADD dm-beam2-1 41677 black
+ADD dm-beam2-2 41677 black
+CONNECT dm-beam2-1.hole1~ -> dm-axle4-1.axle2~ TURNS
+CONNECT dm-beam2-2.hole1~ -> dm-axle4-1.axle3~ TURNS
+WHY Two thin black beams on the red axle make the mirror frame.
+STEP 366
+ADD dm-bush-2 3713 red
+ADD dm-ang-1 32034 black
+CONNECT dm-ang-1.axlehole1 -> dm-axle4-1.axle4 LOCKED
+CONNECT dm-bush-2.axlehole1 -> dm-axle4-1.axle1 LOCKED
+WHY An angled connector and a red bush hold the mirror frame on the axle.
+STEP 367
+ADD dm-axle3-1 24316 reddishbrown
+ADD dm-axle3-2 4519 lightgray
+ADD dm-ang-2 32034 black
+ADD dm-conn-1 6536 darkgray
+ADD dm-bush-3 3713 red
+ADD dm-bush-4 3713 red
+CONNECT dm-axle3-1.axle1 -> dm-conn-1.axlehole1 LOCKED
+CONNECT dm-axle3-2.axle1 -> dm-ang-2.axlehole1 LOCKED
+CONNECT dm-ang-2.hole1~ -> dm-conn-1.hole1~ STIFF
+CONNECT dm-bush-3.axlehole1 -> dm-axle3-2.axle3 LOCKED
+CONNECT dm-bush-4.axlehole1 -> dm-axle3-1.axle3 LOCKED
+END
+ATTACH dm
+CONNECT dm-ang-1.hole1~ -> dm-ang-2.hole2~ TURNS
+WHY Finishes the mirror: a brown axle with a stop and a 3-long axle in two connectors let the mirror arm fold, and it is joined to the first part.
