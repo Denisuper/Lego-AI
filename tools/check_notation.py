@@ -35,7 +35,12 @@ def mode(t1, t2, parts):
     if pair == {"axle stop (cross)", "axle hole (cross)"}: return "LOCKED"
     if pair == {"axle stop (cross)", "pin hole (round)"}: return "TURNS"
     if pair == {"pin stop (round)", "pin hole (round)"}:
-        return "TURNS" if any(info.get(p, {}).get("friction") == "frictionless" for p in parts) else "STIFF"
+        # Smooth round sections of axles (59426, 99008) are cataloged as
+        # pin stops, but are free bearings rather than friction pins.
+        free = any(info.get(p, {}).get("friction") == "frictionless" or
+                   info.get(p, {}).get("part_type") in ("axle", "axle with stop")
+                   for p in parts)
+        return "TURNS" if free else "STIFF"
     if pair == {"bar (3.2 mm)", "small hole (3.2 mm bar)"}: return "TURNS"
     if pair == {"bar (3.2 mm)", "clip"}: return "TURNS"
     return None
