@@ -5394,3 +5394,143 @@ ADD nw-hose-1 78c03 flatsilver
 CONNECT nw-bpin-1.pin1 -> nw-hose-1.hole1? STIFF
 CONNECT nw-bpin-1.pin2 -> nv-hub-1.hole1~ STIFF
 WHY A grey bent hose with a blue pin is pushed into the hub as the fuel pipe from the tank.
+STEP 602
+GROUP ny
+ADD ny-plate-1 3020 lightgray
+ADD ny-plate-2 3021 lightgray
+ADD ny-plate-3 3622 lightgray
+ADD ny-bracket-1 99780 lightgray
+ADD ny-bracket-2 99780 lightgray
+ADD ny-bracket-3 99780 lightgray
+ADD ny-grille-1 2412b lightgray
+ADD ny-grille-2 2412b lightgray
+ADD ny-grille-3 2412b lightgray
+ADD ny-plate-4 3623 lightgray
+CONNECT ny-plate-2.stud1? -> ny-plate-1.stud1? STIFF
+CONNECT ny-plate-3.stud1? -> ny-plate-2.stud1? STIFF
+CONNECT ny-bracket-1.stud1? -> ny-plate-2.stud2? STIFF
+CONNECT ny-bracket-2.stud1? -> ny-plate-2.stud4? STIFF
+CONNECT ny-bracket-3.stud1? -> ny-plate-3.stud2? STIFF
+CONNECT ny-plate-4.stud1? -> ny-bracket-1.stud1? STIFF
+CONNECT ny-grille-1.stud1? -> ny-plate-4.stud1? STIFF
+CONNECT ny-grille-2.stud1? -> ny-plate-4.stud2? STIFF
+CONNECT ny-grille-3.stud1? -> ny-plate-4.stud3? STIFF
+END
+ATTACH ny
+CONNECT ny-plate-1.stud1? -> nk-hub-1.stud1? STIFF
+WHY Builds a small air-intake grille box in five small steps from light grey plates, a brick, three brackets and three grille tiles and fits it on the right chassis side behind the cab.
+STEP 603
+ADD nz-pin-1 61332 black
+ADD nz-pin-2 61332 black
+ADD nz-pin-3 61332 black
+ADD nz-pin-4 61332 black
+ADD nz-pin-5 61332 black
+ADD nz-pin-6 61332 black
+ADD nz-conn-1 6536 darkgray
+ADD nz-conn-2 6536 darkgray
+CONNECT nz-pin-1.pin1 -> mx-beam11-1.hole2~ STIFF
+CONNECT nz-pin-2.pin1 -> mx-beam11-1.hole10~ STIFF
+CONNECT nz-pin-3.pin1 -> ng-beam11-1.hole6~ STIFF
+CONNECT nz-pin-4.pin1 -> ng-beam11-2.hole6~ STIFF
+CONNECT nz-pin-5.pin1 -> ng-beam11-3.hole6~ STIFF
+CONNECT nz-pin-6.pin1 -> ng-beam11-4.hole6~ STIFF
+CONNECT nz-conn-1.hole1~ -> nz-pin-3.pin2 STIFF
+CONNECT nz-conn-2.hole1~ -> nz-pin-4.pin2 STIFF
+WHY Six black pins go along the inside of the bed's green edge and two small connectors are fitted on the front corners as the bed's side fixings.
+STEP 604
+GROUP oa
+ADD oa-tbeam-1 60484 black
+ADD oa-tbeam-2 60484 black
+ADD oa-bpin-1 43093 blue
+ADD oa-bpin-2 43093 blue
+ADD oa-pin-1 61332 black
+ADD oa-pin-2 61332 black
+ADD oa-conn-1 6536 darkgray
+ADD oa-conn-2 6536 darkgray
+CONNECT oa-bpin-1.pin1 -> oa-tbeam-1.hole1~ STIFF
+CONNECT oa-bpin-2.pin1 -> oa-tbeam-2.hole1~ STIFF
+CONNECT oa-pin-1.pin1 -> oa-tbeam-1.hole3~ STIFF
+CONNECT oa-pin-2.pin1 -> oa-tbeam-2.hole3~ STIFF
+CONNECT oa-conn-1.hole1~ -> oa-pin-1.pin2 STIFF
+CONNECT oa-conn-2.hole1~ -> oa-pin-2.pin2 STIFF
+END
+ATTACH oa
+CONNECT oa-tbeam-1.hole5~ -> nz-pin-1.pin2~ STIFF
+CONNECT oa-tbeam-2.hole5~ -> nz-pin-2.pin2~ STIFF
+WHY Builds two black T-beams with blue pins and connectors in two small steps each and sets them on the pins in the bed's front corners.
+STEP 605
+GROUP ob
+ADD ob-beam13-1 41239 black
+ADD ob-pin-1 61332 black
+ADD ob-pin-2 61332 black
+CONNECT ob-pin-1.pin1 -> ob-beam13-1.hole1~ STIFF
+CONNECT ob-pin-2.pin1 -> ob-beam13-1.hole13~ STIFF
+WHY Starts the rear tool box frame (the cab guard): a black 13-long beam with a pin at each end.
+STEP 606
+ADD ob-ang-1 32013 darkgray
+ADD ob-ang-2 32013 darkgray
+CONNECT ob-ang-1.hole1~ -> ob-pin-1.pin2 STIFF
+CONNECT ob-ang-2.hole1~ -> ob-pin-2.pin2 STIFF
+WHY Two grey angled connectors go on the pins at each end of the beam.
+STEP 607
+ADD ob-beam7-1 32524 darkgray
+ADD ob-beam7-2 32524 darkgray
+ADD ob-bpin-1 43093 blue
+ADD ob-bpin-2 43093 blue
+ADD ob-axle4-1 3705 darkgray
+ADD ob-axle4-2 3705 darkgray
+ADD ob-conn-1 6536 lightgray
+ADD ob-conn-2 6536 lightgray
+ADD ob-cross-1 44874 darkgray
+ADD ob-cross-2 44874 darkgray
+CONNECT ob-bpin-1.pin1 -> ob-beam7-1.hole1~ STIFF
+CONNECT ob-bpin-2.pin1 -> ob-beam7-2.hole1~ STIFF
+CONNECT ob-beam7-1.hole3~ -> ob-ang-1.hole2~ STIFF
+CONNECT ob-beam7-2.hole3~ -> ob-ang-2.hole2~ STIFF
+CONNECT ob-cross-1.hole1~ -> ob-beam7-1.hole5~ STIFF
+CONNECT ob-cross-2.hole1~ -> ob-beam7-2.hole5~ STIFF
+CONNECT ob-conn-1.hole1~ -> ob-cross-1.hole2~ STIFF
+CONNECT ob-conn-2.hole1~ -> ob-cross-2.hole2~ STIFF
+CONNECT ob-axle4-1.axle1 -> ob-conn-1.axlehole1 LOCKED
+CONNECT ob-axle4-2.axle1 -> ob-conn-2.axlehole1 LOCKED
+WHY Builds two 7-long side arms in two small steps each, with blue pins, light connectors and a cross piece, fits them to the beam's ends and slides a 4-long axle into each arm.
+STEP 608
+ADD ob-pin-3 61332 black
+ADD ob-pin-4 61332 black
+ADD ob-pin-5 61332 black
+ADD ob-pin-6 61332 black
+ADD ob-pin-7 61332 black
+ADD ob-pin-8 61332 black
+CONNECT ob-pin-3.pin1 -> ob-beam13-1.hole3~ STIFF
+CONNECT ob-pin-4.pin1 -> ob-beam13-1.hole5~ STIFF
+CONNECT ob-pin-5.pin1 -> ob-beam13-1.hole9~ STIFF
+CONNECT ob-pin-6.pin1 -> ob-beam13-1.hole11~ STIFF
+CONNECT ob-pin-7.pin1 -> ob-beam7-1.hole7~ STIFF
+CONNECT ob-pin-8.pin1 -> ob-beam7-2.hole7~ STIFF
+WHY Six black pins go in the beam and the arms as posts for the two outer beams.
+STEP 609
+ADD ob-beam13-2 41239 black
+ADD ob-beam13-3 41239 black
+CONNECT ob-beam13-2.hole1~ -> ob-pin-3.pin2 STIFF
+CONNECT ob-beam13-3.hole1~ -> ob-pin-5.pin2 STIFF
+WHY Two more 13-long black beams are laid on the pins, one each side of the cross beam.
+STEP 610
+ADD ob-beam13-4 41239 black
+ADD ob-beam13-5 41239 black
+CONNECT ob-beam13-4.hole1~ -> ob-pin-4.pin2 STIFF
+CONNECT ob-beam13-5.hole1~ -> ob-pin-6.pin2 STIFF
+WHY Two more 13-long black beams go on top, making the two long side members of the frame.
+STEP 611
+ADD ob-pin-9 61332 black
+ADD ob-pin-10 61332 black
+ADD ob-pin-11 61332 black
+ADD ob-pin-12 61332 black
+ADD ob-hub-1 32184 lightgray
+ADD ob-hub-2 32184 lightgray
+CONNECT ob-pin-9.pin1 -> ob-hub-1.hole1 STIFF
+CONNECT ob-pin-10.pin1 -> ob-hub-1.hole1~ STIFF
+CONNECT ob-pin-11.pin1 -> ob-hub-2.hole1 STIFF
+CONNECT ob-pin-12.pin1 -> ob-hub-2.hole1~ STIFF
+CONNECT ob-hub-1.hole1~ -> ob-beam13-2.hole7~ STIFF
+CONNECT ob-hub-2.hole1~ -> ob-beam13-3.hole7~ STIFF
+WHY Two light perpendicular connectors, each with two black pins, are fixed in the middle of the side members as the hinge mounts.
