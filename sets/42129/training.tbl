@@ -4430,3 +4430,179 @@ CONNECT bd2-lbeam-1.hole5~ -> bc2-axle4-1.axle4~ TURNS
 CONNECT bd2-lbeam-2.hole5~ -> ba2-axle4-1.axle4~ TURNS
 END
 WHY Fits the finished end-gate hinge onto the two rails so the end gate can be folded.
+STEP 523
+ADD bg-axle4-1 87083 darkgray
+ADD bg-axle4-2 87083 darkgray
+CONNECT bg-axle4-1.axle1 -> bd2-beam2-7.hole2~ TURNS
+CONNECT bg-axle4-2.axle1 -> bd2-beam2-8.hole2~ TURNS
+WHY Two 4-long axles with stops go through the end gate's frame from below as its hinge pins.
+STEP 524
+ADD bg-plate-1 3023 black
+ADD bg-plate-2 3023 black
+ADD bg-clip-1 61252 lightgray
+CONNECT bg-plate-2.stud1? -> bg-plate-1.stud1? STIFF
+CONNECT bg-clip-1.stud1? -> bg-plate-2.stud1? STIFF
+CONNECT bg-plate-1.stud1? -> bd2-trip-1.stud1? STIFF
+WHY Two black 1x2 plates and a light clip plate are pressed on the middle of the end gate as the latch.
+STEP 525
+ADD bg-badge-1 75902pr0028 black
+CONNECT bg-badge-1.stud1? -> bd2-beam2-7.stud1? STIFF
+WHY Turns the end gate over and fits the round black shield with the Mercedes logo on its front as the badge.
+STEP 526
+ADD bg-bpin-1 43093 blue
+ADD bg-bpin-2 43093 blue
+ADD bg-ang-1 32013 darkgray
+ADD bg-ang-2 32013 darkgray
+CONNECT bg-bpin-1.pin1 -> bg-ang-1.hole1~ STIFF
+CONNECT bg-bpin-2.pin1 -> bg-ang-2.hole1~ STIFF
+CONNECT bg-ang-1.hole2~ -> bd2-beam2-7.hole1~ STIFF
+CONNECT bg-ang-2.hole2~ -> bd2-beam2-8.hole1~ STIFF
+WHY Two grey angled connectors with blue pins are fixed on the top of the end gate beside the badge.
+STEP 527
+ADD bg-bush-1 3713 lightgray
+ADD bg-beam2-1 41677 black
+CONNECT bg-bush-1.axlehole1 -> bg-ang-1.axle1~ LOCKED
+CONNECT bg-beam2-1.hole1~ -> bg-ang-2.hole2~ STIFF
+WHY A small bush and a thin black beam are added at the top of the end gate.
+STEP 528
+ADD bg-tan-1 32002 tan
+ADD bg-tan-2 32002 tan
+ADD bg-beam2-2 41677 black
+ADD bg-beam2-3 41677 black
+ADD bg-beam2-4 41677 black
+ADD bg-beam2-5 41677 black
+CONNECT bg-tan-1.pin1 -> bg-beam2-2.hole1~ TURNS
+CONNECT bg-tan-2.pin1 -> bg-beam2-3.hole1~ TURNS
+CONNECT bg-beam2-4.hole1~ -> bg-tan-1.pin2 TURNS
+CONNECT bg-beam2-5.hole1~ -> bg-tan-2.pin2 TURNS
+WHY Two tan pins, each holding a pair of thin black beams, make the end gate's lamp mounts.
+STEP 529
+ADD bg-beam5-1 32316 darkgray
+CONNECT bg-beam5-1.hole1~ -> bg-tan-1.pin2~ STIFF
+WHY A dark grey 5-beam (sticker 23, the ZETROS word) is laid across the top of the lamps.
+STEP 530
+ADD bg-beam7-1 32524 darkgray
+CONNECT bg-beam7-1.hole1~ -> bg-beam5-1.hole3~ STIFF
+WHY A 7-long dark grey beam goes on top of the 5-beam as the grille's top rail.
+STEP 531
+GROUP be
+ADD be-axle3-1 4519 lightgray
+ADD be-ang-1 32034 black
+ADD be-lpin-1 11214 red
+ADD be-wedge-1 29119 darkgray
+ADD be-beam2-1 41677 black
+ADD be-beam2-2 41677 black
+ADD be-tow-1 22484 darkgray
+CONNECT be-ang-1.axlehole1 -> be-axle3-1.axle1 LOCKED
+CONNECT be-lpin-1.axle1 -> be-ang-1.axlehole2 LOCKED
+CONNECT be-beam2-1.hole1~ -> be-axle3-1.axle2~ TURNS
+CONNECT be-beam2-2.hole1~ -> be-axle3-1.axle3~ TURNS
+CONNECT be-wedge-1.stud1? -> be-beam2-2.stud1? STIFF
+CONNECT be-tow-1.hole1? -> be-wedge-1.hole1? TURNS
+END
+ATTACH be
+CONNECT be-ang-1.hole1~ -> bg-bpin-1.pin2~ STIFF
+WHY Builds the left tail-light unit in five small steps (an axle in an angled connector, two thin beams, a dark grey curved wedge and a towball bar) and fits it on the left end of the end gate.
+STEP 532
+GROUP bf
+ADD bf-axle3-1 4519 lightgray
+ADD bf-ang-1 32034 black
+ADD bf-lpin-1 11214 red
+ADD bf-wedge-1 29120 darkgray
+ADD bf-beam2-1 41677 black
+ADD bf-beam2-2 41677 black
+ADD bf-tow-1 22484 darkgray
+CONNECT bf-ang-1.axlehole1 -> bf-axle3-1.axle1 LOCKED
+CONNECT bf-lpin-1.axle1 -> bf-ang-1.axlehole2 LOCKED
+CONNECT bf-beam2-1.hole1~ -> bf-axle3-1.axle2~ TURNS
+CONNECT bf-beam2-2.hole1~ -> bf-axle3-1.axle3~ TURNS
+CONNECT bf-wedge-1.stud1? -> bf-beam2-2.stud1? STIFF
+CONNECT bf-tow-1.hole1? -> bf-wedge-1.hole1? TURNS
+END
+ATTACH bf
+CONNECT bf-ang-1.hole1~ -> bg-bpin-2.pin2~ STIFF
+WHY Builds the right tail-light unit the same way (with the mirrored wedge) and fits it on the right end of the end gate.
+STEP 533
+GROUP bh
+ADD bh-panel-1 62531 black
+ADD bh-pin-1 61332 black
+ADD bh-pin-2 61332 black
+ADD bh-pin-3 61332 black
+ADD bh-pin-4 61332 black
+CONNECT bh-pin-1.pin1 -> bh-panel-1.hole1~ STIFF
+CONNECT bh-pin-2.pin1 -> bh-panel-1.hole3~ STIFF
+CONNECT bh-pin-3.pin1 -> bh-panel-1.hole9~ STIFF
+CONNECT bh-pin-4.pin1 -> bh-panel-1.hole11~ STIFF
+WHY Starts the truck bed floor: a curved black 11x3 panel with four black pins.
+STEP 534
+ADD bh-panel-2 62531 black
+CONNECT bh-panel-2.hole1~ -> bh-pin-1.pin2 STIFF
+WHY A second curved black 11x3 panel is laid over the first.
+STEP 535
+ADD bh-beam3-1 6632 black
+ADD bh-beam3-2 6632 black
+ADD bh-bpin-1 43093 blue
+ADD bh-bpin-2 43093 blue
+ADD bh-ang-1 32034 black
+ADD bh-ang-2 32034 black
+ADD bh-axle3-1 4519 lightgray
+ADD bh-axle3-2 4519 lightgray
+ADD bh-wedge-1 99773 black
+ADD bh-wedge-2 99773 black
+CONNECT bh-ang-1.axlehole1 -> bh-axle3-1.axle1 LOCKED
+CONNECT bh-ang-2.axlehole1 -> bh-axle3-2.axle1 LOCKED
+CONNECT bh-bpin-1.pin1 -> bh-ang-1.hole1~ STIFF
+CONNECT bh-bpin-2.pin1 -> bh-ang-2.hole1~ STIFF
+CONNECT bh-wedge-1.hole1~ -> bh-axle3-1.axle3~ TURNS
+CONNECT bh-wedge-2.hole1~ -> bh-axle3-2.axle3~ TURNS
+CONNECT bh-beam3-1.hole1~ -> bh-wedge-1.hole3~ STIFF
+CONNECT bh-beam3-2.hole1~ -> bh-wedge-2.hole3~ STIFF
+CONNECT bh-wedge-1.hole5~ -> bh-panel-2.hole10~ STIFF
+CONNECT bh-wedge-2.hole5~ -> bh-panel-1.hole10~ STIFF
+WHY Builds two side wedge pieces in three small steps, each with an angled connector, a 3-long axle, a blue pin and a thin beam, and fixes them to the ends of the bed floor.
+STEP 536
+ADD bh-pin-5 61332 black
+ADD bh-pin-6 61332 black
+ADD bh-pin-7 61332 black
+ADD bh-pin-8 61332 black
+ADD bh-pin-9 61332 black
+ADD bh-pin-10 61332 black
+CONNECT bh-pin-5.pin1 -> bh-panel-1.hole2~ STIFF
+CONNECT bh-pin-6.pin1 -> bh-panel-1.hole4~ STIFF
+CONNECT bh-pin-7.pin1 -> bh-panel-1.hole6~ STIFF
+CONNECT bh-pin-8.pin1 -> bh-panel-2.hole2~ STIFF
+CONNECT bh-pin-9.pin1 -> bh-panel-2.hole4~ STIFF
+CONNECT bh-pin-10.pin1 -> bh-panel-2.hole6~ STIFF
+WHY Six black pins go along the underside of the bed floor to take the cross beams.
+STEP 537
+ADD bh-beam5-1 32316 black
+ADD bh-beam5-2 32316 black
+ADD bh-pin-11 61332 black
+ADD bh-pin-12 61332 black
+CONNECT bh-pin-11.pin1 -> bh-beam5-1.hole2~ STIFF
+CONNECT bh-pin-12.pin1 -> bh-beam5-2.hole2~ STIFF
+CONNECT bh-beam5-1.hole4~ -> bh-pin-5.pin2 STIFF
+CONNECT bh-beam5-2.hole4~ -> bh-pin-8.pin2 STIFF
+WHY Two black 5-beams with a pin each go across the underside of the bed floor as cross beams.
+STEP 538
+WHY Sticks stickers 16, 19 and 20 (the lamp and plate labels) onto the top of the bed floor as the picture shows.
+STEP 539
+ATTACH bh
+CONNECT bh-panel-1.hole5~ -> be-ang-1.hole2~ STIFF
+CONNECT bh-panel-2.hole5~ -> bf-ang-1.hole2~ STIFF
+WHY Joins the finished bed floor to the end gate with the lamps on its two ends.
+STEP 540
+GROUP bi
+ADD bi-ang-1 32034 black
+ADD bi-ang-2 32013 black
+ADD bi-mud-1 24119 black
+ADD bi-beam3-1 32523 black
+ADD bi-tan-1 32002 tan
+CONNECT bi-ang-1.hole1~ -> bi-tan-1.pin1 TURNS
+CONNECT bi-ang-2.hole1~ -> bi-ang-1.hole2~ STIFF
+CONNECT bi-beam3-1.hole1~ -> bi-ang-2.hole2~ STIFF
+CONNECT bi-mud-1.hole1~ -> bi-beam3-1.hole3~ STIFF
+END
+ATTACH bi
+CONNECT bi-tan-1.pin2 -> bh-panel-1.hole7~ TURNS
+WHY Builds a rear mudguard (sticker 21, a splash flap) from two angled connectors, a 3-beam and a curved panel in three small steps and fits it on the underside of the bed.
