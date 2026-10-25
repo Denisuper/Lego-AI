@@ -598,3 +598,232 @@ ATTACH rg
 CONNECT rg-frame-1.hole2~ -> r-beam11-1.hole3~ STIFF
 CONNECT rg-frame-1.hole10~ -> r-beam11-2.hole3~ STIFF
 WHY Builds a second 7x11 frame the other way round and fixes it at the other end of the two long beams so the chassis has a box at both ends.
+STEP 61
+ADD a-axle4-1 87083 darkgray
+ADD a-axle4-2 87083 darkgray
+CONNECT a-axle4-1.axle1 -> rf-hub-1.hole1~ TURNS
+CONNECT a-axle4-2.axle1 -> rg-hub-1.hole1~ TURNS
+WHY Pushes two 4-long axles with stops through the front frame hubs: these become the pivots for the front axle arm.
+STEP 62
+GROUP ba
+ADD ba-ball-1 77590 lightgray
+ADD ba-female-1 52730 darkgray
+CONNECT ba-ball-1.axlehole1? -> ba-female-1.ball1? TURNS
+WHY Starts the first steering arm with a ball joint made of a cardan ball and a long grey socket.
+STEP 63
+ADD ba-bush-1 3713 red
+ADD ba-lbeam-1 32140 darkgray
+CONNECT ba-lbeam-1.hole1~ -> ba-ball-1.axle1? TURNS
+CONNECT ba-bush-1.axlehole1 -> ba-ball-1.axle2? LOCKED
+WHY Puts a 2x4 L-beam on the ball joint with a red bush behind it to hold it on.
+STEP 64
+ADD ba-pin-1 61332 black
+ADD ba-bpin-1 43093 blue
+CONNECT ba-pin-1.pin1 -> ba-lbeam-1.hole2~ STIFF
+CONNECT ba-bpin-1.pin1 -> ba-lbeam-1.hole4~ STIFF
+WHY Adds a black pin and a blue pin to the L-beam to hold the long beam in the next step.
+STEP 65
+ADD ba-beam13-1 41239 black
+CONNECT ba-beam13-1.hole3~ -> ba-pin-1.pin2 STIFF
+CONNECT ba-beam13-1.hole6~ -> ba-bpin-1.pin2 STIFF
+WHY Adds a long 13-beam as the arm that carries the front suspension.
+STEP 66
+ADD ba-gpin-1 65304 lightgray
+ADD ba-gpin-2 65304 lightgray
+ADD ba-gpin-3 65304 lightgray
+ADD ba-gpin-4 65304 lightgray
+CONNECT ba-gpin-1.pin1 -> ba-beam13-1.hole1~ STIFF
+CONNECT ba-gpin-2.pin1 -> ba-beam13-1.hole2~ STIFF
+CONNECT ba-gpin-3.pin1 -> ba-beam13-1.hole12~ STIFF
+CONNECT ba-gpin-4.pin1 -> ba-beam13-1.hole13~ STIFF
+WHY Puts grey pins in both ends of the long beam so more parts can be hooked on the end.
+STEP 67
+ATTACH ba
+CONNECT ba-gpin-1.pin2 -> a-axle4-1.axle2~ TURNS
+CONNECT ba-gpin-2.pin2 -> a-axle4-2.axle2~ TURNS
+WHY Brings the finished arm in from the side so its end pins line up with the two 4-long axles on the front frame.
+STEP 68
+CONNECT ba-gpin-1.pin2 -> rf-hub-1.hole1~ TURNS
+CONNECT ba-gpin-3.pin2 -> rg-hub-1.hole1~ TURNS
+WHY Pushes the arm fully home so its pins sit in the frame hubs and it can swing about them.
+STEP 69
+ADD a-pin-1 61332 black
+ADD a-pin-2 61332 black
+ADD a-pin-3 61332 black
+ADD a-pin-4 61332 black
+CONNECT a-pin-1.pin1 -> rf-frame-1.hole4~ STIFF
+CONNECT a-pin-2.pin1 -> rf-frame-1.hole6~ STIFF
+CONNECT a-pin-3.pin1 -> rg-frame-1.hole4~ STIFF
+CONNECT a-pin-4.pin1 -> rg-frame-1.hole6~ STIFF
+WHY Four pins hold the arm and the frame together at the corners, the last locking step of this front sub-frame.
+STEP 70
+ADD b-bpin-1 43093 blue
+ADD b-bpin-2 43093 blue
+ADD b-lbeam-1 32140 darkgray
+ADD b-lbeam-2 32140 darkgray
+CONNECT b-bpin-1.pin1 -> r-beam11-1.hole11~ STIFF
+CONNECT b-bpin-2.pin1 -> r-beam11-2.hole11~ STIFF
+CONNECT b-lbeam-1.hole1~ -> b-bpin-1.pin2 STIFF
+CONNECT b-lbeam-2.hole1~ -> b-bpin-2.pin2 STIFF
+WHY Puts a grey 2x4 L-beam on each long side beam with a blue pin to start the tall side posts.
+STEP 71
+ADD b-beam15-1 71710 black
+ADD b-beam15-2 71710 black
+CONNECT b-beam15-1.hole1~ -> b-lbeam-1.hole4~ STIFF
+CONNECT b-beam15-2.hole1~ -> b-lbeam-2.hole4~ STIFF
+WHY Stands a 15-long black beam up on each side of the front frame as tall side posts.
+STEP 72
+ADD b-lblue-1 42924 blue
+ADD b-lblue-2 42924 blue
+ADD b-lblue-3 42924 blue
+ADD b-lblue-4 42924 blue
+CONNECT b-lblue-1.pin1 -> b-beam15-1.hole3~ STIFF
+CONNECT b-lblue-2.pin1 -> b-beam15-1.hole5~ STIFF
+CONNECT b-lblue-3.pin1 -> b-beam15-2.hole3~ STIFF
+CONNECT b-lblue-4.pin1 -> b-beam15-2.hole5~ STIFF
+WHY Four long blue pins pass through the tall posts into the frame beside them to hold them upright.
+STEP 73
+GROUP lb1
+ADD lb1-lbeam-1 32140 darkgray
+ADD lb1-pin-1 61332 black
+ADD lb1-pin-2 61332 black
+ADD lb1-pin-3 61332 black
+ADD lb1-bpin-1 43093 blue
+CONNECT lb1-pin-1.pin1 -> lb1-lbeam-1.hole1~ STIFF
+CONNECT lb1-pin-2.pin1 -> lb1-lbeam-1.hole2~ STIFF
+CONNECT lb1-pin-3.pin1 -> lb1-lbeam-1.hole3~ STIFF
+CONNECT lb1-bpin-1.pin1 -> lb1-lbeam-1.hole4~ STIFF
+END
+ATTACH lb1
+CONNECT lb1-pin-1.pin2 -> b-beam15-1.hole13~ STIFF
+CONNECT lb1-pin-2.pin2 -> b-beam15-1.hole15~ STIFF
+WHY Builds an L-beam with three pins and a blue pin and clips it to the bottom of the left tall post as a brace.
+STEP 74
+GROUP lb2
+ADD lb2-lbeam-1 32140 darkgray
+ADD lb2-pin-1 61332 black
+ADD lb2-pin-2 61332 black
+ADD lb2-pin-3 61332 black
+ADD lb2-bpin-1 43093 blue
+CONNECT lb2-pin-1.pin1 -> lb2-lbeam-1.hole1~ STIFF
+CONNECT lb2-pin-2.pin1 -> lb2-lbeam-1.hole2~ STIFF
+CONNECT lb2-pin-3.pin1 -> lb2-lbeam-1.hole3~ STIFF
+CONNECT lb2-bpin-1.pin1 -> lb2-lbeam-1.hole4~ STIFF
+END
+ATTACH lb2
+CONNECT lb2-pin-1.pin2 -> b-beam15-2.hole13~ STIFF
+CONNECT lb2-pin-2.pin2 -> b-beam15-2.hole15~ STIFF
+WHY Does the same on the right tall post so both are braced the same way.
+STEP 75
+ADD h-hub-1 65487 darkgray
+ADD h-hub-2 65487 darkgray
+ADD h-bpin-1 43093 blue
+ADD h-bpin-2 43093 blue
+CONNECT h-hub-1.pin1 -> lb1-lbeam-1.hole5~ STIFF
+CONNECT h-hub-2.pin1 -> lb2-lbeam-1.hole5~ STIFF
+CONNECT h-bpin-1.pin1 -> h-hub-1.hole1 STIFF
+CONNECT h-bpin-2.pin1 -> h-hub-2.hole1 STIFF
+WHY Adds two 1-pin hubs with blue pins to the braces to hold the olive beams that come next.
+STEP 76
+ADD h-beam5-1 32316 olive
+ADD h-beam5-2 32316 olive
+CONNECT h-beam5-1.hole1~ -> h-bpin-1.pin2 STIFF
+CONNECT h-beam5-2.hole1~ -> h-bpin-2.pin2 STIFF
+WHY Puts an olive 5-long beam on each hub pin to carry the cable clips and later the axle.
+STEP 77
+ADD h-clip-1 49283 blue
+CONNECT h-clip-1.axlehole1 -> h-beam5-1.hole3~ STIFF
+WHY A blue wire clip holds the motor cable against the olive beam so it cannot snag.
+STEP 78
+ADD h-apin-1 18651 black
+ADD h-clip-2 49283 blue
+CONNECT h-apin-1.pin1 -> h-beam5-1.hole5~ STIFF
+CONNECT h-clip-2.axlehole1 -> h-apin-1.axle1 LOCKED
+WHY A second blue clip on an axle pin holds the cable at the top of the front frame.
+STEP 79
+ADD h-clip-3 49283 red
+CONNECT h-clip-3.axlehole1 -> h-beam5-2.hole3~ STIFF
+WHY A red wire clip holds the other motor cable against the second olive beam.
+STEP 80
+ADD h-apin-2 18651 black
+ADD h-clip-4 49283 red
+CONNECT h-apin-2.pin1 -> h-beam5-2.hole5~ STIFF
+CONNECT h-clip-4.axlehole1 -> h-apin-2.axle1 LOCKED
+WHY A second red clip on an axle pin keeps this cable tidy at the top of the frame.
+STEP 81
+ADD s-panel-1 15458 black
+ADD s-panel-2 15458 black
+CONNECT s-panel-1.hole1~ -> b-lblue-1.pin2~ STIFF
+CONNECT s-panel-2.hole1~ -> b-lblue-3.pin2~ STIFF
+WHY Lays a black 3x11 panel on each side of the front to close off the sides of the chassis.
+STEP 82
+ADD s-lblue-1 42924 blue
+ADD s-lblue-2 42924 blue
+CONNECT s-lblue-1.pin1 -> s-panel-1.hole3~ STIFF
+CONNECT s-lblue-2.pin1 -> s-panel-2.hole3~ STIFF
+WHY Two long blue pins go through the side panels and the olive beams to fix them to the frame.
+STEP 83
+ADD s-bent-1 32009 black
+ADD s-bpin-1 43093 blue
+CONNECT s-bpin-1.pin1 -> s-bent-1.hole3~ STIFF
+CONNECT s-bent-1.hole1~ -> s-panel-1.hole11~ STIFF
+WHY Adds a black bent beam (a beam with a kink in it) at the lower front corner with a blue pin to hold it.
+STEP 84
+ADD s-axle3-1 24316 reddishbrown
+CONNECT s-axle3-1.axle1 -> s-bent-1.hole2~ TURNS
+WHY Pushes a brown axle with a stop through the bent beam to carry a part later.
+STEP 85
+GROUP sx
+ADD sx-l-1 32056 black
+ADD sx-l-2 32056 black
+ADD sx-bpin-1 43093 blue
+CONNECT sx-bpin-1.pin1 -> sx-l-1.hole1~ STIFF
+CONNECT sx-l-2.hole1~ -> sx-bpin-1.pin2 STIFF
+WHY Starts a front-axle support: two black 3x3 L-beams joined by a blue pin.
+STEP 86
+ADD sx-lpin-1 11214 red
+CONNECT sx-lpin-1.pin1 -> sx-l-2.hole2~ STIFF
+WHY Adds a red pin in the second L-beam to hold the long beam.
+STEP 87
+ADD sx-beam11-1 32525 darkgray
+CONNECT sx-beam11-1.hole1~ -> sx-lpin-1.pin2 STIFF
+CONNECT sx-beam11-1.hole3~ -> sx-bpin-1.pin2 STIFF
+WHY Puts an 11-long beam across the L-beams as the cross arm.
+STEP 88
+ADD sx-apin-1 18651 black
+ADD sx-tpin-1 66906 red
+CONNECT sx-tpin-1.pin1 -> sx-beam11-1.hole7~ STIFF
+CONNECT sx-apin-1.pin1 -> sx-beam11-1.hole11~ STIFF
+WHY Adds a red towball pin and a black axle pin on the long beam as joints.
+STEP 89
+ADD sx-l-3 32056 black
+ADD sx-l-4 32056 black
+CONNECT sx-l-3.hole1~ -> sx-apin-1.axle1 LOCKED
+CONNECT sx-l-4.hole1~ -> sx-beam11-1.hole10~ STIFF
+WHY Adds two more L-beams, the one at the other end of the cross arm.
+STEP 90
+ADD sx-axle3-1 4519 lightgray
+ADD sx-lblue-1 42924 blue
+CONNECT sx-lblue-1.pin1 -> sx-l-3.hole2~ STIFF
+CONNECT sx-axle3-1.axle1 -> sx-l-4.axlehole1? LOCKED
+WHY Adds a blue pin and a 3-long axle to lock the two end L-beams together.
+STEP 91
+GROUP sy
+ADD sy-lbeam-1 32140 darkgray
+ADD sy-ell-1 71708 black
+ADD sy-lpin-1 11214 red
+ADD sy-apin-1 18651 black
+ADD sy-pin-1 61332 black
+CONNECT sy-pin-1.pin1 -> sy-lbeam-1.hole1~ STIFF
+CONNECT sy-ell-1.hole1~ -> sy-pin-1.pin2 STIFF
+CONNECT sy-lpin-1.pin1 -> sy-ell-1.hole3~ STIFF
+CONNECT sy-apin-1.pin1 -> sy-lbeam-1.hole4~ STIFF
+END
+ATTACH sy
+CONNECT sy-ell-1.hole2~ -> sx-beam11-1.hole1~ STIFF
+WHY Builds a 2x4 L-beam and a black quarter-ellipse piece on pins, and fixes it under the cross arm as the lever for the steering.
+STEP 92
+ATTACH sx
+CONNECT sx-beam11-1.hole5~ -> s-axle3-1.axle2~ TURNS
+CONNECT sx-l-3.hole3~ -> s-bpin-1.pin2~ STIFF
+WHY Fixes the finished cross arm to the front lower beam and onto the brown axle so it can swing.
