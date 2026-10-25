@@ -965,3 +965,206 @@ END
 ATTACH fm
 CONNECT fm-beam11-1.hole11~ -> fm-lpin-1.pin2~ STIFF
 WHY Builds a long 11-beam with two L-beam ends and fits it along the side of the frame as the lower rail, held by the red pin from step 106.
+STEP 108
+GROUP fq
+ADD fq-lbeam-1 32140 darkgray
+ADD fq-lblue-1 42924 blue
+ADD fq-ell-1 71708 black
+ADD fq-lpin-1 11214 red
+CONNECT fq-lblue-1.pin1 -> fq-lbeam-1.hole1~ STIFF
+CONNECT fq-ell-1.hole1~ -> fq-lblue-1.pin2 STIFF
+CONNECT fq-lpin-1.pin1 -> fq-ell-1.hole3~ STIFF
+END
+ATTACH fq
+CONNECT fq-lbeam-1.hole4~ -> fm-beam11-1.hole9~ STIFF
+WHY Builds a small L-beam and quarter-ellipse piece on a blue pin with a red pin and fits it at the front end of the new lower rail.
+STEP 109
+GROUP fr
+ADD fr-bent-1 6629 black
+ADD fr-axle3-1 4519 lightgray
+ADD fr-lblue-1 42924 blue
+ADD fr-lblue-2 42924 blue
+CONNECT fr-lblue-1.pin1 -> fr-bent-1.hole2~ STIFF
+CONNECT fr-lblue-2.pin1 -> fr-bent-1.hole4~ STIFF
+CONNECT fr-axle3-1.axle1 -> fr-bent-1.axlehole1? LOCKED
+END
+ATTACH fr
+CONNECT fr-bent-1.hole8~ -> fq-lbeam-1.hole2~ STIFF
+WHY Adds a bent 9-beam with two blue pins and a short axle behind the rail end to carry the bumper later.
+STEP 110
+ADD fs-axle4-1 87083 darkgray
+ADD fs-conn-1 42003 lightgray
+CONNECT fs-conn-1.axlehole1 -> fs-axle4-1.axle1 LOCKED
+CONNECT fs-conn-1.hole1~ -> fq-lpin-1.pin2~ STIFF
+WHY A 4-long axle and a grey connector at the foot of the bumper mount, which a wheel hub can turn on.
+STEP 111
+ADD fs-tball-1 2736 lightgray
+ADD fs-conn-2 32557 lightgray
+ADD fs-conn-3 32557 lightgray
+CONNECT fs-tball-1.pin1? -> fs-conn-1.hole2~ TURNS
+CONNECT fs-conn-2.hole1~ -> fs-axle4-1.axle3~ TURNS
+CONNECT fs-conn-3.hole1~ -> fs-tball-1.pin2? TURNS
+WHY Adds a towball axle and two long grey connectors as the arm that carries the bumper's joint.
+STEP 112
+ADD fs-beam2-1 60483 darkgray
+ADD fs-beam2-2 60483 darkgray
+ADD fs-pin-1 61332 black
+ADD fs-pin-2 61332 black
+CONNECT fs-pin-1.pin1 -> fs-beam2-1.hole1 STIFF
+CONNECT fs-pin-2.pin1 -> fs-beam2-2.hole1 STIFF
+CONNECT fs-pin-1.pin2 -> fr-bent-1.hole9~ STIFF
+CONNECT fs-pin-2.pin2 -> fr-bent-1.hole8~ STIFF
+WHY Fits two small grey beams with pins onto the front corners of the lower rails as the mount for the steering arms.
+STEP 113
+ADD fs-axle3-2 24316 reddishbrown
+ADD fs-axle3-3 24316 reddishbrown
+ADD fs-arm-1 31794 lightgray
+ADD fs-arm-2 31794 lightgray
+CONNECT fs-axle3-2.axle1 -> fs-arm-1.hole1~ TURNS
+CONNECT fs-axle3-3.axle1 -> fs-arm-2.hole1~ TURNS
+CONNECT fs-axle3-2.axle3 -> fs-beam2-1.hole2~ TURNS
+CONNECT fs-axle3-3.axle3 -> fs-beam2-2.hole2~ TURNS
+WHY Puts the two grey steering arms (the long beams with ball sockets, correct way up as the picture shows) on brown axles so each can swing at the front corner.
+STEP 114
+ADD fs-split-1 69819 darkgray
+ADD fs-axle5-1 32073 yellow
+CONNECT fs-axle5-1.axle1 -> fs-split-1.axlehole1 LOCKED
+CONNECT fs-split-1.hole1~ -> fr-bent-1.hole5~ STIFF
+WHY A yellow axle in a split connector is clipped on the outside of the lower rail as the pivot for the front bumper.
+STEP 115
+ADD fs-pin-3 61332 black
+ADD fs-pin-4 61332 black
+ADD fs-pin-5 61332 black
+ADD fs-pin-6 61332 black
+CONNECT fs-pin-3.pin1 -> d-panel-1.hole9~ STIFF
+CONNECT fs-pin-4.pin1 -> d-panel-1.hole10~ STIFF
+CONNECT fs-pin-5.pin1 -> d-panel-2.hole9~ STIFF
+CONNECT fs-pin-6.pin1 -> d-panel-2.hole10~ STIFF
+WHY Four black pins go into the side panels from the inside to hold the next layer.
+STEP 116
+GROUP rc
+ADD rc-conn-1 32184 darkgray
+ADD rc-axle3-1 4519 lightgray
+ADD rc-axle3-2 4519 lightgray
+CONNECT rc-axle3-1.axle1 -> rc-conn-1.axlehole1 LOCKED
+CONNECT rc-axle3-2.axle1 -> rc-conn-1.axlehole2 LOCKED
+WHY Starts the rear axle housing with a perpendicular connector and two 3-long axles sticking out each side.
+STEP 117
+ADD rc-conn-2 59443 darkgray
+ADD rc-conn-3 59443 darkgray
+ADD rc-conn-4 59443 darkgray
+ADD rc-conn-5 59443 darkgray
+CONNECT rc-conn-2.axlehole1 -> rc-axle3-1.axle3 LOCKED
+CONNECT rc-conn-3.axlehole1 -> rc-axle3-1.axle2 LOCKED
+CONNECT rc-conn-4.axlehole1 -> rc-axle3-2.axle3 LOCKED
+CONNECT rc-conn-5.axlehole1 -> rc-axle3-2.axle2 LOCKED
+WHY Slides four dark axle connectors onto the two axles to make a wide mounting block.
+STEP 118
+ADD rc-lpin-1 11214 red
+ADD rc-lpin-2 11214 red
+CONNECT rc-lpin-1.axle1 -> rc-conn-2.axlehole2 LOCKED
+CONNECT rc-lpin-2.axle1 -> rc-conn-5.axlehole2 LOCKED
+WHY Two red axle pins go into the outer connectors as stops and pivots for the end pieces.
+STEP 119
+ADD rc-ell-1 71708 black
+ADD rc-ell-2 71708 black
+CONNECT rc-ell-1.hole1~ -> rc-lpin-1.pin2 STIFF
+CONNECT rc-ell-2.hole1~ -> rc-lpin-2.pin2 STIFF
+WHY Puts a black quarter-ellipse piece on each red pin to form the rounded ends of the housing.
+STEP 120
+ADD rc-apin-1 18651 black
+ADD rc-apin-2 18651 black
+CONNECT rc-apin-1.pin1 -> rc-ell-1.hole3~ STIFF
+CONNECT rc-apin-2.pin1 -> rc-ell-2.hole3~ STIFF
+WHY Two black axle pins lock the ellipse pieces to the connectors.
+STEP 121
+ADD rc-pin-1 61332 black
+ADD rc-pin-2 61332 black
+ADD rc-pin-3 61332 black
+ADD rc-pin-4 61332 black
+CONNECT rc-pin-1.pin1 -> rc-ell-1.hole2~ STIFF
+CONNECT rc-pin-2.pin1 -> rc-ell-1.hole4~ STIFF
+CONNECT rc-pin-3.pin1 -> rc-ell-2.hole2~ STIFF
+CONNECT rc-pin-4.pin1 -> rc-ell-2.hole4~ STIFF
+WHY Four black pins on the ends of the housing hold the next beams.
+STEP 122
+ADD rc-lbeam-1 32140 darkgray
+ADD rc-lbeam-2 32140 darkgray
+CONNECT rc-lbeam-1.hole1~ -> rc-pin-1.pin2 STIFF
+CONNECT rc-lbeam-2.hole1~ -> rc-pin-3.pin2 STIFF
+WHY Adds a grey 2x4 L-beam on each end to make tall side arms for the axle.
+STEP 123
+ADD rc-beam11-1 32525 darkgray
+ADD rc-beam11-2 32525 darkgray
+CONNECT rc-beam11-1.hole1~ -> rc-lbeam-1.hole4~ STIFF
+CONNECT rc-beam11-2.hole1~ -> rc-lbeam-2.hole4~ STIFF
+WHY Stands an 11-long beam up on each L-beam as the tall legs that carry the axle housing.
+STEP 124
+ADD rc-ring-1 18654 lightgray
+ADD rc-ring-2 18654 lightgray
+ADD rc-lpin-3 11214 red
+ADD rc-lpin-4 11214 red
+CONNECT rc-ring-1.hole1 -> rc-beam11-1.hole10~ TURNS
+CONNECT rc-ring-2.hole1 -> rc-beam11-2.hole10~ TURNS
+CONNECT rc-lpin-3.pin1 -> rc-ring-1.hole1 STIFF
+CONNECT rc-lpin-4.pin1 -> rc-ring-2.hole1 STIFF
+WHY Adds a round connector and a red pin near the top of each leg as the points where it attaches to the frame.
+STEP 125
+ATTACH rc
+CONNECT rc-beam11-1.hole1~ -> b-beam15-1.hole14~ STIFF
+CONNECT rc-beam11-2.hole1~ -> b-beam15-2.hole14~ STIFF
+WHY Drops the finished rear axle housing onto the two tall posts at the back of the chassis.
+STEP 126
+ADD rc-lbeam-3 32140 darkgray
+CONNECT rc-lbeam-3.hole1~ -> rc-lpin-3.pin2~ STIFF
+WHY Adds an L-beam near the top of the legs to brace them.
+STEP 127
+ADD rc-clip-1 49283 green
+ADD rc-lbeam-4 32140 darkgray
+CONNECT rc-clip-1.axlehole1 -> rc-lbeam-3.hole3~ STIFF
+CONNECT rc-lbeam-4.hole1~ -> rc-lpin-4.pin2~ STIFF
+WHY A green clip holds the motor cables and a grey L-beam on the other leg braces it the same way.
+STEP 128
+WHY Routes both motor cables through the green clip so they run neatly along the frame and cannot be trapped later.
+STEP 129
+ADD rc-panel-1 15458 black
+ADD rc-panel-2 15458 black
+ADD rc-pin-5 61332 black
+ADD rc-pin-6 61332 black
+ADD rc-pin-7 61332 black
+ADD rc-pin-8 61332 black
+CONNECT rc-pin-5.pin1 -> rc-panel-1.hole1~ STIFF
+CONNECT rc-pin-6.pin1 -> rc-panel-1.hole3~ STIFF
+CONNECT rc-pin-7.pin1 -> rc-panel-2.hole1~ STIFF
+CONNECT rc-pin-8.pin1 -> rc-panel-2.hole3~ STIFF
+WHY Two more black panels with pins go on the sides of the rear of the chassis to complete the side walls.
+STEP 130
+GROUP rx
+ADD rx-beam5-1 32316 black
+ADD rx-pin-1 61332 black
+ADD rx-pin-2 61332 black
+CONNECT rx-pin-1.pin1 -> rx-beam5-1.hole2~ STIFF
+CONNECT rx-pin-2.pin1 -> rx-beam5-1.hole4~ STIFF
+WHY Starts the rear axle (bag 2): a black 5-long beam with two pins to hang the next parts on.
+STEP 131
+ADD rx-trip-1 63869 lightgray
+ADD rx-trip-2 63869 lightgray
+CONNECT rx-trip-1.hole1~ -> rx-pin-1.pin2 STIFF
+CONNECT rx-trip-2.hole1~ -> rx-pin-2.pin2 STIFF
+WHY Puts two grey triple connectors on the pins to hold the axle ends.
+STEP 132
+ADD rx-axle3-1 4519 lightgray
+ADD rx-axle3-2 4519 lightgray
+ADD rx-beam3-1 6632 black
+ADD rx-beam3-2 6632 black
+CONNECT rx-axle3-1.axle1 -> rx-trip-1.axlehole1? LOCKED
+CONNECT rx-axle3-2.axle1 -> rx-trip-2.axlehole1? LOCKED
+CONNECT rx-beam3-1.axlehole1? -> rx-axle3-1.axle3 LOCKED
+CONNECT rx-beam3-2.axlehole1? -> rx-axle3-2.axle3 LOCKED
+WHY A short axle through each connector carries a thin black beam standing up on its end.
+STEP 133
+ADD rx-pin-3 61332 black
+ADD rx-pin-4 61332 black
+CONNECT rx-pin-3.pin1 -> rx-beam3-1.hole2~ STIFF
+CONNECT rx-pin-4.pin1 -> rx-beam3-2.hole2~ STIFF
+WHY Two pins at the top of the standing beams hold the next piece.
