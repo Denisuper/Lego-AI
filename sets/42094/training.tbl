@@ -1155,3 +1155,239 @@ CONNECT p2853-2.axle1 -> p32065-2.hole1 TURNS
 CONNECT p2853-1.axle2 -> p25214-5.? LOCKED
 CONNECT p2853-2.axle2 -> p25214-8.? LOCKED
 WHY Bridges the four curved elbows with the second thin seven-hole beam and holds its outer ends with grey crankshaft pieces whose cross sockets face outward.
+
+STEP 108
+ADD guard-bar-1 75c07 black
+ADD guard-bar-2 75c07 black
+ADD guard-bar-3 75c07 black
+ADD guard-bar-4 75c07 black
+CONNECT guard-bar-1.? -> p18651-8.barhole1~ STIFF
+CONNECT guard-bar-2.? -> p18651-9.barhole1~ STIFF
+CONNECT guard-bar-3.? -> p18651-10.barhole1~ STIFF
+CONNECT guard-bar-4.? -> p18651-11.barhole1~ STIFF
+WHY Pushes four equal black rigid hoses into the open ends of the lower axle-pins to form the tall protective bars in front of the seat.
+
+STEP 109
+ADD p22961-5 22961 lightgray
+ADD p22961-6 22961 lightgray
+ADD p22961-7 22961 lightgray
+ADD p22961-8 22961 lightgray
+ADD p6558-23 6558 blue
+ADD p6558-24 6558 blue
+ADD p32013-6 32013 black
+ADD p32013-7 32013 black
+ADD p25214-9 25214 black
+ADD p25214-10 25214 black
+ADD p25214-11 25214 black
+ADD p25214-12 25214 black
+CONNECT p6558-23.pin2 -> p32013-6.hole1 STIFF
+CONNECT p6558-23.pin3 -> p22961-5.hole1 STIFF
+CONNECT p6558-23.pin1 -> p22961-6.hole1 STIFF
+CONNECT p6558-24.pin2 -> p32013-7.hole1 STIFF
+CONNECT p6558-24.pin3 -> p22961-7.hole1 STIFF
+CONNECT p6558-24.pin1 -> p22961-8.hole1 STIFF
+CONNECT p22961-5.axle1 -> p25214-9.? LOCKED
+CONNECT p22961-6.axle1 -> p25214-10.? LOCKED
+CONNECT p22961-7.axle1 -> p25214-11.? LOCKED
+CONNECT p22961-8.axle1 -> p25214-12.? LOCKED
+CONNECT guard-bar-1.? -> p25214-9.? STIFF
+CONNECT guard-bar-2.? -> p25214-10.? STIFF
+CONNECT guard-bar-3.? -> p25214-11.? STIFF
+CONNECT guard-bar-4.? -> p25214-12.? STIFF
+WHY Builds two upper brackets with blue pins, grey axle-ended connectors and paired black elbows, then plugs the four protective bars into the curved elbows.
+
+STEP 110
+ADD p4519-9 4519 lightgray
+ADD p4519-10 4519 lightgray
+CONNECT p4519-9.axle3 -> p32013-6.axlehole1 LOCKED
+CONNECT p4519-10.axle3 -> p32013-7.axlehole1 LOCKED
+WHY Inserts a grey three-length axle into each upper black bracket with the remaining lengths exposed for the roof-light supports and cab mounting.
+
+STEP 111
+ADD p6536-5 6536 black
+ADD p6536-6 6536 black
+ADD p4274-7 4274 lightgray
+ADD p4274-8 4274 lightgray
+CONNECT p4274-7.pin2 -> p6536-5.hole1 TURNS
+CONNECT p4274-8.pin2 -> p6536-6.hole1 TURNS
+CONNECT p4519-9.axle2 -> p6536-5.axlehole1 LOCKED
+CONNECT p4519-10.axle2 -> p6536-6.axlehole1 LOCKED
+WHY Fits black perpendicular connectors onto the two upper axles and inserts a grey half pin into each outward round hole to carry the light bar.
+
+STEP 112
+ADD p58176-1 58176 transorange
+ADD p58176-2 58176 transorange
+ADD p32065-3 32065 black
+CONNECT p4274-7.pin2 -> p32065-3.hole7 TURNS
+CONNECT p4274-8.pin2 -> p32065-3.hole1 TURNS
+CONNECT p58176-1.? -> p4274-7.barhole1 STIFF
+CONNECT p58176-2.? -> p4274-8.barhole1 STIFF
+WHY Fits the thin black seven-hole roof-light beam across the half pins and pushes an orange warning light into each end.
+END
+
+STEP 113
+WHY Turns the completed protective guard upright with the orange lights at the top, the four black bars facing forward and the lower mounting sockets facing the cab.
+
+STEP 114
+ATTACH front-guard
+CONNECT p4519-9.axle1 -> p32015-1.axlehole1 LOCKED
+CONNECT p4519-10.axle1 -> p32015-2.axlehole1 LOCKED
+CONNECT p6553-2.axle1 -> p32065-2.hole5 TURNS
+CONNECT p6553-3.axle1 -> p32065-2.hole3 TURNS
+CONNECT p6553-2.axle2 -> p25214-6.? LOCKED
+CONNECT p6553-3.axle2 -> p25214-7.? LOCKED
+WHY Secures the front guard to the cab by seating its upper grey axles in the black corner connectors and its lower inner elbows on the two offset black axle ends beside the yellow shaft.
+
+STEP 115
+GROUP control-console
+ADD p98138-7 98138 transgreen
+ADD p98138-8 98138 transred
+ADD p32062-6 32062 red
+ADD p32013-8 32013 black
+ADD p32039-2 32039 lightgray
+ADD p43093-12 43093 blue
+ADD p26603-1 26603 white
+ADD p4274-9 4274 lightgray
+ADD p4274-10 4274 lightgray
+ADD p4274-11 4274 lightgray
+ADD p4274-12 4274 lightgray
+ADD p32291-1 32291 black
+ADD p32014-1 32014 lightgray
+ADD p4519-11 4519 lightgray
+CONNECT p4519-11.axle3 -> p32013-8.axlehole1 LOCKED
+CONNECT p4519-11.axle2 -> p32291-1.axlehole1 LOCKED
+CONNECT p4519-11.axle1 -> p32014-1.axlehole1 LOCKED
+CONNECT p32062-6.axle2 -> p32014-1.axlehole2 LOCKED
+CONNECT p32062-6.axle1 -> p32039-2.axlehole1 LOCKED
+CONNECT p43093-12.axle1 -> p32039-2.axlehole2 LOCKED
+CONNECT p4274-9.pin2 -> p32013-8.hole1 TURNS
+CONNECT p4274-10.pin2 -> p32291-1.hole2 TURNS
+CONNECT p4274-11.pin2 -> p32291-1.hole1 TURNS
+CONNECT p4274-12.pin2 -> p32014-1.hole1 TURNS
+CONNECT p98138-8.? -> p4274-9.? STIFF
+CONNECT p98138-7.? -> p4274-12.? STIFF
+CONNECT p26603-1.? -> p4274-10.? STIFF
+CONNECT p26603-1.? -> p4274-11.? STIFF
+END
+ATTACH control-console
+CONNECT p43093-12.pin1 -> p60484-1.hole3 STIFF
+WHY Builds the red-and-green indicator console on a grey axle and angled support, fixes the sticker-10 white display tile onto the two middle half-pin studs and pins the console onto the black linkage in front of the seat.
+
+STEP 116
+ADD p15100-3 15100 black
+ADD p15100-4 15100 black
+ADD p11214-5 11214 red
+CONNECT p11214-5.pin1 -> p15100-3.hole1 STIFF
+CONNECT p11214-5.pin2 -> p15100-4.hole1 STIFF
+CONNECT p15100-3.pin1 -> p6629-2.hole3 STIFF
+CONNECT p15100-4.pin1 -> p6629-2.hole4 STIFF
+WHY Pins two black right-angle connectors into the cab side and joins their round holes with a red axle-pin whose cross end projects upward for the side assembly.
+
+STEP 117
+GROUP left-cab-side
+ADD p41677-3 41677 darkgray
+ADD p2853-3 2853 lightgray
+ADD p2853-4 2853 lightgray
+CONNECT p2853-3.axle1 -> p41677-3.axlehole2 LOCKED
+CONNECT p2853-4.axle1 -> p41677-3.axlehole1 LOCKED
+WHY Joins two grey crankshaft pieces with a thin dark grey two-hole cross beam so their short axle ends and cross sockets form the offset side bracket.
+
+STEP 118
+ADD p6629-5 6629 black
+CONNECT p2853-3.axle2 -> p6629-5.axlehole2 LOCKED
+WHY Locks the short axle of the first grey crankshaft into the cross hole at the short end of the black bent side beam.
+
+STEP 119
+ADD p6536-7 6536 black
+ADD p4274-13 4274 lightgray
+ADD p98138-9 98138 transclear
+CONNECT p4274-13.pin2 -> p6536-7.hole1 TURNS
+CONNECT p98138-9.? -> p4274-13.? STIFF
+CONNECT p2853-4.axle2 -> p6536-7.axlehole1 LOCKED
+WHY Adds a clear round lamp on a grey half pin and black perpendicular connector, locking the connector onto the other grey crankshaft's short axle.
+
+STEP 120
+ADD left-cab-bracket-pin 2780 black
+ADD p32054-7 32054 black
+ADD p41678-1 41678 lightgray
+ADD p99008-4 99008 tan
+ADD p18654-9 18654 black
+CONNECT p32054-7.pin1 -> p41678-1.hole1 STIFF
+CONNECT p99008-4.axle2 -> p41678-1.axlehole1 LOCKED
+CONNECT p99008-4.axle3 -> p41678-1.axlehole2 LOCKED
+CONNECT p99008-4.axle2 -> p18654-9.hole1 TURNS
+CONNECT p32054-7.pin2 -> p6629-5.hole4 STIFF
+CONNECT left-cab-bracket-pin.pin1 -> p41678-1.hole2 STIFF
+CONNECT left-cab-bracket-pin.pin2 -> p6629-5.hole5 STIFF
+WHY Pins the grey three-way axle connector onto the bent side beam and inserts the tan shaft through its cross holes with a black spacer between the grey arms.
+
+STEP 121
+ADD p2780-43 2780 black
+ADD p2780-44 2780 black
+ADD p63869-5 63869 black
+ADD p11946-2 11946 black
+ADD p18654-10 18654 black
+ADD p22961-9 22961 lightgray
+CONNECT p22961-9.axle1 -> p11946-2.axlehole1 LOCKED
+CONNECT p2780-43.pin1 -> p11946-2.hole1 STIFF
+CONNECT p2780-44.pin1 -> p11946-2.hole2 STIFF
+CONNECT p2780-43.pin2 -> p63869-5.hole2 STIFF
+CONNECT p2780-44.pin2 -> p63869-5.hole3 STIFF
+CONNECT p99008-4.pin1 -> p18654-10.hole1 TURNS
+CONNECT p99008-4.axle1 -> p63869-5.axlehole1 LOCKED
+WHY Adds the sticker-18 black side panel with a grey axle-ended fitting and black hub, sliding a black spacer over the tan shaft before locking the panel hub onto its exposed cross end.
+
+STEP 122
+ADD p98138-10 98138 transclear
+ADD p4274-14 4274 lightgray
+ADD p32062-7 32062 red
+ADD p43093-13 43093 blue
+ADD p2780-45 2780 black
+ADD p2780-46 2780 black
+ADD p2780-47 2780 black
+ADD p2780-48 2780 black
+ADD p6536-8 6536 black
+ADD p32291-2 32291 black
+ADD p32348-1 32348 lightgray
+CONNECT p43093-13.axle1 -> p32348-1.axlehole1 LOCKED
+CONNECT p2780-46.pin1 -> p32348-1.hole1 STIFF
+CONNECT p2780-45.pin1 -> p32348-1.hole2 STIFF
+CONNECT p2780-48.pin1 -> p32348-1.hole4 STIFF
+CONNECT p2780-47.pin1 -> p32348-1.hole5 STIFF
+CONNECT p2780-48.pin2 -> p32291-2.hole1 STIFF
+CONNECT p2780-47.pin2 -> p32291-2.hole2 STIFF
+CONNECT p32062-7.axle1 -> p32348-1.axlehole2 LOCKED
+CONNECT p32062-7.axle2 -> p6536-8.axlehole1 LOCKED
+CONNECT p4274-14.pin2 -> p6536-8.hole1 TURNS
+CONNECT p98138-10.? -> p4274-14.? STIFF
+CONNECT p2780-45.pin2 -> p6629-5.hole1 STIFF
+CONNECT p2780-46.pin2 -> p6629-5.hole2 STIFF
+WHY Builds the grey bent side brace with a black two-hole mounting block and a clear lamp on a red axle, then pins the brace onto the black side beam beside the decorated panel.
+
+STEP 123
+ADD p42003-9 42003 darkgray
+ADD p2736-1 2736 lightgray
+CONNECT p2736-1.axle1 -> p42003-9.axlehole1 LOCKED
+CONNECT p43093-13.pin1 -> p42003-9.hole2 STIFF
+WHY Fits the grey ball-ended axle into the dark grey connector and pins this handle onto the exposed blue axle-pin at the top of the side brace.
+
+STEP 124
+ADD p6628-1 6628 black
+CONNECT p6628-1.pin1 -> p22961-9.hole1 STIFF
+WHY Turns the side assembly over and inserts the black ball-ended friction pin into the grey round socket beside the decorated panel.
+
+STEP 125
+END
+ATTACH left-cab-side
+CONNECT p11214-5.axle1 -> p32291-2.axlehole1 LOCKED
+WHY Seats the completed left side on the red projecting axle at the cab's side brackets with its decorated black panel and clear lamps facing outward.
+
+STEP 126
+ADD p15100-5 15100 black
+ADD p15100-6 15100 black
+ADD p11214-6 11214 red
+CONNECT p11214-6.pin2 -> p15100-5.hole1 STIFF
+CONNECT p11214-6.pin1 -> p15100-6.hole1 STIFF
+CONNECT p15100-5.pin1 -> p6629-4.hole4 STIFF
+CONNECT p15100-6.pin1 -> p6629-4.hole3 STIFF
+WHY Turns the cab around and pins the matching pair of black right-angle connectors and red axle-pin into the opposite side for its mirrored assembly.
