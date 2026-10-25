@@ -450,3 +450,179 @@ CONNECT p3706-1.axle1 -> p14720-1.hole3 TURNS
 MESH p18575-1.teeth p32270-4.teeth
 RATIO p18575-1 p32270-4 20/12
 WHY Installs the engine above the rear chassis and meshes its crankshaft gear with the wheel-driven twenty-tooth gear.
+STEP 43
+ADD p32062-9 32062 red
+ADD p32062-10 32062 red
+CONNECT p32062-9.axle1 -> p64178-1.hole24 TURNS
+CONNECT p32062-9.axle2 -> p32039-5.axlehole1 LOCKED
+CONNECT p32062-10.axle1 -> p64178-1.hole20 TURNS
+CONNECT p32062-10.axle2 -> p32039-6.axlehole1 LOCKED
+WHY Secures the engine's yellow mounting connectors down to the rear frame with two short red axles.
+STEP 44
+GROUP center-chassis-bracket
+ADD p32073-5 32073 lightgray
+ADD p6536-10 6536 yellow
+CONNECT p32073-5.axle3 -> p6536-10.axlehole1 LOCKED
+WHY Centers the yellow perpendicular bearing on a five-length cross axle to start the forward chassis bracket.
+STEP 45
+ADD p60483-7 60483 black
+ADD p60483-8 60483 black
+CONNECT p32073-5.axle2 -> p60483-7.axlehole1 LOCKED
+CONNECT p32073-5.axle4 -> p60483-8.axlehole1 LOCKED
+WHY Adds matching black lugs on either side of the central yellow bearing.
+STEP 46
+ADD p6558-3 6558 blue
+ADD p6558-4 6558 blue
+CONNECT p6558-3.pin1 -> p60483-7.hole1 STIFF
+CONNECT p6558-4.pin1 -> p60483-8.hole1 STIFF
+WHY Inserts two outward long friction pins into the black lugs for the bracket's side beams.
+STEP 47
+ADD p32526-2 32526 yellow
+ADD p32526-3 32526 yellow
+CONNECT p6558-3.pin2 -> p32526-2.hole5 STIFF
+CONNECT p6558-4.pin2 -> p32526-3.hole5 STIFF
+CONNECT p32073-5.axle1 -> p32526-2.hole4 TURNS
+CONNECT p32073-5.axle5 -> p32526-3.hole4 TURNS
+WHY Fits the two tall L-shaped sides over the long pins and the ends of the cross axle.
+STEP 48
+ADD p6558-5 6558 blue
+ADD p2780-18 2780 black
+ADD p2780-19 2780 black
+ADD p2780-20 2780 black
+CONNECT p6558-5.pin1 -> p32526-2.hole1 STIFF
+CONNECT p2780-18.pin2 -> p32526-2.hole3 STIFF
+CONNECT p2780-19.pin1 -> p32526-3.hole3 STIFF
+CONNECT p2780-20.pin1 -> p32526-3.hole1 STIFF
+WHY Adds the two-hole-spaced mounting pins that will fix the yellow feet to the bracket sides.
+STEP 49
+ADD p32526-4 32526 yellow
+ADD p32526-5 32526 yellow
+CONNECT p6558-5.pin2 -> p32526-4.hole5 STIFF
+CONNECT p2780-18.pin1 -> p32526-4.hole7 STIFF
+CONNECT p2780-19.pin2 -> p32526-5.hole7 STIFF
+CONNECT p2780-20.pin2 -> p32526-5.hole5 STIFF
+WHY Attaches the two L-shaped feet with their mounting holes two spaces apart to match the pins.
+STEP 50
+ADD p32054-1 32054 black
+ADD p32054-2 32054 black
+ADD p32054-3 32054 black
+ADD p32054-4 32054 black
+CONNECT p32054-1.pin1 -> p32526-4.hole4 STIFF
+CONNECT p32054-2.pin1 -> p32526-4.hole1 STIFF
+CONNECT p32054-3.pin1 -> p32526-5.hole1 STIFF
+CONNECT p32054-4.pin1 -> p32526-5.hole4 STIFF
+END
+WHY Loads four long stop-bush pins into the feet so the bracket can be pushed into the chassis frame.
+STEP 51
+ATTACH center-chassis-bracket
+CONNECT p60485-1.axle3 -> p6536-10.hole1 TURNS
+WHY Slides the bracket into position around the forward end of the long steering shaft.
+STEP 52
+CONNECT p32054-1.pin2 -> p64178-1.hole2 STIFF
+CONNECT p32054-2.pin2 -> p64178-1.hole11 STIFF
+CONNECT p32054-3.pin2 -> p64178-1.hole10 STIFF
+CONNECT p32054-4.pin2 -> p64178-1.hole1 STIFF
+WHY Pushes all four stop-bush pins fully into the frame to lock the bracket feet in place.
+STEP 53
+ADD p40490-1 40490 yellow
+ADD p2780-21 2780 black
+ADD p2780-22 2780 black
+ADD p6628-1 6628 black
+ADD p6628-2 6628 black
+ADD p42003-1 42003 lightgray
+ADD p42003-2 42003 lightgray
+ADD p3705-6 3705 black
+ADD p3705-7 3705 black
+ADD p59443-6 59443 darkgray
+CONNECT p2780-21.pin1 -> p40490-1.hole9 STIFF
+CONNECT p2780-22.pin1 -> p40490-1.hole1 STIFF
+CONNECT p6628-1.pin1 -> p40490-1.hole7 STIFF
+CONNECT p6628-2.pin1 -> p40490-1.hole3 STIFF
+CONNECT p2780-21.pin2 -> p42003-1.hole2 STIFF
+CONNECT p2780-22.pin2 -> p42003-2.hole2 STIFF
+CONNECT p3705-6.axle4 -> p42003-1.axlehole1 LOCKED
+CONNECT p3705-7.axle4 -> p42003-2.axlehole1 LOCKED
+CONNECT p3705-6.axle2 -> p32526-3.hole7 TURNS
+CONNECT p3705-7.axle2 -> p32526-2.hole7 TURNS
+CONNECT p44294-1.axle6 -> p40490-1.hole5 TURNS
+CONNECT p44294-1.axle7 -> p59443-6.axlehole2 LOCKED
+WHY Adds the forward crossbeam with two ball pins, downward mounting axles, and the central drive-shaft joiner.
+STEP 54
+ADD p32062-11 32062 red
+ADD p61903-1 61903 lightgray
+ADD p32073-6 32073 lightgray
+CONNECT p32062-11.axle1 -> p59443-6.axlehole1 LOCKED
+CONNECT p32062-11.axle2 -> p61903-1.axlehole1 LOCKED
+CONNECT p32073-6.axle5 -> p61903-1.axlehole2 LOCKED
+WHY Extends the drive through a universal joint so torque can pass forward when the chassis articulates.
+STEP 55
+ADD p32034-3 32034 black
+ADD p32270-5 32270 black
+CONNECT p3705-6.axle1 -> p32034-3.axlehole1 LOCKED
+CONNECT p3705-7.axle1 -> p32034-3.axlehole2 LOCKED
+CONNECT p60485-1.axle1 -> p32034-3.hole1 TURNS
+CONNECT p60485-1.axle2 -> p32270-5.axlehole1 LOCKED
+WHY Braces the downward cross axles and adds the forward twelve-tooth steering gear on the long shaft.
+STEP 56
+GROUP front-chassis
+ADD p32056-1 32056 lightgray
+ADD p32056-2 32056 lightgray
+ADD p18651-3 18651 black
+ADD p18651-4 18651 black
+CONNECT p18651-3.axle2 -> p32056-1.axlehole2 LOCKED
+CONNECT p18651-3.axle2 -> p32056-2.axlehole2 LOCKED
+CONNECT p18651-4.axle2 -> p32056-1.axlehole3 LOCKED
+CONNECT p18651-4.axle2 -> p32056-2.axlehole3 LOCKED
+WHY Starts the front chassis with paired thin L-shaped plates locked together on two long axle pins.
+STEP 57
+ADD p87083-2 87083 darkgray
+CONNECT p87083-2.axle4 -> p32056-1.axlehole1 LOCKED
+CONNECT p87083-2.axle4 -> p32056-2.axlehole1 LOCKED
+WHY Inserts a stopped axle through the corner cross holes of the doubled front support.
+STEP 58
+ADD p32034-4 32034 black
+ADD p32034-5 32034 black
+ADD p4274-2 4274 lightgray
+CONNECT p18651-3.axle1 -> p32034-5.axlehole2 LOCKED
+CONNECT p18651-4.axle1 -> p32034-4.axlehole2 LOCKED
+CONNECT p4274-2.pin1 -> p32034-4.hole1 TURNS
+WHY Adds the two transverse inline connectors and a half pin for the later central mounting point.
+STEP 59
+ADD p32056-3 32056 lightgray
+ADD p32056-4 32056 lightgray
+ADD p18651-5 18651 black
+ADD p18651-6 18651 black
+ADD p87083-4 87083 darkgray
+CONNECT p18651-5.axle1 -> p32034-4.axlehole1 LOCKED
+CONNECT p18651-6.axle1 -> p32034-5.axlehole1 LOCKED
+CONNECT p18651-5.axle2 -> p32056-3.axlehole3 LOCKED
+CONNECT p18651-5.axle2 -> p32056-4.axlehole3 LOCKED
+CONNECT p18651-6.axle2 -> p32056-3.axlehole2 LOCKED
+CONNECT p18651-6.axle2 -> p32056-4.axlehole2 LOCKED
+CONNECT p87083-4.axle4 -> p32056-3.axlehole1 LOCKED
+CONNECT p87083-4.axle4 -> p32056-4.axlehole1 LOCKED
+WHY Closes the other side of the front support with doubled grey plates and a matching stopped corner axle.
+STEP 60
+ADD p40490-2 40490 yellow
+ADD p3713-8 3713 red
+CONNECT p87083-2.axle3 -> p40490-2.hole1 TURNS
+CONNECT p18651-4.pin1 -> p40490-2.hole3 STIFF
+CONNECT p87083-2.axle2 -> p3713-8.axlehole1 LOCKED
+WHY Mounts the first long yellow front-chassis rail on its stopped axle and black pin, then adds a red retaining bush.
+STEP 61
+ADD p32526-6 32526 yellow
+ADD p6558-6 6558 blue
+ADD p32054-5 32054 black
+CONNECT p6558-6.pin1 -> p32526-6.hole7 STIFF
+CONNECT p32054-5.pin1 -> p32526-6.hole6 STIFF
+CONNECT p6558-6.pin2 -> p40490-2.hole8 STIFF
+CONNECT p32054-5.pin2 -> p40490-2.hole9 STIFF
+WHY Fixes the first upright lift-arm support to the end of the yellow rail with two adjacent mounting pins.
+STEP 62
+ADD p3673-1 3673 lightgray
+ADD p3673-2 3673 lightgray
+ADD p2780-23 2780 black
+CONNECT p3673-1.pin1 -> p32526-6.hole1 TURNS
+CONNECT p3673-2.pin1 -> p32526-6.hole5 TURNS
+CONNECT p2780-23.pin1 -> p32526-6.hole3 STIFF
+WHY Gives the upright two frictionless lift-link pivots with a fixed center pin for the side rail.
