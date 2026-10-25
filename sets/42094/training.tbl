@@ -899,3 +899,259 @@ CONNECT p2780-12.pin2 -> p87082-6.hole1 STIFF
 CONNECT p60485-3.axle1 -> p32013-3.axlehole1 LOCKED
 CONNECT p11214-4.pin2 -> p64681-1.hole5 STIFF
 WHY Attaches the complete mirrored panel to the other side of the chassis and gearbox, locking its rear angle connector onto the remaining end of the upper grey cross shaft.
+
+STEP 86
+GROUP right-tail-lights
+ADD p98138-4 98138 transred
+ADD p98138-5 98138 transorange
+ADD p98138-6 98138 transclear
+ADD p4274-4 4274 lightgray
+ADD p4274-5 4274 lightgray
+ADD p4274-6 4274 lightgray
+ADD p18651-5 18651 black
+ADD p63869-4 63869 black
+ADD p25214-2 25214 yellow
+CONNECT p18651-5.axle2 -> p63869-4.axlehole1 LOCKED
+CONNECT p18651-5.axle1 -> p25214-2.? LOCKED
+CONNECT p4274-4.pin2 -> p63869-4.hole3 TURNS
+CONNECT p4274-5.pin2 -> p63869-4.hole2 TURNS
+CONNECT p4274-6.pin2 -> p63869-4.hole1 TURNS
+CONNECT p98138-6.? -> p4274-4.? STIFF
+CONNECT p98138-4.? -> p4274-5.? STIFF
+CONNECT p98138-5.? -> p4274-6.? STIFF
+END
+ATTACH right-tail-lights
+CONNECT p18651-5.pin1 -> p6536-2.hole1 STIFF
+WHY Builds the mirrored clear-red-orange lamp bar and pins its black axle-pin into the yellow rear connector while leaving its yellow elbow outside the lower bracket.
+
+STEP 87
+CONNECT p25214-2.? -> p32062-5.axle1 LOCKED
+WHY Swings the right lamp bar downward and seats its yellow elbow on the lower bracket's red axle to secure the mirrored lights.
+
+STEP 88
+GROUP left-side-arch
+ADD p32013-4 32013 black
+ADD p2780-28 2780 black
+ADD p43093-10 43093 blue
+ADD p27940-3 27940 darkgray
+ADD p25214-3 25214 yellow
+CONNECT p27940-3.axle1 -> p32013-4.axlehole1 LOCKED
+CONNECT p27940-3.axle2 -> p25214-3.? LOCKED
+CONNECT p43093-10.axle1 -> p25214-3.? LOCKED
+CONNECT p2780-28.pin1 -> p32013-4.hole1 STIFF
+END
+ATTACH left-side-arch
+CONNECT p43093-10.pin1 -> p64393-1.hole4 STIFF
+CONNECT p2780-28.pin2 -> p41239-4.hole11 STIFF
+GROUP right-side-arch
+ADD p32013-5 32013 black
+ADD p2780-29 2780 black
+ADD p43093-11 43093 blue
+ADD p27940-4 27940 darkgray
+ADD p25214-4 25214 yellow
+CONNECT p27940-4.axle2 -> p32013-5.axlehole1 LOCKED
+CONNECT p27940-4.axle1 -> p25214-4.? LOCKED
+CONNECT p43093-11.axle1 -> p25214-4.? LOCKED
+CONNECT p2780-29.pin2 -> p32013-5.hole1 STIFF
+END
+ATTACH right-side-arch
+CONNECT p43093-11.pin1 -> p64681-1.hole4 STIFF
+CONNECT p2780-29.pin1 -> p41239-3.hole11 STIFF
+WHY Builds two curved yellow-and-black side arches and pins each between the lower chassis rail and the exposed end of its decorated upper panel.
+
+STEP 89
+ADD p2780-30 2780 black
+ADD p2780-31 2780 black
+ADD p2780-32 2780 black
+ADD p2780-33 2780 black
+CONNECT p2780-30.pin1 -> p18938-1.hole1 STIFF
+CONNECT p2780-31.pin1 -> p18938-1.hole3 STIFF
+CONNECT p2780-32.pin2 -> p18938-1.hole4 STIFF
+CONNECT p2780-33.pin2 -> p18938-1.hole6 STIFF
+WHY Inserts four black friction pins into the outer round holes of the two turntable mounting beams for the cab assembly.
+
+STEP 90
+GROUP cab
+ADD p2780-34 2780 black
+ADD p18651-6 18651 black
+ADD p6629-1 6629 black
+CONNECT p18651-6.axle2 -> p6629-1.axlehole1 LOCKED
+CONNECT p2780-34.pin2 -> p6629-1.hole2 STIFF
+WHY Starts the cab with a black bent beam carrying an axle-pin at its cross-hole end and a black pin two holes farther along the straight section.
+
+STEP 91
+ADD p6629-2 6629 black
+CONNECT p18651-6.pin1 -> p6629-2.hole5 STIFF
+CONNECT p2780-34.pin1 -> p6629-2.hole7 STIFF
+WHY Pins the second bent black beam beneath the first at a right angle to create the cab's lower side and front frame.
+
+STEP 92
+ADD p2780-35 2780 black
+ADD p43857-2 43857 black
+CONNECT p2780-35.pin1 -> p43857-2.hole1 STIFF
+CONNECT p2780-35.pin2 -> p6629-1.hole6 STIFF
+WHY Adds a thin two-hole black mounting tab beneath the opposite end of the first bent beam with its free hole projecting outward.
+
+STEP 93
+ADD p44294-2 44294 yellow
+ADD p6553-2 6553 black
+ADD p60483-4 60483 lightgray
+CONNECT p44294-2.axle1 -> p60483-4.axlehole1 LOCKED
+CONNECT p44294-2.axle2 -> p6629-1.axlehole2 LOCKED
+CONNECT p44294-2.axle3 -> p6553-2.axlehole1 LOCKED
+WHY Passes the yellow seven-length cross shaft through the grey mounting tab and black beam, then locks the black offset axle connector above it with its own axle pointing into the cab.
+
+STEP 94
+ADD p2780-36 2780 black
+ADD p18654-8 18654 black
+ADD p32034-6 32034 darkgray
+CONNECT p2780-36.pin2 -> p32034-6.hole1 STIFF
+CONNECT p2780-36.pin1 -> p18654-8.hole1 STIFF
+CONNECT p18651-6.axle1 -> p32034-6.axlehole2 LOCKED
+WHY Builds a grey crosspiece with a black pin and spacer at its centre and locks one end onto the exposed axle-pin at the front corner of the cab frame.
+
+STEP 95
+ADD p32015-1 32015 black
+ADD p2780-37 2780 black
+ADD p22961-3 22961 lightgray
+CONNECT p22961-3.axle1 -> p32015-1.axlehole2~ LOCKED
+CONNECT p2780-37.pin2 -> p22961-3.hole1 STIFF
+CONNECT p2780-37.pin1 -> p6629-2.hole2 STIFF
+WHY Pins the grey axle-ended connector onto the sloping cab beam and locks the black angled connector onto it with its remaining cross hole pointing upward.
+
+STEP 96
+ADD p4519-6 4519 lightgray
+ADD p4519-7 4519 lightgray
+ADD p26287-2 26287 lightgray
+CONNECT p4519-6.axle1~ -> p26287-2.axlehole1 LOCKED
+CONNECT p4519-7.axle3~ -> p26287-2.axlehole1 LOCKED
+CONNECT p4519-6.axle2 -> p32015-1.hole1 TURNS
+CONNECT p4519-6.axle3 -> p6629-2.axlehole1 LOCKED
+WHY Joins two grey three-length axles with the long grey cross coupler and inserts the lower axle through the black corner connector into the cab beam's cross hole to form the upright post.
+
+STEP 97
+GROUP seat
+ADD p11947-1 11947 darkgray
+ADD p11946-1 11946 darkgray
+ADD p4519-8 4519 lightgray
+ADD p32316-1 32316 darkgray
+ADD p43857-3 43857 black
+ADD p2780-38 2780 black
+ADD p6558-18 6558 blue
+ADD p6558-19 6558 blue
+ADD p6558-20 6558 blue
+ADD p6558-21 6558 blue
+ADD p6558-22 6558 blue
+ADD p32140-5 32140 darkgray
+CONNECT p6558-18.pin1 -> p32140-5.hole3 STIFF
+CONNECT p2780-38.pin2 -> p32140-5.hole4 STIFF
+CONNECT p6558-18.pin2 -> p32316-1.hole5 STIFF
+CONNECT p6558-19.pin2 -> p32316-1.hole2 STIFF
+CONNECT p6558-20.pin2 -> p32316-1.hole1 STIFF
+CONNECT p6558-19.pin1 -> p11947-1.hole1 STIFF
+CONNECT p6558-20.pin1 -> p11947-1.hole2 STIFF
+CONNECT p6558-19.pin3 -> p11946-1.hole1 STIFF
+CONNECT p6558-20.pin3 -> p11946-1.hole2 STIFF
+CONNECT p6558-21.pin1 -> p32140-5.hole2 STIFF
+CONNECT p6558-22.pin1 -> p32140-5.hole1 STIFF
+CONNECT p6558-21.pin2 -> p43857-3.hole1 STIFF
+CONNECT p6558-22.pin2 -> p43857-3.hole2 STIFF
+CONNECT p4519-8.axle1 -> p32140-5.axlehole1 LOCKED
+END
+ATTACH seat
+CONNECT p2780-38.pin1 -> p6629-1.hole4 STIFF
+WHY Builds the seat from a five-hole backrest beam and paired grey fairings, braces its base with a black two-hole beam and grey axle, then pins the seat's side elbow onto the cab frame.
+
+STEP 98
+ADD p60484-1 60484 black
+CONNECT p44294-2.axle4 -> p60484-1.hole5 TURNS
+CONNECT p4519-8.axle2 -> p60484-1.hole1 TURNS
+WHY Slides the black T-shaped linkage over the yellow cross shaft and the seat's grey axle so both round-hole pivots remain free.
+
+STEP 99
+ADD p2780-39 2780 black
+ADD p32140-6 32140 darkgray
+CONNECT p6558-18.pin3 -> p32140-6.hole3 STIFF
+CONNECT p6558-21.pin3 -> p32140-6.hole2 STIFF
+CONNECT p6558-22.pin3 -> p32140-6.hole1 STIFF
+CONNECT p4519-8.axle3 -> p32140-6.axlehole1 LOCKED
+CONNECT p2780-39.pin2 -> p32140-6.hole4 STIFF
+WHY Closes the other side of the seat base with a matching grey elbow over the three blue pins and grey axle, adding a black pin to its upright mounting hole.
+
+STEP 100
+ADD p6553-3 6553 black
+CONNECT p44294-2.axle5 -> p6553-3.axlehole1 LOCKED
+WHY Locks the second black offset axle connector onto the yellow cross shaft with its projecting axle parallel to the first connector's axle.
+
+STEP 101
+ADD p2780-40 2780 black
+ADD p2780-41 2780 black
+ADD p18651-7 18651 black
+ADD p6629-3 6629 black
+CONNECT p18651-7.axle2 -> p6629-3.axlehole1 LOCKED
+CONNECT p2780-41.pin1 -> p6629-3.hole2 STIFF
+CONNECT p2780-40.pin1 -> p6629-3.hole6 STIFF
+CONNECT p44294-2.axle6 -> p6629-3.axlehole2 LOCKED
+CONNECT p2780-39.pin1 -> p6629-3.hole4 STIFF
+CONNECT p18651-7.axle1 -> p32034-6.axlehole1 LOCKED
+WHY Adds the opposite lower bent beam with two black pins and an axle-pin, locking it onto the yellow cross shaft and grey front crosspiece while securing the seat's second mounting pin.
+
+STEP 102
+ADD p32015-2 32015 black
+ADD p6629-4 6629 black
+ADD p2780-42 2780 black
+ADD p22961-4 22961 lightgray
+CONNECT p22961-4.axle1 -> p32015-2.axlehole2~ LOCKED
+CONNECT p2780-42.pin1 -> p22961-4.hole1 STIFF
+CONNECT p2780-42.pin2 -> p6629-4.hole2 STIFF
+CONNECT p18651-7.pin1 -> p6629-4.hole5 STIFF
+CONNECT p2780-41.pin2 -> p6629-4.hole7 STIFF
+CONNECT p4519-7.axle1 -> p6629-4.axlehole1 LOCKED
+CONNECT p4519-7.axle2 -> p32015-2.hole1 TURNS
+WHY Completes the opposite cab side with a bent black beam and grey axle-ended bracket, securing it to the lower pins and the free end of the grey upright cross shaft.
+
+STEP 103
+WHY Turns the complete cab frame upright with the seat facing forward and the yellow transverse shaft along its lower edge for the front guard assembly.
+
+STEP 104
+GROUP front-guard
+ADD p6632-1 6632 black
+ADD p18651-8 18651 black
+ADD p18651-9 18651 black
+CONNECT p18651-8.axle2 -> p6632-1.axlehole2 LOCKED
+CONNECT p18651-9.axle2 -> p6632-1.axlehole1 LOCKED
+WHY Starts the cab's front guard with two long black axle-pins locked through the cross holes of a thin three-hole beam and pointing the same way.
+
+STEP 105
+ADD p25214-5 25214 black
+ADD p25214-6 25214 black
+ADD p32065-1 32065 black
+CONNECT p18651-8.axle2 -> p32065-1.hole7 TURNS
+CONNECT p18651-9.axle2 -> p32065-1.hole5 TURNS
+CONNECT p18651-8.axle1 -> p25214-5.? LOCKED
+CONNECT p18651-9.axle1 -> p25214-6.? LOCKED
+WHY Slides the thin seven-hole beam over the two shafts and locks a black curved elbow onto each exposed cross end.
+
+STEP 106
+ADD p6632-2 6632 black
+ADD p18651-10 18651 black
+ADD p18651-11 18651 black
+ADD p25214-7 25214 black
+ADD p25214-8 25214 black
+CONNECT p18651-10.axle2 -> p6632-2.axlehole2 LOCKED
+CONNECT p18651-11.axle2 -> p6632-2.axlehole1 LOCKED
+CONNECT p18651-10.axle2 -> p32065-1.hole3 TURNS
+CONNECT p18651-11.axle2 -> p32065-1.hole1 TURNS
+CONNECT p18651-10.axle1 -> p25214-7.? LOCKED
+CONNECT p18651-11.axle1 -> p25214-8.? LOCKED
+WHY Builds the matching two-shaft unit on the other half of the seven-hole beam and fits two more black elbows so all four curves face the same direction.
+
+STEP 107
+ADD p2853-1 2853 lightgray
+ADD p2853-2 2853 lightgray
+ADD p32065-2 32065 black
+CONNECT p2853-1.axle1 -> p32065-2.hole7 TURNS
+CONNECT p2853-2.axle1 -> p32065-2.hole1 TURNS
+CONNECT p2853-1.axle2 -> p25214-5.? LOCKED
+CONNECT p2853-2.axle2 -> p25214-8.? LOCKED
+WHY Bridges the four curved elbows with the second thin seven-hole beam and holds its outer ends with grey crankshaft pieces whose cross sockets face outward.
