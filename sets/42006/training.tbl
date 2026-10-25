@@ -1237,3 +1237,397 @@ CONNECT p32054-24.pin1 -> p32526-13.hole1 STIFF
 CONNECT p2780-53.pin1 -> p32278-7.hole9 STIFF
 CONNECT p32054-24.pin2 -> p32278-7.hole5 STIFF
 WHY Adds a yellow L-beam brace partway along the long boom rail using a black pin and a grey long pin four holes apart.
+STEP 64
+GROUP boom-drive-extension
+ADD p32278-8 32278 yellow
+ADD p2780-54 2780 black
+ADD p2780-55 2780 black
+ADD p2780-56 2780 black
+ADD p32526-14 32526 yellow
+ADD p87082-2 87082 lightgray
+ADD p87082-3 87082 lightgray
+CONNECT p2780-54.pin2 -> p32278-8.hole1 STIFF
+CONNECT p2780-55.pin2 -> p32278-8.hole7 STIFF
+CONNECT p2780-56.pin2 -> p32278-8.hole11 STIFF
+CONNECT p2780-55.pin1 -> p32526-14.hole1 STIFF
+CONNECT p2780-56.pin1 -> p32526-14.hole5 STIFF
+CONNECT p87082-2.pin1 -> p32278-8.hole15 STIFF
+CONNECT p87082-3.pin1 -> p32278-8.hole2 STIFF
+ADD p3737-1 3737 black
+ADD p59443-9 59443 darkgray
+ADD p59443-10 59443 darkgray
+ADD p4519-5 4519 lightgray
+ADD p4519-6 4519 lightgray
+ADD p6589-7 6589 tan
+CONNECT p3737-1.axle10 -> p59443-9.axlehole2 LOCKED
+CONNECT p3737-1.axle1 -> p59443-10.axlehole1 LOCKED
+CONNECT p4519-5.axle3 -> p59443-9.axlehole1 LOCKED
+CONNECT p4519-5.axle2 -> p87082-3.hole1 TURNS
+CONNECT p4519-6.axle1 -> p59443-10.axlehole2 LOCKED
+CONNECT p4519-6.axle2 -> p87082-2.hole1 TURNS
+CONNECT p4519-6.axle3 -> p6589-7.axlehole1 LOCKED
+ADD p59443-11 59443 darkgray
+ADD p4519-7 4519 lightgray
+ADD p59426-5 59426 darkgray
+ADD p61903-1 61903 lightgray
+CONNECT p4519-7.axle3 -> p59443-11.axlehole1 LOCKED
+CONNECT p59426-5.axle1 -> p59443-11.axlehole2 LOCKED
+CONNECT p59426-5.axle5 -> p61903-1.axlehole1 LOCKED
+CONNECT p4519-5.axle1 -> p61903-1.axlehole2 LOCKED
+ADD p32278-9 32278 yellow
+ADD p2780-57 2780 black
+ADD p2780-58 2780 black
+ADD p2780-59 2780 black
+CONNECT p87082-2.pin2 -> p32278-9.hole15 STIFF
+CONNECT p87082-3.pin2 -> p32278-9.hole2 STIFF
+CONNECT p2780-57.pin1 -> p32278-9.hole11 STIFF
+CONNECT p2780-58.pin1 -> p32278-9.hole7 STIFF
+CONNECT p2780-59.pin1 -> p32278-9.hole1 STIFF
+END
+ATTACH boom-drive-extension
+CONNECT p2780-54.pin1 -> p32278-7.hole10 STIFF
+CONNECT p4519-7.axle1 -> p32494-2.axlehole1 LOCKED
+WHY Builds the long pin-braced boom extension around a ten-length drive shaft with round support bearings and a universal joint, then plugs the grey shaft into the existing CV socket.
+STEP 65
+GROUP opposite-boom-extension
+ADD p32250-4 32250 yellow
+ADD p2780-60 2780 black
+ADD p32073-5 32073 lightgray
+ADD p32017-2 32017 yellow
+ADD p32278-10 32278 yellow
+ADD p2853-2 2853 yellow
+ADD p32054-25 32054 lightgray
+ADD p32054-26 32054 lightgray
+ADD p32138-2 32138 black
+ADD p3713-11 3713 lightgray
+ADD p32278-11 32278 yellow
+ADD p2780-61 2780 black
+ADD p2780-62 2780 black
+ADD p2780-63 2780 black
+CONNECT p32073-5.axle1 -> p32250-4.axlehole1 LOCKED
+CONNECT p2780-60.pin1 -> p32250-4.hole2 STIFF
+CONNECT p32073-5.axle1 -> p32017-2.hole5 TURNS
+CONNECT p2780-60.pin1 -> p32017-2.hole4 STIFF
+CONNECT p2780-60.pin2 -> p32278-10.hole1 STIFF
+CONNECT p32073-5.axle2 -> p32278-10.hole2 TURNS
+CONNECT p2853-2.axle1 -> p32250-4.axlehole2 LOCKED
+CONNECT p32054-25.pin1 -> p32278-10.hole5 STIFF
+CONNECT p32054-26.pin1 -> p32278-10.hole11 STIFF
+CONNECT p32138-2.pin3 -> p32278-10.hole10 STIFF
+CONNECT p32138-2.pin4 -> p32278-10.hole9 STIFF
+CONNECT p32073-5.axle3~ -> p3713-11.axlehole1 LOCKED
+CONNECT p32138-2.pin1 -> p32278-11.hole10 STIFF
+CONNECT p32138-2.pin2 -> p32278-11.hole9 STIFF
+CONNECT p32073-5.axle4 -> p32278-11.hole2 TURNS
+CONNECT p2780-61.pin1 -> p32278-11.hole1 STIFF
+CONNECT p2780-62.pin1 -> p32278-11.hole5 STIFF
+CONNECT p2780-63.pin1 -> p32278-11.hole11 STIFF
+END
+ATTACH opposite-boom-extension
+CONNECT p32054-26.pin2 -> p32526-14.hole7 STIFF
+CONNECT p32054-25.pin2 -> p32278-7.hole15 STIFF
+WHY Builds the other twin-rail boom section with a curved end plate and a bushed five-length cross shaft, then fits its two grey long pins into the existing boom brace and rail.
+STEP 66
+ADD p32526-15 32526 yellow
+CONNECT p2780-57.pin2 -> p32526-15.hole5 STIFF
+CONNECT p2780-58.pin2 -> p32526-15.hole1 STIFF
+WHY Adds the matching yellow L-beam brace over the two exposed black pins on the far side of the long boom extension.
+STEP 67
+GROUP stick-actuator
+ADD p61927b-2 61927b lightgray
+ADD p61904-2 61904 darkgray
+ADD p32062-9 32062 red
+ADD p32062-10 32062 red
+ADD p3707-1 3707 black
+ADD p59443-12 59443 darkgray
+ADD p59426-6 59426 darkgray
+ADD p61903-2 61903 lightgray
+ADD p4519-8 4519 lightgray
+CONNECT p32062-10.axle1 -> p61904-2.axlehole1 LOCKED
+CONNECT p32062-10.axle2 -> p61927b-2.axlehole2 LOCKED
+CONNECT p32062-9.axle1 -> p61904-2.? LOCKED
+CONNECT p3707-1.axle1 -> p59443-12.axlehole2 LOCKED
+CONNECT p59426-6.axle1 -> p59443-12.axlehole1 LOCKED
+CONNECT p59426-6.axle5 -> p61903-2.axlehole1 LOCKED
+CONNECT p4519-8.axle3 -> p61903-2.axlehole2 LOCKED
+CONNECT p4519-8.axle2 -> p61904-2.hole5 TURNS
+CONNECT p4519-8.axle1 -> p61927b-2.axlehole1 LOCKED
+END
+ATTACH stick-actuator
+CONNECT p2853-2.axle2 -> p61904-2.? TURNS
+CONNECT p3707-1.axle8 -> p32494-1.axlehole1 LOCKED
+WHY Captures the second large actuator in its holder, adds the universal-jointed drive extension, and mounts it above the boom with the long black drive axle in the remaining CV socket.
+STEP 68
+GROUP upper-boom-link
+ADD p41239-2 41239 yellow
+ADD p41239-3 41239 yellow
+ADD p32073-6 32073 lightgray
+ADD p3713-12 3713 lightgray
+ADD p87082-4 87082 lightgray
+CONNECT p32073-6.axle4 -> p41239-2.hole2 TURNS
+CONNECT p32073-6.axle3~ -> p3713-12.axlehole1 LOCKED
+CONNECT p87082-4.pin1 -> p41239-2.hole12 STIFF
+CONNECT p32073-6.axle2~ -> p41239-3.hole2 TURNS
+CONNECT p87082-4.pin2~ -> p41239-3.hole12 STIFF
+END
+ATTACH upper-boom-link
+CONNECT p32073-6.axle5 -> p32250-4.axlehole3 LOCKED
+CONNECT p32073-6.axle5 -> p32017-2.hole1 TURNS
+WHY Builds a paired thirteen-hole link around a bushed five-length axle and grey pin hub, then keys its protruding axle into the upper cross hole of the curved boom joint plate.
+STEP 69
+ADD p4519-9 4519 lightgray
+CONNECT p4519-9.axle2 -> p32140-1.axlehole1 LOCKED
+CONNECT p4519-9.axle1~ -> p41239-2.hole13 TURNS
+CONNECT p4519-9.axle3 -> p41239-3.hole13 TURNS
+WHY Pushes a three-length grey axle through the free end holes of both thirteen-hole links and the cross hole of the central yellow L beam.
+STEP 70
+ADD p32250-5 32250 yellow
+CONNECT p32073-5.axle5 -> p32250-5.axlehole1 LOCKED
+CONNECT p32073-6.axle1 -> p32250-5.axlehole3 LOCKED
+CONNECT p2780-61.pin2 -> p32250-5.hole2 STIFF
+WHY Closes the other side of the boom joint with a curved yellow plate over the two grey shaft ends and the black pin between them.
+STEP 71
+ADD p32017-3 32017 yellow
+ADD p2853-3 2853 yellow
+CONNECT p32073-6.axle1 -> p32017-3.hole1 TURNS
+CONNECT p2780-61.pin2 -> p32017-3.hole4 STIFF
+CONNECT p32073-5.axle5 -> p32017-3.hole5 TURNS
+CONNECT p2853-3.axle1 -> p32250-5.axlehole2 LOCKED
+WHY Adds the thin five-hole reinforcing strip and matching yellow crankshaft on the outer face of the curved boom joint plate.
+STEP 72
+ADD p32526-16 32526 yellow
+ADD p32278-12 32278 yellow
+ADD p2780-64 2780 black
+ADD p2780-65 2780 black
+CONNECT p2780-64.pin2 -> p32526-16.hole1 STIFF
+CONNECT p2780-65.pin2 -> p32526-16.hole5 STIFF
+CONNECT p2780-64.pin1 -> p32278-12.hole5 STIFF
+CONNECT p2780-65.pin1 -> p32278-12.hole9 STIFF
+CONNECT p6558-37.pin2 -> p32278-12.hole1 STIFF
+CONNECT p2780-52.pin2 -> p32278-12.hole2 STIFF
+CONNECT p2780-59.pin2 -> p32278-12.hole10 STIFF
+CONNECT p2780-62.pin2 -> p32278-12.hole15 STIFF
+WHY Builds the last long yellow boom rail with its L-beam brace and fits it over the four exposed pins along the open side of the boom.
+STEP 73
+ADD p32250-6 32250 yellow
+ADD p43093-8 43093 blue
+CONNECT p43093-8.axle1 -> p32250-6.axlehole3 LOCKED
+CONNECT p44294-2.axle1 -> p32250-6.axlehole1 LOCKED
+CONNECT p6558-37.pin3 -> p32250-6.hole2 STIFF
+CONNECT p43093-8.pin1 -> p32278-12.hole4 STIFF
+WHY Adds the last curved root plate over the long grey cross shaft and blue pin, with a blue axle pin connecting its far corner to the long boom rail.
+STEP 74
+ADD p32017-4 32017 yellow
+ADD p2853-4 2853 yellow
+CONNECT p44294-2.axle1 -> p32017-4.hole1 TURNS
+CONNECT p6558-37.pin3 -> p32017-4.hole2 STIFF
+CONNECT p43093-8.axle1 -> p32017-4.hole5 TURNS
+CONNECT p2853-4.axle1 -> p32250-6.axlehole2 LOCKED
+CONNECT p2853-4.axle1 -> p32250-3.axlehole1 LOCKED
+CONNECT p2853-4.axle2 -> p32056-2.axlehole1 LOCKED
+WHY Finishes the outer root reinforcement with a thin five-hole strip and a yellow crankshaft through the two curved plates and inner thin L plate.
+STEP 75
+GROUP outer-stick
+ADD p32056-3 32056 yellow
+ADD p59426-7 59426 darkgray
+ADD p32073-7 32073 lightgray
+ADD p32250-7 32250 yellow
+CONNECT p59426-7.axle1 -> p32056-3.axlehole2 LOCKED
+CONNECT p32073-7.axle1 -> p32056-3.axlehole3 LOCKED
+CONNECT p32073-7.axle1 -> p32250-7.axlehole2 LOCKED
+ADD p32063-1 32063 lightgray
+ADD p2780-66 2780 black
+ADD p2780-67 2780 black
+ADD p32017-5 32017 yellow
+ADD p4274-1 4274 lightgray
+CONNECT p2780-66.pin1 -> p32063-1.hole1 STIFF
+CONNECT p2780-67.pin1 -> p32063-1.hole3 STIFF
+CONNECT p2780-66.pin1 -> p32017-5.hole5 STIFF
+CONNECT p2780-67.pin1 -> p32017-5.hole3 STIFF
+CONNECT p4274-1.pin1 -> p32063-1.hole5 TURNS
+CONNECT p4274-1.pin2 -> p32017-5.hole1 TURNS
+CONNECT p59426-7.axle1 -> p32063-1.hole6 TURNS
+ADD p99773-1 99773 yellow
+CONNECT p32073-7.axle2 -> p99773-1.axlehole2 LOCKED
+CONNECT p59426-7.axle2 -> p99773-1.hole4 TURNS
+ADD p87407-4 87407 lightgray
+ADD p3713-13 3713 lightgray
+CONNECT p59426-7.axle3 -> p87407-4.hole1 TURNS
+CONNECT p59426-7.axle4~ -> p3713-13.axlehole1 LOCKED
+ADD p43093-9 43093 blue
+ADD p43093-10 43093 blue
+CONNECT p43093-9.axle1 -> p32250-7.axlehole1 LOCKED
+CONNECT p43093-9.axle1 -> p32056-3.axlehole1 LOCKED
+CONNECT p43093-10.axle1 -> p32250-7.axlehole3 LOCKED
+ADD p41239-4 41239 yellow
+ADD p2780-68 2780 black
+ADD p87082-5 87082 lightgray
+CONNECT p43093-9.pin1 -> p41239-4.hole1 STIFF
+CONNECT p43093-10.pin1 -> p41239-4.hole5 STIFF
+CONNECT p2780-68.pin2 -> p41239-4.hole13 STIFF
+CONNECT p87082-5.pin1 -> p41239-4.hole12 STIFF
+GROUP stick-inner-lever
+ADD p32525-5 32525 yellow
+ADD p32002-1 32002 tan
+ADD p32002-2 32002 tan
+ADD p32002-3 32002 tan
+ADD p32002-4 32002 tan
+CONNECT p32002-1.pin2 -> p32525-5.hole11 STIFF
+CONNECT p32002-2.pin2 -> p32525-5.hole9 STIFF
+CONNECT p32002-3.pin1 -> p32525-5.hole10 STIFF
+CONNECT p32002-4.pin1 -> p32525-5.hole8 STIFF
+ADD p6558-38 6558 blue
+ADD p6558-39 6558 blue
+CONNECT p6558-38.pin2 -> p32525-5.hole2 STIFF
+CONNECT p6558-39.pin2 -> p32525-5.hole1 STIFF
+ADD p32523-8 32523 yellow
+ADD p32017-6 32017 yellow
+CONNECT p6558-38.pin3 -> p32523-8.hole3 STIFF
+CONNECT p6558-39.pin3 -> p32523-8.hole2 STIFF
+CONNECT p32002-1.pin1 -> p32017-6.hole4 STIFF
+CONNECT p32002-2.pin1 -> p32017-6.hole2 STIFF
+CONNECT p32002-3.pin2 -> p32017-6.hole3 STIFF
+CONNECT p32002-4.pin2 -> p32017-6.hole1 STIFF
+ADD p3705-4 3705 black
+ADD p32184-2 32184 lightgray
+CONNECT p3705-4.axle2 -> p32184-2.axlehole1 LOCKED
+CONNECT p3705-4.axle1 -> p32523-8.hole1 TURNS
+ADD p32523-9 32523 yellow
+CONNECT p6558-38.pin1 -> p32523-9.hole3 STIFF
+CONNECT p6558-39.pin1 -> p32523-9.hole2 STIFF
+CONNECT p3705-4.axle4 -> p32523-9.hole1 TURNS
+END
+ATTACH stick-inner-lever
+CONNECT p32073-7.axle2 -> p32017-6.hole5 TURNS
+ADD p4519-10 4519 lightgray
+ADD p42003-1 42003 yellow
+ADD p59443-13 59443 darkgray
+ADD p6589-8 6589 tan
+ADD p3707-2 3707 black
+ADD p59443-14 59443 darkgray
+CONNECT p4519-10.axle1 -> p59443-13.axlehole2 LOCKED
+CONNECT p4519-10.axle2 -> p42003-1.hole2 TURNS
+CONNECT p4519-10.axle3 -> p6589-8.axlehole1 LOCKED
+CONNECT p3707-2.axle8 -> p59443-13.axlehole1 LOCKED
+CONNECT p3707-2.axle1 -> p59443-14.axlehole2 LOCKED
+CONNECT p32073-7.axle3 -> p42003-1.axlehole1 LOCKED
+MESH p87407-4.teeth p6589-8.teeth
+RATIO p87407-4 p6589-8 5/3
+ADD p32017-7 32017 yellow
+ADD p3705-5 3705 black
+ADD p6589-9 6589 tan
+CONNECT p32002-1.pin2 -> p32017-7.hole4 STIFF
+CONNECT p32002-2.pin2 -> p32017-7.hole2 STIFF
+CONNECT p32002-3.pin1 -> p32017-7.hole3 STIFF
+CONNECT p32002-4.pin1 -> p32017-7.hole1 STIFF
+CONNECT p32073-7.axle4 -> p32017-7.hole5 TURNS
+CONNECT p3705-5.axle4 -> p59443-14.axlehole1 LOCKED
+CONNECT p3705-5.axle3 -> p87082-5.hole1 TURNS
+CONNECT p3705-5.axle2 -> p32184-2.hole1 TURNS
+CONNECT p3705-5.axle1 -> p6589-9.axlehole1 LOCKED
+ADD p4519-11 4519 lightgray
+ADD p3713-14 3713 lightgray
+ADD p6632-1 6632 yellow
+ADD p6632-2 6632 yellow
+CONNECT p4519-11.axle2~ -> p3713-14.axlehole1 LOCKED
+CONNECT p4519-11.axle1 -> p6632-1.axlehole2 LOCKED
+CONNECT p4519-11.axle3 -> p6632-2.axlehole2 LOCKED
+CONNECT p4519-11.axle1 -> p99773-1.axlehole1 LOCKED
+ADD p99773-2 99773 yellow
+CONNECT p4519-11.axle3 -> p99773-2.axlehole1 LOCKED
+CONNECT p32073-7.axle4 -> p99773-2.axlehole2 LOCKED
+CONNECT p59426-7.pin1 -> p99773-2.hole4 TURNS
+ADD p32250-8 32250 yellow
+ADD p43093-11 43093 blue
+ADD p43093-12 43093 blue
+ADD p41239-5 41239 yellow
+ADD p2780-69 2780 black
+CONNECT p43093-11.axle1 -> p32250-8.axlehole3 LOCKED
+CONNECT p43093-12.axle1 -> p32250-8.axlehole1 LOCKED
+CONNECT p32073-7.axle5 -> p32250-8.axlehole2 LOCKED
+CONNECT p43093-11.pin1 -> p41239-5.hole5 STIFF
+CONNECT p43093-12.pin1 -> p41239-5.hole1 STIFF
+CONNECT p87082-5.pin2 -> p41239-5.hole12 STIFF
+CONNECT p2780-69.pin1 -> p41239-5.hole13 STIFF
+ADD p43093-13 43093 blue
+ADD p99773-3 99773 yellow
+CONNECT p43093-13.axle1 -> p99773-3.axlehole2 LOCKED
+CONNECT p2780-69.pin2 -> p99773-3.hole2 STIFF
+CONNECT p3705-4.axle4 -> p99773-3.hole3 TURNS
+CONNECT p43093-13.pin1 -> p41239-5.hole11 STIFF
+END
+ATTACH outer-stick
+CONNECT p2780-66.pin2 -> p32278-8.hole12 STIFF
+CONNECT p2780-67.pin2 -> p32278-8.hole14 STIFF
+MESH p6589-7.teeth p87407-4.teeth
+RATIO p6589-7 p87407-4 3/5
+WHY Builds the outer stick around its free bevel-transfer gear and long grabber drive shaft, braces the inner lever with alternating short tan pins, and mounts the stick on the two boom pins with its bevel gear meshing at the elbow.
+
+STEP 76
+ADD p32062-11 32062 red
+CONNECT p32062-11.axle1 -> p6632-2.axlehole1 LOCKED
+CONNECT p32062-11.axle2 -> p6632-1.axlehole1 LOCKED
+CONNECT p32062-11.axle1~ -> p61927b-2.hole2~ TURNS
+WHY Joins the extended stick actuator rod to the two thin yellow links with the red axle, leaving the rod eye free to pivot as the stick folds.
+
+STEP 77
+GROUP boom-side-strip
+ADD p32063-2 32063 lightgray
+ADD p32017-8 32017 yellow
+ADD p2780-70 2780 black
+ADD p2780-71 2780 black
+ADD p4274-2 4274 lightgray
+CONNECT p2780-70.pin2 -> p32063-2.hole3 STIFF
+CONNECT p2780-70.pin2 -> p32017-8.hole3 STIFF
+CONNECT p2780-71.pin2 -> p32063-2.hole1 STIFF
+CONNECT p2780-71.pin2 -> p32017-8.hole5 STIFF
+CONNECT p4274-2.pin1 -> p32063-2.hole5 TURNS
+CONNECT p4274-2.pin2 -> p32017-8.hole1 TURNS
+END
+ATTACH boom-side-strip
+CONNECT p2780-70.pin1 -> p32278-9.hole14 STIFF
+CONNECT p2780-71.pin1 -> p32278-9.hole12 STIFF
+CONNECT p59426-7.pin1 -> p32063-2.hole6 TURNS
+WHY Closes the other side of the boom with the paired thin strips, placing the two black pins two holes apart and leaving the projecting tan pin in a round bearing.
+
+STEP 78
+ADD p32056-4 32056 yellow
+CONNECT p43093-12.axle1 -> p32056-4.axlehole1 LOCKED
+CONNECT p59426-7.axle5 -> p32056-4.axlehole2 LOCKED
+CONNECT p32073-7.axle5 -> p32056-4.axlehole3 LOCKED
+WHY Fits the thin bent yellow plate over the three exposed cross shafts at the elbow to tie the outside ends together.
+END
+
+STEP 79
+ATTACH boom
+CONNECT p44294-3.axle7 -> p32009-1.hole4 TURNS
+MESH p6589-2.teeth p87407-2.teeth
+RATIO p6589-2 p87407-2 3/5
+MESH p6589-3.teeth p87407-3.teeth
+RATIO p6589-3 p87407-3 3/5
+WHY Lowers the complete boom onto the chassis pivot and brings its two free transfer gears into mesh with the chassis drive gears.
+
+STEP 80
+GROUP right-boom-support
+ADD p32009-3 32009 yellow
+ADD p6558-40 6558 blue
+ADD p43093-14 43093 blue
+ADD p2780-72 2780 black
+CONNECT p43093-14.axle1 -> p32009-3.axlehole1 LOCKED
+CONNECT p6558-40.pin2 -> p32009-3.hole1 STIFF
+CONNECT p2780-72.pin2 -> p32009-3.hole2 STIFF
+END
+ATTACH right-boom-support
+CONNECT p44294-3.axle1 -> p32009-3.hole4 TURNS
+CONNECT p60485-4.axle8 -> p32009-3.axlehole2 LOCKED
+CONNECT p6558-40.pin3 -> p48989-1.hole1 STIFF
+WHY Adds the bent right chassis support over the boom pivot and the lower cross shaft, retaining the pivot while leaving it free to turn.
+
+STEP 81
+ADD p87083-7 87083 darkgray
+ADD p3713-15 3713 lightgray
+CONNECT p87083-7.axle2 -> p32526-13.hole7 TURNS
+CONNECT p87083-7.axle4 -> p32526-16.hole7 TURNS
+CONNECT p87083-7.axle3~ -> p61927b-1.hole2~ TURNS
+CONNECT p87083-7.axle1~ -> p3713-15.axlehole1 LOCKED
+WHY Pins the lift actuator rod between the two boom braces and adds the bush to stop the axle sliding out while the rod eye pivots.
