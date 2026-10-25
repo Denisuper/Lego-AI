@@ -4699,3 +4699,96 @@ END
 ATTACH bm
 CONNECT bm-beam7-2.hole5~ -> bl-lbeam-1.hole1~ STIFF
 WHY Builds a lamp bracket in eight small steps from a long tan axle with an end cap, two 7-beams, a connector beam, pins and bushes, and fixes it onto the bed's rear corner with a red pin.
+STEP 545
+GROUP bn
+ADD bn-axle32-1 6587 darktan
+ADD bn-beam7-1 32524 darkgray
+ADD bn-beam7-2 32524 darkgray
+ADD bn-cb-1 39793 lightgray
+ADD bn-axle3-1 4519 lightgray
+ADD bn-bush-1 3713 black
+ADD bn-bush-2 3713 black
+ADD bn-cap-1 6141 tan
+ADD bn-pin-1 61332 black
+ADD bn-pin-2 61332 black
+ADD bn-lpin-1 11214 red
+ADD bn-block-1 42135 black
+CONNECT bn-cap-1.stud1? -> bn-axle32-1.axle1 STIFF
+CONNECT bn-beam7-1.hole1~ -> bn-axle32-1.axle2~ TURNS
+CONNECT bn-beam7-2.hole1~ -> bn-axle32-1.axle3~ TURNS
+CONNECT bn-cb-1.hole1~ -> bn-beam7-1.hole3~ STIFF
+CONNECT bn-pin-1.pin1 -> bn-cb-1.hole2~ STIFF
+CONNECT bn-pin-2.pin1 -> bn-cb-1.hole3~ STIFF
+CONNECT bn-axle3-1.axle1 -> bn-cb-1.axlehole1? LOCKED
+CONNECT bn-bush-1.axlehole1 -> bn-axle3-1.axle3 LOCKED
+CONNECT bn-bush-2.axlehole1 -> bn-pin-1.axle1? LOCKED
+CONNECT bn-block-1.axlehole1 -> bn-lpin-1.axle1 LOCKED
+END
+ATTACH bn
+CONNECT bn-beam7-2.hole5~ -> bm-beam7-1.hole1~ STIFF
+WHY Builds the matching lamp bracket for the other end of the bed in eight small steps, the same as step 544, and fixes it on.
+STEP 546
+GROUP bo
+ADD bo-plate-1 3023 black
+ADD bo-plate-2 3023 black
+ADD bo-plate-3 3710 black
+ADD bo-slope-1 54200 transorange
+ADD bo-round-1 98138 transorange
+ADD bo-tile-1 3070b transorange
+ADD bo-round-2 98138 black
+CONNECT bo-plate-3.stud1? -> bo-plate-1.stud1? STIFF
+CONNECT bo-slope-1.stud1? -> bo-plate-3.stud1? STIFF
+CONNECT bo-round-1.stud1? -> bo-plate-3.stud3? STIFF
+CONNECT bo-tile-1.stud1? -> bo-plate-2.stud1? STIFF
+CONNECT bo-round-2.stud1? -> bo-plate-2.stud2? STIFF
+END
+ATTACH bo
+CONNECT bo-plate-1.stud1? -> bn-block-1.stud1? STIFF
+WHY Builds two amber side-marker lamps (a sloped orange piece, a round orange piece and black plates) in four small steps each and sets them on both ends of the bed.
+STEP 547
+ADD bp-bpin-1 43093 blue
+ADD bp-bpin-2 43093 blue
+CONNECT bp-bpin-1.pin1 -> bj-lbeam-1.hole2~ STIFF
+CONNECT bp-bpin-2.pin1 -> bl-lbeam-1.hole2~ STIFF
+WHY Turns the bed over and pushes two blue pins into the underside of the corner steps.
+STEP 548
+WHY Turns the bed round to show its underside before it is fitted to the chassis.
+STEP 549
+ATTACH bb2
+CONNECT bi-beam3-1.hole2~ -> fb-bpin-1.pin2~ STIFF
+CONNECT bk-beam3-1.hole2~ -> fb-bpin-2.pin2~ STIFF
+WHY Lowers the finished truck bed onto the back of the chassis with the blue pins going into the frame, as the yellow arrows show.
+STEP 550
+ADD bq-beam11-1 32525 darkgray
+CONNECT bq-beam11-1.hole1~ -> se2-beam11-1.hole1~ STIFF
+CONNECT bq-beam11-1.hole11~ -> bk-beam3-1.hole1~ STIFF
+WHY An 11-long grey beam is fitted along the side of the chassis under the cab to hold the bed down.
+STEP 551
+ADD bq-beam11-2 32525 darkgray
+CONNECT bq-beam11-2.hole1~ -> se2-beam11-1.hole11~ STIFF
+CONNECT bq-beam11-2.hole11~ -> bl-lbeam-1.hole1~ STIFF
+WHY A second 11-long grey beam is fitted along the other side of the chassis, and the truck is turned the other way.
+STEP 552
+WHY Swings the whole cab forward and down so it sits on the chassis, as the yellow arrow shows.
+STEP 553
+GROUP mu
+ADD mu-bpin-1 43093 blue
+ADD mu-tpin-1 4274 lightgray
+CONNECT mu-bpin-1.pin1 -> mu-tpin-1.pin2? STIFF
+WHY Bag 6 starts the mudguard brackets for the wheels with a blue pin on a light grey pin.
+STEP 554
+ADD mu-plate-1 18677 black
+ADD mu-plate-2 18677 black
+CONNECT mu-plate-1.hole1~ -> mu-tpin-1.pin1 STIFF
+CONNECT mu-plate-2.hole1~ -> mu-tpin-1.pin1~ STIFF
+WHY Two black pin-hole plates are put on the grey pin.
+STEP 555
+ADD mu-plate-3 3020 black
+CONNECT mu-plate-3.stud1? -> mu-plate-1.stud1? STIFF
+WHY A black 2x4 plate goes on top of the two small plates.
+STEP 556
+WHY Turns the bracket over to show its far side.
+STEP 557
+ATTACH mu
+CONNECT mu-bpin-1.pin2 -> bq-beam11-1.hole5~ STIFF
+WHY Fixes the finished bracket on the side of the chassis beside the front wheel position.
