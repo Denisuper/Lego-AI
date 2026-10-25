@@ -115,6 +115,8 @@ How to read a build: find the input (knob, crank, pump), follow the motion throu
 3. Later: GRPO (TRL) with check_notation.py's two-stage critiques as the reward — scalar mean plus verbal feedback, per "Reward format" above. Stage 1 filters; stage 2 scores survivors.
 
 ## Status (Oct 24, 2026)
+- 42133 (Telehandler, 143 pieces, 59 steps): complete booklet transcription in training.tbl + training.jsonl; exact inventory match by part and colour; 0 checker errors. There are 96 estimated (~) endpoint references and 16 unknown (?) references, including wheel/tyre/stud interfaces absent from the catalog. The checker also emits 142 UNREFERENCED_PART warnings; this is not a fully verified motion model. Original booklet.pdf is preserved; booklet-compressed.pdf is a 220 dpi reading copy (24.2% smaller).
+- 42117 (Race Plane, 154 pieces): original booklet and Rebrickable parts list downloaded; compressed reading copy made (27.8% smaller); transcription next.
 - 8047 and 42175 (Volvo EC230, 199 steps, all 731 parts) are done: booklet, parts list, training.tbl, training.jsonl.
 - 42175 joins: about 276 are `~` estimates and 326 are `?`. Steps 13-31 were re-counted at high zoom; steps 32-199 not yet. Most open joins are holes hidden behind other parts in the booklet pictures, so counting cannot fix them. Best fix: get the official 3D model (`python tools/get_set.py 42175 -`, needs internet access to library.ldraw.org) and import exact joins.
 - 42061 and 42116 are done too.

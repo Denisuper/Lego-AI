@@ -1,0 +1,502 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD chassis-crossbeam-1 32316 white
+ADD chassis-longpin-1 42924 blue
+ADD chassis-longpin-2 42924 blue
+CONNECT chassis-longpin-1.pin1 -> chassis-crossbeam-1.hole2 STIFF
+CONNECT chassis-longpin-2.pin1 -> chassis-crossbeam-1.hole4 STIFF
+WHY Places two long pins two holes apart in the front crossbeam to hold the chassis core.
+STEP 2
+ADD chassis-core-1 14720 lightgray
+CONNECT chassis-longpin-1.pin2 -> chassis-core-1.hole1~ STIFF
+CONNECT chassis-longpin-2.pin2 -> chassis-core-1.hole3~ STIFF
+WHY Fastens the offset grey core to the crossbeam while leaving its middle clear for the mechanism.
+STEP 3
+ADD chassis-axlepin-1 43093 blue
+ADD chassis-pinhub-1 65487 black
+CONNECT chassis-axlepin-1.pin1 -> chassis-core-1.hole9~ STIFF
+CONNECT chassis-pinhub-1.pin1 -> chassis-core-1.hole8~ STIFF
+WHY Adds the rear locating axle pin and the upright bearing for the next cross pin.
+STEP 4
+ADD chassis-pinblock-1 65489 lightgray
+ADD chassis-pinblock-2 65489 lightgray
+CONNECT chassis-longpin-1.pin2 -> chassis-pinblock-1.hole2~ STIFF
+CONNECT chassis-longpin-2.pin2 -> chassis-pinblock-2.hole2~ STIFF
+WHY Fits matching pin blocks over the front posts to provide the wheel and body attachment points.
+STEP 5
+ADD front-wheelpin-1 39888 tan
+ADD front-wheelpin-2 39888 tan
+CONNECT front-wheelpin-1.pin1 -> chassis-pinblock-1.hole1~ TURNS
+CONNECT front-wheelpin-2.pin1 -> chassis-pinblock-2.hole1~ TURNS
+WHY Adds frictionless wheel spindles so the front wheels will roll freely.
+STEP 6
+ADD chassis-crossbeam-2 32316 white
+ADD chassis-longpin-3 42924 blue
+CONNECT chassis-pinblock-1.pin3 -> chassis-crossbeam-2.hole1~ STIFF
+CONNECT chassis-pinblock-2.pin3 -> chassis-crossbeam-2.hole5~ STIFF
+CONNECT chassis-longpin-3.pin2 -> chassis-pinhub-1.hole1 STIFF
+WHY Caps the front pin blocks with a second crossbeam and installs the transverse rear mounting pin.
+STEP 7
+ADD chassis-cap-1 43857 black
+ADD chassis-cap-2 43857 black
+CONNECT chassis-longpin-1.pin3 -> chassis-cap-1.hole1~ STIFF
+CONNECT chassis-longpin-2.pin3 -> chassis-cap-2.hole1~ STIFF
+CONNECT chassis-pinblock-1.pin4 -> chassis-cap-1.hole2~ STIFF
+CONNECT chassis-pinblock-2.pin4 -> chassis-cap-2.hole2~ STIFF
+WHY Locks the front posts and pin blocks together with two short caps.
+STEP 8
+GROUP chassis-side-left
+ADD chassis-rail-1 32009 lightgray
+ADD chassis-pin-1 61332 black
+ADD chassis-pin-2 61332 black
+ADD rear-wheelpin-1 39888 tan
+ADD chassis-axlepin-2 43093 blue
+ADD steering-bearing-1 32013 white
+CONNECT chassis-pin-1.pin1 -> chassis-rail-1.hole8 STIFF
+CONNECT chassis-pin-2.pin1 -> chassis-rail-1.hole6 STIFF
+CONNECT rear-wheelpin-1.pin1 -> chassis-rail-1.hole7 TURNS
+CONNECT rear-wheelpin-1.pin2 -> steering-bearing-1.hole1 TURNS
+CONNECT chassis-axlepin-2.axle1 -> chassis-rail-1.axlehole1 LOCKED
+END
+ATTACH chassis-side-left
+CONNECT chassis-axlepin-2.pin1 -> chassis-core-1.hole4~ STIFF
+CONNECT chassis-longpin-3.pin1 -> chassis-rail-1.hole1~ STIFF
+WHY Adds the first bent chassis rail with a free rear wheel spindle and a bearing for the steering shaft.
+STEP 9
+GROUP lift-worm-shaft
+ADD lift-worm-axle-1 15462 brown
+ADD lift-worm-bearing-1 6536 red
+CONNECT lift-worm-axle-1.axle1 -> lift-worm-bearing-1.hole1 TURNS
+WHY Starts the lift drive with a stopped axle in a round bearing so the shaft can turn.
+STEP 10
+ADD lift-worm-1 32905 lightgray
+ADD lift-worm-bearing-2 6536 red
+CONNECT lift-worm-axle-1.axle2~ -> lift-worm-1.axlehole1 LOCKED
+CONNECT lift-worm-axle-1.axle4~ -> lift-worm-bearing-2.hole1 TURNS
+WHY Traps the worm between two round bearings with both red cross holes facing the same way.
+STEP 11
+ADD lift-worm-handle-1 18948 white
+CONNECT lift-worm-axle-1.axle5 -> lift-worm-handle-1.axlehole1 LOCKED
+WHY Locks the white handle onto the worm shaft and retains the outer bearing against the worm.
+STEP 12
+ADD lift-worm-brace-1 18651 black
+CONNECT lift-worm-brace-1.axle1 -> lift-worm-bearing-2.axlehole1 LOCKED
+END
+WHY Adds the transverse axle pin that will locate the rear worm bearing between the chassis rails.
+STEP 13
+ATTACH lift-worm-shaft
+CONNECT lift-worm-brace-1.axle2 -> chassis-rail-1.hole5~ TURNS
+WHY Seats the worm assembly along the chassis with its handle accessible at the rear.
+STEP 14
+ADD lift-bearing-crossaxle-1 15462 brown
+CONNECT lift-bearing-crossaxle-1.axle1 -> chassis-rail-1.hole2~ TURNS
+CONNECT lift-bearing-crossaxle-1.axle2~ -> lift-worm-bearing-1.axlehole1 LOCKED
+WHY Locates the front worm bearing on a stopped transverse axle while leaving the worm shaft free to turn.
+STEP 15
+ADD lift-output-axle-1 99008 tan
+ADD lift-output-gear-1 10928 darkgray
+CONNECT lift-output-axle-1.axle1 -> chassis-rail-1.hole3~ TURNS
+CONNECT lift-output-axle-1.axle3~ -> lift-output-gear-1.axlehole1 LOCKED
+MESH lift-worm-1.teeth lift-output-gear-1.teeth
+WHY Meshes the eight-tooth output gear with the worm so turning the rear handle slowly raises or lowers the lift linkage.
+STEP 16
+GROUP steering-shaft
+ADD steering-axle-1 3708 black
+ADD steering-bearing-2 32013 white
+CONNECT steering-axle-1.axle1 -> steering-bearing-2.axlehole1 LOCKED
+END
+WHY Builds the long steering shaft with a perpendicular round bearing at its front end.
+STEP 17
+ATTACH steering-shaft
+CONNECT steering-axle-1.axle12~ -> steering-bearing-1.axlehole1 LOCKED
+WHY Runs the long fork-leveling link along the chassis with its rear bearing on the rear wheel spindle.
+STEP 18
+GROUP chassis-side-right
+ADD chassis-rail-2 32009 lightgray
+ADD chassis-pin-3 61332 black
+ADD chassis-pin-4 61332 black
+ADD chassis-axlepin-3 11214 red
+ADD steering-crossaxle-1 4519 lightgray
+CONNECT steering-crossaxle-1.axle1 -> chassis-rail-2.axlehole2 LOCKED
+CONNECT chassis-pin-3.pin1 -> chassis-rail-2.hole8 STIFF
+CONNECT chassis-pin-4.pin1 -> chassis-rail-2.hole6 STIFF
+CONNECT chassis-axlepin-3.axle1 -> chassis-rail-2.axlehole1 LOCKED
+END
+ATTACH chassis-side-right
+CONNECT chassis-axlepin-3.pin1 -> chassis-core-1.hole6~ STIFF
+CONNECT chassis-longpin-3.pin3 -> chassis-rail-2.hole1~ STIFF
+CONNECT lift-bearing-crossaxle-1.axle5 -> chassis-rail-2.hole2~ TURNS
+CONNECT lift-output-axle-1.axle3 -> chassis-rail-2.hole3~ TURNS
+CONNECT lift-worm-brace-1.pin1 -> chassis-rail-2.hole5~ STIFF
+CONNECT rear-wheelpin-1.pin3 -> chassis-rail-2.hole7 TURNS
+WHY Closes the chassis with the second rail, capturing both lift shafts without locking their round bearings.
+STEP 19
+GROUP front-steering-crossaxle
+ADD front-steering-axle-1 3707 black
+ADD front-steering-connector-1 42003 white
+ADD front-steering-lug-1 60483 white
+ADD front-steering-bush-1 3713 lightgray
+CONNECT front-steering-axle-1.axle1 -> front-steering-connector-1.axlehole1 LOCKED
+CONNECT front-steering-axle-1.axle2~ -> front-steering-lug-1.axlehole1 LOCKED
+CONNECT front-steering-axle-1.axle3~ -> front-steering-bush-1.axlehole1 LOCKED
+END
+ATTACH front-steering-crossaxle
+CONNECT front-steering-axle-1.axle4~ -> chassis-core-1.hole2~ TURNS
+WHY Inserts the front steering cross axle with its white linkage connector and inner retaining bush.
+STEP 20
+ADD front-steering-bush-2 3713 lightgray
+CONNECT front-steering-axle-1.axle8 -> front-steering-bush-2.axlehole1 LOCKED
+WHY Retains the front steering cross axle from the other side so it cannot slide out of the chassis.
+STEP 21
+ADD cab-front-link-1 6632 black
+ADD cab-front-link-2 6632 black
+ADD cab-front-crossaxle-1 4519 lightgray
+CONNECT cab-front-crossaxle-1.axle1~ -> cab-front-link-1.axlehole1 LOCKED
+CONNECT chassis-axlepin-3.pin2 -> cab-front-link-1.hole1 STIFF
+CONNECT cab-front-crossaxle-1.axle3 -> cab-front-link-2.axlehole1 LOCKED
+CONNECT chassis-axlepin-3.pin2 -> cab-front-link-2.hole1 STIFF
+WHY Builds the paired front cab supports around the red friction pin with their upper cross axle level.
+STEP 22
+GROUP cab-inner-frame
+ADD cab-arch-1 32250 black
+ADD cab-upper-crossaxle-1 4519 lightgray
+ADD cab-middle-crossaxle-1 4519 lightgray
+CONNECT cab-upper-crossaxle-1.axle1 -> cab-arch-1.axlehole3 LOCKED
+CONNECT cab-middle-crossaxle-1.axle1 -> cab-arch-1.axlehole1 LOCKED
+END
+ATTACH cab-inner-frame
+CONNECT cab-front-crossaxle-1.axle2~ -> cab-arch-1.axlehole2 LOCKED
+WHY Locks the inner cab frame to the front cab supports and adds two cross axles for its upper links.
+STEP 23
+GROUP cab-rocker
+ADD cab-rocker-1 32056 black
+ADD cab-rocker-arm-1 32449 black
+ADD cab-rocker-crossaxle-1 4519 lightgray
+ADD cab-rocker-crossaxle-2 4519 lightgray
+ADD cab-rocker-crossaxle-3 4519 lightgray
+ADD cab-rocker-bush-1 3713 lightgray
+CONNECT cab-rocker-crossaxle-1.axle1 -> cab-rocker-1.axlehole2 LOCKED
+CONNECT cab-rocker-crossaxle-2.axle1 -> cab-rocker-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-2.axle2~ -> cab-rocker-arm-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-3.axle2~ -> cab-rocker-arm-1.axlehole2 LOCKED
+CONNECT cab-rocker-crossaxle-3.axle3 -> cab-rocker-bush-1.axlehole1 LOCKED
+END
+ATTACH cab-rocker
+CONNECT cab-rocker-crossaxle-1.axle1~ -> cab-arch-1.hole4 TURNS
+CONNECT cab-rocker-crossaxle-2.axle1~ -> cab-arch-1.hole2 TURNS
+WHY Adds the L-shaped cab support and its shorter arm inside the cab frame.
+STEP 24
+ADD lift-lower-lug-1 6536 red
+CONNECT lift-bearing-crossaxle-1.axle5 -> lift-lower-lug-1.hole1 TURNS
+WHY Fits the lower steering lug over the transverse axle with its cross hole facing upward.
+STEP 25
+ADD lift-rod-axle-1 4519 lightgray
+ADD lift-rod-joiner-1 59443 lightgray
+ADD lift-rod-joiner-2 59443 lightgray
+ADD lift-rod-axle-2 32062 red
+CONNECT lift-rod-axle-1.axle1 -> lift-lower-lug-1.axlehole1 LOCKED
+CONNECT lift-rod-axle-1.axle2~ -> lift-rod-joiner-1.axlehole1 LOCKED
+CONNECT lift-rod-axle-2.axle1 -> lift-rod-joiner-1.axlehole2 LOCKED
+CONNECT lift-rod-axle-2.axle2 -> lift-rod-joiner-2.axlehole1 LOCKED
+WHY Builds the upright steering shaft from two axle joiners locked to the lower red connector.
+STEP 26
+ADD cab-spacer-1 60483 darktan
+ADD cab-spacer-2 60483 darktan
+CONNECT cab-rocker-crossaxle-2.axle2~ -> cab-spacer-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-3.axle2~ -> cab-spacer-2.axlehole1 LOCKED
+WHY Spaces the cab linkage with two tan lugs while leaving their round holes available.
+STEP 27
+ADD cab-roof-link-1 6632 black
+ADD cab-roof-connector-1 32184 black
+CONNECT cab-upper-crossaxle-1.axle2~ -> cab-roof-link-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-1.axle2~ -> cab-roof-link-1.axlehole2 LOCKED
+CONNECT cab-upper-crossaxle-1.axle2~ -> cab-roof-connector-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-1.axle2~ -> cab-roof-connector-1.axlehole2 LOCKED
+WHY Bridges the upper cross axles with the roof link and its perpendicular bearing block.
+STEP 28
+GROUP underside-brace
+ADD chassis-bottom-beam-1 32524 black
+ADD chassis-bottom-lug-1 60483 white
+ADD chassis-bottom-pin-1 3673 lightgray
+CONNECT chassis-bottom-pin-1.pin1 -> chassis-bottom-lug-1.hole1 TURNS
+CONNECT chassis-bottom-pin-1.pin2 -> chassis-bottom-beam-1.hole1 TURNS
+END
+ATTACH underside-brace
+CONNECT chassis-pinblock-1.pin2~ -> chassis-bottom-beam-1.hole7~ STIFF
+CONNECT chassis-pinblock-2.pin2~ -> chassis-bottom-beam-1.hole5~ STIFF
+CONNECT lift-bearing-crossaxle-1.axle5~ -> chassis-bottom-lug-1.axlehole1 LOCKED
+WHY Adds the long underside brace with a hinged white lug beneath the cab linkage.
+STEP 29
+ADD cab-front-link-3 6632 black
+ADD cab-front-link-4 6632 black
+CONNECT cab-front-crossaxle-1.axle3~ -> cab-front-link-3.axlehole1 LOCKED
+CONNECT chassis-axlepin-3.pin2 -> cab-front-link-3.hole1 STIFF
+CONNECT cab-front-crossaxle-1.axle3~ -> cab-front-link-4.axlehole1 LOCKED
+CONNECT chassis-axlepin-3.pin2 -> cab-front-link-4.hole1 STIFF
+WHY Thickens the front cab supports on the same friction pin without changing their spacing.
+STEP 30
+ADD cab-rocker-2 32056 black
+ADD cab-roof-link-2 6632 black
+CONNECT cab-rocker-crossaxle-1.axle3 -> cab-roof-link-2.axlehole2 LOCKED
+CONNECT cab-upper-crossaxle-1.axle3 -> cab-roof-link-2.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-3.axle3~ -> cab-rocker-2.axlehole3 LOCKED
+CONNECT cab-rocker-crossaxle-2.axle3 -> cab-rocker-2.axlehole1 LOCKED
+CONNECT cab-middle-crossaxle-1.axle3~ -> cab-rocker-2.axlehole2 LOCKED
+WHY Closes the outer rocker and roof links around the exposed cross axles.
+STEP 31
+ADD cab-arch-2 32250 black
+ADD cab-rear-link-1 32449 black
+CONNECT cab-front-crossaxle-1.axle3~ -> cab-arch-2.axlehole2 LOCKED
+CONNECT cab-upper-crossaxle-1.axle3~ -> cab-arch-2.axlehole3 LOCKED
+CONNECT cab-middle-crossaxle-1.axle3~ -> cab-arch-2.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-1.axle3~ -> cab-rear-link-1.axlehole1 LOCKED
+CONNECT cab-rocker-crossaxle-3.axle3~ -> cab-rear-link-1.axlehole2 LOCKED
+WHY Finishes the outer cab frame and the straight rear link to keep the moving assembly aligned.
+STEP 32
+ADD steering-knob-axle-1 4519 lightgray
+ADD steering-knob-gear-1 32270 black
+CONNECT steering-knob-axle-1.axle2~ -> cab-roof-connector-1.hole1 TURNS
+CONNECT steering-knob-axle-1.axle1~ -> lift-rod-joiner-2.axlehole2 LOCKED
+CONNECT steering-knob-axle-1.axle3 -> steering-knob-gear-1.axlehole1 LOCKED
+WHY Adds the roof-mounted knob and its vertical shaft through the roof bearing into the upright rod.
+STEP 33
+GROUP cab-lower-trim
+ADD cab-trim-1 32449 mediumazure
+ADD cab-trim-2 32449 mediumazure
+ADD cab-trim-spacer-1 18654 white
+ADD cab-trim-axlepin-1 43093 blue
+ADD cab-trim-pin-1 61332 black
+ADD cab-trim-pin-2 61332 black
+ADD cab-trim-connector-1 42003 white
+CONNECT cab-trim-axlepin-1.pin1 -> cab-trim-spacer-1.hole1 STIFF
+CONNECT cab-trim-axlepin-1.axle1 -> cab-trim-1.axlehole2 LOCKED
+CONNECT cab-trim-axlepin-1.axle1 -> cab-trim-2.axlehole2 LOCKED
+CONNECT cab-trim-pin-1.pin1 -> cab-trim-2.hole1 STIFF
+CONNECT cab-trim-pin-2.pin1 -> cab-trim-2.hole2 STIFF
+CONNECT cab-trim-pin-1.pin2 -> cab-trim-connector-1.hole1 STIFF
+CONNECT cab-trim-pin-2.pin2 -> cab-trim-connector-1.hole2 STIFF
+END
+ATTACH cab-lower-trim
+CONNECT front-steering-axle-1.axle8~ -> cab-trim-connector-1.axlehole1 LOCKED
+WHY Builds the blue-and-white lower cab trim and attaches it below the front cab frame.
+STEP 34
+ADD rear-side-beam-1 32526 mediumazure
+ADD rear-wheelpin-2 39888 tan
+CONNECT rear-wheelpin-2.pin1 -> rear-side-beam-1.hole1~ TURNS
+CONNECT chassis-pin-3.pin2 -> rear-side-beam-1.hole7~ STIFF
+CONNECT chassis-pin-4.pin2 -> rear-side-beam-1.hole3~ STIFF
+WHY Covers the rear chassis side with an L-shaped blue beam and adds the second free wheel spindle.
+STEP 35
+ADD boom-main-beam-1 41239 mediumazure
+CONNECT steering-crossaxle-1.axle2~ -> boom-main-beam-1.hole1 TURNS
+WHY Mounts the thirteen-hole lifting boom on the rear transverse pivot axle.
+STEP 36
+ADD rear-side-beam-2 32526 mediumazure
+ADD rear-wheelpin-3 39888 tan
+CONNECT rear-wheelpin-3.pin1 -> rear-side-beam-2.hole1~ TURNS
+CONNECT chassis-pin-1.pin2 -> rear-side-beam-2.hole7~ STIFF
+CONNECT chassis-pin-2.pin2 -> rear-side-beam-2.hole3~ STIFF
+WHY Completes the opposite blue rear side and its free wheel spindle.
+STEP 37
+GROUP boom-lift-link
+ADD boom-link-1 32063 white
+ADD boom-link-2 32063 white
+ADD boom-link-pin-1 3673 lightgray
+CONNECT boom-link-pin-1.pin1 -> boom-link-1.hole1 TURNS
+CONNECT boom-link-pin-1.pin1~ -> boom-link-2.hole1 TURNS
+WHY Starts the doubled white boom link on a frictionless hinge pin.
+STEP 38
+ADD boom-link-pin-2 3673 lightgray
+CONNECT boom-link-pin-2.pin1 -> boom-link-1.hole6 TURNS
+CONNECT boom-link-pin-2.pin1~ -> boom-link-2.hole6 TURNS
+WHY Pins the far ends of the paired white links together while leaving the projecting end free for a hinge.
+STEP 39
+ADD boom-crank-1 32056 black
+ADD boom-crank-2 32056 black
+CONNECT boom-link-pin-2.pin2 -> boom-crank-1.hole2~ TURNS
+CONNECT boom-link-pin-2.pin2 -> boom-crank-2.hole2~ TURNS
+END
+WHY Adds two black crank plates around the outer frictionless pin to carry the worm-driven lift motion.
+STEP 40
+ATTACH boom-lift-link
+CONNECT boom-link-pin-1.pin2 -> boom-main-beam-1.hole4~ TURNS
+CONNECT lift-output-axle-1.axle1 -> boom-crank-1.axlehole3~ LOCKED
+CONNECT lift-output-axle-1.axle1 -> boom-crank-2.axlehole3~ LOCKED
+WHY Joins the worm-driven crank to the boom through the white links so the boom can rise around its rear pivot.
+STEP 41
+ADD lift-handle-axle-1 32062 red
+ADD lift-handle-gear-1 32270 black
+CONNECT lift-handle-axle-1.axle1 -> lift-worm-handle-1.axlehole2 LOCKED
+CONNECT lift-handle-axle-1.axle2 -> lift-handle-gear-1.axlehole1 LOCKED
+WHY Adds the rear handwheel that turns the worm shaft to adjust and hold the boom height.
+STEP 42
+GROUP cab-outer-trim
+ADD cab-trim-axlepin-2 43093 blue
+ADD cab-trim-spacer-2 18654 white
+CONNECT cab-trim-axlepin-2.pin1 -> cab-trim-spacer-2.hole1 STIFF
+WHY Starts the second cab trim assembly with a white spacer below its axle pin.
+STEP 43
+ADD cab-trim-3 32449 mediumazure
+ADD cab-trim-4 32449 mediumazure
+CONNECT cab-trim-axlepin-2.axle1 -> cab-trim-3.axlehole1 LOCKED
+CONNECT cab-trim-axlepin-2.axle1 -> cab-trim-4.axlehole1 LOCKED
+WHY Stacks the two blue trim strips on the axle end above the white spacer.
+STEP 44
+ADD cab-trim-longpin-1 42924 blue
+ADD cab-trim-longpin-2 42924 blue
+CONNECT cab-trim-longpin-1.pin2~ -> cab-trim-3.hole1 STIFF
+CONNECT cab-trim-longpin-1.pin2~ -> cab-trim-4.hole1 STIFF
+CONNECT cab-trim-longpin-2.pin2~ -> cab-trim-3.hole2 STIFF
+CONNECT cab-trim-longpin-2.pin2~ -> cab-trim-4.hole2 STIFF
+WHY Adds the pair of long friction pins that will mount the white side panel and secure the trim.
+STEP 45
+ADD cab-side-panel-1 11947 white
+CONNECT cab-trim-longpin-1.pin3 -> cab-side-panel-1.hole1~ STIFF
+CONNECT cab-trim-longpin-2.pin3 -> cab-side-panel-1.hole2~ STIFF
+END
+WHY Fits the white side panel over the projecting blue pins to finish the outer cab trim.
+STEP 46
+ATTACH cab-outer-trim
+CONNECT cab-trim-longpin-1.pin1 -> front-steering-connector-1.hole1 STIFF
+CONNECT cab-trim-longpin-2.pin1 -> front-steering-connector-1.hole2 STIFF
+WHY Fastens the completed blue-and-white panel to the outer white connector beside the cab.
+STEP 47
+GROUP boom-tip-link
+ADD boom-tip-beam-1 32316 white
+ADD boom-tip-pin-1 39888 tan
+ADD boom-tip-pin-2 39888 tan
+CONNECT boom-tip-pin-1.pin1 -> boom-tip-beam-1.hole2 TURNS
+CONNECT boom-tip-pin-2.pin1 -> boom-tip-beam-1.hole4 TURNS
+END
+ATTACH boom-tip-link
+CONNECT boom-tip-pin-1.pin2 -> boom-main-beam-1.hole13 TURNS
+CONNECT boom-tip-pin-2.pin2 -> steering-bearing-2.hole1 TURNS
+WHY Joins the boom tip to the long leveling link with two free pivots so the fork carrier can tilt.
+STEP 48
+GROUP fork-carrier
+ADD fork-tine-1 32316 black
+ADD fork-pin-1 61332 black
+ADD fork-pin-2 61332 black
+CONNECT fork-pin-1.pin1 -> fork-tine-1.hole4 STIFF
+CONNECT fork-pin-2.pin1 -> fork-tine-1.hole5 STIFF
+WHY Starts the first fork tine with two adjacent friction pins at its heel.
+STEP 49
+ADD fork-upright-1 32140 black
+CONNECT fork-pin-1.pin2 -> fork-upright-1.hole4~ STIFF
+CONNECT fork-pin-2.pin2 -> fork-upright-1.hole3~ STIFF
+WHY Secures the first upright to the fork tine with two pins so the heel cannot rotate.
+STEP 50
+ADD fork-top-axle-1 4519 lightgray
+ADD fork-longpin-1 42924 blue
+ADD fork-longpin-2 42924 blue
+CONNECT fork-top-axle-1.axle1 -> fork-upright-1.axlehole1 LOCKED
+CONNECT fork-longpin-1.pin1 -> fork-upright-1.hole1 STIFF
+CONNECT fork-longpin-2.pin1 -> fork-upright-1.hole2 STIFF
+WHY Adds the upper tilt axle and two cross pins to tie the fork carrier together.
+STEP 51
+ADD fork-crosspiece-1 60484 black
+ADD fork-longpin-3 42924 blue
+CONNECT fork-longpin-1.pin2 -> fork-crosspiece-1.hole3 STIFF
+CONNECT fork-longpin-2.pin2 -> fork-crosspiece-1.hole4 STIFF
+CONNECT fork-longpin-3.pin1 -> fork-crosspiece-1.hole1~ STIFF
+WHY Slides the T-shaped crosspiece over the fork pins and adds the outward pin for the other tip link.
+STEP 52
+ADD fork-upright-2 32140 black
+CONNECT fork-longpin-1.pin3 -> fork-upright-2.hole1 STIFF
+CONNECT fork-longpin-2.pin3 -> fork-upright-2.hole2 STIFF
+WHY Adds the second upright in the opposite orientation to form a stiff fork carrier.
+STEP 53
+ADD fork-tine-2 32316 black
+ADD fork-pin-3 61332 black
+ADD fork-pin-4 61332 black
+CONNECT fork-pin-3.pin1 -> fork-upright-2.hole4~ STIFF
+CONNECT fork-pin-4.pin1 -> fork-upright-2.hole3~ STIFF
+CONNECT fork-pin-3.pin2 -> fork-tine-2.hole4 STIFF
+CONNECT fork-pin-4.pin2 -> fork-tine-2.hole5 STIFF
+END
+WHY Fastens the second fork tine parallel to the first with its heel held by two friction pins.
+STEP 54
+ATTACH fork-carrier
+CONNECT boom-tip-pin-1.pin3 -> fork-crosspiece-1.hole5~ TURNS
+CONNECT boom-tip-pin-2.pin3 -> fork-crosspiece-1.hole2~ TURNS
+WHY Hinges the completed fork carrier to the boom-tip linkage while leaving the tines free to tilt.
+STEP 55
+ADD boom-tip-beam-2 32316 white
+CONNECT boom-tip-pin-1.pin3 -> boom-tip-beam-2.hole1 TURNS
+CONNECT boom-tip-pin-2.pin3 -> boom-tip-beam-2.hole3 TURNS
+CONNECT fork-longpin-3.pin2 -> boom-tip-beam-2.hole5 STIFF
+WHY Closes the outer tip link around both tan pivots and the blue carrier pin.
+STEP 56
+GROUP fork-tilt-control
+ADD fork-tilt-cheek-1 60483 white
+ADD fork-tilt-cheek-2 60483 white
+ADD fork-tilt-bridge-1 41677 white
+ADD fork-tilt-bridge-2 41677 white
+ADD fork-tilt-axle-1 32062 red
+ADD fork-tilt-axle-2 32062 red
+ADD fork-tilt-crossaxle-1 3705 black
+ADD fork-tilt-bush-1 3713 lightgray
+ADD fork-tilt-bush-2 3713 lightgray
+CONNECT fork-tilt-axle-1.axle1 -> fork-tilt-bridge-1.axlehole1 LOCKED
+CONNECT fork-tilt-axle-2.axle1 -> fork-tilt-bridge-1.axlehole2 LOCKED
+CONNECT fork-tilt-axle-1.axle1~ -> fork-tilt-cheek-1.axlehole1 LOCKED
+CONNECT fork-tilt-axle-2.axle1~ -> fork-tilt-cheek-2.axlehole1 LOCKED
+CONNECT fork-tilt-axle-1.axle2 -> fork-tilt-bridge-2.axlehole1 LOCKED
+CONNECT fork-tilt-axle-2.axle2 -> fork-tilt-bridge-2.axlehole2 LOCKED
+CONNECT fork-tilt-crossaxle-1.axle1 -> fork-tilt-bush-1.axlehole1 LOCKED
+CONNECT fork-tilt-crossaxle-1.axle2~ -> fork-tilt-cheek-1.hole1 TURNS
+CONNECT fork-tilt-crossaxle-1.axle4 -> fork-tilt-bush-2.axlehole1 LOCKED
+END
+ATTACH fork-tilt-control
+CONNECT fork-top-axle-1.axle3~ -> fork-tilt-cheek-2.hole1 TURNS
+WHY Builds the braced white tilt-control block and mounts it on the fork carrier's upper axle.
+STEP 57
+ADD fork-handle-1 6632 black
+ADD fork-handle-2 6632 black
+ADD fork-handle-axlepin-1 43093 blue
+ADD fork-handle-axlepin-2 43093 blue
+ADD fork-handle-bush-1 32123b lightgray
+ADD fork-handle-bush-2 32123b lightgray
+CONNECT fork-tilt-crossaxle-1.axle1~ -> fork-handle-1.axlehole1 LOCKED
+CONNECT fork-tilt-crossaxle-1.axle4~ -> fork-handle-2.axlehole1 LOCKED
+CONNECT fork-handle-axlepin-1.axle1 -> fork-handle-1.axlehole2 LOCKED
+CONNECT fork-handle-axlepin-1.axle1 -> fork-handle-bush-1.axlehole1 LOCKED
+CONNECT fork-handle-axlepin-2.axle1 -> fork-handle-2.axlehole2 LOCKED
+CONNECT fork-handle-axlepin-2.axle1 -> fork-handle-bush-2.axlehole1 LOCKED
+WHY Adds matching black handles on the upper fork axle with half bushes retaining the blue axle pins.
+STEP 58
+ADD wheel-1 55981 white
+ADD wheel-2 55981 white
+ADD wheel-3 55981 white
+ADD wheel-4 55981 white
+ADD tyre-1 92402 black
+ADD tyre-2 92402 black
+ADD tyre-3 92402 black
+ADD tyre-4 92402 black
+CONNECT front-wheelpin-1.pin3 -> wheel-1.hole1? TURNS
+CONNECT front-wheelpin-2.pin3 -> wheel-2.hole1? TURNS
+CONNECT rear-wheelpin-2.pin3 -> wheel-3.hole1? TURNS
+CONNECT rear-wheelpin-3.pin3 -> wheel-4.hole1? TURNS
+CONNECT tyre-1.rim? -> wheel-1.rim? STIFF
+CONNECT tyre-2.rim? -> wheel-2.rim? STIFF
+CONNECT tyre-3.rim? -> wheel-3.rim? STIFF
+CONNECT tyre-4.rim? -> wheel-4.rim? STIFF
+WHY Fits four treaded tyres to their rims and mounts the wheels on the frictionless spindles.
+STEP 59
+GROUP pallet
+ADD pallet-deck-1 3035 tan
+ADD pallet-runner-1 3701 tan
+ADD pallet-runner-2 3701 tan
+CONNECT pallet-runner-1.stud1? -> pallet-deck-1.underside1? STIFF
+CONNECT pallet-runner-2.stud1? -> pallet-deck-1.underside2? STIFF
+END
+WHY Builds a separate pallet with two runners spaced to leave room for the fork tines underneath.
