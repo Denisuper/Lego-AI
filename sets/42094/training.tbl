@@ -1391,3 +1391,189 @@ CONNECT p11214-6.pin1 -> p15100-6.hole1 STIFF
 CONNECT p15100-5.pin1 -> p6629-4.hole4 STIFF
 CONNECT p15100-6.pin1 -> p6629-4.hole3 STIFF
 WHY Turns the cab around and pins the matching pair of black right-angle connectors and red axle-pin into the opposite side for its mirrored assembly.
+
+STEP 127
+GROUP right-cab-side
+ADD p41677-4 41677 darkgray
+ADD p2853-5 2853 lightgray
+ADD p2853-6 2853 lightgray
+CONNECT p2853-5.axle1 -> p41677-4.axlehole2 LOCKED
+CONNECT p2853-6.axle1 -> p41677-4.axlehole1 LOCKED
+WHY Makes the second offset cab-side bracket from two grey crankshaft pieces and a thin dark grey cross-hole link.
+
+STEP 128
+ADD p6629-6 6629 black
+CONNECT p2853-5.axle2 -> p6629-6.axlehole2 LOCKED
+WHY Locks the black bent side beam onto the first crankshaft's exposed cross axle.
+
+STEP 129
+ADD p6536-9 6536 black
+ADD p4274-15 4274 lightgray
+ADD p98138-11 98138 transclear
+CONNECT p4274-15.pin2 -> p6536-9.hole1 TURNS
+CONNECT p98138-11.? -> p4274-15.? STIFF
+CONNECT p2853-6.axle2 -> p6536-9.axlehole1 LOCKED
+WHY Fits a clear round lamp on a grey half pin into the black connector at the lower end of the side bracket.
+
+STEP 130
+ADD right-cab-bracket-pin 2780 black
+ADD p32054-8 32054 black
+ADD p41678-2 41678 lightgray
+ADD p99008-5 99008 tan
+ADD p18654-11 18654 black
+CONNECT p32054-8.pin1 -> p41678-2.hole2 STIFF
+CONNECT p99008-5.axle2 -> p41678-2.axlehole2 LOCKED
+CONNECT p99008-5.axle3 -> p41678-2.axlehole1 LOCKED
+CONNECT p99008-5.axle2 -> p18654-11.hole1 TURNS
+CONNECT p32054-8.pin2 -> p6629-6.hole4 STIFF
+CONNECT right-cab-bracket-pin.pin1 -> p41678-2.hole1 STIFF
+CONNECT right-cab-bracket-pin.pin2 -> p6629-6.hole5 STIFF
+WHY Pins the grey three-way connector onto the side beam and feeds the tan stopped axle through it with a black sleeve between the arms.
+
+STEP 131
+ADD p2780-49 2780 black
+ADD p2780-50 2780 black
+ADD p63869-6 63869 black
+ADD p11947-2 11947 black
+ADD p18654-12 18654 black
+ADD p22961-10 22961 lightgray
+CONNECT p22961-10.axle1 -> p11947-2.axlehole1 LOCKED
+CONNECT p2780-49.pin2 -> p11947-2.hole1 STIFF
+CONNECT p2780-50.pin2 -> p11947-2.hole2 STIFF
+CONNECT p2780-49.pin1 -> p63869-6.hole2 STIFF
+CONNECT p2780-50.pin1 -> p63869-6.hole1 STIFF
+CONNECT p99008-5.pin1 -> p18654-12.hole1 TURNS
+CONNECT p99008-5.axle1 -> p63869-6.axlehole1 LOCKED
+WHY Applies sticker 13 to the black side panel, adds its grey socket and black hub, then locks the panel onto the tan axle beyond a black spacer.
+
+STEP 132
+ADD p43093-14 43093 blue
+ADD p2780-51 2780 black
+ADD p2780-52 2780 black
+ADD p2780-53 2780 black
+ADD p2780-54 2780 black
+ADD p32291-3 32291 black
+ADD p32348-2 32348 lightgray
+CONNECT p43093-14.axle1 -> p32348-2.axlehole1 LOCKED
+CONNECT p2780-52.pin2 -> p32348-2.hole1 STIFF
+CONNECT p2780-51.pin2 -> p32348-2.hole2 STIFF
+CONNECT p2780-54.pin2 -> p32348-2.hole4 STIFF
+CONNECT p2780-53.pin2 -> p32348-2.hole5 STIFF
+CONNECT p2780-53.pin1 -> p32291-3.hole1 STIFF
+CONNECT p2780-54.pin1 -> p32291-3.hole2 STIFF
+CONNECT p2780-51.pin1 -> p6629-6.hole1 STIFF
+CONNECT p2780-52.pin1 -> p6629-6.hole2 STIFF
+WHY Pins the grey bent outer brace to the black side beam and adds its black mounting block and blue axle-pin.
+
+STEP 133
+ADD p98138-12 98138 transclear
+ADD p4274-16 4274 lightgray
+ADD p32062-8 32062 red
+ADD p6536-10 6536 black
+CONNECT p32062-8.axle2 -> p32348-2.axlehole2 LOCKED
+CONNECT p32062-8.axle1 -> p6536-10.axlehole1 LOCKED
+CONNECT p4274-16.pin2 -> p6536-10.hole1 TURNS
+CONNECT p98138-12.? -> p4274-16.? STIFF
+WHY Locks the second black lamp connector onto a red axle at the outer brace's end and seats a clear lamp on its grey half pin.
+
+STEP 134
+ADD p42003-10 42003 darkgray
+ADD p2736-2 2736 lightgray
+CONNECT p2736-2.axle1 -> p42003-10.axlehole1 LOCKED
+CONNECT p43093-14.pin1 -> p42003-10.hole2 STIFF
+WHY Builds the grey ball-ended handle in its dark grey connector and mounts it on the blue axle-pin.
+
+STEP 135
+ADD p6628-2 6628 black
+CONNECT p6628-2.pin1 -> p22961-10.hole1 STIFF
+WHY Inserts the black ball-ended pin into the grey socket beside the decorated panel.
+
+STEP 136
+END
+ATTACH right-cab-side
+CONNECT p11214-6.axle1 -> p32291-3.axlehole1 LOCKED
+WHY Seats the completed right cab side on its projecting red mounting axle with the decorated panel facing outward.
+
+STEP 137
+ADD p4274-17 4274 lightgray
+ADD p62462-3 62462 red
+ADD p6141-1 6141 red
+ADD extinguisher-bar 87994 black
+ADD extinguisher-clip 48729b black
+ADD extinguisher-holder 11090 darkgray
+CONNECT p4274-17.pin1 -> p62462-3.hole1 TURNS
+CONNECT p6141-1.? -> p62462-3.? STIFF
+CONNECT extinguisher-bar.? -> p4274-17.? STIFF
+CONNECT extinguisher-clip.? -> extinguisher-bar.? TURNS
+CONNECT extinguisher-holder.? -> extinguisher-bar.? TURNS
+CONNECT extinguisher-holder.? -> p6628-2.? TURNS
+WHY Builds a red fire extinguisher with a capped cylinder, grey nozzle and black handle, then clips it to the cab's outside ball mount; the small decorative interfaces are not named in the catalog.
+
+STEP 138
+END
+ATTACH cab
+WHY Lowers the cab onto the chassis turntable and seats the two base mounting pins, keeping the curved front guards clear of the lifting actuator.
+
+STEP 139
+ADD p43857-4 43857 black
+ADD p60483-5 60483 lightgray
+CONNECT p2780-30.pin2 -> p43857-4.hole2 STIFF
+CONNECT p2780-40.pin2 -> p43857-4.hole1 STIFF
+CONNECT p2780-31.pin2 -> p60483-5.hole1 STIFF
+CONNECT p44294-2.axle7 -> p60483-5.axlehole1 LOCKED
+WHY Fits the black two-hole link and grey axle-and-pin link onto the exposed cab-base mountings to retain the seated cab.
+
+STEP 140
+GROUP side-cover
+ADD p87086-1 87086 black
+ADD p2780-55 2780 black
+ADD p2780-56 2780 black
+CONNECT p2780-55.pin2 -> p87086-1.hole4 STIFF
+CONNECT p2780-56.pin2 -> p87086-1.hole2 STIFF
+WHY Applies sticker 14 to the small black panel and inserts two black friction pins for the adjacent long cover panel.
+
+STEP 141
+ADD p64681-2 64681 black
+CONNECT p2780-55.pin1 -> p64681-2.hole4 STIFF
+CONNECT p2780-56.pin1 -> p64681-2.hole2 STIFF
+WHY Adds the long black tapered panel with sticker 5 to form the yellow-marked side cover.
+
+STEP 142
+ADD p2780-57 2780 black
+ADD p2780-58 2780 black
+ADD p2780-59 2780 black
+CONNECT p2780-57.pin2 -> p64681-2.hole8 STIFF
+CONNECT p2780-58.pin2 -> p64681-2.hole6 STIFF
+CONNECT p2780-59.pin2 -> p87086-1.hole6 STIFF
+WHY Turns the cover over and inserts three black mounting pins along its inner face.
+
+STEP 143
+ADD p43093-15 43093 blue
+ADD p32013-9 32013 yellow
+ADD p6587-2 6587 darktan
+ADD cover-bush-1 32123b yellow
+ADD cover-bush-2 32123b yellow
+ADD p98138-13 98138 transclear
+CONNECT p43093-15.axle1 -> p32013-9.axlehole1 LOCKED
+CONNECT p43093-15.pin1 -> p87086-1.hole5 STIFF
+CONNECT p6587-2.axle3 -> p32013-9.hole1 TURNS
+CONNECT p6587-2.axle2~ -> cover-bush-1.axlehole1 LOCKED
+CONNECT p6587-2.axle2~ -> cover-bush-2.axlehole1 LOCKED
+CONNECT p98138-13.? -> p6587-2.? STIFF
+WHY Mounts the yellow side fitting on a blue axle-pin and slides the stopped dark tan shaft through its round bearing with two yellow half bushes and a clear end cap.
+
+STEP 144
+ADD p43093-16 43093 blue
+ADD p25214-13 25214 yellow
+CONNECT p43093-16.axle1 -> p25214-13.axlehole1 LOCKED
+CONNECT p43093-16.pin1 -> p64681-2.hole5 STIFF
+CONNECT p6587-2.axle1~ -> p25214-13.axlehole2 LOCKED
+WHY Fits the curved yellow elbow onto a blue axle-pin and pushes the dark tan shaft into its other cross socket to complete the side pipe.
+
+STEP 145
+END
+ATTACH side-cover
+CONNECT p2780-57.pin1 -> p27940-4.hole1 STIFF
+CONNECT p2780-58.pin1 -> p87082-5.hole1 STIFF
+CONNECT p2780-59.pin1 -> p48989-2.hole1 STIFF
+WHY Pins the decorated cover to the chassis below the upper yellow side panel, with the curved yellow pipe facing outward.
