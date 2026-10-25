@@ -1,0 +1,220 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD rail1 14720 ltbluegray
+ADD pin1 2780 black
+ADD gear161 94925 ltbluegray
+ADD hub21 87082 ltbluegray
+ADD axle61 3706 black
+CONNECT pin1.pin1 -> rail1.hole1~ STIFF
+CONNECT hub21.pin1 -> rail1.hole2~ STIFF
+WHY Starts the first long side rail with a friction hub pinned to each end post for a shaft to ride in.
+STEP 2
+ADD bevel1 32270 black
+ADD axle31 4519 ltbluegray
+ADD axle81 3707 black
+CONNECT bevel1.axlehole1 -> axle61.axle1 LOCKED
+WHY Builds the first gear pair on its own axle so the two gears turn together.
+STEP 3
+ADD bush1 6538c darkbluegray
+CONNECT bush1.? -> axle81.axle1~ TURNS
+WHY Threads a spacer bush onto the shaft so the next gear sits clear of its neighbour.
+STEP 4
+ADD hub41 55615 ltbluegray
+ADD pin2 2780 black
+ADD gear162 94925 ltbluegray
+CONNECT hub41.pin1 -> hub21.hole1~ STIFF
+CONNECT pin2.pin1 -> hub41.hole1~ STIFF
+CONNECT gear162.axlehole1 -> axle81.axle2 LOCKED
+WHY Pins a four-way hub to the rail and adds the next gear of the stack.
+STEP 5
+ADD axle121 3708 black
+WHY Runs the long axle through the gear row so it can carry more gears further down.
+STEP 6
+ADD stub41 87083 darkbluegray
+ADD plate1 60483 darkbluegray
+WHY Adds a stub axle through a small brace plate to hold the next shaft square.
+STEP 7
+ADD pin3 2780 black
+ADD hub11 15100 black
+ADD ring1 18947 darkbluegray
+ADD gear163 94925 ltbluegray
+ADD gear81 10928 darkbluegray
+ADD axle51 32073 ltbluegray
+CONNECT pin3.pin1 -> plate1.hole1~ STIFF
+CONNECT hub11.pin1 -> plate1.hole1~ STIFF
+CONNECT ring1.? -> stub41.axle1~ TURNS
+CONNECT gear163.axlehole1 -> stub41.axle2 LOCKED
+CONNECT gear81.axlehole1 -> stub41.axle3 LOCKED
+WHY Builds a second gear shaft with a spacer bush, pins it to the rail, and hangs a single-pin hub, an unlabeled driving ring and a reinforced 8-tooth gear on the cluster.
+STEP 8
+ADD crown1 3648 darkbluegray
+ADD axle71 44294 ltbluegray
+ADD pin4 2780 black
+ADD plate2 60483 darkbluegray
+ADD gear164 94925 ltbluegray
+ADD pin5 2780 black
+ADD hub42 55615 ltbluegray
+ADD plate3 60483 darkbluegray
+CONNECT crown1.? -> axle51.axle1~ TURNS
+CONNECT pin4.pin1 -> hub11.hole1~ STIFF
+CONNECT gear164.axlehole1 -> axle71.axle1 LOCKED
+CONNECT pin5.pin1 -> plate2.hole1~ STIFF
+CONNECT hub42.pin1 -> plate2.hole1~ STIFF
+WHY Finishes the first cluster: a crown gear, a stop axle, more pins and plates, a gear and a four-way hub close off the shaft row.
+STEP 10
+ADD pin6 2780 black
+CONNECT pin6.pin1 -> plate3.hole1~ STIFF
+WHY Important: starts the second box frame - its open window must face the gear stack already built, or the shafts won't clear it.
+STEP 11
+ADD frame1 64179 ltbluegray
+ADD gear165 94925 ltbluegray
+ADD bush2 6538c darkbluegray
+CONNECT gear165.axlehole1 -> axle71.axle2 LOCKED
+CONNECT bush2.? -> axle71.axle3~ TURNS
+WHY Fits the main side frame onto the rail assembly and builds another gear and spacer bush into it.
+STEP 12
+ADD pin7 2780 black
+ADD plate4 60483 darkbluegray
+ADD hub43 55615 ltbluegray
+CONNECT pin7.pin1 -> frame1.hole1~ STIFF
+CONNECT hub43.pin1 -> plate4.hole1~ STIFF
+WHY Pins the frame, adds a brace plate and a four-way hub to carry the next shaft.
+STEP 13
+ADD pin8 2780 black
+CONNECT pin8.pin1 -> hub43.hole1~ STIFF
+WHY Pins the frame near the gear row to keep it from sliding sideways.
+STEP 14
+ADD gear166 94925 ltbluegray
+CONNECT gear166.axlehole1 -> axle71.axle4 LOCKED
+WHY Adds one more gear to the stack.
+STEP 15
+WHY Important: flip the sub-assembly here - the remaining pins go in from the face shown on the next page.
+STEP 16
+ADD pin9 2780 black
+ADD plate5 60483 darkbluegray
+CONNECT pin9.pin1 -> hub43.hole2~ STIFF
+WHY Pins the frame and braces it with a plate.
+STEP 17
+ADD hub44 55615 ltbluegray
+ADD pin10 2780 black
+CONNECT hub44.pin1 -> plate5.hole1~ STIFF
+CONNECT pin10.pin1 -> hub44.hole1~ STIFF
+WHY Adds a four-way hub and a pin to carry the next stub shaft.
+STEP 18
+ADD topbeam1 41239 ltbluegray
+WHY Lays the long 13-hole beam across the top of both frames to tie the whole gearbox box together.
+STEP 19
+ADD gear167 94925 ltbluegray
+ADD pin11 2780 black
+CONNECT gear167.axlehole1 -> axle71.axle5 LOCKED
+CONNECT pin11.pin1 -> topbeam1.hole1~ STIFF
+WHY Adds a gear and pins it in place on the long axle.
+STEP 20
+ADD rail2 14720 ltbluegray
+ADD pin12 2780 black
+CONNECT pin12.pin1 -> rail2.hole1~ STIFF
+WHY Adds the second long rail and a pin to start closing the far side of the box.
+STEP 21
+ADD gear168 94925 ltbluegray
+CONNECT gear168.axlehole1 -> axle71.axle6 LOCKED
+WHY Adds one more gear to the long axle.
+STEP 22
+ADD hub22 87082 ltbluegray
+ADD axle62 3706 black
+CONNECT hub22.pin1 -> rail2.hole2~ STIFF
+WHY Connects a hub coupler and locks the next axle into the frame.
+STEP 23
+ADD bevel2 32270 black
+ADD axle32 4519 ltbluegray
+CONNECT bevel2.axlehole1 -> axle62.axle1 LOCKED
+WHY Locks a double-bevel gear and a short axle onto the stepper cluster.
+STEP 24
+ADD axle82 3707 black
+ADD bush3 6538c darkbluegray
+CONNECT bush3.? -> axle82.axle1~ TURNS
+WHY Threads a reinforced 8-tooth gear with its drive axle through a brace plate.
+STEP 25
+ADD hub45 55615 ltbluegray
+ADD pin13 2780 black
+CONNECT hub45.pin1 -> hub22.hole1~ STIFF
+CONNECT pin13.pin1 -> hub45.hole1~ STIFF
+WHY Adds a four-way hub and a pin to brace the next shaft.
+STEP 26
+ADD gear169 94925 ltbluegray
+ADD plate6 60483 darkbluegray
+CONNECT gear169.axlehole1 -> axle82.axle2 LOCKED
+WHY Adds a gear and a brace plate to the output row.
+STEP 27
+ADD pin14 2780 black
+ADD hub12 15100 black
+CONNECT pin14.pin1 -> plate6.hole1~ STIFF
+CONNECT hub12.pin1 -> plate6.hole1~ STIFF
+WHY Pins the frame and adds a single-pin hub for the output shaft's bearing.
+STEP 28
+ADD ring2 18947 darkbluegray
+ADD gear82 10928 darkbluegray
+CONNECT ring2.? -> axle82.axle3~ TURNS
+CONNECT gear82.axlehole1 -> axle82.axle4 LOCKED
+WHY Adds the driving ring and the matching reinforced gear for the sequential shift.
+STEP 29
+ADD axle52 32073 ltbluegray
+ADD crown2 3648 darkbluegray
+CONNECT crown2.? -> axle52.axle1~ TURNS
+WHY Adds a short axle and the last crown-style spacer onto the stepper cluster.
+STEP 30
+ADD pin15 2780 black
+ADD plate7 60483 darkbluegray
+CONNECT pin15.pin1 -> hub12.hole1~ STIFF
+WHY Pins and braces the frame around the finished gear cluster.
+STEP 31
+ADD pin16 2780 black
+ADD hub46 55615 ltbluegray
+CONNECT pin16.pin1 -> plate7.hole1~ STIFF
+CONNECT hub46.pin1 -> plate7.hole1~ STIFF
+WHY Pins the frame and adds a four-way hub for the next bearing point.
+STEP 32
+ADD frame2 64179 ltbluegray
+ADD plate8 60483 darkbluegray
+WHY Fits the second box frame and braces it with a plate, closing the far end of the gearbox.
+STEP 33
+ADD pin17 2780 black
+ADD bush4 6538c darkbluegray
+CONNECT pin17.pin1 -> plate8.hole1~ STIFF
+CONNECT bush4.? -> axle52.axle2~ TURNS
+WHY Pins the frame and threads another spacer bush onto the output shaft.
+STEP 34
+ADD hub23 87082 ltbluegray
+ADD axle63 3706 black
+CONNECT hub23.pin1 -> plate8.hole1~ STIFF
+WHY Adds a hub coupler and locks the last short axle for the stepper fork.
+STEP 35
+ADD bevel3 32270 black
+ADD axle33 4519 ltbluegray
+CONNECT bevel3.axlehole1 -> axle63.axle1 LOCKED
+WHY Locks the last bevel gear and short axle pair into the stepper cluster.
+STEP 36
+ADD axle83 3707 black
+WHY Adds the last gear axle to finish the gear row.
+STEP 37
+ADD bush5 6538c darkbluegray
+ADD axle53 32073 ltbluegray
+ADD hub24 87082 ltbluegray
+CONNECT bush5.? -> axle83.axle1~ TURNS
+CONNECT hub24.pin1 -> hub23.hole1~ STIFF
+WHY Finishes the stepper cluster: the last spacer bush, short axle and hub coupler form the shift fork.
+STEP 38
+ADD axle64 3706 black
+WHY Adds the last gear axle, completing every ratio pair in the stack.
+STEP 39
+WHY Important: check every shaft spins freely by hand before closing the box - nothing should bind.
+STEP 40
+WHY Closes the gearbox: all four gear pairs are in place and the stepper fork can slide the drive between them.
