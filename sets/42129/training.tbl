@@ -2884,3 +2884,144 @@ STEP 328
 ATTACH ec
 CONNECT ec-plate-1.stud1? -> ds-beam7-3.stud1? STIFF
 WHY Places the finished cover on the front frame beside the hose and tan pin.
+STEP 329
+WHY Shows where the cable should sit under the cover as the circle points out, before the next parts go on.
+STEP 330
+GROUP ed
+ADD ed-lpin-1 11214 red
+ADD ed-round-1 4032a black
+ADD ed-cyl-1 3941 black
+ADD ed-stud-1 85861 black
+ADD ed-tile-1 98138 black
+ADD ed-disc-1 15535 black
+ADD ed-bracket-1 99780 black
+ADD ed-cone-1 59900 black
+CONNECT ed-cyl-1.axlehole1 -> ed-round-1.axlehole1? LOCKED
+CONNECT ed-stud-1.stud1? -> ed-cyl-1.stud1? STIFF
+CONNECT ed-tile-1.stud1? -> ed-stud-1.stud1? STIFF
+CONNECT ed-lpin-1.axle1 -> ed-cyl-1.axlehole2? LOCKED
+CONNECT ed-bracket-1.stud1? -> ed-lpin-1.pin2? STIFF
+END
+ATTACH ed
+CONNECT ed-round-1.stud1? -> ec-plate-1.stud3? STIFF
+WHY Builds a round black light housing from a round brick, a plate with an axle hole and tiles, with a red pin through the middle and a small bracket, and sets it on the front frame.
+STEP 331
+GROUP ee
+ADD ee-plate-1 3020 black
+ADD ee-grille-1 2412b black
+ADD ee-grille-2 2412b black
+ADD ee-grille-3 2412b black
+ADD ee-grille-4 2412b black
+ADD ee-gpin-1 4274 lightgray
+ADD ee-gpin-2 4274 lightgray
+CONNECT ee-grille-1.stud1? -> ee-plate-1.stud1? STIFF
+CONNECT ee-grille-2.stud1? -> ee-plate-1.stud3? STIFF
+CONNECT ee-grille-3.stud1? -> ee-plate-1.stud5? STIFF
+CONNECT ee-grille-4.stud1? -> ee-plate-1.stud7? STIFF
+CONNECT ee-gpin-1.pin1 -> ee-plate-1.hole1? TURNS
+CONNECT ee-gpin-2.pin1 -> ee-plate-1.hole2? TURNS
+END
+ATTACH ee
+CONNECT ee-plate-1.hole1? -> ed-round-1.stud2? STIFF
+WHY Builds a grille plate from four grille tiles on a black 2x4 plate with two grey pins underneath, and puts it in the front of the frame in front of the round housing.
+STEP 332
+GROUP se2
+ADD se2-beam11-1 32525 darkgray
+ADD se2-pin-1 61332 black
+ADD se2-pin-2 61332 black
+CONNECT se2-pin-1.pin1 -> se2-beam11-1.hole1~ STIFF
+CONNECT se2-pin-2.pin1 -> se2-beam11-1.hole11~ STIFF
+WHY Starts the seat bench with an 11-long beam and a pin at each end.
+STEP 333
+ADD se2-conn-1 42003 lightgray
+ADD se2-conn-2 42003 lightgray
+CONNECT se2-conn-1.hole1~ -> se2-pin-1.pin2 STIFF
+CONNECT se2-conn-2.hole1~ -> se2-pin-2.pin2 STIFF
+WHY Two light connectors on the end pins are the seat side supports.
+STEP 334
+ADD se2-lblue-1 42924 blue
+ADD se2-lblue-2 42924 blue
+CONNECT se2-lblue-1.pin1 -> se2-beam11-1.hole3~ STIFF
+CONNECT se2-lblue-2.pin1 -> se2-beam11-1.hole9~ STIFF
+WHY Two long blue pins go through the beam near its ends as the posts for the seat backs.
+STEP 335
+ADD se2-pin-3 61332 black
+ADD se2-pin-4 61332 black
+CONNECT se2-pin-3.pin1 -> se2-beam11-1.hole4~ STIFF
+CONNECT se2-pin-4.pin1 -> se2-beam11-1.hole8~ STIFF
+WHY Two black pins next to the blue ones hold the middle of the seat pieces.
+STEP 336
+GROUP se3
+ADD se3-seat-1 24116 black
+ADD se3-conn-1 6536 darkgray
+ADD se3-conn-2 6536 darkgray
+ADD se3-bpin-1 43093 blue
+ADD se3-bpin-2 43093 blue
+ADD se3-lblue-1 42924 blue
+CONNECT se3-bpin-1.pin1 -> se3-conn-1.hole1 STIFF
+CONNECT se3-seat-1.hole1~ -> se3-bpin-1.pin2 STIFF
+CONNECT se3-conn-2.hole1~ -> se3-bpin-2.pin2 STIFF
+CONNECT se3-lblue-1.pin1 -> se3-conn-2.hole2~ STIFF
+END
+ATTACH se3
+CONNECT se3-conn-1.hole2~ -> se2-lblue-1.pin2~ STIFF
+CONNECT se3-lblue-1.pin2 -> se2-pin-3.pin2~ STIFF
+WHY Builds the first seat from a black curved seat panel, two connectors and blue pins in three small steps and fixes it to the bench.
+STEP 337
+ADD se4-bpin-1 43093 blue
+ADD se4-apin-1 18651 black
+CONNECT se4-bpin-1.pin1 -> se2-beam11-1.hole5~ STIFF
+CONNECT se4-apin-1.pin1 -> se2-beam11-1.hole7~ STIFF
+WHY A blue pin and a long black pin go into the bench to hold the middle seat.
+STEP 338
+ADD se5-seat-1 24116 black
+ADD se5-seat-2 24116 black
+CONNECT se5-seat-1.hole1~ -> se4-bpin-1.pin2 STIFF
+CONNECT se5-seat-2.hole1~ -> se2-lblue-2.pin2~ STIFF
+WHY Two more black seat panels go on the bench so there are three seats in a row.
+STEP 339
+GROUP se6
+ADD se6-tball-1 2736 lightgray
+ADD se6-lpin-1 11214 red
+ADD se6-conn-1 6536 darkgray
+ADD se6-pin-1 61332 black
+ADD se6-ring-1 18654 black
+CONNECT se6-pin-1.pin1 -> se6-conn-1.hole1 STIFF
+CONNECT se6-tball-1.pin1? -> se6-pin-1.pin2 TURNS
+CONNECT se6-lpin-1.axle1 -> se6-conn-1.axlehole1 LOCKED
+CONNECT se6-ring-1.hole1 -> se6-lpin-1.pin2 TURNS
+END
+ATTACH se6
+CONNECT se6-conn-1.hole2~ -> se2-beam11-1.hole6~ STIFF
+WHY Builds a small gear-lever knob (a towball on a pin in a connector with a red pin and a black round connector) and fits it between the seats.
+STEP 340
+ADD se7-lblue-1 43093 blue
+ADD se7-lblue-2 43093 blue
+ADD se7-lblue-3 43093 blue
+ADD se7-lblue-4 43093 blue
+ADD se7-lblue-5 43093 blue
+ADD se7-lblue-6 43093 blue
+ADD se7-beam2-1 43857 black
+ADD se7-beam2-2 43857 black
+ADD se7-beam2-3 43857 black
+ADD se7-ring-1 18654 black
+ADD se7-ring-2 18654 black
+ADD se7-ring-3 18654 black
+CONNECT se7-lblue-1.pin1 -> se7-beam2-1.hole1 STIFF
+CONNECT se7-lblue-2.pin1 -> se7-beam2-1.hole2 STIFF
+CONNECT se7-lblue-3.pin1 -> se7-beam2-2.hole1 STIFF
+CONNECT se7-lblue-4.pin1 -> se7-beam2-2.hole2 STIFF
+CONNECT se7-lblue-5.pin1 -> se7-beam2-3.hole1 STIFF
+CONNECT se7-lblue-6.pin1 -> se7-beam2-3.hole2 STIFF
+CONNECT se7-ring-1.hole1 -> se7-beam2-1.hole2~ STIFF
+CONNECT se7-ring-2.hole1 -> se7-beam2-2.hole2~ STIFF
+CONNECT se7-ring-3.hole1 -> se7-beam2-3.hole2~ STIFF
+WHY Three black 2-beams, each with two blue pins and a round connector, are made for the tops of the three seat backs.
+STEP 341
+ADD se8-beam2-1 43857 black
+ADD se8-beam2-2 43857 black
+ADD se8-beam2-3 43857 black
+CONNECT se8-beam2-1.hole1~ -> se7-lblue-1.pin2~ STIFF
+CONNECT se8-beam2-2.hole1~ -> se7-lblue-3.pin2~ STIFF
+CONNECT se8-beam2-3.hole1~ -> se7-lblue-5.pin2~ STIFF
+WHY Three more black 2-beams are fixed on top of the seat backs to make the head rests.
