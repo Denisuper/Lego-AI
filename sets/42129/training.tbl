@@ -354,3 +354,247 @@ ATTACH dm
 CONNECT dm-tbeam-1.hole1~ -> m-pin-4.pin2~ STIFF
 CONNECT dm-axle55-1.axle5~ -> sh-axle9-1.axle5~ TURNS
 WHY Fixes the diff-lock motor next to the differential so its axle can move the orange shifter.
+STEP 34
+GROUP lk
+ADD lk-outer-1 46834 white
+ADD lk-inner-1 46835 darkgray
+ADD lk-axle5-1 32073 yellow
+ADD lk-bevel-1 18575 tan
+ADD lk-lbeam-1 32526 black
+CONNECT lk-inner-1.axlehole1 -> lk-outer-1.axlehole1? TURNS
+CONNECT lk-axle5-1.axle1 -> lk-inner-1.axlehole1 LOCKED
+CONNECT lk-lbeam-1.hole1~ -> lk-axle5-1.axle3~ TURNS
+CONNECT lk-bevel-1.axlehole1 -> lk-axle5-1.axle5 LOCKED
+END
+ATTACH lk
+CONNECT lk-lbeam-1.hole5~ -> d-gpin-3.pin2~ STIFF
+WHY Builds the second clutch half on a yellow axle with a tan bevel gear behind an L-beam, then fits it in beside the differential so the bevel gear can turn the drive.
+STEP 35
+ADD lk-axle2-1 32062 red
+ADD lk-conn-1 59443 darkgray
+CONNECT lk-conn-1.axlehole1 -> lk-axle5-1.axle1~ LOCKED
+CONNECT lk-axle2-1.axle1 -> lk-conn-1.axlehole2 LOCKED
+WHY Adds a short red axle in a connector on the clutch axle, which the gear on top will slide on.
+STEP 36
+ADD lk-gear16-1 94925 lightgray
+ADD lk-gear16-2 94925 lightgray
+CONNECT lk-gear16-1.axlehole1 -> lk-axle2-1.axle2~ LOCKED
+CONNECT lk-gear16-2.axlehole1 -> g8-axle7-1.axle4~ LOCKED
+MESH lk-gear16-1.teeth t-gear16-2.teeth
+MESH lk-gear16-2.teeth ig-gear24-1.teeth
+WHY Two 16-tooth gears finish the gear train from the motors down to the differential.
+STEP 37
+GROUP bt
+ADD bt-beam3-1 32523 white
+ADD bt-hub-1 65489 lightgray
+CONNECT bt-hub-1.pin1~ -> bt-beam3-1.hole1 STIFF
+CONNECT bt-hub-1.pin2~ -> bt-beam3-1.hole3 STIFF
+END
+ADD bt-beam11-1 32525 darkgray
+ATTACH bt
+CONNECT bt-beam11-1.hole2~ -> bt-hub-1.pin3~ STIFF
+CONNECT bt-beam11-1.hole4~ -> bt-hub-1.pin4~ STIFF
+WHY A white beam with a pin hub is hung under an 11-long beam that bridges across the top of the gear train.
+STEP 38
+ADD bt-gpin-1 65304 lightgray
+ADD bt-gpin-2 65304 lightgray
+CONNECT bt-gpin-1.pin1 -> bt-beam11-1.hole1~ STIFF
+CONNECT bt-gpin-2.pin1 -> bt-beam11-1.hole11~ STIFF
+WHY Adds two grey pins at each end of the 11-beam to hold it down on the posts.
+STEP 39
+ADD cv-beam3-1 32523 white
+ADD cv-female-1 52730 darkgray
+ADD cv-ball-1 77590 lightgray
+CONNECT cv-ball-1.axlehole1? -> cv-female-1.ball1? TURNS
+CONNECT cv-beam3-1.hole1~ -> cv-ball-1.pin1? STIFF
+WHY Builds a ball joint (a ball and socket that can swing every way) on a white beam and fits it in front of the differential, as the first step of the drive-shaft joint.
+STEP 40
+GROUP sd
+ADD sd-panel-1 71709 black
+ADD sd-panel-2 71709 black
+ADD sd-beam3-1 32523 white
+ADD sd-beam3-2 32523 white
+ADD sd-conn-1 62462 white
+ADD sd-conn-2 62462 white
+ADD sd-conn-3 62462 white
+ADD sd-conn-4 62462 white
+ADD sd-lblue-1 42924 blue
+ADD sd-lblue-2 42924 blue
+ADD sd-lblue-3 42924 blue
+ADD sd-lblue-4 42924 blue
+ADD sd-lblue-5 42924 blue
+ADD sd-lblue-6 42924 blue
+ADD sd-lblue-7 42924 blue
+ADD sd-lblue-8 42924 blue
+CONNECT sd-lblue-1.pin1 -> sd-beam3-1.hole1 STIFF
+CONNECT sd-lblue-2.pin1 -> sd-beam3-1.hole3 STIFF
+CONNECT sd-panel-1.hole1~ -> sd-lblue-1.pin2 STIFF
+CONNECT sd-panel-1.hole3~ -> sd-lblue-2.pin2 STIFF
+CONNECT sd-lblue-3.pin1 -> sd-panel-1.hole5~ STIFF
+CONNECT sd-lblue-4.pin1 -> sd-panel-1.hole7~ STIFF
+CONNECT sd-conn-1.hole1~ -> sd-lblue-3.pin2 STIFF
+CONNECT sd-conn-2.hole1~ -> sd-lblue-4.pin2 STIFF
+END
+ATTACH sd
+CONNECT sd-panel-2.hole1~ -> m-pin-1.pin2~ STIFF
+WHY Builds two side panels, each a 3x7 panel with a white beam and white slotted connectors held on blue pins, and fits them on both sides of the motor block.
+STEP 41
+GROUP ch2
+ADD c2-axle9-1 60485 yellow
+ADD c2-beam2-1 60483 darkgray
+CONNECT c2-axle9-1.axle1 -> c2-beam2-1.axlehole1? LOCKED
+WHY Starts a small drive-shaft piece: a yellow 9-long axle locked into a grey beam at one end.
+STEP 42
+ADD c2-conn-1 6536 white
+ADD c2-beam2-2 60483 darkgray
+CONNECT c2-axle9-1.axle9 -> c2-beam2-2.axlehole1? LOCKED
+CONNECT c2-conn-1.axlehole1 -> c2-axle9-1.axle2~ LOCKED
+WHY Puts a second grey beam on the far end of the axle and a white connector near the first beam.
+STEP 43
+ADD c2-pin-1 61332 black
+ADD c2-conn-2 62462 white
+CONNECT c2-pin-1.pin1 -> c2-beam2-2.hole1~ STIFF
+CONNECT c2-conn-2.hole1~ -> c2-pin-1.pin2 STIFF
+WHY Adds a black pin and a white slotted connector as a bearing sleeve on the end.
+STEP 44
+ADD c2-lbeam-1 32140 darkgray
+ADD c2-hub-1 65489 lightgray
+CONNECT c2-lbeam-1.hole1~ -> c2-axle9-1.axle5~ TURNS
+CONNECT c2-hub-1.pin1~ -> c2-lbeam-1.hole3~ STIFF
+WHY A 2x4 L-beam on the yellow axle and a 4-pin hub give the sleeve something to attach to.
+STEP 45
+ADD c2-trip-1 63869 lightgray
+ADD c2-cross-1 44874 black
+CONNECT c2-trip-1.hole1~ -> c2-hub-1.pin2~ STIFF
+CONNECT c2-cross-1.pin1~ -> c2-trip-1.hole2~ STIFF
+WHY Adds a triple connector and a small black cross piece to extend the hub sideways.
+STEP 46
+ADD c2-beam2-3 60483 darkgray
+ADD c2-lbeam-2 32140 darkgray
+CONNECT c2-beam2-3.axlehole1? -> c2-axle9-1.axle9 LOCKED
+CONNECT c2-lbeam-2.hole1~ -> c2-cross-1.pin2~ STIFF
+WHY Locks a third grey beam on the yellow axle and adds a second L-beam to close the frame around the shaft.
+STEP 47
+ADD c2-pin-2 61332 black
+ADD c2-bush-1 3713 red
+CONNECT c2-pin-2.pin1 -> c2-lbeam-2.hole3~ STIFF
+CONNECT c2-bush-1.axlehole1 -> c2-axle9-1.axle8~ LOCKED
+WHY A red bush holds the beams on the axle and a black pin fixes the L-beam.
+STEP 48
+ADD c2-conn-3 62462 white
+ADD c2-beam2-4 60483 darkgray
+CONNECT c2-conn-3.hole1~ -> c2-pin-2.pin2 STIFF
+CONNECT c2-beam2-4.hole1~ -> c2-conn-3.hole2~ STIFF
+WHY Finishes the drive-shaft piece with a white sleeve and a last grey beam at the end.
+STEP 49
+ADD c2-ring-1 18654 lightgray
+ADD c2-lpin-1 11214 red
+CONNECT c2-lpin-1.pin1 -> c2-lbeam-2.hole2~ STIFF
+CONNECT c2-ring-1.hole1 -> c2-lpin-1.pin2 TURNS
+WHY Adds a red pin and a round 1L connector to the drive-shaft piece so it can be hung from the frame.
+STEP 50
+ATTACH ch2
+CONNECT c2-lbeam-1.hole5~ -> d-gpin-3.pin2~ STIFF
+CONNECT c2-axle9-1.axle1 -> d-ring-1.axlehole1? TURNS
+WHY Fits the finished drive-shaft piece into the front of the frame between the two side panels.
+STEP 51
+ADD y-gear16-1 94925 lightgray
+ADD y-bevel-1 18575 tan
+CONNECT y-gear16-1.axlehole1 -> c2-axle9-1.axle3~ LOCKED
+CONNECT y-bevel-1.axlehole1 -> lk-axle5-1.axle1~ LOCKED
+MESH y-gear16-1.teeth y-bevel-1.teeth
+WHY Adds a 16-tooth gear and a tan bevel gear that turn the drive through a right angle.
+STEP 52
+ADD y-ball-1 77590 lightgray
+ADD y-female-1 52730 darkgray
+CONNECT y-ball-1.axlehole1? -> y-female-1.ball1? TURNS
+CONNECT y-female-1.axle1? -> c2-axle9-1.axle9 LOCKED
+WHY Adds a ball joint on the end of the drive shaft so it can bend around the frame.
+STEP 53
+GROUP fl
+ADD fl-panel-1 64782 black
+ADD fl-pin-1 61332 black
+ADD fl-pin-2 61332 black
+ADD fl-hub-1 65487 darkgray
+ADD fl-hub-2 65487 darkgray
+CONNECT fl-pin-1.pin1 -> fl-panel-1.hole1~ STIFF
+CONNECT fl-pin-2.pin1 -> fl-panel-1.hole11~ STIFF
+CONNECT fl-hub-1.pin1 -> fl-panel-1.hole3~ STIFF
+CONNECT fl-hub-2.pin1 -> fl-panel-1.hole9~ STIFF
+WHY Starts the truck floor with a big black 5x11 panel with two pins and two hubs on its underside.
+STEP 54
+ADD fl-panel-2 15458 black
+CONNECT fl-panel-2.hole1~ -> fl-pin-1.pin2 STIFF
+CONNECT fl-panel-2.hole11~ -> fl-pin-2.pin2 STIFF
+WHY Joins a 3x11 panel to the first panel to widen the floor.
+STEP 55
+ADD fl-pin-3 61332 black
+ADD fl-pin-4 61332 black
+ADD fl-bpin-1 43093 blue
+ADD fl-bpin-2 43093 blue
+CONNECT fl-pin-3.pin1 -> fl-panel-2.hole5~ STIFF
+CONNECT fl-pin-4.pin1 -> fl-panel-2.hole7~ STIFF
+CONNECT fl-bpin-1.pin1 -> fl-panel-1.hole5~ STIFF
+CONNECT fl-bpin-2.pin1 -> fl-panel-1.hole7~ STIFF
+WHY Adds black and blue pins along the join so the floor panels are held together.
+STEP 56
+ADD fl-pin-5 61332 black
+ADD fl-pin-6 61332 black
+ADD fl-bpin-3 43093 blue
+ADD fl-bpin-4 43093 blue
+CONNECT fl-pin-5.pin1 -> fl-panel-1.hole2~ STIFF
+CONNECT fl-pin-6.pin1 -> fl-panel-1.hole10~ STIFF
+CONNECT fl-bpin-3.pin1 -> fl-panel-2.hole2~ STIFF
+CONNECT fl-bpin-4.pin1 -> fl-panel-2.hole10~ STIFF
+WHY Adds the last pins along the floor edge so the whole floor can be turned over and fixed onto the chassis.
+STEP 57
+ATTACH fl
+CONNECT fl-bpin-1.pin2 -> d-panel-1.hole3~ STIFF
+CONNECT fl-bpin-3.pin2 -> d-panel-2.hole3~ STIFF
+WHY Fixes the finished floor over the gearbox and motors as the first closed deck of the chassis.
+STEP 58
+ADD r-beam11-1 32525 darkgray
+ADD r-beam11-2 32525 darkgray
+CONNECT r-beam11-1.hole1~ -> m-pin-3.pin2~ STIFF
+CONNECT r-beam11-2.hole1~ -> m-pin-7.pin2~ STIFF
+WHY Lays two long 11-beams along the sides to carry the cross frames.
+STEP 59
+GROUP rf
+ADD rf-frame-1 39794 black
+ADD rf-ball-1 32184 darkgray
+ADD rf-hub-1 65487 lightgray
+ADD rf-hub-2 65487 lightgray
+ADD rf-bpin-1 43093 blue
+ADD rf-pin-1 61332 black
+ADD rf-pin-2 61332 black
+CONNECT rf-hub-1.pin1 -> rf-frame-1.hole8~ STIFF
+CONNECT rf-hub-2.pin1 -> rf-frame-1.hole3~ STIFF
+CONNECT rf-ball-1.hole1 -> rf-bpin-1.pin2 STIFF
+CONNECT rf-bpin-1.pin1 -> rf-frame-1.hole1~ STIFF
+CONNECT rf-pin-1.pin1 -> rf-hub-1.hole1 STIFF
+CONNECT rf-pin-2.pin1 -> rf-hub-2.hole1 STIFF
+WHY Starts a rigid 7x11 rectangular frame with two hubs inside for pins, a blue pin on the side and a connector on it.
+END
+ATTACH rf
+CONNECT rf-frame-1.hole2~ -> r-beam11-1.hole10~ STIFF
+CONNECT rf-frame-1.hole10~ -> r-beam11-2.hole10~ STIFF
+STEP 60
+GROUP rg
+ADD rg-frame-1 39794 black
+ADD rg-ball-1 32184 darkgray
+ADD rg-hub-1 65487 lightgray
+ADD rg-hub-2 65487 lightgray
+ADD rg-bpin-1 43093 blue
+ADD rg-pin-1 61332 black
+ADD rg-pin-2 61332 black
+CONNECT rg-hub-1.pin1 -> rg-frame-1.hole8~ STIFF
+CONNECT rg-hub-2.pin1 -> rg-frame-1.hole3~ STIFF
+CONNECT rg-ball-1.hole1 -> rg-bpin-1.pin2 STIFF
+CONNECT rg-bpin-1.pin1 -> rg-frame-1.hole11~ STIFF
+CONNECT rg-pin-1.pin1 -> rg-hub-1.hole1 STIFF
+CONNECT rg-pin-2.pin1 -> rg-hub-2.hole1 STIFF
+END
+ATTACH rg
+CONNECT rg-frame-1.hole2~ -> r-beam11-1.hole3~ STIFF
+CONNECT rg-frame-1.hole10~ -> r-beam11-2.hole3~ STIFF
+WHY Builds a second 7x11 frame the other way round and fixes it at the other end of the two long beams so the chassis has a box at both ends.
