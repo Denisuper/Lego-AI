@@ -3839,3 +3839,159 @@ CONNECT rl-tan-2.stud1? -> rl-pin-2.pin2? STIFF
 CONNECT rl-bar-1.bar1? -> rt-round-1.hole2? TURNS
 CONNECT rl-bar-2.bar1? -> rt-round-2.hole2? TURNS
 WHY Two small tan round tops on black bars are pushed into the two beacon lamp bases to finish the amber warning lights.
+STEP 441
+ADD ro-bpin-1 43093 blue
+ADD ro-bpin-2 43093 blue
+ADD ro-tube-1 42135 black
+ADD ro-tube-2 42135 black
+ADD ro-ang-1 32013 black
+ADD ro-ang-2 32013 black
+CONNECT ro-bpin-1.pin1 -> ro-ang-1.hole1~ STIFF
+CONNECT ro-bpin-2.pin1 -> ro-ang-2.hole1~ STIFF
+CONNECT ro-tube-1.axlehole1 -> ro-ang-1.axlehole1 LOCKED
+CONNECT ro-tube-2.axlehole1 -> ro-ang-2.axlehole1 LOCKED
+CONNECT ro-ang-1.hole2~ -> rf3-pin-5.pin2~ STIFF
+CONNECT ro-ang-2.hole2~ -> rf3-pin-6.pin2~ STIFF
+WHY Two black angled connectors, each with a blue pin and a black tube, are pushed onto the roof as the stubs for the rear bar.
+STEP 442
+GROUP rp
+ADD rp-elbow-1 25214 black
+ADD rp-lpin-1 11214 red
+ADD rp-bpin-1 43093 blue
+CONNECT rp-bpin-1.pin1 -> rp-elbow-1.axlehole1 STIFF
+CONNECT rp-lpin-1.axle1 -> rp-elbow-1.axlehole2 LOCKED
+WHY Starts the front grille bar: one black elbow tube with a red pin and a blue pin.
+STEP 443
+ADD rp-tube-1 42135 black
+CONNECT rp-tube-1.axlehole1 -> rp-bpin-1.axle1 LOCKED
+WHY A black tube piece goes on the blue pin as the first straight run.
+STEP 444
+ADD rp-cross-1 6536 black
+ADD rp-tube-2 42135 black
+CONNECT rp-cross-1.axlehole1 -> rp-tube-1.axlehole2 LOCKED
+CONNECT rp-tube-2.axlehole1 -> rp-cross-1.hole1~ TURNS
+WHY A cross connector and another tube extend the bar.
+STEP 445
+ADD rp-pin-1 61332 black
+ADD rp-tube-3 42135 black
+CONNECT rp-pin-1.pin1 -> rp-tube-2.axlehole2 STIFF
+CONNECT rp-tube-3.axlehole1 -> rp-pin-1.pin2 TURNS
+WHY A black pin and a third tube extend the bar again.
+STEP 446
+ADD rp-pin-2 61332 black
+ADD rp-tube-4 42135 black
+CONNECT rp-pin-2.pin1 -> rp-tube-3.axlehole2 STIFF
+CONNECT rp-tube-4.axlehole1 -> rp-pin-2.pin2 TURNS
+WHY A fourth tube makes the bar long enough for the full height of the cab's front.
+STEP 447
+ADD rp-bpin-2 43093 blue
+ADD rp-ang-1 32013 black
+CONNECT rp-bpin-2.pin1 -> rp-tube-4.axlehole2 STIFF
+CONNECT rp-ang-1.hole1~ -> rp-bpin-2.pin2 TURNS
+END
+WHY A blue pin and an angled connector finish the lower end of the grille bar.
+STEP 448
+ADD rp-axle3-1 24316 reddishbrown
+ATTACH rp
+CONNECT rp-axle3-1.axle1 -> rp-ang-1.hole2~ TURNS
+CONNECT rp-axle3-1.axle3 -> dn-beam11-1.hole9~ TURNS
+WHY Turns the truck over, fits the grille bar down the cab's front corner and pushes a brown axle with a stop through its lower end to hold it.
+STEP 449
+GROUP rq
+ADD rq-ell-1 71708 black
+ADD rq-bpin-1 43093 blue
+ADD rq-pin-1 61332 black
+CONNECT rq-bpin-1.pin1 -> rq-ell-1.hole1~ STIFF
+CONNECT rq-pin-1.pin1 -> rq-ell-1.hole3~ STIFF
+WHY Starts a bumper bracket: a dark grey quarter-ellipse beam with a blue pin and a black pin.
+STEP 450
+ADD rq-lbeam-1 32526 black
+CONNECT rq-lbeam-1.hole1~ -> rq-pin-1.pin2 STIFF
+WHY A black 3x5 L-beam is set on the pin to make the bracket's arm.
+STEP 451
+ADD rq-lbeam-2 32526 black
+ADD rq-tbeam-1 60484 black
+ADD rq-lpin-1 11214 red
+ADD rq-bpin-2 43093 blue
+CONNECT rq-lpin-1.pin1 -> rq-tbeam-1.hole2~ STIFF
+CONNECT rq-bpin-2.pin1 -> rq-tbeam-1.hole1~ STIFF
+CONNECT rq-lbeam-2.hole1~ -> rq-tbeam-1.hole3~ STIFF
+CONNECT rq-tbeam-1.hole5~ -> rq-ell-1.hole2~ STIFF
+WHY A T-beam with a red pin, a blue pin and a second L-beam widen the bracket into a corner shape.
+STEP 452
+ADD rq-pin-2 61332 black
+ADD rq-pin-3 61332 black
+CONNECT rq-pin-2.pin1 -> rq-lbeam-1.hole3~ STIFF
+CONNECT rq-pin-3.pin1 -> rq-lbeam-2.hole3~ STIFF
+WHY Two black pins on the bracket's arms hold the next piece.
+STEP 453
+ADD rq-bush-1 3713 black
+ADD rq-conn-1 6536 black
+CONNECT rq-bush-1.axlehole1 -> rq-pin-2.axle1? LOCKED
+CONNECT rq-conn-1.hole1~ -> rq-lbeam-1.hole5~ STIFF
+WHY A bush and a small connector go on the bracket's pins.
+STEP 454
+ADD rq-beam2-1 41677 black
+ADD rq-beam2-2 41677 black
+ADD rq-cb-1 39793 lightgray
+ADD rq-bpin-3 43093 blue
+CONNECT rq-bpin-3.pin1 -> rq-cb-1.hole1~ STIFF
+CONNECT rq-beam2-1.hole1~ -> rq-bpin-3.pin2 STIFF
+CONNECT rq-beam2-2.hole1~ -> rq-lbeam-2.hole5~ STIFF
+CONNECT rq-cb-1.hole3~ -> rq-conn-1.hole2~ STIFF
+WHY A light connector beam with a blue pin and two thin black beams make the bracket's crossbar.
+STEP 455
+ADD rq-axle4-1 3705 darkgray
+ADD rq-pin-4 61332 black
+CONNECT rq-axle4-1.axle1 -> rq-lbeam-2.hole1~ TURNS
+CONNECT rq-pin-4.pin1 -> rq-lbeam-1.hole2~ STIFF
+WHY A 4-long axle slides through the bracket's corner as its pivot, with a black pin beside it.
+STEP 456
+WHY Turns the bracket over to show its far side before it is fitted.
+STEP 457
+ATTACH rq
+CONNECT rq-axle4-1.axle4 -> rp-ang-1.hole2~ TURNS
+WHY Fits the finished bracket onto the truck in front of the cab, beside the grille bar.
+STEP 458
+GROUP rv2
+ADD rv2-bpin-1 43093 blue
+ADD rv2-elbow-1 25214 black
+ADD rv2-lpin-1 11214 red
+CONNECT rv2-bpin-1.pin1 -> rv2-elbow-1.axlehole1 STIFF
+CONNECT rv2-lpin-1.axle1 -> rv2-elbow-1.axlehole2 LOCKED
+WHY Starts the second grille bar the same way as the first: one elbow tube with a blue pin and a red pin.
+STEP 459
+ADD rv2-tube-1 42135 black
+CONNECT rv2-tube-1.axlehole1 -> rv2-bpin-1.axle1 LOCKED
+WHY A black tube piece goes on the blue pin.
+STEP 460
+ADD rv2-cross-1 6536 black
+ADD rv2-tube-2 42135 black
+CONNECT rv2-cross-1.axlehole1 -> rv2-tube-1.axlehole2 LOCKED
+CONNECT rv2-tube-2.axlehole1 -> rv2-cross-1.hole1~ TURNS
+WHY A cross connector and another tube extend the bar.
+STEP 461
+ADD rv2-pin-1 61332 black
+ADD rv2-tube-3 42135 black
+CONNECT rv2-pin-1.pin1 -> rv2-tube-2.axlehole2 STIFF
+CONNECT rv2-tube-3.axlehole1 -> rv2-pin-1.pin2 TURNS
+WHY A black pin and a third tube extend the bar again.
+STEP 462
+ADD rv2-pin-2 61332 black
+ADD rv2-tube-4 42135 black
+CONNECT rv2-pin-2.pin1 -> rv2-tube-3.axlehole2 STIFF
+CONNECT rv2-tube-4.axlehole1 -> rv2-pin-2.pin2 TURNS
+WHY A fourth tube makes the bar long enough.
+STEP 463
+ADD rv2-bpin-2 43093 blue
+ADD rv2-ang-1 32013 black
+CONNECT rv2-bpin-2.pin1 -> rv2-tube-4.axlehole2 STIFF
+CONNECT rv2-ang-1.hole1~ -> rv2-bpin-2.pin2 TURNS
+END
+WHY A blue pin and an angled connector finish the lower end of this bar.
+STEP 464
+ADD rv2-axle3-1 24316 reddishbrown
+ATTACH rv2
+CONNECT rv2-axle3-1.axle1 -> rv2-ang-1.hole2~ TURNS
+CONNECT rv2-axle3-1.axle3 -> dp-beam11-1.hole9~ TURNS
+WHY Turns the truck over and fits the second grille bar down the cab's other front corner, held by a brown axle with a stop.
