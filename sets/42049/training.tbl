@@ -1024,6 +1024,7 @@ ADD p32140-1 32140 black
 ADD p32316-5 32316 black
 ADD p2780-35 2780 black
 ADD p32054-11 32054 black
+ADD p32054-12 32054 black
 ADD p4519-linkage1 4519 lightgray
 ADD p32062-14 32062 red
 ADD p60483-13 60483 black
@@ -1032,6 +1033,7 @@ CONNECT p2780-35.pin2 -> p32316-5.hole4 STIFF
 CONNECT p32054-11.pin1 -> p32140-1.hole3 STIFF
 CONNECT p32054-11.pin2 -> p32316-5.hole3 STIFF
 CONNECT p4519-linkage1.axle3~ -> p32054-11.axlehole1 LOCKED
+CONNECT p4519-linkage1.axle1~ -> p32054-12.axlehole1 LOCKED
 CONNECT p32062-14.axle1 -> p32140-1.axlehole1 LOCKED
 CONNECT p32062-14.axle2 -> p60483-13.axlehole1 LOCKED
 WHY Makes a rigid side lever from the L beam and five-hole bar, with a grey three-length axle through the long pin and a red axle at its other end.
@@ -1084,8 +1086,8 @@ END
 ATTACH left-lift-link
 CONNECT p3673-5.pin1 -> p32316-7.hole1 TURNS
 CONNECT p3673-2.pin2 -> p32316-7.hole5 TURNS
-CONNECT p4519-linkage1.axle1~ -> p32316-7.hole3 TURNS
-CONNECT p4519-linkage1.axle2~ -> p32140-2.hole3 TURNS
+CONNECT p32054-12.pin2 -> p32316-7.hole3 STIFF
+CONNECT p32054-12.pin1 -> p32140-2.hole3 STIFF
 CONNECT p32556-1.pin1 -> p60483-14.hole1 TURNS
 WHY Fits the opposite lift lever over the grey pivot pins and exposed three-length cross axle, then connects its lug to the other end of the hand lever.
 STEP 115
@@ -1345,3 +1347,168 @@ CONNECT p6558-2.pin3 -> p32526-11.hole1 STIFF
 CONNECT p32054-14.pin2 -> p60483-4.hole1 STIFF
 CONNECT p18651-11.pin1 -> p40490-7.hole9 STIFF
 WHY Builds the opposite rear side frame and fits it over the existing chassis pins and the free end of the upper rear crossbar.
+STEP 144
+ADD p32062-18 32062 red
+ADD p6536-21 6536 yellow
+CONNECT p32062-18.axle1 -> p42003-8.axlehole1 LOCKED
+CONNECT p32062-18.axle2 -> p6536-21.axlehole1 LOCKED
+WHY Adds the mirrored yellow rear-body mount on a red axle in the grey side connector.
+STEP 145
+GROUP rear-bumper
+ADD p32184-10 32184 black
+ADD p18651-12 18651 black
+ADD p18651-13 18651 black
+CONNECT p18651-12.axle2 -> p32184-10.axlehole1 LOCKED
+CONNECT p18651-13.axle2 -> p32184-10.axlehole2 LOCKED
+WHY Starts the rear bumper with two axle pins through the parallel cross holes of the black connector.
+STEP 146
+ADD p32524-5 32524 yellow
+CONNECT p18651-12.pin1 -> p32524-5.hole3 STIFF
+CONNECT p18651-13.pin1 -> p32524-5.hole5 STIFF
+WHY Adds the first yellow seven-hole bumper rail across the two pins with one empty hole between them.
+STEP 147
+ADD p15100-4 15100 black
+ADD p15100-5 15100 black
+ADD p4274-10 4274 lightgray
+ADD p4274-11 4274 lightgray
+ADD p6141-6 6141 transred
+ADD p6141-7 6141 transred
+CONNECT p4274-10.pin1 -> p15100-4.hole1 TURNS
+CONNECT p4274-11.pin1 -> p15100-5.hole1 TURNS
+CONNECT p4274-10.? -> p6141-6.? LOCKED
+CONNECT p4274-11.? -> p6141-7.? LOCKED
+CONNECT p15100-4.pin1 -> p32524-5.hole2 STIFF
+CONNECT p15100-5.pin1 -> p32524-5.hole6 STIFF
+WHY Builds two red rear lamps on short grey pins and places their right-angle bases beside the bumper's central connector.
+STEP 148
+ADD p6558-21 6558 blue
+ADD p6558-22 6558 blue
+CONNECT p6558-21.pin1 -> p32524-5.hole1 STIFF
+CONNECT p6558-22.pin1 -> p32524-5.hole7 STIFF
+WHY Inserts a long blue pin into each end of the bumper rail for the curved corner panels.
+STEP 149
+ADD p24116-3 24116 yellow
+ADD p24116-4 24116 yellow
+CONNECT p6558-21.pin2 -> p24116-3.hole1 STIFF
+CONNECT p6558-22.pin2 -> p24116-4.hole1 STIFF
+WHY Fits the two curved yellow corner panels over the end pins with their free mounting holes above the bumper.
+STEP 150
+ADD p32524-6 32524 yellow
+CONNECT p6558-21.pin3 -> p32524-6.hole1 STIFF
+CONNECT p6558-22.pin3 -> p32524-6.hole7 STIFF
+CONNECT p18651-12.axle1 -> p32524-6.hole3 TURNS
+CONNECT p18651-13.axle1 -> p32524-6.hole5 TURNS
+WHY Closes the bumper sandwich with a second seven-hole rail over both blue pins and the exposed black axle ends.
+STEP 151
+ADD p32054-15 32054 black
+ADD p32054-16 32054 black
+CONNECT p32054-15.pin1 -> p24116-4.hole2 STIFF
+CONNECT p32054-16.pin1 -> p24116-3.hole2 STIFF
+WHY Pushes long black pins into the two free panel holes so their pin ends can mount the bumper to the side frames.
+STEP 152
+WHY Applies rear-corner labels 3 and 1 to the first curved panel as shown.
+STEP 153
+WHY Applies rear-corner labels 4 and 2 to the opposite curved panel with the stripes facing outward.
+END
+STEP 154
+ATTACH rear-bumper
+CONNECT p32054-15.pin2 -> p6536-21.hole1 STIFF
+CONNECT p32054-16.pin2 -> p6536-20.hole1 STIFF
+CONNECT p3705-5.axle3 -> p32184-10.hole1 TURNS
+WHY Mounts the finished rear bumper on both yellow side mounts and the central rear axle.
+STEP 155
+ADD p32009-2 32009 yellow
+ADD p32062-19 32062 red
+CONNECT p32062-19.axle1 -> p32009-2.axlehole1 LOCKED
+CONNECT p6558-19.pin3 -> p32009-2.hole7 STIFF
+CONNECT p6558-20.pin3 -> p32009-2.hole8 STIFF
+CONNECT p43093-7.pin1 -> p32009-2.hole5 STIFF
+WHY Adds the remaining long yellow side beam with a red axle in its front cross hole, then pushes the rear mounting pins fully down.
+STEP 156
+GROUP engine-side-cover
+ADD p32316-9 32316 yellow
+ADD p32316-10 32316 yellow
+ADD p32316-11 32316 yellow
+ADD p32316-12 32316 yellow
+ADD p2780-45 2780 black
+ADD p2780-46 2780 black
+ADD p2780-47 2780 black
+ADD p2780-48 2780 black
+ADD p2780-49 2780 black
+ADD p2780-50 2780 black
+ADD p2780-51 2780 black
+ADD p2780-52 2780 black
+ADD p42003-9 42003 lightgray
+CONNECT p2780-51.pin2 -> p32316-12.hole1 STIFF
+CONNECT p2780-52.pin2 -> p32316-12.hole5 STIFF
+CONNECT p2780-51.pin1 -> p32316-11.hole1 STIFF
+CONNECT p2780-52.pin1 -> p32316-11.hole5 STIFF
+CONNECT p2780-49.pin2 -> p32316-11.hole2 STIFF
+CONNECT p2780-50.pin2 -> p32316-11.hole4 STIFF
+CONNECT p2780-49.pin1 -> p32316-10.hole2 STIFF
+CONNECT p2780-50.pin1 -> p32316-10.hole4 STIFF
+CONNECT p2780-47.pin2 -> p32316-10.hole1 STIFF
+CONNECT p2780-48.pin2 -> p32316-10.hole5 STIFF
+CONNECT p2780-47.pin1 -> p32316-9.hole1 STIFF
+CONNECT p2780-48.pin1 -> p32316-9.hole5 STIFF
+CONNECT p2780-45.pin2 -> p32316-9.hole3 STIFF
+CONNECT p2780-46.pin2 -> p32316-9.hole2 STIFF
+CONNECT p2780-45.pin1 -> p42003-9.hole2 STIFF
+CONNECT p2780-46.pin1 -> p42003-9.hole1 STIFF
+END
+ATTACH engine-side-cover
+CONNECT p32073-1.axle1 -> p42003-9.axlehole1 LOCKED
+CONNECT p32062-19.axle2~ -> p42003-9.axlehole1 LOCKED
+WHY Pins four yellow five-hole beams into the solid side cover, adds control label 12, and mounts its grey connector between the exposed chassis axle and the red side-beam axle.
+STEP 157
+ADD p4274-12 4274 lightgray
+ADD p93550-1 93550 flatsilver
+CONNECT p4274-12.? -> p93550-1.? LOCKED
+CONNECT p4274-12.pin1 -> p14720-1.hole6 TURNS
+WHY Inserts the foil handle into a short grey pin and mounts it upright as the antenna beside the engine.
+STEP 158
+ADD p32019-1 32019 black
+ADD p32019-2 32019 black
+ADD p32019-3 32019 black
+ADD p32019-4 32019 black
+ADD p86652-1 86652 lightgray
+ADD p86652-2 86652 lightgray
+ADD p86652-3 86652 lightgray
+ADD p86652-4 86652 lightgray
+CONNECT p32019-1.? -> p86652-1.? LOCKED
+CONNECT p32019-2.? -> p86652-2.? LOCKED
+CONNECT p32019-3.? -> p86652-3.? LOCKED
+CONNECT p32019-4.? -> p86652-4.? LOCKED
+CONNECT p87083-3.axle1 -> p86652-1.? LOCKED
+CONNECT p87083-5.axle1 -> p86652-2.? LOCKED
+CONNECT p3705-1.axle4 -> p86652-3.? LOCKED
+CONNECT p3705-2.axle1 -> p86652-4.? LOCKED
+WHY Fits each tyre on a grey wheel and pushes the four wheels onto the exposed drive axles with the recessed wheel faces outward.
+STEP 159
+GROUP barrel
+ADD p2780-53 2780 black
+ADD p2780-54 2780 black
+ADD p62462-5 62462 lightgray
+CONNECT p2780-53.pin1 -> p62462-5.hole1 STIFF
+CONNECT p2780-54.pin2 -> p62462-5.hole1 STIFF
+WHY Puts black pins into both ends of a grey round connector to start the barrel's internal cross brace.
+STEP 160
+ADD p62462-6 62462 lightgray
+ADD p2780-55 2780 black
+CONNECT p2780-54.pin1 -> p62462-6.hole1 STIFF
+CONNECT p2780-55.pin2 -> p62462-6.hole1 STIFF
+WHY Extends the internal brace with a second grey connector and a black pin at its free end.
+STEP 161
+ADD p15361-1 15361 red
+ADD p15361-2 15361 red
+CONNECT p2780-53.pin2 -> p15361-1.? STIFF
+CONNECT p2780-55.pin1 -> p15361-2.? STIFF
+WHY Joins the two red barrel halves over the ends of the internal pin brace to make a closed cylinder.
+STEP 162
+WHY Applies two copies of warning stripe label 6 near the top and bottom of the first barrel half.
+STEP 163
+WHY Turns the barrel around and applies the other two warning stripe labels to the second half.
+END
+STEP 164
+ATTACH barrel
+WHY Places the finished barrel between the rubber-tipped jaws and closes the grabber around it.
