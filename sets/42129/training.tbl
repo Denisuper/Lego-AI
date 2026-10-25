@@ -5139,3 +5139,116 @@ ADD ni-beam3-1 32523 black
 CONNECT ni-pin-2.pin1 -> ni-beam3-1.hole1~ STIFF
 CONNECT ni-beam3-1.hole2~ -> nj-panel-2.hole4~ STIFF
 WHY Fits the finished fuel tank against the chassis side and clips it with a pin and a 3-beam.
+STEP 587
+GROUP nk
+ADD nk-hub-1 65489 lightgray
+ADD nk-tbeam-1 60484 black
+ADD nk-pin-1 61332 black
+ADD nk-pin-2 61332 black
+ADD nk-round-1 3941 black
+ADD nk-round-2 3941 black
+ADD nk-disc-1 4032a black
+ADD nk-disc-2 4032a black
+ADD nk-cap-1 98138 black
+ADD nk-cap-2 98138 black
+CONNECT nk-hub-1.pin1~ -> nk-tbeam-1.hole1~ STIFF
+CONNECT nk-pin-1.pin1 -> nk-tbeam-1.hole3~ STIFF
+CONNECT nk-pin-2.pin1 -> nk-tbeam-1.hole5~ STIFF
+CONNECT nk-round-1.axlehole1 -> nk-pin-1.axle1? LOCKED
+CONNECT nk-round-2.axlehole1 -> nk-pin-2.axle1? LOCKED
+CONNECT nk-disc-1.stud1? -> nk-round-1.stud1? STIFF
+CONNECT nk-disc-2.stud1? -> nk-round-2.stud1? STIFF
+CONNECT nk-cap-1.stud1? -> nk-disc-1.stud1? STIFF
+CONNECT nk-cap-2.stud1? -> nk-disc-2.stud1? STIFF
+END
+ATTACH nk
+CONNECT nk-hub-1.pin2~ -> ni-lbeam-1.hole1~ STIFF
+WHY Builds the two air-tank drums in three small steps (a pin hub and a T-beam with two round bricks, plates and round tiles) and fixes them on the chassis side behind the cab.
+STEP 588
+GROUP nl
+ADD nl-beam5-1 32316 black
+ADD nl-beam5-2 32316 black
+ADD nl-beam5-3 32316 black
+ADD nl-axle3-1 4519 lightgray
+ADD nl-tan-1 32002 tan
+ADD nl-tan-2 32002 tan
+ADD nl-tube-1 42135 black
+ADD nl-tube-2 42135 black
+ADD nl-tube-3 42135 black
+ADD nl-bpin-1 43093 blue
+ADD nl-bpin-2 43093 blue
+ADD nl-pin-1 61332 black
+ADD nl-pin-2 61332 black
+ADD nl-bush-1 3713 darkgray
+ADD nl-bush-2 3713 darkgray
+ADD nl-ang-1 32034 darkgray
+ADD nl-ang-2 32034 darkgray
+CONNECT nl-axle3-1.axle1 -> nl-beam5-1.axlehole1? LOCKED
+CONNECT nl-tube-1.axlehole1 -> nl-tan-1.axle1? LOCKED
+CONNECT nl-tan-2.pin1 -> nl-tube-2.axlehole1 TURNS
+CONNECT nl-tube-3.axlehole1 -> nl-axle3-1.axle3 LOCKED
+CONNECT nl-beam5-2.hole1~ -> nl-axle3-1.axle2~ TURNS
+CONNECT nl-pin-1.pin1 -> nl-beam5-1.hole3~ STIFF
+CONNECT nl-pin-2.pin1 -> nl-beam5-1.hole5~ STIFF
+CONNECT nl-beam5-3.hole2~ -> nl-pin-1.pin2 STIFF
+CONNECT nl-bpin-1.pin1 -> nl-beam5-3.hole1~ STIFF
+CONNECT nl-bpin-2.pin1 -> nl-beam5-3.hole3~ STIFF
+CONNECT nl-bush-1.axlehole1 -> nl-bpin-1.axle1 LOCKED
+CONNECT nl-bush-2.axlehole1 -> nl-bpin-2.axle1 LOCKED
+CONNECT nl-ang-1.hole1~ -> nl-beam5-1.hole1~ STIFF
+CONNECT nl-ang-2.hole1~ -> nl-beam5-2.hole5~ STIFF
+END
+ATTACH nl
+CONNECT nl-ang-1.hole2~ -> nk-hub-1.pin1~ STIFF
+WHY Builds the cab's front corner trim bracket in six small steps from three 5-beams, a 3-long axle, tan pins, tubes, blue pins and bushes and fixes it onto the chassis side above the tanks.
+STEP 589
+ADD nm-ang-1 32034 darkgray
+ADD nm-ang-2 32184 darkgray
+CONNECT nm-ang-1.hole1~ -> nm-ang-2.hole2~ STIFF
+CONNECT nm-ang-2.hole1~ -> nl-ang-2.hole2~ STIFF
+WHY Two grey angled connectors are linked on the front corner trim as the last piece of the left side.
+STEP 590
+GROUP nn
+ADD nn-beam5-1 32316 black
+ADD nn-beam2-1 41677 black
+ADD nn-beam2-2 41677 black
+ADD nn-axle4-1 3705 black
+ADD nn-axle4-2 3705 black
+ADD nn-axle3-1 4519 lightgray
+ADD nn-pin-1 61332 black
+ADD nn-bpin-1 43093 blue
+ADD nn-ell-1 71708 black
+ADD nn-ang-1 32034 darkgray
+ADD nn-ang-2 32034 darkgray
+ADD nn-bush-1 3713 darkgray
+ADD nn-conn-1 6536 darkgray
+ADD nn-conn-2 6536 darkgray
+CONNECT nn-ang-1.axlehole1 -> nn-conn-1.axlehole1 LOCKED
+CONNECT nn-axle4-1.axle1 -> nn-ang-1.axlehole2 LOCKED
+CONNECT nn-ell-1.hole1~ -> nn-axle4-1.axle2~ TURNS
+CONNECT nn-pin-1.pin1 -> nn-ell-1.hole3~ STIFF
+CONNECT nn-axle4-2.axle1 -> nn-conn-2.axlehole1 LOCKED
+CONNECT nn-beam2-1.hole1~ -> nn-axle4-2.axle3~ TURNS
+CONNECT nn-bush-1.axlehole1 -> nn-axle4-2.axle4 LOCKED
+CONNECT nn-beam5-1.hole1~ -> nn-pin-1.pin2 STIFF
+CONNECT nn-bpin-1.pin1 -> nn-beam5-1.hole3~ STIFF
+CONNECT nn-beam2-2.hole1~ -> nn-beam5-1.hole5~ STIFF
+CONNECT nn-axle3-1.axle1 -> nn-ang-2.axlehole1 LOCKED
+END
+ATTACH nn
+CONNECT nn-ang-2.hole1~ -> nm-ang-2.hole2~ STIFF
+WHY Builds the right front corner mount in nine small steps from a 5-beam, two 2-beams, two 4-long axles, a 3-long axle, angled connectors and a quarter-ellipse beam, and fixes it on the right front corner, as the yellow arrow shows.
+STEP 590b
+ADD no-tpin-1 4274 lightgray
+ADD no-tpin-2 4274 lightgray
+ADD no-tpin-3 4274 lightgray
+ADD no-cap-1 6141 tan
+ADD no-cap-2 6141 tan
+ADD no-cap-3 6141 tan
+CONNECT no-cap-1.stud1? -> no-tpin-1.pin2 STIFF
+CONNECT no-cap-2.stud1? -> no-tpin-2.pin2 STIFF
+CONNECT no-cap-3.stud1? -> no-tpin-3.pin2 STIFF
+CONNECT no-tpin-1.pin1 -> bq-beam11-2.hole3~ TURNS
+CONNECT no-tpin-2.pin1 -> bq-beam11-2.hole8~ TURNS
+CONNECT no-tpin-3.pin1 -> mw-panel-1.hole2~ TURNS
+WHY Turns the truck round and pushes three tan caps on grey pins into the right chassis side as covers for the fixing points. The booklet prints the step number 590 twice, so this one is labelled 590b.
