@@ -2279,3 +2279,125 @@ END
 ATTACH rm
 CONNECT rm-beam5-1.hole1~ -> rk-rack-1.hole5~ STIFF
 WHY Builds a steering gear mount from two black 5-beams, a hub, a connector and a yellow axle for the steering motor, and fits it behind the rack.
+STEP 257
+GROUP sk
+ADD sk-axle5-1 32073 yellow
+ADD sk-axle7-1 44294 lightgray
+ADD sk-conn-1 42135 black
+ADD sk-beam5-1 11478 black
+ADD sk-beam5-2 11478 black
+ADD sk-beam5-3 11478 black
+ADD sk-beam5-4 11478 black
+ADD sk-hub-1 65487 darkgray
+ADD sk-conn-2 42003 lightgray
+ADD sk-lpin-1 11214 red
+CONNECT sk-hub-1.pin1 -> sk-beam5-1.hole2~ STIFF
+CONNECT sk-conn-2.hole1~ -> sk-beam5-1.hole4~ STIFF
+CONNECT sk-beam5-2.hole2~ -> sk-hub-1.hole1 STIFF
+CONNECT sk-axle5-1.axle1 -> sk-conn-1.axlehole1 LOCKED
+CONNECT sk-conn-1.hole1? -> sk-beam5-2.hole3~ TURNS
+CONNECT sk-axle7-1.axle1 -> sk-conn-2.axlehole1 LOCKED
+CONNECT sk-beam5-3.hole2~ -> sk-axle7-1.axle3~ TURNS
+CONNECT sk-beam5-4.hole2~ -> sk-axle7-1.axle5~ TURNS
+CONNECT sk-lpin-1.pin1 -> sk-beam5-3.hole5~ STIFF
+WHY Builds the steering gear box in five small steps from four thin beams, a hub, a connector and two axles (a yellow 5 and a grey 7) that will carry the gears.
+STEP 258
+ADD sk-gear16-1 94925 lightgray
+CONNECT sk-gear16-1.axlehole1 -> sk-axle7-1.axle6 LOCKED
+WHY A 16-tooth gear goes on the grey axle to mesh with the one on the yellow axle.
+STEP 259
+GROUP sl
+ADD sl-gear-1 18946 red
+ADD sl-cross-1 44874 black
+ADD sl-axle5-1 32073 yellow
+ADD sl-tpin-1 32002 tan
+ADD sl-pin-1 61332 black
+ADD sl-pin-2 61332 black
+ADD sl-beam5-1 11478 black
+ADD sl-beam5-2 11478 black
+ADD sl-conn-1 42003 lightgray
+ADD sl-hub-1 65489 lightgray
+ADD sl-gear16-1 94925 lightgray
+ADD sl-ball-1 52731 lightgray
+CONNECT sl-pin-1.pin1 -> sl-beam5-1.hole2~ STIFF
+CONNECT sl-pin-2.pin1 -> sl-beam5-1.hole4~ STIFF
+CONNECT sl-hub-1.pin1~ -> sl-pin-1.pin2 STIFF
+CONNECT sl-conn-1.hole1~ -> sl-pin-2.pin2 STIFF
+CONNECT sl-axle5-1.axle1 -> sl-conn-1.axlehole1 LOCKED
+CONNECT sl-beam5-2.hole2~ -> sl-hub-1.pin2~ STIFF
+CONNECT sl-tpin-1.pin1 -> sl-beam5-2.hole3~ TURNS
+CONNECT sl-gear-1.axlehole1? -> sl-tpin-1.pin2 TURNS
+CONNECT sl-gear16-1.axlehole1 -> sl-axle5-1.axle4 LOCKED
+CONNECT sl-ball-1.pin1? -> sl-cross-1.hole1? TURNS
+MESH sl-gear16-1.teeth sk-gear16-1.teeth
+END
+ATTACH sl
+CONNECT sl-beam5-1.hole1~ -> sk-beam5-1.hole1~ STIFF
+WHY Builds a second small gear box in seven steps with a red gear on a tan pin and a 16-tooth gear on a yellow axle, then fixes it next to the first so the gears mesh.
+STEP 260
+ADD sn-lbeam-1 32526 black
+ADD sn-pin-1 61332 black
+CONNECT sn-pin-1.pin1 -> sn-lbeam-1.hole2~ STIFF
+CONNECT sn-lbeam-1.hole5~ -> sl-beam5-1.hole3~ STIFF
+WHY A black 3x5 L-beam with a pin goes on the underside of the steering box as a brace.
+STEP 261
+ADD sn-bpin-1 43093 blue
+ADD sn-lbeam-2 32526 black
+CONNECT sn-bpin-1.pin1 -> sn-lbeam-2.hole1~ STIFF
+CONNECT sn-lbeam-2.hole4~ -> sk-beam5-1.hole3~ STIFF
+WHY A blue pin and a second black L-beam brace the other side of the steering box.
+STEP 262
+ADD sn-pin-2 61332 black
+ADD sn-pin-3 61332 black
+ADD sn-apin-1 18651 black
+ADD sn-lbeam-3 32526 black
+CONNECT sn-apin-1.pin1 -> sn-lbeam-3.hole1~ STIFF
+CONNECT sn-pin-2.pin1 -> sn-lbeam-3.hole3~ STIFF
+CONNECT sn-pin-3.pin1 -> sn-lbeam-3.hole5~ STIFF
+CONNECT sn-lbeam-3.hole2~ -> sn-lbeam-1.hole1~ STIFF
+WHY A third L-beam with three pins is added and fixed to the first to widen the box.
+STEP 263
+ADD sn-pin-4 61332 black
+ADD sn-lbeam-4 32526 black
+CONNECT sn-pin-4.pin1 -> sn-lbeam-4.hole1~ STIFF
+CONNECT sn-lbeam-4.hole4~ -> sn-lbeam-2.hole1~ STIFF
+WHY A fourth L-beam with a pin does the same on the other side.
+STEP 264
+ADD sn-bpin-2 43093 blue
+ADD sn-lbeam-5 32526 black
+CONNECT sn-bpin-2.pin1 -> sn-lbeam-5.hole1~ STIFF
+CONNECT sn-lbeam-5.hole4~ -> sn-lbeam-4.hole2~ STIFF
+WHY A blue pin and a fifth L-beam extend the bracing further down.
+STEP 265
+ADD sn-pin-5 61332 black
+ADD sn-pin-6 61332 black
+ADD sn-apin-2 18651 black
+ADD sn-lbeam-6 32526 black
+CONNECT sn-apin-2.pin1 -> sn-lbeam-6.hole1~ STIFF
+CONNECT sn-pin-5.pin1 -> sn-lbeam-6.hole3~ STIFF
+CONNECT sn-pin-6.pin1 -> sn-lbeam-6.hole5~ STIFF
+CONNECT sn-lbeam-6.hole2~ -> sn-lbeam-5.hole1~ STIFF
+WHY A sixth L-beam with three pins finishes the side bracing.
+STEP 266
+GROUP so
+ADD so-axle3-1 4519 lightgray
+ADD so-conn-1 42135 black
+ADD so-conn-2 6536 darkgray
+ADD so-conn-3 6536 darkgray
+ADD so-pin-1 61332 black
+ADD so-lpin-1 11214 red
+CONNECT so-conn-1.axlehole1 -> so-axle3-1.axle1 LOCKED
+CONNECT so-conn-2.hole1~ -> so-conn-1.hole1? TURNS
+CONNECT so-pin-1.pin1 -> so-conn-3.hole1 STIFF
+CONNECT so-lpin-1.pin1 -> so-conn-2.hole2~ STIFF
+CONNECT so-conn-3.hole2~ -> so-conn-2.hole1~ STIFF
+END
+ATTACH so
+CONNECT so-conn-1.hole1~ -> sn-lbeam-1.hole4~ STIFF
+WHY Builds a small connector stack on a 3-long axle with a red pin and fits it at the end of the steering box so the motor can plug in.
+STEP 267
+ADD sn-pin-7 61332 black
+ADD sn-pin-8 61332 black
+CONNECT sn-pin-7.pin1 -> sn-lbeam-1.hole3~ STIFF
+CONNECT sn-pin-8.pin1 -> sn-lbeam-4.hole3~ STIFF
+WHY Two black pins go in the braces from the back to lock the steering box together.
