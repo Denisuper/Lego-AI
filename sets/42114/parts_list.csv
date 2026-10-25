@@ -1,13 +1,238 @@
 qty,part_number,colour,name
-4,64179,Dark Bluish Gray,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
-1,64179,Light Bluish Gray,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
-16,2780,Black,Technic Pin with Friction Ridges Lengthwise
-4,6558,Blue,Technic Pin Long with Friction Ridges Lengthwise
-2,32525,Yellow,Technic Beam 1 x 11 Thick
-1,60484,Yellow,Technic Beam 3 x 3 L-Shape with 4 Pins
-6,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
-2,32054,Red,Technic Pin Long with Friction Ridges Lengthwise and Stop Bush
-2,3713,Light Bluish Gray,Technic Bush
-1,32524,Yellow,Technic Beam 1 x 7 Thick
-3,40490,Light Bluish Gray,Technic Beam 1 x 9 Thick
-2,32526,Yellow,Technic Beam 3 x 5 L-Shape Thick
+7,10928,Dark Bluish Gray,Technic Gear 8 Tooth [Reinforced]
+1,11212,Black,Plate 3 x 3
+45,11214,Red,Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle
+2,11214,Dark Bluish Gray,Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle
+6,11478,Black,Technic Beam 1 x 5 Thin with Axle Holes on Ends
+1,11946,Yellow,"Technic Panel Fairing #21 5L Small Smooth, Side B"
+1,11947,Yellow,"Technic Panel Fairing #22 5L Small Smooth, Side A"
+3,14720,Yellow,Technic Beam 3 x 5 Thick [90° Offset Centre Beam Holes]
+2,14769,Black,Tile Round 2 x 2 with Bottom Stud Holder
+6,15038,Yellow,Wheel 56 x 34 Technic Racing Medium with 6 Pin Holes
+13,15458,Yellow,Technic Panel 3 x 11 x 1
+20,15462,Reddish Brown,Technic Axle 5 with Stop
+1,15535,Black,Tile Special Round 2 x 2 with Hole
+3,15672,Yellow,Brick Sloped 45° 2 x 1 with 2/3 Cutout [New Version]
+7,15712,Yellow,Tile Special 1 x 1 with Clip with Rounded Edges
+4,15712,Black,Tile Special 1 x 1 with Clip with Rounded Edges
+1,18575,Tan,Technic Gear 20 Tooth Double Bevel with Axle Hole Type 1 [+ Opening]
+31,18651,Black,Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle
+23,18654,Black,Technic Pin Connector Round 1L [Beam]
+1,18654,Metallic Silver,Technic Pin Connector Round 1L [Beam]
+18,18654,Dark Bluish Gray,Technic Pin Connector Round 1L [Beam]
+12,18677,Black,Plate Special 1 x 2 with Pin Hole Underneath
+2,18944,Yellow,Technic Panel Curved 3 x 13
+18,18945,Yellow,Technic Panel 5 x 11 x 1 Tapered
+8,18946,Red,Technic Gear 16 Tooth with Clutch on Both Sides
+3,18947,Dark Bluish Gray,Technic Driving Ring 3L
+1,22127,Light Bluish Gray,"Hub, Powered Up 4-Port (Technic Control+) - Clip Opening"
+1,22169,Dark Bluish Gray,"Motor, Large, Powered Up"
+1,22172,Dark Bluish Gray,"Motor, XL, Powered Up"
+4,22961,Dark Bluish Gray,Technic Pin Connector Hub with 1 Axle
+2,23948,Yellow,Technic Axle 11
+1,23948,Light Bluish Gray,Technic Axle 11
+1,24116,Light Bluish Gray,Technic Panel Curved and Bent 6 x 3
+1,24119,Black,Technic Panel Curved 7 x 3 with 2 Pin Holes through Panel Surface
+1,24119,Yellow,Technic Panel Curved 7 x 3 with 2 Pin Holes through Panel Surface
+1,24122,Black,Large Figure Weapon Lightsaber Hilt with Axle Hole and Two Bar Holders
+1,2431,Yellow,Tile 1 x 4 with Groove
+8,2431,Black,Tile 1 x 4 with Groove
+10,24316,Reddish Brown,Technic Axle 3 with Stop
+2,24866,Orange,"Plant, Flower, Plate Round 1 x 1 with 5 Petals"
+3,25214,Metallic Silver,Brick Round 1 x 1 diameter Tube with 90 Degree Elbow (2 x 2 x 1) and Axle Holes (Crossholes) at each end
+2,25214,Black,Brick Round 1 x 1 diameter Tube with 90 Degree Elbow (2 x 2 x 1) and Axle Holes (Crossholes) at each end
+1,2654,Trans-Orange,Plate Round 2 x 2 with Rounded Bottom [Boat Stud]
+3,26603,Black,Tile 2 x 3
+1,27328,Flat Silver,Flexible Ribbed Hose 8mm Ends 10L
+420,2780,Black,Technic Pin with Friction Ridges Lengthwise and Center Slots
+7,27940,Dark Bluish Gray,Technic Pin Connector Hub with 2 Axles
+1,2819,Black,Technic Steering Wheel Small (3 Studs Diameter)
+2,28192,Yellow,Brick Sloped 45° 2 x 1 with 2/3 Inverted Cutout and no stud
+4,2825,Black,Technic Beam 1 x 4 Thin with Stud Connector
+4,2853,Yellow,Technic Engine Crankshaft
+1,3004,Yellow,Brick 1 x 2
+2,3023,Yellow,Plate 1 x 2
+2,3023,Black,Plate 1 x 2
+4,3024,Trans-Clear,Plate 1 x 1
+3,3024,Yellow,Plate 1 x 1
+2,30374,Black,Bar 4L (Lightsaber Blade / Wand)
+4,3043,Black,Brick Sloped 45° 2 x 2 Double
+2,3069b,Trans-Orange,Tile 1 x 2 with Groove
+2,3069b,Trans-Red,Tile 1 x 2 with Groove
+2,3069b,Yellow,Tile 1 x 2 with Groove
+2,3070b,Yellow,Tile 1 x 1 with Groove
+2,32002,Tan,Technic Pin 3/4
+4,32009,Yellow,Technic Beam 1 x 11.5 Double Bent Thick
+6,32013,Orange,Technic Axle and Pin Connector Angled #1
+7,32013,Black,Technic Axle and Pin Connector Angled #1
+3,32016,Light Bluish Gray,Technic Axle and Pin Connector Angled #3 - 157.5°
+8,32034,Orange,Technic Axle and Pin Connector Angled #2 - 180°
+1,32034,Yellow,Technic Axle and Pin Connector Angled #2 - 180°
+3,32034,Black,Technic Axle and Pin Connector Angled #2 - 180°
+8,32039,Yellow,Technic Axle Connector with Axle Hole
+2,32039,Black,Technic Axle Connector with Axle Hole
+10,32054,Orange,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]"
+19,32054,Light Bluish Gray,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]"
+4,32056,Black,Technic Beam 3 x 3 L-Shape Thin
+53,32062,Red,Technic Axle 2 Notched
+2,32073,Yellow,Technic Axle 5
+8,32073,Light Bluish Gray,Technic Axle 5
+16,32123b,Yellow,Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+1,32124,Black,"Technic Plate 1 x 5 with Smooth Ends, 4 Studs and Centre Axle Hole"
+9,32140,Light Bluish Gray,Technic Beam 2 x 4 L-Shape Thick
+9,32140,Yellow,Technic Beam 2 x 4 L-Shape Thick
+10,32140,Black,Technic Beam 2 x 4 L-Shape Thick
+2,32184,Red,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole
+9,32184,Black,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole
+2,32184,Yellow,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole
+5,32198,Tan,Technic Gear 20 Tooth Bevel
+4,32249,Black,Technic Beam 3 x 3 L-Shape with Quarter Ellipse Thin
+8,32270,Black,Technic Gear 12 Tooth Double Bevel
+10,32271,Yellow,Technic Beam 1 x 9 Bent (7 - 3) Thick
+2,32271,Light Bluish Gray,Technic Beam 1 x 9 Bent (7 - 3) Thick
+5,32278,Black,Technic Beam 1 x 15 Thick
+15,32278,Yellow,Technic Beam 1 x 15 Thick
+15,32316,Light Bluish Gray,Technic Beam 1 x 5 Thick
+18,32316,Black,Technic Beam 1 x 5 Thick
+4,32316,Yellow,Technic Beam 1 x 5 Thick
+4,32348,Yellow,Technic Beam 1 x 7 Bent (4 - 4) Thick
+19,32523,Yellow,Technic Beam 1 x 3 Thick
+12,32523,Light Bluish Gray,Technic Beam 1 x 3 Thick
+3,32523,Green,Technic Beam 1 x 3 Thick
+4,32523,Black,Technic Beam 1 x 3 Thick
+10,32524,Black,Technic Beam 1 x 7 Thick
+26,32524,Yellow,Technic Beam 1 x 7 Thick
+2,32524,Light Bluish Gray,Technic Beam 1 x 7 Thick
+2,32525,Red,Technic Beam 1 x 11 Thick
+26,32525,Yellow,Technic Beam 1 x 11 Thick
+8,32525,Black,Technic Beam 1 x 11 Thick
+16,32526,Yellow,Technic Beam 3 x 5 L-Shape Thick
+9,32526,Black,Technic Beam 3 x 5 L-Shape Thick
+6,32556,Tan,Technic Pin Long without Friction Ridges
+4,32557,Light Bluish Gray,Technic Pin Connector Perpendicular Long
+1,35186,Yellow,"Technic Driving Ring Extension, 8 Ridges"
+1,35188,Orange,Gear Shifter
+1,3622,Yellow,Brick 1 x 3
+4,3623,Black,Plate 1 x 3
+3,3623,Yellow,Plate 1 x 3
+7,3648b,Dark Bluish Gray,Technic Gear 24 Tooth [New Style with Single Axle Hole]
+3,3666,Yellow,Plate 1 x 6
+9,3673,Light Bluish Gray,Technic Pin without Friction Ridges Lengthwise
+2,3705,Black,Technic Axle 4
+4,3706,Red,Technic Axle 6
+3,3706,Black,Technic Axle 6
+2,3707,Black,Technic Axle 8
+1,3708,Black,Technic Axle 12
+4,3710,Yellow,Plate 1 x 4
+16,3713,Light Bluish Gray,Technic Bush
+2,3749,Tan,Technic Axle Pin without Friction Ridges Lengthwise
+1,3941,Trans-Orange,Brick Round 2 x 2 with Axle Hole
+4,39793,Yellow,Technic Connector Beam 3 x 3
+2,39794,Black,Technic Beam Frame 7 x 11
+2,4032a,Black,Plate Round 2 x 2 with Axle Hole Type 1 (+ Opening)
+1,40490,Black,Technic Beam 1 x 9 Thick
+7,40490,Yellow,Technic Beam 1 x 9 Thick
+5,40490,Light Bluish Gray,Technic Beam 1 x 9 Thick
+3,40490,Green,Technic Beam 1 x 9 Thick
+2,40918,Light Bluish Gray,Technic Linear Actuator with Dark Bluish Gray Ends Long
+2,41239,Light Bluish Gray,Technic Beam 1 x 13 Thick
+2,4162,Yellow,Tile 1 x 8 with Groove
+10,41677,Black,Technic Beam 1 x 2 Thin
+2,41678,Black,Technic Axle and Pin Connector Perpendicular Double Split
+15,42003,Yellow,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes
+14,42003,Black,Technic Axle and Pin Connector Perpendicular 3L with 2 Pin Holes
+6,42195,Light Bluish Gray,Technic Driving Ring Connector Smooth [2 rounded and 2 flat side walls]
+1,42531,Light Bluish Gray,Technic Panel Car Mudguard Arched 9 x 2 x 3 #30
+38,4274,Blue,Technic Pin 1/2 without Friction Ridges
+19,4274,Light Bluish Gray,Technic Pin 1/2 without Friction Ridges
+192,42924,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 1 Center Slot"
+93,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
+4,43857,Yellow,Technic Beam 1 x 2 Thick
+4,44294,Yellow,Technic Axle 7
+1,44294,Light Bluish Gray,Technic Axle 7
+1,4477,Yellow,Plate 1 x 10
+7,44874,Red,Technic Pin Connector Hub with 2 Pins with Friction Ridges Lengthwise [Small Squared Pin Holes]
+30,4519,Yellow,Technic Axle 3
+10,4519,Light Bluish Gray,Technic Axle 3
+1,45590,Black,Technic Axle Connector Double Flexible [Rubber]
+4,46189,Black,Technic Pin Connector 3L with 2 Pins and Center Hole [Pin Ridges Across Part]
+2,46667,Black,Jet Engine Fan with 10 Blades and Technic Pin
+1,46834,White,Clutch Outer Side with Axle Connector
+1,46835,Dark Bluish Gray,Clutch Inner Side with Axle Connector
+2,46882pr0001,Yellow,Technic Panel Car Mudguard 15 x 2 x 7 Yellow with Black Side Print
+2,48267,Black,Technic Tooth 1 x 3 with Axle Hole [Hollow Underside]
+2,48729b,Orange,Bar 1L with Clip [Cut Edges and One Side Hole] [Gap in Clip]
+4,49130,Light Bluish Gray,Technic Pin Connector Hub Perpendicular 3 x 3 Bent with 4 Pins (Pin Ridges Along Part)
+4,49283,Yellow,Wire Clip with Axle Hole
+1,49283,Magenta,Wire Clip with Axle Hole
+3,55013,Dark Bluish Gray,Technic Axle 8 with Stop
+1,55982,Black,"Wheel 18mm x 14mm with Axle Hole, Fake Bolts and Shallow Spokes"
+6,57519,Yellow,Technic Tread Sprocket Wheel Large 10 Tooth
+2,59426,Dark Bluish Gray,Technic Axle 5.5 with Stop [Rounded Short End]
+1,59443,Light Bluish Gray,Technic Axle Connector Smooth [with x Hole + Orientation]
+37,59443,Yellow,Technic Axle Connector Smooth [with x Hole + Orientation]
+5,59443,Black,Technic Axle Connector Smooth [with x Hole + Orientation]
+12,60483,Black,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
+20,60483,Light Bluish Gray,Technic Beam 1 x 2 Thick with Pin Hole and Axle Hole
+9,60484,Yellow,Technic Beam 3 x 3 T-Shape Thick
+2,60484,Black,Technic Beam 3 x 3 T-Shape Thick
+2,60485,Light Bluish Gray,Technic Axle 9
+2,60485,Yellow,Technic Axle 9
+3,61184,Light Bluish Gray,Technic Pin 1/2 with 2L Bar Extension
+2,61408,Black,"Technic Beam 3 x 0.5 Liftarm with Boss and Blocked, Squared Pin Hole"
+1,61903,Light Bluish Gray,Technic Universal Joint 3L [Complete Assembly]
+2,61904,Dark Bluish Gray,Technic Axle and Pin Connector Block 4 x 3 x 2 1/2 [Linear Actuator Holder]
+5,62462,Orange,Technic Pin Connector Round [Slotted]
+3,62462,White,Technic Pin Connector Round [Slotted]
+5,62462,Metallic Silver,Technic Pin Connector Round [Slotted]
+6,62462,Black,Technic Pin Connector Round [Slotted]
+1,63864,Metallic Silver,Tile 1 x 3
+1,63864,Yellow,Tile 1 x 3
+6,63869,Black,Technic Axle and Pin Connector Perpendicular Triple
+3,63869,Light Bluish Gray,Technic Axle and Pin Connector Perpendicular Triple
+3,64178,Light Bluish Gray,Technic Beam 5 x 11 with 3 x 5 Opening Frame Thick
+10,64179,Black,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
+5,64179,Light Bluish Gray,Technic Beam Frame 5 x 7 with 3 x 5 Opening Thick
+1,64391,Yellow,"Technic Panel Fairing # 4 Small Smooth Long, Side B"
+1,64393,Black,"Technic Panel Fairing #6 Long Smooth, Side B"
+1,64393,Yellow,"Technic Panel Fairing #6 Long Smooth, Side B"
+1,64681,Black,"Technic Panel Fairing #5 Long Smooth, Side A"
+1,64681,Yellow,"Technic Panel Fairing #5 Long Smooth, Side A"
+1,64683,Yellow,"Technic Panel Fairing # 3 Small Smooth Long, Side A"
+4,64782,Yellow,Technic Panel 5 x 11 x 1
+1,64782,Black,Technic Panel 5 x 11 x 1
+16,6536,Yellow,Technic Axle and Pin Connector Perpendicular
+15,6536,Black,Technic Axle and Pin Connector Perpendicular
+2,6541,Yellow,Technic Brick 1 x 1 with Pin Hole
+3,65413,Red,Differential Gear - 28 Tooth with Round Axle Hole
+3,65414,Light Bluish Gray,Differential Gear House
+12,65487,Black,Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Centered Friction Ridge]
+31,65487,Yellow,Technic Pin Connector Hub with 1 Pin with Friction Ridges Lengthwise [Centered Friction Ridge]
+14,65489,Light Bluish Gray,Technic Pin Connector Hub Perpendicular 3L with 4 Pins (Squared Holes)
+1,6573,Dark Bluish Gray,"Technic Gear Differential, 24 -16 Tooth with Clutch on Both Sides"
+2,6575,Dark Bluish Gray,Technic Cam
+23,6589,Tan,Technic Gear 12 Tooth Bevel
+6,6629,Black,Technic Beam 1 x 9 Bent (6 - 4) Thick
+13,6632,Black,Technic Beam 1 x 3 Thin
+6,6632,Yellow,Technic Beam 1 x 3 Thin
+2,6632,Orange,Technic Beam 1 x 3 Thin
+1,68303,[No Color/Any Color],Sticker Sheet for Set 42114-1
+1,69730,Dark Bluish Gray,"Motor, Large Angular Position, Light Bluish Gray Housing, Black Wire"
+8,75c07,Orange,Hose Rigid 3mm D. 7L / 5.6cm
+2,75c20,Orange,Hose Rigid 3mm D. 20L / 16cm
+2,87079,Black,Tile 2 x 4 with Groove
+1,87080,Yellow,"Technic Panel Fairing #1 Small Smooth Short, Side A"
+28,87083,Dark Bluish Gray,Technic Axle 4 with Stop
+1,87086,Yellow,"Technic Panel Fairing #2 Small Smooth Short, Side B"
+1,87087,Yellow,Brick Special 1 x 1 with Stud on 1 Side
+1,87408,Black,Technic Pin Connector Toggle Joint Smooth Double with Axle and Pin Holes
+8,92907,Light Bluish Gray,Technic Axle and Pin Connector Perpendicular Split
+6,92907,Black,Technic Axle and Pin Connector Perpendicular Split
+6,92908,Light Bluish Gray,Technic Steering Portal Axle Housing
+6,92909,Dark Bluish Gray,Technic Steering Hub for Portal Axle
+6,92912,Black,Tyre 94.3 x 38 R
+17,94925,Light Bluish Gray,Technic Gear 16 Tooth Reinforced [New Style]
+4,98138,Trans-Clear,Tile Round 1 x 1
+22,99008,Tan,Technic Axle 4 with Centre Stop
+3,99009,Light Bluish Gray,Technic Turntable Small Top
+3,99010,Black,"Technic Turntable Small Base, 28 Tooth"

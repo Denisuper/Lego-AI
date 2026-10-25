@@ -62,7 +62,7 @@ Use `docs/dataset_status.csv` for actual state instead of a duplicated completed
 
 - 42094 remains paused at global step 126, source page 71, with 394 of 827 inventory parts. Continue at page 72 only when asked.
 - 42006 has all 89 main-build steps and 695 inventory entries. Its 25 remaining parts are reserved for the optional 8293 conversion, which also uses external kit components. Do not add those parts to arbitrary main-build steps.
-- 42114 has 54 existing steps. Its malformed placeholder JSONL was rebuilt from the existing table, but its notation and incomplete inventory still need substantive repair.
+- 42114's first 54 steps were re-transcribed from official booklet pages 6–36 after the old draft failed with 572 notation errors and did not follow the source. The matching JSONL now has zero notation errors, and its 174 introduced parts fit the restored 2,193-piece inventory by part and colour. It remains incomplete, with 21 unknown and 11 estimated connection endpoints; see `docs/42114-repair.md`. Continue at source step 55, page 37 only when asked.
 - 8047's 56 main steps and 32 side-build steps are now 88 consecutive global steps. Six ADD records present only in the old JSON were retained. Its existing worm-stop check remains unresolved.
 - 42129's separate training branch was merged. It has 409 steps and passes notation checks after two frictionless-pin mode corrections, but duplicate names and inventory differences still need review.
 
