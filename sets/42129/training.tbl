@@ -1446,3 +1446,256 @@ ATTACH yb
 CONNECT yb-gear-1.teeth -> ya-axle5-1.axle3~ TURNS
 CONNECT yb-lpin-1.pin1 -> yb-conn-1.hole2~ STIFF
 WHY Builds a short shaft with a gear and angled connector and fits it next to the yellow axle so the gear can drive the lock.
+STEP 171
+GROUP hf
+ADD hf-beam11-1 73507 black
+ADD hf-bpin-1 43093 blue
+CONNECT hf-bpin-1.pin1 -> hf-beam11-1.hole1~ STIFF
+WHY Starts a rear cross frame (the part that will carry the rear suspension) with an 11-long black beam and a blue pin.
+STEP 172
+ADD hf-pin-1 61332 black
+ADD hf-pin-2 61332 black
+ADD hf-lpin-1 11214 red
+CONNECT hf-lpin-1.axle1 -> hf-bpin-1.axle1 LOCKED
+CONNECT hf-pin-1.pin1 -> hf-beam11-1.hole3~ STIFF
+CONNECT hf-pin-2.pin1 -> hf-beam11-1.hole5~ STIFF
+WHY A red axle pin on the blue pin and two black pins give three posts along the beam.
+STEP 173
+ADD hf-cb-1 39793 black
+CONNECT hf-cb-1.hole1~ -> hf-pin-1.pin2 STIFF
+CONNECT hf-cb-1.hole3~ -> hf-pin-2.pin2 STIFF
+WHY A black 3x3 connector beam sits on the two pins to join the two beams.
+STEP 174
+ADD hf-pin-3 61332 black
+ADD hf-lpin-2 11214 red
+CONNECT hf-pin-3.pin1 -> hf-cb-1.hole5~ STIFF
+CONNECT hf-lpin-2.pin1 -> hf-cb-1.hole2~ STIFF
+WHY Another black pin and a red pin go in the connector beam to hold the second long beam.
+STEP 175
+ADD hf-beam11-2 73507 black
+CONNECT hf-beam11-2.hole1~ -> hf-lpin-1.pin2~ STIFF
+CONNECT hf-beam11-2.hole5~ -> hf-pin-3.pin2 STIFF
+WHY Puts a second 11-beam over the connector to make a U-shaped frame.
+STEP 176
+ADD hf-bpin-2 43093 blue
+ADD hf-lpin-3 11214 red
+CONNECT hf-bpin-2.pin1 -> hf-beam11-2.hole9~ STIFF
+CONNECT hf-lpin-3.pin1 -> hf-beam11-2.hole3~ STIFF
+WHY A blue pin and a red pin along the second beam hold the parts the frame will carry.
+STEP 177
+ADD hf-gear-1 94925 lightgray
+ADD hf-axle5-1 32073 yellow
+CONNECT hf-axle5-1.axle1 -> hf-beam11-2.hole6~ TURNS
+CONNECT hf-gear-1.axlehole1 -> hf-axle5-1.axle4 LOCKED
+WHY A yellow axle with a gear on it goes through the frame as a pivot with a gear that can mesh later.
+STEP 178
+ATTACH hf
+CONNECT hf-beam11-1.hole2~ -> rx-bent-1.hole9~ STIFF
+CONNECT hf-beam11-2.hole2~ -> rz-bent-1.hole9~ STIFF
+WHY Sets the finished cross frame on top of the rear axle.
+STEP 179
+ADD hf-lblue-1 42924 blue
+ADD hf-pin-4 61332 black
+CONNECT hf-lblue-1.pin1 -> hf-beam11-1.hole7~ STIFF
+CONNECT hf-pin-4.pin1 -> hf-beam11-2.hole7~ STIFF
+WHY A long blue pin and a black pin fix the cross frame to the axle housing.
+STEP 180
+GROUP hg
+ADD hg-frame-1 64179 black
+ADD hg-beam3-1 32523 white
+ADD hg-bar-1 87994 brightgreen
+ADD hg-bush-1 3713 red
+ADD hg-pin-1 61332 black
+ADD hg-pin-2 61332 black
+ADD hg-pin-3 61332 black
+ADD hg-ring-1 18654 black
+CONNECT hg-pin-1.pin1 -> hg-frame-1.hole2~ STIFF
+CONNECT hg-pin-2.pin1 -> hg-frame-1.hole4~ STIFF
+CONNECT hg-beam3-1.hole1~ -> hg-pin-1.pin2 STIFF
+CONNECT hg-pin-3.pin1 -> hg-frame-1.hole10~ STIFF
+CONNECT hg-ring-1.hole1 -> hg-pin-3.pin2 TURNS
+CONNECT hg-bush-1.axlehole1 -> hg-bar-1.axle1? LOCKED
+END
+ATTACH hg
+CONNECT hg-frame-1.hole6~ -> hf-beam11-1.hole10~ STIFF
+WHY Builds a small black frame with a white beam on top and a green bar with a red bush, then fixes it on the cross frame as the mount for the rear shock.
+STEP 181
+ADD hg-gear16-1 94925 lightgray
+ADD hg-conn-1 6536 darkgray
+ADD hg-conn-2 6536 darkgray
+CONNECT hg-gear16-1.axlehole1 -> hf-axle5-1.axle2~ LOCKED
+CONNECT hg-conn-1.hole1~ -> hf-beam11-1.hole9~ STIFF
+CONNECT hg-conn-2.hole1~ -> hf-beam11-2.hole9~ STIFF
+WHY A 16-tooth gear on the yellow axle and two small connectors on the frame prepare the gears that will drive the rear axle.
+STEP 182
+ADD hg-cross-1 44874 black
+ADD hg-gpin-1 65304 lightgray
+ADD hg-bpin-1 43093 blue
+CONNECT hg-bpin-1.pin1 -> hf-beam11-2.hole10~ STIFF
+CONNECT hg-gpin-1.pin1 -> hg-cross-1.hole1 STIFF
+CONNECT hg-cross-1.pin1~ -> hg-conn-1.hole1~ STIFF
+WHY A blue pin, a black cross piece and a long grey pin go onto the frame beside the new gear.
+STEP 183
+GROUP hh
+ADD hh-lpin-1 11214 red
+ADD hh-beam5-1 32316 black
+ADD hh-ring-1 18654 black
+CONNECT hh-ring-1.hole1 -> hh-lpin-1.pin1 TURNS
+CONNECT hh-beam5-1.hole1~ -> hh-lpin-1.pin2 STIFF
+END
+ATTACH hh
+CONNECT hh-beam5-1.hole5~ -> hg-cross-1.pin2~ STIFF
+WHY Builds a black 5-beam on a red pin with a round connector and fits it on the frame as a bearing for the next axle.
+STEP 184
+GROUP hi
+ADD hi-axle5-1 32073 yellow
+ADD hi-gear-1 94925 lightgray
+ADD hi-gear-2 94925 lightgray
+ADD hi-beam5-1 32316 black
+CONNECT hi-gear-1.axlehole1 -> hi-axle5-1.axle2 LOCKED
+CONNECT hi-gear-2.axlehole1 -> hi-axle5-1.axle4 LOCKED
+CONNECT hi-beam5-1.hole2~ -> hi-axle5-1.axle3 TURNS
+MESH hi-gear-1.teeth hg-gear16-1.teeth
+END
+ATTACH hi
+CONNECT hi-beam5-1.hole4~ -> hf-beam11-2.hole8~ STIFF
+WHY Builds a yellow axle carrying two gears in a black 5-beam and fixes it beside the first gear so the three gears mesh.
+STEP 185
+ADD hi-gear-3 18946 red
+ADD hi-tpin-1 3749 tan
+CONNECT hi-tpin-1.pin1 -> hi-beam5-1.hole1~ TURNS
+CONNECT hi-gear-3.axlehole1 -> hi-axle5-1.axle5 LOCKED
+MESH hi-gear-3.teeth hi-gear-2.teeth
+WHY A tan frictionless pin and a red clutch gear are added to the new axle to pass drive on to the axle gear.
+STEP 186
+ADD hj-female-1 52730 darkgray
+ADD hj-female-2 52730 darkgray
+ADD hj-ball-1 52731 lightgray
+ADD hj-ball-2 52731 lightgray
+ADD hj-gear-1 94925 lightgray
+ADD hj-gear-2 94925 lightgray
+CONNECT hj-ball-1.pin1? -> hj-female-1.ball1? TURNS
+CONNECT hj-ball-2.pin1? -> hj-female-2.ball1? TURNS
+CONNECT hj-gear-1.axlehole1 -> hj-female-1.axle1? LOCKED
+CONNECT hj-gear-2.axlehole1 -> hj-female-2.axle1? LOCKED
+MESH hj-gear-1.teeth hi-gear-3.teeth
+WHY Two ball-joint shafts, each with a gear, go in at the sides of the red gear to carry the drive out to each wheel hub.
+STEP 187
+ADD hj-gear-3 18946 red
+CONNECT hj-gear-3.axlehole1 -> hj-female-2.axle2? LOCKED
+MESH hj-gear-3.teeth hj-gear-2.teeth
+WHY Another red clutch gear completes the gear train between the two outputs.
+STEP 188
+GROUP hk
+ADD hk-conn-1 42003 darkgray
+ADD hk-tball-1 2736 lightgray
+ADD hk-lpin-1 11214 red
+CONNECT hk-lpin-1.pin1 -> hk-conn-1.hole1 STIFF
+CONNECT hk-tball-1.pin1? -> hk-conn-1.hole2 TURNS
+WHY Starts the rear suspension arm: a connector with a red pin and a towball.
+STEP 189
+ADD hk-link-1 32557 lightgray
+CONNECT hk-link-1.hole1~ -> hk-tball-1.pin2? TURNS
+WHY A long grey connector clips onto the towball as the arm.
+STEP 190
+ADD hk-axle5-1 32073 yellow
+CONNECT hk-axle5-1.axle1 -> hk-conn-1.axlehole1 LOCKED
+WHY A yellow axle through the connector makes a pivot to join the second arm half.
+STEP 191
+ADD hl-conn-1 42003 darkgray
+ADD hl-tball-1 2736 lightgray
+ADD hl-lpin-1 11214 red
+ADD hl-link-1 32557 lightgray
+CONNECT hl-lpin-1.pin1 -> hl-conn-1.hole1 STIFF
+CONNECT hl-tball-1.pin1? -> hl-conn-1.hole2 TURNS
+CONNECT hl-link-1.hole1~ -> hl-tball-1.pin2? TURNS
+CONNECT hl-conn-1.axlehole1 -> hk-axle5-1.axle5 LOCKED
+END
+ATTACH hk
+CONNECT hk-conn-1.hole3~ -> hj-gear-3.teeth? TURNS
+WHY Makes the second half of the suspension arm and joins both halves on the yellow axle so they swing together.
+STEP 192
+ADD hm-beam11-1 73507 black
+CONNECT hm-beam11-1.hole3~ -> hk-conn-1.hole3~ STIFF
+CONNECT hm-beam11-1.hole5~ -> hl-conn-1.hole3~ STIFF
+WHY An 11-long black beam goes under the two suspension arm halves.
+STEP 193
+ADD hm-ang-1 32013 black
+ADD hm-ang-2 32013 black
+CONNECT hm-ang-1.hole1~ -> hm-beam11-1.hole1~ STIFF
+CONNECT hm-ang-2.hole1~ -> hm-beam11-1.hole11~ STIFF
+WHY Two black angled connectors at the two ends of the beam hold the next beam below it.
+STEP 194
+GROUP hn
+ADD hn-beam11-1 73507 black
+ADD hn-axle5-1 32073 yellow
+ADD hn-pin-1 61332 black
+ADD hn-pin-2 61332 black
+ADD hn-ang-1 32034 black
+ADD hn-ang-2 32034 black
+CONNECT hn-ang-1.axlehole1 -> hn-axle5-1.axle1 LOCKED
+CONNECT hn-ang-2.axlehole1 -> hn-axle5-1.axle5 LOCKED
+CONNECT hn-pin-1.pin1 -> hn-ang-1.hole1~ STIFF
+CONNECT hn-pin-2.pin1 -> hn-ang-2.hole1~ STIFF
+CONNECT hn-beam11-1.hole1~ -> hn-pin-1.pin2 STIFF
+CONNECT hn-beam11-1.hole11~ -> hn-pin-2.pin2 STIFF
+END
+ATTACH hn
+CONNECT hn-beam11-1.hole5~ -> hm-ang-1.hole2~ STIFF
+WHY Builds a second 11-beam with a yellow axle held between two angled connectors and stacks it under the first beam to make a swing arm.
+STEP 195
+ATTACH hm
+CONNECT hm-beam11-1.hole6~ -> hf-beam11-1.hole6~ TURNS
+WHY Fits the finished swing arm unit on the rear axle frame.
+STEP 196
+ADD ho-split-1 92907 black
+ADD ho-split-2 92907 black
+ADD ho-ang-1 32192 darkgray
+ADD ho-ang-2 32192 darkgray
+ADD ho-ang-3 32192 darkgray
+ADD ho-ang-4 32192 darkgray
+ADD ho-pin-1 61332 black
+ADD ho-pin-2 61332 black
+CONNECT ho-ang-1.hole1~ -> ho-split-1.hole1~ STIFF
+CONNECT ho-ang-2.hole1~ -> ho-split-1.hole2~ STIFF
+CONNECT ho-ang-3.hole1~ -> ho-split-2.hole1~ STIFF
+CONNECT ho-ang-4.hole1~ -> ho-split-2.hole2~ STIFF
+CONNECT ho-pin-1.pin1 -> ho-split-1.hole3~ STIFF
+CONNECT ho-pin-2.pin1 -> ho-split-2.hole3~ STIFF
+WHY Makes two linkages, each a split connector with two angled grey connectors, and fixes them on the swing arm ends.
+STEP 197
+ADD hp-ring-1 18654 black
+ADD hp-lpin-1 11214 red
+ADD hp-gpin-1 65304 lightgray
+CONNECT hp-lpin-1.axle1 -> hp-gpin-1.axlehole1 LOCKED
+CONNECT hp-ring-1.hole1 -> hp-gpin-1.pin2 TURNS
+CONNECT hp-gpin-1.pin1 -> ho-split-1.hole4~ STIFF
+WHY A red axle pin, a grey long pin and a round connector go into the linkage as a bearing at one side.
+STEP 198
+ADD hp-beam3-1 32523 white
+ADD hp-lpin-2 11214 red
+ADD hp-gpin-2 65304 lightgray
+CONNECT hp-lpin-2.axle1 -> hp-gpin-2.axlehole1 LOCKED
+CONNECT hp-beam3-1.hole1~ -> hp-gpin-2.pin2 STIFF
+CONNECT hp-gpin-2.pin1 -> ho-split-2.hole4~ STIFF
+WHY The same on the other side, with a white 3-beam on the pin to hold the shock mount.
+STEP 199
+ADD hq-pin-1 61184 lightgray
+ADD hq-beam4-1 32449 darkgray
+ADD hq-beam4-2 32449 darkgray
+ADD hq-lpin-1 11214 red
+CONNECT hq-lpin-1.pin1 -> hq-beam4-1.hole1~ STIFF
+CONNECT hq-beam4-2.hole1~ -> hq-lpin-1.pin2 STIFF
+CONNECT hq-pin-1.pin1? -> hq-beam4-2.hole3~ TURNS
+CONNECT hq-beam4-1.hole3~ -> ho-split-1.hole5~ STIFF
+WHY Two thin grey 4-beams on a red pin with a grey bar pin make the top link for the rear axle arm.
+STEP 200
+ADD hr-axle3-1 24316 reddishbrown
+ADD hr-axle3-2 24316 reddishbrown
+ADD hr-axle3-3 24316 reddishbrown
+ADD hr-axle3-4 24316 reddishbrown
+CONNECT hr-axle3-1.axle1 -> hm-ang-1.hole3~ TURNS
+CONNECT hr-axle3-2.axle1 -> hm-ang-2.hole3~ TURNS
+CONNECT hr-axle3-3.axle1 -> ho-split-1.hole6~ TURNS
+CONNECT hr-axle3-4.axle1 -> ho-split-2.hole6~ TURNS
+WHY Four brown axles with stops go through the swing arms and linkages to pivot them on the frame.
