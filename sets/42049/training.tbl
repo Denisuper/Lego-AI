@@ -626,3 +626,154 @@ CONNECT p3673-1.pin1 -> p32526-6.hole1 TURNS
 CONNECT p3673-2.pin1 -> p32526-6.hole5 TURNS
 CONNECT p2780-23.pin1 -> p32526-6.hole3 STIFF
 WHY Gives the upright two frictionless lift-link pivots with a fixed center pin for the side rail.
+STEP 63
+ADD p4519-6 4519 lightgray
+ADD p32054-6 32054 black
+CONNECT p4519-6.axle3 -> p32054-5.axlehole1 LOCKED
+CONNECT p4519-6.axle1 -> p32054-6.axlehole1 LOCKED
+WHY Links the two opposite stop-bush pins with a short transverse axle through their cross holes.
+STEP 64
+ADD p32523-1 32523 black
+ADD p2780-24 2780 black
+ADD p87083-3 87083 darkgray
+ADD p15100-1 15100 black
+ADD p32123b-3 32123b lightgray
+CONNECT p2780-24.pin2 -> p32523-1.hole1 STIFF
+CONNECT p6558-6.pin3 -> p32523-1.hole3 STIFF
+CONNECT p2780-24.pin1 -> p40490-2.hole6 STIFF
+CONNECT p87083-3.axle4 -> p40490-2.hole7 TURNS
+CONNECT p87083-3.axle3 -> p32523-1.hole2 TURNS
+CONNECT p87083-3.axle2 -> p15100-1.hole1 TURNS
+CONNECT p87083-3.axle2 -> p32123b-3.axlehole1 LOCKED
+WHY Adds the first front wheel shaft through the black bearing beam with a free connector lug and a retaining half bush.
+STEP 65
+GROUP steering-turntable
+ADD p18938-1 18938 black
+ADD p18939-1 18939 lightgray
+CONNECT p18938-1.race? -> p18939-1.race? TURNS
+WHY Snaps the two turntable halves together so the front chassis can steer about the central bearing.
+STEP 66
+ADD p6558-7 6558 blue
+ADD p6558-8 6558 blue
+ADD p6558-9 6558 blue
+ADD p6558-10 6558 blue
+ADD p6558-11 6558 blue
+ADD p18654-1 18654 darkgray
+ADD p32316-1 32316 yellow
+ADD p32316-2 32316 yellow
+CONNECT p6558-11.pin1 -> p18654-1.hole1 STIFF
+CONNECT p6558-11.pin2 -> p32316-1.hole3 STIFF
+CONNECT p6558-11.pin3 -> p18939-1.hole5 STIFF
+CONNECT p6558-7.pin2 -> p18939-1.hole1 STIFF
+CONNECT p6558-8.pin2 -> p18939-1.hole3 STIFF
+CONNECT p6558-9.pin2 -> p18939-1.hole6 STIFF
+CONNECT p6558-10.pin2 -> p18939-1.hole4 STIFF
+WHY Fits the grey turntable base with two yellow mounting beams, a central spacer, and four outward long pins.
+STEP 67
+CONNECT p6558-7.pin3 -> p32316-2.hole2 STIFF
+CONNECT p6558-8.pin3 -> p32316-2.hole4 STIFF
+CONNECT p6558-9.pin3 -> p32316-1.hole4 STIFF
+CONNECT p6558-10.pin3 -> p32316-1.hole2 STIFF
+WHY Pushes the four long pins through the yellow beams with each pair two holes apart.
+STEP 68
+ADD p41239-1 41239 yellow
+ADD p2780-25 2780 black
+ADD p2780-26 2780 black
+ADD p2780-27 2780 black
+CONNECT p2780-25.pin1 -> p41239-1.hole1 STIFF
+CONNECT p2780-26.pin1 -> p41239-1.hole3 STIFF
+CONNECT p2780-27.pin2 -> p41239-1.hole7 STIFF
+CONNECT p2780-25.pin2 -> p18938-1.hole1 STIFF
+CONNECT p2780-26.pin2 -> p18938-1.hole3 STIFF
+WHY Pins the first thirteen-hole front rail to the black rotating half of the turntable.
+STEP 69
+ADD p2780-28 2780 black
+ADD p2780-29 2780 black
+CONNECT p2780-28.pin1 -> p18938-1.hole4 STIFF
+CONNECT p2780-29.pin1 -> p18938-1.hole6 STIFF
+END
+WHY Adds the second pair of turntable mounting pins for the opposite long rail.
+STEP 70
+WHY Turns the turntable assembly over with the two yellow base beams upward before joining it to the front chassis.
+STEP 71
+ATTACH steering-turntable
+CONNECT p18651-3.pin1 -> p41239-1.hole4 STIFF
+CONNECT p2780-23.pin2 -> p41239-1.hole13 STIFF
+WHY Connects the turntable's first long rail to the grey front support and the center pin of the lift-arm upright.
+STEP 72
+GROUP front-rail-right
+ADD p32523-2 32523 black
+ADD p2780-30 2780 black
+ADD p6558-12 6558 blue
+CONNECT p2780-30.pin1 -> p32523-2.hole1 STIFF
+CONNECT p6558-12.pin3 -> p32523-2.hole3 STIFF
+WHY Starts the second front wheel-bearing beam with a short pin and a long blue mounting pin.
+STEP 73
+ADD p87083-5 87083 darkgray
+CONNECT p87083-5.axle3 -> p32523-2.hole2 TURNS
+WHY Inserts the matching stopped wheel axle through the middle round hole of the black bearing beam.
+STEP 74
+ADD p40490-3 40490 yellow
+CONNECT p2780-30.pin2 -> p40490-3.hole6 STIFF
+CONNECT p6558-12.pin2 -> p40490-3.hole8 STIFF
+CONNECT p87083-5.axle4 -> p40490-3.hole7 TURNS
+WHY Fits the second long yellow rail over the two mounting pins and around the free wheel axle.
+STEP 75
+ADD p15100-2 15100 black
+ADD p32123b-4 32123b lightgray
+CONNECT p87083-5.axle2 -> p15100-2.hole1 TURNS
+CONNECT p87083-5.axle2 -> p32123b-4.axlehole1 LOCKED
+WHY Adds the second free wheel-end lug and retains it on the stopped shaft with a half bush.
+STEP 76
+ADD p32526-7 32526 yellow
+CONNECT p6558-12.pin1 -> p32526-7.hole7 STIFF
+WHY Adds the second upright lift-arm support at the front end of the yellow rail.
+STEP 77
+ADD p3673-3 3673 lightgray
+ADD p3673-4 3673 lightgray
+ADD p2780-31 2780 black
+CONNECT p3673-3.pin2 -> p32526-7.hole1 TURNS
+CONNECT p3673-4.pin2 -> p32526-7.hole5 TURNS
+CONNECT p2780-31.pin2 -> p32526-7.hole3 STIFF
+END
+WHY Gives the second upright the same pair of free lift-link pivots and fixed center pin as the first.
+STEP 78
+ATTACH front-rail-right
+CONNECT p87083-4.axle3 -> p40490-3.hole1 TURNS
+CONNECT p18651-5.pin1 -> p40490-3.hole3 STIFF
+CONNECT p32054-6.pin2 -> p40490-3.hole9 STIFF
+CONNECT p32054-6.pin1 -> p32526-7.hole6 STIFF
+WHY Installs the completed opposite rail and upright around the existing stopped support axle and transverse stop-bush pin.
+STEP 79
+ADD p32525-2 32525 yellow
+CONNECT p15100-1.pin1 -> p32525-2.hole11 STIFF
+CONNECT p15100-2.pin1 -> p32525-2.hole1 STIFF
+WHY Ties the two free wheel-end lugs together with an eleven-hole yellow crossbeam.
+STEP 80
+ADD p41239-2 41239 yellow
+ADD p2780-32 2780 black
+CONNECT p2780-32.pin2 -> p41239-2.hole7 STIFF
+CONNECT p2780-28.pin2 -> p41239-2.hole1 STIFF
+CONNECT p2780-29.pin2 -> p41239-2.hole3 STIFF
+CONNECT p18651-6.pin1 -> p41239-2.hole4 STIFF
+CONNECT p2780-31.pin1 -> p41239-2.hole13 STIFF
+WHY Closes the second long rail between the turntable, grey front support, and lift-arm upright.
+STEP 81
+ADD p32054-7 32054 black
+ADD p32054-8 32054 black
+ADD p32054-9 32054 black
+ADD p32054-10 32054 black
+ADD p3713-9 3713 red
+CONNECT p32054-7.pin1 -> p41239-2.hole11 STIFF
+CONNECT p32054-8.pin1 -> p41239-2.hole8 STIFF
+CONNECT p32054-9.pin1 -> p41239-1.hole8 STIFF
+CONNECT p32054-10.pin1 -> p41239-1.hole11 STIFF
+CONNECT p87083-4.axle2 -> p3713-9.axlehole1 LOCKED
+END
+WHY Adds the four outward mounting posts for the lift mechanism and retains the opposite stopped chassis axle.
+STEP 82
+ATTACH front-chassis
+CONNECT p32073-6.axle4 -> p32034-5.hole1 TURNS
+MESH p32270-5.teeth p18938-1.teeth
+RATIO p32270-5 p18938-1 12/60
+WHY Brings the front and rear chassis together around the drive shaft and meshes the steering pinion with the large turntable.
