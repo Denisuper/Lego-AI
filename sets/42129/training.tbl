@@ -1,0 +1,356 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+# 
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+# 
+STEP 1
+ADD k-tri-1 99773 lightgray
+ADD k-pin-1 61332 black
+ADD k-pin-2 61332 black
+CONNECT k-pin-1.pin1 -> k-tri-1.hole3~ STIFF
+CONNECT k-pin-2.pin1 -> k-tri-1.hole5~ STIFF
+WHY Starts the steering knuckle with a triangle beam and two pins that stick out the back for the next beam.
+STEP 2
+ADD k-tri-2 99773 lightgray
+CONNECT k-pin-1.pin2 -> k-tri-2.hole3~ STIFF
+CONNECT k-pin-2.pin2 -> k-tri-2.hole5~ STIFF
+WHY Puts a second triangle on the pins so the two triangles form a rigid pair.
+STEP 3
+ADD k-conn-1 42135 darkgray
+ADD k-axle-1 32073 yellow
+CONNECT k-conn-1.axlehole1 -> k-tri-2.hole1~ LOCKED
+CONNECT k-axle-1.axle1 -> k-conn-1.axlehole2~ LOCKED
+WHY Adds a yellow 5-long axle locked in a connector at one corner as the pivot for the wheel hub.
+STEP 4
+ADD k-bush-1 3713 red
+ADD k-hub-1 27940 darkgray
+ADD k-hub-2 44874 black
+CONNECT k-bush-1.axlehole1 -> k-axle-1.axle2~ LOCKED
+CONNECT k-hub-1.hole1~ -> k-tri-2.hole2~ TURNS
+CONNECT k-hub-2.pin1~ -> k-tri-2.hole4~ STIFF
+WHY A red bush holds the axle on and two hub pieces start the joints at the other corners.
+STEP 5
+ADD k-tri-3 99773 lightgray
+ADD k-tri-4 99773 lightgray
+CONNECT k-pin-1.pin1 -> k-tri-3.hole3~ STIFF
+CONNECT k-pin-2.pin1 -> k-tri-4.hole5~ STIFF
+WHY Closes the knuckle on the other side with two more triangles so it becomes a box.
+STEP 6
+ADD k-conn-2 42135 darkgray
+ADD k-pin-3 61332 black
+ADD k-pin-4 61332 black
+CONNECT k-pin-3.pin1 -> k-tri-3.hole1~ STIFF
+CONNECT k-pin-4.pin1 -> k-tri-4.hole1~ STIFF
+CONNECT k-conn-2.axlehole1~ -> k-pin-3.pin2 TURNS
+WHY Adds a connector and two pins on the inside to tie the triangle pairs together.
+STEP 7
+ADD k-apin-1 18651 black
+ADD k-apin-2 18651 black
+CONNECT k-apin-1.pin1 -> k-tri-3.hole2~ STIFF
+CONNECT k-apin-2.pin1 -> k-tri-4.hole2~ STIFF
+WHY Adds two axle pins on the back that carry the next connectors.
+STEP 8
+ADD k-conn-3 42135 darkgray
+ADD k-conn-4 42135 darkgray
+ADD k-lpin-1 11214 red
+ADD k-lpin-2 11214 red
+CONNECT k-conn-3.axlehole1~ -> k-apin-1.axle1 LOCKED
+CONNECT k-conn-4.axlehole1~ -> k-apin-2.axle1 LOCKED
+CONNECT k-lpin-1.axle1 -> k-conn-3.axlehole2~ LOCKED
+CONNECT k-lpin-2.axle1 -> k-conn-4.axlehole2~ LOCKED
+WHY Adds two connectors and red axle pins that stick out the sides as the stub axles the wheel will sit on.
+STEP 9
+ADD m-motor-1 22169 lightgray
+CONNECT m-motor-1.hole1? -> k-tri-3.hole1~ STIFF
+WHY Fits the first large motor against the knuckle: this one will drive the front axle.
+STEP 10
+ADD m-motor-2 22169 lightgray
+CONNECT m-motor-2.hole1? -> k-tri-4.hole1~ STIFF
+WHY Fits the second large motor beside the first so the two sit side by side.
+STEP 11
+ADD m-pin-1 61332 black
+ADD m-pin-2 61332 black
+ADD m-pin-3 61332 black
+ADD m-pin-4 61332 black
+CONNECT m-pin-1.pin1 -> m-motor-1.hole1? STIFF
+CONNECT m-pin-2.pin1 -> m-motor-1.hole2? STIFF
+CONNECT m-pin-3.pin1 -> m-motor-1.hole3? STIFF
+CONNECT m-pin-4.pin1 -> m-motor-1.hole4? STIFF
+WHY Puts four pins in the first motor's holes so the beam can be fixed to it next.
+STEP 12
+ADD m-pin-5 61332 black
+ADD m-pin-6 61332 black
+ADD m-pin-7 61332 black
+ADD m-pin-8 61332 black
+CONNECT m-pin-5.pin1 -> m-motor-2.hole1? STIFF
+CONNECT m-pin-6.pin1 -> m-motor-2.hole2? STIFF
+CONNECT m-pin-7.pin1 -> m-motor-2.hole3? STIFF
+CONNECT m-pin-8.pin1 -> m-motor-2.hole4? STIFF
+WHY Does the same for the second motor so both motors have pins ready for the beam.
+STEP 13
+ADD d-beam9-1 40490 lightgray
+ADD d-axle3-1 4519 lightgray
+ADD d-conn-1 59443 darkgray
+ADD d-diff-1 6573 red
+ADD d-axle4-1 99008 tan
+ADD d-bevel-1 6589 tan
+ADD d-bevel-2 6589 tan
+ADD d-bevel-3 6589 tan
+CONNECT d-bevel-1.axlehole1 -> d-axle4-1.axle1 LOCKED
+CONNECT d-bevel-2.axlehole1 -> d-axle4-1.axle2 LOCKED
+CONNECT d-axle4-1.axle3 -> d-diff-1.hole1~ TURNS
+CONNECT d-axle3-1.axle1 -> d-bevel-3.axlehole1 LOCKED
+CONNECT d-diff-1.hole2 -> d-beam9-1.hole1~ TURNS
+CONNECT d-conn-1.axlehole1 -> d-axle3-1.axle2~ LOCKED
+MESH d-bevel-1.teeth d-bevel-3.teeth
+MESH d-bevel-2.teeth d-bevel-3.teeth
+CONNECT d-beam9-1.hole3~ -> m-pin-1.pin2 STIFF
+CONNECT d-beam9-1.hole7~ -> m-pin-5.pin2 STIFF
+WHY Builds a small differential: two bevel gears on one axle and a third on the cross axle sit inside the red housing so the two outputs can turn at different speeds.
+STEP 14
+ADD d-beam3-1 32523 white
+ADD d-beam3-2 32523 white
+ADD d-hub-1 49130 lightgray
+ADD d-hub-2 49130 lightgray
+ADD d-lpin-1 65304 lightgray
+ADD d-lpin-2 65304 lightgray
+CONNECT d-hub-1.pin1~ -> d-beam3-1.hole1~ STIFF
+CONNECT d-hub-2.pin1~ -> d-beam3-2.hole1~ STIFF
+CONNECT d-lpin-1.pin1 -> d-beam3-1.hole3~ STIFF
+CONNECT d-lpin-2.pin1 -> d-beam3-2.hole3~ STIFF
+CONNECT d-lpin-1.pin2 -> d-beam9-1.hole1~ STIFF
+CONNECT d-lpin-2.pin2 -> d-beam9-1.hole9~ STIFF
+WHY Builds two white corner brackets and fixes them to the ends of the long beam beside the motors.
+STEP 15
+ADD d-bpin-1 43093 blue
+ADD d-lpin-3 11214 red
+CONNECT d-lpin-3.pin1 -> d-hub-1.hole1~ STIFF
+CONNECT d-bpin-1.pin1 -> d-hub-2.hole1~ STIFF
+WHY Adds a red and a blue pin into the brackets as stops and bearings for the axles in the next step.
+STEP 16
+ADD d-axle5-1 32073 yellow
+ADD d-axle5-2 32073 yellow
+ADD d-gear24-1 3648b darkgray
+ADD d-gear24-2 3648b darkgray
+CONNECT d-axle5-1.axle1 -> m-motor-1.axlehole1? LOCKED
+CONNECT d-axle5-2.axle1 -> m-motor-2.axlehole1? LOCKED
+CONNECT d-gear24-1.axlehole1 -> d-axle5-1.axle3 LOCKED
+CONNECT d-gear24-2.axlehole1 -> d-axle5-2.axle3 LOCKED
+WHY Each motor drives a yellow axle that carries a 24-tooth gear, ready to mesh with the differential.
+STEP 17
+ADD d-beam3-3 32523 white
+ADD d-beam3-4 32523 white
+ADD d-beam2-1 43857 brightgreen
+CONNECT d-beam3-3.hole1~ -> d-lpin-3.pin2 STIFF
+CONNECT d-beam3-4.hole1~ -> d-bpin-1.pin2 STIFF
+CONNECT d-beam2-1.hole1~ -> d-lpin-3.pin2 STIFF
+WHY Adds white and green beams over the axle ends to hold the gears in line.
+STEP 18
+ADD d-panel-1 15458 black
+ADD d-panel-2 15458 black
+CONNECT d-panel-1.hole1~ -> m-pin-1.pin2 STIFF
+CONNECT d-panel-1.hole5~ -> m-pin-2.pin2 STIFF
+CONNECT d-panel-2.hole1~ -> m-pin-5.pin2 STIFF
+CONNECT d-panel-2.hole5~ -> m-pin-6.pin2 STIFF
+WHY Lays a black 3x11 panel over each motor on the pins already fixed in steps 11 and 12, to cover the motors and add side walls.
+STEP 19
+ADD d-lblue-1 42924 blue
+ADD d-lblue-2 42924 blue
+ADD d-gpin-1 65304 lightgray
+ADD d-gpin-2 65304 lightgray
+CONNECT d-lblue-1.pin1 -> d-panel-1.hole9~ STIFF
+CONNECT d-lblue-2.pin1 -> d-panel-2.hole9~ STIFF
+CONNECT d-gpin-1.pin1 -> d-panel-1.hole11~ STIFF
+CONNECT d-gpin-2.pin1 -> d-panel-2.hole11~ STIFF
+WHY Fixes the panels to the front of the frame with long blue pins and puts grey pins at the corners for later parts.
+STEP 20
+ADD d-bpin-2 43093 blue
+ADD d-gpin-3 65304 lightgray
+ADD d-gpin-4 65304 lightgray
+ADD d-gpin-5 65304 lightgray
+CONNECT d-gpin-3.pin1 -> d-panel-1.hole3~ STIFF
+CONNECT d-gpin-4.pin1 -> d-panel-2.hole3~ STIFF
+CONNECT d-gpin-5.pin1 -> d-panel-1.hole7~ STIFF
+CONNECT d-bpin-2.axle1 -> d-gpin-5.axlehole1 LOCKED
+WHY Adds more grey pins and a blue axle pin that locks into the first grey pin as a stop for the next layer.
+STEP 21
+GROUP fb
+ADD fb-beam11-1 32525 darkgray
+ADD fb-pin-1 61332 black
+ADD fb-pin-2 61332 black
+ADD fb-pin-3 61332 black
+ADD fb-pin-4 61332 black
+ADD fb-pin-5 61332 black
+ADD fb-lblue-1 42924 blue
+ADD fb-tbeam-1 60484 black
+ADD fb-tbeam-2 60484 black
+ADD fb-beam3-1 32523 white
+ADD fb-gpin-1 65304 lightgray
+ADD fb-gpin-2 65304 lightgray
+ADD fb-bpin-1 43093 blue
+ADD fb-bpin-2 43093 blue
+CONNECT fb-pin-1.pin1 -> fb-beam11-1.hole2~ STIFF
+CONNECT fb-pin-2.pin1 -> fb-beam11-1.hole3~ STIFF
+CONNECT fb-pin-3.pin1 -> fb-beam11-1.hole6~ STIFF
+CONNECT fb-pin-4.pin1 -> fb-beam11-1.hole8~ STIFF
+CONNECT fb-lblue-1.pin1 -> fb-beam11-1.hole5~ STIFF
+CONNECT fb-pin-5.pin1 -> fb-beam11-1.hole4~ STIFF
+CONNECT fb-tbeam-1.hole1~ -> fb-pin-1.pin2 STIFF
+CONNECT fb-beam3-1.hole2~ -> fb-lblue-1.pin2 STIFF
+CONNECT fb-tbeam-2.hole1~ -> fb-pin-4.pin2 STIFF
+CONNECT fb-bpin-1.axle1 -> fb-gpin-1.axlehole1 LOCKED
+CONNECT fb-bpin-2.axle1 -> fb-gpin-2.axlehole1 LOCKED
+CONNECT fb-gpin-1.pin1 -> fb-beam11-1.hole1~ STIFF
+CONNECT fb-gpin-2.pin1 -> fb-beam11-1.hole11~ STIFF
+END
+ATTACH fb
+CONNECT fb-gpin-1.pin2 -> d-gpin-3.pin2~ STIFF
+CONNECT fb-gpin-2.pin2 -> d-gpin-4.pin2~ STIFF
+WHY Builds an 11-long front cross beam with two T-beams and a white beam on the side, then clips it across the front of the panels to stiffen the frame.
+STEP 22
+ADD d-ring-1 18947 darkgray
+ADD d-lpin-4 11214 red
+CONNECT d-ring-1.axlehole1? -> d-axle4-1.axle1 LOCKED
+CONNECT d-lpin-4.axle1 -> d-ring-1.axlehole1? LOCKED
+WHY Slides a grey driving ring and a red pin onto the output axle of the differential to make the lock mechanism.
+STEP 23
+GROUP sh
+ADD sh-axle6-1 3706 red
+ADD sh-axle9-1 60485 yellow
+ADD sh-conn-1 59443 darkgray
+ADD sh-shift-1 35188 orange
+ADD sh-bush-1 3713 red
+CONNECT sh-axle6-1.axle1 -> sh-conn-1.axlehole1 LOCKED
+CONNECT sh-axle9-1.axle1 -> sh-conn-1.axlehole2 LOCKED
+CONNECT sh-shift-1.axlehole1? -> sh-axle6-1.axle3~ TURNS
+CONNECT sh-bush-1.axlehole1 -> sh-axle6-1.axle6 LOCKED
+END
+ADD sh-conn-2 32184 darkgray
+ATTACH sh
+CONNECT sh-conn-2.hole1~ -> m-pin-4.pin2~ TURNS
+CONNECT sh-axle9-1.axle9 -> sh-conn-2.axlehole1 LOCKED
+CONNECT sh-axle6-1.axle5~ -> d-ring-1.axlehole1? TURNS
+WHY Makes the diff-lock shaft: a yellow and a red axle joined by a connector, with an orange shifter that can slide the driving ring, and fits it through the frame.
+STEP 24
+ADD sh-bush-2 3713 red
+CONNECT sh-bush-2.axlehole1 -> sh-axle9-1.axle1~ LOCKED
+WHY Puts a red bush on the yellow axle behind the motors so the shaft cannot slide out.
+STEP 25
+WHY Checks the diff lock: turning the shifter slides the driving ring on or off the differential, which is what locks or frees the two output axles.
+STEP 26
+GROUP ig
+ADD ig-beam3-1 32523 white
+ADD ig-lblue-1 42924 blue
+ADD ig-lblue-2 42924 blue
+ADD ig-cb-1 39793 white
+ADD ig-cb-2 39793 white
+ADD ig-pin-1 61332 black
+ADD ig-pin-2 61332 black
+ADD ig-pin-3 61332 black
+ADD ig-pin-4 61332 black
+ADD ig-beam5-1 32316 olive
+ADD ig-beam5-2 32316 olive
+ADD ig-axle5-1 15462 reddishbrown
+ADD ig-gear24-1 3648b darkgray
+ADD ig-gear16-1 94925 lightgray
+CONNECT ig-lblue-1.pin1 -> ig-beam3-1.hole1 STIFF
+CONNECT ig-lblue-2.pin1 -> ig-beam3-1.hole3 STIFF
+CONNECT ig-cb-1.hole1~ -> ig-lblue-1.pin2 STIFF
+CONNECT ig-cb-2.hole1~ -> ig-lblue-2.pin2 STIFF
+CONNECT ig-pin-1.pin1 -> ig-cb-1.hole2~ STIFF
+CONNECT ig-pin-2.pin1 -> ig-cb-1.hole3~ STIFF
+CONNECT ig-pin-3.pin1 -> ig-cb-2.hole2~ STIFF
+CONNECT ig-pin-4.pin1 -> ig-cb-2.hole3~ STIFF
+CONNECT ig-beam5-1.hole1~ -> ig-pin-1.pin2 STIFF
+CONNECT ig-beam5-2.hole5~ -> ig-pin-4.pin2 STIFF
+CONNECT ig-axle5-1.axle1 -> ig-beam5-1.hole3~ TURNS
+CONNECT ig-gear24-1.axlehole1 -> ig-axle5-1.axle3 LOCKED
+CONNECT ig-gear16-1.axlehole1 -> ig-axle5-1.axle5 LOCKED
+MESH ig-gear24-1.teeth ig-gear16-1.teeth
+END
+ATTACH ig
+CONNECT ig-beam5-1.hole5~ -> d-gpin-3.pin2~ STIFF
+CONNECT ig-beam5-2.hole1~ -> d-gpin-4.pin2~ STIFF
+WHY Builds a small gear carrier of white and olive beams holding a 24-tooth and a 16-tooth gear on a brown axle, then fits it between the two yellow-pin posts behind the motors.
+STEP 27
+GROUP ax
+ADD ax-axle7-1 44294 lightgray
+ADD ax-bush-1 3713 red
+ADD ax-gear16-1 94925 lightgray
+CONNECT ax-bush-1.axlehole1 -> ax-axle7-1.axle5 LOCKED
+CONNECT ax-gear16-1.axlehole1 -> ax-axle7-1.axle6 LOCKED
+END
+ATTACH ax
+CONNECT ax-axle7-1.axle1 -> d-diff-1.hole2~ TURNS
+MESH ax-gear16-1.teeth ig-gear24-1.teeth
+WHY Adds a long grey axle with a 16-tooth gear that meshes with the 24-tooth gear of the carrier, carrying the drive on toward the differential.
+STEP 28
+GROUP g8
+ADD g8-axle7-1 44294 lightgray
+ADD g8-bush-1 3713 red
+ADD g8-gear8-1 10928 darkgray
+CONNECT g8-bush-1.axlehole1 -> g8-axle7-1.axle5 LOCKED
+CONNECT g8-gear8-1.axlehole1? -> g8-axle7-1.axle6 LOCKED
+END
+ATTACH g8
+CONNECT g8-axle7-1.axle1 -> ig-beam5-2.hole3~ TURNS
+MESH g8-gear8-1.teeth ig-gear24-1.teeth
+WHY Adds a second long axle with an 8-tooth gear that meshes with the 24-tooth gear to give a big speed change.
+STEP 29
+ADD t-beam7-1 32524 darkgray
+ADD t-pin-1 39888 tan
+CONNECT t-beam7-1.hole1~ -> d-gpin-3.pin2~ STIFF
+CONNECT t-beam7-1.hole7~ -> d-gpin-4.pin2~ STIFF
+CONNECT t-pin-1.pin1 -> t-beam7-1.hole4~ TURNS
+WHY Lays a 7-long beam across the top of the gear train and fixes a tan frictionless pin in it as a bearing.
+STEP 30
+ADD t-beam3-1 32523 white
+ADD t-gear16-1 94925 lightgray
+ADD t-gear16-2 18946 red
+CONNECT t-beam3-1.hole1~ -> t-pin-1.pin2 TURNS
+CONNECT t-gear16-1.axlehole1 -> g8-axle7-1.axle3~ LOCKED
+CONNECT t-gear16-2.axlehole1? -> sh-axle6-1.axle4~ LOCKED
+MESH t-gear16-1.teeth t-gear16-2.teeth
+WHY Adds a 16-tooth gear and a red 16-tooth clutch gear that mesh with each other and a white beam to hold them in line.
+STEP 31
+GROUP cl
+ADD cl-bush-1 3713 red
+ADD cl-axle5-1 32073 yellow
+ADD cl-outer-1 46834 white
+ADD cl-inner-1 46835 darkgray
+CONNECT cl-inner-1.axlehole1 -> cl-outer-1.axlehole1? TURNS
+CONNECT cl-axle5-1.axle1 -> cl-inner-1.axlehole1 LOCKED
+CONNECT cl-bush-1.axlehole1 -> cl-axle5-1.axle3 LOCKED
+END
+ATTACH cl
+CONNECT cl-axle5-1.axle5 -> d-diff-1.hole1~ TURNS
+WHY Builds a two-part clutch on a yellow axle (the slip clutch that protects the gears from overload) and slides the axle in toward the differential.
+STEP 32
+GROUP dm
+ADD dm-motor-1 21980 white
+ADD dm-axle55-1 59426 darkgray
+ADD dm-plate-1 2817 black
+ADD dm-tbeam-1 60484 black
+ADD dm-pin-1 61332 black
+ADD dm-pin-2 61332 black
+ADD dm-pin-3 61332 black
+ADD dm-pin-4 61332 black
+ADD dm-pin-5 61332 black
+CONNECT dm-axle55-1.axle1 -> dm-motor-1.axlehole1? LOCKED
+CONNECT dm-plate-1.hole1~ -> dm-pin-1.pin1 STIFF
+CONNECT dm-plate-1.hole2~ -> dm-pin-2.pin1 STIFF
+CONNECT dm-pin-1.pin2 -> dm-motor-1.hole1? STIFF
+CONNECT dm-pin-2.pin2 -> dm-motor-1.hole2? STIFF
+CONNECT dm-tbeam-1.hole1~ -> dm-pin-3.pin1 STIFF
+CONNECT dm-tbeam-1.hole2~ -> dm-pin-4.pin1 STIFF
+CONNECT dm-pin-5.pin1 -> dm-tbeam-1.hole3~ STIFF
+WHY Builds the small motor that moves the diff lock: a white motor with a short axle, a black plate on one side and a T-beam with pins on the other.
+STEP 33
+ATTACH dm
+CONNECT dm-tbeam-1.hole1~ -> m-pin-4.pin2~ STIFF
+CONNECT dm-axle55-1.axle5~ -> sh-axle9-1.axle5~ TURNS
+WHY Fixes the diff-lock motor next to the differential so its axle can move the orange shifter.
