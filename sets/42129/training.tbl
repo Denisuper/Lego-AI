@@ -1699,3 +1699,116 @@ CONNECT hr-axle3-2.axle1 -> hm-ang-2.hole3~ TURNS
 CONNECT hr-axle3-3.axle1 -> ho-split-1.hole6~ TURNS
 CONNECT hr-axle3-4.axle1 -> ho-split-2.hole6~ TURNS
 WHY Four brown axles with stops go through the swing arms and linkages to pivot them on the frame.
+STEP 201
+GROUP sa
+ADD sa-beam6-1 32063 lightgray
+ADD sa-beam6-2 32063 lightgray
+ADD sa-arm-1 31794 lightgray
+ADD sa-trip-1 63869 lightgray
+ADD sa-hub-1 65487 lightgray
+ADD sa-hub-2 65487 lightgray
+ADD sa-tball-1 2736 lightgray
+ADD sa-pin-1 61332 black
+ADD sa-pin-2 61332 black
+ADD sa-pin-3 61332 black
+CONNECT sa-pin-1.pin1 -> sa-beam6-1.hole1~ STIFF
+CONNECT sa-beam6-2.hole1~ -> sa-pin-1.pin2 STIFF
+CONNECT sa-pin-2.pin1 -> sa-beam6-1.hole4~ STIFF
+CONNECT sa-pin-3.pin1 -> sa-beam6-1.hole6~ STIFF
+CONNECT sa-hub-1.pin1 -> sa-beam6-2.hole4~ STIFF
+CONNECT sa-hub-2.pin1 -> sa-beam6-2.hole6~ STIFF
+CONNECT sa-trip-1.hole1~ -> sa-pin-2.pin2 STIFF
+CONNECT sa-arm-1.hole1~ -> sa-trip-1.hole3~ STIFF
+CONNECT sa-tball-1.pin1? -> sa-arm-1.hole5~ TURNS
+END
+ATTACH sa
+CONNECT sa-beam6-1.hole2~ -> hr-axle3-1.axle2~ TURNS
+WHY Builds the left rear suspension arm from two thin 6-beams joined by pins, with a triple connector, a steering arm and a towball, then fits it on the rear axle.
+STEP 202
+GROUP sb
+ADD sb-beam6-1 32063 lightgray
+ADD sb-beam6-2 32063 lightgray
+ADD sb-arm-1 31794 lightgray
+ADD sb-trip-1 63869 lightgray
+ADD sb-hub-1 65487 lightgray
+ADD sb-hub-2 65487 lightgray
+ADD sb-tball-1 2736 lightgray
+ADD sb-pin-1 61332 black
+ADD sb-pin-2 61332 black
+ADD sb-pin-3 61332 black
+CONNECT sb-pin-1.pin1 -> sb-beam6-1.hole1~ STIFF
+CONNECT sb-beam6-2.hole1~ -> sb-pin-1.pin2 STIFF
+CONNECT sb-pin-2.pin1 -> sb-beam6-1.hole4~ STIFF
+CONNECT sb-pin-3.pin1 -> sb-beam6-1.hole6~ STIFF
+CONNECT sb-hub-1.pin1 -> sb-beam6-2.hole4~ STIFF
+CONNECT sb-hub-2.pin1 -> sb-beam6-2.hole6~ STIFF
+CONNECT sb-trip-1.hole1~ -> sb-pin-2.pin2 STIFF
+CONNECT sb-arm-1.hole1~ -> sb-trip-1.hole3~ STIFF
+CONNECT sb-tball-1.pin1? -> sb-arm-1.hole5~ TURNS
+END
+ATTACH sb
+CONNECT sb-beam6-1.hole2~ -> hr-axle3-2.axle2~ TURNS
+WHY Builds the mirror-image right rear suspension arm the same way and fits it on the other side.
+STEP 203
+ADD sc-beam7-1 32524 darkgray
+ADD sc-beam7-2 32524 darkgray
+CONNECT sc-beam7-1.hole1~ -> sa-pin-3.pin2 STIFF
+CONNECT sc-beam7-2.hole1~ -> sb-pin-3.pin2 STIFF
+WHY Two 7-long grey beams are laid across the tops of the two arms as the shock mounts.
+STEP 204
+ADD sc-axle3-1 24316 reddishbrown
+ADD sc-axle3-2 24316 reddishbrown
+CONNECT sc-axle3-1.axle1 -> sc-beam7-1.hole4~ TURNS
+CONNECT sc-axle3-2.axle1 -> sc-beam7-2.hole4~ TURNS
+WHY Brown axles with stops through the 7-beams hold the lower end of each shock.
+STEP 205
+ADD sd-axle3-1 24316 reddishbrown
+ADD sd-axle3-2 24316 reddishbrown
+ADD sd-shock-1 89954 red
+ADD sd-shock-2 89954 red
+ADD sd-hub-1 65487 lightgray
+ADD sd-hub-2 65487 lightgray
+CONNECT sd-hub-1.pin1 -> sd-shock-1.hole1? STIFF
+CONNECT sd-hub-2.pin1 -> sd-shock-2.hole1? STIFF
+CONNECT sd-axle3-1.axle1 -> sd-shock-1.hole2? TURNS
+CONNECT sd-axle3-2.axle1 -> sd-shock-2.hole2? TURNS
+WHY Two red shock absorbers, each with a small hub on top, are fixed to the arms on brown axles so the rear axle can spring.
+STEP 206
+GROUP se
+ADD se-beam2-1 60483 lightgray
+ADD se-beam2-2 60483 lightgray
+ADD se-pin-1 61332 black
+ADD se-pin-2 61332 black
+ADD se-bpin-1 43093 blue
+ADD se-bpin-2 43093 blue
+ADD se-beam7-1 32524 darkgray
+CONNECT se-bpin-1.pin1 -> se-beam2-1.hole2~ STIFF
+CONNECT se-pin-1.pin1 -> se-beam2-1.hole1~ STIFF
+CONNECT se-beam7-1.hole1~ -> se-bpin-1.pin2 STIFF
+CONNECT se-bpin-2.pin1 -> se-beam2-2.hole2~ STIFF
+CONNECT se-pin-2.pin1 -> se-beam2-2.hole1~ STIFF
+CONNECT se-beam7-1.hole7~ -> se-bpin-2.pin2 STIFF
+END
+ATTACH se
+CONNECT se-beam7-1.hole4~ -> sd-shock-1.hole3? STIFF
+WHY Builds a 7-long beam with two small grey end beams held by blue and black pins and sets it across the tops of the two shocks to tie them together.
+STEP 207
+ADD sf-axle4-1 3705 red
+ADD sf-axle5-1 32073 yellow
+CONNECT sf-axle5-1.axle1 -> sa-tball-1.axlehole1? TURNS
+CONNECT sf-axle4-1.axle1 -> sb-tball-1.axlehole1? TURNS
+WHY A yellow and a red axle go through the rear arms as the drive shafts that run forward to the diff.
+STEP 208
+ADD sg-panel-1 24119 black
+CONNECT sg-panel-1.hole1~ -> se-beam7-1.hole2~ STIFF
+CONNECT sg-panel-1.hole2~ -> se-beam7-1.hole6~ STIFF
+WHY A curved black panel covers the top of the rear axle assembly.
+STEP 209
+ATTACH rx
+CONNECT sf-axle5-1.axle5 -> cl-axle5-1.axle1~ LOCKED
+CONNECT sf-axle4-1.axle4 -> lk-axle8-1.axle8~ LOCKED
+WHY Joins the finished rear axle unit to the chassis, with the yellow and red axles plugging into the drive shafts coming back from the motors.
+STEP 210
+CONNECT rx-bent-1.hole1~ -> fl-panel-1.hole11~ STIFF
+CONNECT rz-bent-1.hole1~ -> fl-panel-2.hole11~ STIFF
+WHY Pushes the rear axle fully in so its beams sit against the floor panels and the shafts engage.
