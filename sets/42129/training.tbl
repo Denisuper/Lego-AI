@@ -2772,3 +2772,115 @@ END
 ATTACH bz
 CONNECT bz-trip-1.hole3~ -> bu-beam9-1.hole1~ STIFF
 WHY Builds a headlight unit in five small steps from two clear lenses on black plates, a tile and a black connector stack, and fits it at one end of the bumper.
+STEP 314
+GROUP ca
+ADD ca-tile-1 3070b black
+ADD ca-pin-1 61332 black
+ADD ca-axle3-1 4519 lightgray
+ADD ca-lens-1 98138 transclear
+ADD ca-lens-2 98138 transclear
+ADD ca-plate-1 18677 black
+ADD ca-conn-1 6536 darkgray
+ADD ca-conn-2 6536 darkgray
+ADD ca-plate-2 3023 black
+ADD ca-trip-1 63869 black
+CONNECT ca-pin-1.pin1 -> ca-conn-1.hole1 STIFF
+CONNECT ca-axle3-1.axle1 -> ca-conn-1.axlehole1 LOCKED
+CONNECT ca-conn-2.axlehole1 -> ca-axle3-1.axle3 LOCKED
+CONNECT ca-plate-1.hole1~ -> ca-pin-1.pin2 STIFF
+CONNECT ca-tile-1.stud1? -> ca-plate-1.stud1? STIFF
+CONNECT ca-plate-2.stud1? -> ca-lens-1.stud1? STIFF
+CONNECT ca-trip-1.hole1~ -> ca-conn-2.hole1~ STIFF
+END
+ATTACH ca
+CONNECT ca-trip-1.hole3~ -> bu-beam9-1.hole9~ STIFF
+WHY Builds the second headlight unit exactly like the first and fits it at the other end of the bumper.
+STEP 315
+GROUP cb
+ADD cb-panel-1 24116 black
+ADD cb-ell-1 71708 black
+ADD cb-ell-2 71708 black
+ADD cb-pin-1 61332 black
+ADD cb-pin-2 61332 black
+ADD cb-pin-3 61332 black
+ADD cb-pin-4 61332 black
+ADD cb-gpin-1 4274 lightgray
+ADD cb-gpin-2 4274 lightgray
+CONNECT cb-pin-1.pin1 -> cb-panel-1.hole1~ STIFF
+CONNECT cb-pin-2.pin1 -> cb-panel-1.hole2~ STIFF
+CONNECT cb-ell-1.hole1~ -> cb-pin-1.pin2 STIFF
+CONNECT cb-ell-2.hole1~ -> cb-pin-2.pin2 STIFF
+CONNECT cb-gpin-1.pin1 -> cb-panel-1.hole5~ TURNS
+CONNECT cb-gpin-2.pin1 -> cb-panel-1.hole6~ TURNS
+CONNECT cb-pin-3.pin1 -> cb-ell-1.hole3~ STIFF
+CONNECT cb-pin-4.pin1 -> cb-ell-2.hole3~ STIFF
+END
+ATTACH cb
+CONNECT cb-panel-1.hole3~ -> bu-beam9-2.hole5~ STIFF
+WHY Builds the grille: a black curved panel with two black quarter-ellipse end pieces, four black pins and two grey knob pins, and sets it on the top of the bumper (the grille sticker 11 goes in the opening).
+STEP 316
+ADD du-gpin-1 4274 lightgray
+ADD duck-1 49661 yellow
+CONNECT du-gpin-1.pin1 -> bu-beam9-2.hole3~ TURNS
+CONNECT duck-1.stud1? -> du-gpin-1.pin2 TURNS
+WHY Turns the bumper and puts the yellow duck on a pin in the corner as the mascot.
+STEP 317
+ATTACH bu
+CONNECT bu-beam9-1.hole5~ -> ds-beam15-1.hole1~ STIFF
+CONNECT bu-beam9-1.hole9~ -> ds-beam15-2.hole1~ STIFF
+WHY Fits the finished front bumper across the front of the chassis.
+STEP 318
+ADD ex-tpin-1 32002 tan
+CONNECT ex-tpin-1.pin1 -> ds-beam7-3.hole6~ TURNS
+WHY Bag 4 starts with one tan pin pushed into the front frame where the red circle shows.
+STEP 319
+GROUP ec
+ADD ec-plate-1 3020 black
+WHY Starts a battery-box cover: a black 2x4 plate.
+STEP 320
+ADD ec-plate-2 11212 black
+CONNECT ec-plate-2.stud1? -> ec-plate-1.stud1? STIFF
+WHY A black 3x3 plate is added beside it to widen the cover.
+STEP 321
+ADD ec-plate-3 3021 lightgray
+CONNECT ec-plate-3.stud1? -> ec-plate-1.stud5? STIFF
+WHY A light grey 2x3 plate goes on one corner as a contrast panel.
+STEP 322
+ADD ec-plate-4 3021 lightgray
+ADD ec-plate-5 3022 lightgray
+CONNECT ec-plate-4.stud1? -> ec-plate-2.stud1? STIFF
+CONNECT ec-plate-5.stud1? -> ec-plate-3.stud1? STIFF
+WHY More light grey plates fill the top of the cover.
+STEP 323
+ADD ec-tile-1 2431 black
+ADD ec-round-1 20482 lightgray
+CONNECT ec-tile-1.stud1? -> ec-plate-4.stud1? STIFF
+CONNECT ec-round-1.stud1? -> ec-plate-5.stud1? STIFF
+WHY A long black tile and a small round grey tile finish the top surface.
+STEP 324
+ADD ec-tile-2 3068b lightgray
+ADD ec-round-2 98138 black
+CONNECT ec-tile-2.stud1? -> ec-plate-3.stud3? STIFF
+CONNECT ec-round-2.stud1? -> ec-plate-5.stud4? STIFF
+WHY A light grey 2x2 tile and a black round tile are the last parts of the lid.
+STEP 325
+ADD ec-gpin-1 3673 lightgray
+ADD ec-hose-1 78c03 flatsilver
+ADD ec-clip-1 61252 lightgray
+CONNECT ec-gpin-1.pin1 -> ec-hose-1.hole1? TURNS
+CONNECT ec-clip-1.stud1? -> ec-gpin-1.pin2 STIFF
+WHY A grey ribbed hose with a pin and a clip plate is added on the side of the cover for the hub's cable.
+STEP 326
+ADD ec-bar-1 32828 black
+ADD ec-plate-6 3710 black
+ADD ec-plate-7 3023 green
+CONNECT ec-plate-6.stud1? -> ec-plate-1.stud1? STIFF
+CONNECT ec-bar-1.stud1? -> ec-plate-6.stud2? STIFF
+CONNECT ec-plate-7.stud1? -> ec-bar-1.stud1? STIFF
+WHY On the underside a black plate, a bar plate and a green plate are added, the green one marking the connector.
+STEP 327
+WHY Turns the cover over and sticks sticker 32 (a small label) on top.
+STEP 328
+ATTACH ec
+CONNECT ec-plate-1.stud1? -> ds-beam7-3.stud1? STIFF
+WHY Places the finished cover on the front frame beside the hose and tan pin.
