@@ -5596,3 +5596,109 @@ CONNECT oc-round-7.axlehole1 -> oc-axle4-1.axle3 LOCKED
 CONNECT oc-tile-1.stud1? -> oc-round-7.stud1? STIFF
 END
 WHY A round brick and a round tile with a hole are put on the end to cap the exhaust stack.
+STEP 623
+ATTACH oc
+ADD od-hose-1 78c03 flatsilver
+CONNECT od-hose-1.hole1? -> oc-tile-1.hole1? TURNS
+CONNECT oc-oc.stud1? -> nz-conn-1.stud1? STIFF
+WHY Fits the exhaust stack with its bent grey pipe on the back of the cab, upright behind the roof.
+STEP 624
+GROUP oe
+ADD oe-round-1 3941 white
+ADD oe-round-2 3941 white
+ADD oe-dome-1 30367c red
+ADD oe-dome-2 30367c red
+ADD oe-nozzle-1 60849 black
+ADD oe-cone-1 59900 black
+CONNECT oe-round-1.stud1? -> oe-round-2.stud1? STIFF
+CONNECT oe-dome-1.stud1? -> oe-round-1.stud1? STIFF
+CONNECT oe-nozzle-1.stud1? -> oe-dome-1.stud1? STIFF
+CONNECT oe-cone-1.stud1? -> oe-nozzle-1.stud1? STIFF
+END
+ATTACH oe
+CONNECT oe-round-2.stud1? -> ob-beam13-2.stud1? STIFF
+WHY Builds the two fire extinguishers (red and white round bricks with a hose nozzle on top) in three small steps each and clips them to the frame beside the cab.
+STEP 625
+ADD wh-tyre-1 69912 black
+ADD wh-tyre-2 69912 black
+ADD wh-tyre-3 69912 black
+ADD wh-tyre-4 69912 black
+ADD wh-rim-1 56908 lightgray
+ADD wh-rim-2 56908 lightgray
+ADD wh-rim-3 56908 lightgray
+ADD wh-rim-4 56908 lightgray
+CONNECT wh-rim-1.hole1~ -> wh-tyre-1.hole1? STIFF
+CONNECT wh-rim-2.hole1~ -> wh-tyre-2.hole1? STIFF
+CONNECT wh-rim-3.hole1~ -> wh-tyre-3.hole1? STIFF
+CONNECT wh-rim-4.hole1~ -> wh-tyre-4.hole1? STIFF
+WHY Bag 6 starts the wheels: each of the four big 81 x 35 tractor tyres has a light grey racing rim pressed inside.
+STEP 626
+ADD wk-axle3-1 4519 lightgray
+ADD wk-axle3-2 4519 lightgray
+ADD wk-hub-1 2723 black
+ADD wk-hub-2 2723 black
+ADD wk-bush-1 4185 black
+ADD wk-bush-2 4185 black
+CONNECT wk-hub-1.axlehole1? -> wk-axle3-1.axle1 LOCKED
+CONNECT wk-hub-2.axlehole1? -> wk-axle3-2.axle1 LOCKED
+CONNECT wk-bush-1.axlehole1 -> wk-axle3-1.axle3 LOCKED
+CONNECT wk-bush-2.axlehole1 -> wk-axle3-2.axle3 LOCKED
+WHY Builds two wheel centres, each a 3-long axle through a black 3x3 disc with a bush, and pushes them into the hubs on the front wheel positions as the arrows show.
+STEP 627
+ADD wm-axle3-1 4519 lightgray
+ADD wm-axle3-2 4519 lightgray
+ADD wm-hub-1 2723 black
+ADD wm-hub-2 2723 black
+CONNECT wm-hub-1.axlehole1? -> wm-axle3-1.axle1 LOCKED
+CONNECT wm-hub-2.axlehole1? -> wm-axle3-2.axle1 LOCKED
+CONNECT wm-axle3-1.axle3 -> rx-hub-1.axlehole1? LOCKED
+CONNECT wm-axle3-2.axle3 -> rz-hub-1.axlehole1? LOCKED
+WHY Builds two more wheel centres the same way and pushes them into the hubs on the rear wheel positions.
+STEP 628
+GROUP fa
+ADD fa-axle10-1 3737 black
+ADD fa-axle6-1 3706 black
+ADD fa-bush-1 3713 black
+CONNECT fa-bush-1.axlehole1 -> fa-axle10-1.axle10 LOCKED
+CONNECT fa-axle6-1.axle1 -> fa-bush-1.axlehole2? LOCKED
+WHY Starts the first marker flag: a black axle pole with a black bush and a top axle that carries the flag.
+STEP 629
+ADD fa-flag-1 11055 white
+ADD fa-flag-2 11055 white
+CONNECT fa-flag-1.clip1? -> fa-axle6-1.axle2? TURNS
+CONNECT fa-flag-2.clip1? -> fa-axle6-1.axle4? TURNS
+WHY Two white flags clip on the top of the pole.
+STEP 630
+ADD fa-base-1 44375b black
+ADD fa-round-1 4032a black
+ADD fa-tile-1 15535 black
+CONNECT fa-tile-1.stud1? -> fa-round-1.stud1? STIFF
+CONNECT fa-round-1.axlehole1 -> fa-axle10-1.axle1 LOCKED
+CONNECT fa-base-1.stud1? -> fa-round-1.stud1? STIFF
+END
+WHY Builds the flag's round base from a big dish, a round plate and a tile with a hole in two small steps and sets the pole in it. Two of these white flags are made.
+STEP 631
+GROUP fb2
+ADD fb2-axle10-1 3737 black
+ADD fb2-axle6-1 3706 black
+ADD fb2-bush-1 3713 black
+CONNECT fb2-bush-1.axlehole1 -> fb2-axle10-1.axle10 LOCKED
+CONNECT fb2-axle6-1.axle1 -> fb2-bush-1.axlehole2? LOCKED
+WHY Starts the red and white marker flag the same way: a black axle pole with a bush and a top axle.
+STEP 632
+ADD fb2-flag-1 11055 white
+ADD fb2-flag-2 11055 red
+CONNECT fb2-flag-1.clip1? -> fb2-axle6-1.axle2? TURNS
+CONNECT fb2-flag-2.clip1? -> fb2-axle6-1.axle4? TURNS
+WHY One white flag and one red flag clip on the top of the pole.
+STEP 633
+ADD fb2-base-1 44375b black
+ADD fb2-round-1 4032a black
+ADD fb2-tile-1 15535 black
+CONNECT fb2-tile-1.stud1? -> fb2-round-1.stud1? STIFF
+CONNECT fb2-round-1.axlehole1 -> fb2-axle10-1.axle1 LOCKED
+CONNECT fb2-base-1.stud1? -> fb2-round-1.stud1? STIFF
+END
+WHY Builds the red-and-white flag's round base and sets the pole in it. Two of these red-and-white flags are made.
+STEP 634
+WHY Shows the finished Zetros truck with the four wheels on and the four marker flags beside it, ready to play with.
