@@ -4931,3 +4931,148 @@ CONNECT mz-beam3-2.hole1~ -> mz-pin-4.pin2 STIFF
 CONNECT mz-bpin-2.pin1 -> mz-beam3-2.hole3~ STIFF
 END
 WHY Builds two black side rails for the bed (an 11-beam with a 13-beam, a 5-beam and a thin 3-beam on pins and a blue pin) in five small steps and sets them aside to fit on the two sides.
+STEP 567
+ADD na-pin-1 61332 black
+ADD na-pin-2 61332 black
+ADD na-bpin-1 43093 blue
+ADD na-bpin-2 43093 blue
+CONNECT na-bpin-1.pin1 -> bh-panel-1.hole3~ STIFF
+CONNECT na-bpin-2.pin1 -> bh-panel-2.hole3~ STIFF
+CONNECT na-pin-1.pin1 -> bh-panel-1.hole5~ STIFF
+CONNECT na-pin-2.pin1 -> bh-panel-2.hole5~ STIFF
+WHY Four pins (two black and two blue) go into the front of the bed floor where it meets the chassis, as the arrows show.
+STEP 568
+GROUP nb
+ADD nb-beam11-1 32525 darkgray
+ADD nb-bpin-1 43093 blue
+ADD nb-bpin-2 43093 blue
+CONNECT nb-bpin-1.pin1 -> nb-beam11-1.hole2~ STIFF
+CONNECT nb-bpin-2.pin1 -> nb-beam11-1.hole9~ STIFF
+WHY Starts the bed's front cross beam: a grey 11-long beam with two blue pins.
+STEP 569
+ADD nb-panel-1 64782 darkgray
+ADD nb-panel-2 64782 darkgray
+CONNECT nb-panel-1.hole1~ -> nb-bpin-1.pin2 STIFF
+CONNECT nb-panel-2.hole1~ -> nb-bpin-2.pin2 STIFF
+WHY Two dark grey 5x11 panels go on the pins to make a cover.
+STEP 570
+ADD nb-ang-1 32013 lightgray
+ADD nb-ang-2 32013 lightgray
+ADD nb-ang-3 32013 lightgray
+ADD nb-ang-4 32013 lightgray
+CONNECT nb-ang-1.hole1~ -> nb-panel-1.hole3~ STIFF
+CONNECT nb-ang-2.hole1~ -> nb-panel-1.hole5~ STIFF
+CONNECT nb-ang-3.hole1~ -> nb-panel-2.hole3~ STIFF
+CONNECT nb-ang-4.hole1~ -> nb-panel-2.hole5~ STIFF
+WHY Four light grey angled connectors are put on the underside of the cover.
+STEP 571
+ADD nb-bpin-3 43093 blue
+ADD nb-bpin-4 43093 blue
+CONNECT nb-bpin-3.pin1 -> nb-ang-1.hole2~ STIFF
+CONNECT nb-bpin-4.pin1 -> nb-ang-4.hole2~ STIFF
+WHY Two blue pins go through the connectors to hold them.
+STEP 572
+ADD nb-ang-5 32034 lightgray
+ADD nb-ang-6 32034 lightgray
+CONNECT nb-ang-5.hole1~ -> nb-ang-1.hole2~ STIFF
+CONNECT nb-ang-6.hole1~ -> nb-ang-4.hole2~ STIFF
+WHY Two more light grey angled connectors are added next to the first.
+STEP 573
+ADD nb-beam13-1 41239 black
+CONNECT nb-beam13-1.hole1~ -> nb-ang-5.hole2~ STIFF
+CONNECT nb-beam13-1.hole13~ -> nb-ang-6.hole2~ STIFF
+WHY A black 13-long beam is laid along the edge of the cover on the connectors.
+STEP 574
+ADD nb-pin-1 61332 black
+ADD nb-pin-2 61332 black
+ADD nb-bush-1 3713 darkgray
+ADD nb-bush-2 3713 darkgray
+CONNECT nb-pin-1.pin1 -> nb-panel-1.hole9~ STIFF
+CONNECT nb-pin-2.pin1 -> nb-panel-2.hole9~ STIFF
+CONNECT nb-bush-1.axlehole1 -> nb-pin-1.axle1? LOCKED
+CONNECT nb-bush-2.axlehole1 -> nb-pin-2.axle1? LOCKED
+END
+WHY Two black pins with small grey bushes go in the top edge of the cover to finish the front cross beam.
+STEP 575
+ATTACH nb
+CONNECT nb-beam11-1.hole5~ -> na-bpin-1.pin2~ STIFF
+CONNECT nb-beam11-1.hole7~ -> na-bpin-2.pin2~ STIFF
+WHY Places the finished front cross beam across the bed floor, over the four pins from step 567.
+STEP 576
+ADD nc-bush-1 3713 darkgray
+ADD nc-bpin-1 43093 blue
+ADD nc-ang-1 32013 brightgreen
+CONNECT nc-bush-1.axlehole1 -> nc-bpin-1.axle1 LOCKED
+CONNECT nc-ang-1.hole1~ -> nc-bpin-1.pin2 STIFF
+CONNECT nc-ang-1.hole2~ -> bq-beam11-1.hole2~ STIFF
+WHY A blue pin with a grey bush, then a bright green angled connector on it, is fixed on the chassis side beside the hub as the first part of the bed's green edge.
+STEP 577
+ADD nd-bpin-1 43093 blue
+ADD nd-bpin-2 43093 blue
+ADD nd-bpin-3 43093 blue
+ADD nd-bpin-4 43093 blue
+ADD nd-bpin-5 43093 blue
+ADD nd-bpin-6 43093 blue
+ADD nd-bpin-7 43093 blue
+ADD nd-bpin-8 43093 blue
+ADD nd-bpin-9 43093 blue
+ADD nd-bpin-10 43093 blue
+ADD nd-bpin-11 43093 blue
+ADD nd-bpin-12 43093 blue
+ADD nd-bpin-13 43093 blue
+ADD nd-bpin-14 43093 blue
+CONNECT nd-bpin-1.pin1 -> bq-beam11-1.hole4~ STIFF
+CONNECT nd-bpin-2.pin1 -> bq-beam11-1.hole6~ STIFF
+CONNECT nd-bpin-3.pin1 -> bq-beam11-1.hole8~ STIFF
+CONNECT nd-bpin-4.pin1 -> bq-beam11-1.hole10~ STIFF
+CONNECT nd-bpin-5.pin1 -> bq-beam11-2.hole4~ STIFF
+CONNECT nd-bpin-6.pin1 -> bq-beam11-2.hole6~ STIFF
+CONNECT nd-bpin-7.pin1 -> bq-beam11-2.hole8~ STIFF
+CONNECT nd-bpin-8.pin1 -> bq-beam11-2.hole10~ STIFF
+CONNECT nd-bpin-9.pin1 -> mw-panel-1.hole1~ STIFF
+CONNECT nd-bpin-10.pin1 -> mw-panel-1.hole7~ STIFF
+CONNECT nd-bpin-11.pin1 -> mx-beam11-1.hole4~ STIFF
+CONNECT nd-bpin-12.pin1 -> mx-beam11-1.hole8~ STIFF
+CONNECT nd-bpin-13.pin1 -> bj-lbeam-1.hole3~ STIFF
+CONNECT nd-bpin-14.pin1 -> bl-lbeam-1.hole3~ STIFF
+WHY Fourteen long blue pins are pushed into the chassis rails all round the bed as posts for the green bed edge.
+STEP 578
+ADD ne-beam11-1 32525 brightgreen
+ADD ne-beam11-2 32525 brightgreen
+ADD ne-beam11-3 32525 brightgreen
+ADD ne-beam11-4 32525 brightgreen
+ADD ne-beam7-1 32524 brightgreen
+ADD ne-beam7-2 32524 brightgreen
+CONNECT ne-beam11-1.hole2~ -> nd-bpin-1.pin2 STIFF
+CONNECT ne-beam11-2.hole2~ -> nd-bpin-4.pin2 STIFF
+CONNECT ne-beam11-3.hole2~ -> nd-bpin-5.pin2 STIFF
+CONNECT ne-beam11-4.hole2~ -> nd-bpin-8.pin2 STIFF
+CONNECT ne-beam7-1.hole2~ -> nd-bpin-9.pin2 STIFF
+CONNECT ne-beam7-2.hole2~ -> nd-bpin-10.pin2 STIFF
+WHY Four bright green 11-beams and two 7-beams are laid on the blue pins to make the green edge of the bed all round.
+STEP 579
+ADD nf-pin-1 61332 black
+ADD nf-pin-2 61332 black
+ADD nf-pin-3 61332 black
+ADD nf-pin-4 61332 black
+ADD nf-pin-5 61332 black
+ADD nf-pin-6 61332 black
+ADD nf-pin-7 61332 black
+ADD nf-pin-8 61332 black
+ADD nf-pin-9 61332 black
+ADD nf-pin-10 61332 black
+ADD nf-pin-11 61332 black
+ADD nf-pin-12 61332 black
+CONNECT nf-pin-1.pin1 -> ne-beam11-1.hole1~ STIFF
+CONNECT nf-pin-2.pin1 -> ne-beam11-1.hole11~ STIFF
+CONNECT nf-pin-3.pin1 -> ne-beam11-2.hole1~ STIFF
+CONNECT nf-pin-4.pin1 -> ne-beam11-2.hole11~ STIFF
+CONNECT nf-pin-5.pin1 -> ne-beam11-3.hole1~ STIFF
+CONNECT nf-pin-6.pin1 -> ne-beam11-3.hole11~ STIFF
+CONNECT nf-pin-7.pin1 -> ne-beam11-4.hole1~ STIFF
+CONNECT nf-pin-8.pin1 -> ne-beam11-4.hole11~ STIFF
+CONNECT nf-pin-9.pin1 -> ne-beam7-1.hole1~ STIFF
+CONNECT nf-pin-10.pin1 -> ne-beam7-1.hole7~ STIFF
+CONNECT nf-pin-11.pin1 -> ne-beam7-2.hole1~ STIFF
+CONNECT nf-pin-12.pin1 -> ne-beam7-2.hole7~ STIFF
+WHY Twelve black pins go in the ends of the green beams to hold the bed's side panels.
