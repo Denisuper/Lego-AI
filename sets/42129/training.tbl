@@ -61,12 +61,12 @@ CONNECT tr-apin-1.axle2 -> tr-conn-1.axlehole1 LOCKED
 CONNECT tr-apin-2.axle2 -> tr-conn-4.axlehole1 LOCKED
 WHY Adds 2 axle connectors and 4 long axle pins to the main chassis. It sits toward the rear of the truck, low on the truck. It is fixed onto the axle connector from step 3 and axle connector from step 2. The long axle pin is locked in the cross hole of the axle connector, so the two turn together (2 such joints in this step). Its unused ends stay free because step 33 slots 2 3x11 panels onto them.
 STEP 5
-ADD cont-motor-1 22169 lightgray
+ADD cont-motor-1 22169 darkgray
 CONNECT tr-pin-1.pin1 -> cont-motor-1.?
 CONNECT tr-pin-2.pin1 -> cont-motor-1.?
 WHY Adds a motor to the model. It sits toward the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 1. These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings.
 STEP 6
-ADD cont-motor-2 22169 lightgray
+ADD cont-motor-2 22169 darkgray
 CONNECT tr-pin-3.pin2 -> cont-motor-2.?
 CONNECT tr-pin-4.pin2 -> cont-motor-2.?
 WHY Adds a motor to the model. It sits toward the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 3. These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings.
@@ -2393,7 +2393,7 @@ CONNECT fa-apin-12.pin1 -> fa-conn-21.hole1 STIFF
 CONNECT fa-apin-13.pin1 -> fa-conn-22.hole1 STIFF
 WHY Adds a perpendicular pin connector and 2 long axle pins to the front axle. It sits in the middle of the truck, at mid height. It is fixed onto the 2 perpendicular pin connectors from step 162. The long axle pins grip the perpendicular pin connector with friction, making a rigid join (2 such joints in this step). These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings. Its unused ends stay free because step 165 slots 2 motors onto them.
 STEP 165
-ADD cont-motor-3 22169 lightgray
+ADD cont-motor-3 22169 darkgray
 CONNECT fa-apin-13.axle1 -> cont-motor-3.?
 CONNECT fa-apin-12.axle1 -> cont-motor-3.?
 WHY Adds a motor to the model. It sits in the middle of the truck, at mid height. It is fixed onto the 2 long axle pins from step 164. These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings.
@@ -2527,7 +2527,7 @@ CONNECT fa-axle6-2.axle6 -> tr-ball-1.axlehole1 LOCKED
 CONNECT fa-axle6-2.axle4 -> tr-ball-1.axlehole1 LOCKED
 WHY Finishes the front axle with a 6-long axle; the front axle carries the front differential, the wheel hubs and the steering joints. It sits toward the rear of the truck, at mid height. It is fixed onto the ball joint from step 155 and ball joint from step 25. The 6-long axle is locked in the cross hole of the ball joint, so the two turn together (4 such joints in this step).
 STEP 176
-ADD tr-axle2-2 32062 darkpink
+ADD tr-axle2-2 32062 red
 CONNECT tr-axle2-2.axle1 -> tr-bush-9.axlehole1 LOCKED
 CONNECT tr-axle2-2.axle2 -> tr-beam2-2.hole4 TURNS
 WHY Adds a 2-long axle to the main chassis. It sits at the rear of the truck, low on the truck, off to one side. It is fixed onto the 2x4 L-beam and bush from step 38. The 2-long axle is locked in the cross hole of the bush, so the two turn together. The 2-long axle passes through a round hole of the 2x4 L-beam with no grip, so it can spin or swing freely there.
@@ -4025,7 +4025,7 @@ ADD ws-tile-1 4162 black
 ADD ws-tile-2 6636 black
 WHY Finishes the first window side with 2 tiles. It sits in the middle of the truck, high up. These parts only meet earlier work through the parts added in the same step.
 STEP 289
-ADD ws2-axle3-1 6587 tan
+ADD ws2-axle3-1 6587 darktan
 ADD ws2-part-1 2723 black
 ADD ws2-conn-1 32126 darkgray
 ADD ws2-conn-2 42135 black
@@ -4467,7 +4467,7 @@ CONNECT fr-pin-7.pin1 -> hs2-beam2-1.hole1 TURNS
 CONNECT hs2-pin-6.pin2 -> hs2-beam3-1.hole6 STIFF
 WHY Finishes the second hood side with 2 3-hole beams, a 2-hole beam, a pin connector, 2 long pins and a frictionless axle pin. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 3x5 L-beam and 4 friction pins from step 323 and frictionless long pin from step 322. The 2-long axle is locked in the cross hole of the pin connector, so the two turn together. The frictionless axle pin passes through a round hole of the 3-hole beam with no grip, so it can spin or swing freely there (2 such joints in this step). Step 329 continues from here by adding 2 5-hole thin beams and a 3-long axle.
 STEP 325
-ADD hs3-axle3-1 6587 tan
+ADD hs3-axle3-1 6587 darktan
 ADD hs3-tile-1 98138 transorange
 ADD hs3-beam2-1 41677 darkgray
 ADD hs3-beam2-2 41677 darkgray
@@ -4502,7 +4502,7 @@ CONNECT hs3-pin-2.pin2 -> hs3-conn-1.hole2 TURNS
 CONNECT hs3-pin-1.pin2 -> hs3-conn-1.hole3 TURNS
 WHY Finishes the third hood side with a round pin connector, a perpendicular pin connector, 2 frictionless half pins, a friction pin and a long axle pin. It sits in the middle of the truck, at mid height. It is fixed onto the 2 5-hole thin beams and 3-long axle from step 326 and 3-long axle from step 325. The long axle pin sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The frictionless half pin passes through a round hole of the perpendicular pin connector with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 371 slots a pin connector and a pin hub onto them.
 STEP 328
-ADD hs4-axle3-1 6587 tan
+ADD hs4-axle3-1 6587 darktan
 ADD hs4-tile-1 98138 transorange
 ADD hs4-beam2-1 41677 darkgray
 ADD hs4-beam2-2 41677 darkgray
