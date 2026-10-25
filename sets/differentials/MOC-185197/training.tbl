@@ -1,0 +1,40 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD diff-1 6573 darkgray
+WHY Starts the build with the 24/16-tooth differential housing that the whole mechanism sits in.
+STEP 2
+ADD bevel-1 6589 tan
+ADD bevel-2 6589 tan
+ADD bevel-3 6589 tan
+CONNECT bevel-1.axlehole1 -> diff-1.bar1? LOCKED
+CONNECT bevel-2.axlehole1 -> diff-1.bar1? LOCKED
+CONNECT bevel-3.axlehole1 -> diff-1.bar1? LOCKED
+WHY Slots the three small bevel gears onto the housing's internal cross bar so they can spin as the differential's pinions.
+STEP 3
+ADD frame-1 64179 lightgray
+ADD axle-1 4519 lightgray
+ADD axle-2 4519 lightgray
+CONNECT axle-1.axle1 -> diff-1.hole1 TURNS
+CONNECT axle-2.axle1 -> diff-1.hole2 TURNS
+WHY Fits a short axle stub into each side of the housing, then wraps the open H-shaped frame around the whole assembly.
+STEP 4
+ADD axle-3 4519 lightgray
+CONNECT axle-3.axle1 -> frame-1.hole10~ TURNS
+WHY Adds a bearing axle through the frame's side hole, ready to carry the output gear.
+STEP 5
+ADD bevel-4 6589 tan
+CONNECT bevel-4.axlehole1 -> axle-3.axle2 LOCKED
+WHY Locks the fourth bevel gear onto the bearing axle so it meshes with the housing's outer teeth as the differential's output.
+STEP 6
+ADD connector-1 6553 lightgray
+CONNECT connector-1.axlehole1 -> axle-3.axle3 LOCKED
+WHY Caps the output axle with the perpendicular-axle connector, finishing the differential as a compact output stub.
