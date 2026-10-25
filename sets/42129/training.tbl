@@ -2067,3 +2067,215 @@ CONNECT ds-beam5-1.hole4~ -> ds-pin-2.pin2 STIFF
 CONNECT ds-hub-1.pin1 -> ds-beam5-1.hole1~ STIFF
 CONNECT ds-hub-2.pin1 -> ds-beam5-1.hole5~ STIFF
 WHY A black 5-beam with two small hubs on the pins gives the box its cover and two mounting posts.
+STEP 237
+ADD ds-lblue-1 42924 blue
+ADD ds-lblue-2 42924 blue
+ADD ds-lblue-3 42924 blue
+ADD ds-lblue-4 42924 blue
+CONNECT ds-lblue-1.pin1 -> ds-frame-1.hole3~ STIFF
+CONNECT ds-lblue-2.pin1 -> ds-frame-1.hole5~ STIFF
+CONNECT ds-lblue-3.pin1 -> ds-frame-1.hole15~ STIFF
+CONNECT ds-lblue-4.pin1 -> ds-frame-1.hole17~ STIFF
+WHY Four long blue pins stand up from the frame to carry the next beams.
+STEP 238
+ADD ds-beam9-1 40490 black
+ADD ds-beam7-3 32524 darkgray
+ADD ds-beam7-4 32524 darkgray
+CONNECT ds-beam9-1.hole2~ -> ds-lblue-1.pin2 STIFF
+CONNECT ds-beam7-3.hole1~ -> ds-lblue-2.pin2 STIFF
+CONNECT ds-beam7-4.hole1~ -> ds-lblue-4.pin2 STIFF
+WHY A black 9-beam and two 7-beams on the blue pins form the upper layer of the box.
+STEP 239
+ADD ds-axle8-1 55013 darkgray
+ADD ds-axle8-2 55013 darkgray
+ADD ds-conn-1 42003 lightgray
+ADD ds-conn-2 42003 lightgray
+CONNECT ds-axle8-1.axle1 -> ds-conn-1.axlehole1 LOCKED
+CONNECT ds-axle8-2.axle1 -> ds-conn-2.axlehole1 LOCKED
+CONNECT ds-conn-1.hole1~ -> ds-beam9-1.hole3~ STIFF
+CONNECT ds-conn-2.hole1~ -> ds-beam9-1.hole7~ STIFF
+WHY Two 8-long axles in grey connectors go up through the 9-beam as the pivots for the steering uprights.
+STEP 240
+ADD ds-bush-1 3713 red
+ADD ds-bush-2 3713 red
+ADD ds-lblue-5 42924 blue
+ADD ds-lblue-6 42924 blue
+ADD ds-conn-3 42003 lightgray
+ADD ds-conn-4 42003 lightgray
+CONNECT ds-lblue-5.pin1 -> ds-conn-3.hole1 STIFF
+CONNECT ds-lblue-6.pin1 -> ds-conn-4.hole1 STIFF
+CONNECT ds-bush-1.axlehole1 -> ds-axle8-1.axle8 LOCKED
+CONNECT ds-bush-2.axlehole1 -> ds-axle8-2.axle8 LOCKED
+WHY Red bushes stop each upright axle from sliding, and two more grey connectors with blue pins go on beside them.
+STEP 241
+ADD ds-lpin-1 11214 red
+ADD ds-lpin-2 11214 red
+ADD ds-conn-5 59443 darkgray
+ADD ds-conn-6 59443 darkgray
+CONNECT ds-conn-5.axlehole1 -> ds-lpin-1.axle1 LOCKED
+CONNECT ds-conn-6.axlehole1 -> ds-lpin-2.axle1 LOCKED
+CONNECT ds-conn-5.axlehole2 -> ds-axle3-1.axle3~ LOCKED
+CONNECT ds-conn-6.axlehole2 -> ds-axle3-2.axle3~ LOCKED
+WHY Red axle pins with grey connectors go onto the differential outputs to continue the drive out to each side.
+STEP 242
+GROUP wa
+ADD wa-hub-1 46490 lightgray
+ADD wa-hub-2 46490 lightgray
+ADD wa-arm-1 32063 lightgray
+ADD wa-arm-2 32063 lightgray
+ADD wa-ball-1 52731 lightgray
+ADD wa-ball-2 52731 lightgray
+CONNECT wa-ball-1.pin1? -> wa-hub-1.hole1? TURNS
+CONNECT wa-ball-2.pin1? -> wa-hub-2.hole1? TURNS
+CONNECT wa-arm-1.hole1~ -> wa-hub-1.hole2? STIFF
+CONNECT wa-arm-2.hole1~ -> wa-hub-2.hole2? STIFF
+END
+ATTACH wa
+CONNECT wa-hub-1.axlehole1? -> ds-lpin-1.pin2? LOCKED
+CONNECT wa-hub-2.axlehole1? -> ds-lpin-2.pin2? LOCKED
+WHY Builds the two wheel hubs (planetary gear hubs) each with a ball joint and a thin beam, and slides them onto the outputs.
+STEP 243
+ADD ds-conn-7 6536 darkgray
+ADD ds-conn-8 6536 darkgray
+CONNECT ds-conn-7.hole1~ -> wa-hub-1.hole3? TURNS
+CONNECT ds-conn-8.hole1~ -> wa-hub-2.hole3? TURNS
+WHY Two small connectors go on the hubs to hold the steering arms.
+STEP 244
+ADD wa-arm-3 31794 lightgray
+ADD wa-arm-4 31794 lightgray
+CONNECT wa-arm-3.hole1~ -> wa-ball-1.pin2? TURNS
+CONNECT wa-arm-4.hole1~ -> wa-ball-2.pin2? TURNS
+WHY Steering arms clip onto the balls on the hubs so the wheels can be turned.
+STEP 245
+ADD ds-lblue-7 42924 blue
+ADD ds-lblue-8 42924 blue
+ADD ds-lblue-9 42924 blue
+ADD ds-lblue-10 42924 blue
+CONNECT ds-lblue-7.pin1 -> ds-frame-1.hole9~ STIFF
+CONNECT ds-lblue-8.pin1 -> ds-frame-1.hole11~ STIFF
+CONNECT ds-lblue-9.pin1 -> ds-beam7-3.hole3~ STIFF
+CONNECT ds-lblue-10.pin1 -> ds-beam7-4.hole3~ STIFF
+WHY Four more blue pins fix the beams and hub arms onto the frame.
+STEP 246
+ADD ds-lbeam-1 32140 darkgray
+ADD ds-lbeam-2 32140 darkgray
+CONNECT ds-lbeam-1.hole1~ -> ds-lblue-7.pin2 STIFF
+CONNECT ds-lbeam-2.hole1~ -> ds-lblue-8.pin2 STIFF
+WHY Two grey L-beams on the blue pins stand up as the braces for the uprights.
+STEP 247
+ADD ds-gpin-1 65304 lightgray
+ADD ds-gpin-2 65304 lightgray
+CONNECT ds-gpin-1.pin1 -> ds-lbeam-1.hole3~ STIFF
+CONNECT ds-gpin-2.pin1 -> ds-lbeam-2.hole3~ STIFF
+WHY Two grey pins with stops go into the L-beams as stops for the steering arms.
+STEP 248
+ADD ds-bpin-6 43093 blue
+ADD ds-bpin-7 43093 blue
+ADD ds-beam2-1 60483 darkgray
+ADD ds-beam2-2 60483 darkgray
+ADD ds-beam2-3 60483 darkgray
+ADD ds-beam2-4 60483 darkgray
+CONNECT ds-beam2-1.hole1~ -> wa-arm-3.hole5~ STIFF
+CONNECT ds-beam2-2.hole1~ -> wa-arm-4.hole5~ STIFF
+CONNECT ds-bpin-6.pin1 -> ds-beam2-1.hole2~ STIFF
+CONNECT ds-bpin-7.pin1 -> ds-beam2-2.hole2~ STIFF
+CONNECT ds-beam2-3.hole1~ -> ds-bpin-6.pin2 STIFF
+CONNECT ds-beam2-4.hole1~ -> ds-bpin-7.pin2 STIFF
+WHY Pairs of small beams with blue pins are added on the steering arms to join them to the linkage.
+STEP 249
+ADD ds-beam11-1 32525 darkgray
+ADD ds-pin-3 61332 black
+ADD ds-pin-4 61332 black
+CONNECT ds-pin-3.pin1 -> ds-beam11-1.hole3~ STIFF
+CONNECT ds-pin-4.pin1 -> ds-beam11-1.hole9~ STIFF
+CONNECT ds-beam11-1.hole2~ -> ds-axle8-1.axle4~ TURNS
+CONNECT ds-beam11-1.hole10~ -> ds-axle8-2.axle4~ TURNS
+WHY An 11-long beam with two pins goes across the tops of the two upright axles to tie them together.
+STEP 250
+ADD ds-axle4-1 87083 darkgray
+ADD ds-axle4-2 87083 darkgray
+CONNECT ds-axle4-1.axle1 -> wa-hub-1.hole4? TURNS
+CONNECT ds-axle4-2.axle1 -> wa-hub-2.hole4? TURNS
+WHY Two 4-long axles with stops go through the frame into the hubs as the hinge pins for the steering.
+STEP 251
+ADD dt-axle4-1 87083 darkgray
+ADD dt-axle4-2 87083 darkgray
+ADD dt-shock-1 89954 red
+ADD dt-shock-2 89954 red
+CONNECT dt-shock-1.hole1? -> dt-axle4-1.axle3 TURNS
+CONNECT dt-shock-2.hole1? -> dt-axle4-2.axle3 TURNS
+CONNECT dt-axle4-1.axle1 -> ds-beam7-3.hole5~ TURNS
+CONNECT dt-axle4-2.axle1 -> ds-beam7-4.hole5~ TURNS
+WHY Two red shock absorbers on 4-long axles go on top of the front axle frame to give it suspension.
+STEP 252
+ADD dt-axle3-1 4519 lightgray
+ADD dt-axle3-2 4519 lightgray
+ADD dt-beam2-1 60483 darkgray
+ADD dt-beam2-2 60483 darkgray
+ADD dt-beam2-3 60483 darkgray
+ADD dt-beam2-4 60483 darkgray
+ADD dt-lpin-1 11214 red
+ADD dt-lpin-2 11214 red
+CONNECT dt-lpin-1.pin1 -> dt-beam2-1.hole1~ STIFF
+CONNECT dt-lpin-2.pin1 -> dt-beam2-2.hole1~ STIFF
+CONNECT dt-beam2-3.hole1~ -> dt-lpin-1.pin2 STIFF
+CONNECT dt-beam2-4.hole1~ -> dt-lpin-2.pin2 STIFF
+CONNECT dt-axle3-1.axle1 -> dt-beam2-3.axlehole1? LOCKED
+CONNECT dt-axle3-2.axle1 -> dt-beam2-4.axlehole1? LOCKED
+WHY Two small mounts, each of two grey beams on a red pin with a 3-long axle, are fixed under the front axle for the shock links.
+STEP 253
+ADD dt-bpin-1 43093 blue
+ADD dt-bpin-2 43093 blue
+ADD dt-conn-1 6536 darkgray
+ADD dt-conn-2 6536 darkgray
+ADD dt-beam2-5 60483 lightgray
+ADD dt-beam2-6 60483 lightgray
+CONNECT dt-bpin-1.pin1 -> dt-conn-1.hole1 STIFF
+CONNECT dt-bpin-2.pin1 -> dt-conn-2.hole1 STIFF
+CONNECT dt-beam2-5.hole1~ -> dt-bpin-1.pin2 STIFF
+CONNECT dt-beam2-6.hole1~ -> dt-bpin-2.pin2 STIFF
+WHY Two connectors with blue pins and light beams are added on the top of the axle as shock mounts.
+STEP 254
+ADD dt-beam3-1 32523 white
+ADD dt-pin-1 61332 black
+ADD dt-pin-2 61332 black
+CONNECT dt-pin-1.pin1 -> dt-beam3-1.hole1 STIFF
+CONNECT dt-pin-2.pin1 -> dt-beam3-1.hole3 STIFF
+WHY A white 3-beam with two pins is pressed onto the front of the frame as a cross-tie.
+STEP 255
+GROUP rk
+ADD rk-rack-1 87761 black
+ADD rk-beam2-1 41677 darkgray
+ADD rk-beam2-2 41677 darkgray
+ADD rk-beam2-3 41677 darkgray
+ADD rk-beam2-4 41677 darkgray
+ADD rk-bpin-1 43093 blue
+ADD rk-bpin-2 43093 blue
+ADD rk-tpin-1 32002 tan
+ADD rk-tpin-2 32002 tan
+CONNECT rk-bpin-1.pin1 -> rk-rack-1.hole1 STIFF
+CONNECT rk-bpin-2.pin1 -> rk-rack-1.hole2 STIFF
+CONNECT rk-beam2-1.hole1~ -> rk-bpin-1.pin2 STIFF
+CONNECT rk-beam2-2.hole1~ -> rk-bpin-2.pin2 STIFF
+CONNECT rk-tpin-1.pin1 -> rk-beam2-1.hole2~ TURNS
+CONNECT rk-tpin-2.pin1 -> rk-beam2-2.hole2~ TURNS
+END
+ATTACH rk
+CONNECT rk-rack-1.hole3~ -> dt-pin-1.pin2~ TURNS
+WHY Builds the steering rack: a black 7-tooth gear rack with a blue pin and tan pin at each end linking to the steering arms, and fits it across the front of the axle so it can slide side to side.
+STEP 256
+GROUP rm
+ADD rm-hub-1 65489 lightgray
+ADD rm-conn-1 42003 lightgray
+ADD rm-beam5-1 32316 black
+ADD rm-beam5-2 32316 black
+ADD rm-axle5-1 32073 yellow
+CONNECT rm-hub-1.pin1~ -> rm-beam5-1.hole2~ STIFF
+CONNECT rm-hub-1.pin2~ -> rm-beam5-1.hole4~ STIFF
+CONNECT rm-conn-1.hole1~ -> rm-hub-1.pin3~ STIFF
+CONNECT rm-beam5-2.hole1~ -> rm-conn-1.hole2~ STIFF
+CONNECT rm-axle5-1.axle1 -> rm-conn-1.axlehole1 LOCKED
+END
+ATTACH rm
+CONNECT rm-beam5-1.hole1~ -> rk-rack-1.hole5~ STIFF
+WHY Builds a steering gear mount from two black 5-beams, a hub, a connector and a yellow axle for the steering motor, and fits it behind the rack.
