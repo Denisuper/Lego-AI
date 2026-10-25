@@ -608,3 +608,232 @@ CONNECT p48989-1.pin2 -> p18654-4.hole1 STIFF
 CONNECT p48989-1.pin3 -> p39793-2.hole7 STIFF
 CONNECT p48989-1.pin4 -> p39793-2.hole3 STIFF
 WHY Reinforces the outer frame with an eleven-hole yellow crossbeam, two short yellow spacers and a grey four-pin connector carrying two dark grey sleeves.
+
+STEP 55
+ADD p32525-4 32525 yellow
+ADD p2780-26 2780 black
+ADD p2780-27 2780 black
+ADD p2780-28 2780 black
+ADD p15462-4 15462 brown
+ADD p32556-2 32556 tan
+ADD p94925-12 94925 lightgray
+ADD p18946-8 18946 red
+ADD p32054-3 32054 lightgray
+ADD p43093-1 43093 blue
+CONNECT p2780-26.pin1 -> p32525-4.hole2 STIFF
+CONNECT p2780-27.pin1 -> p32525-4.hole4 STIFF
+CONNECT p2780-28.pin1 -> p32525-4.hole10 STIFF
+CONNECT p15462-4.axle5 -> p32525-4.hole7 TURNS
+CONNECT p32556-2.pin1 -> p32525-4.hole5 TURNS
+CONNECT p15462-4.axle4 -> p94925-12.axlehole1 LOCKED
+CONNECT p32556-2.pin2 -> p18946-8.hole1 TURNS
+CONNECT p43093-1.axle1 -> p32054-3.axlehole1 LOCKED
+CONNECT p32054-3.pin1 -> p32525-4.hole11 STIFF
+CONNECT p2780-26.pin2 -> p63869-1.hole1 STIFF
+CONNECT p2780-27.pin2 -> p63869-1.hole3 STIFF
+CONNECT p2780-28.pin2 -> p63869-2.hole3 STIFF
+MESH p94925-12.teeth p18946-8.teeth
+RATIO p94925-12 p18946-8 1/1
+WHY Builds the second yellow bearing rail with a stopped brown shaft, locked grey gear and free red idler, then pins it onto the grey frame supports.
+
+STEP 56
+ADD p3706-1 3706 red
+ADD p44294-1 44294 yellow
+ADD p59443-7 59443 yellow
+ADD p94925-13 94925 lightgray
+ADD p94925-14 94925 lightgray
+CONNECT p44294-1.axle7 -> p59443-7.axlehole2 LOCKED
+CONNECT p3706-1.axle6 -> p59443-7.axlehole1 LOCKED
+CONNECT p3706-1.axle5 -> p94925-14.axlehole1 LOCKED
+CONNECT p3706-1.axle4 -> p63869-1.hole2 TURNS
+CONNECT p3706-1.axle3 -> p32525-4.hole3 TURNS
+CONNECT p3706-1.axle2 -> p94925-13.axlehole1 LOCKED
+MESH p94925-13.teeth p18946-8.teeth
+RATIO p94925-13 p18946-8 1/1
+WHY Joins yellow seven-length and red six-length axles with a yellow coupler, fits the two grey gears and feeds the shaft through the supporting round holes.
+
+STEP 57
+ADD p42924-24 42924 blue
+ADD p18654-5 18654 darkgray
+CONNECT p42924-24.pin1 -> p32525-4.hole1 STIFF
+CONNECT p42924-24.pin2 -> p18654-5.hole1 STIFF
+WHY Inserts the long blue end pin and a dark grey sleeve to space the final yellow bearing rail.
+
+STEP 58
+ADD p32525-5 32525 yellow
+CONNECT p42924-24.pin3 -> p32525-5.hole1 STIFF
+CONNECT p3706-1.axle1 -> p32525-5.hole3 TURNS
+CONNECT p32556-2.pin3 -> p32525-5.hole5 TURNS
+CONNECT p15462-4.axle3 -> p32525-5.hole7 TURNS
+CONNECT p43093-1.pin1 -> p32525-5.hole11 STIFF
+WHY Caps the outer gear pair with the final yellow eleven-hole rail, supporting both rotating shafts and the smooth idler pin.
+
+STEP 59
+ADD p18654-6 18654 darkgray
+ADD clutch-coupler-4 42195 lightgray
+CONNECT p15462-4.axle2 -> p18654-6.hole1 TURNS
+CONNECT p15462-4.axle1~ -> clutch-coupler-4.axlehole1 LOCKED
+WHY Slides a dark grey sleeve and grey cross coupler onto the projecting brown stopped shaft.
+END
+
+STEP 60
+ATTACH outer-gearbox-frame
+CONNECT p23948-1.axle10 -> p64179-5.hole8 TURNS
+CONNECT p4519-4.axle3 -> p64179-5.hole5 TURNS
+CONNECT p4519-5.axle3 -> p64179-5.hole13 TURNS
+CONNECT p32073-1.axle3 -> p39793-2.hole5 TURNS
+CONNECT p32073-1.axle4 -> p48989-1.hole2 TURNS
+CONNECT p87083-2.axle1 -> p64179-5.hole1 TURNS
+CONNECT p44294-1.axle2 -> p32526-3.hole1 TURNS
+CONNECT p44294-1.axle4 -> p32524-3.hole1 TURNS
+MESH p94925-14.teeth p18946-5.teeth
+RATIO p94925-14 p18946-5 1/1
+WHY Fits the completed outer gearbox wall over the aligned shafts and bearings, checking the grey centre shaft passes through the yellow block and grey four-pin connector.
+
+STEP 61
+GROUP gearbox-top-brace
+ADD p60484-1 60484 yellow
+ADD p2780-29 2780 black
+ADD p2780-30 2780 black
+CONNECT p2780-29.pin1 -> p60484-1.hole5 STIFF
+CONNECT p2780-30.pin1 -> p60484-1.hole1 STIFF
+WHY Starts a yellow T-shaped top bracket with black friction pins in the two outer holes of its foot.
+
+STEP 62
+ADD p42924-25 42924 blue
+ADD p42924-26 42924 blue
+ADD p2780-31 2780 black
+CONNECT p42924-26.pin2 -> p60484-1.hole4 STIFF
+WHY Adds two blue long pins and a black pin to the top-brace build, leaving the loose pins ready for the long beam and opposite grey bracket.
+
+STEP 63
+ADD p32525-6 32525 yellow
+CONNECT p2780-29.pin2 -> p32525-6.hole11 STIFF
+CONNECT p2780-30.pin2 -> p32525-6.hole9 STIFF
+CONNECT p42924-26.pin3 -> p32525-6.hole10 STIFF
+CONNECT p42924-25.pin1 -> p32525-6.hole1 STIFF
+CONNECT p2780-31.pin2 -> p32525-6.hole2 STIFF
+WHY Joins the long yellow eleven-hole crossbeam to the T bracket with its blue end pins and opposite black mounting pin exposed.
+
+STEP 64
+ADD p32140-1 32140 lightgray
+ADD p2780-32 2780 black
+ADD brace-spacer-pin 2780 black
+CONNECT p42924-25.pin2 -> p32140-1.hole3 STIFF
+CONNECT p2780-31.pin1 -> p32140-1.hole4 STIFF
+CONNECT brace-spacer-pin.pin1 -> p32140-1.hole2~ STIFF
+CONNECT p2780-32.pin2 -> p60484-1.hole3 STIFF
+WHY Fits the grey bent spacer bracket over the opposite end pins and inserts the two remaining black mounting pins.
+END
+
+STEP 65
+ATTACH gearbox-top-brace
+CONNECT p42924-25.pin3 -> p64179-4.hole18 STIFF
+CONNECT p42924-26.pin1 -> p64179-5.hole3 STIFF
+CONNECT p2780-32.pin1 -> p64179-5.hole2 STIFF
+WHY Pins the top brace across the gearbox frames above the clutch gears and selector.
+
+STEP 66
+ADD p32073-2 32073 lightgray
+ADD p59443-8 59443 yellow
+ADD p59443-9 59443 yellow
+CONNECT p32073-2.axle1 -> p59443-8.axlehole2 LOCKED
+CONNECT p32073-2.axle5 -> p59443-9.axlehole1 LOCKED
+CONNECT p32073-1.axle5 -> p59443-8.axlehole1 LOCKED
+WHY Extends the centre gearbox shaft with a grey five-length axle and yellow cross couplers at both ends.
+
+STEP 67
+GROUP second-frame-stack
+ADD p64179-6 64179 black
+ADD p2780-33 2780 black
+ADD p2780-34 2780 black
+ADD p2780-35 2780 black
+ADD p2780-36 2780 black
+ADD p2780-37 2780 black
+ADD p2780-38 2780 black
+CONNECT p2780-33.pin1 -> p64179-6.hole4 STIFF
+CONNECT p2780-34.pin1 -> p64179-6.hole2 STIFF
+CONNECT p2780-35.pin2 -> p64179-6.hole7 STIFF
+CONNECT p2780-36.pin2 -> p64179-6.hole15 STIFF
+CONNECT p2780-37.pin1 -> p64179-6.hole14 STIFF
+CONNECT p2780-38.pin1 -> p64179-6.hole6 STIFF
+WHY Starts the second chassis frame stack with six black friction pins pointing from the black frame's side holes.
+
+STEP 68
+ADD p42924-27 42924 blue
+ADD p42924-28 42924 blue
+CONNECT p42924-27.pin1 -> p64179-6.hole5 STIFF
+CONNECT p42924-28.pin1 -> p64179-6.hole1 STIFF
+WHY Inserts two long blue corner pins to hold the next two grey frame layers.
+
+STEP 69
+ADD p64179-7 64179 lightgray
+ADD p18651-2 18651 black
+ADD p18651-3 18651 black
+CONNECT p42924-27.pin2 -> p64179-7.hole16 STIFF
+CONNECT p42924-28.pin2 -> p64179-7.hole20 STIFF
+CONNECT p18651-2.pin1 -> p64179-7.hole7 STIFF
+CONNECT p18651-3.pin1 -> p64179-7.hole6 STIFF
+WHY Adds the first grey frame and seats two black axle-pins across its opposite side holes with their cross ends projecting outward.
+
+STEP 70
+ADD p64179-8 64179 lightgray
+CONNECT p42924-27.pin3 -> p64179-8.hole16 STIFF
+CONNECT p42924-28.pin3 -> p64179-8.hole20 STIFF
+WHY Caps the second frame stack with another grey frame over the long blue corner pins.
+
+STEP 71
+ADD p60484-2 60484 yellow
+ADD p2780-39 2780 black
+ADD p2780-40 2780 black
+ADD p2780-41 2780 black
+ADD p2780-42 2780 black
+CONNECT p2780-33.pin2 -> p60484-2.hole1 STIFF
+CONNECT p2780-34.pin2 -> p60484-2.hole5 STIFF
+CONNECT p2780-39.pin1 -> p64179-8.hole7 STIFF
+CONNECT p2780-40.pin1 -> p64179-8.hole15 STIFF
+CONNECT p2780-41.pin2 -> p64179-8.hole6 STIFF
+CONNECT p2780-42.pin2 -> p64179-8.hole14 STIFF
+WHY Pins the yellow T bracket across one end of the stacked frames and adds four black side pins to the upper grey frame.
+
+STEP 72
+ADD p42924-29 42924 blue
+ADD p42924-30 42924 blue
+ADD p4274-1 4274 blue
+ADD p2780-43 2780 black
+CONNECT p42924-29.pin2 -> p64179-6.hole16 STIFF
+CONNECT p42924-29.pin3 -> p64179-7.hole5 STIFF
+CONNECT p42924-30.pin2 -> p64179-6.hole20 STIFF
+CONNECT p42924-30.pin3 -> p64179-7.hole1 STIFF
+CONNECT p4274-1.pin1 -> p64179-6.hole18 TURNS
+CONNECT p2780-43.pin1 -> p64179-8.hole3 STIFF
+WHY Turns the frame stack over and adds two long blue corner pins, a blue half pin and a black end pin for its mounting points.
+
+STEP 73
+ADD p32278-1 32278 yellow
+ADD p42924-31 42924 blue
+ADD p42924-32 42924 blue
+ADD p42924-33 42924 blue
+CONNECT p42924-31.pin2 -> p32278-1.hole2 STIFF
+CONNECT p42924-32.pin2 -> p32278-1.hole3 STIFF
+CONNECT p42924-33.pin2 -> p32278-1.hole15 STIFF
+CONNECT p2780-37.pin2 -> p32278-1.hole13 STIFF
+CONNECT p2780-38.pin2 -> p32278-1.hole9 STIFF
+WHY Fits a yellow fifteen-hole side rail onto the black frame pins with three long blue pins left projecting for later cross braces.
+
+STEP 74
+ADD p32525-7 32525 yellow
+CONNECT p42924-29.pin1 -> p32525-7.hole4 STIFF
+CONNECT p42924-30.pin1 -> p32525-7.hole8 STIFF
+WHY Adds a yellow eleven-hole crossbeam across the exposed blue corner pins at the end of the frame stack.
+
+STEP 75
+WHY Turns the completed second frame stack over so the long yellow side rail sits below the three frame layers and its mounting pins face the existing gearbox.
+END
+
+STEP 76
+ATTACH second-frame-stack
+CONNECT p2780-43.pin2 -> p39793-2.hole6 STIFF
+CONNECT p42924-33.pin3 -> p64179-5.hole15 STIFF
+CONNECT p99008-3.pin1 -> p64179-7.hole3 TURNS
+WHY Slides the second frame stack against the gearbox and pushes its blue mounting pin home, keeping the tan drive-shaft neck free in its round bearing.
