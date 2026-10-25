@@ -827,3 +827,141 @@ ATTACH sx
 CONNECT sx-beam11-1.hole5~ -> s-axle3-1.axle2~ TURNS
 CONNECT sx-l-3.hole3~ -> s-bpin-1.pin2~ STIFF
 WHY Fixes the finished cross arm to the front lower beam and onto the brown axle so it can swing.
+STEP 93
+ADD sx-bent-1 6629 black
+ADD sx-axle3-2 4519 lightgray
+ADD sx-lblue-2 42924 blue
+ADD sx-lblue-3 42924 blue
+CONNECT sx-lblue-2.pin1 -> sx-bent-1.hole2~ STIFF
+CONNECT sx-lblue-3.pin1 -> sx-bent-1.hole4~ STIFF
+CONNECT sx-axle3-2.axle1 -> sx-bent-1.axlehole1? LOCKED
+CONNECT sx-bent-1.hole8~ -> sx-beam11-1.hole9~ STIFF
+WHY Adds a black bent 9-beam to the cross arm with two long blue pins and a short axle so the beam can angle out to the front.
+STEP 94
+ADD sx-beam13-1 41239 black
+ADD sx-gpin-1 4274 lightgray
+ADD sx-lblue-4 42924 blue
+CONNECT sx-gpin-1.pin1 -> sx-beam13-1.hole1~ TURNS
+CONNECT sx-lblue-4.pin1 -> sx-beam13-1.hole12~ STIFF
+CONNECT sx-beam13-1.hole3~ -> sx-lblue-2.pin2 STIFF
+CONNECT sx-beam13-1.hole5~ -> sx-lblue-3.pin2 STIFF
+WHY Swings a 13-long black beam down over the bent beam with a frictionless pin at one end and a blue pin at the other.
+STEP 95
+ADD sx-split-1 69819 darkgray
+ADD sx-axle5-1 32073 yellow
+ADD sx-axle3-3 24316 reddishbrown
+CONNECT sx-axle5-1.axle1 -> sx-split-1.axlehole1 LOCKED
+CONNECT sx-split-1.hole1~ -> sx-gpin-1.pin2 TURNS
+CONNECT sx-axle3-3.axle1 -> sx-beam13-1.hole13~ TURNS
+WHY Adds a split connector with a yellow axle at the free end and a brown axle through the end of the long beam.
+STEP 96
+ADD sx-conn-1 42003 lightgray
+ADD sx-pin-1 61332 black
+ADD sx-pin-2 61332 black
+CONNECT sx-pin-1.pin1 -> sx-conn-1.hole1 STIFF
+CONNECT sx-pin-2.pin1 -> sx-conn-1.hole2 STIFF
+CONNECT sx-conn-1.axlehole1 -> sx-axle5-1.axle5 LOCKED
+WHY A 3-long connector with two pins on the yellow axle ties the end of the arm to the bent beam.
+STEP 97
+ADD sx-bent-2 6629 black
+ADD sx-lblue-5 42924 blue
+CONNECT sx-lblue-5.pin1 -> sx-bent-2.hole2~ STIFF
+CONNECT sx-bent-2.hole8~ -> sx-beam11-1.hole3~ STIFF
+WHY Does the same on the other side: a second bent 9-beam goes on the cross arm with a blue pin.
+STEP 98
+ADD sx-axle3-4 24316 reddishbrown
+CONNECT sx-axle3-4.axle1 -> sx-bent-2.hole3~ TURNS
+WHY Pushes a brown axle with a stop through this second bent beam to mirror the first.
+STEP 99
+GROUP st
+ADD st-beam13-1 41239 black
+ADD st-gpin-1 4274 lightgray
+ADD st-pin-1 61332 black
+ADD st-pin-2 61332 black
+CONNECT st-pin-1.pin1 -> st-beam13-1.hole5~ STIFF
+CONNECT st-pin-2.pin1 -> st-beam13-1.hole8~ STIFF
+CONNECT st-gpin-1.pin1 -> st-beam13-1.hole12~ TURNS
+WHY Starts a steering link: a 13-long black beam with two pins and a frictionless pin near one end.
+STEP 100
+ADD st-pin-3 61332 black
+ADD st-pin-4 61332 black
+CONNECT st-pin-3.pin1 -> st-beam13-1.hole4~ STIFF
+CONNECT st-pin-4.pin1 -> st-beam13-1.hole9~ STIFF
+WHY Adds two more pins next to the first ones to hold the frame in step 101.
+STEP 101
+ADD st-frame-1 64179 black
+ADD st-conn-1 42003 lightgray
+CONNECT st-frame-1.hole4~ -> st-pin-1.pin2 STIFF
+CONNECT st-frame-1.hole8~ -> st-pin-2.pin2 STIFF
+CONNECT st-conn-1.hole1~ -> st-frame-1.hole2~ STIFF
+WHY Fixes a 5x7 frame to the pins on the link and adds a grey connector at the frame's corner.
+STEP 102
+ADD st-arm-1 31794 lightgray
+ADD st-hub-1 65487 lightgray
+ADD st-hub-2 65487 lightgray
+ADD st-tpin-1 39888 tan
+ADD st-pin-5 61332 black
+ADD st-pin-6 61332 black
+CONNECT st-pin-5.pin1 -> st-frame-1.hole6~ STIFF
+CONNECT st-pin-6.pin1 -> st-frame-1.hole10~ STIFF
+CONNECT st-hub-1.pin1 -> st-arm-1.hole1~ STIFF
+CONNECT st-hub-2.pin1 -> st-arm-1.hole4~ STIFF
+CONNECT st-tpin-1.pin1 -> st-arm-1.hole5~ TURNS
+CONNECT st-arm-1.hole2~ -> st-pin-5.pin2 STIFF
+WHY Adds the grey steering arm (the long side with the ball socket) on the frame with two hubs and a tan pin so it can turn the wheel.
+STEP 103
+ATTACH st
+CONNECT st-beam13-1.hole1~ -> sx-axle3-3.axle3~ TURNS
+CONNECT st-beam13-1.hole13~ -> sx-axle3-4.axle3~ TURNS
+WHY Fits the steering link across the front on the two brown axles so the front wheels can turn together.
+STEP 104
+ADD st-lblue-1 42924 blue
+CONNECT st-lblue-1.pin1 -> st-beam13-1.hole7~ STIFF
+CONNECT st-lblue-1.pin2 -> sx-bent-1.hole5~ STIFF
+WHY A long blue pin passes through the steering link and the bent beam to fix them together.
+STEP 105
+GROUP fn
+ADD fn-axle3-1 4519 lightgray
+ADD fn-conn-1 59443 darkgray
+ADD fn-conn-2 59443 darkgray
+ADD fn-trip-1 63869 lightgray
+ADD fn-tpin-1 3749 tan
+ADD fn-fan-1 41530 pearlsilver
+CONNECT fn-conn-1.axlehole1 -> fn-axle3-1.axle1 LOCKED
+CONNECT fn-conn-2.axlehole1 -> fn-axle3-1.axle3 LOCKED
+CONNECT fn-trip-1.hole1~ -> fn-conn-1.axlehole2~ TURNS
+CONNECT fn-tpin-1.pin1 -> fn-trip-1.hole2~ TURNS
+CONNECT fn-fan-1.axlehole1? -> fn-axle3-1.axle2 LOCKED
+END
+ATTACH fn
+CONNECT fn-trip-1.hole3~ -> st-lblue-1.pin2~ STIFF
+WHY Builds the radiator fan (an 8-blade propeller on a short axle in a triple connector) and fixes it behind the front bumper position.
+STEP 106
+ADD fm-l-1 32056 black
+ADD fm-l-2 32056 black
+ADD fm-axle3-1 24316 reddishbrown
+ADD fm-lpin-1 11214 red
+ADD fm-bpin-1 43093 blue
+CONNECT fm-bpin-1.pin1 -> fm-l-1.hole1~ STIFF
+CONNECT fm-l-2.hole1~ -> fm-bpin-1.pin2 STIFF
+CONNECT fm-lpin-1.pin1 -> fm-l-2.hole2~ STIFF
+CONNECT fm-axle3-1.axle1 -> fm-l-1.hole3~ TURNS
+WHY Makes a pair of black L-beams joined by pins that will form the mount for the front mudguard beam.
+STEP 107
+GROUP fm
+ADD fm-beam11-1 32525 darkgray
+ADD fm-apin-1 18651 black
+ADD fm-l-3 32056 black
+ADD fm-l-4 32056 black
+ADD fm-axle3-2 4519 lightgray
+ADD fm-lblue-1 42924 blue
+ADD fm-tpin-1 66906 red
+CONNECT fm-tpin-1.pin1 -> fm-beam11-1.hole3~ STIFF
+CONNECT fm-apin-1.pin1 -> fm-beam11-1.hole1~ STIFF
+CONNECT fm-l-3.hole1~ -> fm-apin-1.axle1 LOCKED
+CONNECT fm-axle3-2.axle1 -> fm-l-4.axlehole1? LOCKED
+CONNECT fm-lblue-1.pin1 -> fm-l-3.hole2~ STIFF
+END
+ATTACH fm
+CONNECT fm-beam11-1.hole11~ -> fm-lpin-1.pin2~ STIFF
+WHY Builds a long 11-beam with two L-beam ends and fits it along the side of the frame as the lower rail, held by the red pin from step 106.
