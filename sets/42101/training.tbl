@@ -1,0 +1,298 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD rax-conn1 32013 black
+ADD rax-axle1 32073 lightgray
+CONNECT rax-axle1.axle3~ -> rax-conn1.axlehole1 LOCKED
+WHY Locks a black angled connector to the middle of a long axle to start the rear suspension cross.
+STEP 2
+ADD rax-arm1 32056 red
+ADD rax-arm2 32056 red
+CONNECT rax-arm1.axlehole1~ -> rax-axle1.axle1 LOCKED
+CONNECT rax-arm2.axlehole1~ -> rax-axle1.axle5 LOCKED
+WHY Locks a red L-shaped arm onto each end of the axle so the rear cross can carry the body on both sides.
+STEP 3
+ADD rax-axle2 3705 black
+ADD rax-liftarm1 32192 black
+ADD rax-knuckle1 32184 lightgray
+CONNECT rax-axle2.axle2~ -> rax-liftarm1.axlehole1 LOCKED
+CONNECT rax-axle2.axle3~ -> rax-knuckle1.axlehole1~ LOCKED
+WHY Adds a second short axle with a bent liftarm and a double connector to build up the rear block.
+STEP 4
+ADD rax-liftarm2 32192 black
+CONNECT rax-axle2.axle1~ -> rax-liftarm2.axlehole1 LOCKED
+WHY Mirrors the bent liftarm onto the other end of the short axle to square up the block.
+STEP 5
+ADD eng-beam1 60483 white
+ADD eng-conn1 32013 black
+ADD eng-hub1 15100 darkgray
+ADD eng-pin1 11214 red
+ADD eng-hub2 87082 red
+ADD eng-bush1 32123b lightgray
+CONNECT eng-pin1.pin1 -> eng-beam1.hole1~ STIFF
+CONNECT eng-hub1.pin1 -> rax-knuckle1.hole1~ STIFF
+CONNECT eng-hub2.pin1~ -> eng-conn1.hole1 STIFF
+CONNECT eng-bush1.axlehole1~ -> rax-axle2.axle4~ LOCKED
+WHY Builds the small engine-block-looking cluster of hubs and a friction pin that will carry the rear drive.
+STEP 6
+ADD fw-liftarm1 32192 black
+CONNECT fw-liftarm1.hole1~ -> eng-pin1.pin2 STIFF
+WHY Adds the third bent liftarm, pinned on, to extend the cluster toward the chassis spine.
+STEP 7
+ADD eng-knuckle2 32184 lightgray
+CONNECT eng-knuckle2.hole1~ -> eng-hub2.pin2~ STIFF
+WHY Adds the second double connector so the cluster has a free hole ready for the next axle.
+STEP 8
+ADD ch-axle1 4519 yellow
+ADD rax-axle3 32073 lightgray
+ADD ch-bentbeam1 32348 black
+CONNECT ch-axle1.axle2~ -> eng-knuckle2.axlehole1~ LOCKED
+CONNECT rax-axle3.axle3~ -> ch-bentbeam1.axlehole1~ LOCKED
+WHY Adds a yellow axle and a long bent beam so the cluster can reach forward into the main chassis.
+STEP 9
+ADD ch-axle2 4519 yellow
+ADD ch-conn1 32039 red
+ADD ch-beam1 60483 white
+CONNECT ch-axle2.axle1~ -> ch-conn1.axlehole1 LOCKED
+CONNECT ch-axle2.axle3~ -> ch-beam1.axlehole1 LOCKED
+WHY Builds a short post with a red axle connector that will carry the upright gearbox post.
+STEP 10
+ADD ch-spine1 32140 black
+ADD ch-spine2 32140 black
+WHY Adds the first pair of L-shaped thick beams that form the main chassis spine.
+STEP 11
+ADD ch-spine3 32140 black
+ADD ch-spine4 32140 black
+WHY Lengthens the chassis spine on both sides with a second pair of L-shaped beams.
+STEP 12
+ADD ch-brace1 6632 black
+ADD ch-brace2 6632 black
+ADD ch-brace3 6632 black
+ADD ch-brace4 6632 black
+WHY Adds four short thin beams that will tie the two sides of the chassis spine together.
+STEP 13
+ADD ch-thin1 41677 black
+ADD ch-thin2 41677 black
+ADD ch-stud1 2825 black
+ADD ch-stud2 2825 black
+ADD ch-stud3 2825 black
+CONNECT ch-axle1.axle3~ -> ch-thin1.axlehole1~ LOCKED
+CONNECT rax-axle3.axle1~ -> ch-thin2.axlehole1~ LOCKED
+WHY Adds short thin beams and stud-connector beams that will later hold the steering column and seat.
+STEP 14
+ADD pin1 2780 black
+ADD pin2 2780 black
+ADD pin3 2780 black
+ADD pin4 2780 black
+ADD pin5 2780 black
+CONNECT pin1.pin1 -> ch-brace1.hole1~ STIFF
+CONNECT pin1.pin2 -> ch-spine3.hole1~ STIFF
+CONNECT pin2.pin1 -> ch-brace2.hole1~ STIFF
+CONNECT pin2.pin2 -> ch-spine4.hole1~ STIFF
+CONNECT pin3.pin1 -> ch-brace3.hole1~ STIFF
+CONNECT pin3.pin2 -> ch-spine1.hole1~ STIFF
+CONNECT pin4.pin1 -> ch-brace4.hole1~ STIFF
+CONNECT pin4.pin2 -> ch-spine2.hole1~ STIFF
+CONNECT pin5.pin1 -> ch-stud1.hole1~ STIFF
+CONNECT pin5.pin2 -> ch-spine1.hole2~ STIFF
+WHY Pins the four cross braces onto the spine on each side and starts pinning on the stud-connector beam.
+STEP 15
+ADD pin6 2780 black
+ADD pin7 2780 black
+ADD pin8 2780 black
+ADD pin9 2780 black
+ADD pin10 2780 black
+ADD link1 3673 lightgray
+ADD link2 3673 lightgray
+CONNECT pin6.pin1 -> ch-stud2.hole1~ STIFF
+CONNECT pin6.pin2 -> ch-spine2.hole2~ STIFF
+CONNECT pin7.pin1 -> ch-stud3.hole1~ STIFF
+CONNECT pin7.pin2 -> ch-spine3.hole2~ STIFF
+CONNECT pin8.pin1 -> ch-bentbeam1.hole1~ STIFF
+CONNECT pin8.pin2 -> ch-spine1.hole3~ STIFF
+CONNECT pin9.pin1 -> ch-bentbeam1.hole3~ STIFF
+CONNECT pin9.pin2 -> ch-spine2.hole3~ STIFF
+CONNECT link1.pin1 -> ch-spine3.hole3~ TURNS
+CONNECT link2.pin1 -> ch-spine4.hole2~ TURNS
+WHY Finishes pinning the spine, ties the long bent beam into it, and adds two frictionless pins where a later part needs to swing freely.
+STEP 16
+ADD nose-panelA1 11946 brightorange
+ADD nose-panelB1 11947 brightorange
+ADD nose-beam1 32523 brightorange
+CONNECT pin10.pin1 -> nose-beam1.hole2~ STIFF
+CONNECT pin10.pin2 -> ch-spine4.hole3~ STIFF
+CONNECT ch-axle1.axle1~ -> nose-panelA1.axlehole1~ LOCKED
+WHY Starts the front nose shell with the first panel pair and a short orange beam carrying the race number sticker.
+STEP 17
+ADD nose-panelA2 11946 brightorange
+ADD nose-panelB2 11947 brightorange
+ADD nose-top1 32316 brightorange
+ADD nose-top2 32316 brightorange
+CONNECT rax-axle3.axle2~ -> nose-panelB1.axlehole1~ LOCKED
+CONNECT rax-axle3.axle4~ -> nose-panelB2.axlehole1~ LOCKED
+WHY Mirrors the nose panels on the other side and adds the two orange beams that cap the top of the nose.
+STEP 18
+ADD nose-base1 32316 black
+ADD nose-base2 32316 black
+CONNECT ch-axle2.axle2~ -> nose-panelA2.axlehole1~ LOCKED
+WHY Adds two black beams under the nose shell to brace the panels from underneath.
+STEP 19
+ADD sus-knuckle1 92907 black
+ADD sus-bush1 3713 red
+ADD sus-pin1 3749 tan
+ADD whl-wheel1 55982 white
+ADD whl-tyre1 92402 black
+CONNECT sus-pin1.axle1~ -> sus-knuckle1.axlehole1~ LOCKED
+CONNECT sus-bush1.axlehole1~ -> sus-pin1.axle1~ LOCKED
+CONNECT sus-pin1.pin1 -> whl-wheel1.hole1 TURNS
+DOES sus-pin1 SPINS_ON whl-wheel1
+WHY Builds the steering knuckle for the front-left corner and mounts its wheel and tyre.
+STEP 20
+ADD whl-knuckle2 32291 black
+ADD whl-bush2 3713 red
+ADD whl-pin2 3749 tan
+ADD whl-wheel2 55982 white
+ADD whl-tyre2 92402 black
+CONNECT whl-pin2.axle1~ -> whl-knuckle2.axlehole1~ LOCKED
+CONNECT whl-bush2.axlehole1~ -> whl-pin2.axle1~ LOCKED
+CONNECT whl-pin2.pin1 -> whl-wheel2.hole1 TURNS
+DOES whl-pin2 SPINS_ON whl-wheel2
+WHY Mounts the second wheel corner the same way as the first.
+STEP 21
+ADD whl-knuckle3 32291 black
+ADD whl-bush3 3713 red
+ADD whl-pin3 3749 tan
+ADD whl-wheel3 55982 white
+ADD whl-tyre3 92402 black
+CONNECT whl-pin3.axle1~ -> whl-knuckle3.axlehole1~ LOCKED
+CONNECT whl-bush3.axlehole1~ -> whl-pin3.axle1~ LOCKED
+CONNECT whl-pin3.pin1 -> whl-wheel3.hole1 TURNS
+DOES whl-pin3 SPINS_ON whl-wheel3
+WHY Mounts the third wheel corner.
+STEP 22
+ADD whl-knuckle4 32291 black
+ADD whl-bush4 3713 red
+ADD whl-pin4 3749 tan
+ADD whl-wheel4 55982 white
+ADD whl-tyre4 92402 black
+CONNECT whl-pin4.axle1~ -> whl-knuckle4.axlehole1~ LOCKED
+CONNECT whl-bush4.axlehole1~ -> whl-pin4.axle1~ LOCKED
+CONNECT whl-pin4.pin1 -> whl-wheel4.hole1 TURNS
+DOES whl-pin4 SPINS_ON whl-wheel4
+WHY Mounts the fourth and last wheel corner so the buggy stands on all four wheels.
+STEP 23
+ADD sus-conn1 59443 lightgray
+ADD sus-pin5 4274 lightgray
+ADD sus-steer1 6553 black
+ADD sus-pin6 3749 tan
+CONNECT sus-pin6.axle1~ -> sus-conn1.axlehole1~ LOCKED
+CONNECT sus-steer1.axle1~ -> sus-conn1.axlehole2~ LOCKED
+CONNECT sus-pin5.pin1 -> whl-wheel1.hole1 TURNS
+DOES sus-steer1 DRIVES sus-conn1
+WHY Adds the steering arm and a smooth connector so the front-left knuckle can be turned from the chassis.
+STEP 24
+ADD sus-shock1 76138 lightgray
+CONNECT ch-axle2.axle2~ -> sus-shock1.hole1~ TURNS
+CONNECT sus-pin5.pin2 -> sus-shock1.hole2~ TURNS
+WHY Fits the soft spring shock absorber between the chassis and the front-left steering arm to soak up bumps.
+STEP 25
+ADD ch-axle3 24316 brown
+ADD ch-axle4 24316 brown
+CONNECT ch-axle3.axle1~ -> ch-brace1.axlehole1~ LOCKED
+CONNECT ch-axle4.axle1~ -> ch-brace2.axlehole1~ LOCKED
+WHY Adds two stopped axles through the cross braces that hold the rear drive parts from sliding sideways.
+STEP 26
+ADD ch-axle5 32062 red
+ADD ch-axle6 32062 red
+ADD ch-axle7 32062 red
+ADD ch-axle8 32062 red
+CONNECT ch-axle5.axle1~ -> ch-brace3.axlehole1~ LOCKED
+CONNECT ch-axle6.axle1~ -> ch-brace4.axlehole1~ LOCKED
+CONNECT ch-axle7.axle1~ -> ch-bentbeam1.axlehole2~ LOCKED
+CONNECT ch-axle8.axle1~ -> rax-knuckle1.axlehole2~ LOCKED
+WHY Adds short notched axles that link the cross braces and knuckle so later parts can turn on them.
+STEP 27
+ADD ch-axle9 32062 red
+ADD ch-axle10 32062 red
+ADD ch-axle11 32062 red
+ADD fw-tooth1 48267 red
+ADD fw-tooth2 48267 red
+CONNECT fw-tooth1.axlehole1~ -> ch-axle9.axle1~ LOCKED
+CONNECT fw-tooth2.axlehole1~ -> ch-axle10.axle1~ LOCKED
+WHY Adds the toothed ratchet parts that will let the pull-cord wind the flywheel one way only.
+STEP 28
+ADD fw-gear1 32270 black
+ADD fw-shaft1 60485 lightgray
+CONNECT fw-gear1.axlehole1~ -> fw-shaft1.axle2~ LOCKED
+CONNECT fw-shaft1.axle8~ -> eng-knuckle2.axlehole2~ LOCKED
+DOES fw-shaft1 DRIVES fw-gear1
+WHY Mounts the double-bevel gear on the long shaft that will carry the pull-cord wing.
+STEP 29
+ADD fw-conn1 6536 black
+ADD fw-conn2 42003 black
+ADD fw-conn3 42003 black
+CONNECT fw-shaft1.axle1~ -> fw-conn1.axlehole1~ LOCKED
+CONNECT ch-axle11.axle1~ -> fw-conn2.axlehole1~ LOCKED
+CONNECT ch-axle9.axle2~ -> fw-conn3.axlehole1~ LOCKED
+WHY Adds the perpendicular connectors that hold the flywheel shaft square to the chassis.
+STEP 30
+ADD misc-conn1 32039 red
+ADD misc-pin1 32002 tan
+ADD misc-pin2 43093 blue
+ADD misc-pin3 43093 blue
+CONNECT fw-shaft1.axle4~ -> misc-conn1.axlehole1~ LOCKED
+CONNECT misc-pin1.pin1 -> fw-conn2.hole1~ STIFF
+CONNECT misc-pin2.axle1~ -> fw-conn3.axlehole1~ LOCKED
+CONNECT misc-pin3.pin1 -> fw-conn1.hole1~ STIFF
+WHY Adds a few more friction pins and an axle connector that stiffen the flywheel mount.
+STEP 31
+ADD side-pin1 6558 blue
+ADD side-pin2 6558 blue
+CONNECT side-pin1.pin1 -> ch-spine3.hole4~ STIFF
+CONNECT side-pin2.pin1 -> ch-spine4.hole4~ STIFF
+WHY Adds the two long friction pins that will anchor the side hose tubes.
+STEP 32
+ADD ch-axle12 4519 yellow
+ADD ch-axle13 3705 black
+ADD ch-axle14 3705 black
+ADD ch-axle15 3705 black
+ADD rax-axle4 32073 lightgray
+CONNECT ch-axle12.axle1~ -> fw-conn1.axlehole1~ LOCKED
+CONNECT ch-axle13.axle1~ -> ch-thin1.axlehole2~ LOCKED
+CONNECT ch-axle14.axle1~ -> ch-thin2.axlehole2~ LOCKED
+CONNECT ch-axle15.axle1~ -> ch-conn1.axlehole2~ LOCKED
+CONNECT rax-axle4.axle1~ -> rax-liftarm1.axlehole2~ LOCKED
+WHY Adds the last short axles that finish bracing the rear half of the chassis.
+STEP 33
+ADD body-bush1 32123b lightgray
+ADD body-bush2 32123b lightgray
+ADD body-bush3 32123b lightgray
+CONNECT ch-axle13.axle2~ -> body-bush1.axlehole1~ LOCKED
+CONNECT ch-axle14.axle2~ -> body-bush2.axlehole1~ LOCKED
+CONNECT ch-axle15.axle2~ -> body-bush3.axlehole1~ LOCKED
+WHY Adds the last three smooth bushes onto the rear axles so they turn freely instead of binding.
+STEP 34
+ADD side-hose1 75c09 brightorange
+ADD side-hose2 75c09 brightorange
+CONNECT side-pin1.pin2 -> side-hose1.end1? STIFF
+CONNECT side-pin2.pin2 -> side-hose2.end1? STIFF
+WHY Fits the two rigid orange hoses that curve from the chassis up to the pull-cord wing.
+STEP 35
+ADD misc-pin4 11214 red
+ADD steer-wheel1 16091 lightgray
+CONNECT misc-pin4.pin1 -> fw-conn2.hole2~ STIFF
+CONNECT misc-pin4.axle1~ -> steer-wheel1.hole1? LOCKED
+WHY Plugs the small steering wheel onto a friction pin on the dashboard connector so the driver has something to hold.
+STEP 36
+ADD ch-bentbeam2 32348 black
+CONNECT ch-bentbeam2.hole1~ -> side-hose1.end2? STIFF
+CONNECT ch-bentbeam2.hole3~ -> side-hose2.end2? STIFF
+WHY Fits the last bent beam across the tops of the two hoses, bracing the pull-cord wing and completing the buggy.
