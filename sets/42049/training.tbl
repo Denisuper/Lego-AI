@@ -938,3 +938,229 @@ STEP 102
 ADD p6536-19 6536 yellow
 CONNECT p44294-2.axle7 -> p6536-19.axlehole1 LOCKED
 WHY Caps the second end of the main grabber shaft with its yellow perpendicular jaw-pivot connector.
+STEP 103
+ADD p32073-10 32073 lightgray
+ADD p60483-11 60483 black
+ADD p2780-33 2780 black
+ADD p32316-3 32316 black
+ADD p3673-5 3673 lightgray
+ADD p3673-6 3673 lightgray
+CONNECT p32073-10.axle2 -> p60483-11.axlehole1 LOCKED
+CONNECT p32073-10.axle1 -> p32316-3.hole4 TURNS
+CONNECT p2780-33.pin1 -> p32316-3.hole3 STIFF
+CONNECT p2780-33.pin2 -> p60483-11.hole1 STIFF
+CONNECT p3673-5.pin2 -> p32316-3.hole1 TURNS
+CONNECT p3673-6.pin2 -> p32316-3.hole5 TURNS
+CONNECT p32073-10.axle3 -> p32184-9.axlehole1 LOCKED
+CONNECT p32073-8.axle1 -> p32316-3.hole2 TURNS
+WHY Adds the first rear five-hole mounting bar with two frictionless pins for the moving lift links.
+STEP 104
+ADD p32316-4 32316 black
+ADD p60483-12 60483 black
+ADD p2780-34 2780 black
+ADD p3673-7 3673 lightgray
+ADD p3673-8 3673 lightgray
+CONNECT p2780-34.pin1 -> p32316-4.hole3 STIFF
+CONNECT p2780-34.pin2 -> p60483-12.hole1 STIFF
+CONNECT p3673-7.pin2 -> p32316-4.hole1 TURNS
+CONNECT p3673-8.pin2 -> p32316-4.hole5 TURNS
+CONNECT p32073-10.axle4 -> p60483-12.axlehole1 LOCKED
+CONNECT p32073-10.axle5 -> p32316-4.hole4 TURNS
+CONNECT p32073-8.axle5 -> p32316-4.hole2 TURNS
+WHY Fits the matching rear mounting bar over both cross shafts with its two free pivot pins facing outward.
+STEP 105
+ADD p32073-11 32073 lightgray
+ADD p32073-12 32073 lightgray
+ADD p42003-5 42003 lightgray
+ADD p42003-6 42003 lightgray
+ADD p32348-1 32348 black
+ADD p32348-2 32348 black
+ADD p6628-5 6628 black
+ADD p6628-6 6628 black
+ADD p32062-12 32062 red
+ADD p32062-13 32062 red
+ADD p45590-1 45590 black
+ADD p45590-2 45590 black
+CONNECT p32073-11.axle1 -> p42003-5.axlehole1 LOCKED
+CONNECT p6628-5.pin1 -> p42003-5.hole2 STIFF
+CONNECT p32073-11.axle2 -> p32348-1.axlehole1 LOCKED
+CONNECT p32062-12.axle2 -> p32348-1.axlehole2 LOCKED
+CONNECT p32062-12.axle1 -> p45590-1.axlehole1 LOCKED
+CONNECT p32073-11.axle3 -> p6536-17.hole1 TURNS
+CONNECT p32073-12.axle1 -> p42003-6.axlehole1 LOCKED
+CONNECT p6628-6.pin1 -> p42003-6.hole2 STIFF
+CONNECT p32073-12.axle2 -> p32348-2.axlehole1 LOCKED
+CONNECT p32062-13.axle2 -> p32348-2.axlehole2 LOCKED
+CONNECT p32062-13.axle1 -> p45590-2.axlehole1 LOCKED
+CONNECT p32073-12.axle3 -> p6536-19.hole1 TURNS
+WHY Builds the two lower jaws with rubber tips and stripe labels 13 and 11, then puts their shafts through the yellow round pivot holes.
+STEP 106
+ADD p32524-4 32524 yellow
+CONNECT p32073-11.axle4 -> p32524-4.hole7 TURNS
+CONNECT p32073-12.axle4 -> p32524-4.hole1 TURNS
+WHY Bridges the jaw shafts with a yellow seven-hole beam while leaving both shafts free to turn.
+STEP 107
+ADD p32348-3 32348 black
+ADD p32348-4 32348 black
+CONNECT p32073-11.axle5 -> p32348-3.axlehole1 LOCKED
+CONNECT p32073-12.axle5 -> p32348-4.axlehole1 LOCKED
+WHY Fits the upper jaw beams on the same shafts as the lower jaws and applies the matching stripe labels.
+STEP 108
+ADD p32005a-1 32005a black
+ADD p32005a-2 32005a black
+CONNECT p32005a-1.? -> p6628-3.? TURNS
+CONNECT p32005a-1.? -> p6628-5.? TURNS
+CONNECT p32005a-2.? -> p6628-4.? TURNS
+CONNECT p32005a-2.? -> p6628-6.? TURNS
+WHY Snaps the two links over the output-crank and jaw balls so the worm gearbox opens and closes both jaws.
+END
+STEP 109
+ATTACH grabber
+CONNECT p3706-3.axle1 -> p61903-3.axlehole2 LOCKED
+WHY Slides the grabber's worm shaft into the front universal joint to connect the jaw gearbox to the chassis drive.
+STEP 110
+GROUP right-lift-link
+ADD p32140-1 32140 black
+ADD p32316-5 32316 black
+ADD p2780-35 2780 black
+ADD p32054-11 32054 black
+ADD p4519-linkage1 4519 lightgray
+ADD p32062-14 32062 red
+ADD p60483-13 60483 black
+CONNECT p2780-35.pin1 -> p32140-1.hole4 STIFF
+CONNECT p2780-35.pin2 -> p32316-5.hole4 STIFF
+CONNECT p32054-11.pin1 -> p32140-1.hole3 STIFF
+CONNECT p32054-11.pin2 -> p32316-5.hole3 STIFF
+CONNECT p4519-linkage1.axle3~ -> p32054-11.axlehole1 LOCKED
+CONNECT p32062-14.axle1 -> p32140-1.axlehole1 LOCKED
+CONNECT p32062-14.axle2 -> p60483-13.axlehole1 LOCKED
+WHY Makes a rigid side lever from the L beam and five-hole bar, with a grey three-length axle through the long pin and a red axle at its other end.
+END
+STEP 111
+ATTACH right-lift-link
+CONNECT p3673-7.pin1 -> p32316-5.hole1 TURNS
+CONNECT p3673-4.pin1 -> p32316-5.hole5 TURNS
+CONNECT p32556-1.pin3 -> p60483-13.hole1 TURNS
+WHY Puts the side lever on the two grey pivots and turns the hand lever down to connect its moving post to the black lug.
+STEP 112
+ADD p32316-6 32316 black
+CONNECT p3673-8.pin1 -> p32316-6.hole1 TURNS
+CONNECT p3673-3.pin1 -> p32316-6.hole5 TURNS
+WHY Joins the second pair of grey pivots with a free-turning five-hole link to complete this side of the grabber lift linkage.
+STEP 113
+GROUP right-front-guard
+ADD p24116-1 24116 yellow
+ADD p11214-1 11214 darkgray
+ADD p32523-3 32523 black
+ADD p32291-1 32291 black
+ADD p4274-3 4274 lightgray
+ADD p4274-4 4274 lightgray
+ADD p6141-1 6141 transclear
+ADD p6141-2 6141 transclear
+CONNECT p11214-1.pin1 -> p24116-1.hole1 STIFF
+CONNECT p11214-1.axle1 -> p32523-3.hole3 TURNS
+CONNECT p11214-1.axle1~ -> p32291-1.axlehole1 LOCKED
+CONNECT p4274-3.pin1 -> p32291-1.hole2 TURNS
+CONNECT p4274-4.pin1 -> p32291-1.hole1 TURNS
+CONNECT p4274-3.? -> p6141-1.? LOCKED
+CONNECT p4274-4.? -> p6141-2.? LOCKED
+WHY Builds the first curved front guard with two clear lamps above it and applies warning label 10.
+END
+ATTACH right-front-guard
+CONNECT p2780-32.pin1 -> p32523-3.hole1 STIFF
+CONNECT p87083-4.axle1 -> p24116-1.hole2 TURNS
+STEP 114
+GROUP left-lift-link
+ADD p32140-2 32140 black
+ADD p32316-7 32316 black
+ADD p2780-36 2780 black
+ADD p32062-15 32062 red
+ADD p60483-14 60483 black
+CONNECT p2780-36.pin1 -> p32316-7.hole4 STIFF
+CONNECT p2780-36.pin2 -> p32140-2.hole4 STIFF
+CONNECT p32062-15.axle2 -> p32140-2.axlehole1 LOCKED
+CONNECT p32062-15.axle1 -> p60483-14.axlehole1 LOCKED
+END
+ATTACH left-lift-link
+CONNECT p3673-5.pin1 -> p32316-7.hole1 TURNS
+CONNECT p3673-2.pin2 -> p32316-7.hole5 TURNS
+CONNECT p4519-linkage1.axle1~ -> p32316-7.hole3 TURNS
+CONNECT p4519-linkage1.axle2~ -> p32140-2.hole3 TURNS
+CONNECT p32556-1.pin1 -> p60483-14.hole1 TURNS
+WHY Fits the opposite lift lever over the grey pivot pins and exposed three-length cross axle, then connects its lug to the other end of the hand lever.
+STEP 115
+ADD p32316-8 32316 black
+CONNECT p3673-6.pin1 -> p32316-8.hole1 TURNS
+CONNECT p3673-1.pin2 -> p32316-8.hole5 TURNS
+WHY Closes the other side of the parallel lift linkage with a five-hole bar on the remaining grey pivots.
+STEP 116
+GROUP left-front-guard
+ADD p24116-2 24116 yellow
+ADD p11214-2 11214 darkgray
+ADD p32523-4 32523 black
+ADD p32291-2 32291 black
+ADD p4274-5 4274 lightgray
+ADD p4274-6 4274 lightgray
+ADD p6141-3 6141 transclear
+ADD p6141-4 6141 transclear
+CONNECT p11214-2.pin1 -> p24116-2.hole1 STIFF
+CONNECT p11214-2.axle1 -> p32523-4.hole3 TURNS
+CONNECT p11214-2.axle1~ -> p32291-2.axlehole1 LOCKED
+CONNECT p4274-5.pin1 -> p32291-2.hole2 TURNS
+CONNECT p4274-6.pin1 -> p32291-2.hole1 TURNS
+CONNECT p4274-5.? -> p6141-3.? LOCKED
+CONNECT p4274-6.? -> p6141-4.? LOCKED
+END
+ATTACH left-front-guard
+CONNECT p2780-27.pin1 -> p32523-4.hole1 STIFF
+CONNECT p87083-2.axle1 -> p24116-2.hole2 TURNS
+WHY Builds the mirrored front guard with two clear lamps and label 5, then mounts it beside the opposite wheel axle.
+STEP 117
+GROUP cab
+ADD p32140-3 32140 black
+ADD p4519-7 4519 lightgray
+ADD p6558-13 6558 blue
+ADD p2780-37 2780 black
+CONNECT p4519-7.axle3 -> p32140-3.axlehole1 LOCKED
+CONNECT p6558-13.pin1 -> p32140-3.hole2 STIFF
+CONNECT p2780-37.pin2 -> p32140-3.hole4 STIFF
+WHY Starts the cab's inner bracket with a three-length axle and blue and black pins facing opposite ways.
+STEP 118
+ADD p32526-8 32526 yellow
+ADD p2780-38 2780 black
+ADD p2780-39 2780 black
+CONNECT p4519-7.axle2 -> p32526-8.hole5 TURNS
+CONNECT p6558-13.pin2 -> p32526-8.hole7 STIFF
+CONNECT p2780-38.pin1 -> p32526-8.hole4 STIFF
+CONNECT p2780-39.pin1 -> p32526-8.hole2 STIFF
+WHY Places the first yellow L beam over the axle and blue pin, with two black pins ready for the outside cab frame.
+STEP 119
+ADD p32526-9 32526 yellow
+ADD p32348-5 32348 yellow
+CONNECT p2780-38.pin2 -> p32526-9.hole7 STIFF
+CONNECT p2780-39.pin2 -> p32526-9.hole5 STIFF
+CONNECT p4519-7.axle1 -> p32348-5.axlehole1 LOCKED
+CONNECT p6558-13.pin3 -> p32348-5.hole2 STIFF
+WHY Adds the outside L beam and diagonal bent beam to form the yellow cab side frame.
+STEP 120
+ADD p4274-7 4274 lightgray
+ADD p4274-8 4274 lightgray
+CONNECT p4274-7.pin1 -> p32526-9.hole4 TURNS
+CONNECT p4274-8.pin1 -> p32526-9.hole3 TURNS
+WHY Fits two short grey pins in adjacent upper-frame holes to carry the printed side tile.
+STEP 121
+ADD p32140-4 32140 blue
+ADD p32140-5 32140 blue
+ADD p32062-16 32062 red
+ADD p6558-14 6558 blue
+CONNECT p32062-16.axle1 -> p32140-4.axlehole1 LOCKED
+CONNECT p32062-16.axle2 -> p32140-5.axlehole1 LOCKED
+CONNECT p6558-14.pin1 -> p32140-4.hole3 STIFF
+CONNECT p6558-14.pin2 -> p32140-5.hole3 STIFF
+CONNECT p6558-14.pin3 -> p32526-9.hole2 STIFF
+WHY Joins two blue L beams into the seat back with a red axle and mounts the doubled seat on the cab side frame.
+STEP 122
+ADD p2431-1 2431 yellow
+CONNECT p2431-1.? -> p4274-7.? LOCKED
+CONNECT p2431-1.? -> p4274-8.? LOCKED
+WHY Presses the yellow side tile over the two short-pin studs and applies the mining-company label 9.
