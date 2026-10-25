@@ -19,7 +19,7 @@ STEP 2
 ADD pin-1 32054 lightgray
 ADD top-1 99009 lightgray
 ADD base-2 99010 black
-CONNECT top-1.hole1~ -> base-2.hole1~ TURNS
+CONNECT top-1.hole1? -> base-2.hole1? TURNS
 CONNECT pin-1.pin1~ -> arm-1.hole2~ STIFF
 WHY Builds the first turntable housing (small base + top) that will carry the satellite gears, mounted on the input bracket.
 STEP 3
@@ -27,25 +27,25 @@ ADD pin-2 43093 blue
 ADD pin-3 43093 blue
 ADD hub-2 87082 lightgray
 ADD arm-2 32140 lightgray
-CONNECT hub-2.pin1~ -> base-1.hole2~ STIFF
+CONNECT hub-2.pin1~ -> base-1.hole1~ STIFF
 CONNECT arm-2.hole1~ -> hub-2.pin2~ STIFF
 WHY Mirrors step 1 on the opposite side of the base connector, with blue pins marking the turntable's rotation axle.
 STEP 4
 ADD pin-4 3749 tan
 ADD gear-1 32270 black
-CONNECT gear-1.axlehole1~ -> pin-4.pin1~ LOCKED
-CONNECT pin-4.axle1~ -> base-2.hole2~ STIFF
+CONNECT gear-1.axlehole1~ -> pin-4.axle1~ LOCKED
+CONNECT pin-4.pin1~ -> base-2.hole2~ TURNS
 WHY Mounts the first 12-tooth bevel gear onto the turntable housing on a tan axle-pin.
 STEP 5
 ADD pin-5 32054 lightgray
 ADD axle-1 4519 lightgray
 ADD gear-2 32270 black
 CONNECT gear-2.axlehole1~ -> axle-1.axle1~ LOCKED
-CONNECT axle-1.axle2~ -> base-2.hole3~ TURNS
+CONNECT axle-1.axle2~ -> base-2.hole1~ TURNS
 WHY Adds the second bevel gear, meshing with the first, on its own short axle inside the turntable housing.
 STEP 6
 ADD axle-2 4519 lightgray
-CONNECT axle-2.axle1~ -> base-2.hole4~ TURNS
+CONNECT axle-2.axle1~ -> base-2.hole2~ TURNS
 WHY Adds the input shaft that will drive the turntable housing from outside.
 STEP 7
 ADD pin-6 32054 lightgray
@@ -53,7 +53,7 @@ ADD pin-7 32054 lightgray
 ADD beam-1 32316 lightgray
 CONNECT pin-6.pin1~ -> arm-1.hole3~ STIFF
 CONNECT pin-7.pin1~ -> beam-1.hole1~ STIFF
-CONNECT beam-1.hole5~ -> arm-2.hole3~ STIFF
+CONNECT beam-1.hole5? -> arm-2.hole2? STIFF
 WHY Closes the frame around the turntable with a 5-hole beam pinned to both side arms.
 STEP 8
 ADD pin-8 11214 darkgray
@@ -72,7 +72,7 @@ STEP 10
 ADD pin-10 11214 darkgray
 ADD top-2 99009 lightgray
 ADD base-3 99010 black
-CONNECT top-2.hole1~ -> base-3.hole1~ TURNS
+CONNECT top-2.hole1? -> base-3.hole1? TURNS
 CONNECT pin-10.pin1~ -> arm-3.hole3~ STIFF
 WHY Builds the second turntable housing for the output side, matching step 2.
 STEP 11
@@ -81,10 +81,10 @@ ADD axle-3 4519 lightgray
 ADD gear-3 32270 black
 ADD arm-4 32140 lightgray
 CONNECT gear-3.axlehole1~ -> axle-3.axle1~ LOCKED
-CONNECT axle-3.axle2~ -> base-3.hole2~ TURNS
-CONNECT arm-4.hole1~ -> base-3.hole3~ STIFF
+CONNECT axle-3.axle2~ -> base-3.hole1~ TURNS
+CONNECT arm-4.hole1? -> base-3.hole2? STIFF
 WHY Adds the third bevel gear into the output turntable and a matching arm, joining the two turntable halves into one frame.
 STEP 12
 ADD axle-4 4519 lightgray
-CONNECT axle-4.axle1~ -> base-3.hole4~ TURNS
+CONNECT axle-4.axle1~ -> base-3.hole2~ TURNS
 WHY Adds the output shaft, finishing the differential - power goes in on one turntable's axle and out the other, with the turntables free to counter-rotate for the diff action.

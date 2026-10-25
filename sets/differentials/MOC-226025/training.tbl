@@ -30,8 +30,8 @@ WHY Adds the two 15-hole beams that form the long sides of the suspension arm.
 STEP 4
 ADD pin-5 43093 blue
 ADD pin-6 43093 blue
-CONNECT pin-5.axle1~ -> frame-1.hole5~ STIFF
-CONNECT pin-6.axle1~ -> frame-1.hole6~ STIFF
+CONNECT pin-5.axle1~ -> frame-1.hole5~ TURNS
+CONNECT pin-6.axle1~ -> frame-1.hole6~ TURNS
 WHY Adds two more pins to the frame, marking where the differential housing will mount.
 STEP 5
 ADD beam-3 32524 black
@@ -52,9 +52,9 @@ ADD diffbevel-1 6589 tan
 ADD diffbevel-2 6589 tan
 ADD diffbevel-3 6589 tan
 ADD diffhousing-1 62821b darkgray
-CONNECT diffbevel-1.axlehole1~ -> diffhousing-1.hole1~ TURNS
-CONNECT diffbevel-2.axlehole1~ -> diffhousing-1.hole2~ TURNS
-CONNECT diffbevel-3.axlehole1~ -> diffhousing-1.hole3~ TURNS
+CONNECT diffbevel-1.axlehole1~ -> diffhousing-1.bar1? LOCKED
+CONNECT diffbevel-2.axlehole1~ -> diffhousing-1.bar1? LOCKED
+CONNECT diffbevel-3.axlehole1~ -> diffhousing-1.bar1? LOCKED
 WHY Builds the differential: three bevel gears free to spin inside the 28-tooth housing.
 STEP 8
 WHY Drops the finished differential into the frame between the two beam layers.
@@ -69,8 +69,8 @@ ADD beam-5 32524 black
 ADD beam-6 32524 black
 ADD axle-9 4519 lightgray
 ADD axle-10 4519 lightgray
-CONNECT beam-5.hole1~ -> beam-3.hole3~ STIFF
-CONNECT beam-6.hole1~ -> beam-4.hole3~ STIFF
+CONNECT beam-5.hole1? -> beam-3.hole3? STIFF
+CONNECT beam-6.hole1? -> beam-4.hole3? STIFF
 WHY Adds the remaining two 7-hole beams, closing out that part count.
 STEP 11
 ADD pin-9 59443 black
@@ -88,14 +88,14 @@ ADD bush-5 32123b lightgray
 ADD bush-6 32123b lightgray
 ADD bush-7 32123b lightgray
 ADD bush-8 32123b lightgray
-CONNECT bush-1.hole1~ -> pin-1.pin2~ TURNS
-CONNECT bush-2.hole1~ -> pin-2.pin2~ TURNS
-CONNECT bush-3.hole1~ -> pin-3.pin2~ TURNS
-CONNECT bush-4.hole1~ -> pin-4.pin2~ TURNS
-CONNECT bush-5.hole1~ -> pin-5.pin2~ TURNS
-CONNECT bush-6.hole1~ -> pin-6.pin2~ TURNS
-CONNECT bush-7.hole1~ -> pin-7.pin2~ TURNS
-CONNECT bush-8.hole1~ -> pin-8.pin2~ TURNS
+CONNECT bush-1.axlehole1? -> pin-1.pin2? TURNS
+CONNECT bush-2.axlehole1? -> pin-2.pin2? TURNS
+CONNECT bush-3.axlehole1? -> pin-3.pin2? TURNS
+CONNECT bush-4.axlehole1? -> pin-4.pin2? TURNS
+CONNECT bush-5.axlehole1~ -> pin-5.pin1? TURNS
+CONNECT bush-6.axlehole1~ -> pin-6.pin1? TURNS
+CONNECT bush-7.axlehole1? -> pin-7.pin2? TURNS
+CONNECT bush-8.axlehole1? -> pin-8.pin2? TURNS
 WHY Caps all eight corner pins with half bushes so the frame spins freely where it needs to.
 STEP 14
 ADD conn-1 60483 lightgray
@@ -114,8 +114,8 @@ WHY Adds four small pin-and-axle connectors, mounting points for the steering kn
 STEP 15
 ADD pin-14 6558 blue
 ADD pin-15 6558 blue
-CONNECT pin-14.pin1~ -> conn-1.axlehole1~ STIFF
-CONNECT pin-15.pin1~ -> conn-2.axlehole1~ STIFF
+CONNECT pin-14.pin1~ -> conn-1.hole1~ STIFF
+CONNECT pin-15.pin1~ -> conn-2.hole1~ STIFF
 WHY Adds two more blue pins onto the new connectors.
 STEP 16
 ADD beam-7 11478 black
@@ -136,16 +136,16 @@ WHY Adds the first 5-hole thick beam, closing one end of the box frame.
 STEP 18
 ADD link-1 32005a black
 ADD link-2 32005a black
-CONNECT link-1.pin1~ -> beam-7.hole5~ TURNS
-CONNECT link-2.pin1~ -> beam-8.hole5~ TURNS
+CONNECT link-1.pin1~ -> beam-7.hole3~ STIFF
+CONNECT link-2.pin1~ -> beam-8.hole3~ STIFF
 WHY Adds two short links, the start of the steering tie-rod on each side.
 STEP 19
 ADD pin-18 61332 black
 ADD pin-19 61332 black
 ADD knuckle-1 64872 darkgray
 ADD knuckle-2 64872 darkgray
-CONNECT knuckle-1.hole1~ -> link-1.hole1~ TURNS
-CONNECT knuckle-2.hole1~ -> link-2.hole1~ TURNS
+CONNECT knuckle-1.hole1~ -> link-1.pin3~ TURNS
+CONNECT knuckle-2.hole1~ -> link-2.pin3~ TURNS
 WHY Adds the first two steering knuckles (towball-socket arms) on each side.
 STEP 20
 ADD knuckle-3 64872 darkgray
@@ -156,7 +156,7 @@ WHY Caps the third knuckle's holes and adds a pin for the shock absorber.
 STEP 22
 ADD pin-21 61332 black
 ADD shock-1 76537 red
-CONNECT shock-1.pin1~ -> knuckle-3.hole3~ TURNS
+CONNECT shock-1.hole1~ -> knuckle-3.hole3~ TURNS
 WHY Mounts the first shock absorber onto the third knuckle.
 STEP 23
 WHY Caps the shock absorber's pivot pins.
@@ -173,7 +173,7 @@ WHY Caps the fourth knuckle's holes and adds a pin for its shock absorber, mirro
 STEP 28
 ADD pin-23 61332 black
 ADD shock-2 76537 red
-CONNECT shock-2.pin1~ -> knuckle-4.hole3~ TURNS
+CONNECT shock-2.hole1~ -> knuckle-4.hole3~ TURNS
 WHY Mounts the second shock absorber, mirroring step 22.
 STEP 29
 WHY Caps the second shock absorber's pivot pins, mirroring step 23.
@@ -196,8 +196,8 @@ ADD hub-3 46490 lightgray
 ADD hub-4 46490 lightgray
 ADD stud-1 6587 darkgray
 ADD stud-2 6587 darkgray
-CONNECT hub-3.axle1~ -> cv-1.axle2~ TURNS
-CONNECT hub-4.axle1~ -> cv-2.axle2~ TURNS
+CONNECT hub-3.axlehole1~ -> cv-1.axle2~ LOCKED
+CONNECT hub-4.axlehole1~ -> cv-2.axle2~ LOCKED
 WHY Mounts the two wheel hubs (with their planetary gear reduction) onto the CV joints.
 STEP 34
 ADD axle-1 4519 lightgray
@@ -226,7 +226,7 @@ ADD axle-3 44294 lightgray
 ADD stud-3 6587 darkgray
 ADD stud-4 6587 darkgray
 CONNECT pinion-1.axlehole1~ -> axle-3.axle1~ LOCKED
-CONNECT axle-3.axle2~ -> diffhousing-1.hole4~ TURNS
+CONNECT axle-3.axle2~ -> diffhousing-1.bar1? LOCKED
 WHY Adds the drive input: a 20-tooth bevel gear on a long axle through the differential housing.
 STEP 38
 ADD cv-7 6587 darkgray
@@ -249,7 +249,7 @@ ADD axle-14 32062 red
 ADD axle-15 32062 red
 ADD rack-1 87761 black
 CONNECT pinion-2.axlehole1~ -> axle-6.axle1~ LOCKED
-CONNECT rack-1.hole1~ -> axle-6.axle2~ STIFF
+CONNECT rack-1.hole1~ -> axle-6.axle2~ TURNS
 WHY Adds the steering rack and its drive pinion, turning rotation into side-to-side steering motion.
 STEP 41
 ADD pin-30 32073 lightgray

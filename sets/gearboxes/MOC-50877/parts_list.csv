@@ -1,47 +1,37 @@
 qty,part_number,colour,name
-4,3705,Black,Technic Axle 4
-2,3707,Black,Technic Axle 8
-4,32270,Black,Technic Gear 12 Tooth Double Bevel
-6,2780,Black,Technic Pin with Friction Ridges Lengthwise and Center Slots
-2,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
+2,3705,Black,Technic Axle 4
 4,35185,Blue,Technic Gear 20 Tooth Double Bevel with Clutch on Both Sides
-7,6558,Blue,"Technic Pin Long with Friction Ridges Lengthwise, 2 Center Slots"
-2,32184,Dark Bluish Gray,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole
-3,39790,Dark Bluish Gray,Technic Beam Frame 11 x 15
-4,18947,Dark Bluish Gray,Technic Driving Ring 3L
-2,10928,Dark Bluish Gray,Technic Gear 8 Tooth [Reinforced]
-1,27940,Dark Bluish Gray,Technic Pin Connector Hub with 2 Axles
-1,15462,Dark Tan,Technic Axle 5 with Stop
-2,49283,Green,Wire Clip with Axle Hole
-3,58176,Light Bluish Gray,
-3,4519,Light Bluish Gray,Technic Axle 3
-3,32073,Light Bluish Gray,Technic Axle 5
-2,32316,Light Bluish Gray,Technic Beam 1 x 5 Thick
-2,32524,Light Bluish Gray,Technic Beam 1 x 7 Thick
-3,60484,Light Bluish Gray,Technic Beam 3 x 3 T-Shape Thick
-3,32526,Light Bluish Gray,Technic Beam 3 x 5 L-Shape Thick
-6,26287,Light Bluish Gray,Technic Driving Ring Connector Smooth [4 rounded side walls]
-4,94925,Light Bluish Gray,Technic Gear 16 Tooth Reinforced [New Style]
-1,62462,Light Bluish Gray,Technic Pin Connector Round [Slotted]
-2,35188,Orange,Gear Shifter
+10,43093,Blue,Technic Axle Pin with Friction Ridges Lengthwise
+8,10928,Dark Bluish Gray,Technic Gear 8 Tooth [Reinforced]
+4,18651,Dark Bluish Gray,Technic Axle Pin 3L with Friction Ridges Lengthwise and 2L Axle
+1,32062,Dark Bluish Gray,Technic Axle 2 Notched
+5,32184,Dark Bluish Gray,Technic Axle and Pin Connector Perpendicular 3L with Centre Pin Hole
+2,39790,Dark Bluish Gray,Technic Beam Frame 11 x 15
+2,94925,Dark Bluish Gray,Technic Gear 16 Tooth Reinforced [New Style]
+2,3706,Dark Red,Technic Axle 6
+1,32062,Dark Tan,Technic Axle 2 Notched
+1,32269,Dark Tan,Technic Gear 20 Tooth Double Bevel with Axle Hole Type 2 [X Opening]
+1,49283,Green,Wire Clip with Axle Hole
+3,18654,Light Bluish Gray,Technic Pin Connector Round 1L [Beam]
+4,2780,Light Bluish Gray,Technic Pin with Friction Ridges Lengthwise and Center Slots
+2,32073,Light Bluish Gray,Technic Axle 5
+4,32123b,Light Bluish Gray,Technic Bush 1/2 Smooth with Axle Hole Semi-Reduced
+6,32524,Light Bluish Gray,Technic Beam 1 x 7 Thick
+1,32525,Light Bluish Gray,Technic Beam 1 x 11 Thick
+2,58176,Light Bluish Gray,
+8,60484,Light Bluish Gray,Technic Beam 3 x 3 T-Shape Thick
 2,32054,Orange,"Technic Pin Long with Friction Ridges Lengthwise and Stop Bush [3 Lateral Holes, Big Pin Hole]"
-3,32062,Red,Technic Axle 2 Notched
-4,3706,Red,Technic Axle 6
-5,59443,Red,Technic Axle Connector Smooth [with x Hole + Orientation]
-6,3713,Red,Technic Bush
+2,32062,Orange,Technic Axle 2 Notched
+1,32073,Orange,Technic Axle 5
+6,11214,Red,Technic Axle Pin 3L with Friction Ridges Lengthwise and 1L Axle
 6,18946,Red,Technic Gear 16 Tooth with Clutch on Both Sides
-2,6628,Red,Technic Pin with Friction Ridges Lengthwise and Towball
-2,99008,Tan,Technic Axle 4 with Centre Stop
-1,3749,Tan,Technic Axle Pin without Friction Ridges Lengthwise
-3,32269,Tan,Technic Gear 20 Tooth Double Bevel with Axle Hole Type 2 [X Opening]
-1,32556,Tan,Technic Pin Long without Friction Ridges
-1,85543,White,
-2,32525,White,Technic Beam 1 x 11 Thick
-1,32523,White,Technic Beam 1 x 3 Thick
+1,35188,Red,Gear Shifter
+7,3713,Red,Technic Bush
+6,59443,Red,Technic Axle Connector Smooth [with x Hole + Orientation]
+9,6628,Red,Technic Pin with Friction Ridges Lengthwise and Towball
+4,15462,Reddish Brown,Technic Axle 5 with Stop
 1,18948,White,Technic Driving Ring Connector
-5,18654,White,Technic Pin Connector Round 1L [Beam]
-4,44294,Yellow,Technic Axle 7
-1,60485,Yellow,Technic Axle 9
-6,59443,Yellow,Technic Axle Connector Smooth [with x Hole + Orientation]
-2,35186,Yellow,"Technic Driving Ring Extension, 8 Ridges"
-3,32072,Yellow,Technic Knob Wheel
+1,32525,Yellow,Technic Beam 1 x 11 Thick
+2,44294,Yellow,Technic Axle 7
+2,4519,Yellow,Technic Axle 3
+4,58176,Yellow,
