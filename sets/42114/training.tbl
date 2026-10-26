@@ -5598,3 +5598,247 @@ WHY Secures the second headlight-end fork to the projecting grey bent support wi
 STEP 508
 
 WHY Rotates the centre yellow pin-hole connector outward as pictured to prepare its pin for the upper hood attachment.
+
+STEP 509
+GROUP upper-hood-panels
+ADD p64391-1 64391 yellow
+ADD p2780-271 2780 black
+ADD p2780-272 2780 black
+CONNECT p2780-271.pin1 -> p64391-1.hole4~ STIFF
+CONNECT p2780-272.pin1 -> p64391-1.hole2 STIFF
+WHY Starts the first upper hood side with the long yellow number-4 panel and two black pins at its broad end; the depth through the longer socket is estimated.
+
+STEP 510
+ADD p87086-1 87086 yellow
+CONNECT p2780-271.pin2 -> p87086-1.hole2 STIFF
+CONNECT p2780-272.pin2 -> p87086-1.hole4~ STIFF
+WHY Applies sticker 9 to the yellow number-2 panel and fits it onto the two pins at the end of the longer panel.
+
+STEP 511
+ADD p2780-273 2780 black
+ADD p2780-274 2780 black
+CONNECT p2780-273.pin1 -> p64391-1.hole7 STIFF
+CONNECT p2780-274.pin1 -> p64391-1.hole6 STIFF
+WHY Turns the joined panels over and inserts two black pins along the underside of the long panel.
+
+STEP 512
+ADD p32316-32 32316 yellow
+CONNECT p2780-273.pin2 -> p32316-32.hole1 STIFF
+CONNECT p2780-274.pin2 -> p32316-32.hole2 STIFF
+WHY Adds a yellow five-hole beam along the underside of the panel on the two prepared black pins.
+
+STEP 513
+ADD p2780-275 2780 black
+ADD p43093-70 43093 blue
+ADD p6632-17 6632 black
+ADD p6632-18 6632 black
+CONNECT p43093-70.axle1 -> p6632-17.axlehole1~ LOCKED
+CONNECT p43093-70.axle1 -> p6632-18.axlehole1~ LOCKED
+CONNECT p2780-275.pin2 -> p6632-17.hole1~ STIFF
+CONNECT p2780-275.pin2 -> p6632-18.hole1~ STIFF
+CONNECT p43093-70.pin1 -> p32316-32.hole3 STIFF
+CONNECT p2780-275.pin1 -> p32316-32.hole4 STIFF
+WHY Builds a paired thin black link with a blue axle-pin and black pin, then mounts it below the yellow beam. Insertion depths through the paired thin links are estimated.
+
+STEP 514
+ADD p99008-21 99008 tan
+ADD p99008-22 99008 tan
+ADD p32016-3 32016 lightgray
+CONNECT p99008-21.axle3 -> p32016-3.axlehole1 LOCKED
+CONNECT p99008-22.axle3 -> p32016-3.axlehole2~ LOCKED
+CONNECT p99008-21.axle1 -> p6632-17.axlehole2~ LOCKED
+CONNECT p99008-21.axle1 -> p6632-18.axlehole2~ LOCKED
+WHY Builds the angled centre shaft from a grey connector and two tan stopped axles, then inserts one end through the paired black links on the first hood panel. The second angled bore and thin-link depths remain estimated.
+
+STEP 515
+ADD p64683-1 64683 yellow
+ADD p2780-276 2780 black
+ADD p2780-277 2780 black
+CONNECT p2780-276.pin2 -> p64683-1.hole4~ STIFF
+CONNECT p2780-277.pin2 -> p64683-1.hole2 STIFF
+WHY Starts the matching upper hood side with the long yellow number-3 panel and two black pins at its broad end.
+
+STEP 516
+ADD p87080-1 87080 yellow
+CONNECT p2780-276.pin1 -> p87080-1.hole2 STIFF
+CONNECT p2780-277.pin1 -> p87080-1.hole4~ STIFF
+WHY Applies sticker 2 to the yellow number-1 panel and joins it to the end of the long panel on the two black pins.
+
+STEP 517
+ADD p2780-278 2780 black
+ADD p2780-279 2780 black
+CONNECT p2780-278.pin2 -> p64683-1.hole7 STIFF
+CONNECT p2780-279.pin2 -> p64683-1.hole6 STIFF
+WHY Turns the second panel assembly over and fits the two underside mounting pins.
+
+STEP 518
+ADD p32316-33 32316 yellow
+CONNECT p2780-278.pin1 -> p32316-33.hole1 STIFF
+CONNECT p2780-279.pin1 -> p32316-33.hole2 STIFF
+WHY Fits the second yellow five-hole support beam along the underside of the panel.
+
+STEP 519
+ADD p2780-280 2780 black
+ADD p43093-71 43093 blue
+ADD p6632-19 6632 black
+ADD p6632-20 6632 black
+CONNECT p43093-71.axle1 -> p6632-19.axlehole1~ LOCKED
+CONNECT p43093-71.axle1 -> p6632-20.axlehole1~ LOCKED
+CONNECT p2780-280.pin1 -> p6632-19.hole1~ STIFF
+CONNECT p2780-280.pin1 -> p6632-20.hole1~ STIFF
+CONNECT p43093-71.pin1 -> p32316-33.hole3 STIFF
+CONNECT p2780-280.pin2 -> p32316-33.hole4 STIFF
+WHY Adds the second pair of thin black mounting links beneath the yellow support beam with its blue axle-pin and black pin.
+
+STEP 520
+CONNECT p99008-22.axle1 -> p6632-19.axlehole2~ LOCKED
+CONNECT p99008-22.axle1 -> p6632-20.axlehole2~ LOCKED
+WHY Joins the two upper hood sides by inserting the free tan centre axle through the paired black links on the second side.
+
+STEP 521
+END
+ATTACH upper-hood-panels
+CONNECT p15100-11.pin1 -> p32016-3.hole1 STIFF
+WHY Lowers the joined upper panels onto the hood frame and seats the grey centre connector on the prepared yellow pin.
+
+STEP 522
+END
+ATTACH hood-bodywork
+CONNECT p42924-132.pin3 -> p39794-2.hole18 STIFF
+WHY Turns the completed hood bodywork and lowers it over the engine, engaging the central blue locating pin with the black engine-cradle frame before the later hinge retainers are installed.
+
+STEP 523
+GROUP centre-hood-panel
+ADD p64782-1 64782 black
+ADD p42924-135 42924 blue
+ADD p42924-136 42924 blue
+ADD p42924-137 42924 blue
+ADD p42924-138 42924 blue
+ADD p2780-281 2780 black
+ADD p2780-282 2780 black
+CONNECT p42924-135.pin1 -> p64782-1.hole12 STIFF
+CONNECT p42924-136.pin1 -> p64782-1.hole18 STIFF
+CONNECT p42924-137.pin1 -> p64782-1.hole10 STIFF
+CONNECT p42924-138.pin1 -> p64782-1.hole16 STIFF
+CONNECT p2780-281.pin1 -> p64782-1.hole31 STIFF
+CONNECT p2780-282.pin2 -> p64782-1.hole33 STIFF
+WHY Starts the black centre hood panel with four blue three-length side pins and two black pins for its reinforcing beams.
+
+STEP 524
+ADD p32034-4 32034 black
+ADD p2780-283 2780 black
+CONNECT p2780-283.pin1 -> p32034-4.hole1 STIFF
+CONNECT p2780-283.pin2 -> p64782-1.hole3 STIFF
+WHY Fits a black straight axle connector to the end of the hood panel on a short black pin to form the rear hinge block.
+
+STEP 525
+ADD p32525-18 32525 black
+ADD p32525-19 32525 black
+CONNECT p42924-137.pin2 -> p32525-18.hole3 STIFF
+CONNECT p42924-138.pin2 -> p32525-18.hole5 STIFF
+CONNECT p2780-281.pin2 -> p32525-18.hole9 STIFF
+CONNECT p42924-135.pin2 -> p32525-19.hole3 STIFF
+CONNECT p42924-136.pin2 -> p32525-19.hole5 STIFF
+CONNECT p2780-282.pin1 -> p32525-19.hole9 STIFF
+WHY Adds a black eleven-hole reinforcing beam down each side of the hood panel on its blue and black pins.
+
+STEP 526
+ADD p64393-2 64393 black
+ADD p64681-2 64681 black
+CONNECT p42924-137.pin3 -> p64393-2.hole6 STIFF
+CONNECT p42924-138.pin3 -> p64393-2.hole8 STIFF
+CONNECT p42924-135.pin3 -> p64681-2.hole6 STIFF
+CONNECT p42924-136.pin3 -> p64681-2.hole8 STIFF
+WHY Fits the long black number-6 and number-5 panels along the outer sides to widen and taper the centre hood.
+
+STEP 527
+ADD p2780-284 2780 black
+ADD p2780-285 2780 black
+CONNECT p2780-284.pin1 -> p64782-1.hole34 STIFF
+CONNECT p2780-285.pin1 -> p64782-1.hole35 STIFF
+WHY Adds two black pins facing upward near the front end of the hood panel for the latch supports.
+
+STEP 528
+ADD p15100-16 65487 black
+ADD p15100-17 65487 black
+ADD p15100-18 65487 black
+ADD p15100-19 65487 black
+CONNECT p15100-16.pin1 -> p64782-1.hole1~ STIFF
+CONNECT p15100-17.pin1 -> p64782-1.hole5~ STIFF
+CONNECT p15100-18.pin1 -> p64681-2.hole4~ STIFF
+CONNECT p15100-19.pin1 -> p64393-2.hole4~ STIFF
+WHY Adds four black pin-hole connectors across the rear hood edge for the two hinge axles; the long panel-socket depths remain estimated.
+
+STEP 529
+GROUP hood-front-latch
+ADD p32013-8 32013 black
+ADD p4519-26 4519 lightgray
+CONNECT p4519-26.axle3 -> p32013-8.axlehole1 LOCKED
+WHY Starts the hood front latch with a grey three-length axle in the pictured black number-1 angled connector.
+
+STEP 530
+ADD p6632-21 6632 black
+CONNECT p4519-26.axle2 -> p6632-21.axlehole1~ LOCKED
+WHY Adds the black thin three-hole link across the grey latch axle, preserving the insertion depth through the thin link.
+
+STEP 531
+ADD p32013-9 32013 black
+ADD p4519-25 4519 lightgray
+CONNECT p4519-25.axle3 -> p32013-9.axlehole1 LOCKED
+CONNECT p4519-25.axle2 -> p6632-21.axlehole2~ LOCKED
+WHY Builds the second grey axle and black angled connector and locks it into the other cross hole of the thin link.
+
+STEP 532
+ADD p42003-22 42003 yellow
+ADD p42003-23 42003 yellow
+ADD p43093-72 43093 blue
+ADD p43093-73 43093 blue
+CONNECT p43093-72.axle1 -> p42003-22.axlehole1 LOCKED
+CONNECT p43093-73.axle1 -> p42003-23.axlehole1 LOCKED
+CONNECT p43093-72.pin1 -> p32013-8.hole1 STIFF
+CONNECT p43093-73.pin1 -> p32013-9.hole1 STIFF
+WHY Builds the two yellow perpendicular latch supports with blue axle-pins and joins them to the round holes in the black angled connectors.
+
+STEP 533
+END
+ATTACH hood-front-latch
+CONNECT p2780-284.pin2 -> p42003-22.hole2 STIFF
+CONNECT p2780-285.pin2 -> p42003-23.hole2 STIFF
+WHY Mounts the completed front latch onto the two prepared black hood pins, leaving both grey shaft ends projecting.
+
+STEP 534
+END
+ATTACH centre-hood-panel
+CONNECT p4519-25.axle1 -> p32523-27.hole3~ TURNS
+CONNECT p4519-26.axle1 -> p32523-27.hole1~ TURNS
+WHY Holds the centre hood upright and inserts the two grey front latch shafts into the outer round holes of the existing grey three-hole beam; their insertion depths are estimated.
+
+STEP 535
+ADD p15462-19 15462 brown
+ADD p15462-20 15462 brown
+CONNECT p15462-19.axle5 -> p32524-16.hole1 TURNS
+CONNECT p15462-19.axle4 -> p15100-18.hole1 TURNS
+CONNECT p15462-19.axle3 -> p32526-22.hole7 TURNS
+CONNECT p15462-19.axle2 -> p15100-17.hole1 TURNS
+CONNECT p15462-19.axle1 -> p32034-4.axlehole1 LOCKED
+CONNECT p15462-20.axle5 -> p32525-16.hole11 TURNS
+CONNECT p15462-20.axle4 -> p15100-19.hole1 TURNS
+CONNECT p15462-20.axle3 -> p32526-21.hole7 TURNS
+CONNECT p15462-20.axle2 -> p15100-16.hole1 TURNS
+CONNECT p15462-20.axle1 -> p32034-4.axlehole2 LOCKED
+WHY Swings the centre hood down and slides two stopped brown five-length axles through the cab rails, hood supports and rear pin-hole connectors into the hinge cross block.
+
+STEP 536
+
+WHY Swings the front grille upward into its closed position beneath the completed black centre hood.
+
+STEP 537
+ADD p32073-9 32073 yellow
+ADD p32123b-11 32123b yellow
+ADD p32123b-12 32123b yellow
+CONNECT p32073-9.axle1 -> p32123b-11.axlehole1 LOCKED
+CONNECT p32073-9.axle1 -> p32123b-12.axlehole1 LOCKED
+CONNECT p32073-9.axle2 -> p32034-2.hole1 TURNS
+CONNECT p32073-9.axle3 -> p32034-3.hole1 TURNS
+CONNECT p32073-9.axle5 -> p45590-1.axlehole1 LOCKED
+WHY Caps one end of a yellow five-length axle with two half bushes and passes it through the yellow and black front round bearings into the rubber connector to retain the closed grille linkage.
