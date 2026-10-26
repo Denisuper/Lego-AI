@@ -3119,3 +3119,234 @@ CONNECT p32054-17.pin1 -> p32316-25.hole5 STIFF
 CONNECT p42924-101.pin1 -> p39794-2.hole2 STIFF
 CONNECT p42924-102.pin1 -> p39794-2.hole5 STIFF
 WHY Adds two black five-hole end rails on blue long pins, with orange stopped pins projecting from their outer ends.
+
+STEP 267
+ADD p32013-1 32013 black
+ADD p32013-2 32013 black
+ADD p27940-3 27940 darkgray
+CONNECT p27940-3.axle2 -> p32013-1.axlehole1 LOCKED
+CONNECT p27940-3.axle1 -> p32013-2.axlehole1 LOCKED
+CONNECT p42924-102.pin3 -> p32013-1.hole1 STIFF
+CONNECT p42924-101.pin3 -> p32013-2.hole1 STIFF
+WHY Fits two black right-angle connectors onto a dark grey transverse axle connector and seats them on the two exposed blue end pins.
+
+STEP 268
+ADD p55615-1 49130 lightgray
+ADD p55615-2 49130 lightgray
+ADD p2780-167 2780 black
+ADD p2780-168 2780 black
+CONNECT p2780-167.pin2 -> p55615-2.hole4 STIFF
+CONNECT p2780-168.pin2 -> p55615-1.hole4 STIFF
+CONNECT p55615-1.pin3 -> p39794-2.hole6 STIFF
+CONNECT p55615-1.pin4 -> p39794-2.hole10 STIFF
+CONNECT p55615-2.pin3 -> p39794-2.hole1 STIFF
+CONNECT p55615-2.pin4 -> p39794-2.hole9 STIFF
+WHY Adds two bent grey four-pin connectors with upward black pins to the engine frame; the inventory design number is 49130 for these positions.
+
+STEP 269
+ADD p32054-18 32054 orange
+ADD p32054-19 32054 orange
+ADD p32054-20 32054 orange
+ADD p32054-21 32054 orange
+CONNECT p32054-18.pin1 -> p55615-2.hole3 STIFF
+CONNECT p32054-19.pin1 -> p55615-2.hole1 STIFF
+CONNECT p32054-20.pin1 -> p55615-1.hole1 STIFF
+CONNECT p32054-21.pin1 -> p55615-1.hole3 STIFF
+WHY Inserts four orange stopped pins through the bent grey connectors for attaching the engine cradle to the main front chassis.
+
+STEP 270
+ADD p32524-15 32524 black
+CONNECT p2780-167.pin1 -> p32524-15.hole1 STIFF
+CONNECT p2780-168.pin1 -> p32524-15.hole7 STIFF
+WHY Closes the two grey upright connectors with a black seven-hole crossbeam.
+
+STEP 271
+ADD p24119-1 24119 yellow
+ADD p32184-7 32184 black
+ADD p32184-8 32184 black
+ADD p15100-1 65487 black
+ADD p15100-2 65487 black
+ADD p2780-169 2780 black
+ADD p2780-170 2780 black
+ADD p43093-26 43093 blue
+ADD p43093-27 43093 blue
+ADD p43093-28 43093 blue
+ADD p43093-29 43093 blue
+CONNECT p2780-169.pin2 -> p24119-1.hole1 STIFF
+CONNECT p2780-170.pin1 -> p24119-1.hole10 STIFF
+CONNECT p15100-1.pin1 -> p24119-1.hole11 STIFF
+CONNECT p15100-2.pin1 -> p24119-1.hole2 STIFF
+CONNECT p43093-26.pin1 -> p15100-1.hole1 STIFF
+CONNECT p43093-29.pin1 -> p15100-2.hole1 STIFF
+CONNECT p43093-27.pin1 -> p24119-1.hole9 STIFF
+CONNECT p43093-28.pin1 -> p24119-1.hole4 STIFF
+CONNECT p43093-26.axle1 -> p32184-8.axlehole2 LOCKED
+CONNECT p43093-27.axle1 -> p32184-8.axlehole1 LOCKED
+CONNECT p43093-28.axle1 -> p32184-7.axlehole2 LOCKED
+CONNECT p43093-29.axle1 -> p32184-7.axlehole1 LOCKED
+CONNECT p48989-10.pin3 -> p32184-7.hole1 STIFF
+CONNECT p48989-9.pin4 -> p32184-8.hole1 STIFF
+WHY Builds the curved yellow end panel with black corner connectors and paired black axle blocks on blue axle-pins, then mounts it onto the grey cradle connectors.
+
+STEP 272
+ADD p40490-7 40490 yellow
+ADD p40490-8 40490 yellow
+CONNECT p42924-100.pin1 -> p40490-7.hole1 STIFF
+CONNECT p2780-164.pin2 -> p40490-7.hole4 STIFF
+CONNECT p2780-163.pin2 -> p40490-7.hole6 STIFF
+CONNECT p2780-169.pin1 -> p40490-7.hole9 STIFF
+CONNECT p2780-160.pin2 -> p40490-8.hole4 STIFF
+CONNECT p2780-161.pin2 -> p40490-8.hole6 STIFF
+CONNECT p2780-170.pin2 -> p40490-8.hole9 STIFF
+WHY Adds yellow nine-hole side rails to join the curved end panel and grey frame mounts, with one rail also engaging the earlier blue side pin.
+
+STEP 273
+ADD p6536-10 6536 yellow
+ADD p2780-171 2780 black
+CONNECT p2780-171.pin1 -> p6536-10.hole1 STIFF
+CONNECT p2780-171.pin2 -> p40490-8.hole1 STIFF
+WHY Fits a yellow perpendicular connector with a black pin at the free end of the second yellow side rail.
+
+STEP 274
+ADD p18651-8 18651 black
+CONNECT p18651-8.axle1 -> p6536-10.axlehole1 LOCKED
+CONNECT p18651-8.axle2 -> p39794-2.hole14 TURNS
+END
+WHY Inserts the black axle-pin through the yellow side connector into the frame bearing, completing this engine cradle stage.
+
+STEP 275
+ATTACH engine-cradle
+CONNECT p55615-1.pin1 -> p48989-8.hole1 STIFF
+CONNECT p55615-1.pin2 -> p48989-8.hole3 STIFF
+CONNECT p55615-2.pin1 -> p48989-7.hole1 STIFF
+CONNECT p55615-2.pin2 -> p48989-7.hole3 STIFF
+CONNECT p32054-18.pin2 -> p64178-3.hole28 STIFF
+CONNECT p32054-19.pin2 -> p64178-2.hole28 STIFF
+CONNECT p32054-20.pin2 -> p64178-2.hole27 STIFF
+CONNECT p32054-21.pin2 -> p64178-3.hole27 STIFF
+MESH p94925-17.teeth p94925-16.teeth
+RATIO p94925-17 p94925-16 1/1
+WHY Joins the engine cradle to the front chassis on the grey perpendicular connectors, pushes the four orange mounting pins home and meshes the two grey sixteen-tooth gears.
+
+STEP 276
+GROUP right-chassis-gusset
+ADD p6629-1 6629 black
+ADD p6629-2 6629 black
+ADD p43093-30 43093 blue
+ADD p43093-31 43093 blue
+ADD p43093-32 43093 blue
+ADD p2780-172 2780 black
+ADD p2780-173 2780 black
+ADD p2780-174 2780 black
+ADD p2780-175 2780 black
+ADD right-gusset-link-pin 2780 black
+ADD p24316-3 24316 brown
+CONNECT p43093-30.axle1 -> p6629-1.axlehole1 LOCKED
+CONNECT p43093-31.axle1 -> p6629-1.axlehole2 LOCKED
+CONNECT p43093-31.pin1 -> p6629-2.hole3 STIFF
+CONNECT p43093-32.axle1 -> p6629-2.axlehole2 LOCKED
+CONNECT p2780-172.pin1 -> p6629-2.hole7 STIFF
+CONNECT p2780-173.pin1 -> p6629-2.hole5 STIFF
+CONNECT p2780-174.pin2 -> p6629-2.hole6 STIFF
+CONNECT p2780-175.pin1 -> p6629-1.hole4 STIFF
+CONNECT right-gusset-link-pin.pin1 -> p6629-1.hole6~ STIFF
+CONNECT right-gusset-link-pin.pin2 -> p6629-2.hole1~ STIFF
+CONNECT p24316-3.axle3 -> p6629-1.hole5 TURNS
+CONNECT p24316-3.axle2 -> p6629-2.axlehole1 LOCKED
+END
+ATTACH right-chassis-gusset
+CONNECT p43093-30.pin1 -> p32316-17.hole4 STIFF
+CONNECT p2780-172.pin2 -> p39794-2.hole12 STIFF
+CONNECT p2780-173.pin2 -> p39794-2.hole8 STIFF
+CONNECT p2780-175.pin2 -> p32278-10.hole12 STIFF
+CONNECT p24316-3.axle1 -> p87082-2.hole1 TURNS
+WHY Builds and mounts the right diagonal gusset from two bent black beams, all five booklet pins and a stopped brown axle. The beam-to-beam pin omitted by the reference model is included; its exact hole pair remains estimated.
+
+STEP 277
+GROUP right-side-platform
+ADD p32316-26 32316 black
+ADD p87083-9 87083 darkgray
+CONNECT p87083-9.axle4 -> p32316-26.hole2 TURNS
+WHY Starts the right side platform with a black five-hole beam and a stopped four-length axle through its second hole.
+
+STEP 278
+ADD p32140-14 32140 black
+CONNECT p87083-9.axle3 -> p32140-14.axlehole1 LOCKED
+WHY Adds a black L-shaped beam to the stopped axle, locking the beam to the shaft while the outer five-hole beam remains on a round bearing.
+
+STEP 279
+ADD p42924-103 42924 blue
+ADD p42924-104 42924 blue
+CONNECT p42924-103.pin1 -> p32140-14.hole1 STIFF
+CONNECT p42924-104.pin1 -> p32140-14.hole3 STIFF
+WHY Adds two blue long pins to the black L-beam for stacking the next links.
+
+STEP 280
+ADD p32140-15 32140 black
+ADD p87083-10 87083 darkgray
+CONNECT p42924-103.pin2 -> p32140-15.hole1 STIFF
+CONNECT p87083-9.axle2 -> p32140-15.hole2 TURNS
+CONNECT p87083-10.axle2 -> p32140-15.axlehole1 LOCKED
+CONNECT p87083-10.axle3 -> p32140-14.hole2 TURNS
+CONNECT p87083-10.axle4 -> p32316-26.hole4 TURNS
+WHY Stacks a second black L-beam over the blue pin and first shaft, then inserts a second stopped axle through the opposite bearing holes.
+
+STEP 281
+ADD p32316-27 32316 black
+ADD p42924-105 42924 blue
+CONNECT p42924-104.pin2 -> p32316-27.hole1 STIFF
+CONNECT p42924-105.pin1 -> p32316-27.hole3 STIFF
+WHY Adds a second five-hole outer beam and prepares another blue long pin for the closing links.
+
+STEP 282
+ADD p32140-16 32140 black
+ADD p60483-15 60483 black
+CONNECT p87083-10.axle1 -> p32140-16.axlehole1 LOCKED
+CONNECT p42924-104.pin3 -> p32140-16.hole1 STIFF
+CONNECT p42924-105.pin2 -> p32140-16.hole3 STIFF
+CONNECT p87083-9.axle1 -> p60483-15.axlehole1 LOCKED
+CONNECT p42924-103.pin3 -> p60483-15.hole1 STIFF
+WHY Closes the stacked platform links with a third black L-beam and a small black axle-bearing link over the exposed shaft ends and blue pins.
+
+STEP 283
+ADD p64179-13 64179 black
+ADD p2780-176 2780 black
+ADD p2780-177 2780 black
+ADD p2780-178 2780 black
+ADD p2780-179 2780 black
+ADD p42924-106 42924 blue
+ADD p6536-11 6536 black
+ADD p6536-12 6536 black
+CONNECT p2780-176.pin1 -> p64179-13.hole8 STIFF
+CONNECT p2780-177.pin1 -> p64179-13.hole11 STIFF
+CONNECT p2780-178.pin2 -> p64179-13.hole17 STIFF
+CONNECT p2780-179.pin2 -> p64179-13.hole19 STIFF
+CONNECT p2780-178.pin1 -> p6536-11.hole1 STIFF
+CONNECT p2780-179.pin1 -> p6536-12.hole1 STIFF
+CONNECT p42924-106.pin2 -> p64179-13.hole7 STIFF
+CONNECT p42924-106.pin3 -> p32140-14.hole4 STIFF
+WHY Adds a black rectangular frame with two black perpendicular axle connectors and mounting pins, then pushes its blue long pin into the stacked platform link.
+
+STEP 284
+ADD p87082-3 44874 red
+ADD p32054-22 32054 lightgray
+ADD p11214-16 11214 red
+CONNECT p11214-16.axle1 -> p32054-22.axlehole1 LOCKED
+CONNECT p32054-22.pin1 -> p87082-3.hole1 STIFF
+CONNECT p87082-3.pin1 -> p64179-13.hole3 STIFF
+CONNECT p32054-22.pin2 -> p32140-16.hole4 STIFF
+WHY Builds a red and grey stopped-pin connector and mounts it between the rectangular frame and the outer L-beam, then seats the red axle-pin fully.
+
+STEP 285
+ADD p6536-13 6536 black
+ADD p43093-33 43093 blue
+CONNECT p43093-33.axle1 -> p6536-13.axlehole1 LOCKED
+CONNECT p42924-105.pin3 -> p6536-13.hole1 STIFF
+END
+WHY Adds a black perpendicular connector with a blue axle-pin to the exposed long blue platform pin, completing the right side platform.
+
+STEP 286
+ATTACH right-side-platform
+CONNECT p42924-87.pin3 -> p64179-13.hole14 STIFF
+CONNECT p42924-89.pin3 -> p64179-13.hole6 STIFF
+WHY Mounts the completed right side platform onto the two exposed blue pins of the motor-side frame.
