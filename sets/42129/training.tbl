@@ -1245,7 +1245,7 @@ WHY Adds a 20-tooth bevel gear, a connector and a technic driving ring 3l to the
 STEP 79
 ADD ra-axle2-1 32062 red
 ADD ra-gear-3 65414 lightgray
-ADD ra-gear-3 65413 red
+ADD ra-differential-ring-1 65413 red
 ADD ra-bevel-30 6589 tan
 ADD ra-bevel-31 6589 tan
 ADD ra-bevel-32 6589 tan
@@ -2067,7 +2067,7 @@ STEP 130
 ADD fa-axle3-1 4519 lightgray
 ADD fa-axle3-2 4519 lightgray
 ADD fa-gear-1 65414 lightgray
-ADD fa-gear-1 65413 red
+ADD fa-differential-ring-1 65413 red
 ADD fa-bevel-10 6589 tan
 ADD fa-bevel-11 6589 tan
 ADD fa-bevel-12 6589 tan
