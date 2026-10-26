@@ -6756,3 +6756,148 @@ CONNECT p6558-130.pin3 -> p6536-53.hole1 STIFF
 CONNECT p6558-129.pin3 -> p6536-54.hole1 STIFF
 WHY Lowers the completed inner support onto the front curved bumper panel and fits its two dark-grey perpendicular connector bores over the blue pin tails above the black spacers.
 
+STEP 666
+ADD p87080-3 87080 black
+ADD p32140-31 32140 lightgray
+ADD p2780-211 2780 black
+ADD p2780-212 2780 black
+ADD p4519-56 4519 lightgray
+ADD p41677-15 41677 blue
+ADD p43093-83 43093 blue
+CONNECT p2780-211.pin1 -> p32140-31.hole3 STIFF
+CONNECT p2780-212.pin1 -> p32140-31.hole4 STIFF
+CONNECT p2780-211.pin2 -> p87080-3.? STIFF
+CONNECT p2780-212.pin2 -> p87080-3.? STIFF
+CONNECT p4519-56.axle2 -> p41677-15.axlehole1~ LOCKED
+CONNECT p43093-83.axle1 -> p41677-15.axlehole2~ LOCKED
+CONNECT p43093-83.pin1 -> p32140-31.hole1 STIFF
+CONNECT p4519-56.axle1 -> p32140-31.hole2~ TURNS
+CONNECT p4519-56.axle3 -> p32015-6.axlehole2~ LOCKED
+WHY Builds the first black curved bumper corner on a grey L bracket with two black friction pins. Adds a blue thin cross-hole link carrying a grey axle and blue axle-pin, then keys the grey axle into the waiting dark-grey angled support. Corner panel pin-hole labels and angled shaft seating remain unresolved or estimated.
+
+STEP 667
+ADD p87086-3 87086 black
+ADD p32140-32 32140 lightgray
+ADD p2780-213 2780 black
+ADD p2780-214 2780 black
+ADD p4519-57 4519 lightgray
+ADD p41677-16 41677 blue
+ADD p43093-84 43093 blue
+CONNECT p2780-213.pin2 -> p32140-32.hole3 STIFF
+CONNECT p2780-214.pin2 -> p32140-32.hole4 STIFF
+CONNECT p2780-213.pin1 -> p87086-3.? STIFF
+CONNECT p2780-214.pin1 -> p87086-3.? STIFF
+CONNECT p4519-57.axle2 -> p41677-16.axlehole1~ LOCKED
+CONNECT p43093-84.axle1 -> p41677-16.axlehole2~ LOCKED
+CONNECT p43093-84.pin1 -> p32140-32.hole1 STIFF
+CONNECT p4519-57.axle3 -> p32140-32.hole2~ TURNS
+CONNECT p4519-57.axle1 -> p32015-5.axlehole2~ LOCKED
+WHY Builds and mounts the opposite black bumper corner with the mirrored grey L bracket, two black pins and blue thin axle-link stack. The black panel pin-hole labels and angled shaft seating remain unresolved or estimated.
+
+STEP 668
+ADD p43093-85 43093 blue
+ADD p43093-86 43093 blue
+ADD p32034-30 32034 black
+ADD p32034-31 32034 black
+ADD p6558-131 6558 blue
+ADD p18654-43 18654 black
+CONNECT p6558-131.pin2 -> p18654-43.hole1 STIFF
+CONNECT p6558-131.pin3 -> p32034-30.hole1 STIFF
+CONNECT p6558-131.pin1 -> p32034-31.hole1 STIFF
+CONNECT p43093-85.axle1 -> p32034-30.axlehole2 LOCKED
+CONNECT p43093-86.axle1 -> p32034-31.axlehole2 LOCKED
+CONNECT p43093-85.pin1 -> p32525-14.hole5 STIFF
+CONNECT p43093-86.pin1 -> p32525-14.hole7 STIFF
+WHY Builds the paired black centre axle connectors around a long blue pin and black round spacer. Adds the two blue axle-pins and seats their round ends in the central crossbar holes, leaving both black cross sockets upright.
+
+STEP 669
+ADD p32316-31 32316 lightgray
+ADD p6558-132 6558 blue
+ADD p32140-33 32140 black
+ADD p32140-34 32140 lightgray
+ADD p6587-1 6587 darktan
+CONNECT p6558-132.pin2 -> p32316-31.hole2 STIFF
+CONNECT p6558-132.pin3 -> p32140-33.hole3 STIFF
+CONNECT p6558-132.pin1 -> p32140-34.hole3 STIFF
+CONNECT p6587-1.axle3 -> p32140-33.axlehole1~ LOCKED
+CONNECT p6587-1.axle2 -> p32316-31.hole5~ TURNS
+CONNECT p6587-1.axle1 -> p32140-34.axlehole1~ LOCKED
+CONNECT p32054-45.pin1 -> p32316-31.hole1 STIFF
+WHY Builds the layered bumper end fitting from a black L bracket, grey five-hole beam with sticker 15 and grey L bracket, held by a long blue pin and dark-tan axle with a stud. Seats its free grey beam hole on the existing long grey pin. The axle seats are estimated from the angled stack.
+
+STEP 670
+ADD p32316-32 32316 lightgray
+ADD p6558-133 6558 blue
+ADD p32140-35 32140 black
+ADD p32140-36 32140 lightgray
+ADD p6587-2 6587 darktan
+CONNECT p6558-133.pin2 -> p32316-32.hole2 STIFF
+CONNECT p6558-133.pin3 -> p32140-35.hole3 STIFF
+CONNECT p6558-133.pin1 -> p32140-36.hole3 STIFF
+CONNECT p6587-2.axle3 -> p32140-35.axlehole1~ LOCKED
+CONNECT p6587-2.axle2 -> p32316-32.hole5~ TURNS
+CONNECT p6587-2.axle1 -> p32140-36.axlehole1~ LOCKED
+CONNECT p32054-46.pin1 -> p32316-32.hole1 STIFF
+WHY Builds the layered bumper end fitting from a black L bracket, grey five-hole beam with sticker 15 and grey L bracket, held by a long blue pin and dark-tan axle with a stud. Seats its free grey beam hole on the existing long grey pin. The axle seats are estimated from the angled stack.
+
+STEP 671
+ADD p41239-14 41239 lightgray
+ADD p6558-134 6558 blue
+ADD p6558-135 6558 blue
+ADD p60483-53 60483 lightgray
+ADD p60483-54 60483 lightgray
+ADD p60483-55 60483 lightgray
+ADD p60483-56 60483 lightgray
+ADD p3705-17 3705 black
+ADD p3705-18 3705 black
+ADD p43093-87 43093 blue
+ADD p43093-88 43093 blue
+ADD p32054-47 32054 black
+ADD p32054-48 32054 black
+CONNECT p6558-134.pin1 -> p41239-14.hole1 STIFF
+CONNECT p6558-135.pin1 -> p41239-14.hole13 STIFF
+CONNECT p6558-134.pin2 -> p60483-53.hole1 STIFF
+CONNECT p6558-135.pin2 -> p60483-54.hole1 STIFF
+CONNECT p3705-17.axle1 -> p60483-53.axlehole1 LOCKED
+CONNECT p3705-18.axle1 -> p60483-54.axlehole1 LOCKED
+CONNECT p3705-17.axle2 -> p41239-14.hole2 TURNS
+CONNECT p3705-18.axle2 -> p41239-14.hole12 TURNS
+CONNECT p3705-17.axle3 -> p60483-56.axlehole1 LOCKED
+CONNECT p3705-18.axle3 -> p60483-55.axlehole1 LOCKED
+CONNECT p43093-87.pin1 -> p60483-55.hole1 STIFF
+CONNECT p43093-88.pin1 -> p60483-56.hole1 STIFF
+CONNECT p43093-87.axle1 -> p32054-47.axlehole1 LOCKED
+CONNECT p43093-88.axle1 -> p32054-48.axlehole1 LOCKED
+CONNECT p6558-134.pin3 -> p15100-22.hole1 STIFF
+CONNECT p6558-135.pin3 -> p15100-21.hole1 STIFF
+WHY Builds the grey thirteen-hole bumper reinforcement with blue pins at its ends, two black four-stud axles through grey two-hole cross connectors, and the upper grey connector stacks with blue axle-pins and long black pins. The continuation on page 388 fits the blue pin tails into the outer grey bumper connectors.
+
+STEP 672
+ADD p60483-57 60483 black
+ADD p60483-58 60483 black
+CONNECT p3705-17.axle4 -> p60483-57.axlehole1 LOCKED
+CONNECT p3705-18.axle4 -> p60483-58.axlehole1 LOCKED
+CONNECT p32054-46.pin2 -> p60483-57.hole1 STIFF
+CONNECT p32054-45.pin2 -> p60483-58.hole1 STIFF
+END
+WHY Adds the two black two-hole cross connectors over the exposed axle ends and grey pin ends, locking the layered bumper reinforcement together.
+
+STEP 673
+ATTACH front-lower-bumper
+CONNECT p87082-4.pin2 -> p62531-2.hole5 STIFF
+CONNECT p87082-5.pin2 -> p62531-2.hole7 STIFF
+WHY Mounts the complete lower front bumper onto the two waiting grey forward chassis pins and guides the winch cord and hook through the open centre as highlighted. Flexible cord routing is not a rigid connection.
+
+STEP 674
+ADD p6632-8 6632 black
+ADD p6632-9 6632 black
+ADD p32062-64 32062 red
+ADD p32062-65 32062 red
+CONNECT p32062-64.axle2 -> p6632-8.axlehole1~ LOCKED
+CONNECT p32062-65.axle2 -> p6632-8.axlehole2~ LOCKED
+CONNECT p32062-64.axle2 -> p6632-9.axlehole1~ LOCKED
+CONNECT p32062-65.axle2 -> p6632-9.axlehole2~ LOCKED
+CONNECT p32062-64.axle1 -> p32034-30.axlehole1 LOCKED
+CONNECT p32062-65.axle1 -> p32034-31.axlehole1 LOCKED
+WHY Builds a short twin black cross-hole bridge on two red axles and keys it into the paired centre bumper cross sockets. Thin bridge seating is estimated; keeps the winch hook outside the bumper opening as shown.
+
