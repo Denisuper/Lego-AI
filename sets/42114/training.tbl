@@ -3559,3 +3559,222 @@ CONNECT p42924-97.pin3 -> p32524-17.hole1 STIFF
 CONNECT p2780-156.pin1 -> p32524-17.hole7 STIFF
 CONNECT dashboard-right-mount-pin.pin1 -> p32524-16.hole4~ STIFF
 WHY Builds the opposite pair of black seven-hole cab rails with grey links and blue axle-pins, mounts them on the exposed cab pins and captures the other dashboard mounting pin.
+
+STEP 303
+GROUP right-cab-side-panel
+ADD p87082-5 44874 red
+ADD p42924-112 42924 blue
+CONNECT p42924-112.pin2 -> p87082-5.hole1 STIFF
+WHY Starts the yellow cab-side panel by passing a blue three-length pin through the red transverse pin connector.
+
+STEP 304
+ADD p27940-4 27940 darkgray
+CONNECT p42924-112.pin3 -> p27940-4.hole1 STIFF
+WHY Adds the dark grey transverse axle connector behind the red connector on the same blue pin.
+
+STEP 305
+ADD p60483-19 60483 lightgray
+CONNECT p27940-4.axle1 -> p60483-19.axlehole1 LOCKED
+CONNECT p87082-5.pin2 -> p60483-19.hole1 STIFF
+WHY Bridges the red pin and dark grey cross shaft with a grey two-hole link to brace the connector stack.
+
+STEP 306
+ADD p64681-1 64681 yellow
+ADD p2780-193 2780 black
+ADD p3673-8 3673 lightgray
+CONNECT p2780-193.pin2 -> p64681-1.hole6 STIFF
+CONNECT p3673-8.pin2 -> p64681-1.hole8 TURNS
+CONNECT p87082-5.pin1 -> p64681-1.? STIFF
+WHY Fits a black friction pin and grey smooth pin into the long yellow number-5 panel and mounts the connector stack at its broad end; the panel socket for the red pin is unresolved.
+
+STEP 307
+ADD p40490-9 40490 yellow
+CONNECT p2780-193.pin1 -> p40490-9.hole2 STIFF
+CONNECT p3673-8.pin1 -> p40490-9.hole4 TURNS
+WHY Pins a yellow nine-hole beam along the lower edge of the long panel.
+
+STEP 308
+ADD p33299b-1 61408 black
+ADD p43093-40 43093 blue
+ADD p18651-9 18651 black
+ADD p32123b-1 32123b yellow
+CONNECT p18651-9.axle2 -> p33299b-1.axlehole2 LOCKED
+CONNECT p18651-9.axle2 -> p32123b-1.axlehole1 LOCKED
+CONNECT p43093-40.axle1 -> p33299b-1.axlehole1 LOCKED
+CONNECT p33299b-1.pin1 -> p40490-9.hole9 STIFF
+WHY Builds the black transverse axle-pin fitting with a yellow half bush and blue axle-pin, then inserts its pin into the far end of the yellow beam.
+
+STEP 309
+ADD p18945-1 18945 yellow
+CONNECT p18651-9.pin1 -> p18945-1.hole3 STIFF
+CONNECT p42924-112.pin1 -> p18945-1.hole15 STIFF
+WHY Turns the side assembly and clips the large rectangular yellow panel onto the exposed black and blue pins.
+
+STEP 310
+ADD p32523-15 32523 yellow
+ADD p2780-194 2780 black
+ADD p18654-27 18654 black
+ADD p3749-1 3749 tan
+ADD p32556-5 32556 tan
+ADD p15100-5 65487 yellow
+ADD p11947-1 11947 yellow
+CONNECT p2780-194.pin2 -> p32523-15.hole3 STIFF
+CONNECT p2780-194.pin1 -> p18654-27.hole1 STIFF
+CONNECT p3749-1.pin1 -> p32523-15.hole1 TURNS
+CONNECT p32556-5.pin2 -> p32523-15.hole2~ TURNS
+CONNECT p32556-5.pin1 -> p15100-5.hole1 TURNS
+CONNECT p15100-5.pin1 -> p11947-1.hole2 STIFF
+CONNECT p3749-1.pin1 -> p18945-1.hole1 TURNS
+CONNECT p3749-1.axle1 -> p18945-1.hole2 TURNS
+WHY Builds the yellow three-hole end fitting with its smooth tan pins, black spacer and small number-22 panel, then seats it across the end of the large panel.
+
+STEP 311
+
+WHY Turns the completed yellow side-panel assembly over so its attachment pins face the chassis.
+
+STEP 312
+END
+ATTACH right-cab-side-panel
+CONNECT p43093-32.pin1 -> p18945-1.hole10~ STIFF
+CONNECT p2780-174.pin1 -> p18945-1.hole13~ STIFF
+CONNECT p2780-166.pin1 -> p18945-1.hole6~ STIFF
+CONNECT p42924-99.pin1 -> p18945-1.hole9~ STIFF
+WHY Mounts the completed yellow side panel on the exposed chassis pins beside the engine and wheel hub; the four large-panel mounting holes are estimated from the reference geometry.
+
+STEP 313
+GROUP left-cab-side-panel
+ADD p87082-6 44874 red
+ADD p42924-113 42924 blue
+CONNECT p42924-113.pin2 -> p87082-6.hole1 STIFF
+WHY Starts the yellow cab-side panel by passing a blue three-length pin through the red transverse pin connector.
+
+STEP 314
+ADD p27940-5 27940 darkgray
+CONNECT p42924-113.pin3 -> p27940-5.hole1 STIFF
+WHY Adds the dark grey transverse axle connector behind the red connector on the same blue pin.
+
+STEP 315
+ADD p60483-20 60483 lightgray
+CONNECT p27940-5.axle2 -> p60483-20.axlehole1 LOCKED
+CONNECT p87082-6.pin1 -> p60483-20.hole1 STIFF
+WHY Bridges the red pin and dark grey cross shaft with a grey two-hole link to brace the connector stack.
+
+STEP 316
+ADD p64393-1 64393 yellow
+ADD p2780-195 2780 black
+ADD p3673-9 3673 lightgray
+CONNECT p2780-195.pin1 -> p64393-1.hole6 STIFF
+CONNECT p3673-9.pin1 -> p64393-1.hole8 TURNS
+CONNECT p87082-6.pin2 -> p64393-1.? STIFF
+WHY Fits a black friction pin and grey smooth pin into the long yellow number-6 panel and mounts the connector stack at its broad end; the panel socket for the red pin is unresolved.
+
+STEP 317
+ADD p40490-10 40490 yellow
+CONNECT p2780-195.pin2 -> p40490-10.hole2 STIFF
+CONNECT p3673-9.pin2 -> p40490-10.hole4 TURNS
+WHY Pins a yellow nine-hole beam along the lower edge of the long panel.
+
+STEP 318
+ADD p33299b-2 61408 black
+ADD p43093-41 43093 blue
+ADD p18651-10 18651 black
+ADD p32123b-2 32123b yellow
+CONNECT p18651-10.axle2 -> p33299b-2.axlehole2 LOCKED
+CONNECT p18651-10.axle2 -> p32123b-2.axlehole1 LOCKED
+CONNECT p43093-41.axle1 -> p33299b-2.axlehole1 LOCKED
+CONNECT p33299b-2.pin1 -> p40490-10.hole9 STIFF
+WHY Builds the black transverse axle-pin fitting with a yellow half bush and blue axle-pin, then inserts its pin into the far end of the yellow beam.
+
+STEP 319
+ADD p18945-2 18945 yellow
+CONNECT p18651-10.pin1 -> p18945-2.hole3 STIFF
+CONNECT p42924-113.pin1 -> p18945-2.hole15 STIFF
+WHY Turns the side assembly and clips the large rectangular yellow panel onto the exposed black and blue pins.
+
+STEP 320
+ADD p32523-16 32523 yellow
+ADD p2780-196 2780 black
+ADD p18654-28 18654 black
+ADD p3749-2 3749 tan
+ADD p32556-6 32556 tan
+ADD p15100-6 65487 yellow
+ADD p11946-1 11946 yellow
+CONNECT p2780-196.pin1 -> p32523-16.hole3 STIFF
+CONNECT p2780-196.pin2 -> p18654-28.hole1 STIFF
+CONNECT p3749-2.pin1 -> p32523-16.hole1 TURNS
+CONNECT p32556-6.pin2 -> p32523-16.hole2~ TURNS
+CONNECT p32556-6.pin1 -> p15100-6.hole1 TURNS
+CONNECT p15100-6.pin1 -> p11946-1.hole2 STIFF
+CONNECT p3749-2.pin1 -> p18945-2.hole1 TURNS
+CONNECT p3749-2.axle1 -> p18945-2.hole2 TURNS
+WHY Builds the yellow three-hole end fitting with its smooth tan pins, black spacer and small number-21 panel, then seats it across the end of the large panel.
+
+STEP 321
+
+WHY Turns the completed yellow side-panel assembly over so its attachment pins face the chassis.
+
+STEP 322
+END
+ATTACH left-cab-side-panel
+CONNECT p43093-36.pin1 -> p18945-2.hole10~ STIFF
+CONNECT p2780-182.pin2 -> p18945-2.hole13~ STIFF
+CONNECT p2780-165.pin1 -> p18945-2.hole6~ STIFF
+CONNECT p42924-98.pin1 -> p18945-2.hole9~ STIFF
+WHY Mounts the completed yellow side panel on the exposed chassis pins beside the engine and wheel hub; the four large-panel mounting holes are estimated from the reference geometry.
+
+STEP 323
+ADD p32278-11 32278 black
+ADD p2780-197 2780 black
+ADD p2780-198 2780 black
+ADD p62462-3 62462 black
+ADD p62462-4 62462 black
+CONNECT p2780-197.pin2 -> p32278-11.hole9 STIFF
+CONNECT p2780-198.pin2 -> p32278-11.hole7 STIFF
+CONNECT p2780-197.pin1 -> p62462-3.hole1~ STIFF
+CONNECT p2780-198.pin1 -> p62462-4.hole1~ STIFF
+CONNECT p18651-9.axle1 -> p32278-11.hole1 TURNS
+CONNECT p43093-40.pin1 -> p32278-11.hole2 STIFF
+CONNECT p2780-159.pin1 -> p32278-11.hole5 STIFF
+CONNECT p2780-162.pin1 -> p32278-11.hole11 STIFF
+CONNECT p43093-41.pin1 -> p32278-11.hole14 STIFF
+CONNECT p18651-10.axle1 -> p32278-11.hole15 TURNS
+WHY Turns the chassis upside down and fits the fifteen-hole front crossbeam with two black pins and long round sleeves. The booklet uses two pins; the reference model duplicates one pin at the same position.
+
+STEP 324
+ADD differential-case-3 65414 lightgray
+ADD differential-ring-3 65413 red
+ADD differential-bevel-11 6589 tan
+ADD differential-bevel-12 6589 tan
+ADD differential-bevel-13 6589 tan
+ADD differential-bevel-14 6589 tan
+ADD differential-bevel-15 6589 tan
+CONNECT differential-bevel-11.axlehole1 -> differential-case-3.? TURNS
+CONNECT differential-bevel-12.axlehole1 -> differential-case-3.? TURNS
+CONNECT differential-bevel-13.axlehole1 -> differential-case-3.? TURNS
+CONNECT differential-bevel-14.axlehole1 -> differential-case-3.? TURNS
+CONNECT differential-bevel-15.axlehole1 -> differential-case-3.? TURNS
+CONNECT differential-ring-3.? -> differential-case-3.? LOCKED
+MESH p32270-5.teeth differential-ring-3.teeth
+RATIO p32270-5 differential-ring-3 3/7
+WHY Packs five tan bevel gears into the grey front differential housing, clips on its red twenty-eight-tooth crown and seats it in the frame meshing with the black input gear. Internal carrier posts and retaining clips remain unnamed in the catalog.
+
+STEP 325
+CONNECT p44294-2.axle7~ -> differential-bevel-11.axlehole1 LOCKED
+CONNECT p44294-3.axle7~ -> differential-bevel-15.axlehole1 LOCKED
+WHY Pushes the two existing yellow portal input shafts inward to engage the front differential output bevels; the shaft depths are estimated.
+
+STEP 326
+ADD p32062-19 32062 red
+ADD p92907-11 92907 black
+CONNECT p32062-19.axle1 -> p92907-11.axlehole1 LOCKED
+CONNECT p32062-19.axle2 -> p92907-11.axlehole2 LOCKED
+CONNECT p32062-19.axle1 -> p92908-6.hole5 TURNS
+WHY Fits a black forked connector to a short red axle and pushes the axle down through the left portal housing to retain its upper support.
+
+STEP 327
+ADD p32062-20 32062 red
+ADD p92907-12 92907 black
+CONNECT p32062-20.axle1 -> p92907-12.axlehole1 LOCKED
+CONNECT p32062-20.axle2 -> p92907-12.axlehole2 LOCKED
+CONNECT p32062-20.axle1 -> p92908-5.hole5 TURNS
+WHY Repeats the black forked connector and short red axle on the opposite portal housing.
