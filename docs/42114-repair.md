@@ -23,7 +23,7 @@ Zero notation errors means the named connections fit the current catalog. It doe
 
 ## Continued transcription
 
-The authorized continuation now reaches source step 645, page 399: 2,030 introduced parts, no inventory excess by part and colour, and zero notation errors. The matching JSONL includes every new step and its previous four full steps. There are 420 unknown and 368 estimated endpoints. The remaining 163 inventory pieces have not yet been transcribed; the set remains incomplete and excluded from ready-only packs.
+The authorized continuation now reaches source step 665, page 412: 2,081 introduced parts, no inventory excess by part and colour, and zero notation errors. The matching JSONL includes every new step and its previous four full steps. There are 420 unknown and 374 estimated endpoints. The remaining 112 inventory pieces have not yet been transcribed; the set remains incomplete and excluded from ready-only packs.
 
 The continuation exposed an incorrect friction classification for the tan 32002 three-quarter pin. The catalog now treats it as frictionless. This is an inference from the official [32002 LDraw definition](https://library.ldraw.org/library/official/parts/32002.dat), which uses the smooth `connect.dat` and `connect3.dat` pin primitives; the ordinary [3673 pin](https://library.ldraw.org/library/official/parts/3673.dat) shares `connect.dat`, whereas the [2780 friction pin](https://library.ldraw.org/library/official/parts/2780.dat) uses `confric5.dat`. Existing 32002 joins in eight other tables and their matching chat histories were updated from STIFF to TURNS. A regression check covers rotation of this pin in the gear carrier; all nine checker tests pass. This correction does not resolve the separate worm-stop issue in 8047.
 

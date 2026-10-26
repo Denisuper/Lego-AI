@@ -7179,3 +7179,194 @@ CONNECT p43093-83.pin1 -> p15458-12.hole15 STIFF
 CONNECT p2780-387.pin2 -> p15458-12.hole16 STIFF
 CONNECT p42924-186.pin1 -> p15458-13.hole1 STIFF
 WHY Builds the yellow bent end brace with two blue axle-pins, one black pin and a long blue pin carrying a thin two-hole yellow link, then fixes the brace across the panel ends as shown on the next page.
+
+STEP 646
+ADD p32524-32 32524 yellow
+ADD p43093-84 43093 blue
+ADD p32039-3 32039 yellow
+CONNECT p43093-84.pin1 -> p32524-32.hole7 STIFF
+CONNECT p43093-84.axle1 -> p32039-3.axlehole2 LOCKED
+CONNECT p2780-378.pin1 -> p32524-32.hole1 STIFF
+CONNECT p2780-379.pin1 -> p32524-32.hole3 STIFF
+WHY Adds a yellow seven-hole top rail carrying an angled yellow axle connector on a blue axle-pin, applies the warning sticker 4 and fits it to the two projecting black side-wall pins.
+
+STEP 647
+ADD p32524-33 32524 yellow
+ADD p43093-85 43093 blue
+ADD p32039-4 32039 yellow
+CONNECT p43093-85.pin1 -> p32524-33.hole7 STIFF
+CONNECT p43093-85.axle1 -> p32039-4.axlehole2 LOCKED
+CONNECT p2780-384.pin2 -> p32524-33.hole1 STIFF
+CONNECT p2780-385.pin2 -> p32524-33.hole3 STIFF
+WHY Adds a yellow seven-hole top rail carrying an angled yellow axle connector on a blue axle-pin, applies the warning sticker 6 and fits it to the two projecting black side-wall pins.
+
+STEP 648
+ADD p43093-86 43093 blue
+ADD p43093-87 43093 blue
+ADD p6536-30 6536 yellow
+ADD p6536-31 6536 yellow
+CONNECT p43093-86.axle1 -> p6536-30.axlehole1 LOCKED
+CONNECT p43093-87.axle1 -> p6536-31.axlehole1 LOCKED
+CONNECT p43093-86.pin1 -> p18945-15.hole2 STIFF
+CONNECT p43093-87.pin1 -> p18945-16.hole2 STIFF
+WHY Adds a yellow perpendicular connector on a blue axle-pin to each inner rear floor-panel corner.
+
+STEP 649
+GROUP dump-bed-rear-cross-frame
+ADD p32009-3 32009 yellow
+ADD p43093-88 43093 blue
+ADD p2780-388 2780 black
+CONNECT p43093-88.axle1 -> p32009-3.axlehole1 LOCKED
+CONNECT p2780-388.pin2 -> p32009-3.hole2 STIFF
+WHY Starts the rear cross frame with a yellow double-bent beam, a blue axle-pin and black friction pin.
+
+STEP 650
+ADD p32278-16 32278 yellow
+CONNECT p43093-88.pin1 -> p32278-16.hole4 STIFF
+CONNECT p2780-388.pin1 -> p32278-16.hole2 STIFF
+WHY Fits a fifteen-hole yellow beam across the two projecting pins to extend the rear cross frame.
+
+STEP 651
+ADD p32009-4 32009 yellow
+ADD p43093-89 43093 blue
+ADD p2780-389 2780 black
+CONNECT p43093-89.axle1 -> p32009-4.axlehole1 LOCKED
+CONNECT p2780-389.pin1 -> p32009-4.hole2 STIFF
+CONNECT p43093-89.pin1 -> p32278-16.hole12 STIFF
+CONNECT p2780-389.pin2 -> p32278-16.hole14 STIFF
+WHY Builds and fits the matching yellow double-bent beam to the other end of the long cross beam.
+
+STEP 652
+ADD p15100-26 65487 yellow
+CONNECT p15100-26.pin1 -> p32009-3.hole5 STIFF
+ADD p15100-27 65487 yellow
+CONNECT p15100-27.pin1 -> p32009-3.hole3 STIFF
+ADD p15100-28 65487 yellow
+CONNECT p15100-28.pin1 -> p32009-3.hole1 STIFF
+ADD p15100-29 65487 yellow
+CONNECT p15100-29.pin1 -> p32009-4.hole5 STIFF
+ADD p15100-30 65487 yellow
+CONNECT p15100-30.pin1 -> p32009-4.hole3 STIFF
+ADD p15100-31 65487 yellow
+CONNECT p15100-31.pin1 -> p32009-4.hole1 STIFF
+WHY Inserts six yellow perpendicular pin connectors along the two double-bent beams, three per side, leaving their round holes aligned for later shafts.
+
+STEP 653
+ADD p87083-25 87083 darkgray
+ADD p87083-26 87083 darkgray
+CONNECT p87083-25.axle4~ -> p32009-3.axlehole2 LOCKED
+CONNECT p87083-26.axle4~ -> p32009-4.axlehole2 LOCKED
+WHY Inserts two dark-grey four-length stop axles into the outer cross holes of the rear frame, leaving most of each shaft projecting for mounting. Their insertion depths are estimated.
+
+STEP 654
+END
+ATTACH dump-bed-rear-cross-frame
+CONNECT p87083-25.axle3~ -> p32039-3.axlehole1 LOCKED
+CONNECT p87083-25.axle2~ -> p32348-3.hole1 TURNS
+CONNECT p87083-26.axle3~ -> p32039-4.axlehole1 LOCKED
+CONNECT p87083-26.axle2~ -> p32348-4.hole1 TURNS
+WHY Fits the rear cross frame between the bed sides, engaging its two projecting stop axles through the existing angled connectors and bent-brace round holes at estimated depths.
+
+STEP 655
+ADD p87083-27 87083 darkgray
+CONNECT p87083-27.axle4 -> p32009-4.hole7 TURNS
+CONNECT p87083-27.axle3 -> p43857-4.hole2 TURNS
+CONNECT p87083-27.axle2 -> p32348-4.hole3 TURNS
+CONNECT p87083-27.axle1 -> p59443-41.axlehole1 LOCKED
+ADD p87083-28 87083 darkgray
+CONNECT p87083-28.axle4 -> p32009-3.hole7 TURNS
+CONNECT p87083-28.axle3 -> p43857-3.hole2 TURNS
+CONNECT p87083-28.axle2 -> p32348-3.hole3 TURNS
+CONNECT p87083-28.axle1 -> p59443-39.axlehole1 LOCKED
+WHY Adds the second pair of dark-grey four-length stop axles through the lower rear-frame holes, thin yellow links and bent braces into the yellow longitudinal axle joiners, securing both rear corners.
+
+STEP 656
+GROUP dump-bed-underframe
+ADD p32140-28 32140 yellow
+ADD p18651-31 18651 black
+CONNECT p18651-31.axle2 -> p32140-28.axlehole1 LOCKED
+WHY Starts the separate bed underframe with a yellow L-beam and black axle-pin locked into its end cross hole.
+
+STEP 657
+ADD p42924-187 42924 blue
+ADD p42924-188 42924 blue
+CONNECT p42924-187.pin2 -> p32140-28.hole4 STIFF
+CONNECT p42924-188.pin2 -> p32140-28.hole3 STIFF
+WHY Inserts two long blue friction pins into the short arm of the L-beam.
+
+STEP 658
+ADD p32525-32 32525 yellow
+ADD p2780-390 2780 black
+CONNECT p42924-188.pin3 -> p32525-32.hole5 STIFF
+CONNECT p18651-31.axle1 -> p32525-32.hole2 TURNS
+CONNECT p2780-390.pin1 -> p32525-32.hole4 STIFF
+WHY Adds an eleven-hole yellow beam on the blue pin and projecting black shaft and inserts a black friction pin into its fourth hole.
+
+STEP 659
+ADD p11214-43 11214 red
+ADD p32054-28 32054 lightgray
+CONNECT p11214-43.axle1 -> p32054-28.axlehole1 LOCKED
+CONNECT p11214-43.pin1 -> p32525-32.hole1 STIFF
+WHY Locks a red axle-pin into the cross bore of a grey pin-with-stop-bush connector, then pushes the red pin end through the first hole of the long yellow beam.
+
+STEP 660
+ADD p32525-33 32525 yellow
+ADD p2780-391 2780 black
+CONNECT p42924-188.pin1 -> p32525-33.hole5 STIFF
+CONNECT p18651-31.pin1 -> p32525-33.hole2 STIFF
+CONNECT p32054-28.pin1 -> p32525-33.hole1 STIFF
+CONNECT p2780-391.pin2 -> p32525-33.hole4 STIFF
+WHY Closes the opposite side of the underframe with a second eleven-hole beam on the shared blue pin, black axle-pin and grey stop-bush pin, and adds its black fourth-hole pin.
+
+STEP 661
+ADD p32524-34 32524 yellow
+ADD p32524-35 32524 yellow
+CONNECT p11214-43.pin2 -> p32524-34.hole1 STIFF
+CONNECT p2780-390.pin2 -> p32524-34.hole4 STIFF
+CONNECT p32054-28.pin2 -> p32524-35.hole1 STIFF
+CONNECT p2780-391.pin1 -> p32524-35.hole4 STIFF
+WHY Fits yellow seven-hole reinforcing beams onto the projecting pins along both sides of the underframe.
+
+STEP 662
+ADD p48989-11 65489 lightgray
+ADD p48989-12 65489 lightgray
+CONNECT p48989-11.pin1 -> p32525-32.hole10 STIFF
+CONNECT p48989-11.pin2 -> p32525-32.hole8 STIFF
+CONNECT p48989-12.pin3 -> p32525-33.hole10 STIFF
+CONNECT p48989-12.pin4 -> p32525-33.hole8 STIFF
+WHY Adds a grey four-pin connector to each long underframe beam, leaving two pins projecting outwards on each side.
+
+STEP 663
+ADD p42924-189 42924 blue
+ADD p42924-190 42924 blue
+CONNECT p42924-189.pin1 -> p32524-34.hole7 STIFF
+CONNECT p42924-190.pin1 -> p32524-35.hole7 STIFF
+WHY Inserts a long blue pin into the free end of each outer seven-hole beam.
+
+STEP 664
+ADD p11214-44 11214 red
+ADD p11214-45 11214 red
+ADD p32039-5 32039 yellow
+ADD p32039-6 32039 yellow
+CONNECT p11214-44.axle1 -> p32039-6.axlehole2 LOCKED
+CONNECT p11214-44.pin1 -> p32524-35.hole6 STIFF
+CONNECT p11214-44.pin2 -> p32525-33.hole6 STIFF
+CONNECT p11214-45.axle1 -> p32039-5.axlehole2 LOCKED
+CONNECT p11214-45.pin1 -> p32524-34.hole6 STIFF
+CONNECT p11214-45.pin2 -> p32525-32.hole6 STIFF
+WHY Builds two yellow angled axle fittings on red axle-pins and pushes their long pin ends through the paired yellow side beams.
+
+STEP 665
+ADD p32316-34 32316 lightgray
+ADD p32316-35 32316 lightgray
+ADD p2780-392 2780 black
+ADD p2780-393 2780 black
+CONNECT p48989-11.pin3 -> p32316-34.hole4 STIFF
+CONNECT p48989-11.pin4 -> p32316-34.hole2 STIFF
+CONNECT p42924-189.pin2 -> p32316-34.hole1 STIFF
+CONNECT p48989-12.pin1 -> p32316-35.hole4 STIFF
+CONNECT p48989-12.pin2 -> p32316-35.hole2 STIFF
+CONNECT p42924-190.pin2 -> p32316-35.hole1 STIFF
+CONNECT p2780-392.pin1 -> p32316-34.hole5 STIFF
+CONNECT p2780-393.pin2 -> p32316-35.hole5 STIFF
+WHY Adds grey five-hole beams over the projecting grey and blue pins on both sides and inserts a black friction pin into each free end for the longitudinal extensions.
