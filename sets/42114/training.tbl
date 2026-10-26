@@ -4008,3 +4008,274 @@ WHY Mounts the hub against the rear cab brackets and follows the blue-marked cab
 STEP 347
 
 WHY Turns the build to the exhaust side and plugs the remaining motor leads into the pictured hub sockets, following the green and orange cable markers and keeping the wires inside the cab frame.
+
+STEP 348
+GROUP right-cab-step
+ADD p6629-5 6629 black
+ADD p11214-19 11214 red
+CONNECT p11214-19.axle1 -> p6629-5.axlehole2 LOCKED
+WHY Starts the cab-side step assembly with a red axle-pin in the cross hole at one end of a black bent liftarm.
+
+STEP 349
+ADD p11214-20 11214 red
+ADD p42924-119 42924 blue
+ADD p32140-20 32140 black
+CONNECT p11214-20.axle1 -> p32140-20.axlehole1 LOCKED
+CONNECT p42924-119.pin1 -> p32140-20.hole2 STIFF
+CONNECT p11214-20.pin1 -> p6629-5.hole4 STIFF
+CONNECT p42924-119.pin2 -> p6629-5.hole2 STIFF
+WHY Builds a short black L-shaped link with a red axle-pin and blue pin, then joins it to the long arm of the bent liftarm.
+
+STEP 350
+ADD p63869-7 63869 black
+ADD p22961-1 22961 darkgray
+ADD p2780-212 2780 black
+ADD p42924-120 42924 blue
+CONNECT p22961-1.axle1 -> p63869-7.axlehole1 LOCKED
+CONNECT p2780-212.pin1 -> p63869-7.hole3 STIFF
+CONNECT p42924-120.pin1 -> p63869-7.hole2 STIFF
+CONNECT p2780-212.pin2 -> p6629-5.hole7 STIFF
+CONNECT p42924-120.pin2 -> p6629-5.hole6 STIFF
+WHY Adds a black three-hole transverse connector with a dark grey axle boss and joins it to the short leg of the bent liftarm with black and blue pins.
+
+STEP 351
+ADD p42924-121 42924 blue
+CONNECT p42924-121.pin2 -> p63869-7.hole1 STIFF
+CONNECT p42924-121.pin3 -> p6629-5.hole5 STIFF
+WHY Pushes another blue three-length pin through the remaining transverse connector hole and the bend of the main liftarm.
+
+STEP 352
+ADD right-step-top-plate-1 18677 black
+ADD right-step-top-plate-2 18677 black
+CONNECT p11214-20.pin2 -> right-step-top-plate-1.? STIFF
+CONNECT p42924-119.pin3 -> right-step-top-plate-2.? STIFF
+WHY Fits the two black studded plates onto the red pin ends above the step carrier; their pin-hole endpoints are not cataloged.
+
+STEP 353
+ADD right-step-slope-1 3043 black
+ADD right-step-slope-2 3043 black
+CONNECT right-step-slope-1.? -> right-step-top-plate-1.? STIFF
+CONNECT right-step-slope-2.? -> right-step-top-plate-2.? STIFF
+WHY Presses a double-sloped black brick onto each studded plate to form the two textured cab access steps.
+
+STEP 354
+ADD p11214-21 11214 red
+ADD p6536-17 6536 black
+CONNECT p11214-21.pin1 -> p6536-17.hole1 STIFF
+CONNECT p11214-21.axle1 -> p6629-5.axlehole1 LOCKED
+WHY Adds the red axle-pin and black perpendicular axle connector at the upper end of the bent step carrier.
+
+STEP 355
+END
+ATTACH right-cab-step
+CONNECT p11214-19.pin1 -> p32316-27.hole2 STIFF
+CONNECT p11214-19.pin2 -> p32140-16.hole2 STIFF
+CONNECT p42924-120.pin3 -> p32316-27.hole4 STIFF
+CONNECT p11214-16.pin1 -> p22961-1.hole1 STIFF
+WHY Mounts the two-step black carrier beside the right cab platform by engaging the prepared blue and red pins and its dark grey axle boss.
+
+STEP 356
+ADD p32316-30 32316 yellow
+CONNECT p11214-16.pin2 -> p32316-30.hole1 STIFF
+CONNECT p42924-106.pin1 -> p32316-30.hole3 STIFF
+CONNECT p2780-177.pin2 -> p32316-30.hole5 STIFF
+WHY Adds the yellow five-hole outer rail across the platform, capturing its red, blue and black mounting pins.
+
+STEP 357
+GROUP cab-work-lights
+ADD p24122-1 24122 black
+ADD work-light-bar-1 30374 black
+ADD work-light-bar-2 30374 black
+CONNECT work-light-bar-1.? -> p24122-1.barhole1 STIFF
+CONNECT work-light-bar-2.? -> p24122-1.barhole2 STIFF
+ADD work-light-clip-1 15712 black
+ADD work-light-lens-1 3024 transclear
+CONNECT work-light-lens-1.? -> work-light-clip-1.? STIFF
+CONNECT work-light-clip-1.? -> work-light-bar-1.? STIFF
+ADD work-light-clip-2 15712 black
+ADD work-light-lens-2 3024 transclear
+CONNECT work-light-lens-2.? -> work-light-clip-2.? STIFF
+CONNECT work-light-clip-2.? -> work-light-bar-1.? STIFF
+ADD work-light-clip-3 15712 black
+ADD work-light-lens-3 3024 transclear
+CONNECT work-light-lens-3.? -> work-light-clip-3.? STIFF
+CONNECT work-light-clip-3.? -> work-light-bar-2.? STIFF
+ADD work-light-clip-4 15712 black
+ADD work-light-lens-4 3024 transclear
+CONNECT work-light-lens-4.? -> work-light-clip-4.? STIFF
+CONNECT work-light-clip-4.? -> work-light-bar-2.? STIFF
+END
+ATTACH cab-work-lights
+CONNECT p4519-18.axle1 -> p24122-1.axlehole1 LOCKED
+WHY Builds four clear square work lights on black clips, clips two lights onto each black bar and mounts the central black holder on the projecting upper cab axle. The small bar, clip and plate interfaces are not named in the catalog.
+
+STEP 358
+GROUP left-cab-step
+ADD p6629-6 6629 black
+ADD p11214-22 11214 red
+CONNECT p11214-22.axle1 -> p6629-6.axlehole2 LOCKED
+WHY Starts the cab-side step assembly with a red axle-pin in the cross hole at one end of a black bent liftarm.
+
+STEP 359
+ADD p11214-23 11214 red
+ADD p42924-122 42924 blue
+ADD p32140-21 32140 black
+CONNECT p11214-23.axle1 -> p32140-21.axlehole1 LOCKED
+CONNECT p42924-122.pin1 -> p32140-21.hole2 STIFF
+CONNECT p11214-23.pin1 -> p6629-6.hole4 STIFF
+CONNECT p42924-122.pin2 -> p6629-6.hole2 STIFF
+WHY Builds a short black L-shaped link with a red axle-pin and blue pin, then joins it to the long arm of the bent liftarm.
+
+STEP 360
+ADD p63869-8 63869 black
+ADD p22961-2 22961 darkgray
+ADD p2780-213 2780 black
+ADD p42924-123 42924 blue
+CONNECT p22961-2.axle1 -> p63869-8.axlehole1 LOCKED
+CONNECT p2780-213.pin2 -> p63869-8.hole1 STIFF
+CONNECT p42924-123.pin1 -> p63869-8.hole2 STIFF
+CONNECT p2780-213.pin1 -> p6629-6.hole7 STIFF
+CONNECT p42924-123.pin2 -> p6629-6.hole6 STIFF
+WHY Adds a black three-hole transverse connector with a dark grey axle boss and joins it to the short leg of the bent liftarm with black and blue pins.
+
+STEP 361
+ADD p42924-124 42924 blue
+CONNECT p42924-124.pin2 -> p63869-8.hole3 STIFF
+CONNECT p42924-124.pin3 -> p6629-6.hole5 STIFF
+WHY Pushes another blue three-length pin through the remaining transverse connector hole and the bend of the main liftarm.
+
+STEP 362
+ADD left-step-top-plate-1 18677 black
+ADD left-step-top-plate-2 18677 black
+CONNECT p11214-23.pin2 -> left-step-top-plate-1.? STIFF
+CONNECT p42924-122.pin3 -> left-step-top-plate-2.? STIFF
+WHY Fits the two black studded plates onto the red pin ends above the step carrier; their pin-hole endpoints are not cataloged.
+
+STEP 363
+ADD left-step-slope-1 3043 black
+ADD left-step-slope-2 3043 black
+CONNECT left-step-slope-1.? -> left-step-top-plate-1.? STIFF
+CONNECT left-step-slope-2.? -> left-step-top-plate-2.? STIFF
+WHY Presses a double-sloped black brick onto each studded plate to form the two textured cab access steps.
+
+STEP 364
+ADD p11214-24 11214 red
+ADD p6536-18 6536 black
+CONNECT p11214-24.pin1 -> p6536-18.hole1 STIFF
+CONNECT p11214-24.axle1 -> p6629-6.axlehole1 LOCKED
+WHY Adds the red axle-pin and black perpendicular axle connector at the upper end of the bent step carrier.
+
+STEP 365
+END
+ATTACH left-cab-step
+CONNECT p11214-22.pin1 -> p32316-29.hole2 STIFF
+CONNECT p11214-22.pin2 -> p32140-19.hole2 STIFF
+CONNECT p42924-123.pin3 -> p32316-29.hole4 STIFF
+CONNECT p11214-17.pin1 -> p22961-2.hole1 STIFF
+WHY Mounts the two-step black carrier beside the left cab platform by engaging the prepared blue and red pins and its dark grey axle boss.
+
+STEP 366
+ADD p32316-31 32316 yellow
+CONNECT p11214-17.pin2 -> p32316-31.hole1 STIFF
+CONNECT p42924-110.pin1 -> p32316-31.hole3 STIFF
+CONNECT p2780-185.pin1 -> p32316-31.hole5 STIFF
+WHY Adds the matching yellow five-hole outer rail to the exhaust-side cab platform.
+
+STEP 367
+GROUP hub-button-linkage
+ADD p3706-7 3706 black
+ADD p4519-21 4519 lightgray
+ADD p59443-23 59443 black
+ADD p32062-21 32062 red
+ADD p42003-14 42003 black
+ADD p4274-7 4274 lightgray
+ADD p6536-19 6536 black
+ADD p41677-1 41677 black
+ADD p41677-2 41677 black
+CONNECT p4519-21.axle1 -> p59443-23.axlehole2 LOCKED
+CONNECT p32062-21.axle1 -> p59443-23.axlehole1 LOCKED
+CONNECT p4519-21.axle2 -> p42003-14.axlehole1 LOCKED
+CONNECT p4274-7.pin1 -> p42003-14.hole2~ TURNS
+CONNECT p4519-21.axle3 -> p6536-19.axlehole1 LOCKED
+CONNECT p32062-21.axle2 -> p41677-1.axlehole1~ LOCKED
+CONNECT p32062-21.axle2 -> p41677-2.axlehole1~ LOCKED
+CONNECT p3706-7.axle1 -> p41677-1.axlehole2~ LOCKED
+CONNECT p3706-7.axle1 -> p41677-2.axlehole2~ LOCKED
+END
+ATTACH hub-button-linkage
+CONNECT p3706-7.axle2 -> p39794-1.hole30 TURNS
+WHY Builds the hub-button linkage from grey and red axles, a black cross coupler and paired thin links, positions its grey half pin above the hub button and passes the long black control axle through the upper cab frame. Depths across the thin links remain estimated.
+
+STEP 368
+ADD p2780-214 2780 black
+ADD p2780-215 2780 black
+ADD p2780-216 2780 black
+ADD p2780-217 2780 black
+CONNECT p2780-214.pin2 -> p32184-2.hole1 STIFF
+CONNECT p2780-215.pin2 -> p39794-1.hole10 STIFF
+CONNECT p2780-216.pin2 -> p39794-1.hole29 STIFF
+CONNECT p2780-217.pin2 -> p39794-1.hole24 STIFF
+WHY Places four black upward-facing pins around the top of the cab frame to receive the roof assembly.
+
+STEP 369
+GROUP cab-roof
+ADD p15458-1 15458 yellow
+ADD p4274-8 4274 blue
+CONNECT p4274-8.pin2 -> p15458-1.hole5 TURNS
+ADD p4274-9 4274 blue
+CONNECT p4274-9.pin2 -> p15458-1.hole8 TURNS
+ADD p4274-10 4274 blue
+CONNECT p4274-10.pin2 -> p15458-1.hole12 TURNS
+WHY Starts the roof with a yellow eleven-hole panel and three blue half pins, leaving their short stud ends exposed on the outer face.
+
+STEP 370
+ADD p2780-218 2780 black
+ADD p2780-219 2780 black
+CONNECT p2780-218.pin1 -> p15458-1.hole12 STIFF
+CONNECT p2780-219.pin1 -> p15458-1.hole5 STIFF
+WHY Inserts two black pins into the opposite face of the first roof panel to join the second panel.
+
+STEP 371
+ADD p15458-2 15458 yellow
+CONNECT p2780-218.pin2 -> p15458-2.hole12 STIFF
+CONNECT p2780-219.pin2 -> p15458-2.hole5 STIFF
+WHY Joins the second long yellow panel beside the first to form the wide roof surface.
+
+STEP 372
+ADD p4274-11 4274 blue
+CONNECT p4274-11.pin2 -> p15458-2.hole12 TURNS
+ADD p4274-12 4274 blue
+CONNECT p4274-12.pin2 -> p15458-2.hole11 TURNS
+ADD p4274-13 4274 blue
+CONNECT p4274-13.pin2 -> p15458-2.hole10 TURNS
+ADD p4274-14 4274 blue
+CONNECT p4274-14.pin2 -> p15458-2.hole8 TURNS
+ADD p4274-15 4274 blue
+CONNECT p4274-15.pin2 -> p15458-2.hole7 TURNS
+ADD p4274-16 4274 blue
+CONNECT p4274-16.pin2 -> p15458-2.hole6 TURNS
+ADD p4274-17 4274 blue
+CONNECT p4274-17.pin2 -> p15458-2.hole5 TURNS
+WHY Fills seven consecutive side holes of the second roof panel with blue half pins, presenting a row of studs for the yellow roof-edge trim.
+
+STEP 373
+ADD roof-edge-clip-1 15712 yellow
+ADD roof-edge-clip-2 15712 yellow
+ADD roof-edge-clip-3 15712 yellow
+ADD roof-edge-tile-1 3069b yellow
+ADD roof-edge-tile-2 3069b yellow
+CONNECT roof-edge-clip-1.? -> p4274-11.? STIFF
+CONNECT roof-edge-tile-1.? -> p4274-12.? STIFF
+CONNECT roof-edge-tile-1.? -> p4274-13.? STIFF
+CONNECT roof-edge-clip-2.? -> p4274-14.? STIFF
+CONNECT roof-edge-tile-2.? -> p4274-15.? STIFF
+CONNECT roof-edge-tile-2.? -> p4274-16.? STIFF
+CONNECT roof-edge-clip-3.? -> p4274-17.? STIFF
+WHY Presses three yellow clips and two smooth two-stud tiles onto the seven half-pin studs along the roof edge. Stud and tile interfaces remain unnamed in the catalog.
+
+STEP 374
+ADD p4274-18 4274 blue
+ADD p4274-19 4274 blue
+CONNECT p4274-18.pin2 -> p15458-1.hole16~ TURNS
+CONNECT p4274-19.pin2 -> p15458-2.hole16~ TURNS
+WHY Adds a blue half pin at the front end of each roof panel to receive the narrow front trim assembly; the end-hole selection is estimated.
