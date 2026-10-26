@@ -19,7 +19,7 @@ set,steps,inventory_parts,training_parts,booklets,checker_errors,missing_parts,e
 42095,0,324,0,1,0,0,0,0,0,not started,
 42100,0,4108,0,2,0,0,0,0,0,not started,
 42101,36,117,116,1,0,10,9,10,132,needs review,Inventory differs by part and colour
-42110,603,2573,1815,2,0,758,0,437,510,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
+42110,620,2573,1850,2,0,723,0,444,519,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
 42114,691,2193,2193,1,0,0,0,474,402,ready,
 42116,33,139,129,1,0,17,7,8,0,needs review,Inventory differs by part and colour
 42117,55,154,154,2,0,0,0,90,88,ready,
