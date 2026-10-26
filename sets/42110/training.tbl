@@ -1115,3 +1115,203 @@ CONNECT p24316-5.axle1~ -> p76537-3.hole2 TURNS
 CONNECT p24316-5.axle3 -> p76537-4.hole2 TURNS
 WHY Turns the rear module around and mounts the opposite pair of complete red hard-spring shocks to the other lower suspension arm with the second brown three-length stopped axle. Keeps their upper eyes free for the matching upper shaft; fork cross-hole and first shock-eye shaft depths are estimated.
 
+STEP 107
+ADD p3706-2 3706 black
+ADD p32123b-4 32123b lightgray
+ADD p32123b-5 32123b lightgray
+CONNECT p3706-2.axle1 -> p42003-9.hole2 TURNS
+CONNECT p3706-2.axle2~ -> p76537-3.hole1 TURNS
+CONNECT p3706-2.axle3~ -> p76537-4.hole1 TURNS
+CONNECT p3706-2.axle3~ -> p32123b-5.axlehole1 LOCKED
+CONNECT p3706-2.axle4~ -> p32123b-4.axlehole1 LOCKED
+WHY Threads the second black six-length axle through the opposite raised grey connector and both upper shock eyes, with one grey half bush between the shock bodies and one beyond them. Shock eye and half-bush seating remains estimated from the reference offsets.
+
+STEP 108
+ADD p42003-10 42003 lightgray
+ADD p42003-11 42003 lightgray
+ADD p6558-17 6558 blue
+ADD p6558-18 6558 blue
+ADD p2780-28 2780 black
+ADD p2780-29 2780 black
+CONNECT p6558-17.pin2 -> p42003-10.hole1 STIFF
+CONNECT p2780-28.pin1 -> p42003-10.hole2 STIFF
+CONNECT p6558-18.pin2 -> p42003-11.hole2 STIFF
+CONNECT p2780-29.pin1 -> p42003-11.hole1 STIFF
+CONNECT p3706-1.axle5 -> p42003-10.axlehole1 LOCKED
+CONNECT p3706-2.axle5 -> p42003-11.axlehole1 LOCKED
+CONNECT p6558-17.pin3 -> p6536-17.hole1 STIFF
+CONNECT p6558-18.pin3 -> p32278-1.hole13 STIFF
+WHY Builds two grey end connectors with one long blue friction pin and one black friction pin each. Fits them onto the exposed black shock-mount shafts and presses the long pins into the upper side supports to tie the shocks to the chassis.
+
+STEP 109
+ADD p32316-1 32316 black
+ADD p32316-2 32316 black
+ADD p2780-30 2780 black
+ADD p2780-31 2780 black
+ADD p2780-32 2780 black
+ADD p2780-33 2780 black
+CONNECT p2780-30.pin1 -> p32316-1.hole1 STIFF
+CONNECT p2780-31.pin1 -> p32316-1.hole2 STIFF
+CONNECT p2780-11.pin2 -> p32316-1.hole3 STIFF
+CONNECT p43093-4.axle1 -> p32316-1.hole4 TURNS
+CONNECT p2780-9.pin2 -> p32316-1.hole5 STIFF
+CONNECT p2780-32.pin1 -> p32316-2.hole1 STIFF
+CONNECT p2780-33.pin1 -> p32316-2.hole2 STIFF
+CONNECT p2780-12.pin1 -> p32316-2.hole3 STIFF
+CONNECT p43093-5.axle1 -> p32316-2.hole4 TURNS
+CONNECT p2780-10.pin1 -> p32316-2.hole5 STIFF
+WHY Builds two black five-hole vertical braces with two black pins at the top of each and fits their lower holes over the existing black friction pins and blue axle ends on both sides of the rear suspension, leaving the top pins for the outer layers.
+
+STEP 110
+ADD p32316-3 32316 black
+ADD p32316-4 32316 black
+CONNECT p6558-17.pin1 -> p32316-3.hole1 STIFF
+CONNECT p2780-28.pin2 -> p32316-3.hole2 STIFF
+CONNECT p2780-30.pin2 -> p32316-3.hole4 STIFF
+CONNECT p2780-31.pin2 -> p32316-3.hole5 STIFF
+CONNECT p2780-29.pin2 -> p32316-4.hole1 STIFF
+CONNECT p6558-18.pin1 -> p32316-4.hole2 STIFF
+CONNECT p2780-32.pin2 -> p32316-4.hole4 STIFF
+CONNECT p2780-33.pin2 -> p32316-4.hole5 STIFF
+WHY Adds the two outer black five-hole beams over the upper shock connector pins and the waiting top pins of the inner braces, closing the layered side supports on both sides.
+
+STEP 111
+ADD p6536-18 6536 darkgray
+ADD p6536-19 6536 darkgray
+CONNECT p3706-2.axle6 -> p6536-18.axlehole1 LOCKED
+CONNECT p3706-1.axle6 -> p6536-19.axlehole1 LOCKED
+WHY Fits one dark-grey perpendicular connector onto each remaining end of the black shock-mount shafts, with its round hole facing inwards for the rear crossbeam.
+
+STEP 112
+GROUP rear-upper-crossbeam
+ADD p32278-2 32278 darkgray
+ADD p6558-19 6558 blue
+ADD p6558-20 6558 blue
+ADD p2780-34 2780 black
+ADD p2780-35 2780 black
+ADD p32013-3 32013 darkgray
+ADD p32013-4 32013 darkgray
+ADD p32062-5 32062 red
+ADD p32062-6 32062 red
+ADD p32034-6 32034 black
+ADD p32034-7 32034 black
+ADD p43093-10 43093 blue
+ADD p43093-11 43093 blue
+CONNECT p6558-19.pin2 -> p32278-2.hole4 STIFF
+CONNECT p6558-20.pin2 -> p32278-2.hole12 STIFF
+CONNECT p2780-34.pin2 -> p32278-2.hole1 STIFF
+CONNECT p2780-35.pin2 -> p32278-2.hole15 STIFF
+CONNECT p32062-6.axle2 -> p32013-3.axlehole1 LOCKED
+CONNECT p32062-6.axle1 -> p32034-6.axlehole1 LOCKED
+CONNECT p43093-10.axle1 -> p32034-6.axlehole2 LOCKED
+CONNECT p32062-5.axle1 -> p32013-4.axlehole1 LOCKED
+CONNECT p32062-5.axle2 -> p32034-7.axlehole2 LOCKED
+CONNECT p43093-11.axle1 -> p32034-7.axlehole1 LOCKED
+CONNECT p6558-19.pin3 -> p32013-3.hole1 STIFF
+CONNECT p6558-20.pin3 -> p32013-4.hole1 STIFF
+CONNECT p2780-34.pin1 -> p32034-6.hole1 STIFF
+CONNECT p2780-35.pin1 -> p32034-7.hole1 STIFF
+END
+ATTACH rear-upper-crossbeam
+CONNECT p6558-19.pin1 -> p6536-19.hole1 STIFF
+CONNECT p6558-20.pin1 -> p6536-18.hole1 STIFF
+WHY Builds the dark-grey fifteen-hole rear crossbeam with two long blue pins and two black end pins, then adds mirrored dark-grey axle connectors, red short axles, black straight connectors and blue axle-pins along its top. Pins the completed beam into the two dark-grey shock-shaft end connectors, leaving the blue axle-pin ends exposed for later body supports.
+
+STEP 113
+ADD p2780-36 2780 black
+ADD p2780-37 2780 black
+ADD p2780-38 2780 black
+CONNECT p2780-36.pin1 -> p63869-11.hole3 STIFF
+CONNECT p2780-37.pin1 -> p27940-3.hole1 STIFF
+CONNECT p2780-38.pin2 -> p32278-1.hole7 STIFF
+WHY Turns the rear module around and inserts three black friction pins into the highlighted upper side supports, two on one side and one on the other, for the long vertical braces.
+
+STEP 114
+ADD p40490-5 40490 black
+ADD p40490-6 40490 black
+ADD p2780-39 2780 black
+ADD p18654-6 18654 black
+CONNECT p2780-39.pin2 -> p40490-5.hole2 STIFF
+CONNECT p2780-39.pin1 -> p18654-6.hole1 STIFF
+CONNECT p2780-36.pin2 -> p40490-5.hole3 STIFF
+CONNECT p2780-37.pin2 -> p40490-5.hole4 STIFF
+CONNECT p43093-8.axle1 -> p40490-5.hole5 TURNS
+CONNECT p2780-20.pin1 -> p40490-5.hole6 STIFF
+CONNECT p6558-12.pin1 -> p40490-5.hole9 STIFF
+CONNECT p2780-38.pin1 -> p40490-6.hole4 STIFF
+CONNECT rear-left-lower-pivot-axle-pin.axle1 -> p40490-6.hole5~ TURNS
+CONNECT rear-left-lower-pivot-pin.pin2 -> p40490-6.hole6~ STIFF
+CONNECT p6558-11.pin1 -> p40490-6.hole9 STIFF
+WHY Adds one black nine-hole vertical brace to each side, fastening them to the waiting black pins, blue axle ends and blue frame pins. One brace carries the pictured black pin and round spacer. The two lower joins on the opposite side use the booklet assemblies missing from the reference model, so their mirrored beam holes remain estimated.
+
+STEP 115
+ADD p32034-8 32034 black
+ADD p32034-9 32034 black
+ADD p43093-12 43093 blue
+ADD p43093-13 43093 blue
+ADD p43093-14 43093 blue
+ADD p43093-15 43093 blue
+CONNECT p43093-12.axle1 -> p32034-8.axlehole2 LOCKED
+CONNECT p43093-13.axle1 -> p32034-8.axlehole1 LOCKED
+CONNECT p43093-14.axle1 -> p32034-9.axlehole1 LOCKED
+CONNECT p43093-15.axle1 -> p32034-9.axlehole2 LOCKED
+CONNECT p43093-12.pin1 -> p40490-6.hole1 STIFF
+CONNECT p43093-15.pin1 -> p40490-5.hole1 STIFF
+WHY Builds two black straight axle connectors with blue axle-pins at both ends and pins one assembly into the top hole of each new vertical brace, leaving the outer pin ends for later body framing.
+
+STEP 116
+GROUP front-bevel-transfer
+ADD p59426-2 59426 darkgray
+ADD p32270-2 32270 black
+CONNECT p59426-2.axle1~ -> p32270-2.axlehole1 LOCKED
+WHY Starts the upright bevel-transfer module by fitting a black twelve-tooth bevel gear onto the short end of the dark-grey five-and-a-half-length stopped axle. The gear seating differs slightly from the reference model and is estimated.
+
+STEP 117
+ADD p87408-1 87408 black
+CONNECT p59426-2.axle2~ -> p87408-1.hole3 TURNS
+WHY Passes the stopped shaft through the central round bearing of the black U-shaped gear support, trapping the black bevel gear inside it while leaving the long shaft end projecting.
+
+STEP 118
+ADD p3706-3 3706 black
+ADD p6589-7 6589 tan
+ADD p3713-15 3713 red
+ADD p32034-10 32034 black
+CONNECT p3706-3.axle3~ -> p87408-1.? TURNS
+CONNECT p3706-3.axle2~ -> p6589-7.axlehole1 LOCKED
+CONNECT p3706-3.axle5 -> p3713-15.axlehole1 LOCKED
+CONNECT p3706-3.axle6 -> p32034-10.axlehole1 LOCKED
+MESH p6589-7.teeth p32270-2.teeth
+WHY Builds the black six-length transverse shaft with a red bush and black straight connector, threads it through the U-support and adds a tan twelve-tooth bevel gear to mesh with the black twelve-tooth gear at a right angle. The housing bearing endpoint is unresolved and the tan gear seating depth is estimated.
+
+STEP 119
+ADD p22961-1 22961 black
+ADD p22961-2 22961 black
+CONNECT p22961-1.axle1 -> p87408-1.axlehole2 LOCKED
+CONNECT p22961-2.axle1 -> p87408-1.axlehole1 LOCKED
+WHY Fits two black axle-and-pin connectors into the cross holes on the back of the U-shaped gear support, leaving their round holes facing upwards for mounting pins.
+
+STEP 120
+ADD p32054-4 32054 lightgray
+ADD p32054-5 32054 lightgray
+CONNECT p32054-4.pin1 -> p22961-2.hole1 STIFF
+CONNECT p32054-5.pin1 -> p22961-1.hole1 STIFF
+END
+WHY Inserts two grey long pins with bush ends into the black mounting connectors, completing the bevel-transfer module and leaving the bush ends accessible for pushing it home.
+
+STEP 121
+ATTACH front-bevel-transfer
+CONNECT p3706-3.axle1 -> p32526-1.hole4 TURNS
+WHY Positions the completed bevel-transfer module against the grey side beam, aligns its two mounting pins with the beam holes and passes the projecting black transverse shaft end through the black L-shaped brace bearing.
+
+STEP 122
+CONNECT p32054-4.pin2 -> p32524-5.hole3 STIFF
+CONNECT p32054-5.pin2 -> p32524-5.hole5 STIFF
+WHY Pushes both grey mounting pins fully into the grey side beam to secure the upright bevel-transfer housing while keeping both bevel shafts free to turn in their bearings.
+
+STEP 123
+ADD p6558-21 6558 blue
+ADD p6558-22 6558 blue
+CONNECT p6558-21.pin2 -> p32524-5.hole7 STIFF
+CONNECT p6558-22.pin2 -> p32140-5.hole4 STIFF
+WHY Inserts two long blue friction pins into the outer ends of the grey upper side supports, completing the first bag and preparing the rear module to join the next chassis structure.
+
