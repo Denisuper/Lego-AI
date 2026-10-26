@@ -981,3 +981,137 @@ CONNECT p2780-23.pin2 -> p60483-8.hole1 STIFF
 CONNECT p3705-7.axle2 -> p60483-8.axlehole1 LOCKED
 WHY Builds the selector indicator from an olive-green axle-and-pin block, black friction pin and white round spacer, then slides its cross hole onto the red selector shaft. Aligns the indicator and orange selector cam to the neutral position shown in the top-view check.
 
+STEP 92
+ADD p32072-1 32072 black
+CONNECT p3705-7.axle3 -> p32072-1.axlehole1 LOCKED
+WHY Fits the black four-lobed knob wheel onto the red selector shaft beside the olive-green indicator, leaving room for the matching knob wheel on the next shaft.
+
+STEP 93
+GROUP rear-left-upper-rail
+ADD p32278-1 32278 darkgray
+ADD p2780-24 2780 black
+ADD p15462-4 15462 brown
+ADD p32140-5 32140 lightgray
+ADD p3713-14 3713 red
+CONNECT p2780-24.pin1 -> p32278-1.hole1 STIFF
+CONNECT p2780-24.pin2 -> p32140-5.hole2 STIFF
+CONNECT p15462-4.axle5 -> p32278-1.hole3 TURNS
+CONNECT p15462-4.axle4 -> p32140-5.axlehole1 LOCKED
+CONNECT p15462-4.axle3 -> p3713-14.axlehole1 LOCKED
+END
+ATTACH rear-left-upper-rail
+CONNECT p32054-2.pin1 -> p32278-1.hole15 STIFF
+CONNECT p23948-1.axle2 -> p32278-1.hole9 TURNS
+WHY Builds the dark-grey fifteen-hole upper rail with a grey L-shaped end, black mounting pin and brown five-length shaft retained by a red bush. Mounts the rail onto the existing grey long pin and transverse grey eleven-length shaft, leaving the brown shaft exposed inwards.
+
+STEP 94
+ADD p87083-4 87083 darkgray
+ADD p32072-2 32072 black
+ADD p63869-10 63869 lightgray
+ADD p32034-4 32034 black
+CONNECT p87083-4.axle4~ -> p32072-2.axlehole1 LOCKED
+CONNECT p87083-4.axle3~ -> p63869-10.hole3 TURNS
+CONNECT p87083-4.axle1~ -> p32034-4.axlehole2 LOCKED
+CONNECT p15462-4.axle2 -> p63869-10.axlehole1 LOCKED
+CONNECT p3705-7.axle4 -> p63869-10.hole1 TURNS
+MESH p32072-1.teeth p32072-2.teeth
+WHY Builds the second black knob wheel on a dark-grey stopped four-length shaft with a grey triple bearing and black straight axle connector. Slides the bearing onto the brown transverse shaft and the existing selector shaft so the two knob wheels mesh. The stopped shaft has a slight axial reference offset, so its seating depths remain estimated.
+
+STEP 95
+ADD p59443-6 59443 black
+CONNECT p15462-4.axle1 -> p59443-6.axlehole1 LOCKED
+WHY Fits a black two-length axle connector onto the inward-projecting brown transverse shaft, preparing to couple the support across the chassis.
+
+STEP 96
+GROUP rear-right-upper-brace
+ADD p32013-2 32013 darkgray
+ADD p4519-15 4519 lightgray
+ADD p6536-17 6536 darkgray
+CONNECT p4519-15.axle1 -> p32013-2.axlehole1 LOCKED
+CONNECT p4519-15.axle2 -> p6536-17.axlehole1 LOCKED
+WHY Starts the opposite upper brace on a grey three-length axle with a dark-grey axle connector at one end and a dark-grey perpendicular connector beside it, orienting their round holes as shown.
+
+STEP 97
+ADD p59443-7 59443 black
+ADD p32062-3 32062 red
+CONNECT p4519-15.axle3 -> p59443-7.axlehole1 LOCKED
+CONNECT p32062-3.axle1 -> p59443-7.axlehole2 LOCKED
+WHY Extends the grey axle with a black two-length connector and a red two-length axle, keeping the brace pieces locked in line.
+
+STEP 98
+ADD p32034-5 32034 black
+ADD p27940-3 27940 darkgray
+CONNECT p32062-3.axle2 -> p32034-5.axlehole2 LOCKED
+CONNECT p27940-3.axle1 -> p32034-5.axlehole1 LOCKED
+WHY Adds the black straight axle connector and dark-grey axle connector to the red extension, leaving the dark-grey round hole oriented for a later mounting pin.
+
+STEP 99
+ADD p63869-11 63869 lightgray
+ADD p2780-25 2780 black
+ADD p2780-26 2780 black
+CONNECT p27940-3.axle2 -> p63869-11.axlehole1 LOCKED
+CONNECT p2780-25.pin2 -> p63869-11.hole2 STIFF
+CONNECT p2780-26.pin2 -> p63869-11.hole1 STIFF
+WHY Slides the grey triple perpendicular connector onto the exposed dark-grey axle end and loads two of its round holes with black friction pins for the side beam.
+
+STEP 100
+ADD p32524-5 32524 lightgray
+ADD p2780-27 2780 black
+CONNECT p2780-25.pin1 -> p32524-5.hole1 STIFF
+CONNECT p2780-26.pin1 -> p32524-5.hole2 STIFF
+CONNECT p2780-27.pin2 -> p32524-5.hole4 STIFF
+WHY Presses the grey seven-hole beam onto the two black pins and adds a third black pin in its middle hole, preparing the inward-facing axle block.
+
+STEP 101
+ADD p60483-9 60483 black
+ADD p32062-4 32062 red
+CONNECT p32062-4.axle2 -> p60483-9.axlehole1 LOCKED
+CONNECT p2780-27.pin1 -> p60483-9.hole1 STIFF
+END
+WHY Builds a red two-length axle into the black axle-and-pin block and fits the block onto the waiting middle pin of the grey beam, completing the opposite upper brace.
+
+STEP 102
+ATTACH rear-right-upper-brace
+CONNECT p32054-1.pin1 -> p32013-2.hole1 STIFF
+CONNECT p23948-1.axle10 -> p32034-5.hole1 TURNS
+CONNECT p32062-4.axle1~ -> p59443-6.axlehole2~ LOCKED
+WHY Mounts the completed upper brace onto the existing grey long pin and transverse shaft, then pushes its red axle into the waiting black connector on the brown cross shaft. The short red axle seating differs from the reference position and remains estimated.
+
+STEP 103
+ADD p42003-8 42003 lightgray
+ADD p42003-9 42003 lightgray
+CONNECT p23948-1.axle11 -> p42003-8.axlehole1 LOCKED
+CONNECT p23948-1.axle1 -> p42003-9.axlehole1 LOCKED
+WHY Fits two grey axle-and-pin connectors onto the outer ends of the eleven-length gearbox cross shaft, with their round holes raised for the rear shock absorber upper shafts.
+
+STEP 104
+ADD p76537-1 76537 red
+ADD p76537-2 76537 red
+ADD p24316-4 24316 brown
+CONNECT p24316-4.axle1~ -> p57515-3.axlehole1~ LOCKED
+CONNECT p24316-4.axle2~ -> p57515-3.axlehole2~ LOCKED
+CONNECT p24316-4.axle1~ -> p76537-1.hole2 TURNS
+CONNECT p24316-4.axle3 -> p76537-2.hole2 TURNS
+WHY Places two complete red hard-spring shock absorbers over the lower suspension arm and passes the brown three-length stopped axle through their lower eyes and the arm to retain them. The fork cross-hole and first shock-eye shaft seating depths are estimated; the shocks can pivot on the brown axle.
+
+STEP 105
+ADD p3706-1 3706 black
+ADD p32123b-2 32123b lightgray
+ADD p32123b-3 32123b lightgray
+CONNECT p3706-1.axle1 -> p42003-8.hole2 TURNS
+CONNECT p3706-1.axle2~ -> p76537-1.hole1 TURNS
+CONNECT p3706-1.axle3~ -> p76537-2.hole1 TURNS
+CONNECT p3706-1.axle3~ -> p32123b-2.axlehole1 LOCKED
+CONNECT p3706-1.axle4~ -> p32123b-3.axlehole1 LOCKED
+WHY Threads a black six-length axle through the raised grey connector and both upper shock eyes, using the two grey half bushes as the pictured spacer and retainer. The reference model offsets the shock eyelets and half bushes, so their shaft seating remains estimated.
+
+STEP 106
+ADD p76537-3 76537 red
+ADD p76537-4 76537 red
+ADD p24316-5 24316 brown
+CONNECT p24316-5.axle1~ -> p57515-4.axlehole2~ LOCKED
+CONNECT p24316-5.axle2~ -> p57515-4.axlehole1~ LOCKED
+CONNECT p24316-5.axle1~ -> p76537-3.hole2 TURNS
+CONNECT p24316-5.axle3 -> p76537-4.hole2 TURNS
+WHY Turns the rear module around and mounts the opposite pair of complete red hard-spring shocks to the other lower suspension arm with the second brown three-length stopped axle. Keeps their upper eyes free for the matching upper shaft; fork cross-hole and first shock-eye shaft depths are estimated.
+
