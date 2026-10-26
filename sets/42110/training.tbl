@@ -1663,3 +1663,193 @@ ADD p76537-6 76537 red
 CONNECT p24316-7.axle3~ -> p76537-6.hole2 TURNS
 WHY Adds the complete red hard-spring shock beside the grey soft-spring shock on the exposed end of the same brown shaft, then pushes the shaft fully home. The red shock can pivot on the shaft; its outboard seating is estimated because the reference omits the adjacent grey shock.
 
+STEP 156
+ADD p24316-8 24316 brown
+ADD p42003-12 42003 lightgray
+ADD p4274-5 4274 lightgray
+ADD p4274-6 4274 lightgray
+ADD p35480-1 35480 black
+ADD p98138-1 98138 black
+CONNECT p24316-8.axle3~ -> p42003-12.axlehole1 LOCKED
+CONNECT p4274-5.pin1~ -> p42003-12.hole1 TURNS
+CONNECT p4274-6.pin1~ -> p42003-12.hole2 TURNS
+CONNECT p35480-1.? -> p4274-5.? STIFF
+CONNECT p35480-1.? -> p4274-6.? STIFF
+CONNECT p98138-1.? -> p35480-1.? STIFF
+CONNECT p24316-8.axle1~ -> p57515-6.axlehole1~ LOCKED
+CONNECT p24316-8.axle2~ -> p57515-6.axlehole2~ LOCKED
+WHY Builds the first lower suspension arm detail from a grey axle-and-pin connector, brown stopped three-length axle, two grey half pins, black rounded two-stud plate and black round tile, then fits its axle through the arm cross holes. Plate clutch surfaces are not cataloged; half-pin, connector and fork seating depths remain estimated.
+
+STEP 157
+ADD p24316-9 24316 brown
+ADD p42003-13 42003 lightgray
+ADD p4274-7 4274 lightgray
+ADD p4274-8 4274 lightgray
+ADD p35480-2 35480 black
+ADD p98138-2 98138 black
+CONNECT p24316-9.axle3~ -> p42003-13.axlehole1 LOCKED
+CONNECT p4274-7.pin1~ -> p42003-13.hole1 TURNS
+CONNECT p4274-8.pin1~ -> p42003-13.hole2 TURNS
+CONNECT p35480-2.? -> p4274-7.? STIFF
+CONNECT p35480-2.? -> p4274-8.? STIFF
+CONNECT p98138-2.? -> p35480-2.? STIFF
+CONNECT p24316-9.axle1~ -> p57515-5.axlehole2~ LOCKED
+CONNECT p24316-9.axle2~ -> p57515-5.axlehole1~ LOCKED
+WHY Builds the opposite lower suspension arm detail from a grey axle-and-pin connector, brown stopped three-length axle, two grey half pins, black rounded two-stud plate and black round tile, then fits its axle through the arm cross holes. Plate clutch surfaces are not cataloged; half-pin, connector and fork seating depths remain estimated.
+
+STEP 158
+GROUP front-steering-linkage
+ADD p6536-28 6536 darkgray
+ADD p32062-9 32062 red
+CONNECT p32062-9.axle2 -> p6536-28.axlehole1 LOCKED
+WHY Starts the front steering support linkage by fitting a red two-length axle into the cross hole of a dark-grey perpendicular connector.
+
+STEP 159
+ADD p41677-3 41677 blue
+ADD p41677-4 41677 blue
+ADD p4519-22 4519 lightgray
+CONNECT p4519-22.axle1~ -> p41677-3.axlehole1 LOCKED
+CONNECT p4519-22.axle1~ -> p41677-4.axlehole1 LOCKED
+CONNECT p32062-9.axle1~ -> p41677-3.axlehole2 LOCKED
+CONNECT p32062-9.axle1~ -> p41677-4.axlehole2 LOCKED
+WHY Builds a grey three-length axle through a pair of thin blue two-hole beams and slides their other cross holes onto the exposed red axle, producing the short offset link. Thin-beam shaft depths are estimated.
+
+STEP 160
+ADD p32140-6 32140 lightgray
+ADD p32140-7 32140 lightgray
+CONNECT p4519-22.axle2 -> p32140-6.axlehole1 LOCKED
+CONNECT p4519-22.axle3 -> p32140-7.axlehole1 LOCKED
+WHY Slides two grey L-shaped liftarms onto the projecting grey shaft in opposing orientations, spacing them beside the thin blue link.
+
+STEP 161
+ADD p18651-2 18651 black
+ADD p32013-5 32013 darkgray
+CONNECT p18651-2.axle1 -> p32013-5.axlehole1 LOCKED
+CONNECT p18651-2.pin1 -> p32140-7.hole4 STIFF
+WHY Fits a black long axle-pin into a dark-grey axle connector and presses its pin end into the end hole of the rear grey L-shaped liftarm, forming the other mounting end of the linkage.
+
+STEP 162
+ADD p2780-47 2780 black
+ADD p2780-48 2780 black
+CONNECT p2780-47.pin1 -> p32140-6.hole1 STIFF
+CONNECT p2780-48.pin1 -> p32140-6.hole3 STIFF
+WHY Inserts two black friction pins into the front grey L-shaped liftarm, leaving them ready for the red connector pair.
+
+STEP 163
+ADD p32291-1 32291 red
+ADD p32291-2 32291 red
+ADD p32062-10 32062 red
+CONNECT p32062-10.axle2 -> p32291-1.axlehole1 LOCKED
+CONNECT p32062-10.axle1 -> p32291-2.axlehole1 LOCKED
+CONNECT p2780-48.pin2 -> p32291-1.hole1 STIFF
+CONNECT p2780-47.pin2 -> p32291-2.hole2 STIFF
+END
+WHY Joins the two red perpendicular connectors with a red two-length axle in opposing orientations and presses the pair onto the two waiting black pins, completing the front steering support linkage.
+
+STEP 164
+ATTACH front-steering-linkage
+CONNECT p6558-29.pin1 -> p32013-5.hole1 STIFF
+CONNECT p6558-30.pin1 -> p6536-28.hole1 STIFF
+WHY Fits the completed linkage onto the two projecting blue upper support pins of the front axle module, seating its dark-grey connector ends at the highlighted positions while keeping the red connector pair facing forwards.
+
+STEP 165
+GROUP front-steering-tower
+ADD p48989-2 48989 lightgray
+ADD p11478-17 11478 black
+ADD p11478-18 11478 black
+CONNECT p48989-2.pin1~ -> p11478-17.hole3 STIFF
+CONNECT p48989-2.pin2~ -> p11478-17.hole1 STIFF
+CONNECT p48989-2.pin1~ -> p11478-18.hole3 STIFF
+CONNECT p48989-2.pin2~ -> p11478-18.hole1 STIFF
+WHY Starts the steering tower by pressing two thin black five-hole beams over one pin pair of the grey four-pin hub. The same pins span both half-thickness beams, so their seating depths remain estimated.
+
+STEP 166
+ADD p4519-23 4519 lightgray
+ADD p63869-12 63869 lightgray
+CONNECT p4519-23.axle2 -> p63869-12.axlehole1 LOCKED
+CONNECT p4519-23.axle3~ -> p11478-17.axlehole1 LOCKED
+CONNECT p4519-23.axle3~ -> p11478-18.axlehole1 LOCKED
+WHY Fits a grey three-length shaft through the cross hole of the grey triple connector and through the bottom cross holes of both thin black beams, with the triple connector holes facing forward. Thin-beam shaft seating is estimated.
+
+STEP 167
+ADD p32073-6 32073 yellow
+CONNECT p32073-6.axle5~ -> p11478-17.axlehole2 LOCKED
+CONNECT p32073-6.axle5~ -> p11478-18.axlehole2 LOCKED
+WHY Passes a yellow five-length shaft through the upper cross holes of the two thin black beams, leaving most of it exposed behind the tower. Thin-beam seating depths remain estimated.
+
+STEP 168
+ADD p32184-6 32184 darkgray
+ADD p60485-1 60485 yellow
+CONNECT p60485-1.axle5 -> p32184-6.axlehole1 LOCKED
+CONNECT p32073-6.axle4 -> p32184-6.axlehole2 LOCKED
+WHY Centres a dark-grey double perpendicular connector on a yellow nine-length shaft using the full-size guide, then fits its other cross hole onto the upper yellow five-length shaft behind the thin beams.
+
+STEP 169
+ADD p11478-19 11478 black
+ADD p11478-20 11478 black
+CONNECT p48989-2.pin3~ -> p11478-19.hole3 STIFF
+CONNECT p48989-2.pin4~ -> p11478-19.hole1 STIFF
+CONNECT p4519-23.axle1~ -> p11478-19.axlehole1 LOCKED
+CONNECT p32073-6.axle3~ -> p11478-19.axlehole2 LOCKED
+CONNECT p48989-2.pin3~ -> p11478-20.hole3 STIFF
+CONNECT p48989-2.pin4~ -> p11478-20.hole1 STIFF
+CONNECT p4519-23.axle1~ -> p11478-20.axlehole1 LOCKED
+CONNECT p32073-6.axle3~ -> p11478-20.axlehole2 LOCKED
+WHY Closes the opposite side of the steering tower with a second pair of thin black beams, engaging the other grey hub pin pair and both shaft ends. Both pins and shafts span half-thickness beams, so their insertion depths are estimated.
+
+STEP 170
+ADD p32054-6 32054 lightgray
+ADD p32054-7 32054 lightgray
+ADD p43093-18 43093 blue
+ADD p43093-19 43093 blue
+CONNECT p43093-18.axle1 -> p32054-6.axlehole1 LOCKED
+CONNECT p43093-19.axle1 -> p32054-7.axlehole1 LOCKED
+CONNECT p32054-6.pin1 -> p63869-12.hole1 STIFF
+CONNECT p32054-7.pin1 -> p63869-12.hole3 STIFF
+WHY Builds two grey long mounting pins with blue axle-pins locked into their bush ends, then inserts the grey pin ends into the outer holes of the lower triple connector, leaving the blue pin ends pointing forward.
+
+STEP 171
+ADD p87082-2 87082 lightgray
+ADD p87082-3 87082 lightgray
+CONNECT p87082-2.pin1~ -> p11478-17.hole2 STIFF
+CONNECT p87082-2.pin1~ -> p11478-18.hole2 STIFF
+CONNECT p87082-3.pin2~ -> p11478-19.hole2 STIFF
+CONNECT p87082-3.pin2~ -> p11478-20.hole2 STIFF
+WHY Inserts a grey double-pin connector through the middle round holes on each side of the steering tower, leaving their outer pin ends exposed for the next vertical braces. Each inner pin spans two thin beams, so its seating is estimated.
+
+STEP 172
+ADD p42003-14 42003 lightgray
+ADD p42003-15 42003 lightgray
+CONNECT p60485-1.axle4 -> p42003-14.axlehole1 LOCKED
+CONNECT p60485-1.axle6 -> p42003-15.axlehole1 LOCKED
+WHY Slides two grey axle-and-pin connectors onto the yellow nine-length cross shaft on either side of the central dark-grey connector, with their round-hole stems pointing upwards.
+
+STEP 173
+ADD p42003-16 42003 lightgray
+ADD p32184-7 32184 darkgray
+ADD p6628-13 6628 red
+CONNECT p60485-1.axle7 -> p42003-16.axlehole1 LOCKED
+CONNECT p60485-1.axle3 -> p32184-7.axlehole1 LOCKED
+CONNECT p32073-6.axle2 -> p32184-7.axlehole2 LOCKED
+CONNECT p6628-13.pin1 -> p32184-7.hole1 STIFF
+WHY Adds the outer grey axle-and-pin connector to one side of the yellow cross shaft and a dark-grey double perpendicular connector to the other side, joining the latter to the projecting yellow five-length shaft. Inserts a red towball friction pin into its round hole for a later linkage.
+
+STEP 174
+ADD p87083-5 87083 darkgray
+ADD p18575-5 18575 tan
+ADD p32270-3 32270 black
+CONNECT p87083-5.axle4~ -> p18575-5.axlehole1 LOCKED
+CONNECT p87083-5.axle3~ -> p48989-2.hole1 TURNS
+CONNECT p87083-5.axle2~ -> p32270-3.axlehole1 LOCKED
+END
+WHY Builds the tan twenty-tooth bevel gear onto a dark-grey stopped four-length shaft, passes that shaft through the grey tower hub bearing and adds a black twelve-tooth bevel gear behind it. The reference shaft is slightly displaced along its axis, so the shaft seating depths remain estimated.
+
+STEP 175
+ATTACH front-steering-tower
+CONNECT p32054-6.pin2 -> p64178-2.hole23 STIFF
+CONNECT p32054-7.pin2 -> p64178-2.hole21 STIFF
+CONNECT p3705-8.axle4 -> p48989-2.hole3 TURNS
+CONNECT p87083-5.axle1~ -> p32140-7.hole1 TURNS
+MESH p32270-3.teeth p18575-4.teeth
+WHY Mounts the completed steering tower onto the front differential frame using its two grey long pins, captures the waiting red shaft in the lower hub bearing and seats the new dark-grey shaft in the grey L-shaped rear bearing. The black twelve-tooth bevel gear meshes with the waiting tan twenty-tooth gear; the new rear bearing depth is estimated.
+
