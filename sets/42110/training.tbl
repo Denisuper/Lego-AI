@@ -6543,3 +6543,216 @@ CONNECT p32062-55.axle2 -> p59443-37.axlehole1 LOCKED
 CONNECT p15462-22.axle1 -> p59443-37.axlehole2 LOCKED
 WHY Extends the exposed lower end of the brown latch pivot axle with a black axle joiner and red two-stud axle, retaining the latch rail and leaving a red cross end for the following handle linkage.
 
+STEP 640
+ADD p4519-55 4519 lightgray
+ADD p6632-7 6632 black
+CONNECT p4519-55.axle1 -> p6632-7.axlehole2~ LOCKED
+CONNECT p4519-55.axle2 -> p64782-7.hole8~ TURNS
+CONNECT p4519-55.axle3 -> p32039-9.axlehole1~ LOCKED
+WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. Thin-lever and deep panel/socket seating are estimated.
+
+STEP 641
+ADD p32014-3 32014 black
+ADD p22961-13 22961 black
+ADD p11214-23 11214 red
+ADD p32054-42 32054 lightgray
+CONNECT p22961-13.axle1 -> p32014-3.axlehole1 LOCKED
+CONNECT p11214-23.pin1 -> p22961-13.hole1 STIFF
+CONNECT p32054-42.pin1 -> p32014-3.hole1 STIFF
+CONNECT p32062-55.axle1 -> p32014-3.axlehole2 LOCKED
+CONNECT p32054-42.pin2 -> p64782-7.hole35 STIFF
+WHY Builds the black right-angle handle connector with a perpendicular black axle connector, red axle-pin and grey long friction pin. Keys it onto the exposed red latch shaft and pushes the grey pin into the adjacent panel face bore.
+
+STEP 642
+ADD p15100-20 15100 lightgray
+ADD p2780-209 2780 black
+CONNECT p2780-209.pin1 -> p15100-20.hole1 STIFF
+CONNECT p15100-20.pin1 -> p64782-7.hole9 STIFF
+WHY Builds a grey perpendicular pin connector with a black friction pin through its transverse hole, then mounts its grey pin into the opposite lower inside panel bore.
+
+STEP 643
+ADD p40490-20 40490 darkgray
+CONNECT p11214-23.pin2 -> p40490-20.hole2 STIFF
+CONNECT p2780-209.pin2 -> p40490-20.hole8 STIFF
+WHY Fits the dark-grey nine-hole interior handle beam across the red and black pin ends in its second and eighth holes.
+
+STEP 644
+GROUP second-door-window-frame
+ADD p59443-38 59443 black
+ADD p32062-56 32062 red
+ADD p32062-57 32062 red
+CONNECT p32062-56.axle2 -> p59443-38.axlehole1 LOCKED
+CONNECT p32062-57.axle1 -> p59443-38.axlehole2 LOCKED
+WHY Starts the door window frame with a black axle extension connector and red two-stud axles in both ends.
+
+STEP 645
+ADD p32014-4 32014 black
+ADD p32062-58 32062 red
+CONNECT p32062-57.axle2 -> p32014-4.axlehole2 LOCKED
+CONNECT p32062-58.axle2 -> p32014-4.axlehole1 LOCKED
+WHY Adds the black right-angle connector over the upper red axle and inserts another red axle into its perpendicular socket, turning the frame across the top.
+
+STEP 646
+ADD p32034-29 32034 black
+ADD p32062-59 32062 red
+CONNECT p32062-58.axle1 -> p32034-29.axlehole2 LOCKED
+CONNECT p32062-59.axle1 -> p32034-29.axlehole1 LOCKED
+WHY Extends the top window frame with a black straight axle connector and red axle in its free socket.
+
+STEP 647
+ADD p59443-39 59443 black
+ADD p32062-60 32062 red
+CONNECT p32062-59.axle2 -> p59443-39.axlehole1 LOCKED
+CONNECT p32062-60.axle1 -> p59443-39.axlehole2 LOCKED
+WHY Adds another black axle extension connector and red axle to complete the straight upper window rail.
+
+STEP 648
+ADD p32126-5 32126 black
+CONNECT p32062-60.axle2 -> p32126-5.axlehole1 LOCKED
+WHY Fits the first black hinged axle connector to the red rail end with its hinge bore ready for the next sloping rail.
+
+STEP 649
+ADD p3706-14 3706 black
+ADD p32126-7 32126 black
+ADD p32126-8 32126 black
+CONNECT p3706-14.axle6 -> p32126-7.axlehole1~ LOCKED
+CONNECT p3706-14.axle1 -> p32126-8.axlehole1 LOCKED
+ADD p4274-49 4274 lightgray
+ADD p4274-50 4274 lightgray
+CONNECT p4274-49.pin2 -> p32126-5.hole1~ TURNS
+CONNECT p4274-50.pin1 -> p32126-7.hole1~ TURNS
+CONNECT p4274-49.pin1 -> p32126-8.hole1~ TURNS
+WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, adds the two grey half pins to its end hinge bores, then joins one end to the existing top rail hinge. The upper shaft and half-pin seating are estimated.
+
+STEP 650
+ADD p32126-6 32126 black
+ADD p32062-61 32062 red
+CONNECT p32062-61.axle1 -> p32126-6.axlehole1 LOCKED
+CONNECT p4274-50.pin2 -> p32126-6.hole1~ TURNS
+END
+WHY Builds the remaining lower hinge with a red axle, then joins it to the waiting grey half pin at the sloping rail end. The half-pin hinge seats are estimated.
+
+STEP 651
+ATTACH second-door-window-frame
+CONNECT p32062-56.axle1 -> p59443-36.axlehole1 LOCKED
+CONNECT p32062-61.axle2 -> p32184-47.axlehole1 LOCKED
+WHY Seats both lower red cross ends of the completed window frame into the waiting black and dark-grey latch-rail cross sockets. The two smooth half-pin joints let the sloping frame settle into the pictured outline.
+
+STEP 652
+ADD p43093-78 43093 blue
+ADD p18677-10 18677 black
+ADD p3023-3 3023 black
+ADD p30602-2 30602 black
+CONNECT p18677-10.? -> p30602-2.? STIFF
+CONNECT p3023-3.? -> p30602-2.? STIFF
+CONNECT p3023-3.? -> p18677-10.? STIFF
+CONNECT p43093-78.pin1 -> p18677-10.? STIFF
+CONNECT p43093-78.axle1 -> p6632-6.axlehole1~ LOCKED
+WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; thin-lever seating is estimated.
+
+STEP 653
+ADD p32140-30 32140 lightgray
+ADD p2780-210 2780 black
+ADD p32316-30 32316 black
+CONNECT p2780-210.pin2 -> p32316-30.hole1 STIFF
+CONNECT p2780-210.pin1 -> p32140-30.hole4 STIFF
+CONNECT p11214-23.axle1 -> p32140-30.axlehole1 LOCKED
+WHY Builds the grey interior L handle and black five-hole catch beam on a black friction pin, then keys the L cross socket onto the exposed red door-handle axle.
+
+STEP 654
+ADD p32054-43 32054 black
+ADD p32054-44 32054 black
+CONNECT p32054-43.pin1 -> p32316-28.hole3 STIFF
+CONNECT p32054-44.pin1 -> p32316-28.hole4 STIFF
+WHY Adds the two long black friction pins into adjacent holes of the forward black door hinge beam, leaving their other ends projecting for attachment to the chassis.
+
+STEP 655
+END
+ATTACH second-side-door
+CONNECT p6558-61.pin3 -> p32316-30.hole5 STIFF
+WHY Turns the vehicle around, brings the completed second side door to the opening and fits the free end hole of its lower black catch beam onto the highlighted existing blue pin. Aligns the two long black hinge pins with the forward chassis bracket for the next push.
+
+STEP 656
+CONNECT p32054-43.pin2 -> p42003-21.hole2 STIFF
+CONNECT p32054-44.pin2 -> p42003-21.hole1 STIFF
+WHY Pushes the two long black hinge pins upward into the opposite forward grey chassis bracket, retaining the second side door on its hinge beam.
+
+STEP 657
+ADD p43093-79 43093 blue
+ADD p43093-80 43093 blue
+ADD p43093-81 43093 blue
+ADD p43093-82 43093 blue
+CONNECT p43093-79.axle1 -> p32034-16.axlehole2 LOCKED
+CONNECT p43093-80.axle1 -> p59443-16.axlehole1 LOCKED
+CONNECT p43093-81.axle1 -> p32034-17.axlehole2 LOCKED
+CONNECT p43093-82.axle1 -> p59443-17.axlehole1 LOCKED
+WHY Adds four blue axle-pins, two to each side of the front engine bay, keying their cross ends into the waiting black straight and extension connectors. Their exposed round pin ends will support the front body rails.
+
+STEP 658
+GROUP front-lower-bumper
+ADD p62531-2 62531 lightgray
+ADD p15100-21 15100 lightgray
+ADD p15100-22 15100 lightgray
+ADD p15100-23 15100 lightgray
+ADD p15100-24 15100 lightgray
+CONNECT p15100-21.pin1 -> p62531-2.hole10 STIFF
+CONNECT p15100-22.pin1 -> p62531-2.hole1 STIFF
+CONNECT p15100-23.pin1 -> p62531-2.hole4 STIFF
+CONNECT p15100-24.pin1 -> p62531-2.hole9 STIFF
+WHY Starts the front lower bumper with a grey curved panel and four grey perpendicular pin connectors in the illustrated corner positions.
+
+STEP 659
+ADD p6558-129 6558 blue
+ADD p6558-130 6558 blue
+ADD p18654-41 18654 black
+ADD p18654-42 18654 black
+CONNECT p6558-129.pin2 -> p18654-42.hole1 STIFF
+CONNECT p6558-130.pin2 -> p18654-41.hole1 STIFF
+CONNECT p6558-129.pin1 -> p15100-23.hole1 STIFF
+CONNECT p6558-130.pin1 -> p15100-24.hole1 STIFF
+WHY Builds two blue long-pin and black round-spacer stacks, then inserts their inner ends into the two central grey connector round bores.
+
+STEP 660
+GROUP front-bumper-inner-support
+ADD p32054-45 32054 lightgray
+ADD p11214-25 11214 red
+CONNECT p11214-25.axle1 -> p32054-45.axlehole1 LOCKED
+WHY Starts the inner front bumper support by joining a grey long pin and red axle-pin axially through the grey pin cross socket.
+
+STEP 661
+ADD p32015-5 32015 darkgray
+CONNECT p11214-25.pin1 -> p32015-5.hole1 STIFF
+WHY Slides the dark-grey angled connector round centre bore over the red pin section, leaving both cross sockets facing sideways as shown.
+
+STEP 662
+ADD p32062-62 32062 red
+ADD p6536-53 6536 darkgray
+CONNECT p32062-62.axle2 -> p32015-5.axlehole1 LOCKED
+CONNECT p32062-62.axle1 -> p6536-53.axlehole1 LOCKED
+WHY Adds the red two-stud axle and dark-grey perpendicular cross connector to one angled cross socket, orienting its round hole for the blue bumper mounting pin.
+
+STEP 663
+ADD p32525-14 32525 darkgray
+CONNECT p11214-25.pin2 -> p32525-14.hole11 STIFF
+WHY Fits the dark-grey eleven-hole beam end over the remaining red pin section, forming the bumper support crossbar.
+
+STEP 664
+ADD p32054-46 32054 lightgray
+ADD p11214-26 11214 red
+ADD p32015-6 32015 darkgray
+ADD p32062-63 32062 red
+ADD p6536-54 6536 darkgray
+CONNECT p11214-26.axle1 -> p32054-46.axlehole1 LOCKED
+CONNECT p11214-26.pin1 -> p32015-6.hole1 STIFF
+CONNECT p32062-63.axle1 -> p32015-6.axlehole1 LOCKED
+CONNECT p32062-63.axle2 -> p6536-54.axlehole1 LOCKED
+CONNECT p11214-26.pin2 -> p32525-14.hole1 STIFF
+END
+WHY Builds the mirrored grey long-pin and red axle-pin support with a dark-grey angle connector, red axle and perpendicular cross connector, then fits it to the opposite crossbar end.
+
+STEP 665
+ATTACH front-bumper-inner-support
+CONNECT p6558-130.pin3 -> p6536-53.hole1 STIFF
+CONNECT p6558-129.pin3 -> p6536-54.hole1 STIFF
+WHY Lowers the completed inner support onto the front curved bumper panel and fits its two dark-grey perpendicular connector bores over the blue pin tails above the black spacers.
+
