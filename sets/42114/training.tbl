@@ -2521,3 +2521,205 @@ ADD p2780-118 2780 black
 CONNECT p2780-117.pin1 -> p32524-12.hole7 STIFF
 CONNECT p2780-118.pin1 -> p32524-12.hole5 STIFF
 WHY Adds two black mounting pins to the grey side rail for the following bracket attachment.
+
+STEP 212
+ADD p63869-5 63869 black
+CONNECT p2780-117.pin2 -> p63869-5.hole1 STIFF
+CONNECT p2780-118.pin2 -> p63869-5.hole3 STIFF
+END
+WHY Pins the black perpendicular bearing connector onto the grey rail, completing the first articulation side support.
+
+STEP 213
+ATTACH articulation-side-support
+CONNECT p42924-82.pin3 -> p32526-14.hole3 STIFF
+CONNECT p42924-83.pin3 -> p32526-14.hole5 STIFF
+WHY Pins the completed yellow and grey support onto the exposed ends of the turntable mounting pins.
+
+STEP 214
+GROUP opposite-articulation-side-support
+ADD p32526-15 32526 yellow
+ADD p2780-119 2780 black
+ADD p2780-120 2780 black
+ADD p2780-121 2780 black
+CONNECT p2780-119.pin2 -> p32526-15.hole1 STIFF
+CONNECT p2780-120.pin2 -> p32526-15.hole4 STIFF
+CONNECT p2780-121.pin2 -> p32526-15.hole6 STIFF
+WHY Starts the opposite yellow L-shaped support with three black mounting pins.
+
+STEP 215
+ADD p32524-13 32524 lightgray
+ADD p18654-22 18654 black
+CONNECT p2780-119.pin1 -> p32524-13.hole3 STIFF
+CONNECT p2780-120.pin1 -> p32524-13.hole6 STIFF
+CONNECT p2780-121.pin1 -> p18654-22.hole1 STIFF
+WHY Reinforces the second support with a grey seven-hole rail and covers its side pin with a black spacer sleeve.
+
+STEP 216
+ADD p2780-122 2780 black
+ADD p2780-123 2780 black
+CONNECT p2780-122.pin2 -> p32524-13.hole7 STIFF
+CONNECT p2780-123.pin2 -> p32524-13.hole5 STIFF
+WHY Adds the two black pins that will hold the opposite black bearing connector.
+
+STEP 217
+ADD p63869-6 63869 black
+CONNECT p2780-122.pin1 -> p63869-6.hole3 STIFF
+CONNECT p2780-123.pin1 -> p63869-6.hole1 STIFF
+END
+WHY Pins the black perpendicular bearing connector onto the second grey rail, completing the opposite support.
+
+STEP 218
+ATTACH opposite-articulation-side-support
+CONNECT p42924-82.pin1 -> p32526-15.hole3 STIFF
+CONNECT p42924-83.pin1 -> p32526-15.hole5 STIFF
+WHY Mounts the opposite support on the other ends of the two blue turntable pins.
+
+STEP 219
+
+WHY Swings the yellow perpendicular connector upright between the side supports so its round bearing aligns with the universal-joint input.
+
+STEP 220
+ADD p99008-15 99008 tan
+CONNECT p99008-15.axle2 -> p42003-13.hole1 TURNS
+CONNECT p99008-15.axle1 -> p59443-22.axlehole2 LOCKED
+END
+WHY Inserts the tan stopped axle through the upright yellow bearing and into the free end of the universal-joint coupler, completing this front chassis stage.
+
+STEP 221
+GROUP steering-motor-module
+ADD steering-motor 69730 darkgray
+WHY Starts the angular steering-motor module and aligns the output disc indicator with the fixed reference mark before adding the linkage.
+
+STEP 222
+ADD p2780-124 2780 black
+CONNECT p2780-124.pin2 -> steering-motor.? STIFF
+ADD p2780-125 2780 black
+CONNECT p2780-125.pin2 -> steering-motor.? STIFF
+ADD p2780-126 2780 black
+CONNECT p2780-126.pin1 -> steering-motor.? STIFF
+ADD p2780-127 2780 black
+CONNECT p2780-127.pin1 -> steering-motor.? STIFF
+ADD p2780-128 2780 black
+CONNECT p2780-128.pin2 -> steering-motor.? STIFF
+ADD p2780-129 2780 black
+CONNECT p2780-129.pin2 -> steering-motor.? STIFF
+WHY Inserts six black pins into the motor side and front mounting sockets shown in the booklet; the catalog does not name these motor sockets.
+
+STEP 223
+ADD p32316-12 32316 lightgray
+ADD p32316-13 32316 lightgray
+ADD p2780-130 2780 black
+ADD p2780-131 2780 black
+CONNECT p2780-130.pin1 -> p32316-12.hole4 STIFF
+CONNECT p2780-131.pin2 -> p32316-13.hole4 STIFF
+CONNECT p2780-126.pin2 -> p32316-12.hole1 STIFF
+CONNECT p2780-127.pin2 -> p32316-12.hole5 STIFF
+CONNECT p2780-129.pin1 -> p32316-13.hole1 STIFF
+CONNECT p2780-128.pin1 -> p32316-13.hole5 STIFF
+WHY Mounts two grey five-hole side rails on the motor pins and adds one outward black pin to each rail.
+
+STEP 224
+ADD p3673-3 3673 lightgray
+ADD p3673-4 3673 lightgray
+CONNECT p3673-3.pin1 -> steering-motor.? TURNS
+CONNECT p3673-4.pin1 -> steering-motor.? TURNS
+WHY Inserts two grey frictionless pins into the aligned output disc for the yellow steering links.
+
+STEP 225
+ADD p32140-10 32140 yellow
+ADD p32140-11 32140 yellow
+ADD p43093-15 43093 blue
+ADD p43093-16 43093 blue
+ADD p2780-132 2780 black
+CONNECT p43093-16.axle1 -> p32140-10.axlehole1 LOCKED
+CONNECT p43093-16.pin1 -> p32140-11.hole1 STIFF
+CONNECT p43093-15.axle1 -> p32140-11.axlehole1 LOCKED
+CONNECT p43093-15.pin1 -> p32140-10.hole1 STIFF
+CONNECT p2780-132.pin1 -> p32140-11.hole3 STIFF
+CONNECT p3673-3.pin2 -> p32140-10.hole4 TURNS
+WHY Builds a staggered pair of yellow L-shaped links with blue axle-pins and a black end pin, then mounts the link pair on a grey output-disc pin.
+
+STEP 226
+ADD p32140-12 32140 yellow
+ADD p32140-13 32140 yellow
+ADD p43093-17 43093 blue
+ADD p43093-18 43093 blue
+ADD p2780-133 2780 black
+CONNECT p43093-18.axle1 -> p32140-12.axlehole1 LOCKED
+CONNECT p43093-18.pin1 -> p32140-13.hole1 STIFF
+CONNECT p43093-17.axle1 -> p32140-13.axlehole1 LOCKED
+CONNECT p43093-17.pin1 -> p32140-12.hole1 STIFF
+CONNECT p2780-133.pin2 -> p32140-13.hole3 STIFF
+CONNECT p3673-4.pin2 -> p32140-12.hole4 TURNS
+WHY Builds a staggered pair of yellow L-shaped links with blue axle-pins and a black end pin, then mounts the link pair on a grey output-disc pin.
+
+STEP 227
+ADD p32523-11 32523 yellow
+ADD p3673-5 3673 lightgray
+ADD p3673-6 3673 lightgray
+ADD p3673-7 3673 lightgray
+CONNECT p3673-5.pin2 -> p32523-11.hole1 TURNS
+CONNECT p3673-6.pin2 -> p32523-11.hole3 TURNS
+CONNECT p3673-7.pin1 -> p32523-11.hole2 TURNS
+CONNECT p3673-5.pin1 -> p32140-11.hole4 TURNS
+CONNECT p3673-6.pin1 -> p32140-13.hole4 TURNS
+WHY Joins the free yellow links with a short yellow crossbeam and grey frictionless pins, leaving its centre pin ready for the next beam.
+
+STEP 228
+ADD p32316-14 32316 lightgray
+ADD p32316-15 32316 lightgray
+ADD p32556-3 32556 tan
+ADD p32556-4 32556 tan
+CONNECT p32556-3.pin2 -> p32316-14.hole1 TURNS
+CONNECT p32556-4.pin2 -> p32316-15.hole1 TURNS
+CONNECT p2780-132.pin2 -> p32316-14.hole4 STIFF
+CONNECT p2780-133.pin1 -> p32316-15.hole4 STIFF
+WHY Adds two grey steering arms to the black link pins, with long tan frictionless pins at their free ends.
+
+STEP 229
+ADD p64179-11 64179 black
+ADD p32316-16 32316 lightgray
+ADD p87082-1 44874 red
+ADD p2780-134 2780 black
+ADD p2780-135 2780 black
+ADD p2780-136 2780 black
+ADD p2780-137 2780 black
+ADD p42924-84 42924 blue
+ADD p42924-85 42924 blue
+ADD p42924-86 42924 blue
+CONNECT p2780-134.pin1 -> p64179-11.hole13 STIFF
+CONNECT p2780-135.pin1 -> p64179-11.hole5 STIFF
+CONNECT p2780-136.pin1 -> p64179-11.hole16 STIFF
+CONNECT p2780-137.pin2 -> p64179-11.hole15 STIFF
+CONNECT p87082-1.pin1 -> p64179-11.hole2 STIFF
+CONNECT p42924-84.pin1 -> p64179-11.hole1 STIFF
+CONNECT p42924-85.pin1 -> p64179-11.hole20 STIFF
+CONNECT p42924-86.pin1 -> p64179-11.hole12 STIFF
+CONNECT p2780-134.pin2 -> p32316-16.hole1 STIFF
+CONNECT p42924-86.pin2 -> p32316-16.hole5 STIFF
+CONNECT p2780-130.pin2 -> p32316-16.hole3 STIFF
+WHY Adds the first black side frame with its grey reinforcing beam, red perpendicular connector and prepared pins, joining the grey beam to the existing motor-side mounting pin.
+
+STEP 230
+ADD p64179-12 64179 black
+ADD p32316-17 32316 lightgray
+ADD p87082-2 44874 red
+ADD p2780-138 2780 black
+ADD p2780-139 2780 black
+ADD p2780-140 2780 black
+ADD p2780-141 2780 black
+ADD p42924-87 42924 blue
+ADD p42924-88 42924 blue
+ADD p42924-89 42924 blue
+CONNECT p2780-138.pin2 -> p64179-12.hole12 STIFF
+CONNECT p2780-139.pin2 -> p64179-12.hole1 STIFF
+CONNECT p2780-140.pin2 -> p64179-12.hole20 STIFF
+CONNECT p2780-141.pin1 -> p64179-12.hole14 STIFF
+CONNECT p87082-2.pin2 -> p64179-12.hole4 STIFF
+CONNECT p42924-87.pin1 -> p64179-12.hole5 STIFF
+CONNECT p42924-88.pin1 -> p64179-12.hole16 STIFF
+CONNECT p42924-89.pin1 -> p64179-12.hole13 STIFF
+CONNECT p2780-138.pin1 -> p32316-17.hole1 STIFF
+CONNECT p42924-89.pin2 -> p32316-17.hole5 STIFF
+CONNECT p2780-131.pin1 -> p32316-17.hole3 STIFF
+WHY Adds the matching black frame and grey reinforcing beam on the opposite motor side, with its red connector and exposed pins oriented as shown.
