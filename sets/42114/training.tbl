@@ -6058,3 +6058,297 @@ END
 ATTACH right-cab-mirror
 CONNECT p3706-6.axle6 -> p32039-2.axlehole1 LOCKED
 WHY Turns the model and locks the second mirror base onto the projecting black shaft beside the right cab fender.
+
+STEP 552
+ADD left-dump-actuator 40918 lightgray
+ADD p41678-1 41678 black
+ADD p32062-42 32062 red
+ADD right-dump-actuator 40918 lightgray
+ADD p41678-2 41678 black
+ADD p32062-45 32062 red
+CONNECT p32062-42.axle1 -> p41678-1.axlehole1 LOCKED
+CONNECT p32062-42.axle2 -> left-dump-actuator.? TURNS
+CONNECT p32062-45.axle1 -> p41678-2.axlehole1 LOCKED
+CONNECT p32062-45.axle2 -> right-dump-actuator.? TURNS
+WHY Retracts both long actuators as shown and pins a black split axle connector around each base with a red two-length axle. The actuator pivot interfaces are not cataloged.
+
+STEP 553
+ADD p32062-43 32062 red
+ADD p32062-44 32062 red
+ADD p32062-46 32062 red
+ADD p32062-47 32062 red
+CONNECT p32062-43.axle1 -> p61904-1.? LOCKED
+CONNECT p32062-43.axle2 -> left-dump-actuator.? TURNS
+CONNECT p32062-44.axle1 -> p61904-1.? LOCKED
+CONNECT p32062-44.axle2 -> left-dump-actuator.? TURNS
+CONNECT p32062-46.axle1 -> p61904-2.? LOCKED
+CONNECT p32062-46.axle2 -> right-dump-actuator.? TURNS
+CONNECT p32062-47.axle1 -> p61904-2.? LOCKED
+CONNECT p32062-47.axle2 -> right-dump-actuator.? TURNS
+CONNECT p4519-13.axle2~ -> left-dump-actuator.? LOCKED
+CONNECT p4519-16.axle2~ -> right-dump-actuator.? LOCKED
+WHY Seats the two actuator bases in the existing geared holders and secures both sides of each pivot with red two-length axles. The holder and actuator mounting endpoints remain unresolved; each existing holder drive shaft engages an actuator input at estimated depth.
+
+STEP 554
+GROUP dump-bed
+ADD p15458-3 15458 yellow
+ADD p2780-286 2780 black
+ADD p2780-287 2780 black
+ADD p2780-288 2780 black
+ADD p2780-289 2780 black
+ADD p42924-139 42924 blue
+ADD p42924-140 42924 blue
+CONNECT p2780-286.pin1 -> p15458-3.hole11~ STIFF
+CONNECT p2780-287.pin1 -> p15458-3.hole6~ STIFF
+CONNECT p2780-288.pin2 -> p15458-3.hole6~ STIFF
+CONNECT p2780-289.pin2 -> p15458-3.hole11~ STIFF
+CONNECT p42924-139.pin1 -> p15458-3.hole1 STIFF
+CONNECT p42924-140.pin1 -> p15458-3.hole2 STIFF
+WHY Starts the separate dump bed with a narrow yellow panel, four opposed side pins and two long blue end pins. The shared transverse panel bore depths are estimated.
+
+STEP 555
+ADD p32523-32 32523 yellow
+ADD p32523-33 32523 yellow
+CONNECT p42924-139.pin2 -> p32523-32.hole3 STIFF
+CONNECT p42924-140.pin2 -> p32523-32.hole1 STIFF
+CONNECT p42924-139.pin3 -> p32523-33.hole3 STIFF
+CONNECT p42924-140.pin3 -> p32523-33.hole1 STIFF
+WHY Stacks two yellow three-hole beams across the projecting blue pins at the end of the central panel.
+
+STEP 556
+ADD p18945-3 18945 yellow
+ADD p2780-290 2780 black
+ADD p42924-141 42924 blue
+ADD p2780-291 2780 black
+ADD p6536-26 6536 yellow
+CONNECT p2780-290.pin1 -> p18945-3.? STIFF
+CONNECT p42924-141.pin1 -> p18945-3.? STIFF
+CONNECT p2780-291.pin2 -> p18945-3.hole2 STIFF
+CONNECT p2780-291.pin1 -> p6536-26.hole1 STIFF
+CONNECT p2780-286.pin2 -> p18945-3.hole6 STIFF
+CONNECT p2780-287.pin2 -> p18945-3.hole11 STIFF
+WHY Prepares a wide yellow floor panel with a black end pin, blue long pin and yellow perpendicular connector, then fits it beside the central panel on the two projecting black side pins. Unresolved end bores remain explicit.
+
+STEP 557
+ADD p18945-4 18945 yellow
+ADD p2780-292 2780 black
+ADD p42924-142 42924 blue
+ADD p2780-293 2780 black
+ADD p6536-27 6536 yellow
+CONNECT p2780-292.pin2 -> p18945-4.? STIFF
+CONNECT p42924-142.pin1 -> p18945-4.? STIFF
+CONNECT p2780-293.pin1 -> p18945-4.hole2 STIFF
+CONNECT p2780-293.pin2 -> p6536-27.hole1 STIFF
+CONNECT p2780-289.pin1 -> p18945-4.hole6 STIFF
+CONNECT p2780-288.pin1 -> p18945-4.hole11 STIFF
+WHY Prepares a wide yellow floor panel with a black end pin, blue long pin and yellow perpendicular connector, then fits it beside the central panel on the two projecting black side pins. Unresolved end bores remain explicit.
+
+STEP 558
+ADD p64782-2 64782 yellow
+ADD p63869-9 63869 lightgray
+ADD p42924-143 42924 blue
+ADD p42924-144 42924 blue
+ADD p15100-20 65487 yellow
+CONNECT p42924-143.pin1 -> p15458-3.hole13 STIFF
+CONNECT p42924-143.pin2 -> p63869-9.hole3 STIFF
+CONNECT p42924-143.pin3 -> p64782-2.hole41 STIFF
+CONNECT p42924-144.pin1 -> p15458-3.hole14 STIFF
+CONNECT p42924-144.pin2 -> p63869-9.hole1 STIFF
+CONNECT p42924-144.pin3 -> p64782-2.hole39 STIFF
+CONNECT p15100-20.pin1 -> p64782-2.hole3 STIFF
+WHY Builds the upright yellow front wall on a grey three-hole perpendicular connector and two long blue pins, adds its yellow pin connector and fixes the wall across the end of the central floor panel.
+
+STEP 559
+GROUP dump-bed-left-slope
+ADD p32271-3 32271 yellow
+ADD p18651-21 18651 black
+ADD p2780-294 2780 black
+ADD p2780-295 2780 black
+ADD p2780-296 2780 black
+CONNECT p18651-21.axle2 -> p32271-3.axlehole1 LOCKED
+CONNECT p2780-294.pin1 -> p32271-3.hole2 STIFF
+CONNECT p2780-295.pin1 -> p32271-3.hole3 STIFF
+CONNECT p2780-296.pin1 -> p32271-3.hole5 STIFF
+WHY Starts a sloping dump-bed side with a yellow bent beam, a black axle-pin and three black friction pins.
+
+STEP 560
+ADD p18945-5 18945 yellow
+ADD p2780-297 2780 black
+CONNECT p2780-296.pin2 -> p18945-5.hole18 STIFF
+CONNECT p2780-297.pin1 -> p18945-5.hole2 STIFF
+WHY Fits the first yellow side panel onto the bent beam and adds a black pin at its opposite end for mounting to the floor.
+
+STEP 561
+ADD p18945-6 18945 yellow
+ADD p2780-298 2780 black
+CONNECT p2780-298.pin1 -> p18945-6.? STIFF
+CONNECT p2780-294.pin2 -> p18945-6.hole20~ STIFF
+CONNECT p2780-295.pin2 -> p18945-6.? STIFF
+WHY Adds the second broad yellow panel beside the first and inserts its end pin. The second beam-to-panel bore and end-pin bore are unresolved, and the first beam-to-panel insertion depth is estimated.
+
+STEP 562
+ADD p2780-299 2780 black
+CONNECT p2780-299.pin2 -> p18945-5.hole4 STIFF
+ADD p2780-300 2780 black
+CONNECT p2780-300.pin2 -> p18945-5.hole3 STIFF
+ADD p2780-301 2780 black
+CONNECT p2780-301.pin2 -> p18945-6.hole15 STIFF
+ADD p2780-302 2780 black
+CONNECT p2780-302.pin2 -> p18945-6.hole16 STIFF
+WHY Inserts four black friction pins across the adjacent panel ends for the reinforcing beam.
+
+STEP 563
+ADD p32524-23 32524 yellow
+CONNECT p2780-299.pin1 -> p32524-23.hole1 STIFF
+CONNECT p2780-300.pin1 -> p32524-23.hole3 STIFF
+CONNECT p2780-301.pin1 -> p32524-23.hole4 STIFF
+CONNECT p2780-302.pin1 -> p32524-23.hole6 STIFF
+WHY Presses a yellow seven-hole beam onto all four pins to brace the two sloping panels together.
+
+STEP 564
+END
+ATTACH dump-bed-left-slope
+CONNECT p2780-297.pin2 -> p18945-3.hole3~ STIFF
+CONNECT p2780-290.pin2 -> p18945-6.? STIFF
+WHY Turns the sloping panel assembly and fits it beside the flat floor, joining the end of the upright front-wall panel to the slope. The angled mounting depth and opposing end bore remain explicit uncertainties.
+
+STEP 565
+ADD p32140-24 32140 yellow
+ADD p18651-22 18651 black
+ADD p42924-145 42924 blue
+ADD p42924-146 42924 blue
+ADD p2780-303 2780 black
+CONNECT p18651-22.axle2 -> p32140-24.axlehole1 LOCKED
+CONNECT p18651-22.pin1 -> p64782-2.hole2 STIFF
+CONNECT p42924-145.pin2 -> p32140-24.hole1 STIFF
+CONNECT p42924-145.pin3 -> p64782-2.hole1 STIFF
+CONNECT p42924-146.pin2 -> p32140-24.hole4 STIFF
+CONNECT p42924-146.pin3 -> p32271-3.hole6 STIFF
+CONNECT p2780-303.pin1 -> p32140-24.hole3 STIFF
+CONNECT p2780-303.pin2 -> p32271-3.hole7 STIFF
+WHY Fits a yellow L-shaped brace across the open rear corner, securing the upright wall to the sloping side with a black axle-pin, black friction pin and two long blue pins.
+
+STEP 566
+GROUP dump-bed-right-slope
+ADD p32271-4 32271 yellow
+ADD p18651-23 18651 black
+ADD p2780-304 2780 black
+ADD p2780-305 2780 black
+ADD p2780-306 2780 black
+CONNECT p18651-23.axle2 -> p32271-4.axlehole1 LOCKED
+CONNECT p2780-304.pin2 -> p32271-4.hole2 STIFF
+CONNECT p2780-305.pin2 -> p32271-4.hole3 STIFF
+CONNECT p2780-306.pin2 -> p32271-4.hole5 STIFF
+WHY Starts the matching sloped side with a yellow bent beam, black axle-pin and three black friction pins, facing opposite the first side.
+
+STEP 567
+ADD p18945-7 18945 yellow
+ADD p2780-307 2780 black
+CONNECT p2780-306.pin1 -> p18945-7.hole18 STIFF
+CONNECT p2780-307.pin2 -> p18945-7.hole2 STIFF
+WHY Fits the first yellow panel onto the opposite bent beam and adds its black floor-attachment pin.
+
+STEP 568
+ADD p18945-8 18945 yellow
+ADD p2780-308 2780 black
+CONNECT p2780-308.pin2 -> p18945-8.? STIFF
+CONNECT p2780-304.pin1 -> p18945-8.hole20~ STIFF
+CONNECT p2780-305.pin1 -> p18945-8.? STIFF
+WHY Adds the second broad yellow panel beside the first and inserts its end pin. The second beam-to-panel bore and end-pin bore are unresolved, and the first beam-to-panel insertion depth is estimated.
+
+STEP 569
+ADD p2780-309 2780 black
+CONNECT p2780-309.pin1 -> p18945-7.hole4 STIFF
+ADD p2780-310 2780 black
+CONNECT p2780-310.pin1 -> p18945-7.hole3 STIFF
+ADD p2780-311 2780 black
+CONNECT p2780-311.pin1 -> p18945-8.hole15 STIFF
+ADD p2780-312 2780 black
+CONNECT p2780-312.pin1 -> p18945-8.hole16 STIFF
+WHY Inserts four black friction pins across the adjacent panel ends for the reinforcing beam.
+
+STEP 570
+ADD p32524-24 32524 yellow
+CONNECT p2780-309.pin2 -> p32524-24.hole1 STIFF
+CONNECT p2780-310.pin2 -> p32524-24.hole3 STIFF
+CONNECT p2780-311.pin2 -> p32524-24.hole4 STIFF
+CONNECT p2780-312.pin2 -> p32524-24.hole6 STIFF
+WHY Presses a yellow seven-hole beam onto all four pins to brace the two sloping panels together.
+
+STEP 571
+END
+ATTACH dump-bed-right-slope
+CONNECT p2780-307.pin1 -> p18945-4.hole3~ STIFF
+CONNECT p2780-292.pin1 -> p18945-8.? STIFF
+WHY Turns the sloping panel assembly and fits it beside the flat floor, joining the end of the upright front-wall panel to the slope. The angled mounting depth and opposing end bore remain explicit uncertainties.
+
+STEP 572
+ADD p32140-25 32140 yellow
+ADD p18651-24 18651 black
+ADD p42924-147 42924 blue
+ADD p42924-148 42924 blue
+ADD p2780-313 2780 black
+CONNECT p18651-24.axle2 -> p32140-25.axlehole1 LOCKED
+CONNECT p18651-24.pin1 -> p64782-2.hole4 STIFF
+CONNECT p42924-147.pin2 -> p32140-25.hole1 STIFF
+CONNECT p42924-147.pin3 -> p64782-2.hole5 STIFF
+CONNECT p42924-148.pin2 -> p32140-25.hole4 STIFF
+CONNECT p42924-148.pin3 -> p32271-4.hole6 STIFF
+CONNECT p2780-313.pin2 -> p32140-25.hole3 STIFF
+CONNECT p2780-313.pin1 -> p32271-4.hole7 STIFF
+WHY Fits a yellow L-shaped brace across the open rear corner, securing the upright wall to the sloping side with a black axle-pin, black friction pin and two long blue pins.
+
+STEP 573
+ADD p32523-34 32523 yellow
+ADD p2780-314 2780 black
+ADD p2780-315 2780 black
+ADD p42924-150 42924 blue
+CONNECT p2780-314.pin1 -> p32523-34.hole3 STIFF
+CONNECT p2780-315.pin1 -> p32523-34.hole1 STIFF
+CONNECT p42924-150.pin2 -> p32523-34.hole2 STIFF
+CONNECT p42924-150.pin1 -> p32271-3.hole4 STIFF
+ADD p32523-35 32523 yellow
+ADD p2780-316 2780 black
+ADD p2780-317 2780 black
+ADD p42924-149 42924 blue
+CONNECT p2780-316.pin2 -> p32523-35.hole3 STIFF
+CONNECT p2780-317.pin2 -> p32523-35.hole1 STIFF
+CONNECT p42924-149.pin2 -> p32523-35.hole2 STIFF
+CONNECT p42924-149.pin1 -> p32271-4.hole4 STIFF
+WHY Builds two three-hole yellow mounting strips, each with two black pins and a central blue pin, and fixes one to each sloping side beam.
+
+STEP 574
+ADD p32271-5 32271 yellow
+ADD p18651-25 18651 black
+ADD p11214-40 11214 red
+ADD p42924-151 42924 blue
+ADD p42924-152 42924 blue
+ADD p2780-318 2780 black
+ADD p2780-319 2780 black
+CONNECT p18651-25.axle2 -> p32271-5.axlehole2 LOCKED
+CONNECT p11214-40.pin1 -> p32271-5.hole6 STIFF
+CONNECT p42924-151.pin2 -> p32271-5.hole1 STIFF
+CONNECT p42924-151.pin3 -> p32271-3.hole1 STIFF
+CONNECT p42924-152.pin2 -> p32271-5.hole7 STIFF
+CONNECT p2780-318.pin2 -> p32271-5.hole3 STIFF
+CONNECT p2780-319.pin2 -> p32271-5.hole5 STIFF
+CONNECT p18651-21.pin1 -> p32271-5.hole2 STIFF
+WHY Adds the next yellow bent side rail with a black axle-pin at its outer tip, red axle-pin, two black pins and two blue pins, then fixes it to the first bent rail. The blue pins remain partly projecting for subsequent panels.
+
+STEP 575
+ADD p32271-6 32271 yellow
+ADD p18651-26 18651 black
+ADD p11214-39 11214 red
+ADD p42924-153 42924 blue
+ADD p42924-154 42924 blue
+ADD p2780-320 2780 black
+ADD p2780-321 2780 black
+CONNECT p18651-26.axle2 -> p32271-6.axlehole2 LOCKED
+CONNECT p11214-39.pin1 -> p32271-6.hole6 STIFF
+CONNECT p42924-153.pin2 -> p32271-6.hole1 STIFF
+CONNECT p42924-153.pin3 -> p32271-4.hole1 STIFF
+CONNECT p42924-154.pin2 -> p32271-6.hole7 STIFF
+CONNECT p2780-320.pin1 -> p32271-6.hole3 STIFF
+CONNECT p2780-321.pin1 -> p32271-6.hole5 STIFF
+CONNECT p18651-23.pin1 -> p32271-6.hole2 STIFF
+WHY Adds the next yellow bent side rail with a black axle-pin at its outer tip, red axle-pin, two black pins and two blue pins, then fixes it to the first bent rail. The blue pins remain partly projecting for subsequent panels.
