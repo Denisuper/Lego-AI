@@ -1099,3 +1099,407 @@ CONNECT p3706-2.axle2 -> p64179-7.hole18 TURNS
 CONNECT p99008-6.axle2 -> p32316-3.hole1 TURNS
 CONNECT p99008-6.axle3 -> p59443-9.axlehole2 LOCKED
 WHY Slides the completed long frame onto the four blue chassis pins and seats its red differential shaft and tan coupled drive shaft through the aligned front bearings.
+
+STEP 101
+ADD p32270-4 32270 black
+CONNECT p3706-2.axle1 -> p32270-4.axlehole1 LOCKED
+WHY Locks a black twelve-tooth gear onto the red shaft projecting into the middle frame stack.
+
+STEP 102
+ADD p32140-2 32140 lightgray
+ADD p32140-3 32140 lightgray
+ADD p39793-3 39793 yellow
+ADD p32073-3 32073 lightgray
+ADD p2780-55 2780 black
+ADD p2780-56 2780 black
+ADD p2780-57 2780 black
+ADD p2780-58 2780 black
+ADD p42924-46 42924 blue
+ADD p42924-47 42924 blue
+CONNECT p2780-55.pin2 -> p39793-3.hole8 STIFF
+CONNECT p2780-56.pin2 -> p39793-3.hole9 STIFF
+CONNECT p2780-57.pin1 -> p39793-3.hole1 STIFF
+CONNECT p2780-58.pin1 -> p39793-3.hole2 STIFF
+CONNECT p2780-55.pin1 -> p32140-2.hole3 STIFF
+CONNECT p2780-56.pin1 -> p32140-2.hole1 STIFF
+CONNECT p2780-57.pin2 -> p32140-3.hole3 STIFF
+CONNECT p2780-58.pin2 -> p32140-3.hole1 STIFF
+CONNECT p32073-3.axle5 -> p32140-2.axlehole1 LOCKED
+CONNECT p32073-3.axle1 -> p32140-3.axlehole1 LOCKED
+CONNECT p32073-3.axle3 -> p60483-2.hole1 TURNS
+CONNECT p42924-46.pin2 -> p32278-1.hole4 STIFF
+CONNECT p42924-46.pin3 -> p32140-2.hole4 STIFF
+CONNECT p42924-47.pin2 -> p32278-2.hole4 STIFF
+CONNECT p42924-47.pin3 -> p32140-3.hole4 STIFF
+WHY Builds the yellow connector block between two grey L beams, joins their cross holes with a grey five-length axle and pins the assembly over the long frame's upright round bearing.
+
+STEP 103
+ADD p32523-3 32523 yellow
+ADD p32523-4 32523 yellow
+CONNECT p42924-46.pin1 -> p32523-3.hole1 STIFF
+CONNECT p42924-32.pin1 -> p32523-3.hole2 STIFF
+CONNECT p42924-31.pin1 -> p32523-3.hole3 STIFF
+CONNECT p42924-47.pin1 -> p32523-4.hole1 STIFF
+CONNECT p42924-37.pin1 -> p32523-4.hole2 STIFF
+CONNECT p42924-38.pin1 -> p32523-4.hole3 STIFF
+WHY Caps both sets of three projecting blue chassis pins with yellow three-hole beams to retain the long frame and its new cross brace.
+
+STEP 104
+ADD p32278-5 32278 yellow
+ADD p32278-6 32278 yellow
+ADD p42924-48 42924 blue
+ADD p42924-49 42924 blue
+ADD p42924-50 42924 blue
+ADD p42924-51 42924 blue
+ADD p42924-52 42924 blue
+ADD p42924-53 42924 blue
+ADD p2780-59 2780 black
+ADD p2780-60 2780 black
+ADD p2780-61 2780 black
+ADD p2780-62 2780 black
+ADD p2780-63 2780 black
+ADD p2780-64 2780 black
+ADD p42003-7 42003 black
+ADD p42003-8 42003 black
+ADD p42003-9 42003 black
+ADD p42003-10 42003 black
+CONNECT p42924-48.pin2 -> p32278-5.hole1 STIFF
+CONNECT p42924-49.pin2 -> p32278-5.hole2 STIFF
+CONNECT p42924-50.pin2 -> p32278-5.hole13 STIFF
+CONNECT p2780-59.pin2 -> p32278-5.hole14 STIFF
+CONNECT p2780-60.pin2 -> p32278-5.hole3 STIFF
+CONNECT p2780-61.pin1 -> p32278-5.hole15 STIFF
+CONNECT p2780-60.pin1 -> p42003-7.hole1 STIFF
+CONNECT p42924-49.pin1 -> p42003-7.hole2 STIFF
+CONNECT p2780-59.pin1 -> p42003-8.hole1 STIFF
+CONNECT p42924-50.pin1 -> p42003-8.hole2 STIFF
+CONNECT p42924-48.pin3 -> p41239-1.hole9 STIFF
+CONNECT p42924-49.pin3 -> p41239-1.hole10 STIFF
+CONNECT p42924-50.pin3 -> p40490-3.hole1 STIFF
+CONNECT p2780-61.pin2 -> p40490-3.hole3 STIFF
+CONNECT p2780-44.pin2 -> p32278-5.hole4 STIFF
+CONNECT p42924-51.pin2 -> p32278-6.hole1 STIFF
+CONNECT p42924-52.pin2 -> p32278-6.hole2 STIFF
+CONNECT p42924-53.pin2 -> p32278-6.hole13 STIFF
+CONNECT p2780-62.pin2 -> p32278-6.hole14 STIFF
+CONNECT p2780-63.pin2 -> p32278-6.hole3 STIFF
+CONNECT p2780-64.pin1 -> p32278-6.hole15 STIFF
+CONNECT p2780-63.pin1 -> p42003-9.hole1 STIFF
+CONNECT p42924-52.pin1 -> p42003-9.hole2 STIFF
+CONNECT p2780-62.pin1 -> p42003-10.hole1 STIFF
+CONNECT p42924-53.pin1 -> p42003-10.hole2 STIFF
+CONNECT p42924-51.pin3 -> p32278-1.hole11 STIFF
+CONNECT p42924-52.pin3 -> p32278-1.hole12 STIFF
+CONNECT p42924-53.pin3 -> p40490-2.hole1 STIFF
+CONNECT p2780-64.pin2 -> p40490-2.hole3 STIFF
+CONNECT p42924-33.pin1 -> p32278-6.hole5 STIFF
+WHY Builds the two opposite-side yellow fifteen-hole rails with four black axle-bearing blocks and pins both rails along the grey chassis and gearbox frames.
+
+STEP 105
+ADD differential-case-2 65414 lightgray
+ADD differential-ring-2 65413 red
+ADD differential-bevel-6 6589 tan
+ADD differential-bevel-7 6589 tan
+ADD differential-bevel-8 6589 tan
+ADD differential-bevel-9 6589 tan
+ADD differential-bevel-10 6589 tan
+CONNECT differential-bevel-6.axlehole1 -> differential-case-2.? TURNS
+CONNECT differential-bevel-7.axlehole1 -> differential-case-2.? TURNS
+CONNECT differential-bevel-8.axlehole1 -> differential-case-2.? TURNS
+CONNECT differential-bevel-9.axlehole1 -> differential-case-2.? TURNS
+CONNECT differential-bevel-10.axlehole1 -> differential-case-2.? TURNS
+CONNECT differential-ring-2.? -> differential-case-2.? LOCKED
+MESH p32270-3.teeth differential-ring-2.teeth
+RATIO p32270-3 differential-ring-2 3/7
+WHY Builds the second five-bevel differential in its grey housing, clips on the red twenty-eight-tooth crown and seats it inside the middle frame with the crown facing the black input gear.
+
+STEP 106
+GROUP left-middle-wheel-hub
+ADD p92908-1 92908 lightgray
+ADD p92909-1 92909 darkgray
+CONNECT p92909-1.? -> p92908-1.hole6 TURNS
+WHY Seats the dark grey rotating wheel hub in the grey portal housing; the catalog does not distinguish its free rotating neck from the mounting pins.
+END
+GROUP right-middle-wheel-hub
+ADD p92908-2 92908 lightgray
+ADD p92909-2 92909 darkgray
+CONNECT p92909-2.? -> p92908-2.hole6 TURNS
+END
+
+STEP 107
+ADD p87083-3 87083 darkgray
+ADD p87083-4 87083 darkgray
+ADD p3648b-2 3648b darkgray
+ADD p3648b-3 3648b darkgray
+CONNECT p87083-3.axle1~ -> p92909-1.axlehole1 LOCKED
+CONNECT p87083-3.axle2~ -> p92908-1.hole6 TURNS
+CONNECT p87083-3.axle3 -> p3648b-2.axlehole1 LOCKED
+CONNECT p87083-4.axle1~ -> p92909-2.axlehole1 LOCKED
+CONNECT p87083-4.axle2~ -> p92908-2.hole6 TURNS
+CONNECT p87083-4.axle3 -> p3648b-3.axlehole1 LOCKED
+WHY Inserts a stopped dark grey four-length axle through each portal hub and locks a twenty-four-tooth gear inside each housing.
+
+STEP 108
+ADD p99008-7 99008 tan
+ADD p99008-8 99008 tan
+ADD p18654-9 18654 darkgray
+ADD p18654-10 18654 darkgray
+ADD p10928-2 10928 darkgray
+ADD p10928-3 10928 darkgray
+ADD p59443-14 59443 yellow
+ADD p59443-15 59443 yellow
+ADD p4519-8 4519 yellow
+ADD p4519-9 4519 yellow
+CONNECT p4519-8.axle3 -> p59443-14.axlehole2 LOCKED
+CONNECT p99008-7.axle1 -> p59443-14.axlehole1 LOCKED
+CONNECT p99008-7.pin1 -> p18654-9.hole1 TURNS
+CONNECT p99008-7.axle2~ -> p10928-2.axlehole1 LOCKED
+CONNECT p99008-7.axle2~ -> p92908-1.hole2 TURNS
+CONNECT p4519-9.axle3 -> p59443-15.axlehole2 LOCKED
+CONNECT p99008-8.axle1 -> p59443-15.axlehole1 LOCKED
+CONNECT p99008-8.pin1 -> p18654-10.hole1 TURNS
+CONNECT p99008-8.axle2~ -> p10928-3.axlehole1 LOCKED
+CONNECT p99008-8.axle2~ -> p92908-2.hole2 TURNS
+MESH p10928-2.teeth p3648b-2.teeth
+MESH p10928-3.teeth p3648b-3.teeth
+RATIO p10928-2 p3648b-2 1/3
+RATIO p10928-3 p3648b-3 1/3
+WHY Adds each hub's tan input shaft with a dark grey spacer, yellow coupler and three-length axle, meshing its eight-tooth pinion with the twenty-four-tooth wheel gear.
+
+STEP 109
+ATTACH left-middle-wheel-hub
+ATTACH right-middle-wheel-hub
+CONNECT p42924-48.pin1 -> p92908-1.hole3 STIFF
+CONNECT p42924-51.pin1 -> p92908-1.hole4 STIFF
+CONNECT p42924-39.pin1 -> p92908-2.hole3 STIFF
+CONNECT p42924-42.pin1 -> p92908-2.hole4 STIFF
+CONNECT p4519-8.axle2 -> p64179-7.hole11 TURNS
+CONNECT p4519-9.axle2 -> p64179-7.hole10 TURNS
+CONNECT p4519-8.axle1 -> differential-bevel-6.axlehole1 LOCKED
+CONNECT p4519-9.axle1 -> differential-bevel-10.axlehole1 LOCKED
+WHY Fits both geared wheel hubs onto the side-rail pins and engages their yellow input axles with the second differential's opposite output bevel gears.
+
+STEP 110
+ADD p32140-4 32140 lightgray
+ADD p32140-5 32140 lightgray
+ADD p11214-3 11214 red
+ADD p11214-4 11214 red
+ADD p18654-11 18654 darkgray
+ADD p18654-12 18654 darkgray
+ADD p2780-65 2780 black
+ADD p2780-66 2780 black
+CONNECT p11214-3.axle1 -> p32140-4.axlehole1 LOCKED
+CONNECT p11214-3.pin1 -> p18654-11.hole1 STIFF
+CONNECT p2780-65.pin1 -> p32140-4.hole3 STIFF
+CONNECT p11214-4.axle1 -> p32140-5.axlehole1 LOCKED
+CONNECT p11214-4.pin1 -> p18654-12.hole1 STIFF
+CONNECT p2780-66.pin2 -> p32140-5.hole3 STIFF
+CONNECT p11214-3.pin2 -> p92908-1.hole1 STIFF
+CONNECT p11214-4.pin2 -> p92908-2.hole1 STIFF
+CONNECT p2780-65.pin2 -> p64179-6.hole8 STIFF
+CONNECT p2780-66.pin1 -> p64179-6.hole9 STIFF
+WHY Builds two grey L-shaped upper hub supports with red axle-pins, dark grey sleeves and black mounting pins, then pins them between the wheel housings and middle frame.
+
+STEP 111
+ADD p15462-5 15462 brown
+ADD p15462-6 15462 brown
+CONNECT p15462-5.axle5 -> p32525-7.hole1 TURNS
+CONNECT p15462-5.axle4 -> p42003-9.axlehole1 LOCKED
+CONNECT p15462-5.axle3 -> p92908-1.axlehole3 LOCKED
+CONNECT p15462-5.axle2 -> p42003-7.axlehole1 LOCKED
+CONNECT p15462-5.axle1 -> p32523-1.hole1 TURNS
+CONNECT p15462-6.axle5 -> p32525-7.hole11 TURNS
+CONNECT p15462-6.axle4 -> p42003-1.axlehole1 LOCKED
+CONNECT p15462-6.axle3 -> p92908-2.axlehole3 LOCKED
+CONNECT p15462-6.axle2 -> p42003-3.axlehole1 LOCKED
+CONNECT p15462-6.axle1 -> p32523-2.hole3 TURNS
+WHY Drops the two stopped brown five-length axles through the upper crossbeam and side-bearing blocks to retain the portal housings vertically.
+
+STEP 112
+GROUP gearbox-side-bracket-1
+ADD p32009-1 32009 yellow
+ADD p32526-7 32526 yellow
+ADD p6632-1 6632 yellow
+ADD p11214-5 11214 red
+ADD p18651-6 18651 black
+ADD p6575-1 6575 darkgray
+CONNECT p11214-5.axle1 -> p6575-1.axlehole4 LOCKED
+CONNECT p11214-5.axle1 -> p6632-1.axlehole1 LOCKED
+CONNECT p11214-5.pin1 -> p32009-1.hole7 STIFF
+CONNECT p11214-5.pin2 -> p32526-7.hole7 STIFF
+CONNECT p18651-6.axle2 -> p32009-1.axlehole2 LOCKED
+CONNECT p18651-6.axle1 -> p6632-1.axlehole2 LOCKED
+CONNECT p18651-6.pin1 -> p32526-7.hole5 STIFF
+END
+ATTACH gearbox-side-bracket-1
+CONNECT p2780-15.pin2 -> p32526-7.hole1 STIFF
+CONNECT p2780-14.pin2 -> p32526-7.hole2 STIFF
+CONNECT p42924-12.pin1 -> p32009-1.hole1 STIFF
+CONNECT p42924-14.pin1 -> p32009-1.hole3 STIFF
+WHY Builds and mounts a yellow side bracket around the gearbox, with a dark grey oval connector and thin yellow cap to support the later cross shaft.
+
+STEP 113
+GROUP gearbox-side-bracket-2
+ADD p32009-2 32009 yellow
+ADD p32526-8 32526 yellow
+ADD p6632-2 6632 yellow
+ADD p11214-6 11214 red
+ADD p18651-7 18651 black
+ADD p6575-2 6575 darkgray
+CONNECT p11214-6.axle1 -> p6575-2.axlehole4 LOCKED
+CONNECT p11214-6.axle1 -> p6632-2.axlehole1 LOCKED
+CONNECT p11214-6.pin1 -> p32009-2.hole7 STIFF
+CONNECT p11214-6.pin2 -> p32526-8.hole7 STIFF
+CONNECT p18651-7.axle2 -> p32009-2.axlehole2 LOCKED
+CONNECT p18651-7.axle1 -> p6632-2.axlehole2 LOCKED
+CONNECT p18651-7.pin1 -> p32526-8.hole5 STIFF
+END
+ATTACH gearbox-side-bracket-2
+CONNECT p2780-12.pin1 -> p32526-8.hole1 STIFF
+CONNECT p2780-13.pin1 -> p32526-8.hole2 STIFF
+CONNECT p42924-10.pin1 -> p32009-2.hole1 STIFF
+CONNECT p42924-8.pin1 -> p32009-2.hole3 STIFF
+WHY Builds and mounts a yellow side bracket around the gearbox, with a dark grey oval connector and thin yellow cap to support the later cross shaft.
+
+STEP 114
+GROUP left-front-wheel-hub
+ADD p92908-3 92908 lightgray
+ADD p92909-3 92909 darkgray
+CONNECT p92909-3.? -> p92908-3.hole6 TURNS
+END
+GROUP right-front-wheel-hub
+ADD p92908-4 92908 lightgray
+ADD p92909-4 92909 darkgray
+CONNECT p92909-4.? -> p92908-4.hole6 TURNS
+END
+WHY Seats each wheel hub in its portal housing so the wheel can rotate; the catalog does not distinguish the free hub neck from its wheel-mounting pins, so that endpoint remains unknown.
+
+STEP 115
+ADD p87083-5 87083 darkgray
+ADD p3648b-4 3648b darkgray
+CONNECT p87083-5.axle1 -> p92909-3.axlehole1~ LOCKED
+CONNECT p87083-5.axle2 -> p92908-3.hole6~ TURNS
+CONNECT p87083-5.axle3 -> p3648b-4.axlehole1 LOCKED
+ADD p87083-6 87083 darkgray
+ADD p3648b-5 3648b darkgray
+CONNECT p87083-6.axle1 -> p92909-4.axlehole1~ LOCKED
+CONNECT p87083-6.axle2 -> p92908-4.hole6~ TURNS
+CONNECT p87083-6.axle3 -> p3648b-5.axlehole1 LOCKED
+WHY Slides a stopped four-length axle through each front hub and locks a 24-tooth output gear onto its inner end; concealed shaft depths remain estimated.
+
+STEP 116
+ADD p99008-9 99008 tan
+ADD p18654-13 18654 darkgray
+ADD p10928-4 10928 darkgray
+ADD p59443-16 59443 yellow
+CONNECT p99008-9.axle1 -> p59443-16.axlehole1 LOCKED
+CONNECT p99008-9.pin1 -> p18654-13.hole1 TURNS
+CONNECT p99008-9.axle2 -> p10928-4.axlehole1~ LOCKED
+CONNECT p99008-9.axle2 -> p92908-3.hole2~ TURNS
+MESH p10928-4.teeth p3648b-4.teeth
+RATIO p10928-4 p3648b-4 1/3
+ADD p99008-10 99008 tan
+ADD p18654-14 18654 darkgray
+ADD p10928-5 10928 darkgray
+ADD p59443-17 59443 yellow
+CONNECT p99008-10.axle1 -> p59443-17.axlehole1 LOCKED
+CONNECT p99008-10.pin1 -> p18654-14.hole1 TURNS
+CONNECT p99008-10.axle2 -> p10928-5.axlehole1~ LOCKED
+CONNECT p99008-10.axle2 -> p92908-4.hole2~ TURNS
+MESH p10928-5.teeth p3648b-5.teeth
+RATIO p10928-5 p3648b-5 1/3
+WHY Builds both front portal inputs with tan axles, sleeves and yellow couplers; the eight-tooth gears drive the 24-tooth hub gears at a three-to-one reduction.
+
+STEP 117
+ATTACH left-front-wheel-hub
+CONNECT p2780-17.pin1 -> p92908-3.hole3 STIFF
+CONNECT p2780-16.pin1 -> p92908-3.hole4 STIFF
+CONNECT p4519-1.axle3 -> p59443-16.axlehole2 LOCKED
+ATTACH right-front-wheel-hub
+CONNECT p2780-18.pin1 -> p92908-4.hole3 STIFF
+CONNECT p2780-19.pin1 -> p92908-4.hole4 STIFF
+CONNECT p4519-2.axle1 -> p59443-17.axlehole2 LOCKED
+WHY Pins both front portal housings onto the chassis and couples their inputs to the existing differential output axles.
+
+STEP 118
+ADD p15462-7 15462 brown
+CONNECT p15462-7.axle1 -> p32525-2.hole1 TURNS
+CONNECT p15462-7.axle2 -> p42003-8.axlehole1 LOCKED
+CONNECT p15462-7.axle3 -> p92908-3.axlehole3 LOCKED
+CONNECT p15462-7.axle4 -> p42003-10.axlehole1 LOCKED
+CONNECT p15462-7.axle5 -> p32525-1.hole1 TURNS
+ADD p15462-8 15462 brown
+CONNECT p15462-8.axle1 -> p32525-2.hole11 TURNS
+CONNECT p15462-8.axle2 -> p42003-4.axlehole1 LOCKED
+CONNECT p15462-8.axle3 -> p92908-4.axlehole3 LOCKED
+CONNECT p15462-8.axle4 -> p42003-2.axlehole1 LOCKED
+CONNECT p15462-8.axle5 -> p32525-1.hole11 TURNS
+WHY Retains the front portal housings with two stopped brown five-length axles passing through the yellow crossbeams and black side-bearing blocks.
+
+STEP 119
+ADD p32140-6 32140 lightgray
+ADD p2780-67 2780 black
+ADD p15462-9 15462 brown
+ADD p3713-5 3713 lightgray
+CONNECT p2780-67.pin1 -> p32140-6.hole3 STIFF
+CONNECT p15462-9.axle5 -> p32140-6.axlehole1 LOCKED
+CONNECT p15462-9.axle4 -> p3713-5.axlehole1 LOCKED
+CONNECT p15462-9.axle3 -> p92908-4.hole1 TURNS
+CONNECT p2780-67.pin2 -> p64179-1.hole13 STIFF
+ADD p32140-7 32140 lightgray
+ADD p2780-68 2780 black
+ADD p15462-10 15462 brown
+ADD p3713-6 3713 lightgray
+CONNECT p2780-68.pin2 -> p32140-7.hole3 STIFF
+CONNECT p15462-10.axle5 -> p32140-7.axlehole1 LOCKED
+CONNECT p15462-10.axle4 -> p3713-6.axlehole1 LOCKED
+CONNECT p15462-10.axle3 -> p92908-3.hole1 TURNS
+CONNECT p2780-68.pin1 -> p64179-1.hole12 STIFF
+WHY Builds the lower grey hub supports and passes their stopped brown axles through bushes into the portal housings, then pins the supports onto the lower frame.
+
+STEP 120
+ADD p3713-7 3713 lightgray
+ADD p3713-8 3713 lightgray
+CONNECT p15462-9.axle2 -> p3713-7.axlehole1 LOCKED
+CONNECT p15462-10.axle2 -> p3713-8.axlehole1 LOCKED
+WHY Slides two grey bushes onto the exposed brown axles to space the upper hub supports.
+
+STEP 121
+ADD p32140-8 32140 lightgray
+ADD p2780-69 2780 black
+CONNECT p2780-69.pin1 -> p32140-8.hole3 STIFF
+CONNECT p15462-10.axle1 -> p32140-8.axlehole1 LOCKED
+CONNECT p2780-69.pin2 -> p64179-3.hole13 STIFF
+ADD p32140-9 32140 lightgray
+ADD p2780-70 2780 black
+CONNECT p2780-70.pin1 -> p32140-9.hole3 STIFF
+CONNECT p15462-9.axle1 -> p32140-9.axlehole1 LOCKED
+CONNECT p2780-70.pin2 -> p64179-3.hole12 STIFF
+WHY Caps the two brown hub-support axles with grey L-shaped beams and pins those beams to the upper frame.
+
+STEP 122
+ADD p32526-9 32526 yellow
+ADD p2780-71 2780 black
+ADD p2780-72 2780 black
+ADD p32054-6 32054 lightgray
+ADD p42924-54 42924 blue
+CONNECT p2780-71.pin2 -> p32526-9.hole7 STIFF
+CONNECT p2780-72.pin1 -> p32526-9.hole1 STIFF
+CONNECT p32054-6.pin1 -> p32526-9.hole5 STIFF
+CONNECT p42924-54.pin2 -> p32526-9.hole3 STIFF
+CONNECT p2780-71.pin1 -> p32278-2.hole1 STIFF
+CONNECT p2780-72.pin2 -> p41239-2.hole3 STIFF
+CONNECT p42924-54.pin3 -> p41239-2.hole1 STIFF
+ADD p32526-10 32526 yellow
+ADD p2780-73 2780 black
+ADD p2780-74 2780 black
+ADD p32054-7 32054 lightgray
+ADD p42924-55 42924 blue
+CONNECT p2780-73.pin1 -> p32526-10.hole7 STIFF
+CONNECT p2780-74.pin2 -> p32526-10.hole1 STIFF
+CONNECT p32054-7.pin1 -> p32526-10.hole5 STIFF
+CONNECT p42924-55.pin2 -> p32526-10.hole3 STIFF
+CONNECT p2780-73.pin2 -> p32278-1.hole1 STIFF
+CONNECT p2780-74.pin1 -> p41239-1.hole3 STIFF
+CONNECT p42924-55.pin3 -> p41239-1.hole1 STIFF
+WHY Adds matching yellow L-shaped braces on both sides of the long frame, leaving grey and blue pin ends ready for the next rails.
