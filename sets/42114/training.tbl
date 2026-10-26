@@ -4279,3 +4279,298 @@ ADD p4274-19 4274 blue
 CONNECT p4274-18.pin2 -> p15458-1.hole16~ TURNS
 CONNECT p4274-19.pin2 -> p15458-2.hole16~ TURNS
 WHY Adds a blue half pin at the front end of each roof panel to receive the narrow front trim assembly; the end-hole selection is estimated.
+
+STEP 375
+GROUP roof-right-edge-trim
+ADD roof-right-base 4477 yellow
+ADD roof-right-slope-1 15672 yellow
+CONNECT roof-right-slope-1.? -> roof-right-base.? STIFF
+WHY Starts the raised right roof-edge trim with a yellow ten-stud plate and a sloped end brick. Stud interfaces are not named in the catalog.
+
+STEP 376
+ADD roof-right-inner-plate 3666 yellow
+CONNECT roof-right-inner-plate.? -> roof-right-base.? STIFF
+WHY Adds a six-stud yellow plate along the middle of the long edge plate, leaving the first two base studs exposed.
+
+STEP 377
+ADD roof-right-lower-plate 3623 yellow
+ADD roof-right-spacer-1 3024 yellow
+CONNECT roof-right-lower-plate.? -> roof-right-base.? STIFF
+CONNECT roof-right-spacer-1.? -> roof-right-base.? STIFF
+WHY Adds a three-stud yellow plate across the exposed end and a one-stud spacer underneath that end of the roof trim.
+
+STEP 378
+ADD roof-right-end-plate 3023 yellow
+ADD roof-right-slope-2 15672 yellow
+CONNECT roof-right-end-plate.? -> roof-right-slope-1.? STIFF
+CONNECT roof-right-slope-2.? -> roof-right-end-plate.? STIFF
+WHY Raises the sloped end with a two-stud plate and another sloped brick, forming the stepped roof corner.
+
+STEP 379
+ADD roof-right-spacer-2 3024 yellow
+ADD p6541-1 6541 yellow
+ADD roof-right-brick-2 3004 yellow
+CONNECT roof-right-spacer-2.? -> roof-right-slope-2.? STIFF
+CONNECT p6541-1.? -> roof-right-inner-plate.? STIFF
+CONNECT roof-right-brick-2.? -> roof-right-inner-plate.? STIFF
+WHY Adds a one-stud spacer, a yellow Technic brick and a two-stud brick along the inner edge, keeping the Technic pin hole facing outward.
+
+STEP 380
+ADD p6541-2 6541 yellow
+ADD roof-right-stud-brick 87087 yellow
+ADD roof-right-brick-3 3622 yellow
+CONNECT p6541-2.? -> roof-right-lower-plate.? STIFF
+CONNECT roof-right-stud-brick.? -> roof-right-lower-plate.? STIFF
+CONNECT roof-right-brick-3.? -> roof-right-inner-plate.? STIFF
+WHY Builds the remaining upright edge with a second Technic brick, an outward-facing side-stud brick and a three-stud brick.
+
+STEP 381
+ADD roof-right-slope-3 15672 yellow
+ADD roof-right-top-plate-3 3623 yellow
+ADD roof-right-top-plate-4 3710 yellow
+CONNECT roof-right-slope-3.? -> roof-right-slope-2.? STIFF
+CONNECT roof-right-top-plate-3.? -> roof-right-brick-2.? STIFF
+CONNECT roof-right-top-plate-3.? -> roof-right-brick-3.? STIFF
+CONNECT roof-right-top-plate-4.? -> roof-right-brick-3.? STIFF
+CONNECT roof-right-top-plate-4.? -> p6541-2.? STIFF
+WHY Adds the final sloped corner and overlaps three- and four-stud plates across the upright bricks to bind the roof-edge trim together.
+
+STEP 382
+ADD roof-right-upper-plate-6 3666 yellow
+ADD roof-right-upper-plate-2 3023 yellow
+CONNECT roof-right-upper-plate-6.? -> roof-right-top-plate-3.? STIFF
+CONNECT roof-right-upper-plate-6.? -> roof-right-top-plate-4.? STIFF
+CONNECT roof-right-upper-plate-2.? -> roof-right-top-plate-4.? STIFF
+WHY Caps the edge with a six-stud plate and a two-stud end plate, producing an even upper row for the tiles and handrail clips.
+
+STEP 383
+ADD roof-right-tile-1 3070b yellow
+ADD roof-right-tile-2 3070b yellow
+ADD roof-edge-clip-4 15712 yellow
+ADD roof-edge-clip-5 15712 yellow
+ADD roof-right-long-tile 2431 yellow
+CONNECT roof-right-tile-1.? -> roof-right-upper-plate-2.? STIFF
+CONNECT roof-right-tile-2.? -> roof-right-upper-plate-6.? STIFF
+CONNECT roof-edge-clip-4.? -> roof-right-upper-plate-2.? STIFF
+CONNECT roof-edge-clip-5.? -> roof-right-upper-plate-6.? STIFF
+CONNECT roof-right-long-tile.? -> roof-right-upper-plate-6.? STIFF
+WHY Finishes the upper edge with two single-stud tiles, a four-stud tile and two yellow clips, leaving the clips open for the orange handrail.
+
+STEP 384
+END
+ATTACH roof-right-edge-trim
+CONNECT roof-right-base.? -> p4274-9.? STIFF
+CONNECT roof-right-base.? -> p4274-8.? STIFF
+CONNECT roof-right-base.? -> p4274-10.? STIFF
+WHY Turns the roof over and presses the completed raised edge onto the three exposed half-pin studs on the first panel. The exact underside clutch locations are uncataloged.
+
+STEP 385
+GROUP roof-front-edge-trim
+ADD roof-front-base 3666 yellow
+ADD roof-front-plate-3 3623 yellow
+ADD roof-front-plate-4 3710 yellow
+ADD roof-front-spacer 3024 yellow
+ADD roof-front-slope-1 28192 yellow
+ADD roof-front-slope-2 28192 yellow
+ADD roof-edge-clip-6 15712 yellow
+ADD roof-edge-clip-7 15712 yellow
+ADD roof-front-tile 63864 yellow
+CONNECT roof-front-plate-3.? -> roof-front-base.? STIFF
+CONNECT roof-front-plate-4.? -> roof-front-base.? STIFF
+CONNECT roof-front-spacer.? -> roof-front-base.? STIFF
+CONNECT roof-front-slope-1.? -> roof-front-base.? STIFF
+CONNECT roof-front-slope-2.? -> roof-front-plate-3.? STIFF
+CONNECT roof-edge-clip-6.? -> roof-front-plate-4.? STIFF
+CONNECT roof-edge-clip-7.? -> roof-front-plate-3.? STIFF
+CONNECT roof-front-tile.? -> roof-front-plate-4.? STIFF
+END
+ATTACH roof-front-edge-trim
+CONNECT roof-front-base.? -> p4274-18.? STIFF
+CONNECT roof-front-plate-4.? -> p4274-19.? STIFF
+WHY Builds the narrow front roof trim from overlapping yellow plates, two studless sloped ends, a smooth tile and two handrail clips, then presses it onto the two front half-pin studs. All stud-clutch interfaces remain unnamed.
+
+STEP 386
+ADD roof-handrail-1 75c07 orange
+CONNECT roof-handrail-1.? -> roof-edge-clip-1.? STIFF
+CONNECT roof-handrail-1.? -> roof-edge-clip-2.? STIFF
+CONNECT roof-handrail-1.? -> roof-edge-clip-3.? STIFF
+ADD roof-handrail-2 75c07 orange
+CONNECT roof-handrail-2.? -> roof-edge-clip-4.? STIFF
+CONNECT roof-handrail-2.? -> roof-edge-clip-5.? STIFF
+ADD roof-handrail-3 75c07 orange
+CONNECT roof-handrail-3.? -> roof-edge-clip-6.? STIFF
+CONNECT roof-handrail-3.? -> roof-edge-clip-7.? STIFF
+WHY Clips three short orange rigid hoses onto the yellow clips along both sides and the front of the roof to form its perimeter handrails.
+
+STEP 387
+END
+ATTACH cab-roof
+CONNECT p2780-216.pin1 -> p15458-1.hole3 STIFF
+CONNECT p2780-214.pin1 -> p15458-2.hole14 STIFF
+CONNECT p2780-215.pin1 -> p6541-2.hole1 STIFF
+CONNECT p2780-217.pin1 -> p6541-1.hole1 STIFF
+CONNECT p3706-7.axle3 -> p15458-1.hole4 TURNS
+WHY Lowers the completed roof onto all four black mounting pins while passing the long black button-control axle through the roof panel.
+
+STEP 388
+ADD p18654-30 18654 black
+ADD beacon-base 4032a black
+ADD beacon-body 3941 transorange
+ADD beacon-cap 2654 transorange
+CONNECT p3706-7.axle4 -> p18654-30.hole1 TURNS
+CONNECT beacon-body.? -> beacon-base.? STIFF
+CONNECT beacon-cap.? -> beacon-body.? STIFF
+CONNECT p3706-7.axle5~ -> beacon-base.? LOCKED
+WHY Builds the orange roof beacon on a black round plate, slides a black spacer over the control axle and mounts the beacon above it so the beacon can operate the hub-button linkage. The beacon clutch and axle interfaces are uncataloged.
+
+STEP 389
+GROUP engine-side-pipework
+ADD p15100-8 65487 black
+ADD p62462-8 62462 metallicsilver
+ADD p62462-9 62462 metallicsilver
+ADD p11214-25 11214 red
+ADD p18654-31 18654 metallicsilver
+ADD p43093-46 43093 blue
+ADD p43093-47 43093 blue
+ADD p43093-48 43093 blue
+ADD engine-pipe-elbow-1 25214 metallicsilver
+ADD engine-pipe-elbow-2 25214 metallicsilver
+CONNECT p43093-46.axle1 -> engine-pipe-elbow-1.? LOCKED
+CONNECT p43093-47.axle1 -> engine-pipe-elbow-1.? LOCKED
+CONNECT p43093-47.pin1 -> p62462-9.hole1~ STIFF
+CONNECT p43093-48.pin1 -> p62462-9.hole1~ STIFF
+CONNECT p43093-48.axle1 -> engine-pipe-elbow-2.? LOCKED
+CONNECT p11214-25.axle1 -> engine-pipe-elbow-2.? LOCKED
+CONNECT p11214-25.pin1 -> p18654-31.hole1 STIFF
+CONNECT p11214-25.pin2 -> p62462-8.hole1~ STIFF
+CONNECT p15100-8.pin1 -> p62462-8.hole1~ STIFF
+END
+ATTACH engine-side-pipework
+CONNECT p43093-46.pin1 -> p18945-2.hole16 STIFF
+CONNECT p42924-100.pin3 -> p15100-8.hole1 STIFF
+WHY Builds the bent silver engine pipework with two elbows, two long sleeves, a short sleeve and blue and red axle-pins, then mounts the assembly beside the engine using its blue panel pin and black connector on the existing engine pin. Elbow bores are unnamed and sleeve insertion depths are estimated.
+
+STEP 390
+GROUP green-engine-cover
+ADD p40490-11 40490 green
+ADD p2780-220 2780 black
+ADD p2780-221 2780 black
+CONNECT p2780-220.pin2 -> p40490-11.hole9 STIFF
+CONNECT p2780-221.pin2 -> p40490-11.hole1 STIFF
+WHY Starts the green engine cover with a nine-hole beam and two black end pins.
+
+STEP 391
+ADD p32523-18 32523 green
+ADD p32523-19 32523 green
+CONNECT p2780-220.pin1 -> p32523-18.hole2 STIFF
+CONNECT p2780-221.pin1 -> p32523-19.hole2 STIFF
+WHY Adds a green three-hole crossbeam at each end of the long green engine-cover beam.
+
+STEP 392
+ADD p18651-11 18651 black
+ADD p32523-20 32523 lightgray
+ADD p32123b-3 32123b yellow
+CONNECT p18651-11.pin1 -> p32523-20.hole2 STIFF
+CONNECT p18651-11.axle2~ -> p40490-11.hole7 TURNS
+CONNECT p18651-11.axle1 -> p32123b-3.axlehole1 LOCKED
+ADD p18651-12 18651 black
+ADD p32523-21 32523 lightgray
+ADD p32123b-4 32123b yellow
+CONNECT p18651-12.pin1 -> p32523-21.hole2 STIFF
+CONNECT p18651-12.axle2~ -> p40490-11.hole6 TURNS
+CONNECT p18651-12.axle1 -> p32123b-4.axlehole1 LOCKED
+ADD p18651-13 18651 black
+ADD p32523-22 32523 lightgray
+ADD p32123b-5 32123b yellow
+CONNECT p18651-13.pin1 -> p32523-22.hole2 STIFF
+CONNECT p18651-13.axle2~ -> p40490-11.hole5 TURNS
+CONNECT p18651-13.axle1 -> p32123b-5.axlehole1 LOCKED
+ADD p18651-14 18651 black
+ADD p32523-23 32523 lightgray
+ADD p32123b-6 32123b yellow
+CONNECT p18651-14.pin1 -> p32523-23.hole2 STIFF
+CONNECT p18651-14.axle2~ -> p40490-11.hole4 TURNS
+CONNECT p18651-14.axle1 -> p32123b-6.axlehole1 LOCKED
+ADD p18651-15 18651 black
+ADD p32523-24 32523 lightgray
+ADD p32123b-7 32123b yellow
+CONNECT p18651-15.pin1 -> p32523-24.hole2 STIFF
+CONNECT p18651-15.axle2~ -> p40490-11.hole3 TURNS
+CONNECT p18651-15.axle1 -> p32123b-7.axlehole1 LOCKED
+ADD p18651-16 18651 black
+ADD p32523-25 32523 lightgray
+ADD p32123b-8 32123b yellow
+CONNECT p18651-16.pin1 -> p32523-25.hole2 STIFF
+CONNECT p18651-16.axle2~ -> p40490-11.hole2 TURNS
+CONNECT p18651-16.axle1 -> p32123b-8.axlehole1 LOCKED
+WHY Builds six grey three-hole cylinder-cover links on black axle-pins, passes their shafts through the six pictured green beam holes and retains each with a yellow half bush. Shaft depths through the green beam remain estimated.
+
+STEP 393
+ADD p32054-26 32054 orange
+ADD p32054-27 32054 orange
+ADD p43093-49 43093 blue
+ADD p43093-50 43093 blue
+CONNECT p43093-49.axle1 -> p32054-26.axlehole1 LOCKED
+CONNECT p43093-50.axle1 -> p32054-27.axlehole1 LOCKED
+CONNECT p32054-26.pin1 -> p32523-19.hole3 STIFF
+CONNECT p32054-27.pin1 -> p32523-19.hole1 STIFF
+WHY Builds two orange stop-bush pins with blue axle-pins and inserts them into the outer holes of the rear green crossbeam.
+
+STEP 394
+ADD p32526-20 32526 black
+ADD p2780-222 2780 black
+ADD p2780-223 2780 black
+ADD p18654-32 18654 black
+ADD p42924-125 42924 blue
+ADD p42924-126 42924 blue
+CONNECT p2780-222.pin2 -> p32526-20.hole3 STIFF
+CONNECT p2780-223.pin2 -> p32526-20.hole1 STIFF
+CONNECT p2780-222.pin1 -> p18654-32.hole1 STIFF
+CONNECT p42924-125.pin1 -> p32526-20.hole4 STIFF
+CONNECT p42924-126.pin1 -> p32526-20.hole2 STIFF
+CONNECT p42924-125.pin2 -> p32523-18.hole1 STIFF
+CONNECT p42924-126.pin2 -> p32523-18.hole3 STIFF
+WHY Builds the black front L bracket with two short pins, a spacer and two blue pins, then mounts it across the front green crossbeam.
+
+STEP 395
+ADD p40490-12 40490 green
+ADD p40490-13 40490 green
+CONNECT p32054-26.pin2 -> p40490-12.hole1 STIFF
+CONNECT p42924-126.pin3 -> p40490-12.hole9 STIFF
+CONNECT p32054-27.pin2 -> p40490-13.hole1 STIFF
+CONNECT p42924-125.pin3 -> p40490-13.hole9 STIFF
+WHY Fits two more green nine-hole beams along the sides of the cover, joining the front blue pins and rear orange pins.
+
+STEP 396
+ADD p4274-20 4274 blue
+CONNECT p4274-20.pin2 -> p40490-12.hole8 TURNS
+ADD p4274-21 4274 blue
+CONNECT p4274-21.pin2 -> p40490-12.hole6 TURNS
+ADD p4274-22 4274 blue
+CONNECT p4274-22.pin2 -> p40490-12.hole4 TURNS
+ADD p4274-23 4274 blue
+CONNECT p4274-23.pin2 -> p40490-12.hole2 TURNS
+ADD p4274-24 4274 blue
+CONNECT p4274-24.pin2 -> p40490-13.hole8 TURNS
+ADD p4274-25 4274 blue
+CONNECT p4274-25.pin2 -> p40490-13.hole6 TURNS
+ADD p4274-26 4274 blue
+CONNECT p4274-26.pin2 -> p40490-13.hole4 TURNS
+ADD p4274-27 4274 blue
+CONNECT p4274-27.pin2 -> p40490-13.hole2 TURNS
+WHY Inserts four blue half pins into the upper face of each outer green beam, leaving their stud ends ready for the black trim tiles.
+
+STEP 397
+ADD engine-cover-tile-1 2431 black
+CONNECT engine-cover-tile-1.? -> p4274-20.? STIFF
+CONNECT engine-cover-tile-1.? -> p4274-21.? STIFF
+ADD engine-cover-tile-2 2431 black
+CONNECT engine-cover-tile-2.? -> p4274-22.? STIFF
+CONNECT engine-cover-tile-2.? -> p4274-23.? STIFF
+ADD engine-cover-tile-3 2431 black
+CONNECT engine-cover-tile-3.? -> p4274-24.? STIFF
+CONNECT engine-cover-tile-3.? -> p4274-25.? STIFF
+ADD engine-cover-tile-4 2431 black
+CONNECT engine-cover-tile-4.? -> p4274-26.? STIFF
+CONNECT engine-cover-tile-4.? -> p4274-27.? STIFF
+WHY Presses four black four-stud tiles onto the eight half-pin studs along the green cover edges and applies sticker 12 to the pictured tile. Tile and stud-clutch points are uncataloged.
