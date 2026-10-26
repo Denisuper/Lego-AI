@@ -2015,3 +2015,173 @@ MESH p94925-7.teeth p18575-5.teeth
 MESH p18575-6.teeth p3648b-4.teeth
 WHY Builds a grey sixteen-tooth gear onto the short end of the dark-grey five-and-a-half-length stopped axle, threads it through the upper grey bearing and adds a tan twenty-tooth bevel gear between that bearing and the red connector bearing. The grey gear meshes with the tower tan twenty-tooth gear and the new tan gear meshes diagonally with the dark-grey twenty-four-tooth gear. Shaft depths are estimated from the reference offset; the highlighted line is the visual alignment check in the booklet.
 
+STEP 192
+ADD p32123b-6 32123b lightgray
+ADD front-gear-output-universal 61903 lightgray
+CONNECT p59426-3.axle4~ -> p32123b-6.axlehole1 LOCKED
+CONNECT p59426-3.axle5~ -> front-gear-output-universal.axlehole1~ LOCKED
+WHY Retains the long end of the stopped five-and-a-half-length gear shaft with a grey half bush and fits a complete grey universal joint onto its exposed end. The preceding top-view illustration checks shaft alignment with the wheel axis; half-bush depth and complete-joint socket orientation remain estimated.
+
+STEP 193
+GROUP engine-piston-guide
+ADD p32316-8 32316 black
+ADD p6558-33 6558 blue
+ADD p6558-34 6558 blue
+CONNECT p6558-33.pin2 -> p32316-8.hole4 STIFF
+CONNECT p6558-34.pin2 -> p32316-8.hole2 STIFF
+WHY Starts the six-cylinder engine guide assembly with a black five-hole crossbeam and two long blue friction pins through its inner mounting holes.
+
+STEP 194
+ADD p39793-2 39793 black
+ADD p39793-1 39793 black
+ADD p2780-57 2780 black
+ADD p2780-58 2780 black
+CONNECT p6558-33.pin1~ -> p39793-2.hole9 STIFF
+CONNECT p6558-34.pin1~ -> p39793-2.hole8 STIFF
+CONNECT p2780-57.pin2~ -> p39793-2.hole2 STIFF
+CONNECT p2780-58.pin2~ -> p39793-2.hole1 STIFF
+CONNECT p2780-57.pin1~ -> p39793-1.hole9 STIFF
+CONNECT p2780-58.pin1~ -> p39793-1.hole8 STIFF
+WHY Fits the first black three-cylinder guide block onto the blue pin ends and joins the second guide block to it using two black friction pins, aligning their six piston holes in a straight row. The reference guide-block pin seating is slightly offset and remains estimated.
+
+STEP 195
+ADD p4519-24 4519 lightgray
+ADD p3713-18 3713 red
+CONNECT p4519-24.axle3 -> p3713-18.axlehole1 LOCKED
+CONNECT p4519-24.axle2~ -> p39793-2.hole7 TURNS
+ADD p4519-25 4519 lightgray
+ADD p3713-19 3713 red
+CONNECT p4519-25.axle3 -> p3713-19.axlehole1 LOCKED
+CONNECT p4519-25.axle2~ -> p39793-2.hole5 TURNS
+ADD p4519-26 4519 lightgray
+ADD p3713-20 3713 red
+CONNECT p4519-26.axle3 -> p3713-20.axlehole1 LOCKED
+CONNECT p4519-26.axle2~ -> p39793-2.hole3 TURNS
+ADD p4519-27 4519 lightgray
+ADD p3713-21 3713 red
+CONNECT p4519-27.axle3 -> p3713-21.axlehole1 LOCKED
+CONNECT p4519-27.axle2~ -> p39793-1.hole7 TURNS
+ADD p4519-28 4519 lightgray
+ADD p3713-22 3713 red
+CONNECT p4519-28.axle3 -> p3713-22.axlehole1 LOCKED
+CONNECT p4519-28.axle2~ -> p39793-1.hole5 TURNS
+ADD p4519-29 4519 lightgray
+ADD p3713-23 3713 red
+CONNECT p4519-29.axle3 -> p3713-23.axlehole1 LOCKED
+CONNECT p4519-29.axle2~ -> p39793-1.hole3 TURNS
+WHY Builds six grey three-length piston rods with red bushes on their lower ends and inserts one through each cylinder guide hole. The rods must slide up and down freely in the round guides; their variable seating depths are estimated.
+
+STEP 196
+ADD p32123b-7 32123b lightgray
+CONNECT p4519-24.axle1~ -> p32123b-7.axlehole1 LOCKED
+ADD p32123b-8 32123b lightgray
+CONNECT p4519-25.axle1~ -> p32123b-8.axlehole1 LOCKED
+ADD p32123b-9 32123b lightgray
+CONNECT p4519-26.axle1~ -> p32123b-9.axlehole1 LOCKED
+ADD p32123b-10 32123b lightgray
+CONNECT p4519-27.axle1~ -> p32123b-10.axlehole1 LOCKED
+ADD p32123b-11 32123b lightgray
+CONNECT p4519-28.axle1~ -> p32123b-11.axlehole1 LOCKED
+ADD p32123b-12 32123b lightgray
+CONNECT p4519-29.axle1~ -> p32123b-12.axlehole1 LOCKED
+WHY Fits a grey half bush to the upper end of each piston rod, retaining all six rods in their guide holes while leaving them free to move vertically. Half-bush seating depths are estimated.
+
+STEP 197
+ADD p32034-11 32034 black
+ADD p32034-12 32034 black
+ADD p32034-13 32034 black
+ADD p32034-14 32034 black
+ADD p32062-15 32062 red
+ADD p32062-16 32062 red
+ADD p43093-24 43093 blue
+ADD p43093-25 43093 blue
+ADD p43093-26 43093 blue
+ADD p43093-27 43093 blue
+CONNECT p32062-15.axle1 -> p32034-11.axlehole2 LOCKED
+CONNECT p32062-15.axle2 -> p32034-12.axlehole1 LOCKED
+CONNECT p43093-24.axle1 -> p32034-11.axlehole1 LOCKED
+CONNECT p43093-25.axle1 -> p32034-12.axlehole2 LOCKED
+CONNECT p32062-16.axle1 -> p32034-13.axlehole2 LOCKED
+CONNECT p32062-16.axle2 -> p32034-14.axlehole1 LOCKED
+CONNECT p43093-26.axle1 -> p32034-13.axlehole1 LOCKED
+CONNECT p43093-27.axle1 -> p32034-14.axlehole2 LOCKED
+CONNECT p43093-25.pin1 -> p32316-8.hole1 STIFF
+CONNECT p43093-27.pin1 -> p32316-8.hole5 STIFF
+WHY Builds two black side rails from paired straight axle connectors joined by red two-length axles, with blue axle-pins at their ends. Fits their rear pin ends into the outer holes of the engine crossbeam and aligns the rails alongside the six-cylinder guide blocks.
+
+STEP 198
+ADD p40490-13 40490 black
+ADD p6558-31 6558 blue
+ADD p6558-32 6558 blue
+CONNECT p6558-31.pin2 -> p40490-13.hole6 STIFF
+CONNECT p6558-32.pin2 -> p40490-13.hole4 STIFF
+CONNECT p6558-31.pin3~ -> p39793-1.hole2 STIFF
+CONNECT p6558-32.pin3~ -> p39793-1.hole1 STIFF
+CONNECT p43093-24.pin1 -> p40490-13.hole3 STIFF
+CONNECT p43093-26.pin1 -> p40490-13.hole7 STIFF
+END
+WHY Adds the black nine-hole front crossbeam with two long blue friction pins, pressing them into the front guide-block holes and closing the two black side rails on their blue pin ends. Guide-block pin seating remains estimated.
+
+STEP 199
+ATTACH engine-piston-guide
+CONNECT p6558-33.pin3 -> p42003-14.hole2 STIFF
+CONNECT p6558-34.pin3 -> p42003-15.hole2 STIFF
+WHY Slides the completed six-cylinder piston guide assembly onto the two raised grey connector holes above the front gear tower, engaging the two rear blue pin ends. Keeps all six piston rods free for the crankshaft assembly that follows.
+
+STEP 200
+GROUP engine-camshaft
+ADD p3708-1 3708 black
+ADD p3713-24 3713 red
+ADD p60483-16 60483 black
+CONNECT p3708-1.axle2 -> p3713-24.axlehole1 LOCKED
+CONNECT p3708-1.axle3 -> p60483-16.axlehole1 LOCKED
+WHY Starts the engine camshaft on a black twelve-length axle with a red bush near one end and a black axle-and-pin block beside it, using the block as the first piston-lifting cam.
+
+STEP 201
+ADD p60483-17 60483 olivegreen
+ADD p60483-18 60483 olivegreen
+ADD p60483-19 60483 black
+CONNECT p3708-1.axle4 -> p60483-17.axlehole1 LOCKED
+CONNECT p3708-1.axle5 -> p60483-19.axlehole1 LOCKED
+CONNECT p3708-1.axle6 -> p60483-18.axlehole1 LOCKED
+WHY Adds an olive-green cam, black cam and second olive-green cam along the twelve-length shaft in that order. Keeps the olive-green round-hole lobes opposite the black lobes as pictured, so successive piston rods lift alternately.
+
+STEP 202
+ADD p60483-20 60483 black
+ADD p60483-21 60483 olivegreen
+ADD p3713-25 3713 red
+CONNECT p3708-1.axle7 -> p60483-20.axlehole1 LOCKED
+CONNECT p3708-1.axle8 -> p60483-21.axlehole1 LOCKED
+CONNECT p3708-1.axle9 -> p3713-25.axlehole1 LOCKED
+WHY Adds the final black and olive-green cams and a red retaining bush, completing six alternating cams on the shaft. Matches their opposing lobe directions to the full-size check rather than lining all six blocks up on the same side.
+
+STEP 203
+ADD p32184-11 32184 darkgray
+ADD p4519-30 4519 lightgray
+ADD p4519-31 4519 lightgray
+ADD p60483-22 60483 black
+ADD p60483-23 60483 black
+ADD p42003-17 42003 lightgray
+ADD p42003-18 42003 lightgray
+CONNECT p4519-30.axle2 -> p32184-11.axlehole1 LOCKED
+CONNECT p4519-31.axle2 -> p32184-11.axlehole2 LOCKED
+CONNECT p4519-30.axle1 -> p60483-22.axlehole1 LOCKED
+CONNECT p4519-30.axle3 -> p60483-23.axlehole1 LOCKED
+CONNECT p4519-31.axle1 -> p42003-18.axlehole1 LOCKED
+CONNECT p4519-31.axle3 -> p42003-17.axlehole1 LOCKED
+CONNECT p3708-1.axle10 -> p32184-11.hole1 TURNS
+WHY Builds the camshaft front bearing from a dark-grey double perpendicular connector, two grey three-length cross shafts, two black axle-and-pin blocks and two grey axle-and-pin connectors. Slides the bearing round hole over the exposed camshaft end so the shaft turns independently of the mounting connectors.
+
+STEP 204
+ADD p94925-8 94925 lightgray
+CONNECT p3708-1.axle11 -> p94925-8.axlehole1 LOCKED
+END
+WHY Fits the grey sixteen-tooth drive gear onto the camshaft ahead of its front bearing. Checks the full-size side view: the three black cam lobes point above the shaft and the three olive-green lobes below it, alternating along the shaft.
+
+STEP 205
+ATTACH engine-camshaft
+CONNECT p3708-1.axle1 -> p32184-6.hole1 TURNS
+CONNECT p6558-31.pin1 -> p42003-18.hole2 STIFF
+CONNECT p6558-32.pin1 -> p42003-17.hole2 STIFF
+WHY Slides the camshaft underneath the six piston rods, seats its rear end in the dark-grey tower bearing and pins its front mounting connectors onto the two blue engine crossbeam pins. The cam faces bear against the red piston bushes to lift the rods; this intermittent contact is described here because it is not a rigid pin or axle joint.
+
