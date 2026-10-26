@@ -2943,3 +2943,205 @@ CONNECT p2780-70.pin1 -> p41678-3.hole1 STIFF
 CONNECT p2780-70.pin2 -> p40490-13.hole1 STIFF
 WHY Builds two grey perpendicular double connectors with two black friction pins each and presses them onto the outer pairs of holes in the engine crossbeam. These establish the upper cross-axle mounts on both sides of the six-cylinder engine.
 
+STEP 288
+ADD p3705-11 3705 red
+ADD p32184-22 32184 darkgray
+ADD p32034-16 32034 black
+ADD p43093-35 43093 blue
+CONNECT p3705-11.axle1 -> p32034-16.axlehole1 LOCKED
+CONNECT p3705-11.axle2 -> p32184-22.axlehole2 LOCKED
+CONNECT p43093-35.axle1 -> p32184-22.axlehole1 LOCKED
+CONNECT p3705-11.axle3~ -> p41678-3.axlehole1 LOCKED
+CONNECT p3705-11.axle4~ -> p41678-3.axlehole2 LOCKED
+CONNECT p43093-35.pin1 -> p41239-2.hole8 STIFF
+WHY Builds the right engine-side mount from a red four-length axle, dark-grey double perpendicular connector, black straight connector and blue axle-pin. Slides the axle through both split cross sockets of the grey upper mount and seats the blue pin in the black side rail. Split-socket depths are estimated.
+
+STEP 289
+ADD p15462-14 15462 brown
+ADD p32123b-15 32123b lightgray
+ADD p32123b-16 32123b lightgray
+CONNECT p15462-14.axle5 -> p32184-22.hole1 TURNS
+CONNECT p15462-14.axle4~ -> p32123b-15.axlehole1 LOCKED
+CONNECT p15462-14.axle3~ -> p32123b-16.axlehole1 LOCKED
+CONNECT p15462-14.axle2 -> p76537-6.hole1 TURNS
+CONNECT p15462-14.axle3~ -> p76138-2.hole1 TURNS
+WHY Passes a brown stopped five-length axle through the right upper mount, two grey half bushes and the upper eyes of the red hard and grey soft shock absorbers. The shock eyes pivot around the axle; half-bush and soft-shock seating remain estimated because the reference model omits the soft shock.
+
+STEP 290
+ADD p11214-4 11214 red
+ADD p6536-39 6536 darkgray
+CONNECT p11214-4.pin1 -> p6536-39.hole1 STIFF
+CONNECT p11214-4.pin2 -> p41239-2.hole4 STIFF
+CONNECT p15462-14.axle1 -> p6536-39.axlehole1 LOCKED
+WHY Builds a red long axle-pin and dark-grey perpendicular connector, pins it through the right black side rail and pushes the brown shock-support axle into its cross socket. This captures the upper shock pivots between the front and rear supports.
+
+STEP 291
+ADD p4274-11 4274 lightgray
+ADD p4274-12 4274 lightgray
+ADD engine-open-stud-one 85861 lightgray
+ADD engine-open-stud-two 85861 lightgray
+CONNECT p4274-11.pin2~ -> p32034-13.hole1 TURNS
+CONNECT p4274-12.pin2~ -> p32034-14.hole1 TURNS
+CONNECT engine-open-stud-one.? -> p4274-11.? STIFF
+CONNECT engine-open-stud-two.? -> p4274-12.? STIFF
+WHY Fits two grey half pins with grey open-stud round plates into the round holes of the engine side rail. These provide open sockets for the decorative hose connectors that follow; half-pin seating is estimated and ordinary stud clutch surfaces are unnamed.
+
+STEP 292
+ADD p3705-12 3705 red
+ADD engine-hose-connector-1 99021 darkgray
+CONNECT p3705-12.axle1 -> engine-hose-connector-1.? LOCKED
+ADD engine-hose-connector-2 99021 darkgray
+CONNECT p3705-12.axle2 -> engine-hose-connector-2.? LOCKED
+ADD engine-hose-connector-3 99021 darkgray
+CONNECT p3705-12.axle3 -> engine-hose-connector-3.? LOCKED
+ADD engine-hose-connector-4 99021 darkgray
+CONNECT p3705-12.axle4 -> engine-hose-connector-4.? LOCKED
+CONNECT engine-hose-connector-1.? -> engine-open-stud-one.? STIFF
+CONNECT engine-hose-connector-4.? -> engine-open-stud-two.? STIFF
+WHY Slides four dark-grey pneumatic hose connectors onto a red four-length axle with their branch ends aligned, then presses the two outer branch ends into the open grey studs on the engine side. Their cross sockets turn with the red axle, but the catalog has no named interfaces for these hose connectors or the decorative stud insertions, so those points remain unknown.
+
+STEP 293
+GROUP front-auxiliary-gear-unit
+ADD p15462-15 15462 brown
+ADD p6589-11 6589 tan
+CONNECT p15462-15.axle5~ -> p6589-11.axlehole1 LOCKED
+WHY Starts the front auxiliary gear unit with a tan twelve-tooth bevel gear on a brown stopped five-length axle, seating the gear near the stopped end as pictured. Gear seating is estimated.
+
+STEP 294
+ADD p48496-1 48496 black
+ADD p3713-39 3713 red
+CONNECT p15462-15.axle5~ -> p48496-1.hole2 TURNS
+CONNECT p15462-15.axle4~ -> p3713-39.axlehole1 LOCKED
+WHY Slides the black double toggle connector over the brown shaft behind the tan gear and retains it with a red bush. The shaft turns in the round connector bearing; its gear-side seating and bush depth are estimated.
+
+STEP 295
+ADD p59426-4 59426 darkgray
+ADD p6589-12 6589 tan
+ADD p87408-2 87408 black
+ADD p22961-3 22961 black
+ADD p2780-71 2780 black
+CONNECT p22961-3.axle1 -> p87408-2.axlehole2 LOCKED
+CONNECT p2780-71.pin1 -> p22961-3.hole1 STIFF
+CONNECT p59426-4.axle2~ -> p87408-2.hole3 TURNS
+CONNECT p59426-4.axle4~ -> p6589-12.axlehole1 LOCKED
+CONNECT p59426-4.axle2~ -> p48496-1.hole3 TURNS
+CONNECT p59426-4.pin1~ -> p48496-1.hole1 TURNS
+MESH p6589-11.teeth p6589-12.teeth
+WHY Builds a black U-shaped support with an axle-ended perpendicular connector and black friction pin, then inserts the stopped five-and-a-half-length shaft with a second tan twelve-tooth bevel gear. Fits the shaft into the toggle connector so the two tan bevel gears mesh at right angles. The stopped shaft bearing, gear and collar depths are estimated from the visible assembly.
+
+STEP 296
+ADD p44809-1 44809 red
+ADD p32270-6 32270 black
+CONNECT p48496-1.pin1 -> p44809-1.hole1 STIFF
+CONNECT p59426-4.axle1~ -> p32270-6.axlehole1 LOCKED
+END
+WHY Fits the red bent pin connector onto the black toggle connector pin and adds a black twelve-tooth double-bevel gear on the long stopped shaft end, completing the front gear unit. The black gear seating remains estimated.
+
+STEP 297
+ATTACH front-auxiliary-gear-unit
+CONNECT p2780-71.pin2 -> p40490-12.hole5 STIFF
+WHY Turns the front auxiliary gear unit into the pictured upright orientation and inserts its black mounting pin into the front crossbeam centre hole. Keep the brown shaft pointing up and the black U-shaped support extending forward as shown.
+
+STEP 298
+ADD p11214-5 11214 red
+CONNECT p11214-5.pin1 -> p44809-1.hole2 STIFF
+CONNECT p11214-5.pin2 -> p41239-3.hole4 STIFF
+WHY Pushes a red long axle-pin through the red bent connector and the left black side rail to secure the upper part of the front auxiliary gear unit. Leave its outer axle end exposed for the later side structure.
+
+STEP 299
+ADD p3706-12 3706 black
+ADD p32123b-17 32123b lightgray
+ADD p32123b-18 32123b lightgray
+CONNECT p3706-12.axle2 -> p44809-1.hole3 TURNS
+CONNECT p3706-12.axle3 -> p76537-5.hole1 TURNS
+CONNECT p3706-12.axle4~ -> p76138-1.hole1 TURNS
+CONNECT p3706-12.axle4~ -> p32123b-17.axlehole1 LOCKED
+CONNECT p3706-12.axle5~ -> p32123b-18.axlehole1 LOCKED
+WHY Passes a black six-length axle through the red connector and the upper eyes of the left red hard and grey soft shock absorbers, adding two grey half bushes as spacers. Shock eyes remain free to pivot; half-bush and soft-shock seating are estimated because the geometric reference omits the soft shock.
+
+STEP 300
+ADD p3705-13 3705 red
+ADD p32184-23 32184 darkgray
+ADD p32034-17 32034 black
+ADD p43093-36 43093 blue
+CONNECT p3705-13.axle1 -> p32034-17.axlehole1 LOCKED
+CONNECT p3705-13.axle2 -> p32184-23.axlehole2 LOCKED
+CONNECT p43093-36.axle1 -> p32184-23.axlehole1 LOCKED
+CONNECT p3705-13.axle3~ -> p41678-2.axlehole2 LOCKED
+CONNECT p3705-13.axle4~ -> p41678-2.axlehole1 LOCKED
+CONNECT p43093-36.pin1 -> p41239-3.hole8 STIFF
+CONNECT p3706-12.axle6 -> p32184-23.hole1 TURNS
+WHY Builds the matching left engine-side mount from a red axle, dark-grey double perpendicular connector, black straight connector and blue axle-pin. Fits the red axle through the grey split upper mount, seats the blue pin in the side rail and threads the black shock-support axle through the round bearing. Split cross-socket depths are estimated.
+
+STEP 301
+ADD p32013-11 32013 darkgray
+CONNECT p3706-12.axle1 -> p32013-11.axlehole1 LOCKED
+CONNECT p15462-15.axle3~ -> p32013-11.hole1 TURNS
+WHY Fits a dark-grey perpendicular connector over the brown upright shaft and pushes the black left shock-support axle into its cross socket, capturing that end of the shock pivot. The brown shaft turns freely in the round bore; its bearing depth remains estimated.
+
+STEP 302
+ADD p3713-40 3713 red
+ADD p32270-7 32270 black
+CONNECT p15462-15.axle2~ -> p3713-40.axlehole1 LOCKED
+CONNECT p15462-15.axle1~ -> p32270-7.axlehole1 LOCKED
+WHY Adds a red retaining bush and black twelve-tooth double-bevel gear to the top of the brown upright shaft, above the dark-grey bearing. Both turn with the shaft while it remains free in its round bearing; their seating depths are estimated.
+
+STEP 303
+GROUP engine-curved-pipe
+ADD engine-curved-elbow 25214 lightgray
+ADD p43093-37 43093 blue
+ADD p43093-38 43093 blue
+ADD p15100-4 15100 lightgray
+ADD p62462-1 62462 lightgray
+ADD p4274-13 4274 lightgray
+ADD p98138-5 98138 black
+CONNECT p43093-37.axle1 -> engine-curved-elbow.? LOCKED
+CONNECT p43093-38.axle1 -> engine-curved-elbow.? LOCKED
+CONNECT p43093-37.pin1 -> p15100-4.hole1 STIFF
+CONNECT p43093-38.pin1~ -> p62462-1.hole1 STIFF
+CONNECT p4274-13.pin2~ -> p62462-1.hole1 TURNS
+CONNECT p98138-5.? -> p4274-13.? STIFF
+END
+ATTACH engine-curved-pipe
+CONNECT p15100-4.pin1 -> p32034-17.hole1 STIFF
+WHY Builds the grey curved engine pipe using an elbow, two blue axle-pins, a grey perpendicular pin connector and straight pin sleeve, then caps its free end with a grey half pin and black round tile. Attaches the grey friction pin to the black engine-side connector as shown on the following continuation page. The elbow cross sockets and tile clutch are unnamed; sleeve seating is estimated.
+
+STEP 304
+ADD p43093-39 43093 blue
+ADD p6558-47 6558 blue
+ADD p60483-28 60483 black
+ADD p22961-4 22961 black
+CONNECT p43093-39.axle1 -> p60483-28.axlehole1 LOCKED
+CONNECT p6558-47.pin2 -> p60483-28.hole1 STIFF
+CONNECT p6558-47.pin3 -> p22961-4.hole1 STIFF
+CONNECT p43093-39.pin1 -> p40490-11.hole9 STIFF
+WHY Builds a black two-hole mounting block with a blue axle-pin, blue long friction pin and black axle-ended perpendicular connector, then pins it to the upper front engine crossbeam. The black connector axle end remains exposed to retain the flexible ribbed hose next.
+
+STEP 305
+ADD p2780-72 2780 black
+ADD engine-ribbed-hose 78c09 black
+CONNECT p2780-72.pin2 -> engine-ribbed-hose.? STIFF
+CONNECT p2780-72.pin1 -> p32034-11.hole1 STIFF
+CONNECT p22961-4.axle1 -> engine-ribbed-hose.? STIFF
+WHY Pushes a black friction pin into one end of the nine-length ribbed hose, mounts that pin in the black engine side rail and bends the hose across to the exposed axle end on the front mounting block. Both hose-end friction fits are visible but their receiving surfaces are not named in the catalog; preserve the smooth curved route over the engine.
+
+STEP 306
+ADD p32184-24 32184 darkgray
+ADD p32062-20 32062 red
+ADD p59443-16 59443 black
+CONNECT p32062-20.axle1 -> p32184-24.axlehole2 LOCKED
+CONNECT p32062-20.axle2 -> p59443-16.axlehole2 LOCKED
+CONNECT p11214-4.axle1 -> p32184-24.axlehole1 LOCKED
+ADD p32184-26 32184 darkgray
+ADD p32062-21 32062 red
+ADD p59443-17 59443 black
+CONNECT p32062-21.axle1 -> p32184-26.axlehole2 LOCKED
+CONNECT p32062-21.axle2 -> p59443-17.axlehole2 LOCKED
+CONNECT p11214-5.axle1 -> p32184-26.axlehole1 LOCKED
+WHY Builds two matching dark-grey perpendicular brackets with red two-length axles and black axle extension connectors, then fits their other cross sockets onto the exposed red axle-pin ends on either side of the engine. Keep the long black extension sockets pointing outward as pictured.
+
+STEP 307
+ADD p32184-25 32184 darkgray
+CONNECT p60485-1.axle1 -> p32184-25.axlehole2 LOCKED
+WHY Fits a dark-grey double perpendicular connector onto the exposed left end of the yellow nine-length front engine cross axle. Orient its centre round hole and free cross socket as shown to prepare the next forward structure.
+
