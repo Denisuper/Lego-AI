@@ -4000,3 +4000,259 @@ CONNECT p6558-21.pin1 -> p32009-1.hole6 STIFF
 CONNECT p6558-22.pin1 -> p32009-4.hole6 STIFF
 WHY Turns both seats upright and fits the inner side-beam round holes onto the existing blue chassis pins, matching the reclined side view. The padded headrests now sit at the top and the cushion panels face forward; the outer seat mounting holes remain available for the next retaining pins.
 
+STEP 385
+ADD p2780-98 2780 black
+ADD p2780-99 2780 black
+ADD p6536-47 6536 darkgray
+ADD p6536-48 6536 darkgray
+ADD p32062-36 32062 red
+ADD p32062-37 32062 red
+CONNECT p2780-98.pin1 -> p6536-47.hole1 STIFF
+CONNECT p2780-98.pin2 -> p32009-2.hole6 STIFF
+CONNECT p32062-36.axle2 -> p6536-47.axlehole1 LOCKED
+CONNECT p32062-36.axle1 -> p59443-27.axlehole2 LOCKED
+CONNECT p2780-99.pin2 -> p6536-48.hole1 STIFF
+CONNECT p2780-99.pin1 -> p32009-3.hole6 STIFF
+CONNECT p32062-37.axle1 -> p6536-48.axlehole1 LOCKED
+CONNECT p32062-37.axle2 -> p59443-25.axlehole2 LOCKED
+WHY Builds two dark-grey perpendicular retainers with black friction pins and red short axles. Pins each retainer into the outer round mounting hole of its seat, then pushes the red axle into the black upright socket as highlighted, securing both outer seat mounts.
+
+STEP 386
+GROUP rear-seat-bench
+ADD p24119-1 24119 darktan
+ADD p2780-100 2780 black
+ADD p2780-101 2780 black
+CONNECT p2780-100.pin2 -> p24119-1.hole8 STIFF
+CONNECT p2780-101.pin2 -> p24119-1.hole3 STIFF
+WHY Starts the rear bench with one dark-tan curved five-by-three panel and two upright black friction pins in the indicated mounting holes.
+
+STEP 387
+ADD p24119-2 24119 darktan
+CONNECT p2780-100.pin1 -> p24119-2.hole4 STIFF
+CONNECT p2780-101.pin1 -> p24119-2.hole9 STIFF
+WHY Fits a second dark-tan curved panel onto the two black pin ends, forming the first rear seat base and back at the pictured angle.
+
+STEP 388
+ADD p6558-70 6558 blue
+ADD p6558-71 6558 blue
+ADD p6558-72 6558 blue
+CONNECT p6558-70.pin1 -> p24119-2.hole10 STIFF
+CONNECT p6558-71.pin1 -> p24119-2.hole11 STIFF
+CONNECT p6558-72.pin1 -> p24119-1.hole1 STIFF
+WHY Inserts three blue long friction pins through the inner side of the first rear seat section, leaving their long ends ready for the central connector stack and second seat section.
+
+STEP 389
+ADD p6536-49 6536 darkgray
+ADD p6536-50 6536 darkgray
+ADD p32013-12 32013 darkgray
+ADD p4519-41 4519 lightgray
+CONNECT p4519-41.axle3 -> p6536-49.axlehole1 LOCKED
+CONNECT p4519-41.axle2 -> p6536-50.axlehole1 LOCKED
+CONNECT p4519-41.axle1 -> p32013-12.axlehole1 LOCKED
+CONNECT p6558-72.pin2 -> p6536-49.hole1 STIFF
+CONNECT p6558-71.pin2 -> p6536-50.hole1 STIFF
+CONNECT p6558-70.pin2 -> p32013-12.hole1 STIFF
+WHY Stacks two dark-grey perpendicular connectors and one dark-grey angled connector along a grey three-length axle, then fits their round holes over the three waiting blue pins. This sets the spacing and upper alignment between the two rear seat sections.
+
+STEP 390
+ADD p24119-3 24119 darktan
+ADD p24119-4 24119 darktan
+ADD p2780-102 2780 black
+ADD p2780-103 2780 black
+CONNECT p2780-102.pin2 -> p24119-3.hole8 STIFF
+CONNECT p2780-103.pin2 -> p24119-3.hole3 STIFF
+CONNECT p2780-102.pin1 -> p24119-4.hole4 STIFF
+CONNECT p2780-103.pin1 -> p24119-4.hole9 STIFF
+CONNECT p6558-72.pin3 -> p24119-3.hole10 STIFF
+CONNECT p6558-71.pin3 -> p24119-4.hole2 STIFF
+CONNECT p6558-70.pin3 -> p24119-4.hole1 STIFF
+WHY Builds the second dark-tan rear seat section from two curved panels and two black friction pins, then presses it onto the three blue centre pin ends. Keeps both base panels level and both back panels aligned across the central connector stack.
+
+STEP 391
+GROUP rear-seat-headrest-rail
+ADD p6558-73 6558 blue
+ADD p18677-3 18677 black
+CONNECT p6558-73.pin2 -> p18677-3.? STIFF
+WHY Starts the rear headrest rail with a blue long friction pin through the underside round pin hole of a black two-stud plate. That ordinary plate pin-hole interface is not named in the catalog.
+
+STEP 392
+ADD p18651-8 18651 black
+ADD p18651-9 18651 black
+ADD p62462-3 62462 lightgray
+ADD p62462-4 62462 lightgray
+CONNECT p6558-73.pin1~ -> p62462-3.hole1 STIFF
+CONNECT p6558-73.pin3~ -> p62462-4.hole1 STIFF
+CONNECT p18651-8.pin1~ -> p62462-3.hole1 STIFF
+CONNECT p18651-9.pin1~ -> p62462-4.hole1 STIFF
+WHY Extends both sides of the headrest rail with grey two-length pin sleeves and black long axle-pins, joining their round pin ends inside the sleeves. Leave the black axle ends pointing outward; sleeve insertion depths are estimated.
+
+STEP 393
+ADD p32054-29 32054 lightgray
+ADD p32054-30 32054 lightgray
+ADD p18677-1 18677 black
+ADD p18677-2 18677 black
+CONNECT p18651-8.axle2~ -> p18677-1.? TURNS
+CONNECT p18651-9.axle2~ -> p18677-2.? TURNS
+CONNECT p18651-8.axle1 -> p32054-29.axlehole1 LOCKED
+CONNECT p18651-9.axle1 -> p32054-30.axlehole1 LOCKED
+WHY Adds a black two-stud plate and grey long pin with stop bush to each outer axle end of the headrest rail. The grey cross sockets lock to the black axles while the uncataloged round plate bores sit around the other axle segments; plate seating is estimated.
+
+STEP 394
+ADD p43093-48 43093 blue
+ADD p43093-49 43093 blue
+ADD p6536-51 6536 darkgray
+ADD p6536-52 6536 darkgray
+CONNECT p43093-48.axle1 -> p6536-52.axlehole1 LOCKED
+CONNECT p43093-49.axle1 -> p6536-51.axlehole1 LOCKED
+CONNECT p32054-29.pin2 -> p6536-52.hole1 STIFF
+CONNECT p32054-30.pin2 -> p6536-51.hole1 STIFF
+END
+WHY Builds two dark-grey perpendicular end mounts with blue axle-pins and fits their round holes over the exposed grey rail pin ends. The blue round pin ends point toward the rear seat backs for mounting.
+
+STEP 395
+ATTACH rear-seat-headrest-rail
+CONNECT p43093-48.pin1 -> p24119-2.hole3 STIFF
+CONNECT p43093-49.pin1 -> p24119-4.hole8 STIFF
+WHY Fits the completed headrest rail behind the rear bench, inserting its two blue mounting pins through the outer upper holes of the dark-tan seat back panels. Keeps all three black two-stud mounting plates facing forward.
+
+STEP 396
+ADD p35480-3 35480 black
+CONNECT p35480-3.? -> p18677-3.? STIFF
+WHY Presses the black rounded two-stud plate onto the central headrest mounting plate, providing the middle headrest base. The ordinary stud clutch surfaces are unnamed.
+
+STEP 397
+ADD p3623-3 3623 darktan
+ADD p11477-5 11477 darktan
+ADD p15068-5 15068 darktan
+CONNECT p11477-5.? -> p3623-3.? STIFF
+CONNECT p15068-5.? -> p3623-3.? STIFF
+CONNECT p3623-3.? -> p18677-1.? STIFF
+ADD p3623-4 3623 darktan
+ADD p11477-6 11477 darktan
+ADD p15068-6 15068 darktan
+CONNECT p11477-6.? -> p3623-4.? STIFF
+CONNECT p15068-6.? -> p3623-4.? STIFF
+CONNECT p3623-4.? -> p35480-3.? STIFF
+ADD p3623-5 3623 darktan
+ADD p11477-7 11477 darktan
+ADD p15068-7 15068 darktan
+CONNECT p11477-7.? -> p3623-5.? STIFF
+CONNECT p15068-7.? -> p3623-5.? STIFF
+CONNECT p3623-5.? -> p18677-2.? STIFF
+WHY Builds three dark-tan headrest pads, each from a three-stud plate with one narrow and one wide curved slope, and presses them onto the three black rail mounting plates. Their rounded faces point forward; all ordinary stud clutch surfaces remain unnamed.
+
+STEP 398
+ADD p32316-9 32316 black
+ADD p32316-10 32316 black
+ADD p2780-104 2780 black
+ADD p2780-105 2780 black
+ADD p2780-106 2780 black
+ADD p2780-107 2780 black
+ADD p2780-108 2780 black
+ADD p2780-109 2780 black
+CONNECT p2780-104.pin2 -> p32316-9.hole2 STIFF
+CONNECT p2780-105.pin2 -> p32316-9.hole1 STIFF
+CONNECT p2780-109.pin1 -> p32316-9.hole3 STIFF
+CONNECT p2780-106.pin2 -> p32316-10.hole5 STIFF
+CONNECT p2780-107.pin2 -> p32316-10.hole4 STIFF
+CONNECT p2780-108.pin1 -> p32316-10.hole3 STIFF
+CONNECT p2780-104.pin1 -> p24119-1.hole9 STIFF
+CONNECT p2780-105.pin1 -> p24119-1.hole7 STIFF
+CONNECT p2780-106.pin1 -> p24119-3.hole5 STIFF
+CONNECT p2780-107.pin1 -> p24119-3.hole4 STIFF
+WHY Builds two black five-hole lower mounting beams with three black friction pins each, then pins their outer pairs onto the front edges of the rear seat base panels. The remaining centre pin on each beam points forward for fitting the bench to the chassis.
+
+STEP 399
+END
+ATTACH rear-seat-bench
+CONNECT p2780-108.pin2 -> p32034-9.hole1 STIFF
+CONNECT p2780-109.pin2 -> p32034-8.hole1 STIFF
+WHY Fits the completed rear bench onto the rear chassis, pressing the two exposed black mounting pins into the round holes of the black upper side connectors highlighted in the picture. Keep the headrests upright and the bench bases facing forward.
+
+STEP 400
+GROUP rear-body-lower-panel
+ADD p62531-1 62531 lightgray
+ADD p15100-5 15100 lightgray
+CONNECT p15100-5.pin1 -> p62531-1.hole6 STIFF
+WHY Starts the next body stage with the light-grey curved rear panel and a grey perpendicular pin connector in its central upper mounting hole. The smooth panel face and connector orientation follow the booklet view.
+
+STEP 401
+ADD p32054-31 32054 lightgray
+CONNECT p32054-31.pin1 -> p15100-5.hole1 STIFF
+WHY Fits a grey long pin with stop bush through the central perpendicular connector on the rear panel, leaving its outer pin end ready for the chassis mounting hole.
+
+STEP 402
+ADD p2780-110 2780 black
+ADD p2780-111 2780 black
+CONNECT p2780-110.pin1 -> p62531-1.hole2 STIFF
+CONNECT p2780-111.pin2 -> p62531-1.hole11 STIFF
+WHY Inserts a black friction pin into the upper end hole on each side of the rear panel, providing the mounting points for the two curved corner assemblies.
+
+STEP 403
+ADD p22961-6 22961 black
+ADD p22961-7 22961 black
+ADD p4519-42 4519 lightgray
+ADD p4519-43 4519 lightgray
+ADD rear-body-elbow-one 25214 lightgray
+ADD rear-body-elbow-two 25214 lightgray
+CONNECT p22961-6.axle1 -> rear-body-elbow-one.? LOCKED
+CONNECT p22961-7.axle1 -> rear-body-elbow-two.? LOCKED
+CONNECT p4519-42.axle3 -> rear-body-elbow-one.? LOCKED
+CONNECT p4519-43.axle3 -> rear-body-elbow-two.? LOCKED
+CONNECT p2780-110.pin2 -> p22961-6.hole1 STIFF
+CONNECT p2780-111.pin1 -> p22961-7.hole1 STIFF
+WHY Builds two grey curved corner elbows with black axle-ended perpendicular connectors at their upper ends and grey three-length axles at their lower ends. Fits the black round holes onto the two rear-panel pins, leaving the grey axles pointing forward. Elbow cross sockets are not named in the catalog.
+
+STEP 404
+ADD p41239-4 41239 lightgray
+ADD p6558-74 6558 blue
+ADD p6558-75 6558 blue
+CONNECT p6558-74.pin2 -> p41239-4.hole3 STIFF
+CONNECT p6558-75.pin2 -> p41239-4.hole11 STIFF
+CONNECT p4519-42.axle2 -> p41239-4.hole1 TURNS
+CONNECT p4519-43.axle2 -> p41239-4.hole13 TURNS
+CONNECT p6558-74.pin1 -> p62531-1.hole3 STIFF
+CONNECT p6558-75.pin1 -> p62531-1.hole8 STIFF
+WHY Builds the grey thirteen-hole lower crossbeam with two blue long friction pins and fits it over both projecting corner axles while engaging the blue pins in the panel. The grey corner axles sit in round beam holes and remain free to turn.
+
+STEP 405
+ADD p32123b-21 32123b lightgray
+ADD p32123b-22 32123b lightgray
+ADD p32123b-23 32123b lightgray
+ADD p32123b-24 32123b lightgray
+CONNECT p4519-42.axle1~ -> p32123b-21.axlehole1 LOCKED
+CONNECT p4519-42.axle1~ -> p32123b-22.axlehole1 LOCKED
+CONNECT p4519-43.axle1~ -> p32123b-23.axlehole1 LOCKED
+CONNECT p4519-43.axle1~ -> p32123b-24.axlehole1 LOCKED
+WHY Fits two grey half bushes onto each exposed corner axle end, retaining the lower rear crossbeam beside the curved corners. Both pairs occupy half-length positions within their end axle segments, so seating is estimated.
+
+STEP 406
+ADD p32524-10 32524 lightgray
+ADD p2780-112 2780 black
+ADD p2780-113 2780 black
+CONNECT p2780-112.pin1 -> p41239-4.hole4 STIFF
+CONNECT p2780-113.pin1 -> p41239-4.hole10 STIFF
+CONNECT p2780-112.pin2 -> p32524-10.hole1 STIFF
+CONNECT p2780-113.pin2 -> p32524-10.hole7 STIFF
+WHY Pins the grey seven-hole reinforcing beam across the middle of the thirteen-hole rear crossbeam using two black friction pins, lining up its end holes with the fourth and tenth holes behind it.
+
+STEP 407
+ADD p32140-13 32140 lightgray
+ADD p32140-14 32140 lightgray
+ADD p6558-76 6558 blue
+ADD p6558-77 6558 blue
+CONNECT p6558-75.pin3 -> p32140-13.hole3 STIFF
+CONNECT p6558-74.pin3 -> p32140-14.hole3 STIFF
+CONNECT p6558-76.pin2 -> p32140-13.hole4 STIFF
+CONNECT p6558-77.pin2 -> p32140-14.hole4 STIFF
+CONNECT p6558-76.pin3 -> p41239-4.hole12 STIFF
+CONNECT p6558-77.pin3 -> p41239-4.hole2 STIFF
+WHY Fits two grey L-shaped axle-and-pin supports over the waiting blue crossbeam pins and secures their lower ends with two more blue long pins through the crossbeam. Their upper cross sockets face forward to receive the brown mounting axles.
+
+STEP 408
+ADD p24316-16 24316 brown
+ADD p24316-17 24316 brown
+CONNECT p24316-16.axle3~ -> p32140-14.axlehole1 LOCKED
+CONNECT p24316-17.axle3~ -> p32140-13.axlehole1 LOCKED
+WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The short stopped-end seating in the supports is estimated.
+
