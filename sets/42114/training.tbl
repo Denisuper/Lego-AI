@@ -1700,3 +1700,280 @@ CONNECT p32062-9.axle1 -> p64179-9.hole9~ TURNS
 CONNECT p32062-10.axle1 -> p92907-4.axlehole1~ LOCKED
 CONNECT p32062-10.axle2 -> p64179-9.hole13~ TURNS
 WHY Inserts four red two-length axles into the forked connectors and adjoining frame holes, retaining the connectors; the concealed axle depths remain estimated.
+
+STEP 145
+ADD p32526-12 32526 yellow
+ADD p2780-83 2780 black
+ADD p2780-84 2780 black
+ADD p42924-62 42924 blue
+CONNECT p2780-83.pin1 -> p32526-12.hole1 STIFF
+CONNECT p2780-84.pin1 -> p32526-12.hole7 STIFF
+CONNECT p42924-62.pin2 -> p32526-12.hole4 STIFF
+CONNECT p2780-83.pin2 -> p32524-6.hole4 STIFF
+CONNECT p42924-62.pin3 -> p32524-6.hole7 STIFF
+WHY Adds a yellow L-shaped upper motor brace and pushes its blue mounting pin into the outer seven-hole rail.
+
+STEP 146
+ADD p32524-8 32524 yellow
+ADD p32524-9 32524 yellow
+CONNECT p32054-8.pin2 -> p32524-8.hole1 STIFF
+CONNECT p2780-79.pin2 -> p32524-8.hole3 STIFF
+CONNECT p2780-80.pin2 -> p32524-8.hole5 STIFF
+CONNECT p42924-45.pin3 -> p32524-8.hole7 STIFF
+CONNECT p42924-62.pin1 -> p32524-9.hole1 STIFF
+CONNECT p42924-54.pin1 -> p32524-9.hole6 STIFF
+WHY Closes one motor side with a vertical seven-hole rail and a diagonal rail spanning the upper and lower yellow braces.
+
+STEP 147
+GROUP right-articulating-gear-module
+ADD p92907-5 92907 lightgray
+ADD p2853-1 2853 yellow
+CONNECT p2853-1.axle1 -> p92907-5.axlehole2~ LOCKED
+WHY Starts the first articulating gear module by inserting a yellow crank axle into a grey forked connector; the short insertion depth is estimated.
+
+STEP 148
+ADD p60484-4 60484 yellow
+CONNECT p2853-1.axle2 -> p60484-4.hole4 TURNS
+WHY Slides a yellow T-shaped beam over the crank axle so the beam can pivot relative to the forked connector.
+
+STEP 149
+ADD p3706-3 3706 red
+ADD p6632-3 6632 yellow
+CONNECT p3706-3.axle6 -> p60484-4.hole1~ TURNS
+CONNECT p3706-3.axle5 -> p92907-5.axlehole3~ LOCKED
+CONNECT p3706-3.axle4 -> p6632-3.axlehole2~ LOCKED
+WHY Inserts the red six-length shaft through the lower T-beam and fork, then adds the first thin yellow three-hole link at the shown spacing.
+
+STEP 150
+ADD p32073-5 32073 lightgray
+ADD p27940-1 27940 darkgray
+CONNECT p32073-5.axle5 -> p60484-4.hole5 TURNS
+CONNECT p32073-5.axle4 -> p6632-3.axlehole1~ LOCKED
+CONNECT p27940-1.axle2 -> p6632-3.hole1~ TURNS
+CONNECT p27940-1.axle2 -> p92907-5.axlehole1~ LOCKED
+WHY Adds the parallel grey five-length shaft and transverse axle connector, linking the thin yellow plate to the pivoting fork assembly.
+
+STEP 151
+ADD p99009-1 99009 lightgray
+ADD p99010-1 99010 black
+CONNECT p99010-1.? -> p99009-1.? TURNS
+CONNECT p3706-3.axle4 -> p99009-1.hole1~ TURNS
+CONNECT p32073-5.axle3 -> p99009-1.hole2 TURNS
+WHY Snaps the small turntable halves together and slides its grey mounting half over the two parallel shafts; the catalog does not describe the rotating ring interface.
+
+STEP 152
+ADD p6632-4 6632 yellow
+CONNECT p32073-5.axle2 -> p6632-4.axlehole1~ LOCKED
+CONNECT p3706-3.axle3 -> p6632-4.axlehole2~ LOCKED
+CONNECT p27940-1.axle1 -> p6632-4.hole1~ TURNS
+WHY Closes the far side of the turntable cradle with a second thin yellow link, retaining the transverse axle connector between the links.
+
+STEP 153
+ADD p4519-11 4519 yellow
+ADD p4519-12 4519 yellow
+ADD p59443-20 59443 yellow
+ADD p6589-4 6589 tan
+CONNECT p4519-11.axle1 -> p59443-20.axlehole2 LOCKED
+CONNECT p4519-12.axle3 -> p59443-20.axlehole1 LOCKED
+CONNECT p4519-11.axle2 -> p27940-1.hole1 TURNS
+CONNECT p4519-11.axle3 -> p6589-4.axlehole1~ LOCKED
+WHY Builds the central input shaft from two yellow three-length axles and a coupler, then adds the twelve-tooth bevel gear on its exposed end.
+
+STEP 154
+ADD p59426-1 59426 darkgray
+ADD p61904-1 61904 darkgray
+ADD p32198-2 32198 tan
+ADD p4519-13 4519 yellow
+ADD p6589-5 6589 tan
+CONNECT p4519-13.axle2 -> p6589-5.axlehole1~ LOCKED
+CONNECT p4519-13.axle1 -> p61904-1.? TURNS
+CONNECT p59426-1.axle3 -> p32198-2.axlehole1~ LOCKED
+CONNECT p59426-1.axle2 -> p61904-1.? TURNS
+CONNECT p59426-1.axle1 -> p60484-4.hole2~ TURNS
+MESH p6589-4.teeth p32198-2.teeth
+RATIO p6589-4 p32198-2 3/5
+MESH p32198-2.teeth p6589-5.teeth
+RATIO p32198-2 p6589-5 5/3
+WHY Assembles the angled gear case with its twelve- and twenty-tooth bevel gears and stopped grey axle, then positions it against the yellow cradle; the catalog does not resolve the case bearings in this orientation.
+
+STEP 155
+ADD p92907-6 92907 lightgray
+ADD p2853-2 2853 yellow
+ADD p60484-5 60484 yellow
+CONNECT p2853-2.axle1 -> p92907-6.axlehole1~ LOCKED
+CONNECT p2853-2.axle2 -> p60484-5.hole4 TURNS
+CONNECT p27940-1.axle1 -> p92907-6.axlehole2~ LOCKED
+CONNECT p3706-3.axle2 -> p92907-6.axlehole4~ LOCKED
+CONNECT p3706-3.axle1 -> p60484-5.hole5~ TURNS
+CONNECT p32073-5.axle1 -> p60484-5.hole1 TURNS
+CONNECT p59426-1.pin1 -> p60484-5.hole2~ TURNS
+WHY Closes the opposite end with another crank, fork and yellow T-beam, supporting the gear-case axle while preserving the cradle pivots.
+
+STEP 156
+ADD p32316-4 32316 lightgray
+ADD p2780-85 2780 black
+ADD p2780-86 2780 black
+CONNECT p2780-85.pin1 -> p32316-4.hole1 STIFF
+CONNECT p2780-86.pin1 -> p32316-4.hole5~ STIFF
+CONNECT p2780-85.pin2 -> p92907-5.hole1 STIFF
+CONNECT p2780-86.pin2 -> p92907-6.hole1 STIFF
+WHY Pins a grey five-hole beam across the two forked end connectors to hold their spacing.
+
+STEP 157
+END
+WHY Turns the completed articulating gear module over so its yellow input shaft faces the chassis mounting point.
+
+STEP 158
+ADD p32198-3 32198 tan
+ATTACH right-articulating-gear-module
+CONNECT p4519-12.axle2 -> p64179-9.hole11 TURNS
+CONNECT p4519-12.axle1 -> p32198-3.axlehole1~ LOCKED
+MESH p32198-3.teeth p32198-1.teeth
+RATIO p32198-3 p32198-1 1/1
+WHY Inserts the first articulating module through the black frame and locks a tan twenty-tooth bevel gear onto its inner shaft to mesh with the central bevel gear.
+
+STEP 159
+ADD p32526-13 32526 yellow
+ADD p2780-87 2780 black
+ADD p2780-88 2780 black
+ADD p42924-63 42924 blue
+CONNECT p2780-88.pin2 -> p32526-13.hole1 STIFF
+CONNECT p2780-87.pin2 -> p32526-13.hole7 STIFF
+CONNECT p42924-63.pin2 -> p32526-13.hole4 STIFF
+CONNECT p2780-88.pin1 -> p32524-7.hole4 STIFF
+CONNECT p42924-63.pin3 -> p32524-7.hole7 STIFF
+WHY Adds the matching yellow L-shaped upper brace on the other motor, with its blue pin pushed into the outer rail.
+
+STEP 160
+ADD p32524-10 32524 yellow
+ADD p32524-11 32524 yellow
+CONNECT p42924-63.pin1 -> p32524-10.hole1 STIFF
+CONNECT p42924-55.pin1 -> p32524-10.hole6 STIFF
+CONNECT p32054-9.pin2 -> p32524-11.hole1 STIFF
+CONNECT p2780-81.pin1 -> p32524-11.hole3 STIFF
+CONNECT p2780-82.pin1 -> p32524-11.hole5 STIFF
+CONNECT p42924-44.pin3 -> p32524-11.hole7 STIFF
+WHY Closes the second motor side with matching diagonal and vertical seven-hole yellow braces.
+
+STEP 161
+GROUP left-articulating-gear-module
+ADD p92907-7 92907 lightgray
+ADD p2853-3 2853 yellow
+CONNECT p2853-3.axle1 -> p92907-7.axlehole1~ LOCKED
+WHY Starts the second articulating gear module by inserting a yellow crank axle into a grey forked connector; the short insertion depth is estimated.
+
+STEP 162
+ADD p60484-6 60484 yellow
+CONNECT p2853-3.axle2 -> p60484-6.hole4 TURNS
+WHY Slides a yellow T-shaped beam over the crank axle so the beam can pivot relative to the forked connector.
+
+STEP 163
+ADD p3706-4 3706 red
+ADD p6632-5 6632 yellow
+CONNECT p3706-4.axle1 -> p60484-6.hole5~ TURNS
+CONNECT p3706-4.axle2 -> p92907-7.axlehole4~ LOCKED
+CONNECT p3706-4.axle3 -> p6632-5.axlehole2~ LOCKED
+WHY Inserts the red six-length shaft through the lower T-beam and fork, then adds the first thin yellow three-hole link at the shown spacing.
+
+STEP 164
+ADD p32073-6 32073 lightgray
+ADD p27940-2 27940 darkgray
+CONNECT p32073-6.axle1 -> p60484-6.hole1 TURNS
+CONNECT p32073-6.axle2 -> p6632-5.axlehole1~ LOCKED
+CONNECT p27940-2.axle1 -> p6632-5.hole1~ TURNS
+CONNECT p27940-2.axle1 -> p92907-7.axlehole2~ LOCKED
+WHY Adds the parallel grey five-length shaft and transverse axle connector, linking the thin yellow plate to the pivoting fork assembly.
+
+STEP 165
+ADD p99009-2 99009 lightgray
+ADD p99010-2 99010 black
+CONNECT p99010-2.? -> p99009-2.? TURNS
+CONNECT p3706-4.axle3 -> p99009-2.hole2~ TURNS
+CONNECT p32073-6.axle3 -> p99009-2.hole1 TURNS
+WHY Snaps the small turntable halves together and slides its grey mounting half over the two parallel shafts; the catalog does not describe the rotating ring interface.
+
+STEP 166
+ADD p6632-6 6632 yellow
+CONNECT p32073-6.axle4 -> p6632-6.axlehole1~ LOCKED
+CONNECT p3706-4.axle4 -> p6632-6.axlehole2~ LOCKED
+CONNECT p27940-2.axle2 -> p6632-6.hole1~ TURNS
+WHY Closes the far side of the turntable cradle with a second thin yellow link, retaining the transverse axle connector between the links.
+
+STEP 167
+ADD p99008-12 99008 tan
+ADD p4519-15 4519 yellow
+ADD p59443-21 59443 yellow
+ADD p6589-6 6589 tan
+CONNECT p99008-12.axle3~ -> p59443-21.axlehole2 LOCKED
+CONNECT p4519-15.axle1 -> p59443-21.axlehole1 LOCKED
+CONNECT p99008-12.axle2~ -> p27940-2.hole1 TURNS
+CONNECT p99008-12.axle1 -> p6589-6.axlehole1~ LOCKED
+WHY Builds the central input shaft from a tan stopped four-length axle, a yellow three-length axle and a coupler, then adds the twelve-tooth bevel gear on its exposed end.
+
+STEP 168
+ADD p59426-2 59426 darkgray
+ADD p61904-2 61904 darkgray
+ADD p32198-4 32198 tan
+ADD p4519-16 4519 yellow
+ADD p6589-7 6589 tan
+CONNECT p4519-16.axle2 -> p6589-7.axlehole1~ LOCKED
+CONNECT p4519-16.axle1 -> p61904-2.? TURNS
+CONNECT p59426-2.axle3 -> p32198-4.axlehole1~ LOCKED
+CONNECT p59426-2.axle2 -> p61904-2.? TURNS
+CONNECT p59426-2.axle1 -> p60484-6.hole2~ TURNS
+MESH p6589-6.teeth p32198-4.teeth
+RATIO p6589-6 p32198-4 3/5
+MESH p32198-4.teeth p6589-7.teeth
+RATIO p32198-4 p6589-7 5/3
+WHY Assembles the angled gear case with its twelve- and twenty-tooth bevel gears and stopped grey axle, then positions it against the yellow cradle; the catalog does not resolve the case bearings in this orientation.
+
+STEP 169
+ADD p92907-8 92907 lightgray
+ADD p2853-4 2853 yellow
+ADD p60484-7 60484 yellow
+CONNECT p2853-4.axle1 -> p92907-8.axlehole2~ LOCKED
+CONNECT p2853-4.axle2 -> p60484-7.hole4 TURNS
+CONNECT p27940-2.axle2 -> p92907-8.axlehole1~ LOCKED
+CONNECT p3706-4.axle5 -> p92907-8.axlehole3~ LOCKED
+CONNECT p3706-4.axle6 -> p60484-7.hole1~ TURNS
+CONNECT p32073-6.axle5 -> p60484-7.hole5 TURNS
+CONNECT p59426-2.pin1 -> p60484-7.hole2~ TURNS
+WHY Closes the opposite end with another crank, fork and yellow T-beam, supporting the gear-case axle while preserving the cradle pivots.
+
+STEP 170
+ADD p32316-5 32316 lightgray
+ADD p2780-89 2780 black
+ADD p2780-90 2780 black
+CONNECT p2780-89.pin2 -> p32316-5.hole1 STIFF
+CONNECT p2780-90.pin2 -> p32316-5.hole5~ STIFF
+CONNECT p2780-89.pin1 -> p92907-7.hole1 STIFF
+CONNECT p2780-90.pin1 -> p92907-8.hole1 STIFF
+WHY Pins a grey five-hole beam across the two forked end connectors to hold their spacing.
+
+STEP 171
+END
+WHY Turns the completed articulating gear module over so its tan input shaft faces the chassis mounting point.
+
+STEP 172
+ADD p32198-5 32198 tan
+ATTACH left-articulating-gear-module
+CONNECT p4519-15.axle2 -> p64179-9.hole10 TURNS
+CONNECT p4519-15.axle3 -> p32198-5.axlehole1~ LOCKED
+MESH p32198-5.teeth p32198-1.teeth
+RATIO p32198-5 p32198-1 1/1
+WHY Inserts the second articulating module through the opposite side of the black frame and fits its inner twenty-tooth bevel gear to mesh with the central gear.
+
+STEP 173
+ADD p32062-11 32062 red
+ADD p32062-12 32062 red
+ADD p32062-13 32062 red
+ADD p32062-14 32062 red
+CONNECT p32062-11.axle2 -> p92907-3.axlehole3~ LOCKED
+CONNECT p32062-11.axle1 -> p99010-2.hole1~ TURNS
+CONNECT p32062-12.axle1 -> p92907-2.axlehole3~ LOCKED
+CONNECT p32062-12.axle2 -> p99010-2.hole2~ TURNS
+CONNECT p32062-13.axle2 -> p92907-1.axlehole3~ LOCKED
+CONNECT p32062-13.axle1 -> p99010-1.hole1~ TURNS
+CONNECT p32062-14.axle1 -> p92907-4.axlehole3~ LOCKED
+CONNECT p32062-14.axle2 -> p99010-1.hole2~ TURNS
+WHY Locks four red two-length axles into the upper fork sockets and through the turntable mounting ears to retain both articulating modules; the concealed shaft depths remain estimated.
