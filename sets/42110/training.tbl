@@ -5593,3 +5593,181 @@ CONNECT p6558-109.pin3 -> p46882-2.hole2 STIFF
 CONNECT p2780-131.pin1 -> p46882-2.hole4 STIFF
 WHY Fits both olive rear mudguards over the long blue mounting-pin tails and the waiting lower black corner pins, enclosing the rear wheel openings on both sides.
 
+STEP 544
+GROUP removable-roof
+ADD p32525-8 32525 white
+ADD p2780-169 2780 black
+ADD p2780-170 2780 black
+CONNECT p2780-169.pin2 -> p32525-8.hole9 STIFF
+CONNECT p2780-170.pin2 -> p32525-8.hole3 STIFF
+WHY Starts the removable roof with a white eleven-hole end beam and two black friction pins in its third and ninth holes.
+
+STEP 545
+ADD p64782-2 64782 white
+CONNECT p2780-169.pin1 -> p64782-2.hole33 STIFF
+CONNECT p2780-170.pin1 -> p64782-2.hole12 STIFF
+WHY Presses the first white five-by-eleven flat roof panel onto both waiting black pins, with its underside ribs facing upward in the working view.
+
+STEP 546
+ADD p64782-3 64782 white
+ADD p64782-4 64782 white
+ADD p64782-5 64782 white
+ADD p2780-171 2780 black
+ADD p2780-172 2780 black
+ADD p2780-173 2780 black
+ADD p2780-174 2780 black
+ADD p2780-175 2780 black
+ADD p2780-176 2780 black
+CONNECT p2780-171.pin1 -> p64782-2.hole31 STIFF
+CONNECT p2780-172.pin1 -> p64782-2.hole10 STIFF
+CONNECT p2780-171.pin2 -> p64782-3.hole33 STIFF
+CONNECT p2780-172.pin2 -> p64782-3.hole12 STIFF
+CONNECT p2780-173.pin1 -> p64782-3.hole31 STIFF
+CONNECT p2780-174.pin1 -> p64782-3.hole10 STIFF
+CONNECT p2780-173.pin2 -> p64782-4.hole33 STIFF
+CONNECT p2780-174.pin2 -> p64782-4.hole12 STIFF
+CONNECT p2780-175.pin1 -> p64782-4.hole31 STIFF
+CONNECT p2780-176.pin1 -> p64782-4.hole10 STIFF
+CONNECT p2780-175.pin2 -> p64782-5.hole33 STIFF
+CONNECT p2780-176.pin2 -> p64782-5.hole12 STIFF
+WHY Adds three more white flat panels in a row, joining each adjacent pair with two black friction pins through the matching long-edge holes to form the broad roof surface.
+
+STEP 547
+ADD p32140-25 32140 white
+ADD p32140-26 32140 white
+ADD p6558-110 6558 blue
+ADD p6558-111 6558 blue
+ADD p6558-112 6558 blue
+ADD p6558-113 6558 blue
+CONNECT p6558-110.pin2 -> p32140-25.hole2 STIFF
+CONNECT p6558-111.pin2 -> p32140-25.hole1 STIFF
+CONNECT p6558-112.pin2 -> p32140-26.hole2 STIFF
+CONNECT p6558-113.pin2 -> p32140-26.hole1 STIFF
+CONNECT p6558-110.pin1 -> p64782-2.hole37 STIFF
+CONNECT p6558-111.pin1 -> p64782-2.hole41 STIFF
+CONNECT p6558-112.pin1 -> p64782-2.hole5 STIFF
+CONNECT p6558-113.pin1 -> p64782-2.hole4 STIFF
+WHY Builds the two white L brackets with two blue long pins each, then attaches them to opposite short-edge corners of the first roof panel, leaving the outer blue pin ends exposed.
+
+STEP 548
+ADD p32525-9 32525 white
+ADD p32525-10 32525 white
+ADD p2780-177 2780 black
+ADD p2780-178 2780 black
+ADD p2780-179 2780 black
+ADD p2780-180 2780 black
+ADD p2780-181 2780 black
+ADD p2780-182 2780 black
+CONNECT p2780-177.pin2 -> p32525-9.hole11 STIFF
+CONNECT p2780-177.pin1 -> p64782-2.hole39 STIFF
+CONNECT p2780-178.pin2 -> p32525-9.hole7 STIFF
+CONNECT p2780-178.pin1 -> p64782-3.hole40 STIFF
+CONNECT p2780-179.pin2 -> p32525-9.hole1 STIFF
+CONNECT p2780-179.pin1 -> p64782-4.hole39 STIFF
+CONNECT p2780-180.pin2 -> p32525-10.hole11 STIFF
+CONNECT p2780-180.pin1 -> p64782-2.hole2 STIFF
+CONNECT p2780-181.pin2 -> p32525-10.hole7 STIFF
+CONNECT p2780-181.pin1 -> p64782-3.hole3 STIFF
+CONNECT p2780-182.pin2 -> p32525-10.hole1 STIFF
+CONNECT p2780-182.pin1 -> p64782-4.hole2 STIFF
+WHY Builds two white eleven-hole side reinforcing beams with three black friction pins apiece, then presses them onto the roof panel edges so each beam spans three panel sections.
+
+STEP 549
+ADD p32526-12 32526 white
+ADD p32526-13 32526 white
+ADD p6558-114 6558 blue
+ADD p6558-115 6558 blue
+ADD p6558-116 6558 blue
+ADD p6558-117 6558 blue
+CONNECT p6558-114.pin2 -> p32526-12.hole5 STIFF
+CONNECT p6558-115.pin2 -> p32526-12.hole1 STIFF
+CONNECT p6558-116.pin2 -> p32526-13.hole5 STIFF
+CONNECT p6558-117.pin2 -> p32526-13.hole1 STIFF
+CONNECT p6558-114.pin1 -> p64782-5.hole2 STIFF
+CONNECT p6558-115.pin1 -> p64782-4.hole1 STIFF
+CONNECT p6558-116.pin1 -> p64782-5.hole39 STIFF
+CONNECT p6558-117.pin1 -> p64782-4.hole36 STIFF
+WHY Builds two white large L brackets with two blue long pins each and attaches them at opposite sides of the forward roof panels, leaving the outer blue pin tails exposed.
+
+STEP 550
+ADD p2780-183 2780 black
+ADD p2780-184 2780 black
+ADD p18654-31 18654 white
+ADD p18654-32 18654 white
+CONNECT p2780-183.pin1 -> p18654-32.hole1 STIFF
+CONNECT p2780-184.pin2 -> p18654-31.hole1 STIFF
+CONNECT p2780-183.pin2 -> p64782-5.hole1 STIFF
+CONNECT p2780-184.pin1 -> p64782-5.hole36 STIFF
+WHY Builds two capped black pins with white round connectors and presses them into the two outermost forward roof corners.
+
+STEP 551
+ADD p32525-11 32525 white
+ADD p2780-185 2780 black
+ADD p2780-186 2780 black
+ADD p6558-118 6558 blue
+CONNECT p2780-185.pin1 -> p32525-11.hole11 STIFF
+CONNECT p2780-186.pin2 -> p32525-11.hole3 STIFF
+CONNECT p6558-118.pin2 -> p32525-11.hole1 STIFF
+CONNECT p2780-185.pin2 -> p64782-3.hole35 STIFF
+CONNECT p6558-118.pin1 -> p64782-5.hole35 STIFF
+WHY Builds the white eleven-hole internal support with two short black pins and one long blue pin in the illustrated opposing directions, then fixes its outer two pins into the roof panel underside bores.
+
+STEP 552
+ADD p32184-43 32184 darkgray
+ADD p32184-44 32184 darkgray
+ADD p4519-49 4519 lightgray
+ADD p4519-50 4519 lightgray
+ADD p18654-33 18654 black
+ADD p18654-34 18654 black
+CONNECT p4519-49.axle3 -> p32184-43.axlehole1 LOCKED
+CONNECT p4519-50.axle3 -> p32184-43.axlehole2 LOCKED
+CONNECT p4519-49.axle2 -> p18654-33.hole1 TURNS
+CONNECT p4519-50.axle2 -> p18654-34.hole1 TURNS
+CONNECT p4519-49.axle1 -> p32184-44.axlehole1 LOCKED
+CONNECT p4519-50.axle1 -> p32184-44.axlehole2 LOCKED
+CONNECT p2780-186.pin1 -> p32184-43.hole1 STIFF
+CONNECT p6558-118.pin3 -> p32184-44.hole1 STIFF
+WHY Builds a rectangular support from two dark-grey cross connectors, two grey three-stud axles and two black round spacers, then fixes its two central round bores to the waiting black and blue pins on the white internal beam.
+
+STEP 553
+GROUP right-roof-edge
+ADD p87086-2 87086 white
+ADD p43093-65 43093 blue
+CONNECT p43093-65.pin1 -> p87086-2.hole2 STIFF
+WHY Starts one roof edge rail with a white curved corner panel, number 2, and a blue axle-pin inserted round end first.
+
+STEP 554
+ADD p18948-3 18948 white
+ADD p32062-42 32062 red
+CONNECT p43093-65.axle1 -> p18948-3.axlehole2 LOCKED
+CONNECT p32062-42.axle2 -> p18948-3.axlehole1 LOCKED
+WHY Adds the first white ridged axle connector to the blue cross end and inserts a red two-stud axle into its opposite socket.
+
+STEP 555
+ADD p18948-4 18948 white
+ADD p32062-43 32062 red
+CONNECT p32062-42.axle1 -> p18948-4.axlehole2 LOCKED
+CONNECT p32062-43.axle2 -> p18948-4.axlehole1 LOCKED
+WHY Extends the roof edge rail with a second white ridged axle connector and a second red axle.
+
+STEP 556
+ADD p18948-5 18948 white
+ADD p43093-66 43093 blue
+CONNECT p32062-43.axle1 -> p18948-5.axlehole2 LOCKED
+CONNECT p43093-66.axle1 -> p18948-5.axlehole1 LOCKED
+WHY Adds the third white ridged axle connector and keys a blue axle-pin into the outer socket, leaving its round pin end exposed.
+
+STEP 557
+ADD p24119-9 24119 white
+CONNECT p43093-66.pin1 -> p24119-9.hole1 STIFF
+END
+WHY Fits the white curved end panel onto the exposed blue pin, orienting both end panels to face the roof.
+
+STEP 558
+ATTACH right-roof-edge
+CONNECT p6558-110.pin3 -> p87086-2.hole7 STIFF
+CONNECT p6558-111.pin3 -> p87086-2.hole6 STIFF
+CONNECT p6558-116.pin3 -> p24119-9.hole9 STIFF
+CONNECT p6558-117.pin3 -> p24119-9.hole4 STIFF
+WHY Presses the completed edge rail onto the four exposed blue pin tails on this side of the roof, connecting both white end panels to their supporting brackets.
+
