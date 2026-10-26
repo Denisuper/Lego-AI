@@ -6582,18 +6582,18 @@ WHY Extends the central bed floor with another rectangular yellow panel on the t
 
 STEP 597
 GROUP dump-bed-extension-side-one
-ADD p18945-11 18945 yellow
+ADD p15458-4 15458 yellow
 ADD p2780-340 2780 black
 ADD p2780-341 2780 black
-CONNECT p2780-340.pin1 -> p18945-11.hole13 STIFF
-CONNECT p2780-341.pin1 -> p18945-11.hole6 STIFF
-WHY Starts an extension side assembly with a broad yellow panel and two black friction pins in its long edge.
-
-STEP 598
-ADD p15458-4 15458 yellow
 CONNECT p2780-340.pin2 -> p15458-4.hole6~ STIFF
 CONNECT p2780-341.pin2 -> p15458-4.hole11~ STIFF
-WHY Adds a narrow yellow panel alongside the broad one on the two projecting black pins; insertion depths in the shared transverse bores are estimated.
+WHY Starts an extension side assembly with a narrow yellow panel and two black friction pins in its long edge; depths in the shared transverse bores are estimated.
+
+STEP 598
+ADD p18945-11 18945 yellow
+CONNECT p2780-340.pin1 -> p18945-11.hole13 STIFF
+CONNECT p2780-341.pin1 -> p18945-11.hole6 STIFF
+WHY Adds a broad trapezoidal yellow panel alongside the narrow panel on the two projecting black pins.
 
 STEP 599
 GROUP dump-bed-extension-actuator-link-one
@@ -6644,3 +6644,292 @@ ATTACH dump-bed-extension-actuator-link-one
 CONNECT p43093-74.pin1 -> p18945-11.hole3 STIFF
 CONNECT p43093-75.pin1 -> p18945-11.hole16 STIFF
 WHY Fits the actuator mounting link onto the yellow side panel using its two projecting blue friction-pin ends.
+
+STEP 605
+END
+ATTACH dump-bed-extension-side-one
+CONNECT p2780-304.pin2 -> p18945-11.hole20~ STIFF
+CONNECT p2780-320.pin2 -> p15458-4.hole15 STIFF
+CONNECT p2780-321.pin2 -> p15458-4.hole16 STIFF
+WHY Fits the completed extension side to the first sloped bed side on the three projecting black pins. The angled panel mounting depth is estimated.
+
+STEP 606
+GROUP dump-bed-extension-side-two
+ADD p15458-5 15458 yellow
+ADD p2780-346 2780 black
+ADD p2780-347 2780 black
+CONNECT p2780-346.pin1 -> p15458-5.hole6~ STIFF
+CONNECT p2780-347.pin1 -> p15458-5.hole11~ STIFF
+WHY Starts the matching extension side with a narrow yellow panel and two black friction pins; transverse insertion depths are estimated.
+
+STEP 607
+ADD p18945-12 18945 yellow
+CONNECT p2780-346.pin2 -> p18945-12.hole13 STIFF
+CONNECT p2780-347.pin2 -> p18945-12.hole6 STIFF
+WHY Fits the broad trapezoidal yellow panel beside the narrow panel on the two projecting black pins.
+
+STEP 608
+GROUP dump-bed-extension-actuator-link-two
+ADD p32524-27 32524 yellow
+ADD p2780-348 2780 black
+CONNECT p2780-348.pin1 -> p32524-27.hole7 STIFF
+ADD p2780-349 2780 black
+CONNECT p2780-349.pin1 -> p32524-27.hole6 STIFF
+ADD p2780-350 2780 black
+CONNECT p2780-350.pin1 -> p32524-27.hole2 STIFF
+ADD p2780-351 2780 black
+CONNECT p2780-351.pin1 -> p32524-27.hole1 STIFF
+WHY Starts the second actuator mounting link with a yellow seven-hole beam and four black friction pins.
+
+STEP 609
+ADD p42003-28 42003 yellow
+ADD p42003-29 42003 yellow
+CONNECT p2780-348.pin2 -> p42003-29.hole1 STIFF
+CONNECT p2780-349.pin2 -> p42003-29.hole2 STIFF
+CONNECT p2780-350.pin2 -> p42003-28.hole2 STIFF
+CONNECT p2780-351.pin2 -> p42003-28.hole1 STIFF
+WHY Fits the two yellow perpendicular connectors over the paired black end pins.
+
+STEP 610
+ADD p24316-8 24316 brown
+ADD p32123b-15 32123b yellow
+CONNECT p24316-8.axle3 -> p32524-27.hole4 TURNS
+CONNECT p24316-8.axle2~ -> p32123b-15.axlehole1 LOCKED
+WHY Passes a brown three-length stop axle through the centre round hole and adds a yellow half bush at estimated shaft depth.
+
+STEP 611
+ADD p32123b-16 32123b yellow
+ADD p59443-29 59443 yellow
+CONNECT p24316-8.axle2~ -> p32123b-16.axlehole1 LOCKED
+CONNECT p24316-8.axle1 -> p59443-29.axlehole1 LOCKED
+WHY Adds the second yellow half bush and two-length axle joiner to retain the second freely turning actuator link.
+
+STEP 612
+ADD p43093-76 43093 blue
+ADD p43093-77 43093 blue
+CONNECT p43093-76.axle1 -> p42003-29.axlehole1 LOCKED
+CONNECT p43093-77.axle1 -> p42003-28.axlehole1 LOCKED
+WHY Locks two blue axle-pins into the cross holes of the link end connectors.
+
+STEP 613
+END
+ATTACH dump-bed-extension-actuator-link-two
+CONNECT p43093-76.pin1 -> p18945-12.hole3 STIFF
+CONNECT p43093-77.pin1 -> p18945-12.hole16 STIFF
+WHY Fixes the second actuator mounting link onto the broad yellow side panel using its two blue pin ends.
+
+STEP 614
+END
+ATTACH dump-bed-extension-side-two
+CONNECT p2780-294.pin1 -> p18945-12.hole20~ STIFF
+CONNECT p2780-318.pin1 -> p15458-5.hole1 STIFF
+CONNECT p2780-319.pin1 -> p15458-5.hole2 STIFF
+WHY Fits the matching extension side to the opposite sloped bed side on the existing black pins; the angled panel mounting depth is estimated.
+
+STEP 615
+ADD p18945-13 18945 yellow
+ADD p18945-14 18945 yellow
+CONNECT p42924-148.pin1 -> p18945-13.hole2 STIFF
+CONNECT p42924-146.pin1 -> p18945-14.hole2 STIFF
+WHY Adds the two inner extension panels between the side assemblies and central floor, locating their inner ends on the projecting blue pins.
+
+STEP 616
+ADD p59443-30 59443 yellow
+ADD p59443-31 59443 yellow
+ADD p59443-32 59443 yellow
+ADD p59443-33 59443 yellow
+ADD p4519-27 4519 yellow
+ADD p4519-28 4519 yellow
+ADD p4519-29 4519 yellow
+ADD p6536-28 6536 yellow
+CONNECT p4519-27.axle1 -> p59443-30.axlehole1 LOCKED
+CONNECT p4519-27.axle3 -> p59443-31.axlehole2 LOCKED
+CONNECT p4519-28.axle1 -> p59443-31.axlehole1 LOCKED
+CONNECT p4519-28.axle3 -> p59443-32.axlehole2 LOCKED
+CONNECT p4519-29.axle1 -> p59443-32.axlehole1 LOCKED
+CONNECT p4519-29.axle3 -> p59443-33.axlehole2 LOCKED
+CONNECT p4519-28.axle2 -> p6536-28.axlehole1 LOCKED
+CONNECT p11214-40.axle1 -> p59443-30.axlehole2 LOCKED
+ADD p59443-34 59443 yellow
+ADD p59443-35 59443 yellow
+ADD p59443-36 59443 yellow
+ADD p59443-37 59443 yellow
+ADD p4519-30 4519 yellow
+ADD p4519-31 4519 yellow
+ADD p4519-32 4519 yellow
+ADD p6536-29 6536 yellow
+CONNECT p4519-30.axle3 -> p59443-34.axlehole1 LOCKED
+CONNECT p4519-30.axle1 -> p59443-35.axlehole2 LOCKED
+CONNECT p4519-31.axle3 -> p59443-35.axlehole1 LOCKED
+CONNECT p4519-31.axle1 -> p59443-36.axlehole2 LOCKED
+CONNECT p4519-32.axle3 -> p59443-36.axlehole1 LOCKED
+CONNECT p4519-32.axle1 -> p59443-37.axlehole2 LOCKED
+CONNECT p4519-31.axle2 -> p6536-29.axlehole1 LOCKED
+CONNECT p11214-39.axle1 -> p59443-34.axlehole2 LOCKED
+WHY Builds two identical yellow side rails, each from four two-length axle joiners, three three-length axles and a central perpendicular connector. Fits their end joiners onto the projecting red axle-pins on both sides of the bed, as shown on page 368.
+
+STEP 617
+GROUP dump-bed-side-extension-wall-one
+ADD p15458-6 15458 yellow
+ADD p32524-28 32524 yellow
+ADD p2780-352 2780 black
+CONNECT p2780-352.pin2 -> p15458-6.? STIFF
+ADD p2780-353 2780 black
+CONNECT p2780-353.pin2 -> p15458-6.? STIFF
+ADD p2780-354 2780 black
+CONNECT p2780-354.pin2 -> p15458-6.? STIFF
+ADD p2780-355 2780 black
+CONNECT p2780-355.pin2 -> p15458-6.? STIFF
+CONNECT p2780-352.pin1 -> p32524-28.hole3 STIFF
+CONNECT p2780-355.pin1 -> p32524-28.hole7 STIFF
+END
+ATTACH dump-bed-side-extension-wall-one
+CONNECT p42924-152.pin1 -> p15458-6.hole15 STIFF
+CONNECT p42924-163.pin1 -> p15458-6.hole16 STIFF
+WHY Prepares a narrow yellow side-wall panel with four black pins, fits a seven-hole yellow reinforcing beam onto two of them, applies sticker 5 and mounts the wall on the two existing blue pins. The four transverse panel insertion points are unresolved.
+
+STEP 618
+GROUP dump-bed-front-corner-3
+ADD p55615-3 49130 lightgray
+ADD p32524-29 32524 yellow
+CONNECT p55615-3.pin3 -> p32524-29.hole3 STIFF
+CONNECT p55615-3.pin4 -> p32524-29.hole5 STIFF
+WHY Fits a grey perpendicular multi-pin bracket to a yellow seven-hole beam to start the front upper corner brace.
+
+STEP 619
+ADD p2780-357 2780 black
+ADD p2780-358 2780 black
+ADD p42924-165 42924 blue
+CONNECT p2780-357.pin1 -> p55615-3.hole2 STIFF
+CONNECT p2780-358.pin1 -> p55615-3.hole5 STIFF
+CONNECT p42924-165.pin1 -> p55615-3.hole3 STIFF
+WHY Inserts two black friction pins and a long blue pin into the grey corner bracket.
+
+STEP 620
+ADD p32278-13 32278 yellow
+ADD p2780-356 2780 black
+CONNECT p55615-3.pin1 -> p32278-13.hole14 STIFF
+CONNECT p2780-357.pin2 -> p32278-13.hole15 STIFF
+CONNECT p2780-356.pin1 -> p32278-13.hole1 STIFF
+WHY Adds the long fifteen-hole yellow side brace to the grey bracket and adds a black pin at its far end.
+
+STEP 621
+END
+ATTACH dump-bed-front-corner-3
+CONNECT p2780-356.pin2 -> p15458-6.hole14 STIFF
+WHY Fits the long corner-brace assembly along the upper side of the bed, engaging its far black pin in the narrow extension wall.
+
+STEP 622
+GROUP dump-bed-side-extension-wall-two
+ADD p15458-7 15458 yellow
+ADD p32524-30 32524 yellow
+ADD p2780-359 2780 black
+CONNECT p2780-359.pin1 -> p15458-7.? STIFF
+ADD p2780-360 2780 black
+CONNECT p2780-360.pin1 -> p15458-7.? STIFF
+ADD p2780-361 2780 black
+CONNECT p2780-361.pin1 -> p15458-7.? STIFF
+ADD p2780-362 2780 black
+CONNECT p2780-362.pin1 -> p15458-7.? STIFF
+CONNECT p2780-359.pin2 -> p32524-30.hole3 STIFF
+CONNECT p2780-362.pin2 -> p32524-30.hole7 STIFF
+END
+ATTACH dump-bed-side-extension-wall-two
+CONNECT p42924-154.pin1 -> p15458-7.hole1 STIFF
+CONNECT p42924-164.pin1 -> p15458-7.hole2 STIFF
+WHY Builds the opposite narrow yellow side wall with four black pins and a seven-hole reinforcing beam, applies sticker 7 and fits it to the existing blue pins. Its transverse panel insertion points remain unresolved.
+
+STEP 623
+GROUP dump-bed-front-corner-4
+ADD p55615-4 49130 lightgray
+ADD p32524-31 32524 yellow
+CONNECT p55615-4.pin3 -> p32524-31.hole3 STIFF
+CONNECT p55615-4.pin4 -> p32524-31.hole5 STIFF
+WHY Fits a grey perpendicular multi-pin bracket to a yellow seven-hole beam to start the front upper corner brace.
+
+STEP 624
+ADD p2780-364 2780 black
+ADD p2780-365 2780 black
+ADD p42924-166 42924 blue
+CONNECT p2780-364.pin2 -> p55615-4.hole2 STIFF
+CONNECT p2780-365.pin2 -> p55615-4.hole5 STIFF
+CONNECT p42924-166.pin1 -> p55615-4.hole3 STIFF
+WHY Inserts two black friction pins and a long blue pin into the grey corner bracket.
+
+STEP 625
+ADD p32278-14 32278 yellow
+ADD p2780-363 2780 black
+CONNECT p55615-4.pin1 -> p32278-14.hole14 STIFF
+CONNECT p2780-364.pin1 -> p32278-14.hole15 STIFF
+CONNECT p2780-363.pin2 -> p32278-14.hole1 STIFF
+WHY Adds the long fifteen-hole yellow side brace to the grey bracket and adds a black pin at its far end.
+
+STEP 626
+END
+ATTACH dump-bed-front-corner-4
+CONNECT p2780-363.pin1 -> p15458-7.hole4 STIFF
+WHY Fits the long corner-brace assembly along the upper side of the bed, engaging its far black pin in the narrow extension wall.
+
+STEP 627
+ADD p32525-28 32525 yellow
+ADD p15100-24 65487 yellow
+CONNECT p15100-24.pin1 -> p32525-28.hole1 STIFF
+ADD p32525-29 32525 yellow
+ADD p15100-25 65487 yellow
+CONNECT p15100-25.pin1 -> p32525-29.hole11 STIFF
+CONNECT p42924-141.pin2 -> p32525-28.hole11 STIFF
+CONNECT p42924-165.pin2 -> p32525-28.hole3 STIFF
+CONNECT p2780-358.pin2 -> p32525-28.hole5 STIFF
+CONNECT p2780-290.pin2 -> p32525-28.hole7 STIFF
+CONNECT p42924-142.pin2 -> p32525-29.hole1 STIFF
+CONNECT p42924-166.pin2 -> p32525-29.hole9 STIFF
+CONNECT p2780-365.pin1 -> p32525-29.hole7 STIFF
+CONNECT p2780-292.pin1 -> p32525-29.hole5 STIFF
+WHY Adds two eleven-hole beams across the top of the front wall and corner brackets, fitting them onto the four black and four blue pins and inserting a yellow perpendicular pin connector into each outer end.
+
+STEP 628
+ADD p87083-23 87083 darkgray
+CONNECT p87083-23.axle4 -> p32524-31.hole1 TURNS
+CONNECT p87083-23.axle3 -> p15100-25.hole1 TURNS
+CONNECT p87083-23.axle2 -> p32348-1.axlehole1 LOCKED
+CONNECT p87083-23.axle1 -> p64782-3.hole4 TURNS
+ADD p87083-24 87083 darkgray
+CONNECT p87083-24.axle4 -> p32524-29.hole1 TURNS
+CONNECT p87083-24.axle3 -> p15100-24.hole1 TURNS
+CONNECT p87083-24.axle2 -> p32348-2.axlehole1 LOCKED
+CONNECT p87083-24.axle1 -> p64782-4.hole41 TURNS
+WHY Locks both front upper corner stacks together with dark-grey four-length stop axles, passing through round beam and connector holes and locking into the bent-brace cross holes.
+
+STEP 629
+GROUP dump-bed-front-top-cap
+ADD p15458-8 15458 yellow
+ADD p15458-9 15458 yellow
+ADD p32523-36 32523 yellow
+ADD p42924-167 42924 blue
+ADD p42924-168 42924 blue
+ADD p32278-15 32278 yellow
+CONNECT p42924-167.pin1 -> p15458-8.hole15 STIFF
+CONNECT p42924-167.pin2 -> p32523-36.hole1 STIFF
+CONNECT p42924-167.pin3 -> p15458-9.hole1 STIFF
+CONNECT p42924-168.pin1 -> p15458-8.hole16 STIFF
+CONNECT p42924-168.pin2 -> p32523-36.hole3 STIFF
+CONNECT p42924-168.pin3 -> p15458-9.hole2 STIFF
+ADD p2780-366 2780 black
+CONNECT p2780-366.pin1 -> p15458-9.hole6~ STIFF
+CONNECT p2780-366.pin2 -> p32278-15.hole5 STIFF
+ADD p2780-367 2780 black
+CONNECT p2780-367.pin1 -> p15458-9.hole11~ STIFF
+CONNECT p2780-367.pin2 -> p32278-15.hole1 STIFF
+ADD p2780-368 2780 black
+CONNECT p2780-368.pin1 -> p15458-8.hole11~ STIFF
+CONNECT p2780-368.pin2 -> p32278-15.hole11 STIFF
+ADD p2780-369 2780 black
+CONNECT p2780-369.pin1 -> p15458-8.hole6~ STIFF
+CONNECT p2780-369.pin2 -> p32278-15.hole15 STIFF
+END
+ATTACH dump-bed-front-top-cap
+CONNECT p42924-165.pin3 -> p15458-9.hole13 STIFF
+CONNECT p42924-141.pin3 -> p15458-9.hole3 STIFF
+CONNECT p42924-166.pin3 -> p15458-8.hole3 STIFF
+CONNECT p42924-142.pin3 -> p15458-8.hole13 STIFF
+WHY Joins two narrow yellow panels end to end around a three-hole beam and two blue pins, adds a fifteen-hole reinforcing beam on four black pins and fits the cap onto the four projecting blue front-wall pins. Transverse panel insertion depths are estimated.
