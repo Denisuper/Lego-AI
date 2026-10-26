@@ -3283,3 +3283,203 @@ CONNECT p11214-2.pin2 -> p32526-5.hole5 STIFF
 CONNECT p6558-49.pin3 -> p41239-3.hole12 STIFF
 WHY Turns the chassis and fits the matching black bent upright with a blue long pin on the left side, joining the waiting red pin and black side-rail hole. Both upright ends remain exposed for the body structure.
 
+STEP 322
+GROUP dashboard-assembly
+ADD p15458-1 15458 black
+ADD p2780-76 2780 black
+ADD p2780-77 2780 black
+ADD p2780-78 2780 black
+ADD p2780-79 2780 black
+CONNECT p2780-76.pin2 -> p15458-1.hole9~ STIFF
+CONNECT p2780-77.pin2 -> p15458-1.hole2 STIFF
+CONNECT p2780-78.pin1 -> p15458-1.hole9~ STIFF
+CONNECT p2780-79.pin1 -> p15458-1.hole16 STIFF
+WHY Starts the dashboard assembly with a black three-by-eleven panel and two black friction pins in each end. The centre end pins occupy opposite ends of the catalog longitudinal through-bore; their depth along that long bore is estimated.
+
+STEP 323
+ADD p18654-13 18654 olivegreen
+ADD p18654-14 18654 olivegreen
+CONNECT p2780-77.pin1 -> p18654-13.hole1 STIFF
+CONNECT p2780-79.pin2 -> p18654-14.hole1 STIFF
+WHY Fits an olive-green round pin sleeve onto the lower black pin at each end of the dashboard panel, establishing the coloured end details.
+
+STEP 324
+ADD p22961-5 22961 black
+CONNECT p22961-5.axle1 -> p15458-1.hole1 TURNS
+WHY Inserts the axle end of a black perpendicular connector into the upper round hole at one end of the dashboard panel. Its round pin hole faces outward as pictured, ready for the support added next.
+
+STEP 325
+ADD p18651-5 18651 black
+ADD p2780-80 2780 black
+ADD p63869-16 63869 black
+CONNECT p18651-5.pin1 -> p63869-16.hole1 STIFF
+CONNECT p2780-80.pin1 -> p63869-16.hole3 STIFF
+CONNECT p18651-5.axle2 -> p15458-1.hole3 TURNS
+CONNECT p2780-80.pin2 -> p22961-5.hole1 STIFF
+WHY Builds a black triple perpendicular support with a long black axle-pin and black friction pin, then joins it to the dashboard panel and the waiting black end connector. Its upper cross socket faces along the panel for the angled trim supports.
+
+STEP 326
+ADD p4519-36 4519 lightgray
+ADD p32192-1 32192 darktan
+ADD p32192-2 32192 darktan
+CONNECT p4519-36.axle3 -> p32192-1.axlehole1 LOCKED
+CONNECT p4519-36.axle2 -> p63869-16.axlehole1 LOCKED
+CONNECT p4519-36.axle1 -> p32192-2.axlehole1 LOCKED
+WHY Passes a grey three-length axle through the upper black support and fits a dark-tan angled axle connector to each end, matching their opposing outer directions.
+
+STEP 327
+GROUP dashboard-face
+ADD p32525-5 32525 white
+WHY Starts the dashboard face with a white eleven-hole beam and applies sticker 9 to its indicated upper face, keeping the DEFENDER lettering upright in the pictured direction.
+
+STEP 328
+ADD p2780-81 2780 black
+ADD p2780-82 2780 black
+ADD p32000-1 32000 darkgray
+CONNECT p2780-81.pin2 -> p32525-5.hole4 STIFF
+CONNECT p2780-82.pin2 -> p32525-5.hole5 STIFF
+CONNECT p2780-81.pin1 -> p32000-1.hole1 STIFF
+CONNECT p2780-82.pin1 -> p32000-1.hole3 STIFF
+WHY Pins a dark-grey two-hole Technic brick onto the fourth and fifth holes of the white beam with two black friction pins. Its two ordinary studs face up to carry the logo tile.
+
+STEP 329
+ADD p2780-83 2780 black
+ADD p43093-40 43093 blue
+ADD p60483-29 60483 darktan
+CONNECT p2780-83.pin2 -> p32525-5.hole6 STIFF
+CONNECT p43093-40.pin1 -> p32525-5.hole7 STIFF
+CONNECT p2780-83.pin1 -> p60483-29.hole1 STIFF
+CONNECT p43093-40.axle1 -> p60483-29.axlehole1 LOCKED
+WHY Adds a dark-tan axle-and-pin block beside the grey dashboard brick, using a black friction pin through its round hole and a blue axle-pin through its cross socket.
+
+STEP 330
+ADD dashboard-logo-tile 26603 black
+CONNECT dashboard-logo-tile.? -> p32000-1.? STIFF
+WHY Applies sticker 10 to the black two-by-three tile and presses it onto the two studs of the dark-grey dashboard brick, orienting the Land Rover logo as pictured. The ordinary stud clutch is not named in the connection catalog.
+
+STEP 331
+ADD p2780-84 2780 black
+ADD p60483-30 60483 darktan
+CONNECT p2780-84.pin2 -> p32525-5.hole8 STIFF
+CONNECT p2780-84.pin1 -> p60483-30.hole1 STIFF
+END
+WHY Fits the second dark-tan axle-and-pin block beside the first with a black friction pin, leaving its cross socket open for the stopped axle that mounts the dashboard face.
+
+STEP 332
+ATTACH dashboard-face
+ADD p87083-9 87083 darkgray
+CONNECT p18651-5.axle1 -> p32525-5.hole1 TURNS
+CONNECT p87083-9.axle2 -> p60483-30.axlehole1 LOCKED
+CONNECT p87083-9.axle3 -> p32525-5.hole9 TURNS
+CONNECT p87083-9.axle4 -> p15458-1.hole13 TURNS
+WHY Fits the completed dashboard face onto the existing black axle-pin at one end and passes a stopped dark-grey four-length axle through the other end of the black panel, white beam and dark-tan block. The cross socket locks the block to the axle while the panel and beam holes provide round supports.
+
+STEP 333
+ADD p40490-16 40490 darktan
+ADD p2780-85 2780 black
+ADD p2780-86 2780 black
+ADD p2780-87 2780 black
+ADD p43093-41 43093 blue
+ADD p60483-31 60483 black
+CONNECT p2780-85.pin2 -> p40490-16.hole9 STIFF
+CONNECT p2780-86.pin2 -> p40490-16.hole5 STIFF
+CONNECT p2780-87.pin2 -> p40490-16.hole1 STIFF
+CONNECT p43093-41.pin1 -> p40490-16.hole2 STIFF
+CONNECT p2780-87.pin1 -> p60483-31.hole1 STIFF
+CONNECT p43093-41.axle1 -> p60483-31.axlehole1 LOCKED
+CONNECT p2780-85.pin1 -> p15458-1.hole7~ STIFF
+CONNECT p2780-86.pin1 -> p15458-1.hole12~ STIFF
+WHY Builds the dark-tan nine-hole upper trim beam with three black friction pins, a blue axle-pin and a black axle-and-pin block, then attaches it to the dashboard panel. The two downward pins occupy the near ends of the panel transverse bores; their seating depths along those long holes are estimated.
+
+STEP 334
+ADD p2780-88 2780 black
+ADD p2780-89 2780 black
+ADD p6536-41 6536 darkgray
+ADD p6536-42 6536 darkgray
+CONNECT p2780-88.pin2 -> p15458-1.hole14 STIFF
+CONNECT p2780-89.pin2 -> p15458-1.hole4 STIFF
+CONNECT p2780-88.pin1 -> p6536-41.hole1 STIFF
+CONNECT p2780-89.pin1 -> p6536-42.hole1 STIFF
+END
+WHY Turns the dashboard over, applies sticker 8 to the indicated black panel face and fits two dark-grey perpendicular mounting connectors with black friction pins. Their free cross sockets face sideways for mounting the dashboard to the chassis.
+
+STEP 335
+ATTACH dashboard-assembly
+ADD p24316-14 24316 brown
+ADD p24316-15 24316 brown
+CONNECT p24316-14.axle2 -> p6536-42.axlehole1 LOCKED
+CONNECT p24316-14.axle3 -> p32526-4.hole1 TURNS
+CONNECT p24316-15.axle2 -> p6536-41.axlehole1 LOCKED
+CONNECT p24316-15.axle3 -> p32526-5.hole1 TURNS
+WHY Places the dashboard across the two upright black body mounts and inserts a brown stopped three-length axle through each mount into a dark-grey dashboard connector. The brown axles lock to the dashboard connectors while their round upright holes allow the fitted assembly to pivot as shown.
+
+STEP 336
+ADD p32073-12 32073 yellow
+ADD p60483-32 60483 black
+ADD p60483-33 60483 black
+ADD p32054-17 32054 black
+ADD p32054-18 32054 black
+ADD p18654-15 18654 black
+ADD p18654-16 18654 black
+ADD p18654-17 18654 black
+CONNECT p32054-17.pin1 -> p60483-32.hole1 STIFF
+CONNECT p32054-18.pin1 -> p60483-33.hole1 STIFF
+CONNECT p32073-12.axle1 -> p32054-17.axlehole1 LOCKED
+CONNECT p32073-12.axle2 -> p18654-15.hole1 TURNS
+CONNECT p32073-12.axle3 -> p18654-16.hole1 TURNS
+CONNECT p32073-12.axle4 -> p18654-17.hole1 TURNS
+CONNECT p32073-12.axle5 -> p32054-18.axlehole1 LOCKED
+CONNECT p24316-14.axle1 -> p60483-32.axlehole1 LOCKED
+CONNECT p24316-15.axle1 -> p60483-33.axlehole1 LOCKED
+WHY Builds the dashboard cross-shaft from a yellow five-length axle with three black round spacers between two black long pin-and-bush connectors, each fitted through a black axle-and-pin block. Mounts both black block cross sockets onto the inner ends of the two brown dashboard pivot axles, following the continuation page. The spacer bores remain free around the yellow axle.
+
+STEP 337
+ADD p32054-19 32054 lightgray
+CONNECT p32054-19.pin1 -> p41239-1.hole13 STIFF
+WHY Turns the chassis to expose the gearbox underside and inserts a grey long pin with stop bush into the end hole of the black thirteen-hole bearing beam, leaving its other pin end available for the later outer support.
+
+STEP 338
+GROUP left-forward-side-frame
+ADD p60484-6 60484 black
+ADD p6558-50 6558 blue
+ADD p6558-51 6558 blue
+ADD p6558-52 6558 blue
+ADD p6558-53 6558 blue
+CONNECT p6558-50.pin1 -> p60484-6.hole3 STIFF
+CONNECT p6558-51.pin1 -> p60484-6.hole2 STIFF
+CONNECT p6558-52.pin1 -> p60484-6.hole1 STIFF
+CONNECT p6558-53.pin1 -> p60484-6.hole5 STIFF
+WHY Starts the left forward side frame with a black T-shaped five-hole beam and four blue long friction pins in the indicated outer holes. Keep their long projecting ends on the pictured face.
+
+STEP 339
+ADD p32525-6 32525 darkgray
+CONNECT p6558-52.pin2 -> p32525-6.hole2 STIFF
+CONNECT p6558-53.pin2 -> p32525-6.hole4 STIFF
+WHY Fits the dark-grey eleven-hole side beam over the two horizontally separated blue pins on the T-shaped bracket, leaving the two vertical pin ends exposed for the inner connector.
+
+STEP 340
+ADD p32062-27 32062 red
+ADD p41678-4 41678 lightgray
+ADD p42003-19 42003 lightgray
+CONNECT p32062-27.axle1~ -> p41678-4.axlehole1 LOCKED
+CONNECT p32062-27.axle2~ -> p41678-4.axlehole2 LOCKED
+CONNECT p32062-27.axle1~ -> p42003-19.axlehole1 LOCKED
+CONNECT p6558-50.pin2 -> p41678-4.hole1 STIFF
+CONNECT p6558-51.pin2 -> p41678-4.hole2 STIFF
+WHY Joins the grey split perpendicular connector and grey axle-and-pin connector with a red two-length axle, then presses the two grey round holes onto the waiting vertical blue pins. The red axle spans the split cross sockets and central cross socket; their half-width seating is estimated.
+
+STEP 341
+ADD p60484-7 60484 black
+CONNECT p6558-50.pin3 -> p60484-7.hole3 STIFF
+CONNECT p6558-51.pin3 -> p60484-7.hole2 STIFF
+CONNECT p6558-52.pin3 -> p60484-7.hole1 STIFF
+CONNECT p6558-53.pin3 -> p60484-7.hole5 STIFF
+END
+WHY Closes the side-frame bracket with the second black T-shaped beam on all four blue pin ends, sandwiching the dark-grey beam and grey perpendicular connector between the matching black faces.
+
+STEP 342
+ATTACH left-forward-side-frame
+CONNECT p2780-78.pin2 -> p32525-6.hole1 STIFF
+CONNECT p6558-49.pin1 -> p32525-6.hole6 STIFF
+WHY Turns the completed left side frame upright and mounts its long dark-grey beam on the exposed black dashboard end pin and blue chassis-side pin. The bracket hangs outward in the shown orientation to receive the side floor panel next.
+
