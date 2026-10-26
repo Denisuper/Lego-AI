@@ -4622,3 +4622,213 @@ CONNECT p11214-11.pin2 -> p39794-1.hole31 STIFF
 CONNECT p6558-81.pin3 -> p39794-1.? STIFF
 WHY Turns the overhead frame into position above the front seats and fits its short side onto the exposed red and blue upper body-frame pins highlighted in the booklet. The red pin receiving hole is cataloged; the adjacent central blue-pin receiving hole is not resolved by the current frame geometry and remains unknown.
 
+STEP 449
+GROUP right-body-side-frame
+ADD p24119-7 24119 black
+ADD p2780-140 2780 black
+ADD p2780-141 2780 black
+CONNECT p2780-140.pin1 -> p24119-7.hole11 STIFF
+CONNECT p2780-141.pin1 -> p24119-7.hole10 STIFF
+WHY Starts the opposite cabin side frame by placing two black friction pins in the end holes of a black curved panel.
+
+STEP 450
+ADD p24119-8 24119 black
+CONNECT p2780-140.pin2 -> p24119-8.hole2 STIFF
+CONNECT p2780-141.pin2 -> p24119-8.hole1 STIFF
+WHY Joins a second black curved panel to the first through the two waiting pins, forming the long lower sill.
+
+STEP 451
+ADD p6558-82 6558 blue
+ADD p6558-83 6558 blue
+ADD p2780-142 2780 black
+CONNECT p6558-82.pin1 -> p24119-8.hole4 STIFF
+CONNECT p6558-83.pin1 -> p24119-8.hole7 STIFF
+CONNECT p2780-142.pin1 -> p24119-8.hole9 STIFF
+WHY Adds two long blue friction pins and one short black friction pin along the sill for the bent upright beam.
+
+STEP 452
+ADD p32009-7 32009 black
+ADD p43093-52 43093 blue
+CONNECT p43093-52.axle1 -> p32009-7.axlehole2 LOCKED
+CONNECT p6558-82.pin2 -> p32009-7.hole2 STIFF
+CONNECT p6558-83.pin2 -> p32009-7.hole5 STIFF
+CONNECT p2780-142.pin2 -> p32009-7.hole6 STIFF
+WHY Turns the sill over, fits a blue axle-pin into the bent beam cross hole, then presses the black bent beam onto all three sill pins as pictured.
+
+STEP 453
+ADD p32526-7 32526 black
+ADD p32140-19 32140 olivegreen
+ADD p11214-12 11214 red
+ADD p6558-84 6558 blue
+ADD p2780-143 2780 black
+CONNECT p11214-12.axle1 -> p32140-19.axlehole1 LOCKED
+CONNECT p6558-84.pin1 -> p32140-19.hole3 STIFF
+CONNECT p2780-143.pin1 -> p32140-19.hole2 STIFF
+CONNECT p6558-84.pin2 -> p32526-7.hole2 STIFF
+CONNECT p11214-12.pin1 -> p32526-7.hole5 STIFF
+CONNECT p43093-52.pin1 -> p32526-7.hole3 STIFF
+CONNECT p11214-12.pin2 -> p32009-7.hole7 STIFF
+WHY Builds the olive corner bracket with a red axle-pin, blue long pin and black short pin. Adds its black L beam and mounts the corner to the two receiving locations on the lower bent beam.
+
+STEP 454
+ADD p41239-6 41239 black
+ADD p11214-13 11214 red
+ADD p11214-14 11214 red
+ADD p32184-33 32184 darkgray
+ADD p2780-144 2780 black
+ADD p2780-145 2780 black
+CONNECT p11214-13.axle1 -> p32184-33.axlehole2 LOCKED
+CONNECT p11214-14.axle1 -> p32184-33.axlehole1 LOCKED
+CONNECT p11214-13.pin1 -> p41239-6.hole2 STIFF
+CONNECT p11214-14.pin1 -> p41239-6.hole4 STIFF
+CONNECT p2780-144.pin1 -> p41239-6.hole6 STIFF
+CONNECT p2780-145.pin1 -> p41239-6.hole10 STIFF
+CONNECT p6558-84.pin3 -> p41239-6.hole1 STIFF
+CONNECT p11214-13.pin2 -> p32526-7.hole1 STIFF
+WHY Builds the tall thirteen-hole pillar with two red axle-pins held by a dark-grey cross connector and two black friction pins, then fits its lower end onto the blue and red corner pins.
+
+STEP 455
+ADD p32009-8 32009 black
+ADD p18651-11 18651 black
+ADD p2780-146 2780 black
+ADD p11214-15 11214 red
+ADD p6558-85 6558 blue
+CONNECT p18651-11.axle2 -> p32009-8.axlehole2 LOCKED
+CONNECT p2780-146.pin1 -> p32009-8.hole7 STIFF
+CONNECT p11214-15.axle1 -> p32009-8.axlehole1 LOCKED
+CONNECT p6558-85.pin1 -> p32009-8.hole2 STIFF
+CONNECT p18651-11.pin1 -> p41239-6.hole9 STIFF
+CONNECT p2780-146.pin2 -> p41239-6.hole11 STIFF
+WHY Builds the upper bent roof-side beam with a long black axle-pin, short black pin, red axle-pin and blue long pin, then seats its two lower fasteners in the upright pillar.
+
+STEP 456
+ADD p32316-14 32316 black
+CONNECT p6558-85.pin2 -> p32316-14.hole1 STIFF
+CONNECT p11214-15.pin1 -> p32316-14.hole3 STIFF
+END
+WHY Adds the black five-hole reinforcement to the upper red and blue pins, completing the free-standing right cabin frame.
+
+STEP 457
+ATTACH right-body-side-frame
+CONNECT p6558-60.pin3 -> p24119-7.hole4 STIFF
+CONNECT p55615-2.pin3 -> p24119-7.hole5~ STIFF
+CONNECT p11214-15.pin2 -> p39794-1.hole5 STIFF
+CONNECT p6558-85.pin3 -> p39794-1.? STIFF
+WHY Fits the second cabin side frame to the chassis at the lower sill and overhead frame. The grey hub pin enters a deep sill bore with estimated axial seating. The upper blue-pin receiving label remains unresolved in the rectangular frame catalog, as on the opposite side.
+
+STEP 458
+ADD p32140-20 32140 black
+ADD p43093-53 43093 blue
+ADD p2780-147 2780 black
+ADD p2780-148 2780 black
+ADD p18654-23 18654 black
+CONNECT p43093-53.axle1 -> p32140-20.axlehole1 LOCKED
+CONNECT p2780-147.pin1 -> p32140-20.hole2 STIFF
+CONNECT p2780-148.pin1 -> p32140-20.hole4 STIFF
+CONNECT p2780-148.pin2 -> p18654-23.hole1 STIFF
+CONNECT p43093-53.pin1 -> p15458-3.hole15 STIFF
+CONNECT p2780-147.pin2 -> p24119-8.hole11 STIFF
+WHY Builds the lower black L brace with a blue axle-pin and two black pins, covers the outer black pin with a round connector, then presses the brace into the floor and sill to retain the side frame.
+
+STEP 459
+ADD p32526-8 32526 black
+ADD p32526-9 32526 black
+CONNECT p43093-14.pin1 -> p32526-8.hole1 STIFF
+CONNECT p11214-14.pin2 -> p32526-8.hole5 STIFF
+CONNECT p2780-144.pin2 -> p32526-8.hole7 STIFF
+CONNECT p43093-13.pin1 -> p32526-9.hole1 STIFF
+CONNECT p11214-10.pin2 -> p32526-9.hole5 STIFF
+CONNECT p2780-132.pin1 -> p32526-9.hole7 STIFF
+WHY Fits the two black L braces between each cabin pillar and the rear seat support using the three existing pins on each side.
+
+STEP 460
+GROUP rear-lamp-pillar
+ADD p2431-1 2431 black
+ADD p18677-5 18677 black
+ADD p18677-6 18677 black
+CONNECT p18677-5.? -> p2431-1.? STIFF
+CONNECT p18677-6.? -> p2431-1.? STIFF
+WHY Builds the rear lamp carrier by pressing two black modified plates onto the underside of a black one-by-four tile, with their transverse pin holes aligned. Stud labels are not cataloged.
+
+STEP 461
+ADD p32002-3 32002 tan
+ADD p32002-4 32002 tan
+CONNECT p32002-3.pin1 -> p18677-5.? TURNS
+CONNECT p32002-4.pin1 -> p18677-6.? TURNS
+WHY Inserts the two tan frictionless pins into the modified plate holes from opposite sides as shown. These are smooth pins, so their round-hole engagements permit rotation; receiving plate hole labels remain unknown.
+
+STEP 462
+ADD p6141-1 6141 white
+ADD p6141-2 6141 white
+ADD p3024-4 3024 transred
+ADD p3024-5 3024 transred
+CONNECT p6141-1.? -> p18677-5.? STIFF
+CONNECT p6141-2.? -> p18677-6.? STIFF
+CONNECT p3024-4.? -> p6141-1.? STIFF
+CONNECT p3024-5.? -> p6141-2.? STIFF
+WHY Adds a white round plate and transparent-red square plate at each lamp position. The red lenses sit over the white round plates; ordinary stud interfaces remain unnamed in the catalog.
+
+STEP 463
+ADD p11478-21 11478 black
+CONNECT p32002-3.pin2 -> p11478-21.hole1~ TURNS
+CONNECT p32002-4.pin1 -> p11478-21.hole3~ TURNS
+WHY Fits the thin black five-hole beam across the lamp carrier pins. The half-width beam requires estimated axial seating on both smooth pin ends.
+
+STEP 464
+ADD p11478-22 11478 black
+ADD p32002-5 32002 tan
+ADD p18651-12 18651 black
+ADD p60483-44 60483 black
+CONNECT p32002-5.pin2 -> p11478-22.hole1~ TURNS
+CONNECT p18651-12.axle2 -> p11478-22.axlehole2~ LOCKED
+CONNECT p18651-12.axle1 -> p60483-44.axlehole1~ LOCKED
+CONNECT p18651-12.axle1 -> p11478-21.axlehole2~ LOCKED
+CONNECT p32002-4.pin2 -> p11478-22.hole3~ TURNS
+WHY Builds the opposite thin beam with a tan smooth pin and long black axle-pin, adds the black two-hole axle connector as a spacer, then joins it across the lamp carrier. The axle-pin keys the thin beams together; thin-beam and spacer seating depths are estimated. The two tan pins occupy opposite sides of the same lower beam bore.
+
+STEP 465
+ADD p32524-11 32524 olivegreen
+CONNECT p32002-5.pin1 -> p32524-11.hole4~ TURNS
+CONNECT p18651-12.pin1 -> p32524-11.hole7 STIFF
+WHY Fits the olive seven-hole beam over the exposed tan pin and black axle-pin. The tan pin seats deeply through the lamp sandwich; its axial position remains estimated.
+
+STEP 466
+ADD p40490-17 40490 black
+ADD p6558-86 6558 blue
+ADD p6558-87 6558 blue
+ADD p6558-88 6558 blue
+ADD p2780-149 2780 black
+ADD p2780-150 2780 black
+ADD p2780-151 2780 black
+CONNECT p6558-86.pin2 -> p40490-17.hole9 STIFF
+CONNECT p6558-87.pin2 -> p40490-17.hole8 STIFF
+CONNECT p6558-88.pin2 -> p40490-17.hole2 STIFF
+CONNECT p2780-149.pin1 -> p40490-17.hole4 STIFF
+CONNECT p2780-150.pin1 -> p40490-17.hole5 STIFF
+CONNECT p2780-151.pin1 -> p40490-17.hole6 STIFF
+CONNECT p6558-86.pin1 -> p32524-11.hole2 STIFF
+CONNECT p6558-87.pin1 -> p32524-11.hole1 STIFF
+WHY Builds the black nine-hole pillar with three blue long pins and three black short pins in the illustrated opposing directions, then attaches its lower two blue pins to the olive lamp beam.
+
+STEP 467
+ADD p18654-24 18654 black
+ADD p60483-45 60483 black
+ADD p24316-18 24316 brown
+CONNECT p2780-150.pin2 -> p18654-24.hole1 STIFF
+CONNECT p6558-88.pin1 -> p60483-45.hole1 STIFF
+CONNECT p24316-18.axle2 -> p60483-45.axlehole1 LOCKED
+CONNECT p24316-18.axle3 -> p40490-17.hole1 TURNS
+WHY Covers the centre black pin with a round connector, adds the black two-hole axle connector at the upper blue pin, then passes the brown three-stud stopped axle through the pillar round hole into the connector cross socket. The cross socket locks the axle while the pillar bore is a round bearing.
+
+STEP 468
+ADD p32526-10 32526 black
+CONNECT p6558-86.pin3 -> p32526-10.hole1 STIFF
+END
+WHY Turns the lamp pillar upright and adds the black L brace to the lower projecting blue pin, completing the subassembly.
+
+STEP 469
+ATTACH rear-lamp-pillar
+CONNECT p33299b-2.pin1 -> p60483-44.hole1 STIFF
+CONNECT p43093-10.pin1 -> p32526-10.hole6 STIFF
+WHY Installs the rear lamp pillar on the rear chassis using the highlighted lower round connector hole and L-brace hole, pressing them onto the existing black linkage pin and blue axle-pin.
+
