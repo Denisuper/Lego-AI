@@ -1494,3 +1494,172 @@ CONNECT p6558-27.pin3 -> p64178-2.hole17 STIFF
 CONNECT p6558-28.pin3 -> p64178-2.hole16 STIFF
 WHY Builds two grey seven-hole rails with grey half pins at one end and long blue pins in their middle holes. Fits them over the waiting frame pins and pushes the new blue pins through the frame, preparing the opposite suspension supports. Half-pin seating depths are estimated.
 
+STEP 139
+GROUP front-upper-pivot-support
+ADD p40490-9 40490 black
+ADD p15462-9 15462 brown
+ADD p6536-25 6536 darkgray
+CONNECT p15462-9.axle5 -> p40490-9.hole8 TURNS
+CONNECT p15462-9.axle4 -> p6536-25.axlehole1 LOCKED
+WHY Starts the second front suspension cross support with a black nine-hole beam, a brown stopped five-length shaft through its second hole from one end and a dark-grey perpendicular connector on that shaft.
+
+STEP 140
+ADD p60483-12 60483 black
+ADD p6536-24 6536 darkgray
+CONNECT p15462-9.axle3 -> p60483-12.axlehole1 LOCKED
+CONNECT p15462-9.axle2 -> p6536-24.axlehole1 LOCKED
+WHY Slides a black axle-and-pin block and another dark-grey perpendicular connector onto the brown shaft, forming the first upper suspension pivot support.
+
+STEP 141
+ADD p15462-10 15462 brown
+ADD p6536-27 6536 darkgray
+CONNECT p15462-10.axle5 -> p40490-9.hole2 TURNS
+CONNECT p15462-10.axle4 -> p6536-27.axlehole1 LOCKED
+WHY Inserts the matching brown stopped five-length shaft near the opposite end of the beam and adds a dark-grey perpendicular connector for the other side.
+
+STEP 142
+ADD p60483-13 60483 black
+ADD p6536-26 6536 darkgray
+CONNECT p15462-10.axle3 -> p60483-13.axlehole1 LOCKED
+CONNECT p15462-10.axle2 -> p6536-26.axlehole1 LOCKED
+WHY Completes the second upper pivot support with a black axle-and-pin block and the remaining dark-grey perpendicular connector, orienting both round bearing holes in line.
+
+STEP 143
+ADD p6558-29 6558 blue
+ADD p6558-30 6558 blue
+CONNECT p6558-29.pin2 -> p6536-25.hole1 STIFF
+CONNECT p6558-30.pin2 -> p6536-27.hole1 STIFF
+END
+WHY Inserts two long blue friction pins into the perpendicular connectors on the completed upper cross support, leaving their ends available for mounting to the grey rails.
+
+STEP 144
+ATTACH front-upper-pivot-support
+CONNECT p6558-29.pin3 -> p32524-6.hole6 STIFF
+CONNECT p6558-30.pin3 -> p32524-7.hole6 STIFF
+CONNECT p6558-27.pin1 -> p6536-24.hole1 STIFF
+CONNECT p6558-28.pin1 -> p6536-26.hole1 STIFF
+WHY Lowers the upper cross support onto the grey rails, engages the two waiting blue pins in its inner connectors and presses its own two long pins through the rail end holes.
+
+STEP 145
+
+WHY Swings all four thin black suspension links upwards about their existing brown pivot shafts so their free cross holes are accessible for the upper suspension arms; no new pieces or joints are added.
+
+STEP 146
+ADD p40490-10 40490 black
+ADD p3705-8 3705 red
+ADD p26287-6 26287 red
+ADD p18575-4 18575 tan
+CONNECT p3705-8.axle1~ -> p26287-6.axlehole1~ LOCKED
+CONNECT p3705-8.axle2 -> p40490-10.hole5 TURNS
+CONNECT p3705-8.axle3 -> p18575-4.axlehole1 LOCKED
+CONNECT p15462-9.axle1 -> p40490-10.hole8 TURNS
+CONNECT p15462-10.axle1 -> p40490-10.hole2 TURNS
+WHY Builds a red four-length shaft into the red smooth connector, passes the shaft through the middle of a black nine-hole beam and locks a tan twenty-tooth bevel gear onto its front. Fits the beam onto the two waiting brown upper support shafts; insertion into the long red connector is estimated.
+
+STEP 147
+ADD p15462-11 15462 brown
+ADD p57515-7 57515 darkgray
+CONNECT p15462-11.axle5 -> p40490-10.hole1 TURNS
+CONNECT p15462-11.axle4~ -> p11478-9.axlehole2 LOCKED
+CONNECT p15462-11.axle2~ -> p11478-12.axlehole2 LOCKED
+CONNECT p15462-11.axle3 -> p60483-13.hole1 TURNS
+CONNECT p15462-11.axle1 -> p40490-9.hole1 TURNS
+CONNECT p15462-11.axle4~ -> p57515-7.hole4 TURNS
+CONNECT p15462-11.axle2~ -> p57515-7.hole5 TURNS
+WHY Fits the first dark-grey upper suspension arm around the raised thin black links and passes a brown stopped five-length axle through both crossbeams, the pivot block, the thin-link cross holes and the arm fork. Keeps the ball socket facing outwards as highlighted; thin-link and fork shaft depths are estimated.
+
+STEP 148
+ADD p15462-12 15462 brown
+ADD p57515-8 57515 darkgray
+CONNECT p15462-12.axle5 -> p40490-10.hole9 TURNS
+CONNECT p15462-12.axle4~ -> p11478-10.axlehole2 LOCKED
+CONNECT p15462-12.axle2~ -> p11478-11.axlehole2 LOCKED
+CONNECT p15462-12.axle3 -> p60483-12.hole1 TURNS
+CONNECT p15462-12.axle1 -> p40490-9.hole9 TURNS
+CONNECT p15462-12.axle2~ -> p57515-8.hole4 TURNS
+CONNECT p15462-12.axle4~ -> p57515-8.hole5 TURNS
+WHY Fits the opposite dark-grey upper suspension arm around the raised thin black links and passes a brown stopped five-length axle through both crossbeams, the pivot block, the thin-link cross holes and the arm fork. Keeps the ball socket facing outwards as highlighted; thin-link and fork shaft depths are estimated.
+
+STEP 149
+ADD p23801-3 23801 black
+ADD p92909-3 92909 darkgray
+ADD p32494-3 32494 lightgray
+ADD p6628-9 6628 red
+ADD p6628-10 6628 red
+ADD p2736-5 2736 lightgray
+CONNECT p92909-3.? -> p23801-3.? TURNS
+CONNECT p32494-3.? -> p92909-3.? LOCKED
+CONNECT p6628-9.pin1 -> p23801-3.hole1~ STIFF
+CONNECT p6628-10.pin1 -> p23801-3.hole2~ STIFF
+CONNECT p2736-5.axle1 -> p23801-3.axlehole2 LOCKED
+CONNECT p4519-19.axle1~ -> p32494-3.axlehole1 LOCKED
+CONNECT p57515-7.? -> p6628-9.? TURNS
+CONNECT p57515-6.? -> p6628-10.? TURNS
+WHY Builds the first front steering carrier with a freely rotating dark-grey hub, grey CV socket, two red suspension towballs and one grey steering towball. Slides its CV socket onto the projecting drive shaft and snaps both suspension arms onto the red balls, keeping the red bush clear as highlighted. Hub retention, internal CV engagement and ball sockets are unnamed; pin and drive-shaft depths are estimated.
+
+STEP 150
+ADD p23801-4 23801 black
+ADD p92909-4 92909 darkgray
+ADD p32494-4 32494 lightgray
+ADD p6628-11 6628 red
+ADD p6628-12 6628 red
+ADD p2736-6 2736 lightgray
+CONNECT p92909-4.? -> p23801-4.? TURNS
+CONNECT p32494-4.? -> p92909-4.? LOCKED
+CONNECT p6628-11.pin1 -> p23801-4.hole1~ STIFF
+CONNECT p6628-12.pin1 -> p23801-4.hole2~ STIFF
+CONNECT p2736-6.axle1 -> p23801-4.axlehole1 LOCKED
+CONNECT p4519-18.axle3~ -> p32494-4.axlehole1 LOCKED
+CONNECT p57515-8.? -> p6628-11.? TURNS
+CONNECT p57515-5.? -> p6628-12.? TURNS
+WHY Builds the opposite front steering carrier with a freely rotating dark-grey hub, grey CV socket, two red suspension towballs and one grey steering towball. Slides its CV socket onto the projecting drive shaft and snaps both suspension arms onto the red balls, keeping the red bush clear as highlighted. Hub retention, internal CV engagement and ball sockets are unnamed; pin and drive-shaft depths are estimated.
+
+STEP 151
+ADD p4519-20 4519 lightgray
+ADD p4519-21 4519 lightgray
+ADD p32062-7 32062 red
+ADD p32062-8 32062 red
+ADD p11478-13 11478 black
+ADD p11478-14 11478 black
+ADD p11478-15 11478 black
+ADD p11478-16 11478 black
+CONNECT p4519-20.axle2 -> p57515-7.hole1 TURNS
+CONNECT p4519-20.axle1~ -> p11478-13.axlehole1 LOCKED
+CONNECT p4519-20.axle3~ -> p11478-14.axlehole1 LOCKED
+CONNECT p32062-7.axle1~ -> p11478-13.axlehole2 LOCKED
+CONNECT p32062-7.axle2~ -> p11478-14.axlehole2 LOCKED
+CONNECT p32062-7.axle1~ -> p57515-6.hole1 TURNS
+CONNECT p4519-21.axle2 -> p57515-8.hole1 TURNS
+CONNECT p4519-21.axle1~ -> p11478-15.axlehole1 LOCKED
+CONNECT p4519-21.axle3~ -> p11478-16.axlehole1 LOCKED
+CONNECT p32062-8.axle1~ -> p11478-15.axlehole2 LOCKED
+CONNECT p32062-8.axle2~ -> p11478-16.axlehole2 LOCKED
+CONNECT p32062-8.axle1~ -> p57515-5.hole1 TURNS
+WHY Builds two paired thin black upright links using grey three-length upper shafts and red two-length lower shafts, then fits them between the upper and lower suspension arm ends on both sides. The shafts turn in the arm round holes and lock into the thin-link cross holes; thin-link and short lower-shaft seating depths are estimated.
+
+STEP 152
+ADD p24316-6 24316 brown
+ADD p76138-1 76138 lightgray
+CONNECT p24316-6.axle1~ -> p57515-8.axlehole2~ LOCKED
+CONNECT p24316-6.axle2~ -> p57515-8.axlehole1~ LOCKED
+CONNECT p24316-6.axle2~ -> p76138-1.hole2 TURNS
+WHY Fits the first complete grey soft-spring shock into the upper suspension arm with a brown three-length stopped axle through its lower eye and the arm cross holes. These grey shocks are absent from the reference model; their shaft seating and the fork depths remain estimated from the booklet.
+
+STEP 153
+ADD p76537-5 76537 red
+CONNECT p24316-6.axle3~ -> p76537-5.hole2 TURNS
+WHY Adds the complete red hard-spring shock beside the grey soft-spring shock on the exposed end of the same brown shaft, then pushes the shaft fully home. The red shock can pivot on the shaft; its outboard seating is estimated because the reference omits the adjacent grey shock.
+
+STEP 154
+ADD p24316-7 24316 brown
+ADD p76138-2 76138 lightgray
+CONNECT p24316-7.axle1~ -> p57515-7.axlehole1~ LOCKED
+CONNECT p24316-7.axle2~ -> p57515-7.axlehole2~ LOCKED
+CONNECT p24316-7.axle2~ -> p76138-2.hole2 TURNS
+WHY Fits the opposite complete grey soft-spring shock into the upper suspension arm with a brown three-length stopped axle through its lower eye and the arm cross holes. These grey shocks are absent from the reference model; their shaft seating and the fork depths remain estimated from the booklet.
+
+STEP 155
+ADD p76537-6 76537 red
+CONNECT p24316-7.axle3~ -> p76537-6.hole2 TURNS
+WHY Adds the complete red hard-spring shock beside the grey soft-spring shock on the exposed end of the same brown shaft, then pushes the shaft fully home. The red shock can pivot on the shaft; its outboard seating is estimated because the reference omits the adjacent grey shock.
+
