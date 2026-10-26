@@ -2756,3 +2756,190 @@ CONNECT p3707-3.axle1 -> p59443-12.axlehole1 LOCKED
 CONNECT p3707-3.axle7 -> p32184-16.hole1 TURNS
 WHY Fits a black axle connector to the tan shaft end and inserts a red eight-length axle from the other side through the round bearing in the front frame. The connector joins the two shafts rotationally while the frame bearing lets the red shaft turn.
 
+STEP 267
+END
+ATTACH front-axle-module
+CONNECT p3707-3.axle8 -> gearbox-propshaft-long-front.axlehole2~ LOCKED
+CONNECT p32073-11.axle1 -> gearbox-propshaft-short-front.axlehole2~ LOCKED
+WHY Brings the completed front axle, engine and central gearbox module to the rear axle module. Threads the red eight-length axle into the long rear propshaft joint and the yellow shaft into the short propshaft joint, keeping both joint forks in the matching phase shown by the highlighted shafts. Complete-joint socket numbering is estimated; the side beams remain ready to be pinned in the next step.
+
+STEP 268
+CONNECT p6558-21.pin3 -> p32278-4.hole15 STIFF
+CONNECT p6558-22.pin3 -> p32278-3.hole15 STIFF
+CONNECT p3706-8.axle5 -> p32034-4.axlehole1 LOCKED
+WHY Pushes the two blue side pins into the rear ends of the long gearbox beams to secure the chassis halves. Slides the black cylinder shaft into the waiting rear axle connector as shown in the inset, completing that longitudinal shaft connection while preserving the propshaft joint alignment.
+
+STEP 269
+ADD p32525-3 32525 darkgray
+ADD p2780-65 2780 black
+ADD p6558-41 6558 blue
+ADD p6558-42 6558 blue
+ADD p6558-43 6558 blue
+CONNECT p2780-65.pin2 -> p32525-3.hole8 STIFF
+CONNECT p6558-41.pin2 -> p32525-3.hole6 STIFF
+CONNECT p6558-42.pin2 -> p32525-3.hole4 STIFF
+CONNECT p6558-43.pin2 -> p32525-3.hole3 STIFF
+CONNECT p2780-64.pin1 -> p32525-3.hole11 STIFF
+CONNECT p6558-40.pin1 -> p32525-3.hole9 STIFF
+CONNECT p6558-41.pin3 -> p60483-25.hole1 STIFF
+WHY Turns the chassis over and adds the first dark-grey eleven-hole longitudinal brace with one black and three blue friction pins in the indicated holes. Fits the brace to the waiting lower beam pins and engages the blue pin in the black end connector of the gearbox bearing frame.
+
+STEP 270
+ADD p3706-9 3706 black
+ADD p3713-38 3713 red
+CONNECT p3706-9.axle1 -> p32034-15.axlehole1 LOCKED
+CONNECT p3706-9.axle3 -> p6536-35.hole1 TURNS
+CONNECT p3706-9.axle5 -> p3713-38.axlehole1 LOCKED
+CONNECT p3706-9.axle6 -> p63869-9.hole1 TURNS
+WHY Inserts the black six-length axle through the two round chassis bearings into the waiting black axle connector, retaining it with a red bush. The axle turns freely in the round supports and turns together with the connected longitudinal shaft.
+
+STEP 271
+ADD p10928-3 10928 darkgray
+CONNECT p3706-9.axle4 -> p10928-3.axlehole1 LOCKED
+MESH p10928-3.teeth p3648b-3.teeth
+WHY Slides the dark-grey eight-tooth gear onto the black shaft between its bearing and red bush, meshing it with the adjacent twenty-four-tooth gear. Shift the axle only as shown to make room, then return it to its seated position so the bush and bearings retain the gear.
+
+STEP 272
+
+WHY Orients the two loose front universal-joint branches as highlighted, matching their fork phase before the next longitudinal shaft assembly. This is a positioning check with no added parts or new rigid connection; preserve both joints freedom to articulate.
+
+STEP 273
+ADD p32525-4 32525 darkgray
+ADD p2780-66 2780 black
+ADD p6558-44 6558 blue
+ADD p6558-45 6558 blue
+ADD p6558-46 6558 blue
+CONNECT p2780-66.pin2 -> p32525-4.hole8 STIFF
+CONNECT p6558-44.pin2 -> p32525-4.hole6 STIFF
+CONNECT p6558-45.pin2 -> p32525-4.hole4 STIFF
+CONNECT p6558-46.pin2 -> p32525-4.hole2 STIFF
+CONNECT p2780-63.pin1 -> p32525-4.hole11 STIFF
+CONNECT p6558-38.pin1 -> p32525-4.hole9 STIFF
+CONNECT p6558-44.pin3 -> p60483-24.hole1 STIFF
+WHY Adds the second dark-grey eleven-hole longitudinal brace with its black friction pin and three blue long pins, matching the pictured hole spacing. Attaches it to the waiting lower beam pins and the other black end connector of the gearbox bearing frame, completing the pair of lower side braces.
+
+STEP 274
+ADD p32013-10 32013 darkgray
+ADD p3706-10 3706 black
+ADD p59443-13 59443 black
+CONNECT p3707-2.axle1 -> p32013-10.axlehole1 LOCKED
+CONNECT p3706-10.axle1 -> p32034-10.axlehole2 LOCKED
+CONNECT p3706-10.axle3 -> p32013-10.hole1 TURNS
+CONNECT p3706-10.axle6 -> p59443-13.axlehole1 LOCKED
+WHY Turns the chassis upright and fits a dark-grey perpendicular bearing onto the red frame axle. Passes a black six-length shaft through its round hole into the waiting rear axle connector, with a black extension connector on the other end; the shaft remains free in the round bearing.
+
+STEP 275
+ADD p3706-11 3706 black
+CONNECT p3706-11.axle1 -> p59443-13.axlehole2 LOCKED
+CONNECT p3706-11.axle5 -> p6536-30.hole1 TURNS
+WHY Extends the longitudinal shaft with a second black six-length axle, sliding it through the round hole of the forward dark-grey connector and into the waiting black extension connector.
+
+STEP 276
+ADD p59443-14 59443 black
+ADD p59443-15 59443 black
+ADD p32062-19 32062 red
+CONNECT p32062-19.axle2 -> p59443-14.axlehole1 LOCKED
+CONNECT p32062-19.axle1 -> p59443-15.axlehole2 LOCKED
+CONNECT p3706-11.axle6 -> p59443-14.axlehole2 LOCKED
+WHY Joins two black axle connectors with a red two-length axle and fits the resulting extension onto the front end of the longitudinal black shaft. Leave the far cross socket aligned with the stopped shaft in the front axle module.
+
+STEP 277
+CONNECT p55013-2.axle1 -> p59443-15.axlehole1 LOCKED
+WHY Pushes the existing stopped dark-grey axle inward from the front until its end engages the waiting black connector, closing the longitudinal shaft run. This repositions an existing axle and adds no part; keep the surrounding gear and round bearings free to turn.
+
+STEP 278
+ADD p32526-2 32526 black
+ADD p32526-3 32526 black
+CONNECT p32073-9.axle5 -> p32526-2.hole5 TURNS
+CONNECT p43093-34.pin1 -> p32526-2.hole6 STIFF
+CONNECT p6558-39.pin3 -> p32526-2.hole7 STIFF
+CONNECT p32073-10.axle1 -> p32526-3.hole5 TURNS
+CONNECT p43093-33.pin1 -> p32526-3.hole6 STIFF
+CONNECT p6558-37.pin3 -> p32526-3.hole7 STIFF
+WHY Fits a black bent seven-hole beam to each side of the chassis, engaging the yellow axle and adjacent blue pin ends. The yellow axle ends turn in round holes while the blue friction pins hold the beams upright for the side structure that follows.
+
+STEP 279
+ADD p3707-4 3707 red
+ADD steering-column-upper-universal 61903 lightgray
+CONNECT p3707-4.axle8 -> steering-column-upper-universal.axlehole1~ LOCKED
+CONNECT p3707-4.axle1~ -> front-gear-output-universal.axlehole2~ LOCKED
+WHY Fits a complete grey universal joint to the red eight-length steering-column axle and inserts the other end into the waiting universal joint above the front gear tower. Preserve fork alignment as pictured; complete-joint socket numbering and the lower axle seating remain estimated.
+
+STEP 280
+ADD p41239-2 41239 black
+ADD p41239-3 41239 black
+CONNECT p2780-49.pin1 -> p41239-2.hole1 STIFF
+CONNECT p11214-3.pin1~ -> p41239-2.hole10 STIFF
+CONNECT p6558-35.pin1 -> p41239-2.hole11 STIFF
+CONNECT p87082-7.pin2 -> p41239-2.hole13 STIFF
+CONNECT p2780-50.pin2 -> p41239-3.hole1 STIFF
+CONNECT p11214-2.pin1 -> p41239-3.hole10 STIFF
+CONNECT p6558-36.pin1 -> p41239-3.hole11 STIFF
+CONNECT p87082-6.pin1 -> p41239-3.hole13 STIFF
+WHY Fits black thirteen-hole rails along both sides of the engine and gearbox, engaging the four waiting pin ends on each side. Keep the highlighted universal-joint forks aligned while closing these rails; the right red pin depth remains estimated.
+
+STEP 281
+GROUP steering-column-bracket
+ADD p18651-4 18651 black
+ADD p6536-37 6536 darkgray
+ADD p6536-38 6536 darkgray
+CONNECT p18651-4.axle2 -> p6536-37.axlehole1 LOCKED
+CONNECT p18651-4.axle1 -> p6536-38.axlehole1 LOCKED
+WHY Starts the steering-column bracket by threading the axle end of a long black axle-pin through two dark-grey perpendicular connectors. Orient their round holes at right angles as pictured.
+
+STEP 282
+ADD p15100-3 15100 lightgray
+ADD p4274-9 4274 lightgray
+ADD p98138-3 98138 black
+CONNECT p4274-9.pin2~ -> p15100-3.hole1 TURNS
+CONNECT p98138-3.? -> p4274-9.? STIFF
+CONNECT p15100-3.pin1 -> p6536-37.hole1 STIFF
+WHY Builds a grey perpendicular pin connector with a grey half pin and black round tile cap, then fits its friction pin into the first dark-grey connector. The half pin turns in the round bore; its seating is estimated and its stud-to-tile interface is unnamed.
+
+STEP 283
+ADD p32140-10 32140 black
+ADD p4274-10 4274 lightgray
+ADD steering-bracket-second-half-pin 4274 lightgray
+ADD p98138-4 98138 black
+CONNECT p4274-10.pin2~ -> p32140-10.hole4 TURNS
+CONNECT steering-bracket-second-half-pin.pin2~ -> p32140-10.? TURNS
+CONNECT p98138-4.? -> p4274-10.? STIFF
+CONNECT p18651-4.pin1 -> p32140-10.hole3 STIFF
+WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The booklet specifies two half pins while the geometric reference includes only one here; the second receiving hole remains explicitly unresolved. Half-pin seating and the ordinary tile clutch are also marked as uncertain.
+
+STEP 284
+END
+WHY Folds the steering-column bracket into the compact angle shown, bringing the capped grey connector beside the black L-shaped beam. This reorients the existing bracket without adding a part or a new rigid connection.
+
+STEP 285
+ATTACH steering-column-bracket
+CONNECT p3706-7.axle6 -> p32140-10.axlehole1 LOCKED
+WHY Raises the red steering-column shaft and mounts the finished bracket on the exposed black upper-linkage axle. Its black L-shaped beam locks to that axle while its offset round bearing remains ready to support the steering-wheel shaft.
+
+STEP 286
+ADD p4519-34 4519 lightgray
+ADD p2741-1 2741 black
+ADD p3068b-1 3068b black
+CONNECT p3068b-1.? -> p2741-1.? STIFF
+CONNECT p4519-34.axle3~ -> p2741-1.axlehole1 LOCKED
+CONNECT p4519-34.axle2 -> p6536-38.hole1 TURNS
+CONNECT p4519-34.axle1 -> steering-column-upper-universal.axlehole2~ LOCKED
+WHY Applies sticker 17 to the black square tile and fits it to the steering-wheel centre, then adds a grey three-length axle. Passes that axle through the bracket round bearing into the upper universal joint so the wheel drives the red steering shaft. Wheel seating and complete-joint socket numbering are estimated; the ordinary tile clutch is unnamed.
+
+STEP 287
+ADD p41678-2 41678 lightgray
+ADD p2780-67 2780 black
+CONNECT p2780-67.pin1 -> p41678-2.hole2 STIFF
+CONNECT p2780-67.pin2 -> p40490-13.hole9 STIFF
+ADD p2780-68 2780 black
+CONNECT p2780-68.pin1 -> p41678-2.hole1 STIFF
+CONNECT p2780-68.pin2 -> p40490-13.hole8 STIFF
+ADD p41678-3 41678 lightgray
+ADD p2780-69 2780 black
+CONNECT p2780-69.pin1 -> p41678-3.hole2 STIFF
+CONNECT p2780-69.pin2 -> p40490-13.hole2 STIFF
+ADD p2780-70 2780 black
+CONNECT p2780-70.pin1 -> p41678-3.hole1 STIFF
+CONNECT p2780-70.pin2 -> p40490-13.hole1 STIFF
+WHY Builds two grey perpendicular double connectors with two black friction pins each and presses them onto the outer pairs of holes in the engine crossbeam. These establish the upper cross-axle mounts on both sides of the six-cylinder engine.
+

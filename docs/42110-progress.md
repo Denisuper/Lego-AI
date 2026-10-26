@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. Source transcription currently reaches step 266, page 150, with 796 introduced pieces, no excess by part and colour and zero notation errors. The table and JSONL match; the remaining 1,777 inventory pieces are not yet transcribed. 91 unknown and 286 estimated endpoints remain explicit, including differential carrier posts, complete universal-joint orientation and suspension ball sockets. Continue at source step 267, page 151.
+The original 496-page booklet and 2,573-piece inventory are preserved. Source transcription currently reaches step 287, page 168, with 841 introduced pieces, no excess by part and colour and zero notation errors. The table and JSONL match; the remaining 1,732 inventory pieces are not yet transcribed. 98 unknown and 297 estimated endpoints remain explicit, including differential carrier posts, complete universal-joint orientation and suspension ball sockets. Continue at source step 288, page 169.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -13,3 +13,5 @@ The [official LDraw 32072 definition](https://library.ldraw.org/library/official
 Source steps 152 and 154 introduce the two complete grey soft-spring shocks (76138), which the reference model omits. They are included in the training inventory; the adjacent red hard-spring shock seating follows the booklet and remains estimated. The source also includes two black support pins at step 74 and a mirrored three-piece pivot connector at step 77 that are absent from the reference. Those pieces are retained with explicit uncertain endpoints.
 
 The notation checker now accepts MESH for the existing gear-rack part type without requiring a rotary tooth count. Source step 189 shows the twelve-tooth steering pinion engaging rack 87761. Regression checks cover that valid mesh and a smooth beam that must still be rejected; all eleven checker tests pass.
+
+At source step 283, the booklet specifies two grey 4274 half pins but the geometric reference contains only one at this bracket. The additional instance is retained as steering-bracket-second-half-pin, with its receiving hole unresolved instead of omitted or assigned an invented exact hole. The bracket and steering-wheel tile clutches also remain explicitly unnamed.
