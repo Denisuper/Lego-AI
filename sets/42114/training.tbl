@@ -1628,8 +1628,8 @@ END
 WHY Prepares the Powered Up large motor with two black mounting pins on its side; the catalog does not name its sockets.
 
 STEP 135
-
-WHY Applies sticker 17 to the large motor in the position shown, identifying it before installation.
+ADD set-sticker-sheet 68303 anycolor
+WHY Starts using the supplied sticker sheet 68303 and applies its sticker 17 to the large motor in the position shown, identifying it before installation. The sheet is a consumable source for the later sticker applications, not a structural component.
 
 STEP 136
 ATTACH large-motor
@@ -6070,7 +6070,7 @@ CONNECT p32062-42.axle1 -> p41678-1.axlehole1 LOCKED
 CONNECT p32062-42.axle2 -> left-dump-actuator.? TURNS
 CONNECT p32062-45.axle1 -> p41678-2.axlehole1 LOCKED
 CONNECT p32062-45.axle2 -> right-dump-actuator.? TURNS
-WHY Retracts both long actuators as shown and pins a black split axle connector around each base with a red two-length axle. The actuator pivot interfaces are not cataloged.
+WHY Prepares both long actuators in the pictured retracted position and pins a black split axle connector around each rod-end pivot with a red two-length axle. The actuator pivot interfaces are not cataloged.
 
 STEP 553
 ADD p32062-43 32062 red
@@ -6400,9 +6400,11 @@ WHY Inserts a black friction pin and a long blue pin through adjacent end holes 
 
 STEP 580
 ADD p32348-1 32348 yellow
+ADD upper-bed-side-brace-pin-one 2780 black
 CONNECT p2780-324.pin1 -> p32348-1.hole3 STIFF
 CONNECT p42924-159.pin2 -> p32348-1.hole2 STIFF
-WHY Fits a yellow bent brace onto both end pins, leaving the blue pin projecting for the next cross brace.
+CONNECT upper-bed-side-brace-pin-one.pin1 -> p32348-1.? STIFF
+WHY Fits a yellow bent brace onto both end pins, leaving the blue pin projecting for the next cross brace, and inserts the additional black friction pin into the short arm as shown. That short-arm bore is not resolved; the reference model omits this pin.
 
 STEP 581
 
@@ -6442,9 +6444,11 @@ WHY Inserts a black friction pin and a long blue pin through adjacent end holes 
 
 STEP 586
 ADD p32348-2 32348 yellow
+ADD upper-bed-side-brace-pin-two 2780 black
 CONNECT p2780-327.pin2 -> p32348-2.hole3 STIFF
 CONNECT p42924-160.pin2 -> p32348-2.hole2 STIFF
-WHY Fits a yellow bent brace onto both end pins, leaving the blue pin projecting for the next cross brace.
+CONNECT upper-bed-side-brace-pin-two.pin1 -> p32348-2.? STIFF
+WHY Fits a yellow bent brace onto both end pins, leaving the blue pin projecting for the next cross brace, and inserts the additional black friction pin into the short arm as shown. That short-arm bore is not resolved; the reference model omits this pin.
 
 STEP 587
 
@@ -7370,3 +7374,380 @@ CONNECT p42924-190.pin2 -> p32316-35.hole1 STIFF
 CONNECT p2780-392.pin1 -> p32316-34.hole5 STIFF
 CONNECT p2780-393.pin2 -> p32316-35.hole5 STIFF
 WHY Adds grey five-hole beams over the projecting grey and blue pins on both sides and inserts a black friction pin into each free end for the longitudinal extensions.
+
+STEP 666
+ADD p32524-36 32524 yellow
+ADD p32278-17 32278 yellow
+ADD p32525-34 32525 yellow
+ADD p15100-32 65487 yellow
+ADD p2780-396 2780 black
+CONNECT p2780-396.pin2 -> p32278-17.hole15 STIFF
+CONNECT p2780-396.pin1 -> p32524-36.hole4 STIFF
+ADD p2780-397 2780 black
+CONNECT p2780-397.pin2 -> p32278-17.hole12 STIFF
+CONNECT p2780-397.pin1 -> p32524-36.hole1 STIFF
+ADD p2780-394 2780 black
+CONNECT p2780-394.pin2 -> p32525-34.hole11 STIFF
+CONNECT p2780-394.pin1 -> p32278-17.hole4 STIFF
+ADD p2780-395 2780 black
+CONNECT p2780-395.pin2 -> p32525-34.hole8 STIFF
+CONNECT p2780-395.pin1 -> p32278-17.hole1 STIFF
+CONNECT p15100-32.pin1 -> p32278-17.hole5 STIFF
+CONNECT p42924-190.pin3 -> p32525-34.hole1 STIFF
+CONNECT p2780-393.pin1 -> p32525-34.hole5 STIFF
+WHY Builds a long yellow underframe rail from seven-, fifteen- and eleven-hole beams joined by four black friction pins, inserts a yellow perpendicular pin connector and fits it to the existing blue and black side pins.
+
+STEP 667
+ADD p48989-13 65489 lightgray
+ADD p39793-4 39793 yellow
+ADD p48989-14 65489 lightgray
+CONNECT p48989-13.pin3 -> p39793-4.hole8 STIFF
+CONNECT p48989-13.pin4 -> p39793-4.hole9 STIFF
+CONNECT p48989-14.pin1 -> p39793-4.hole1 STIFF
+CONNECT p48989-14.pin2 -> p39793-4.hole2 STIFF
+CONNECT p48989-13.pin1 -> p32278-17.hole9 STIFF
+CONNECT p48989-13.pin2 -> p32278-17.hole7 STIFF
+WHY Fits two grey four-pin connectors to opposite ends of a yellow nine-hole perpendicular block, then attaches the crossmember to the first long underframe rail.
+
+STEP 668
+ADD p32524-37 32524 yellow
+ADD p32278-18 32278 yellow
+ADD p32525-35 32525 yellow
+ADD p15100-33 65487 yellow
+ADD p2780-400 2780 black
+CONNECT p2780-400.pin1 -> p32278-18.hole15 STIFF
+CONNECT p2780-400.pin2 -> p32524-37.hole4 STIFF
+ADD p2780-401 2780 black
+CONNECT p2780-401.pin1 -> p32278-18.hole12 STIFF
+CONNECT p2780-401.pin2 -> p32524-37.hole1 STIFF
+ADD p2780-398 2780 black
+CONNECT p2780-398.pin1 -> p32525-35.hole11 STIFF
+CONNECT p2780-398.pin2 -> p32278-18.hole4 STIFF
+ADD p2780-399 2780 black
+CONNECT p2780-399.pin1 -> p32525-35.hole8 STIFF
+CONNECT p2780-399.pin2 -> p32278-18.hole1 STIFF
+CONNECT p15100-33.pin1 -> p32278-18.hole5 STIFF
+CONNECT p42924-189.pin3 -> p32525-35.hole1 STIFF
+CONNECT p2780-392.pin2 -> p32525-35.hole5 STIFF
+CONNECT p48989-14.pin3 -> p32278-18.hole9 STIFF
+CONNECT p48989-14.pin4 -> p32278-18.hole7 STIFF
+WHY Builds a long yellow underframe rail from seven-, fifteen- and eleven-hole beams joined by four black friction pins, inserts a yellow perpendicular pin connector and fits it to the existing blue and black side pins and the rear grey connector.
+
+STEP 669
+ADD p2780-402 2780 black
+ADD p2780-403 2780 black
+ADD rear-underframe-mount-pin-one 2780 black
+ADD rear-underframe-mount-pin-two 2780 black
+CONNECT p2780-402.pin2 -> p48989-12.hole3 STIFF
+CONNECT p2780-403.pin2 -> p48989-11.hole3 STIFF
+CONNECT rear-underframe-mount-pin-one.pin2 -> p48989-13.hole3 STIFF
+CONNECT rear-underframe-mount-pin-two.pin2 -> p48989-14.hole3 STIFF
+WHY Adds all four black mounting pins shown in the booklet, one in each grey underframe connector. The OMR omits the rear pair, so those two pins use explicit separate instance names.
+
+STEP 670
+ADD p32278-19 32278 yellow
+ADD p32525-36 32525 yellow
+ADD p42924-191 42924 blue
+ADD p42924-192 42924 blue
+CONNECT p42924-191.pin1 -> p32278-19.hole13 STIFF
+CONNECT p42924-191.pin2 -> p32525-36.hole11 STIFF
+CONNECT p42924-192.pin1 -> p32278-19.hole3 STIFF
+CONNECT p42924-192.pin2 -> p32525-36.hole1 STIFF
+CONNECT p42924-187.pin1 -> p32278-19.hole15 STIFF
+WHY Joins fifteen- and eleven-hole yellow beams with two long blue pins, then mounts the long assembly to the projecting blue pin in the original L-beam.
+
+STEP 671
+ADD p32278-20 32278 yellow
+CONNECT p42924-191.pin3 -> p32278-20.hole13 STIFF
+CONNECT p42924-192.pin3 -> p32278-20.hole3 STIFF
+CONNECT p42924-187.pin3 -> p32278-20.hole15 STIFF
+WHY Adds the third yellow beam over the two blue join pins and the remaining end of the original blue L-beam pin, forming the central three-layer underframe arm.
+
+STEP 672
+GROUP dump-bed-underframe-panel-pair
+ADD p18945-17 18945 yellow
+ADD p2780-404 2780 black
+CONNECT p2780-404.pin1 -> p18945-17.hole6 STIFF
+ADD p2780-405 2780 black
+CONNECT p2780-405.pin1 -> p18945-17.hole13 STIFF
+ADD p18945-18 18945 yellow
+ADD p2780-406 2780 black
+CONNECT p2780-406.pin1 -> p18945-18.hole6 STIFF
+ADD p2780-407 2780 black
+CONNECT p2780-407.pin1 -> p18945-18.hole13 STIFF
+WHY Starts both copies of the underframe panel assembly shown by the 2x instruction, fitting two black friction pins into the long side of each broad yellow panel.
+
+STEP 673
+ADD p43093-90 43093 blue
+ADD p43093-91 43093 blue
+ADD p32039-7 32039 yellow
+ADD p32039-8 32039 yellow
+CONNECT p43093-90.axle1 -> p32039-8.axlehole2 LOCKED
+CONNECT p43093-91.axle1 -> p32039-7.axlehole2 LOCKED
+CONNECT p43093-91.pin1 -> p18945-17.hole2 STIFF
+ADD p43093-92 43093 blue
+ADD p43093-93 43093 blue
+ADD p32039-9 32039 yellow
+ADD p32039-10 32039 yellow
+CONNECT p43093-92.axle1 -> p32039-10.axlehole2 LOCKED
+CONNECT p43093-93.axle1 -> p32039-9.axlehole2 LOCKED
+CONNECT p43093-93.pin1 -> p18945-18.hole2 STIFF
+WHY Builds four angled yellow connectors on blue axle-pins, two per panel, and seats the outer blue pin of each paired fitting in the narrow panel end.
+
+STEP 674
+ADD p32062-48 32062 red
+ADD p32062-49 32062 red
+CONNECT p32062-48.axle1 -> p32039-8.axlehole1 LOCKED
+CONNECT p32062-48.axle2 -> p32039-7.axlehole1 LOCKED
+CONNECT p32062-49.axle1 -> p32039-10.axlehole1 LOCKED
+CONNECT p32062-49.axle2 -> p32039-9.axlehole1 LOCKED
+WHY Locks each pair of angled yellow connectors together with a red two-length axle, completing both repeated panel assemblies.
+
+STEP 675
+END
+ATTACH dump-bed-underframe-panel-pair
+CONNECT p2780-404.pin2 -> p32278-19.hole11 STIFF
+CONNECT p2780-405.pin2 -> p32278-19.hole5 STIFF
+CONNECT p2780-406.pin2 -> p32278-20.hole11 STIFF
+CONNECT p2780-407.pin2 -> p32278-20.hole5 STIFF
+CONNECT p43093-90.pin1 -> p32525-32.? STIFF
+CONNECT p43093-92.pin1 -> p32525-33.? STIFF
+WHY Fits both completed panels along the central underframe arm, engaging their black side pins in the fifteen-hole beams and blue fitting pins in the main beam ends. The latter end-on bores remain unresolved.
+
+STEP 676
+ADD p32073-10 32073 lightgray
+ADD p59443-42 59443 yellow
+ADD p59443-43 59443 yellow
+CONNECT p32073-10.axle2 -> p32278-20.hole2 TURNS
+CONNECT p32073-10.axle4 -> p32278-19.hole2 TURNS
+CONNECT p32073-10.axle5 -> p59443-42.axlehole1 LOCKED
+CONNECT p32073-10.axle1 -> p59443-43.axlehole2 LOCKED
+WHY Passes a grey five-length axle through the two central fifteen-hole beams and fits a yellow two-length axle joiner onto each projecting end.
+
+STEP 677
+ADD p15100-34 65487 yellow
+ADD p15100-35 65487 yellow
+CONNECT p15100-34.pin1 -> p18945-18.? STIFF
+CONNECT p15100-35.pin1 -> p18945-17.? STIFF
+WHY Adds a yellow perpendicular pin connector at the free outer corner of each underframe panel. Their end-on panel bores remain unresolved.
+
+STEP 678
+END
+ATTACH dump-bed-underframe
+CONNECT p2780-402.pin1 -> p64782-5.hole9 STIFF
+CONNECT p2780-403.pin1 -> p64782-5.hole8 STIFF
+CONNECT rear-underframe-mount-pin-one.pin1 -> p15458-3.? STIFF
+CONNECT rear-underframe-mount-pin-two.pin1 -> p15458-3.? STIFF
+WHY Turns the dump bed over and presses the underframe into place on all four black mounting pins. The two rear mounting bores omitted by the reference model remain explicit unknowns.
+
+STEP 679
+ADD p44294-5 44294 lightgray
+CONNECT p44294-5.axle1 -> p6536-26.axlehole1 LOCKED
+CONNECT p44294-5.axle2 -> p32524-37.hole6 TURNS
+CONNECT p44294-5.axle4 -> p63869-9.axlehole1 LOCKED
+CONNECT p44294-5.axle6 -> p32524-36.hole6 TURNS
+CONNECT p44294-5.axle7 -> p6536-27.axlehole1 LOCKED
+WHY Inserts the grey seven-length shaft through the two yellow perpendicular connectors, underframe round holes and central grey cross hole, securing the front of the underframe to the bed floor.
+
+STEP 680
+ADD p32062-50 32062 red
+ADD p32062-51 32062 red
+ADD p32062-52 32062 red
+ADD p32062-53 32062 red
+CONNECT p32062-50.axle1 -> p32271-4.axlehole2 LOCKED
+CONNECT p32062-50.axle2 -> p15100-32.hole1 TURNS
+CONNECT p32062-51.axle1 -> p32271-3.axlehole2 LOCKED
+CONNECT p32062-51.axle2 -> p15100-33.hole1 TURNS
+CONNECT p32062-52.axle1 -> p32039-5.axlehole1 LOCKED
+CONNECT p32062-52.axle2 -> p32271-12.axlehole2 LOCKED
+CONNECT p32062-53.axle1 -> p32039-6.axlehole1 LOCKED
+CONNECT p32062-53.axle2 -> p32271-11.axlehole2 LOCKED
+WHY Adds four red two-length axles at the marked mounting points, joining the bed cross-brace cross holes to the underframe pin connectors and angled axle fittings.
+
+STEP 681
+ADD p55013-2 55013 darkgray
+ADD p3713-15 3713 lightgray
+CONNECT p55013-2.axle8~ -> p3713-15.axlehole1 LOCKED
+CONNECT p55013-2.axle1~ -> p59443-42.axlehole2 LOCKED
+CONNECT p55013-2.axle3~ -> p15100-28.hole1 TURNS
+CONNECT p55013-2.axle4~ -> p15100-35.hole1 TURNS
+CONNECT p55013-2.axle5~ -> p15100-27.hole1 TURNS
+CONNECT p55013-2.axle7~ -> p15100-26.hole1 TURNS
+CONNECT p55013-2.axle6~ -> p6536-30.hole1 TURNS
+ADD p55013-3 55013 darkgray
+ADD p3713-16 3713 lightgray
+CONNECT p55013-3.axle8~ -> p3713-16.axlehole1 LOCKED
+CONNECT p55013-3.axle1~ -> p59443-43.axlehole1 LOCKED
+CONNECT p55013-3.axle3~ -> p15100-31.hole1 TURNS
+CONNECT p55013-3.axle4~ -> p15100-34.hole1 TURNS
+CONNECT p55013-3.axle5~ -> p15100-30.hole1 TURNS
+CONNECT p55013-3.axle7~ -> p15100-29.hole1 TURNS
+CONNECT p55013-3.axle6~ -> p6536-31.hole1 TURNS
+WHY Slides a grey bush onto each dark-grey eight-length stop axle and inserts both shafts through the aligned rear-frame round connectors and inner floor fittings into the central yellow axle joiners. Shaft depths are estimated.
+
+STEP 682
+GROUP dump-bed-rear-lamp-pair
+ADD p32316-36 32316 lightgray
+ADD p4274-54 4274 blue
+ADD p4274-55 4274 blue
+CONNECT p4274-54.pin2 -> p32316-36.hole5 TURNS
+CONNECT p4274-55.pin2 -> p32316-36.hole3 TURNS
+ADD p32316-37 32316 lightgray
+ADD p4274-56 4274 blue
+ADD p4274-57 4274 blue
+CONNECT p4274-56.pin2 -> p32316-37.hole5 TURNS
+CONNECT p4274-57.pin2 -> p32316-37.hole3 TURNS
+WHY Starts both repeated rear lamps with grey five-hole beams and two blue half-pins each, with their stud ends facing outwards.
+
+STEP 683
+ADD p15100-36 65487 yellow
+ADD p15100-37 65487 yellow
+ADD p15100-38 65487 yellow
+ADD p15100-39 65487 yellow
+ADD p2780-408 2780 black
+ADD p2780-409 2780 black
+CONNECT p2780-408.pin2 -> p15100-37.hole1 STIFF
+CONNECT p2780-408.pin1 -> p15100-39.hole1 STIFF
+CONNECT p2780-409.pin1 -> p15100-36.hole1 STIFF
+CONNECT p2780-409.pin2 -> p15100-38.hole1 STIFF
+CONNECT p15100-38.pin1 -> p32316-36.hole2 STIFF
+CONNECT p15100-39.pin1 -> p32316-36.hole4 STIFF
+ADD p15100-40 65487 yellow
+ADD p15100-41 65487 yellow
+ADD p15100-42 65487 yellow
+ADD p15100-43 65487 yellow
+ADD p2780-410 2780 black
+ADD p2780-411 2780 black
+CONNECT p2780-410.pin1 -> p15100-41.hole1 STIFF
+CONNECT p2780-410.pin2 -> p15100-43.hole1 STIFF
+CONNECT p2780-411.pin2 -> p15100-40.hole1 STIFF
+CONNECT p2780-411.pin1 -> p15100-42.hole1 STIFF
+CONNECT p15100-42.pin1 -> p32316-37.hole2 STIFF
+CONNECT p15100-43.pin1 -> p32316-37.hole4 STIFF
+WHY Builds four paired yellow perpendicular-connector mounts, each joined by a black friction pin, and attaches two mounts behind each grey lamp beam.
+
+STEP 684
+ADD rear-lamp-one-plate 3710 yellow
+ADD rear-lamp-one-red 3069b transred
+ADD rear-lamp-one-amber 3069b transorange
+CONNECT rear-lamp-one-red.? -> rear-lamp-one-plate.? STIFF
+CONNECT rear-lamp-one-amber.? -> rear-lamp-one-plate.? STIFF
+CONNECT rear-lamp-one-plate.? -> p4274-54.? STIFF
+CONNECT rear-lamp-one-plate.? -> p4274-55.? STIFF
+ADD rear-lamp-two-plate 3710 yellow
+ADD rear-lamp-two-red 3069b transred
+ADD rear-lamp-two-amber 3069b transorange
+CONNECT rear-lamp-two-red.? -> rear-lamp-two-plate.? STIFF
+CONNECT rear-lamp-two-amber.? -> rear-lamp-two-plate.? STIFF
+CONNECT rear-lamp-two-plate.? -> p4274-56.? STIFF
+CONNECT rear-lamp-two-plate.? -> p4274-57.? STIFF
+WHY Fits one red and one amber transparent tile onto each yellow four-stud plate, then presses the two light strips onto the blue half-pin studs. The stud interfaces are not cataloged.
+
+STEP 685
+END
+ATTACH dump-bed-rear-lamp-pair
+CONNECT p15100-36.pin1 -> p18945-17.hole17 STIFF
+CONNECT p15100-37.pin1 -> p18945-17.hole15 STIFF
+CONNECT p15100-40.pin1 -> p18945-18.hole17 STIFF
+CONNECT p15100-41.pin1 -> p18945-18.hole15 STIFF
+WHY Fits both completed lamps to the rear underframe panels on their yellow pin mounts, with amber lamps outboard and red lamps inboard as shown.
+
+STEP 686
+END
+ATTACH dump-bed
+ADD p23948-3 23948 lightgray
+CONNECT p23948-3.axle1 -> p32526-7.hole6 TURNS
+CONNECT p23948-3.axle2 -> p32009-1.hole8 TURNS
+CONNECT p23948-3.axle4 -> p32524-34.hole3 TURNS
+CONNECT p23948-3.axle5 -> p32525-32.hole3 TURNS
+CONNECT p23948-3.axle6 -> p32140-28.hole1 TURNS
+CONNECT p23948-3.axle7 -> p32525-33.hole3 TURNS
+CONNECT p23948-3.axle8 -> p32524-35.hole3 TURNS
+CONNECT p23948-3.axle10 -> p32009-2.hole8 TURNS
+CONNECT p23948-3.axle11 -> p32526-8.hole6 TURNS
+CONNECT p23948-3.axle3~ -> p6575-1.axlehole2 LOCKED
+CONNECT p23948-3.axle9~ -> p6575-2.axlehole2 LOCKED
+WHY Turns the bed upright and mounts it on the chassis with the grey eleven-length hinge axle through the aligned underframe and chassis bearings, including the thin yellow link cross holes at estimated depths.
+
+STEP 687
+ADD p24316-9 24316 brown
+CONNECT p24316-9.axle1 -> p59443-28.axlehole2 LOCKED
+CONNECT p24316-9.axle2 -> p41678-1.hole2 TURNS
+CONNECT p24316-9.axle3 -> p6536-29.hole1 TURNS
+WHY Pins the first actuator rod-end fitting to the bed lifting link and yellow side-rail connector using a brown three-length stop axle, locking its end in the yellow axle joiner.
+
+STEP 688
+ADD p24316-10 24316 brown
+CONNECT p24316-10.axle1 -> p59443-29.axlehole2 LOCKED
+CONNECT p24316-10.axle2 -> p41678-2.hole1 TURNS
+CONNECT p24316-10.axle3 -> p6536-28.hole1 TURNS
+WHY Turns the model and pins the second actuator rod-end fitting to the opposite lifting link and side-rail connector with the matching brown stop axle.
+
+STEP 689
+ADD wheel-rim-1 15038 yellow
+ADD wheel-tyre-1 92912 black
+CONNECT wheel-tyre-1.? -> wheel-rim-1.? STIFF
+CONNECT p92909-1.pin1 -> wheel-rim-1.? STIFF
+CONNECT p92909-1.pin2 -> wheel-rim-1.? STIFF
+CONNECT p92909-1.pin3 -> wheel-rim-1.? STIFF
+ADD wheel-rim-2 15038 yellow
+ADD wheel-tyre-2 92912 black
+CONNECT wheel-tyre-2.? -> wheel-rim-2.? STIFF
+CONNECT p92909-2.pin1 -> wheel-rim-2.? STIFF
+CONNECT p92909-2.pin2 -> wheel-rim-2.? STIFF
+CONNECT p92909-2.pin3 -> wheel-rim-2.? STIFF
+ADD wheel-rim-3 15038 yellow
+ADD wheel-tyre-3 92912 black
+CONNECT wheel-tyre-3.? -> wheel-rim-3.? STIFF
+CONNECT p92909-3.pin1 -> wheel-rim-3.? STIFF
+CONNECT p92909-3.pin2 -> wheel-rim-3.? STIFF
+CONNECT p92909-3.pin3 -> wheel-rim-3.? STIFF
+ADD wheel-rim-4 15038 yellow
+ADD wheel-tyre-4 92912 black
+CONNECT wheel-tyre-4.? -> wheel-rim-4.? STIFF
+CONNECT p92909-4.pin1 -> wheel-rim-4.? STIFF
+CONNECT p92909-4.pin2 -> wheel-rim-4.? STIFF
+CONNECT p92909-4.pin3 -> wheel-rim-4.? STIFF
+ADD wheel-rim-5 15038 yellow
+ADD wheel-tyre-5 92912 black
+CONNECT wheel-tyre-5.? -> wheel-rim-5.? STIFF
+CONNECT p92909-5.pin1 -> wheel-rim-5.? STIFF
+CONNECT p92909-5.pin2 -> wheel-rim-5.? STIFF
+CONNECT p92909-5.pin3 -> wheel-rim-5.? STIFF
+ADD wheel-rim-6 15038 yellow
+ADD wheel-tyre-6 92912 black
+CONNECT wheel-tyre-6.? -> wheel-rim-6.? STIFF
+CONNECT p92909-6.pin1 -> wheel-rim-6.? STIFF
+CONNECT p92909-6.pin2 -> wheel-rim-6.? STIFF
+CONNECT p92909-6.pin3 -> wheel-rim-6.? STIFF
+WHY Seats each of the six black tyres on a yellow wheel rim, then presses all six wheels onto the three projecting friction pins of their portal hubs. Wheel, tyre and rim interfaces are not cataloged.
+
+STEP 690
+ADD p4519-35 4519 yellow
+CONNECT p4519-35.axle1~ -> p92909-1.axlehole1 LOCKED
+ADD p4519-36 4519 yellow
+CONNECT p4519-36.axle1~ -> p92909-2.axlehole1 LOCKED
+ADD p4519-37 4519 yellow
+CONNECT p4519-37.axle1~ -> p92909-3.axlehole1 LOCKED
+ADD p4519-38 4519 yellow
+CONNECT p4519-38.axle1~ -> p92909-4.axlehole1 LOCKED
+ADD p4519-39 4519 yellow
+CONNECT p4519-39.axle1~ -> p92909-5.axlehole1 LOCKED
+ADD p4519-40 4519 yellow
+CONNECT p4519-40.axle1~ -> p92909-6.axlehole1 LOCKED
+WHY Inserts one yellow three-length axle through the centre of each wheel into its hub cross hole, leaving the outer shaft end projecting for the decorative hub covers. Insertion depth is estimated.
+
+STEP 691
+ADD p57519-1 57519 yellow
+CONNECT p4519-35.axle3~ -> p57519-1.axlehole1 LOCKED
+ADD p57519-2 57519 yellow
+CONNECT p4519-36.axle3~ -> p57519-2.axlehole1 LOCKED
+ADD p57519-3 57519 yellow
+CONNECT p4519-37.axle3~ -> p57519-3.axlehole1 LOCKED
+ADD p57519-4 57519 yellow
+CONNECT p4519-38.axle3~ -> p57519-4.axlehole1 LOCKED
+ADD p57519-5 57519 yellow
+CONNECT p4519-39.axle3~ -> p57519-5.axlehole1 LOCKED
+ADD p57519-6 57519 yellow
+CONNECT p4519-40.axle3~ -> p57519-6.axlehole1 LOCKED
+WHY Presses six yellow ten-tooth sprockets onto the projecting yellow wheel-centre axles as decorative hub covers, completing the numbered booklet build. Shaft insertion depth is estimated.
