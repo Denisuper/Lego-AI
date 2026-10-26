@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. Source transcription currently reaches step 307, page 186, with 901 introduced pieces, no excess by part and colour and zero notation errors. The table and JSONL match; the remaining 1,672 inventory pieces are not yet transcribed. 116 unknown and 322 estimated endpoints remain explicit, including differential carrier posts, complete universal-joint orientation and suspension ball sockets. Continue at source step 308, page 187.
+The original 496-page booklet and 2,573-piece inventory are preserved. Source transcription currently reaches step 321, page 197, with 944 introduced pieces, no excess by part and colour and zero notation errors. The table and JSONL match; the remaining 1,629 inventory pieces are not yet transcribed. 122 unknown and 335 estimated endpoints remain explicit, including differential carrier posts, complete universal-joint orientation and suspension ball sockets. Continue at source step 322, page 198.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 

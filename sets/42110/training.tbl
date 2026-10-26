@@ -3145,3 +3145,141 @@ ADD p32184-25 32184 darkgray
 CONNECT p60485-1.axle1 -> p32184-25.axlehole2 LOCKED
 WHY Fits a dark-grey double perpendicular connector onto the exposed left end of the yellow nine-length front engine cross axle. Orient its centre round hole and free cross socket as shown to prepare the next forward structure.
 
+STEP 308
+ADD p4519-35 4519 lightgray
+ADD p32140-11 32140 lightgray
+ADD p32002-2 32002 tan
+CONNECT p4519-35.axle2 -> p32140-11.axlehole1 LOCKED
+CONNECT p32002-2.pin2~ -> p32140-11.hole3 TURNS
+CONNECT p4519-35.axle1 -> p32184-25.axlehole1 LOCKED
+CONNECT p32002-2.pin1~ -> p87408-2.? TURNS
+WHY Builds the left grey L-shaped winch support with a grey three-length cross axle and tan frictionless pin. Fits the axle into the waiting dark-grey connector and the pin into the black U-shaped support. The tan pin is free in its round supports; half-length seating and its exact receiving U-frame hole remain unresolved.
+
+STEP 309
+ADD p23948-3 23948 lightgray
+ADD p32123b-19 32123b lightgray
+ADD p18654-11 18654 black
+ADD p6589-13 6589 tan
+CONNECT p23948-3.axle6~ -> p32123b-19.axlehole1 LOCKED
+CONNECT p23948-3.axle7 -> p18654-11.hole1 TURNS
+CONNECT p23948-3.axle8 -> p32140-11.hole4 TURNS
+CONNECT p23948-3.axle9~ -> p6589-13.axlehole1 LOCKED
+MESH p6589-13.teeth p32270-6.teeth
+WHY Threads the grey eleven-length winch axle through a grey half bush, black round spacer and the lower round hole of the left grey support, then fits the tan twelve-tooth bevel gear. The tan gear meshes at right angles with the black twelve-tooth gear of the front drive unit. Half-bush and bevel-gear seating are estimated; leave the axle end flush as highlighted.
+
+STEP 310
+ADD winch-reel 32012 darkgray
+ADD winch-cord 37597c150 darkgray
+ADD winch-hook 30395 darkgray
+ADD winch-hook-cap-one 98138 orange
+ADD winch-hook-cap-two 98138 orange
+CONNECT p23948-3.axle5~ -> winch-reel.? LOCKED
+CONNECT winch-hook-cap-one.? -> winch-hook.? STIFF
+CONNECT winch-hook-cap-two.? -> winch-hook.? STIFF
+WHY Ties one end of the cord to the reel using the pictured knot, fits the reel onto the winch axle and winds the cord around the drum. Ties the free end to the hook and presses an orange round tile onto each side of its centre. The knots and flexible cord route are described here rather than treated as rigid joints; the reel cross socket and hook tile surfaces are unnamed, and reel seating is estimated.
+
+STEP 311
+ADD p32123b-20 32123b lightgray
+ADD p18654-12 18654 black
+CONNECT p23948-3.axle4~ -> p32123b-20.axlehole1 LOCKED
+CONNECT p23948-3.axle3 -> p18654-12.hole1 TURNS
+WHY Adds the second grey half bush and black round spacer to the exposed winch axle on the other side of the reel, establishing the spacing for the right support. Half-bush seating is estimated.
+
+STEP 312
+ADD p59443-18 59443 black
+ADD p59443-19 59443 black
+ADD p32062-22 32062 red
+ADD p3705-14 3705 red
+ADD p45590-1 45590 black
+ADD p32140-12 32140 lightgray
+CONNECT p32062-22.axle1 -> p59443-18.axlehole1 LOCKED
+CONNECT p32062-22.axle2 -> p59443-19.axlehole2 LOCKED
+CONNECT p3705-14.axle4 -> p59443-19.axlehole1 LOCKED
+CONNECT p3705-14.axle3 -> p45590-1.axlehole2 LOCKED
+CONNECT p3705-14.axle2 -> p32140-12.axlehole1 LOCKED
+CONNECT p4519-35.axle3 -> p59443-18.axlehole2 LOCKED
+CONNECT p23948-3.axle2 -> p32140-12.hole4 TURNS
+WHY Builds the right grey L-shaped winch support on a red four-length axle with a black flexible axle connector, extending its inner end with two black axle connectors joined by a red two-length axle. Fits that extension onto the waiting left cross axle while sliding the lower support round hole over the winch axle. The reel axle remains free to turn in the grey support.
+
+STEP 313
+ADD p32184-27 32184 darkgray
+ADD p94925-14 94925 lightgray
+CONNECT p3705-14.axle1 -> p32184-27.axlehole1 LOCKED
+CONNECT p60485-1.axle9 -> p32184-27.axlehole2 LOCKED
+CONNECT p23948-3.axle1 -> p94925-14.axlehole1 LOCKED
+WHY Closes the right upper winch support with a dark-grey double perpendicular connector between the red cross axle and the exposed yellow engine axle. Fits the grey sixteen-tooth gear onto the lower winch axle end, retaining the axle beside its round support.
+
+STEP 314
+ADD p15462-16 15462 brown
+ADD p32039-5 32039 lightgray
+ADD p32062-23 32062 red
+ADD p6536-40 6536 darkgray
+ADD p2780-73 2780 black
+ADD p62462-2 62462 lightgray
+ADD p6628-16 6628 red
+CONNECT p2780-73.pin2~ -> p62462-2.hole1 STIFF
+CONNECT p6628-16.pin1~ -> p62462-2.hole1 STIFF
+CONNECT p2780-73.pin1 -> p6536-40.hole1 STIFF
+CONNECT p15462-16.axle5~ -> p6536-40.axlehole1 LOCKED
+CONNECT p15462-16.axle4~ -> p32039-5.axlehole1 LOCKED
+CONNECT p32062-23.axle1 -> p32039-5.axlehole2 LOCKED
+CONNECT p15462-16.axle3~ -> p32140-12.hole1 TURNS
+CONNECT p15462-16.axle2~ -> p45590-1.axlehole1 LOCKED
+WHY Builds the winch lever from a grey pin sleeve with a red towball and black friction pin, a dark-grey perpendicular connector, a brown stopped axle, a grey axle connector and a red short axle. Threads the brown axle through the round hole of the right grey support into the black flexible connector. The lever and flexible connector turn with the brown shaft while its support bearing stays free; sleeve and shaft seating remain estimated.
+
+STEP 315
+GROUP front-upper-crossbar
+ADD p32034-20 32034 black
+ADD p32062-26 32062 red
+ADD p59443-20 59443 black
+CONNECT p32062-26.axle2 -> p32034-20.axlehole2 LOCKED
+CONNECT p32062-26.axle1 -> p59443-20.axlehole2 LOCKED
+WHY Starts the front upper crossbar by joining a black straight axle connector and black axle extension with a red two-length axle. Keep the straight connector round hole facing upward as pictured.
+
+STEP 316
+ADD p32062-25 32062 red
+ADD p32034-18 32034 black
+CONNECT p32062-25.axle2 -> p59443-20.axlehole1 LOCKED
+CONNECT p32062-25.axle1 -> p32034-18.axlehole1 LOCKED
+WHY Adds a second red two-length axle and the middle black straight connector to the crossbar, orienting its round hole forward rather than upward.
+
+STEP 317
+ADD p32062-24 32062 red
+ADD p32034-19 32034 black
+CONNECT p32062-24.axle2 -> p32034-18.axlehole2 LOCKED
+CONNECT p32062-24.axle1 -> p32034-19.axlehole1 LOCKED
+WHY Adds the third red two-length axle and the remaining black straight connector, completing the crossbar with both outer round holes facing up and the middle round hole facing forward.
+
+STEP 318
+ADD p2780-74 2780 black
+ADD p2780-75 2780 black
+ADD p32054-16 32054 black
+CONNECT p2780-74.pin1 -> p32034-20.hole1 STIFF
+CONNECT p2780-75.pin1 -> p32034-19.hole1 STIFF
+CONNECT p32054-16.pin1 -> p32034-18.hole1 STIFF
+END
+WHY Adds black friction pins to the outer round holes and a black long pin with stop bush to the middle round hole of the crossbar. Their exposed ends point down at the outer connectors and rearward at the middle connector as shown.
+
+STEP 319
+ATTACH front-upper-crossbar
+CONNECT p2780-74.pin2 -> p32184-25.hole1 STIFF
+CONNECT p2780-75.pin2 -> p32184-27.hole1 STIFF
+CONNECT p32054-16.pin2 -> p42003-15.hole1 STIFF
+WHY Fits the upper crossbar onto the two dark-grey front connectors and pushes the middle black long pin into the grey engine support hole. This braces the two winch uprights across the front of the chassis while preserving the free winch shaft below.
+
+STEP 320
+ADD p32526-4 32526 black
+ADD p6558-48 6558 blue
+CONNECT p6558-48.pin2 -> p32526-4.hole7 STIFF
+CONNECT p11214-3.pin2~ -> p32526-4.hole5 STIFF
+CONNECT p6558-48.pin3 -> p41239-2.hole12 STIFF
+WHY Fits a black bent seven-hole upright with a blue long pin to the right side, engaging the waiting red pin through its lower mounting hole and the blue pin in the black side rail. The right red pin seating remains estimated.
+
+STEP 321
+ADD p32526-5 32526 black
+ADD p6558-49 6558 blue
+CONNECT p6558-49.pin2 -> p32526-5.hole7 STIFF
+CONNECT p11214-2.pin2 -> p32526-5.hole5 STIFF
+CONNECT p6558-49.pin3 -> p41239-3.hole12 STIFF
+WHY Turns the chassis and fits the matching black bent upright with a blue long pin on the left side, joining the waiting red pin and black side-rail hole. Both upright ends remain exposed for the body structure.
+
