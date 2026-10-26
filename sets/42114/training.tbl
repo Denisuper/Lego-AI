@@ -5842,3 +5842,219 @@ CONNECT p32073-9.axle2 -> p32034-2.hole1 TURNS
 CONNECT p32073-9.axle3 -> p32034-3.hole1 TURNS
 CONNECT p32073-9.axle5 -> p45590-1.axlehole1 LOCKED
 WHY Caps one end of a yellow five-length axle with two half bushes and passes it through the yellow and black front round bearings into the rubber connector to retain the closed grille linkage.
+
+STEP 538
+ADD front-fender-right 46882pr0001 yellow
+ADD front-fender-left 46882pr0001 yellow
+CONNECT p3706-6.axle5 -> front-fender-right.hole2 TURNS
+CONNECT p42924-121.pin1 -> front-fender-right.hole3 STIFF
+CONNECT p11214-21.pin2 -> front-fender-right.hole4 STIFF
+CONNECT p11214-24.pin2 -> front-fender-left.hole1 STIFF
+CONNECT p42924-124.pin1 -> front-fender-left.hole2 STIFF
+CONNECT p3706-5.axle2 -> front-fender-left.hole3 TURNS
+WHY Fits the two printed yellow-and-black front wheel arches over the prepared platform pins and projecting black shafts.
+
+STEP 539
+GROUP cab-handrail-post-1
+ADD p11214-33 11214 red
+ADD p18654-37 18654 black
+ADD p32034-5 32034 orange
+ADD p32034-6 32034 orange
+ADD p32062-34 32062 red
+ADD p32062-35 32062 red
+ADD p32013-10 32013 orange
+ADD p4274-42 4274 lightgray
+ADD p4274-43 4274 lightgray
+ADD p4274-44 4274 lightgray
+CONNECT p11214-33.pin1 -> p18654-37.hole1 STIFF
+CONNECT p11214-33.axle1 -> p32034-5.axlehole2 LOCKED
+CONNECT p32062-34.axle2 -> p32034-5.axlehole1 LOCKED
+CONNECT p32062-34.axle1 -> p32034-6.axlehole2 LOCKED
+CONNECT p32062-35.axle2 -> p32034-6.axlehole1 LOCKED
+CONNECT p32062-35.axle1 -> p32013-10.axlehole1 LOCKED
+CONNECT p4274-42.pin2 -> p32013-10.hole1 TURNS
+CONNECT p4274-43.pin2 -> p32034-6.hole1 TURNS
+CONNECT p4274-44.pin2 -> p32034-5.hole1 TURNS
+END
+ATTACH cab-handrail-post-1
+CONNECT p11214-33.pin2 -> p64179-13.hole20 STIFF
+GROUP cab-handrail-post-2
+ADD p11214-34 11214 red
+ADD p18654-38 18654 black
+ADD p32034-7 32034 orange
+ADD p32034-8 32034 orange
+ADD p32062-36 32062 red
+ADD p32062-37 32062 red
+ADD p32013-11 32013 orange
+ADD p4274-45 4274 lightgray
+ADD p4274-46 4274 lightgray
+ADD p4274-47 4274 lightgray
+CONNECT p11214-34.pin1 -> p18654-38.hole1 STIFF
+CONNECT p11214-34.axle1 -> p32034-7.axlehole2 LOCKED
+CONNECT p32062-36.axle2 -> p32034-7.axlehole1 LOCKED
+CONNECT p32062-36.axle1 -> p32034-8.axlehole2 LOCKED
+CONNECT p32062-37.axle2 -> p32034-8.axlehole1 LOCKED
+CONNECT p32062-37.axle1 -> p32013-11.axlehole1 LOCKED
+CONNECT p4274-45.pin2 -> p32013-11.hole1 TURNS
+CONNECT p4274-46.pin2 -> p32034-8.hole1 TURNS
+CONNECT p4274-47.pin2 -> p32034-7.hole1 TURNS
+END
+ATTACH cab-handrail-post-2
+CONNECT p11214-34.pin2 -> p64179-13.hole5 STIFF
+GROUP cab-handrail-post-3
+ADD p11214-35 11214 red
+ADD p18654-39 18654 black
+ADD p32034-9 32034 orange
+ADD p32034-10 32034 orange
+ADD p32062-38 32062 red
+ADD p32062-39 32062 red
+ADD p32013-12 32013 orange
+ADD p4274-48 4274 lightgray
+ADD p4274-49 4274 lightgray
+ADD p4274-50 4274 lightgray
+CONNECT p11214-35.pin1 -> p18654-39.hole1 STIFF
+CONNECT p11214-35.axle1 -> p32034-9.axlehole2 LOCKED
+CONNECT p32062-38.axle2 -> p32034-9.axlehole1 LOCKED
+CONNECT p32062-38.axle1 -> p32034-10.axlehole2 LOCKED
+CONNECT p32062-39.axle2 -> p32034-10.axlehole1 LOCKED
+CONNECT p32062-39.axle1 -> p32013-12.axlehole1 LOCKED
+CONNECT p4274-48.pin2 -> p32013-12.hole1 TURNS
+CONNECT p4274-49.pin2 -> p32034-10.hole1 TURNS
+CONNECT p4274-50.pin2 -> p32034-9.hole1 TURNS
+END
+ATTACH cab-handrail-post-3
+CONNECT p11214-35.pin2 -> p64179-14.hole16 STIFF
+GROUP cab-handrail-post-4
+ADD p11214-36 11214 red
+ADD p18654-40 18654 black
+ADD p32034-11 32034 orange
+ADD p32034-12 32034 orange
+ADD p32062-40 32062 red
+ADD p32062-41 32062 red
+ADD p32013-13 32013 orange
+ADD p4274-51 4274 lightgray
+ADD p4274-52 4274 lightgray
+ADD p4274-53 4274 lightgray
+CONNECT p11214-36.pin1 -> p18654-40.hole1 STIFF
+CONNECT p11214-36.axle1 -> p32034-11.axlehole2 LOCKED
+CONNECT p32062-40.axle2 -> p32034-11.axlehole1 LOCKED
+CONNECT p32062-40.axle1 -> p32034-12.axlehole2 LOCKED
+CONNECT p32062-41.axle2 -> p32034-12.axlehole1 LOCKED
+CONNECT p32062-41.axle1 -> p32013-13.axlehole1 LOCKED
+CONNECT p4274-51.pin2 -> p32013-13.hole1 TURNS
+CONNECT p4274-52.pin2 -> p32034-12.hole1 TURNS
+CONNECT p4274-53.pin2 -> p32034-11.hole1 TURNS
+END
+ATTACH cab-handrail-post-4
+CONNECT p11214-36.pin2 -> p64179-14.hole1 STIFF
+WHY Builds all four orange cab handrail posts from two straight axle connectors and an angled top connector, joining them with red axles and a sleeved red mounting pin. Three grey half pins in each post provide the small bores for the rails; all four posts mount on the pictured platform frame sockets.
+
+STEP 540
+ADD right-cab-upper-rail 75c07 orange
+ADD right-cab-lower-handrail 75c07 orange
+ADD right-cab-curved-rail 75c20 orange
+CONNECT right-cab-upper-rail.? -> p4274-42.barhole1 STIFF
+CONNECT right-cab-upper-rail.? -> p4274-45.barhole1 STIFF
+CONNECT right-cab-lower-handrail.? -> p4274-44.barhole1 STIFF
+CONNECT right-cab-lower-handrail.? -> p4274-47.barhole1 STIFF
+CONNECT right-cab-curved-rail.? -> p4274-43.barhole1 STIFF
+CONNECT right-cab-curved-rail.? -> p4274-46.barhole1 STIFF
+CONNECT right-cab-curved-rail.? -> p6536-17.? STIFF
+WHY Threads two short orange rigid hoses through the upper and lower grey half-pin bores on the right cab posts, then routes the long orange hose through their middle bores and curves its rear end down into the black lower fitting. Hose endpoint and lower fitting identities remain uncataloged.
+
+STEP 541
+ADD left-cab-upper-rail 75c07 orange
+ADD left-cab-lower-handrail 75c07 orange
+ADD left-cab-curved-rail 75c20 orange
+CONNECT left-cab-upper-rail.? -> p4274-48.barhole1 STIFF
+CONNECT left-cab-upper-rail.? -> p4274-51.barhole1 STIFF
+CONNECT left-cab-lower-handrail.? -> p4274-50.barhole1 STIFF
+CONNECT left-cab-lower-handrail.? -> p4274-53.barhole1 STIFF
+CONNECT left-cab-curved-rail.? -> p4274-49.barhole1 STIFF
+CONNECT left-cab-curved-rail.? -> p4274-52.barhole1 STIFF
+CONNECT left-cab-curved-rail.? -> p6536-18.? STIFF
+WHY Threads two short orange rigid hoses through the upper and lower grey half-pin bores on the left cab posts, then routes the long orange hose through their middle bores and curves its rear end down into the black lower fitting. Hose endpoint and lower fitting identities remain uncataloged.
+
+STEP 542
+GROUP left-cab-mirror
+ADD p32039-1 32039 black
+ADD p3707-1 3707 black
+CONNECT p3707-1.axle1 -> p32039-1.axlehole2 LOCKED
+WHY Starts the first mirror with a black eight-length axle in the angled black axle connector.
+
+STEP 543
+ADD p18654-41 18654 black
+ADD p2825-1 2825 black
+CONNECT p3707-1.axle2 -> p18654-41.hole1 TURNS
+CONNECT p3707-1.axle3 -> p2825-1.axlehole2~ LOCKED
+WHY Slides a black sleeve and the lower thin mirror support onto the long axle; the thin support insertion depth is estimated.
+
+STEP 544
+ADD p11214-37 11214 red
+ADD p62462-18 62462 black
+ADD p18651-19 18651 black
+ADD left-mirror-pin-plate-1 18677 black
+ADD left-mirror-pin-plate-2 18677 black
+ADD left-mirror-glass 87079 black
+CONNECT p11214-37.pin1 -> left-mirror-pin-plate-1.? STIFF
+CONNECT p11214-37.pin2 -> p62462-18.hole1~ STIFF
+CONNECT p18651-19.pin1 -> p62462-18.hole1~ STIFF
+CONNECT p18651-19.axle2 -> left-mirror-pin-plate-2.? TURNS
+CONNECT left-mirror-glass.? -> left-mirror-pin-plate-1.? STIFF
+CONNECT left-mirror-glass.? -> left-mirror-pin-plate-2.? STIFF
+CONNECT p11214-37.axle1 -> p2825-1.axlehole1 LOCKED
+WHY Builds the mirror face on two black studded pin-hole plates joined by a black sleeve, red axle-pin and black axle-pin, applies sticker 16 and mounts its red cross shaft in the lower support. Uncataloged plate and tile interfaces remain explicit.
+
+STEP 545
+ADD p2825-2 2825 black
+CONNECT p3707-1.axle8 -> p2825-2.axlehole2~ LOCKED
+CONNECT p18651-19.axle1 -> p2825-2.axlehole1 LOCKED
+WHY Closes the mirror frame with the second black thin support on the long axle and the projecting black mirror shaft.
+
+STEP 546
+END
+ATTACH left-cab-mirror
+CONNECT p3706-5.axle1 -> p32039-1.axlehole1 LOCKED
+WHY Turns the completed mirror upright and locks its angled base onto the projecting black shaft beside the left cab fender.
+
+STEP 547
+GROUP right-cab-mirror
+ADD p32039-2 32039 black
+ADD p3707-2 3707 black
+CONNECT p3707-2.axle8 -> p32039-2.axlehole2 LOCKED
+WHY Starts the opposite mirror with a second black eight-length axle and angled base connector.
+
+STEP 548
+ADD p18654-42 18654 black
+ADD p2825-3 2825 black
+CONNECT p3707-2.axle7 -> p18654-42.hole1 TURNS
+CONNECT p3707-2.axle6 -> p2825-3.axlehole2~ LOCKED
+WHY Adds the black sleeve and lower thin mirror support to the second long axle.
+
+STEP 549
+ADD p11214-38 11214 red
+ADD p62462-19 62462 black
+ADD p18651-20 18651 black
+ADD right-mirror-pin-plate-1 18677 black
+ADD right-mirror-pin-plate-2 18677 black
+ADD right-mirror-glass 87079 black
+CONNECT p11214-38.pin1 -> right-mirror-pin-plate-1.? STIFF
+CONNECT p11214-38.pin2 -> p62462-19.hole1~ STIFF
+CONNECT p18651-20.pin1 -> p62462-19.hole1~ STIFF
+CONNECT p18651-20.axle2 -> right-mirror-pin-plate-2.? TURNS
+CONNECT right-mirror-glass.? -> right-mirror-pin-plate-1.? STIFF
+CONNECT right-mirror-glass.? -> right-mirror-pin-plate-2.? STIFF
+CONNECT p11214-38.axle1 -> p2825-3.axlehole1 LOCKED
+WHY Builds and stickers the matching mirror face on its two black studded pin-hole plates, sleeve and axle-pins, then mounts its red shaft in the lower thin support.
+
+STEP 550
+ADD p2825-4 2825 black
+CONNECT p3707-2.axle1 -> p2825-4.axlehole2~ LOCKED
+CONNECT p18651-20.axle1 -> p2825-4.axlehole1 LOCKED
+WHY Adds the final thin black support to close the opposite mirror frame.
+
+STEP 551
+END
+ATTACH right-cab-mirror
+CONNECT p3706-6.axle6 -> p32039-2.axlehole1 LOCKED
+WHY Turns the model and locks the second mirror base onto the projecting black shaft beside the right cab fender.
