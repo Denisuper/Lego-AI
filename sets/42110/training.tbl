@@ -2543,3 +2543,216 @@ CONNECT p4519-32.axle1 -> p32184-19.axlehole2 LOCKED
 CONNECT p4519-32.axle3 -> p32184-18.axlehole2 LOCKED
 WHY Passes a grey three-length axle through the remaining cross holes of the two offset perpendicular connectors on the bearing frame, tying those supports together while leaving the pictured end exposed.
 
+STEP 247
+GROUP central-upper-linkage
+ADD p3706-7 3706 black
+ADD p32039-3 32039 lightgray
+CONNECT p3706-7.axle4 -> p32039-3.axlehole1 LOCKED
+WHY Starts the upper gearbox linkage with a grey perpendicular axle connector near the middle of a black six-length axle, matching the full-size shaft placement.
+
+STEP 248
+ADD p6632-1 6632 black
+ADD p24316-12 24316 brown
+CONNECT p3706-7.axle3~ -> p6632-1.axlehole1 LOCKED
+CONNECT p24316-12.axle3~ -> p6632-1.hole1 TURNS
+WHY Fits a thin black three-hole beam to the black axle and passes a brown stopped three-length axle through its middle round hole. The brown axle can pivot in that hole; half-width beam seating is estimated.
+
+STEP 249
+ADD p6632-2 6632 black
+ADD p24316-13 24316 brown
+CONNECT p3706-7.axle3~ -> p6632-2.axlehole1 LOCKED
+CONNECT p24316-13.axle3~ -> p6632-2.hole1 TURNS
+WHY Places a second thin black beam beside the first on the same axle and inserts a second brown stopped axle through its middle round hole from the opposite side. Both half-width seating positions remain estimated.
+
+STEP 250
+ADD p32039-4 32039 lightgray
+ADD p18651-3 18651 black
+ADD p32123b-13 32123b lightgray
+ADD p32123b-14 32123b lightgray
+CONNECT p3706-7.axle2 -> p32039-4.axlehole1 LOCKED
+CONNECT p18651-3.axle1~ -> p6632-1.axlehole2 LOCKED
+CONNECT p18651-3.axle1~ -> p6632-2.axlehole2 LOCKED
+CONNECT p18651-3.axle2~ -> p32123b-13.axlehole1 LOCKED
+CONNECT p18651-3.axle2~ -> p32123b-14.axlehole1 LOCKED
+WHY Fits the second grey perpendicular connector to the black axle, then passes the axle end of a long black axle-pin through the other cross holes of both thin beams. Two grey half bushes retain this linked beam pair; their half-length seating is estimated.
+
+STEP 251
+ADD p6641-1 6641 red
+CONNECT p24316-13.axle2~ -> p6641-1.axlehole1 LOCKED
+WHY Fits the red perpendicular axle connector onto the exposed brown stopped axle, with its upper cross socket facing up as shown. The connector seats between nominal axle segments, so its depth remains estimated.
+
+STEP 252
+ADD p32278-3 32278 darkgray
+ADD p87082-6 87082 lightgray
+CONNECT p87082-6.pin2 -> p32278-3.hole4 STIFF
+CONNECT p3706-7.axle1 -> p32278-3.hole6 TURNS
+CONNECT p24316-13.axle1~ -> p32278-3.hole7 TURNS
+CONNECT p18651-3.pin1 -> p32278-3.hole8 STIFF
+WHY Applies sticker 27 to the dark-grey fifteen-hole beam as pictured, inserts the grey double-ended pin connector and slides the beam onto the black shaft, brown pivot axle and black axle-pin. The two shafts turn in round beam holes; brown axle depth is estimated. The sticker is taken from the set sheet and is not a separate inventory part.
+
+STEP 253
+ADD p2780-60 2780 black
+ADD p2780-61 2780 black
+ADD p15100-1 15100 lightgray
+ADD p15100-2 15100 lightgray
+ADD p63869-15 63869 lightgray
+CONNECT p15100-1.pin1 -> p63869-15.hole3 STIFF
+CONNECT p15100-2.pin1 -> p63869-15.hole1 STIFF
+CONNECT p2780-60.pin2 -> p15100-1.hole1 STIFF
+CONNECT p2780-61.pin1 -> p15100-2.hole1 STIFF
+CONNECT p2780-60.pin1 -> p32278-3.hole12 STIFF
+WHY Applies sticker 35 to the grey triple connector, adds two grey perpendicular pin connectors and two black friction pins, then attaches the assembly near the end of the first long beam. Keeps its marked face and unused central round hole in the pictured orientation.
+
+STEP 254
+ADD p32278-4 32278 darkgray
+ADD p6641-2 6641 red
+ADD p87082-7 87082 lightgray
+ADD p2780-62 2780 black
+ADD p18654-8 18654 black
+CONNECT p87082-7.pin1 -> p32278-4.hole4 STIFF
+CONNECT p2780-62.pin2 -> p32278-4.hole8 STIFF
+CONNECT p2780-62.pin1 -> p18654-8.hole1 STIFF
+CONNECT p24316-12.axle2~ -> p6641-2.axlehole1 LOCKED
+CONNECT p3706-7.axle5 -> p32278-4.hole6 TURNS
+CONNECT p24316-12.axle1~ -> p32278-4.hole7 TURNS
+CONNECT p2780-61.pin2 -> p32278-4.hole12 STIFF
+WHY Applies sticker 11 to the second dark-grey fifteen-hole beam and adds its grey pin connector, black friction pin and round spacer. Fits the second red axle connector to the opposite brown pivot, then closes the linkage with this beam on the black axle, brown pivot and waiting rear pin. Brown axle seating is estimated.
+
+STEP 255
+ADD p4519-33 4519 lightgray
+ADD p6536-36 6536 darkgray
+CONNECT p4519-33.axle3 -> p6536-36.axlehole1 LOCKED
+CONNECT p4519-33.axle1~ -> p6641-2.axlehole2 LOCKED
+WHY Builds a grey three-length axle with a dark-grey perpendicular connector at its top, then inserts its lower end into the upper socket of the second red connector. Lower socket seating remains estimated.
+
+STEP 256
+ADD p32062-18 32062 red
+ADD p32270-5 32270 black
+CONNECT p32062-18.axle2 -> p32270-5.axlehole1 LOCKED
+CONNECT p32062-18.axle1~ -> p6641-1.axlehole2 LOCKED
+WHY Fits a black twelve-tooth double-bevel gear to a red two-length axle and inserts its lower end into the other red connector. The gear turns with that pivot; lower socket seating remains estimated.
+
+STEP 257
+ADD p3706-8 3706 black
+ADD p92947-1 92947 black
+ADD p4032a-1 4032a black
+ADD p14769-1 14769 black
+CONNECT p4032a-1.? -> p92947-1.? STIFF
+CONNECT p14769-1.? -> p92947-1.? STIFF
+CONNECT p3706-8.axle2 -> p63869-15.hole2 TURNS
+CONNECT p3706-8.axle3~ -> p4032a-1.? LOCKED
+WHY Stacks the black round plate, ribbed round brick and round tile into the pictured cylinder, then passes a black six-length axle through the central round bearing and into the round plate cross socket. The cylinder turns with the axle while the bearing lets it rotate; ordinary stud interfaces and the uncataloged cross socket remain unnamed and shaft depth is estimated.
+
+STEP 258
+ADD p32054-8 32054 lightgray
+ADD p32054-9 32054 lightgray
+ADD p11214-2 11214 red
+ADD p11214-3 11214 red
+CONNECT p11214-2.axle1 -> p32054-8.axlehole1 LOCKED
+CONNECT p11214-3.axle1 -> p32054-9.axlehole1 LOCKED
+CONNECT p32054-8.pin1 -> p32278-3.hole1 STIFF
+CONNECT p32054-9.pin1~ -> p32278-4.hole1 STIFF
+END
+WHY Builds two grey pin-and-axle connectors with red long axle-pins and fits their pin ends through the far ends of the two long beams, leaving the red pins pointing outward for later bracing. The right connector seating is slightly offset and remains estimated.
+
+STEP 259
+ATTACH central-upper-linkage
+CONNECT p6558-36.pin3 -> p32278-3.hole2 STIFF
+CONNECT p6558-35.pin3 -> p32278-4.hole2 STIFF
+CONNECT p24316-10.axle1 -> p32039-3.axlehole2 LOCKED
+CONNECT p24316-11.axle1 -> p32039-4.axlehole2 LOCKED
+CONNECT p4519-32.axle2 -> p63869-15.axlehole1 LOCKED
+END
+WHY Lowers the upper linkage onto the gearbox, engaging both blue side pins, the two brown stopped axles and the grey axle through the marked triple connector. Follow the inset to align the linkage with the driving rings without trapping their axial travel; the assembly now forms the central gearbox module.
+
+STEP 260
+ATTACH central-gearbox
+CONNECT p3706-4.axle2 -> p6536-31.hole1 TURNS
+CONNECT p3708-1.axle12 -> p63869-13.hole2 TURNS
+WHY Aligns the central gearbox with the engine and front axle module, threading the long black shaft into the round perpendicular bearing and the engine camshaft end into the central round hole of the grey triple connector. Both shafts must remain free to turn; the inset shows the engine shaft entering its bearing.
+
+STEP 261
+CONNECT p32054-8.pin2 -> p60483-22.hole1 STIFF
+CONNECT p32054-9.pin2~ -> p60483-23.hole1 STIFF
+WHY Presses the two grey connector pins inward through the black engine bearing blocks to secure the gearbox and engine module together. The right pin seating is estimated; the red outer pin ends remain available for the side beams fitted later.
+
+STEP 262
+ADD p32034-15 32034 black
+CONNECT p3706-4.axle1 -> p32034-15.axlehole2 LOCKED
+WHY Turns the module over and fits a black two-way axle connector onto the exposed long black shaft under the gearbox. Check the following side view for the neutral driving-ring groove alignment before adding the lower bracing.
+
+STEP 263
+ADD p40490-14 40490 black
+ADD p32054-10 32054 lightgray
+ADD p32054-11 32054 lightgray
+ADD p32054-12 32054 lightgray
+ADD p2780-63 2780 black
+ADD p43093-33 43093 blue
+ADD p18654-9 18654 black
+ADD p6558-37 6558 blue
+ADD p6558-38 6558 blue
+ADD p60483-26 60483 black
+CONNECT p32054-10.pin1 -> p40490-14.hole1 STIFF
+CONNECT p32054-11.pin1 -> p40490-14.hole2 STIFF
+CONNECT p32054-12.pin1 -> p40490-14.hole5 STIFF
+CONNECT p2780-63.pin2 -> p40490-14.hole7 STIFF
+CONNECT p43093-33.axle1 -> p32054-12.axlehole1 LOCKED
+CONNECT p6558-37.pin1 -> p40490-14.hole6 STIFF
+CONNECT p6558-37.pin2 -> p18654-9.hole1 STIFF
+CONNECT p6558-38.pin2 -> p40490-14.hole9 STIFF
+CONNECT p32054-12.pin2 -> p60483-26.hole1 STIFF
+CONNECT p32073-10.axle3 -> p40490-14.hole4 TURNS
+CONNECT p32073-10.axle4 -> p60483-26.axlehole1 LOCKED
+CONNECT p6558-38.pin3 -> p6536-33.hole1 STIFF
+CONNECT p32054-10.pin2 -> p64178-2.hole4 STIFF
+CONNECT p32054-11.pin2 -> p64178-2.hole2 STIFF
+ADD p40490-15 40490 black
+ADD p32054-13 32054 lightgray
+ADD p32054-14 32054 lightgray
+ADD p32054-15 32054 lightgray
+ADD p2780-64 2780 black
+ADD p43093-34 43093 blue
+ADD p18654-10 18654 black
+ADD p6558-39 6558 blue
+ADD p6558-40 6558 blue
+ADD p60483-27 60483 black
+CONNECT p32054-13.pin1 -> p40490-15.hole1 STIFF
+CONNECT p32054-14.pin1 -> p40490-15.hole2 STIFF
+CONNECT p32054-15.pin1 -> p40490-15.hole5 STIFF
+CONNECT p2780-64.pin2 -> p40490-15.hole7 STIFF
+CONNECT p43093-34.axle1 -> p32054-15.axlehole1 LOCKED
+CONNECT p6558-39.pin1 -> p40490-15.hole6 STIFF
+CONNECT p6558-39.pin2 -> p18654-10.hole1 STIFF
+CONNECT p6558-40.pin2 -> p40490-15.hole9 STIFF
+CONNECT p32054-15.pin2 -> p60483-27.hole1 STIFF
+CONNECT p32073-9.axle3 -> p40490-15.hole4 TURNS
+CONNECT p32073-9.axle2 -> p60483-27.axlehole1 LOCKED
+CONNECT p6558-40.pin3 -> p6536-32.hole1 STIFF
+CONNECT p32054-13.pin2 -> p64178-2.hole3 STIFF
+CONNECT p32054-14.pin2 -> p64178-2.hole1 STIFF
+WHY Builds two matching black nine-hole lower braces with three grey pin-and-axle connectors each, a black friction pin, a blue axle-pin, two blue long pins, a black round spacer and a black two-hole block. Mounts them on the waiting engine frame holes and gearbox connector pins, threading each projecting yellow axle through a round beam hole and into a black cross-hole block. Keep the yellow shafts free in the round beam bearings and the unused pin ends exposed as pictured.
+
+STEP 264
+ADD p3713-36 3713 red
+ADD p3713-37 3713 red
+CONNECT p32073-9.axle4 -> p3713-36.axlehole1 LOCKED
+CONNECT p32073-10.axle2 -> p3713-37.axlehole1 LOCKED
+WHY Fits red bushes onto both exposed yellow axle ends beside the lower braces, retaining the transverse shafts without squeezing the braces against the rotating linkage.
+
+STEP 265
+ADD p99008-3 99008 tan
+ADD p94925-13 94925 lightgray
+CONNECT p99008-3.axle2 -> p94925-13.axlehole1 LOCKED
+CONNECT p99008-3.axle3 -> p48989-3.hole1 TURNS
+CONNECT p99008-3.pin1 -> p6536-29.hole1 TURNS
+MESH p94925-13.teeth p18946-9.teeth
+WHY Turns the module upright and inserts a tan long axle-pin through the grey bearing block with a grey sixteen-tooth gear on its axle portion. The gear meshes with the adjacent red sixteen-tooth clutch gear; both the axle and frictionless pin portions remain free in their round supports.
+
+STEP 266
+ADD p59443-12 59443 black
+ADD p3707-3 3707 red
+CONNECT p99008-3.axle1 -> p59443-12.axlehole2 LOCKED
+CONNECT p3707-3.axle1 -> p59443-12.axlehole1 LOCKED
+CONNECT p3707-3.axle7 -> p32184-16.hole1 TURNS
+WHY Fits a black axle connector to the tan shaft end and inserts a red eight-length axle from the other side through the round bearing in the front frame. The connector joins the two shafts rotationally while the frame bearing lets the red shaft turn.
+
