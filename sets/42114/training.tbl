@@ -2723,3 +2723,176 @@ CONNECT p2780-138.pin1 -> p32316-17.hole1 STIFF
 CONNECT p42924-89.pin2 -> p32316-17.hole5 STIFF
 CONNECT p2780-131.pin1 -> p32316-17.hole3 STIFF
 WHY Adds the matching black frame and grey reinforcing beam on the opposite motor side, with its red connector and exposed pins oriented as shown.
+
+STEP 231
+ADD p32524-14 32524 black
+ADD p32525-14 32525 black
+CONNECT p87082-1.pin2 -> p32524-14.hole1 STIFF
+CONNECT p87082-2.pin1 -> p32524-14.hole7 STIFF
+CONNECT p2780-125.pin1 -> p32524-14.hole2 STIFF
+CONNECT p2780-124.pin1 -> p32524-14.hole6 STIFF
+CONNECT p2780-137.pin1 -> p32525-14.hole3 STIFF
+CONNECT p2780-141.pin2 -> p32525-14.hole9 STIFF
+CONNECT p3673-7.pin2 -> p32525-14.hole6 TURNS
+END
+WHY Closes the steering-motor cradle with black seven- and eleven-hole crossbeams, including the central frictionless steering-link pin.
+
+STEP 232
+ATTACH steering-motor-module
+CONNECT p2780-91.pin2 -> p32525-14.hole8 STIFF
+CONNECT p2780-92.pin2 -> p32525-14.hole4 STIFF
+CONNECT p15462-16.axle1 -> p32525-14.hole1 TURNS
+CONNECT p15462-15.axle1 -> p32525-14.hole11 TURNS
+CONNECT p42924-75.pin3 -> p64179-11.hole7 STIFF
+CONNECT p42924-74.pin3 -> p64179-12.hole6 STIFF
+CONNECT p32054-10.pin2 -> p64179-11.hole4 STIFF
+CONNECT p32054-11.pin2 -> p64179-12.hole2~ STIFF
+WHY Lowers the motor cradle onto the front chassis, joining its side frames and black crossbeam to the prepared pins and brown axle ends, then pushes the orange mounting pins home.
+
+STEP 233
+ADD p32062-18 32062 red
+ADD p32270-7 32270 black
+ADD p2780-142 2780 black
+ADD p2780-143 2780 black
+CONNECT p32062-18.axle2 -> p32270-7.axlehole1 LOCKED
+CONNECT p32062-18.axle1 -> steering-motor.? LOCKED
+CONNECT p2780-142.pin1 -> p64179-12.hole11 STIFF
+CONNECT p2780-143.pin1 -> p64179-11.hole10 STIFF
+WHY Fits the black twelve-tooth gear to the motor output using a red two-length axle and adds two black pins to the side frames.
+
+STEP 234
+CONNECT p32556-3.pin3 -> p6536-3.hole1 TURNS
+CONNECT p32556-4.pin3 -> p6536-6.hole1 TURNS
+WHY Pushes the long tan steering-arm pins into the yellow perpendicular connectors so the motor linkage can pivot the articulation bracket.
+
+STEP 235
+ADD p40490-6 40490 yellow
+ADD p42924-90 42924 blue
+ADD p42924-91 42924 blue
+CONNECT p42924-90.pin2 -> p40490-6.hole3 STIFF
+CONNECT p42924-91.pin2 -> p40490-6.hole7 STIFF
+CONNECT p42924-90.pin3 -> p63869-3.hole1 STIFF
+CONNECT p42924-91.pin3 -> p63869-4.hole3 STIFF
+CONNECT p2780-113.pin2 -> p40490-6.hole1 STIFF
+CONNECT p2780-114.pin2 -> p40490-6.hole9 STIFF
+CONNECT p4274-3.pin1 -> p40490-6.hole2~ TURNS
+CONNECT p4274-4.pin1 -> p40490-6.hole8~ TURNS
+WHY Pins the yellow nine-hole beam across the articulation bracket and pushes its two blue long pins fully through the black end connectors.
+
+STEP 236
+ADD p14720-3 14720 yellow
+CONNECT p42924-91.pin1 -> p14720-3.hole1 STIFF
+CONNECT p42924-90.pin1 -> p14720-3.hole7 STIFF
+CONNECT p32556-4.pin1 -> p14720-3.hole3 TURNS
+CONNECT p32556-3.pin1 -> p14720-3.hole9 TURNS
+WHY Adds the yellow H-shaped crosspiece over the blue bracket pins and tan steering-arm pins, closing the steering linkage support.
+
+STEP 237
+ADD p42924-92 42924 blue
+ADD p42924-93 42924 blue
+ADD p42924-94 42924 blue
+ADD p42924-95 42924 blue
+CONNECT p42924-92.pin1 -> p64179-11.hole17 STIFF
+CONNECT p42924-93.pin1 -> p64179-11.hole18 STIFF
+CONNECT p42924-94.pin1 -> p64179-12.hole18 STIFF
+CONNECT p42924-95.pin1 -> p64179-12.hole19 STIFF
+WHY Adds four outward-facing blue long pins to the two side frames for the next yellow braces.
+
+STEP 238
+ADD p32278-7 32278 black
+ADD p42924-96 42924 blue
+ADD p2780-144 2780 black
+ADD p2780-145 2780 black
+ADD p18654-23 18654 black
+ADD p62462-1 62462 black
+CONNECT p42924-96.pin2 -> p32278-7.hole9 STIFF
+CONNECT p2780-144.pin2 -> p32278-7.hole10 STIFF
+CONNECT p2780-145.pin2 -> p32278-7.hole8 STIFF
+CONNECT p2780-144.pin1 -> p18654-23.hole1 STIFF
+CONNECT p42924-96.pin1 -> p62462-1.hole1~ STIFF
+CONNECT p42924-84.pin2 -> p32278-7.hole11 STIFF
+CONNECT p2780-135.pin2 -> p32278-7.hole15 STIFF
+WHY Builds the first tall black fifteen-hole upright with its black sleeve and long round bearing, then mounts it on the prepared side-frame pins.
+
+STEP 239
+ADD p32278-8 32278 black
+ADD p2780-146 2780 black
+ADD p2780-147 2780 black
+ADD p2780-148 2780 black
+CONNECT p2780-146.pin2 -> p32278-8.hole13 STIFF
+CONNECT p2780-147.pin2 -> p32278-8.hole9 STIFF
+CONNECT p2780-148.pin2 -> p32278-8.hole8 STIFF
+CONNECT p2780-136.pin2 -> p32278-8.hole11 STIFF
+CONNECT p42924-85.pin2 -> p32278-8.hole15 STIFF
+WHY Adds the second tall black upright beside the first, with three black pins ready for subsequent braces.
+
+STEP 240
+ADD p32316-18 32316 black
+CONNECT p2780-146.pin1 -> p32316-18.hole1 STIFF
+CONNECT p42924-85.pin3 -> p32316-18.hole3 STIFF
+CONNECT p42924-72.pin3 -> p32316-18.hole4 STIFF
+CONNECT p2780-98.pin2 -> p32316-18.hole5 STIFF
+WHY Adds the short black side brace between the tall upright and the earlier front-chassis mounting pins.
+
+STEP 241
+GROUP steering-gear-carrier
+ADD p11214-10 11214 red
+ADD p11214-11 11214 red
+ADD clutch-coupler-6 42195 lightgray
+CONNECT p11214-10.axle1 -> clutch-coupler-6.axlehole1~ LOCKED
+CONNECT p11214-11.axle1 -> clutch-coupler-6.axlehole1~ LOCKED
+WHY Starts the gear carrier by inserting two red axle-pins into opposite ends of the grey sleeve; the sleeve depths remain estimated.
+
+STEP 242
+ADD p32523-12 32523 lightgray
+ADD p32002-1 32002 tan
+CONNECT p32002-1.pin1 -> p32523-12.hole3~ TURNS
+CONNECT p11214-11.pin1 -> p32523-12.hole1 STIFF
+WHY Adds a grey three-hole side beam to one red pin and inserts a tan frictionless pin at its other end.
+
+STEP 243
+ADD p87408-1 87408 black
+ADD p24316-2 24316 brown
+ADD p32270-8 32270 black
+ADD p32073-7 32073 lightgray
+ADD p6589-8 6589 tan
+CONNECT p24316-2.axle3 -> p32270-8.axlehole1~ LOCKED
+CONNECT p24316-2.axle2 -> p87408-1.hole3~ TURNS
+CONNECT p32073-7.axle4 -> p6589-8.axlehole1~ LOCKED
+CONNECT p32073-7.axle3 -> p87408-1.? TURNS
+CONNECT p32002-1.pin2 -> p87408-1.? TURNS
+MESH p32270-8.teeth p6589-8.teeth
+RATIO p32270-8 p6589-8 1/1
+WHY Builds the black fork carrier with a stopped brown input axle, grey transverse axle and two twelve-tooth gears, then pivots it onto the tan side pin; the catalog does not resolve the fork end bearings in this orientation.
+
+STEP 244
+ADD p32523-13 32523 lightgray
+ADD p32002-2 32002 tan
+CONNECT p32002-2.pin1 -> p32523-13.hole3~ TURNS
+CONNECT p11214-10.pin1 -> p32523-13.hole1 STIFF
+CONNECT p32002-2.pin2 -> p87408-1.? TURNS
+WHY Adds the opposite grey three-hole beam and tan pivot pin to retain the fork carrier between the two sides.
+
+STEP 245
+ADD p6536-7 6536 black
+ADD p6536-8 6536 black
+ADD p43093-19 43093 blue
+ADD p43093-20 43093 blue
+CONNECT p43093-20.axle1 -> p6536-7.axlehole1 LOCKED
+CONNECT p43093-19.axle1 -> p6536-8.axlehole1 LOCKED
+CONNECT p11214-11.pin2 -> p6536-7.hole1 STIFF
+CONNECT p11214-10.pin2 -> p6536-8.hole1 STIFF
+END
+WHY Adds black perpendicular mounting connectors and blue axle-pins to the red side pins, completing the pivoting gear carrier.
+
+STEP 246
+ATTACH steering-gear-carrier
+CONNECT p43093-19.pin1 -> p64179-11.hole6 STIFF
+CONNECT p43093-20.pin1 -> p64179-12.hole7 STIFF
+CONNECT p32073-7.axle1 -> p62462-1.hole1~ TURNS
+WHY Mounts the completed carrier between the black side frames and guides one end of its transverse grey shaft into the prepared long black bearing.
+
+STEP 247
+MESH p32270-8.teeth p32270-7.teeth
+RATIO p32270-8 p32270-7 1/1
+WHY Pushes the carrier mounting pin fully home and seats its black twelve-tooth gear against the motor gear, completing the geared connection to the transverse shaft.

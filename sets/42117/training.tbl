@@ -69,8 +69,8 @@ GROUP nose-drive
 ADD nose-base-1 39793 white
 ADD nose-shortpin-1 32002 tan
 ADD nose-shortpin-2 32002 tan
-CONNECT nose-shortpin-1.pin1 -> nose-base-1.hole1~ STIFF
-CONNECT nose-shortpin-2.pin1 -> nose-base-1.hole8~ STIFF
+CONNECT nose-shortpin-1.pin1 -> nose-base-1.hole1~ TURNS
+CONNECT nose-shortpin-2.pin1 -> nose-base-1.hole8~ TURNS
 WHY Places two short tan pins in the white nose base for mounting the bevel-drive assembly.
 
 STEP 8
@@ -149,7 +149,7 @@ WHY Fits the two orange nose teeth and locks the orange propeller pin onto the d
 STEP 16
 ATTACH nose-drive
 CONNECT nose-front-crossaxle-1.axle1~ -> fuselage-lower-beam-1.hole1 TURNS
-CONNECT nose-shortpin-1.pin2 -> fuselage-lower-beam-1.hole2 STIFF
+CONNECT nose-shortpin-1.pin2 -> fuselage-lower-beam-1.hole2 TURNS
 CONNECT nose-axlepin-1.axle1~ -> fuselage-lower-beam-1.hole4~ TURNS
 WHY Attaches the complete bevel-drive nose to the first fuselage side at the three shown mounting points.
 
@@ -170,7 +170,7 @@ CONNECT rear-crossaxle-1.axle6~ -> rear-cross-spacer-2.hole1 TURNS
 CONNECT rear-crossaxle-1.axle7~ -> fuselage-lower-link-2.axlehole2 LOCKED
 CONNECT front-crossaxle-1.axle7~ -> fuselage-lower-beam-2.hole4~ TURNS
 CONNECT nose-front-crossaxle-1.axle4~ -> fuselage-lower-beam-2.hole1 TURNS
-CONNECT nose-shortpin-2.pin2 -> fuselage-lower-beam-2.hole2 STIFF
+CONNECT nose-shortpin-2.pin2 -> fuselage-lower-beam-2.hole2 TURNS
 CONNECT nose-axlepin-2.axle1~ -> fuselage-lower-beam-2.hole4~ TURNS
 WHY Closes the lower fuselage with the matching side beam and rear spacer around the nose mounting axles.
 
@@ -356,7 +356,7 @@ STEP 37
 GROUP wing-right
 ADD wing-panel-1 18945 darkturquoise
 ADD wing-shortpin-1 32002 tan
-CONNECT wing-shortpin-1.pin1 -> wing-panel-1.hole16~ STIFF
+CONNECT wing-shortpin-1.pin1 -> wing-panel-1.hole16~ TURNS
 WHY Starts the right wing with an inward-facing tan mounting pin at the middle of its wide root.
 
 STEP 38
@@ -389,7 +389,7 @@ STEP 41
 GROUP wing-left
 ADD wing-panel-2 18945 darkturquoise
 ADD wing-shortpin-2 32002 tan
-CONNECT wing-shortpin-2.pin1 -> wing-panel-2.hole16~ STIFF
+CONNECT wing-shortpin-2.pin1 -> wing-panel-2.hole16~ TURNS
 WHY Starts the mirrored left wing with a tan mounting pin at the middle of its wide root.
 
 STEP 42
@@ -425,9 +425,9 @@ ADD landing-drive-bracket-1 87408 black
 ADD landing-drive-axlepin-1 43093 blue
 ADD landing-drive-axlepin-2 43093 blue
 CONNECT side-vertical-longpin-1.pin1~ -> wing-root-brace-1.hole1~ STIFF
-CONNECT wing-shortpin-1.pin2 -> wing-root-brace-1.hole4~ STIFF
+CONNECT wing-shortpin-1.pin2 -> wing-root-brace-1.hole4~ TURNS
 CONNECT side-vertical-longpin-3.pin1~ -> wing-root-brace-2.hole1~ STIFF
-CONNECT wing-shortpin-2.pin2 -> wing-root-brace-2.hole4~ STIFF
+CONNECT wing-shortpin-2.pin2 -> wing-root-brace-2.hole4~ TURNS
 CONNECT landing-drive-axlepin-1.axle1 -> landing-drive-bracket-1.axlehole1~ LOCKED
 CONNECT landing-drive-axlepin-2.axle1 -> landing-drive-bracket-1.axlehole2~ LOCKED
 CONNECT landing-drive-axlepin-1.pin1 -> nose-base-1.hole4~ STIFF

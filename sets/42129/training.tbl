@@ -3291,8 +3291,8 @@ CONNECT ca-axle3-1.axle1 -> ca-beam2-3.axlehole1 LOCKED
 CONNECT ca-conn-3.axle1 -> ca-beam2-3.axlehole2 LOCKED
 CONNECT ca-axle3-1.axle1 -> ca-beam2-4.axlehole1 LOCKED
 CONNECT ca-conn-3.axle1 -> ca-beam2-4.axlehole2 LOCKED
-CONNECT ca-pin-2.pin1 -> ca-conn-3.hole1 STIFF
-CONNECT ca-pin-2.pin2 -> ca-conn-3.hole1 STIFF
+CONNECT ca-pin-2.pin1 -> ca-conn-3.hole1 TURNS
+CONNECT ca-pin-2.pin2 -> ca-conn-3.hole1 TURNS
 WHY Adds 2 2-hole thin beams, a pin hub, 4 friction pins and a 3/4 pin to the cabin. It sits in the middle of the truck, at mid height. It is fixed onto the 3-long axle from step 218 and 3x7 panel from step 217. The 3-long axle sits in a cross hole of the 2-hole thin beam, so it cannot turn there and is held fixed (4 such joints in this step). The friction pins grip the 3x7 panel with friction, making a rigid join (6 such joints in this step). Its unused ends stay free because step 221 slots 2 5-hole beams and 2 11-hole beams onto them.
 
 STEP 220
@@ -3484,8 +3484,8 @@ CONNECT d2-axle3-1.axle3 -> d2-beam2-3.axlehole1 LOCKED
 CONNECT d2-conn-3.axle1 -> d2-beam2-3.axlehole2 LOCKED
 CONNECT d2-axle3-1.axle3 -> d2-beam2-4.axlehole1 LOCKED
 CONNECT d2-conn-3.axle1 -> d2-beam2-4.axlehole2 LOCKED
-CONNECT d2-pin-2.pin1 -> d2-conn-3.hole1 STIFF
-CONNECT d2-pin-2.pin2 -> d2-conn-3.hole1 STIFF
+CONNECT d2-pin-2.pin1 -> d2-conn-3.hole1 TURNS
+CONNECT d2-pin-2.pin2 -> d2-conn-3.hole1 TURNS
 WHY Adds 2 2-hole thin beams, a pin hub, 4 friction pins and a 3/4 pin to the doors. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 3-long axle from step 232 and 3x7 panel from step 231. The 3-long axle sits in a cross hole of the 2-hole thin beam, so it cannot turn there and is held fixed (4 such joints in this step). The friction pins grip the 3x7 panel with friction, making a rigid join (6 such joints in this step). Its unused ends stay free because step 235 slots 2 5-hole beams and 2 11-hole beams onto them.
 
 STEP 234
@@ -3643,8 +3643,8 @@ CONNECT tr-conn-46.axle1 -> tr-conn-45.axlehole1 LOCKED
 CONNECT tr-conn-49.axle1 -> tr-conn-48.axlehole1 LOCKED
 CONNECT tr-axle3-12.axle1 -> tr-conn-45.axlehole2 LOCKED
 CONNECT tr-axle3-13.axle1 -> tr-conn-48.axlehole2 LOCKED
-CONNECT ca-pin-2.pin2 -> tr-conn-44.hole1 STIFF
-CONNECT d2-pin-2.pin2 -> tr-conn-47.hole1 STIFF
+CONNECT ca-pin-2.pin2 -> tr-conn-44.hole1 TURNS
+CONNECT d2-pin-2.pin2 -> tr-conn-47.hole1 TURNS
 WHY Adds 2 round pin connectors, 2 3-long axles, 2 pin connectors, 2 axle connectors and 2 pin hubs to the main chassis. It sits in the middle of the truck, high up. It is fixed onto the 3/4 pin from step 233 and 3/4 pin from step 219. The 3-long axle is locked in the cross hole of the pin connector, so the two turn together (6 such joints in this step). The 3-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there (2 such joints in this step).
 
 STEP 246
@@ -5409,13 +5409,13 @@ ADD lad-axle3-1 4519 lightgray
 ADD lad-pin-1 32002 tan
 ADD lad-conn-2 62462 black
 ADD lad-pin-2 32002 tan
-CONNECT lad-pin-1.pin1 -> lad-conn-2.hole1 STIFF
-CONNECT lad-pin-2.pin1 -> lad-conn-2.hole1 STIFF
+CONNECT lad-pin-1.pin1 -> lad-conn-2.hole1 TURNS
+CONNECT lad-pin-2.pin1 -> lad-conn-2.hole1 TURNS
 CONNECT lad-conn-1.axle1 -> lad-beam5-1.axlehole1 LOCKED
 CONNECT lad-axle3-1.axle3 -> lad-beam5-1.axlehole2 LOCKED
-CONNECT lad-pin-1.pin2 -> lad-beam5-1.hole2 STIFF
-CONNECT lad-pin-1.pin2 -> lad-conn-2.hole1 STIFF
-CONNECT lad-pin-2.pin2 -> lad-conn-2.hole1 STIFF
+CONNECT lad-pin-1.pin2 -> lad-beam5-1.hole2 TURNS
+CONNECT lad-pin-1.pin2 -> lad-conn-2.hole1 TURNS
+CONNECT lad-pin-2.pin2 -> lad-conn-2.hole1 TURNS
 WHY Starts the ladder with a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins; it gives the driver a way up into the cab. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 359 slots a 5-hole thin beam and a round pin connector onto them.
 
 STEP 359
@@ -5426,7 +5426,7 @@ ADD lad-conn-5 62462 black
 CONNECT lad-axle3-1.axle2 -> lad-conn-4.hole1 TURNS
 CONNECT lad-conn-3.axle1 -> lad-beam5-2.axlehole1 LOCKED
 CONNECT lad-axle3-1.axle1 -> lad-beam5-2.axlehole2 LOCKED
-CONNECT lad-pin-2.pin2 -> lad-beam5-2.hole2 STIFF
+CONNECT lad-pin-2.pin2 -> lad-beam5-2.hole2 TURNS
 CONNECT lad-conn-3.axle1 -> lad-conn-5.hole1 TURNS
 CONNECT lad-axle3-1.axle3 -> lad-conn-4.hole1 TURNS
 CONNECT lad-axle3-1.axle1 -> lad-conn-4.hole1 TURNS
@@ -5583,13 +5583,13 @@ ADD lad-axle3-2 4519 lightgray
 ADD lad-pin-7 32002 tan
 ADD lad-conn-7 62462 black
 ADD lad-pin-8 32002 tan
-CONNECT lad-pin-7.pin1 -> lad-conn-7.hole1 STIFF
-CONNECT lad-pin-8.pin1 -> lad-conn-7.hole1 STIFF
+CONNECT lad-pin-7.pin1 -> lad-conn-7.hole1 TURNS
+CONNECT lad-pin-8.pin1 -> lad-conn-7.hole1 TURNS
 CONNECT lad-conn-6.axle1 -> lad-beam5-4.axlehole1 LOCKED
 CONNECT lad-axle3-2.axle3 -> lad-beam5-4.axlehole2 LOCKED
-CONNECT lad-pin-7.pin2 -> lad-beam5-4.hole2 STIFF
-CONNECT lad-pin-7.pin2 -> lad-conn-7.hole1 STIFF
-CONNECT lad-pin-8.pin2 -> lad-conn-7.hole1 STIFF
+CONNECT lad-pin-7.pin2 -> lad-beam5-4.hole2 TURNS
+CONNECT lad-pin-7.pin2 -> lad-conn-7.hole1 TURNS
+CONNECT lad-pin-8.pin2 -> lad-conn-7.hole1 TURNS
 WHY Adds a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins to the ladder. It sits in the middle of the truck, at mid height. These parts only meet earlier work through the parts added in the same step. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 373 slots a 5-hole thin beam and a round pin connector onto them.
 
 STEP 373
@@ -5600,7 +5600,7 @@ ADD lad-conn-10 62462 black
 CONNECT lad-axle3-2.axle2 -> lad-conn-9.hole1 TURNS
 CONNECT lad-conn-8.axle1 -> lad-beam5-5.axlehole1 LOCKED
 CONNECT lad-axle3-2.axle1 -> lad-beam5-5.axlehole2 LOCKED
-CONNECT lad-pin-8.pin2 -> lad-beam5-5.hole2 STIFF
+CONNECT lad-pin-8.pin2 -> lad-beam5-5.hole2 TURNS
 CONNECT lad-conn-8.axle1 -> lad-conn-10.hole1 TURNS
 CONNECT lad-axle3-2.axle1 -> lad-conn-9.hole1 TURNS
 CONNECT lad-axle3-2.axle3 -> lad-conn-9.hole1 TURNS

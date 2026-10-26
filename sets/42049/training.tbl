@@ -320,7 +320,7 @@ ADD p32270-1 32270 black
 ADD p60485-1 60485 lightgray
 ADD p6589-2 6589 tan
 ADD p59443-5 59443 darkgray
-CONNECT p32002-1.pin1 -> p87408-1.hole4? STIFF
+CONNECT p32002-1.pin1 -> p87408-1.hole4? TURNS
 CONNECT p87083-1.axle4 -> p32270-2.axlehole1 LOCKED
 CONNECT p87083-1.axle3 -> p87408-1.hole3 TURNS
 CONNECT p87083-1.axle2 -> p3713-5.axlehole1 LOCKED
@@ -333,7 +333,7 @@ END
 ATTACH steering-knob-drive
 CONNECT p60485-1.axle8 -> p60484-1.hole3 TURNS
 CONNECT p60485-1.axle9 -> p59443-5.axlehole1 LOCKED
-CONNECT p32002-1.pin2 -> p60484-1.hole4 STIFF
+CONNECT p32002-1.pin2 -> p60484-1.hole4 TURNS
 END
 WHY Builds the roof knob's right-angle drive and mounts its long shaft through the yellow center support.
 

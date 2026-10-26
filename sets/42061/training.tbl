@@ -583,13 +583,13 @@ ADD beam2-9 60483 black
 ADD pin-62 32002 tan
 CONNECT pin-59.pin2 -> beam2-8.hole1 STIFF
 CONNECT axle4-4.axle3 -> beam2-8.axlehole1 LOCKED
-CONNECT pin-60.pin1 -> beam2x4-7.hole3 STIFF
+CONNECT pin-60.pin1 -> beam2x4-7.hole3 TURNS
 CONNECT pin-61.pin1 -> beam2x4-7.hole2 STIFF
 CONNECT axle4-5.axle3 -> beam2x4-7.hole4 TURNS
 CONNECT axle3-16.axle3 -> pin-61.axlehole1 LOCKED
 CONNECT axle3-16.axle2 -> beam2-9.axlehole1 LOCKED
-CONNECT pin-62.pin1 -> beam2-9.hole1 STIFF
-CONNECT pin-60.pin2 -> beam5x7-1.hole3 STIFF
+CONNECT pin-62.pin1 -> beam2-9.hole1 TURNS
+CONNECT pin-60.pin2 -> beam5x7-1.hole3 TURNS
 WHY Adds an L-shaped black beam bracket and a long friction pin with a stop bush, plus tan low-friction pins.
 
 STEP 37
@@ -623,7 +623,7 @@ CONNECT axle4-4.axle1 -> beam2-12.axlehole1 LOCKED
 CONNECT axle4-3.axle1 -> beam5x7-2.axlehole3 LOCKED
 CONNECT axle4-4.axle1 -> beam5x7-2.axlehole1 LOCKED
 CONNECT axle4-5.axle1 -> beam5x7-2.axlehole2 LOCKED
-CONNECT pin-62.pin2 -> beam5x7-2.hole3 STIFF
+CONNECT pin-62.pin2 -> beam5x7-2.hole3 TURNS
 WHY Adds the cab's blue side panels (2x4 L-shaped beams) and a second curved floor beam, mirroring cabin-01's shape in blue instead of black.
 
 STEP 39

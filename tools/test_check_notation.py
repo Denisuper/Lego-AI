@@ -26,6 +26,9 @@ class BearingModes(unittest.TestCase):
     def test_frictionless_pin_rotates(self):
         self.assertEqual(mode('pin stop (round)', 'pin hole (round)', ['3749', '32316']), 'TURNS')
 
+    def test_three_quarter_pin_rotates_in_gear_carrier(self):
+        self.assertEqual(mode('pin stop (round)', 'pin hole (round)', ['32002', '87408']), 'TURNS')
+
     def test_cross_axle_locks_in_cross_hole(self):
         self.assertEqual(mode('axle stop (cross)', 'axle hole (cross)', ['59426', '32270']), 'LOCKED')
 

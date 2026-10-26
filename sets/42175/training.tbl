@@ -709,7 +709,7 @@ WHY Makes anchor points on the underside.
 STEP 45
 ADD cb-t1-1 60483 black
 ADD cb-tp-1 32002 tan
-CONNECT cb-tp-1.pin1 -> cb-t1-1.hole1~ STIFF
+CONNECT cb-tp-1.pin1 -> cb-t1-1.hole1~ TURNS
 CONNECT cb-t1-1.axlehole1 -> cb-ax5-1.axle3?
 WHY Adds a smooth free-turning pin for a link.
 
@@ -1042,7 +1042,7 @@ CONNECT bm-bp10-1.pin1 -> bm-b11d-1.hole3~ STIFF
 CONNECT bm-bp10-2.pin1 -> bm-b11d-1.hole8~ STIFF
 CONNECT bm-bp10-3.pin1 -> bm-b11d-1.hole11~ STIFF
 CONNECT bm-bp10-4.pin1 -> bm-b5b-1.hole2~ STIFF
-CONNECT bm-tp-1.pin1 -> bm-b5b-1.hole1~ STIFF
+CONNECT bm-tp-1.pin1 -> bm-b5b-1.hole1~ TURNS
 WHY Builds the elbow beam that the upper arm hangs on.
 
 STEP 86
@@ -1800,8 +1800,8 @@ ADD rb-conn-1 42003 black
 ADD rb-ax-1 87083 darkgray
 ADD rb-tp-1 32002 tan
 ADD rb-tp-2 32002 tan
-CONNECT rb-tp-1.pin1 -> rb-tb-1.hole1~ STIFF
-CONNECT rb-tp-2.pin1 -> rb-tb-1.hole3~ STIFF
+CONNECT rb-tp-1.pin1 -> rb-tb-1.hole1~ TURNS
+CONNECT rb-tp-2.pin1 -> rb-tb-1.hole3~ TURNS
 CONNECT rb-conn-1.hole1 -> rb-tp-1.pin2?
 CONNECT rb-ax-1.axle1 -> rb-conn-1.axlehole1?
 WHY Builds a hinge bracket for the roof.

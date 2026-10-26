@@ -278,7 +278,7 @@ ADD misc-pin1 32002 tan
 ADD misc-pin2 43093 blue
 ADD misc-pin3 43093 blue
 CONNECT fw-shaft1.axle4~ -> misc-conn1.axlehole1~ LOCKED
-CONNECT misc-pin1.pin1 -> fw-conn2.hole1~ STIFF
+CONNECT misc-pin1.pin1 -> fw-conn2.hole1~ TURNS
 CONNECT misc-pin2.axle1~ -> fw-conn3.axlehole1~ LOCKED
 CONNECT misc-pin3.pin1 -> fw-conn1.hole1~ STIFF
 WHY Adds a few more friction pins and an axle connector that stiffen the flywheel mount.
