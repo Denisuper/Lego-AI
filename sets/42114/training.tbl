@@ -1503,3 +1503,200 @@ CONNECT p2780-73.pin2 -> p32278-1.hole1 STIFF
 CONNECT p2780-74.pin1 -> p41239-1.hole3 STIFF
 CONNECT p42924-55.pin3 -> p41239-1.hole1 STIFF
 WHY Adds matching yellow L-shaped braces on both sides of the long frame, leaving grey and blue pin ends ready for the next rails.
+
+STEP 123
+ADD p23948-2 23948 yellow
+ADD p59443-18 59443 yellow
+ADD p59443-19 59443 yellow
+CONNECT p23948-2.axle1 -> p59443-18.axlehole2 LOCKED
+CONNECT p23948-2.axle11 -> p59443-19.axlehole1 LOCKED
+WHY Fits yellow couplers to both ends of the eleven-length shaft and lays it alongside the long frame, ready for the motor module.
+
+STEP 124
+ADD p4519-10 4519 yellow
+ADD clutch-coupler-5 42195 lightgray
+ADD p3708-1 3708 black
+CONNECT p4519-10.axle3 -> clutch-coupler-5.axlehole1~ LOCKED
+CONNECT p3708-1.axle1 -> clutch-coupler-5.axlehole1~ LOCKED
+CONNECT p4519-10.axle1 -> p59443-6.axlehole1 LOCKED
+CONNECT p4519-10.axle2 -> p64179-5.hole9 TURNS
+WHY Joins the short yellow axle to the black twelve-length drive shaft with a grey sleeve, then inserts the yellow end into the existing gearbox coupler; sleeve depths remain estimated.
+
+STEP 125
+GROUP motor-module
+ADD p32525-8 32525 yellow
+ADD p48989-4 65489 lightgray
+CONNECT p48989-4.pin1 -> p32525-8.hole9 STIFF
+CONNECT p48989-4.pin2 -> p32525-8.hole11 STIFF
+WHY Starts the motor cradle with a yellow eleven-hole rail and a grey four-pin perpendicular connector at its rear end.
+
+STEP 126
+ADD p32526-11 32526 yellow
+ADD p48989-5 65489 lightgray
+ADD p42924-56 42924 blue
+ADD p42924-57 42924 blue
+CONNECT p42924-56.pin2 -> p32526-11.hole3 STIFF
+CONNECT p42924-57.pin2 -> p32526-11.hole7 STIFF
+CONNECT p42924-56.pin3 -> p32525-8.hole2 STIFF
+CONNECT p48989-5.pin3 -> p32525-8.hole6 STIFF
+CONNECT p48989-5.pin4 -> p32525-8.hole8 STIFF
+WHY Adds an upright yellow L-beam and middle perpendicular connector, leaving the blue pin ends available to join the opposite rail and motors.
+
+STEP 127
+ADD p32525-9 32525 yellow
+ADD p48989-6 65489 lightgray
+CONNECT p48989-5.pin1 -> p32525-9.hole6 STIFF
+CONNECT p48989-5.pin2 -> p32525-9.hole8 STIFF
+CONNECT p42924-56.pin1 -> p32525-9.hole2 STIFF
+CONNECT p48989-6.pin3 -> p32525-9.hole9 STIFF
+CONNECT p48989-6.pin4 -> p32525-9.hole11 STIFF
+WHY Closes the parallel yellow cradle rails and adds the second rear perpendicular connector.
+
+STEP 128
+ADD p32073-4 32073 lightgray
+ADD p32054-8 32054 lightgray
+ADD p32054-9 32054 lightgray
+CONNECT p32073-4.axle5 -> p32054-8.axlehole1 LOCKED
+CONNECT p32073-4.axle4 -> p32525-8.hole4 TURNS
+CONNECT p32073-4.axle3 -> p32526-11.hole5 TURNS
+CONNECT p32073-4.axle2 -> p32525-9.hole4 TURNS
+CONNECT p32073-4.axle1 -> p32054-9.axlehole1 LOCKED
+WHY Runs a five-length axle across both rails and the upright, then locks grey stopped pins onto its ends for the outer motor supports.
+
+STEP 129
+ADD p18654-15 18654 darkgray
+ADD p18654-16 18654 darkgray
+ADD p2780-75 2780 black
+ADD p2780-76 2780 black
+CONNECT p48989-6.pin2 -> p18654-15.hole1 STIFF
+CONNECT p48989-4.pin4 -> p18654-16.hole1 STIFF
+CONNECT p2780-75.pin1 -> p48989-4.hole3 STIFF
+CONNECT p2780-76.pin1 -> p48989-6.hole3 STIFF
+WHY Adds dark grey sleeves to the outer rear pins and black mounting pins to the perpendicular connectors.
+
+STEP 130
+ADD p64179-9 64179 black
+ADD p2780-77 2780 black
+ADD p2780-78 2780 black
+ADD p42924-58 42924 blue
+ADD p42924-59 42924 blue
+CONNECT p2780-77.pin2 -> p64179-9.hole14 STIFF
+CONNECT p2780-78.pin1 -> p64179-9.hole15 STIFF
+CONNECT p42924-58.pin2 -> p64179-9.hole6 STIFF
+CONNECT p42924-59.pin2 -> p64179-9.hole7 STIFF
+CONNECT p2780-75.pin2 -> p64179-9.hole20 STIFF
+CONNECT p2780-76.pin2 -> p64179-9.hole16 STIFF
+WHY Pins the black rectangular frame onto the rear of the cradle and prepares its side pins for attachment to the chassis.
+
+STEP 131
+GROUP xl-motor
+ADD drive-motor 22172 darkgray
+ADD p32062-6 32062 red
+ADD p2780-79 2780 black
+ADD p2780-80 2780 black
+CONNECT p32062-6.axle2 -> drive-motor.? LOCKED
+CONNECT p2780-79.pin1 -> drive-motor.? STIFF
+CONNECT p2780-80.pin1 -> drive-motor.? STIFF
+END
+WHY Prepares the Powered Up XL motor with a red output axle and two black side pins; its uncataloged motor sockets remain unknown endpoints.
+
+STEP 132
+ATTACH xl-motor
+CONNECT p42924-57.pin3 -> drive-motor.? STIFF
+CONNECT p48989-5.pin4 -> drive-motor.? STIFF
+WHY Seats the XL motor beside the cradle, engaging the exposed blue and grey mounting pins in its side sockets.
+
+STEP 133
+ADD p42924-60 42924 blue
+ADD p42924-61 42924 blue
+ADD p18654-17 18654 darkgray
+ADD p18654-18 18654 darkgray
+CONNECT p42924-60.pin2 -> p18654-17.hole1 STIFF
+CONNECT p42924-61.pin2 -> p18654-18.hole1 STIFF
+CONNECT p42924-60.pin3 -> drive-motor.? STIFF
+CONNECT p42924-61.pin3 -> drive-motor.? STIFF
+WHY Adds two blue motor mounting pins with dark grey sleeves as spacers for the second motor.
+
+STEP 134
+GROUP large-motor
+ADD selector-motor 22169 darkgray
+ADD p2780-81 2780 black
+ADD p2780-82 2780 black
+CONNECT p2780-81.pin2 -> selector-motor.? STIFF
+CONNECT p2780-82.pin2 -> selector-motor.? STIFF
+END
+WHY Prepares the Powered Up large motor with two black mounting pins on its side; the catalog does not name its sockets.
+
+STEP 135
+
+WHY Applies sticker 17 to the large motor in the position shown, identifying it before installation.
+
+STEP 136
+ATTACH large-motor
+CONNECT p42924-60.pin1 -> selector-motor.? STIFF
+CONNECT p42924-61.pin1 -> selector-motor.? STIFF
+WHY Mounts the large motor beside the XL motor on the two spaced blue pins, keeping both cables clear of the cradle.
+
+STEP 137
+
+WHY Turns the motor module over, routes both cables around the exposed grey pin as shown, and applies identification sticker 13 to the XL motor.
+
+STEP 138
+ADD p32524-6 32524 yellow
+ADD p32524-7 32524 yellow
+CONNECT p32054-8.pin1 -> p32524-6.hole1 STIFF
+CONNECT p48989-4.pin3 -> p32524-6.hole6 STIFF
+CONNECT p32054-9.pin1 -> p32524-7.hole1 STIFF
+CONNECT p48989-6.pin1 -> p32524-7.hole6 STIFF
+WHY Adds two seven-hole outer rails to brace the motor cradle and retain the routed cables.
+
+STEP 139
+END
+WHY Checks the finished two-motor module with both cable leads routed forward and clear of the mounting frame.
+
+STEP 140
+ATTACH motor-module
+CONNECT p42924-58.pin3 -> p32524-4.hole2 STIFF
+CONNECT p42924-59.pin3 -> p32524-5.hole2 STIFF
+CONNECT p32062-6.axle1 -> p59443-18.axlehole1 LOCKED
+CONNECT p3708-1.axle12 -> selector-motor.? LOCKED
+WHY Lowers the two-motor cradle onto the chassis, joining the XL motor to the yellow shaft and the large motor to the long black gearbox shaft while aligning the frame pins.
+
+STEP 141
+ADD p4274-2 4274 blue
+CONNECT p4274-2.pin1 -> p48989-5.hole3 TURNS
+WHY Pushes the motor-module mounting pins fully home and inserts the small blue half-pin into the central perpendicular connector.
+
+STEP 142
+ADD p99008-11 99008 tan
+ADD p32198-1 32198 tan
+CONNECT p99008-11.axle1 -> p32198-1.axlehole1~ LOCKED
+CONNECT p99008-11.axle2 -> p64179-9.hole3 TURNS
+CONNECT p99008-11.pin1 -> p32184-1.hole1 TURNS
+WHY Installs the tan twenty-tooth bevel gear on its axle through the black frame and red bearing block, leaving the axle free to rotate.
+
+STEP 143
+ADD p92907-1 92907 lightgray
+ADD p92907-2 92907 lightgray
+ADD p92907-3 92907 lightgray
+ADD p92907-4 92907 lightgray
+CONNECT p42924-59.pin1 -> p92907-1.hole1 STIFF
+CONNECT p42924-58.pin1 -> p92907-2.hole1 STIFF
+CONNECT p2780-77.pin1 -> p92907-3.hole1 STIFF
+CONNECT p2780-78.pin2 -> p92907-4.hole1 STIFF
+WHY Places four grey forked cross-hole connectors on the black frame's prepared side pins to form the mounting points for the next mechanisms.
+
+STEP 144
+ADD p32062-7 32062 red
+ADD p32062-8 32062 red
+ADD p32062-9 32062 red
+ADD p32062-10 32062 red
+CONNECT p32062-7.axle2 -> p92907-3.axlehole1~ LOCKED
+CONNECT p32062-7.axle1 -> p64179-9.hole12~ TURNS
+CONNECT p32062-8.axle1 -> p92907-2.axlehole1~ LOCKED
+CONNECT p32062-8.axle2 -> p64179-9.hole8~ TURNS
+CONNECT p32062-9.axle2 -> p92907-1.axlehole1~ LOCKED
+CONNECT p32062-9.axle1 -> p64179-9.hole9~ TURNS
+CONNECT p32062-10.axle1 -> p92907-4.axlehole1~ LOCKED
+CONNECT p32062-10.axle2 -> p64179-9.hole13~ TURNS
+WHY Inserts four red two-length axles into the forked connectors and adjoining frame holes, retaining the connectors; the concealed axle depths remain estimated.
