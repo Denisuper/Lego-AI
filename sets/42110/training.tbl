@@ -783,3 +783,201 @@ STEP 73
 
 WHY Stretches the waiting white rubber band from the red bush around the blue axle-pin behind the upper end of the grey selector lever, as shown in the inset, providing its return tension. The elastic wrap remains described in words because it is not a rigid pin, axle or gear connection.
 
+STEP 74
+GROUP centre-differential-support
+ADD p63869-6 63869 lightgray
+ADD p63869-7 63869 lightgray
+ADD p6536-14 6536 darkgray
+ADD p6536-15 6536 darkgray
+ADD p3705-2 3705 red
+ADD p24316-3 24316 brown
+ADD p3713-10 3713 red
+ADD centre-support-pin-one 2780 black
+ADD centre-support-pin-two 2780 black
+CONNECT centre-support-pin-one.pin1 -> p63869-7.? STIFF
+CONNECT centre-support-pin-two.pin1 -> p63869-7.? STIFF
+CONNECT p3705-2.axle1 -> p63869-7.axlehole1 LOCKED
+CONNECT p3705-2.axle2 -> p63869-6.axlehole1 LOCKED
+CONNECT p3705-2.axle3 -> p6536-15.axlehole1 LOCKED
+CONNECT p3705-2.axle4 -> p6536-14.axlehole1 LOCKED
+CONNECT p24316-3.axle3 -> p6536-15.hole1 TURNS
+CONNECT p24316-3.axle2 -> p3713-10.axlehole1 LOCKED
+END
+ATTACH centre-differential-support
+CONNECT p18651-1.axle1 -> p6536-14.hole1 TURNS
+CONNECT p3707-1.axle5 -> p63869-6.hole3 TURNS
+CONNECT p32073-3.axle4~ -> p63869-6.hole1 TURNS
+CONNECT p23948-2.axle9 -> p63869-7.hole2 TURNS
+WHY Builds the centre support from two grey triple connectors, two dark-grey perpendicular connectors and a red four-length axle, with two black mounting pins and a retained brown stopped shaft. Fits it over the projecting gearbox shafts and selector axle-pin. The two black pins are present in the booklet but absent from the reference model, so their receiving holes remain unknown; yellow-shaft seating is estimated.
+
+STEP 75
+ADD p6573-1 6573 red
+ADD p3705-3 3705 red
+ADD p6589-4 6589 tan
+ADD p6589-5 6589 tan
+ADD p6589-6 6589 tan
+CONNECT p6589-6.axlehole1 -> p6573-1.? TURNS
+CONNECT p3705-3.axle1~ -> p6589-4.axlehole1 LOCKED
+CONNECT p3705-3.axle2 -> p6573-1.hole1 TURNS
+CONNECT p23948-2.axle11~ -> p6589-5.axlehole1 LOCKED
+CONNECT p23948-2.axle10 -> p6573-1.hole2 TURNS
+MESH p6589-6.teeth p6589-4.teeth
+MESH p6589-6.teeth p6589-5.teeth
+WHY Builds the red centre differential with three tan twelve-tooth bevel gears and a red four-length output shaft, then slides its other side gear onto the long grey gearbox shaft. Both outputs turn in the carrier while the internal pinion meshes with both side gears; its carrier post is unnamed and the side-gear depths are estimated.
+
+STEP 76
+ADD p59443-3 59443 black
+CONNECT p24316-3.axle1 -> p59443-3.axlehole2 LOCKED
+WHY Fits a black two-length axle connector onto the projecting brown stopped shaft beside the centre differential to prepare the next gear shaft.
+
+STEP 77
+ADD p42003-5 42003 lightgray
+ADD p2780-20 2780 black
+ADD p43093-8 43093 blue
+ADD rear-left-lower-pivot-connector 42003 lightgray
+ADD rear-left-lower-pivot-pin 2780 black
+ADD rear-left-lower-pivot-axle-pin 43093 blue
+CONNECT p2780-20.pin2 -> p42003-5.hole1 STIFF
+CONNECT p43093-8.pin1 -> p42003-5.hole2 STIFF
+CONNECT p44294-3.axle7 -> p42003-5.axlehole1 LOCKED
+CONNECT rear-left-lower-pivot-pin.pin1 -> rear-left-lower-pivot-connector.hole1~ STIFF
+CONNECT rear-left-lower-pivot-axle-pin.pin1 -> rear-left-lower-pivot-connector.hole2~ STIFF
+CONNECT p44294-4.axle1 -> rear-left-lower-pivot-connector.axlehole1~ LOCKED
+WHY Builds two grey axle-and-pin end connectors, each carrying a black friction pin and a blue axle-pin, then fits them to the exposed lower suspension pivot shafts on both sides. The booklet shows both assemblies; the left assembly is absent from the reference model, so its mirrored point orientation remains estimated.
+
+STEP 78
+ADD p42003-6 42003 lightgray
+ADD p43093-9 43093 blue
+ADD p2780-21 2780 black
+ADD p2780-22 2780 black
+CONNECT p43093-9.axle1 -> p42003-6.axlehole1 LOCKED
+CONNECT p2780-21.pin1 -> p42003-6.hole2 STIFF
+CONNECT p2780-22.pin1 -> p42003-6.hole1 STIFF
+CONNECT p43093-9.pin1 -> p32525-2.hole9 STIFF
+WHY Builds another grey axle-and-pin connector with two black friction pins and a blue axle-pin through its cross hole, then pins its blue end into the long chassis rail for the next outer brace.
+
+STEP 79
+ADD p32526-1 32526 black
+ADD p32002-1 32002 tan
+ADD p18654-3 18654 black
+CONNECT p32002-1.pin1~ -> p32526-1.hole5 TURNS
+CONNECT p2780-21.pin2 -> p32526-1.hole3 STIFF
+CONNECT p2780-22.pin2 -> p32526-1.hole2 STIFF
+CONNECT p3707-1.axle7 -> p32526-1.hole7 TURNS
+CONNECT p3707-1.axle6 -> p18654-3.hole1 TURNS
+WHY Fits a tan frictionless pin to the black L-shaped brace with its seating depth estimated, slides that brace over the long red shaft and presses it onto the two black support pins. Adds a black round spacer on the same red shaft immediately behind the brace, retaining free shaft rotation.
+
+STEP 80
+ADD p3705-4 3705 red
+ADD p94925-5 94925 lightgray
+CONNECT p3705-4.axle1 -> p59443-3.axlehole1 LOCKED
+CONNECT p3705-4.axle2 -> p94925-5.axlehole1 LOCKED
+MESH p94925-5.teeth p6573-1.teeth
+WHY Extends the brown shaft through its black connector using a red four-length axle and adds a grey sixteen-tooth gear, meshing it with the sixteen-tooth end of the red centre differential carrier.
+
+STEP 81
+GROUP centre-front-bearing
+ADD p41677-1 41677 blue
+ADD p41677-2 41677 blue
+ADD p3705-5 3705 red
+ADD p3713-11 3713 red
+ADD p63869-8 63869 lightgray
+ADD p60483-7 60483 black
+ADD p32054-3 32054 lightgray
+CONNECT p3705-5.axle4~ -> p41677-1.axlehole2 LOCKED
+CONNECT p3705-5.axle4~ -> p41677-2.axlehole2 LOCKED
+CONNECT p3705-5.axle3 -> p3713-11.axlehole1 LOCKED
+CONNECT p3705-5.axle2 -> p63869-8.axlehole1 LOCKED
+CONNECT p3705-5.axle1 -> p60483-7.axlehole1 LOCKED
+END
+ATTACH centre-front-bearing
+CONNECT p24316-1.axle1~ -> p41677-1.axlehole1 LOCKED
+CONNECT p24316-1.axle1~ -> p41677-2.axlehole1 LOCKED
+CONNECT p3705-3.axle3 -> p63869-8.hole1 TURNS
+CONNECT p3705-4.axle3 -> p63869-8.hole3 TURNS
+CONNECT p32054-3.pin1 -> p32525-2.hole5 STIFF
+CONNECT p32054-3.pin2 -> p60483-7.hole1 STIFF
+WHY Builds a transverse red four-length axle through two thin blue two-hole beams, a red bush, grey triple connector and black axle-and-pin block. Fits the blue beams over the waiting brown rail shaft, captures the two centre gear shafts in the grey bearing holes and pins the black block to the chassis rail. Thin blue beam seating on the shafts is estimated.
+
+STEP 82
+ADD p32138-1 32138 lightgray
+ADD p42003-7 42003 lightgray
+CONNECT p32138-1.pin3 -> p42003-7.hole1 STIFF
+CONNECT p32138-1.pin4 -> p42003-7.hole2 STIFF
+CONNECT p32138-1.pin1 -> p32525-2.hole3 STIFF
+CONNECT p32138-1.pin2 -> p32525-2.hole4 STIFF
+WHY Builds a grey four-pin connector onto the grey axle-and-pin connector, then presses its other pin pair into adjacent holes in the long chassis rail, leaving the cross hole available for the next transverse shaft.
+
+STEP 83
+ADD p59443-4 59443 black
+ADD p59443-5 59443 black
+CONNECT p3705-4.axle4 -> p59443-4.axlehole2 LOCKED
+CONNECT p3705-3.axle4 -> p59443-5.axlehole2 LOCKED
+WHY Fits one black two-length axle connector onto each projecting red shaft, preparing matching extensions for the centre differential output and its neighbouring geared shaft.
+
+STEP 84
+ADD p3705-6 3705 red
+ADD p32013-1 32013 darkgray
+ADD p6536-16 6536 darkgray
+ADD p63869-9 63869 lightgray
+CONNECT p3705-6.axle1 -> p32013-1.axlehole1 LOCKED
+CONNECT p3705-6.axle2 -> p6536-16.axlehole1 LOCKED
+CONNECT p3705-6.axle3 -> p63869-9.axlehole1 LOCKED
+CONNECT p3705-6.axle4 -> p42003-7.axlehole1 LOCKED
+WHY Builds the next upright on a red four-length axle using a dark-grey axle connector, dark-grey perpendicular connector and grey triple connector, then seats its bottom end into the waiting grey cross hole between the chassis rails.
+
+STEP 85
+ADD p32073-4 32073 yellow
+ADD p32073-5 32073 yellow
+CONNECT p32073-4.axle5 -> p59443-5.axlehole1 LOCKED
+CONNECT p32073-4.axle4 -> p63869-9.hole3 TURNS
+CONNECT p32073-5.axle5 -> p59443-4.axlehole1 LOCKED
+CONNECT p32073-5.axle4 -> p6536-16.hole1 TURNS
+WHY Passes two yellow five-length shafts through the new upright bearing holes and into the two black axle connectors, extending the centre differential output and adjacent geared shaft towards the front.
+
+STEP 86
+ADD p94925-6 94925 lightgray
+ADD p3713-12 3713 red
+CONNECT p32073-5.axle3 -> p94925-6.axlehole1 LOCKED
+CONNECT p32073-5.axle2 -> p3713-12.axlehole1 LOCKED
+WHY Fits a grey sixteen-tooth gear and red retaining bush onto the right-hand yellow shaft, leaving the end exposed for its later front bearing.
+
+STEP 87
+ADD p3713-13 3713 red
+ADD p3648b-3 3648b darkgray
+CONNECT p32073-4.axle3 -> p3713-13.axlehole1 LOCKED
+CONNECT p32073-4.axle2 -> p3648b-3.axlehole1 LOCKED
+WHY Fits a red spacing bush and dark-grey twenty-four-tooth gear onto the other yellow shaft. The bush puts this gear one shaft length ahead of the neighbouring sixteen-tooth gear, so those two gears are not recorded as a mesh.
+
+STEP 88
+ADD gearbox-propshaft-long-rear 61903 lightgray
+ADD gearbox-propshaft-long-front 61903 lightgray
+ADD p44294-7 44294 lightgray
+CONNECT p44294-7.axle7~ -> gearbox-propshaft-long-rear.axlehole2~ LOCKED
+CONNECT p44294-7.axle1 -> gearbox-propshaft-long-front.axlehole1~ LOCKED
+CONNECT p32073-3.axle5 -> gearbox-propshaft-long-rear.axlehole1~ LOCKED
+WHY Builds the long prop shaft from a grey seven-length axle and two complete universal joints, then fits its rear socket onto the yellow gearbox shaft. Matches the pictured fork orientation; complete-joint socket numbering and the rear shaft seating depth remain estimated.
+
+STEP 89
+ADD gearbox-propshaft-short-rear 61903 lightgray
+ADD gearbox-propshaft-short-front 61903 lightgray
+ADD p59426-1 59426 darkgray
+CONNECT p59426-1.axle1~ -> gearbox-propshaft-short-rear.axlehole2~ LOCKED
+CONNECT p59426-1.axle5~ -> gearbox-propshaft-short-front.axlehole1~ LOCKED
+CONNECT p3707-1.axle8 -> gearbox-propshaft-short-rear.axlehole1~ LOCKED
+WHY Builds the shorter prop shaft from the dark-grey five-and-a-half-length stopped axle and two complete universal joints, then fits it onto the long red gearbox shaft. Preserves the joint fork alignment shown in the booklet; complete-joint socket orientation and shaft depths remain estimated.
+
+STEP 90
+ADD p3705-7 3705 red
+CONNECT p3705-7.axle1 -> p32034-3.axlehole2 LOCKED
+WHY Fits a red four-length axle into the waiting black straight connector on the selector shaft, extending it alongside the new prop shafts.
+
+STEP 91
+ADD p60483-8 60483 olivegreen
+ADD p2780-23 2780 black
+ADD p18654-4 18654 white
+CONNECT p2780-23.pin1 -> p18654-4.hole1 STIFF
+CONNECT p2780-23.pin2 -> p60483-8.hole1 STIFF
+CONNECT p3705-7.axle2 -> p60483-8.axlehole1 LOCKED
+WHY Builds the selector indicator from an olive-green axle-and-pin block, black friction pin and white round spacer, then slides its cross hole onto the red selector shaft. Aligns the indicator and orange selector cam to the neutral position shown in the top-view check.
+
