@@ -2896,3 +2896,226 @@ STEP 247
 MESH p32270-8.teeth p32270-7.teeth
 RATIO p32270-8 p32270-7 1/1
 WHY Pushes the carrier mounting pin fully home and seats its black twelve-tooth gear against the motor gear, completing the geared connection to the transverse shaft.
+
+STEP 248
+GROUP cab-upper-frame
+ADD p11214-12 11214 darkgray
+ADD p11214-13 11214 darkgray
+ADD p32184-2 32184 black
+CONNECT p11214-12.axle1 -> p32184-2.axlehole1 LOCKED
+CONNECT p11214-13.axle1 -> p32184-2.axlehole2 LOCKED
+WHY Starts the upper cab frame mounting block by locking two dark grey axle-pins into a black three-hole perpendicular connector.
+
+STEP 249
+ADD p39794-1 39794 black
+ADD p2780-149 2780 black
+ADD p2780-150 2780 black
+CONNECT p11214-12.pin1 -> p39794-1.hole7 STIFF
+CONNECT p11214-13.pin1 -> p39794-1.hole11 STIFF
+CONNECT p2780-149.pin2 -> p39794-1.? STIFF
+CONNECT p2780-150.pin2 -> p39794-1.hole21 STIFF
+WHY Adds the large black rectangular upper frame and two black side pins; the catalog does not resolve the middle side mounting hole.
+
+STEP 250
+ADD p43093-21 43093 blue
+ADD p4519-18 4519 lightgray
+ADD p32184-3 32184 black
+CONNECT p43093-21.axle1 -> p32184-3.axlehole2 LOCKED
+CONNECT p4519-18.axle3 -> p32184-3.axlehole1 LOCKED
+CONNECT p43093-21.pin1 -> p39794-1.hole5 STIFF
+WHY Fits a second black perpendicular connector carrying a short grey axle and blue mounting axle-pin into the upper frame.
+
+STEP 251
+ADD p2780-151 2780 black
+ADD p2780-152 2780 black
+ADD p2780-153 2780 black
+ADD p2780-154 2780 black
+CONNECT p2780-151.pin1 -> p39794-1.hole8 STIFF
+CONNECT p2780-152.pin1 -> p39794-1.hole12 STIFF
+CONNECT p2780-153.pin1 -> p39794-1.? STIFF
+CONNECT p2780-154.pin1 -> p39794-1.hole22 STIFF
+WHY Adds four black mounting pins along the opposite side of the upper frame; its middle side hole remains unnamed in the catalog.
+
+STEP 252
+ADD p32316-19 32316 black
+ADD p32316-20 32316 black
+CONNECT p2780-152.pin2 -> p32316-19.hole2 STIFF
+CONNECT p2780-153.pin2 -> p32316-19.hole4 STIFF
+CONNECT p11214-13.pin2 -> p32316-20.hole2 STIFF
+CONNECT p2780-149.pin1 -> p32316-20.hole4 STIFF
+END
+WHY Adds short black five-hole reinforcements along both sides of the upper frame.
+
+STEP 253
+ATTACH cab-upper-frame
+CONNECT p11214-12.pin2 -> p32278-7.hole1 STIFF
+CONNECT p2780-150.pin1 -> p32278-8.hole1 STIFF
+WHY Seats the completed upper frame onto the two existing tall black uprights, forming the top of the cab structure.
+
+STEP 254
+ADD p32278-9 32278 black
+ADD p2780-155 2780 black
+ADD p2780-156 2780 black
+CONNECT p2780-155.pin2 -> p32278-9.hole13 STIFF
+CONNECT p2780-156.pin2 -> p32278-9.hole9 STIFF
+CONNECT p2780-154.pin2 -> p32278-9.hole1 STIFF
+CONNECT p2780-140.pin1 -> p32278-9.hole11 STIFF
+CONNECT p42924-88.pin2 -> p32278-9.hole15 STIFF
+WHY Adds a third tall black upright between the upper frame and the motor-side frame, leaving two black side pins exposed.
+
+STEP 255
+ADD p32316-21 32316 black
+CONNECT p2780-100.pin2 -> p32316-21.hole1 STIFF
+CONNECT p42924-73.pin3 -> p32316-21.hole2 STIFF
+CONNECT p42924-88.pin3 -> p32316-21.hole3 STIFF
+CONNECT p2780-155.pin1 -> p32316-21.hole5 STIFF
+WHY Fits a short black side brace over the exposed pins below the third upright.
+
+STEP 256
+ADD p32278-10 32278 black
+ADD p42924-97 42924 blue
+ADD p2780-157 2780 black
+ADD p2780-158 2780 black
+ADD p18654-24 18654 black
+ADD p62462-2 62462 black
+CONNECT p42924-97.pin2 -> p32278-10.hole9 STIFF
+CONNECT p2780-157.pin2 -> p32278-10.hole10 STIFF
+CONNECT p2780-158.pin2 -> p32278-10.hole8 STIFF
+CONNECT p2780-157.pin1 -> p18654-24.hole1 STIFF
+CONNECT p42924-97.pin1 -> p62462-2.hole1~ STIFF
+CONNECT p2780-151.pin2 -> p32278-10.hole1 STIFF
+CONNECT p42924-87.pin2 -> p32278-10.hole11 STIFF
+CONNECT p2780-139.pin1 -> p32278-10.hole15 STIFF
+CONNECT p32073-7.axle5 -> p62462-2.hole1~ TURNS
+WHY Adds the final tall upright with its long black bearing and spacer sleeve, guiding the free end of the transverse gear shaft into the bearing.
+
+STEP 257
+GROUP engine-cradle
+ADD p39794-2 39794 black
+WHY Starts the separate engine cradle with a large black rectangular frame.
+
+STEP 258
+ADD p11214-14 11214 red
+ADD p11214-15 11214 red
+ADD p32184-4 32184 black
+ADD p32184-5 32184 black
+CONNECT p11214-14.axle1 -> p32184-5.axlehole2 LOCKED
+CONNECT p11214-15.axle1 -> p32184-4.axlehole2 LOCKED
+CONNECT p11214-14.pin1 -> p39794-2.hole25 STIFF
+CONNECT p11214-15.pin1 -> p39794-2.hole26 STIFF
+WHY Fits two black perpendicular axle connectors to red axle-pins and installs them at opposite sides of one frame end.
+
+STEP 259
+ADD p60485-2 60485 lightgray
+ADD p94925-17 94925 lightgray
+ADD p60483-9 60483 lightgray
+ADD p60483-10 60483 lightgray
+ADD p60483-11 60483 lightgray
+ADD p60483-12 60483 lightgray
+ADD p60483-13 60483 lightgray
+ADD p60483-14 60483 lightgray
+CONNECT p60485-2.axle3 -> p60483-9.axlehole1 LOCKED
+CONNECT p60485-2.axle4 -> p60483-10.hole1 TURNS
+CONNECT p60485-2.axle5 -> p60483-11.axlehole1 LOCKED
+CONNECT p60485-2.axle6 -> p60483-12.hole1 TURNS
+CONNECT p60485-2.axle7 -> p60483-13.axlehole1 LOCKED
+CONNECT p60485-2.axle8 -> p60483-14.axlehole1 LOCKED
+CONNECT p60485-2.axle2 -> p39794-2.? TURNS
+CONNECT p60485-2.axle1 -> p94925-17.axlehole1 LOCKED
+WHY Arranges six grey links on the nine-length crankshaft as shown, inserts it through the frame bearing and fits the sixteen-tooth end gear; the catalog does not name the frame centre bearing.
+
+STEP 260
+ADD p32034-1 32034 black
+ADD p99008-16 99008 tan
+ADD p99008-17 99008 tan
+CONNECT p60485-2.axle9 -> p32034-1.hole1 TURNS
+CONNECT p99008-16.pin1 -> p39794-2.hole21 TURNS
+CONNECT p99008-16.axle2 -> p32184-5.axlehole1 LOCKED
+CONNECT p99008-16.axle3 -> p32034-1.axlehole1 LOCKED
+CONNECT p99008-17.pin1 -> p39794-2.hole22 TURNS
+CONNECT p99008-17.axle2 -> p32184-4.axlehole1 LOCKED
+CONNECT p99008-17.axle3 -> p32034-1.axlehole2 LOCKED
+WHY Supports the other crankshaft end in the black connector and retains it between the side axle blocks with two tan stopped axles.
+
+STEP 261
+ADD p48989-9 65489 lightgray
+ADD p2780-159 2780 black
+ADD p2780-160 2780 black
+ADD p2780-161 2780 black
+CONNECT p2780-159.pin2 -> p48989-9.hole2 STIFF
+CONNECT p2780-160.pin1 -> p48989-9.hole1 STIFF
+CONNECT p2780-161.pin1 -> p48989-9.hole3 STIFF
+CONNECT p48989-9.pin1 -> p39794-2.hole24 STIFF
+CONNECT p48989-9.pin2 -> p39794-2.hole32 STIFF
+ADD p48989-10 65489 lightgray
+ADD p2780-162 2780 black
+ADD p2780-163 2780 black
+ADD p2780-164 2780 black
+CONNECT p2780-162.pin2 -> p48989-10.hole2 STIFF
+CONNECT p2780-163.pin1 -> p48989-10.hole1 STIFF
+CONNECT p2780-164.pin1 -> p48989-10.hole3 STIFF
+CONNECT p48989-10.pin1 -> p39794-2.hole27 STIFF
+CONNECT p48989-10.pin2 -> p39794-2.hole23 STIFF
+WHY Adds two grey four-pin perpendicular connectors with three black pins each to the end of the engine frame.
+
+STEP 262
+ADD p18654-25 18654 black
+ADD p18654-26 18654 black
+CONNECT p48989-9.pin3 -> p18654-25.hole1 STIFF
+CONNECT p48989-10.pin4 -> p18654-26.hole1 STIFF
+WHY Covers the two inner upward grey pins with black sleeves, leaving the other mounting ends exposed.
+
+STEP 263
+ADD p32316-22 32316 black
+ADD p42924-98 42924 blue
+ADD p2780-165 2780 black
+CONNECT p42924-98.pin2 -> p32316-22.hole1 STIFF
+CONNECT p2780-165.pin2 -> p32316-22.hole4 STIFF
+CONNECT p99008-16.axle1 -> p32316-22.hole3 TURNS
+CONNECT p11214-14.pin2 -> p32316-22.hole5 STIFF
+ADD p32316-23 32316 black
+ADD p42924-99 42924 blue
+ADD p2780-166 2780 black
+CONNECT p42924-99.pin2 -> p32316-23.hole1 STIFF
+CONNECT p2780-166.pin2 -> p32316-23.hole4 STIFF
+CONNECT p99008-17.axle1 -> p32316-23.hole3 TURNS
+CONNECT p11214-15.pin2 -> p32316-23.hole5 STIFF
+WHY Adds a black five-hole side rail on each side over the tan axle ends and red pin ends, with blue and black pins prepared for later mounts.
+
+STEP 264
+ADD p32184-6 32184 black
+ADD p43093-22 43093 blue
+ADD p43093-23 43093 blue
+ADD p43093-24 43093 blue
+ADD p45590-1 45590 black
+CONNECT p43093-22.axle1 -> p32184-6.axlehole2 LOCKED
+CONNECT p43093-23.axle1 -> p32184-6.axlehole1 LOCKED
+CONNECT p43093-24.pin1 -> p32184-6.hole1 STIFF
+CONNECT p43093-24.axle1 -> p45590-1.axlehole2 LOCKED
+CONNECT p43093-22.pin1 -> p39794-2.hole30 STIFF
+CONNECT p43093-23.pin1 -> p39794-2.hole29 STIFF
+WHY Builds the centre black mounting block with three blue axle-pins and a rubber cross-hole connector, then pins it onto the frame end.
+
+STEP 265
+ADD p43093-25 43093 blue
+ADD p6536-9 6536 yellow
+ADD p42924-100 42924 blue
+CONNECT p43093-25.axle1 -> p6536-9.axlehole1 LOCKED
+CONNECT p42924-100.pin2 -> p6536-9.hole1 STIFF
+CONNECT p43093-25.pin1 -> p39794-2.hole13 STIFF
+WHY Adds a yellow perpendicular connector on a blue axle-pin with an outward blue long pin at the side of the engine frame.
+
+STEP 266
+ADD p32316-24 32316 black
+ADD p32316-25 32316 black
+ADD p42924-101 42924 blue
+ADD p42924-102 42924 blue
+ADD p32054-16 32054 orange
+ADD p32054-17 32054 orange
+CONNECT p42924-101.pin2 -> p32316-24.hole5 STIFF
+CONNECT p32054-16.pin1 -> p32316-24.hole1 STIFF
+CONNECT p42924-102.pin2 -> p32316-25.hole1 STIFF
+CONNECT p32054-17.pin1 -> p32316-25.hole5 STIFF
+CONNECT p42924-101.pin1 -> p39794-2.hole2 STIFF
+CONNECT p42924-102.pin1 -> p39794-2.hole5 STIFF
+WHY Adds two black five-hole end rails on blue long pins, with orange stopped pins projecting from their outer ends.
