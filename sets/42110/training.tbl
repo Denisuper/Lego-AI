@@ -4460,3 +4460,165 @@ CONNECT p2780-127.pin1 -> p32034-21.hole1 STIFF
 END
 WHY Adds a black friction pin to the round hole of each black crossbar connector, completing the rear cargo crossbar with both mounting pin ends pointing toward the chassis.
 
+STEP 432
+ATTACH rear-cargo-front-crossbar
+CONNECT p2780-126.pin2 -> p32140-14.hole1 STIFF
+CONNECT p2780-127.pin2 -> p32140-13.hole1 STIFF
+WHY Fits the completed cargo crossbar onto the two grey rear L-support holes just ahead of the upper bumper, engaging both black mounting pins and keeping its offset end linkages outside the supports.
+
+STEP 433
+GROUP left-body-side-frame
+ADD p24119-5 24119 black
+ADD p2780-128 2780 black
+ADD p2780-129 2780 black
+CONNECT p2780-128.pin2 -> p24119-5.hole2 STIFF
+CONNECT p2780-129.pin2 -> p24119-5.hole1 STIFF
+WHY Starts the left body side frame with a black curved panel and two black friction pins projecting from its end mounting holes.
+
+STEP 434
+ADD p24119-6 24119 black
+CONNECT p2780-128.pin1 -> p24119-6.hole11 STIFF
+CONNECT p2780-129.pin1 -> p24119-6.hole10 STIFF
+WHY Joins the second black curved panel to the first on the two black pin ends, forming the long lower body sill.
+
+STEP 435
+ADD p6558-78 6558 blue
+ADD p6558-79 6558 blue
+ADD p2780-130 2780 black
+CONNECT p6558-78.pin1 -> p24119-6.hole9 STIFF
+CONNECT p6558-79.pin1 -> p24119-6.hole5 STIFF
+CONNECT p2780-130.pin2 -> p24119-6.hole4 STIFF
+WHY Inserts two blue long friction pins and one black friction pin along the upper edge of the rear sill panel, leaving their ends exposed for the bent side-frame beam.
+
+STEP 436
+ADD p32009-5 32009 black
+ADD p43093-50 43093 blue
+CONNECT p43093-50.axle1 -> p32009-5.axlehole2 LOCKED
+CONNECT p6558-78.pin2 -> p32009-5.hole2 STIFF
+CONNECT p6558-79.pin2 -> p32009-5.hole5 STIFF
+CONNECT p2780-130.pin1 -> p32009-5.hole6 STIFF
+WHY Turns the sill assembly and fits the black bent side beam over the three waiting pin ends, adding a blue axle-pin in its raised end cross socket. The blue round pin end remains available for the outer upright brace.
+
+STEP 437
+ADD p11214-8 11214 red
+ADD p6558-80 6558 blue
+ADD p2780-131 2780 black
+ADD p32526-6 32526 black
+ADD p32140-17 32140 olivegreen
+CONNECT p11214-8.axle1 -> p32140-17.axlehole1 LOCKED
+CONNECT p6558-80.pin1 -> p32140-17.hole3 STIFF
+CONNECT p2780-131.pin2 -> p32140-17.hole2 STIFF
+CONNECT p11214-8.pin1 -> p32526-6.hole5 STIFF
+CONNECT p6558-80.pin2 -> p32526-6.hole2 STIFF
+CONNECT p11214-8.pin2 -> p32009-5.hole7 STIFF
+CONNECT p43093-50.pin1 -> p32526-6.hole3 STIFF
+WHY Builds the olive-green L-shaped pillar base with a red axle-pin, blue long pin and black friction pin, then joins it to a black bent upright brace. Fits that brace onto the two raised mounting pins of the sill beam, keeping the olive-green face outward as pictured.
+
+STEP 438
+ADD p41239-5 41239 black
+ADD p11214-9 11214 red
+ADD p11214-10 11214 red
+ADD p32184-32 32184 darkgray
+ADD p2780-132 2780 black
+ADD p2780-133 2780 black
+CONNECT p11214-9.axle1 -> p32184-32.axlehole2 LOCKED
+CONNECT p11214-10.axle1 -> p32184-32.axlehole1 LOCKED
+CONNECT p11214-9.pin1 -> p41239-5.hole2 STIFF
+CONNECT p11214-10.pin1 -> p41239-5.hole4 STIFF
+CONNECT p2780-132.pin2 -> p41239-5.hole6 STIFF
+CONNECT p2780-133.pin2 -> p41239-5.hole10 STIFF
+CONNECT p6558-80.pin3 -> p41239-5.hole1 STIFF
+CONNECT p11214-9.pin2 -> p32526-6.hole1 STIFF
+WHY Builds the black thirteen-hole pillar beam with two red axle-pins joined by a dark-grey perpendicular block and two black friction pins farther up the beam. Fits its lower end onto the blue base pin and red pin through the black bent brace, forming the tall body pillar.
+
+STEP 439
+ADD p32009-6 32009 black
+ADD p18651-10 18651 black
+ADD p2780-134 2780 black
+ADD p11214-11 11214 red
+ADD p6558-81 6558 blue
+CONNECT p18651-10.axle2 -> p32009-6.axlehole2 LOCKED
+CONNECT p18651-10.pin1 -> p41239-5.hole9 STIFF
+CONNECT p2780-134.pin1 -> p41239-5.hole11 STIFF
+CONNECT p2780-134.pin2 -> p32009-6.hole7 STIFF
+CONNECT p11214-11.axle1 -> p32009-6.axlehole1 LOCKED
+CONNECT p6558-81.pin1 -> p32009-6.hole2 STIFF
+WHY Adds the black bent upper frame beam using a black long axle-pin and black friction pin through the upper pillar holes. Fits a red axle-pin in its far cross socket and a blue long pin beside it, preparing the upper roof-frame attachment.
+
+STEP 440
+ADD p32316-13 32316 black
+CONNECT p6558-81.pin2 -> p32316-13.hole1 STIFF
+CONNECT p11214-11.pin1 -> p32316-13.hole3 STIFF
+END
+WHY Fits a black five-hole reinforcing beam across the blue and red upper-frame pin ends, completing the left body frame with both upper pin ends still projecting beyond the reinforcement.
+
+STEP 441
+ATTACH left-body-side-frame
+CONNECT p6558-54.pin3 -> p24119-5.hole9 STIFF
+CONNECT p55615-1.pin3 -> p24119-5.hole7~ STIFF
+WHY Places the left body frame beside the chassis, seating its lower front panel on the exposed blue pin and grey hub pin at the floor support. The grey hub pin enters the near end of a longer panel bore, so seating depth is estimated. Align the rear sill holes with the floor end before adding the retaining brace next.
+
+STEP 442
+ADD p43093-51 43093 blue
+ADD p2780-135 2780 black
+ADD p2780-136 2780 black
+ADD p32140-18 32140 black
+ADD p18654-22 18654 black
+CONNECT p43093-51.axle1 -> p32140-18.axlehole1 LOCKED
+CONNECT p2780-135.pin2 -> p32140-18.hole2 STIFF
+CONNECT p2780-136.pin2 -> p32140-18.hole4 STIFF
+CONNECT p2780-136.pin1 -> p18654-22.hole1 STIFF
+CONNECT p43093-51.pin1 -> p15458-2.hole1 STIFF
+CONNECT p2780-135.pin1 -> p24119-6.hole2 STIFF
+WHY Builds the black lower retaining brace with a blue axle-pin, two black friction pins and a black round sleeve. Pins its blue end into the grey floor end hole and its middle black pin into the body sill panel, tying the sill and floor together while leaving the sleeved outer pin exposed.
+
+STEP 443
+GROUP cabin-overhead-frame
+ADD p32034-23 32034 black
+ADD p27940-4 27940 darkgray
+ADD p27940-5 27940 darkgray
+CONNECT p27940-4.axle1 -> p32034-23.axlehole1 LOCKED
+CONNECT p27940-5.axle2 -> p32034-23.axlehole2 LOCKED
+WHY Starts the cabin overhead frame with two dark-grey double-ended axle hubs inserted into the opposite cross sockets of a black straight axle connector, aligning their round holes as pictured.
+
+STEP 444
+ADD p59443-28 59443 black
+ADD p59443-29 59443 black
+CONNECT p27940-4.axle2 -> p59443-28.axlehole2 LOCKED
+CONNECT p27940-5.axle1 -> p59443-29.axlehole1 LOCKED
+WHY Fits a black axle extension connector onto each exposed outer axle end of the overhead crossbar, leaving both end sockets open for later transverse axles.
+
+STEP 445
+ADD p2780-137 2780 black
+ADD p2780-138 2780 black
+CONNECT p2780-137.pin2 -> p27940-5.hole1 STIFF
+CONNECT p2780-138.pin2 -> p27940-4.hole1 STIFF
+WHY Inserts a black friction pin into each grey hub round hole, with both free pin ends pointing toward the rectangular frame that follows.
+
+STEP 446
+ADD p39794-1 39794 black
+CONNECT p2780-137.pin1 -> p39794-1.hole21 STIFF
+CONNECT p2780-138.pin1 -> p39794-1.hole11 STIFF
+WHY Fits the black seven-by-eleven rectangular frame over both waiting black pin ends, seating the axle crossbar along its inner long edge.
+
+STEP 447
+ADD p15100-6 15100 lightgray
+ADD p2780-139 2780 black
+ADD p18677-4 18677 black
+ADD p3024-3 3024 black
+ADD p63864-9 63864 black
+CONNECT p63864-9.? -> p3024-3.? STIFF
+CONNECT p3024-3.? -> p18677-4.? STIFF
+CONNECT p63864-9.? -> p18677-4.? STIFF
+CONNECT p2780-139.pin2 -> p18677-4.? STIFF
+CONNECT p2780-139.pin1 -> p15100-6.hole1 STIFF
+CONNECT p15100-6.pin1 -> p39794-1.? STIFF
+WHY Builds the interior mirror from a black one-stud plate, black three-stud tile and black two-stud plate with an underside pin hole, then adds a black friction pin and grey perpendicular pin connector. Pins the assembly into the middle of the opposite frame long edge. Ordinary stud surfaces, the plate pin hole and the frame centre mounting-hole label remain unresolved in the catalog.
+
+STEP 448
+END
+ATTACH cabin-overhead-frame
+CONNECT p11214-11.pin2 -> p39794-1.hole31 STIFF
+CONNECT p6558-81.pin3 -> p39794-1.? STIFF
+WHY Turns the overhead frame into position above the front seats and fits its short side onto the exposed red and blue upper body-frame pins highlighted in the booklet. The red pin receiving hole is cataloged; the adjacent central blue-pin receiving hole is not resolved by the current frame geometry and remains unknown.
+
