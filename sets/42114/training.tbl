@@ -2272,3 +2272,252 @@ CONNECT p2780-108.pin2 -> p32523-8.hole1 STIFF
 CONNECT p2780-107.pin1 -> p92908-5.hole1 STIFF
 CONNECT p2780-108.pin1 -> p92908-6.hole1 STIFF
 WHY Pins a short yellow three-hole beam onto each portal housing to provide the next pair of upper mounting points.
+
+STEP 193
+GROUP curved-front-brace-193
+ADD p32249-1 32249 black
+ADD p32249-2 32249 black
+ADD p11214-7 11214 red
+ADD p42924-74 42924 blue
+ADD p43093-11 43093 blue
+ADD p43093-12 43093 blue
+CONNECT p11214-7.axle1 -> p32249-1.axlehole2~ LOCKED
+CONNECT p42924-74.pin2 -> p32249-1.hole1~ STIFF
+CONNECT p43093-11.axle1 -> p32249-1.axlehole3~ LOCKED
+CONNECT p43093-12.axle1 -> p32249-1.axlehole1~ LOCKED
+CONNECT p11214-7.axle1 -> p32249-2.axlehole2~ LOCKED
+CONNECT p42924-74.pin2 -> p32249-2.hole1~ STIFF
+CONNECT p43093-11.axle1 -> p32249-2.axlehole3~ LOCKED
+CONNECT p43093-12.axle1 -> p32249-2.axlehole1~ LOCKED
+END
+ATTACH curved-front-brace-193
+CONNECT p43093-11.pin1 -> p64178-3.hole12 STIFF
+CONNECT p43093-12.pin1 -> p64178-3.hole16 STIFF
+CONNECT p11214-7.pin1 -> p32523-7.hole2 STIFF
+CONNECT p11214-7.pin2 -> p14720-2.hole4 STIFF
+CONNECT p42924-74.pin1 -> p32523-7.hole1 STIFF
+WHY Stacks two black curved liftarms with blue and red axle-pins, then joins the brace to the grey frame and yellow hub supports; depths through the paired thin liftarms remain estimated.
+
+STEP 194
+GROUP curved-front-brace-194
+ADD p32249-3 32249 black
+ADD p32249-4 32249 black
+ADD p11214-8 11214 red
+ADD p42924-75 42924 blue
+ADD p43093-13 43093 blue
+ADD p43093-14 43093 blue
+CONNECT p11214-8.axle1 -> p32249-3.axlehole2~ LOCKED
+CONNECT p42924-75.pin2 -> p32249-3.hole1~ STIFF
+CONNECT p43093-13.axle1 -> p32249-3.axlehole3~ LOCKED
+CONNECT p43093-14.axle1 -> p32249-3.axlehole1~ LOCKED
+CONNECT p11214-8.axle1 -> p32249-4.axlehole2~ LOCKED
+CONNECT p42924-75.pin2 -> p32249-4.hole1~ STIFF
+CONNECT p43093-13.axle1 -> p32249-4.axlehole3~ LOCKED
+CONNECT p43093-14.axle1 -> p32249-4.axlehole1~ LOCKED
+END
+ATTACH curved-front-brace-194
+CONNECT p43093-13.pin1 -> p64178-3.hole13 STIFF
+CONNECT p43093-14.pin1 -> p64178-3.hole17 STIFF
+CONNECT p11214-8.pin1 -> p32523-8.hole2 STIFF
+CONNECT p11214-8.pin2 -> p14720-1.hole4 STIFF
+CONNECT p42924-75.pin1 -> p32523-8.hole3 STIFF
+WHY Stacks two black curved liftarms with blue and red axle-pins, then joins the brace to the grey frame and yellow hub supports; depths through the paired thin liftarms remain estimated.
+
+STEP 195
+ADD p32525-11 32525 red
+ADD p42924-76 42924 blue
+ADD p42924-77 42924 blue
+ADD p60483-5 60483 lightgray
+ADD p60483-6 60483 lightgray
+CONNECT p42924-76.pin3 -> p32525-11.hole2 STIFF
+CONNECT p42924-77.pin3 -> p32525-11.hole10 STIFF
+CONNECT p42924-76.pin2 -> p60483-5.hole1 STIFF
+CONNECT p42924-77.pin2 -> p60483-6.hole1 STIFF
+CONNECT p42924-76.pin1 -> p14720-2.hole5 STIFF
+CONNECT p42924-77.pin1 -> p14720-1.hole5 STIFF
+WHY Adds the second red eleven-hole crossbeam with two grey axle-bearing links, pinning it across the yellow H-beams.
+
+STEP 196
+ADD p42924-78 42924 blue
+ADD p42924-79 42924 blue
+CONNECT p42924-78.pin2 -> p64178-2.hole5 STIFF
+CONNECT p42924-78.pin3 -> p64179-10.hole1 STIFF
+CONNECT p42924-79.pin2 -> p64178-2.hole9 STIFF
+CONNECT p42924-79.pin3 -> p64179-10.hole5 STIFF
+WHY Turns the chassis over and inserts two blue pins through the grey and black frame layers for the upper crossbeam.
+
+STEP 197
+ADD p32525-12 32525 black
+ADD p32523-9 32523 yellow
+ADD p32523-10 32523 yellow
+ADD p2780-109 2780 black
+ADD p2780-110 2780 black
+CONNECT p2780-109.pin1 -> p32525-12.hole3 STIFF
+CONNECT p2780-109.pin2 -> p32523-9.hole3 STIFF
+CONNECT p2780-110.pin1 -> p32525-12.hole9 STIFF
+CONNECT p2780-110.pin2 -> p32523-10.hole1 STIFF
+CONNECT p42924-78.pin1 -> p32525-12.hole8 STIFF
+CONNECT p42924-79.pin1 -> p32525-12.hole4 STIFF
+WHY Builds a black eleven-hole crossbeam with yellow three-hole end spacers and presses it onto the two prepared blue pins.
+
+STEP 198
+ADD p32525-13 32525 black
+ADD p60483-7 60483 lightgray
+ADD p60483-8 60483 lightgray
+ADD p2780-111 2780 black
+ADD p2780-112 2780 black
+ADD p15462-13 15462 brown
+ADD p15462-14 15462 brown
+CONNECT p2780-111.pin1 -> p32525-13.hole10 STIFF
+CONNECT p2780-111.pin2 -> p60483-8.hole1 STIFF
+CONNECT p2780-112.pin1 -> p32525-13.hole2 STIFF
+CONNECT p2780-112.pin2 -> p60483-7.hole1 STIFF
+CONNECT p15462-13.axle5 -> p32525-13.hole1 TURNS
+CONNECT p15462-13.axle4 -> p60483-8.axlehole1 LOCKED
+CONNECT p15462-13.axle3 -> p92908-6.axlehole1 LOCKED
+CONNECT p15462-13.axle2 -> p60483-6.axlehole1 LOCKED
+CONNECT p15462-13.axle1 -> p32525-11.hole11 TURNS
+CONNECT p15462-14.axle5 -> p32525-13.hole11 TURNS
+CONNECT p15462-14.axle4 -> p60483-7.axlehole1 LOCKED
+CONNECT p15462-14.axle3 -> p92908-5.axlehole1 LOCKED
+CONNECT p15462-14.axle2 -> p60483-5.axlehole1 LOCKED
+CONNECT p15462-14.axle1 -> p32525-11.hole1 TURNS
+WHY Adds the second black upper crossbeam with grey bearing links and pushes stopped brown axles through both hub housings into the lower red crossbeam.
+
+STEP 199
+ADD p15462-15 15462 brown
+ADD p15462-16 15462 brown
+CONNECT p15462-15.axle5 -> p32525-12.hole11 TURNS
+CONNECT p15462-15.axle4 -> p32523-10.hole3 TURNS
+CONNECT p15462-15.axle3 -> p92908-5.axlehole3 LOCKED
+CONNECT p15462-15.axle2 -> p60484-9.hole5 TURNS
+CONNECT p15462-16.axle5 -> p32525-12.hole1 TURNS
+CONNECT p15462-16.axle4 -> p32523-9.hole1 TURNS
+CONNECT p15462-16.axle3 -> p92908-6.axlehole3 LOCKED
+CONNECT p15462-16.axle2 -> p60484-8.hole5 TURNS
+WHY Drops the final two stopped brown axles through the other upper crossbeam and hub cross sockets to retain the complete portal mounting structure.
+
+STEP 200
+GROUP front-articulation-bracket
+ADD p63869-3 63869 black
+ADD p4274-3 4274 blue
+ADD p44294-4 44294 yellow
+ADD p6536-3 6536 yellow
+ADD p11478-1 11478 black
+ADD p11478-2 11478 black
+ADD p42924-80 42924 blue
+ADD p42924-81 42924 blue
+ADD p6536-4 6536 yellow
+ADD p4519-17 4519 lightgray
+CONNECT p4274-3.pin1 -> p63869-3.hole2 TURNS
+CONNECT p44294-4.axle7 -> p63869-3.axlehole1 LOCKED
+CONNECT p44294-4.axle6 -> p6536-3.axlehole1 LOCKED
+CONNECT p44294-4.axle5 -> p11478-1.axlehole2~ LOCKED
+CONNECT p44294-4.axle5 -> p11478-2.axlehole2~ LOCKED
+CONNECT p42924-80.pin1 -> p11478-1.hole1~ STIFF
+CONNECT p42924-80.pin1 -> p11478-2.hole1~ STIFF
+CONNECT p42924-81.pin1 -> p11478-1.hole3~ STIFF
+CONNECT p42924-81.pin1 -> p11478-2.hole3~ STIFF
+CONNECT p44294-4.axle4 -> p6536-4.axlehole1 LOCKED
+CONNECT p4519-17.axle1 -> p11478-1.axlehole1~ LOCKED
+CONNECT p4519-17.axle1 -> p11478-2.axlehole1~ LOCKED
+END
+ATTACH front-articulation-bracket
+CONNECT p3673-2.pin2 -> p6536-4.hole1 TURNS
+WHY Builds the first side of the articulation bracket with a seven-length yellow cross shaft, paired thin black links and yellow perpendicular connectors, then mounts its lower connector on the grey frictionless pin.
+
+STEP 201
+ADD p6536-5 6536 yellow
+CONNECT p4519-17.axle2 -> p6536-5.axlehole1 LOCKED
+CONNECT p3673-1.pin1 -> p6536-5.hole1 TURNS
+WHY Slides a yellow perpendicular connector onto the grey upper axle and the other grey frictionless mounting pin.
+
+STEP 202
+
+WHY Pushes the grey three-length axle fully into the paired thin links and yellow connector, securing the upper articulation support.
+
+STEP 203
+ADD p99010-3 99010 black
+ADD p99009-3 99009 lightgray
+ADD p42924-82 42924 blue
+ADD p42924-83 42924 blue
+CONNECT p99009-3.? -> p99010-3.? TURNS
+CONNECT p42924-82.pin2 -> p99009-3.hole2 STIFF
+CONNECT p42924-83.pin2 -> p99009-3.hole1 STIFF
+CONNECT p42924-81.pin2 -> p99010-3.hole1 STIFF
+WHY Snaps the third small turntable together, adds two blue pins to its grey half, and mounts the black toothed half on the articulation bracket.
+
+STEP 204
+ADD p99008-14 99008 tan
+ADD p32270-6 32270 black
+ADD p3713-12 3713 lightgray
+ADD p61903-1 61903 lightgray
+ADD p32062-17 32062 red
+ADD p59443-22 59443 lightgray
+CONNECT p32062-17.axle1 -> p59443-22.axlehole1 LOCKED
+CONNECT p32062-17.axle2 -> p61903-1.axlehole1 LOCKED
+CONNECT p99008-14.axle3 -> p61903-1.axlehole2 LOCKED
+CONNECT p99008-14.axle2 -> p3713-12.axlehole1 LOCKED
+CONNECT p99008-14.pin1 -> p64179-10.hole3 TURNS
+CONNECT p99008-14.axle1 -> p32270-6.axlehole1 LOCKED
+WHY Builds the front drive input with a universal joint, red axle and grey coupler, then inserts its tan shaft through the central frame and locks on the black twelve-tooth gear.
+
+STEP 205
+ADD p11478-3 11478 black
+ADD p11478-4 11478 black
+CONNECT p4519-17.axle3 -> p11478-3.axlehole1~ LOCKED
+CONNECT p4519-17.axle3 -> p11478-4.axlehole1~ LOCKED
+CONNECT p44294-4.axle3 -> p11478-3.axlehole2~ LOCKED
+CONNECT p44294-4.axle3 -> p11478-4.axlehole2~ LOCKED
+CONNECT p42924-80.pin3 -> p11478-3.hole1~ STIFF
+CONNECT p42924-80.pin3 -> p11478-4.hole1~ STIFF
+CONNECT p42924-81.pin3 -> p11478-3.hole3~ STIFF
+CONNECT p42924-81.pin3 -> p11478-4.hole3~ STIFF
+WHY Closes the other side of the articulation bracket with two more thin black links over the grey and yellow cross shafts and exposed blue pins.
+
+STEP 206
+ADD p6536-6 6536 yellow
+ADD p63869-4 63869 black
+ADD p4274-4 4274 blue
+CONNECT p4274-4.pin1 -> p63869-4.hole2 TURNS
+CONNECT p44294-4.axle2 -> p6536-6.axlehole1 LOCKED
+CONNECT p44294-4.axle1 -> p63869-4.axlehole1 LOCKED
+WHY Adds the final yellow perpendicular connector and black end connector to the cross shaft, with a blue half-pin prepared for the next brace.
+
+STEP 207
+ADD p2780-113 2780 black
+ADD p2780-114 2780 black
+CONNECT p2780-113.pin1 -> p63869-3.hole3 STIFF
+CONNECT p2780-114.pin1 -> p63869-4.hole1 STIFF
+WHY Inserts two black pins into the outer bracket ends to anchor the upcoming transverse beam.
+
+STEP 208
+GROUP articulation-side-support
+ADD p32526-14 32526 yellow
+ADD p2780-115 2780 black
+ADD p2780-116 2780 black
+CONNECT p2780-115.pin1 -> p32526-14.hole1 STIFF
+CONNECT p2780-116.pin1 -> p32526-14.hole4 STIFF
+WHY Starts a yellow L-shaped side support with two black pins ready to carry a grey reinforcing rail.
+
+STEP 209
+ADD p11214-9 11214 red
+ADD p42003-13 42003 yellow
+CONNECT p11214-9.axle1 -> p42003-13.axlehole1 LOCKED
+CONNECT p11214-9.pin1 -> p32526-14.hole6 STIFF
+WHY Adds a yellow perpendicular connector on a red axle-pin near the bend of the L-shaped side support.
+
+STEP 210
+ADD p32524-12 32524 lightgray
+ADD p18654-21 18654 black
+CONNECT p2780-115.pin2 -> p32524-12.hole3 STIFF
+CONNECT p2780-116.pin2 -> p32524-12.hole6 STIFF
+CONNECT p11214-9.pin2 -> p18654-21.hole1 STIFF
+WHY Pins a grey seven-hole rail onto the yellow support and covers the projecting red pin with a black sleeve.
+
+STEP 211
+ADD p2780-117 2780 black
+ADD p2780-118 2780 black
+CONNECT p2780-117.pin1 -> p32524-12.hole7 STIFF
+CONNECT p2780-118.pin1 -> p32524-12.hole5 STIFF
+WHY Adds two black mounting pins to the grey side rail for the following bracket attachment.

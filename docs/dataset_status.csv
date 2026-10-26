@@ -20,7 +20,7 @@ set,steps,inventory_parts,training_parts,booklets,checker_errors,missing_parts,e
 42100,0,4108,0,2,0,0,0,0,0,not started,
 42101,36,117,116,1,0,10,9,10,132,needs review,Inventory differs by part and colour
 42110,0,2573,0,1,0,0,0,0,0,not started,
-42114,192,2193,636,1,0,1557,0,55,111,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
+42114,211,2193,706,1,0,1487,0,57,143,needs review,Incomplete training or unresolved main/optional-build inventory scope; Inventory differs by part and colour
 42116,33,139,129,1,0,17,7,8,0,needs review,Inventory differs by part and colour
 42117,55,154,154,2,0,0,0,90,88,ready,
 42129,409,2131,2141,2,0,66,76,434,0,needs review,Duplicate name: ra-gear-3; Duplicate name: fa-gear-1; Inventory differs by part and colour
