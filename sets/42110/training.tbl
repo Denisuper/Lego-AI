@@ -4256,3 +4256,207 @@ CONNECT p24316-16.axle3~ -> p32140-14.axlehole1 LOCKED
 CONNECT p24316-17.axle3~ -> p32140-13.axlehole1 LOCKED
 WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The short stopped-end seating in the supports is estimated.
 
+STEP 409
+END
+ATTACH rear-body-lower-panel
+CONNECT p24316-16.axle1~ -> p63869-4.axlehole1 LOCKED
+CONNECT p24316-16.axle2~ -> p32015-2.hole1 TURNS
+CONNECT p24316-17.axle1~ -> p63869-5.axlehole1 LOCKED
+CONNECT p24316-17.axle2~ -> p32015-1.hole1 TURNS
+CONNECT p32054-31.pin2 -> p32140-1.hole4 STIFF
+WHY Turns the chassis and fits the rear lower panel assembly behind the rear axle, passing both brown mounting axles through the round angled connectors into the grey triple connector cross sockets. Pushes the central grey pin into its waiting grey L support as shown in the inset; brown stopped-axle seating is estimated.
+
+STEP 410
+GROUP rear-left-corner-trim
+ADD p32140-15 32140 lightgray
+ADD p2780-114 2780 black
+ADD p2780-115 2780 black
+CONNECT p2780-114.pin2 -> p32140-15.hole3 STIFF
+CONNECT p2780-115.pin2 -> p32140-15.hole4 STIFF
+WHY Starts the left rear corner trim with a grey L-shaped axle-and-pin beam and two black friction pins through the round holes of its short end.
+
+STEP 411
+ADD p87086-1 87086 black
+CONNECT p2780-114.pin1 -> p87086-1.? STIFF
+CONNECT p2780-115.pin1 -> p87086-1.? STIFF
+WHY Fits the black curved number-2 panel over the two black pin ends on the grey corner beam, with its smooth curved face outward. The panel mounting holes are not named in the connection catalog.
+
+STEP 412
+ADD p2780-116 2780 black
+ADD p4519-44 4519 lightgray
+ADD p60483-40 60483 black
+CONNECT p2780-116.pin1 -> p60483-40.hole1 STIFF
+CONNECT p4519-44.axle2 -> p60483-40.axlehole1 LOCKED
+CONNECT p2780-116.pin2 -> p32140-15.hole1 STIFF
+CONNECT p4519-44.axle3 -> p32140-15.hole2 TURNS
+WHY Builds a black axle-and-pin block with a black friction pin and grey three-length axle, then mounts it inside the left corner beam. The black pin holds the block while the grey axle passes freely through the adjacent round beam hole.
+
+STEP 413
+ADD rear-left-white-bracket 28974 white
+CONNECT p4519-44.axle1~ -> rear-left-white-bracket.? TURNS
+END
+WHY Slides the small white bracket over the exposed grey axle end at the inner side of the left corner assembly. Its round opening and seating depth are not resolved by the catalog, so the receiving interface remains unnamed and axle seating estimated.
+
+STEP 414
+ATTACH rear-left-corner-trim
+CONNECT p4519-44.axle1~ -> p32039-1.axlehole2 LOCKED
+WHY Fits the completed left rear corner assembly onto the exposed grey rear axle connector, engaging the projecting grey cross axle in its cross socket. Axle seating is estimated; keep the black curved panel facing outward as shown.
+
+STEP 415
+GROUP rear-right-corner-trim
+ADD p32140-16 32140 lightgray
+ADD p2780-117 2780 black
+ADD p2780-118 2780 black
+CONNECT p2780-117.pin1 -> p32140-16.hole3 STIFF
+CONNECT p2780-118.pin1 -> p32140-16.hole4 STIFF
+WHY Starts the matching right rear corner with a grey L-shaped axle-and-pin beam and two black friction pins through its short-end round holes.
+
+STEP 416
+ADD p87080-1 87080 black
+CONNECT p2780-117.pin2 -> p87080-1.? STIFF
+CONNECT p2780-118.pin2 -> p87080-1.? STIFF
+WHY Fits the black curved number-1 panel onto the right corner pins, with its smooth face outward to mirror the left trim. The panel receiving holes are not named in the catalog.
+
+STEP 417
+ADD p2780-119 2780 black
+ADD p4519-45 4519 lightgray
+ADD p60483-41 60483 black
+CONNECT p2780-119.pin2 -> p60483-41.hole1 STIFF
+CONNECT p4519-45.axle2 -> p60483-41.axlehole1 LOCKED
+CONNECT p2780-119.pin1 -> p32140-16.hole1 STIFF
+CONNECT p4519-45.axle1 -> p32140-16.hole2 TURNS
+WHY Fits the matching black axle-and-pin block inside the right grey corner beam using a black friction pin and grey three-length axle. The axle passes through a round beam hole while remaining locked to the black block.
+
+STEP 418
+ADD rear-right-white-bracket 28974 white
+CONNECT p4519-45.axle3~ -> rear-right-white-bracket.? TURNS
+END
+WHY Slides the second small white bracket over the projecting grey axle end of the right corner assembly. The bracket round opening is unnamed and its axle seating remains estimated.
+
+STEP 419
+ATTACH rear-right-corner-trim
+CONNECT p4519-45.axle3~ -> p32039-2.axlehole2 LOCKED
+WHY Mounts the completed right rear corner trim on the matching grey rear axle connector, engaging its projecting grey axle in the waiting cross socket. The short axle seating is estimated.
+
+STEP 420
+ADD p32278-5 32278 lightgray
+CONNECT p6558-76.pin1 -> p32278-5.hole13 STIFF
+CONNECT p6558-77.pin1 -> p32278-5.hole3 STIFF
+WHY Fits a grey fifteen-hole beam across the rear lower body assembly on the two exposed blue long pin ends, reinforcing the rear crossbeam between the curved corner trims.
+
+STEP 421
+GROUP rear-upper-bumper
+ADD p32278-6 32278 lightgray
+ADD p2780-120 2780 black
+CONNECT p2780-120.pin1 -> p32278-6.hole4 STIFF
+ADD p2780-121 2780 black
+CONNECT p2780-121.pin1 -> p32278-6.hole12 STIFF
+ADD p2780-122 2780 black
+CONNECT p2780-122.pin1 -> p32278-6.hole15 STIFF
+ADD p2780-123 2780 black
+CONNECT p2780-123.pin1 -> p32278-6.hole13 STIFF
+ADD p2780-124 2780 black
+CONNECT p2780-124.pin1 -> p32278-6.hole3 STIFF
+ADD p2780-125 2780 black
+CONNECT p2780-125.pin1 -> p32278-6.hole1 STIFF
+WHY Starts the upper rear bumper with a grey fifteen-hole beam and six black friction pins in the pictured end and mounting positions. Their exposed ends point downward in this build orientation.
+
+STEP 422
+ADD p32316-11 32316 black
+ADD p32316-12 32316 black
+CONNECT p2780-122.pin2 -> p32316-12.hole3 STIFF
+CONNECT p2780-123.pin2 -> p32316-12.hole1 STIFF
+CONNECT p2780-124.pin2 -> p32316-11.hole5 STIFF
+CONNECT p2780-125.pin2 -> p32316-11.hole3 STIFF
+WHY Fits a black five-hole beam under each end of the grey bumper beam and applies stickers 12 and 4 to their outward faces as pictured, forming the two red reflector strips.
+
+STEP 423
+ADD p4274-14 4274 lightgray
+CONNECT p4274-14.pin2~ -> p32316-12.hole4 TURNS
+ADD p4274-15 4274 lightgray
+CONNECT p4274-15.pin2~ -> p32316-12.hole5 TURNS
+ADD p4274-16 4274 lightgray
+CONNECT p4274-16.pin2~ -> p32316-11.hole2 TURNS
+ADD p4274-17 4274 lightgray
+CONNECT p4274-17.pin2~ -> p32316-11.hole1 TURNS
+ADD rear-bumper-tile-one 3069b lightgray
+ADD rear-bumper-tile-two 3069b lightgray
+CONNECT rear-bumper-tile-one.? -> p4274-14.? STIFF
+CONNECT rear-bumper-tile-one.? -> p4274-15.? STIFF
+CONNECT rear-bumper-tile-two.? -> p4274-16.? STIFF
+CONNECT rear-bumper-tile-two.? -> p4274-17.? STIFF
+END
+WHY Inserts four grey half pins into the exposed outer holes of the two black bumper beams and caps each pair with a grey one-by-two tile. The frictionless half pins remain free in their round holes; half-pin seating and ordinary tile stud clutch surfaces are explicitly uncertain.
+
+STEP 424
+ATTACH rear-upper-bumper
+CONNECT p2780-120.pin2 -> p32140-14.hole2 STIFF
+CONNECT p2780-121.pin2 -> p32140-13.hole2 STIFF
+WHY Fits the completed upper bumper across the rear assembly by inserting its two inner black mounting pins into the indicated grey L-support holes. Keep the red reflector stickers facing outward.
+
+STEP 425
+GROUP rear-cargo-front-crossbar
+ADD p44294-9 44294 lightgray
+ADD p32034-21 32034 black
+ADD p32034-22 32034 black
+CONNECT p44294-9.axle1 -> p32034-21.axlehole2 LOCKED
+CONNECT p44294-9.axle7 -> p32034-22.axlehole1 LOCKED
+WHY Starts the rear cargo front crossbar with a grey seven-length axle and a black straight axle connector on each end, leaving their round holes aligned for mounting.
+
+STEP 426
+ADD p3705-15 3705 red
+ADD p32013-13 32013 darkgray
+CONNECT p3705-15.axle1 -> p32013-13.axlehole1 LOCKED
+ADD p3705-16 3705 red
+ADD p32013-14 32013 darkgray
+CONNECT p3705-16.axle1 -> p32013-14.axlehole1 LOCKED
+WHY Starts two matching crossbar end linkages, each with a red four-length axle in a dark-grey angled axle connector. Build both copies required by the two-times callout.
+
+STEP 427
+ADD p32123b-25 32123b lightgray
+ADD p33299b-1 33299b black
+CONNECT p3705-15.axle3~ -> p32123b-25.axlehole1 LOCKED
+CONNECT p3705-15.axle2~ -> p33299b-1.axlehole1 LOCKED
+ADD p32123b-28 32123b lightgray
+ADD p33299b-2 33299b black
+CONNECT p3705-16.axle3~ -> p32123b-28.axlehole1 LOCKED
+CONNECT p3705-16.axle2~ -> p33299b-2.axlehole1 LOCKED
+WHY Adds a grey half bush and black offset toggle connector to each red axle, orienting the toggle pin ends as shown. Their half-width seating positions on the red shafts are estimated.
+
+STEP 428
+ADD p87083-10 87083 darkgray
+ADD p32123b-27 32123b lightgray
+CONNECT p87083-10.axle4~ -> p33299b-1.axlehole2 LOCKED
+CONNECT p87083-10.axle4~ -> p32123b-27.axlehole1 LOCKED
+ADD p87083-11 87083 darkgray
+ADD p32123b-30 32123b lightgray
+CONNECT p87083-11.axle4~ -> p33299b-2.axlehole2 LOCKED
+CONNECT p87083-11.axle4~ -> p32123b-30.axlehole1 LOCKED
+WHY Adds a stopped dark-grey four-length axle with a grey half bush to the other cross socket of each black toggle connector, making two parallel-shaft end linkages. Stopped-shaft and half-bush seating are estimated.
+
+STEP 429
+ADD p32123b-26 32123b lightgray
+ADD p60483-42 60483 black
+CONNECT p3705-15.axle2~ -> p32123b-26.axlehole1 LOCKED
+CONNECT p3705-15.axle4 -> p60483-42.axlehole1 LOCKED
+CONNECT p87083-10.axle2~ -> p60483-42.hole1 TURNS
+ADD p32123b-29 32123b lightgray
+ADD p60483-43 60483 black
+CONNECT p3705-16.axle2~ -> p32123b-29.axlehole1 LOCKED
+CONNECT p3705-16.axle4 -> p60483-43.axlehole1 LOCKED
+CONNECT p87083-11.axle2~ -> p60483-43.hole1 TURNS
+WHY Fits the remaining grey half bush on each red axle and closes each end linkage with a black axle-and-pin block around both shafts. The block locks to the red cross axle but lets the stopped grey axle turn in its round hole; half-bush and stopped-shaft seating remain estimated.
+
+STEP 430
+CONNECT p87083-10.axle1~ -> p32034-21.axlehole1 LOCKED
+CONNECT p87083-11.axle1~ -> p32034-22.axlehole2 LOCKED
+WHY Fits both completed end linkages onto the black connectors at the ends of the grey seven-length crossbar axle, engaging their stopped grey shaft ends. Keep the two end linkages oriented as shown; shaft seating is estimated.
+
+STEP 431
+ADD p2780-126 2780 black
+ADD p2780-127 2780 black
+CONNECT p2780-126.pin1 -> p32034-22.hole1 STIFF
+CONNECT p2780-127.pin1 -> p32034-21.hole1 STIFF
+END
+WHY Adds a black friction pin to the round hole of each black crossbar connector, completing the rear cargo crossbar with both mounting pin ends pointing toward the chassis.
+
