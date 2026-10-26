@@ -6371,3 +6371,175 @@ CONNECT p32054-40.pin2 -> p42003-19.hole2 STIFF
 CONNECT p32054-41.pin2 -> p42003-19.hole1 STIFF
 WHY Pushes both long black hinge pins upward into the forward grey chassis bracket, retaining the door on its hinge beam. The door swings through its existing red axle-pin and black connector pivot stack.
 
+STEP 621
+GROUP second-side-door
+ADD p43093-77 43093 blue
+ADD p32034-28 32034 black
+CONNECT p43093-77.axle1 -> p32034-28.axlehole1 LOCKED
+WHY Starts the second side door with a blue axle-pin in the end cross socket of a black straight axle connector.
+
+STEP 622
+ADD p2780-204 2780 black
+ADD p11214-22 11214 red
+CONNECT p2780-204.pin2 -> p32034-28.hole1 STIFF
+CONNECT p11214-22.axle1 -> p32034-28.axlehole2 LOCKED
+WHY Adds the black friction pin through the connector transverse hole and the red axle-pin into its opposite axial socket.
+
+STEP 623
+ADD p32316-28 32316 black
+ADD p15100-18 15100 black
+CONNECT p11214-22.pin1 -> p32316-28.hole1 STIFF
+CONNECT p11214-22.pin2 -> p15100-18.hole1 STIFF
+WHY Fits the black five-hole beam and black perpendicular friction-pin connector over the round sections of the red axle-pin. The booklet specifically calls for a pin connector rather than the visually similar perpendicular axle connector.
+
+STEP 624
+ADD p64782-7 64782 olivegreen
+CONNECT p2780-204.pin1 -> p64782-7.hole41 STIFF
+CONNECT p15100-18.pin1 -> p64782-7.hole36 STIFF
+WHY Applies door-detail stickers 29, 28 and 26 to the inside of the olive flat panel and presses its short edge onto the two black pin ends of the door hinge strip.
+
+STEP 625
+ADD p41239-11 41239 olivegreen
+ADD p41239-12 41239 olivegreen
+ADD p6558-127 6558 blue
+ADD p6558-128 6558 blue
+CONNECT p6558-127.pin1 -> p64782-7.hole33 STIFF
+CONNECT p6558-128.pin1 -> p64782-7.hole12 STIFF
+CONNECT p6558-127.pin2 -> p41239-11.hole10 STIFF
+CONNECT p6558-128.pin2 -> p41239-11.hole4 STIFF
+CONNECT p43093-77.pin1 -> p41239-11.hole13 STIFF
+CONNECT p6558-127.pin3 -> p41239-12.hole10 STIFF
+CONNECT p6558-128.pin3 -> p41239-12.hole4 STIFF
+WHY Adds two long olive thirteen-hole beams below the door panel on the two blue long pins. The first layer also captures the lower blue hinge pin; the second layer seats on the outer pin tails.
+
+STEP 626
+ADD p32316-29 32316 olivegreen
+ADD p2780-205 2780 black
+ADD p2780-206 2780 black
+CONNECT p2780-205.pin1 -> p32316-29.hole5 STIFF
+CONNECT p2780-206.pin1 -> p32316-29.hole1 STIFF
+CONNECT p2780-205.pin2 -> p64782-7.hole1 STIFF
+CONNECT p2780-206.pin2 -> p64782-7.hole5 STIFF
+WHY Adds the olive five-hole vertical end beam on two black pins, closing the door panel edge opposite the hinge strip.
+
+STEP 627
+ADD p2780-207 2780 black
+ADD p2780-208 2780 black
+CONNECT p2780-207.pin1 -> p64782-7.hole10 STIFF
+CONNECT p2780-208.pin1 -> p64782-7.hole31 STIFF
+WHY Inserts two black friction pins into the top long edge of the door panel for its upper reinforcement beam.
+
+STEP 628
+ADD p41239-13 41239 olivegreen
+ADD p4274-44 4274 lightgray
+ADD p4274-45 4274 lightgray
+ADD p4274-46 4274 lightgray
+ADD p4274-47 4274 lightgray
+ADD p4274-48 4274 lightgray
+CONNECT p2780-207.pin2 -> p41239-13.hole4 STIFF
+CONNECT p2780-208.pin2 -> p41239-13.hole10 STIFF
+CONNECT p4274-44.pin1 -> p41239-13.hole13~ TURNS
+CONNECT p4274-45.pin1 -> p41239-13.hole12~ TURNS
+CONNECT p4274-46.pin1 -> p41239-13.hole7~ TURNS
+CONNECT p4274-47.pin1 -> p41239-13.hole6~ TURNS
+CONNECT p4274-48.pin1 -> p41239-13.hole1~ TURNS
+WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. Half-pin seating is estimated.
+
+STEP 629
+ADD p3666-3 3666 olivegreen
+ADD p3666-4 3666 olivegreen
+ADD p3024-9 3024 olivegreen
+CONNECT p3666-3.? -> p4274-47.? STIFF
+CONNECT p3666-3.? -> p4274-48.? STIFF
+CONNECT p3666-4.? -> p4274-45.? STIFF
+CONNECT p3666-4.? -> p4274-46.? STIFF
+CONNECT p3024-9.? -> p4274-44.? STIFF
+WHY Adds two olive one-by-six plates along the upper half-pin studs, with sticker 30 on the illustrated plate side, and the olive one-stud plate at the hinge end. Ordinary stud surfaces and the end overlap are unnamed in the catalog.
+
+STEP 630
+ADD p85984-21 85984 olivegreen
+ADD p85984-22 85984 olivegreen
+ADD p85984-23 85984 olivegreen
+ADD p85984-24 85984 olivegreen
+ADD p85984-25 85984 olivegreen
+ADD p85984-26 85984 olivegreen
+ADD p54200-6 54200 olivegreen
+CONNECT p85984-21.? -> p3666-3.? STIFF
+CONNECT p85984-22.? -> p3666-3.? STIFF
+CONNECT p85984-23.? -> p3666-3.? STIFF
+CONNECT p85984-24.? -> p3666-4.? STIFF
+CONNECT p85984-25.? -> p3666-4.? STIFF
+CONNECT p85984-26.? -> p3666-4.? STIFF
+CONNECT p85984-23.? -> p3666-4.? STIFF
+CONNECT p85984-26.? -> p3024-9.? STIFF
+CONNECT p54200-6.? -> p3666-3.? STIFF
+WHY Covers the door upper plates with six olive two-stud slopes and the one-stud end slope, forming the sloping beltline. Ordinary slope-to-plate clutch surfaces remain unnamed.
+
+STEP 631
+ADD p15100-19 15100 lightgray
+CONNECT p15100-19.pin1 -> p64782-7.hole34 STIFF
+WHY Inserts a grey perpendicular pin connector into the upper inside door-panel bore, orienting its transverse round hole to receive the latch pivot axle.
+
+STEP 632
+GROUP second-door-latch-rail
+ADD p32525-13 32525 olivegreen
+ADD p15462-22 15462 brown
+ADD p41677-14 41677 darkgray
+CONNECT p15462-22.axle5 -> p32525-13.hole11 TURNS
+CONNECT p15462-22.axle4 -> p41677-14.axlehole2~ LOCKED
+WHY Starts the inner door latch rail with an olive eleven-hole beam, brown five-stud stopped axle through its end round hole and a dark-grey thin cross-hole link on the inner shaft. Thin-link axial seating is estimated.
+
+STEP 633
+ADD p32123b-40 32123b lightgray
+ADD p32184-47 32184 darkgray
+CONNECT p15462-22.axle4 -> p32123b-40.axlehole1~ LOCKED
+CONNECT p15462-22.axle3 -> p32184-47.axlehole2 LOCKED
+WHY Adds a grey half bush and dark-grey cross connector to the brown pivot axle in the illustrated sequence, retaining the thin link while leaving the connector perpendicular socket available. Half-bush seating is estimated.
+
+STEP 634
+ADD p6632-6 6632 black
+ADD p24316-24 24316 brown
+CONNECT p24316-24.axle3 -> p6632-6.axlehole2~ LOCKED
+CONNECT p24316-24.axle2 -> p32525-13.hole10~ TURNS
+CONNECT p24316-24.axle2 -> p41677-14.axlehole1~ LOCKED
+WHY Builds the black thin three-hole latch lever on a brown stopped three-stud axle, then passes the shaft through the next olive rail round hole into the free socket of the dark-grey thin link. This angled latch stack has estimated axial seats.
+
+STEP 635
+ADD p32015-4 32015 darkgray
+ADD p32062-54 32062 red
+ADD p32013-16 32013 darkgray
+CONNECT p32062-54.axle1 -> p32015-4.axlehole2~ LOCKED
+CONNECT p32062-54.axle2 -> p32013-16.axlehole1 LOCKED
+CONNECT p24316-24.axle1 -> p32015-4.axlehole1~ LOCKED
+WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The angled arm and brown shaft seating remain estimated from the articulated position.
+
+STEP 636
+ADD p18651-19 18651 black
+ADD p32184-48 32184 darkgray
+ADD p32039-9 32039 lightgray
+CONNECT p18651-19.axle2 -> p32184-48.axlehole1 LOCKED
+CONNECT p18651-19.axle1 -> p32039-9.axlehole2 LOCKED
+CONNECT p18651-19.pin1 -> p32525-13.hole3 STIFF
+WHY Builds the opposite latch support from a long black axle-pin, dark-grey cross connector and grey perpendicular cross connector, then pins the assembly into the third hole of the olive rail.
+
+STEP 637
+ADD p4519-54 4519 lightgray
+ADD p59443-36 59443 black
+CONNECT p4519-54.axle3 -> p59443-36.axlehole2 LOCKED
+CONNECT p4519-54.axle2 -> p32525-13.hole1 TURNS
+CONNECT p4519-54.axle1 -> p32184-48.axlehole2 LOCKED
+END
+WHY Adds the grey three-stud axle and black extension connector at the remaining rail end, passing the shaft through the olive round bore into the waiting dark-grey cross socket.
+
+STEP 638
+ATTACH second-door-latch-rail
+CONNECT p15462-22.axle2 -> p15100-19.hole1 TURNS
+WHY Turns the completed latch rail upright and slides its long brown pivot axle through the grey perpendicular connector on the door inside face. The round bearing allows the latch shaft to rotate.
+
+STEP 639
+ADD p59443-37 59443 black
+ADD p32062-55 32062 red
+CONNECT p32062-55.axle2 -> p59443-37.axlehole1 LOCKED
+CONNECT p15462-22.axle1 -> p59443-37.axlehole2 LOCKED
+WHY Extends the exposed lower end of the brown latch pivot axle with a black axle joiner and red two-stud axle, retaining the latch rail and leaving a red cross end for the following handle linkage.
+
