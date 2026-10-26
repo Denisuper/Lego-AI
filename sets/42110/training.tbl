@@ -1315,3 +1315,182 @@ CONNECT p6558-21.pin2 -> p32524-5.hole7 STIFF
 CONNECT p6558-22.pin2 -> p32140-5.hole4 STIFF
 WHY Inserts two long blue friction pins into the outer ends of the grey upper side supports, completing the first bag and preparing the rear module to join the next chassis structure.
 
+STEP 124
+GROUP front-axle-module
+ADD p40490-7 40490 black
+ADD p15462-5 15462 brown
+ADD p6536-20 6536 darkgray
+CONNECT p15462-5.axle5 -> p40490-7.hole8 TURNS
+CONNECT p15462-5.axle4 -> p6536-20.axlehole1 LOCKED
+WHY Starts the front axle module for bag two with a black nine-hole beam and a brown stopped five-length axle through its second hole from one end, then slides a dark-grey perpendicular connector onto the axle.
+
+STEP 125
+ADD p60483-10 60483 black
+ADD p6536-21 6536 darkgray
+CONNECT p15462-5.axle3 -> p60483-10.axlehole1 LOCKED
+CONNECT p15462-5.axle2 -> p6536-21.axlehole1 LOCKED
+WHY Adds a black axle-and-pin block and a second dark-grey perpendicular connector to the brown shaft, orienting the round holes to form the first suspension pivot support.
+
+STEP 126
+ADD p43093-16 43093 blue
+ADD p43093-17 43093 blue
+ADD p26287-5 26287 red
+CONNECT p43093-16.axle1 -> p26287-5.axlehole1~ LOCKED
+CONNECT p43093-17.axle1 -> p26287-5.axlehole1~ LOCKED
+CONNECT p43093-16.pin1 -> p40490-7.hole5 STIFF
+WHY Builds a red smooth three-length connector with blue axle-pins inserted at both ends and presses one pin into the middle hole of the black beam. Both axle ends share the long red cross bore; their end seating is estimated.
+
+STEP 127
+ADD p15462-6 15462 brown
+ADD p6536-23 6536 darkgray
+CONNECT p15462-6.axle5 -> p40490-7.hole2 TURNS
+CONNECT p15462-6.axle4 -> p6536-23.axlehole1 LOCKED
+WHY Inserts the second brown stopped five-length axle through the matching hole near the other end of the black beam and adds a dark-grey perpendicular connector for the opposite suspension pivot support.
+
+STEP 128
+ADD p60483-11 60483 black
+ADD p6536-22 6536 darkgray
+CONNECT p15462-6.axle3 -> p60483-11.axlehole1 LOCKED
+CONNECT p15462-6.axle2 -> p6536-22.axlehole1 LOCKED
+WHY Adds the second black axle-and-pin block and remaining dark-grey perpendicular connector to the new brown shaft, mirroring the first side support.
+
+STEP 129
+ADD p40490-8 40490 black
+ADD p15462-7 15462 brown
+ADD p15462-8 15462 brown
+ADD p11478-9 11478 black
+ADD p11478-10 11478 black
+CONNECT p15462-7.axle5 -> p40490-8.hole1 TURNS
+CONNECT p15462-8.axle5 -> p40490-8.hole9 TURNS
+CONNECT p15462-7.axle4~ -> p11478-9.axlehole1 LOCKED
+CONNECT p15462-8.axle4~ -> p11478-10.axlehole1 LOCKED
+CONNECT p15462-5.axle1 -> p40490-8.hole8 TURNS
+CONNECT p15462-6.axle1 -> p40490-8.hole2 TURNS
+CONNECT p43093-17.pin1 -> p40490-8.hole5 STIFF
+CONNECT p15462-7.axle3 -> p60483-11.hole1 TURNS
+CONNECT p15462-8.axle3 -> p60483-10.hole1 TURNS
+CONNECT p15462-7.axle1 -> p40490-7.hole1 TURNS
+CONNECT p15462-8.axle1 -> p40490-7.hole9 TURNS
+WHY Builds the second black nine-hole crossbeam with two brown five-length suspension shafts and two thin black five-hole links, then joins it to the waiting brown support shafts and central blue pin. Pushes the outer shafts through the black pivot blocks into the first crossbeam; thin-link seating depths are estimated.
+
+STEP 130
+ADD p11478-11 11478 black
+ADD p11478-12 11478 black
+ADD p57515-5 57515 darkgray
+ADD p57515-6 57515 darkgray
+CONNECT p15462-8.axle2~ -> p11478-11.axlehole1 LOCKED
+CONNECT p15462-7.axle2~ -> p11478-12.axlehole1 LOCKED
+CONNECT p15462-8.axle4~ -> p57515-5.hole4 TURNS
+CONNECT p15462-8.axle2~ -> p57515-5.hole5 TURNS
+CONNECT p15462-7.axle2~ -> p57515-6.hole4 TURNS
+CONNECT p15462-7.axle4~ -> p57515-6.hole5 TURNS
+WHY Adds the remaining pair of thin black links and the two dark-grey suspension arms around the outer brown pivot shafts, then pushes the shafts to their final seating. Keeps the ball sockets pointing outwards as highlighted; the thin-link and fork depths are estimated.
+
+STEP 131
+ADD p6558-23 6558 blue
+ADD p6558-24 6558 blue
+ADD p32316-5 32316 black
+ADD p32316-6 32316 black
+ADD p2780-41 2780 black
+ADD p2780-42 2780 black
+CONNECT p6558-23.pin2 -> p32316-5.hole5 STIFF
+CONNECT p2780-41.pin1 -> p32316-5.hole3 STIFF
+CONNECT p6558-24.pin2 -> p32316-6.hole5 STIFF
+CONNECT p2780-42.pin1 -> p32316-6.hole3 STIFF
+CONNECT p6558-23.pin1 -> p6536-20.hole1 STIFF
+CONNECT p2780-41.pin2 -> p6536-21.hole1 STIFF
+CONNECT p6558-24.pin1 -> p6536-23.hole1 STIFF
+CONNECT p2780-42.pin2 -> p6536-22.hole1 STIFF
+WHY Builds two black five-hole cross braces, each with a long blue pin at one end and a black pin in the middle, then presses them into the matching dark-grey support connectors across the front suspension module.
+
+STEP 132
+GROUP front-differential-unit
+ADD p64178-2 64178 lightgray
+ADD p2780-43 2780 black
+ADD p2780-44 2780 black
+ADD p2780-45 2780 black
+ADD p2780-46 2780 black
+ADD p4274-1 4274 lightgray
+ADD p4274-2 4274 lightgray
+CONNECT p2780-43.pin2 -> p64178-2.hole27 STIFF
+CONNECT p2780-44.pin2 -> p64178-2.hole25 STIFF
+CONNECT p2780-45.pin1 -> p64178-2.hole28 STIFF
+CONNECT p2780-46.pin1 -> p64178-2.hole26 STIFF
+CONNECT p4274-1.pin1~ -> p64178-2.hole5 TURNS
+CONNECT p4274-2.pin1~ -> p64178-2.hole9 TURNS
+WHY Starts the front differential unit with the second grey five-by-eleven frame, four black friction pins along one end and two grey half pins in the highlighted top holes at the other end. Half-pin seating depths are estimated.
+
+STEP 133
+ADD p99008-2 99008 tan
+ADD p18575-3 18575 tan
+CONNECT p99008-2.axle1 -> p18575-3.axlehole1 LOCKED
+CONNECT p99008-2.pin1 -> p64178-2.hole7 TURNS
+WHY Fits the tan twenty-tooth bevel gear to the short end of the tan stopped shaft and passes the smooth shaft neck through the end-frame bearing, leaving its long axle end projecting outwards.
+
+STEP 134
+ADD p62821b-2 62821b darkgray
+ADD p6589-8 6589 tan
+ADD p6589-9 6589 tan
+ADD p6589-10 6589 tan
+ADD p4519-16 4519 lightgray
+ADD p4519-17 4519 lightgray
+CONNECT p6589-10.axlehole1 -> p62821b-2.? TURNS
+CONNECT p4519-17.axle1~ -> p6589-8.axlehole1 LOCKED
+CONNECT p4519-16.axle3~ -> p6589-9.axlehole1 LOCKED
+CONNECT p4519-17.axle1 -> p62821b-2.hole1 TURNS
+CONNECT p4519-16.axle3 -> p62821b-2.hole2 TURNS
+CONNECT p4519-17.axle2 -> p64178-2.hole15 TURNS
+CONNECT p4519-16.axle2 -> p64178-2.hole14 TURNS
+MESH p6589-10.teeth p6589-8.teeth
+MESH p6589-10.teeth p6589-9.teeth
+MESH p18575-3.teeth p62821b-2.teeth
+WHY Assembles the second dark-grey twenty-eight-tooth differential carrier with three tan twelve-tooth bevel gears and two grey three-length side shafts, then seats it in the frame with the crown meshing with the tan input gear. The internal carrier post is unnamed and side-gear shaft depths are estimated.
+
+STEP 135
+ADD front-universal-one 61903 lightgray
+ADD front-universal-two 61903 lightgray
+ADD p4519-18 4519 lightgray
+ADD p4519-19 4519 lightgray
+ADD p3713-16 3713 red
+ADD p3713-17 3713 red
+CONNECT p4519-17.axle3 -> front-universal-one.axlehole1~ LOCKED
+CONNECT p4519-16.axle1 -> front-universal-two.axlehole1~ LOCKED
+CONNECT p4519-18.axle1 -> front-universal-one.axlehole2~ LOCKED
+CONNECT p4519-19.axle3 -> front-universal-two.axlehole2~ LOCKED
+CONNECT p4519-18.axle2 -> p3713-16.axlehole1 LOCKED
+CONNECT p4519-19.axle2 -> p3713-17.axlehole1 LOCKED
+END
+WHY Builds two complete universal joints with grey three-length output shafts and red bushes, then fits their inner sockets to the front differential side shafts. Complete-joint socket orientation is estimated from the booklet, with the two output bushes on the outboard shafts.
+
+STEP 136
+ATTACH front-differential-unit
+CONNECT p6558-23.pin3 -> p64178-2.hole13 STIFF
+CONNECT p6558-24.pin3 -> p64178-2.hole12 STIFF
+WHY Lowers the completed differential frame onto the front suspension module and presses it onto the two waiting blue pins. Checks that the differential crown is on the highlighted side and remains meshed with the tan input bevel gear.
+
+STEP 137
+ADD p6558-25 6558 blue
+ADD p6558-26 6558 blue
+CONNECT p6558-25.pin2 -> p64178-2.hole24 STIFF
+CONNECT p6558-26.pin2 -> p64178-2.hole20 STIFF
+CONNECT p6558-25.pin3 -> p32316-5.hole1 STIFF
+CONNECT p6558-26.pin3 -> p32316-6.hole1 STIFF
+WHY Inserts two long blue friction pins through the differential frame and the remaining end holes of the black five-hole cross braces, securing the other end of the frame.
+
+STEP 138
+ADD p32524-6 32524 lightgray
+ADD p32524-7 32524 lightgray
+ADD p4274-3 4274 lightgray
+ADD p4274-4 4274 lightgray
+ADD p6558-27 6558 blue
+ADD p6558-28 6558 blue
+CONNECT p4274-3.pin1~ -> p32524-6.hole1 TURNS
+CONNECT p4274-4.pin1~ -> p32524-7.hole1 TURNS
+CONNECT p6558-27.pin2 -> p32524-6.hole4 STIFF
+CONNECT p6558-28.pin2 -> p32524-7.hole4 STIFF
+CONNECT p6558-25.pin1 -> p32524-6.hole2 STIFF
+CONNECT p6558-26.pin1 -> p32524-7.hole2 STIFF
+CONNECT p6558-27.pin3 -> p64178-2.hole17 STIFF
+CONNECT p6558-28.pin3 -> p64178-2.hole16 STIFF
+WHY Builds two grey seven-hole rails with grey half pins at one end and long blue pins in their middle holes. Fits them over the waiting frame pins and pushes the new blue pins through the frame, preparing the opposite suspension supports. Half-pin seating depths are estimated.
+
