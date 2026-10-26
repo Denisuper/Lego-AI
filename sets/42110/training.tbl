@@ -1,0 +1,478 @@
+# You design and build LEGO Technic models one step at a time, in a build language.
+#
+# For each step you write:
+# ADD name partnumber color
+# CONNECT part.point -> part.point LOCKED|TURNS|STIFF   (points: hole1.., axlehole1.., pin1.., axle1.., clip1..; LOCKED = cross in cross, turn together; TURNS = free; STIFF = friction pin)
+# Optional: MESH a.teeth b.teeth / RATIO a b x/y / GROUP g (opens a side build) / END (closes it) / ATTACH g (joins a finished side build into the main model)
+# WHY one plain sentence: what this step builds and what it is for.
+# A point ending in ~ is an estimate; ? means not known.
+#
+# Rules: only use real points of each part; a round pin never goes in a cross hole; a shaft that must turn needs round holes; a worm needs stops on both sides; gears must sit at the right distance.
+STEP 1
+ADD p64178-1 64178 lightgray
+ADD p2780-1 2780 black
+ADD p2780-2 2780 black
+CONNECT p2780-1.pin2 -> p64178-1.hole26 STIFF
+CONNECT p2780-2.pin1 -> p64178-1.hole25 STIFF
+WHY Starts the rear axle module with a grey five-by-eleven frame and two black friction pins in the side holes near one end.
+
+STEP 2
+ADD p6558-1 6558 blue
+ADD p6558-2 6558 blue
+ADD p6558-3 6558 blue
+ADD p6558-4 6558 blue
+CONNECT p6558-1.pin2 -> p64178-1.hole5 STIFF
+CONNECT p6558-2.pin2 -> p64178-1.hole20 STIFF
+CONNECT p6558-3.pin2 -> p64178-1.hole9 STIFF
+CONNECT p6558-4.pin2 -> p64178-1.hole24 STIFF
+WHY Inserts four long blue friction pins through the frame corners around its central opening, leaving pin ends available above and below.
+
+STEP 3
+ADD p99008-1 99008 tan
+ADD p18575-1 18575 tan
+ADD p10928-1 10928 darkgray
+CONNECT p99008-1.axle1 -> p18575-1.axlehole1 LOCKED
+CONNECT p99008-1.pin1 -> p64178-1.hole22 TURNS
+CONNECT p99008-1.axle2 -> p10928-1.axlehole1 LOCKED
+WHY Fits the tan twenty-tooth bevel gear to the stopped tan shaft, passes its smooth neck through the end-frame round bearing and locks a dark-grey eight-tooth gear onto the projecting shaft.
+
+STEP 4
+ADD p62821b-1 62821b darkgray
+ADD p6589-1 6589 tan
+ADD p6589-2 6589 tan
+ADD p6589-3 6589 tan
+ADD p4519-1 4519 lightgray
+ADD p4519-2 4519 lightgray
+CONNECT p6589-3.axlehole1 -> p62821b-1.? TURNS
+CONNECT p4519-1.axle1~ -> p6589-2.axlehole1 LOCKED
+CONNECT p4519-1.axle1 -> p62821b-1.hole2 TURNS
+CONNECT p4519-1.axle2 -> p64178-1.hole14 TURNS
+CONNECT p4519-2.axle3~ -> p6589-1.axlehole1 LOCKED
+CONNECT p4519-2.axle3 -> p62821b-1.hole1 TURNS
+CONNECT p4519-2.axle2 -> p64178-1.hole15 TURNS
+MESH p6589-3.teeth p6589-1.teeth
+MESH p6589-3.teeth p6589-2.teeth
+MESH p18575-1.teeth p62821b-1.teeth
+WHY Assembles the differential with three tan twelve-tooth bevel gears, seating the centre pinion on its uncataloged carrier post and the two side gears on grey three-length shafts. Lowers the carrier into the frame with its crown meshing with the twenty-tooth input gear; the side-gear shaft depths are estimated.
+
+STEP 5
+ADD rear-universal-one 61903 lightgray
+ADD rear-universal-two 61903 lightgray
+CONNECT p4519-1.axle3 -> rear-universal-one.axlehole1~ LOCKED
+CONNECT p4519-2.axle1 -> rear-universal-two.axlehole1~ LOCKED
+WHY Fits one complete grey universal joint onto each differential output shaft; the complete-joint socket orientation is estimated from the booklet.
+
+STEP 6
+ADD p4519-3 4519 lightgray
+ADD p4519-4 4519 lightgray
+ADD p3713-1 3713 red
+ADD p3713-2 3713 red
+CONNECT p4519-4.axle3 -> rear-universal-one.axlehole2~ LOCKED
+CONNECT p4519-3.axle1 -> rear-universal-two.axlehole2~ LOCKED
+CONNECT p4519-4.axle2 -> p3713-1.axlehole1 LOCKED
+CONNECT p4519-3.axle2 -> p3713-2.axlehole1 LOCKED
+WHY Adds a grey three-length shaft to each outer universal-joint socket and a red bush onto each shaft, leaving the ends projecting for the wheel joints.
+
+STEP 7
+ADD p6558-5 6558 blue
+ADD p6558-6 6558 blue
+ADD p6558-7 6558 blue
+ADD p6558-8 6558 blue
+CONNECT p6558-5.pin1 -> p64178-1.hole17 STIFF
+CONNECT p6558-6.pin1 -> p64178-1.hole13 STIFF
+CONNECT p6558-7.pin1 -> p64178-1.hole12 STIFF
+CONNECT p6558-8.pin1 -> p64178-1.hole16 STIFF
+WHY Inserts four more blue friction pins into the upright frame bores beside the differential to carry the suspension brackets.
+
+STEP 8
+ADD p60484-1 60484 black
+ADD p60484-2 60484 black
+ADD p60484-3 60484 black
+ADD p60484-4 60484 black
+CONNECT p6558-6.pin2 -> p60484-1.hole1 STIFF
+CONNECT p6558-3.pin1 -> p60484-1.hole5 STIFF
+CONNECT p6558-4.pin1 -> p60484-2.hole1 STIFF
+CONNECT p6558-5.pin2 -> p60484-2.hole5 STIFF
+CONNECT p6558-1.pin1 -> p60484-3.hole1 STIFF
+CONNECT p6558-7.pin2 -> p60484-3.hole5 STIFF
+CONNECT p6558-8.pin2 -> p60484-4.hole1 STIFF
+CONNECT p6558-2.pin1 -> p60484-4.hole5 STIFF
+WHY Presses four black T-shaped beams onto the blue pin pairs around the differential, forming the lower suspension mounting points.
+
+STEP 9
+ADD p32073-1 32073 yellow
+ADD p44294-1 44294 lightgray
+ADD p60483-1 60483 black
+ADD p57515-1 57515 darkgray
+ADD p6536-1 6536 darkgray
+ADD p6536-2 6536 darkgray
+ADD p11478-1 11478 black
+ADD p11478-2 11478 black
+CONNECT p32073-1.axle2 -> p6536-1.axlehole1 LOCKED
+CONNECT p32073-1.axle4 -> p6536-2.axlehole1 LOCKED
+CONNECT p32073-1.axle3 -> p60483-1.axlehole1 LOCKED
+CONNECT p44294-1.axle4 -> p60483-1.hole1 TURNS
+CONNECT p44294-1.axle3~ -> p57515-1.hole4 TURNS
+CONNECT p44294-1.axle5~ -> p57515-1.hole5 TURNS
+CONNECT p44294-1.axle5~ -> p11478-1.axlehole2 LOCKED
+CONNECT p44294-1.axle3~ -> p11478-2.axlehole2 LOCKED
+CONNECT p6558-6.pin3 -> p6536-1.hole1 STIFF
+CONNECT p6558-5.pin3 -> p6536-2.hole1 STIFF
+ADD p32073-2 32073 yellow
+ADD p44294-2 44294 lightgray
+ADD p60483-2 60483 black
+ADD p57515-2 57515 darkgray
+ADD p6536-3 6536 darkgray
+ADD p6536-4 6536 darkgray
+ADD p11478-3 11478 black
+ADD p11478-4 11478 black
+CONNECT p32073-2.axle2 -> p6536-3.axlehole1 LOCKED
+CONNECT p32073-2.axle4 -> p6536-4.axlehole1 LOCKED
+CONNECT p32073-2.axle3 -> p60483-2.axlehole1 LOCKED
+CONNECT p44294-2.axle4 -> p60483-2.hole1 TURNS
+CONNECT p44294-2.axle3~ -> p57515-2.hole4 TURNS
+CONNECT p44294-2.axle5~ -> p57515-2.hole5 TURNS
+CONNECT p44294-2.axle5~ -> p11478-3.axlehole1 LOCKED
+CONNECT p44294-2.axle3~ -> p11478-4.axlehole1 LOCKED
+CONNECT p6558-8.pin3 -> p6536-3.hole1 STIFF
+CONNECT p6558-7.pin3 -> p6536-4.hole1 STIFF
+WHY Builds both repeated upper suspension pivots from yellow five-length shafts, grey seven-length shafts, paired dark-grey perpendicular connectors, black axle blocks, dark-grey suspension arms and paired thin black links. Fits the perpendicular connectors onto the projecting blue frame pins. Thin-link and fork insertion depths are estimated.
+
+STEP 10
+ADD p40490-1 40490 black
+ADD p40490-2 40490 black
+ADD p43093-1 43093 blue
+ADD p43093-2 43093 blue
+ADD p26287-1 26287 red
+CONNECT p43093-1.axle1 -> p26287-1.axlehole1~ LOCKED
+CONNECT p43093-2.axle1 -> p26287-1.axlehole1~ LOCKED
+CONNECT p43093-1.pin1 -> p40490-1.hole5 STIFF
+CONNECT p43093-2.pin1 -> p40490-2.hole5 STIFF
+CONNECT p32073-1.axle5 -> p40490-1.hole8 TURNS
+CONNECT p44294-1.axle6 -> p40490-1.hole9 TURNS
+CONNECT p32073-2.axle1 -> p40490-1.hole2 TURNS
+CONNECT p44294-2.axle2 -> p40490-1.hole1 TURNS
+CONNECT p32073-1.axle1 -> p40490-2.hole8 TURNS
+CONNECT p44294-1.axle2 -> p40490-2.hole9 TURNS
+CONNECT p32073-2.axle5 -> p40490-2.hole2 TURNS
+CONNECT p44294-2.axle6 -> p40490-2.hole1 TURNS
+WHY Joins two blue axle-pins inside a red three-length sleeve, fixes two black nine-hole beams onto the outward pin ends and slides the beams over the four upper suspension shafts. The sleeve only has one cataloged cross-bore point, so both insertion depths are estimated.
+
+STEP 11
+ADD p32524-1 32524 red
+ADD p32524-2 32524 red
+CONNECT p6558-2.pin3 -> p32524-1.hole1 STIFF
+CONNECT p6558-1.pin3 -> p32524-1.hole7 STIFF
+CONNECT p6558-4.pin3 -> p32524-2.hole1 STIFF
+CONNECT p6558-3.pin3 -> p32524-2.hole7 STIFF
+WHY Turns the module over and fits two red seven-hole beams along the lower sides on the four original blue frame pins.
+
+STEP 12
+ADD p32525-1 32525 darkgray
+ADD p2780-3 2780 black
+ADD p2780-4 2780 black
+ADD p43093-3 43093 blue
+ADD p24316-1 24316 brown
+ADD p32184-1 32184 darkgray
+CONNECT p2780-3.pin1 -> p32525-1.hole11 STIFF
+CONNECT p2780-4.pin1 -> p32525-1.hole8 STIFF
+CONNECT p43093-3.pin1 -> p32525-1.hole7 STIFF
+CONNECT p43093-3.axle1 -> p32184-1.axlehole2 LOCKED
+CONNECT p24316-1.axle2 -> p32184-1.axlehole1 LOCKED
+CONNECT p24316-1.axle3 -> p32525-1.hole5 TURNS
+CONNECT p2780-3.pin2 -> p64178-1.hole11 STIFF
+CONNECT p2780-4.pin2 -> p64178-1.hole2 STIFF
+WHY Builds a dark-grey eleven-hole side rail with two black mounting pins and a dark-grey double-cross connector mounted on a blue axle-pin and brown three-length stop axle, then fits the rail to the grey rear-axle frame.
+
+STEP 13
+ADD p32525-2 32525 darkgray
+ADD p2780-5 2780 black
+ADD p2780-6 2780 black
+CONNECT p2780-5.pin1 -> p32525-2.hole11 STIFF
+CONNECT p2780-6.pin1 -> p32525-2.hole8 STIFF
+CONNECT p2780-5.pin2 -> p64178-1.hole10 STIFF
+CONNECT p2780-6.pin2 -> p64178-1.hole1 STIFF
+WHY Adds the matching dark-grey eleven-hole rail to the opposite side of the frame on two black friction pins.
+
+STEP 14
+ADD p6628-1 6628 red
+ADD p6628-2 6628 red
+ADD p6628-3 6628 red
+ADD p6628-4 6628 red
+CONNECT p6628-1.pin1 -> p60484-3.hole2 STIFF
+CONNECT p6628-2.pin1 -> p60484-4.hole2 STIFF
+CONNECT p6628-3.pin1 -> p60484-2.hole2 STIFF
+CONNECT p6628-4.pin1 -> p60484-1.hole2 STIFF
+WHY Inserts four red friction pins with towballs into the black T-shaped brackets, leaving the balls exposed for the suspension links.
+
+STEP 15
+ADD rear-suspension-link-1 32005a darkgray
+ADD rear-suspension-link-2 32005a darkgray
+ADD rear-suspension-link-3 32005a darkgray
+ADD rear-suspension-link-4 32005a darkgray
+CONNECT rear-suspension-link-1.? -> p6628-1.? TURNS
+CONNECT rear-suspension-link-2.? -> p6628-2.? TURNS
+CONNECT rear-suspension-link-3.? -> p6628-3.? TURNS
+CONNECT rear-suspension-link-4.? -> p6628-4.? TURNS
+WHY Snaps four dark-grey six-length suspension links onto the red towballs and swings their free ends outwards. The catalog does not name the ball-and-socket interfaces, so those freely articulating joints remain explicit unknowns.
+
+STEP 16
+ADD p2780-7 2780 black
+ADD p2780-8 2780 black
+CONNECT p2780-7.pin1 -> p32524-2.hole3 STIFF
+CONNECT p2780-8.pin1 -> p32524-1.hole3 STIFF
+WHY Adds one black friction pin to the third hole of each red seven-hole lower beam.
+
+STEP 17
+ADD p40490-3 40490 black
+ADD p15462-1 15462 brown
+ADD p15462-2 15462 brown
+ADD p60483-3 60483 black
+ADD p60483-4 60483 black
+ADD p6536-5 6536 darkgray
+ADD p6536-6 6536 darkgray
+ADD p6536-7 6536 darkgray
+ADD p6536-8 6536 darkgray
+ADD p6558-9 6558 blue
+ADD p6558-10 6558 blue
+CONNECT p15462-1.axle5 -> p40490-3.hole8 TURNS
+CONNECT p15462-1.axle2 -> p6536-5.axlehole1 LOCKED
+CONNECT p15462-1.axle3 -> p60483-4.axlehole1 LOCKED
+CONNECT p15462-1.axle4 -> p6536-7.axlehole1 LOCKED
+CONNECT p15462-2.axle5 -> p40490-3.hole2 TURNS
+CONNECT p15462-2.axle2 -> p6536-6.axlehole1 LOCKED
+CONNECT p15462-2.axle3 -> p60483-3.axlehole1 LOCKED
+CONNECT p15462-2.axle4 -> p6536-8.axlehole1 LOCKED
+CONNECT p2780-8.pin2 -> p6536-5.hole1 STIFF
+CONNECT p2780-7.pin2 -> p6536-6.hole1 STIFF
+CONNECT p6558-9.pin2 -> p6536-8.hole1 STIFF
+CONNECT p6558-9.pin3 -> p32524-2.hole5 STIFF
+CONNECT p6558-10.pin2 -> p6536-7.hole1 STIFF
+CONNECT p6558-10.pin3 -> p32524-1.hole5 STIFF
+WHY Builds the lower suspension pivot crossmember with two brown stopped five-length shafts through a black nine-hole beam, four perpendicular dark-grey connectors and two black axle blocks. Mounts the connectors on the existing black and new blue pins, pressing the blue pins through the red beam holes as shown.
+
+STEP 18
+ADD p44294-3 44294 lightgray
+CONNECT p44294-3.axle4 -> p60483-4.hole1 TURNS
+CONNECT p44294-3.axle6 -> p40490-3.hole9 TURNS
+CONNECT p44294-3.axle5~ -> p11478-3.axlehole2 LOCKED
+CONNECT p44294-3.axle3~ -> p11478-4.axlehole2 LOCKED
+WHY Passes a grey seven-length axle through the black lower axle block, cross beam and the two thin suspension links, leaving it partly projecting for the next arm. Thin-link insertion depths are estimated.
+
+STEP 19
+ADD p57515-3 57515 darkgray
+CONNECT p44294-3.axle5~ -> p57515-3.hole4 TURNS
+CONNECT p44294-3.axle3~ -> p57515-3.hole5 TURNS
+WHY Fits a dark-grey suspension arm around the two thin black links and pushes the seven-length shaft through both fork holes until the shaft ends align as shown. Fork insertion depths remain estimated.
+
+STEP 20
+ADD p23801-1 23801 black
+ADD p92909-1 92909 darkgray
+ADD p32494-1 32494 lightgray
+ADD p6628-5 6628 red
+ADD p6628-6 6628 red
+ADD p2736-1 2736 lightgray
+ADD p2736-2 2736 lightgray
+CONNECT p92909-1.? -> p23801-1.? TURNS
+CONNECT p32494-1.? -> p92909-1.? LOCKED
+CONNECT p6628-5.pin1 -> p23801-1.hole1~ STIFF
+CONNECT p6628-6.pin1 -> p23801-1.hole2~ STIFF
+CONNECT p2736-1.axle1 -> p23801-1.axlehole1 LOCKED
+CONNECT p2736-2.axle1 -> p23801-1.axlehole2 LOCKED
+CONNECT p4519-4.axle1~ -> p32494-1.axlehole1 LOCKED
+CONNECT p57515-3.? -> p6628-5.? TURNS
+WHY Builds a wheel carrier with a freely rotating dark-grey hub, grey CV socket, two red pivot towballs and two grey axle towballs. Fits the CV socket over the projecting drive shaft and snaps the lower suspension arm onto its red ball. Hub retention, CV ball engagement and suspension ball sockets are not cataloged; pin and shaft depths are estimated.
+
+STEP 21
+CONNECT p57515-2.? -> p6628-6.? TURNS
+WHY Swings the upper suspension arm down onto the upper red towball to capture the first wheel carrier between the two arms, keeping the grey drive shaft seated in its CV socket. The ball socket interface is not cataloged.
+
+STEP 22
+ADD p44294-4 44294 lightgray
+CONNECT p44294-4.axle4 -> p60483-3.hole1 TURNS
+CONNECT p44294-4.axle2 -> p40490-3.hole1 TURNS
+CONNECT p44294-4.axle3~ -> p11478-2.axlehole1 LOCKED
+CONNECT p44294-4.axle5~ -> p11478-1.axlehole1 LOCKED
+WHY Inserts the opposite grey seven-length lower pivot shaft through the black crossmember and the two thin suspension links, leaving it projecting for the matching arm. Thin-link shaft depths are estimated.
+
+STEP 23
+ADD p57515-4 57515 darkgray
+CONNECT p44294-4.axle5~ -> p57515-4.hole4 TURNS
+CONNECT p44294-4.axle3~ -> p57515-4.hole5 TURNS
+WHY Fits the opposite dark-grey suspension arm around the thin black links and pushes the seven-length pivot shaft fully through its fork, aligning the ends as shown. Fork insertion depths are estimated.
+
+STEP 24
+ADD p23801-2 23801 black
+ADD p92909-2 92909 darkgray
+ADD p32494-2 32494 lightgray
+ADD p6628-7 6628 red
+ADD p6628-8 6628 red
+ADD p2736-3 2736 lightgray
+ADD p2736-4 2736 lightgray
+CONNECT p92909-2.? -> p23801-2.? TURNS
+CONNECT p32494-2.? -> p92909-2.? LOCKED
+CONNECT p6628-7.pin1 -> p23801-2.hole1~ STIFF
+CONNECT p6628-8.pin1 -> p23801-2.hole2~ STIFF
+CONNECT p2736-3.axle1 -> p23801-2.axlehole1 LOCKED
+CONNECT p2736-4.axle1 -> p23801-2.axlehole2 LOCKED
+CONNECT p4519-3.axle3~ -> p32494-2.axlehole1 LOCKED
+CONNECT p57515-4.? -> p6628-7.? TURNS
+CONNECT p57515-1.? -> p6628-8.? TURNS
+WHY Builds a wheel carrier with a freely rotating dark-grey hub, grey CV socket, two red pivot towballs and two grey axle towballs. Fits the CV socket over the projecting drive shaft and snaps the lower suspension arm onto its red ball, then closes the upper arm over the opposite red ball. Hub retention, CV ball engagement and suspension ball sockets are not cataloged; pin and shaft depths are estimated.
+
+STEP 25
+ADD p4519-5 4519 lightgray
+ADD p4519-6 4519 lightgray
+ADD p4519-7 4519 lightgray
+ADD p4519-8 4519 lightgray
+ADD p11478-5 11478 black
+ADD p11478-6 11478 black
+ADD p11478-7 11478 black
+ADD p11478-8 11478 black
+CONNECT p4519-5.axle2 -> p57515-3.hole1 TURNS
+CONNECT p4519-5.axle3~ -> p11478-5.axlehole2 LOCKED
+CONNECT p4519-5.axle1~ -> p11478-6.axlehole2 LOCKED
+CONNECT p4519-6.axle2 -> p57515-2.hole1 TURNS
+CONNECT p4519-6.axle3~ -> p11478-5.axlehole1 LOCKED
+CONNECT p4519-6.axle1~ -> p11478-6.axlehole1 LOCKED
+CONNECT p4519-7.axle2 -> p57515-1.hole1 TURNS
+CONNECT p4519-7.axle3~ -> p11478-7.axlehole1 LOCKED
+CONNECT p4519-7.axle1~ -> p11478-8.axlehole1 LOCKED
+CONNECT p4519-8.axle2 -> p57515-4.hole1 TURNS
+CONNECT p4519-8.axle3~ -> p11478-7.axlehole2 LOCKED
+CONNECT p4519-8.axle1~ -> p11478-8.axlehole2 LOCKED
+WHY Builds two paired thin-link uprights on four grey three-length shafts and fits them between the upper and lower suspension arms on both sides. These links connect each arm pair while their shafts rotate in the arm round holes; thin-link shaft depths are estimated.
+
+STEP 26
+CONNECT rear-suspension-link-1.? -> p2736-1.? TURNS
+CONNECT rear-suspension-link-2.? -> p2736-2.? TURNS
+CONNECT rear-suspension-link-3.? -> p2736-3.? TURNS
+CONNECT rear-suspension-link-4.? -> p2736-4.? TURNS
+WHY Swings the four long suspension links onto the grey towballs on the wheel carriers, closing both sides of the rear suspension. Ball sockets and towball surfaces are not named in the catalog; their endpoints remain unknown.
+
+STEP 27
+ADD p42003-1 42003 lightgray
+ADD p42003-2 42003 lightgray
+ADD p6558-11 6558 blue
+ADD p6558-12 6558 blue
+CONNECT p6558-11.pin2 -> p42003-2.hole2 STIFF
+CONNECT p6558-12.pin2 -> p42003-1.hole2 STIFF
+CONNECT p44294-2.axle7 -> p42003-1.axlehole1 LOCKED
+CONNECT p44294-1.axle1 -> p42003-2.axlehole1 LOCKED
+CONNECT p6558-11.pin3 -> p32525-1.hole10 STIFF
+CONNECT p6558-12.pin3 -> p32525-2.hole10 STIFF
+WHY Builds two grey axle-and-pin connectors with blue three-length pins, then slides them onto the exposed upper pivot shafts and presses the pins into the long chassis rails to brace the first face.
+
+STEP 28
+ADD p42003-3 42003 lightgray
+ADD p42003-4 42003 lightgray
+ADD p2780-9 2780 black
+ADD p2780-10 2780 black
+ADD p43093-4 43093 blue
+ADD p43093-5 43093 blue
+CONNECT p2780-9.pin1 -> p42003-3.hole1 STIFF
+CONNECT p2780-10.pin2 -> p42003-4.hole1 STIFF
+CONNECT p43093-4.pin1 -> p42003-3.hole2 STIFF
+CONNECT p43093-5.pin1 -> p42003-4.hole2 STIFF
+CONNECT p44294-2.axle1 -> p42003-3.axlehole1 LOCKED
+CONNECT p44294-1.axle7 -> p42003-4.axlehole1 LOCKED
+WHY Turns the axle assembly over and adds two matching grey connectors to the opposite ends of the upper pivot shafts. Each connector carries a black friction pin and a blue axle-pin for the later side braces.
+
+STEP 29
+ADD p40490-4 40490 black
+CONNECT p44294-4.axle6 -> p40490-4.hole1 TURNS
+CONNECT p15462-2.axle1 -> p40490-4.hole2 TURNS
+CONNECT p15462-1.axle1 -> p40490-4.hole8 TURNS
+CONNECT p44294-3.axle2 -> p40490-4.hole9 TURNS
+WHY Slides a black nine-hole crossbeam over the four projecting lower pivot shafts, tying the opposite side of the rear suspension together while allowing the shafts to turn in its round holes.
+
+STEP 30
+ADD p6536-9 6536 darkgray
+ADD p6536-10 6536 darkgray
+ADD p2780-11 2780 black
+ADD p2780-12 2780 black
+CONNECT p2780-11.pin1 -> p6536-9.hole1 STIFF
+CONNECT p2780-12.pin2 -> p6536-10.hole1 STIFF
+CONNECT p44294-3.axle1 -> p6536-9.axlehole1 LOCKED
+CONNECT p44294-4.axle7 -> p6536-10.axlehole1 LOCKED
+WHY Fits two dark-grey perpendicular axle connectors to the exposed lower pivot ends, each preloaded with a black pin for the later outer brace.
+
+STEP 31
+ADD p32523-1 32523 white
+ADD p2780-13 2780 black
+ADD p2780-14 2780 black
+CONNECT p2780-13.pin1 -> p32523-1.hole3 STIFF
+CONNECT p2780-14.pin1 -> p32523-1.hole2 STIFF
+CONNECT p2780-13.pin2 -> p40490-4.hole3 STIFF
+CONNECT p2780-14.pin2 -> p40490-4.hole4 STIFF
+WHY Pins the white three-hole beam onto the black crossbeam using two black friction pins, leaving its first hole open for a later shaft.
+
+STEP 32
+ADD p6558-13 6558 blue
+ADD p6558-14 6558 blue
+CONNECT p6558-13.pin2 -> p64178-1.hole28 STIFF
+CONNECT p6558-14.pin2 -> p64178-1.hole27 STIFF
+WHY Inserts two blue three-length friction pins into the remaining forward-facing frame holes to prepare attachment points for the next chassis module.
+
+STEP 33
+ADD p44294-5 44294 lightgray
+ADD p32054-1 32054 lightgray
+CONNECT p44294-5.axle1 -> p32054-1.axlehole1 LOCKED
+WHY Starts the gearbox module by fitting the bush end of a grey long pin onto the end of a grey seven-length axle, with the pin pointing outwards.
+
+STEP 34
+ADD p32184-2 32184 darkgray
+ADD p44294-6 44294 lightgray
+CONNECT p44294-5.axle2 -> p32184-2.axlehole2 LOCKED
+CONNECT p44294-6.axle2 -> p32184-2.axlehole1 LOCKED
+WHY Slides a dark-grey double perpendicular connector onto the first axle and threads a second grey seven-length axle through its other cross hole, keeping the shafts parallel.
+
+STEP 35
+ADD p63869-1 63869 lightgray
+ADD p32140-1 32140 lightgray
+CONNECT p44294-5.axle3 -> p63869-1.axlehole1 LOCKED
+CONNECT p44294-6.axle3 -> p32140-1.axlehole1 LOCKED
+WHY Adds the grey triple connector to the lower shaft and the grey L-shaped liftarm to the upper shaft, orienting their round holes as pictured to form the first gearbox support.
+
+STEP 36
+ADD p32184-3 32184 darkgray
+ADD p87082-1 87082 lightgray
+CONNECT p44294-5.axle4 -> p32184-3.axlehole2 LOCKED
+CONNECT p44294-6.axle4 -> p32184-3.axlehole1 LOCKED
+CONNECT p87082-1.pin1 -> p32140-1.hole1 STIFF
+WHY Slides a second dark-grey double perpendicular connector onto both parallel shafts, then inserts one end of the grey double-pin connector into the L-shaped liftarm for the opposite side wall.
+
+STEP 37
+ADD p32524-3 32524 lightgray
+ADD p48989-1 48989 lightgray
+CONNECT p44294-5.axle5 -> p32524-3.hole2 TURNS
+CONNECT p44294-6.axle5 -> p32524-3.hole4 TURNS
+CONNECT p87082-1.pin2 -> p32524-3.hole5 STIFF
+CONNECT p44294-5.axle6 -> p48989-1.hole2 TURNS
+CONNECT p48989-1.pin3 -> p32524-3.hole3 STIFF
+CONNECT p48989-1.pin4 -> p32524-3.hole1 STIFF
+WHY Closes the gearbox support with a grey seven-hole liftarm and a grey four-pin hub. The two shafts pass through round holes while the hub pins and double-pin connector hold the wall in place.
+
+STEP 38
+ADD p32054-2 32054 lightgray
+ADD p3713-3 3713 red
+CONNECT p44294-5.axle7 -> p32054-2.axlehole1 LOCKED
+CONNECT p44294-6.axle6 -> p3713-3.axlehole1 LOCKED
+WHY Fits a grey long pin with bush to the exposed lower shaft end and a red bush to the upper shaft, retaining the gearbox support layers while leaving the long pin available for mounting.
+
+STEP 39
+ADD p87083-1 87083 darkgray
+ADD p94925-1 94925 lightgray
+ADD p10928-2 10928 darkgray
+CONNECT p87083-1.axle4 -> p63869-1.hole1 TURNS
+CONNECT p87083-1.axle3 -> p94925-1.axlehole1 LOCKED
+CONNECT p87083-1.axle2 -> p10928-2.axlehole1 LOCKED
+WHY Inserts a dark-grey stopped four-length shaft through the lower round support hole, then slides on the grey sixteen-tooth and dark-grey eight-tooth gears. Both gears lock to this shaft; they do not mesh with each other.
+
+STEP 40
+ADD p59443-1 59443 black
+ADD p4519-9 4519 lightgray
+CONNECT p87083-1.axle1 -> p59443-1.axlehole2 LOCKED
+CONNECT p4519-9.axle1 -> p59443-1.axlehole1 LOCKED
+WHY Joins a grey three-length axle to the geared shaft using a black two-length axle connector, extending the gearbox input without changing its rotational coupling.
+
