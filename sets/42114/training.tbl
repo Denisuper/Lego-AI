@@ -4902,3 +4902,209 @@ ATTACH front-grille-module
 CONNECT p15100-9.pin1 -> p24119-1.hole3 STIFF
 CONNECT p15100-10.pin1 -> p24119-1.hole8 STIFF
 WHY Lowers the assembled front grille and roller linkage onto the two mounting sockets of the yellow curved front chassis panel.
+
+STEP 440
+GROUP white-engine-front-support
+ADD p32523-26 32523 green
+ADD p2780-231 2780 black
+ADD p2780-232 2780 black
+ADD p2780-233 2780 black
+ADD p62462-14 62462 white
+ADD p62462-15 62462 white
+ADD p62462-16 62462 white
+ADD p61184-2 61184 lightgray
+ADD p61184-3 61184 lightgray
+CONNECT p2780-233.pin1 -> p32523-26.hole2 STIFF
+CONNECT p2780-233.pin2 -> p62462-16.hole1~ STIFF
+CONNECT p61184-2.pin1 -> p32523-26.hole3 STIFF
+CONNECT p61184-3.pin1 -> p32523-26.hole1 STIFF
+CONNECT p2780-231.pin1 -> p62462-14.hole1~ STIFF
+CONNECT p2780-232.pin1 -> p62462-15.hole1~ STIFF
+CONNECT p61184-2.bar1~ -> p2780-231.barhole1 TURNS
+CONNECT p61184-3.bar1~ -> p2780-232.barhole1 TURNS
+WHY Builds the green-and-white front support with three white sleeves, two grey bar pins and three black pins. The bars locate the outer sleeves through the central bores of their black pins; insertion depths are estimated.
+
+STEP 441
+END
+ATTACH white-engine-front-support
+CONNECT p2780-231.pin2 -> p62462-3.hole1~ STIFF
+CONNECT p2780-232.pin2 -> p62462-4.hole1~ STIFF
+WHY Swings the front grille open and seats the white support assembly into the two existing black sleeves at the front of the engine.
+
+STEP 442
+ADD p2780-234 2780 black
+ADD p62462-17 62462 orange
+ADD engine-front-top-tile 26603 black
+CONNECT p2780-234.pin1 -> p62462-17.hole1~ STIFF
+CONNECT p2780-234.pin2 -> p18945-1.hole16 STIFF
+CONNECT engine-front-top-tile.? -> p61184-2.? STIFF
+CONNECT engine-front-top-tile.? -> p61184-3.? STIFF
+WHY Adds an orange sleeve on a black pin at the side-panel corner and presses the black two-by-three tile across the two grey half-pin studs above the white support.
+
+STEP 443
+GROUP right-engine-fan-panel
+ADD p32140-22 32140 black
+ADD p43093-58 43093 blue
+CONNECT p43093-58.axle1 -> p32140-22.axlehole1 LOCKED
+WHY Starts the black engine fan panel with a blue axle-pin in the cross hole of a short black L-shaped beam.
+
+STEP 444
+ADD p11214-27 11214 red
+ADD p60483-24 60483 black
+CONNECT p11214-27.axle1 -> p60483-24.axlehole1 LOCKED
+CONNECT p11214-27.pin1 -> p32140-22.hole3 STIFF
+WHY Adds a black two-hole link on a red axle-pin at the lower end of the L-shaped fan-panel carrier.
+
+STEP 445
+ADD p11214-28 11214 red
+ADD p60483-25 60483 black
+CONNECT p11214-28.axle1 -> p60483-25.axlehole1 LOCKED
+CONNECT p11214-28.pin1 -> p32140-22.hole2 STIFF
+CONNECT p11214-27.pin2 -> p60483-25.hole1 STIFF
+CONNECT p11214-28.pin2 -> p60483-24.hole1 STIFF
+WHY Fits the second red axle-pin and black link in the opposite direction, crossing the two pin ends through the neighbouring links to brace the carrier.
+
+STEP 446
+ADD p42924-129 42924 blue
+CONNECT p42924-129.pin2 -> p32140-22.hole1 STIFF
+WHY Adds a blue three-length pin beside the red axle-pins to receive both long black fan-panel rails.
+
+STEP 447
+ADD p32524-19 32524 black
+CONNECT p43093-58.pin1 -> p32524-19.hole6 STIFF
+CONNECT p42924-129.pin1 -> p32524-19.hole7 STIFF
+WHY Fits the first black seven-hole rail onto the prepared blue pin ends.
+
+STEP 448
+ADD p32184-12 32184 black
+ADD p43093-59 43093 blue
+ADD p43093-60 43093 blue
+CONNECT p43093-59.axle1 -> p32184-12.axlehole2 LOCKED
+CONNECT p43093-60.axle1 -> p32184-12.axlehole1 LOCKED
+CONNECT p43093-59.pin1 -> p32524-19.hole5 STIFF
+CONNECT p43093-60.pin1 -> p32524-19.hole3 STIFF
+WHY Mounts two blue axle-pins in a black cross-block connector and pins it behind the middle of the long black rail.
+
+STEP 449
+ADD p11214-29 11214 red
+ADD p60483-26 60483 black
+ADD p42924-130 42924 blue
+CONNECT p11214-29.axle1 -> p60483-26.axlehole1 LOCKED
+CONNECT p42924-130.pin2 -> p60483-26.hole1 STIFF
+CONNECT p11214-29.pin1 -> p32524-19.hole1 STIFF
+CONNECT p42924-130.pin1 -> p32524-19.hole2 STIFF
+WHY Builds a red axle-pin, black link and blue pin fitting at the other end of the fan-panel rail.
+
+STEP 450
+ADD p32524-20 32524 black
+CONNECT p42924-130.pin3 -> p32524-20.hole2 STIFF
+CONNECT p42924-129.pin3 -> p32524-20.hole7 STIFF
+WHY Adds the second black seven-hole rail to the exposed ends of the two blue three-length pins.
+
+STEP 451
+ADD p4274-28 4274 blue
+CONNECT p4274-28.pin2 -> p32524-20.hole1 TURNS
+ADD p4274-29 4274 blue
+CONNECT p4274-29.pin2 -> p32524-20.hole4 TURNS
+ADD p4274-30 4274 blue
+CONNECT p4274-30.pin2 -> p32524-20.hole5 TURNS
+ADD p4274-31 4274 blue
+CONNECT p4274-31.pin2 -> p32524-20.hole6 TURNS
+WHY Inserts four blue half pins into the outer fan-panel rail to provide studs for the black edge tiles.
+
+STEP 452
+ADD fan-panel-tile-1 2431 black
+ADD fan-panel-tile-2 2431 black
+CONNECT fan-panel-tile-1.? -> p4274-28.? STIFF
+CONNECT fan-panel-tile-1.? -> p4274-29.? STIFF
+CONNECT fan-panel-tile-2.? -> p4274-30.? STIFF
+CONNECT fan-panel-tile-2.? -> p4274-31.? STIFF
+WHY Presses two long black tiles onto the half-pin studs along the outer edge; their clutch locations remain unnamed.
+
+STEP 453
+ADD p60483-27 60483 black
+ADD p2780-235 2780 black
+ADD p43093-61 43093 blue
+CONNECT p43093-61.axle1 -> p60483-27.axlehole1 LOCKED
+CONNECT p2780-235.pin2 -> p60483-27.hole1 STIFF
+CONNECT p2780-235.pin1 -> p32140-22.hole4 STIFF
+WHY Adds the upright black end fitting with a short black pin and blue axle-pin for mounting the fan panel to the yellow side panel.
+
+STEP 454
+ADD engine-fan-1 46667 black
+CONNECT engine-fan-1.? -> p32184-12.hole1 TURNS
+WHY Inserts the black ten-blade fan into the round centre hole of the black cross block, leaving it free to turn. The fan pin has no catalog endpoint.
+
+STEP 455
+END
+ATTACH right-engine-fan-panel
+CONNECT p11214-29.pin2 -> p18945-1.hole17 STIFF
+CONNECT p43093-61.pin1 -> p18945-1.hole4 STIFF
+WHY Fits the completed black fan panel onto the two yellow side-panel mounting sockets beside the engine.
+
+STEP 456
+GROUP left-engine-fan-panel
+ADD p42003-15 42003 black
+ADD p18651-17 18651 black
+CONNECT p18651-17.axle2 -> p42003-15.axlehole1 LOCKED
+WHY Starts the opposite engine fan bracket by passing a black three-length axle-pin through the cross bore of a black perpendicular connector.
+
+STEP 457
+ADD p6632-15 6632 black
+ADD p6632-16 6632 black
+CONNECT p18651-17.axle1 -> p6632-15.axlehole2~ LOCKED
+CONNECT p18651-17.axle1 -> p6632-16.axlehole2~ LOCKED
+WHY Stacks two black thin three-hole links on the projecting axle end, keeping the insertion depths explicit.
+
+STEP 458
+ADD p43093-62 43093 blue
+ADD p18651-18 18651 black
+ADD p18654-35 18654 black
+CONNECT p43093-62.axle1 -> p6632-15.axlehole1~ LOCKED
+CONNECT p43093-62.axle1 -> p6632-16.axlehole1~ LOCKED
+CONNECT p18651-18.pin1 -> p6632-15.hole1~ STIFF
+CONNECT p18651-18.pin1 -> p6632-16.hole1~ STIFF
+CONNECT p18651-18.axle2 -> p18654-35.hole1 TURNS
+WHY Adds a blue axle-pin at the upper ends of the paired links and a black axle-pin through their middle holes, then slides a black sleeve onto its shaft.
+
+STEP 459
+ADD p32140-23 32140 black
+CONNECT p18651-17.pin1 -> p32140-23.hole3 STIFF
+CONNECT p18651-18.axle1 -> p32140-23.hole4 TURNS
+WHY Fits a black L-shaped beam across the lower pin and sleeved shaft to form the second fan carrier.
+
+STEP 460
+ADD p4274-32 4274 blue
+ADD p4274-33 4274 blue
+CONNECT p4274-32.pin2 -> p32140-23.hole2 TURNS
+CONNECT p4274-33.pin2 -> p32140-23.hole1 TURNS
+WHY Adds two blue half pins in the long arm of the L-shaped carrier, leaving their stud ends exposed.
+
+STEP 461
+ADD p11214-30 11214 red
+ADD p18654-36 18654 black
+CONNECT p11214-30.axle1 -> p32140-23.axlehole1 LOCKED
+CONNECT p11214-30.pin1 -> p18654-36.hole1 STIFF
+WHY Inserts a red axle-pin into the far cross hole of the carrier and slides a black sleeve over its inner round section.
+
+STEP 462
+ADD left-fan-panel-tile 63864 metallicsilver
+CONNECT left-fan-panel-tile.? -> p4274-32.? STIFF
+CONNECT left-fan-panel-tile.? -> p4274-33.? STIFF
+WHY Presses the silver three-stud tile onto the exposed half-pin studs to finish the outer edge of the second fan carrier.
+
+STEP 463
+ADD p60483-28 60483 black
+ADD p43093-63 43093 blue
+ADD engine-fan-2 46667 black
+CONNECT p43093-63.axle1 -> p60483-28.axlehole1 LOCKED
+CONNECT p11214-30.pin2 -> p60483-28.hole1 STIFF
+CONNECT engine-fan-2.? -> p42003-15.hole1~ TURNS
+WHY Fits the remaining black fan into the perpendicular connector and adds the black end link with its blue mounting pin. The fan pin is uncataloged and its selected carrier hole is estimated.
+
+STEP 464
+END
+ATTACH left-engine-fan-panel
+CONNECT p43093-62.pin1 -> p18945-2.hole4 STIFF
+CONNECT p43093-63.pin1 -> p39794-2.hole19 STIFF
+WHY Turns the model and installs the second fan bracket beside the silver pipework, engaging its blue pins with the yellow side panel and black engine-cradle frame.
