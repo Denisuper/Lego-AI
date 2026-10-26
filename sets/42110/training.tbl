@@ -2362,3 +2362,184 @@ CONNECT p87083-7.axle1 -> p18948-1.axlehole2 LOCKED
 MESH p18946-10.teeth p18575-7.teeth
 WHY Adds a freely rotating red sixteen-tooth clutch gear and a white three-length driving-ring connector to the right stopped shaft. The red gear meshes diagonally with the tan twenty-tooth gear below; its round bore remains free while the white connector locks to the shaft.
 
+STEP 224
+GROUP central-front-bearing-wall
+ADD p32013-8 32013 darkgray
+ADD p3705-9 3705 red
+ADD p2780-59 2780 black
+CONNECT p3705-9.axle1 -> p32013-8.axlehole1 LOCKED
+CONNECT p2780-59.pin1 -> p32013-8.hole1 STIFF
+WHY Starts the central gearbox front bearing wall with a red four-length shaft in a dark-grey axle connector and a black friction pin through its round hole.
+
+STEP 225
+ADD p63869-14 63869 lightgray
+ADD p6536-31 6536 darkgray
+CONNECT p3705-9.axle2 -> p63869-14.axlehole1 LOCKED
+CONNECT p3705-9.axle3 -> p6536-31.axlehole1 LOCKED
+WHY Slides a grey triple perpendicular connector and a dark-grey perpendicular connector onto the red shaft, orienting their round bearing holes as shown.
+
+STEP 226
+ADD p32013-9 32013 darkgray
+CONNECT p3705-9.axle4 -> p32013-9.axlehole1 LOCKED
+WHY Fits the second dark-grey axle connector onto the remaining red shaft end, closing the row of front bearing supports.
+
+STEP 227
+ADD p41239-1 41239 black
+ADD p43093-32 43093 blue
+ADD p11214-1 11214 red
+CONNECT p2780-59.pin2 -> p41239-1.hole4 STIFF
+CONNECT p43093-32.pin1 -> p41239-1.hole5 STIFF
+CONNECT p11214-1.pin1 -> p41239-1.hole9 STIFF
+CONNECT p11214-1.pin2 -> p32013-9.hole1 STIFF
+WHY Pins the black thirteen-hole beam onto the waiting black friction pin and adds a blue axle-pin and red long axle-pin in the indicated holes. The red pin passes through both the beam and the dark-grey end connector to lock that end of the bearing wall.
+
+STEP 228
+ADD p6536-32 6536 darkgray
+ADD p6536-33 6536 darkgray
+CONNECT p43093-32.axle1 -> p6536-32.axlehole1 LOCKED
+CONNECT p11214-1.axle1 -> p6536-33.axlehole1 LOCKED
+END
+WHY Fits dark-grey perpendicular connectors to the exposed blue and red axle ends on the front of the thirteen-hole beam, completing the bearing wall with two additional round mounting holes.
+
+STEP 229
+ATTACH central-front-bearing-wall
+CONNECT p3706-5.axle1 -> p63869-14.hole3 TURNS
+CONNECT p3706-6.axle1 -> p63869-14.hole1 TURNS
+WHY Slides the completed front bearing wall over the projecting ends of the two black six-length gear shafts, capturing them in the outer round holes of the grey triple connector while leaving both shafts free to turn.
+
+STEP 230
+ADD p32073-11 32073 yellow
+ADD p18575-8 18575 tan
+ADD p59443-11 59443 black
+ADD p3713-32 3713 red
+CONNECT p32073-11.axle5 -> p59443-11.axlehole1 LOCKED
+CONNECT p32073-11.axle4 -> p18575-8.axlehole1 LOCKED
+CONNECT p32073-11.axle3 -> p3713-32.axlehole1 LOCKED
+CONNECT p32062-17.axle2 -> p59443-11.axlehole2 LOCKED
+WHY Builds a yellow five-length shaft with a black axle connector, tan twenty-tooth bevel gear and red retaining bush, then connects it to the waiting red short axle to extend the brown gearbox shaft forwards.
+
+STEP 231
+ADD p35186-1 35186 yellow
+ADD p18948-2 18948 white
+CONNECT p87083-8.axle2~ -> p35186-1.hole1 TURNS
+CONNECT p35186-1.? -> p35185-1.? LOCKED
+CONNECT p87083-8.axle1 -> p18948-2.axlehole2 LOCKED
+WHY Fits the yellow driving-ring extension over the left stopped shaft against the blue clutch gear and adds the white driving-ring connector on the shaft end. The extension turns with the blue gear but remains free around the shaft; its clutch-dog interface is not cataloged and its bearing depth is estimated.
+
+STEP 232
+ADD central-driving-ring-one 18947 darkgray
+ADD central-driving-ring-two 18947 darkgray
+CONNECT central-driving-ring-one.? -> p18948-1.? LOCKED
+CONNECT central-driving-ring-two.? -> p18948-2.? LOCKED
+WHY Slides a dark-grey driving ring over each white connector, matching the pictured groove positions. Both rings turn with their shaft connectors while remaining free to slide axially into engagement; their spline interfaces are not named in the catalog.
+
+STEP 233
+ADD p44294-8 44294 lightgray
+ADD p3705-10 3705 red
+CONNECT p44294-8.axle1 -> p18948-1.axlehole1 LOCKED
+CONNECT p3705-10.axle1 -> p18948-2.axlehole1 LOCKED
+WHY Extends the right white connector with a grey seven-length shaft and the left white connector with a red four-length shaft, leaving both driving rings free to slide on their connectors.
+
+STEP 234
+ADD p18946-11 18946 red
+ADD p94925-12 94925 lightgray
+CONNECT p3705-10.axle2 -> p18946-11.hole1 TURNS
+CONNECT p3705-10.axle3 -> p94925-12.axlehole1 LOCKED
+MESH p18946-11.teeth p18575-8.teeth
+WHY Adds a freely rotating red sixteen-tooth clutch gear and a shaft-locked grey sixteen-tooth gear to the red four-length extension. The red gear meshes diagonally with the tan twenty-tooth gear on the neighbouring shaft; the two gears sharing the red shaft are not meshed together.
+
+STEP 235
+ADD p35186-2 35186 yellow
+ADD p18946-12 18946 red
+CONNECT p44294-8.axle2~ -> p35186-2.hole1 TURNS
+CONNECT p44294-8.axle3 -> p18946-12.hole1 TURNS
+CONNECT p35186-2.? -> p18946-12.? LOCKED
+MESH p18946-12.teeth p94925-12.teeth
+WHY Fits the second yellow driving-ring extension and red sixteen-tooth clutch gear over the grey seven-length shaft so both remain free around it. Their clutch dogs turn together and the red gear meshes with the grey sixteen-tooth gear on the adjacent red shaft; the dog surfaces are unnamed and extension seating is estimated.
+
+STEP 236
+GROUP central-shaft-bearing-frame
+ADD p3707-2 3707 red
+ADD p55013-4 55013 darkgray
+ADD p32184-16 32184 darkgray
+CONNECT p3707-2.axle8 -> p32184-16.axlehole2 LOCKED
+CONNECT p55013-4.axle8~ -> p32184-16.axlehole1 LOCKED
+WHY Starts the gearbox shaft bearing frame with parallel red and stopped dark-grey eight-length axles through the two cross holes of a perpendicular connector. The stopped axle seating is estimated.
+
+STEP 237
+ADD p3713-33 3713 red
+ADD p60483-24 60483 black
+ADD p32184-17 32184 darkgray
+CONNECT p3707-2.axle7 -> p3713-33.axlehole1 LOCKED
+CONNECT p55013-4.axle7~ -> p60483-24.axlehole1 LOCKED
+CONNECT p3707-2.axle6 -> p32184-17.axlehole2 LOCKED
+CONNECT p55013-4.axle6~ -> p32184-17.axlehole1 LOCKED
+WHY Adds a red bush to the red axle and a black two-hole connector to the stopped axle, then bridges both axles with the second perpendicular connector. Orient its round bearing hole as pictured; stopped-axle depths remain estimated.
+
+STEP 238
+ADD p32184-18 32184 darkgray
+ADD p3713-34 3713 red
+CONNECT p3707-2.axle5 -> p32184-18.axlehole1 LOCKED
+CONNECT p55013-4.axle5~ -> p3713-34.axlehole1 LOCKED
+WHY Adds an outward-facing perpendicular connector on the red axle and a red spacing bush on the stopped axle, preserving the offset cross hole for a later shaft.
+
+STEP 239
+ADD p6536-34 6536 darkgray
+ADD p6536-35 6536 darkgray
+CONNECT p3707-2.axle4 -> p6536-34.axlehole1 LOCKED
+CONNECT p55013-4.axle4~ -> p6536-35.axlehole1 LOCKED
+WHY Fits one single perpendicular connector to each axle, aligning their round holes to receive later shafts. The stopped axle seating remains estimated.
+
+STEP 240
+ADD p32184-19 32184 darkgray
+ADD p3713-35 3713 red
+CONNECT p3707-2.axle3 -> p32184-19.axlehole1 LOCKED
+CONNECT p55013-4.axle3~ -> p3713-35.axlehole1 LOCKED
+WHY Adds the second outward-facing double perpendicular connector to the red axle and a second red bush to the stopped axle, spacing the upper bearing positions.
+
+STEP 241
+ADD p32184-20 32184 darkgray
+ADD p60483-25 60483 black
+CONNECT p3707-2.axle2 -> p32184-20.axlehole2 LOCKED
+CONNECT p55013-4.axle2~ -> p32184-20.axlehole1 LOCKED
+CONNECT p55013-4.axle1~ -> p60483-25.axlehole1 LOCKED
+END
+WHY Bridges both axles with the final perpendicular connector and caps the stopped axle with a black two-hole connector, completing the bearing frame. Keep its round holes in the orientations shown and treat stopped-axle seating as estimated.
+
+STEP 242
+ATTACH central-shaft-bearing-frame
+CONNECT p44294-8.axle4 -> p32184-19.hole1 TURNS
+CONNECT p3705-10.axle4 -> p32184-18.hole1 TURNS
+CONNECT p32073-11.axle2 -> p32184-17.hole1 TURNS
+WHY Slides the completed bearing frame over the projecting grey, red and yellow gearbox shafts. Its round holes support these shafts without locking their rotation, holding the front gears and spacers at the pictured positions.
+
+STEP 243
+ADD p18654-7 18654 black
+ADD p18575-9 18575 tan
+CONNECT p44294-8.axle5 -> p18654-7.hole1 TURNS
+CONNECT p44294-8.axle6 -> p18575-9.axlehole1 LOCKED
+WHY Slides a black round spacer and tan twenty-tooth bevel gear onto the projecting grey shaft. Seat the gear flush with the axle end as highlighted; the spacer has a round bore and the gear turns with the axle.
+
+STEP 244
+ADD p6558-35 6558 blue
+ADD p6558-36 6558 blue
+CONNECT p6558-35.pin2 -> p32140-9.hole4 STIFF
+CONNECT p6558-36.pin2 -> p32140-8.hole4 STIFF
+WHY Pushes a blue three-length friction pin through the upper round hole of each grey L-shaped support, leaving pin ends available for the gearbox side bracing.
+
+STEP 245
+ADD p24316-10 24316 brown
+ADD p24316-11 24316 brown
+ADD p32184-21 32184 darkgray
+CONNECT p24316-10.axle3 -> p63869-13.hole3 TURNS
+CONNECT p24316-11.axle3 -> p63869-13.hole1 TURNS
+CONNECT p24316-10.axle2 -> p32184-21.axlehole1 LOCKED
+CONNECT p24316-11.axle2 -> p32184-21.axlehole2 LOCKED
+WHY Inserts two brown stopped three-length axles through the outer round holes of the grey triple connector and joins them with a dark-grey double perpendicular connector. The axles can turn in the grey round bearings but turn together with the dark-grey connector.
+
+STEP 246
+ADD p4519-32 4519 lightgray
+CONNECT p4519-32.axle1 -> p32184-19.axlehole2 LOCKED
+CONNECT p4519-32.axle3 -> p32184-18.axlehole2 LOCKED
+WHY Passes a grey three-length axle through the remaining cross holes of the two offset perpendicular connectors on the bearing frame, tying those supports together while leaving the pictured end exposed.
+
