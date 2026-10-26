@@ -5318,3 +5318,278 @@ CONNECT p6558-87.pin3 -> p63869-20.hole1 STIFF
 CONNECT p2780-151.pin2 -> p63869-20.hole3 STIFF
 WHY Fits the completed rear quarter-window surround onto the five highlighted mounting points: four pins along the rear lamp pillar and the black pin on the cabin pillar.
 
+STEP 521
+GROUP right-rear-wheel-arch-support
+ADD p32278-11 32278 olivegreen
+ADD p87083-15 87083 darkgray
+ADD p61184-1 61184 lightgray
+ADD p60483-49 60483 olivegreen
+CONNECT p87083-15.axle4 -> p32278-11.hole14 TURNS
+CONNECT p61184-1.pin1 -> p32278-11.hole15 STIFF
+CONNECT p87083-15.axle3 -> p60483-49.axlehole1 LOCKED
+WHY Starts the right rear wheel-arch support with an olive fifteen-hole beam, dark-grey stopped axle and grey pin with a long bar extension. Adds the olive two-hole cross connector over the axle while the grey bar passes through its adjacent round bore; the narrow bar only passes loosely through this larger bore, so this clearance is not recorded as a fitted CONNECT joint.
+
+STEP 522
+ADD p60483-50 60483 olivegreen
+ADD p32140-23 32140 olivegreen
+ADD p2780-161 2780 black
+CONNECT p2780-161.pin1 -> p32140-23.hole4 STIFF
+CONNECT p2780-161.pin2 -> p60483-50.hole1 STIFF
+CONNECT p87083-15.axle2 -> p60483-50.axlehole1 LOCKED
+CONNECT p87083-15.axle1 -> p32140-23.hole3 TURNS
+WHY Builds the olive L bracket and second olive two-hole connector with a black friction pin, then guides both onto the waiting stopped axle. Its cross connector locks the axle while the L bracket round bore permits rotation.
+
+STEP 523
+ADD p11946-5 11946 olivegreen
+ADD p43093-55 43093 blue
+CONNECT p43093-55.axle1 -> p11946-5.axlehole1 LOCKED
+CONNECT p43093-55.pin1 -> p32278-11.hole1 STIFF
+WHY Adds the small olive fairing panel with sticker 21 and a blue axle-pin to the opposite end of the long beam.
+
+STEP 524
+ADD p43093-56 43093 blue
+ADD p43093-57 43093 blue
+ADD p32184-39 32184 darkgray
+ADD p43093-58 43093 blue
+ADD p43093-59 43093 blue
+ADD p32184-40 32184 darkgray
+CONNECT p43093-56.axle1 -> p32184-39.axlehole2 LOCKED
+CONNECT p43093-57.axle1 -> p32184-39.axlehole1 LOCKED
+CONNECT p43093-58.axle1 -> p32184-40.axlehole2 LOCKED
+CONNECT p43093-59.axle1 -> p32184-40.axlehole1 LOCKED
+CONNECT p43093-56.pin1 -> p32278-11.hole3 STIFF
+CONNECT p43093-57.pin1 -> p32278-11.hole5 STIFF
+CONNECT p43093-58.pin1 -> p32278-11.hole11 STIFF
+CONNECT p43093-59.pin1 -> p32278-11.hole13 STIFF
+WHY Builds two dark-grey cross connectors with two blue axle-pins apiece, then mounts their four round pin ends into the illustrated holes of the long olive beam.
+
+STEP 525
+ADD p4274-19 4274 lightgray
+ADD p4274-20 4274 lightgray
+ADD p4274-21 4274 lightgray
+ADD p4274-22 4274 lightgray
+ADD p4274-23 4274 lightgray
+CONNECT p4274-19.pin1 -> p32278-11.hole2~ TURNS
+CONNECT p4274-20.pin1 -> p32278-11.hole4~ TURNS
+CONNECT p4274-21.pin1 -> p32278-11.hole7~ TURNS
+CONNECT p4274-22.pin1 -> p32278-11.hole8~ TURNS
+CONNECT p4274-23.pin1 -> p32278-11.hole12~ TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+
+STEP 526
+ADD p22961-10 22961 red
+ADD p32054-33 32054 lightgray
+CONNECT p32054-33.pin1 -> p22961-10.hole1 STIFF
+CONNECT p22961-10.axle1 -> p32140-23.axlehole1 LOCKED
+WHY Fits the grey long friction pin through the red perpendicular axle connector, then keys the red axle end into the olive L bracket cross socket. The grey pin tail remains accessible for the later inward push.
+
+STEP 527
+ADD p6558-106 6558 blue
+ADD p6558-107 6558 blue
+CONNECT p6558-106.pin2 -> p32184-40.hole1 STIFF
+CONNECT p6558-107.pin2 -> p32184-39.hole1 STIFF
+END
+WHY Turns the arch support over and slides a blue long friction pin through the central round bore of each dark-grey cross connector, leaving tails on both sides for mounting and the fender.
+
+STEP 528
+ATTACH right-rear-wheel-arch-support
+CONNECT p6558-106.pin1 -> p32526-8.hole2 STIFF
+CONNECT p6558-107.pin1 -> p32526-10.hole7 STIFF
+WHY Installs the wheel-arch support onto the two indicated black L-brace holes beside the rear wheel, using the inner ends of its two long blue pins.
+
+STEP 529
+CONNECT p32054-33.pin2 -> p32184-33.hole1 STIFF
+WHY Tilts the vehicle to reach the grey long pin and pushes it inward through the red connector into the dark-grey pillar connector round hole, securing the front end of the arch support.
+
+STEP 530
+ADD p3460-1 3460 olivegreen
+ADD p3460-2 3460 olivegreen
+ADD p85984-1 85984 olivegreen
+ADD p85984-2 85984 olivegreen
+ADD p85984-3 85984 olivegreen
+ADD p85984-4 85984 olivegreen
+ADD p85984-5 85984 olivegreen
+ADD p85984-6 85984 olivegreen
+ADD p85984-7 85984 olivegreen
+ADD p54200-1 54200 olivegreen
+ADD p54200-2 54200 olivegreen
+CONNECT p85984-1.? -> p3460-1.? STIFF
+CONNECT p85984-2.? -> p3460-1.? STIFF
+CONNECT p85984-3.? -> p3460-1.? STIFF
+CONNECT p85984-4.? -> p3460-1.? STIFF
+CONNECT p85984-5.? -> p3460-2.? STIFF
+CONNECT p85984-6.? -> p3460-2.? STIFF
+CONNECT p85984-7.? -> p3460-2.? STIFF
+CONNECT p85984-1.? -> p3460-2.? STIFF
+CONNECT p54200-1.? -> p3460-1.? STIFF
+CONNECT p54200-2.? -> p3460-2.? STIFF
+CONNECT p3460-2.? -> p4274-19.? STIFF
+CONNECT p3460-2.? -> p4274-20.? STIFF
+CONNECT p3460-2.? -> p4274-21.? STIFF
+CONNECT p3460-1.? -> p4274-22.? STIFF
+CONNECT p3460-1.? -> p4274-23.? STIFF
+WHY Builds the long olive trim strip from two one-by-eight plates, seven two-stud slopes and two one-stud end slopes. The centre slope bridges the plate seam; all ordinary stud interfaces remain unnamed in the catalog. Presses the finished strip onto the five exposed half-pin studs along the wheel-arch support.
+
+STEP 531
+GROUP left-rear-wheel-arch-support
+ADD p32278-12 32278 olivegreen
+ADD p87083-16 87083 darkgray
+ADD p61184-2 61184 lightgray
+ADD p60483-51 60483 olivegreen
+CONNECT p87083-16.axle4 -> p32278-12.hole14 TURNS
+CONNECT p61184-2.pin1 -> p32278-12.hole15 STIFF
+CONNECT p87083-16.axle3 -> p60483-51.axlehole1 LOCKED
+WHY Starts the left rear wheel-arch support with an olive fifteen-hole beam, dark-grey stopped axle and grey pin with a long bar extension. Adds the olive two-hole cross connector over the axle while the grey bar passes through its adjacent round bore; the narrow bar only passes loosely through this larger bore, so this clearance is not recorded as a fitted CONNECT joint.
+
+STEP 532
+ADD p4274-24 4274 lightgray
+ADD p4274-25 4274 lightgray
+ADD p4274-26 4274 lightgray
+ADD p4274-27 4274 lightgray
+ADD p4274-28 4274 lightgray
+CONNECT p4274-24.pin1 -> p32278-12.hole2~ TURNS
+CONNECT p4274-25.pin1 -> p32278-12.hole4~ TURNS
+CONNECT p4274-26.pin1 -> p32278-12.hole7~ TURNS
+CONNECT p4274-27.pin1 -> p32278-12.hole8~ TURNS
+CONNECT p4274-28.pin1 -> p32278-12.hole12~ TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+
+STEP 533
+ADD p11947-5 11946 olivegreen
+ADD p43093-60 43093 blue
+CONNECT p43093-60.axle1 -> p11947-5.axlehole1 LOCKED
+CONNECT p43093-60.pin1 -> p32278-12.hole1 STIFF
+WHY Adds the small olive fairing panel with sticker 22 and a blue axle-pin to the opposite end of the long beam.
+
+STEP 534
+ADD p43093-61 43093 blue
+ADD p43093-62 43093 blue
+ADD p32184-41 32184 darkgray
+ADD p43093-63 43093 blue
+ADD p43093-64 43093 blue
+ADD p32184-42 32184 darkgray
+CONNECT p43093-61.axle1 -> p32184-41.axlehole2 LOCKED
+CONNECT p43093-62.axle1 -> p32184-41.axlehole1 LOCKED
+CONNECT p43093-63.axle1 -> p32184-42.axlehole2 LOCKED
+CONNECT p43093-64.axle1 -> p32184-42.axlehole1 LOCKED
+CONNECT p43093-61.pin1 -> p32278-12.hole3 STIFF
+CONNECT p43093-62.pin1 -> p32278-12.hole5 STIFF
+CONNECT p43093-63.pin1 -> p32278-12.hole11 STIFF
+CONNECT p43093-64.pin1 -> p32278-12.hole13 STIFF
+WHY Builds two dark-grey cross connectors with two blue axle-pins apiece, then mounts their four round pin ends into the illustrated holes of the long olive beam.
+
+STEP 535
+ADD p60483-52 60483 olivegreen
+ADD p32140-24 32140 olivegreen
+ADD p2780-162 2780 black
+CONNECT p2780-162.pin2 -> p32140-24.hole4 STIFF
+CONNECT p2780-162.pin1 -> p60483-52.hole1 STIFF
+CONNECT p87083-16.axle2 -> p60483-52.axlehole1 LOCKED
+CONNECT p87083-16.axle1 -> p32140-24.hole3 TURNS
+WHY Builds the olive L bracket and second olive two-hole connector with a black friction pin, then guides both onto the waiting stopped axle. Its cross connector locks the axle while the L bracket round bore permits rotation.
+
+STEP 536
+ADD p22961-11 22961 red
+ADD p32054-34 32054 lightgray
+CONNECT p32054-34.pin1 -> p22961-11.hole1 STIFF
+CONNECT p22961-11.axle1 -> p32140-24.axlehole1 LOCKED
+WHY Fits the grey long friction pin through the red perpendicular axle connector, then keys the red axle end into the olive L bracket cross socket. The grey pin tail remains accessible for the later inward push.
+
+STEP 537
+ADD p6558-108 6558 blue
+ADD p6558-109 6558 blue
+CONNECT p6558-108.pin2 -> p32184-42.hole1 STIFF
+CONNECT p6558-109.pin2 -> p32184-41.hole1 STIFF
+END
+WHY Turns the arch support over and slides a blue long friction pin through the central round bore of each dark-grey cross connector, leaving tails on both sides for mounting and the fender.
+
+STEP 538
+ATTACH left-rear-wheel-arch-support
+CONNECT p6558-108.pin1 -> p32526-9.hole2 STIFF
+CONNECT p6558-109.pin1 -> p32526-11.hole7 STIFF
+WHY Installs the wheel-arch support onto the two indicated black L-brace holes beside the rear wheel, using the inner ends of its two long blue pins.
+
+STEP 539
+CONNECT p32054-34.pin2 -> p32184-32.hole1 STIFF
+WHY Tilts the vehicle to reach the grey long pin and pushes it inward through the red connector into the dark-grey pillar connector round hole, securing the front end of the arch support.
+
+STEP 540
+ADD p32524-13 32524 olivegreen
+ADD p2780-163 2780 black
+CONNECT p2780-163.pin2 -> p32524-13.hole7 STIFF
+ADD p2780-164 2780 black
+CONNECT p2780-164.pin2 -> p32524-13.hole5 STIFF
+ADD p2780-165 2780 black
+CONNECT p2780-165.pin2 -> p32524-13.hole4 STIFF
+ADD p4274-29 4274 lightgray
+CONNECT p4274-29.pin1 -> p32524-13.hole6~ TURNS
+ADD p4274-30 4274 lightgray
+CONNECT p4274-30.pin1 -> p32524-13.hole1~ TURNS
+CONNECT p2780-163.pin1 -> p32013-13.hole1 STIFF
+CONNECT p2780-164.pin1 -> p11947-5.hole2 STIFF
+CONNECT p2780-165.pin1 -> p11947-5.hole1 STIFF
+ADD p32524-14 32524 olivegreen
+ADD p2780-166 2780 black
+CONNECT p2780-166.pin2 -> p32524-14.hole7 STIFF
+ADD p2780-167 2780 black
+CONNECT p2780-167.pin2 -> p32524-14.hole5 STIFF
+ADD p2780-168 2780 black
+CONNECT p2780-168.pin2 -> p32524-14.hole4 STIFF
+ADD p4274-31 4274 lightgray
+CONNECT p4274-31.pin1 -> p32524-14.hole6~ TURNS
+ADD p4274-32 4274 lightgray
+CONNECT p4274-32.pin1 -> p32524-14.hole1~ TURNS
+CONNECT p2780-166.pin1 -> p32013-14.hole1 STIFF
+CONNECT p2780-167.pin1 -> p11946-5.hole2 STIFF
+CONNECT p2780-168.pin1 -> p11946-5.hole1 STIFF
+WHY Builds two olive seven-hole rear corner strips, each with three black friction pins and two grey smooth half pins. Mounts them beside the rear lamp pillars through the fairing panel and cargo linkage round holes. Half-pin depths are estimated.
+
+STEP 541
+ADD p6636-1 6636 olivegreen
+ADD p6636-2 6636 olivegreen
+CONNECT p6636-1.? -> p4274-29.? STIFF
+CONNECT p6636-1.? -> p4274-30.? STIFF
+CONNECT p6636-2.? -> p4274-31.? STIFF
+CONNECT p6636-2.? -> p4274-32.? STIFF
+WHY Adds the two olive one-by-six tiles with sticker 3 to the exposed half-pin studs of the rear corner strips. Ordinary tile-to-stud clutch surfaces are not cataloged.
+
+STEP 542
+ADD p3460-3 3460 olivegreen
+ADD p3460-4 3460 olivegreen
+ADD p85984-8 85984 olivegreen
+ADD p85984-9 85984 olivegreen
+ADD p85984-10 85984 olivegreen
+ADD p85984-11 85984 olivegreen
+ADD p85984-12 85984 olivegreen
+ADD p85984-13 85984 olivegreen
+ADD p85984-14 85984 olivegreen
+ADD p54200-3 54200 olivegreen
+ADD p54200-4 54200 olivegreen
+CONNECT p85984-8.? -> p3460-3.? STIFF
+CONNECT p85984-9.? -> p3460-3.? STIFF
+CONNECT p85984-10.? -> p3460-3.? STIFF
+CONNECT p85984-11.? -> p3460-3.? STIFF
+CONNECT p85984-12.? -> p3460-4.? STIFF
+CONNECT p85984-13.? -> p3460-4.? STIFF
+CONNECT p85984-14.? -> p3460-4.? STIFF
+CONNECT p85984-8.? -> p3460-4.? STIFF
+CONNECT p54200-3.? -> p3460-3.? STIFF
+CONNECT p54200-4.? -> p3460-4.? STIFF
+CONNECT p3460-4.? -> p4274-24.? STIFF
+CONNECT p3460-4.? -> p4274-25.? STIFF
+CONNECT p3460-4.? -> p4274-26.? STIFF
+CONNECT p3460-3.? -> p4274-27.? STIFF
+CONNECT p3460-3.? -> p4274-28.? STIFF
+WHY Builds the long olive trim strip from two one-by-eight plates, seven two-stud slopes and two one-stud end slopes. The centre slope bridges the plate seam; all ordinary stud interfaces remain unnamed in the catalog. Presses the finished strip onto the five exposed half-pin studs along the wheel-arch support.
+
+STEP 543
+ADD p46882-1 46882 olivegreen
+ADD p46882-2 46882 olivegreen
+CONNECT p6558-106.pin3 -> p46882-1.hole2 STIFF
+CONNECT p6558-107.pin3 -> p46882-1.hole3 STIFF
+CONNECT p2780-143.pin2 -> p46882-1.hole1 STIFF
+CONNECT p6558-108.pin3 -> p46882-2.hole3 STIFF
+CONNECT p6558-109.pin3 -> p46882-2.hole2 STIFF
+CONNECT p2780-131.pin1 -> p46882-2.hole4 STIFF
+WHY Fits both olive rear mudguards over the long blue mounting-pin tails and the waiting lower black corner pins, enclosing the rear wheel openings on both sides.
+
