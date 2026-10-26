@@ -5378,3 +5378,223 @@ CONNECT p2780-254.pin1 -> p60483-29.hole1 STIFF
 CONNECT p32062-28.axle2 -> p60483-30.axlehole1 LOCKED
 CONNECT p2780-258.pin2 -> p60483-30.hole1 STIFF
 WHY Fits a grey two-hole link across each outer black pin and short red axle, tying both lower side supports to their paired thin-link pivots.
+
+STEP 486
+GROUP left-hood-side-panel
+ADD p42003-18 42003 yellow
+ADD p2780-259 2780 black
+ADD p2780-260 2780 black
+CONNECT p2780-259.pin1 -> p42003-18.hole2 STIFF
+CONNECT p2780-260.pin1 -> p42003-18.hole1 STIFF
+WHY Starts a yellow hood-side panel with two black pins in a yellow perpendicular connector.
+
+STEP 487
+ADD p40490-15 40490 yellow
+ADD p4274-34 4274 blue
+ADD p4274-35 4274 blue
+CONNECT p2780-259.pin2 -> p40490-15.hole2 STIFF
+CONNECT p2780-260.pin2 -> p40490-15.hole1 STIFF
+CONNECT p4274-34.pin2 -> p40490-15.hole9 TURNS
+CONNECT p4274-35.pin2 -> p40490-15.hole3 TURNS
+WHY Adds a yellow nine-hole beam to the two black pins and inserts two blue half pins for the smooth lower trim.
+
+STEP 488
+ADD p2780-261 2780 black
+ADD p2780-262 2780 black
+ADD p2780-263 2780 black
+ADD p2780-264 2780 black
+CONNECT p2780-261.pin2 -> p40490-15.hole8 STIFF
+CONNECT p2780-262.pin2 -> p40490-15.hole7 STIFF
+CONNECT p2780-263.pin2 -> p40490-15.hole6 STIFF
+CONNECT p2780-264.pin2 -> p40490-15.hole5 STIFF
+WHY Adds four black pins in the adjacent middle holes of the yellow side beam for two grey support blocks.
+
+STEP 489
+ADD p32557-1 32557 lightgray
+ADD p32557-2 32557 lightgray
+ADD left-hood-lower-tile 4162 yellow
+CONNECT p2780-261.pin1 -> p32557-1.hole3 STIFF
+CONNECT p2780-262.pin1 -> p32557-1.hole4 STIFF
+CONNECT p2780-263.pin1 -> p32557-2.hole3 STIFF
+CONNECT p2780-264.pin1 -> p32557-2.hole4 STIFF
+CONNECT left-hood-lower-tile.? -> p4274-34.? STIFF
+CONNECT left-hood-lower-tile.? -> p4274-35.? STIFF
+WHY Pins two grey support blocks onto the yellow beam and adds the long yellow tile to the two blue half-pin studs along its lower edge.
+
+STEP 490
+ADD p18944-1 18944 yellow
+ADD p87083-17 87083 darkgray
+ADD p15100-12 65487 yellow
+ADD p15100-13 65487 yellow
+CONNECT p87083-17.axle4 -> p15100-13.hole1 TURNS
+CONNECT p87083-17.axle3 -> p18944-1.hole2 TURNS
+CONNECT p87083-17.axle2 -> p15100-12.hole1 TURNS
+CONNECT p87083-17.axle1 -> p42003-18.axlehole1 LOCKED
+WHY Applies sticker 14 to the long curved yellow panel, threads a stopped grey axle through the panel end and two yellow pin-hole connectors, then seats the axle in the yellow end support.
+
+STEP 491
+ADD p15462-17 15462 brown
+ADD p32016-1 32016 lightgray
+ADD p43093-68 43093 blue
+ADD p6536-24 6536 yellow
+CONNECT p43093-68.axle1 -> p32016-1.axlehole2~ LOCKED
+CONNECT p43093-68.pin1 -> p6536-24.hole1 STIFF
+CONNECT p15462-17.axle1 -> p32016-1.axlehole1 LOCKED
+CONNECT p15462-17.axle2 -> p32557-1.hole2~ TURNS
+CONNECT p15462-17.axle4 -> p32557-2.hole2~ TURNS
+WHY Builds the grey angled end support with a blue axle-pin and yellow connector, then passes a stopped brown five-length axle through the grey support blocks into its cross bore. The blue bore selection and shaft depths through the blocks are estimated.
+
+STEP 492
+ADD p87083-18 87083 darkgray
+ADD p60483-31 60483 black
+CONNECT p87083-18.axle4 -> p60483-31.hole1 TURNS
+CONNECT p87083-18.axle3 -> p18944-1.hole1 TURNS
+CONNECT p87083-18.axle2 -> p6536-24.axlehole1 LOCKED
+WHY Fits a black two-hole link onto a stopped grey axle through its round hole, then passes the axle through the other panel end and the yellow support cross bore.
+
+STEP 493
+ADD p42003-19 42003 black
+ADD p4274-36 4274 lightgray
+ADD p4274-37 4274 lightgray
+ADD left-hood-headlight-1 98138 transclear
+ADD left-hood-headlight-2 98138 transclear
+CONNECT p4274-36.pin2 -> p42003-19.hole1 TURNS
+CONNECT p4274-37.pin2 -> p42003-19.hole2 TURNS
+CONNECT left-hood-headlight-1.? -> p4274-36.? STIFF
+CONNECT left-hood-headlight-2.? -> p4274-37.? STIFF
+CONNECT p87083-18.axle1 -> p42003-19.axlehole1 LOCKED
+WHY Builds two clear round headlights on grey half-pin studs in a black perpendicular block and slides the block onto the projecting grey axle end.
+
+STEP 494
+ADD p32062-30 32062 red
+ADD p92907-13 92907 black
+CONNECT p32062-30.axle1 -> p60483-31.axlehole1~ LOCKED
+CONNECT p32062-30.axle1 -> p92907-13.axlehole3~ LOCKED
+CONNECT p32062-30.axle2 -> p92907-13.axlehole4~ LOCKED
+WHY Adds the black forked connector and short red axle above the headlight end, locking them to the black end link. Shaft depths through the fork and link are estimated.
+
+STEP 495
+END
+ATTACH left-hood-side-panel
+CONNECT p15100-12.pin1 -> p32526-24.hole1 STIFF
+CONNECT p15100-13.pin1 -> p32526-24.hole3 STIFF
+WHY Fits the completed yellow hood-side panel onto the two sockets of the left black outer support, leaving the headlight and forked end free for the next connection.
+
+STEP 496
+ADD p32062-32 32062 red
+CONNECT p32062-32.axle1 -> p92907-13.axlehole1~ LOCKED
+CONNECT p32062-32.axle2 -> p92907-13.axlehole2~ LOCKED
+CONNECT p32062-32.axle1 -> p32271-2.axlehole2~ LOCKED
+WHY Locks the left headlight-end fork to the projecting grey bent support with a short red axle; the depths through the fork and bent arm remain estimated.
+
+STEP 497
+GROUP right-hood-side-panel
+ADD p42003-20 42003 yellow
+ADD p2780-265 2780 black
+ADD p2780-266 2780 black
+CONNECT p2780-265.pin2 -> p42003-20.hole2 STIFF
+CONNECT p2780-266.pin2 -> p42003-20.hole1 STIFF
+WHY Starts a yellow hood-side panel with two black pins in a yellow perpendicular connector.
+
+STEP 498
+ADD p40490-16 40490 yellow
+ADD p4274-38 4274 blue
+ADD p4274-39 4274 blue
+CONNECT p2780-265.pin1 -> p40490-16.hole2 STIFF
+CONNECT p2780-266.pin1 -> p40490-16.hole1 STIFF
+CONNECT p4274-38.pin2 -> p40490-16.hole9 TURNS
+CONNECT p4274-39.pin2 -> p40490-16.hole3 TURNS
+WHY Adds a yellow nine-hole beam to the two black pins and inserts two blue half pins for the smooth lower trim.
+
+STEP 499
+ADD p2780-267 2780 black
+ADD p2780-268 2780 black
+ADD p2780-269 2780 black
+ADD p2780-270 2780 black
+CONNECT p2780-267.pin1 -> p40490-16.hole8 STIFF
+CONNECT p2780-268.pin1 -> p40490-16.hole7 STIFF
+CONNECT p2780-269.pin1 -> p40490-16.hole6 STIFF
+CONNECT p2780-270.pin1 -> p40490-16.hole5 STIFF
+WHY Adds four black pins in the adjacent middle holes of the yellow side beam for two grey support blocks.
+
+STEP 500
+ADD p32557-3 32557 lightgray
+ADD p32557-4 32557 lightgray
+ADD right-hood-lower-tile 4162 yellow
+CONNECT p2780-267.pin2 -> p32557-3.hole4 STIFF
+CONNECT p2780-268.pin2 -> p32557-3.hole3 STIFF
+CONNECT p2780-269.pin2 -> p32557-4.hole4 STIFF
+CONNECT p2780-270.pin2 -> p32557-4.hole3 STIFF
+CONNECT right-hood-lower-tile.? -> p4274-38.? STIFF
+CONNECT right-hood-lower-tile.? -> p4274-39.? STIFF
+WHY Pins two grey support blocks onto the yellow beam and adds the long yellow tile to the two blue half-pin studs along its lower edge.
+
+STEP 501
+ADD p18944-2 18944 yellow
+ADD p87083-19 87083 darkgray
+ADD p15100-14 65487 yellow
+ADD p15100-15 65487 yellow
+CONNECT p87083-19.axle4 -> p15100-15.hole1 TURNS
+CONNECT p87083-19.axle3 -> p18944-2.hole2 TURNS
+CONNECT p87083-19.axle2 -> p15100-14.hole1 TURNS
+CONNECT p87083-19.axle1 -> p42003-20.axlehole1 LOCKED
+WHY Applies sticker 15 to the long curved yellow panel, threads a stopped grey axle through the panel end and two yellow pin-hole connectors, then seats the axle in the yellow end support.
+
+STEP 502
+ADD p15462-18 15462 brown
+ADD p32016-2 32016 lightgray
+ADD p43093-69 43093 blue
+ADD p6536-25 6536 yellow
+CONNECT p43093-69.axle1 -> p32016-2.axlehole2~ LOCKED
+CONNECT p43093-69.pin1 -> p6536-25.hole1 STIFF
+CONNECT p15462-18.axle1 -> p32016-2.axlehole1 LOCKED
+CONNECT p15462-18.axle2 -> p32557-3.hole2~ TURNS
+CONNECT p15462-18.axle4 -> p32557-4.hole2~ TURNS
+WHY Builds the grey angled end support with a blue axle-pin and yellow connector, then passes a stopped brown five-length axle through the grey support blocks into its cross bore. The blue bore selection and shaft depths through the blocks are estimated.
+
+STEP 503
+ADD p87083-20 87083 darkgray
+ADD p60483-32 60483 black
+CONNECT p87083-20.axle4 -> p60483-32.hole1 TURNS
+CONNECT p87083-20.axle3 -> p18944-2.hole1 TURNS
+CONNECT p87083-20.axle2 -> p6536-25.axlehole1 LOCKED
+WHY Fits a black two-hole link onto a stopped grey axle through its round hole, then passes the axle through the other panel end and the yellow support cross bore.
+
+STEP 504
+ADD p42003-21 42003 black
+ADD p4274-40 4274 lightgray
+ADD p4274-41 4274 lightgray
+ADD right-hood-headlight-1 98138 transclear
+ADD right-hood-headlight-2 98138 transclear
+CONNECT p4274-40.pin2 -> p42003-21.hole1 TURNS
+CONNECT p4274-41.pin2 -> p42003-21.hole2 TURNS
+CONNECT right-hood-headlight-1.? -> p4274-40.? STIFF
+CONNECT right-hood-headlight-2.? -> p4274-41.? STIFF
+CONNECT p87083-20.axle1 -> p42003-21.axlehole1 LOCKED
+WHY Builds the second pair of clear round headlights on grey half-pin studs in a black perpendicular block and fits the block onto the grey axle at the front of the right hood-side panel.
+
+STEP 505
+ADD p32062-31 32062 red
+ADD p92907-14 92907 black
+CONNECT p32062-31.axle1 -> p60483-32.axlehole1~ LOCKED
+CONNECT p32062-31.axle1 -> p92907-14.axlehole3~ LOCKED
+CONNECT p32062-31.axle2 -> p92907-14.axlehole4~ LOCKED
+WHY Locks the second black forked connector to its headlight-end link with a short red axle; the shaft depths remain estimated.
+
+STEP 506
+END
+ATTACH right-hood-side-panel
+CONNECT p15100-14.pin1 -> p32526-23.hole1 STIFF
+CONNECT p15100-15.pin1 -> p32526-23.hole3 STIFF
+WHY Mounts the completed right yellow hood-side panel on the two sockets of the black outer support, matching the first panel.
+
+STEP 507
+ADD p32062-33 32062 red
+CONNECT p32062-33.axle2 -> p92907-14.axlehole1~ LOCKED
+CONNECT p32062-33.axle1 -> p92907-14.axlehole2~ LOCKED
+CONNECT p32062-33.axle1 -> p32271-1.axlehole2~ LOCKED
+WHY Secures the second headlight-end fork to the projecting grey bent support with a short red axle, preserving its estimated insertion depths.
+
+STEP 508
+
+WHY Rotates the centre yellow pin-hole connector outward as pictured to prepare its pin for the upper hood attachment.
