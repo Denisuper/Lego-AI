@@ -4414,7 +4414,7 @@ WHY Lowers the completed roof onto all four black mounting pins while passing th
 
 STEP 388
 ADD p18654-30 18654 black
-ADD beacon-base 4032a black
+ADD beacon-base 15535 black
 ADD beacon-body 3941 transorange
 ADD beacon-cap 2654 transorange
 CONNECT p3706-7.axle4 -> p18654-30.hole1 TURNS
@@ -4574,3 +4574,183 @@ ADD engine-cover-tile-4 2431 black
 CONNECT engine-cover-tile-4.? -> p4274-26.? STIFF
 CONNECT engine-cover-tile-4.? -> p4274-27.? STIFF
 WHY Presses four black four-stud tiles onto the eight half-pin studs along the green cover edges and applies sticker 12 to the pictured tile. Tile and stud-clutch points are uncataloged.
+
+STEP 398
+ADD engine-black-elbow-1 25214 black
+ADD p11214-26 11214 red
+CONNECT p11214-26.axle1 -> engine-black-elbow-1.? LOCKED
+CONNECT p11214-26.pin1 -> p32526-20.hole5 STIFF
+WHY Adds a black curved intake elbow on a red axle-pin at the upright end of the front black engine-cover bracket; the elbow cross bore is unnamed.
+
+STEP 399
+ADD p43093-51 43093 blue
+ADD p32013-3 32013 black
+CONNECT p43093-51.axle1 -> p32013-3.axlehole1 LOCKED
+CONNECT p43093-51.pin1 -> p32526-20.hole7 STIFF
+WHY Fits a blue axle-pin into the black angled connector and mounts it below the elbow on the front engine-cover bracket.
+
+STEP 400
+GROUP intake-filter
+ADD p99008-18 99008 tan
+ADD engine-black-elbow-2 25214 black
+CONNECT p99008-18.axle1~ -> engine-black-elbow-2.? LOCKED
+WHY Starts the intake filter with a tan stopped axle in a second black elbow. The axle insertion depth and uncataloged elbow bore remain explicit.
+
+STEP 401
+ADD p18654-33 18654 black
+ADD p4519-22 4519 lightgray
+CONNECT p99008-18.pin1 -> p18654-33.hole1 TURNS
+CONNECT p4519-22.axle3~ -> engine-black-elbow-2.? LOCKED
+WHY Slides a black round spacer over the tan axle end and inserts a grey three-length axle into the other elbow bore.
+
+STEP 402
+ADD intake-filter-wheel 55982 black
+CONNECT p4519-22.axle2~ -> intake-filter-wheel.? LOCKED
+WHY Slides the ribbed black wheel onto the grey axle to form the cylindrical intake filter body; its axle bore is not named in the catalog.
+
+STEP 403
+ADD intake-filter-plate-1 4032a black
+ADD intake-filter-plate-2 4032a black
+ADD intake-filter-cap 14769 black
+CONNECT intake-filter-plate-2.? -> intake-filter-plate-1.? STIFF
+CONNECT intake-filter-cap.? -> intake-filter-plate-2.? STIFF
+CONNECT p4519-22.axle1~ -> intake-filter-plate-1.? LOCKED
+WHY Stacks two black round plates and a smooth round cap, then seats them over the projecting grey axle to close the intake filter. Round-plate clutch and axle points are uncataloged.
+
+STEP 404
+END
+ATTACH intake-filter
+CONNECT p99008-18.axle2 -> p32013-3.hole1 TURNS
+WHY Mounts the completed intake filter beside the green engine cover by passing its projecting tan shaft through the round hole of the black angled connector.
+
+STEP 405
+
+WHY Turns the completed green engine-cover assembly so its lower mounting pins face the engine cradle.
+
+STEP 406
+END
+ATTACH green-engine-cover
+CONNECT p2780-223.pin1 -> p32184-4.hole1 STIFF
+CONNECT p11214-26.pin2 -> p32184-5.hole1 STIFF
+CONNECT p43093-49.pin1 -> p39794-2.hole4 STIFF
+CONNECT p43093-50.pin1 -> p39794-2.hole3 STIFF
+WHY Lowers the green engine cover onto the engine cradle, capturing the front black and red pins and the two blue pins at the rear.
+
+STEP 407
+ADD p61184-1 61184 lightgray
+ADD p18654-34 18654 black
+ADD engine-hose-cap 24866 orange
+ADD engine-ribbed-hose 27328 flatsilver
+CONNECT p61184-1.pin1 -> p18654-34.hole1 STIFF
+CONNECT engine-hose-cap.? -> p61184-1.? STIFF
+CONNECT p61184-1.bar1~ -> p2780-222.barhole1 TURNS
+CONNECT engine-ribbed-hose.? -> p61184-1.bar2~ STIFF
+CONNECT engine-ribbed-hose.? -> p18651-8.pin1 STIFF
+WHY Builds the capped grey bar-and-black-sleeve fitting at the front corner of the engine and curves the silver ribbed hose toward the exposed rear mounting pin. Hose sockets and the orange cap interface remain unnamed; the bar insertion depths are estimated.
+
+STEP 408
+GROUP front-grille-module
+ADD grille-base-plate 11212 black
+WHY Starts the front grille module with the black three-by-three plate, keeping its central opening clear.
+
+STEP 409
+ADD grille-long-tile-1 2431 black
+ADD grille-wide-tile-1 26603 black
+CONNECT grille-long-tile-1.? -> grille-base-plate.? STIFF
+CONNECT grille-wide-tile-1.? -> grille-base-plate.? STIFF
+WHY Covers one side of the black base plate with a long narrow tile and a wide two-by-three tile; stud-clutch interfaces are uncataloged.
+
+STEP 410
+ADD grille-long-tile-2 2431 black
+ADD grille-wide-tile-2 26603 black
+CONNECT grille-long-tile-2.? -> grille-base-plate.? STIFF
+CONNECT grille-wide-tile-2.? -> grille-base-plate.? STIFF
+WHY Adds the matching pair of black tiles on the opposite side, leaving the small central opening visible.
+
+STEP 411
+ADD grille-under-plate-1 3023 black
+ADD grille-under-plate-2 3023 black
+CONNECT grille-under-plate-1.? -> grille-base-plate.? STIFF
+CONNECT grille-under-plate-2.? -> grille-base-plate.? STIFF
+WHY Turns the tiled front face over and adds a two-stud plate underneath each overhanging end.
+
+STEP 412
+ADD grille-inner-plate-1 3623 black
+ADD grille-inner-plate-2 3623 black
+CONNECT grille-inner-plate-1.? -> grille-base-plate.? STIFF
+CONNECT grille-inner-plate-2.? -> grille-base-plate.? STIFF
+WHY Adds two black three-stud plates along the underside of the front face to reinforce its middle.
+
+STEP 413
+ADD grille-pin-plate-1 18677 black
+CONNECT grille-pin-plate-1.? -> grille-inner-plate-1.? STIFF
+ADD grille-pin-plate-2 18677 black
+CONNECT grille-pin-plate-2.? -> grille-inner-plate-1.? STIFF
+ADD grille-pin-plate-3 18677 black
+CONNECT grille-pin-plate-3.? -> grille-inner-plate-2.? STIFF
+ADD grille-pin-plate-4 18677 black
+CONNECT grille-pin-plate-4.? -> grille-inner-plate-2.? STIFF
+WHY Fits four black studded pin-hole plates to the underside, two on each side, to provide the grille mounting sockets.
+
+STEP 414
+ADD grille-end-plate-1 3623 black
+ADD grille-end-plate-2 3623 black
+ADD p32124-1 32124 black
+CONNECT grille-end-plate-1.? -> grille-under-plate-1.? STIFF
+CONNECT grille-end-plate-2.? -> grille-under-plate-2.? STIFF
+CONNECT p32124-1.? -> grille-pin-plate-1.? STIFF
+CONNECT p32124-1.? -> grille-pin-plate-4.? STIFF
+WHY Adds a three-stud end plate on each side and the narrow Technic stud plate across the underside, keeping its central axle opening aligned with the front opening.
+
+STEP 415
+ADD p2780-224 2780 black
+ADD p2780-225 2780 black
+CONNECT p2780-224.pin1 -> grille-pin-plate-2.? STIFF
+CONNECT p2780-225.pin1 -> grille-pin-plate-4.? STIFF
+WHY Inserts two black pins into the rear pair of grille pin-hole plates, leaving their other ends projecting for the curved top panel. Plate socket names remain unknown.
+
+STEP 416
+ADD p24119-2 24119 black
+ADD p2780-226 2780 black
+ADD p2780-227 2780 black
+CONNECT p2780-226.pin1 -> p24119-2.hole1 STIFF
+CONNECT p2780-227.pin2 -> p24119-2.hole10 STIFF
+CONNECT p2780-224.pin2 -> p24119-2.hole3 STIFF
+CONNECT p2780-225.pin2 -> p24119-2.hole8 STIFF
+WHY Adds black pins to both ends of the curved black panel and seats its lower sockets onto the two prepared grille pins.
+
+STEP 417
+ADD p32013-4 32013 black
+ADD p32013-5 32013 black
+ADD p32062-22 32062 red
+ADD p32062-23 32062 red
+ADD p59443-24 59443 black
+ADD p59443-25 59443 black
+ADD p43093-52 43093 blue
+ADD p43093-53 43093 blue
+CONNECT p32062-22.axle2 -> p32013-4.axlehole1 LOCKED
+CONNECT p32062-22.axle1 -> p59443-24.axlehole2 LOCKED
+CONNECT p43093-52.axle1 -> p59443-24.axlehole1 LOCKED
+CONNECT p32062-23.axle2 -> p32013-5.axlehole1 LOCKED
+CONNECT p32062-23.axle1 -> p59443-25.axlehole2 LOCKED
+CONNECT p43093-53.axle1 -> p59443-25.axlehole1 LOCKED
+CONNECT p2780-226.pin2 -> p32013-4.hole1 STIFF
+CONNECT p2780-227.pin1 -> p32013-5.hole1 STIFF
+WHY Builds two black angled side connectors with red short axles, black cross couplers and blue axle-pins, then mounts them on the curved panel end pins.
+
+STEP 418
+ADD p40490-14 40490 black
+ADD p2780-228 2780 black
+ADD p2780-229 2780 black
+CONNECT p2780-228.pin2 -> p40490-14.hole8 STIFF
+CONNECT p2780-229.pin2 -> p40490-14.hole2 STIFF
+CONNECT p43093-52.pin1 -> p40490-14.hole9 STIFF
+CONNECT p43093-53.pin1 -> p40490-14.hole1 STIFF
+WHY Fits a black nine-hole beam across the two blue end pins and adds short black pins in its second holes from each end.
+
+STEP 419
+ADD p42924-127 42924 blue
+ADD p42924-128 42924 blue
+CONNECT p42924-127.pin2 -> p40490-14.hole7 STIFF
+CONNECT p42924-128.pin2 -> p40490-14.hole3 STIFF
+WHY Adds two blue three-length pins to the inner holes of the lower grille beam for the next connector assembly.
