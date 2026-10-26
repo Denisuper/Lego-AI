@@ -5108,3 +5108,273 @@ ATTACH left-engine-fan-panel
 CONNECT p43093-62.pin1 -> p18945-2.hole4 STIFF
 CONNECT p43093-63.pin1 -> p39794-2.hole19 STIFF
 WHY Turns the model and installs the second fan bracket beside the silver pipework, engaging its blue pins with the yellow side panel and black engine-cradle frame.
+
+STEP 465
+GROUP hood-bodywork
+ADD p32013-6 32013 orange
+ADD p27940-6 27940 darkgray
+ADD p59443-26 59443 black
+CONNECT p27940-6.axle1 -> p32013-6.axlehole1 LOCKED
+CONNECT p27940-6.axle2 -> p59443-26.axlehole2 LOCKED
+WHY Starts the hood bodywork with an orange angled connector and black cross coupler on the two shafts of a dark grey transverse axle connector.
+
+STEP 466
+ADD p87082-7 44874 red
+CONNECT p87082-7.pin1 -> p32013-6.hole1 STIFF
+WHY Adds the red two-pin transverse connector to the round hole of the orange connector.
+
+STEP 467
+ADD p15100-11 65487 yellow
+ADD p42924-131 42924 blue
+CONNECT p42924-131.pin2 -> p15100-11.hole1 STIFF
+CONNECT p42924-131.pin3 -> p27940-6.hole1 STIFF
+WHY Passes a blue three-length pin through the yellow pin-hole connector and into the dark grey connector behind it.
+
+STEP 468
+ADD p32013-7 32013 orange
+ADD p27940-7 27940 darkgray
+ADD p59443-27 59443 black
+CONNECT p27940-7.axle1 -> p32013-7.axlehole1 LOCKED
+CONNECT p27940-7.axle2 -> p59443-27.axlehole2 LOCKED
+CONNECT p87082-7.pin2 -> p32013-7.hole1 STIFF
+CONNECT p42924-131.pin1 -> p27940-7.hole1 STIFF
+WHY Builds the matching orange, dark grey and black connector stack on the other side of the red connector and blue pin, trapping the yellow connector between them.
+
+STEP 469
+ADD p64179-15 64179 black
+ADD p2780-236 2780 black
+CONNECT p2780-236.pin1 -> p64179-15.hole3 STIFF
+WHY Adds the black five-by-seven frame around the connector stack and places a black pin in the centre of its outer crossbeam.
+
+STEP 470
+ADD p32523-27 32523 lightgray
+ADD p42924-132 42924 blue
+CONNECT p42924-132.pin1 -> p32523-27.hole2 STIFF
+CONNECT p42924-132.pin2 -> p64179-15.hole18 STIFF
+CONNECT p42924-132.pin3 -> p87082-7.hole1 STIFF
+WHY Fits a grey three-hole beam outside the frame with a blue pin through its centre, the frame wall and the red connector.
+
+STEP 471
+ADD p32525-17 32525 black
+CONNECT p2780-236.pin2 -> p32525-17.hole6 STIFF
+WHY Adds a black eleven-hole crossbeam across the outer centre pin of the frame.
+
+STEP 472
+ADD p24316-5 24316 brown
+ADD p24316-6 24316 brown
+CONNECT p24316-5.axle3 -> p32525-17.hole7 TURNS
+CONNECT p24316-5.axle2 -> p64179-15.hole2 TURNS
+CONNECT p24316-5.axle1 -> p59443-27.axlehole1 LOCKED
+CONNECT p24316-6.axle3 -> p32525-17.hole5 TURNS
+CONNECT p24316-6.axle2 -> p64179-15.hole4 TURNS
+CONNECT p24316-6.axle1 -> p59443-26.axlehole1 LOCKED
+WHY Slides two stopped brown three-length axles through the crossbeam and frame, locking their inner ends into the two black cross couplers.
+
+STEP 473
+ADD p32271-1 32271 lightgray
+ADD p2780-237 2780 black
+ADD p2780-238 2780 black
+CONNECT p2780-237.pin1 -> p32271-1.hole3 STIFF
+CONNECT p2780-238.pin1 -> p32271-1.hole1 STIFF
+CONNECT p2780-237.pin2 -> p64179-15.hole16 STIFF
+CONNECT p2780-238.pin2 -> p64179-15.hole12 STIFF
+WHY Pins the first grey bent liftarm along the side of the frame with its bent end projecting beyond the rear.
+
+STEP 474
+ADD p32271-2 32271 lightgray
+ADD p2780-239 2780 black
+ADD p2780-240 2780 black
+CONNECT p2780-239.pin2 -> p32271-2.hole1 STIFF
+CONNECT p2780-240.pin2 -> p32271-2.hole3 STIFF
+CONNECT p2780-239.pin1 -> p64179-15.hole13 STIFF
+CONNECT p2780-240.pin1 -> p64179-15.hole20 STIFF
+WHY Adds the matching grey bent liftarm to the opposite side of the frame.
+
+STEP 475
+ADD p32524-21 32524 black
+ADD p32524-22 32524 black
+ADD p2780-241 2780 black
+ADD p2780-242 2780 black
+ADD p2780-243 2780 black
+ADD p2780-244 2780 black
+ADD p2780-245 2780 black
+ADD p2780-246 2780 black
+CONNECT p2780-241.pin2 -> p32524-21.hole1 STIFF
+CONNECT p2780-242.pin2 -> p32524-21.hole3 STIFF
+CONNECT p2780-243.pin2 -> p32524-21.hole7 STIFF
+CONNECT p2780-244.pin2 -> p32524-22.hole1 STIFF
+CONNECT p2780-245.pin2 -> p32524-22.hole3 STIFF
+CONNECT p2780-246.pin2 -> p32524-22.hole7 STIFF
+CONNECT p2780-241.pin1 -> p32525-17.hole9 STIFF
+CONNECT p2780-242.pin1 -> p32525-17.hole11 STIFF
+CONNECT p2780-244.pin1 -> p32525-17.hole3 STIFF
+CONNECT p2780-245.pin1 -> p32525-17.hole1 STIFF
+WHY Builds two black seven-hole extension beams with three pins each and mounts their inner pins at both ends of the long crossbeam, leaving one black pin exposed at each outer end.
+
+STEP 476
+ADD p43093-64 43093 blue
+ADD p42003-16 42003 yellow
+ADD p2780-247 2780 black
+ADD p32526-21 32526 black
+ADD p2780-248 2780 black
+ADD p11214-31 11214 red
+ADD p6536-20 6536 black
+ADD p6536-21 6536 black
+CONNECT p43093-64.axle1 -> p42003-16.axlehole1 LOCKED
+CONNECT p2780-247.pin1 -> p42003-16.hole1 STIFF
+CONNECT p2780-247.pin2 -> p32526-21.hole4 STIFF
+CONNECT p2780-248.pin1 -> p32526-21.hole2 STIFF
+CONNECT p11214-31.pin1 -> p32526-21.hole5 STIFF
+CONNECT p11214-31.pin2 -> p42003-16.hole2 STIFF
+CONNECT p11214-31.axle1 -> p6536-20.axlehole1 LOCKED
+CONNECT p2780-248.pin2 -> p6536-21.hole1 STIFF
+CONNECT p43093-64.pin1 -> p64179-15.hole5 STIFF
+WHY Builds a yellow perpendicular block with a blue axle-pin, black L-shaped support, red axle-pin and two black axle connectors, then mounts it at one end of the hood frame.
+
+STEP 477
+ADD p43093-65 43093 blue
+ADD p42003-17 42003 yellow
+ADD p2780-249 2780 black
+ADD p32526-22 32526 black
+ADD p2780-250 2780 black
+ADD p11214-32 11214 red
+ADD p6536-22 6536 black
+ADD p6536-23 6536 black
+CONNECT p43093-65.axle1 -> p42003-17.axlehole1 LOCKED
+CONNECT p2780-249.pin2 -> p42003-17.hole1 STIFF
+CONNECT p2780-249.pin1 -> p32526-22.hole4 STIFF
+CONNECT p2780-250.pin2 -> p32526-22.hole2 STIFF
+CONNECT p11214-32.pin1 -> p32526-22.hole5 STIFF
+CONNECT p11214-32.pin2 -> p42003-17.hole2 STIFF
+CONNECT p11214-32.axle1 -> p6536-22.axlehole1 LOCKED
+CONNECT p2780-250.pin1 -> p6536-23.hole1 STIFF
+CONNECT p43093-65.pin1 -> p64179-15.hole1 STIFF
+WHY Builds and mounts the matching yellow-and-black support at the opposite end of the hood frame.
+
+STEP 478
+ADD p87083-15 87083 darkgray
+ADD p87083-16 87083 darkgray
+CONNECT p87083-15.axle1 -> p6536-21.axlehole1 LOCKED
+CONNECT p87083-15.axle2 -> p32524-22.hole2 TURNS
+CONNECT p87083-15.axle3 -> p32525-17.hole2 TURNS
+CONNECT p87083-15.axle4 -> p6536-20.hole1 TURNS
+CONNECT p87083-16.axle1 -> p6536-23.axlehole1 LOCKED
+CONNECT p87083-16.axle2 -> p32524-21.hole2 TURNS
+CONNECT p87083-16.axle3 -> p32525-17.hole10 TURNS
+CONNECT p87083-16.axle4 -> p6536-22.hole1 TURNS
+WHY Slides a stopped grey four-length axle through each outer support, the black extension beam and the main crossbeam to retain both hood-frame supports.
+
+STEP 479
+ADD p32056-1 32056 black
+ADD p32056-2 32056 black
+ADD p32062-26 32062 red
+ADD p43093-66 43093 blue
+ADD p2780-251 2780 black
+CONNECT p43093-66.axle1 -> p32056-1.axlehole1~ LOCKED
+CONNECT p32062-26.axle2 -> p32056-1.axlehole3~ LOCKED
+CONNECT p2780-251.pin1 -> p32056-1.hole1~ STIFF
+CONNECT p43093-66.axle1 -> p32056-2.axlehole1~ LOCKED
+CONNECT p32062-26.axle2 -> p32056-2.axlehole3~ LOCKED
+CONNECT p2780-251.pin1 -> p32056-2.hole1~ STIFF
+CONNECT p43093-66.pin1 -> p32524-21.hole6 STIFF
+CONNECT p2780-251.pin2 -> p32524-21.hole5 STIFF
+WHY Stacks two thin black L-shaped links with a blue axle-pin, short red axle and black pin, then mounts the pair on the right extension beam. Stacked thin-link depths are estimated.
+
+STEP 480
+ADD p99008-19 99008 tan
+ADD p3713-13 3713 lightgray
+ADD p41677-7 41677 black
+ADD p41677-8 41677 black
+ADD p32062-27 32062 red
+ADD p41669-1 48267 black
+CONNECT p99008-19.axle2 -> p3713-13.axlehole1 LOCKED
+CONNECT p99008-19.axle1 -> p32056-1.axlehole2~ LOCKED
+CONNECT p99008-19.axle1 -> p32056-2.axlehole2~ LOCKED
+CONNECT p99008-19.pin1 -> p32524-21.hole4 TURNS
+CONNECT p99008-19.axle3 -> p41677-7.axlehole1~ LOCKED
+CONNECT p32062-27.axle2 -> p41677-7.axlehole2~ LOCKED
+CONNECT p99008-19.axle3 -> p41677-8.axlehole1~ LOCKED
+CONNECT p32062-27.axle2 -> p41677-8.axlehole2~ LOCKED
+CONNECT p32062-27.axle1 -> p41669-1.axlehole1 LOCKED
+WHY Builds the small black wing on a red axle between paired thin links, adds a tan stopped axle with a grey bush and seats that shaft through the prepared right-side links and beam.
+
+STEP 481
+ADD p32526-23 32526 black
+ADD p2780-252 2780 black
+ADD p2780-253 2780 black
+ADD p2780-254 2780 black
+ADD p42924-133 42924 blue
+ADD p32523-28 32523 black
+ADD p32523-29 32523 black
+CONNECT p2780-252.pin1 -> p32526-23.hole5 STIFF
+CONNECT p2780-253.pin2 -> p32526-23.hole6 STIFF
+CONNECT p2780-254.pin2 -> p32526-23.hole2 STIFF
+CONNECT p42924-133.pin2 -> p32526-23.hole7 STIFF
+CONNECT p2780-253.pin1 -> p32523-28.hole1 STIFF
+CONNECT p42924-133.pin3 -> p32523-28.hole2 STIFF
+CONNECT p2780-252.pin2 -> p32523-29.hole1 STIFF
+CONNECT p42924-133.pin1 -> p32523-29.hole3 STIFF
+CONNECT p2780-243.pin1 -> p32526-23.hole4 STIFF
+WHY Builds the outer black L-shaped side support with two short three-hole beams, three black pins and a blue pin, then mounts it on the exposed outer extension pin.
+
+STEP 482
+ADD p32056-3 32056 black
+ADD p32056-4 32056 black
+ADD p32062-28 32062 red
+ADD p43093-67 43093 blue
+ADD p2780-255 2780 black
+CONNECT p43093-67.axle1 -> p32056-3.axlehole1~ LOCKED
+CONNECT p32062-28.axle1 -> p32056-3.axlehole3~ LOCKED
+CONNECT p2780-255.pin2 -> p32056-3.hole1~ STIFF
+CONNECT p43093-67.axle1 -> p32056-4.axlehole1~ LOCKED
+CONNECT p32062-28.axle1 -> p32056-4.axlehole3~ LOCKED
+CONNECT p2780-255.pin2 -> p32056-4.hole1~ STIFF
+CONNECT p43093-67.pin1 -> p32524-22.hole6 STIFF
+CONNECT p2780-255.pin1 -> p32524-22.hole5 STIFF
+WHY Stacks two thin black L-shaped links with a blue axle-pin, short red axle and black pin, then mounts the pair on the left extension beam. Stacked thin-link depths are estimated.
+
+STEP 483
+ADD p99008-20 99008 tan
+ADD p3713-14 3713 lightgray
+ADD p41677-9 41677 black
+ADD p41677-10 41677 black
+ADD p32062-29 32062 red
+ADD p41669-2 48267 black
+CONNECT p99008-20.axle2 -> p3713-14.axlehole1 LOCKED
+CONNECT p99008-20.axle1 -> p32056-3.axlehole2~ LOCKED
+CONNECT p99008-20.axle1 -> p32056-4.axlehole2~ LOCKED
+CONNECT p99008-20.pin1 -> p32524-22.hole4 TURNS
+CONNECT p99008-20.axle3 -> p41677-9.axlehole1~ LOCKED
+CONNECT p32062-29.axle1 -> p41677-9.axlehole2~ LOCKED
+CONNECT p99008-20.axle3 -> p41677-10.axlehole1~ LOCKED
+CONNECT p32062-29.axle1 -> p41677-10.axlehole2~ LOCKED
+CONNECT p32062-29.axle2 -> p41669-2.axlehole1 LOCKED
+WHY Builds the small black wing on a red axle between paired thin links, adds a tan stopped axle with a grey bush and seats that shaft through the prepared left-side links and beam.
+
+STEP 484
+ADD p32526-24 32526 black
+ADD p2780-256 2780 black
+ADD p2780-257 2780 black
+ADD p2780-258 2780 black
+ADD p42924-134 42924 blue
+ADD p32523-30 32523 black
+ADD p32523-31 32523 black
+CONNECT p2780-256.pin2 -> p32526-24.hole5 STIFF
+CONNECT p2780-257.pin1 -> p32526-24.hole6 STIFF
+CONNECT p2780-258.pin1 -> p32526-24.hole2 STIFF
+CONNECT p42924-134.pin2 -> p32526-24.hole7 STIFF
+CONNECT p2780-257.pin2 -> p32523-30.hole1 STIFF
+CONNECT p42924-134.pin3 -> p32523-30.hole2 STIFF
+CONNECT p2780-256.pin1 -> p32523-31.hole1 STIFF
+CONNECT p42924-134.pin1 -> p32523-31.hole3 STIFF
+CONNECT p2780-246.pin1 -> p32526-24.hole4 STIFF
+WHY Builds the outer black L-shaped side support with two short three-hole beams, three black pins and a blue pin, then mounts it on the exposed outer extension pin.
+
+STEP 485
+ADD p60483-29 60483 lightgray
+ADD p60483-30 60483 lightgray
+CONNECT p32062-26.axle1 -> p60483-29.axlehole1 LOCKED
+CONNECT p2780-254.pin1 -> p60483-29.hole1 STIFF
+CONNECT p32062-28.axle2 -> p60483-30.axlehole1 LOCKED
+CONNECT p2780-258.pin2 -> p60483-30.hole1 STIFF
+WHY Fits a grey two-hole link across each outer black pin and short red axle, tying both lower side supports to their paired thin-link pivots.
