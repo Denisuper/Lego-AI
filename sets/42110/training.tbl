@@ -4832,3 +4832,331 @@ CONNECT p33299b-2.pin1 -> p60483-44.hole1 STIFF
 CONNECT p43093-10.pin1 -> p32526-10.hole6 STIFF
 WHY Installs the rear lamp pillar on the rear chassis using the highlighted lower round connector hole and L-brace hole, pressing them onto the existing black linkage pin and blue axle-pin.
 
+STEP 470
+GROUP rear-door-assembly
+ADD p2431-2 2431 black
+ADD p18677-7 18677 black
+ADD p18677-8 18677 black
+CONNECT p18677-7.? -> p2431-2.? STIFF
+CONNECT p18677-8.? -> p2431-2.? STIFF
+WHY Starts the rear door assembly by building the opposite rear lamp carrier by pressing two black modified plates onto the underside of a black one-by-four tile, with their transverse pin holes aligned. Stud labels are not cataloged.
+
+STEP 471
+ADD p32002-6 32002 tan
+ADD p32002-7 32002 tan
+CONNECT p32002-6.pin1 -> p18677-7.? TURNS
+CONNECT p32002-7.pin1 -> p18677-8.? TURNS
+WHY Inserts the two tan frictionless pins into the modified plate holes from opposite sides as shown. These are smooth pins, so their round-hole engagements permit rotation; receiving plate hole labels remain unknown.
+
+STEP 472
+ADD p6141-3 6141 white
+ADD p6141-4 6141 white
+ADD p3024-6 3024 transred
+ADD p3024-7 3024 transred
+CONNECT p6141-3.? -> p18677-7.? STIFF
+CONNECT p6141-4.? -> p18677-8.? STIFF
+CONNECT p3024-6.? -> p6141-3.? STIFF
+CONNECT p3024-7.? -> p6141-4.? STIFF
+WHY Adds a white round plate and transparent-red square plate at each lamp position. The red lenses sit over the white round plates; ordinary stud interfaces remain unnamed in the catalog.
+
+STEP 473
+ADD p11478-23 11478 black
+CONNECT p32002-6.pin2 -> p11478-23.hole1~ TURNS
+CONNECT p32002-7.pin1 -> p11478-23.hole3~ TURNS
+WHY Fits the thin black five-hole beam across the lamp carrier pins. The half-width beam requires estimated axial seating on both smooth pin ends.
+
+STEP 474
+ADD p11478-24 11478 black
+ADD p32002-8 32002 tan
+ADD p18651-13 18651 black
+ADD p60483-46 60483 black
+CONNECT p32002-8.pin2 -> p11478-24.hole1~ TURNS
+CONNECT p18651-13.axle2 -> p11478-24.axlehole2~ LOCKED
+CONNECT p18651-13.axle1 -> p60483-46.axlehole1~ LOCKED
+CONNECT p18651-13.axle1 -> p11478-23.axlehole2~ LOCKED
+CONNECT p32002-7.pin2 -> p11478-24.hole3~ TURNS
+WHY Builds the opposite thin beam with a tan smooth pin and long black axle-pin, adds the black two-hole axle connector as a spacer, then joins it across the lamp carrier. The axle-pin keys the thin beams together; thin-beam and spacer seating depths are estimated. The two tan pins occupy opposite sides of the same lower beam bore.
+
+STEP 475
+ADD p32524-12 32524 olivegreen
+CONNECT p32002-8.pin1 -> p32524-12.hole4~ TURNS
+CONNECT p18651-13.pin1 -> p32524-12.hole7 STIFF
+WHY Fits the olive seven-hole beam over the exposed tan pin and black axle-pin. The tan pin seats deeply through the lamp sandwich; its axial position remains estimated.
+
+STEP 476
+ADD p40490-18 40490 black
+ADD p6558-89 6558 blue
+ADD p6558-90 6558 blue
+ADD p6558-91 6558 blue
+ADD p2780-152 2780 black
+ADD p2780-153 2780 black
+ADD p2780-154 2780 black
+CONNECT p6558-89.pin2 -> p40490-18.hole9 STIFF
+CONNECT p6558-90.pin2 -> p40490-18.hole8 STIFF
+CONNECT p6558-91.pin2 -> p40490-18.hole2 STIFF
+CONNECT p2780-152.pin2 -> p40490-18.hole4 STIFF
+CONNECT p2780-153.pin2 -> p40490-18.hole5 STIFF
+CONNECT p2780-154.pin2 -> p40490-18.hole6 STIFF
+CONNECT p6558-89.pin1 -> p32524-12.hole2 STIFF
+CONNECT p6558-90.pin1 -> p32524-12.hole1 STIFF
+WHY Builds the black nine-hole pillar with three blue long pins and three black short pins in the illustrated opposing directions, then attaches its lower two blue pins to the olive lamp beam.
+
+STEP 477
+ADD p18654-25 18654 black
+ADD p60483-47 60483 black
+ADD p24316-19 24316 brown
+CONNECT p2780-153.pin1 -> p18654-25.hole1 STIFF
+CONNECT p6558-91.pin1 -> p60483-47.hole1 STIFF
+CONNECT p24316-19.axle2 -> p60483-47.axlehole1 LOCKED
+CONNECT p24316-19.axle3 -> p40490-18.hole1 TURNS
+WHY Covers the centre black pin with a round connector, adds the black two-hole axle connector at the upper blue pin, then passes the brown three-stud stopped axle through the pillar round hole into the connector cross socket. The cross socket locks the axle while the pillar bore is a round bearing.
+
+STEP 478
+GROUP rear-door-panel
+ADD p11214-16 11214 red
+ADD p32054-32 32054 black
+CONNECT p11214-16.axle1 -> p32054-32.axlehole1 LOCKED
+WHY Starts the rear door panel hinge by inserting the red axle-pin cross end into the axial socket of the black long pin.
+
+STEP 479
+ADD p15100-7 15100 lightgray
+ADD p15100-8 15100 lightgray
+ADD p15100-9 15100 lightgray
+ADD p15100-10 15100 lightgray
+CONNECT p11214-16.pin2 -> p15100-7.hole1 STIFF
+CONNECT p11214-16.pin1 -> p15100-8.hole1 STIFF
+CONNECT p32054-32.pin1 -> p15100-9.hole1 STIFF
+CONNECT p32054-32.pin2 -> p15100-10.hole1 STIFF
+WHY Slides four grey perpendicular pin connectors over the red and black pin ends, alternating their transverse pins to the illustrated sides to form the door hinge mounting strip.
+
+STEP 480
+ADD p64782-1 64782 olivegreen
+ADD p6558-92 6558 blue
+ADD p6558-93 6558 blue
+CONNECT p15100-9.pin1 -> p64782-1.hole2 STIFF
+CONNECT p15100-7.pin1 -> p64782-1.hole5 STIFF
+CONNECT p6558-92.pin1 -> p64782-1.hole10 STIFF
+CONNECT p6558-93.pin1 -> p64782-1.hole31 STIFF
+WHY Fits the olive five-by-eleven flat panel onto the two grey hinge pins and inserts two blue long pins into the illustrated upper-edge holes.
+
+STEP 481
+ADD p18651-14 18651 black
+ADD p32184-34 32184 darkgray
+ADD p32062-38 32062 red
+CONNECT p18651-14.axle2 -> p32184-34.axlehole2 LOCKED
+CONNECT p32062-38.axle1 -> p32184-34.axlehole1~ LOCKED
+CONNECT p18651-14.pin1 -> p64782-1.hole13 STIFF
+WHY Builds the first dark-grey cross connector with a long black axle-pin and red two-stud axle, then pins it into the panel edge. The red axle is centred in its through socket, so its seating depth is estimated.
+
+STEP 482
+ADD p18651-15 18651 black
+ADD p18651-16 18651 black
+ADD p32184-35 32184 darkgray
+CONNECT p18651-15.axle2 -> p32184-35.axlehole2 LOCKED
+CONNECT p18651-16.axle2 -> p32184-35.axlehole1 LOCKED
+CONNECT p18651-15.pin1 -> p64782-1.hole16 STIFF
+CONNECT p18651-16.pin1 -> p64782-1.hole25 STIFF
+WHY Builds the second dark-grey cross connector with two long black axle-pins and mounts both round pin ends into the panel upper edge.
+
+STEP 483
+ADD p32140-21 32140 olivegreen
+ADD p32140-22 32140 olivegreen
+ADD p2780-155 2780 black
+ADD p2780-156 2780 black
+CONNECT p2780-155.pin2 -> p32140-22.hole1 STIFF
+CONNECT p2780-156.pin2 -> p32140-21.hole1 STIFF
+CONNECT p6558-92.pin2 -> p32140-22.hole3 STIFF
+CONNECT p6558-93.pin2 -> p32140-21.hole3 STIFF
+WHY Builds the two olive L brackets with black pins in mirrored directions and mounts them onto the two waiting blue panel pins, leaving their free black pins facing the long reinforcement beam.
+
+STEP 484
+ADD p41239-7 41239 olivegreen
+CONNECT p2780-155.pin1 -> p41239-7.hole2 STIFF
+CONNECT p2780-156.pin1 -> p41239-7.hole12 STIFF
+CONNECT p6558-92.pin3 -> p41239-7.hole4 STIFF
+CONNECT p6558-93.pin3 -> p41239-7.hole10 STIFF
+CONNECT p18651-14.axle1 -> p41239-7.hole5 TURNS
+CONNECT p18651-15.axle1 -> p41239-7.hole6 TURNS
+CONNECT p18651-16.axle1 -> p41239-7.hole8 TURNS
+WHY Presses the olive thirteen-hole reinforcement beam over the four friction pins. Its intermediate round holes also surround the three black axle tails; those axle-to-round-hole interfaces permit rotation although the complete assembly is retained by the other pins.
+
+STEP 485
+ADD p2780-157 2780 black
+ADD p2780-158 2780 black
+ADD p2780-159 2780 black
+CONNECT p2780-157.pin1 -> p64782-1.hole36 STIFF
+CONNECT p2780-158.pin1 -> p64782-1.hole39 STIFF
+CONNECT p2780-159.pin1 -> p64782-1.hole40 STIFF
+WHY Inserts three black friction pins into the unhinged short edge of the door panel, leaving their outer halves ready for the latch fittings.
+
+STEP 486
+ADD p2780-160 2780 black
+ADD p43093-54 43093 blue
+ADD p60483-48 60483 olivegreen
+CONNECT p2780-160.pin2 -> p60483-48.hole1 STIFF
+CONNECT p43093-54.axle1 -> p60483-48.axlehole1 LOCKED
+CONNECT p2780-160.pin1 -> p64782-1.hole41 STIFF
+CONNECT p43093-54.pin1 -> p64782-1.hole37 STIFF
+WHY Builds the olive two-hole end connector with one black pin and one blue axle-pin, then seats both round ends in the last two panel edge holes.
+
+STEP 487
+ADD p87083-12 87083 darkgray
+ADD p3713-41 3713 red
+ADD p32123b-31 32123b lightgray
+CONNECT p87083-12.axle4 -> p64782-1.hole34 TURNS
+CONNECT p87083-12.axle3 -> p3713-41.axlehole1 LOCKED
+CONNECT p87083-12.axle2 -> p32123b-31.axlehole1~ LOCKED
+WHY Passes the dark-grey four-stud stopped axle through the panel face bore, adds a red full bush and grey half bush on the inner side, and leaves the axle tail exposed for the latch linkage. Half-bush axial seating is estimated.
+
+STEP 488
+ADD p18651-17 18651 black
+ADD p32123b-32 32123b lightgray
+ADD p32184-36 32184 darkgray
+CONNECT p18651-17.axle2 -> p32123b-32.axlehole1~ LOCKED
+CONNECT p18651-17.axle1 -> p32184-36.axlehole1~ LOCKED
+CONNECT p18651-17.pin1 -> p64782-1.hole35 STIFF
+WHY Fits a grey half bush and dark-grey cross connector over the long axle end of a black axle-pin, then presses the pin into the opposite panel face bore. The spacer and cross-connector axial positions are estimated from the illustrated stack.
+
+STEP 489
+GROUP rear-door-latch
+ADD p32062-39 32062 red
+ADD p4519-46 4519 lightgray
+ADD p41677-9 41677 blue
+CONNECT p4519-46.axle1 -> p41677-9.axlehole1~ LOCKED
+CONNECT p32062-39.axle1 -> p41677-9.axlehole2~ LOCKED
+WHY Starts the rear door latch with a blue thin two-cross-hole beam holding a grey three-stud axle and red two-stud axle. Both thin beam seating depths are estimated.
+
+STEP 490
+ADD p32063-1 32063 lightgray
+ADD p32065-1 32065 black
+CONNECT p4519-46.axle1 -> p32065-1.hole3~ TURNS
+CONNECT p32062-39.axle1 -> p32065-1.hole4~ TURNS
+CONNECT p4519-46.axle2 -> p32063-1.hole3~ TURNS
+CONNECT p32062-39.axle2 -> p32063-1.hole4~ TURNS
+WHY Stacks the thin black seven-hole beam and grey six-hole beam over the two latch axles. Their round bores permit shaft rotation; the half-width beam stack positions are estimated.
+
+STEP 491
+ADD p41677-10 41677 blue
+CONNECT p32062-39.axle2 -> p41677-10.axlehole1~ LOCKED
+WHY Caps the red axle with a second blue thin two-hole cross beam, leaving its other cross hole open. Estimated seating records its half-stud thickness.
+
+STEP 492
+ADD p55013-5 55013 darkgray
+ADD p24316-20 24316 brown
+ADD p32184-37 32184 darkgray
+ADD p3713-42 3713 red
+CONNECT p55013-5.axle8 -> p32184-37.axlehole2~ LOCKED
+CONNECT p55013-5.axle7 -> p3713-42.axlehole1~ LOCKED
+CONNECT p24316-20.axle2 -> p32184-37.axlehole1 LOCKED
+CONNECT p24316-20.axle3 -> p32063-1.hole1~ TURNS
+CONNECT p24316-20.axle3 -> p32065-1.hole1~ TURNS
+WHY Adds the eight-stud stopped operating axle and red bush to a dark-grey cross connector at the shown depth, then passes the brown three-stud stopped pivot axle through both thin latch beams into its other cross socket. The long axle and thin beam stack depths remain estimated.
+
+STEP 493
+ADD p32123b-33 32123b lightgray
+ADD p32123b-34 32123b lightgray
+CONNECT p24316-20.axle1 -> p32123b-33.axlehole1~ LOCKED
+CONNECT p24316-20.axle1 -> p32123b-34.axlehole1~ LOCKED
+WHY Retains the brown latch pivot axle with two grey half bushes stacked on the exposed end. Their adjacent half-stud seats are estimated.
+
+STEP 494
+ADD p32062-40 32062 red
+ADD p3713-43 3713 red
+ADD p32184-38 32184 darkgray
+ADD p4274-18 4274 lightgray
+ADD p6141-5 6141 white
+ADD p98138-8 98138 black
+CONNECT p32062-40.axle2 -> p32184-38.axlehole2 LOCKED
+CONNECT p32062-40.axle1 -> p3713-43.axlehole1 LOCKED
+CONNECT p4274-18.pin1 -> p32184-38.hole1~ TURNS
+CONNECT p4274-18.pin2 -> p6141-5.hole1~ TURNS
+CONNECT p98138-8.? -> p6141-5.? STIFF
+CONNECT p4519-46.axle2 -> p32184-38.axlehole1~ LOCKED
+WHY Builds the latch knob on a dark-grey cross connector: a red axle and full bush on one cross socket, plus a grey smooth half pin carrying a white round plate and black round tile in the centre bore. Fits its other cross socket over the existing grey axle. Pin and connector depths are estimated; the tile stud surface remains unnamed.
+
+STEP 495
+ADD p24201-1 24201 darkgray
+CONNECT p24201-1.? -> p32065-1.? STIFF
+END
+WHY Presses the dark-grey curved slope onto the studded end of the black thin latch beam. The stud interfaces are not named in the connection catalog.
+
+STEP 496
+ATTACH rear-door-latch
+CONNECT p55013-5.axle6 -> p32184-35.hole1~ TURNS
+WHY Installs the latch assembly onto the rear door by sliding its long operating axle through the central dark-grey connector round bore. The round bearing allows the latch axle to turn; its axial seating is estimated. Positions the remaining latch arm beneath the retaining beam added next; its precise locating interface remains unresolved.
+
+STEP 497
+ADD p11478-25 11478 black
+ADD p32123b-35 32123b lightgray
+ADD p32123b-36 32123b lightgray
+CONNECT p18651-17.axle1 -> p11478-25.axlehole1~ LOCKED
+CONNECT p87083-12.axle2 -> p11478-25.axlehole2~ LOCKED
+CONNECT p87083-12.axle1 -> p32123b-35.axlehole1~ LOCKED
+CONNECT p87083-12.axle1 -> p32123b-36.axlehole1~ LOCKED
+WHY Fits the black thin five-hole beam across the two door-face axles, with the latch beam stack captured beneath it, then retains the stopped axle end with two grey half bushes. All thin beam and half-bush seats are estimated.
+
+STEP 498
+ADD p18654-26 18654 olivegreen
+CONNECT p2780-158.pin2 -> p18654-26.hole1 STIFF
+WHY Turns the door upright and covers the middle projecting edge pin with an olive round connector.
+
+STEP 499
+ADD p22961-8 22961 black
+ADD p22961-9 22961 black
+ADD p32123b-37 32123b lightgray
+ADD p32123b-38 32123b lightgray
+ADD p6632-3 6632 black
+CONNECT p22961-8.axle1 -> p32123b-37.axlehole1~ LOCKED
+CONNECT p22961-9.axle1 -> p32123b-38.axlehole1~ LOCKED
+CONNECT p22961-8.axle1 -> p6632-3.axlehole2~ LOCKED
+CONNECT p22961-9.axle1 -> p6632-3.axlehole1~ LOCKED
+CONNECT p2780-157.pin2 -> p22961-8.hole1 STIFF
+CONNECT p2780-159.pin2 -> p22961-9.hole1 STIFF
+WHY Builds the black door-edge handle from two perpendicular axle connectors, two grey half bushes and the thin three-hole cross-ended beam. Pushes the two connector round holes onto the remaining door edge pins. Half-width handle stack seating is estimated.
+
+STEP 500
+ADD p3713-44 3713 red
+ADD p3713-45 3713 red
+ADD p41677-11 41677 blue
+CONNECT p32062-38.axle1 -> p41677-11.axlehole1~ LOCKED
+CONNECT p55013-5.axle5 -> p3713-44.axlehole1~ LOCKED
+CONNECT p55013-5.axle4 -> p3713-45.axlehole1~ LOCKED
+WHY Turns the door to its inner face, adds the blue thin link to one end of the waiting red axle and slides two red full bushes onto the operating shaft at the shown positions. The shaft must retain its operating travel; axial seats are estimated.
+
+STEP 501
+ADD p32062-41 32062 red
+ADD p42003-27 42003 lightgray
+CONNECT p32062-41.axle1 -> p42003-27.axlehole1~ LOCKED
+CONNECT p32062-41.axle1 -> p41677-11.axlehole2~ LOCKED
+CONNECT p55013-5.axle3 -> p42003-27.hole2~ TURNS
+WHY Builds the grey perpendicular three-hole connector with a centred red axle, then guides its round bore over the operating shaft and one red axle end into the free blue cross-link socket. These stack positions are estimated; the operating shaft turns in the round bore.
+
+STEP 502
+ADD p41677-12 41677 blue
+CONNECT p32062-38.axle2 -> p41677-12.axlehole1~ LOCKED
+CONNECT p32062-41.axle2 -> p41677-12.axlehole2~ LOCKED
+WHY Caps the two exposed red axle ends with the second blue thin cross-hole link, completing the paired latch crank plates. Their half-stud axial seats remain estimated.
+
+STEP 503
+ADD rear-door-return-band 85543 white
+END
+WHY Fits the white elastic around the red-capped latch arm and the neighbouring grey axle and half-bush stack as shown, so the latch returns under elastic tension. Flexible band contact and stretch are not rigid CONNECT joints. Completes the door panel subassembly.
+
+STEP 504
+ATTACH rear-door-panel
+CONNECT p15100-8.pin1 -> p32524-12.hole6 STIFF
+CONNECT p15100-10.pin1 -> p32524-12.hole3 STIFF
+END
+WHY Mounts the door hinge strip onto the olive seven-hole beam of the second rear lamp pillar through its two grey transverse pins. Closes the complete rear door and lamp-pillar assembly; the door hinge moves about the longitudinal red and black pin stack.
+
+STEP 505
+ATTACH rear-door-assembly
+CONNECT p33299b-1.pin1 -> p60483-46.hole1 STIFF
+WHY Turns the vehicle around and installs the complete rear door and lamp-pillar assembly on the remaining rear black linkage pin, using the highlighted lower round connector hole. The upper brace follows in the next step.
+
+STEP 506
+ADD p32526-11 32526 black
+CONNECT p6558-89.pin3 -> p32526-11.hole1 STIFF
+CONNECT p43093-11.pin1 -> p32526-11.hole6 STIFF
+WHY Fits the black L brace onto the lamp pillar blue pin and the existing rear chassis blue axle-pin, securing the second lamp pillar beside the rear door.
+
