@@ -4754,3 +4754,151 @@ ADD p42924-128 42924 blue
 CONNECT p42924-127.pin2 -> p40490-14.hole7 STIFF
 CONNECT p42924-128.pin2 -> p40490-14.hole3 STIFF
 WHY Adds two blue three-length pins to the inner holes of the lower grille beam for the next connector assembly.
+
+STEP 420
+ADD p22961-3 22961 darkgray
+ADD p22961-4 22961 darkgray
+ADD p32034-2 32034 yellow
+CONNECT p22961-3.axle1 -> p32034-2.axlehole1 LOCKED
+CONNECT p22961-4.axle1 -> p32034-2.axlehole2 LOCKED
+CONNECT p42924-128.pin1 -> p22961-3.hole1 STIFF
+CONNECT p42924-127.pin1 -> p22961-4.hole1 STIFF
+WHY Joins two dark grey axle bosses with the yellow straight cross connector and fits their round holes onto the two blue grille pins.
+
+STEP 421
+ADD grille-logo-cap 14769 black
+ADD grille-logo-stem 24866 orange
+CONNECT grille-logo-stem.? -> grille-logo-cap.? STIFF
+CONNECT grille-logo-stem.? -> p32124-1.axlehole1 STIFF
+WHY Presses the orange flower-shaped stem under the black round tile and mounts it in the centre opening of the grille to make the badge plate; the stem clutch is uncataloged.
+
+STEP 422
+
+WHY Applies sticker 11 to the round centre badge and the two sticker-10 grille graphics to the black tiled face.
+
+STEP 423
+
+WHY Turns the completed front grille face down to expose its lower connector and hinge mounting points.
+
+STEP 424
+GROUP grille-hinge-linkage
+ADD p32034-3 32034 black
+ADD p4519-23 4519 lightgray
+ADD p4519-24 4519 lightgray
+CONNECT p4519-23.axle3 -> p32034-3.axlehole2 LOCKED
+CONNECT p4519-24.axle1 -> p32034-3.axlehole1 LOCKED
+WHY Starts the grille hinge linkage with a grey three-length axle in each end of the black straight axle connector.
+
+STEP 425
+ADD p32062-24 32062 red
+ADD p32062-25 32062 red
+ADD p41677-3 41677 black
+ADD p41677-4 41677 black
+ADD p41677-5 41677 black
+ADD p41677-6 41677 black
+CONNECT p4519-24.axle2 -> p41677-3.axlehole1~ LOCKED
+CONNECT p32062-24.axle1 -> p41677-3.axlehole2~ LOCKED
+CONNECT p4519-24.axle2 -> p41677-4.axlehole1~ LOCKED
+CONNECT p32062-24.axle1 -> p41677-4.axlehole2~ LOCKED
+CONNECT p4519-23.axle2 -> p41677-5.axlehole1~ LOCKED
+CONNECT p32062-25.axle2 -> p41677-5.axlehole2~ LOCKED
+CONNECT p4519-23.axle2 -> p41677-6.axlehole1~ LOCKED
+CONNECT p32062-25.axle2 -> p41677-6.axlehole2~ LOCKED
+WHY Builds a paired thin black link on each grey axle end and locks a short red axle through each pair. Depths through the stacked thin links are estimated.
+
+STEP 426
+ADD p11478-5 11478 black
+ADD p32123b-9 32123b yellow
+CONNECT p32062-25.axle1 -> p11478-5.axlehole2~ LOCKED
+CONNECT p32062-25.axle1 -> p32123b-9.axlehole1 LOCKED
+WHY Fits a black thin five-hole lever onto the left red axle and retains it with a yellow half bush.
+
+STEP 427
+ADD p32184-10 32184 yellow
+ADD p32184-11 32184 yellow
+ADD p43093-54 43093 blue
+ADD p43093-55 43093 blue
+ADD p15100-9 65487 black
+ADD p15100-10 65487 black
+CONNECT p43093-55.axle1 -> p32184-10.axlehole1 LOCKED
+CONNECT p43093-54.axle1 -> p32184-11.axlehole1 LOCKED
+CONNECT p43093-55.pin1 -> p15100-9.hole1 STIFF
+CONNECT p43093-54.pin1 -> p15100-10.hole1 STIFF
+CONNECT p4519-23.axle1 -> p32184-10.axlehole2 LOCKED
+CONNECT p4519-24.axle3 -> p32184-11.axlehole2 LOCKED
+WHY Builds two yellow cross-block supports with blue axle-pins and black pin-hole connectors, then seats them on the two grey axle ends beside the thin hinge links.
+
+STEP 428
+GROUP orange-grille-roller
+ADD p62462-10 62462 orange
+ADD p2780-230 2780 black
+CONNECT p2780-230.pin1 -> p62462-10.hole1~ STIFF
+WHY Starts the orange grille roller with a black pin inside one orange round sleeve; the insertion depth is estimated.
+
+STEP 429
+ADD p62462-11 62462 orange
+CONNECT p2780-230.pin2 -> p62462-11.hole1~ STIFF
+WHY Joins the second orange sleeve onto the other end of the black pin to form a straight two-sleeve roller.
+
+STEP 430
+ADD p43093-56 43093 blue
+ADD p43093-57 43093 blue
+CONNECT p43093-56.pin1 -> p62462-10.hole1~ STIFF
+CONNECT p43093-57.pin1 -> p62462-11.hole1~ STIFF
+WHY Caps both ends of the orange roller with blue axle-pins, leaving their cross shafts projecting.
+
+STEP 431
+ADD p6632-13 6632 orange
+CONNECT p43093-56.axle1 -> p6632-13.axlehole1~ LOCKED
+WHY Adds an orange thin three-hole link on one projecting blue cross shaft.
+
+STEP 432
+ADD p32073-8 32073 yellow
+CONNECT p32073-8.axle1 -> p6632-13.axlehole2~ LOCKED
+WHY Inserts a yellow five-length axle into the opposite cross hole of the orange side link to create the second parallel roller shaft.
+
+STEP 433
+ADD p62462-12 62462 orange
+ADD p62462-13 62462 orange
+CONNECT p32073-8.axle2 -> p62462-12.hole1 TURNS
+CONNECT p32073-8.axle4 -> p62462-13.hole1 TURNS
+WHY Slides two orange round sleeves onto the yellow axle, allowing these sleeves to turn around the shaft.
+
+STEP 434
+ADD p6632-14 6632 orange
+CONNECT p32073-8.axle5 -> p6632-14.axlehole2~ LOCKED
+CONNECT p43093-57.axle1 -> p6632-14.axlehole1~ LOCKED
+WHY Closes the rectangular orange roller assembly with the second thin orange side link.
+
+STEP 435
+END
+ATTACH orange-grille-roller
+CONNECT p43093-56.axle1 -> p11478-5.hole1~ TURNS
+WHY Seats one projecting blue shaft of the roller assembly through the round hole in the prepared black hinge lever; the depth through the thin lever is estimated.
+
+STEP 436
+ADD p11478-6 11478 black
+ADD p32123b-10 32123b yellow
+CONNECT p4519-24.axle3 -> p11478-6.axlehole2~ LOCKED
+CONNECT p32062-24.axle2 -> p11478-6.hole3~ TURNS
+CONNECT p32062-24.axle2 -> p32123b-10.axlehole1 LOCKED
+CONNECT p43093-57.axle1 -> p11478-6.axlehole1~ LOCKED
+WHY Adds the opposite thin black hinge lever, capturing the grey pivot axle, red retaining axle and other blue roller shaft, then fits its yellow retaining half bush.
+
+STEP 437
+
+WHY Turns the completed roller and hinge linkage over so the black mounting pins face downward.
+
+STEP 438
+END
+ATTACH grille-hinge-linkage
+CONNECT p2780-229.pin1 -> p32184-10.hole1 STIFF
+CONNECT p2780-228.pin1 -> p32184-11.hole1 STIFF
+WHY Fits the completed roller linkage onto the lower grille assembly by engaging the short black grille pins with the yellow cross-block supports.
+
+STEP 439
+END
+ATTACH front-grille-module
+CONNECT p15100-9.pin1 -> p24119-1.hole3 STIFF
+CONNECT p15100-10.pin1 -> p24119-1.hole8 STIFF
+WHY Lowers the assembled front grille and roller linkage onto the two mounting sockets of the yellow curved front chassis panel.
