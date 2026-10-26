@@ -5455,7 +5455,7 @@ CONNECT p4274-28.pin1 -> p32278-12.hole12~ TURNS
 WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
 
 STEP 533
-ADD p11947-5 11946 olivegreen
+ADD p11947-5 11947 olivegreen
 ADD p43093-60 43093 blue
 CONNECT p43093-60.axle1 -> p11947-5.axlehole1 LOCKED
 CONNECT p43093-60.pin1 -> p32278-12.hole1 STIFF
@@ -5770,4 +5770,238 @@ CONNECT p6558-111.pin3 -> p87086-2.hole6 STIFF
 CONNECT p6558-116.pin3 -> p24119-9.hole9 STIFF
 CONNECT p6558-117.pin3 -> p24119-9.hole4 STIFF
 WHY Presses the completed edge rail onto the four exposed blue pin tails on this side of the roof, connecting both white end panels to their supporting brackets.
+
+STEP 559
+GROUP left-roof-edge
+ADD p87080-2 87080 white
+ADD p43093-67 43093 blue
+CONNECT p43093-67.pin1 -> p87080-2.hole2 STIFF
+WHY Starts one roof edge rail with a white curved corner panel, number 1, and a blue axle-pin inserted round end first.
+
+STEP 560
+ADD p18948-6 18948 white
+ADD p32062-44 32062 red
+CONNECT p43093-67.axle1 -> p18948-6.axlehole2 LOCKED
+CONNECT p32062-44.axle1 -> p18948-6.axlehole1 LOCKED
+WHY Adds the first white ridged axle connector to the blue cross end and inserts a red two-stud axle into its opposite socket.
+
+STEP 561
+ADD p18948-7 18948 white
+ADD p32062-45 32062 red
+CONNECT p32062-44.axle2 -> p18948-7.axlehole2 LOCKED
+CONNECT p32062-45.axle1 -> p18948-7.axlehole1 LOCKED
+WHY Extends the roof edge rail with a second white ridged axle connector and a second red axle.
+
+STEP 562
+ADD p18948-8 18948 white
+ADD p43093-68 43093 blue
+CONNECT p32062-45.axle2 -> p18948-8.axlehole2 LOCKED
+CONNECT p43093-68.axle1 -> p18948-8.axlehole1 LOCKED
+WHY Adds the third white ridged axle connector and keys a blue axle-pin into the outer socket, leaving its round pin end exposed.
+
+STEP 563
+ADD p24119-10 24119 white
+CONNECT p43093-68.pin1 -> p24119-10.hole10 STIFF
+END
+WHY Fits the white curved end panel onto the exposed blue pin, orienting both end panels to face the roof.
+
+STEP 564
+ATTACH left-roof-edge
+CONNECT p6558-112.pin3 -> p87080-2.hole7 STIFF
+CONNECT p6558-113.pin3 -> p87080-2.hole6 STIFF
+CONNECT p6558-114.pin3 -> p24119-10.hole4 STIFF
+CONNECT p6558-115.pin3 -> p24119-10.hole9 STIFF
+WHY Presses the completed edge rail onto the four exposed blue pin tails on this side of the roof, connecting both white end panels to their supporting brackets.
+
+STEP 565
+ADD p32278-13 32278 lightgray
+ADD p2780-187 2780 black
+ADD p2780-188 2780 black
+CONNECT p2780-187.pin2 -> p32278-13.hole1 STIFF
+CONNECT p2780-188.pin2 -> p32278-13.hole15 STIFF
+CONNECT p2780-187.pin1 -> p87080-2.? STIFF
+CONNECT p2780-188.pin1 -> p87086-2.? STIFF
+WHY Fits two black friction pins into the grey fifteen-hole crossbar ends, then presses it between the rear white roof corner panels. Their pictured receiving bores do not align with the current catalog corner geometry, so their labels remain unknown.
+
+STEP 566
+ADD p32054-35 32054 lightgray
+ADD p32054-36 32054 lightgray
+ADD p15100-11 15100 lightgray
+ADD p15100-12 15100 lightgray
+ADD p15100-13 15100 lightgray
+ADD p15100-14 15100 lightgray
+ADD p4519-51 4519 lightgray
+ADD p15458-4 15458 white
+CONNECT p4519-51.axle1 -> p32054-35.axlehole1 LOCKED
+CONNECT p4519-51.axle3 -> p32054-36.axlehole1 LOCKED
+CONNECT p32054-35.pin2 -> p15100-12.hole1 STIFF
+CONNECT p32054-35.pin1 -> p15100-13.hole1 STIFF
+CONNECT p32054-36.pin2 -> p15100-11.hole1 STIFF
+CONNECT p32054-36.pin1 -> p15100-14.hole1 STIFF
+CONNECT p15100-13.pin1 -> p15458-4.? STIFF
+CONNECT p15100-14.pin1 -> p15458-4.? STIFF
+CONNECT p15100-11.pin1 -> p64782-5.hole31 STIFF
+CONNECT p15100-12.pin1 -> p64782-5.hole10 STIFF
+WHY Builds the front roof hinge from two grey long pins joined axially by a grey three-stud axle and four grey perpendicular pin connectors. Mounts the white front fairing panel on the inner pair, then fixes the outer pair into the forward roof panel edge. The two receiving labels on the tilted fairing panel remain unresolved.
+
+STEP 567
+ADD p32140-27 32140 white
+ADD p32140-28 32140 white
+ADD p6558-119 6558 blue
+ADD p6558-120 6558 blue
+ADD p43093-69 43093 blue
+ADD p43093-70 43093 blue
+CONNECT p43093-69.axle1 -> p32140-27.axlehole1 LOCKED
+CONNECT p43093-70.axle1 -> p32140-28.axlehole1 LOCKED
+CONNECT p6558-119.pin2 -> p32140-27.hole2 STIFF
+CONNECT p6558-120.pin2 -> p32140-28.hole2 STIFF
+CONNECT p43093-69.pin1 -> p15458-4.hole15 STIFF
+CONNECT p43093-70.pin1 -> p15458-4.hole1 STIFF
+CONNECT p6558-119.pin1 -> p15458-4.hole16 STIFF
+CONNECT p6558-120.pin1 -> p15458-4.hole2 STIFF
+WHY Builds the mirrored white L brackets with a long blue friction pin and blue axle-pin each, then attaches both brackets to the front fairing panel end holes.
+
+STEP 568
+ADD p32523-4 32523 white
+ADD p32523-5 32523 white
+ADD p6558-121 6558 blue
+ADD p6558-122 6558 blue
+CONNECT p6558-121.pin2 -> p32523-4.hole2 STIFF
+CONNECT p6558-122.pin2 -> p32523-5.hole2 STIFF
+CONNECT p6558-121.pin1 -> p32140-27.hole1 STIFF
+CONNECT p6558-122.pin1 -> p32140-28.hole1 STIFF
+CONNECT p6558-119.pin3 -> p32523-4.hole3 STIFF
+CONNECT p6558-120.pin3 -> p32523-5.hole3 STIFF
+WHY Adds a white three-hole beam and long blue pin on each forward L bracket, capturing the existing blue pin tail in each beam outer hole and leaving the new long-pin tails exposed.
+
+STEP 569
+ADD p6558-123 6558 blue
+ADD p6558-124 6558 blue
+ADD p18654-35 18654 white
+ADD p18654-36 18654 white
+CONNECT p6558-123.pin2 -> p18654-35.hole1 STIFF
+CONNECT p6558-124.pin2 -> p18654-36.hole1 STIFF
+CONNECT p6558-123.pin1 -> p32140-27.hole3 STIFF
+CONNECT p6558-124.pin1 -> p32140-28.hole3 STIFF
+WHY Adds a long blue pin through a white round connector on each front L bracket, leaving the outer pin tails beside the existing blue tails.
+
+STEP 570
+ADD p32523-6 32523 white
+ADD p32523-7 32523 white
+CONNECT p6558-121.pin3 -> p32523-6.hole1 STIFF
+CONNECT p6558-123.pin3 -> p32523-6.hole3 STIFF
+CONNECT p6558-122.pin3 -> p32523-7.hole1 STIFF
+CONNECT p6558-124.pin3 -> p32523-7.hole3 STIFF
+WHY Presses a white three-hole beam across each pair of exposed blue pin tails, enclosing the two front corner bracket stacks.
+
+STEP 571
+ADD p2780-189 2780 black
+ADD p2780-190 2780 black
+ADD p2780-191 2780 black
+ADD p2780-192 2780 black
+ADD p2780-193 2780 black
+ADD p2780-194 2780 black
+CONNECT p2780-189.pin1 -> p15458-4.? STIFF
+CONNECT p2780-190.pin1 -> p15458-4.? STIFF
+CONNECT p2780-191.pin1 -> p15458-4.? STIFF
+CONNECT p2780-192.pin1 -> p15458-4.? STIFF
+CONNECT p2780-193.pin1 -> p15458-4.? STIFF
+CONNECT p2780-194.pin1 -> p15458-4.? STIFF
+WHY Inserts six black friction pins along the front edge of the tilted white fairing panel in the illustrated two groups of three. The current catalog geometry does not resolve these six receiving-hole labels.
+
+STEP 572
+ADD p32523-8 32523 white
+ADD p32524-15 32524 white
+ADD p32524-16 32524 white
+ADD p4274-33 4274 lightgray
+ADD p4274-34 4274 lightgray
+ADD p4274-35 4274 lightgray
+ADD p4274-36 4274 lightgray
+CONNECT p2780-189.pin2 -> p32524-15.hole6 STIFF
+CONNECT p2780-190.pin2 -> p32524-15.hole7 STIFF
+CONNECT p2780-191.pin2 -> p32523-8.hole1 STIFF
+CONNECT p2780-192.pin2 -> p32524-16.hole2 STIFF
+CONNECT p2780-193.pin2 -> p32524-16.hole1 STIFF
+CONNECT p2780-194.pin2 -> p32523-8.hole3 STIFF
+CONNECT p4274-33.pin1 -> p32524-15.hole1~ TURNS
+CONNECT p4274-34.pin1 -> p32524-15.hole5~ TURNS
+CONNECT p4274-35.pin1 -> p32524-16.hole3~ TURNS
+CONNECT p4274-36.pin1 -> p32524-16.hole7~ TURNS
+ADD roof-front-centre-half-pin 4274 lightgray
+CONNECT roof-front-centre-half-pin.pin1 -> p32523-8.hole2~ TURNS
+WHY Fits two white seven-hole beams and a central white three-hole beam across the six front pins, then inserts the five grey smooth half pins shown in the parts callout. Half-pin seating is estimated; the centre half pin is present in the booklet although omitted by the geometric reference.
+
+STEP 573
+GROUP roof-front-trim
+ADD p3023-1 3023 white
+ADD p3623-6 3623 white
+WHY Starts the front roof trim strip by placing a white one-by-two plate end to end with a white one-by-three plate. These are only aligned at this stage; the next plate joins them.
+
+STEP 574
+ADD p60479-1 60479 white
+WHY Aligns the long white one-by-twelve plate end to end with the two starter plates to form the lower strip layer. These three plates are aligned at this stage; the next overlapping layer binds them together.
+
+STEP 575
+ADD p60479-2 60479 white
+ADD p3623-7 3623 white
+CONNECT p60479-2.? -> p60479-1.? STIFF
+CONNECT p60479-2.? -> p3023-1.? STIFF
+CONNECT p60479-2.? -> p3623-6.? STIFF
+CONNECT p3623-7.? -> p60479-1.? STIFF
+WHY Adds the second white one-by-twelve plate with the illustrated overlap and reinforces the remaining end with a white one-by-three plate. Ordinary stud interfaces remain unnamed.
+
+STEP 576
+ADD p11477-8 11477 white
+ADD p11477-9 11477 white
+ADD p6636-3 6636 white
+ADD p6636-4 6636 white
+ADD p3070b-1 3070b white
+CONNECT p11477-8.? -> p60479-1.? STIFF
+CONNECT p11477-9.? -> p3623-6.? STIFF
+CONNECT p6636-3.? -> p60479-2.? STIFF
+CONNECT p6636-3.? -> p3623-7.? STIFF
+CONNECT p6636-4.? -> p60479-2.? STIFF
+CONNECT p3070b-1.? -> p60479-2.? STIFF
+END
+WHY Covers the staggered strip with two curved white end slopes, two white one-by-six tiles and the central white one-stud tile. Follows the pictured end-to-end surface arrangement; ordinary stud labels remain unknown.
+
+STEP 577
+ATTACH roof-front-trim
+CONNECT p60479-1.? -> p4274-33.? STIFF
+CONNECT p60479-1.? -> p4274-34.? STIFF
+CONNECT p60479-1.? -> roof-front-centre-half-pin.? STIFF
+CONNECT p3023-1.? -> p4274-35.? STIFF
+CONNECT p3623-6.? -> p4274-36.? STIFF
+WHY Fits the completed white trim strip onto the five half-pin studs across the front roof edge. The centre half pin is retained from the booklet; stud clutch interfaces remain unnamed.
+
+STEP 578
+ADD p2780-195 2780 black
+ADD p2780-196 2780 black
+CONNECT p2780-195.pin1 -> p87080-2.hole5 STIFF
+CONNECT p2780-196.pin1 -> p87086-2.hole5 STIFF
+END
+WHY Turns the completed roof around and inserts a black friction pin into the underside mounting bore of each rear curved corner panel. Completes the removable roof assembly.
+
+STEP 579
+ATTACH removable-roof
+CONNECT p2780-195.pin2 -> p32278-8.hole13 STIFF
+CONNECT p2780-196.pin2 -> p32278-10.hole13 STIFF
+CONNECT p24316-18.axle1 -> p32140-25.hole4 TURNS
+CONNECT p24316-19.axle1 -> p32140-26.hole4 TURNS
+WHY Lowers the roof onto the cabin, seats its two rear black pins in the upper quarter-window rails and pushes the existing brown stopped axles inward through the white rear L-bracket round holes. The rear axle contacts are round bearings; the black pins retain the roof.
+
+STEP 580
+ADD p87083-17 87083 darkgray
+ADD p87083-18 87083 darkgray
+ADD p18654-37 18654 black
+ADD p18654-38 18654 black
+CONNECT p87083-17.axle4 -> p24119-9.hole3 TURNS
+CONNECT p87083-17.axle3 -> p32278-10.hole1 TURNS
+CONNECT p87083-17.axle2 -> p18654-38.hole1 TURNS
+CONNECT p87083-17.axle1 -> p32034-25.axlehole2 LOCKED
+CONNECT p87083-18.axle4 -> p24119-10.hole8 TURNS
+CONNECT p87083-18.axle3 -> p32278-8.hole1 TURNS
+CONNECT p87083-18.axle2 -> p18654-37.hole1 TURNS
+CONNECT p87083-18.axle1 -> p32034-24.axlehole2 LOCKED
+WHY Secures each forward roof corner with a dark-grey stopped four-stud axle passing through the white panel and black upper rail, a black round spacer beneath the rail and the lower black axle-connector cross socket. Round bores permit shaft rotation; the lower cross socket keys the axle in position.
 
