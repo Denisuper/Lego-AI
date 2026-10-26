@@ -18,6 +18,7 @@ texts are fed back as conditioning context on the next attempt.
 """
 import csv, json, re, sys
 from collections import Counter, defaultdict
+from pathlib import Path
 
 # ── catalog ──────────────────────────────────────────────────────────────
 points, info = {}, {}
@@ -49,7 +50,7 @@ def mode(t1, t2, parts):
 def stage1(path):
     names, groups, critiques, unknown = {}, set(), [], Counter()
     step = "?"
-    for n, raw in enumerate(open(path, encoding="utf-8"), 1):
+    for n, raw in enumerate(Path(path).read_text(encoding="utf-8").splitlines(), 1):
         line = raw.split("#")[0].strip()
         if not line: continue
         t = line.split(); where = f"line {n} (step {step})"
@@ -87,7 +88,7 @@ def stage1(path):
         elif t[0] == "MESH":
             for side in t[1:3]:
                 name = side.split(".")[0]; part = names.get(name)
-                if part and not info.get(part, {}).get("gear_teeth") and info.get(part, {}).get("part_type") not in ("worm gear", "tread link"):
+                if part and not info.get(part, {}).get("gear_teeth") and info.get(part, {}).get("part_type") not in ("worm gear", "tread link", "gear rack"):
                     critiques.append({"severity":"error","code":"MESH_NO_TEETH","line":n,
                         "message":f"{where}: MESH uses {name} ({part}), which has no gear teeth"})
     return names, critiques, unknown

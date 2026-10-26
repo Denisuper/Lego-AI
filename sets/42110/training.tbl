@@ -1698,11 +1698,11 @@ CONNECT p24316-9.axle2~ -> p57515-5.axlehole1~ LOCKED
 WHY Builds the opposite lower suspension arm detail from a grey axle-and-pin connector, brown stopped three-length axle, two grey half pins, black rounded two-stud plate and black round tile, then fits its axle through the arm cross holes. Plate clutch surfaces are not cataloged; half-pin, connector and fork seating depths remain estimated.
 
 STEP 158
-GROUP front-steering-linkage
+GROUP front-upper-linkage
 ADD p6536-28 6536 darkgray
 ADD p32062-9 32062 red
 CONNECT p32062-9.axle2 -> p6536-28.axlehole1 LOCKED
-WHY Starts the front steering support linkage by fitting a red two-length axle into the cross hole of a dark-grey perpendicular connector.
+WHY Starts the front upper support linkage by fitting a red two-length axle into the cross hole of a dark-grey perpendicular connector.
 
 STEP 159
 ADD p41677-3 41677 blue
@@ -1744,16 +1744,16 @@ CONNECT p32062-10.axle1 -> p32291-2.axlehole1 LOCKED
 CONNECT p2780-48.pin2 -> p32291-1.hole1 STIFF
 CONNECT p2780-47.pin2 -> p32291-2.hole2 STIFF
 END
-WHY Joins the two red perpendicular connectors with a red two-length axle in opposing orientations and presses the pair onto the two waiting black pins, completing the front steering support linkage.
+WHY Joins the two red perpendicular connectors with a red two-length axle in opposing orientations and presses the pair onto the two waiting black pins, completing the front upper support linkage.
 
 STEP 164
-ATTACH front-steering-linkage
+ATTACH front-upper-linkage
 CONNECT p6558-29.pin1 -> p32013-5.hole1 STIFF
 CONNECT p6558-30.pin1 -> p6536-28.hole1 STIFF
 WHY Fits the completed linkage onto the two projecting blue upper support pins of the front axle module, seating its dark-grey connector ends at the highlighted positions while keeping the red connector pair facing forwards.
 
 STEP 165
-GROUP front-steering-tower
+GROUP front-gear-tower
 ADD p48989-2 48989 lightgray
 ADD p11478-17 11478 black
 ADD p11478-18 11478 black
@@ -1761,7 +1761,7 @@ CONNECT p48989-2.pin1~ -> p11478-17.hole3 STIFF
 CONNECT p48989-2.pin2~ -> p11478-17.hole1 STIFF
 CONNECT p48989-2.pin1~ -> p11478-18.hole3 STIFF
 CONNECT p48989-2.pin2~ -> p11478-18.hole1 STIFF
-WHY Starts the steering tower by pressing two thin black five-hole beams over one pin pair of the grey four-pin hub. The same pins span both half-thickness beams, so their seating depths remain estimated.
+WHY Starts the front gear tower by pressing two thin black five-hole beams over one pin pair of the grey four-pin hub. The same pins span both half-thickness beams, so their seating depths remain estimated.
 
 STEP 166
 ADD p4519-23 4519 lightgray
@@ -1795,7 +1795,7 @@ CONNECT p48989-2.pin3~ -> p11478-20.hole3 STIFF
 CONNECT p48989-2.pin4~ -> p11478-20.hole1 STIFF
 CONNECT p4519-23.axle1~ -> p11478-20.axlehole1 LOCKED
 CONNECT p32073-6.axle3~ -> p11478-20.axlehole2 LOCKED
-WHY Closes the opposite side of the steering tower with a second pair of thin black beams, engaging the other grey hub pin pair and both shaft ends. Both pins and shafts span half-thickness beams, so their insertion depths are estimated.
+WHY Closes the opposite side of the front gear tower with a second pair of thin black beams, engaging the other grey hub pin pair and both shaft ends. Both pins and shafts span half-thickness beams, so their insertion depths are estimated.
 
 STEP 170
 ADD p32054-6 32054 lightgray
@@ -1815,7 +1815,7 @@ CONNECT p87082-2.pin1~ -> p11478-17.hole2 STIFF
 CONNECT p87082-2.pin1~ -> p11478-18.hole2 STIFF
 CONNECT p87082-3.pin2~ -> p11478-19.hole2 STIFF
 CONNECT p87082-3.pin2~ -> p11478-20.hole2 STIFF
-WHY Inserts a grey double-pin connector through the middle round holes on each side of the steering tower, leaving their outer pin ends exposed for the next vertical braces. Each inner pin spans two thin beams, so its seating is estimated.
+WHY Inserts a grey double-pin connector through the middle round holes on each side of the front gear tower, leaving their outer pin ends exposed for the next vertical braces. Each inner pin spans two thin beams, so its seating is estimated.
 
 STEP 172
 ADD p42003-14 42003 lightgray
@@ -1845,11 +1845,173 @@ END
 WHY Builds the tan twenty-tooth bevel gear onto a dark-grey stopped four-length shaft, passes that shaft through the grey tower hub bearing and adds a black twelve-tooth bevel gear behind it. The reference shaft is slightly displaced along its axis, so the shaft seating depths remain estimated.
 
 STEP 175
-ATTACH front-steering-tower
+ATTACH front-gear-tower
 CONNECT p32054-6.pin2 -> p64178-2.hole23 STIFF
 CONNECT p32054-7.pin2 -> p64178-2.hole21 STIFF
 CONNECT p3705-8.axle4 -> p48989-2.hole3 TURNS
 CONNECT p87083-5.axle1~ -> p32140-7.hole1 TURNS
 MESH p32270-3.teeth p18575-4.teeth
-WHY Mounts the completed steering tower onto the front differential frame using its two grey long pins, captures the waiting red shaft in the lower hub bearing and seats the new dark-grey shaft in the grey L-shaped rear bearing. The black twelve-tooth bevel gear meshes with the waiting tan twenty-tooth gear; the new rear bearing depth is estimated.
+WHY Mounts the completed front gear tower onto the front differential frame using its two grey long pins, captures the waiting red shaft in the lower hub bearing and seats the new dark-grey shaft in the grey L-shaped rear bearing. The black twelve-tooth bevel gear meshes with the waiting tan twenty-tooth gear; the new rear bearing depth is estimated.
+
+STEP 176
+ADD p40490-11 40490 black
+ADD p40490-12 40490 black
+ADD p2780-49 2780 black
+ADD p2780-50 2780 black
+CONNECT p2780-49.pin2 -> p40490-11.hole7 STIFF
+CONNECT p2780-50.pin1 -> p40490-12.hole7 STIFF
+CONNECT p60485-1.axle8 -> p40490-11.hole8 TURNS
+CONNECT p60485-1.axle2 -> p40490-12.hole8 TURNS
+CONNECT p32073-6.axle1 -> p40490-12.hole6 TURNS
+CONNECT p87082-2.pin2 -> p40490-11.hole4 STIFF
+CONNECT p87082-3.pin1 -> p40490-12.hole4 STIFF
+CONNECT p2780-44.pin1 -> p40490-11.hole1 STIFF
+CONNECT p2780-46.pin2 -> p40490-12.hole1 STIFF
+WHY Builds two black nine-hole vertical braces with one black friction pin each and fits them over the yellow cross shaft, grey tower pin ends and original black frame pins. The left brace also captures the projecting yellow five-length shaft in a round bearing hole.
+
+STEP 177
+ADD p32184-8 32184 darkgray
+ADD p43093-20 43093 blue
+ADD p43093-21 43093 blue
+CONNECT p43093-20.axle1 -> p32184-8.axlehole1 LOCKED
+CONNECT p43093-21.axle1 -> p32184-8.axlehole2 LOCKED
+CONNECT p43093-20.pin1 -> p40490-11.hole5 STIFF
+CONNECT p43093-21.pin1 -> p40490-11.hole3 STIFF
+WHY Builds a dark-grey double perpendicular bearing with two blue axle-pins through its cross holes and presses the two pin ends into the right vertical brace, leaving its middle round hole for a longitudinal shaft.
+
+STEP 178
+ADD p55013-2 55013 darkgray
+ADD p3648b-4 3648b darkgray
+CONNECT p55013-2.axle8 -> p32184-8.hole1 TURNS
+CONNECT p55013-2.axle7 -> p3648b-4.axlehole1 LOCKED
+CONNECT p55013-2.axle6 -> p32291-1.hole2 TURNS
+CONNECT p55013-2.axle5 -> p32140-6.hole4 TURNS
+WHY Builds the dark-grey twenty-four-tooth gear onto the stopped dark-grey eight-length shaft and threads that shaft through the new outer bearing, red connector and grey L-shaped bearing. Aligns the shaft end with the cross-hole reference highlighted in the inset, keeping it free to turn in the three round holes.
+
+STEP 179
+ADD p32316-7 32316 black
+CONNECT p43093-19.pin1 -> p32316-7.hole2 STIFF
+CONNECT p43093-18.pin1 -> p32316-7.hole4 STIFF
+WHY Presses a black five-hole beam across the two projecting blue pin ends at the base of the front gear tower, tying the lower mounting pair together.
+
+STEP 180
+ADD p87082-4 87082 lightgray
+ADD p87082-5 87082 lightgray
+ADD p2780-51 2780 black
+ADD p2780-52 2780 black
+CONNECT p2780-52.pin1 -> p87082-4.hole1 STIFF
+CONNECT p2780-51.pin2 -> p87082-5.hole1 STIFF
+CONNECT p87082-4.pin1 -> p32316-7.hole5 STIFF
+CONNECT p87082-5.pin1 -> p32316-7.hole1 STIFF
+WHY Builds two grey double-pin connectors with black friction pins through their middle holes and fits one grey pin end into each outer hole of the lower black crossbeam, preparing the white corner ties.
+
+STEP 181
+ADD p32523-2 32523 white
+ADD p32523-3 32523 white
+CONNECT p2780-43.pin1 -> p32523-2.hole1 STIFF
+CONNECT p2780-51.pin1 -> p32523-2.hole3 STIFF
+CONNECT p2780-45.pin2 -> p32523-3.hole1 STIFF
+CONNECT p2780-52.pin2 -> p32523-3.hole3 STIFF
+WHY Adds one white three-hole beam at each lower corner, bridging the original black frame pin to the new grey connector black pin and closing both lower tower mounting ties.
+
+STEP 182
+GROUP front-steering-rack
+ADD p87761-1 87761 black
+WHY Starts the front steering rack with the black seven-length toothed rack, keeping the tooth row facing the direction shown for the later pinion.
+
+STEP 183
+ADD p32184-9 32184 darkgray
+ADD p32184-10 32184 darkgray
+ADD p32062-11 32062 red
+ADD p32062-12 32062 red
+ADD p32062-13 32062 red
+ADD p32062-14 32062 red
+CONNECT p32062-11.axle1 -> p32184-9.axlehole1 LOCKED
+CONNECT p32062-11.axle2 -> p87761-1.axlehole2 LOCKED
+CONNECT p32062-12.axle1 -> p32184-10.axlehole2 LOCKED
+CONNECT p32062-12.axle2 -> p87761-1.axlehole1 LOCKED
+CONNECT p32062-13.axle1 -> p32184-10.axlehole1 LOCKED
+CONNECT p32062-14.axle1 -> p32184-9.axlehole2 LOCKED
+WHY Builds two dark-grey double perpendicular connectors with two red two-length axles each and fits their inner axle ends into the cross holes at the two ends of the steering rack, leaving the outer red ends for the steering-ball connectors.
+
+STEP 184
+ADD p32013-6 32013 darkgray
+ADD p32013-7 32013 darkgray
+ADD p6628-14 6628 red
+ADD p6628-15 6628 red
+CONNECT p6628-14.pin1 -> p32013-6.hole1 STIFF
+CONNECT p6628-15.pin1 -> p32013-7.hole1 STIFF
+CONNECT p32062-14.axle2 -> p32013-6.axlehole1 LOCKED
+CONNECT p32062-13.axle2 -> p32013-7.axlehole1 LOCKED
+WHY Builds two dark-grey axle connectors with red friction-pin towballs and fits them onto the remaining outer red axle ends of the steering rack, orienting the balls outwards for the steering links.
+
+STEP 185
+ADD front-steering-link-one 32005a darkgray
+ADD front-steering-link-two 32005a darkgray
+CONNECT front-steering-link-one.? -> p6628-14.? TURNS
+CONNECT front-steering-link-two.? -> p6628-15.? TURNS
+WHY Snaps the two long dark-grey steering links onto the red rack towballs, leaving their outer sockets free. The catalog does not name the link ball sockets or towball surfaces, so those articulating endpoints remain unknown.
+
+STEP 186
+ADD p60483-14 60483 black
+ADD p60483-15 60483 black
+ADD p43093-22 43093 blue
+ADD p43093-23 43093 blue
+ADD p2780-53 2780 black
+ADD p2780-54 2780 black
+CONNECT p43093-22.axle1 -> p60483-14.axlehole1 LOCKED
+CONNECT p43093-23.axle1 -> p60483-15.axlehole1 LOCKED
+CONNECT p2780-53.pin2 -> p60483-14.hole1 STIFF
+CONNECT p2780-54.pin2 -> p60483-15.hole1 STIFF
+CONNECT p43093-22.pin1 -> p87761-1.hole2 STIFF
+CONNECT p43093-23.pin1 -> p87761-1.hole1 STIFF
+CONNECT p2780-53.pin1 -> p32184-9.hole1 STIFF
+CONNECT p2780-54.pin1 -> p32184-10.hole1 STIFF
+END
+WHY Builds two black axle-and-pin blocks with blue axle-pins and black friction pins, then fits them over the rack end assemblies to brace each grey connector against the rack while leaving the toothed middle section clear.
+
+STEP 187
+ATTACH front-steering-rack
+CONNECT front-steering-link-one.? -> p2736-5.? TURNS
+CONNECT front-steering-link-two.? -> p2736-6.? TURNS
+WHY Turns the front module around, positions the rack behind the front differential frame and snaps the free steering-link sockets onto the grey towballs on both wheel carriers. Keeps both wheels aligned; the ball socket endpoints remain unknown.
+
+STEP 188
+ADD p60484-5 60484 black
+ADD p2780-55 2780 black
+ADD p2780-56 2780 black
+CONNECT p2780-55.pin1 -> p60484-5.hole1 STIFF
+CONNECT p2780-56.pin1 -> p60484-5.hole5 STIFF
+CONNECT p2780-55.pin2 -> p64178-2.hole6 STIFF
+CONNECT p2780-56.pin2 -> p64178-2.hole8 STIFF
+CONNECT p99008-2.axle2 -> p60484-5.hole4 TURNS
+WHY Builds a black T-shaped bearing bracket with two black friction pins and fits it to the end of the differential frame over the tan input shaft. Centres the steering rack as highlighted before adding its pinion.
+
+STEP 189
+ADD p87083-6 87083 darkgray
+ADD p32270-4 32270 black
+CONNECT p87083-6.axle4 -> p60484-5.hole2 TURNS
+CONNECT p87083-6.axle3 -> p32270-4.axlehole1 LOCKED
+CONNECT p87083-6.axle2 -> p40490-9.hole5 TURNS
+MESH p32270-4.teeth p87761-1.teeth
+WHY Positions a black twelve-tooth bevel gear above the centred steering rack and passes the dark-grey stopped four-length axle through the T-shaped bearing, gear cross hole and rear black crossbeam bearing. The pinion meshes with the straight rack to convert shaft rotation into lateral steering movement.
+
+STEP 190
+ADD p59443-8 59443 black
+ADD p3706-4 3706 black
+CONNECT p99008-2.axle3 -> p59443-8.axlehole1 LOCKED
+CONNECT p3706-4.axle6 -> p59443-8.axlehole2 LOCKED
+WHY Fits a black two-length axle connector over the tan differential input shaft and inserts a black six-length axle into the other end, extending the front drivetrain input towards the next chassis module.
+
+STEP 191
+ADD p59426-3 59426 darkgray
+ADD p94925-7 94925 lightgray
+ADD p18575-6 18575 tan
+CONNECT p59426-3.axle1~ -> p94925-7.axlehole1 LOCKED
+CONNECT p59426-3.axle2~ -> p42003-16.hole2 TURNS
+CONNECT p59426-3.axle3~ -> p18575-6.axlehole1 LOCKED
+CONNECT p59426-3.axle4~ -> p32291-2.hole1 TURNS
+MESH p94925-7.teeth p18575-5.teeth
+MESH p18575-6.teeth p3648b-4.teeth
+WHY Builds a grey sixteen-tooth gear onto the short end of the dark-grey five-and-a-half-length stopped axle, threads it through the upper grey bearing and adds a tan twenty-tooth bevel gear between that bearing and the red connector bearing. The grey gear meshes with the tower tan twenty-tooth gear and the new tan gear meshes diagonally with the dark-grey twenty-four-tooth gear. Shaft depths are estimated from the reference offset; the highlighted line is the visual alignment check in the booklet.
 
