@@ -3098,13 +3098,13 @@ ADD p98138-5 98138 black
 CONNECT p43093-37.axle1 -> engine-curved-elbow.? LOCKED
 CONNECT p43093-38.axle1 -> engine-curved-elbow.? LOCKED
 CONNECT p43093-37.pin1 -> p15100-4.hole1 STIFF
-CONNECT p43093-38.pin1~ -> p62462-1.hole1 STIFF
-CONNECT p4274-13.pin2~ -> p62462-1.hole1 TURNS
+CONNECT p43093-38.pin1 -> p62462-1.hole1 STIFF
+CONNECT p4274-13.pin2 -> p62462-1.hole1 TURNS
 CONNECT p98138-5.? -> p4274-13.? STIFF
 END
 ATTACH engine-curved-pipe
 CONNECT p15100-4.pin1 -> p32034-17.hole1 STIFF
-WHY Builds the grey curved engine pipe using an elbow, two blue axle-pins, a grey perpendicular pin connector and straight pin sleeve, then caps its free end with a grey half pin and black round tile. Attaches the grey friction pin to the black engine-side connector as shown on the following continuation page. The elbow cross sockets and tile clutch are unnamed; sleeve seating is estimated.
+WHY Builds the grey curved engine pipe using an elbow, two blue axle-pins, a grey perpendicular pin connector and straight pin sleeve, then caps its free end with a grey half pin and black round tile. Attaches the grey friction pin to the black engine-side connector as shown on the following continuation page. The elbow cross sockets and tile clutch are unnamed; the two pins enter opposite ends of the sleeve's single cataloged bore.
 
 STEP 304
 ADD p43093-39 43093 blue
