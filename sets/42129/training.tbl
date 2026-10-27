@@ -291,55 +291,47 @@ ADD ch1-pin-3 61332 black
 ADD ch1-pin-4 61332 black
 ADD ch1-pin-5 61332 black
 ADD ch1-pin-6 61332 black
-CONNECT ch1-pin-2.pin2 -> ch1-beam3-1.hole1 STIFF
-CONNECT ch1-pin-1.pin2 -> ch1-beam3-1.hole3 STIFF
-CONNECT ch1-pin-1.pin1 -> ch1-beam3-2.hole9 STIFF
-CONNECT ch1-pin-1.pin3 -> ch1-beam3-3.hole2 STIFF
-CONNECT ch1-pin-2.pin1 -> ch1-beam3-2.hole8 STIFF
-CONNECT ch1-pin-2.pin3 -> ch1-beam3-3.hole1 STIFF
-CONNECT ch1-pin-4.pin2 -> ch1-beam3-2.hole1 STIFF
-CONNECT ch1-pin-3.pin2 -> ch1-beam3-2.hole2 STIFF
-CONNECT ch1-pin-6.pin1 -> ch1-beam3-3.hole8 STIFF
-CONNECT ch1-pin-5.pin1 -> ch1-beam3-3.hole9 STIFF
-WHY Starts the first gearbox (the gear stage between the motors and the axles) with 2 3x3 beams, a 3-hole beam, 4 friction pins and 2 long pins; it reduces the motor speed and passes the drive toward the axles. It sits toward the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The long pins grip the 3x3 beam with friction, making a rigid join (10 such joints in this step). Its unused ends stay free because step 27 slots 4 5-hole beams onto them.
-
-STEP 27
 ADD ch1-beam5-1 32316 olivegreen
 ADD ch1-beam5-2 32316 olivegreen
 ADD ch1-axle5-1 15462 brown
 ADD ch1-gear-1 3648b darkgray
 ADD ch1-gear-2 94925 lightgray
-CONNECT tr-pin-16.pin2 -> ch1-beam5-1.hole2 STIFF
-CONNECT ch1-pin-4.pin1 -> ch1-beam5-1.hole3 STIFF
-CONNECT tr-pin-17.pin3 -> ch1-beam5-1.hole4 STIFF
-CONNECT ch1-pin-3.pin1 -> ch1-beam5-1.hole5 STIFF
-CONNECT tr-pin-15.pin2 -> ch1-beam5-2.hole2 STIFF
-CONNECT ch1-pin-6.pin2 -> ch1-beam5-2.hole3 STIFF
-CONNECT tr-pin-18.pin3 -> ch1-beam5-2.hole4 STIFF
-CONNECT ch1-pin-5.pin2 -> ch1-beam5-2.hole5 STIFF
-CONNECT ch1-axle5-1.axle3 -> ch1-gear-2.axlehole1 LOCKED
-CONNECT ch1-axle5-1.axle4 -> ch1-gear-1.axlehole1 LOCKED
-CONNECT ch1-axle5-1.axle5 -> ch1-beam3-2.hole7 TURNS
-WHY Finishes the first gearbox (the gear stage between the motors and the axles) with 2 5-hole beams, a 24-tooth gear, a 16-tooth gear and a 5-long stop axle; it reduces the motor speed and passes the drive toward the axles. It sits toward the rear of the truck, at mid height. It is fixed onto the 3x3 beam and 4 friction pins from step 26 and 4 long pins from step 20. The 5-long stop axle is locked in the cross hole of the 16-tooth gear, so the two turn together (2 such joints in this step). The 5-long stop axle passes through a round hole of the 3x3 beam with no grip, so it can spin or swing freely there. These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings. Its unused ends stay free because step 29 slots a 7-hole beam and an axle connector onto them.
+CONNECT ch1-pin-1.? -> ch1-beam3-1.?
+CONNECT ch1-pin-2.? -> ch1-beam3-1.?
+CONNECT ch1-pin-1.? -> ch1-beam3-2.?
+CONNECT ch1-pin-2.? -> ch1-beam3-3.?
+CONNECT ch1-beam5-1.? -> tr-pin-17.?
+CONNECT ch1-beam5-2.? -> tr-pin-18.?
+CONNECT ch1-pin-3.? -> ch1-beam3-2.?
+CONNECT ch1-pin-4.? -> ch1-beam3-2.?
+CONNECT ch1-pin-5.? -> ch1-beam3-3.?
+CONNECT ch1-pin-6.? -> ch1-beam3-3.?
+CONNECT ch1-beam5-1.? -> ch1-beam3-2.?
+CONNECT ch1-beam5-2.? -> ch1-beam3-3.?
+CONNECT ch1-axle5-1.? -> ch1-beam3-2.?
+CONNECT ch1-axle5-1.? -> ch1-gear-1.?
+CONNECT ch1-axle5-1.? -> ch1-gear-2.?
+CONNECT ch1-beam5-1.? -> tr-pin-16.?
+CONNECT ch1-beam5-2.? -> tr-pin-15.?
+WHY Builds the first gearbox support with white beams, pins, olive beams, a brown axle and two gears, then attaches it across the chassis.
 
-STEP 28
+STEP 27
 ADD tr-axle7-1 44294 lightgray
 ADD tr-bush-6 3713 red
 ADD tr-gear-8 94925 lightgray
+CONNECT tr-bush-6.? -> tr-axle7-1.?
+CONNECT tr-gear-8.? -> tr-axle7-1.?
+CONNECT tr-axle7-1.? -> ch1-beam3-2.?
+WHY Fits a grey seven-stud axle with a red half bush and a gear into the gearbox support.
+
+STEP 28
 ADD tr-axle7-2 44294 lightgray
 ADD tr-gear-9 10928 darkgray
 ADD tr-bush-7 3713 red
-CONNECT tr-axle7-1.axle1 -> ch1-beam3-2.hole3 TURNS
-CONNECT tr-axle7-1.axle2 -> tr-bush-6.axlehole1 LOCKED
-CONNECT tr-axle7-1.axle3 -> tr-gear-8.axlehole1 LOCKED
-CONNECT tr-axle7-2.axle3 -> ch1-beam3-3.hole3 TURNS
-CONNECT tr-axle7-2.axle4 -> tr-gear-9.axlehole1 LOCKED
-CONNECT tr-axle7-2.axle5 -> tr-bush-7.axlehole1 LOCKED
-MESH ch1-gear-2.teeth tr-gear-8.teeth
-RATIO ch1-gear-2 tr-gear-8 16/16
-MESH ch1-gear-1.teeth tr-gear-9.teeth
-RATIO ch1-gear-1 tr-gear-9 24/8
-WHY Adds a 16-tooth gear, an 8-tooth gear, 2 7-long axles and 2 bushs to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the 2 3x3 beams from step 26. The 7-long axle is locked in the cross hole of the bush, so the two turn together (4 such joints in this step). The 7-long axle passes through a round hole of the 3x3 beam with no grip, so it can spin or swing freely there (2 such joints in this step). The two 16-tooth gears mesh 1:1, so speed is unchanged and the direction reverses. The 24-tooth gear drives the 8-tooth gear (24:8), so the output turns 3.00 times as fast with 0.33 times the force. These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings. Its unused ends stay free because step 29 slots 2 7-hole beams, a 3-hole beam and 1 other part onto them.
+CONNECT tr-bush-7.? -> tr-axle7-2.?
+CONNECT tr-gear-9.? -> tr-axle7-2.?
+CONNECT tr-axle7-2.? -> ch1-beam3-3.?
+WHY Fits a second grey seven-stud axle with a red half bush and a small gear into the gearbox support.
 
 STEP 29
 ADD tr-beam7-1 32524 darkgray
