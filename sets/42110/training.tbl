@@ -8509,7 +8509,11 @@ WHY Turns the completed rack over and inserts four black mounting pins into the 
 
 STEP 844
 ATTACH roof-rack
-WHY Lowers the roof rack onto the vehicle roof, with its four pins locating the rack and its ladder and cargo box hanging at the sides; roof receiving holes remain unresolved.
+CONNECT rack-roof-pin1.pin2 -> p64782-2.? STIFF
+CONNECT rack-roof-pin2.pin2 -> p64782-2.? STIFF
+CONNECT rack-roof-pin3.pin2 -> p64782-5.? STIFF
+CONNECT rack-roof-pin4.pin2 -> p64782-5.? STIFF
+WHY Lowers the roof rack onto the rear and front white roof panels using its four mounting pins; the exact panel-hole labels remain unresolved.
 
 STEP 845
 ADD rack-load-bracket 60484 black
