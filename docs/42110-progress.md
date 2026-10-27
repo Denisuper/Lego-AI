@@ -23,3 +23,5 @@ Source step 572 specifies five grey half pins along the front roof trim supports
 For source step 844, the rear and front rack pins are now linked to the respective rear and front roof panels from source steps 545-546. Their exact panel-hole labels remain unknown. These were previously absent from the attachment record, so recording them increases the count of explicit unknown endpoints by four.
 
 Source step 788 shows the brown gear shaft entering the second roof panel from the front. Tracing the panel sequence back to steps 545-546 identifies that panel as p64782-4; its precise receiving hole and the shaft depth remain unresolved.
+
+The source views at steps 847 and 850 show each short case wall built from a four-stud side brick and a two-stud side brick. The four corner stacks now attach to both wall bricks on each side instead of putting both stacks on the four-stud brick. The stud connection points remain unnamed.

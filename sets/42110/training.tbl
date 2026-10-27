@@ -8594,9 +8594,9 @@ CONNECT case-corner-plate5.? -> case-corner-plate6.?
 CONNECT case-corner4.? -> case-corner-plate7.?
 CONNECT case-corner-plate7.? -> case-corner-plate8.?
 CONNECT case-corner-plate2.? -> case-side-brick1.?
-CONNECT case-corner-plate4.? -> case-side-brick1.?
+CONNECT case-corner-plate4.? -> case-side-brick3.?
 CONNECT case-corner-plate6.? -> case-side-brick2.?
-CONNECT case-corner-plate8.? -> case-side-brick2.?
+CONNECT case-corner-plate8.? -> case-side-brick4.?
 WHY Builds four dark-grey clipped corner units from inverted slopes and stacked one-stud plates, then fits them around the case handles.
 
 STEP 851
