@@ -4080,22 +4080,22 @@ ADD p18651-8 18651 black
 ADD p18651-9 18651 black
 ADD p62462-3 62462 lightgray
 ADD p62462-4 62462 lightgray
-CONNECT p6558-73.pin1~ -> p62462-3.hole1 STIFF
-CONNECT p6558-73.pin3~ -> p62462-4.hole1 STIFF
-CONNECT p18651-8.pin1~ -> p62462-3.hole1 STIFF
-CONNECT p18651-9.pin1~ -> p62462-4.hole1 STIFF
-WHY Extends both sides of the headrest rail with grey two-length pin sleeves and black long axle-pins, joining their round pin ends inside the sleeves. Leave the black axle ends pointing outward; sleeve insertion depths are estimated.
+CONNECT p6558-73.pin1 -> p62462-3.hole1 STIFF
+CONNECT p6558-73.pin3 -> p62462-4.hole1 STIFF
+CONNECT p18651-8.pin1 -> p62462-3.hole1 STIFF
+CONNECT p18651-9.pin1 -> p62462-4.hole1 STIFF
+WHY Extends both sides of the headrest rail with grey two-length pin sleeves and black long axle-pins, joining their round pin ends inside the sleeves. Leave the black axle ends pointing outward; the completed rail shows the pin ends meeting inside each sleeve.
 
 STEP 393
 ADD p32054-29 32054 lightgray
 ADD p32054-30 32054 lightgray
 ADD p18677-1 18677 black
 ADD p18677-2 18677 black
-CONNECT p18651-8.axle2~ -> p18677-1.? TURNS
-CONNECT p18651-9.axle2~ -> p18677-2.? TURNS
+CONNECT p18651-8.axle2 -> p18677-1.? TURNS
+CONNECT p18651-9.axle2 -> p18677-2.? TURNS
 CONNECT p18651-8.axle1 -> p32054-29.axlehole1 LOCKED
 CONNECT p18651-9.axle1 -> p32054-30.axlehole1 LOCKED
-WHY Adds a black two-stud plate and grey long pin with stop bush to each outer axle end of the headrest rail. The grey cross sockets lock to the black axles while the uncataloged round plate bores sit around the other axle segments; plate seating is estimated.
+WHY Adds a black two-stud plate and grey long pin with stop bush to each outer axle end of the headrest rail. The grey cross sockets lock to the outer black axle segments while the uncataloged round plate bores sit around the adjacent segments.
 
 STEP 394
 ADD p43093-48 43093 blue
@@ -4252,19 +4252,19 @@ WHY Fits two grey L-shaped axle-and-pin supports over the waiting blue crossbeam
 STEP 408
 ADD p24316-16 24316 brown
 ADD p24316-17 24316 brown
-CONNECT p24316-16.axle3~ -> p32140-14.axlehole1 LOCKED
-CONNECT p24316-17.axle3~ -> p32140-13.axlehole1 LOCKED
-WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The short stopped-end seating in the supports is estimated.
+CONNECT p24316-16.axle3 -> p32140-14.axlehole1 LOCKED
+CONNECT p24316-17.axle3 -> p32140-13.axlehole1 LOCKED
+WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The stopped ends seat in these supports, as shown in the source.
 
 STEP 409
 END
 ATTACH rear-body-lower-panel
-CONNECT p24316-16.axle1~ -> p63869-4.axlehole1 LOCKED
-CONNECT p24316-16.axle2~ -> p32015-2.hole1 TURNS
-CONNECT p24316-17.axle1~ -> p63869-5.axlehole1 LOCKED
-CONNECT p24316-17.axle2~ -> p32015-1.hole1 TURNS
+CONNECT p24316-16.axle1 -> p63869-4.axlehole1 LOCKED
+CONNECT p24316-16.axle2 -> p32015-2.hole1 TURNS
+CONNECT p24316-17.axle1 -> p63869-5.axlehole1 LOCKED
+CONNECT p24316-17.axle2 -> p32015-1.hole1 TURNS
 CONNECT p32054-31.pin2 -> p32140-1.hole4 STIFF
-WHY Turns the chassis and fits the rear lower panel assembly behind the rear axle, passing both brown mounting axles through the round angled connectors into the grey triple connector cross sockets. Pushes the central grey pin into its waiting grey L support as shown in the inset; brown stopped-axle seating is estimated.
+WHY Turns the chassis and fits the rear lower panel assembly behind the rear axle, passing both brown mounting axles through the round angled connectors into the grey triple connector cross sockets. Pushes the central grey pin into its waiting grey L support as shown in the inset; each axle spans the L support, the previously assembled angled connector from step 68 and the triple connector from step 69.
 
 STEP 410
 GROUP rear-left-corner-trim
