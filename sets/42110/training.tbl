@@ -2980,11 +2980,11 @@ ADD p4274-11 4274 lightgray
 ADD p4274-12 4274 lightgray
 ADD engine-open-stud-one 85861 lightgray
 ADD engine-open-stud-two 85861 lightgray
-CONNECT p4274-11.pin2~ -> p32034-13.hole1 TURNS
-CONNECT p4274-12.pin2~ -> p32034-14.hole1 TURNS
+CONNECT p4274-11.pin2 -> p32034-13.hole1 TURNS
+CONNECT p4274-12.pin2 -> p32034-14.hole1 TURNS
 CONNECT engine-open-stud-one.? -> p4274-11.? STIFF
 CONNECT engine-open-stud-two.? -> p4274-12.? STIFF
-WHY Fits two grey half pins with grey open-stud round plates into the round holes of the engine side rail. These provide open sockets for the decorative hose connectors that follow; half-pin seating is estimated and ordinary stud clutch surfaces are unnamed.
+WHY Fits two grey half pins with grey open-stud round plates into the round holes of the engine side rail. These provide open sockets for the decorative hose connectors that follow; the source shows both half pins seated, while ordinary stud clutch surfaces are unnamed.
 
 STEP 292
 ADD p3705-12 3705 red

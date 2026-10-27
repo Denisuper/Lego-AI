@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 700 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 698 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -43,3 +43,5 @@ Step 261 shows both identical step-258 pins pushed through the matching engine b
 At step 280 both long side rails fit onto the paired red pins installed at step 258; the illustrated matching seating resolves the second rail connection.
 
 The enlarged step 282-283 insets show the three steering-bracket half pins fully seated in their connector and beam bores. Their tile clutch points remain unnamed.
+
+Step 291 shows the paired half pins fully seated in the engine side connectors introduced at step 197. Their mounting depths are now specified; the open-stud plate clutch points remain unnamed.
