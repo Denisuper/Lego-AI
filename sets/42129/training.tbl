@@ -5114,78 +5114,60 @@ ADD hs3-axle3-1 6587 darktan
 ADD hs3-tile-1 98138 transorange
 ADD hs3-beam2-1 41677 darkgray
 ADD hs3-beam2-2 41677 darkgray
-CONNECT hs3-axle3-1.axle3 -> hs3-beam2-1.axlehole2 LOCKED
-CONNECT hs3-axle3-1.axle3 -> hs3-beam2-2.axlehole2 LOCKED
-CONNECT hs3-axle3-1.barhole1 -> hs3-tile-1.?
-WHY Starts the third hood side with 2 2-hole thin beams, a 3-long axle and a tile. It sits toward the front of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 3-long axle sits in a cross hole of the 2-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). Its unused end stays free because step 546 slots a 5-hole thin beam onto it.
-
-STEP 546
 ADD hs3-beam5-1 11478 darkgray
 ADD hs3-beam5-2 11478 darkgray
 ADD hs3-axle3-2 4519 lightgray
-CONNECT hs3-axle3-2.axle1 -> hs1-conn-1.axlehole1 LOCKED
-CONNECT hs3-axle3-1.axle2 -> hs3-beam5-1.axlehole1 LOCKED
-CONNECT hs3-axle3-2.axle3 -> hs3-beam2-1.axlehole1 LOCKED
-CONNECT hs3-axle3-2.axle3 -> hs3-beam2-2.axlehole1 LOCKED
-CONNECT hs3-axle3-1.axle2 -> hs3-beam5-2.axlehole1 LOCKED
-WHY Adds 2 5-hole thin beams and a 3-long axle to the third hood side. It sits in the middle of the truck, at mid height. It is fixed onto the 2 2-hole thin beams and 3-long axle from step 545 and pin connector from step 542. The 3-long axle sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (5 such joints in this step). Its unused end stays free because step 547 slots a round pin connector onto it.
-
-STEP 547
 ADD hs3-conn-1 63869 lightgray
 ADD hs3-pin-1 4274 lightgray
 ADD hs3-pin-2 4274 lightgray
 ADD hs3-beam-1 18654 darkgray
 ADD hs3-pin-3 61332 black
 ADD hs3-apin-1 18651 black
-CONNECT hs3-axle3-2.axle2 -> hs3-beam-1.hole1 TURNS
-CONNECT hs3-axle3-1.axle1 -> hs3-conn-1.axlehole1 LOCKED
-CONNECT hs3-pin-3.pin1 -> hs3-beam5-1.hole2 STIFF
-CONNECT hs3-pin-3.pin1 -> hs3-beam5-2.hole2 STIFF
-CONNECT hs3-apin-1.axle2 -> hs3-beam5-1.axlehole2 LOCKED
-CONNECT hs3-apin-1.axle2 -> hs3-beam5-2.axlehole2 LOCKED
-CONNECT hs3-pin-2.pin2 -> hs3-conn-1.hole2 TURNS
-CONNECT hs3-pin-1.pin2 -> hs3-conn-1.hole3 TURNS
-WHY Finishes the third hood side with a round pin connector, a perpendicular pin connector, 2 frictionless half pins, a friction pin and a long axle pin. It sits in the middle of the truck, at mid height. It is fixed onto the 2 5-hole thin beams and 3-long axle from step 546 and 3-long axle from step 545. The long axle pin sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The frictionless half pin passes through a round hole of the perpendicular pin connector with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 591 slots a pin connector and a pin hub onto them.
+CONNECT hs3-tile-1.? -> hs3-axle3-1.?
+CONNECT hs3-beam2-1.? -> hs3-axle3-1.?
+CONNECT hs3-beam2-2.? -> hs3-axle3-1.?
+CONNECT hs3-beam5-1.? -> hs3-axle3-1.?
+CONNECT hs3-beam5-2.? -> hs3-axle3-1.?
+CONNECT hs3-axle3-2.? -> hs3-beam5-1.?
+CONNECT hs3-conn-1.? -> hs3-axle3-2.?
+CONNECT hs3-pin-1.? -> hs3-conn-1.?
+CONNECT hs3-pin-2.? -> hs3-conn-1.?
+CONNECT hs3-beam-1.? -> hs3-axle3-2.?
+CONNECT hs3-pin-3.? -> hs3-beam5-2.?
+CONNECT hs3-apin-1.? -> hs3-beam5-2.?
+CONNECT hs3-conn-1.? -> hs1-beam3-1.?
+WHY Builds and fits the first grey side support with amber round tile, axles, beams and pins.
 
-STEP 548
+STEP 546
 ADD hs4-axle3-1 6587 darktan
 ADD hs4-tile-1 98138 transorange
 ADD hs4-beam2-1 41677 darkgray
 ADD hs4-beam2-2 41677 darkgray
-CONNECT hs4-axle3-1.axle3 -> hs4-beam2-1.axlehole2 LOCKED
-CONNECT hs4-axle3-1.axle3 -> hs4-beam2-2.axlehole2 LOCKED
-CONNECT hs4-axle3-1.barhole1 -> hs4-tile-1.?
-WHY Starts the fourth hood side with 2 2-hole thin beams, a 3-long axle and a tile. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 3-long axle sits in a cross hole of the 2-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). Its unused end stays free because step 549 slots a 5-hole thin beam onto it.
-
-STEP 549
 ADD hs4-beam5-1 11478 darkgray
 ADD hs4-beam5-2 11478 darkgray
 ADD hs4-axle3-2 4519 lightgray
-CONNECT hs4-axle3-2.axle3 -> hs2-conn-1.axlehole1 LOCKED
-CONNECT hs4-axle3-1.axle2 -> hs4-beam5-1.axlehole1 LOCKED
-CONNECT hs4-axle3-2.axle1 -> hs4-beam2-1.axlehole1 LOCKED
-CONNECT hs4-axle3-2.axle1 -> hs4-beam2-2.axlehole1 LOCKED
-CONNECT hs4-axle3-1.axle2 -> hs4-beam5-2.axlehole1 LOCKED
-WHY Adds 2 5-hole thin beams and a 3-long axle to the fourth hood side. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 2 2-hole thin beams and 3-long axle from step 548 and pin connector from step 544. The 3-long axle sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (5 such joints in this step). Its unused end stays free because step 550 slots a round pin connector onto it.
-
-STEP 550
 ADD hs4-conn-1 63869 lightgray
 ADD hs4-pin-1 4274 lightgray
 ADD hs4-pin-2 4274 lightgray
 ADD hs4-beam-1 18654 darkgray
-ADD hs4-apin-1 18651 black
 ADD hs4-pin-3 61332 black
-CONNECT hs4-axle3-2.axle2 -> hs4-beam-1.hole1 TURNS
-CONNECT hs4-axle3-1.axle1 -> hs4-conn-1.axlehole1 LOCKED
-CONNECT hs4-apin-1.axle2 -> hs4-beam5-2.axlehole2 LOCKED
-CONNECT hs4-apin-1.axle2 -> hs4-beam5-1.axlehole2 LOCKED
-CONNECT hs4-pin-3.pin1 -> hs4-beam5-2.hole2 STIFF
-CONNECT hs4-pin-3.pin1 -> hs4-beam5-1.hole2 STIFF
-CONNECT hs4-pin-1.pin2 -> hs4-conn-1.hole1 TURNS
-CONNECT hs4-pin-2.pin2 -> hs4-conn-1.hole2 TURNS
-WHY Finishes the fourth hood side with a round pin connector, a perpendicular pin connector, 2 frictionless half pins, a long axle pin and a friction pin. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 2 5-hole thin beams and 3-long axle from step 549 and 3-long axle from step 548. The long axle pin sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The frictionless half pin passes through a round hole of the perpendicular pin connector with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 581 slots a pin hub and a pin connector onto them.
+ADD hs4-apin-1 18651 black
+CONNECT hs4-tile-1.? -> hs4-axle3-1.?
+CONNECT hs4-beam2-1.? -> hs4-axle3-1.?
+CONNECT hs4-beam2-2.? -> hs4-axle3-1.?
+CONNECT hs4-beam5-1.? -> hs4-axle3-1.?
+CONNECT hs4-beam5-2.? -> hs4-axle3-1.?
+CONNECT hs4-axle3-2.? -> hs4-beam5-1.?
+CONNECT hs4-conn-1.? -> hs4-axle3-2.?
+CONNECT hs4-pin-1.? -> hs4-conn-1.?
+CONNECT hs4-pin-2.? -> hs4-conn-1.?
+CONNECT hs4-beam-1.? -> hs4-axle3-2.?
+CONNECT hs4-pin-3.? -> hs4-beam5-2.?
+CONNECT hs4-apin-1.? -> hs4-beam5-2.?
+CONNECT hs4-conn-1.? -> hs2-beam3-1.?
+WHY Builds and fits the matching grey side support on the other side.
 
-STEP 551
+STEP 547
 ADD fr-plate-4 3623 darkgray
 ADD fr-brick-1 54200 transorange
 ADD fr-plate-5 3024 transorange
@@ -5194,16 +5176,6 @@ ADD fr-tile-1 3070b transorange
 ADD fr-tile-2 3070b darkgray
 ADD fr-plate-7 3024 darkgray
 ADD fr-plate-8 3024 darkgray
-CONNECT fr-plate-4.? -> fr-brick-1.?
-CONNECT fr-plate-4.? -> fr-plate-5.?
-CONNECT fr-plate-4.? -> fr-plate-6.?
-CONNECT fr-plate-4.? -> fr-plate-7.?
-CONNECT fr-plate-5.? -> fr-tile-1.?
-CONNECT fr-plate-6.? -> fr-tile-2.?
-CONNECT fr-plate-7.? -> fr-plate-8.?
-WHY Adds 5 plates, 2 tiles and a brick to the front end. It sits toward the front of the truck, at mid height. These parts only meet earlier work through the parts added in the same step.
-
-STEP 552
 ADD fr-plate-9 3623 darkgray
 ADD fr-brick-2 54200 transorange
 ADD fr-plate-10 3024 transorange
@@ -5212,22 +5184,40 @@ ADD fr-tile-3 3070b transorange
 ADD fr-tile-4 3070b darkgray
 ADD fr-plate-12 3024 darkgray
 ADD fr-plate-13 3024 darkgray
+CONNECT fr-brick-1.? -> fr-plate-4.?
+CONNECT fr-plate-5.? -> fr-plate-4.?
+CONNECT fr-plate-6.? -> fr-plate-4.?
+CONNECT fr-tile-1.? -> fr-plate-4.?
+CONNECT fr-tile-2.? -> fr-plate-4.?
+CONNECT fr-plate-7.? -> fr-plate-4.?
+CONNECT fr-plate-8.? -> fr-plate-4.?
+CONNECT fr-plate-4.? -> hs3-conn-1.?
+CONNECT fr-brick-2.? -> fr-plate-9.?
+CONNECT fr-plate-10.? -> fr-plate-9.?
+CONNECT fr-plate-11.? -> fr-plate-9.?
+CONNECT fr-tile-3.? -> fr-plate-9.?
+CONNECT fr-tile-4.? -> fr-plate-9.?
+CONNECT fr-plate-12.? -> fr-plate-9.?
+CONNECT fr-plate-13.? -> fr-plate-9.?
+CONNECT fr-plate-9.? -> hs4-conn-1.?
+WHY Builds two matching grey and amber light assemblies and fits them to the front body.
+
+STEP 548
 ADD fr-pin-8 42924 blue
 ADD fr-pin-9 42924 blue
-CONNECT fr-pin-8.pin2 -> fr2-beam3-1.hole6 STIFF
-CONNECT fr-pin-8.pin3 -> ch4-beam13-1.hole3 STIFF
-CONNECT fr-pin-9.pin2 -> fr2-beam3-2.hole6 STIFF
-CONNECT fr-pin-9.pin3 -> tr-beam13-2.hole3 STIFF
-CONNECT fr-plate-9.? -> fr-brick-2.?
-CONNECT fr-plate-9.? -> fr-plate-10.?
-CONNECT fr-plate-9.? -> fr-plate-11.?
-CONNECT fr-plate-9.? -> fr-plate-12.?
-CONNECT fr-plate-10.? -> fr-tile-3.?
-CONNECT fr-plate-11.? -> fr-tile-4.?
-CONNECT fr-plate-12.? -> fr-plate-13.?
-WHY Finishes the front end with 2 long pins, 5 plates, 2 tiles and a brick. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 3x5 L-beam from step 519 and 3x5 L-beam from step 515. The long pins grip the 3x5 L-beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 553 slots 2 11-hole beams onto them.
+CONNECT fr-pin-8.? -> fr2-beam3-1.?
+CONNECT fr-pin-9.? -> fr2-beam3-2.?
+WHY Turns the body and inserts two blue long pins into the support arms.
 
-STEP 553
+STEP 549
+WHY Turns the completed front body into the orientation shown.
+
+STEP 550
+CONNECT fr-pin-8.? -> h1-beam3-1.?
+CONNECT fr-pin-9.? -> h2-beam3-1.?
+WHY Fits the completed body to the earlier hood supports; the precise mounting holes remain uncertain.
+
+STEP 551
 ADD tr-beam11-6 32525 darkgray
 ADD tr-beam11-7 32525 darkgray
 CONNECT tr-pin-74.pin1 -> tr-beam11-6.hole1 STIFF
@@ -5238,9 +5228,9 @@ CONNECT tr-pin-69.pin3 -> tr-beam11-7.hole1 STIFF
 CONNECT tr-axle6-2.axle5 -> tr-beam11-7.hole3 TURNS
 CONNECT fa-pin-43.pin1 -> tr-beam11-7.hole6 TURNS
 CONNECT fr-pin-9.pin1 -> tr-beam11-7.hole11 STIFF
-WHY Adds 2 11-hole beams to the main chassis. It sits in the middle of the truck, at mid height. It is fixed onto the 2 long pins from step 552 and 2 frictionless long pins from step 289. The 5-long axle passes through a round hole of the 11-hole beam with no grip, so it can spin or swing freely there (4 such joints in this step). The long pins grip the 11-hole beam with friction, making a rigid join (4 such joints in this step).
+WHY Adds 2 11-hole beams to the main chassis. It sits in the middle of the truck, at mid height. It is fixed onto the 2 long pins from step 548 and 2 frictionless long pins from step 289. The 5-long axle passes through a round hole of the 11-hole beam with no grip, so it can spin or swing freely there (4 such joints in this step). The long pins grip the 11-hole beam with friction, making a rigid join (4 such joints in this step).
 
-STEP 554
+STEP 552
 ADD tr-apin-31 43093 blue
 ADD tr-pin-138 65304 black
 ADD tr-pin-139 18677 black
@@ -5253,7 +5243,7 @@ CONNECT tr-pin-139.? -> tr-plate-4.?
 CONNECT tr-pin-140.? -> tr-plate-4.?
 WHY Adds 2 pins, an axle pin, a long pin and a plate to the main chassis. It sits at the rear of the truck, low on the truck, off to one side. It is fixed onto the 3x11 panel from step 129. The axle pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there.
 
-STEP 555
+STEP 553
 ADD tr-apin-32 43093 blue
 ADD tr-pin-141 65304 black
 ADD tr-pin-142 18677 black
@@ -5266,7 +5256,7 @@ CONNECT tr-pin-142.? -> tr-plate-5.?
 CONNECT tr-pin-143.? -> tr-plate-5.?
 WHY Adds 2 pins, an axle pin, a long pin and a plate to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 3x11 panel from step 129. The axle pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there.
 
-STEP 556
+STEP 554
 ADD tr-panel3-13 71709 black
 ADD tr-pin-144 61332 black
 ADD tr-pin-145 61332 black
@@ -5284,9 +5274,9 @@ CONNECT tr-pin-144.pin2 -> tr-beam3-23.hole1 STIFF
 CONNECT tr-pin-145.pin2 -> tr-beam3-23.hole3 STIFF
 CONNECT tr-pin-146.pin1 -> tr-beam3-22.hole1 STIFF
 CONNECT tr-pin-147.pin1 -> tr-beam3-22.hole3 STIFF
-WHY Adds 2 3-hole beams, a 3x7 panel and 4 friction pins to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 227. The friction pins grip the 3x7 panel with friction, making a rigid join (10 such joints in this step). Step 559 continues from here by adding 2 3x5 L-beams, a 7-hole beam and 8 other parts.
+WHY Adds 2 3-hole beams, a 3x7 panel and 4 friction pins to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 227. The friction pins grip the 3x7 panel with friction, making a rigid join (10 such joints in this step). Step 557 continues from here by adding 2 3x5 L-beams, a 7-hole beam and 8 other parts.
 
-STEP 557
+STEP 555
 ADD tb-beam11-1 32525 brightgreen
 ADD tb-pin-1 61332 black
 ADD tb-pin-2 61332 black
@@ -5296,9 +5286,9 @@ CONNECT tb-pin-1.pin2 -> tb-beam11-1.hole1 STIFF
 CONNECT tb-pin-2.pin2 -> tb-beam11-1.hole2 STIFF
 CONNECT tb-pin-3.pin2 -> tb-beam11-1.hole10 STIFF
 CONNECT tb-pin-4.pin2 -> tb-beam11-1.hole11 STIFF
-WHY Starts the back of the truck bed with an 11-hole beam and 4 friction pins; it makes the back wall of the truck bed. It sits at the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 11-hole beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 558 slots 4 3x5 L-beams onto them.
+WHY Starts the back of the truck bed with an 11-hole beam and 4 friction pins; it makes the back wall of the truck bed. It sits at the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 11-hole beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 556 slots 4 3x5 L-beams onto them.
 
-STEP 558
+STEP 556
 ADD tb-beam3-1 32526 brightgreen
 ADD tb-beam3-2 32526 brightgreen
 ADD tb-pin-5 61332 black
@@ -5313,9 +5303,9 @@ CONNECT tb-pin-3.pin1 -> tb-beam3-2.hole1 STIFF
 CONNECT tb-pin-4.pin1 -> tb-beam3-2.hole2 STIFF
 CONNECT tb-pin-7.pin1 -> tb-beam3-2.hole3 STIFF
 CONNECT tb-pin-8.pin1 -> tb-beam3-2.hole4 STIFF
-WHY Adds 2 3x5 L-beams and 4 friction pins to the back of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 557. The friction pins grip the 3x5 L-beam with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 559 slots 4 3x5 L-beams onto them.
+WHY Adds 2 3x5 L-beams and 4 friction pins to the back of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 555. The friction pins grip the 3x5 L-beam with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 557 slots 4 3x5 L-beams onto them.
 
-STEP 559
+STEP 557
 ADD tb-beam3-3 32526 brightgreen
 ADD tb-beam3-4 32526 brightgreen
 ADD tb-pin-9 42924 blue
@@ -5347,9 +5337,9 @@ CONNECT tb-pin-16.pin1 -> tb-beam7-1.hole5 STIFF
 CONNECT tb-pin-16.pin2 -> tb-beam11-1.hole7 STIFF
 CONNECT tb-pin-15.pin3 -> tr-panel3-13.hole10 STIFF
 CONNECT tb-pin-16.pin3 -> tr-panel3-13.hole6 STIFF
-WHY Finishes the back of the truck bed with 2 3x5 L-beams, a 7-hole beam, 4 long pins and 4 friction pins; it makes the back wall of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 2 3x5 L-beams and 4 friction pins from step 558 and 11-hole beam from step 557. The friction pins grip the 3x5 L-beam with friction, making a rigid join (20 such joints in this step). Its unused ends stay free because step 573 slots 4 11-hole beams onto them.
+WHY Finishes the back of the truck bed with 2 3x5 L-beams, a 7-hole beam, 4 long pins and 4 friction pins; it makes the back wall of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 2 3x5 L-beams and 4 friction pins from step 556 and 11-hole beam from step 555. The friction pins grip the 3x5 L-beam with friction, making a rigid join (20 such joints in this step). Its unused ends stay free because step 571 slots 4 11-hole beams onto them.
 
-STEP 560
+STEP 558
 ADD tr-plate-6 3020 black
 ADD tr-tile-9 3069b transred
 ADD tr-tile-10 3069b transred
@@ -5370,7 +5360,7 @@ CONNECT tr-plate-7.? -> tr-tile-15.?
 CONNECT tr-plate-7.? -> tr-tile-16.?
 WHY Adds 8 tiles and 2 plates to the main chassis. It sits at the rear of the truck, at mid height. These parts only meet earlier work through the parts added in the same step.
 
-STEP 561
+STEP 559
 ADD ts-beam11-1 73507 black
 ADD ts-pin-1 61332 black
 ADD ts-pin-2 61332 black
@@ -5381,9 +5371,9 @@ CONNECT ts-pin-1.pin1 -> ts-beam11-1.hole10 STIFF
 CONNECT ts-pin-1.pin2 -> ts-beam13-1.hole2 STIFF
 CONNECT ts-pin-2.pin2 -> ts-beam13-1.hole10 STIFF
 CONNECT ts-pin-3.pin2 -> ts-beam13-1.hole13 STIFF
-WHY Starts the side of the truck bed with an 11-hole beam, a 13-hole beam and 3 friction pins; it makes the side wall of the truck bed. It sits toward the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 13-hole beam with friction, making a rigid join (5 such joints in this step). Its unused end stays free because step 562 slots a 5-hole beam onto it.
+WHY Starts the side of the truck bed with an 11-hole beam, a 13-hole beam and 3 friction pins; it makes the side wall of the truck bed. It sits toward the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 13-hole beam with friction, making a rigid join (5 such joints in this step). Its unused end stays free because step 560 slots a 5-hole beam onto it.
 
-STEP 562
+STEP 560
 ADD ts-beam5-1 32316 black
 ADD ts-pin-4 61332 black
 ADD ts-beam3-1 32523 black
@@ -5406,9 +5396,9 @@ CONNECT ts-pin-8.pin1 -> ts-beam13-1.hole5 STIFF
 CONNECT ts-pin-8.pin2 -> tr-beam13-3.hole13 STIFF
 CONNECT ts-pin-9.pin1 -> ts-beam13-1.hole6 STIFF
 CONNECT ts-pin-9.pin2 -> tr-beam-6.hole27 STIFF
-WHY Adds a 5-hole beam, a 3-hole beam, 5 friction pins and a long pin to the side of the truck bed. It sits toward the rear of the truck, at mid height. It is fixed onto the 13-hole beam and friction pin from step 561 and 13-hole beam from step 349. The friction pins grip the 13-hole beam with friction, making a rigid join (14 such joints in this step).
+WHY Adds a 5-hole beam, a 3-hole beam, 5 friction pins and a long pin to the side of the truck bed. It sits toward the rear of the truck, at mid height. It is fixed onto the 13-hole beam and friction pin from step 559 and 13-hole beam from step 349. The friction pins grip the 13-hole beam with friction, making a rigid join (14 such joints in this step).
 
-STEP 563
+STEP 561
 ADD ts-beam11-2 73507 black
 ADD ts-pin-10 61332 black
 ADD ts-pin-11 61332 black
@@ -5419,9 +5409,9 @@ CONNECT ts-pin-10.pin1 -> ts-beam11-2.hole10 STIFF
 CONNECT ts-pin-10.pin2 -> ts-beam13-2.hole2 STIFF
 CONNECT ts-pin-11.pin2 -> ts-beam13-2.hole10 STIFF
 CONNECT ts-pin-12.pin2 -> ts-beam13-2.hole13 STIFF
-WHY Adds an 11-hole beam, a 13-hole beam and 3 friction pins to the side of the truck bed. It sits toward the rear of the truck, at mid height, off to one side. These parts only meet earlier work through the parts added in the same step. The friction pins grip the 13-hole beam with friction, making a rigid join (5 such joints in this step). Its unused end stays free because step 564 slots a 5-hole beam onto it.
+WHY Adds an 11-hole beam, a 13-hole beam and 3 friction pins to the side of the truck bed. It sits toward the rear of the truck, at mid height, off to one side. These parts only meet earlier work through the parts added in the same step. The friction pins grip the 13-hole beam with friction, making a rigid join (5 such joints in this step). Its unused end stays free because step 562 slots a 5-hole beam onto it.
 
-STEP 564
+STEP 562
 ADD ts-beam5-2 32316 black
 ADD ts-pin-13 61332 black
 ADD ts-beam3-2 32523 black
@@ -5444,9 +5434,9 @@ CONNECT ts-pin-17.pin1 -> ts-beam13-2.hole5 STIFF
 CONNECT ts-pin-17.pin2 -> tr-beam13-4.hole13 STIFF
 CONNECT ts-pin-18.pin1 -> ts-beam13-2.hole6 STIFF
 CONNECT ts-pin-18.pin2 -> tr-beam-5.hole32 STIFF
-WHY Finishes the side of the truck bed with a 5-hole beam, a 3-hole beam, 5 friction pins and a long pin; it makes the side wall of the truck bed. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the 13-hole beam and friction pin from step 563 and 13-hole beam from step 351. The friction pins grip the 13-hole beam with friction, making a rigid join (14 such joints in this step).
+WHY Finishes the side of the truck bed with a 5-hole beam, a 3-hole beam, 5 friction pins and a long pin; it makes the side wall of the truck bed. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the 13-hole beam and friction pin from step 561 and 13-hole beam from step 351. The friction pins grip the 13-hole beam with friction, making a rigid join (14 such joints in this step).
 
-STEP 565
+STEP 563
 ADD tr-apin-33 43093 blue
 ADD tr-apin-34 43093 blue
 ADD tr-pin-148 61332 black
@@ -5455,9 +5445,9 @@ CONNECT tr-pin-148.pin1 -> tr-panel3-11.hole3 STIFF
 CONNECT tr-pin-149.pin1 -> tr-panel3-9.hole4 STIFF
 CONNECT tr-apin-33.axle1 -> tr-panel3-3.hole9 TURNS
 CONNECT tr-apin-34.axle1 -> tr-panel3-4.hole8 TURNS
-WHY Adds 2 axle pins and 2 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 3x11 panel from step 228 and 3x11 panel from step 228. The axle pin passes through a round hole of the 3x7 panel with no grip, so it can spin or swing freely there (2 such joints in this step). The friction pins grip the 3x11 panel with friction, making a rigid join (2 such joints in this step). Its unused ends stay free because step 568 slots 4 13-hole beams onto them.
+WHY Adds 2 axle pins and 2 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 3x11 panel from step 228 and 3x11 panel from step 228. The axle pin passes through a round hole of the 3x7 panel with no grip, so it can spin or swing freely there (2 such joints in this step). The friction pins grip the 3x11 panel with friction, making a rigid join (2 such joints in this step). Its unused ends stay free because step 566 slots 4 13-hole beams onto them.
 
-STEP 566
+STEP 564
 ADD tf-beam11-1 32525 darkgray
 ADD tf-pin-1 42924 blue
 ADD tf-pin-2 42924 blue
@@ -5473,9 +5463,9 @@ CONNECT tf-pin-1.pin1 -> tf-panel5-2.hole32 STIFF
 CONNECT tf-pin-1.pin3 -> tf-panel5-1.hole32 STIFF
 CONNECT tf-pin-2.pin1 -> tf-panel5-2.hole11 STIFF
 CONNECT tf-pin-2.pin3 -> tf-panel5-1.hole11 STIFF
-WHY Starts the floor of the truck bed with an 11-hole beam, 2 5x11 panels and 2 long pins; it makes the floor of the truck bed. It sits at the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The long pins grip the 5x11 panel with friction, making a rigid join (10 such joints in this step). Step 567 continues from here by adding 4 pin hubs and 2 long pins.
+WHY Starts the floor of the truck bed with an 11-hole beam, 2 5x11 panels and 2 long pins; it makes the floor of the truck bed. It sits at the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The long pins grip the 5x11 panel with friction, making a rigid join (10 such joints in this step). Step 565 continues from here by adding 4 pin hubs and 2 long pins.
 
-STEP 567
+STEP 565
 ADD tf-conn-1 65487 lightgray
 ADD tf-conn-2 65487 lightgray
 ADD tf-conn-3 65487 lightgray
@@ -5494,9 +5484,9 @@ CONNECT tf-conn-1.pin1 -> tf-panel5-2.hole26 STIFF
 CONNECT tf-conn-2.pin1 -> tf-panel5-2.hole29 STIFF
 CONNECT tf-conn-3.pin1 -> tf-panel5-2.hole17 STIFF
 CONNECT tf-conn-4.pin1 -> tf-panel5-2.hole14 STIFF
-WHY Adds 4 pin hubs and 2 long pins to the floor of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 5x11 panel from step 566. The pin hubs grip the 5x11 panel with friction, making a rigid join (12 such joints in this step). Its unused ends stay free because step 568 slots 2 pin hubs onto them.
+WHY Adds 4 pin hubs and 2 long pins to the floor of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 5x11 panel from step 564. The pin hubs grip the 5x11 panel with friction, making a rigid join (12 such joints in this step). Its unused ends stay free because step 566 slots 2 pin hubs onto them.
 
-STEP 568
+STEP 566
 ADD tf-conn-5 65487 lightgray
 ADD tf-conn-6 65487 lightgray
 ADD tf-beam13-1 41239 black
@@ -5520,9 +5510,9 @@ CONNECT tf-pin-6.pin1 -> tf-beam-1.hole1 STIFF
 CONNECT tf-pin-6.pin2 -> tf-panel5-1.hole31 STIFF
 CONNECT tf-pin-5.pin2 -> tf-panel5-1.hole11 STIFF
 CONNECT tf-pin-6.pin2 -> tf-panel5-1.hole32 STIFF
-WHY Finishes the floor of the truck bed with 2 round pin connectors, a 13-hole beam, 2 pin hubs and 2 friction pins; it makes the floor of the truck bed. It sits toward the rear of the truck, at mid height. It is fixed onto the 2 long pins from step 567 and 5x11 panel from step 566. The friction pins grip the 5x11 panel with friction, making a rigid join (16 such joints in this step).
+WHY Finishes the floor of the truck bed with 2 round pin connectors, a 13-hole beam, 2 pin hubs and 2 friction pins; it makes the floor of the truck bed. It sits toward the rear of the truck, at mid height. It is fixed onto the 2 long pins from step 565 and 5x11 panel from step 564. The friction pins grip the 5x11 panel with friction, making a rigid join (16 such joints in this step).
 
-STEP 569
+STEP 567
 ADD tr-pin-150 42924 blue
 ADD tr-beam-11 18654 darkgray
 ADD tr-beam2-19 43857 brightgreen
@@ -5531,7 +5521,7 @@ CONNECT tr-pin-150.pin2 -> tr-beam-11.hole1 STIFF
 CONNECT tr-pin-150.pin3 -> tr-beam2-19.hole2 STIFF
 WHY Adds a round pin connector, a 2-hole beam and a long pin to the main chassis. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the 11-hole beam from step 37. The long pins grip the 11-hole beam with friction, making a rigid join (3 such joints in this step).
 
-STEP 570
+STEP 568
 ADD tr-pin-151 42924 blue
 ADD tr-pin-152 42924 blue
 ADD tr-pin-153 42924 blue
@@ -5560,9 +5550,9 @@ CONNECT tr-pin-161.pin1 -> ts-beam11-1.hole1 STIFF
 CONNECT tr-pin-162.pin1 -> tr-panel3-11.hole4 STIFF
 CONNECT tr-pin-163.pin1 -> tr-panel3-11.hole14 STIFF
 CONNECT tr-pin-164.pin1 -> tr-panel3-12.hole5 STIFF
-WHY Adds 14 long pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 11-hole beam from step 563 and 11-hole beam from step 561. The long pins grip the 11-hole beam with friction, making a rigid join (14 such joints in this step). Its unused ends stay free because step 571 slots 10 11-hole beams and 4 7-hole beams onto them.
+WHY Adds 14 long pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 11-hole beam from step 561 and 11-hole beam from step 559. The long pins grip the 11-hole beam with friction, making a rigid join (14 such joints in this step). Its unused ends stay free because step 569 slots 10 11-hole beams and 4 7-hole beams onto them.
 
-STEP 571
+STEP 569
 ADD tr-beam7-2 32524 brightgreen
 ADD tr-beam11-8 32525 brightgreen
 ADD tr-beam11-9 32525 brightgreen
@@ -5583,9 +5573,9 @@ CONNECT tr-pin-161.pin2 -> tr-beam11-10.hole8 STIFF
 CONNECT tr-pin-160.pin2 -> tr-beam11-10.hole10 STIFF
 CONNECT tr-pin-164.pin2 -> tr-beam11-11.hole1 STIFF
 CONNECT tr-pin-163.pin2 -> tr-beam11-11.hole4 STIFF
-WHY Adds 4 11-hole beams and 2 7-hole beams to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 14 long pins from step 570. The long pins grip the 11-hole beam with friction, making a rigid join (14 such joints in this step). Step 572 continues from here by adding 12 friction pins.
+WHY Adds 4 11-hole beams and 2 7-hole beams to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 14 long pins from step 568. The long pins grip the 11-hole beam with friction, making a rigid join (14 such joints in this step). Step 570 continues from here by adding 12 friction pins.
 
-STEP 572
+STEP 570
 ADD tr-pin-165 61332 black
 ADD tr-pin-166 61332 black
 ADD tr-pin-167 61332 black
@@ -5610,9 +5600,9 @@ CONNECT tr-pin-173.pin1 -> tr-beam11-10.hole11 STIFF
 CONNECT tr-pin-174.pin1 -> tr-beam11-11.hole11 STIFF
 CONNECT tr-pin-175.pin1 -> tr-beam11-11.hole10 STIFF
 CONNECT tr-pin-176.pin1 -> tr-beam11-11.hole9 STIFF
-WHY Adds 12 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 4 11-hole beams and 2 7-hole beams from step 571. The friction pins grip the 11-hole beam with friction, making a rigid join (12 such joints in this step). Its unused ends stay free because step 573 slots 6 11-hole beams, 4 7-hole beams and 2 other parts onto them.
+WHY Adds 12 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 4 11-hole beams and 2 7-hole beams from step 569. The friction pins grip the 11-hole beam with friction, making a rigid join (12 such joints in this step). Its unused ends stay free because step 571 slots 6 11-hole beams, 4 7-hole beams and 2 other parts onto them.
 
-STEP 573
+STEP 571
 ADD tr-beam2-20 43857 brightgreen
 ADD tr-beam2-21 43857 brightgreen
 ADD tr-beam7-4 32524 brightgreen
@@ -5651,9 +5641,9 @@ CONNECT tb-pin-12.pin1 -> tr-beam11-15.hole2 STIFF
 CONNECT tr-pin-164.pin3 -> tr-beam11-15.hole3 STIFF
 CONNECT tr-pin-163.pin3 -> tr-beam11-15.hole6 STIFF
 CONNECT tr-pin-176.pin2 -> tr-beam11-15.hole11 STIFF
-WHY Adds 4 11-hole beams, 2 2-hole beams and 2 7-hole beams to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 12 friction pins from step 572 and 14 long pins from step 570. The friction pins grip the 11-hole beam with friction, making a rigid join (30 such joints in this step).
+WHY Adds 4 11-hole beams, 2 2-hole beams and 2 7-hole beams to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 12 friction pins from step 570 and 14 long pins from step 568. The friction pins grip the 11-hole beam with friction, making a rigid join (30 such joints in this step).
 
-STEP 574
+STEP 572
 ADD tr-pin-177 4274 lightgray
 ADD tr-tile-17 98138 transorange
 ADD tr-pin-178 4274 lightgray
@@ -5664,9 +5654,9 @@ CONNECT tr-pin-178.pin2 -> tr-panel3-10.hole10 TURNS
 CONNECT tr-pin-177.pin2 -> ts-beam11-2.hole6 TURNS
 CONNECT tr-pin-179.pin1 -> tr-panel3-9.hole5 TURNS
 CONNECT tr-pin-179.pin2 -> tr-panel3-9.hole5 TURNS
-WHY Adds 3 frictionless half pins and 3 tiles to the main chassis. It sits at the rear of the truck, at mid height, off to one side. It is fixed onto the 11-hole beam from step 563 and 3x7 panel and 3x11 panel from step 228. The frictionless half pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there (4 such joints in this step).
+WHY Adds 3 frictionless half pins and 3 tiles to the main chassis. It sits at the rear of the truck, at mid height, off to one side. It is fixed onto the 11-hole beam from step 561 and 3x7 panel and 3x11 panel from step 228. The frictionless half pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there (4 such joints in this step).
 
-STEP 575
+STEP 573
 ADD tr-pin-180 61332 black
 ADD tr-apin-35 43093 blue
 ADD tr-beam2-22 32140 black
@@ -5683,18 +5673,18 @@ CONNECT tr-pin-42.pin2 -> tr-panel11-1.hole8 STIFF
 CONNECT tr-pin-182.pin1 -> tr-panel11-1.hole9 STIFF
 CONNECT tr-pin-181.pin2 -> tr-panel11-2.hole9 STIFF
 CONNECT tr-pin-182.pin2 -> tr-panel11-2.hole4 STIFF
-WHY Adds a 2x4 L-beam, 2 11x3 panels, 3 friction pins and an axle pin to the main chassis. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the beam frame and 2 friction pins from step 59. The axle pin passes through a round hole of the beam frame with no grip, so it can spin or swing freely there. The friction pins grip the 11x3 panel with friction, making a rigid join (8 such joints in this step). Step 576 continues from here by adding a 3-hole beam and 2 friction pins.
+WHY Adds a 2x4 L-beam, 2 11x3 panels, 3 friction pins and an axle pin to the main chassis. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the beam frame and 2 friction pins from step 59. The axle pin passes through a round hole of the beam frame with no grip, so it can spin or swing freely there. The friction pins grip the 11x3 panel with friction, making a rigid join (8 such joints in this step). Step 574 continues from here by adding a 3-hole beam and 2 friction pins.
 
-STEP 576
+STEP 574
 ADD tr-pin-183 61332 black
 ADD tr-pin-184 61332 black
 ADD tr-beam3-24 32523 black
 CONNECT tr-pin-183.pin1 -> tr-beam3-24.hole1 STIFF
 CONNECT tr-pin-183.pin2 -> tr-panel11-1.hole11 STIFF
 CONNECT tr-pin-184.pin1 -> tr-beam3-24.hole3 STIFF
-WHY Adds a 3-hole beam and 2 friction pins to the main chassis. It sits at the rear of the truck, low on the truck, off to one side. It is fixed onto the 11x3 panel from step 575. The friction pins grip the 3-hole beam with friction, making a rigid join (3 such joints in this step).
+WHY Adds a 3-hole beam and 2 friction pins to the main chassis. It sits at the rear of the truck, low on the truck, off to one side. It is fixed onto the 11x3 panel from step 573. The friction pins grip the 3-hole beam with friction, making a rigid join (3 such joints in this step).
 
-STEP 577
+STEP 575
 ADD tr-conn-54 65489 lightgray
 ADD tr-beam3-25 60484 black
 ADD tr-apin-36 18651 black
@@ -5720,7 +5710,7 @@ CONNECT tr-axle-14.? -> tr-axle-15.?
 CONNECT tr-axle-15.? -> tr-plate-9.?
 WHY Adds a 3x3 T-beam, 4 axles, a pin hub, 2 long axle pins and 2 plates to the main chassis. It sits toward the rear of the truck, at mid height, off to one side. It is fixed onto the motor from step 9. The long axle pin passes through a round hole of the 3x3 T-beam with no grip, so it can spin or swing freely there (2 such joints in this step). The pin hubs grip the 3x3 T-beam with friction, making a rigid join (2 such joints in this step). These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings.
 
-STEP 578
+STEP 576
 ADD lad-conn-1 22961 darkgray
 ADD lad-beam5-1 11478 black
 ADD lad-axle3-1 4519 lightgray
@@ -5734,9 +5724,9 @@ CONNECT lad-axle3-1.axle3 -> lad-beam5-1.axlehole2 LOCKED
 CONNECT lad-pin-1.pin2 -> lad-beam5-1.hole2 TURNS
 CONNECT lad-pin-1.pin2 -> lad-conn-2.hole1 TURNS
 CONNECT lad-pin-2.pin2 -> lad-conn-2.hole1 TURNS
-WHY Starts the ladder with a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins; it gives the driver a way up into the cab. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 579 slots a 5-hole thin beam and a round pin connector onto them.
+WHY Starts the ladder with a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins; it gives the driver a way up into the cab. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 577 slots a 5-hole thin beam and a round pin connector onto them.
 
-STEP 579
+STEP 577
 ADD lad-beam5-2 11478 black
 ADD lad-conn-3 22961 darkgray
 ADD lad-conn-4 62462 black
@@ -5749,9 +5739,9 @@ CONNECT lad-conn-3.axle1 -> lad-conn-5.hole1 TURNS
 CONNECT lad-axle3-1.axle3 -> lad-conn-4.hole1 TURNS
 CONNECT lad-axle3-1.axle1 -> lad-conn-4.hole1 TURNS
 CONNECT lad-conn-1.axle1 -> lad-conn-5.hole1 TURNS
-WHY Adds a 5-hole thin beam, 2 round pin connectors and a pin hub to the ladder. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 3-long axle, pin hub and 1 other part from step 578. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there (5 such joints in this step). Step 580 continues from here by adding 2 round pin connectors, a 5-hole beam and 4 other parts.
+WHY Adds a 5-hole thin beam, 2 round pin connectors and a pin hub to the ladder. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 3-long axle, pin hub and 1 other part from step 576. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there (5 such joints in this step). Step 578 continues from here by adding 2 round pin connectors, a 5-hole beam and 4 other parts.
 
-STEP 580
+STEP 578
 ADD lad-pin-3 61332 black
 ADD lad-pin-4 61332 black
 ADD lad-beam5-3 32316 black
@@ -5769,25 +5759,25 @@ CONNECT lad-pin-5.pin2 -> lad-beam-2.hole1 STIFF
 CONNECT lad-pin-5.pin3 -> tr-beam15-3.hole4 STIFF
 CONNECT lad-pin-6.pin2 -> lad-beam-1.hole1 STIFF
 CONNECT lad-pin-6.pin3 -> tr-beam15-3.hole2 STIFF
-WHY Adds 2 round pin connectors, a 5-hole beam, 2 friction pins and 2 long pins to the ladder. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the pin hub from step 579 and pin hub from step 578. The friction pins grip the pin hub with friction, making a rigid join (10 such joints in this step).
+WHY Adds 2 round pin connectors, a 5-hole beam, 2 friction pins and 2 long pins to the ladder. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the pin hub from step 577 and pin hub from step 576. The friction pins grip the pin hub with friction, making a rigid join (10 such joints in this step).
 
-STEP 581
+STEP 579
 ADD tr-conn-55 22961 darkgray
 ADD tr-conn-56 32192 darkgray
 CONNECT tr-conn-55.axle1 -> tr-conn-56.axlehole1 LOCKED
 CONNECT hs4-apin-1.axle1 -> tr-conn-55.hole1 TURNS
 CONNECT hs4-pin-3.pin2 -> tr-conn-56.hole1 STIFF
-WHY Adds a pin hub and a pin connector to the main chassis. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the long axle pin and friction pin from step 550. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there.
+WHY Adds a pin hub and a pin connector to the main chassis. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the long axle pin and friction pin from step 546. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there.
 
-STEP 582
+STEP 580
 ADD wa1-conn-1 32192 darkgray
 ADD wa1-conn-2 22961 darkgray
 ADD wa1-apin-1 18651 black
 CONNECT wa1-apin-1.axle1 -> wa1-conn-1.hole1 TURNS
 CONNECT wa1-conn-2.axle1 -> wa1-conn-1.axlehole2 LOCKED
-WHY Starts the first wheel arch with a pin connector, a pin hub and a long axle pin; it covers a wheel. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin connector with no grip, so it can spin or swing freely there. Its unused end stays free because step 583 slots a 2x3 L-beam onto it.
+WHY Starts the first wheel arch with a pin connector, a pin hub and a long axle pin; it covers a wheel. It sits in the middle of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin connector with no grip, so it can spin or swing freely there. Its unused end stays free because step 581 slots a 2x3 L-beam onto it.
 
-STEP 583
+STEP 581
 ADD wa1-apin-2 18651 black
 ADD wa1-beam2-1 71708 darkgray
 ADD wa1-axle4-1 3705 black
@@ -5797,9 +5787,9 @@ CONNECT wa1-apin-2.axle2 -> wa1-beam2-1.axlehole1 LOCKED
 CONNECT wa1-axle4-1.axle1 -> wa1-conn-1.axlehole1 LOCKED
 CONNECT wa1-axle4-1.axle2 -> wa1-conn-3.hole1 TURNS
 CONNECT wa1-apin-1.axle2 -> wa1-beam2-1.hole3 TURNS
-WHY Adds a 2x3 L-beam, a 4-long axle, a pin hub and a long axle pin to the first wheel arch. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the pin hub, pin connector and 1 other part from step 582. The long axle pin sits in a cross hole of the 2x3 L-beam, so it cannot turn there and is held fixed (2 such joints in this step). The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 584 slots a round pin connector and an axle connector onto them.
+WHY Adds a 2x3 L-beam, a 4-long axle, a pin hub and a long axle pin to the first wheel arch. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the pin hub, pin connector and 1 other part from step 580. The long axle pin sits in a cross hole of the 2x3 L-beam, so it cannot turn there and is held fixed (2 such joints in this step). The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 582 slots a round pin connector and an axle connector onto them.
 
-STEP 584
+STEP 582
 ADD wa1-beam-1 18654 darkgray
 ADD wa1-conn-4 59443 darkgray
 ADD wa1-beam3-1 6632 black
@@ -5808,9 +5798,9 @@ CONNECT wa1-axle4-1.axle3 -> wa1-beam-1.hole1 TURNS
 CONNECT wa1-axle4-1.axle4 -> wa1-conn-4.axlehole2 LOCKED
 CONNECT wa1-conn-3.axle1 -> wa1-beam3-1.axlehole2 LOCKED
 CONNECT wa1-conn-3.axle1 -> wa1-beam3-2.axlehole2 LOCKED
-WHY Adds 2 3-hole thin beams, a round pin connector and an axle connector to the first wheel arch. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 4-long axle and pin hub from step 583. The pin hub sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there. Step 585 continues from here by adding a 5-hole beam, a 4-long axle and 1 other part.
+WHY Adds 2 3-hole thin beams, a round pin connector and an axle connector to the first wheel arch. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 4-long axle and pin hub from step 581. The pin hub sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there. Step 583 continues from here by adding a 5-hole beam, a 4-long axle and 1 other part.
 
-STEP 585
+STEP 583
 ADD wa1-beam5-1 32316 black
 ADD wa1-pin-1 42924 blue
 ADD wa1-axle4-2 3705 black
@@ -5824,9 +5814,9 @@ CONNECT wa1-pin-1.pin3 -> wa1-beam3-2.hole1 STIFF
 CONNECT wa1-pin-1.pin3 -> wa1-beam3-1.hole1 STIFF
 CONNECT wa1-axle4-2.axle4 -> wa1-beam3-2.axlehole1 LOCKED
 CONNECT wa1-axle4-2.axle4 -> wa1-beam3-1.axlehole1 LOCKED
-WHY Finishes the first wheel arch with a 5-hole beam, a 4-long axle and a long pin; it covers a wheel. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 2 3-hole thin beams from step 584 and long axle pin from step 582. The 4-long axle sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the 5-hole beam with no grip, so it can spin or swing freely there (2 such joints in this step).
+WHY Finishes the first wheel arch with a 5-hole beam, a 4-long axle and a long pin; it covers a wheel. It sits in the middle of the truck, at mid height, off to one side. It is fixed onto the 2 3-hole thin beams from step 582 and long axle pin from step 580. The 4-long axle sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the 5-hole beam with no grip, so it can spin or swing freely there (2 such joints in this step).
 
-STEP 586
+STEP 584
 ADD tr-pin-185 4274 lightgray
 ADD tr-tile-20 98138 transorange
 ADD tr-pin-186 4274 lightgray
@@ -5837,17 +5827,17 @@ CONNECT tr-pin-186.pin2 -> tr-panel3-12.hole11 TURNS
 CONNECT tr-pin-185.pin2 -> ts-beam11-1.hole6 TURNS
 CONNECT tr-pin-187.pin1 -> tr-panel3-11.hole5 TURNS
 CONNECT tr-pin-187.pin2 -> tr-panel3-11.hole5 TURNS
-WHY Adds 3 frictionless half pins and 3 tiles to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 11-hole beam from step 561 and 3x7 panel and 3x11 panel from step 228. The frictionless half pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there (4 such joints in this step).
+WHY Adds 3 frictionless half pins and 3 tiles to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 11-hole beam from step 559 and 3x7 panel and 3x11 panel from step 228. The frictionless half pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there (4 such joints in this step).
 
-STEP 587
+STEP 585
 ADD wa2-conn-1 32192 darkgray
 ADD wa2-conn-2 22961 darkgray
 ADD wa2-apin-1 18651 black
 CONNECT wa2-apin-1.axle1 -> wa2-conn-1.hole1 TURNS
 CONNECT wa2-conn-2.axle1 -> wa2-conn-1.axlehole2 LOCKED
-WHY Starts the second wheel arch with a pin connector, a pin hub and a long axle pin; it covers the other wheel. It sits in the middle of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin connector with no grip, so it can spin or swing freely there. Its unused end stays free because step 588 slots a 2x3 L-beam onto it.
+WHY Starts the second wheel arch with a pin connector, a pin hub and a long axle pin; it covers the other wheel. It sits in the middle of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin connector with no grip, so it can spin or swing freely there. Its unused end stays free because step 586 slots a 2x3 L-beam onto it.
 
-STEP 588
+STEP 586
 ADD wa2-apin-2 18651 black
 ADD wa2-beam2-1 71708 darkgray
 ADD wa2-axle4-1 3705 black
@@ -5857,9 +5847,9 @@ CONNECT wa2-apin-2.axle2 -> wa2-beam2-1.axlehole1 LOCKED
 CONNECT wa2-axle4-1.axle3 -> wa2-conn-3.hole1 TURNS
 CONNECT wa2-axle4-1.axle4 -> wa2-conn-1.axlehole1 LOCKED
 CONNECT wa2-apin-1.axle2 -> wa2-beam2-1.hole3 TURNS
-WHY Adds a 2x3 L-beam, a 4-long axle, a pin hub and a long axle pin to the second wheel arch. It sits in the middle of the truck, at mid height. It is fixed onto the pin hub, pin connector and 1 other part from step 587. The long axle pin sits in a cross hole of the 2x3 L-beam, so it cannot turn there and is held fixed (2 such joints in this step). The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 589 slots a round pin connector and an axle connector onto them.
+WHY Adds a 2x3 L-beam, a 4-long axle, a pin hub and a long axle pin to the second wheel arch. It sits in the middle of the truck, at mid height. It is fixed onto the pin hub, pin connector and 1 other part from step 585. The long axle pin sits in a cross hole of the 2x3 L-beam, so it cannot turn there and is held fixed (2 such joints in this step). The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there (3 such joints in this step). Its unused ends stay free because step 587 slots a round pin connector and an axle connector onto them.
 
-STEP 589
+STEP 587
 ADD wa2-beam-1 18654 darkgray
 ADD wa2-conn-4 59443 darkgray
 ADD wa2-beam3-1 6632 black
@@ -5868,9 +5858,9 @@ CONNECT wa2-axle4-1.axle2 -> wa2-beam-1.hole1 TURNS
 CONNECT wa2-axle4-1.axle1 -> wa2-conn-4.axlehole2 LOCKED
 CONNECT wa2-conn-3.axle1 -> wa2-beam3-1.axlehole2 LOCKED
 CONNECT wa2-conn-3.axle1 -> wa2-beam3-2.axlehole2 LOCKED
-WHY Adds 2 3-hole thin beams, a round pin connector and an axle connector to the second wheel arch. It sits in the middle of the truck, at mid height. It is fixed onto the 4-long axle and pin hub from step 588. The pin hub sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there. Step 590 continues from here by adding a 5-hole beam, a 4-long axle and 1 other part.
+WHY Adds 2 3-hole thin beams, a round pin connector and an axle connector to the second wheel arch. It sits in the middle of the truck, at mid height. It is fixed onto the 4-long axle and pin hub from step 586. The pin hub sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there. Step 588 continues from here by adding a 5-hole beam, a 4-long axle and 1 other part.
 
-STEP 590
+STEP 588
 ADD wa2-beam5-1 32316 black
 ADD wa2-pin-1 42924 blue
 ADD wa2-axle4-2 3705 black
@@ -5884,17 +5874,17 @@ CONNECT wa2-pin-1.pin3 -> wa2-beam3-1.hole1 STIFF
 CONNECT wa2-pin-1.pin3 -> wa2-beam3-2.hole1 STIFF
 CONNECT wa2-axle4-2.axle1 -> wa2-beam3-1.axlehole1 LOCKED
 CONNECT wa2-axle4-2.axle1 -> wa2-beam3-2.axlehole1 LOCKED
-WHY Finishes the second wheel arch with a 5-hole beam, a 4-long axle and a long pin; it covers the other wheel. It sits in the middle of the truck, at mid height. It is fixed onto the 2 3-hole thin beams from step 589 and long axle pin from step 587. The 4-long axle sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the 5-hole beam with no grip, so it can spin or swing freely there (2 such joints in this step).
+WHY Finishes the second wheel arch with a 5-hole beam, a 4-long axle and a long pin; it covers the other wheel. It sits in the middle of the truck, at mid height. It is fixed onto the 2 3-hole thin beams from step 587 and long axle pin from step 585. The 4-long axle sits in a cross hole of the 3-hole thin beam, so it cannot turn there and is held fixed (3 such joints in this step). The 4-long axle passes through a round hole of the 5-hole beam with no grip, so it can spin or swing freely there (2 such joints in this step).
 
-STEP 591
+STEP 589
 ADD tr-conn-57 32192 darkgray
 ADD tr-conn-58 22961 darkgray
 CONNECT tr-conn-58.axle1 -> tr-conn-57.axlehole1 LOCKED
 CONNECT hs3-pin-3.pin2 -> tr-conn-57.hole1 STIFF
 CONNECT hs3-apin-1.axle1 -> tr-conn-58.hole1 TURNS
-WHY Adds a pin connector and a pin hub to the main chassis. It sits in the middle of the truck, at mid height. It is fixed onto the friction pin and long axle pin from step 547. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there.
+WHY Adds a pin connector and a pin hub to the main chassis. It sits in the middle of the truck, at mid height. It is fixed onto the friction pin and long axle pin from step 545. The pin hub is locked in the cross hole of the pin connector, so the two turn together. The long axle pin passes through a round hole of the pin hub with no grip, so it can spin or swing freely there.
 
-STEP 592
+STEP 590
 ADD lad-conn-6 22961 darkgray
 ADD lad-beam5-4 11478 black
 ADD lad-axle3-2 4519 lightgray
@@ -5908,9 +5898,9 @@ CONNECT lad-axle3-2.axle3 -> lad-beam5-4.axlehole2 LOCKED
 CONNECT lad-pin-7.pin2 -> lad-beam5-4.hole2 TURNS
 CONNECT lad-pin-7.pin2 -> lad-conn-7.hole1 TURNS
 CONNECT lad-pin-8.pin2 -> lad-conn-7.hole1 TURNS
-WHY Adds a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins to the ladder. It sits in the middle of the truck, at mid height. These parts only meet earlier work through the parts added in the same step. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 593 slots a 5-hole thin beam and a round pin connector onto them.
+WHY Adds a 5-hole thin beam, a 3-long axle, a pin hub, a round pin connector and 2 3/4 pins to the ladder. It sits in the middle of the truck, at mid height. These parts only meet earlier work through the parts added in the same step. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3/4 pins grip the round pin connector with friction, making a rigid join (5 such joints in this step). Its unused ends stay free because step 591 slots a 5-hole thin beam and a round pin connector onto them.
 
-STEP 593
+STEP 591
 ADD lad-beam5-5 11478 black
 ADD lad-conn-8 22961 darkgray
 ADD lad-conn-9 62462 black
@@ -5923,9 +5913,9 @@ CONNECT lad-conn-8.axle1 -> lad-conn-10.hole1 TURNS
 CONNECT lad-axle3-2.axle1 -> lad-conn-9.hole1 TURNS
 CONNECT lad-axle3-2.axle3 -> lad-conn-9.hole1 TURNS
 CONNECT lad-conn-6.axle1 -> lad-conn-10.hole1 TURNS
-WHY Adds a 5-hole thin beam, 2 round pin connectors and a pin hub to the ladder. It sits in the middle of the truck, at mid height. It is fixed onto the 3-long axle, pin hub and 1 other part from step 592. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there (5 such joints in this step). Step 594 continues from here by adding 2 round pin connectors, a 5-hole beam and 4 other parts.
+WHY Adds a 5-hole thin beam, 2 round pin connectors and a pin hub to the ladder. It sits in the middle of the truck, at mid height. It is fixed onto the 3-long axle, pin hub and 1 other part from step 590. The pin hub sits in a cross hole of the 5-hole thin beam, so it cannot turn there and is held fixed (2 such joints in this step). The 3-long axle passes through a round hole of the round pin connector with no grip, so it can spin or swing freely there (5 such joints in this step). Step 592 continues from here by adding 2 round pin connectors, a 5-hole beam and 4 other parts.
 
-STEP 594
+STEP 592
 ADD lad-pin-9 61332 black
 ADD lad-pin-10 61332 black
 ADD lad-beam5-6 32316 black
@@ -5943,9 +5933,9 @@ CONNECT lad-pin-11.pin2 -> lad-beam-4.hole1 STIFF
 CONNECT lad-pin-11.pin3 -> tr-beam15-4.hole2 STIFF
 CONNECT lad-pin-12.pin2 -> lad-beam-3.hole1 STIFF
 CONNECT lad-pin-12.pin3 -> tr-beam15-4.hole4 STIFF
-WHY Finishes the ladder with 2 round pin connectors, a 5-hole beam, 2 friction pins and 2 long pins; it gives the driver a way up into the cab. It sits in the middle of the truck, at mid height. It is fixed onto the pin hub from step 593 and pin hub from step 592. The friction pins grip the pin hub with friction, making a rigid join (10 such joints in this step).
+WHY Finishes the ladder with 2 round pin connectors, a 5-hole beam, 2 friction pins and 2 long pins; it gives the driver a way up into the cab. It sits in the middle of the truck, at mid height. It is fixed onto the pin hub from step 591 and pin hub from step 590. The friction pins grip the pin hub with friction, making a rigid join (10 such joints in this step).
 
-STEP 595
+STEP 593
 ADD tr-pin-188 61332 black
 ADD tr-apin-38 43093 blue
 ADD tr-beam2-23 32140 black
@@ -5962,18 +5952,18 @@ CONNECT tr-pin-43.pin1 -> tr-panel11-3.hole8 STIFF
 CONNECT tr-pin-189.pin2 -> tr-panel11-3.hole9 STIFF
 CONNECT tr-pin-189.pin1 -> tr-panel11-4.hole4 STIFF
 CONNECT tr-pin-190.pin1 -> tr-panel11-4.hole9 STIFF
-WHY Adds a 2x4 L-beam, 2 11x3 panels, 3 friction pins and an axle pin to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the beam frame and 2 friction pins from step 60. The axle pin passes through a round hole of the beam frame with no grip, so it can spin or swing freely there. The friction pins grip the 11x3 panel with friction, making a rigid join (8 such joints in this step). Step 596 continues from here by adding a 3-hole beam and 2 friction pins.
+WHY Adds a 2x4 L-beam, 2 11x3 panels, 3 friction pins and an axle pin to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the beam frame and 2 friction pins from step 60. The axle pin passes through a round hole of the beam frame with no grip, so it can spin or swing freely there. The friction pins grip the 11x3 panel with friction, making a rigid join (8 such joints in this step). Step 594 continues from here by adding a 3-hole beam and 2 friction pins.
 
-STEP 596
+STEP 594
 ADD tr-pin-191 61332 black
 ADD tr-pin-192 61332 black
 ADD tr-beam3-26 32523 black
 CONNECT tr-pin-191.pin1 -> tr-panel11-3.hole2 STIFF
 CONNECT tr-pin-191.pin2 -> tr-beam3-26.hole1 STIFF
 CONNECT tr-pin-192.pin2 -> tr-beam3-26.hole3 STIFF
-WHY Adds a 3-hole beam and 2 friction pins to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 11x3 panel from step 595. The friction pins grip the 3-hole beam with friction, making a rigid join (3 such joints in this step).
+WHY Adds a 3-hole beam and 2 friction pins to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 11x3 panel from step 593. The friction pins grip the 3-hole beam with friction, making a rigid join (3 such joints in this step).
 
-STEP 597
+STEP 595
 ADD tr-conn-59 65489 lightgray
 ADD tr-conn-60 42003 lightgray
 ADD tr-conn-61 42003 lightgray
@@ -5997,14 +5987,14 @@ CONNECT tr-pin-195.pin2 -> tr-conn-62.hole3 TURNS
 CONNECT tr-conn-59.pin1 -> cont-motor-2.?
 WHY Adds a 3-long axle, 3 perpendicular pin connectors, a pin hub and 5 frictionless half pins to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the motor from step 10. The 3-long axle is locked in the cross hole of the perpendicular pin connector, so the two turn together (3 such joints in this step). The frictionless half pin passes through a round hole of the perpendicular pin connector with no grip, so it can spin or swing freely there (5 such joints in this step). These parts are on the drive line from the drive motor, so they must stay locked on their axles and turn freely in their bearings.
 
-STEP 598
+STEP 596
 ADD tr-apin-39 43093 blue
 ADD tr-axle-16 25214 lightgray
 CONNECT tr-apin-39.axle1 -> tr-panel3-2.hole11 TURNS
 CONNECT tr-apin-39.pin1 -> tr-axle-16.?
 WHY Adds an axle and an axle pin to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the 3x11 panel from step 18. The axle pin passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there.
 
-STEP 599
+STEP 597
 ADD tr-plate-10 11212 lightgray
 ADD tr-plate-11 3021 lightgray
 ADD tr-brick-1 3622 lightgray
@@ -6028,7 +6018,7 @@ CONNECT tr-plate-12.? -> tr-tile-24.?
 CONNECT tr-plate-12.? -> tr-tile-25.?
 WHY Adds 4 bricks, 3 plates and 3 tiles to the main chassis. It sits toward the rear of the truck, at mid height. These parts only meet earlier work through the parts added in the same step.
 
-STEP 600
+STEP 598
 ADD tr-conn-63 65487 lightgray
 ADD tr-pin-198 61332 black
 ADD tr-conn-64 65487 lightgray
@@ -6045,9 +6035,9 @@ CONNECT tr-pin-200.pin2 -> tr-panel3-8.hole12 STIFF
 CONNECT tr-pin-201.pin2 -> tr-panel3-8.hole10 STIFF
 CONNECT tr-pin-202.pin2 -> tr-panel3-7.hole5 STIFF
 CONNECT tr-pin-203.pin2 -> tr-panel3-7.hole7 STIFF
-WHY Adds 2 pin hubs and 6 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 2 2x3 L-beams from step 429 and 2 3x11 panels from step 129. The friction pins grip the 3x11 panel with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 601 slots 4 3x3 T-beams onto them.
+WHY Adds 2 pin hubs and 6 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 2 2x3 L-beams from step 429 and 2 3x11 panels from step 129. The friction pins grip the 3x11 panel with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 599 slots 4 3x3 T-beams onto them.
 
-STEP 601
+STEP 599
 ADD tr-beam3-27 60484 black
 ADD tr-apin-40 43093 blue
 ADD tr-conn-65 32013 black
@@ -6064,9 +6054,9 @@ CONNECT tr-pin-202.pin1 -> tr-beam3-28.hole1 STIFF
 CONNECT tr-apin-41.axle1 -> tr-beam3-28.hole2 TURNS
 CONNECT tr-pin-203.pin1 -> tr-beam3-28.hole5 STIFF
 CONNECT tr-pin-205.pin2 -> tr-conn-66.hole1 STIFF
-WHY Adds 2 3x3 T-beams, 2 pin connectors, 2 axle pins and 2 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 600. The axle pin passes through a round hole of the 3x3 T-beam with no grip, so it can spin or swing freely there (2 such joints in this step). The friction pins grip the 3x3 T-beam with friction, making a rigid join (6 such joints in this step). Its unused ends stay free because step 605 slots 2 13-hole beams onto them.
+WHY Adds 2 3x3 T-beams, 2 pin connectors, 2 axle pins and 2 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 598. The axle pin passes through a round hole of the 3x3 T-beam with no grip, so it can spin or swing freely there (2 such joints in this step). The friction pins grip the 3x3 T-beam with friction, making a rigid join (6 such joints in this step). Its unused ends stay free because step 603 slots 2 13-hole beams onto them.
 
-STEP 602
+STEP 600
 GROUP rear-bed-support-frame
 ADD hf-beam13-1 41239 black
 ADD hf-pin-1 61332 black
@@ -6079,7 +6069,7 @@ CONNECT hf-pin-1.pin2 -> hf-beam2-2.hole1 STIFF
 CONNECT hf-pin-2.pin2 -> hf-beam2-1.hole1 STIFF
 WHY Starts the rear bed support frame with a cross beam, two pins and two small connectors.
 
-STEP 603
+STEP 601
 ADD hf-axle4-1 87083 darkgray
 ADD hf-conn-1 32013 black
 ADD hf-conn-2 65487 lightgray
@@ -6106,7 +6096,7 @@ CONNECT hf-axle4-1.axle4 -> hf-conn-2.hole1 TURNS
 CONNECT hf-axle4-2.axle4 -> hf-conn-4.hole1 TURNS
 WHY Adds the paired pivot and seven-hole beam supports to the rear bed frame.
 
-STEP 604
+STEP 602
 ADD hf-pin-5 61332 black
 ADD hf-pin-6 61332 black
 ADD hf-pin-7 61332 black
@@ -6121,7 +6111,7 @@ CONNECT hf-pin-9.pin1 -> hf-beam7-2.hole4 STIFF
 CONNECT hf-pin-10.pin1 -> hf-beam7-2.hole1 STIFF
 WHY Adds six pins to secure the long bed support rails.
 
-STEP 605
+STEP 603
 ADD hf-beam13-2 41239 black
 ADD hf-beam13-3 41239 black
 ADD hf-beam13-4 41239 black
@@ -6136,7 +6126,7 @@ CONNECT hf-pin-7.pin1 -> hf-beam13-4.hole1 STIFF
 CONNECT hf-pin-8.pin2 -> hf-beam13-5.hole1 STIFF
 WHY Fits four thirteen-hole beams to form the two long bed support rails.
 
-STEP 606
+STEP 604
 ADD hf-pin-11 61332 black
 ADD hf-pin-12 61332 black
 ADD hf-conn-5 32557 lightgray
@@ -6158,11 +6148,11 @@ CONNECT hf-pin-13.pin2 -> hf-conn-6.hole3 STIFF
 END
 WHY Fits the paired brackets and projecting axle-pins to the bed support rails.
 
-STEP 607
+STEP 605
 ATTACH rear-bed-support-frame
 WHY Fits the completed bed support frame to the four indicated mounting points; the exact interfaces are unresolved.
 
-STEP 608
+STEP 606
 ADD ex-beam2-1 60483 darkgray
 ADD ex-pin-1 61332 black
 ADD ex-axle9-1 60485 yellow
@@ -6174,9 +6164,9 @@ CONNECT ex-axle9-1.axle3 -> ex-axle-1.axlehole1 LOCKED
 CONNECT ex-axle9-1.axle3 -> ex-axle-2.axlehole1 LOCKED
 CONNECT ex-pin-1.pin1 -> tr-panel3-2.hole11 STIFF
 CONNECT ex-axle9-1.axle1 -> tr-panel3-2.hole10 TURNS
-WHY Starts the exhaust stack with a 2-hole beam, 2 axles, a 9-long axle and a friction pin; it adds the exhaust stack behind the cabin. It sits toward the rear of the truck, at mid height. It is fixed onto the 3x11 panel from step 18. The 9-long axle is locked in the cross hole of the axle, so the two turn together (3 such joints in this step). The 9-long axle passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there. Its unused ends stay free because step 609 slots 3 bricks onto them.
+WHY Starts the exhaust stack with a 2-hole beam, 2 axles, a 9-long axle and a friction pin; it adds the exhaust stack behind the cabin. It sits toward the rear of the truck, at mid height. It is fixed onto the 3x11 panel from step 18. The 9-long axle is locked in the cross hole of the axle, so the two turn together (3 such joints in this step). The 9-long axle passes through a round hole of the 3x11 panel with no grip, so it can spin or swing freely there. Its unused ends stay free because step 607 slots 3 bricks onto them.
 
-STEP 609
+STEP 607
 ADD ex-axle-3 4032a lightgray
 ADD ex-brick-1 92947 lightgray
 ADD ex-brick-2 92947 lightgray
@@ -6187,9 +6177,9 @@ CONNECT ex-brick-1.? -> ex-brick-2.?
 CONNECT ex-brick-2.? -> ex-brick-3.?
 CONNECT ex-axle9-1.axle6 -> ex-brick-2.?
 CONNECT ex-axle9-1.axle7 -> ex-brick-3.?
-WHY Adds an axle and 3 bricks to the exhaust stack. It sits toward the rear of the truck, at mid height. It is fixed onto the 9-long axle from step 608.
+WHY Adds an axle and 3 bricks to the exhaust stack. It sits toward the rear of the truck, at mid height. It is fixed onto the 9-long axle from step 606.
 
-STEP 610
+STEP 608
 ADD ex-brick-4 92947 lightgray
 ADD ex-brick-5 92947 lightgray
 ADD ex-brick-6 92947 lightgray
@@ -6197,9 +6187,9 @@ CONNECT ex-brick-4.? -> ex-brick-3.?
 CONNECT ex-brick-4.? -> ex-brick-5.?
 CONNECT ex-axle9-1.axle8 -> ex-brick-4.?
 CONNECT ex-brick-5.? -> ex-brick-6.?
-WHY Adds 3 bricks to the exhaust stack. It sits toward the rear of the truck, high up. It is fixed onto the brick from step 609 and 9-long axle from step 608.
+WHY Adds 3 bricks to the exhaust stack. It sits toward the rear of the truck, high up. It is fixed onto the brick from step 607 and 9-long axle from step 606.
 
-STEP 611
+STEP 609
 ADD ex-axle4-1 3705 black
 ADD ex-tile-1 15535 lightgray
 ADD ex-axle-4 25214 lightgray
@@ -6208,9 +6198,9 @@ CONNECT ex-axle4-1.axle1 -> ex-brick-5.?
 CONNECT ex-axle4-1.axle2 -> ex-brick-6.?
 CONNECT ex-tile-1.? -> ex-axle-4.?
 CONNECT ex-tile-1.? -> ex-brick-6.?
-WHY Finishes the exhaust stack with a 4-long axle, an axle and a tile; it adds the exhaust stack behind the cabin. It sits toward the rear of the truck, high up. It is fixed onto the 2 bricks from step 610.
+WHY Finishes the exhaust stack with a 4-long axle, an axle and a tile; it adds the exhaust stack behind the cabin. It sits toward the rear of the truck, high up. It is fixed onto the 2 bricks from step 608.
 
-STEP 612
+STEP 610
 ADD fe-axle-1 3941 red
 ADD fe-axle-2 3941 red
 ADD fe-axle-3 3941 white
@@ -6223,9 +6213,9 @@ CONNECT fe-axle-2.? -> fe-axle-3.?
 CONNECT hf-apin-2.pin1 -> fe-axle-2.?
 CONNECT fe-axle-3.? -> fe-brick-1.?
 CONNECT fe-part-1.? -> fe-cone-1.?
-WHY Starts the fire extinguisher with 3 axles, a brick, a cone 1 x 1 and an equipment hose nozzle; it adds a fire extinguisher as decoration. It sits at the rear of the truck, at mid height, off to one side. It is fixed onto the long axle pin from step 606.
+WHY Starts the fire extinguisher with 3 axles, a brick, a cone 1 x 1 and an equipment hose nozzle; it adds a fire extinguisher as decoration. It sits at the rear of the truck, at mid height, off to one side. It is fixed onto the long axle pin from step 604.
 
-STEP 613
+STEP 611
 ADD fe-axle-4 3941 red
 ADD fe-axle-5 3941 red
 ADD fe-axle-6 3941 white
@@ -6238,9 +6228,9 @@ CONNECT fe-axle-5.? -> fe-axle-6.?
 CONNECT hf-apin-1.pin1 -> fe-axle-5.?
 CONNECT fe-axle-6.? -> fe-brick-2.?
 CONNECT fe-part-2.? -> fe-cone-2.?
-WHY Finishes the fire extinguisher with 3 axles, a brick, a cone 1 x 1 and an equipment hose nozzle; it adds a fire extinguisher as decoration. It sits at the rear of the truck, at mid height. It is fixed onto the long axle pin from step 606.
+WHY Finishes the fire extinguisher with 3 axles, a brick, a cone 1 x 1 and an equipment hose nozzle; it adds a fire extinguisher as decoration. It sits at the rear of the truck, at mid height. It is fixed onto the long axle pin from step 604.
 
-STEP 614
+STEP 612
 ADD tr-wheel-2 56908 lightgray
 ADD tr-wheel-3 69912 black
 ADD tr-wheel-4 56908 lightgray
@@ -6255,7 +6245,7 @@ CONNECT tr-wheel-6.? -> tr-wheel-7.?
 CONNECT tr-wheel-8.? -> tr-wheel-9.?
 WHY Adds 4 wheel rims and 4 tyres to the main chassis. It sits toward the rear of the truck, low on the truck. These parts only meet earlier work through the parts added in the same step.
 
-STEP 615
+STEP 613
 ADD tr-axle3-19 4519 lightgray
 ADD tr-axle-17 4032a black
 ADD tr-gear-17 35442 black
@@ -6272,7 +6262,7 @@ CONNECT tr-axle3-20.axle1 -> tr-gear-18.?
 CONNECT tr-axle-19.? -> tr-gear-18.?
 WHY Adds two front wheel hub details, each built from a three-stud axle, a black splat plate and a black round plate, to the front wheels.
 
-STEP 616
+STEP 614
 ADD tr-axle3-21 4519 lightgray
 ADD tr-wheel-10 4185 black
 ADD tr-wheel-11 4185 black
@@ -6283,9 +6273,9 @@ CONNECT tr-axle3-22.axle2 -> tr-wheel-6.?
 CONNECT tr-axle3-22.axle2 -> tr-wheel-7.?
 CONNECT tr-wheel-10.? -> tr-wheel-5.?
 CONNECT tr-wheel-11.? -> tr-wheel-7.?
-WHY Finishes the main chassis with 2 3-long axles and 2 technic wedge belt wheels. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 wheel rims and 2 tyres from step 614.
+WHY Finishes the main chassis with 2 3-long axles and 2 technic wedge belt wheels. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 wheel rims and 2 tyres from step 612.
 
-STEP 617
+STEP 615
 ADD fgw-axle10-1 3737 black
 ADD fgw-conn-1 59443 darkgray
 ADD fgw-part-1 63965 black
@@ -6295,18 +6285,18 @@ CONNECT fgw-axle10-1.axle10 -> fgw-conn-1.axlehole2 LOCKED
 CONNECT fgw-conn-1.axlehole1 -> fgw-part-1.?
 CONNECT fgw-part-2.? -> fgw-part-1.?
 CONNECT fgw-part-3.? -> fgw-part-1.?
-WHY Starts a white marker flag with a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring; it is a loose marker flag for play. It sits toward the front of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 618 slots a tile onto it.
+WHY Starts a white marker flag with a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring; it is a loose marker flag for play. It sits toward the front of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 616 slots a tile onto it.
 
-STEP 618
+STEP 616
 ADD fgw-dish-1 44375b black
 ADD fgw-axle-1 4032a black
 ADD fgw-tile-1 15535 black
 CONNECT fgw-dish-1.? -> fgw-axle-1.?
 CONNECT fgw-axle-1.? -> fgw-tile-1.?
 CONNECT fgw-axle10-1.axle1 -> fgw-tile-1.?
-WHY Adds an axle, a dish and a tile to a white marker flag. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 617.
+WHY Adds an axle, a dish and a tile to a white marker flag. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 615.
 
-STEP 619
+STEP 617
 ADD fgr-axle10-1 3737 black
 ADD fgr-conn-1 59443 darkgray
 ADD fgr-part-1 63965 black
@@ -6316,18 +6306,18 @@ CONNECT fgr-axle10-1.axle10 -> fgr-conn-1.axlehole2 LOCKED
 CONNECT fgr-conn-1.axlehole1 -> fgr-part-1.?
 CONNECT fgr-part-2.? -> fgr-part-1.?
 CONNECT fgr-part-3.? -> fgr-part-1.?
-WHY Starts a red marker flag with a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring; it is a loose marker flag for play. It sits toward the front of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 620 slots a tile onto it.
+WHY Starts a red marker flag with a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring; it is a loose marker flag for play. It sits toward the front of the truck, at mid height, off to one side. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 618 slots a tile onto it.
 
-STEP 620
+STEP 618
 ADD fgr-dish-1 44375b black
 ADD fgr-axle-1 4032a black
 ADD fgr-tile-1 15535 black
 CONNECT fgr-dish-1.? -> fgr-axle-1.?
 CONNECT fgr-axle-1.? -> fgr-tile-1.?
 CONNECT fgr-axle10-1.axle1 -> fgr-tile-1.?
-WHY Adds an axle, a dish and a tile to a red marker flag. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 619.
+WHY Adds an axle, a dish and a tile to a red marker flag. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 617.
 
-STEP 621
+STEP 619
 ADD fgw-axle10-2 3737 black
 ADD fgw-conn-2 59443 darkgray
 ADD fgw-part-4 63965 black
@@ -6337,18 +6327,18 @@ CONNECT fgw-axle10-2.axle10 -> fgw-conn-2.axlehole2 LOCKED
 CONNECT fgw-conn-2.axlehole1 -> fgw-part-4.?
 CONNECT fgw-part-5.? -> fgw-part-4.?
 CONNECT fgw-part-6.? -> fgw-part-4.?
-WHY Adds a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring to a white marker flag. It sits toward the front of the truck, at mid height, off to one side. These parts only meet earlier work through the parts added in the same step. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 622 slots a tile onto it.
+WHY Adds a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring to a white marker flag. It sits toward the front of the truck, at mid height, off to one side. These parts only meet earlier work through the parts added in the same step. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 620 slots a tile onto it.
 
-STEP 622
+STEP 620
 ADD fgw-dish-2 44375b black
 ADD fgw-axle-2 4032a black
 ADD fgw-tile-2 15535 black
 CONNECT fgw-dish-2.? -> fgw-axle-2.?
 CONNECT fgw-axle-2.? -> fgw-tile-2.?
 CONNECT fgw-axle10-2.axle1 -> fgw-tile-2.?
-WHY Finishes a white marker flag with an axle, a dish and a tile; it is a loose marker flag for play. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 621.
+WHY Finishes a white marker flag with an axle, a dish and a tile; it is a loose marker flag for play. It sits toward the front of the truck, low on the truck, off to one side. It is fixed onto the 10-long axle from step 619.
 
-STEP 623
+STEP 621
 ADD fgr-axle10-2 3737 black
 ADD fgr-conn-2 59443 darkgray
 ADD fgr-part-4 63965 black
@@ -6358,17 +6348,17 @@ CONNECT fgr-axle10-2.axle10 -> fgr-conn-2.axlehole2 LOCKED
 CONNECT fgr-conn-2.axlehole1 -> fgr-part-4.?
 CONNECT fgr-part-5.? -> fgr-part-4.?
 CONNECT fgr-part-6.? -> fgr-part-4.?
-WHY Adds a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring to a red marker flag. It sits at the front of the truck, high up. These parts only meet earlier work through the parts added in the same step. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 624 slots a tile onto it.
+WHY Adds a 10-long axle, an axle connector, 2 flags and a bar 6l with stop ring to a red marker flag. It sits at the front of the truck, high up. These parts only meet earlier work through the parts added in the same step. The 10-long axle is locked in the cross hole of the axle connector, so the two turn together. Its unused end stays free because step 622 slots a tile onto it.
 
-STEP 624
+STEP 622
 ADD fgr-dish-2 44375b black
 ADD fgr-axle-2 4032a black
 ADD fgr-tile-2 15535 black
 CONNECT fgr-dish-2.? -> fgr-axle-2.?
 CONNECT fgr-axle-2.? -> fgr-tile-2.?
 CONNECT fgr-axle10-2.axle1 -> fgr-tile-2.?
-WHY Finishes a red marker flag with an axle, a dish and a tile; it is a loose marker flag for play. It sits at the front of the truck, low on the truck. It is fixed onto the 10-long axle from step 623.
+WHY Finishes a red marker flag with an axle, a dish and a tile; it is a loose marker flag for play. It sits at the front of the truck, low on the truck. It is fixed onto the 10-long axle from step 621.
 
-STEP 625
+STEP 623
 ADD sticker-sheet-1 77604 nocolor
 WHY Sticks the sticker sheet labels on the finished truck; stickers are decoration only and carry no load, so they go on last after every mechanism is built.
