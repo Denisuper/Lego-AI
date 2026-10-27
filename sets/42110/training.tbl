@@ -2673,8 +2673,8 @@ WHY Aligns the central gearbox with the engine and front axle module, threading 
 
 STEP 261
 CONNECT p32054-8.pin2 -> p60483-22.hole1 STIFF
-CONNECT p32054-9.pin2~ -> p60483-23.hole1 STIFF
-WHY Presses the two grey connector pins inward through the black engine bearing blocks to secure the gearbox and engine module together. The right pin seating is estimated; the red outer pin ends remain available for the side beams fitted later.
+CONNECT p32054-9.pin2 -> p60483-23.hole1 STIFF
+WHY Presses the two grey connector pins inward through the black engine bearing blocks to secure the gearbox and engine module together. Both pins seat in the engine bearing blocks as shown; the red outer pin ends remain available for the side beams fitted later.
 
 STEP 262
 ADD p32034-15 32034 black
