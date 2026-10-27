@@ -6907,8 +6907,8 @@ CONNECT bumper-top-pin-a.pin1 -> bumper-top-black.hole1 STIFF
 CONNECT bumper-top-pin-b.pin1 -> bumper-top-black.hole9 STIFF
 CONNECT bumper-top-pin-a.pin2 -> bumper-top-olive.hole3 STIFF
 CONNECT bumper-top-pin-b.pin2 -> bumper-top-olive.hole11 STIFF
-CONNECT bumper-top-halfpin-a.pin1 -> bumper-top-olive.hole2~ TURNS
-CONNECT bumper-top-halfpin-b.pin1 -> bumper-top-olive.hole12~ TURNS
+CONNECT bumper-top-halfpin-a.pin2 -> bumper-top-olive.hole2 TURNS
+CONNECT bumper-top-halfpin-b.pin2 -> bumper-top-olive.hole12 TURNS
 CONNECT bumper-top-olive.? -> bumper-cross-cap-a.?
 WHY Builds an olive-green thirteen-hole upper bumper rail on a black nine-hole beam, adds two grey half pins, and fits it across the bumper.
 
@@ -6966,7 +6966,7 @@ CONNECT headlight-a-hub2.axle1 -> headlight-a-crossbar.axlehole2 LOCKED
 CONNECT headlight-a-hub1.axle2 -> headlight-a-blue-link.axlehole1 LOCKED
 CONNECT headlight-a-hub2.axle2 -> headlight-a-blue-link.axlehole2 LOCKED
 CONNECT headlight-a-lamp-pin.pin1 -> headlight-a-hub1.hole1 STIFF
-CONNECT headlight-a-halfpin.pin1 -> headlight-a-hub2.hole1 TURNS
+CONNECT headlight-a-halfpin.pin2 -> headlight-a-hub2.hole1 TURNS
 CONNECT headlight-a-black-tile.? -> headlight-a-halfpin.?
 CONNECT headlight-a-bar.? -> headlight-a-lens.?
 CONNECT headlight-a-lens.? -> headlight-a-disc.?
@@ -7083,7 +7083,7 @@ CONNECT headlight-b-hub2.axle1 -> headlight-b-crossbar.axlehole2 LOCKED
 CONNECT headlight-b-hub1.axle2 -> headlight-b-blue-link.axlehole1 LOCKED
 CONNECT headlight-b-hub2.axle2 -> headlight-b-blue-link.axlehole2 LOCKED
 CONNECT headlight-b-lamp-pin.pin1 -> headlight-b-hub1.hole1 STIFF
-CONNECT headlight-b-halfpin.pin1 -> headlight-b-hub2.hole1 TURNS
+CONNECT headlight-b-halfpin.pin2 -> headlight-b-hub2.hole1 TURNS
 CONNECT headlight-b-black-tile.? -> headlight-b-halfpin.?
 CONNECT headlight-b-bar.? -> headlight-b-lens.?
 CONNECT headlight-b-lens.? -> headlight-b-disc.?
@@ -7569,9 +7569,9 @@ STEP 745
 ADD fender-a-halfpin1 4274 lightgray
 ADD fender-a-halfpin2 4274 lightgray
 ADD fender-a-halfpin3 4274 lightgray
-CONNECT fender-a-halfpin1.pin1 -> fender-a-beam1.hole4~ TURNS
-CONNECT fender-a-halfpin2.pin1 -> fender-a-beam2.hole2~ TURNS
-CONNECT fender-a-halfpin3.pin1 -> fender-a-beam2.hole5~ TURNS
+CONNECT fender-a-halfpin1.pin2 -> fender-a-beam1.hole4 TURNS
+CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole2 TURNS
+CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole5 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 746
@@ -7668,8 +7668,8 @@ GROUP first-windshield-upright
 ADD windshield-a-upright 40490 black
 ADD windshield-a-upright-half1 4274 lightgray
 ADD windshield-a-upright-half2 4274 lightgray
-CONNECT windshield-a-upright-half1.pin1 -> windshield-a-upright.hole3 TURNS
-CONNECT windshield-a-upright-half2.pin1 -> windshield-a-upright.hole8 TURNS
+CONNECT windshield-a-upright-half1.pin2 -> windshield-a-upright.hole3 TURNS
+CONNECT windshield-a-upright-half2.pin2 -> windshield-a-upright.hole8 TURNS
 WHY Starts the black windshield upright with two grey half pins for the outer decorative tile.
 
 STEP 756
@@ -7788,9 +7788,9 @@ STEP 771
 ADD fender-b-halfpin1 4274 lightgray
 ADD fender-b-halfpin2 4274 lightgray
 ADD fender-b-halfpin3 4274 lightgray
-CONNECT fender-b-halfpin1.pin1 -> fender-b-beam1.hole4~ TURNS
-CONNECT fender-b-halfpin2.pin1 -> fender-b-beam2.hole2~ TURNS
-CONNECT fender-b-halfpin3.pin1 -> fender-b-beam2.hole5~ TURNS
+CONNECT fender-b-halfpin1.pin2 -> fender-b-beam1.hole4 TURNS
+CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole2 TURNS
+CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole5 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 772
@@ -7903,8 +7903,8 @@ STEP 783
 ADD windshield-b-upright 40490 black
 ADD windshield-b-upright-half1 4274 lightgray
 ADD windshield-b-upright-half2 4274 lightgray
-CONNECT windshield-b-upright-half1.pin1 -> windshield-b-upright.hole3 TURNS
-CONNECT windshield-b-upright-half2.pin1 -> windshield-b-upright.hole8 TURNS
+CONNECT windshield-b-upright-half1.pin2 -> windshield-b-upright.hole3 TURNS
+CONNECT windshield-b-upright-half2.pin2 -> windshield-b-upright.hole8 TURNS
 ADD windshield-b-upright-tile 6636 black
 CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half1.?
 CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half2.?
@@ -8433,8 +8433,8 @@ ADD ladder-cap-tile1 98138 black
 ADD ladder-cap-tile2 98138 black
 CONNECT ladder-cap-tile1.? -> ladder-cap-pin1.?
 CONNECT ladder-cap-tile2.? -> ladder-cap-pin2.?
-CONNECT ladder-cap-pin1.pin1 -> ladder-post-connector1.hole1 TURNS
-CONNECT ladder-cap-pin2.pin1 -> ladder-post-connector2.hole1 TURNS
+CONNECT ladder-cap-pin1.pin2 -> ladder-post-connector1.hole1 TURNS
+CONNECT ladder-cap-pin2.pin2 -> ladder-post-connector2.hole1 TURNS
 WHY Caps two smooth grey half pins with black round tiles and inserts them in the ladder post connectors.
 
 STEP 835
@@ -8529,9 +8529,9 @@ ADD rack-load-half2 4274 lightgray
 ADD rack-load-half3 4274 lightgray
 CONNECT rack-load-pin1.pin1 -> rack-load-bracket.hole1~ STIFF
 CONNECT rack-load-pin2.pin1 -> rack-load-bracket.hole3~ STIFF
-CONNECT rack-load-half1.pin1 -> rack-load-bracket.hole2~ TURNS
-CONNECT rack-load-half2.pin1 -> rack-load-bracket.hole4~ TURNS
-CONNECT rack-load-half3.pin1 -> rack-load-bracket.hole5~ TURNS
+CONNECT rack-load-half1.pin2 -> rack-load-bracket.hole2~ TURNS
+CONNECT rack-load-half2.pin2 -> rack-load-bracket.hole4~ TURNS
+CONNECT rack-load-half3.pin2 -> rack-load-bracket.hole5~ TURNS
 CONNECT rack-load-pin1.pin2 -> p64782-3.? STIFF
 CONNECT rack-load-pin2.pin2 -> p64782-3.? STIFF
 WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then presses its black pins into the roof panel below the rack; the exact panel-hole labels remain unresolved.

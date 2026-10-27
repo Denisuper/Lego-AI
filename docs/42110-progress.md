@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 626 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 618 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -71,3 +71,5 @@ Steps 525 and 532 show ten wheel-arch trim half pins seated by their long pin en
 The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. The separate window hinges in steps 613?614 and 649 use the stop ends as pivot interfaces and are retained.
 
 Step 494 also had the rear latch half pin reversed. Its inset shows the long end entering the cross connector and the stud retaining the white round plate. The plate clutch surface is not named by the catalog, so it remains unknown rather than being confused with its round through-hole.
+
+Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
