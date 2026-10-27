@@ -6623,16 +6623,16 @@ CONNECT p3706-14.axle6 -> p32126-7.axlehole1~ LOCKED
 CONNECT p3706-14.axle1 -> p32126-8.axlehole1 LOCKED
 ADD p4274-49 4274 lightgray
 ADD p4274-50 4274 lightgray
-CONNECT p4274-49.pin2 -> p32126-5.hole1~ TURNS
-CONNECT p4274-50.pin1 -> p32126-7.hole1~ TURNS
-CONNECT p4274-49.pin1 -> p32126-8.hole1~ TURNS
-WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, adds the two grey half pins to its end hinge bores, then joins one end to the existing top rail hinge. The upper shaft and half-pin seating are estimated.
+CONNECT p4274-49.pin1 -> p32126-5.hole1~ TURNS
+CONNECT p4274-50.pin2 -> p32126-7.hole1~ TURNS
+CONNECT p4274-49.pin2 -> p32126-8.hole1~ TURNS
+WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, adds the two grey half pins to its end hinge bores, then joins one end to the existing top rail hinge. The half pins enter the two sloping-rail connectors by their long ends, with their studs used as pivots for the upper and lower hinges. The upper shaft and hinge seating are estimated.
 
 STEP 650
 ADD p32126-6 32126 black
 ADD p32062-61 32062 red
 CONNECT p32062-61.axle1 -> p32126-6.axlehole1 LOCKED
-CONNECT p4274-50.pin2 -> p32126-6.hole1~ TURNS
+CONNECT p4274-50.pin1 -> p32126-6.hole1~ TURNS
 END
 WHY Builds the remaining lower hinge with a red axle, then joins it to the waiting grey half pin at the sloping rail end. The half-pin hinge seats are estimated.
 
@@ -6770,11 +6770,11 @@ ADD bumper-end-a-link 41677 blue
 ADD bumper-end-a-axle 4519 lightgray
 CONNECT bumper-end-a-pin1.pin1 -> bumper-end-panel-a.?
 CONNECT bumper-end-a-pin2.pin1 -> bumper-end-panel-a.?
-CONNECT bumper-end-a-pin1.pin2 -> bumper-end-a-beam.hole3~ STIFF
-CONNECT bumper-end-a-pin2.pin2 -> bumper-end-a-beam.hole4~ STIFF
+CONNECT bumper-end-a-pin1.pin2 -> bumper-end-a-beam.hole3 STIFF
+CONNECT bumper-end-a-pin2.pin2 -> bumper-end-a-beam.hole4 STIFF
 CONNECT bumper-end-a-axle-pin.axle1 -> bumper-end-a-link.axlehole1 LOCKED
 CONNECT bumper-end-a-axle.axle2 -> bumper-end-a-link.axlehole2 LOCKED
-CONNECT bumper-end-a-axle-pin.pin1 -> bumper-end-a-beam.hole1~ STIFF
+CONNECT bumper-end-a-axle-pin.pin1 -> bumper-end-a-beam.hole1 STIFF
 CONNECT bumper-end-a-axle.axle1 -> p32054-46.axlehole1 LOCKED
 WHY Builds one black bumper end with a grey L beam and a blue axle-pin and three-stud axle link, then keys it onto the grey support pin at that end.
 
@@ -6788,11 +6788,11 @@ ADD bumper-end-b-link 41677 blue
 ADD bumper-end-b-axle 4519 lightgray
 CONNECT bumper-end-b-pin1.pin1 -> bumper-end-panel-b.?
 CONNECT bumper-end-b-pin2.pin1 -> bumper-end-panel-b.?
-CONNECT bumper-end-b-pin1.pin2 -> bumper-end-b-beam.hole3~ STIFF
-CONNECT bumper-end-b-pin2.pin2 -> bumper-end-b-beam.hole4~ STIFF
+CONNECT bumper-end-b-pin1.pin2 -> bumper-end-b-beam.hole3 STIFF
+CONNECT bumper-end-b-pin2.pin2 -> bumper-end-b-beam.hole4 STIFF
 CONNECT bumper-end-b-axle-pin.axle1 -> bumper-end-b-link.axlehole1 LOCKED
 CONNECT bumper-end-b-axle.axle2 -> bumper-end-b-link.axlehole2 LOCKED
-CONNECT bumper-end-b-axle-pin.pin1 -> bumper-end-b-beam.hole1~ STIFF
+CONNECT bumper-end-b-axle-pin.pin1 -> bumper-end-b-beam.hole1 STIFF
 CONNECT bumper-end-b-axle.axle1 -> p32054-45.axlehole1 LOCKED
 WHY Builds the mirrored black bumper end with a grey L beam and blue link, then keys its three-stud axle onto the other grey support pin.
 
@@ -6808,8 +6808,8 @@ CONNECT bumper-centre-pin.pin1 -> bumper-centre-connector-a.hole1 STIFF
 CONNECT bumper-centre-pin.pin3 -> bumper-centre-connector-b.hole1 STIFF
 CONNECT bumper-centre-axle-pin-a.axle1 -> bumper-centre-connector-a.axlehole1 LOCKED
 CONNECT bumper-centre-axle-pin-b.axle1 -> bumper-centre-connector-b.axlehole1 LOCKED
-CONNECT bumper-centre-axle-pin-a.pin1 -> p32525-14.hole5~ STIFF
-CONNECT bumper-centre-axle-pin-b.pin1 -> p32525-14.hole7~ STIFF
+CONNECT bumper-centre-axle-pin-a.pin1 -> p32525-14.hole5 STIFF
+CONNECT bumper-centre-axle-pin-b.pin1 -> p32525-14.hole7 STIFF
 WHY Turns the bumper over and installs a pair of black axle connectors around a central spacer, using blue axle-pins to fix the unit to the inner crossbar.
 
 STEP 669
@@ -6819,12 +6819,12 @@ ADD bumper-light-a-thin 32140 black
 ADD bumper-light-a-beam 32316 lightgray
 ADD bumper-light-a-l 32140 lightgray
 CONNECT bumper-light-a-axle.axle1 -> bumper-light-a-thin.axlehole1 LOCKED
-CONNECT bumper-light-a-pin.pin1 -> bumper-light-a-thin.hole3~ STIFF
-CONNECT bumper-light-a-pin.pin2 -> bumper-light-a-beam.hole4~ STIFF
-CONNECT bumper-light-a-axle.axle2 -> bumper-light-a-beam.hole1~ TURNS
-CONNECT bumper-light-a-pin.pin3 -> bumper-light-a-l.hole3~ STIFF
+CONNECT bumper-light-a-pin.pin1 -> bumper-light-a-thin.hole3 STIFF
+CONNECT bumper-light-a-pin.pin2 -> bumper-light-a-beam.hole4 STIFF
+CONNECT bumper-light-a-axle.axle2 -> bumper-light-a-beam.hole1 TURNS
+CONNECT bumper-light-a-pin.pin3 -> bumper-light-a-l.hole3 STIFF
 CONNECT bumper-light-a-axle.axle3 -> bumper-light-a-l.axlehole1 LOCKED
-CONNECT p32054-46.pin2 -> bumper-light-a-l.hole4~ STIFF
+CONNECT p32054-46.pin2 -> bumper-light-a-l.hole4 STIFF
 WHY Builds a layered light-grey and black end block with a stickered face, then seats it over the upright support at one end of the bumper.
 
 STEP 670
@@ -6834,12 +6834,12 @@ ADD bumper-light-b-thin 32140 black
 ADD bumper-light-b-beam 32316 lightgray
 ADD bumper-light-b-l 32140 lightgray
 CONNECT bumper-light-b-axle.axle1 -> bumper-light-b-thin.axlehole1 LOCKED
-CONNECT bumper-light-b-pin.pin1 -> bumper-light-b-thin.hole3~ STIFF
-CONNECT bumper-light-b-pin.pin2 -> bumper-light-b-beam.hole4~ STIFF
-CONNECT bumper-light-b-axle.axle2 -> bumper-light-b-beam.hole1~ TURNS
-CONNECT bumper-light-b-pin.pin3 -> bumper-light-b-l.hole3~ STIFF
+CONNECT bumper-light-b-pin.pin1 -> bumper-light-b-thin.hole3 STIFF
+CONNECT bumper-light-b-pin.pin2 -> bumper-light-b-beam.hole4 STIFF
+CONNECT bumper-light-b-axle.axle2 -> bumper-light-b-beam.hole1 TURNS
+CONNECT bumper-light-b-pin.pin3 -> bumper-light-b-l.hole3 STIFF
 CONNECT bumper-light-b-axle.axle3 -> bumper-light-b-l.axlehole1 LOCKED
-CONNECT p32054-45.pin2 -> bumper-light-b-l.hole4~ STIFF
+CONNECT p32054-45.pin2 -> bumper-light-b-l.hole4 STIFF
 WHY Builds the mirrored stickered end block and seats it on the other upright bumper support.
 
 STEP 671

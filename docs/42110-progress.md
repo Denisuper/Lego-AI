@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 618 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 600 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -68,8 +68,16 @@ Steps 441 and 457 now record the four previously omitted sill-to-floor joins. Th
 
 Steps 525 and 532 show ten wheel-arch trim half pins seated by their long pin ends in the beams, leaving the small studs outside for the trim. The erroneous pin1 beam endpoints are corrected to pin2, and the fully seated positions no longer carry estimates.
 
-The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. The separate window hinges in steps 613?614 and 649 use the stop ends as pivot interfaces and are retained.
+The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. Window hinge joints also use the stop ends as pivot interfaces; their orientations require separate source review.
 
 Step 494 also had the rear latch half pin reversed. Its inset shows the long end entering the cross connector and the stud retaining the white round plate. The plate clutch surface is not named by the catalog, so it remains unknown rather than being confused with its round through-hole.
 
 Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
+
+Sequential comparison of selected part callouts, order and visible attachments has continued through the removable-roof installation at step 579, page 341. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
+
+The inset at step 649 shows both second-door window half pins inserted into the sloping-rail ends first. Their long ends and their stud pivot contacts in steps 649?650 were reversed in the dataset and are now corrected; the hinge seating remains estimated.
+
+The mirrored step 666?667 bumper-end insets show both friction pins through the short leg of each L beam and the blue axle-pin through its long leg. Six estimated beam contacts are resolved; the corner-panel holes remain unknown because the catalog geometry is ambiguous.
+
+Steps 668?670 show the central bumper mount and both mirrored layered lamp blocks in enlarged subassembly insets, resolving twelve previous pin and axle contact estimates.
