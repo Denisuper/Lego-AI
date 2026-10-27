@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 873 unknown and 657 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 873 unknown and 647 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -65,3 +65,5 @@ Steps 392?393 show the seated, symmetric rear headrest rail pin sleeves and adjo
 The step 423 rear bumper view shows four half pins fully seated in the outer black-beam holes before the tiles are pressed over them; those pin seating estimates are resolved.
 
 Steps 441 and 457 now record the four previously omitted sill-to-floor joins. The long blue pins were installed through the sill and bent beam in steps 435?436 and 451?452; the source installation arrows show the floor attachments. Exact floor-hole labels are left unknown.
+
+Steps 525 and 532 show ten wheel-arch trim half pins seated by their long pin ends in the beams, leaving the small studs outside for the trim. The erroneous pin1 beam endpoints are corrected to pin2, and the fully seated positions no longer carry estimates.

@@ -5373,12 +5373,12 @@ ADD p4274-20 4274 lightgray
 ADD p4274-21 4274 lightgray
 ADD p4274-22 4274 lightgray
 ADD p4274-23 4274 lightgray
-CONNECT p4274-19.pin1 -> p32278-11.hole2~ TURNS
-CONNECT p4274-20.pin1 -> p32278-11.hole4~ TURNS
-CONNECT p4274-21.pin1 -> p32278-11.hole7~ TURNS
-CONNECT p4274-22.pin1 -> p32278-11.hole8~ TURNS
-CONNECT p4274-23.pin1 -> p32278-11.hole12~ TURNS
-WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+CONNECT p4274-19.pin2 -> p32278-11.hole2 TURNS
+CONNECT p4274-20.pin2 -> p32278-11.hole4 TURNS
+CONNECT p4274-21.pin2 -> p32278-11.hole7 TURNS
+CONNECT p4274-22.pin2 -> p32278-11.hole8 TURNS
+CONNECT p4274-23.pin2 -> p32278-11.hole12 TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. The long pin ends are seated in the beam, leaving the stud ends exposed for the trim; smooth pins permit rotation in the bores.
 
 STEP 526
 ADD p22961-10 22961 red
@@ -5451,12 +5451,12 @@ ADD p4274-25 4274 lightgray
 ADD p4274-26 4274 lightgray
 ADD p4274-27 4274 lightgray
 ADD p4274-28 4274 lightgray
-CONNECT p4274-24.pin1 -> p32278-12.hole2~ TURNS
-CONNECT p4274-25.pin1 -> p32278-12.hole4~ TURNS
-CONNECT p4274-26.pin1 -> p32278-12.hole7~ TURNS
-CONNECT p4274-27.pin1 -> p32278-12.hole8~ TURNS
-CONNECT p4274-28.pin1 -> p32278-12.hole12~ TURNS
-WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+CONNECT p4274-24.pin2 -> p32278-12.hole2 TURNS
+CONNECT p4274-25.pin2 -> p32278-12.hole4 TURNS
+CONNECT p4274-26.pin2 -> p32278-12.hole7 TURNS
+CONNECT p4274-27.pin2 -> p32278-12.hole8 TURNS
+CONNECT p4274-28.pin2 -> p32278-12.hole12 TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. The long pin ends are seated in the beam, leaving the stud ends exposed for the trim; smooth pins permit rotation in the bores.
 
 STEP 533
 ADD p11947-5 11947 olivegreen
