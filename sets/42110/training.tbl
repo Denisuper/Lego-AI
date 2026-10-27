@@ -8528,7 +8528,9 @@ CONNECT rack-load-pin2.pin1 -> rack-load-bracket.hole3~ STIFF
 CONNECT rack-load-half1.pin1 -> rack-load-bracket.hole2~ TURNS
 CONNECT rack-load-half2.pin1 -> rack-load-bracket.hole4~ TURNS
 CONNECT rack-load-half3.pin1 -> rack-load-bracket.hole5~ TURNS
-WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then places it on the rack to support the next accessory.
+CONNECT rack-load-pin1.pin2 -> p64782-3.? STIFF
+CONNECT rack-load-pin2.pin2 -> p64782-3.? STIFF
+WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then presses its black pins into the roof panel below the rack; the exact panel-hole labels remain unresolved.
 
 STEP 846
 GROUP roof-storage-case
