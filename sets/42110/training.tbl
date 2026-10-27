@@ -4372,13 +4372,13 @@ WHY Fits a black five-hole beam under each end of the grey bumper beam and appli
 
 STEP 423
 ADD p4274-14 4274 lightgray
-CONNECT p4274-14.pin2~ -> p32316-12.hole4 TURNS
+CONNECT p4274-14.pin2 -> p32316-12.hole4 TURNS
 ADD p4274-15 4274 lightgray
-CONNECT p4274-15.pin2~ -> p32316-12.hole5 TURNS
+CONNECT p4274-15.pin2 -> p32316-12.hole5 TURNS
 ADD p4274-16 4274 lightgray
-CONNECT p4274-16.pin2~ -> p32316-11.hole2 TURNS
+CONNECT p4274-16.pin2 -> p32316-11.hole2 TURNS
 ADD p4274-17 4274 lightgray
-CONNECT p4274-17.pin2~ -> p32316-11.hole1 TURNS
+CONNECT p4274-17.pin2 -> p32316-11.hole1 TURNS
 ADD rear-bumper-tile-one 3069b lightgray
 ADD rear-bumper-tile-two 3069b lightgray
 CONNECT rear-bumper-tile-one.? -> p4274-14.? STIFF
@@ -4386,7 +4386,7 @@ CONNECT rear-bumper-tile-one.? -> p4274-15.? STIFF
 CONNECT rear-bumper-tile-two.? -> p4274-16.? STIFF
 CONNECT rear-bumper-tile-two.? -> p4274-17.? STIFF
 END
-WHY Inserts four grey half pins into the exposed outer holes of the two black bumper beams and caps each pair with a grey one-by-two tile. The frictionless half pins remain free in their round holes; half-pin seating and ordinary tile stud clutch surfaces are explicitly uncertain.
+WHY Inserts four grey half pins into the exposed outer holes of the two black bumper beams and caps each pair with a grey one-by-two tile. The frictionless half pins remain free in their round holes; the source shows the half pins fully seated in the outer beam holes, while ordinary tile stud clutch surfaces remain unnamed.
 
 STEP 424
 ATTACH rear-upper-bumper

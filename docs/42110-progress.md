@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 869 unknown and 661 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 869 unknown and 657 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -61,3 +61,5 @@ The two identical front seats in steps 370?373 show each stopped brown axle span
 The installation view at step 384 establishes the final seat orientation. Descriptions in steps 370?380 now identify the seat back, headrest end and cushion consistently with that view.
 
 Steps 392?393 show the seated, symmetric rear headrest rail pin sleeves and adjoining axle segments. Steps 408?409 show the stopped axles spanning the new L supports and the two receiving connectors installed in steps 68?69; those twelve seating positions are resolved. The unlisted stud and plate interfaces remain unknown.
+
+The step 423 rear bumper view shows four half pins fully seated in the outer black-beam holes before the tiles are pressed over them; those pin seating estimates are resolved.
