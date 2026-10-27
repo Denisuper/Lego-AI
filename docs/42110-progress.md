@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 600 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 532 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -74,10 +74,32 @@ Step 494 also had the rear latch half pin reversed. Its inset shows the long end
 
 Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
 
-Sequential comparison of selected part callouts, order and visible attachments has continued through the removable-roof installation at step 579, page 341. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
+Sequential comparison of selected part callouts, order and visible attachments has reached the last numbered build step 860, page 489. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
 
 The inset at step 649 shows both second-door window half pins inserted into the sloping-rail ends first. Their long ends and their stud pivot contacts in steps 649?650 were reversed in the dataset and are now corrected; the hinge seating remains estimated.
 
 The mirrored step 666?667 bumper-end insets show both friction pins through the short leg of each L beam and the blue axle-pin through its long leg. Six estimated beam contacts are resolved; the corner-panel holes remain unknown because the catalog geometry is ambiguous.
 
 Steps 668?670 show the central bumper mount and both mirrored layered lamp blocks in enlarged subassembly insets, resolving twelve previous pin and axle contact estimates.
+
+The enlarged source inset at step 583 shows the two stopped brown shafts keyed into the flexible black connectors and passing through the pivot links introduced at step 582. Those four axle contacts are now specified; the flexible connectors can still bend as the roof moves.
+
+Source steps 612-614 show the window hinge half pins seated and the six-stud axle keyed into both hinge ends; step 616 shows the mirror axle-pin keyed into the thin lever introduced at step 598. Six previously estimated contacts are specified.
+
+The mirrored window frame and mirror at steps 649-652 show the six-stud axle, two half-pin pivots and mirror axle-pin fully seated. These six contacts are specified; the half-pin ends retain their corrected orientation.
+
+The paired latch-rail insets at steps 598-599 and 634-635 show each thin lever seated on its stopped axle and each red axle seated in its angled connector. Steps 604 and 640 similarly show each grey axle seated in the thin lever. The deeper panel and articulated stack positions remain estimated.
+
+The headlight insets at steps 680 and 692 show each assembled lamp crossbar seated on the black axle introduced at steps 677 and 689. Those two contacts are specified; the adjacent half-stud stack positions remain estimated.
+
+The hood-support steps 705-706 and mirrored steps 712-713 show each olive L beam seated on the earlier black and blue pins, with the blue pin in its short leg. Four estimated pin contacts are specified.
+
+The step-727 inset shows both hood fastener half pins inserted by their long ends, with black tiles on their exposed studs. The two pin ends were reversed in the data and are corrected; the panel hole labels and tile clutch surfaces remain unknown.
+
+The enlarged fender-rail insets at steps 742-745 and mirrored steps 768-771 show the second seven-hole beam bridging the first: its inner pins occupy holes 5 and 7, while the two blue cross-connector pins occupy holes 2 and 4 and the half pins occupy holes 3 and 6. The old data put a second pin into an already occupied bridge hole and used the wrong beam positions. Both sides are corrected, and the forward bar pin at steps 748/774 uses the remaining end hole 1. Hole numbering runs from the free front end of the second beam toward the overlap.
+
+At steps 761 and 784, the previously estimated windshield support axle target was the seventh fender-rail beam hole, which is occupied by the rail bridge pin. The source arrows point toward an engine-bay attachment, but do not resolve its receiving part in the reviewed views. The two unsupported joins were removed and the missing receiving interfaces are stated in WHY; the lower estimate count does not mean they have been resolved.
+
+The cargo-box source views at steps 810-813 show two long axles passing horizontally through the frame and six pins entering its upward-facing holes. The draft assigned some axles to vertical holes and some vertical pins to horizontal holes. The frame interfaces and U-shaped rim positions are corrected; two axle-depth endpoints at the far frame side remain unknown.
+
+At cargo-box steps 808-809, each blue long pin passes through two half-thick beams between the outer thick beams. Both thin beams now use the middle pin section, leaving the two end sections for the thick beams. Their illustrated beam holes are specified.

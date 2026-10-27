@@ -1,8 +1,8 @@
 # Zetros 42129 source review
 
-The existing transcription is not a one-to-one transcription of the official 388-page booklet. The old draft combined source steps 1 and 2 in one training step and source steps 3 and 4 in another. The first 427 records now follow source steps 1-427 on printed pages 6-248; later source steps still need to be separated and reviewed. The source continues through step 639 on printed page 372. Most training prompts still do not identify their source pages. The source steps, including side builds and repeat counts, must be reviewed and transcribed in order before this set can be considered complete. Inventory reconciliation alone cannot prove coverage.
+The transcription now follows all 639 numbered source steps on printed pages 6-372 of the official booklet. Source-order coverage and inventory reconciliation alone cannot prove mechanical correctness: many connection endpoints remain uncertain, and inventory differences still need investigation.
 
-The duplicate differential names were repaired in the earlier checkpoint. Color names were aligned with the corresponding inventory entries when the part had only one matching intended color in the inventory. On printed page 369, source step 632 calls for two splat plates, two round plates and two three-stud axles, one of each for each front wheel. Two surplus round-plate records were removed from training step 399; the remaining connections have unresolved endpoints. The first 427 steps were checked against printed pages 6-248 and uncertain joints are marked explicitly. Unsupported claims that the differential case outer teeth mesh with its internal bevel gears were removed. These local fixes do not establish the correctness of other steps.
+The duplicate differential names were repaired in the earlier checkpoint. Color names were aligned with the corresponding inventory entries when the part had only one matching intended color in the inventory. On printed page 369, source step 632 calls for two splat plates, two round plates and two three-stud axles, one of each for each front wheel. Two surplus round-plate records were removed from training step 399; the remaining connections have unresolved endpoints. The 639 source steps were checked against printed pages 6-372 and uncertain joints are marked explicitly. Unsupported claims that the differential case outer teeth mesh with its internal bevel gears were removed. These local fixes do not establish the correctness of other steps.
 
 At this checkpoint, run `python tools/audit_dataset.py` for the exact current inventory counts. Keep 42129 in the audit's incomplete set list until its source sequence and inventory are fully reconciled. The existing notation check does not prove geometry or source coverage.
 
@@ -93,3 +93,67 @@ Printed pages 234-240, source steps 409-415, separate the cabin crossbeam connec
 Printed pages 241-244, source steps 416-423, separate the cabin roof panels, connecting beams, pins, curved panels, stickers and handles. The preceding roof panel build locates the receiving pins; hidden holes remain uncertain. Continue at source step 424.
 
 Printed pages 245-248, source steps 424-427, review the roof cross-axle, beam, antenna and roof installation. The roof pins and cabin side panels are traced to earlier steps; exact attachment holes remain uncertain. Continue at source step 428.
+
+Printed pages 249-252, source steps 428-434, separate the roof-side connector pairs and axles, then the start of the separate roof frame. Earlier roof-end connectors from step 424 identify the receiving assemblies; hidden holes remain uncertain. Continue at source step 435.
+
+Printed pages 252-256, source steps 435-440, separate the roof-frame extensions, closing crossbar, round details, frame installation and amber lights. Earlier roof and frame steps identify the receiving parts; mounting holes remain uncertain. Continue at source step 441.
+
+Printed pages 257-259, source steps 441-448, separate the roof connectors, upright tube build and its installation on the cabin side. Earlier roof pins and side panel locate the receiving assembly; exact mounting interfaces remain uncertain. Continue at source step 449.
+
+Printed pages 260-262, source steps 449-457, separate the hood support build, turning and installation. Step 454 calls for a black axle-pin rather than the draft blue axle-pin; corrected. The front chassis receives the support but exact mounting holes remain uncertain. Continue at source step 458.
+
+Printed pages 263-264, source steps 458-464, separate the opposite tube upright and its installation. Earlier roof connector and side panel identify the receiving assembly; exact mounting interfaces remain uncertain. Continue at source step 465.
+
+Printed pages 265-267, source steps 465-472, separate the opposite hood support build, turning and installation. Step 469 calls for a black axle-pin rather than the draft blue axle-pin; corrected. The chassis receives the support but exact mounting holes remain uncertain. Continue at source step 473.
+
+Printed pages 268-270, source steps 473-480, separate the paired hood beams, half pins, decorative details, sticker and connector pairs. Earlier beam and half-pin steps locate the receiving structure; hidden interfaces remain uncertain. Continue at source step 481.
+
+Printed pages 271-274, source steps 481-489, separate the hood crossbeam, its attachment to the earlier hood connector pairs, clip details, and hood installation. Hood supports from steps 449-457 and 465-472 identify the receiving assembly; exact mounting holes remain uncertain. Continue at source step 490.
+
+Printed pages 275-276, source steps 490-497, restore two omitted grey bars and connectors beside the hood, then separate the side detail and sticker. The bars match the inventory three-stud grey bar; the two axle connectors are black, consistent with the source view and the remaining matching inventory. Continue at source step 498.
+
+Printed pages 277-278, source steps 498-500, combine the round side detail as shown, turn it and install it next to the hood. The receiving cabin-side assembly is traced to earlier pages; exact mounting holes remain uncertain. Continue at source step 501.
+
+Printed pages 279-280, source steps 501-506, separate the front body connector, axles, links and long beam with four grey bars. The bars are distinct from the shorter pair in step 490; exact attachment holes remain uncertain. Continue at source step 507.
+
+Printed pages 281-282, source steps 507-513, separate the matching front-body side build, its turning and attachment to the long beam from step 506. The exact receiving hole remains uncertain. Continue at source step 514.
+
+Printed pages 283-284, source steps 514-519, separate the front cross-frame L-beams, thin links, axle and connectors. Earlier substeps locate the receiving axle; exact hidden interfaces remain uncertain. Continue at source step 520.
+
+Printed pages 285-288, source steps 520-529, separate joining the cross-frame, the stop axles, emblem and central link. Restored the orange plate and grey round tile omitted in step 525, and corrected step 529 to two thin two-hole links and one thin three-hole link. Exact hidden interfaces remain uncertain. Continue at source step 530.
+
+Printed pages 289-290, source steps 530-533, separate the stickered beam and seven-hole beam and recombine each layered side detail as the booklet shows. Earlier front-body connectors identify the receiving assemblies; exact hidden holes remain uncertain. Continue at source step 534.
+
+Printed pages 291-292, source steps 534-540, separate the hood panels, paired wedge details, pins, stickers and grille attachment. The earlier grille beams identify the receiving assembly; exact holes remain uncertain. Continue at source step 541.
+
+Printed pages 293-296, source steps 541-544, recombine the hood corner and stickered side builds as shown. The draft added an unsupported extra blue long pin to each side build; those two entries were removed. Earlier hood panels identify the receiving assemblies; exact holes remain uncertain. Continue at source step 545.
+
+Printed pages 297-300, source steps 545-550, recombine the side supports and paired lights, then restore the turning and installation of the finished front body. Earlier hood supports identify the receiving assembly; exact mounting holes remain uncertain. Continue at source step 551.
+
+Printed pages 301-307, source steps 551-557, separate the side beams and restore the paired connector stacks, light-grey links and hood closing. The four-hole links match the inventory light-grey beam with end studs; connector colour and any overlap with later legacy entries need reconciliation. Continue at source step 558.
+
+Printed pages 308-311, source steps 558-567, separate the two rear-side plate builds, their turning and installation. The rear chassis is the receiving assembly; exact mounting holes remain uncertain. Continue at source step 568.
+
+Printed pages 312-315, source steps 568-570, recombine the rear panel, green crossbar and matching rear lights in booklet order. The preceding panel and crossbar views locate the receiving assemblies; exact holes remain uncertain. Continue at source step 571.
+
+Printed pages 316-320, source steps 571-579, recombine the paired black rails and separately transcribe the floor panels, hubs, pins and beam. The earlier floor substeps establish the receiving parts; exact hole positions remain uncertain. Continue at source step 580.
+
+Printed pages 321-324, source steps 580-583, restore the bed-floor installation and separate the green connector, fourteen long pins and six green rail beams. Earlier chassis rails locate the receiving assembly; exact holes remain uncertain. Continue at source step 584.
+
+Printed pages 325-328, source steps 584-587, review the black rail pins, second green rail layer, and restore both stickering steps. Earlier green beams locate the receiving rails; exact holes remain uncertain. Continue at source step 588.
+
+Printed pages 329-334, source steps 588-592, separate the marker lights, side bracket, curved panels, mounting beam and paired cylindrical details. Earlier chassis and panel builds identify the receiving assemblies; exact holes remain uncertain. Continue at source step 593.
+
+Printed pages 335-340, source steps 593-595, recombine the ladder and first wheel-arch support in source order. Restored a black pin omitted from step 594. The chassis receives these builds; exact holes remain uncertain. Continue at source step 596.
+
+Printed pages 341-347, source steps 596-599, recombine the opposite side markers, wheel-arch support and ladder in source order. Restored the missing black pin in step 597. The chassis receives these builds; exact holes remain uncertain. Continue at source step 600.
+
+Printed pages 348-356, source steps 600-608, recombine the opposite side panels and separate the grey mounting block, its installation, curved connector and grille box. Earlier side chassis views locate the receiving assembly; exact mounting holes remain uncertain. Continue at source step 609.
+
+Printed pages 357-363, source steps 609-620, separate the bed pins, two T-brackets and support-frame steps, turning and attachment. Earlier cab and bed pins locate the receiving assemblies; exact mounting holes remain uncertain. Continue at source step 621.
+
+Printed pages 364-368, source steps 621-631, separate the exhaust stack and restore its omitted seventh ribbed cylinder, then recombine the two extinguishers and four wheels. The support frame identifies the receiving assembly; exact holes remain uncertain. Continue at source step 632.
+
+Printed pages 369-372, source steps 632-639, review both sets of wheel hubs and recombine the paired white and red marker flags. Removed the artificial final sticker-sheet step: stickers are applied during the source steps, and the inventory sheet itself is not a separate construction step. Continue with inventory reconciliation and unresolved connection review.
+
+Inventory reconciliation after source coverage: source step 490 supplies the two previously missing black 42135 connectors; the initially transcribed dark-grey colour was corrected. The remaining differences are two black 41677 thin beams and the sticker sheet, which is applied across the booklet and is not itself a construction step. Do not assume the beams are unused or spare until source counts are independently verified.

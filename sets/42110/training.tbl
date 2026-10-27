@@ -6050,13 +6050,13 @@ ADD p24316-21 24316 brown
 ADD p24316-22 24316 brown
 CONNECT p43093-71.axle1 -> p45590-2.axlehole2 LOCKED
 CONNECT p43093-72.axle1 -> p45590-3.axlehole2 LOCKED
-CONNECT p24316-21.axle3 -> p45590-2.axlehole1~ LOCKED
-CONNECT p24316-22.axle3 -> p45590-3.axlehole1~ LOCKED
+CONNECT p24316-21.axle3 -> p45590-2.axlehole1 LOCKED
+CONNECT p24316-22.axle3 -> p45590-3.axlehole1 LOCKED
 CONNECT p43093-71.pin1 -> p32523-4.hole1 STIFF
 CONNECT p43093-72.pin1 -> p32523-5.hole1 STIFF
-CONNECT p24316-21.axle2 -> p32523-9.hole1~ TURNS
-CONNECT p24316-22.axle2 -> p32523-10.hole1~ TURNS
-WHY Builds two flexible black double-cross connectors with a blue axle-pin and brown three-stud stopped axle each. Joins the blue pins to the front roof brackets and the brown shafts through the free holes of the black pivot links. Rubber flex and shaft seating are estimated from the illustrated articulated position.
+CONNECT p24316-21.axle2 -> p32523-9.hole1 TURNS
+CONNECT p24316-22.axle2 -> p32523-10.hole1 TURNS
+WHY Builds two flexible black double-cross connectors with a blue axle-pin and brown three-stud stopped axle each. Joins the blue pins to the front roof brackets and the brown shafts through the free holes of the black pivot links. The inset shows the brown shafts keyed into the flexible connectors and passing through the support links; rubber flex depends on the roof position.
 
 STEP 584
 ADD p11946-6 11946 white
@@ -6197,7 +6197,7 @@ WHY Adds a grey half bush and dark-grey cross connector to the brown pivot axle 
 STEP 598
 ADD p6632-4 6632 black
 ADD p24316-23 24316 brown
-CONNECT p24316-23.axle3 -> p6632-4.axlehole2~ LOCKED
+CONNECT p24316-23.axle3 -> p6632-4.axlehole2 LOCKED
 CONNECT p24316-23.axle2 -> p32525-12.hole10~ TURNS
 CONNECT p24316-23.axle2 -> p41677-13.axlehole1~ LOCKED
 WHY Builds the black thin three-hole latch lever on a brown stopped three-stud axle, then passes the shaft through the next olive rail round hole into the free socket of the dark-grey thin link. This angled latch stack has estimated axial seats.
@@ -6206,10 +6206,10 @@ STEP 599
 ADD p32015-3 32015 darkgray
 ADD p32062-46 32062 red
 ADD p32013-15 32013 darkgray
-CONNECT p32062-46.axle2 -> p32015-3.axlehole2~ LOCKED
+CONNECT p32062-46.axle2 -> p32015-3.axlehole2 LOCKED
 CONNECT p32062-46.axle1 -> p32013-15.axlehole1 LOCKED
 CONNECT p24316-23.axle1 -> p32015-3.axlehole1~ LOCKED
-WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The angled arm and brown shaft seating remain estimated from the articulated position.
+WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The red axle is seated in the angled arm; the brown shaft seating remains estimated.
 
 STEP 600
 ADD p18651-18 18651 black
@@ -6244,10 +6244,10 @@ WHY Extends the exposed lower end of the brown latch pivot axle with a black axl
 STEP 604
 ADD p4519-53 4519 lightgray
 ADD p6632-5 6632 black
-CONNECT p4519-53.axle3 -> p6632-5.axlehole2~ LOCKED
+CONNECT p4519-53.axle3 -> p6632-5.axlehole2 LOCKED
 CONNECT p4519-53.axle2 -> p64782-6.hole34~ TURNS
 CONNECT p4519-53.axle1 -> p32039-8.axlehole1~ LOCKED
-WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. Thin-lever and deep panel/socket seating are estimated.
+WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. The thin lever is seated on the axle; deep panel and socket seating remain estimated.
 
 STEP 605
 ADD p32014-1 32014 black
@@ -6308,27 +6308,27 @@ STEP 612
 ADD p32126-1 32126 black
 ADD p4274-42 4274 lightgray
 CONNECT p32062-52.axle1 -> p32126-1.axlehole1 LOCKED
-CONNECT p4274-42.pin2 -> p32126-1.hole1~ TURNS
-WHY Fits the first black hinged axle connector to the red rail end and inserts a grey smooth half pin into its hinge bore. Half-pin engagement depth is estimated.
+CONNECT p4274-42.pin2 -> p32126-1.hole1 TURNS
+WHY Fits the first black hinged axle connector to the red rail end and inserts a grey smooth half pin into its hinge bore. The inset shows the half pin seated in the hinge bore.
 
 STEP 613
 ADD p3706-13 3706 black
 ADD p32126-3 32126 black
 ADD p32126-4 32126 black
-CONNECT p3706-13.axle1 -> p32126-3.axlehole1~ LOCKED
+CONNECT p3706-13.axle1 -> p32126-3.axlehole1 LOCKED
 CONNECT p3706-13.axle6 -> p32126-4.axlehole1 LOCKED
-CONNECT p4274-42.pin1 -> p32126-4.hole1~ TURNS
-WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, then joins one connector to the waiting grey half-pin pivot. The upper shaft and half-pin seating are estimated.
+CONNECT p4274-42.pin1 -> p32126-4.hole1 TURNS
+WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, then joins one connector to the waiting grey half-pin pivot. The inset shows the six-stud axle keyed into both hinges and the hinge pair seated on the half pin.
 
 STEP 614
 ADD p32126-2 32126 black
 ADD p32062-53 32062 red
 ADD p4274-43 4274 lightgray
 CONNECT p32062-53.axle2 -> p32126-2.axlehole1 LOCKED
-CONNECT p4274-43.pin2 -> p32126-2.hole1~ TURNS
-CONNECT p4274-43.pin1 -> p32126-3.hole1~ TURNS
+CONNECT p4274-43.pin2 -> p32126-2.hole1 TURNS
+CONNECT p4274-43.pin1 -> p32126-3.hole1 TURNS
 END
-WHY Builds the remaining lower hinge with a red axle and grey smooth half pin, then joins it to the sloping rail end. The half-pin hinge seats are estimated.
+WHY Builds the remaining lower hinge with a red axle and grey smooth half pin, then joins it to the sloping rail end. The inset shows the half pin seated between the two hinge halves.
 
 STEP 615
 ATTACH first-door-window-frame
@@ -6345,8 +6345,8 @@ CONNECT p18677-9.? -> p30602-1.? STIFF
 CONNECT p3023-2.? -> p30602-1.? STIFF
 CONNECT p3023-2.? -> p18677-9.? STIFF
 CONNECT p43093-76.pin1 -> p18677-9.? STIFF
-CONNECT p43093-76.axle1 -> p6632-4.axlehole1~ LOCKED
-WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; thin-lever seating is estimated.
+CONNECT p43093-76.axle1 -> p6632-4.axlehole1 LOCKED
+WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; the inset shows the blue cross end seated in the thin lever.
 
 STEP 617
 ADD p32140-29 32140 lightgray
@@ -6503,7 +6503,7 @@ WHY Adds a grey half bush and dark-grey cross connector to the brown pivot axle 
 STEP 634
 ADD p6632-6 6632 black
 ADD p24316-24 24316 brown
-CONNECT p24316-24.axle3 -> p6632-6.axlehole2~ LOCKED
+CONNECT p24316-24.axle3 -> p6632-6.axlehole2 LOCKED
 CONNECT p24316-24.axle2 -> p32525-13.hole10~ TURNS
 CONNECT p24316-24.axle2 -> p41677-14.axlehole1~ LOCKED
 WHY Builds the black thin three-hole latch lever on a brown stopped three-stud axle, then passes the shaft through the next olive rail round hole into the free socket of the dark-grey thin link. This angled latch stack has estimated axial seats.
@@ -6512,10 +6512,10 @@ STEP 635
 ADD p32015-4 32015 darkgray
 ADD p32062-54 32062 red
 ADD p32013-16 32013 darkgray
-CONNECT p32062-54.axle1 -> p32015-4.axlehole2~ LOCKED
+CONNECT p32062-54.axle1 -> p32015-4.axlehole2 LOCKED
 CONNECT p32062-54.axle2 -> p32013-16.axlehole1 LOCKED
 CONNECT p24316-24.axle1 -> p32015-4.axlehole1~ LOCKED
-WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The angled arm and brown shaft seating remain estimated from the articulated position.
+WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The red axle is seated in the angled arm; the brown shaft seating remains estimated.
 
 STEP 636
 ADD p18651-19 18651 black
@@ -6550,10 +6550,10 @@ WHY Extends the exposed lower end of the brown latch pivot axle with a black axl
 STEP 640
 ADD p4519-55 4519 lightgray
 ADD p6632-7 6632 black
-CONNECT p4519-55.axle1 -> p6632-7.axlehole2~ LOCKED
+CONNECT p4519-55.axle1 -> p6632-7.axlehole2 LOCKED
 CONNECT p4519-55.axle2 -> p64782-7.hole8~ TURNS
 CONNECT p4519-55.axle3 -> p32039-9.axlehole1~ LOCKED
-WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. Thin-lever and deep panel/socket seating are estimated.
+WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. The thin lever is seated on the axle; deep panel and socket seating remain estimated.
 
 STEP 641
 ADD p32014-3 32014 black
@@ -6619,22 +6619,22 @@ STEP 649
 ADD p3706-14 3706 black
 ADD p32126-7 32126 black
 ADD p32126-8 32126 black
-CONNECT p3706-14.axle6 -> p32126-7.axlehole1~ LOCKED
+CONNECT p3706-14.axle6 -> p32126-7.axlehole1 LOCKED
 CONNECT p3706-14.axle1 -> p32126-8.axlehole1 LOCKED
 ADD p4274-49 4274 lightgray
 ADD p4274-50 4274 lightgray
-CONNECT p4274-49.pin1 -> p32126-5.hole1~ TURNS
-CONNECT p4274-50.pin2 -> p32126-7.hole1~ TURNS
-CONNECT p4274-49.pin2 -> p32126-8.hole1~ TURNS
-WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, adds the two grey half pins to its end hinge bores, then joins one end to the existing top rail hinge. The half pins enter the two sloping-rail connectors by their long ends, with their studs used as pivots for the upper and lower hinges. The upper shaft and hinge seating are estimated.
+CONNECT p4274-49.pin1 -> p32126-5.hole1 TURNS
+CONNECT p4274-50.pin2 -> p32126-7.hole1 TURNS
+CONNECT p4274-49.pin2 -> p32126-8.hole1 TURNS
+WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, adds the two grey half pins to its end hinge bores, then joins one end to the existing top rail hinge. The half pins enter the two sloping-rail connectors by their long ends, with their studs used as pivots for the upper and lower hinges. The inset shows the axle keyed into both sloping-rail connectors and the upper hinge seated on the half pin.
 
 STEP 650
 ADD p32126-6 32126 black
 ADD p32062-61 32062 red
 CONNECT p32062-61.axle1 -> p32126-6.axlehole1 LOCKED
-CONNECT p4274-50.pin1 -> p32126-6.hole1~ TURNS
+CONNECT p4274-50.pin1 -> p32126-6.hole1 TURNS
 END
-WHY Builds the remaining lower hinge with a red axle, then joins it to the waiting grey half pin at the sloping rail end. The half-pin hinge seats are estimated.
+WHY Builds the remaining lower hinge with a red axle, then joins it to the waiting grey half pin at the sloping rail end. The resulting view shows the lower hinge seated on the half pin.
 
 STEP 651
 ATTACH second-door-window-frame
@@ -6651,8 +6651,8 @@ CONNECT p18677-10.? -> p30602-2.? STIFF
 CONNECT p3023-3.? -> p30602-2.? STIFF
 CONNECT p3023-3.? -> p18677-10.? STIFF
 CONNECT p43093-78.pin1 -> p18677-10.? STIFF
-CONNECT p43093-78.axle1 -> p6632-6.axlehole1~ LOCKED
-WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; thin-lever seating is estimated.
+CONNECT p43093-78.axle1 -> p6632-6.axlehole1 LOCKED
+WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; the inset shows the blue cross end seated in the thin lever.
 
 STEP 653
 ADD p32140-30 32140 lightgray
@@ -6971,7 +6971,7 @@ CONNECT headlight-a-black-tile.? -> headlight-a-halfpin.?
 CONNECT headlight-a-bar.? -> headlight-a-lens.?
 CONNECT headlight-a-lens.? -> headlight-a-disc.?
 CONNECT headlight-a-bar.? -> headlight-a-hub1.?
-CONNECT headlight-a-black-axle.axle2 -> headlight-a-crossbar.axlehole2~ LOCKED
+CONNECT headlight-a-black-axle.axle2 -> headlight-a-crossbar.axlehole2 LOCKED
 WHY Builds the round headlight using the black disc, clear dish, bar and sticker 33, mounts it to the paired grey hubs, and lowers the bracket onto the black axle.
 
 STEP 681
@@ -7088,7 +7088,7 @@ CONNECT headlight-b-black-tile.? -> headlight-b-halfpin.?
 CONNECT headlight-b-bar.? -> headlight-b-lens.?
 CONNECT headlight-b-lens.? -> headlight-b-disc.?
 CONNECT headlight-b-bar.? -> headlight-b-hub1.?
-CONNECT headlight-b-black-axle.axle2 -> headlight-b-crossbar.axlehole2~ LOCKED
+CONNECT headlight-b-black-axle.axle2 -> headlight-b-crossbar.axlehole2 LOCKED
 WHY Builds the round headlight using the black disc, clear dish, bar and sticker 33, mounts it to the paired grey hubs, and lowers the bracket onto the black axle.
 
 STEP 693
@@ -7203,9 +7203,9 @@ WHY Fits a black friction pin in the dark-grey elbow and keys a blue axle-pin in
 
 STEP 706
 ADD hood-support-a-olive 32140 olivegreen
-CONNECT hood-support-a-pin.pin2 -> hood-support-a-olive.hole2~ STIFF
-CONNECT hood-support-a-axlepin.pin1 -> hood-support-a-olive.hole4~ STIFF
-WHY Attaches an olive L-shaped beam across the projecting black and blue pins.
+CONNECT hood-support-a-pin.pin2 -> hood-support-a-olive.hole2 STIFF
+CONNECT hood-support-a-axlepin.pin1 -> hood-support-a-olive.hole4 STIFF
+WHY Seats the olive L-shaped beam on the black and blue pins introduced in step 705, with the blue pin in its short leg.
 
 STEP 707
 ADD hood-support-a-mount-pin1 2780 black
@@ -7252,9 +7252,9 @@ WHY Inserts the black friction pin and blue axle-pin to hold the other olive sup
 
 STEP 713
 ADD hood-support-b-olive 32140 olivegreen
-CONNECT hood-support-b-pin.pin2 -> hood-support-b-olive.hole2~ STIFF
-CONNECT hood-support-b-axlepin.pin1 -> hood-support-b-olive.hole4~ STIFF
-WHY Fits the mirrored olive L-shaped beam across the pins.
+CONNECT hood-support-b-pin.pin2 -> hood-support-b-olive.hole2 STIFF
+CONNECT hood-support-b-axlepin.pin1 -> hood-support-b-olive.hole4 STIFF
+WHY Seats the mirrored olive L-shaped beam on the black and blue pins from step 712, with the blue pin in its short leg.
 
 STEP 714
 ADD hood-support-b-mount-pin1 2780 black
@@ -7391,11 +7391,11 @@ ADD hood-front-halfpin1 4274 lightgray
 ADD hood-front-halfpin2 4274 lightgray
 ADD hood-front-cap1 98138 black
 ADD hood-front-cap2 98138 black
-CONNECT hood-front-cap1.? -> hood-front-halfpin1.?
-CONNECT hood-front-cap2.? -> hood-front-halfpin2.?
-CONNECT hood-front-halfpin1.pin1 -> hood-front-panel.? TURNS
-CONNECT hood-front-halfpin2.pin1 -> hood-front-panel.? TURNS
-WHY Caps two grey half pins with black round tiles and inserts them in the front hood panel as the paired fastener details.
+CONNECT hood-front-cap1.? -> hood-front-halfpin1.pin1
+CONNECT hood-front-cap2.? -> hood-front-halfpin2.pin1
+CONNECT hood-front-halfpin1.pin2 -> hood-front-panel.? TURNS
+CONNECT hood-front-halfpin2.pin2 -> hood-front-panel.? TURNS
+WHY Seats the long ends of two grey half pins in the front hood panel and caps their exposed studs with black round tiles as paired fastener details.
 
 STEP 728
 ADD hood-outer-beam-b 41239 olivegreen
@@ -7513,7 +7513,7 @@ WHY Starts the first front fender rail with a black two-hole connector and a bla
 STEP 739
 ADD fender-a-beam1 32524 olivegreen
 ADD fender-a-stop-axle 6587 darktan
-CONNECT fender-a-end-pin.pin2 -> fender-a-beam1.hole6~ STIFF
+CONNECT fender-a-end-pin.pin2 -> fender-a-beam1.hole6 STIFF
 CONNECT fender-a-stop-axle.axle1 -> fender-a-end.axlehole1 LOCKED
 CONNECT fender-a-stop-axle.axle2 -> fender-a-beam1.hole7 TURNS
 WHY Adds a seven-hole olive beam and a tan stopped axle through the black end block to locate the fender rail.
@@ -7531,8 +7531,8 @@ ADD fender-a-cross1-pin1 43093 blue
 ADD fender-a-cross1-pin2 43093 blue
 CONNECT fender-a-cross1-pin1.axle1 -> fender-a-cross1.axlehole1 LOCKED
 CONNECT fender-a-cross1-pin2.axle1 -> fender-a-cross1.axlehole2 LOCKED
-CONNECT fender-a-cross1-pin1.pin1 -> fender-a-beam1.hole3~ STIFF
-CONNECT fender-a-cross1-pin2.pin1 -> fender-a-beam1.hole5~ STIFF
+CONNECT fender-a-cross1-pin1.pin1 -> fender-a-beam1.hole3 STIFF
+CONNECT fender-a-cross1-pin2.pin1 -> fender-a-beam1.hole5 STIFF
 WHY Mounts a dark-grey three-length cross connector beneath the olive beam with two blue axle-pins.
 
 STEP 742
@@ -7541,18 +7541,18 @@ ADD fender-a-bridge-pin1 2780 black
 ADD fender-a-bridge-pin2 2780 black
 CONNECT fender-a-bridge-pin1.pin1 -> fender-a-bridge.hole4 STIFF
 CONNECT fender-a-bridge-pin2.pin1 -> fender-a-bridge.hole5 STIFF
-CONNECT fender-a-bridge-pin1.pin2 -> fender-a-beam1.hole1~ STIFF
-CONNECT fender-a-bridge-pin2.pin2 -> fender-a-beam1.hole2~ STIFF
+CONNECT fender-a-bridge-pin1.pin2 -> fender-a-beam1.hole1 STIFF
+CONNECT fender-a-bridge-pin2.pin2 -> fender-a-beam1.hole2 STIFF
 WHY Adds a black five-hole bridge beam on two black pins, extending the fender rail beyond the first olive beam.
 
 STEP 743
 ADD fender-a-beam2 32524 olivegreen
 ADD fender-a-beam2-pin1 2780 black
 ADD fender-a-beam2-pin2 2780 black
-CONNECT fender-a-beam2-pin1.pin1 -> fender-a-beam2.hole1 STIFF
-CONNECT fender-a-beam2-pin2.pin1 -> fender-a-beam2.hole3 STIFF
-CONNECT fender-a-beam2-pin1.pin2 -> fender-a-bridge.hole2~ STIFF
-CONNECT fender-a-beam2-pin2.pin2 -> fender-a-bridge.hole4~ STIFF
+CONNECT fender-a-beam2-pin1.pin1 -> fender-a-beam2.hole5 STIFF
+CONNECT fender-a-beam2-pin2.pin1 -> fender-a-beam2.hole7 STIFF
+CONNECT fender-a-beam2-pin1.pin2 -> fender-a-bridge.hole1 STIFF
+CONNECT fender-a-beam2-pin2.pin2 -> fender-a-bridge.hole3 STIFF
 WHY Pins a second seven-hole olive beam to the black bridge, extending the fender rail.
 
 STEP 744
@@ -7561,8 +7561,8 @@ ADD fender-a-cross2-pin1 43093 blue
 ADD fender-a-cross2-pin2 43093 blue
 CONNECT fender-a-cross2-pin1.axle1 -> fender-a-cross2.axlehole1 LOCKED
 CONNECT fender-a-cross2-pin2.axle1 -> fender-a-cross2.axlehole2 LOCKED
-CONNECT fender-a-cross2-pin1.pin1 -> fender-a-beam2.hole4~ STIFF
-CONNECT fender-a-cross2-pin2.pin1 -> fender-a-beam2.hole6~ STIFF
+CONNECT fender-a-cross2-pin1.pin1 -> fender-a-beam2.hole2 STIFF
+CONNECT fender-a-cross2-pin2.pin1 -> fender-a-beam2.hole4 STIFF
 WHY Adds the second dark-grey cross connector underneath the extended rail using two blue axle-pins.
 
 STEP 745
@@ -7570,8 +7570,8 @@ ADD fender-a-halfpin1 4274 lightgray
 ADD fender-a-halfpin2 4274 lightgray
 ADD fender-a-halfpin3 4274 lightgray
 CONNECT fender-a-halfpin1.pin2 -> fender-a-beam1.hole4 TURNS
-CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole2 TURNS
-CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole5 TURNS
+CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole3 TURNS
+CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole6 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 746
@@ -7589,7 +7589,7 @@ WHY Places the completed first fender rail along the engine bay and aligns the u
 
 STEP 748
 ADD fender-a-bar-pin 61184 lightgray
-CONNECT fender-a-bar-pin.pin1 -> fender-a-beam2.hole7~ STIFF
+CONNECT fender-a-bar-pin.pin1 -> fender-a-beam2.hole1 STIFF
 WHY Pushes a grey half pin with a two-stud bar extension down into the highlighted forward rail hole.
 
 STEP 749
@@ -7712,8 +7712,7 @@ WHY Caps the tip with another olive two-hole connector and a round spacer, compl
 
 STEP 761
 ATTACH first-windshield-side
-CONNECT windshield-a-bracket-axle.axle2 -> fender-a-beam2.hole7~ TURNS
-WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated fender point and leaving the upright raised.
+WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated engine-bay point and leaving the upright raised. The receiving part and hole remain unresolved.
 
 STEP 762
 WHY Raises the black windshield upright to the front roof edge and aligns its top hole with the highlighted roof connection; the exact roof endpoint remains unresolved.
@@ -7732,7 +7731,7 @@ WHY Starts the second front fender rail with a black two-hole connector and a bl
 STEP 765
 ADD fender-b-beam1 32524 olivegreen
 ADD fender-b-stop-axle 6587 darktan
-CONNECT fender-b-end-pin.pin2 -> fender-b-beam1.hole6~ STIFF
+CONNECT fender-b-end-pin.pin2 -> fender-b-beam1.hole6 STIFF
 CONNECT fender-b-stop-axle.axle1 -> fender-b-end.axlehole1 LOCKED
 CONNECT fender-b-stop-axle.axle2 -> fender-b-beam1.hole7 TURNS
 WHY Adds a seven-hole olive beam and a tan stopped axle through the black end block to locate the fender rail.
@@ -7750,8 +7749,8 @@ ADD fender-b-cross1-pin1 43093 blue
 ADD fender-b-cross1-pin2 43093 blue
 CONNECT fender-b-cross1-pin1.axle1 -> fender-b-cross1.axlehole1 LOCKED
 CONNECT fender-b-cross1-pin2.axle1 -> fender-b-cross1.axlehole2 LOCKED
-CONNECT fender-b-cross1-pin1.pin1 -> fender-b-beam1.hole3~ STIFF
-CONNECT fender-b-cross1-pin2.pin1 -> fender-b-beam1.hole5~ STIFF
+CONNECT fender-b-cross1-pin1.pin1 -> fender-b-beam1.hole3 STIFF
+CONNECT fender-b-cross1-pin2.pin1 -> fender-b-beam1.hole5 STIFF
 WHY Mounts a dark-grey three-length cross connector beneath the olive beam with two blue axle-pins.
 
 STEP 768
@@ -7760,18 +7759,18 @@ ADD fender-b-bridge-pin1 2780 black
 ADD fender-b-bridge-pin2 2780 black
 CONNECT fender-b-bridge-pin1.pin1 -> fender-b-bridge.hole4 STIFF
 CONNECT fender-b-bridge-pin2.pin1 -> fender-b-bridge.hole5 STIFF
-CONNECT fender-b-bridge-pin1.pin2 -> fender-b-beam1.hole1~ STIFF
-CONNECT fender-b-bridge-pin2.pin2 -> fender-b-beam1.hole2~ STIFF
+CONNECT fender-b-bridge-pin1.pin2 -> fender-b-beam1.hole1 STIFF
+CONNECT fender-b-bridge-pin2.pin2 -> fender-b-beam1.hole2 STIFF
 WHY Adds a black five-hole bridge beam on two black pins, extending the fender rail beyond the first olive beam.
 
 STEP 769
 ADD fender-b-beam2 32524 olivegreen
 ADD fender-b-beam2-pin1 2780 black
 ADD fender-b-beam2-pin2 2780 black
-CONNECT fender-b-beam2-pin1.pin1 -> fender-b-beam2.hole1 STIFF
-CONNECT fender-b-beam2-pin2.pin1 -> fender-b-beam2.hole3 STIFF
-CONNECT fender-b-beam2-pin1.pin2 -> fender-b-bridge.hole2~ STIFF
-CONNECT fender-b-beam2-pin2.pin2 -> fender-b-bridge.hole4~ STIFF
+CONNECT fender-b-beam2-pin1.pin1 -> fender-b-beam2.hole5 STIFF
+CONNECT fender-b-beam2-pin2.pin1 -> fender-b-beam2.hole7 STIFF
+CONNECT fender-b-beam2-pin1.pin2 -> fender-b-bridge.hole1 STIFF
+CONNECT fender-b-beam2-pin2.pin2 -> fender-b-bridge.hole3 STIFF
 WHY Pins a second seven-hole olive beam to the black bridge, extending the fender rail.
 
 STEP 770
@@ -7780,8 +7779,8 @@ ADD fender-b-cross2-pin1 43093 blue
 ADD fender-b-cross2-pin2 43093 blue
 CONNECT fender-b-cross2-pin1.axle1 -> fender-b-cross2.axlehole1 LOCKED
 CONNECT fender-b-cross2-pin2.axle1 -> fender-b-cross2.axlehole2 LOCKED
-CONNECT fender-b-cross2-pin1.pin1 -> fender-b-beam2.hole4~ STIFF
-CONNECT fender-b-cross2-pin2.pin1 -> fender-b-beam2.hole6~ STIFF
+CONNECT fender-b-cross2-pin1.pin1 -> fender-b-beam2.hole2 STIFF
+CONNECT fender-b-cross2-pin2.pin1 -> fender-b-beam2.hole4 STIFF
 WHY Adds the second dark-grey cross connector underneath the extended rail using two blue axle-pins.
 
 STEP 771
@@ -7789,8 +7788,8 @@ ADD fender-b-halfpin1 4274 lightgray
 ADD fender-b-halfpin2 4274 lightgray
 ADD fender-b-halfpin3 4274 lightgray
 CONNECT fender-b-halfpin1.pin2 -> fender-b-beam1.hole4 TURNS
-CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole2 TURNS
-CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole5 TURNS
+CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole3 TURNS
+CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole6 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 772
@@ -7808,7 +7807,7 @@ WHY Places the completed second fender rail along the engine bay and aligns the 
 
 STEP 774
 ADD fender-b-bar-pin 61184 lightgray
-CONNECT fender-b-bar-pin.pin1 -> fender-b-beam2.hole7~ STIFF
+CONNECT fender-b-bar-pin.pin1 -> fender-b-beam2.hole1 STIFF
 WHY Pushes a grey half pin with a two-stud bar extension down into the highlighted forward rail hole.
 
 STEP 775
@@ -7919,8 +7918,7 @@ WHY Builds the second stickered black windshield upright with two half pins, a t
 
 STEP 784
 ATTACH second-windshield-side
-CONNECT windshield-b-bracket-axle.axle2 -> fender-b-beam2.hole7~ TURNS
-WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated fender point and leaving the upright raised.
+WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated engine-bay point and leaving the upright raised. The receiving part and hole remain unresolved.
 
 STEP 785
 WHY Raises the black windshield upright to the front roof edge and aligns its top hole with the highlighted roof connection; the exact roof endpoint remains unresolved.
@@ -8183,30 +8181,32 @@ ADD cargo-box-thin1 11478 black
 ADD cargo-box-thin2 11478 black
 ADD cargo-box-pin1 6558 blue
 ADD cargo-box-pin2 6558 blue
-CONNECT cargo-box-pin1.pin1 -> cargo-box-thin1.hole1 STIFF
-CONNECT cargo-box-pin2.pin1 -> cargo-box-thin1.hole3 STIFF
+CONNECT cargo-box-pin1.pin2 -> cargo-box-thin1.hole1 STIFF
+CONNECT cargo-box-pin2.pin2 -> cargo-box-thin1.hole3 STIFF
 CONNECT cargo-box-pin1.pin2 -> cargo-box-thin2.hole1 STIFF
 CONNECT cargo-box-pin2.pin2 -> cargo-box-thin2.hole3 STIFF
-WHY Starts the roof cargo box base with two thin black five-hole beams joined by two blue long pins.
+WHY Joins two thin black five-hole beams at the middle sections of two blue long pins, leaving the outer pin sections for the thick beams.
 
 STEP 809
 ADD cargo-box-beam1 32316 black
 ADD cargo-box-beam2 32316 black
-CONNECT cargo-box-pin1.pin3 -> cargo-box-beam1.hole2~ STIFF
-CONNECT cargo-box-pin2.pin3 -> cargo-box-beam1.hole4~ STIFF
-CONNECT cargo-box-pin1.pin1 -> cargo-box-beam2.hole2~ STIFF
-CONNECT cargo-box-pin2.pin1 -> cargo-box-beam2.hole4~ STIFF
-WHY Adds a thick black five-hole beam to each side of the thin-beam stack to form the box floor.
+CONNECT cargo-box-pin1.pin3 -> cargo-box-beam1.hole2 STIFF
+CONNECT cargo-box-pin2.pin3 -> cargo-box-beam1.hole4 STIFF
+CONNECT cargo-box-pin1.pin1 -> cargo-box-beam2.hole2 STIFF
+CONNECT cargo-box-pin2.pin1 -> cargo-box-beam2.hole4 STIFF
+WHY Adds a thick black five-hole beam to each side of the thin-beam stack on the free pin ends to form the box floor.
 
 STEP 810
 ADD cargo-box-frame 64179 black
 ADD cargo-box-axle1 55013 darkgray
 ADD cargo-box-axle2 55013 darkgray
-CONNECT cargo-box-axle1.axle1 -> cargo-box-frame.hole1~ TURNS
-CONNECT cargo-box-axle2.axle1 -> cargo-box-frame.hole5~ TURNS
+CONNECT cargo-box-axle1.axle1 -> cargo-box-frame.hole2 TURNS
+CONNECT cargo-box-axle2.axle1 -> cargo-box-frame.hole4 TURNS
 CONNECT cargo-box-axle1.axle2 -> cargo-box-beam1.hole1~ TURNS
 CONNECT cargo-box-axle2.axle2 -> cargo-box-beam1.hole5~ TURNS
-WHY Adds the black five-by-seven frame around the box base and slides two long stopped axles through its sides, leaving the ends projecting.
+CONNECT cargo-box-axle1.? -> cargo-box-frame.hole17
+CONNECT cargo-box-axle2.? -> cargo-box-frame.hole19
+WHY Adds the black five-by-seven frame around the box base and slides two long stopped axles through its front and back side bores, leaving the ends projecting. The axle positions at the far bores remain unknown.
 
 STEP 811
 ADD cargo-box-hub1 27940 darkgray
@@ -8228,25 +8228,25 @@ ADD cargo-box-top-pin3 2780 black
 ADD cargo-box-top-pin4 2780 black
 ADD cargo-box-top-pin5 2780 black
 ADD cargo-box-top-pin6 2780 black
-CONNECT cargo-box-top-pin1.pin1 -> cargo-box-frame.hole1~ STIFF
-CONNECT cargo-box-top-pin2.pin1 -> cargo-box-frame.hole3~ STIFF
-CONNECT cargo-box-top-pin3.pin1 -> cargo-box-frame.hole5~ STIFF
-CONNECT cargo-box-top-pin4.pin1 -> cargo-box-frame.hole7~ STIFF
-CONNECT cargo-box-top-pin5.pin1 -> cargo-box-frame.hole9~ STIFF
-CONNECT cargo-box-top-pin6.pin1 -> cargo-box-frame.hole11~ STIFF
-WHY Inserts six black friction pins around the top of the box frame for the grey perimeter beams.
+CONNECT cargo-box-top-pin1.pin1 -> cargo-box-frame.hole1 STIFF
+CONNECT cargo-box-top-pin2.pin1 -> cargo-box-frame.hole5 STIFF
+CONNECT cargo-box-top-pin3.pin1 -> cargo-box-frame.hole8 STIFF
+CONNECT cargo-box-top-pin4.pin1 -> cargo-box-frame.hole12 STIFF
+CONNECT cargo-box-top-pin5.pin1 -> cargo-box-frame.hole16 STIFF
+CONNECT cargo-box-top-pin6.pin1 -> cargo-box-frame.hole20 STIFF
+WHY Inserts six black friction pins in the six upward-facing frame holes for the grey perimeter beams.
 
 STEP 813
 ADD cargo-box-rim1 32316 lightgray
 ADD cargo-box-rim2 32316 lightgray
 ADD cargo-box-rim3 32316 lightgray
-CONNECT cargo-box-top-pin1.pin2 -> cargo-box-rim1.hole1~ STIFF
-CONNECT cargo-box-top-pin2.pin2 -> cargo-box-rim1.hole5~ STIFF
-CONNECT cargo-box-top-pin3.pin2 -> cargo-box-rim2.hole1~ STIFF
-CONNECT cargo-box-top-pin4.pin2 -> cargo-box-rim2.hole5~ STIFF
-CONNECT cargo-box-top-pin5.pin2 -> cargo-box-rim3.hole1~ STIFF
-CONNECT cargo-box-top-pin6.pin2 -> cargo-box-rim3.hole5~ STIFF
-WHY Fits three light-grey five-hole beams onto the six frame pins to create the cargo box rim.
+CONNECT cargo-box-top-pin1.pin2 -> cargo-box-rim1.hole1 STIFF
+CONNECT cargo-box-top-pin2.pin2 -> cargo-box-rim1.hole5 STIFF
+CONNECT cargo-box-top-pin3.pin2 -> cargo-box-rim2.hole2 STIFF
+CONNECT cargo-box-top-pin4.pin2 -> cargo-box-rim2.hole4 STIFF
+CONNECT cargo-box-top-pin5.pin2 -> cargo-box-rim3.hole1 STIFF
+CONNECT cargo-box-top-pin6.pin2 -> cargo-box-rim3.hole5 STIFF
+WHY Fits three light-grey five-hole beams onto the six frame pins to create the U-shaped cargo box rim; the middle beam uses its second and fourth holes.
 
 STEP 814
 ADD cargo-box-hinge-stop1 60483 black
