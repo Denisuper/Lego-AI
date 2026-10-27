@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 578 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 576 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -89,3 +89,5 @@ Source steps 612-614 show the window hinge half pins seated and the six-stud axl
 The mirrored window frame and mirror at steps 649-652 show the six-stud axle, two half-pin pivots and mirror axle-pin fully seated. These six contacts are specified; the half-pin ends retain their corrected orientation.
 
 The paired latch-rail insets at steps 598-599 and 634-635 show each thin lever seated on its stopped axle and each red axle seated in its angled connector. Steps 604 and 640 similarly show each grey axle seated in the thin lever. The deeper panel and articulated stack positions remain estimated.
+
+The headlight insets at steps 680 and 692 show each assembled lamp crossbar seated on the black axle introduced at steps 677 and 689. Those two contacts are specified; the adjacent half-stud stack positions remain estimated.

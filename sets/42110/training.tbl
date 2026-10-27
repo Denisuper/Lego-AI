@@ -6971,7 +6971,7 @@ CONNECT headlight-a-black-tile.? -> headlight-a-halfpin.?
 CONNECT headlight-a-bar.? -> headlight-a-lens.?
 CONNECT headlight-a-lens.? -> headlight-a-disc.?
 CONNECT headlight-a-bar.? -> headlight-a-hub1.?
-CONNECT headlight-a-black-axle.axle2 -> headlight-a-crossbar.axlehole2~ LOCKED
+CONNECT headlight-a-black-axle.axle2 -> headlight-a-crossbar.axlehole2 LOCKED
 WHY Builds the round headlight using the black disc, clear dish, bar and sticker 33, mounts it to the paired grey hubs, and lowers the bracket onto the black axle.
 
 STEP 681
@@ -7088,7 +7088,7 @@ CONNECT headlight-b-black-tile.? -> headlight-b-halfpin.?
 CONNECT headlight-b-bar.? -> headlight-b-lens.?
 CONNECT headlight-b-lens.? -> headlight-b-disc.?
 CONNECT headlight-b-bar.? -> headlight-b-hub1.?
-CONNECT headlight-b-black-axle.axle2 -> headlight-b-crossbar.axlehole2~ LOCKED
+CONNECT headlight-b-black-axle.axle2 -> headlight-b-crossbar.axlehole2 LOCKED
 WHY Builds the round headlight using the black disc, clear dish, bar and sticker 33, mounts it to the paired grey hubs, and lowers the bracket onto the black axle.
 
 STEP 693
