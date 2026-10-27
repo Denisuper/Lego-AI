@@ -6756,3 +6756,285 @@ CONNECT p6558-130.pin3 -> p6536-53.hole1 STIFF
 CONNECT p6558-129.pin3 -> p6536-54.hole1 STIFF
 WHY Lowers the completed inner support onto the front curved bumper panel and fits its two dark-grey perpendicular connector bores over the blue pin tails above the black spacers.
 
+STEP 666
+ADD bumper-end-panel-a 87080 black
+ADD bumper-end-a-beam 32140 lightgray
+ADD bumper-end-a-pin1 2780 black
+ADD bumper-end-a-pin2 2780 black
+ADD bumper-end-a-axle-pin 43093 blue
+ADD bumper-end-a-link 41677 blue
+ADD bumper-end-a-axle 4519 lightgray
+CONNECT bumper-end-a-pin1.pin1 -> bumper-end-panel-a.?
+CONNECT bumper-end-a-pin2.pin1 -> bumper-end-panel-a.?
+CONNECT bumper-end-a-pin1.pin2 -> bumper-end-a-beam.hole3~ STIFF
+CONNECT bumper-end-a-pin2.pin2 -> bumper-end-a-beam.hole4~ STIFF
+CONNECT bumper-end-a-axle-pin.axle1 -> bumper-end-a-link.axlehole1 LOCKED
+CONNECT bumper-end-a-axle.axle2 -> bumper-end-a-link.axlehole2 LOCKED
+CONNECT bumper-end-a-axle-pin.pin1 -> bumper-end-a-beam.hole1~ STIFF
+CONNECT bumper-end-a-axle.axle1 -> p32054-46.axlehole1 LOCKED
+WHY Builds one black bumper end with a grey L beam and a blue axle-pin and three-stud axle link, then keys it onto the grey support pin at that end.
+
+STEP 667
+ADD bumper-end-panel-b 87086 black
+ADD bumper-end-b-beam 32140 lightgray
+ADD bumper-end-b-pin1 2780 black
+ADD bumper-end-b-pin2 2780 black
+ADD bumper-end-b-axle-pin 43093 blue
+ADD bumper-end-b-link 41677 blue
+ADD bumper-end-b-axle 4519 lightgray
+CONNECT bumper-end-b-pin1.pin1 -> bumper-end-panel-b.?
+CONNECT bumper-end-b-pin2.pin1 -> bumper-end-panel-b.?
+CONNECT bumper-end-b-pin1.pin2 -> bumper-end-b-beam.hole3~ STIFF
+CONNECT bumper-end-b-pin2.pin2 -> bumper-end-b-beam.hole4~ STIFF
+CONNECT bumper-end-b-axle-pin.axle1 -> bumper-end-b-link.axlehole1 LOCKED
+CONNECT bumper-end-b-axle.axle2 -> bumper-end-b-link.axlehole2 LOCKED
+CONNECT bumper-end-b-axle-pin.pin1 -> bumper-end-b-beam.hole1~ STIFF
+CONNECT bumper-end-b-axle.axle1 -> p32054-45.axlehole1 LOCKED
+WHY Builds the mirrored black bumper end with a grey L beam and blue link, then keys its three-stud axle onto the other grey support pin.
+
+STEP 668
+ADD bumper-centre-spacer 18654 black
+ADD bumper-centre-pin 6558 blue
+ADD bumper-centre-connector-a 32034 black
+ADD bumper-centre-connector-b 32034 black
+ADD bumper-centre-axle-pin-a 43093 blue
+ADD bumper-centre-axle-pin-b 43093 blue
+CONNECT bumper-centre-pin.pin2 -> bumper-centre-spacer.hole1 STIFF
+CONNECT bumper-centre-pin.pin1 -> bumper-centre-connector-a.hole1 STIFF
+CONNECT bumper-centre-pin.pin3 -> bumper-centre-connector-b.hole1 STIFF
+CONNECT bumper-centre-axle-pin-a.axle1 -> bumper-centre-connector-a.axlehole1 LOCKED
+CONNECT bumper-centre-axle-pin-b.axle1 -> bumper-centre-connector-b.axlehole1 LOCKED
+CONNECT bumper-centre-axle-pin-a.pin1 -> p32525-14.hole5~ STIFF
+CONNECT bumper-centre-axle-pin-b.pin1 -> p32525-14.hole7~ STIFF
+WHY Turns the bumper over and installs a pair of black axle connectors around a central spacer, using blue axle-pins to fix the unit to the inner crossbar.
+
+STEP 669
+ADD bumper-light-a-axle 6587 darktan
+ADD bumper-light-a-pin 6558 blue
+ADD bumper-light-a-thin 11478 black
+ADD bumper-light-a-beam 32316 lightgray
+ADD bumper-light-a-l 32140 lightgray
+CONNECT bumper-light-a-axle.axle1 -> bumper-light-a-thin.axlehole1 LOCKED
+CONNECT bumper-light-a-pin.pin1 -> bumper-light-a-thin.hole3~ STIFF
+CONNECT bumper-light-a-pin.pin2 -> bumper-light-a-beam.hole4~ STIFF
+CONNECT bumper-light-a-axle.axle2 -> bumper-light-a-beam.hole1~ TURNS
+CONNECT bumper-light-a-pin.pin3 -> bumper-light-a-l.hole3~ STIFF
+CONNECT bumper-light-a-axle.axle3 -> bumper-light-a-l.axlehole1 LOCKED
+CONNECT p32054-46.pin2 -> bumper-light-a-l.hole4~ STIFF
+WHY Builds a layered light-grey and black end block with a stickered face, then seats it over the upright support at one end of the bumper.
+
+STEP 670
+ADD bumper-light-b-axle 6587 darktan
+ADD bumper-light-b-pin 6558 blue
+ADD bumper-light-b-thin 11478 black
+ADD bumper-light-b-beam 32316 lightgray
+ADD bumper-light-b-l 32140 lightgray
+CONNECT bumper-light-b-axle.axle1 -> bumper-light-b-thin.axlehole1 LOCKED
+CONNECT bumper-light-b-pin.pin1 -> bumper-light-b-thin.hole3~ STIFF
+CONNECT bumper-light-b-pin.pin2 -> bumper-light-b-beam.hole4~ STIFF
+CONNECT bumper-light-b-axle.axle2 -> bumper-light-b-beam.hole1~ TURNS
+CONNECT bumper-light-b-pin.pin3 -> bumper-light-b-l.hole3~ STIFF
+CONNECT bumper-light-b-axle.axle3 -> bumper-light-b-l.axlehole1 LOCKED
+CONNECT p32054-45.pin2 -> bumper-light-b-l.hole4~ STIFF
+WHY Builds the mirrored stickered end block and seats it on the other upright bumper support.
+
+STEP 671
+ADD bumper-crossbeam 41239 lightgray
+ADD bumper-cross-pin-a 6558 blue
+ADD bumper-cross-pin-b 6558 blue
+ADD bumper-cross-axlepin-a 43093 blue
+ADD bumper-cross-axlepin-b 43093 blue
+ADD bumper-cross-longpin-a 32054 black
+ADD bumper-cross-longpin-b 32054 black
+ADD bumper-cross-axle-a 3705 black
+ADD bumper-cross-axle-b 3705 black
+ADD bumper-cross-block-a 60483 lightgray
+ADD bumper-cross-block-b 60483 lightgray
+ADD bumper-cross-block-c 60483 lightgray
+ADD bumper-cross-block-d 60483 lightgray
+CONNECT bumper-cross-pin-a.pin1 -> bumper-crossbeam.hole1 STIFF
+CONNECT bumper-cross-pin-b.pin1 -> bumper-crossbeam.hole13 STIFF
+CONNECT bumper-cross-axle-a.axle1 -> bumper-cross-block-a.axlehole1 LOCKED
+CONNECT bumper-cross-axle-b.axle1 -> bumper-cross-block-b.axlehole1 LOCKED
+CONNECT bumper-cross-axle-a.axle2 -> bumper-crossbeam.hole2 TURNS
+CONNECT bumper-cross-axle-b.axle2 -> bumper-crossbeam.hole12 TURNS
+CONNECT bumper-cross-axlepin-a.axle1 -> bumper-cross-longpin-a.axlehole1 LOCKED
+CONNECT bumper-cross-axlepin-b.axle1 -> bumper-cross-longpin-b.axlehole1 LOCKED
+CONNECT bumper-cross-axlepin-a.pin1 -> bumper-cross-block-c.hole1 STIFF
+CONNECT bumper-cross-axlepin-b.pin1 -> bumper-cross-block-d.hole1 STIFF
+CONNECT bumper-cross-axle-a.axle3 -> bumper-cross-block-c.axlehole1 LOCKED
+CONNECT bumper-cross-axle-b.axle3 -> bumper-cross-block-d.axlehole1 LOCKED
+CONNECT bumper-cross-pin-a.pin3 -> bumper-light-a-beam.hole1~ STIFF
+CONNECT bumper-cross-pin-b.pin3 -> bumper-light-b-beam.hole1~ STIFF
+WHY Builds the thirteen-hole front crossbeam with paired grey blocks, vertical black axles and long pins, then lowers it onto the bumper end assemblies.
+
+STEP 672
+ADD bumper-cross-cap-a 60483 black
+ADD bumper-cross-cap-b 60483 black
+CONNECT bumper-cross-axle-a.axle4 -> bumper-cross-cap-a.axlehole1 LOCKED
+CONNECT bumper-cross-axle-b.axle4 -> bumper-cross-cap-b.axlehole1 LOCKED
+WHY Caps the two upright black axles with black two-hole axle-and-pin beams.
+
+STEP 673
+END
+ATTACH front-lower-bumper
+WHY Moves the completed bumper to the front of the vehicle and fits it over the two grey projecting chassis pins below the orange winch hook; the receiving holes are not identified.
+
+STEP 674
+ADD bumper-centre-tie-a 6632 black
+ADD bumper-centre-tie-b 6632 black
+ADD bumper-centre-tie-axle-a 32062 red
+ADD bumper-centre-tie-axle-b 32062 red
+CONNECT bumper-centre-tie-axle-a.axle1 -> bumper-centre-tie-a.axlehole1 LOCKED
+CONNECT bumper-centre-tie-axle-b.axle1 -> bumper-centre-tie-a.axlehole2 LOCKED
+CONNECT bumper-centre-tie-axle-a.axle2 -> bumper-centre-tie-b.axlehole1 LOCKED
+CONNECT bumper-centre-tie-axle-b.axle2 -> bumper-centre-tie-b.axlehole2 LOCKED
+CONNECT bumper-centre-tie-a.? -> bumper-centre-connector-a.?
+WHY Assembles two thin black three-hole beams on two short red axles and places the tie at the centre of the bumper near the winch.
+
+STEP 675
+ADD bumper-top-black 40490 black
+ADD bumper-top-olive 41239 olivegreen
+ADD bumper-top-pin-a 2780 black
+ADD bumper-top-pin-b 2780 black
+ADD bumper-top-halfpin-a 4274 lightgray
+ADD bumper-top-halfpin-b 4274 lightgray
+CONNECT bumper-top-pin-a.pin1 -> bumper-top-black.hole1 STIFF
+CONNECT bumper-top-pin-b.pin1 -> bumper-top-black.hole9 STIFF
+CONNECT bumper-top-pin-a.pin2 -> bumper-top-olive.hole3 STIFF
+CONNECT bumper-top-pin-b.pin2 -> bumper-top-olive.hole11 STIFF
+CONNECT bumper-top-halfpin-a.pin1 -> bumper-top-olive.hole2~ TURNS
+CONNECT bumper-top-halfpin-b.pin1 -> bumper-top-olive.hole12~ TURNS
+CONNECT bumper-top-olive.? -> bumper-cross-cap-a.?
+WHY Builds an olive-green thirteen-hole upper bumper rail on a black nine-hole beam, adds two grey half pins, and fits it across the bumper.
+
+STEP 676
+ADD bumper-top-plate-long 3460 olivegreen
+ADD bumper-top-plate-short 3623 olivegreen
+ADD bumper-top-tile-long 4162 olivegreen
+ADD bumper-top-tile-short 63864 olivegreen
+ADD bumper-top-plate-end-a 3024 olivegreen
+ADD bumper-top-plate-end-b 3024 olivegreen
+CONNECT bumper-top-tile-long.? -> bumper-top-plate-long.?
+CONNECT bumper-top-tile-short.? -> bumper-top-plate-short.?
+CONNECT bumper-top-plate-end-a.? -> bumper-top-plate-long.?
+CONNECT bumper-top-plate-end-b.? -> bumper-top-plate-short.?
+CONNECT bumper-top-plate-long.? -> bumper-top-olive.?
+WHY Builds the smooth olive-green upper trim from long and short plates and tiles, then fits it across the top of the front bumper.
+
+STEP 677
+GROUP first-headlight-corner
+ADD headlight-a-frame 32250 olivegreen
+ADD headlight-a-yellow-axle 32073 yellow
+ADD headlight-a-black-axle 3705 black
+CONNECT headlight-a-yellow-axle.axle1 -> headlight-a-frame.axlehole3 LOCKED
+CONNECT headlight-a-black-axle.axle1 -> headlight-a-frame.axlehole2 LOCKED
+WHY Starts the first headlight corner with a thin olive curved frame and two upright axles at its outer cross holes.
+
+STEP 678
+ADD headlight-a-half-bush 32123b lightgray
+CONNECT headlight-a-yellow-axle.axle2~ -> headlight-a-half-bush.axlehole1 LOCKED
+WHY Slides a grey half bush down the yellow axle to space the layers of the headlight corner.
+
+STEP 679
+ADD headlight-a-olive-block1 60483 olivegreen
+ADD headlight-a-olive-block2 60483 olivegreen
+ADD headlight-a-block-pin 2780 black
+CONNECT headlight-a-block-pin.pin1 -> headlight-a-olive-block1.hole1 STIFF
+CONNECT headlight-a-block-pin.pin2 -> headlight-a-olive-block2.hole1 STIFF
+CONNECT headlight-a-yellow-axle.axle3~ -> headlight-a-olive-block1.axlehole1 LOCKED
+CONNECT headlight-a-yellow-axle.axle4~ -> headlight-a-olive-block2.axlehole1 LOCKED
+WHY Joins two olive two-hole beams with a black pin and stacks them on the yellow axle above the half bush.
+
+STEP 680
+ADD headlight-a-crossbar 6632 black
+ADD headlight-a-hub1 27940 darkgray
+ADD headlight-a-hub2 27940 darkgray
+ADD headlight-a-blue-link 41677 blue
+ADD headlight-a-lamp-pin 2780 black
+ADD headlight-a-halfpin 4274 lightgray
+ADD headlight-a-black-tile 98138 black
+ADD headlight-a-disc 2723 black
+ADD headlight-a-lens 4740 transclear
+ADD headlight-a-bar 87994 black
+CONNECT headlight-a-hub1.axle1 -> headlight-a-crossbar.axlehole1 LOCKED
+CONNECT headlight-a-hub2.axle1 -> headlight-a-crossbar.axlehole2 LOCKED
+CONNECT headlight-a-hub1.axle2 -> headlight-a-blue-link.axlehole1 LOCKED
+CONNECT headlight-a-hub2.axle2 -> headlight-a-blue-link.axlehole2 LOCKED
+CONNECT headlight-a-lamp-pin.pin1 -> headlight-a-hub1.hole1 STIFF
+CONNECT headlight-a-halfpin.pin1 -> headlight-a-hub2.hole1 TURNS
+CONNECT headlight-a-black-tile.? -> headlight-a-halfpin.?
+CONNECT headlight-a-bar.? -> headlight-a-lens.?
+CONNECT headlight-a-lens.? -> headlight-a-disc.?
+CONNECT headlight-a-bar.? -> headlight-a-hub1.?
+CONNECT headlight-a-black-axle.axle2 -> headlight-a-crossbar.axlehole2~ LOCKED
+WHY Builds the round headlight using the black disc, clear dish, bar and sticker 33, mounts it to the paired grey hubs, and lowers the bracket onto the black axle.
+
+STEP 681
+ADD headlight-a-stud-brick1 6541 black
+ADD headlight-a-stud-brick2 6541 black
+ADD headlight-a-side-tile 3068b black
+ADD headlight-a-stopped-axle 6587 darktan
+CONNECT headlight-a-stud-brick1.? -> headlight-a-stud-brick2.?
+CONNECT headlight-a-side-tile.? -> headlight-a-stud-brick1.?
+CONNECT headlight-a-stopped-axle.axle1 -> headlight-a-stud-brick1.hole2 TURNS
+CONNECT headlight-a-stopped-axle.axle2 -> headlight-a-stud-brick2.hole2 TURNS
+WHY Joins two black Technic bricks under a stickered black square tile and inserts the tan stopped axle upward to hold the small side marker at the headlight corner.
+
+STEP 682
+ADD headlight-a-top-thin 6632 black
+CONNECT headlight-a-hub1.axle2 -> headlight-a-top-thin.axlehole1 LOCKED
+CONNECT headlight-a-hub2.axle2 -> headlight-a-top-thin.axlehole2 LOCKED
+WHY Caps the two grey headlight hub axles with a black thin three-hole beam.
+
+STEP 683
+ADD headlight-a-rear-bracket1 42003 lightgray
+ADD headlight-a-rear-bracket2 42003 lightgray
+ADD headlight-a-rear-pin 2780 black
+CONNECT headlight-a-rear-pin.pin1 -> headlight-a-rear-bracket1.hole1 STIFF
+CONNECT headlight-a-rear-pin.pin2 -> headlight-a-rear-bracket2.hole1 STIFF
+CONNECT headlight-a-black-axle.axle3 -> headlight-a-rear-bracket1.axlehole1 LOCKED
+CONNECT headlight-a-black-axle.axle4 -> headlight-a-rear-bracket2.axlehole1 LOCKED
+WHY Pins two grey perpendicular brackets together and keys the pair onto the upright black axle behind the headlight.
+
+STEP 684
+ADD headlight-a-outer-axle 3705 black
+ADD headlight-a-outer-block 60483 olivegreen
+ADD headlight-a-outer-thin 6632 black
+CONNECT headlight-a-outer-axle.axle1 -> headlight-a-outer-block.axlehole1 LOCKED
+CONNECT headlight-a-outer-axle.axle2 -> headlight-a-outer-thin.axlehole1 LOCKED
+CONNECT headlight-a-black-axle.axle4~ -> headlight-a-outer-thin.axlehole2 LOCKED
+WHY Adds an olive two-hole block and black thin beam on another four-stud axle beside the headlight.
+
+STEP 685
+ADD headlight-a-outer-spacer 18654 black
+ADD headlight-a-upper-block 60483 olivegreen
+CONNECT headlight-a-black-axle.axle4~ -> headlight-a-outer-spacer.hole1 TURNS
+CONNECT headlight-a-outer-axle.axle2~ -> headlight-a-upper-block.axlehole1 LOCKED
+WHY Adds an olive two-hole beam and black round spacer to the upright axle to space the upper curved panels.
+
+STEP 686
+ADD headlight-a-top-frame1 32250 olivegreen
+ADD headlight-a-top-frame2 32250 olivegreen
+ADD headlight-a-top-pin 6558 blue
+ADD headlight-a-top-spacer1 18654 black
+ADD headlight-a-top-spacer2 18654 black
+CONNECT headlight-a-top-pin.pin1 -> headlight-a-top-spacer1.hole1 STIFF
+CONNECT headlight-a-top-pin.pin2 -> headlight-a-top-spacer2.hole1 STIFF
+CONNECT headlight-a-top-pin.pin3 -> headlight-a-top-frame1.hole1~ STIFF
+CONNECT headlight-a-top-pin.pin3 -> headlight-a-top-frame2.hole1~ STIFF
+CONNECT headlight-a-yellow-axle.axle5 -> headlight-a-top-frame1.axlehole3 LOCKED
+CONNECT headlight-a-black-axle.axle4 -> headlight-a-top-frame1.axlehole2 LOCKED
+CONNECT headlight-a-yellow-axle.axle5~ -> headlight-a-top-frame2.axlehole3 LOCKED
+WHY Stacks two curved olive frames with a blue long pin and black spacers over the lamp, fitting their cross holes to the upright axles.
+
+STEP 687
+ADD headlight-a-side-panel 11946 olivegreen
+CONNECT headlight-a-yellow-axle.axle5 -> headlight-a-side-panel.axlehole1 LOCKED
+WHY Keys the upright olive number 21 fairing onto the yellow axle at the outside edge of the first headlight assembly.
+
+STEP 688
+END
+ATTACH first-headlight-corner
+CONNECT headlight-a-outer-block.? -> bumper-cross-cap-a.?
+WHY Turns and installs the completed first headlight corner on the front bumper, aligning its circled lower hole with the projecting attachment point.
