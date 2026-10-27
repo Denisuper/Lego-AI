@@ -1284,15 +1284,15 @@ WHY Adds 2 3-hole thin beams, 2 3-long axles and 2 friction pins to the second h
 
 STEP 82
 ADD ra2-beam11-1 32009 black
-ADD ra2-axle4-1 3705 red
+ADD ra2-axle3-5 4519 lightgray
 ADD ra2-ball-1 52731 lightgray
 ADD ra2-gear-1 46490 lightgray
 CONNECT ra2-pin-4.pin2 -> ra2-beam11-1.hole2 STIFF
 CONNECT ra2-pin-3.pin2 -> ra2-beam11-1.hole4 STIFF
-CONNECT ra2-axle4-1.axle1 -> ra-gear-3.hole1 TURNS
-CONNECT ra2-axle4-1.axle3 -> ra2-beam5-1.hole3 TURNS
-CONNECT ra2-axle4-1.axle4 -> ra2-ball-1.axlehole1 LOCKED
-WHY Adds an 11-hole beam, a gear, a 4-long axle and a ball joint to the second half of the rear axle. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 81 and 5-hole beam from step 80. The 4-long axle is locked in the cross hole of the ball joint, so the two turn together. The 4-long axle passes through a round hole of the gear with no grip, so it can spin or swing freely there (2 such joints in this step). Step 83 continues from here by adding 2 3-hole thin beams, 2 3-long axles and 2 other parts.
+CONNECT ra2-axle3-5.? -> ra2-gear-1.?
+CONNECT ra2-axle3-5.? -> ra2-beam5-1.?
+CONNECT ra2-axle3-5.? -> ra2-ball-1.axlehole1
+WHY Adds the second wheel reduction hub with a three-stud axle and CV joint; the axle seating points remain unresolved.
 
 STEP 83
 ADD ra2-axle3-3 4519 lightgray
