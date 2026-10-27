@@ -840,10 +840,10 @@ ADD rear-left-lower-pivot-axle-pin 43093 blue
 CONNECT p2780-20.pin2 -> p42003-5.hole1 STIFF
 CONNECT p43093-8.pin1 -> p42003-5.hole2 STIFF
 CONNECT p44294-3.axle7 -> p42003-5.axlehole1 LOCKED
-CONNECT rear-left-lower-pivot-pin.pin1 -> rear-left-lower-pivot-connector.hole1~ STIFF
-CONNECT rear-left-lower-pivot-axle-pin.pin1 -> rear-left-lower-pivot-connector.hole2~ STIFF
-CONNECT p44294-4.axle1 -> rear-left-lower-pivot-connector.axlehole1~ LOCKED
-WHY Builds two grey axle-and-pin end connectors, each carrying a black friction pin and a blue axle-pin, then fits them to the exposed lower suspension pivot shafts on both sides. The booklet shows both assemblies; the left assembly is absent from the reference model, so its mirrored point orientation remains estimated.
+CONNECT rear-left-lower-pivot-pin.pin1 -> rear-left-lower-pivot-connector.hole1 STIFF
+CONNECT rear-left-lower-pivot-axle-pin.pin1 -> rear-left-lower-pivot-connector.hole2 STIFF
+CONNECT p44294-4.axle1 -> rear-left-lower-pivot-connector.axlehole1 LOCKED
+WHY Builds two grey axle-and-pin end connectors, each carrying a black friction pin and a blue axle-pin, then fits them to the exposed lower suspension pivot shafts on both sides. The booklet calls for two identical connector assemblies; the left assembly is absent from the reference model.
 
 STEP 78
 ADD p42003-6 42003 lightgray

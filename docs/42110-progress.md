@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 717 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 714 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -10,7 +10,7 @@ The optional compressed reading copy retains all 496 page sizes and is 78,949,84
 
 The [official LDraw 32072 definition](https://library.ldraw.org/library/official/parts/32072.dat) identifies the four-knob gear. Its catalog row previously omitted the driving-lobe count and classified it as other. It now records gear type and four driving lobes in `gear_teeth`, explicitly distinguishing knobs from involute teeth, so the two pictured selector knob wheels can use MESH.
 
-Source steps 152 and 154 introduce the two complete grey soft-spring shocks (76138), which the reference model omits. They are included in the training inventory; the adjacent red hard-spring shock seating follows the booklet and remains estimated. The source also includes two black support pins at step 74 and a mirrored three-piece pivot connector at step 77 that are absent from the reference. The source step 74 inset shows the pins in the outer holes of the first grey connector; their individual left-right naming remains estimated. The step 77 endpoints remain estimated.
+Source steps 152 and 154 introduce the two complete grey soft-spring shocks (76138), which the reference model omits. They are included in the training inventory; the adjacent red hard-spring shock seating follows the booklet and remains estimated. The source also includes two black support pins at step 74 and a mirrored three-piece pivot connector at step 77 that are absent from the reference. The source step 74 inset shows the pins in the outer holes of the first grey connector; their individual left-right naming remains estimated. The step 77 inset calls for two identical assemblies, allowing the second connector to use the same catalog points as the first.
 
 The notation checker now accepts MESH for the existing gear-rack part type without requiring a rotary tooth count. Source step 189 shows the twelve-tooth steering pinion engaging rack 87761. Regression checks cover that valid mesh and a smooth beam that must still be rejected; all eleven checker tests pass.
 
