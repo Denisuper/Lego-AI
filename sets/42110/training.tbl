@@ -8181,20 +8181,20 @@ ADD cargo-box-thin1 11478 black
 ADD cargo-box-thin2 11478 black
 ADD cargo-box-pin1 6558 blue
 ADD cargo-box-pin2 6558 blue
-CONNECT cargo-box-pin1.pin1 -> cargo-box-thin1.hole1 STIFF
-CONNECT cargo-box-pin2.pin1 -> cargo-box-thin1.hole3 STIFF
+CONNECT cargo-box-pin1.pin2 -> cargo-box-thin1.hole1 STIFF
+CONNECT cargo-box-pin2.pin2 -> cargo-box-thin1.hole3 STIFF
 CONNECT cargo-box-pin1.pin2 -> cargo-box-thin2.hole1 STIFF
 CONNECT cargo-box-pin2.pin2 -> cargo-box-thin2.hole3 STIFF
-WHY Starts the roof cargo box base with two thin black five-hole beams joined by two blue long pins.
+WHY Joins two thin black five-hole beams at the middle sections of two blue long pins, leaving the outer pin sections for the thick beams.
 
 STEP 809
 ADD cargo-box-beam1 32316 black
 ADD cargo-box-beam2 32316 black
-CONNECT cargo-box-pin1.pin3 -> cargo-box-beam1.hole2~ STIFF
-CONNECT cargo-box-pin2.pin3 -> cargo-box-beam1.hole4~ STIFF
-CONNECT cargo-box-pin1.pin1 -> cargo-box-beam2.hole2~ STIFF
-CONNECT cargo-box-pin2.pin1 -> cargo-box-beam2.hole4~ STIFF
-WHY Adds a thick black five-hole beam to each side of the thin-beam stack to form the box floor.
+CONNECT cargo-box-pin1.pin3 -> cargo-box-beam1.hole2 STIFF
+CONNECT cargo-box-pin2.pin3 -> cargo-box-beam1.hole4 STIFF
+CONNECT cargo-box-pin1.pin1 -> cargo-box-beam2.hole2 STIFF
+CONNECT cargo-box-pin2.pin1 -> cargo-box-beam2.hole4 STIFF
+WHY Adds a thick black five-hole beam to each side of the thin-beam stack on the free pin ends to form the box floor.
 
 STEP 810
 ADD cargo-box-frame 64179 black

@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 536 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 532 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -101,3 +101,5 @@ The enlarged fender-rail insets at steps 742-745 and mirrored steps 768-771 show
 At steps 761 and 784, the previously estimated windshield support axle target was the seventh fender-rail beam hole, which is occupied by the rail bridge pin. The source arrows point toward an engine-bay attachment, but do not resolve its receiving part in the reviewed views. The two unsupported joins were removed and the missing receiving interfaces are stated in WHY; the lower estimate count does not mean they have been resolved.
 
 The cargo-box source views at steps 810-813 show two long axles passing horizontally through the frame and six pins entering its upward-facing holes. The draft assigned some axles to vertical holes and some vertical pins to horizontal holes. The frame interfaces and U-shaped rim positions are corrected; two axle-depth endpoints at the far frame side remain unknown.
+
+At cargo-box steps 808-809, each blue long pin passes through two half-thick beams between the outer thick beams. Both thin beams now use the middle pin section, leaving the two end sections for the thick beams. Their illustrated beam holes are specified.
