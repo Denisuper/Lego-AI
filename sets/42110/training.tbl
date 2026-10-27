@@ -6811,7 +6811,7 @@ WHY Turns the bumper over and installs a pair of black axle connectors around a 
 STEP 669
 ADD bumper-light-a-axle 6587 darktan
 ADD bumper-light-a-pin 6558 blue
-ADD bumper-light-a-thin 11478 black
+ADD bumper-light-a-thin 32140 black
 ADD bumper-light-a-beam 32316 lightgray
 ADD bumper-light-a-l 32140 lightgray
 CONNECT bumper-light-a-axle.axle1 -> bumper-light-a-thin.axlehole1 LOCKED
@@ -6826,7 +6826,7 @@ WHY Builds a layered light-grey and black end block with a stickered face, then 
 STEP 670
 ADD bumper-light-b-axle 6587 darktan
 ADD bumper-light-b-pin 6558 blue
-ADD bumper-light-b-thin 11478 black
+ADD bumper-light-b-thin 32140 black
 ADD bumper-light-b-beam 32316 lightgray
 ADD bumper-light-b-l 32140 lightgray
 CONNECT bumper-light-b-axle.axle1 -> bumper-light-b-thin.axlehole1 LOCKED
@@ -8320,15 +8320,15 @@ CONNECT cargo-lid-underplate.? -> cargo-lid-plate2.?
 WHY Turns the lid over and adds a grey two-by-three plate underneath to brace the centre.
 
 STEP 823
-ADD cargo-lid-hinge1 3937 darkgray
-ADD cargo-lid-hinge2 3937 darkgray
+ADD cargo-lid-hinge1 18677 black
+ADD cargo-lid-hinge2 18677 black
 ADD cargo-lid-hinge-pin1 2780 black
 ADD cargo-lid-hinge-pin2 2780 black
 CONNECT cargo-lid-hinge-pin1.pin1 -> cargo-lid-hinge1.?
 CONNECT cargo-lid-hinge-pin2.pin1 -> cargo-lid-hinge2.?
 CONNECT cargo-lid-hinge1.? -> cargo-lid-underplate.?
 CONNECT cargo-lid-hinge2.? -> cargo-lid-underplate.?
-WHY Adds two dark-grey hinge bricks with black friction pins underneath the lid for its box hinge.
+WHY Adds two black pin-hole plates with black friction pins underneath the lid for its box hinge.
 
 STEP 824
 ADD cargo-lid-under-curve1 32803 lightgray
@@ -8366,3 +8366,345 @@ ATTACH roof-cargo-box
 CONNECT rack-cross-short1.axle4 -> cargo-box-hook1.? LOCKED
 CONNECT rack-cross-short2.axle4 -> cargo-box-hook2.? LOCKED
 WHY Hooks the completed cargo box onto the first pair of exposed rack crossbar axles.
+
+STEP 829
+GROUP roof-ladder
+ADD ladder-base-axle 15462 brown
+ADD ladder-base-block 60483 black
+CONNECT ladder-base-axle.axle2 -> ladder-base-block.axlehole1 LOCKED
+WHY Starts the folding ladder with a black two-hole block on a brown five-stud stopped axle.
+
+STEP 830
+ADD ladder-side1 11478 black
+ADD ladder-side-blue1 43093 blue
+CONNECT ladder-base-axle.axle3 -> ladder-side1.axlehole1 LOCKED
+CONNECT ladder-side-blue1.axle1 -> ladder-side1.axlehole2 LOCKED
+WHY Adds the first thin black ladder side and keys a blue axle-pin into its upper end.
+
+STEP 831
+ADD ladder-rung1 62462 lightgray
+ADD ladder-rung1-pin1 32002 tan
+ADD ladder-rung1-pin2 32002 tan
+CONNECT ladder-rung1-pin1.pin1 -> ladder-rung1.hole1~ TURNS
+CONNECT ladder-rung1-pin2.pin1 -> ladder-rung1.hole1~ TURNS
+CONNECT ladder-rung1-pin1.pin2 -> ladder-side1.hole2~ TURNS
+WHY Builds a grey round rung with a tan three-quarter pin at each end and fits one end to the first ladder side.
+
+STEP 832
+ADD ladder-rung2 62462 lightgray
+ADD ladder-rung3 62462 lightgray
+ADD ladder-hinge-pin1 18651 black
+ADD ladder-side2 11478 black
+CONNECT ladder-hinge-pin1.axle1 -> ladder-side2.axlehole1 LOCKED
+CONNECT ladder-hinge-pin1.axle2 -> ladder-rung3.hole1 TURNS
+CONNECT ladder-base-axle.axle4 -> ladder-rung2.hole1 TURNS
+CONNECT ladder-rung1-pin2.pin2 -> ladder-side2.hole2~ TURNS
+CONNECT ladder-side-blue1.pin1 -> ladder-side2.hole3~ STIFF
+WHY Adds the other ladder side and two more grey cylindrical rungs, joining the upper frame around the brown axle and black axle-pin.
+
+STEP 833
+ADD ladder-post-hub1 32126 black
+ADD ladder-post-hub2 32126 black
+ADD ladder-post-connector1 32034 black
+ADD ladder-post-connector2 32034 black
+ADD ladder-post-red1 32062 red
+ADD ladder-post-red2 32062 red
+ADD ladder-post-axle1 4519 lightgray
+ADD ladder-post-axle2 4519 lightgray
+CONNECT ladder-post-red1.axle1 -> ladder-post-hub1.axlehole1 LOCKED
+CONNECT ladder-post-red2.axle1 -> ladder-post-hub2.axlehole1 LOCKED
+CONNECT ladder-post-red1.axle2 -> ladder-post-connector1.axlehole1 LOCKED
+CONNECT ladder-post-red2.axle2 -> ladder-post-connector2.axlehole1 LOCKED
+CONNECT ladder-post-axle1.axle1 -> ladder-post-connector1.axlehole2 LOCKED
+CONNECT ladder-post-axle2.axle1 -> ladder-post-connector2.axlehole2 LOCKED
+CONNECT ladder-hinge-pin1.pin1 -> ladder-post-hub1.hole1 STIFF
+CONNECT ladder-side-blue1.pin1 -> ladder-post-hub2.hole1 STIFF
+WHY Builds two black ladder mounting posts from axle hubs, red short axles, straight connectors and grey three-stud axles, then attaches them beside the rungs.
+
+STEP 834
+ADD ladder-cap-pin1 4274 lightgray
+ADD ladder-cap-pin2 4274 lightgray
+ADD ladder-cap-tile1 98138 black
+ADD ladder-cap-tile2 98138 black
+CONNECT ladder-cap-tile1.? -> ladder-cap-pin1.?
+CONNECT ladder-cap-tile2.? -> ladder-cap-pin2.?
+CONNECT ladder-cap-pin1.pin1 -> ladder-post-connector1.hole1 TURNS
+CONNECT ladder-cap-pin2.pin1 -> ladder-post-connector2.hole1 TURNS
+WHY Caps two smooth grey half pins with black round tiles and inserts them in the ladder post connectors.
+
+STEP 835
+GROUP ladder-folding-section
+ADD ladder-fold-side1 11478 black
+ADD ladder-fold-axle 4519 lightgray
+ADD ladder-fold-hinge 18651 black
+CONNECT ladder-fold-axle.axle1 -> ladder-fold-side1.axlehole1 LOCKED
+CONNECT ladder-fold-hinge.axle1 -> ladder-fold-side1.axlehole2 LOCKED
+WHY Starts the folding ladder section with a thin black side beam, grey three-stud axle and black axle-pin.
+
+STEP 836
+ADD ladder-fold-rung1 62462 lightgray
+ADD ladder-fold-rung1-pin1 32002 tan
+ADD ladder-fold-rung1-pin2 32002 tan
+CONNECT ladder-fold-rung1-pin1.pin1 -> ladder-fold-rung1.hole1~ TURNS
+CONNECT ladder-fold-rung1-pin2.pin1 -> ladder-fold-rung1.hole1~ TURNS
+CONNECT ladder-fold-rung1-pin1.pin2 -> ladder-fold-side1.hole2~ TURNS
+WHY Builds another grey cylindrical rung with tan three-quarter pins and fits it between the folding section's axles.
+
+STEP 837
+ADD ladder-fold-rung2 62462 lightgray
+ADD ladder-fold-rung3 62462 lightgray
+CONNECT ladder-fold-axle.axle2 -> ladder-fold-rung2.hole1 TURNS
+CONNECT ladder-fold-hinge.axle2 -> ladder-fold-rung3.hole1 TURNS
+WHY Slides the remaining two grey cylindrical rungs onto the folding ladder's grey axle and black axle-pin.
+
+STEP 838
+ADD ladder-fold-side2 11478 black
+ADD ladder-fold-blue 43093 blue
+CONNECT ladder-fold-axle.axle3 -> ladder-fold-side2.axlehole1 LOCKED
+CONNECT ladder-fold-blue.axle1 -> ladder-fold-side2.axlehole2 LOCKED
+CONNECT ladder-fold-rung1-pin2.pin2 -> ladder-fold-side2.hole2~ TURNS
+END
+WHY Adds the second thin black side to enclose the three rungs and keys a blue axle-pin into its hinge end.
+
+STEP 839
+ATTACH ladder-folding-section
+CONNECT ladder-fold-blue.pin1 -> ladder-base-block.hole1 STIFF
+WHY Joins the folding rung section to the fixed ladder frame at the lower hinge so the section can swing out.
+
+STEP 840
+ADD ladder-hinge-stop 60483 black
+CONNECT ladder-base-axle.axle5 -> ladder-hinge-stop.axlehole1 LOCKED
+CONNECT ladder-fold-hinge.pin1 -> ladder-hinge-stop.hole1 STIFF
+WHY Fits a black two-hole stop across the brown axle end and the folding section's black pin to retain the ladder hinge.
+
+STEP 841
+ADD ladder-top-spacer1 18654 black
+ADD ladder-top-spacer2 18654 black
+ADD ladder-top-hook1 25214 black
+ADD ladder-top-hook2 25214 black
+CONNECT ladder-post-axle1.axle2 -> ladder-top-spacer1.hole1 TURNS
+CONNECT ladder-post-axle2.axle2 -> ladder-top-spacer2.hole1 TURNS
+CONNECT ladder-post-axle1.axle3 -> ladder-top-hook1.? LOCKED
+CONNECT ladder-post-axle2.axle3 -> ladder-top-hook2.? LOCKED
+END
+WHY Adds two spacers and curved black hooks to the ladder posts, then folds the lower rung section as illustrated.
+
+STEP 842
+ATTACH roof-ladder
+CONNECT rack-cross-short3.axle4 -> ladder-top-hook1.? LOCKED
+CONNECT rack-cross-short4.axle4 -> ladder-top-hook2.? LOCKED
+WHY Hooks the completed folding ladder onto the exposed axles on the opposite side of the roof rack.
+
+STEP 843
+ADD rack-roof-pin1 2780 black
+ADD rack-roof-pin2 2780 black
+ADD rack-roof-pin3 2780 black
+ADD rack-roof-pin4 2780 black
+CONNECT rack-roof-pin1.pin1 -> rack-rear-side-connector1.hole1 STIFF
+CONNECT rack-roof-pin2.pin1 -> rack-rear-side-connector2.hole1 STIFF
+CONNECT rack-roof-pin3.pin1 -> rack-front-connector1.hole1 STIFF
+CONNECT rack-roof-pin4.pin1 -> rack-front-connector2.hole1 STIFF
+END
+WHY Turns the completed rack over and inserts four black mounting pins into the highlighted downward-facing connector holes.
+
+STEP 844
+ATTACH roof-rack
+WHY Lowers the roof rack onto the vehicle roof, with its four pins locating the rack and its ladder and cargo box hanging at the sides; roof receiving holes remain unresolved.
+
+STEP 845
+ADD rack-load-bracket 60484 black
+ADD rack-load-pin1 2780 black
+ADD rack-load-pin2 2780 black
+ADD rack-load-half1 4274 lightgray
+ADD rack-load-half2 4274 lightgray
+ADD rack-load-half3 4274 lightgray
+CONNECT rack-load-pin1.pin1 -> rack-load-bracket.hole1~ STIFF
+CONNECT rack-load-pin2.pin1 -> rack-load-bracket.hole3~ STIFF
+CONNECT rack-load-half1.pin1 -> rack-load-bracket.hole2~ TURNS
+CONNECT rack-load-half2.pin1 -> rack-load-bracket.hole4~ TURNS
+CONNECT rack-load-half3.pin1 -> rack-load-bracket.hole5~ TURNS
+WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then places it on the rack to support the next accessory.
+
+STEP 846
+GROUP roof-storage-case
+ADD case-base 3033 darkgray
+ADD case-back-wall 3008 darkgray
+CONNECT case-back-wall.? -> case-base.?
+WHY Starts the roof storage case with a dark-grey six-by-ten plate and an eight-stud back wall.
+
+STEP 847
+ADD case-side-brick1 30414 darkgray
+ADD case-side-brick2 30414 darkgray
+ADD case-side-brick3 11211 darkgray
+ADD case-side-brick4 11211 darkgray
+CONNECT case-side-brick1.? -> case-base.?
+CONNECT case-side-brick2.? -> case-base.?
+CONNECT case-side-brick3.? -> case-base.?
+CONNECT case-side-brick4.? -> case-base.?
+WHY Builds both short end walls with dark-grey bricks carrying outward-facing studs.
+
+STEP 848
+ADD case-wall-plate1 3023 darkgray
+ADD case-wall-plate2 3023 darkgray
+ADD case-wall-plate3 3023 darkgray
+ADD case-wall-plate4 3023 darkgray
+ADD case-wall-plate5 3023 darkgray
+ADD case-wall-brick1 3005 darkgray
+ADD case-wall-brick2 3005 darkgray
+CONNECT case-wall-plate1.? -> case-base.?
+CONNECT case-wall-plate2.? -> case-wall-plate1.?
+CONNECT case-wall-plate3.? -> case-wall-plate2.?
+CONNECT case-wall-plate4.? -> case-base.?
+CONNECT case-wall-plate5.? -> case-base.?
+CONNECT case-wall-brick1.? -> case-base.?
+CONNECT case-wall-brick2.? -> case-base.?
+WHY Builds up the case front wall and hinge supports with five small plates and two one-stud bricks.
+
+STEP 849
+ADD case-handle1 2432 orange
+ADD case-handle2 2432 orange
+CONNECT case-handle1.? -> case-side-brick1.?
+CONNECT case-handle2.? -> case-side-brick2.?
+WHY Fits the two orange handle tiles to the outside of the case's short ends.
+
+STEP 850
+ADD case-corner-plate1 3024 darkgray
+ADD case-corner-plate2 3024 darkgray
+ADD case-corner-plate3 3024 darkgray
+ADD case-corner-plate4 3024 darkgray
+ADD case-corner-plate5 3024 darkgray
+ADD case-corner-plate6 3024 darkgray
+ADD case-corner-plate7 3024 darkgray
+ADD case-corner-plate8 3024 darkgray
+ADD case-corner1 28192 darkgray
+ADD case-corner2 28192 darkgray
+ADD case-corner3 28192 darkgray
+ADD case-corner4 28192 darkgray
+CONNECT case-corner1.? -> case-corner-plate1.?
+CONNECT case-corner-plate1.? -> case-corner-plate2.?
+CONNECT case-corner2.? -> case-corner-plate3.?
+CONNECT case-corner-plate3.? -> case-corner-plate4.?
+CONNECT case-corner3.? -> case-corner-plate5.?
+CONNECT case-corner-plate5.? -> case-corner-plate6.?
+CONNECT case-corner4.? -> case-corner-plate7.?
+CONNECT case-corner-plate7.? -> case-corner-plate8.?
+CONNECT case-corner-plate2.? -> case-side-brick1.?
+CONNECT case-corner-plate4.? -> case-side-brick1.?
+CONNECT case-corner-plate6.? -> case-side-brick2.?
+CONNECT case-corner-plate8.? -> case-side-brick2.?
+WHY Builds four dark-grey clipped corner units from inverted slopes and stacked one-stud plates, then fits them around the case handles.
+
+STEP 851
+ADD case-rim-tile1 2431 darkgray
+ADD case-rim-tile2 6636 darkgray
+ADD case-rim-tile3 87079 darkgray
+ADD case-rim-tile4 87079 darkgray
+CONNECT case-rim-tile1.? -> case-back-wall.?
+CONNECT case-rim-tile2.? -> case-back-wall.?
+CONNECT case-rim-tile3.? -> case-side-brick1.?
+CONNECT case-rim-tile4.? -> case-side-brick2.?
+WHY Adds dark-grey tiles along the back and over both end walls to finish the upper case rim.
+
+STEP 852
+ADD case-hinge-base1 3937 darkgray
+ADD case-hinge-base2 3937 darkgray
+CONNECT case-hinge-base1.? -> case-wall-plate3.?
+CONNECT case-hinge-base2.? -> case-wall-plate5.?
+WHY Adds two hinge bases along the case front edge to receive the lid.
+
+STEP 853
+GROUP roof-storage-lid
+ADD case-lid-end1 52031 darkgray
+ADD case-lid-end2 52031 darkgray
+ADD case-lid-centre 32739 darkgray
+CONNECT case-lid-end1.? -> case-lid-centre.?
+CONNECT case-lid-end2.? -> case-lid-centre.?
+WHY Starts the case lid with a centre curved section between two dark-grey curved end panels.
+
+STEP 854
+ADD case-lid-brace1 3020 darkgray
+ADD case-lid-brace2 3020 darkgray
+CONNECT case-lid-brace1.? -> case-lid-end1.?
+CONNECT case-lid-brace1.? -> case-lid-centre.?
+CONNECT case-lid-brace2.? -> case-lid-end2.?
+CONNECT case-lid-brace2.? -> case-lid-centre.?
+WHY Bridges the underside of the three lid panels with two dark-grey two-by-four plates.
+
+STEP 855
+ADD case-lid-hinge1 6134 black
+ADD case-lid-hinge2 6134 black
+CONNECT case-lid-hinge1.? -> case-lid-brace1.?
+CONNECT case-lid-hinge2.? -> case-lid-brace2.?
+END
+WHY Fits two black hinge top plates beneath the lid so it can connect to the case hinge bases.
+
+STEP 856
+ATTACH roof-storage-lid
+CONNECT case-lid-hinge1.? -> case-hinge-base1.?
+CONNECT case-lid-hinge2.? -> case-hinge-base2.?
+END
+WHY Clips the lid hinge plates into the two case hinge bases and checks that the lid opens.
+
+STEP 857
+ATTACH roof-storage-case
+WHY Places the closed storage case onto the roof rack; the exact connection points are not named in the available catalog.
+
+STEP 858
+ADD rack-load-plate1 3023 darkgray
+ADD rack-load-plate2 3023 darkgray
+ADD rack-load-plate3 3023 darkgray
+ADD rack-load-plate4 3023 darkgray
+ADD rack-load-upper-connector 11458 darkgray
+ADD rack-load-brick 32000 darkgray
+ADD rack-load-side-connector 18677 black
+ADD rack-load-clip-pin1 2780 black
+ADD rack-load-clip-pin2 2780 black
+ADD rack-load-axlepin1 18651 black
+ADD rack-load-axlepin2 18651 black
+CONNECT rack-load-plate1.? -> rack-load-brick.?
+CONNECT rack-load-plate2.? -> rack-load-plate1.?
+CONNECT rack-load-plate3.? -> rack-load-brick.?
+CONNECT rack-load-plate4.? -> rack-load-plate3.?
+CONNECT rack-load-clip-pin1.pin1 -> rack-load-brick.hole1 STIFF
+CONNECT rack-load-clip-pin2.pin1 -> rack-load-brick.hole2 STIFF
+CONNECT rack-load-clip-pin1.pin2 -> rack-load-upper-connector.?
+CONNECT rack-load-clip-pin2.pin2 -> rack-load-side-connector.?
+CONNECT rack-load-axlepin1.pin1 -> rack-load-upper-connector.?
+CONNECT rack-load-axlepin2.pin1 -> rack-load-side-connector.?
+CONNECT rack-load-brick.? -> rack-load-bracket.?
+WHY Builds the rack accessory support from stacked grey plates and a Technic brick, pins side brackets to it and leaves two upright black axle-pins for the next panels.
+
+STEP 859
+ADD rack-load-panel1 64782 lightgray
+ADD rack-load-panel2 64782 lightgray
+CONNECT rack-load-axlepin1.axle1 -> rack-load-panel1.?
+CONNECT rack-load-axlepin2.axle1 -> rack-load-panel2.?
+WHY Fits two large grey panels over the rack support to form the stacked traction boards.
+
+STEP 860
+ADD wheel-rim1 49294 black
+ADD wheel-rim2 49294 black
+ADD wheel-rim3 49294 black
+ADD wheel-rim4 49294 black
+ADD wheel-rim5 49294 black
+ADD wheel-tyre1 56907 black
+ADD wheel-tyre2 56907 black
+ADD wheel-tyre3 56907 black
+ADD wheel-tyre4 56907 black
+ADD wheel-tyre5 56907 black
+ADD spare-wheel-retainer 32270 black
+CONNECT wheel-tyre1.? -> wheel-rim1.?
+CONNECT wheel-tyre2.? -> wheel-rim2.?
+CONNECT wheel-tyre3.? -> wheel-rim3.?
+CONNECT wheel-tyre4.? -> wheel-rim4.?
+CONNECT wheel-tyre5.? -> wheel-rim5.?
+CONNECT wheel-rim1.? -> p92909-1.? LOCKED
+CONNECT wheel-rim2.? -> p92909-2.? LOCKED
+CONNECT wheel-rim3.? -> p92909-3.? LOCKED
+CONNECT wheel-rim4.? -> p92909-4.? LOCKED
+CONNECT spare-wheel-retainer.? -> wheel-rim5.?
+WHY Fits the five tyres onto their rims, installs four wheels on the vehicle hubs and fastens the fifth as the rear spare using the small black gear retainer.
+
+STEP 861
+ADD defender-sticker-sheet 65545 anycolor
+WHY Accounts for the sticker sheet applied to the indicated body and accessory panels throughout the build.
