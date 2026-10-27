@@ -3526,8 +3526,8 @@ STEP 348
 ADD p42003-20 42003 lightgray
 ADD left-floor-upright-pin 2780 black
 CONNECT p4519-37.axle2~ -> p42003-20.axlehole1 LOCKED
-CONNECT left-floor-upright-pin.pin2 -> p42003-20.? STIFF
-WHY Fits the grey axle-and-pin connector into the split connector around the grey axle and inserts a black friction pin upright in its round-hole end. The axle seating is estimated and the exact receiving round-hole label for the black pin remains unresolved because it is absent from the geometric reference.
+CONNECT left-floor-upright-pin.pin2 -> p42003-20.hole2 STIFF
+WHY Fits the grey axle-and-pin connector into the split connector around the grey axle and inserts a black friction pin upright in its round-hole end. The pin occupies the end round hole opposite the cross socket, as shown in the inset; the axle seating is estimated.
 
 STEP 349
 ADD p32039-6 32039 lightgray
@@ -3557,26 +3557,26 @@ STEP 352
 GROUP right-forward-side-frame
 ADD p60484-8 60484 black
 ADD right-frame-long-black-pin 32054 black
-CONNECT right-frame-long-black-pin.pin1~ -> p60484-8.hole5 STIFF
-WHY Starts the right forward side frame with one black T-shaped beam and a long black pin with stop bush through its outer base hole. Follow the booklet part colours and pin lengths here; the geometric reference incorrectly mirrors the left bracket with blue pins and an extra T beam. Long-pin seating is estimated.
+CONNECT right-frame-long-black-pin.pin1 -> p60484-8.hole5 STIFF
+WHY Starts the right forward side frame with one black T-shaped beam and a long black pin with stop bush through its outer base hole. Follow the booklet part colours and pin lengths here; the geometric reference incorrectly mirrors the left bracket with blue pins and an extra T beam. The source shows the long pin seated against the bracket.
 
 STEP 353
 ADD right-frame-top-one 2780 black
-CONNECT right-frame-top-one.pin1~ -> p60484-8.hole2 STIFF
+CONNECT right-frame-top-one.pin1 -> p60484-8.hole2 STIFF
 ADD right-frame-top-two 2780 black
-CONNECT right-frame-top-two.pin1~ -> p60484-8.hole3 STIFF
+CONNECT right-frame-top-two.pin1 -> p60484-8.hole3 STIFF
 ADD right-frame-base-centre 2780 black
-CONNECT right-frame-base-centre.pin1~ -> p60484-8.hole4 STIFF
+CONNECT right-frame-base-centre.pin1 -> p60484-8.hole4 STIFF
 ADD right-frame-base-outer 2780 black
-CONNECT right-frame-base-outer.pin1~ -> p60484-8.hole1 STIFF
-WHY Inserts four short black friction pins into the remaining four holes of the right T-shaped beam, with their projecting ends on the shown face. These are the booklet black two-length pins, replacing the reference model long blue pins; seating is estimated because that model variant does not match this source build.
+CONNECT right-frame-base-outer.pin1 -> p60484-8.hole1 STIFF
+WHY Inserts four short black friction pins into the remaining four holes of the right T-shaped beam, with their projecting ends on the shown face. These are the booklet black two-length pins, replacing the reference model long blue pins; the source shows them fully seated.
 
 STEP 354
 ADD p32525-7 32525 darkgray
-CONNECT right-frame-long-black-pin.pin2~ -> p32525-7.hole2 STIFF
-CONNECT right-frame-base-centre.pin2~ -> p32525-7.hole3 STIFF
-CONNECT right-frame-base-outer.pin2~ -> p32525-7.hole4 STIFF
-WHY Fits the dark-grey eleven-hole beam over the three base-row pin ends on the right T bracket. The long black pin and two short black pins secure the beam; pin seating is estimated against the booklet because the reference uses a different bracket stack.
+CONNECT right-frame-long-black-pin.pin2 -> p32525-7.hole2 STIFF
+CONNECT right-frame-base-centre.pin2 -> p32525-7.hole3 STIFF
+CONNECT right-frame-base-outer.pin2 -> p32525-7.hole4 STIFF
+WHY Fits the dark-grey eleven-hole beam over the three base-row pin ends on the right T bracket. The long black pin and two short black pins secure the beam; the source view shows the pins seated through the matching beam holes.
 
 STEP 355
 ADD p32062-28 32062 red
@@ -3585,10 +3585,10 @@ ADD p42003-21 42003 lightgray
 CONNECT p32062-28.axle1~ -> p41678-6.axlehole1 LOCKED
 CONNECT p32062-28.axle2~ -> p41678-6.axlehole2 LOCKED
 CONNECT p32062-28.axle1~ -> p42003-21.axlehole1 LOCKED
-CONNECT right-frame-top-one.pin2~ -> p41678-6.hole1 STIFF
-CONNECT right-frame-top-two.pin2~ -> p41678-6.hole2 STIFF
+CONNECT right-frame-top-one.pin2 -> p41678-6.hole1 STIFF
+CONNECT right-frame-top-two.pin2 -> p41678-6.hole2 STIFF
 END
-WHY Joins the grey split perpendicular connector and grey axle-and-pin connector with a red two-length axle, then fits the two grey round holes over the upper black pin ends. The booklet completes this bracket without a second black T beam; split-axle and pin seating remain estimated.
+WHY Joins the grey split perpendicular connector and grey axle-and-pin connector with a red two-length axle, then fits the two grey round holes over the upper black pin ends. The booklet completes this bracket without a second black T beam; split-axle seating remains estimated.
 
 STEP 356
 ATTACH right-forward-side-frame
@@ -3639,8 +3639,8 @@ STEP 362
 ADD p42003-22 42003 lightgray
 ADD right-floor-upright-pin 2780 black
 CONNECT p4519-38.axle1~ -> p42003-22.axlehole1 LOCKED
-CONNECT right-floor-upright-pin.pin2 -> p42003-22.? STIFF
-WHY Fits the grey axle-and-pin connector into the split support around the axle and inserts a black friction pin upright in its round-hole end. The exact black-pin hole label remains unresolved because the geometric reference omits this pin; split-axle seating is estimated.
+CONNECT right-floor-upright-pin.pin2 -> p42003-22.hole2 STIFF
+WHY Fits the grey axle-and-pin connector into the split support around the axle and inserts a black friction pin upright in its round-hole end. The inset shows the pin in the end round hole opposite the cross socket; split-axle seating is estimated.
 
 STEP 363
 ADD p32039-7 32039 lightgray
@@ -3748,13 +3748,13 @@ WHY Starts two matching front seats as required by the two-times callout, each w
 STEP 370
 ADD p15462-17 15462 brown
 ADD p42003-23 42003 lightgray
-CONNECT p15462-17.axle5~ -> p42003-23.axlehole1 LOCKED
-CONNECT p15462-17.axle4~ -> p32009-1.axlehole1 LOCKED
+CONNECT p15462-17.axle5 -> p42003-23.axlehole1 LOCKED
+CONNECT p15462-17.axle4 -> p32009-1.axlehole1 LOCKED
 ADD p15462-18 15462 brown
 ADD p42003-25 42003 lightgray
-CONNECT p15462-18.axle5~ -> p42003-25.axlehole1 LOCKED
-CONNECT p15462-18.axle4~ -> p32009-3.axlehole1 LOCKED
-WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the front cross socket of each seat side beam, leaving the long axle end projecting across the future seat width. Stopped-axle seating is estimated.
+CONNECT p15462-18.axle5 -> p42003-25.axlehole1 LOCKED
+CONNECT p15462-18.axle4 -> p32009-3.axlehole1 LOCKED
+WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the upper seat-back cross socket of each side beam, leaving the long axle end projecting across the future seat width. The inset and completed seat frame show the stopped axle spanning the two end connectors, both side beams and the central block.
 
 STEP 371
 ADD p32073-13 32073 yellow
@@ -3765,7 +3765,7 @@ ADD p32073-14 32073 yellow
 ADD p6536-45 6536 darkgray
 CONNECT p32073-14.axle5 -> p6536-45.axlehole1 LOCKED
 CONNECT p32073-14.axle4 -> p32009-3.axlehole2 LOCKED
-WHY Fits a yellow five-length axle with a dark-grey perpendicular connector through the upper cross socket of each bent seat beam, preparing the seat-back pivot and spacer assembly.
+WHY Fits a yellow five-length axle with a dark-grey perpendicular connector through the front cross socket of each seat beam, preparing the cushion-end support.
 
 STEP 372
 ADD p32000-2 32000 darkgray
@@ -3775,7 +3775,7 @@ CONNECT p32073-13.axle3 -> p32000-2.hole1 TURNS
 CONNECT p6558-62.pin2 -> p32000-2.hole3 STIFF
 CONNECT p6558-63.pin2 -> p3701-1.hole6 STIFF
 CONNECT p6558-64.pin2 -> p3701-1.hole2 STIFF
-CONNECT p15462-17.axle3~ -> p60483-34.axlehole1 LOCKED
+CONNECT p15462-17.axle3 -> p60483-34.axlehole1 LOCKED
 ADD p32000-3 32000 darkgray
 ADD p3701-2 3701 darkgray
 ADD p60483-37 60483 black
@@ -3783,15 +3783,15 @@ CONNECT p32073-14.axle3 -> p32000-3.hole1 TURNS
 CONNECT p6558-66.pin2 -> p32000-3.hole3 STIFF
 CONNECT p6558-67.pin2 -> p3701-2.hole6 STIFF
 CONNECT p6558-68.pin2 -> p3701-2.hole2 STIFF
-CONNECT p15462-18.axle3~ -> p60483-37.axlehole1 LOCKED
-WHY Adds a dark-grey two-hole brick to each seat back, a dark-grey three-hole brick across each seat base and a black axle-and-pin block on each brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and brown axle seating remains estimated.
+CONNECT p15462-18.axle3 -> p60483-37.axlehole1 LOCKED
+WHY Adds a dark-grey two-hole brick at each cushion end, a dark-grey three-hole brick across each seat back and a black axle-and-pin block on each upper brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and the brown axles pass through the central blocks.
 
 STEP 373
 ADD p32009-2 32009 darktan
 ADD p6536-44 6536 darkgray
 ADD p42003-24 42003 lightgray
-CONNECT p15462-17.axle2~ -> p32009-2.axlehole1 LOCKED
-CONNECT p15462-17.axle1~ -> p42003-24.axlehole1 LOCKED
+CONNECT p15462-17.axle2 -> p32009-2.axlehole1 LOCKED
+CONNECT p15462-17.axle1 -> p42003-24.axlehole1 LOCKED
 CONNECT p32073-13.axle2 -> p32009-2.axlehole2 LOCKED
 CONNECT p32073-13.axle1 -> p6536-44.axlehole1 LOCKED
 CONNECT p6558-62.pin3 -> p32009-2.hole8 STIFF
@@ -3800,14 +3800,14 @@ CONNECT p6558-64.pin3 -> p32009-2.hole4 STIFF
 ADD p32009-4 32009 darktan
 ADD p6536-46 6536 darkgray
 ADD p42003-26 42003 lightgray
-CONNECT p15462-18.axle2~ -> p32009-4.axlehole1 LOCKED
-CONNECT p15462-18.axle1~ -> p42003-26.axlehole1 LOCKED
+CONNECT p15462-18.axle2 -> p32009-4.axlehole1 LOCKED
+CONNECT p15462-18.axle1 -> p42003-26.axlehole1 LOCKED
 CONNECT p32073-14.axle2 -> p32009-4.axlehole2 LOCKED
 CONNECT p32073-14.axle1 -> p6536-46.axlehole1 LOCKED
 CONNECT p6558-66.pin3 -> p32009-4.hole8 STIFF
 CONNECT p6558-67.pin3 -> p32009-4.hole2 STIFF
 CONNECT p6558-68.pin3 -> p32009-4.hole4 STIFF
-WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey back connector and a second grey base connector. The side beam fits all three blue pin ends and both cross axles; brown axle seating remains estimated.
+WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey cushion-end connector and a second grey upper-back connector. The side beam fits all three blue pin ends and both cross axles; the brown axles pass through the central blocks.
 
 STEP 374
 ADD p32054-25 32054 lightgray
@@ -3818,7 +3818,7 @@ ADD p32054-27 32054 lightgray
 CONNECT p32054-27.pin1 -> p6536-45.hole1 STIFF
 ADD p32054-28 32054 lightgray
 CONNECT p32054-28.pin1 -> p6536-46.hole1 STIFF
-WHY Inserts a grey long pin with stop bush through each of the four dark-grey seat-back connector holes, leaving their outer pin ends exposed for the back side panels.
+WHY Inserts a grey long pin with stop bush through each of the four dark-grey cushion-end connector holes, leaving their outer pin ends exposed for the cushion side panels.
 
 STEP 375
 ADD p11946-1 11946 darktan
@@ -3829,7 +3829,7 @@ ADD p11946-3 11946 darktan
 CONNECT p32054-27.pin2 -> p11946-3.hole1 STIFF
 ADD p11947-3 11947 darktan
 CONNECT p32054-28.pin2 -> p11947-3.hole1 STIFF
-WHY Fits a matching pair of dark-tan narrow tapered panels onto the grey pin ends of each seat back, with the numbered 21 and 22 panels on the sides shown. Keep their smooth surfaces facing out.
+WHY Fits a matching pair of dark-tan narrow tapered panels onto the grey pin ends of each seat cushion, with the numbered 21 and 22 panels on the sides shown. Keep their smooth surfaces facing out.
 
 STEP 376
 ADD p2780-90 2780 black
@@ -3848,7 +3848,7 @@ ADD p2780-96 2780 black
 CONNECT p2780-96.pin2 -> p42003-26.hole1 STIFF
 ADD p2780-97 2780 black
 CONNECT p2780-97.pin2 -> p42003-26.hole2 STIFF
-WHY Adds four upright black friction pins to the two grey base connectors of each seat, preparing two pin pairs for the cushion side panels.
+WHY Adds four black friction pins to the two grey upper-back connectors of each seat, preparing two pin pairs for the back side panels.
 
 STEP 377
 ADD p11947-2 11947 darktan
@@ -3879,7 +3879,7 @@ CONNECT p32062-35.axle1 -> p11946-4.axlehole1 LOCKED
 CONNECT p32062-35.axle2 -> p60483-39.axlehole1 LOCKED
 CONNECT p2780-97.pin1 -> p11946-4.hole1 STIFF
 CONNECT p2780-96.pin1 -> p11946-4.hole2 STIFF
-WHY Builds both dark-tan cushion side trims for each seat, joining each numbered tapered panel to a dark-tan axle-and-pin block with a red short axle. Presses their round holes onto the waiting black pin pairs, with the curved blocks at the seat front.
+WHY Builds both dark-tan back side trims for each seat, joining each numbered tapered panel to a dark-tan axle-and-pin block with a red short axle. Presses their round holes onto the waiting black pin pairs, with the curved blocks at the top of the back.
 
 STEP 378
 ADD p3021-1 3021 darktan
@@ -3910,7 +3910,7 @@ CONNECT p11477-3.? -> p3021-6.? STIFF
 CONNECT p15068-3.? -> p3021-6.? STIFF
 CONNECT p3021-5.? -> p3701-2.? STIFF
 CONNECT p3021-6.? -> p3701-2.? STIFF
-WHY Builds each seat cushion from two dark-tan two-by-three plates joined under three one-by-three tiles, with the two curved slopes completing the front edge. Presses the completed cushions onto the dark-grey base bricks in the pictured arrangement; ordinary plate, tile and slope clutch surfaces are not named in the catalog.
+WHY Builds each seat back from two dark-tan two-by-three plates joined under three one-by-three tiles, with two curved slopes completing the edge. Presses the completed backs onto the dark-grey three-hole bricks in the pictured arrangement; ordinary plate, tile and slope clutch surfaces are not named in the catalog.
 
 STEP 379
 ADD p3021-3 3021 darktan
@@ -3937,7 +3937,7 @@ CONNECT p3069b-2.? -> p3021-8.? STIFF
 ADD p3068b-3 3068b darktan
 CONNECT p3068b-3.? -> p3021-8.? STIFF
 CONNECT p3021-7.? -> p32000-3.? STIFF
-WHY Builds each padded seat back from two stacked dark-tan two-by-three plates, two curved slopes and the dark-tan one-by-two and two-by-two tiles. Fits the finished backs between the tapered side panels on the grey back bricks, preserving the pictured curvature; ordinary stud clutch surfaces remain unnamed.
+WHY Builds each padded seat cushion from two stacked dark-tan two-by-three plates, two curved slopes and the dark-tan one-by-two and two-by-two tiles. Fits the finished cushions between the tapered side panels on the grey two-hole bricks, preserving the pictured curvature; ordinary stud clutch surfaces remain unnamed.
 
 STEP 380
 ADD p6558-65 6558 blue
@@ -3952,7 +3952,7 @@ CONNECT p6558-69.pin1 -> p11458-3.? STIFF
 ADD p11458-4 11458 darkgray
 CONNECT p6558-69.pin3 -> p11458-4.? STIFF
 CONNECT p6558-69.pin2 -> p60483-37.hole1 STIFF
-WHY Builds each headrest bracket with a blue long friction pin between two dark-grey plates with upright round holes, then inserts the middle pin segment through the black base block. These assemblies become headrests when the seats are turned into their final orientation; the small bracket round holes are not cataloged.
+WHY Builds each headrest bracket with a blue long friction pin between two dark-grey plates with upright round holes, then inserts the middle pin segment through the black upper-back block. These assemblies become headrests when the seats are turned into their final orientation; the small bracket round holes are not cataloged.
 
 STEP 381
 ADD p3623-1 3623 darkgray
@@ -4080,22 +4080,22 @@ ADD p18651-8 18651 black
 ADD p18651-9 18651 black
 ADD p62462-3 62462 lightgray
 ADD p62462-4 62462 lightgray
-CONNECT p6558-73.pin1~ -> p62462-3.hole1 STIFF
-CONNECT p6558-73.pin3~ -> p62462-4.hole1 STIFF
-CONNECT p18651-8.pin1~ -> p62462-3.hole1 STIFF
-CONNECT p18651-9.pin1~ -> p62462-4.hole1 STIFF
-WHY Extends both sides of the headrest rail with grey two-length pin sleeves and black long axle-pins, joining their round pin ends inside the sleeves. Leave the black axle ends pointing outward; sleeve insertion depths are estimated.
+CONNECT p6558-73.pin1 -> p62462-3.hole1 STIFF
+CONNECT p6558-73.pin3 -> p62462-4.hole1 STIFF
+CONNECT p18651-8.pin1 -> p62462-3.hole1 STIFF
+CONNECT p18651-9.pin1 -> p62462-4.hole1 STIFF
+WHY Extends both sides of the headrest rail with grey two-length pin sleeves and black long axle-pins, joining their round pin ends inside the sleeves. Leave the black axle ends pointing outward; the completed rail shows the pin ends meeting inside each sleeve.
 
 STEP 393
 ADD p32054-29 32054 lightgray
 ADD p32054-30 32054 lightgray
 ADD p18677-1 18677 black
 ADD p18677-2 18677 black
-CONNECT p18651-8.axle2~ -> p18677-1.? TURNS
-CONNECT p18651-9.axle2~ -> p18677-2.? TURNS
+CONNECT p18651-8.axle2 -> p18677-1.? TURNS
+CONNECT p18651-9.axle2 -> p18677-2.? TURNS
 CONNECT p18651-8.axle1 -> p32054-29.axlehole1 LOCKED
 CONNECT p18651-9.axle1 -> p32054-30.axlehole1 LOCKED
-WHY Adds a black two-stud plate and grey long pin with stop bush to each outer axle end of the headrest rail. The grey cross sockets lock to the black axles while the uncataloged round plate bores sit around the other axle segments; plate seating is estimated.
+WHY Adds a black two-stud plate and grey long pin with stop bush to each outer axle end of the headrest rail. The grey cross sockets lock to the outer black axle segments while the uncataloged round plate bores sit around the adjacent segments.
 
 STEP 394
 ADD p43093-48 43093 blue
@@ -4252,19 +4252,19 @@ WHY Fits two grey L-shaped axle-and-pin supports over the waiting blue crossbeam
 STEP 408
 ADD p24316-16 24316 brown
 ADD p24316-17 24316 brown
-CONNECT p24316-16.axle3~ -> p32140-14.axlehole1 LOCKED
-CONNECT p24316-17.axle3~ -> p32140-13.axlehole1 LOCKED
-WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The short stopped-end seating in the supports is estimated.
+CONNECT p24316-16.axle3 -> p32140-14.axlehole1 LOCKED
+CONNECT p24316-17.axle3 -> p32140-13.axlehole1 LOCKED
+WHY Inserts a brown stopped three-length axle into the upper cross socket of each grey L support, leaving the long axle ends projecting toward the chassis. The stopped ends seat in these supports, as shown in the source.
 
 STEP 409
 END
 ATTACH rear-body-lower-panel
-CONNECT p24316-16.axle1~ -> p63869-4.axlehole1 LOCKED
-CONNECT p24316-16.axle2~ -> p32015-2.hole1 TURNS
-CONNECT p24316-17.axle1~ -> p63869-5.axlehole1 LOCKED
-CONNECT p24316-17.axle2~ -> p32015-1.hole1 TURNS
+CONNECT p24316-16.axle1 -> p63869-4.axlehole1 LOCKED
+CONNECT p24316-16.axle2 -> p32015-2.hole1 TURNS
+CONNECT p24316-17.axle1 -> p63869-5.axlehole1 LOCKED
+CONNECT p24316-17.axle2 -> p32015-1.hole1 TURNS
 CONNECT p32054-31.pin2 -> p32140-1.hole4 STIFF
-WHY Turns the chassis and fits the rear lower panel assembly behind the rear axle, passing both brown mounting axles through the round angled connectors into the grey triple connector cross sockets. Pushes the central grey pin into its waiting grey L support as shown in the inset; brown stopped-axle seating is estimated.
+WHY Turns the chassis and fits the rear lower panel assembly behind the rear axle, passing both brown mounting axles through the round angled connectors into the grey triple connector cross sockets. Pushes the central grey pin into its waiting grey L support as shown in the inset; each axle spans the L support, the previously assembled angled connector from step 68 and the triple connector from step 69.
 
 STEP 410
 GROUP rear-left-corner-trim
@@ -4372,13 +4372,13 @@ WHY Fits a black five-hole beam under each end of the grey bumper beam and appli
 
 STEP 423
 ADD p4274-14 4274 lightgray
-CONNECT p4274-14.pin2~ -> p32316-12.hole4 TURNS
+CONNECT p4274-14.pin2 -> p32316-12.hole4 TURNS
 ADD p4274-15 4274 lightgray
-CONNECT p4274-15.pin2~ -> p32316-12.hole5 TURNS
+CONNECT p4274-15.pin2 -> p32316-12.hole5 TURNS
 ADD p4274-16 4274 lightgray
-CONNECT p4274-16.pin2~ -> p32316-11.hole2 TURNS
+CONNECT p4274-16.pin2 -> p32316-11.hole2 TURNS
 ADD p4274-17 4274 lightgray
-CONNECT p4274-17.pin2~ -> p32316-11.hole1 TURNS
+CONNECT p4274-17.pin2 -> p32316-11.hole1 TURNS
 ADD rear-bumper-tile-one 3069b lightgray
 ADD rear-bumper-tile-two 3069b lightgray
 CONNECT rear-bumper-tile-one.? -> p4274-14.? STIFF
@@ -4386,7 +4386,7 @@ CONNECT rear-bumper-tile-one.? -> p4274-15.? STIFF
 CONNECT rear-bumper-tile-two.? -> p4274-16.? STIFF
 CONNECT rear-bumper-tile-two.? -> p4274-17.? STIFF
 END
-WHY Inserts four grey half pins into the exposed outer holes of the two black bumper beams and caps each pair with a grey one-by-two tile. The frictionless half pins remain free in their round holes; half-pin seating and ordinary tile stud clutch surfaces are explicitly uncertain.
+WHY Inserts four grey half pins into the exposed outer holes of the two black bumper beams and caps each pair with a grey one-by-two tile. The frictionless half pins remain free in their round holes; the source shows the half pins fully seated in the outer beam holes, while ordinary tile stud clutch surfaces remain unnamed.
 
 STEP 424
 ATTACH rear-upper-bumper
@@ -4556,7 +4556,9 @@ STEP 441
 ATTACH left-body-side-frame
 CONNECT p6558-54.pin3 -> p24119-5.hole9 STIFF
 CONNECT p55615-1.pin3 -> p24119-5.hole7~ STIFF
-WHY Places the left body frame beside the chassis, seating its lower front panel on the exposed blue pin and grey hub pin at the floor support. The grey hub pin enters the near end of a longer panel bore, so seating depth is estimated. Align the rear sill holes with the floor end before adding the retaining brace next.
+CONNECT p6558-78.pin3 -> p15458-2.? STIFF
+CONNECT p6558-79.pin3 -> p15458-2.? STIFF
+WHY Places the left body frame beside the chassis, seating its lower front panel on the exposed blue pin and grey hub pin at the floor support. The grey hub pin enters the near end of a longer panel bore, so seating depth is estimated. The two long sill pins also enter the floor panel as indicated by the source arrows; their exact floor-hole labels remain unresolved.
 
 STEP 442
 ADD p43093-51 43093 blue
@@ -4712,9 +4714,11 @@ STEP 457
 ATTACH right-body-side-frame
 CONNECT p6558-60.pin3 -> p24119-7.hole4 STIFF
 CONNECT p55615-2.pin3 -> p24119-7.hole5~ STIFF
+CONNECT p6558-82.pin3 -> p15458-3.? STIFF
+CONNECT p6558-83.pin3 -> p15458-3.? STIFF
 CONNECT p11214-15.pin2 -> p39794-1.hole5 STIFF
 CONNECT p6558-85.pin3 -> p39794-1.? STIFF
-WHY Fits the second cabin side frame to the chassis at the lower sill and overhead frame. The grey hub pin enters a deep sill bore with estimated axial seating. The upper blue-pin receiving label remains unresolved in the rectangular frame catalog, as on the opposite side.
+WHY Fits the second cabin side frame to the chassis at the lower sill and overhead frame. The grey hub pin enters a deep sill bore with estimated axial seating. The two long sill pins enter the floor panel as on the opposite side; their floor-hole labels and the upper blue-pin receiving label remain unresolved.
 
 STEP 458
 ADD p32140-20 32140 black
@@ -5068,11 +5072,11 @@ ADD p6141-5 6141 white
 ADD p98138-8 98138 black
 CONNECT p32062-40.axle2 -> p32184-38.axlehole2 LOCKED
 CONNECT p32062-40.axle1 -> p3713-43.axlehole1 LOCKED
-CONNECT p4274-18.pin1 -> p32184-38.hole1~ TURNS
-CONNECT p4274-18.pin2 -> p6141-5.hole1~ TURNS
+CONNECT p4274-18.pin2 -> p32184-38.hole1 TURNS
+CONNECT p4274-18.pin1 -> p6141-5.? STIFF
 CONNECT p98138-8.? -> p6141-5.? STIFF
 CONNECT p4519-46.axle2 -> p32184-38.axlehole1~ LOCKED
-WHY Builds the latch knob on a dark-grey cross connector: a red axle and full bush on one cross socket, plus a grey smooth half pin carrying a white round plate and black round tile in the centre bore. Fits its other cross socket over the existing grey axle. Pin and connector depths are estimated; the tile stud surface remains unnamed.
+WHY Builds the latch knob on a dark-grey cross connector: a red axle and full bush on one cross socket, plus a grey smooth half pin carrying a white round plate and black round tile in the centre bore. Fits its other cross socket over the existing grey axle. The half pin seats by its long end in the connector and its stud holds the white plate, as the inset shows. Connector depth is estimated; the tile stud surface remains unnamed.
 
 STEP 495
 ADD p24201-1 24201 darkgray
@@ -5369,12 +5373,12 @@ ADD p4274-20 4274 lightgray
 ADD p4274-21 4274 lightgray
 ADD p4274-22 4274 lightgray
 ADD p4274-23 4274 lightgray
-CONNECT p4274-19.pin1 -> p32278-11.hole2~ TURNS
-CONNECT p4274-20.pin1 -> p32278-11.hole4~ TURNS
-CONNECT p4274-21.pin1 -> p32278-11.hole7~ TURNS
-CONNECT p4274-22.pin1 -> p32278-11.hole8~ TURNS
-CONNECT p4274-23.pin1 -> p32278-11.hole12~ TURNS
-WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+CONNECT p4274-19.pin2 -> p32278-11.hole2 TURNS
+CONNECT p4274-20.pin2 -> p32278-11.hole4 TURNS
+CONNECT p4274-21.pin2 -> p32278-11.hole7 TURNS
+CONNECT p4274-22.pin2 -> p32278-11.hole8 TURNS
+CONNECT p4274-23.pin2 -> p32278-11.hole12 TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. The long pin ends are seated in the beam, leaving the stud ends exposed for the trim; smooth pins permit rotation in the bores.
 
 STEP 526
 ADD p22961-10 22961 red
@@ -5447,12 +5451,12 @@ ADD p4274-25 4274 lightgray
 ADD p4274-26 4274 lightgray
 ADD p4274-27 4274 lightgray
 ADD p4274-28 4274 lightgray
-CONNECT p4274-24.pin1 -> p32278-12.hole2~ TURNS
-CONNECT p4274-25.pin1 -> p32278-12.hole4~ TURNS
-CONNECT p4274-26.pin1 -> p32278-12.hole7~ TURNS
-CONNECT p4274-27.pin1 -> p32278-12.hole8~ TURNS
-CONNECT p4274-28.pin1 -> p32278-12.hole12~ TURNS
-WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. Their insertion depths are estimated; smooth pins permit rotation in the beam bores.
+CONNECT p4274-24.pin2 -> p32278-12.hole2 TURNS
+CONNECT p4274-25.pin2 -> p32278-12.hole4 TURNS
+CONNECT p4274-26.pin2 -> p32278-12.hole7 TURNS
+CONNECT p4274-27.pin2 -> p32278-12.hole8 TURNS
+CONNECT p4274-28.pin2 -> p32278-12.hole12 TURNS
+WHY Adds five grey smooth half pins along the outer edge of the olive beam for the studded trim strip. The long pin ends are seated in the beam, leaving the stud ends exposed for the trim; smooth pins permit rotation in the bores.
 
 STEP 533
 ADD p11947-5 11947 olivegreen
@@ -5522,9 +5526,9 @@ CONNECT p2780-164.pin2 -> p32524-13.hole5 STIFF
 ADD p2780-165 2780 black
 CONNECT p2780-165.pin2 -> p32524-13.hole4 STIFF
 ADD p4274-29 4274 lightgray
-CONNECT p4274-29.pin1 -> p32524-13.hole6~ TURNS
+CONNECT p4274-29.pin2 -> p32524-13.hole6 TURNS
 ADD p4274-30 4274 lightgray
-CONNECT p4274-30.pin1 -> p32524-13.hole1~ TURNS
+CONNECT p4274-30.pin2 -> p32524-13.hole1 TURNS
 CONNECT p2780-163.pin1 -> p32013-13.hole1 STIFF
 CONNECT p2780-164.pin1 -> p11947-5.hole2 STIFF
 CONNECT p2780-165.pin1 -> p11947-5.hole1 STIFF
@@ -5536,13 +5540,13 @@ CONNECT p2780-167.pin2 -> p32524-14.hole5 STIFF
 ADD p2780-168 2780 black
 CONNECT p2780-168.pin2 -> p32524-14.hole4 STIFF
 ADD p4274-31 4274 lightgray
-CONNECT p4274-31.pin1 -> p32524-14.hole6~ TURNS
+CONNECT p4274-31.pin2 -> p32524-14.hole6 TURNS
 ADD p4274-32 4274 lightgray
-CONNECT p4274-32.pin1 -> p32524-14.hole1~ TURNS
+CONNECT p4274-32.pin2 -> p32524-14.hole1 TURNS
 CONNECT p2780-166.pin1 -> p32013-14.hole1 STIFF
 CONNECT p2780-167.pin1 -> p11946-5.hole2 STIFF
 CONNECT p2780-168.pin1 -> p11946-5.hole1 STIFF
-WHY Builds two olive seven-hole rear corner strips, each with three black friction pins and two grey smooth half pins. Mounts them beside the rear lamp pillars through the fairing panel and cargo linkage round holes. Half-pin depths are estimated.
+WHY Builds two olive seven-hole rear corner strips, each with three black friction pins and two grey smooth half pins. Mounts them beside the rear lamp pillars through the fairing panel and cargo linkage round holes. The long ends seat in the beam, leaving the stud ends exposed.
 
 STEP 541
 ADD p6636-1 6636 olivegreen
@@ -5923,13 +5927,13 @@ CONNECT p2780-191.pin2 -> p32523-8.hole1 STIFF
 CONNECT p2780-192.pin2 -> p32524-16.hole2 STIFF
 CONNECT p2780-193.pin2 -> p32524-16.hole1 STIFF
 CONNECT p2780-194.pin2 -> p32523-8.hole3 STIFF
-CONNECT p4274-33.pin1 -> p32524-15.hole1~ TURNS
-CONNECT p4274-34.pin1 -> p32524-15.hole5~ TURNS
-CONNECT p4274-35.pin1 -> p32524-16.hole3~ TURNS
-CONNECT p4274-36.pin1 -> p32524-16.hole7~ TURNS
+CONNECT p4274-33.pin2 -> p32524-15.hole1 TURNS
+CONNECT p4274-34.pin2 -> p32524-15.hole5 TURNS
+CONNECT p4274-35.pin2 -> p32524-16.hole3 TURNS
+CONNECT p4274-36.pin2 -> p32524-16.hole7 TURNS
 ADD roof-front-centre-half-pin 4274 lightgray
-CONNECT roof-front-centre-half-pin.pin1 -> p32523-8.hole2~ TURNS
-WHY Fits two white seven-hole beams and a central white three-hole beam across the six front pins, then inserts the five grey smooth half pins shown in the parts callout. Half-pin seating is estimated; the centre half pin is present in the booklet although omitted by the geometric reference.
+CONNECT roof-front-centre-half-pin.pin2 -> p32523-8.hole2 TURNS
+WHY Fits two white seven-hole beams and a central white three-hole beam across the six front pins, then inserts the five grey smooth half pins shown in the parts callout. The long pin ends seat in the beams, with studs exposed; the centre half pin is present in the booklet although omitted by the geometric reference.
 
 STEP 573
 GROUP roof-front-trim
@@ -6132,12 +6136,12 @@ ADD p4274-40 4274 lightgray
 ADD p4274-41 4274 lightgray
 CONNECT p2780-200.pin1 -> p41239-10.hole4 STIFF
 CONNECT p2780-201.pin1 -> p41239-10.hole10 STIFF
-CONNECT p4274-37.pin1 -> p41239-10.hole13~ TURNS
-CONNECT p4274-38.pin1 -> p41239-10.hole12~ TURNS
-CONNECT p4274-39.pin1 -> p41239-10.hole7~ TURNS
-CONNECT p4274-40.pin1 -> p41239-10.hole6~ TURNS
-CONNECT p4274-41.pin1 -> p41239-10.hole1~ TURNS
-WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. Half-pin seating is estimated.
+CONNECT p4274-37.pin2 -> p41239-10.hole13 TURNS
+CONNECT p4274-38.pin2 -> p41239-10.hole12 TURNS
+CONNECT p4274-39.pin2 -> p41239-10.hole7 TURNS
+CONNECT p4274-40.pin2 -> p41239-10.hole6 TURNS
+CONNECT p4274-41.pin2 -> p41239-10.hole1 TURNS
+WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. The long pin ends are seated in the beam and their stud ends remain exposed.
 
 STEP 593
 ADD p3666-1 3666 olivegreen
@@ -6438,12 +6442,12 @@ ADD p4274-47 4274 lightgray
 ADD p4274-48 4274 lightgray
 CONNECT p2780-207.pin2 -> p41239-13.hole4 STIFF
 CONNECT p2780-208.pin2 -> p41239-13.hole10 STIFF
-CONNECT p4274-44.pin1 -> p41239-13.hole13~ TURNS
-CONNECT p4274-45.pin1 -> p41239-13.hole12~ TURNS
-CONNECT p4274-46.pin1 -> p41239-13.hole7~ TURNS
-CONNECT p4274-47.pin1 -> p41239-13.hole6~ TURNS
-CONNECT p4274-48.pin1 -> p41239-13.hole1~ TURNS
-WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. Half-pin seating is estimated.
+CONNECT p4274-44.pin2 -> p41239-13.hole13 TURNS
+CONNECT p4274-45.pin2 -> p41239-13.hole12 TURNS
+CONNECT p4274-46.pin2 -> p41239-13.hole7 TURNS
+CONNECT p4274-47.pin2 -> p41239-13.hole6 TURNS
+CONNECT p4274-48.pin2 -> p41239-13.hole1 TURNS
+WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. The long pin ends are seated in the beam and their stud ends remain exposed.
 
 STEP 629
 ADD p3666-3 3666 olivegreen
@@ -6903,8 +6907,8 @@ CONNECT bumper-top-pin-a.pin1 -> bumper-top-black.hole1 STIFF
 CONNECT bumper-top-pin-b.pin1 -> bumper-top-black.hole9 STIFF
 CONNECT bumper-top-pin-a.pin2 -> bumper-top-olive.hole3 STIFF
 CONNECT bumper-top-pin-b.pin2 -> bumper-top-olive.hole11 STIFF
-CONNECT bumper-top-halfpin-a.pin1 -> bumper-top-olive.hole2~ TURNS
-CONNECT bumper-top-halfpin-b.pin1 -> bumper-top-olive.hole12~ TURNS
+CONNECT bumper-top-halfpin-a.pin2 -> bumper-top-olive.hole2 TURNS
+CONNECT bumper-top-halfpin-b.pin2 -> bumper-top-olive.hole12 TURNS
 CONNECT bumper-top-olive.? -> bumper-cross-cap-a.?
 WHY Builds an olive-green thirteen-hole upper bumper rail on a black nine-hole beam, adds two grey half pins, and fits it across the bumper.
 
@@ -6962,7 +6966,7 @@ CONNECT headlight-a-hub2.axle1 -> headlight-a-crossbar.axlehole2 LOCKED
 CONNECT headlight-a-hub1.axle2 -> headlight-a-blue-link.axlehole1 LOCKED
 CONNECT headlight-a-hub2.axle2 -> headlight-a-blue-link.axlehole2 LOCKED
 CONNECT headlight-a-lamp-pin.pin1 -> headlight-a-hub1.hole1 STIFF
-CONNECT headlight-a-halfpin.pin1 -> headlight-a-hub2.hole1 TURNS
+CONNECT headlight-a-halfpin.pin2 -> headlight-a-hub2.hole1 TURNS
 CONNECT headlight-a-black-tile.? -> headlight-a-halfpin.?
 CONNECT headlight-a-bar.? -> headlight-a-lens.?
 CONNECT headlight-a-lens.? -> headlight-a-disc.?
@@ -7079,7 +7083,7 @@ CONNECT headlight-b-hub2.axle1 -> headlight-b-crossbar.axlehole2 LOCKED
 CONNECT headlight-b-hub1.axle2 -> headlight-b-blue-link.axlehole1 LOCKED
 CONNECT headlight-b-hub2.axle2 -> headlight-b-blue-link.axlehole2 LOCKED
 CONNECT headlight-b-lamp-pin.pin1 -> headlight-b-hub1.hole1 STIFF
-CONNECT headlight-b-halfpin.pin1 -> headlight-b-hub2.hole1 TURNS
+CONNECT headlight-b-halfpin.pin2 -> headlight-b-hub2.hole1 TURNS
 CONNECT headlight-b-black-tile.? -> headlight-b-halfpin.?
 CONNECT headlight-b-bar.? -> headlight-b-lens.?
 CONNECT headlight-b-lens.? -> headlight-b-disc.?
@@ -7565,9 +7569,9 @@ STEP 745
 ADD fender-a-halfpin1 4274 lightgray
 ADD fender-a-halfpin2 4274 lightgray
 ADD fender-a-halfpin3 4274 lightgray
-CONNECT fender-a-halfpin1.pin1 -> fender-a-beam1.hole4~ TURNS
-CONNECT fender-a-halfpin2.pin1 -> fender-a-beam2.hole2~ TURNS
-CONNECT fender-a-halfpin3.pin1 -> fender-a-beam2.hole5~ TURNS
+CONNECT fender-a-halfpin1.pin2 -> fender-a-beam1.hole4 TURNS
+CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole2 TURNS
+CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole5 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 746
@@ -7664,8 +7668,8 @@ GROUP first-windshield-upright
 ADD windshield-a-upright 40490 black
 ADD windshield-a-upright-half1 4274 lightgray
 ADD windshield-a-upright-half2 4274 lightgray
-CONNECT windshield-a-upright-half1.pin1 -> windshield-a-upright.hole3 TURNS
-CONNECT windshield-a-upright-half2.pin1 -> windshield-a-upright.hole8 TURNS
+CONNECT windshield-a-upright-half1.pin2 -> windshield-a-upright.hole3 TURNS
+CONNECT windshield-a-upright-half2.pin2 -> windshield-a-upright.hole8 TURNS
 WHY Starts the black windshield upright with two grey half pins for the outer decorative tile.
 
 STEP 756
@@ -7784,9 +7788,9 @@ STEP 771
 ADD fender-b-halfpin1 4274 lightgray
 ADD fender-b-halfpin2 4274 lightgray
 ADD fender-b-halfpin3 4274 lightgray
-CONNECT fender-b-halfpin1.pin1 -> fender-b-beam1.hole4~ TURNS
-CONNECT fender-b-halfpin2.pin1 -> fender-b-beam2.hole2~ TURNS
-CONNECT fender-b-halfpin3.pin1 -> fender-b-beam2.hole5~ TURNS
+CONNECT fender-b-halfpin1.pin2 -> fender-b-beam1.hole4 TURNS
+CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole2 TURNS
+CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole5 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 772
@@ -7899,8 +7903,8 @@ STEP 783
 ADD windshield-b-upright 40490 black
 ADD windshield-b-upright-half1 4274 lightgray
 ADD windshield-b-upright-half2 4274 lightgray
-CONNECT windshield-b-upright-half1.pin1 -> windshield-b-upright.hole3 TURNS
-CONNECT windshield-b-upright-half2.pin1 -> windshield-b-upright.hole8 TURNS
+CONNECT windshield-b-upright-half1.pin2 -> windshield-b-upright.hole3 TURNS
+CONNECT windshield-b-upright-half2.pin2 -> windshield-b-upright.hole8 TURNS
 ADD windshield-b-upright-tile 6636 black
 CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half1.?
 CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half2.?
@@ -8429,8 +8433,8 @@ ADD ladder-cap-tile1 98138 black
 ADD ladder-cap-tile2 98138 black
 CONNECT ladder-cap-tile1.? -> ladder-cap-pin1.?
 CONNECT ladder-cap-tile2.? -> ladder-cap-pin2.?
-CONNECT ladder-cap-pin1.pin1 -> ladder-post-connector1.hole1 TURNS
-CONNECT ladder-cap-pin2.pin1 -> ladder-post-connector2.hole1 TURNS
+CONNECT ladder-cap-pin1.pin2 -> ladder-post-connector1.hole1 TURNS
+CONNECT ladder-cap-pin2.pin2 -> ladder-post-connector2.hole1 TURNS
 WHY Caps two smooth grey half pins with black round tiles and inserts them in the ladder post connectors.
 
 STEP 835
@@ -8525,9 +8529,9 @@ ADD rack-load-half2 4274 lightgray
 ADD rack-load-half3 4274 lightgray
 CONNECT rack-load-pin1.pin1 -> rack-load-bracket.hole1~ STIFF
 CONNECT rack-load-pin2.pin1 -> rack-load-bracket.hole3~ STIFF
-CONNECT rack-load-half1.pin1 -> rack-load-bracket.hole2~ TURNS
-CONNECT rack-load-half2.pin1 -> rack-load-bracket.hole4~ TURNS
-CONNECT rack-load-half3.pin1 -> rack-load-bracket.hole5~ TURNS
+CONNECT rack-load-half1.pin2 -> rack-load-bracket.hole2~ TURNS
+CONNECT rack-load-half2.pin2 -> rack-load-bracket.hole4~ TURNS
+CONNECT rack-load-half3.pin2 -> rack-load-bracket.hole5~ TURNS
 CONNECT rack-load-pin1.pin2 -> p64782-3.? STIFF
 CONNECT rack-load-pin2.pin2 -> p64782-3.? STIFF
 WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then presses its black pins into the roof panel below the rack; the exact panel-hole labels remain unresolved.

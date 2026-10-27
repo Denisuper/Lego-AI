@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 693 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 618 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -51,3 +51,25 @@ The step 303 inset shows the blue axle-pin and capped grey half pin seated in op
 The right upright connection at step 320 matches the opposite side shown at step 321 and the paired red pins from step 258; its pin seating is now specified.
 
 The step 314 inset seats the black friction pin and red towball pin from opposite ends of the grey two-length sleeve. These pin depths are now specified; the sleeve has a single cataloged bore, with opposite-end placement described in WHY.
+
+The enlarged steps 352-355 show the five black pins fully seated in the T bracket, beam and upper connector. Ten pin-seating estimates caused by the mismatching geometric reference were removed; the red axle positions in the split connector remain estimated.
+
+Source review of the side-floor assembly in steps 348 and 362 resolves the upright friction pins to the outer round holes of their 42003 connectors. Both booklet insets show the pins opposite the axle socket; split-axle seating remains estimated.
+
+The two identical front seats in steps 370?373 show each stopped brown axle spanning five consecutive components: the two grey end connectors, two tan side beams and central black block. Those axle seating positions are now resolved.
+
+The installation view at step 384 establishes the final seat orientation. Descriptions in steps 370?380 now identify the seat back, headrest end and cushion consistently with that view.
+
+Steps 392?393 show the seated, symmetric rear headrest rail pin sleeves and adjoining axle segments. Steps 408?409 show the stopped axles spanning the new L supports and the two receiving connectors installed in steps 68?69; those twelve seating positions are resolved. The unlisted stud and plate interfaces remain unknown.
+
+The step 423 rear bumper view shows four half pins fully seated in the outer black-beam holes before the tiles are pressed over them; those pin seating estimates are resolved.
+
+Steps 441 and 457 now record the four previously omitted sill-to-floor joins. The long blue pins were installed through the sill and bent beam in steps 435?436 and 451?452; the source installation arrows show the floor attachments. Exact floor-hole labels are left unknown.
+
+Steps 525 and 532 show ten wheel-arch trim half pins seated by their long pin ends in the beams, leaving the small studs outside for the trim. The erroneous pin1 beam endpoints are corrected to pin2, and the fully seated positions no longer carry estimates.
+
+The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. The separate window hinges in steps 613?614 and 649 use the stop ends as pivot interfaces and are retained.
+
+Step 494 also had the rear latch half pin reversed. Its inset shows the long end entering the cross connector and the stud retaining the white round plate. The plate clutch surface is not named by the catalog, so it remains unknown rather than being confused with its round through-hole.
+
+Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
