@@ -3748,13 +3748,13 @@ WHY Starts two matching front seats as required by the two-times callout, each w
 STEP 370
 ADD p15462-17 15462 brown
 ADD p42003-23 42003 lightgray
-CONNECT p15462-17.axle5~ -> p42003-23.axlehole1 LOCKED
-CONNECT p15462-17.axle4~ -> p32009-1.axlehole1 LOCKED
+CONNECT p15462-17.axle5 -> p42003-23.axlehole1 LOCKED
+CONNECT p15462-17.axle4 -> p32009-1.axlehole1 LOCKED
 ADD p15462-18 15462 brown
 ADD p42003-25 42003 lightgray
-CONNECT p15462-18.axle5~ -> p42003-25.axlehole1 LOCKED
-CONNECT p15462-18.axle4~ -> p32009-3.axlehole1 LOCKED
-WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the front cross socket of each seat side beam, leaving the long axle end projecting across the future seat width. Stopped-axle seating is estimated.
+CONNECT p15462-18.axle5 -> p42003-25.axlehole1 LOCKED
+CONNECT p15462-18.axle4 -> p32009-3.axlehole1 LOCKED
+WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the front cross socket of each seat side beam, leaving the long axle end projecting across the future seat width. The inset and completed seat frame show the stopped axle spanning the two end connectors, both side beams and the central block.
 
 STEP 371
 ADD p32073-13 32073 yellow
@@ -3775,7 +3775,7 @@ CONNECT p32073-13.axle3 -> p32000-2.hole1 TURNS
 CONNECT p6558-62.pin2 -> p32000-2.hole3 STIFF
 CONNECT p6558-63.pin2 -> p3701-1.hole6 STIFF
 CONNECT p6558-64.pin2 -> p3701-1.hole2 STIFF
-CONNECT p15462-17.axle3~ -> p60483-34.axlehole1 LOCKED
+CONNECT p15462-17.axle3 -> p60483-34.axlehole1 LOCKED
 ADD p32000-3 32000 darkgray
 ADD p3701-2 3701 darkgray
 ADD p60483-37 60483 black
@@ -3783,15 +3783,15 @@ CONNECT p32073-14.axle3 -> p32000-3.hole1 TURNS
 CONNECT p6558-66.pin2 -> p32000-3.hole3 STIFF
 CONNECT p6558-67.pin2 -> p3701-2.hole6 STIFF
 CONNECT p6558-68.pin2 -> p3701-2.hole2 STIFF
-CONNECT p15462-18.axle3~ -> p60483-37.axlehole1 LOCKED
-WHY Adds a dark-grey two-hole brick to each seat back, a dark-grey three-hole brick across each seat base and a black axle-and-pin block on each brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and brown axle seating remains estimated.
+CONNECT p15462-18.axle3 -> p60483-37.axlehole1 LOCKED
+WHY Adds a dark-grey two-hole brick to each seat back, a dark-grey three-hole brick across each seat base and a black axle-and-pin block on each brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and the brown axles pass through the central blocks.
 
 STEP 373
 ADD p32009-2 32009 darktan
 ADD p6536-44 6536 darkgray
 ADD p42003-24 42003 lightgray
-CONNECT p15462-17.axle2~ -> p32009-2.axlehole1 LOCKED
-CONNECT p15462-17.axle1~ -> p42003-24.axlehole1 LOCKED
+CONNECT p15462-17.axle2 -> p32009-2.axlehole1 LOCKED
+CONNECT p15462-17.axle1 -> p42003-24.axlehole1 LOCKED
 CONNECT p32073-13.axle2 -> p32009-2.axlehole2 LOCKED
 CONNECT p32073-13.axle1 -> p6536-44.axlehole1 LOCKED
 CONNECT p6558-62.pin3 -> p32009-2.hole8 STIFF
@@ -3800,14 +3800,14 @@ CONNECT p6558-64.pin3 -> p32009-2.hole4 STIFF
 ADD p32009-4 32009 darktan
 ADD p6536-46 6536 darkgray
 ADD p42003-26 42003 lightgray
-CONNECT p15462-18.axle2~ -> p32009-4.axlehole1 LOCKED
-CONNECT p15462-18.axle1~ -> p42003-26.axlehole1 LOCKED
+CONNECT p15462-18.axle2 -> p32009-4.axlehole1 LOCKED
+CONNECT p15462-18.axle1 -> p42003-26.axlehole1 LOCKED
 CONNECT p32073-14.axle2 -> p32009-4.axlehole2 LOCKED
 CONNECT p32073-14.axle1 -> p6536-46.axlehole1 LOCKED
 CONNECT p6558-66.pin3 -> p32009-4.hole8 STIFF
 CONNECT p6558-67.pin3 -> p32009-4.hole2 STIFF
 CONNECT p6558-68.pin3 -> p32009-4.hole4 STIFF
-WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey back connector and a second grey base connector. The side beam fits all three blue pin ends and both cross axles; brown axle seating remains estimated.
+WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey back connector and a second grey base connector. The side beam fits all three blue pin ends and both cross axles; the brown axles pass through the central blocks.
 
 STEP 374
 ADD p32054-25 32054 lightgray
