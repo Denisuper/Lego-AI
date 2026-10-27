@@ -64,7 +64,7 @@ Use `docs/dataset_status.csv` for actual state instead of a duplicated completed
 - 42006 has all 89 main-build steps and 695 inventory entries. Its 25 remaining parts are reserved for the optional 8293 conversion, which also uses external kit components. Do not add those parts to arbitrary main-build steps.
 - 42114's original 54-step draft was replaced after 572 notation errors. Its source transcription is now complete through step 691, page 436. The table and JSONL match, all 2,193 inventory entries reconcile by part and colour, and there are no notation errors or duplicate names. The audit marks it ready; its 474 unknown and 402 estimated endpoints still require physical/interface review. See `docs/42114-repair.md`.
 - 8047's 56 main steps and 32 side-build steps are now 88 consecutive global steps. Six ADD records present only in the old JSON were retained. Its existing worm-stop check remains unresolved.
-- 42129 is incomplete: source steps 1-587 have been checked and separated; the booklet continues through step 639. Its duplicate names were repaired, but inventory differences and remaining source-step coverage need review. See docs/42129-review.md.
+- 42129 is incomplete: source steps 1-592 have been checked and separated; the booklet continues through step 639. Its duplicate names were repaired, but inventory differences and remaining source-step coverage need review. See docs/42129-review.md.
 
 ## Saving
 
