@@ -3557,26 +3557,26 @@ STEP 352
 GROUP right-forward-side-frame
 ADD p60484-8 60484 black
 ADD right-frame-long-black-pin 32054 black
-CONNECT right-frame-long-black-pin.pin1~ -> p60484-8.hole5 STIFF
-WHY Starts the right forward side frame with one black T-shaped beam and a long black pin with stop bush through its outer base hole. Follow the booklet part colours and pin lengths here; the geometric reference incorrectly mirrors the left bracket with blue pins and an extra T beam. Long-pin seating is estimated.
+CONNECT right-frame-long-black-pin.pin1 -> p60484-8.hole5 STIFF
+WHY Starts the right forward side frame with one black T-shaped beam and a long black pin with stop bush through its outer base hole. Follow the booklet part colours and pin lengths here; the geometric reference incorrectly mirrors the left bracket with blue pins and an extra T beam. The source shows the long pin seated against the bracket.
 
 STEP 353
 ADD right-frame-top-one 2780 black
-CONNECT right-frame-top-one.pin1~ -> p60484-8.hole2 STIFF
+CONNECT right-frame-top-one.pin1 -> p60484-8.hole2 STIFF
 ADD right-frame-top-two 2780 black
-CONNECT right-frame-top-two.pin1~ -> p60484-8.hole3 STIFF
+CONNECT right-frame-top-two.pin1 -> p60484-8.hole3 STIFF
 ADD right-frame-base-centre 2780 black
-CONNECT right-frame-base-centre.pin1~ -> p60484-8.hole4 STIFF
+CONNECT right-frame-base-centre.pin1 -> p60484-8.hole4 STIFF
 ADD right-frame-base-outer 2780 black
-CONNECT right-frame-base-outer.pin1~ -> p60484-8.hole1 STIFF
-WHY Inserts four short black friction pins into the remaining four holes of the right T-shaped beam, with their projecting ends on the shown face. These are the booklet black two-length pins, replacing the reference model long blue pins; seating is estimated because that model variant does not match this source build.
+CONNECT right-frame-base-outer.pin1 -> p60484-8.hole1 STIFF
+WHY Inserts four short black friction pins into the remaining four holes of the right T-shaped beam, with their projecting ends on the shown face. These are the booklet black two-length pins, replacing the reference model long blue pins; the source shows them fully seated.
 
 STEP 354
 ADD p32525-7 32525 darkgray
-CONNECT right-frame-long-black-pin.pin2~ -> p32525-7.hole2 STIFF
-CONNECT right-frame-base-centre.pin2~ -> p32525-7.hole3 STIFF
-CONNECT right-frame-base-outer.pin2~ -> p32525-7.hole4 STIFF
-WHY Fits the dark-grey eleven-hole beam over the three base-row pin ends on the right T bracket. The long black pin and two short black pins secure the beam; pin seating is estimated against the booklet because the reference uses a different bracket stack.
+CONNECT right-frame-long-black-pin.pin2 -> p32525-7.hole2 STIFF
+CONNECT right-frame-base-centre.pin2 -> p32525-7.hole3 STIFF
+CONNECT right-frame-base-outer.pin2 -> p32525-7.hole4 STIFF
+WHY Fits the dark-grey eleven-hole beam over the three base-row pin ends on the right T bracket. The long black pin and two short black pins secure the beam; the source view shows the pins seated through the matching beam holes.
 
 STEP 355
 ADD p32062-28 32062 red
@@ -3585,10 +3585,10 @@ ADD p42003-21 42003 lightgray
 CONNECT p32062-28.axle1~ -> p41678-6.axlehole1 LOCKED
 CONNECT p32062-28.axle2~ -> p41678-6.axlehole2 LOCKED
 CONNECT p32062-28.axle1~ -> p42003-21.axlehole1 LOCKED
-CONNECT right-frame-top-one.pin2~ -> p41678-6.hole1 STIFF
-CONNECT right-frame-top-two.pin2~ -> p41678-6.hole2 STIFF
+CONNECT right-frame-top-one.pin2 -> p41678-6.hole1 STIFF
+CONNECT right-frame-top-two.pin2 -> p41678-6.hole2 STIFF
 END
-WHY Joins the grey split perpendicular connector and grey axle-and-pin connector with a red two-length axle, then fits the two grey round holes over the upper black pin ends. The booklet completes this bracket without a second black T beam; split-axle and pin seating remain estimated.
+WHY Joins the grey split perpendicular connector and grey axle-and-pin connector with a red two-length axle, then fits the two grey round holes over the upper black pin ends. The booklet completes this bracket without a second black T beam; split-axle seating remains estimated.
 
 STEP 356
 ATTACH right-forward-side-frame
