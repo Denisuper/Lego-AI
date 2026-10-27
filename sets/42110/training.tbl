@@ -2869,14 +2869,14 @@ STEP 280
 ADD p41239-2 41239 black
 ADD p41239-3 41239 black
 CONNECT p2780-49.pin1 -> p41239-2.hole1 STIFF
-CONNECT p11214-3.pin1~ -> p41239-2.hole10 STIFF
+CONNECT p11214-3.pin1 -> p41239-2.hole10 STIFF
 CONNECT p6558-35.pin1 -> p41239-2.hole11 STIFF
 CONNECT p87082-7.pin2 -> p41239-2.hole13 STIFF
 CONNECT p2780-50.pin2 -> p41239-3.hole1 STIFF
 CONNECT p11214-2.pin1 -> p41239-3.hole10 STIFF
 CONNECT p6558-36.pin1 -> p41239-3.hole11 STIFF
 CONNECT p87082-6.pin1 -> p41239-3.hole13 STIFF
-WHY Fits black thirteen-hole rails along both sides of the engine and gearbox, engaging the four waiting pin ends on each side. Keep the highlighted universal-joint forks aligned while closing these rails; the right red pin depth remains estimated.
+WHY Fits black thirteen-hole rails along both sides of the engine and gearbox, engaging the four waiting pin ends on each side. Keep the highlighted universal-joint forks aligned while closing both rails onto the paired red pins.
 
 STEP 281
 GROUP steering-column-bracket

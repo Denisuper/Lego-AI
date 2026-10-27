@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 704 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 703 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -39,3 +39,5 @@ A source review compared the part callouts, order and selected joins for steps 1
 The source step 258 inset calls for two identical grey and red pin assemblies seated through the matching beam ends. The second pin seating is now specified like the first rather than relying on an offset in the reference model.
 
 Step 261 shows both identical step-258 pins pushed through the matching engine bearing blocks. The right pin-to-bearing seating is no longer estimated.
+
+At step 280 both long side rails fit onto the paired red pins installed at step 258; the illustrated matching seating resolves the second rail connection.
