@@ -7203,9 +7203,9 @@ WHY Fits a black friction pin in the dark-grey elbow and keys a blue axle-pin in
 
 STEP 706
 ADD hood-support-a-olive 32140 olivegreen
-CONNECT hood-support-a-pin.pin2 -> hood-support-a-olive.hole2~ STIFF
-CONNECT hood-support-a-axlepin.pin1 -> hood-support-a-olive.hole4~ STIFF
-WHY Attaches an olive L-shaped beam across the projecting black and blue pins.
+CONNECT hood-support-a-pin.pin2 -> hood-support-a-olive.hole2 STIFF
+CONNECT hood-support-a-axlepin.pin1 -> hood-support-a-olive.hole4 STIFF
+WHY Seats the olive L-shaped beam on the black and blue pins introduced in step 705, with the blue pin in its short leg.
 
 STEP 707
 ADD hood-support-a-mount-pin1 2780 black
@@ -7252,9 +7252,9 @@ WHY Inserts the black friction pin and blue axle-pin to hold the other olive sup
 
 STEP 713
 ADD hood-support-b-olive 32140 olivegreen
-CONNECT hood-support-b-pin.pin2 -> hood-support-b-olive.hole2~ STIFF
-CONNECT hood-support-b-axlepin.pin1 -> hood-support-b-olive.hole4~ STIFF
-WHY Fits the mirrored olive L-shaped beam across the pins.
+CONNECT hood-support-b-pin.pin2 -> hood-support-b-olive.hole2 STIFF
+CONNECT hood-support-b-axlepin.pin1 -> hood-support-b-olive.hole4 STIFF
+WHY Seats the mirrored olive L-shaped beam on the black and blue pins from step 712, with the blue pin in its short leg.
 
 STEP 714
 ADD hood-support-b-mount-pin1 2780 black
