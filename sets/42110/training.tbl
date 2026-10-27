@@ -5526,9 +5526,9 @@ CONNECT p2780-164.pin2 -> p32524-13.hole5 STIFF
 ADD p2780-165 2780 black
 CONNECT p2780-165.pin2 -> p32524-13.hole4 STIFF
 ADD p4274-29 4274 lightgray
-CONNECT p4274-29.pin1 -> p32524-13.hole6~ TURNS
+CONNECT p4274-29.pin2 -> p32524-13.hole6 TURNS
 ADD p4274-30 4274 lightgray
-CONNECT p4274-30.pin1 -> p32524-13.hole1~ TURNS
+CONNECT p4274-30.pin2 -> p32524-13.hole1 TURNS
 CONNECT p2780-163.pin1 -> p32013-13.hole1 STIFF
 CONNECT p2780-164.pin1 -> p11947-5.hole2 STIFF
 CONNECT p2780-165.pin1 -> p11947-5.hole1 STIFF
@@ -5540,13 +5540,13 @@ CONNECT p2780-167.pin2 -> p32524-14.hole5 STIFF
 ADD p2780-168 2780 black
 CONNECT p2780-168.pin2 -> p32524-14.hole4 STIFF
 ADD p4274-31 4274 lightgray
-CONNECT p4274-31.pin1 -> p32524-14.hole6~ TURNS
+CONNECT p4274-31.pin2 -> p32524-14.hole6 TURNS
 ADD p4274-32 4274 lightgray
-CONNECT p4274-32.pin1 -> p32524-14.hole1~ TURNS
+CONNECT p4274-32.pin2 -> p32524-14.hole1 TURNS
 CONNECT p2780-166.pin1 -> p32013-14.hole1 STIFF
 CONNECT p2780-167.pin1 -> p11946-5.hole2 STIFF
 CONNECT p2780-168.pin1 -> p11946-5.hole1 STIFF
-WHY Builds two olive seven-hole rear corner strips, each with three black friction pins and two grey smooth half pins. Mounts them beside the rear lamp pillars through the fairing panel and cargo linkage round holes. Half-pin depths are estimated.
+WHY Builds two olive seven-hole rear corner strips, each with three black friction pins and two grey smooth half pins. Mounts them beside the rear lamp pillars through the fairing panel and cargo linkage round holes. The long ends seat in the beam, leaving the stud ends exposed.
 
 STEP 541
 ADD p6636-1 6636 olivegreen
@@ -5927,13 +5927,13 @@ CONNECT p2780-191.pin2 -> p32523-8.hole1 STIFF
 CONNECT p2780-192.pin2 -> p32524-16.hole2 STIFF
 CONNECT p2780-193.pin2 -> p32524-16.hole1 STIFF
 CONNECT p2780-194.pin2 -> p32523-8.hole3 STIFF
-CONNECT p4274-33.pin1 -> p32524-15.hole1~ TURNS
-CONNECT p4274-34.pin1 -> p32524-15.hole5~ TURNS
-CONNECT p4274-35.pin1 -> p32524-16.hole3~ TURNS
-CONNECT p4274-36.pin1 -> p32524-16.hole7~ TURNS
+CONNECT p4274-33.pin2 -> p32524-15.hole1 TURNS
+CONNECT p4274-34.pin2 -> p32524-15.hole5 TURNS
+CONNECT p4274-35.pin2 -> p32524-16.hole3 TURNS
+CONNECT p4274-36.pin2 -> p32524-16.hole7 TURNS
 ADD roof-front-centre-half-pin 4274 lightgray
-CONNECT roof-front-centre-half-pin.pin1 -> p32523-8.hole2~ TURNS
-WHY Fits two white seven-hole beams and a central white three-hole beam across the six front pins, then inserts the five grey smooth half pins shown in the parts callout. Half-pin seating is estimated; the centre half pin is present in the booklet although omitted by the geometric reference.
+CONNECT roof-front-centre-half-pin.pin2 -> p32523-8.hole2 TURNS
+WHY Fits two white seven-hole beams and a central white three-hole beam across the six front pins, then inserts the five grey smooth half pins shown in the parts callout. The long pin ends seat in the beams, with studs exposed; the centre half pin is present in the booklet although omitted by the geometric reference.
 
 STEP 573
 GROUP roof-front-trim
@@ -6136,12 +6136,12 @@ ADD p4274-40 4274 lightgray
 ADD p4274-41 4274 lightgray
 CONNECT p2780-200.pin1 -> p41239-10.hole4 STIFF
 CONNECT p2780-201.pin1 -> p41239-10.hole10 STIFF
-CONNECT p4274-37.pin1 -> p41239-10.hole13~ TURNS
-CONNECT p4274-38.pin1 -> p41239-10.hole12~ TURNS
-CONNECT p4274-39.pin1 -> p41239-10.hole7~ TURNS
-CONNECT p4274-40.pin1 -> p41239-10.hole6~ TURNS
-CONNECT p4274-41.pin1 -> p41239-10.hole1~ TURNS
-WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. Half-pin seating is estimated.
+CONNECT p4274-37.pin2 -> p41239-10.hole13 TURNS
+CONNECT p4274-38.pin2 -> p41239-10.hole12 TURNS
+CONNECT p4274-39.pin2 -> p41239-10.hole7 TURNS
+CONNECT p4274-40.pin2 -> p41239-10.hole6 TURNS
+CONNECT p4274-41.pin2 -> p41239-10.hole1 TURNS
+WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. The long pin ends are seated in the beam and their stud ends remain exposed.
 
 STEP 593
 ADD p3666-1 3666 olivegreen
@@ -6442,12 +6442,12 @@ ADD p4274-47 4274 lightgray
 ADD p4274-48 4274 lightgray
 CONNECT p2780-207.pin2 -> p41239-13.hole4 STIFF
 CONNECT p2780-208.pin2 -> p41239-13.hole10 STIFF
-CONNECT p4274-44.pin1 -> p41239-13.hole13~ TURNS
-CONNECT p4274-45.pin1 -> p41239-13.hole12~ TURNS
-CONNECT p4274-46.pin1 -> p41239-13.hole7~ TURNS
-CONNECT p4274-47.pin1 -> p41239-13.hole6~ TURNS
-CONNECT p4274-48.pin1 -> p41239-13.hole1~ TURNS
-WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. Half-pin seating is estimated.
+CONNECT p4274-44.pin2 -> p41239-13.hole13 TURNS
+CONNECT p4274-45.pin2 -> p41239-13.hole12 TURNS
+CONNECT p4274-46.pin2 -> p41239-13.hole7 TURNS
+CONNECT p4274-47.pin2 -> p41239-13.hole6 TURNS
+CONNECT p4274-48.pin2 -> p41239-13.hole1 TURNS
+WHY Builds the olive thirteen-hole upper beam with five grey smooth half pins in the illustrated holes, then presses it onto the two black panel pins. The long pin ends are seated in the beam and their stud ends remain exposed.
 
 STEP 629
 ADD p3666-3 3666 olivegreen
