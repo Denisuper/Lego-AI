@@ -545,19 +545,15 @@ WHY Adds a 16-tooth gear, 2 axles and a ball joint to the main chassis. It sits 
 
 STEP 32
 ADD fl-panel5-1 64782 black
-ADD fl-conn-1 65487 darkgray
-ADD fl-conn-2 65487 darkgray
+ADD fl-conn-1 65487 lightgray
+ADD fl-conn-2 65487 lightgray
 ADD fl-pin-1 61332 black
 ADD fl-pin-2 61332 black
-CONNECT fl-pin-2.pin1 -> fl-panel5-1.hole10 STIFF
-CONNECT fl-conn-2.pin1 -> fl-panel5-1.hole12 STIFF
-CONNECT fl-pin-1.pin1 -> fl-panel5-1.hole31 STIFF
-CONNECT fl-conn-1.pin1 -> fl-panel5-1.hole33 STIFF
-CONNECT fl-pin-2.pin1 -> fl-panel5-1.hole11 STIFF
-CONNECT fl-conn-2.pin1 -> fl-panel5-1.hole11 STIFF
-CONNECT fl-pin-1.pin1 -> fl-panel5-1.hole32 STIFF
-CONNECT fl-conn-1.pin1 -> fl-panel5-1.hole32 STIFF
-WHY Starts the chassis floor with a 5x11 panel, 2 pin hubs and 2 friction pins; it ties the frame together and closes the underside. It sits at the rear of the truck, low on the truck. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 5x11 panel with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 33 slots 2 3x11 panels onto them.
+CONNECT fl-pin-1.pin1 -> fl-panel5-1.?
+CONNECT fl-pin-2.pin1 -> fl-panel5-1.?
+CONNECT fl-conn-1.pin1 -> fl-panel5-1.?
+CONNECT fl-conn-2.pin1 -> fl-panel5-1.?
+WHY Starts the chassis floor with a black panel, two friction pins and two light-grey pin connectors; their exact panel hole positions remain unresolved.
 
 STEP 33
 ADD fl-panel3-1 15458 black

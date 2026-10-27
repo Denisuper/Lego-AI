@@ -11,3 +11,5 @@ A second source check found that the frame assembled in source steps 611-618 was
 Printed page 117, source step 196, calls for four axle-pin hubs in two paired rear-axle link assemblies. The draft introduced five: the old `ra-conn-8` and `ra-conn-11` occupied the same place in the same link. The duplicate was removed and its later references now use `ra-conn-11`. The links remain represented as two training steps and still need to be split or renumbered as part of a source-order rewrite.
 
 On printed page 100, source step 148 uses a grey three-stud axle in the second wheel reduction hub; the draft incorrectly recorded a red four-stud axle. The inventory and training were corrected, and the unsupported connection from that axle to the earlier differential was replaced with unresolved hub and joint endpoints. Its surrounding source-step order still needs review.
+
+Printed page 37, source step 53, shows two light-grey single-pin connectors on the chassis floor panel. The old draft called both dark grey and assigned some pin ends to two panel holes at once. Their color now matches the booklet, and the uncertain panel hole positions are explicit.
