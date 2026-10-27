@@ -2967,6 +2967,7 @@ CONNECT fb-beam3-6.? -> fb-beam2-4.?
 WHY Builds and attaches the opposite black T-beam bracket with three pins and a round spacer.
 
 STEP 312
+ADD sticker-sheet-1 77604 nocolor
 WHY Turns the bumper and applies the two numbered decorative stickers to its front.
 
 STEP 313
