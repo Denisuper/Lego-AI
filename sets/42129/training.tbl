@@ -4574,8 +4574,8 @@ WHY Turns the truck and fits the completed hood assembly to the earlier hood sup
 STEP 490
 ADD hood-bar-1 87994 darkgray
 ADD hood-bar-2 87994 darkgray
-ADD hood-conn-1 42135 darkgray
-ADD hood-conn-2 42135 darkgray
+ADD hood-conn-1 42135 black
+ADD hood-conn-2 42135 black
 CONNECT hood-bar-1.? -> hood-conn-1.?
 CONNECT hood-bar-2.? -> hood-conn-2.?
 CONNECT hood-conn-1.? -> h1-beam3-1.?

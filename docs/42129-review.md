@@ -110,7 +110,7 @@ Printed pages 268-270, source steps 473-480, separate the paired hood beams, hal
 
 Printed pages 271-274, source steps 481-489, separate the hood crossbeam, its attachment to the earlier hood connector pairs, clip details, and hood installation. Hood supports from steps 449-457 and 465-472 identify the receiving assembly; exact mounting holes remain uncertain. Continue at source step 490.
 
-Printed pages 275-276, source steps 490-497, restore two omitted grey bars and connectors beside the hood, then separate the side detail and sticker. The bars match the inventory three-stud grey bar; connector colour and any overlap with later legacy entries require reconciliation. Continue at source step 498.
+Printed pages 275-276, source steps 490-497, restore two omitted grey bars and connectors beside the hood, then separate the side detail and sticker. The bars match the inventory three-stud grey bar; the two axle connectors are black, consistent with the source view and the remaining matching inventory. Continue at source step 498.
 
 Printed pages 277-278, source steps 498-500, combine the round side detail as shown, turn it and install it next to the hood. The receiving cabin-side assembly is traced to earlier pages; exact mounting holes remain uncertain. Continue at source step 501.
 
@@ -155,3 +155,5 @@ Printed pages 357-363, source steps 609-620, separate the bed pins, two T-bracke
 Printed pages 364-368, source steps 621-631, separate the exhaust stack and restore its omitted seventh ribbed cylinder, then recombine the two extinguishers and four wheels. The support frame identifies the receiving assembly; exact holes remain uncertain. Continue at source step 632.
 
 Printed pages 369-372, source steps 632-639, review both sets of wheel hubs and recombine the paired white and red marker flags. Removed the artificial final sticker-sheet step: stickers are applied during the source steps, and the inventory sheet itself is not a separate construction step. Continue with inventory reconciliation and unresolved connection review.
+
+Inventory reconciliation after source coverage: source step 490 supplies the two previously missing black 42135 connectors; the initially transcribed dark-grey colour was corrected. The remaining differences are two black 41677 thin beams and the sticker sheet, which is applied across the booklet and is not itself a construction step. Do not assume the beams are unused or spare until source counts are independently verified.
