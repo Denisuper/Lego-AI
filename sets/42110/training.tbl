@@ -7712,8 +7712,7 @@ WHY Caps the tip with another olive two-hole connector and a round spacer, compl
 
 STEP 761
 ATTACH first-windshield-side
-CONNECT windshield-a-bracket-axle.axle2 -> fender-a-beam2.hole7~ TURNS
-WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated fender point and leaving the upright raised.
+WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated engine-bay point and leaving the upright raised. The receiving part and hole remain unresolved.
 
 STEP 762
 WHY Raises the black windshield upright to the front roof edge and aligns its top hole with the highlighted roof connection; the exact roof endpoint remains unresolved.
@@ -7919,8 +7918,7 @@ WHY Builds the second stickered black windshield upright with two half pins, a t
 
 STEP 784
 ATTACH second-windshield-side
-CONNECT windshield-b-bracket-axle.axle2 -> fender-b-beam2.hole7~ TURNS
-WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated fender point and leaving the upright raised.
+WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated engine-bay point and leaving the upright raised. The receiving part and hole remain unresolved.
 
 STEP 785
 WHY Raises the black windshield upright to the front roof edge and aligns its top hole with the highlighted roof connection; the exact roof endpoint remains unresolved.
