@@ -7939,3 +7939,235 @@ ADD roof-steering-bush 3713 lightgray
 CONNECT roof-steering-axle.axle2 -> roof-steering-gear.axlehole1 LOCKED
 CONNECT roof-steering-axle.axle1 -> roof-steering-bush.axlehole1 LOCKED
 WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle and inserts the shaft into the roof steering access; its internal receiving point remains unresolved.
+
+STEP 789
+GROUP roof-rack
+ADD rack-rear-beam1 11478 black
+ADD rack-rear-beam2 11478 black
+ADD rack-rear-axle1 4519 lightgray
+ADD rack-rear-axle2 4519 lightgray
+CONNECT rack-rear-axle1.axle1 -> rack-rear-beam1.axlehole1 LOCKED
+CONNECT rack-rear-axle2.axle1 -> rack-rear-beam1.axlehole2 LOCKED
+CONNECT rack-rear-axle1.axle2 -> rack-rear-beam2.axlehole1 LOCKED
+CONNECT rack-rear-axle2.axle2 -> rack-rear-beam2.axlehole2 LOCKED
+WHY Starts the roof rack with two thin black five-hole beams spaced by two grey three-stud axles.
+
+STEP 790
+ADD rack-rear-spacer1 18654 black
+ADD rack-rear-spacer2 18654 black
+ADD rack-rear-elbow1 25214 black
+ADD rack-rear-elbow2 25214 black
+CONNECT rack-rear-axle1.axle3 -> rack-rear-spacer1.hole1 TURNS
+CONNECT rack-rear-axle2.axle3 -> rack-rear-spacer2.hole1 TURNS
+CONNECT rack-rear-axle1.axle3~ -> rack-rear-elbow1.? LOCKED
+CONNECT rack-rear-axle2.axle3~ -> rack-rear-elbow2.? LOCKED
+WHY Turns the assembly and fits two black spacers and curved elbow tubes on the exposed axles, starting the rack rear corners.
+
+STEP 791
+ADD rack-rear-side-axle1 3705 black
+ADD rack-rear-side-axle2 3705 black
+ADD rack-rear-side-connector1 6536 darkgray
+ADD rack-rear-side-connector2 6536 darkgray
+CONNECT rack-rear-side-axle1.axle1 -> rack-rear-elbow1.? LOCKED
+CONNECT rack-rear-side-axle2.axle1 -> rack-rear-elbow2.? LOCKED
+CONNECT rack-rear-side-axle1.axle2 -> rack-rear-side-connector1.axlehole1 LOCKED
+CONNECT rack-rear-side-axle2.axle2 -> rack-rear-side-connector2.axlehole1 LOCKED
+WHY Adds a black four-stud axle and dark-grey perpendicular connector to each curved rear corner.
+
+STEP 792
+ADD rack-rear-upper-elbow1 25214 black
+ADD rack-rear-upper-elbow2 25214 black
+ADD rack-rear-upper-red1 32062 red
+ADD rack-rear-upper-red2 32062 red
+CONNECT rack-rear-side-axle1.axle3 -> rack-rear-upper-elbow1.? LOCKED
+CONNECT rack-rear-side-axle2.axle3 -> rack-rear-upper-elbow2.? LOCKED
+CONNECT rack-rear-upper-red1.axle1 -> rack-rear-upper-elbow1.? LOCKED
+CONNECT rack-rear-upper-red2.axle1 -> rack-rear-upper-elbow2.? LOCKED
+WHY Fits another pair of black curved elbows and red short axles to complete the raised rear rack corners.
+
+STEP 793
+ADD rack-side-extension1 59443 black
+ADD rack-side-extension2 59443 black
+ADD rack-side-red1 32062 red
+ADD rack-side-red2 32062 red
+CONNECT rack-rear-upper-red1.axle2 -> rack-side-extension1.axlehole1 LOCKED
+CONNECT rack-rear-upper-red2.axle2 -> rack-side-extension2.axlehole1 LOCKED
+CONNECT rack-side-red1.axle1 -> rack-side-extension1.axlehole2 LOCKED
+CONNECT rack-side-red2.axle1 -> rack-side-extension2.axlehole2 LOCKED
+WHY Extends both rack side rails with black axle connectors and red short axles.
+
+STEP 794
+ADD rack-side-a-connector1 32034 black
+ADD rack-side-a-connector2 32034 black
+ADD rack-side-a-axle 4519 lightgray
+ADD rack-side-a-spacer 18654 black
+ADD rack-side-a-red 32062 red
+CONNECT rack-side-a-axle.axle1 -> rack-side-a-connector1.axlehole1 LOCKED
+CONNECT rack-side-a-axle.axle2 -> rack-side-a-spacer.hole1 TURNS
+CONNECT rack-side-a-axle.axle3 -> rack-side-a-connector2.axlehole1 LOCKED
+CONNECT rack-side-a-red.axle1 -> rack-side-a-connector2.axlehole2 LOCKED
+CONNECT rack-side-red1.axle2 -> rack-side-a-connector1.axlehole2 LOCKED
+WHY Builds one rack side segment with two black axle connectors separated by a round spacer, a grey axle and a red end axle, then joins it to the rear corner.
+
+STEP 795
+ADD rack-cross-axle1 23948 lightgray
+ADD rack-cross-axle2 23948 lightgray
+ADD rack-cross-coupler1 59443 lightgray
+ADD rack-cross-coupler2 59443 lightgray
+ADD rack-cross-coupler3 59443 lightgray
+ADD rack-cross-coupler4 59443 lightgray
+ADD rack-cross-short1 3705 black
+ADD rack-cross-short2 3705 black
+ADD rack-cross-thin1 11478 black
+ADD rack-cross-thin2 11478 black
+CONNECT rack-cross-axle1.axle1 -> rack-cross-coupler1.axlehole1 LOCKED
+CONNECT rack-cross-axle1.axle11 -> rack-cross-coupler2.axlehole1 LOCKED
+CONNECT rack-cross-axle2.axle1 -> rack-cross-coupler3.axlehole1 LOCKED
+CONNECT rack-cross-axle2.axle11 -> rack-cross-coupler4.axlehole1 LOCKED
+CONNECT rack-cross-short1.axle1 -> rack-cross-coupler1.axlehole2 LOCKED
+CONNECT rack-cross-short2.axle1 -> rack-cross-coupler3.axlehole2 LOCKED
+CONNECT rack-cross-short1.axle2 -> rack-side-a-connector1.hole1 TURNS
+CONNECT rack-cross-short2.axle2 -> rack-side-a-connector2.hole1 TURNS
+CONNECT rack-cross-short1.axle3 -> rack-cross-thin1.axlehole1 LOCKED
+CONNECT rack-cross-short2.axle3 -> rack-cross-thin1.axlehole2 LOCKED
+CONNECT rack-cross-short1.axle4 -> rack-cross-thin2.axlehole1 LOCKED
+CONNECT rack-cross-short2.axle4 -> rack-cross-thin2.axlehole2 LOCKED
+WHY Builds two long grey rack crossbars with end couplers and black short axles, then anchors them through the side rail with two thin black beams.
+
+STEP 796
+ADD rack-side-b-connector1 32034 black
+ADD rack-side-b-connector2 32034 black
+ADD rack-side-b-axle 4519 lightgray
+ADD rack-side-b-spacer 18654 black
+ADD rack-side-b-red 32062 red
+CONNECT rack-side-b-axle.axle1 -> rack-side-b-connector1.axlehole1 LOCKED
+CONNECT rack-side-b-axle.axle2 -> rack-side-b-spacer.hole1 TURNS
+CONNECT rack-side-b-axle.axle3 -> rack-side-b-connector2.axlehole1 LOCKED
+CONNECT rack-side-b-red.axle1 -> rack-side-b-connector2.axlehole2 LOCKED
+CONNECT rack-side-red2.axle2 -> rack-side-b-connector1.axlehole2 LOCKED
+WHY Builds the mirrored black rack side segment and joins it to the other rear corner.
+
+STEP 797
+ADD rack-cross-short3 3705 black
+ADD rack-cross-short4 3705 black
+ADD rack-cross-thin3 11478 black
+ADD rack-cross-thin4 11478 black
+CONNECT rack-cross-short3.axle1 -> rack-cross-coupler2.axlehole2 LOCKED
+CONNECT rack-cross-short4.axle1 -> rack-cross-coupler4.axlehole2 LOCKED
+CONNECT rack-cross-short3.axle2 -> rack-side-b-connector1.hole1 TURNS
+CONNECT rack-cross-short4.axle2 -> rack-side-b-connector2.hole1 TURNS
+CONNECT rack-cross-short3.axle3 -> rack-cross-thin3.axlehole1 LOCKED
+CONNECT rack-cross-short4.axle3 -> rack-cross-thin3.axlehole2 LOCKED
+CONNECT rack-cross-short3.axle4 -> rack-cross-thin4.axlehole1 LOCKED
+CONNECT rack-cross-short4.axle4 -> rack-cross-thin4.axlehole2 LOCKED
+WHY Anchors the other side of the two long rack crossbars with black axles and two thin five-hole beams.
+
+STEP 798
+ADD rack-forward-axle1 3705 black
+ADD rack-forward-axle2 3705 black
+ADD rack-forward-coupler1 59443 black
+ADD rack-forward-coupler2 59443 black
+CONNECT rack-side-a-red.axle2 -> rack-forward-coupler1.axlehole1 LOCKED
+CONNECT rack-side-b-red.axle2 -> rack-forward-coupler2.axlehole1 LOCKED
+CONNECT rack-forward-axle1.axle1 -> rack-forward-coupler1.axlehole2 LOCKED
+CONNECT rack-forward-axle2.axle1 -> rack-forward-coupler2.axlehole2 LOCKED
+WHY Extends each long side of the rack with a black straight axle connector and four-stud axle.
+
+STEP 799
+ADD rack-cross-axle3 23948 lightgray
+ADD rack-cross-coupler5 59443 lightgray
+ADD rack-cross-coupler6 59443 lightgray
+ADD rack-cross-hub1 22961 black
+ADD rack-cross-hub2 22961 black
+CONNECT rack-cross-axle3.axle1 -> rack-cross-coupler5.axlehole1 LOCKED
+CONNECT rack-cross-axle3.axle11 -> rack-cross-coupler6.axlehole1 LOCKED
+CONNECT rack-cross-hub1.axle1 -> rack-cross-coupler5.axlehole2 LOCKED
+CONNECT rack-cross-hub2.axle1 -> rack-cross-coupler6.axlehole2 LOCKED
+CONNECT rack-forward-axle1.axle3 -> rack-cross-hub1.hole1 TURNS
+CONNECT rack-forward-axle2.axle3 -> rack-cross-hub2.hole1 TURNS
+WHY Builds and fits a third long grey crossbar, using black perpendicular hubs to join its ends to the two side axles.
+
+STEP 800
+ADD rack-side-join1 59443 black
+ADD rack-side-join2 59443 black
+ADD rack-side-spacer1 18654 black
+ADD rack-side-spacer2 18654 black
+ADD rack-side-join-axle1 4519 lightgray
+ADD rack-side-join-axle2 4519 lightgray
+CONNECT rack-forward-axle1.axle4 -> rack-side-spacer1.hole1 TURNS
+CONNECT rack-forward-axle2.axle4 -> rack-side-spacer2.hole1 TURNS
+CONNECT rack-forward-axle1.axle4~ -> rack-side-join1.axlehole1 LOCKED
+CONNECT rack-forward-axle2.axle4~ -> rack-side-join2.axlehole1 LOCKED
+CONNECT rack-side-join-axle1.axle1 -> rack-side-join1.axlehole2 LOCKED
+CONNECT rack-side-join-axle2.axle1 -> rack-side-join2.axlehole2 LOCKED
+WHY Adds two black spacers and two straight connectors with grey axle extensions to continue the rack sides.
+
+STEP 801
+ADD rack-cross-axle4 23948 lightgray
+ADD rack-cross-coupler7 59443 lightgray
+ADD rack-cross-coupler8 59443 lightgray
+ADD rack-cross-hub3 22961 black
+ADD rack-cross-hub4 22961 black
+CONNECT rack-cross-axle4.axle1 -> rack-cross-coupler7.axlehole1 LOCKED
+CONNECT rack-cross-axle4.axle11 -> rack-cross-coupler8.axlehole1 LOCKED
+CONNECT rack-cross-hub3.axle1 -> rack-cross-coupler7.axlehole2 LOCKED
+CONNECT rack-cross-hub4.axle1 -> rack-cross-coupler8.axlehole2 LOCKED
+CONNECT rack-side-join-axle1.axle2 -> rack-cross-hub3.hole1 TURNS
+CONNECT rack-side-join-axle2.axle2 -> rack-cross-hub4.hole1 TURNS
+WHY Builds and installs a fourth long grey crossbar between the extended side rails.
+
+STEP 802
+ADD rack-front-extension1 59443 black
+ADD rack-front-extension2 59443 black
+ADD rack-front-red1 32062 red
+ADD rack-front-red2 32062 red
+CONNECT rack-side-join-axle1.axle3 -> rack-front-extension1.axlehole1 LOCKED
+CONNECT rack-side-join-axle2.axle3 -> rack-front-extension2.axlehole1 LOCKED
+CONNECT rack-front-red1.axle1 -> rack-front-extension1.axlehole2 LOCKED
+CONNECT rack-front-red2.axle1 -> rack-front-extension2.axlehole2 LOCKED
+WHY Adds a black axle connector and red short axle to the front end of each side rail.
+
+STEP 803
+GROUP rack-front-crossbar
+ADD rack-front-centre 32034 black
+ADD rack-front-centre-red1 32062 red
+ADD rack-front-centre-red2 32062 red
+CONNECT rack-front-centre-red1.axle1 -> rack-front-centre.axlehole1 LOCKED
+CONNECT rack-front-centre-red2.axle1 -> rack-front-centre.axlehole2 LOCKED
+WHY Starts the rack front crossbar with a black centre connector and a short red axle in each end.
+
+STEP 804
+ADD rack-front-centre-extension1 59443 black
+ADD rack-front-centre-extension2 59443 black
+CONNECT rack-front-centre-red1.axle2 -> rack-front-centre-extension1.axlehole1 LOCKED
+CONNECT rack-front-centre-red2.axle2 -> rack-front-centre-extension2.axlehole1 LOCKED
+WHY Extends both ends of the front crossbar with black straight connectors.
+
+STEP 805
+ADD rack-front-axle1 3705 black
+ADD rack-front-axle2 3705 black
+ADD rack-front-connector1 6536 darkgray
+ADD rack-front-connector2 6536 darkgray
+CONNECT rack-front-axle1.axle1 -> rack-front-centre-extension1.axlehole2 LOCKED
+CONNECT rack-front-axle2.axle1 -> rack-front-centre-extension2.axlehole2 LOCKED
+CONNECT rack-front-axle1.axle2 -> rack-front-connector1.axlehole1 LOCKED
+CONNECT rack-front-axle2.axle2 -> rack-front-connector2.axlehole1 LOCKED
+WHY Fits two black axles and grey perpendicular connectors into the extended front crossbar.
+
+STEP 806
+ADD rack-front-spacer1 18654 black
+ADD rack-front-spacer2 18654 black
+ADD rack-front-elbow1 25214 black
+ADD rack-front-elbow2 25214 black
+CONNECT rack-front-axle1.axle3 -> rack-front-spacer1.hole1 TURNS
+CONNECT rack-front-axle2.axle3 -> rack-front-spacer2.hole1 TURNS
+CONNECT rack-front-axle1.axle4 -> rack-front-elbow1.? LOCKED
+CONNECT rack-front-axle2.axle4 -> rack-front-elbow2.? LOCKED
+END
+WHY Caps both ends of the front crossbar with black spacers and curved elbow tubes.
+
+STEP 807
+ATTACH rack-front-crossbar
+CONNECT rack-front-red1.axle2 -> rack-front-elbow1.? LOCKED
+CONNECT rack-front-red2.axle2 -> rack-front-elbow2.? LOCKED
+WHY Joins the front crossbar to the two projecting red side axles, closing the roof rack's rectangular perimeter.
