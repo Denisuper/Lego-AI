@@ -6308,27 +6308,27 @@ STEP 612
 ADD p32126-1 32126 black
 ADD p4274-42 4274 lightgray
 CONNECT p32062-52.axle1 -> p32126-1.axlehole1 LOCKED
-CONNECT p4274-42.pin2 -> p32126-1.hole1~ TURNS
-WHY Fits the first black hinged axle connector to the red rail end and inserts a grey smooth half pin into its hinge bore. Half-pin engagement depth is estimated.
+CONNECT p4274-42.pin2 -> p32126-1.hole1 TURNS
+WHY Fits the first black hinged axle connector to the red rail end and inserts a grey smooth half pin into its hinge bore. The inset shows the half pin seated in the hinge bore.
 
 STEP 613
 ADD p3706-13 3706 black
 ADD p32126-3 32126 black
 ADD p32126-4 32126 black
-CONNECT p3706-13.axle1 -> p32126-3.axlehole1~ LOCKED
+CONNECT p3706-13.axle1 -> p32126-3.axlehole1 LOCKED
 CONNECT p3706-13.axle6 -> p32126-4.axlehole1 LOCKED
-CONNECT p4274-42.pin1 -> p32126-4.hole1~ TURNS
-WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, then joins one connector to the waiting grey half-pin pivot. The upper shaft and half-pin seating are estimated.
+CONNECT p4274-42.pin1 -> p32126-4.hole1 TURNS
+WHY Builds the sloping window rail from a black six-stud axle with a hinged connector at each end, then joins one connector to the waiting grey half-pin pivot. The inset shows the six-stud axle keyed into both hinges and the hinge pair seated on the half pin.
 
 STEP 614
 ADD p32126-2 32126 black
 ADD p32062-53 32062 red
 ADD p4274-43 4274 lightgray
 CONNECT p32062-53.axle2 -> p32126-2.axlehole1 LOCKED
-CONNECT p4274-43.pin2 -> p32126-2.hole1~ TURNS
-CONNECT p4274-43.pin1 -> p32126-3.hole1~ TURNS
+CONNECT p4274-43.pin2 -> p32126-2.hole1 TURNS
+CONNECT p4274-43.pin1 -> p32126-3.hole1 TURNS
 END
-WHY Builds the remaining lower hinge with a red axle and grey smooth half pin, then joins it to the sloping rail end. The half-pin hinge seats are estimated.
+WHY Builds the remaining lower hinge with a red axle and grey smooth half pin, then joins it to the sloping rail end. The inset shows the half pin seated between the two hinge halves.
 
 STEP 615
 ATTACH first-door-window-frame
@@ -6345,8 +6345,8 @@ CONNECT p18677-9.? -> p30602-1.? STIFF
 CONNECT p3023-2.? -> p30602-1.? STIFF
 CONNECT p3023-2.? -> p18677-9.? STIFF
 CONNECT p43093-76.pin1 -> p18677-9.? STIFF
-CONNECT p43093-76.axle1 -> p6632-4.axlehole1~ LOCKED
-WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; thin-lever seating is estimated.
+CONNECT p43093-76.axle1 -> p6632-4.axlehole1 LOCKED
+WHY Builds the black side mirror from the curved shell, modified pin-hole plate and ordinary plate. Adds a blue axle-pin to its underside and keys the cross end into the free thin latch-lever socket. Stud and modified-plate interfaces are unnamed; the inset shows the blue cross end seated in the thin lever.
 
 STEP 617
 ADD p32140-29 32140 lightgray

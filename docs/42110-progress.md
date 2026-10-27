@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 596 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 874 unknown and 590 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -83,3 +83,5 @@ The mirrored step 666?667 bumper-end insets show both friction pins through the 
 Steps 668?670 show the central bumper mount and both mirrored layered lamp blocks in enlarged subassembly insets, resolving twelve previous pin and axle contact estimates.
 
 The enlarged source inset at step 583 shows the two stopped brown shafts keyed into the flexible black connectors and passing through the pivot links introduced at step 582. Those four axle contacts are now specified; the flexible connectors can still bend as the roof moves.
+
+Source steps 612-614 show the window hinge half pins seated and the six-stud axle keyed into both hinge ends; step 616 shows the mirror axle-pin keyed into the thin lever introduced at step 598. Six previously estimated contacts are specified.
