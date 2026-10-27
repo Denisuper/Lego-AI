@@ -8654,7 +8654,10 @@ WHY Clips the lid hinge plates into the two case hinge bases and checks that the
 
 STEP 857
 ATTACH roof-storage-case
-WHY Places the closed storage case onto the roof rack; the exact connection points are not named in the available catalog.
+CONNECT case-base.? -> rack-load-half1.? STIFF
+CONNECT case-base.? -> rack-load-half2.? STIFF
+CONNECT case-base.? -> rack-load-half3.? STIFF
+WHY Fits the closed storage case over the three half-pin studs on the roof bracket; the plate clutch points are not named in the available catalog.
 
 STEP 858
 ADD rack-load-plate1 3023 darkgray
@@ -8678,8 +8681,7 @@ CONNECT rack-load-clip-pin1.pin2 -> rack-load-upper-connector.?
 CONNECT rack-load-clip-pin2.pin2 -> rack-load-side-connector.?
 CONNECT rack-load-axlepin1.pin1 -> rack-load-upper-connector.?
 CONNECT rack-load-axlepin2.pin1 -> rack-load-side-connector.?
-CONNECT rack-load-brick.? -> rack-load-bracket.?
-WHY Builds the rack accessory support from stacked grey plates and a Technic brick, pins side brackets to it and leaves two upright black axle-pins for the next panels.
+WHY Builds the rack accessory support from stacked grey plates and a Technic brick, pins side brackets to it and leaves two upright black axle-pins for the next panels. Its receiving point on the roof remains unresolved.
 
 STEP 859
 ADD rack-load-panel1 64782 lightgray
