@@ -33,3 +33,5 @@ Tracing the step 845 bracket forward to steps 857-858 shows that the storage cas
 Tracing the identical step 77 pivot connector pair into the same-oriented step 114 nine-hole braces resolves the second brace joins to holes 5 and 6, matching the first side.
 
 The enlarged source view at step 194 shows the black friction pins and blue long pins fully seated in their guide blocks. Six pin-depth estimates based only on the geometric reference offset were removed in favor of the booklet.
+
+A source review compared the part callouts, order and selected joins for steps 1-257 (printed pages 6-141), including the rear differential, front axle, gearbox and engine guide. It is not a full geometry proof: unresolved and estimated endpoints remain, and the rest of the booklet has not received the same review.
