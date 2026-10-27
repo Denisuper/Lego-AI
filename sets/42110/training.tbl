@@ -2902,10 +2902,10 @@ ADD p4274-10 4274 lightgray
 ADD steering-bracket-second-half-pin 4274 lightgray
 ADD p98138-4 98138 black
 CONNECT p4274-10.pin2~ -> p32140-10.hole4 TURNS
-CONNECT steering-bracket-second-half-pin.pin2~ -> p32140-10.? TURNS
+CONNECT steering-bracket-second-half-pin.pin2~ -> p32140-10.hole1 TURNS
 CONNECT p98138-4.? -> p4274-10.? STIFF
 CONNECT p18651-4.pin1 -> p32140-10.hole3 STIFF
-WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The booklet specifies two half pins while the geometric reference includes only one here; the second receiving hole remains explicitly unresolved. Half-pin seating and the ordinary tile clutch are also marked as uncertain.
+WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The enlarged booklet view places the second half pin in the first round hole next to the beam cross hole; the geometric reference includes only one half pin. Half-pin seating and the ordinary tile clutch remain uncertain.
 
 STEP 284
 END

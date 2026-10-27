@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 704 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 704 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -14,7 +14,7 @@ Source steps 152 and 154 introduce the two complete grey soft-spring shocks (761
 
 The notation checker now accepts MESH for the existing gear-rack part type without requiring a rotary tooth count. Source step 189 shows the twelve-tooth steering pinion engaging rack 87761. Regression checks cover that valid mesh and a smooth beam that must still be rejected; all eleven checker tests pass.
 
-At source step 283, the booklet specifies two grey 4274 half pins but the geometric reference contains only one at this bracket. The additional instance is retained as steering-bracket-second-half-pin, with its receiving hole unresolved instead of omitted or assigned an invented exact hole. The bracket and steering-wheel tile clutches also remain explicitly unnamed.
+At source step 283, the booklet specifies two grey 4274 half pins but the geometric reference contains only one at this bracket. The additional instance is retained as steering-bracket-second-half-pin. The enlarged step 283 image shows it in the first round hole beside the L-beam cross hole; its seating depth remains estimated. The bracket and steering-wheel tile clutches also remain explicitly unnamed.
 
 Source steps 352-356 use one black T bracket, four short black 2780 pins and one long black 32054 pin for the right forward side frame. The geometric reference instead mirrors the left bracket with four blue 6558 pins and an extra T bracket. The training follows the booklet, omits reference-only 60484-9 and 6558-56 through 6558-59, and names the five actual black pins explicitly; their seating remains estimated. Source steps 348 and 362 each add a black upright pin absent from the reference model, retained with unresolved receiving-hole labels.
 
