@@ -6299,3 +6299,6 @@ CONNECT fgr-axle-2.? -> fgr-dish-2.?
 CONNECT fgr-tile-2.? -> fgr-axle-2.?
 CONNECT fgr-axle10-2.? -> fgr-axle-2.?
 WHY Builds two matching black round bases and fits the red marker poles to them.
+
+STEP 640
+WHY Shows the completed truck and the four course marker flags.
