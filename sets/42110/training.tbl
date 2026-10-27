@@ -3271,9 +3271,9 @@ STEP 320
 ADD p32526-4 32526 black
 ADD p6558-48 6558 blue
 CONNECT p6558-48.pin2 -> p32526-4.hole7 STIFF
-CONNECT p11214-3.pin2~ -> p32526-4.hole5 STIFF
+CONNECT p11214-3.pin2 -> p32526-4.hole5 STIFF
 CONNECT p6558-48.pin3 -> p41239-2.hole12 STIFF
-WHY Fits a black bent seven-hole upright with a blue long pin to the right side, engaging the waiting red pin through its lower mounting hole and the blue pin in the black side rail. The right red pin seating remains estimated.
+WHY Fits a black bent seven-hole upright with a blue long pin to the right side, engaging the waiting red pin through its lower mounting hole and the blue pin in the black side rail. The paired red pin and upright are seated in the same way as on the opposite side.
 
 STEP 321
 ADD p32526-5 32526 black
