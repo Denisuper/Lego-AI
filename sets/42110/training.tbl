@@ -7717,3 +7717,225 @@ WHY Raises the black windshield upright to the front roof edge and aligns its to
 STEP 763
 ADD windshield-a-roof-axle 4519 lightgray
 WHY Inserts a grey three-stud axle into the indicated side connection beside the raised windshield support; the receiving connector is not resolved.
+
+STEP 764
+GROUP second-front-fender-rail
+ADD fender-b-end 60483 black
+ADD fender-b-end-pin 2780 black
+CONNECT fender-b-end-pin.pin1 -> fender-b-end.hole1 STIFF
+WHY Starts the second front fender rail with a black two-hole connector and a black friction pin.
+
+STEP 765
+ADD fender-b-beam1 32524 olivegreen
+ADD fender-b-stop-axle 6587 darktan
+CONNECT fender-b-end-pin.pin2 -> fender-b-beam1.hole6~ STIFF
+CONNECT fender-b-stop-axle.axle1 -> fender-b-end.axlehole1 LOCKED
+CONNECT fender-b-stop-axle.axle2 -> fender-b-beam1.hole7 TURNS
+WHY Adds a seven-hole olive beam and a tan stopped axle through the black end block to locate the fender rail.
+
+STEP 766
+ADD fender-b-upright 32034 black
+ADD fender-b-upright-foot 22961 black
+CONNECT fender-b-upright-foot.axle1 -> fender-b-upright.axlehole1 LOCKED
+CONNECT fender-b-stop-axle.axle3 -> fender-b-upright.axlehole2 LOCKED
+WHY Builds a black upright from an axle connector and perpendicular axle-pin hub, then keys it onto the exposed stopped axle below the end block.
+
+STEP 767
+ADD fender-b-cross1 32184 darkgray
+ADD fender-b-cross1-pin1 43093 blue
+ADD fender-b-cross1-pin2 43093 blue
+CONNECT fender-b-cross1-pin1.axle1 -> fender-b-cross1.axlehole1 LOCKED
+CONNECT fender-b-cross1-pin2.axle1 -> fender-b-cross1.axlehole2 LOCKED
+CONNECT fender-b-cross1-pin1.pin1 -> fender-b-beam1.hole3~ STIFF
+CONNECT fender-b-cross1-pin2.pin1 -> fender-b-beam1.hole5~ STIFF
+WHY Mounts a dark-grey three-length cross connector beneath the olive beam with two blue axle-pins.
+
+STEP 768
+ADD fender-b-bridge 32316 black
+ADD fender-b-bridge-pin1 2780 black
+ADD fender-b-bridge-pin2 2780 black
+CONNECT fender-b-bridge-pin1.pin1 -> fender-b-bridge.hole4 STIFF
+CONNECT fender-b-bridge-pin2.pin1 -> fender-b-bridge.hole5 STIFF
+CONNECT fender-b-bridge-pin1.pin2 -> fender-b-beam1.hole1~ STIFF
+CONNECT fender-b-bridge-pin2.pin2 -> fender-b-beam1.hole2~ STIFF
+WHY Adds a black five-hole bridge beam on two black pins, extending the fender rail beyond the first olive beam.
+
+STEP 769
+ADD fender-b-beam2 32524 olivegreen
+ADD fender-b-beam2-pin1 2780 black
+ADD fender-b-beam2-pin2 2780 black
+CONNECT fender-b-beam2-pin1.pin1 -> fender-b-beam2.hole1 STIFF
+CONNECT fender-b-beam2-pin2.pin1 -> fender-b-beam2.hole3 STIFF
+CONNECT fender-b-beam2-pin1.pin2 -> fender-b-bridge.hole2~ STIFF
+CONNECT fender-b-beam2-pin2.pin2 -> fender-b-bridge.hole4~ STIFF
+WHY Pins a second seven-hole olive beam to the black bridge, extending the fender rail.
+
+STEP 770
+ADD fender-b-cross2 32184 darkgray
+ADD fender-b-cross2-pin1 43093 blue
+ADD fender-b-cross2-pin2 43093 blue
+CONNECT fender-b-cross2-pin1.axle1 -> fender-b-cross2.axlehole1 LOCKED
+CONNECT fender-b-cross2-pin2.axle1 -> fender-b-cross2.axlehole2 LOCKED
+CONNECT fender-b-cross2-pin1.pin1 -> fender-b-beam2.hole4~ STIFF
+CONNECT fender-b-cross2-pin2.pin1 -> fender-b-beam2.hole6~ STIFF
+WHY Adds the second dark-grey cross connector underneath the extended rail using two blue axle-pins.
+
+STEP 771
+ADD fender-b-halfpin1 4274 lightgray
+ADD fender-b-halfpin2 4274 lightgray
+ADD fender-b-halfpin3 4274 lightgray
+CONNECT fender-b-halfpin1.pin1 -> fender-b-beam1.hole4~ TURNS
+CONNECT fender-b-halfpin2.pin1 -> fender-b-beam2.hole2~ TURNS
+CONNECT fender-b-halfpin3.pin1 -> fender-b-beam2.hole5~ TURNS
+WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
+
+STEP 772
+ADD fender-b-mount-pin1 6558 blue
+ADD fender-b-mount-pin2 6558 blue
+CONNECT fender-b-mount-pin1.pin1 -> fender-b-cross1.hole1 STIFF
+CONNECT fender-b-mount-pin2.pin1 -> fender-b-cross2.hole1 STIFF
+END
+WHY Inserts two blue long pins outward through the dark-grey connectors to mount the wheel arch.
+
+STEP 773
+ATTACH second-front-fender-rail
+CONNECT fender-b-upright-foot.? -> hood-support-b-double.?
+WHY Places the completed second fender rail along the engine bay and aligns the upright foot with the lower chassis mounting point.
+
+STEP 774
+ADD fender-b-bar-pin 61184 lightgray
+CONNECT fender-b-bar-pin.pin1 -> fender-b-beam2.hole7~ STIFF
+WHY Pushes a grey half pin with a two-stud bar extension down into the highlighted forward rail hole.
+
+STEP 775
+ADD fender-b-arch 46882 olivegreen
+CONNECT fender-b-mount-pin1.pin3 -> fender-b-arch.? STIFF
+CONNECT fender-b-mount-pin2.pin3 -> fender-b-arch.? STIFF
+WHY Fits the olive front wheel arch over the two projecting blue long pins.
+
+STEP 776
+ADD fender-b-trim-plate1 3034 olivegreen
+ADD fender-b-trim-plate2 3666 olivegreen
+ADD fender-b-trim-slope1 85984 olivegreen
+ADD fender-b-trim-slope2 85984 olivegreen
+ADD fender-b-trim-slope3 85984 olivegreen
+ADD fender-b-trim-slope4 85984 olivegreen
+ADD fender-b-trim-slope5 85984 olivegreen
+ADD fender-b-trim-cheese 54200 olivegreen
+CONNECT fender-b-trim-slope1.? -> fender-b-trim-plate1.?
+CONNECT fender-b-trim-slope2.? -> fender-b-trim-plate1.?
+CONNECT fender-b-trim-slope3.? -> fender-b-trim-plate1.?
+CONNECT fender-b-trim-slope4.? -> fender-b-trim-plate2.?
+CONNECT fender-b-trim-slope5.? -> fender-b-trim-plate2.?
+CONNECT fender-b-trim-cheese.? -> fender-b-trim-plate2.?
+CONNECT fender-b-trim-plate1.? -> fender-b-halfpin1.?
+CONNECT fender-b-trim-plate2.? -> fender-b-halfpin3.?
+WHY Builds the long olive curved trim strip from plates and slopes and presses it onto the half pins above the wheel arch.
+
+STEP 777
+ADD fender-b-corner-plate 26601 olivegreen
+ADD fender-b-corner-slope 85984 olivegreen
+ADD fender-b-corner-cheese 54200 olivegreen
+CONNECT fender-b-corner-slope.? -> fender-b-corner-plate.?
+CONNECT fender-b-corner-cheese.? -> fender-b-corner-plate.?
+CONNECT fender-b-corner-plate.? -> fender-b-bar-pin.?
+WHY Builds the small angled olive trim corner and fits it to the front end of the fender strip beside the headlight.
+
+STEP 778
+GROUP second-windshield-side
+ADD windshield-b-rail 32278 olivegreen
+ADD windshield-b-rail-pin1 2780 black
+ADD windshield-b-rail-pin2 2780 black
+ADD windshield-b-rail-smooth1 3673 lightgray
+ADD windshield-b-rail-smooth2 3673 lightgray
+CONNECT windshield-b-rail-pin1.pin1 -> windshield-b-rail.hole4~ STIFF
+CONNECT windshield-b-rail-pin2.pin1 -> windshield-b-rail.hole12~ STIFF
+CONNECT windshield-b-rail-smooth1.pin1 -> windshield-b-rail.hole7~ TURNS
+CONNECT windshield-b-rail-smooth2.pin1 -> windshield-b-rail.hole9~ TURNS
+WHY Starts the second windshield side and hood trim with a stickered olive fifteen-hole beam, two black friction pins and two smooth grey pins.
+
+STEP 779
+ADD windshield-b-short-rail 32524 olivegreen
+ADD windshield-b-short-pin1 2780 black
+ADD windshield-b-short-pin2 2780 black
+CONNECT windshield-b-short-pin1.pin1 -> windshield-b-short-rail.hole1 STIFF
+CONNECT windshield-b-short-pin2.pin1 -> windshield-b-short-rail.hole7 STIFF
+CONNECT windshield-b-short-pin1.pin2 -> windshield-b-rail.hole8~ STIFF
+CONNECT windshield-b-short-pin2.pin2 -> windshield-b-rail.hole14~ STIFF
+WHY Fits the stickered olive seven-hole beam alongside the longer rail on two black pins.
+
+STEP 780
+ADD windshield-b-bracket 32526 olivegreen
+ADD windshield-b-double 32291 red
+ADD windshield-b-bracket-axle 4519 lightgray
+ADD windshield-b-bracket-pin1 2780 black
+ADD windshield-b-bracket-pin2 2780 black
+CONNECT windshield-b-bracket-axle.axle1 -> windshield-b-double.axlehole1 LOCKED
+CONNECT windshield-b-bracket-pin1.pin1 -> windshield-b-double.hole1 STIFF
+CONNECT windshield-b-bracket-pin2.pin1 -> windshield-b-double.hole2 STIFF
+CONNECT windshield-b-bracket-pin1.pin2 -> windshield-b-bracket.hole1~ STIFF
+CONNECT windshield-b-bracket-pin2.pin2 -> windshield-b-bracket.hole2~ STIFF
+CONNECT windshield-b-bracket.? -> windshield-b-rail.?
+WHY Builds a stickered olive L bracket on a red double connector and grey axle, then attaches it beneath the side rail with its axle projecting downward.
+
+STEP 781
+ADD windshield-b-tip-block 60483 olivegreen
+ADD windshield-b-tip-axle 4519 lightgray
+ADD windshield-b-tip-pin 6558 blue
+CONNECT windshield-b-tip-axle.axle1 -> windshield-b-tip-block.axlehole1 LOCKED
+CONNECT windshield-b-tip-pin.pin1 -> windshield-b-tip-block.hole1 STIFF
+CONNECT windshield-b-tip-pin.pin2 -> windshield-b-rail.hole1~ STIFF
+WHY Adds an olive two-hole block with a grey axle and blue long pin to the forward tip of the windshield side rail.
+
+STEP 782
+ADD windshield-b-tip-cap 60483 olivegreen
+ADD windshield-b-tip-spacer 18654 olivegreen
+CONNECT windshield-b-tip-axle.axle2 -> windshield-b-tip-cap.axlehole1 LOCKED
+CONNECT windshield-b-tip-pin.pin3 -> windshield-b-tip-cap.hole1 STIFF
+CONNECT windshield-b-tip-axle.axle3 -> windshield-b-tip-spacer.hole1 TURNS
+WHY Caps the tip with another olive two-hole connector and a round spacer, completing the side assembly.
+
+STEP 783
+ADD windshield-b-upright 40490 black
+ADD windshield-b-upright-half1 4274 lightgray
+ADD windshield-b-upright-half2 4274 lightgray
+CONNECT windshield-b-upright-half1.pin1 -> windshield-b-upright.hole3 TURNS
+CONNECT windshield-b-upright-half2.pin1 -> windshield-b-upright.hole8 TURNS
+ADD windshield-b-upright-tile 6636 black
+CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half1.?
+CONNECT windshield-b-upright-tile.? -> windshield-b-upright-half2.?
+ADD windshield-b-upright-arm 32278 olivegreen
+ADD windshield-b-upright-pivot 3673 lightgray
+CONNECT windshield-b-upright-pivot.pin1 -> windshield-b-upright-arm.hole14~ TURNS
+CONNECT windshield-b-upright-pivot.pin2 -> windshield-b-upright.hole1~ TURNS
+CONNECT windshield-b-rail-smooth1.pin2 -> windshield-b-upright-arm.hole4~ TURNS
+CONNECT windshield-b-rail-smooth2.pin2 -> windshield-b-upright-arm.hole6~ TURNS
+END
+WHY Builds the second stickered black windshield upright with two half pins, a tile, an olive arm and a smooth pivot, then fits it to the mirrored side rail.
+
+STEP 784
+ATTACH second-windshield-side
+CONNECT windshield-b-bracket-axle.axle2 -> fender-b-beam2.hole7~ TURNS
+WHY Lowers the completed side assembly onto the front fender, aligning its downward grey axle with the indicated fender point and leaving the upright raised.
+
+STEP 785
+WHY Raises the black windshield upright to the front roof edge and aligns its top hole with the highlighted roof connection; the exact roof endpoint remains unresolved.
+
+STEP 786
+ADD windshield-b-roof-axle 4519 lightgray
+WHY Inserts a grey three-stud axle into the indicated side connection beside the raised windshield support; the receiving connector is not resolved.
+
+STEP 787
+ADD windshield-side-slope-a 85984 olivegreen
+ADD windshield-side-slope-b 85984 olivegreen
+CONNECT windshield-side-slope-a.? -> fender-a-trim-plate2.?
+CONNECT windshield-side-slope-b.? -> fender-b-trim-plate2.?
+WHY Turns the vehicle and adds an olive sloped brick at the rear of each front fender trim beside the windshield.
+
+STEP 788
+ADD roof-steering-gear 18575 black
+ADD roof-steering-axle 15462 brown
+ADD roof-steering-bush 3713 lightgray
+CONNECT roof-steering-axle.axle2 -> roof-steering-gear.axlehole1 LOCKED
+CONNECT roof-steering-axle.axle1 -> roof-steering-bush.axlehole1 LOCKED
+WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle and inserts the shaft into the roof steering access; its internal receiving point remains unresolved.
