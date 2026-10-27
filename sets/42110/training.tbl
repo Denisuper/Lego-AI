@@ -7513,7 +7513,7 @@ WHY Starts the first front fender rail with a black two-hole connector and a bla
 STEP 739
 ADD fender-a-beam1 32524 olivegreen
 ADD fender-a-stop-axle 6587 darktan
-CONNECT fender-a-end-pin.pin2 -> fender-a-beam1.hole6~ STIFF
+CONNECT fender-a-end-pin.pin2 -> fender-a-beam1.hole6 STIFF
 CONNECT fender-a-stop-axle.axle1 -> fender-a-end.axlehole1 LOCKED
 CONNECT fender-a-stop-axle.axle2 -> fender-a-beam1.hole7 TURNS
 WHY Adds a seven-hole olive beam and a tan stopped axle through the black end block to locate the fender rail.
@@ -7531,8 +7531,8 @@ ADD fender-a-cross1-pin1 43093 blue
 ADD fender-a-cross1-pin2 43093 blue
 CONNECT fender-a-cross1-pin1.axle1 -> fender-a-cross1.axlehole1 LOCKED
 CONNECT fender-a-cross1-pin2.axle1 -> fender-a-cross1.axlehole2 LOCKED
-CONNECT fender-a-cross1-pin1.pin1 -> fender-a-beam1.hole3~ STIFF
-CONNECT fender-a-cross1-pin2.pin1 -> fender-a-beam1.hole5~ STIFF
+CONNECT fender-a-cross1-pin1.pin1 -> fender-a-beam1.hole3 STIFF
+CONNECT fender-a-cross1-pin2.pin1 -> fender-a-beam1.hole5 STIFF
 WHY Mounts a dark-grey three-length cross connector beneath the olive beam with two blue axle-pins.
 
 STEP 742
@@ -7541,18 +7541,18 @@ ADD fender-a-bridge-pin1 2780 black
 ADD fender-a-bridge-pin2 2780 black
 CONNECT fender-a-bridge-pin1.pin1 -> fender-a-bridge.hole4 STIFF
 CONNECT fender-a-bridge-pin2.pin1 -> fender-a-bridge.hole5 STIFF
-CONNECT fender-a-bridge-pin1.pin2 -> fender-a-beam1.hole1~ STIFF
-CONNECT fender-a-bridge-pin2.pin2 -> fender-a-beam1.hole2~ STIFF
+CONNECT fender-a-bridge-pin1.pin2 -> fender-a-beam1.hole1 STIFF
+CONNECT fender-a-bridge-pin2.pin2 -> fender-a-beam1.hole2 STIFF
 WHY Adds a black five-hole bridge beam on two black pins, extending the fender rail beyond the first olive beam.
 
 STEP 743
 ADD fender-a-beam2 32524 olivegreen
 ADD fender-a-beam2-pin1 2780 black
 ADD fender-a-beam2-pin2 2780 black
-CONNECT fender-a-beam2-pin1.pin1 -> fender-a-beam2.hole1 STIFF
-CONNECT fender-a-beam2-pin2.pin1 -> fender-a-beam2.hole3 STIFF
-CONNECT fender-a-beam2-pin1.pin2 -> fender-a-bridge.hole2~ STIFF
-CONNECT fender-a-beam2-pin2.pin2 -> fender-a-bridge.hole4~ STIFF
+CONNECT fender-a-beam2-pin1.pin1 -> fender-a-beam2.hole5 STIFF
+CONNECT fender-a-beam2-pin2.pin1 -> fender-a-beam2.hole7 STIFF
+CONNECT fender-a-beam2-pin1.pin2 -> fender-a-bridge.hole1 STIFF
+CONNECT fender-a-beam2-pin2.pin2 -> fender-a-bridge.hole3 STIFF
 WHY Pins a second seven-hole olive beam to the black bridge, extending the fender rail.
 
 STEP 744
@@ -7561,8 +7561,8 @@ ADD fender-a-cross2-pin1 43093 blue
 ADD fender-a-cross2-pin2 43093 blue
 CONNECT fender-a-cross2-pin1.axle1 -> fender-a-cross2.axlehole1 LOCKED
 CONNECT fender-a-cross2-pin2.axle1 -> fender-a-cross2.axlehole2 LOCKED
-CONNECT fender-a-cross2-pin1.pin1 -> fender-a-beam2.hole4~ STIFF
-CONNECT fender-a-cross2-pin2.pin1 -> fender-a-beam2.hole6~ STIFF
+CONNECT fender-a-cross2-pin1.pin1 -> fender-a-beam2.hole2 STIFF
+CONNECT fender-a-cross2-pin2.pin1 -> fender-a-beam2.hole4 STIFF
 WHY Adds the second dark-grey cross connector underneath the extended rail using two blue axle-pins.
 
 STEP 745
@@ -7570,8 +7570,8 @@ ADD fender-a-halfpin1 4274 lightgray
 ADD fender-a-halfpin2 4274 lightgray
 ADD fender-a-halfpin3 4274 lightgray
 CONNECT fender-a-halfpin1.pin2 -> fender-a-beam1.hole4 TURNS
-CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole2 TURNS
-CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole5 TURNS
+CONNECT fender-a-halfpin2.pin2 -> fender-a-beam2.hole3 TURNS
+CONNECT fender-a-halfpin3.pin2 -> fender-a-beam2.hole6 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 746
@@ -7589,7 +7589,7 @@ WHY Places the completed first fender rail along the engine bay and aligns the u
 
 STEP 748
 ADD fender-a-bar-pin 61184 lightgray
-CONNECT fender-a-bar-pin.pin1 -> fender-a-beam2.hole7~ STIFF
+CONNECT fender-a-bar-pin.pin1 -> fender-a-beam2.hole1 STIFF
 WHY Pushes a grey half pin with a two-stud bar extension down into the highlighted forward rail hole.
 
 STEP 749
@@ -7732,7 +7732,7 @@ WHY Starts the second front fender rail with a black two-hole connector and a bl
 STEP 765
 ADD fender-b-beam1 32524 olivegreen
 ADD fender-b-stop-axle 6587 darktan
-CONNECT fender-b-end-pin.pin2 -> fender-b-beam1.hole6~ STIFF
+CONNECT fender-b-end-pin.pin2 -> fender-b-beam1.hole6 STIFF
 CONNECT fender-b-stop-axle.axle1 -> fender-b-end.axlehole1 LOCKED
 CONNECT fender-b-stop-axle.axle2 -> fender-b-beam1.hole7 TURNS
 WHY Adds a seven-hole olive beam and a tan stopped axle through the black end block to locate the fender rail.
@@ -7750,8 +7750,8 @@ ADD fender-b-cross1-pin1 43093 blue
 ADD fender-b-cross1-pin2 43093 blue
 CONNECT fender-b-cross1-pin1.axle1 -> fender-b-cross1.axlehole1 LOCKED
 CONNECT fender-b-cross1-pin2.axle1 -> fender-b-cross1.axlehole2 LOCKED
-CONNECT fender-b-cross1-pin1.pin1 -> fender-b-beam1.hole3~ STIFF
-CONNECT fender-b-cross1-pin2.pin1 -> fender-b-beam1.hole5~ STIFF
+CONNECT fender-b-cross1-pin1.pin1 -> fender-b-beam1.hole3 STIFF
+CONNECT fender-b-cross1-pin2.pin1 -> fender-b-beam1.hole5 STIFF
 WHY Mounts a dark-grey three-length cross connector beneath the olive beam with two blue axle-pins.
 
 STEP 768
@@ -7760,18 +7760,18 @@ ADD fender-b-bridge-pin1 2780 black
 ADD fender-b-bridge-pin2 2780 black
 CONNECT fender-b-bridge-pin1.pin1 -> fender-b-bridge.hole4 STIFF
 CONNECT fender-b-bridge-pin2.pin1 -> fender-b-bridge.hole5 STIFF
-CONNECT fender-b-bridge-pin1.pin2 -> fender-b-beam1.hole1~ STIFF
-CONNECT fender-b-bridge-pin2.pin2 -> fender-b-beam1.hole2~ STIFF
+CONNECT fender-b-bridge-pin1.pin2 -> fender-b-beam1.hole1 STIFF
+CONNECT fender-b-bridge-pin2.pin2 -> fender-b-beam1.hole2 STIFF
 WHY Adds a black five-hole bridge beam on two black pins, extending the fender rail beyond the first olive beam.
 
 STEP 769
 ADD fender-b-beam2 32524 olivegreen
 ADD fender-b-beam2-pin1 2780 black
 ADD fender-b-beam2-pin2 2780 black
-CONNECT fender-b-beam2-pin1.pin1 -> fender-b-beam2.hole1 STIFF
-CONNECT fender-b-beam2-pin2.pin1 -> fender-b-beam2.hole3 STIFF
-CONNECT fender-b-beam2-pin1.pin2 -> fender-b-bridge.hole2~ STIFF
-CONNECT fender-b-beam2-pin2.pin2 -> fender-b-bridge.hole4~ STIFF
+CONNECT fender-b-beam2-pin1.pin1 -> fender-b-beam2.hole5 STIFF
+CONNECT fender-b-beam2-pin2.pin1 -> fender-b-beam2.hole7 STIFF
+CONNECT fender-b-beam2-pin1.pin2 -> fender-b-bridge.hole1 STIFF
+CONNECT fender-b-beam2-pin2.pin2 -> fender-b-bridge.hole3 STIFF
 WHY Pins a second seven-hole olive beam to the black bridge, extending the fender rail.
 
 STEP 770
@@ -7780,8 +7780,8 @@ ADD fender-b-cross2-pin1 43093 blue
 ADD fender-b-cross2-pin2 43093 blue
 CONNECT fender-b-cross2-pin1.axle1 -> fender-b-cross2.axlehole1 LOCKED
 CONNECT fender-b-cross2-pin2.axle1 -> fender-b-cross2.axlehole2 LOCKED
-CONNECT fender-b-cross2-pin1.pin1 -> fender-b-beam2.hole4~ STIFF
-CONNECT fender-b-cross2-pin2.pin1 -> fender-b-beam2.hole6~ STIFF
+CONNECT fender-b-cross2-pin1.pin1 -> fender-b-beam2.hole2 STIFF
+CONNECT fender-b-cross2-pin2.pin1 -> fender-b-beam2.hole4 STIFF
 WHY Adds the second dark-grey cross connector underneath the extended rail using two blue axle-pins.
 
 STEP 771
@@ -7789,8 +7789,8 @@ ADD fender-b-halfpin1 4274 lightgray
 ADD fender-b-halfpin2 4274 lightgray
 ADD fender-b-halfpin3 4274 lightgray
 CONNECT fender-b-halfpin1.pin2 -> fender-b-beam1.hole4 TURNS
-CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole2 TURNS
-CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole5 TURNS
+CONNECT fender-b-halfpin2.pin2 -> fender-b-beam2.hole3 TURNS
+CONNECT fender-b-halfpin3.pin2 -> fender-b-beam2.hole6 TURNS
 WHY Inserts three smooth grey half pins in the indicated top holes to support the later studded trim.
 
 STEP 772
@@ -7808,7 +7808,7 @@ WHY Places the completed second fender rail along the engine bay and aligns the 
 
 STEP 774
 ADD fender-b-bar-pin 61184 lightgray
-CONNECT fender-b-bar-pin.pin1 -> fender-b-beam2.hole7~ STIFF
+CONNECT fender-b-bar-pin.pin1 -> fender-b-beam2.hole1 STIFF
 WHY Pushes a grey half pin with a two-stud bar extension down into the highlighted forward rail hole.
 
 STEP 775

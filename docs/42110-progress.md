@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 572 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 552 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -95,3 +95,5 @@ The headlight insets at steps 680 and 692 show each assembled lamp crossbar seat
 The hood-support steps 705-706 and mirrored steps 712-713 show each olive L beam seated on the earlier black and blue pins, with the blue pin in its short leg. Four estimated pin contacts are specified.
 
 The step-727 inset shows both hood fastener half pins inserted by their long ends, with black tiles on their exposed studs. The two pin ends were reversed in the data and are corrected; the panel hole labels and tile clutch surfaces remain unknown.
+
+The enlarged fender-rail insets at steps 742-745 and mirrored steps 768-771 show the second seven-hole beam bridging the first: its inner pins occupy holes 5 and 7, while the two blue cross-connector pins occupy holes 2 and 4 and the half pins occupy holes 3 and 6. The old data put a second pin into an already occupied bridge hole and used the wrong beam positions. Both sides are corrected, and the forward bar pin at steps 748/774 uses the remaining end hole 1. Hole numbering runs from the free front end of the second beam toward the overlap.
