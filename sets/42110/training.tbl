@@ -2980,11 +2980,11 @@ ADD p4274-11 4274 lightgray
 ADD p4274-12 4274 lightgray
 ADD engine-open-stud-one 85861 lightgray
 ADD engine-open-stud-two 85861 lightgray
-CONNECT p4274-11.pin2~ -> p32034-13.hole1 TURNS
-CONNECT p4274-12.pin2~ -> p32034-14.hole1 TURNS
+CONNECT p4274-11.pin2 -> p32034-13.hole1 TURNS
+CONNECT p4274-12.pin2 -> p32034-14.hole1 TURNS
 CONNECT engine-open-stud-one.? -> p4274-11.? STIFF
 CONNECT engine-open-stud-two.? -> p4274-12.? STIFF
-WHY Fits two grey half pins with grey open-stud round plates into the round holes of the engine side rail. These provide open sockets for the decorative hose connectors that follow; half-pin seating is estimated and ordinary stud clutch surfaces are unnamed.
+WHY Fits two grey half pins with grey open-stud round plates into the round holes of the engine side rail. These provide open sockets for the decorative hose connectors that follow; the source shows both half pins seated, while ordinary stud clutch surfaces are unnamed.
 
 STEP 292
 ADD p3705-12 3705 red
@@ -3098,13 +3098,13 @@ ADD p98138-5 98138 black
 CONNECT p43093-37.axle1 -> engine-curved-elbow.? LOCKED
 CONNECT p43093-38.axle1 -> engine-curved-elbow.? LOCKED
 CONNECT p43093-37.pin1 -> p15100-4.hole1 STIFF
-CONNECT p43093-38.pin1~ -> p62462-1.hole1 STIFF
-CONNECT p4274-13.pin2~ -> p62462-1.hole1 TURNS
+CONNECT p43093-38.pin1 -> p62462-1.hole1 STIFF
+CONNECT p4274-13.pin2 -> p62462-1.hole1 TURNS
 CONNECT p98138-5.? -> p4274-13.? STIFF
 END
 ATTACH engine-curved-pipe
 CONNECT p15100-4.pin1 -> p32034-17.hole1 STIFF
-WHY Builds the grey curved engine pipe using an elbow, two blue axle-pins, a grey perpendicular pin connector and straight pin sleeve, then caps its free end with a grey half pin and black round tile. Attaches the grey friction pin to the black engine-side connector as shown on the following continuation page. The elbow cross sockets and tile clutch are unnamed; sleeve seating is estimated.
+WHY Builds the grey curved engine pipe using an elbow, two blue axle-pins, a grey perpendicular pin connector and straight pin sleeve, then caps its free end with a grey half pin and black round tile. Attaches the grey friction pin to the black engine-side connector as shown on the following continuation page. The elbow cross sockets and tile clutch are unnamed; the two pins enter opposite ends of the sleeve's single cataloged bore.
 
 STEP 304
 ADD p43093-39 43093 blue
@@ -3217,15 +3217,15 @@ ADD p6536-40 6536 darkgray
 ADD p2780-73 2780 black
 ADD p62462-2 62462 lightgray
 ADD p6628-16 6628 red
-CONNECT p2780-73.pin2~ -> p62462-2.hole1 STIFF
-CONNECT p6628-16.pin1~ -> p62462-2.hole1 STIFF
+CONNECT p2780-73.pin2 -> p62462-2.hole1 STIFF
+CONNECT p6628-16.pin1 -> p62462-2.hole1 STIFF
 CONNECT p2780-73.pin1 -> p6536-40.hole1 STIFF
 CONNECT p15462-16.axle5~ -> p6536-40.axlehole1 LOCKED
 CONNECT p15462-16.axle4~ -> p32039-5.axlehole1 LOCKED
 CONNECT p32062-23.axle1 -> p32039-5.axlehole2 LOCKED
 CONNECT p15462-16.axle3~ -> p32140-12.hole1 TURNS
 CONNECT p15462-16.axle2~ -> p45590-1.axlehole1 LOCKED
-WHY Builds the winch lever from a grey pin sleeve with a red towball and black friction pin, a dark-grey perpendicular connector, a brown stopped axle, a grey axle connector and a red short axle. Threads the brown axle through the round hole of the right grey support into the black flexible connector. The lever and flexible connector turn with the brown shaft while its support bearing stays free; sleeve and shaft seating remain estimated.
+WHY Builds the winch lever from a grey pin sleeve with a red towball and black friction pin, a dark-grey perpendicular connector, a brown stopped axle, a grey axle connector and a red short axle. Threads the brown axle through the round hole of the right grey support into the black flexible connector. The lever and flexible connector turn with the brown shaft while its support bearing stays free; the two pins enter opposite ends of the sleeve, and brown-shaft seating remains estimated.
 
 STEP 315
 GROUP front-upper-crossbar
@@ -3271,9 +3271,9 @@ STEP 320
 ADD p32526-4 32526 black
 ADD p6558-48 6558 blue
 CONNECT p6558-48.pin2 -> p32526-4.hole7 STIFF
-CONNECT p11214-3.pin2~ -> p32526-4.hole5 STIFF
+CONNECT p11214-3.pin2 -> p32526-4.hole5 STIFF
 CONNECT p6558-48.pin3 -> p41239-2.hole12 STIFF
-WHY Fits a black bent seven-hole upright with a blue long pin to the right side, engaging the waiting red pin through its lower mounting hole and the blue pin in the black side rail. The right red pin seating remains estimated.
+WHY Fits a black bent seven-hole upright with a blue long pin to the right side, engaging the waiting red pin through its lower mounting hole and the blue pin in the black side rail. The paired red pin and upright are seated in the same way as on the opposite side.
 
 STEP 321
 ADD p32526-5 32526 black

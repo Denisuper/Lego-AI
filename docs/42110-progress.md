@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 700 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 693 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -34,7 +34,7 @@ Tracing the identical step 77 pivot connector pair into the same-oriented step 1
 
 The enlarged source view at step 194 shows the black friction pins and blue long pins fully seated in their guide blocks. Six pin-depth estimates based only on the geometric reference offset were removed in favor of the booklet.
 
-A source review compared the part callouts, order and selected joins for steps 1-257 (printed pages 6-141), including the rear differential, front axle, gearbox and engine guide. It is not a full geometry proof: unresolved and estimated endpoints remain, and the rest of the booklet has not received the same review.
+A source review compared the part callouts, order and selected joins for steps 1-334 (printed pages 6-202), including the rear differential, front axle, gearbox and engine guide. It is not a full geometry proof: unresolved and estimated endpoints remain, and the rest of the booklet has not received the same review.
 
 The source step 258 inset calls for two identical grey and red pin assemblies seated through the matching beam ends. The second pin seating is now specified like the first rather than relying on an offset in the reference model.
 
@@ -43,3 +43,11 @@ Step 261 shows both identical step-258 pins pushed through the matching engine b
 At step 280 both long side rails fit onto the paired red pins installed at step 258; the illustrated matching seating resolves the second rail connection.
 
 The enlarged step 282-283 insets show the three steering-bracket half pins fully seated in their connector and beam bores. Their tile clutch points remain unnamed.
+
+Step 291 shows the paired half pins fully seated in the engine side connectors introduced at step 197. Their mounting depths are now specified; the open-stud plate clutch points remain unnamed.
+
+The step 303 inset shows the blue axle-pin and capped grey half pin seated in opposite ends of the grey two-length sleeve. Their seating is specified; the catalog names the entire sleeve bore as one point, so the opposite ends are stated in WHY.
+
+The right upright connection at step 320 matches the opposite side shown at step 321 and the paired red pins from step 258; its pin seating is now specified.
+
+The step 314 inset seats the black friction pin and red towball pin from opposite ends of the grey two-length sleeve. These pin depths are now specified; the sleeve has a single cataloged bore, with opposite-end placement described in WHY.
