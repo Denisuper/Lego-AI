@@ -3217,15 +3217,15 @@ ADD p6536-40 6536 darkgray
 ADD p2780-73 2780 black
 ADD p62462-2 62462 lightgray
 ADD p6628-16 6628 red
-CONNECT p2780-73.pin2~ -> p62462-2.hole1 STIFF
-CONNECT p6628-16.pin1~ -> p62462-2.hole1 STIFF
+CONNECT p2780-73.pin2 -> p62462-2.hole1 STIFF
+CONNECT p6628-16.pin1 -> p62462-2.hole1 STIFF
 CONNECT p2780-73.pin1 -> p6536-40.hole1 STIFF
 CONNECT p15462-16.axle5~ -> p6536-40.axlehole1 LOCKED
 CONNECT p15462-16.axle4~ -> p32039-5.axlehole1 LOCKED
 CONNECT p32062-23.axle1 -> p32039-5.axlehole2 LOCKED
 CONNECT p15462-16.axle3~ -> p32140-12.hole1 TURNS
 CONNECT p15462-16.axle2~ -> p45590-1.axlehole1 LOCKED
-WHY Builds the winch lever from a grey pin sleeve with a red towball and black friction pin, a dark-grey perpendicular connector, a brown stopped axle, a grey axle connector and a red short axle. Threads the brown axle through the round hole of the right grey support into the black flexible connector. The lever and flexible connector turn with the brown shaft while its support bearing stays free; sleeve and shaft seating remain estimated.
+WHY Builds the winch lever from a grey pin sleeve with a red towball and black friction pin, a dark-grey perpendicular connector, a brown stopped axle, a grey axle connector and a red short axle. Threads the brown axle through the round hole of the right grey support into the black flexible connector. The lever and flexible connector turn with the brown shaft while its support bearing stays free; the two pins enter opposite ends of the sleeve, and brown-shaft seating remains estimated.
 
 STEP 315
 GROUP front-upper-crossbar
