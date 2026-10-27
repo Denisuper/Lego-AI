@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 867 unknown and 714 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 868 unknown and 715 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -21,3 +21,5 @@ Source steps 352-356 use one black T bracket, four short black 2780 pins and one
 Source step 572 specifies five grey half pins along the front roof trim supports. The reference model omits the centre half pin; it is retained as roof-front-centre-half-pin in the central three-hole beam. Source and inventory take precedence over the geometric model. The rear door latch locating interface at step 496 remains explicitly unresolved in its WHY explanation.
 
 For source step 844, the rear and front rack pins are now linked to the respective rear and front roof panels from source steps 545-546. Their exact panel-hole labels remain unknown. These were previously absent from the attachment record, so recording them increases the count of explicit unknown endpoints by four.
+
+Source step 788 shows the brown gear shaft entering the second roof panel from the front. Tracing the panel sequence back to steps 545-546 identifies that panel as p64782-4; its precise receiving hole and the shaft depth remain unresolved.

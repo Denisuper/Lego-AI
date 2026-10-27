@@ -7938,7 +7938,8 @@ ADD roof-steering-axle 15462 brown
 ADD roof-steering-bush 3713 lightgray
 CONNECT roof-steering-axle.axle2 -> roof-steering-gear.axlehole1 LOCKED
 CONNECT roof-steering-axle.axle1 -> roof-steering-bush.axlehole1 LOCKED
-WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle and inserts the shaft into the roof steering access; its internal receiving point remains unresolved.
+CONNECT roof-steering-axle.axle5~ -> p64782-4.? TURNS
+WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle, then inserts the shaft into the second roof panel from the front; the panel-hole label and shaft depth remain uncertain.
 
 STEP 789
 GROUP roof-rack
