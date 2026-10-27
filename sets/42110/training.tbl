@@ -6197,7 +6197,7 @@ WHY Adds a grey half bush and dark-grey cross connector to the brown pivot axle 
 STEP 598
 ADD p6632-4 6632 black
 ADD p24316-23 24316 brown
-CONNECT p24316-23.axle3 -> p6632-4.axlehole2~ LOCKED
+CONNECT p24316-23.axle3 -> p6632-4.axlehole2 LOCKED
 CONNECT p24316-23.axle2 -> p32525-12.hole10~ TURNS
 CONNECT p24316-23.axle2 -> p41677-13.axlehole1~ LOCKED
 WHY Builds the black thin three-hole latch lever on a brown stopped three-stud axle, then passes the shaft through the next olive rail round hole into the free socket of the dark-grey thin link. This angled latch stack has estimated axial seats.
@@ -6206,10 +6206,10 @@ STEP 599
 ADD p32015-3 32015 darkgray
 ADD p32062-46 32062 red
 ADD p32013-15 32013 darkgray
-CONNECT p32062-46.axle2 -> p32015-3.axlehole2~ LOCKED
+CONNECT p32062-46.axle2 -> p32015-3.axlehole2 LOCKED
 CONNECT p32062-46.axle1 -> p32013-15.axlehole1 LOCKED
 CONNECT p24316-23.axle1 -> p32015-3.axlehole1~ LOCKED
-WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The angled arm and brown shaft seating remain estimated from the articulated position.
+WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The red axle is seated in the angled arm; the brown shaft seating remains estimated.
 
 STEP 600
 ADD p18651-18 18651 black
@@ -6244,10 +6244,10 @@ WHY Extends the exposed lower end of the brown latch pivot axle with a black axl
 STEP 604
 ADD p4519-53 4519 lightgray
 ADD p6632-5 6632 black
-CONNECT p4519-53.axle3 -> p6632-5.axlehole2~ LOCKED
+CONNECT p4519-53.axle3 -> p6632-5.axlehole2 LOCKED
 CONNECT p4519-53.axle2 -> p64782-6.hole34~ TURNS
 CONNECT p4519-53.axle1 -> p32039-8.axlehole1~ LOCKED
-WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. Thin-lever and deep panel/socket seating are estimated.
+WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. The thin lever is seated on the axle; deep panel and socket seating remain estimated.
 
 STEP 605
 ADD p32014-1 32014 black
@@ -6503,7 +6503,7 @@ WHY Adds a grey half bush and dark-grey cross connector to the brown pivot axle 
 STEP 634
 ADD p6632-6 6632 black
 ADD p24316-24 24316 brown
-CONNECT p24316-24.axle3 -> p6632-6.axlehole2~ LOCKED
+CONNECT p24316-24.axle3 -> p6632-6.axlehole2 LOCKED
 CONNECT p24316-24.axle2 -> p32525-13.hole10~ TURNS
 CONNECT p24316-24.axle2 -> p41677-14.axlehole1~ LOCKED
 WHY Builds the black thin three-hole latch lever on a brown stopped three-stud axle, then passes the shaft through the next olive rail round hole into the free socket of the dark-grey thin link. This angled latch stack has estimated axial seats.
@@ -6512,10 +6512,10 @@ STEP 635
 ADD p32015-4 32015 darkgray
 ADD p32062-54 32062 red
 ADD p32013-16 32013 darkgray
-CONNECT p32062-54.axle1 -> p32015-4.axlehole2~ LOCKED
+CONNECT p32062-54.axle1 -> p32015-4.axlehole2 LOCKED
 CONNECT p32062-54.axle2 -> p32013-16.axlehole1 LOCKED
 CONNECT p24316-24.axle1 -> p32015-4.axlehole1~ LOCKED
-WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The angled arm and brown shaft seating remain estimated from the articulated position.
+WHY Builds the dark-grey angled connector and perpendicular connector arm on a red two-stud axle, then keys the free cross socket onto the brown latch shaft. The red axle is seated in the angled arm; the brown shaft seating remains estimated.
 
 STEP 636
 ADD p18651-19 18651 black
@@ -6550,10 +6550,10 @@ WHY Extends the exposed lower end of the brown latch pivot axle with a black axl
 STEP 640
 ADD p4519-55 4519 lightgray
 ADD p6632-7 6632 black
-CONNECT p4519-55.axle1 -> p6632-7.axlehole2~ LOCKED
+CONNECT p4519-55.axle1 -> p6632-7.axlehole2 LOCKED
 CONNECT p4519-55.axle2 -> p64782-7.hole8~ TURNS
 CONNECT p4519-55.axle3 -> p32039-9.axlehole1~ LOCKED
-WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. Thin-lever and deep panel/socket seating are estimated.
+WHY Adds a grey three-stud axle to the thin black three-hole lever, then passes it through the panel face bore into the existing grey perpendicular cross connector. The thin lever is seated on the axle; deep panel and socket seating remain estimated.
 
 STEP 641
 ADD p32014-3 32014 black
