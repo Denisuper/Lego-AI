@@ -3526,8 +3526,8 @@ STEP 348
 ADD p42003-20 42003 lightgray
 ADD left-floor-upright-pin 2780 black
 CONNECT p4519-37.axle2~ -> p42003-20.axlehole1 LOCKED
-CONNECT left-floor-upright-pin.pin2 -> p42003-20.? STIFF
-WHY Fits the grey axle-and-pin connector into the split connector around the grey axle and inserts a black friction pin upright in its round-hole end. The axle seating is estimated and the exact receiving round-hole label for the black pin remains unresolved because it is absent from the geometric reference.
+CONNECT left-floor-upright-pin.pin2 -> p42003-20.hole2 STIFF
+WHY Fits the grey axle-and-pin connector into the split connector around the grey axle and inserts a black friction pin upright in its round-hole end. The pin occupies the end round hole opposite the cross socket, as shown in the inset; the axle seating is estimated.
 
 STEP 349
 ADD p32039-6 32039 lightgray
@@ -3639,8 +3639,8 @@ STEP 362
 ADD p42003-22 42003 lightgray
 ADD right-floor-upright-pin 2780 black
 CONNECT p4519-38.axle1~ -> p42003-22.axlehole1 LOCKED
-CONNECT right-floor-upright-pin.pin2 -> p42003-22.? STIFF
-WHY Fits the grey axle-and-pin connector into the split support around the axle and inserts a black friction pin upright in its round-hole end. The exact black-pin hole label remains unresolved because the geometric reference omits this pin; split-axle seating is estimated.
+CONNECT right-floor-upright-pin.pin2 -> p42003-22.hole2 STIFF
+WHY Fits the grey axle-and-pin connector into the split support around the axle and inserts a black friction pin upright in its round-hole end. The inset shows the pin in the end round hole opposite the cross socket; split-axle seating is estimated.
 
 STEP 363
 ADD p32039-7 32039 lightgray

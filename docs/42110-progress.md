@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 871 unknown and 683 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 869 unknown and 683 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -53,3 +53,5 @@ The right upright connection at step 320 matches the opposite side shown at step
 The step 314 inset seats the black friction pin and red towball pin from opposite ends of the grey two-length sleeve. These pin depths are now specified; the sleeve has a single cataloged bore, with opposite-end placement described in WHY.
 
 The enlarged steps 352-355 show the five black pins fully seated in the T bracket, beam and upper connector. Ten pin-seating estimates caused by the mismatching geometric reference were removed; the red axle positions in the split connector remain estimated.
+
+Source review of the side-floor assembly in steps 348 and 362 resolves the upright friction pins to the outer round holes of their 42003 connectors. Both booklet insets show the pins opposite the axle socket; split-axle seating remains estimated.
