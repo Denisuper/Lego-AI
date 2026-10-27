@@ -794,8 +794,8 @@ ADD p24316-3 24316 brown
 ADD p3713-10 3713 red
 ADD centre-support-pin-one 2780 black
 ADD centre-support-pin-two 2780 black
-CONNECT centre-support-pin-one.pin1 -> p63869-7.? STIFF
-CONNECT centre-support-pin-two.pin1 -> p63869-7.? STIFF
+CONNECT centre-support-pin-one.pin1 -> p63869-7.hole1~ STIFF
+CONNECT centre-support-pin-two.pin1 -> p63869-7.hole3~ STIFF
 CONNECT p3705-2.axle1 -> p63869-7.axlehole1 LOCKED
 CONNECT p3705-2.axle2 -> p63869-6.axlehole1 LOCKED
 CONNECT p3705-2.axle3 -> p6536-15.axlehole1 LOCKED
@@ -808,7 +808,7 @@ CONNECT p18651-1.axle1 -> p6536-14.hole1 TURNS
 CONNECT p3707-1.axle5 -> p63869-6.hole3 TURNS
 CONNECT p32073-3.axle4~ -> p63869-6.hole1 TURNS
 CONNECT p23948-2.axle9 -> p63869-7.hole2 TURNS
-WHY Builds the centre support from two grey triple connectors, two dark-grey perpendicular connectors and a red four-length axle, with two black mounting pins and a retained brown stopped shaft. Fits it over the projecting gearbox shafts and selector axle-pin. The two black pins are present in the booklet but absent from the reference model, so their receiving holes remain unknown; yellow-shaft seating is estimated.
+WHY Builds the centre support from two grey triple connectors, two dark-grey perpendicular connectors and a red four-length axle, with two black mounting pins and a retained brown stopped shaft. Fits it over the projecting gearbox shafts and selector axle-pin. The booklet shows the black pins in the two outer connector holes; their individual left-right names and the yellow-shaft seating are estimated.
 
 STEP 75
 ADD p6573-1 6573 red
@@ -840,10 +840,10 @@ ADD rear-left-lower-pivot-axle-pin 43093 blue
 CONNECT p2780-20.pin2 -> p42003-5.hole1 STIFF
 CONNECT p43093-8.pin1 -> p42003-5.hole2 STIFF
 CONNECT p44294-3.axle7 -> p42003-5.axlehole1 LOCKED
-CONNECT rear-left-lower-pivot-pin.pin1 -> rear-left-lower-pivot-connector.hole1~ STIFF
-CONNECT rear-left-lower-pivot-axle-pin.pin1 -> rear-left-lower-pivot-connector.hole2~ STIFF
-CONNECT p44294-4.axle1 -> rear-left-lower-pivot-connector.axlehole1~ LOCKED
-WHY Builds two grey axle-and-pin end connectors, each carrying a black friction pin and a blue axle-pin, then fits them to the exposed lower suspension pivot shafts on both sides. The booklet shows both assemblies; the left assembly is absent from the reference model, so its mirrored point orientation remains estimated.
+CONNECT rear-left-lower-pivot-pin.pin1 -> rear-left-lower-pivot-connector.hole1 STIFF
+CONNECT rear-left-lower-pivot-axle-pin.pin1 -> rear-left-lower-pivot-connector.hole2 STIFF
+CONNECT p44294-4.axle1 -> rear-left-lower-pivot-connector.axlehole1 LOCKED
+WHY Builds two grey axle-and-pin end connectors, each carrying a black friction pin and a blue axle-pin, then fits them to the exposed lower suspension pivot shafts on both sides. The booklet calls for two identical connector assemblies; the left assembly is absent from the reference model.
 
 STEP 78
 ADD p42003-6 42003 lightgray
@@ -1239,10 +1239,10 @@ CONNECT p43093-8.axle1 -> p40490-5.hole5 TURNS
 CONNECT p2780-20.pin1 -> p40490-5.hole6 STIFF
 CONNECT p6558-12.pin1 -> p40490-5.hole9 STIFF
 CONNECT p2780-38.pin1 -> p40490-6.hole4 STIFF
-CONNECT rear-left-lower-pivot-axle-pin.axle1 -> p40490-6.hole5~ TURNS
-CONNECT rear-left-lower-pivot-pin.pin2 -> p40490-6.hole6~ STIFF
+CONNECT rear-left-lower-pivot-axle-pin.axle1 -> p40490-6.hole5 TURNS
+CONNECT rear-left-lower-pivot-pin.pin2 -> p40490-6.hole6 STIFF
 CONNECT p6558-11.pin1 -> p40490-6.hole9 STIFF
-WHY Adds one black nine-hole vertical brace to each side, fastening them to the waiting black pins, blue axle ends and blue frame pins. One brace carries the pictured black pin and round spacer. The two lower joins on the opposite side use the booklet assemblies missing from the reference model, so their mirrored beam holes remain estimated.
+WHY Adds one black nine-hole vertical brace to each side, fastening them to the waiting black pins, blue axle ends and blue frame pins. One brace carries the pictured black pin and round spacer. The two lower joins on the opposite side use the identical paired connector assemblies from source step 77 and the same beam holes as the first side.
 
 STEP 115
 ADD p32034-8 32034 black
@@ -2036,13 +2036,13 @@ ADD p39793-2 39793 black
 ADD p39793-1 39793 black
 ADD p2780-57 2780 black
 ADD p2780-58 2780 black
-CONNECT p6558-33.pin1~ -> p39793-2.hole9 STIFF
-CONNECT p6558-34.pin1~ -> p39793-2.hole8 STIFF
-CONNECT p2780-57.pin2~ -> p39793-2.hole2 STIFF
-CONNECT p2780-58.pin2~ -> p39793-2.hole1 STIFF
-CONNECT p2780-57.pin1~ -> p39793-1.hole9 STIFF
-CONNECT p2780-58.pin1~ -> p39793-1.hole8 STIFF
-WHY Fits the first black three-cylinder guide block onto the blue pin ends and joins the second guide block to it using two black friction pins, aligning their six piston holes in a straight row. The reference guide-block pin seating is slightly offset and remains estimated.
+CONNECT p6558-33.pin1 -> p39793-2.hole9 STIFF
+CONNECT p6558-34.pin1 -> p39793-2.hole8 STIFF
+CONNECT p2780-57.pin2 -> p39793-2.hole2 STIFF
+CONNECT p2780-58.pin2 -> p39793-2.hole1 STIFF
+CONNECT p2780-57.pin1 -> p39793-1.hole9 STIFF
+CONNECT p2780-58.pin1 -> p39793-1.hole8 STIFF
+WHY Fits the first black three-cylinder guide block onto the blue pin ends and joins the second guide block to it using two black friction pins, aligning their six piston holes in a straight row. The source picture shows the black and blue pins fully seated through their respective guide-block holes.
 
 STEP 195
 ADD p4519-24 4519 lightgray
@@ -2651,9 +2651,9 @@ ADD p11214-3 11214 red
 CONNECT p11214-2.axle1 -> p32054-8.axlehole1 LOCKED
 CONNECT p11214-3.axle1 -> p32054-9.axlehole1 LOCKED
 CONNECT p32054-8.pin1 -> p32278-3.hole1 STIFF
-CONNECT p32054-9.pin1~ -> p32278-4.hole1 STIFF
+CONNECT p32054-9.pin1 -> p32278-4.hole1 STIFF
 END
-WHY Builds two grey pin-and-axle connectors with red long axle-pins and fits their pin ends through the far ends of the two long beams, leaving the red pins pointing outward for later bracing. The right connector seating is slightly offset and remains estimated.
+WHY Builds two grey pin-and-axle connectors with red long axle-pins and fits their pin ends through the far ends of the two long beams, leaving the red pins pointing outward for later bracing. The booklet specifies two identical pin assemblies, seated through the far end holes of the two beams.
 
 STEP 259
 ATTACH central-upper-linkage
@@ -2673,8 +2673,8 @@ WHY Aligns the central gearbox with the engine and front axle module, threading 
 
 STEP 261
 CONNECT p32054-8.pin2 -> p60483-22.hole1 STIFF
-CONNECT p32054-9.pin2~ -> p60483-23.hole1 STIFF
-WHY Presses the two grey connector pins inward through the black engine bearing blocks to secure the gearbox and engine module together. The right pin seating is estimated; the red outer pin ends remain available for the side beams fitted later.
+CONNECT p32054-9.pin2 -> p60483-23.hole1 STIFF
+WHY Presses the two grey connector pins inward through the black engine bearing blocks to secure the gearbox and engine module together. Both pins seat in the engine bearing blocks as shown; the red outer pin ends remain available for the side beams fitted later.
 
 STEP 262
 ADD p32034-15 32034 black
@@ -2869,14 +2869,14 @@ STEP 280
 ADD p41239-2 41239 black
 ADD p41239-3 41239 black
 CONNECT p2780-49.pin1 -> p41239-2.hole1 STIFF
-CONNECT p11214-3.pin1~ -> p41239-2.hole10 STIFF
+CONNECT p11214-3.pin1 -> p41239-2.hole10 STIFF
 CONNECT p6558-35.pin1 -> p41239-2.hole11 STIFF
 CONNECT p87082-7.pin2 -> p41239-2.hole13 STIFF
 CONNECT p2780-50.pin2 -> p41239-3.hole1 STIFF
 CONNECT p11214-2.pin1 -> p41239-3.hole10 STIFF
 CONNECT p6558-36.pin1 -> p41239-3.hole11 STIFF
 CONNECT p87082-6.pin1 -> p41239-3.hole13 STIFF
-WHY Fits black thirteen-hole rails along both sides of the engine and gearbox, engaging the four waiting pin ends on each side. Keep the highlighted universal-joint forks aligned while closing these rails; the right red pin depth remains estimated.
+WHY Fits black thirteen-hole rails along both sides of the engine and gearbox, engaging the four waiting pin ends on each side. Keep the highlighted universal-joint forks aligned while closing both rails onto the paired red pins.
 
 STEP 281
 GROUP steering-column-bracket
@@ -2891,21 +2891,21 @@ STEP 282
 ADD p15100-3 15100 lightgray
 ADD p4274-9 4274 lightgray
 ADD p98138-3 98138 black
-CONNECT p4274-9.pin2~ -> p15100-3.hole1 TURNS
+CONNECT p4274-9.pin2 -> p15100-3.hole1 TURNS
 CONNECT p98138-3.? -> p4274-9.? STIFF
 CONNECT p15100-3.pin1 -> p6536-37.hole1 STIFF
-WHY Builds a grey perpendicular pin connector with a grey half pin and black round tile cap, then fits its friction pin into the first dark-grey connector. The half pin turns in the round bore; its seating is estimated and its stud-to-tile interface is unnamed.
+WHY Builds a grey perpendicular pin connector with a grey half pin and black round tile cap, then fits its friction pin into the first dark-grey connector. The source shows the half pin seated in the round bore; its stud-to-tile interface is unnamed.
 
 STEP 283
 ADD p32140-10 32140 black
 ADD p4274-10 4274 lightgray
 ADD steering-bracket-second-half-pin 4274 lightgray
 ADD p98138-4 98138 black
-CONNECT p4274-10.pin2~ -> p32140-10.hole4 TURNS
-CONNECT steering-bracket-second-half-pin.pin2~ -> p32140-10.? TURNS
+CONNECT p4274-10.pin2 -> p32140-10.hole4 TURNS
+CONNECT steering-bracket-second-half-pin.pin2 -> p32140-10.hole1 TURNS
 CONNECT p98138-4.? -> p4274-10.? STIFF
 CONNECT p18651-4.pin1 -> p32140-10.hole3 STIFF
-WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The booklet specifies two half pins while the geometric reference includes only one here; the second receiving hole remains explicitly unresolved. Half-pin seating and the ordinary tile clutch are also marked as uncertain.
+WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The enlarged booklet view places the second half pin in the first round hole next to the beam cross hole; the geometric reference includes only one half pin. The ordinary tile clutch remains unnamed in the catalog.
 
 STEP 284
 END
@@ -7938,7 +7938,8 @@ ADD roof-steering-axle 15462 brown
 ADD roof-steering-bush 3713 lightgray
 CONNECT roof-steering-axle.axle2 -> roof-steering-gear.axlehole1 LOCKED
 CONNECT roof-steering-axle.axle1 -> roof-steering-bush.axlehole1 LOCKED
-WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle and inserts the shaft into the roof steering access; its internal receiving point remains unresolved.
+CONNECT roof-steering-axle.axle5~ -> p64782-4.? TURNS
+WHY Fits the black twenty-tooth gear and grey bush on a brown five-stud stopped axle, then inserts the shaft into the second roof panel from the front; the panel-hole label and shaft depth remain uncertain.
 
 STEP 789
 GROUP roof-rack
@@ -8509,7 +8510,11 @@ WHY Turns the completed rack over and inserts four black mounting pins into the 
 
 STEP 844
 ATTACH roof-rack
-WHY Lowers the roof rack onto the vehicle roof, with its four pins locating the rack and its ladder and cargo box hanging at the sides; roof receiving holes remain unresolved.
+CONNECT rack-roof-pin1.pin2 -> p64782-2.? STIFF
+CONNECT rack-roof-pin2.pin2 -> p64782-2.? STIFF
+CONNECT rack-roof-pin3.pin2 -> p64782-5.? STIFF
+CONNECT rack-roof-pin4.pin2 -> p64782-5.? STIFF
+WHY Lowers the roof rack onto the rear and front white roof panels using its four mounting pins; the exact panel-hole labels remain unresolved.
 
 STEP 845
 ADD rack-load-bracket 60484 black
@@ -8523,7 +8528,9 @@ CONNECT rack-load-pin2.pin1 -> rack-load-bracket.hole3~ STIFF
 CONNECT rack-load-half1.pin1 -> rack-load-bracket.hole2~ TURNS
 CONNECT rack-load-half2.pin1 -> rack-load-bracket.hole4~ TURNS
 CONNECT rack-load-half3.pin1 -> rack-load-bracket.hole5~ TURNS
-WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then places it on the rack to support the next accessory.
+CONNECT rack-load-pin1.pin2 -> p64782-3.? STIFF
+CONNECT rack-load-pin2.pin2 -> p64782-3.? STIFF
+WHY Builds the black T-shaped load bracket with two friction pins and three grey half pins, then presses its black pins into the roof panel below the rack; the exact panel-hole labels remain unresolved.
 
 STEP 846
 GROUP roof-storage-case
@@ -8589,9 +8596,9 @@ CONNECT case-corner-plate5.? -> case-corner-plate6.?
 CONNECT case-corner4.? -> case-corner-plate7.?
 CONNECT case-corner-plate7.? -> case-corner-plate8.?
 CONNECT case-corner-plate2.? -> case-side-brick1.?
-CONNECT case-corner-plate4.? -> case-side-brick1.?
+CONNECT case-corner-plate4.? -> case-side-brick3.?
 CONNECT case-corner-plate6.? -> case-side-brick2.?
-CONNECT case-corner-plate8.? -> case-side-brick2.?
+CONNECT case-corner-plate8.? -> case-side-brick4.?
 WHY Builds four dark-grey clipped corner units from inverted slopes and stacked one-stud plates, then fits them around the case handles.
 
 STEP 851
@@ -8640,14 +8647,17 @@ WHY Fits two black hinge top plates beneath the lid so it can connect to the cas
 
 STEP 856
 ATTACH roof-storage-lid
-CONNECT case-lid-hinge1.? -> case-hinge-base1.?
-CONNECT case-lid-hinge2.? -> case-hinge-base2.?
+CONNECT case-lid-hinge1.? -> case-hinge-base1.? TURNS
+CONNECT case-lid-hinge2.? -> case-hinge-base2.? TURNS
 END
 WHY Clips the lid hinge plates into the two case hinge bases and checks that the lid opens.
 
 STEP 857
 ATTACH roof-storage-case
-WHY Places the closed storage case onto the roof rack; the exact connection points are not named in the available catalog.
+CONNECT case-base.? -> rack-load-half1.? STIFF
+CONNECT case-base.? -> rack-load-half2.? STIFF
+CONNECT case-base.? -> rack-load-half3.? STIFF
+WHY Fits the closed storage case over the three half-pin studs on the roof bracket; the plate clutch points are not named in the available catalog.
 
 STEP 858
 ADD rack-load-plate1 3023 darkgray
@@ -8671,8 +8681,7 @@ CONNECT rack-load-clip-pin1.pin2 -> rack-load-upper-connector.?
 CONNECT rack-load-clip-pin2.pin2 -> rack-load-side-connector.?
 CONNECT rack-load-axlepin1.pin1 -> rack-load-upper-connector.?
 CONNECT rack-load-axlepin2.pin1 -> rack-load-side-connector.?
-CONNECT rack-load-brick.? -> rack-load-bracket.?
-WHY Builds the rack accessory support from stacked grey plates and a Technic brick, pins side brackets to it and leaves two upright black axle-pins for the next panels.
+WHY Builds the rack accessory support from stacked grey plates and a Technic brick, pins side brackets to it and leaves two upright black axle-pins for the next panels. Its receiving point on the roof remains unresolved.
 
 STEP 859
 ADD rack-load-panel1 64782 lightgray
