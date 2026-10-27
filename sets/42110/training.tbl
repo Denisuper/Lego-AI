@@ -7286,3 +7286,215 @@ ADD hood-vent-b 61409 black
 CONNECT hood-vent-a.? -> hood-vent-base.?
 CONNECT hood-vent-b.? -> hood-vent-base.?
 WHY Builds the small black twin-grille vent and seats it in the pictured recess beside the engine; the stud and receiving interfaces are unnamed.
+
+STEP 718
+GROUP hood
+ADD hood-panel 64782 olivegreen
+ADD hood-panel-pin1 6558 blue
+ADD hood-panel-pin2 6558 blue
+ADD hood-panel-pin3 6558 blue
+ADD hood-panel-pin4 6558 blue
+CONNECT hood-panel-pin1.pin1 -> hood-panel.? STIFF
+CONNECT hood-panel-pin2.pin1 -> hood-panel.? STIFF
+CONNECT hood-panel-pin3.pin1 -> hood-panel.? STIFF
+CONNECT hood-panel-pin4.pin1 -> hood-panel.? STIFF
+WHY Starts the hood with a broad olive panel and four blue long pins projecting from its side holes.
+
+STEP 719
+ADD hood-side-beam-a 32525 olivegreen
+ADD hood-side-beam-b 32525 olivegreen
+CONNECT hood-panel-pin1.pin2 -> hood-side-beam-a.hole3~ STIFF
+CONNECT hood-panel-pin2.pin2 -> hood-side-beam-a.hole9~ STIFF
+CONNECT hood-panel-pin3.pin2 -> hood-side-beam-b.hole3~ STIFF
+CONNECT hood-panel-pin4.pin2 -> hood-side-beam-b.hole9~ STIFF
+WHY Fits an olive eleven-hole beam down each side of the hood panel over the four projecting blue pins.
+
+STEP 720
+ADD hood-hinge-beam-a 32316 olivegreen
+ADD hood-hinge-pin-a 6558 blue
+CONNECT hood-hinge-pin-a.pin1 -> hood-hinge-beam-a.hole1 STIFF
+CONNECT hood-hinge-pin-a.pin2 -> hood-side-beam-a.hole9~ STIFF
+WHY Adds a five-hole olive hinge beam with a blue long pin at one rear corner of the hood, leaving the pin tail exposed.
+
+STEP 721
+ADD hood-brick-a1 32000 darkgray
+ADD hood-brick-a2 32000 darkgray
+ADD hood-brick-pin1 2780 black
+ADD hood-brick-pin2 2780 black
+ADD hood-brick-pin3 2780 black
+ADD hood-brick-pin4 2780 black
+CONNECT hood-brick-pin1.pin1 -> hood-brick-a1.hole1 STIFF
+CONNECT hood-brick-pin2.pin1 -> hood-brick-a1.hole2 STIFF
+CONNECT hood-brick-pin3.pin1 -> hood-brick-a2.hole1 STIFF
+CONNECT hood-brick-pin4.pin1 -> hood-brick-a2.hole2 STIFF
+CONNECT hood-brick-pin1.pin2 -> hood-side-beam-a.hole4~ STIFF
+CONNECT hood-brick-pin2.pin2 -> hood-side-beam-a.hole5~ STIFF
+CONNECT hood-brick-pin3.pin2 -> hood-side-beam-b.hole4~ STIFF
+CONNECT hood-brick-pin4.pin2 -> hood-side-beam-b.hole5~ STIFF
+WHY Pins a dark-grey two-hole Technic brick to each side of the hood so their studs can support the smooth outer skin.
+
+STEP 722
+ADD hood-brick-b1 32000 darkgray
+ADD hood-brick-b2 32000 darkgray
+ADD hood-brick-blue1 6558 blue
+ADD hood-brick-blue2 6558 blue
+CONNECT hood-brick-blue1.pin1 -> hood-brick-b1.hole1 STIFF
+CONNECT hood-brick-blue2.pin1 -> hood-brick-b2.hole1 STIFF
+CONNECT hood-brick-blue1.pin2 -> hood-side-beam-a.hole7~ STIFF
+CONNECT hood-brick-blue2.pin2 -> hood-side-beam-b.hole7~ STIFF
+WHY Adds a second grey Technic brick at each side on long blue pins, leaving their projecting ends for later trim.
+
+STEP 723
+ADD hood-side-spacer1 18654 olivegreen
+ADD hood-side-spacer2 18654 olivegreen
+ADD hood-side-pin1 2780 black
+ADD hood-side-pin2 2780 black
+CONNECT hood-side-pin1.pin1 -> hood-side-spacer1.hole1 STIFF
+CONNECT hood-side-pin2.pin1 -> hood-side-spacer2.hole1 STIFF
+CONNECT hood-side-pin1.pin2 -> hood-side-beam-a.hole1 STIFF
+CONNECT hood-side-pin2.pin2 -> hood-side-beam-b.hole1 STIFF
+WHY Adds an olive round connector on a black pin at each front corner of the hood.
+
+STEP 724
+ADD hood-outer-beam-a 32525 olivegreen
+ADD hood-outer-pin-a1 2780 black
+ADD hood-outer-pin-a2 2780 black
+CONNECT hood-outer-pin-a1.pin1 -> hood-outer-beam-a.hole1 STIFF
+CONNECT hood-outer-pin-a2.pin1 -> hood-outer-beam-a.hole11 STIFF
+CONNECT hood-panel-pin1.pin3 -> hood-outer-beam-a.hole3~ STIFF
+CONNECT hood-panel-pin2.pin3 -> hood-outer-beam-a.hole9~ STIFF
+WHY Adds the outer olive eleven-hole side rail and inserts two black pins at its ends.
+
+STEP 725
+ADD hood-front-pin1 2780 black
+ADD hood-front-pin2 2780 black
+CONNECT hood-front-pin1.pin1 -> hood-side-beam-a.hole2~ STIFF
+CONNECT hood-front-pin2.pin1 -> hood-side-beam-b.hole2~ STIFF
+WHY Places two black friction pins at the front of the hood assembly to hold the curved front panel.
+
+STEP 726
+ADD hood-front-panel 62531 olivegreen
+ADD hood-front-panel-pin1 2780 black
+ADD hood-front-panel-pin2 2780 black
+CONNECT hood-front-panel-pin1.pin1 -> hood-front-panel.? STIFF
+CONNECT hood-front-panel-pin2.pin1 -> hood-front-panel.? STIFF
+CONNECT hood-front-pin1.pin2 -> hood-front-panel.? STIFF
+CONNECT hood-front-pin2.pin2 -> hood-front-panel.? STIFF
+WHY Applies the Defender sticker to the curved olive front hood panel, adds a black pin at each end and attaches the panel across the front.
+
+STEP 727
+ADD hood-front-halfpin1 4274 lightgray
+ADD hood-front-halfpin2 4274 lightgray
+ADD hood-front-cap1 98138 black
+ADD hood-front-cap2 98138 black
+CONNECT hood-front-cap1.? -> hood-front-halfpin1.?
+CONNECT hood-front-cap2.? -> hood-front-halfpin2.?
+CONNECT hood-front-halfpin1.pin1 -> hood-front-panel.? TURNS
+CONNECT hood-front-halfpin2.pin1 -> hood-front-panel.? TURNS
+WHY Caps two grey half pins with black round tiles and inserts them in the front hood panel as the paired fastener details.
+
+STEP 728
+ADD hood-outer-beam-b 41239 olivegreen
+ADD hood-outer-beam-b-pin 2780 black
+ADD hood-outer-beam-b-spacer 18654 olivegreen
+CONNECT hood-outer-beam-b-pin.pin1 -> hood-outer-beam-b.hole1 STIFF
+CONNECT hood-outer-beam-b-pin.pin2 -> hood-outer-beam-b-spacer.hole1 STIFF
+CONNECT hood-panel-pin3.pin3 -> hood-outer-beam-b.hole3~ STIFF
+CONNECT hood-panel-pin4.pin3 -> hood-outer-beam-b.hole9~ STIFF
+WHY Fits the thirteen-hole olive outer rail with its black pin and olive spacer along the opposite hood edge.
+
+STEP 729
+END
+ATTACH hood
+CONNECT hood-hinge-pin-a.pin3 -> hood-support-a-olive.hole1~ STIFF
+WHY Turns the hood over and lowers it onto the vehicle, aligning its rear hinge pin with the first hood support.
+
+STEP 730
+ADD hood-hinge-beam-b 32316 olivegreen
+ADD hood-hinge-pin-b 6558 blue
+CONNECT hood-hinge-pin-b.pin1 -> hood-hinge-beam-b.hole1 STIFF
+CONNECT hood-hinge-pin-b.pin2 -> hood-side-beam-b.hole9~ STIFF
+CONNECT hood-hinge-pin-b.pin3 -> hood-support-b-olive.hole1~ STIFF
+WHY Fits a five-hole olive beam and blue long pin on the opposite rear hood edge to secure the other hinge.
+
+STEP 731
+ADD hood-final-rail 41239 olivegreen
+ADD hood-final-inner 32525 olivegreen
+ADD hood-final-pin1 2780 black
+ADD hood-final-pin2 2780 black
+ADD hood-final-pin3 2780 black
+ADD hood-final-spacer 18654 olivegreen
+CONNECT hood-final-pin1.pin1 -> hood-final-rail.hole2~ STIFF
+CONNECT hood-final-pin2.pin1 -> hood-final-rail.hole11~ STIFF
+CONNECT hood-final-pin3.pin1 -> hood-final-rail.hole12~ STIFF
+CONNECT hood-final-pin1.pin2 -> hood-final-inner.hole1~ STIFF
+CONNECT hood-final-pin2.pin2 -> hood-final-inner.hole10~ STIFF
+CONNECT hood-final-pin3.pin2 -> hood-final-spacer.hole1 STIFF
+CONNECT hood-final-inner.? -> hood-hinge-beam-b.?
+WHY Builds the remaining paired olive side rails with three black pins and an olive spacer, then fits the assembly along the hood edge.
+
+STEP 732
+GROUP hood-skin
+ADD hood-skin-base 3036 lightgray
+WHY Starts the smooth hood skin with a grey six-by-eight plate.
+
+STEP 733
+ADD hood-skin-tile1 87079 olivegreen
+ADD hood-skin-tile2 87079 olivegreen
+ADD hood-skin-tile3 87079 olivegreen
+ADD hood-skin-tile4 87079 olivegreen
+ADD hood-skin-tile5 87079 olivegreen
+ADD hood-skin-tile6 87079 olivegreen
+CONNECT hood-skin-tile1.? -> hood-skin-base.?
+CONNECT hood-skin-tile2.? -> hood-skin-base.?
+CONNECT hood-skin-tile3.? -> hood-skin-base.?
+CONNECT hood-skin-tile4.? -> hood-skin-base.?
+CONNECT hood-skin-tile5.? -> hood-skin-base.?
+CONNECT hood-skin-tile6.? -> hood-skin-base.?
+WHY Covers the centre of the grey plate with six olive two-by-four tiles in two rows.
+
+STEP 734
+ADD hood-skin-edge-plate1 3034 olivegreen
+ADD hood-skin-edge-plate2 3034 olivegreen
+CONNECT hood-skin-edge-plate1.? -> hood-skin-base.?
+CONNECT hood-skin-edge-plate2.? -> hood-skin-base.?
+WHY Adds two olive two-by-eight plates along opposite edges of the hood skin.
+
+STEP 735
+ADD hood-skin-edge-tile1 6636 olivegreen
+ADD hood-skin-edge-tile2 6636 olivegreen
+CONNECT hood-skin-edge-tile1.? -> hood-skin-edge-plate1.?
+CONNECT hood-skin-edge-tile2.? -> hood-skin-edge-plate2.?
+WHY Adds the two long olive tiles across the front and rear of the hood skin.
+
+STEP 736
+ADD hood-curve1 15068 olivegreen
+ADD hood-curve2 15068 olivegreen
+ADD hood-curve3 15068 olivegreen
+ADD hood-curve4 15068 olivegreen
+ADD hood-curve5 15068 olivegreen
+ADD hood-curve6 15068 olivegreen
+ADD hood-curve7 15068 olivegreen
+ADD hood-curve8 15068 olivegreen
+ADD hood-curve9 15068 olivegreen
+ADD hood-curve10 15068 olivegreen
+CONNECT hood-curve1.? -> hood-skin-edge-plate1.?
+CONNECT hood-curve2.? -> hood-skin-edge-plate1.?
+CONNECT hood-curve3.? -> hood-skin-edge-plate1.?
+CONNECT hood-curve4.? -> hood-skin-edge-plate1.?
+CONNECT hood-curve5.? -> hood-skin-edge-plate1.?
+CONNECT hood-curve6.? -> hood-skin-edge-plate2.?
+CONNECT hood-curve7.? -> hood-skin-edge-plate2.?
+CONNECT hood-curve8.? -> hood-skin-edge-plate2.?
+CONNECT hood-curve9.? -> hood-skin-edge-plate2.?
+CONNECT hood-curve10.? -> hood-skin-edge-plate2.?
+END
+WHY Adds ten olive curved bricks along the two sides to round off the smooth hood skin.
+
+STEP 737
+ATTACH hood-skin
+CONNECT hood-skin-base.? -> hood-brick-a1.?
+CONNECT hood-skin-base.? -> hood-brick-b1.?
+CONNECT hood-skin-base.? -> hood-brick-a2.?
+CONNECT hood-skin-base.? -> hood-brick-b2.?
+WHY Presses the completed smooth olive skin onto the studs of the four grey hood support bricks.
