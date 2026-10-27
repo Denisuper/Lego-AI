@@ -3754,7 +3754,7 @@ ADD p15462-18 15462 brown
 ADD p42003-25 42003 lightgray
 CONNECT p15462-18.axle5 -> p42003-25.axlehole1 LOCKED
 CONNECT p15462-18.axle4 -> p32009-3.axlehole1 LOCKED
-WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the front cross socket of each seat side beam, leaving the long axle end projecting across the future seat width. The inset and completed seat frame show the stopped axle spanning the two end connectors, both side beams and the central block.
+WHY Adds a brown stopped five-length axle and grey axle-and-pin connector to the upper seat-back cross socket of each side beam, leaving the long axle end projecting across the future seat width. The inset and completed seat frame show the stopped axle spanning the two end connectors, both side beams and the central block.
 
 STEP 371
 ADD p32073-13 32073 yellow
@@ -3765,7 +3765,7 @@ ADD p32073-14 32073 yellow
 ADD p6536-45 6536 darkgray
 CONNECT p32073-14.axle5 -> p6536-45.axlehole1 LOCKED
 CONNECT p32073-14.axle4 -> p32009-3.axlehole2 LOCKED
-WHY Fits a yellow five-length axle with a dark-grey perpendicular connector through the upper cross socket of each bent seat beam, preparing the seat-back pivot and spacer assembly.
+WHY Fits a yellow five-length axle with a dark-grey perpendicular connector through the front cross socket of each seat beam, preparing the cushion-end support.
 
 STEP 372
 ADD p32000-2 32000 darkgray
@@ -3784,7 +3784,7 @@ CONNECT p6558-66.pin2 -> p32000-3.hole3 STIFF
 CONNECT p6558-67.pin2 -> p3701-2.hole6 STIFF
 CONNECT p6558-68.pin2 -> p3701-2.hole2 STIFF
 CONNECT p15462-18.axle3 -> p60483-37.axlehole1 LOCKED
-WHY Adds a dark-grey two-hole brick to each seat back, a dark-grey three-hole brick across each seat base and a black axle-and-pin block on each brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and the brown axles pass through the central blocks.
+WHY Adds a dark-grey two-hole brick at each cushion end, a dark-grey three-hole brick across each seat back and a black axle-and-pin block on each upper brown cross axle. The bricks span the waiting blue pins and carry the upholstered surfaces; yellow axles pass freely through round brick holes, and the brown axles pass through the central blocks.
 
 STEP 373
 ADD p32009-2 32009 darktan
@@ -3807,7 +3807,7 @@ CONNECT p32073-14.axle1 -> p6536-46.axlehole1 LOCKED
 CONNECT p6558-66.pin3 -> p32009-4.hole8 STIFF
 CONNECT p6558-67.pin3 -> p32009-4.hole2 STIFF
 CONNECT p6558-68.pin3 -> p32009-4.hole4 STIFF
-WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey back connector and a second grey base connector. The side beam fits all three blue pin ends and both cross axles; the brown axles pass through the central blocks.
+WHY Closes each seat frame with its second dark-tan bent beam, a second dark-grey cushion-end connector and a second grey upper-back connector. The side beam fits all three blue pin ends and both cross axles; the brown axles pass through the central blocks.
 
 STEP 374
 ADD p32054-25 32054 lightgray
@@ -3818,7 +3818,7 @@ ADD p32054-27 32054 lightgray
 CONNECT p32054-27.pin1 -> p6536-45.hole1 STIFF
 ADD p32054-28 32054 lightgray
 CONNECT p32054-28.pin1 -> p6536-46.hole1 STIFF
-WHY Inserts a grey long pin with stop bush through each of the four dark-grey seat-back connector holes, leaving their outer pin ends exposed for the back side panels.
+WHY Inserts a grey long pin with stop bush through each of the four dark-grey cushion-end connector holes, leaving their outer pin ends exposed for the cushion side panels.
 
 STEP 375
 ADD p11946-1 11946 darktan
@@ -3829,7 +3829,7 @@ ADD p11946-3 11946 darktan
 CONNECT p32054-27.pin2 -> p11946-3.hole1 STIFF
 ADD p11947-3 11947 darktan
 CONNECT p32054-28.pin2 -> p11947-3.hole1 STIFF
-WHY Fits a matching pair of dark-tan narrow tapered panels onto the grey pin ends of each seat back, with the numbered 21 and 22 panels on the sides shown. Keep their smooth surfaces facing out.
+WHY Fits a matching pair of dark-tan narrow tapered panels onto the grey pin ends of each seat cushion, with the numbered 21 and 22 panels on the sides shown. Keep their smooth surfaces facing out.
 
 STEP 376
 ADD p2780-90 2780 black
@@ -3848,7 +3848,7 @@ ADD p2780-96 2780 black
 CONNECT p2780-96.pin2 -> p42003-26.hole1 STIFF
 ADD p2780-97 2780 black
 CONNECT p2780-97.pin2 -> p42003-26.hole2 STIFF
-WHY Adds four upright black friction pins to the two grey base connectors of each seat, preparing two pin pairs for the cushion side panels.
+WHY Adds four black friction pins to the two grey upper-back connectors of each seat, preparing two pin pairs for the back side panels.
 
 STEP 377
 ADD p11947-2 11947 darktan
@@ -3879,7 +3879,7 @@ CONNECT p32062-35.axle1 -> p11946-4.axlehole1 LOCKED
 CONNECT p32062-35.axle2 -> p60483-39.axlehole1 LOCKED
 CONNECT p2780-97.pin1 -> p11946-4.hole1 STIFF
 CONNECT p2780-96.pin1 -> p11946-4.hole2 STIFF
-WHY Builds both dark-tan cushion side trims for each seat, joining each numbered tapered panel to a dark-tan axle-and-pin block with a red short axle. Presses their round holes onto the waiting black pin pairs, with the curved blocks at the seat front.
+WHY Builds both dark-tan back side trims for each seat, joining each numbered tapered panel to a dark-tan axle-and-pin block with a red short axle. Presses their round holes onto the waiting black pin pairs, with the curved blocks at the top of the back.
 
 STEP 378
 ADD p3021-1 3021 darktan
@@ -3910,7 +3910,7 @@ CONNECT p11477-3.? -> p3021-6.? STIFF
 CONNECT p15068-3.? -> p3021-6.? STIFF
 CONNECT p3021-5.? -> p3701-2.? STIFF
 CONNECT p3021-6.? -> p3701-2.? STIFF
-WHY Builds each seat cushion from two dark-tan two-by-three plates joined under three one-by-three tiles, with the two curved slopes completing the front edge. Presses the completed cushions onto the dark-grey base bricks in the pictured arrangement; ordinary plate, tile and slope clutch surfaces are not named in the catalog.
+WHY Builds each seat back from two dark-tan two-by-three plates joined under three one-by-three tiles, with two curved slopes completing the edge. Presses the completed backs onto the dark-grey three-hole bricks in the pictured arrangement; ordinary plate, tile and slope clutch surfaces are not named in the catalog.
 
 STEP 379
 ADD p3021-3 3021 darktan
@@ -3937,7 +3937,7 @@ CONNECT p3069b-2.? -> p3021-8.? STIFF
 ADD p3068b-3 3068b darktan
 CONNECT p3068b-3.? -> p3021-8.? STIFF
 CONNECT p3021-7.? -> p32000-3.? STIFF
-WHY Builds each padded seat back from two stacked dark-tan two-by-three plates, two curved slopes and the dark-tan one-by-two and two-by-two tiles. Fits the finished backs between the tapered side panels on the grey back bricks, preserving the pictured curvature; ordinary stud clutch surfaces remain unnamed.
+WHY Builds each padded seat cushion from two stacked dark-tan two-by-three plates, two curved slopes and the dark-tan one-by-two and two-by-two tiles. Fits the finished cushions between the tapered side panels on the grey two-hole bricks, preserving the pictured curvature; ordinary stud clutch surfaces remain unnamed.
 
 STEP 380
 ADD p6558-65 6558 blue
@@ -3952,7 +3952,7 @@ CONNECT p6558-69.pin1 -> p11458-3.? STIFF
 ADD p11458-4 11458 darkgray
 CONNECT p6558-69.pin3 -> p11458-4.? STIFF
 CONNECT p6558-69.pin2 -> p60483-37.hole1 STIFF
-WHY Builds each headrest bracket with a blue long friction pin between two dark-grey plates with upright round holes, then inserts the middle pin segment through the black base block. These assemblies become headrests when the seats are turned into their final orientation; the small bracket round holes are not cataloged.
+WHY Builds each headrest bracket with a blue long friction pin between two dark-grey plates with upright round holes, then inserts the middle pin segment through the black upper-back block. These assemblies become headrests when the seats are turned into their final orientation; the small bracket round holes are not cataloged.
 
 STEP 381
 ADD p3623-1 3623 darkgray

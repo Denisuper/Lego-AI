@@ -57,3 +57,5 @@ The enlarged steps 352-355 show the five black pins fully seated in the T bracke
 Source review of the side-floor assembly in steps 348 and 362 resolves the upright friction pins to the outer round holes of their 42003 connectors. Both booklet insets show the pins opposite the axle socket; split-axle seating remains estimated.
 
 The two identical front seats in steps 370?373 show each stopped brown axle spanning five consecutive components: the two grey end connectors, two tan side beams and central black block. Those axle seating positions are now resolved.
+
+The installation view at step 384 establishes the final seat orientation. Descriptions in steps 370?380 now identify the seat back, headrest end and cushion consistently with that view.
