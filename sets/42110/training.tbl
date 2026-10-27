@@ -8200,11 +8200,13 @@ STEP 810
 ADD cargo-box-frame 64179 black
 ADD cargo-box-axle1 55013 darkgray
 ADD cargo-box-axle2 55013 darkgray
-CONNECT cargo-box-axle1.axle1 -> cargo-box-frame.hole1~ TURNS
-CONNECT cargo-box-axle2.axle1 -> cargo-box-frame.hole5~ TURNS
+CONNECT cargo-box-axle1.axle1 -> cargo-box-frame.hole2 TURNS
+CONNECT cargo-box-axle2.axle1 -> cargo-box-frame.hole4 TURNS
 CONNECT cargo-box-axle1.axle2 -> cargo-box-beam1.hole1~ TURNS
 CONNECT cargo-box-axle2.axle2 -> cargo-box-beam1.hole5~ TURNS
-WHY Adds the black five-by-seven frame around the box base and slides two long stopped axles through its sides, leaving the ends projecting.
+CONNECT cargo-box-axle1.? -> cargo-box-frame.hole17
+CONNECT cargo-box-axle2.? -> cargo-box-frame.hole19
+WHY Adds the black five-by-seven frame around the box base and slides two long stopped axles through its front and back side bores, leaving the ends projecting. The axle positions at the far bores remain unknown.
 
 STEP 811
 ADD cargo-box-hub1 27940 darkgray
@@ -8226,25 +8228,25 @@ ADD cargo-box-top-pin3 2780 black
 ADD cargo-box-top-pin4 2780 black
 ADD cargo-box-top-pin5 2780 black
 ADD cargo-box-top-pin6 2780 black
-CONNECT cargo-box-top-pin1.pin1 -> cargo-box-frame.hole1~ STIFF
-CONNECT cargo-box-top-pin2.pin1 -> cargo-box-frame.hole3~ STIFF
-CONNECT cargo-box-top-pin3.pin1 -> cargo-box-frame.hole5~ STIFF
-CONNECT cargo-box-top-pin4.pin1 -> cargo-box-frame.hole7~ STIFF
-CONNECT cargo-box-top-pin5.pin1 -> cargo-box-frame.hole9~ STIFF
-CONNECT cargo-box-top-pin6.pin1 -> cargo-box-frame.hole11~ STIFF
-WHY Inserts six black friction pins around the top of the box frame for the grey perimeter beams.
+CONNECT cargo-box-top-pin1.pin1 -> cargo-box-frame.hole1 STIFF
+CONNECT cargo-box-top-pin2.pin1 -> cargo-box-frame.hole5 STIFF
+CONNECT cargo-box-top-pin3.pin1 -> cargo-box-frame.hole8 STIFF
+CONNECT cargo-box-top-pin4.pin1 -> cargo-box-frame.hole12 STIFF
+CONNECT cargo-box-top-pin5.pin1 -> cargo-box-frame.hole16 STIFF
+CONNECT cargo-box-top-pin6.pin1 -> cargo-box-frame.hole20 STIFF
+WHY Inserts six black friction pins in the six upward-facing frame holes for the grey perimeter beams.
 
 STEP 813
 ADD cargo-box-rim1 32316 lightgray
 ADD cargo-box-rim2 32316 lightgray
 ADD cargo-box-rim3 32316 lightgray
-CONNECT cargo-box-top-pin1.pin2 -> cargo-box-rim1.hole1~ STIFF
-CONNECT cargo-box-top-pin2.pin2 -> cargo-box-rim1.hole5~ STIFF
-CONNECT cargo-box-top-pin3.pin2 -> cargo-box-rim2.hole1~ STIFF
-CONNECT cargo-box-top-pin4.pin2 -> cargo-box-rim2.hole5~ STIFF
-CONNECT cargo-box-top-pin5.pin2 -> cargo-box-rim3.hole1~ STIFF
-CONNECT cargo-box-top-pin6.pin2 -> cargo-box-rim3.hole5~ STIFF
-WHY Fits three light-grey five-hole beams onto the six frame pins to create the cargo box rim.
+CONNECT cargo-box-top-pin1.pin2 -> cargo-box-rim1.hole1 STIFF
+CONNECT cargo-box-top-pin2.pin2 -> cargo-box-rim1.hole5 STIFF
+CONNECT cargo-box-top-pin3.pin2 -> cargo-box-rim2.hole2 STIFF
+CONNECT cargo-box-top-pin4.pin2 -> cargo-box-rim2.hole4 STIFF
+CONNECT cargo-box-top-pin5.pin2 -> cargo-box-rim3.hole1 STIFF
+CONNECT cargo-box-top-pin6.pin2 -> cargo-box-rim3.hole5 STIFF
+WHY Fits three light-grey five-hole beams onto the six frame pins to create the U-shaped cargo box rim; the middle beam uses its second and fourth holes.
 
 STEP 814
 ADD cargo-box-hinge-stop1 60483 black
