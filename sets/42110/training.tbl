@@ -2651,9 +2651,9 @@ ADD p11214-3 11214 red
 CONNECT p11214-2.axle1 -> p32054-8.axlehole1 LOCKED
 CONNECT p11214-3.axle1 -> p32054-9.axlehole1 LOCKED
 CONNECT p32054-8.pin1 -> p32278-3.hole1 STIFF
-CONNECT p32054-9.pin1~ -> p32278-4.hole1 STIFF
+CONNECT p32054-9.pin1 -> p32278-4.hole1 STIFF
 END
-WHY Builds two grey pin-and-axle connectors with red long axle-pins and fits their pin ends through the far ends of the two long beams, leaving the red pins pointing outward for later bracing. The right connector seating is slightly offset and remains estimated.
+WHY Builds two grey pin-and-axle connectors with red long axle-pins and fits their pin ends through the far ends of the two long beams, leaving the red pins pointing outward for later bracing. The booklet specifies two identical pin assemblies, seated through the far end holes of the two beams.
 
 STEP 259
 ATTACH central-upper-linkage
