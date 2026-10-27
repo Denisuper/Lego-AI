@@ -2891,21 +2891,21 @@ STEP 282
 ADD p15100-3 15100 lightgray
 ADD p4274-9 4274 lightgray
 ADD p98138-3 98138 black
-CONNECT p4274-9.pin2~ -> p15100-3.hole1 TURNS
+CONNECT p4274-9.pin2 -> p15100-3.hole1 TURNS
 CONNECT p98138-3.? -> p4274-9.? STIFF
 CONNECT p15100-3.pin1 -> p6536-37.hole1 STIFF
-WHY Builds a grey perpendicular pin connector with a grey half pin and black round tile cap, then fits its friction pin into the first dark-grey connector. The half pin turns in the round bore; its seating is estimated and its stud-to-tile interface is unnamed.
+WHY Builds a grey perpendicular pin connector with a grey half pin and black round tile cap, then fits its friction pin into the first dark-grey connector. The source shows the half pin seated in the round bore; its stud-to-tile interface is unnamed.
 
 STEP 283
 ADD p32140-10 32140 black
 ADD p4274-10 4274 lightgray
 ADD steering-bracket-second-half-pin 4274 lightgray
 ADD p98138-4 98138 black
-CONNECT p4274-10.pin2~ -> p32140-10.hole4 TURNS
-CONNECT steering-bracket-second-half-pin.pin2~ -> p32140-10.hole1 TURNS
+CONNECT p4274-10.pin2 -> p32140-10.hole4 TURNS
+CONNECT steering-bracket-second-half-pin.pin2 -> p32140-10.hole1 TURNS
 CONNECT p98138-4.? -> p4274-10.? STIFF
 CONNECT p18651-4.pin1 -> p32140-10.hole3 STIFF
-WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The enlarged booklet view places the second half pin in the first round hole next to the beam cross hole; the geometric reference includes only one half pin. Half-pin seating and the ordinary tile clutch remain uncertain.
+WHY Adds the black L-shaped axle-and-pin beam with two grey half pins and a black round tile, then inserts the black axle-pin through its indicated round hole. The enlarged booklet view places the second half pin in the first round hole next to the beam cross hole; the geometric reference includes only one half pin. The ordinary tile clutch remains unnamed in the catalog.
 
 STEP 284
 END
