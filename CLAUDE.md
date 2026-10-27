@@ -39,7 +39,7 @@ Optional `model.mpd` reference files remain for unfinished official sets. They c
 - Optional `MESH a.teeth b.teeth`, `RATIO a b x/y`, `GROUP name` / `END` / `ATTACH name`, `DOES a DRIVES b` and `PATTERN name`.
 - `WHY`: one grounded explanation per step. Legacy THINK, MECH, STATE and MOTION scaffolding is retired.
 
-Use the arrow, visible pin exits and neighbouring pages to identify the join. Count holes at high zoom when needed. Shafts that must turn need round bearings; cross holes lock shafts. Friction on a moving pivot must agree with the actual part. Preserve uncertainty when the picture or catalog does not resolve an interface.
+Use the arrow, visible pin exits and neighbouring pages to identify the join. For Defender 42110, when an attachment is unclear, trace the receiving piece back through earlier source steps and compare the changes between steps to establish its position and orientation; use the clearest earlier view to identify where the new piece attaches. Keep the endpoint uncertain if those views still do not establish it. Count holes at high zoom when needed. Shafts that must turn need round bearings; cross holes lock shafts. Friction on a moving pivot must agree with the actual part. Preserve uncertainty when the picture or catalog does not resolve an interface.
 
 ## Validation and training
 
