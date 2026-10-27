@@ -7391,11 +7391,11 @@ ADD hood-front-halfpin1 4274 lightgray
 ADD hood-front-halfpin2 4274 lightgray
 ADD hood-front-cap1 98138 black
 ADD hood-front-cap2 98138 black
-CONNECT hood-front-cap1.? -> hood-front-halfpin1.?
-CONNECT hood-front-cap2.? -> hood-front-halfpin2.?
-CONNECT hood-front-halfpin1.pin1 -> hood-front-panel.? TURNS
-CONNECT hood-front-halfpin2.pin1 -> hood-front-panel.? TURNS
-WHY Caps two grey half pins with black round tiles and inserts them in the front hood panel as the paired fastener details.
+CONNECT hood-front-cap1.? -> hood-front-halfpin1.pin1
+CONNECT hood-front-cap2.? -> hood-front-halfpin2.pin1
+CONNECT hood-front-halfpin1.pin2 -> hood-front-panel.? TURNS
+CONNECT hood-front-halfpin2.pin2 -> hood-front-panel.? TURNS
+WHY Seats the long ends of two grey half pins in the front hood panel and caps their exposed studs with black round tiles as paired fastener details.
 
 STEP 728
 ADD hood-outer-beam-b 41239 olivegreen
