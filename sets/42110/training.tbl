@@ -6050,13 +6050,13 @@ ADD p24316-21 24316 brown
 ADD p24316-22 24316 brown
 CONNECT p43093-71.axle1 -> p45590-2.axlehole2 LOCKED
 CONNECT p43093-72.axle1 -> p45590-3.axlehole2 LOCKED
-CONNECT p24316-21.axle3 -> p45590-2.axlehole1~ LOCKED
-CONNECT p24316-22.axle3 -> p45590-3.axlehole1~ LOCKED
+CONNECT p24316-21.axle3 -> p45590-2.axlehole1 LOCKED
+CONNECT p24316-22.axle3 -> p45590-3.axlehole1 LOCKED
 CONNECT p43093-71.pin1 -> p32523-4.hole1 STIFF
 CONNECT p43093-72.pin1 -> p32523-5.hole1 STIFF
-CONNECT p24316-21.axle2 -> p32523-9.hole1~ TURNS
-CONNECT p24316-22.axle2 -> p32523-10.hole1~ TURNS
-WHY Builds two flexible black double-cross connectors with a blue axle-pin and brown three-stud stopped axle each. Joins the blue pins to the front roof brackets and the brown shafts through the free holes of the black pivot links. Rubber flex and shaft seating are estimated from the illustrated articulated position.
+CONNECT p24316-21.axle2 -> p32523-9.hole1 TURNS
+CONNECT p24316-22.axle2 -> p32523-10.hole1 TURNS
+WHY Builds two flexible black double-cross connectors with a blue axle-pin and brown three-stud stopped axle each. Joins the blue pins to the front roof brackets and the brown shafts through the free holes of the black pivot links. The inset shows the brown shafts keyed into the flexible connectors and passing through the support links; rubber flex depends on the roof position.
 
 STEP 584
 ADD p11946-6 11946 white
