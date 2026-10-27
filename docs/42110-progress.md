@@ -74,7 +74,7 @@ Step 494 also had the rear latch half pin reversed. Its inset shows the long end
 
 Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
 
-Sequential comparison of selected part callouts, order and visible attachments has continued through the removable-roof installation at step 579, page 341. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
+Sequential comparison of selected part callouts, order and visible attachments has continued through the roof-rack frame at step 807, page 465. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
 
 The inset at step 649 shows both second-door window half pins inserted into the sloping-rail ends first. Their long ends and their stud pivot contacts in steps 649?650 were reversed in the dataset and are now corrected; the hinge seating remains estimated.
 
