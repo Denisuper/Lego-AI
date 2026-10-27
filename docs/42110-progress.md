@@ -68,10 +68,12 @@ Steps 441 and 457 now record the four previously omitted sill-to-floor joins. Th
 
 Steps 525 and 532 show ten wheel-arch trim half pins seated by their long pin ends in the beams, leaving the small studs outside for the trim. The erroneous pin1 beam endpoints are corrected to pin2, and the fully seated positions no longer carry estimates.
 
-The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. The separate window hinges in steps 613?614 and 649 use the stop ends as pivot interfaces and are retained.
+The same reversed half-pin endpoint appeared in steps 540, 572, 592 and 628. Booklet views on pages 315, 337, 350 and 366 confirm all nineteen pins seat by their long ends with studs outside. Window hinge joints also use the stop ends as pivot interfaces; their orientations require separate source review.
 
 Step 494 also had the rear latch half pin reversed. Its inset shows the long end entering the cross connector and the stud retaining the white round plate. The plate clutch surface is not named by the catalog, so it remains unknown rather than being confused with its round through-hole.
 
 Further source insets confirm nineteen named half-pin endpoints were also reversed in the bumper, headlights, fenders, windshield uprights, ladder caps and roof-load bracket (steps 675, 680, 692, 745, 755, 771, 783, 834 and 845). Their long pin ends enter the receiving holes, with studs outward; roof bracket hole labels remain estimated.
 
 Sequential comparison of selected part callouts, order and visible attachments has continued through the removable-roof installation at step 579, page 341. This is not a complete proof of every hidden connection or motion; unresolved catalog interfaces and half-stud stacks remain marked.
+
+The inset at step 649 shows both second-door window half pins inserted into the sloping-rail ends first. Their long ends and their stud pivot contacts in steps 649?650 were reversed in the dataset and are now corrected; the hinge seating remains estimated.
