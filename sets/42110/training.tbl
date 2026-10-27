@@ -5072,11 +5072,11 @@ ADD p6141-5 6141 white
 ADD p98138-8 98138 black
 CONNECT p32062-40.axle2 -> p32184-38.axlehole2 LOCKED
 CONNECT p32062-40.axle1 -> p3713-43.axlehole1 LOCKED
-CONNECT p4274-18.pin1 -> p32184-38.hole1~ TURNS
-CONNECT p4274-18.pin2 -> p6141-5.hole1~ TURNS
+CONNECT p4274-18.pin2 -> p32184-38.hole1 TURNS
+CONNECT p4274-18.pin1 -> p6141-5.? STIFF
 CONNECT p98138-8.? -> p6141-5.? STIFF
 CONNECT p4519-46.axle2 -> p32184-38.axlehole1~ LOCKED
-WHY Builds the latch knob on a dark-grey cross connector: a red axle and full bush on one cross socket, plus a grey smooth half pin carrying a white round plate and black round tile in the centre bore. Fits its other cross socket over the existing grey axle. Pin and connector depths are estimated; the tile stud surface remains unnamed.
+WHY Builds the latch knob on a dark-grey cross connector: a red axle and full bush on one cross socket, plus a grey smooth half pin carrying a white round plate and black round tile in the centre bore. Fits its other cross socket over the existing grey axle. The half pin seats by its long end in the connector and its stud holds the white plate, as the inset shows. Connector depth is estimated; the tile stud surface remains unnamed.
 
 STEP 495
 ADD p24201-1 24201 darkgray
