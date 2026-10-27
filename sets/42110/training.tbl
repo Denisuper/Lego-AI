@@ -794,8 +794,8 @@ ADD p24316-3 24316 brown
 ADD p3713-10 3713 red
 ADD centre-support-pin-one 2780 black
 ADD centre-support-pin-two 2780 black
-CONNECT centre-support-pin-one.pin1 -> p63869-7.? STIFF
-CONNECT centre-support-pin-two.pin1 -> p63869-7.? STIFF
+CONNECT centre-support-pin-one.pin1 -> p63869-7.hole1~ STIFF
+CONNECT centre-support-pin-two.pin1 -> p63869-7.hole3~ STIFF
 CONNECT p3705-2.axle1 -> p63869-7.axlehole1 LOCKED
 CONNECT p3705-2.axle2 -> p63869-6.axlehole1 LOCKED
 CONNECT p3705-2.axle3 -> p6536-15.axlehole1 LOCKED
@@ -808,7 +808,7 @@ CONNECT p18651-1.axle1 -> p6536-14.hole1 TURNS
 CONNECT p3707-1.axle5 -> p63869-6.hole3 TURNS
 CONNECT p32073-3.axle4~ -> p63869-6.hole1 TURNS
 CONNECT p23948-2.axle9 -> p63869-7.hole2 TURNS
-WHY Builds the centre support from two grey triple connectors, two dark-grey perpendicular connectors and a red four-length axle, with two black mounting pins and a retained brown stopped shaft. Fits it over the projecting gearbox shafts and selector axle-pin. The two black pins are present in the booklet but absent from the reference model, so their receiving holes remain unknown; yellow-shaft seating is estimated.
+WHY Builds the centre support from two grey triple connectors, two dark-grey perpendicular connectors and a red four-length axle, with two black mounting pins and a retained brown stopped shaft. Fits it over the projecting gearbox shafts and selector axle-pin. The booklet shows the black pins in the two outer connector holes; their individual left-right names and the yellow-shaft seating are estimated.
 
 STEP 75
 ADD p6573-1 6573 red
