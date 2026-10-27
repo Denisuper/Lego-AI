@@ -1239,10 +1239,10 @@ CONNECT p43093-8.axle1 -> p40490-5.hole5 TURNS
 CONNECT p2780-20.pin1 -> p40490-5.hole6 STIFF
 CONNECT p6558-12.pin1 -> p40490-5.hole9 STIFF
 CONNECT p2780-38.pin1 -> p40490-6.hole4 STIFF
-CONNECT rear-left-lower-pivot-axle-pin.axle1 -> p40490-6.hole5~ TURNS
-CONNECT rear-left-lower-pivot-pin.pin2 -> p40490-6.hole6~ STIFF
+CONNECT rear-left-lower-pivot-axle-pin.axle1 -> p40490-6.hole5 TURNS
+CONNECT rear-left-lower-pivot-pin.pin2 -> p40490-6.hole6 STIFF
 CONNECT p6558-11.pin1 -> p40490-6.hole9 STIFF
-WHY Adds one black nine-hole vertical brace to each side, fastening them to the waiting black pins, blue axle ends and blue frame pins. One brace carries the pictured black pin and round spacer. The two lower joins on the opposite side use the booklet assemblies missing from the reference model, so their mirrored beam holes remain estimated.
+WHY Adds one black nine-hole vertical brace to each side, fastening them to the waiting black pins, blue axle ends and blue frame pins. One brace carries the pictured black pin and round spacer. The two lower joins on the opposite side use the identical paired connector assemblies from source step 77 and the same beam holes as the first side.
 
 STEP 115
 ADD p32034-8 32034 black
