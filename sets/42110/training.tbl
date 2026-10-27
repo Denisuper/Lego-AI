@@ -8171,3 +8171,198 @@ ATTACH rack-front-crossbar
 CONNECT rack-front-red1.axle2 -> rack-front-elbow1.? LOCKED
 CONNECT rack-front-red2.axle2 -> rack-front-elbow2.? LOCKED
 WHY Joins the front crossbar to the two projecting red side axles, closing the roof rack's rectangular perimeter.
+
+STEP 808
+GROUP roof-cargo-box
+ADD cargo-box-thin1 11478 black
+ADD cargo-box-thin2 11478 black
+ADD cargo-box-pin1 6558 blue
+ADD cargo-box-pin2 6558 blue
+CONNECT cargo-box-pin1.pin1 -> cargo-box-thin1.hole1 STIFF
+CONNECT cargo-box-pin2.pin1 -> cargo-box-thin1.hole3 STIFF
+CONNECT cargo-box-pin1.pin2 -> cargo-box-thin2.hole1 STIFF
+CONNECT cargo-box-pin2.pin2 -> cargo-box-thin2.hole3 STIFF
+WHY Starts the roof cargo box base with two thin black five-hole beams joined by two blue long pins.
+
+STEP 809
+ADD cargo-box-beam1 32316 black
+ADD cargo-box-beam2 32316 black
+CONNECT cargo-box-pin1.pin3 -> cargo-box-beam1.hole2~ STIFF
+CONNECT cargo-box-pin2.pin3 -> cargo-box-beam1.hole4~ STIFF
+CONNECT cargo-box-pin1.pin1 -> cargo-box-beam2.hole2~ STIFF
+CONNECT cargo-box-pin2.pin1 -> cargo-box-beam2.hole4~ STIFF
+WHY Adds a thick black five-hole beam to each side of the thin-beam stack to form the box floor.
+
+STEP 810
+ADD cargo-box-frame 64179 black
+ADD cargo-box-axle1 55013 darkgray
+ADD cargo-box-axle2 55013 darkgray
+CONNECT cargo-box-axle1.axle1 -> cargo-box-frame.hole1~ TURNS
+CONNECT cargo-box-axle2.axle1 -> cargo-box-frame.hole5~ TURNS
+CONNECT cargo-box-axle1.axle2 -> cargo-box-beam1.hole1~ TURNS
+CONNECT cargo-box-axle2.axle2 -> cargo-box-beam1.hole5~ TURNS
+WHY Adds the black five-by-seven frame around the box base and slides two long stopped axles through its sides, leaving the ends projecting.
+
+STEP 811
+ADD cargo-box-hub1 27940 darkgray
+ADD cargo-box-hub2 27940 darkgray
+ADD cargo-box-cross 32034 black
+ADD cargo-box-cross-pin 2780 black
+CONNECT cargo-box-hub1.axle1 -> cargo-box-cross.axlehole1 LOCKED
+CONNECT cargo-box-hub2.axle1 -> cargo-box-cross.axlehole2 LOCKED
+CONNECT cargo-box-cross-pin.pin1 -> cargo-box-cross.hole1 STIFF
+CONNECT cargo-box-hub1.hole1 -> cargo-box-axle1.axle6~ TURNS
+CONNECT cargo-box-hub2.hole1 -> cargo-box-axle2.axle6~ TURNS
+CONNECT cargo-box-cross-pin.pin2 -> cargo-box-frame.hole3~ STIFF
+WHY Builds the paired dark-grey hubs on a black cross connector and fits their round bores over the projecting box axles.
+
+STEP 812
+ADD cargo-box-top-pin1 2780 black
+ADD cargo-box-top-pin2 2780 black
+ADD cargo-box-top-pin3 2780 black
+ADD cargo-box-top-pin4 2780 black
+ADD cargo-box-top-pin5 2780 black
+ADD cargo-box-top-pin6 2780 black
+CONNECT cargo-box-top-pin1.pin1 -> cargo-box-frame.hole1~ STIFF
+CONNECT cargo-box-top-pin2.pin1 -> cargo-box-frame.hole3~ STIFF
+CONNECT cargo-box-top-pin3.pin1 -> cargo-box-frame.hole5~ STIFF
+CONNECT cargo-box-top-pin4.pin1 -> cargo-box-frame.hole7~ STIFF
+CONNECT cargo-box-top-pin5.pin1 -> cargo-box-frame.hole9~ STIFF
+CONNECT cargo-box-top-pin6.pin1 -> cargo-box-frame.hole11~ STIFF
+WHY Inserts six black friction pins around the top of the box frame for the grey perimeter beams.
+
+STEP 813
+ADD cargo-box-rim1 32316 lightgray
+ADD cargo-box-rim2 32316 lightgray
+ADD cargo-box-rim3 32316 lightgray
+CONNECT cargo-box-top-pin1.pin2 -> cargo-box-rim1.hole1~ STIFF
+CONNECT cargo-box-top-pin2.pin2 -> cargo-box-rim1.hole5~ STIFF
+CONNECT cargo-box-top-pin3.pin2 -> cargo-box-rim2.hole1~ STIFF
+CONNECT cargo-box-top-pin4.pin2 -> cargo-box-rim2.hole5~ STIFF
+CONNECT cargo-box-top-pin5.pin2 -> cargo-box-rim3.hole1~ STIFF
+CONNECT cargo-box-top-pin6.pin2 -> cargo-box-rim3.hole5~ STIFF
+WHY Fits three light-grey five-hole beams onto the six frame pins to create the cargo box rim.
+
+STEP 814
+ADD cargo-box-hinge-stop1 60483 black
+CONNECT cargo-box-axle1.axle8 -> cargo-box-hinge-stop1.axlehole1 LOCKED
+WHY Fits a black two-hole axle-and-pin block to the exposed stopped axle at one side of the cargo box.
+
+STEP 815
+GROUP cargo-box-lid
+ADD cargo-lid-plate1 11212 lightgray
+ADD cargo-lid-plate2 11212 lightgray
+ADD cargo-lid-bridge 3710 lightgray
+CONNECT cargo-lid-bridge.? -> cargo-lid-plate1.?
+CONNECT cargo-lid-bridge.? -> cargo-lid-plate2.?
+WHY Starts the cargo box lid with two grey three-by-three plates bridged by a grey one-by-four plate.
+
+STEP 816
+ADD cargo-lid-round1 18980 lightgray
+ADD cargo-lid-round2 18980 lightgray
+CONNECT cargo-lid-round1.? -> cargo-lid-plate1.?
+CONNECT cargo-lid-round2.? -> cargo-lid-plate2.?
+WHY Adds the two rounded grey plates to opposite edges of the lid base.
+
+STEP 817
+ADD cargo-lid-dark1 3020 darkgray
+ADD cargo-lid-dark2 3020 darkgray
+CONNECT cargo-lid-dark1.? -> cargo-lid-plate1.?
+CONNECT cargo-lid-dark2.? -> cargo-lid-plate2.?
+WHY Covers the middle of the lid base with two dark-grey two-by-four plates.
+
+STEP 818
+ADD cargo-lid-badge 26603 lightgray
+CONNECT cargo-lid-badge.? -> cargo-lid-dark1.?
+WHY Applies sticker 5 to the grey two-by-three tile and fits it in the centre of the lid.
+
+STEP 819
+ADD cargo-lid-tile1 2431 lightgray
+ADD cargo-lid-tile2 2431 lightgray
+ADD cargo-lid-tile3 63864 lightgray
+ADD cargo-lid-tile4 63864 lightgray
+CONNECT cargo-lid-tile1.? -> cargo-lid-dark1.?
+CONNECT cargo-lid-tile2.? -> cargo-lid-dark2.?
+CONNECT cargo-lid-tile3.? -> cargo-lid-dark1.?
+CONNECT cargo-lid-tile4.? -> cargo-lid-dark2.?
+WHY Frames the lid badge with two grey four-stud tiles and two grey three-stud tiles.
+
+STEP 820
+ADD cargo-lid-slope1 85984 lightgray
+ADD cargo-lid-slope2 85984 lightgray
+ADD cargo-lid-slope3 85984 lightgray
+ADD cargo-lid-slope4 85984 lightgray
+CONNECT cargo-lid-slope1.? -> cargo-lid-round1.?
+CONNECT cargo-lid-slope2.? -> cargo-lid-round1.?
+CONNECT cargo-lid-slope3.? -> cargo-lid-round2.?
+CONNECT cargo-lid-slope4.? -> cargo-lid-round2.?
+WHY Adds four grey slopes to the ends of the rounded cargo lid.
+
+STEP 821
+ADD cargo-lid-slope5 85984 lightgray
+ADD cargo-lid-slope6 85984 lightgray
+ADD cargo-lid-slope7 85984 lightgray
+ADD cargo-lid-slope8 85984 lightgray
+ADD cargo-lid-cheese1 54200 lightgray
+ADD cargo-lid-cheese2 54200 lightgray
+CONNECT cargo-lid-slope5.? -> cargo-lid-round1.?
+CONNECT cargo-lid-slope6.? -> cargo-lid-round1.?
+CONNECT cargo-lid-slope7.? -> cargo-lid-round2.?
+CONNECT cargo-lid-slope8.? -> cargo-lid-round2.?
+CONNECT cargo-lid-cheese1.? -> cargo-lid-round1.?
+CONNECT cargo-lid-cheese2.? -> cargo-lid-round2.?
+WHY Completes the tapered lid edge with four grey two-stud slopes and two small grey corner slopes.
+
+STEP 822
+ADD cargo-lid-underplate 3021 lightgray
+CONNECT cargo-lid-underplate.? -> cargo-lid-plate1.?
+CONNECT cargo-lid-underplate.? -> cargo-lid-plate2.?
+WHY Turns the lid over and adds a grey two-by-three plate underneath to brace the centre.
+
+STEP 823
+ADD cargo-lid-hinge1 3937 darkgray
+ADD cargo-lid-hinge2 3937 darkgray
+ADD cargo-lid-hinge-pin1 2780 black
+ADD cargo-lid-hinge-pin2 2780 black
+CONNECT cargo-lid-hinge-pin1.pin1 -> cargo-lid-hinge1.?
+CONNECT cargo-lid-hinge-pin2.pin1 -> cargo-lid-hinge2.?
+CONNECT cargo-lid-hinge1.? -> cargo-lid-underplate.?
+CONNECT cargo-lid-hinge2.? -> cargo-lid-underplate.?
+WHY Adds two dark-grey hinge bricks with black friction pins underneath the lid for its box hinge.
+
+STEP 824
+ADD cargo-lid-under-curve1 32803 lightgray
+ADD cargo-lid-under-curve2 32803 lightgray
+CONNECT cargo-lid-under-curve1.? -> cargo-lid-underplate.?
+CONNECT cargo-lid-under-curve2.? -> cargo-lid-underplate.?
+END
+WHY Fits two grey inverted curved bricks underneath the lid beside the hinge brackets.
+
+STEP 825
+ATTACH cargo-box-lid
+CONNECT cargo-box-axle1.axle8 -> cargo-lid-hinge1.?
+CONNECT cargo-box-axle2.axle8 -> cargo-lid-hinge2.?
+WHY Fits the lid hinge brackets onto the two projecting box axles so the lid can open and close.
+
+STEP 826
+ADD cargo-box-hinge-stop2 60483 black
+CONNECT cargo-box-axle2.axle8 -> cargo-box-hinge-stop2.axlehole1 LOCKED
+WHY Adds the second black two-hole retaining block to the opposite hinge axle end.
+
+STEP 827
+ADD cargo-box-hook-spacer1 18654 black
+ADD cargo-box-hook-spacer2 18654 black
+ADD cargo-box-hook1 25214 black
+ADD cargo-box-hook2 25214 black
+CONNECT cargo-box-axle1.axle7~ -> cargo-box-hook-spacer1.hole1 TURNS
+CONNECT cargo-box-axle2.axle7~ -> cargo-box-hook-spacer2.hole1 TURNS
+CONNECT cargo-box-axle1.axle8 -> cargo-box-hook1.? LOCKED
+CONNECT cargo-box-axle2.axle8 -> cargo-box-hook2.? LOCKED
+END
+WHY Turns the box upright and caps its two projecting axles with black spacers and curved hooks for the roof rack.
+
+STEP 828
+ATTACH roof-cargo-box
+CONNECT rack-cross-short1.axle4 -> cargo-box-hook1.? LOCKED
+CONNECT rack-cross-short2.axle4 -> cargo-box-hook2.? LOCKED
+WHY Hooks the completed cargo box onto the first pair of exposed rack crossbar axles.
