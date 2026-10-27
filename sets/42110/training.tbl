@@ -2036,13 +2036,13 @@ ADD p39793-2 39793 black
 ADD p39793-1 39793 black
 ADD p2780-57 2780 black
 ADD p2780-58 2780 black
-CONNECT p6558-33.pin1~ -> p39793-2.hole9 STIFF
-CONNECT p6558-34.pin1~ -> p39793-2.hole8 STIFF
-CONNECT p2780-57.pin2~ -> p39793-2.hole2 STIFF
-CONNECT p2780-58.pin2~ -> p39793-2.hole1 STIFF
-CONNECT p2780-57.pin1~ -> p39793-1.hole9 STIFF
-CONNECT p2780-58.pin1~ -> p39793-1.hole8 STIFF
-WHY Fits the first black three-cylinder guide block onto the blue pin ends and joins the second guide block to it using two black friction pins, aligning their six piston holes in a straight row. The reference guide-block pin seating is slightly offset and remains estimated.
+CONNECT p6558-33.pin1 -> p39793-2.hole9 STIFF
+CONNECT p6558-34.pin1 -> p39793-2.hole8 STIFF
+CONNECT p2780-57.pin2 -> p39793-2.hole2 STIFF
+CONNECT p2780-58.pin2 -> p39793-2.hole1 STIFF
+CONNECT p2780-57.pin1 -> p39793-1.hole9 STIFF
+CONNECT p2780-58.pin1 -> p39793-1.hole8 STIFF
+WHY Fits the first black three-cylinder guide block onto the blue pin ends and joins the second guide block to it using two black friction pins, aligning their six piston holes in a straight row. The source picture shows the black and blue pins fully seated through their respective guide-block holes.
 
 STEP 195
 ADD p4519-24 4519 lightgray

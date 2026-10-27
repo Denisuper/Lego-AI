@@ -1,6 +1,6 @@
 # Defender 42110 transcription
 
-The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 712 estimated endpoints, so the checks do not establish physical geometry or motion.
+The original 496-page booklet and 2,573-piece inventory are preserved. The source build is transcribed through step 860, page 489, followed by step 861 accounting for the sticker sheet. All 2,573 inventory entries match by part and colour, with no notation errors. The table and JSONL match. There are 872 unknown and 706 estimated endpoints, so the checks do not establish physical geometry or motion.
 
 The booklet takes precedence. Philippe Hurbain's [OMR-compliant reference model](https://forums.ldraw.org/thread-23139.html) is a read-only geometry cross-check, saved outside the repository. Its internal yoke and spider representations are accounted for using complete universal-joint inventory part 61903. Model traversal is ordered with the rear axle first to match the booklet's module order; model order does not determine the source sequence.
 
@@ -31,3 +31,5 @@ Step 845 places the black accessory bracket on the roof panel under the rack. Co
 Tracing the step 845 bracket forward to steps 857-858 shows that the storage case covers that bracket. The case now attaches to its three half-pin studs; the separately placed traction-board support no longer claims to attach to the bracket beneath the case. Its own mounting point remains unresolved.
 
 Tracing the identical step 77 pivot connector pair into the same-oriented step 114 nine-hole braces resolves the second brace joins to holes 5 and 6, matching the first side.
+
+The enlarged source view at step 194 shows the black friction pins and blue long pins fully seated in their guide blocks. Six pin-depth estimates based only on the geometric reference offset were removed in favor of the booklet.
