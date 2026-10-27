@@ -18,7 +18,7 @@ ALIASES = {
     "lightgray": "lightbluishgray", "darkgray": "darkbluishgray",
     "brown": "reddishbrown", "anycolor": "nocoloranycolor",
 }
-PARTIAL = {"42006"}
+PARTIAL = {"42006", "42129"}
 
 
 def color(value):
