@@ -15,8 +15,8 @@ ADD tr-pin-2 61332 black
 ADD tr-beam-2 99773 lightgray
 CONNECT tr-pin-1.pin2 -> tr-beam-1.hole1 STIFF
 CONNECT tr-pin-2.pin2 -> tr-beam-1.hole5 STIFF
-CONNECT tr-pin-1.pin2 -> tr-beam-2.hole1 STIFF
-CONNECT tr-pin-2.pin2 -> tr-beam-2.hole5 STIFF
+CONNECT tr-pin-1.pin1 -> tr-beam-2.hole1 STIFF
+CONNECT tr-pin-2.pin1 -> tr-beam-2.hole5 STIFF
 WHY Starts the main chassis with 2 triangle beams and 2 friction pins. It sits toward the rear of the truck, low on the truck. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the triangle beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 5 slots 2 motors onto them.
 
 STEP 2
@@ -164,7 +164,7 @@ WHY Adds 2 24-tooth gears and 2 5-long axles to the main chassis. It sits toward
 STEP 11
 ADD tr-beam3-3 32523 white
 ADD tr-beam3-4 32523 white
-ADD tr-beam2-1 43857 green
+ADD tr-beam2-1 43857 brightgreen
 ADD tr-panel3-1 15458 black
 ADD tr-panel3-2 15458 black
 CONNECT tr-apin-5.pin1 -> tr-beam3-3.hole1 STIFF
@@ -278,8 +278,8 @@ CONNECT ch1-pin-5.pin1 -> ch1-beam3-3.hole9 STIFF
 WHY Starts the first gearbox (the gear stage between the motors and the axles) with 2 3x3 beams, a 3-hole beam, 4 friction pins and 2 long pins; it reduces the motor speed and passes the drive toward the axles. It sits toward the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The long pins grip the 3x3 beam with friction, making a rigid join (10 such joints in this step). Its unused ends stay free because step 16 slots 4 5-hole beams onto them.
 
 STEP 16
-ADD ch1-beam5-1 32316 olive
-ADD ch1-beam5-2 32316 olive
+ADD ch1-beam5-1 32316 olivegreen
+ADD ch1-beam5-2 32316 olivegreen
 ADD ch1-axle5-1 15462 brown
 ADD ch1-gear-1 3648b darkgray
 ADD ch1-gear-2 94925 lightgray
@@ -746,8 +746,8 @@ ADD tr-conn-28 65487 lightgray
 ADD tr-apin-17 43093 blue
 ADD tr-apin-18 43093 blue
 ADD tr-conn-29 65487 lightgray
-ADD tr-beam5-1 32316 olive
-ADD tr-beam5-2 32316 olive
+ADD tr-beam5-1 32316 olivegreen
+ADD tr-beam5-2 32316 olivegreen
 CONNECT tr-apin-17.axle1 -> tr-conn-28.hole1 TURNS
 CONNECT tr-conn-28.pin1 -> tr-beam2-3.hole4 STIFF
 CONNECT tr-apin-18.axle1 -> tr-conn-29.hole1 TURNS
@@ -944,7 +944,7 @@ ADD tr-axle3-6 4519 lightgray
 ADD tr-conn-33 59443 darkgray
 ADD tr-conn-34 63869 lightgray
 ADD tr-apin-21 3749 tan
-ADD tr-part-1 41530 silver
+ADD tr-part-1 41530 flatsilver
 CONNECT tr-axle3-6.axle1 -> tr-conn-32.axlehole1 LOCKED
 CONNECT tr-axle3-4.axle1 -> tr-conn-32.axlehole2 LOCKED
 CONNECT tr-axle3-6.axle2 -> tr-conn-34.axlehole1 LOCKED
@@ -1505,7 +1505,7 @@ ADD ra-pin-15 61332 black
 ADD ra-pin-16 61332 black
 ADD ra-beam3-6 32523 white
 ADD ra-beam-2 18654 black
-ADD ra-part-1 87994 green
+ADD ra-part-1 87994 brightgreen
 ADD ra-pin-17 66906 red
 CONNECT ra-pin-14.pin2 -> ra-beam-1.hole2 STIFF
 CONNECT ra-pin-16.pin1 -> ra-beam-1.hole3 STIFF
@@ -2886,8 +2886,8 @@ WHY Starts the first headlight with a 3-long axle, 2 pin connectors, a perpendic
 STEP 189
 ADD hl1-pin-2 18677 black
 ADD hl1-plate-1 3623 black
-ADD hl1-tile-1 98138 clear
-ADD hl1-tile-2 98138 clear
+ADD hl1-tile-1 98138 transclear
+ADD hl1-tile-2 98138 transclear
 ADD hl1-tile-3 3070b black
 CONNECT hl1-pin-1.pin2 -> hl1-pin-2.?
 CONNECT hl1-pin-2.? -> hl1-plate-1.?
@@ -2913,8 +2913,8 @@ WHY Starts the second headlight with a 3-long axle, 2 pin connectors, a perpendi
 STEP 191
 ADD hl2-pin-2 18677 black
 ADD hl2-plate-1 3623 black
-ADD hl2-tile-1 98138 clear
-ADD hl2-tile-2 98138 clear
+ADD hl2-tile-1 98138 transclear
+ADD hl2-tile-2 98138 transclear
 ADD hl2-tile-3 3070b black
 CONNECT hl2-pin-2.? -> hl2-plate-1.?
 CONNECT hl2-pin-1.pin1 -> hl2-pin-2.?
@@ -2980,7 +2980,7 @@ ADD en-tile-2 3068b lightgray
 ADD en-tile-3 98138 black
 ADD en-pin-1 11458 darkgray
 ADD en-pin-2 3673 lightgray
-ADD en-part-1 78c03 silver
+ADD en-part-1 78c03 flatsilver
 CONNECT en-tile-2.? -> en-plate-5.?
 CONNECT en-tile-3.? -> en-plate-6.?
 CONNECT en-tile-3.? -> en-pin-1.?
@@ -3921,11 +3921,11 @@ STEP 259
 ADD crb-apin-7 43093 blue
 ADD crb-tile-1 15535 black
 ADD crb-axle-5 4032a black
-ADD crb-plate-1 2654 clear
+ADD crb-plate-1 2654 transclear
 ADD crb-apin-8 43093 blue
 ADD crb-tile-2 15535 black
 ADD crb-axle-6 4032a black
-ADD crb-plate-2 2654 clear
+ADD crb-plate-2 2654 transclear
 CONNECT crb-apin-7.axle1 -> crb-conn-2.hole1 TURNS
 CONNECT crb-apin-8.axle1 -> crb-conn-4.hole1 TURNS
 CONNECT crb-apin-7.pin1 -> crb-axle-5.?
@@ -4327,8 +4327,8 @@ STEP 290
 ADD ws2-axle2-1 32062 red
 ADD ws2-conn-3 6536 darkgray
 ADD ws2-pin-1 61332 black
-ADD ws2-dish-1 43898 clear
-ADD ws2-dish-2 43898 clear
+ADD ws2-dish-1 43898 transclear
+ADD ws2-dish-2 43898 transclear
 ADD ws2-dish-3 43898 black
 CONNECT ws2-axle2-1.axle1 -> ws2-conn-3.axlehole1 LOCKED
 CONNECT ws2-axle2-1.axle2 -> ws2-conn-2.axlehole2 LOCKED
@@ -4969,7 +4969,7 @@ CONNECT tr-pin-147.pin1 -> tr-beam3-22.hole3 STIFF
 WHY Adds 2 3-hole beams, a 3x7 panel and 4 friction pins to the main chassis. It sits at the rear of the truck, low on the truck. It is fixed onto the 2 friction pins from step 126. The friction pins grip the 3x7 panel with friction, making a rigid join (10 such joints in this step). Step 339 continues from here by adding 2 3x5 L-beams, a 7-hole beam and 8 other parts.
 
 STEP 337
-ADD tb-beam11-1 32525 green
+ADD tb-beam11-1 32525 brightgreen
 ADD tb-pin-1 61332 black
 ADD tb-pin-2 61332 black
 ADD tb-pin-3 61332 black
@@ -4981,8 +4981,8 @@ CONNECT tb-pin-4.pin2 -> tb-beam11-1.hole11 STIFF
 WHY Starts the back of the truck bed with an 11-hole beam and 4 friction pins; it makes the back wall of the truck bed. It sits at the rear of the truck, at mid height. Nothing from earlier steps is touched yet, so this starts a new sub-assembly that later steps will join up. The friction pins grip the 11-hole beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 338 slots 4 3x5 L-beams onto them.
 
 STEP 338
-ADD tb-beam3-1 32526 green
-ADD tb-beam3-2 32526 green
+ADD tb-beam3-1 32526 brightgreen
+ADD tb-beam3-2 32526 brightgreen
 ADD tb-pin-5 61332 black
 ADD tb-pin-6 61332 black
 ADD tb-pin-7 61332 black
@@ -4998,8 +4998,8 @@ CONNECT tb-pin-8.pin1 -> tb-beam3-2.hole4 STIFF
 WHY Adds 2 3x5 L-beams and 4 friction pins to the back of the truck bed. It sits at the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 337. The friction pins grip the 3x5 L-beam with friction, making a rigid join (8 such joints in this step). Its unused ends stay free because step 339 slots 4 3x5 L-beams onto them.
 
 STEP 339
-ADD tb-beam3-3 32526 green
-ADD tb-beam3-4 32526 green
+ADD tb-beam3-3 32526 brightgreen
+ADD tb-beam3-4 32526 brightgreen
 ADD tb-pin-9 42924 blue
 ADD tb-pin-10 42924 blue
 ADD tb-pin-11 61332 black
@@ -5008,7 +5008,7 @@ ADD tb-pin-13 61332 black
 ADD tb-pin-14 61332 black
 ADD tb-pin-15 42924 blue
 ADD tb-pin-16 42924 blue
-ADD tb-beam7-1 32524 green
+ADD tb-beam7-1 32524 brightgreen
 CONNECT tb-pin-14.pin2 -> tb-beam3-3.hole1 STIFF
 CONNECT tb-pin-13.pin2 -> tb-beam3-3.hole2 STIFF
 CONNECT tb-pin-10.pin2 -> tb-beam3-3.hole4 STIFF
@@ -5035,12 +5035,12 @@ STEP 340
 ADD tr-plate-6 3020 black
 ADD tr-tile-9 3069b transred
 ADD tr-tile-10 3069b transred
-ADD tr-tile-11 3069b clear
+ADD tr-tile-11 3069b transclear
 ADD tr-tile-12 3069b transorange
 ADD tr-plate-7 3020 black
 ADD tr-tile-13 3069b transred
 ADD tr-tile-14 3069b transred
-ADD tr-tile-15 3069b clear
+ADD tr-tile-15 3069b transclear
 ADD tr-tile-16 3069b transorange
 CONNECT tr-plate-6.? -> tr-tile-10.?
 CONNECT tr-plate-6.? -> tr-tile-11.?
@@ -5207,7 +5207,7 @@ WHY Finishes the floor of the truck bed with 2 round pin connectors, a 13-hole b
 STEP 349
 ADD tr-pin-150 42924 blue
 ADD tr-beam-11 18654 darkgray
-ADD tr-beam2-19 43857 green
+ADD tr-beam2-19 43857 brightgreen
 CONNECT tr-pin-150.pin1 -> tr-beam11-2.hole2 STIFF
 CONNECT tr-pin-150.pin2 -> tr-beam-11.hole1 STIFF
 CONNECT tr-pin-150.pin3 -> tr-beam2-19.hole2 STIFF
@@ -5245,12 +5245,12 @@ CONNECT tr-pin-164.pin1 -> tr-panel3-12.hole5 STIFF
 WHY Adds 14 long pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 11-hole beam from step 343 and 11-hole beam from step 341. The long pins grip the 11-hole beam with friction, making a rigid join (14 such joints in this step). Its unused ends stay free because step 351 slots 10 11-hole beams and 4 7-hole beams onto them.
 
 STEP 351
-ADD tr-beam7-2 32524 green
-ADD tr-beam11-8 32525 green
-ADD tr-beam11-9 32525 green
-ADD tr-beam7-3 32524 green
-ADD tr-beam11-10 32525 green
-ADD tr-beam11-11 32525 green
+ADD tr-beam7-2 32524 brightgreen
+ADD tr-beam11-8 32525 brightgreen
+ADD tr-beam11-9 32525 brightgreen
+ADD tr-beam7-3 32524 brightgreen
+ADD tr-beam11-10 32525 brightgreen
+ADD tr-beam11-11 32525 brightgreen
 CONNECT tr-pin-152.pin2 -> tr-beam7-2.hole1 STIFF
 CONNECT tr-pin-151.pin2 -> tr-beam7-2.hole7 STIFF
 CONNECT tr-pin-155.pin2 -> tr-beam11-8.hole1 STIFF
@@ -5295,14 +5295,14 @@ CONNECT tr-pin-176.pin1 -> tr-beam11-11.hole9 STIFF
 WHY Adds 12 friction pins to the main chassis. It sits at the rear of the truck, at mid height. It is fixed onto the 4 11-hole beams and 2 7-hole beams from step 351. The friction pins grip the 11-hole beam with friction, making a rigid join (12 such joints in this step). Its unused ends stay free because step 353 slots 6 11-hole beams, 4 7-hole beams and 2 other parts onto them.
 
 STEP 353
-ADD tr-beam2-20 43857 green
-ADD tr-beam2-21 43857 green
-ADD tr-beam7-4 32524 green
-ADD tr-beam11-12 32525 green
-ADD tr-beam11-13 32525 green
-ADD tr-beam7-5 32524 green
-ADD tr-beam11-14 32525 green
-ADD tr-beam11-15 32525 green
+ADD tr-beam2-20 43857 brightgreen
+ADD tr-beam2-21 43857 brightgreen
+ADD tr-beam7-4 32524 brightgreen
+ADD tr-beam11-12 32525 brightgreen
+ADD tr-beam11-13 32525 brightgreen
+ADD tr-beam7-5 32524 brightgreen
+ADD tr-beam11-14 32525 brightgreen
+ADD tr-beam11-15 32525 brightgreen
 CONNECT tr-pin-165.pin2 -> tr-beam2-20.hole1 STIFF
 CONNECT tr-pin-151.pin3 -> tr-beam2-20.hole2 STIFF
 CONNECT tr-pin-171.pin2 -> tr-beam2-21.hole1 STIFF
@@ -6121,22 +6121,18 @@ STEP 399
 ADD tr-axle3-19 4519 lightgray
 ADD tr-axle-17 4032a black
 ADD tr-gear-17 35442 black
-ADD tr-axle-18 4032a black
 ADD tr-axle3-20 4519 lightgray
 ADD tr-axle-19 4032a black
 ADD tr-gear-18 35442 black
-ADD tr-axle-20 4032a black
 CONNECT tr-axle3-19.axle1 -> tr-wheel-2.?
 CONNECT tr-axle3-19.axle1 -> tr-wheel-3.?
 CONNECT tr-axle3-19.axle3 -> tr-gear-17.?
 CONNECT tr-axle-17.? -> tr-gear-17.?
-CONNECT tr-gear-17.? -> tr-axle-18.?
 CONNECT tr-axle3-20.axle3 -> tr-wheel-8.?
 CONNECT tr-axle3-20.axle3 -> tr-wheel-9.?
 CONNECT tr-axle3-20.axle1 -> tr-gear-18.?
 CONNECT tr-axle-19.? -> tr-gear-18.?
-CONNECT tr-gear-18.? -> tr-axle-20.?
-WHY Adds 2 gears, 4 axles and 2 3-long axles to the main chassis. It sits in the middle of the truck, low on the truck. It is fixed onto the 2 wheel rims and 2 tyres from step 398.
+WHY Adds two front wheel hub details, each built from a three-stud axle, a black splat plate and a black round plate, to the front wheels.
 
 STEP 400
 ADD tr-axle3-21 4519 lightgray
