@@ -34,7 +34,7 @@ Tracing the identical step 77 pivot connector pair into the same-oriented step 1
 
 The enlarged source view at step 194 shows the black friction pins and blue long pins fully seated in their guide blocks. Six pin-depth estimates based only on the geometric reference offset were removed in favor of the booklet.
 
-A source review compared the part callouts, order and selected joins for steps 1-257 (printed pages 6-141), including the rear differential, front axle, gearbox and engine guide. It is not a full geometry proof: unresolved and estimated endpoints remain, and the rest of the booklet has not received the same review.
+A source review compared the part callouts, order and selected joins for steps 1-334 (printed pages 6-202), including the rear differential, front axle, gearbox and engine guide. It is not a full geometry proof: unresolved and estimated endpoints remain, and the rest of the booklet has not received the same review.
 
 The source step 258 inset calls for two identical grey and red pin assemblies seated through the matching beam ends. The second pin seating is now specified like the first rather than relying on an offset in the reference model.
 
