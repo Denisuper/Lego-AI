@@ -18,8 +18,8 @@ WHY Starts the motor mounting structure by fitting two black friction pins into 
 
 STEP 2
 ADD tr-beam-2 99773 lightgray
-CONNECT tr-pin-1.pin1 -> tr-beam-2.?
-CONNECT tr-pin-2.pin1 -> tr-beam-2.?
+CONNECT tr-pin-1.? -> tr-beam-2.?
+CONNECT tr-pin-2.? -> tr-beam-2.?
 WHY Adds a second triangular beam alongside the first on the exposed pin ends.
 
 STEP 3
