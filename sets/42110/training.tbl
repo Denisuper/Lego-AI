@@ -4556,7 +4556,9 @@ STEP 441
 ATTACH left-body-side-frame
 CONNECT p6558-54.pin3 -> p24119-5.hole9 STIFF
 CONNECT p55615-1.pin3 -> p24119-5.hole7~ STIFF
-WHY Places the left body frame beside the chassis, seating its lower front panel on the exposed blue pin and grey hub pin at the floor support. The grey hub pin enters the near end of a longer panel bore, so seating depth is estimated. Align the rear sill holes with the floor end before adding the retaining brace next.
+CONNECT p6558-78.pin3 -> p15458-2.? STIFF
+CONNECT p6558-79.pin3 -> p15458-2.? STIFF
+WHY Places the left body frame beside the chassis, seating its lower front panel on the exposed blue pin and grey hub pin at the floor support. The grey hub pin enters the near end of a longer panel bore, so seating depth is estimated. The two long sill pins also enter the floor panel as indicated by the source arrows; their exact floor-hole labels remain unresolved.
 
 STEP 442
 ADD p43093-51 43093 blue
@@ -4712,9 +4714,11 @@ STEP 457
 ATTACH right-body-side-frame
 CONNECT p6558-60.pin3 -> p24119-7.hole4 STIFF
 CONNECT p55615-2.pin3 -> p24119-7.hole5~ STIFF
+CONNECT p6558-82.pin3 -> p15458-3.? STIFF
+CONNECT p6558-83.pin3 -> p15458-3.? STIFF
 CONNECT p11214-15.pin2 -> p39794-1.hole5 STIFF
 CONNECT p6558-85.pin3 -> p39794-1.? STIFF
-WHY Fits the second cabin side frame to the chassis at the lower sill and overhead frame. The grey hub pin enters a deep sill bore with estimated axial seating. The upper blue-pin receiving label remains unresolved in the rectangular frame catalog, as on the opposite side.
+WHY Fits the second cabin side frame to the chassis at the lower sill and overhead frame. The grey hub pin enters a deep sill bore with estimated axial seating. The two long sill pins enter the floor panel as on the opposite side; their floor-hole labels and the upper blue-pin receiving label remain unresolved.
 
 STEP 458
 ADD p32140-20 32140 black
