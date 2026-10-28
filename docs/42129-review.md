@@ -217,3 +217,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 87?88, steps 116 and 120: the two gray axles enter the two separate cross holes of the central connector, and each black long axle-pin enters the cross hole of its triangular panel.
 
 - Source pages 86, 90, and 92, steps 115, 125 and 127: the upright support attaches to the earlier beams on the four previously fitted friction pins. The green cable clip sits above the earlier blue clip on the black axle-pin from step 78; it is not connected directly to the newly added L-beam.
+
+- Source pages 94?95, steps 129?130: both chassis panel extensions fit the earlier panels through their paired black pins. The rear-axle support begins with pins in holes 2 and 4 of the five-hole beam.

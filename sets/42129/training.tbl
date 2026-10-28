@@ -1279,16 +1279,18 @@ CONNECT tr-pin-85.? -> tr-panel3-7.?
 CONNECT tr-pin-86.? -> tr-panel3-7.?
 CONNECT tr-pin-87.? -> tr-panel3-8.?
 CONNECT tr-pin-88.? -> tr-panel3-8.?
-CONNECT tr-panel3-7.? -> tr-panel3-3.?
-CONNECT tr-panel3-8.? -> tr-panel3-4.?
+CONNECT tr-pin-85.? -> tr-panel3-3.?
+CONNECT tr-pin-86.? -> tr-panel3-3.?
+CONNECT tr-pin-87.? -> tr-panel3-4.?
+CONNECT tr-pin-88.? -> tr-panel3-4.?
 WHY Builds two black panel extensions with two black pins each, then fits them to the existing chassis panels.
 
 STEP 130
 ADD ra-beam5-1 32316 black
 ADD ra-pin-1 61332 black
 ADD ra-pin-2 61332 black
-CONNECT ra-pin-1.? -> ra-beam5-1.?
-CONNECT ra-pin-2.? -> ra-beam5-1.?
+CONNECT ra-pin-1.? -> ra-beam5-1.hole2
+CONNECT ra-pin-2.? -> ra-beam5-1.hole4
 WHY Starts the rear axle assembly with two black friction pins in a black five-hole beam.
 
 STEP 131
