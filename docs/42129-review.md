@@ -221,3 +221,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 94?95, steps 129?130: both chassis panel extensions fit the earlier panels through their paired black pins. The rear-axle support begins with pins in holes 2 and 4 of the five-hole beam.
 
 - Source pages 95?96, steps 132 and 135: the gray axles pass through the cross holes at the ends of the thin three-hole beams and the gray connectors. The red drive axle enters the wheel joint?s axle socket.
+
+- Source pages 95?97, steps 132, 136?138: each outer thin three-hole beam spans a pair of gray axles and the intervening blue pin, rather than connecting only to the newly inserted axle. Its two end cross holes and center round hole are recorded; left/right beam orientation is symmetric.

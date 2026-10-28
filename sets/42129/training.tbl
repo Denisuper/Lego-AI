@@ -1350,9 +1350,13 @@ WHY Inserts two blue long pins beside the grey axles.
 STEP 138
 ADD ra-beam3-3 6632 black
 ADD ra-beam3-4 6632 black
-CONNECT ra-beam3-3.? -> ra-axle3-3.?
-CONNECT ra-beam3-4.? -> ra-axle3-4.?
-WHY Fits two black thin three-hole beams over the projecting grey axles.
+CONNECT ra-beam3-3.axlehole1 -> ra-axle3-3.?
+CONNECT ra-beam3-3.axlehole2 -> ra-axle3-1.?
+CONNECT ra-beam3-3.hole1 -> ra-pin-5.?
+CONNECT ra-beam3-4.axlehole1 -> ra-axle3-4.?
+CONNECT ra-beam3-4.axlehole2 -> ra-axle3-2.?
+CONNECT ra-beam3-4.hole1 -> ra-pin-6.?
+WHY Fits two black thin three-hole beams over the two gray axles and the blue center pin on each side of the hub.
 
 STEP 139
 ADD ra-beam4-1 32449 darkgray
