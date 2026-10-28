@@ -1305,10 +1305,10 @@ ADD ra-axle3-1 4519 lightgray
 ADD ra-axle3-2 4519 lightgray
 ADD ra-beam3-1 6632 black
 ADD ra-beam3-2 6632 black
-CONNECT ra-axle3-1.? -> ra-beam3-1.?
-CONNECT ra-axle3-2.? -> ra-beam3-2.?
-CONNECT ra-axle3-1.? -> ra-conn-1.?
-CONNECT ra-axle3-2.? -> ra-conn-2.?
+CONNECT ra-axle3-1.? -> ra-beam3-1.axlehole1
+CONNECT ra-axle3-2.? -> ra-beam3-2.axlehole1
+CONNECT ra-axle3-1.? -> ra-conn-1.axlehole1
+CONNECT ra-axle3-2.? -> ra-conn-2.axlehole1
 WHY Builds two black thin-beam and grey three-stud axle pairs and fits them to the two grey connectors.
 
 STEP 133
@@ -1329,7 +1329,7 @@ ADD ra-axle4-1 3705 red
 ADD ra-ball-1 52731 lightgray
 ADD ra-gear-1 46490 lightgray
 CONNECT ra-ball-1.? -> ra-gear-1.?
-CONNECT ra-axle4-1.? -> ra-ball-1.?
+CONNECT ra-axle4-1.? -> ra-ball-1.axlehole1
 CONNECT ra-gear-1.? -> ra-beam5-1.?
 WHY Fits the grey joint and red four-stud axle into the wheel reduction hub, then attaches the hub to the axle support.
 

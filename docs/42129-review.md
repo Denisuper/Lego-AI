@@ -219,3 +219,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 86, 90, and 92, steps 115, 125 and 127: the upright support attaches to the earlier beams on the four previously fitted friction pins. The green cable clip sits above the earlier blue clip on the black axle-pin from step 78; it is not connected directly to the newly added L-beam.
 
 - Source pages 94?95, steps 129?130: both chassis panel extensions fit the earlier panels through their paired black pins. The rear-axle support begins with pins in holes 2 and 4 of the five-hole beam.
+
+- Source pages 95?96, steps 132 and 135: the gray axles pass through the cross holes at the ends of the thin three-hole beams and the gray connectors. The red drive axle enters the wheel joint?s axle socket.
