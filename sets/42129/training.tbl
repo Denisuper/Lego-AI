@@ -172,6 +172,8 @@ CONNECT tr-axle5-3.axle3 -> tr-gear-6.axlehole1 LOCKED
 CONNECT tr-axle5-3.axle4 -> tr-beam9-1.hole2 TURNS
 CONNECT tr-axle5-2.axle5 -> cont-motor-2.?
 CONNECT tr-axle5-3.axle5 -> cont-motor-1.?
+MESH tr-gear-5.teeth tr-gear-1.teeth
+MESH tr-gear-6.teeth tr-gear-1.teeth
 WHY Adds two five-stud axles and two 24-tooth gears to the motor outputs.
 
 STEP 17

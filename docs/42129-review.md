@@ -167,3 +167,5 @@ Drivetrain interface review: source step 13, printed page 10, shows three tan be
 Front drivetrain interface review: source steps 231-233 on printed pages 141-142 show the black input bevel gear engaging the red outer ring gear of the front differential. That drive mesh is now recorded; the exact axle and bearing endpoints remain uncertain.
 
 Rear drivetrain interface review: printed pages 106-107 trace the blue gear to step 141 and show the black bevel gear added in step 170 engaging it. That mesh is now recorded; the axle and support endpoints remain uncertain.
+
+Motor differential interface review: source step 16 on printed page 13 shows both grey 24-tooth motor gears engaging the red differential?s exterior teeth. These meshes are recorded separately from the internal bevel-gear contacts.
