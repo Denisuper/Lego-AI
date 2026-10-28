@@ -12,22 +12,22 @@ STEP 1
 ADD tr-beam-1 99773 lightgray
 ADD tr-pin-1 61332 black
 ADD tr-pin-2 61332 black
-CONNECT tr-pin-1.pin2 -> tr-beam-1.?
-CONNECT tr-pin-2.pin2 -> tr-beam-1.?
+CONNECT tr-pin-1.pin2 -> tr-beam-1.hole1
+CONNECT tr-pin-2.pin2 -> tr-beam-1.hole5
 WHY Starts the motor mounting structure by fitting two black friction pins into a grey triangular beam.
 
 STEP 2
 ADD tr-beam-2 99773 lightgray
-CONNECT tr-pin-1.? -> tr-beam-2.?
-CONNECT tr-pin-2.? -> tr-beam-2.?
+CONNECT tr-pin-1.? -> tr-beam-2.hole1
+CONNECT tr-pin-2.? -> tr-beam-2.hole5
 WHY Adds a second triangular beam alongside the first on the exposed pin ends.
 
 STEP 3
 ADD tr-axle5-1 32073 yellow
 ADD tr-conn-1 42135 darkgray
 CONNECT tr-axle5-1.axle1 -> tr-conn-1.axlehole2 LOCKED
-CONNECT tr-axle5-1.? -> tr-beam-1.?
-CONNECT tr-axle5-1.? -> tr-beam-2.?
+CONNECT tr-axle5-1.? -> tr-beam-1.axlehole2
+CONNECT tr-axle5-1.? -> tr-beam-2.axlehole2
 WHY Keys the yellow five-stud axle into the grey connector and slides it through the paired triangle beams.
 
 STEP 4
@@ -35,21 +35,21 @@ ADD tr-bush-1 3713 red
 ADD tr-conn-2 27940 darkgray
 ADD tr-conn-3 44874 black
 CONNECT tr-axle5-1.? -> tr-bush-1.axlehole1
-CONNECT tr-conn-2.? -> tr-beam-1.?
-CONNECT tr-conn-2.? -> tr-beam-2.?
-CONNECT tr-conn-3.? -> tr-beam-1.?
-CONNECT tr-conn-3.? -> tr-beam-2.?
+CONNECT tr-conn-2.? -> tr-beam-1.axlehole1
+CONNECT tr-conn-2.? -> tr-beam-2.axlehole1
+CONNECT tr-conn-3.? -> tr-beam-1.hole4
+CONNECT tr-conn-3.? -> tr-beam-2.hole4
 WHY Adds the red half bush and two pin hubs to the first pair of triangle beams.
 
 STEP 5
 ADD tr-beam-3 99773 lightgray
 ADD tr-beam-4 99773 lightgray
-CONNECT tr-axle5-1.? -> tr-beam-3.?
-CONNECT tr-axle5-1.? -> tr-beam-4.?
-CONNECT tr-conn-2.? -> tr-beam-3.?
-CONNECT tr-conn-2.? -> tr-beam-4.?
-CONNECT tr-conn-3.? -> tr-beam-3.?
-CONNECT tr-conn-3.? -> tr-beam-4.?
+CONNECT tr-axle5-1.? -> tr-beam-3.axlehole2
+CONNECT tr-axle5-1.? -> tr-beam-4.axlehole2
+CONNECT tr-conn-2.? -> tr-beam-3.axlehole1
+CONNECT tr-conn-2.? -> tr-beam-4.axlehole1
+CONNECT tr-conn-3.? -> tr-beam-3.hole4
+CONNECT tr-conn-3.? -> tr-beam-4.hole4
 WHY Slides two more triangular beams onto the axle and hubs, forming the opposite side of the motor mount.
 
 STEP 6
@@ -57,10 +57,10 @@ ADD tr-conn-4 42135 darkgray
 ADD tr-pin-3 61332 black
 ADD tr-pin-4 61332 black
 CONNECT tr-axle5-1.? -> tr-conn-4.axlehole2
-CONNECT tr-pin-3.? -> tr-beam-3.?
-CONNECT tr-pin-3.? -> tr-beam-4.?
-CONNECT tr-pin-4.? -> tr-beam-3.?
-CONNECT tr-pin-4.? -> tr-beam-4.?
+CONNECT tr-pin-3.? -> tr-beam-3.hole1
+CONNECT tr-pin-3.? -> tr-beam-4.hole1
+CONNECT tr-pin-4.? -> tr-beam-3.hole5
+CONNECT tr-pin-4.? -> tr-beam-4.hole5
 WHY Adds the second grey axle connector and two black friction pins to finish the paired triangle supports.
 
 STEP 7
@@ -1370,6 +1370,12 @@ CONNECT ra-bevel-31.? -> ra-gear-3.?
 CONNECT ra-bevel-32.? -> ra-gear-3.?
 CONNECT ra-bevel-33.? -> ra-gear-3.?
 CONNECT ra-bevel-34.? -> ra-gear-3.?
+MESH ra-bevel-31.teeth ra-bevel-30.teeth
+MESH ra-bevel-31.teeth ra-bevel-34.teeth
+MESH ra-bevel-32.teeth ra-bevel-30.teeth
+MESH ra-bevel-32.teeth ra-bevel-34.teeth
+MESH ra-bevel-33.teeth ra-bevel-30.teeth
+MESH ra-bevel-33.teeth ra-bevel-34.teeth
 WHY Builds the differential from its grey case, five tan bevel gears, red ring gear and short red axle, then fits it to the driving-ring assembly.
 
 STEP 143
@@ -1752,9 +1758,9 @@ WHY Builds two grey joint shafts and adds them with two grey gears to the rear a
 
 STEP 187
 ADD ra-gear-10 18946 red
-CONNECT ra-gear-10.? -> ra3-axle5-1.?
+CONNECT ra-gear-10.? -> ra-axle5-1.?
 MESH ra-gear-10.teeth ra-gear-6.teeth
-WHY Fits the second red clutch gear on the earlier rear-drive support shaft, meshing with the adjacent grey gear.
+WHY Fits the second red clutch gear on the yellow shaft from step 168, meshing with the adjacent grey gear.
 
 STEP 188
 GROUP rear-axle-housing
@@ -2213,6 +2219,12 @@ CONNECT fa-bevel-11.? -> fa-gear-1.?
 CONNECT fa-bevel-12.? -> fa-gear-1.?
 CONNECT fa-bevel-13.? -> fa-gear-1.?
 CONNECT fa-bevel-14.? -> fa-gear-1.?
+MESH fa-bevel-11.teeth fa-bevel-10.teeth
+MESH fa-bevel-11.teeth fa-bevel-14.teeth
+MESH fa-bevel-12.teeth fa-bevel-10.teeth
+MESH fa-bevel-12.teeth fa-bevel-14.teeth
+MESH fa-bevel-13.teeth fa-bevel-10.teeth
+MESH fa-bevel-13.teeth fa-bevel-14.teeth
 WHY Builds the differential using a grey case, five tan bevel gears and a red ring gear, then fits it inside the front axle frame.
 
 STEP 232
