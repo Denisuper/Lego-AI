@@ -1752,8 +1752,9 @@ WHY Builds two grey joint shafts and adds them with two grey gears to the rear a
 
 STEP 187
 ADD ra-gear-10 18946 red
-CONNECT ra-gear-10.? -> ra-axle5-2.?
-WHY Adds the second red clutch gear to the rear axle frame.
+CONNECT ra-gear-10.? -> ra3-axle5-1.?
+MESH ra-gear-10.teeth ra-gear-6.teeth
+WHY Fits the second red clutch gear on the earlier rear-drive support shaft, meshing with the adjacent grey gear.
 
 STEP 188
 GROUP rear-axle-housing

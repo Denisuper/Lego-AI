@@ -169,3 +169,5 @@ Front drivetrain interface review: source steps 231-233 on printed pages 141-142
 Rear drivetrain interface review: printed pages 106-107 trace the blue gear to step 141 and show the black bevel gear added in step 170 engaging it. That mesh is now recorded; the axle and support endpoints remain uncertain.
 
 Motor differential interface review: source step 16 on printed page 13 shows both grey 24-tooth motor gears engaging the red differential?s exterior teeth. These meshes are recorded separately from the internal bevel-gear contacts.
+
+Rear-drive shaft review: comparing source steps 177, 184 and 187 on pages 110, 113 and 114 shows the second red clutch gear on the yellow shaft from the earlier drive support, not on the later shaft installed with the lower grey gear. The shaft reference is corrected and its visible mesh with the adjacent grey gear is recorded.
