@@ -179,3 +179,5 @@ Motor support review: source steps 1-6 on pages 6-7 show paired triangular beams
 Gearbox support review: source step 26 inset sequence on page 21 shows the long blue pins in the ends of the white three-hole beam and black pins securing the olive beams to the white supports. The two white-beam receiving holes are identified, and the olive beam connections now name the actual intervening pins rather than claiming direct beam-to-beam joints. Hidden pin and hole positions remain uncertain.
 
 Gearbox drive review: the subassembly on page 21 and its installation on pages 22-24 establish which gears share the brown shaft and which flank it. The step 27 grey gear meshes with its 16-tooth gear, the step 28 small gear with its 24-tooth gear, and the grey gear added in step 30 meshes with the adjacent red clutch gear. These visible contacts are now recorded; axle-bearing points remain uncertain.
+
+Lock-motor gearing review: printed pages 25-28 show the prepared motor shaft and the adjacent seven-stud shaft from step 28. The two grey sixteen-tooth gears installed in step 36 engage each other; that mesh is now recorded. The shaft bearing points remain uncertain.

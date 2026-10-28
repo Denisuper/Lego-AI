@@ -426,6 +426,7 @@ ADD tr-gear-13 94925 lightgray
 ADD tr-gear-14 94925 lightgray
 CONNECT tr-gear-13.? -> dlm-axle5-1.?
 CONNECT tr-gear-14.? -> tr-axle7-2.?
+MESH tr-gear-13.teeth tr-gear-14.teeth
 WHY Turns the chassis and installs two grey sixteen-tooth gears on the illustrated shafts.
 
 STEP 37
