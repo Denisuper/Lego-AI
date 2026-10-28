@@ -512,15 +512,16 @@ WHY Slides a white perpendicular connector and a second dark-grey two-hole conne
 STEP 43
 ADD ch2-pin-1 61332 black
 ADD ch2-conn-2 62462 white
-CONNECT ch2-pin-1.? -> ch2-beam2-2.?
-CONNECT ch2-conn-2.? -> ch2-pin-1.?
+CONNECT ch2-pin-1.? -> ch2-beam2-2.hole1
+CONNECT ch2-pin-1.? -> ch2-conn-2.hole1
 WHY Adds a black friction pin and a white round connector to the second chassis subassembly.
 
 STEP 44
 ADD ch2-beam2-3 32140 darkgray
 ADD ch2-conn-3 65489 lightgray
 CONNECT ch2-axle9-1.? -> ch2-beam2-3.axlehole1 LOCKED
-CONNECT ch2-conn-3.? -> ch2-beam2-3.?
+CONNECT ch2-conn-3.? -> ch2-beam2-3.hole1
+CONNECT ch2-conn-3.? -> ch2-beam2-3.hole3
 WHY Adds a dark-grey L-beam and a grey four-pin connector to the yellow axle assembly.
 
 STEP 45
@@ -535,20 +536,21 @@ ADD ch2-beam2-4 32140 darkgray
 ADD ch2-beam2-5 60483 darkgray
 CONNECT ch2-axle9-1.? -> ch2-beam2-4.axlehole1 LOCKED
 CONNECT ch2-axle9-1.? -> ch2-beam2-5.axlehole1 LOCKED
-CONNECT ch2-beam2-4.? -> ch2-conn-3.?
+CONNECT ch2-conn-3.? -> ch2-beam2-4.hole1
+CONNECT ch2-conn-3.? -> ch2-beam2-4.hole3
 WHY Adds the second dark-grey L-beam and another two-hole connector to the yellow axle.
 
 STEP 47
 ADD ch2-pin-2 61332 black
 ADD ch2-bush-1 3713 red
-CONNECT ch2-pin-2.? -> ch2-beam2-4.?
+CONNECT ch2-pin-2.? -> ch2-beam2-5.hole1
 CONNECT ch2-axle9-1.? -> ch2-bush-1.axlehole1 LOCKED
 WHY Adds a black friction pin and red half bush to the subassembly.
 
 STEP 48
 ADD ch2-conn-6 62462 white
 ADD ch2-beam2-6 60483 darkgray
-CONNECT ch2-conn-6.? -> ch2-pin-2.?
+CONNECT ch2-pin-2.? -> ch2-conn-6.hole1
 CONNECT ch2-axle9-1.? -> ch2-beam2-6.axlehole1 LOCKED
 WHY Adds a white round connector and a dark-grey two-hole connector at the end of the yellow axle.
 
@@ -556,7 +558,7 @@ STEP 49
 ADD ch2-apin-1 11214 red
 ADD ch2-beam-1 18654 lightgray
 CONNECT ch2-apin-1.? -> ch2-beam-1.?
-CONNECT ch2-apin-1.? -> ch2-conn-5.?
+CONNECT ch2-apin-1.? -> ch2-conn-5.hole2
 END
 WHY Adds a red axle-pin with a grey spacer to the second chassis subassembly.
 
