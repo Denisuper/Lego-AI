@@ -1132,10 +1132,10 @@ ADD tr-beam2-9 60483 darkgray
 ADD tr-beam2-10 60483 darkgray
 ADD tr-pin-79 61332 black
 ADD tr-pin-80 61332 black
-CONNECT tr-pin-79.? -> tr-beam2-9.?
-CONNECT tr-pin-80.? -> tr-beam2-10.?
-CONNECT tr-beam2-9.? -> tr-conn-36.?
-CONNECT tr-beam2-10.? -> tr-conn-37.?
+CONNECT tr-pin-79.? -> tr-beam2-9.hole1
+CONNECT tr-pin-80.? -> tr-beam2-10.hole1
+CONNECT tr-pin-79.? -> tr-conn-36.?
+CONNECT tr-pin-80.? -> tr-conn-37.?
 WHY Turns the chassis and fits two dark-grey two-hole beams with black pins to the earlier angled connectors.
 
 STEP 113
@@ -1145,9 +1145,9 @@ ADD tr-ball-4 31794 lightgray
 ADD tr-ball-5 31794 lightgray
 CONNECT tr-axle3-10.? -> tr-ball-4.?
 CONNECT tr-axle3-11.? -> tr-ball-5.?
-CONNECT tr-ball-4.? -> tr-beam2-9.?
-CONNECT tr-ball-5.? -> tr-beam2-10.?
-WHY Fits two grey steering arms with brown three-stud stop axles to the two end brackets, orienting their ball sockets as shown.
+CONNECT tr-axle3-10.? -> tr-beam2-8.?
+CONNECT tr-axle3-11.? -> tr-beam2-2.?
+WHY Fits two grey steering arms to the earlier L-brackets using brown three-stud stop axles, orienting their ball sockets as shown.
 
 STEP 114
 ADD tr-conn-38 69819 darkgray
