@@ -880,13 +880,14 @@ GROUP chassis-third-section
 ADD ch3-apin-1 43093 blue
 ADD ch3-beam3-1 32056 black
 ADD ch3-beam3-2 32056 black
-CONNECT ch3-apin-1.? -> ch3-beam3-1.?
-CONNECT ch3-apin-1.? -> ch3-beam3-2.?
+CONNECT ch3-apin-1.axle1 -> ch3-beam3-1.axlehole2
+CONNECT ch3-apin-1.axle1 -> ch3-beam3-2.axlehole2
 WHY Joins two black L-beams on a blue axle-pin to begin the next side-frame subassembly.
 
 STEP 86
 ADD ch3-apin-2 11214 red
-CONNECT ch3-apin-2.? -> ch3-beam3-1.?
+CONNECT ch3-apin-2.axle1 -> ch3-beam3-1.axlehole1
+CONNECT ch3-apin-2.axle1 -> ch3-beam3-2.axlehole1
 WHY Inserts a red axle-pin into the paired L-beams.
 
 STEP 87
@@ -923,8 +924,8 @@ ADD ch3-apin-5 18651 black
 ADD ch3-beam2-2 32140 darkgray
 CONNECT ch3-apin-5.? -> ch3-beam2-2.?
 CONNECT ch3-pin-3.? -> ch3-beam2-2.?
-CONNECT ch3-beam2-1.? -> ch3-beam2-2.?
-CONNECT ch3-apin-4.? -> ch3-beam2-1.?
+CONNECT ch3-beam2-1.hole1 -> ch3-pin-3.?
+CONNECT ch3-apin-4.axle1 -> ch3-beam2-1.axlehole1
 CONNECT ch3-beam2-2.? -> ch3-beam3-1.?
 END
 WHY Builds the small reinforced end bracket from a grey L-beam, black panel, axle-pins and a friction pin, then fits it to the side-frame end.

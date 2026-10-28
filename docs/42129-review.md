@@ -201,3 +201,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 57?59, steps 78?80: the red cable clip in step 79 fits the other support axle-pin, matching its blue counterpart. The black cable-clip axle-pins enter the panels using their round pin ends.
 
 - Source pages 62?63, steps 83?84: the blue pin occupies the second round hole on the short angled arm of the bent beam; the brown axle enters the cross hole at the opposite long end.
+
+- Source pages 64?65, steps 85?86 and 91: the blue and red axle ends pass through both thin L-beams, including the previously omitted second red connection. The triangular panel is held to the later L-beam by a friction pin rather than a direct panel-to-beam connection; the red axle-pin locks into the panel cross hole.
