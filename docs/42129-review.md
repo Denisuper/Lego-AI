@@ -187,3 +187,25 @@ Upper crossbar review: source step 37 inset on page 29 shows the four-pin hub se
 Side-panel interface review: page 32 shows the white three-hole beams and round connectors joined to each new panel by its blue long pins; earlier pages 14-15 show the grey stop pins receiving the round connectors. Step 40 now records those intervening pins instead of direct panel-to-panel and panel-to-beam joins. Pin-end positions remain uncertain.
 
 Second chassis interface review: printed pages 33-35 show the black pins in the round holes of the two short axle connectors, with white sleeves over their exposed ends. Step 47 previously assigned its pin to the L-beam; it belongs in the round hole of the short connector added in step 46. The four-pin hub seats in two holes of each L-beam, and step 49 inserts its red pin into the middle hole of the earlier grey perpendicular connector. Hidden pin-end positions remain uncertain.
+
+- Source pages 36?38, steps 51?56: the gray and tan gears mesh; their axle holes and the ball-ended shaft socket are identifiable. The two gray floor connectors insert their integral pins. The paired black pins and blue axle-pins at each floor edge are distributed across both panels, not all in the narrow panel. Individual panel holes remain uncertain.
+
+- Source pages 40?43, steps 59?60: the side frames? four black friction pins fit the round holes of the gray pin hubs, rather than directly into the frames. Each hub?s integral pin fits the frame. Each dark connector is held to the frame by the blue axle-pin; the remaining axle hole takes the later stop axle in step 61. The corresponding ball-ended socket in step 62 is also identified.
+
+- Source page 45, steps 63?64: the ball-joint axle passes through the L-beam?s short leg, the black pin occupies the corner, and the blue axle-pin occupies its cross hole at the far end.
+
+- Source pages 49?50, steps 70?71: the two blue axle-pins were listed but their placement was omitted. Their axle ends lock into the L-beams? cross holes, and their pin ends receive the fifteen-hole beams in the next step.
+
+- Source pages 52?56, steps 73?78: the L-bracket blue axle-pins occupy their cross holes. The gray cable-support hubs use their integral pins in the earlier motor-support short-leg holes and hold the round ends of the blue axle-pins; the cable clip in step 77 fits the projecting axle, rather than the hub directly.
+
+- Source pages 57?59, steps 78?80: the red cable clip in step 79 fits the other support axle-pin, matching its blue counterpart. The black cable-clip axle-pins enter the panels using their round pin ends.
+
+- Source pages 62?63, steps 83?84: the blue pin occupies the second round hole on the short angled arm of the bent beam; the brown axle enters the cross hole at the opposite long end.
+
+- Source pages 64?65, steps 85?86 and 91: the blue and red axle ends pass through both thin L-beams, including the previously omitted second red connection. The triangular panel is held to the later L-beam by a friction pin rather than a direct panel-to-beam connection; the red axle-pin locks into the panel cross hole.
+
+- Source pages 67 and the mirrored steps 97?98: the side brace in step 93 is held to the eleven-hole beam by its two blue pins, not by a direct beam-to-beam connection. Their positions and the gray axle?s short-end cross hole follow the enlarged inset. The opposite side bent-beam pin and axle mirror steps 83?84.
+
+- Source page 73, step 102: the tan frictionless pin passes through the steering lever and is held by two gray pin hubs; the hubs? integral pins attach to the frame. The two additional black pins go into the frame, not the lever. The original direct lever-to-frame and hub-to-lever claims skipped the intermediary pin.
+
+- Source pages 77 and 80, steps 106 and 109: mirrored thin L-beams are held by the axle ends of the blue and red pins; the red axle connection to the second beam was omitted. The opposite bent brace attaches through two long pins, and its hole positions mirror the source step 93 brace.

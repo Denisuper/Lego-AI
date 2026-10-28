@@ -572,14 +572,15 @@ WHY Fits the completed second chassis subassembly between the two side panels an
 STEP 51
 ADD tr-gear-15 94925 lightgray
 ADD tr-gear-16 18575 tan
-CONNECT tr-gear-15.? -> ch2-conn-3.?
-CONNECT tr-gear-16.? -> ch2-conn-5.?
+CONNECT tr-gear-15.axlehole1 -> ch2-conn-3.?
+CONNECT tr-gear-16.axlehole1 -> ch2-conn-5.?
+MESH tr-gear-15 WITH tr-gear-16
 WHY Fits a grey gear and a tan bevel gear onto the shafts of the second chassis assembly.
 
 STEP 52
 ADD tr-axle-2 52730 darkgray
 ADD tr-ball-2 77590 lightgray
-CONNECT tr-axle-2.? -> tr-ball-2.?
+CONNECT tr-axle-2.? -> tr-ball-2.axlehole1
 CONNECT tr-axle-2.? -> ch2-conn-3.?
 WHY Joins a grey ball-ended shaft to its dark connector, turns the chassis and installs the shaft into the second chassis assembly.
 
@@ -590,8 +591,8 @@ ADD fl-conn-1 65487 lightgray
 ADD fl-conn-2 65487 lightgray
 ADD fl-pin-1 61332 black
 ADD fl-pin-2 61332 black
-CONNECT fl-conn-1.? -> fl-panel5-1.?
-CONNECT fl-conn-2.? -> fl-panel5-1.?
+CONNECT fl-conn-1.pin1 -> fl-panel5-1.?
+CONNECT fl-conn-2.pin1 -> fl-panel5-1.?
 CONNECT fl-pin-1.? -> fl-panel5-1.?
 CONNECT fl-pin-2.? -> fl-panel5-1.?
 WHY Starts a chassis floor using a black five-by-eleven panel, two grey connectors and two black friction pins.
@@ -607,23 +608,23 @@ ADD fl-pin-3 61332 black
 ADD fl-pin-4 61332 black
 ADD fl-apin-1 43093 blue
 ADD fl-apin-2 43093 blue
-CONNECT fl-pin-3.? -> fl-panel3-1.?
+CONNECT fl-pin-3.? -> fl-panel5-1.?
 CONNECT fl-pin-4.? -> fl-panel3-1.?
-CONNECT fl-apin-1.? -> fl-panel3-1.?
+CONNECT fl-apin-1.? -> fl-panel5-1.?
 CONNECT fl-apin-2.? -> fl-panel3-1.?
-WHY Inserts two black friction pins and two blue axle-pins along one edge of the floor.
+WHY Inserts a black friction pin and a blue axle-pin into each floor panel along one edge.
 
 STEP 56
 ADD fl-pin-5 61332 black
 ADD fl-pin-6 61332 black
 ADD fl-apin-3 43093 blue
 ADD fl-apin-4 43093 blue
-CONNECT fl-pin-5.? -> fl-panel3-1.?
+CONNECT fl-pin-5.? -> fl-panel5-1.?
 CONNECT fl-pin-6.? -> fl-panel3-1.?
-CONNECT fl-apin-3.? -> fl-panel3-1.?
+CONNECT fl-apin-3.? -> fl-panel5-1.?
 CONNECT fl-apin-4.? -> fl-panel3-1.?
 END
-WHY Inserts two black friction pins and two blue axle-pins along the other edge of the floor.
+WHY Inserts a black friction pin and a blue axle-pin into each floor panel along the other edge.
 
 STEP 57
 ATTACH chassis-floor
@@ -646,12 +647,12 @@ ADD tr-conn-23 65487 lightgray
 ADD tr-conn-24 32184 darkgray
 ADD tr-pin-41 61332 black
 ADD tr-pin-42 61332 black
-CONNECT tr-apin-10.? -> tr-conn-24.?
-CONNECT tr-conn-24.? -> tr-beam-5.?
-CONNECT tr-conn-22.? -> tr-beam-5.?
-CONNECT tr-conn-23.? -> tr-beam-5.?
-CONNECT tr-pin-41.? -> tr-beam-5.?
-CONNECT tr-pin-42.? -> tr-beam-5.?
+CONNECT tr-apin-10.? -> tr-conn-24.axlehole2
+CONNECT tr-apin-10.? -> tr-beam-5.?
+CONNECT tr-conn-22.pin1 -> tr-beam-5.?
+CONNECT tr-conn-23.pin1 -> tr-beam-5.?
+CONNECT tr-pin-41.? -> tr-conn-22.hole1
+CONNECT tr-pin-42.? -> tr-conn-23.hole1
 CONNECT tr-beam-5.? -> tr-panel3-3.?
 CONNECT tr-beam-5.? -> fl-apin-1.?
 WHY Builds a black side frame with grey connectors and pins, then attaches it alongside the floor and side panel.
@@ -664,12 +665,12 @@ ADD tr-conn-26 65487 lightgray
 ADD tr-conn-27 32184 darkgray
 ADD tr-pin-43 61332 black
 ADD tr-pin-44 61332 black
-CONNECT tr-apin-11.? -> tr-conn-27.?
-CONNECT tr-conn-27.? -> tr-beam-6.?
-CONNECT tr-conn-25.? -> tr-beam-6.?
-CONNECT tr-conn-26.? -> tr-beam-6.?
-CONNECT tr-pin-43.? -> tr-beam-6.?
-CONNECT tr-pin-44.? -> tr-beam-6.?
+CONNECT tr-apin-11.? -> tr-conn-27.axlehole2
+CONNECT tr-apin-11.? -> tr-beam-6.?
+CONNECT tr-conn-25.pin1 -> tr-beam-6.?
+CONNECT tr-conn-26.pin1 -> tr-beam-6.?
+CONNECT tr-pin-43.? -> tr-conn-25.hole1
+CONNECT tr-pin-44.? -> tr-conn-26.hole1
 CONNECT tr-beam-6.? -> tr-panel3-4.?
 CONNECT tr-beam-6.? -> fl-apin-3.?
 WHY Builds a black side frame with grey connectors and pins, then attaches it alongside the floor and side panel.
@@ -689,21 +690,21 @@ STEP 62
 GROUP front-crossbar
 ADD tr-axle-3 52730 darkgray
 ADD tr-ball-3 77590 lightgray
-CONNECT tr-axle-3.? -> tr-ball-3.?
+CONNECT tr-axle-3.? -> tr-ball-3.axlehole1
 WHY Joins a dark-grey short axle to a grey ball-ended connector.
 
 STEP 63
 ADD tr-beam2-2 32140 darkgray
 ADD tr-bush-9 3713 red
-CONNECT tr-axle-3.? -> tr-beam2-2.?
+CONNECT tr-axle-3.? -> tr-beam2-2.hole4
 CONNECT tr-axle-3.? -> tr-bush-9.axlehole1 LOCKED
 WHY Fits a dark-grey L-beam and red half bush onto the short axle.
 
 STEP 64
 ADD tr-pin-49 61332 black
 ADD tr-apin-12 43093 blue
-CONNECT tr-pin-49.? -> tr-beam2-2.?
-CONNECT tr-apin-12.? -> tr-beam2-2.?
+CONNECT tr-pin-49.? -> tr-beam2-2.hole3
+CONNECT tr-apin-12.? -> tr-beam2-2.axlehole1
 WHY Adds a black friction pin and a blue axle-pin to the L-beam.
 
 STEP 65
@@ -756,13 +757,15 @@ CONNECT tr-pin-53.pin2 -> tr-beam2-3.hole1 STIFF
 CONNECT tr-pin-52.pin2 -> tr-beam2-3.hole3 STIFF
 CONNECT tr-pin-50.pin2 -> tr-beam2-4.hole1 STIFF
 CONNECT tr-pin-51.pin2 -> tr-beam2-4.hole3 STIFF
-WHY Adds 2 2x4 L-beams and 2 axle pins to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 69. The friction pins grip the 2x4 L-beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 71 slots 2 15-hole beams onto them.
+CONNECT tr-apin-13.axle1 -> tr-beam2-3.axlehole1 LOCKED
+CONNECT tr-apin-14.axle1 -> tr-beam2-4.axlehole1 LOCKED
+WHY Fits two L-beams onto the four motor pins and inserts one blue axle-pin into the cross hole of each L-beam; the exposed pins receive the fifteen-hole beams in step 71.
 
 STEP 71
 ADD tr-beam15-1 71710 black
 ADD tr-beam15-2 71710 black
-CONNECT tr-beam15-1.? -> tr-apin-13.?
-CONNECT tr-beam15-2.? -> tr-apin-14.?
+CONNECT tr-beam15-1.? -> tr-apin-13.pin1
+CONNECT tr-beam15-2.? -> tr-apin-14.pin1
 WHY Fits two black fifteen-hole beams upright on the blue axle-pins added to the rear motor supports in the preceding step.
 
 STEP 72
@@ -785,7 +788,7 @@ ADD tr-beam2-5 32140 darkgray
 CONNECT tr-pin-58.? -> tr-beam2-5.?
 CONNECT tr-pin-59.? -> tr-beam2-5.?
 CONNECT tr-pin-60.? -> tr-beam2-5.?
-CONNECT tr-apin-15.? -> tr-beam2-5.?
+CONNECT tr-apin-15.axle1 -> tr-beam2-5.axlehole1
 CONNECT tr-beam2-5.? -> tr-beam15-1.?
 CONNECT tr-beam2-5.? -> tr-beam2-3.?
 WHY Builds a dark-grey L-bracket with three friction pins and a blue axle-pin, then attaches it beside the upright beam and motor support.
@@ -799,7 +802,7 @@ ADD tr-beam2-6 32140 darkgray
 CONNECT tr-pin-61.? -> tr-beam2-6.?
 CONNECT tr-pin-62.? -> tr-beam2-6.?
 CONNECT tr-pin-63.? -> tr-beam2-6.?
-CONNECT tr-apin-16.? -> tr-beam2-6.?
+CONNECT tr-apin-16.axle1 -> tr-beam2-6.axlehole1
 CONNECT tr-beam2-6.? -> tr-beam15-2.?
 CONNECT tr-beam2-6.? -> tr-beam2-4.?
 WHY Builds a dark-grey L-bracket with three friction pins and a blue axle-pin, then attaches it beside the upright beam and motor support.
@@ -809,10 +812,10 @@ ADD tr-conn-28 65487 lightgray
 ADD tr-conn-29 65487 lightgray
 ADD tr-apin-17 43093 blue
 ADD tr-apin-18 43093 blue
-CONNECT tr-apin-17.? -> tr-conn-28.?
-CONNECT tr-apin-18.? -> tr-conn-29.?
-CONNECT tr-conn-28.? -> tr-beam2-3.?
-CONNECT tr-conn-29.? -> tr-beam2-4.?
+CONNECT tr-apin-17.pin1 -> tr-conn-28.hole1
+CONNECT tr-apin-18.pin1 -> tr-conn-29.hole1
+CONNECT tr-conn-28.pin1 -> tr-beam2-3.hole4
+CONNECT tr-conn-29.pin1 -> tr-beam2-4.hole4
 WHY Builds two grey connectors with blue axle-pins and fits them to the earlier motor supports.
 
 STEP 76
@@ -824,26 +827,26 @@ WHY Fits two olive-green five-hole beams to the blue pins on the upright support
 
 STEP 77
 ADD tr-axle-4 49283 blue
-CONNECT tr-axle-4.? -> tr-conn-28.?
+CONNECT tr-axle-4.axlehole1 -> tr-apin-17.axle1
 WHY Places a blue cable clip on the first motor cable and its support.
 
 STEP 78
 ADD tr-apin-19 18651 black
 ADD tr-axle-5 49283 blue
-CONNECT tr-apin-19.? -> tr-axle-5.?
-CONNECT tr-apin-19.? -> tr-panel3-1.?
+CONNECT tr-apin-19.? -> tr-axle-5.axlehole1
+CONNECT tr-apin-19.pin1 -> tr-panel3-1.?
 WHY Uses a black axle-pin and a second blue cable clip to route the first motor cable against the chassis.
 
 STEP 79
 ADD tr-axle-6 49283 red
-CONNECT tr-axle-6.? -> tr-conn-29.?
+CONNECT tr-axle-6.axlehole1 -> tr-apin-18.axle1
 WHY Places a red cable clip on the second motor cable and its support.
 
 STEP 80
 ADD tr-apin-20 18651 black
 ADD tr-axle-7 49283 red
-CONNECT tr-apin-20.? -> tr-axle-7.?
-CONNECT tr-apin-20.? -> tr-panel3-2.?
+CONNECT tr-apin-20.? -> tr-axle-7.axlehole1
+CONNECT tr-apin-20.pin1 -> tr-panel3-2.?
 WHY Uses a black axle-pin and a second red cable clip to route the second motor cable against the chassis.
 
 STEP 81
@@ -863,13 +866,13 @@ WHY Turns the chassis and inserts a blue long pin through each new side panel.
 STEP 83
 ADD tr-pin-66 42924 blue
 ADD tr-beam9-2 6629 black
-CONNECT tr-pin-66.? -> tr-beam9-2.?
+CONNECT tr-pin-66.? -> tr-beam9-2.hole6
 CONNECT tr-pin-66.? -> tr-panel3-5.?
 WHY Fits a blue long pin to a black bent beam, then attaches the beam at the earlier side panel.
 
 STEP 84
 ADD tr-axle3-2 24316 brown
-CONNECT tr-axle3-2.? -> tr-beam9-2.?
+CONNECT tr-axle3-2.? -> tr-beam9-2.axlehole1
 WHY Inserts a brown three-stud stop axle through the black bent beam.
 
 STEP 85
@@ -877,13 +880,14 @@ GROUP chassis-third-section
 ADD ch3-apin-1 43093 blue
 ADD ch3-beam3-1 32056 black
 ADD ch3-beam3-2 32056 black
-CONNECT ch3-apin-1.? -> ch3-beam3-1.?
-CONNECT ch3-apin-1.? -> ch3-beam3-2.?
+CONNECT ch3-apin-1.axle1 -> ch3-beam3-1.axlehole2
+CONNECT ch3-apin-1.axle1 -> ch3-beam3-2.axlehole2
 WHY Joins two black L-beams on a blue axle-pin to begin the next side-frame subassembly.
 
 STEP 86
 ADD ch3-apin-2 11214 red
-CONNECT ch3-apin-2.? -> ch3-beam3-1.?
+CONNECT ch3-apin-2.axle1 -> ch3-beam3-1.axlehole1
+CONNECT ch3-apin-2.axle1 -> ch3-beam3-2.axlehole1
 WHY Inserts a red axle-pin into the paired L-beams.
 
 STEP 87
@@ -920,8 +924,8 @@ ADD ch3-apin-5 18651 black
 ADD ch3-beam2-2 32140 darkgray
 CONNECT ch3-apin-5.? -> ch3-beam2-2.?
 CONNECT ch3-pin-3.? -> ch3-beam2-2.?
-CONNECT ch3-beam2-1.? -> ch3-beam2-2.?
-CONNECT ch3-apin-4.? -> ch3-beam2-1.?
+CONNECT ch3-beam2-1.hole1 -> ch3-pin-3.?
+CONNECT ch3-apin-4.axle1 -> ch3-beam2-1.axlehole1
 CONNECT ch3-beam2-2.? -> ch3-beam3-1.?
 END
 WHY Builds the small reinforced end bracket from a grey L-beam, black panel, axle-pins and a friction pin, then fits it to the side-frame end.
@@ -937,10 +941,11 @@ ADD tr-pin-67 42924 blue
 ADD tr-pin-68 42924 blue
 ADD tr-axle3-3 4519 lightgray
 ADD tr-beam9-3 6629 black
-CONNECT tr-pin-67.? -> tr-beam9-3.?
-CONNECT tr-pin-68.? -> tr-beam9-3.?
-CONNECT tr-axle3-3.? -> tr-beam9-3.?
-CONNECT tr-beam9-3.? -> ch3-beam11-1.?
+CONNECT tr-pin-67.? -> tr-beam9-3.hole5
+CONNECT tr-pin-68.? -> tr-beam9-3.hole7
+CONNECT tr-axle3-3.? -> tr-beam9-3.axlehole2
+CONNECT tr-pin-67.? -> ch3-beam11-1.?
+CONNECT tr-pin-68.? -> ch3-beam11-1.?
 WHY Builds a black bent-beam brace with two blue pins and a grey three-stud axle, then fits it to the side-frame section.
 
 STEP 94
@@ -973,13 +978,13 @@ WHY Builds a light-grey connector with two black friction pins and attaches it t
 STEP 97
 ADD tr-pin-73 42924 blue
 ADD tr-beam9-4 6629 black
-CONNECT tr-pin-73.? -> tr-beam9-4.?
+CONNECT tr-pin-73.? -> tr-beam9-4.hole6
 CONNECT tr-pin-73.? -> tr-panel3-6.?
 WHY Turns the model and installs a black bent beam with a blue long pin on the opposite side panel.
 
 STEP 98
 ADD tr-axle3-5 24316 brown
-CONNECT tr-axle3-5.? -> tr-beam9-4.?
+CONNECT tr-axle3-5.? -> tr-beam9-4.axlehole1
 WHY Inserts a brown three-stud stop axle through the opposite bent beam.
 
 STEP 99
@@ -1015,14 +1020,15 @@ ADD ch4-pin-6 39888 tan
 ADD ch4-pin-7 61332 black
 ADD ch4-pin-8 61332 black
 ADD ch4-ball-1 31794 lightgray
-CONNECT ch4-pin-6.? -> ch4-ball-1.?
-CONNECT ch4-conn-2.? -> ch4-ball-1.?
-CONNECT ch4-conn-3.? -> ch4-ball-1.?
-CONNECT ch4-pin-7.? -> ch4-ball-1.?
-CONNECT ch4-pin-8.? -> ch4-ball-1.?
-CONNECT ch4-ball-1.? -> ch4-beam-1.?
+CONNECT ch4-pin-6.pin2 -> ch4-ball-1.?
+CONNECT ch4-conn-2.hole1 -> ch4-pin-6.pin1
+CONNECT ch4-conn-3.hole1 -> ch4-pin-6.pin3
+CONNECT ch4-pin-7.? -> ch4-beam-1.?
+CONNECT ch4-pin-8.? -> ch4-beam-1.?
+CONNECT ch4-conn-2.pin1 -> ch4-beam-1.?
+CONNECT ch4-conn-3.pin1 -> ch4-beam-1.?
 END
-WHY Builds the grey steering-arm support with a tan frictionless pin, two grey connectors and two black pins, then fits it to the rectangular frame.
+WHY Builds the grey steering-arm support with a tan frictionless pin held between two grey connectors, fits their integral pins to the rectangular frame, and adds two black pins to the frame.
 
 STEP 103
 ATTACH chassis-fourth-section
@@ -1057,9 +1063,10 @@ ADD tr-beam3-14 32056 black
 ADD tr-beam3-15 32056 black
 ADD tr-apin-22 11214 red
 ADD tr-apin-23 43093 blue
-CONNECT tr-apin-23.? -> tr-beam3-14.?
-CONNECT tr-apin-23.? -> tr-beam3-15.?
-CONNECT tr-apin-22.? -> tr-beam3-14.?
+CONNECT tr-apin-23.axle1 -> tr-beam3-14.axlehole2
+CONNECT tr-apin-23.axle1 -> tr-beam3-15.axlehole2
+CONNECT tr-apin-22.axle1 -> tr-beam3-14.axlehole1
+CONNECT tr-apin-22.axle1 -> tr-beam3-15.axlehole1
 CONNECT tr-axle3-7.? -> ch4-beam13-1.?
 CONNECT tr-beam3-14.? -> tr-conn-32.?
 WHY Builds the opposite end bracket from two black L-beams and red and blue axle-pins, installs it beside the fan, and adds a brown three-stud stop axle.
@@ -1097,10 +1104,11 @@ ADD tr-axle3-9 4519 lightgray
 ADD tr-pin-77 42924 blue
 ADD tr-pin-78 42924 blue
 ADD tr-beam9-5 6629 black
-CONNECT tr-pin-77.? -> tr-beam9-5.?
-CONNECT tr-pin-78.? -> tr-beam9-5.?
-CONNECT tr-axle3-9.? -> tr-beam9-5.?
-CONNECT tr-beam9-5.? -> tr-beam11-5.?
+CONNECT tr-pin-77.? -> tr-beam9-5.hole5
+CONNECT tr-pin-78.? -> tr-beam9-5.hole7
+CONNECT tr-axle3-9.? -> tr-beam9-5.axlehole2
+CONNECT tr-pin-77.? -> tr-beam11-5.?
+CONNECT tr-pin-78.? -> tr-beam11-5.?
 WHY Builds a black bent-beam brace with two blue pins and a grey axle, then fits it along the opposite side beam.
 
 STEP 110
