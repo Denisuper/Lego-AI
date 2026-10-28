@@ -1478,24 +1478,28 @@ WHY Adds two blue long pins beside the grey axles.
 STEP 151
 ADD ra2-beam3-3 6632 black
 ADD ra2-beam3-4 6632 black
-CONNECT ra2-beam3-3.? -> ra2-axle3-3.?
-CONNECT ra2-beam3-4.? -> ra2-axle3-4.?
-WHY Fits two black thin three-hole beams onto the projecting axles.
+CONNECT ra2-beam3-3.axlehole1 -> ra2-axle3-3.?
+CONNECT ra2-beam3-3.axlehole2 -> ra2-axle3-1.?
+CONNECT ra2-beam3-3.hole1 -> ra2-pin-5.?
+CONNECT ra2-beam3-4.axlehole1 -> ra2-axle3-4.?
+CONNECT ra2-beam3-4.axlehole2 -> ra2-axle3-2.?
+CONNECT ra2-beam3-4.hole1 -> ra2-pin-6.?
+WHY Fits two black thin three-hole beams over the two gray axles and the blue center pin on each side of the hub.
 
 STEP 152
 ADD ra2-beam4-1 32449 darkgray
 ADD ra2-apin-1 11214 red
 ADD ra2-beam2-1 41677 darkgray
-CONNECT ra2-apin-1.? -> ra2-beam4-1.?
-CONNECT ra2-beam2-1.? -> ra2-beam4-1.?
-CONNECT ra2-beam4-1.? -> ra2-pin-5.?
+CONNECT ra2-apin-1.axle1 -> ra2-beam4-1.axlehole1
+CONNECT ra2-beam2-1.axlehole1 -> ra2-apin-1.axle1
+CONNECT ra2-beam4-1.hole2 -> ra2-pin-5.?
 WHY Builds a dark-grey thin link with a red axle-pin and small two-hole connector, then fits it to the hub.
 
 STEP 153
 ADD ra2-beam4-2 2825 lightgray
 ADD ra2-apin-2 11214 red
-CONNECT ra2-apin-2.? -> ra2-beam4-2.?
-CONNECT ra2-beam4-2.? -> ra2-pin-6.?
+CONNECT ra2-apin-2.axle1 -> ra2-beam4-2.axlehole1
+CONNECT ra2-beam4-2.hole2 -> ra2-pin-6.?
 END
 WHY Fits the light-grey thin link with a red axle-pin to the opposite hub support.
 
@@ -1508,64 +1512,65 @@ STEP 155
 GROUP rear-lock-support
 ADD ral-axle8-1 55013 darkgray
 ADD ral-conn-1 32034 black
-CONNECT ral-axle8-1.? -> ral-conn-1.?
+CONNECT ral-axle8-1.? -> ral-conn-1.hole1
 WHY Starts the differential-lock support with a dark-grey eight-stud axle and a black connector.
 
 STEP 156
 ADD ral-bush-1 3713 red
 ADD ral-gear-1 35188 orange
-CONNECT ral-bush-1.? -> ral-axle8-1.?
-CONNECT ral-gear-1.? -> ral-axle8-1.?
+CONNECT ral-bush-1.axlehole1 -> ral-axle8-1.?
+CONNECT ral-gear-1.axlehole1 -> ral-axle8-1.?
 WHY Slides a red half bush and orange selector onto the eight-stud axle.
 
 STEP 157
 ADD ral-gear-2 32270 black
 ADD ral-bush-2 3713 red
-CONNECT ral-gear-2.? -> ral-axle8-1.?
-CONNECT ral-bush-2.? -> ral-axle8-1.?
+CONNECT ral-gear-2.axlehole1 -> ral-axle8-1.?
+CONNECT ral-bush-2.axlehole1 -> ral-axle8-1.?
 WHY Adds a black bevel gear and a second red half bush on the axle.
 
 STEP 158
 ADD ral-bush-3 3713 red
 ADD ral-conn-2 32034 black
-CONNECT ral-bush-3.? -> ral-axle8-1.?
-CONNECT ral-conn-2.? -> ral-axle8-1.?
+CONNECT ral-bush-3.axlehole1 -> ral-axle8-1.?
+CONNECT ral-conn-2.hole1 -> ral-axle8-1.?
 WHY Adds another red half bush and a black connector to the far end of the axle.
 
 STEP 159
 ADD ral-apin-1 43093 blue
 ADD ral-apin-2 43093 blue
-CONNECT ral-apin-1.? -> ral-conn-1.?
-CONNECT ral-apin-2.? -> ral-conn-2.?
+CONNECT ral-apin-1.axle1 -> ral-conn-1.axlehole1
+CONNECT ral-apin-2.axle1 -> ral-conn-2.axlehole1
 WHY Adds a blue axle-pin to each black connector.
 
 STEP 160
 ADD ral-beam11-1 73507 black
-CONNECT ral-beam11-1.? -> ral-apin-1.?
-CONNECT ral-beam11-1.? -> ral-apin-2.?
+CONNECT ral-beam11-1.hole5 -> ral-apin-1.pin1
+CONNECT ral-beam11-1.hole11 -> ral-apin-2.pin1
 WHY Fits a black eleven-hole beam onto the two blue axle-pins.
 
 STEP 161
 ADD ral-apin-3 43093 blue
 ADD ral-bush-4 42195 red
-CONNECT ral-apin-3.? -> ral-beam11-1.?
-CONNECT ral-bush-4.? -> ral-apin-3.?
+CONNECT ral-apin-3.pin1 -> ral-beam11-1.hole1
+CONNECT ral-bush-4.axlehole1 -> ral-apin-3.axle1
 WHY Adds a blue axle-pin and red connector to one end of the black beam.
 
 STEP 162
 ADD ral-apin-4 11214 red
 ADD ral-apin-5 11214 red
 ADD ral-apin-6 43093 blue
-CONNECT ral-apin-4.? -> ral-bush-4.?
-CONNECT ral-apin-5.? -> ral-beam11-1.?
-CONNECT ral-apin-6.? -> ral-beam11-1.?
+CONNECT ral-apin-4.axle1 -> ral-bush-4.axlehole1
+CONNECT ral-apin-5.axle1 -> ral-conn-2.axlehole2
+CONNECT ral-apin-6.axle1 -> ral-conn-1.axlehole2
 WHY Adds two red axle-pins and a blue axle-pin to the differential-lock support.
 
 STEP 163
 ADD ral-beam11-2 73507 black
 ADD ral-beam3-1 6632 black
-CONNECT ral-beam11-2.? -> ral-apin-4.?
-CONNECT ral-beam11-2.? -> ral-apin-5.?
+CONNECT ral-beam11-2.hole1 -> ral-apin-4.pin1
+CONNECT ral-beam11-2.hole11 -> ral-apin-5.pin1
+CONNECT ral-beam11-2.hole5 -> ral-apin-6.pin1
 CONNECT ral-beam3-1.? -> ral-axle8-1.?
 END
 WHY Fits the second black eleven-hole beam and black thin three-hole beam to finish the lock support.
@@ -1602,8 +1607,8 @@ ADD ra-beam4-3 2825 lightgray
 ADD ra-beam4-4 2825 lightgray
 ADD ra-apin-4 11214 red
 ADD ra-apin-5 11214 red
-CONNECT ra-apin-4.? -> ra-beam4-3.?
-CONNECT ra-apin-5.? -> ra-beam4-4.?
+CONNECT ra-apin-4.axle1 -> ra-beam4-3.axlehole1
+CONNECT ra-apin-5.axle1 -> ra-beam4-4.axlehole1
 CONNECT ra-beam4-3.? -> ral-beam11-1.?
 CONNECT ra-beam4-4.? -> ral-beam11-2.?
 WHY Builds two light-grey thin links with red axle-pins and fits them to the axle assembly.
@@ -1612,8 +1617,8 @@ STEP 168
 ADD ra-beam4-5 32449 darkgray
 ADD ra-axle5-1 32073 yellow
 ADD ra-beam2-2 41677 darkgray
-CONNECT ra-axle5-1.? -> ra-beam2-2.?
-CONNECT ra-axle5-1.? -> ra-beam4-5.?
+CONNECT ra-axle5-1.? -> ra-beam2-2.axlehole1
+CONNECT ra-axle5-1.? -> ra-beam4-5.axlehole1
 CONNECT ra-beam4-5.? -> ra-beam4-3.?
 WHY Fits a yellow five-stud axle through dark-grey thin links and places them on the axle assembly.
 
@@ -1621,8 +1626,8 @@ STEP 169
 ADD ra-beam4-6 32449 darkgray
 ADD ra-apin-6 11214 red
 ADD ra-beam2-3 41677 darkgray
-CONNECT ra-apin-6.? -> ra-beam4-6.?
-CONNECT ra-beam2-3.? -> ra-beam4-6.?
+CONNECT ra-apin-6.axle1 -> ra-beam4-6.axlehole1
+CONNECT ra-beam2-3.axlehole1 -> ra-apin-6.axle1
 CONNECT ra-beam4-6.? -> ra-beam4-4.?
 WHY Builds the matching dark-grey link with a red axle-pin and fits it to the opposite hub.
 
@@ -1636,7 +1641,7 @@ ADD ra-gear-4 32270 black
 ADD ra-apin-8 43093 blue
 CONNECT ra-axle3-5.? -> ra-conn-4.?
 CONNECT ra-apin-7.? -> ra-conn-4.?
-CONNECT ra-gear-4.? -> ra-axle3-5.?
+CONNECT ra-gear-4.axlehole1 -> ra-axle3-5.?
 CONNECT ra-conn-3.? -> ra-axle3-5.?
 CONNECT ra-apin-8.? -> ra-conn-3.?
 CONNECT ra-axle2-2.? -> ral-beam11-1.?
