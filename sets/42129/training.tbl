@@ -2056,9 +2056,9 @@ ADD tr-pin-90 42924 blue
 ADD tr-pin-91 42924 blue
 ADD tr-pin-92 42924 blue
 CONNECT tr-pin-89.? -> tr-panel3-3.?
-CONNECT tr-pin-90.? -> tr-panel3-3.?
+CONNECT tr-pin-90.? -> tr-panel3-7.?
 CONNECT tr-pin-91.? -> tr-panel3-4.?
-CONNECT tr-pin-92.? -> tr-panel3-4.?
+CONNECT tr-pin-92.? -> tr-panel3-8.?
 WHY Adds four blue long pins to the chassis side panels above the attached rear axle.
 
 STEP 213
@@ -2078,14 +2078,18 @@ STEP 214
 ADD bt-beam11-1 32525 darkgray
 ADD bt-beam11-2 32525 darkgray
 CONNECT bt-beam11-1.? -> bt-pin-1.?
+CONNECT bt-beam11-1.? -> bt-pin-2.?
 CONNECT bt-beam11-2.? -> bt-pin-3.?
+CONNECT bt-beam11-2.? -> bt-pin-4.?
 WHY Fits two dark-grey eleven-hole beams to the frame pins.
 
 STEP 215
 ADD bt-beam3-1 32523 black
 ADD bt-beam3-2 32523 black
-CONNECT bt-beam3-1.? -> bt-pin-2.?
-CONNECT bt-beam3-2.? -> bt-pin-4.?
+CONNECT bt-beam3-1.hole1 -> bt-pin-1.?
+CONNECT bt-beam3-1.hole3 -> bt-pin-2.?
+CONNECT bt-beam3-2.hole1 -> bt-pin-3.?
+CONNECT bt-beam3-2.hole3 -> bt-pin-4.?
 WHY Adds two black three-hole beams at opposite corners of the frame.
 
 STEP 216

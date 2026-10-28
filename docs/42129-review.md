@@ -251,3 +251,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 123?124, steps 205?206: the gray shock-end hubs insert their integral pins in the shocks. The two light-gray crossbeam links connect to the seven-hole beam via their black pins and blue axle-pins; the blue axle ends occupy the thick-end cross holes and the black pins occupy the second round holes from the thin ends.
 
 - Source pages 36, 45, 114 and 125, steps 52, 62, 186 and 207: correction to earlier hole identification: the joint?s ball end engages the cup, while its free cross socket receives the later red or yellow axle. The ball/cup endpoints have no catalog point and remain uncertain. In step 208 the curved panel fits the two blue axle-pins from step 206.
+
+- Source pages 94, 129?130, steps 129 and 212?215: each chassis side receives one blue pin in the earlier panel and one in its step 129 extension. Both pins on each side of the upper-frame subassembly pass through the eleven-hole beam and the end holes of the three-hole beam; the second contact was omitted for each part.
