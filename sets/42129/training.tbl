@@ -1724,10 +1724,11 @@ ADD ra-pin-17 66906 red
 CONNECT ra-pin-14.? -> ra-beam-1.?
 CONNECT ra-pin-15.? -> ra-beam-1.?
 CONNECT ra-pin-16.? -> ra-beam-1.?
-CONNECT ra-beam3-6.? -> ra-beam-1.?
-CONNECT ra-beam-2.? -> ra-pin-16.?
+CONNECT ra-beam3-6.hole1 -> ra-pin-14.?
+CONNECT ra-beam3-6.hole3 -> ra-pin-15.?
+CONNECT ra-beam-2.hole1 -> ra-pin-16.?
 CONNECT ra-part-1.? -> ra-pin-17.?
-CONNECT ra-pin-17.? -> ra-beam3-6.?
+CONNECT ra-pin-17.pin1 -> ra-beam3-6.hole2
 CONNECT ra-beam-1.? -> ra3-axle5-1.?
 WHY Builds the small black frame with white beam, pins and a green-axle and red-towball connection, then fits it to the rear axle support.
 
@@ -1737,14 +1738,14 @@ ADD ra-conn-6 6536 darkgray
 ADD ra-gear-5 94925 lightgray
 CONNECT ra-conn-5.? -> ra-beam-1.?
 CONNECT ra-conn-6.? -> ra-beam-1.?
-CONNECT ra-gear-5.? -> ra3-axle5-1.?
+CONNECT ra-gear-5.axlehole1 -> ra3-axle5-1.?
 WHY Adds two dark-grey perpendicular connectors and a grey gear to the rear axle frame.
 
 STEP 182
 ADD ra-pin-18 65304 lightgray
 ADD ra-apin-9 43093 blue
 ADD ra-conn-7 44874 black
-CONNECT ra-pin-18.? -> ra-apin-9.?
+CONNECT ra-pin-18.axlehole1 -> ra-apin-9.axle1
 CONNECT ra-conn-7.? -> ra-beam-1.?
 CONNECT ra-pin-18.? -> ra-beam-1.?
 WHY Builds a grey stop-pin and blue axle-pin pair, then fits it and a black connector to the frame.

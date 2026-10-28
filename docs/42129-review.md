@@ -237,3 +237,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 106?107, steps 167?170: each red pin enters the thick end cross hole of its light-gray link. The yellow axle in step 168 and red axle-pin in step 169 each pass through the stacked dark links; the small bevel gear in step 170 uses its cross hole.
 
 - Source pages 108?109, steps 171?177: the rear-drive support uses its lower beam?s holes 1, 3 and 5, and upper beam?s holes 1, 3, 5 and 9. The red connector bridges the exposed blue and red axle ends; the new gear uses its cross hole on the yellow axle.
+
+- Source pages 111?112, steps 180?182: the white 3-hole beam attaches to the black frame through the two previously inserted pins, and the red towball occupies its center hole. The black spacer uses the third pin, and the gray stop-pin and blue axle-pin meet through the stop-pin?s cross socket. The gray gear?s shaft hole is explicit.
