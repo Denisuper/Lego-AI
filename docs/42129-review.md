@@ -231,3 +231,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source page 101, steps 151?153: the second hub?s two thin beams span both gray axles and the center blue pins, and the dark two-hole link shares a red axle-pin with the adjacent four-hole link. These mirror the earlier hub?s documented corrections.
 
 - Source pages 102?103, steps 155?160: the lock shaft passes through the round holes of the perpendicular end connectors; its bushings, orange selector and black gear use their cross holes. Blue axle-pins enter the connectors? cross holes and their round ends hold positions 5 and 11 of the 11-hole support beam.
+
+- Source pages 103?104, steps 161?163: the red and blue pins above the lock shaft enter the upper cross holes of its existing connectors, not the lower support beam. The previously omitted blue pin also fastens hole 5 of the upper beam; its two end pins occupy holes 1 and 11.

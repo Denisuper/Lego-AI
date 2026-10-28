@@ -1552,24 +1552,25 @@ WHY Fits a black eleven-hole beam onto the two blue axle-pins.
 STEP 161
 ADD ral-apin-3 43093 blue
 ADD ral-bush-4 42195 red
-CONNECT ral-apin-3.? -> ral-beam11-1.?
-CONNECT ral-bush-4.? -> ral-apin-3.?
+CONNECT ral-apin-3.pin1 -> ral-beam11-1.hole1
+CONNECT ral-bush-4.axlehole1 -> ral-apin-3.axle1
 WHY Adds a blue axle-pin and red connector to one end of the black beam.
 
 STEP 162
 ADD ral-apin-4 11214 red
 ADD ral-apin-5 11214 red
 ADD ral-apin-6 43093 blue
-CONNECT ral-apin-4.? -> ral-bush-4.?
-CONNECT ral-apin-5.? -> ral-beam11-1.?
-CONNECT ral-apin-6.? -> ral-beam11-1.?
+CONNECT ral-apin-4.axle1 -> ral-bush-4.axlehole1
+CONNECT ral-apin-5.axle1 -> ral-conn-2.axlehole2
+CONNECT ral-apin-6.axle1 -> ral-conn-1.axlehole2
 WHY Adds two red axle-pins and a blue axle-pin to the differential-lock support.
 
 STEP 163
 ADD ral-beam11-2 73507 black
 ADD ral-beam3-1 6632 black
-CONNECT ral-beam11-2.? -> ral-apin-4.?
-CONNECT ral-beam11-2.? -> ral-apin-5.?
+CONNECT ral-beam11-2.hole1 -> ral-apin-4.pin1
+CONNECT ral-beam11-2.hole11 -> ral-apin-5.pin1
+CONNECT ral-beam11-2.hole5 -> ral-apin-6.pin1
 CONNECT ral-beam3-1.? -> ral-axle8-1.?
 END
 WHY Fits the second black eleven-hole beam and black thin three-hole beam to finish the lock support.
