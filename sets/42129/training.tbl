@@ -2505,8 +2505,8 @@ ADD fa-shock-1 89954c01 red
 ADD fa-shock-2 89954c01 red
 CONNECT fa-axle4-3.? -> fa-shock-1.?
 CONNECT fa-axle4-4.? -> fa-shock-2.?
-CONNECT fa-shock-1.? -> fa-beam3-2.?
-CONNECT fa-shock-2.? -> fa-beam3-3.?
+CONNECT fa-axle4-3.? -> fa-beam3-2.?
+CONNECT fa-axle4-4.? -> fa-beam3-3.?
 WHY Fits two red shocks with dark-grey stop axles to the upright L-beams.
 
 STEP 252
@@ -2518,12 +2518,16 @@ ADD fa-axle2-4 32062 red
 ADD fa-axle3-4 4519 lightgray
 ADD fa-beam2-7 41677 darkgray
 ADD fa-beam2-8 41677 darkgray
-CONNECT fa-axle2-3.? -> fa-beam2-5.?
-CONNECT fa-axle3-3.? -> fa-beam2-6.?
-CONNECT fa-axle2-4.? -> fa-beam2-7.?
-CONNECT fa-axle3-4.? -> fa-beam2-8.?
-CONNECT fa-beam2-5.? -> fa-gear-3.?
-CONNECT fa-beam2-7.? -> fa-gear-4.?
+CONNECT fa-axle2-3.? -> fa-beam2-5.axlehole1
+CONNECT fa-axle2-3.? -> fa-beam2-6.axlehole1
+CONNECT fa-axle3-3.? -> fa-beam2-5.axlehole2
+CONNECT fa-axle3-3.? -> fa-beam2-6.axlehole2
+CONNECT fa-axle2-4.? -> fa-beam2-7.axlehole1
+CONNECT fa-axle2-4.? -> fa-beam2-8.axlehole1
+CONNECT fa-axle3-4.? -> fa-beam2-7.axlehole2
+CONNECT fa-axle3-4.? -> fa-beam2-8.axlehole2
+CONNECT fa-axle3-3.? -> fa-gear-3.?
+CONNECT fa-axle3-4.? -> fa-gear-4.?
 WHY Builds two paired thin-beam links with red two-stud and grey three-stud axles, then installs them on the wheel hubs.
 
 STEP 253
@@ -2533,21 +2537,22 @@ ADD fa-apin-4 43093 blue
 ADD fa-apin-5 43093 blue
 ADD fa-conn-11 32013 black
 ADD fa-conn-12 32013 black
-CONNECT fa-apin-4.? -> fa-conn-11.?
-CONNECT fa-apin-5.? -> fa-conn-12.?
-CONNECT fa-conn-11.? -> fa-beam2-9.?
-CONNECT fa-conn-12.? -> fa-beam2-10.?
-CONNECT fa-beam2-9.? -> fa-axle8-1.?
-CONNECT fa-beam2-10.? -> fa-axle8-2.?
+CONNECT fa-apin-4.axle1 -> fa-conn-11.axlehole1
+CONNECT fa-apin-5.axle1 -> fa-conn-12.axlehole1
+CONNECT fa-apin-4.pin1 -> fa-beam2-9.hole1
+CONNECT fa-apin-5.pin1 -> fa-beam2-10.hole1
+CONNECT fa-beam2-9.axlehole1 -> fa-axle8-1.?
+CONNECT fa-beam2-10.axlehole1 -> fa-axle8-2.?
 WHY Builds and fits two connector assemblies with blue axle-pins onto the upright front axle shafts.
 
 STEP 254
 ADD fa-pin-21 61332 black
 ADD fa-pin-22 61332 black
 ADD fa-beam3-4 32523 white
-CONNECT fa-pin-21.? -> fa-beam3-4.?
-CONNECT fa-pin-22.? -> fa-beam3-4.?
-CONNECT fa-beam3-4.? -> fa-beam9-1.?
+CONNECT fa-pin-21.? -> fa-beam3-4.hole1
+CONNECT fa-pin-22.? -> fa-beam3-4.hole3
+CONNECT fa-pin-21.? -> fa-beam9-1.?
+CONNECT fa-pin-22.? -> fa-beam9-1.?
 WHY Fits a white three-hole beam with two black friction pins across the front axle support.
 
 STEP 255
