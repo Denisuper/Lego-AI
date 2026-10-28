@@ -301,8 +301,8 @@ ADD ch1-beam5-2 32316 olivegreen
 ADD ch1-axle5-1 15462 brown
 ADD ch1-gear-1 3648b darkgray
 ADD ch1-gear-2 94925 lightgray
-CONNECT ch1-pin-1.? -> ch1-beam3-1.?
-CONNECT ch1-pin-2.? -> ch1-beam3-1.?
+CONNECT ch1-pin-1.? -> ch1-beam3-1.hole1
+CONNECT ch1-pin-2.? -> ch1-beam3-1.hole3
 CONNECT ch1-pin-1.? -> ch1-beam3-2.?
 CONNECT ch1-pin-2.? -> ch1-beam3-3.?
 CONNECT ch1-beam5-1.? -> tr-pin-17.?
@@ -311,8 +311,10 @@ CONNECT ch1-pin-3.? -> ch1-beam3-2.?
 CONNECT ch1-pin-4.? -> ch1-beam3-2.?
 CONNECT ch1-pin-5.? -> ch1-beam3-3.?
 CONNECT ch1-pin-6.? -> ch1-beam3-3.?
-CONNECT ch1-beam5-1.? -> ch1-beam3-2.?
-CONNECT ch1-beam5-2.? -> ch1-beam3-3.?
+CONNECT ch1-pin-3.? -> ch1-beam5-1.?
+CONNECT ch1-pin-4.? -> ch1-beam5-1.?
+CONNECT ch1-pin-5.? -> ch1-beam5-2.?
+CONNECT ch1-pin-6.? -> ch1-beam5-2.?
 CONNECT ch1-axle5-1.? -> ch1-beam3-2.?
 CONNECT ch1-axle5-1.? -> ch1-gear-1.?
 CONNECT ch1-axle5-1.? -> ch1-gear-2.?
