@@ -2421,8 +2421,8 @@ CONNECT fa-ball-1.? -> fa-gear-3.?
 CONNECT fa-ball-2.? -> fa-gear-4.?
 CONNECT fa-ball-3.? -> fa-gear-3.?
 CONNECT fa-ball-4.? -> fa-gear-4.?
-CONNECT fa-gear-3.? -> fa-conn-7.?
-CONNECT fa-gear-4.? -> fa-conn-8.?
+CONNECT fa-ball-1.axlehole1 -> fa-axle2-1.?
+CONNECT fa-ball-2.axlehole1 -> fa-axle2-2.?
 WHY Builds two grey wheel-reduction hubs with joints and steering arms, then fits them to the differential shafts.
 
 STEP 243
@@ -2454,14 +2454,16 @@ STEP 246
 ADD fa-beam3-2 32526 darkgray
 ADD fa-beam3-3 32526 darkgray
 CONNECT fa-beam3-2.? -> fa-pin-13.?
+CONNECT fa-beam3-2.? -> fa-pin-14.?
 CONNECT fa-beam3-3.? -> fa-pin-15.?
+CONNECT fa-beam3-3.? -> fa-pin-16.?
 WHY Fits two dark-grey L-beams upright on the long pins beside the wheel hubs.
 
 STEP 247
 ADD fa-pin-17 65304 black
 ADD fa-pin-18 65304 black
-CONNECT fa-pin-17.? -> fa-beam3-2.?
-CONNECT fa-pin-18.? -> fa-beam3-3.?
+CONNECT fa-pin-17.? -> fa-conn-3.?
+CONNECT fa-pin-18.? -> fa-conn-4.?
 WHY Adds two black stop pins to the upright L-beams.
 
 STEP 248
@@ -2471,10 +2473,10 @@ ADD fa-beam2-1 41677 darkgray
 ADD fa-beam2-2 41677 darkgray
 ADD fa-beam2-3 41677 darkgray
 ADD fa-beam2-4 41677 darkgray
-CONNECT fa-apin-2.? -> fa-beam2-1.?
-CONNECT fa-apin-2.? -> fa-beam2-2.?
-CONNECT fa-apin-3.? -> fa-beam2-3.?
-CONNECT fa-apin-3.? -> fa-beam2-4.?
+CONNECT fa-apin-2.axle1 -> fa-beam2-1.axlehole1
+CONNECT fa-apin-2.axle1 -> fa-beam2-2.axlehole1
+CONNECT fa-apin-3.axle1 -> fa-beam2-3.axlehole1
+CONNECT fa-apin-3.axle1 -> fa-beam2-4.axlehole1
 CONNECT fa-beam2-1.? -> fa-beam3-2.?
 CONNECT fa-beam2-3.? -> fa-beam3-3.?
 WHY Builds two paired dark-grey thin links with blue axle-pins and fits them to the front axle.
