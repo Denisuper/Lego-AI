@@ -1132,10 +1132,10 @@ ADD tr-beam2-9 60483 darkgray
 ADD tr-beam2-10 60483 darkgray
 ADD tr-pin-79 61332 black
 ADD tr-pin-80 61332 black
-CONNECT tr-pin-79.? -> tr-beam2-9.?
-CONNECT tr-pin-80.? -> tr-beam2-10.?
-CONNECT tr-beam2-9.? -> tr-conn-36.?
-CONNECT tr-beam2-10.? -> tr-conn-37.?
+CONNECT tr-pin-79.? -> tr-beam2-9.hole1
+CONNECT tr-pin-80.? -> tr-beam2-10.hole1
+CONNECT tr-pin-79.? -> tr-conn-36.?
+CONNECT tr-pin-80.? -> tr-conn-37.?
 WHY Turns the chassis and fits two dark-grey two-hole beams with black pins to the earlier angled connectors.
 
 STEP 113
@@ -1145,9 +1145,9 @@ ADD tr-ball-4 31794 lightgray
 ADD tr-ball-5 31794 lightgray
 CONNECT tr-axle3-10.? -> tr-ball-4.?
 CONNECT tr-axle3-11.? -> tr-ball-5.?
-CONNECT tr-ball-4.? -> tr-beam2-9.?
-CONNECT tr-ball-5.? -> tr-beam2-10.?
-WHY Fits two grey steering arms with brown three-stud stop axles to the two end brackets, orienting their ball sockets as shown.
+CONNECT tr-axle3-10.? -> tr-beam2-8.?
+CONNECT tr-axle3-11.? -> tr-beam2-2.?
+WHY Fits two grey steering arms to the earlier L-brackets using brown three-stud stop axles, orienting their ball sockets as shown.
 
 STEP 114
 ADD tr-conn-38 69819 darkgray
@@ -1172,8 +1172,8 @@ GROUP central-upright-support
 ADD ch5-conn-1 32184 darkgray
 ADD ch5-axle3-1 4519 lightgray
 ADD ch5-axle3-2 4519 lightgray
-CONNECT ch5-axle3-1.? -> ch5-conn-1.?
-CONNECT ch5-axle3-2.? -> ch5-conn-1.?
+CONNECT ch5-axle3-1.? -> ch5-conn-1.axlehole1
+CONNECT ch5-axle3-2.? -> ch5-conn-1.axlehole2
 WHY Starts the central upright support by fitting two grey three-stud axles into a dark-grey connector.
 
 STEP 117
@@ -1204,8 +1204,8 @@ WHY Adds two black curved panels to the red axle-pins at opposite ends of the su
 STEP 120
 ADD ch5-apin-3 18651 black
 ADD ch5-apin-4 18651 black
-CONNECT ch5-apin-3.? -> ch5-beam2-1.?
-CONNECT ch5-apin-4.? -> ch5-beam2-2.?
+CONNECT ch5-apin-3.? -> ch5-beam2-1.axlehole1
+CONNECT ch5-apin-4.? -> ch5-beam2-2.axlehole1
 WHY Inserts two black axle-pins into the outer panels.
 
 STEP 121
@@ -1247,8 +1247,10 @@ WHY Adds two red axle-pins with grey spacers to the upright L-beams.
 
 STEP 125
 ATTACH central-upright-support
-CONNECT ch5-beam11-1.? -> tr-beam15-1.?
-CONNECT ch5-beam11-2.? -> tr-beam15-2.?
+CONNECT tr-pin-81.? -> ch5-beam11-1.?
+CONNECT tr-pin-82.? -> ch5-beam11-1.?
+CONNECT tr-pin-83.? -> ch5-beam11-2.?
+CONNECT tr-pin-84.? -> ch5-beam11-2.?
 WHY Lowers the completed support onto the two earlier upright beams and their mounting pins.
 
 STEP 126
@@ -1260,8 +1262,8 @@ STEP 127
 ADD tr-beam2-12 32140 darkgray
 ADD tr-axle-9 49283 green
 CONNECT tr-beam2-12.? -> ch5-apin-6.?
-CONNECT tr-axle-9.? -> tr-beam2-12.?
-WHY Turns the chassis, fits the second dark-grey L-beam and adds a green cable clip to hold the motor lead.
+CONNECT tr-axle-9.axlehole1 -> tr-apin-19.?
+WHY Turns the chassis, fits the second dark-grey L-beam and adds a green cable clip above the earlier blue clip on the black axle-pin to hold the motor lead.
 
 STEP 128
 WHY Routes the motor lead through the green cable clip, as shown in the close-up.
@@ -1277,16 +1279,18 @@ CONNECT tr-pin-85.? -> tr-panel3-7.?
 CONNECT tr-pin-86.? -> tr-panel3-7.?
 CONNECT tr-pin-87.? -> tr-panel3-8.?
 CONNECT tr-pin-88.? -> tr-panel3-8.?
-CONNECT tr-panel3-7.? -> tr-panel3-3.?
-CONNECT tr-panel3-8.? -> tr-panel3-4.?
+CONNECT tr-pin-85.? -> tr-panel3-3.?
+CONNECT tr-pin-86.? -> tr-panel3-3.?
+CONNECT tr-pin-87.? -> tr-panel3-4.?
+CONNECT tr-pin-88.? -> tr-panel3-4.?
 WHY Builds two black panel extensions with two black pins each, then fits them to the existing chassis panels.
 
 STEP 130
 ADD ra-beam5-1 32316 black
 ADD ra-pin-1 61332 black
 ADD ra-pin-2 61332 black
-CONNECT ra-pin-1.? -> ra-beam5-1.?
-CONNECT ra-pin-2.? -> ra-beam5-1.?
+CONNECT ra-pin-1.? -> ra-beam5-1.hole2
+CONNECT ra-pin-2.? -> ra-beam5-1.hole4
 WHY Starts the rear axle assembly with two black friction pins in a black five-hole beam.
 
 STEP 131
@@ -1301,10 +1305,10 @@ ADD ra-axle3-1 4519 lightgray
 ADD ra-axle3-2 4519 lightgray
 ADD ra-beam3-1 6632 black
 ADD ra-beam3-2 6632 black
-CONNECT ra-axle3-1.? -> ra-beam3-1.?
-CONNECT ra-axle3-2.? -> ra-beam3-2.?
-CONNECT ra-axle3-1.? -> ra-conn-1.?
-CONNECT ra-axle3-2.? -> ra-conn-2.?
+CONNECT ra-axle3-1.? -> ra-beam3-1.axlehole1
+CONNECT ra-axle3-2.? -> ra-beam3-2.axlehole1
+CONNECT ra-axle3-1.? -> ra-conn-1.axlehole1
+CONNECT ra-axle3-2.? -> ra-conn-2.axlehole1
 WHY Builds two black thin-beam and grey three-stud axle pairs and fits them to the two grey connectors.
 
 STEP 133
@@ -1325,7 +1329,7 @@ ADD ra-axle4-1 3705 red
 ADD ra-ball-1 52731 lightgray
 ADD ra-gear-1 46490 lightgray
 CONNECT ra-ball-1.? -> ra-gear-1.?
-CONNECT ra-axle4-1.? -> ra-ball-1.?
+CONNECT ra-axle4-1.? -> ra-ball-1.axlehole1
 CONNECT ra-gear-1.? -> ra-beam5-1.?
 WHY Fits the grey joint and red four-stud axle into the wheel reduction hub, then attaches the hub to the axle support.
 
@@ -1346,32 +1350,36 @@ WHY Inserts two blue long pins beside the grey axles.
 STEP 138
 ADD ra-beam3-3 6632 black
 ADD ra-beam3-4 6632 black
-CONNECT ra-beam3-3.? -> ra-axle3-3.?
-CONNECT ra-beam3-4.? -> ra-axle3-4.?
-WHY Fits two black thin three-hole beams over the projecting grey axles.
+CONNECT ra-beam3-3.axlehole1 -> ra-axle3-3.?
+CONNECT ra-beam3-3.axlehole2 -> ra-axle3-1.?
+CONNECT ra-beam3-3.hole1 -> ra-pin-5.?
+CONNECT ra-beam3-4.axlehole1 -> ra-axle3-4.?
+CONNECT ra-beam3-4.axlehole2 -> ra-axle3-2.?
+CONNECT ra-beam3-4.hole1 -> ra-pin-6.?
+WHY Fits two black thin three-hole beams over the two gray axles and the blue center pin on each side of the hub.
 
 STEP 139
 ADD ra-beam4-1 32449 darkgray
 ADD ra-beam2-1 41677 darkgray
 ADD ra-apin-1 11214 red
-CONNECT ra-apin-1.? -> ra-beam4-1.?
-CONNECT ra-beam2-1.? -> ra-beam4-1.?
-CONNECT ra-beam4-1.? -> ra-pin-5.?
+CONNECT ra-apin-1.axle1 -> ra-beam4-1.axlehole1
+CONNECT ra-beam2-1.axlehole1 -> ra-apin-1.axle1
+CONNECT ra-beam4-1.hole2 -> ra-pin-5.?
 WHY Builds the first thin link from a dark-grey beam, two-hole connector and red axle-pin, then fits it to the hub supports.
 
 STEP 140
 ADD ra-beam4-2 2825 lightgray
 ADD ra-apin-2 11214 red
-CONNECT ra-apin-2.? -> ra-beam4-2.?
-CONNECT ra-beam4-2.? -> ra-pin-6.?
+CONNECT ra-apin-2.axle1 -> ra-beam4-2.axlehole1
+CONNECT ra-beam4-2.hole2 -> ra-pin-6.?
 WHY Adds the second light-grey thin link with a red axle-pin to the opposite support.
 
 STEP 141
 ADD ra-gear-2 35185 blue
 ADD ra-bush-1 42195 red
 ADD ra-bush-2 18947 darkgray
-CONNECT ra-gear-2.? -> ra-axle4-1.?
-CONNECT ra-bush-1.? -> ra-axle4-1.?
+CONNECT ra-gear-2.hole1 -> ra-axle4-1.?
+CONNECT ra-bush-1.axlehole1 -> ra-axle4-1.?
 CONNECT ra-bush-2.? -> ra-bush-1.?
 WHY Fits the blue gear and the red connector with its grey driving ring onto the red hub axle.
 
@@ -1405,8 +1413,8 @@ GROUP rear-axle-second-hub
 ADD ra2-beam5-1 32316 black
 ADD ra2-pin-1 61332 black
 ADD ra2-pin-2 61332 black
-CONNECT ra2-pin-1.? -> ra2-beam5-1.?
-CONNECT ra2-pin-2.? -> ra2-beam5-1.?
+CONNECT ra2-pin-1.? -> ra2-beam5-1.hole2
+CONNECT ra2-pin-2.? -> ra2-beam5-1.hole4
 WHY Starts the second rear-axle hub support with two black friction pins in a black five-hole beam.
 
 STEP 144
@@ -1420,9 +1428,9 @@ STEP 145
 ADD ra2-middle-connector 32184 darkgray
 ADD ra2-middle-red-apin 11214 red
 ADD ra2-middle-blue-apin 43093 blue
-CONNECT ra2-middle-red-apin.? -> ra2-middle-connector.?
-CONNECT ra2-middle-blue-apin.? -> ra2-middle-connector.?
-CONNECT ra2-middle-connector.? -> ra2-conn-2.?
+CONNECT ra2-middle-red-apin.axle1 -> ra2-middle-connector.axlehole1
+CONNECT ra2-middle-blue-apin.axle1 -> ra2-middle-connector.axlehole2
+CONNECT ra2-middle-blue-apin.pin1 -> ra2-conn-2.?
 WHY Builds a dark-grey three-hole connector with red and blue axle-pins, then fits it beneath the grey hub support.
 
 STEP 146
@@ -1445,9 +1453,9 @@ ADD ra2-axle3-2 4519 lightgray
 ADD ra2-beam3-1 6632 black
 ADD ra2-beam3-2 6632 black
 CONNECT ra2-ball-1.? -> ra2-gear-1.?
-CONNECT ra2-axle3-5.? -> ra2-ball-1.?
-CONNECT ra2-axle3-1.? -> ra2-beam3-1.?
-CONNECT ra2-axle3-2.? -> ra2-beam3-2.?
+CONNECT ra2-axle3-5.? -> ra2-ball-1.axlehole1
+CONNECT ra2-axle3-1.? -> ra2-beam3-1.axlehole1
+CONNECT ra2-axle3-2.? -> ra2-beam3-2.axlehole1
 CONNECT ra2-beam3-1.? -> ra2-gear-1.?
 CONNECT ra2-beam3-2.? -> ra2-gear-1.?
 CONNECT ra2-gear-1.? -> ra2-beam5-1.?

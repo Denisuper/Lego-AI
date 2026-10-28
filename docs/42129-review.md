@@ -209,3 +209,21 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source page 73, step 102: the tan frictionless pin passes through the steering lever and is held by two gray pin hubs; the hubs? integral pins attach to the frame. The two additional black pins go into the frame, not the lever. The original direct lever-to-frame and hub-to-lever claims skipped the intermediary pin.
 
 - Source pages 77 and 80, steps 106 and 109: mirrored thin L-beams are held by the axle ends of the blue and red pins; the red axle connection to the second beam was omitted. The opposite bent brace attaches through two long pins, and its hole positions mirror the source step 93 brace.
+
+- Source pages 79 and 84, steps 108 and 113: the paired steering arms attach to the earlier end L-brackets via their brown stop axles; they do not attach directly to the small 2-hole beams introduced in step 112. Exact axle positions remain uncertain.
+
+- Source page 83, step 112: each black pin fits the round hole of its two-hole beam and joins it to the gray connector, replacing direct beam-to-connector claims.
+
+- Source pages 87?88, steps 116 and 120: the two gray axles enter the two separate cross holes of the central connector, and each black long axle-pin enters the cross hole of its triangular panel.
+
+- Source pages 86, 90, and 92, steps 115, 125 and 127: the upright support attaches to the earlier beams on the four previously fitted friction pins. The green cable clip sits above the earlier blue clip on the black axle-pin from step 78; it is not connected directly to the newly added L-beam.
+
+- Source pages 94?95, steps 129?130: both chassis panel extensions fit the earlier panels through their paired black pins. The rear-axle support begins with pins in holes 2 and 4 of the five-hole beam.
+
+- Source pages 95?96, steps 132 and 135: the gray axles pass through the cross holes at the ends of the thin three-hole beams and the gray connectors. The red drive axle enters the wheel joint?s axle socket.
+
+- Source pages 95?97, steps 132, 136?138: each outer thin three-hole beam spans a pair of gray axles and the intervening blue pin, rather than connecting only to the newly inserted axle. Its two end cross holes and center round hole are recorded; left/right beam orientation is symmetric.
+
+- Source page 97, steps 139?141: the dark 2-hole link is stacked on the red axle-pin through the adjoining thin 4-hole link; each link also uses its second round hole on the earlier blue hub pin. The red drive axle runs through the blue gear?s round center and the red connector?s cross hole.
+
+- Source page 99, steps 143?145, and the mirrored second-hub assembly: the second five-hole support uses holes 2 and 4. Its blue axle-pin fastens the dark center connector to the gray hub support, while the red axle-pin occupies the other cross hole. The second hub joint socket and thin-beam cross holes mirror the earlier hub.
