@@ -1413,8 +1413,8 @@ GROUP rear-axle-second-hub
 ADD ra2-beam5-1 32316 black
 ADD ra2-pin-1 61332 black
 ADD ra2-pin-2 61332 black
-CONNECT ra2-pin-1.? -> ra2-beam5-1.?
-CONNECT ra2-pin-2.? -> ra2-beam5-1.?
+CONNECT ra2-pin-1.? -> ra2-beam5-1.hole2
+CONNECT ra2-pin-2.? -> ra2-beam5-1.hole4
 WHY Starts the second rear-axle hub support with two black friction pins in a black five-hole beam.
 
 STEP 144
@@ -1428,9 +1428,9 @@ STEP 145
 ADD ra2-middle-connector 32184 darkgray
 ADD ra2-middle-red-apin 11214 red
 ADD ra2-middle-blue-apin 43093 blue
-CONNECT ra2-middle-red-apin.? -> ra2-middle-connector.?
-CONNECT ra2-middle-blue-apin.? -> ra2-middle-connector.?
-CONNECT ra2-middle-connector.? -> ra2-conn-2.?
+CONNECT ra2-middle-red-apin.axle1 -> ra2-middle-connector.axlehole1
+CONNECT ra2-middle-blue-apin.axle1 -> ra2-middle-connector.axlehole2
+CONNECT ra2-middle-blue-apin.pin1 -> ra2-conn-2.?
 WHY Builds a dark-grey three-hole connector with red and blue axle-pins, then fits it beneath the grey hub support.
 
 STEP 146
@@ -1453,9 +1453,9 @@ ADD ra2-axle3-2 4519 lightgray
 ADD ra2-beam3-1 6632 black
 ADD ra2-beam3-2 6632 black
 CONNECT ra2-ball-1.? -> ra2-gear-1.?
-CONNECT ra2-axle3-5.? -> ra2-ball-1.?
-CONNECT ra2-axle3-1.? -> ra2-beam3-1.?
-CONNECT ra2-axle3-2.? -> ra2-beam3-2.?
+CONNECT ra2-axle3-5.? -> ra2-ball-1.axlehole1
+CONNECT ra2-axle3-1.? -> ra2-beam3-1.axlehole1
+CONNECT ra2-axle3-2.? -> ra2-beam3-2.axlehole1
 CONNECT ra2-beam3-1.? -> ra2-gear-1.?
 CONNECT ra2-beam3-2.? -> ra2-gear-1.?
 CONNECT ra2-gear-1.? -> ra2-beam5-1.?

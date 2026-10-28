@@ -225,3 +225,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 95?97, steps 132, 136?138: each outer thin three-hole beam spans a pair of gray axles and the intervening blue pin, rather than connecting only to the newly inserted axle. Its two end cross holes and center round hole are recorded; left/right beam orientation is symmetric.
 
 - Source page 97, steps 139?141: the dark 2-hole link is stacked on the red axle-pin through the adjoining thin 4-hole link; each link also uses its second round hole on the earlier blue hub pin. The red drive axle runs through the blue gear?s round center and the red connector?s cross hole.
+
+- Source page 99, steps 143?145, and the mirrored second-hub assembly: the second five-hole support uses holes 2 and 4. Its blue axle-pin fastens the dark center connector to the gray hub support, while the red axle-pin occupies the other cross hole. The second hub joint socket and thin-beam cross holes mirror the earlier hub.
