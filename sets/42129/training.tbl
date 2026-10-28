@@ -647,12 +647,12 @@ ADD tr-conn-23 65487 lightgray
 ADD tr-conn-24 32184 darkgray
 ADD tr-pin-41 61332 black
 ADD tr-pin-42 61332 black
-CONNECT tr-apin-10.? -> tr-conn-24.?
-CONNECT tr-conn-24.? -> tr-beam-5.?
-CONNECT tr-conn-22.? -> tr-beam-5.?
-CONNECT tr-conn-23.? -> tr-beam-5.?
-CONNECT tr-pin-41.? -> tr-beam-5.?
-CONNECT tr-pin-42.? -> tr-beam-5.?
+CONNECT tr-apin-10.? -> tr-conn-24.axlehole2
+CONNECT tr-apin-10.? -> tr-beam-5.?
+CONNECT tr-conn-22.pin1 -> tr-beam-5.?
+CONNECT tr-conn-23.pin1 -> tr-beam-5.?
+CONNECT tr-pin-41.? -> tr-conn-22.hole1
+CONNECT tr-pin-42.? -> tr-conn-23.hole1
 CONNECT tr-beam-5.? -> tr-panel3-3.?
 CONNECT tr-beam-5.? -> fl-apin-1.?
 WHY Builds a black side frame with grey connectors and pins, then attaches it alongside the floor and side panel.
@@ -665,12 +665,12 @@ ADD tr-conn-26 65487 lightgray
 ADD tr-conn-27 32184 darkgray
 ADD tr-pin-43 61332 black
 ADD tr-pin-44 61332 black
-CONNECT tr-apin-11.? -> tr-conn-27.?
-CONNECT tr-conn-27.? -> tr-beam-6.?
-CONNECT tr-conn-25.? -> tr-beam-6.?
-CONNECT tr-conn-26.? -> tr-beam-6.?
-CONNECT tr-pin-43.? -> tr-beam-6.?
-CONNECT tr-pin-44.? -> tr-beam-6.?
+CONNECT tr-apin-11.? -> tr-conn-27.axlehole2
+CONNECT tr-apin-11.? -> tr-beam-6.?
+CONNECT tr-conn-25.pin1 -> tr-beam-6.?
+CONNECT tr-conn-26.pin1 -> tr-beam-6.?
+CONNECT tr-pin-43.? -> tr-conn-25.hole1
+CONNECT tr-pin-44.? -> tr-conn-26.hole1
 CONNECT tr-beam-6.? -> tr-panel3-4.?
 CONNECT tr-beam-6.? -> fl-apin-3.?
 WHY Builds a black side frame with grey connectors and pins, then attaches it alongside the floor and side panel.
@@ -690,7 +690,7 @@ STEP 62
 GROUP front-crossbar
 ADD tr-axle-3 52730 darkgray
 ADD tr-ball-3 77590 lightgray
-CONNECT tr-axle-3.? -> tr-ball-3.?
+CONNECT tr-axle-3.? -> tr-ball-3.axlehole1
 WHY Joins a dark-grey short axle to a grey ball-ended connector.
 
 STEP 63
