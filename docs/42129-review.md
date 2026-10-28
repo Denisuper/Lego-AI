@@ -207,3 +207,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 67 and the mirrored steps 97?98: the side brace in step 93 is held to the eleven-hole beam by its two blue pins, not by a direct beam-to-beam connection. Their positions and the gray axle?s short-end cross hole follow the enlarged inset. The opposite side bent-beam pin and axle mirror steps 83?84.
 
 - Source page 73, step 102: the tan frictionless pin passes through the steering lever and is held by two gray pin hubs; the hubs? integral pins attach to the frame. The two additional black pins go into the frame, not the lever. The original direct lever-to-frame and hub-to-lever claims skipped the intermediary pin.
+
+- Source pages 77 and 80, steps 106 and 109: mirrored thin L-beams are held by the axle ends of the blue and red pins; the red axle connection to the second beam was omitted. The opposite bent brace attaches through two long pins, and its hole positions mirror the source step 93 brace.

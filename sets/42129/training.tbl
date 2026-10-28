@@ -1063,9 +1063,10 @@ ADD tr-beam3-14 32056 black
 ADD tr-beam3-15 32056 black
 ADD tr-apin-22 11214 red
 ADD tr-apin-23 43093 blue
-CONNECT tr-apin-23.? -> tr-beam3-14.?
-CONNECT tr-apin-23.? -> tr-beam3-15.?
-CONNECT tr-apin-22.? -> tr-beam3-14.?
+CONNECT tr-apin-23.axle1 -> tr-beam3-14.axlehole2
+CONNECT tr-apin-23.axle1 -> tr-beam3-15.axlehole2
+CONNECT tr-apin-22.axle1 -> tr-beam3-14.axlehole1
+CONNECT tr-apin-22.axle1 -> tr-beam3-15.axlehole1
 CONNECT tr-axle3-7.? -> ch4-beam13-1.?
 CONNECT tr-beam3-14.? -> tr-conn-32.?
 WHY Builds the opposite end bracket from two black L-beams and red and blue axle-pins, installs it beside the fan, and adds a brown three-stud stop axle.
@@ -1103,10 +1104,11 @@ ADD tr-axle3-9 4519 lightgray
 ADD tr-pin-77 42924 blue
 ADD tr-pin-78 42924 blue
 ADD tr-beam9-5 6629 black
-CONNECT tr-pin-77.? -> tr-beam9-5.?
-CONNECT tr-pin-78.? -> tr-beam9-5.?
-CONNECT tr-axle3-9.? -> tr-beam9-5.?
-CONNECT tr-beam9-5.? -> tr-beam11-5.?
+CONNECT tr-pin-77.? -> tr-beam9-5.hole5
+CONNECT tr-pin-78.? -> tr-beam9-5.hole7
+CONNECT tr-axle3-9.? -> tr-beam9-5.axlehole2
+CONNECT tr-pin-77.? -> tr-beam11-5.?
+CONNECT tr-pin-78.? -> tr-beam11-5.?
 WHY Builds a black bent-beam brace with two blue pins and a grey axle, then fits it along the opposite side beam.
 
 STEP 110
