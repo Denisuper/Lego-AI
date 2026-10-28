@@ -1512,41 +1512,41 @@ STEP 155
 GROUP rear-lock-support
 ADD ral-axle8-1 55013 darkgray
 ADD ral-conn-1 32034 black
-CONNECT ral-axle8-1.? -> ral-conn-1.?
+CONNECT ral-axle8-1.? -> ral-conn-1.hole1
 WHY Starts the differential-lock support with a dark-grey eight-stud axle and a black connector.
 
 STEP 156
 ADD ral-bush-1 3713 red
 ADD ral-gear-1 35188 orange
-CONNECT ral-bush-1.? -> ral-axle8-1.?
-CONNECT ral-gear-1.? -> ral-axle8-1.?
+CONNECT ral-bush-1.axlehole1 -> ral-axle8-1.?
+CONNECT ral-gear-1.axlehole1 -> ral-axle8-1.?
 WHY Slides a red half bush and orange selector onto the eight-stud axle.
 
 STEP 157
 ADD ral-gear-2 32270 black
 ADD ral-bush-2 3713 red
-CONNECT ral-gear-2.? -> ral-axle8-1.?
-CONNECT ral-bush-2.? -> ral-axle8-1.?
+CONNECT ral-gear-2.axlehole1 -> ral-axle8-1.?
+CONNECT ral-bush-2.axlehole1 -> ral-axle8-1.?
 WHY Adds a black bevel gear and a second red half bush on the axle.
 
 STEP 158
 ADD ral-bush-3 3713 red
 ADD ral-conn-2 32034 black
-CONNECT ral-bush-3.? -> ral-axle8-1.?
-CONNECT ral-conn-2.? -> ral-axle8-1.?
+CONNECT ral-bush-3.axlehole1 -> ral-axle8-1.?
+CONNECT ral-conn-2.hole1 -> ral-axle8-1.?
 WHY Adds another red half bush and a black connector to the far end of the axle.
 
 STEP 159
 ADD ral-apin-1 43093 blue
 ADD ral-apin-2 43093 blue
-CONNECT ral-apin-1.? -> ral-conn-1.?
-CONNECT ral-apin-2.? -> ral-conn-2.?
+CONNECT ral-apin-1.axle1 -> ral-conn-1.axlehole1
+CONNECT ral-apin-2.axle1 -> ral-conn-2.axlehole1
 WHY Adds a blue axle-pin to each black connector.
 
 STEP 160
 ADD ral-beam11-1 73507 black
-CONNECT ral-beam11-1.? -> ral-apin-1.?
-CONNECT ral-beam11-1.? -> ral-apin-2.?
+CONNECT ral-beam11-1.hole5 -> ral-apin-1.pin1
+CONNECT ral-beam11-1.hole11 -> ral-apin-2.pin1
 WHY Fits a black eleven-hole beam onto the two blue axle-pins.
 
 STEP 161
