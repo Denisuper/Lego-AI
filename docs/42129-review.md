@@ -255,3 +255,13 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 94, 129?130, steps 129 and 212?215: each chassis side receives one blue pin in the earlier panel and one in its step 129 extension. Both pins on each side of the upper-frame subassembly pass through the eleven-hole beam and the end holes of the three-hole beam; the second contact was omitted for each part.
 
 - Source pages 132?133, steps 220?221: the upright steering lever pivots on the tan pin held between two gray connectors; black axle-pins fasten those to the frame and bridge the dark connector. The next crossbar is attached through four blue pins: two axle-pins join its central connector, while the two long pins in its end holes join the frame.
+
+- Source pages 129 and 134?135, steps 212 and 223?224: the completed upper frame seats on the four blue side-panel pins placed earlier, with two pins entering each eleven-hole side beam. The draft had represented the mounting as a direct frame-to-panel connection.
+
+- Source pages 123, 136, 139?140, steps 205, 225, 228?230: the four-stud shafts enter the round holes of the earlier shock-end hubs. Each paired panel extension is joined by its two friction pins. The red front-frame piece is held by its integral pin and the blue axle-pin rather than a direct part-to-frame connection. Step 233?s bevel gear axle hole is identified.
+
+- Source pages 98, 100?101 and 141, steps 142, 148, 154 and 232: the rear and front differential half-shafts pass through the case?s round center and engage the cross holes of the two output bevel gears. The second rear hub joins via its shaft, rather than by a direct housing-to-housing contact; left/right identical axle naming is symmetric.
+
+- Source pages 142?143, steps 234?238: the first seven-hole beams attach through blue pins in their end holes; the five-hole crossbar fits both black pins and the gray hubs mount on the side beams. On the reverse side, both blue pins pass through each seven-hole beam, and the nine-hole crossbar shares one on each side.
+
+- Source pages 143?144, steps 239?241: the two stop axles run through the cross holes of both pairs of gray connectors and their red bushings; blue pins use the outer round holes. The differential output extensions engage opposite ends of their two dark axle couplers.

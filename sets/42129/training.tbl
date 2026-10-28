@@ -1392,7 +1392,8 @@ ADD ra-bevel-31 6589 tan
 ADD ra-bevel-32 6589 tan
 ADD ra-bevel-33 6589 tan
 ADD ra-bevel-34 6589 tan
-CONNECT ra-axle2-1.? -> ra-gear-3.?
+CONNECT ra-axle2-1.? -> ra-gear-3.hole1
+CONNECT ra-axle2-1.? -> ra-bevel-30.axlehole1
 CONNECT ra-differential-ring-1.? -> ra-gear-3.?
 CONNECT ra-gear-3.? -> ra-bush-1.?
 CONNECT ra-bevel-30.? -> ra-gear-3.?
@@ -1505,7 +1506,8 @@ WHY Fits the light-grey thin link with a red axle-pin to the opposite hub suppor
 
 STEP 154
 ATTACH rear-axle-second-hub
-CONNECT ra2-gear-1.? -> ra-gear-3.?
+CONNECT ra2-axle3-5.? -> ra-gear-3.hole1
+CONNECT ra2-axle3-5.? -> ra-bevel-34.axlehole1
 WHY Attaches the completed second wheel hub to the differential and first rear-axle half.
 
 STEP 155
@@ -2183,10 +2185,13 @@ STEP 223
 ADD bt-beam5-4 32316 black
 CONNECT bt-beam5-4.? -> bt-pin-18.?
 CONNECT bt-beam5-4.? -> bt-pin-19.?
-CONNECT bt-beam-1.? -> tr-panel3-3.?
+CONNECT tr-pin-89.? -> bt-beam11-1.?
+CONNECT tr-pin-90.? -> bt-beam11-1.?
+CONNECT tr-pin-91.? -> bt-beam11-2.?
+CONNECT tr-pin-92.? -> bt-beam11-2.?
 END
 ATTACH rear-upper-frame
-WHY Adds the final black five-hole beam and lowers the completed upper frame onto the chassis.
+WHY Adds the final black five-hole beam and lowers the completed upper frame onto the four mounting pins in the chassis side panels.
 
 STEP 224
 WHY Pushes the blue mounting pins into the side panels to secure the rear upper frame.
@@ -2195,7 +2200,9 @@ STEP 225
 ADD tr-axle4-5 87083 darkgray
 ADD tr-axle4-6 87083 darkgray
 CONNECT tr-axle4-5.? -> bt-beam11-1.?
+CONNECT tr-axle4-5.? -> ra-conn-22.hole1
 CONNECT tr-axle4-6.? -> bt-beam11-2.?
+CONNECT tr-axle4-6.? -> ra-conn-23.hole1
 WHY Fits two dark-grey four-stud stop axles through the rear upper frame and shock mounts.
 
 STEP 226
@@ -2239,8 +2246,10 @@ ADD tr-panel3-12 71709 black
 ADD tr-pin-108 4274 lightgray
 ADD tr-pin-109 4274 lightgray
 ADD tr-pin-110 4274 lightgray
-CONNECT tr-panel3-9.? -> tr-panel3-10.?
-CONNECT tr-panel3-11.? -> tr-panel3-12.?
+CONNECT tr-panel3-10.? -> tr-pin-101.?
+CONNECT tr-panel3-10.? -> tr-pin-102.?
+CONNECT tr-panel3-12.? -> tr-pin-106.?
+CONNECT tr-panel3-12.? -> tr-pin-107.?
 CONNECT tr-pin-101.? -> tr-panel3-9.?
 CONNECT tr-pin-102.? -> tr-panel3-9.?
 CONNECT tr-pin-103.? -> tr-panel3-10.?
@@ -2258,12 +2267,13 @@ WHY Builds two black panel extensions with black friction pins and grey half pin
 STEP 229
 ADD fa-beam3-1 61408 red
 ADD fa-apin-1 43093 blue
-CONNECT fa-apin-1.? -> fa-beam3-1.?
+CONNECT fa-apin-1.axle1 -> fa-beam3-1.axlehole1
 WHY Starts the front axle subassembly by joining a blue axle-pin to the small red beam.
 
 STEP 230
 ADD fa-beam-1 64179 black
-CONNECT fa-beam3-1.? -> fa-beam-1.?
+CONNECT fa-apin-1.pin1 -> fa-beam-1.?
+CONNECT fa-beam3-1.pin1 -> fa-beam-1.?
 WHY Fits the small red beam into the black rectangular front axle frame.
 
 STEP 231
@@ -2292,14 +2302,16 @@ WHY Builds the differential using a grey case, five tan bevel gears and a red ri
 STEP 232
 ADD fa-axle3-1 4519 lightgray
 ADD fa-axle3-2 4519 lightgray
-CONNECT fa-axle3-1.? -> fa-gear-1.?
-CONNECT fa-axle3-2.? -> fa-gear-1.?
+CONNECT fa-axle3-1.? -> fa-gear-1.hole1
+CONNECT fa-axle3-1.? -> fa-bevel-10.axlehole1
+CONNECT fa-axle3-2.? -> fa-gear-1.hole1
+CONNECT fa-axle3-2.? -> fa-bevel-14.axlehole1
 WHY Inserts two grey three-stud axles into the differential from opposite sides.
 
 STEP 233
 ADD fa-axle6-1 3706 red
 ADD fa-gear-2 32270 black
-CONNECT fa-axle6-1.? -> fa-gear-2.?
+CONNECT fa-axle6-1.? -> fa-gear-2.axlehole1
 CONNECT fa-axle6-1.? -> fa-beam-1.?
 MESH fa-gear-2.teeth fa-differential-ring-1.teeth
 WHY Fits a black twelve-tooth bevel gear on a red six-stud axle and installs it through the front frame.
@@ -2311,12 +2323,14 @@ ADD fa-beam7-1 32524 darkgray
 ADD fa-pin-3 42924 blue
 ADD fa-pin-4 42924 blue
 ADD fa-beam7-2 32524 darkgray
-CONNECT fa-pin-1.? -> fa-beam7-1.?
-CONNECT fa-pin-2.? -> fa-beam7-1.?
-CONNECT fa-pin-3.? -> fa-beam7-2.?
-CONNECT fa-pin-4.? -> fa-beam7-2.?
-CONNECT fa-beam7-1.? -> fa-beam-1.?
-CONNECT fa-beam7-2.? -> fa-beam-1.?
+CONNECT fa-pin-1.? -> fa-beam7-1.hole1
+CONNECT fa-pin-2.? -> fa-beam7-1.hole7
+CONNECT fa-pin-3.? -> fa-beam7-2.hole1
+CONNECT fa-pin-4.? -> fa-beam7-2.hole7
+CONNECT fa-pin-1.? -> fa-beam-1.?
+CONNECT fa-pin-2.? -> fa-beam-1.?
+CONNECT fa-pin-3.? -> fa-beam-1.?
+CONNECT fa-pin-4.? -> fa-beam-1.?
 WHY Fits two dark-grey seven-hole beams with four blue long pins along the front axle frame.
 
 STEP 235
@@ -2330,9 +2344,10 @@ STEP 236
 ADD fa-beam5-1 32316 black
 ADD fa-conn-1 65487 lightgray
 ADD fa-conn-2 65487 lightgray
-CONNECT fa-conn-1.? -> fa-beam5-1.?
-CONNECT fa-conn-2.? -> fa-beam5-1.?
+CONNECT fa-conn-1.pin1 -> fa-beam7-1.?
+CONNECT fa-conn-2.pin1 -> fa-beam7-2.?
 CONNECT fa-beam5-1.? -> fa-pin-5.?
+CONNECT fa-beam5-1.? -> fa-pin-6.?
 WHY Fits a black five-hole beam with two grey connectors across the frame.
 
 STEP 237
@@ -2351,8 +2366,11 @@ ADD fa-beam7-3 32524 darkgray
 ADD fa-beam7-4 32524 darkgray
 ADD fa-beam9-1 40490 black
 CONNECT fa-beam7-3.? -> fa-pin-7.?
+CONNECT fa-beam7-3.? -> fa-pin-8.?
 CONNECT fa-beam7-4.? -> fa-pin-9.?
+CONNECT fa-beam7-4.? -> fa-pin-10.?
 CONNECT fa-beam9-1.? -> fa-pin-8.?
+CONNECT fa-beam9-1.? -> fa-pin-10.?
 WHY Adds two dark-grey seven-hole beams and a black nine-hole beam to the front axle frame.
 
 STEP 239
@@ -2360,8 +2378,8 @@ ADD fa-axle8-1 55013 darkgray
 ADD fa-conn-3 42003 lightgray
 ADD fa-conn-4 42003 lightgray
 ADD fa-axle8-2 55013 darkgray
-CONNECT fa-axle8-1.? -> fa-conn-3.?
-CONNECT fa-axle8-2.? -> fa-conn-4.?
+CONNECT fa-axle8-1.? -> fa-conn-3.axlehole1
+CONNECT fa-axle8-2.? -> fa-conn-4.axlehole1
 CONNECT fa-axle8-1.? -> fa-beam-1.?
 CONNECT fa-axle8-2.? -> fa-beam-1.?
 WHY Builds two grey eight-stud stop-axle and connector pairs and inserts them through the front axle frame.
@@ -2373,12 +2391,12 @@ ADD fa-pin-11 42924 blue
 ADD fa-pin-12 42924 blue
 ADD fa-bush-1 3713 red
 ADD fa-bush-2 3713 red
-CONNECT fa-pin-11.? -> fa-conn-5.?
-CONNECT fa-pin-12.? -> fa-conn-6.?
-CONNECT fa-conn-5.? -> fa-axle8-1.?
-CONNECT fa-conn-6.? -> fa-axle8-2.?
-CONNECT fa-bush-1.? -> fa-axle8-1.?
-CONNECT fa-bush-2.? -> fa-axle8-2.?
+CONNECT fa-pin-11.? -> fa-conn-5.hole2
+CONNECT fa-pin-12.? -> fa-conn-6.hole2
+CONNECT fa-conn-5.axlehole1 -> fa-axle8-1.?
+CONNECT fa-conn-6.axlehole1 -> fa-axle8-2.?
+CONNECT fa-bush-1.axlehole1 -> fa-axle8-1.?
+CONNECT fa-bush-2.axlehole1 -> fa-axle8-2.?
 WHY Fits two grey connectors with blue pins to the stop axles and caps both shafts with red half bushes.
 
 STEP 241
@@ -2386,10 +2404,10 @@ ADD fa-conn-7 59443 darkgray
 ADD fa-conn-8 59443 darkgray
 ADD fa-axle2-1 32062 red
 ADD fa-axle2-2 32062 red
-CONNECT fa-axle2-1.? -> fa-conn-7.?
-CONNECT fa-axle2-2.? -> fa-conn-8.?
-CONNECT fa-conn-7.? -> fa-axle3-1.?
-CONNECT fa-conn-8.? -> fa-axle3-2.?
+CONNECT fa-axle2-1.? -> fa-conn-7.axlehole2
+CONNECT fa-axle2-2.? -> fa-conn-8.axlehole2
+CONNECT fa-conn-7.axlehole1 -> fa-axle3-1.?
+CONNECT fa-conn-8.axlehole1 -> fa-axle3-2.?
 WHY Builds two short red axle and dark-grey connector pairs and fits them to the differential shafts.
 
 STEP 242
