@@ -1020,14 +1020,15 @@ ADD ch4-pin-6 39888 tan
 ADD ch4-pin-7 61332 black
 ADD ch4-pin-8 61332 black
 ADD ch4-ball-1 31794 lightgray
-CONNECT ch4-pin-6.? -> ch4-ball-1.?
-CONNECT ch4-conn-2.? -> ch4-ball-1.?
-CONNECT ch4-conn-3.? -> ch4-ball-1.?
-CONNECT ch4-pin-7.? -> ch4-ball-1.?
-CONNECT ch4-pin-8.? -> ch4-ball-1.?
-CONNECT ch4-ball-1.? -> ch4-beam-1.?
+CONNECT ch4-pin-6.pin2 -> ch4-ball-1.?
+CONNECT ch4-conn-2.hole1 -> ch4-pin-6.pin1
+CONNECT ch4-conn-3.hole1 -> ch4-pin-6.pin3
+CONNECT ch4-pin-7.? -> ch4-beam-1.?
+CONNECT ch4-pin-8.? -> ch4-beam-1.?
+CONNECT ch4-conn-2.pin1 -> ch4-beam-1.?
+CONNECT ch4-conn-3.pin1 -> ch4-beam-1.?
 END
-WHY Builds the grey steering-arm support with a tan frictionless pin, two grey connectors and two black pins, then fits it to the rectangular frame.
+WHY Builds the grey steering-arm support with a tan frictionless pin held between two grey connectors, fits their integral pins to the rectangular frame, and adds two black pins to the frame.
 
 STEP 103
 ATTACH chassis-fourth-section
