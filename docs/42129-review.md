@@ -241,3 +241,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 111?112, steps 180?182: the white 3-hole beam attaches to the black frame through the two previously inserted pins, and the red towball occupies its center hole. The black spacer uses the third pin, and the gray stop-pin and blue axle-pin meet through the stop-pin?s cross socket. The gray gear?s shaft hole is explicit.
 
 - Source pages 113?114, steps 183?185: the red axle-pin occupies the second hole of its five-hole beam and passes through the black spacer. The yellow gear shaft passes through the other five-hole beam?s center hole and the two gear cross holes; the red clutch gear fits the tan pin through its round center.
+
+- Source pages 114?115, steps 186?191: the paired joint shafts and gray gears use their cross sockets; the second red clutch gear uses its round center. Each end of the housing link has a red axle-pin and pin hub axle inserted in the two cross holes of its three-hole connector, and the yellow shaft enters the black connectors? end sockets.

@@ -1784,17 +1784,17 @@ ADD ra-axle-2 52730 darkgray
 ADD ra-ball-3 52731 lightgray
 ADD ra-gear-9 94925 lightgray
 ADD ra-gear-11 94925 lightgray
-CONNECT ra-axle-1.? -> ra-ball-2.?
-CONNECT ra-axle-2.? -> ra-ball-3.?
-CONNECT ra-gear-9.? -> ra-axle-1.?
-CONNECT ra-gear-11.? -> ra-axle-2.?
+CONNECT ra-axle-1.? -> ra-ball-2.axlehole1
+CONNECT ra-axle-2.? -> ra-ball-3.axlehole1
+CONNECT ra-gear-9.axlehole1 -> ra-axle-1.?
+CONNECT ra-gear-11.axlehole1 -> ra-axle-2.?
 CONNECT ra-axle-1.? -> ra-beam-1.?
 CONNECT ra-axle-2.? -> ra-beam-1.?
 WHY Builds two grey joint shafts and adds them with two grey gears to the rear axle frame.
 
 STEP 187
 ADD ra-gear-10 18946 red
-CONNECT ra-gear-10.? -> ra-axle5-1.?
+CONNECT ra-gear-10.hole1 -> ra-axle5-1.?
 MESH ra-gear-10.teeth ra-gear-6.teeth
 WHY Fits the second red clutch gear on the yellow shaft from step 168, meshing with the adjacent grey gear.
 
@@ -1803,8 +1803,8 @@ GROUP rear-axle-housing
 ADD ra4-conn-1 32184 darkgray
 ADD ra4-apin-1 11214 red
 ADD ra4-conn-2 22961 darkgray
-CONNECT ra4-apin-1.? -> ra4-conn-1.?
-CONNECT ra4-conn-2.? -> ra4-conn-1.?
+CONNECT ra4-apin-1.axle1 -> ra4-conn-1.axlehole1
+CONNECT ra4-conn-2.axle1 -> ra4-conn-1.axlehole2
 WHY Starts a rear axle housing link with a dark-grey connector, red axle-pin and dark-grey pin hub.
 
 STEP 189
@@ -1814,7 +1814,7 @@ WHY Adds a black pin connector to the housing link.
 
 STEP 190
 ADD ra4-axle5-1 32073 yellow
-CONNECT ra4-axle5-1.? -> ra4-conn-3.?
+CONNECT ra4-axle5-1.? -> ra4-conn-3.axlehole1
 WHY Slides a yellow five-stud axle through the black connector.
 
 STEP 191
@@ -1822,10 +1822,10 @@ ADD ra4-conn-4 32184 darkgray
 ADD ra4-apin-2 11214 red
 ADD ra4-conn-5 22961 darkgray
 ADD ra4-conn-6 32034 black
-CONNECT ra4-apin-2.? -> ra4-conn-4.?
-CONNECT ra4-conn-5.? -> ra4-conn-4.?
+CONNECT ra4-apin-2.axle1 -> ra4-conn-4.axlehole1
+CONNECT ra4-conn-5.axle1 -> ra4-conn-4.axlehole2
 CONNECT ra4-conn-6.? -> ra4-conn-5.?
-CONNECT ra4-conn-6.? -> ra4-axle5-1.?
+CONNECT ra4-conn-6.axlehole1 -> ra4-axle5-1.?
 WHY Builds the matching connector and red axle-pin assembly and slides it onto the yellow axle.
 
 STEP 192
