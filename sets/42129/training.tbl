@@ -1370,6 +1370,12 @@ CONNECT ra-bevel-31.? -> ra-gear-3.?
 CONNECT ra-bevel-32.? -> ra-gear-3.?
 CONNECT ra-bevel-33.? -> ra-gear-3.?
 CONNECT ra-bevel-34.? -> ra-gear-3.?
+MESH ra-bevel-31.teeth ra-bevel-30.teeth
+MESH ra-bevel-31.teeth ra-bevel-34.teeth
+MESH ra-bevel-32.teeth ra-bevel-30.teeth
+MESH ra-bevel-32.teeth ra-bevel-34.teeth
+MESH ra-bevel-33.teeth ra-bevel-30.teeth
+MESH ra-bevel-33.teeth ra-bevel-34.teeth
 WHY Builds the differential from its grey case, five tan bevel gears, red ring gear and short red axle, then fits it to the driving-ring assembly.
 
 STEP 143
@@ -2213,6 +2219,12 @@ CONNECT fa-bevel-11.? -> fa-gear-1.?
 CONNECT fa-bevel-12.? -> fa-gear-1.?
 CONNECT fa-bevel-13.? -> fa-gear-1.?
 CONNECT fa-bevel-14.? -> fa-gear-1.?
+MESH fa-bevel-11.teeth fa-bevel-10.teeth
+MESH fa-bevel-11.teeth fa-bevel-14.teeth
+MESH fa-bevel-12.teeth fa-bevel-10.teeth
+MESH fa-bevel-12.teeth fa-bevel-14.teeth
+MESH fa-bevel-13.teeth fa-bevel-10.teeth
+MESH fa-bevel-13.teeth fa-bevel-14.teeth
 WHY Builds the differential using a grey case, five tan bevel gears and a red ring gear, then fits it inside the front axle frame.
 
 STEP 232
