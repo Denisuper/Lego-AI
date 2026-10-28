@@ -329,6 +329,7 @@ ADD tr-gear-8 94925 lightgray
 CONNECT tr-bush-6.? -> tr-axle7-1.?
 CONNECT tr-gear-8.? -> tr-axle7-1.?
 CONNECT tr-axle7-1.? -> ch1-beam3-2.?
+MESH tr-gear-8.teeth ch1-gear-2.teeth
 WHY Fits a grey seven-stud axle with a red half bush and a gear into the gearbox support.
 
 STEP 28
@@ -338,6 +339,7 @@ ADD tr-bush-7 3713 red
 CONNECT tr-bush-7.? -> tr-axle7-2.?
 CONNECT tr-gear-9.? -> tr-axle7-2.?
 CONNECT tr-axle7-2.? -> ch1-beam3-3.?
+MESH tr-gear-9.teeth ch1-gear-1.teeth
 WHY Fits a second grey seven-stud axle with a red half bush and a small gear into the gearbox support.
 
 STEP 29
@@ -356,6 +358,7 @@ ADD tr-beam3-8 32523 white
 CONNECT tr-axle7-1.? -> tr-gear-10.axlehole1 LOCKED
 CONNECT tr-pin-30.? -> tr-gear-11.hole1 TURNS
 CONNECT tr-axle7-2.? -> tr-beam3-8.?
+MESH tr-gear-10.teeth tr-gear-11.teeth
 WHY Adds a grey gear, red clutch gear and white three-hole beam to the exposed gearbox shafts and support pin.
 
 STEP 31
