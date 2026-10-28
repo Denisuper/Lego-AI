@@ -161,3 +161,13 @@ Inventory reconciliation after source coverage: source step 490 supplies the two
 Printed page 373 contains a numbered completion illustration, source step 640, with no added parts; it is now recorded explicitly. The black two-hole thin-beam callouts located in the booklet total 24 across steps 356, 357, 378, 384, 385, 407, 503-505, 509-511, 529, 532 and 533; the inventory lists 26. The two-piece difference remains unresolved rather than placing parts without a source location.
 
 A targeted comparison with the checked-in `model.mpd` locates the two-link discrepancy at source step 529. The booklet callout and inset on printed page 288 show two black 41677 two-hole thin beams and one black 6632 three-hole thin beam, with two tan axle-pins. In contrast, the authored LDraw model section `42129 - front.ldr`, lines 2801-2808, uses four black 41677 beams and no black 6632 beam for that assembly. Flattening the reachable truck model gives 26 black 41677 and 13 black 6632; this transcription gives 24 and 14 respectively, while the provided inventory lists 26 and 14. The model is a separate authored reconstruction, so the evidence does not establish whether its construction represents another version or an error, or whether the inventory has a mismatch. Keep the booklet construction at step 529 and the two missing inventory entries unresolved.
+
+Drivetrain interface review: source step 13, printed page 10, shows three tan bevel gears inside the red differential. The draft omitted the third gear?s housing support and its engagement with the two output bevel gears. Those relations are recorded; the internal mounting point remains uncertain.
+
+Front drivetrain interface review: source steps 231-233 on printed pages 141-142 show the black input bevel gear engaging the red outer ring gear of the front differential. That drive mesh is now recorded; the exact axle and bearing endpoints remain uncertain.
+
+Rear drivetrain interface review: printed pages 106-107 trace the blue gear to step 141 and show the black bevel gear added in step 170 engaging it. That mesh is now recorded; the axle and support endpoints remain uncertain.
+
+Motor differential interface review: source step 16 on printed page 13 shows both grey 24-tooth motor gears engaging the red differential?s exterior teeth. These meshes are recorded separately from the internal bevel-gear contacts.
+
+Rear-drive shaft review: comparing source steps 177, 184 and 187 on pages 110, 113 and 114 shows the second red clutch gear on the yellow shaft from the earlier drive support, not on the later shaft installed with the lower grey gear. The shaft reference is corrected and its visible mesh with the adjacent grey gear is recorded.

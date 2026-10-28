@@ -134,6 +134,9 @@ CONNECT tr-axle4-1.axle2 -> tr-gear-1.hole2 TURNS
 CONNECT tr-axle3-1.axle2 -> tr-gear-1.hole1 TURNS
 CONNECT tr-axle4-1.axle3 -> tr-gear-3.axlehole1 LOCKED
 CONNECT tr-axle3-1.axle3 -> tr-gear-4.axlehole1 LOCKED
+CONNECT tr-gear-2.? -> tr-gear-1.?
+MESH tr-gear-2.teeth tr-gear-3.teeth
+MESH tr-gear-2.teeth tr-gear-4.teeth
 WHY Builds the red differential with three internal bevel gears and mounts it on a grey nine-hole beam, then fits the assembly onto the motor pins.
 
 STEP 14
@@ -169,6 +172,8 @@ CONNECT tr-axle5-3.axle3 -> tr-gear-6.axlehole1 LOCKED
 CONNECT tr-axle5-3.axle4 -> tr-beam9-1.hole2 TURNS
 CONNECT tr-axle5-2.axle5 -> cont-motor-2.?
 CONNECT tr-axle5-3.axle5 -> cont-motor-1.?
+MESH tr-gear-5.teeth tr-gear-1.teeth
+MESH tr-gear-6.teeth tr-gear-1.teeth
 WHY Adds two five-stud axles and two 24-tooth gears to the motor outputs.
 
 STEP 17
@@ -1600,6 +1605,7 @@ CONNECT ra-conn-3.? -> ra-axle3-5.?
 CONNECT ra-apin-8.? -> ra-conn-3.?
 CONNECT ra-axle2-2.? -> ral-beam11-1.?
 CONNECT ra-conn-3.? -> ral-beam11-1.?
+MESH ra-gear-4.teeth ra-gear-2.teeth
 WHY Builds and fits the small bevel-gear shaft and its connectors, then inserts a short red axle into the rear differential-lock support.
 
 STEP 171
@@ -1746,8 +1752,9 @@ WHY Builds two grey joint shafts and adds them with two grey gears to the rear a
 
 STEP 187
 ADD ra-gear-10 18946 red
-CONNECT ra-gear-10.? -> ra-axle5-2.?
-WHY Adds the second red clutch gear to the rear axle frame.
+CONNECT ra-gear-10.? -> ra3-axle5-1.?
+MESH ra-gear-10.teeth ra-gear-6.teeth
+WHY Fits the second red clutch gear on the earlier rear-drive support shaft, meshing with the adjacent grey gear.
 
 STEP 188
 GROUP rear-axle-housing
@@ -2220,6 +2227,7 @@ ADD fa-axle6-1 3706 red
 ADD fa-gear-2 32270 black
 CONNECT fa-axle6-1.? -> fa-gear-2.?
 CONNECT fa-axle6-1.? -> fa-beam-1.?
+MESH fa-gear-2.teeth fa-differential-ring-1.teeth
 WHY Fits a black twelve-tooth bevel gear on a red six-stud axle and installs it through the front frame.
 
 STEP 234
