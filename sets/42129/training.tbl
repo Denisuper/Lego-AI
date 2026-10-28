@@ -2142,13 +2142,15 @@ ADD bt-conn-2 6536 darkgray
 ADD bt-conn-3 32184 darkgray
 ADD bt-pin-15 39888 tan
 ADD bt-ball-1 31794 lightgray
-CONNECT bt-pin-15.? -> bt-ball-1.?
-CONNECT bt-conn-1.? -> bt-ball-1.?
-CONNECT bt-conn-2.? -> bt-ball-1.?
-CONNECT bt-apin-1.? -> bt-conn-1.?
-CONNECT bt-apin-2.? -> bt-conn-2.?
-CONNECT bt-conn-3.? -> bt-apin-1.?
-CONNECT bt-ball-1.? -> bt-beam-1.?
+CONNECT bt-pin-15.pin2 -> bt-ball-1.?
+CONNECT bt-conn-1.hole1 -> bt-pin-15.pin1
+CONNECT bt-conn-2.hole1 -> bt-pin-15.pin3
+CONNECT bt-apin-1.axle1 -> bt-conn-1.axlehole1
+CONNECT bt-apin-2.axle1 -> bt-conn-2.axlehole1
+CONNECT bt-conn-3.axlehole1 -> bt-apin-1.?
+CONNECT bt-conn-3.axlehole2 -> bt-apin-2.?
+CONNECT bt-apin-1.pin1 -> bt-beam-1.?
+CONNECT bt-apin-2.pin1 -> bt-beam-1.?
 WHY Builds the upright grey steering-arm support with connectors, tan frictionless pin and black axle-pins, then fits it into the frame.
 
 STEP 221
@@ -2158,12 +2160,14 @@ ADD bt-beam5-3 32316 black
 ADD bt-apin-3 43093 blue
 ADD bt-apin-4 43093 blue
 ADD bt-conn-4 32184 darkgray
-CONNECT bt-apin-3.? -> bt-conn-4.?
-CONNECT bt-apin-4.? -> bt-conn-4.?
-CONNECT bt-conn-4.? -> bt-beam5-3.?
-CONNECT bt-pin-16.? -> bt-beam5-3.?
-CONNECT bt-pin-17.? -> bt-beam5-3.?
-CONNECT bt-beam5-3.? -> bt-beam-1.?
+CONNECT bt-apin-3.axle1 -> bt-conn-4.axlehole1
+CONNECT bt-apin-4.axle1 -> bt-conn-4.axlehole2
+CONNECT bt-apin-3.pin1 -> bt-beam5-3.hole2
+CONNECT bt-apin-4.pin1 -> bt-beam5-3.hole4
+CONNECT bt-pin-16.? -> bt-beam5-3.hole1
+CONNECT bt-pin-17.? -> bt-beam5-3.hole5
+CONNECT bt-pin-16.? -> bt-beam-1.?
+CONNECT bt-pin-17.? -> bt-beam-1.?
 WHY Builds a black five-hole crossbar with a dark-grey connector, two blue axle-pins and two blue long pins, then fits it across the frame.
 
 STEP 222
