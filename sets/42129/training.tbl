@@ -572,14 +572,15 @@ WHY Fits the completed second chassis subassembly between the two side panels an
 STEP 51
 ADD tr-gear-15 94925 lightgray
 ADD tr-gear-16 18575 tan
-CONNECT tr-gear-15.? -> ch2-conn-3.?
-CONNECT tr-gear-16.? -> ch2-conn-5.?
+CONNECT tr-gear-15.axlehole1 -> ch2-conn-3.?
+CONNECT tr-gear-16.axlehole1 -> ch2-conn-5.?
+MESH tr-gear-15 WITH tr-gear-16
 WHY Fits a grey gear and a tan bevel gear onto the shafts of the second chassis assembly.
 
 STEP 52
 ADD tr-axle-2 52730 darkgray
 ADD tr-ball-2 77590 lightgray
-CONNECT tr-axle-2.? -> tr-ball-2.?
+CONNECT tr-axle-2.? -> tr-ball-2.axlehole1
 CONNECT tr-axle-2.? -> ch2-conn-3.?
 WHY Joins a grey ball-ended shaft to its dark connector, turns the chassis and installs the shaft into the second chassis assembly.
 
@@ -590,8 +591,8 @@ ADD fl-conn-1 65487 lightgray
 ADD fl-conn-2 65487 lightgray
 ADD fl-pin-1 61332 black
 ADD fl-pin-2 61332 black
-CONNECT fl-conn-1.? -> fl-panel5-1.?
-CONNECT fl-conn-2.? -> fl-panel5-1.?
+CONNECT fl-conn-1.pin1 -> fl-panel5-1.?
+CONNECT fl-conn-2.pin1 -> fl-panel5-1.?
 CONNECT fl-pin-1.? -> fl-panel5-1.?
 CONNECT fl-pin-2.? -> fl-panel5-1.?
 WHY Starts a chassis floor using a black five-by-eleven panel, two grey connectors and two black friction pins.
@@ -607,23 +608,23 @@ ADD fl-pin-3 61332 black
 ADD fl-pin-4 61332 black
 ADD fl-apin-1 43093 blue
 ADD fl-apin-2 43093 blue
-CONNECT fl-pin-3.? -> fl-panel3-1.?
+CONNECT fl-pin-3.? -> fl-panel5-1.?
 CONNECT fl-pin-4.? -> fl-panel3-1.?
-CONNECT fl-apin-1.? -> fl-panel3-1.?
+CONNECT fl-apin-1.? -> fl-panel5-1.?
 CONNECT fl-apin-2.? -> fl-panel3-1.?
-WHY Inserts two black friction pins and two blue axle-pins along one edge of the floor.
+WHY Inserts a black friction pin and a blue axle-pin into each floor panel along one edge.
 
 STEP 56
 ADD fl-pin-5 61332 black
 ADD fl-pin-6 61332 black
 ADD fl-apin-3 43093 blue
 ADD fl-apin-4 43093 blue
-CONNECT fl-pin-5.? -> fl-panel3-1.?
+CONNECT fl-pin-5.? -> fl-panel5-1.?
 CONNECT fl-pin-6.? -> fl-panel3-1.?
-CONNECT fl-apin-3.? -> fl-panel3-1.?
+CONNECT fl-apin-3.? -> fl-panel5-1.?
 CONNECT fl-apin-4.? -> fl-panel3-1.?
 END
-WHY Inserts two black friction pins and two blue axle-pins along the other edge of the floor.
+WHY Inserts a black friction pin and a blue axle-pin into each floor panel along the other edge.
 
 STEP 57
 ATTACH chassis-floor
