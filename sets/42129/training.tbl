@@ -580,7 +580,7 @@ WHY Fits a grey gear and a tan bevel gear onto the shafts of the second chassis 
 STEP 52
 ADD tr-axle-2 52730 darkgray
 ADD tr-ball-2 77590 lightgray
-CONNECT tr-axle-2.? -> tr-ball-2.axlehole1
+CONNECT tr-axle-2.? -> tr-ball-2.?
 CONNECT tr-axle-2.? -> ch2-conn-3.?
 WHY Joins a grey ball-ended shaft to its dark connector, turns the chassis and installs the shaft into the second chassis assembly.
 
@@ -690,7 +690,7 @@ STEP 62
 GROUP front-crossbar
 ADD tr-axle-3 52730 darkgray
 ADD tr-ball-3 77590 lightgray
-CONNECT tr-axle-3.? -> tr-ball-3.axlehole1
+CONNECT tr-axle-3.? -> tr-ball-3.?
 WHY Joins a dark-grey short axle to a grey ball-ended connector.
 
 STEP 63
@@ -1784,8 +1784,8 @@ ADD ra-axle-2 52730 darkgray
 ADD ra-ball-3 52731 lightgray
 ADD ra-gear-9 94925 lightgray
 ADD ra-gear-11 94925 lightgray
-CONNECT ra-axle-1.? -> ra-ball-2.axlehole1
-CONNECT ra-axle-2.? -> ra-ball-3.axlehole1
+CONNECT ra-axle-1.? -> ra-ball-2.?
+CONNECT ra-axle-2.? -> ra-ball-3.?
 CONNECT ra-gear-9.axlehole1 -> ra-axle-1.?
 CONNECT ra-gear-11.axlehole1 -> ra-axle-2.?
 CONNECT ra-axle-1.? -> ra-beam-1.?
@@ -2031,13 +2031,14 @@ WHY Builds a seven-hole crossbeam with two grey thin links, blue axle-pins and b
 STEP 207
 ADD ra-axle4-2 3705 red
 ADD ra-axle5-3 32073 yellow
-CONNECT ra-axle4-2.? -> ra-ball-2.?
-CONNECT ra-axle5-3.? -> ra-ball-3.?
+CONNECT ra-axle4-2.? -> ra-ball-2.axlehole1
+CONNECT ra-axle5-3.? -> ra-ball-3.axlehole1
 WHY Fits a red four-stud axle and yellow five-stud axle into the two joint shafts on the axle assembly.
 
 STEP 208
 ADD ra-panel7-1 24119 black
-CONNECT ra-panel7-1.? -> ra-beam7-3.?
+CONNECT ra-panel7-1.? -> ra-apin-14.?
+CONNECT ra-panel7-1.? -> ra-apin-15.?
 WHY Fits the black curved panel across the front of the axle assembly.
 
 STEP 209
