@@ -481,14 +481,18 @@ CONNECT tr-pin-37.? -> tr-panel3-4.?
 CONNECT tr-pin-38.? -> tr-panel3-4.?
 CONNECT tr-pin-39.? -> tr-panel3-4.?
 CONNECT tr-pin-40.? -> tr-panel3-4.?
-CONNECT tr-beam3-12.? -> tr-panel3-3.?
-CONNECT tr-beam3-13.? -> tr-panel3-4.?
-CONNECT tr-conn-18.? -> tr-panel3-3.?
-CONNECT tr-conn-19.? -> tr-panel3-3.?
-CONNECT tr-conn-20.? -> tr-panel3-4.?
-CONNECT tr-conn-21.? -> tr-panel3-4.?
-CONNECT tr-panel3-3.? -> tr-panel3-1.?
-CONNECT tr-panel3-4.? -> tr-panel3-2.?
+CONNECT tr-pin-33.? -> tr-beam3-12.hole1
+CONNECT tr-pin-34.? -> tr-beam3-12.hole3
+CONNECT tr-pin-37.? -> tr-beam3-13.hole1
+CONNECT tr-pin-38.? -> tr-beam3-13.hole3
+CONNECT tr-pin-33.? -> tr-conn-18.hole1
+CONNECT tr-pin-34.? -> tr-conn-19.hole1
+CONNECT tr-pin-37.? -> tr-conn-20.hole1
+CONNECT tr-pin-38.? -> tr-conn-21.hole1
+CONNECT tr-pin-16.? -> tr-conn-18.hole1
+CONNECT tr-pin-20.? -> tr-conn-19.hole1
+CONNECT tr-pin-15.? -> tr-conn-20.hole1
+CONNECT tr-pin-19.? -> tr-conn-21.hole1
 WHY Builds two matching black side panels with blue long pins and white connectors, then attaches one to each side of the chassis.
 
 STEP 41

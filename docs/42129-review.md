@@ -183,3 +183,5 @@ Gearbox drive review: the subassembly on page 21 and its installation on pages 2
 Lock-motor gearing review: printed pages 25-28 show the prepared motor shaft and the adjacent seven-stud shaft from step 28. The two grey sixteen-tooth gears installed in step 36 engage each other; that mesh is now recorded. The shaft bearing points remain uncertain.
 
 Upper crossbar review: source step 37 inset on page 29 shows the four-pin hub seated in the white three-hole beam?s ends and holes 3 and 5 of the eleven-hole beam. Those four receiving holes are now explicit; which hub pin faces each end remains uncertain.
+
+Side-panel interface review: page 32 shows the white three-hole beams and round connectors joined to each new panel by its blue long pins; earlier pages 14-15 show the grey stop pins receiving the round connectors. Step 40 now records those intervening pins instead of direct panel-to-panel and panel-to-beam joins. Pin-end positions remain uncertain.
