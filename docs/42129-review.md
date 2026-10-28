@@ -175,3 +175,15 @@ Rear-drive shaft review: comparing source steps 168, 177, 184 and 187 on pages 1
 Axle differential review: source step 142 page 98 and step 231 page 141 show the two output bevel gears with three intermediate bevel gears in each case. In each numbered group, the first and last bevel names represent the two outputs and the three middle names represent the intermediates; their six internal gear contacts are now recorded. Mounting points remain uncertain.
 
 Motor support review: source steps 1-6 on pages 6-7 show paired triangular beams with the black pins in the two inner base holes, the yellow axle through one cross-shaped end and the grey hub through the opposite cross-shaped end. The black pin hub passes through the apex. Receiving holes are now identified using the catalog geometry; hidden shaft and pin end positions remain uncertain.
+
+Gearbox support review: source step 26 inset sequence on page 21 shows the long blue pins in the ends of the white three-hole beam and black pins securing the olive beams to the white supports. The two white-beam receiving holes are identified, and the olive beam connections now name the actual intervening pins rather than claiming direct beam-to-beam joints. Hidden pin and hole positions remain uncertain.
+
+Gearbox drive review: the subassembly on page 21 and its installation on pages 22-24 establish which gears share the brown shaft and which flank it. The step 27 grey gear meshes with its 16-tooth gear, the step 28 small gear with its 24-tooth gear, and the grey gear added in step 30 meshes with the adjacent red clutch gear. These visible contacts are now recorded; axle-bearing points remain uncertain.
+
+Lock-motor gearing review: printed pages 25-28 show the prepared motor shaft and the adjacent seven-stud shaft from step 28. The two grey sixteen-tooth gears installed in step 36 engage each other; that mesh is now recorded. The shaft bearing points remain uncertain.
+
+Upper crossbar review: source step 37 inset on page 29 shows the four-pin hub seated in the white three-hole beam?s ends and holes 3 and 5 of the eleven-hole beam. Those four receiving holes are now explicit; which hub pin faces each end remains uncertain.
+
+Side-panel interface review: page 32 shows the white three-hole beams and round connectors joined to each new panel by its blue long pins; earlier pages 14-15 show the grey stop pins receiving the round connectors. Step 40 now records those intervening pins instead of direct panel-to-panel and panel-to-beam joins. Pin-end positions remain uncertain.
+
+Second chassis interface review: printed pages 33-35 show the black pins in the round holes of the two short axle connectors, with white sleeves over their exposed ends. Step 47 previously assigned its pin to the L-beam; it belongs in the round hole of the short connector added in step 46. The four-pin hub seats in two holes of each L-beam, and step 49 inserts its red pin into the middle hole of the earlier grey perpendicular connector. Hidden pin-end positions remain uncertain.
