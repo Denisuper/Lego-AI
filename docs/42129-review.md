@@ -257,3 +257,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 132?133, steps 220?221: the upright steering lever pivots on the tan pin held between two gray connectors; black axle-pins fasten those to the frame and bridge the dark connector. The next crossbar is attached through four blue pins: two axle-pins join its central connector, while the two long pins in its end holes join the frame.
 
 - Source pages 129 and 134?135, steps 212 and 223?224: the completed upper frame seats on the four blue side-panel pins placed earlier, with two pins entering each eleven-hole side beam. The draft had represented the mounting as a direct frame-to-panel connection.
+
+- Source pages 123, 136, 139?140, steps 205, 225, 228?230: the four-stud shafts enter the round holes of the earlier shock-end hubs. Each paired panel extension is joined by its two friction pins. The red front-frame piece is held by its integral pin and the blue axle-pin rather than a direct part-to-frame connection. Step 233?s bevel gear axle hole is identified.
