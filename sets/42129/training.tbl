@@ -2183,10 +2183,13 @@ STEP 223
 ADD bt-beam5-4 32316 black
 CONNECT bt-beam5-4.? -> bt-pin-18.?
 CONNECT bt-beam5-4.? -> bt-pin-19.?
-CONNECT bt-beam-1.? -> tr-panel3-3.?
+CONNECT tr-pin-89.? -> bt-beam11-1.?
+CONNECT tr-pin-90.? -> bt-beam11-1.?
+CONNECT tr-pin-91.? -> bt-beam11-2.?
+CONNECT tr-pin-92.? -> bt-beam11-2.?
 END
 ATTACH rear-upper-frame
-WHY Adds the final black five-hole beam and lowers the completed upper frame onto the chassis.
+WHY Adds the final black five-hole beam and lowers the completed upper frame onto the four mounting pins in the chassis side panels.
 
 STEP 224
 WHY Pushes the blue mounting pins into the side panels to secure the rear upper frame.
