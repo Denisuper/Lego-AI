@@ -213,3 +213,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 79 and 84, steps 108 and 113: the paired steering arms attach to the earlier end L-brackets via their brown stop axles; they do not attach directly to the small 2-hole beams introduced in step 112. Exact axle positions remain uncertain.
 
 - Source page 83, step 112: each black pin fits the round hole of its two-hole beam and joins it to the gray connector, replacing direct beam-to-connector claims.
+
+- Source pages 87?88, steps 116 and 120: the two gray axles enter the two separate cross holes of the central connector, and each black long axle-pin enters the cross hole of its triangular panel.

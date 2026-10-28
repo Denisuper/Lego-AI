@@ -1172,8 +1172,8 @@ GROUP central-upright-support
 ADD ch5-conn-1 32184 darkgray
 ADD ch5-axle3-1 4519 lightgray
 ADD ch5-axle3-2 4519 lightgray
-CONNECT ch5-axle3-1.? -> ch5-conn-1.?
-CONNECT ch5-axle3-2.? -> ch5-conn-1.?
+CONNECT ch5-axle3-1.? -> ch5-conn-1.axlehole1
+CONNECT ch5-axle3-2.? -> ch5-conn-1.axlehole2
 WHY Starts the central upright support by fitting two grey three-stud axles into a dark-grey connector.
 
 STEP 117
@@ -1204,8 +1204,8 @@ WHY Adds two black curved panels to the red axle-pins at opposite ends of the su
 STEP 120
 ADD ch5-apin-3 18651 black
 ADD ch5-apin-4 18651 black
-CONNECT ch5-apin-3.? -> ch5-beam2-1.?
-CONNECT ch5-apin-4.? -> ch5-beam2-2.?
+CONNECT ch5-apin-3.? -> ch5-beam2-1.axlehole1
+CONNECT ch5-apin-4.? -> ch5-beam2-2.axlehole1
 WHY Inserts two black axle-pins into the outer panels.
 
 STEP 121
