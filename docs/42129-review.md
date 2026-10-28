@@ -215,3 +215,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source page 83, step 112: each black pin fits the round hole of its two-hole beam and joins it to the gray connector, replacing direct beam-to-connector claims.
 
 - Source pages 87?88, steps 116 and 120: the two gray axles enter the two separate cross holes of the central connector, and each black long axle-pin enters the cross hole of its triangular panel.
+
+- Source pages 86, 90, and 92, steps 115, 125 and 127: the upright support attaches to the earlier beams on the four previously fitted friction pins. The green cable clip sits above the earlier blue clip on the black axle-pin from step 78; it is not connected directly to the newly added L-beam.

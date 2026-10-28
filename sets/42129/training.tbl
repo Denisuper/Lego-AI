@@ -1247,8 +1247,10 @@ WHY Adds two red axle-pins with grey spacers to the upright L-beams.
 
 STEP 125
 ATTACH central-upright-support
-CONNECT ch5-beam11-1.? -> tr-beam15-1.?
-CONNECT ch5-beam11-2.? -> tr-beam15-2.?
+CONNECT tr-pin-81.? -> ch5-beam11-1.?
+CONNECT tr-pin-82.? -> ch5-beam11-1.?
+CONNECT tr-pin-83.? -> ch5-beam11-2.?
+CONNECT tr-pin-84.? -> ch5-beam11-2.?
 WHY Lowers the completed support onto the two earlier upright beams and their mounting pins.
 
 STEP 126
@@ -1260,8 +1262,8 @@ STEP 127
 ADD tr-beam2-12 32140 darkgray
 ADD tr-axle-9 49283 green
 CONNECT tr-beam2-12.? -> ch5-apin-6.?
-CONNECT tr-axle-9.? -> tr-beam2-12.?
-WHY Turns the chassis, fits the second dark-grey L-beam and adds a green cable clip to hold the motor lead.
+CONNECT tr-axle-9.axlehole1 -> tr-apin-19.?
+WHY Turns the chassis, fits the second dark-grey L-beam and adds a green cable clip above the earlier blue clip on the black axle-pin to hold the motor lead.
 
 STEP 128
 WHY Routes the motor lead through the green cable clip, as shown in the close-up.
