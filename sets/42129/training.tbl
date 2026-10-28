@@ -1603,6 +1603,7 @@ CONNECT ra-conn-3.? -> ra-axle3-5.?
 CONNECT ra-apin-8.? -> ra-conn-3.?
 CONNECT ra-axle2-2.? -> ral-beam11-1.?
 CONNECT ra-conn-3.? -> ral-beam11-1.?
+MESH ra-gear-4.teeth ra-gear-2.teeth
 WHY Builds and fits the small bevel-gear shaft and its connectors, then inserts a short red axle into the rear differential-lock support.
 
 STEP 171
