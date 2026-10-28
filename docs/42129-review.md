@@ -235,3 +235,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 103?104, steps 161?163: the red and blue pins above the lock shaft enter the upper cross holes of its existing connectors, not the lower support beam. The previously omitted blue pin also fastens hole 5 of the upper beam; its two end pins occupy holes 1 and 11.
 
 - Source pages 106?107, steps 167?170: each red pin enters the thick end cross hole of its light-gray link. The yellow axle in step 168 and red axle-pin in step 169 each pass through the stacked dark links; the small bevel gear in step 170 uses its cross hole.
+
+- Source pages 108?109, steps 171?177: the rear-drive support uses its lower beam?s holes 1, 3 and 5, and upper beam?s holes 1, 3, 5 and 9. The red connector bridges the exposed blue and red axle ends; the new gear uses its cross hole on the yellow axle.

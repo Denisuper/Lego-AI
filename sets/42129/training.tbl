@@ -1653,16 +1653,16 @@ STEP 171
 GROUP rear-drive-support
 ADD ra3-beam11-1 73507 black
 ADD ra3-apin-1 43093 blue
-CONNECT ra3-apin-1.? -> ra3-beam11-1.?
+CONNECT ra3-apin-1.pin1 -> ra3-beam11-1.hole1
 WHY Starts the second rear axle drive support with a blue axle-pin in a black eleven-hole beam.
 
 STEP 172
 ADD ra3-bush-1 42195 red
 ADD ra3-pin-1 61332 black
 ADD ra3-pin-2 61332 black
-CONNECT ra3-bush-1.? -> ra3-apin-1.?
-CONNECT ra3-pin-1.? -> ra3-beam11-1.?
-CONNECT ra3-pin-2.? -> ra3-beam11-1.?
+CONNECT ra3-bush-1.axlehole1 -> ra3-apin-1.axle1
+CONNECT ra3-pin-1.? -> ra3-beam11-1.hole3
+CONNECT ra3-pin-2.? -> ra3-beam11-1.hole5
 WHY Adds a red connector and two black friction pins to the beam.
 
 STEP 173
@@ -1675,26 +1675,26 @@ STEP 174
 ADD ra3-pin-3 61332 black
 ADD ra3-apin-2 11214 red
 CONNECT ra3-pin-3.? -> ra3-beam3-1.?
-CONNECT ra3-apin-2.? -> ra3-bush-1.?
+CONNECT ra3-apin-2.axle1 -> ra3-bush-1.axlehole1
 WHY Adds a black pin to the three-by-three beam and a red axle-pin to the red connector.
 
 STEP 175
 ADD ra3-beam11-2 73507 black
-CONNECT ra3-beam11-2.? -> ra3-pin-3.?
-CONNECT ra3-beam11-2.? -> ra3-apin-2.?
+CONNECT ra3-beam11-2.hole5 -> ra3-pin-3.?
+CONNECT ra3-beam11-2.hole1 -> ra3-apin-2.pin1
 WHY Fits a second black eleven-hole beam over the upright pins.
 
 STEP 176
 ADD ra3-apin-3 11214 red
 ADD ra3-apin-4 43093 blue
-CONNECT ra3-apin-3.? -> ra3-beam11-2.?
-CONNECT ra3-apin-4.? -> ra3-beam11-2.?
+CONNECT ra3-apin-3.pin1 -> ra3-beam11-2.hole3
+CONNECT ra3-apin-4.pin1 -> ra3-beam11-2.hole9
 WHY Adds a red axle-pin and a blue axle-pin to the upper beam.
 
 STEP 177
 ADD ra3-axle5-1 32073 yellow
 ADD ra3-gear-1 32270 black
-CONNECT ra3-axle5-1.? -> ra3-gear-1.?
+CONNECT ra3-axle5-1.? -> ra3-gear-1.axlehole1
 CONNECT ra3-axle5-1.? -> ra3-beam3-1.?
 END
 WHY Fits a black bevel gear on a yellow five-stud axle and installs it through the support.
