@@ -1362,24 +1362,24 @@ STEP 139
 ADD ra-beam4-1 32449 darkgray
 ADD ra-beam2-1 41677 darkgray
 ADD ra-apin-1 11214 red
-CONNECT ra-apin-1.? -> ra-beam4-1.?
-CONNECT ra-beam2-1.? -> ra-beam4-1.?
-CONNECT ra-beam4-1.? -> ra-pin-5.?
+CONNECT ra-apin-1.axle1 -> ra-beam4-1.axlehole1
+CONNECT ra-beam2-1.axlehole1 -> ra-apin-1.axle1
+CONNECT ra-beam4-1.hole2 -> ra-pin-5.?
 WHY Builds the first thin link from a dark-grey beam, two-hole connector and red axle-pin, then fits it to the hub supports.
 
 STEP 140
 ADD ra-beam4-2 2825 lightgray
 ADD ra-apin-2 11214 red
-CONNECT ra-apin-2.? -> ra-beam4-2.?
-CONNECT ra-beam4-2.? -> ra-pin-6.?
+CONNECT ra-apin-2.axle1 -> ra-beam4-2.axlehole1
+CONNECT ra-beam4-2.hole2 -> ra-pin-6.?
 WHY Adds the second light-grey thin link with a red axle-pin to the opposite support.
 
 STEP 141
 ADD ra-gear-2 35185 blue
 ADD ra-bush-1 42195 red
 ADD ra-bush-2 18947 darkgray
-CONNECT ra-gear-2.? -> ra-axle4-1.?
-CONNECT ra-bush-1.? -> ra-axle4-1.?
+CONNECT ra-gear-2.hole1 -> ra-axle4-1.?
+CONNECT ra-bush-1.axlehole1 -> ra-axle4-1.?
 CONNECT ra-bush-2.? -> ra-bush-1.?
 WHY Fits the blue gear and the red connector with its grey driving ring onto the red hub axle.
 
