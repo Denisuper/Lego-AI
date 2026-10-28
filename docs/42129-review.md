@@ -233,3 +233,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 102?103, steps 155?160: the lock shaft passes through the round holes of the perpendicular end connectors; its bushings, orange selector and black gear use their cross holes. Blue axle-pins enter the connectors? cross holes and their round ends hold positions 5 and 11 of the 11-hole support beam.
 
 - Source pages 103?104, steps 161?163: the red and blue pins above the lock shaft enter the upper cross holes of its existing connectors, not the lower support beam. The previously omitted blue pin also fastens hole 5 of the upper beam; its two end pins occupy holes 1 and 11.
+
+- Source pages 106?107, steps 167?170: each red pin enters the thick end cross hole of its light-gray link. The yellow axle in step 168 and red axle-pin in step 169 each pass through the stacked dark links; the small bevel gear in step 170 uses its cross hole.

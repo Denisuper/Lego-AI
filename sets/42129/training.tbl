@@ -1607,8 +1607,8 @@ ADD ra-beam4-3 2825 lightgray
 ADD ra-beam4-4 2825 lightgray
 ADD ra-apin-4 11214 red
 ADD ra-apin-5 11214 red
-CONNECT ra-apin-4.? -> ra-beam4-3.?
-CONNECT ra-apin-5.? -> ra-beam4-4.?
+CONNECT ra-apin-4.axle1 -> ra-beam4-3.axlehole1
+CONNECT ra-apin-5.axle1 -> ra-beam4-4.axlehole1
 CONNECT ra-beam4-3.? -> ral-beam11-1.?
 CONNECT ra-beam4-4.? -> ral-beam11-2.?
 WHY Builds two light-grey thin links with red axle-pins and fits them to the axle assembly.
@@ -1617,8 +1617,8 @@ STEP 168
 ADD ra-beam4-5 32449 darkgray
 ADD ra-axle5-1 32073 yellow
 ADD ra-beam2-2 41677 darkgray
-CONNECT ra-axle5-1.? -> ra-beam2-2.?
-CONNECT ra-axle5-1.? -> ra-beam4-5.?
+CONNECT ra-axle5-1.? -> ra-beam2-2.axlehole1
+CONNECT ra-axle5-1.? -> ra-beam4-5.axlehole1
 CONNECT ra-beam4-5.? -> ra-beam4-3.?
 WHY Fits a yellow five-stud axle through dark-grey thin links and places them on the axle assembly.
 
@@ -1626,8 +1626,8 @@ STEP 169
 ADD ra-beam4-6 32449 darkgray
 ADD ra-apin-6 11214 red
 ADD ra-beam2-3 41677 darkgray
-CONNECT ra-apin-6.? -> ra-beam4-6.?
-CONNECT ra-beam2-3.? -> ra-beam4-6.?
+CONNECT ra-apin-6.axle1 -> ra-beam4-6.axlehole1
+CONNECT ra-beam2-3.axlehole1 -> ra-apin-6.axle1
 CONNECT ra-beam4-6.? -> ra-beam4-4.?
 WHY Builds the matching dark-grey link with a red axle-pin and fits it to the opposite hub.
 
@@ -1641,7 +1641,7 @@ ADD ra-gear-4 32270 black
 ADD ra-apin-8 43093 blue
 CONNECT ra-axle3-5.? -> ra-conn-4.?
 CONNECT ra-apin-7.? -> ra-conn-4.?
-CONNECT ra-gear-4.? -> ra-axle3-5.?
+CONNECT ra-gear-4.axlehole1 -> ra-axle3-5.?
 CONNECT ra-conn-3.? -> ra-axle3-5.?
 CONNECT ra-apin-8.? -> ra-conn-3.?
 CONNECT ra-axle2-2.? -> ral-beam11-1.?
