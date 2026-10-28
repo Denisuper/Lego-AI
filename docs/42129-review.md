@@ -245,3 +245,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 114?115, steps 186?191: the paired joint shafts and gray gears use their cross sockets; the second red clutch gear uses its round center. Each end of the housing link has a red axle-pin and pin hub axle inserted in the two cross holes of its three-hole connector, and the yellow shaft enters the black connectors? end sockets.
 
 - Source pages 115?118, steps 188?194 and 197?198: the first housing beam receives the two earlier red axle-pins, and both end pin hubs bridge the two parallel beams. The two red axle-pins enter gray stop-pin cross sockets before the spacer or white 3-hole beam is fitted.
+
+- Source pages 120?121, steps 201?202: each suspension linkage sandwiches two thin six-hole beams on shared black pins and the integral pins of two gray hubs; the two central pins also secure the perpendicular connector. The steering lever fits the ball-ended pin added in the inset, rather than directly to that connector. Exact individual hole numbers remain uncertain.
