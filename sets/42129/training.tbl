@@ -134,6 +134,9 @@ CONNECT tr-axle4-1.axle2 -> tr-gear-1.hole2 TURNS
 CONNECT tr-axle3-1.axle2 -> tr-gear-1.hole1 TURNS
 CONNECT tr-axle4-1.axle3 -> tr-gear-3.axlehole1 LOCKED
 CONNECT tr-axle3-1.axle3 -> tr-gear-4.axlehole1 LOCKED
+CONNECT tr-gear-2.? -> tr-gear-1.?
+MESH tr-gear-2.teeth tr-gear-3.teeth
+MESH tr-gear-2.teeth tr-gear-4.teeth
 WHY Builds the red differential with three internal bevel gears and mounts it on a grey nine-hole beam, then fits the assembly onto the motor pins.
 
 STEP 14
@@ -2220,6 +2223,7 @@ ADD fa-axle6-1 3706 red
 ADD fa-gear-2 32270 black
 CONNECT fa-axle6-1.? -> fa-gear-2.?
 CONNECT fa-axle6-1.? -> fa-beam-1.?
+MESH fa-gear-2.teeth fa-differential-ring-1.teeth
 WHY Fits a black twelve-tooth bevel gear on a red six-stud axle and installs it through the front frame.
 
 STEP 234
