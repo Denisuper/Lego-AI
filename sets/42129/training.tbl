@@ -1392,7 +1392,8 @@ ADD ra-bevel-31 6589 tan
 ADD ra-bevel-32 6589 tan
 ADD ra-bevel-33 6589 tan
 ADD ra-bevel-34 6589 tan
-CONNECT ra-axle2-1.? -> ra-gear-3.?
+CONNECT ra-axle2-1.? -> ra-gear-3.hole1
+CONNECT ra-axle2-1.? -> ra-bevel-30.axlehole1
 CONNECT ra-differential-ring-1.? -> ra-gear-3.?
 CONNECT ra-gear-3.? -> ra-bush-1.?
 CONNECT ra-bevel-30.? -> ra-gear-3.?
@@ -1505,7 +1506,8 @@ WHY Fits the light-grey thin link with a red axle-pin to the opposite hub suppor
 
 STEP 154
 ATTACH rear-axle-second-hub
-CONNECT ra2-gear-1.? -> ra-gear-3.?
+CONNECT ra2-axle3-5.? -> ra-gear-3.hole1
+CONNECT ra2-axle3-5.? -> ra-bevel-34.axlehole1
 WHY Attaches the completed second wheel hub to the differential and first rear-axle half.
 
 STEP 155
@@ -2300,8 +2302,10 @@ WHY Builds the differential using a grey case, five tan bevel gears and a red ri
 STEP 232
 ADD fa-axle3-1 4519 lightgray
 ADD fa-axle3-2 4519 lightgray
-CONNECT fa-axle3-1.? -> fa-gear-1.?
-CONNECT fa-axle3-2.? -> fa-gear-1.?
+CONNECT fa-axle3-1.? -> fa-gear-1.hole1
+CONNECT fa-axle3-1.? -> fa-bevel-10.axlehole1
+CONNECT fa-axle3-2.? -> fa-gear-1.hole1
+CONNECT fa-axle3-2.? -> fa-bevel-14.axlehole1
 WHY Inserts two grey three-stud axles into the differential from opposite sides.
 
 STEP 233

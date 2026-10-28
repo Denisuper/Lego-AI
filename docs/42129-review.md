@@ -259,3 +259,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 129 and 134?135, steps 212 and 223?224: the completed upper frame seats on the four blue side-panel pins placed earlier, with two pins entering each eleven-hole side beam. The draft had represented the mounting as a direct frame-to-panel connection.
 
 - Source pages 123, 136, 139?140, steps 205, 225, 228?230: the four-stud shafts enter the round holes of the earlier shock-end hubs. Each paired panel extension is joined by its two friction pins. The red front-frame piece is held by its integral pin and the blue axle-pin rather than a direct part-to-frame connection. Step 233?s bevel gear axle hole is identified.
+
+- Source pages 98, 100?101 and 141, steps 142, 148, 154 and 232: the rear and front differential half-shafts pass through the case?s round center and engage the cross holes of the two output bevel gears. The second rear hub joins via its shaft, rather than by a direct housing-to-housing contact; left/right identical axle naming is symmetric.
