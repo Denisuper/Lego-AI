@@ -2323,12 +2323,14 @@ ADD fa-beam7-1 32524 darkgray
 ADD fa-pin-3 42924 blue
 ADD fa-pin-4 42924 blue
 ADD fa-beam7-2 32524 darkgray
-CONNECT fa-pin-1.? -> fa-beam7-1.?
-CONNECT fa-pin-2.? -> fa-beam7-1.?
-CONNECT fa-pin-3.? -> fa-beam7-2.?
-CONNECT fa-pin-4.? -> fa-beam7-2.?
-CONNECT fa-beam7-1.? -> fa-beam-1.?
-CONNECT fa-beam7-2.? -> fa-beam-1.?
+CONNECT fa-pin-1.? -> fa-beam7-1.hole1
+CONNECT fa-pin-2.? -> fa-beam7-1.hole7
+CONNECT fa-pin-3.? -> fa-beam7-2.hole1
+CONNECT fa-pin-4.? -> fa-beam7-2.hole7
+CONNECT fa-pin-1.? -> fa-beam-1.?
+CONNECT fa-pin-2.? -> fa-beam-1.?
+CONNECT fa-pin-3.? -> fa-beam-1.?
+CONNECT fa-pin-4.? -> fa-beam-1.?
 WHY Fits two dark-grey seven-hole beams with four blue long pins along the front axle frame.
 
 STEP 235
@@ -2342,9 +2344,10 @@ STEP 236
 ADD fa-beam5-1 32316 black
 ADD fa-conn-1 65487 lightgray
 ADD fa-conn-2 65487 lightgray
-CONNECT fa-conn-1.? -> fa-beam5-1.?
-CONNECT fa-conn-2.? -> fa-beam5-1.?
+CONNECT fa-conn-1.pin1 -> fa-beam7-1.?
+CONNECT fa-conn-2.pin1 -> fa-beam7-2.?
 CONNECT fa-beam5-1.? -> fa-pin-5.?
+CONNECT fa-beam5-1.? -> fa-pin-6.?
 WHY Fits a black five-hole beam with two grey connectors across the frame.
 
 STEP 237
@@ -2363,8 +2366,11 @@ ADD fa-beam7-3 32524 darkgray
 ADD fa-beam7-4 32524 darkgray
 ADD fa-beam9-1 40490 black
 CONNECT fa-beam7-3.? -> fa-pin-7.?
+CONNECT fa-beam7-3.? -> fa-pin-8.?
 CONNECT fa-beam7-4.? -> fa-pin-9.?
+CONNECT fa-beam7-4.? -> fa-pin-10.?
 CONNECT fa-beam9-1.? -> fa-pin-8.?
+CONNECT fa-beam9-1.? -> fa-pin-10.?
 WHY Adds two dark-grey seven-hole beams and a black nine-hole beam to the front axle frame.
 
 STEP 239
