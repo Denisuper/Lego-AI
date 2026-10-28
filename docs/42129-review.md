@@ -247,3 +247,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 115?118, steps 188?194 and 197?198: the first housing beam receives the two earlier red axle-pins, and both end pin hubs bridge the two parallel beams. The two red axle-pins enter gray stop-pin cross sockets before the spacer or white 3-hole beam is fitted.
 
 - Source pages 120?121, steps 201?202: each suspension linkage sandwiches two thin six-hole beams on shared black pins and the integral pins of two gray hubs; the two central pins also secure the perpendicular connector. The steering lever fits the ball-ended pin added in the inset, rather than directly to that connector. Exact individual hole numbers remain uncertain.
+
+- Source pages 123?124, steps 205?206: the gray shock-end hubs insert their integral pins in the shocks. The two light-gray crossbeam links connect to the seven-hole beam via their black pins and blue axle-pins; the blue axle ends occupy the thick-end cross holes and the black pins occupy the second round holes from the thin ends.

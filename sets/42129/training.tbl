@@ -2001,8 +2001,8 @@ ADD ra-shock-1 89954c01 red
 ADD ra-shock-2 89954c01 red
 ADD ra-conn-22 65487 lightgray
 ADD ra-conn-23 65487 lightgray
-CONNECT ra-conn-22.? -> ra-shock-1.?
-CONNECT ra-conn-23.? -> ra-shock-2.?
+CONNECT ra-conn-22.pin1 -> ra-shock-1.?
+CONNECT ra-conn-23.pin1 -> ra-shock-2.?
 CONNECT ra-axle3-12.? -> ra-shock-1.?
 CONNECT ra-axle3-13.? -> ra-shock-2.?
 CONNECT ra-shock-1.? -> ra-beam7-1.?
@@ -2017,12 +2017,14 @@ ADD ra-pin-30 61332 black
 ADD ra-pin-31 61332 black
 ADD ra-beam4-9 2825 lightgray
 ADD ra-beam4-10 2825 lightgray
-CONNECT ra-apin-14.? -> ra-beam4-9.?
-CONNECT ra-apin-15.? -> ra-beam4-10.?
-CONNECT ra-pin-30.? -> ra-beam4-9.?
-CONNECT ra-pin-31.? -> ra-beam4-10.?
-CONNECT ra-beam4-9.? -> ra-beam7-3.?
-CONNECT ra-beam4-10.? -> ra-beam7-3.?
+CONNECT ra-apin-14.axle1 -> ra-beam4-9.axlehole1
+CONNECT ra-apin-15.axle1 -> ra-beam4-10.axlehole1
+CONNECT ra-pin-30.? -> ra-beam4-9.hole2
+CONNECT ra-pin-31.? -> ra-beam4-10.hole2
+CONNECT ra-pin-30.? -> ra-beam7-3.?
+CONNECT ra-apin-14.pin1 -> ra-beam7-3.?
+CONNECT ra-pin-31.? -> ra-beam7-3.?
+CONNECT ra-apin-15.pin1 -> ra-beam7-3.?
 CONNECT ra-beam7-3.? -> ra-beam-1.?
 WHY Builds a seven-hole crossbeam with two grey thin links, blue axle-pins and black friction pins, then attaches it across the axle frame.
 
