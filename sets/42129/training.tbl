@@ -941,10 +941,11 @@ ADD tr-pin-67 42924 blue
 ADD tr-pin-68 42924 blue
 ADD tr-axle3-3 4519 lightgray
 ADD tr-beam9-3 6629 black
-CONNECT tr-pin-67.? -> tr-beam9-3.?
-CONNECT tr-pin-68.? -> tr-beam9-3.?
-CONNECT tr-axle3-3.? -> tr-beam9-3.?
-CONNECT tr-beam9-3.? -> ch3-beam11-1.?
+CONNECT tr-pin-67.? -> tr-beam9-3.hole5
+CONNECT tr-pin-68.? -> tr-beam9-3.hole7
+CONNECT tr-axle3-3.? -> tr-beam9-3.axlehole2
+CONNECT tr-pin-67.? -> ch3-beam11-1.?
+CONNECT tr-pin-68.? -> ch3-beam11-1.?
 WHY Builds a black bent-beam brace with two blue pins and a grey three-stud axle, then fits it to the side-frame section.
 
 STEP 94
@@ -977,13 +978,13 @@ WHY Builds a light-grey connector with two black friction pins and attaches it t
 STEP 97
 ADD tr-pin-73 42924 blue
 ADD tr-beam9-4 6629 black
-CONNECT tr-pin-73.? -> tr-beam9-4.?
+CONNECT tr-pin-73.? -> tr-beam9-4.hole6
 CONNECT tr-pin-73.? -> tr-panel3-6.?
 WHY Turns the model and installs a black bent beam with a blue long pin on the opposite side panel.
 
 STEP 98
 ADD tr-axle3-5 24316 brown
-CONNECT tr-axle3-5.? -> tr-beam9-4.?
+CONNECT tr-axle3-5.? -> tr-beam9-4.axlehole1
 WHY Inserts a brown three-stud stop axle through the opposite bent beam.
 
 STEP 99

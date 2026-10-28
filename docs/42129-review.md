@@ -203,3 +203,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 62?63, steps 83?84: the blue pin occupies the second round hole on the short angled arm of the bent beam; the brown axle enters the cross hole at the opposite long end.
 
 - Source pages 64?65, steps 85?86 and 91: the blue and red axle ends pass through both thin L-beams, including the previously omitted second red connection. The triangular panel is held to the later L-beam by a friction pin rather than a direct panel-to-beam connection; the red axle-pin locks into the panel cross hole.
+
+- Source pages 67 and the mirrored steps 97?98: the side brace in step 93 is held to the eleven-hole beam by its two blue pins, not by a direct beam-to-beam connection. Their positions and the gray axle?s short-end cross hole follow the enlarged inset. The opposite side bent-beam pin and axle mirror steps 83?84.
