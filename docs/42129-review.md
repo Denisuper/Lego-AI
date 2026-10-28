@@ -197,3 +197,7 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 49?50, steps 70?71: the two blue axle-pins were listed but their placement was omitted. Their axle ends lock into the L-beams? cross holes, and their pin ends receive the fifteen-hole beams in the next step.
 
 - Source pages 52?56, steps 73?78: the L-bracket blue axle-pins occupy their cross holes. The gray cable-support hubs use their integral pins in the earlier motor-support short-leg holes and hold the round ends of the blue axle-pins; the cable clip in step 77 fits the projecting axle, rather than the hub directly.
+
+- Source pages 57?59, steps 78?80: the red cable clip in step 79 fits the other support axle-pin, matching its blue counterpart. The black cable-clip axle-pins enter the panels using their round pin ends.
+
+- Source pages 62?63, steps 83?84: the blue pin occupies the second round hole on the short angled arm of the bent beam; the brown axle enters the cross hole at the opposite long end.

@@ -834,19 +834,19 @@ STEP 78
 ADD tr-apin-19 18651 black
 ADD tr-axle-5 49283 blue
 CONNECT tr-apin-19.? -> tr-axle-5.axlehole1
-CONNECT tr-apin-19.? -> tr-panel3-1.?
+CONNECT tr-apin-19.pin1 -> tr-panel3-1.?
 WHY Uses a black axle-pin and a second blue cable clip to route the first motor cable against the chassis.
 
 STEP 79
 ADD tr-axle-6 49283 red
-CONNECT tr-axle-6.? -> tr-conn-29.?
+CONNECT tr-axle-6.axlehole1 -> tr-apin-18.axle1
 WHY Places a red cable clip on the second motor cable and its support.
 
 STEP 80
 ADD tr-apin-20 18651 black
 ADD tr-axle-7 49283 red
-CONNECT tr-apin-20.? -> tr-axle-7.?
-CONNECT tr-apin-20.? -> tr-panel3-2.?
+CONNECT tr-apin-20.? -> tr-axle-7.axlehole1
+CONNECT tr-apin-20.pin1 -> tr-panel3-2.?
 WHY Uses a black axle-pin and a second red cable clip to route the second motor cable against the chassis.
 
 STEP 81
@@ -866,13 +866,13 @@ WHY Turns the chassis and inserts a blue long pin through each new side panel.
 STEP 83
 ADD tr-pin-66 42924 blue
 ADD tr-beam9-2 6629 black
-CONNECT tr-pin-66.? -> tr-beam9-2.?
+CONNECT tr-pin-66.? -> tr-beam9-2.hole6
 CONNECT tr-pin-66.? -> tr-panel3-5.?
 WHY Fits a blue long pin to a black bent beam, then attaches the beam at the earlier side panel.
 
 STEP 84
 ADD tr-axle3-2 24316 brown
-CONNECT tr-axle3-2.? -> tr-beam9-2.?
+CONNECT tr-axle3-2.? -> tr-beam9-2.axlehole1
 WHY Inserts a brown three-stud stop axle through the black bent beam.
 
 STEP 85
