@@ -263,3 +263,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 98, 100?101 and 141, steps 142, 148, 154 and 232: the rear and front differential half-shafts pass through the case?s round center and engage the cross holes of the two output bevel gears. The second rear hub joins via its shaft, rather than by a direct housing-to-housing contact; left/right identical axle naming is symmetric.
 
 - Source pages 142?143, steps 234?238: the first seven-hole beams attach through blue pins in their end holes; the five-hole crossbar fits both black pins and the gray hubs mount on the side beams. On the reverse side, both blue pins pass through each seven-hole beam, and the nine-hole crossbar shares one on each side.
+
+- Source pages 143?144, steps 239?241: the two stop axles run through the cross holes of both pairs of gray connectors and their red bushings; blue pins use the outer round holes. The differential output extensions engage opposite ends of their two dark axle couplers.

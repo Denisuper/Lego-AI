@@ -2378,8 +2378,8 @@ ADD fa-axle8-1 55013 darkgray
 ADD fa-conn-3 42003 lightgray
 ADD fa-conn-4 42003 lightgray
 ADD fa-axle8-2 55013 darkgray
-CONNECT fa-axle8-1.? -> fa-conn-3.?
-CONNECT fa-axle8-2.? -> fa-conn-4.?
+CONNECT fa-axle8-1.? -> fa-conn-3.axlehole1
+CONNECT fa-axle8-2.? -> fa-conn-4.axlehole1
 CONNECT fa-axle8-1.? -> fa-beam-1.?
 CONNECT fa-axle8-2.? -> fa-beam-1.?
 WHY Builds two grey eight-stud stop-axle and connector pairs and inserts them through the front axle frame.
@@ -2391,12 +2391,12 @@ ADD fa-pin-11 42924 blue
 ADD fa-pin-12 42924 blue
 ADD fa-bush-1 3713 red
 ADD fa-bush-2 3713 red
-CONNECT fa-pin-11.? -> fa-conn-5.?
-CONNECT fa-pin-12.? -> fa-conn-6.?
-CONNECT fa-conn-5.? -> fa-axle8-1.?
-CONNECT fa-conn-6.? -> fa-axle8-2.?
-CONNECT fa-bush-1.? -> fa-axle8-1.?
-CONNECT fa-bush-2.? -> fa-axle8-2.?
+CONNECT fa-pin-11.? -> fa-conn-5.hole2
+CONNECT fa-pin-12.? -> fa-conn-6.hole2
+CONNECT fa-conn-5.axlehole1 -> fa-axle8-1.?
+CONNECT fa-conn-6.axlehole1 -> fa-axle8-2.?
+CONNECT fa-bush-1.axlehole1 -> fa-axle8-1.?
+CONNECT fa-bush-2.axlehole1 -> fa-axle8-2.?
 WHY Fits two grey connectors with blue pins to the stop axles and caps both shafts with red half bushes.
 
 STEP 241
@@ -2404,10 +2404,10 @@ ADD fa-conn-7 59443 darkgray
 ADD fa-conn-8 59443 darkgray
 ADD fa-axle2-1 32062 red
 ADD fa-axle2-2 32062 red
-CONNECT fa-axle2-1.? -> fa-conn-7.?
-CONNECT fa-axle2-2.? -> fa-conn-8.?
-CONNECT fa-conn-7.? -> fa-axle3-1.?
-CONNECT fa-conn-8.? -> fa-axle3-2.?
+CONNECT fa-axle2-1.? -> fa-conn-7.axlehole2
+CONNECT fa-axle2-2.? -> fa-conn-8.axlehole2
+CONNECT fa-conn-7.axlehole1 -> fa-axle3-1.?
+CONNECT fa-conn-8.axlehole1 -> fa-axle3-2.?
 WHY Builds two short red axle and dark-grey connector pairs and fits them to the differential shafts.
 
 STEP 242
