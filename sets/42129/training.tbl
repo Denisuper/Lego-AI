@@ -2608,19 +2608,27 @@ ADD fa2-conn-3 6536 darkgray
 ADD fa2-beam5-3 11478 black
 ADD fa2-beam5-4 11478 black
 ADD fa2-pin-1 66906 red
-CONNECT fa2-conn-1.? -> fa2-beam5-1.?
-CONNECT fa2-conn-1.? -> fa2-beam5-2.?
-CONNECT fa2-axle5-1.? -> fa2-conn-3.?
-CONNECT fa2-axle7-1.? -> fa2-conn-2.?
-CONNECT fa2-beam5-3.? -> fa2-axle5-1.?
-CONNECT fa2-beam5-4.? -> fa2-axle7-1.?
+CONNECT fa2-conn-1.pin1 -> fa2-beam5-1.hole1
+CONNECT fa2-conn-1.pin2 -> fa2-beam5-1.hole3
+CONNECT fa2-conn-1.pin1 -> fa2-beam5-2.hole1
+CONNECT fa2-conn-1.pin2 -> fa2-beam5-2.hole3
+CONNECT fa2-axle5-1.? -> fa2-conn-3.axlehole1
+CONNECT fa2-axle5-1.? -> fa2-beam5-1.axlehole1
+CONNECT fa2-axle5-1.? -> fa2-beam5-2.axlehole1
+CONNECT fa2-axle7-1.? -> fa2-conn-2.axlehole1
+CONNECT fa2-axle7-1.? -> fa2-beam5-1.axlehole2
+CONNECT fa2-axle7-1.? -> fa2-beam5-2.axlehole2
+CONNECT fa2-beam5-3.axlehole1 -> fa2-axle5-1.?
+CONNECT fa2-beam5-3.axlehole2 -> fa2-axle7-1.?
+CONNECT fa2-beam5-4.axlehole1 -> fa2-axle5-1.?
+CONNECT fa2-beam5-4.axlehole2 -> fa2-axle7-1.?
 CONNECT fa2-pin-1.? -> fa2-beam5-3.?
 CONNECT fa2-beam5-1.? -> fa-conn-14.?
 WHY Builds the vertical front axle support from four thin black five-hole beams, two shafts, connectors and a red towball pin, then installs it on the axle.
 
 STEP 258
 ADD fa-gear-5 94925 lightgray
-CONNECT fa-gear-5.? -> fa-axle6-1.?
+CONNECT fa-gear-5.axlehole1 -> fa-axle6-1.?
 WHY Adds a grey sixteen-tooth gear to the red axle in the front assembly.
 
 STEP 259
@@ -2636,13 +2644,17 @@ ADD fa3-gear-1 18946 red
 ADD fa3-gear-2 94925 lightgray
 ADD fa3-axle-1 52730 darkgray
 ADD fa3-ball-1 52731 lightgray
-CONNECT fa3-conn-1.? -> fa3-beam5-1.?
-CONNECT fa3-axle5-1.? -> fa3-conn-2.?
-CONNECT fa3-beam5-2.? -> fa3-conn-1.?
+CONNECT fa3-conn-1.pin1 -> fa3-beam5-1.hole2
+CONNECT fa3-conn-1.pin2 -> fa3-beam5-1.hole4
+CONNECT fa3-axle5-1.? -> fa3-conn-2.axlehole1
+CONNECT fa3-axle5-1.? -> fa3-beam5-1.hole1
+CONNECT fa3-axle5-1.? -> fa3-beam5-2.hole1
+CONNECT fa3-beam5-2.hole2 -> fa3-conn-1.pin3
+CONNECT fa3-beam5-2.hole4 -> fa3-conn-1.pin4
 CONNECT fa3-pin-1.? -> fa3-beam5-1.?
 CONNECT fa3-pin-2.? -> fa3-beam5-2.?
-CONNECT fa3-pin-3.? -> fa3-gear-1.?
-CONNECT fa3-axle-1.? -> fa3-gear-2.?
+CONNECT fa3-pin-3.? -> fa3-gear-1.hole1
+CONNECT fa3-axle-1.? -> fa3-gear-2.axlehole1
 CONNECT fa3-ball-1.? -> fa3-axle-1.?
 CONNECT fa3-beam5-1.? -> fa2-beam5-1.?
 WHY Builds the opposite geared front axle support with black beams, yellow axle, grey connectors, red clutch gear and grey joint, then fits it to the axle.

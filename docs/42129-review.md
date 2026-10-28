@@ -271,3 +271,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 147?148, steps 251?254: shocks attach through their stop axles; each pair of thin links shares both red and gray axles. The blue axle-pins fasten the black connectors to two-hole supports, and the white crossbeam joins the black nine-hole beam through two black pins.
 
 - Source pages 148?150, steps 252 and 255?256: the steering rack?s blue pins and tan axle-pins each pass through both stacked thin links; the tan pin ends attach those links to the earlier paired hub links. The following support?s four integral hub pins and yellow axle hold both five-hole beams, rather than the previously recorded partial contacts.
+
+- Source pages 151?154, steps 257?259: all four thin five-hole beams share both gray and yellow shafts, and the inner pair shares the hub?s two pins. The opposite geared support uses all four hub pins, with its yellow axle through both five-hole beams. Gear cross and round centers are identified from the parts.
