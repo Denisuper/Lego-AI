@@ -235,3 +235,23 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 103?104, steps 161?163: the red and blue pins above the lock shaft enter the upper cross holes of its existing connectors, not the lower support beam. The previously omitted blue pin also fastens hole 5 of the upper beam; its two end pins occupy holes 1 and 11.
 
 - Source pages 106?107, steps 167?170: each red pin enters the thick end cross hole of its light-gray link. The yellow axle in step 168 and red axle-pin in step 169 each pass through the stacked dark links; the small bevel gear in step 170 uses its cross hole.
+
+- Source pages 108?109, steps 171?177: the rear-drive support uses its lower beam?s holes 1, 3 and 5, and upper beam?s holes 1, 3, 5 and 9. The red connector bridges the exposed blue and red axle ends; the new gear uses its cross hole on the yellow axle.
+
+- Source pages 111?112, steps 180?182: the white 3-hole beam attaches to the black frame through the two previously inserted pins, and the red towball occupies its center hole. The black spacer uses the third pin, and the gray stop-pin and blue axle-pin meet through the stop-pin?s cross socket. The gray gear?s shaft hole is explicit.
+
+- Source pages 113?114, steps 183?185: the red axle-pin occupies the second hole of its five-hole beam and passes through the black spacer. The yellow gear shaft passes through the other five-hole beam?s center hole and the two gear cross holes; the red clutch gear fits the tan pin through its round center.
+
+- Source pages 114?115, steps 186?191: the paired joint shafts and gray gears use their cross sockets; the second red clutch gear uses its round center. Each end of the housing link has a red axle-pin and pin hub axle inserted in the two cross holes of its three-hole connector, and the yellow shaft enters the black connectors? end sockets.
+
+- Source pages 115?118, steps 188?194 and 197?198: the first housing beam receives the two earlier red axle-pins, and both end pin hubs bridge the two parallel beams. The two red axle-pins enter gray stop-pin cross sockets before the spacer or white 3-hole beam is fitted.
+
+- Source pages 120?121, steps 201?202: each suspension linkage sandwiches two thin six-hole beams on shared black pins and the integral pins of two gray hubs; the two central pins also secure the perpendicular connector. The steering lever fits the ball-ended pin added in the inset, rather than directly to that connector. Exact individual hole numbers remain uncertain.
+
+- Source pages 123?124, steps 205?206: the gray shock-end hubs insert their integral pins in the shocks. The two light-gray crossbeam links connect to the seven-hole beam via their black pins and blue axle-pins; the blue axle ends occupy the thick-end cross holes and the black pins occupy the second round holes from the thin ends.
+
+- Source pages 36, 45, 114 and 125, steps 52, 62, 186 and 207: correction to earlier hole identification: the joint?s ball end engages the cup, while its free cross socket receives the later red or yellow axle. The ball/cup endpoints have no catalog point and remain uncertain. In step 208 the curved panel fits the two blue axle-pins from step 206.
+
+- Source pages 94, 129?130, steps 129 and 212?215: each chassis side receives one blue pin in the earlier panel and one in its step 129 extension. Both pins on each side of the upper-frame subassembly pass through the eleven-hole beam and the end holes of the three-hole beam; the second contact was omitted for each part.
+
+- Source pages 132?133, steps 220?221: the upright steering lever pivots on the tan pin held between two gray connectors; black axle-pins fasten those to the frame and bridge the dark connector. The next crossbar is attached through four blue pins: two axle-pins join its central connector, while the two long pins in its end holes join the frame.

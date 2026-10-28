@@ -580,7 +580,7 @@ WHY Fits a grey gear and a tan bevel gear onto the shafts of the second chassis 
 STEP 52
 ADD tr-axle-2 52730 darkgray
 ADD tr-ball-2 77590 lightgray
-CONNECT tr-axle-2.? -> tr-ball-2.axlehole1
+CONNECT tr-axle-2.? -> tr-ball-2.?
 CONNECT tr-axle-2.? -> ch2-conn-3.?
 WHY Joins a grey ball-ended shaft to its dark connector, turns the chassis and installs the shaft into the second chassis assembly.
 
@@ -690,7 +690,7 @@ STEP 62
 GROUP front-crossbar
 ADD tr-axle-3 52730 darkgray
 ADD tr-ball-3 77590 lightgray
-CONNECT tr-axle-3.? -> tr-ball-3.axlehole1
+CONNECT tr-axle-3.? -> tr-ball-3.?
 WHY Joins a dark-grey short axle to a grey ball-ended connector.
 
 STEP 63
@@ -1653,16 +1653,16 @@ STEP 171
 GROUP rear-drive-support
 ADD ra3-beam11-1 73507 black
 ADD ra3-apin-1 43093 blue
-CONNECT ra3-apin-1.? -> ra3-beam11-1.?
+CONNECT ra3-apin-1.pin1 -> ra3-beam11-1.hole1
 WHY Starts the second rear axle drive support with a blue axle-pin in a black eleven-hole beam.
 
 STEP 172
 ADD ra3-bush-1 42195 red
 ADD ra3-pin-1 61332 black
 ADD ra3-pin-2 61332 black
-CONNECT ra3-bush-1.? -> ra3-apin-1.?
-CONNECT ra3-pin-1.? -> ra3-beam11-1.?
-CONNECT ra3-pin-2.? -> ra3-beam11-1.?
+CONNECT ra3-bush-1.axlehole1 -> ra3-apin-1.axle1
+CONNECT ra3-pin-1.? -> ra3-beam11-1.hole3
+CONNECT ra3-pin-2.? -> ra3-beam11-1.hole5
 WHY Adds a red connector and two black friction pins to the beam.
 
 STEP 173
@@ -1675,26 +1675,26 @@ STEP 174
 ADD ra3-pin-3 61332 black
 ADD ra3-apin-2 11214 red
 CONNECT ra3-pin-3.? -> ra3-beam3-1.?
-CONNECT ra3-apin-2.? -> ra3-bush-1.?
+CONNECT ra3-apin-2.axle1 -> ra3-bush-1.axlehole1
 WHY Adds a black pin to the three-by-three beam and a red axle-pin to the red connector.
 
 STEP 175
 ADD ra3-beam11-2 73507 black
-CONNECT ra3-beam11-2.? -> ra3-pin-3.?
-CONNECT ra3-beam11-2.? -> ra3-apin-2.?
+CONNECT ra3-beam11-2.hole5 -> ra3-pin-3.?
+CONNECT ra3-beam11-2.hole1 -> ra3-apin-2.pin1
 WHY Fits a second black eleven-hole beam over the upright pins.
 
 STEP 176
 ADD ra3-apin-3 11214 red
 ADD ra3-apin-4 43093 blue
-CONNECT ra3-apin-3.? -> ra3-beam11-2.?
-CONNECT ra3-apin-4.? -> ra3-beam11-2.?
+CONNECT ra3-apin-3.pin1 -> ra3-beam11-2.hole3
+CONNECT ra3-apin-4.pin1 -> ra3-beam11-2.hole9
 WHY Adds a red axle-pin and a blue axle-pin to the upper beam.
 
 STEP 177
 ADD ra3-axle5-1 32073 yellow
 ADD ra3-gear-1 32270 black
-CONNECT ra3-axle5-1.? -> ra3-gear-1.?
+CONNECT ra3-axle5-1.? -> ra3-gear-1.axlehole1
 CONNECT ra3-axle5-1.? -> ra3-beam3-1.?
 END
 WHY Fits a black bevel gear on a yellow five-stud axle and installs it through the support.
@@ -1724,10 +1724,11 @@ ADD ra-pin-17 66906 red
 CONNECT ra-pin-14.? -> ra-beam-1.?
 CONNECT ra-pin-15.? -> ra-beam-1.?
 CONNECT ra-pin-16.? -> ra-beam-1.?
-CONNECT ra-beam3-6.? -> ra-beam-1.?
-CONNECT ra-beam-2.? -> ra-pin-16.?
+CONNECT ra-beam3-6.hole1 -> ra-pin-14.?
+CONNECT ra-beam3-6.hole3 -> ra-pin-15.?
+CONNECT ra-beam-2.hole1 -> ra-pin-16.?
 CONNECT ra-part-1.? -> ra-pin-17.?
-CONNECT ra-pin-17.? -> ra-beam3-6.?
+CONNECT ra-pin-17.pin1 -> ra-beam3-6.hole2
 CONNECT ra-beam-1.? -> ra3-axle5-1.?
 WHY Builds the small black frame with white beam, pins and a green-axle and red-towball connection, then fits it to the rear axle support.
 
@@ -1737,14 +1738,14 @@ ADD ra-conn-6 6536 darkgray
 ADD ra-gear-5 94925 lightgray
 CONNECT ra-conn-5.? -> ra-beam-1.?
 CONNECT ra-conn-6.? -> ra-beam-1.?
-CONNECT ra-gear-5.? -> ra3-axle5-1.?
+CONNECT ra-gear-5.axlehole1 -> ra3-axle5-1.?
 WHY Adds two dark-grey perpendicular connectors and a grey gear to the rear axle frame.
 
 STEP 182
 ADD ra-pin-18 65304 lightgray
 ADD ra-apin-9 43093 blue
 ADD ra-conn-7 44874 black
-CONNECT ra-pin-18.? -> ra-apin-9.?
+CONNECT ra-pin-18.axlehole1 -> ra-apin-9.axle1
 CONNECT ra-conn-7.? -> ra-beam-1.?
 CONNECT ra-pin-18.? -> ra-beam-1.?
 WHY Builds a grey stop-pin and blue axle-pin pair, then fits it and a black connector to the frame.
@@ -1753,8 +1754,8 @@ STEP 183
 ADD ra-beam5-2 32316 black
 ADD ra-apin-10 11214 red
 ADD ra-beam-3 18654 black
-CONNECT ra-apin-10.? -> ra-beam-3.?
-CONNECT ra-apin-10.? -> ra-beam5-2.?
+CONNECT ra-apin-10.? -> ra-beam-3.hole1
+CONNECT ra-apin-10.? -> ra-beam5-2.hole2
 CONNECT ra-beam5-2.? -> ra-beam-1.?
 WHY Fits a red axle-pin with a black spacer to a black five-hole beam and installs the beam on the frame.
 
@@ -1763,16 +1764,16 @@ ADD ra-beam5-3 32316 black
 ADD ra-axle5-2 32073 yellow
 ADD ra-gear-6 94925 lightgray
 ADD ra-gear-7 32270 black
-CONNECT ra-axle5-2.? -> ra-gear-6.?
-CONNECT ra-axle5-2.? -> ra-gear-7.?
-CONNECT ra-axle5-2.? -> ra-beam5-3.?
+CONNECT ra-axle5-2.? -> ra-gear-6.axlehole1
+CONNECT ra-axle5-2.? -> ra-gear-7.axlehole1
+CONNECT ra-axle5-2.? -> ra-beam5-3.hole3
 CONNECT ra-beam5-3.? -> ra-beam-1.?
 WHY Fits two gears to a yellow five-stud axle through a second black five-hole beam, then installs the geared beam.
 
 STEP 185
 ADD ra-pin-19 39888 tan
 ADD ra-gear-8 18946 red
-CONNECT ra-pin-19.? -> ra-gear-8.?
+CONNECT ra-pin-19.? -> ra-gear-8.hole1
 CONNECT ra-pin-19.? -> ra-beam-1.?
 WHY Fits a red clutch gear on a tan frictionless pin in the rear axle frame.
 
@@ -1785,15 +1786,15 @@ ADD ra-gear-9 94925 lightgray
 ADD ra-gear-11 94925 lightgray
 CONNECT ra-axle-1.? -> ra-ball-2.?
 CONNECT ra-axle-2.? -> ra-ball-3.?
-CONNECT ra-gear-9.? -> ra-axle-1.?
-CONNECT ra-gear-11.? -> ra-axle-2.?
+CONNECT ra-gear-9.axlehole1 -> ra-axle-1.?
+CONNECT ra-gear-11.axlehole1 -> ra-axle-2.?
 CONNECT ra-axle-1.? -> ra-beam-1.?
 CONNECT ra-axle-2.? -> ra-beam-1.?
 WHY Builds two grey joint shafts and adds them with two grey gears to the rear axle frame.
 
 STEP 187
 ADD ra-gear-10 18946 red
-CONNECT ra-gear-10.? -> ra-axle5-1.?
+CONNECT ra-gear-10.hole1 -> ra-axle5-1.?
 MESH ra-gear-10.teeth ra-gear-6.teeth
 WHY Fits the second red clutch gear on the yellow shaft from step 168, meshing with the adjacent grey gear.
 
@@ -1802,8 +1803,8 @@ GROUP rear-axle-housing
 ADD ra4-conn-1 32184 darkgray
 ADD ra4-apin-1 11214 red
 ADD ra4-conn-2 22961 darkgray
-CONNECT ra4-apin-1.? -> ra4-conn-1.?
-CONNECT ra4-conn-2.? -> ra4-conn-1.?
+CONNECT ra4-apin-1.axle1 -> ra4-conn-1.axlehole1
+CONNECT ra4-conn-2.axle1 -> ra4-conn-1.axlehole2
 WHY Starts a rear axle housing link with a dark-grey connector, red axle-pin and dark-grey pin hub.
 
 STEP 189
@@ -1813,7 +1814,7 @@ WHY Adds a black pin connector to the housing link.
 
 STEP 190
 ADD ra4-axle5-1 32073 yellow
-CONNECT ra4-axle5-1.? -> ra4-conn-3.?
+CONNECT ra4-axle5-1.? -> ra4-conn-3.axlehole1
 WHY Slides a yellow five-stud axle through the black connector.
 
 STEP 191
@@ -1821,23 +1822,23 @@ ADD ra4-conn-4 32184 darkgray
 ADD ra4-apin-2 11214 red
 ADD ra4-conn-5 22961 darkgray
 ADD ra4-conn-6 32034 black
-CONNECT ra4-apin-2.? -> ra4-conn-4.?
-CONNECT ra4-conn-5.? -> ra4-conn-4.?
+CONNECT ra4-apin-2.axle1 -> ra4-conn-4.axlehole1
+CONNECT ra4-conn-5.axle1 -> ra4-conn-4.axlehole2
 CONNECT ra4-conn-6.? -> ra4-conn-5.?
-CONNECT ra4-conn-6.? -> ra4-axle5-1.?
+CONNECT ra4-conn-6.axlehole1 -> ra4-axle5-1.?
 WHY Builds the matching connector and red axle-pin assembly and slides it onto the yellow axle.
 
 STEP 192
 ADD ra4-beam11-1 73507 black
-CONNECT ra4-beam11-1.? -> ra4-conn-3.?
-CONNECT ra4-beam11-1.? -> ra4-conn-6.?
+CONNECT ra4-beam11-1.? -> ra4-apin-1.pin1
+CONNECT ra4-beam11-1.? -> ra4-apin-2.pin1
 WHY Fits a black eleven-hole beam along the two connector assemblies.
 
 STEP 193
 ADD ra4-conn-7 44874 black
 ADD ra4-conn-8 44874 black
-CONNECT ra4-conn-7.? -> ra4-beam11-1.?
-CONNECT ra4-conn-8.? -> ra4-beam11-1.?
+CONNECT ra4-conn-7.pin1 -> ra4-beam11-1.?
+CONNECT ra4-conn-8.pin1 -> ra4-beam11-1.?
 WHY Fits two black connectors to the ends of the eleven-hole beam.
 
 STEP 194
@@ -1853,7 +1854,8 @@ CONNECT ra4-pin-1.? -> ra4-conn-9.?
 CONNECT ra4-pin-2.? -> ra4-conn-10.?
 CONNECT ra4-beam11-2.? -> ra4-pin-1.?
 CONNECT ra4-beam11-2.? -> ra4-pin-2.?
-CONNECT ra4-beam11-2.? -> ra4-conn-7.?
+CONNECT ra4-beam11-2.? -> ra4-conn-7.pin2
+CONNECT ra4-beam11-2.? -> ra4-conn-8.pin2
 END
 WHY Builds a second beam and yellow-axle support with two black connectors and two friction pins, then joins it to the first housing link.
 
@@ -1886,8 +1888,8 @@ STEP 197
 ADD ra-apin-11 11214 red
 ADD ra-pin-22 65304 lightgray
 ADD ra-beam-4 18654 black
-CONNECT ra-apin-11.? -> ra-pin-22.?
-CONNECT ra-beam-4.? -> ra-pin-22.?
+CONNECT ra-apin-11.axle1 -> ra-pin-22.axlehole1
+CONNECT ra-beam-4.hole1 -> ra-pin-22.?
 CONNECT ra-pin-22.? -> ra-conn-5.?
 WHY Fits a red axle-pin, grey stop pin and black spacer together, then installs the combination on the axle frame.
 
@@ -1895,8 +1897,8 @@ STEP 198
 ADD ra-apin-12 11214 red
 ADD ra-pin-23 65304 lightgray
 ADD ra-beam3-7 32523 white
-CONNECT ra-apin-12.? -> ra-pin-23.?
-CONNECT ra-beam3-7.? -> ra-pin-23.?
+CONNECT ra-apin-12.axle1 -> ra-pin-23.axlehole1
+CONNECT ra-beam3-7.hole1 -> ra-pin-23.?
 CONNECT ra-pin-23.? -> ra-conn-6.?
 WHY Fits the matching red axle-pin and grey stop pin with a white three-hole beam to the axle frame.
 
@@ -1933,13 +1935,20 @@ ADD ra-pin-26 61332 black
 ADD ra-conn-18 63869 lightgray
 ADD ra-axle-3 2736 lightgray
 ADD ra-ball-4 31794 lightgray
-CONNECT ra-conn-16.? -> ra-beam6-1.?
-CONNECT ra-conn-17.? -> ra-beam6-2.?
+CONNECT ra-conn-16.pin1 -> ra-beam6-1.?
+CONNECT ra-conn-16.pin1 -> ra-beam6-2.?
+CONNECT ra-conn-17.pin1 -> ra-beam6-1.?
+CONNECT ra-conn-17.pin1 -> ra-beam6-2.?
 CONNECT ra-pin-24.? -> ra-beam6-1.?
+CONNECT ra-pin-24.? -> ra-beam6-2.?
 CONNECT ra-pin-25.? -> ra-beam6-2.?
+CONNECT ra-pin-25.? -> ra-beam6-1.?
+CONNECT ra-pin-25.? -> ra-conn-18.?
 CONNECT ra-pin-26.? -> ra-conn-18.?
+CONNECT ra-pin-26.? -> ra-beam6-1.?
+CONNECT ra-pin-26.? -> ra-beam6-2.?
 CONNECT ra-axle-3.? -> ra-conn-18.?
-CONNECT ra-ball-4.? -> ra-conn-18.?
+CONNECT ra-ball-4.? -> ra-axle-3.?
 CONNECT ra-beam6-1.? -> ra-beam11-1.?
 WHY Builds a paired grey thin-beam suspension link with pins, connectors and a ball-joint arm, then fits it to the rear axle.
 
@@ -1954,13 +1963,20 @@ ADD ra-pin-29 61332 black
 ADD ra-conn-21 63869 lightgray
 ADD ra-axle-4 2736 lightgray
 ADD ra-ball-5 31794 lightgray
-CONNECT ra-conn-19.? -> ra-beam6-3.?
-CONNECT ra-conn-20.? -> ra-beam6-4.?
+CONNECT ra-conn-19.pin1 -> ra-beam6-3.?
+CONNECT ra-conn-19.pin1 -> ra-beam6-4.?
+CONNECT ra-conn-20.pin1 -> ra-beam6-3.?
+CONNECT ra-conn-20.pin1 -> ra-beam6-4.?
 CONNECT ra-pin-27.? -> ra-beam6-3.?
+CONNECT ra-pin-27.? -> ra-beam6-4.?
 CONNECT ra-pin-28.? -> ra-beam6-4.?
+CONNECT ra-pin-28.? -> ra-beam6-3.?
+CONNECT ra-pin-28.? -> ra-conn-21.?
 CONNECT ra-pin-29.? -> ra-conn-21.?
+CONNECT ra-pin-29.? -> ra-beam6-3.?
+CONNECT ra-pin-29.? -> ra-beam6-4.?
 CONNECT ra-axle-4.? -> ra-conn-21.?
-CONNECT ra-ball-5.? -> ra-conn-21.?
+CONNECT ra-ball-5.? -> ra-axle-4.?
 CONNECT ra-beam6-3.? -> ra2-beam11-1.?
 WHY Builds a paired grey thin-beam suspension link with pins, connectors and a ball-joint arm, then fits it to the rear axle.
 
@@ -1985,8 +2001,8 @@ ADD ra-shock-1 89954c01 red
 ADD ra-shock-2 89954c01 red
 ADD ra-conn-22 65487 lightgray
 ADD ra-conn-23 65487 lightgray
-CONNECT ra-conn-22.? -> ra-shock-1.?
-CONNECT ra-conn-23.? -> ra-shock-2.?
+CONNECT ra-conn-22.pin1 -> ra-shock-1.?
+CONNECT ra-conn-23.pin1 -> ra-shock-2.?
 CONNECT ra-axle3-12.? -> ra-shock-1.?
 CONNECT ra-axle3-13.? -> ra-shock-2.?
 CONNECT ra-shock-1.? -> ra-beam7-1.?
@@ -2001,25 +2017,28 @@ ADD ra-pin-30 61332 black
 ADD ra-pin-31 61332 black
 ADD ra-beam4-9 2825 lightgray
 ADD ra-beam4-10 2825 lightgray
-CONNECT ra-apin-14.? -> ra-beam4-9.?
-CONNECT ra-apin-15.? -> ra-beam4-10.?
-CONNECT ra-pin-30.? -> ra-beam4-9.?
-CONNECT ra-pin-31.? -> ra-beam4-10.?
-CONNECT ra-beam4-9.? -> ra-beam7-3.?
-CONNECT ra-beam4-10.? -> ra-beam7-3.?
+CONNECT ra-apin-14.axle1 -> ra-beam4-9.axlehole1
+CONNECT ra-apin-15.axle1 -> ra-beam4-10.axlehole1
+CONNECT ra-pin-30.? -> ra-beam4-9.hole2
+CONNECT ra-pin-31.? -> ra-beam4-10.hole2
+CONNECT ra-pin-30.? -> ra-beam7-3.?
+CONNECT ra-apin-14.pin1 -> ra-beam7-3.?
+CONNECT ra-pin-31.? -> ra-beam7-3.?
+CONNECT ra-apin-15.pin1 -> ra-beam7-3.?
 CONNECT ra-beam7-3.? -> ra-beam-1.?
 WHY Builds a seven-hole crossbeam with two grey thin links, blue axle-pins and black friction pins, then attaches it across the axle frame.
 
 STEP 207
 ADD ra-axle4-2 3705 red
 ADD ra-axle5-3 32073 yellow
-CONNECT ra-axle4-2.? -> ra-ball-2.?
-CONNECT ra-axle5-3.? -> ra-ball-3.?
+CONNECT ra-axle4-2.? -> ra-ball-2.axlehole1
+CONNECT ra-axle5-3.? -> ra-ball-3.axlehole1
 WHY Fits a red four-stud axle and yellow five-stud axle into the two joint shafts on the axle assembly.
 
 STEP 208
 ADD ra-panel7-1 24119 black
-CONNECT ra-panel7-1.? -> ra-beam7-3.?
+CONNECT ra-panel7-1.? -> ra-apin-14.?
+CONNECT ra-panel7-1.? -> ra-apin-15.?
 WHY Fits the black curved panel across the front of the axle assembly.
 
 STEP 209
@@ -2037,9 +2056,9 @@ ADD tr-pin-90 42924 blue
 ADD tr-pin-91 42924 blue
 ADD tr-pin-92 42924 blue
 CONNECT tr-pin-89.? -> tr-panel3-3.?
-CONNECT tr-pin-90.? -> tr-panel3-3.?
+CONNECT tr-pin-90.? -> tr-panel3-7.?
 CONNECT tr-pin-91.? -> tr-panel3-4.?
-CONNECT tr-pin-92.? -> tr-panel3-4.?
+CONNECT tr-pin-92.? -> tr-panel3-8.?
 WHY Adds four blue long pins to the chassis side panels above the attached rear axle.
 
 STEP 213
@@ -2059,14 +2078,18 @@ STEP 214
 ADD bt-beam11-1 32525 darkgray
 ADD bt-beam11-2 32525 darkgray
 CONNECT bt-beam11-1.? -> bt-pin-1.?
+CONNECT bt-beam11-1.? -> bt-pin-2.?
 CONNECT bt-beam11-2.? -> bt-pin-3.?
+CONNECT bt-beam11-2.? -> bt-pin-4.?
 WHY Fits two dark-grey eleven-hole beams to the frame pins.
 
 STEP 215
 ADD bt-beam3-1 32523 black
 ADD bt-beam3-2 32523 black
-CONNECT bt-beam3-1.? -> bt-pin-2.?
-CONNECT bt-beam3-2.? -> bt-pin-4.?
+CONNECT bt-beam3-1.hole1 -> bt-pin-1.?
+CONNECT bt-beam3-1.hole3 -> bt-pin-2.?
+CONNECT bt-beam3-2.hole1 -> bt-pin-3.?
+CONNECT bt-beam3-2.hole3 -> bt-pin-4.?
 WHY Adds two black three-hole beams at opposite corners of the frame.
 
 STEP 216
@@ -2119,13 +2142,15 @@ ADD bt-conn-2 6536 darkgray
 ADD bt-conn-3 32184 darkgray
 ADD bt-pin-15 39888 tan
 ADD bt-ball-1 31794 lightgray
-CONNECT bt-pin-15.? -> bt-ball-1.?
-CONNECT bt-conn-1.? -> bt-ball-1.?
-CONNECT bt-conn-2.? -> bt-ball-1.?
-CONNECT bt-apin-1.? -> bt-conn-1.?
-CONNECT bt-apin-2.? -> bt-conn-2.?
-CONNECT bt-conn-3.? -> bt-apin-1.?
-CONNECT bt-ball-1.? -> bt-beam-1.?
+CONNECT bt-pin-15.pin2 -> bt-ball-1.?
+CONNECT bt-conn-1.hole1 -> bt-pin-15.pin1
+CONNECT bt-conn-2.hole1 -> bt-pin-15.pin3
+CONNECT bt-apin-1.axle1 -> bt-conn-1.axlehole1
+CONNECT bt-apin-2.axle1 -> bt-conn-2.axlehole1
+CONNECT bt-conn-3.axlehole1 -> bt-apin-1.?
+CONNECT bt-conn-3.axlehole2 -> bt-apin-2.?
+CONNECT bt-apin-1.pin1 -> bt-beam-1.?
+CONNECT bt-apin-2.pin1 -> bt-beam-1.?
 WHY Builds the upright grey steering-arm support with connectors, tan frictionless pin and black axle-pins, then fits it into the frame.
 
 STEP 221
@@ -2135,12 +2160,14 @@ ADD bt-beam5-3 32316 black
 ADD bt-apin-3 43093 blue
 ADD bt-apin-4 43093 blue
 ADD bt-conn-4 32184 darkgray
-CONNECT bt-apin-3.? -> bt-conn-4.?
-CONNECT bt-apin-4.? -> bt-conn-4.?
-CONNECT bt-conn-4.? -> bt-beam5-3.?
-CONNECT bt-pin-16.? -> bt-beam5-3.?
-CONNECT bt-pin-17.? -> bt-beam5-3.?
-CONNECT bt-beam5-3.? -> bt-beam-1.?
+CONNECT bt-apin-3.axle1 -> bt-conn-4.axlehole1
+CONNECT bt-apin-4.axle1 -> bt-conn-4.axlehole2
+CONNECT bt-apin-3.pin1 -> bt-beam5-3.hole2
+CONNECT bt-apin-4.pin1 -> bt-beam5-3.hole4
+CONNECT bt-pin-16.? -> bt-beam5-3.hole1
+CONNECT bt-pin-17.? -> bt-beam5-3.hole5
+CONNECT bt-pin-16.? -> bt-beam-1.?
+CONNECT bt-pin-17.? -> bt-beam-1.?
 WHY Builds a black five-hole crossbar with a dark-grey connector, two blue axle-pins and two blue long pins, then fits it across the frame.
 
 STEP 222
