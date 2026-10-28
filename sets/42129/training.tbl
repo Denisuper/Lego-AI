@@ -1478,24 +1478,28 @@ WHY Adds two blue long pins beside the grey axles.
 STEP 151
 ADD ra2-beam3-3 6632 black
 ADD ra2-beam3-4 6632 black
-CONNECT ra2-beam3-3.? -> ra2-axle3-3.?
-CONNECT ra2-beam3-4.? -> ra2-axle3-4.?
-WHY Fits two black thin three-hole beams onto the projecting axles.
+CONNECT ra2-beam3-3.axlehole1 -> ra2-axle3-3.?
+CONNECT ra2-beam3-3.axlehole2 -> ra2-axle3-1.?
+CONNECT ra2-beam3-3.hole1 -> ra2-pin-5.?
+CONNECT ra2-beam3-4.axlehole1 -> ra2-axle3-4.?
+CONNECT ra2-beam3-4.axlehole2 -> ra2-axle3-2.?
+CONNECT ra2-beam3-4.hole1 -> ra2-pin-6.?
+WHY Fits two black thin three-hole beams over the two gray axles and the blue center pin on each side of the hub.
 
 STEP 152
 ADD ra2-beam4-1 32449 darkgray
 ADD ra2-apin-1 11214 red
 ADD ra2-beam2-1 41677 darkgray
-CONNECT ra2-apin-1.? -> ra2-beam4-1.?
-CONNECT ra2-beam2-1.? -> ra2-beam4-1.?
-CONNECT ra2-beam4-1.? -> ra2-pin-5.?
+CONNECT ra2-apin-1.axle1 -> ra2-beam4-1.axlehole1
+CONNECT ra2-beam2-1.axlehole1 -> ra2-apin-1.axle1
+CONNECT ra2-beam4-1.hole2 -> ra2-pin-5.?
 WHY Builds a dark-grey thin link with a red axle-pin and small two-hole connector, then fits it to the hub.
 
 STEP 153
 ADD ra2-beam4-2 2825 lightgray
 ADD ra2-apin-2 11214 red
-CONNECT ra2-apin-2.? -> ra2-beam4-2.?
-CONNECT ra2-beam4-2.? -> ra2-pin-6.?
+CONNECT ra2-apin-2.axle1 -> ra2-beam4-2.axlehole1
+CONNECT ra2-beam4-2.hole2 -> ra2-pin-6.?
 END
 WHY Fits the light-grey thin link with a red axle-pin to the opposite hub support.
 
