@@ -191,3 +191,7 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 36?38, steps 51?56: the gray and tan gears mesh; their axle holes and the ball-ended shaft socket are identifiable. The two gray floor connectors insert their integral pins. The paired black pins and blue axle-pins at each floor edge are distributed across both panels, not all in the narrow panel. Individual panel holes remain uncertain.
 
 - Source pages 40?43, steps 59?60: the side frames? four black friction pins fit the round holes of the gray pin hubs, rather than directly into the frames. Each hub?s integral pin fits the frame. Each dark connector is held to the frame by the blue axle-pin; the remaining axle hole takes the later stop axle in step 61. The corresponding ball-ended socket in step 62 is also identified.
+
+- Source page 45, steps 63?64: the ball-joint axle passes through the L-beam?s short leg, the black pin occupies the corner, and the blue axle-pin occupies its cross hole at the far end.
+
+- Source pages 49?50, steps 70?71: the two blue axle-pins were listed but their placement was omitted. Their axle ends lock into the L-beams? cross holes, and their pin ends receive the fifteen-hole beams in the next step.

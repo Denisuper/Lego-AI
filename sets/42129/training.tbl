@@ -696,15 +696,15 @@ WHY Joins a dark-grey short axle to a grey ball-ended connector.
 STEP 63
 ADD tr-beam2-2 32140 darkgray
 ADD tr-bush-9 3713 red
-CONNECT tr-axle-3.? -> tr-beam2-2.?
+CONNECT tr-axle-3.? -> tr-beam2-2.hole4
 CONNECT tr-axle-3.? -> tr-bush-9.axlehole1 LOCKED
 WHY Fits a dark-grey L-beam and red half bush onto the short axle.
 
 STEP 64
 ADD tr-pin-49 61332 black
 ADD tr-apin-12 43093 blue
-CONNECT tr-pin-49.? -> tr-beam2-2.?
-CONNECT tr-apin-12.? -> tr-beam2-2.?
+CONNECT tr-pin-49.? -> tr-beam2-2.hole3
+CONNECT tr-apin-12.? -> tr-beam2-2.axlehole1
 WHY Adds a black friction pin and a blue axle-pin to the L-beam.
 
 STEP 65
@@ -757,13 +757,15 @@ CONNECT tr-pin-53.pin2 -> tr-beam2-3.hole1 STIFF
 CONNECT tr-pin-52.pin2 -> tr-beam2-3.hole3 STIFF
 CONNECT tr-pin-50.pin2 -> tr-beam2-4.hole1 STIFF
 CONNECT tr-pin-51.pin2 -> tr-beam2-4.hole3 STIFF
-WHY Adds 2 2x4 L-beams and 2 axle pins to the main chassis. It sits toward the rear of the truck, at mid height. It is fixed onto the 4 friction pins from step 69. The friction pins grip the 2x4 L-beam with friction, making a rigid join (4 such joints in this step). Its unused ends stay free because step 71 slots 2 15-hole beams onto them.
+CONNECT tr-apin-13.axle1 -> tr-beam2-3.axlehole1 LOCKED
+CONNECT tr-apin-14.axle1 -> tr-beam2-4.axlehole1 LOCKED
+WHY Fits two L-beams onto the four motor pins and inserts one blue axle-pin into the cross hole of each L-beam; the exposed pins receive the fifteen-hole beams in step 71.
 
 STEP 71
 ADD tr-beam15-1 71710 black
 ADD tr-beam15-2 71710 black
-CONNECT tr-beam15-1.? -> tr-apin-13.?
-CONNECT tr-beam15-2.? -> tr-apin-14.?
+CONNECT tr-beam15-1.? -> tr-apin-13.pin1
+CONNECT tr-beam15-2.? -> tr-apin-14.pin1
 WHY Fits two black fifteen-hole beams upright on the blue axle-pins added to the rear motor supports in the preceding step.
 
 STEP 72
