@@ -181,3 +181,5 @@ Gearbox support review: source step 26 inset sequence on page 21 shows the long 
 Gearbox drive review: the subassembly on page 21 and its installation on pages 22-24 establish which gears share the brown shaft and which flank it. The step 27 grey gear meshes with its 16-tooth gear, the step 28 small gear with its 24-tooth gear, and the grey gear added in step 30 meshes with the adjacent red clutch gear. These visible contacts are now recorded; axle-bearing points remain uncertain.
 
 Lock-motor gearing review: printed pages 25-28 show the prepared motor shaft and the adjacent seven-stud shaft from step 28. The two grey sixteen-tooth gears installed in step 36 engage each other; that mesh is now recorded. The shaft bearing points remain uncertain.
+
+Upper crossbar review: source step 37 inset on page 29 shows the four-pin hub seated in the white three-hole beam?s ends and holes 3 and 5 of the eleven-hole beam. Those four receiving holes are now explicit; which hub pin faces each end remains uncertain.

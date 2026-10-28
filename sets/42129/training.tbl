@@ -433,8 +433,10 @@ STEP 37
 ADD tr-conn-17 65489 lightgray
 ADD tr-beam3-10 32523 white
 ADD tr-beam11-2 32525 darkgray
-CONNECT tr-conn-17.? -> tr-beam3-10.?
-CONNECT tr-conn-17.? -> tr-beam11-2.?
+CONNECT tr-conn-17.? -> tr-beam3-10.hole1
+CONNECT tr-conn-17.? -> tr-beam3-10.hole3
+CONNECT tr-conn-17.? -> tr-beam11-2.hole3
+CONNECT tr-conn-17.? -> tr-beam11-2.hole5
 CONNECT tr-conn-17.? -> ch1-beam3-3.?
 WHY Builds a white beam and grey four-pin connector under an eleven-hole crossbeam, then places it across the gearbox.
 
