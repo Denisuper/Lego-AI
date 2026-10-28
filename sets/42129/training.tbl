@@ -1754,8 +1754,8 @@ STEP 183
 ADD ra-beam5-2 32316 black
 ADD ra-apin-10 11214 red
 ADD ra-beam-3 18654 black
-CONNECT ra-apin-10.? -> ra-beam-3.?
-CONNECT ra-apin-10.? -> ra-beam5-2.?
+CONNECT ra-apin-10.? -> ra-beam-3.hole1
+CONNECT ra-apin-10.? -> ra-beam5-2.hole2
 CONNECT ra-beam5-2.? -> ra-beam-1.?
 WHY Fits a red axle-pin with a black spacer to a black five-hole beam and installs the beam on the frame.
 
@@ -1764,16 +1764,16 @@ ADD ra-beam5-3 32316 black
 ADD ra-axle5-2 32073 yellow
 ADD ra-gear-6 94925 lightgray
 ADD ra-gear-7 32270 black
-CONNECT ra-axle5-2.? -> ra-gear-6.?
-CONNECT ra-axle5-2.? -> ra-gear-7.?
-CONNECT ra-axle5-2.? -> ra-beam5-3.?
+CONNECT ra-axle5-2.? -> ra-gear-6.axlehole1
+CONNECT ra-axle5-2.? -> ra-gear-7.axlehole1
+CONNECT ra-axle5-2.? -> ra-beam5-3.hole3
 CONNECT ra-beam5-3.? -> ra-beam-1.?
 WHY Fits two gears to a yellow five-stud axle through a second black five-hole beam, then installs the geared beam.
 
 STEP 185
 ADD ra-pin-19 39888 tan
 ADD ra-gear-8 18946 red
-CONNECT ra-pin-19.? -> ra-gear-8.?
+CONNECT ra-pin-19.? -> ra-gear-8.hole1
 CONNECT ra-pin-19.? -> ra-beam-1.?
 WHY Fits a red clutch gear on a tan frictionless pin in the rear axle frame.
 
