@@ -170,4 +170,4 @@ Rear drivetrain interface review: printed pages 106-107 trace the blue gear to s
 
 Motor differential interface review: source step 16 on printed page 13 shows both grey 24-tooth motor gears engaging the red differential?s exterior teeth. These meshes are recorded separately from the internal bevel-gear contacts.
 
-Rear-drive shaft review: comparing source steps 177, 184 and 187 on pages 110, 113 and 114 shows the second red clutch gear on the yellow shaft from the earlier drive support, not on the later shaft installed with the lower grey gear. The shaft reference is corrected and its visible mesh with the adjacent grey gear is recorded.
+Rear-drive shaft review: comparing source steps 168, 177, 184 and 187 on pages 106, 110, 113 and 114, then checking the authored model geometry, places the second red clutch gear on the yellow shaft from step 168, not on either of the two later yellow shafts. The shaft reference is corrected and its visible mesh with the adjacent grey gear is recorded.
