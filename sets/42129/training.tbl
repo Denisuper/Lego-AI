@@ -2565,15 +2565,20 @@ ADD sb-apin-3 3749 tan
 ADD sb-beam4-3 32449 darkgray
 ADD sb-beam4-4 32449 darkgray
 ADD sb-apin-4 3749 tan
-CONNECT sb-apin-1.? -> sb-pin-1.?
-CONNECT sb-apin-2.? -> sb-pin-1.?
-CONNECT sb-beam4-1.? -> sb-apin-1.?
-CONNECT sb-beam4-2.? -> sb-apin-1.?
-CONNECT sb-beam4-3.? -> sb-apin-2.?
-CONNECT sb-beam4-4.? -> sb-apin-2.?
-CONNECT sb-apin-3.? -> sb-beam4-1.?
-CONNECT sb-apin-4.? -> sb-beam4-3.?
-CONNECT sb-pin-1.? -> fa-beam-1.?
+CONNECT sb-apin-1.pin1 -> sb-pin-1.hole1
+CONNECT sb-apin-2.pin1 -> sb-pin-1.hole2
+CONNECT sb-beam4-1.axlehole2 -> sb-apin-1.axle1
+CONNECT sb-beam4-2.axlehole2 -> sb-apin-1.axle1
+CONNECT sb-beam4-3.axlehole2 -> sb-apin-2.axle1
+CONNECT sb-beam4-4.axlehole2 -> sb-apin-2.axle1
+CONNECT sb-apin-3.axle1 -> sb-beam4-1.axlehole1
+CONNECT sb-apin-3.axle1 -> sb-beam4-2.axlehole1
+CONNECT sb-apin-4.axle1 -> sb-beam4-3.axlehole1
+CONNECT sb-apin-4.axle1 -> sb-beam4-4.axlehole1
+CONNECT sb-apin-3.pin1 -> fa-beam2-5.?
+CONNECT sb-apin-3.pin1 -> fa-beam2-6.?
+CONNECT sb-apin-4.pin1 -> fa-beam2-7.?
+CONNECT sb-apin-4.pin1 -> fa-beam2-8.?
 WHY Builds the black steering rack with paired dark-grey links, blue axle-pins and tan frictionless axle-pins, then fits it across the front axle.
 
 STEP 256
@@ -2582,10 +2587,13 @@ ADD fa-axle5-1 32073 yellow
 ADD fa-beam5-2 32316 black
 ADD fa-beam5-3 32316 black
 ADD fa-conn-14 65489 lightgray
-CONNECT fa-conn-14.? -> fa-beam5-2.?
-CONNECT fa-conn-14.? -> fa-beam5-3.?
-CONNECT fa-axle5-1.? -> fa-conn-13.?
-CONNECT fa-axle5-1.? -> fa-beam5-2.?
+CONNECT fa-conn-14.pin1 -> fa-beam5-2.hole2
+CONNECT fa-conn-14.pin2 -> fa-beam5-2.hole4
+CONNECT fa-conn-14.pin3 -> fa-beam5-3.hole2
+CONNECT fa-conn-14.pin4 -> fa-beam5-3.hole4
+CONNECT fa-axle5-1.? -> fa-conn-13.axlehole1
+CONNECT fa-axle5-1.? -> fa-beam5-2.hole1
+CONNECT fa-axle5-1.? -> fa-beam5-3.hole1
 CONNECT fa-conn-14.? -> fa-beam-1.?
 WHY Builds and fits a pair of black five-hole beams around a yellow axle with two grey connectors on the front axle.
 

@@ -269,3 +269,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source pages 143?146, steps 239?248: front wheel hubs connect to differential output extensions through their joint sockets. Both long pins secure each upright L-beam; the stop pins enter the lower gray connectors installed in step 239. Each blue axle-pin passes through the paired thin two-hole links.
 
 - Source pages 147?148, steps 251?254: shocks attach through their stop axles; each pair of thin links shares both red and gray axles. The blue axle-pins fasten the black connectors to two-hole supports, and the white crossbeam joins the black nine-hole beam through two black pins.
+
+- Source pages 148?150, steps 252 and 255?256: the steering rack?s blue pins and tan axle-pins each pass through both stacked thin links; the tan pin ends attach those links to the earlier paired hub links. The following support?s four integral hub pins and yellow axle hold both five-hole beams, rather than the previously recorded partial contacts.
