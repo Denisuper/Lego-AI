@@ -195,3 +195,5 @@ Second chassis interface review: printed pages 33-35 show the black pins in the 
 - Source page 45, steps 63?64: the ball-joint axle passes through the L-beam?s short leg, the black pin occupies the corner, and the blue axle-pin occupies its cross hole at the far end.
 
 - Source pages 49?50, steps 70?71: the two blue axle-pins were listed but their placement was omitted. Their axle ends lock into the L-beams? cross holes, and their pin ends receive the fifteen-hole beams in the next step.
+
+- Source pages 52?56, steps 73?78: the L-bracket blue axle-pins occupy their cross holes. The gray cable-support hubs use their integral pins in the earlier motor-support short-leg holes and hold the round ends of the blue axle-pins; the cable clip in step 77 fits the projecting axle, rather than the hub directly.

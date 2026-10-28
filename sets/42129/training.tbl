@@ -788,7 +788,7 @@ ADD tr-beam2-5 32140 darkgray
 CONNECT tr-pin-58.? -> tr-beam2-5.?
 CONNECT tr-pin-59.? -> tr-beam2-5.?
 CONNECT tr-pin-60.? -> tr-beam2-5.?
-CONNECT tr-apin-15.? -> tr-beam2-5.?
+CONNECT tr-apin-15.axle1 -> tr-beam2-5.axlehole1
 CONNECT tr-beam2-5.? -> tr-beam15-1.?
 CONNECT tr-beam2-5.? -> tr-beam2-3.?
 WHY Builds a dark-grey L-bracket with three friction pins and a blue axle-pin, then attaches it beside the upright beam and motor support.
@@ -802,7 +802,7 @@ ADD tr-beam2-6 32140 darkgray
 CONNECT tr-pin-61.? -> tr-beam2-6.?
 CONNECT tr-pin-62.? -> tr-beam2-6.?
 CONNECT tr-pin-63.? -> tr-beam2-6.?
-CONNECT tr-apin-16.? -> tr-beam2-6.?
+CONNECT tr-apin-16.axle1 -> tr-beam2-6.axlehole1
 CONNECT tr-beam2-6.? -> tr-beam15-2.?
 CONNECT tr-beam2-6.? -> tr-beam2-4.?
 WHY Builds a dark-grey L-bracket with three friction pins and a blue axle-pin, then attaches it beside the upright beam and motor support.
@@ -812,10 +812,10 @@ ADD tr-conn-28 65487 lightgray
 ADD tr-conn-29 65487 lightgray
 ADD tr-apin-17 43093 blue
 ADD tr-apin-18 43093 blue
-CONNECT tr-apin-17.? -> tr-conn-28.?
-CONNECT tr-apin-18.? -> tr-conn-29.?
-CONNECT tr-conn-28.? -> tr-beam2-3.?
-CONNECT tr-conn-29.? -> tr-beam2-4.?
+CONNECT tr-apin-17.pin1 -> tr-conn-28.hole1
+CONNECT tr-apin-18.pin1 -> tr-conn-29.hole1
+CONNECT tr-conn-28.pin1 -> tr-beam2-3.hole4
+CONNECT tr-conn-29.pin1 -> tr-beam2-4.hole4
 WHY Builds two grey connectors with blue axle-pins and fits them to the earlier motor supports.
 
 STEP 76
@@ -827,13 +827,13 @@ WHY Fits two olive-green five-hole beams to the blue pins on the upright support
 
 STEP 77
 ADD tr-axle-4 49283 blue
-CONNECT tr-axle-4.? -> tr-conn-28.?
+CONNECT tr-axle-4.axlehole1 -> tr-apin-17.axle1
 WHY Places a blue cable clip on the first motor cable and its support.
 
 STEP 78
 ADD tr-apin-19 18651 black
 ADD tr-axle-5 49283 blue
-CONNECT tr-apin-19.? -> tr-axle-5.?
+CONNECT tr-apin-19.? -> tr-axle-5.axlehole1
 CONNECT tr-apin-19.? -> tr-panel3-1.?
 WHY Uses a black axle-pin and a second blue cable clip to route the first motor cable against the chassis.
 
