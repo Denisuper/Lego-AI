@@ -8099,3 +8099,301 @@ CONNECT p59443-50.axlehole2 -> p3705-29.axle4 LOCKED
 CONNECT p59443-51.axlehole2 -> p3705-30.axle4 LOCKED
 WHY Adds paired grey axle extensions, black spacers and axle connectors to the open ends of the rack.
 
+STEP 801
+ADD p23948-7 23948 lightgray
+ADD p59443-52 59443 lightgray
+ADD p59443-53 59443 lightgray
+ADD p22961-18 22961 black
+ADD p22961-19 22961 black
+CONNECT p23948-7.axle1 -> p59443-52.axlehole1 LOCKED
+CONNECT p23948-7.axle11 -> p59443-53.axlehole1 LOCKED
+CONNECT p22961-18.axle1 -> p59443-52.axlehole2 LOCKED
+CONNECT p22961-19.axle1 -> p59443-53.axlehole2 LOCKED
+CONNECT p22961-18.? -> p4519-70.? STIFF
+CONNECT p22961-19.? -> p4519-71.? STIFF
+WHY Builds the fourth grey crossbar with black end connectors and fits it between the roof-rack sides.
+
+STEP 802
+ADD p32062-74 32062 red
+ADD p32062-75 32062 red
+ADD p59443-54 59443 black
+ADD p59443-55 59443 black
+CONNECT p32062-74.axle1 -> p59443-54.axlehole1 LOCKED
+CONNECT p32062-75.axle1 -> p59443-55.axlehole1 LOCKED
+CONNECT p59443-54.axlehole2 -> p4519-70.axle3 LOCKED
+CONNECT p59443-55.axlehole2 -> p4519-71.axle3 LOCKED
+WHY Adds black connectors and red axles to the two open ends of the roof-rack frame.
+
+STEP 803
+GROUP roof-rack-end
+ADD p32062-76 32062 red
+ADD p32062-77 32062 red
+ADD p32034-38 32034 black
+CONNECT p32062-76.axle1 -> p32034-38.axlehole1 LOCKED
+CONNECT p32062-77.axle1 -> p32034-38.axlehole2 LOCKED
+WHY Starts the rack end crosspiece with a black connector and two red axles.
+
+STEP 804
+ADD p59443-56 59443 black
+ADD p59443-57 59443 black
+CONNECT p59443-56.axlehole1 -> p32062-76.axle2 LOCKED
+CONNECT p59443-57.axlehole1 -> p32062-77.axle2 LOCKED
+WHY Adds a black axle connector at each end of the rack crosspiece.
+
+STEP 805
+ADD p3705-31 3705 black
+ADD p3705-32 3705 black
+ADD p6536-59 6536 darkgray
+ADD p6536-60 6536 darkgray
+CONNECT p3705-31.axle1 -> p59443-56.axlehole2 LOCKED
+CONNECT p3705-32.axle1 -> p59443-57.axlehole2 LOCKED
+CONNECT p6536-59.axlehole1 -> p3705-31.axle2 LOCKED
+CONNECT p6536-60.axlehole1 -> p3705-32.axle2 LOCKED
+WHY Adds two black axles and grey perpendicular connectors to the rack end crosspiece.
+
+STEP 806
+ADD p18654-62 18654 black
+ADD p18654-63 18654 black
+ADD p25214-5 25214 black
+ADD p25214-6 25214 black
+CONNECT p18654-62.hole1 -> p3705-31.axle3 TURNS
+CONNECT p18654-63.hole1 -> p3705-32.axle3 TURNS
+CONNECT p25214-5.? -> p3705-31.axle4 LOCKED
+CONNECT p25214-6.? -> p3705-32.axle4 LOCKED
+WHY Adds black round spacers and curved elbow connectors to both ends of the rack crosspiece.
+
+STEP 807
+END
+ATTACH roof-rack-end
+CONNECT p25214-5.? -> p32062-74.axle2 LOCKED
+CONNECT p25214-6.? -> p32062-75.axle2 LOCKED
+WHY Closes the perimeter of the roof rack with the completed curved end crosspiece.
+
+STEP 808
+GROUP roof-rack-container
+ADD p6558-152 6558 blue
+ADD p6558-153 6558 blue
+ADD p11478-32 11478 black
+ADD p11478-33 11478 black
+CONNECT p6558-152.pin1 -> p11478-32.hole1 STIFF
+CONNECT p6558-153.pin1 -> p11478-32.hole3 STIFF
+CONNECT p6558-152.pin2 -> p11478-33.hole1 STIFF
+CONNECT p6558-153.pin2 -> p11478-33.hole3 STIFF
+WHY Starts the roof-rack container with two thin black beams and two blue long pins.
+
+STEP 809
+ADD p32316-37 32316 black
+ADD p32316-38 32316 black
+CONNECT p6558-152.pin3 -> p32316-37.? STIFF
+CONNECT p6558-153.pin3 -> p32316-38.? STIFF
+WHY Adds two thick black five-hole beams to the container base.
+
+STEP 810
+ADD p64179-1 64179 black
+ADD p55013-6 55013 darkgray
+ADD p55013-7 55013 darkgray
+CONNECT p55013-6.axle1 -> p64179-1.? TURNS
+CONNECT p55013-7.axle1 -> p64179-1.? TURNS
+CONNECT p64179-1.? -> p32316-37.? STIFF
+CONNECT p64179-1.? -> p32316-38.? STIFF
+WHY Fits the container base into a black frame and inserts two dark-grey stop axles across it.
+
+STEP 811
+ADD p2780-267 2780 black
+ADD p27940-10 27940 darkgray
+ADD p27940-11 27940 darkgray
+ADD p32034-39 32034 black
+CONNECT p27940-10.axle1 -> p32034-39.axlehole1 LOCKED
+CONNECT p27940-11.axle1 -> p32034-39.axlehole2 LOCKED
+CONNECT p2780-267.pin1 -> p32034-39.hole1 STIFF
+CONNECT p27940-10.? -> p55013-6.? LOCKED
+CONNECT p27940-11.? -> p55013-7.? LOCKED
+WHY Builds a cross connector with two grey axle hubs and fits it to the container frame.
+
+STEP 812
+ADD p2780-268 2780 black
+ADD p2780-269 2780 black
+ADD p2780-270 2780 black
+ADD p2780-271 2780 black
+ADD p2780-272 2780 black
+ADD p2780-273 2780 black
+CONNECT p2780-268.pin1 -> p64179-1.? STIFF
+CONNECT p2780-269.pin1 -> p64179-1.? STIFF
+CONNECT p2780-270.pin1 -> p64179-1.? STIFF
+CONNECT p2780-271.pin1 -> p64179-1.? STIFF
+CONNECT p2780-272.pin1 -> p64179-1.? STIFF
+CONNECT p2780-273.pin1 -> p64179-1.? STIFF
+WHY Inserts six black friction pins into the container frame for the upper beams.
+
+STEP 813
+ADD p32316-39 32316 lightgray
+ADD p32316-40 32316 lightgray
+ADD p32316-41 32316 lightgray
+CONNECT p2780-268.pin2 -> p32316-39.? STIFF
+CONNECT p2780-269.pin2 -> p32316-39.? STIFF
+CONNECT p2780-270.pin2 -> p32316-40.? STIFF
+CONNECT p2780-271.pin2 -> p32316-40.? STIFF
+CONNECT p2780-272.pin2 -> p32316-41.? STIFF
+CONNECT p2780-273.pin2 -> p32316-41.? STIFF
+WHY Fits three grey five-hole beams around the top of the black container frame.
+
+STEP 814
+ADD p60483-73 60483 black
+CONNECT p60483-73.? -> p55013-6.? LOCKED
+WHY Adds a small black connector at the hinge side of the container.
+
+STEP 815
+GROUP roof-container-lid
+ADD p11212-1 11212 lightgray
+ADD p11212-2 11212 lightgray
+ADD p3710-1 3710 lightgray
+CONNECT p3710-1.? -> p11212-1.? STIFF
+CONNECT p3710-1.? -> p11212-2.? STIFF
+WHY Starts the container lid by joining two grey three-by-three plates with a four-stud plate.
+
+STEP 816
+ADD p18980-1 18980 lightgray
+ADD p18980-2 18980 lightgray
+CONNECT p18980-1.? -> p11212-1.? STIFF
+CONNECT p18980-2.? -> p11212-2.? STIFF
+WHY Adds two rounded grey plates to the opposite ends of the lid base.
+
+STEP 817
+ADD p3020-1 3020 darkgray
+ADD p3020-2 3020 darkgray
+CONNECT p3020-1.? -> p11212-1.? STIFF
+CONNECT p3020-2.? -> p11212-2.? STIFF
+WHY Reinforces the lid with two dark-grey two-by-four plates across its centre.
+
+STEP 818
+ADD p26603-1 26603 lightgray
+CONNECT p26603-1.? -> p3020-1.? STIFF
+CONNECT p26603-1.? -> p3020-2.? STIFF
+WHY Applies sticker 5 to the grey two-by-three tile and places it in the centre of the lid.
+
+STEP 819
+ADD p2431-3 2431 lightgray
+ADD p2431-4 2431 lightgray
+ADD p63864-11 63864 lightgray
+ADD p63864-12 63864 lightgray
+CONNECT p2431-3.? -> p3020-1.? STIFF
+CONNECT p2431-4.? -> p3020-2.? STIFF
+CONNECT p63864-11.? -> p3020-1.? STIFF
+CONNECT p63864-12.? -> p3020-2.? STIFF
+WHY Frames the central lid tile with four grey straight tiles.
+
+STEP 820
+ADD p85984-41 85984 lightgray
+ADD p85984-42 85984 lightgray
+ADD p85984-43 85984 lightgray
+ADD p85984-44 85984 lightgray
+CONNECT p85984-41.? -> p18980-1.? STIFF
+CONNECT p85984-42.? -> p18980-1.? STIFF
+CONNECT p85984-43.? -> p18980-2.? STIFF
+CONNECT p85984-44.? -> p18980-2.? STIFF
+WHY Adds four grey slopes along two sides of the lid.
+
+STEP 821
+ADD p85984-45 85984 lightgray
+ADD p85984-46 85984 lightgray
+ADD p85984-47 85984 lightgray
+ADD p85984-48 85984 lightgray
+ADD p54200-11 54200 lightgray
+ADD p54200-12 54200 lightgray
+CONNECT p85984-45.? -> p18980-1.? STIFF
+CONNECT p85984-46.? -> p18980-1.? STIFF
+CONNECT p85984-47.? -> p18980-2.? STIFF
+CONNECT p85984-48.? -> p18980-2.? STIFF
+CONNECT p54200-11.? -> p18980-1.? STIFF
+CONNECT p54200-12.? -> p18980-2.? STIFF
+WHY Completes the tapered lid edges with four grey slopes and two small corner slopes.
+
+STEP 822
+ADD p3021-9 3021 lightgray
+CONNECT p3021-9.? -> p11212-1.? STIFF
+CONNECT p3021-9.? -> p11212-2.? STIFF
+WHY Turns the lid over and adds a grey two-by-three plate underneath to bridge the centre.
+
+STEP 823
+ADD p2780-274 2780 black
+ADD p2780-275 2780 black
+ADD p18677-11 18677 black
+ADD p18677-12 18677 black
+CONNECT p2780-274.pin1 -> p18677-11.? STIFF
+CONNECT p2780-275.pin1 -> p18677-12.? STIFF
+CONNECT p18677-11.? -> p3021-9.? STIFF
+CONNECT p18677-12.? -> p3021-9.? STIFF
+WHY Adds two black pin-hole plates and friction pins beneath the lid for its hinge.
+
+STEP 824
+ADD p32803-1 32803 lightgray
+ADD p32803-2 32803 lightgray
+CONNECT p32803-1.? -> p11212-1.? STIFF
+CONNECT p32803-2.? -> p11212-2.? STIFF
+WHY Adds two inverted curved grey bricks beneath the lid beside the hinge plates.
+
+STEP 825
+END
+ATTACH roof-container-lid
+CONNECT p2780-274.pin2 -> p32316-39.? STIFF
+CONNECT p2780-275.pin2 -> p32316-41.? STIFF
+WHY Brings the completed lid to the container frame and fits its two hinge pins.
+
+STEP 826
+ADD p60483-74 60483 black
+CONNECT p60483-74.? -> p55013-7.? LOCKED
+WHY Adds the second black connector at the container lid hinge.
+
+STEP 827
+ADD p18654-64 18654 black
+ADD p18654-65 18654 black
+ADD p25214-7 25214 black
+ADD p25214-8 25214 black
+CONNECT p18654-64.hole1 -> p55013-6.axle4 TURNS
+CONNECT p18654-65.hole1 -> p55013-7.axle4 TURNS
+CONNECT p25214-7.? -> p55013-6.axle5 LOCKED
+CONNECT p25214-8.? -> p55013-7.axle5 LOCKED
+WHY Closes the container lid, turns the container over, and adds two black spacers and curved mounts to the projecting axles.
+
+STEP 828
+END
+ATTACH roof-rack-container
+CONNECT p25214-7.? -> p3705-25.axle4 LOCKED
+CONNECT p25214-8.? -> p3705-26.axle4 LOCKED
+WHY Fits the completed hinged container to the roof-rack frame by its two curved mounts.
+
+STEP 829
+GROUP roof-rack-ladder
+ADD p15462-26 15462 brown
+ADD p60483-75 60483 black
+CONNECT p15462-26.axle1 -> p60483-75.axlehole1 LOCKED
+WHY Starts the folding ladder with a brown stop axle and a black two-hole connector.
+
+STEP 830
+ADD p43093-101 43093 blue
+ADD p11478-34 11478 black
+CONNECT p43093-101.axle1 -> p11478-34.axlehole1 LOCKED
+CONNECT p43093-101.pin1 -> p60483-75.hole1 STIFF
+WHY Fits a thin black five-hole beam upright on the ladder base and adds a blue axle pin at its top.
+
+STEP 831
+ADD p32002-9 32002 tan
+ADD p32002-10 32002 tan
+ADD p62462-5 62462 lightgray
+CONNECT p32002-9.pin1 -> p62462-5.hole1~ TURNS
+CONNECT p32002-10.pin1 -> p62462-5.hole1~ TURNS
+CONNECT p32002-9.? -> p11478-34.hole1~ STIFF
+WHY Builds a grey cylindrical ladder rung with two tan three-quarter pins and fits it to the upright beam.
+
+STEP 832
+ADD p62462-6 62462 lightgray
+ADD p62462-7 62462 lightgray
+ADD p18651-20 18651 black
+ADD p11478-35 11478 black
+CONNECT p18651-20.axle1 -> p11478-35.axlehole1 LOCKED
+CONNECT p62462-6.hole1 -> p18651-20.pin1 STIFF
+CONNECT p62462-7.hole1 -> p15462-26.axle2 TURNS
+CONNECT p11478-35.? -> p32002-10.? STIFF
+CONNECT p11478-35.? -> p43093-101.pin1 STIFF
+WHY Adds two grey cylindrical rungs and the second thin black upright to the folding ladder.
+
