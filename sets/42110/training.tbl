@@ -7662,11 +7662,11 @@ WHY Builds the olive L-shaped mounting support with a red connector and grey axl
 STEP 755
 GROUP first-windscreen-pillar
 ADD p40490-23 40490 black
-ADD p3673-5 3673 lightgray
-ADD p3673-6 3673 lightgray
-CONNECT p3673-5.pin1 -> p40490-23.? TURNS
-CONNECT p3673-6.pin1 -> p40490-23.? TURNS
-WHY Starts the windscreen pillar with a black nine-hole beam and two grey frictionless pins.
+ADD p4274-63 4274 lightgray
+ADD p4274-64 4274 lightgray
+CONNECT p4274-63.pin1 -> p40490-23.? TURNS
+CONNECT p4274-64.pin1 -> p40490-23.? TURNS
+WHY Starts the windscreen pillar with a black nine-hole beam and two grey half pins.
 
 STEP 756
 ADD p6636-7 6636 black
@@ -7676,8 +7676,8 @@ WHY Applies sticker 21 to a black six-stud tile and fits it along the pillar bea
 STEP 757
 ADD p32278-15 32278 olivegreen
 ADD p3673-7 3673 lightgray
-CONNECT p3673-5.pin2 -> p32278-15.? TURNS
-CONNECT p3673-6.pin2 -> p32278-15.? TURNS
+CONNECT p4274-63.pin2 -> p32278-15.? TURNS
+CONNECT p4274-64.pin2 -> p32278-15.? TURNS
 CONNECT p3673-7.pin1 -> p32278-15.? TURNS
 WHY Joins an olive fifteen-hole beam to the black windscreen pillar and adds another grey frictionless pin.
 
@@ -7812,4 +7812,290 @@ ADD p46882-4 46882 olivegreen
 CONNECT p6558-149.pin3 -> p46882-4.? STIFF
 CONNECT p6558-150.pin3 -> p46882-4.? STIFF
 WHY Fits the olive wheel-arch panel onto the second fender rail around the front wheel opening.
+
+STEP 776
+ADD p3034-4 3034 olivegreen
+ADD p3666-6 3666 olivegreen
+ADD p85984-33 85984 olivegreen
+ADD p85984-34 85984 olivegreen
+ADD p85984-35 85984 olivegreen
+ADD p85984-36 85984 olivegreen
+ADD p85984-37 85984 olivegreen
+ADD p54200-9 54200 olivegreen
+CONNECT p3666-6.? -> p3034-4.? STIFF
+CONNECT p85984-33.? -> p3034-4.? STIFF
+CONNECT p85984-34.? -> p3034-4.? STIFF
+CONNECT p85984-35.? -> p3034-4.? STIFF
+CONNECT p85984-36.? -> p3034-4.? STIFF
+CONNECT p85984-37.? -> p3666-6.? STIFF
+CONNECT p54200-9.? -> p3666-6.? STIFF
+CONNECT p3034-4.? -> p4274-60.? STIFF
+WHY Builds a long olive sloped strip from plates and slopes and presses it onto the top of the front fender.
+
+STEP 777
+ADD p26601-2 26601 olivegreen
+ADD p54200-10 54200 olivegreen
+ADD p85984-38 85984 olivegreen
+CONNECT p54200-10.? -> p26601-2.? STIFF
+CONNECT p85984-38.? -> p26601-2.? STIFF
+CONNECT p26601-2.? -> p61184-4.? STIFF
+WHY Builds the small olive corner trim and fits it at the front end of the fender.
+
+STEP 778
+GROUP second-hood-side-trim
+ADD p32278-16 32278 olivegreen
+ADD p2780-261 2780 black
+ADD p2780-262 2780 black
+ADD p3673-8 3673 lightgray
+ADD p3673-9 3673 lightgray
+CONNECT p2780-261.pin1 -> p32278-16.? STIFF
+CONNECT p2780-262.pin1 -> p32278-16.? STIFF
+CONNECT p3673-8.pin1 -> p32278-16.? TURNS
+CONNECT p3673-9.pin1 -> p32278-16.? TURNS
+WHY Starts the second hood side trim with an olive fifteen-hole beam, four pins, and sticker 2.
+
+STEP 779
+ADD p32524-22 32524 olivegreen
+ADD p2780-263 2780 black
+ADD p2780-264 2780 black
+CONNECT p2780-263.pin1 -> p32524-22.? STIFF
+CONNECT p2780-264.pin1 -> p32524-22.? STIFF
+CONNECT p2780-261.pin2 -> p32524-22.? STIFF
+CONNECT p2780-262.pin2 -> p32524-22.? STIFF
+WHY Adds an olive seven-hole beam bearing sticker 1 to the long trim beam.
+
+STEP 780
+ADD p32526-15 32526 olivegreen
+ADD p32291-7 32291 red
+ADD p4519-63 4519 lightgray
+ADD p2780-265 2780 black
+ADD p2780-266 2780 black
+CONNECT p4519-63.axle1 -> p32291-7.axlehole1 LOCKED
+CONNECT p2780-265.pin1 -> p32291-7.hole1 STIFF
+CONNECT p2780-266.pin1 -> p32291-7.hole2 STIFF
+CONNECT p2780-265.pin2 -> p32526-15.? STIFF
+CONNECT p2780-266.pin2 -> p32526-15.? STIFF
+CONNECT p32526-15.? -> p32278-16.? STIFF
+WHY Builds the olive L-shaped mounting support with a red connector and grey axle, applies sticker 20, and fits it beneath the trim.
+
+STEP 781
+ADD p4519-64 4519 lightgray
+ADD p6558-151 6558 blue
+ADD p60483-71 60483 olivegreen
+CONNECT p4519-64.axle1 -> p60483-71.axlehole1 LOCKED
+CONNECT p6558-151.pin1 -> p60483-71.hole1 STIFF
+CONNECT p6558-151.pin2 -> p32278-16.? STIFF
+WHY Adds an olive connector with a grey axle and blue long pin to the front end of the trim.
+
+STEP 782
+ADD p60483-72 60483 olivegreen
+ADD p18654-55 18654 olivegreen
+CONNECT p60483-72.axlehole1 -> p4519-64.axle2 LOCKED
+CONNECT p18654-55.hole1 -> p6558-151.pin3 STIFF
+WHY Caps the front trim connection with an olive two-hole connector and an olive round spacer.
+
+STEP 783
+ADD p40490-24 40490 black
+ADD p4274-65 4274 lightgray
+ADD p4274-66 4274 lightgray
+CONNECT p4274-65.pin1 -> p40490-24.? TURNS
+CONNECT p4274-66.pin1 -> p40490-24.? TURNS
+ADD p6636-8 6636 black
+CONNECT p6636-8.? -> p40490-24.? STIFF
+ADD p32278-17 32278 olivegreen
+ADD p3673-10 3673 lightgray
+CONNECT p4274-65.pin2 -> p32278-17.? TURNS
+CONNECT p4274-66.pin2 -> p32278-17.? TURNS
+CONNECT p3673-10.pin1 -> p32278-17.? TURNS
+CONNECT p3673-10.pin2 -> p32278-16.? TURNS
+WHY Builds the mirrored black windscreen pillar with sticker 31 and its olive support, then joins it to the hood side trim.
+
+STEP 784
+END
+ATTACH second-hood-side-trim
+CONNECT p4519-63.axle3 -> p32524-21.? TURNS
+WHY Positions the second hood side trim over the fender and fits its lower mounting axle to the front body.
+
+STEP 785
+CONNECT p40490-24.? -> p64782-7.? STIFF
+WHY Raises the hinged black windscreen pillar to meet the roof edge.
+
+STEP 786
+ADD p4519-65 4519 lightgray
+CONNECT p4519-65.axle1 -> p32524-20.? TURNS
+WHY Inserts a grey three-stud axle into the front body at the base of the windscreen pillar.
+
+STEP 787
+ADD p85984-39 85984 olivegreen
+ADD p85984-40 85984 olivegreen
+CONNECT p85984-39.? -> p3034-3.? STIFF
+CONNECT p85984-40.? -> p3034-4.? STIFF
+WHY Adds the final olive slopes at the rear ends of the two front fenders.
+
+STEP 788
+ADD p18575-11 18575 black
+ADD p15462-25 15462 brown
+ADD p3713-48 3713 lightgray
+CONNECT p18575-11.axlehole1 -> p15462-25.axle2 LOCKED
+CONNECT p3713-48.axlehole1 -> p15462-25.axle4 LOCKED
+CONNECT p15462-25.axle1 -> p64782-6.? TURNS
+WHY Fits the black gear and grey bush onto a brown stop axle and inserts the assembly through the roof as the steering control.
+
+STEP 789
+GROUP roof-rack
+ADD p11478-26 11478 black
+ADD p11478-27 11478 black
+ADD p4519-66 4519 lightgray
+ADD p4519-67 4519 lightgray
+CONNECT p4519-66.axle1 -> p11478-26.axlehole1 LOCKED
+CONNECT p4519-67.axle1 -> p11478-26.axlehole2 LOCKED
+CONNECT p4519-66.axle3 -> p11478-27.axlehole1 LOCKED
+CONNECT p4519-67.axle3 -> p11478-27.axlehole2 LOCKED
+WHY Starts the roof rack with two thin black five-hole beams joined by a pair of grey axles.
+
+STEP 790
+ADD p18654-56 18654 black
+ADD p18654-57 18654 black
+ADD p25214-1 25214 black
+ADD p25214-2 25214 black
+CONNECT p18654-56.hole1 -> p4519-66.axle2 TURNS
+CONNECT p18654-57.hole1 -> p4519-67.axle2 TURNS
+CONNECT p25214-1.? -> p4519-66.axle3 LOCKED
+CONNECT p25214-2.? -> p4519-67.axle3 LOCKED
+WHY Turns the rack assembly over and adds two black spacers and curved elbow connectors to its grey axles.
+
+STEP 791
+ADD p3705-23 3705 black
+ADD p3705-24 3705 black
+ADD p6536-57 6536 darkgray
+ADD p6536-58 6536 darkgray
+CONNECT p3705-23.axle1 -> p25214-1.? LOCKED
+CONNECT p3705-24.axle1 -> p25214-2.? LOCKED
+CONNECT p6536-57.axlehole1 -> p3705-23.axle2 LOCKED
+CONNECT p6536-58.axlehole1 -> p3705-24.axle2 LOCKED
+WHY Adds black axles and grey perpendicular connectors to the two curved rack corners.
+
+STEP 792
+ADD p32062-68 32062 red
+ADD p32062-69 32062 red
+ADD p25214-3 25214 black
+ADD p25214-4 25214 black
+CONNECT p25214-3.? -> p3705-23.axle3 LOCKED
+CONNECT p25214-4.? -> p3705-24.axle3 LOCKED
+CONNECT p32062-68.axle1 -> p25214-3.? LOCKED
+CONNECT p32062-69.axle1 -> p25214-4.? LOCKED
+WHY Adds another pair of black curved elbows and red axles to continue the rack perimeter.
+
+STEP 793
+ADD p32062-70 32062 red
+ADD p32062-71 32062 red
+ADD p59443-40 59443 black
+ADD p59443-41 59443 black
+CONNECT p32062-68.axle2 -> p59443-40.axlehole1 LOCKED
+CONNECT p32062-69.axle2 -> p59443-41.axlehole1 LOCKED
+CONNECT p32062-70.axle1 -> p59443-40.axlehole2 LOCKED
+CONNECT p32062-71.axle1 -> p59443-41.axlehole2 LOCKED
+WHY Extends both ends of the roof-rack frame with black axle connectors and red axles.
+
+STEP 794
+ADD p32062-72 32062 red
+ADD p4519-68 4519 lightgray
+ADD p18654-58 18654 black
+ADD p32034-34 32034 black
+ADD p32034-35 32034 black
+CONNECT p4519-68.axle1 -> p32034-34.axlehole1 LOCKED
+CONNECT p18654-58.hole1 -> p4519-68.axle2 TURNS
+CONNECT p4519-68.axle3 -> p32034-35.axlehole1 LOCKED
+CONNECT p32062-72.axle1 -> p32034-35.axlehole2 LOCKED
+CONNECT p32034-34.axlehole2 -> p32062-70.axle2 LOCKED
+WHY Builds and adds the first long side of the rack using two black angled connectors, a grey axle, a spacer and a red axle.
+
+STEP 795
+ADD p3705-25 3705 black
+ADD p3705-26 3705 black
+ADD p23948-4 23948 lightgray
+ADD p23948-5 23948 lightgray
+ADD p11478-28 11478 black
+ADD p11478-29 11478 black
+ADD p59443-42 59443 lightgray
+ADD p59443-43 59443 lightgray
+ADD p59443-44 59443 lightgray
+ADD p59443-45 59443 lightgray
+CONNECT p59443-42.axlehole1 -> p23948-4.axle1 LOCKED
+CONNECT p59443-43.axlehole1 -> p23948-4.axle11 LOCKED
+CONNECT p59443-44.axlehole1 -> p23948-5.axle1 LOCKED
+CONNECT p59443-45.axlehole1 -> p23948-5.axle11 LOCKED
+CONNECT p3705-25.axle1 -> p59443-42.axlehole2 LOCKED
+CONNECT p3705-26.axle1 -> p59443-44.axlehole2 LOCKED
+CONNECT p3705-25.axle3 -> p11478-28.axlehole1 LOCKED
+CONNECT p3705-26.axle3 -> p11478-29.axlehole1 LOCKED
+CONNECT p3705-25.axle4 -> p32034-34.hole1 TURNS
+CONNECT p3705-26.axle4 -> p32034-35.hole1 TURNS
+WHY Builds two long grey rack crossbars with axle connectors and black axles, then mounts them and two thin black beams to the first side rail.
+
+STEP 796
+ADD p32062-73 32062 red
+ADD p4519-69 4519 lightgray
+ADD p18654-59 18654 black
+ADD p32034-36 32034 black
+ADD p32034-37 32034 black
+CONNECT p4519-69.axle1 -> p32034-36.axlehole1 LOCKED
+CONNECT p18654-59.hole1 -> p4519-69.axle2 TURNS
+CONNECT p4519-69.axle3 -> p32034-37.axlehole1 LOCKED
+CONNECT p32062-73.axle1 -> p32034-37.axlehole2 LOCKED
+CONNECT p32034-36.axlehole2 -> p32062-71.axle2 LOCKED
+WHY Builds the matching black side rail and fits it to the other side of the rack crossbars.
+
+STEP 797
+ADD p3705-27 3705 black
+ADD p3705-28 3705 black
+ADD p11478-30 11478 black
+ADD p11478-31 11478 black
+CONNECT p3705-27.axle1 -> p32034-36.hole1 TURNS
+CONNECT p3705-28.axle1 -> p32034-37.hole1 TURNS
+CONNECT p3705-27.axle2 -> p59443-43.axlehole2 LOCKED
+CONNECT p3705-28.axle2 -> p59443-45.axlehole2 LOCKED
+CONNECT p3705-27.axle3 -> p11478-30.axlehole1 LOCKED
+CONNECT p3705-28.axle3 -> p11478-31.axlehole1 LOCKED
+WHY Secures the other ends of the two grey crossbars with black axles and thin black beams.
+
+STEP 798
+ADD p3705-29 3705 black
+ADD p3705-30 3705 black
+ADD p59443-46 59443 black
+ADD p59443-47 59443 black
+CONNECT p3705-29.axle1 -> p59443-46.axlehole1 LOCKED
+CONNECT p3705-30.axle1 -> p59443-47.axlehole1 LOCKED
+CONNECT p59443-46.axlehole2 -> p32062-72.axle2 LOCKED
+CONNECT p59443-47.axlehole2 -> p32062-73.axle2 LOCKED
+WHY Extends the two long sides of the roof rack with black axle connectors and axles.
+
+STEP 799
+ADD p23948-6 23948 lightgray
+ADD p59443-48 59443 lightgray
+ADD p59443-49 59443 lightgray
+ADD p22961-16 22961 black
+ADD p22961-17 22961 black
+CONNECT p23948-6.axle1 -> p59443-48.axlehole1 LOCKED
+CONNECT p23948-6.axle11 -> p59443-49.axlehole1 LOCKED
+CONNECT p22961-16.axle1 -> p59443-48.axlehole2 LOCKED
+CONNECT p22961-17.axle1 -> p59443-49.axlehole2 LOCKED
+CONNECT p22961-16.? -> p3705-29.? STIFF
+CONNECT p22961-17.? -> p3705-30.? STIFF
+WHY Builds a third grey crossbar with black end connectors and attaches it between the rack sides.
+
+STEP 800
+ADD p18654-60 18654 black
+ADD p18654-61 18654 black
+ADD p59443-50 59443 black
+ADD p59443-51 59443 black
+ADD p4519-70 4519 lightgray
+ADD p4519-71 4519 lightgray
+CONNECT p4519-70.axle1 -> p59443-50.axlehole1 LOCKED
+CONNECT p4519-71.axle1 -> p59443-51.axlehole1 LOCKED
+CONNECT p18654-60.hole1 -> p4519-70.axle2 TURNS
+CONNECT p18654-61.hole1 -> p4519-71.axle2 TURNS
+CONNECT p59443-50.axlehole2 -> p3705-29.axle4 LOCKED
+CONNECT p59443-51.axlehole2 -> p3705-30.axle4 LOCKED
+WHY Adds paired grey axle extensions, black spacers and axle connectors to the open ends of the rack.
 
