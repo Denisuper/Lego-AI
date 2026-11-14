@@ -7471,27 +7471,27 @@ CONNECT p6636-6.? -> p3034-2.? STIFF
 WHY Adds an olive six-stud tile along each end of the hood insert.
 
 STEP 736
-ADD p85984-27 85984 olivegreen
-ADD p85984-28 85984 olivegreen
-ADD p85984-29 85984 olivegreen
-ADD p85984-30 85984 olivegreen
-ADD p85984-31 85984 olivegreen
-ADD p85984-32 85984 olivegreen
-ADD p85984-33 85984 olivegreen
-ADD p85984-34 85984 olivegreen
-ADD p85984-35 85984 olivegreen
-ADD p85984-36 85984 olivegreen
-CONNECT p85984-27.? -> p3036-1.? STIFF
-CONNECT p85984-28.? -> p3036-1.? STIFF
-CONNECT p85984-29.? -> p3036-1.? STIFF
-CONNECT p85984-30.? -> p3036-1.? STIFF
-CONNECT p85984-31.? -> p3036-1.? STIFF
-CONNECT p85984-32.? -> p3036-1.? STIFF
-CONNECT p85984-33.? -> p3036-1.? STIFF
-CONNECT p85984-34.? -> p3036-1.? STIFF
-CONNECT p85984-35.? -> p3036-1.? STIFF
-CONNECT p85984-36.? -> p3036-1.? STIFF
-WHY Covers the exposed side rows with ten olive slopes to finish the rounded edges of the hood insert.
+ADD p15068-8 15068 olivegreen
+ADD p15068-9 15068 olivegreen
+ADD p15068-10 15068 olivegreen
+ADD p15068-11 15068 olivegreen
+ADD p15068-12 15068 olivegreen
+ADD p15068-13 15068 olivegreen
+ADD p15068-14 15068 olivegreen
+ADD p15068-15 15068 olivegreen
+ADD p15068-16 15068 olivegreen
+ADD p15068-17 15068 olivegreen
+CONNECT p15068-8.? -> p3036-1.? STIFF
+CONNECT p15068-9.? -> p3036-1.? STIFF
+CONNECT p15068-10.? -> p3036-1.? STIFF
+CONNECT p15068-11.? -> p3036-1.? STIFF
+CONNECT p15068-12.? -> p3036-1.? STIFF
+CONNECT p15068-13.? -> p3036-1.? STIFF
+CONNECT p15068-14.? -> p3036-1.? STIFF
+CONNECT p15068-15.? -> p3036-1.? STIFF
+CONNECT p15068-16.? -> p3036-1.? STIFF
+CONNECT p15068-17.? -> p3036-1.? STIFF
+WHY Covers the exposed side rows with ten olive curved bricks to finish the rounded edges of the hood insert.
 
 STEP 737
 END
@@ -7587,4 +7587,229 @@ STEP 748
 ADD p61184-3 61184 lightgray
 CONNECT p61184-3.pin1 -> p32524-18.? TURNS
 WHY Adds a grey half pin with bar extension at the front end of the installed side rail.
+
+STEP 749
+ADD p46882-3 46882 olivegreen
+CONNECT p6558-146.pin3 -> p46882-3.? STIFF
+CONNECT p6558-147.pin3 -> p46882-3.? STIFF
+WHY Fits the olive wheel-arch panel onto the first fender rail around the front wheel opening.
+
+STEP 750
+ADD p3034-3 3034 olivegreen
+ADD p3666-5 3666 olivegreen
+ADD p85984-27 85984 olivegreen
+ADD p85984-28 85984 olivegreen
+ADD p85984-29 85984 olivegreen
+ADD p85984-30 85984 olivegreen
+ADD p85984-31 85984 olivegreen
+ADD p54200-7 54200 olivegreen
+CONNECT p3666-5.? -> p3034-3.? STIFF
+CONNECT p85984-27.? -> p3034-3.? STIFF
+CONNECT p85984-28.? -> p3034-3.? STIFF
+CONNECT p85984-29.? -> p3034-3.? STIFF
+CONNECT p85984-30.? -> p3034-3.? STIFF
+CONNECT p85984-31.? -> p3666-5.? STIFF
+CONNECT p54200-7.? -> p3666-5.? STIFF
+CONNECT p3034-3.? -> p4274-57.? STIFF
+WHY Builds a long olive sloped strip from plates and slopes and presses it onto the top of the front fender.
+
+STEP 751
+ADD p26601-1 26601 olivegreen
+ADD p54200-8 54200 olivegreen
+ADD p85984-32 85984 olivegreen
+CONNECT p54200-8.? -> p26601-1.? STIFF
+CONNECT p85984-32.? -> p26601-1.? STIFF
+CONNECT p26601-1.? -> p61184-3.? STIFF
+WHY Builds the small olive corner trim and fits it at the front end of the fender.
+
+STEP 752
+GROUP first-hood-side-trim
+ADD p32278-14 32278 olivegreen
+ADD p2780-250 2780 black
+ADD p2780-251 2780 black
+ADD p3673-3 3673 lightgray
+ADD p3673-4 3673 lightgray
+CONNECT p2780-250.pin1 -> p32278-14.? STIFF
+CONNECT p2780-251.pin1 -> p32278-14.? STIFF
+CONNECT p3673-3.pin1 -> p32278-14.? TURNS
+CONNECT p3673-4.pin1 -> p32278-14.? TURNS
+WHY Starts the first hood side trim with an olive fifteen-hole beam, four pins, and sticker 2.
+
+STEP 753
+ADD p32524-19 32524 olivegreen
+ADD p2780-252 2780 black
+ADD p2780-253 2780 black
+CONNECT p2780-252.pin1 -> p32524-19.? STIFF
+CONNECT p2780-253.pin1 -> p32524-19.? STIFF
+CONNECT p2780-250.pin2 -> p32524-19.? STIFF
+CONNECT p2780-251.pin2 -> p32524-19.? STIFF
+WHY Adds an olive seven-hole beam bearing sticker 13 to the long trim beam.
+
+STEP 754
+ADD p32526-14 32526 olivegreen
+ADD p32291-6 32291 red
+ADD p4519-60 4519 lightgray
+ADD p2780-254 2780 black
+ADD p2780-255 2780 black
+CONNECT p4519-60.axle1 -> p32291-6.axlehole1 LOCKED
+CONNECT p2780-254.pin1 -> p32291-6.hole1 STIFF
+CONNECT p2780-255.pin1 -> p32291-6.hole2 STIFF
+CONNECT p2780-254.pin2 -> p32526-14.? STIFF
+CONNECT p2780-255.pin2 -> p32526-14.? STIFF
+CONNECT p32526-14.? -> p32278-14.? STIFF
+WHY Builds the olive L-shaped mounting support with a red connector and grey axle, applies sticker 32, and fits it beneath the trim.
+
+STEP 755
+GROUP first-windscreen-pillar
+ADD p40490-23 40490 black
+ADD p3673-5 3673 lightgray
+ADD p3673-6 3673 lightgray
+CONNECT p3673-5.pin1 -> p40490-23.? TURNS
+CONNECT p3673-6.pin1 -> p40490-23.? TURNS
+WHY Starts the windscreen pillar with a black nine-hole beam and two grey frictionless pins.
+
+STEP 756
+ADD p6636-7 6636 black
+CONNECT p6636-7.? -> p40490-23.? STIFF
+WHY Applies sticker 21 to a black six-stud tile and fits it along the pillar beam.
+
+STEP 757
+ADD p32278-15 32278 olivegreen
+ADD p3673-7 3673 lightgray
+CONNECT p3673-5.pin2 -> p32278-15.? TURNS
+CONNECT p3673-6.pin2 -> p32278-15.? TURNS
+CONNECT p3673-7.pin1 -> p32278-15.? TURNS
+WHY Joins an olive fifteen-hole beam to the black windscreen pillar and adds another grey frictionless pin.
+
+STEP 758
+END
+ATTACH first-windscreen-pillar
+CONNECT p3673-7.pin2 -> p32278-14.? TURNS
+WHY Attaches the pillar assembly to the first hood side trim while retaining the hinge movement shown in the booklet.
+
+STEP 759
+ADD p4519-61 4519 lightgray
+ADD p6558-148 6558 blue
+ADD p60483-68 60483 olivegreen
+CONNECT p4519-61.axle1 -> p60483-68.axlehole1 LOCKED
+CONNECT p6558-148.pin1 -> p60483-68.hole1 STIFF
+CONNECT p6558-148.pin2 -> p32278-14.? STIFF
+WHY Adds an olive connector with a grey axle and blue long pin to the front end of the trim.
+
+STEP 760
+ADD p60483-69 60483 olivegreen
+ADD p18654-54 18654 olivegreen
+CONNECT p60483-69.axlehole1 -> p4519-61.axle2 LOCKED
+CONNECT p18654-54.hole1 -> p6558-148.pin3 STIFF
+WHY Caps the front trim connection with an olive two-hole connector and an olive round spacer.
+
+STEP 761
+END
+ATTACH first-hood-side-trim
+CONNECT p4519-60.axle3 -> p32524-18.? TURNS
+WHY Positions the first hood side trim over the fender and fits its lower mounting axle to the front body.
+
+STEP 762
+CONNECT p40490-23.? -> p64782-7.? STIFF
+WHY Raises the hinged black windscreen pillar to meet the roof edge.
+
+STEP 763
+ADD p4519-62 4519 lightgray
+CONNECT p4519-62.axle1 -> p32524-17.? TURNS
+WHY Inserts a grey three-stud axle into the front body at the base of the windscreen pillar.
+
+STEP 764
+GROUP second-front-fender-rail
+ADD p2780-256 2780 black
+ADD p60483-70 60483 black
+CONNECT p2780-256.pin1 -> p60483-70.hole1 STIFF
+WHY Starts the front fender rail with a black two-hole connector and a black friction pin.
+
+STEP 765
+ADD p6587-6 6587 darktan
+ADD p32524-20 32524 olivegreen
+CONNECT p6587-6.axle1 -> p60483-70.axlehole1 LOCKED
+CONNECT p6587-6.axle2 -> p32524-20.hole7 TURNS
+CONNECT p2780-256.pin2 -> p32524-20.hole6~ STIFF
+WHY Fits an olive seven-hole beam over the black connector and tan stop axle.
+
+STEP 766
+ADD p22961-15 22961 black
+ADD p32034-33 32034 black
+CONNECT p22961-15.axle1 -> p32034-33.axlehole1 LOCKED
+CONNECT p32034-33.axlehole2 -> p6587-6.axle3 LOCKED
+WHY Adds a black vertical connector and perpendicular pin hub under the fender rail end.
+
+STEP 767
+ADD p32184-51 32184 darkgray
+ADD p43093-97 43093 blue
+ADD p43093-98 43093 blue
+CONNECT p43093-97.axle1 -> p32184-51.axlehole1 LOCKED
+CONNECT p43093-98.axle1 -> p32184-51.axlehole2 LOCKED
+CONNECT p43093-97.pin1 -> p32524-20.hole3~ STIFF
+CONNECT p43093-98.pin1 -> p32524-20.hole5~ STIFF
+WHY Attaches a grey perpendicular connector beneath the olive rail using two blue axle pins.
+
+STEP 768
+ADD p32316-36 32316 black
+ADD p2780-257 2780 black
+ADD p2780-258 2780 black
+CONNECT p2780-257.pin1 -> p32316-36.hole4 STIFF
+CONNECT p2780-258.pin1 -> p32316-36.hole5 STIFF
+CONNECT p2780-257.pin2 -> p32524-20.hole1~ STIFF
+CONNECT p2780-258.pin2 -> p32524-20.hole2~ STIFF
+WHY Extends the rail with a black five-hole beam attached underneath by two friction pins.
+
+STEP 769
+ADD p32524-21 32524 olivegreen
+ADD p2780-259 2780 black
+ADD p2780-260 2780 black
+CONNECT p2780-259.pin1 -> p32524-21.hole6~ STIFF
+CONNECT p2780-260.pin1 -> p32524-21.hole7~ STIFF
+CONNECT p2780-259.pin2 -> p32316-36.hole1~ STIFF
+CONNECT p2780-260.pin2 -> p32316-36.hole3~ STIFF
+WHY Extends the upper olive rail with a second seven-hole beam.
+
+STEP 770
+ADD p32184-52 32184 darkgray
+ADD p43093-99 43093 blue
+ADD p43093-100 43093 blue
+CONNECT p43093-99.axle1 -> p32184-52.axlehole1 LOCKED
+CONNECT p43093-100.axle1 -> p32184-52.axlehole2 LOCKED
+CONNECT p43093-99.pin1 -> p32524-21.hole2~ STIFF
+CONNECT p43093-100.pin1 -> p32524-21.hole4~ STIFF
+WHY Adds a second grey connector beneath the extended rail with two blue axle pins.
+
+STEP 771
+ADD p4274-60 4274 lightgray
+ADD p4274-61 4274 lightgray
+ADD p4274-62 4274 lightgray
+CONNECT p4274-60.pin1 -> p32524-20.? TURNS
+CONNECT p4274-61.pin1 -> p32524-21.? TURNS
+CONNECT p4274-62.pin1 -> p32524-21.? TURNS
+WHY Inserts three grey half pins in the top of the rail for later bodywork.
+
+STEP 772
+ADD p6558-149 6558 blue
+ADD p6558-150 6558 blue
+CONNECT p6558-149.pin1 -> p32184-51.hole1 STIFF
+CONNECT p6558-150.pin1 -> p32184-52.hole1 STIFF
+WHY Adds two blue long pins to the side-facing holes of the fender rail connectors.
+
+STEP 773
+END
+ATTACH second-front-fender-rail
+CONNECT p22961-15.? -> p32316-30.? STIFF
+WHY Fits the completed second fender rail to the side of the front chassis; the mounting interface is not fully visible.
+
+STEP 774
+ADD p61184-4 61184 lightgray
+CONNECT p61184-4.pin1 -> p32524-21.? TURNS
+WHY Adds a grey half pin with bar extension at the front end of the installed side rail.
+
+STEP 775
+ADD p46882-4 46882 olivegreen
+CONNECT p6558-149.pin3 -> p46882-4.? STIFF
+CONNECT p6558-150.pin3 -> p46882-4.? STIFF
+WHY Fits the olive wheel-arch panel onto the second fender rail around the front wheel opening.
 
