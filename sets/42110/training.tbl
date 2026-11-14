@@ -7319,3 +7319,272 @@ CONNECT p6558-142.pin1 -> p32316-33.hole1 STIFF
 CONNECT p6558-142.pin2 -> p32525-18.? STIFF
 WHY Adds an olive five-hole beam to the end of the hood on a blue long pin.
 
+STEP 721
+ADD p32000-4 32000 darkgray
+ADD p32000-5 32000 darkgray
+ADD p2780-229 2780 black
+ADD p2780-230 2780 black
+ADD p2780-231 2780 black
+ADD p2780-232 2780 black
+CONNECT p2780-229.pin1 -> p32000-4.? STIFF
+CONNECT p2780-230.pin1 -> p32000-4.? STIFF
+CONNECT p2780-231.pin1 -> p32000-5.? STIFF
+CONNECT p2780-232.pin1 -> p32000-5.? STIFF
+CONNECT p2780-229.pin2 -> p32525-17.? STIFF
+CONNECT p2780-230.pin2 -> p32525-17.? STIFF
+CONNECT p2780-231.pin2 -> p32525-18.? STIFF
+CONNECT p2780-232.pin2 -> p32525-18.? STIFF
+WHY Fits a grey two-hole Technic brick to each side of the hood using four black friction pins.
+
+STEP 722
+ADD p32000-6 32000 darkgray
+ADD p32000-7 32000 darkgray
+ADD p6558-143 6558 blue
+ADD p6558-144 6558 blue
+CONNECT p6558-143.pin1 -> p32000-6.? STIFF
+CONNECT p6558-144.pin1 -> p32000-7.? STIFF
+CONNECT p6558-143.pin2 -> p32525-17.? STIFF
+CONNECT p6558-144.pin2 -> p32525-18.? STIFF
+WHY Adds another grey two-hole brick and a blue long pin at each side of the hood.
+
+STEP 723
+ADD p2780-233 2780 black
+ADD p2780-234 2780 black
+ADD p18654-50 18654 olivegreen
+ADD p18654-51 18654 olivegreen
+CONNECT p2780-233.pin1 -> p18654-50.hole1 STIFF
+CONNECT p2780-234.pin1 -> p18654-51.hole1 STIFF
+CONNECT p2780-233.pin2 -> p64782-8.? STIFF
+CONNECT p2780-234.pin2 -> p64782-8.? STIFF
+WHY Places an olive round connector on each end of the hood panel using black friction pins.
+
+STEP 724
+ADD p32525-19 32525 olivegreen
+ADD p2780-235 2780 black
+ADD p2780-236 2780 black
+CONNECT p6558-140.pin3 -> p32525-19.? STIFF
+CONNECT p6558-141.pin3 -> p32525-19.? STIFF
+CONNECT p2780-235.pin1 -> p32525-19.hole1 STIFF
+CONNECT p2780-236.pin1 -> p32525-19.hole11 STIFF
+WHY Adds an outer olive eleven-hole beam to the hood side and inserts black pins at its ends.
+
+STEP 725
+ADD p2780-237 2780 black
+ADD p2780-238 2780 black
+CONNECT p2780-237.pin1 -> p32525-17.? STIFF
+CONNECT p2780-238.pin1 -> p32525-18.? STIFF
+WHY Adds two black friction pins to the front corners of the hood to receive the curved leading panel.
+
+STEP 726
+ADD p62531-3 62531 olivegreen
+ADD p2780-239 2780 black
+ADD p2780-240 2780 black
+CONNECT p2780-239.pin1 -> p62531-3.? STIFF
+CONNECT p2780-240.pin1 -> p62531-3.? STIFF
+CONNECT p2780-237.pin2 -> p62531-3.? STIFF
+CONNECT p2780-238.pin2 -> p62531-3.? STIFF
+WHY Applies sticker 7 to the curved olive panel and fixes it across the front of the hood.
+
+STEP 727
+ADD p4274-55 4274 lightgray
+ADD p4274-56 4274 lightgray
+ADD p98138-11 98138 black
+ADD p98138-12 98138 black
+CONNECT p98138-11.? -> p4274-55.? STIFF
+CONNECT p98138-12.? -> p4274-56.? STIFF
+CONNECT p4274-55.pin1 -> p62531-3.? TURNS
+CONNECT p4274-56.pin1 -> p62531-3.? TURNS
+WHY Adds two black round caps on grey half pins to the hood leading panel.
+
+STEP 728
+ADD p41239-16 41239 olivegreen
+ADD p18654-52 18654 olivegreen
+ADD p2780-241 2780 black
+CONNECT p2780-241.pin1 -> p41239-16.hole13 STIFF
+CONNECT p2780-241.pin2 -> p18654-52.hole1 STIFF
+CONNECT p41239-16.? -> p2780-235.pin2 STIFF
+CONNECT p41239-16.? -> p2780-236.pin2 STIFF
+WHY Adds a long olive outer beam and round end connector to the side of the hood.
+
+STEP 729
+END
+ATTACH defender-hood
+CONNECT p6558-143.pin3 -> p32140-37.? STIFF
+CONNECT p6558-144.pin3 -> p32140-38.? STIFF
+WHY Lowers the completed hood onto the vehicle and fits its rear hinge pins to the side brackets.
+
+STEP 730
+ADD p6558-145 6558 blue
+ADD p32316-34 32316 olivegreen
+CONNECT p6558-145.pin1 -> p32316-34.hole1 STIFF
+CONNECT p6558-145.pin2 -> p32525-17.? STIFF
+WHY Adds the matching olive five-hole beam to the other side of the hood on a blue long pin.
+
+STEP 731
+ADD p32525-20 32525 olivegreen
+ADD p41239-17 41239 olivegreen
+ADD p18654-53 18654 olivegreen
+ADD p2780-242 2780 black
+ADD p2780-243 2780 black
+ADD p2780-244 2780 black
+CONNECT p2780-242.pin1 -> p41239-17.? STIFF
+CONNECT p2780-243.pin1 -> p41239-17.? STIFF
+CONNECT p2780-244.pin1 -> p41239-17.? STIFF
+CONNECT p2780-242.pin2 -> p32525-20.? STIFF
+CONNECT p2780-243.pin2 -> p32525-20.? STIFF
+CONNECT p2780-244.pin2 -> p18654-53.hole1 STIFF
+CONNECT p32525-20.? -> p6558-145.pin3 STIFF
+WHY Builds the matching olive outer hood rail with its round end connector and fixes it to the other side of the hood.
+
+STEP 732
+GROUP hood-tile-insert
+ADD p3036-1 3036 lightgray
+WHY Starts the hood's tiled insert with a grey six-by-eight plate.
+
+STEP 733
+ADD p87079-1 87079 olivegreen
+ADD p87079-2 87079 olivegreen
+ADD p87079-3 87079 olivegreen
+ADD p87079-4 87079 olivegreen
+ADD p87079-5 87079 olivegreen
+ADD p87079-6 87079 olivegreen
+CONNECT p87079-1.? -> p3036-1.? STIFF
+CONNECT p87079-2.? -> p3036-1.? STIFF
+CONNECT p87079-3.? -> p3036-1.? STIFF
+CONNECT p87079-4.? -> p3036-1.? STIFF
+CONNECT p87079-5.? -> p3036-1.? STIFF
+CONNECT p87079-6.? -> p3036-1.? STIFF
+WHY Covers the central area of the grey plate with six olive two-by-four tiles.
+
+STEP 734
+ADD p3034-1 3034 olivegreen
+ADD p3034-2 3034 olivegreen
+CONNECT p3034-1.? -> p3036-1.? STIFF
+CONNECT p3034-2.? -> p3036-1.? STIFF
+WHY Adds an olive two-by-eight plate along each end of the tiled insert.
+
+STEP 735
+ADD p6636-5 6636 olivegreen
+ADD p6636-6 6636 olivegreen
+CONNECT p6636-5.? -> p3034-1.? STIFF
+CONNECT p6636-6.? -> p3034-2.? STIFF
+WHY Adds an olive six-stud tile along each end of the hood insert.
+
+STEP 736
+ADD p85984-27 85984 olivegreen
+ADD p85984-28 85984 olivegreen
+ADD p85984-29 85984 olivegreen
+ADD p85984-30 85984 olivegreen
+ADD p85984-31 85984 olivegreen
+ADD p85984-32 85984 olivegreen
+ADD p85984-33 85984 olivegreen
+ADD p85984-34 85984 olivegreen
+ADD p85984-35 85984 olivegreen
+ADD p85984-36 85984 olivegreen
+CONNECT p85984-27.? -> p3036-1.? STIFF
+CONNECT p85984-28.? -> p3036-1.? STIFF
+CONNECT p85984-29.? -> p3036-1.? STIFF
+CONNECT p85984-30.? -> p3036-1.? STIFF
+CONNECT p85984-31.? -> p3036-1.? STIFF
+CONNECT p85984-32.? -> p3036-1.? STIFF
+CONNECT p85984-33.? -> p3036-1.? STIFF
+CONNECT p85984-34.? -> p3036-1.? STIFF
+CONNECT p85984-35.? -> p3036-1.? STIFF
+CONNECT p85984-36.? -> p3036-1.? STIFF
+WHY Covers the exposed side rows with ten olive slopes to finish the rounded edges of the hood insert.
+
+STEP 737
+END
+ATTACH hood-tile-insert
+CONNECT p3036-1.? -> p64782-8.? STIFF
+WHY Presses the completed tiled insert onto the centre of the hood.
+
+STEP 738
+GROUP first-front-fender-rail
+ADD p2780-245 2780 black
+ADD p60483-67 60483 black
+CONNECT p2780-245.pin1 -> p60483-67.hole1 STIFF
+WHY Starts the front fender rail with a black two-hole connector and a black friction pin.
+
+STEP 739
+ADD p6587-5 6587 darktan
+ADD p32524-17 32524 olivegreen
+CONNECT p6587-5.axle1 -> p60483-67.axlehole1 LOCKED
+CONNECT p6587-5.axle2 -> p32524-17.hole7 TURNS
+CONNECT p2780-245.pin2 -> p32524-17.hole6~ STIFF
+WHY Fits an olive seven-hole beam over the black connector and tan stop axle.
+
+STEP 740
+ADD p22961-14 22961 black
+ADD p32034-32 32034 black
+CONNECT p22961-14.axle1 -> p32034-32.axlehole1 LOCKED
+CONNECT p32034-32.axlehole2 -> p6587-5.axle3 LOCKED
+WHY Adds a black vertical connector and perpendicular pin hub under the fender rail end.
+
+STEP 741
+ADD p32184-49 32184 darkgray
+ADD p43093-93 43093 blue
+ADD p43093-94 43093 blue
+CONNECT p43093-93.axle1 -> p32184-49.axlehole1 LOCKED
+CONNECT p43093-94.axle1 -> p32184-49.axlehole2 LOCKED
+CONNECT p43093-93.pin1 -> p32524-17.hole3~ STIFF
+CONNECT p43093-94.pin1 -> p32524-17.hole5~ STIFF
+WHY Attaches a grey perpendicular connector beneath the olive rail using two blue axle pins.
+
+STEP 742
+ADD p32316-35 32316 black
+ADD p2780-246 2780 black
+ADD p2780-247 2780 black
+CONNECT p2780-246.pin1 -> p32316-35.hole4 STIFF
+CONNECT p2780-247.pin1 -> p32316-35.hole5 STIFF
+CONNECT p2780-246.pin2 -> p32524-17.hole1~ STIFF
+CONNECT p2780-247.pin2 -> p32524-17.hole2~ STIFF
+WHY Extends the rail with a black five-hole beam attached underneath by two friction pins.
+
+STEP 743
+ADD p32524-18 32524 olivegreen
+ADD p2780-248 2780 black
+ADD p2780-249 2780 black
+CONNECT p2780-248.pin1 -> p32524-18.hole6~ STIFF
+CONNECT p2780-249.pin1 -> p32524-18.hole7~ STIFF
+CONNECT p2780-248.pin2 -> p32316-35.hole1~ STIFF
+CONNECT p2780-249.pin2 -> p32316-35.hole3~ STIFF
+WHY Extends the upper olive rail with a second seven-hole beam.
+
+STEP 744
+ADD p32184-50 32184 darkgray
+ADD p43093-95 43093 blue
+ADD p43093-96 43093 blue
+CONNECT p43093-95.axle1 -> p32184-50.axlehole1 LOCKED
+CONNECT p43093-96.axle1 -> p32184-50.axlehole2 LOCKED
+CONNECT p43093-95.pin1 -> p32524-18.hole2~ STIFF
+CONNECT p43093-96.pin1 -> p32524-18.hole4~ STIFF
+WHY Adds a second grey connector beneath the extended rail with two blue axle pins.
+
+STEP 745
+ADD p4274-57 4274 lightgray
+ADD p4274-58 4274 lightgray
+ADD p4274-59 4274 lightgray
+CONNECT p4274-57.pin1 -> p32524-17.? TURNS
+CONNECT p4274-58.pin1 -> p32524-18.? TURNS
+CONNECT p4274-59.pin1 -> p32524-18.? TURNS
+WHY Inserts three grey half pins in the top of the rail for later bodywork.
+
+STEP 746
+ADD p6558-146 6558 blue
+ADD p6558-147 6558 blue
+CONNECT p6558-146.pin1 -> p32184-49.hole1 STIFF
+CONNECT p6558-147.pin1 -> p32184-50.hole1 STIFF
+WHY Adds two blue long pins to the side-facing holes of the fender rail connectors.
+
+STEP 747
+END
+ATTACH first-front-fender-rail
+CONNECT p22961-14.? -> p32316-30.? STIFF
+WHY Fits the completed first fender rail to the side of the front chassis; the mounting interface is not fully visible.
+
+STEP 748
+ADD p61184-3 61184 lightgray
+CONNECT p61184-3.pin1 -> p32524-18.? TURNS
+WHY Adds a grey half pin with bar extension at the front end of the installed side rail.
+
