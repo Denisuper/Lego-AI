@@ -6772,8 +6772,7 @@ CONNECT p43093-83.axle1 -> p41677-15.axlehole1 LOCKED
 CONNECT p4519-56.axle1 -> p41677-15.axlehole2 LOCKED
 CONNECT p43093-83.pin1 -> p32140-31.hole1~ STIFF
 CONNECT p4519-56.axle2 -> p32140-31.axlehole1 LOCKED
-CONNECT p4519-56.axle3 -> p6536-54.axlehole1~ LOCKED
-WHY Builds the number-1 black corner panel with its grey L-beam and blue axle-pin bracket, then fits the grey axle into the front bumper support.
+WHY Builds the number-1 black corner panel with its grey L-beam and blue axle-pin bracket, then fits the assembly to the front bumper; the bumper receiving point is unresolved.
 
 STEP 667
 ADD p87086-3 87086 black
@@ -6791,8 +6790,7 @@ CONNECT p43093-84.axle1 -> p41677-16.axlehole1 LOCKED
 CONNECT p4519-57.axle1 -> p41677-16.axlehole2 LOCKED
 CONNECT p43093-84.pin1 -> p32140-32.hole1~ STIFF
 CONNECT p4519-57.axle2 -> p32140-32.axlehole1 LOCKED
-CONNECT p4519-57.axle3 -> p6536-53.axlehole1~ LOCKED
-WHY Builds the mirrored number-2 black corner panel and its grey and blue support, then fits it to the other end of the front bumper.
+WHY Builds the mirrored number-2 black corner panel and its grey and blue support, then fits it to the other end of the front bumper; the receiving point is unresolved.
 
 STEP 668
 ADD p43093-85 43093 blue
@@ -6878,8 +6876,6 @@ WHY Caps the two upright bumper axles with black two-hole connectors.
 STEP 673
 END
 ATTACH front-lower-bumper
-CONNECT p32054-45.pin1 -> p32525-14.? STIFF
-CONNECT p32054-46.pin1 -> p32525-14.? STIFF
 WHY Brings the completed front bumper to the vehicle and presses its two rear mounting pins into the front chassis, aligning the orange winch element with the bumper opening.
 
 STEP 674
@@ -6951,4 +6947,209 @@ CONNECT p2780-217.pin2 -> p60483-60.hole1 STIFF
 CONNECT p60483-59.axlehole1 -> p32073-15.axle3 LOCKED
 CONNECT p60483-60.axlehole1 -> p32073-15.axle4 LOCKED
 WHY Joins two olive connectors with a black friction pin and slides them over the yellow axle above the spacer.
+
+STEP 680
+ADD p2723-1 2723 black
+ADD p27940-6 27940 darkgray
+ADD p27940-7 27940 darkgray
+ADD p41677-17 41677 blue
+ADD p4740-1 4740 transclear
+ADD p4274-53 4274 lightgray
+ADD p6632-10 6632 black
+ADD p87994-1 87994 black
+ADD p2780-218 2780 black
+ADD p98138-9 98138 black
+CONNECT p27940-6.axle1 -> p6632-10.axlehole1 LOCKED
+CONNECT p27940-7.axle1 -> p6632-10.axlehole2 LOCKED
+CONNECT p27940-6.axle2 -> p41677-17.axlehole1 LOCKED
+CONNECT p27940-7.axle2 -> p41677-17.axlehole2 LOCKED
+CONNECT p2780-218.pin1 -> p27940-6.hole1 STIFF
+CONNECT p4274-53.pin1 -> p27940-7.hole1 TURNS
+CONNECT p98138-9.? -> p4274-53.? STIFF
+CONNECT p87994-1.? -> p4740-1.? STIFF
+CONNECT p2723-1.? -> p87994-1.? STIFF
+CONNECT p87994-1.? -> p2780-218.? STIFF
+CONNECT p6632-10.? -> p3705-19.axle3 LOCKED
+WHY Builds the round headlamp from the black disc, clear dish and connector support, adds sticker 33, and fits it to the black axle.
+
+STEP 681
+ADD p3068b-4 3068b black
+ADD p6541-1 6541 black
+ADD p6541-2 6541 black
+ADD p6587-3 6587 darktan
+CONNECT p6541-1.? -> p6541-2.? STIFF
+CONNECT p3068b-4.? -> p6541-1.? STIFF
+CONNECT p3068b-4.? -> p6541-2.? STIFF
+CONNECT p6587-3.axle1 -> p6541-1.? TURNS
+CONNECT p6587-3.axle2 -> p6541-2.? TURNS
+CONNECT p6587-3.axle3 -> p32250-1.? TURNS
+WHY Builds the black headlight-side detail with sticker 18 and supports it with a tan stop axle.
+
+STEP 682
+ADD p6632-11 6632 black
+CONNECT p6632-11.axlehole1 -> p27940-6.axle2 LOCKED
+CONNECT p6632-11.axlehole2 -> p27940-7.axle2 LOCKED
+WHY Caps the two headlight connector axles with a thin black three-stud beam.
+
+STEP 683
+ADD p2780-219 2780 black
+ADD p42003-28 42003 lightgray
+ADD p42003-29 42003 lightgray
+CONNECT p2780-219.pin1 -> p42003-28.hole1~ STIFF
+CONNECT p2780-219.pin2 -> p42003-29.hole1~ STIFF
+CONNECT p42003-28.axlehole1 -> p3705-19.axle4 LOCKED
+WHY Joins two grey perpendicular connectors and slides the pair onto the black upright axle behind the lamp.
+
+STEP 684
+ADD p3705-20 3705 black
+ADD p6632-12 6632 black
+ADD p60483-61 60483 olivegreen
+CONNECT p3705-20.axle1 -> p60483-61.axlehole1 LOCKED
+CONNECT p3705-20.axle2 -> p6632-12.axlehole1 LOCKED
+CONNECT p6632-12.axlehole2 -> p3705-19.axle4 LOCKED
+WHY Adds a second black upright axle on an olive connector and a thin black beam at the outside of the headlamp.
+
+STEP 685
+ADD p18654-44 18654 black
+ADD p60483-62 60483 olivegreen
+CONNECT p60483-62.axlehole1 -> p3705-20.axle3 LOCKED
+CONNECT p18654-44.hole1 -> p3705-19.axle4 TURNS
+WHY Fits an olive connector and a black round spacer over the upright axles above the headlamp.
+
+STEP 686
+ADD p18654-45 18654 black
+ADD p18654-46 18654 black
+ADD p6558-136 6558 blue
+ADD p32250-2 32250 olivegreen
+ADD p32250-3 32250 olivegreen
+CONNECT p6558-136.pin1 -> p18654-45.hole1 STIFF
+CONNECT p6558-136.pin2 -> p18654-46.hole1 STIFF
+CONNECT p6558-136.pin3 -> p32250-2.? STIFF
+CONNECT p6558-136.pin3 -> p32250-3.? STIFF
+CONNECT p32250-2.? -> p32073-15.axle5 TURNS
+CONNECT p32250-3.? -> p3705-19.axle4 TURNS
+WHY Stacks two curved olive frames with a blue pin and black spacers, then adds them over the light to form the upper corner.
+
+STEP 687
+ADD p11946-7 11946 olivegreen
+CONNECT p11946-7.? -> p32073-15.axle5 TURNS
+WHY Fits the upright number-21 olive fairing to the yellow axle at the outer end of the light assembly.
+
+STEP 688
+END
+ATTACH front-first-headlight
+CONNECT p42003-28.? -> p43093-79.? STIFF
+CONNECT p42003-29.? -> p43093-80.? STIFF
+WHY Attaches the completed first headlight and olive corner assembly to the front of the vehicle.
+
+STEP 689
+GROUP front-second-headlight
+ADD p32250-4 32250 olivegreen
+ADD p32073-16 32073 yellow
+ADD p3705-21 3705 black
+CONNECT p32073-16.axle1 -> p32250-4.? TURNS
+CONNECT p3705-21.axle1 -> p32250-4.? TURNS
+WHY Starts the mirrored front light assembly with an olive curved frame and two vertical axles.
+
+STEP 690
+ADD p32123b-42 32123b lightgray
+CONNECT p32123b-42.axlehole1 -> p32073-16.axle2 LOCKED
+WHY Slides a grey half bush down the yellow axle as a spacer for the light assembly.
+
+STEP 691
+ADD p2780-220 2780 black
+ADD p60483-63 60483 olivegreen
+ADD p60483-64 60483 olivegreen
+CONNECT p2780-220.pin1 -> p60483-63.hole1 STIFF
+CONNECT p2780-220.pin2 -> p60483-64.hole1 STIFF
+CONNECT p60483-63.axlehole1 -> p32073-16.axle3 LOCKED
+CONNECT p60483-64.axlehole1 -> p32073-16.axle4 LOCKED
+WHY Joins two olive connectors with a black friction pin and slides them over the yellow axle above the spacer.
+
+STEP 692
+ADD p2723-2 2723 black
+ADD p27940-8 27940 darkgray
+ADD p27940-9 27940 darkgray
+ADD p41677-18 41677 blue
+ADD p4740-2 4740 transclear
+ADD p4274-54 4274 lightgray
+ADD p6632-13 6632 black
+ADD p87994-2 87994 black
+ADD p2780-221 2780 black
+ADD p98138-10 98138 black
+CONNECT p27940-8.axle1 -> p6632-13.axlehole1 LOCKED
+CONNECT p27940-9.axle1 -> p6632-13.axlehole2 LOCKED
+CONNECT p27940-8.axle2 -> p41677-18.axlehole1 LOCKED
+CONNECT p27940-9.axle2 -> p41677-18.axlehole2 LOCKED
+CONNECT p2780-221.pin1 -> p27940-8.hole1 STIFF
+CONNECT p4274-54.pin1 -> p27940-9.hole1 TURNS
+CONNECT p98138-10.? -> p4274-54.? STIFF
+CONNECT p87994-2.? -> p4740-2.? STIFF
+CONNECT p2723-2.? -> p87994-2.? STIFF
+CONNECT p87994-2.? -> p2780-221.? STIFF
+CONNECT p6632-13.? -> p3705-21.axle3 LOCKED
+WHY Builds the round headlamp from the black disc, clear dish and connector support, adds sticker 33, and fits it to the black axle.
+
+STEP 693
+ADD p3068b-5 3068b black
+ADD p6541-3 6541 black
+ADD p6541-4 6541 black
+ADD p6587-4 6587 darktan
+CONNECT p6541-3.? -> p6541-4.? STIFF
+CONNECT p3068b-5.? -> p6541-3.? STIFF
+CONNECT p3068b-5.? -> p6541-4.? STIFF
+CONNECT p6587-4.axle1 -> p6541-3.? TURNS
+CONNECT p6587-4.axle2 -> p6541-4.? TURNS
+CONNECT p6587-4.axle3 -> p32250-4.? TURNS
+WHY Builds the black headlight-side detail with sticker 16 and supports it with a tan stop axle.
+
+STEP 694
+ADD p6632-14 6632 black
+CONNECT p6632-14.axlehole1 -> p27940-8.axle2 LOCKED
+CONNECT p6632-14.axlehole2 -> p27940-9.axle2 LOCKED
+WHY Caps the two headlight connector axles with a thin black three-stud beam.
+
+STEP 695
+ADD p3705-22 3705 black
+ADD p6632-15 6632 black
+ADD p60483-65 60483 olivegreen
+CONNECT p3705-22.axle1 -> p60483-65.axlehole1 LOCKED
+CONNECT p3705-22.axle2 -> p6632-15.axlehole1 LOCKED
+CONNECT p6632-15.axlehole2 -> p3705-21.axle4 LOCKED
+WHY Adds a second black upright axle on an olive connector and a thin black beam at the outside of the headlamp.
+
+STEP 696
+ADD p2780-222 2780 black
+ADD p42003-30 42003 lightgray
+ADD p42003-31 42003 lightgray
+CONNECT p2780-222.pin1 -> p42003-30.hole1~ STIFF
+CONNECT p2780-222.pin2 -> p42003-31.hole1~ STIFF
+CONNECT p42003-30.axlehole1 -> p3705-21.axle4 LOCKED
+WHY Joins two grey perpendicular connectors and slides the pair onto the black upright axle behind the lamp.
+
+STEP 697
+ADD p18654-47 18654 black
+ADD p60483-66 60483 olivegreen
+CONNECT p60483-66.axlehole1 -> p3705-22.axle3 LOCKED
+CONNECT p18654-47.hole1 -> p3705-21.axle4 TURNS
+WHY Fits an olive connector and a black round spacer over the upright axles above the headlamp.
+
+STEP 698
+ADD p18654-48 18654 black
+ADD p18654-49 18654 black
+ADD p6558-137 6558 blue
+ADD p32250-5 32250 olivegreen
+ADD p32250-6 32250 olivegreen
+CONNECT p6558-137.pin1 -> p18654-48.hole1 STIFF
+CONNECT p6558-137.pin2 -> p18654-49.hole1 STIFF
+CONNECT p6558-137.pin3 -> p32250-5.? STIFF
+CONNECT p6558-137.pin3 -> p32250-6.? STIFF
+CONNECT p32250-5.? -> p32073-16.axle5 TURNS
+CONNECT p32250-6.? -> p3705-21.axle4 TURNS
+WHY Stacks two curved olive frames with a blue pin and black spacers, then adds them over the light to form the upper corner.
+
+STEP 699
+ADD p11947-7 11947 olivegreen
+CONNECT p11947-7.? -> p32073-16.axle5 TURNS
+WHY Fits the upright number-22 olive fairing to the yellow axle at the outer end of the light assembly.
 
