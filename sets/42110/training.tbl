@@ -7153,3 +7153,169 @@ ADD p11947-7 11947 olivegreen
 CONNECT p11947-7.? -> p32073-16.axle5 TURNS
 WHY Fits the upright number-22 olive fairing to the yellow axle at the outer end of the light assembly.
 
+STEP 700
+END
+ATTACH front-second-headlight
+CONNECT p42003-30.? -> p43093-81.? STIFF
+CONNECT p42003-31.? -> p43093-82.? STIFF
+WHY Fits the mirrored headlight and olive corner assembly onto the other side of the front bumper.
+
+STEP 701
+ADD p40490-22 40490 black
+ADD p43093-89 43093 blue
+ADD p43093-90 43093 blue
+CONNECT p43093-89.pin1 -> p40490-22.hole1 STIFF
+CONNECT p43093-90.pin1 -> p40490-22.hole9 STIFF
+CONNECT p43093-89.axle1 -> p32250-2.? LOCKED
+CONNECT p43093-90.axle1 -> p32250-5.? LOCKED
+WHY Applies sticker 6 to a black nine-hole beam and mounts it across the front between the two headlight assemblies.
+
+STEP 702
+GROUP first-front-side-bracket
+ADD p32062-66 32062 red
+ADD p41677-19 41677 blue
+ADD p41677-20 41677 blue
+ADD p4519-58 4519 lightgray
+CONNECT p32062-66.axle1 -> p41677-19.axlehole1 LOCKED
+CONNECT p4519-58.axle1 -> p41677-19.axlehole2 LOCKED
+CONNECT p32062-66.axle2 -> p41677-20.axlehole1 LOCKED
+CONNECT p4519-58.axle3 -> p41677-20.axlehole2 LOCKED
+WHY Starts a small side mounting bracket with two blue thin beams joined by red and grey axles.
+
+STEP 703
+ADD p32291-4 32291 red
+ADD p6536-55 6536 darkgray
+CONNECT p6536-55.axlehole1 -> p32062-66.axle2 LOCKED
+CONNECT p32291-4.axlehole1 -> p4519-58.axle2 LOCKED
+WHY Fits a dark-grey perpendicular connector and a red double connector onto the bracket axles.
+
+STEP 704
+ADD p32039-10 32039 lightgray
+CONNECT p32039-10.axlehole2 -> p4519-58.axle3 LOCKED
+WHY Adds a grey perpendicular axle connector to the upper end of the bracket.
+
+STEP 705
+ADD p2780-223 2780 black
+ADD p43093-91 43093 blue
+CONNECT p2780-223.pin1 -> p6536-55.hole1 STIFF
+CONNECT p43093-91.axle1 -> p32039-10.axlehole1 LOCKED
+WHY Adds black and blue mounting pins facing outward from the bracket.
+
+STEP 706
+ADD p32140-37 32140 olivegreen
+CONNECT p43093-91.pin1 -> p32140-37.hole1~ STIFF
+CONNECT p2780-223.pin2 -> p32140-37.hole2~ STIFF
+WHY Fits an olive L-shaped beam to the outer ends of the bracket pins.
+
+STEP 707
+ADD p2780-224 2780 black
+ADD p2780-225 2780 black
+CONNECT p2780-224.pin1 -> p32291-4.hole1 STIFF
+CONNECT p2780-225.pin1 -> p32291-4.hole2 STIFF
+WHY Turns the bracket around and adds two black friction pins for mounting it to the body.
+
+STEP 708
+END
+ATTACH first-front-side-bracket
+WHY Fits the completed olive bracket to the near side of the vehicle at the front of the cabin; the chassis receiving holes are unresolved.
+
+STEP 709
+GROUP second-front-side-bracket
+ADD p32062-67 32062 red
+ADD p41677-21 41677 blue
+ADD p41677-22 41677 blue
+ADD p4519-59 4519 lightgray
+CONNECT p32062-67.axle1 -> p41677-21.axlehole1 LOCKED
+CONNECT p4519-59.axle1 -> p41677-21.axlehole2 LOCKED
+CONNECT p32062-67.axle2 -> p41677-22.axlehole1 LOCKED
+CONNECT p4519-59.axle3 -> p41677-22.axlehole2 LOCKED
+WHY Starts a small side mounting bracket with two blue thin beams joined by red and grey axles.
+
+STEP 710
+ADD p32291-5 32291 red
+ADD p6536-56 6536 darkgray
+CONNECT p6536-56.axlehole1 -> p32062-67.axle2 LOCKED
+CONNECT p32291-5.axlehole1 -> p4519-59.axle2 LOCKED
+WHY Fits a dark-grey perpendicular connector and a red double connector onto the bracket axles.
+
+STEP 711
+ADD p32039-11 32039 lightgray
+CONNECT p32039-11.axlehole2 -> p4519-59.axle3 LOCKED
+WHY Adds a grey perpendicular axle connector to the upper end of the bracket.
+
+STEP 712
+ADD p2780-226 2780 black
+ADD p43093-92 43093 blue
+CONNECT p2780-226.pin1 -> p6536-56.hole1 STIFF
+CONNECT p43093-92.axle1 -> p32039-11.axlehole1 LOCKED
+WHY Adds black and blue mounting pins facing outward from the bracket.
+
+STEP 713
+ADD p32140-38 32140 olivegreen
+CONNECT p43093-92.pin1 -> p32140-38.hole1~ STIFF
+CONNECT p2780-226.pin2 -> p32140-38.hole2~ STIFF
+WHY Fits an olive L-shaped beam to the outer ends of the bracket pins.
+
+STEP 714
+ADD p2780-227 2780 black
+ADD p2780-228 2780 black
+CONNECT p2780-227.pin1 -> p32291-5.hole1 STIFF
+CONNECT p2780-228.pin1 -> p32291-5.hole2 STIFF
+WHY Turns the bracket around and adds two black friction pins for mounting it to the body.
+
+STEP 715
+END
+ATTACH second-front-side-bracket
+WHY Fits the completed olive bracket to the opposite side of the vehicle at the front of the cabin; the chassis receiving holes are unresolved.
+
+STEP 716
+ADD p32525-15 32525 darkgray
+ADD p32525-16 32525 darkgray
+ADD p15462-23 15462 brown
+ADD p15462-24 15462 brown
+ADD p3713-46 3713 red
+ADD p3713-47 3713 red
+CONNECT p15462-23.axle1 -> p32525-15.hole1 TURNS
+CONNECT p15462-24.axle1 -> p32525-16.hole1 TURNS
+CONNECT p3713-46.axlehole1 -> p15462-23.axle2 LOCKED
+CONNECT p3713-47.axlehole1 -> p15462-24.axle2 LOCKED
+WHY Fits a long grey beam and a brown stop axle with a red bush along each side of the engine bay.
+
+STEP 717
+ADD p61409-1 61409 black
+ADD p61409-2 61409 black
+ADD p10247-1 10247 black
+CONNECT p61409-1.? -> p10247-1.? STIFF
+CONNECT p61409-2.? -> p10247-1.? STIFF
+CONNECT p10247-1.? -> p32034-30.? STIFF
+WHY Joins two black grille slopes to a pin-hole plate and fits the vent detail into the front of the engine bay.
+
+STEP 718
+GROUP defender-hood
+ADD p64782-8 64782 olivegreen
+ADD p6558-138 6558 blue
+ADD p6558-139 6558 blue
+ADD p6558-140 6558 blue
+ADD p6558-141 6558 blue
+CONNECT p6558-138.pin1 -> p64782-8.? STIFF
+CONNECT p6558-139.pin1 -> p64782-8.? STIFF
+CONNECT p6558-140.pin1 -> p64782-8.? STIFF
+CONNECT p6558-141.pin1 -> p64782-8.? STIFF
+WHY Starts the hood with an olive panel and four blue long friction pins through its side mounting holes.
+
+STEP 719
+ADD p32525-17 32525 olivegreen
+ADD p32525-18 32525 olivegreen
+CONNECT p6558-138.pin2 -> p32525-17.? STIFF
+CONNECT p6558-139.pin2 -> p32525-17.? STIFF
+CONNECT p6558-140.pin2 -> p32525-18.? STIFF
+CONNECT p6558-141.pin2 -> p32525-18.? STIFF
+WHY Fits an olive eleven-hole beam along each side of the hood panel.
+
+STEP 720
+ADD p6558-142 6558 blue
+ADD p32316-33 32316 olivegreen
+CONNECT p6558-142.pin1 -> p32316-33.hole1 STIFF
+CONNECT p6558-142.pin2 -> p32525-18.? STIFF
+WHY Adds an olive five-hole beam to the end of the hood on a blue long pin.
+
