@@ -2582,13 +2582,14 @@ CONNECT p24316-13.axle2~ -> p6641-1.axlehole1 LOCKED
 WHY Fits the red perpendicular axle connector onto the exposed brown stopped axle, with its upper cross socket facing up as shown. The connector seats between nominal axle segments, so its depth remains estimated.
 
 STEP 252
+ADD set-sticker-sheet 65545 anycolor
 ADD p32278-3 32278 darkgray
 ADD p87082-6 87082 lightgray
 CONNECT p87082-6.pin2 -> p32278-3.hole4 STIFF
 CONNECT p3706-7.axle1 -> p32278-3.hole6 TURNS
 CONNECT p24316-13.axle1~ -> p32278-3.hole7 TURNS
 CONNECT p18651-3.pin1 -> p32278-3.hole8 STIFF
-WHY Applies sticker 27 to the dark-grey fifteen-hole beam as pictured, inserts the grey double-ended pin connector and slides the beam onto the black shaft, brown pivot axle and black axle-pin. The two shafts turn in round beam holes; brown axle depth is estimated. The sticker is taken from the set sheet and is not a separate inventory part.
+WHY Applies sticker 27 to the dark-grey fifteen-hole beam as pictured, inserts the grey double-ended pin connector and slides the beam onto the black shaft, brown pivot axle and black axle-pin. The two shafts turn in round beam holes; brown axle depth is estimated. The sticker sheet is a consumable source for this and later decals.
 
 STEP 253
 ADD p2780-60 2780 black
@@ -7676,8 +7677,6 @@ WHY Applies sticker 21 to a black six-stud tile and fits it along the pillar bea
 STEP 757
 ADD p32278-15 32278 olivegreen
 ADD p3673-7 3673 lightgray
-CONNECT p4274-63.pin2 -> p32278-15.? TURNS
-CONNECT p4274-64.pin2 -> p32278-15.? TURNS
 CONNECT p3673-7.pin1 -> p32278-15.? TURNS
 WHY Joins an olive fifteen-hole beam to the black windscreen pillar and adds another grey frictionless pin.
 
@@ -7904,8 +7903,6 @@ ADD p6636-8 6636 black
 CONNECT p6636-8.? -> p40490-24.? STIFF
 ADD p32278-17 32278 olivegreen
 ADD p3673-10 3673 lightgray
-CONNECT p4274-65.pin2 -> p32278-17.? TURNS
-CONNECT p4274-66.pin2 -> p32278-17.? TURNS
 CONNECT p3673-10.pin1 -> p32278-17.? TURNS
 CONNECT p3673-10.pin2 -> p32278-16.? TURNS
 WHY Builds the mirrored black windscreen pillar with sticker 31 and its olive support, then joins it to the hood side trim.
@@ -8396,4 +8393,313 @@ CONNECT p62462-7.hole1 -> p15462-26.axle2 TURNS
 CONNECT p11478-35.? -> p32002-10.? STIFF
 CONNECT p11478-35.? -> p43093-101.pin1 STIFF
 WHY Adds two grey cylindrical rungs and the second thin black upright to the folding ladder.
+
+STEP 833
+ADD p32062-78 32062 red
+ADD p32062-79 32062 red
+ADD p32126-9 32126 black
+ADD p32126-10 32126 black
+ADD p4519-72 4519 lightgray
+ADD p4519-73 4519 lightgray
+ADD p32034-40 32034 black
+ADD p32034-41 32034 black
+CONNECT p32062-78.axle1 -> p32126-9.axlehole1 LOCKED
+CONNECT p32062-79.axle1 -> p32126-10.axlehole1 LOCKED
+CONNECT p32062-78.axle2 -> p32034-40.axlehole1 LOCKED
+CONNECT p32062-79.axle2 -> p32034-41.axlehole1 LOCKED
+CONNECT p4519-72.axle1 -> p32034-40.axlehole2 LOCKED
+CONNECT p4519-73.axle1 -> p32034-41.axlehole2 LOCKED
+CONNECT p32034-40.hole1 -> p18651-20.pin1 STIFF
+CONNECT p32034-41.hole1 -> p43093-101.pin1 STIFF
+WHY Builds two black ladder side supports with red and grey axles and fits them to the ladder uprights.
+
+STEP 834
+ADD p4274-67 4274 lightgray
+ADD p4274-68 4274 lightgray
+ADD p98138-13 98138 black
+ADD p98138-14 98138 black
+CONNECT p98138-13.? -> p4274-67.? STIFF
+CONNECT p98138-14.? -> p4274-68.? STIFF
+CONNECT p4274-67.pin1 -> p32126-9.hole1 TURNS
+CONNECT p4274-68.pin1 -> p32126-10.hole1 TURNS
+WHY Adds black round caps on grey half pins to the lower ladder supports.
+
+STEP 835
+GROUP folding-ladder-extension
+ADD p4519-74 4519 lightgray
+ADD p18651-21 18651 black
+ADD p11478-36 11478 black
+CONNECT p4519-74.axle1 -> p11478-36.axlehole1 LOCKED
+CONNECT p18651-21.axle1 -> p11478-36.axlehole2 LOCKED
+WHY Starts the folding ladder extension with a thin black beam, a grey axle and a black axle pin.
+
+STEP 836
+ADD p32002-11 32002 tan
+ADD p32002-12 32002 tan
+ADD p62462-8 62462 lightgray
+CONNECT p32002-11.pin1 -> p62462-8.hole1 TURNS
+CONNECT p32002-12.pin1 -> p62462-8.hole1 TURNS
+CONNECT p32002-11.? -> p11478-36.? STIFF
+WHY Builds the middle grey rung of the ladder extension with two tan pins.
+
+STEP 837
+ADD p62462-9 62462 lightgray
+ADD p62462-10 62462 lightgray
+CONNECT p62462-9.hole1 -> p4519-74.axle2 TURNS
+CONNECT p62462-10.hole1 -> p18651-21.pin1 STIFF
+WHY Adds the upper and lower grey cylindrical rungs to the folding ladder extension.
+
+STEP 838
+ADD p43093-102 43093 blue
+ADD p11478-37 11478 black
+CONNECT p43093-102.axle1 -> p11478-37.axlehole1 LOCKED
+CONNECT p11478-37.? -> p32002-12.? STIFF
+CONNECT p11478-37.? -> p4519-74.? LOCKED
+CONNECT p11478-37.? -> p18651-21.? LOCKED
+WHY Adds the second black ladder upright and a blue axle pin to complete the folding section.
+
+STEP 839
+END
+ATTACH folding-ladder-extension
+CONNECT p43093-102.pin1 -> p60483-75.hole1 STIFF
+WHY Joins the folding ladder extension to the ladder base so it can swing down.
+
+STEP 840
+ADD p60483-76 60483 black
+CONNECT p60483-76.axlehole1 -> p15462-26.axle3 LOCKED
+WHY Adds a black connector to retain the folding ladder pivot.
+
+STEP 841
+ADD p18654-66 18654 black
+ADD p18654-67 18654 black
+ADD p25214-9 25214 black
+ADD p25214-10 25214 black
+CONNECT p18654-66.hole1 -> p4519-72.axle2 TURNS
+CONNECT p18654-67.hole1 -> p4519-73.axle2 TURNS
+CONNECT p25214-9.? -> p4519-72.axle3 LOCKED
+CONNECT p25214-10.? -> p4519-73.axle3 LOCKED
+WHY Adds black spacers and curved hooks to the top of the folding ladder.
+
+STEP 842
+END
+ATTACH roof-rack-ladder
+CONNECT p25214-9.? -> p3705-27.axle4 LOCKED
+CONNECT p25214-10.? -> p3705-28.axle4 LOCKED
+WHY Fits the completed folding ladder to the side of the roof rack.
+
+STEP 843
+ADD p2780-276 2780 black
+ADD p2780-277 2780 black
+ADD p2780-278 2780 black
+ADD p2780-279 2780 black
+CONNECT p2780-276.pin1 -> p6536-57.hole1 STIFF
+CONNECT p2780-277.pin1 -> p6536-58.hole1 STIFF
+CONNECT p2780-278.pin1 -> p6536-59.hole1 STIFF
+CONNECT p2780-279.pin1 -> p6536-60.hole1 STIFF
+WHY Turns the completed rack over and inserts four black friction pins into the four mounting connectors.
+
+STEP 844
+END
+ATTACH roof-rack
+CONNECT p2780-276.pin2 -> p64782-7.? STIFF
+CONNECT p2780-277.pin2 -> p64782-7.? STIFF
+CONNECT p2780-278.pin2 -> p64782-6.? STIFF
+CONNECT p2780-279.pin2 -> p64782-6.? STIFF
+WHY Places the completed roof rack on the vehicle and secures its four mounting pins to the roof.
+
+STEP 845
+ADD p4274-69 4274 lightgray
+ADD p4274-70 4274 lightgray
+ADD p4274-71 4274 lightgray
+ADD p2780-280 2780 black
+ADD p2780-281 2780 black
+ADD p60484-9 60484 black
+CONNECT p2780-280.pin1 -> p60484-9.? STIFF
+CONNECT p2780-281.pin1 -> p60484-9.? STIFF
+CONNECT p4274-69.pin1 -> p60484-9.? TURNS
+CONNECT p4274-70.pin1 -> p60484-9.? TURNS
+CONNECT p4274-71.pin1 -> p60484-9.? TURNS
+CONNECT p2780-280.pin2 -> p64782-6.? STIFF
+CONNECT p2780-281.pin2 -> p64782-6.? STIFF
+WHY Builds a black T-shaped roof mounting point with three grey half pins and fits it inside the rack.
+
+STEP 846
+GROUP roof-cargo-box
+ADD p3033-1 3033 darkgray
+ADD p3008-1 3008 darkgray
+CONNECT p3008-1.? -> p3033-1.? STIFF
+WHY Starts the roof cargo box with a dark-grey six-by-ten plate and an eight-stud brick.
+
+STEP 847
+ADD p30414-1 30414 darkgray
+ADD p30414-2 30414 darkgray
+ADD p11211-1 11211 darkgray
+ADD p11211-2 11211 darkgray
+CONNECT p30414-1.? -> p3033-1.? STIFF
+CONNECT p30414-2.? -> p3033-1.? STIFF
+CONNECT p11211-1.? -> p3033-1.? STIFF
+CONNECT p11211-2.? -> p3033-1.? STIFF
+WHY Adds two side-stud bricks and two smaller modified bricks around the cargo-box base.
+
+STEP 848
+ADD p3023-4 3023 darkgray
+ADD p3023-5 3023 darkgray
+ADD p3023-6 3023 darkgray
+ADD p3023-7 3023 darkgray
+ADD p3023-8 3023 darkgray
+ADD p3005-1 3005 darkgray
+ADD p3005-2 3005 darkgray
+CONNECT p3023-4.? -> p3033-1.? STIFF
+CONNECT p3023-5.? -> p3033-1.? STIFF
+CONNECT p3023-6.? -> p3023-4.? STIFF
+CONNECT p3023-7.? -> p3023-5.? STIFF
+CONNECT p3023-8.? -> p3033-1.? STIFF
+CONNECT p3005-1.? -> p3033-1.? STIFF
+CONNECT p3005-2.? -> p3033-1.? STIFF
+WHY Builds up the cargo-box interior with five two-stud plates and two single-stud bricks.
+
+STEP 849
+ADD p2432-1 2432 orange
+ADD p2432-2 2432 orange
+CONNECT p2432-1.? -> p3033-1.? STIFF
+CONNECT p2432-2.? -> p3033-1.? STIFF
+WHY Adds orange handle tiles at both ends of the cargo box.
+
+STEP 850
+ADD p3024-12 3024 darkgray
+ADD p3024-13 3024 darkgray
+ADD p3024-14 3024 darkgray
+ADD p3024-15 3024 darkgray
+ADD p3024-16 3024 darkgray
+ADD p3024-17 3024 darkgray
+ADD p3024-18 3024 darkgray
+ADD p3024-19 3024 darkgray
+ADD p28192-1 28192 darkgray
+ADD p28192-2 28192 darkgray
+ADD p28192-3 28192 darkgray
+ADD p28192-4 28192 darkgray
+CONNECT p3024-12.? -> p28192-1.? STIFF
+CONNECT p3024-13.? -> p28192-1.? STIFF
+CONNECT p3024-14.? -> p28192-2.? STIFF
+CONNECT p3024-15.? -> p28192-2.? STIFF
+CONNECT p3024-16.? -> p28192-3.? STIFF
+CONNECT p3024-17.? -> p28192-3.? STIFF
+CONNECT p3024-18.? -> p28192-4.? STIFF
+CONNECT p3024-19.? -> p28192-4.? STIFF
+CONNECT p28192-1.? -> p3033-1.? STIFF
+CONNECT p28192-2.? -> p3033-1.? STIFF
+CONNECT p28192-3.? -> p3033-1.? STIFF
+CONNECT p28192-4.? -> p3033-1.? STIFF
+WHY Builds four sloped corner stacks and fits them around the orange handles.
+
+STEP 851
+ADD p2431-5 2431 darkgray
+ADD p6636-9 6636 darkgray
+ADD p87079-7 87079 darkgray
+ADD p87079-8 87079 darkgray
+CONNECT p2431-5.? -> p3008-1.? STIFF
+CONNECT p6636-9.? -> p3008-1.? STIFF
+CONNECT p87079-7.? -> p3033-1.? STIFF
+CONNECT p87079-8.? -> p3033-1.? STIFF
+WHY Adds dark-grey tiles across the cargo-box side and both ends.
+
+STEP 852
+ADD p3937-1 3937 darkgray
+ADD p3937-2 3937 darkgray
+CONNECT p3937-1.? -> p3033-1.? STIFF
+CONNECT p3937-2.? -> p3033-1.? STIFF
+WHY Fits two hinge bases along the back edge of the cargo box.
+
+STEP 853
+GROUP roof-cargo-box-lid
+ADD p52031-1 52031 darkgray
+ADD p52031-2 52031 darkgray
+ADD p32739-1 32739 darkgray
+CONNECT p52031-1.? -> p32739-1.? STIFF
+CONNECT p52031-2.? -> p32739-1.? STIFF
+WHY Starts the cargo-box lid with two curved wedge panels and a central double-sloped panel.
+
+STEP 854
+ADD p3020-3 3020 darkgray
+ADD p3020-4 3020 darkgray
+CONNECT p3020-3.? -> p52031-1.? STIFF
+CONNECT p3020-3.? -> p32739-1.? STIFF
+CONNECT p3020-4.? -> p52031-2.? STIFF
+CONNECT p3020-4.? -> p32739-1.? STIFF
+WHY Bridges the three lid panels underneath with two dark-grey two-by-four plates.
+
+STEP 855
+ADD p6134-1 6134 black
+ADD p6134-2 6134 black
+CONNECT p6134-1.? -> p3020-3.? STIFF
+CONNECT p6134-2.? -> p3020-4.? STIFF
+WHY Adds two black hinge tops underneath the cargo-box lid.
+
+STEP 856
+END
+ATTACH roof-cargo-box-lid
+CONNECT p6134-1.? -> p3937-1.? TURNS
+CONNECT p6134-2.? -> p3937-2.? TURNS
+WHY Fits the lid hinges to the cargo-box base so the lid can open.
+
+STEP 857
+END
+ATTACH roof-cargo-box
+CONNECT p3033-1.? -> p4274-69.? STIFF
+CONNECT p3033-1.? -> p4274-70.? STIFF
+CONNECT p3033-1.? -> p4274-71.? STIFF
+WHY Attaches the completed cargo box to the roof-rack mounting point.
+
+STEP 858
+ADD p3023-9 3023 darkgray
+ADD p3023-10 3023 darkgray
+ADD p3023-11 3023 darkgray
+ADD p3023-12 3023 darkgray
+ADD p11458-5 11458 darkgray
+ADD p32000-8 32000 darkgray
+ADD p2780-282 2780 black
+ADD p2780-283 2780 black
+ADD p18677-13 18677 black
+ADD p18651-22 18651 black
+ADD p18651-23 18651 black
+CONNECT p3023-9.? -> p32000-8.? STIFF
+CONNECT p3023-10.? -> p3023-9.? STIFF
+CONNECT p3023-11.? -> p3023-10.? STIFF
+CONNECT p3023-12.? -> p3023-11.? STIFF
+CONNECT p11458-5.? -> p32000-8.? STIFF
+CONNECT p18677-13.? -> p32000-8.? STIFF
+CONNECT p2780-282.pin1 -> p32000-8.? STIFF
+CONNECT p2780-283.pin1 -> p32000-8.? STIFF
+CONNECT p18651-22.pin1 -> p11458-5.? STIFF
+CONNECT p18651-23.pin1 -> p18677-13.? STIFF
+CONNECT p2780-282.pin2 -> p64782-6.? STIFF
+CONNECT p2780-283.pin2 -> p64782-6.? STIFF
+WHY Builds the roof-rack accessory mount from grey plates and black pins, then installs it beside the cargo box.
+
+STEP 859
+ADD p64782-9 64782 lightgray
+ADD p64782-10 64782 lightgray
+CONNECT p64782-9.? -> p18651-22.axle1 TURNS
+CONNECT p64782-10.? -> p18651-23.axle1 TURNS
+WHY Fits two grey panels to the roof mount as the stacked recovery boards.
+
+STEP 860
+ADD p49294-1 49294 black
+ADD p49294-2 49294 black
+ADD p49294-3 49294 black
+ADD p49294-4 49294 black
+ADD p49294-5 49294 black
+ADD p56907-1 56907 black
+ADD p56907-2 56907 black
+ADD p56907-3 56907 black
+ADD p56907-4 56907 black
+ADD p56907-5 56907 black
+ADD p32270-8 32270 black
+CONNECT p56907-1.? -> p49294-1.? STIFF
+CONNECT p56907-2.? -> p49294-2.? STIFF
+CONNECT p56907-3.? -> p49294-3.? STIFF
+CONNECT p56907-4.? -> p49294-4.? STIFF
+CONNECT p56907-5.? -> p49294-5.? STIFF
+CONNECT p32270-8.? -> p49294-5.? LOCKED
+WHY Mounts five tyres on the wheels, installs four road wheels and the rear spare, and secures the spare with the black gear.
 
